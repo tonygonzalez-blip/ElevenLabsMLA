@@ -1,0 +1,74 @@
+{
+ "url": "/crm-vehicles.html",
+ "docTitle": "Vehicles — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›Vehicles"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Prepaid Books",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ Add Vehicle",
+  "Filters 0",
+  "Search",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "License Plate",
+  "Make / Model",
+  "Year",
+  "Customer",
+  "Location",
+  "Status",
+  "Last Visit"
+ ],
+ "kpiLabels": [
+  "3,892 Total Vehicles 2,104 Active Members 14 Flagged 87 New This Month",
+  "3,892 Total Vehicles",
+  "3,892",
+  "Total Vehicles",
+  "2,104 Active Members",
+  "2,104",
+  "Active Members",
+  "14 Flagged",
+  "14",
+  "Flagged",
+  "87 New This Month",
+  "87",
+  "New This Month"
+ ],
+ "inputPlaceholders": [
+  "Search by plate, customer, make, or location…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load vehicles (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Vehicles Search ⌘K Ask Shyne MG 3,892 Total Vehicles 2,104 Active Members 14 Flagged 87 New This Month Registration Trend Last 12 months 3,892 ↑ +7.2% Jan Dec Top Makes By registration count Honda 24% Toyota 21% Ford 18% Chevrolet 14% Other 23% Vehicle Status Portfolio health at a glance 94% ACTIVE 5% INACTIVE 1% FLAGGED 3,659 active 233 inactive / flagged CRM · VEHICLES Vehicle List 3,892 vehicles · 2,104 active members + Add Vehicle Filters Search LICENSE PLATE MAKE / MODEL YEAR CUSTOMER LOCATION STATUS LAST VISIT Couldn’t load vehicles (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

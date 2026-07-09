@@ -1,0 +1,75 @@
+{
+ "url": "/settings-mobile-content.html",
+ "docTitle": "Mobile Content Blocks — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [
+  "Tenant",
+  "Promo Banner",
+  "Card Rail",
+  "Announcements"
+ ],
+ "breadcrumb": [
+  "Marketing›Mobile Content Blocks"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "MG",
+  "View JSON",
+  "Save & Publish",
+  "+ Add card",
+  "+ Add announcement",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Summer Unlimited — 50% off month 1",
+  "Join the Unlimited Wash Club today",
+  "https://cdn.example.com/promo.jpg",
+  "Join now",
+  "washcentral://join",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Title",
+  "Subtitle",
+  "Background image URL",
+  "CTA label",
+  "CTA deep link",
+  "Start date",
+  "End date"
+ ],
+ "chips": [
+  "Mobile"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations MARKETING Mobile Content Blocks Search ⌘K MG Mobile Content Blocks Mobile ● Loaded Dashboard promo, cards & announcements · Campaign content that ships with no app release View JSON Save & Publish Tenant Publishes to that tenant's /tenant/config. mcw-demo — Mister Car Wash ewc-demo — Express Wash Concepts atlas-fl — Atlas Car Wash Promo Banner Full-width hero on the dashboard. Schedule with start/end dates. Title Subtitle Background image URL CTA label CTA deep link Start date End date Card Rail Horizontal cards under the banner (offers, plans, locations). + Add card Announcements Timely notes shown in the dashboard feed. + Add announcement Loaded ewc-demo. Edit content, then Save & Publish. LIVE PREVIEW Express Wash Concepts Demo Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

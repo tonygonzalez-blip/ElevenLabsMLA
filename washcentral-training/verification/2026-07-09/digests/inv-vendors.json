@@ -1,0 +1,72 @@
+{
+ "url": "/inv-vendors.html",
+ "docTitle": "Vendors — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Vendors"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Account No.",
+  "Company",
+  "Contact",
+  "Address",
+  "Phone"
+ ],
+ "kpiLabels": [
+  "14Total Vendors 12Active 3Open POs $48,200YTD Spend",
+  "14Total Vendors",
+  "14",
+  "Total Vendors",
+  "12Active",
+  "12",
+  "Active",
+  "3Open POs",
+  "3",
+  "Open POs",
+  "$48,200YTD Spend",
+  "$48,200",
+  "YTD Spend"
+ ],
+ "inputPlaceholders": [
+  "Search vendors…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | VND-001 | ChemCo Inc | Bob Hendricks | 123 Supply Blvd, Newark NJ | 973-555-0101",
+  " | VND-002 | CleanPro Supplies | Sarah Lee | 456 Commerce Ave, Edison NJ | 732-555-0202",
+  " | VND-003 | Meguiar's Direct | Tom Willis | 789 Industry Rd, Irvine CA | 949-555-0303"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders INVENTORY Vendors Search ⌘K Ask Shyne MG 14 Total Vendors 12 Active 3 Open POs $48,200 YTD Spend Vendor Spend Last 12 months $48.2k ↑ +9% Jan Dec Vendors by Category By supply type Chemicals 43% Equipment 29% Supplies 21% Other 7% Vendor Status Active vs inactive 86% ACTIVE 7% REVIEW 7% INACTIVE INVENTORY · VENDORS Vendor List 14 records · supplier directory & contacts + New Record Export Filters ▾ Search ACCOUNT NO. COMPANY CONTACT ADDRESS PHONE VND-001 ChemCo Inc Bob Hendricks 123 Supply Blvd, Newark NJ 973-555-0101 VND-002 CleanPro Supplies Sarah Lee 456 Commerce Ave, Edison NJ 732-555-0202 VND-003 Meguiar's Direct Tom Willis 789 Industry Rd, Irvine CA 949-555-0303 VND-004 FreshCo Diana Park 321 Market St, Trenton NJ 609-555-0404 Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

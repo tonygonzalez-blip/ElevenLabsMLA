@@ -1,0 +1,39 @@
+<div class="cc-own">
+          <div class="cc-own-title">Action ownership</div>
+          <div class="cc-assignee">
+            <div class="cc-av red">RO</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Regional Ops</div>
+              <div class="cc-av-task">Henrico W Broad — POS offline</div>
+              <div class="cc-av-when">Due: next 30 min</div>
+            </div>
+            <span class="cc-av-badge cc-chip red">Urgent</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av teal">MK</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Marketing</div>
+              <div class="cc-av-task">Launch win-back campaign</div>
+              <div class="cc-av-when">Due: today</div>
+            </div>
+            <span class="cc-av-badge cc-chip teal">+$980</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av amber">SL</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Support Lead</div>
+              <div class="cc-av-task">Reassign 3 aging tickets</div>
+              <div class="cc-av-when">Due: next 2 hrs</div>
+            </div>
+            <span class="cc-av-badge cc-chip amber">SLA risk</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av blue">RV</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Revenue Ops</div>
+              <div class="cc-av-task">Review pricing gaps</div>
+              <div class="cc-av-when">Due: this afternoon</div>
+            </div>
+            <span class="cc-av-badge cc-chip purple">+$1,140</span>
+          </div>
+        </div>

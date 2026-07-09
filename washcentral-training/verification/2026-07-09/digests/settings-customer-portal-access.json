@@ -1,0 +1,96 @@
+{
+ "url": "/settings-customer-portal-access.html",
+ "docTitle": "Access & Security — Customer Portal — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Access & Security"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Portals View",
+  "Portal Overview",
+  "Branding & Appearance",
+  "Features & Modules",
+  "Access & Security",
+  "Content & Messaging",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Cancel",
+  "Save Changes",
+  "Authentication",
+  "Session & Limits",
+  "Allowed Domains",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Authentication",
+  "Session & Limits",
+  "Allowed Domains",
+  "Save Changes"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Portal Status Live Last Published Apr 22, 2026 Version v2.4.1",
+  "Portal Status Live",
+  "Portal Status",
+  "Live",
+  "Last Published Apr 22, 2026",
+  "Last Published",
+  "Apr 22, 2026",
+  "Version v2.4.1",
+  "Version",
+  "v2.4.1"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Login by Phone",
+  "Login by Email",
+  "Login by Membership Number",
+  "Guest Access",
+  "Require OTP on Login",
+  "OTP Delivery",
+  "OTP Expiry",
+  "OTP Length",
+  "Minimum Length",
+  "Require Uppercase",
+  "Require Special Character"
+ ],
+ "chips": [
+  "Main Kiosk Portal Live v2.4.1",
+  "Main Kiosk Portal",
+  "Live",
+  "v2.4.1"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ Portals View Portal Overview Branding & Appearance Features & Modules Access & Security Content & Messaging AI Agent ▾ Marketing ▾ Integrations SETTINGS Access & Security Search ⌘K Ask Shyne MG Access & Security Settings · Customer Portal · Authentication, sessions & allowed domains Main Kiosk Portal Live v2.4.1 Cancel Save Changes Portal Status Live Last Published Apr 22, 2026 Version v2.4.1 Authentication Session & Limits Allowed Domains LOGIN METHODS LOGIN BY PHONE Yes LOGIN BY EMAIL Yes LOGIN BY MEMBERSHIP NUMBER No GUEST ACCESS No ONE-TIME PASSWORD (OTP) REQUIRE OTP ON LOGIN Yes OTP DELIVERY SMS ▾ OTP EXPIRY 10 min ▾ OTP LENGTH 6 digits ▾ PASSWORD POLICY MINIMUM LENGTH 8 ▾ REQUIRE UPPERCASE No REQUIRE SPECIAL CHARACTER No Cancel Save Changes Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,73 @@
+{
+ "url": "/inv-batches.html",
+ "docTitle": "Inventory Batches — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Inventory Batches"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Batch #",
+  "Date",
+  "Reference",
+  "Cost",
+  "Items",
+  "Status"
+ ],
+ "kpiLabels": [
+  "84Total Batches 3Open 6This Month $14,280Total Value",
+  "84Total Batches",
+  "84",
+  "Total Batches",
+  "3Open",
+  "3",
+  "Open",
+  "6This Month",
+  "6",
+  "This Month",
+  "$14,280Total Value",
+  "$14,280",
+  "Total Value"
+ ],
+ "inputPlaceholders": [
+  "Search inventory batches…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | BATCH-0084 | 2025-06-01 | PO-2025-084 | $1,240.00 | 18 | Received",
+  " | BATCH-0083 | 2025-05-28 | PO-2025-083 | $875.50 | 12 | Received",
+  " | BATCH-0082 | 2025-05-22 | PO-2025-082 | $2,100.00 | 24 | Partial"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders INVENTORY Inventory Batches Search ⌘K Ask Shyne MG 84 Total Batches 3 Open 6 This Month $14,280 Total Value Batch Receipts Last 12 months 84 ↑ +12% Jan Dec Batch Status By current status Received 76% Open 4% Partial 12% Closed 8% Batch Health On-time vs delayed delivery 88% ON TIME 9% DELAYED 3% MISSING INVENTORY · BATCHES Batch List 84 records · lot tracking & receiving + New Record Export Filters ▾ Search BATCH # DATE REFERENCE COST ITEMS STATUS BATCH-0084 2025-06-01 PO-2025-084 $1,240.00 18 Received BATCH-0083 2025-05-28 PO-2025-083 $875.50 12 Received BATCH-0082 2025-05-22 PO-2025-082 $2,100.00 24 Partial BATCH-0081 2025-05-15 PO-2025-081 $650.25 9 Received Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

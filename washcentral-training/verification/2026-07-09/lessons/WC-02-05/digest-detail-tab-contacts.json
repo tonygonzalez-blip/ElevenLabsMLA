@@ -1,0 +1,114 @@
+{
+ "url": "/crm-house-account-detail.html",
+ "docTitle": "House Account Detail — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›House Account"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "M",
+  "← Back",
+  "Search",
+  "Statement",
+  "Delete Account",
+  "Edit Account",
+  "Overview",
+  "Details",
+  "Contacts",
+  "Vehicles",
+  "Invoices",
+  "Payments",
+  "Activity",
+  "Documents",
+  "Notes",
+  "Audit Trail",
+  "+ Add Contact",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "Details",
+  "Contacts",
+  "Vehicles",
+  "Invoices",
+  "Payments",
+  "Activity",
+  "Documents",
+  "Notes",
+  "Audit Trail"
+ ],
+ "tableHeaders": [
+  "Name",
+  "Title",
+  "Role",
+  "Email",
+  "Phone",
+  "Primary?"
+ ],
+ "kpiLabels": [
+  "$4,280Total Balance $5,720Available Credit $10,000Credit Limit $892Monthly Avg Mar 24, 2026Last Payment Feb 8, 2024Account Since",
+  "$4,280Total Balance",
+  "$4,280",
+  "Total Balance",
+  "$5,720Available Credit",
+  "$5,720",
+  "Available Credit",
+  "$10,000Credit Limit",
+  "$10,000",
+  "Credit Limit",
+  "$892Monthly Avg",
+  "$892",
+  "Monthly Avg",
+  "Mar 24, 2026Last Payment",
+  "Mar 24, 2026",
+  "Last Payment",
+  "Feb 8, 2024Account Since",
+  "Feb 8, 2024",
+  "Account Since"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active",
+  "Net 30 $10,000 Credit Limit 14 Vehicles",
+  "Net 30",
+  "$10,000 Credit Limit",
+  "14 Vehicles",
+  "Vehicles 14",
+  "Invoices 10",
+  "Payments 8",
+  "Documents 3",
+  "Statement",
+  "★ Primary"
+ ],
+ "firstRows": [
+  "John Smith | VP of Operations | Primary Contact | john@techsolutions.com | (305) 555-0192 | ★ Primary | Edit",
+  "Lisa Chang | Accounts Payable | Billing Contact | billing@techsolutions.com | (305) 555-0193 | — | Edit",
+  "Robert Chen | Fleet Manager | Fleet / Operations | rchen@techsolutions.com | (305) 555-0194 | — | Edit"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History CRM House Account Search ⌘K Ask Shyne M TS Tech Solutions Inc Active HA-0042 · Fort Lauderdale · John Smith Net 30 $10,000 Credit Limit 14 Vehicles ← Back Search Statement Delete Account Edit Account $4,280 Total Balance $5,720 Available Credit $10,000 Credit Limit $892 Monthly Avg Mar 24, 2026 Last Payment Feb 8, 2024 Account Since RELATED Vehicles 14 Invoices 10 Payments 8 Documents 3 Statement Overview Details Contacts Vehicles Invoices Payments Activity Documents Notes Audit Trail CRM · HOUSE ACCOUNTS Account Contacts 4 contacts on record + Add Contact NAME TITLE ROLE EMAIL PHONE PRIMARY? John Smith VP of Operations Primary Contact john@techsolutions.com (305) 555-0192 ★ Primary Edit Lisa Chang Accounts Payable Billing Contact billing@techsolutions.com (305) 555-0193 — Edit Robert Chen Fleet Manager Fleet / Operations rchen@techsolutions.com (305) 555-0194 — Edit Sarah Monroe CEO Executive smonroe@techsolutions.com (305) 555-0190 — Edit Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

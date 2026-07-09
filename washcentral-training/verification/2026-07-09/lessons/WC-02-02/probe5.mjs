@@ -1,0 +1,13 @@
+import { CDP, gotoPage, dismissIdle, sleep } from '../../../../tools/cdp-lib.mjs';
+const cdp = await CDP.connect('new');
+await cdp.setViewport(1920, 1080);
+await gotoPage(cdp, 'https://demo.washcentral.com/login.html', 1200);
+await cdp.click('#qa-btn');
+await sleep(2500);
+const st = await cdp.eval(`({ url: location.pathname, ls: Object.keys(localStorage||{}), ss: Object.keys(sessionStorage||{}) })`);
+console.log('after qa click:', JSON.stringify(st));
+const d = await gotoPage(cdp, 'https://demo.washcentral.com/crm-customers.html', 1500);
+await sleep(1500); await dismissIdle(cdp);
+const st2 = await cdp.eval(`({ url: location.pathname, trs: document.querySelectorAll('table tbody tr').length })`);
+console.log('after nav:', JSON.stringify(st2));
+cdp.close();

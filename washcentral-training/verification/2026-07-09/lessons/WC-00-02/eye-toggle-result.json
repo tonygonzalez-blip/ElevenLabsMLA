@@ -1,0 +1,15 @@
+{
+  "probe": {
+    "found": true,
+    "pwId": "lp-password",
+    "before": "password",
+    "btnDesc": {
+      "tag": "BUTTON",
+      "cls": "lp-pw-btn",
+      "aria": "Show password",
+      "title": null
+    }
+  },
+  "afterFirstClick": "text",
+  "afterSecondClick": "password"
+}

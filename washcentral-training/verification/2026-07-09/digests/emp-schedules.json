@@ -1,0 +1,84 @@
+{
+ "url": "/emp-schedules.html",
+ "docTitle": "Employee Schedules — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Employees›Employee Schedules"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Employee",
+  "Location",
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat",
+  "Sun"
+ ],
+ "kpiLabels": [
+  "38Scheduled This Week 4Open Shifts 92%Coverage % 6Locations",
+  "38Scheduled This Week",
+  "38",
+  "Scheduled This Week",
+  "4Open Shifts",
+  "4",
+  "Open Shifts",
+  "92%Coverage %",
+  "92%",
+  "Coverage %",
+  "6Locations",
+  "6",
+  "Locations"
+ ],
+ "inputPlaceholders": [
+  "Search employee schedules…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Jose Martinez | MLAS | 7-3 | 7-3 | OFF | 7-3 | 7-3 | 7-3 | OFF",
+  " | Lisa Nguyen | SSNB | OFF | 8-4 | 8-4 | 8-4 | 8-4 | OFF | 8-4",
+  " | Kevin Davis | MLAS | 3-11 | 3-11 | 3-11 | OFF | 3-11 | 3-11 | OFF"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys EMPLOYEES Employee Schedules Search ⌘K Ask Shyne MG 38 Scheduled This Week 4 Open Shifts 92% Coverage % 6 Locations Hours Scheduled Last 12 months 1,248 ↑ +3.8% Jan Dec Shift Types By time of day Morning (7–3) 44% Afternoon (8–4) 32% Evening (3–11) 18% Split / Other 6% Coverage Status This week overview 92% COVERED 5% AT RISK 3% OPEN EMPLOYEES · SCHEDULES Schedule List 3 records Export + New Record Filters ▾ Search EMPLOYEE LOCATION MON TUE WED THU FRI SAT SUN Jose Martinez MLAS 7-3 7-3 OFF 7-3 7-3 7-3 OFF Lisa Nguyen SSNB OFF 8-4 8-4 8-4 8-4 OFF 8-4 Kevin Davis MLAS 3-11 3-11 3-11 OFF 3-11 3-11 OFF Showing 1–3 of 3 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

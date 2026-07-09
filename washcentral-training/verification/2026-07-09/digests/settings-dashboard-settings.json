@@ -1,0 +1,73 @@
+{
+ "url": "/settings-dashboard-settings.html",
+ "docTitle": "Dashboards",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Dashboard Settings"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Dashboard Settings",
+  "Dashboard Designer",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Name",
+  "Created By",
+  "Updated By",
+  "Updated"
+ ],
+ "kpiLabels": [
+  "10Total Dashboards",
+  "10",
+  "Total Dashboards"
+ ],
+ "inputPlaceholders": [
+  "Search dashboards…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Administrator - Dashboard | Micrologic | — | —",
+  "Anonymous - Dashboard | Micrologic | — | —",
+  "Cashiers - Dashboard | Micrologic | — | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Dashboard Settings Dashboard Designer Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Dashboard Settings Search ⌘K Ask Shyne MG 10 Total Dashboards SETTINGS · DASHBOARDS Dashboards List 10 records + New Record NAME CREATED BY UPDATED BY UPDATED Administrator - Dashboard Micrologic — — Anonymous - Dashboard Micrologic — — Cashiers - Dashboard Micrologic — — Level 00 - Dashboard Mylon Schroder — — Level 01 - Dashboard Mylon Schroder — — Managers - Dashboard Micrologic — — MLA Supervisor - Dashboard Christopher Giordano — — MLA Support - Dashboard Christopher Giordano — — Sr Manager - Dashboard Settings Mylon Schroder — — Sr.Manager - Dashboard Settings Micrologic — — ROWS PER PAGE: 25 50 100 25 1–10 of 10 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

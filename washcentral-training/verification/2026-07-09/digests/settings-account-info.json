@@ -1,0 +1,93 @@
+{
+ "url": "/settings-account-info.html",
+ "docTitle": "Account Information",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Account Information"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Account Information",
+  "Account Types",
+  "Profile Types",
+  "Profit Centers",
+  "Departments",
+  "Categories",
+  "Dayforce Settings",
+  "Policy Category",
+  "Forms Category",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Site Name",
+  "Company",
+  "Operation Mode",
+  "City",
+  "State",
+  "Phone"
+ ],
+ "kpiLabels": [
+  "56Locations 15States MultiOperation Mode ActiveLicense",
+  "56Locations",
+  "56",
+  "Locations",
+  "15States",
+  "15",
+  "States",
+  "MultiOperation Mode",
+  "Multi",
+  "Operation Mode",
+  "ActiveLicense",
+  "Active",
+  "License"
+ ],
+ "inputPlaceholders": [
+  "Search account information…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Fort Lauderdale (FL101) | WashCentral | Standard | Fort Lauderdale | FL | (954) 312-4400",
+  "Orlando Central (FL102) | WashCentral | Standard | Orlando | FL | (407) 555-0182",
+  "Tampa West (FL103) | WashCentral | Standard | Tampa | FL | (813) 448-7700"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Account Information Account Types Profile Types Profit Centers Departments Categories Dayforce Settings Policy Category Forms Category Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Account Information Search ⌘K Ask Shyne MG 56 Locations 15 States Multi Operation Mode Active License Config Activity Last 12 months 6 ↑ +12% Jan Dec Breakdown by Type By account category Standard 60% Multi-Site 25% Enterprise 10% Demo 5% Status Overview Configuration health 83% ACTIVE 12% DRAFT 5% INACTIVE SETTINGS · ACCOUNT INFO Account Information List 56 records · 15 states + New Record Filters Search SITE NAME COMPANY OPERATION MODE CITY STATE PHONE Fort Lauderdale (FL101) WashCentral Standard Fort Lauderdale FL (954) 312-4400 Orlando Central (FL102) WashCentral Standard Orlando FL (407) 555-0182 Tampa West (FL103) WashCentral Standard Tampa FL (813) 448-7700 Miami Beach (FL104) WashCentral Multi-Site Miami Beach FL (305) 674-2200 Jacksonville North (FL105) WashCentral Standard Jacksonville FL (904) 221-5500 Dallas Uptown (TX101) WashCentral Multi-Site Dallas TX (214) 880-3300 Houston Memorial (TX102) WashCentral Multi-Site Houston TX (713) 462-9100 Austin South (TX103) WashCentral Standard Austin TX (512) 344-7700 San Antonio Alamo (TX104) WashCentral"
+}

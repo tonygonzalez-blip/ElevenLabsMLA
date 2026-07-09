@@ -1,0 +1,105 @@
+{
+ "url": "/settings-ai-agent-analytics.html",
+ "docTitle": "AI Agent Analytics — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›AI Agent · Analytics"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Overview",
+  "Configuration",
+  "Knowledge Base",
+  "Channels & Deployment",
+  "Conversations",
+  "Escalations",
+  "Analytics",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "Overview",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Channel",
+  "Conversations",
+  "Model Cost",
+  "Telephony / SMS",
+  "Cost / Conversation"
+ ],
+ "kpiLabels": [
+  "3,842Conversations 78%Containment 3.7%Escalation Rate 4.6CSAT 2m 14sAvg Handle $214Est. Cost",
+  "3,842Conversations",
+  "3,842",
+  "Conversations",
+  "78%Containment",
+  "78%",
+  "Containment",
+  "3.7%Escalation Rate",
+  "3.7%",
+  "Escalation Rate",
+  "4.6CSAT",
+  "4.6",
+  "CSAT",
+  "2m 14sAvg Handle",
+  "2m 14s",
+  "Avg Handle",
+  "$214Est. Cost",
+  "$214",
+  "Est. Cost",
+  "18.4M",
+  "Input tokens",
+  "4.1M",
+  "Output tokens",
+  "1,240",
+  "Voice minutes",
+  "6,820",
+  "SMS segments",
+  "Est. total cost"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Last 30 days Atlas Car Wash Tenant: atlas-fl",
+  "Last 30 days",
+  "Atlas Car Wash",
+  "Tenant: atlas-fl"
+ ],
+ "firstRows": [
+  "Web Chat | 2,104 | $58.20 | — | $0.028",
+  "SMS | 1,236 | $31.40 | $47.74 | $0.064",
+  "Voice | 502 | $24.10 | $52.30 | $0.152"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Overview Configuration Knowledge Base Channels & Deployment Conversations Escalations Analytics Marketing ▾ Integrations SETTINGS AI Agent · Analytics Search ⌘K Ask Shyne MG Agent Analytics Settings · AI Agent · Performance, deflection, and usage. Last 30 days Atlas Car Wash Tenant: atlas-fl Export Overview 3,842 Conversations 78% Containment 3.7% Escalation Rate 4.6 CSAT 2m 14s Avg Handle $214 Est. Cost RETENTION PERFORMANCE Last 30 days MEMBERS SAVED — — /mo preserved Active + paused members MEMBERS CANCELED — — /mo lost Despite AI retention attempt SAVE RATE — — cancel attempts Conversation Volume Weekly, last 8 weeks · ↑ 31% vs prior period W1 W2 W3 W4 W5 W6 W7 W8 Channel Mix Share of conversations by channel Web Chat 2,104 · 55% SMS 1,236 · 32% Voice 502 · 13% Containment by channel Web 81% SMS 76% Voice 68% Top Intents Most common reasons customers reach out Membership / upgrade 982 Billing question 814 Hours & location 690 Book / cancel service 605 Pricing 471 Refund request 312 Resolution & Sentiment How conversations ended 78% Resolved by AI 3.7% Escalated 6.0% Abandoned Positive 61% Neutral 31% Negative 8% Cost & Usage Current billing period · metered per tenant 18.4M Input tokens 4.1M Output tokens 1,240 Voice m"
+}

@@ -1,0 +1,78 @@
+{
+ "url": "/qa-dashboard.html",
+ "docTitle": "Sales Coaching Dashboard — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Sales Coaching›QA Dashboard"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "View All Conversations",
+  "Scoring Scripts",
+  "View All",
+  "Review",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Employee",
+  "Date & Time",
+  "Location",
+  "Duration",
+  "Script",
+  "Score",
+  "Status"
+ ],
+ "kpiLabels": [
+  "76%Avg Score This Month 284Conversations Recorded 68%Above Target (75%) +4.2%vs. Last Month",
+  "76%Avg Score This Month",
+  "76%",
+  "Avg Score This Month",
+  "284Conversations Recorded",
+  "284",
+  "Conversations Recorded",
+  "68%Above Target (75%)",
+  "68%",
+  "Above Target (75%)",
+  "+4.2%vs. Last Month",
+  "+4.2%",
+  "vs. Last Month"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Sofia L. | Jul 2, 7:14 AM | SSNB | 1m 30s | — | 95% (A) | scored | Review",
+  "Alex J. | Jul 2, 6:14 AM | MLAS | 1m 37s | — | 95% (A) | scored | Review",
+  "Marcus R. | Jul 2, 5:14 AM | MLAS | 1m 44s | — | 95% (A) | scored | Review"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys SALES COACHING QA Dashboard Search ⌘K Ask Shyne MG 76% Avg Score This Month 284 Conversations Recorded 68% Above Target (75%) +4.2% vs. Last Month Average Score Trend Last 12 weeks 76% ↑ +4.2% Target 75% Wk 1 Wk 12 Score Distribution By letter grade A (90–100%) 18% B (75–89%) 50% C (60–74%) 22% D (50–59%) 6% F (<50%) 4% Checkpoint Hit Rates How often each criteria is met — last 30 days Greeted customer 94% Recommended service 81% Offered upgrade 61% Presented membership ⚡ 47% Mentioned promotion 58% Mentioned free vacuum 76% Proper closing 88% ⚡ Coaching Opportunity Membership presentation is below target. Focus team training on membership pitch scripts. Top Performers This month · by avg score 1 SL Sofia L. 34 convs 92% 2 MR Marcus R. 28 convs 87% 3 AJ Alex J. 41 convs 83% 4 KM Keisha M. 19 convs 74% 5 DT Devon T. 22 convs 71% View All Conversations SALES COACHING · RECENT ACTIVITY Recent Conversations Last 10 recorded interactions across all locations Scoring Scripts View All EMPLOYEE DATE & TIME LOCATION DURATION SCRIPT SCORE STATUS Sofia L. Jul 2, 7:14 AM SSNB 1m 30s — 95% (A) scored Review Alex J. Jul 2, 6:14 AM MLAS 1m 37s — 95% (A) scored Review Marcus R. Jul 2, 5:14 AM MLAS 1m 44s — 95% (A) scored Review Devon T. J"
+}

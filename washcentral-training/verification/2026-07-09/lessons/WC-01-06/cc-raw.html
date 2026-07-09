@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Command Center — WashCentral</title>
+<link href="assets/styles.css?v=26.0628.001" rel="stylesheet"/>
+<style>
+/* ═══════════════════════════════════════════════════════════════════
+   COMMAND CENTER — Futuristic Apple Design · Light Mode
+   Scoped to body[data-page="command-center.html"]
+═══════════════════════════════════════════════════════════════════ */
+body[data-page="command-center.html"] .main {
+  background: #f2f2f7 !important;
+  padding: 0 !important;
+  min-width: 0;          /* prevent flex child from blowing past sidebar */
+  overflow-x: hidden;   /* clip anything that still escapes */
+  width: 100%;
+}
+body[data-page="command-center.html"] .main > div,
+body[data-page="command-center.html"] .main > section {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  max-width: 100%;       /* never wider than the main column */
+}
+
+/* Every grid/flex child on this page must be allowed to shrink */
+body[data-page="command-center.html"] .cc-map-body,
+body[data-page="command-center.html"] .cc-side-stats,
+body[data-page="command-center.html"] .cc-feed,
+body[data-page="command-center.html"] .cc-intel,
+body[data-page="command-center.html"] .cc-map-with-stats,
+body[data-page="command-center.html"] .cc-map-section,
+body[data-page="command-center.html"] .cc-grid {
+  min-width: 0;
+}
+
+/* ── Tokens ──────────────────────────────────────────────────── */
+:root {
+  --cc-surface:    #ffffff;
+  --cc-border:     rgba(60,60,67,.10);
+  --cc-text:       #1c1c1e;
+  --cc-text2:      rgba(60,60,67,.65);
+  --cc-text3:      rgba(60,60,67,.38);
+  --cc-teal:       #00a693;
+  --cc-teal-dim:   rgba(0,166,147,.08);
+  --cc-red:        #ff3b30;
+  --cc-red-dim:    rgba(255,59,48,.07);
+  --cc-amber:      #ff9500;
+  --cc-amber-dim:  rgba(255,149,0,.07);
+  --cc-blue:       #007aff;
+  --cc-blue-dim:   rgba(0,122,255,.07);
+  --cc-green:      #34c759;
+  --cc-green-dim:  rgba(52,199,89,.07);
+  --cc-purple:     #af52de;
+  --cc-purple-dim: rgba(175,82,222,.07);
+}
+
+/* ── Animations ──────────────────────────────────────────────── */
+@keyframes cc-pulse-red  { 0%,100%{box-shadow:0 0 0 0 rgba(255,59,48,.5)}50%{box-shadow:0 0 0 8px rgba(255,59,48,0)}}
+@keyframes cc-pulse-teal { 0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes cc-blink      { 0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes cc-fade-up    { from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cc-slide-in   { from{opacity:0;transform:translateX(-5px)}to{opacity:1;transform:translateX(0)}}
+@keyframes cc-scan       { 0%{transform:translateY(-100%)}100%{transform:translateY(400px)}}
+@keyframes cc-dot-ping   {
+  0%   { transform: scale(1); opacity: .6; }
+  70%  { transform: scale(2.8); opacity: 0; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STATUS BANNER
+═══════════════════════════════════════════════════════════════ */
+.cc-banner {
+  display: flex; align-items: center; height: 46px; padding: 0 28px;
+  background: var(--cc-surface); border-bottom: 1px solid var(--cc-border);
+  animation: cc-fade-up .4s ease both;
+  min-width: 0; overflow: hidden;
+}
+.cc-banner-mid { min-width: 0; overflow: hidden; }
+.cc-banner-status {
+  display: flex; align-items: center; gap: 9px;
+  font-size: 11.5px; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; flex-shrink: 0; white-space: nowrap;
+}
+.cc-status-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.cc-status-dot.critical { background: var(--cc-red); animation: cc-pulse-red 1.8s ease-in-out infinite; }
+.cc-status-dot.nominal  { background: var(--cc-teal); animation: cc-pulse-teal 2.5s ease-in-out infinite; }
+.cc-banner-status.critical { color: var(--cc-red); }
+.cc-banner-status.nominal  { color: var(--cc-teal); }
+.cc-banner-mid { flex:1; display:flex; align-items:center; justify-content:center; }
+.cc-banner-stat {
+  display:flex; align-items:center; gap:8px; padding:0 16px;
+  border-left: 1px solid var(--cc-border); font-size:12px; color:var(--cc-text2);
+  white-space:nowrap; flex-shrink: 1;
+}
+.cc-banner-stat strong { font-size:13px; font-weight:700; color:var(--cc-text); letter-spacing:-.02em; }
+.cc-banner-stat:first-child { border-left:none; }
+.cc-banner-right { display:flex; align-items:center; gap:10px; justify-content:flex-end; flex-shrink:0; }
+.cc-live-pill {
+  display:inline-flex; align-items:center; gap:6px; font-size:10px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.08em; color:var(--cc-teal);
+  background:var(--cc-teal-dim); border:1px solid rgba(0,166,147,.2); border-radius:99px; padding:4px 10px;
+}
+.cc-live-dot { width:5px; height:5px; border-radius:50%; background:var(--cc-teal); animation:cc-blink 1.4s ease-in-out infinite; }
+.cc-sync-lbl { font-size:11px; color:var(--cc-text3); font-weight:500; }
+.cc-refresh-btn { background:none; border:none; color:var(--cc-text3); cursor:pointer; font-size:14px; padding:2px 4px; transition:color .15s,transform .3s; }
+.cc-refresh-btn:hover { color:var(--cc-teal); }
+
+/* ═══════════════════════════════════════════════════════════════
+   KPI TILE ROW
+═══════════════════════════════════════════════════════════════ */
+.cc-kpi-row {
+  display:grid; grid-template-columns:repeat(5,1fr);
+  background:var(--cc-surface); border-bottom:1px solid var(--cc-border);
+}
+.cc-kpi {
+  padding:20px 24px 16px; border-right:1px solid var(--cc-border); position:relative;
+  overflow:hidden; animation:cc-fade-up .5s ease both; cursor:default; transition:background .15s;
+}
+.cc-kpi:last-child { border-right:none; }
+.cc-kpi:hover { background:rgba(0,0,0,.018); }
+.cc-kpi::after {
+  content:''; position:absolute; top:-30px; right:-30px; width:100px; height:100px;
+  border-radius:50%; pointer-events:none;
+}
+.cc-kpi.teal::after  { background:radial-gradient(circle,rgba(0,166,147,.07),transparent 65%); }
+.cc-kpi.red::after   { background:radial-gradient(circle,rgba(255,59,48,.07),transparent 65%); }
+.cc-kpi.amber::after { background:radial-gradient(circle,rgba(255,149,0,.06),transparent 65%); }
+.cc-kpi.blue::after  { background:radial-gradient(circle,rgba(0,122,255,.06),transparent 65%); }
+.cc-kpi.green::after { background:radial-gradient(circle,rgba(52,199,89,.06),transparent 65%); }
+.cc-kpi-lbl { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--cc-text3); margin-bottom:8px; }
+.cc-kpi-num { font-size:32px; font-weight:700; letter-spacing:-.05em; color:var(--cc-text); line-height:1; font-variant-numeric:tabular-nums; }
+.cc-kpi-num.teal  { color:var(--cc-teal); }
+.cc-kpi-num.red   { color:var(--cc-red); }
+.cc-kpi-num.amber { color:var(--cc-amber); }
+.cc-kpi-footer { display:flex; align-items:center; justify-content:space-between; margin-top:12px; }
+.cc-kpi-trend { font-size:11px; font-weight:700; display:flex; align-items:center; gap:3px; }
+.cc-kpi-trend.up   { color:var(--cc-green); }
+.cc-kpi-trend.down { color:var(--cc-red); }
+.cc-kpi-trend.good { color:var(--cc-teal); }
+.cc-sparkline { display:block; overflow:visible; opacity:.85; }
+/* Mobile App band is 4 tiles — skip the shared 3-col tablet stage (orphans a tile);
+   go 4 → 2 → 1. Id beats the generic .cc-kpi-row !important on specificity. */
+@media (max-width: 900px) { #cc-mobile-kpis { grid-template-columns: repeat(2, 1fr) !important; } }
+@media (max-width: 480px) { #cc-mobile-kpis { grid-template-columns: 1fr !important; } }
+
+/* ═══════════════════════════════════════════════════════════════
+   MAP SECTION — full width
+═══════════════════════════════════════════════════════════════ */
+.cc-map-section {
+  background: var(--cc-surface);
+  border-bottom: 1px solid var(--cc-border);
+  animation: cc-fade-up .5s .08s ease both;
+}
+.cc-map-hdr {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px 12px;
+  border-bottom: 1px solid var(--cc-border);
+}
+.cc-map-eyebrow {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--cc-text3); margin-bottom: 1px;
+}
+.cc-map-title {
+  font-size: 14px; font-weight: 700; color: var(--cc-text); letter-spacing: -.02em;
+}
+.cc-map-legend {
+  display: flex; align-items: center; gap: 16px;
+}
+.cc-legend-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 500; color: var(--cc-text2);
+}
+.cc-legend-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.cc-map-body {
+  position: relative;
+  background: #ffffff;   /* clean white canvas */
+  padding: 0;
+  overflow: hidden;
+}
+.cc-usa-map {
+  display: block;
+  width: 100%;
+  height: 540px; /* initial placeholder — overwritten by JS after layout settles */
+  min-height: 360px;
+}
+
+/* State path styles — Apple Maps palette (D3 renders fills; borders via mesh) */
+.cc-state {
+  fill: #ffffff;
+  stroke: none;
+  cursor: pointer;      /* all states are clickable */
+  transition: fill .12s, opacity .35s;
+}
+.cc-state:hover { fill: #f0f0f5; }
+.cc-state-active {
+  fill: #cce8ba;
+  stroke: none;
+  cursor: pointer;
+  transition: fill .12s, opacity .35s;
+}
+.cc-state-active:hover { fill: #bce0a8; }
+
+/* State-focus banner — shown when zoomed into a state */
+.cc-state-banner {
+  display: none;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(60,60,67,.13);
+  border-radius: 20px;
+  padding: 5px 14px 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cc-text);
+  z-index: 25;
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 14px rgba(0,0,0,.10);
+  pointer-events: auto;
+}
+.cc-state-banner.visible { display: flex; }
+.cc-state-banner-flag {
+  width: 22px; height: 22px; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; background: var(--cc-teal-dim);
+}
+.cc-state-banner-back {
+  background: none; border: none; cursor: pointer;
+  font-size: 11px; font-weight: 600; color: var(--cc-blue);
+  padding: 0; margin-left: 4px;
+  text-decoration: none;
+}
+.cc-state-banner-back:hover { text-decoration: underline; }
+
+/* State labels */
+.cc-state-lbl {
+  font-family: -apple-system, sans-serif;
+  font-size: 7px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  fill: rgba(60,60,67,.55);
+  pointer-events: none;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+/* Location dot pins */
+.cc-loc-pin {
+  cursor: pointer;
+}
+.cc-loc-dot {
+  transition: transform .12s;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.cc-loc-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: cc-dot-ping 2.2s ease-out infinite;
+}
+.cc-loc-pin:hover .cc-loc-dot { transform: scale(1.5); }
+.cc-loc-lbl {
+  /* font-size intentionally omitted — set and rescaled dynamically by D3 */
+  font-family: -apple-system, sans-serif;
+  font-weight: 600;
+  pointer-events: none;
+  user-select: none;
+  paint-order: stroke fill;
+  stroke: rgba(255,255,255,.6);
+  stroke-width: 2.5px;
+  stroke-linejoin: round;
+}
+
+/* Tooltip */
+.cc-map-tip {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(60,60,67,.13);
+  border-radius: 10px;
+  padding: 11px 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.13), 0 1px 4px rgba(0,0,0,.06);
+  pointer-events: none;
+  z-index: 100;
+  min-width: 195px;
+  max-width: 230px;
+}
+.cc-tip-name { font-size: 13px; font-weight: 700; color: var(--cc-text); }
+.cc-tip-addr { font-size: 10.5px; color: var(--cc-text2); margin-top: 2px; line-height: 1.3; }
+.cc-tip-status { font-size: 11.5px; color: var(--cc-text2); margin-top: 3px; }
+.cc-tip-meta {
+  display: flex; gap: 10px; margin-top: 7px;
+  border-top: 1px solid rgba(60,60,67,.08); padding-top: 7px;
+}
+.cc-tip-kv { display: flex; flex-direction: column; gap: 1px; }
+.cc-tip-kv-label { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--cc-text3); }
+.cc-tip-kv-val { font-size: 12px; font-weight: 700; color: var(--cc-text); }
+.cc-tip-cta { font-size: 10.5px; font-weight: 600; color: var(--cc-blue); margin-top: 7px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   ZOOM CONTROLS  — scoped to .cc-map-body only
+═══════════════════════════════════════════════════════════════ */
+.cc-zoom-ctrls {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--cc-surface);
+  border: 1px solid var(--cc-border);
+  border-radius: 8px;
+  padding: 3px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.09), 0 1px 3px rgba(0,0,0,.05);
+}
+.cc-zoom-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--cc-text2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .1s, color .12s;
+  user-select: none;
+  flex-shrink: 0;
+}
+.cc-zoom-btn:hover  { background: rgba(0,0,0,.055); color: var(--cc-text); }
+.cc-zoom-btn:active { background: rgba(0,0,0,.10); }
+.cc-zoom-reset {
+  font-size: 13px;
+  border-top: 1px solid var(--cc-border);
+  margin-top: 2px;
+  padding-top: 2px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MAP + SIDE STAT PANELS
+═══════════════════════════════════════════════════════════════ */
+.cc-map-with-stats {
+  display: grid;
+  grid-template-columns: 172px 1fr;
+}
+
+/* Side panel containers */
+.cc-side-stats {
+  display: flex;
+  flex-direction: column;
+  background: var(--cc-surface);
+}
+.cc-side-left  { border-right: 1px solid var(--cc-border); }
+
+/* Individual stat card */
+.cc-side-kpi {
+  flex: 1;
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid var(--cc-border);
+  position: relative;
+  overflow: hidden;
+  transition: background .15s;
+}
+.cc-side-kpi:last-child { border-bottom: none; }
+.cc-side-kpi:hover { background: rgba(0,0,0,.018); }
+
+/* Radial glow per accent */
+.cc-side-kpi::after {
+  content: '';
+  position: absolute;
+  top: -20px; right: -20px;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.cc-side-kpi.teal::after    { background: radial-gradient(circle, rgba(0,166,147,.07), transparent 65%); }
+.cc-side-kpi.blue::after    { background: radial-gradient(circle, rgba(0,122,255,.07), transparent 65%); }
+.cc-side-kpi.green::after   { background: radial-gradient(circle, rgba(52,199,89,.07), transparent 65%); }
+.cc-side-kpi.amber::after   { background: radial-gradient(circle, rgba(255,149,0,.07), transparent 65%); }
+.cc-side-kpi.neutral::after { background: radial-gradient(circle, rgba(60,60,67,.04), transparent 65%); }
+
+.cc-side-kpi-lbl {
+  font-size: 9.5px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--cc-text3); margin-bottom: 6px;
+}
+.cc-side-kpi-num {
+  font-size: 26px; font-weight: 700; letter-spacing: -.045em;
+  color: var(--cc-text); line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.cc-side-kpi-num.teal   { color: var(--cc-teal); }
+.cc-side-kpi-num.green  { color: var(--cc-green); }
+.cc-side-kpi-num.amber  { color: var(--cc-amber); }
+.cc-side-kpi-sub {
+  font-size: 10px; color: var(--cc-text3); font-weight: 500;
+  margin-top: 2px; margin-bottom: 8px;
+}
+.cc-side-kpi-trend {
+  display: flex; align-items: center; gap: 3px;
+  font-size: 11px; font-weight: 700; margin-bottom: 10px;
+}
+.cc-side-kpi-trend.up   { color: var(--cc-green); }
+.cc-side-kpi-trend.down { color: var(--cc-red); }
+.cc-side-kpi-trend.good { color: var(--cc-teal); }
+.cc-side-sparkline {
+  display: block; overflow: visible; opacity: .85;
+  margin-top: auto;
+}
+
+/* Responsive: collapse side panels on smaller screens */
+@media (max-width: 900px) {
+  .cc-map-with-stats { grid-template-columns: 1fr; }
+  .cc-side-stats { flex-direction: row; }
+  .cc-side-left, .cc-side-right { border: none; border-bottom: 1px solid var(--cc-border); }
+  .cc-side-kpi { border-bottom: none; border-right: 1px solid var(--cc-border); }
+  .cc-side-kpi:last-child { border-right: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BOTTOM TWO-COLUMN GRID
+═══════════════════════════════════════════════════════════════ */
+.cc-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  min-height: calc(100vh - 350px);
+}
+
+/* ── Priority Feed ──────────────────────────────────────────── */
+.cc-feed {
+  background: var(--cc-surface); border-right: 1px solid var(--cc-border);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.cc-feed-hdr {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px 12px; border-bottom: 1px solid var(--cc-border); flex-shrink: 0;
+}
+.cc-feed-title { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--cc-text3); }
+.cc-feed-count { font-size:11px; font-weight:600; color:var(--cc-text3); }
+.cc-group { flex-shrink:0; animation:cc-slide-in .4s ease both; }
+.cc-group:nth-child(2){animation-delay:.05s}
+.cc-group:nth-child(3){animation-delay:.10s}
+.cc-group:nth-child(4){animation-delay:.15s}
+.cc-group-hdr {
+  display:flex; align-items:center; gap:8px; padding:8px 20px 7px;
+  background:rgba(0,0,0,.02); border-bottom:1px solid var(--cc-border);
+  border-top:1px solid var(--cc-border); position:sticky; top:0; z-index:4;
+}
+.cc-group-dot { width:5px; height:5px; border-radius:50%; flex-shrink:0; }
+.cc-group-lbl { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; flex:1; }
+.cc-group-lbl.red   { color:var(--cc-red); }
+.cc-group-lbl.amber { color:var(--cc-amber); }
+.cc-group-lbl.teal  { color:var(--cc-teal); }
+.cc-group-lbl.blue  { color:var(--cc-blue); }
+.cc-group-badge { font-size:10px; font-weight:700; padding:1px 7px; border-radius:99px; }
+.cc-group-badge.red   { background:var(--cc-red-dim);   color:var(--cc-red); }
+.cc-group-badge.amber { background:var(--cc-amber-dim); color:var(--cc-amber); }
+.cc-group-badge.teal  { background:var(--cc-teal-dim);  color:var(--cc-teal); }
+.cc-group-badge.blue  { background:var(--cc-blue-dim);  color:var(--cc-blue); }
+.cc-row {
+  display:flex; align-items:flex-start; gap:13px; padding:13px 20px;
+  border-bottom:1px solid rgba(60,60,67,.07); text-decoration:none; color:inherit;
+  transition:background .1s; position:relative; overflow:hidden;
+}
+.cc-row:last-child { border-bottom:none; }
+.cc-row:hover { background:rgba(0,0,0,.018); }
+.cc-row::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:2px;
+  background:transparent; transition:background .15s;
+}
+.cc-row:hover::before { background:rgba(60,60,67,.12); }
+.cc-row.rec::before  { background:var(--cc-teal); }
+.cc-row.rec  { background:rgba(0,166,147,.03); }
+.cc-row.rec:hover { background:rgba(0,166,147,.055); }
+.cc-row-icon {
+  width:32px; height:32px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px;
+}
+.cc-row-icon.red    { background:var(--cc-red-dim);    color:var(--cc-red); }
+.cc-row-icon.amber  { background:var(--cc-amber-dim);  color:var(--cc-amber); }
+.cc-row-icon.teal   { background:var(--cc-teal-dim);   color:var(--cc-teal); }
+.cc-row-icon.blue   { background:var(--cc-blue-dim);   color:var(--cc-blue); }
+.cc-row-icon.green  { background:var(--cc-green-dim);  color:var(--cc-green); }
+.cc-row-icon.purple { background:var(--cc-purple-dim); color:var(--cc-purple); }
+.cc-row-body { flex:1; min-width:0; }
+.cc-row-title {
+  font-size:12.5px; font-weight:600; color:var(--cc-text); line-height:1.35;
+  display:flex; align-items:center; gap:7px; flex-wrap:wrap;
+}
+.cc-rec-chip {
+  font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.07em;
+  padding:1px 6px; border-radius:99px; background:var(--cc-teal-dim); color:var(--cc-teal);
+  border:1px solid rgba(0,166,147,.2); flex-shrink:0;
+}
+.cc-row-desc { font-size:11.5px; color:var(--cc-text3); margin-top:2px; line-height:1.45; }
+.cc-row-end { display:flex; flex-direction:column; align-items:flex-end; gap:6px; flex-shrink:0; }
+.cc-chip { font-size:11px; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap; }
+.cc-chip.red    { background:var(--cc-red-dim);    color:var(--cc-red); }
+.cc-chip.amber  { background:var(--cc-amber-dim);  color:var(--cc-amber); }
+.cc-chip.teal   { background:var(--cc-teal-dim);   color:var(--cc-teal); }
+.cc-chip.blue   { background:var(--cc-blue-dim);   color:var(--cc-blue); }
+.cc-chip.green  { background:var(--cc-green-dim);  color:var(--cc-green); }
+.cc-chip.purple { background:var(--cc-purple-dim); color:var(--cc-purple); }
+.cc-action-link {
+  font-size:11px; font-weight:600; color:var(--cc-blue);
+  text-decoration:none; white-space:nowrap; opacity:.75;
+}
+.cc-action-link:hover { opacity:1; text-decoration:underline; }
+
+/* ── Intelligence Panel ─────────────────────────────────────── */
+.cc-intel { display:flex; flex-direction:column; animation:cc-fade-up .5s .12s ease both; }
+.cc-own { padding:18px 18px 0; border-bottom:1px solid var(--cc-border); flex-shrink:0; background:var(--cc-surface); }
+.cc-own-title { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--cc-text3); margin-bottom:14px; }
+.cc-assignee { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid rgba(60,60,67,.07); }
+.cc-assignee:last-child { border-bottom:none; padding-bottom:18px; }
+.cc-av {
+  width:30px; height:30px; border-radius:50%; display:flex; align-items:center;
+  justify-content:center; font-size:10px; font-weight:700; flex-shrink:0; letter-spacing:-.01em; margin-top:1px;
+}
+.cc-av.red   { background:var(--cc-red-dim);   color:var(--cc-red);   border:1px solid rgba(255,59,48,.18); }
+.cc-av.teal  { background:var(--cc-teal-dim);  color:var(--cc-teal);  border:1px solid rgba(0,166,147,.18); }
+.cc-av.amber { background:var(--cc-amber-dim); color:var(--cc-amber); border:1px solid rgba(255,149,0,.18); }
+.cc-av.blue  { background:var(--cc-blue-dim);  color:var(--cc-blue);  border:1px solid rgba(0,122,255,.18); }
+.cc-av-body { flex:1; min-width:0; }
+.cc-av-role { font-size:9.5px; font-weight:600; text-transform:uppercase; letter-spacing:.07em; color:var(--cc-text3); }
+.cc-av-task { font-size:12px; font-weight:600; color:var(--cc-text); margin-top:1px; line-height:1.35; }
+.cc-av-when { font-size:10.5px; color:var(--cc-text3); margin-top:2px; }
+.cc-av-badge { flex-shrink:0; font-size:10px; font-weight:700; padding:2px 7px; border-radius:99px; margin-top:2px; white-space:nowrap; }
+
+/* MAIA Panel */
+.cc-maia {
+  flex:1; display:flex; flex-direction:column; padding:18px;
+  background:linear-gradient(155deg,#e8f5f3 0%,#edf3ff 45%,#f3eeff 100%);
+  position:relative; overflow:hidden; border-top:1px solid rgba(60,60,67,.07);
+}
+.cc-maia::before {
+  content:''; position:absolute; left:0; right:0; height:140px;
+  background:linear-gradient(180deg,rgba(0,166,147,.055),transparent);
+  animation:cc-scan 5s linear infinite; pointer-events:none; z-index:0;
+}
+.cc-maia > * { position:relative; z-index:1; }
+.cc-maia-eyebrow { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:rgba(0,166,147,.6); margin-bottom:2px; }
+.cc-maia-heading { font-size:18px; font-weight:700; color:#1c1c1e; letter-spacing:-.025em; margin-bottom:5px; }
+.cc-maia-sub { font-size:11.5px; color:rgba(60,60,67,.55); margin-bottom:16px; line-height:1.5; }
+.cc-maia-chip {
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  padding:10px 12px; border-radius:10px; background:rgba(255,255,255,.72);
+  border:1px solid rgba(60,60,67,.1); color:rgba(60,60,67,.85); font-size:11.5px;
+  font-weight:500; margin-bottom:6px; cursor:pointer; text-decoration:none;
+  transition:background .12s,border-color .12s,box-shadow .12s; line-height:1.4;
+  backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+}
+.cc-maia-chip:hover { background:rgba(255,255,255,.92); border-color:rgba(0,166,147,.3); box-shadow:0 1px 6px rgba(0,166,147,.1); color:#1c1c1e; }
+.cc-maia-chip span:last-child { color:rgba(0,166,147,.7); font-weight:700; font-size:10px; flex-shrink:0; white-space:nowrap; letter-spacing:.02em; }
+.cc-maia-chip:hover span:last-child { color:var(--cc-teal); }
+.cc-maia-footer { font-size:10px; color:rgba(60,60,67,.38); margin-top:auto; padding-top:14px; line-height:1.6; }
+
+/* ═══════════════════════════════════════════════════════════════
+   VIEW TOGGLE — segmented control in map header
+═══════════════════════════════════════════════════════════════ */
+.cc-view-toggle-wrap {
+  display: flex;
+  background: rgba(60,60,67,.08);
+  border-radius: 8px;
+  padding: 2px;
+  gap: 2px;
+}
+.cc-view-btn {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 11px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--cc-text2);
+  cursor: pointer;
+  transition: background .15s, color .15s, box-shadow .15s;
+  white-space: nowrap;
+  line-height: 1.4;
+  letter-spacing: -.01em;
+}
+.cc-view-btn.active {
+  background: var(--cc-surface);
+  color: var(--cc-text);
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 0.5px 1px rgba(0,0,0,.06);
+}
+.cc-view-btn:hover:not(.active) { color: var(--cc-text); }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 1100px) { .cc-grid { grid-template-columns: 1fr; } .cc-intel { display: none; } }
+@media (max-width: 640px)  { .cc-banner-mid { display: none; } }
+
+/* ── Mobile overrides — phone portrait ───────────────────────── */
+@media (max-width: 640px) {
+  .cc-kpi-row { grid-template-columns: repeat(2, 1fr) !important; }
+  .cc-kpi { border-right: 1px solid var(--cc-border) !important; }
+  .cc-kpi:nth-child(2n) { border-right: none !important; }
+  .cc-kpi:nth-last-child(-n+1):nth-child(odd) { grid-column: span 2; }
+  .cc-map-with-stats { grid-template-columns: 1fr !important; }
+  .cc-side-stats { flex-direction: row !important; flex-wrap: wrap !important; }
+  .cc-banner { padding: 0 14px !important; height: 40px !important; }
+  .cc-map-hdr { flex-wrap: wrap !important; gap: 8px !important; padding: 10px 14px !important; }
+  .cc-map-legend { flex-wrap: wrap !important; gap: 8px !important; }
+  .cc-usa-map { height: 280px !important; min-height: 220px !important; }
+}
+</style>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00a693">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="WashCentral">
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+</head>
+<body class="dashboard-page" data-page="command-center.html" data-breadcrumb-leaf="Command Center" data-breadcrumb-parent="Dashboard">
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo"><img class="img-fill" alt="WashCentral" src="assets/logo-mark.svg"/></div>
+      <div><h1>wash<span>central</span></h1><small>Powered by Micrologic</small></div>
+    </div>
+    <div class="menu" id="sidebar-menu"></div>
+  </aside>
+
+  <main class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb-bar"><div class="breadcrumbs" data-breadcrumbs=""></div></div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;" id="topbar-actions">
+        <span data-sidebar-toggle-top="" style="display:none"></span>
+        <span data-logout-btn="" style="display:none"></span>
+        <span id="loc-selector-anchor"></span>
+        <button class="a-btn a-btn-ai" onclick="void(0)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          Ask Shyne
+        </button>
+        <div id="user-menu-wrap"></div>
+      </div>
+    </header>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         MOBILE APP — member-app engagement KPIs
+    ══════════════════════════════════════════════════════════ -->
+    <div class="cc-map-section" style="margin-bottom:0;">
+      <div class="cc-map-hdr">
+        <div>
+          <div class="cc-map-eyebrow">Mobile App</div>
+          <div style="font-size:14px;font-weight:700;color:var(--cc-text);letter-spacing:-.02em;">Member app engagement</div>
+        </div>
+        <span class="cc-live-pill" style="font-size:9.5px;padding:3px 9px;"><span class="cc-live-dot"></span>Live</span>
+      </div>
+      <div class="cc-kpi-row" id="cc-mobile-kpis" style="grid-template-columns:repeat(4,1fr);">
+
+        <div class="cc-kpi teal">
+          <div class="cc-kpi-lbl">App Installs</div>
+          <div class="cc-kpi-num teal" id="mob-installs">—</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend up" id="mob-installs-tr">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg><span>—</span>
+            </div>
+            <span style="font-size:10px;color:var(--cc-text3);">installed base</span>
+          </div>
+        </div>
+
+        <div class="cc-kpi blue">
+          <div class="cc-kpi-lbl">Weekly Active Members</div>
+          <div class="cc-kpi-num" id="mob-wam" style="color:var(--cc-blue,#007aff);">—</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend up" id="mob-wam-tr">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg><span>—</span>
+            </div>
+            <span style="font-size:10px;color:var(--cc-text3);">last 7 days</span>
+          </div>
+        </div>
+
+        <div class="cc-kpi amber">
+          <div class="cc-kpi-lbl">Redemptions · 7d</div>
+          <div class="cc-kpi-num amber" id="mob-redemptions">—</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend" id="mob-redemptions-split" style="color:var(--cc-text2,#3c4657);">QR — · Kiosk —</div>
+            <span style="font-size:10px;color:var(--cc-text3);">QR vs kiosk</span>
+          </div>
+        </div>
+
+        <div class="cc-kpi green">
+          <div class="cc-kpi-lbl">Push Opt-in Rate</div>
+          <div class="cc-kpi-num" id="mob-optin" style="color:var(--cc-green,#34c759);">—</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend up" id="mob-optin-tr">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg><span>—</span>
+            </div>
+            <span style="font-size:10px;color:var(--cc-text3);">of installs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         LOCATION MAP — full width
+    ══════════════════════════════════════════════════════════ -->
+    <div class="cc-map-section">
+      <div class="cc-map-hdr">
+        <div>
+          <div class="cc-map-eyebrow">Location Network</div>
+          <div class="cc-map-title">144 locations across 7 states · OH · VA · MI · PA · IN · NC · MD</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;">
+          <div class="cc-map-legend">
+            <span class="cc-legend-item"><span class="cc-legend-dot" style="background:#34c759"></span>Healthy</span>
+            <span class="cc-legend-item"><span class="cc-legend-dot" style="background:#ff9500"></span>Warning</span>
+            <span class="cc-legend-item"><span class="cc-legend-dot" style="background:#ff3b30"></span>Critical</span>
+          </div>
+          <!-- View toggle -->
+          <div class="cc-view-toggle-wrap" id="cc-view-toggle-wrap">
+            <button class="cc-view-btn active" id="cc-btn-usa">Full USA</button>
+            <button class="cc-view-btn" id="cc-btn-active">Active States</button>
+          </div>
+          <span class="cc-live-pill" style="font-size:9.5px;padding:3px 9px;"><span class="cc-live-dot"></span>Live</span>
+        </div>
+      </div>
+
+      <div class="cc-map-with-stats">
+
+        <!-- ── Left stat panel (2 cards) ──────────────────── -->
+        <div class="cc-side-stats cc-side-left">
+
+          <div class="cc-side-kpi teal">
+            <div class="cc-side-kpi-lbl">Revenue Today</div>
+            <div class="cc-side-kpi-num teal">$184,260</div>
+            <div class="cc-side-kpi-sub">vs yesterday</div>
+            <div class="cc-side-kpi-trend up">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>8.4%
+            </div>
+            <svg class="cc-side-sparkline" width="100%" height="28" viewBox="0 0 120 28" preserveAspectRatio="none">
+              <defs><linearGradient id="spkST" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00a693" stop-opacity=".18"/><stop offset="100%" stop-color="#00a693" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0,22 L15,17 L30,20 L45,13 L60,16 L75,9 L90,12 L105,6 L120,4 L120,28 L0,28 Z" fill="url(#spkST)"/>
+              <path d="M0,22 L15,17 L30,20 L45,13 L60,16 L75,9 L90,12 L105,6 L120,4" fill="none" stroke="#00a693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="cc-side-kpi blue">
+            <div class="cc-side-kpi-lbl">Active Members</div>
+            <div class="cc-side-kpi-num">24,816</div>
+            <div class="cc-side-kpi-sub">across all locations</div>
+            <div class="cc-side-kpi-trend up">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>3.2%
+            </div>
+            <svg class="cc-side-sparkline" width="100%" height="28" viewBox="0 0 120 28" preserveAspectRatio="none">
+              <defs><linearGradient id="spkSM" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#007aff" stop-opacity=".18"/><stop offset="100%" stop-color="#007aff" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0,22 L15,21 L30,19 L45,17 L60,15 L75,13 L90,11 L105,9 L120,7 L120,28 L0,28 Z" fill="url(#spkSM)"/>
+              <path d="M0,22 L15,21 L30,19 L45,17 L60,15 L75,13 L90,11 L105,9 L120,7" fill="none" stroke="#007aff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="cc-side-kpi neutral">
+            <div class="cc-side-kpi-lbl">Cars Washed</div>
+            <div class="cc-side-kpi-num">6,842</div>
+            <div class="cc-side-kpi-sub">today</div>
+            <div class="cc-side-kpi-trend up">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>5.1%
+            </div>
+            <svg class="cc-side-sparkline" width="100%" height="28" viewBox="0 0 120 28" preserveAspectRatio="none">
+              <path d="M0,18 L15,12 L30,20 L45,10 L60,16 L75,7 L90,14 L105,8 L120,5" fill="none" stroke="rgba(60,60,67,.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="cc-side-kpi green">
+            <div class="cc-side-kpi-lbl">Decline Rate</div>
+            <div class="cc-side-kpi-num green">0.24%</div>
+            <div class="cc-side-kpi-sub">billing declines</div>
+            <div class="cc-side-kpi-trend good">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="5 12 12 19 19 12"/></svg>−0.03%
+            </div>
+            <svg class="cc-side-sparkline" width="100%" height="28" viewBox="0 0 120 28" preserveAspectRatio="none">
+              <path d="M0,10 L15,11 L30,10 L45,12 L60,9 L75,11 L90,10 L105,11 L120,10" fill="none" stroke="#34c759" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+        </div><!-- /cc-side-left -->
+
+        <!-- ── Map canvas ───────────────────────────────────── -->
+        <div class="cc-map-body">
+
+        <!-- State focus banner (shown when a state is clicked) -->
+        <div class="cc-state-banner" id="cc-state-banner">
+          <span class="cc-state-banner-flag" id="cc-banner-flag">🗺</span>
+          <span id="cc-banner-name">Florida</span>
+          <button class="cc-state-banner-back" id="cc-banner-back">← All states</button>
+        </div>
+
+        <!-- Zoom controls (overlaid on map only) -->
+        <div class="cc-zoom-ctrls">
+          <button class="cc-zoom-btn" id="cc-zoom-in"  title="Zoom in">+</button>
+          <button class="cc-zoom-btn" id="cc-zoom-out" title="Zoom out">−</button>
+          <button class="cc-zoom-btn cc-zoom-reset" id="cc-zoom-reset" title="Reset">⤢</button>
+        </div>
+
+        <!-- Tooltip (positioned by JS) -->
+        <div class="cc-map-tip" id="cc-map-tip">
+          <div class="cc-tip-name" id="tip-name"></div>
+          <div class="cc-tip-addr" id="tip-addr"></div>
+          <div class="cc-tip-status" id="tip-status"></div>
+          <div class="cc-tip-meta">
+            <div class="cc-tip-kv"><div class="cc-tip-kv-label">Revenue/day</div><div class="cc-tip-kv-val" id="tip-rev"></div></div>
+            <div class="cc-tip-kv"><div class="cc-tip-kv-label">Members</div><div class="cc-tip-kv-val" id="tip-mem"></div></div>
+            <div class="cc-tip-kv"><div class="cc-tip-kv-label">Tickets</div><div class="cc-tip-kv-val" id="tip-tix"></div></div>
+          </div>
+          <div class="cc-tip-cta">Click to open location dashboard →</div>
+        </div>
+
+        <svg id="cc-map-svg" class="cc-usa-map"></svg>
+        </div><!-- /cc-map-body -->
+
+      </div><!-- /cc-map-with-stats -->
+    </div><!-- /cc-map-section -->
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         BOTTOM GRID: Feed + Intel
+    ══════════════════════════════════════════════════════════ -->
+    <div class="cc-grid">
+
+      <!-- LEFT: PRIORITY FEED -->
+      <div class="cc-feed">
+        <div class="cc-feed-hdr">
+          <span class="cc-feed-title">Priority Intelligence</span>
+          <span class="cc-feed-count">11 items · 4 urgent</span>
+        </div>
+
+        <!-- CRITICAL -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-red)"></span>
+            <span class="cc-group-lbl red">Critical</span>
+            <span class="cc-group-badge red">2</span>
+          </div>
+          <a class="cc-row" href="payments-reconciliation.html">
+            <div class="cc-row-icon red">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Henrico W Broad, VA — POS system offline</div>
+              <div class="cc-row-desc">Card terminals down at peak window. On-site tech en route; queue forming.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip red">Critical</span><span class="cc-action-link">Open →</span></div>
+          </a>
+          <a class="cc-row" href="support.html">
+            <div class="cc-row-icon red">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">3 support tickets within 120 min of SLA breach</div>
+              <div class="cc-row-desc">SUP-1042, SUP-1036, SUP-1028 need immediate reassignment.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip red">120 min</span><span class="cc-action-link">Review →</span></div>
+          </a>
+        </div>
+
+        <!-- HIGH -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-amber)"></span>
+            <span class="cc-group-lbl amber">High Priority</span>
+            <span class="cc-group-badge amber">2</span>
+          </div>
+          <a class="cc-row" href="support.html">
+            <div class="cc-row-icon amber">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Columbus Sawmill, OH — kiosk printer offline</div>
+              <div class="cc-row-desc">Unable to issue receipts or promo vouchers. Walk-ins affected.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip amber">High</span><span class="cc-action-link">Assign →</span></div>
+          </a>
+          <a class="cc-row" href="locations.html">
+            <div class="cc-row-icon amber">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Cincinnati Montgomery, OH — membership conversion −6% WoW</div>
+              <div class="cc-row-desc">Below baseline. Review offer placement and coaching cadence.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip amber">Watch</span><span class="cc-action-link">Analyze →</span></div>
+          </a>
+        </div>
+
+        <!-- REVENUE PLAYS -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-teal)"></span>
+            <span class="cc-group-lbl teal">Revenue plays — +$3,200 today</span>
+            <span class="cc-group-badge teal">5</span>
+          </div>
+          <a class="cc-row rec" href="marketing.html">
+            <div class="cc-row-icon teal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Launch win-back campaign <span class="cc-rec-chip">Recommended</span></div>
+              <div class="cc-row-desc">42 churn-risk customers across 6 locations. ~14 projected recoveries.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip teal">+$980</span><span class="cc-action-link">Launch →</span></div>
+          </a>
+          <a class="cc-row" href="crm-customers.html">
+            <div class="cc-row-icon teal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">124 members eligible for Unlimited Plus upsell</div>
+              <div class="cc-row-desc">Purchased add-ons recently — not yet on top-tier plan.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip teal">+$1,240</span><span class="cc-action-link">Target →</span></div>
+          </a>
+          <a class="cc-row" href="payments-reconciliation.html">
+            <div class="cc-row-icon green">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">18 recoverable billing failures via card updater</div>
+              <div class="cc-row-desc">Historical recovery rate ~62%. Reachable through outreach flow.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip green">+$640</span><span class="cc-action-link">Recover →</span></div>
+          </a>
+          <a class="cc-row" href="locations.html">
+            <div class="cc-row-icon purple">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">12 dynamic pricing gaps at peak-volume sites</div>
+              <div class="cc-row-desc">Under market rate during high-demand windows.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip purple">+$1,140</span><span class="cc-action-link">Analyze →</span></div>
+          </a>
+          <a class="cc-row" href="dashboard-downsells.html">
+            <div class="cc-row-icon teal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">29 members with downsell signals</div>
+              <div class="cc-row-desc">Visit frequency −40%+ over 60 days. Proactive retention offer available.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip teal">Prevent</span><span class="cc-action-link">Review →</span></div>
+          </a>
+        </div>
+
+        <!-- AUTOMATIONS -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-blue)"></span>
+            <span class="cc-group-lbl blue">Automations — 2 live</span>
+            <span class="cc-group-badge blue">2</span>
+          </div>
+          <a class="cc-row" href="marketing.html">
+            <div class="cc-row-icon blue">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Win-back SMS sequence — 14 in flow today</div>
+              <div class="cc-row-desc">3-step cadence. Step 2 open rate 38%. Running without intervention.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip blue">Live</span><span class="cc-action-link">Inspect →</span></div>
+          </a>
+          <a class="cc-row" href="payments-reconciliation.html">
+            <div class="cc-row-icon blue">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Payment retry automation — 37 queued, 11 recovered</div>
+              <div class="cc-row-desc">Card updater and retry logic processing across all pools.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip green">11 recovered</span><span class="cc-action-link">View →</span></div>
+          </a>
+        </div>
+      </div><!-- /cc-feed -->
+
+      <!-- RIGHT: INTEL PANEL -->
+      <div class="cc-intel">
+        <div class="cc-own">
+          <div class="cc-own-title">Action ownership</div>
+          <div class="cc-assignee">
+            <div class="cc-av red">RO</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Regional Ops</div>
+              <div class="cc-av-task">Henrico W Broad — POS offline</div>
+              <div class="cc-av-when">Due: next 30 min</div>
+            </div>
+            <span class="cc-av-badge cc-chip red">Urgent</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av teal">MK</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Marketing</div>
+              <div class="cc-av-task">Launch win-back campaign</div>
+              <div class="cc-av-when">Due: today</div>
+            </div>
+            <span class="cc-av-badge cc-chip teal">+$980</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av amber">SL</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Support Lead</div>
+              <div class="cc-av-task">Reassign 3 aging tickets</div>
+              <div class="cc-av-when">Due: next 2 hrs</div>
+            </div>
+            <span class="cc-av-badge cc-chip amber">SLA risk</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av blue">RV</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Revenue Ops</div>
+              <div class="cc-av-task">Review pricing gaps</div>
+              <div class="cc-av-when">Due: this afternoon</div>
+            </div>
+            <span class="cc-av-badge cc-chip purple">+$1,140</span>
+          </div>
+        </div>
+
+        <!-- MAIA -->
+        <div class="cc-maia">
+          <div class="cc-maia-eyebrow">Intelligence</div>
+          <div class="cc-maia-heading">Ask MAIA</div>
+          <div class="cc-maia-sub">Guided intelligence for operators, marketing, and support.</div>
+          <a class="cc-maia-chip" href="locations.html"><span>What locations are underperforming?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="crm-customers.html"><span>Which customers are at churn risk?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="dashboard-executive-revenue.html"><span>Show today's revenue trend drivers</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="marketing.html"><span>Best win-back segment by ROI?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="dashboard-memberships.html"><span>Summarise membership activity today</span><span>Open ↗</span></a>
+          <div class="cc-maia-footer">MAIA · WashCentral AI Platform · Responses are contextual and based on live data.</div>
+        </div>
+      </div><!-- /cc-intel -->
+
+    </div><!-- /cc-grid -->
+
+  </main>
+</div>
+
+<!-- D3 + TopoJSON for accurate US map -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script>
+/* ── USA Map — D3 + TopoJSON (real geographic data) ─────────── */
+(async function () {
+  var mapSvg = document.getElementById('cc-map-svg');
+  if (!mapSvg) return;
+
+  /* Wait for full page load + two rAFs so the sidebar is settled
+     and getBoundingClientRect() returns the final column width.
+     Single rAF fired mid-animation was giving an oversized W,
+     pushing southern states below the overflow:hidden boundary. */
+  await new Promise(function(r) {
+    var done = false;
+    var go = function(){ if (done) return; done = true; r(); };
+    var tick = function(){ requestAnimationFrame(function(){ requestAnimationFrame(go); }); };
+    /* rAF is throttled/paused in background tabs — a timeout guarantees the map
+       still renders (and keeps getBoundingClientRect width correct since layout
+       runs regardless of tab visibility). */
+    setTimeout(go, 250);
+    if (document.readyState === 'complete') tick();
+    else window.addEventListener('load', tick, { once: true });
+  });
+
+  var W = mapSvg.getBoundingClientRect().width || 960;
+  /* Derive height proportionally so the projection never exceeds the
+     container — clamp between 400 and 600 px */
+  var H = Math.max(400, Math.min(600, Math.round(W * 0.5)));
+  mapSvg.style.height = H + 'px';  /* keep CSS in sync */
+
+  var svg = d3.select('#cc-map-svg')
+    .attr('viewBox', '0 0 ' + W + ' ' + H)
+    .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  /* AlbersUSA projection — handles AK + HI insets automatically */
+  var proj = d3.geoAlbersUsa()
+    .scale(W * 0.95)
+    .translate([W * 0.47, H * 0.48]);
+
+  var pathGen = d3.geoPath().projection(proj);
+
+  /* Gradient def (must come before the rect that uses it) */
+  var defs = svg.append('defs');
+  var grad = defs.append('linearGradient').attr('id','waterGrad').attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',1);
+  grad.append('stop').attr('offset','0%').attr('stop-color','#ffffff');
+  grad.append('stop').attr('offset','100%').attr('stop-color','#f5f5f7');
+
+  /* Background rect — stays fixed (not inside zoom group) */
+  svg.append('rect').attr('width', W).attr('height', H).attr('fill', 'url(#waterGrad)');
+
+  /* Clip so zoomed content never bleeds outside the SVG bounds */
+  defs.append('clipPath').attr('id','cc-map-clip')
+    .append('rect').attr('width', W).attr('height', H);
+
+  /* ── All zoomable map content lives in this single group ────── */
+  var mapG = svg.append('g')
+    .attr('id', 'cc-map-g')
+    .attr('clip-path', 'url(#cc-map-clip)');
+
+  /* Load US Atlas TopoJSON */
+  var us;
+  try {
+    us = await d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json');
+  } catch(e) {
+    console.error('WashCentral map: failed to load TopoJSON', e);
+    return;
+  }
+
+  /* EWC footprint — OH=39, VA=51, MI=26, PA=42, IN=18, NC=37, MD=24 */
+  var ACTIVE = new Set(['39','51','26','42','18','37','24']);
+
+  var statesFeature = topojson.feature(us, us.objects.states);
+
+  /* State fills */
+  mapG.selectAll('path.cc-state')
+    .data(statesFeature.features)
+    .join('path')
+    .attr('class', function(d){ return ACTIVE.has(d.id) ? 'cc-state cc-state-active' : 'cc-state'; })
+    .attr('d', pathGen)
+    .attr('stroke', 'none');
+
+  /* Internal state borders (dashed red-pink, Apple Maps style) */
+  mapG.append('path')
+    .datum(topojson.mesh(us, us.objects.states, function(a,b){ return a !== b; }))
+    .attr('fill', 'none')
+    .attr('stroke', 'rgba(175,58,45,.4)')
+    .attr('stroke-width', .7)
+    .attr('stroke-dasharray', '3,2')
+    .attr('d', pathGen);
+
+  /* Outer nation border */
+  mapG.append('path')
+    .datum(topojson.mesh(us, us.objects.states, function(a,b){ return a === b; }))
+    .attr('fill', 'none')
+    .attr('stroke', 'rgba(130,100,85,.35)')
+    .attr('stroke-width', .9)
+    .attr('d', pathGen);
+
+  /* State abbreviation labels */
+  var ABBR = {
+    '01':'ALA.','04':'ARIZ.','05':'ARK.','06':'CALIF.','08':'COLO.',
+    '09':'CT','10':'DEL.','12':'FLA.','13':'GA.','16':'IDAHO',
+    '17':'ILL.','18':'IND.','19':'IOWA','20':'KAN.','21':'KY.',
+    '22':'LA.','23':'MAINE','26':'MICH.','27':'MINN.','28':'MISS.',
+    '29':'MO.','30':'MONT.','31':'NEB.','32':'NEV.','35':'N.M.',
+    '36':'N.Y.','37':'N.C.','38':'N.D.','39':'OHIO','40':'OKLA.',
+    '41':'ORE.','42':'PA.','45':'S.C.','46':'S.D.','47':'TENN.',
+    '48':'TEXAS','49':'UTAH','51':'VA.','53':'WASH.','54':'W.VA.',
+    '55':'WIS.','56':'WYO.'
+  };
+  var SKIP = new Set(['09','10','11','24','25','33','34','44','50']);
+
+  statesFeature.features.forEach(function(f) {
+    if (SKIP.has(f.id)) return;
+    var abbr = ABBR[f.id]; if (!abbr) return;
+    var c = pathGen.centroid(f);
+    if (!c || isNaN(c[0]) || isNaN(c[1])) return;
+    mapG.append('text')
+      .attr('x', c[0]).attr('y', c[1])
+      .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+      .attr('class', 'cc-state-lbl')
+      .attr('fill', ACTIVE.has(f.id) ? 'rgba(0,95,65,.65)' : 'rgba(55,55,60,.52)')
+      .attr('font-weight', ACTIVE.has(f.id) ? '700' : '500')
+      .text(abbr);
+  });
+
+  /* ── Location pins (real lat/lng) ───────────────────────────── */
+  var LOCS_SNAPSHOT = [
+    /* ── Ohio (OH) · 89 ── */
+    { id:"avon-nagle-oh-314", code:"314", name:"Avon Nagle, OH", addr:"1884 Nagle Rd, Avon, OH 44011", phone:"440-780-1584", st:"OH", lat:41.8545, lng:-81.7198, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$9,258", mem:"702", tix:"2" },
+    { id:"beavercreek-indian-ripple-oh-202", code:"202", name:"Beavercreek Indian Ripple, OH", addr:"4494 Indian Ripple Road, Beavercreek, OH 45440", phone:"937-579-0625", st:"OH", lat:39.6975, lng:-84.1055, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$8,794", mem:"506", tix:"1" },
+    { id:"bexley-e-livingston-oh-114", code:"114", name:"Bexley E Livingston, OH", addr:"2080 East Livingston Avenue, Bexley, OH 43209", phone:"614-916-9274", st:"OH", lat:39.9487, lng:-82.9416, color:"#ff9500", r:6.5, ringR:9, delay:0.4, status:"🟡 Printer offline · service dispatched", rev:"$5,894", mem:"574", tix:"3" },
+    { id:"cambridge-southgate-oh-702", code:"702", name:"Cambridge Southgate, OH", addr:"1704 Southgate Parkway, Cambridge, OH 43725", phone:"220-577-6011", st:"OH", lat:40.0092, lng:-81.5812, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Below revenue target this week", rev:"$6,042", mem:"542", tix:"3" },
+    { id:"cincinnati-montgomery-oh-228", code:"228", name:"Cincinnati Montgomery, OH", addr:"12167 Montgomery Rd, Cincinnati, OH 45249", phone:"111-111-1111", st:"OH", lat:39.2117, lng:-84.3626, color:"#ff9500", r:6.5, ringR:9, delay:0.8, status:"🟡 Staffing gap on evening shift", rev:"$4,388", mem:"528", tix:"1" },
+    { id:"cincinnati-oh-225", code:"225", name:"Cincinnati, OH", addr:"8301 Colerain Avenue, Cincinnati, OH 45239", phone:"283-209-3225", st:"OH", lat:39.2222, lng:-84.5875, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$5,825", mem:"805", tix:"0" },
+    { id:"cleveland-carnegie-oh-303", code:"303", name:"Cleveland Carnegie, OH", addr:"3606 Carnegie Ave, Cleveland, OH 44115", phone:"216-279-0320", st:"OH", lat:41.5003, lng:-81.6618, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$8,191", mem:"559", tix:"0" },
+    { id:"cleveland-steelyard-oh-313", code:"313", name:"Cleveland Steelyard, OH", addr:"3278 Steelyard Drive, Cleveland, OH 44109", phone:"216-598-8907", st:"OH", lat:41.8545, lng:-81.7198, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$9,161", mem:"689", tix:"1" },
+    { id:"clintonville-n-high-oh-109", code:"109", name:"Clintonville N High, OH", addr:"5160 N High St, Columbus, OH 43214", phone:"614-892-9274", st:"OH", lat:40.0679, lng:-83.0183, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$4,973", mem:"557", tix:"1" },
+    { id:"columbus-chantry-oh-122", code:"122", name:"Columbus Chantry, OH", addr:"5932 Chantry Dr., Columbus, OH 43232", phone:"380-666-1012", st:"OH", lat:39.9246, lng:-82.8322, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$6,234", mem:"726", tix:"2" },
+    { id:"columbus-e-5th-ave-oh-134", code:"134", name:"Columbus E 5th Ave, OH", addr:"666 E 5th Ave, Columbus, OH 43201", phone:"614-296-2334", st:"OH", lat:39.9868, lng:-82.9874, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$7,398", mem:"462", tix:"2" },
+    { id:"columbus-e-broad-oh-101", code:"101", name:"Columbus E Broad, OH", addr:"6300 E. Broad St., Columbus, OH 43213", phone:"614-575-9274", st:"OH", lat:39.9812, lng:-82.8331, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$9,397", mem:"453", tix:"2" },
+    { id:"columbus-e-main-oh-118", code:"118", name:"Columbus E Main, OH", addr:"6071 East Main St, Reynolds, OH 43232", phone:"614-762-9904", st:"OH", lat:39.9543, lng:-82.8345, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$5,846", mem:"674", tix:"1" },
+    { id:"columbus-evans-way-oh-135", code:"135", name:"Columbus Evans Way, OH", addr:"1120 Evans Way Ct, Columbus, OH 43228", phone:"380-383-4380", st:"OH", lat:39.9746, lng:-83.1511, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$7,495", mem:"475", tix:"0" },
+    { id:"columbus-gemini-oh-131", code:"131", name:"Columbus Gemini, OH", addr:"9300 Antares Avenue, Columbus, OH 43240", phone:"220-246-2978", st:"OH", lat:40.1491, lng:-82.9888, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$7,107", mem:"423", tix:"2" },
+    { id:"columbus-grener-ave-oh-136", code:"136", name:"Columbus Grener Ave, OH", addr:"55 S. Grener Ave, Columbus, OH 43228", phone:"380-267-4280", st:"OH", lat:39.9746, lng:-83.1511, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$7,592", mem:"488", tix:"1" },
+    { id:"columbus-lazelle-oh-113", code:"113", name:"Columbus Lazelle, OH", addr:"460 Lazelle Rd, Columbus, OH 43240", phone:"614-362-1500", st:"OH", lat:40.1363, lng:-82.9946, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$5,361", mem:"609", tix:"2" },
+    { id:"columbus-s-high-oh-117", code:"117", name:"Columbus S High, OH", addr:"3580 South High Street, Columbus, OH 43207", phone:"614-665-9274", st:"OH", lat:39.8876, lng:-82.9972, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$5,749", mem:"661", tix:"0" },
+    { id:"columbus-sawmill-oh-138", code:"138", name:"Columbus Sawmill, OH", addr:"5925 Sawmill Rd., Columbus, OH 43017", phone:"614-296-2334", st:"OH", lat:40.0875, lng:-83.0926, color:"#ff9500", r:6.5, ringR:9, delay:0.8, status:"🟡 Tunnel throughput −7% WoW", rev:"$4,398", mem:"578", tix:"3" },
+    { id:"columbus-silver-oh-125", code:"125", name:"Columbus Silver, OH", addr:"2431 Silver Drive, Columbus, OH 43211", phone:"614-745-8955", st:"OH", lat:40.0138, lng:-82.9948, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$6,525", mem:"765", tix:"2" },
+    { id:"columbus-west-mound-oh-132", code:"132", name:"Columbus West Mound, OH", addr:"1360 W Mound Street, Columbus, OH 43240", phone:"614-296-2334", st:"OH", lat:39.9461, lng:-83.0345, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Equipment maintenance scheduled", rev:"$7,172", mem:"512", tix:"1" },
+    { id:"dayton-far-hills-oh-201", code:"201", name:"Dayton Far Hills, OH", addr:"7175 Far Hills, Dayton, OH 45459", phone:"937-310-2267", st:"OH", lat:39.6416, lng:-84.1584, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$8,697", mem:"493", tix:"0" },
+    { id:"dayton-seajay-oh-204", code:"204", name:"Dayton Seajay, OH", addr:"3200 Seajay Drive, Dayton, OH 45430", phone:"937-853-8400", st:"OH", lat:39.72, lng:-84.0612, color:"#ff9500", r:6.5, ringR:9, delay:0.4, status:"🟡 Equipment maintenance scheduled", rev:"$5,884", mem:"524", tix:"1" },
+    { id:"dublin-sawmill-oh-104", code:"104", name:"Dublin Sawmill, OH", addr:"7630 Sawmill Rd, Columbus, OH 43016", phone:"614-389-4693", st:"OH", lat:40.1218, lng:-83.0895, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$9,688", mem:"492", tix:"2" },
+    { id:"elyria-griswold-oh-308", code:"308", name:"Elyria Griswold, OH", addr:"620 Griswold Rd., Elyria, OH 44035", phone:"440-581-0002", st:"OH", lat:41.4003, lng:-82.1174, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$8,676", mem:"624", tix:"2" },
+    { id:"englewood-n-main-oh-205", code:"205", name:"Englewood N Main, OH", addr:"9204 N Main Street, Englewood, OH 45415", phone:"937-927-9274", st:"OH", lat:39.8571, lng:-84.2779, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$9,085", mem:"545", tix:"1" },
+    { id:"express-wash-concepts-oh", code:"", name:"Express Wash Concepts, OH", addr:"13375 National Rd Southwest Suite D, Etna, OH 43068", phone:"614-751-9274", st:"OH", lat:39.9559, lng:-82.7375, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$6,687", mem:"523", tix:"0" },
+    { id:"fairfield-oh-223", code:"223", name:"Fairfield, OH", addr:"5274 Dixie Highway, Fairfield, OH 45014", phone:"283-212-3223", st:"OH", lat:39.3379, lng:-84.5298, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$5,631", mem:"779", tix:"1" },
+    { id:"gahanna-morrison-oh-124", code:"124", name:"Gahanna Morrison, OH", addr:"455 Morrison Road, Gahanna, OH 43230", phone:"614-470-4350", st:"OH", lat:40.0085, lng:-82.8666, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$6,428", mem:"752", tix:"1" },
+    { id:"gahanna-n-hamilton-oh-105", code:"105", name:"Gahanna N Hamilton, OH", addr:"4940 N Hamilton RD, Gahanna, OH 43230", phone:"614-939-9274", st:"OH", lat:40.0574, lng:-82.8628, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$9,785", mem:"505", tix:"0" },
+    { id:"garfield-heights-rockside-oh-312", code:"312", name:"Garfield Heights Rockside, OH", addr:"12611 Rockside Rd, Garfield Heights, OH 44125", phone:"216-307-3040", st:"OH", lat:41.401, lng:-81.5966, color:"#ff3b30", r:7, ringR:10, delay:0.2, status:"🔴 Equipment fault — active incident", rev:"$4,736", mem:"324", tix:"5", critical:true },
+    { id:"grandview-w-fifth-oh-106", code:"106", name:"Grandview W Fifth, OH", addr:"904 W 5th Ave, Columbus, OH 43212", phone:"614-504-8855", st:"OH", lat:39.9884, lng:-83.03, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$9,882", mem:"518", tix:"1" },
+    { id:"grove-city-london-groveport-oh-123", code:"123", name:"Grove City London-Groveport, OH", addr:"2615 London Groveport Rd., Grove City, OH 43123", phone:"380-666-1012", st:"OH", lat:39.8386, lng:-83.0762, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$6,331", mem:"739", tix:"0" },
+    { id:"grove-city-stringtown-oh-107", code:"107", name:"Grove City Stringtown, OH", addr:"2190 Stringtown Rd, Grove City, OH 43123", phone:"614-372-6430", st:"OH", lat:39.8791, lng:-83.0613, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$9,979", mem:"531", tix:"2" },
+    { id:"grove-city-turnberry-court-oh-137", code:"137", name:"Grove City Turnberry Court, OH", addr:"3019 Turnberry Court, Grove City, OH 43123", phone:"614-297-4770", st:"OH", lat:39.9023, lng:-83.0759, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$7,689", mem:"501", tix:"2" },
+    { id:"groveport-s-hamilton-oh-121", code:"121", name:"Groveport S Hamilton, OH", addr:"3981 South Hamilton Rd., Columbus, OH 43232", phone:"614-697-2833", st:"OH", lat:39.8941, lng:-82.8828, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$6,137", mem:"713", tix:"1" },
+    { id:"hamilton-nw-washington-oh-210", code:"210", name:"Hamilton NW Washington, OH", addr:"724 NW Washington Blvd, Hamilton, OH 45013", phone:"513-275-9099", st:"OH", lat:39.4267, lng:-84.5954, color:"#ff9500", r:6.5, ringR:9, delay:0.0, status:"🟡 Tunnel throughput −7% WoW", rev:"$6,310", mem:"590", tix:"3" },
+    { id:"hamilton-windford-oh-208", code:"208", name:"Hamilton Windford, OH", addr:"6560 Winford Ave, Hamilton, OH 45011", phone:"513-654-9274", st:"OH", lat:39.3922, lng:-84.5091, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$9,376", mem:"584", tix:"1" },
+    { id:"heath-hebron-oh-110", code:"110", name:"Heath Hebron, OH", addr:"510 Hebron Rd, Heath, OH 43056", phone:"740-618-8180", st:"OH", lat:40.0379, lng:-82.4286, color:"#34c759", r:5.5, ringR:8, delay:0.0, status:"🟢 All systems healthy", rev:"$5,070", mem:"570", tix:"2" },
+    { id:"hilliard-cemetery-oh-130", code:"130", name:"Hilliard Cemetery, OH", addr:"1074 Gemini Place, Columbus, OH 43240", phone:"614-515-8920", st:"OH", lat:40.1487, lng:-82.9888, color:"#34c759", r:5.5, ringR:8, delay:0.0, status:"🟢 All systems healthy", rev:"$7,010", mem:"410", tix:"1" },
+    { id:"hilliard-mill-run-oh-133", code:"133", name:"Hilliard Mill Run, OH", addr:"3880 Park Mill Run Drive, Hilliard, OH 43026", phone:"614-285-2100", st:"OH", lat:40.0315, lng:-83.1162, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$7,301", mem:"449", tix:"1" },
+    { id:"hilliard-rome-oh-108", code:"108", name:"Hilliard-Rome, OH", addr:"1944 Hilliard Rome, Hilliard, OH 43026", phone:"614-541-2292", st:"OH", lat:39.9911, lng:-83.1511, color:"#ff9500", r:6.5, ringR:9, delay:0.8, status:"🟡 Membership conversion below target", rev:"$5,468", mem:"508", tix:"1" },
+    { id:"huber-heights-merily-oh-203", code:"203", name:"Huber Heights Merily, OH", addr:"5570 Merily Way, Huber Heights, OH 45424", phone:"937-993-0046", st:"OH", lat:39.867, lng:-84.1366, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$8,891", mem:"519", tix:"2" },
+    { id:"huber-heights-oh-217", code:"217", name:"Huber Heights, OH", addr:"7730 Brandt Pike, Huber Heights, OH 45424", phone:"937-800-1215", st:"OH", lat:39.8645, lng:-84.1017, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$5,049", mem:"701", tix:"1" },
+    { id:"kettering-dorothy-oh-214", code:"214", name:"Kettering Dorothy, OH", addr:"1335 E. Dorothy Lane, Kettering, OH 45419", phone:"937-672-2197", st:"OH", lat:39.7044, lng:-84.1428, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$9,958", mem:"662", tix:"1" },
+    { id:"kettering-wilmington-oh-215", code:"215", name:"Kettering Wilmington, OH", addr:"4075 Wilmington Pike, Kettering, OH 45440", phone:"937-793-8030", st:"OH", lat:39.6857, lng:-84.1336, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$4,855", mem:"675", tix:"2" },
+    { id:"lancaster-river-valley-oh-111", code:"111", name:"Lancaster River Valley, OH", addr:"1111 River Valley Circle, Lancaster, OH 43130", phone:"740-870-0340", st:"OH", lat:39.7338, lng:-82.6278, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$5,167", mem:"583", tix:"0" },
+    { id:"lewis-owenfield-oh-139", code:"139", name:"Lewis Owenfield, OH", addr:"8986 Owenfield Drive, Lewis Center, OH 43035", phone:"220-223-3139", st:"OH", lat:40.1619, lng:-83.0229, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$7,883", mem:"527", tix:"1" },
+    { id:"macedonia-freeway-oh-322", code:"322", name:"Macedonia Freeway, OH", addr:"9900 S Fwy Dr, Macedonia, OH 44056", phone:"234-808-3220", st:"OH", lat:41.3161, lng:-81.5119, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$4,834", mem:"806", tix:"1" },
+    { id:"maple-heights-warrensville-oh-309", code:"309", name:"Maple Heights Warrensville, OH", addr:"5510 Warrensville Center Rd, Maple Heights, OH 44137", phone:"216-714-4001", st:"OH", lat:41.4109, lng:-81.5378, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$8,773", mem:"637", tix:"0" },
+    { id:"marysville-delaware-oh-112", code:"112", name:"Marysville Delaware, OH", addr:"1024 Delaware Ave, Marysville, OH 43040", phone:"937-738-6950", st:"OH", lat:40.2379, lng:-83.3516, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$5,264", mem:"596", tix:"1" },
+    { id:"mason-tylersville-oh-213", code:"213", name:"Mason Tylersville, OH", addr:"5810 Tylersville Road, Mason, OH 45040", phone:"513-581-9250", st:"OH", lat:39.3525, lng:-84.3243, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$9,861", mem:"649", tix:"0" },
+    { id:"mentor-munson-oh-315", code:"315", name:"Mentor Munson, OH", addr:"7796 Munson Rd, Mentor, OH 44060", phone:"440-445-9157", st:"OH", lat:41.8545, lng:-81.7198, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$9,355", mem:"715", tix:"0" },
+    { id:"miamisburg-springboro-oh-206", code:"206", name:"Miamisburg Springboro, OH", addr:"201 N. Springboro Pike, Miamisburg, OH 45449", phone:"937-998-0200", st:"OH", lat:39.6411, lng:-84.2249, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$9,182", mem:"558", tix:"2" },
+    { id:"middleburg-heights-bagley-oh-301", code:"301", name:"Middleburg Heights Bagley, OH", addr:"18170 Bagley Rd, Middleburg Heights, OH 44130", phone:"440-226-8461", st:"OH", lat:41.3732, lng:-81.8282, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$7,997", mem:"533", tix:"1" },
+    { id:"moraine-dorothy-oh-207", code:"207", name:"Moraine Dorothy, OH", addr:"1901 W. Dorothy Lane, Moraine, OH 45439", phone:"937-519-4519", st:"OH", lat:39.7096, lng:-84.2035, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$9,279", mem:"571", tix:"0" },
+    { id:"new-albany-hamilton-quarter-oh-127", code:"127", name:"New Albany Hamilton Quarter, OH", addr:"5756 N. Hamilton Road, Columbus, OH 43230", phone:"614-230-3020", st:"OH", lat:40.0748, lng:-82.8604, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$6,719", mem:"791", tix:"1" },
+    { id:"new-albany-johnstown-oh-129", code:"129", name:"New Albany Johnstown, OH", addr:"1000 Johnstown Road, New Albany, OH 43054", phone:"614-296-2334", st:"OH", lat:40.0398, lng:-82.8637, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$6,913", mem:"817", tix:"0" },
+    { id:"newark-n-21st-oh-116", code:"116", name:"Newark N 21st, OH", addr:"1260 N 21st Street, Newark, OH 43055", phone:"740-300-9274", st:"OH", lat:40.0827, lng:-82.4273, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$5,652", mem:"648", tix:"2" },
+    { id:"northland-morse-oh-115", code:"115", name:"Northland Morse, OH", addr:"1296 Morse Rd, Columbus, OH 43229", phone:"614-897-0997", st:"OH", lat:40.0614, lng:-82.9843, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$5,555", mem:"635", tix:"1" },
+    { id:"parma-broadview-oh-304", code:"304", name:"Parma Broadview, OH", addr:"5720 Broadview Rd, Parma, OH 44134", phone:"216-279-0321", st:"OH", lat:41.407, lng:-81.6921, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$8,288", mem:"572", tix:"1" },
+    { id:"parma-seven-hills-oh-311", code:"311", name:"Parma Seven Hills, OH", addr:"7612 Broadview, Parma, OH 44134", phone:"440-481-1410", st:"OH", lat:41.3585, lng:-81.6853, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$8,967", mem:"663", tix:"2" },
+    { id:"perrysburg-holiday-oh-404", code:"404", name:"Perrysburg Holiday, OH", addr:"27393 Holiday Lane, Perrysburg, OH 43551", phone:"419-938-5045", st:"OH", lat:41.5499, lng:-83.5988, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$7,588", mem:"612", tix:"2" },
+    { id:"pickerington-hill-oh-102", code:"102", name:"Pickerington Hill, OH", addr:"1410 Hill Road N., Pickerington, OH 43147", phone:"614-868-9274", st:"OH", lat:39.9192, lng:-82.7811, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Tunnel throughput −7% WoW", rev:"$5,042", mem:"442", tix:"3" },
+    { id:"reynoldsburg-e-broad-oh-128", code:"128", name:"Reynoldsburg E Broad, OH", addr:"8235 East Broad Street, Reynoldsburg, OH 43615", phone:"937-725-0700", st:"OH", lat:39.9812, lng:-82.8331, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$6,816", mem:"804", tix:"2" },
+    { id:"richmond-richmond-rd-oh-317", code:"317", name:"Richmond Richmond RD, OH", addr:"641 Richmond Road, Richmond Heights, OH 44143", phone:"111-111-1111", st:"OH", lat:41.5419, lng:-81.4953, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$9,549", mem:"741", tix:"2" },
+    { id:"riverside-airway-oh-209", code:"209", name:"Riverside Airway, OH", addr:"4876 Airway Rd, Dayton, OH 45431", phone:"937-200-1008", st:"OH", lat:39.7694, lng:-84.1221, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$9,473", mem:"597", tix:"2" },
+    { id:"royalton-road-strongsville-oh-310", code:"310", name:"Royalton Road Strongsville, OH", addr:"16860 Royalton Road, Strongsville, OH 44017", phone:"440-656-3080", st:"OH", lat:41.314, lng:-81.818, color:"#34c759", r:5.5, ringR:8, delay:0.0, status:"🟢 All systems healthy", rev:"$8,870", mem:"650", tix:"1" },
+    { id:"royalton-oh-321", code:"321", name:"Royalton, OH", addr:"6165 Royalton Road N., Royalton, OH 44133", phone:"234-808-3220", st:"OH", lat:41.3135, lng:-81.7284, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$9,937", mem:"793", tix:"0" },
+    { id:"solon-aurora-oh-306", code:"306", name:"Solon Aurora, OH", addr:"34235 Aurora Rd, Solon, OH 44139", phone:"440-219-0283", st:"OH", lat:41.5003, lng:-81.6618, color:"#ff9500", r:6.5, ringR:9, delay:0.6, status:"🟡 Below revenue target this week", rev:"$6,726", mem:"606", tix:"3" },
+    { id:"south-euclid-mayfield-oh-302", code:"302", name:"South Euclid Mayfield, OH", addr:"4365 Mayfield Rd, South Euclid, OH 44121", phone:"216-279-0319", st:"OH", lat:41.521, lng:-81.5225, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$8,094", mem:"546", tix:"2" },
+    { id:"springdale-oh-224", code:"224", name:"Springdale, OH", addr:"11346 Princeton Pike, Springdale, OH 45246", phone:"111-111-1111", st:"OH", lat:39.2851, lng:-84.4665, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$5,728", mem:"792", tix:"2" },
+    { id:"staging-oh-ewc", code:"EWC", name:"Staging, OH", addr:"13375 National Road SW, Etna, OH 43068", phone:"614-751-9274", st:"OH", lat:39.9566, lng:-82.7376, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$7,968", mem:"492", tix:"2" },
+    { id:"streetsboro-sr-14-oh-307", code:"307", name:"Streetsboro SR 14, OH", addr:"9475 State Route 14, Streetsboro, OH 44241", phone:"216-279-0321", st:"OH", lat:41.2431, lng:-81.3556, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$8,579", mem:"611", tix:"1" },
+    { id:"sylvania-monroe-oh-406", code:"406", name:"Sylvania Monroe, OH", addr:"6307 Monroe St, Sylvania, OH 43560", phone:"380-799-2271", st:"OH", lat:41.7151, lng:-83.6958, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$7,782", mem:"638", tix:"1" },
+    { id:"toledo-airport-oh-409", code:"409", name:"Toledo Airport, OH", addr:"5175 Airport Highway, Toledo, OH 43615", phone:"419-820-8166", st:"OH", lat:41.616, lng:-83.636, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$8,073", mem:"677", tix:"1" },
+    { id:"toledo-central-park-oh-402", code:"402", name:"Toledo Central Park, OH", addr:"3119 Central Park West., Toledo, OH 43617", phone:"419-725-9192", st:"OH", lat:41.6758, lng:-83.7009, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Printer offline · service dispatched", rev:"$7,142", mem:"362", tix:"3" },
+    { id:"toledo-dorr-oh-405", code:"405", name:"Toledo Dorr, OH", addr:"5918 Dorr Street, Toledo, OH 43615", phone:"567-600-5938", st:"OH", lat:41.6542, lng:-83.6831, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$7,685", mem:"625", tix:"0" },
+    { id:"toledo-heatherdowns-oh-401", code:"401", name:"Toledo Heatherdowns, OH", addr:"4340 Heatherdowns Blvd., Toledo, OH 43614", phone:"419-725-9191", st:"OH", lat:41.5946, lng:-83.6451, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$7,297", mem:"573", tix:"2" },
+    { id:"toledo-w-laskey-oh-403", code:"403", name:"Toledo W Laskey, OH", addr:"2411 W.  Laskey Rd., Toledo, OH 43613", phone:"419-725-9193", st:"OH", lat:41.7062, lng:-83.6031, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$7,491", mem:"599", tix:"1" },
+    { id:"ua-henderson-oh-103", code:"103", name:"UA Henderson, OH", addr:"1927 W Henderson Rd, Columbus, OH 43220", phone:"614-824-4445", st:"OH", lat:40.055, lng:-83.0709, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$9,591", mem:"479", tix:"1" },
+    { id:"w-dussel-road-oh-407", code:"407", name:"W Dussel Road, OH", addr:"161 W Dussel Road, Toledo, OH 43537", phone:"419-897-4200", st:"OH", lat:41.5857, lng:-83.6683, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$7,879", mem:"651", tix:"2" },
+    { id:"warrensville-richmond-oh-316", code:"316", name:"Warrensville Richmond, OH", addr:"4960 Richmond Rd, Warrensville Heights, OH 44128", phone:"111-111-1111", st:"OH", lat:41.4253, lng:-81.4984, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$9,452", mem:"728", tix:"1" },
+    { id:"westerville-n-polaris-oh-119", code:"119", name:"Westerville N Polaris, OH", addr:"74 Polaris Parkway, Westerville, OH 43082", phone:"614-762-9274", st:"OH", lat:40.1046, lng:-82.9213, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$5,943", mem:"687", tix:"2" },
+    { id:"westerville-s-huber-village-oh-120", code:"120", name:"Westerville S Huber Village, OH", addr:"107 Huber Village Blvd, Westerville, OH 43081", phone:"614-896-9274", st:"OH", lat:40.148, lng:-82.9267, color:"#ff3b30", r:7, ringR:10, delay:0.0, status:"🔴 Equipment fault — active incident", rev:"$4,960", mem:"420", tix:"3", critical:true },
+    { id:"whitehall-e-main-oh-126", code:"126", name:"Whitehall E Main, OH", addr:"3665 E. Main Street, Whitehall, OH 43213", phone:"614-754-1622", st:"OH", lat:39.9559, lng:-82.8996, color:"#ff9500", r:6.5, ringR:9, delay:0.6, status:"🟡 Below revenue target this week", rev:"$6,746", mem:"446", tix:"3" },
+    { id:"willowick-vine-oh-305", code:"305", name:"Willowick Vine, OH", addr:"33707 Vine St, Willowick, OH 44095", phone:"440-283-3155", st:"OH", lat:41.6429, lng:-81.4474, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$8,385", mem:"585", tix:"2" },
+    { id:"zanesville-maple-oh-701", code:"701", name:"Zanesville Maple, OH", addr:"3411 Maple Avenue, Zanesville, OH 43701", phone:"220-577-6010", st:"OH", lat:39.9841, lng:-82.0215, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$5,197", mem:"693", tix:"2" },
+    { id:"zanesville-maysville-oh-703", code:"703", name:"Zanesville Maysville, OH", addr:"1850 Maysville Ave, Zanesville, OH 43701", phone:"220-577-6012", st:"OH", lat:39.9122, lng:-82.0149, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$5,391", mem:"719", tix:"1" },
+    /* ── Virginia (VA) · 24 ── */
+    { id:"charlottesville-worth-va-513", code:"513", name:"Charlottesville Worth, VA", addr:"3290 Worth Crossing, Charlottesville, VA 22911", phone:"434-260-8383", st:"VA", lat:38.1286, lng:-78.4387, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$7,761", mem:"769", tix:"0" },
+    { id:"chesapeake-edinburgh-va-504", code:"504", name:"Chesapeake Edinburgh, VA", addr:"1800 Edinburgh Lane, Chesapeake, VA 23322", phone:"757-908-7001", st:"VA", lat:36.6523, lng:-76.2286, color:"#ff3b30", r:7, ringR:10, delay:0.4, status:"🔴 Equipment fault — active incident", rev:"$4,512", mem:"408", tix:"7", critical:true },
+    { id:"chesapeake-n-battlefield-va-541", code:"541", name:"Chesapeake N. Battlefield, VA", addr:"833 N. Battlefield, Chesapeake, VA 23320", phone:"948-207-6740", st:"VA", lat:36.7503, lng:-76.2455, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$5,277", mem:"713", tix:"1" },
+    { id:"chesapeake-yadkin-va-511", code:"511", name:"Chesapeake Yadkin, VA", addr:"2600 Yadkin Road, Chesapeake, VA 23323", phone:"757-541-8988", st:"VA", lat:36.7721, lng:-76.3459, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$7,567", mem:"743", tix:"1" },
+    { id:"hampton-mercury-va-516", code:"516", name:"Hampton Mercury, VA", addr:"1045 W. Mercury Blvd, Hampton, VA 23666", phone:"757-964-8999", st:"VA", lat:37.0427, lng:-76.382, color:"#ff9500", r:6.5, ringR:9, delay:0.6, status:"🟡 Staffing gap on evening shift", rev:"$5,636", mem:"576", tix:"1" },
+    { id:"hampton-roads-vb-boulevard-va-522", code:"522", name:"Hampton Roads VB Boulevard, VA", addr:"3112 Virginia Beach Blvd, Virginia Beach, VA 23452", phone:"757-448-9678", st:"VA", lat:36.8437, lng:-76.0793, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Below revenue target this week", rev:"$6,062", mem:"382", tix:"3" },
+    { id:"henrico-w-broad-va-528", code:"528", name:"Henrico W Broad, VA", addr:"9486 W Broad Street, Henrico, VA 23294", phone:"804-238-8799", st:"VA", lat:37.64, lng:-77.5564, color:"#ff3b30", r:7, ringR:10, delay:0.8, status:"🔴 POS system offline — active incident", rev:"$5,784", mem:"396", tix:"6", critical:true },
+    { id:"newport-news-jefferson-va-543", code:"543", name:"Newport News Jefferson, VA", addr:"6102 Jefferson Ave, Newport News, VA 23605", phone:"111-111-1111", st:"VA", lat:37.0215, lng:-76.4452, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$5,471", mem:"739", tix:"0" },
+    { id:"newport-news-warwick-va-542", code:"542", name:"Newport News Warwick, VA", addr:"14260 Warwick Boulevard, Newport News, VA 23602", phone:"948-867-1542", st:"VA", lat:37.1268, lng:-76.5332, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$5,374", mem:"726", tix:"2" },
+    { id:"norfolk-n-military-va-517", code:"517", name:"Norfolk N Military, VA", addr:"3401 North Military HWY, Norfolk, VA 23518", phone:"757-381-7778", st:"VA", lat:36.8874, lng:-76.2188, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$8,149", mem:"401", tix:"1" },
+    { id:"norfolk-tidewater-va-508", code:"508", name:"Norfolk Tidewater, VA", addr:"7442 Tidewater Dr., Norfolk, VA 23505", phone:"757-944-9020", st:"VA", lat:36.9098, lng:-76.2556, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$7,276", mem:"704", tix:"1" },
+    { id:"portsmouth-airline-va-501", code:"501", name:"Portsmouth Airline, VA", addr:"1121 Airline Blvd, Portsmouth, VA 23707", phone:"757-944-9015", st:"VA", lat:36.8292, lng:-76.3439, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$6,597", mem:"613", tix:"0" },
+    { id:"portsmouth-george-wash-va-505", code:"505", name:"Portsmouth George Wash, VA", addr:"4620 George Washington Hwy, Portsmouth, VA 23702", phone:"757-944-9010", st:"VA", lat:36.7989, lng:-76.3274, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$6,985", mem:"665", tix:"1" },
+    { id:"portsmouth-high-va-506", code:"506", name:"Portsmouth High, VA", addr:"5820 High St W, Portsmouth, VA 23703", phone:"757-944-9009", st:"VA", lat:36.8611, lng:-76.3944, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$7,082", mem:"678", tix:"2" },
+    { id:"portsmouth-turnpike-va-515", code:"515", name:"Portsmouth Turnpike, VA", addr:"3011 Turnpike Road, Portsmouth, VA 23701", phone:"614-296-2334", st:"VA", lat:36.8254, lng:-76.3378, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$7,955", mem:"795", tix:"2" },
+    { id:"richmond-brook-va-510", code:"510", name:"Richmond Brook, VA", addr:"8201 Brook Rd, Richmond, VA 23227", phone:"804-401-1096", st:"VA", lat:37.6357, lng:-77.4587, color:"#ff9500", r:6.5, ringR:9, delay:0.0, status:"🟡 Printer offline · service dispatched", rev:"$5,210", mem:"510", tix:"3" },
+    { id:"richmond-nine-mile-va-509", code:"509", name:"Richmond Nine Mile, VA", addr:"4810 Nine Mile Rd, Richmond, VA 23223", phone:"804-401-1095", st:"VA", lat:37.5459, lng:-77.3679, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$7,373", mem:"717", tix:"2" },
+    { id:"suffolk-godwin-va-514", code:"514", name:"Suffolk Godwin, VA", addr:"2825 Godwin Blvd, Suffolk, VA 23434", phone:"757-942-5511", st:"VA", lat:36.7784, lng:-76.5838, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$7,858", mem:"782", tix:"1" },
+    { id:"suffolk-n-main-va-507", code:"507", name:"Suffolk N Main, VA", addr:"1521 N. Main St, Suffolk, VA 23434", phone:"757-922-9005", st:"VA", lat:36.7505, lng:-76.5839, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$7,179", mem:"691", tix:"0" },
+    { id:"suffolk-university-va-503", code:"503", name:"Suffolk University, VA", addr:"1005 University Boulevard, Suffolk, VA 23435", phone:"757-922-9002", st:"VA", lat:36.8719, lng:-76.4228, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$6,791", mem:"639", tix:"2" },
+    { id:"virginia-beach-holland-va-537", code:"537", name:"Virginia Beach Holland, VA", addr:"4245 Holland Road, Virginia Beach, VA 23452", phone:"948-867-1542", st:"VA", lat:36.8191, lng:-76.1207, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$4,889", mem:"661", tix:"0" },
+    { id:"virginia-beach-kempsville-va-540", code:"540", name:"Virginia Beach Kempsville, VA", addr:"836 Kempsville Road, Virginia Beach, VA 23464", phone:"948-800-7771", st:"VA", lat:36.8158, lng:-76.165, color:"#ff9500", r:6.5, ringR:9, delay:0.0, status:"🟡 Membership conversion below target", rev:"$7,340", mem:"580", tix:"1" },
+    { id:"virginia-beach-s-military-va-502", code:"502", name:"Virginia Beach S Military, VA", addr:"820 S Military Hwy, Virginia Beach, VA 23464", phone:"757-910-0475", st:"VA", lat:36.8187, lng:-76.2131, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$6,694", mem:"626", tix:"1" },
+    { id:"virginia-beach-shore-va-531", code:"531", name:"Virginia Beach Shore, VA", addr:"4769 Shore Drive, Virginia Beach, VA 23455", phone:"757-689-9650", st:"VA", lat:36.9041, lng:-76.1353, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$9,507", mem:"583", tix:"0" },
+    /* ── Michigan (MI) · 15 ── */
+    { id:"dearborn-heights-mi-809", code:"809", name:"Dearborn Heights, MI", addr:"25600 Michigan Avenue, Dearborn Heights, MI 48125", phone:"248-247-6260", st:"MI", lat:42.2978, lng:-83.2882, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$5,273", mem:"417", tix:"2" },
+    { id:"lambertville-secor-mi-408", code:"408", name:"Lambertville Secor, MI", addr:"7326 Secor Rd, Lambertville, MI 48144", phone:"734-790-5527", st:"MI", lat:42.0045, lng:-83.6234, color:"#ff3b30", r:7, ringR:10, delay:0.8, status:"🔴 Equipment fault — active incident", rev:"$4,624", mem:"456", tix:"6", critical:true },
+    { id:"lincoln-park-mi-802", code:"802", name:"Lincoln Park, MI", addr:"2350 Fort Street, Lincoln Park, MI 48146", phone:"248-247-6330", st:"MI", lat:42.2454, lng:-83.1802, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$9,794", mem:"746", tix:"1" },
+    { id:"livonia-plymouth-mi-817", code:"817", name:"Livonia Plymouth, MI", addr:"34835 Plymouth Rd, Livonia, MI 48150", phone:"248-247-6350", st:"MI", lat:42.3676, lng:-83.3859, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$6,049", mem:"521", tix:"1" },
+    { id:"livonia-mi-814", code:"814", name:"Livonia, MI", addr:"20340 Farmington Road, Livonia, MI 48152", phone:"248-247-6270", st:"MI", lat:42.4393, lng:-83.3748, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$5,758", mem:"482", tix:"1" },
+    { id:"madison-john-mi-829", code:"829", name:"Madison John, MI", addr:"29448 John R Road, Madison Heights, MI 48071", phone:"111-111-1111", st:"MI", lat:42.5084, lng:-83.1041, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$7,213", mem:"677", tix:"1" },
+    { id:"redford-telegraph-mi-804", code:"804", name:"Redford Telegraph, MI", addr:"9423 Telegraph Road, Redford, MI 48239", phone:"313-855-4860", st:"MI", lat:42.3634, lng:-83.2763, color:"#ff9500", r:6.5, ringR:9, delay:0.4, status:"🟡 Staffing gap on evening shift", rev:"$6,884", mem:"364", tix:"1" },
+    { id:"rochester-auburn-mi-810", code:"810", name:"Rochester Auburn, MI", addr:"10 E. Auburn Road, Rochester, MI 48307", phone:"248-453-9055", st:"MI", lat:42.6361, lng:-83.1306, color:"#ff9500", r:6.5, ringR:9, delay:0.0, status:"🟡 Below revenue target this week", rev:"$7,310", mem:"430", tix:"3" },
+    { id:"roseville-gratiot-mi-821", code:"821", name:"Roseville Gratiot, MI", addr:"32976 Gratiot Ave, Roseville, MI 48066", phone:"586-420-8950", st:"MI", lat:42.538, lng:-82.91, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$6,437", mem:"573", tix:"2" },
+    { id:"roseville-gratiot-mi-822", code:"822", name:"Roseville Gratiot, MI", addr:"26429 Gratiot Ave, Roseville, MI 48066", phone:"586-200-0014", st:"MI", lat:42.4906, lng:-82.9418, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Tunnel throughput −7% WoW", rev:"$4,962", mem:"562", tix:"3" },
+    { id:"saint-clair-shores-mi-808", code:"808", name:"Saint Clair Shores, MI", addr:"25100 Harper Avenue, Saint Clair Shores, MI 48081", phone:"111-111-1111", st:"MI", lat:42.4809, lng:-82.9009, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$5,176", mem:"404", tix:"1" },
+    { id:"southfield-mi-811", code:"811", name:"Southfield, MI", addr:"30233 Southfield Rd, Southfield, MI 48076", phone:"947-253-2897", st:"MI", lat:42.5124, lng:-83.224, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$5,467", mem:"443", tix:"1" },
+    { id:"troy-mi-815", code:"815", name:"Troy, MI", addr:"285 John R Road, Troy, MI 48083", phone:"248-817-1777", st:"MI", lat:42.5372, lng:-83.1093, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$5,855", mem:"495", tix:"2" },
+    { id:"warren-mound-mi-805", code:"805", name:"Warren Mound, MI", addr:"28740 Mound Rd, Warren, MI 48092", phone:"586-486-9692", st:"MI", lat:42.6545, lng:-83.3713, color:"#34c759", r:5.5, ringR:8, delay:0.5, status:"🟢 All systems healthy", rev:"$4,885", mem:"785", tix:"1" },
+    { id:"waterford-highland-mi-818", code:"818", name:"Waterford Highland, MI", addr:"4300 Pontiac Lake Road, Waterford Twp, MI 48328", phone:"248-599-4994", st:"MI", lat:42.6545, lng:-83.3713, color:"#34c759", r:5.5, ringR:8, delay:0.8, status:"🟢 All systems healthy", rev:"$6,146", mem:"534", tix:"2" },
+    /* ── Pennsylvania (PA) · 12 ── */
+    { id:"allison-park-william-flinn-pa-603", code:"603", name:"Allison Park William Flinn, PA", addr:"4867 William Flinn Hwy, Alison Park, PA 15101", phone:"412-685-6002", st:"PA", lat:40.6012, lng:-79.9482, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$6,091", mem:"679", tix:"0" },
+    { id:"brentwood-clairton-pa-611", code:"611", name:"Brentwood Clairton, PA", addr:"2929 Clairton Blvd, Brentwood, PA 15227", phone:"878-999-1023", st:"PA", lat:40.3774, lng:-79.9861, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$6,867", mem:"783", tix:"2" },
+    { id:"bridgeville-millers-run-road-pa-616", code:"616", name:"Bridgeville Millers Run Road, PA", addr:"187 Millers Run Road, Bridgeville, PA 15017", phone:"412-838-9011", st:"PA", lat:40.3573, lng:-80.1216, color:"#34c759", r:5.5, ringR:8, delay:0.6, status:"🟢 All systems healthy", rev:"$7,352", mem:"428", tix:"1" },
+    { id:"east-carson-st-pittsburgh-pa-606", code:"606", name:"East Carson St Pittsburgh, PA", addr:"3010 East Carson Street, Pittsburgh, PA 15203", phone:"412-685-6001", st:"PA", lat:40.424, lng:-79.963, color:"#ff9500", r:6.5, ringR:9, delay:0.6, status:"🟡 Tunnel throughput −7% WoW", rev:"$5,626", mem:"526", tix:"3" },
+    { id:"mckeesport-lincoln-pa-602", code:"602", name:"McKeesport Lincoln, PA", addr:"400 Lincoln Highway, East McKeesport, PA 15035", phone:"412-685-6001", st:"PA", lat:40.3829, lng:-79.821, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$5,994", mem:"666", tix:"2" },
+    { id:"new-kensington-tarentum-pa-601", code:"601", name:"New Kensington Tarentum, PA", addr:"97 Tarentum Bridge Rd SW Ste D, New Kensington, PA 15068", phone:"724-604-8024", st:"PA", lat:40.5896, lng:-79.7518, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$5,897", mem:"653", tix:"1" },
+    { id:"pittsburgh-mountain-view-pa-609", code:"609", name:"Pittsburgh Mountain View, PA", addr:"2100 Mountain View Drive, Pittsburg, PA 15122", phone:"878-218-5500", st:"PA", lat:40.3477, lng:-79.947, color:"#34c759", r:5.5, ringR:8, delay:0.9, status:"🟢 All systems healthy", rev:"$6,673", mem:"757", tix:"0" },
+    { id:"pittsburgh-mt-nebo-pa-607", code:"607", name:"Pittsburgh Mt Nebo, PA", addr:"200 Mt Nebo Road, Pittsburgh, PA 15237", phone:"412-738-6814", st:"PA", lat:40.551, lng:-80.0877, color:"#34c759", r:5.5, ringR:8, delay:0.7, status:"🟢 All systems healthy", rev:"$6,479", mem:"731", tix:"1" },
+    { id:"pittsburgh-steubenville-pa-618", code:"618", name:"Pittsburgh Steubenville, PA", addr:"6300 Steubenville Pike, Pittsburgh, PA 15205", phone:"412-501-8460", st:"PA", lat:40.4485, lng:-80.1549, color:"#ff9500", r:6.5, ringR:9, delay:0.8, status:"🟡 Printer offline · service dispatched", rev:"$6,478", mem:"398", tix:"3" },
+    { id:"pleasant-hills-clairton-pa-610", code:"610", name:"Pleasant Hills Clairton, PA", addr:"402 Clairton Blvd, Pleasant Hills, PA 15236", phone:"878-218-5569", st:"PA", lat:40.3365, lng:-79.9486, color:"#34c759", r:5.5, ringR:8, delay:0.0, status:"🟢 All systems healthy", rev:"$6,770", mem:"770", tix:"1" },
+    { id:"route-30-irwin-pa-612", code:"612", name:"Route 30 Irwin, PA", addr:"8695 Route 30, Irwin, PA 15642", phone:"724-515-9425", st:"PA", lat:40.318, lng:-79.686, color:"#ff9500", r:6.5, ringR:9, delay:0.2, status:"🟡 Membership conversion below target", rev:"$6,052", mem:"592", tix:"1" },
+    { id:"washington-old-mill-pa-604", code:"604", name:"Washington Old Mill, PA", addr:"189 Old Mill Blvd, Washington, PA 15301", phone:"724-825-4305", st:"PA", lat:40.19, lng:-80.2195, color:"#34c759", r:5.5, ringR:8, delay:0.4, status:"🟢 All systems healthy", rev:"$6,188", mem:"692", tix:"1" },
+    /* ── Indiana (IN) · 2 ── */
+    { id:"richmond-chester-in-212", code:"212", name:"Richmond Chester, IN", addr:"1929 Chester Blvd, Richmond, IN 47374", phone:"765-598-4044", st:"IN", lat:39.8593, lng:-84.8886, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$9,764", mem:"636", tix:"2" },
+    { id:"richmond-national-in-211", code:"211", name:"Richmond National, IN", addr:"5151 E. National Road, Richmond, IN 47374", phone:"765-598-4422", st:"IN", lat:39.8329, lng:-84.8244, color:"#34c759", r:5.5, ringR:8, delay:0.1, status:"🟢 All systems healthy", rev:"$9,667", mem:"623", tix:"1" },
+    /* ── Maryland (MD) · 1 ── */
+    { id:"owning-mills-md-533", code:"533", name:"Owning Mills, MD", addr:"10215 Reisterstown Road, Owning Mills, MD 21117", phone:"111-111-1111", st:"MD", lat:39.4609, lng:-76.6321, color:"#34c759", r:5.5, ringR:8, delay:0.3, status:"🟢 All systems healthy", rev:"$9,701", mem:"609", tix:"2" },
+    /* ── North Carolina (NC) · 1 ── */
+    { id:"elizabeth-city-ehringhaus-nc-512", code:"512", name:"Elizabeth City Ehringhaus, NC", addr:"1404 W. Ehringhaus Street, Elizabeth City, NC 27909", phone:"252-254-1050", st:"NC", lat:36.2949, lng:-76.2421, color:"#34c759", r:5.5, ringR:8, delay:0.2, status:"🟢 All systems healthy", rev:"$7,664", mem:"756", tix:"2" },
+  ];
+
+  var tip     = document.getElementById('cc-map-tip');
+  var tipName = document.getElementById('tip-name');
+  var tipStat = document.getElementById('tip-status');
+  var tipRev  = document.getElementById('tip-rev');
+  var tipMem  = document.getElementById('tip-mem');
+  var tipTix  = document.getElementById('tip-tix');
+  var mapBody = tip ? tip.parentElement : null;
+  var tipAddr = document.getElementById('tip-addr');
+
+  /* State abbreviation → FIPS id (state-focus dimming + active-only view) */
+  var ST_FIPS = {
+    AL:'01',AK:'02',AZ:'04',AR:'05',CA:'06',CO:'08',CT:'09',DE:'10',DC:'11',
+    FL:'12',GA:'13',HI:'15',ID:'16',IL:'17',IN:'18',IA:'19',KS:'20',KY:'21',
+    LA:'22',ME:'23',MD:'24',MA:'25',MI:'26',MN:'27',MS:'28',MO:'29',MT:'30',
+    NE:'31',NV:'32',NH:'33',NJ:'34',NM:'35',NY:'36',NC:'37',ND:'38',OH:'39',
+    OK:'40',OR:'41',PA:'42',RI:'44',SC:'45',SD:'46',TN:'47',TX:'48',UT:'49',
+    VT:'50',VA:'51',WA:'53',WV:'54',WI:'55',WY:'56'
+  };
+
+  /* ── Live location master with snapshot fallback ─────────────────────────────
+     Pull the real EWC store list from the agent service (/v1/locations →
+     EWCPreIndex). On any failure (service down / timeout) keep the baked
+     snapshot so the map always renders offline. */
+  var LOCS = LOCS_SNAPSHOT;
+  try {
+    var API = (localStorage.getItem('wc-agent-api') || 'http://localhost:8000').replace(/\/+$/, '');
+    var ctrl = new AbortController();
+    var killer = setTimeout(function(){ ctrl.abort(); }, 4000);
+    // Send the staff token so /v1/locations resolves to THIS tenant's POS DB
+    // (mcw-demo → MisterCarWashUAT, ewc-demo → EWCPreIndex). Without it the
+    // endpoint falls back to the platform default and every tenant sees EWC.
+    var _tok = localStorage.getItem('wc-staff-token') || '';
+    var _hdrs = _tok ? { 'Authorization': 'Bearer ' + _tok } : {};
+    var resp = await fetch(API + '/v1/locations', { cache: 'no-store', headers: _hdrs, signal: ctrl.signal });
+    clearTimeout(killer);
+    if (resp.ok) {
+      var payload = await resp.json();
+      if (payload && Array.isArray(payload.locations) && payload.locations.length) {
+        LOCS = payload.locations;
+      }
+    }
+  } catch (e) { /* offline / timeout / service down — keep the baked snapshot */ }
+
+  /* Keep the header count in sync with whatever data actually rendered */
+  (function(){
+    var counts = {};
+    LOCS.forEach(function(l){ if (l.st) counts[l.st] = (counts[l.st] || 0) + 1; });
+    var sts = Object.keys(counts).sort(function(a,b){ return counts[b] - counts[a]; });
+    var titleEl = document.querySelector('.cc-map-title');
+    if (titleEl && sts.length) {
+      titleEl.textContent = LOCS.length + ' locations across ' + sts.length +
+        ' states · ' + sts.join(' · ');
+    }
+  })();
+
+  LOCS.forEach(function(loc) {
+    var coords = proj([loc.lng, loc.lat]);
+    if (!coords) return; /* outside Albers projection bounds */
+    var x = coords[0], y = coords[1];
+
+    var g = mapG.append('g')
+      .attr('class', 'cc-loc-pin')
+      .attr('data-loc', loc.id)
+      .attr('data-fips', ST_FIPS[loc.st] || '')
+      .attr('data-url', 'locations.html')
+      .style('cursor', 'pointer');
+
+    /* Pulse rings (2 for critical) */
+    var rings = loc.critical ? 2 : 1;
+    for (var i = 0; i < rings; i++) {
+      g.append('circle')
+        .attr('class', 'cc-loc-ring')
+        .attr('cx', x).attr('cy', y).attr('r', loc.ringR)
+        .attr('data-base-r', loc.ringR)          /* store base for rescaling */
+        .attr('fill', loc.color).attr('opacity', 0)
+        .style('animation-delay', (loc.delay + i * 0.6) + 's');
+    }
+
+    /* Main dot */
+    g.append('circle')
+      .attr('class', 'cc-loc-dot')
+      .attr('cx', x).attr('cy', y).attr('r', loc.r)
+      .attr('data-base-r', loc.r)               /* store base for rescaling */
+      .attr('fill', loc.color).attr('stroke', '#fff').attr('stroke-width', 2);
+
+    /* Label — right side for eastern pins (lng > −85), left for western */
+    var labelRight = loc.lng > -85;
+    var anchor = labelRight ? 'start' : 'end';
+    var lx = labelRight ? x + 9 : x - 9;
+    var baseFontSize = loc.critical ? 11 : 9.5;
+
+    g.append('text')
+      .attr('class', 'cc-loc-lbl')
+      .attr('x', lx).attr('y', y + 4)
+      .attr('text-anchor', anchor)
+      .attr('fill', loc.critical ? 'rgba(195,0,0,.88)' : 'rgba(25,25,25,.72)')
+      .style('font-size', baseFontSize + 'px')
+      .attr('data-base-fs', baseFontSize)        /* store base for rescaling */
+      .attr('font-weight', loc.critical ? '700' : '600')
+      .text(loc.code);
+
+    /* Tooltip & click */
+    g.on('mouseenter', function(event) {
+      if (!tip) return;
+      tipName.textContent = (loc.code ? loc.code + ' — ' : '') + loc.name;
+      if (tipAddr) tipAddr.textContent = loc.addr || '';
+      tipStat.textContent = loc.status;
+      tipRev.textContent  = loc.rev;
+      tipMem.textContent  = loc.mem;
+      tipTix.textContent  = loc.tix;
+      tip.style.display = 'block';
+      var r = mapBody.getBoundingClientRect();
+      var tx = event.clientX - r.left + 14;
+      var ty = event.clientY - r.top  + 14;
+      if (tx + 230 > r.width)  tx = event.clientX - r.left - 230;
+      if (ty + 130 > r.height) ty = event.clientY - r.top  - 130;
+      tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+    })
+    .on('mousemove', function(event) {
+      if (!tip || !mapBody) return;
+      var r = mapBody.getBoundingClientRect();
+      var tx = event.clientX - r.left + 14;
+      var ty = event.clientY - r.top  + 14;
+      if (tx + 230 > r.width)  tx = event.clientX - r.left - 230;
+      if (ty + 130 > r.height) ty = event.clientY - r.top  - 130;
+      tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+    })
+    .on('mouseleave', function() { if (tip) tip.style.display = 'none'; })
+    .on('click', function() { window.location.href = 'locations.html'; });
+  });
+
+  /* Each pin carries its own data-fips (derived from the store's state) — the
+     state-focus dimming reads that directly, so no id→FIPS lookup table needed. */
+
+  /* ── Full state names for the banner ───────────────────────────── */
+  var STATE_NAMES = {
+    '01':'Alabama','04':'Arizona','05':'Arkansas','06':'California',
+    '08':'Colorado','09':'Connecticut','10':'Delaware','12':'Florida',
+    '13':'Georgia','16':'Idaho','17':'Illinois','18':'Indiana','19':'Iowa',
+    '20':'Kansas','21':'Kentucky','22':'Louisiana','23':'Maine','24':'Maryland',
+    '25':'Massachusetts','26':'Michigan','27':'Minnesota','28':'Mississippi',
+    '29':'Missouri','30':'Montana','31':'Nebraska','32':'Nevada',
+    '33':'New Hampshire','34':'New Jersey','35':'New Mexico','36':'New York',
+    '37':'North Carolina','38':'North Dakota','39':'Ohio','40':'Oklahoma',
+    '41':'Oregon','42':'Pennsylvania','44':'Rhode Island','45':'South Carolina',
+    '46':'South Dakota','47':'Tennessee','48':'Texas','49':'Utah',
+    '50':'Vermont','51':'Virginia','53':'Washington','54':'West Virginia',
+    '55':'Wisconsin','56':'Wyoming'
+  };
+
+  var STATE_FLAGS = {
+    '39':'🌰', /* OH — Buckeye State */
+    '51':'🏛',  /* VA */
+    '26':'🚗', /* MI — Motor City */
+    '42':'🔔', /* PA — Liberty Bell */
+    '18':'🏁', /* IN — Indy 500 */
+    '37':'🌲', /* NC */
+    '24':'🦀'  /* MD */
+  };
+
+  /* ── State-focus tracking ──────────────────────────────────────── */
+  var activeState    = null;
+  var activeOnlyMode = false;
+
+  var stateBanner = document.getElementById('cc-state-banner');
+  var bannerName  = document.getElementById('cc-banner-name');
+  var bannerFlag  = document.getElementById('cc-banner-flag');
+  var bannerBack  = document.getElementById('cc-banner-back');
+  var btnUsa      = document.getElementById('cc-btn-usa');
+  var btnActive   = document.getElementById('cc-btn-active');
+
+  function zoomToState(d) {
+    activeState = d.id;
+
+    /* Compute bounding box and fit transform */
+    var bounds = pathGen.bounds(d);
+    var bw = bounds[1][0] - bounds[0][0];
+    var bh = bounds[1][1] - bounds[0][1];
+    var cx = (bounds[0][0] + bounds[1][0]) / 2;
+    var cy = (bounds[0][1] + bounds[1][1]) / 2;
+
+    var scale = 0.78 / Math.max(bw / W, bh / H);
+    scale = Math.min(12, Math.max(1.5, scale));
+    var tx = W / 2 - scale * cx;
+    var ty = H / 2 - scale * cy;
+
+    /* Smooth zoom to state */
+    svg.transition().duration(720).ease(d3.easeCubicInOut)
+      .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+
+    /* Fade all states except the selected one */
+    mapG.selectAll('path.cc-state')
+      .transition().duration(380)
+      .attr('opacity', function(f) { return f.id === d.id ? 1 : 0; });
+
+    /* Fade border meshes */
+    mapG.selectAll('path:not(.cc-state)')
+      .transition().duration(380)
+      .attr('opacity', function() {
+        /* Keep outer nation border faintly visible */
+        return 0.08;
+      });
+
+    /* Hide all labels */
+    mapG.selectAll('text.cc-state-lbl')
+      .transition().duration(300)
+      .attr('opacity', 0);
+
+    /* Show only location pins in the focused state */
+    mapG.selectAll('g.cc-loc-pin')
+      .transition().duration(380)
+      .attr('opacity', function() {
+        return d3.select(this).attr('data-fips') === d.id ? 1 : 0;
+      });
+
+    /* Update and show the state banner */
+    var name = STATE_NAMES[d.id] || d.id;
+    var flag = STATE_FLAGS[d.id] || '📍';
+    if (bannerName) bannerName.textContent = name;
+    if (bannerFlag) bannerFlag.textContent = flag;
+    if (stateBanner) stateBanner.classList.add('visible');
+  }
+
+  function resetZoom() {
+    activeState = null;
+
+    /* Zoom back to full USA */
+    svg.transition().duration(560).ease(d3.easeCubicInOut)
+      .call(zoom.transform, d3.zoomIdentity);
+
+    /* Restore all states */
+    mapG.selectAll('path.cc-state')
+      .transition().duration(380)
+      .attr('opacity', 1);
+
+    /* Restore meshes */
+    mapG.selectAll('path:not(.cc-state)')
+      .transition().duration(380)
+      .attr('opacity', 1);
+
+    /* Restore labels */
+    mapG.selectAll('text.cc-state-lbl')
+      .transition().duration(380)
+      .attr('opacity', 1);
+
+    /* Restore all location pins */
+    mapG.selectAll('g.cc-loc-pin')
+      .transition().duration(380)
+      .attr('opacity', 1);
+
+    /* Hide the banner */
+    if (stateBanner) stateBanner.classList.remove('visible');
+
+    /* Reset the view-mode toggle to "Full USA" */
+    activeOnlyMode = false;
+    if (btnUsa)    btnUsa.classList.add('active');
+    if (btnActive) btnActive.classList.remove('active');
+  }
+
+  /* ── Click on a state path → zoom to it ───────────────────────── */
+  mapG.selectAll('path.cc-state')
+    .on('click', function(event, d) {
+      event.stopPropagation();
+      if (activeState === d.id) {
+        resetZoom();        /* clicking active state again resets */
+      } else {
+        zoomToState(d);
+      }
+    });
+
+  /* ── Click on map background → reset ──────────────────────────── */
+  svg.on('click', function() {
+    if (activeState) resetZoom();
+  });
+
+  /* ── Banner back button ────────────────────────────────────────── */
+  if (bannerBack) bannerBack.addEventListener('click', function(e) {
+    e.stopPropagation();
+    resetZoom();
+  });
+
+  /* ── "Active States Only" view ─────────────────────────────────── */
+  function enterActiveOnlyMode() {
+    activeOnlyMode = true;
+
+    /* If we're zoomed into a single state, clear that first */
+    activeState = null;
+    if (stateBanner) stateBanner.classList.remove('visible');
+
+    /* Find all active state features */
+    var activeFeatures = statesFeature.features.filter(function(f) {
+      return ACTIVE.has(f.id);
+    });
+
+    /* Fade non-active state paths to invisible */
+    mapG.selectAll('path.cc-state')
+      .transition().duration(420)
+      .attr('opacity', function(f) { return ACTIVE.has(f.id) ? 1 : 0; });
+
+    /* Fade border meshes */
+    mapG.selectAll('path:not(.cc-state)')
+      .transition().duration(420)
+      .attr('opacity', 0);
+
+    /* Hide all state abbreviation labels */
+    mapG.selectAll('text.cc-state-lbl')
+      .transition().duration(300)
+      .attr('opacity', 0);
+
+    /* Show all location pins */
+    mapG.selectAll('g.cc-loc-pin')
+      .transition().duration(420)
+      .attr('opacity', 1);
+
+    /* Compute combined bounding box of all active states */
+    var allBounds = activeFeatures.map(function(f) { return pathGen.bounds(f); });
+    var minX = d3.min(allBounds, function(b) { return b[0][0]; });
+    var minY = d3.min(allBounds, function(b) { return b[0][1]; });
+    var maxX = d3.max(allBounds, function(b) { return b[1][0]; });
+    var maxY = d3.max(allBounds, function(b) { return b[1][1]; });
+
+    var bw = maxX - minX;
+    var bh = maxY - minY;
+    var cx = (minX + maxX) / 2;
+    var cy = (minY + maxY) / 2;
+
+    /* Scale to fit both states with generous padding */
+    var scale = 0.70 / Math.max(bw / W, bh / H);
+    scale = Math.min(8, Math.max(1.2, scale));
+    var tx = W / 2 - scale * cx;
+    var ty = H / 2 - scale * cy;
+
+    svg.transition().duration(740).ease(d3.easeCubicInOut)
+      .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+
+    /* Highlight toggle */
+    if (btnUsa)    btnUsa.classList.remove('active');
+    if (btnActive) btnActive.classList.add('active');
+  }
+
+  function exitActiveOnlyMode() {
+    /* resetZoom() handles restoring opacities + zoom + toggle state */
+    resetZoom();
+  }
+
+  if (btnUsa) btnUsa.addEventListener('click', function() {
+    if (activeOnlyMode) exitActiveOnlyMode();
+  });
+  if (btnActive) btnActive.addEventListener('click', function() {
+    if (!activeOnlyMode) enterActiveOnlyMode();
+  });
+
+  /* ── Zoom behavior — only transforms mapG, not the SVG itself ── */
+  var zoom = d3.zoom()
+    .scaleExtent([0.8, 12])
+    .filter(function(event) {
+      return event.type !== 'dblclick';
+    })
+    .on('zoom', function(event) {
+      mapG.attr('transform', event.transform);
+
+      var k = event.transform.k;
+
+      /* Counter-scale dots: divide base radius by zoom level so they
+         shrink proportionally as the map zooms in.
+         Floor at 30 % of base so they never vanish completely.      */
+      mapG.selectAll('circle.cc-loc-dot')
+        .attr('r', function() {
+          var base = +d3.select(this).attr('data-base-r') || 5.5;
+          return Math.max(base * 0.3, base / k);
+        })
+        .attr('stroke-width', function() {
+          return Math.max(0.4, 2 / k);
+        });
+
+      mapG.selectAll('circle.cc-loc-ring')
+        .attr('r', function() {
+          var base = +d3.select(this).attr('data-base-r') || 8;
+          return Math.max(base * 0.3, base / k);
+        });
+
+      /* Counter-scale labels: base/k keeps screen size constant at all zoom
+         levels (7.5px at k=1, ~2px at k=4, ~1px at k=8).
+         Floor at 1px so they never fully disappear.                       */
+      mapG.selectAll('text.cc-loc-lbl')
+        .style('font-size', function() {
+          var base = +d3.select(this).attr('data-base-fs') || 7.5;
+          return Math.max(1, base / k) + 'px';
+        });
+    });
+
+  /* Apply zoom to the SVG canvas */
+  svg.call(zoom)
+    .on('dblclick.zoom', null);
+
+  /* Zoom-in button */
+  var btnIn = document.getElementById('cc-zoom-in');
+  if (btnIn) btnIn.addEventListener('click', function() {
+    svg.transition().duration(280).call(zoom.scaleBy, 1.5);
+  });
+
+  /* Zoom-out button */
+  var btnOut = document.getElementById('cc-zoom-out');
+  if (btnOut) btnOut.addEventListener('click', function() {
+    svg.transition().duration(280).call(zoom.scaleBy, 1 / 1.5);
+  });
+
+  /* Reset button — returns to full USA view */
+  var btnReset = document.getElementById('cc-zoom-reset');
+  if (btnReset) btnReset.addEventListener('click', function() {
+    resetZoom();
+  });
+
+})();
+</script>
+
+<script>
+/* ── Live clock ───────────────────────────────────────────────── */
+(function () {
+  var el = document.getElementById('cc-sync');
+  var btn = document.getElementById('cc-refresh-btn');
+  var t = Date.now();
+  function rel() {
+    var s = Math.floor((Date.now()-t)/1000);
+    return s<5?'Updated just now':s<60?'Updated '+s+'s ago':'Updated '+Math.floor(s/60)+'m ago';
+  }
+  if (el) setInterval(function(){ el.textContent=rel(); }, 5000);
+  if (btn) btn.addEventListener('click', function(){
+    t=Date.now(); if(el) el.textContent='Updated just now';
+    btn.style.transform='rotate(360deg)'; btn.style.transition='transform .4s ease';
+    setTimeout(function(){ btn.style.transform=''; btn.style.transition=''; }, 450);
+  });
+})();
+
+/* Map pin tooltips, state-focus, and click-through are all handled by the
+   D3 init script above — no separate legacy handler needed. */
+</script>
+<script src="assets/app.js?v=26.0704.003"></script>
+<script>
+/* Mobile App KPI band — fills the tiles from /mobile/kpis?tenant=<slug>.
+ * Falls back to a baked snapshot if the endpoint is unavailable (e.g. the page
+ * is served statically), mirroring how the location map degrades to a snapshot. */
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var tenant = (localStorage.getItem('wc-staff-tenant') || 'mcw-demo');
+  var FALLBACK = {
+    installs: { total: 42000, deltaPct: 8.4 },
+    weeklyActiveMembers: { value: 15624, deltaPct: 3.1 },
+    redemptions: { qr: 12578, kiosk: 5390, total: 17968, qrPct: 70 },
+    pushOptInRate: { pct: 68, deltaPct: 1.2 }
+  };
+  var fmt = function (n) { return (n == null ? 0 : n).toLocaleString('en-US'); };
+
+  function setTrend(id, pct) {
+    var el = $(id); if (!el) return;
+    var up = (pct == null ? 0 : pct) >= 0;
+    el.classList.toggle('up', up); el.classList.toggle('down', !up);
+    var span = el.querySelector('span'); if (span) span.textContent = Math.abs(pct || 0) + '%';
+    // flip the arrow when negative
+    var poly = el.querySelector('polyline'), line = el.querySelector('line');
+    if (poly && line) {
+      if (up) { line.setAttribute('y1','19'); line.setAttribute('y2','5'); poly.setAttribute('points','5 12 12 5 19 12'); }
+      else    { line.setAttribute('y1','5');  line.setAttribute('y2','19'); poly.setAttribute('points','5 12 12 19 19 12'); }
+    }
+  }
+
+  function render(k) {
+    if ($('mob-installs'))    $('mob-installs').textContent    = fmt(k.installs && k.installs.total);
+    if ($('mob-wam'))         $('mob-wam').textContent         = fmt(k.weeklyActiveMembers && k.weeklyActiveMembers.value);
+    if ($('mob-redemptions')) $('mob-redemptions').textContent = fmt(k.redemptions && k.redemptions.total);
+    if ($('mob-optin'))       $('mob-optin').textContent       = (k.pushOptInRate ? k.pushOptInRate.pct : 0) + '%';
+    var r = k.redemptions || {};
+    if ($('mob-redemptions-split'))
+      $('mob-redemptions-split').textContent = 'QR ' + fmt(r.qr) + ' · Kiosk ' + fmt(r.kiosk);
+    setTrend('mob-installs-tr', k.installs && k.installs.deltaPct);
+    setTrend('mob-wam-tr',      k.weeklyActiveMembers && k.weeklyActiveMembers.deltaPct);
+    setTrend('mob-optin-tr',    k.pushOptInRate && k.pushOptInRate.deltaPct);
+  }
+
+  function load() {
+    fetch('/mobile/kpis?tenant=' + encodeURIComponent(tenant), { headers: { Accept: 'application/json' } })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(render)
+      .catch(function () { render(FALLBACK); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', load);
+  else load();
+})();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a18a36e7de1495e9',t:'MTc4MzYzMDM2Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

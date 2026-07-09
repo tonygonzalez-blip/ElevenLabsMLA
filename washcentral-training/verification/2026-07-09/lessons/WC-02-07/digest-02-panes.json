@@ -1,0 +1,116 @@
+{
+  "queue": {
+    "heading": "Handoff Queue",
+    "statsLine": "0 waiting",
+    "searchPlaceholder": "Search name, phone, plan, reason…",
+    "buttons": [
+      {
+        "text": "Mine 0",
+        "classes": "ac-vbtn",
+        "ariaPressed": null
+      },
+      {
+        "text": "Unassigned 0",
+        "classes": "ac-vbtn",
+        "ariaPressed": null
+      },
+      {
+        "text": "Team 0",
+        "classes": "ac-vbtn active",
+        "ariaPressed": null
+      },
+      {
+        "text": "All 0",
+        "classes": "ac-chip active",
+        "ariaPressed": null
+      },
+      {
+        "text": "Voice 0",
+        "classes": "ac-chip",
+        "ariaPressed": null
+      },
+      {
+        "text": "SMS 0",
+        "classes": "ac-chip",
+        "ariaPressed": null
+      },
+      {
+        "text": "Web 0",
+        "classes": "ac-chip",
+        "ariaPressed": null
+      }
+    ],
+    "selects": [
+      {
+        "classes": "ac-sort",
+        "value": "wait",
+        "options": [
+          "Longest wait first",
+          "Priority first",
+          "Most recent first"
+        ]
+      }
+    ],
+    "innerText": "Handoff Queue | 0 waiting | avg 0:00 | 0 high priority | Mine 0 | Unassigned 0 | Team 0 | All | 0 | Voice | 0 | SMS | 0 | Web | 0 | Longest wait first | Priority first | Most recent first | showing 0 | No matching handoffs."
+  },
+  "center": {
+    "emptyState": "Select a handoff from the queue to open its console.",
+    "containerClass": "ac-col"
+  },
+  "customer": {
+    "heading": "Customer",
+    "innerText": "Customer | No conversation selected."
+  },
+  "allSelects": [
+    {
+      "tag": "select",
+      "classes": "",
+      "value": "offline",
+      "options": [
+        "Available",
+        "Away",
+        "Busy",
+        "Offline"
+      ],
+      "inHeader": true
+    },
+    {
+      "tag": "select",
+      "classes": "ac-sort",
+      "value": "wait",
+      "options": [
+        "Longest wait first",
+        "Priority first",
+        "Most recent first"
+      ],
+      "inHeader": false
+    }
+  ],
+  "presenceCustomCandidates": [
+    {
+      "tag": "DIV",
+      "classes": "ac-agentbar",
+      "text": "Available Away Busy Offline"
+    },
+    {
+      "tag": "SPAN",
+      "classes": "ac-presence offline",
+      "text": "Available Away Busy Offline"
+    }
+  ],
+  "sortControl": {
+    "tag": "DIV",
+    "classes": "ac-subbar",
+    "text": "Longest wait first Priority first Most recent first showing 0",
+    "options": null,
+    "value": null
+  },
+  "notifButton": {
+    "text": "",
+    "ariaLabel": "Enable desktop notifications",
+    "title": "Enable desktop notifications"
+  },
+  "queueFooter": "showing 0",
+  "noMatch": true,
+  "breadcrumb": "Service Desk›Agent Console"
+}

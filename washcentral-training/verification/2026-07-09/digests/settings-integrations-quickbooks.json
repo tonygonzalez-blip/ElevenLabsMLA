@@ -1,0 +1,79 @@
+{
+ "url": "/settings-integrations-quickbooks.html",
+ "docTitle": "QuickBooks Online — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›QuickBooks Online"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Test Connection",
+  "Edit Configuration",
+  "Settings",
+  "Instructions",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Settings",
+  "Instructions"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Not setConnection ProductionEnvironment —Realm —Token",
+  "Not setConnection",
+  "Not set",
+  "Connection",
+  "ProductionEnvironment",
+  "Production",
+  "Environment",
+  "—Realm",
+  "—",
+  "Realm",
+  "—Token",
+  "Token"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Accounting Integration",
+  "⚠ Not Configured",
+  "Accounting OAuth 2.0 REST API",
+  "Accounting",
+  "OAuth 2.0",
+  "REST API"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS QuickBooks Online Search ⌘K Ask Shyne MG QuickBooks Online Accounting Integration ⚠ Not Configured General Ledger · Settings Accounting OAuth 2.0 REST API Test Connection Edit Configuration Not set Connection Production Environment — Realm — Token Settings Instructions CREDENTIALS CLIENT ID — CLIENT SECRET Not set REALM / COMPANY ID — ACCESS TOKEN Not set REFRESH TOKEN Not set TOKEN EXPIRY — GENERAL ENABLED Yes ADMIN NOTES — ENVIRONMENT production Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

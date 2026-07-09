@@ -1,0 +1,81 @@
+{
+ "url": "/mkt-campaigns.html",
+ "docTitle": "Marketing Campaigns — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Marketing›Campaigns"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Campaigns",
+  "Automation",
+  "SmartLinks",
+  "Customer Segments",
+  "Offers & Promotions",
+  "Email Templates",
+  "Paid Media (DRAFT)",
+  "Deliverability",
+  "Referral Program",
+  "SMS Templates",
+  "RCS Templates",
+  "Mobile Content Blocks",
+  "Push Campaigns"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Campaign Name",
+  "Type",
+  "Status",
+  "Audience",
+  "Sent",
+  "Open Rate",
+  "Revenue"
+ ],
+ "kpiLabels": [
+  "2 Active Campaigns 0 Sent This Month — Avg Open Rate $0 Revenue Attributed",
+  "2 Active Campaigns",
+  "2",
+  "Active Campaigns",
+  "0 Sent This Month",
+  "0",
+  "Sent This Month",
+  "— Avg Open Rate",
+  "—",
+  "Avg Open Rate",
+  "$0 Revenue Attributed",
+  "$0",
+  "Revenue Attributed"
+ ],
+ "inputPlaceholders": [
+  "Search marketing campaigns…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Monthly Newsletter — March |  | Draft | — | — | — | —",
+  " | Holiday Referral Blast |  | Scheduled⛅ Weather paused — 6 locations | — | — | — | —",
+  " | Summer Unlimited Push |  | Active⛅ Weather paused — 6 locations | — | — | — | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Marketing Campaigns Automation SmartLinks Customer Segments Offers & Promotions Email Templates Paid Media (DRAFT) Deliverability Referral Program Email Templates SMS Templates RCS Templates Mobile Content Blocks Push Campaigns MARKETING Campaigns Search ⌘K Ask Shyne MG 2 Active Campaigns 0 Sent This Month — Avg Open Rate $0 Revenue Attributed Send Volume Emails & SMS sent — 30-day trend Campaigns by Type Channel distribution Email 44% Email+SMS 31% SMS 16% Push 9% Campaign Performance Current status breakdown 2 Active 1 Draft 1 Completed MARKETING · CAMPAIGNS Campaign List 5 records + New Record Export Filters ▾ Search CAMPAIGN NAME TYPE STATUS AUDIENCE SENT OPEN RATE REVENUE Monthly Newsletter — March Draft — — — — Holiday Referral Blast Scheduled⛅ Weather paused — 6 locations — — — — Summer Unlimited Push Active⛅ Weather paused — 6 locations — — — — Win-Back October Completed — — — — New Member Welcome Active — — — — Showing 1–5 of 5 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

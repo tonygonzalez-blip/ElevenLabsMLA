@@ -1,0 +1,70 @@
+{
+ "url": "/crm-prepaid-books.html",
+ "docTitle": "Prepaid Books — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›Prepaid Books"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Prepaid Books",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ Add Prepaid Book",
+  "Filters 0",
+  "Search",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Book",
+  "Customer",
+  "Package",
+  "Remaining",
+  "Wash Value",
+  "Expiration"
+ ],
+ "kpiLabels": [
+  "— Total Books — Active — Completed — Expiring Soon",
+  "— Total Books",
+  "—",
+  "Total Books",
+  "— Active",
+  "Active",
+  "— Completed",
+  "Completed",
+  "— Expiring Soon",
+  "Expiring Soon"
+ ],
+ "inputPlaceholders": [
+  "Search by barcode or description…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load records (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Prepaid Books Search ⌘K Ask Shyne MG — Total Books — Active — Completed — Expiring Soon New Books Last 12 months of data — Package Type Top packages by book count Loading… Book Status Portfolio health at a glance — ACTIVE — COMPLETED — EXPIRED CRM · PREPAID BOOKS Prepaid Book List Loading… + Add Prepaid Book Filters Search BOOK CUSTOMER PACKAGE REMAINING WASH VALUE EXPIRATION Couldn’t load records (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

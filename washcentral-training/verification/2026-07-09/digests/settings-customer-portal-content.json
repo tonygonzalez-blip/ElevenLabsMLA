@@ -1,0 +1,93 @@
+{
+ "url": "/settings-customer-portal-content.html",
+ "docTitle": "Content & Messaging — Customer Portal — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Content & Messaging"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Portals View",
+  "Portal Overview",
+  "Branding & Appearance",
+  "Features & Modules",
+  "Access & Security",
+  "Content & Messaging",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Cancel",
+  "Save Changes",
+  "Welcome & Footer",
+  "Contact Info",
+  "FAQs & Links",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Welcome & Footer",
+  "Contact Info",
+  "FAQs & Links",
+  "Save Changes"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Portal Status Live Last Published Apr 22, 2026 Version v2.4.1",
+  "Portal Status Live",
+  "Portal Status",
+  "Live",
+  "Last Published Apr 22, 2026",
+  "Last Published",
+  "Apr 22, 2026",
+  "Version v2.4.1",
+  "Version",
+  "v2.4.1"
+ ],
+ "inputPlaceholders": [
+  "https://...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Welcome Heading",
+  "Welcome Subheading",
+  "Welcome Banner",
+  "Portal Description",
+  "Footer Text",
+  "Terms of Service URL",
+  "Privacy Policy URL"
+ ],
+ "chips": [
+  "Main Kiosk Portal Live v2.4.1",
+  "Main Kiosk Portal",
+  "Live",
+  "v2.4.1"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ Portals View Portal Overview Branding & Appearance Features & Modules Access & Security Content & Messaging AI Agent ▾ Marketing ▾ Integrations SETTINGS Content & Messaging Search ⌘K Ask Shyne MG Content & Messaging Settings · Customer Portal · Welcome copy, contact info & FAQs Main Kiosk Portal Live v2.4.1 Cancel Save Changes Portal Status Live Last Published Apr 22, 2026 Version v2.4.1 Welcome & Footer Contact Info FAQs & Links WELCOME BANNER WELCOME HEADING WELCOME SUBHEADING WELCOME BANNER Show ▾ PORTAL DESCRIPTION FOOTER FOOTER TEXT TERMS OF SERVICE URL PRIVACY POLICY URL Cancel Save Changes Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

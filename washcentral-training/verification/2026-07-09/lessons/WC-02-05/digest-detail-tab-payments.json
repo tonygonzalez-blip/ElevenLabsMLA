@@ -1,0 +1,117 @@
+{
+ "url": "/crm-house-account-detail.html",
+ "docTitle": "House Account Detail — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›House Account"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "M",
+  "← Back",
+  "Search",
+  "Statement",
+  "Delete Account",
+  "Edit Account",
+  "Overview",
+  "Details",
+  "Contacts",
+  "Vehicles",
+  "Invoices",
+  "Payments",
+  "Activity",
+  "Documents",
+  "Notes",
+  "Audit Trail",
+  "+ Record Payment",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "Details",
+  "Contacts",
+  "Vehicles",
+  "Invoices",
+  "Payments",
+  "Activity",
+  "Documents",
+  "Notes",
+  "Audit Trail"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Reference #",
+  "Method",
+  "Amount",
+  "Applied To",
+  "Running Balance",
+  "Status",
+  "Posted By"
+ ],
+ "kpiLabels": [
+  "$4,280Total Balance $5,720Available Credit $10,000Credit Limit $892Monthly Avg Mar 24, 2026Last Payment Feb 8, 2024Account Since",
+  "$4,280Total Balance",
+  "$4,280",
+  "Total Balance",
+  "$5,720Available Credit",
+  "$5,720",
+  "Available Credit",
+  "$10,000Credit Limit",
+  "$10,000",
+  "Credit Limit",
+  "$892Monthly Avg",
+  "$892",
+  "Monthly Avg",
+  "Mar 24, 2026Last Payment",
+  "Mar 24, 2026",
+  "Last Payment",
+  "Feb 8, 2024Account Since",
+  "Feb 8, 2024",
+  "Account Since"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active",
+  "Net 30 $10,000 Credit Limit 14 Vehicles",
+  "Net 30",
+  "$10,000 Credit Limit",
+  "14 Vehicles",
+  "Vehicles 14",
+  "Invoices 10",
+  "Payments 8",
+  "Documents 3",
+  "Statement",
+  "Posted",
+  "Voided"
+ ],
+ "firstRows": [
+  "Mar 24, 2026 | CHK-8841 | Check | $2,145.00 | INV-2026-0038, INV-2026-0029 | $4,280.00 | Posted | Miguel.Gonzalez",
+  "Feb 18, 2026 | ACH-20260218 | ACH | $900.00 | INV-2026-0029 | $6,425.00 | Posted | Karla.Reyes",
+  "Jan 15, 2026 | CHK-8504 | Check | $875.00 | INV-2025-0198 | $7,325.00 | Posted | Miguel.Gonzalez"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History CRM House Account Search ⌘K Ask Shyne M TS Tech Solutions Inc Active HA-0042 · Fort Lauderdale · John Smith Net 30 $10,000 Credit Limit 14 Vehicles ← Back Search Statement Delete Account Edit Account $4,280 Total Balance $5,720 Available Credit $10,000 Credit Limit $892 Monthly Avg Mar 24, 2026 Last Payment Feb 8, 2024 Account Since RELATED Vehicles 14 Invoices 10 Payments 8 Documents 3 Statement Overview Details Contacts Vehicles Invoices Payments Activity Documents Notes Audit Trail CRM · HOUSE ACCOUNTS Payment History 8 payments · $8,253.00 received + Record Payment DATE REFERENCE # METHOD AMOUNT APPLIED TO RUNNING BALANCE STATUS POSTED BY Mar 24, 2026 CHK-8841 Check $2,145.00 INV-2026-0038, INV-2026-0029 $4,280.00 Posted Miguel.Gonzalez Feb 18, 2026 ACH-20260218 ACH $900.00 INV-2026-0029 $6,425.00 Posted Karla.Reyes Jan 15, 2026 CHK-8504 Check $875.00 INV-2025-0198 $7,325.00 Posted Miguel.Gonzalez Dec 19, 2025 ACH-20251219 ACH $910.00 INV-2025-0184 $8,200.00 Posted Karla.Reyes Nov 14, 2025 CHK-7922 Check $840.00 INV-2025-0169 $9,110.00 Posted Miguel.Gonzalez Oct 17, 2025 ACH-20251017 ACH $928.00 INV-2025-0155 $9,950.00 Posted Miguel.Gonzalez Sep 12, 2025 CHK-7401 Check $860.00 INV-2025-0140 $10,878.00 Posted Karla.Reyes Aug 10, 2025 CC-20250810 Credit Card "
+}

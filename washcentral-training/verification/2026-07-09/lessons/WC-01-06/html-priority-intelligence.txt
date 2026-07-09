@@ -1,0 +1,213 @@
+<div class="cc-grid">
+
+      <!-- LEFT: PRIORITY FEED -->
+      <div class="cc-feed">
+        <div class="cc-feed-hdr">
+          <span class="cc-feed-title">Priority Intelligence</span>
+          <span class="cc-feed-count">11 items · 4 urgent</span>
+        </div>
+
+        <!-- CRITICAL -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-red)"></span>
+            <span class="cc-group-lbl red">Critical</span>
+            <span class="cc-group-badge red">2</span>
+          </div>
+          <a class="cc-row" href="payments-reconciliation.html">
+            <div class="cc-row-icon red">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Henrico W Broad, VA — POS system offline</div>
+              <div class="cc-row-desc">Card terminals down at peak window. On-site tech en route; queue forming.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip red">Critical</span><span class="cc-action-link">Open →</span></div>
+          </a>
+          <a class="cc-row" href="support.html">
+            <div class="cc-row-icon red">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">3 support tickets within 120 min of SLA breach</div>
+              <div class="cc-row-desc">SUP-1042, SUP-1036, SUP-1028 need immediate reassignment.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip red">120 min</span><span class="cc-action-link">Review →</span></div>
+          </a>
+        </div>
+
+        <!-- HIGH -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-amber)"></span>
+            <span class="cc-group-lbl amber">High Priority</span>
+            <span class="cc-group-badge amber">2</span>
+          </div>
+          <a class="cc-row" href="support.html">
+            <div class="cc-row-icon amber">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Columbus Sawmill, OH — kiosk printer offline</div>
+              <div class="cc-row-desc">Unable to issue receipts or promo vouchers. Walk-ins affected.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip amber">High</span><span class="cc-action-link">Assign →</span></div>
+          </a>
+          <a class="cc-row" href="locations.html">
+            <div class="cc-row-icon amber">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Cincinnati Montgomery, OH — membership conversion −6% WoW</div>
+              <div class="cc-row-desc">Below baseline. Review offer placement and coaching cadence.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip amber">Watch</span><span class="cc-action-link">Analyze →</span></div>
+          </a>
+        </div>
+
+        <!-- REVENUE PLAYS -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-teal)"></span>
+            <span class="cc-group-lbl teal">Revenue plays — +$3,200 today</span>
+            <span class="cc-group-badge teal">5</span>
+          </div>
+          <a class="cc-row rec" href="marketing.html">
+            <div class="cc-row-icon teal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Launch win-back campaign <span class="cc-rec-chip">Recommended</span></div>
+              <div class="cc-row-desc">42 churn-risk customers across 6 locations. ~14 projected recoveries.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip teal">+$980</span><span class="cc-action-link">Launch →</span></div>
+          </a>
+          <a class="cc-row" href="crm-customers.html">
+            <div class="cc-row-icon teal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">124 members eligible for Unlimited Plus upsell</div>
+              <div class="cc-row-desc">Purchased add-ons recently — not yet on top-tier plan.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip teal">+$1,240</span><span class="cc-action-link">Target →</span></div>
+          </a>
+          <a class="cc-row" href="payments-reconciliation.html">
+            <div class="cc-row-icon green">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">18 recoverable billing failures via card updater</div>
+              <div class="cc-row-desc">Historical recovery rate ~62%. Reachable through outreach flow.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip green">+$640</span><span class="cc-action-link">Recover →</span></div>
+          </a>
+          <a class="cc-row" href="locations.html">
+            <div class="cc-row-icon purple">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">12 dynamic pricing gaps at peak-volume sites</div>
+              <div class="cc-row-desc">Under market rate during high-demand windows.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip purple">+$1,140</span><span class="cc-action-link">Analyze →</span></div>
+          </a>
+          <a class="cc-row" href="dashboard-downsells.html">
+            <div class="cc-row-icon teal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">29 members with downsell signals</div>
+              <div class="cc-row-desc">Visit frequency −40%+ over 60 days. Proactive retention offer available.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip teal">Prevent</span><span class="cc-action-link">Review →</span></div>
+          </a>
+        </div>
+
+        <!-- AUTOMATIONS -->
+        <div class="cc-group">
+          <div class="cc-group-hdr">
+            <span class="cc-group-dot" style="background:var(--cc-blue)"></span>
+            <span class="cc-group-lbl blue">Automations — 2 live</span>
+            <span class="cc-group-badge blue">2</span>
+          </div>
+          <a class="cc-row" href="marketing.html">
+            <div class="cc-row-icon blue">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Win-back SMS sequence — 14 in flow today</div>
+              <div class="cc-row-desc">3-step cadence. Step 2 open rate 38%. Running without intervention.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip blue">Live</span><span class="cc-action-link">Inspect →</span></div>
+          </a>
+          <a class="cc-row" href="payments-reconciliation.html">
+            <div class="cc-row-icon blue">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+            </div>
+            <div class="cc-row-body">
+              <div class="cc-row-title">Payment retry automation — 37 queued, 11 recovered</div>
+              <div class="cc-row-desc">Card updater and retry logic processing across all pools.</div>
+            </div>
+            <div class="cc-row-end"><span class="cc-chip green">11 recovered</span><span class="cc-action-link">View →</span></div>
+          </a>
+        </div>
+      </div><!-- /cc-feed -->
+
+      <!-- RIGHT: INTEL PANEL -->
+      <div class="cc-intel">
+        <div class="cc-own">
+          <div class="cc-own-title">Action ownership</div>
+          <div class="cc-assignee">
+            <div class="cc-av red">RO</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Regional Ops</div>
+              <div class="cc-av-task">Henrico W Broad — POS offline</div>
+              <div class="cc-av-when">Due: next 30 min</div>
+            </div>
+            <span class="cc-av-badge cc-chip red">Urgent</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av teal">MK</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Marketing</div>
+              <div class="cc-av-task">Launch win-back campaign</div>
+              <div class="cc-av-when">Due: today</div>
+            </div>
+            <span class="cc-av-badge cc-chip teal">+$980</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av amber">SL</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Support Lead</div>
+              <div class="cc-av-task">Reassign 3 aging tickets</div>
+              <div class="cc-av-when">Due: next 2 hrs</div>
+            </div>
+            <span class="cc-av-badge cc-chip amber">SLA risk</span>
+          </div>
+          <div class="cc-assignee">
+            <div class="cc-av blue">RV</div>
+            <div class="cc-av-body">
+              <div class="cc-av-role">Revenue Ops</div>
+              <div class="cc-av-task">Review pricing gaps</div>
+              <div class="cc-av-when">Due: this afternoon</div>
+            </div>
+            <span class="cc-av-badge cc-chip purple">+$1,140</span>
+          </div>
+        </div>
+
+        <!-- MAIA -->
+        <div class="cc-maia">
+          <div class="cc-maia-eyebrow">Intelligence</div>
+          <div class="cc-maia-heading">Ask MAIA</div>
+          <div class="cc-maia-sub">Guided intelligence for operators, marketing, and support.</div>
+          <a class="cc-maia-chip" href="locations.html"><span>What locations are underperforming?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="crm-customers.html"><span>Which customers are at churn risk?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="dashboard-executive-revenue.html"><span>Show today's revenue trend drivers</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="marketing.html"><span>Best win-back segment by ROI?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="dashboard-memberships.html"><span>Summarise membership activity today</span><span>Open ↗</span></a>
+          <div class="cc-maia-footer">MAIA · WashCentral AI Platform · Responses are contextual and based on live data.</div>
+        </div>
+      </div><!-- /cc-intel -->
+
+    </div>

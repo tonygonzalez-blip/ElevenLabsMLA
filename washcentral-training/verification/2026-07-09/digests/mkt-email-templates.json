@@ -1,0 +1,92 @@
+{
+ "url": "/mkt-email-templates.html",
+ "docTitle": "Email Templates — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Marketing›Email Templates"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Campaigns",
+  "Automation",
+  "SmartLinks",
+  "Customer Segments",
+  "Offers & Promotions",
+  "Email Templates",
+  "Paid Media (DRAFT)",
+  "Deliverability",
+  "Referral Program",
+  "SMS Templates",
+  "RCS Templates",
+  "Mobile Content Blocks",
+  "Push Campaigns"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Template",
+  "Export",
+  "All",
+  "Cancellation",
+  "Pause & Resume",
+  "Plan Change",
+  "Refund",
+  "Retention",
+  "Customer Service",
+  "Account",
+  "×",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Template Name",
+  "Subject Line",
+  "Category",
+  "Code",
+  "Reply-To",
+  "Updated"
+ ],
+ "kpiLabels": [
+  "16 Total Templates 16 Active 7 Categories support@atlascarwash.com Default Reply-To",
+  "16 Total Templates",
+  "16",
+  "Total Templates",
+  "16 Active",
+  "Active",
+  "7 Categories",
+  "7",
+  "Categories",
+  "support@atlascarwash.com Default Reply-To",
+  "support@atlascarwash.com",
+  "Default Reply-To"
+ ],
+ "inputPlaceholders": [
+  "Search templates…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "All",
+  "Cancellation",
+  "Pause & Resume",
+  "Plan Change",
+  "Refund",
+  "Retention",
+  "Customer Service",
+  "Account"
+ ],
+ "firstRows": [
+  "Refund Request - Contact Us | Refund Request - Contact Us | Refund | — | support@atlascarwash.com | Apr 7, 2026",
+  "ACQ Call US | Atlas Car Wash Customer Service | Customer Service | — | support@atlascarwash.com | Apr 7, 2026",
+  "Call Us | Atlas Car Wash Customer Service | Customer Service | — | support@atlascarwash.com | Apr 7, 2026"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Marketing Campaigns Automation SmartLinks Customer Segments Offers & Promotions Email Templates Paid Media (DRAFT) Deliverability Referral Program Email Templates SMS Templates RCS Templates Mobile Content Blocks Push Campaigns MARKETING Email Templates Transactional email templates sent to members for plan changes, cancellations, refunds, and more. Search ⌘K Ask Shyne MG 16 Total Templates 16 Active 7 Categories support@atlascarwash.com Default Reply-To MARKETING · EMAIL TEMPLATES 16 templates + New Template Export Category: All Cancellation Pause & Resume Plan Change Refund Retention Customer Service Account TEMPLATE NAME SUBJECT LINE CATEGORY CODE REPLY-TO UPDATED Refund Request - Contact Us Refund Request - Contact Us REFUND — support@atlascarwash.com Apr 7, 2026 ACQ Call US Atlas Car Wash Customer Service CUSTOMER SERVICE — support@atlascarwash.com Apr 7, 2026 Call Us Atlas Car Wash Customer Service CUSTOMER SERVICE — support@atlascarwash.com Apr 7, 2026 Profile Updated Atlas Car Wash Customer Service ACCOUNT — info@atlascarwash.com Apr 7, 2026 Change LP - Need Info Atlas Car Wash Customer Service PLAN CHANGE — support@atlascarwash.com Apr 7, 2026 Refund Processed Atlas Car Wash Refund Request REFUND — support@atlascarwash.com Apr 7, 2026 Info Request Atlas Car Wash - Contact Us CUSTOMER SERVICE — support@atlascarwash.com Apr 7, 2026 Terminate Plan Confirmation terminate_confirmation Your cancellation has been processed CANCELLATION te"
+}

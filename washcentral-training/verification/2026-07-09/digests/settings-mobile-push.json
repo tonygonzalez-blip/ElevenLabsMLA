@@ -1,0 +1,60 @@
+{
+ "url": "/settings-mobile-push.html",
+ "docTitle": "Push Campaigns — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [
+  "Tenant",
+  "Campaigns",
+  "Editor"
+ ],
+ "breadcrumb": [
+  "Marketing›Push Campaigns"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "MG",
+  "View JSON",
+  "Save & Publish",
+  "+ New campaign",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Mobile"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations MARKETING Push Campaigns Search ⌘K MG Push Campaigns Mobile ● Loaded Compose & schedule push notifications · Cohort targeting with quiet-hours send windows View JSON Save & Publish Tenant Campaigns publish to that tenant's /mobile/push-campaigns. mcw-demo — Mister Car Wash ewc-demo — Express Wash Concepts atlas-fl — Atlas Car Wash Campaigns Select a campaign to edit, or create a new one. No campaigns yet. Create your first push campaign below. + New campaign Editor Message content, audience, and delivery. No campaign selected. Pick one from the list above or create a new campaign. Loaded 0 campaign(s) for ewc-demo. LOCK-SCREEN PREVIEW 9:41 Friday, July 3 EXPRESS WASH CONCEPTS DEMO now Notification title Your message preview appears here as the member would see it. ESTIMATED REACH — Select a campaign to estimate its audience. Demo estimate from installed base × push opt-in × cohort filters. Actual delivery is computed server-side at send time. Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

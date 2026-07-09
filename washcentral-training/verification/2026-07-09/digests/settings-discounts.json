@@ -1,0 +1,91 @@
+{
+ "url": "/settings-discounts.html",
+ "docTitle": "Discounts",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Discounts"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Payment Types",
+  "Discounts",
+  "Discount Types",
+  "Surcharges",
+  "Surcharge Types",
+  "Payout Percentage",
+  "Tax Rates",
+  "General Ledger Codes",
+  "GL Account Codes",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description",
+  "Code",
+  "Amount",
+  "Taxable",
+  "Discount Type",
+  "Start Date"
+ ],
+ "kpiLabels": [
+  "48Total Discounts 45Active 22Unlimited Discounts 18Dollar Off",
+  "48Total Discounts",
+  "48",
+  "Total Discounts",
+  "45Active",
+  "45",
+  "Active",
+  "22Unlimited Discounts",
+  "22",
+  "Unlimited Discounts",
+  "18Dollar Off",
+  "18",
+  "Dollar Off"
+ ],
+ "inputPlaceholders": [
+  "Search discounts…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load records (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Payment Types Discounts Discount Types Surcharges Surcharge Types Payout Percentage Tax Rates General Ledger Codes GL Account Codes Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Discounts Search ⌘K Ask Shyne MG 48 Total Discounts 45 Active 22 Unlimited Discounts 18 Dollar Off Config Activity Last 12 months 48 ↑ +14% Jan Dec Breakdown by Method By discount method Unlimited 46% Dollar Off ($) 37% Percent Off (%) 12% Other 5% Status Overview Configuration health 94% ACTIVE 3% DRAFT 3% INACTIVE SETTINGS · DISCOUNTS Discounts List Loading… + New Record Filters Search DESCRIPTION CODE AMOUNT TAXABLE DISCOUNT TYPE START DATE Couldn’t load records (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,98 @@
+{
+ "url": "/bi-revenue.html",
+ "docTitle": "Revenue Intelligence — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Intelligence›Revenue Intelligence"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Today",
+  "Week",
+  "Month",
+  "Quarter",
+  "YTD",
+  "Ask Shyne",
+  "MG",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Today",
+  "Week",
+  "Month",
+  "Quarter",
+  "YTD"
+ ],
+ "tableHeaders": [
+  "Location",
+  "This Month",
+  "vs Last Month",
+  "vs Budget",
+  "MRR",
+  "Members",
+  "Rev / Member",
+  "Trend"
+ ],
+ "kpiLabels": [
+  "MRR $284,400 ↑ 6.1% vs last month Net Revenue Retention 94.2% ↑ 1.8 pt vs last month Avg Revenue per User $153/mo ↑ $4.20 vs last month Payback Period 8.4 mo ↓ 0.6 mo improvement",
+  "MRR $284,400 ↑ 6.1% vs last month",
+  "MRR",
+  "$284,400",
+  "↑ 6.1% vs last month",
+  "Net Revenue Retention 94.2% ↑ 1.8 pt vs last month",
+  "Net Revenue Retention",
+  "94.2%",
+  "↑ 1.8 pt vs last month",
+  "Avg Revenue per User $153/mo ↑ $4.20 vs last month",
+  "Avg Revenue per User",
+  "$153/mo",
+  "↑ $4.20 vs last month",
+  "Payback Period 8.4 mo ↓ 0.6 mo improvement",
+  "Payback Period",
+  "8.4 mo",
+  "↓ 0.6 mo improvement"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Fort Lauderdale | $311,200 | +8.4% ↑ | 101.2% ✓ | $48,400 | 3,840 | $81 | ",
+  "Miami North | $284,400 | +11.2% ↑ | 98.4% | $44,200 | 3,520 | $81 | ",
+  "Boca Raton | $258,800 | +6.8% ↑ | 104.2% ✓ | $38,800 | 3,180 | $81 | "
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting INTELLIGENCE Revenue Intelligence MRR waterfall, revenue composition, location performance, and growth trends. Search ⌘K Today Week Month Quarter YTD Ask Shyne MG REVENUE · APRIL 2026 MTD The numbers that matter MRR $284,400 ↑ 6.1% vs last month NET REVENUE RETENTION 94.2% ↑ 1.8 pt vs last month AVG REVENUE PER USER $153/mo ↑ $4.20 vs last month PAYBACK PERIOD 8.4 mo ↓ 0.6 mo improvement MRR Waterfall — April 2026 Monthly recurring revenue movement $284,400 ↑ $16,200 net new Starting MRR $268,200 + New MRR +$22,400 + Expansion +$8,800 − Contraction −$6,200 − Churned MRR −$8,800 Ending MRR $284,400 Starting / Ending New Expansion Contraction Churned Revenue — Last 12 Months All revenue streams, network-wide $373k ↑ 9.8% YoY Membership 68% Pay-per-wash 22% Retail 7% Gift Cards 3% NETWORK PERFORMANCE Revenue by location LOCATION THIS MONTH VS LAST MONTH VS BUDGET MRR MEMBERS REV / MEMBER TREND Fort Lauderdale $311,200 +8.4% ↑ 101.2% ✓ $48,400 3,840 $81 Miami North $284,400 +11.2% ↑ 98.4% $44,200 3,520 $81 Boca Raton $258,800 +6.8% ↑ 104.2% ✓ $38,800 "
+}

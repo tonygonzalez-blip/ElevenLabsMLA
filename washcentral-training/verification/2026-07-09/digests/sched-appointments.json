@@ -1,0 +1,89 @@
+{
+ "url": "/sched-appointments.html",
+ "docTitle": "Appointments — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Scheduling›Appointments"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "List",
+  "Calendar",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Time",
+  "Customer",
+  "Service",
+  "Location",
+  "Staff",
+  "Status"
+ ],
+ "kpiLabels": [
+  "18Today 84This Week 78%Utilization 3%No-Shows",
+  "18Today",
+  "18",
+  "Today",
+  "84This Week",
+  "84",
+  "This Week",
+  "78%Utilization",
+  "78%",
+  "Utilization",
+  "3%No-Shows",
+  "3%",
+  "No-Shows"
+ ],
+ "inputPlaceholders": [
+  "Search appointments…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2026-07-09 | 9:00 AM | Maria Gonzalez | Full Synthetic Oil Change | Fort Lauderdale | Staff TBD | Confirmed",
+  " | 2026-07-09 | 10:30 AM | Mike Chen | State Inspection + High Mileage Oil Change | Fort Lauderdale | Staff TBD | Confirmed",
+  " | 2026-07-09 | 1:00 PM | Lisa Park | Interior Five Star Detail | Miami North | Staff TBD | Scheduled"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports SCHEDULING Appointments Search ⌘K Ask Shyne MG 18 Today 84 This Week 78% Utilization 3% No-Shows Booking Trend Last 12 months 840 ↑ +19% Jan Dec By Service Appointment mix Full Detail 38% Interior Detail 28% Oil Change 22% Other 12% Booking Status Schedule health 82% CONFIRMED 15% PENDING 3% NO-SHOW SCHEDULING · APPOINTMENTS Appointments 18 records List Calendar + New Record Export Filters ▾ Search DATE TIME CUSTOMER SERVICE LOCATION STAFF STATUS 2026-07-09 9:00 AM Maria Gonzalez Full Synthetic Oil Change Fort Lauderdale Staff TBD Confirmed 2026-07-09 10:30 AM Mike Chen State Inspection + High Mileage Oil Change Fort Lauderdale Staff TBD Confirmed 2026-07-09 1:00 PM Lisa Park Interior Five Star Detail Miami North Staff TBD Scheduled 2026-07-10 9:00 AM Tom Brown Full Five Star Detail Tampa West Staff TBD Scheduled 2026-07-10 11:30 AM Sarah Johnson Basic Oil Change Fort Lauderdale Staff TBD Scheduled 2026-07-11 8:00 AM James Thompson State Inspection + Full Synthetic Oil Change Orlando Central Staff TBD Confirmed 2026-07-11 10:00 AM Alicia Rivera Exterior Five Star Detail Miami North Staff TBD Scheduled 2026-07-11 2:00 PM Carla Mendez High Mileage Oil Change Fort Lauderdale Staff TBD Confirmed 2026-07-12 9:30 AM David Perez"
+}

@@ -1,0 +1,90 @@
+{
+ "url": "/dashboard-executive-revenue.html",
+ "docTitle": "Revenue Detail",
+ "h1": [],
+ "h2": [
+  "30-day revenue trend",
+  "Revenue actions",
+  "Revenue by location",
+  "Jump to workflow",
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Dashboard›Revenue Detail"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "↻",
+  "Search ⌘K",
+  "Back to Executive Dashboard",
+  "Open Reports",
+  "Ask Shyne",
+  "All Locations▾",
+  "MG",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location",
+  "Washes",
+  "Avg Ticket",
+  "Revenue"
+ ],
+ "kpiLabels": [
+  "Revenue Today$184,260Up 8.4% vs yesterdayAvg Ticket$26.93Across 6,842 washesMember Revenue$112,44061% of total todayAdd-on Revenue$18,960Tire shine, wax, ceramic",
+  "Revenue Today",
+  "$184,260",
+  "Up 8.4% vs yesterday",
+  "Avg Ticket",
+  "$26.93",
+  "Across 6,842 washes",
+  "Member Revenue",
+  "$112,440",
+  "61% of total today",
+  "Add-on Revenue",
+  "$18,960",
+  "Tire shine, wax, ceramic"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Last Refreshed just now ↻",
+  "Live Prototype"
+ ],
+ "firstRows": [
+  "Fort Lauderdale | 1,248 | $27.34 | $34,120",
+  "Tampa West | 1,102 | $27.17 | $29,940",
+  "Orlando Central | 986 | $27.87 | $27,480"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting Executive • Revenue DASHBOARD Revenue Detail Last Refreshed just now ↻ Search ⌘K Back to Executive Dashboard Open Reports Ask Shyne All Locations ▾ MG Revenue Today $184,260 Up 8.4% vs yesterday Avg Ticket $26.93 Across 6,842 washes Member Revenue $112,440 61% of total today Add-on Revenue $18,960 Tire shine, wax, ceramic TREND VIEW 30-day revenue trend Revenue acceleration is being driven by member mix and improved add-on attachment at top Florida sites. RECOMMENDED ACTIONS Revenue actions Investigate add-on attach at Miami North to close gap vs peer sites. Push mid-day offer in Orlando to lift afternoon utilization. Review membership upgrade prompts at kiosks with strongest conversion. DETAIL TABLE Revenue by location Live Prototype LOCATION WASHES AVG TICKET REVENUE Fort Lauderdale 1,248 $27.34 $34,120 Tampa West 1,102 $27.17 $29,940 Orlando Central 986 $27.87 $27,480 Miami North 814 $26.24 $21,360 RELATED VIEWS Jump to workflow Executive Dashboard → Executive Reports → Support Queue → Locations Overview → Loading… 2:00 REMAINING Still there? Y"
+}

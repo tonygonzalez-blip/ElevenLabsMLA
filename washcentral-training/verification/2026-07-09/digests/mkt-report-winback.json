@@ -1,0 +1,97 @@
+{
+ "url": "/mkt-report-winback.html",
+ "docTitle": "Win-Back & Re-engagement Report — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Analytics›Win-Back Analysis"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Export CSV",
+  "+ New Campaign",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Campaign",
+  "Lapse Tier",
+  "Targeted",
+  "Recovered",
+  "Recovery Rate",
+  "Avg Days",
+  "Channel",
+  "Revenue Recovered",
+  "Status"
+ ],
+ "kpiLabels": [
+  "8,100 Churned Customers Targeted 1,284 Total Recovered 15.9% Overall Recovery Rate 18 days Avg Time to Recovery $47,508 Revenue Recovered $14.20 Cost Per Recovery",
+  "8,100 Churned Customers Targeted",
+  "8,100",
+  "Churned Customers Targeted",
+  "1,284 Total Recovered",
+  "1,284",
+  "Total Recovered",
+  "15.9% Overall Recovery Rate",
+  "15.9%",
+  "Overall Recovery Rate",
+  "18 days Avg Time to Recovery",
+  "18 days",
+  "Avg Time to Recovery",
+  "$47,508 Revenue Recovered",
+  "$47,508",
+  "Revenue Recovered",
+  "$14.20 Cost Per Recovery",
+  "$14.20",
+  "Cost Per Recovery"
+ ],
+ "inputPlaceholders": [
+  "Search campaigns…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active",
+  "Completed"
+ ],
+ "firstRows": [
+  "30-Day Lapse SMS Blast | 30–90d | 2,800 | 784 | 28.0% | 12 days | SMS | $22,344 | Active",
+  "\"We Miss You\" Multi-Step | 30–90d | 1,400 | 392 | 28.0% | 9 days | Email + SMS + Push | $14,112 | Active",
+  "30–90d Subtotal | 4,200 | 1,176 | 28.0% | 10.5 days |  | $36,456 | "
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting ANALYTICS Win-Back Analysis Measure re-engagement campaign performance and recovery rates by lapse duration. Search ⌘K Ask Shyne MG Filters Export CSV 8,100 Churned Customers Targeted 1,284 Total Recovered 15.9% Overall Recovery Rate 18 days Avg Time to Recovery $47,508 Revenue Recovered $14.20 Cost Per Recovery Recovery Rate by Lapse Duration Recovery drops sharply after 90 days 30–90 days 28% 90–180 days 12% 180d+ 4% Recovery Rate Trend Monthly recovery rate Jan–May 2026 Jan Feb Mar Apr May 11% 16% Overall recovery rate up +5pp since January MARKETING · WIN-BACK Campaign Performance by Lapse Tier 5 campaigns • 8,100 targeted • 1,284 recovered (15.9%) + New Campaign CAMPAIGN LAPSE TIER TARGETED RECOVERED RECOVERY RATE AVG DAYS CHANNEL REVENUE RECOVERED STATUS 30-Day Lapse SMS Blast 30–90d 2,800 784 28.0% 12 days SMS $22,344 ACTIVE \"We Miss You\" Multi-Step 30–90d 1,400 392 28.0% 9 days Email + SMS + Push $14,112 ACTIVE 30–90d Subtotal 4,200 1,176 28.0% 10.5 days $36,456 90-Day Win-Back Email 90–180d 1,900 228 12.0% 21 days Email $6,840 COMPLETED V"
+}

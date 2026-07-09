@@ -1,0 +1,153 @@
+{
+ "customers-list": {
+  "url": "/crm-customers.html",
+  "docTitle": "Customers — WashCentral",
+  "h1": [],
+  "h2": [
+   "Still there?"
+  ],
+  "h3": [],
+  "breadcrumb": [
+   "CRM›Customers"
+  ],
+  "railButtons": [],
+  "sidebarItems": [
+   "Customers",
+   "Gift Cards",
+   "House Accounts",
+   "Prepaid Books",
+   "Vehicles",
+   "Retail Customers",
+   "Bundles",
+   "Fundraiser",
+   "Agent Console"
+  ],
+  "buttons": [
+   "Search ⌘K",
+   "Ask Shyne",
+   "MG",
+   "Retention Log",
+   "Delete",
+   "+ Add Customer",
+   "Filters 0",
+   "Search",
+   "25",
+   "‹",
+   "›",
+   "Stay Logged In",
+   "Log Out Now",
+   "Stay Active"
+  ],
+  "tabs": [],
+  "tableHeaders": [
+   "Customer",
+   "Location",
+   "Plan",
+   "Member Since",
+   "Plan $/mo",
+   "Status"
+  ],
+  "kpiLabels": [
+   "2,418 Total Customers 1,964 Active Members 146 At Risk 308 Prospects",
+   "2,418 Total Customers",
+   "2,418",
+   "Total Customers",
+   "1,964 Active Members",
+   "1,964",
+   "Active Members",
+   "146 At Risk",
+   "146",
+   "At Risk",
+   "308 Prospects",
+   "308",
+   "Prospects"
+  ],
+  "inputPlaceholders": [
+   "Search by name, plate, email, location, or plan…",
+   "Search pages, modules, actions…"
+  ],
+  "labels": [],
+  "chips": [],
+  "firstRows": [
+   "Couldn’t load records (Failed to fetch). Check your connection to the AI agent service."
+  ],
+  "modals": [],
+  "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Customers Search ⌘K Ask Shyne MG 2,418 Total Customers 1,964 Active Members 146 At Risk 308 Prospects Member Growth Last 12 months 24,816 ↑ +12.3% Jan Dec Plan Distribution Active members by plan Unlimited Plus 38% Unlimited 27% Pay Per Wash 22% Premium Detail 13% Risk Profile Customer health at a glance 81% LOW 13% MED 6% HIGH 1,961 healthy 146 at risk CRM · MEMBER DATABASE Customer List 2,418 members · 6 locations Retention Log Delete + Add Customer Filters Search CUSTOMER LOCATION PLAN MEMBER SINCE PLAN $/MO STATUS Couldn’t load records (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+ },
+ "clickedRowLabel": null,
+ "customer-360": {
+  "url": "/crm-customers.html",
+  "docTitle": "Customers — WashCentral",
+  "h1": [],
+  "h2": [
+   "Still there?"
+  ],
+  "h3": [],
+  "breadcrumb": [
+   "CRM›Customers"
+  ],
+  "railButtons": [],
+  "sidebarItems": [
+   "Customers",
+   "Gift Cards",
+   "House Accounts",
+   "Prepaid Books",
+   "Vehicles",
+   "Retail Customers",
+   "Bundles",
+   "Fundraiser",
+   "Agent Console"
+  ],
+  "buttons": [
+   "Search ⌘K",
+   "Ask Shyne",
+   "MG",
+   "Retention Log",
+   "Delete",
+   "+ Add Customer",
+   "Filters 0",
+   "Search",
+   "25",
+   "‹",
+   "›",
+   "Stay Logged In",
+   "Log Out Now",
+   "Stay Active"
+  ],
+  "tabs": [],
+  "tableHeaders": [
+   "Customer",
+   "Location",
+   "Plan",
+   "Member Since",
+   "Plan $/mo",
+   "Status"
+  ],
+  "kpiLabels": [
+   "2,418 Total Customers 1,964 Active Members 146 At Risk 308 Prospects",
+   "2,418 Total Customers",
+   "2,418",
+   "Total Customers",
+   "1,964 Active Members",
+   "1,964",
+   "Active Members",
+   "146 At Risk",
+   "146",
+   "At Risk",
+   "308 Prospects",
+   "308",
+   "Prospects"
+  ],
+  "inputPlaceholders": [
+   "Search by name, plate, email, location, or plan…",
+   "Search pages, modules, actions…"
+  ],
+  "labels": [],
+  "chips": [],
+  "firstRows": [
+   "Couldn’t load records (Failed to fetch). Check your connection to the AI agent service."
+  ],
+  "modals": [],
+  "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Customers Search ⌘K Ask Shyne MG 2,418 Total Customers 1,964 Active Members 146 At Risk 308 Prospects Member Growth Last 12 months 24,816 ↑ +12.3% Jan Dec Plan Distribution Active members by plan Unlimited Plus 38% Unlimited 27% Pay Per Wash 22% Premium Detail 13% Risk Profile Customer health at a glance 81% LOW 13% MED 6% HIGH 1,961 healthy 146 at risk CRM · MEMBER DATABASE Customer List 2,418 members · 6 locations Retention Log Delete + Add Customer Filters Search CUSTOMER LOCATION PLAN MEMBER SINCE PLAN $/MO STATUS Couldn’t load records (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "url": "/emp-timeclock.html",
+ "docTitle": "Time Clock — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Employees›Time Clock"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Date",
+  "Employee",
+  "Location",
+  "Clock In",
+  "Clock Out",
+  "Hours",
+  "Shift"
+ ],
+ "kpiLabels": [
+  "18Today Punches 6On Clock Now 284This Week Hours 6Locations",
+  "18Today Punches",
+  "18",
+  "Today Punches",
+  "6On Clock Now",
+  "6",
+  "On Clock Now",
+  "284This Week Hours",
+  "284",
+  "This Week Hours",
+  "6Locations",
+  "Locations"
+ ],
+ "inputPlaceholders": [
+  "Search time clock…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2025-06-01 | Jose Martinez | MLAS | 7:00 AM | 3:00 PM | 8.0 | SHIFT-441",
+  " | 2025-06-01 | Lisa Nguyen | SSNB | 8:00 AM | 4:00 PM | 8.0 | SHIFT-440",
+  " | 2025-06-01 | Kevin Davis | MLAS | 3:00 PM | — | 4.5 | SHIFT-442"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys EMPLOYEES Time Clock Search ⌘K Ask Shyne MG 18 Today Punches 6 On Clock Now 284 This Week Hours 6 Locations Weekly Hours Last 12 months 3,408 ↑ +5.1% Jan Dec Hours by Location This week distribution MLAS 38% SSNB 29% Piscataway 22% Other 11% Punch Status Today overview 33% ON CLOCK 56% CLOCKED OUT 11% NO SHOW EMPLOYEES · TIME CLOCK Timeclock List 4 records Export + New Record Filters ▾ Search DATE EMPLOYEE LOCATION CLOCK IN CLOCK OUT HOURS SHIFT 2025-06-01 Jose Martinez MLAS 7:00 AM 3:00 PM 8.0 SHIFT-441 2025-06-01 Lisa Nguyen SSNB 8:00 AM 4:00 PM 8.0 SHIFT-440 2025-06-01 Kevin Davis MLAS 3:00 PM — 4.5 SHIFT-442 2025-05-31 Maria Smith Piscataway 7:00 AM 3:00 PM 8.0 SHIFT-438 Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

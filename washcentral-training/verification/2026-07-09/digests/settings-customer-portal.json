@@ -1,0 +1,90 @@
+{
+ "url": "/settings-customer-portal.html",
+ "docTitle": "Customer Portal — WashCentral Settings",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Customer Portal"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Portals View",
+  "Portal Overview",
+  "Branding & Appearance",
+  "Features & Modules",
+  "Access & Security",
+  "Content & Messaging",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Copy",
+  "← Settings",
+  "Preview Portal",
+  "Publish Changes",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "1,840 Registered Members 247 Logins Today 4m 32s Avg Session 98.4% Uptime (30 days) 68% Mobile Users",
+  "1,840 Registered Members",
+  "1,840",
+  "Registered Members",
+  "247 Logins Today",
+  "247",
+  "Logins Today",
+  "4m 32s Avg Session",
+  "4m 32s",
+  "Avg Session",
+  "98.4% Uptime (30 days)",
+  "98.4%",
+  "Uptime (30 days)",
+  "68% Mobile Users",
+  "68%",
+  "Mobile Users"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "● Live",
+  "Main Kiosk Portal v2.4.1",
+  "Main Kiosk Portal",
+  "v2.4.1",
+  "Configured",
+  "On",
+  "Set",
+  "Connected",
+  "Valid",
+  "Yes"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ Portals View Portal Overview Branding & Appearance Features & Modules Access & Security Content & Messaging AI Agent ▾ Marketing ▾ Integrations SETTINGS Customer Portal Search ⌘K Ask Shyne MG Main Kiosk Flow Portal ● Live Settings · Customer Portal · portalv2.wash.me/MLASALE Copy Main Kiosk Portal v2.4.1 ← Settings Preview Portal Publish Changes 1,840 Registered Members 247 Logins Today 4m 32s Avg Session 98.4% Uptime (30 days) 68% Mobile Users Branding & Appearance Logo, colors, dark mode, theme LOGO Configured PRIMARY COLOR #00a693 DARK MODE Enabled Features & Modules Toggle portal capabilities on/off ENABLED MODULES 7 of 9 WASH HISTORY On FAMILY PLAN On Access & Security Login methods, OTP, session rules LOGIN METHOD Phone & Email OTP REQUIRED On SESSION TIMEOUT 30 min Content & Messaging Welcome copy, footer, FAQs, links WELCOME MESSAGE Set CONTACT INFO Set FAQS 4 items Recent Portal Activity Last 24 hours Sarah Johnson updated billing info Today · 2:41 PM · Mobile Mike Chen upgraded to Annual Plan Today · 1:18 PM · Desktop 3 failed login attempts — tbrown@email.com Today · 11:04 AM · Mobile Lisa Park linked a family account Today · 9:22 AM · Mobile Portal settings published Yesterday · 4:55 PM · Admin View Portal Members → Porta"
+}

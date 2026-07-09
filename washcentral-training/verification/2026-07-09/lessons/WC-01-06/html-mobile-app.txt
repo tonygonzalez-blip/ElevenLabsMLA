@@ -1,0 +1,54 @@
+<div class="cc-map-section" style="margin-bottom:0;">
+      <div class="cc-map-hdr">
+        <div>
+          <div class="cc-map-eyebrow">Mobile App</div>
+          <div style="font-size:14px;font-weight:700;color:var(--cc-text);letter-spacing:-.02em;">Member app engagement</div>
+        </div>
+        <span class="cc-live-pill" style="font-size:9.5px;padding:3px 9px;"><span class="cc-live-dot"></span>Live</span>
+      </div>
+      <div class="cc-kpi-row" id="cc-mobile-kpis" style="grid-template-columns:repeat(4,1fr);">
+
+        <div class="cc-kpi teal">
+          <div class="cc-kpi-lbl">App Installs</div>
+          <div class="cc-kpi-num teal" id="mob-installs">42,000</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend up" id="mob-installs-tr">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg><span>8.4%</span>
+            </div>
+            <span style="font-size:10px;color:var(--cc-text3);">installed base</span>
+          </div>
+        </div>
+
+        <div class="cc-kpi blue">
+          <div class="cc-kpi-lbl">Weekly Active Members</div>
+          <div class="cc-kpi-num" id="mob-wam" style="color:var(--cc-blue,#007aff);">15,624</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend up" id="mob-wam-tr">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg><span>3.1%</span>
+            </div>
+            <span style="font-size:10px;color:var(--cc-text3);">last 7 days</span>
+          </div>
+        </div>
+
+        <div class="cc-kpi amber">
+          <div class="cc-kpi-lbl">Redemptions · 7d</div>
+          <div class="cc-kpi-num amber" id="mob-redemptions">17,968</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend" id="mob-redemptions-split" style="color:var(--cc-text2,#3c4657);">QR 12,578 · Kiosk 5,390</div>
+            <span style="font-size:10px;color:var(--cc-text3);">QR vs kiosk</span>
+          </div>
+        </div>
+
+        <div class="cc-kpi green">
+          <div class="cc-kpi-lbl">Push Opt-in Rate</div>
+          <div class="cc-kpi-num" id="mob-optin" style="color:var(--cc-green,#34c759);">68%</div>
+          <div class="cc-kpi-footer">
+            <div class="cc-kpi-trend up" id="mob-optin-tr">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg><span>1.2%</span>
+            </div>
+            <span style="font-size:10px;color:var(--cc-text3);">of installs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>

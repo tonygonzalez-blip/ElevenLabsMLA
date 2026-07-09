@@ -1,0 +1,195 @@
+{
+  "title": "WashCentral — Sign In",
+  "url": "https://demo.washcentral.com/login.html",
+  "logo": {
+    "tag": "IMG",
+    "text": "",
+    "alt": "WashCentral"
+  },
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "One platform for your entire car wash operation."
+    },
+    {
+      "tag": "H1",
+      "text": "Welcome back"
+    },
+    {
+      "tag": "H1",
+      "text": "Two-Factor Auth"
+    },
+    {
+      "tag": "H1",
+      "text": "Reset password"
+    },
+    {
+      "tag": "H1",
+      "text": "Check your email"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "lp-username",
+      "type": "text",
+      "name": "username",
+      "placeholder": "you@company.com",
+      "labelText": "Email",
+      "autocomplete": "email",
+      "value": ""
+    },
+    {
+      "id": "lp-password",
+      "type": "password",
+      "name": "password",
+      "placeholder": "••••••••",
+      "labelText": "Password",
+      "autocomplete": "current-password",
+      "value": ""
+    },
+    {
+      "id": "lp-code",
+      "type": "text",
+      "name": "customerCode",
+      "placeholder": "",
+      "labelText": "Tenant / Customer Code",
+      "autocomplete": "off",
+      "value": "(non-empty)"
+    },
+    {
+      "id": "",
+      "type": "checkbox",
+      "name": "",
+      "placeholder": "",
+      "labelText": "Remember me",
+      "autocomplete": null,
+      "value": "(non-empty)"
+    },
+    {
+      "id": "mfa-real-input",
+      "type": "text",
+      "name": "",
+      "placeholder": "",
+      "labelText": null,
+      "autocomplete": "one-time-code",
+      "value": ""
+    },
+    {
+      "id": "forgot-input",
+      "type": "text",
+      "name": "",
+      "placeholder": "your.username or you@example.com",
+      "labelText": "Username or Email",
+      "autocomplete": "username",
+      "value": ""
+    }
+  ],
+  "checkboxLabels": [
+    {
+      "id": "",
+      "label": "Remember me",
+      "checked": true
+    }
+  ],
+  "links": [
+    {
+      "text": "Skip to main content",
+      "href": "#main-content"
+    },
+    {
+      "text": "Forgot password?",
+      "href": "#"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "lp-pw-btn",
+      "text": "Show password",
+      "type": "button",
+      "title": null,
+      "aria": "Show password",
+      "cls": "lp-pw-btn"
+    },
+    {
+      "id": "",
+      "text": "Sign In",
+      "type": "submit",
+      "title": null,
+      "aria": null,
+      "cls": "lp-btn"
+    },
+    {
+      "id": "qa-btn",
+      "text": "Quick Access · mag",
+      "type": "button",
+      "title": null,
+      "aria": null,
+      "cls": ""
+    },
+    {
+      "id": "mfa-verify-btn",
+      "text": "Verify Code",
+      "type": "button",
+      "title": null,
+      "aria": null,
+      "cls": "lp-btn"
+    },
+    {
+      "id": "mfa-email-btn",
+      "text": "Can't access your app? Use email instead",
+      "type": "button",
+      "title": null,
+      "aria": null,
+      "cls": "mfa-link"
+    },
+    {
+      "id": "",
+      "text": "← Back to sign in",
+      "type": "button",
+      "title": null,
+      "aria": null,
+      "cls": "mfa-back"
+    },
+    {
+      "id": "",
+      "text": "Send Reset Link",
+      "type": "button",
+      "title": null,
+      "aria": null,
+      "cls": "lp-btn"
+    },
+    {
+      "id": "",
+      "text": "← Back to sign in",
+      "type": "button",
+      "title": null,
+      "aria": null,
+      "cls": "mfa-back"
+    }
+  ],
+  "cards": [
+    "Command Center Revenue, members, and uptime across every location in real time. CRM & Members Unified customer records, membership tiers, and support history. Operational Intelligence Connected analytics, marketing, and workflows across all sites.",
+    "Command Center Revenue, members, and uptime across every location in real time.",
+    "",
+    "Command Center Revenue, members, and uptime across every location in real time.",
+    "CRM & Members Unified customer records, membership tiers, and support history.",
+    "",
+    "CRM & Members Unified customer records, membership tiers, and support history.",
+    "Operational Intelligence Connected analytics, marketing, and workflows across all sites.",
+    "",
+    "Operational Intelligence Connected analytics, marketing, and workflows across all sites."
+  ],
+  "qaBtn": {
+    "id": "qa-btn",
+    "text": "Quick Access · mag",
+    "title": null
+  },
+  "eyeToggle": {
+    "tag": "BUTTON",
+    "cls": "lp-pw-btn",
+    "aria": "Show password",
+    "title": null,
+    "text": ""
+  },
+  "bodyText": "One platform for your entire car wash operation. Revenue intelligence, CRM, marketing, and operations — unified across every location. Command Center Revenue, members, and uptime across every location in real time. CRM & Members Unified customer records, membership tiers, and support history. Operational Intelligence Connected analytics, marketing, and workflows across all sites. v26.0628.001 Welcome back Sign in to your WashCentral account. Email Password Tenant / Customer Code Remember me Forgot password? Sign In"
+}

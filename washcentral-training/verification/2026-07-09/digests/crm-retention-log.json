@@ -1,0 +1,78 @@
+{
+ "url": "/crm-retention-log.html",
+ "docTitle": "Customer Retention Log — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›Retention Log"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Prepaid Books",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Search",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Date",
+  "Customer",
+  "Location",
+  "Event Type",
+  "Outcome"
+ ],
+ "kpiLabels": [
+  "142 Total Events 38 Saves This Month 67 Cancellations 4.2% Churn Rate",
+  "142 Total Events",
+  "142",
+  "Total Events",
+  "38 Saves This Month",
+  "38",
+  "Saves This Month",
+  "67 Cancellations",
+  "67",
+  "Cancellations",
+  "4.2% Churn Rate",
+  "4.2%",
+  "Churn Rate"
+ ],
+ "inputPlaceholders": [
+  "Search by customer, date, or outcome…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Saved",
+  "Cancelled",
+  "Downgraded",
+  "At Risk"
+ ],
+ "firstRows": [
+  " | Mar 24, 2026 | Sarah Mitchell | Fort Lauderdale | Saved | Offered discount",
+  " | Mar 22, 2026 | Robert Chen | Miami North | Cancelled | Non-recoverable",
+  " | Mar 20, 2026 | Jennifer Wood | Orlando Central | Downgraded | Plan reduction"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Retention Log Search ⌘K Ask Shyne MG 142 Total Events 38 Saves This Month 67 Cancellations 4.2% Churn Rate Retention Rate Trend Last 12 months 72% ↓ -2.1% Jan Dec Event Type Breakdown by outcome category Saved 46% Cancelled 39% Downgraded 10% At Risk 5% Save Outcomes Resolution breakdown at a glance 46% SAVED 39% CANCELLED 15% DOWNGRADED 38 saved 67 cancelled CRM · RETENTION LOG Retention Log 142 events · 38 saves this month Filters Search DATE CUSTOMER LOCATION EVENT TYPE OUTCOME Mar 24, 2026 Sarah Mitchell Fort Lauderdale Saved Offered discount Mar 22, 2026 Robert Chen Miami North Cancelled Non-recoverable Mar 20, 2026 Jennifer Wood Orlando Central Downgraded Plan reduction Mar 18, 2026 David Thompson Tampa West Saved Credited account Mar 16, 2026 Patricia Rodriguez Fort Lauderdale Cancelled Non-recoverable Mar 14, 2026 Michael Anderson Miami North At Risk Follow-up scheduled ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

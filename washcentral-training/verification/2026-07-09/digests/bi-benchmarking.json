@@ -1,0 +1,87 @@
+{
+ "url": "/bi-benchmarking.html",
+ "docTitle": "Industry Benchmarking — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Intelligence›Benchmarking"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Export Report",
+  "Ask Shyne",
+  "MG",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location",
+  "Attach Rate",
+  "Monthly Churn",
+  "Visits/Member",
+  "ATV",
+  "Revenue/Bay/Day",
+  "Overall Score"
+ ],
+ "kpiLabels": [
+  "6 of 8 Metrics Above Regional Avg #2 Regional Rank (of 48 Operators) Top 8% Percentile Overall Apr 30, 2026 Data Last Updated",
+  "6 of 8 Metrics Above Regional Avg",
+  "6 of 8",
+  "Metrics Above Regional Avg",
+  "#2 Regional Rank (of 48 Operators)",
+  "#2",
+  "Regional Rank (of 48 Operators)",
+  "Top 8% Percentile Overall",
+  "Top 8%",
+  "Percentile Overall",
+  "Apr 30, 2026 Data Last Updated",
+  "Apr 30, 2026",
+  "Data Last Updated"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "↑ Above Avg",
+  "→ On Track",
+  "★ Excellent"
+ ],
+ "firstRows": [
+  "Fort Lauderdale | 74% ✓ | 6.2% ✓ | 2.4× ✓ | $26.40 ✓ | $920 ✓ | 94/100",
+  "Miami North | 71% ✓ | 7.1% ✓ | 2.2× ✓ | $25.10 ✓ | $870 ✓ | 88/100",
+  "Boca Raton | 69% ✓ | 7.8% | 2.1× | $24.80 | $842 | 82/100"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting INTELLIGENCE Benchmarking Search ⌘K Export Report Ask Shyne MG 6 of 8 Metrics Above Regional Avg #2 Regional Rank (of 48 Operators) Top 8% Percentile Overall Apr 30, 2026 Data Last Updated Your Performance Regional Average (Southeast, 48 operators) Top Quartile Target PERFORMANCE VS. INDUSTRY · Q1 2026 Where you stand METRIC COMPARISON BAR YOURS REGIONAL AVG STATUS Membership Attach Rate % of visitors who join a plan 68% 68% Avg: 54% Top: 78% ↑ Above Avg Monthly Churn Rate Members lost per month 8.1% 8.1% Avg: 9.2% Top: 5.8% ↑ Above Avg Avg Transaction Value Revenue per wash event $24.80 $24.80 Avg: $22.40 Top: $28.50 ↑ Above Avg Visits per Member / Month Wash frequency 2.1× 2.1× Avg: 1.8× Top: 2.8× → On Track Revenue per Bay / Day Throughput efficiency $840 $840 Avg: $720 Top: $1,040 ↑ Above Avg Customer Acquisition Cost Cost to acquire 1 member $18.40 $18.40 Avg: $22.10 Top: $12.80 → On Track Net Promoter Score Customer loyalty index 64 64 Avg: 38 Top: 72 ★ Excellent Avg Membership Duration Months before cancellation 14.2 mo 14.2 mo Avg: 11.8 mo"
+}

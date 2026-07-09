@@ -1,0 +1,88 @@
+{
+ "url": "/settings-departments.html",
+ "docTitle": "Departments",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Departments"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Account Information",
+  "Account Types",
+  "Profile Types",
+  "Profit Centers",
+  "Departments",
+  "Categories",
+  "Dayforce Settings",
+  "Policy Category",
+  "Forms Category",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Department",
+  "Active",
+  "Updated By",
+  "Updated"
+ ],
+ "kpiLabels": [
+  "4Total Departments 4Active 0Inactive",
+  "4Total Departments",
+  "4",
+  "Total Departments",
+  "4Active",
+  "Active",
+  "0Inactive",
+  "0",
+  "Inactive"
+ ],
+ "inputPlaceholders": [
+  "Search departments…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Yes"
+ ],
+ "firstRows": [
+  "DETAIL | Yes | Micrologic | 2023-04-11 17:24",
+  "LUBE | Yes | Micrologic | 2023-04-11 17:25",
+  "STORE | Yes | Micrologic | 2023-04-11 17:26"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Account Information Account Types Profile Types Profit Centers Departments Categories Dayforce Settings Policy Category Forms Category Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Departments Search ⌘K Ask Shyne MG 4 Total Departments 4 Active 0 Inactive SETTINGS · DEPARTMENTS Departments List 4 records + New Record DEPARTMENT ACTIVE UPDATED BY UPDATED DETAIL Yes Micrologic 2023-04-11 17:24 LUBE Yes Micrologic 2023-04-11 17:25 STORE Yes Micrologic 2023-04-11 17:26 WASH Yes Micrologic 2023-04-11 17:27 ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

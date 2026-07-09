@@ -1,0 +1,72 @@
+{
+ "url": "/incident-reports.html",
+ "docTitle": "Incident Reports — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Incident Reports›All Reports"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Report",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Report #",
+  "Type",
+  "Location",
+  "Date",
+  "Status"
+ ],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search incident reports…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Customer Injury",
+  "Open",
+  "Employee Injury",
+  "Property Damage",
+  "Vehicle Damage",
+  "Under Review",
+  "Wash Equipment Damage"
+ ],
+ "firstRows": [
+  "IR-CI-0001 | Customer Injury | MLAS | 2026-06-28 | Open",
+  "IR-EI-0001 | Employee Injury | MLAS | 2026-06-27 | Open",
+  "IR-P-0001 | Property Damage | MLAS | 2026-06-30 | Open"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports INCIDENT REPORTS All Reports Search ⌘K Ask Shyne MG OPERATIONS · INCIDENT REPORTS Incident Reports 5 records + New Report Filters ▾ Search REPORT # TYPE LOCATION DATE STATUS IR-CI-0001 Customer Injury MLAS 2026-06-28 Open IR-EI-0001 Employee Injury MLAS 2026-06-27 Open IR-P-0001 Property Damage MLAS 2026-06-30 Open IR-V-0001 Vehicle Damage MLAS 2026-06-29 Under Review IR-WED-0001 Wash Equipment Damage SSNB 2026-07-01 Open Showing 1–5 of 5 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

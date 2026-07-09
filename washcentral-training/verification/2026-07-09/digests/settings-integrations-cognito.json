@@ -1,0 +1,81 @@
+{
+ "url": "/settings-integrations-cognito.html",
+ "docTitle": "Amazon Cognito — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Amazon Cognito"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Test Connection",
+  "Edit Configuration",
+  "Settings",
+  "Instructions",
+  "Copy",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Settings",
+  "Instructions",
+  "Copy"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Not setConnection —Issuer —Client ID 3Scopes",
+  "Not setConnection",
+  "Not set",
+  "Connection",
+  "—Issuer",
+  "—",
+  "Issuer",
+  "—Client ID",
+  "Client ID",
+  "3Scopes",
+  "3",
+  "Scopes"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "SSO Integration",
+  "⚠ Not Configured",
+  "Authentication AWS PKCE / OAuth 2.0",
+  "Authentication",
+  "AWS",
+  "PKCE / OAuth 2.0"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Amazon Cognito Search ⌘K Ask Shyne MG Amazon Cognito SSO Integration ⚠ Not Configured Single Sign-On · Settings Authentication AWS PKCE / OAuth 2.0 Test Connection Edit Configuration Not set Connection — Issuer — Client ID 3 Scopes Settings Instructions CREDENTIALS CLIENT SECRET Not set GENERAL ENABLED Yes ADMIN NOTES — CONNECTION CLIENT ID — ISSUER (DISCOVERY BASE) — PROVISIONING ALLOWED EMAIL DOMAINS — JIT DEFAULT ROLE agent MAPPING CLAIM -> FIELD MAPPING email → email, name → name AUTH OIDC SCOPES openid, email, profile SESSION TTL (S) 28800 ENFORCE SSO (DISABLE PASSWORDS) No REDIRECT URI ADD THIS TO YOUR COGNITO APP CLIENT → ALLOWED CALLBACK URLS https://agentapiqa.washcentral.com/v1/auth/sso/callback Copy Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

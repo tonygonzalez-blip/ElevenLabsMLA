@@ -1,0 +1,101 @@
+{
+ "url": "/settings-ai-agent-knowledge.html",
+ "docTitle": "AI Agent Knowledge Base — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›AI Agent · Knowledge Base"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Overview",
+  "Configuration",
+  "Knowledge Base",
+  "Channels & Deployment",
+  "Conversations",
+  "Escalations",
+  "Analytics",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Re-index",
+  "+ Add Article",
+  "Import URL",
+  "Search",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Import URL",
+  "Search"
+ ],
+ "tableHeaders": [
+  "Title",
+  "Category",
+  "Status",
+  "Chunks",
+  "Updated",
+  "Actions"
+ ],
+ "kpiLabels": [
+  "0Articles 0Indexed 0Processing 0Vector Chunks 0Categories Today 4:39 PMLast Sync",
+  "0Articles",
+  "0",
+  "Articles",
+  "0Indexed",
+  "Indexed",
+  "0Processing",
+  "Processing",
+  "0Vector Chunks",
+  "Vector Chunks",
+  "0Categories",
+  "Categories",
+  "Today 4:39 PMLast Sync",
+  "Today 4:39 PM",
+  "Last Sync"
+ ],
+ "inputPlaceholders": [
+  "https://expresswashconcepts.com/faq",
+  "Search articles…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Upload Documents",
+  "Add from URL"
+ ],
+ "chips": [
+  "pgvector · text-embedding-3-small Tenant: ewc-demo ● Synced",
+  "pgvector · text-embedding-3-small",
+  "Tenant: ewc-demo",
+  "● Synced"
+ ],
+ "firstRows": [
+  "No articles yet. Click '+ Add Article' or import a URL above."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Overview Configuration Knowledge Base Channels & Deployment Conversations Escalations Analytics Marketing ▾ Integrations SETTINGS AI Agent · Knowledge Base Search ⌘K Ask Shyne MG Knowledge Base Settings · AI Agent · Documents the agent searches to answer customer questions. pgvector · text-embedding-3-small Tenant: ewc-demo ● Synced Re-index + Add Article 0 Articles 0 Indexed 0 Processing 0 Vector Chunks 0 Categories Today 4:39 PM Last Sync ADD KNOWLEDGE UPLOAD DOCUMENTS Drop files or click to browse PDF, DOCX, TXT, MD, CSV · chunked & embedded automatically ADD FROM URL The crawler imports the page text, splits it into chunks, and embeds it for retrieval. Import URL AI AGENT · RAG SOURCES Articles 0 documents · 0 chunks Search TITLE CATEGORY STATUS CHUNKS UPDATED ACTIONS No articles yet. Click '+ Add Article' or import a URL above. BY CATEGORY No articles yet. RETRIEVAL HEALTH Analytics available after first customer conversations. Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

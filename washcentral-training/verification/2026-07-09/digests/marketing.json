@@ -1,0 +1,73 @@
+{
+ "url": "/marketing.html",
+ "docTitle": "Campaigns",
+ "h1": [],
+ "h2": [
+  "Queued journeys",
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Marketing›Campaigns"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters",
+  "Search",
+  "Launch campaign",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Launch campaign",
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Campaign",
+  "Audience",
+  "Channel",
+  "Conv.",
+  "Revenue"
+ ],
+ "kpiLabels": [
+  "Failed Billing RecoveryToday 2:00 PM",
+  "VIP Thank YouToday 6:00 PM",
+  "21-Day Win BackTomorrow 9:00 AM"
+ ],
+ "inputPlaceholders": [
+  "Search by campaign name, audience, channel…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Spring Unlimited Push | 8,420 | Email + SMS | 15.2% | $29,880",
+  "30-Day Win Back | 3,140 | SMS | 18.8% | $21,100",
+  "Tire Shine Cross-sell | 6,890 | POS Prompt | 7.4% | $14,220"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History Campaigns MARKETING Campaigns Search ⌘K Ask Shyne MG SEARCH CAMPAIGNS Filters Search Campaign List ACTIVE AND SCHEDULED CAMPAIGNS Launch campaign CAMPAIGN AUDIENCE CHANNEL CONV. REVENUE Spring Unlimited Push 8,420 Email + SMS 15.2% $29,880 30-Day Win Back 3,140 SMS 18.8% $21,100 Tire Shine Cross-sell 6,890 POS Prompt 7.4% $14,220 ROWS PER PAGE: 25 50 100 25 1–3 of 3 ‹ 1 › UPCOMING SENDS Queued journeys Failed Billing Recovery Today 2:00 PM VIP Thank You Today 6:00 PM 21-Day Win Back Tomorrow 9:00 AM Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

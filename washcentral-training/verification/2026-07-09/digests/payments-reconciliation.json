@@ -1,0 +1,84 @@
+{
+ "url": "/payments-reconciliation.html",
+ "docTitle": "Payments Reconciliation",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Payments Reconciliation"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters",
+  "Search",
+  "Resolve batch",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Resolve batch",
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Batch",
+  "Location",
+  "Expected",
+  "Settled",
+  "Variance",
+  "Status"
+ ],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search by batch, location, status…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Balanced",
+  "Review"
+ ],
+ "firstRows": [
+  "BT-10392 | Fort Lauderdale | $18,420 | $18,420 | $0 | Balanced",
+  "BT-10393 | Miami North | $14,880 | $14,720 | $160 | Review",
+  "BT-10394 | Orlando Central | $16,210 | $16,210 | $0 | Balanced"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting Payments TRANSACTIONS Payments Reconciliation Search ⌘K Ask Shyne MG SEARCH PAYMENTS Filters Search Payment List RECONCILIATION AND SETTLEMENTS Resolve batch BATCH LOCATION EXPECTED SETTLED VARIANCE STATUS BT-10392 Fort Lauderdale $18,420 $18,420 $0 Balanced BT-10393 Miami North $14,880 $14,720 $160 Review BT-10394 Orlando Central $16,210 $16,210 $0 Balanced ROWS PER PAGE: 25 50 100 25 1–3 of 3 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active /* ── Column sorting ── */ (function(){ document.querySelectorAll('table').forEach(function(tbl){ var ths = tbl.querySelectorAll('thead th.sortable'); if(!ths.length) return; var tbody = tbl.querySelector('tbody'); if(!tbody) return; var sortCol=-1, sortAsc=true; function cellVal(tr, idx, type){ var td = tr.querySelectorAll('td')[idx]; var raw = td ? td.textContent.trim() : ''; if(raw===''||raw==='—'||raw==='N/A') return (type==='num'"
+}

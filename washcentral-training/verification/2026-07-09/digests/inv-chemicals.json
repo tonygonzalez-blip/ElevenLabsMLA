@@ -1,0 +1,79 @@
+{
+ "url": "/inv-chemicals.html",
+ "docTitle": "Chemical & Supply Tracking — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Chemicals & Supplies"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Item / SKU",
+  "Category",
+  "Stock Level",
+  "Par / Unit",
+  "Supplier",
+  "Unit Cost",
+  "Status"
+ ],
+ "kpiLabels": [
+  "84Total SKUs 12Low Stock 3Out of Stock $14,820Value on Hand",
+  "84Total SKUs",
+  "84",
+  "Total SKUs",
+  "12Low Stock",
+  "12",
+  "Low Stock",
+  "3Out of Stock",
+  "3",
+  "Out of Stock",
+  "$14,820Value on Hand",
+  "$14,820",
+  "Value on Hand"
+ ],
+ "inputPlaceholders": [
+  "Search chemicals & supplies...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "In Stock",
+  "Low Stock",
+  "Critical",
+  "Out of Stock"
+ ],
+ "firstRows": [
+  " | Triple Foam Polish (SKU-0041) | Chemical | 36 gal | 25 gal | ChemMax Pro | $18.40/gal | In Stock",
+  " | Tire Shine Dressing (SKU-0044) | Chemical | 7 gal | 20 gal | AutoShine Co. | $22.10/gal | Low Stock",
+  " | Pre-Soak Detergent (SKU-0012) | Chemical | 2 gal | 30 gal | ChemMax Pro | $12.75/gal | Critical"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders INVENTORY Chemicals & Supplies Search ⌘K Ask Shyne MG 84 Total SKUs 12 Low Stock 3 Out of Stock $14,820 Value on Hand Chemical Usage Last 12 months $14.8k ↑ +6% Jan Dec SKUs by Category By inventory category Chemical 52% Supply 28% Equipment 12% Safety 8% Stock Health In stock vs low vs out 70% IN STOCK 14% LOW 4% OUT INVENTORY · CHEMICALS Chemical & Supply List 84 records · stock levels & supplier details + New Record Export Filters ▾ Search ITEM / SKU CATEGORY STOCK LEVEL PAR / UNIT SUPPLIER UNIT COST STATUS Triple Foam Polish (SKU-0041) Chemical 36 gal 25 gal ChemMax Pro $18.40/gal In Stock Tire Shine Dressing (SKU-0044) Chemical 7 gal 20 gal AutoShine Co. $22.10/gal Low Stock Pre-Soak Detergent (SKU-0012) Chemical 2 gal 30 gal ChemMax Pro $12.75/gal Critical Spot-Free Rinse Aid (SKU-0028) Chemical 44 gal 20 gal PureRinse LLC $31.00/gal In Stock Wash Bay Brushes Set (SKU-0071) Supply 4 sets 8 sets EquipDirect $148.00/set Low Stock Microfiber Towels Case (SKU-0083) Supply 18 cs 10 cs CleanCo $42.50/cs In Stock SDS Binder / Safety Kit (SKU-0091) Safety 0 kits 2 kits SafetyFirst $89.00/kit Out of Stock High-Pressure Nozzle Kit (SKU-0067) Equipment 6 kits 4 kits EquipDirect $210.00/kit In Stock Showing 1–8 of 8 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key "
+}

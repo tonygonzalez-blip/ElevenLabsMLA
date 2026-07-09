@@ -1,0 +1,1553 @@
+[
+ {
+  "page": "command-center.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Command Center — WashCentral"
+ },
+ {
+  "page": "dashboard-executive.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Executive Dashboard"
+ },
+ {
+  "page": "mkt-campaigns.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Marketing Campaigns — WashCentral"
+ },
+ {
+  "page": "crm-customers.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Customers — WashCentral"
+ },
+ {
+  "page": "sales-transactions.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Tickets"
+ },
+ {
+  "page": "inv-items.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Inventory Items — WashCentral"
+ },
+ {
+  "page": "emp-employees.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Employees — WashCentral"
+ },
+ {
+  "page": "maint-issues.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Maintenance Issues — WashCentral"
+ },
+ {
+  "page": "portal-members.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Portal Members — WashCentral"
+ },
+ {
+  "page": "support-tickets.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Support Tickets — WashCentral"
+ },
+ {
+  "page": "billing-usage.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Usage & Billing — WashCentral"
+ },
+ {
+  "page": "lms-home.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "My Dashboard — WashCentral Academy"
+ },
+ {
+  "page": "reports.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Reports"
+ },
+ {
+  "page": "settings.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Settings — WashCentral"
+ },
+ {
+  "page": "forecast-overview.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Forecasting — WashCentral"
+ },
+ {
+  "page": "payments-reconciliation.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Payments Reconciliation"
+ },
+ {
+  "page": "agent-console.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Agent Console — WashCentral"
+ },
+ {
+  "page": "ml-command-center.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Micrologic NOC — Enterprise Command Center"
+ },
+ {
+  "page": "site-detail.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Site Detail — Morris Plains, NJ — WashCentral"
+ },
+ {
+  "page": "audit-log.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Audit Log — WashCentral"
+ },
+ {
+  "page": "settings-account-info.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Account Information"
+ },
+ {
+  "page": "settings-account-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Account Types"
+ },
+ {
+  "page": "settings-profile-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Profile Types"
+ },
+ {
+  "page": "settings-profit-centers.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Profit Centers"
+ },
+ {
+  "page": "settings-departments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Departments"
+ },
+ {
+  "page": "settings-categories.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Categories"
+ },
+ {
+  "page": "settings-dashboard-settings.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Dashboards"
+ },
+ {
+  "page": "settings-dayforce-settings.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Dayforce Settings"
+ },
+ {
+  "page": "settings-policy-category.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Policy Categories"
+ },
+ {
+  "page": "settings-forms-category.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Forms Categories"
+ },
+ {
+  "page": "settings-locations.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Locations"
+ },
+ {
+  "page": "settings-location-groups.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Location Groups"
+ },
+ {
+  "page": "settings-location-sub-brand.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Sub-Brands"
+ },
+ {
+  "page": "settings-location-payment-approval.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Location Payment Credential Approval"
+ },
+ {
+  "page": "settings-services.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Services"
+ },
+ {
+  "page": "settings-service-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Service Types"
+ },
+ {
+  "page": "settings-service-groups.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Service Groups"
+ },
+ {
+  "page": "settings-detail-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Detail Types"
+ },
+ {
+  "page": "settings-rewards.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Rewards"
+ },
+ {
+  "page": "settings-loyalty-discount-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Loyalty Discount Types"
+ },
+ {
+  "page": "settings-payment-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Payment Types"
+ },
+ {
+  "page": "settings-discounts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Discounts"
+ },
+ {
+  "page": "settings-discount-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Discount Types"
+ },
+ {
+  "page": "settings-surcharges.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Surcharges"
+ },
+ {
+  "page": "settings-surcharge-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Surcharge Types"
+ },
+ {
+  "page": "settings-payout-percentage.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Payout Percentage"
+ },
+ {
+  "page": "settings-tax-rates.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Tax Rates"
+ },
+ {
+  "page": "settings-gl-codes.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "GL Codes"
+ },
+ {
+  "page": "settings-gl-account-codes.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "GL Account Codes"
+ },
+ {
+  "page": "settings-hardware-terminals.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Terminals"
+ },
+ {
+  "page": "settings-screen-layout.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Screen Layout"
+ },
+ {
+  "page": "settings-system-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "System Types"
+ },
+ {
+  "page": "settings-lube-buttons.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Lube Buttons"
+ },
+ {
+  "page": "settings-lube-checklists.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Lube Checklists"
+ },
+ {
+  "page": "settings-button-groups.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Button Groups"
+ },
+ {
+  "page": "settings-button-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Button Types"
+ },
+ {
+  "page": "settings-cashier-buttons.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Cashier Buttons"
+ },
+ {
+  "page": "settings-greeter-buttons.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Greeter Buttons"
+ },
+ {
+  "page": "settings-image-design.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Image Design"
+ },
+ {
+  "page": "settings-colors.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Colors"
+ },
+ {
+  "page": "settings-templates.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Email Templates"
+ },
+ {
+  "page": "settings-macros.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Macros"
+ },
+ {
+  "page": "settings-macro-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Macro Types"
+ },
+ {
+  "page": "settings-macro-detail-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Macro Detail Types"
+ },
+ {
+  "page": "settings-kiosk-flows.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Kiosk Screen Flows"
+ },
+ {
+  "page": "settings-system-users.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "System Users"
+ },
+ {
+  "page": "settings-user-levels.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "User Levels"
+ },
+ {
+  "page": "settings-security-level.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Security Levels"
+ },
+ {
+  "page": "settings-blacklisted.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Blacklisted Plates"
+ },
+ {
+  "page": "settings-cancellation-reasons.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Cancellation Reasons"
+ },
+ {
+  "page": "settings-refund-reasons.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Refund Reasons"
+ },
+ {
+  "page": "settings-rewash-reasons.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Rewash Reasons"
+ },
+ {
+  "page": "settings-event-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Event Types"
+ },
+ {
+  "page": "settings-transaction-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Transaction Types"
+ },
+ {
+  "page": "settings-issue-status-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Issue Status Types"
+ },
+ {
+  "page": "settings-prepaid-book-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Prepaid Book Types"
+ },
+ {
+  "page": "settings-prepaid-book-type-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Prepaid Book Type Types"
+ },
+ {
+  "page": "settings-vip-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Membership Plans"
+ },
+ {
+  "page": "settings-vip-monthly-types.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "VIP Monthly Types"
+ },
+ {
+  "page": "settings-vip-charge-frequency.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "VIP Charge Frequency"
+ },
+ {
+  "page": "settings-vip-account-service.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "VIP Account Service"
+ },
+ {
+  "page": "settings-vip-loyalty-discounts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "VIP Account Loyalty Discounts"
+ },
+ {
+  "page": "settings-unlimited-promotions.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Unlimited Promotions"
+ },
+ {
+  "page": "settings-promotional-upgrades.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Promotional Upgrades"
+ },
+ {
+  "page": "settings-task-scheduler.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Task Scheduler"
+ },
+ {
+  "page": "settings-task-parameters.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Task Parameters"
+ },
+ {
+  "page": "settings-mass-sms-log.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Mass SMS Log"
+ },
+ {
+  "page": "settings-customer-portal.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Customer Portal — WashCentral Settings"
+ },
+ {
+  "page": "settings-customer-portal-branding.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Branding & Appearance — Customer Portal — WashCentral"
+ },
+ {
+  "page": "settings-customer-portal-features.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Features & Modules — Customer Portal — WashCentral"
+ },
+ {
+  "page": "settings-customer-portal-access.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Access & Security — Customer Portal — WashCentral"
+ },
+ {
+  "page": "settings-customer-portal-content.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Content & Messaging — Customer Portal — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent-config.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent Configuration — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent-knowledge.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent Knowledge Base — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent-channels.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent Channels & Deployment — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent-conversations.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent Conversations — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent-escalations.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent Escalations — WashCentral"
+ },
+ {
+  "page": "settings-ai-agent-analytics.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "AI Agent Analytics — WashCentral"
+ },
+ {
+  "page": "settings-mobile-branding.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Mobile App Branding — WashCentral"
+ },
+ {
+  "page": "settings-mobile-features.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Mobile App Features & Games — WashCentral"
+ },
+ {
+  "page": "settings-mobile-content.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Mobile Content Blocks — WashCentral"
+ },
+ {
+  "page": "settings-mobile-push.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Push Campaigns — WashCentral"
+ },
+ {
+  "page": "mkt-referral-program.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Referral Programs — WashCentral"
+ },
+ {
+  "page": "settings-integrations-entra.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Microsoft Entra ID — WashCentral"
+ },
+ {
+  "page": "settings-integrations-google.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Google Workspace SSO — WashCentral"
+ },
+ {
+  "page": "settings-integrations-okta.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Okta — WashCentral"
+ },
+ {
+  "page": "settings-integrations-cognito.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Amazon Cognito — WashCentral"
+ },
+ {
+  "page": "settings-integrations-scim.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "SCIM Provisioning — WashCentral"
+ },
+ {
+  "page": "settings-integrations-sage.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Sage Accounting — WashCentral"
+ },
+ {
+  "page": "settings-integrations-quickbooks.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "QuickBooks Online — WashCentral"
+ },
+ {
+  "page": "settings-integrations-zoho.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Zoho Desk — WashCentral"
+ },
+ {
+  "page": "support.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Support Queue"
+ },
+ {
+  "page": "locations.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Locations Overview"
+ },
+ {
+  "page": "marketing.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Campaigns"
+ },
+ {
+  "page": "dashboard-downsells.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Downsells"
+ },
+ {
+  "page": "dashboard-executive-revenue.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Revenue Detail"
+ },
+ {
+  "page": "dashboard-memberships.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Memberships"
+ },
+ {
+  "page": "qa-dashboard.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Sales Coaching Dashboard — WashCentral"
+ },
+ {
+  "page": "game-tasks.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Challenges — WashCentral"
+ },
+ {
+  "page": "mobile-users.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Mobile App Users — WashCentral"
+ },
+ {
+  "page": "sched-appointments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Appointments — WashCentral"
+ },
+ {
+  "page": "incident-reports.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Incident Reports — WashCentral"
+ },
+ {
+  "page": "dashboard-location-summary.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Location Summary Dashboard — WashCentral"
+ },
+ {
+  "page": "dashboard-gamification.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Gamification Dashboard — WashCentral"
+ },
+ {
+  "page": "dashboard-marketing.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Marketing Dashboard"
+ },
+ {
+  "page": "dashboard-memberships-subscribers.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Subscribers"
+ },
+ {
+  "page": "dashboard-online-sales.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Online Sales"
+ },
+ {
+  "page": "dashboard-live-conversion.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Live Conversion"
+ },
+ {
+  "page": "dashboard-retail.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Retail Customers"
+ },
+ {
+  "page": "mkt-report-campaigns.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Campaign Performance Report — WashCentral"
+ },
+ {
+  "page": "mkt-report-segments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Segment Response Analysis — WashCentral"
+ },
+ {
+  "page": "mkt-report-offers.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Offer & Promotion Effectiveness — WashCentral"
+ },
+ {
+  "page": "mkt-report-acquisition.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Member Acquisition by Source — WashCentral"
+ },
+ {
+  "page": "mkt-report-winback.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Win-Back & Re-engagement Report — WashCentral"
+ },
+ {
+  "page": "bi-overview.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Business Intelligence — WashCentral"
+ },
+ {
+  "page": "bi-revenue.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Revenue Intelligence — WashCentral"
+ },
+ {
+  "page": "bi-benchmarking.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Industry Benchmarking — WashCentral"
+ },
+ {
+  "page": "mkt-churn.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Churn Intelligence — WashCentral"
+ },
+ {
+  "page": "mkt-ltv.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "LTV Intelligence — WashCentral"
+ },
+ {
+  "page": "mkt-online-presence.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Online Presence — WashCentral"
+ },
+ {
+  "page": "mkt-automation.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Marketing Automation — WashCentral"
+ },
+ {
+  "page": "mkt-smartlinks.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "SmartLinks — WashCentral"
+ },
+ {
+  "page": "mkt-segments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Customer Segments — WashCentral"
+ },
+ {
+  "page": "mkt-offers.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Offers & Promotions — WashCentral"
+ },
+ {
+  "page": "mkt-email-templates.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Email Templates — WashCentral"
+ },
+ {
+  "page": "mkt-paid-media.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Paid Media — WashCentral"
+ },
+ {
+  "page": "mkt-deliverability.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Email Deliverability — WashCentral"
+ },
+ {
+  "page": "mkt-referrals.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Referral Program — WashCentral"
+ },
+ {
+  "page": "mkt-sms-templates.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "SMS Templates — WashCentral"
+ },
+ {
+  "page": "mkt-rcs-templates.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "RCS Templates — WashCentral"
+ },
+ {
+  "page": "mkt-campaigns-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Edit Marketing Campaign — WashCentral"
+ },
+ {
+  "page": "crm-gift-cards.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Gift Cards — WashCentral"
+ },
+ {
+  "page": "crm-house-accounts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "House Accounts — WashCentral"
+ },
+ {
+  "page": "crm-prepaid-books.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Prepaid Books — WashCentral"
+ },
+ {
+  "page": "crm-vehicles.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Vehicles — WashCentral"
+ },
+ {
+  "page": "crm-retail-customers.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Retail Customers — WashCentral"
+ },
+ {
+  "page": "crm-bundles.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Bundles — WashCentral"
+ },
+ {
+  "page": "crm-retention-log.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Customer Retention Log — WashCentral"
+ },
+ {
+  "page": "crm-customer-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Edit Customer"
+ },
+ {
+  "page": "sales-transaction-details.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Ticket Details"
+ },
+ {
+  "page": "sales-payments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Sales Payments"
+ },
+ {
+  "page": "txn-payouts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Payouts — WashCentral"
+ },
+ {
+  "page": "txn-shifts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Shifts"
+ },
+ {
+  "page": "txn-declined.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Declined Charges"
+ },
+ {
+  "page": "txn-gift-transactions.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Gift Card Transactions — WashCentral"
+ },
+ {
+  "page": "txn-house-transactions.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "House Account Transactions"
+ },
+ {
+  "page": "inv-batches.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Inventory Batches — WashCentral"
+ },
+ {
+  "page": "inv-adjustments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Inventory Adjustments — WashCentral"
+ },
+ {
+  "page": "inv-vendors.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Vendors — WashCentral"
+ },
+ {
+  "page": "inv-chemicals.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Chemical & Supply Tracking — WashCentral"
+ },
+ {
+  "page": "inv-purchase-orders.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Purchase Orders — WashCentral"
+ },
+ {
+  "page": "inv-items-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Edit Inventory Items — WashCentral"
+ },
+ {
+  "page": "emp-roles.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Employee Roles — WashCentral"
+ },
+ {
+  "page": "emp-schedules.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Employee Schedules — WashCentral"
+ },
+ {
+  "page": "emp-timeclock.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Time Clock — WashCentral"
+ },
+ {
+  "page": "emp-user-groups.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "User Groups — WashCentral"
+ },
+ {
+  "page": "qa-scripts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Scoring Scripts — WashCentral"
+ },
+ {
+  "page": "qa-conversations.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Conversations — WashCentral"
+ },
+ {
+  "page": "game-leaderboard.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Leaderboard — WashCentral"
+ },
+ {
+  "page": "game-targets.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Performance Targets — WashCentral"
+ },
+ {
+  "page": "game-prizes.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Prizes — WashCentral"
+ },
+ {
+  "page": "game-recognition.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "game-surveys.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "emp-employees-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "maint-schedule.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "maint-equipment.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "maint-checklist.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "maint-parts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "sched-services.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "sched-resources.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "sched-hours.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "sched-messaging.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "sched-payments.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "sched-reports.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "maint-issues-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "portal-book.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "portal-messages.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "portal-billing.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "portal-notifications.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "mobile-push.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "mobile-feedback.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "portal-members-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "zoho-tickets.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "support-kb.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "support-alerts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "support-training.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "audit-users.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "audit-changes.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "support-tickets-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-catalog.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-paths.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-my-learning.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-admin.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-admin-users.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-admin-courses.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "lms-admin-reports.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "demo.washcentral.comml"
+ },
+ {
+  "page": "settings-dashboard-designer.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "crm-loyalty-discounts.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "crm-rewards.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-portals.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-integrations.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "forecast-overview-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "audit-log-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-account-info-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-account-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-profile-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-profit-centers-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-departments-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-categories-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-dashboard-settings-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-dayforce-settings-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-dayforce-settings-detail.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-policy-category-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-forms-category-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-locations-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-location-groups-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-location-sub-brand-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-location-payment-approval-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-service-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-service-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-service-groups-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-detail-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-rewards-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-loyalty-discount-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-payment-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-discounts-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-discount-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-surcharges-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-surcharge-types-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-payout-percentage-edit.html",
+  "ok": true,
+  "is404": false,
+  "docTitle": "Not Found"
+ },
+ {
+  "page": "settings-tax-rates-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Runtime.evaluate"
+ },
+ {
+  "page": "settings-gl-codes-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-gl-account-codes-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-hardware-terminals-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-screen-layout-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-screen-layout-detail.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-system-types-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-lube-buttons-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ },
+ {
+  "page": "settings-lube-checklists-edit.html",
+  "ok": false,
+  "error": "CDP timeout: Page.navigate"
+ }
+]

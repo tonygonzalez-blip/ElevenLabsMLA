@@ -1,0 +1,88 @@
+{
+ "url": "/settings-locations.html",
+ "docTitle": "Locations",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Locations"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Locations",
+  "Location Groups",
+  "Location Sub-Brand",
+  "Payment Credential Approval",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Code",
+  "Name",
+  "Address",
+  "City",
+  "State",
+  "Zip",
+  "Phone",
+  "Last Sync"
+ ],
+ "kpiLabels": [
+  "6Total Locations 6Active 2States TodayLast Sync",
+  "6Total Locations",
+  "6",
+  "Total Locations",
+  "6Active",
+  "Active",
+  "2States",
+  "2",
+  "States",
+  "TodayLast Sync",
+  "Today",
+  "Last Sync"
+ ],
+ "inputPlaceholders": [
+  "Search locations…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load locations (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Locations Location Groups Location Sub-Brand Payment Credential Approval Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Locations Search ⌘K Ask Shyne MG 6 Total Locations 6 Active 2 States Today Last Sync Location Growth Trend Last 12 months 6 ↑ +20% Jan Dec Location Breakdown By state New Jersey 67% New York 17% Online 16% Other 0% Location Status Configuration health 100% ACTIVE 0% DRAFT 0% INACTIVE SETTINGS · LOCATIONS Locations List 6 records + New Record Filters Search CODE NAME ADDRESS CITY STATE ZIP PHONE LAST SYNC Couldn’t load locations (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 1–1 of 1 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

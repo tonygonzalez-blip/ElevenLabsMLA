@@ -1,0 +1,49 @@
+{
+ "crm-prepaid-books": {
+  "rowState": "loading",
+  "extra": {
+   "subs": [],
+   "sidebar": [],
+   "kpis": [],
+   "rows": [],
+   "pag": []
+  }
+ },
+ "crm-vehicles": {
+  "rowState": "loading",
+  "extra": {
+   "subs": [],
+   "sidebar": [],
+   "kpis": [],
+   "rows": [],
+   "pag": []
+  }
+ },
+ "crm-retail-customers": {
+  "rowState": "loading",
+  "extra": {
+   "subs": [],
+   "sidebar": [],
+   "kpis": [],
+   "rows": [],
+   "pag": []
+  }
+ },
+ "crm-bundles": {
+  "rowState": "loading",
+  "extra": {
+   "subs": [],
+   "sidebar": [],
+   "kpis": [],
+   "rows": [],
+   "pag": []
+  }
+ },
+ "fundraiser": {
+  "found": false
+ },
+ "vehiclesSearch": {
+  "skipped": true,
+  "vState": "loading"
+ }
+}

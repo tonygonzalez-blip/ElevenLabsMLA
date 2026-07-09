@@ -1,0 +1,78 @@
+{
+ "url": "/emp-roles.html",
+ "docTitle": "Employee Roles — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Employees›Employee Roles"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Role Name",
+  "Description",
+  "Users Assigned",
+  "Access Level"
+ ],
+ "kpiLabels": [
+  "8Total Roles 8Active 6Managers 2Admins",
+  "8Total Roles",
+  "8",
+  "Total Roles",
+  "8Active",
+  "Active",
+  "6Managers",
+  "6",
+  "Managers",
+  "2Admins",
+  "2",
+  "Admins"
+ ],
+ "inputPlaceholders": [
+  "Search employee roles…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Administrator | Full system access | 2 | Full",
+  " | Site Manager | Single location full access | 6 | High",
+  " | Cashier | POS and transaction access | 18 | Medium"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys EMPLOYEES Employee Roles Search ⌘K Ask Shyne MG 8 Total Roles 8 Active 6 Managers 2 Admins Role Assignments Last 12 months 46 ↑ +4.5% Jan Dec Users per Role Staff by role type Cashier 39% Tunnel Attendant 26% Detail Tech 17% Site Manager 13% Access Levels Permission tier overview 63% LOW 24% MEDIUM 13% HIGH EMPLOYEES · ROLES Role List 5 records Export + New Record Filters ▾ Search ROLE NAME DESCRIPTION USERS ASSIGNED ACCESS LEVEL Administrator Full system access 2 Full Site Manager Single location full access 6 High Cashier POS and transaction access 18 Medium Tunnel Attendant Tunnel ops only 12 Low Detail Tech Detail module only 8 Low Showing 1–5 of 5 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

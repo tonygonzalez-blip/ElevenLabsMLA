@@ -1,0 +1,87 @@
+{
+ "url": "/emp-employees.html",
+ "docTitle": "Employees — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Employees›Employees"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Employee",
+  "Phone",
+  "Hire Date",
+  "Type",
+  "Status",
+  "Location"
+ ],
+ "kpiLabels": [
+  "48Total Employees 44Active 32Full Time 16Part Time",
+  "48Total Employees",
+  "48",
+  "Total Employees",
+  "44Active",
+  "44",
+  "Active",
+  "32Full Time",
+  "32",
+  "Full Time",
+  "16Part Time",
+  "16",
+  "Part Time"
+ ],
+ "inputPlaceholders": [
+  "Search employees…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Shift Manager",
+  "Cashier",
+  "Tunnel Attendant",
+  "Detail Tech",
+  "Greeter"
+ ],
+ "firstRows": [
+  " | JMJose MartinezShift Manager | 973-555-0101 | 2022-03-15 | Full-Time | Active | MLAS",
+  " | LNLisa NguyenCashier | 732-555-0202 | 2023-06-01 | Part-Time | Active | SSNB",
+  " | KDKevin DavisTunnel Attendant | 973-555-0303 | 2021-09-20 | Full-Time | Active | MLAS"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys EMPLOYEES Employees Search ⌘K Ask Shyne MG 48 Total Employees 44 Active 32 Full Time 16 Part Time Headcount Growth Last 12 months 48 ↑ +4.3% Jan Dec By Location Staff distribution MLAS 35% SSNB 27% Piscataway 23% Other 15% Employment Type Workforce composition 67% FULL-TIME 33% PART-TIME 4 INACTIVE EMPLOYEES · STAFF DIRECTORY Employee List 5 records Export + New Record Filters ▾ Search EMPLOYEE PHONE HIRE DATE TYPE STATUS LOCATION JM Jose Martinez Shift Manager 973-555-0101 2022-03-15 Full-Time Active MLAS LN Lisa Nguyen Cashier 732-555-0202 2023-06-01 Part-Time Active SSNB KD Kevin Davis Tunnel Attendant 973-555-0303 2021-09-20 Full-Time Active MLAS MS Maria Smith Detail Tech 609-555-0404 2023-01-10 Part-Time Active Piscataway TJ Tyler Johnson Greeter 973-555-0505 2024-02-14 Full-Time Active MLAS Showing 1–5 of 5 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

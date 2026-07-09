@@ -1,0 +1,84 @@
+{
+ "url": "/mobile-users.html",
+ "docTitle": "Mobile App Users — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Mobile›Mobile App Users"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Booking Page (Customer)",
+  "Portal Members",
+  "Portal Messages",
+  "Portal Billing",
+  "Portal Notifications",
+  "Mobile App Branding",
+  "Mobile App Features",
+  "Mobile App Users",
+  "Push Notifications",
+  "Mobile Feedback"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Name",
+  "Email",
+  "App Version",
+  "Platform",
+  "Last Active",
+  "Notifications",
+  "Status"
+ ],
+ "kpiLabels": [
+  "4,820Total Users 3,240Active Monthly 58%iOS 42%Android",
+  "4,820Total Users",
+  "4,820",
+  "Total Users",
+  "3,240Active Monthly",
+  "3,240",
+  "Active Monthly",
+  "58%iOS",
+  "58%",
+  "iOS",
+  "42%Android",
+  "42%",
+  "Android"
+ ],
+ "inputPlaceholders": [
+  "Search mobile app users…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Sarah Johnson | sarah.j@email.com | 4.2.1 | iOS | 2025-06-01 | On | Active",
+  " | Mike Chen | mchen@email.com | 4.1.8 | Android | 2025-05-30 | On | Active",
+  " | Lisa Park | lpark@email.com | 4.2.1 | iOS | 2025-06-01 | Off | Active"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Digital CUSTOMER PORTAL Booking Page (Customer) Portal Members Portal Messages Portal Billing Portal Notifications MOBILE Mobile App Branding Mobile App Features Mobile App Users Push Notifications Mobile Feedback MOBILE Mobile App Users Search ⌘K Ask Shyne MG 4,820 Total Users 3,240 Active Monthly 58% iOS 42% Android User Growth Last 12 months 4,820 ↑ +31% Jan Dec By Platform Device distribution iOS 58% Android 42% Tablet 0% Other 0% User Status Activity overview 67% ACTIVE 21% MONTHLY 12% INACTIVE MOBILE · USERS Mobile User List 4 records + New Record Export Filters ▾ Search NAME EMAIL APP VERSION PLATFORM LAST ACTIVE NOTIFICATIONS STATUS Sarah Johnson sarah.j@email.com 4.2.1 iOS 2025-06-01 On Active Mike Chen mchen@email.com 4.1.8 Android 2025-05-30 On Active Lisa Park lpark@email.com 4.2.1 iOS 2025-06-01 Off Active Tom Brown tbrown@email.com 4.0.5 Android 2025-05-25 On Active ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

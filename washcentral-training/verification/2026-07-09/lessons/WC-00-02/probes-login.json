@@ -1,0 +1,48 @@
+{
+  "probes": {
+    "qaVisible": {
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "left": 0,
+      "display": "inline-flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "qaText": "Quick Access · mag",
+    "signInText": "Sign In",
+    "signInAfterContent": "none",
+    "arrowSpan": [
+      "svg"
+    ],
+    "eyeAria": "Show password",
+    "remember": [
+      {
+        "checked": true
+      }
+    ],
+    "forgotLink": [
+      "Forgot password?"
+    ],
+    "smallPrint": [
+      "v26.0628.001",
+      "v26.0628.001",
+      "v26.0628.001",
+      "v26.0628.001"
+    ]
+  },
+  "eyeFlip": {
+    "before": {
+      "aria": "Show password",
+      "type": "password"
+    },
+    "mid": {
+      "aria": "Hide password",
+      "type": "text"
+    },
+    "after": {
+      "aria": "Show password",
+      "type": "password"
+    }
+  }
+}

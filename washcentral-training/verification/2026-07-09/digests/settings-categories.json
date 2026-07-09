@@ -1,0 +1,88 @@
+{
+ "url": "/settings-categories.html",
+ "docTitle": "Categories",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Categories"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Account Information",
+  "Account Types",
+  "Profile Types",
+  "Profit Centers",
+  "Departments",
+  "Categories",
+  "Dayforce Settings",
+  "Policy Category",
+  "Forms Category",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description",
+  "Extra",
+  "Profit Center",
+  "Ac/Code",
+  "System"
+ ],
+ "kpiLabels": [
+  "49Total Categories 49Active",
+  "49Total Categories",
+  "49",
+  "Total Categories",
+  "49Active",
+  "Active"
+ ],
+ "inputPlaceholders": [
+  "Search categories…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "GIFT CARD DISCOUNT | — | — | — | —",
+  "GO GIFT CARD SALE | — | — | — | —",
+  "MARKETING DISCOUNT | — | — | — | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Account Information Account Types Profile Types Profit Centers Departments Categories Dayforce Settings Policy Category Forms Category Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Categories Search ⌘K Ask Shyne MG 49 Total Categories 49 Active Config Activity Last 12 months 49 ↑ +9% Jan Dec Breakdown by Profit Center By department WASH 40% All 30% DETAIL 18% LUBE / STORE 12% Status Overview Configuration health 100% ACTIVE 0% DRAFT 0% INACTIVE SETTINGS · CATEGORIES Categories List 66 records + New Record Filters Search DESCRIPTION EXTRA PROFIT CENTER AC/CODE SYSTEM GIFT CARD DISCOUNT — — — — GO GIFT CARD SALE — — — — MARKETING DISCOUNT — — — — No Wash — — — — OPEN REFUND — — — — UNLIMITED SALES — — — — UWC DOWNGRADES — — — — UWC UPGRADES — — — — Advantage Card — — — — BANK DROPS — — — — CUSTOMER SATISFACTION — — — — CUSTOMER SATISFACTION REDEEM — — — — DEPOSITS (CASH/CHECK) — — — — DEPOSITS (OTHER TENDERS) — — — — DETAIL DISCOUNTS — — — — DETAIL EXTRAS — — — — DETAIL INVENTORY — — — — DETAIL SALES — — — — DRAWER DETAILS — — — — FREE VIP WASHES — — — — GIFT CARD FUND — — — — GIFT CARD SALES — — — — HOUSE ACCOUNT CHARGES — — — — LABOR SUMMARY — — — — LUBE DISCOUNTS — — — — ROWS PER PAGE: 25 50 100 25 1–25 of 66 ‹ 1 2 3 › Loading… 2:00 "
+}

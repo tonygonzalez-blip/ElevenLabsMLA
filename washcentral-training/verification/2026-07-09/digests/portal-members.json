@@ -1,0 +1,83 @@
+{
+ "url": "/portal-members.html",
+ "docTitle": "Portal Members — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Customer Portal›Portal Members"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Booking Page (Customer)",
+  "Portal Members",
+  "Portal Messages",
+  "Portal Billing",
+  "Portal Notifications",
+  "Mobile App Branding",
+  "Mobile App Features",
+  "Mobile App Users",
+  "Push Notifications",
+  "Mobile Feedback"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Name",
+  "Email",
+  "Member Since",
+  "Plan",
+  "Portal Status",
+  "Last Login"
+ ],
+ "kpiLabels": [
+  "1,840Registered 1,240Active This Month 42New This Week 68%Mobile Users",
+  "1,840Registered",
+  "1,840",
+  "Registered",
+  "1,240Active This Month",
+  "1,240",
+  "Active This Month",
+  "42New This Week",
+  "42",
+  "New This Week",
+  "68%Mobile Users",
+  "68%",
+  "Mobile Users"
+ ],
+ "inputPlaceholders": [
+  "Search portal members…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Sarah Johnson | sarah.j@email.com | 2024-01-15 | Monthly Unlimited | Active | 2025-06-01",
+  " | Mike Chen | mchen@email.com | 2023-08-20 | Annual Plan | Active | 2025-05-30",
+  " | Lisa Park | lpark@email.com | 2024-03-10 | Monthly Basic | Active | 2025-06-01"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Digital CUSTOMER PORTAL Booking Page (Customer) Portal Members Portal Messages Portal Billing Portal Notifications MOBILE Mobile App Branding Mobile App Features Mobile App Users Push Notifications Mobile Feedback CUSTOMER PORTAL Portal Members Search ⌘K Ask Shyne MG 1,840 Registered 1,240 Active This Month 42 New This Week 68% Mobile Users Member Growth Last 12 months 1,840 ↑ +24% Jan Dec By Plan Plan distribution Monthly Unlimited 44% Annual Plan 32% Monthly Basic 18% Trial 6% Member Status Account health 82% ACTIVE 12% INACTIVE 6% SUSPENDED PORTAL · MEMBERS Member List 4 records + New Record Export Filters ▾ Search NAME EMAIL MEMBER SINCE PLAN PORTAL STATUS LAST LOGIN Sarah Johnson sarah.j@email.com 2024-01-15 Monthly Unlimited Active 2025-06-01 Mike Chen mchen@email.com 2023-08-20 Annual Plan Active 2025-05-30 Lisa Park lpark@email.com 2024-03-10 Monthly Basic Active 2025-06-01 Tom Brown tbrown@email.com 2022-11-05 Annual Plan Active 2025-05-28 ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

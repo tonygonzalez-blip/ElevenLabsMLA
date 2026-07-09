@@ -1,0 +1,80 @@
+{
+ "url": "/settings-discount-types.html",
+ "docTitle": "Discount Types",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Discount Types"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Payment Types",
+  "Discounts",
+  "Discount Types",
+  "Surcharges",
+  "Surcharge Types",
+  "Payout Percentage",
+  "Tax Rates",
+  "General Ledger Codes",
+  "GL Account Codes",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description"
+ ],
+ "kpiLabels": [
+  "4Total Types 4Active",
+  "4Total Types",
+  "4",
+  "Total Types",
+  "4Active",
+  "Active"
+ ],
+ "inputPlaceholders": [
+  "Search discount types…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load discount types (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Payment Types Discounts Discount Types Surcharges Surcharge Types Payout Percentage Tax Rates General Ledger Codes GL Account Codes Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Discount Types Search ⌘K Ask Shyne MG 4 Total Types 4 Active Config Activity Last 12 months 4 ↑ +4% Jan Dec Breakdown by Type By discount category Discounts 40% Unlimited 30% Staff 20% Promo 10% Status Overview Configuration health 100% ACTIVE 0% DRAFT 0% INACTIVE SETTINGS · DISCOUNT TYPES Discount Types List Error loading records + New Record Filters Search DESCRIPTION Couldn’t load discount types (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 1–1 of 1 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

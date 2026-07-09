@@ -1,0 +1,76 @@
+{
+ "url": "/settings-vip-monthly-types.html",
+ "docTitle": "VIP Monthly Types",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›VIP Monthly Types"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "VIP Types",
+  "VIP Monthly Types",
+  "VIP Charge Frequency",
+  "VIP Account Service",
+  "VIP Account Loyalty Discounts",
+  "Loyalty Discounts",
+  "Unlimited Promotions",
+  "Promotional Upgrades",
+  "Memberships & Rewards",
+  "Memberships & Rewards Types",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description"
+ ],
+ "kpiLabels": [
+  "—Total Types",
+  "—",
+  "Total Types"
+ ],
+ "inputPlaceholders": [
+  "Search VIP monthly types…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load VIP monthly types (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ VIP Types VIP Monthly Types VIP Charge Frequency VIP Account Service VIP Account Loyalty Discounts Loyalty Discounts Unlimited Promotions Promotional Upgrades Memberships & Rewards Memberships & Rewards Types Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS VIP Monthly Types Search ⌘K Ask Shyne MG — Total Types SETTINGS · VIP MONTHLY TYPES VIP Monthly Types List Loading… + New Record DESCRIPTION Couldn’t load VIP monthly types (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 0–0 of 0 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

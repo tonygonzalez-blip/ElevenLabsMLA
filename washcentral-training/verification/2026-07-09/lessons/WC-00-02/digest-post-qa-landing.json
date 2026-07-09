@@ -1,0 +1,118 @@
+{
+  "landing": "https://demo.washcentral.com/dashboard-executive.html",
+  "qaInfo": {
+    "text": "Quick Access · mag",
+    "title": null
+  },
+  "avatar": {
+    "text": "MG",
+    "cls": "wc-rail-avatar"
+  },
+  "digest": {
+    "url": "/dashboard-executive.html",
+    "docTitle": "Executive Dashboard",
+    "h1": [],
+    "h2": [
+      "Still there?"
+    ],
+    "h3": [],
+    "breadcrumb": [
+      "Dashboard›Executive Dashboard"
+    ],
+    "railButtons": [
+      "Primary navigation",
+      "Date range",
+      "Refresh data"
+    ],
+    "sidebarItems": [
+      "Executive Dashboard",
+      "Location Summary",
+      "Gamification",
+      "Marketing",
+      "Memberships",
+      "Subscribers",
+      "Downsells",
+      "Online Sales",
+      "Live Conversion",
+      "Retail Customers",
+      "Campaign Performance",
+      "Segment Response",
+      "Offer Effectiveness",
+      "Acquisition Sources",
+      "Win-Back Analysis",
+      "BI Overview",
+      "Revenue Intelligence",
+      "Benchmarking",
+      "Churn Intelligence",
+      "LTV Intelligence",
+      "Online Presence",
+      "Forecasting",
+      "● Fort Lauderdale$311k · 4,218 cars · Labor 13.2% 98.7% conv to target",
+      "● Miami North$284k · 3,892 cars · Labor 14.4% 98.7% conv to target",
+      "● Boca Raton$258k · 3,504 cars · Labor 17.8% 100% conv to target",
+      "● Tampa West$232k · 3,156 cars · Labor 18.6% 97.3% conv to target",
+      "● Orlando Central$216k · 2,944 cars · Labor 22.4% 89.3% conv to target",
+      "● Naples Coast$139k · 1,892 cars · Labor 26.8% 81.3% conv to target"
+    ],
+    "buttons": [
+      "Search ⌘K",
+      "Ask Shyne",
+      "All Locations▾",
+      "M",
+      "Today",
+      "Week",
+      "Month",
+      "Quarter",
+      "YTD",
+      "1Y",
+      "Updated just now",
+      "Stay Logged In",
+      "Log Out Now",
+      "Stay Active"
+    ],
+    "tabs": [
+      "Today",
+      "Week",
+      "Month",
+      "Quarter",
+      "YTD",
+      "1Y"
+    ],
+    "tableHeaders": [],
+    "kpiLabels": [
+      "Revenue $1.42M ↑ 9.4% vs prior month Cars Washed 19,606 ↑ 8.2% Active Members 18,816 ↑ 3.4% · +1,408 new Conversion Rate 7.1% ↓ 0.3 pt vs target Avg Visit Frequency 2.6× ↑ 0.2× per member / mo Labor % 17.4% ↑ 2.4 pt — over target 15%",
+      "Revenue $1.42M ↑ 9.4% vs prior month",
+      "Revenue",
+      "$1.42M",
+      "↑ 9.4% vs prior month",
+      "Cars Washed 19,606 ↑ 8.2%",
+      "Cars Washed",
+      "19,606",
+      "↑ 8.2%",
+      "Active Members 18,816 ↑ 3.4% · +1,408 new",
+      "Active Members",
+      "18,816",
+      "↑ 3.4% · +1,408 new",
+      "Conversion Rate 7.1% ↓ 0.3 pt vs target",
+      "Conversion Rate",
+      "7.1%",
+      "↓ 0.3 pt vs target",
+      "Avg Visit Frequency 2.6× ↑ 0.2× per member / mo",
+      "Avg Visit Frequency",
+      "2.6×",
+      "↑ 0.2× per member / mo",
+      "Labor % 17.4% ↑ 2.4 pt — over target 15%",
+      "Labor %",
+      "17.4%",
+      "↑ 2.4 pt — over target 15%"
+    ],
+    "inputPlaceholders": [
+      "Search pages, modules, actions…"
+    ],
+    "labels": [],
+    "chips": [],
+    "firstRows": [],
+    "modals": [],
+    "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting DASHBOARD Executive Dashboard Executive overview · revenue, members, locations, and operational health for the entire network. Search ⌘K Ask Shyne All Locations ▾ M NETWORK · APRIL 2026 MTD The state of the business All locations rolled up. Each card shows lifetime totals plus 14-day momentum. Today Week Month Quarter YTD 1Y Updated just now REVENUE $1.42M ↑ 9.4% vs prior month CARS WASHED 19,606 ↑ 8.2% ACTIVE MEMBERS 18,816 ↑ 3.4% · +1,408 new CONVERSION RATE 7.1% ↓ 0.3 pt vs target AVG VISIT FREQUENCY 2.6× ↑ 0.2× per member / mo LABOR % 17.4% ↑ 2.4 pt — over target 15% Revenue · last 12 months Membership recurring + retail visits, network-wide $15.8M ↑ 11.4% trailing 12 mo Membership Pay-per-wash Retail (gift cards, books) Location health Status across all 6 locations ● Fort Lauderdale $311k · 4,218 cars · Labor 13.2% 98.7% conv to target ● Miami North $284k · 3,892 cars · Labor 14.4% 98.7% conv to target ● Boca Raton $258k · 3,504 cars · Labor 17.8% 100% conv to target ● Tampa West $232k · 3,156 cars · Labor 18.6% 97.3% conv to target ● Orlando"
+  }
+}

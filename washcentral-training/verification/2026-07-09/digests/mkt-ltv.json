@@ -1,0 +1,93 @@
+{
+ "url": "/mkt-ltv.html",
+ "docTitle": "LTV Intelligence — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Intelligence›LTV Intelligence"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Export Report",
+  "Ask Shyne",
+  "MG",
+  "LTV Analysis",
+  "Cohort Retention",
+  "Segment Performance",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "LTV Analysis",
+  "Cohort Retention",
+  "Segment Performance"
+ ],
+ "tableHeaders": [
+  "Tier",
+  "# Customers",
+  "Avg LTV",
+  "Avg Tenure",
+  "Avg Visits/Mo",
+  "Revenue %",
+  "Channel",
+  "Customers",
+  "CAC",
+  "LTV:CAC Ratio"
+ ],
+ "kpiLabels": [
+  "$486 Avg Customer LTV $1,840 Top 10% LTV 14.2 mo Avg Tenure +22% LTV Growth YoY",
+  "$486 Avg Customer LTV",
+  "$486",
+  "Avg Customer LTV",
+  "$1,840 Top 10% LTV",
+  "$1,840",
+  "Top 10% LTV",
+  "14.2 mo Avg Tenure",
+  "14.2 mo",
+  "Avg Tenure",
+  "+22% LTV Growth YoY",
+  "+22%",
+  "LTV Growth YoY"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Top 10% Champions | 184 | $1,840 | 28.4 mo | 3.8 | 38%",
+  "10–25% Loyalists | 276 | $920 | 18.2 mo | 2.9 | 28%",
+  "25–50% Regulars | 460 | $486 | 12.6 mo | 2.1 | 22%"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting INTELLIGENCE LTV Intelligence Customer lifetime value analysis, cohort retention curves, and segment performance. Search ⌘K Export Report Ask Shyne MG $486 Avg Customer LTV $1,840 Top 10% LTV 14.2 mo Avg Tenure +22% LTV Growth YoY LTV by Plan Average lifetime value per subscription tier Unlimited Plus $1,240 Unlimited $720 Premium $480 Basic $210 LTV Distribution Median $386 · Mean $486 · P90 $1,840 Cohort Summary Retention snapshot across all cohorts 16 cohorts tracked 84% avg Month-1 retention 52% avg Month-6 retention 41% avg Month-12 retention LTV Analysis Cohort Retention Segment Performance LTV Tiers Customer segmentation by lifetime value percentile TIER # CUSTOMERS AVG LTV AVG TENURE AVG VISITS/MO REVENUE % Top 10% Champions 184 $1,840 28.4 mo 3.8 38% 10–25% Loyalists 276 $920 18.2 mo 2.9 28% 25–50% Regulars 460 $486 12.6 mo 2.1 22% Bottom 50% Occasional 920 $148 6.4 mo 0.9 12% LTV by Acquisition Channel Return on customer acquisition cost by channel CHANNEL CUSTOMERS AVG LTV CAC LTV:CAC RATIO Organic Search 420 $612 $8.40 72.9:1 Referral "
+}

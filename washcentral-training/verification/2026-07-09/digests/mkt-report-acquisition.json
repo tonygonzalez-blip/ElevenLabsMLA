@@ -1,0 +1,97 @@
+{
+ "url": "/mkt-report-acquisition.html",
+ "docTitle": "Member Acquisition by Source — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Analytics›Acquisition Sources"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Export CSV",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Source",
+  "New Members",
+  "% of Total",
+  "Avg CPA",
+  "Avg LTV",
+  "90d Retention",
+  "Attributed Revenue",
+  "Trend"
+ ],
+ "kpiLabels": [
+  "3,847 New Members $12.40 Avg Cost Per Acquisition Email Campaign Top Source (38%) 74.2% 90-Day Retention $620/yr Avg LTV (New Members) $184,600 Attributed Revenue",
+  "3,847 New Members",
+  "3,847",
+  "New Members",
+  "$12.40 Avg Cost Per Acquisition",
+  "$12.40",
+  "Avg Cost Per Acquisition",
+  "Email Campaign Top Source (38%)",
+  "Email Campaign",
+  "Top Source (38%)",
+  "74.2% 90-Day Retention",
+  "74.2%",
+  "90-Day Retention",
+  "$620/yr Avg LTV (New Members)",
+  "$620/yr",
+  "Avg LTV (New Members)",
+  "$184,600 Attributed Revenue",
+  "$184,600",
+  "Attributed Revenue"
+ ],
+ "inputPlaceholders": [
+  "Search sources…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Reached · 94,200",
+  "Engaged · 32,148 (34.1%)",
+  "Clicked · 8,196 (8.7%)",
+  "Converted · 3,847 (4.1%)"
+ ],
+ "firstRows": [
+  "Email Campaign | 1,462 | 38.0% | $8.20 | $660/yr | 78.4% | $52,632 | ↑",
+  "Referral Program | 924 | 24.0% | $10.40 | $720/yr | 82.1% | $34,188 | ↑",
+  "SMS Campaign | 693 | 18.0% | $14.20 | $580/yr | 71.3% | $23,562 | →"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting ANALYTICS Acquisition Sources Search ⌘K Ask Shyne MG Filters Export CSV 3,847 New Members $12.40 Avg Cost Per Acquisition Email Campaign Top Source (38%) 74.2% 90-Day Retention $620/yr Avg LTV (New Members) $184,600 Attributed Revenue Acquisition Funnel Reach → Engagement → Click → Conversion Reached · 94,200 Engaged · 32,148 (34.1%) Clicked · 8,196 (8.7%) Converted · 3,847 (4.1%) Overall conversion: 4.1% · Top-of-funnel to member New Members by Source Percentage share of 3,847 new members Email Campaign 38% · 1,462 SMS 18% · 693 Referral 24% · 924 Organic / Walk-in 12% · 462 Paid Media 5% · 192 Push Notification 3% · 115 MARKETING · ACQUISITION New Members by Source 6 acquisition channels • Last 90 days SOURCE NEW MEMBERS % OF TOTAL AVG CPA AVG LTV 90D RETENTION ATTRIBUTED REVENUE TREND Email Campaign 1,462 38.0% $8.20 $660/yr 78.4% $52,632 ↑ Referral Program 924 24.0% $10.40 $720/yr 82.1% $34,188 ↑ SMS Campaign 693 18.0% $14.20 $580/yr 71.3% $23,562 → Organic / Walk-in 462 12.0% $0 $540/yr 68.2% $16,632 ↓ Paid Media 192 5.0% $28.40 $600/yr 69.8%"
+}

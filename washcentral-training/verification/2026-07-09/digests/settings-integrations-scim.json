@@ -1,0 +1,83 @@
+{
+ "url": "/settings-integrations-scim.html",
+ "docTitle": "SCIM Provisioning — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›SCIM Provisioning"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "← SSO Settings",
+  "Test Connection",
+  "Edit Configuration",
+  "Settings",
+  "Instructions",
+  "Copy",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Settings",
+  "Instructions",
+  "Copy"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Not Set UpStatus https://demo.washcentral.com/scim/v2SCIM URL Not SetBearer Token —Last Event",
+  "Not Set UpStatus",
+  "Not Set Up",
+  "Status",
+  "https://demo.washcentral.com/scim/v2SCIM URL",
+  "https://demo.washcentral.com/scim/v2",
+  "SCIM URL",
+  "Not SetBearer Token",
+  "Not Set",
+  "Bearer Token",
+  "—Last Event",
+  "—",
+  "Last Event"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "User Provisioning",
+  "⚠ Not Configured",
+  "Auto-Provisioning Microsoft Entra ID REST API",
+  "Auto-Provisioning",
+  "Microsoft Entra ID",
+  "REST API"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS SCIM Provisioning Search ⌘K Ask Shyne MG SCIM Provisioning User Provisioning ⚠ Not Configured SCIM 2.0 · Settings Auto-Provisioning Microsoft Entra ID REST API ← SSO Settings Test Connection Edit Configuration Not Set Up Status https://demo.washcentral.com/scim/v2 SCIM URL Not Set Bearer Token — Last Event Settings Instructions ENDPOINT CONFIGURATION FULL TENANT URL https://demo.washcentral.com/scim/v2 Copy BEARER TOKEN Not configured Paste the Full Tenant URL and Bearer Token into Microsoft Entra ID → Enterprise Application → Provisioning → Admin Credentials. The SCIM server must be publicly reachable — use ngrok or Cloudflare Tunnel for local development. To regenerate the token, go to Edit Configuration. SYNC LOG Recent provisioning events received by the SCIM server. To clear the log, use Edit Configuration. No provisioning events recorded yet. Once Microsoft Entra ID starts syncing, events will appear here. Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

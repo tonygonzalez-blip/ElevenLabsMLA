@@ -1,0 +1,87 @@
+{
+ "url": "/reports.html",
+ "docTitle": "Reports",
+ "h1": [
+  "All Reports 173"
+ ],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Reports›Reports"
+ ],
+ "railButtons": [],
+ "sidebarItems": [],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "All Reports173",
+  "Favorites5",
+  "Scheduled Reports3",
+  "Advanced Analytics23",
+  "Custom Builder",
+  "Financial8",
+  "Traffic & Sales4",
+  "Revenue6",
+  "Commissions5",
+  "Employee Labor7",
+  "Employee Reports6",
+  "Unlimited Programs22",
+  "Customers9",
+  "House Accounts9",
+  "Transactions21",
+  "Credit Cards2",
+  "Inventory17",
+  "Maintenance16",
+  "Marketing4",
+  "Scheduling1",
+  "WashHub1",
+  "Weather1",
+  "Settings3",
+  "Other8",
+  "Schedule Report",
+  "50",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "★",
+  "Report Name",
+  "Category",
+  "Type",
+  "Last Run"
+ ],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search reports…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "173",
+  "Financial Reports",
+  "Standard",
+  "Scheduled",
+  "Analytics",
+  "Traffic and Sales Reports",
+  "Employee Labor",
+  "Unlimited Program Reports"
+ ],
+ "firstRows": [
+  " | Daily, Period, and Shift Financial | Financial Reports | Standard | —",
+  " | Daily, Period, and Shift Financial 2.0 | Financial Reports | Scheduled | 03-25-2026 9:14 AM",
+  " | Daily Report Tracker | Financial Reports | Standard | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Reports REPORTS Reports Search ⌘K Ask Shyne MG VIEWS All Reports 173 Favorites 5 Scheduled Reports 3 Advanced Analytics 23 Custom Builder CATEGORIES Financial 8 Traffic & Sales 4 Revenue 6 Commissions 5 Employee Labor 7 Employee Reports 6 Unlimited Programs 22 Customers 9 House Accounts 9 Transactions 21 Credit Cards 2 Inventory 17 Maintenance 16 Marketing 4 Scheduling 1 WashHub 1 Weather 1 Settings 3 Other 8 All Reports 173 Browse and run all standard and custom reports Schedule Report Report List ANALYTICS AND PERFORMANCE REPORTS ★ REPORT NAME CATEGORY TYPE LAST RUN Daily, Period, and Shift Financial Financial Reports Standard — Daily, Period, and Shift Financial 2.0 Financial Reports Scheduled 03-25-2026 9:14 AM Daily Report Tracker Financial Reports Standard — Two Period Financial Comparison Financial Reports Analytics — G/L Summary Financial Reports Standard — G/L Summary V2 Financial Reports Standard — Tax Report Financial Reports Standard — Landing Page Financial Financial Reports Standard — Traffic Report - Sales Data Traffic and Sales Reports Standard 03-24-2026 2:30 PM Discount Analysis Traffic and Sales Reports Analytics — Ticket Accountability Traffic and Sales Reports Standard — Multi Site Hourly Comparison Traffic and Sales Reports Analytics — Employee Timecards (with rates) Employee Labor Scheduled — Employee Timecards By Employee Department Employee Labor Standard — Employee Timecards (with rates, Export) Employee Labor Stan"
+}

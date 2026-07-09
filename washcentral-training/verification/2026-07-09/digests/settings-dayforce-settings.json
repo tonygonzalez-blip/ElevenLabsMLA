@@ -1,0 +1,90 @@
+{
+ "url": "/settings-dayforce-settings.html",
+ "docTitle": "Dayforce Settings",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Dayforce Settings"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Account Information",
+  "Account Types",
+  "Profile Types",
+  "Profit Centers",
+  "Departments",
+  "Categories",
+  "Dayforce Settings",
+  "Policy Category",
+  "Forms Category",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Setting",
+  "Value",
+  "Last Sync"
+ ],
+ "kpiLabels": [
+  "ActiveIntegration Status TodayLast Sync 47Employees Synced 0Errors",
+  "ActiveIntegration Status",
+  "Active",
+  "Integration Status",
+  "TodayLast Sync",
+  "Today",
+  "Last Sync",
+  "47Employees Synced",
+  "47",
+  "Employees Synced",
+  "0Errors",
+  "0",
+  "Errors"
+ ],
+ "inputPlaceholders": [
+  "Search dayforce settings…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "API Endpoint | https://api.dayforce.com | 2025-03-26",
+  "Client ID | MCW-001 | 2025-03-26",
+  "Sync Frequency | Daily | 2025-03-26"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Account Information Account Types Profile Types Profit Centers Departments Categories Dayforce Settings Policy Category Forms Category Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Dayforce Settings Search ⌘K Ask Shyne MG Active Integration Status Today Last Sync 47 Employees Synced 0 Errors Sync Activity Last 12 months 47 ↑ +11% Jan Dec Breakdown by Category By setting type API Config 40% Auth 30% Scheduling 20% Other 10% Status Overview Configuration health 100% ACTIVE 0% DRAFT 0% INACTIVE SETTINGS · DAYFORCE SETTINGS Dayforce Settings List 3 records + New Record Filters Search SETTING VALUE LAST SYNC API Endpoint https://api.dayforce.com 2025-03-26 Client ID MCW-001 2025-03-26 Sync Frequency Daily 2025-03-26 Showing 1–3 of 3 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

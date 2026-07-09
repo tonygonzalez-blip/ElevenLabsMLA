@@ -1,0 +1,85 @@
+{
+ "url": "/qa-conversations.html",
+ "docTitle": "Conversations — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Sales Coaching›Conversations"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export CSV",
+  "Dashboard",
+  "Filters ▾",
+  "Review",
+  "🚩",
+  "‹ Prev",
+  "Next ›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "🚩"
+ ],
+ "tableHeaders": [
+  "Ticket #",
+  "Employee",
+  "Date & Time",
+  "Location",
+  "Duration",
+  "Checkpoints Met",
+  "Score",
+  "Status"
+ ],
+ "kpiLabels": [
+  "284Total Recorded 76%Avg Score 68%Above Target 12Needs Coaching",
+  "284Total Recorded",
+  "284",
+  "Total Recorded",
+  "76%Avg Score",
+  "76%",
+  "Avg Score",
+  "68%Above Target",
+  "68%",
+  "Above Target",
+  "12Needs Coaching",
+  "12",
+  "Needs Coaching"
+ ],
+ "inputPlaceholders": [
+  "Search employee or transcript…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | — | SL Sofia L.Live | Jul 2, 2026, 7:14 AM | SSNB | 1m 30s | 0/8 | A 95% | Scored ✓ Member | Review 🚩",
+  " | — | AJ Alex J.Live | Jul 2, 2026, 6:14 AM | MLAS | 1m 37s | 0/8 | A 95% | Scored ✓ Member | Review 🚩",
+  " | — | MR Marcus R.Live | Jul 2, 2026, 5:14 AM | MLAS | 1m 44s | 0/8 | A 95% | Scored ✓ Member | Review 🚩"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys SALES COACHING Conversations Search ⌘K Ask Shyne MG 284 Total Recorded 76% Avg Score 68% Above Target 12 Needs Coaching SALES COACHING · CONVERSATION LIBRARY All Conversations 284 records Export CSV Dashboard Filters ▾ TICKET # EMPLOYEE DATE & TIME LOCATION DURATION CHECKPOINTS MET SCORE STATUS — SL Sofia L.Live Jul 2, 2026, 7:14 AM SSNB 1m 30s 0/8 A 95% Scored ✓ Member Review 🚩 — AJ Alex J.Live Jul 2, 2026, 6:14 AM MLAS 1m 37s 0/8 A 95% Scored ✓ Member Review 🚩 — MR Marcus R.Live Jul 2, 2026, 5:14 AM MLAS 1m 44s 0/8 A 95% Scored ✓ Member Review 🚩 — DT Devon T.Live Jul 2, 2026, 4:14 AM Piscataway 1m 51s 0/8 A 95% Scored ✓ Member Review 🚩 — KM Keisha M.Live Jul 2, 2026, 3:14 AM SSNB 1m 58s 0/8 A 95% Scored ✓ Member Review 🚩 — SL Sofia L.Live Jul 2, 2026, 2:14 AM SSNB 2m 05s 0/8 B 83% Scored — Review 🚩 — AJ Alex J.Live Jul 2, 2026, 1:14 AM MLAS 2m 12s 0/8 B 83% Scored — Review 🚩 — MR Marcus R.Live Jul 2, 2026, 12:14 AM MLAS 2m 19s 0/8 B 83% Scored — Review 🚩 — DT Devon T.Live Jul 1, 2026, 11:14 PM Piscataway 2m 26s 0/8 B 83% Scored — Review 🚩 — KM Keisha M.Live Jul 1, 2026, 10:14 PM SSNB 2m 33s 0/8 B 83% Scored — Review 🚩 — SL Sofia L.Live Jul 1, 2026, 9:14 PM SSNB 2m 40s 0/8 C 71% Scored — Review 🚩 — AJ Alex J.Li"
+}

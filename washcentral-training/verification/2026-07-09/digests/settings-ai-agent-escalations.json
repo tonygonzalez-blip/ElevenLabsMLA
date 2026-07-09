@@ -1,0 +1,104 @@
+{
+ "url": "/settings-ai-agent-escalations.html",
+ "docTitle": "AI Agent Escalations — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›AI Agent · Escalations"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Overview",
+  "Configuration",
+  "Knowledge Base",
+  "Channels & Deployment",
+  "Conversations",
+  "Escalations",
+  "Analytics",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Escalation Rules",
+  "Claim Next",
+  "Filters 0",
+  "Search",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Claim Next",
+  "Filters 0",
+  "Search"
+ ],
+ "tableHeaders": [
+  "Customer",
+  "Channel",
+  "Reason",
+  "Priority",
+  "Status",
+  "Waiting",
+  "Assigned"
+ ],
+ "kpiLabels": [
+  "7Open 3Claimed 6m 12sAvg Wait 1SLA Breach 23Resolved Today",
+  "7Open",
+  "7",
+  "Open",
+  "3Claimed",
+  "3",
+  "Claimed",
+  "6m 12sAvg Wait",
+  "6m 12s",
+  "Avg Wait",
+  "1SLA Breach",
+  "1",
+  "SLA Breach",
+  "23Resolved Today",
+  "23",
+  "Resolved Today"
+ ],
+ "inputPlaceholders": [
+  "Search escalations…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "High",
+  "Open",
+  "Medium",
+  "Claimed",
+  "Low",
+  "Resolved"
+ ],
+ "firstRows": [
+  "Priya AnandCUST-20741 | Voice | Negative sentiment · billing dispute | High | Open | 8m 41s | Unassigned",
+  "Greg SalasCUST-16442 | Web | Refund above cap ($120) | High | Open | 6m 02s | Unassigned",
+  "Renee CaldwellCUST-19002 | SMS | Customer asked for a manager | Medium | Claimed | 2m 18s | You"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Overview Configuration Knowledge Base Channels & Deployment Conversations Escalations Analytics Marketing ▾ Integrations SETTINGS AI Agent · Escalations Search ⌘K Ask Shyne MG 7 Open 3 Claimed 6m 12s Avg Wait 1 SLA Breach 23 Resolved Today AI AGENT · HUMAN HANDOFF Escalations 7 open · 3 claimed Escalation Rules Claim Next Filters Search CUSTOMER CHANNEL REASON PRIORITY STATUS WAITING ASSIGNED Priya Anand CUST-20741 Voice Negative sentiment · billing dispute High Open 8m 41s Unassigned Greg Salas CUST-16442 Web Refund above cap ($120) High Open 6m 02s Unassigned Renee Caldwell CUST-19002 SMS Customer asked for a manager Medium Claimed 2m 18s You Daniel Pham CUST-21044 Web Unresolved after 8 turns Medium Open 4m 55s Unassigned Maria Okafor CUST-17789 Voice Complex fleet billing question Low Claimed 1m 03s J. Ortiz Kevin Tran CUST-15521 Web Disputed auto-renewal High Resolved — S. Reed +1 (305) 555-0173 Guest · no account SMS Lost item left in vehicle Low Resolved — S. Reed Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

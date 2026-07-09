@@ -1,0 +1,91 @@
+{
+ "url": "/settings-prepaid-book-types.html",
+ "docTitle": "Prepaid Book Types",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Prepaid Book Types"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Cancellation Reasons",
+  "Refund Reasons",
+  "Rewash Reasons",
+  "Event Types",
+  "Transaction Types",
+  "Issue Status Types",
+  "Prepaid Book Types",
+  "Prepaid Book Type Types",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "ID",
+  "Description",
+  "Wash Qty",
+  "Wash Value",
+  "Book Price",
+  "Taxable"
+ ],
+ "kpiLabels": [
+  "12Total Book Types 11Active 8On Sale 4With Inventory",
+  "12Total Book Types",
+  "12",
+  "Total Book Types",
+  "11Active",
+  "11",
+  "Active",
+  "8On Sale",
+  "8",
+  "On Sale",
+  "4With Inventory",
+  "4",
+  "With Inventory"
+ ],
+ "inputPlaceholders": [
+  "Search prepaid book types…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load prepaid book types (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ Cancellation Reasons Refund Reasons Rewash Reasons Event Types Transaction Types Issue Status Types Prepaid Book Types Prepaid Book Type Types VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Prepaid Book Types Search ⌘K Ask Shyne MG 12 Total Book Types 11 Active 8 On Sale 4 With Inventory Prepaid Book Sales Trend Last 12 months 12 ↑ +9% Jan Dec Breakdown by Book Category By service type Wash Books 50% Detail Books 30% Lube Books 20% Availability Status Configuration health 92% ACTIVE 0% DRAFT 8% INACTIVE SETTINGS · PREPAID BOOK TYPES Prepaid Book Types List Loading… + New Record Filters Search ID DESCRIPTION WASH QTY WASH VALUE BOOK PRICE TAXABLE Couldn’t load prepaid book types (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 1–1 of 1 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

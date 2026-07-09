@@ -1,0 +1,35 @@
+{
+ "url": "/login.html",
+ "docTitle": "WashCentral — Sign In",
+ "h1": [
+  "Welcome back"
+ ],
+ "h2": [
+  "One platform for your entire car wash operation."
+ ],
+ "h3": [],
+ "breadcrumb": [],
+ "railButtons": [],
+ "sidebarItems": [],
+ "buttons": [
+  "Show password",
+  "Sign In"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "you@company.com",
+  "••••••••"
+ ],
+ "labels": [
+  "Email",
+  "Password",
+  "Tenant / Customer Code",
+  "Remember me"
+ ],
+ "chips": [],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "One platform for your entire car wash operation. Revenue intelligence, CRM, marketing, and operations — unified across every location. Command Center Revenue, members, and uptime across every location in real time. CRM & Members Unified customer records, membership tiers, and support history. Operational Intelligence Connected analytics, marketing, and workflows across all sites. v26.0628.001 Welcome back Sign in to your WashCentral account. Email Password Tenant / Customer Code Remember me Forgot password? Sign In"
+}

@@ -1,0 +1,75 @@
+{
+ "url": "/settings-hardware-terminals.html",
+ "docTitle": "Terminals",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Terminals"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Hardware / Terminals",
+  "Screen Layout",
+  "System Types",
+  "Lube Buttons",
+  "Lube Checklists",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Terminal",
+  "Location",
+  "IP",
+  "Software Version",
+  "OS",
+  "Last Seen"
+ ],
+ "kpiLabels": [
+  "—Total Terminals",
+  "—",
+  "Total Terminals"
+ ],
+ "inputPlaceholders": [
+  "Search by terminal or location…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load records (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ Hardware / Terminals Screen Layout System Types Lube Buttons Lube Checklists UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Terminals Search ⌘K Ask Shyne MG — Total Terminals SETTINGS · TERMINALS Terminals List Loading… + New Record TERMINAL LOCATION IP SOFTWARE VERSION OS LAST SEEN Couldn’t load records (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,72 @@
+{
+ "url": "/lms-home.html",
+ "docTitle": "My Dashboard — WashCentral Academy",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Academy›My Dashboard"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "My Dashboard",
+  "Course Catalog",
+  "Learning Paths",
+  "My Learning",
+  "Admin Dashboard",
+  "Users & Enrollment",
+  "Course Management",
+  "Reports & Compliance"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "View All",
+  "Start Course",
+  "Course Details",
+  "Browse Catalog",
+  "Start",
+  "My Learning Paths",
+  "My Certificates",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "0 Courses Enrolled 0 Completed 0h Hours Learned 0 Certificates Earned",
+  "0",
+  "Courses Enrolled",
+  "Completed",
+  "0h",
+  "Hours Learned",
+  "Certificates Earned"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Platform",
+  "Beginner",
+  "Command Center",
+  "Analytics",
+  "CRM",
+  "Marketing",
+  "Sales",
+  "Fast Starter First Certificate 7-Day Streak Analytics Pro Top Learner Platform Expert",
+  "Fast Starter",
+  "First Certificate",
+  "7-Day Streak",
+  "Analytics Pro",
+  "Top Learner",
+  "Platform Expert"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Academy ACADEMY My Dashboard Course Catalog Learning Paths My Learning ADMIN Admin Dashboard Users & Enrollment Course Management Reports & Compliance ACADEMY My Dashboard Your learning overview — progress, assignments, and achievements. Search ⌘K Ask Shyne MG 0 COURSES ENROLLED 0 COMPLETED 0h HOURS LEARNED 0 CERTIFICATES EARNED Continue Learning View All PLATFORM PLATFORM BEGINNER Getting Started with WashCentral WashCentral is the all-in-one platform built specifically for car wash operators who need real-time visibility across every location. This course walks you thro… 0% complete · 0 of 6 lessons done Start Course Course Details 45m total All Courses Browse Catalog PLATFORM Getting Started with WashCentral Rachel Kim · 45m Not started 0 of 6 lessons done Start COMMAND CENTER Command Center Mastery Rachel Kim · 1h 20m Not started 0 of 10 lessons done Start ANALYTICS Executive Dashboard & KPIs Dr. Priya Nair · 2h 15m Not started 0 of 13 lessons done Start CRM CRM Deep Dive: Customers & Members James Okafor · 1h 45m Not started 0 of 11 lessons done Start MARKETING Marketing Campaigns & Automation Sofia Reyes · 2h Not started 0 of 12 lessons done Start SALES Sales & Transaction Management Tom Delgado · 1h 10m Not started 0 of 9 lessons done Start My Achievements 3 earned · 3 locked Fast Starter First Certificate 7-Day Streak Analytics Pro Top Learner Platform Expert Org Leaderboard 1 SR Sofia Reyes Marketing Mgr 4,820 pts 2 JO James Okafor"
+}

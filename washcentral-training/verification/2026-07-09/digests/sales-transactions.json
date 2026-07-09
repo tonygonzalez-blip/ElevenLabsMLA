@@ -1,0 +1,90 @@
+{
+ "url": "/sales-transactions.html",
+ "docTitle": "Tickets",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Tickets"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Search",
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "5,049,509",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "5,049,509",
+  "›"
+ ],
+ "tableHeaders": [
+  "Location",
+  "Ticket #",
+  "Date/Time",
+  "Total",
+  "Status",
+  "Tender Type",
+  "Customer"
+ ],
+ "kpiLabels": [
+  "126,237,706Total Tickets —Paid (30d) —Not Washed (30d) —Revenue (30d)",
+  "126,237,706Total Tickets",
+  "126,237,706",
+  "Total Tickets",
+  "—Paid (30d)",
+  "—",
+  "Paid (30d)",
+  "—Not Washed (30d)",
+  "Not Washed (30d)",
+  "—Revenue (30d)",
+  "Revenue (30d)"
+ ],
+ "inputPlaceholders": [
+  "Search by location, ticket #, customer, status…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 121 - Groveport S Hamilton | Shift28753 | 2026-01-11 04:51 | $0.00 | Paid / Not Washed | Cash | —",
+  " | 121 - Groveport S Hamilton | Shift28752 | 2026-01-11 04:51 | $0.00 | Paid / Not Washed | Cash | —",
+  " | 121 - Groveport S Hamilton | Shift28751 | 2026-01-11 04:50 | $0.00 | Paid / Not Washed | Cash | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Tickets Search ⌘K Ask Shyne MG 126,237,706 Total Tickets — Paid (30d) — Not Washed (30d) — Revenue (30d) Ticket Volume Last 12 months 1,370 ↑ +14% Jan Dec By Status Ticket breakdown Paid/Washed 72% Paid/NotWashed 24% Voided 4% Other 0% Ticket Health Status overview 96% PAID 3% NOT WASHED 1% VOIDED SEARCH TICKETS Filters Search Ticket List 126,237,706 RECORDS Export LOCATION TICKET # DATE/TIME TOTAL STATUS TENDER TYPE CUSTOMER 121 - Groveport S Hamilton Shift28753 2026-01-11 04:51 $0.00 Paid / Not Washed Cash — 121 - Groveport S Hamilton Shift28752 2026-01-11 04:51 $0.00 Paid / Not Washed Cash — 121 - Groveport S Hamilton Shift28751 2026-01-11 04:50 $0.00 Paid / Not Washed Cash — 121 - Groveport S Hamilton Shift28750 2026-01-11 04:50 $0.00 Paid / Not Washed Cash — 121 - Groveport S Hamilton Shift28749 2026-01-11 04:50 $0.00 Paid / Not Washed Cash — 121 - Groveport S Hamilton Shift28748 2026-01-11 04:49 $0.00 Paid / Not Washed Cash — 121 - Groveport S Hamilton Shift28747 2026-01-11 04:48 $0.00 Paid / Not Washed Cash — 206 - Miamisburg Springboro Shift38726 2026-01-11 04:46 $0.00 Paid / Not Washed Cash — 206 - Miamisburg Springboro Shift38725 2026-01-11 04:46 $0.00 Paid / Not Washed Cash — 206 - Miamisburg Springboro Shift38724 2026-01-11 04:46 $0.00 Paid / Not Washed Cash — 206 - Miamisburg Springboro Sh"
+}

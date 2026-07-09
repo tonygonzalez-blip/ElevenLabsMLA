@@ -1,0 +1,71 @@
+{
+ "url": "/locations.html",
+ "docTitle": "Locations Overview",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Locations›Locations Overview"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Add site",
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location",
+  "Address",
+  "City",
+  "State",
+  "ZIP",
+  "Phone"
+ ],
+ "kpiLabels": [
+  "—Locations —States —Cities —With Phone on File",
+  "—Locations",
+  "—",
+  "Locations",
+  "—States",
+  "States",
+  "—Cities",
+  "Cities",
+  "—With Phone on File",
+  "With Phone on File"
+ ],
+ "inputPlaceholders": [
+  "Search by name, city, state, or ZIP…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load locations (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History LOCATIONS Locations Overview Search ⌘K Ask Shyne MG — Locations — States — Cities — With Phone on File Locations by State Top states by site count — LOCATIONS · OVERVIEW Location List Loading… Add site Export LOCATION ADDRESS CITY STATE ZIP PHONE Couldn’t load locations (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 0–0 of 0 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,84 @@
+{
+ "url": "/support-tickets.html",
+ "docTitle": "Support Tickets — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Support›Support Tickets"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Ticket #",
+  "Subject",
+  "Location",
+  "Priority",
+  "Status",
+  "Assigned To",
+  "Created"
+ ],
+ "kpiLabels": [
+  "18Open 6In Progress 4Resolved Today 4.2 hrsAvg Resolution",
+  "18Open",
+  "18",
+  "Open",
+  "6In Progress",
+  "6",
+  "In Progress",
+  "4Resolved Today",
+  "4",
+  "Resolved Today",
+  "4.2 hrsAvg Resolution",
+  "4.2 hrs",
+  "Avg Resolution"
+ ],
+ "inputPlaceholders": [
+  "Search support tickets…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | TKT-4201 | POS not printing receipts | MLAS | High | In Progress | IT Support | 2025-06-01",
+  " | TKT-4200 | Customer overcharge dispute | SSNB | High | Open | Manager | 2025-06-01",
+  " | TKT-4199 | Membership not activating | Piscataway | Medium | Open | Support | 2025-05-31"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History SUPPORT Support Tickets Search ⌘K Ask Shyne MG 18 Open 6 In Progress 4 Resolved Today 4.2 hrs Avg Resolution Ticket Volume Last 12 months 342 ↑ +7% Jan Dec By Category Issue breakdown Billing 34% Technical 28% Feedback 22% General 16% Ticket Health Resolution overview 72% RESOLVED 18% IN PROGRESS 10% OPEN SUPPORT · TICKETS Ticket List 18 records + New Record Export Filters ▾ Search TICKET # SUBJECT LOCATION PRIORITY STATUS ASSIGNED TO CREATED TKT-4201 POS not printing receipts MLAS High In Progress IT Support 2025-06-01 TKT-4200 Customer overcharge dispute SSNB High Open Manager 2025-06-01 TKT-4199 Membership not activating Piscataway Medium Open Support 2025-05-31 TKT-4198 Tunnel E-stop false trigger MLAS Critical Resolved Tech Team 2025-05-31 ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

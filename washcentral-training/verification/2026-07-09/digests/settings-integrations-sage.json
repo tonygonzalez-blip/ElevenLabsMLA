@@ -1,0 +1,80 @@
+{
+ "url": "/settings-integrations-sage.html",
+ "docTitle": "Sage Accounting — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Sage Accounting"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Test Connection",
+  "Edit Configuration",
+  "Settings",
+  "Instructions",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Settings",
+  "Instructions"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Not setConnection ProductionEnvironment —Company ID 0 2 * * *Sync Schedule",
+  "Not setConnection",
+  "Not set",
+  "Connection",
+  "ProductionEnvironment",
+  "Production",
+  "Environment",
+  "—Company ID",
+  "—",
+  "Company ID",
+  "0 2 * * *Sync Schedule",
+  "0 2 * * *",
+  "Sync Schedule"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Accounting Integration",
+  "⚠ Not Configured",
+  "Accounting ERP XML API",
+  "Accounting",
+  "ERP",
+  "XML API"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Sage Accounting Search ⌘K Ask Shyne MG Sage Accounting Accounting Integration ⚠ Not Configured General Ledger · Settings Accounting ERP XML API Test Connection Edit Configuration Not set Connection Production Environment — Company ID 0 2 * * * Sync Schedule Settings Instructions CREDENTIALS SENDER ID — SENDER PASSWORD Not set USER ID — USER PASSWORD Not set COMPANY ID — API ENDPOINT https://api.intacct.com/ia/xml/xmlgw.phtml ENVIRONMENT production GENERAL ENABLED Yes ADMIN NOTES — ENVIRONMENT production SYNC SYNC SCHEDULE (CRON) 0 2 * * * BATCH SIZE 100 MAX RETRIES 3 POSTING DEFAULT JOURNAL — GL ACCOUNT MAPPINGS — SAFETY DRY RUN No Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

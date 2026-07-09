@@ -1,0 +1,75 @@
+{
+ "url": "/inv-items.html",
+ "docTitle": "Inventory Items — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Inventory Items"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "ID",
+  "SKU",
+  "Description",
+  "Item Cost",
+  "Item Price",
+  "QTY on Hand",
+  "Type",
+  "Vendor"
+ ],
+ "kpiLabels": [
+  "248Total Items 12Low Stock 8Categories 14Vendors",
+  "248Total Items",
+  "248",
+  "Total Items",
+  "12Low Stock",
+  "12",
+  "Low Stock",
+  "8Categories",
+  "8",
+  "Categories",
+  "14Vendors",
+  "14",
+  "Vendors"
+ ],
+ "inputPlaceholders": [
+  "Search inventory items…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | INV-001 | CHM-001 | CarPro Iron X 1L | $12.50 | $24.99 | 42 | Chemical | ChemCo Inc",
+  " | INV-002 | SUP-014 | Microfiber Towel 16x16 | $1.20 | $3.99 | 320 | Supplies | CleanPro",
+  " | INV-003 | CHM-005 | Meguiar's Ultimate Wash | $8.75 | $18.99 | 18 | Chemical | Meguiar's"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders INVENTORY Inventory Items Search ⌘K Ask Shyne MG 248 Total Items 12 Low Stock 8 Categories 14 Vendors Item Count Trend Last 12 months 248 ↑ +5% Jan Dec Items by Type By item category Chemical 45% Supplies 32% Equipment 15% Other 8% Item Status Active vs low vs discontinued 85% ACTIVE 10% LOW 5% DISC. INVENTORY · ITEMS Item List 248 records · retail inventory & stock management + New Record Export Filters ▾ Search ID SKU DESCRIPTION ITEM COST ITEM PRICE QTY ON HAND TYPE VENDOR INV-001 CHM-001 CarPro Iron X 1L $12.50 $24.99 42 Chemical ChemCo Inc INV-002 SUP-014 Microfiber Towel 16x16 $1.20 $3.99 320 Supplies CleanPro INV-003 CHM-005 Meguiar's Ultimate Wash $8.75 $18.99 18 Chemical Meguiar's INV-004 SUP-022 Air Freshener Pine $0.45 $1.99 210 Supplies FreshCo INV-005 CHM-009 Tire Shine Spray 32oz $6.25 $14.99 55 Chemical TireMax Showing 1–5 of 5 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

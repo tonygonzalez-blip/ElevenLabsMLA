@@ -1,0 +1,80 @@
+{
+ "url": "/settings-integrations-zoho.html",
+ "docTitle": "Zoho Desk — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Zoho Desk"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Test Connection",
+  "Edit Configuration",
+  "Settings",
+  "Instructions",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Settings",
+  "Instructions"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "Not setConnection USData Center —Org ID bothSync Direction",
+  "Not setConnection",
+  "Not set",
+  "Connection",
+  "USData Center",
+  "US",
+  "Data Center",
+  "—Org ID",
+  "—",
+  "Org ID",
+  "bothSync Direction",
+  "both",
+  "Sync Direction"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Help Desk Integration",
+  "⚠ Not Configured",
+  "OAuth 2.0 Live View Server-side Token",
+  "OAuth 2.0",
+  "Live View",
+  "Server-side Token"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Zoho Desk Search ⌘K Ask Shyne MG Zoho Desk Help Desk Integration ⚠ Not Configured Support Tickets · Settings OAuth 2.0 Live View Server-side Token Test Connection Edit Configuration Not set Connection US Data Center — Org ID both Sync Direction Settings Instructions CREDENTIALS CLIENT ID — CLIENT SECRET Not set ORG ID — DATA CENTER us ACCESS TOKEN Not set REFRESH TOKEN Not set TOKEN EXPIRY — ACCOUNTS SERVER — GENERAL ENABLED Yes ADMIN NOTES — DATA CENTER us ROUTING DEFAULT DEPARTMENT — DEFAULT ASSIGNEE — SYNC SYNC DIRECTION both BEHAVIOR AUTO-CREATE CONTACTS Yes MAPPING STATUS MAPPING — SLA MAPPING — Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

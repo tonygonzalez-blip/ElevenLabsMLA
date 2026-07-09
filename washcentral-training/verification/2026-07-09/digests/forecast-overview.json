@@ -1,0 +1,89 @@
+{
+ "url": "/forecast-overview.html",
+ "docTitle": "Forecasting — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Forecasting›Forecasting"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Period",
+  "Location",
+  "Forecast Revenue",
+  "Actual Revenue",
+  "Variance",
+  "Cars Forecast",
+  "Confidence",
+  "Actions"
+ ],
+ "kpiLabels": [
+  "$248,400Next Month Forecast +2.4%YTD Variance 94%Accuracy 18 monthsData Points",
+  "$248,400Next Month Forecast",
+  "$248,400",
+  "Next Month Forecast",
+  "+2.4%YTD Variance",
+  "+2.4%",
+  "YTD Variance",
+  "94%Accuracy",
+  "94%",
+  "Accuracy",
+  "18 monthsData Points",
+  "18 months",
+  "Data Points"
+ ],
+ "inputPlaceholders": [
+  "Search forecasting…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | June 2025 | All Locations | $248,400 | — | — | 12,840 | 94% | ",
+  " | May 2025 | All Locations | $238,200 | $241,840 | +1.5% | 12,400 | 96% | ",
+  " | April 2025 | All Locations | $222,400 | $218,600 | -1.7% | 11,800 | 93% | "
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting FORECASTING Forecasting Search ⌘K Ask Shyne MG $248,400 Next Month Forecast +2.4% YTD Variance 94% Accuracy 18 months Data Points Revenue Forecast Last 12 months $2.84M ↑ +9.6% Jan Dec Revenue by Location Forecast contribution MLAS 34% SSNB 28% Piscataway 22% Other Locations 16% Forecast Accuracy Variance overview 94% ON TARGET 4% OVER 2% UNDER FORECAST · OVERVIEW Forecast List 4 records Export + New Record PERIOD LOCATION FORECAST REVENUE ACTUAL REVENUE VARIANCE CARS FORECAST CONFIDENCE ACTIONS June 2025 All Locations $248,400 — — 12,840 94% May 2025 All Locations $238,200 $241,840 +1.5% 12,400 96% April 2025 All Locations $222,400 $218,600 -1.7% 11,800 93% June 2025 MLAS $84,200 — — 4,280 92% Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,59 @@
+{
+ "url": "/settings-mobile-features.html",
+ "docTitle": "Mobile App Features & Games — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [
+  "Tenant",
+  "Games",
+  "Wallet & Gift Cards"
+ ],
+ "breadcrumb": [
+  "Settings›Mobile App Features & Games"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "MG",
+  "View JSON",
+  "Save & Publish",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Mobile"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Mobile App Features & Games Search ⌘K MG Features & Games Mobile ● Loaded Per-tenant feature flags · Turn game & wallet modules on/off — no app release View JSON Save & Publish Tenant Which brand's mobile app are you configuring? Save publishes to that tenant's /tenant/config. mcw-demo — Mister Car Wash ewc-demo — Express Wash Concepts atlas-fl — Atlas Car Wash Games Gamification modules that appear on the app dashboard's Play & Win rail. 🎡 Daily Spin Spin-to-win wheel, once per day 🔥 Wash Streak Reward consecutive-day washes 🍀 Lucky Wash Random free-wash surprise 🎟️ Scratch Cards Post-wash scratch-to-reveal 🎰 Slot Machine 3-reel bonus game 🎱 Wash Bingo Collect stamps for a prize Wallet & Gift Cards In-app wallet passes and gift-card purchase/redemption. 👛 Wallet Passes & barcodes in-app 🎁 Gift Cards Buy & send gift cards Loaded ewc-demo. Toggle features, then Save & Publish. LIVE PREVIEW Express Wash Concepts Demo Play & win on every wash PLAY & WIN No games enabled Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Acti"
+}

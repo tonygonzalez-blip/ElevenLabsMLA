@@ -1,0 +1,35 @@
+{
+ "kpis": [],
+ "cards": [],
+ "eyebrow": [],
+ "filtersButton": null,
+ "actionButtons": [
+  {
+   "t": "Sign In",
+   "bg": "rgb(0, 166, 147)",
+   "color": "rgb(255, 255, 255)"
+  }
+ ],
+ "ths": [],
+ "headerCheckbox": false,
+ "rowCheckboxes": 0,
+ "chips": [],
+ "pagination": [],
+ "selects": [],
+ "rowsPerPage": null,
+ "pageButtons": [],
+ "searchInputs": [
+  {
+   "ph": "you@company.com",
+   "value": ""
+  },
+  {
+   "ph": "••••••••",
+   "value": ""
+  }
+ ],
+ "visibleRows": 0,
+ "sampleRows": [],
+ "breadcrumb": [],
+ "listTitleContext": []
+}

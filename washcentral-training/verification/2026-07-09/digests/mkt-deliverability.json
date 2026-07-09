@@ -1,0 +1,82 @@
+{
+ "url": "/mkt-deliverability.html",
+ "docTitle": "Email Deliverability — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Marketing›Deliverability"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Campaigns",
+  "Automation",
+  "SmartLinks",
+  "Customer Segments",
+  "Offers & Promotions",
+  "Email Templates",
+  "Paid Media (DRAFT)",
+  "Deliverability",
+  "Referral Program",
+  "SMS Templates",
+  "RCS Templates",
+  "Mobile Content Blocks",
+  "Push Campaigns"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "List Health",
+  "Bounce Management",
+  "Suppression List",
+  "Domain Warm-Up",
+  "TCPA Consent",
+  "Settings",
+  "Run Full Audit",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "List Health",
+  "Bounce Management",
+  "Suppression List",
+  "Domain Warm-Up",
+  "TCPA Consent",
+  "Settings"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "94.2% Inbox Rate · ↑ 1.4% vs prior mo 0.42% Hard Bounce Rate · within limit 0.18% Spam Complaint Rate · action needed 78 / 100 List Health Score · 3 issues flagged 96.3% TCPA Consent · ↑ 0.9% on track",
+  "94.2% Inbox Rate · ↑ 1.4% vs prior mo",
+  "94.2%",
+  "Inbox Rate · ↑ 1.4% vs prior mo",
+  "0.42% Hard Bounce Rate · within limit",
+  "0.42%",
+  "Hard Bounce Rate · within limit",
+  "0.18% Spam Complaint Rate · action needed",
+  "0.18%",
+  "Spam Complaint Rate · action needed",
+  "78 / 100 List Health Score · 3 issues flagged",
+  "78 / 100",
+  "List Health Score · 3 issues flagged",
+  "96.3% TCPA Consent · ↑ 0.9% on track",
+  "96.3%",
+  "TCPA Consent · ↑ 0.9% on track"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "● Good",
+  "● Watch",
+  "● Action"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Marketing Campaigns Automation SmartLinks Customer Segments Offers & Promotions Email Templates Paid Media (DRAFT) Deliverability Referral Program Email Templates SMS Templates RCS Templates Mobile Content Blocks Push Campaigns MARKETING Deliverability Search ⌘K Ask Shyne MG Spam complaint rate elevated — \"Flash Sale Weekend\" campaign reached 0.18% complaints (threshold: 0.10%). Pausing additional sends recommended. Review campaign → 94.2% Inbox Rate · ↑ 1.4% vs prior mo 0.42% Hard Bounce Rate · within limit 0.18% Spam Complaint Rate · action needed 78 / 100 List Health Score · 3 issues flagged 96.3% TCPA Consent · ↑ 0.9% on track List Health Bounce Management Suppression List Domain Warm-Up TCPA Consent Settings List Health Metrics Key signals affecting inbox placement and sender reputation Run Full Audit Hard Bounce Rate Addresses that don't exist — auto-suppressed 0.42% ● GOOD Soft Bounce Rate Temporary delivery failures (mailbox full, etc.) 1.20% ● WATCH Spam Complaint Rate Google Postmaster / FBL reports 0.18% ● ACTION Unsubscribe Rate Opt-out rate across last 30 days 0.22% ● GOOD List Engagement (30d) % of list that opened at least one email 34.1% ● GOOD Never-Engaged Contacts Subscribed 90+ days, never opened 1,104 ● WATCH Engagement-Based Suppression Automatically stop emailing contacts with poor engagement to protect sender reputation Suppress contacts with no opens in 180 days Move inactive contacts to suppression after 6 months o"
+}

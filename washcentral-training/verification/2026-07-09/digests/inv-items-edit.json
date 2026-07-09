@@ -1,0 +1,82 @@
+{
+ "url": "/inv-items-edit.html",
+ "docTitle": "Edit Inventory Items — WashCentral",
+ "h1": [
+  "Inventory Items Edit"
+ ],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Item Edit",
+  "Inventory Items Edit"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Cancel",
+  "Save Changes",
+  "Item Details",
+  "Pricing & Stock",
+  "Storage & Location",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Item Details",
+  "Pricing & Stock",
+  "Storage & Location",
+  "Save Changes"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "248Total Items 12Low Stock 8Categories 14Vendors",
+  "248Total Items",
+  "248",
+  "Total Items",
+  "12Low Stock",
+  "12",
+  "Low Stock",
+  "8Categories",
+  "8",
+  "Categories",
+  "14Vendors",
+  "14",
+  "Vendors"
+ ],
+ "inputPlaceholders": [
+  "SKU",
+  "Description",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "SKU*",
+  "Description*",
+  "Inventory Type*",
+  "Vendor",
+  "Category",
+  "Active"
+ ],
+ "chips": [
+  "Inventory Item",
+  "Inventory Chemical In Stock",
+  "Inventory",
+  "Chemical",
+  "In Stock"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders Inventory › Item Edit Inventory Items Edit Search ⌘K Ask Shyne MG IN INV-001 Inventory Item Track all inventory products, chemicals, and supplies. Inventory Chemical In Stock Cancel Save Changes 248 Total Items 12 Low Stock 8 Categories 14 Vendors Item Details Pricing & Stock Storage & Location ITEM DETAILS SKU* DESCRIPTION* INVENTORY TYPE* -- Select -- ▾ VENDOR -- Select -- ▾ CATEGORY -- Select -- ▾ ACTIVE Enabled Cancel Save Changes Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

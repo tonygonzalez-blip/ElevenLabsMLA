@@ -1,0 +1,105 @@
+{
+ "url": "/mkt-churn.html",
+ "docTitle": "Churn Intelligence — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Intelligence›Churn Intelligence"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "At-Risk Members",
+  "Win-Back Campaigns",
+  "Churn Analysis",
+  "Intervention Tracking",
+  "Enroll All High Risk",
+  "+ Enroll Selected",
+  "Enroll in Flow",
+  "+ Add Segment Rule",
+  "Export At-Risk List",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "At-Risk Members",
+  "Win-Back Campaigns",
+  "Churn Analysis",
+  "Intervention Tracking",
+  "Enroll All High Risk",
+  "+ Enroll Selected",
+  "Enroll in Flow",
+  "+ Add Segment Rule",
+  "Export At-Risk List"
+ ],
+ "tableHeaders": [
+  "Risk Score",
+  "Customer",
+  "Plan",
+  "Last Visit",
+  "Lifetime Value",
+  "Risk Reason",
+  "Enrollment"
+ ],
+ "kpiLabels": [
+  "127 At-Risk Members $18,400/mo Revenue at Risk 34% Win-Back Rate 8.1% Monthly Churn Rate",
+  "127 At-Risk Members",
+  "127",
+  "At-Risk Members",
+  "$18,400/mo Revenue at Risk",
+  "$18,400/mo",
+  "Revenue at Risk",
+  "34% Win-Back Rate",
+  "34%",
+  "Win-Back Rate",
+  "8.1% Monthly Churn Rate",
+  "8.1%",
+  "Monthly Churn Rate"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "High",
+  "Medium",
+  "Low"
+ ],
+ "firstRows": [
+  " | High | James Thompson | Unlimited | 42 days ago | $892 | No visits 28+ days | Enroll in Flow",
+  " | High | Carla Mendez | Unlimited Plus | 38 days ago | $2,140 | Payment declined ×2 | Enroll in Flow",
+  " | High | Hector Lopez | Unlimited | 51 days ago | $1,580 | No visits 45+ days | Enroll in Flow"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting INTELLIGENCE Churn Intelligence AI-powered churn prediction and automated win-back for at-risk members. Search ⌘K Ask Shyne MG 127 At-Risk Members $18,400/mo Revenue at Risk 34% Win-Back Rate 8.1% Monthly Churn Rate Risk Distribution Current at-risk member breakdown High Risk 23% Medium Risk 41% Low Risk 36% 29 high · 52 medium · 46 low Churn Rate Trend down from 9.8% • 30-day trend 9.8% 8.1% Win-Back Pipeline Active campaign funnel this month 284 Reached 148 Opened (52%) 97 Converted (34%) At-Risk Members Win-Back Campaigns Churn Analysis Intervention Tracking MARKETING · CHURN At-Risk Members 127 members flagged by AI risk model Enroll All High Risk + Enroll Selected RISK SCORE CUSTOMER PLAN LAST VISIT LIFETIME VALUE RISK REASON ENROLLMENT HIGH James Thompson Unlimited 42 days ago $892 No visits 28+ days Enroll in Flow HIGH Carla Mendez Unlimited Plus 38 days ago $2,140 Payment declined ×2 Enroll in Flow HIGH Hector Lopez Unlimited 51 days ago $1,580 No visits 45+ days Enroll in Flow MEDIUM Pat Greene Premium 31 days ago $1,260 Negative SMS sent"
+}

@@ -1,0 +1,60 @@
+{
+ "url": "/txn-house-transactions.html",
+ "docTitle": "House Account Transactions",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›House Account Transactions"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Date",
+  "Ticket #",
+  "Account",
+  "Customer",
+  "Location",
+  "Total"
+ ],
+ "kpiLabels": [
+  "—Total HA Transactions",
+  "—",
+  "Total HA Transactions"
+ ],
+ "inputPlaceholders": [
+  "Search by customer, account, or ticket #…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load records (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS House Account Transactions Search ⌘K Ask Shyne MG — Total HA Transactions TRANSACTIONS · HOUSE ACCOUNT TRANSACTIONS House Account Transactions List Loading… + New Record DATE TICKET # ACCOUNT CUSTOMER LOCATION TOTAL Couldn’t load records (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

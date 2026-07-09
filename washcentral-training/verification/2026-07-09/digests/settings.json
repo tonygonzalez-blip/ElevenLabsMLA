@@ -1,0 +1,55 @@
+{
+ "url": "/settings.html",
+ "docTitle": "Settings — WashCentral",
+ "h1": [
+  "Settings"
+ ],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "WashCentral›Settings"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search settings…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations WASHCENTRAL Settings Search ⌘K Ask Shyne MG Settings System configuration, setup, and platform preferences. 16 categories 92 pages General Account details, departments, profit centers, and platform config. Locations Manage wash sites, regional groups, sub-brands, and payment approvals. Services Wash packages, service types, groups, detail types, and loyalty rules. Payments & Finance Payment methods, discounts, surcharges, tax rates, and GL mappings. Hardware Terminals, kiosks, screen layouts, system types, and lube controls. UI & Display Buttons, screen flows, branding, templates, colors, and macros. Users & Security System users, security levels, and blacklisted plates and accounts. Operations Cancellation, refund, and rewash reasons, event and transaction types. VIP & Membership VIP tiers, unlimited plans, charge frequency, and promotional upgrades. Automation Task scheduler, task parameters, mass SMS log, and user levels. Customer Portal Self-service portal branding, features, access rules, and content. AI Agent Multi-channel customer service AI — web chat, SMS, and voice configuration, conversations, and analytics. Mobile App Atlas Car Wash mobile app — preview the customer-facing iOS / Android"
+}

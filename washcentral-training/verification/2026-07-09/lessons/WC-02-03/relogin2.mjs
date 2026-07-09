@@ -1,0 +1,21 @@
+import { CDP, gotoPage, sleep, closeTarget } from '../../../../tools/cdp-lib.mjs';
+const cdp = await CDP.connect('new');
+await cdp.setViewport(1920, 1080);
+await gotoPage(cdp, 'https://demo.washcentral.com/login.html', 1500);
+const info = await cdp.eval(`(() => {
+  const b = document.querySelector('#qa-btn');
+  if (!b) return { found: false, btns: [...document.querySelectorAll('button')].map(x => ({ id: x.id, t: (x.textContent||'').trim().slice(0,40) })) };
+  const r = b.getBoundingClientRect();
+  return { found: true, text: (b.textContent||'').trim(), visible: r.width>0&&r.height>0, disabled: b.disabled };
+})()`);
+console.log(JSON.stringify(info, null, 1));
+await cdp.click('#qa-btn');
+await sleep(1000);
+console.log('t+1s:', await cdp.eval('location.pathname'));
+await sleep(3000);
+console.log('t+4s:', await cdp.eval('location.pathname'));
+await sleep(4000);
+console.log('t+8s:', await cdp.eval('location.pathname'));
+const after = await cdp.eval(`({ path: location.pathname, body: (document.body.innerText||'').replace(/\s+/g,' ').slice(0,300) })`);
+console.log(JSON.stringify(after, null, 1));
+cdp.close(); await closeTarget(cdp.targetId);

@@ -1,0 +1,115 @@
+{
+ "url": "/mkt-campaigns-edit.html",
+ "docTitle": "Edit Marketing Campaign — WashCentral",
+ "h1": [
+  "Marketing Campaigns Edit"
+ ],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [
+  "Template Library",
+  "Choose an RCS Template",
+  "Send Test Email"
+ ],
+ "breadcrumb": [
+  "Marketing›Campaign Edit",
+  "Marketing Campaigns Edit"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Campaigns",
+  "Automation",
+  "SmartLinks",
+  "Customer Segments",
+  "Offers & Promotions",
+  "Email Templates",
+  "Paid Media (DRAFT)",
+  "Deliverability",
+  "Referral Program",
+  "SMS Templates",
+  "RCS Templates",
+  "Mobile Content Blocks",
+  "Push Campaigns"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Cancel",
+  "Save Changes",
+  "Campaign Details",
+  "Content",
+  "Goals",
+  "Delivery Strategy",
+  "A/B Test",
+  "Weather Gate",
+  "Add Segment",
+  "✕",
+  "Marketing",
+  "Transactional",
+  "Send Test",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Campaign Details",
+  "Content",
+  "Goals",
+  "Delivery Strategy",
+  "A/B Test",
+  "Weather Gate",
+  "Add Segment",
+  "Save Changes"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "4Active Campaigns 18,400Sent This Month 36%Avg Open Rate $8,420Revenue Attributed",
+  "4Active Campaigns",
+  "4",
+  "Active Campaigns",
+  "18,400Sent This Month",
+  "18,400",
+  "Sent This Month",
+  "36%Avg Open Rate",
+  "36%",
+  "Avg Open Rate",
+  "$8,420Revenue Attributed",
+  "$8,420",
+  "Revenue Attributed"
+ ],
+ "inputPlaceholders": [
+  "Campaign Name",
+  "Email subject line",
+  "Optional campaign description",
+  "you@example.com",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Campaign Name*",
+  "Subject Line",
+  "Campaign Type*",
+  "Campaign Mode*",
+  "Status*",
+  "Description",
+  "Scheduled Date",
+  "End Date",
+  "Target Segments",
+  "Send to email address"
+ ],
+ "chips": [
+  "Marketing Campaigns",
+  "MarketingActiveEmail",
+  "Marketing",
+  "Active",
+  "Email"
+ ],
+ "firstRows": [],
+ "modals": [
+  "Template Library",
+  "Choose an RCS Template",
+  "Send Test Email"
+ ],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Marketing Campaigns Automation SmartLinks Customer Segments Offers & Promotions Email Templates Paid Media (DRAFT) Deliverability Referral Program Email Templates SMS Templates RCS Templates Mobile Content Blocks Push Campaigns Marketing › Campaign Edit Marketing Campaigns Edit Search ⌘K Ask Shyne MG Su Summer Membership Drive Marketing Campaigns Summer Membership Drive · Create and manage email, SMS, and digital marketing campaigns. Marketing Active Email Cancel Save Changes 4 Active Campaigns 18,400 Sent This Month 36% Avg Open Rate $8,420 Revenue Attributed Campaign Details Content Goals Delivery Strategy A/B Test Weather Gate CAMPAIGN DETAILS CAMPAIGN NAME* SUBJECT LINE CAMPAIGN TYPE* -- Select -- ▾ CAMPAIGN MODE* One-time Send Send once to your segment. Good for promotions and announcements. Drip Sequence Multi-step timed messages over days or weeks. Email + SMS support. STATUS* -- Select -- ▾ DESCRIPTION SCHEDULED DATE 06/01/2026 END DATE 08/31/2026 AUDIENCE TARGET SEGMENTS Add Segment Define who receives this campaign. Manage segments → Cancel Save Changes Template Library ✕ Marketing Transactional Choose an RCS Template ✕ + New RCS template → Manage all templates → Send Test Email ✕ Send to email address The test will use sample data for all personalization tokens. Cancel Send Test Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In "
+}

@@ -1,0 +1,66 @@
+{
+ "url": "/qa-scripts.html",
+ "docTitle": "Scoring Scripts — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Sales Coaching›Scoring Scripts"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Script",
+  "Edit",
+  "Duplicate",
+  "Make Default",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "2Active Scripts 7Avg Checkpoints 1Draft 284Scored This Month",
+  "2Active Scripts",
+  "2",
+  "Active Scripts",
+  "7Avg Checkpoints",
+  "7",
+  "Avg Checkpoints",
+  "1Draft",
+  "1",
+  "Draft",
+  "284Scored This Month",
+  "284",
+  "Scored This Month"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys SALES COACHING Scoring Scripts Search ⌘K Ask Shyne MG 2 Active Scripts 7 Avg Checkpoints 1 Draft 284 Scored This Month SALES COACHING · SCORING SCRIPTS Scoring Script Library Define what the AI listens for and how each interaction is graded + New Script Standard Wash Script ACTIVE · DEFAULT Full interaction script for standard wash sale — greeting through close 8 checkpoints 100% total weight All locations Target: 75% Edit Duplicate Membership Upsell Focus ACTIVE Conversion-focused script for driving Unlimited membership sign-ups 5 checkpoints 100% total weight All locations Target: 80% Edit Duplicate Make Default Returning Customer Re-engagement DRAFT Win-back script for lapsed members — draft, not yet active 4 checkpoints 100% total weight All locations Target: 70% Edit Duplicate 💡 Industry Best Practices for Sales Scoring Based on best practices from call center QA, dealership sales, and retail banking: weight revenue-critical checkpoints (membership, upsell) highest (20–30% each), compliance/required items at medium weight, and soft skills (greeting, closing) at 10%. Target 75–80% as a \"pass\" threshold — too strict reduces morale, too lenient reduces impact. Loading… 2:00 REMAINING Still there? Your session will end i"
+}

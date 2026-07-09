@@ -1,0 +1,90 @@
+{
+ "url": "/settings-mobile-branding.html",
+ "docTitle": "Mobile App Branding — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [
+  "Tenant",
+  "Brand",
+  "Colors",
+  "Support"
+ ],
+ "breadcrumb": [
+  "Settings›Mobile App Branding"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "MG",
+  "View JSON",
+  "Save & Publish",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Mister Car Wash",
+  "Unlimited shine, every day",
+  "https://cdn.example.com/logo.png",
+  "https://cdn.example.com/logo-dark.png",
+  "https://cdn.example.com/hero.jpg",
+  "#0a4dff",
+  "#0838b8",
+  "#34c759",
+  "(520) 555-0150",
+  "support@brand.com",
+  "https://brand.com/faq",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Customer code",
+  "Display name",
+  "Tagline",
+  "Logo URL (light)",
+  "Logo URL (dark)",
+  "Hero image URL",
+  "Primary",
+  "Primary (dark)",
+  "Hero gradient (3 stops)",
+  "Accent",
+  "Support phone",
+  "Support email",
+  "FAQ URL"
+ ],
+ "chips": [
+  "Mobile",
+  "● Loaded",
+  "Daily SpinWash StreakRewards",
+  "Daily Spin",
+  "Wash Streak",
+  "Rewards"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Mobile App Branding Search ⌘K MG Mobile App Branding Mobile ● Loaded Per-tenant TenantTheme · Colors, logos & copy the app picks up with no release View JSON Save & Publish Tenant Which brand's mobile app are you theming? Save publishes to that tenant's /tenant/config. Customer code mcw-demo — Mister Car Wash ewc-demo — Express Wash Concepts atlas-fl — Atlas Car Wash Brand Identity shown across the app. Logos are image URLs (CDN) — binary upload is out of scope for this demo. Display name Tagline Logo URL (light) Logo URL (dark) Hero image URL Colors Primary drives headers & CTAs; gradient paints the hero; accent highlights chips & rewards. Primary Primary (dark) Hero gradient (3 stops) Accent Accent is written into the mobile light & dark token sets; the neutral tokens keep the app readable on every brand. Support Shown on the app's help screen. Support phone Support email FAQ URL Loaded ewc-demo. Edit and Save & Publish. LIVE PREVIEW E Express Wash Concepts Demo MEMBERSHIP Unlimited Wash Club Next wash is on us — tap to redeem at the kiosk. Daily Spin Wash Streak Rewards Wash Now Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or pres"
+}

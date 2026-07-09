@@ -1,0 +1,73 @@
+{
+ "url": "/settings-task-parameters.html",
+ "docTitle": "Task Parameters",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Task Parameters"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Task Scheduler",
+  "Task Parameters",
+  "Mass SMS Log",
+  "User Levels",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Name",
+  "Table",
+  "Updated By",
+  "Updated"
+ ],
+ "kpiLabels": [
+  "—Total Parameters",
+  "—",
+  "Total Parameters"
+ ],
+ "inputPlaceholders": [
+  "Search task parameters…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load task parameters (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Task Scheduler Task Parameters Mass SMS Log User Levels Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Task Parameters Search ⌘K Ask Shyne MG — Total Parameters SETTINGS · TASK PARAMETERS Task Parameters List Loading… + New Record NAME TABLE UPDATED BY UPDATED Couldn’t load task parameters (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 0–0 of 0 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

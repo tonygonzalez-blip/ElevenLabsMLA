@@ -1,0 +1,106 @@
+{
+ "url": "/crm-house-account-detail.html",
+ "docTitle": "House Account Detail — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›House Account"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "M",
+  "← Back",
+  "Search",
+  "Statement",
+  "Delete Account",
+  "Edit Account",
+  "Overview",
+  "Details",
+  "Contacts",
+  "Vehicles",
+  "Invoices",
+  "Payments",
+  "Activity",
+  "Documents",
+  "Notes",
+  "Audit Trail",
+  "Post Note",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "Details",
+  "Contacts",
+  "Vehicles",
+  "Invoices",
+  "Payments",
+  "Activity",
+  "Documents",
+  "Notes",
+  "Audit Trail",
+  "Post Note"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "$4,280Total Balance $5,720Available Credit $10,000Credit Limit $892Monthly Avg Mar 24, 2026Last Payment Feb 8, 2024Account Since",
+  "$4,280Total Balance",
+  "$4,280",
+  "Total Balance",
+  "$5,720Available Credit",
+  "$5,720",
+  "Available Credit",
+  "$10,000Credit Limit",
+  "$10,000",
+  "Credit Limit",
+  "$892Monthly Avg",
+  "$892",
+  "Monthly Avg",
+  "Mar 24, 2026Last Payment",
+  "Mar 24, 2026",
+  "Last Payment",
+  "Feb 8, 2024Account Since",
+  "Feb 8, 2024",
+  "Account Since"
+ ],
+ "inputPlaceholders": [
+  "Add a note…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Visible to:"
+ ],
+ "chips": [
+  "Active",
+  "Net 30 $10,000 Credit Limit 14 Vehicles",
+  "Net 30",
+  "$10,000 Credit Limit",
+  "14 Vehicles",
+  "Vehicles 14",
+  "Invoices 10",
+  "Payments 8",
+  "Documents 3",
+  "Statement"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History CRM House Account Search ⌘K Ask Shyne M TS Tech Solutions Inc Active HA-0042 · Fort Lauderdale · John Smith Net 30 $10,000 Credit Limit 14 Vehicles ← Back Search Statement Delete Account Edit Account $4,280 Total Balance $5,720 Available Credit $10,000 Credit Limit $892 Monthly Avg Mar 24, 2026 Last Payment Feb 8, 2024 Account Since RELATED Vehicles 14 Invoices 10 Payments 8 Documents 3 Statement Overview Details Contacts Vehicles Invoices Payments Activity Documents Notes Audit Trail CRM · HOUSE ACCOUNTS Internal Notes 4 notes on record Visible to: Everyone Management Only Post Note MG Miguel.Gonzalez Apr 21, 2026 · 9:14 AM Everyone Customer called to inquire about invoice INV-2026-0047 status. Confirmed payment will be received by Apr 25. Account in good standing. CR Carlos.Reyes Mar 18, 2026 · 2:45 PM Everyone Annual credit review completed. No changes to credit limit. Account maintains excellent payment history — avg 18 days to pay. KR Karla.Reyes Jan 14, 2026 · 10:30 AM Everyone Spoke with Lisa Chang (billing). They have a new AP email: billing@techsolutions.com. Updated contact. MG Miguel.Gonzalez Feb 8, 2024 · 10:22 AM Management Only New account onboarded. Fleet of 14 vehicles. Volume discount of 5% applied per corporate agreement. Net 30 terms. Loading"
+}

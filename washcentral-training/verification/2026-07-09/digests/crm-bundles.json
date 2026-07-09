@@ -1,0 +1,78 @@
+{
+ "url": "/crm-bundles.html",
+ "docTitle": "Bundles — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›Bundles"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Prepaid Books",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Bundle",
+  "Filters 0",
+  "Search",
+  "25",
+  "‹",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Bundle Name",
+  "Services Included",
+  "Price",
+  "Discount",
+  "Valid At",
+  "Status",
+  "Sold"
+ ],
+ "kpiLabels": [
+  "32 Total Bundles 28 Active 142 Sold This Month $8,436 Revenue",
+  "32 Total Bundles",
+  "32",
+  "Total Bundles",
+  "28 Active",
+  "28",
+  "Active",
+  "142 Sold This Month",
+  "142",
+  "Sold This Month",
+  "$8,436 Revenue",
+  "$8,436",
+  "Revenue"
+ ],
+ "inputPlaceholders": [
+  "Search by bundle name or services…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active"
+ ],
+ "firstRows": [
+  "Summer SpecialBD-001 | Premium Wash, Interior Vac | $29.99 | 15% | All Locations | Active | 23",
+  "Fleet PackBD-002 | 5 Premium Washes | $119.99 | 20% | Fort Lauderdale, Tampa | Active | 8",
+  "Monthly Value PackBD-003 | Unlimited Wash, Tire Shine | $49.99 | 12% | All Locations | Active | 45"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Bundles Search ⌘K Ask Shyne MG 32 Total Bundles 28 Active 142 Sold This Month $8,436 Revenue Bundle Sales Trend Last 12 months 142 ↑ +22.3% Jan Dec Revenue by Bundle Share of monthly revenue Monthly Value Pack 38% Spring Promo 26% Summer Special 18% Fleet Pack 12% Quick Shine 6% Bundle Status Portfolio health at a glance 88% ACTIVE 12% INACTIVE 28 active 4 inactive CRM · BUNDLES Bundle List 32 bundles · 142 sold this month + New Bundle Filters Search BUNDLE NAME SERVICES INCLUDED PRICE DISCOUNT VALID AT STATUS SOLD Summer Special BD-001 Premium Wash, Interior Vac $29.99 15% All Locations Active 23 Fleet Pack BD-002 5 Premium Washes $119.99 20% Fort Lauderdale, Tampa Active 8 Monthly Value Pack BD-003 Unlimited Wash, Tire Shine $49.99 12% All Locations Active 45 Quick Shine BD-004 Basic Wash, Spot Free Rinse $17.99 10% Miami North, Orlando Active 31 Spring Promo BD-005 Premium Wash, Wax, Detail $59.99 25% All Locations Active 35 ROWS PER PAGE: 25 50 100 25 ‹ › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

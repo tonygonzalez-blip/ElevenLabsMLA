@@ -1,0 +1,93 @@
+{
+ "url": "/settings-vip-account-service.html",
+ "docTitle": "VIP Account Service",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›VIP Account Service"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "VIP Types",
+  "VIP Monthly Types",
+  "VIP Charge Frequency",
+  "VIP Account Service",
+  "VIP Account Loyalty Discounts",
+  "Loyalty Discounts",
+  "Unlimited Promotions",
+  "Promotional Upgrades",
+  "Memberships & Rewards",
+  "Memberships & Rewards Types",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description",
+  "VIP Type",
+  "Service",
+  "Frequency",
+  "Active"
+ ],
+ "kpiLabels": [
+  "8Total Configs 8Active 4VIP Types 12Services",
+  "8Total Configs",
+  "8",
+  "Total Configs",
+  "8Active",
+  "Active",
+  "4VIP Types",
+  "4",
+  "VIP Types",
+  "12Services",
+  "12",
+  "Services"
+ ],
+ "inputPlaceholders": [
+  "Search vip account service…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Yes"
+ ],
+ "firstRows": [
+  "Gold Monthly Wash | Gold | Best Wash | Monthly | Yes",
+  "Gold Weekly Wash | Gold | Better Wash | Weekly | Yes"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ VIP Types VIP Monthly Types VIP Charge Frequency VIP Account Service VIP Account Loyalty Discounts Loyalty Discounts Unlimited Promotions Promotional Upgrades Memberships & Rewards Memberships & Rewards Types Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS VIP Account Service Search ⌘K Ask Shyne MG 8 Total Configs 8 Active 4 VIP Types 12 Services VIP Config Trend Last 8 months · ↑ +5% Configs by VIP Type Service configuration breakdown Bronze 25% Silver 25% Gold 25% Platinum 25% Config Status Current state breakdown 100% Active SETTINGS · VIP ACCOUNT SERVICE VIP Account Service List 2 records + New Record Filters Search DESCRIPTION VIP TYPE SERVICE FREQUENCY ACTIVE Gold Monthly Wash Gold Best Wash Monthly Yes Gold Weekly Wash Gold Better Wash Weekly Yes Showing 1–2 of 2 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

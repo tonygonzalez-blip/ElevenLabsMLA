@@ -1,0 +1,78 @@
+{
+ "url": "/audit-log.html",
+ "docTitle": "Audit Log — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Audit›Audit Log"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Date/Time",
+  "User",
+  "Action",
+  "Module",
+  "Record",
+  "Location",
+  "IP Address"
+ ],
+ "kpiLabels": [
+  "842Events Today 5,240This Week 18Unique Users 3Critical Events",
+  "842Events Today",
+  "842",
+  "Events Today",
+  "5,240This Week",
+  "5,240",
+  "This Week",
+  "18Unique Users",
+  "18",
+  "Unique Users",
+  "3Critical Events",
+  "3",
+  "Critical Events"
+ ],
+ "inputPlaceholders": [
+  "Search audit log…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2025-06-01 10:44 | M. Gonzalez | Updated | Settings | Account Info | MLAS | 192.168.1.10",
+  " | 2025-06-01 10:32 | L. Nguyen | Created | CRM | Customer #10284 | SSNB | 192.168.2.15",
+  " | 2025-06-01 10:18 | J. Martinez | Deleted | Transactions | Payment #TKT-10880 | MLAS | 192.168.1.12"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History AUDIT Audit Log Search ⌘K Ask Shyne MG 842 Events Today 5,240 This Week 18 Unique Users 3 Critical Events Event Volume Last 12 months 62,880 ↑ +14.7% Jan Dec Action Types By event category Updated 45% Created 30% Login / Logout 18% Deleted 7% Event Severity System health overview 91% NORMAL 6% WARNING 3% CRITICAL AUDIT · SYSTEM EVENTS Audit Log List 4 records Export + New Record Filters ▾ Search DATE/TIME USER ACTION MODULE RECORD LOCATION IP ADDRESS 2025-06-01 10:44 M. Gonzalez Updated Settings Account Info MLAS 192.168.1.10 2025-06-01 10:32 L. Nguyen Created CRM Customer #10284 SSNB 192.168.2.15 2025-06-01 10:18 J. Martinez Deleted Transactions Payment #TKT-10880 MLAS 192.168.1.12 2025-06-01 09:55 Admin Login System User Session MLAS 192.168.1.10 Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

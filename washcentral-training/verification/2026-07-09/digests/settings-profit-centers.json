@@ -1,0 +1,83 @@
+{
+ "url": "/settings-profit-centers.html",
+ "docTitle": "Profit Centers",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Profit Centers"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Account Information",
+  "Account Types",
+  "Profile Types",
+  "Profit Centers",
+  "Departments",
+  "Categories",
+  "Dayforce Settings",
+  "Policy Category",
+  "Forms Category",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description",
+  "Include in Daily Summary"
+ ],
+ "kpiLabels": [
+  "4Total Profit Centers 4In Daily Summary",
+  "4Total Profit Centers",
+  "4",
+  "Total Profit Centers",
+  "4In Daily Summary",
+  "In Daily Summary"
+ ],
+ "inputPlaceholders": [
+  "Search profit centers…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Yes"
+ ],
+ "firstRows": [
+  "WASH | Yes",
+  "LUBE | Yes",
+  "DETAIL | Yes"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Account Information Account Types Profile Types Profit Centers Departments Categories Dayforce Settings Policy Category Forms Category Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Profit Centers Search ⌘K Ask Shyne MG 4 Total Profit Centers 4 In Daily Summary SETTINGS · PROFIT CENTERS Profit Centers List 4 records + New Record DESCRIPTION INCLUDE IN DAILY SUMMARY WASH Yes LUBE Yes DETAIL Yes STORE Yes ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

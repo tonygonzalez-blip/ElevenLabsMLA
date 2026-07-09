@@ -1,0 +1,97 @@
+{
+ "url": "/mkt-report-campaigns.html",
+ "docTitle": "Campaign Performance Report — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Analytics›Campaign Performance"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Export CSV",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Campaign Name ↕",
+  "Channel(s)",
+  "Sent ↕",
+  "Open Rate ↕",
+  "Click Rate ↕",
+  "Conversions ↕",
+  "Revenue ↕",
+  "ROI ↕",
+  "Status"
+ ],
+ "kpiLabels": [
+  "12 Campaigns Analyzed 94,200 Total Sent 34.2% Avg Open Rate 8.7% Avg Click Rate 1,847 Total Conversions $42,180 Revenue Attributed",
+  "12 Campaigns Analyzed",
+  "12",
+  "Campaigns Analyzed",
+  "94,200 Total Sent",
+  "94,200",
+  "Total Sent",
+  "34.2% Avg Open Rate",
+  "34.2%",
+  "Avg Open Rate",
+  "8.7% Avg Click Rate",
+  "8.7%",
+  "Avg Click Rate",
+  "1,847 Total Conversions",
+  "1,847",
+  "Total Conversions",
+  "$42,180 Revenue Attributed",
+  "$42,180",
+  "Revenue Attributed"
+ ],
+ "inputPlaceholders": [
+  "Search campaigns…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active",
+  "Completed",
+  "Draft"
+ ],
+ "firstRows": [
+  "Summer Membership Drive | Email + SMS | 18,400 | 38.2% | 11.4% | 412 | $9,840 | 4.2x | Active",
+  "Lapsed Member Win-Back | Email | 6,200 | 29.1% | 7.3% | 98 | $2,156 | 2.8x | Completed",
+  "New Member Welcome | Email + SMS + Push | 3,100 | 52.4% | 18.6% | 287 | $6,314 | 8.1x | Active"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting ANALYTICS Campaign Performance Search ⌘K Ask Shyne MG Filters Export CSV 12 Campaigns Analyzed 94,200 Total Sent 34.2% Avg Open Rate 8.7% Avg Click Rate 1,847 Total Conversions $42,180 Revenue Attributed Revenue by Campaign Top 5 campaigns by attributed revenue Summer Membership Drive $9,840 Fleet Account Promo $8,060 New Member Welcome $6,314 VIP Exclusive Offer $6,152 Birthday Reward $4,466 Open Rate Trend 30-day rolling open rate across all email campaigns 34.2% Current avg · up from 31.4% last period 34.2% Day 1 Day 30 All Campaigns CAMPAIGN NAME ↕ CHANNEL(S) SENT ↕ OPEN RATE ↕ CLICK RATE ↕ CONVERSIONS ↕ REVENUE ↕ ROI ↕ STATUS Summer Membership Drive Email + SMS 18,400 38.2% 11.4% 412 $9,840 4.2x ACTIVE Lapsed Member Win-Back Email 6,200 29.1% 7.3% 98 $2,156 2.8x COMPLETED New Member Welcome Email + SMS + Push 3,100 52.4% 18.6% 287 $6,314 8.1x ACTIVE Fleet Account Promo Email 840 44.7% 13.2% 62 $8,060 6.4x COMPLETED Birthday Reward SMS 4,600 — 9.8% 203 $4,466 5.5x ACTIVE Upgrade Push Campaign Push 2,100 — 7.1% 47 $1,034 3.1x ACTIVE Spring Refe"
+}

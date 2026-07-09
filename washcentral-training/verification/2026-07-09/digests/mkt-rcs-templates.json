@@ -1,0 +1,94 @@
+{
+ "url": "/mkt-rcs-templates.html",
+ "docTitle": "RCS Templates — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Marketing›RCS Templates"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Campaigns",
+  "Automation",
+  "SmartLinks",
+  "Customer Segments",
+  "Offers & Promotions",
+  "Email Templates",
+  "Paid Media (DRAFT)",
+  "Deliverability",
+  "Referral Program",
+  "SMS Templates",
+  "RCS Templates",
+  "Mobile Content Blocks",
+  "Push Campaigns"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Template",
+  "Export",
+  "All",
+  "Retention",
+  "Win-Back",
+  "Onboarding",
+  "Promotions",
+  "Seasonal",
+  "Locations",
+  "General",
+  "×",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Template Name",
+  "Type",
+  "Category",
+  "Updated"
+ ],
+ "kpiLabels": [
+  "4 Total Templates 4 Message Types 7 Categories 100% Have SMS Fallback",
+  "4 Total Templates",
+  "4",
+  "Total Templates",
+  "4 Message Types",
+  "Message Types",
+  "7 Categories",
+  "7",
+  "Categories",
+  "100% Have SMS Fallback",
+  "100%",
+  "Have SMS Fallback"
+ ],
+ "inputPlaceholders": [
+  "Search RCS templates…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "All",
+  "Retention",
+  "Win-Back",
+  "Onboarding",
+  "Promotions",
+  "Seasonal",
+  "Locations",
+  "General",
+  "card",
+  "carousel",
+  "text",
+  "media"
+ ],
+ "firstRows": [
+  "Win-Back: Rejoin Card OfferRich card with rejoin CTA and location finder for lapsed members. | card | Win-Back | Jun 28, 2026",
+  "Promotions: Plan CarouselCarousel of membership plans with pricing and sign-up actions. | carousel | Promotions | Jun 30, 2026",
+  "Onboarding: Welcome + Quick RepliesPlain text welcome message with quick-reply suggested actions. | text | Onboarding | Jun 25, 2026"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Marketing Campaigns Automation SmartLinks Customer Segments Offers & Promotions Email Templates Paid Media (DRAFT) Deliverability Referral Program Email Templates SMS Templates RCS Templates Mobile Content Blocks Push Campaigns MARKETING RCS Templates Rich Communication Services (RCS) templates — cards, carousels, and suggested actions with automatic SMS fallback. Search ⌘K Ask Shyne MG 4 Total Templates 4 Message Types 7 Categories 100% Have SMS Fallback MARKETING · RCS TEMPLATES 4 templates + New Template Export Category: All Retention Win-Back Onboarding Promotions Seasonal Locations General TEMPLATE NAME TYPE CATEGORY UPDATED Win-Back: Rejoin Card Offer Rich card with rejoin CTA and location finder for lapsed members. CARD WIN-BACK Jun 28, 2026 Promotions: Plan Carousel Carousel of membership plans with pricing and sign-up actions. CAROUSEL PROMOTIONS Jun 30, 2026 Onboarding: Welcome + Quick Replies Plain text welcome message with quick-reply suggested actions. TEXT ONBOARDING Jun 25, 2026 Seasonal: Grand Opening Video Media message announcing a new location grand opening. MEDIA LOCATIONS Jun 20, 2026 Showing 4 of 4 templates Last synced Jul 1, 2026 RCS Preview × Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

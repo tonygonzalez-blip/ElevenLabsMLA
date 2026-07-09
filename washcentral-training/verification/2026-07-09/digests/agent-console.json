@@ -1,0 +1,59 @@
+{
+ "url": "/agent-console.html",
+ "docTitle": "Agent Console — WashCentral",
+ "h1": [],
+ "h2": [
+  "Handoff Queue",
+  "Customer",
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Service Desk›Agent Console"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Prepaid Books",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Enable desktop notifications",
+  "Ask Shyne",
+  "MG",
+  "Mine 0",
+  "Unassigned 0",
+  "Team 0",
+  "All 0",
+  "Voice 0",
+  "SMS 0",
+  "Web 0",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search name, phone, plan, reason…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "All 0",
+  "Voice 0",
+  "SMS 0",
+  "Web 0"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Prepaid Books Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console SERVICE DESK Agent Console Search ⌘K Available Away Busy Offline Ask Shyne MG Handoff Queue 0 waiting avg 0:00 0 high priority Mine 0 Unassigned 0 Team 0 All 0 Voice 0 SMS 0 Web 0 Longest wait first Priority first Most recent first showing 0 No matching handoffs. Select a handoff from the queue to open its console. Customer No conversation selected. Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

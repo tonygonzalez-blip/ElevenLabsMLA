@@ -1,0 +1,73 @@
+{
+ "url": "/inv-adjustments.html",
+ "docTitle": "Inventory Adjustments — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Inventory Adjustments"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location",
+  "Ticket",
+  "Date/Time",
+  "Total",
+  "Shift #",
+  "Cashier"
+ ],
+ "kpiLabels": [
+  "312Total Adjustments 28This Month 142Positive 170Negative",
+  "312Total Adjustments",
+  "312",
+  "Total Adjustments",
+  "28This Month",
+  "28",
+  "This Month",
+  "142Positive",
+  "142",
+  "Positive",
+  "170Negative",
+  "170",
+  "Negative"
+ ],
+ "inputPlaceholders": [
+  "Search inventory adjustments…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | MLAS | TKT-10842 | 2025-06-01 09:14 | $0.00 | SHIFT-441 | J. Martinez",
+  " | SSNB | TKT-10799 | 2025-05-31 14:22 | -$24.99 | SHIFT-440 | L. Nguyen",
+  " | MLAS | TKT-10755 | 2025-05-30 10:05 | $12.50 | SHIFT-438 | K. Davis"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders INVENTORY Inventory Adjustments Search ⌘K Ask Shyne MG 312 Total Adjustments 28 This Month 142 Positive 170 Negative Adjustment Volume Last 12 months 312 ↑ +8% Jan Dec Adjustment Types By adjustment category Negative 55% Positive 45% Write-off 28% Correction 17% Adjustment Accuracy Verified vs flagged records 82% VERIFIED 12% REVIEW 6% FLAGGED INVENTORY · ADJUSTMENTS Adjustment List 312 records · inventory corrections & write-offs + New Record Export Filters ▾ Search LOCATION TICKET DATE/TIME TOTAL SHIFT # CASHIER MLAS TKT-10842 2025-06-01 09:14 $0.00 SHIFT-441 J. Martinez SSNB TKT-10799 2025-05-31 14:22 -$24.99 SHIFT-440 L. Nguyen MLAS TKT-10755 2025-05-30 10:05 $12.50 SHIFT-438 K. Davis Piscataway TKT-10710 2025-05-29 16:48 -$8.75 SHIFT-437 M. Smith Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,31 @@
+{
+ "fields": [
+  {
+   "tag": "input",
+   "type": "text",
+   "value": "",
+   "placeholder": "you@company.com"
+  },
+  {
+   "tag": "input",
+   "type": "password",
+   "value": "",
+   "placeholder": "••••••••"
+  },
+  {
+   "tag": "input",
+   "type": "text",
+   "value": "ewc-demo",
+   "placeholder": null
+  },
+  {
+   "tag": "input",
+   "type": "checkbox",
+   "value": "on",
+   "checked": true,
+   "placeholder": null
+  }
+ ],
+ "href": "/login.html",
+ "heading": "One platform for your entire car wash operation."
+}

@@ -1,0 +1,83 @@
+{
+ "url": "/settings-macros.html",
+ "docTitle": "Macros",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Macros"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Button Groups",
+  "Button Types",
+  "Cashier Buttons",
+  "Greeter Buttons",
+  "Image Design",
+  "Colors",
+  "Templates",
+  "Macros",
+  "Macro Types",
+  "Macro Detail Types",
+  "Kiosk Screen Flows",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description",
+  "Type",
+  "Barcode",
+  "Show on Handheld"
+ ],
+ "kpiLabels": [
+  "—Total Macros —Show on Handheld",
+  "—Total Macros",
+  "—",
+  "Total Macros",
+  "—Show on Handheld",
+  "Show on Handheld"
+ ],
+ "inputPlaceholders": [
+  "Search macros…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load macros (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Button Groups Button Types Cashier Buttons Greeter Buttons Image Design Colors Templates Macros Macro Types Macro Detail Types Kiosk Screen Flows Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Macros Search ⌘K Ask Shyne MG — Total Macros — Show on Handheld Macros by Type Macro type breakdown — SETTINGS · MACROS Macros List Loading… + New Record DESCRIPTION TYPE BARCODE SHOW ON HANDHELD Couldn’t load macros (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 0–0 of 0 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

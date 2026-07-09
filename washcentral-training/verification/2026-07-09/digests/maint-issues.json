@@ -1,0 +1,80 @@
+{
+ "url": "/maint-issues.html",
+ "docTitle": "Maintenance Issues — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Maintenance›Maintenance Issues"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Issue",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location",
+  "Title",
+  "Status",
+  "Priority",
+  "Assigned To",
+  "Created By",
+  "Date"
+ ],
+ "kpiLabels": [
+  "3Open Issues 1In Progress 3High Priority 3 daysAvg Resolution",
+  "3Open Issues",
+  "3",
+  "Open Issues",
+  "1In Progress",
+  "1",
+  "In Progress",
+  "3High Priority",
+  "High Priority",
+  "3 daysAvg Resolution",
+  "3 days",
+  "Avg Resolution"
+ ],
+ "inputPlaceholders": [
+  "Search maintenance issues…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | SSNB | Air dryer not reaching temp | Open | high | — | — | 2026-07-01",
+  " | SSNB | POS 2 touch screen unresponsive | Open | medium | — | — | 2026-06-30",
+  " | MLAS | Tunnel conveyor belt squeaking | In Progress | high | — | — | 2026-06-27"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports MAINTENANCE Maintenance Issues Search ⌘K Ask Shyne MG 3 Open Issues 1 In Progress 3 High Priority 3 days Avg Resolution Issues Reported Last 12 months 18 ↑ +2 Jan Dec Issues by Priority By severity level Low 20% Medium 20% High 40% Critical 20% Resolution Status Current issue pipeline 20% RESOLVED 80% PROGRESS 0% BLOCKED MAINTENANCE · ISSUES Issue List 5 records · work order tracking + New Issue Export Filters ▾ Search LOCATION TITLE STATUS PRIORITY ASSIGNED TO CREATED BY DATE SSNB Air dryer not reaching temp Open high — — 2026-07-01 SSNB POS 2 touch screen unresponsive Open medium — — 2026-06-30 MLAS Tunnel conveyor belt squeaking In Progress high — — 2026-06-27 MLAS Bay door sensor misaligned Open low — — 2026-06-25 MLAS Chemical pump #3 leak Resolved critical — — 2026-06-24 Showing 1–5 of 5 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

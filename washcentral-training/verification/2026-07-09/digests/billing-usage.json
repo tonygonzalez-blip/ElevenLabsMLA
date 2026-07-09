@@ -1,0 +1,93 @@
+{
+ "url": "/billing-usage.html",
+ "docTitle": "Usage & Billing — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Billing›Usage & Billing"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Usage & Billing"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Export CSV",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Export CSV"
+ ],
+ "tableHeaders": [
+  "Source",
+  "Type",
+  "Volume",
+  "Cost",
+  "Share"
+ ],
+ "kpiLabels": [
+  "$46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered",
+  "$46.18 SMS Usage",
+  "$46.18",
+  "SMS Usage",
+  "$33.88 Email Usage",
+  "$33.88",
+  "Email Usage",
+  "1,847 SMS Sent · 98.1% delivered",
+  "1,847",
+  "SMS Sent · 98.1% delivered",
+  "42,350 Emails Sent · 99.1% delivered",
+  "42,350",
+  "Emails Sent · 99.1% delivered",
+  "$2,495 Platform Fees $203 SMS Cost YTD $147 Email Cost YTD $2,845 Total Billed YTD $2,845 Paid YTD · ✓ Current",
+  "$2,495 Platform Fees",
+  "$2,495",
+  "Platform Fees",
+  "$203 SMS Cost YTD",
+  "$203",
+  "SMS Cost YTD",
+  "$147 Email Cost YTD",
+  "$147",
+  "Email Cost YTD",
+  "$2,845 Total Billed YTD",
+  "$2,845",
+  "Total Billed YTD",
+  "$2,845 Paid YTD · ✓ Current",
+  "Paid YTD · ✓ Current"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Campaign",
+  "Automation",
+  "Transactional"
+ ],
+ "firstRows": [
+  "Campaign Summer Membership Drive | Email | 18,240 | $14.59 | ",
+  "Automation Nth Wash Rewards | SMS + Email | 12,480 / 840 | $31.98 | ",
+  "Campaign Win-Back: Lapsed 90 Days | Email + SMS | 7,420 / 612 | $21.24 | "
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Billing Usage & Billing BILLING Usage & Billing Search ⌘K Ask Shyne MG Current Billing Period — May 2026 May 1 – May 31, 2026 · Next invoice: Jun 1, 2026 · ● 17 days remaining $46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered Overview SMS Usage Email Usage Invoices 1 open Rate Card Spending Alerts Monthly Usage Cost Last 6 months — SMS & Email $61 Nov $48 Dec $73 Jan $68 Feb $89 Mar $76 Apr $80* May* SMS Email * Estimated, month not complete Usage by Source — May 2026 Cost breakdown by campaign & automation SOURCE TYPE VOLUME COST SHARE Campaign Summer Membership Drive Email 18,240 $14.59 Automation Nth Wash Rewards SMS + Email 12,480 / 840 $31.98 Campaign Win-Back: Lapsed 90 Days Email + SMS 7,420 / 612 $21.24 Automation No Visit Win-Back SMS 395 $9.88 Transactional Receipts & Confirmations Email 4,210 $3.37 Year-to-Date Summary Jan – May 2026 Export CSV $2,495 Platform Fees $203 SMS Cost YTD $147 Email Cost YTD $2,845 Total Billed YTD $2,845 Paid YTD · ✓ Current Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

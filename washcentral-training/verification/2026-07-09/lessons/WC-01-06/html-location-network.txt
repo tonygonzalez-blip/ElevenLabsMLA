@@ -1,0 +1,103 @@
+<div class="cc-map-section">
+      <div class="cc-map-hdr">
+        <div>
+          <div class="cc-map-eyebrow">Location Network</div>
+          <div class="cc-map-title">144 locations across 7 states · OH · VA · MI · PA · IN · MD · NC</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;">
+          <div class="cc-map-legend">
+            <span class="cc-legend-item"><span class="cc-legend-dot" style="background:#34c759"></span>Healthy</span>
+            <span class="cc-legend-item"><span class="cc-legend-dot" style="background:#ff9500"></span>Warning</span>
+            <span class="cc-legend-item"><span class="cc-legend-dot" style="background:#ff3b30"></span>Critical</span>
+          </div>
+          <!-- View toggle -->
+          <div class="cc-view-toggle-wrap" id="cc-view-toggle-wrap">
+            <button class="cc-view-btn active" id="cc-btn-usa">Full USA</button>
+            <button class="cc-view-btn" id="cc-btn-active">Active States</button>
+          </div>
+          <span class="cc-live-pill" style="font-size:9.5px;padding:3px 9px;"><span class="cc-live-dot"></span>Live</span>
+        </div>
+      </div>
+
+      <div class="cc-map-with-stats">
+
+        <!-- ── Left stat panel (2 cards) ──────────────────── -->
+        <div class="cc-side-stats cc-side-left">
+
+          <div class="cc-side-kpi teal">
+            <div class="cc-side-kpi-lbl">Revenue Today</div>
+            <div class="cc-side-kpi-num teal">$184,260</div>
+            <div class="cc-side-kpi-sub">vs yesterday</div>
+            <div class="cc-side-kpi-trend up">
+              [SVG MAP]8.4%
+            </div>
+            [SVG MAP]
+          </div>
+
+          <div class="cc-side-kpi blue">
+            <div class="cc-side-kpi-lbl">Active Members</div>
+            <div class="cc-side-kpi-num">24,816</div>
+            <div class="cc-side-kpi-sub">across all locations</div>
+            <div class="cc-side-kpi-trend up">
+              [SVG MAP]3.2%
+            </div>
+            [SVG MAP]
+          </div>
+
+          <div class="cc-side-kpi neutral">
+            <div class="cc-side-kpi-lbl">Cars Washed</div>
+            <div class="cc-side-kpi-num">6,842</div>
+            <div class="cc-side-kpi-sub">today</div>
+            <div class="cc-side-kpi-trend up">
+              [SVG MAP]5.1%
+            </div>
+            [SVG MAP]
+          </div>
+
+          <div class="cc-side-kpi green">
+            <div class="cc-side-kpi-lbl">Decline Rate</div>
+            <div class="cc-side-kpi-num green">0.24%</div>
+            <div class="cc-side-kpi-sub">billing declines</div>
+            <div class="cc-side-kpi-trend good">
+              [SVG MAP]−0.03%
+            </div>
+            [SVG MAP]
+          </div>
+
+        </div><!-- /cc-side-left -->
+
+        <!-- ── Map canvas ───────────────────────────────────── -->
+        <div class="cc-map-body">
+
+        <!-- State focus banner (shown when a state is clicked) -->
+        <div class="cc-state-banner" id="cc-state-banner">
+          <span class="cc-state-banner-flag" id="cc-banner-flag">🗺</span>
+          <span id="cc-banner-name">Florida</span>
+          <button class="cc-state-banner-back" id="cc-banner-back">← All states</button>
+        </div>
+
+        <!-- Zoom controls (overlaid on map only) -->
+        <div class="cc-zoom-ctrls">
+          <button class="cc-zoom-btn" id="cc-zoom-in" title="Zoom in">+</button>
+          <button class="cc-zoom-btn" id="cc-zoom-out" title="Zoom out">−</button>
+          <button class="cc-zoom-btn cc-zoom-reset" id="cc-zoom-reset" title="Reset">⤢</button>
+        </div>
+
+        <!-- Tooltip (positioned by JS) -->
+        <div class="cc-map-tip" id="cc-map-tip">
+          <div class="cc-tip-name" id="tip-name"></div>
+          <div class="cc-tip-addr" id="tip-addr"></div>
+          <div class="cc-tip-status" id="tip-status"></div>
+          <div class="cc-tip-meta">
+            <div class="cc-tip-kv"><div class="cc-tip-kv-label">Revenue/day</div><div class="cc-tip-kv-val" id="tip-rev"></div></div>
+            <div class="cc-tip-kv"><div class="cc-tip-kv-label">Members</div><div class="cc-tip-kv-val" id="tip-mem"></div></div>
+            <div class="cc-tip-kv"><div class="cc-tip-kv-label">Tickets</div><div class="cc-tip-kv-val" id="tip-tix"></div></div>
+          </div>
+          <div class="cc-tip-cta">Click to open location dashboard →</div>
+        </div>
+
+        [SVG MAP]
+        </div><!-- /cc-map-body -->
+
+      </div><!-- /cc-map-with-stats -->
+    </div>

@@ -1,0 +1,11 @@
+<div class="cc-maia">
+          <div class="cc-maia-eyebrow">Intelligence</div>
+          <div class="cc-maia-heading">Ask MAIA</div>
+          <div class="cc-maia-sub">Guided intelligence for operators, marketing, and support.</div>
+          <a class="cc-maia-chip" href="locations.html"><span>What locations are underperforming?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="crm-customers.html"><span>Which customers are at churn risk?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="dashboard-executive-revenue.html"><span>Show today's revenue trend drivers</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="marketing.html"><span>Best win-back segment by ROI?</span><span>Open ↗</span></a>
+          <a class="cc-maia-chip" href="dashboard-memberships.html"><span>Summarise membership activity today</span><span>Open ↗</span></a>
+          <div class="cc-maia-footer">MAIA · WashCentral AI Platform · Responses are contextual and based on live data.</div>
+        </div>

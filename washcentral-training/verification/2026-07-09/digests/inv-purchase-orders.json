@@ -1,0 +1,85 @@
+{
+ "url": "/inv-purchase-orders.html",
+ "docTitle": "Purchase Orders — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Inventory›Purchase Orders"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Inventory Items",
+  "Inventory Batches",
+  "Adjustments",
+  "Vendors",
+  "Chemicals & Supplies",
+  "Purchase Orders"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "View",
+  "‹",
+  "1",
+  "›",
+  "✕",
+  "Open Full Detail →",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "View"
+ ],
+ "tableHeaders": [
+  "PO #",
+  "Supplier",
+  "Location",
+  "Items",
+  "Total",
+  "Created",
+  "Expected",
+  "Status",
+  "Details"
+ ],
+ "kpiLabels": [
+  "5Open Orders 2Pending Approval 3In Transit $8,420Spend (30d)",
+  "5Open Orders",
+  "5",
+  "Open Orders",
+  "2Pending Approval",
+  "2",
+  "Pending Approval",
+  "3In Transit",
+  "3",
+  "In Transit",
+  "$8,420Spend (30d)",
+  "$8,420",
+  "Spend (30d)"
+ ],
+ "inputPlaceholders": [
+  "Search purchase orders...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Pending Approval",
+  "In Transit",
+  "Fulfilled"
+ ],
+ "firstRows": [
+  " | PO-2028 | ChemMax Pro | Boca Raton | 2 | $736.00 | Mar 26 | Apr 1 | Pending Approval | View",
+  " | PO-2027 | AutoShine Co. | Fort Lauderdale | 1 | $442.00 | Mar 25 | Mar 31 | Pending Approval | View",
+  " | PO-2026 | ChemMax Pro | Miami North | 3 | $1,284.00 | Mar 22 | Mar 28 | In Transit | View"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Inventory Inventory Items Inventory Batches Adjustments Vendors Chemicals & Supplies Purchase Orders INVENTORY Purchase Orders Search ⌘K Ask Shyne MG 5 Open Orders 2 Pending Approval 3 In Transit $8,420 Spend (30d) PO Spend Trend Last 12 months $8.4k ↑ +14% Jan Dec Spend by Supplier Top 4 vendors by volume ChemMax Pro 42% EquipDirect 26% AutoShine Co. 18% Others 14% Order Status Fulfilled vs in-progress 65% FULFILLED 22% TRANSIT 13% PENDING INVENTORY · PURCHASE ORDERS Purchase Order List 7 records · approvals & shipment status + New Record Export Filters ▾ Search PO # SUPPLIER LOCATION ITEMS TOTAL CREATED EXPECTED STATUS DETAILS PO-2028 ChemMax Pro Boca Raton 2 $736.00 Mar 26 Apr 1 Pending Approval View PO-2027 AutoShine Co. Fort Lauderdale 1 $442.00 Mar 25 Mar 31 Pending Approval View PO-2026 ChemMax Pro Miami North 3 $1,284.00 Mar 22 Mar 28 In Transit View PO-2025 EquipDirect Tampa West 2 $892.00 Mar 20 Mar 27 In Transit View PO-2024 ChemMax Pro All Locations 1 $736.00 Mar 8 Mar 12 In Transit View PO-2023 PureRinse LLC Orlando Central 1 $620.00 Mar 5 Mar 10 Fulfilled View PO-2022 CleanCo All Locations 4 $2,140.00 Feb 28 Mar 4 Fulfilled View Showing 1–7 of 7 records ‹ 1 › PO-0000 Purchase Order Details ✕ Open Full Detail → Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active"
+}

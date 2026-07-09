@@ -1,0 +1,85 @@
+{
+ "url": "/site-detail.html",
+ "docTitle": "Site Detail — Morris Plains, NJ — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Micrologic NOC›Morris Plains, NJ"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Work Order",
+  "Notify CSM",
+  "Escalate",
+  "Create Work Order",
+  "Schedule Maintenance",
+  "Dispatch Technician",
+  "Email Customer (MLAS Corp)",
+  "Remote Restart POS",
+  "Schedule PM",
+  "Acknowledge",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "187 Washes Today avg 284 $1,247 Revenue Today avg $1,891 8.2m Avg Wait target <6m 94.2% SLA target 98% 3 Open Incidents 2 critical · 1 warn 99.1% Uptime (30d) 22h downtime",
+  "187 Washes Today avg 284",
+  "187",
+  "Washes Today",
+  "avg 284",
+  "$1,247 Revenue Today avg $1,891",
+  "$1,247",
+  "Revenue Today",
+  "avg $1,891",
+  "8.2m Avg Wait target <6m",
+  "8.2m",
+  "Avg Wait",
+  "target <6m",
+  "94.2% SLA target 98%",
+  "94.2%",
+  "SLA",
+  "target 98%",
+  "3 Open Incidents 2 critical · 1 warn",
+  "3",
+  "Open Incidents",
+  "2 critical · 1 warn",
+  "99.1% Uptime (30d) 22h downtime",
+  "99.1%",
+  "Uptime (30d)",
+  "22h downtime"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Critical",
+  "2",
+  "1",
+  "PAYMENTS",
+  "EQUIPMENT",
+  "HARDWARE"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History MICROLOGIC NOC Morris Plains, NJ Search ⌘K NOC Morris Plains, NJ Critical 23 Maple Ave, Morris Plains NJ 07950 MLAS Corp · Tyler R. (CSM) Last sync: 2m ago Work Order Notify CSM Escalate 187 WASHES TODAY avg 284 $1,247 REVENUE TODAY avg $1,891 8.2m AVG WAIT target <6m 94.2% SLA target 98% 3 OPEN INCIDENTS 2 critical · 1 warn 99.1% UPTIME (30D) 22h downtime EQUIPMENT STATUS 8 units · click to drill down 2 POS System Micrologic POS v4.2 Status OFFLINE Last Transaction 47m ago Transactions 0 today Health: — Updated 47m ago 1 Tunnel Conveyor Sonny's TX-2200 Chain Speed 98 FPM Tension 142 lbs Motor Temp 74°F Health: 71/100 Updated 2m ago 1 Membership Scanner ML-Scan 500 Mode Backup Scan Rate 94% Queue Depth 7 cars Health: 68/100 Updated 5m ago Chemical System ChemDose Pro 8000 Soap Level 72% Wax Level 61% Tire Cleaner 85% Health: 92/100 Updated 2m ago Dryer System ForceDry 2400 Blower 1 3,420 RPM Blower 2 3,380 RPM Vibration 0.4 mm/s Health: 88/100 Updated 2m ago Water System AquaMax Reclaim 1500 Reclaim Tank 58% Pressure 142 PSI Softener Normal Health: 95/100 Updated 2m ago Entry Gate ML-Gate 200 Gate Status Open Cars Today 187 Loop Sensor OK Health: 99/100 Updated 3m ago LED Lighting TunnelLED Pro Zones Active 12/12 Power Draw 4.2 kW Avg Lux 842 Health: 100/100 Up"
+}

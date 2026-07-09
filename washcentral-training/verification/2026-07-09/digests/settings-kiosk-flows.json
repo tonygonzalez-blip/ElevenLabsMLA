@@ -1,0 +1,102 @@
+{
+ "url": "/settings-kiosk-flows.html",
+ "docTitle": "Kiosk Screen Flows",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Kiosk Screen Flows"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Button Groups",
+  "Button Types",
+  "Cashier Buttons",
+  "Greeter Buttons",
+  "Image Design",
+  "Colors",
+  "Templates",
+  "Macros",
+  "Macro Types",
+  "Macro Detail Types",
+  "Kiosk Screen Flows",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "New Flow",
+  "Filters0",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Flow Name",
+  "Location",
+  "Screens",
+  "Hotspots",
+  "Last Modified",
+  "Status",
+  "Schedule"
+ ],
+ "kpiLabels": [
+  "3Total Flows 2Published 1Draft 11Total Screens 24Hotspots",
+  "3Total Flows",
+  "3",
+  "Total Flows",
+  "2Published",
+  "2",
+  "Published",
+  "1Draft",
+  "1",
+  "Draft",
+  "11Total Screens",
+  "11",
+  "Total Screens",
+  "24Hotspots",
+  "24",
+  "Hotspots"
+ ],
+ "inputPlaceholders": [
+  "Search kiosk flows…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Published",
+  "Draft"
+ ],
+ "firstRows": [
+  "Main Kiosk Flow | All Locations | 5 | 12 | Apr 20, 2026 | Published | Daily · 8am – 10pm",
+  "Premium Lane | MLAS, SSNB | 4 | 9 | Apr 18, 2026 | Published | Mon–Fri · 9am – 9pm",
+  "Express Tunnel | EXPR | 2 | 3 | Apr 15, 2026 | Draft | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Button Groups Button Types Cashier Buttons Greeter Buttons Image Design Colors Templates Macros Macro Types Macro Detail Types Kiosk Screen Flows Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Kiosk Screen Flows Search ⌘K Ask Shyne MG 3 Total Flows 2 Published 1 Draft 11 Total Screens 24 Hotspots Hotspot Interactions Last 30 days 1,284 ↑ +18% Mar 23 Apr 22 Hotspot Action Types By category Launch Service 46% Navigate 25% Membership 21% Discount / Other 8% Flow Status Publish health 67% PUBLISHED 33% DRAFT 0% INACTIVE SETTINGS · UI & DISPLAY Kiosk Screen Flows 3 records New Flow Filters Search FLOW NAME LOCATION SCREENS HOTSPOTS LAST MODIFIED STATUS SCHEDULE Main Kiosk Flow All Locations 5 12 Apr 20, 2026 Published Daily · 8am – 10pm Premium Lane MLAS, SSNB 4 9 Apr 18, 2026 Published Mon–Fri · 9am – 9pm Express Tunnel EXPR 2 3 Apr 15, 2026 Draft — Showing 1–3 of 3 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

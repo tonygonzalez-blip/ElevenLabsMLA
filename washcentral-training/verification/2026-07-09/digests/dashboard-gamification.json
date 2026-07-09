@@ -1,0 +1,105 @@
+{
+ "url": "/dashboard-gamification.html",
+ "docTitle": "Gamification Dashboard — WashCentral",
+ "h1": [],
+ "h2": [
+  "Employee Leaderboard",
+  "Store vs. Store",
+  "Points Earned Over Time",
+  "Active Challenges",
+  "Recent Achievements",
+  "Top Movers This Week",
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Analytics›Gamification"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "This Month ▾",
+  "All Locations▾",
+  "MG",
+  "Full Leaderboard",
+  "Manage",
+  "Full Report",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Employee",
+  "Store",
+  "This Week",
+  "vs Last Week",
+  "Level"
+ ],
+ "kpiLabels": [
+  "Network Points",
+  "148,320",
+  "earned this month · 42 employees",
+  "Top Performer",
+  "Jose M.",
+  "Fort Lauderdale · 9,840 pts",
+  "Participation Rate",
+  "94%",
+  "38 of 40 employees active",
+  "Prizes Awarded",
+  "6",
+  "this month · 3 pending"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "+12.4%",
+  "Gold",
+  "+3%",
+  "$840 value",
+  "Silver",
+  "Bronze",
+  "Live",
+  "1st",
+  "2nd",
+  "–12%",
+  "500 pts",
+  "750 pts",
+  "300 pts",
+  "Platinum",
+  "Diamond"
+ ],
+ "firstRows": [
+  "PS Priya Singh | Fort Lauderdale | 680 pts | ↑ +43% | Silver",
+  "CT Chris Thompson | Orlando Central | 620 pts | ↑ +31% | Silver",
+  "DW DeShawn Williams | Tampa West | 540 pts | ↑ +28% | Bronze"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting ANALYTICS Gamification Employee performance, challenges & rewards across all locations. Search ⌘K This Month ▾ All Locations ▾ MG NETWORK POINTS 148,320 +12.4% earned this month · 42 employees TOP PERFORMER Jose M. GOLD Fort Lauderdale · 9,840 pts PARTICIPATION RATE 94% +3% 38 of 40 employees active PRIZES AWARDED 6 $840 value this month · 3 pending TOP PERFORMERS Employee Leaderboard Full Leaderboard LN Lisa N. 8,320 pts 2 🏆 JM Jose M. 9,840 pts 1 KD Kevin D. 7,150 pts 3 4 MG Maria Gomez SILVER Miami North 6,820 pts 68% 5 CT Chris Thompson SILVER Orlando Central 6,410 pts 64% 6 PS Priya Singh SILVER Fort Lauderdale 5,980 pts 60% 7 DW DeShawn Williams BRONZE Tampa West 4,720 pts 47% 8 AR Ana Rodriguez BRONZE Miami North 4,210 pts 42% STORE COMPETITION Store vs. Store Live Total points earned by team — April 2026 🏆 Fort Lauderdale 1st 42,100 14 employees · avg 3,007 pts 🥈 Tampa West 2nd 38,200 11 employees · avg 3,473 pts 🥉 Orlando Central 31,500 9 employees · avg 3,500 pts 4 Miami North –12% 24,800 8 employees · avg 3,100 pts 🔥 Active Streaks"
+}

@@ -1,0 +1,93 @@
+{
+ "url": "/mkt-report-segments.html",
+ "docTitle": "Segment Response Analysis — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Analytics›Segment Response"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Executive Dashboard",
+  "Location Summary",
+  "Gamification",
+  "Marketing",
+  "Memberships",
+  "Subscribers",
+  "Downsells",
+  "Online Sales",
+  "Live Conversion",
+  "Retail Customers",
+  "Campaign Performance",
+  "Segment Response",
+  "Offer Effectiveness",
+  "Acquisition Sources",
+  "Win-Back Analysis",
+  "BI Overview",
+  "Revenue Intelligence",
+  "Benchmarking",
+  "Churn Intelligence",
+  "LTV Intelligence",
+  "Online Presence",
+  "Forecasting"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Export CSV",
+  "View Segment",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Segment",
+  "Email",
+  "SMS",
+  "Push",
+  "Members",
+  "Avg Open Rate",
+  "Avg Click Rate",
+  "Conv Rate",
+  "Avg LTV",
+  "Campaigns",
+  "Best Channel"
+ ],
+ "kpiLabels": [
+  "14 Segments Tracked 52.4% Best Open Rate · Members 18.6% Best Conversion · VIP $1,240/yr Highest LTV · Enterprise Fleet 8.2% Least Responsive · Lapsed 180d+",
+  "14 Segments Tracked",
+  "14",
+  "Segments Tracked",
+  "52.4% Best Open Rate · Members",
+  "52.4%",
+  "Best Open Rate · Members",
+  "18.6% Best Conversion · VIP",
+  "18.6%",
+  "Best Conversion · VIP",
+  "$1,240/yr Highest LTV · Enterprise Fleet",
+  "$1,240/yr",
+  "Highest LTV · Enterprise Fleet",
+  "8.2% Least Responsive · Lapsed 180d+",
+  "8.2%",
+  "Least Responsive · Lapsed 180d+"
+ ],
+ "inputPlaceholders": [
+  "Search segments…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Active Members | 48% | 38% | 24%",
+  "VIP / Enterprise | 61% | 44% | 28%",
+  "New Members | 52% | 29% | 41%"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Analytics ANALYTICS Executive Dashboard Location Summary Gamification Marketing Memberships Subscribers Downsells Online Sales Live Conversion Retail Customers MARKETING Campaign Performance Segment Response Offer Effectiveness Acquisition Sources Win-Back Analysis INTELLIGENCE BI Overview Revenue Intelligence Benchmarking Churn Intelligence LTV Intelligence Online Presence FORECASTING Forecasting ANALYTICS Segment Response Search ⌘K Ask Shyne MG Filters Export CSV 14 Segments Tracked 52.4% Best Open Rate · Members 18.6% Best Conversion · VIP $1,240/yr Highest LTV · Enterprise Fleet 8.2% Least Responsive · Lapsed 180d+ Segment Engagement Heatmap Engagement level by segment × channel — darker teal = higher engagement SEGMENT EMAIL SMS PUSH Active Members 48% 38% 24% VIP / Enterprise 61% 44% 28% New Members 52% 29% 41% At-Risk Members 31% 36% 18% Lapsed 30–90d 29% 32% 11% Lapsed 90–180d 19% 22% N/A Lapsed 180d+ 8% 10% N/A Fleet Accounts 45% 21% N/A Retail / Non-Member 22% 27% 9% Referral-Sourced 42% 31% 18% Low High Conversion Rate by Segment Segments ranked by conversion rate — max 18.6% VIP / Enterprise 18.6% New Members 15.3% Active Members 12.1% Fleet Accounts 9.4% Referral-Sourced 8.7% At-Risk Members 5.8% Lapsed 30–90d 4.2% Retail / Non-Member 1.8% Lapsed 180d+ 0.8% Segment Comparison 10 segments · sorted by conversion rate SEGMENT MEMBERS AVG OPEN RATE AVG CLICK RATE CONV RATE AVG LTV CAMPAIGNS BEST CHANNEL Active Members 24,800 48.2% "
+}

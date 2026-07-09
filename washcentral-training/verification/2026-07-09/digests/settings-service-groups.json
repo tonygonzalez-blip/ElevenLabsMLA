@@ -1,0 +1,77 @@
+{
+ "url": "/settings-service-groups.html",
+ "docTitle": "Service Groups",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Service Groups"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Services",
+  "Service Types",
+  "Service Groups",
+  "Detail Types",
+  "Rewards",
+  "Loyalty Discount Types",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description"
+ ],
+ "kpiLabels": [
+  "4Total Groups 4Active",
+  "4Total Groups",
+  "4",
+  "Total Groups",
+  "4Active",
+  "Active"
+ ],
+ "inputPlaceholders": [
+  "Search service groups…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Couldn’t load service groups (Failed to fetch). Check your connection to the AI agent service."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Services Service Types Service Groups Detail Types Rewards Loyalty Discount Types Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Service Groups Search ⌘K Ask Shyne MG 4 Total Groups 4 Active Service Groups Trend Last 12 months 4 ↑ +0% Jan Dec Group Distribution By wash type Standard Wash 25% Premium Wash 25% Express Wash 25% Detail Services 25% Group Status Configuration health 100% ACTIVE 0% DRAFT 0% INACTIVE SETTINGS · SERVICE GROUPS Service Groups List Loading… + New Record Filters Search DESCRIPTION Couldn’t load service groups (Failed to fetch). Check your connection to the AI agent service. ROWS PER PAGE: 25 50 100 25 1–1 of 1 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}
