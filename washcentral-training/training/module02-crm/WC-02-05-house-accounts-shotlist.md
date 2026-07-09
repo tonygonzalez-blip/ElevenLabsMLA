@@ -1,0 +1,46 @@
+# WC-02-05 — House Accounts · Snagit Shot List (operator-ready)
+
+v1.0 · July 9, 2026 · Target output: **WC-02-05-house-accounts-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+Step numbers match the guide and the narration blocks one-to-one (18 steps).
+**Verified against demo.washcentral.com on July 9, 2026.**
+
+## Pre-roll checklist (not recorded)
+
+- [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions before recording anything else.
+- [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
+- [ ] Signed in already (credentials never on camera); start URL: `demo.washcentral.com/crm-house-accounts.html`.
+- [ ] Snagit: cursor highlight ON, click animation ON, on-screen keystroke display OFF (this lesson uses the mouse only).
+- [ ] The CRM sidebar is expanded and **House Accounts** is reachable; nothing is open (no command palette, no location dropdown, no Ask Shyne modal).
+- [ ] Do NOT click **Generate Invoices** at any point (Step 4). On the detail, do NOT click **Statement**, **Delete Account**, or **Edit Account** (Step 8). No create/edit/delete buttons on any tab are pressed.
+- [ ] Demo note: the detail opens a fixed sample account (**TS Tech Solutions Inc**, **HA-0042**) regardless of the row clicked. In the July 9 capture the list row grid showed a "Couldn't load records (Failed to fetch)" state while the KPIs and insight cards rendered; if the grid is in that state, reach the detail with a direct row click once records load, or note it and continue.
+
+## Shots
+
+Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stillness after the expected state renders. Move deliberately: cursor travel about 1.3s, hover about 1s, then click. The list and the detail are full pages; hold long enough on each new screen to let the narration's visual buffer land.
+
+| Step | Action (exact target) | Expected state | Hold | Edit notes |
+|---|---|---|---|---|
+| 1 | Click **House Accounts** in the CRM sidebar | House Accounts page loads; breadcrumb **CRM › House Accounts**; four-tile KPI strip across the top | 3s | Callout ① on the breadcrumb + page title; slow cursor settle top-left |
+| 2 | Sweep the cursor across the KPI strip (do not click) | Four tiles read **24 Total Accounts**, **21 Active**, **$14,820 Outstanding**, **$5,000 Avg Credit** | 3s | Callout ② bracketing all four tiles; zoom-in 130% left to right across the strip (about 2s) |
+| 3 | Sweep across the three insight cards | **Balance Trend** (Last 12 months, **↑ +8.3%**); **Credit Utilization** By location (Fort Lauderdale 62%, Miami North 48%, Orlando 38%, Tampa 71%); **Account Status** (**88% ACTIVE**, **8% SUSPENDED**, **4% CLOSED**, 21 active / 3 inactive) | 4s | Callout ③ naming the three cards; slow left-to-right sweep (about 2.5s); brief zoom on the Tampa 71% utilization bar |
+| 4 | Point to the **House Account List** card buttons; hover **Generate Invoices**, do NOT click | Card subtitled **24 accounts · $14,820 outstanding**; buttons **Delete**, **Generate Invoices**, **+ New House Account** visible | 4s | Callout ④ on the three buttons; **STOP** callout with a red "do not click" ring on **Generate Invoices**; hold on the ring; no click |
+| 5 | Point to the search box, **Filters**, **Search**, then the column header row | Search box **Search by account, company, or contact…**; **Filters** and **Search** to its right; columns **ACCOUNT # · COMPANY · CONTACT · LOCATION · WASH COUNT · EMAIL · STATUS**; **ROWS PER PAGE** 25 / 50 / 100 | 4s | Callout ⑤ along the column header row; slow sweep across the seven headers (about 2.5s); note the pagination control |
+| 6 | Click any account row | **House Account Detail** opens (`crm-house-account-detail.html`) for the sample account **TS Tech Solutions Inc** (**HA-0042**) | 3s | Callout ⑥ "row → detail"; cursor travel to a row, click, hold as the detail paints; note in edit log this is the fixed demo sample record |
+| 7 | Point to the detail header block | Company **TS Tech Solutions Inc** with an **Active** badge; identity line **HA-0042 · Fort Lauderdale · John Smith**; chips **Net 30**, **$10,000 Credit Limit**, **14 Vehicles** | 4s | Callout ⑦ on the name + badge, then the three chips; zoom-in 140% on the chip row (1.5s) |
+| 8 | Point to the header buttons; hover **Statement**, **Delete Account**, **Edit Account**, do NOT click | Buttons **← Back**, **Search**, **Statement**, **Delete Account**, **Edit Account** | 3s | Callout ⑧ on the button row; **STOP** ring covering **Statement**, **Delete Account**, and **Edit Account**; **← Back** and **Search** labeled "safe"; no click |
+| 9 | Sweep the cursor across the metric band | Six metrics: **$4,280 Total Balance**, **$5,720 Available Credit**, **$10,000 Credit Limit**, **$892 Monthly Avg**, **Mar 24, 2026 Last Payment**, **Feb 8, 2024 Account Since** | 4s | Callout ⑨ bracketing the band; slow left-to-right sweep (about 3s); brief zoom pairing Total Balance + Available Credit |
+| 10 | Point to the **RELATED** chips | **Vehicles 14**, **Invoices 10**, **Payments 8**, **Documents 3**, **Statement** | 3s | Callout ⑩ on the RELATED row; sweep across the chips; do not click any chip |
+| 11 | Sweep across the tab row | Ten tabs: **Overview**, **Details**, **Contacts**, **Vehicles**, **Invoices**, **Payments**, **Activity**, **Documents**, **Notes**, **Audit Trail**; **Overview** highlighted as active | 4s | Callout ⑪ underlining all ten tabs; slow sweep left to right (about 3s); do not click yet |
+| 12 | Point to the **Monthly Charges** panel on **Overview** | **AVG / MONTH $924**, **PEAK MONTH Oct '25**, **LAST MONTH $892**; caption "Billed to account · last 12 months" | 3s | Callout ⑫ on the three figures; zoom-in 130% on the panel (1.5s) |
+| 13 | Point to the **AR Aging** panel | Buckets **Current (0–30 days)**, **31–60 days**, **61–90 days**, **90+ days**, and **Total Outstanding**; sample figures $892.50 / $1,750.00 / $1,637.50 / $0.00 / $4,280.00 | 5s | Callout ⑬ "collections view, the core of this screen"; slow vertical sweep down the buckets (about 3s); hold on **90+ days** and **Total Outstanding** |
+| 14 | Point to the **Vehicle Wash Frequency** panel, then the **Account Health** panel | Wash Frequency: **TOTAL WASHES 28**, **ACTIVE VEHICLES 6**, **AVG / VEHICLE 4.7**. Account Health: **Credit Utilization 42.8%**, **PAYMENT SCORE On Time**, **AVG DAYS TO PAY 18 days**, **INVOICES THIS YEAR 4**, **TOTAL PAID YTD $2,145**, **PENDING INVOICES 3 pending** | 5s | Callout ⑭ on both panels; sweep Wash Frequency then Account Health; brief zoom on **PAYMENT SCORE** + **AVG DAYS TO PAY** |
+| 15 | Click the **Invoices** tab | Invoice list with columns **INVOICE # · ISSUE DATE · DUE DATE · AMOUNT · PAID · BALANCE · STATUS**; statuses include **Paid**, **Open**, **Overdue**; running total at the bottom | 4s | Callout ⑮ on the STATUS column; hold on an **Overdue** row and an **Open** row; do not click **+ New Invoice** |
+| 16 | Click the **Payments** tab | **Payment History** ledger with columns **DATE · REFERENCE # · METHOD · AMOUNT · APPLIED TO · RUNNING BALANCE · STATUS · POSTED BY**; a **Voided** row is visible | 4s | Callout ⑯ on **APPLIED TO** + **STATUS**; hold on the **Voided** row; do not click **+ Record Payment** |
+| 17 | Sweep the cursor across the remaining tabs (do not click each) | **Details**, **Contacts**, **Vehicles**, **Activity**, **Documents**, **Notes**, **Audit Trail** named; **Activity** shows an "Activity Feed" header only (feed did not render; parked) | 4s | Callout ⑰ naming each tab's job in one word; small note flag on **Activity** = "feed TBD, parked"; no clicks |
+| 18 | Click **← Back** | Returns to the House Accounts list, unchanged | 3s | Callout ⑱ tying it together (portfolio totals + Generate Invoices located; detail AR aging + Invoices/Payments); end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+
+Estimated runtime: about 5:53 (estimated narration total 353.0s; see the narration script for the per-step estimate, pending render). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment. Do not improvise, and never click **Generate Invoices**, **Statement**, **Delete Account**, **Edit Account**, or any create/edit/delete button on a tab. Session-timeout behavior is out of scope here (see WC-01-03).
+
+## If Claude drives while you record
+
+Once a live browser is connected (CDP on the operator's tab), Claude can execute steps 1–18 with the timings above while you run Snagit (or any 1920×1080 MP4 recorder) on the window. Every forbidden button is read and skipped: **Generate Invoices** at Step 4 and **Statement / Delete Account / Edit Account** at Step 8 are hovered and held, never clicked, and no tab's create button is pressed. Say "drive lesson 02-05" when you're rolling. Until then, this session is corpus-grounded: the shot list is authored from the July 9 verification digests and screenshots, not a live drive.
