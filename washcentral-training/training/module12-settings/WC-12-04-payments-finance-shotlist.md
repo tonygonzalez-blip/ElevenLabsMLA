@@ -1,0 +1,39 @@
+# WC-12-04 — Payments & Finance · Snagit Shot List (operator-ready)
+
+v1.0 · July 9, 2026 · Target output: **WC-12-04-payments-finance-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+Step numbers match the guide and the narration blocks one-to-one (12 steps).
+**Verified against demo.washcentral.com on July 9, 2026.**
+
+## Pre-roll checklist (not recorded)
+
+- [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions before recording anything else.
+- [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
+- [ ] Signed in already (credentials never on camera); open **Settings** and expand **Payments & Finance** before rolling.
+- [ ] Snagit: cursor highlight ON, click animation ON. This lesson has no keystroke display (mouse navigation only).
+- [ ] Do not click **+ New Record** on any page, and do not open any edit or save control (see the STOP callouts). All nine pages are shared configuration.
+- [ ] Note the data state on the recording tenant. If lists show "Couldn't load records (Failed to fetch)" and totals read as a dash, re-shoot on a tenant with the data service online; do not present the load error as normal. The Discount detail in step 4 is parked (404 in the July 9 corpus): if it does not open cleanly on the recording tenant, hold on the list and let the narration carry the pattern.
+
+## Shots
+
+Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stillness after the expected state renders. Move deliberately: cursor travel about 1.3s, hover about 1s, then click. The left settings sidebar stays put; only the page body changes as you move down the group.
+
+| Step | Action (exact target) | Expected state | Hold | Edit notes |
+|---|---|---|---|---|
+| 1 | Open **Settings**; click the **Payments & Finance** group in the settings sidebar to expand it | The group expands to nine pages in order: **Payment Types**, **Discounts**, **Discount Types**, **Surcharges**, **Surcharge Types**, **Payout Percentage**, **Tax Rates**, **General Ledger Codes**, **GL Account Codes**. **Close Settings** and **All Settings** sit above; **Integrations** below | 3s | Callout ① bracketing the nine group items; slow top-to-bottom cursor sweep down the list (about 2.5s); no page opened yet |
+| 2 | Click **Payment Types** | Breadcrumb **Settings › Payment Types**; KPI band **Total Types**, **Locked (System)**, **Require Reference**; **Payment Types List** columns **DESCRIPTION · LOCKED · REQUIRE REFERENCE · SHOW AS BANK DROP**; **+ New Record** at top-right | 3s | Callout ② on the four column headers; zoom-in 150% on the KPI labels (1.5s); STOP callout with a red "do not click" ring over **+ New Record** |
+| 3 | Click **Discounts** | Breadcrumb **Settings › Discounts**; KPI band **48 Total Discounts · 45 Active · 22 Unlimited Discounts · 18 Dollar Off**; panels **Config Activity**, **Breakdown by Method** (Unlimited 46% / Dollar Off ($) 37% / Percent Off (%) 12% / Other 5%), **Status Overview** (94% ACTIVE / 3% DRAFT / 3% INACTIVE); **Discounts List** columns **DESCRIPTION · CODE · AMOUNT · TAXABLE · DISCOUNT TYPE · START DATE** with **Filters** + **Search** | 4s | Callout ③ on the KPI band, then on the **AMOUNT** and **DISCOUNT TYPE** columns; slow sweep across the three analytics panels (about 2.5s) |
+| 4 | Click one discount row to open its detail; point to the **Active Locations** tab; leave via **Cancel** / **← Back** — do NOT save | A discount detail opens following the Services pattern: an **Active Locations** tab listing the sites/groups where the discount applies, plus per-location amount overrides in edit mode. Method reads dollar-off or percent-off | 4s | Callout ④ on the **Active Locations** tab and the method value. STOP callout: never **Save**. **PARKED:** the detail 404'd in the July 9 corpus (`settings-discounts-edit.html`); if it will not open on the recording tenant, hold on the Discounts list, overlay a "Discount detail — see WC-12-03 pattern (parked)" card, and let the narration carry it |
+| 5 | Click **Discount Types** | Breadcrumb **Settings › Discount Types**; KPI band **4 Total Types · 4 Active**; panels **Config Activity**, **Breakdown by Type** (Discounts 40% / Unlimited 30% / Staff 20% / Promo 10%), **Status Overview** (100% ACTIVE); **Discount Types List** single column **DESCRIPTION** | 3s | Callout ⑤ tying **DESCRIPTION** here to the **DISCOUNT TYPE** column on the Discounts list; STOP callout over **+ New Record** |
+| 6 | Click **Surcharges** | Breadcrumb **Settings › Surcharges**; KPI band **Total Surcharges**; **Surcharges List** columns **DESCRIPTION · TYPE · AMOUNT · TAXABLE · CODE** | 3s | Callout ⑥ on the columns; note "the mirror of a discount"; STOP callout over **+ New Record** |
+| 7 | Click **Surcharge Types** | Breadcrumb **Settings › Surcharge Types**; KPI band **Total Types · Discounts Disallowed · Discounts Allowed**; **Surcharge Types List** columns **DESCRIPTION · DISALLOW DISCOUNTS** | 3s | Callout ⑦ on the **DISALLOW DISCOUNTS** column; zoom-in 150% (1.5s); STOP callout over **+ New Record** |
+| 8 | Click **Payout Percentage** | Breadcrumb **Settings › Payout Percentage**; KPI band **Total Rules**; **Payout Percentage List** columns **RANGE START · RANGE END · PERCENTAGE** | 3s | Callout ⑧ on the three columns; note "a tiered band table"; STOP callout over **+ New Record** |
+| 9 | Click **Tax Rates** | Breadcrumb **Settings › Tax Rates**; KPI band **Total Rates · Default Rate · Highest Rate**; **Rate Distribution** panel; **Tax Rates List** columns **DESCRIPTION · TAX RATE · DEFAULT · UPDATED BY · UPDATED** | 4s | Callout ⑨ on **TAX RATE** and **DEFAULT**; note "feeds the two tax slots on a Service"; STOP callout over **+ New Record** |
+| 10 | Click **General Ledger Codes** | Sidebar item **General Ledger Codes**; page header and breadcrumb read **GL Codes** (**Settings › GL Codes**); KPI band **Total Codes**; **GL Codes List** columns **CODE · DESCRIPTION · GL DESCRIPTION** | 3s | Callout ⑩ flagging the label mismatch (sidebar "General Ledger Codes" vs header "GL Codes"); STOP callout over **+ New Record** |
+| 11 | Click **GL Account Codes** | Breadcrumb **Settings › GL Account Codes**; KPI band **Total Codes**; **GL Account Codes List** columns **CODE · DESCRIPTION · GL DESCRIPTION** | 3s | Callout ⑪ pairing this list with GL Codes (ledger lines vs accounts); STOP callout over **+ New Record** |
+| 12 | None — slowly sweep the cursor down the nine sidebar items to recap | Recap state: nine Payments & Finance pages, each owning one billing behavior (tender, discounts, surcharges, payouts, tax, ledger). No record was changed | 3s | Callout ⑫ tying the group together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+
+Estimated runtime: about 4:55 (estimated narration total ~271s, pending render). If any list shows the "Failed to fetch" load error, a total reads as a dash, or an unexpected dialog or "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or re-shoot the segment on a data-healthy tenant, and do not present the error state as normal. Session-timeout behavior is out of scope here (see WC-01-03).
+
+## If Claude drives while you record
+
+I can execute steps 1–12 live in the browser with the timings above on request; you run Snagit (or any 1920×1080 MP4 screen recorder) on the window. **+ New Record**, edit, and save are never triggered on any page, and step 4 stops at the Discount detail and leaves with **Cancel** / **← Back**. Say "drive lesson 12-04" when you're rolling. Note that in this corpus the Discount detail and most list data were not observable; drive against a tenant with the data service online.

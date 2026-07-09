@@ -32,7 +32,7 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 11 | None — hold a clean frame while the escalation packet is listed | Concept beat: escalate with username, tenant, failed-attempt timestamps, and masked screenshots; never the password | 3s | Callout ⑪ "Escalate: username, tenant, timestamps, masked screenshots — never the password"; ensure nothing sensitive is visible in frame |
 | 12 | None — return to a clean Command Center frame for the recap | Recap state: three fields and tenant → migration question → System Users (ACTIVE / SSO / LAST LOGIN) → User Activity (failed logins) → reset in production or escalate | 3s | Callout ⑫ tying the ordered checks together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
 
-Estimated runtime: about 3:55 (estimated narration total 210.9s at ~145 wpm; final figure pending render). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Never open a user record's edit form and never perform a reset while recording; Step 10 is narration only.
+Estimated runtime: about 4:08 (estimated narration total ~248s at ~145 wpm; final figure pending render). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Never open a user record's edit form and never perform a reset while recording; Step 10 is narration only.
 
 ## If Claude drives while you record
 
