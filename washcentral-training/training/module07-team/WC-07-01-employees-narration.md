@@ -22,7 +22,7 @@
 - WashCentral → "Wash Central"
 - WashAssist → "Wash Assist"
 - Shyne → "Shine" (the **Ask Shyne** button in the header; not exercised in this lesson)
-- Location codes (MLAS, SSNB) are not spoken — narration says "one of the sites" rather than reading a code aloud.
+- Location codes (MLAS, SSNB) are not spoken; narration says "one of the sites" rather than reading a code aloud.
 
 ### Scope notes (non-spoken)
 

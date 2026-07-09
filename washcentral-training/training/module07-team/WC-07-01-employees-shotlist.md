@@ -36,7 +36,7 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 14 | Show the record unchanged; do NOT Save/Delete/Edit | Nothing edited; no Save, no Delete, no field touched | 2s | Callout ⑭ "read-only — nothing changed"; STOP ring over any edit/Save/Delete control if visible |
 | 15 | Return toward the **Employee List**; slow cursor sweep back across the page | Recap state: directory (KPIs + three insights + searchable table) and the one-click seven-tab profile with **Overview** as its analytics home | 3s | Callout ⑮ tying list to detail; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
 
-Estimated runtime: about 4:50 (narration blocks estimated at ~145 wpm; timestamps pending render). If any unexpected dialog, error, changed data, or a **Still there?** timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
+Estimated runtime: about 4:25 (narration blocks estimated at ~145 wpm; timestamps pending render). If any unexpected dialog, error, changed data, or a **Still there?** timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
 
 ## If Claude drives while you record
 

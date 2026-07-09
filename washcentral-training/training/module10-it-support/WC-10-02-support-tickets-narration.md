@@ -30,7 +30,7 @@
 
 - Read-only lesson except step 11, which opens **+ New Record** and cancels without filing. The blank form's field layout is parked (New Record form probe 404'd on July 9); do not describe fields that were not observed.
 - **By Category** is shown as a horizontal bar breakdown, not a donut (plan/curriculum say "donut"). Narrate the mix, not the chart shape.
-- The idle **Still there?** timeout prompt is out of scope — see lesson 1.3.
+- The idle **Still there?** timeout prompt is out of scope (see lesson 1.3).
 - **Export** and **Ask Shyne** are not exercised.
 
 ## Timed script
@@ -78,7 +78,7 @@ _(Estimated total: ~4:00 pending render. Timestamps are estimates at ~145 wpm + 
 ## Generation log
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
-- Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice throughout, and no em or en dashes in the spoken lines. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside the mandated parked-item string, quoted verbatim.
+- Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice throughout, and no em or en dashes in the spoken lines. Verbatim UI labels, the navigation path, and the numbered steps were left exact. Em dashes appear only in structural, non-spoken places kept to match the exemplar: the title and settings-header bullets (verbatim house format), the timed-block headers (`[mm:ss | Step N — target]`), and the mandated parked-item string. No spoken line contains one.
 - New Record opened and cancelled only (step 11); no ticket is filed and no field is described that was not observed (form layout parked — New Record probe returned a 404 on July 9).
 - **Export** and **Ask Shyne** left unexercised.
 - Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**

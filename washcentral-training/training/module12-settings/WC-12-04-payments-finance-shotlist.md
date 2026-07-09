@@ -32,7 +32,7 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 11 | Click **GL Account Codes** | Breadcrumb **Settings › GL Account Codes**; KPI band **Total Codes**; **GL Account Codes List** columns **CODE · DESCRIPTION · GL DESCRIPTION** | 3s | Callout ⑪ pairing this list with GL Codes (ledger lines vs accounts); STOP callout over **+ New Record** |
 | 12 | None — slowly sweep the cursor down the nine sidebar items to recap | Recap state: nine Payments & Finance pages, each owning one billing behavior (tender, discounts, surcharges, payouts, tax, ledger). No record was changed | 3s | Callout ⑫ tying the group together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
 
-Estimated runtime: about 4:55 (estimated narration total ~271s, pending render). If any list shows the "Failed to fetch" load error, a total reads as a dash, or an unexpected dialog or "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or re-shoot the segment on a data-healthy tenant, and do not present the error state as normal. Session-timeout behavior is out of scope here (see WC-01-03).
+Estimated runtime: about 4:17 (estimated narration total ~257s, pending render). If any list shows the "Failed to fetch" load error, a total reads as a dash, or an unexpected dialog or "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or re-shoot the segment on a data-healthy tenant, and do not present the error state as normal. Session-timeout behavior is out of scope here (see WC-01-03).
 
 ## If Claude drives while you record
 
