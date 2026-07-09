@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Sign in to demo.washcentral.com and verify login flow + global navigation",
+  "description": "Confirm the three-field login (Username, Password, Company/Account), land on Command Center, enumerate the nav rail. Read-only.",
+  "activeForm": "Signing in to demo tenant",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

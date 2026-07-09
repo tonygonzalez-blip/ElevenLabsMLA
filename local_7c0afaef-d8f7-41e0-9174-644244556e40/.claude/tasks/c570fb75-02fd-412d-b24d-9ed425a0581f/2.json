@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Write 2-hour multi-agent loop plan for Claude Code",
+  "description": "Create loop plan markdown with 5 agents, time-boxing, reporting format, and website feature restriction rules",
+  "activeForm": "Writing loop plan",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

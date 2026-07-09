@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Locate and inspect the amg1 GitHub repo",
+  "description": "Find the amg1 repo, clone/inspect structure, stack, website vs portal areas",
+  "activeForm": "Inspecting amg1 repo",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

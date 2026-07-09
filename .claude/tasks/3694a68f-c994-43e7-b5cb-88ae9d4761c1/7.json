@@ -1,0 +1,9 @@
+{
+  "id": "7",
+  "subject": "Author the technician learning plan (extreme detail) from live observations",
+  "description": "Write the internal support technician learning plan grounded exclusively in observed screens: curriculum phases, per-module lessons, setup/configuration/troubleshooting tracks, exercises, assessments. Include verification stamp, discrepancies log, parked items.",
+  "activeForm": "Authoring learning plan",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

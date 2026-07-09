@@ -1,0 +1,9 @@
+{
+  "id": "6",
+  "subject": "Walk System Configuration (Settings) — all categories live",
+  "description": "Read-only pass through every Settings category card: General, Analytics, Locations, Services, Payments & Finance, Hardware, UI & Display, Users & Security, Operations, VIP & Membership, Automation, Customer Portal. Note per-location configure pattern.",
+  "activeForm": "Walking System Settings",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

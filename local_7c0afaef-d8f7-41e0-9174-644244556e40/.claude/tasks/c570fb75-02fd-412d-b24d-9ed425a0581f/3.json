@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Verify plan against repo specifics and deliver",
+  "description": "Check plan references real paths/commands from repo, present file",
+  "activeForm": "Verifying and delivering plan",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

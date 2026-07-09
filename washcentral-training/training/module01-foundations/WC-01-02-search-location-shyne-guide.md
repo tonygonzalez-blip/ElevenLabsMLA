@@ -1,0 +1,53 @@
+# WC-01-02 · Search ⌘K, Location Scope, and Ask Shyne (Foundations)
+
+v1.0 · July 8, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 8, 2026.**
+
+## Purpose
+
+This lesson covers the three tools that sit in the global header on every WashCentral page: **Search ⌘K**, the **All Locations▾** scope selector, and **Ask Shyne**. By the end you can open each one, read what it shows, and close it safely. You can run Search from the keyboard. You can change the location scope, which only changes what you see and is easy to undo. And whatever Ask Shyne gives you, you verify it before you act on it.
+
+## Audience and prerequisites
+
+Internal Micrologic technicians who are new to WashCentral. You should be signed in and on a dashboard, which is where WC-01-01 (orientation) leaves you. No prior WashCentral experience is assumed. The session timeout ("Still there?") behavior is not part of this lesson; that is covered in WC-01-03.
+
+## Navigation path
+
+The global header runs across the top-right of every WashCentral page. All three tools in this lesson live there, next to your **Account** avatar, so you can reach them from any screen.
+
+## Steps
+
+One action per step. Hold each new screen for two to three seconds before moving on.
+
+1. On any page, look at the top-right of the global header. **Expected:** four tools sit there on every page: **Search ⌘K**, **All Locations▾**, **Ask Shyne**, and the **Account** avatar. This lesson works through the first three.
+2. Press **Ctrl+K** (**⌘K** on Mac), or click **Search ⌘K**, to open the command palette. **Expected:** a command palette opens centered on the screen. The search box shows the placeholder "Search pages, modules, actions…" and there is an "esc" hint chip.
+3. Look at the **PAGES** section of the results. **Expected:** each row names a page and, below it, the module the page lives in: **Command Center** (Command Center), **Executive Dashboard** (Analytics), **Location Summary** (Analytics), **Gamification** (Analytics), and **Marketing** (Analytics). Search indexes pages, modules, and actions, so the row tells you both where you are going and which module owns it.
+4. Look at the footer key hints, then press the arrow keys to move the selection. Do not press Enter. **Expected:** the footer reads "↑↓ Navigate", "↵ Open", "Esc Close". The arrow keys move the highlighted row, and Enter would open the highlighted result. The palette is built to run from the keyboard.
+5. Press **Esc** to close the command palette. **Expected:** the palette closes and you are back on the page underneath. Nothing was opened and nothing changed.
+6. Click **All Locations▾** to open the location scope selector. **Expected:** a dropdown opens. The current selection, **All Locations**, is marked with a ✓ and a globe icon. That is the network-wide default, which is what dashboards and metrics reflect until you narrow the scope.
+7. Read the **GROUPS** and **LOCATIONS** sections. **Expected:** **GROUPS** lists state groups with a site count each, such as Florida (5), Texas (5), Georgia (4), California (5), and Illinois (5). **LOCATIONS** lists individual sites, such as Fort Lauderdale, Orlando Central, Tampa West, and Dallas Uptown (more sites are listed below these). Picking a group or a single site narrows the dashboards and metrics to that scope. Picking **All Locations** puts you back to network-wide. This changes what you see only. No data is modified, and the change is fully reversible.
+8. Close the dropdown without changing the scope: click **All Locations▾** again. **Expected:** the dropdown closes with the scope still on **All Locations** (network-wide). Nothing was filtered. **Note:** unlike Search, **Esc does not close this dropdown** — click the **All Locations▾** selector again, or click outside it. Browsing the list changes nothing until you actually pick a scope.
+9. Click **Ask Shyne** to open the assistant. **Expected:** a modal opens titled **Ask Shyne**, with the subtitle "Ask anything about your customers, ops, or marketing". Shyne is the built-in assistant for plain-language questions about customers, operations, and marketing.
+10. Read the **Try asking** example prompts. **Expected:** the section lists examples such as "Who had payment declines this month at Tampa West?", "Show prepaid book holders who haven't visited in 30 days", "Summarize last week's vehicle damage claims", "Top 5 employees by gamification points", "Which VIPs are at risk of churning?", and "Compare Fort Lauderdale vs Miami North this month". These show the range of questions Shyne is meant to handle.
+11. Find the question box and the **Send** and **Close** buttons, and read the disclaimer. Do not click **Send**. **Expected:** the question box shows the placeholder "Ask a question…", with a **Send** button and a **Close** button. The footer reads "AI-generated · always verify before taking action". Read that line and take it literally: anything Shyne produces has to be confirmed before you act on it. **Send** is not clicked in this lesson. Where a generated answer would appear: TBD — parked (PARKED-ITEMS.md #8). Actually sending a prompt and reviewing an answer is deferred to a later lesson.
+12. Click **Close** to dismiss Ask Shyne. **Expected:** the modal closes with no prompt sent, and you are back on the page underneath. Closing Shyne sends nothing and leaves your workspace as it was.
+13. Recap the three tools and the safety rule. **Expected:** from any page you can open **Search** with **⌘K** to jump anywhere, set the **location scope** knowing it is view-only and reversible, and open **Ask Shyne** while remembering to verify its output before acting.
+
+## Expected results
+
+From any WashCentral page you can open Search with **⌘K** and jump straight to a page or action instead of hunting through menus. You can narrow the location scope to a state group or a single site, then put it back to network-wide. And you can open Ask Shyne to ask a plain-language question. Opening or browsing any of the three changes nothing on its own, and you always verify what Shyne returns before you act.
+
+## Notes and troubleshooting (observed behavior only)
+
+- Search, the scope dropdown, and Ask Shyne all close cleanly. **Esc** closes Search and the scope dropdown; **Close** closes Ask Shyne. None of these navigate away or change data when you dismiss them.
+- Search runs from the keyboard: arrows move the selection, Enter opens the highlighted result, Esc closes the palette. You do not have to reach for the mouse.
+- The location scope is view-only. Changing it filters which sites the dashboards and metrics reflect. It does not edit, move, or delete any data, and selecting **All Locations** returns you to the network-wide view.
+- Ask Shyne is a send-type tool. The footer disclaimer "AI-generated · always verify before taking action" is the rule: confirm anything Shyne generates against the platform before you act on it.
+- Sending a prompt to Shyne and reviewing the answer is out of scope here and is parked: where a generated answer would appear, the artifact reads "TBD — parked (PARKED-ITEMS.md #8)".
+- The session timeout ("Still there?") prompt is not covered in this lesson. See WC-01-03.
+
+## Related lessons
+
+WC-01-01 Global navigation · WC-01-03 Session behavior.
+
+**Verified against demo.washcentral.com on July 8, 2026.**

@@ -1,0 +1,9 @@
+{
+  "id": "10",
+  "subject": "Produce pilot lesson package (guide + shot list + narration + recording)",
+  "description": "Pilot: WC-01-01 global navigation. Narration script + ElevenLabs audio (voice: WashCentral). Recording: try scripted browser capture to MP4 1920x1080; fallback operator-ready click script.",
+  "activeForm": "Producing pilot lesson package",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

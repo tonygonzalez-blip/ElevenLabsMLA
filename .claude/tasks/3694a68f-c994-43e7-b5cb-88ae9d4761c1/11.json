@@ -1,0 +1,9 @@
+{
+  "id": "11",
+  "subject": "Build WC-01-01 video: capture step frames, assemble MP4, mux narration",
+  "description": "Capture 16 step screenshots from live tenant, ffmpeg assembly at 1920x1080 with cursor/click overlays and shot-list timings, mux WashCentral New narration blocks once audio folder is connected.",
+  "activeForm": "Building lesson video",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}

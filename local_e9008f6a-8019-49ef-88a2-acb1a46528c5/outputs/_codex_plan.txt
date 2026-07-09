@@ -1,0 +1,145 @@
+in the middle of creating a fully functioning portal in codex. the git repo is amgaviation/amg1
+
+here is the codex plan. we are already done with step one and two. finish the rest of the steps all at once and put it into git pull request for me to merge when youre done
+
+Phase 1: Authentication And Roles
+Set up real login and access control.
+Roles:
+Client / owner representative
+Crew / pilot
+AMG admin
+Partner / vendor
+Needed features:
+Login
+Request access
+Admin approval of new users
+Role assignment
+Organization assignment
+Per-user permission overrides
+Protected /portal/* routes
+Redirect users to the correct portal after login
+Recommended providers:
+Supabase Auth if we want auth + Postgres together
+Clerk if we want polished auth fast
+Auth0 if you want enterprise-style identity controls
+My lean recommendation: Supabase if this portal will become data-heavy quickly.
+Phase 2: Database Foundation
+Create the real database from the schema I already drafted.
+Core tables:
+accounts
+organizations
+memberships
+aircraft
+aircraft_access
+support_requests
+passenger_profiles
+crew_profiles
+crew_qualifications
+partner_profiles
+assignments
+approvals
+documents
+message_threads
+messages
+finance_packets
+audit_events
+This gives us the backbone for real portal behavior.
+Phase 3: Client Portal Functionality
+Make the client portal actually usable.
+Client features:
+Create support request
+View request status
+Edit request before AMG review
+Cancel request with crew/admin notice
+Manage passenger profiles
+View owned aircraft
+Upload owner documents
+View released documents
+Message AMG Operations
+Approve mission/support changes
+This becomes the owner-facing control center.
+Phase 4: Admin Portal Functionality
+Admin should be the command center.
+Admin features:
+Review access requests
+Approve/suspend users
+Assign roles
+Create/edit aircraft records
+View all support requests
+Advance request lifecycle stages
+Assign crew
+Assign partner/vendor tasks
+Manage documents
+Review approvals
+Release owner-visible files
+View audit trail
+Close out support records
+This is where AMG runs the operation.
+Phase 5: Crew Portal Functionality
+Crew portal should focus on assignment readiness.
+Crew features:
+Maintain profile
+Upload credentials
+Set availability
+View assigned support requests
+Accept/decline assignments
+View manifest when authorized
+Review aircraft readiness notes
+Submit trip/completion notes
+Flag document or readiness issues
+Crew should only see what they are assigned to.
+Phase 6: Partner Portal Functionality
+Partner access should be narrow and controlled.
+Partner features:
+View assigned vendor tasks
+Submit quote
+Confirm service availability
+Upload task documents
+Update task milestones
+Message AMG only on assigned tasks
+Partners should not see owner/passenger/crew-sensitive data unless explicitly granted.
+Phase 7: Documents, Messaging, And Audit
+This is the layer that makes the portal operationally serious.
+Needed systems:
+Private document storage
+Signed download URLs
+Document visibility rules
+Version history
+Record-scoped messages
+Email notifications
+Immutable audit events
+Audit everything important:
+User login
+File download
+Role change
+Approval
+Request stage change
+Passenger data view
+Document release
+Admin override
+Phase 8: Notifications And Workflow Automation
+Add reminders and operational alerts.
+Examples:
+New support request submitted
+Crew approval needed
+Credential expiring
+Partner task overdue
+Owner approval required
+Document uploaded
+Request closed out
+Use email first. Later we can add SMS or in-app notification center.
+Phase 9: Deployment And Security
+On Vercel:
+Connect production database
+Add environment variables
+Protect preview deployments
+Configure auth callback URLs
+Add file storage
+Add error logging
+Add backup/export process
+Security rules:
+Never trust frontend role checks
+Validate every action server-side
+Keep passenger and credential data tightly scoped
+Signed URLs only for private files
+Admin overrides require reason + audit record

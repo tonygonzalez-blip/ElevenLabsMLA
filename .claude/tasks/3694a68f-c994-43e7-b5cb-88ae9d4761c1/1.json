@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Read WashCentral project docs (User Guide, Features, Migration FAQ, URL & Login)",
+  "description": "Read the imported knowledge files for orientation, terminology, and login credentials. Docs are for planning only — all deliverable claims must be verified live.",
+  "activeForm": "Reading project documents",
+  "status": "completed",
+  "blocks": [],
+  "blockedBy": []
+}
