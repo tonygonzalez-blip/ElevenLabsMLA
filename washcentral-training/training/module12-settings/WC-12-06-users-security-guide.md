@@ -13,7 +13,7 @@ Internal Micrologic technicians on Tech Support. You should be comfortable openi
 
 ## Navigation path
 
-Three of the four pages sit together: `Settings → Users & Security → System Users`, `Settings → Users & Security → Security Level`, and `Settings → Users & Security → Blacklisted`. The header also carries a **Users & Security▾** dropdown that reaches the same three. The fourth page, **User Levels**, is filed under a different group: `Settings → Automation → User Levels`. Knowing that split saves a hunt when a session-timeout ticket comes in.
+Three of the four pages sit together: `Settings → Users & Security → System Users`, `Settings → Users & Security → Security Level`, and `Settings → Users & Security → Blacklisted`. The fourth page, **User Levels**, is filed under a different group: `Settings → Automation → User Levels`. Knowing that split saves a hunt when a session-timeout ticket comes in.
 
 ## Steps
 
@@ -82,7 +82,7 @@ From Settings you can open the four access-control pages and read them without c
 
 ## Notes and troubleshooting (observed behavior only)
 
-- During the July 9 capture, all four lists showed "Couldn't load records (Failed to fetch). Check your connection to the AI agent service." in place of rows, and the KPI tiles read "—". Row data on these pages loads from the agent service, so that message signals a data-service connection problem, not an empty list. The column structure and page layout were captured intact. Row values in this guide come from the July 8, 2026 verified pass. (Reported as a new parked item.)
+- During the July 9 capture, all four lists showed a "Couldn't load … (Failed to fetch). Check your connection to the AI agent service." error in place of rows (each page names its own record type: records, user levels, security levels, blacklisted plates), and the KPI tiles read "—". Row data on these pages loads from the agent service, so that message signals a data-service connection problem, not an empty list. The column structure and page layout were captured intact. Row values in this guide come from the July 8, 2026 verified pass. (PARKED-ITEMS.md #16.)
 - **User Levels** sits under **Automation** in the sidebar, not under **Users & Security**. The other three pages are under **Users & Security**.
 - The sidebar link is **Security Level** (singular); the page it opens is titled **Security Levels**.
 - **SSO = Yes** means the password is managed in the identity provider, so a reset on **System Users** will not help. Check the matching SSO integration page instead (WC-12-09).

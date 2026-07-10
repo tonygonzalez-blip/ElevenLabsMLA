@@ -49,7 +49,7 @@ Below the numbers, three cards. <break time="1.2s" /> One tracks member growth o
 Now the list card itself. <break time="1.0s" /> The eyebrow labels it the member database, and the title reads Customer List. This card holds the searchable table of every customer you have.
 
 [01:01 | Step 5 — Action buttons]
-Three buttons sit top-right of the card. <break time="1.4s" /> Retention Log opens a churn report we'll visit in a minute. Delete and Add Customer both change data, so we leave them alone today. Each gets its own lesson.
+Three buttons sit top-right of the card. <break time="1.4s" /> Retention Log opens a churn report we'll visit in a minute. Delete and Add Customer both change data, so we leave them alone today. Adding a customer gets its own lesson.
 
 _[Director: do not click **Delete** or **+ Add Customer**. Hover **Retention Log** only; it is opened at Step 11.]_
 
@@ -62,13 +62,13 @@ Next to it, the Filters control. <break time="1.4s" /> The badge counts active f
 _[Director: open **Filters**, hold, then close it without changing anything; the badge stays 0. Panel contents are captured at record time — the July 9 corpus did not include them.]_
 
 [01:54 | Step 8 — Columns]
-Now the columns. <break time="1.0s" /> Customer, location, plan, member since, monthly price, and status. Every header sorts, so you can order the list any way you need. And that checkbox column on the left feeds the Delete button, which is exactly why we keep those boxes empty.
+Now the columns. <break time="1.0s" /> Customer, location, plan, member since, monthly price, and status. Every header sorts, so you can order the list any way you need. And that checkbox column on the left selects rows, and on this tour it stays untouched, which is exactly why we keep those boxes empty.
 
 [02:14 | Step 9 — Chips]
 Look at one row across. <break time="1.2s" /> The plan and the status each show as a coloured chip. Active is green, inactive is grey, and the plan chip names the package. The colour is how a row's state reads in a half-second.
 
 [02:32 | Step 10 — Pagination]
-Drop to the footer. <break time="1.0s" /> Twenty-five rows a page, and the last page button reads sixty-five thousand. This table runs past a million and a half migrated records, so you search for a customer, not page to them. The strip up top counts a smaller curated group, which is why the two counts differ.
+Drop to the footer. <break time="1.0s" /> Twenty-five rows a page, and the last page button reads sixty-five thousand. This table runs past a million and a half migrated records, so you search for a customer, not page to them. The strip up top counts a smaller headline figure that does not reconcile with the table, a known demo quirk, which is why the two counts differ.
 
 [02:55 | Step 11 — Open Retention Log]
 Click Retention Log. <break time="1.4s" /> This read-only page tracks members who left or nearly did. Its own four numbers frame it: total events, saves this month, cancellations, and the churn rate. No delete or add here. It is a log you read, not a list you edit.

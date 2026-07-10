@@ -8,8 +8,8 @@ Step numbers match the guide and the narration blocks one-to-one (14 steps).
 
 - [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions before recording anything else.
 - [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
-- [ ] Signed in already (credentials never on camera); start with **Settings** open at `demo.washcentral.com/settings-system-users.html`.
-- [ ] Confirm each of the four lists shows real rows before rolling. If a list shows "Couldn't load records (Failed to fetch). Check your connection to the AI agent service." (seen in the July 9 capture), stop, reconnect the agent service, and re-verify. Do not record the error state.
+- [ ] Signed in already (credentials never on camera); start with **Settings** open at `demo.washcentral.com/settings.html`.
+- [ ] Confirm each of the four lists shows real rows before rolling. If a list shows a "Couldn't load … (Failed to fetch). Check your connection to the AI agent service." error (seen in the July 9 capture; each page names its own record type), stop, reconnect the agent service, and re-verify. Do not record the error state.
 - [ ] Snagit: cursor highlight ON, click animation ON. On-screen keystroke display not needed (this lesson is navigation and reading only, no shortcuts).
 - [ ] This lesson is read-only: **+ New Record** is located but never clicked, and no row is opened. Add a STOP callout over **+ New Record** on every page.
 
@@ -19,8 +19,8 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 
 | Step | Action (exact target) | Expected state | Hold | Edit notes |
 |---|---|---|---|---|
-| 1 | Open on **System Users**; slowly sweep the cursor to the left sidebar and rest on the **Users & Security** group | The **Users & Security** group is expanded (lock icon) to three pages: **System Users**, **Security Level**, **Blacklisted** | 3s | Callout ① bracketing the three sidebar links; note "three of four live here" |
-| 2 | Point across the **System Users List** header row, left to right | Card **System Users List**; columns **USER NAME · USER CODE · USER LEVEL · EMAIL · PHONE · ACTIVE · SSO · LAST LOGIN**; **Total Users** tile on top; search "Search by name, code, or email…"; **+ New Record** top-right | 4s | Callout ② along the column header; slow horizontal cursor sweep (~2.5s); STOP callout with red ring over **+ New Record** |
+| 1 | Open on **Settings**; slowly sweep the cursor to the left sidebar and expand the **Users & Security** group | The **Users & Security** group is expanded (lock icon) to three pages: **System Users**, **Security Level**, **Blacklisted** | 3s | Callout ① bracketing the three sidebar links; note "three of four live here" |
+| 2 | Click **System Users** in the sidebar, then sweep across the **System Users List** header row, left to right | Card **System Users List**; columns **USER NAME · USER CODE · USER LEVEL · EMAIL · PHONE · ACTIVE · SSO · LAST LOGIN**; **Total Users** tile on top; search "Search by name, code, or email…"; **+ New Record** top-right | 4s | Callout ② along the column header; slow horizontal cursor sweep (~2.5s); STOP callout with red ring over **+ New Record** |
 | 3 | Hover the four support columns in turn: **ACTIVE**, **SSO**, **LAST LOGIN**, **USER LEVEL** | Same page; cursor rests briefly on each of the four headers | 4s | Callout ③ tagging the four columns "login triage: on? SSO? last in? role?"; zoom-in 130% on ACTIVE/SSO/LAST LOGIN (1.5s) |
 | 4 | Point to the search box, then the **Total Users** tile | Search reads "Search by name, code, or email…"; **Total Users** tile visible (real count when live; "—" only if the list failed to load) | 3s | Callout ④ "search, don't scroll"; if recording live with data, hold on the real count; do NOT type in the box |
 | 5 | In the sidebar, open the **Automation** group and click **User Levels** | **Automation** expands to **Task Scheduler · Task Parameters · Mass SMS Log · User Levels**; **User Levels** page opens with card **User Levels List** | 4s | Callout ⑤ "filed under Automation, not Users & Security"; brief arrow from the Automation group to User Levels |

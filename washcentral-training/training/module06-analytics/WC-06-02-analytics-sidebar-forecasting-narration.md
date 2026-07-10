@@ -26,7 +26,7 @@
 - BI → "B-I" · KPI → "K-P-I" · ROI → "R-O-I" · CSV → "C-S-V"
 - MRR → "M-R-R" · NPS → "N-P-S" · CAC → "C-A-C" · LTV → "L-T-V"
 - PPW → "pay-per-wash" · MTD → "month to date"
-- MLAS, SSNB (location codes in the Forecasting list) → spoken form unsure; not spoken in this script, parked (see structured return).
+- MLAS, SSNB (location codes in the Forecasting list) → spoken form unsure; not spoken in this script, parked (PARKED-ITEMS.md #22).
 
 ### Scope notes (non-spoken)
 

@@ -46,7 +46,7 @@ Open System Users. <break time="1.4s" /> This is the master list of everyone wit
 Read those four in order. <break time="1.2s" /> Active tells you the account is switched on. S-S-O tells you the password lives with the identity provider, not here. Last Login tells you when they last got in, and a blank there means the account has never been used. User Level is the thread you pull into the next two pages.
 
 [01:10 | Step 4 — Search & count]
-You won't scroll this list. <break time="1.2s" /> Search by name, code, or email instead. On the July verified pass the tenant carried more than eight thousand accounts, integration logins and the Micrologic support account included. The search box earns its keep here.
+You won't scroll this list. <break time="1.2s" /> Search by name, code, or email instead. On the July eighth verified pass the tenant carried more than eight thousand accounts, integration logins and the Micrologic support account included. The search box earns its keep here.
 
 [01:29 | Step 5 — User Levels via Automation]
 Now the page that hides. <break time="1.2s" /> User Levels controls how long a session lasts, so you'd expect it under Users and Security. It isn't. It's filed under Automation, a few groups down the rail. Open it there, and remember the spot, because every surprise-logout ticket ends here.
@@ -55,7 +55,7 @@ Now the page that hides. <break time="1.2s" /> User Levels controls how long a s
 Three columns here. <break time="1.0s" /> A name, a security level number, and a session timeout in minutes. Hold onto that number, it drives refunds on the next page. The minutes are the answer for anyone who keeps getting kicked out.
 
 [02:06 | Step 7 — Session timeout values]
-Read the timeout column. <break time="1.4s" /> Cashiers get five minutes. So do Managers, Senior Managers, and the entry-level roles. Customer Service and the back-office levels get two full hours. So a cashier dropping out mid-shift isn't a bug, it's the level doing exactly what it was set to do.
+Read the timeout column. <break time="1.4s" /> On the July eighth verified pass, cashiers get five minutes. So do Managers, Senior Managers, and the entry-level roles. Customer Service and the back-office levels get two full hours. So a cashier dropping out mid-shift isn't a bug, it's the level doing exactly what it was set to do.
 
 [02:28 | Step 8 — Security Levels]
 Back under Users and Security, open Security Level. <break time="1.4s" /> The link says Security Level, the page says Security Levels, same destination. Three columns: a name, a level number, and the one support cares about, Refund Approval Required.
