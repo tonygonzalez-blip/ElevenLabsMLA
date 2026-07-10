@@ -10,7 +10,7 @@
 - **Output:** 44.1 kHz MP3.
 - **Production render:** block-by-block, one TTS call per step, numbered `WC-PB-12-s01.mp3` … `WC-PB-12-s13.mp3`, assembled at each step's marker. Step duration = audio + 0.4 s.
 - **Pace target:** 140–150 wpm, professional and engaging expert-trainer delivery. Never monotone, never ad-read.
-- **Estimated total:** about 4:45 (285 s). Confirm against rendered per-step seconds once the key is available.
+- **Estimated total:** about 4:55 (295 s). Confirm against rendered per-step seconds once the key is available.
 
 ### Narration craft standard (project-wide)
 
