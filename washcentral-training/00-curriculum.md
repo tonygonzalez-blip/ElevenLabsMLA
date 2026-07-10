@@ -1,8 +1,10 @@
 # 00-curriculum.md — Lesson Map & Status
 
-Project: WashCentral Technician Training · Updated July 8, 2026 (handoff to Claude Code)
-Statuses: Planned → Verified (screens walked live) → Authored (plan section written) → Recorded → QA → Done
+Project: WashCentral Technician Training · Updated July 9, 2026 (remote authoring run)
+Statuses: Planned → Verified (screens walked live) → Authored (plan section written) → **Package v1.0** (guide + shot list + narration script) → Recorded → QA → Done
 Cowork phase took every listed lesson to **Verified + Authored** (plan-level) unless marked otherwise. Est. = target recording length.
+
+**July 9, 2026 production run:** all 71 remaining lesson packages were authored (guide + shot list + narration script, status READY FOR GENERATION) from the July 9 verification corpus. A live re-walk was not possible this run: the demo now gates every interior page behind a real credentialed login (PARKED #15), so the corpus (251 signed-in digests + screenshots) served as ground truth per the authoring brief. Every row below except 1.1/1.2 is therefore at **Package v1.0 (July 9)** on top of its listed status. Corpus gaps (agent-service fetch failures, direct-URL 404s, row-click detail views) ship as visible `TBD — parked` markers, tracked in PARKED #16–#22 and DISCREPANCIES #26–#36, and re-verify during the pre-recording live walk. Doc-only deliverables (0.1, CERT) are guide-only by design. Per lesson, the remaining stages are: render narration (needs `ELEVENLABS_API_KEY`) → record → QA.
 
 | Lesson | Title | Module | Est. | Status |
 |--------|-------|--------|------|--------|
@@ -47,7 +49,7 @@ Cowork phase took every listed lesson to **Verified + Authored** (plan-level) un
 | 10.3 | Help Desk (Zoho) | IT & Support | 4 min | Verified · Authored |
 | 10.4 | System Alerts | IT & Support | 3 min | Verified · Authored |
 | 10.5 | Knowledge Base + Training Requests | IT & Support | 5 min | Verified · Authored |
-| 10.6 | Site Detail (Demo) | IT & Support | 4 min | **Planned** (parked #13 — not walked) |
+| 10.6 | Site Detail (Demo) | IT & Support | 4 min | Verified (July 9 corpus capture — parked #13 resolved) · Package v1.0 |
 | 11.1 | Usage & Billing | Billing | 5 min | Verified · Authored |
 | 12.1 | General & org structure | Settings | 5 min | Verified (menu level) · Authored |
 | 12.2 | Locations (5-tab detail incl. credentials) | Settings | 6 min ×2 parts | Verified · Authored |
@@ -61,7 +63,7 @@ Cowork phase took every listed lesson to **Verified + Authored** (plan-level) un
 | 12p | Reports hub + Report Viewer | Reports | 5 min | Verified · Authored |
 | 13p | Audit trio | Audit | 5 min | Verified · Authored |
 | 14.1 | Academy learner side | Academy | 4 min | Verified · Authored |
-| 14.2 | Academy admin side | Academy | 4 min | **Planned** (admin pages listed, not walked) |
+| 14.2 | Academy admin side | Academy | 4 min | Verified (July 9 corpus, first walk) · Package v1.0 |
 | PB-1…14 | Troubleshooting playbooks | Cross-module | 3–6 min each | Authored (steps trace to verified screens; PB-5 refund execution parked #5) |
 | 15.1 | Migration (Jira CSI / Admin Portal) | Migration | 4 min | Authored (source: Migration FAQ) |
 | 15.2 | Parity conversations | Migration | 3 min | Authored (source: Features doc, attributed) |

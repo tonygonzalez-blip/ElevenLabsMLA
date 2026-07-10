@@ -44,6 +44,18 @@ After redirection, the client can no longer reach WashAssist unless the switch i
 
 *Migration note (source: Migration FAQ):* after a client moves, WashAssist enters **support mode** — critical fixes only — for a duration that is still to be determined, before it is eventually retired. The client's data remains available in WashCentral after WashAssist is retired, because WashCentral was already using the WashAssist data.
 
+## Steps (title-card sequence — matches shot list and narration 1:1)
+
+1. Title card: what this lesson is and the source rule. **Expected:** the "Source: Migration FAQ" footer is visible on every fact card from here on.
+2. What the client needs: the new WashCentral URL, direct or via automatic redirect. **Expected:** one fact on screen, nothing else.
+3. Credentials and data: nothing changes; WashCentral uses WashAssist data. **Expected:** the four carry-over facts on one card.
+4. New-client onboarding: unchanged; only the URL differs. **Expected:** single-fact card.
+5. Performing a switch: beta = Jira ticket on the CSI board; GA = Admin Portal. **Expected:** two-column card, phases labeled.
+6. After redirection: WashAssist unreachable unless reverted. **Expected:** single-fact card.
+7. Reversing a switch: same path back; beta revert = CSI Jira ticket. **Expected:** the month-end example lands here.
+8. What happens to WashAssist: support mode (critical fixes only) for a TBD duration, then retirement; data stays in WashCentral. **Expected:** the "data stays" line is on screen.
+9. Recap card and closing stamp. **Expected:** the five-point summary and the verification stamp.
+
 ## Knowledge check
 
 - A beta client wants to switch back to WashAssist for month-end. What is the exact process, and which board? (Answer: submit a Jira ticket on the CSI board to Development to revert the redirection; the same path that performed the switch reverses it.)

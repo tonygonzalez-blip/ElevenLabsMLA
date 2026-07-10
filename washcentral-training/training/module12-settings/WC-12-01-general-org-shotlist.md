@@ -33,7 +33,7 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 12 | Click **Close Settings** at the top of the sidebar | Settings closes and the app is visible underneath; nothing was changed | 2s | Callout ⑫ "read-only, nothing changed"; confirm the return to the app |
 | 13 | None — end card | Recap state: the Settings home reaches ninety-two pages; the General group holds account and org-structure records; profit centers, departments, and categories classify every sale | 3s | Callout ⑬ tying the org spine together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
 
-Estimated runtime: about 4:52 (rendered narration total pending; timestamps below are estimates at ~145 wpm). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
+Estimated runtime: about 4:50 (narration not yet rendered; speech runs about 4:16 at ~145 wpm, plus the holds in the table above). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
 
 ## Recording notes (read-only lesson)
 

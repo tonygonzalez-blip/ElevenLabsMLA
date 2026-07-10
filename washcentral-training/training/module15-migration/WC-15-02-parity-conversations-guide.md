@@ -40,6 +40,17 @@ Some legacy features are not visible in the current demo: PIN Codes, Loyalty Dis
 
 Do not tell a client any of these are "gone" or "removed." The honest, correct phrasing is that the feature's status is **being confirmed**. It may be relocated, it may be arriving in a later release, or it may be retired, and we do not assert which until it is verified. Log the specific ask so it can be confirmed and answered properly.
 
+## Steps (title-card sequence — matches shot list and narration 1:1)
+
+1. Title card: the two conversation types this lesson handles. **Expected:** lesson framing on screen.
+2. Parity card: 179 modules carried forward, 16+ new capability areas (footer: platform documentation). **Expected:** attribution footer visible.
+3. Architecture card: AWS rebuild, token-based auth, device-bound sessions, rate limiting (attributed). **Expected:** attribution footer visible.
+4. Roadmap card: Release 2 Marketing backbone + replication; Release 3 microservices; no dates. **Expected:** no dates anywhere on the card.
+5. Map card, part one: module regroupings (Team, Operations, Digital, IT & Support; Billing and Academy new). **Expected:** the most-asked relocations on one card.
+6. Map card, part two: moved features and buttons (Retention Log, Generate Invoices, Rewards, Adjustments, Forecasting, report scheduling). **Expected:** footer cites the verified restructure map.
+7. Rule card: features not found live are "being confirmed," never "gone" (PARKED-ITEMS #14 list). **Expected:** the phrasing rule is the headline.
+8. Recap card and closing stamp. **Expected:** the three moves summarized; stamp visible.
+
 ## Knowledge check
 
 - A client says "your competitor told me WashCentral dropped half our modules." What is the attributed parity claim, and how do you frame it? (Answer: per platform documentation, all 179 WashAssist modules carried forward with full parity plus 16+ new capability areas; attribute it to the documentation, do not claim to have counted it yourself.)

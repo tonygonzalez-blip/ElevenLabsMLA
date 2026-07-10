@@ -39,7 +39,7 @@
 This is where the money rules live. <break time="1.4s" /> Open Settings, then the Payments and Finance group. Nine pages, one list. Between them they decide how a payment is taken, how a price gets adjusted, how tax is set, and how a sale lands in accounting. Learn to spot them, because most billing questions end on one of these.
 
 [00:24 | Step 2 — Payment Types]
-Start at Payment Types. <break time="1.4s" /> This is your tender list: cash, card, check, house account. Three flags do the real work. Locked marks the system types you can't delete. Require Reference forces a number at the register. And Show as Bank Drop decides what counts toward the drawer drop.
+Start at Payment Types. <break time="1.4s" /> This is your tender list, the payment methods the register accepts. Three flags do the real work. Locked marks the system types you can't delete. Require Reference forces a number at the register. And Show as Bank Drop decides what counts toward the drawer drop.
 
 [00:49 | Step 3 — Discounts]
 Now Discounts. <break time="1.4s" /> The panels up top read the file at a glance: how many are active, how they split between dollars off and percent off. But the row that answers questions is Amount, next to Discount Type. That pair tells you fast whether a discount takes three dollars off or ten percent.

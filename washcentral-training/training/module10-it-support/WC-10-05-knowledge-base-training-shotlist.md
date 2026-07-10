@@ -36,7 +36,7 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 8 | Point to the global header: **Search ⌘K**, then **Ask Shyne**, next to the **MG** account button; press **Ctrl+K** to show the palette opens, then **Esc** to close | Header tools stay top-right on every IT & Support page; **Ctrl+K** opens the command palette, **Esc** closes it with nothing changed | 3s | Callout ⑧ "fallback when a page is down"; show the Ctrl+K and Esc keystrokes; do NOT type a query, do NOT open **Ask Shyne**; palette is opened and closed only |
 | 9 | None — slowly sweep the cursor back across **Knowledge Base** and **Training Requests** in the nav | Recap state: both destinations live under **SUPPORT** in **IT & Support**; both returned 404 on July 9, so contents are parked pending live re-verification | 3s | Callout ⑨ tying the two entries together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
 
-Estimated runtime: about 4:20 once narration is rendered (script total estimated ~4:18 at ~145 wpm, pending render). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment. Do not improvise a page that did not render.
+Estimated runtime: about 4:15 once narration is rendered (script total estimated ~4:15 at ~145 wpm plus breaks and tails, pending render). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment. Do not improvise a page that did not render.
 
 ## If Claude drives while you record
 
