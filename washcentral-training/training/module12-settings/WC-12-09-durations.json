@@ -1,0 +1,121 @@
+{
+  "base": "WC-12-09",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 260.99,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Zoho Desk page, breadcrumb and rail",
+      "audioS": 17.32,
+      "stepS": 17.72,
+      "file": "WC-12-09-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Header identity block",
+      "audioS": 17.48,
+      "stepS": 17.88,
+      "file": "WC-12-09-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Method chips",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-12-09-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Test Connection and Edit Configuration",
+      "audioS": 18.05,
+      "stepS": 18.45,
+      "file": "WC-12-09-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Status tiles",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-12-09-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Settings and Instructions tabs",
+      "audioS": 15.57,
+      "stepS": 15.97,
+      "file": "WC-12-09-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "CREDENTIALS group",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-12-09-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Operational field groups",
+      "audioS": 21.97,
+      "stepS": 22.37,
+      "file": "WC-12-09-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Microsoft Entra ID",
+      "audioS": 21.24,
+      "stepS": 21.64,
+      "file": "WC-12-09-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Google, Okta, Cognito",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-12-09-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "SCIM Provisioning",
+      "audioS": 16.85,
+      "stepS": 17.25,
+      "file": "WC-12-09-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Sage Accounting",
+      "audioS": 20.61,
+      "stepS": 21.01,
+      "file": "WC-12-09-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "QuickBooks Online",
+      "audioS": 19.23,
+      "stepS": 19.63,
+      "file": "WC-12-09-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Recap on Zoho Desk",
+      "audioS": 18.36,
+      "stepS": 18.76,
+      "file": "WC-12-09-s14.mp3"
+    }
+  ]
+}

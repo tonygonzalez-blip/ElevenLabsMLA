@@ -31,7 +31,8 @@
 
 - Covers the Customer List end to end plus a read-only visit to the Retention Log and a live search demonstration. The header tools (**Search ⌘K**, **Ask Shyne**) and the account avatar are out of scope; they belong to WC-01-02.
 - **Delete** and **+ Add Customer** are never clicked. They are named as out-of-scope, data-changing actions and deferred to their own lessons.
-- The **Filters** panel opens and closes on camera, but its controls were not captured in the July 9 corpus. Narrate the badge and what the panel is for; do not recite controls the corpus did not confirm.
+- The **Filters** panel opens and closes on camera. Its controls were captured open in the July 11 corpus (`crm-customers-filters-open`: FILTER BY FIELD — Name, Customer ID, License Plate, Email, Location, Membership Plan, Status, Sign Up Date, with ✕ Clear all / ✓ Apply Filters). The spoken block s07 narrates the badge and purpose only, which remains accurate.
+- **July 11 re-verification — RE-RENDER REQUIRED for s08.** The July 11 capture shows eight columns: Customer, Location, Plan, Member Since, Status, Visits, Total Spend, Last Visit. The rendered s08 audio speaks "Customer, location, plan, member since, monthly price, and status", which no longer matches the live table (PLAN $/MO is gone). Do not edit the spoken line here; re-render s08 after sign-off and re-measure durations.
 - The search demonstration types a name fragment and clears it. Do not read out specific returned rows; they render live at record time.
 
 ## Timed script
@@ -59,7 +60,7 @@ Just above the table, the search box. <break time="1.2s" /> Read the placeholder
 [01:35 | Step 7 — Filters]
 Next to it, the Filters control. <break time="1.4s" /> The badge counts active filters. Right now it reads zero, so nothing is narrowing the list. Open it for a panel that trims the base down; any count above zero means the list is already filtered.
 
-_[Director: open **Filters**, hold, then close it without changing anything; the badge stays 0. Panel contents are captured at record time — the July 9 corpus did not include them.]_
+_[Director: open **Filters**, hold, then close it without changing anything; the badge stays 0. Panel contents confirmed in the July 11 corpus (FILTER BY FIELD panel; see guide step 7); do not click ✓ Apply Filters.]_
 
 [01:54 | Step 8 — Columns]
 Now the columns. <break time="1.0s" /> Customer, location, plan, member since, monthly price, and status. Every header sorts, so you can order the list any way you need. And that checkbox column on the left selects rows, and on this tour it stays untouched, which is exactly why we keep those boxes empty.

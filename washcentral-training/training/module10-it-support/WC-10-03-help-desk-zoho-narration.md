@@ -30,7 +30,7 @@
 ### Scope notes (non-spoken)
 
 - Covers the **Help Desk (Zoho)** page and the read of its connection status on `Settings → Integrations → Zoho Desk`. Full field-by-field configuration is WC-12-09 and is out of scope here.
-- The Help Desk (Zoho) page returns HTTP 404 in the July 9 corpus; the not-connected embedded view the July 8 plan described (mode chips, filters, KPI placeholders, empty-state message) is not observable and is parked (new item). Do not narrate that content.
+- **NEEDS PARTIAL RE-RENDER (July 11, 2026): block s02 only.** The July 11 in-app capture (`verification/2026-07-11/digests/zoho-tickets-inapp.json`) shows **Help Desk (Zoho)** renders its not-connected embedded view (subtitle **Support Tickets · Not connected**, — count placeholders, status/priority filters, empty-state card **Zoho Desk not connected** with **Go to Zoho Desk Settings →**) when reached from the sidebar; only the direct URL 404'd on July 9. Block s02's spoken "nothing loads. You get a bare Not Found page" contradicts the live page and must be re-scripted and re-rendered. All other blocks (s01, s03–s10) remain accurate. Spoken lines left untouched per the audio-lock rule.
 - Read-only lesson. Do not depict clicking **Test Connection** or **Edit Configuration**, and do not open the **Instructions** tab content.
 
 ## Timed script
@@ -41,7 +41,7 @@ Start in the left rail, under I-T and Support. <break time="1.0s" /> The Support
 [00:20 | Step 2 — Open Help Desk (Zoho)]
 Open Help Desk, Zoho. <break time="1.4s" /> In this training tenant, nothing loads. You get a bare Not Found page instead of a ticket list. That's your signal the outside connection isn't live, and the place to confirm it is over in Settings.
 
-_[Director: the 404 placeholder is expected — do not treat it as a bug on camera. The embedded empty-state view is parked (new item).]_
+_[Director: SUPERSEDED July 11 — the page now renders its not-connected view via the sidebar (breadcrumb Support › Help Desk Tickets, — counts, empty-state card). This block's spoken text contradicts the live page; do not record until s02 is re-scripted and re-rendered.]_
 
 [00:40 | Step 3 — Open Zoho Desk settings]
 Head to Settings, Integrations, Zoho Desk. <break time="1.4s" /> This is the control room for the connection. Whether Zoho talks to WashCentral is read from this one page, so it's where support work on this integration starts.
@@ -76,5 +76,5 @@ _(Estimated narration total: ~190.3s ≈ 03:10, pending render. Per-step seconds
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside director notes.
 - Read-only throughout: **Test Connection** and **Edit Configuration** are never clicked, and the **Instructions** tab content is never opened.
-- Corpus note: the Help Desk (Zoho) page (`zoho-tickets.html`) returned HTTP 404 in the July 9 corpus; the not-connected embedded view is parked (new item) and is not narrated. The connection status is grounded on `settings-integrations-zoho.html`.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Corpus note (updated July 11): the Help Desk (Zoho) direct URL returned HTTP 404 in the July 9 corpus; the July 11 in-app capture confirmed the not-connected embedded view, which invalidates block s02's spoken text (re-render needed for that block only). The connection status remains grounded on `settings-integrations-zoho.html`.
+- Verification stamp: **Verified against demo.washcentral.com on July 11, 2026** (non-spoken notes only; spoken script v1.0 pending s02 re-script).

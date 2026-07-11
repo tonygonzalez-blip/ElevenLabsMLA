@@ -1,10 +1,10 @@
 # WC-11-01 — Usage & Billing · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps). (Spoken lines are audio-locked and unchanged; **blocks s09, s10, s12, and s13 need re-render** — see scope notes.)
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 14 blocks `WC-11-01-s01.mp3`…`WC-11-01-s14.mp3` + joined `WC-11-01-full-narration-v1.0.mp3`. Audio is rendered later once the ElevenLabs key is available in the environment; timestamps below are estimates at ~145 wpm plus break time, pending render.
+- **Status:** **BLOCKED FOR GENERATION — re-write s09, s10, s12, and s13 against the July 11 corpus first** (see scope notes); the other ten blocks are ready. WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 14 blocks `WC-11-01-s01.mp3`…`WC-11-01-s14.mp3` + joined `WC-11-01-full-narration-v1.0.mp3`. Audio is rendered later once the ElevenLabs key is available in the environment; timestamps below are estimates at ~145 wpm plus break time, pending render.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved by user July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -29,7 +29,8 @@
 
 - Covers the **Usage & Billing** page (`billing-usage.html`): the billing-period line, the KPI band, the three **Overview** panels, and the six-tab bar. Read-only throughout; nothing is exported and no invoice is touched.
 - The export control on **Year-to-Date Summary** is never depicted in use and never named as a spoken label; the narration only warns it stays alone.
-- The five tabs beyond **Overview** were not captured in the July 9 corpus. Their spoken blocks (steps 9–13) describe purpose only and defer contents to live confirmation; do not add spoken labels for anything inside those tabs.
+- All five tabs beyond **Overview** were captured live in the July 11, 2026 credentialed corpus (`verification/2026-07-11/digests/billing-usage-*.json`); the guide and shot list now quote their real contents.
+- **NEEDS RE-RENDER — blocks s09, s10, s12, s13.** Their spoken lines defer the tab contents ("Its panels weren't captured in the verification corpus… The layout gets confirmed live before this segment ships", "Layout parked, confirmed at record time", "Contents parked pending live confirmation", "Contents parked"), which the July 11 captures now contradict. Re-write those blocks against the captured tabs before rendering. s11 (Invoices) names only the badge and "one invoice sits open", both confirmed July 11 (**INV-2026-04**, $542.30, ● Open) — it stands as written.
 - The "Last 6 months" caption versus seven rendered bars on **Monthly Usage Cost** is a logged discrepancy; the narration tells the viewer to count the bars.
 
 ## Timed script
@@ -63,7 +64,7 @@ _[Director: STOP at the export control on Year-to-Date Summary; it is never clic
 [02:49 | Step 9 — SMS Usage tab]
 Now walk the tabs. Click S-M-S Usage. <break time="1.4s" /> This is the detail behind the period's texting spend. Its panels weren't captured in the verification corpus, so read what renders and hold. The layout gets confirmed live before this segment ships.
 
-_[Director: steps 9 through 13 open tabs whose contents are TBD — parked; hold on each view, interact with nothing inside it.]_
+_[Director: steps 9 through 13 were captured live July 11 — see the shot list for each tab's real contents. Hold on each view, interact with nothing inside it. Blocks s09, s10, s12, s13 must be re-rendered first; their spoken "parked" framing no longer matches.]_
 
 [03:07 | Step 10 — Email Usage tab]
 Next, Email Usage. <break time="1.2s" /> Same idea for the email channel: the volume and cost behind the tile you read earlier. Layout parked, confirmed at record time.
@@ -86,5 +87,5 @@ _(Estimated narration total: ~258s ≈ 04:18 at ~145 wpm plus break time. Actual
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and in the generation-log lines noting the standard.
-- Read-only throughout: nothing exported, no invoice opened or approved, and the export control on **Year-to-Date Summary** is never depicted. Tab contents beyond **Overview** are parked and deferred to live confirmation; the spoken blocks for steps 9–13 name no unverified label.
-- Status: **READY FOR GENERATION** — audio renders once `ELEVENLABS_API_KEY` is set. Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Read-only throughout: nothing exported, no invoice opened or approved, and the export control on **Year-to-Date Summary** is never depicted. Tab contents beyond **Overview** were captured live on July 11, 2026; the spoken deferrals in s09, s10, s12, and s13 are now stale and flagged for re-render (spoken text left untouched per the audio-lock rule).
+- Status: **BLOCKED FOR GENERATION** pending the s09/s10/s12/s13 re-write; audio renders once `ELEVENLABS_API_KEY` is set. Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**

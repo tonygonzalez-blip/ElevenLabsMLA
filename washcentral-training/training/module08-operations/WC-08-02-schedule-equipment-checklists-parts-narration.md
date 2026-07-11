@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, one TTS call per step, files `WC-08-02-s01.mp3` … `WC-08-02-s06.mp3`. Step duration = audio + 0.4 s. Timestamps below are estimates at ~145 wpm pending render.
+- **Status:** **DO NOT GENERATE — NEEDS RE-AUTHOR + RE-RENDER (July 11, 2026).** The July 11 credentialed pass reached all four pages through the in-app sidebar (direct URLs still 404). Blocks s02–s06 below narrate the July 9 Not-Found state ("four oh four", "the page is parked", "opened to Not Found today") and now contradict the live pages. Spoken lines are preserved unedited per the audio-lock rule; re-author this script against the v2.0 guide and shot list before any TTS call. Render settings when re-authored: voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, one TTS call per step, files `WC-08-02-s01.mp3` … `WC-08-02-s06.mp3`. Step duration = audio + 0.4 s.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice. Never switch without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -26,8 +26,9 @@
 ### Scope notes (non-spoken)
 
 - Menu-level tour of the four MAINTENANCE pages that follow Issues: Maintenance Schedule, Equipment Registry, Checklists, Parts & Supplies.
-- On July 9, all four pages returned **Not Found** ("HTTP Error 404. The requested resource is not found.") in the corpus. The script documents that state and teaches each page's purpose and location. It does not read KPIs, columns, or rows, because none rendered. If the pages are later built, re-verify and re-author before generating audio.
-- Nothing here is a send-type or destructive action; the four pages carry no controls in their current state.
+- **July 11, 2026 update:** all four pages are real and loaded on the July 11 credentialed pass when reached via the in-app sidebar; direct URLs still 404. The v2.0 guide and shot list document the observed KPIs, cards, and columns. This v1.0 script still narrates the July 9 Not-Found state in blocks s02–s06 and is superseded — re-author before generating any audio (see Status).
+- On July 9, all four pages returned **Not Found** ("HTTP Error 404. The requested resource is not found.") when probed by direct URL; that is what this script documents.
+- The live pages carry **+ New Record**, **Export**, **Filters ▾**, and search controls; the re-authored script must keep them read-only (nothing clicked, exported, or created).
 
 ## Timed script
 
@@ -37,7 +38,7 @@ Start in Operations and look down the sidebar. <break time="1.0s" /> The whole m
 [00:31 | Step 2 — Maintenance Schedule]
 Click Maintenance Schedule. <break time="1.4s" /> Here is the honest part. Today this page comes back Not Found, a plain four oh four, so there are no numbers to read yet. What it is built for is preventive work, the upkeep you run on a calendar instead of waiting for something to break. Once it loads, this is where a manager pulls up what service is due this month, and where a recurring job like a monthly brush change would live. Until then, we note the entry and we do not invent what is not on the screen.
 
-_[Director: the page shows a browser Not Found screen. Hold on it. Do not narrate or imply any KPIs, columns, or rows.]_
+_[Director note, updated July 11, 2026: this block is OUTDATED. The page now loads via the in-app sidebar (KPIs 42 / 6 / 2 / 18, seven columns). Do not record against this audio; the block is queued for re-author + re-render.]_
 
 [01:11 | Step 3 — Equipment Registry]
 Now Equipment Registry. <break time="1.4s" /> Same result today, the same four oh four. Picture what it will hold once it is live: every machine at every site, the asset that a work order points back to. A field tech calls in and says the air dryer in bay two is down. This is the page that would name that exact unit, tell you where it sits, and tie it to its service history. For now the entry is real and the page is parked.
@@ -57,5 +58,5 @@ _(Estimated total: ~199 s ≈ 03:19 at ~145 wpm. Timestamps are estimates pendin
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI entry names (Maintenance Schedule, Equipment Registry, Checklists, Parts & Supplies) and the observed error state (Not Found / 404) were left exact. The only em dashes are in the timed-block headers, which is the established `[mm:ss | Step N — target]` house format.
-- Status **READY FOR GENERATION**: audio is rendered later once the ElevenLabs key is available. The four pages returned Not Found on July 9; if they are built before recording, re-verify and re-author this script before generating audio.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Status history: v1.0 was READY FOR GENERATION against the July 9 corpus (pages Not Found by direct URL). **July 11, 2026:** the four pages loaded via in-app sidebar navigation on the credentialed pass, so blocks s02–s06 contradict the platform. Status changed to **DO NOT GENERATE — NEEDS RE-AUTHOR + RE-RENDER**. No audio was ever rendered from this script, so nothing approved is being discarded.
+- Script text stamp remains **July 9, 2026** (the state it describes); the July 11 corpus check is logged above and in the v2.0 guide and shot list.

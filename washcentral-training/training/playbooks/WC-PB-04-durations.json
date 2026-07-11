@@ -1,0 +1,113 @@
+{
+  "base": "WC-PB-04",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 245.13,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Decline Rate baseline",
+      "audioS": 21.47,
+      "stepS": 21.87,
+      "file": "WC-PB-04-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Priority Intelligence",
+      "audioS": 20.61,
+      "stepS": 21.01,
+      "file": "WC-PB-04-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Scope the ticket",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-PB-04-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Open Customer 360",
+      "audioS": 12.04,
+      "stepS": 12.44,
+      "file": "WC-PB-04-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Membership billing cycle",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-PB-04-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Payments tab",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-PB-04-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Declined Credit Card Log",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-PB-04-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Search and load state",
+      "audioS": 13.95,
+      "stepS": 14.35,
+      "file": "WC-PB-04-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Settings Locations",
+      "audioS": 17.16,
+      "stepS": 17.56,
+      "file": "WC-PB-04-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Payments & Credentials",
+      "audioS": 22.05,
+      "stepS": 22.45,
+      "file": "WC-PB-04-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Billing Usage by Source",
+      "audioS": 21,
+      "stepS": 21.4,
+      "file": "WC-PB-04-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Package the escalation",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-PB-04-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 21.39,
+      "stepS": 21.79,
+      "file": "WC-PB-04-s13.mp3"
+    }
+  ]
+}

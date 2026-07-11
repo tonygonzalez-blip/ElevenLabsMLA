@@ -1,7 +1,7 @@
 # WC-12-04 · Payments & Finance (Settings)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.** (Payment Types re-captured live with credentials July 11; the other seven data-parked lists remain pending.)
 
 ## Purpose
 
@@ -19,11 +19,11 @@ Every page in this lesson lives under Settings. Open **Settings** from the gear 
 
 ## Steps
 
-One action per step. Hold each new screen for two to three seconds before moving on. The demo data service was offline during capture, so the lists in these screenshots show a load error and the totals read as a dash. See Notes for what that means and what is parked.
+One action per step. Hold each new screen for two to three seconds before moving on. The demo data service was offline during the July 9 capture, so most lists in those screenshots show a load error and dashed totals; the July 11 credentialed re-capture recovered **Payment Types** in full. See Notes for what that means and what is still parked.
 
 1. Open **Settings**, then open the **Payments & Finance** group in the settings sidebar. **Expected:** the group expands to nine pages in order: **Payment Types**, **Discounts**, **Discount Types**, **Surcharges**, **Surcharge Types**, **Payout Percentage**, **Tax Rates**, **General Ledger Codes**, and **GL Account Codes**. **Close Settings** and **All Settings** sit at the top of the sidebar, and **Integrations** sits below the group. This one list is your map for everything that follows.
 
-2. Click **Payment Types**. **Expected:** the breadcrumb reads **Settings › Payment Types**. A KPI band shows **Total Types**, **Locked (System)**, and **Require Reference**. The **Payment Types List** has columns **DESCRIPTION**, **LOCKED**, **REQUIRE REFERENCE**, and **SHOW AS BANK DROP**, with a **+ New Record** button and a "Search payment types…" box. This is the tender list, the payment methods the register accepts. **Locked** marks system types you cannot delete, **Require Reference** forces a reference number at the register, and **Show as Bank Drop** flags what counts toward the drawer drop.
+2. Click **Payment Types**. **Expected:** the breadcrumb reads **Settings › Payment Types**. A KPI band shows **9 Total Types**, **9 Locked (System)**, and **0 Require Reference** (observed live July 11, 2026). The **Payment Types List** has columns **DESCRIPTION**, **LOCKED**, **REQUIRE REFERENCE**, and **SHOW AS BANK DROP**, with a **+ New Record** button and a "Search payment types…" box. Nine tender rows: **CASH**, **CASH REFUND**, **CHECK**, **CREDIT CARD**, **CREDIT CARD REFUND**, **GIFT CARD**, **GIFT CARD REFUND**, **DISCOUNT**, and **TOKEN** — every one **Locked Yes**, **Require Reference No**, and **Show as Bank Drop** unset (—). This is the tender list, the payment methods the register accepts. **Locked** marks system types you cannot delete (here, all nine are system types), **Require Reference** forces a reference number at the register, and **Show as Bank Drop** flags what counts toward the drawer drop.
 
 3. Click **Discounts**. **Expected:** the breadcrumb reads **Settings › Discounts**. The KPI band shows **48 Total Discounts**, **45 Active**, **22 Unlimited Discounts**, and **18 Dollar Off**. Three panels sit above the list: **Config Activity** (last 12 months), **Breakdown by Method** (Unlimited 46%, Dollar Off ($) 37%, Percent Off (%) 12%, Other 5%), and **Status Overview** (94% ACTIVE, 3% DRAFT, 3% INACTIVE). The **Discounts List** has columns **DESCRIPTION**, **CODE**, **AMOUNT**, **TAXABLE**, **DISCOUNT TYPE**, and **START DATE**, plus **Filters** and **Search** controls. **AMOUNT** with **DISCOUNT TYPE** is where you read whether a discount takes dollars off or a percentage off.
 
@@ -51,7 +51,7 @@ You can open the **Payments & Finance** group and name its nine pages without hu
 
 ## Notes and troubleshooting (observed behavior only)
 
-- The demo's data service was offline during the July 9 capture. Every list on these pages showed "Couldn't load records (Failed to fetch). Check your connection to the AI agent service." and the KPI tiles read as a dash, except **Discounts** and **Discount Types**, whose totals and analytics panels did load. So the column headers, KPI labels, and panel names in this guide are verified, but the row content, and the KPI values on the other seven pages, are `TBD — parked` (new parked item). On a healthy tenant the lists populate and the totals fill in.
+- The demo's data service was offline during the July 9 capture (an agent-service token issue; every list except **Discounts** and **Discount Types** showed "Couldn't load records (Failed to fetch)" with dashed tiles). The credentialed July 11 re-capture recovered **Payment Types** in full — 9 rows and live KPI values, now quoted in step 2. The row content and KPI values for the remaining seven pages (**Surcharges**, **Surcharge Types**, **Payout Percentage**, **Tax Rates**, **General Ledger Codes**, **GL Account Codes**, and the Discounts row detail) were not re-captured and stay `TBD — parked`. On a healthy tenant those lists populate and the totals fill in.
 - The one detail this lesson opens, a **Discount** record, could not be captured. The `settings-discounts-edit.html` route returned HTTP 404 and the row-click detail was not in the corpus, so the Discount detail layout, its **Active Locations** tab, and the dollar-versus-percent method flag are parked. The pattern is documented in full on Services (WC-12-03); treat that as the reference until the Discount detail is captured on a production-like tenant. This is related to PARKED-ITEMS.md #1 (the per-location "Configure per location" gear dialog would not open in the demo).
 - Sidebar and page label disagree on one page: the sidebar item is **General Ledger Codes** while the page header and breadcrumb read **GL Codes**. Use either name; they are the same page. Reported as a new discrepancy.
 - Every page carries a **+ New Record** button. It is the create action for a shared configuration record, so it is never clicked in this lesson. The same rule covers any edit or save on these pages.
@@ -64,4 +64,4 @@ You can open the **Payments & Finance** group and name its nine pages without hu
 
 WC-12-03 Services (the Active Locations and per-location override pattern) · WC-12-05 Hardware & UI (POS-facing config) · WC-12-06 Users & Security (the refund-approval gate).
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**

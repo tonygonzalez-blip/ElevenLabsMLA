@@ -29,7 +29,7 @@
 
 - Troubleshooting playbook: symptom, ordered checks, then resolve or escalate. It reads two surfaces only, **System Users** and the audit **User Activity** log; it never edits a record.
 - No password reset is performed. Step 10 describes where a reset would happen (production only) and is a concept beat, not an action.
-- July 9 corpus states to expect while recording: **System Users** may show "Couldn't load records (Failed to fetch)…" with **Total Users** = "—", and the audit **User Activity** page returned a 404 on its direct URL. The **User Activity** column set (logins, failed logins, roles) is carried from the project's verified audit map (DISCREPANCIES.md #18). Do not depict fabricated rows.
+- **NEEDS PARTIAL RE-RENDER (July 11, 2026): block s09.** The July 11 in-app capture of **User Activity** (`verification/2026-07-11/digests/audit-users-inapp.json`) shows **Failed Logins** is a page-level KPI tile (**3**), with no per-user failed-login column (columns: USER · ROLE · LAST LOGIN · LOGINS THIS MONTH · LOCATION · STATUS). Block s09's spoken "Read the failed-login count and let it steer you" framing (a per-account count) does not match the page and needs a re-script/re-render. Also updated states: **System Users** loads live rows (Total Users 8,022) and **User Activity** renders via the AUDIT sidebar link (direct URL 404'd July 9 — reach it by sidebar only). All other blocks stand. Spoken lines left untouched per the audio-lock rule.
 - Steps 1, 2, 3, 10, 11, and 12 are concept/recap beats held on a clean frame; steps 4–9 are the live read-only walk.
 
 ## Timed script
@@ -61,7 +61,7 @@ Then Last Login. <break time="1.0s" /> A recent date tells you the account works
 [02:44 | Step 9 — Check 4, User Activity]
 Last check. Open the Audit menu, then User Activity. <break time="1.4s" /> The platform logs every sign-in and every failure. A run of failed attempts points at the password. Zero attempts points the other way, back to the tenant code. Read the failed-login count and let it steer you.
 
-_[Director: if User Activity returns a 404 in the recording tenant, hold on the Audit sidebar showing Audit Log, User Activity, and Change History; do not fabricate rows. Column set per DISCREPANCIES.md #18.]_
+_[Director: UPDATE July 11 — reach User Activity from the AUDIT sidebar link (direct URL 404'd July 9); the page renders live: tiles 14 / 28 / 42 min / 3 Failed Logins, columns USER · ROLE · LAST LOGIN · LOGINS THIS MONTH · LOCATION · STATUS. No per-user failed-login column exists, so this block's spoken text is flagged for re-render; do not record s09 as written.]_
 
 [03:05 | Step 10 — Where a reset happens]
 By now you know whether a reset is even the fix. <break time="1.0s" /> You don't do it here. In production there are two doors: the user resets themselves with Forgot Password, or an admin resets it from that user's own record. If it's a single sign-on account, it's neither. That fix lives with the identity provider.

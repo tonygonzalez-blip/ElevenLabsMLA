@@ -1,8 +1,10 @@
 # WC-14-01 — Academy (LMS), learner side · Snagit Shot List (operator-ready)
 
-v1.0 · July 9, 2026 · Target output: **WC-14-01-academy-learner-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+v1.1 · July 11, 2026 · Target output: **WC-14-01-academy-learner-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
 Step numbers match the guide and the narration blocks one-to-one (13 steps).
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**
+
+> **Narration note (July 11):** narration block s11's spoken line says the three learner-page interiors "have not been verified yet." They were verified live on July 11; block s11 is flagged for re-script/re-render. The visual step (pointing at the sidebar entries without opening them) is unchanged.
 
 ## Pre-roll checklist (not recorded)
 
@@ -11,7 +13,7 @@ Step numbers match the guide and the narration blocks one-to-one (13 steps).
 - [ ] Signed in already (credentials never on camera); start URL: `demo.washcentral.com/command-center.html` with the left rail visible (step 1 clicks the **Academy** rail icon).
 - [ ] Snagit: cursor highlight ON, click animation ON.
 - [ ] This lesson is browse only. Do NOT click **Start Course**, **Start** on any course card, **Course Details**, **View All →**, **Browse Catalog**, **View Full Leaderboard →**, any **Quick Links** entry, or any **Enroll** / **Start Path** control. Nothing in this recording may enroll the account in a course.
-- [ ] Do NOT navigate into **Course Catalog**, **Learning Paths**, or **My Learning** — their page interiors are not in the July 9 corpus and are parked. Step 11 points at the sidebar entries only. Operator note from the guide: capture those three pages live before this lesson's follow-up is authored; they are out of scope for this recording.
+- [ ] Do NOT navigate into **Course Catalog**, **Learning Paths**, or **My Learning** during this recording — the locked narration is built around a pointer-only step 11. Their interiors were captured live on July 11 (they open via the Academy sidebar; direct URLs 404'd July 9) and are documented in the v1.1 guide for the follow-up lesson; they stay out of scope for this recording.
 - [ ] If a "Still there?" session-timeout dialog appears, dismiss it with **Stay Logged In** off-camera and re-roll the segment (session timeout is out of scope here; see WC-01-03).
 
 ## Shots
@@ -30,9 +32,9 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 8 | Scroll to the **My Achievements** section | Header reads "3 earned · 3 locked"; six badge tiles: **Fast Starter**, **First Certificate**, **7-Day Streak**, **Analytics Pro**, **Top Learner**, **Platform Expert**; earned badges filled, locked ones dimmed | 3s | Callout ⑧ splitting earned vs locked; zoom-in 150% on one earned + one dimmed badge (1.5s) |
 | 9 | Move to the **Org Leaderboard** panel on the right | A ranked list of colleagues by learning points; the signed-in learner is highlighted in the standings; **View Full Leaderboard →** link at the bottom | 3s | Callout ⑨ on the highlighted row; do NOT click **View Full Leaderboard →**; hover the link only (1s) |
 | 10 | Move below the leaderboard to the **Quick Links** panel | A short list of dashboard shortcuts including **My Learning Paths** and **My Certificates** | 2s | Callout ⑩ on the two captured shortcuts; no click |
-| 11 | Point in the sidebar to **Course Catalog**, then **Learning Paths**, then **My Learning** — do NOT click any of them | The three remaining **ACADEMY** destinations are visible: the full course library, the sequenced tracks, and your personal course list; their page interiors are TBD — parked (not in the July 9 corpus) | 3s | Callout ⑪ on the three entries with note "interiors parked — pointed at, not opened"; hover each about 0.8s, no click |
+| 11 | Point in the sidebar to **Course Catalog**, then **Learning Paths**, then **My Learning** — do NOT click any of them | The three remaining **ACADEMY** destinations are visible: the full course library (19 courses, category chips, Most Popular sort), the sequenced tracks (22 courses across the paths), and your personal course list (four tabs, all 0 on this account); interiors verified live July 11 but not opened in this walk | 3s | Callout ⑪ on the three entries with note "interiors verified July 11 — pointed at here, walked in the follow-up lesson"; hover each about 0.8s, no click; NOTE: narration s11 pending re-render (stale "not verified" line) |
 | 12 | Hold on the full dashboard; no click | Recap of the safety rule: browsing, hovering, and reading change nothing; **Start Course**, **Start**, and any **Enroll** / **Start Path** buttons are the only state-changing controls and are never clicked in this lesson | 3s | Callout ⑫ "browse freely — enrolling is a real action, deferred to a later lesson"; steady hold, cursor parked in dead space |
-| 13 | Slow sweep: tiles → **Continue Learning** → **All Courses** → **My Achievements** → **Org Leaderboard** → sidebar | Recap state: **My Dashboard** is home base; tiles show status, **Continue Learning** resumes, the grid and **Browse Catalog** reach the catalog, badges and the leaderboard track standing, and the sidebar reaches the other three learner pages | 3s | Callout ⑬ tying the panels together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+| 13 | Slow sweep: tiles → **Continue Learning** → **All Courses** → **My Achievements** → **Org Leaderboard** → sidebar | Recap state: **My Dashboard** is home base; tiles show status, **Continue Learning** resumes, the grid and **Browse Catalog** reach the catalog, badges and the leaderboard track standing, and the sidebar reaches the other three learner pages | 3s | Callout ⑬ tying the panels together; end card / verification stamp "Verified against demo.washcentral.com on July 11, 2026."; fade out |
 
 Estimated runtime: about 4:35 (estimated narration bed ~4:14 at ~145 wpm, pending generation, plus cursor travel and scrolling on one long page). If any unexpected dialog, error, changed data, an unexpected enrollment state (any tile or card not reading 0 / Not started), or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise.
 

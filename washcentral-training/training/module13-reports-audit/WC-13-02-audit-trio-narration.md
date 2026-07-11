@@ -1,6 +1,6 @@
 # WC-13-02 — Audit trio (Audit Log, User Activity, Change History) · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (16 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 (spoken script unchanged; non-spoken notes updated July 11, 2026) · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (16 steps).
 
 ## Settings header
 
@@ -31,7 +31,7 @@
 
 - Covers the three AUDIT pages under IT & Support: Audit Log, User Activity, Change History. This is a read-only tour; no rows are opened, nothing is exported, nothing is created.
 - **Export** and **+ New Record** on the Audit Log are named once as a guardrail and never clicked.
-- **User Activity** and **Change History** are reached only from the AUDIT sidebar links. In the July 9 corpus their direct URLs returned HTTP 404, so their on-page values and rows are parked; the narration describes what each page is *for* rather than reading numbers that this build cannot confirm.
+- **User Activity** and **Change History** are reached only from the AUDIT sidebar links (their direct URLs returned HTTP 404 in the July 9 sweep). The July 11 credentialed pass captured both live (`audit-users-inapp.json`, `audit-changes-inapp.json`), so their values and rows are now observed — see the v1.1 guide/shot list. The spoken lines describe what each page is *for* and remain accurate against the July 11 captures; no re-render needed.
 - Session-timeout ("Still there?") behavior is out of scope — it belongs to lesson 1.3.
 
 ## Timed script
@@ -65,7 +65,7 @@ Find the deleted event. <break time="1.4s" /> Here it is: a payment record, remo
 [02:18 | Step 9 — User Activity]
 Move to User Activity. <break time="1.4s" /> Where the Audit Log tracks events, this page tracks people at the door. Who's signing in, how often, and who keeps bouncing off the login screen.
 
-_[Director: reach User Activity from the AUDIT sidebar link only; its direct address is not available in this build. Frame the live page; do not narrate on-screen values as verified (they are parked).]_
+_[Director: reach User Activity from the AUDIT sidebar link only; its direct address 404'd on July 9. Page verified live July 11: KPI band 14 / 28 / 42 min / 3, columns USER · ROLE · LAST LOGIN · LOGINS THIS MONTH · LOCATION · STATUS.]_
 
 [02:32 | Step 10 — User Activity KPIs]
 Its tiles lead with the sign-in picture. <break time="1.0s" /> Active users, logins today, average session length, and the one you'll reach for most: failed logins. When a cashier says they're locked out, that number is where you start.
@@ -76,7 +76,7 @@ The table fills in the rest. <break time="1.0s" /> Each person, their role, when
 [03:08 | Step 12 — Change History]
 Last page. Change History. <break time="1.4s" /> The Audit Log tells you a record was updated. This one tells you exactly which field moved, and what it was before.
 
-_[Director: reach Change History from the AUDIT sidebar link only; its direct address is not available in this build.]_
+_[Director: reach Change History from the AUDIT sidebar link only; its direct address 404'd on July 9. Page verified live July 11: KPI band 84 / 420 / 12 / 408, columns DATE/TIME · USER · MODULE · FIELD · OLD VALUE · NEW VALUE.]_
 
 [03:20 | Step 13 — Change History KPIs]
 The tiles count the churn. <break time="1.0s" /> How many changes today, how many this week, and how the load splits between configuration and everyday data. It's a pulse on how much is being edited under the hood.
@@ -87,7 +87,7 @@ But the columns are the payoff. <break time="1.2s" /> Alongside the usual when a
 [03:53 | Step 15 — Price-change example]
 Picture a membership price. <break time="1.0s" /> The plan's example is a monthly rate moving from twenty-nine ninety-nine to thirty-four ninety-nine. One row, before on one side, after on the other. When a client swears their price jumped, this is the receipt.
 
-_[Director: the live Change History row is parked (page not captured in this build). Hold on whatever field row renders; do not overlay the example figures unless the live row shows them.]_
+_[Director: verified live July 11 — the top Change History row IS the example: 2025-06-01 10:44 · M. Gonzalez · Settings · Monthly Price · $29.99 · $34.99. Hold on that row; the spoken "the plan's example is" phrasing stays accurate since the plan's example matches the live row.]_
 
 [04:11 | Step 16 — Recap]
 So, three pages, three questions. <break time="0.8s" /> What happened, and from what machine? That's the Audit Log. Who's getting in, and who isn't? User Activity. Who changed which field, and to what? Change History. Match the ticket to the page, and the answer is already waiting.
@@ -98,5 +98,5 @@ _(Estimated total ≈ 4:31 at ~145 wpm; measured seconds and the assembled durat
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, column names, the navigation paths, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside director notes.
-- Corpus-grounding respected: Audit Log lines trace to `verification/2026-07-09/digests/audit-log.json` and the matching screenshot. User Activity and Change History are described at the "what the page is for" level only, because their direct-URL captures 404'd; their specific values are parked and never spoken as verified.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Corpus-grounding respected: Audit Log lines trace to `verification/2026-07-09/digests/audit-log.json` and the matching screenshot. User Activity and Change History are described at the "what the page is for" level; the July 11 in-app captures (`verification/2026-07-11/digests/audit-users-inapp.json`, `audit-changes-inapp.json`) confirmed every spoken claim, so this script needs no re-render. Spoken lines untouched July 11; only these non-spoken notes were updated.
+- Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**

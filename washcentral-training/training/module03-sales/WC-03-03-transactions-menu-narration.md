@@ -29,6 +29,7 @@
 - Menu tour of the seven Transactions pages other than Tickets. List and landing level only; no page is opened into a detail, form, or export.
 - Do not depict clicking **Export** (download action) or opening **+ New Record**. Only sidebar entries are clicked.
 - On July 9 all seven lists showed **Couldn't load records (Failed to fetch)**; the tour narrates KPIs and columns, not row values. Do not narrate specific records.
+- **July 11 re-verification — RE-RENDER REQUIRED for s01 and s09.** The July 11 capture shows a ninth sidebar entry, **Refund Approvals**, between Payments and Payouts. s01's "The Sales module keeps eight pages in one sidebar" and s09's "Seven pages, seven questions" now contradict the live menu. Do not edit the spoken lines here; re-render after sign-off (and decide whether Refund Approvals joins this tour or gets its own lesson — its page is not yet captured). Lesser July 11 notes, not re-render triggers: Ticket Details grew to twelve columns (s02 does not enumerate columns); Gift Card Transactions rows showed dashes in the BALANCE column at capture, so s07's "running balance after each line" should be spot-checked on a live row before recording.
 - Payment-decline diagnosis and shift reconciliation get their own playbooks (PB-4, PB-5); keep this at the "which page" level.
 
 ## Timed script

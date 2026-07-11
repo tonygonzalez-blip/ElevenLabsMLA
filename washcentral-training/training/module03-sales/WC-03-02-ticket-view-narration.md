@@ -27,9 +27,11 @@
 
 ### Scope notes (non-spoken)
 
-- The Ticket View page (`sales-ticket-view.html?ticket=…`) was documented on the July 8 verified walk (DISCREPANCIES.md #11 and the learning plan's Lesson 3.2) and was not re-captured in the July 9 static sweep, because it needs a live ticket row-click to load its `?ticket=` parameter. Confirm the page and its labels on a live ticket before recording.
+- The Ticket View page was captured credentialed on July 11 via `sales-ticket-view.html?ticket=1501159` — all five tabs digested. The Main-tab groups gained fields versus the July 8 walk (FINANCIAL SUMMARY adds HOUSE ACCOUNT NAME; STAFF & EQUIPMENT adds CASHIER CODE and GREETER NAME; CUSTOMER & VEHICLE adds COMPANY; Refunds table leads with a DATE column). The spoken blocks s08–s10 name the shorter July 8 field lists — omissions, not contradictions — and can stand.
+- **July 11 re-verification — RE-RENDER REQUIRED for s06.** The spoken line says Details, Payments, and Notes "still need a live capture, so we leave those closed rather than guess what's inside." Those tabs were captured July 11 and are now documented in the guide, so the rendered line asserts a capture gap that no longer exists. Do not edit the spoken line here; re-render s06 after sign-off (and decide whether the lesson should now open those tabs, which would also touch s06's step scope).
+- **Deep-link caution for s02/s12 (July 11):** the same `?ticket=1501159` link rendered two different headers across the capture's two passes (ticket number, location, timestamp, band totals changed; the ID field stayed 1501159). The spoken "opens this exact ticket" claim held only at the ID level in the demo. Verify on a live load before recording; if the header re-randomizes per load, flag s02/s12 for a wording review.
 - **Refund** is a send-type action. Do not depict clicking it (PARKED-ITEMS.md #5). Read the guardrail, then move on.
-- The **Details**, **Payments**, and **Notes** tab contents were not captured; do not narrate their contents (new parked item — see the session return). Only **Main** and **Refunds** are worked here.
+- Only **Main** and **Refunds** are worked on camera in this cut. The **Details**, **Payments**, and **Notes** tab contents are captured (July 11) and documented in the guide's step 6; the Notes tab showed a "Couldn't load notes." fetch error at capture.
 - The legacy 90-day ticket-edit window was not observed live; do not state a cutoff (PARKED-ITEMS.md #7).
 
 ## Timed script

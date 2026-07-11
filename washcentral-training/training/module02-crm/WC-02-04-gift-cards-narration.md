@@ -32,6 +32,7 @@
 - Read-only tour of **CRM → Gift Cards**. No record is created, edited, or deleted.
 - **Delete** and **+ Issue Gift Card** are write actions. Do not depict clicking either; issuing a card is never shown (Step 7 reads them and moves on).
 - July 9 capture state: the four KPI tiles displayed "—" and the records table displayed "Couldn't load records (Failed to fetch). Check your connection to the AI agent service." Step 10 narrates this as a data-fetch error, not an empty portfolio. A worked balance-lookup example (card number, balance, status, last used) is parked (TBD) because the rows were in the error state at capture.
+- **July 11 re-verification — RE-RENDER REQUIRED for s06 and s10.** The July 11 credentialed capture shows the page healthy: KPI tiles live (116,524 / $2053032.67 / 71,481 / 45,043), rows listing (first row 80016195493 · — · ACE24 · $11.00 · Active · Jan 10, 2026), and the list header reading a single record count, "116,524 records". Two rendered blocks now contradict the platform: s06 speaks "the two numbers a manager asks for: how many cards, and the total balance outstanding" (the header now carries one number), and s10 narrates "In this capture the rows did not load" (they load). Do not edit the spoken lines here; re-render s06 and s10 after sign-off and re-measure durations. The step 11 worked example is no longer parked (see guide step 11).
 - Header **Search ⌘K** and **Ask Shyne** are covered in WC-01-02 and are not re-taught. The idle "Still there?" prompt is out of scope (WC-01-03).
 
 ## Timed script
@@ -68,12 +69,12 @@ Six columns describe each card. <break time="1.2s" /> The number, who owns it, w
 [02:17 | Step 10 — Records state]
 In this capture the rows did not load. <break time="1.4s" /> The table says it couldn't load records, a failed fetch. A service hiccup, not an empty portfolio; the counts above prove there are cards. Live, refresh before you quote a balance.
 
-_[Director: in the July 9 capture the records table was in the "Couldn't load records (Failed to fetch)" state. Record in a healthy data state, or keep the example row values parked (TBD) rather than inventing them.]_
+_[Director: July 11 capture shows the table healthy (rows listing). This block's spoken line narrates the July 9 error state and is flagged for re-render — do not assemble it against a healthy-state recording.]_
 
 [02:36 | Step 11 — Balance lookup]
 Here is the everyday move. <break time="1.4s" /> A customer reads you their card number. You drop it into the search, and the row returns the balance, the status, and the last-used date. Read those back and the call is answered.
 
-_[Director: run this only against a real card number in a healthy data state; if the records error persists, hold on the search box and keep the values parked.]_
+_[Director: run this against a real card number from the live list (July 11 worked example: 80016195493 → $11.00 · Active · Jan 10, 2026). If the records error reappears, hold on the search box and re-roll later.]_
 
 [02:54 | Step 12 — Recap]
 So, the gift card screen. <break time="0.8s" /> Totals up top, three quick-read panels, and a list where every lookup lands. Find the card by number, read its balance and status, and you have handled almost every gift card call.

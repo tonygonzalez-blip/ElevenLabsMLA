@@ -34,6 +34,7 @@
 - The three 30-day KPI tiles (**Paid (30d)**, **Not Washed (30d)**, **Revenue (30d)**) render a dash in the July 9 corpus. Narrate the structure and the dash-means-no-value point, not a figure.
 - The **Filters** panel internals were not captured; the script locates the control only.
 - Session-timeout ("Still there?") behavior is out of scope; it belongs to WC-01-03.
+- **July 11 re-verification — RE-RENDER REQUIRED for s11.** The July 11 credentialed capture shows the Transactions sidebar with NINE pages: a **Refund Approvals** entry now sits between Payments and Payouts (observed consistently across every July 11 sales-page digest). The rendered s11 audio speaks "Eight pages live under Sales... there's no Refunds Approval page. Approvals run through security levels now.", which contradicts the live sidebar. Do not edit the spoken line here; re-render s11 after sign-off and re-measure durations. The Tickets list page itself was not re-captured July 11; the other blocks stand on the July 9 corpus.
 
 ## Timed script
 

@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — audio is rendered later once the ElevenLabs key is available (not set in this session). Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-09-01-s01.mp3`…`WC-09-01-s12.mp3`, one TTS call per step, assembled at each step's marker. Step duration = audio + 0.4 s.
+- **Status:** **PARTIAL RE-AUTHOR + RE-RENDER NEEDED (July 11, 2026).** The July 11 credentialed pass reached all four sibling pages via the in-app sidebar (direct URLs still 404), and guide/shot list v2.0 now open them in steps 8–11. Blocks s08, s10, s11, and s12 voice the July 9 404 state ("the page itself didn't open… contents stay parked… waiting on their pages"), and s09 narrates Portal Messages as located-but-never-opened, which no longer matches step 9's read-only page open. Spoken lines preserved unedited per the audio-lock rule; re-author s08–s12 against guide v2.0 before any TTS call. Render settings when re-authored: voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, 12 blocks `WC-09-01-s01.mp3`…`WC-09-01-s12.mp3`, one TTS call per step. Step duration = audio + 0.4 s.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -26,9 +26,10 @@
 
 ### Scope notes (non-spoken)
 
-- Menu-level tour of the **CUSTOMER PORTAL** group inside the **Digital** module.
-- Only **Portal Members** resolved on the July 9 verification pass. **Booking Page (Customer)**, **Portal Messages**, **Portal Billing**, and **Portal Notifications** returned an HTTP 404; their contents are parked (NEW parked item), and the script names each entry without claiming its contents.
-- **Portal Messages** and **Portal Notifications** are send-type surfaces. Do not depict composing or sending anything. **Export** on Portal Members is not clicked.
+- Tour of the **CUSTOMER PORTAL** group inside the **Digital** module.
+- **July 11, 2026 update:** all four sibling pages are real and were captured via in-app sidebar navigation (direct URLs still 404). Guide and shot list v2.0 open each sibling read-only in steps 8–11 (booking wizard first screen only; message inbox, billing log, and notification list read without opening a row). Blocks s08–s12 below still voice the July 9 parked state and are superseded — do not generate audio from them (see Status).
+- Original July 9 note, kept for history: only **Portal Members** resolved then; the four siblings 404'd and their contents were parked.
+- **Portal Messages** and **Portal Notifications** are send-type surfaces. The re-authored script may read their list pages but must never depict composing or sending anything, and the booking wizard is never advanced. **Export** is not clicked anywhere.
 - Session-timeout ("Still there?") behavior is out of scope — it belongs to lesson 1.3.
 
 ## Timed script
@@ -57,7 +58,7 @@ Down at the foot: rows per page, a record count, and the pager. <break time="1.0
 [02:03 | Step 8 — Booking Page (Customer)]
 Back to the sidebar. <break time="1.0s" /> Booking Page is the customer-facing booking surface. On our verification pass the page itself didn't open, so we name the entry and hold its contents until it does.
 
-_[Director: hover the sidebar entry; do not click. The target returns a 404 as of July 9.]_
+_[Director note, updated July 11, 2026: OUTDATED block. The page now loads via the sidebar — it renders the customer-facing booking wizard (atlas car wash branding, 5 steps). Queued for re-author + re-render; do not record against this audio. Never advance the wizard.]_
 
 [02:17 | Step 9 — Portal Messages]
 Portal Messages next. <break time="1.0s" /> It's the portal's messaging surface, and messaging is a send-type area we never open in training. We locate it and move on, without composing or sending a thing.
@@ -83,4 +84,5 @@ _(Estimated narration total: ≈ 203.5 s ≈ 3:24, pending render. Four of the f
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, the navigation path, and the numbered steps were left exact. Em dashes appear only in the timed-block headers (the house `[mm:ss | Step N — target]` format) and in the non-spoken director notes and this log.
 - Send-type surfaces (Portal Messages, Portal Notifications) are located only; no compose or send flow is depicted. Export is not clicked.
 - Four of the five group pages (Booking Page (Customer), Portal Messages, Portal Billing, Portal Notifications) returned HTTP 404 on July 9; the script names each and parks its contents (NEW parked item).
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- **July 11, 2026:** all four sibling pages captured live via in-app navigation; parked markers cleared in guide v2.0 and shot list v2.0. Blocks s08–s12 contradict the platform and the status changed to **PARTIAL RE-AUTHOR + RE-RENDER NEEDED**. No audio was ever rendered from v1.0, so nothing approved is discarded.
+- Script text stamp remains **July 9, 2026** (the state it describes); the July 11 corpus check is logged above and in the v2.0 guide and shot list.

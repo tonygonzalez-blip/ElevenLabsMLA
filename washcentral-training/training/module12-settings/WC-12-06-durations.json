@@ -1,0 +1,121 @@
+{
+  "base": "WC-12-06",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 253.47,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Settings / Users & Security",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-12-06-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "System Users",
+      "audioS": 18.52,
+      "stepS": 18.92,
+      "file": "WC-12-06-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Support columns",
+      "audioS": 19.8,
+      "stepS": 20.2,
+      "file": "WC-12-06-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Search & count",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-12-06-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "User Levels via Automation",
+      "audioS": 17.71,
+      "stepS": 18.11,
+      "file": "WC-12-06-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "User Levels columns",
+      "audioS": 14.11,
+      "stepS": 14.51,
+      "file": "WC-12-06-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Session timeout values",
+      "audioS": 20.85,
+      "stepS": 21.25,
+      "file": "WC-12-06-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Security Levels",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-12-06-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Refund gate",
+      "audioS": 19.49,
+      "stepS": 19.89,
+      "file": "WC-12-06-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Tie the pages together",
+      "audioS": 20.77,
+      "stepS": 21.17,
+      "file": "WC-12-06-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Blacklisted",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-12-06-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Reading a blocked plate",
+      "audioS": 14.45,
+      "stepS": 14.85,
+      "file": "WC-12-06-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Read-only rule",
+      "audioS": 21.32,
+      "stepS": 21.72,
+      "file": "WC-12-06-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Recap",
+      "audioS": 20.69,
+      "stepS": 21.09,
+      "file": "WC-12-06-s14.mp3"
+    }
+  ]
+}

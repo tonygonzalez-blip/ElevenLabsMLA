@@ -1,0 +1,169 @@
+{
+  "base": "WC-12-08",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 384.73,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Portal Overview hub",
+      "audioS": 19.8,
+      "stepS": 20.2,
+      "file": "WC-12-08-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Portal KPI band",
+      "audioS": 16.04,
+      "stepS": 16.44,
+      "file": "WC-12-08-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Four configuration cards",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-12-08-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Activity feed & Portal Health",
+      "audioS": 22.91,
+      "stepS": 23.31,
+      "file": "WC-12-08-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Branding & Appearance",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-12-08-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Features & Modules",
+      "audioS": 22.6,
+      "stepS": 23,
+      "file": "WC-12-08-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Access & Security",
+      "audioS": 21.47,
+      "stepS": 21.87,
+      "file": "WC-12-08-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Content & Messaging",
+      "audioS": 14.99,
+      "stepS": 15.39,
+      "file": "WC-12-08-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Part 1 recap",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-12-08-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "AI Agent Overview",
+      "audioS": 17.55,
+      "stepS": 17.95,
+      "file": "WC-12-08-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Agent KPI band",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-12-08-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Channel cards",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-12-08-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Agent capabilities",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-12-08-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Configuration",
+      "audioS": 22.05,
+      "stepS": 22.45,
+      "file": "WC-12-08-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Knowledge Base",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-12-08-s15.mp3"
+    },
+    {
+      "block": "s16",
+      "step": "16",
+      "target": "Channels & Deployment",
+      "audioS": 21,
+      "stepS": 21.4,
+      "file": "WC-12-08-s16.mp3"
+    },
+    {
+      "block": "s17",
+      "step": "17",
+      "target": "Conversations",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-12-08-s17.mp3"
+    },
+    {
+      "block": "s18",
+      "step": "18",
+      "target": "Escalations",
+      "audioS": 19.88,
+      "stepS": 20.28,
+      "file": "WC-12-08-s18.mp3"
+    },
+    {
+      "block": "s19",
+      "step": "19",
+      "target": "Analytics",
+      "audioS": 18.6,
+      "stepS": 19,
+      "file": "WC-12-08-s19.mp3"
+    },
+    {
+      "block": "s20",
+      "step": "20",
+      "target": "Recap & Close Settings",
+      "audioS": 18.44,
+      "stepS": 18.84,
+      "file": "WC-12-08-s20.mp3"
+    }
+  ]
+}

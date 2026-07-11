@@ -1,0 +1,113 @@
+{
+  "base": "WC-12-05",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 288.57,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Hardware group",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-12-05-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Hardware / Terminals",
+      "audioS": 23.17,
+      "stepS": 23.57,
+      "file": "WC-12-05-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Screen Layout",
+      "audioS": 22.83,
+      "stepS": 23.23,
+      "file": "WC-12-05-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "System Types",
+      "audioS": 21.16,
+      "stepS": 21.56,
+      "file": "WC-12-05-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Lube Buttons",
+      "audioS": 24.61,
+      "stepS": 25.01,
+      "file": "WC-12-05-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Lube Checklists",
+      "audioS": 19.72,
+      "stepS": 20.12,
+      "file": "WC-12-05-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "UI & Display group",
+      "audioS": 22.36,
+      "stepS": 22.76,
+      "file": "WC-12-05-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Button Groups",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-12-05-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Cashier Buttons",
+      "audioS": 21.39,
+      "stepS": 21.79,
+      "file": "WC-12-05-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Greeter Buttons",
+      "audioS": 19.8,
+      "stepS": 20.2,
+      "file": "WC-12-05-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Macros",
+      "audioS": 19.23,
+      "stepS": 19.63,
+      "file": "WC-12-05-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Kiosk Screen Flows",
+      "audioS": 30.43,
+      "stepS": 30.83,
+      "file": "WC-12-05-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 23.64,
+      "stepS": 24.04,
+      "file": "WC-12-05-s13.mp3"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # WC-12-07 — Operations reason codes & Automation · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps). (Spoken lines are audio-locked and unchanged; **blocks s03, s04, and s05 need re-render** — see scope notes.)
 
 ## Settings header
 
@@ -28,8 +28,9 @@
 ### Scope notes (non-spoken)
 
 - Read-only walk. **+ New Record** is present on every page and is never clicked. **Task Scheduler** is never edited and never run (steps 9–11).
-- On July 9 every list except **Issue Status Types** and **Task Scheduler** returned "Couldn't load … (Failed to fetch)." Narrate the structure; the row values are parked, not read out.
-- The **Task Scheduler** count mismatch (18 stated, 3 rendered) and the fetch-failing lists are reported as new parked items; do not invent row values.
+- The July 11 credentialed corpus recovered the reason-code rows: **Cancellation Reasons** 33 live rows (30 shown on POS, 3 hidden), **Rewash Reasons** 12 rows, and **Refund Reasons** a genuine empty state ("No refund reasons found. The POS database may not be configured for this tenant yet."). **Event Types**, **Transaction Types**, **Task Parameters**, and **Mass SMS Log** were not re-captured; their rows stay parked.
+- **NEEDS RE-RENDER — blocks s03, s04, s05.** Their spoken lines describe the July 9 "couldn't load / rows pending" state ("Today it reads couldn't load, failed to fetch", "Same load error today", "the rows are loading from the same service"), which the July 11 corpus contradicts. Re-write against the live rows before rendering. s11's spoken 18-vs-3 quirk was re-confirmed July 11 and stands; s12 and s13 speak load-pending states for pages not re-captured, so they hold until those pages are verified live.
+- The **Task Scheduler** count mismatch (18 stated, 3 rendered) persists on July 11 and remains a reported item; do not invent row values.
 - **User Levels** appears in the Automation sidebar but belongs to WC-12-06; it is named, not walked.
 
 ## Timed script
@@ -83,7 +84,7 @@ _(Estimated narration total: ~286 s ≈ 04:46 at 145 wpm plus breaks. Final per-
 ## Generation log
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
-- Status is **READY FOR GENERATION**: audio is rendered later once the ElevenLabs key is available in the session. Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, files `WC-12-07-s01.mp3`…`WC-12-07-s14.mp3`.
+- Status is **BLOCKED FOR GENERATION — re-write s03, s04, s05 against the July 11 corpus first**; the remaining blocks are ready. Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, files `WC-12-07-s01.mp3`…`WC-12-07-s14.mp3`.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, the navigation paths, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and in this generation log.
-- Corpus-grounded: reason-code and type lists (except Issue Status Types) and the two Task pages plus Mass SMS Log returned "Failed to fetch" on July 9, so row values are parked and never voiced. Task Scheduler columns, KPI band, and the three observed job rows are read from its July 9 digest and screenshot. The 18-vs-3 row-count mismatch is stated as observed, not smoothed over.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Corpus-grounded at authoring (July 9); the July 11 credentialed re-capture invalidated the load-error framing in s03–s05, which are flagged for re-render above. Task Scheduler columns, KPI band, the three observed job rows, and the 18-vs-3 row-count mismatch were re-confirmed unchanged in the July 11 digest.
+- Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**

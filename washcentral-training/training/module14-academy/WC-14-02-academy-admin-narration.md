@@ -1,10 +1,12 @@
 # WC-14-02 — Academy (LMS), admin side · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (11 steps).
+**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the v1.0 guide and shot list one-to-one (11 steps).
+
+> **SUPERSEDED — NEEDS RE-SCRIPT + RE-RENDER (July 11, 2026).** Blocks s05–s11 narrate the four ADMIN pages as HTTP 404s ("the page simply is not deployed"). The July 11 in-app captures (`lms-admin-inapp.json`, `lms-admin-users-inapp.json`, `lms-admin-courses-inapp.json`, `lms-admin-reports-inapp.json`) show all four pages render fully via the Academy sidebar; only the direct URLs 404'd on July 9. Blocks s01–s04 (sidebar orientation) remain factually accurate, but the v2.0 guide/shot list restructures the lesson to 13 steps, so the whole script needs a re-script and full re-render. Do not generate or record against this script. Spoken lines below are left untouched per the audio-lock rule.
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 11 blocks `WC-14-02-s01.mp3`…`WC-14-02-s11.mp3`, one TTS call per step, then joined to `WC-14-02-full-narration-v1.0.mp3`. Audio is rendered later once the ElevenLabs key is available (not set in this session). Estimated total ~3:22 (the shot list's ~3:55 runtime adds title-card holds and cursor travel); per-block timestamps below are estimates at ~145 wpm plus break time plus a 0.4s tail, pending render.
+- **Status:** ~~READY FOR GENERATION~~ **BLOCKED — SUPERSEDED BY PLATFORM CHANGE (see note above)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 11 blocks `WC-14-02-s01.mp3`…`WC-14-02-s11.mp3`, one TTS call per step, then joined to `WC-14-02-full-narration-v1.0.mp3`. Audio is rendered later once the ElevenLabs key is available (not set in this session). Estimated total ~3:22 (the shot list's ~3:55 runtime adds title-card holds and cursor travel); per-block timestamps below are estimates at ~145 wpm plus break time plus a 0.4s tail, pending render.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, locked. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

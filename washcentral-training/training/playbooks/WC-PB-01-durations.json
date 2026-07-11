@@ -1,0 +1,105 @@
+{
+  "base": "WC-PB-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 207.92,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Take the ticket",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-PB-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Check 1, the three fields",
+      "audioS": 18.76,
+      "stepS": 19.16,
+      "file": "WC-PB-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Check 2, migrated client",
+      "audioS": 18.36,
+      "stepS": 18.76,
+      "file": "WC-PB-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Open System Users",
+      "audioS": 15.57,
+      "stepS": 15.97,
+      "file": "WC-PB-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Check 3a, does it exist",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-PB-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Check 3b, ACTIVE",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-PB-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Check 3c, SSO",
+      "audioS": 15.73,
+      "stepS": 16.13,
+      "file": "WC-PB-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Check 3d, LAST LOGIN",
+      "audioS": 16.59,
+      "stepS": 16.99,
+      "file": "WC-PB-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Check 4, User Activity",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-PB-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Where a reset happens",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-PB-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Escalate clean",
+      "audioS": 14.84,
+      "stepS": 15.24,
+      "file": "WC-PB-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap the order",
+      "audioS": 21.32,
+      "stepS": 21.72,
+      "file": "WC-PB-01-s12.mp3"
+    }
+  ]
+}

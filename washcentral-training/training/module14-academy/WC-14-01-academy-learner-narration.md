@@ -27,7 +27,7 @@
 ### Scope notes (non-spoken)
 
 - Browse-only lesson. Enrolling in or starting a course is never depicted: **Start Course**, **Start**, **Course Details**, **View All →**, **Browse Catalog**, **View Full Leaderboard →**, the **Quick Links** entries, and any **Enroll** / **Start Path** control are pointed at, never clicked.
-- **Course Catalog**, **Learning Paths**, and **My Learning** page interiors are TBD — parked (not in the July 9 corpus). Step 11 names them from the sidebar without opening them.
+- **NEEDS PARTIAL RE-RENDER (July 11, 2026): block s11 only.** The **Course Catalog**, **Learning Paths**, and **My Learning** interiors were captured live on July 11 via the Academy sidebar (`lms-catalog-inapp.json`, `lms-paths-inapp.json`, `lms-my-learning-inapp.json`; direct URLs 404'd July 9). Block s11's spoken justification "because their interiors have not been verified yet" is now false and needs a re-script/re-render; the visual step (pointing without opening) is unchanged, and all other blocks stand. Spoken lines left untouched per the audio-lock rule.
 - The **ADMIN** sidebar group is out of scope; it belongs to WC-14-02 and is only pointed at in step 2.
 - The session-timeout "Still there?" dialog is out of scope (lesson 1.3).
 
@@ -68,7 +68,7 @@ Under the standings, Quick Links. <break time="1.0s" /> A couple of shortcuts, y
 [03:15 | Step 11 — The other three destinations]
 Back to the sidebar for the other three stops. <break time="1.2s" /> The catalog is the full library, Learning Paths chains courses into sequenced tracks, and My Learning is your personal in-progress list. We point at them today without opening them, because their interiors have not been verified yet.
 
-_[Director: hover the three sidebar entries only; do not navigate. Their page contents are TBD — parked.]_
+_[Director: hover the three sidebar entries only; do not navigate — the walk stays pointer-only. UPDATE July 11: their contents are now verified (see v1.1 guide step 11); this block's spoken "have not been verified yet" line is stale and flagged for re-render.]_
 
 [03:35 | Step 12 — The enrollment rule]
 One rule before you explore on your own. <break time="1.0s" /> Browsing, hovering, reading: all free. Enrolling is not. Start Course, Start, and any enroll button create real training records, so in this lesson none of them get clicked. Taking a course comes later.

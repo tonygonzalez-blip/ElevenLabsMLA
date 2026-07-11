@@ -30,7 +30,7 @@
 
 - Read-and-route playbook across five surfaces: Command Center (Priority Intelligence), ML Command Center (NOC incidents), System Alerts, Hardware / Terminals, and Sales Tickets; escalation via Support Tickets.
 - Two scopes, kept distinct: the Command Center POS row ("Henrico W Broad, VA") is the operator's own network; the NOC incident ("MLAS CORP") is the cross-customer support view. Do not merge them.
-- Parked this pass, do not fabricate: the Priority Intelligence **Open →** destination (Step 4), **System Alerts** page content (404 on July 9, Step 8), and the **Terminals** row values (failed to load, Step 10). Broken POS pages 404 like the parked LogicPOS screens (PARKED-ITEMS.md #2).
+- **NEEDS PARTIAL RE-RENDER (July 11, 2026): blocks s08 and s10.** The July 11 captures show **System Alerts** renders in full from the sidebar (`verification/2026-07-11/digests/support-alerts-inapp.json`: tiles 3/14/1/2, columns DATE/TIME · TYPE · SEVERITY · LOCATION · MESSAGE · STATUS, POS row "Low receipt paper on POS-2") and the **Terminals** list loads live rows (`settings-hardware-terminals.json`: Total Terminals 1,067, real Last Seen values). Block s08's spoken "today the page throws a four-oh-four" and block s10's "Today the rows did not load, so treat the values as parked" contradict the live pages and need re-script/re-render. Still parked, do not fabricate: the Priority Intelligence **Open →** destination (Step 4). Spoken lines left untouched per the audio-lock rule.
 - No create, submit, or export control is triggered: **Open →** not followed, **Create Ticket** / **Create ticket** not submitted, **+ New Record** not used, **Export** not used.
 
 ## Timed script
@@ -63,7 +63,7 @@ _[Director: read the tag and assignee; do not submit Create Ticket on the shared
 [02:14 | Step 8 — System Alerts]
 Next check is System Alerts, under I-T and Support. <break time="1.4s" /> Honest one: today the page throws a four-oh-four. The link still sits in the sidebar, but nothing loads behind it. When it comes back on your tenant, filter to the site and read its POS alerts there. We do not invent them, the same way the parked Logic P-O-S screens stay parked.
 
-_[Director: capture the live 404 as-is; System Alerts content is TBD — parked (report as new); LogicPOS is PARKED-ITEMS.md #2.]_
+_[Director: SUPERSEDED July 11 — System Alerts renders via the sidebar link (KPI band, severity panels, alert list with a live POS row). This block's spoken text contradicts the page; do not record s08 as written — re-script/re-render first.]_
 
 [02:40 | Step 9 — Terminals page]
 Into Settings, Hardware, Terminals. <break time="1.4s" /> This is the register you would check for that offline complaint. There is a plus New Record button up top; leave it alone. We are here to read, not to register anything.
@@ -71,7 +71,7 @@ Into Settings, Hardware, Terminals. <break time="1.4s" /> This is the register y
 [02:57 | Step 10 — Columns and Last Seen]
 Run your eye across the columns. <break time="1.4s" /> Terminal, Location, I-P, Software Version, O-S, and Last Seen. Notice what is missing: no active or status column. So Last Seen is your answer, the moment the terminal last checked in. Today the rows did not load, so treat the values as parked. The columns are solid; the data fills in live.
 
-_[Director: sweep the header row; the row values are TBD — parked (failed to fetch on July 9).]_
+_[Director: SUPERSEDED July 11 — the Terminals rows load live (Total Terminals 1,067; top row Last Seen 2026-01-10 22:47). This block's spoken "rows did not load" line contradicts the page; do not record s10 as written — re-script/re-render first.]_
 
 [03:24 | Step 11 — Sales Tickets]
 Last surface: Sales, then Tickets. <break time="1.4s" /> This is the live pulse of the lane. The list carries Location, Ticket number, Date and Time, Total, Status, Tender Type, and Customer, with a running total up top.

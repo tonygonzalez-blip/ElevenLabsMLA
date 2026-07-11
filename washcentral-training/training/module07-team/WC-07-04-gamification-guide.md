@@ -1,7 +1,7 @@
 # WC-07-04 · Gamification and the Challenge Board (Team)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.** (Challenge Board verified July 9; the Recognition Feed and Pulse Surveys sibling pages verified July 11 via in-app navigation.)
 
 ## Purpose
 
@@ -44,7 +44,9 @@ From the **Team** module you can open **Team → GAMIFICATION → Challenges**, 
 - Every active card follows the same layout, so once you can read one you can read all of them. Only the metric changes: washes, dollars of upsell, or days attended.
 - **+ New Challenge**, the dashed **+ Create New Challenge** card, and the per-card **Edit** buttons all open editing flows. This is a view-only lesson, so none of them is clicked and nothing is saved.
 - The **All** and **Completed** views were not captured in the July 9 corpus, so their card contents are parked rather than described. The view controls themselves, and the counts they map to, are confirmed.
-- The **Recognition Feed** and **Pulse Surveys** pages are named here from the sidebar only. Their detail screens were not part of this lesson's capture and are not described.
+- The **Recognition Feed** and **Pulse Surveys** pages are real and were verified live on July 11, 2026. Both load only through in-app sidebar navigation (their direct URLs 404, which is why the July 9 probe missed them). Page-level facts for orientation:
+  - **Recognition Feed** (breadcrumb **Gamification › Recognition Feed**) is the shout-out log. KPIs: **1,284 Total Recognitions**, **47 This Week**, **6.2 Avg Reactions**, and a **Top Giver** tile. The feed table runs **GIVER, RECIPIENT, MESSAGE, TYPE** (Peer or Manager), **REACTIONS, DATE, ACTIONS** (a **View** link per row), with **Export**, **+ Post Announcement**, and **Filters ▾** up top and a multi-page pager beneath. **+ Post Announcement** publishes to staff, so it is never clicked while touring.
+  - **Pulse Surveys** (breadcrumb **Gamification › Pulse Surveys**) is the staff-feedback surface. KPIs: **2 Active Surveys**, **73% Avg Response Rate**, **412 Responses This Month**, **7.8/10 Avg Engagement Score**. An **Active Surveys** section lists survey cards (**Weekly Pulse Check** and **Manager Feedback Q2**, both **ACTIVE**, plus a **New Uniform Policy** **DRAFT**) with **View Results** and **Edit** buttons and a **+ New Survey** control, and a **LATEST RESULTS** section charts rating splits and an eNPS score (**+43**) with top comment themes. **+ New Survey** and **Edit** open send-adjacent flows and stay untouched.
 
 **Knowledge check:** On the Challenge Board, which KPI tells you how many competitions are live right now, and on a single card where do you look to see who is currently in the lead? If a manager asked you to add a new competition, which control would open that form, and why would you not use it during a view-only review?
 
@@ -52,4 +54,4 @@ From the **Team** module you can open **Team → GAMIFICATION → Challenges**, 
 
 WC-07-01 Employees list and detail · WC-07-02 Schedules, Time Clock, Roles, User Groups · WC-07-03 Sales Coaching (QA).
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**

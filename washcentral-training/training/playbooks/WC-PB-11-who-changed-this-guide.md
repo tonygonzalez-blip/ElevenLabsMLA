@@ -1,7 +1,7 @@
 # WC-PB-11 · PB-11 Who changed this? (Troubleshooting playbook)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Purpose
 
@@ -13,7 +13,7 @@ Internal Micrologic technicians on Tech Support. You should be comfortable readi
 
 ## Navigation path
 
-Both pages live under `IT & Support → Audit`. The **Audit Log** opens directly at `audit-log.html`. **Change History** is reached from the **AUDIT** group in the left sidebar once you are on the **Audit Log** page. In the July 9 corpus, its own address (`audit-changes.html`) returned an HTTP 404, so it is opened by in-app navigation from the Audit Log page, not by typing the URL.
+Both pages live under `IT & Support → Audit`. The **Audit Log** opens directly at `audit-log.html`. **Change History** is reached from the **AUDIT** group in the left sidebar once you are on the **Audit Log** page. Its own address (`audit-changes.html`) returned an HTTP 404 in the July 9 sweep, so open it by in-app navigation, not by typing the URL; the July 11 pass captured the full page through that sidebar route.
 
 ## Steps
 

@@ -1,10 +1,12 @@
 # WC-10-04 — System Alerts · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (8 steps).
+**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the v1.0 guide and shot list one-to-one (8 steps).
+
+> **SUPERSEDED — NEEDS RE-SCRIPT + RE-RENDER (July 11, 2026).** This v1.0 script narrates `support-alerts.html` as a 404 in every block. The July 11 credentialed pass reached **System Alerts** through the in-app sidebar and the page is real (`verification/2026-07-11/digests/support-alerts-inapp.json`): KPI band **3 Active Alerts / 14 Today / 1 Critical / 2 Warnings**, panels **Alert Volume / By Severity / System Health**, and an **Alert List** (**DATE/TIME · TYPE · SEVERITY · LOCATION · MESSAGE · STATUS**) with Tunnel/POS/Chemical/Network rows. Do not generate or record against this script; a v2.0 script matching the v2.0 guide/shot list (9 steps) must be written and rendered first. Spoken lines below are left untouched per the audio-lock rule.
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 8 blocks `WC-10-04-s01.mp3`…`WC-10-04-s08.mp3` + a joined `WC-10-04-full-narration-v1.0.mp3` once rendered. Audio is rendered later when the ElevenLabs key is available; timestamps below are estimates. Estimated per-step seconds (~145 wpm + break + 0.4 s tail): s01 20.0 · s02 17.9 · s03 19.2 · s04 19.8 · s05 19.6 · s06 20.8 · s07 21.5 · s08 26.8 (≈ 2:46 total).
+- **Status:** ~~READY FOR GENERATION~~ **BLOCKED — SUPERSEDED BY PLATFORM CHANGE (see note above)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 8 blocks `WC-10-04-s01.mp3`…`WC-10-04-s08.mp3` + a joined `WC-10-04-full-narration-v1.0.mp3` once rendered. Audio is rendered later when the ElevenLabs key is available; timestamps below are estimates. Estimated per-step seconds (~145 wpm + break + 0.4 s tail): s01 20.0 · s02 17.9 · s03 19.2 · s04 19.8 · s05 19.6 · s06 20.8 · s07 21.5 · s08 26.8 (≈ 2:46 total).
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved by user July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

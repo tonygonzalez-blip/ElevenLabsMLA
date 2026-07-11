@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 13 blocks `WC-04-01-s01.mp3` … `WC-04-01-s13.mp3`, rendered block-by-block once the ElevenLabs key is available. Timestamps below are estimates at ~145 wpm plus break time and a 0.4 s tail; re-measure with ffprobe after render.
+- **Status:** **PARTIAL RE-AUTHOR + RE-RENDER NEEDED (July 11, 2026).** The July 11 pass confirmed the row click opens the read-only **Item Detail** page (`inv-items-detail.html`: **← Back / Delete / Edit Record**, three tabs all captured), not the edit form this script describes. Blocks s07 (Cancel/Save Changes), s09 (required-field/dropdown/toggle layout), s10–s11 ("captured by name only… parked"), and s12 ("click Cancel") contradict the observed page; s10–s11 also miss the observed behavior that tabs 2–3 repeat the same eight fields (logged discrepancy). Spoken lines preserved unedited per the audio-lock rule; re-author against guide v2.0 before any TTS call. Render settings when re-authored: WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3, 13 blocks `WC-04-01-s01.mp3` … `WC-04-01-s13.mp3`.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved by user July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -29,9 +29,9 @@
 
 ### Scope notes (non-spoken)
 
-- Read-only lesson. No record is created, edited, or saved; the item record is left by **Cancel** only. **Save Changes** and **Export** are never clicked.
-- The item record is the captured **Inventory Items Edit** form; the row-click loads a fixed sample item (INV-001) in the demo tenant. Do not narrate this as the row you clicked; narrate it as "the item's record."
-- **Pricing & Stock** and **Storage & Location** tab fields are parked (captured by name only). The script names the tabs and their purpose but never recites specific fields for those two tabs.
+- Read-only lesson. No record is created, edited, or saved. **Export** is never clicked.
+- **July 11, 2026 update:** the row click opens the read-only detail page (**← Back / Delete / Edit Record**; exit by **← Back**), and tabs 2–3 render the same eight fields as **Item Details** (logged discrepancy). This script's blocks s07 and s09–s12 describe the July 9 edit-form state and are superseded — do not generate audio from them (see Status). The re-authored script must keep **Delete** and **Edit Record** untouched.
+- Original July 9 notes, kept for history: the only record page captured then was the **Inventory Items Edit** form (left by **Cancel** only, **Save Changes** never clicked); the row-click loads a fixed sample item (INV-001) in the demo tenant — narrate it as "the item's record," not as the row you clicked; **Pricing & Stock** and **Storage & Location** fields were parked (captured by name only).
 - Session-timeout ("Still there?") behavior is out of scope — it belongs to lesson 1.3.
 
 ## Timed script
@@ -68,12 +68,12 @@ Start on Item Details. <break time="1.4s" /> S-K-U, description, and inventory t
 [02:44 | Step 10 — Pricing & Stock]
 Open the Pricing and Stock tab. <break time="1.4s" /> This is where the money and the counts live. We captured the tab by name only this pass, so the exact fields are parked until a live walk fills them in.
 
-_[Director: click the tab; record whatever renders live. Do not name specific fields — the contents are parked.]_
+_[Director note, updated July 11, 2026: OUTDATED block. The tab is now captured — it renders the same eight fields as Item Details under a PRICING & STOCK heading (logged discrepancy). Queued for re-author + re-render; do not record against this audio.]_
 
 [03:01 | Step 11 — Storage & Location]
 Then Storage and Location. <break time="1.4s" /> Where a physical item sits and how it's binned, so a picker can find it fast. Same story as the last tab: it's named, not yet detailed in our capture, and parked for the next live pass.
 
-_[Director: click the tab; record whatever renders live. Do not name specific fields — the contents are parked.]_
+_[Director note, updated July 11, 2026: OUTDATED block. The tab is now captured — same eight fields under a STORAGE & LOCATION heading; no bin/aisle/site fields on this tenant (logged discrepancy). Queued for re-author + re-render; do not record against this audio.]_
 
 [03:19 | Step 12 — Cancel out]
 Change nothing, then click Cancel. <break time="1.2s" /> The form closes and drops you back on the list, the record exactly as you found it. On a shared, live tenant that discipline matters: reading answers the ticket, and Cancel guarantees you left no mark.
@@ -88,4 +88,5 @@ _(Estimated narration total: 235.8 s ≈ 3:56 at ~145 wpm. Re-measure per block 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside the mandated parked-item phrasing.
 - Read-only throughout: **Export** and **Save Changes** are never clicked; the item record is left by **Cancel**. Pricing & Stock and Storage & Location tab fields are parked (captured by name only) and no specific field is spoken for those tabs.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- **July 11, 2026:** read-only detail page confirmed and captured (guide v2.0, shot list v2.0); blocks s07 and s09–s12 contradict the platform, status changed to **PARTIAL RE-AUTHOR + RE-RENDER NEEDED**. No audio was ever rendered from v1.0, so nothing approved is discarded.
+- Script text stamp remains **July 9, 2026** (the state it describes); the July 11 corpus check is logged above and in the v2.0 guide and shot list.

@@ -1,7 +1,7 @@
 # WC-01-03 · Session behavior and timeouts (Foundations)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Purpose
 
@@ -13,7 +13,7 @@ Internal Micrologic technicians who are new to WashCentral. You should be signed
 
 ## Navigation path
 
-Two surfaces. The idle warning appears on top of whatever page you have open, so you can meet it from anywhere; this lesson shows it over **Command Center**. The setting that controls it lives in **Settings**: open Settings from the left rail, then choose **User Levels** in the Settings sidebar. The breadcrumb reads **Settings › User Levels**. In the July 9 build the **User Levels** entry sits under the **Automation** group of the sidebar.
+Two surfaces. The idle warning appears on top of whatever page you have open, so you can meet it from anywhere; this lesson shows it over **Command Center**. The setting that controls it lives in **Settings**: open Settings from the left rail, then choose **User Levels** in the Settings sidebar. The breadcrumb reads **Settings › User Levels**. In the current build (re-confirmed July 11) the **User Levels** entry sits under the **Automation** group of the sidebar.
 
 ## Steps
 
@@ -33,11 +33,11 @@ One action per step. The whole lesson is read-only: nothing here creates, edits,
 
 7. Now find where that idle window is set. Open **Settings** from the left rail, then choose **User Levels**. **Expected:** the **User Levels** page, breadcrumb **Settings › User Levels**. This is where each user level's idle limit is configured.
 
-8. Look at the band across the top. **Expected:** three tiles, **Total Levels**, **Max Security Level**, and **Longest Timeout (min)**. In the July 9 capture all three show empty placeholders because the list below did not load; when the data is present they summarize the table. **[READ-ONLY]**
+8. Look at the band across the top. **Expected:** three tiles, **Total Levels**, **Max Security Level**, and **Longest Timeout (min)**. On the July 11, 2026 credentialed pass they read **14**, **20**, and **120**: fourteen levels, a top security level of 20, and a longest idle window of two hours. They summarize the table below. **[READ-ONLY]**
 
 9. Read the table's column headers. **Expected:** three columns, **Name**, **Security Level**, and **Session Timeout (min)**. **Session Timeout (min)** is the number that matters here: the minutes of inactivity allowed for everyone at that level before the **Still there?** countdown begins. **[READ-ONLY]**
 
-10. Read the values down the **Session Timeout (min)** column. **Expected:** the July 8 verified pass recorded a spread from 5 minutes at the short end to 120 at the long end, with Cashiers and the lower levels at 5, Administrator and the service and read-only levels at 120, and Anonymous at 20 (attributed to the July 8 pass; cross-referenced to PARKED-ITEMS.md #9). In the July 9 corpus the rows did not load, and the table showed "Couldn't load user levels (Failed to fetch). Check your connection to the AI agent service." in place of data. So a cashier on a five-minute limit is logged out after five idle minutes by design, not because anything is broken. **[READ-ONLY]**
+10. Read the values down the **Session Timeout (min)** column. **Expected:** fourteen rows spread from 5 minutes at the short end to 120 at the long end, observed live on the July 11, 2026 credentialed pass: **Cashiers**, **Managers**, **Sr.Manager**, **Level 00**, and **Level 01** at 5; **Administrator**, **Customer Service**, **Level 02**, and the MLA service and read-only levels at 120; **MLAQA** at 100; and **Anonymous** at 20 (cross-referenced to PARKED-ITEMS.md #9; values match the July 8 pass, plus the new **MLAQA** level). So a cashier on a five-minute limit is logged out after five idle minutes by design, not because anything is broken. **[READ-ONLY]**
 
 11. Tie it back to the support desk. Do not click **+ New Record** or touch any row. **Expected:** when someone reports being logged out every few minutes, this page answers it. Find their level under **Name** and read its **Session Timeout (min)**; a low number is the cause, and it is a configuration choice, not a fault. You are only reading. **[READ-ONLY]**
 
@@ -53,12 +53,12 @@ You can recognize the idle warning in both forms, the centered **Still there?** 
 - You do not have to click anything to stay in. The dialog says so: "Move your mouse or press any key to stay logged in." **Stay Logged In** and **Stay Active** are shortcuts for the same result.
 - **Log Out Now** ends the session on the spot. Treat it as a real logout button, not a way to dismiss the dialog.
 - Session length is per user level, not per person. It is read from **Session Timeout (min)** on **Settings › User Levels**, so every user at the same level shares one idle limit.
-- In the July 9 capture the User Levels list failed to load ("Couldn't load user levels (Failed to fetch). Check your connection to the AI agent service.") and the top tiles were blank. The per-level values quoted here come from the July 8 verified pass (range 5 to 120 minutes, Cashiers at 5, Anonymous at 20) and are cross-referenced to PARKED-ITEMS.md #9.
+- The per-level values quoted here were observed live on the July 11, 2026 credentialed pass (range 5 to 120 minutes, Cashiers at 5, Anonymous at 20, plus a new **MLAQA** level at 100), matching the July 8 verified pass; cross-referenced to PARKED-ITEMS.md #9. (The July 9 sweep had hit an agent-service token issue and returned "Couldn't load user levels (Failed to fetch)" instead of rows — resolved.)
 - The exact idle time before the 2:00 warning appears for the demo credentials was not measured: TBD — parked (PARKED-ITEMS.md #9).
-- Plan versus platform: the learning plan places User Levels under Users & Security; in the July 9 build the sidebar shows the **User Levels** entry under the **Automation** group. The page title and its breadcrumb (**Settings › User Levels**) are unchanged.
+- Plan versus platform: the learning plan places User Levels under Users & Security; the live sidebar (re-confirmed July 11) shows the **User Levels** entry under the **Automation** group. The page title and its breadcrumb (**Settings › User Levels**) are unchanged.
 
 ## Related lessons
 
 WC-01-01 Global navigation · WC-01-02 Search, location scope, and Ask Shyne · WC-12-06 Users & Security · PB-2 Surprise logouts / frozen session.
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**

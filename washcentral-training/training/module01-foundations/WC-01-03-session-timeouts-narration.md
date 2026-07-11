@@ -1,6 +1,6 @@
 # WC-01-03 — Session Behavior and Timeouts · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (11 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (11 steps). (Spoken lines are audio-locked and unchanged; the July 11 re-verification is recorded in the non-spoken notes. **Block s08 needs re-render** — see scope notes.)
 
 ## Settings header
 
@@ -29,7 +29,8 @@
 
 - Covers the idle-session warning (the **Still there?** dialog and the **⏱ Session expiring soon** toast) and the per-level **Session Timeout (min)** on **Settings › User Levels**.
 - The exact idle time before the warning fires for the demo credentials is not measured: parked (PARKED-ITEMS.md #9). Do not state a firing threshold.
-- Per-level timeout values (range 5 to 120 minutes, Cashiers 5, Anonymous 20) are from the July 8 verified pass, cross-referenced to parked #9; the July 9 corpus rows failed to load.
+- Per-level timeout values (range 5 to 120 minutes, Cashiers 5, Anonymous 20) were re-observed live on the July 11, 2026 credentialed pass and match the July 8 verified pass (one new level, MLAQA at 100 minutes, sits inside the spoken 5-to-120 range); cross-referenced to parked #9. (The July 9 sweep had hit an agent-service token issue; resolved.)
+- **NEEDS RE-RENDER — block s08.** The rendered spoken line says the three KPI tiles "are blank, because the list underneath didn't load." On July 11 the list loads and the tiles read 14 / 20 / 120, so the take will contradict the audio. Re-write and re-render s08 before assembly; all other blocks stay valid (s10's "five up to a hundred and twenty" is confirmed live).
 - Never depict clicking **Log Out Now** or **+ New Record**; never let the countdown reach 0:00 on camera.
 
 ## Timed script
@@ -68,7 +69,7 @@ The table has three columns. <break time="1.0s" /> Name, Security Level, and Ses
 [02:32 | Step 10 — Timeout values]
 The numbers run from five minutes up to a hundred and twenty. <break time="1.2s" /> Cashiers and the lower levels sit at five; administrators and service roles at a hundred and twenty. So a cashier logged out after five idle minutes isn't hitting a bug. That's the setting doing its job.
 
-_[Director: values from the July 8 verified pass, cross-referenced to PARKED-ITEMS.md #9. The July 9 corpus rows failed to load; if the live rows are empty, hold on the error line.]_
+_[Director: values re-confirmed live on the July 11, 2026 credentialed pass (14 rows; 5-to-120 spread plus MLAQA at 100), cross-referenced to PARKED-ITEMS.md #9. Record the populated table.]_
 
 [02:54 | Step 11 — Support tie-back]
 So when a manager says the system logs them out every few minutes, you know the move. <break time="1.2s" /> Open User Levels, find their level under Name, and read its Session Timeout. A small number is the whole answer, and you never touch the row.
@@ -81,6 +82,6 @@ _(Estimated narration total: ~193 s ≈ 03:13, pending render. Timestamps are es
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels (**Still there?**, **Stay Logged In**, **Log Out Now**, **Stay Active**, **Session Timeout (min)**, the dialog body line), the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside the mandated parked-item string, which is quoted verbatim.
-- Firing threshold left unstated (PARKED-ITEMS.md #9); per-level values attributed to the July 8 verified pass and cross-referenced to parked #9; the July 9 corpus rows failed to load and are described as such.
+- Firing threshold left unstated (PARKED-ITEMS.md #9); per-level values re-confirmed live on the July 11, 2026 credentialed pass. Block s08 flagged for re-render (its spoken blank-tile description no longer matches the live page); spoken text left untouched here per the audio-lock rule.
 - **Log Out Now** and **+ New Record** are never clicked; the countdown is never allowed to reach 0:00 on camera.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**
