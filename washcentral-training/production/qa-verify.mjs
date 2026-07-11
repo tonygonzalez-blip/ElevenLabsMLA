@@ -193,7 +193,10 @@ add(25, 'no pointer teleport', !teleport, teleport || 'max sample step within bo
 add(26, 'no unexplained cursor reversal', true, 'pointer path is a single eased plan per move; reversals only at target arrivals');
 
 // 27/28/29/30 safety from the event log + start URL
-add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.test(o.error)) && L.startUrl.includes('command-center'), 'flow starts and ends on command-center');
+// The flow must never touch a sign-in screen: no op error references login, and the start page
+// itself is not login.html. (A lesson legitimately starts on its own in-app page — command-center,
+// crm-customers, maint-issues, etc. — so this checks "not a login screen", not "is command-center".)
+add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.test(o.error)) && !/login/i.test(L.startUrl), 'flow never touches a sign-in screen (start page is a signed-in app page, not login.html)');
 add(28, 'no credential on screen', true, 'signed in off-camera via token flow; no credential UI in capture region');
 add(29, 'no session-expiration dialog', menuWatch ? menuWatch.samples.every(s => s.ok) : true, 'idle dialog not encountered; menu watch clean');
 const forbidden = (L.neverClick || ['logout']).concat(['logout']);
