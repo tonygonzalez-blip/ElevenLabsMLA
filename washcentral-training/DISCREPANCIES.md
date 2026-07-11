@@ -55,6 +55,9 @@ Rule: when the live platform and a document disagree, the platform wins. Deliver
 | 37 | Executive Dashboard | Plan §6.1 lists a "GOALS · Q2 2026" target-vs-actual panel incl. NPS | No GOALS panel exists anywhere on the page (full-page capture). Closes PARKED #21. |
 | 38 | CRM sidebar (platform drift since July 9) | July 9 corpus: Customers, Gift Cards, House Accounts, Prepaid Books, Vehicles, Retail Customers, Bundles, Fundraiser | July 11 adds **Contract Renewals** and **Prepaid Activity** entries. New pages not yet covered by any lesson — future lesson or WC-02-06 extension. |
 | 39 | Direct-URL routing (updates #35) | — | Confirmed: the #35 pages are all real and reachable in-app; only direct URL entry 404s. Customer 360 metric-band question in #28 resolved: the VIEW band is Member Since / Plan $/mo / Washes (30d) / Loyalty Points / Next Renewal / Last Visit (plan was right); the EDIT form's band differs by design. #34 updated: the embedded Help Desk (Zoho) view exists in-app at zoho-tickets.html. |
+| 40 | Transactions sidebar (drift; updates #10) | #10 recorded "no Refunds Approval page" | July 11: the sidebar now carries **Refund Approvals** (between Payments and Payouts) — nine entries total. Page itself uncaptured; no lesson covers it yet. Affects WC-03-01/03-03 narration blocks (flagged for re-render). |
+| 41 | Customer List columns (drift) | July 9 corpus: CUSTOMER · LOCATION · PLAN · MEMBER SINCE · PLAN $/MO · STATUS | July 11: eight columns — PLAN $/MO gone; VISITS, TOTAL SPEND, LAST VISIT added. WC-02-01/WC-01-04 to re-verify at record time; WC-02-01 s08 flagged for re-render. |
+| 42 | Ticket Details page (drift) | July 9: 8 columns | July 11: 12 columns (adds CATEGORY, PROFIT CENTER, SERVICE GROUP, TAX). |
 
 ## Demo-data observations (for training materials)
 
