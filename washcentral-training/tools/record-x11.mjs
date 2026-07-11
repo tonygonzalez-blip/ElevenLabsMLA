@@ -38,9 +38,10 @@ if (drive.length !== durations.blocks.length) { console.error(`drive steps (${dr
 // 3. Glide duration scales with distance (constant velocity feel), clamped to
 //    CURSOR_TRAVEL_MS so the click wait in runDrive always outlasts the glide.
 const OVERLAY_JS = `(() => {
-  let pos = [960, 540], cap = '';
+  let pos = [960, 540], cap = '', hl = null;
   try { pos = JSON.parse(sessionStorage.getItem('wc-cursor-pos')) || pos; } catch (e) {}
   try { cap = sessionStorage.getItem('wc-caption-text') || ''; } catch (e) {}
+  try { hl = JSON.parse(sessionStorage.getItem('wc-hl-rect') || 'null'); } catch (e) {}
   let c = document.getElementById('wc-cursor');
   if (!c) {
     c = document.createElement('div'); c.id = 'wc-cursor';
@@ -55,7 +56,23 @@ const OVERLAY_JS = `(() => {
     b.textContent = cap; b.style.opacity = cap ? '1' : '0';
     document.body.appendChild(b);
   }
-  window.__wcCurEl = c; window.__wcCapEl = b;
+  let h = document.getElementById('wc-highlight');
+  if (!h) {
+    h = document.createElement('div'); h.id = 'wc-highlight';
+    h.style.cssText = 'position:fixed;z-index:2147483645;pointer-events:none;border:3px solid #f59e0b;border-radius:10px;box-shadow:0 0 0 4px rgba(245,158,11,.22),0 0 18px 2px rgba(245,158,11,.4);transition:opacity .35s;opacity:0';
+    if (hl) { h.style.left = (hl[0] - 6) + 'px'; h.style.top = (hl[1] - 6) + 'px'; h.style.width = (hl[2] + 12) + 'px'; h.style.height = (hl[3] + 12) + 'px'; h.style.opacity = '1'; }
+    document.body.appendChild(h);
+  }
+  window.__wcCurEl = c; window.__wcCapEl = b; window.__wcHlEl = h;
+  // Visual reference for narration about UI the cursor is not on: outline the element
+  // being discussed. __wcHighlight(x,y,w,h) shows the outline; __wcHighlight() hides it.
+  window.__wcHighlight = (x, y, w, h2) => {
+    const el = window.__wcHlEl;
+    if (!(w > 0)) { el.style.opacity = '0'; try { sessionStorage.setItem('wc-hl-rect', ''); } catch (e) {} return; }
+    el.style.left = (x - 6) + 'px'; el.style.top = (y - 6) + 'px';
+    el.style.width = (w + 12) + 'px'; el.style.height = (h2 + 12) + 'px'; el.style.opacity = '1';
+    try { sessionStorage.setItem('wc-hl-rect', JSON.stringify([x, y, w, h2])); } catch (e) {}
+  };
   window.__wcMoveCursor = (x, y) => {
     const el = window.__wcCurEl;
     const r = el.getBoundingClientRect();                         // mid-glide retargets scale to the remaining distance
@@ -96,6 +113,7 @@ const OVERLAY_JS = `(() => {
         if (g && performance.now() < g.until) window.__wcMoveCursor(g.x, g.y);
       }
       if (cap && !cap.isConnected) body.appendChild(cap);
+      if (window.__wcHlEl && !window.__wcHlEl.isConnected) body.appendChild(window.__wcHlEl);
     });
     window.__wcOverlayObs.observe(document.documentElement, { childList: true, subtree: true });
   }
@@ -107,18 +125,19 @@ const OVERLAY_JS = `(() => {
 const RESET_JS = `(() => {
   if (window.__wcOverlayObs) { window.__wcOverlayObs.disconnect(); window.__wcOverlayObs = null; }
   if (window.__wcGlideSampler) { clearInterval(window.__wcGlideSampler); window.__wcGlideSampler = null; }
-  window.__wcCurEl = null; window.__wcCapEl = null; window.__wcGlide = null;
-  try { sessionStorage.removeItem('wc-cursor-pos'); sessionStorage.removeItem('wc-caption-text'); } catch (e) {}
-  for (const id of ['wc-cursor', 'wc-subtitle']) { const el = document.getElementById(id); if (el) el.remove(); }
+  window.__wcCurEl = null; window.__wcCapEl = null; window.__wcHlEl = null; window.__wcGlide = null;
+  try { sessionStorage.removeItem('wc-cursor-pos'); sessionStorage.removeItem('wc-caption-text'); sessionStorage.removeItem('wc-hl-rect'); } catch (e) {}
+  for (const id of ['wc-cursor', 'wc-subtitle', 'wc-highlight']) { const el = document.getElementById(id); if (el) el.remove(); }
   return true;
 })()`;
 
-// Caption clear must not depend on __wcCaption existing: a click-triggered page load during
-// the clear window would silently skip it and the persisted caption would resurrect on the
-// next page. This snippet works on any window, fresh or not.
-const CLEAR_CAPTION_JS = `(() => {
-  try { sessionStorage.setItem('wc-caption-text', ''); } catch (e) {}
+// End-of-beat clear (caption + highlight) must not depend on the overlay functions existing:
+// a click-triggered page load during the clear window would silently skip it and the persisted
+// caption/highlight would resurrect on the next page. This snippet works on any window.
+const CLEAR_BEAT_JS = `(() => {
+  try { sessionStorage.setItem('wc-caption-text', ''); sessionStorage.setItem('wc-hl-rect', ''); } catch (e) {}
   const b = document.getElementById('wc-subtitle'); if (b) { b.textContent = ''; b.style.opacity = '0'; }
+  const h = document.getElementById('wc-highlight'); if (h) h.style.opacity = '0';
   return true;
 })()`;
 
@@ -134,6 +153,31 @@ const findTargetJS = (text, scope) => `(() => {
   const r = el.getBoundingClientRect();
   return { x: Math.round(r.left + r.width / 2), y: Math.round(r.top + r.height / 2), label: (el.getAttribute('aria-label') || el.textContent || '').trim().slice(0, 60) };
 })()`;
+
+// Resolve a highlight target to its viewport rect. Target is a CSS selector, or
+// "text:Some Label" to match by accessible name / visible text (same rules as click-text).
+const highlightRectJS = (target, scope) => {
+  if (target.startsWith('text:')) {
+    const text = target.slice(5);
+    return `(() => {
+      const want = ${JSON.stringify(text)}.trim().replace(/\\s+/g, ' ').toLowerCase();
+      const els = [...document.querySelectorAll(${JSON.stringify(scope || 'button, a, [role=button], [role=tab], [aria-label], li, td, section, div[class], .nav-item')})];
+      const vis = el => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+      const norm = s => (s || '').trim().replace(/\\s+/g, ' ').toLowerCase();
+      const el = els.find(e => vis(e) && norm(e.getAttribute('aria-label')) === want)
+            || els.find(e => vis(e) && norm(e.textContent) === want);
+      if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return { x: Math.round(r.left), y: Math.round(r.top), w: Math.round(r.width), h: Math.round(r.height), label: (el.getAttribute('aria-label') || el.textContent || '').trim().slice(0, 60) };
+    })()`;
+  }
+  return `(() => {
+    const el = [...document.querySelectorAll(${JSON.stringify(target)})].find(e => { const r = e.getBoundingClientRect(); return r.width > 0 && r.height > 0; });
+    if (!el) return null;
+    const r = el.getBoundingClientRect();
+    return { x: Math.round(r.left), y: Math.round(r.top), w: Math.round(r.width), h: Math.round(r.height), label: (el.getAttribute('aria-label') || el.textContent || '').trim().slice(0, 60) };
+  })()`;
+};
 
 async function clickAt(cdp, x, y) {
   for (const type of ['mousePressed', 'mouseReleased'])
@@ -160,6 +204,13 @@ async function runDrive(cdp, report) {
         if (!pos) throw new Error(`selector not found: ${d.target}`);
         await cdp.eval(`window.__wcMoveCursor(${pos.x}, ${pos.y})`); await sleep(CURSOR_TRAVEL_MS + 200);
         await clickAt(cdp, pos.x, pos.y);
+      } else if (d.action === 'highlight') {
+        // Outline the element the narration is discussing; the cursor stays where it is.
+        // Cleared automatically with the caption before the next step starts.
+        const rect = await cdp.eval(highlightRectJS(d.target, d.scope));
+        if (!rect) throw new Error(`highlight target not found: ${d.target}`);
+        entry.resolved = rect.label;
+        await cdp.eval(`window.__wcHighlight(${rect.x}, ${rect.y}, ${rect.w}, ${rect.h})`);
       } else if (d.action === 'click-text') {
         const pos = await cdp.eval(findTargetJS(d.target, d.scope));
         if (!pos) throw new Error(`target not found: "${d.target}"`);
@@ -177,7 +228,7 @@ async function runDrive(cdp, report) {
     console.log(`  [${entry.ok ? 'OK ' : 'ERR'}] step ${d.step} @${entry.actualS}s (sched ${entry.scheduledS}s) ${d.action} ${entry.error || ''}`);
     const nextStart = durations.blocks.slice(0, i + 1).reduce((s, b) => s + b.stepS, 0) * 1000;
     const clearAt = nextStart - 1000 - (Date.now() - t0);
-    if (clearAt > 0 && i < drive.length - 1) { await sleep(clearAt); await cdp.eval(CLEAR_CAPTION_JS).catch(() => {}); }
+    if (clearAt > 0 && i < drive.length - 1) { await sleep(clearAt); await cdp.eval(CLEAR_BEAT_JS).catch(() => {}); }
   }
   const rest = durations.totalS * 1000 - (Date.now() - t0);
   if (rest > 0) await sleep(rest);

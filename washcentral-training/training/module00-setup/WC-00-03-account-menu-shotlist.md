@@ -20,7 +20,7 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 |---|---|---|---|---|
 | 1 | Open on Command Center; move the cursor slowly to the top-right header and rest on the avatar | The **MG** avatar badge sits at the far right of the header, past Search ⌘K, All Locations▾, and Ask Shyne | 3s | Callout ① on the avatar; slow cursor travel; no click yet |
 | 2 | Click the **MG** avatar | The account menu opens; its header shows the display name and tenant code | 3s | Callout ② on the menu header (name + tenant code); zoom-in 150% on the header for 1.5s |
-| 3 | Point down the menu items (do not click) | Menu lists **Profile**, **My Training**, **Notifications**, **Preferences**, **Dark Mode** toggle, **Help Center**, **Logout** | 4s | Callout ③ sweeping the item list top to bottom (about 2.5s); STOP callout ring over **Logout** with "do not click here" |
+| 3 | Cursor rests on the avatar; highlight-outline the open menu panel (do not click) | Menu lists **Profile**, **My Training**, **Notifications**, **Preferences**, **Dark Mode** toggle, **Help Center**, **Logout** | 4s | Callout ③ = amber highlight outline around the whole menu panel while the items are read; outline clears before step 4. Never click **Logout** |
 | 4 | Click the **Dark Mode** toggle | The interface switches to the dark theme immediately | 3s | Callout ④ "view-only, your display"; hold on the theme change so the switch is obvious |
 | 5 | Click **Dark Mode** again | The interface returns to the light theme | 2s | Callout ⑤ "toggles back, no data touched" |
 | 6 | Open the avatar menu again and click **My Training** | The WashCentral Academy loads at `lms-home.html` | 3s | Callout ⑥ on the Academy landing; note the URL bar shows lms-home.html |
