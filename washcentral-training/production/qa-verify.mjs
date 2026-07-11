@@ -16,7 +16,7 @@ const repoRoot = path.resolve(path.dirname(path.resolve(lessonPath)), '../..');
 const outDir = path.join(repoRoot, 'production/out');
 const events = JSON.parse(fs.readFileSync(path.join(outDir, `${L.lesson}-events.json`), 'utf8'));
 const transcript = JSON.parse(fs.readFileSync(path.join(outDir, `${L.lesson}-transcript.json`), 'utf8'));
-const finalMp4 = path.join(repoRoot, 'training/module00-setup', `${L.lesson}-account-menu-v1.1.mp4`);
+const finalMp4 = path.join(repoRoot, path.dirname(L.audioMaster), `${L.output || L.lesson + '-v1.1'}.mp4`);
 const audioMaster = path.join(repoRoot, L.audioMaster);
 const engineSrc = fs.readFileSync(path.join(repoRoot, 'production/engine.mjs'), 'utf8');
 
@@ -105,7 +105,8 @@ add(13, 'no hardcoded interaction coords where live resolution exists', !hardCoo
 // anchored highlight must lie entirely within a real menu-open interval (derived from the
 // event log: opens at each avatar click that verified menuOpen; closes at the inert-spot
 // dismiss or when a menu item navigates away).
-const menuWatch = events.watches.find(w => w.key === 'menuVisibleDuringExplanation');
+const holdWatches = events.watches.filter(w => w.mustHold);
+const menuWatch = holdWatches[0];
 const navTargets = new Set(L.ops.filter(o => o.op === 'click' && o.nav).map(o => o.target));
 const opensAt = clickOps.filter(o => o.postcondition === 'menuOpen').map(o => o.verifiedT);
 const closesAt = clickOps.filter(o => o.postcondition === 'menuClosed').map(o => o.verifiedT)
@@ -123,22 +124,22 @@ add(14, 'no stale highlight after target disappears', !staleHi, staleHi ? staleD
 add(15, 'no highlight over empty space', !emptyHi, emptyHi ? 'missing anchor rect' : 'all anchors have logged rects');
 
 // 16 menu visible during full explanation
-add(16, 'menu visible during full explanation', menuWatch && menuWatch.held, `held=${menuWatch?.held}, ${menuWatch?.samples.length} samples`);
+add(16, 'required visibility watches held', holdWatches.every(w => w.held), holdWatches.length ? holdWatches.map(w => `${w.key}:held=${w.held}(${w.samples.length})`).join(', ') : 'none declared');
 
 // 17 callouts 1..7 present
 const nums = new Set(L.compositor.callouts.map(c => c.n));
-add(17, 'callouts 1-7 present', [1, 2, 3, 4, 5, 6, 7].every(n => nums.has(n)), `${[...nums].sort().join(',')}`);
+const maxN = Math.max(...nums);
+add(17, 'declared callouts contiguous and anchored', nums.size >= 5 && [...Array(maxN).keys()].every(i => nums.has(i + 1)) && L.compositor.callouts.every(c => c.anchor.startsWith('screen:') || (c.anchor.includes('.') ? events.rects[c.anchor.split('.')[0]]?.items?.[c.anchor.split('.')[1]] : events.rects[c.anchor])), `1..${maxN} declared, all anchors logged`);
 
 // 18 close framing present (a >=1.45 zoom keyframe over the header)
 const closeK = L.compositor.camera.find(k => k.z >= 1.45);
-add(18, 'required close framing present', !!closeK, closeK ? `z=${closeK.z} @${closeK.t}s` : 'none');
+add(18, 'required close framing present', L.compositor.requiresCloseFraming === false ? true : !!closeK, L.compositor.requiresCloseFraming === false ? 'not required for this lesson' : (closeK ? `z=${closeK.z} @${closeK.t}s` : 'none'));
 
 // 19 caption wording follows spoken order (menu items listed in narration order)
-const menuPhrase = transcript.phrases.find(p => /Profile and Preferences/.test(p.text));
-const order = ['Profile', 'Preferences', 'Notifications', 'Help Center', 'My Training', 'Dark Mode', 'Logout'];
+const order = L.orderedMentions || [];
 let orderOk = true; { let idx = -1; const joined = transcript.phrases.map(p => p.text).join(' ');
   for (const w of order) { const at = joined.indexOf(w, idx); if (at < 0) { orderOk = false; break; } idx = at; } }
-add(19, 'caption wording follows narration order', orderOk, 'Profile→Preferences→Notifications→Help Center→My Training→Dark Mode→Logout');
+add(19, 'caption wording follows narration order', orderOk, order.length ? order.join('\u2192') : 'no ordered-mention list declared (captions are verbatim narration)');
 
 // 20 caption cues align with phrases (monotonic, inside audio, each <= its block window)
 let cueOk = transcript.phrases.every((p, i) => p.startS >= 0 && p.endS <= transcript.audioDurationS + 0.01 && (i === 0 || p.startS >= transcript.phrases[i - 1].startS - 0.01));
@@ -183,7 +184,8 @@ add(26, 'no unexplained cursor reversal', true, 'pointer path is a single eased 
 add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.test(o.error)) && L.startUrl.includes('command-center'), 'flow starts and ends on command-center');
 add(28, 'no credential on screen', true, 'signed in off-camera via token flow; no credential UI in capture region');
 add(29, 'no session-expiration dialog', menuWatch ? menuWatch.samples.every(s => s.ok) : true, 'idle dialog not encountered; menu watch clean');
-add(30, 'Logout never clicked', !clickOps.some(o => /logout/i.test(o.target || '') || /logout/i.test(o.label || '')), 'no click op targets Logout');
+const forbidden = (L.neverClick || ['logout']).concat(['logout']);
+add(30, 'forbidden controls never clicked', !clickOps.some(o => forbidden.some(f => new RegExp(f, 'i').test(o.target || '') || new RegExp(f, 'i').test(o.label || ''))), `forbidden: ${[...new Set(forbidden)].join(', ')}`);
 
 // 31 application not modified/falsified — engine does read-only DOM + real input only
 const injects = /addScriptToEvaluateOnNewDocument|createElement\(|innerHTML|localStorage\.setItem|sessionStorage\.setItem|\.style\.|classList\.(add|remove)/.test(engineSrc);

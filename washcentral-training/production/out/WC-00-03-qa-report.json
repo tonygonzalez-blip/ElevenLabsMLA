@@ -94,15 +94,15 @@
     },
     {
       "id": 16,
-      "name": "menu visible during full explanation",
+      "name": "required visibility watches held",
       "pass": true,
-      "detail": "held=true, 40 samples"
+      "detail": "menuVisibleDuringExplanation:held=true(40)"
     },
     {
       "id": 17,
-      "name": "callouts 1-7 present",
+      "name": "declared callouts contiguous and anchored",
       "pass": true,
-      "detail": "1,2,3,4,5,6,7"
+      "detail": "1..7 declared, all anchors logged"
     },
     {
       "id": 18,
@@ -178,9 +178,9 @@
     },
     {
       "id": 30,
-      "name": "Logout never clicked",
+      "name": "forbidden controls never clicked",
       "pass": true,
-      "detail": "no click op targets Logout"
+      "detail": "forbidden: logout"
     },
     {
       "id": 31,
