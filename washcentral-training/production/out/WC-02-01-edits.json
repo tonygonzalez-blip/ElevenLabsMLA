@@ -1,0 +1,32 @@
+{
+  "freezes": [
+    {
+      "key": "customersStable1",
+      "fromS": 2.426,
+      "toS": 3.22,
+      "navPressT": 2.276,
+      "stableT": 3.22
+    },
+    {
+      "key": "customersStable2",
+      "fromS": 4.639,
+      "toS": 6.197,
+      "navPressT": 4.489,
+      "stableT": 6.197
+    },
+    {
+      "key": "retentionStable",
+      "fromS": 156.24,
+      "toS": 157.356,
+      "navPressT": 156.09,
+      "stableT": 157.356
+    },
+    {
+      "key": "customersStable3",
+      "fromS": 192.542,
+      "toS": 193.348,
+      "navPressT": 192.392,
+      "stableT": 193.348
+    }
+  ]
+}
