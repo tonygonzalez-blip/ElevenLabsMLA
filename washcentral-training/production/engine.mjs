@@ -300,11 +300,10 @@ async function main() {
   // pre-flight (off-camera, before any capture): stage the start page, dismiss any idle
   // "Still there?" session dialog via its own Stay-Logged-In button (a genuine user action),
   // and let the page settle. A live idle dialog on a fresh capture would abort QA check 29.
-  const here = await cdp.eval('location.href');
-  if (!here.startsWith(L.startUrl)) {
-    console.log(`  staging start page: ${L.startUrl}`);
-    await cdp.navigate(L.startUrl, 1500);
-  }
+  // Always (re)load the start page: a fresh document guarantees no leftover overlay, modal,
+  // theme, or dialog from prior activity can leak into the take.
+  console.log(`  staging start page: ${L.startUrl}`);
+  await cdp.navigate(L.startUrl, 1500);
   if (await dismissIdle(cdp)) { console.log('  dismissed idle session dialog (off-camera)'); await sleep(600); }
   await sleep(1200);
 

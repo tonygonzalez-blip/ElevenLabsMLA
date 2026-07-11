@@ -1,0 +1,150 @@
+{
+  "lesson": "WC-01-04",
+  "audioMaster": "training/module01-foundations/WC-01-04-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows come from the per-step render durations (audio + 0.4s tail each); the joined master has no trailing tail, so the final block ends at the probed 199.236s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 15.47,
+      "phrases": [
+        { "id": "p01", "text": "Open the Customers list." },
+        { "id": "p02", "text": "Notice how the page stacks up." },
+        { "id": "p03", "text": "Summary numbers on top, insight cards in the middle, the table underneath." },
+        { "id": "p04", "text": "Every list in WashCentral is built this way," },
+        { "id": "p05", "text": "so the shape you learn right here is the shape you'll read on every screen after it." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.47,
+      "endS": 31.83,
+      "phrases": [
+        { "id": "p06", "text": "Start at the four tiles up top." },
+        { "id": "p07", "text": "They summarize the whole customer base in one glance:" },
+        { "id": "p08", "text": "how many customers, how many active members, how many at risk, how many prospects." },
+        { "id": "p09", "text": "Read these before the table, because they frame everything the rows are about to show you." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 31.83,
+      "endS": 47.38,
+      "phrases": [
+        { "id": "p10", "text": "Below the tiles, three cards." },
+        { "id": "p11", "text": "One tracks growth over the year, one shows how members split across plans," },
+        { "id": "p12", "text": "one rates overall health from low to high." },
+        { "id": "p13", "text": "It's the trend and the risk at a glance," },
+        { "id": "p14", "text": "so you catch the story before you ever sort a column." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 47.38,
+      "endS": 64.13,
+      "phrases": [
+        { "id": "p15", "text": "Now the list card itself." },
+        { "id": "p16", "text": "Its title and the small label above it tell you which dataset you're looking at." },
+        { "id": "p17", "text": "Off to the right sit the action buttons." },
+        { "id": "p18", "text": "Two of them, Delete and Add Customer, change records," },
+        { "id": "p19", "text": "so we leave them alone today and just note where they live." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 64.13,
+      "endS": 82.4,
+      "phrases": [
+        { "id": "p20", "text": "Look at the search box." },
+        { "id": "p21", "text": "The grey placeholder inside it isn't decoration." },
+        { "id": "p22", "text": "It spells out every field the search will match: name, plate, email, location, plan." },
+        { "id": "p23", "text": "When you're not sure how a list can be searched, that hint answers it for you." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 82.4,
+      "endS": 96.2,
+      "phrases": [
+        { "id": "p24", "text": "Next to it, the Filters button." },
+        { "id": "p25", "text": "Watch the little number on it." },
+        { "id": "p26", "text": "Zero means nothing is filtered and you're seeing the full list." },
+        { "id": "p27", "text": "Anything higher means someone narrowed it," },
+        { "id": "p28", "text": "which is the first thing to check when a customer swears a record is missing." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 96.2,
+      "endS": 112.72,
+      "phrases": [
+        { "id": "p29", "text": "Run your eye across the headers." },
+        { "id": "p30", "text": "Six columns, and every one sorts," },
+        { "id": "p31", "text": "so you can order by plan, by join date, by monthly price, whatever the question needs." },
+        { "id": "p32", "text": "The checkboxes down the left let you pick rows for the Delete button." },
+        { "id": "p33", "text": "We won't check any." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 112.72,
+      "endS": 129.71,
+      "phrases": [
+        { "id": "p34", "text": "Look at the coloured chips in a row." },
+        { "id": "p35", "text": "The plan chip names what the customer pays for;" },
+        { "id": "p36", "text": "the status chip is green for active, grey for inactive." },
+        { "id": "p37", "text": "Colour does the work, so you read a customer's standing in a glance instead of parsing text." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 129.71,
+      "endS": 149.52,
+      "phrases": [
+        { "id": "p38", "text": "Drop to the footer." },
+        { "id": "p39", "text": "The rows-per-page control and the page arrows are how you travel a big table." },
+        { "id": "p40", "text": "And these are big: this list runs past a million and a half migrated records." },
+        { "id": "p41", "text": "The tiles said two thousand, the pages say millions." },
+        { "id": "p42", "text": "Both are right, they're just counting different things." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 149.52,
+      "endS": 164.29,
+      "phrases": [
+        { "id": "p43", "text": "Now switch to Gift Cards." },
+        { "id": "p44", "text": "Same page, different subject." },
+        { "id": "p45", "text": "Tiles across the top, three insight cards, then the list." },
+        { "id": "p46", "text": "The words changed to cards and balances," },
+        { "id": "p47", "text": "but the skeleton is identical to the one you just learned." },
+        { "id": "p48", "text": "That's the whole point." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 164.29,
+      "endS": 181.7,
+      "phrases": [
+        { "id": "p49", "text": "Read the controls here." },
+        { "id": "p50", "text": "The search hint, the columns, and the rows-per-page choices, twenty-five, fifty, or a hundred," },
+        { "id": "p51", "text": "all match the Customer List." },
+        { "id": "p52", "text": "If the table reads couldn't load records, that's a data hiccup, not an empty list," },
+        { "id": "p53", "text": "and the dashes in the tiles are the same story." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 181.7,
+      "endS": 199.236,
+      "phrases": [
+        { "id": "p54", "text": "That's the pattern." },
+        { "id": "p55", "text": "KPI strip, insight cards, search and filters," },
+        { "id": "p56", "text": "sortable columns with chips, and a pager at the bottom." },
+        { "id": "p57", "text": "Learn it on these two lists and you've learned it everywhere." },
+        { "id": "p58", "text": "From here on, every list in WashCentral reads the same, no matter which module you're in." }
+      ]
+    }
+  ],
+  "output": "WC-01-04-list-conventions-v1.1"
+}

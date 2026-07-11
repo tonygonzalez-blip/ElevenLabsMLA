@@ -1,6 +1,6 @@
 {
   "lesson": "WC-00-03",
-  "generatedISO": "2026-07-11T11:20:16.751Z",
+  "generatedISO": "2026-07-11T13:26:43.983Z",
   "checks": [
     {
       "id": 1,
@@ -54,7 +54,7 @@
       "id": 9,
       "name": "clicks preceded by arrival + readable hover",
       "pass": true,
-      "detail": "avatar:459ms, itemDarkMode:385ms, itemLightMode:456ms, inertHeaderSpot:331ms, avatar:427ms, itemMyTraining:446ms, railCommandCenter:446ms"
+      "detail": "avatar:463ms, itemDarkMode:477ms, itemLightMode:415ms, inertHeaderSpot:338ms, avatar:387ms, itemMyTraining:318ms, railCommandCenter:443ms"
     },
     {
       "id": 10,
@@ -84,7 +84,7 @@
       "id": 14,
       "name": "no stale highlight after target disappears",
       "pass": true,
-      "detail": "menu intervals 13.1-63.4, 65.2-66.6; all menu highlights within"
+      "detail": "menu intervals 13.1-63.4, 65.3-66.5; all menu highlights within"
     },
     {
       "id": 15,
@@ -96,7 +96,7 @@
       "id": 16,
       "name": "required visibility watches held",
       "pass": true,
-      "detail": "menuVisibleDuringExplanation:held=true(40)"
+      "detail": "menuVisibleDuringExplanation:held=true(39)"
     },
     {
       "id": 17,
@@ -144,7 +144,7 @@
       "id": 24,
       "name": "no loading/partial-render frames after navigation",
       "pass": true,
-      "detail": "2 navs; 2 loading-cut freeze(s): academyStable 66.725-67.57s, commandCenterStable 78.609-79.519s"
+      "detail": "2 navs; 2 loading-cut freeze(s): academyStable 66.67-67.738s, commandCenterStable 78.578-79.555s"
     },
     {
       "id": 25,
