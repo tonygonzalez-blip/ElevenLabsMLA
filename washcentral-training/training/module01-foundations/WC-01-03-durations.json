@@ -1,0 +1,97 @@
+{
+  "base": "WC-01-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 155.64,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Idle warning",
+      "audioS": 11.55,
+      "stepS": 11.95,
+      "file": "WC-01-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Session-expiring toast",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-01-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "\"Still there?\" dialog",
+      "audioS": 13.09,
+      "stepS": 13.49,
+      "file": "WC-01-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Dialog buttons",
+      "audioS": 13.56,
+      "stepS": 13.96,
+      "file": "WC-01-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "If you do nothing",
+      "audioS": 14.84,
+      "stepS": 15.24,
+      "file": "WC-01-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Stay signed in",
+      "audioS": 13.56,
+      "stepS": 13.96,
+      "file": "WC-01-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Settings → User Levels",
+      "audioS": 14.37,
+      "stepS": 14.77,
+      "file": "WC-01-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "KPI band",
+      "audioS": 13.95,
+      "stepS": 14.35,
+      "file": "WC-01-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Table columns",
+      "audioS": 13.24,
+      "stepS": 13.64,
+      "file": "WC-01-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Timeout values",
+      "audioS": 16.2,
+      "stepS": 16.6,
+      "file": "WC-01-03-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Support tie-back",
+      "audioS": 13.71,
+      "stepS": 14.11,
+      "file": "WC-01-03-s11.mp3"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "base": "WC-02-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 316.41,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open Customer 360",
+      "audioS": 15.73,
+      "stepS": 16.13,
+      "file": "WC-02-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Header identity",
+      "audioS": 18.13,
+      "stepS": 18.53,
+      "file": "WC-02-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Status chips",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-02-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Header buttons",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-02-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Metric band",
+      "audioS": 21.89,
+      "stepS": 22.29,
+      "file": "WC-02-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Related chips",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-02-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Overview tab",
+      "audioS": 22.67,
+      "stepS": 23.07,
+      "file": "WC-02-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Contact tab",
+      "audioS": 18.76,
+      "stepS": 19.16,
+      "file": "WC-02-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Membership tab",
+      "audioS": 21.89,
+      "stepS": 22.29,
+      "file": "WC-02-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Payments tab",
+      "audioS": 13.09,
+      "stepS": 13.49,
+      "file": "WC-02-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Vehicles tab",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-02-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Linked Accounts tab",
+      "audioS": 14.37,
+      "stepS": 14.77,
+      "file": "WC-02-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Activity tab",
+      "audioS": 14.37,
+      "stepS": 14.77,
+      "file": "WC-02-02-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Messaging tab",
+      "audioS": 16.51,
+      "stepS": 16.91,
+      "file": "WC-02-02-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Notes tab",
+      "audioS": 20.11,
+      "stepS": 20.51,
+      "file": "WC-02-02-s15.mp3"
+    },
+    {
+      "block": "s16",
+      "step": "16",
+      "target": "Actions menu",
+      "audioS": 23.64,
+      "stepS": 24.04,
+      "file": "WC-02-02-s16.mp3"
+    },
+    {
+      "block": "s17",
+      "step": "17",
+      "target": "Recap",
+      "audioS": 24.61,
+      "stepS": 25.01,
+      "file": "WC-02-02-s17.mp3"
+    }
+  ]
+}

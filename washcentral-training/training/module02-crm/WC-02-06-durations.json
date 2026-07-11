@@ -1,0 +1,89 @@
+{
+  "base": "WC-02-06",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 179.97,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "CRM sidebar",
+      "audioS": 15.65,
+      "stepS": 16.05,
+      "file": "WC-02-06-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Prepaid Books top",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-02-06-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Prepaid Book List",
+      "audioS": 17.55,
+      "stepS": 17.95,
+      "file": "WC-02-06-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Vehicles top",
+      "audioS": 15.15,
+      "stepS": 15.55,
+      "file": "WC-02-06-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Vehicle List",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-02-06-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Retail Customers",
+      "audioS": 21,
+      "stepS": 21.4,
+      "file": "WC-02-06-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Bundles top",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-02-06-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Bundle List",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-02-06-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Fundraiser stub",
+      "audioS": 14.92,
+      "stepS": 15.32,
+      "file": "WC-02-06-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Recap",
+      "audioS": 18.68,
+      "stepS": 19.08,
+      "file": "WC-02-06-s10.mp3"
+    }
+  ]
+}

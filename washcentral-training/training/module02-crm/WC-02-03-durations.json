@@ -1,0 +1,97 @@
+{
+  "base": "WC-02-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 148.48,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open Edit Customer",
+      "audioS": 14.11,
+      "stepS": 14.51,
+      "file": "WC-02-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Identity band",
+      "audioS": 13.48,
+      "stepS": 13.88,
+      "file": "WC-02-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Edit tabs",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-02-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Personal & Business",
+      "audioS": 14.52,
+      "stepS": 14.92,
+      "file": "WC-02-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Address",
+      "audioS": 13.71,
+      "stepS": 14.11,
+      "file": "WC-02-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Phone & Email",
+      "audioS": 11.15,
+      "stepS": 11.55,
+      "file": "WC-02-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Cancel out of Edit",
+      "audioS": 13.95,
+      "stepS": 14.35,
+      "file": "WC-02-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Back to the list",
+      "audioS": 8.83,
+      "stepS": 9.23,
+      "file": "WC-02-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Add Customer",
+      "audioS": 11.81,
+      "stepS": 12.21,
+      "file": "WC-02-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Blank form matches",
+      "audioS": 12.51,
+      "stepS": 12.91,
+      "file": "WC-02-03-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Cancel out of New",
+      "audioS": 14.21,
+      "stepS": 14.61,
+      "file": "WC-02-03-s11.mp3"
+    }
+  ]
+}
