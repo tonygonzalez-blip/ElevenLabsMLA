@@ -5,7 +5,7 @@
       "step": "1",
       "action": "js",
       "scheduledS": 0,
-      "actualS": 0.01,
+      "actualS": 0,
       "title": "Command Center — WashCentral",
       "ok": true
     },
@@ -21,7 +21,7 @@
       "step": "3",
       "action": "js",
       "scheduledS": 23.35,
-      "actualS": 23.36,
+      "actualS": 23.35,
       "title": "Command Center — WashCentral",
       "ok": true
     },
@@ -45,7 +45,7 @@
       "step": "6",
       "action": "js",
       "scheduledS": 64.02,
-      "actualS": 64.03,
+      "actualS": 64.02,
       "title": "My Dashboard — WashCentral Academy",
       "ok": true
     },

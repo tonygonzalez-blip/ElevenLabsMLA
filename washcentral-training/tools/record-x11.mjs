@@ -28,11 +28,23 @@ const durations = JSON.parse(fs.readFileSync(path.join(dir, `${base}-durations.j
 const drive = JSON.parse(fs.readFileSync(path.join(dir, `${base}-drive.json`), 'utf8'));
 if (drive.length !== durations.blocks.length) { console.error(`drive steps (${drive.length}) != narration blocks (${durations.blocks.length})`); process.exit(1); }
 
+// Cursor continuity rules (user QA feedback on the v1 test video):
+// 1. The overlay div dies with every navigation or app re-render; recreating it at a
+//    default position made the cursor visibly jump to screen center and glide back out.
+//    So the last position (and caption) persist in sessionStorage and recreation places
+//    the cursor exactly where it was, with NO transition — invisible on camera.
+// 2. A MutationObserver re-attaches the overlay the moment an app re-render drops it,
+//    instead of leaving a gap until the next step's re-injection.
+// 3. Glide duration scales with distance (constant velocity feel), clamped to
+//    CURSOR_TRAVEL_MS so the click wait in runDrive always outlasts the glide.
 const OVERLAY_JS = `(() => {
+  let pos = [960, 540], cap = '';
+  try { pos = JSON.parse(sessionStorage.getItem('wc-cursor-pos')) || pos; } catch (e) {}
+  try { cap = sessionStorage.getItem('wc-caption-text') || ''; } catch (e) {}
   let c = document.getElementById('wc-cursor');
   if (!c) {
     c = document.createElement('div'); c.id = 'wc-cursor';
-    c.style.cssText = 'position:fixed;z-index:2147483647;width:28px;height:38px;pointer-events:none;left:960px;top:540px;transition:left ${CURSOR_TRAVEL_MS / 1000}s cubic-bezier(.4,.1,.3,1),top ${CURSOR_TRAVEL_MS / 1000}s cubic-bezier(.4,.1,.3,1);filter:drop-shadow(1px 2px 3px rgba(0,0,0,0.35))';
+    c.style.cssText = 'position:fixed;z-index:2147483647;width:28px;height:38px;pointer-events:none;left:' + (pos[0] - 2) + 'px;top:' + (pos[1] - 2) + 'px;filter:drop-shadow(1px 2px 3px rgba(0,0,0,0.35))';
     c.innerHTML = '<svg width="28" height="38" viewBox="0 0 28 38"><polygon points="2,2 2,30 9,24 13,35 17,33 12,23 20,22" fill="white" stroke="black" stroke-width="1.6" stroke-linejoin="round"/></svg>';
     document.body.appendChild(c);
   }
@@ -40,10 +52,73 @@ const OVERLAY_JS = `(() => {
   if (!b) {
     b = document.createElement('div'); b.id = 'wc-subtitle';
     b.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:2147483646;text-align:center;padding:14px 24px;background:rgba(12,16,22,0.82);color:#fff;font-family:-apple-system,"Segoe UI",Roboto,sans-serif;font-size:19px;font-weight:500;letter-spacing:.2px;transition:opacity .3s;pointer-events:none;opacity:0';
+    b.textContent = cap; b.style.opacity = cap ? '1' : '0';
     document.body.appendChild(b);
   }
-  window.__wcMoveCursor = (x, y) => { c.style.left = (x - 2) + 'px'; c.style.top = (y - 2) + 'px'; };
-  window.__wcCaption = (t) => { b.textContent = t || ''; b.style.opacity = t ? '1' : '0'; };
+  window.__wcCurEl = c; window.__wcCapEl = b;
+  window.__wcMoveCursor = (x, y) => {
+    const el = window.__wcCurEl;
+    const r = el.getBoundingClientRect();                         // mid-glide retargets scale to the remaining distance
+    const dist = Math.hypot((x - 2) - r.left, (y - 2) - r.top);
+    const ms = Math.max(420, Math.min(${CURSOR_TRAVEL_MS}, Math.round(dist * 1.15)));
+    el.style.transition = 'left ' + (ms / 1000) + 's cubic-bezier(.4,.1,.3,1),top ' + (ms / 1000) + 's cubic-bezier(.4,.1,.3,1)';
+    void el.offsetWidth;                                          // flush so the glide starts from the current position
+    el.style.left = (x - 2) + 'px'; el.style.top = (y - 2) + 'px';
+    window.__wcGlide = { x, y, until: performance.now() + ms };
+    try { sessionStorage.setItem('wc-cursor-pos', JSON.stringify([Math.round(r.left) + 2, Math.round(r.top) + 2])); } catch (e) {}
+    if (!window.__wcGlideSampler) {                               // persist the VISUAL position while gliding, not the target:
+      window.__wcGlideSampler = setInterval(() => {               // a detach mid-glide must reappear where the cursor WAS
+        const g = window.__wcGlide, s = window.__wcCurEl;
+        if (!g) { clearInterval(window.__wcGlideSampler); window.__wcGlideSampler = null; return; }
+        const done = performance.now() >= g.until;
+        let px = g.x, py = g.y;
+        if (!done && s && s.isConnected) { const rr = s.getBoundingClientRect(); px = Math.round(rr.left) + 2; py = Math.round(rr.top) + 2; }
+        try { sessionStorage.setItem('wc-cursor-pos', JSON.stringify([px, py])); } catch (e) {}
+        if (done) window.__wcGlide = null;
+      }, 80);
+    }
+  };
+  window.__wcCaption = (t) => {
+    b.textContent = t || ''; b.style.opacity = t ? '1' : '0';
+    try { sessionStorage.setItem('wc-caption-text', t || ''); } catch (e) {}
+  };
+  if (!window.__wcOverlayObs) {
+    window.__wcOverlayObs = new MutationObserver(() => {
+      const cur = window.__wcCurEl, cap = window.__wcCapEl, body = document.body;
+      if (!body) return;
+      if (cur && !cur.isConnected) {
+        // detach cancels a running CSS transition and the element would re-render AT its
+        // inline target — a visible pop. Restore the last sampled position, then resume.
+        let p = null; try { p = JSON.parse(sessionStorage.getItem('wc-cursor-pos')); } catch (e) {}
+        if (p) { cur.style.transition = 'none'; cur.style.left = (p[0] - 2) + 'px'; cur.style.top = (p[1] - 2) + 'px'; }
+        body.appendChild(cur);
+        const g = window.__wcGlide;
+        if (g && performance.now() < g.until) window.__wcMoveCursor(g.x, g.y);
+      }
+      if (cap && !cap.isConnected) body.appendChild(cap);
+    });
+    window.__wcOverlayObs.observe(document.documentElement, { childList: true, subtree: true });
+  }
+  return true;
+})()`;
+
+// Fresh-start for each take: every lesson opens with the cursor parked at screen center
+// and no caption, with no leftovers from a previous run in the same tab.
+const RESET_JS = `(() => {
+  if (window.__wcOverlayObs) { window.__wcOverlayObs.disconnect(); window.__wcOverlayObs = null; }
+  if (window.__wcGlideSampler) { clearInterval(window.__wcGlideSampler); window.__wcGlideSampler = null; }
+  window.__wcCurEl = null; window.__wcCapEl = null; window.__wcGlide = null;
+  try { sessionStorage.removeItem('wc-cursor-pos'); sessionStorage.removeItem('wc-caption-text'); } catch (e) {}
+  for (const id of ['wc-cursor', 'wc-subtitle']) { const el = document.getElementById(id); if (el) el.remove(); }
+  return true;
+})()`;
+
+// Caption clear must not depend on __wcCaption existing: a click-triggered page load during
+// the clear window would silently skip it and the persisted caption would resurrect on the
+// next page. This snippet works on any window, fresh or not.
+const CLEAR_CAPTION_JS = `(() => {
+  try { sessionStorage.setItem('wc-caption-text', ''); } catch (e) {}
+  const b = document.getElementById('wc-subtitle'); if (b) { b.textContent = ''; b.style.opacity = '0'; }
   return true;
 })()`;
 
@@ -102,7 +177,7 @@ async function runDrive(cdp, report) {
     console.log(`  [${entry.ok ? 'OK ' : 'ERR'}] step ${d.step} @${entry.actualS}s (sched ${entry.scheduledS}s) ${d.action} ${entry.error || ''}`);
     const nextStart = durations.blocks.slice(0, i + 1).reduce((s, b) => s + b.stepS, 0) * 1000;
     const clearAt = nextStart - 1000 - (Date.now() - t0);
-    if (clearAt > 0 && i < drive.length - 1) { await sleep(clearAt); await cdp.eval(`window.__wcCaption('')`).catch(() => {}); }
+    if (clearAt > 0 && i < drive.length - 1) { await sleep(clearAt); await cdp.eval(CLEAR_CAPTION_JS).catch(() => {}); }
   }
   const rest = durations.totalS * 1000 - (Date.now() - t0);
   if (rest > 0) await sleep(rest);
@@ -111,6 +186,8 @@ async function runDrive(cdp, report) {
 
 async function main() {
   const cdp = await CDP.connect('first');
+  await cdp.eval(RESET_JS);
+  await cdp.eval(OVERLAY_JS);
   const report = [];
   if (mode === 'rehearse') {
     console.log(`REHEARSE ${base}: ${drive.length} steps, ${durations.totalS}s timeline`);
@@ -127,24 +204,31 @@ async function main() {
     '-c:v', 'libx264', '-preset', 'ultrafast', '-pix_fmt', 'yuv420p', '-r', '30', raw],
     { stdio: ['ignore', 'ignore', 'inherit'] });
   await sleep(1500);                 // capture spin-up
-  const captureStart = Date.now();
   await cdp.eval(OVERLAY_JS);
   await sleep(500);
-  const driveStart = Date.now();
   await runDrive(cdp, report);
   await sleep(400);
   ff.kill('SIGINT');                 // clean ffmpeg finalize
   await new Promise(r => ff.on('exit', r));
   const failures = report.filter(r => !r.ok);
   if (failures.length) { console.error(`DRIVE HAD ${failures.length} ERRORS — do not ship. Re-roll.`); process.exit(1); }
-  const lead = (driveStart - captureStart + 500) / 1000;
+  // Exact lead from the capture itself: it runs from ffmpeg's true start until 0.4s after the
+  // drive ends, so lead = rawDuration - (timeline + 0.4). (Wall-clock spawn math over-estimated
+  // this, and a stream-copy trim snapped back to the t=0 keyframe — a no-op that baked ~2s of
+  // lead-in into the take and ran narration that far ahead of the visuals.) Re-encode the trim
+  // for frame accuracy; veryfast/crf18 is visually lossless for screen content.
+  const rawDur = parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', raw]).toString());
+  const lead = rawDur - (durations.totalS + 0.4);
+  if (!(lead >= 0 && lead < 6)) { console.error(`implausible capture lead ${lead.toFixed(2)}s (raw ${rawDur.toFixed(2)}s vs timeline ${durations.totalS}s) — re-roll.`); process.exit(1); }
   const trimmed = path.join(dir, `${base}-trimmed.mp4`);
-  execFileSync('ffmpeg', ['-y', '-ss', lead.toFixed(2), '-i', raw, '-c', 'copy', trimmed]);
+  execFileSync('ffmpeg', ['-y', '-ss', lead.toFixed(3), '-i', raw, '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p', '-r', '30', trimmed]);
   const narration = path.join(dir, `${base}-full-narration-v1.0.mp3`);
   const final = path.join(dir, `${base}-v1.0.mp4`);
   execFileSync('ffmpeg', ['-y', '-i', trimmed, '-i', narration, '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-map', '0:v', '-map', '1:a', '-shortest', final]);
   const probe = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height,r_frame_rate:format=duration', '-of', 'json', final]).toString();
   console.log('FINAL:', final, probe);
+  cdp.close();                       // an open CDP socket keeps node alive forever — exit explicitly
+  process.exit(0);
 }
 
 main().catch(e => { console.error('FAILED:', e.message); process.exit(1); });
