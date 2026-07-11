@@ -62,12 +62,12 @@ _[Director: point to the Instructions tab, do not open it. Body not in corpus �
 [02:13 | Step 7 — Help Desk (Zoho) surface]
 Symptom one, the help desk surface. Open IT and Support, then Help Desk Zoho. <break time="1.4s" /> In today's capture this page came back as a four-oh-four. The menu item is real. The page is not serving. Until it loads, the connector's own status chip is your reliable signal for whether tickets sync.
 
-_[Director: record whatever the live page serves; contents TBD — parked. New discrepancy: the plan expects an empty inbox here, the corpus shows a 404.]_
+_[Director: SUPERSEDED July 11 — the page renders its not-connected view via the sidebar (— counts, "Zoho Desk not connected" card, Go to Zoho Desk Settings →). The July 9 "plan vs 404" discrepancy is resolved in the plan's favor. This block's spoken text contradicts the page; do not record s07 as written — re-script/re-render first.]_
 
 [02:35 | Step 8 — System Users SSO column]
 Symptom two, single sign-on lockouts. Open System Users, under Users and Security. <break time="1.4s" /> Eight columns, and two carry this ticket. SSO flags who signs in through the provider. Last login shows when each of them last got in. Today the rows themselves failed to load, so treat the list as unconfirmed until the fetch succeeds.
 
-_[Director: do not click + New Record. Rows TBD — parked.]_
+_[Director: do not click + New Record. SUPERSEDED July 11 — the rows load live (8,022 Total Users; Yes/No chips in ACTIVE and SSO). This block's spoken "rows failed to load" line contradicts the list; do not record s08 as written — re-script/re-render first. Mask or scroll past identifiable rows.]_
 
 [02:58 | Step 9 — Accounting connector]
 Symptom three, the accounting export. <break time="1.4s" /> Back in Integrations, the accounting connector reads exactly like Zoho did: status chip, test button, token block. Same read, same rules, same hands off. And if the connection is fine but entries land under the wrong codes, that's GL Code mapping. Different lesson.
@@ -90,6 +90,6 @@ _(Estimated total: about 4:23 / 263 s. Timestamps are estimates at ~145 wpm; con
 - Status **READY FOR GENERATION**: script complete, not yet rendered (no ElevenLabs key in this session). Voice **WashCentral New** / **eleven_v3** / 44.1 kHz locked per project.
 - Written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading (the status chip and token fields spoken only where they are the diagnostic content).
 - Humanizer pass (per CLAUDE.md §6): spoken prose kept clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, navigation paths, and numbered steps left exact. Em dashes appear only in the `[mm:ss | Step N — target]` house-format block headers and in the mandated "TBD — parked" token inside non-spoken director notes.
-- Corpus-grounded, no live walk: the Zoho Desk connector (`settings-integrations-zoho`), the Integrations hub (`settings-integrations`), and System Users columns (`settings-system-users`) are grounded in the July 9 digests and screenshots; **Help Desk (Zoho)** 404'd in the corpus (`zoho-tickets`, contents TBD — parked); the connected-state label, Instructions tab body, System Users rows, and accounting connector fields are TBD — parked.
+- Corpus-grounded: the Zoho Desk connector (`settings-integrations-zoho`) and the Integrations hub (`settings-integrations`) are grounded in the July 9 digests and screenshots. Updated July 11: **Help Desk (Zoho)** is captured in-app (`verification/2026-07-11/digests/zoho-tickets-inapp.json`) and **System Users** rows load live (`settings-system-users.json`), which invalidates blocks s07 and s08 (re-render flagged above). The connected-state label, Instructions tab body, and accounting connector fields remain TBD — parked. Spoken lines untouched July 11; only non-spoken notes updated.
 - **Test Connection** is never run and never depicted running; no credential value is spoken, zoomed, or copied; nothing is connected, edited, re-authenticated, or sent.
 - Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**

@@ -34,7 +34,7 @@
 
 ### Scope notes (non-spoken)
 
-- On the July 9 build, **System Alerts** (`support-alerts.html`) returns a server 404. The lesson teaches reaching the entry, reading the Not Found page, using live fallbacks, and reporting the outage. The alerts monitor the curriculum expects (KPIs, severity split, columns, alert-type rows) is not observable and is parked (new item, see the guide's structured findings).
+- (v1.0 premise, superseded — see the banner above.) On the July 9 direct-URL sweep, **System Alerts** (`support-alerts.html`) returned a server 404 and this script taught the outage. The July 11 in-app capture cleared that parked item: the page is real, and the v2.0 guide/shot list teach it.
 - Read-only lesson. The only live click is the **System Alerts** sidebar link. The step-6 fallback frames (Command Center Priority Intelligence, ML Command Center incident feed) are read-only reference stills.
 - Do not depict any alert content that the 404 does not show. Do not invent counters, severities, or rows.
 
