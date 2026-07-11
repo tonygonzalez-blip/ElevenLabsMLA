@@ -119,7 +119,7 @@ export class CDP {
 
   async pressKey(key, modifiers = 0) {
     // modifiers: 1=Alt, 2=Ctrl, 4=Meta, 8=Shift
-    const defs = { Escape: { code: 'Escape', keyCode: 27 }, Enter: { code: 'Enter', keyCode: 13 }, ArrowDown: { code: 'ArrowDown', keyCode: 40 }, ArrowUp: { code: 'ArrowUp', keyCode: 38 }, k: { code: 'KeyK', keyCode: 75, text: 'k' } };
+    const defs = { Escape: { code: 'Escape', keyCode: 27 }, Enter: { code: 'Enter', keyCode: 13 }, ArrowDown: { code: 'ArrowDown', keyCode: 40 }, ArrowUp: { code: 'ArrowUp', keyCode: 38 }, ArrowLeft: { code: 'ArrowLeft', keyCode: 37 }, ArrowRight: { code: 'ArrowRight', keyCode: 39 }, Backspace: { code: 'Backspace', keyCode: 8 }, Delete: { code: 'Delete', keyCode: 46 }, Tab: { code: 'Tab', keyCode: 9 }, Home: { code: 'Home', keyCode: 36 }, End: { code: 'End', keyCode: 35 }, PageUp: { code: 'PageUp', keyCode: 33 }, PageDown: { code: 'PageDown', keyCode: 34 }, a: { code: 'KeyA', keyCode: 65, text: 'a' }, k: { code: 'KeyK', keyCode: 75, text: 'k' } };
     const d = defs[key] || { code: key, keyCode: 0 };
     for (const type of ['rawKeyDown', 'keyUp']) {
       await this.send('Input.dispatchKeyEvent', { type, key, code: d.code, windowsVirtualKeyCode: d.keyCode, nativeVirtualKeyCode: d.keyCode, modifiers });

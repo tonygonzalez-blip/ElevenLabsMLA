@@ -161,7 +161,10 @@
     "scrolledToFooter": "window.scrollY>700",
     "scrolledToTop": "window.scrollY<10",
     "searchFocused": "document.activeElement===document.querySelector('#customer-search')",
-    "searchBtnFocused": "!!document.activeElement&&document.activeElement.id==='search-btn'"
+    "searchBtnFocused": "!!document.activeElement&&document.activeElement.id==='search-btn'",
+    "searchFiltered": "(()=>{const i=document.querySelector('#customer-search');if(!i||i.value!=='pat')return false;const c=document.querySelector('table tbody tr td:nth-child(2)');return !!c&&/pat/i.test(c.textContent||'')})()",
+    "searchApplied": "(()=>{if(!document.activeElement||document.activeElement.id!=='search-btn')return false;const i=document.querySelector('#customer-search');if(!i||i.value!=='pat')return false;const c=document.querySelector('table tbody tr td:nth-child(2)');return !!c&&/pat/i.test(c.textContent||'')})()",
+    "fullListRestored": "(()=>{const i=document.querySelector('#customer-search');return !!i&&i.value===''&&document.querySelectorAll('table tbody tr').length>=20})()"
   },
   "ops": [
     {
@@ -1007,35 +1010,100 @@
       "hoverMs": 360,
       "postcondition": "searchFocused",
       "timeoutMs": 4000,
-      "note": "step 14 (residual R1): genuine click into the search box — caret lands; the engine key op cannot insert text, so no fragment is typed"
+      "note": "step 14: genuine click into the search box — caret lands before the typing"
+    },
+    {
+      "op": "type",
+      "pressAt": 201.9,
+      "text": "pat",
+      "perCharMs": 95,
+      "keyLabel": "type: pat",
+      "postcondition": "searchFiltered",
+      "timeoutMs": 4000,
+      "note": "step 14: type the first letters of PATRICIA A COOK (a name visibly on screen pre-filter, probe-verified); the live table filters as typed — pagination drops 65,753 -> 473 pages, PATRICIA rows on top"
     },
     {
       "op": "log-rect",
-      "at": 201.9,
+      "at": 202.7,
       "key": "searchBtnRect",
       "target": "searchBtn"
     },
     {
       "op": "click",
       "target": "searchBtn",
-      "pressAt": 203.65,
-      "hoverMs": 340,
-      "postcondition": "searchBtnFocused",
+      "pressAt": 204.05,
+      "hoverMs": 320,
+      "postcondition": "searchApplied",
       "timeoutMs": 4000,
-      "note": "step 14 (residual R1): '...then hit Search' — genuine Search press; with an empty box the live table is unchanged (verified read-only)"
-    },
-    {
-      "op": "click",
-      "target": "searchInput",
-      "pressAt": 213.0,
-      "hoverMs": 340,
-      "postcondition": "searchFocused",
-      "timeoutMs": 4000,
-      "note": "step 15 (residual R1): 'Clear the box' — return to the (already empty) box; full list is on screen throughout"
+      "note": "step 14: '...then hit Search' — genuine Search press inside the cue tail; filtered result verified live (value 'pat' + first-row match)"
     },
     {
       "op": "log-rect",
-      "at": 213.6,
+      "at": 204.9,
+      "key": "firstRowRect",
+      "target": "activeRow",
+      "requireStableMs": 240,
+      "note": "first matched row (PATRICIA A COOK) for the p58 highlight"
+    },
+    {
+      "op": "watch",
+      "key": "searchFilteredHold",
+      "from": 205.2,
+      "to": 211.6,
+      "predicate": "searchFiltered",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 205.4,
+      "to": {
+        "target": "activeRow",
+        "offset": [
+          -680,
+          0
+        ]
+      },
+      "note": "beside the first matched row while p58 'collapses to just the matches' plays"
+    },
+    {
+      "op": "move",
+      "at": 211.0,
+      "to": {
+        "point": [
+          430,
+          270
+        ]
+      },
+      "note": "drift toward the sidebar in the p59 tail so the step-15 approach starts on cue"
+    },
+    {
+      "op": "click",
+      "target": "sideCustomers",
+      "pressAt": 213.35,
+      "hoverMs": 360,
+      "postcondition": "onCustomers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 15 (residual R1): 'Clear the box' — keyboard clear is impossible (key op ctrl+a/Backspace dispatch keyCode 0 and are inert, probe-verified); closest genuine action is the sidebar Customers reload, which restores the empty box and the full untouched list"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "customersStable4",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 214.5,
+      "predicate": "fullListRestored",
+      "note": "step 15: empty box + full unfiltered table verified live before p61 finishes"
+    },
+    {
+      "op": "log-rect",
+      "at": 214.9,
       "key": "theadRect2",
       "target": "theadRow"
     },
@@ -1160,8 +1228,8 @@
         "n": 15,
         "anchor": "theadRect2",
         "place": "left-top",
-        "from": 213.9,
-        "to": 218.4
+        "from": 215.1,
+        "to": 219.0
       }
     ],
     "highlights": [
@@ -1333,15 +1401,21 @@
       },
       {
         "anchor": "searchBtnRect",
-        "from": 202.6,
+        "from": 202.8,
         "to": 204.13,
         "note": "p57: '...then hit Search'"
       },
       {
+        "anchor": "firstRowRect",
+        "from": 205.2,
+        "to": 206.86,
+        "note": "p58: the first matched row — the table genuinely collapsed to /pat/ matches while typing"
+      },
+      {
         "anchor": "theadRect2",
-        "from": 213.8,
-        "to": 216.25,
-        "note": "p61: the full list on screen, untouched"
+        "from": 215.1,
+        "to": 216.4,
+        "note": "p61: the full list back on screen, untouched, after the genuine reload"
       }
     ],
     "camera": [
