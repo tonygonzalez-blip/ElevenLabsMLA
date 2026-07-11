@@ -280,15 +280,20 @@ class Engine {
       } else if (op.op === 'log-rect') {
         await this.waitUntil(op.at);
         // log-rect only reads geometry for external graphics; a disabled control (e.g. a Send
-        // button with an empty input) is a legitimate thing to point at, never to click
-        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160, allowDisabled: true }, 3000);
+        // button with an empty input) is a legitimate thing to point at, never to click.
+        // Retry generously: post-navigation the target's container (e.g. a KPI strip that
+        // renders after a data fetch) can lag several seconds under record-time CPU load from
+        // the capture encoder; resolveRetry returns the instant it resolves, so a larger cap
+        // only ever costs time in the genuine slow-render case, never on a ready element.
+        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160, allowDisabled: true }, 6000);
         entry.rect = tgt.rect; entry.label = tgt.label;
         this.log.rects[op.key] = { t: +this.now().toFixed(3), rect: tgt.rect, label: tgt.label };
       } else if (op.op === 'log-rects') {
         await this.waitUntil(op.at);
         const group = {};
         for (const name of op.targets) {
-          const tgt = await this.resolve(name, { allowDisabled: true });
+          // resolveRetry (not resolve): same post-nav slow-render tolerance as log-rect above.
+          const tgt = await this.resolveRetry(name, { allowDisabled: true }, 6000);
           group[name] = { rect: tgt.rect, label: tgt.label };
         }
         this.log.rects[op.key] = { t: +this.now().toFixed(3), items: group };
