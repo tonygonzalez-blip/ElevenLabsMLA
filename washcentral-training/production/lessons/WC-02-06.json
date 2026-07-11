@@ -1,0 +1,438 @@
+{
+  "lesson": "WC-02-06",
+  "title": "Prepaid Books, Vehicles, Retail Customers & Bundles (CRM)",
+  "audioMaster": "training/module02-crm/WC-02-06-full-narration-v1.0.mp3",
+  "audioDurationS": 179.644,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "railCRM": {
+      "js": "[...document.querySelectorAll('button[title]')].find(e=>e.getAttribute('title')==='CRM'&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().left<120)"
+    },
+    "sideCustomers": {
+      "text": "Customers",
+      "scope": "aside.sidebar a"
+    },
+    "sideGiftCards": {
+      "text": "Gift Cards",
+      "scope": "aside.sidebar a"
+    },
+    "sideHouse": {
+      "text": "House Accounts",
+      "scope": "aside.sidebar a"
+    },
+    "sidePrepaid": {
+      "text": "Prepaid Books",
+      "scope": "aside.sidebar a"
+    },
+    "sideVehicles": {
+      "text": "Vehicles",
+      "scope": "aside.sidebar a"
+    },
+    "sideRetail": {
+      "text": "Retail Customers",
+      "scope": "aside.sidebar a"
+    },
+    "sideBundles": {
+      "text": "Bundles",
+      "scope": "aside.sidebar a"
+    },
+    "sideFundraiser": {
+      "text": "Fundraiser",
+      "scope": "aside.sidebar a"
+    },
+    "metricsBand": {
+      "js": "document.querySelector('.a-metrics')"
+    },
+    "tile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "tile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "tile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "tile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "flaggedTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Flagged/.test(e.textContent||''))"
+    },
+    "card1": {
+      "js": "document.querySelectorAll('.a-chart-card')[0]"
+    },
+    "card2": {
+      "js": "document.querySelectorAll('.a-chart-card')[1]"
+    },
+    "card3": {
+      "js": "document.querySelectorAll('.a-chart-card')[2]"
+    },
+    "revenueCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Revenue by Bundle/.test(c.textContent||''))"
+    },
+    "listHeading": {
+      "js": "[...document.querySelectorAll('div,h1,h2,h3')].find(e=>e.children.length===0&&/ List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "addBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/^\\+ (Add|New) /.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchInput": {
+      "js": "document.querySelector('input[placeholder^=\"Search by\"]')"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thRemaining": {
+      "text": "Remaining",
+      "scope": "table thead th"
+    },
+    "thExpiration": {
+      "text": "Expiration",
+      "scope": "table thead th"
+    },
+    "thPlateV": {
+      "text": "License Plate",
+      "scope": "table thead th"
+    },
+    "thStatusV": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thValidAt": {
+      "text": "Valid At",
+      "scope": "table thead th"
+    },
+    "rcThCustomer": {
+      "text": "Customer",
+      "scope": "table thead th"
+    },
+    "rcThPlate": {
+      "text": "Plate",
+      "scope": "table thead th"
+    },
+    "rcThHome": {
+      "text": "Home Location",
+      "scope": "table thead th"
+    },
+    "rcThEmail": {
+      "text": "Email",
+      "scope": "table thead th"
+    },
+    "rcThPhone": {
+      "text": "Phone",
+      "scope": "table thead th"
+    },
+    "bRow1": {
+      "js": "document.querySelectorAll('table tbody tr')[0]"
+    },
+    "bRow2": {
+      "js": "document.querySelectorAll('table tbody tr')[1]"
+    },
+    "bRow3": {
+      "js": "document.querySelectorAll('table tbody tr')[2]"
+    },
+    "bRow4": {
+      "js": "document.querySelectorAll('table tbody tr')[3]"
+    },
+    "bRow5": {
+      "js": "document.querySelectorAll('table tbody tr')[4]"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onCustomers": "location.pathname.endsWith('/crm-customers.html')",
+    "onPrepaid": "location.pathname.endsWith('/crm-prepaid-books.html')",
+    "onVehicles": "location.pathname.endsWith('/crm-vehicles.html')",
+    "onRetail": "location.pathname.endsWith('/crm-retail-customers.html')",
+    "onBundles": "location.pathname.endsWith('/crm-bundles.html')",
+    "pageReady": "document.readyState==='complete'&&!!document.querySelector('table thead th')&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "scrolledToList": "window.scrollY>40"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the sidebar expanded (persisted pref washcentral-sidebar-collapsed-v5 may be true from a prior lesson; the rail CRM click only navigates with the sidebar panel expanded); skipped when already expanded"
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onCommandCenter", "note": "start page stable before capture" },
+    { "op": "assert", "at": -1.2, "predicate": "sidebarExpanded", "note": "preflight staged the sidebar expanded" },
+    { "op": "pointer-enter", "at": 0.35, "from": [2, 880], "to": { "target": "railCRM", "offset": [44, 120] }, "note": "enter from the left edge, settle below-right of the rail CRM button (same approach as WC-02-01)" },
+    { "op": "log-rect", "at": 1.0, "key": "railCrmRect", "target": "railCRM" },
+    { "op": "click", "target": "railCRM", "pressAt": 2.1, "hoverMs": 400, "postcondition": "onCustomers", "timeoutMs": 8000, "nav": true, "note": "step 1: 'Open CRM in the left rail.' — press lands in the p01 trailing break (1.79-2.50); rail CRM lands on crm-customers with the CRM sidebar" },
+    { "op": "wait-stable", "afterNav": true, "key": "customersStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 3.3, "key": "sideNav", "targets": ["sideCustomers", "sideGiftCards", "sideHouse", "sidePrepaid", "sideVehicles", "sideRetail", "sideBundles", "sideFundraiser"] },
+    { "op": "watch", "key": "crmSidebarHold", "from": 3.4, "to": 15.5, "predicate": "onCustomers", "everyMs": 500, "mustHold": true },
+    { "op": "move", "at": 3.6, "to": { "target": "sideCustomers", "offset": [0, 0] }, "note": "step 1 sweep: p02 'members' (top-to-bottom, ~2.5s per shot list)" },
+    { "op": "move", "at": 4.2, "to": { "target": "sideGiftCards", "offset": [0, 0] }, "note": "p02 'gift cards'" },
+    { "op": "move", "at": 4.8, "to": { "target": "sideHouse", "offset": [0, 0] }, "note": "p02 'house accounts'" },
+    { "op": "move", "at": 5.5, "to": { "target": "sidePrepaid", "offset": [0, 0] }, "note": "p03 'the four we cover today' — Prepaid Books" },
+    { "op": "move", "at": 6.3, "to": { "target": "sideVehicles", "offset": [0, 0] } },
+    { "op": "move", "at": 7.1, "to": { "target": "sideRetail", "offset": [0, 0] } },
+    { "op": "move", "at": 7.9, "to": { "target": "sideBundles", "offset": [0, 0] } },
+    { "op": "move", "at": 8.6, "to": { "target": "sideFundraiser", "offset": [0, 0] }, "note": "sweep ends on the Fundraiser stub (pointed at, never clicked; step 9 returns to it)" },
+    { "op": "move", "at": 10.2, "to": { "point": [1898, 700] }, "note": "park in the right margin for p04-p05" },
+    { "op": "move", "at": 16.05, "to": { "target": "sidePrepaid", "offset": [0, 0] }, "note": "step 2 approach starts on the p06 cue" },
+    { "op": "click", "target": "sidePrepaid", "pressAt": 17.6, "hoverMs": 400, "postcondition": "onPrepaid", "timeoutMs": 8000, "nav": true, "note": "step 2: 'Click Prepaid Books.' — press inside the cue break (17.40-17.89)" },
+    { "op": "wait-stable", "afterNav": true, "key": "prepaidStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 18.7, "key": "pbTop", "targets": ["metricsBand", "tile1", "tile2", "tile3", "tile4", "card1", "card2", "card3"] },
+    { "op": "watch", "key": "prepaidHold", "from": 18.8, "to": 51.6, "predicate": "onPrepaid", "everyMs": 600, "mustHold": true },
+    { "op": "move", "at": 19.0, "to": { "point": [1898, 330] }, "note": "park while p07 defines a prepaid book" },
+    { "op": "move", "at": 22.3, "to": { "target": "tile1", "offset": [0, 20] }, "note": "step 2: p08 tile sweep — 'total'" },
+    { "op": "move", "at": 23.7, "to": { "target": "tile2", "offset": [0, 20] }, "note": "'active'" },
+    { "op": "move", "at": 25.1, "to": { "target": "tile3", "offset": [0, 20] }, "note": "'completed'" },
+    { "op": "move", "at": 26.5, "to": { "target": "tile4", "offset": [0, 20] }, "note": "'how many expire soon'" },
+    { "op": "move", "at": 28.9, "to": { "target": "card1", "offset": [0, 60] }, "note": "p10 'the labels tell you what to read' — panel sweep: New Books" },
+    { "op": "move", "at": 30.5, "to": { "target": "card2", "offset": [0, 60] }, "note": "Package Type" },
+    { "op": "move", "at": 32.1, "to": { "target": "card3", "offset": [0, 60] }, "note": "Book Status" },
+    { "op": "move", "at": 34.5, "to": { "target": "listHeading", "offset": [240, 0], "outside": true }, "note": "step 3: p11 'Now the list itself.' — settle beside the Prepaid Book List heading" },
+    { "op": "log-rect", "at": 35.3, "key": "pbListHeadRect", "target": "listHeading" },
+    { "op": "log-rect", "at": 35.5, "key": "pbAddRect", "target": "addBtn" },
+    { "op": "log-rect", "at": 35.8, "key": "pbTheadRect", "target": "theadRow", "requireStableMs": 240 },
+    { "op": "log-rects", "at": 36.2, "key": "pbCols", "targets": ["thRemaining", "thExpiration"] },
+    { "op": "move", "at": 36.8, "to": { "target": "theadRow", "offset": [-720, 0] }, "note": "p12 'Six columns' — sweep the header row left to right" },
+    { "op": "move", "at": 38.6, "to": { "target": "theadRow", "offset": [700, 0] } },
+    { "op": "move", "at": 40.2, "to": { "target": "thRemaining", "offset": [0, 42] }, "note": "p13: 'Remaining tells you washes left'" },
+    { "op": "move", "at": 42.5, "to": { "target": "thExpiration", "offset": [0, 42] }, "note": "p13: 'Expiration tells you the deadline'" },
+    { "op": "move", "at": 44.8, "to": { "point": [1898, 620] }, "note": "park for p14-p15; + Add Prepaid Book stays untouched (red bracket)" },
+    { "op": "move", "at": 52.35, "to": { "target": "sideVehicles", "offset": [0, 0] }, "note": "step 4 approach on the p16 cue" },
+    { "op": "click", "target": "sideVehicles", "pressAt": 53.95, "hoverMs": 380, "postcondition": "onVehicles", "timeoutMs": 8000, "nav": true, "note": "step 4: 'Click Vehicles.' — press inside the cue break (53.70-54.17)" },
+    { "op": "wait-stable", "afterNav": true, "key": "vehiclesStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 55.1, "key": "vhTop", "targets": ["metricsBand", "tile1", "tile2", "tile3", "tile4", "flaggedTile"] },
+    { "op": "watch", "key": "vehiclesHold", "from": 55.2, "to": 87.3, "predicate": "onVehicles", "everyMs": 600, "mustHold": true },
+    { "op": "move", "at": 55.4, "to": { "target": "tile1", "offset": [0, 20] }, "note": "p17 'nearly four thousand cars' — 3,892 Total Vehicles tile" },
+    { "op": "move", "at": 60.6, "to": { "target": "tile2", "offset": [0, 20] }, "note": "p18 tile sweep: 'active members'" },
+    { "op": "move", "at": 61.6, "to": { "target": "tile3", "offset": [0, 20] }, "note": "'flagged'" },
+    { "op": "move", "at": 62.6, "to": { "target": "tile4", "offset": [0, 20] }, "note": "'new this month'" },
+    { "op": "move", "at": 64.1, "to": { "target": "flaggedTile", "offset": [0, 0] }, "note": "p19: 'Flagged is your first stop'" },
+    { "op": "key", "pressAt": 68.95, "keys": ["ArrowDown", "ArrowDown"], "gapMs": 300, "keyLabel": "Scroll to the list", "postcondition": "scrolledToList", "timeoutMs": 4000, "note": "step 5: 'Scroll to the list.' — genuine keyboard scroll (~80px, measured live) inside the p20 break; the header row rises, the KPI band edge stays at the top" },
+    { "op": "watch", "key": "scrollHold", "from": 70.0, "to": 87.2, "predicate": "scrolledToList", "everyMs": 600, "mustHold": true },
+    { "op": "log-rect", "at": 69.9, "key": "vhTheadRect", "target": "theadRow", "requireStableMs": 260 },
+    { "op": "log-rects", "at": 70.3, "key": "vhCols", "targets": ["thPlateV", "thStatusV"] },
+    { "op": "log-rect", "at": 70.6, "key": "vhAddRect", "target": "addBtn" },
+    { "op": "move", "at": 70.9, "to": { "target": "theadRow", "offset": [-720, 0] }, "note": "p21 'Seven columns' — sweep the named columns left to right" },
+    { "op": "move", "at": 72.6, "to": { "target": "theadRow", "offset": [440, 0] }, "note": "sweep ends over Last Visit (the seventh named column; VIN/Color/Barcode beyond it are live drift — see RESIDUALS)" },
+    { "op": "move", "at": 73.8, "to": { "target": "thPlateV", "offset": [0, 44] }, "note": "p22: 'License Plate'" },
+    { "op": "move", "at": 75.5, "to": { "target": "thStatusV", "offset": [0, 44] }, "note": "p22: '...and Status'" },
+    { "op": "move", "at": 78.3, "to": { "point": [960, 120] }, "note": "p23: gesture up toward 'the tiles above' at the top edge" },
+    { "op": "move", "at": 83.8, "to": { "point": [1898, 660] }, "note": "p24 park; + Add Vehicle stays untouched (red bracket)" },
+    { "op": "move", "at": 87.6, "to": { "target": "sideRetail", "offset": [0, 0] }, "note": "step 6 approach on the p25 cue" },
+    { "op": "click", "target": "sideRetail", "pressAt": 89.35, "hoverMs": 380, "postcondition": "onRetail", "timeoutMs": 8000, "nav": true, "note": "step 6: 'Click Retail Customers.' — press inside the cue break (89.04-89.99); new page loads at the top" },
+    { "op": "wait-stable", "afterNav": true, "key": "retailStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 90.5, "key": "rcHeadRect", "target": "listHeading" },
+    { "op": "log-rect", "at": 90.7, "key": "rcAddRect", "target": "addBtn" },
+    { "op": "log-rect", "at": 90.9, "key": "rcSearchRect", "target": "searchInput" },
+    { "op": "log-rect", "at": 91.2, "key": "rcTheadRect", "target": "theadRow", "requireStableMs": 240 },
+    { "op": "log-rects", "at": 91.6, "key": "rcCols", "targets": ["rcThCustomer", "rcThPlate", "rcThHome", "rcThEmail", "rcThPhone"] },
+    { "op": "watch", "key": "retailHold", "from": 91.7, "to": 108.6, "predicate": "onRetail", "everyMs": 600, "mustHold": true },
+    { "op": "move", "at": 91.9, "to": { "point": [1898, 400] }, "note": "p26 'bare on purpose' — park while the whole lean page reads wide" },
+    { "op": "move", "at": 92.5, "to": { "target": "searchInput", "offset": [0, -36], "outside": true }, "note": "p27: 'just a search box...' — hover above the box, never in it" },
+    { "op": "move", "at": 94.7, "to": { "target": "theadRow", "offset": [-720, 0] }, "note": "p27: '...and five columns'" },
+    { "op": "move", "at": 96.95, "to": { "target": "rcThCustomer", "offset": [0, 44] }, "note": "p28 enumeration: customer" },
+    { "op": "move", "at": 97.75, "to": { "target": "rcThPlate", "offset": [0, 44] }, "note": "plate" },
+    { "op": "move", "at": 98.55, "to": { "target": "rcThHome", "offset": [0, 44] }, "note": "home location" },
+    { "op": "move", "at": 99.3, "to": { "target": "rcThEmail", "offset": [0, 44] }, "note": "email" },
+    { "op": "move", "at": 100.0, "to": { "target": "rcThPhone", "offset": [0, 44] }, "note": "phone" },
+    { "op": "move", "at": 101.6, "to": { "point": [1898, 520] }, "note": "park for p29-p30; + Add Customer stays untouched (red bracket)" },
+    { "op": "move", "at": 109.0, "to": { "target": "sideBundles", "offset": [0, 0] }, "note": "step 7 approach on the p31 cue" },
+    { "op": "click", "target": "sideBundles", "pressAt": 110.15, "hoverMs": 360, "postcondition": "onBundles", "timeoutMs": 8000, "nav": true, "note": "step 7: 'Click Bundles.' — press inside the cue break (109.89-110.45)" },
+    { "op": "wait-stable", "afterNav": true, "key": "bundlesStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 111.3, "key": "bdTop", "targets": ["metricsBand", "tile1", "tile2", "tile3", "tile4", "revenueCard"] },
+    { "op": "watch", "key": "bundlesHold", "from": 111.4, "to": 179.0, "predicate": "onBundles", "everyMs": 700, "mustHold": true },
+    { "op": "move", "at": 111.6, "to": { "point": [1898, 330] }, "note": "park while p32 defines a bundle" },
+    { "op": "move", "at": 113.5, "to": { "target": "tile1", "offset": [0, 20] }, "note": "p33 tile sweep: 'thirty-two bundles'" },
+    { "op": "move", "at": 114.9, "to": { "target": "tile2", "offset": [0, 20] }, "note": "'twenty-eight active'" },
+    { "op": "move", "at": 116.3, "to": { "target": "tile3", "offset": [0, 20] }, "note": "'this month's sales'" },
+    { "op": "move", "at": 117.7, "to": { "target": "tile4", "offset": [0, 20] }, "note": "'...and revenue'" },
+    { "op": "move", "at": 119.9, "to": { "target": "revenueCard", "offset": [0, 70] }, "note": "p34-p35: the Revenue by Bundle ranking, Monthly Value Pack on top" },
+    { "op": "move", "at": 127.2, "to": { "target": "listHeading", "offset": [240, 0], "outside": true }, "note": "step 8: p36 'Now the list...' — settle beside the Bundle List heading" },
+    { "op": "log-rect", "at": 128.0, "key": "bdTheadRect", "target": "theadRow", "requireStableMs": 240 },
+    { "op": "log-rect", "at": 128.3, "key": "bdValidAtRect", "target": "thValidAt" },
+    { "op": "log-rect", "at": 128.6, "key": "bdAddRect", "target": "addBtn" },
+    { "op": "move", "at": 128.7, "to": { "target": "theadRow", "offset": [-720, 0] }, "note": "p37 'Seven columns' — to the head of the row" },
+    { "op": "log-rects", "at": 129.2, "key": "bdRows", "targets": ["bRow1", "bRow2", "bRow3", "bRow4", "bRow5"] },
+    { "op": "move", "at": 130.0, "to": { "target": "bRow1", "offset": [-520, 0] }, "note": "p38 row sweep (~3s per shot list): Summer Special — rows are read only, never clicked" },
+    { "op": "move", "at": 131.2, "to": { "target": "bRow2", "offset": [-520, 0] }, "note": "Fleet Pack" },
+    { "op": "move", "at": 132.4, "to": { "target": "bRow3", "offset": [-520, 0] }, "note": "Monthly Value Pack" },
+    { "op": "move", "at": 133.6, "to": { "target": "bRow4", "offset": [-520, 0] }, "note": "Quick Shine" },
+    { "op": "move", "at": 134.8, "to": { "target": "bRow5", "offset": [-520, 0] }, "note": "Spring Promo" },
+    { "op": "move", "at": 136.4, "to": { "target": "thValidAt", "offset": [0, 44] }, "note": "p39: 'Watch the Valid At column'" },
+    { "op": "move", "at": 141.4, "to": { "point": [1898, 660] }, "note": "p40 park; + New Bundle stays untouched (red bracket)" },
+    { "op": "log-rects", "at": 145.5, "key": "sideNow", "targets": ["sidePrepaid", "sideVehicles", "sideRetail", "sideBundles", "sideFundraiser"] },
+    { "op": "move", "at": 145.8, "to": { "target": "sideBundles", "offset": [0, 0] }, "note": "step 9: p41 'One more entry... sits right below Bundles' — start at Bundles" },
+    { "op": "move", "at": 146.9, "to": { "target": "sideFundraiser", "offset": [0, 0] }, "note": "step 9: hover the Fundraiser stub — POINT ONLY, NEVER CLICKED (href '#', parked per PARKED-ITEMS.md #3)" },
+    { "op": "move", "at": 150.3, "to": { "point": [1740, 950] }, "note": "retreat to the bottom-right margin while p43-p45 explain the parked stub; the red do-not-click ring holds on Fundraiser" },
+    { "op": "move", "at": 163.45, "to": { "target": "sidePrepaid", "offset": [0, 0] }, "note": "step 10 recap sweep in spoken order: p47 Prepaid Books" },
+    { "op": "move", "at": 166.5, "to": { "target": "sideVehicles", "offset": [0, 0] }, "note": "p48 Vehicles" },
+    { "op": "move", "at": 168.45, "to": { "target": "sideRetail", "offset": [0, 0] }, "note": "p49 Retail Customers" },
+    { "op": "move", "at": 170.9, "to": { "target": "sideBundles", "offset": [0, 0] }, "note": "p50 Bundles" },
+    { "op": "move", "at": 173.6, "to": { "point": [1500, 940] }, "note": "final park, clear of content and captions" },
+    { "op": "assert", "at": 178.5, "predicate": "onBundles" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "sideNav.sidePrepaid", "place": "right", "from": 5.6, "to": 14.6, "note": "step 1: brackets the four lesson lists, Prepaid Books through Bundles" },
+      { "n": 2, "anchor": "pbTop.metricsBand", "place": "below-left", "from": 19.2, "to": 27.8, "note": "step 2: the four KPI labels" },
+      { "n": 3, "anchor": "pbCols.thRemaining", "place": "below-left", "from": 40.3, "to": 47.0, "note": "step 3: Remaining + Expiration" },
+      { "n": 4, "anchor": "vhTop.flaggedTile", "place": "below-left", "from": 61.8, "to": 67.2, "note": "step 4: 'plate disputes start here'" },
+      { "n": 5, "anchor": "vhCols.thPlateV", "place": "below-left", "from": 73.8, "to": 79.5, "note": "step 5: License Plate + Status" },
+      { "n": 6, "anchor": "rcHeadRect", "place": "right", "from": 90.8, "to": 96.4, "note": "step 6: leanest list — no tiles, no charts, no Filters button" },
+      { "n": 7, "anchor": "bdTop.revenueCard", "place": "left", "from": 120.0, "to": 126.4, "note": "step 7: the Revenue by Bundle ranking" },
+      { "n": 8, "anchor": "bdValidAtRect", "place": "below-left", "from": 136.5, "to": 144.4, "note": "step 8: All Locations vs named sites" },
+      { "n": 9, "anchor": "sideNow.sideFundraiser", "place": "right", "from": 146.2, "to": 159.8, "note": "step 9: stub — TBD — parked (PARKED-ITEMS.md #3)" },
+      { "n": 10, "anchor": "sideNow.sidePrepaid", "place": "right", "from": 163.5, "to": 172.9, "note": "step 10: the four lists tied to their tickets" }
+    ],
+    "highlights": [
+      { "anchor": "sideNav.sideCustomers", "from": 3.6, "to": 4.2, "note": "p02 'members'" },
+      { "anchor": "sideNav.sideGiftCards", "from": 4.2, "to": 4.8, "note": "p02 'gift cards'" },
+      { "anchor": "sideNav.sideHouse", "from": 4.8, "to": 5.4, "note": "p02 'house accounts'" },
+      { "anchor": "sideNav.sidePrepaid", "from": 5.6, "to": 9.0, "note": "p03 'the four we cover today' — bracket held on all four" },
+      { "anchor": "sideNav.sideVehicles", "from": 5.9, "to": 9.0 },
+      { "anchor": "sideNav.sideRetail", "from": 6.2, "to": 9.0 },
+      { "anchor": "sideNav.sideBundles", "from": 6.5, "to": 9.0 },
+      { "anchor": "sideNav.sideFundraiser", "from": 13.4, "to": 15.2, "note": "shot-list light marker: 'stub — step 9' (default color; the red ring belongs to step 9)" },
+      { "anchor": "pbTop.tile1", "from": 22.3, "to": 23.7, "note": "p08 'total'" },
+      { "anchor": "pbTop.tile2", "from": 23.7, "to": 25.1, "note": "'active'" },
+      { "anchor": "pbTop.tile3", "from": 25.1, "to": 26.5, "note": "'completed'" },
+      { "anchor": "pbTop.tile4", "from": 26.5, "to": 27.9, "note": "'how many expire soon'" },
+      { "anchor": "pbTop.card1", "from": 29.0, "to": 30.5, "note": "p10 panel sweep: New Books" },
+      { "anchor": "pbTop.card2", "from": 30.5, "to": 32.1, "note": "Package Type" },
+      { "anchor": "pbTop.card3", "from": 32.1, "to": 33.6, "note": "Book Status" },
+      { "anchor": "pbTheadRect", "from": 36.8, "to": 39.4, "note": "p12 'Six columns'" },
+      { "anchor": "pbCols.thRemaining", "from": 40.1, "to": 42.3, "note": "p13 'Remaining tells you washes left'" },
+      { "anchor": "pbCols.thExpiration", "from": 42.5, "to": 44.2, "note": "p13 'Expiration tells you the deadline'" },
+      { "anchor": "pbAddRect", "from": 45.2, "to": 50.6, "color": "#dc2626", "note": "STOP: + Add Prepaid Book is never clicked (shot-list step 3 guardrail)" },
+      { "anchor": "vhTop.tile1", "from": 55.5, "to": 58.9, "note": "p17 'nearly four thousand cars' — 3,892 Total Vehicles" },
+      { "anchor": "vhTop.tile1", "from": 59.7, "to": 60.6, "note": "p18 'total vehicles'" },
+      { "anchor": "vhTop.tile2", "from": 60.6, "to": 61.6, "note": "'active members'" },
+      { "anchor": "vhTop.tile3", "from": 61.6, "to": 62.6, "note": "'flagged'" },
+      { "anchor": "vhTop.tile4", "from": 62.6, "to": 63.5, "note": "'new this month'" },
+      { "anchor": "vhTop.flaggedTile", "from": 64.1, "to": 67.3, "note": "p19 'Flagged is your first stop'" },
+      { "anchor": "vhTheadRect", "from": 70.3, "to": 73.4, "note": "p21 'Seven columns' (ten live — see RESIDUALS)" },
+      { "anchor": "vhCols.thPlateV", "from": 73.7, "to": 75.4, "note": "p22 'License Plate'" },
+      { "anchor": "vhCols.thStatusV", "from": 75.5, "to": 77.1, "note": "p22 'Status'" },
+      { "anchor": "vhAddRect", "from": 84.0, "to": 86.9, "color": "#dc2626", "note": "STOP: + Add Vehicle is never clicked (shot-list step 5 guardrail)" },
+      { "anchor": "rcSearchRect", "from": 92.5, "to": 94.6, "note": "p27 'just a search box'" },
+      { "anchor": "rcTheadRect", "from": 94.7, "to": 96.5, "note": "p27 '...and five columns'" },
+      { "anchor": "rcCols.rcThCustomer", "from": 96.95, "to": 97.75, "note": "p28 'customer'" },
+      { "anchor": "rcCols.rcThPlate", "from": 97.75, "to": 98.55, "note": "'plate'" },
+      { "anchor": "rcCols.rcThHome", "from": 98.55, "to": 99.3, "note": "'home location'" },
+      { "anchor": "rcCols.rcThEmail", "from": 99.3, "to": 100.0, "note": "'email'" },
+      { "anchor": "rcCols.rcThPhone", "from": 100.0, "to": 100.5, "note": "'phone'" },
+      { "anchor": "rcAddRect", "from": 104.6, "to": 108.2, "color": "#dc2626", "note": "STOP: + Add Customer is never clicked (shot-list step 6 guardrail)" },
+      { "anchor": "bdTop.tile1", "from": 113.5, "to": 114.9, "note": "p33 'thirty-two bundles'" },
+      { "anchor": "bdTop.tile2", "from": 114.9, "to": 116.3, "note": "'twenty-eight active'" },
+      { "anchor": "bdTop.tile3", "from": 116.3, "to": 117.7, "note": "'this month's sales'" },
+      { "anchor": "bdTop.tile4", "from": 117.7, "to": 119.0, "note": "'...and revenue'" },
+      { "anchor": "bdTop.revenueCard", "from": 119.8, "to": 126.4, "note": "p34-p35: the ranked bars, Monthly Value Pack carrying the month" },
+      { "anchor": "bdTheadRect", "from": 128.3, "to": 129.8, "note": "p37 'Seven columns'" },
+      { "anchor": "bdRows.bRow1", "from": 130.0, "to": 131.2, "note": "p38 Summer Special" },
+      { "anchor": "bdRows.bRow2", "from": 131.2, "to": 132.4, "note": "Fleet Pack" },
+      { "anchor": "bdRows.bRow3", "from": 132.4, "to": 133.6, "note": "Monthly Value Pack" },
+      { "anchor": "bdRows.bRow4", "from": 133.6, "to": 134.8, "note": "Quick Shine" },
+      { "anchor": "bdRows.bRow5", "from": 134.8, "to": 135.6, "note": "Spring Promo" },
+      { "anchor": "bdValidAtRect", "from": 136.3, "to": 140.6, "note": "p39 'Watch the Valid At column'" },
+      { "anchor": "bdAddRect", "from": 141.3, "to": 144.7, "color": "#dc2626", "note": "STOP: + New Bundle is never clicked (shot-list step 8 guardrail)" },
+      { "anchor": "sideNow.sideBundles", "from": 145.8, "to": 147.4, "note": "p41 '...sits right below Bundles'" },
+      { "anchor": "sideNow.sideFundraiser", "from": 146.4, "to": 147.7, "note": "p41 locate the Fundraiser entry" },
+      { "anchor": "sideNow.sideFundraiser", "from": 147.9, "to": 160.0, "color": "#dc2626", "note": "p42-p45 'Do not click it.' — red do-not-click ring held to the end of the block (shot-list step 9)" },
+      { "anchor": "sideNow.sidePrepaid", "from": 163.4, "to": 166.1, "note": "p47 recap: Prepaid Books" },
+      { "anchor": "sideNow.sideVehicles", "from": 166.5, "to": 168.2, "note": "p48 Vehicles" },
+      { "anchor": "sideNow.sideRetail", "from": 168.4, "to": 170.5, "note": "p49 Retail Customers" },
+      { "anchor": "sideNow.sideBundles", "from": 170.9, "to": 173.0, "note": "p50 Bundles" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 2.7, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 3.7, "z": 1.22, "cx": 790, "cy": 450, "ease": true, "note": "step 1: sidebar tour framing — the whole CRM group readable with content context" },
+      { "t": 15.0, "z": 1.22, "cx": 790, "cy": 450 },
+      { "t": 16.1, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Prepaid Books page swap" },
+      { "t": 19.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 19.9, "z": 1.17, "cx": 1088, "cy": 465, "ease": true, "note": "step 2: KPI band + three panels, full width" },
+      { "t": 33.6, "z": 1.17, "cx": 1088, "cy": 465 },
+      { "t": 34.7, "z": 1.2, "cx": 1088, "cy": 505, "ease": true, "note": "step 3: list header framing — all six columns legible (130% would crop the row; see RESIDUALS)" },
+      { "t": 51.3, "z": 1.2, "cx": 1088, "cy": 505 },
+      { "t": 52.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Vehicles page swap" },
+      { "t": 54.9, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 55.8, "z": 1.17, "cx": 1088, "cy": 465, "ease": true, "note": "step 4: Vehicles tiles + panels" },
+      { "t": 67.5, "z": 1.17, "cx": 1088, "cy": 465 },
+      { "t": 68.3, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the genuine scroll" },
+      { "t": 70.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 70.8, "z": 1.2, "cx": 1088, "cy": 470, "ease": true, "note": "step 5: header row after the scroll, License Plate through Last Visit" },
+      { "t": 77.5, "z": 1.2, "cx": 1088, "cy": 470 },
+      { "t": 78.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the 'tiles above' beat — the whole page proves the point" },
+      { "t": 96.6, "z": 1, "cx": 960, "cy": 540, "note": "held wide through the Retail swap and 'bare on purpose'" },
+      { "t": 97.4, "z": 1.2, "cx": 1088, "cy": 450, "ease": true, "note": "step 6: the five-column header row" },
+      { "t": 100.9, "z": 1.2, "cx": 1088, "cy": 450 },
+      { "t": 101.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for p29-p30 and the Bundles swap" },
+      { "t": 111.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 111.9, "z": 1.17, "cx": 1088, "cy": 465, "ease": true, "note": "step 7: Bundles tiles + Revenue by Bundle panel" },
+      { "t": 126.5, "z": 1.17, "cx": 1088, "cy": 465 },
+      { "t": 127.6, "z": 1.18, "cx": 1090, "cy": 600, "ease": true, "note": "step 8: the Bundle List — header plus all five rows" },
+      { "t": 135.9, "z": 1.18, "cx": 1090, "cy": 600 },
+      { "t": 136.7, "z": 1.3, "cx": 1181, "cy": 620, "ease": true, "note": "punch in on the Valid At column over the five rows" },
+      { "t": 144.6, "z": 1.3, "cx": 1181, "cy": 620 },
+      { "t": 145.7, "z": 1.25, "cx": 775, "cy": 460, "ease": true, "note": "step 9: sidebar framing — Bundles and the Fundraiser stub" },
+      { "t": 160.0, "z": 1.25, "cx": 775, "cy": 460 },
+      { "t": 161.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the step 10 recap and completion" },
+      { "t": 179.644, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Books, Vehicles, Retail & Bundles — Complete",
+      "from": 177.8,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 177.5
+  },
+  "output": "WC-02-06-books-vehicles-retail-bundles-v1.1",
+  "orderedMentions": [
+    "CRM",
+    "Prepaid Books",
+    "Remaining",
+    "Expiration",
+    "Vehicles",
+    "License Plate",
+    "Status",
+    "Retail Customers",
+    "Bundles",
+    "Revenue by Bundle",
+    "Monthly Value Pack",
+    "Summer Special",
+    "Fleet Pack",
+    "Valid At",
+    "Fundraiser"
+  ],
+  "neverClick": [
+    "add prepaid book",
+    "add vehicle",
+    "add customer",
+    "new bundle",
+    "fundraiser",
+    "filters",
+    "apply filters",
+    "table rows / row-link",
+    "pagination page buttons",
+    "rows-per-page selector",
+    "delete",
+    "ask shyne",
+    "send",
+    "logout",
+    "log out now"
+  ]
+}

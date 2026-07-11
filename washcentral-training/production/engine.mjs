@@ -204,7 +204,8 @@ class Engine {
         let to;
         if (op.to.point) to = op.to.point;
         else {
-          const tgt = await this.resolve(op.to.target);
+          // moves point at things; a natively-disabled control (pager on page 1) is fine to point at
+          const tgt = await this.resolve(op.to.target, { allowDisabled: true });
           to = op.to.outside
             ? [tgt.rect.x + (op.to.offset?.[0] || 0), tgt.rect.y + (op.to.offset?.[1] || 0)]
             : [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];

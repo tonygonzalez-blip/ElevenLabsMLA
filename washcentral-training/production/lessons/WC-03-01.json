@@ -1,0 +1,414 @@
+{
+  "lesson": "WC-03-01",
+  "title": "Tickets List (Sales / Transactions)",
+  "audioMaster": "training/module03-sales/WC-03-01-full-narration-v1.0.mp3",
+  "audioDurationS": 176.431,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/sales-transactions.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railSales": {
+      "js": "[...document.querySelectorAll('button[title]')].find(e=>e.getAttribute('title')==='Sales'&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().left<60)"
+    },
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "titleTickets": {
+      "js": "[...document.querySelectorAll('.breadcrumb-bar strong')].find(e=>(e.textContent||'').trim()==='Tickets'&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "kpiTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "kpiTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "kpiTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "volCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Volume/.test(c.textContent||''))"
+    },
+    "volFig": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Volume/.test(c.textContent||''));if(!c)return null;const leaf=[...c.querySelectorAll('*')].find(e=>e.children.length===0&&/^[0-9][0-9,]*$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0);return leaf?leaf.parentElement:null})()"
+    },
+    "volSvg": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Volume/.test(c.textContent||''));return c?c.querySelector('svg'):null})()"
+    },
+    "statusCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/By Status/.test(c.textContent||''))"
+    },
+    "rowPaidWashed": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/By Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].find(e=>{const r=e.getBoundingClientRect();return r.height>15&&r.height<28&&r.width>400&&/^Paid\\/Washed/.test((e.textContent||'').trim())})})()"
+    },
+    "rowPaidNotWashed": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/By Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].find(e=>{const r=e.getBoundingClientRect();return r.height>15&&r.height<28&&r.width>400&&/^Paid\\/NotWashed/.test((e.textContent||'').trim())})})()"
+    },
+    "rowVoided": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/By Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].find(e=>{const r=e.getBoundingClientRect();return r.height>15&&r.height<28&&r.width>400&&/^Voided/.test((e.textContent||'').trim())})})()"
+    },
+    "rowOther": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/By Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].find(e=>{const r=e.getBoundingClientRect();return r.height>15&&r.height<28&&r.width>400&&/^Other/.test((e.textContent||'').trim())})})()"
+    },
+    "healthCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Health/.test(c.textContent||''))"
+    },
+    "tilePaid": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Health/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].filter(e=>{const r=e.getBoundingClientRect();return r.width>100&&r.width<220&&r.height>38&&r.height<75})[0]})()"
+    },
+    "tileNotWashed": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Health/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].filter(e=>{const r=e.getBoundingClientRect();return r.width>100&&r.width<220&&r.height>38&&r.height<75})[1]})()"
+    },
+    "tileVoided": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Health/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].filter(e=>{const r=e.getBoundingClientRect();return r.width>100&&r.width<220&&r.height>38&&r.height<75})[2]})()"
+    },
+    "searchInput": {
+      "selector": "#tickets-search"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "searchBtn": {
+      "selector": "#search-btn"
+    },
+    "headerSearchBtn": {
+      "selector": ".wc-cmd-trigger-btn"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('.text-heading-sm')].find(e=>/^Ticket List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "listSubtitle": {
+      "selector": "#list-subtitle"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thTicket": {
+      "text": "Ticket #",
+      "scope": "table thead th"
+    },
+    "thDate": {
+      "text": "Date/Time",
+      "scope": "table thead th"
+    },
+    "thTotal": {
+      "text": "Total",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thTender": {
+      "text": "Tender Type",
+      "scope": "table thead th"
+    },
+    "thCustomer": {
+      "text": "Customer",
+      "scope": "table thead th"
+    },
+    "selectAll": {
+      "selector": "table thead input.bulk-select-all"
+    },
+    "firstRow": {
+      "js": "document.querySelector('table tbody tr')"
+    },
+    "ticketLink": {
+      "js": "document.querySelector('table tbody tr a')"
+    },
+    "custCell": {
+      "js": "(()=>{const tr=document.querySelector('table tbody tr');if(!tr)return null;const tds=tr.querySelectorAll('td');return tds.length?tds[tds.length-1]:null})()"
+    },
+    "pgBar": {
+      "selector": ".pagination-bar"
+    },
+    "perPageBtn": {
+      "selector": "button.pg-per-page-btn"
+    },
+    "lastPageBtn": {
+      "js": "(()=>{const b=[...document.querySelectorAll('.pg-nums button.page-btn')];return b.length?b[b.length-1]:null})()"
+    },
+    "pgInfo": {
+      "js": "[...document.querySelectorAll('.pagination-bar *')].find(e=>e.children.length===0&&/ of /.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "sideTickets": {
+      "selector": "aside.sidebar a[href=\"sales-transactions.html\"]"
+    },
+    "sideTicketDetails": {
+      "selector": "aside.sidebar a[href=\"sales-transaction-details.html\"]"
+    },
+    "sidePayments": {
+      "selector": "aside.sidebar a[href=\"sales-payments.html\"]"
+    },
+    "sideRefundApprovals": {
+      "selector": "aside.sidebar a[href=\"refund-workflow.html\"]"
+    },
+    "sidePayouts": {
+      "selector": "aside.sidebar a[href=\"txn-payouts.html\"]"
+    },
+    "sideShifts": {
+      "selector": "aside.sidebar a[href=\"txn-shifts.html\"]"
+    },
+    "sideDeclined": {
+      "selector": "aside.sidebar a[href=\"txn-declined.html\"]"
+    },
+    "sideGift": {
+      "selector": "aside.sidebar a[href=\"txn-gift-transactions.html\"]"
+    },
+    "sideHouse": {
+      "selector": "aside.sidebar a[href=\"txn-house-transactions.html\"]"
+    }
+  },
+  "predicates": {
+    "onTickets": "location.pathname.endsWith('/sales-transactions.html')",
+    "pageReady": "document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "startReady": "document.readyState==='complete'&&!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')&&document.querySelectorAll('aside.sidebar a').length===9&&document.querySelectorAll('.a-metric').length>=4&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "atFooter": "window.scrollY >= document.scrollingElement.scrollHeight - window.innerHeight - 60",
+    "atTop": "window.scrollY <= 8"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the Sales sidebar expanded (persisted pref washcentral-sidebar-collapsed-v5; the panel toggle is the same control both ways); skipped when already expanded. The nine-page sidebar must be on screen the whole lesson (step 11)."
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onTickets", "note": "start page identity before capture" },
+    { "op": "assert", "at": -0.9, "predicate": "startReady", "note": "loaded, sidebar expanded with all nine Sales pages, scrolled to top, no skeletons" },
+    { "op": "pointer-enter", "at": 0.45, "from": [2, 880], "to": { "target": "railSales", "offset": [46, 220] }, "note": "enter from the left edge, settle below the sidebar items beside the rail" },
+    { "op": "log-rect", "at": 1.2, "key": "railRect", "target": "railSales" },
+    { "op": "log-rect", "at": 1.7, "key": "breadcrumbRect", "target": "breadcrumb", "requireStableMs": 260 },
+    { "op": "log-rect", "at": 2.1, "key": "titleRect", "target": "titleTickets" },
+    { "op": "move", "at": 3.1, "to": { "target": "railSales", "offset": [0, 0] }, "note": "step 1: 'On the rail the module says Sales' (p02) — point at the Sales rail button, hover only" },
+    { "op": "move", "at": 5.95, "to": { "target": "breadcrumb", "offset": [70, 30], "outside": true }, "note": "step 1: 'The page header says Transactions' (p03) — under the Transactions crumb; header framing belongs to the camera" },
+    { "op": "move", "at": 8.6, "to": { "point": [1898, 300] }, "note": "park in the right margin for p04" },
+    { "op": "move", "at": 12.3, "to": { "target": "kpiTile1", "offset": [0, 20] }, "note": "step 2: 'Now the numbers up top' (p05) — cursor to the Total Tickets tile" },
+    { "op": "log-rects", "at": 12.7, "key": "kpiTiles", "targets": ["kpiTile1", "kpiTile2", "kpiTile3", "kpiTile4"] },
+    { "op": "log-rect", "at": 13.05, "key": "kpiStripRect", "target": "kpiStrip" },
+    { "op": "move", "at": 19.2, "to": { "target": "kpiTile2", "offset": [0, 20] }, "note": "step 2: sweep the three 30-day tiles during p07 (live values, not dashes — see RESIDUAL R1)" },
+    { "op": "move", "at": 20.5, "to": { "target": "kpiTile3", "offset": [0, 20] } },
+    { "op": "move", "at": 21.8, "to": { "target": "kpiTile4", "offset": [0, 20] } },
+    { "op": "move", "at": 23.9, "to": { "point": [1898, 300] }, "note": "park for p08" },
+    { "op": "move", "at": 26.95, "to": { "target": "volCard", "offset": [0, 60] }, "note": "step 3: 'First card, Ticket Volume' (p09)" },
+    { "op": "log-rect", "at": 27.35, "key": "volCardRect", "target": "volCard" },
+    { "op": "log-rect", "at": 27.7, "key": "volFigRect", "target": "volFig" },
+    { "op": "move", "at": 28.1, "to": { "target": "volSvg", "offset": [-215, 12] }, "note": "step 3: trace the 12-month trend line left to right (p10)" },
+    { "op": "move", "at": 29.4, "to": { "target": "volSvg", "offset": [215, -8] } },
+    { "op": "move", "at": 31.8, "to": { "point": [700, 352] }, "note": "park in the gap below the cards for p11" },
+    { "op": "move", "at": 37.95, "to": { "target": "statusCard", "offset": [0, -55] }, "note": "step 4: 'Middle card, By Status' (p12)" },
+    { "op": "log-rect", "at": 38.3, "key": "statusCardRect", "target": "statusCard" },
+    { "op": "log-rects", "at": 38.65, "key": "statusRows", "targets": ["rowPaidWashed", "rowPaidNotWashed", "rowVoided", "rowOther"] },
+    { "op": "move", "at": 40.35, "to": { "target": "rowPaidWashed", "offset": [-180, 0] }, "note": "step 4: vertical sweep down the status rows in spoken order (p14-p16)" },
+    { "op": "move", "at": 44.6, "to": { "target": "rowPaidNotWashed", "offset": [-180, 0] } },
+    { "op": "move", "at": 47.3, "to": { "target": "rowVoided", "offset": [-180, 0] } },
+    { "op": "move", "at": 49.3, "to": { "target": "rowOther", "offset": [-180, 0] } },
+    { "op": "move", "at": 50.8, "to": { "point": [1088, 352] }, "note": "park below the card for p17" },
+    { "op": "move", "at": 52.6, "to": { "target": "healthCard", "offset": [0, -55] }, "note": "step 5: 'Right card, Ticket Health' (p18)" },
+    { "op": "log-rect", "at": 52.95, "key": "healthCardRect", "target": "healthCard" },
+    { "op": "log-rects", "at": 53.3, "key": "healthTiles", "targets": ["tilePaid", "tileNotWashed", "tileVoided"] },
+    { "op": "move", "at": 55.25, "to": { "target": "tilePaid", "offset": [0, 40] }, "note": "step 5: the three percentages in spoken order (p19)" },
+    { "op": "move", "at": 56.95, "to": { "target": "tileNotWashed", "offset": [0, 40] } },
+    { "op": "move", "at": 58.65, "to": { "target": "tileVoided", "offset": [0, 40] } },
+    { "op": "move", "at": 61.2, "to": { "point": [1898, 440] }, "note": "park for p20" },
+    { "op": "move", "at": 64.45, "to": { "target": "searchInput", "offset": [0, -36] }, "note": "step 6: 'Drop to the Search Tickets card' (p21) — settle above the box; never typed in" },
+    { "op": "log-rect", "at": 64.85, "key": "searchInputRect", "target": "searchInput" },
+    { "op": "log-rect", "at": 65.1, "key": "filtersBtnRect", "target": "filtersBtn" },
+    { "op": "log-rect", "at": 65.35, "key": "searchBtnRect", "target": "searchBtn" },
+    { "op": "log-rect", "at": 65.6, "key": "headerSearchRect", "target": "headerSearchBtn" },
+    { "op": "move", "at": 69.95, "to": { "target": "filtersBtn", "offset": [0, -42] }, "note": "step 6: '...or narrow it with Filters' (p23) — locate only; the panel stays closed (parked #19)" },
+    { "op": "move", "at": 71.7, "to": { "target": "searchBtn", "offset": [0, -44] }, "note": "step 6: 'this button queries tickets' (p24) — near the teal Search, never pressed" },
+    { "op": "move", "at": 75.85, "to": { "target": "headerSearchBtn", "offset": [0, 38] }, "note": "step 6: 'the Search up in the header jumps between pages' (p25)" },
+    { "op": "move", "at": 81.9, "to": { "target": "listTitle", "offset": [0, 30] }, "note": "step 7: 'Under that, the ticket list itself' (p26)" },
+    { "op": "log-rect", "at": 82.25, "key": "listTitleRect", "target": "listTitle" },
+    { "op": "log-rect", "at": 82.55, "key": "listSubtitleRect", "target": "listSubtitle" },
+    { "op": "log-rect", "at": 82.85, "key": "exportRect", "target": "exportBtn" },
+    { "op": "move", "at": 84.55, "to": { "target": "listSubtitle", "offset": [0, 26] }, "note": "step 7: the card's own count line (live: 'Last 30 days · 3,060,454 tickets' — see RESIDUAL R2)" },
+    { "op": "move", "at": 89.45, "to": { "target": "exportBtn", "offset": [-56, 48], "outside": true }, "note": "step 7: 'Top-right sits Export. Find it, and leave it.' — hover NEAR Export, never on it, never clicked (p28-p30 guardrail)" },
+    { "op": "move", "at": 97.75, "to": { "target": "thLocation", "offset": [0, -40] }, "note": "step 8: 'Now the columns' (p31) — settle above the header row" },
+    { "op": "log-rect", "at": 98.15, "key": "theadRect", "target": "theadRow", "requireStableMs": 240 },
+    { "op": "log-rects", "at": 98.55, "key": "columnHeads", "targets": ["thLocation", "thTicket", "thDate", "thTotal", "thStatus", "thTender", "thCustomer"] },
+    { "op": "log-rect", "at": 98.85, "key": "selectAllRect", "target": "selectAll" },
+    { "op": "move", "at": 99.35, "to": { "target": "thLocation", "offset": [0, 0] }, "note": "step 8: sweep the seven headers left to right in spoken order (p32-p34)" },
+    { "op": "move", "at": 100.5, "to": { "target": "thTicket", "offset": [0, 0] } },
+    { "op": "move", "at": 101.15, "to": { "target": "thDate", "offset": [0, 0] } },
+    { "op": "move", "at": 101.8, "to": { "target": "thTotal", "offset": [0, 0] } },
+    { "op": "move", "at": 103.3, "to": { "target": "thStatus", "offset": [0, 0] } },
+    { "op": "move", "at": 103.75, "to": { "target": "thTender", "offset": [0, 0] } },
+    { "op": "move", "at": 104.2, "to": { "target": "thCustomer", "offset": [0, 0] } },
+    { "op": "move", "at": 105.6, "to": { "target": "selectAll", "offset": [34, 0] }, "note": "step 8: '...every row has a checkbox' (p35) — beside the select-all box; boxes stay empty" },
+    { "op": "move", "at": 109.5, "to": { "point": [1898, 650] }, "note": "park through the s08 tail" },
+    { "op": "move", "at": 116.35, "to": { "target": "firstRow", "offset": [-700, 0] }, "note": "step 9: 'Take one row' (p36) — start at the row's Location cell; rows are links and are never clicked" },
+    { "op": "log-rect", "at": 116.7, "key": "firstRowRect", "target": "firstRow" },
+    { "op": "log-rect", "at": 117.0, "key": "ticketLinkRect", "target": "ticketLink" },
+    { "op": "log-rect", "at": 117.25, "key": "custCellRect", "target": "custCell" },
+    { "op": "move", "at": 118.0, "to": { "target": "ticketLink", "offset": [58, 0] }, "note": "step 9: 'The ticket number is a link' (p37) — beside the TICKET # link; opening it is WC-03-02, never clicked here" },
+    { "op": "move", "at": 125.05, "to": { "target": "custCell", "offset": [0, 0] }, "note": "step 9: 'where Customer shows a dash' (p39)" },
+    { "op": "move", "at": 128.1, "to": { "point": [1898, 700] } },
+    { "op": "key", "pressAt": 130.05, "keys": ["ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown", "ArrowDown"], "gapMs": 55, "keyLabel": "Scroll to the pager", "postcondition": "atFooter", "timeoutMs": 4000, "note": "step 10: 'Glance at the pager' (p40) — genuine keyboard scroll to the footer inside the cue break (probe-verified: 16x ArrowDown reaches atFooter)" },
+    { "op": "watch", "key": "footerHold", "from": 131.6, "to": 144.4, "predicate": "atFooter", "everyMs": 500, "mustHold": true },
+    { "op": "log-rect", "at": 131.75, "key": "pgBarRect", "target": "pgBar", "requireStableMs": 260 },
+    { "op": "log-rect", "at": 132.05, "key": "perPageRect", "target": "perPageBtn" },
+    { "op": "log-rect", "at": 132.3, "key": "lastPageRect", "target": "lastPageBtn" },
+    { "op": "log-rect", "at": 132.55, "key": "pgInfoRect", "target": "pgInfo" },
+    { "op": "move", "at": 132.7, "to": { "target": "perPageBtn", "offset": [0, -46] }, "note": "step 10: 'Twenty-five to a page' (p41) — above the rows-per-page selector, never opened" },
+    { "op": "move", "at": 134.55, "to": { "target": "lastPageBtn", "offset": [-36, -50] }, "note": "step 10: the last-page button (live 122,419 — see RESIDUAL R3); hover clear of it, never clicked" },
+    { "op": "move", "at": 138.7, "to": { "point": [1898, 900] }, "note": "park for p42-p43" },
+    { "op": "key", "pressAt": 144.95, "keys": ["ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp", "ArrowUp"], "gapMs": 55, "keyLabel": "Back to the top", "postcondition": "atTop", "timeoutMs": 4000, "note": "step 11: 'Last, the sidebar' (p44) — genuine scroll back so the header and full page frame the sidebar walk" },
+    { "op": "watch", "key": "topHold", "from": 146.4, "to": 175.6, "predicate": "atTop", "everyMs": 600, "mustHold": true },
+    { "op": "log-rects", "at": 146.2, "key": "sideItems", "targets": ["sideTickets", "sideTicketDetails", "sidePayments", "sideRefundApprovals", "sidePayouts", "sideShifts", "sideDeclined", "sideGift", "sideHouse"] },
+    { "op": "move", "at": 146.55, "to": { "target": "sideTickets", "offset": [215, 10], "outside": true }, "note": "step 11: 'Nine pages live under Sales, and Tickets is only the first' (p45) — beside the item, no sibling is followed" },
+    { "op": "move", "at": 150.85, "to": { "target": "sideRefundApprovals", "offset": [215, 10], "outside": true }, "note": "step 11: 'Refund Approvals among them' (p46) — the July 11 sidebar addition, named only" },
+    { "op": "move", "at": 154.55, "to": { "target": "sideHouse", "offset": [215, 16], "outside": true }, "note": "step 11: sweep to the bottom of the nine during p47" },
+    { "op": "move", "at": 158.2, "to": { "point": [1898, 760] }, "note": "park clear for p48 (Adjustments/Inventory are spoken context, not on screen)" },
+    { "op": "move", "at": 163.1, "to": { "point": [1560, 930] }, "note": "step 12: final park, clear of content and captions, while the recap plays wide" },
+    { "op": "assert", "at": 172.5, "predicate": "atTop" },
+    { "op": "assert", "at": 175.2, "predicate": "onTickets" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "breadcrumbRect", "place": "below-left", "from": 2.3, "to": 8.3 },
+      { "n": 2, "anchor": "kpiStripRect", "place": "below-left", "from": 13.2, "to": 18.4 },
+      { "n": 3, "anchor": "volCardRect", "place": "below-left", "from": 27.5, "to": 33.0 },
+      { "n": 4, "anchor": "statusCardRect", "place": "left", "from": 38.4, "to": 44.0 },
+      { "n": 5, "anchor": "healthCardRect", "place": "left", "from": 53.1, "to": 58.0 },
+      { "n": 6, "anchor": "searchInputRect", "place": "left-top", "from": 65.0, "to": 69.6 },
+      { "n": 7, "anchor": "listTitleRect", "place": "below-left", "from": 82.4, "to": 88.3 },
+      { "n": 8, "anchor": "theadRect", "place": "left-top", "from": 98.3, "to": 103.4 },
+      { "n": 9, "anchor": "firstRowRect", "place": "below-left", "from": 116.8, "to": 121.5 },
+      { "n": 10, "anchor": "lastPageRect", "place": "left-top", "from": 132.4, "to": 139.5 },
+      { "n": 11, "anchor": "sideItems.sideTickets", "place": "right", "from": 146.7, "to": 153.4 },
+      { "n": 12, "anchor": "kpiStripRect", "place": "below-left", "from": 163.5, "to": 170.5 }
+    ],
+    "highlights": [
+      { "anchor": "railRect", "from": 3.1, "to": 5.35, "note": "p02: the rail module says Sales" },
+      { "anchor": "breadcrumbRect", "from": 5.95, "to": 7.9, "note": "p03: the page header says Transactions" },
+      { "anchor": "kpiTiles.kpiTile1", "from": 14.0, "to": 18.55, "note": "p06: the migrated-ticket headline count" },
+      { "anchor": "kpiTiles.kpiTile2", "from": 19.15, "to": 20.5, "note": "p07: the three 30-day tiles in order (live values, RESIDUAL R1)" },
+      { "anchor": "kpiTiles.kpiTile3", "from": 20.5, "to": 21.8 },
+      { "anchor": "kpiTiles.kpiTile4", "from": 21.8, "to": 23.1 },
+      { "anchor": "volFigRect", "from": 28.0, "to": 31.2, "note": "p10: the trend figure and direction" },
+      { "anchor": "statusRows.rowPaidWashed", "from": 40.35, "to": 44.25, "note": "p14" },
+      { "anchor": "statusRows.rowPaidNotWashed", "from": 44.55, "to": 46.9, "note": "p15" },
+      { "anchor": "statusRows.rowVoided", "from": 47.25, "to": 50.1, "note": "p16" },
+      { "anchor": "healthTiles.tilePaid", "from": 55.2, "to": 56.85, "note": "p19: paid" },
+      { "anchor": "healthTiles.tileNotWashed", "from": 56.9, "to": 58.55, "note": "p19: not washed" },
+      { "anchor": "healthTiles.tileVoided", "from": 58.6, "to": 60.25, "note": "p19: voided" },
+      { "anchor": "searchInputRect", "from": 66.4, "to": 69.6, "note": "p22: the search box over 126M tickets" },
+      { "anchor": "filtersBtnRect", "from": 69.95, "to": 71.3, "note": "p23: Filters, located only (parked #19)" },
+      { "anchor": "searchBtnRect", "from": 71.65, "to": 75.4, "note": "p24: this button queries tickets" },
+      { "anchor": "headerSearchRect", "from": 75.8, "to": 79.9, "note": "p25: the header Search jumps between pages" },
+      { "anchor": "listSubtitleRect", "from": 84.55, "to": 88.55, "note": "p27: the card's count line (RESIDUAL R2: live subtitle differs from the spoken 126M restatement)" },
+      { "anchor": "exportRect", "from": 89.4, "to": 97.0, "color": "#dc2626", "note": "p28-p30 guardrail: Export is located, never clicked" },
+      { "anchor": "theadRect", "from": 99.3, "to": 104.1, "note": "p32-p34: the seven headers" },
+      { "anchor": "selectAllRect", "from": 104.6, "to": 108.2, "note": "p35: the checkbox column stays empty" },
+      { "anchor": "ticketLinkRect", "from": 118.0, "to": 119.4, "note": "p37: the ticket number is a link" },
+      { "anchor": "ticketLinkRect", "from": 119.8, "to": 124.6, "color": "#dc2626", "note": "p38 guardrail: opening the single ticket is WC-03-02 — never clicked here" },
+      { "anchor": "custCellRect", "from": 125.0, "to": 129.0, "note": "p39: the Customer dash" },
+      { "anchor": "perPageRect", "from": 132.7, "to": 134.3, "note": "p41: twenty-five to a page" },
+      { "anchor": "lastPageRect", "from": 134.55, "to": 137.05, "note": "p41: the last-page button (RESIDUAL R3: live 122,419)" },
+      { "anchor": "sideItems.sideTickets", "from": 146.55, "to": 150.2, "note": "p45: Tickets is only the first" },
+      { "anchor": "sideItems.sideRefundApprovals", "from": 150.85, "to": 153.95, "note": "p46: Refund Approvals among them" },
+      { "anchor": "kpiStripRect", "from": 164.6, "to": 168.85, "note": "p50: read health from the band" },
+      { "anchor": "exportRect", "from": 169.0, "to": 171.5, "color": "#dc2626", "note": "p51: '...and where Export sits' — red as a standing do-not-click reminder" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 2.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 3.3, "z": 1.3, "cx": 740, "cy": 415, "ease": true, "note": "header identity: rail Sales + TRANSACTIONS/Tickets breadcrumb (step 1)" },
+      { "t": 11.3, "z": 1.3, "cx": 740, "cy": 415 },
+      { "t": 12.3, "z": 1.1, "cx": 1045, "cy": 491, "ease": true, "note": "whole KPI band readable (step 2)" },
+      { "t": 18.5, "z": 1.1, "cx": 1045, "cy": 491 },
+      { "t": 19.4, "z": 1.5, "cx": 1280, "cy": 360, "ease": true, "note": "150% punch-in on the three 30-day tiles (shot list step 2)" },
+      { "t": 23.6, "z": 1.5, "cx": 1280, "cy": 360 },
+      { "t": 24.5, "z": 1.1, "cx": 1045, "cy": 491, "ease": true, "note": "settle back before the insight cards" },
+      { "t": 26.3, "z": 1.1, "cx": 1045, "cy": 491 },
+      { "t": 27.2, "z": 1.45, "cx": 710, "cy": 380, "ease": true, "note": "Ticket Volume card (step 3)" },
+      { "t": 37.2, "z": 1.45, "cx": 710, "cy": 380 },
+      { "t": 38.2, "z": 1.45, "cx": 1088, "cy": 380, "ease": true, "note": "By Status card (step 4)" },
+      { "t": 51.8, "z": 1.45, "cx": 1088, "cy": 380 },
+      { "t": 52.8, "z": 1.45, "cx": 1255, "cy": 380, "ease": true, "note": "Ticket Health card, 145% close on the three percentages (step 5)" },
+      { "t": 63.5, "z": 1.45, "cx": 1255, "cy": 380 },
+      { "t": 64.6, "z": 1.15, "cx": 1050, "cy": 470, "ease": true, "note": "search card WITH the global header in frame for the two-Search contrast (step 6)" },
+      { "t": 81.1, "z": 1.15, "cx": 1050, "cy": 470 },
+      { "t": 82.2, "z": 1.2, "cx": 1100, "cy": 530, "ease": true, "note": "list card: title, subtitle, Export, columns — held calm through steps 7-8" },
+      { "t": 115.4, "z": 1.2, "cx": 1100, "cy": 530 },
+      { "t": 116.4, "z": 1.25, "cx": 1150, "cy": 610, "ease": true, "note": "the example row (step 9)" },
+      { "t": 129.0, "z": 1.25, "cx": 1150, "cy": 610 },
+      { "t": 129.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the genuine scroll to the footer" },
+      { "t": 134.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 134.9, "z": 1.4, "cx": 1230, "cy": 694, "ease": true, "note": "150%-class punch-in on the page-count (step 10)" },
+      { "t": 140.3, "z": 1.4, "cx": 1230, "cy": 694 },
+      { "t": 141.3, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide before the scroll back" },
+      { "t": 145.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 146.4, "z": 1.4, "cx": 690, "cy": 390, "ease": true, "note": "sidebar walk: all nine Sales pages readable (step 11)" },
+      { "t": 161.5, "z": 1.4, "cx": 690, "cy": 390 },
+      { "t": 162.7, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide: band + cards + search + list + sidebar in one recap view (step 12)" },
+      { "t": 176.431, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "completion": {
+      "text": "Tickets List — Complete",
+      "from": 174.6,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 174.3
+  },
+  "output": "WC-03-01-tickets-list-v1.1",
+  "orderedMentions": [
+    "Sales",
+    "Transactions",
+    "Ticket Volume",
+    "By Status",
+    "Ticket Health",
+    "Search Tickets",
+    "Filters",
+    "Search",
+    "Export",
+    "Customer",
+    "Tickets",
+    "Refund Approvals",
+    "Export"
+  ],
+  "neverClick": [
+    "export",
+    "logout",
+    "ask shyne",
+    "send",
+    "ticket # row links (row-link)",
+    "row checkboxes / select-all",
+    "pagination page buttons",
+    "rows-per-page selector",
+    "apply filters",
+    "clear all",
+    "search (card query — unused this lesson)",
+    "search ⌘k",
+    "sidebar sibling pages (WC-03-03)"
+  ]
+}
