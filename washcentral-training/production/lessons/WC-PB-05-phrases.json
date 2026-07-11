@@ -1,0 +1,148 @@
+{
+  "lesson": "WC-PB-05",
+  "audioMaster": "training/playbooks/WC-PB-05-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; pronunciation spellings kept exactly as written in the script, e.g. 'B-T one-oh-three-ninety-three', dollar amounts spelled out). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) = 207.868s, which overshoots the ffprobe-probed master (207.491s) by 0.377s (> 0.3 tolerance) because the concatenated MP3 frames decode ~0.38s shorter than ffprobe's per-file duration sum. Onsets were therefore measured by normalized cross-correlation of each WC-PB-05-sNN.mp3 (first 1.5s template, 8 kHz mono PCM) against the joined master; all 11 blocks matched at score >= 0.9999, and the measured onsets equal cumulative Sigma(decoded audio + 0.4), confirming the master was joined with exact 0.4s gaps. Master ffprobe duration 207.491s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.8,
+      "phrases": [
+        { "id": "p01", "text": "Start on Payments Reconciliation." },
+        { "id": "p02", "text": "This is the settlement ledger, one row per batch." },
+        { "id": "p03", "text": "Expected is what the day should have banked." },
+        { "id": "p04", "text": "Settled is what the processor actually deposited." },
+        { "id": "p05", "text": "Variance is the gap between the two." },
+        { "id": "p06", "text": "Read those three columns and the whole page makes sense." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.8,
+      "endS": 40.48,
+      "phrases": [
+        { "id": "p07", "text": "Now the status column." },
+        { "id": "p08", "text": "Fort Lauderdale and Orlando Central settled exactly what they expected, so they read balanced." },
+        { "id": "p09", "text": "Miami North came up a hundred sixty dollars short:" },
+        { "id": "p10", "text": "expected fourteen thousand, eight hundred eighty," },
+        { "id": "p11", "text": "settled fourteen thousand, seven hundred twenty." },
+        { "id": "p12", "text": "That nonzero gap flags it for review." },
+        { "id": "p13", "text": "The review row is the one you work." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 40.48,
+      "endS": 54.16,
+      "phrases": [
+        { "id": "p14", "text": "With more than a few batches, narrow the list." },
+        { "id": "p15", "text": "Search by batch, location, or status," },
+        { "id": "p16", "text": "or sort straight on the variance column to pull the gaps to the top." },
+        { "id": "p17", "text": "Nothing here touches a batch." },
+        { "id": "p18", "text": "You're only deciding which one to chase." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 54.16,
+      "endS": 69.68,
+      "phrases": [
+        { "id": "p19", "text": "Top-right of the panel, find Resolve batch." },
+        { "id": "p20", "text": "That's the control a supervisor uses to close out a review batch." },
+        { "id": "p21", "text": "You locate it and stop." },
+        { "id": "p22", "text": "Working it, and running any refund, happens in production with the right role." },
+        { "id": "p23", "text": "Never from this demo." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 69.68,
+      "endS": 91.68,
+      "phrases": [
+        { "id": "p24", "text": "Before you leave the ledger, decide what to chase." },
+        { "id": "p25", "text": "A settlement gap is usually one of two things at that site:" },
+        { "id": "p26", "text": "the drawer came up over or short, or cash was paid out and never banked." },
+        { "id": "p27", "text": "Carry the location to both checks." },
+        { "id": "p28", "text": "There's no date column here, so location is the join," },
+        { "id": "p29", "text": "and a shift number ties a payout back to its drawer." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 91.68,
+      "endS": 110.64,
+      "phrases": [
+        { "id": "p30", "text": "First the drawer. In Sales, open Shifts." },
+        { "id": "p31", "text": "Every drawer session lists out:" },
+        { "id": "p32", "text": "shift number, location, terminal," },
+        { "id": "p33", "text": "when it opened and closed, and the opening and closing drawer." },
+        { "id": "p34", "text": "Those last two are where an over or short shows up for the day." },
+        { "id": "p35", "text": "Filter to the batch's location and read them." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 110.64,
+      "endS": 124,
+      "phrases": [
+        { "id": "p36", "text": "One caution from today's capture." },
+        { "id": "p37", "text": "The list came back empty with a fetch error, and the total-shifts count was blank." },
+        { "id": "p38", "text": "Don't read that as no shifts." },
+        { "id": "p39", "text": "Confirm the data actually loaded before you tell anyone the drawer was clean." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 124,
+      "endS": 141.12,
+      "phrases": [
+        { "id": "p40", "text": "Now the cash side. Open Payouts." },
+        { "id": "p41", "text": "Each row shows the location, payout ID, shift number, cashier, terminal, vendor, and amount." },
+        { "id": "p42", "text": "A payout links to a drawer by its shift number," },
+        { "id": "p43", "text": "so cash pulled for a vendor explains part of a gap with nothing actually missing." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 141.12,
+      "endS": 160.24,
+      "phrases": [
+        { "id": "p44", "text": "Read the payout status card." },
+        { "id": "p45", "text": "It says approval and dispute status aren't tracked here;" },
+        { "id": "p46", "text": "payouts records completed disbursements only." },
+        { "id": "p47", "text": "So this page confirms what went out, not whether it was approved." },
+        { "id": "p48", "text": "And today it too returned the fetch error, so treat the rows as unconfirmed until they load." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 160.24,
+      "endS": 188.08,
+      "phrases": [
+        { "id": "p49", "text": "Now build the ticket." },
+        { "id": "p50", "text": "Name the batch, B-T one-oh-three-ninety-three, and the location, Miami North." },
+        { "id": "p51", "text": "Give the three numbers:" },
+        { "id": "p52", "text": "expected fourteen thousand, eight hundred eighty;" },
+        { "id": "p53", "text": "settled fourteen thousand, seven hundred twenty;" },
+        { "id": "p54", "text": "variance a hundred sixty." },
+        { "id": "p55", "text": "Mark it review, and say whether a drawer figure or a payout explains the gap." },
+        { "id": "p56", "text": "You never resolve the batch, and you never run a refund from demo." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 188.08,
+      "endS": 207.491,
+      "phrases": [
+        { "id": "p57", "text": "So that's the playbook." },
+        { "id": "p58", "text": "Read the ledger, find the review batch by its status and its variance," },
+        { "id": "p59", "text": "locate Resolve batch without touching it," },
+        { "id": "p60", "text": "then cross-check the location's shifts and payouts to explain the gap." },
+        { "id": "p61", "text": "Escalate with the batch and the amounts." },
+        { "id": "p62", "text": "You moved nothing." },
+        { "id": "p63", "text": "You found where the money went and passed it on." }
+      ]
+    }
+  ],
+  "output": "WC-PB-05-settlement-variance-v1.1"
+}

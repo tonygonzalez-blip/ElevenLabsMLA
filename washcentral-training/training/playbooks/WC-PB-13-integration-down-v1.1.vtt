@@ -1,0 +1,270 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.412
+Three complaints, one shape.
+
+p02
+00:00:01.412 --> 00:00:03.363
+Tickets stopped reaching Zoho.
+
+p03
+00:00:03.363 --> 00:00:05.626
+Single sign-on users locked out.
+
+p04
+00:00:05.626 --> 00:00:08.173
+An accounting export full of holes.
+
+p05
+00:00:08.173 --> 00:00:13.719
+Each one is a connector that quit authenticating, and each gets the same read:
+
+p06
+00:00:13.719 --> 00:00:17.178
+open the connector, check its status, check its token,
+
+p07
+00:00:17.178 --> 00:00:20.355
+then look at the surface the user actually feels.
+
+p08
+00:00:20.894 --> 00:00:21.897
+Open the connector. Settings, Integrations, Zoho Desk.
+
+p09
+00:00:22.727 --> 00:00:25.842
+One chip is the headline: Not Configured, with a warning triangle.
+
+p10
+00:00:26.455 --> 00:00:30.307
+In this demo tenant Zoho was never connected, so that reading is honest.
+
+p11
+00:00:30.731 --> 00:00:41.085
+On a live tenant that chip is your first and fastest read, before you touch anything else.
+
+p12
+00:00:41.715 --> 00:00:43.889
+Four tiles sit across the top of the card.
+
+p13
+00:00:44.656 --> 00:00:47.798
+Connection reads Not set, which matches the banner.
+
+p14
+00:00:48.235 --> 00:00:49.651
+Data center, US. Sync direction, both.
+
+p15
+00:00:50.019 --> 00:00:51.407
+When a working connection drops, this row is the quick read
+
+p16
+00:00:52.297 --> 00:00:57.440
+before you go digging through credentials.
+
+p17
+00:00:57.890 --> 00:00:59.251
+Top right, two buttons.
+
+p18
+00:00:59.680 --> 00:01:03.254
+Test Connection fires a live probe against the real integration.
+
+p19
+00:01:03.855 --> 00:01:06.180
+Edit Configuration opens the credential form.
+
+p20
+00:01:06.623 --> 00:01:08.836
+Both are admin actions on production.
+
+p21
+00:01:09.194 --> 00:01:11.647
+You locate them so your escalation can name them,
+
+p22
+00:01:12.011 --> 00:01:14.668
+and you never click either one from the demo tenant.
+
+p23
+00:01:15.120 --> 00:01:16.270
+Now the Settings tab, and the credentials block.
+
+p24
+00:01:16.481 --> 00:01:17.641
+Client ID, secret, tokens: all blank or not set here.
+
+p25
+00:01:18.323 --> 00:01:19.942
+The field that matters most is token expiry.
+
+p26
+00:01:20.190 --> 00:01:20.832
+A connector that worked yesterday and fails today usually has a lapsed token behind it.
+
+p27
+00:01:21.082 --> 00:01:22.753
+Expiry in the past, access token gone.
+
+p28
+00:01:22.978 --> 00:01:37.799
+The re-auth is an admin job, and none of these values ever goes into your ticket.
+
+p29
+00:01:38.329 --> 00:01:39.810
+Two more reads before you leave.
+
+p30
+00:01:40.396 --> 00:01:42.765
+Under General, Enabled says yes. Under Sync, the direction is both.
+
+p31
+00:01:43.500 --> 00:01:45.378
+So nobody switched it off. The failure is authentication.
+
+p32
+00:01:45.708 --> 00:01:54.286
+And the Instructions tab next door holds the reconnect procedure for the admin who runs it.
+
+p33
+00:01:54.720 --> 00:01:56.658
+Symptom one, the help desk surface.
+
+p34
+00:01:56.658 --> 00:01:59.455
+Open I-T and Support, then Help Desk Zoho.
+
+p35
+00:01:59.455 --> 00:02:02.312
+The page loads, and it tells the truth.
+
+p36
+00:02:02.312 --> 00:02:08.443
+Every ticket count reads as a dash, and the card in the middle says Zoho Desk not connected,
+
+p37
+00:02:08.443 --> 00:02:11.118
+with a button routing back to Settings.
+
+p38
+00:02:11.118 --> 00:02:14.995
+Dashes in a healthy frame point at the connector, not the page.
+
+p39
+00:02:14.995 --> 00:02:16.933
+That is your ticket surface evidence.
+
+p40
+00:02:17.360 --> 00:02:18.359
+Symptom two, single sign-on lockouts.
+
+p41
+00:02:18.585 --> 00:02:20.351
+Open System Users, under Users and Security.
+
+p42
+00:02:20.718 --> 00:02:24.153
+More than eight thousand accounts load here, and two columns carry this ticket.
+
+p43
+00:02:24.466 --> 00:02:28.475
+S-S-O flags who signs in through the provider, plain yes or no chips.
+
+p44
+00:02:28.779 --> 00:02:36.418
+Last login shows when each of them last got in.
+
+p45
+00:02:36.620 --> 00:02:39.889
+When the provider drops, the yes rows are your outage list.
+
+p46
+00:02:40.320 --> 00:02:42.922
+Symptom three, the accounting export.
+
+p47
+00:02:43.392 --> 00:02:47.749
+Back in Integrations, the accounting connector reads exactly like Zoho did:
+
+p48
+00:02:48.068 --> 00:02:50.707
+status chip, test button, token block.
+
+p49
+00:02:51.113 --> 00:02:53.843
+Same read, same rules, same hands off.
+
+p50
+00:02:54.456 --> 00:02:57.822
+And if the connection is fine but entries land under the wrong codes, that's GL Code mapping.
+
+p51
+00:02:58.193 --> 00:03:00.720
+Different lesson.
+
+p52
+00:03:01.120 --> 00:03:02.991
+One trap before you write anything up.
+
+p53
+00:03:03.472 --> 00:03:05.232
+Pages have bad minutes.
+
+p54
+00:03:05.651 --> 00:03:13.414
+A list that will not load, or a stray fetch error,
+
+p55
+00:03:13.643 --> 00:03:14.646
+can be the app's own data service hiccuping, and neither one proves an integration is down.
+
+p56
+00:03:14.862 --> 00:03:17.439
+Reload first. Then let the connector's status chip make the call.
+
+p57
+00:03:17.840 --> 00:03:19.196
+Now the escalation.
+
+p58
+00:03:19.551 --> 00:03:20.860
+Name the integration. Quote the status banner word for word.
+
+p59
+00:03:21.387 --> 00:03:23.415
+Say whether an admin ran Test Connection and what it returned.
+
+p60
+00:03:23.939 --> 00:03:27.458
+Give the failure window with timestamps.
+
+p61
+00:03:27.934 --> 00:03:35.497
+And keep every token, secret, and masked value out of it. No exceptions.
+
+p62
+00:03:35.920 --> 00:03:37.219
+That's the whole playbook.
+
+p63
+00:03:38.414 --> 00:03:39.953
+Scope to one connector. Read the chip, then the token expiry.
+
+p64
+00:03:40.221 --> 00:03:42.431
+Locate Test Connection and leave it alone.
+
+p65
+00:03:42.706 --> 00:03:45.068
+Confirm the surface the user feels, rule out a transient fetch error,
+
+p66
+00:03:45.272 --> 00:03:51.854
+and route a ticket an admin can act on.
+
+p67
+00:03:52.901 --> 00:03:55.920
+Every screen stayed read-only, start to finish.
+

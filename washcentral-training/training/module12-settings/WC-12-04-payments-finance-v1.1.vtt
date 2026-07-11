@@ -1,0 +1,250 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.644
+This is where the money rules live.
+
+p02
+00:00:02.378 --> 00:00:05.002
+Open Settings, then the Payments and Finance group.
+
+p03
+00:00:05.413 --> 00:00:07.083
+Nine pages, one list.
+
+p04
+00:00:07.423 --> 00:00:09.952
+Between them they decide how a payment is taken, how a price gets adjusted,
+
+p05
+00:00:10.198 --> 00:00:14.848
+how tax is set, and how a sale lands in accounting.
+
+p06
+00:00:15.241 --> 00:00:18.930
+Learn to spot them, because most billing questions end on one of these.
+
+p07
+00:00:19.360 --> 00:00:20.892
+Start at Payment Types.
+
+p08
+00:00:21.453 --> 00:00:22.979
+This is your tender list, the payment methods the register accepts.
+
+p09
+00:00:23.300 --> 00:00:25.234
+Three flags do the real work.
+
+p10
+00:00:25.707 --> 00:00:27.252
+Locked marks the system types you can't delete.
+
+p11
+00:00:27.588 --> 00:00:30.070
+Require Reference forces a number at the register.
+
+p12
+00:00:30.367 --> 00:00:36.702
+And Show as Bank Drop decides what counts toward the drawer drop.
+
+p13
+00:00:37.200 --> 00:00:38.512
+Now Discounts.
+
+p14
+00:00:39.170 --> 00:00:42.938
+The panels up top read the file at a glance:
+
+p15
+00:00:43.190 --> 00:00:45.700
+how many are active, how they split between dollars off and percent off.
+
+p16
+00:00:46.218 --> 00:00:50.192
+But the row that answers questions is Amount, next to Discount Type.
+
+p17
+00:00:50.617 --> 00:00:55.599
+That pair tells you fast whether a discount takes three dollars off or ten percent.
+
+p18
+00:00:56.000 --> 00:00:58.772
+Open one discount and it behaves like a service.
+
+p19
+00:00:59.199 --> 00:01:00.144
+A detail view, an Active Locations tab, the sites where it's live,
+
+p20
+00:01:00.358 --> 00:01:03.395
+and per-location overrides underneath.
+
+p21
+00:01:03.605 --> 00:01:06.171
+That's how one discount is three dollars off at one wash and two at another.
+
+p22
+00:01:06.406 --> 00:01:10.534
+We couldn't pull this exact screen from today's capture,
+
+p23
+00:01:11.140 --> 00:01:18.030
+so lean on the Services lesson as your reference until we grab it live.
+
+p24
+00:01:18.640 --> 00:01:19.951
+Look, don't save.
+
+p25
+00:01:20.800 --> 00:01:24.180
+Discount Types is the short list behind that column.
+
+p26
+00:01:25.073 --> 00:01:26.899
+Four categories, nothing more.
+
+p27
+00:01:27.543 --> 00:01:31.913
+Whatever shows under Discount Type on the list you just saw is filed from here.
+
+p28
+00:01:32.400 --> 00:01:34.835
+Surcharges are the mirror of a discount.
+
+p29
+00:01:35.251 --> 00:01:36.100
+Same idea, opposite sign.
+
+p30
+00:01:36.312 --> 00:01:37.168
+An added fee, with an amount, a code, and a taxable flag
+
+p31
+00:01:37.777 --> 00:01:44.160
+that decides whether tax rides on top of the fee.
+
+p32
+00:01:44.560 --> 00:01:47.318
+Surcharge Types carries one flag worth knowing.
+
+p33
+00:01:47.822 --> 00:01:49.171
+Disallow Discounts.
+
+p34
+00:01:49.678 --> 00:01:54.195
+Switch it on, and a discount can't stack on a ticket that already has this surcharge.
+
+p35
+00:01:54.597 --> 00:01:57.748
+That single control settles a lot of pricing arguments.
+
+p36
+00:01:58.258 --> 00:02:00.360
+Payout Percentage is a band table.
+
+p37
+00:02:00.836 --> 00:02:05.143
+Each row is a range, a start and an end, with a percentage inside it.
+
+p38
+00:02:05.606 --> 00:02:08.149
+A value drops into whichever band it lands in.
+
+p39
+00:02:08.441 --> 00:02:09.787
+Tiered, not flat.
+
+p40
+00:02:10.309 --> 00:02:12.619
+Tax Rates feeds the rest of the platform.
+
+p41
+00:02:12.957 --> 00:02:16.926
+Every rate here is what a service reaches for in its two tax slots.
+
+p42
+00:02:17.294 --> 00:02:21.760
+So when a wash rings up the wrong tax, don't start at the service.
+
+p43
+00:02:22.053 --> 00:02:23.991
+Start here, and check which rate is the default.
+
+p44
+00:02:24.480 --> 00:02:25.615
+Down to accounting.
+
+p45
+00:02:25.615 --> 00:02:26.750
+General Ledger Codes.
+
+p46
+00:02:26.750 --> 00:02:29.275
+One small catch worth remembering:
+
+p47
+00:02:29.275 --> 00:02:34.463
+the sidebar says General Ledger Codes, the page header says G-L Codes.
+
+p48
+00:02:34.463 --> 00:02:35.220
+Same page.
+
+p49
+00:02:35.220 --> 00:02:38.995
+These codes are what your exports post against,
+
+p50
+00:02:38.995 --> 00:02:42.778
+and a wrong one here is a classic month-end headache.
+
+p51
+00:02:43.280 --> 00:02:45.801
+G-L Account Codes is the partner list.
+
+p52
+00:02:46.247 --> 00:02:48.260
+Same three columns, same shape.
+
+p53
+00:02:48.655 --> 00:02:49.452
+Here's the split: G-L Codes name the ledger lines,
+
+p54
+00:02:49.943 --> 00:02:55.202
+and G-L Account Codes tie them to accounts for the export.
+
+p55
+00:02:55.522 --> 00:02:56.759
+The two work as a pair.
+
+p56
+00:02:57.200 --> 00:02:58.891
+That's the whole group.
+
+p57
+00:02:58.891 --> 00:03:00.226
+Nine pages, one sidebar.
+
+p58
+00:03:00.226 --> 00:03:02.831
+Tender in Payment Types.
+
+p59
+00:03:02.831 --> 00:03:05.222
+Price changes in Discounts and Surcharges.
+
+p60
+00:03:05.222 --> 00:03:08.162
+Tiered payouts, tax, and the two ledger lists.
+
+p61
+00:03:08.162 --> 00:03:14.032
+When a billing question comes in, you already know which page owns the answer.
+
+p62
+00:03:14.032 --> 00:03:17.036
+And you got there without touching a single setting.
+

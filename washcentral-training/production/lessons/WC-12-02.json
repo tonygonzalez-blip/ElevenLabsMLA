@@ -1,0 +1,506 @@
+{
+  "lesson": "WC-12-02",
+  "title": "Settings: Locations",
+  "audioMaster": "training/module12-settings/WC-12-02-full-narration-v1.0.mp3",
+  "audioDurationS": 269.871,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "locHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "linkLocations": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Locations'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkLocationGroups": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Location Groups'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkLocationSubBrand": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Location Sub-Brand'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkPaymentApproval": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Payment Credential Approval'&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalLocations": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Locations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileStates": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/States/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileLastSync": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Last Sync/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "panelGrowth": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Location Growth Trend$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "panelBreakdown": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Location Breakdown$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "panelStatus": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Location Status$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardLocationsList": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Locations List/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCode": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^code$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thAddress": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^address$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCity": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^city$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thState": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^state$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thZip": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^zip$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPhone": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^phone$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastSync": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^last sync$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchLocations": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search locations/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/\\+\\s*New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "firstRow": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(tr=>tr.getBoundingClientRect().width>0)"
+    },
+    "tabStrip": {
+      "selector": ".a-tab-nav"
+    },
+    "tabProfile": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Profile'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabOperations": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Operations'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabPayments": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Payments & Credentials'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabMessaging": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Messaging'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabUsers": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Users'&&e.getBoundingClientRect().width>0)"
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn-secondary')].find(a=>a.getAttribute('href')==='settings-locations.html'&&/Back/i.test(a.textContent||'')&&a.getBoundingClientRect().width>0)"
+    },
+    "secIdentification": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Identification$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "secAddressContact": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Address & Contact$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "secTimeClock": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Time Clock & Payroll$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "fldTimeOut": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Time Out$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "fldOTHours": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^OT Hours$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "secCredConfig": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Credential Configuration$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "gwOpenEdge": {
+      "js": "[...document.querySelectorAll('h2,h3,h4,[class*=\"title\"],[class*=\"head\"]')].find(e=>(e.textContent||'').trim()==='OpenEdge'&&e.getBoundingClientRect().width>0)"
+    },
+    "gwSmartTech": {
+      "js": "[...document.querySelectorAll('h2,h3,h4,[class*=\"title\"],[class*=\"head\"]')].find(e=>(e.textContent||'').trim()==='SmartTech'&&e.getBoundingClientRect().width>0)"
+    },
+    "secMessages": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Messages & Disclaimers$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "secLocationUsers": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Location Users$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardGroupsList": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Location Groups List/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDescription": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocationsCol": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^locations$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thGeoGroup": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^geo\\s+group$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thOnDashboard": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^on\\s+dashboard$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardSubBrandsList": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Sub-Brands List/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPanelType": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^panel\\s+type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTitleColor": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^title\\s+color$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPriceBoxColor": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^price\\s+box\\s+color$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCardBoxColor": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^card\\s+box\\s+color$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardApprovalList": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Location Payment Approval List/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^location$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thGateway": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^gateway$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSubmitted": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^submitted$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thApprovedBy": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^approved\\s+by$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowMLAS": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>/^MLAS\\b/.test(((tr.querySelector('td')||{}).textContent||'').trim())&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowSSNB": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>/^SSNB\\b/.test(((tr.querySelector('td')||{}).textContent||'').trim())&&tr.getBoundingClientRect().width>0)"
+    },
+    "panelApprBreakdown": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Approval Breakdown$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "settingsPanelExpanded": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim()));return !!h&&h.getBoundingClientRect().width>120})()",
+    "locGroupOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
+    "locGroupClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onLocations": "location.pathname.endsWith('/settings-locations.html')",
+    "onLocationDetail": "location.pathname.endsWith('/settings-locations-detail.html')",
+    "onLocationGroups": "location.pathname.endsWith('/settings-location-groups.html')",
+    "onSubBrand": "location.pathname.endsWith('/settings-location-sub-brand.html')",
+    "onPaymentApproval": "location.pathname.endsWith('/settings-location-payment-approval.html')",
+    "noVisibleLoadError": "![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+    "locationsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-locations.html')&&rows.length>=10&&[...document.querySelectorAll('th')].some(e=>/^code$/i.test((e.textContent||'').trim()))&&![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()",
+    "detailLoaded": "(()=>{return location.pathname.endsWith('/settings-locations-detail.html')&&document.querySelectorAll('button.a-tab-btn').length>=5&&[...document.querySelectorAll('button.a-tab-btn')].some(e=>/^Profile$/.test((e.textContent||'').trim()))&&![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch|Page not found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()",
+    "profileActive": "[...document.querySelectorAll('button.a-tab-btn')].some(e=>/active/.test(e.className)&&/^Profile$/.test((e.textContent||'').trim()))",
+    "operationsActive": "(()=>{const b=[...document.querySelectorAll('button.a-tab-btn')].find(e=>/^Operations$/.test((e.textContent||'').trim()));return !!b&&/active/.test(b.className)&&[...document.querySelectorAll('*')].some(e=>e.children.length===0&&/^Time Clock & Payroll$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)})()",
+    "paymentsActive": "(()=>{const b=[...document.querySelectorAll('button.a-tab-btn')].find(e=>/^Payments & Credentials$/.test((e.textContent||'').trim()));return !!b&&/active/.test(b.className)&&[...document.querySelectorAll('*')].some(e=>e.children.length===0&&/^Credential Configuration$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)})()",
+    "messagingActive": "(()=>{const b=[...document.querySelectorAll('button.a-tab-btn')].find(e=>/^Messaging$/.test((e.textContent||'').trim()));return !!b&&/active/.test(b.className)&&[...document.querySelectorAll('*')].some(e=>e.children.length===0&&/^Messages & Disclaimers$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)})()",
+    "usersActive": "(()=>{const b=[...document.querySelectorAll('button.a-tab-btn')].find(e=>/^Users$/.test((e.textContent||'').trim()));return !!b&&/active/.test(b.className)&&[...document.querySelectorAll('*')].some(e=>e.children.length===0&&/^Location Users$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)})()",
+    "groupsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-location-groups.html')&&rows.length>=5&&[...document.querySelectorAll('th')].some(e=>/^geo\\s+group$/i.test((e.textContent||'').trim()))&&![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()",
+    "subBrandLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-location-sub-brand.html')&&rows.length>=5&&[...document.querySelectorAll('th')].some(e=>/^panel\\s+type$/i.test((e.textContent||'').trim()))&&![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()",
+    "approvalLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-location-payment-approval.html')&&rows.length>=2&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim()))&&![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()"
+  },
+  "ops": [
+    { "op": "assert", "at": -1.8, "predicate": "onSettingsHome", "note": "start page staged before capture: Settings home" },
+    { "op": "assert", "at": -1.4, "predicate": "settingsPanelExpanded", "note": "pre-roll: preflight staged the settings menu panel expanded; abort if collapsed" },
+    { "op": "assert", "at": -1.0, "predicate": "locGroupClosed", "note": "pre-roll: the Locations group must start collapsed so step 1 genuinely expands it" },
+
+    { "op": "pointer-enter", "at": 0.35, "from": [160, 1079], "to": { "target": "locHeader", "offset": [210, 8] }, "note": "enter from the bottom edge and settle beside the left rail as p01 says 'find the Locations group in the left rail'" },
+    { "op": "log-rect", "at": 2.4, "key": "locHeaderRect", "target": "locHeader" },
+    { "op": "move", "at": 3.0, "to": { "target": "locHeader", "offset": [0, 0] }, "note": "approach the Locations group header in the p01-p02 gap" },
+    { "op": "click", "target": "locHeader", "pressAt": 4.3, "hoverMs": 400, "postcondition": "locGroupOpen", "timeoutMs": 4000, "note": "step 1: genuine group expand — the four pages appear as p02 says 'Four pages live here'" },
+    { "op": "log-rects", "at": 4.9, "key": "locNav", "targets": ["linkLocations", "linkLocationGroups", "linkLocationSubBrand", "linkPaymentApproval"] },
+    { "op": "move", "at": 5.8, "to": { "target": "linkLocations", "offset": [30, 0] }, "note": "p03 'one holds every site you run and everything hanging off it' — the Locations page" },
+    { "op": "move", "at": 9.6, "to": { "target": "linkLocationGroups", "offset": [30, 0] }, "note": "p04 'group your sites' — Location Groups" },
+    { "op": "move", "at": 10.9, "to": { "target": "linkLocationSubBrand", "offset": [30, 0] }, "note": "p04 'style what customers see' — Location Sub-Brand" },
+    { "op": "move", "at": 12.3, "to": { "target": "linkPaymentApproval", "offset": [30, 0] }, "note": "p04 'guard the payment keys' — Payment Credential Approval" },
+    { "op": "move", "at": 14.9, "to": { "point": [560, 720] }, "note": "ease off for p05 'we'll read all four, and change none'" },
+
+    { "op": "move", "at": 17.9, "to": { "target": "linkLocations", "offset": [0, 0] }, "note": "step 2 approach on the p06 cue 'Now open Locations'" },
+    { "op": "click", "target": "linkLocations", "pressAt": 19.0, "hoverMs": 380, "postcondition": "onLocations", "timeoutMs": 8000, "nav": true, "note": "step 2: genuine sidebar navigation to the Locations page" },
+    { "op": "wait-stable", "afterNav": true, "key": "locStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 19.9, "predicate": "locationsLoaded", "note": "shot-list load check: real rows + Code header, no 'Couldn't load' agent-service error; abort otherwise" },
+    { "op": "assert", "at": 20.0, "predicate": "settingsPanelExpanded", "note": "settings panel persisted expanded across the navigation" },
+    { "op": "log-rects", "at": 20.15, "key": "locTiles", "targets": ["tileTotalLocations", "tileActive", "tileStates", "tileLastSync"] },
+    { "op": "log-rects", "at": 20.35, "key": "locPanels", "targets": ["panelGrowth", "panelBreakdown", "panelStatus"] },
+    { "op": "log-rect", "at": 20.5, "key": "cardLoc", "target": "cardLocationsList" },
+    { "op": "move", "at": 20.6, "to": { "target": "tileTotalLocations", "offset": [40, 18] }, "note": "p07 point across the KPI band: how many sites" },
+    { "op": "move", "at": 21.6, "to": { "target": "tileActive", "offset": [30, 18] }, "note": "p07 how many active" },
+    { "op": "move", "at": 23.2, "to": { "target": "tileStates", "offset": [30, 18] }, "note": "p08 how many states" },
+    { "op": "move", "at": 24.6, "to": { "target": "tileLastSync", "offset": [30, 18] }, "note": "p08 when they last synced" },
+    { "op": "move", "at": 27.9, "to": { "target": "panelGrowth", "offset": [40, 60] }, "note": "p09 three panels chart growth" },
+    { "op": "move", "at": 28.4, "to": { "target": "panelBreakdown", "offset": [60, 90] }, "note": "p09 split the sites by state" },
+    { "op": "move", "at": 29.5, "to": { "target": "panelStatus", "offset": [40, 90] }, "note": "p10 score how healthy their setup is" },
+    { "op": "move", "at": 31.0, "to": { "point": [900, 560] }, "note": "p11 'this is your map' — ease over the list" },
+    { "op": "move", "at": 34.7, "to": { "target": "cardLocationsList", "offset": [340, 60] }, "note": "p12 'if the list ever reads couldn't load' — gesture over the list body" },
+    { "op": "move", "at": 38.0, "to": { "point": [900, 680] }, "note": "p13 rest — that's the agent service, not an empty tenant" },
+
+    { "op": "log-rects", "at": 44.5, "key": "locTh", "targets": ["thCode", "thName", "thAddress", "thCity", "thState", "thZip", "thPhone", "thLastSync"] },
+    { "op": "log-rect", "at": 44.65, "key": "searchLoc", "target": "searchLocations" },
+    { "op": "log-rect", "at": 44.75, "key": "newRecLoc", "target": "newRecordBtn" },
+    { "op": "move", "at": 44.9, "to": { "target": "thCode", "offset": [0, -26], "outside": true }, "note": "step 3 cue p14 'look at the list itself' — approach the header row" },
+    { "op": "move", "at": 46.4, "to": { "target": "thCode", "offset": [0, 0] }, "note": "p15 'the one that matters most is Code'" },
+    { "op": "move", "at": 54.9, "to": { "target": "searchLocations", "offset": [-600, 0] }, "note": "p18 'search by name or code up top'" },
+    { "op": "move", "at": 56.6, "to": { "target": "newRecordBtn", "offset": [-90, 46], "outside": true }, "note": "p18 'leave New Record alone' — rest BESIDE the button, it is never pressed" },
+    { "op": "move", "at": 59.9, "to": { "target": "thLastSync", "offset": [0, 0] }, "note": "p19 'Last Sync on the right'" },
+    { "op": "move", "at": 63.9, "to": { "point": [1200, 680] }, "note": "p20 ease off — the first thing you read when a site looks silent" },
+
+    { "op": "move", "at": 67.6, "to": { "target": "firstRow", "offset": [-40, 0] }, "note": "step 4 cue p21 'click a site to open it' — approach the first site row" },
+    { "op": "click", "target": "firstRow", "pressAt": 68.6, "hoverMs": 400, "postcondition": "onLocationDetail", "timeoutMs": 9000, "nav": true, "note": "step 4: genuine row navigation (tr.row-link data-href, pure nav verified in assets/app.js) — opens the location detail" },
+    { "op": "wait-stable", "afterNav": true, "key": "detStable", "predicate": "pageReady", "settleMs": 700, "timeoutMs": 9000 },
+    { "op": "assert", "at": 70.2, "predicate": "detailLoaded", "note": "five tabs present, no error state" },
+    { "op": "log-rect", "at": 70.4, "key": "tabStripRect", "target": "tabStrip" },
+    { "op": "log-rects", "at": 70.55, "key": "detTabs", "targets": ["tabProfile", "tabOperations", "tabPayments", "tabMessaging", "tabUsers"] },
+    { "op": "move", "at": 72.5, "to": { "target": "tabProfile", "offset": [0, 0] }, "note": "p23 sweep the five tabs in spoken order: Profile" },
+    { "op": "move", "at": 72.95, "to": { "target": "tabOperations", "offset": [0, 0] }, "note": "Operations" },
+    { "op": "move", "at": 73.4, "to": { "target": "tabPayments", "offset": [0, 0] }, "note": "Payments and Credentials" },
+    { "op": "move", "at": 73.9, "to": { "target": "tabMessaging", "offset": [0, 0] }, "note": "Messaging" },
+    { "op": "move", "at": 74.3, "to": { "target": "tabUsers", "offset": [0, 0] }, "note": "Users" },
+    { "op": "move", "at": 78.0, "to": { "target": "tabProfile", "offset": [0, 0] }, "note": "p26 'Profile is where you land' — settle back on Profile" },
+
+    { "op": "log-rect", "at": 86.7, "key": "secIdent", "target": "secIdentification" },
+    { "op": "log-rect", "at": 86.85, "key": "secAddr", "target": "secAddressContact" },
+    { "op": "move", "at": 88.5, "to": { "target": "secIdentification", "offset": [120, 20] }, "note": "p28 'the site's code and name' — Identification section" },
+    { "op": "move", "at": 90.2, "to": { "target": "secAddressContact", "offset": [120, 20] }, "note": "p28 'its address, its contact details'" },
+    { "op": "move", "at": 95.6, "to": { "point": [900, 780] }, "note": "p30 ease off — this tab confirms you're on the right site" },
+
+    { "op": "move", "at": 103.5, "to": { "target": "tabOperations", "offset": [0, 0] }, "note": "step 6 cue p31 'Now Operations' — approach the tab" },
+    { "op": "click", "target": "tabOperations", "pressAt": 104.2, "hoverMs": 350, "postcondition": "operationsActive", "timeoutMs": 4000, "note": "step 6: switch to the Operations tab (client-side, no navigation)" },
+    { "op": "log-rect", "at": 104.7, "key": "secTC", "target": "secTimeClock" },
+    { "op": "log-rect", "at": 104.85, "key": "fldTO", "target": "fldTimeOut" },
+    { "op": "log-rect", "at": 105.0, "key": "fldOT", "target": "fldOTHours" },
+    { "op": "move", "at": 108.2, "to": { "point": [820, 430] }, "note": "p33 'whether it shows on dashboards, whether it takes online orders' — general operations area" },
+    { "op": "move", "at": 112.2, "to": { "target": "secTimeClock", "offset": [140, 20] }, "note": "p34 'the rules that clock staff out and pay overtime'" },
+    { "op": "move", "at": 116.3, "to": { "target": "fldTimeOut", "offset": [-40, 0] }, "note": "p35 'the automatic clock-out timeout'" },
+    { "op": "move", "at": 117.9, "to": { "target": "fldOTHours", "offset": [-40, 0] }, "note": "p35 'the overtime threshold'" },
+    { "op": "move", "at": 119.6, "to": { "point": [1120, 720] }, "note": "p36 rest — read them, and leave them exactly as they are" },
+
+    { "op": "move", "at": 122.95, "to": { "target": "tabPayments", "offset": [0, 0] }, "note": "step 7 cue p37 'Open Payments and Credentials'" },
+    { "op": "click", "target": "tabPayments", "pressAt": 123.7, "hoverMs": 350, "postcondition": "paymentsActive", "timeoutMs": 4000, "note": "step 7: switch to the Payments & Credentials tab (client-side, no navigation)" },
+    { "op": "log-rect", "at": 124.2, "key": "secCred", "target": "secCredConfig" },
+    { "op": "log-rects", "at": 124.4, "key": "gwBlocks", "targets": ["gwOpenEdge", "gwSmartTech"] },
+    { "op": "move", "at": 125.7, "to": { "target": "secCredConfig", "offset": [160, 20] }, "note": "p38 'below the portal and auto-charge options sits Credential Configuration'" },
+    { "op": "watch", "key": "credHold", "from": 133.5, "to": 144.0, "predicate": "onLocationDetail", "everyMs": 500, "mustHold": true, "note": "step 7 credential guardrail: the detail page never changes — no block is opened, no value is touched or copied" },
+    { "op": "move", "at": 134.7, "to": { "target": "gwOpenEdge", "offset": [-560, 0] }, "note": "p40 name the first gateway BLOCK header, Open Edge — the block name only, never a value" },
+    { "op": "move", "at": 135.2, "to": { "target": "gwSmartTech", "offset": [-560, 0] }, "note": "p40 Smart Tech block header (Other and Card Connect sit below the fold — see residuals)" },
+    { "op": "move", "at": 136.1, "to": { "target": "gwOpenEdge", "offset": [-95, 54], "outside": true }, "note": "p41-p42 rest BESIDE the credential block — every secret shows masked, and the value is never read" },
+    { "op": "move", "at": 140.6, "to": { "point": [760, 760] }, "note": "p43 ease off — for a decline ticket, the gateway name is all support needs" },
+
+    { "op": "move", "at": 149.35, "to": { "target": "tabMessaging", "offset": [0, 0] }, "note": "step 8 cue p44 'Two tabs left. Messaging'" },
+    { "op": "click", "target": "tabMessaging", "pressAt": 150.0, "hoverMs": 350, "postcondition": "messagingActive", "timeoutMs": 4000, "note": "step 8: switch to the Messaging tab (client-side, no navigation)" },
+    { "op": "log-rect", "at": 150.5, "key": "secMsg", "target": "secMessages" },
+    { "op": "move", "at": 150.9, "to": { "target": "secMessages", "offset": [140, 30] }, "note": "p45 'the messages a site sends on its own, set per location'" },
+    { "op": "move", "at": 156.5, "to": { "point": [900, 560] }, "note": "p46-p47 ease over the per-site message list; you read, you send nothing" },
+
+    { "op": "move", "at": 165.85, "to": { "target": "tabUsers", "offset": [0, 0] }, "note": "step 9 cue p48 'Then Users'" },
+    { "op": "click", "target": "tabUsers", "pressAt": 166.5, "hoverMs": 350, "postcondition": "usersActive", "timeoutMs": 4000, "note": "step 9: switch to the Users tab (client-side, no navigation)" },
+    { "op": "log-rect", "at": 167.0, "key": "secUsers", "target": "secLocationUsers" },
+    { "op": "move", "at": 167.6, "to": { "target": "secLocationUsers", "offset": [140, 30] }, "note": "p49-p50 'who can work this site; check here before you reset anything'" },
+    { "op": "move", "at": 176.9, "to": { "point": [900, 520] }, "note": "p52 'read the list; open nothing' — no row is opened" },
+
+    { "op": "move", "at": 179.5, "to": { "target": "backBtn", "offset": [0, 0] }, "note": "step 10 cue p53 'back out with the Back button'" },
+    { "op": "log-rect", "at": 179.7, "key": "backRect", "target": "backBtn" },
+    { "op": "click", "target": "backBtn", "pressAt": 180.4, "hoverMs": 380, "postcondition": "onLocations", "timeoutMs": 8000, "nav": true, "note": "step 10: the ← Back control is a plain <a href=settings-locations.html> (verified) — returns to the list, nothing saved" },
+    { "op": "wait-stable", "afterNav": true, "key": "backStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 181.6, "predicate": "locationsLoaded", "note": "back on the Locations list, nothing changed" },
+    { "op": "log-rect", "at": 181.8, "key": "cardLoc2", "target": "cardLocationsList" },
+    { "op": "move", "at": 182.0, "to": { "target": "cardLocationsList", "offset": [340, 60] }, "note": "p54 'nothing saved, nothing changed'" },
+    { "op": "move", "at": 188.4, "to": { "point": [900, 680] }, "note": "p56 'those changes route to an approval queue' — the next page we read" },
+
+    { "op": "move", "at": 192.85, "to": { "target": "linkLocationGroups", "offset": [0, 0] }, "note": "step 11 cue p57 'Open Location Groups'" },
+    { "op": "click", "target": "linkLocationGroups", "pressAt": 193.6, "hoverMs": 380, "postcondition": "onLocationGroups", "timeoutMs": 8000, "nav": true, "note": "step 11: sidebar navigation to Location Groups" },
+    { "op": "wait-stable", "afterNav": true, "key": "grpStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 195.0, "predicate": "groupsLoaded", "note": "real rows, no error state" },
+    { "op": "log-rects", "at": 195.2, "key": "grpTh", "targets": ["thName", "thDescription", "thLocationsCol", "thGeoGroup", "thOnDashboard"] },
+    { "op": "log-rect", "at": 195.4, "key": "cardGrp", "target": "cardGroupsList" },
+    { "op": "log-rect", "at": 195.55, "key": "newRecGrp", "target": "newRecordBtn" },
+    { "op": "move", "at": 195.7, "to": { "point": [900, 360] }, "note": "p58 'a group bundles several sites' — settle over the list" },
+    { "op": "move", "at": 200.9, "to": { "target": "thName", "offset": [0, 0] }, "note": "p59 spoken order: the name" },
+    { "op": "move", "at": 201.4, "to": { "target": "thDescription", "offset": [0, 0] }, "note": "a description" },
+    { "op": "move", "at": 201.9, "to": { "target": "thLocationsCol", "offset": [0, 0] }, "note": "how many sites it holds" },
+    { "op": "move", "at": 202.4, "to": { "target": "thGeoGroup", "offset": [0, 0] }, "note": "p60 its geo group" },
+    { "op": "move", "at": 203.6, "to": { "target": "thOnDashboard", "offset": [0, 0] }, "note": "whether it shows on the dashboard" },
+    { "op": "move", "at": 206.6, "to": { "target": "newRecordBtn", "offset": [-90, 46], "outside": true }, "note": "p61 'read only' — rest BESIDE + New Record, it is never pressed" },
+
+    { "op": "move", "at": 209.8, "to": { "target": "linkLocationSubBrand", "offset": [0, 0] }, "note": "step 12 cue p62 'Next, Location Sub-Brand'" },
+    { "op": "click", "target": "linkLocationSubBrand", "pressAt": 210.6, "hoverMs": 380, "postcondition": "onSubBrand", "timeoutMs": 8000, "nav": true, "note": "step 12: sidebar navigation; the link reads Location Sub-Brand" },
+    { "op": "wait-stable", "afterNav": true, "key": "sbStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 212.0, "predicate": "subBrandLoaded", "note": "the Sub-Brands page loaded, no error state" },
+    { "op": "log-rect", "at": 212.2, "key": "cardSB", "target": "cardSubBrandsList" },
+    { "op": "log-rects", "at": 212.35, "key": "sbTh", "targets": ["thPanelType", "thTitleColor", "thPriceBoxColor", "thCardBoxColor"] },
+    { "op": "log-rect", "at": 212.5, "key": "newRecSB", "target": "newRecordBtn" },
+    { "op": "move", "at": 212.7, "to": { "target": "cardSubBrandsList", "offset": [40, 20] }, "note": "p63 'the page says Sub-Brands' — the card title" },
+    { "op": "move", "at": 214.2, "to": { "target": "thPanelType", "offset": [0, 0] }, "note": "p64 the panel type" },
+    { "op": "move", "at": 215.3, "to": { "target": "thTitleColor", "offset": [0, 0] }, "note": "and the colors" },
+    { "op": "move", "at": 216.0, "to": { "target": "thPriceBoxColor", "offset": [0, 0] } },
+    { "op": "move", "at": 216.7, "to": { "target": "thCardBoxColor", "offset": [0, 0] } },
+    { "op": "move", "at": 218.0, "to": { "point": [900, 560] }, "note": "p65 ease off — one operator under more than one look" },
+
+    { "op": "move", "at": 225.55, "to": { "target": "linkPaymentApproval", "offset": [0, 0] }, "note": "step 13 cue p66 'Last page: Payment Credential Approval'" },
+    { "op": "click", "target": "linkPaymentApproval", "pressAt": 226.3, "hoverMs": 380, "postcondition": "onPaymentApproval", "timeoutMs": 8000, "nav": true, "note": "step 13: sidebar navigation to the approval queue" },
+    { "op": "wait-stable", "afterNav": true, "key": "paStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 227.7, "predicate": "approvalLoaded", "note": "MLAS and SSNB rows present, no error state" },
+    { "op": "log-rects", "at": 227.9, "key": "paTh", "targets": ["thLocation", "thGateway", "thStatus", "thSubmitted", "thApprovedBy"] },
+    { "op": "log-rects", "at": 228.1, "key": "paRows", "targets": ["rowMLAS", "rowSSNB"] },
+    { "op": "log-rect", "at": 228.25, "key": "cardPA", "target": "cardApprovalList" },
+    { "op": "log-rect", "at": 228.4, "key": "newRecPA", "target": "newRecordBtn" },
+    { "op": "move", "at": 228.7, "to": { "target": "thStatus", "offset": [0, 34], "outside": true }, "note": "p68 'a status: pending, approved, or rejected'" },
+    { "op": "move", "at": 231.6, "to": { "target": "rowMLAS", "offset": [-340, 0] }, "note": "p69 'two sites sat approved on Open Edge' — MLAS, gateway OpenEdge, status Approved" },
+    { "op": "move", "at": 233.2, "to": { "target": "rowSSNB", "offset": [-340, 0] }, "note": "p69 SSNB — the second approved site" },
+    { "op": "move", "at": 235.5, "to": { "target": "thStatus", "offset": [0, 34], "outside": true }, "note": "p70 'this status column is your answer'" },
+    { "op": "move", "at": 239.0, "to": { "point": [1050, 720] }, "note": "p71 ease off — one pending row means it's still in the queue" },
+
+    { "op": "assert", "at": 249.9, "predicate": "onPaymentApproval", "note": "recap sweep starts on the approval page, Locations group still expanded" },
+    { "op": "assert", "at": 250.0, "predicate": "settingsPanelExpanded", "note": "the recap needs the four sidebar links on screen" },
+    { "op": "log-rects", "at": 250.2, "key": "recapNav", "targets": ["linkLocations", "linkLocationGroups", "linkLocationSubBrand", "linkPaymentApproval"] },
+    { "op": "move", "at": 251.5, "to": { "point": [420, 600] }, "note": "p72-p73 head toward the rail — one list, one five-tab record, three sibling pages" },
+    { "op": "move", "at": 254.6, "to": { "target": "linkLocations", "offset": [30, 0] }, "note": "p74 'the site list gets you in' — Locations" },
+    { "op": "move", "at": 258.2, "to": { "target": "linkLocationGroups", "offset": [30, 0] }, "note": "p76 'bundle sites' — Location Groups" },
+    { "op": "move", "at": 260.6, "to": { "target": "linkLocationSubBrand", "offset": [30, 0] }, "note": "'style them' — Location Sub-Brand" },
+    { "op": "move", "at": 262.6, "to": { "target": "linkPaymentApproval", "offset": [30, 0] }, "note": "'sign off their credentials' — Payment Credential Approval" },
+    { "op": "move", "at": 266.8, "to": { "point": [1520, 900] }, "note": "p77 final park, clear of content and captions" },
+    { "op": "assert", "at": 268.0, "predicate": "onPaymentApproval" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "locNav.linkLocationSubBrand", "place": "right", "from": 5.6, "to": 14.6 },
+      { "n": 2, "anchor": "locTiles.tileTotalLocations", "place": "below-left", "from": 20.3, "to": 27.4 },
+      { "n": 3, "anchor": "locTh.thCode", "place": "below-left", "from": 46.4, "to": 53.5 },
+      { "n": 4, "anchor": "detTabs.tabProfile", "place": "below-left", "from": 70.6, "to": 77.5 },
+      { "n": 5, "anchor": "secIdent", "place": "right", "from": 88.4, "to": 95.2 },
+      { "n": 6, "anchor": "fldTO", "place": "left", "from": 116.2, "to": 121.0 },
+      { "n": 7, "anchor": "secCred", "place": "right", "from": 134.5, "to": 140.4 },
+      { "n": 8, "anchor": "secMsg", "place": "right", "from": 150.7, "to": 162.0 },
+      { "n": 9, "anchor": "secUsers", "place": "right", "from": 167.4, "to": 177.0 },
+      { "n": 10, "anchor": "cardLoc2", "place": "below-left", "from": 181.5, "to": 191.0 },
+      { "n": 11, "anchor": "grpTh.thName", "place": "below-left", "from": 200.9, "to": 206.0 },
+      { "n": 12, "anchor": "cardSB", "place": "below-left", "from": 212.6, "to": 217.5 },
+      { "n": 13, "anchor": "paTh.thStatus", "place": "below-left", "from": 228.7, "to": 239.0 },
+      { "n": 14, "anchor": "recapNav.linkLocations", "place": "right", "from": 254.5, "to": 266.0 }
+    ],
+    "highlights": [
+      { "anchor": "locNav.linkLocations", "from": 5.8, "to": 9.4, "note": "p03 'one holds every site you run'" },
+      { "anchor": "locNav.linkLocationGroups", "from": 9.6, "to": 10.8, "note": "p04 'group your sites'" },
+      { "anchor": "locNav.linkLocationSubBrand", "from": 10.9, "to": 12.2, "note": "p04 'style what customers see'" },
+      { "anchor": "locNav.linkPaymentApproval", "from": 12.3, "to": 14.4, "note": "p04 'guard the payment keys'" },
+      { "anchor": "locTiles.tileTotalLocations", "from": 20.6, "to": 21.5, "note": "p07 how many sites" },
+      { "anchor": "locTiles.tileActive", "from": 21.6, "to": 23.0, "note": "p07 how many active" },
+      { "anchor": "locTiles.tileStates", "from": 23.2, "to": 24.5, "note": "p08 how many states" },
+      { "anchor": "locTiles.tileLastSync", "from": 24.6, "to": 27.3, "note": "p08 when they last synced" },
+      { "anchor": "locPanels.panelGrowth", "from": 27.9, "to": 28.4, "note": "p09 chart growth" },
+      { "anchor": "locPanels.panelBreakdown", "from": 28.4, "to": 29.4, "note": "p09 split the sites by state" },
+      { "anchor": "locPanels.panelStatus", "from": 29.5, "to": 30.8, "note": "p10 score how healthy their setup is" },
+      { "anchor": "locTh.thCode", "from": 46.4, "to": 53.0, "note": "p15-p16 Code is the column that matters most" },
+      { "anchor": "newRecLoc", "from": 56.3, "to": 59.5, "color": "#dc2626", "note": "shot-list STOP ring: + New Record located, never clicked (read-only lesson)" },
+      { "anchor": "locTh.thLastSync", "from": 59.8, "to": 63.7, "note": "p19 Last Sync on the right" },
+      { "anchor": "detTabs.tabProfile", "from": 72.4, "to": 72.95, "note": "p23 spoken order: Profile" },
+      { "anchor": "detTabs.tabOperations", "from": 72.95, "to": 73.4, "note": "Operations" },
+      { "anchor": "detTabs.tabPayments", "from": 73.4, "to": 73.95, "note": "Payments and Credentials" },
+      { "anchor": "detTabs.tabMessaging", "from": 73.95, "to": 74.35, "note": "Messaging" },
+      { "anchor": "detTabs.tabUsers", "from": 74.35, "to": 75.4, "note": "Users" },
+      { "anchor": "secIdent", "from": 88.4, "to": 90.1, "note": "p28 code and name" },
+      { "anchor": "secAddr", "from": 90.2, "to": 92.2, "note": "p28 address and contact" },
+      { "anchor": "fldTO", "from": 116.2, "to": 117.8, "note": "p35 the automatic clock-out timeout" },
+      { "anchor": "fldOT", "from": 117.9, "to": 119.4, "note": "p35 the overtime threshold" },
+      { "anchor": "gwBlocks.gwOpenEdge", "from": 134.6, "to": 135.2, "note": "p40 Open Edge block" },
+      { "anchor": "gwBlocks.gwSmartTech", "from": 135.2, "to": 135.7, "note": "p40 Smart Tech block" },
+      { "anchor": "gwBlocks.gwOpenEdge", "from": 135.8, "to": 140.0, "color": "#dc2626", "note": "step 7 do-not-touch guardrail on the credential block while p41-p42 state 'every secret masked; never read the value'" },
+      { "anchor": "secMsg", "from": 150.8, "to": 156.0, "note": "p45 messages set per location" },
+      { "anchor": "secUsers", "from": 167.5, "to": 176.5, "note": "p49-p52 who can work this site" },
+      { "anchor": "grpTh.thName", "from": 200.9, "to": 201.4, "note": "p59 the name" },
+      { "anchor": "grpTh.thDescription", "from": 201.4, "to": 201.9, "note": "a description" },
+      { "anchor": "grpTh.thLocationsCol", "from": 201.9, "to": 202.4, "note": "how many sites it holds" },
+      { "anchor": "grpTh.thGeoGroup", "from": 202.4, "to": 203.5, "note": "p60 its geo group" },
+      { "anchor": "grpTh.thOnDashboard", "from": 203.5, "to": 206.0, "note": "whether it shows on the dashboard" },
+      { "anchor": "newRecGrp", "from": 206.4, "to": 208.8, "color": "#dc2626", "note": "shot-list STOP ring over + New Record on Location Groups" },
+      { "anchor": "cardSB", "from": 212.6, "to": 214.0, "note": "p63 the page says Sub-Brands" },
+      { "anchor": "sbTh.thPanelType", "from": 214.2, "to": 215.2, "note": "p64 the panel type" },
+      { "anchor": "sbTh.thTitleColor", "from": 215.2, "to": 216.0, "note": "and the colors" },
+      { "anchor": "sbTh.thPriceBoxColor", "from": 216.0, "to": 216.6 },
+      { "anchor": "sbTh.thCardBoxColor", "from": 216.6, "to": 217.4 },
+      { "anchor": "newRecSB", "from": 213.2, "to": 217.0, "color": "#dc2626", "note": "shot-list STOP ring over + New Record on Sub-Brands" },
+      { "anchor": "paTh.thStatus", "from": 228.7, "to": 231.0, "note": "p68 a status: pending, approved, or rejected" },
+      { "anchor": "paRows.rowMLAS", "from": 231.6, "to": 232.9, "note": "p69 MLAS approved on Open Edge" },
+      { "anchor": "paRows.rowSSNB", "from": 233.0, "to": 234.6, "note": "p69 SSNB approved" },
+      { "anchor": "paTh.thStatus", "from": 235.5, "to": 238.6, "note": "p70 this status column is your answer" },
+      { "anchor": "newRecPA", "from": 228.7, "to": 231.4, "color": "#dc2626", "note": "shot-list STOP ring over + New Record on Payment Credential Approval" },
+      { "anchor": "recapNav.linkLocations", "from": 254.6, "to": 257.8, "note": "p74 the site list gets you in" },
+      { "anchor": "recapNav.linkLocationGroups", "from": 258.2, "to": 260.4, "note": "p76 bundle sites" },
+      { "anchor": "recapNav.linkLocationSubBrand", "from": 260.6, "to": 262.4, "note": "style them" },
+      { "anchor": "recapNav.linkPaymentApproval", "from": 262.6, "to": 265.5, "note": "sign off their credentials" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 27.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 28.6, "z": 1.3, "cx": 1000, "cy": 430, "ease": true, "note": "step 2 close framing (130%): the Location Breakdown panel" },
+      { "t": 33.4, "z": 1.3, "cx": 1000, "cy": 430 },
+      { "t": 34.4, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 70.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 70.8, "z": 1.2, "cx": 850, "cy": 460, "ease": true, "note": "step 4 close framing (120%): the five-tab strip" },
+      { "t": 75.6, "z": 1.2, "cx": 850, "cy": 460 },
+      { "t": 76.4, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 111.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 112.4, "z": 1.2, "cx": 1120, "cy": 630, "ease": true, "note": "step 6 close framing: Time Clock & Payroll — Time Out and OT Hours" },
+      { "t": 120.6, "z": 1.2, "cx": 1120, "cy": 630 },
+      { "t": 121.4, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 131.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 132.4, "z": 1.2, "cx": 900, "cy": 630, "ease": true, "note": "step 7 close framing: the Credential Configuration section and its gateway blocks" },
+      { "t": 139.6, "z": 1.2, "cx": 900, "cy": 630 },
+      { "t": 140.6, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 228.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 228.8, "z": 1.3, "cx": 900, "cy": 560, "ease": true, "note": "step 13 close framing (130%): the STATUS chips on the approval rows" },
+      { "t": 235.6, "z": 1.3, "cx": 900, "cy": 560 },
+      { "t": 236.4, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 269.871, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Locations — Complete",
+      "from": 268.07,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 267.77
+  },
+  "output": "WC-12-02-locations-v1.1",
+  "neverClick": [
+    "+ new record",
+    "new record",
+    "save",
+    "save changes",
+    "edit",
+    "edit record",
+    "delete",
+    "yes, delete",
+    "add",
+    "reset",
+    "send",
+    "submit",
+    "approve",
+    "reject",
+    "logout",
+    "log out now",
+    "ask shyne",
+    "close settings"
+  ],
+  "preflight": [
+    { "op": "click", "target": "railToggle", "pressAt": 0, "hoverMs": 200, "unless": "settingsPanelExpanded", "postcondition": "settingsPanelExpanded", "timeoutMs": 4000, "note": "off-camera: stage the shared persisted settings menu panel expanded before the take" },
+    { "op": "click", "target": "locHeader", "pressAt": 0, "hoverMs": 200, "unless": "locGroupClosed", "postcondition": "locGroupClosed", "timeoutMs": 4000, "note": "off-camera: genuine toggle click closes the persisted Locations group so step 1 expands it on camera" }
+  ]
+}

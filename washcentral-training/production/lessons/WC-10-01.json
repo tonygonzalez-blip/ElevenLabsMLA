@@ -1,0 +1,2227 @@
+{
+  "lesson": "WC-10-01",
+  "title": "IT Support: ML Command Center",
+  "audioMaster": "training/module10-it-support/WC-10-01-full-narration-v1.0.mp3",
+  "audioDurationS": 269.714,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/ml-command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "brandName": {
+      "selector": ".noc-brand-name"
+    },
+    "brandSub": {
+      "selector": ".noc-brand-sub"
+    },
+    "critBadge": {
+      "selector": "#noc-sys-status"
+    },
+    "livePill": {
+      "selector": ".noc-live-pill"
+    },
+    "syncLbl": {
+      "selector": "#noc-sync"
+    },
+    "refreshBtn": {
+      "selector": "#noc-refresh-btn"
+    },
+    "mgAvatar": {
+      "selector": "#user-menu-btn"
+    },
+    "searchBox": {
+      "selector": "#noc-global-search"
+    },
+    "tierToggle": {
+      "selector": "#noc-tier-toggle"
+    },
+    "tierAll": {
+      "selector": ".noc-tier-btn[data-tier=\"all\"]"
+    },
+    "tierEnt": {
+      "selector": ".noc-tier-btn[data-tier=\"enterprise\"]"
+    },
+    "tierGen": {
+      "selector": ".noc-tier-btn[data-tier=\"general\"]"
+    },
+    "pills": {
+      "selector": "#noc-status-pills"
+    },
+    "pillCrit": {
+      "selector": ".noc-status-pill[data-status=\"critical\"]"
+    },
+    "pillWarn": {
+      "selector": ".noc-status-pill[data-status=\"warning\"]"
+    },
+    "pillHealthy": {
+      "selector": ".noc-status-pill[data-status=\"healthy\"]"
+    },
+    "savedViews": {
+      "selector": ".noc-saved-views"
+    },
+    "viewAll": {
+      "selector": ".noc-saved-btn[data-view=\"all\"]"
+    },
+    "viewEntCrit": {
+      "selector": ".noc-saved-btn[data-view=\"enterprise-critical\"]"
+    },
+    "viewNeeds": {
+      "selector": ".noc-saved-btn[data-view=\"needs-attention\"]"
+    },
+    "kpiBar": {
+      "selector": ".noc-kpi-bar"
+    },
+    "kpiTotal": {
+      "js": "document.getElementById('kpi-num-total').closest('.noc-kpi-tile')"
+    },
+    "kpiCritical": {
+      "selector": ".noc-kpi-tile[data-kpi-filter=\"critical\"]"
+    },
+    "kpiWarning": {
+      "selector": ".noc-kpi-tile[data-kpi-filter=\"warning\"]"
+    },
+    "kpiHealthy": {
+      "selector": ".noc-kpi-tile[data-kpi-filter=\"healthy\"]"
+    },
+    "kpiSla": {
+      "js": "document.getElementById('kpi-num-sla').closest('.noc-kpi-tile')"
+    },
+    "kpiTotalSplit": {
+      "js": "document.getElementById('kpi-split-ent').closest('.noc-kpi-tile-split')"
+    },
+    "kpiCritSplit": {
+      "js": "document.getElementById('kpi-crit-ent').closest('.noc-kpi-tile-split')"
+    },
+    "kpiWarnSplit": {
+      "js": "document.getElementById('kpi-warn-ent').closest('.noc-kpi-tile-split')"
+    },
+    "kpiHlthSplit": {
+      "js": "document.getElementById('kpi-hlth-ent').closest('.noc-kpi-tile-split')"
+    },
+    "slaTrend": {
+      "selector": ".noc-kpi-trend-down"
+    },
+    "mapSection": {
+      "selector": ".noc-map-section"
+    },
+    "mapEyebrow": {
+      "selector": ".noc-map-eyebrow"
+    },
+    "mapTitle": {
+      "selector": "#noc-map-title"
+    },
+    "mapLegend": {
+      "selector": ".noc-map-legend"
+    },
+    "mapMode": {
+      "selector": "#noc-map-mode"
+    },
+    "mapBody": {
+      "selector": "#noc-map-body"
+    },
+    "zoomCtrls": {
+      "selector": ".noc-zoom-ctrls"
+    },
+    "zoomIn": {
+      "selector": "#noc-zoom-in"
+    },
+    "feedTabsRow": {
+      "selector": ".noc-right-tabs"
+    },
+    "tabIncidents": {
+      "js": "[...document.querySelectorAll('.noc-right-tab')][0]"
+    },
+    "tabLocations": {
+      "js": "[...document.querySelectorAll('.noc-right-tab')][1]"
+    },
+    "tabCustomers": {
+      "js": "[...document.querySelectorAll('.noc-right-tab')][2]"
+    },
+    "sevCrit": {
+      "selector": ".noc-inc-group[data-severity=\"critical\"] .noc-inc-group-hdr"
+    },
+    "sevWarn": {
+      "selector": ".noc-inc-group[data-severity=\"warning\"] .noc-inc-group-hdr"
+    },
+    "sevInfo": {
+      "selector": ".noc-inc-group[data-severity=\"info\"] .noc-inc-group-hdr"
+    },
+    "row1": {
+      "js": "document.querySelector('.noc-inc-row')"
+    },
+    "row1cust": {
+      "js": "document.querySelector('.noc-inc-row .noc-inc-customer')"
+    },
+    "row1tier": {
+      "js": "document.querySelector('.noc-inc-row .noc-inc-tier')"
+    },
+    "row1title": {
+      "js": "document.querySelector('.noc-inc-row .noc-inc-title')"
+    },
+    "row1chip": {
+      "js": "document.querySelector('.noc-inc-row .noc-inc-chip')"
+    },
+    "row1assign": {
+      "js": "document.querySelector('.noc-inc-row .noc-inc-assign')"
+    },
+    "row1time": {
+      "js": "document.querySelector('.noc-inc-row .noc-inc-time')"
+    },
+    "assignUnassigned": {
+      "js": "[...document.querySelectorAll('.noc-inc-row')].map(r=>r.querySelector('.noc-inc-assign.unassigned')).find(Boolean)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onNoc": "location.pathname.endsWith('/ml-command-center.html')",
+    "boardReady": "(()=>{const vis=e=>e&&e.getBoundingClientRect().width>0;const brand=[...document.querySelectorAll('.noc-brand-name')].some(e=>/Micrologic NOC/i.test(e.textContent||''));const tiles=[...document.querySelectorAll('.noc-kpi-tile')].filter(vis).length;const tiers=[...document.querySelectorAll('.noc-tier-btn')].filter(vis).length;const views=[...document.querySelectorAll('.noc-saved-btn')].filter(vis).length;const rows=[...document.querySelectorAll('.noc-inc-row')].filter(vis).length;return location.pathname.endsWith('/ml-command-center.html')&&brand&&tiles>=5&&tiers===3&&views===3&&rows===10&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "feedIntact": "(()=>{const rows=[...document.querySelectorAll('.noc-inc-row')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/ml-command-center.html')&&rows.length===10})()",
+    "noDrawer": "(()=>{const d=document.querySelector('#noc-customer-drawer');const b=document.querySelector('#noc-drawer-backdrop');return !(d&&d.classList.contains('open'))&&!(b&&b.classList.contains('open'))})()",
+    "tierEnterpriseActive": "document.querySelector('.noc-tier-btn[data-tier=\"enterprise\"]').classList.contains('active')&&(document.getElementById('kpi-num-total').textContent||'').trim()==='3'",
+    "tierAllActive": "document.querySelector('.noc-tier-btn[data-tier=\"all\"]').classList.contains('active')&&(document.getElementById('kpi-num-total').textContent||'').trim()==='8'",
+    "viewNeedsActive": "document.querySelector('.noc-saved-btn[data-view=\"needs-attention\"]').classList.contains('active')&&(document.getElementById('kpi-num-total').textContent||'').trim()==='5'",
+    "viewAllActive": "document.querySelector('.noc-saved-btn[data-view=\"all\"]').classList.contains('active')&&(document.getElementById('kpi-num-total').textContent||'').trim()==='8'"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onNoc",
+      "note": "start page identity before capture (startUrl ml-command-center.html; the cross-customer NOC board opens directly, full-width with its own header)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "boardReady",
+      "note": "loaded: Micrologic NOC brand, 5 KPI tiles, 3 tier filters, 3 saved views, 10 incident rows, no agent-service error state"
+    },
+    {
+      "op": "watch",
+      "key": "boardHeld",
+      "from": 1,
+      "to": 268.5,
+      "predicate": "onNoc",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: the page never navigates. Only the tier filters (step 4) and saved views (step 6) are ever clicked — both are verified view-only, non-navigating, non-mutating (inline JS toggles .active and re-renders locally via applyFilter(); the two page scripts contain zero fetch/XHR/POST/storage/beacon). Everything else is pointed at, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "feedHeld",
+      "from": 2,
+      "to": 268,
+      "predicate": "feedIntact",
+      "everyMs": 3000,
+      "mustHold": true,
+      "note": "mutation guardrail: the incident feed holds exactly 10 rows the whole lesson — proves no incident was created, opened, claimed, assigned, or resolved (the feed is static demo data unaffected by the view-only tier/view toggles)"
+    },
+    {
+      "op": "watch",
+      "key": "noDrawerHeld",
+      "from": 1,
+      "to": 268.5,
+      "predicate": "noDrawer",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "safety guardrail: the customer detail drawer (which surfaces the parked Create Ticket / View Full Profile assign-claim controls) never opens — no incident row or map site is ever clicked into"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "brandName",
+        "offset": [
+          0,
+          58
+        ],
+        "outside": true
+      },
+      "note": "step 1: enter from the bottom-left toward the Micrologic NOC header title as p01 says 'This is the Micrologic N-O-C'"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.55,
+      "key": "brandBlockRect",
+      "target": "brandName",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 0.62,
+      "key": "brandSubRect",
+      "target": "brandSub"
+    },
+    {
+      "op": "move",
+      "at": 0.7,
+      "to": {
+        "target": "brandName",
+        "offset": [
+          10,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): rest just under the Micrologic NOC title (callout ①)"
+    },
+    {
+      "op": "move",
+      "at": 6.4,
+      "to": {
+        "point": [
+          900,
+          500
+        ]
+      },
+      "note": "step 1 (p02-p05): ease wide over the whole board while the cross-customer framing is spoken ('One board, watching every customer we support')"
+    },
+    {
+      "op": "move",
+      "at": 12,
+      "to": {
+        "point": [
+          980,
+          540
+        ]
+      },
+      "note": "step 1 (p05 tail): hold wide for 'this one sits above all of them, so you catch trouble before the phone even rings'"
+    },
+    {
+      "op": "log-rect",
+      "at": 18.21,
+      "key": "critBadgeRect",
+      "target": "critBadge",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rects",
+      "at": 18.25,
+      "key": "statusCluster",
+      "targets": [
+        "critBadge",
+        "livePill",
+        "syncLbl",
+        "searchBox"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 18.29,
+      "to": {
+        "target": "critBadge",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p06): 'Look at the top strip' — settle under the header status cluster"
+    },
+    {
+      "op": "move",
+      "at": 20.32,
+      "to": {
+        "target": "critBadge",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07): the red 2 CRITICAL count of customers in critical shape right now"
+    },
+    {
+      "op": "move",
+      "at": 24.07,
+      "to": {
+        "target": "livePill",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): the green LIVE badge and the 'Updated just now' note"
+    },
+    {
+      "op": "move",
+      "at": 27.85,
+      "to": {
+        "target": "syncLbl",
+        "offset": [
+          0,
+          28
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p09): hold on 'Updated just now' — the board refreshes itself, never stale"
+    },
+    {
+      "op": "move",
+      "at": 29.22,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          0,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p10): the header search box, scoped to customers, locations, and incidents (located, never typed in)"
+    },
+    {
+      "op": "log-rect",
+      "at": 39.76,
+      "key": "tierToggleRect",
+      "target": "tierToggle",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 39.8,
+      "key": "tierBtns",
+      "targets": [
+        "tierAll",
+        "tierEnt",
+        "tierGen"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 39.84,
+      "to": {
+        "target": "tierAll",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p11): 'Under the header, three tabs: all customers, enterprise, general' — settle under the scope filters"
+    },
+    {
+      "op": "move",
+      "at": 42.0,
+      "to": {
+        "target": "tierEnt",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p11): name Enterprise"
+    },
+    {
+      "op": "move",
+      "at": 43.0,
+      "to": {
+        "target": "tierGen",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p11): name General"
+    },
+    {
+      "op": "move",
+      "at": 46.71,
+      "to": {
+        "target": "tierToggle",
+        "offset": [
+          40,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p13-p15): hold under the filter row while 'the same instinct as the location scope' is explained — view-only, touches nothing underneath"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.62,
+      "key": "tierToggleRect2",
+      "target": "tierToggle",
+      "requireStableMs": 160
+    },
+    {
+      "op": "click",
+      "target": "tierEnt",
+      "pressAt": 59.0,
+      "hoverMs": 400,
+      "postcondition": "tierEnterpriseActive",
+      "timeoutMs": 4000,
+      "note": "step 4 (p16): view-only toggle. 'Tap Enterprise' is heard at 57.68; the press lands in the trailing gap (58.74–59.27) so the board is re-scoped to Enterprise (KPI Customers 8→3, map + Locations/Customers panes narrow) when p17 'Everything tightens to that tier' begins. Proven non-mutating: inline JS only toggles .active + calls applyFilter() (local re-render); no network/storage writes exist in either page script."
+    },
+    {
+      "op": "click",
+      "target": "tierAll",
+      "pressAt": 64.8,
+      "hoverMs": 350,
+      "postcondition": "tierAllActive",
+      "timeoutMs": 4000,
+      "note": "step 4 (p18): 'Tap All Customers and the whole network snaps back' — the restore press lands so the board is back to all 8 customers as 'snaps back' is spoken; fully reversible, one click"
+    },
+    {
+      "op": "move",
+      "at": 67.2,
+      "to": {
+        "point": [
+          430,
+          300
+        ]
+      },
+      "note": "step 4 (p19): ease off the filters for 'It is a filter on your view, nothing deeper, and it undoes itself in a single click'"
+    },
+    {
+      "op": "log-rect",
+      "at": 71.98,
+      "key": "pillsRect",
+      "target": "pills",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 72.02,
+      "key": "pillChips",
+      "targets": [
+        "pillCrit",
+        "pillWarn",
+        "pillHealthy"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 72.06,
+      "to": {
+        "target": "pillCrit",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p20): 'Beside the filters, three small counts' — settle under the status chips"
+    },
+    {
+      "op": "move",
+      "at": 75.03,
+      "to": {
+        "target": "pillCrit",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p21): Critical"
+    },
+    {
+      "op": "move",
+      "at": 75.4,
+      "to": {
+        "target": "pillWarn",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p21): warning"
+    },
+    {
+      "op": "move",
+      "at": 75.75,
+      "to": {
+        "target": "pillHealthy",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p21): healthy"
+    },
+    {
+      "op": "move",
+      "at": 77.67,
+      "to": {
+        "target": "pills",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p22-p24): hold under the chips — the room in one glance; when the critical number climbs, slow down and look closer"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.92,
+      "key": "savedViewsRect",
+      "target": "savedViews",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 89.96,
+      "key": "viewBtns",
+      "targets": [
+        "viewAll",
+        "viewEntCrit",
+        "viewNeeds"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 90.0,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p25): 'Now the saved views' — settle under the VIEWS presets"
+    },
+    {
+      "op": "move",
+      "at": 91.21,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p26): All Accounts is everything"
+    },
+    {
+      "op": "move",
+      "at": 93.06,
+      "to": {
+        "target": "viewEntCrit",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p27): Enterprise Critical"
+    },
+    {
+      "op": "move",
+      "at": 94.2,
+      "to": {
+        "target": "viewNeeds",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p27-p28): Needs Attention — the preset that drags the board to what deserves your eyes first"
+    },
+    {
+      "op": "click",
+      "target": "viewNeeds",
+      "pressAt": 99.2,
+      "hoverMs": 350,
+      "postcondition": "viewNeedsActive",
+      "timeoutMs": 4000,
+      "note": "step 6 (p29): view-only saved view. 'Reach for Needs Attention when you walk in cold and want the short list' — the press narrows the board to the critical+warning short list (KPI Customers 8→5) as the line lands. Proven non-mutating (applyFilter re-render only)."
+    },
+    {
+      "op": "click",
+      "target": "viewAll",
+      "pressAt": 103.6,
+      "hoverMs": 350,
+      "postcondition": "viewAllActive",
+      "timeoutMs": 4000,
+      "note": "step 6 (p30): 'then drop back to All Accounts' — the restore press returns the full board (8 customers); reversible, view only, same as the filters"
+    },
+    {
+      "op": "move",
+      "at": 105.5,
+      "to": {
+        "target": "savedViews",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p31): hold beside the presets for 'View only, same as the filters'"
+    },
+    {
+      "op": "log-rect",
+      "at": 107.68,
+      "key": "kpiBarRect",
+      "target": "kpiBar",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 107.72,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiTotal",
+        "kpiCritical",
+        "kpiWarning",
+        "kpiHealthy",
+        "kpiSla"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 107.76,
+      "to": {
+        "target": "kpiBar",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p32): 'Across the top, five cards' — settle above the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 109.95,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 7 (p33): name the five cards left to right — Customers"
+    },
+    {
+      "op": "move",
+      "at": 111.0,
+      "to": {
+        "target": "kpiCritical",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 7 (p33): critical"
+    },
+    {
+      "op": "move",
+      "at": 111.9,
+      "to": {
+        "target": "kpiWarning",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 7 (p33): warning"
+    },
+    {
+      "op": "move",
+      "at": 112.7,
+      "to": {
+        "target": "kpiHealthy",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 7 (p33): healthy"
+    },
+    {
+      "op": "move",
+      "at": 113.6,
+      "to": {
+        "target": "kpiSla",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 7 (p33): and average S-L-A"
+    },
+    {
+      "op": "move",
+      "at": 115.2,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          40,
+          14
+        ]
+      },
+      "note": "step 7 (p34): the first four sort your accounts by health"
+    },
+    {
+      "op": "move",
+      "at": 117.7,
+      "to": {
+        "target": "kpiSla",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 7 (p35-p36): the last one is the service level for the whole board — a number you can quote in a stand-up"
+    },
+    {
+      "op": "move",
+      "at": 121.5,
+      "to": {
+        "point": [
+          730,
+          300
+        ]
+      },
+      "note": "step 7 (p36 tail): ease off the band"
+    },
+    {
+      "op": "log-rect",
+      "at": 125.68,
+      "key": "kpiCritSplitRect",
+      "target": "kpiCritSplit"
+    },
+    {
+      "op": "log-rects",
+      "at": 125.72,
+      "key": "kpiSplits",
+      "targets": [
+        "kpiTotalSplit",
+        "kpiCritSplit",
+        "kpiWarnSplit",
+        "kpiHlthSplit"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 125.76,
+      "to": {
+        "target": "kpiTotalSplit",
+        "offset": [
+          0,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p37): 'Read the small print under each count' — settle on the E/G split line"
+    },
+    {
+      "op": "move",
+      "at": 128.6,
+      "to": {
+        "target": "kpiTotalSplit",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p38): every card splits enterprise against general — Customers 3E · 5G"
+    },
+    {
+      "op": "move",
+      "at": 129.6,
+      "to": {
+        "target": "kpiCritSplit",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p38): Critical 2E · 0G"
+    },
+    {
+      "op": "move",
+      "at": 130.4,
+      "to": {
+        "target": "kpiWarnSplit",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p38): Warning 1E · 2G"
+    },
+    {
+      "op": "move",
+      "at": 131.1,
+      "to": {
+        "target": "kpiHlthSplit",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p38): Healthy 0E · 3G"
+    },
+    {
+      "op": "move",
+      "at": 131.51,
+      "to": {
+        "target": "kpiCritSplit",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p39-p41): hold on the splits — a card tells you the total and which tier carries the weight, where you decide who gets the first call"
+    },
+    {
+      "op": "log-rect",
+      "at": 140.96,
+      "key": "kpiSlaRect",
+      "target": "kpiSla",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 141.0,
+      "key": "slaTrendRect",
+      "target": "slaTrend"
+    },
+    {
+      "op": "move",
+      "at": 141.04,
+      "to": {
+        "target": "kpiSla",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p42): 'The average S-L-A card earns a second look' — settle above the AVG SLA card"
+    },
+    {
+      "op": "move",
+      "at": 143.77,
+      "to": {
+        "target": "kpiSla",
+        "offset": [
+          -70,
+          10
+        ]
+      },
+      "note": "step 9 (p43): it reads just over ninety-seven percent (97.1%)"
+    },
+    {
+      "op": "move",
+      "at": 148.72,
+      "to": {
+        "target": "slaTrend",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p44): the day-over-day drift beneath it — a down arrow is a quiet alarm (↓ 0.3% vs yesterday)"
+    },
+    {
+      "op": "move",
+      "at": 151.72,
+      "to": {
+        "target": "slaTrend",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p45-p46): attainment slipped since yesterday, worth chasing down before it grows"
+    },
+    {
+      "op": "log-rect",
+      "at": 157.79,
+      "key": "mapEyebrowRect",
+      "target": "mapEyebrow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 157.83,
+      "key": "mapLegendRect",
+      "target": "mapLegend"
+    },
+    {
+      "op": "log-rect",
+      "at": 157.87,
+      "key": "mapTitleRect",
+      "target": "mapTitle"
+    },
+    {
+      "op": "move",
+      "at": 157.91,
+      "to": {
+        "target": "mapEyebrow",
+        "offset": [
+          40,
+          22
+        ]
+      },
+      "note": "step 10 (p47): 'Drop to Network Coverage' — settle on the panel header"
+    },
+    {
+      "op": "move",
+      "at": 159.76,
+      "to": {
+        "target": "mapLegend",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 10 (p48): every supported site painted by health — green, amber, red (the legend)"
+    },
+    {
+      "op": "move",
+      "at": 162.97,
+      "to": {
+        "target": "mapTitle",
+        "offset": [
+          40,
+          16
+        ]
+      },
+      "note": "step 10 (p49): the header counts the customers, the locations, and the states behind them"
+    },
+    {
+      "op": "move",
+      "at": 164.84,
+      "to": {
+        "point": [
+          700,
+          620
+        ]
+      },
+      "note": "step 10 (p50-p51): ease over the map — the shape of the whole network, where a regional pattern jumps out"
+    },
+    {
+      "op": "log-rect",
+      "at": 175.46,
+      "key": "zoomCtrlsRect",
+      "target": "zoomCtrls",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 175.51,
+      "to": {
+        "point": [
+          1150,
+          760
+        ]
+      },
+      "note": "step 11 (p52): 'The map is live under your cursor' — ease over the map body"
+    },
+    {
+      "op": "move",
+      "at": 177.84,
+      "to": {
+        "target": "zoomIn",
+        "offset": [
+          -42,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p53): plus and minus zoom, the arrows go full screen — located from beside, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 181.22,
+      "to": {
+        "point": [
+          1000,
+          600
+        ]
+      },
+      "note": "step 11 (p54): the numbered bubbles group nearby sites by their worst case (pointed at over the map)"
+    },
+    {
+      "op": "move",
+      "at": 185.29,
+      "to": {
+        "point": [
+          880,
+          520
+        ]
+      },
+      "note": "step 11 (p55): 'Click a state or a cluster and it drops you into that region' — gestured over the map, never clicked (no site is opened on camera)"
+    },
+    {
+      "op": "log-rect",
+      "at": 190.4,
+      "key": "feedTabsRect",
+      "target": "feedTabsRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 190.44,
+      "key": "feedTabs",
+      "targets": [
+        "tabIncidents",
+        "tabLocations",
+        "tabCustomers"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 190.48,
+      "to": {
+        "target": "tabIncidents",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p56): 'Swing to the feed on the right' — settle above the feed tabs"
+    },
+    {
+      "op": "move",
+      "at": 192.43,
+      "to": {
+        "target": "tabIncidents",
+        "offset": [
+          0,
+          14
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p57): incidents"
+    },
+    {
+      "op": "move",
+      "at": 192.9,
+      "to": {
+        "target": "tabLocations",
+        "offset": [
+          0,
+          14
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p57): locations"
+    },
+    {
+      "op": "move",
+      "at": 193.3,
+      "to": {
+        "target": "tabCustomers",
+        "offset": [
+          0,
+          14
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p57): customers, each with a live count"
+    },
+    {
+      "op": "move",
+      "at": 193.56,
+      "to": {
+        "target": "tabIncidents",
+        "offset": [
+          0,
+          14
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p58): Incidents is the default and the one you live in — pointed at, tab is not switched"
+    },
+    {
+      "op": "move",
+      "at": 196.34,
+      "to": {
+        "target": "tabLocations",
+        "offset": [
+          20,
+          14
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p59-p60): the other two re-cut the same trouble by site and by account"
+    },
+    {
+      "op": "log-rect",
+      "at": 207.2,
+      "key": "sevCritRect",
+      "target": "sevCrit",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 207.24,
+      "key": "sevHdrs",
+      "targets": [
+        "sevCrit",
+        "sevWarn",
+        "sevInfo"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 207.28,
+      "to": {
+        "target": "sevCrit",
+        "offset": [
+          -18,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p61): 'The feed stacks by severity' — settle beside the Critical band header"
+    },
+    {
+      "op": "move",
+      "at": 209.46,
+      "to": {
+        "target": "sevCrit",
+        "offset": [
+          -18,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p62): Critical up top"
+    },
+    {
+      "op": "move",
+      "at": 210.0,
+      "to": {
+        "target": "sevWarn",
+        "offset": [
+          -18,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p62): then warning"
+    },
+    {
+      "op": "move",
+      "at": 210.4,
+      "to": {
+        "target": "sevInfo",
+        "offset": [
+          -18,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p62): then info and monitoring, each with its own tally"
+    },
+    {
+      "op": "move",
+      "at": 210.64,
+      "to": {
+        "target": "sevCrit",
+        "offset": [
+          -18,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p63-p64): hold beside the bands — these count incidents, while the cards up top count customers; two different denominators"
+    },
+    {
+      "op": "log-rect",
+      "at": 225.0,
+      "key": "row1Rect",
+      "target": "row1",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 225.04,
+      "key": "rowParts",
+      "targets": [
+        "row1cust",
+        "row1tier",
+        "row1title",
+        "row1chip",
+        "row1assign",
+        "row1time"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 225.08,
+      "key": "assignUnassignedRect",
+      "target": "assignUnassigned"
+    },
+    {
+      "op": "move",
+      "at": 225.12,
+      "to": {
+        "target": "row1",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p65): 'Now read one row' — settle above the top incident row (row is a link; it is read, never opened)"
+    },
+    {
+      "op": "move",
+      "at": 227.35,
+      "to": {
+        "target": "row1cust",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p66): the customer"
+    },
+    {
+      "op": "move",
+      "at": 228.35,
+      "to": {
+        "target": "row1tier",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p66): its tier"
+    },
+    {
+      "op": "move",
+      "at": 229.05,
+      "to": {
+        "target": "row1title",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p66): the headline of what broke"
+    },
+    {
+      "op": "move",
+      "at": 229.9,
+      "to": {
+        "target": "row1chip",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p66): a tag for the kind of failure"
+    },
+    {
+      "op": "move",
+      "at": 230.82,
+      "to": {
+        "target": "row1assign",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p67): an owner or a status"
+    },
+    {
+      "op": "move",
+      "at": 233.5,
+      "to": {
+        "target": "row1time",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p67): and how long it has been running"
+    },
+    {
+      "op": "move",
+      "at": 236.43,
+      "to": {
+        "target": "row1time",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p68): that last part matters most — the age"
+    },
+    {
+      "op": "move",
+      "at": 238.55,
+      "to": {
+        "target": "assignUnassigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p69): 'An old, unassigned critical is the one that should bother you' — point at a live Unassigned chip (never claimed or assigned)"
+    },
+    {
+      "op": "move",
+      "at": 242.31,
+      "to": {
+        "point": [
+          1646,
+          300
+        ]
+      },
+      "note": "step 14 (p70): ease off — 'Read it here; you work it somewhere else'"
+    },
+    {
+      "op": "log-rect",
+      "at": 244.96,
+      "key": "kpiBarRect2",
+      "target": "kpiBar"
+    },
+    {
+      "op": "log-rect",
+      "at": 245.0,
+      "key": "tierToggleRect3",
+      "target": "tierToggle"
+    },
+    {
+      "op": "log-rect",
+      "at": 245.04,
+      "key": "mapSectionRect",
+      "target": "mapSection"
+    },
+    {
+      "op": "log-rect",
+      "at": 245.08,
+      "key": "feedTabsRect2",
+      "target": "feedTabsRow"
+    },
+    {
+      "op": "move",
+      "at": 245.12,
+      "to": {
+        "target": "tierToggle",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 15 (p71-p72): recap — 'So that is the cockpit. Filters and saved views aim it' — start at the filter row"
+    },
+    {
+      "op": "move",
+      "at": 247.5,
+      "to": {
+        "target": "savedViews",
+        "offset": [
+          0,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 15 (p72): and the saved views"
+    },
+    {
+      "op": "move",
+      "at": 249.29,
+      "to": {
+        "target": "kpiBar",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "step 15 (p73): the cards and the map give you the shape at a glance — the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 250.0,
+      "to": {
+        "point": [
+          600,
+          620
+        ]
+      },
+      "note": "step 15 (p73): sweep down into the map"
+    },
+    {
+      "op": "move",
+      "at": 250.54,
+      "to": {
+        "target": "feedTabsRow",
+        "offset": [
+          -28,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 15 (p74): the feed tells you what is broken and who has it"
+    },
+    {
+      "op": "move",
+      "at": 253.51,
+      "to": {
+        "point": [
+          960,
+          420
+        ]
+      },
+      "note": "step 15 (p75): 'Nothing here changes a thing' — ease to center"
+    },
+    {
+      "op": "move",
+      "at": 257.05,
+      "to": {
+        "point": [
+          940,
+          480
+        ]
+      },
+      "note": "step 15 (p76-p77): you spot it here, then open the customer, ticket, or alert somewhere else to fix it"
+    },
+    {
+      "op": "move",
+      "at": 265.3,
+      "to": {
+        "point": [
+          1540,
+          930
+        ]
+      },
+      "note": "step 15 (p78): final park, clear of content and captions, as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 268.8,
+      "predicate": "onNoc",
+      "note": "end state: still on the ML Command Center, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 269.0,
+      "predicate": "feedIntact",
+      "note": "end state: feed intact — 10 incident rows; nothing was created, opened, claimed, assigned, or resolved"
+    },
+    {
+      "op": "assert",
+      "at": 269.1,
+      "predicate": "noDrawer",
+      "note": "end state: the customer detail drawer never opened — Create Ticket / View Full Profile were never reached"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "brandBlockRect",
+        "place": "below-left",
+        "from": 0.9,
+        "to": 6.0
+      },
+      {
+        "n": 2,
+        "anchor": "critBadgeRect",
+        "place": "below-left",
+        "from": 18.5,
+        "to": 39.3
+      },
+      {
+        "n": 3,
+        "anchor": "tierToggleRect",
+        "place": "below-left",
+        "from": 40.0,
+        "to": 57.0
+      },
+      {
+        "n": 4,
+        "anchor": "tierToggleRect2",
+        "place": "below-left",
+        "from": 57.8,
+        "to": 71.2
+      },
+      {
+        "n": 5,
+        "anchor": "pillsRect",
+        "place": "below-left",
+        "from": 72.2,
+        "to": 89.3
+      },
+      {
+        "n": 6,
+        "anchor": "savedViewsRect",
+        "place": "below-left",
+        "from": 90.2,
+        "to": 107.1
+      },
+      {
+        "n": 7,
+        "anchor": "kpiBarRect",
+        "place": "below-left",
+        "from": 107.9,
+        "to": 125.1
+      },
+      {
+        "n": 8,
+        "anchor": "kpiCritSplitRect",
+        "place": "below-left",
+        "from": 125.9,
+        "to": 140.4
+      },
+      {
+        "n": 9,
+        "anchor": "kpiSlaRect",
+        "place": "below-left",
+        "from": 141.2,
+        "to": 157.2
+      },
+      {
+        "n": 10,
+        "anchor": "mapEyebrowRect",
+        "place": "right",
+        "from": 158.0,
+        "to": 174.8
+      },
+      {
+        "n": 11,
+        "anchor": "zoomCtrlsRect",
+        "place": "right",
+        "from": 175.6,
+        "to": 189.9
+      },
+      {
+        "n": 12,
+        "anchor": "feedTabsRect",
+        "place": "below-left",
+        "from": 190.6,
+        "to": 206.6
+      },
+      {
+        "n": 13,
+        "anchor": "sevCritRect",
+        "place": "left",
+        "from": 207.4,
+        "to": 224.5
+      },
+      {
+        "n": 14,
+        "anchor": "row1Rect",
+        "place": "left",
+        "from": 225.3,
+        "to": 244.4
+      },
+      {
+        "n": 15,
+        "anchor": "kpiBarRect2",
+        "place": "below-left",
+        "from": 245.3,
+        "to": 266.5
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "brandBlockRect",
+        "from": 0.9,
+        "to": 3.0,
+        "note": "step 1 (p01): the Micrologic NOC header title"
+      },
+      {
+        "anchor": "statusCluster.critBadge",
+        "from": 20.32,
+        "to": 24.07,
+        "note": "step 2 (p07): the red 2 CRITICAL count"
+      },
+      {
+        "anchor": "statusCluster.livePill",
+        "from": 24.07,
+        "to": 27.85,
+        "note": "step 2 (p08): the green LIVE badge"
+      },
+      {
+        "anchor": "statusCluster.syncLbl",
+        "from": 27.85,
+        "to": 29.6,
+        "note": "step 2 (p08-p09): Updated just now"
+      },
+      {
+        "anchor": "statusCluster.searchBox",
+        "from": 29.22,
+        "to": 39.2,
+        "note": "step 2 (p10): the header search box (never typed in)"
+      },
+      {
+        "anchor": "tierBtns.tierAll",
+        "from": 40.4,
+        "to": 41.8,
+        "note": "step 3 (p11): all customers"
+      },
+      {
+        "anchor": "tierBtns.tierEnt",
+        "from": 41.8,
+        "to": 43.0,
+        "note": "step 3 (p11): enterprise"
+      },
+      {
+        "anchor": "tierBtns.tierGen",
+        "from": 43.0,
+        "to": 44.2,
+        "note": "step 3 (p11): general"
+      },
+      {
+        "anchor": "tierToggleRect2",
+        "from": 59.0,
+        "to": 63.56,
+        "note": "step 4 (p16-p17): Enterprise selected — the board re-scopes (KPI Customers 8→3)"
+      },
+      {
+        "anchor": "tierBtns.tierAll",
+        "from": 64.8,
+        "to": 67.5,
+        "note": "step 4 (p18): All Customers restores the full board"
+      },
+      {
+        "anchor": "pillChips.pillCrit",
+        "from": 75.03,
+        "to": 75.4,
+        "note": "step 5 (p21): Critical"
+      },
+      {
+        "anchor": "pillChips.pillWarn",
+        "from": 75.4,
+        "to": 75.75,
+        "note": "step 5 (p21): warning"
+      },
+      {
+        "anchor": "pillChips.pillHealthy",
+        "from": 75.75,
+        "to": 76.6,
+        "note": "step 5 (p21): healthy"
+      },
+      {
+        "anchor": "viewBtns.viewAll",
+        "from": 91.21,
+        "to": 93.06,
+        "note": "step 6 (p26): All Accounts"
+      },
+      {
+        "anchor": "viewBtns.viewEntCrit",
+        "from": 93.06,
+        "to": 94.2,
+        "note": "step 6 (p27): Enterprise Critical"
+      },
+      {
+        "anchor": "viewBtns.viewNeeds",
+        "from": 94.2,
+        "to": 95.2,
+        "note": "step 6 (p27): Needs Attention"
+      },
+      {
+        "anchor": "viewBtns.viewNeeds",
+        "from": 99.2,
+        "to": 102.87,
+        "note": "step 6 (p29): Needs Attention active — the short list (KPI Customers 8→5)"
+      },
+      {
+        "anchor": "kpiTiles.kpiTotal",
+        "from": 109.95,
+        "to": 111.0,
+        "note": "step 7 (p33): Customers"
+      },
+      {
+        "anchor": "kpiTiles.kpiCritical",
+        "from": 111.0,
+        "to": 111.9,
+        "note": "step 7 (p33): Critical"
+      },
+      {
+        "anchor": "kpiTiles.kpiWarning",
+        "from": 111.9,
+        "to": 112.7,
+        "note": "step 7 (p33): Warning"
+      },
+      {
+        "anchor": "kpiTiles.kpiHealthy",
+        "from": 112.7,
+        "to": 113.6,
+        "note": "step 7 (p33): Healthy"
+      },
+      {
+        "anchor": "kpiTiles.kpiSla",
+        "from": 113.6,
+        "to": 114.7,
+        "note": "step 7 (p33): Avg SLA"
+      },
+      {
+        "anchor": "kpiTiles.kpiSla",
+        "from": 117.7,
+        "to": 121.3,
+        "note": "step 7 (p35): the board service-level number"
+      },
+      {
+        "anchor": "kpiSplits.kpiTotalSplit",
+        "from": 128.6,
+        "to": 129.6,
+        "note": "step 8 (p38): 3E · 5G"
+      },
+      {
+        "anchor": "kpiSplits.kpiCritSplit",
+        "from": 129.6,
+        "to": 130.4,
+        "note": "step 8 (p38): 2E · 0G"
+      },
+      {
+        "anchor": "kpiSplits.kpiWarnSplit",
+        "from": 130.4,
+        "to": 131.1,
+        "note": "step 8 (p38): 1E · 2G"
+      },
+      {
+        "anchor": "kpiSplits.kpiHlthSplit",
+        "from": 131.1,
+        "to": 133.5,
+        "note": "step 8 (p38): 0E · 3G"
+      },
+      {
+        "anchor": "slaTrendRect",
+        "from": 148.72,
+        "to": 157.0,
+        "note": "step 9 (p44-p46): the ↓ 0.3% vs yesterday drift"
+      },
+      {
+        "anchor": "mapLegendRect",
+        "from": 159.76,
+        "to": 162.97,
+        "note": "step 10 (p48): the Healthy / Warning / Critical legend"
+      },
+      {
+        "anchor": "mapTitleRect",
+        "from": 162.97,
+        "to": 164.84,
+        "note": "step 10 (p49): 8 customers · 43 locations across 13 states"
+      },
+      {
+        "anchor": "zoomCtrlsRect",
+        "from": 177.84,
+        "to": 181.22,
+        "note": "step 11 (p53): the zoom controls (located, never pressed)"
+      },
+      {
+        "anchor": "feedTabs.tabIncidents",
+        "from": 193.56,
+        "to": 196.34,
+        "note": "step 12 (p58): Incidents is the default tab"
+      },
+      {
+        "anchor": "sevHdrs.sevCrit",
+        "from": 209.46,
+        "to": 210.0,
+        "note": "step 13 (p62): Critical"
+      },
+      {
+        "anchor": "sevHdrs.sevWarn",
+        "from": 210.0,
+        "to": 210.4,
+        "note": "step 13 (p62): Warning"
+      },
+      {
+        "anchor": "sevHdrs.sevInfo",
+        "from": 210.4,
+        "to": 211.2,
+        "note": "step 13 (p62): Info / Monitoring"
+      },
+      {
+        "anchor": "row1Rect",
+        "from": 225.3,
+        "to": 244.4,
+        "color": "#dc2626",
+        "note": "step 14: do-not-click STOP ring over the incident row — the row is a link into the parked customer/claim drawer; it is read, never opened"
+      },
+      {
+        "anchor": "rowParts.row1cust",
+        "from": 227.35,
+        "to": 228.35,
+        "note": "step 14 (p66): the customer"
+      },
+      {
+        "anchor": "rowParts.row1tier",
+        "from": 228.35,
+        "to": 229.05,
+        "note": "step 14 (p66): the tier chip"
+      },
+      {
+        "anchor": "rowParts.row1title",
+        "from": 229.05,
+        "to": 229.9,
+        "note": "step 14 (p66): the headline"
+      },
+      {
+        "anchor": "rowParts.row1chip",
+        "from": 229.9,
+        "to": 230.82,
+        "note": "step 14 (p66): the category tag"
+      },
+      {
+        "anchor": "rowParts.row1assign",
+        "from": 230.82,
+        "to": 233.5,
+        "note": "step 14 (p67): the owner / status chip"
+      },
+      {
+        "anchor": "rowParts.row1time",
+        "from": 233.5,
+        "to": 238.55,
+        "note": "step 14 (p67-p68): the age"
+      },
+      {
+        "anchor": "assignUnassignedRect",
+        "from": 238.55,
+        "to": 242.0,
+        "color": "#dc2626",
+        "note": "step 14 (p69): a live Unassigned critical — do-not-click; never claimed or assigned"
+      },
+      {
+        "anchor": "tierToggleRect3",
+        "from": 245.12,
+        "to": 249.29,
+        "note": "step 15 (p72): filters and saved views aim the board"
+      },
+      {
+        "anchor": "kpiBarRect2",
+        "from": 249.29,
+        "to": 250.54,
+        "note": "step 15 (p73): the cards give the shape"
+      },
+      {
+        "anchor": "feedTabsRect2",
+        "from": 250.54,
+        "to": 253.51,
+        "note": "step 15 (p74): the feed lists what is broken and who owns it"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 0.7,
+        "z": 1.3,
+        "cx": 320,
+        "cy": 110,
+        "ease": true,
+        "note": "step 1: the Micrologic NOC header title"
+      },
+      {
+        "t": 5.6,
+        "z": 1.3,
+        "cx": 320,
+        "cy": 110
+      },
+      {
+        "t": 6.4,
+        "z": 1.06,
+        "cx": 940,
+        "cy": 500,
+        "ease": true,
+        "note": "wide for the cross-customer board concept"
+      },
+      {
+        "t": 18.0,
+        "z": 1.06,
+        "cx": 940,
+        "cy": 500
+      },
+      {
+        "t": 18.4,
+        "z": 1.22,
+        "cx": 820,
+        "cy": 110,
+        "ease": true,
+        "note": "step 2: the header status strip"
+      },
+      {
+        "t": 23.6,
+        "z": 1.22,
+        "cx": 820,
+        "cy": 110
+      },
+      {
+        "t": 23.95,
+        "z": 1.5,
+        "cx": 1700,
+        "cy": 120,
+        "ease": true,
+        "note": "step 2: 150% on LIVE + Updated just now (shot list)"
+      },
+      {
+        "t": 28.9,
+        "z": 1.5,
+        "cx": 1700,
+        "cy": 120
+      },
+      {
+        "t": 29.25,
+        "z": 1.3,
+        "cx": 1120,
+        "cy": 110,
+        "ease": true,
+        "note": "step 2: the header search box"
+      },
+      {
+        "t": 39.3,
+        "z": 1.3,
+        "cx": 1120,
+        "cy": 110
+      },
+      {
+        "t": 39.9,
+        "z": 1.34,
+        "cx": 250,
+        "cy": 110,
+        "ease": true,
+        "note": "step 3: the scope filters"
+      },
+      {
+        "t": 57.0,
+        "z": 1.34,
+        "cx": 250,
+        "cy": 110
+      },
+      {
+        "t": 57.7,
+        "z": 1.2,
+        "cx": 420,
+        "cy": 120,
+        "ease": true,
+        "note": "step 4: the tier toggle with the KPI band below (re-scope visible)"
+      },
+      {
+        "t": 71.2,
+        "z": 1.2,
+        "cx": 420,
+        "cy": 120
+      },
+      {
+        "t": 72.05,
+        "z": 1.34,
+        "cx": 545,
+        "cy": 110,
+        "ease": true,
+        "note": "step 5: the status chips"
+      },
+      {
+        "t": 89.3,
+        "z": 1.34,
+        "cx": 545,
+        "cy": 110
+      },
+      {
+        "t": 90.05,
+        "z": 1.18,
+        "cx": 700,
+        "cy": 130,
+        "ease": true,
+        "note": "step 6: the saved views with the KPI band below (re-scope visible)"
+      },
+      {
+        "t": 107.1,
+        "z": 1.18,
+        "cx": 700,
+        "cy": 130
+      },
+      {
+        "t": 107.8,
+        "z": 1.2,
+        "cx": 730,
+        "cy": 115,
+        "ease": true,
+        "note": "step 7: the full KPI band"
+      },
+      {
+        "t": 125.1,
+        "z": 1.2,
+        "cx": 730,
+        "cy": 115
+      },
+      {
+        "t": 125.8,
+        "z": 1.48,
+        "cx": 500,
+        "cy": 122,
+        "ease": true,
+        "note": "step 8: 150% on the E/G split line (shot list)"
+      },
+      {
+        "t": 140.4,
+        "z": 1.48,
+        "cx": 500,
+        "cy": 122
+      },
+      {
+        "t": 141.1,
+        "z": 1.48,
+        "cx": 1210,
+        "cy": 112,
+        "ease": true,
+        "note": "step 9: 150% on the Avg SLA card (shot list)"
+      },
+      {
+        "t": 157.2,
+        "z": 1.48,
+        "cx": 1210,
+        "cy": 112
+      },
+      {
+        "t": 157.9,
+        "z": 1.16,
+        "cx": 730,
+        "cy": 400,
+        "ease": true,
+        "note": "step 10: the Network Coverage panel"
+      },
+      {
+        "t": 174.8,
+        "z": 1.16,
+        "cx": 730,
+        "cy": 400
+      },
+      {
+        "t": 175.5,
+        "z": 1.3,
+        "cx": 1180,
+        "cy": 800,
+        "ease": true,
+        "note": "step 11: the map controls and cluster bubbles"
+      },
+      {
+        "t": 189.9,
+        "z": 1.3,
+        "cx": 1180,
+        "cy": 800
+      },
+      {
+        "t": 190.5,
+        "z": 1.28,
+        "cx": 1646,
+        "cy": 280,
+        "ease": true,
+        "note": "step 12: the feed tabs"
+      },
+      {
+        "t": 206.6,
+        "z": 1.28,
+        "cx": 1646,
+        "cy": 280
+      },
+      {
+        "t": 207.3,
+        "z": 1.12,
+        "cx": 1646,
+        "cy": 470,
+        "ease": true,
+        "note": "step 13: the feed severity bands"
+      },
+      {
+        "t": 224.5,
+        "z": 1.12,
+        "cx": 1646,
+        "cy": 470
+      },
+      {
+        "t": 225.2,
+        "z": 1.38,
+        "cx": 1636,
+        "cy": 185,
+        "ease": true,
+        "note": "step 14: the top incident row anatomy"
+      },
+      {
+        "t": 244.4,
+        "z": 1.38,
+        "cx": 1636,
+        "cy": 185
+      },
+      {
+        "t": 245.2,
+        "z": 1.08,
+        "cx": 960,
+        "cy": 420,
+        "ease": true,
+        "note": "step 15: recap sweep across the whole board"
+      },
+      {
+        "t": 265.0,
+        "z": 1.08,
+        "cx": 960,
+        "cy": 420
+      },
+      {
+        "t": 266.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 269.714,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "ML Command Center — Complete",
+      "from": 267.9,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 267.6
+  },
+  "output": "WC-10-01-ml-command-center-v1.1",
+  "neverClick": [
+    "log ?out",
+    "logout",
+    "log out now",
+    "create ticket",
+    "view full profile",
+    "\\bassign\\b",
+    "assign to",
+    "reassign",
+    "\\bclaim\\b",
+    "refresh",
+    "\\bsend\\b",
+    "submit",
+    "\\bsave\\b",
+    "save changes",
+    "delete",
+    "\\bedit\\b",
+    "\\bnew\\b",
+    "export",
+    "approve",
+    "refund",
+    "account menu / MG avatar (opens the account dropdown that holds Log Out)",
+    "incident rows / noc-inc-row (each is a link into the parked customer + claim drawer; read, never opened)",
+    "map states / cluster bubbles (zoom navigation — pointed at, never clicked on camera)"
+  ]
+}

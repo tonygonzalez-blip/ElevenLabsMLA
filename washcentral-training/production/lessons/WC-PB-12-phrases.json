@@ -1,0 +1,167 @@
+{
+  "lesson": "WC-PB-12",
+  "audioMaster": "training/playbooks/WC-PB-12-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; pronunciation spellings kept exactly as written, e.g. 'C-R-M', 'T-C-P-A', 'SLA'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s13 end at 256.629s, which overshoots the ffprobe-probed master (256.209s) by 0.420s (> 0.3 tolerance) because the master was joined with 12 inter-block gaps of ~0.36s each (avg 0.398s) and NO trailing gap, so the +0.4-per-block formula accumulates a spurious 13th gap. Onsets were therefore measured by normalized cross-correlation of each WC-PB-12-sNN.mp3 against the joined master (8 kHz mono PCM); all 13 blocks matched at score >= 0.9999. Master ffprobe duration 256.209s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 18.4,
+      "phrases": [
+        { "id": "p01", "text": "Start in Settings, under AI Agent, and open Conversations." },
+        { "id": "p02", "text": "This is the customer facing agent, the one your customers text and talk to." },
+        { "id": "p03", "text": "Not Ask Shyne in the header. That's a staff tool, and a different playbook." },
+        { "id": "p04", "text": "The transcript is the ticket, so this log is always your first stop." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 18.4,
+      "endS": 41.84,
+      "phrases": [
+        { "id": "p05", "text": "Read the layout before you search." },
+        { "id": "p06", "text": "Six KPIs across the top cover thirty days." },
+        { "id": "p07", "text": "Below them, a table: customer, channel, topic, status, message count, sentiment." },
+        { "id": "p08", "text": "Today's demo tenant shows no conversations at all, while Analytics reports thousands." },
+        { "id": "p09", "text": "That gap is a demo artifact. Trust this log only after it actually loads." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 41.84,
+      "endS": 60.32,
+      "phrases": [
+        { "id": "p10", "text": "Now narrow to the chat in question." },
+        { "id": "p11", "text": "Search or filter on the customer, the channel, or the topic." },
+        { "id": "p12", "text": "The message count tells you how long the exchange dragged on," },
+        { "id": "p13", "text": "and sentiment tells you how it felt." },
+        { "id": "p14", "text": "Opening the row gives you the full back and forth plus the conversation ID." },
+        { "id": "p15", "text": "That ID rides along into your ticket." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 60.32,
+      "endS": 74.16,
+      "phrases": [
+        { "id": "p16", "text": "Next question: did it hand off when it should have? Click Escalations." },
+        { "id": "p17", "text": "Seven open, three claimed, one SLA breach." },
+        { "id": "p18", "text": "Average wait, six minutes and change." },
+        { "id": "p19", "text": "This queue is where the agent admits it needs a human." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 74.16,
+      "endS": 99.28,
+      "phrases": [
+        { "id": "p20", "text": "The reason column is the diagnostic." },
+        { "id": "p21", "text": "Negative sentiment on a billing dispute. A refund above the cap." },
+        { "id": "p22", "text": "A customer asking for a manager. Eight turns with no resolution." },
+        { "id": "p23", "text": "Those are the guardrails, and a healthy agent trips them." },
+        { "id": "p24", "text": "If your customer's chat sits here with a sensible reason, the agent behaved." },
+        { "id": "p25", "text": "If it never showed up, that gap is the misbehavior you report." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 99.28,
+      "endS": 112.8,
+      "phrases": [
+        { "id": "p26", "text": "So where does a handoff land?" },
+        { "id": "p27", "text": "In the C-R-M module, under Service Desk, open the Agent Console." },
+        { "id": "p28", "text": "This is the human side of the escalation you just read." },
+        { "id": "p29", "text": "A teammate sets themselves available and picks the case up right here." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 112.8,
+      "endS": 131.12,
+      "phrases": [
+        { "id": "p30", "text": "Look over the queue controls." },
+        { "id": "p31", "text": "Filters for mine, unassigned, team, and all. Channel chips." },
+        { "id": "p32", "text": "Sort by longest wait or by priority." },
+        { "id": "p33", "text": "Today the queue is empty, so the console panes stay blank." },
+        { "id": "p34", "text": "That's fine. You came to confirm the intake exists, not to claim anything." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 131.12,
+      "endS": 145.28,
+      "phrases": [
+        { "id": "p35", "text": "Now chase the bad answer. Back in Settings, open the Knowledge Base." },
+        { "id": "p36", "text": "These are the documents the agent searches before it answers a customer." },
+        { "id": "p37", "text": "A wrong answer usually starts here, with an article that went stale or never existed at all." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 145.28,
+      "endS": 164.56,
+      "phrases": [
+        { "id": "p38", "text": "Read the table, not just the counts." },
+        { "id": "p39", "text": "Status tells you whether an article is indexed and searchable." },
+        { "id": "p40", "text": "Updated tells you how old it is." },
+        { "id": "p41", "text": "Search the topic the customer asked about," },
+        { "id": "p42", "text": "and if nothing comes back, you have probably found your cause." },
+        { "id": "p43", "text": "Leave the add and re-index controls alone. Each one changes the index." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 164.56,
+      "endS": 180.32,
+      "phrases": [
+        { "id": "p44", "text": "Channel next. Open Channels and Deployment." },
+        { "id": "p45", "text": "Three channels, three of three live." },
+        { "id": "p46", "text": "Thirty day uptime just shy of one hundred percent, latency around four hundred milliseconds." },
+        { "id": "p47", "text": "Healthy numbers up top. The story is in the cards below." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 180.32,
+      "endS": 207.04,
+      "phrases": [
+        { "id": "p48", "text": "Read all three cards, and touch none of the test controls." },
+        { "id": "p49", "text": "Web chat is installed and live." },
+        { "id": "p50", "text": "SMS is live, with stop and help handled automatically." },
+        { "id": "p51", "text": "Voice is beta, and beta means rougher behavior is expected, so say so up front." },
+        { "id": "p52", "text": "And that nighttime silence complaint? Quiet hours." },
+        { "id": "p53", "text": "The overview page flags T-C-P-A quiet hours on for SMS." },
+        { "id": "p54", "text": "The agent wasn't ignoring anyone. It was honoring the window." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 207.04,
+      "endS": 229.12,
+      "phrases": [
+        { "id": "p55", "text": "One more page. Analytics." },
+        { "id": "p56", "text": "Thirty eight hundred conversations in thirty days," },
+        { "id": "p57", "text": "and seventy eight percent never needed a human." },
+        { "id": "p58", "text": "That is containment." },
+        { "id": "p59", "text": "Web runs highest, voice lowest, which fits a beta channel." },
+        { "id": "p60", "text": "A channel whose containment has slipped is real evidence the agent is struggling there," },
+        { "id": "p61", "text": "and it belongs in your escalation." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 229.12,
+      "endS": 256.209,
+      "phrases": [
+        { "id": "p62", "text": "Now write the ticket and stop." },
+        { "id": "p63", "text": "The conversation ID. The channel. The containment context." },
+        { "id": "p64", "text": "Then the finding: a missing escalation row, a stale article," },
+        { "id": "p65", "text": "or a channel state like voice beta or quiet hours." },
+        { "id": "p66", "text": "You read six screens and changed nothing." },
+        { "id": "p67", "text": "Configuration and knowledge edits happen upstream, with the right role." },
+        { "id": "p68", "text": "Your job was the diagnosis, and it's done." }
+      ]
+    }
+  ],
+  "output": "WC-PB-12-ai-agent-misbehaving-v1.1"
+}

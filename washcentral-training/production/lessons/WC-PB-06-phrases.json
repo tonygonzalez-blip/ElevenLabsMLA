@@ -1,0 +1,146 @@
+{
+  "lesson": "WC-PB-06",
+  "audioMaster": "training/playbooks/WC-PB-06-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; pronunciation spellings kept exactly as written in the script, e.g. 'P-O-S', 'R-F-I-D', 'L-P-R', and the hyphenated 'won't-scan'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s10 end at 230.482s, which overshoots the ffprobe-probed master (230.113s) by 0.369s (> 0.3 tolerance) because the concatenated MP3 frames decode shorter than the per-file duration sum. Onsets were therefore measured by normalized cross-correlation of each WC-PB-06-sNN.mp3 against the joined master decoded to 4 kHz mono PCM (all 10 blocks matched at score 1.0000). Master ffprobe duration 230.113s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 21.68,
+      "phrases": [
+        { "id": "p01", "text": "Start in CRM, on Vehicles." },
+        { "id": "p02", "text": "Read the top band before you open anyone's account." },
+        { "id": "p03", "text": "Nearly four thousand vehicles on file, and fourteen flagged." },
+        { "id": "p04", "text": "Fourteen. Across the whole network." },
+        { "id": "p05", "text": "That tells you this ticket is almost certainly one member, not a wave." },
+        { "id": "p06", "text": "So work the funnel in order: the account, the plate, the blocklist, the hardware." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 21.68,
+      "endS": 44.48,
+      "phrases": [
+        { "id": "p07", "text": "Open the member from the customer list and go to the Membership tab." },
+        { "id": "p08", "text": "Three blocks answer most of these tickets." },
+        { "id": "p09", "text": "Loyalty and points holds the barcode." },
+        { "id": "p10", "text": "That is the code the P-O-S actually reads." },
+        { "id": "p11", "text": "Plan details tells you the status is active." },
+        { "id": "p12", "text": "Billing cycle tells you the next charge, so the plan is not past due." },
+        { "id": "p13", "text": "Any of those fails, and you already have your answer." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 44.48,
+      "endS": 65.68,
+      "phrases": [
+        { "id": "p14", "text": "Now the header chips." },
+        { "id": "p15", "text": "Plate linked is the one that matters here." },
+        { "id": "p16", "text": "It says a plate is on file for the cameras." },
+        { "id": "p17", "text": "Open the Vehicles tab and read what is actually on the account." },
+        { "id": "p18", "text": "No chip, or the wrong plate, and the gate has nothing to match." },
+        { "id": "p19", "text": "Do not add a vehicle." },
+        { "id": "p20", "text": "You report the gap. You never fill it from the demo." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 65.68,
+      "endS": 95.6,
+      "phrases": [
+        { "id": "p21", "text": "Back out to CRM Vehicles and search the exact plate." },
+        { "id": "p22", "text": "The master list is the plate's own record:" },
+        { "id": "p23", "text": "license plate, make and model, year, customer, location, status, last visit." },
+        { "id": "p24", "text": "Confirm three things." },
+        { "id": "p25", "text": "Right customer. A sane status. A last visit that matches the member's story." },
+        { "id": "p26", "text": "One caution from today's capture: the list returned a fetch error." },
+        { "id": "p27", "text": "Make sure rows actually loaded before you say a plate is not on file." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 95.6,
+      "endS": 122.4,
+      "phrases": [
+        { "id": "p28", "text": "Now the blocklist. Settings, Users and Security, Blacklisted." },
+        { "id": "p29", "text": "Four columns: plate, terminal, created by, created." },
+        { "id": "p30", "text": "A plate on this list is refused at the gate no matter how healthy the membership looks." },
+        { "id": "p31", "text": "So a clean account with a won't-scan symptom sends you straight here." },
+        { "id": "p32", "text": "Read it and leave it alone." },
+        { "id": "p33", "text": "Adding or removing a blacklisted plate from the demo is forbidden." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 122.4,
+      "endS": 140.88,
+      "phrases": [
+        { "id": "p34", "text": "Both clean? Then it's the site." },
+        { "id": "p35", "text": "Open IT and Support, then System Alerts." },
+        { "id": "p36", "text": "A tunnel or P-O-S fault at the member's location would surface here." },
+        { "id": "p37", "text": "In today's corpus the page would not load at all." },
+        { "id": "p38", "text": "If it is still down when you get there, hold the parked card" },
+        { "id": "p39", "text": "and route the hardware question to the site team." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 140.88,
+      "endS": 161.68,
+      "phrases": [
+        { "id": "p40", "text": "Still in IT and Support, open the Support Queue." },
+        { "id": "p41", "text": "You want an open ticket at the member's home site." },
+        { "id": "p42", "text": "Today's capture has one: an L-P-R ticket at Miami North, high priority." },
+        { "id": "p43", "text": "L-P-R is the plate-reading hardware." },
+        { "id": "p44", "text": "An open ticket there changes your whole read." },
+        { "id": "p45", "text": "This stops being one member and becomes an attachment to a known site issue." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 161.68,
+      "endS": 184.24,
+      "phrases": [
+        { "id": "p46", "text": "One last stop, and it's a quiet one." },
+        { "id": "p47", "text": "Settings, Operations, Cancellation Reasons." },
+        { "id": "p48", "text": "The migrated reason set includes R-F-I-D tag issues, not reading." },
+        { "id": "p49", "text": "That is a recognized failure mode," },
+        { "id": "p50", "text": "and naming it tells the next team exactly what the field already knows." },
+        { "id": "p51", "text": "Confirm the wording against the live list." },
+        { "id": "p52", "text": "The rows did not load in today's capture." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 184.24,
+      "endS": 212.08,
+      "phrases": [
+        { "id": "p53", "text": "Now build the ticket." },
+        { "id": "p54", "text": "State which checks passed and which failed." },
+        { "id": "p55", "text": "Barcode present, plan active, or not." },
+        { "id": "p56", "text": "Plate linked, or not. The master-list status." },
+        { "id": "p57", "text": "Whether the plate appears on Blacklisted." },
+        { "id": "p58", "text": "Any open L-P-R ticket or system alert at the site." },
+        { "id": "p59", "text": "Tag the R-F-I-D reason when it fits, and name the location." },
+        { "id": "p60", "text": "The fix happens in production with the right role." },
+        { "id": "p61", "text": "A relink, a blocklist removal, a dispatch. Never here." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 212.08,
+      "endS": 230.113,
+      "phrases": [
+        { "id": "p62", "text": "That's the funnel." },
+        { "id": "p63", "text": "Frame it on the vehicle list." },
+        { "id": "p64", "text": "Read the barcode, the status, and the next charge." },
+        { "id": "p65", "text": "Confirm the plate is linked, find it in the master list, check the blocklist," },
+        { "id": "p66", "text": "then work the hardware trail through alerts and the queue." },
+        { "id": "p67", "text": "Most tickets never reach the bottom." },
+        { "id": "p68", "text": "And you changed nothing on the way down." }
+      ]
+    }
+  ],
+  "output": "WC-PB-06-tag-wont-scan-v1.1"
+}

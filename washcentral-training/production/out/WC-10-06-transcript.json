@@ -1,0 +1,400 @@
+{
+  "lesson": "WC-10-06",
+  "audioMaster": "training/module10-it-support/WC-10-06-full-narration-v1.0.mp3",
+  "audioDurationS": 176.196,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the site's own status board.",
+      "startS": 0,
+      "endS": 1.628,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "One location, pulled onto one screen.",
+      "startS": 1.628,
+      "endS": 3.661,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "The trail up top shows you drilled in from the network center,",
+      "startS": 3.661,
+      "endS": 7.187,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "and the back link runs you straight back there when you're done.",
+      "startS": 7.187,
+      "endS": 10.443,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Start with the header.",
+      "startS": 10.88,
+      "endS": 11.89,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Site, status, address, the account it belongs to, and who manages it, all in a single strip.",
+      "startS": 12.68,
+      "endS": 14.905,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The sync time tells you how current this is.",
+      "startS": 15.189,
+      "endS": 16.544,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Right now it's a couple of minutes old, and the status reads critical.",
+      "startS": 16.856,
+      "endS": 25.977,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Three buttons sit to the right.",
+      "startS": 26.468,
+      "endS": 28.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "These are your fast responses: open a job, ping the account manager,",
+      "startS": 28.491,
+      "endS": 31.429,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "or push the site up the priority list.",
+      "startS": 31.782,
+      "endS": 35.255,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Each one kicks off something real, so today we read them and keep our hands off.",
+      "startS": 35.963,
+      "endS": 40.081,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Now the numbers.",
+      "startS": 40.64,
+      "endS": 41.541,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Six tiles across, and every one carries its own yardstick.",
+      "startS": 42.177,
+      "endS": 45.947,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Washes and revenue today against their averages.",
+      "startS": 46.391,
+      "endS": 49.004,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Wait time and service level against target.",
+      "startS": 49.558,
+      "endS": 51.82,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "And the count of open incidents, which is where the trouble surfaces.",
+      "startS": 52.338,
+      "endS": 55.851,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "You read today's figure next to its benchmark, without doing the math yourself.",
+      "startS": 56.563,
+      "endS": 60.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Middle of the page, the equipment panel.",
+      "startS": 60.88,
+      "endS": 63.096,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Eight units at this wash, one card each,",
+      "startS": 63.72,
+      "endS": 66.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "every card showing a few live readings and a health score.",
+      "startS": 66.745,
+      "endS": 69.851,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "It's the hardware view of the site, and any card drills deeper on a click.",
+      "startS": 70.294,
+      "endS": 74.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Look at the first card.",
+      "startS": 74.64,
+      "endS": 76.186,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "The point-of-sale is offline.",
+      "startS": 77.045,
+      "endS": 78.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "No health score, no transactions in forty-seven minutes, a red bar flagging it.",
+      "startS": 79.188,
+      "endS": 84.337,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "When the P-O-S is down the site takes no money, so this is the card you check first.",
+      "startS": 85.02,
+      "endS": 90.259,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Sweep the rest.",
+      "startS": 90.72,
+      "endS": 91.769,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Conveyor, scanner, chemicals, dryers, water, gate, lighting.",
+      "startS": 92.746,
+      "endS": 96.993,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Most run green and healthy; a couple sit lower and earn a second look.",
+      "startS": 97.417,
+      "endS": 97.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "The health number and the color bar do your triage at a glance.",
+      "startS": 98.246,
+      "endS": 107.433,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "On the right, the open incidents.",
+      "startS": 107.9,
+      "endS": 109.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Three of them, each tagged by type and, just as usefully, by owner.",
+      "startS": 110.266,
+      "endS": 114.73,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "The payments outage is on the account manager.",
+      "startS": 115.234,
+      "endS": 117.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "The conveyor stop is still unassigned.",
+      "startS": 117.798,
+      "endS": 119.921,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "That owner line tells you what already has a name on it and what's waiting for one.",
+      "startS": 120.608,
+      "endS": 124.8,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Underneath, the timeline.",
+      "startS": 125.2,
+      "endS": 126.922,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Every event with a timestamp, from the shift opening this morning",
+      "startS": 127.529,
+      "endS": 129.084,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "to the terminal dropping offline later on.",
+      "startS": 129.333,
+      "endS": 133.246,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "This is the site's story of the day.",
+      "startS": 133.537,
+      "endS": 135.636,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "When you need to know what led up to an incident, you scroll here.",
+      "startS": 136.177,
+      "endS": 139.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Bottom right, the quick actions.",
+      "startS": 139.6,
+      "endS": 141.625,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "The common responses, gathered so you don't go hunting:",
+      "startS": 142.402,
+      "endS": 145.475,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "raise a work order, book maintenance, send a tech, email the customer, restart the P-O-S.",
+      "startS": 145.839,
+      "endS": 149.186,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Every one does something real, so we read the list and stop there.",
+      "startS": 149.526,
+      "endS": 156.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Step back and take it in.",
+      "startS": 157.12,
+      "endS": 158.82,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "One page: status up top, then the numbers, the hardware,",
+      "startS": 160.186,
+      "endS": 160.965,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "the open incidents with owners, the day's history, and the actions that answer them.",
+      "startS": 161.66,
+      "endS": 164.938,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "Read it top to bottom and you know this site cold,",
+      "startS": 165.269,
+      "endS": 166.997,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "and you did it without touching a thing.",
+      "startS": 167.31,
+      "endS": 175.743,
+      "timing": "silence"
+    }
+  ]
+}

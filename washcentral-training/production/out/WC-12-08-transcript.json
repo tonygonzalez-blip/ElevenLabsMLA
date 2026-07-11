@@ -1,0 +1,824 @@
+{
+  "lesson": "WC-12-08",
+  "audioMaster": "training/module12-settings/WC-12-08-full-narration-v1.0.mp3",
+  "audioDurationS": 384.026,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Two Settings areas face the customer directly, and this lesson reads both.",
+      "startS": 0,
+      "endS": 4.455,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "In the left rail, open Customer Portal, then Portal Overview.",
+      "startS": 4.907,
+      "endS": 8.768,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "This hub is the portal your client's members log into, summarized on one screen:",
+      "startS": 9.272,
+      "endS": 13.935,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "its status, its address, and a version stamp.",
+      "startS": 14.38,
+      "endS": 17.638,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "It's live. Treat it that way.",
+      "startS": 17.965,
+      "endS": 19.726,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Read the tile band.",
+      "startS": 20.16,
+      "endS": 21.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Registered members, logins today, average session, uptime, and the share on mobile.",
+      "startS": 22.096,
+      "endS": 23.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "When someone reports the portal is slow or quiet, this row is your first read.",
+      "startS": 23.395,
+      "endS": 24.49,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Healthy numbers here move the problem somewhere else.",
+      "startS": 24.717,
+      "endS": 36.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Four cards sit below, one per configuration area.",
+      "startS": 36.56,
+      "endS": 39.667,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Branding, features, access, and content.",
+      "startS": 40.015,
+      "endS": 40.635,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Each card previews its own headline values,",
+      "startS": 40.844,
+      "endS": 41.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "like the login method and whether one time passwords are required.",
+      "startS": 41.638,
+      "endS": 43.072,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "You can answer most portal questions from these cards without opening anything.",
+      "startS": 43.931,
+      "endS": 53.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Below the cards, two panels.",
+      "startS": 54.32,
+      "endS": 56.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Recent activity lists what members did in the last day, including a security line:",
+      "startS": 56.574,
+      "endS": 61.304,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "three failed login attempts from one address.",
+      "startS": 61.642,
+      "endS": 64.053,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Portal Health confirms the A-P-I connection, the certificate,",
+      "startS": 64.506,
+      "endS": 69.738,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "and when the portal was last published.",
+      "startS": 69.995,
+      "endS": 71.501,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "And note the button top right.",
+      "startS": 71.752,
+      "endS": 75.283,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Publish Changes pushes edits live to real customers. Support never clicks it.",
+      "startS": 75.535,
+      "endS": 77.158,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Open Branding and Appearance.",
+      "startS": 77.6,
+      "endS": 79.418,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Three tabs.",
+      "startS": 79.939,
+      "endS": 80.824,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Visual Identity holds the portal's name, tagline, logo, and header style,",
+      "startS": 81.554,
+      "endS": 88.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "with a live preview underneath.",
+      "startS": 88.779,
+      "endS": 92.171,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Everything a customer sees before signing in gets styled here.",
+      "startS": 92.718,
+      "endS": 94.759,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "There's a Save and Publish button at the bottom. We read; we never save.",
+      "startS": 95.156,
+      "endS": 96.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Next, Features and Modules.",
+      "startS": 97.36,
+      "endS": 99.477,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Every portal capability is a section here,",
+      "startS": 100.169,
+      "endS": 102.628,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "from membership plans to gift cards to vehicle management, each with its own sub options.",
+      "startS": 102.832,
+      "endS": 108.125,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "One catch: this page says nine of ten modules enabled, while the hub card said seven of nine.",
+      "startS": 108.544,
+      "endS": 114.409,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "The two disagree.",
+      "startS": 114.795,
+      "endS": 115.901,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "When you need the real number, read it here, and flag the mismatch.",
+      "startS": 116.126,
+      "endS": 119.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Open Access and Security, the page for login trouble.",
+      "startS": 120.397,
+      "endS": 123.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "The Authentication tab shows how members can sign in:",
+      "startS": 124.5,
+      "endS": 127.574,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "phone yes, email yes, membership number no, and no guest access.",
+      "startS": 128.022,
+      "endS": 133.034,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Below that, the one time password rules and the password policy.",
+      "startS": 133.659,
+      "endS": 137.488,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "A customer locked out of the portal? Start on this page, every time.",
+      "startS": 137.8,
+      "endS": 141.742,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Then Content and Messaging.",
+      "startS": 142.16,
+      "endS": 144.021,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Welcome text, footer, contact details, and the FAQ list.",
+      "startS": 144.559,
+      "endS": 145.766,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Plain language a confused customer reads first.",
+      "startS": 146.065,
+      "endS": 146.447,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "If a member quotes the portal saying something odd, this is where that wording lives.",
+      "startS": 146.736,
+      "endS": 157.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "That's the portal.",
+      "startS": 157.598,
+      "endS": 158.663,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "For a login complaint, check two settings, the login method and whether O-T-P is required,",
+      "startS": 159.319,
+      "endS": 165.901,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "then look for failed attempts in the activity feed.",
+      "startS": 166.285,
+      "endS": 169.161,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "Back to Portal Overview, and remember the rule: nothing gets published, nothing gets saved.",
+      "startS": 170.48,
+      "endS": 176.242,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Part two. In the left rail, open A-I Agent, then Overview.",
+      "startS": 176.78,
+      "endS": 177.477,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "This is the automated agent answering your client's customers on web chat, text, and phone.",
+      "startS": 177.874,
+      "endS": 181.906,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "The header says it's live on three channels.",
+      "startS": 182.319,
+      "endS": 187.732,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Same posture as the portal: everything here is read only.",
+      "startS": 188.202,
+      "endS": 194.216,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "Read the metric band.",
+      "startS": 194.64,
+      "endS": 196.012,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Conversations this month, average handle time, a satisfaction score.",
+      "startS": 196.841,
+      "endS": 198.301,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "The number to watch is containment rate,",
+      "startS": 198.562,
+      "endS": 201.172,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "the share of conversations the agent finished without a person.",
+      "startS": 201.959,
+      "endS": 209.291,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "Seventy eight percent here. When that slides, humans are picking up the slack.",
+      "startS": 209.612,
+      "endS": 212.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Three channel cards.",
+      "startS": 212.876,
+      "endS": 214.099,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Web chat carries the most volume and contains the most.",
+      "startS": 214.934,
+      "endS": 218.097,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Text runs through a provisioned number with quiet hours on.",
+      "startS": 218.632,
+      "endS": 221.688,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "Voice is newer, still marked beta, with recording consent enabled.",
+      "startS": 222.341,
+      "endS": 224.481,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "Each card shows its own contained percentage, so you can spot which channel is struggling.",
+      "startS": 224.781,
+      "endS": 231.58,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Now the capabilities panel.",
+      "startS": 232.135,
+      "endS": 233.461,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Six actions the agent can take on its own,",
+      "startS": 233.461,
+      "endS": 237.082,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "from looking up an account to processing a small refund to escalating to a human.",
+      "startS": 237.082,
+      "endS": 242.587,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "They run through secure platform A-P-Is,",
+      "startS": 242.587,
+      "endS": 244.576,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "and each one can be switched off individually under Configuration.",
+      "startS": 244.576,
+      "endS": 247.891,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "Open Configuration.",
+      "startS": 248.32,
+      "endS": 249.09,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "Status tiles up top, including a refund cap of fifty dollars,",
+      "startS": 249.09,
+      "endS": 253.61,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "then five tabs covering identity, channels, tools, safety, and the model.",
+      "startS": 253.61,
+      "endS": 257.844,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "One caution: in the captured tenant this page renders as an unsaved form",
+      "startS": 257.844,
+      "endS": 263.295,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "for a different demo brand.",
+      "startS": 263.295,
+      "endS": 265.22,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p71",
+      "text": "Read the structure, trust nothing as the live values, and never save.",
+      "startS": 265.22,
+      "endS": 270.193,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p72",
+      "text": "Next, Knowledge Base.",
+      "startS": 270.72,
+      "endS": 271.781,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p73",
+      "text": "These are the documents the agent searches before it answers,",
+      "startS": 271.781,
+      "endS": 275.84,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "so it quotes policy instead of guessing.",
+      "startS": 275.84,
+      "endS": 278.316,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p75",
+      "text": "Tiles track articles, indexing, and the last sync.",
+      "startS": 278.316,
+      "endS": 281.991,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p76",
+      "text": "In this capture the table sits empty, which is a tenant quirk, not the real agent.",
+      "startS": 281.991,
+      "endS": 288.51,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p77",
+      "text": "Open Channels and Deployment, and keep your hands off the buttons.",
+      "startS": 288.96,
+      "endS": 290.647,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p78",
+      "text": "Each channel block carries a test control:",
+      "startS": 290.977,
+      "endS": 293.156,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p79",
+      "text": "send a test message, send a test text, place a test call.",
+      "startS": 294.468,
+      "endS": 296.683,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p80",
+      "text": "All three reach a real channel.",
+      "startS": 297.014,
+      "endS": 298.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p81",
+      "text": "None of them get clicked, ever, in the demo tenant.",
+      "startS": 298.592,
+      "endS": 299.861,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p82",
+      "text": "Read the uptime and latency, and move on.",
+      "startS": 300.204,
+      "endS": 309.9,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p83",
+      "text": "Then Conversations.",
+      "startS": 310.389,
+      "endS": 311.77,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p84",
+      "text": "The transcript log: who talked to the agent, on which channel, about what, and how it ended.",
+      "startS": 312.101,
+      "endS": 313.074,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p85",
+      "text": "This is your audit trail when a client asks what the agent actually said.",
+      "startS": 313.464,
+      "endS": 317.485,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p86",
+      "text": "Empty in this capture, and the Export control stays untouched.",
+      "startS": 317.949,
+      "endS": 325.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p87",
+      "text": "Escalations is the page to remember.",
+      "startS": 326.059,
+      "endS": 327.975,
+      "timing": "proportional"
+    },
+    {
+      "block": "s18",
+      "id": "p88",
+      "text": "When the agent hits a limit, a refund over the cap, an angry customer,",
+      "startS": 327.975,
+      "endS": 333.078,
+      "timing": "proportional"
+    },
+    {
+      "block": "s18",
+      "id": "p89",
+      "text": "a direct ask for a manager, or a stalled conversation, it hands off here.",
+      "startS": 333.078,
+      "endS": 338.275,
+      "timing": "proportional"
+    },
+    {
+      "block": "s18",
+      "id": "p90",
+      "text": "Each row shows the reason, the priority, and who claimed it.",
+      "startS": 338.275,
+      "endS": 342.301,
+      "timing": "proportional"
+    },
+    {
+      "block": "s18",
+      "id": "p91",
+      "text": "Don't click Claim Next; that assigns a live escalation to you.",
+      "startS": 342.301,
+      "endS": 345.814,
+      "timing": "proportional"
+    },
+    {
+      "block": "s19",
+      "id": "p92",
+      "text": "Last, Analytics.",
+      "startS": 346.24,
+      "endS": 347.789,
+      "timing": "silence"
+    },
+    {
+      "block": "s19",
+      "id": "p93",
+      "text": "The monthly review view: volume, containment, escalation rate, satisfaction,",
+      "startS": 348.364,
+      "endS": 353.757,
+      "timing": "silence"
+    },
+    {
+      "block": "s19",
+      "id": "p94",
+      "text": "and what the agent costs to run, per channel and per conversation.",
+      "startS": 354.08,
+      "endS": 357.713,
+      "timing": "silence"
+    },
+    {
+      "block": "s19",
+      "id": "p95",
+      "text": "When a client asks whether the agent is worth it, this page is the answer.",
+      "startS": 358.537,
+      "endS": 362.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s19",
+      "id": "p96",
+      "text": "Export stays alone here too.",
+      "startS": 363.109,
+      "endS": 364.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s20",
+      "id": "p97",
+      "text": "Two areas, one habit.",
+      "startS": 365.262,
+      "endS": 366.718,
+      "timing": "proportional"
+    },
+    {
+      "block": "s20",
+      "id": "p98",
+      "text": "The portal hub answers login complaints through the login method and O-T-P settings,",
+      "startS": 366.718,
+      "endS": 372.135,
+      "timing": "proportional"
+    },
+    {
+      "block": "s20",
+      "id": "p99",
+      "text": "and the agent hands humans a conversation through the Escalations queue,",
+      "startS": 372.135,
+      "endS": 376.138,
+      "timing": "proportional"
+    },
+    {
+      "block": "s20",
+      "id": "p100",
+      "text": "which mirrors into the C-R-M Agent Console.",
+      "startS": 376.138,
+      "endS": 378.971,
+      "timing": "proportional"
+    },
+    {
+      "block": "s20",
+      "id": "p101",
+      "text": "You read everything and published nothing.",
+      "startS": 378.971,
+      "endS": 381.439,
+      "timing": "proportional"
+    },
+    {
+      "block": "s20",
+      "id": "p102",
+      "text": "Close Settings, and you're done.",
+      "startS": 381.439,
+      "endS": 383.6,
+      "timing": "proportional"
+    }
+  ]
+}

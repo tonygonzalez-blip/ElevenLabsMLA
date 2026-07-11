@@ -1,0 +1,314 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.636
+This is the Micrologic N-O-C.
+
+p02
+00:00:02.960 --> 00:00:05.885
+One board, watching every customer we support, all at once.
+
+p03
+00:00:06.092 --> 00:00:06.898
+Tech support and customer success both live here.
+
+p04
+00:00:07.275 --> 00:00:10.053
+A tenant's own Command Center covers a single operator;
+
+p05
+00:00:10.341 --> 00:00:17.840
+this one sits above all of them, so you catch trouble before the phone even rings.
+
+p06
+00:00:18.290 --> 00:00:19.520
+Look at the top strip.
+
+p07
+00:00:20.323 --> 00:00:23.547
+A red count of the customers in critical shape right now.
+
+p08
+00:00:24.069 --> 00:00:27.215
+A live badge, and a note that it just refreshed.
+
+p09
+00:00:27.851 --> 00:00:28.821
+That matters: the board updates itself, so you are never staring at stale numbers.
+
+p10
+00:00:29.218 --> 00:00:39.440
+And the search box up here is scoped to this screen, to customers, locations, and incidents.
+
+p11
+00:00:39.840 --> 00:00:44.144
+Under the header, three tabs: all customers, enterprise, general.
+
+p12
+00:00:44.713 --> 00:00:46.421
+All customers is the whole book.
+
+p13
+00:00:46.709 --> 00:00:50.843
+The other two split it by tier, enterprise on one side, general on the other.
+
+p14
+00:00:51.273 --> 00:00:54.318
+It is the same instinct as the location scope you already know.
+
+p15
+00:00:54.724 --> 00:00:57.131
+They aim the board, and they touch nothing underneath.
+
+p16
+00:00:57.679 --> 00:00:58.739
+Tap Enterprise.
+
+p17
+00:00:59.274 --> 00:01:03.049
+Everything tightens to that tier: the counts, the map, the feed.
+
+p18
+00:01:03.561 --> 00:01:06.496
+Tap All Customers and the whole network snaps back.
+
+p19
+00:01:06.974 --> 00:01:11.528
+It is a filter on your view, nothing deeper, and it undoes itself in a single click.
+
+p20
+00:01:12.058 --> 00:01:14.733
+Beside the filters, three small counts.
+
+p21
+00:01:15.030 --> 00:01:15.604
+Critical, warning, healthy.
+
+p22
+00:01:15.882 --> 00:01:17.167
+That is the room in one glance, how many customers sit in each band this minute.
+
+p23
+00:01:17.666 --> 00:01:22.424
+When the critical number climbs, that is your first signal to slow down and look closer,
+
+p24
+00:01:23.023 --> 00:01:29.582
+before you have opened a single account.
+
+p25
+00:01:30.000 --> 00:01:31.206
+Now the saved views.
+
+p26
+00:01:31.206 --> 00:01:33.058
+All Accounts is everything.
+
+p27
+00:01:33.058 --> 00:01:35.071
+Enterprise Critical and Needs Attention
+
+p28
+00:01:35.071 --> 00:01:38.085
+drag the board straight to what deserves your eyes first.
+
+p29
+00:01:38.085 --> 00:01:42.871
+Reach for Needs Attention when you walk in cold and want the short list,
+
+p30
+00:01:42.871 --> 00:01:45.501
+then drop back to All Accounts.
+
+p31
+00:01:45.501 --> 00:01:47.309
+View only, same as the filters.
+
+p32
+00:01:47.760 --> 00:01:49.629
+Across the top, five cards.
+
+p33
+00:01:49.949 --> 00:01:54.627
+Customers, critical, warning, healthy, and average S-L-A.
+
+p34
+00:01:55.205 --> 00:01:57.342
+The first four sort your accounts by health.
+
+p35
+00:01:57.696 --> 00:02:00.395
+The last one is the service level for the whole board,
+
+p36
+00:02:00.684 --> 00:02:05.360
+a single clean number you can quote in a morning stand-up without opening anything else.
+
+p37
+00:02:05.760 --> 00:02:07.902
+Read the small print under each count.
+
+p38
+00:02:08.602 --> 00:02:11.223
+Every card splits enterprise against general.
+
+p39
+00:02:11.514 --> 00:02:13.749
+So a card never just tells you how many.
+
+p40
+00:02:14.003 --> 00:02:16.430
+It tells you which tier is carrying the weight,
+
+p41
+00:02:16.835 --> 00:02:20.640
+and that split is exactly where you decide who gets the first call.
+
+p42
+00:02:21.040 --> 00:02:23.770
+The average S-L-A card earns a second look.
+
+p43
+00:02:23.770 --> 00:02:28.724
+It reads just over ninety-seven percent, with the day-over-day drift right beneath it.
+
+p44
+00:02:28.724 --> 00:02:31.720
+A down arrow is a quiet alarm.
+
+p45
+00:02:31.720 --> 00:02:33.327
+Attainment slipped since yesterday,
+
+p46
+00:02:33.327 --> 00:02:37.421
+and on this board that is worth chasing down before it grows.
+
+p47
+00:02:37.906 --> 00:02:39.356
+Drop to Network Coverage.
+
+p48
+00:02:39.764 --> 00:02:42.670
+Every supported site on one map, painted by health: green, amber, red.
+
+p49
+00:02:42.965 --> 00:02:44.374
+The header counts the customers, the locations, and the states behind them.
+
+p50
+00:02:44.837 --> 00:02:48.835
+This is the shape of the whole network in a single picture,
+
+p51
+00:02:49.213 --> 00:02:55.013
+and it is where a regional pattern jumps out at you.
+
+p52
+00:02:55.511 --> 00:02:57.287
+The map is live under your cursor.
+
+p53
+00:02:57.841 --> 00:03:00.921
+Plus and minus zoom, the arrows go full screen,
+
+p54
+00:03:01.218 --> 00:03:04.585
+and the numbered bubbles group nearby sites by their worst case.
+
+p55
+00:03:05.293 --> 00:03:10.060
+Click a state or a cluster and it drops you into that region, without ever leaving the board.
+
+p56
+00:03:10.480 --> 00:03:11.936
+Swing to the feed on the right.
+
+p57
+00:03:12.425 --> 00:03:13.237
+Three tabs: incidents, locations, customers, each with a live count.
+
+p58
+00:03:13.565 --> 00:03:16.053
+Incidents is the default, and the one you live in during a shift.
+
+p59
+00:03:16.339 --> 00:03:17.534
+The other two re-cut the same trouble by site and by account,
+
+p60
+00:03:18.202 --> 00:03:26.836
+for when you want a different angle on it.
+
+p61
+00:03:27.280 --> 00:03:29.063
+The feed stacks by severity.
+
+p62
+00:03:29.458 --> 00:03:30.436
+Critical up top, then warning, then info and monitoring, each with its own tally.
+
+p63
+00:03:30.640 --> 00:03:34.530
+Hold onto one thing here: these count incidents, while the cards up top count customers.
+
+p64
+00:03:34.797 --> 00:03:44.674
+Two different denominators, so the numbers will not always line up, and that is fine.
+
+p65
+00:03:45.120 --> 00:03:46.535
+Now read one row.
+
+p66
+00:03:47.353 --> 00:03:50.595
+The customer, its tier, the headline of what broke, a tag for the kind of failure,
+
+p67
+00:03:50.822 --> 00:03:55.817
+an owner or a status, and how long it has been running.
+
+p68
+00:03:56.432 --> 00:03:58.188
+That last part matters most.
+
+p69
+00:03:58.552 --> 00:04:01.813
+An old, unassigned critical is the one that should bother you.
+
+p70
+00:04:02.308 --> 00:04:04.717
+Read it here; you work it somewhere else.
+
+p71
+00:04:05.120 --> 00:04:06.739
+So that is the cockpit.
+
+p72
+00:04:07.497 --> 00:04:08.996
+Filters and saved views aim it.
+
+p73
+00:04:09.289 --> 00:04:09.746
+The cards and the map give you the shape at a glance.
+
+p74
+00:04:10.537 --> 00:04:13.065
+The feed tells you what is broken and who has it.
+
+p75
+00:04:13.513 --> 00:04:16.322
+Nothing here changes a thing.
+
+p76
+00:04:17.045 --> 00:04:18.623
+You spot it on this board,
+
+p77
+00:04:18.998 --> 00:04:24.510
+then open the customer, the ticket, or the alert somewhere else to fix it.
+
+p78
+00:04:25.299 --> 00:04:29.274
+Learn this screen well, because on a busy day it is the first thing you open.
+

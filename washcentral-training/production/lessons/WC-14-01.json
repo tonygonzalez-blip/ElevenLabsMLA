@@ -1,0 +1,1949 @@
+{
+  "lesson": "WC-14-01",
+  "title": "Academy (LMS) — Learner Side",
+  "audioMaster": "training/module14-academy/WC-14-01-full-narration-v1.0.mp3",
+  "audioDurationS": 229.721,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railAcademy": {
+      "selector": ".wc-rail-item[data-rail-key=\"training\"]"
+    },
+    "railPanelToggle": {
+      "selector": "#wc-rail-panel-toggle"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "subtitle": {
+      "js": "[...document.querySelectorAll('.subtitle')].find(e=>/Your learning overview/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "toolSearch": {
+      "selector": ".wc-cmd-trigger-btn"
+    },
+    "toolAsk": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Ask Shyne$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "avatar": {
+      "selector": "#user-menu-btn"
+    },
+    "acadLabel": {
+      "js": "[...document.querySelectorAll('.menu-group-lbl')].find(e=>/^Academy$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "adminLabel": {
+      "js": "[...document.querySelectorAll('.menu-group-lbl')].find(e=>/^Admin$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "sideMyDash": {
+      "selector": ".menu-header[href=\"lms-home.html\"]"
+    },
+    "sideCatalog": {
+      "selector": ".menu-header[href=\"lms-catalog.html\"]"
+    },
+    "sidePaths": {
+      "selector": ".menu-header[href=\"lms-paths.html\"]"
+    },
+    "sideMyLearning": {
+      "selector": ".menu-header[href=\"lms-my-learning.html\"]"
+    },
+    "sideAdminDash": {
+      "selector": ".menu-header[href=\"lms-admin.html\"]"
+    },
+    "sideAdminUsers": {
+      "selector": ".menu-header[href=\"lms-admin-users.html\"]"
+    },
+    "sideAdminCourses": {
+      "selector": ".menu-header[href=\"lms-admin-courses.html\"]"
+    },
+    "sideAdminReports": {
+      "selector": ".menu-header[href=\"lms-admin-reports.html\"]"
+    },
+    "statBar": {
+      "selector": ".lms-stat-bar"
+    },
+    "tileEnrolled": {
+      "js": "[...document.querySelectorAll('.lms-stat')].find(e=>/Courses Enrolled/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileCompleted": {
+      "js": "[...document.querySelectorAll('.lms-stat')].find(e=>/\\bCompleted\\b/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileHours": {
+      "js": "[...document.querySelectorAll('.lms-stat')].find(e=>/Hours Learned/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileCerts": {
+      "js": "[...document.querySelectorAll('.lms-stat')].find(e=>/Certificates Earned/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "clHdr": {
+      "js": "[...document.querySelectorAll('.lms-section-hdr')].find(e=>/Continue Learning/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "clTitle": {
+      "js": "[...document.querySelectorAll('.lms-section-title')].find(e=>/^Continue Learning$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "viewAll": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^View All/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "hero": {
+      "selector": ".lms-hero"
+    },
+    "heroChipCat": {
+      "js": "[...document.querySelectorAll('.lms-hero .lms-badge-cat')].find(e=>/Platform/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "heroChipLevel": {
+      "js": "[...document.querySelectorAll('.lms-hero .lms-badge-cat')].find(e=>/Beginner/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "heroTitle": {
+      "js": "[...document.querySelectorAll('.lms-hero *')].find(e=>e.children.length===0&&/Getting Started with WashCentral/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "heroProg": {
+      "selector": ".lms-hero .lms-progress-bar-wrap"
+    },
+    "heroProgLine": {
+      "js": "[...document.querySelectorAll('.lms-hero *')].find(e=>e.children.length===0&&/0% complete/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "startCourse": {
+      "js": "[...document.querySelectorAll('.lms-hero a,.lms-hero button')].find(e=>/^Start Course$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "courseDetails": {
+      "js": "[...document.querySelectorAll('.lms-hero a,.lms-hero button')].find(e=>/^Course Details$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "acHdr": {
+      "js": "[...document.querySelectorAll('.lms-section-hdr')].find(e=>/All Courses/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "acTitle": {
+      "js": "[...document.querySelectorAll('.lms-section-title')].find(e=>/^All Courses$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "browseCatalog": {
+      "js": "[...document.querySelectorAll('.lms-section-hdr a,.lms-section-hdr button')].find(e=>/^Browse Catalog$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "courseGrid": {
+      "selector": ".lms-course-grid"
+    },
+    "cardFirst": {
+      "js": "[...document.querySelectorAll('.lms-course-card')].find(e=>/Getting Started with WashCentral/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardExec": {
+      "js": "[...document.querySelectorAll('.lms-course-card')].find(e=>/Executive Dashboard & KPIs/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardSales": {
+      "js": "[...document.querySelectorAll('.lms-course-card')].find(e=>/Sales & Transaction Management/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardStartFirst": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.lms-course-card')].find(e=>/Getting Started with WashCentral/.test(e.textContent||''));return c?[...c.querySelectorAll('a,button')].find(b=>/^Start$/.test((b.textContent||'').trim())):null})()"
+    },
+    "myAchHdr": {
+      "js": "[...document.querySelectorAll('.lms-section-hdr')].find(e=>/My Achievements/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "badgeGrid": {
+      "selector": ".lms-badge-grid"
+    },
+    "badgeEarned": {
+      "js": "[...document.querySelectorAll('.lms-badge-item')].find(e=>/Fast Starter/.test(e.textContent||'')&&e.querySelector('.lms-badge-icon.earned')&&e.getBoundingClientRect().width>0)"
+    },
+    "badgeLocked": {
+      "js": "[...document.querySelectorAll('.lms-badge-item')].find(e=>/First Certificate/.test(e.textContent||'')&&e.querySelector('.lms-badge-icon.locked')&&e.getBoundingClientRect().width>0)"
+    },
+    "leaderPanel": {
+      "js": "[...document.querySelectorAll('.a-card')].find(e=>/Org Leaderboard/.test(e.textContent||'')&&!/Quick Links/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "youRow": {
+      "js": "[...document.querySelectorAll('.a-card *')].find(e=>/You \\(Miguel/.test(e.textContent||'')&&e.getBoundingClientRect().width>140&&e.getBoundingClientRect().width<320)"
+    },
+    "viewFull": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/View Full Leaderboard/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "quickPanel": {
+      "js": "[...document.querySelectorAll('.a-card')].find(e=>/Quick Links/.test(e.textContent||'')&&(e.textContent||'').trim().length<220&&e.getBoundingClientRect().width>0)"
+    },
+    "quickMLP": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/My Learning Paths/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "quickMyCert": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/My Certificates/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onDashboard": "location.pathname.endsWith('/lms-home.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "academyGroupFour": "[...document.querySelectorAll('.menu-header')].filter(e=>e.getBoundingClientRect().width>0&&/lms-(home|catalog|paths|my-learning)\\.html$/.test(e.getAttribute('href')||'')).length===4",
+    "dashLoaded": "location.pathname.endsWith('/lms-home.html')&&[...document.querySelectorAll('.lms-stat')].filter(e=>e.getBoundingClientRect().width>0).length===4&&!!document.querySelector('.lms-hero')&&[...document.querySelectorAll('.lms-course-card')].filter(e=>e.getBoundingClientRect().width>0).length===6&&/My Dashboard/.test((document.querySelector('.breadcrumb-bar')||{}).textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
+    "noEnrollment": "location.pathname.endsWith('/lms-home.html')&&[...document.querySelectorAll('.lms-stat-val')].every(v=>/^0/.test((v.textContent||'').trim()))&&[...document.querySelectorAll('.lms-course-card')].length===6&&[...document.querySelectorAll('.lms-course-card')].every(c=>/Not started/.test(c.textContent||''))&&/0% complete/.test(document.body.textContent||'')",
+    "atTop": "window.scrollY<=6",
+    "atBottom": "window.scrollY >= document.scrollingElement.scrollHeight - window.innerHeight - 10"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railPanelToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar preference expanded so the Academy sidebar reads with labels after step 1's navigation. #wc-rail-panel-toggle (title 'Toggle sidebar') is the genuine control; probe-verified July 11 it flips localStorage washcentral-sidebar-collapsed-v5 to 'false' globally, so lms-home loads expanded (aside.sidebar 220px, .menu-header at x102 w203). Skipped when already expanded. Pure UI-state preference — no record is created, edited, or sent."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.4,
+      "predicate": "onCommandCenter",
+      "note": "start page identity before capture: the recording opens on command-center.html (startUrl); step 1 clicks the graduation-cap Academy rail icon to enter the Academy"
+    },
+    {
+      "op": "assert",
+      "at": -1.0,
+      "predicate": "pageReady",
+      "note": "command-center settled, no skeletons"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "railAcademy",
+        "offset": [
+          40,
+          6
+        ]
+      },
+      "note": "step 1 (p01): enter from the bottom-left corner toward the graduation-cap Academy rail icon"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.0,
+      "key": "railRect",
+      "target": "railAcademy",
+      "requireStableMs": 150
+    },
+    {
+      "op": "move",
+      "at": 1.7,
+      "to": {
+        "target": "railAcademy",
+        "offset": [
+          40,
+          6
+        ]
+      },
+      "note": "step 1 (p01): settle on the graduation cap as 'WashCentral ships with its own training platform, the Academy' plays"
+    },
+    {
+      "op": "move",
+      "at": 3.9,
+      "to": {
+        "target": "railAcademy",
+        "offset": [
+          28,
+          0
+        ]
+      },
+      "note": "step 1 (p02): rest on the graduation cap as 'Click the graduation cap' is spoken"
+    },
+    {
+      "op": "click",
+      "target": "railAcademy",
+      "pressAt": 4.95,
+      "hoverMs": 350,
+      "postcondition": "onDashboard",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 1 (p02): genuine rail navigation. Reading assets/app.js, the .wc-rail-item handler is `sessionStorage.setItem('wc-sidebar-force-expand','1'); location.href='lms-home.html'` (probe-verified July 11) — pure navigation, no record mutation. Press lands in the p02→p03 gap so My Dashboard is on screen while 'You land on My Dashboard' plays."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "dashStable",
+      "predicate": "pageReady",
+      "settleMs": 700,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 6.55,
+      "predicate": "onDashboard",
+      "note": "landed on My Dashboard (lms-home.html)"
+    },
+    {
+      "op": "assert",
+      "at": 6.6,
+      "predicate": "sidebarExpanded",
+      "note": "the rail click force-expanded the Academy sidebar; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": 6.65,
+      "predicate": "dashLoaded",
+      "note": "loaded: 4 progress tiles, the Continue Learning hero, 6 course cards, breadcrumb 'Academy › My Dashboard', no agent-service error"
+    },
+    {
+      "op": "assert",
+      "at": 6.7,
+      "predicate": "academyGroupFour",
+      "note": "the ACADEMY sidebar group shows all four learner destinations"
+    },
+    {
+      "op": "log-rect",
+      "at": 6.75,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rect",
+      "at": 6.8,
+      "key": "crumbStrongRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "watch",
+      "key": "onDashboardHold",
+      "from": 8,
+      "to": 228,
+      "predicate": "onDashboard",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: after the single step-1 navigation the page never leaves My Dashboard — every course, Start button, View All, Browse Catalog, leaderboard link, Quick Link, and sidebar destination is pointed at, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHold",
+      "from": 8,
+      "to": 228,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true
+    },
+    {
+      "op": "watch",
+      "key": "noEnrollHold",
+      "from": 8,
+      "to": 228,
+      "predicate": "noEnrollment",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "enrollment guardrail: all four tiles stay 0, the hero stays '0% complete', and all six course cards stay 'Not started' the whole lesson — proves nothing was enrolled or started."
+    },
+    {
+      "op": "watch",
+      "key": "atTopHold1",
+      "from": 12,
+      "to": 109,
+      "predicate": "atTop",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "steps 1-6 play at the top of the dashboard"
+    },
+    {
+      "op": "move",
+      "at": 6.9,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          60,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): point under the breadcrumb title 'My Dashboard' as 'You land on My Dashboard, your learning home base' plays (callout ①)"
+    },
+    {
+      "op": "log-rects",
+      "at": 8.8,
+      "key": "toolsRow",
+      "targets": [
+        "toolSearch",
+        "toolAsk",
+        "avatar"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 9.0,
+      "to": {
+        "target": "toolAsk",
+        "offset": [
+          -6,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04): gesture at the carried-over top-right tools — Search ⌘K, Ask Shyne, the MG avatar"
+    },
+    {
+      "op": "move",
+      "at": 10.9,
+      "to": {
+        "point": [
+          960,
+          540
+        ]
+      },
+      "note": "step 1 (p05): ease to the middle for 'Same platform, different wing'"
+    },
+    {
+      "op": "log-rect",
+      "at": 15.45,
+      "key": "acadLblRect",
+      "target": "acadLabel",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rects",
+      "at": 15.5,
+      "key": "sideAcademy",
+      "targets": [
+        "sideMyDash",
+        "sideCatalog",
+        "sidePaths",
+        "sideMyLearning"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 15.55,
+      "key": "adminLblRect",
+      "target": "adminLabel"
+    },
+    {
+      "op": "log-rects",
+      "at": 15.6,
+      "key": "sideAdmin",
+      "targets": [
+        "sideAdminDash",
+        "sideAdminUsers",
+        "sideAdminCourses",
+        "sideAdminReports"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 16.0,
+      "to": {
+        "target": "sideMyDash",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p06): 'Read the sidebar before anything else' — approach beside the ACADEMY group, never onto the links"
+    },
+    {
+      "op": "move",
+      "at": 19.0,
+      "to": {
+        "target": "sideCatalog",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07-p08): sweep down the four learner destinations"
+    },
+    {
+      "op": "move",
+      "at": 24.0,
+      "to": {
+        "target": "sideMyLearning",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): '...and your own course list' — rest beside My Learning"
+    },
+    {
+      "op": "move",
+      "at": 27.8,
+      "to": {
+        "target": "adminLabel",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p09): 'Below it sits an Admin group' — move to the ADMIN header (out of scope, WC-14-02)"
+    },
+    {
+      "op": "move",
+      "at": 30.0,
+      "to": {
+        "target": "sideAdminDash",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p10): 'the back office, another lesson entirely' — beside the ADMIN items, never opened"
+    },
+    {
+      "op": "log-rect",
+      "at": 34.6,
+      "key": "statBarRect",
+      "target": "statBar",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rects",
+      "at": 34.66,
+      "key": "tiles",
+      "targets": [
+        "tileEnrolled",
+        "tileCompleted",
+        "tileHours",
+        "tileCerts"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 35.0,
+      "to": {
+        "target": "tileEnrolled",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 3 (p11): 'Four tiles across the top' — settle on the progress strip"
+    },
+    {
+      "op": "move",
+      "at": 37.0,
+      "to": {
+        "target": "tileEnrolled",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 3 (p12): name the four in spoken order — Enrolled"
+    },
+    {
+      "op": "move",
+      "at": 37.6,
+      "to": {
+        "target": "tileCompleted",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "completed"
+    },
+    {
+      "op": "move",
+      "at": 38.0,
+      "to": {
+        "target": "tileHours",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "hours"
+    },
+    {
+      "op": "move",
+      "at": 38.4,
+      "to": {
+        "target": "tileCerts",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "certificates"
+    },
+    {
+      "op": "move",
+      "at": 40.9,
+      "to": {
+        "target": "tileEnrolled",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 3 (p13-p15): 'Every one reads zero' — a fresh account on day one"
+    },
+    {
+      "op": "move",
+      "at": 47.4,
+      "to": {
+        "point": [
+          1100,
+          230
+        ]
+      },
+      "note": "step 3 (p16): ease off for 'These four numbers are your status at a glance'"
+    },
+    {
+      "op": "log-rect",
+      "at": 53.85,
+      "key": "clHdrRect",
+      "target": "clHdr",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rect",
+      "at": 53.9,
+      "key": "clTitleRect",
+      "target": "clTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 53.95,
+      "key": "viewAllRect",
+      "target": "viewAll"
+    },
+    {
+      "op": "move",
+      "at": 54.3,
+      "to": {
+        "target": "clTitle",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p17): 'Under the tiles, Continue Learning' — the section header"
+    },
+    {
+      "op": "move",
+      "at": 57.6,
+      "to": {
+        "target": "hero",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 4 (p18-p20): the resume slot — where an in-progress course would surface"
+    },
+    {
+      "op": "move",
+      "at": 65.6,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          -18,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p22): 'View All opens the fuller list' — pointed at from beside, never clicked (it navigates to My Learning)"
+    },
+    {
+      "op": "move",
+      "at": 68.6,
+      "to": {
+        "point": [
+          1100,
+          300
+        ]
+      },
+      "note": "step 4: ease off before the resume-card close-up"
+    },
+    {
+      "op": "log-rect",
+      "at": 70.55,
+      "key": "heroRect",
+      "target": "hero",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rects",
+      "at": 70.6,
+      "key": "heroChips",
+      "targets": [
+        "heroChipCat",
+        "heroChipLevel"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 70.65,
+      "key": "heroProgRect",
+      "target": "heroProg"
+    },
+    {
+      "op": "log-rect",
+      "at": 70.7,
+      "key": "startCourseRect",
+      "target": "startCourse"
+    },
+    {
+      "op": "move",
+      "at": 70.9,
+      "to": {
+        "target": "heroChipCat",
+        "offset": [
+          0,
+          -16
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p23-p24): 'hands off the buttons' — the two chips, PLATFORM and BEGINNER, then the title"
+    },
+    {
+      "op": "move",
+      "at": 74.9,
+      "to": {
+        "target": "heroProg",
+        "offset": [
+          40,
+          -14
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p25): the progress bar at 0 of 6 lessons and the 45m total runtime"
+    },
+    {
+      "op": "move",
+      "at": 78.7,
+      "to": {
+        "target": "startCourse",
+        "offset": [
+          -18,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p26) STOP guardrail: Start Course would enroll you — pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 84.4,
+      "to": {
+        "target": "startCourse",
+        "offset": [
+          -18,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): 'so it stays unclicked' — held beside Start Course"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.4,
+      "key": "acHdrRect",
+      "target": "acHdr",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rect",
+      "at": 89.45,
+      "key": "acTitleRect",
+      "target": "acTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.5,
+      "key": "browseCatalogRect",
+      "target": "browseCatalog"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.55,
+      "key": "cardFirstRect",
+      "target": "cardFirst"
+    },
+    {
+      "op": "move",
+      "at": 89.9,
+      "to": {
+        "target": "acTitle",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p28): 'Below that, All Courses' — the section header"
+    },
+    {
+      "op": "move",
+      "at": 92.5,
+      "to": {
+        "target": "cardFirst",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 6 (p29-p30): one card's anatomy — ribbon, title, instructor and duration"
+    },
+    {
+      "op": "move",
+      "at": 99.1,
+      "to": {
+        "target": "cardFirst",
+        "offset": [
+          40,
+          70
+        ]
+      },
+      "note": "step 6 (p31-p32): the progress bar and the status line — Not started means available, a moving bar means enrolled"
+    },
+    {
+      "op": "move",
+      "at": 106.3,
+      "to": {
+        "target": "browseCatalog",
+        "offset": [
+          -18,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p33): 'Browse Catalog up in the corner reaches the full library' — pointed at from beside, never clicked (the catalog interior is the follow-up lesson)"
+    },
+    {
+      "op": "key",
+      "pressAt": 110.6,
+      "keys": [
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown"
+      ],
+      "gapMs": 45,
+      "keyLabel": "Scroll ↓",
+      "postcondition": "atBottom",
+      "timeoutMs": 4000,
+      "note": "step 7 (p34 break): genuine keyboard scroll to the foot of the dashboard (probe-verified maxScroll 264px; 9x ArrowDown reaches atBottom) so all six course cards, My Achievements, the leaderboard, and Quick Links come into view"
+    },
+    {
+      "op": "watch",
+      "key": "atBottomHold",
+      "from": 114,
+      "to": 169.5,
+      "predicate": "atBottom",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "steps 7-10 play at the scrolled foot of the page"
+    },
+    {
+      "op": "log-rect",
+      "at": 112.6,
+      "key": "courseGridRect",
+      "target": "courseGrid",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rects",
+      "at": 112.65,
+      "key": "courseCards",
+      "targets": [
+        "cardFirst",
+        "cardExec",
+        "cardSales"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 112.7,
+      "key": "cardStartRect",
+      "target": "cardStartFirst"
+    },
+    {
+      "op": "move",
+      "at": 112.8,
+      "to": {
+        "target": "cardFirst",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 7 (p35): 'the platform basics at forty five minutes' — Getting Started"
+    },
+    {
+      "op": "move",
+      "at": 119.2,
+      "to": {
+        "target": "cardExec",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 7 (p36): '...climb to a two hour fifteen minute analytics course' — Executive Dashboard & KPIs"
+    },
+    {
+      "op": "move",
+      "at": 121.9,
+      "to": {
+        "target": "cardSales",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 7 (p37-p38): 'Real instructors, real lesson counts' — every card reads Not started"
+    },
+    {
+      "op": "move",
+      "at": 124.5,
+      "to": {
+        "target": "cardStartFirst",
+        "offset": [
+          40,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p38) STOP guardrail: 'every Start button stays untouched' — beside a card Start button with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "log-rect",
+      "at": 127.0,
+      "key": "myAchHdrRect",
+      "target": "myAchHdr",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rect",
+      "at": 127.05,
+      "key": "badgeGridRect",
+      "target": "badgeGrid"
+    },
+    {
+      "op": "log-rect",
+      "at": 127.1,
+      "key": "badgeEarnedRect",
+      "target": "badgeEarned"
+    },
+    {
+      "op": "log-rect",
+      "at": 127.15,
+      "key": "badgeLockedRect",
+      "target": "badgeLocked"
+    },
+    {
+      "op": "move",
+      "at": 127.35,
+      "to": {
+        "target": "myAchHdr",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p39-p40): 'Now My Achievements' — three earned, three locked"
+    },
+    {
+      "op": "move",
+      "at": 129.2,
+      "to": {
+        "target": "badgeEarned",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 8 (p41): 'The earned ones render in full color' — Fast Starter"
+    },
+    {
+      "op": "move",
+      "at": 131.8,
+      "to": {
+        "target": "badgeLocked",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 8 (p42): 'the locked ones sit dimmed' — First Certificate"
+    },
+    {
+      "op": "move",
+      "at": 134.1,
+      "to": {
+        "point": [
+          940,
+          760
+        ]
+      },
+      "note": "step 8 (p43-p44): ease across the badge row — the Academy's gamification layer"
+    },
+    {
+      "op": "log-rect",
+      "at": 143.8,
+      "key": "leaderPanelRect",
+      "target": "leaderPanel",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rect",
+      "at": 143.85,
+      "key": "youRowRect",
+      "target": "youRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 143.9,
+      "key": "viewFullRect",
+      "target": "viewFull"
+    },
+    {
+      "op": "move",
+      "at": 144.15,
+      "to": {
+        "target": "leaderPanel",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "step 9 (p45-p46): 'On the right, the Org Leaderboard' — colleagues ranked by learning points"
+    },
+    {
+      "op": "move",
+      "at": 147.7,
+      "to": {
+        "target": "youRow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p47): 'your own row highlighted so you can find yourself in the standings'"
+    },
+    {
+      "op": "move",
+      "at": 151.2,
+      "to": {
+        "target": "viewFull",
+        "offset": [
+          -18,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p48): 'It is view only from here' — View Full Leaderboard pointed at from beside, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 153.5,
+      "to": {
+        "target": "leaderPanel",
+        "offset": [
+          140,
+          120
+        ]
+      },
+      "note": "step 9 (p49): ease over the standings for the competition line"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.0,
+      "key": "quickPanelRect",
+      "target": "quickPanel",
+      "requireStableMs": 150
+    },
+    {
+      "op": "log-rects",
+      "at": 158.05,
+      "key": "quickLinks",
+      "targets": [
+        "quickMLP",
+        "quickMyCert"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 158.35,
+      "to": {
+        "target": "quickPanel",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 10 (p50): 'Under the standings, Quick Links'"
+    },
+    {
+      "op": "move",
+      "at": 159.8,
+      "to": {
+        "target": "quickMLP",
+        "offset": [
+          40,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p51): 'your learning paths' — My Learning Paths shortcut, pointed at from beside"
+    },
+    {
+      "op": "move",
+      "at": 163.6,
+      "to": {
+        "target": "quickMyCert",
+        "offset": [
+          40,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p51-p52): 'and your certificates' — My Certificates shortcut, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 167.7,
+      "to": {
+        "point": [
+          1120,
+          620
+        ]
+      },
+      "note": "step 10 (p53-p54): 'Just the fast lane' — ease off"
+    },
+    {
+      "op": "key",
+      "pressAt": 170.7,
+      "keys": [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp"
+      ],
+      "gapMs": 45,
+      "keyLabel": "Scroll ↑",
+      "postcondition": "atTop",
+      "timeoutMs": 4000,
+      "note": "step 11 (p55 'Back to the sidebar'): genuine keyboard scroll back to the top so the recap frames the dashboard from the top"
+    },
+    {
+      "op": "watch",
+      "key": "atTopHold2",
+      "from": 174,
+      "to": 228,
+      "predicate": "atTop",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "steps 11-13 play back at the top of the dashboard"
+    },
+    {
+      "op": "log-rects",
+      "at": 173.1,
+      "key": "sideThree",
+      "targets": [
+        "sideCatalog",
+        "sidePaths",
+        "sideMyLearning"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 173.5,
+      "to": {
+        "target": "sideCatalog",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p56): 'The catalog is the full library, nineteen courses deep' — beside Course Catalog (interior verified July 11, not opened here)"
+    },
+    {
+      "op": "move",
+      "at": 178.2,
+      "to": {
+        "target": "sidePaths",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p57-p58): 'Learning Paths chains them into named tracks, twenty two courses in all' — beside Learning Paths"
+    },
+    {
+      "op": "move",
+      "at": 184.9,
+      "to": {
+        "target": "sideMyLearning",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p59): 'My Learning keeps your own record across four tabs, every one at zero today' — beside My Learning"
+    },
+    {
+      "op": "move",
+      "at": 190.8,
+      "to": {
+        "point": [
+          760,
+          320
+        ]
+      },
+      "note": "step 11 (p60-p61): 'We point without opening. Their interiors are a walk for another lesson' — ease off the sidebar"
+    },
+    {
+      "op": "log-rect",
+      "at": 194.7,
+      "key": "startCourseRect2",
+      "target": "startCourse"
+    },
+    {
+      "op": "move",
+      "at": 195.0,
+      "to": {
+        "point": [
+          960,
+          520
+        ]
+      },
+      "note": "step 12 (p62): 'One rule before you explore on your own' — hold on the full dashboard"
+    },
+    {
+      "op": "move",
+      "at": 197.5,
+      "to": {
+        "point": [
+          900,
+          420
+        ]
+      },
+      "note": "step 12 (p63-p64): 'Browsing, hovering, reading: all free. Enrolling is not.'"
+    },
+    {
+      "op": "move",
+      "at": 200.9,
+      "to": {
+        "target": "startCourse",
+        "offset": [
+          -18,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p65) STOP guardrail: 'Start Course, Start, and any enroll button create real training records' — beside Start Course with the red do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 202.6,
+      "to": {
+        "target": "startCourse",
+        "offset": [
+          -18,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p66): 'so in this lesson none of them get clicked' — held beside, never pressed"
+    },
+    {
+      "op": "log-rect",
+      "at": 211.75,
+      "key": "statBarRect2",
+      "target": "statBar",
+      "requireStableMs": 150
+    },
+    {
+      "op": "move",
+      "at": 212.1,
+      "to": {
+        "target": "statBar",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "step 13 (p68-p69): recap — 'Four tiles for your status', start at the progress strip"
+    },
+    {
+      "op": "move",
+      "at": 218.3,
+      "to": {
+        "target": "hero",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 13 (p69-p70): 'Continue Learning to resume, the course grid and catalog to browse'"
+    },
+    {
+      "op": "move",
+      "at": 220.9,
+      "to": {
+        "target": "sidePaths",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p71-p72): 'badges and the leaderboard to keep score, and three more sidebar stops' — sweep to the sidebar"
+    },
+    {
+      "op": "move",
+      "at": 226.9,
+      "to": {
+        "point": [
+          1500,
+          930
+        ]
+      },
+      "note": "step 13 (p73): final park, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 228.6,
+      "predicate": "onDashboard",
+      "note": "end state: still on My Dashboard, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 228.8,
+      "predicate": "noEnrollment",
+      "note": "end state: tiles still 0, hero still 0% complete, all six cards still Not started — nothing was enrolled or started"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 7.0,
+        "to": 15.4
+      },
+      {
+        "n": 2,
+        "anchor": "acadLblRect",
+        "place": "right",
+        "from": 16.0,
+        "to": 34.5
+      },
+      {
+        "n": 3,
+        "anchor": "statBarRect",
+        "place": "below-left",
+        "from": 35.0,
+        "to": 53.7
+      },
+      {
+        "n": 4,
+        "anchor": "clHdrRect",
+        "place": "below-left",
+        "from": 54.3,
+        "to": 70.4
+      },
+      {
+        "n": 5,
+        "anchor": "heroRect",
+        "place": "below-left",
+        "from": 71.0,
+        "to": 89.2
+      },
+      {
+        "n": 6,
+        "anchor": "acHdrRect",
+        "place": "below-left",
+        "from": 89.9,
+        "to": 109.6
+      },
+      {
+        "n": 7,
+        "anchor": "courseGridRect",
+        "place": "below-left",
+        "from": 113.0,
+        "to": 126.8
+      },
+      {
+        "n": 8,
+        "anchor": "badgeGridRect",
+        "place": "left-top",
+        "from": 127.4,
+        "to": 143.6
+      },
+      {
+        "n": 9,
+        "anchor": "leaderPanelRect",
+        "place": "left",
+        "from": 144.2,
+        "to": 157.8
+      },
+      {
+        "n": 10,
+        "anchor": "quickPanelRect",
+        "place": "left",
+        "from": 158.4,
+        "to": 169.6
+      },
+      {
+        "n": 11,
+        "anchor": "sideThree.sideCatalog",
+        "place": "right",
+        "from": 173.5,
+        "to": 194.4
+      },
+      {
+        "n": 12,
+        "anchor": "startCourseRect2",
+        "place": "left",
+        "from": 195.0,
+        "to": 211.5
+      },
+      {
+        "n": 13,
+        "anchor": "statBarRect2",
+        "place": "below-left",
+        "from": 212.1,
+        "to": 227.3
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "railRect",
+        "from": 1.7,
+        "to": 4.9,
+        "note": "step 1 (p01-p02): the graduation-cap Academy rail icon — the one genuine navigation in this lesson"
+      },
+      {
+        "anchor": "crumbStrongRect",
+        "from": 6.9,
+        "to": 12.0,
+        "note": "step 1 (p03): the My Dashboard breadcrumb title"
+      },
+      {
+        "anchor": "toolsRow.toolSearch",
+        "from": 9.0,
+        "to": 10.8,
+        "note": "step 1 (p04): Search ⌘K carries over"
+      },
+      {
+        "anchor": "toolsRow.toolAsk",
+        "from": 9.0,
+        "to": 10.8,
+        "note": "Ask Shyne carries over"
+      },
+      {
+        "anchor": "toolsRow.avatar",
+        "from": 9.0,
+        "to": 10.8,
+        "note": "the MG account avatar carries over"
+      },
+      {
+        "anchor": "sideAcademy.sideMyDash",
+        "from": 22.5,
+        "to": 23.8,
+        "note": "step 2 (p08): the four learner destinations in spoken order — your dashboard"
+      },
+      {
+        "anchor": "sideAcademy.sideCatalog",
+        "from": 23.8,
+        "to": 25.0,
+        "note": "the catalog"
+      },
+      {
+        "anchor": "sideAcademy.sidePaths",
+        "from": 25.0,
+        "to": 26.0,
+        "note": "learning paths"
+      },
+      {
+        "anchor": "sideAcademy.sideMyLearning",
+        "from": 26.0,
+        "to": 27.5,
+        "note": "your own course list"
+      },
+      {
+        "anchor": "sideAdmin.sideAdminDash",
+        "from": 27.8,
+        "to": 34.5,
+        "note": "step 2 (p09-p10): the ADMIN group — the back office, out of scope (WC-14-02)"
+      },
+      {
+        "anchor": "tiles.tileEnrolled",
+        "from": 37.0,
+        "to": 37.6,
+        "note": "step 3 (p12): tiles named in spoken order — Enrolled"
+      },
+      {
+        "anchor": "tiles.tileCompleted",
+        "from": 37.6,
+        "to": 38.0,
+        "note": "completed"
+      },
+      {
+        "anchor": "tiles.tileHours",
+        "from": 38.0,
+        "to": 38.4,
+        "note": "hours"
+      },
+      {
+        "anchor": "tiles.tileCerts",
+        "from": 38.4,
+        "to": 39.4,
+        "note": "certificates"
+      },
+      {
+        "anchor": "viewAllRect",
+        "from": 65.6,
+        "to": 70.4,
+        "note": "step 4 (p22): View All — pointed at, never clicked (navigation to My Learning)"
+      },
+      {
+        "anchor": "heroChips.heroChipCat",
+        "from": 71.0,
+        "to": 74.9,
+        "note": "step 5 (p24): the PLATFORM chip"
+      },
+      {
+        "anchor": "heroChips.heroChipLevel",
+        "from": 71.0,
+        "to": 74.9,
+        "note": "the BEGINNER chip"
+      },
+      {
+        "anchor": "heroProgRect",
+        "from": 74.9,
+        "to": 78.6,
+        "note": "step 5 (p25): the progress bar at 0 of 6 lessons and the 45m runtime"
+      },
+      {
+        "anchor": "startCourseRect",
+        "from": 78.7,
+        "to": 89.2,
+        "color": "#dc2626",
+        "note": "step 5 (p26-p27) do-not-click: Start Course would enroll you — held beside, never pressed"
+      },
+      {
+        "anchor": "cardFirstRect",
+        "from": 92.5,
+        "to": 106.2,
+        "note": "step 6 (p29-p32): one card's anatomy — ribbon, title, instructor, duration, progress, status"
+      },
+      {
+        "anchor": "browseCatalogRect",
+        "from": 106.3,
+        "to": 109.6,
+        "note": "step 6 (p33): Browse Catalog — pointed at, never clicked"
+      },
+      {
+        "anchor": "courseCards.cardFirst",
+        "from": 112.8,
+        "to": 119.2,
+        "note": "step 7 (p35): Getting Started — 45m"
+      },
+      {
+        "anchor": "courseCards.cardExec",
+        "from": 119.2,
+        "to": 121.9,
+        "note": "step 7 (p36): Executive Dashboard & KPIs — 2h 15m"
+      },
+      {
+        "anchor": "courseCards.cardSales",
+        "from": 121.9,
+        "to": 124.5,
+        "note": "step 7 (p37): Sales & Transaction Management"
+      },
+      {
+        "anchor": "cardStartRect",
+        "from": 124.5,
+        "to": 126.8,
+        "color": "#dc2626",
+        "note": "step 7 (p38) do-not-click: every Start button stays untouched"
+      },
+      {
+        "anchor": "badgeEarnedRect",
+        "from": 129.2,
+        "to": 131.8,
+        "note": "step 8 (p41): an earned badge in full color — Fast Starter"
+      },
+      {
+        "anchor": "badgeLockedRect",
+        "from": 131.8,
+        "to": 137.0,
+        "note": "step 8 (p42): a locked badge, dimmed — First Certificate"
+      },
+      {
+        "anchor": "youRowRect",
+        "from": 147.7,
+        "to": 151.2,
+        "note": "step 9 (p47): your own highlighted row in the standings"
+      },
+      {
+        "anchor": "viewFullRect",
+        "from": 151.2,
+        "to": 153.4,
+        "note": "step 9 (p48): View Full Leaderboard — view only, never clicked"
+      },
+      {
+        "anchor": "quickLinks.quickMLP",
+        "from": 159.8,
+        "to": 163.6,
+        "note": "step 10 (p51): My Learning Paths shortcut"
+      },
+      {
+        "anchor": "quickLinks.quickMyCert",
+        "from": 163.6,
+        "to": 167.6,
+        "note": "step 10 (p51-p52): My Certificates shortcut"
+      },
+      {
+        "anchor": "sideThree.sideCatalog",
+        "from": 173.5,
+        "to": 178.2,
+        "note": "step 11 (p56): Course Catalog — nineteen courses (pointed at, not opened)"
+      },
+      {
+        "anchor": "sideThree.sidePaths",
+        "from": 178.2,
+        "to": 184.9,
+        "note": "step 11 (p57-p58): Learning Paths — twenty two courses across the paths"
+      },
+      {
+        "anchor": "sideThree.sideMyLearning",
+        "from": 184.9,
+        "to": 190.8,
+        "note": "step 11 (p59): My Learning — four tabs, all zero today"
+      },
+      {
+        "anchor": "startCourseRect2",
+        "from": 200.9,
+        "to": 209.6,
+        "color": "#dc2626",
+        "note": "step 12 (p65-p66) do-not-click: the enroll controls create real training records — never pressed in this lesson"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.8,
+        "z": 1.18,
+        "cx": 620,
+        "cy": 600,
+        "ease": true,
+        "note": "step 1: gentle punch toward the graduation-cap rail icon for the click"
+      },
+      {
+        "t": 5.4,
+        "z": 1.18,
+        "cx": 620,
+        "cy": 600
+      },
+      {
+        "t": 6.6,
+        "z": 1.14,
+        "cx": 960,
+        "cy": 300,
+        "ease": true,
+        "note": "step 1: pull up to the landed My Dashboard top (breadcrumb + tiles)"
+      },
+      {
+        "t": 8.8,
+        "z": 1.14,
+        "cx": 960,
+        "cy": 300
+      },
+      {
+        "t": 9.0,
+        "z": 1.34,
+        "cx": 1180,
+        "cy": 120,
+        "ease": true,
+        "note": "step 1 (p04): the carried-over top-right tools"
+      },
+      {
+        "t": 10.7,
+        "z": 1.34,
+        "cx": 1180,
+        "cy": 120
+      },
+      {
+        "t": 11.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for 'Same platform, different wing'"
+      },
+      {
+        "t": 15.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.0,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 440,
+        "ease": true,
+        "note": "step 2: the ACADEMY / ADMIN sidebar groups"
+      },
+      {
+        "t": 34.5,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 440
+      },
+      {
+        "t": 35.0,
+        "z": 1.12,
+        "cx": 960,
+        "cy": 470,
+        "ease": true,
+        "note": "step 3: the four progress tiles across the top"
+      },
+      {
+        "t": 53.7,
+        "z": 1.12,
+        "cx": 960,
+        "cy": 470
+      },
+      {
+        "t": 54.3,
+        "z": 1.15,
+        "cx": 960,
+        "cy": 480,
+        "ease": true,
+        "note": "step 4: the Continue Learning section and resume card"
+      },
+      {
+        "t": 70.4,
+        "z": 1.15,
+        "cx": 960,
+        "cy": 480
+      },
+      {
+        "t": 70.9,
+        "z": 1.4,
+        "cx": 900,
+        "cy": 420,
+        "ease": true,
+        "note": "step 5: close on the resume card — chips, title, progress line, runtime"
+      },
+      {
+        "t": 89.2,
+        "z": 1.4,
+        "cx": 900,
+        "cy": 420
+      },
+      {
+        "t": 89.9,
+        "z": 1.3,
+        "cx": 770,
+        "cy": 600,
+        "ease": true,
+        "note": "step 6: the All Courses header and one card's anatomy"
+      },
+      {
+        "t": 109.6,
+        "z": 1.3,
+        "cx": 770,
+        "cy": 600
+      },
+      {
+        "t": 112.8,
+        "z": 1.1,
+        "cx": 940,
+        "cy": 560,
+        "ease": true,
+        "note": "step 7: the six course cards (scrolled to the foot)"
+      },
+      {
+        "t": 126.8,
+        "z": 1.1,
+        "cx": 940,
+        "cy": 560
+      },
+      {
+        "t": 127.35,
+        "z": 1.25,
+        "cx": 940,
+        "cy": 648,
+        "ease": true,
+        "note": "step 8: the My Achievements badge row"
+      },
+      {
+        "t": 143.6,
+        "z": 1.25,
+        "cx": 940,
+        "cy": 648
+      },
+      {
+        "t": 144.15,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 470,
+        "ease": true,
+        "note": "step 9: the Org Leaderboard panel and your highlighted row"
+      },
+      {
+        "t": 157.8,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 470
+      },
+      {
+        "t": 158.35,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 620,
+        "ease": true,
+        "note": "step 10: the Quick Links panel"
+      },
+      {
+        "t": 169.6,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 620
+      },
+      {
+        "t": 173.5,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 430,
+        "ease": true,
+        "note": "step 11: the other three sidebar destinations (scrolled back to the top)"
+      },
+      {
+        "t": 194.4,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 430
+      },
+      {
+        "t": 195.0,
+        "z": 1.08,
+        "cx": 960,
+        "cy": 500,
+        "ease": true,
+        "note": "step 12: hold on the full dashboard for the enrollment rule"
+      },
+      {
+        "t": 200.9,
+        "z": 1.2,
+        "cx": 900,
+        "cy": 420,
+        "ease": true,
+        "note": "step 12: settle on the Start Course guardrail"
+      },
+      {
+        "t": 211.5,
+        "z": 1.2,
+        "cx": 900,
+        "cy": 420
+      },
+      {
+        "t": 212.1,
+        "z": 1.1,
+        "cx": 900,
+        "cy": 430,
+        "ease": true,
+        "note": "step 13: recap sweep across the top of the dashboard"
+      },
+      {
+        "t": 226.9,
+        "z": 1.1,
+        "cx": 900,
+        "cy": 430
+      },
+      {
+        "t": 227.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 229.721,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Academy: Learner — Complete",
+      "from": 227.9,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 227.6
+  },
+  "output": "WC-14-01-academy-learner-v1.1",
+  "neverClick": [
+    "start course",
+    "start path",
+    "\\bstart\\b",
+    "enroll",
+    "\\benrol",
+    "course details",
+    "view all",
+    "browse catalog",
+    "view full leaderboard",
+    "my learning paths",
+    "my certificates",
+    "course catalog",
+    "learning paths",
+    "my learning",
+    "admin dashboard",
+    "users & enrollment",
+    "course management",
+    "reports & compliance",
+    "course cards / Start buttons (no course is opened or enrolled)",
+    "sidebar destinations (Course Catalog, Learning Paths, My Learning are pointed at, never opened)",
+    "log ?out",
+    "logout",
+    "log out now",
+    "stay logged in",
+    "stay active",
+    "ask shyne"
+  ]
+}

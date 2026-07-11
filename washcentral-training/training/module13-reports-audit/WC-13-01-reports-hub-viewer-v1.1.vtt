@@ -1,0 +1,250 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.495
+Open the Reports module.
+
+p02
+00:00:02.001 --> 00:00:04.672
+Every figure a client asks you for starts here.
+
+p03
+00:00:05.277 --> 00:00:09.902
+A hundred and seventy-three reports, already sorted so you're not digging through a folder.
+
+p04
+00:00:10.501 --> 00:00:12.400
+The left sidebar is your way in.
+
+p05
+00:00:12.800 --> 00:00:14.397
+Start at the top of the sidebar.
+
+p06
+00:00:14.986 --> 00:00:18.405
+These five shortcuts are pre-built slices of the same list.
+
+p07
+00:00:18.715 --> 00:00:22.573
+The ones you starred, the ones running on a timer, the analytics set.
+
+p08
+00:00:23.282 --> 00:00:27.263
+When a client wants what they always want, you skip the search and click the view.
+
+p09
+00:00:27.680 --> 00:00:29.843
+Below that, nineteen categories.
+
+p10
+00:00:30.232 --> 00:00:30.917
+Financial, transactions, employee labor, inventory, and the rest,
+
+p11
+00:00:31.218 --> 00:00:33.320
+each with a live count beside it.
+
+p12
+00:00:33.643 --> 00:00:35.234
+Some are broad, like transactions with twenty-one reports.
+
+p13
+00:00:35.730 --> 00:00:37.384
+Some hold just one, like weather.
+
+p14
+00:00:37.894 --> 00:00:41.380
+This is how you turn a wall of reports into the two or three
+
+p15
+00:00:41.865 --> 00:00:50.000
+that actually answer the question in front of you.
+
+p16
+00:00:50.465 --> 00:00:52.365
+On the right, the list itself.
+
+p17
+00:00:53.177 --> 00:00:54.709
+A search box sits above it.
+
+p18
+00:00:55.253 --> 00:00:59.190
+Type a few letters of a report's name and the list shrinks to match.
+
+p19
+00:00:59.510 --> 00:01:03.440
+Faster than paging through four screens when you already know what you're after.
+
+p20
+00:01:03.840 --> 00:01:06.241
+Top right, one button: Schedule Report.
+
+p21
+00:01:06.761 --> 00:01:10.279
+That's how a report gets put on a timer and mailed out on its own.
+
+p22
+00:01:10.647 --> 00:01:12.081
+We're only pointing at it today.
+
+p23
+00:01:12.373 --> 00:01:14.281
+It sends, so we leave it alone.
+
+p24
+00:01:14.770 --> 00:01:15.874
+Now the columns.
+
+p25
+00:01:16.344 --> 00:01:17.766
+A star for favorites, the report's name, its category, its type, and when it last ran.
+
+p26
+00:01:18.223 --> 00:01:28.240
+Five columns tell you what a report is and whether anyone has touched it lately.
+
+p27
+00:01:28.640 --> 00:01:30.026
+Look at the Type column.
+
+p28
+00:01:30.472 --> 00:01:33.004
+Standard, Scheduled, or Analytics.
+
+p29
+00:01:33.771 --> 00:01:35.655
+A dash under Last Run means nobody has run it yet.
+
+p30
+00:01:35.962 --> 00:01:37.472
+A date and time means someone did.
+
+p31
+00:01:38.041 --> 00:01:40.061
+The daily financial, for instance, has a scheduled twin that last ran in late March.
+
+p32
+00:01:40.736 --> 00:01:49.946
+And the starred rows are your favorites, one click away in that view up top.
+
+p33
+00:01:50.458 --> 00:01:51.861
+Click a report to open it.
+
+p34
+00:01:52.312 --> 00:01:53.577
+Take the daily financial.
+
+p35
+00:01:54.769 --> 00:01:57.986
+The list steps aside and the report viewer takes over.
+
+p36
+00:01:58.752 --> 00:02:02.488
+Same idea as opening a file: you picked it, now you're inside it.
+
+p37
+00:02:02.960 --> 00:02:04.872
+Across the top, the filters.
+
+p38
+00:02:05.357 --> 00:02:06.586
+A location selector, a date range with a from and a to, and a More Filters button for the rest.
+
+p39
+00:02:06.950 --> 00:02:16.160
+This is where you tell the report which sites and which days before you run it.
+
+p40
+00:02:16.619 --> 00:02:17.750
+Two buttons frame it.
+
+p41
+00:02:18.391 --> 00:02:19.784
+Run Report renders it.
+
+p42
+00:02:20.420 --> 00:02:21.940
+Close Report backs you out.
+
+p43
+00:02:22.667 --> 00:02:24.577
+Notice Schedule Report isn't here.
+
+p44
+00:02:24.974 --> 00:02:28.866
+Scheduling stays on the hub; in here you only run and read.
+
+p45
+00:02:29.280 --> 00:02:30.217
+Click Run Report.
+
+p46
+00:02:30.217 --> 00:02:34.612
+Summary tiles and a table build from the filters you set.
+
+p47
+00:02:34.612 --> 00:02:39.609
+Running it only reads the numbers, so nothing is sent and nothing is saved.
+
+p48
+00:02:39.609 --> 00:02:43.043
+In the drill, you'll hunt down the per-location and per-shift rows,
+
+p49
+00:02:43.043 --> 00:02:45.541
+and the refund column, before you close it.
+
+p50
+00:02:46.000 --> 00:02:47.633
+Check the stamp on the result.
+
+p51
+00:02:48.202 --> 00:02:50.549
+It carries the date the report was generated,
+
+p52
+00:02:50.757 --> 00:02:53.984
+and in this demo it flags the figures as sample data.
+
+p53
+00:02:54.977 --> 00:02:59.135
+On a real client tenant that same line reads their live numbers instead.
+
+p54
+00:02:59.760 --> 00:03:01.550
+Done reading? Close Report.
+
+p55
+00:03:02.367 --> 00:03:06.424
+The viewer folds away and the full list is back, exactly as you left it.
+
+p56
+00:03:06.832 --> 00:03:08.793
+You ran a report and touched nothing.
+
+p57
+00:03:09.200 --> 00:03:10.382
+That's the whole loop.
+
+p58
+00:03:11.049 --> 00:03:13.139
+Find a report by view or category, open it,
+
+p59
+00:03:13.536 --> 00:03:14.068
+set the location and the dates, run it, read it, close it.
+
+p60
+00:03:14.416 --> 00:03:16.027
+When a client swears a report looks wrong, this is the screen you'll share with them.
+
+p61
+00:03:16.328 --> 00:03:16.749
+Now you know every control on it,
+
+p62
+00:03:17.082 --> 00:03:29.760
+and the next lesson takes you into the audit trail behind those numbers.
+

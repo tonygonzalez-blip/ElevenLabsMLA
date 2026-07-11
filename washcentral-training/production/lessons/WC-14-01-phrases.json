@@ -1,0 +1,172 @@
+{
+  "lesson": "WC-14-01",
+  "audioMaster": "training/module14-academy/WC-14-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-14-01-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft): the Σ(ffprobe audio+0.4) formula predicts 230.193s but the ffprobed master is 229.721s (0.472s off, past the ±0.3s gate). Cross-correlation shows the master is the 13 blocks concatenated with a 0.4s gap after each; per-file ffprobe durations are inflated ~0.036s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates (diff reaches -0.472s by s13), which is the whole discrepancy. Each block startS is its measured onset (they land exactly on Σ(PCM audio+0.4)); final end = ffprobed master duration 229.721s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 15.84,
+      "phrases": [
+        { "id": "p01", "text": "WashCentral ships with its own training platform, the Academy." },
+        { "id": "p02", "text": "Click the graduation cap." },
+        { "id": "p03", "text": "You land on My Dashboard, your learning home base." },
+        { "id": "p04", "text": "Notice the top-right corner: search and Ask Shyne follow you in here too." },
+        { "id": "p05", "text": "Same platform, different wing." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.84,
+      "endS": 34.96,
+      "phrases": [
+        { "id": "p06", "text": "Read the sidebar before anything else." },
+        { "id": "p07", "text": "The Academy group holds the four places a learner lives:" },
+        { "id": "p08", "text": "your dashboard, the catalog, learning paths, and your own course list." },
+        { "id": "p09", "text": "Below it sits an Admin group." },
+        { "id": "p10", "text": "That is the back office, another lesson entirely, and we stay out of it today." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.96,
+      "endS": 54.24,
+      "phrases": [
+        { "id": "p11", "text": "Four tiles across the top." },
+        { "id": "p12", "text": "Enrolled, completed, hours, certificates." },
+        { "id": "p13", "text": "Every one reads zero because this account has never taken a course," },
+        { "id": "p14", "text": "and that is worth seeing once:" },
+        { "id": "p15", "text": "it is exactly what a brand new client learner sees on day one." },
+        { "id": "p16", "text": "These four numbers are your status at a glance." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 54.24,
+      "endS": 70.88,
+      "phrases": [
+        { "id": "p17", "text": "Under the tiles, Continue Learning." },
+        { "id": "p18", "text": "This is the resume slot." },
+        { "id": "p19", "text": "When you are partway through a course, it surfaces here" },
+        { "id": "p20", "text": "so you pick up mid-lesson instead of hunting for where you left off." },
+        { "id": "p21", "text": "On a fresh account it previews the starter course instead," },
+        { "id": "p22", "text": "and View All opens the fuller list." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 70.88,
+      "endS": 89.68,
+      "phrases": [
+        { "id": "p23", "text": "Look closer at the card, hands off the buttons." },
+        { "id": "p24", "text": "Two chips set the category and the level, then the title," },
+        { "id": "p25", "text": "a progress bar at zero of six lessons, and the total runtime, forty five minutes." },
+        { "id": "p26", "text": "Start Course would enroll you, and this walk is browse only," },
+        { "id": "p27", "text": "so it stays unclicked." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 89.68,
+      "endS": 110.0,
+      "phrases": [
+        { "id": "p28", "text": "Below that, All Courses." },
+        { "id": "p29", "text": "Each card follows one anatomy:" },
+        { "id": "p30", "text": "a category ribbon, the title, who teaches it and how long it runs," },
+        { "id": "p31", "text": "a progress bar, and a status line." },
+        { "id": "p32", "text": "Not started means available; a moving bar means enrolled." },
+        { "id": "p33", "text": "Browse Catalog up in the corner reaches the full library." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 110.0,
+      "endS": 127.2,
+      "phrases": [
+        { "id": "p34", "text": "Six courses on this dashboard." },
+        { "id": "p35", "text": "They start with the platform basics at forty five minutes" },
+        { "id": "p36", "text": "and climb to a two hour fifteen minute analytics course." },
+        { "id": "p37", "text": "Real instructors, real lesson counts." },
+        { "id": "p38", "text": "Every one reads Not started here, and every Start button stays untouched." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 127.2,
+      "endS": 144.0,
+      "phrases": [
+        { "id": "p39", "text": "Now My Achievements." },
+        { "id": "p40", "text": "Three badges earned, three locked." },
+        { "id": "p41", "text": "The earned ones render in full color;" },
+        { "id": "p42", "text": "the locked ones sit dimmed until you meet their condition." },
+        { "id": "p43", "text": "A small thing, but it is the Academy's gamification layer," },
+        { "id": "p44", "text": "and client crews notice it more than you would expect." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 144.0,
+      "endS": 158.16,
+      "phrases": [
+        { "id": "p45", "text": "On the right, the Org Leaderboard." },
+        { "id": "p46", "text": "Colleagues ranked by learning points," },
+        { "id": "p47", "text": "with your own row highlighted so you can find yourself in the standings." },
+        { "id": "p48", "text": "It is view only from here," },
+        { "id": "p49", "text": "and it is the panel that turns a training rollout into a bit of a competition." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 158.16,
+      "endS": 170.16,
+      "phrases": [
+        { "id": "p50", "text": "Under the standings, Quick Links." },
+        { "id": "p51", "text": "A couple of shortcuts, your learning paths and your certificates," },
+        { "id": "p52", "text": "that jump straight to those views without a trip through the sidebar." },
+        { "id": "p53", "text": "Nothing deep here." },
+        { "id": "p54", "text": "Just the fast lane." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 170.16,
+      "endS": 194.96,
+      "phrases": [
+        { "id": "p55", "text": "Back to the sidebar for the other three stops." },
+        { "id": "p56", "text": "The catalog is the full library, nineteen courses deep." },
+        { "id": "p57", "text": "Learning Paths chains them into named tracks," },
+        { "id": "p58", "text": "twenty two courses in all, none started on this account." },
+        { "id": "p59", "text": "And My Learning keeps your own record across four tabs, every one at zero today." },
+        { "id": "p60", "text": "We point without opening." },
+        { "id": "p61", "text": "Their interiors are a walk for another lesson." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 194.96,
+      "endS": 212.0,
+      "phrases": [
+        { "id": "p62", "text": "One rule before you explore on your own." },
+        { "id": "p63", "text": "Browsing, hovering, reading: all free." },
+        { "id": "p64", "text": "Enrolling is not." },
+        { "id": "p65", "text": "Start Course, Start, and any enroll button create real training records," },
+        { "id": "p66", "text": "so in this lesson none of them get clicked." },
+        { "id": "p67", "text": "Taking a course comes later." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 212.0,
+      "endS": 229.721,
+      "phrases": [
+        { "id": "p68", "text": "That is the learner side." },
+        { "id": "p69", "text": "Four tiles for your status, Continue Learning to resume," },
+        { "id": "p70", "text": "the course grid and catalog to browse," },
+        { "id": "p71", "text": "badges and the leaderboard to keep score," },
+        { "id": "p72", "text": "and three more sidebar stops when you are ready." },
+        { "id": "p73", "text": "You read all of it without enrolling in a thing." }
+      ]
+    }
+  ],
+  "output": "WC-14-01-academy-learner-v1.1"
+}

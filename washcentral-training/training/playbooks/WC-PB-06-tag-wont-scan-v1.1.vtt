@@ -1,0 +1,274 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.203
+Start in CRM, on Vehicles.
+
+p02
+00:00:02.550 --> 00:00:09.086
+Read the top band before you open anyone's account.
+
+p03
+00:00:09.312 --> 00:00:10.287
+Nearly four thousand vehicles on file, and fourteen flagged.
+
+p04
+00:00:10.525 --> 00:00:11.903
+Fourteen. Across the whole network.
+
+p05
+00:00:12.142 --> 00:00:16.047
+That tells you this ticket is almost certainly one member, not a wave.
+
+p06
+00:00:16.257 --> 00:00:21.232
+So work the funnel in order: the account, the plate, the blocklist, the hardware.
+
+p07
+00:00:21.680 --> 00:00:24.982
+Open the member from the customer list and go to the Membership tab.
+
+p08
+00:00:25.715 --> 00:00:27.949
+Three blocks answer most of these tickets.
+
+p09
+00:00:28.469 --> 00:00:30.588
+Loyalty and points holds the barcode.
+
+p10
+00:00:30.856 --> 00:00:33.422
+That is the code the P-O-S actually reads.
+
+p11
+00:00:33.883 --> 00:00:36.260
+Plan details tells you the status is active.
+
+p12
+00:00:36.774 --> 00:00:40.762
+Billing cycle tells you the next charge, so the plan is not past due.
+
+p13
+00:00:41.381 --> 00:00:44.080
+Any of those fails, and you already have your answer.
+
+p14
+00:00:44.480 --> 00:00:45.625
+Now the header chips.
+
+p15
+00:00:46.332 --> 00:00:48.264
+Plate linked is the one that matters here.
+
+p16
+00:00:48.795 --> 00:00:51.234
+It says a plate is on file for the cameras.
+
+p17
+00:00:52.080 --> 00:00:55.548
+Open the Vehicles tab and read what is actually on the account.
+
+p18
+00:00:56.138 --> 00:00:59.971
+No chip, or the wrong plate, and the gate has nothing to match.
+
+p19
+00:01:00.309 --> 00:01:01.802
+Do not add a vehicle.
+
+p20
+00:01:02.126 --> 00:01:05.133
+You report the gap. You never fill it from the demo.
+
+p21
+00:01:05.680 --> 00:01:09.142
+Back out to CRM Vehicles and search the exact plate.
+
+p22
+00:01:09.884 --> 00:01:14.951
+The master list is the plate's own record:
+
+p23
+00:01:15.282 --> 00:01:18.617
+license plate, make and model, year, customer, location, status, last visit.
+
+p24
+00:01:19.206 --> 00:01:20.551
+Confirm three things.
+
+p25
+00:01:20.892 --> 00:01:23.085
+Right customer. A sane status. A last visit that matches the member's story.
+
+p26
+00:01:23.446 --> 00:01:25.896
+One caution from today's capture: the list returned a fetch error.
+
+p27
+00:01:26.631 --> 00:01:35.200
+Make sure rows actually loaded before you say a plate is not on file.
+
+p28
+00:01:35.600 --> 00:01:36.814
+Now the blocklist. Settings, Users and Security, Blacklisted.
+
+p29
+00:01:37.300 --> 00:01:39.504
+Four columns: plate, terminal, created by, created.
+
+p30
+00:01:39.812 --> 00:01:40.681
+A plate on this list is refused at the gate no matter how healthy the membership looks.
+
+p31
+00:01:41.500 --> 00:01:45.496
+So a clean account with a won't-scan symptom sends you straight here.
+
+p32
+00:01:46.006 --> 00:01:48.522
+Read it and leave it alone.
+
+p33
+00:01:48.858 --> 00:02:02.000
+Adding or removing a blacklisted plate from the demo is forbidden.
+
+p34
+00:02:02.400 --> 00:02:04.184
+Both clean? Then it's the site.
+
+p35
+00:02:04.184 --> 00:02:06.541
+Open IT and Support, then System Alerts.
+
+p36
+00:02:06.541 --> 00:02:10.506
+A tunnel or P-O-S fault at the member's location would surface here.
+
+p37
+00:02:10.506 --> 00:02:13.706
+In today's corpus the page would not load at all.
+
+p38
+00:02:13.706 --> 00:02:17.793
+If it is still down when you get there, hold the parked card
+
+p39
+00:02:17.793 --> 00:02:20.469
+and route the hardware question to the site team.
+
+p40
+00:02:20.880 --> 00:02:23.727
+Still in IT and Support, open the Support Queue.
+
+p41
+00:02:24.356 --> 00:02:26.630
+You want an open ticket at the member's home site.
+
+p42
+00:02:26.944 --> 00:02:31.445
+Today's capture has one: an L-P-R ticket at Miami North, high priority.
+
+p43
+00:02:32.225 --> 00:02:34.348
+L-P-R is the plate-reading hardware.
+
+p44
+00:02:34.680 --> 00:02:36.941
+An open ticket there changes your whole read.
+
+p45
+00:02:37.291 --> 00:02:41.279
+This stops being one member and becomes an attachment to a known site issue.
+
+p46
+00:02:41.749 --> 00:02:42.667
+One last stop, and it's a quiet one.
+
+p47
+00:02:42.867 --> 00:02:45.923
+Settings, Operations, Cancellation Reasons.
+
+p48
+00:02:46.152 --> 00:02:47.458
+The migrated reason set includes R-F-I-D tag issues, not reading.
+
+p49
+00:02:47.909 --> 00:02:52.767
+That is a recognized failure mode,
+
+p50
+00:02:52.981 --> 00:02:58.786
+and naming it tells the next team exactly what the field already knows.
+
+p51
+00:02:59.029 --> 00:03:01.156
+Confirm the wording against the live list.
+
+p52
+00:03:01.448 --> 00:03:03.840
+The rows did not load in today's capture.
+
+p53
+00:03:04.240 --> 00:03:05.454
+Now build the ticket.
+
+p54
+00:03:06.038 --> 00:03:08.213
+State which checks passed and which failed.
+
+p55
+00:03:08.754 --> 00:03:11.336
+Barcode present, plan active, or not.
+
+p56
+00:03:11.886 --> 00:03:13.214
+Plate linked, or not. The master-list status.
+
+p57
+00:03:13.762 --> 00:03:15.081
+Whether the plate appears on Blacklisted.
+
+p58
+00:03:15.414 --> 00:03:17.257
+Any open L-P-R ticket or system alert at the site.
+
+p59
+00:03:17.870 --> 00:03:20.675
+Tag the R-F-I-D reason when it fits, and name the location.
+
+p60
+00:03:21.184 --> 00:03:24.463
+The fix happens in production with the right role.
+
+p61
+00:03:25.056 --> 00:03:31.642
+A relink, a blocklist removal, a dispatch. Never here.
+
+p62
+00:03:32.080 --> 00:03:33.372
+That's the funnel.
+
+p63
+00:03:33.372 --> 00:03:35.374
+Frame it on the vehicle list.
+
+p64
+00:03:35.374 --> 00:03:38.013
+Read the barcode, the status, and the next charge.
+
+p65
+00:03:38.013 --> 00:03:42.374
+Confirm the plate is linked, find it in the master list, check the blocklist,
+
+p66
+00:03:42.374 --> 00:03:45.307
+then work the hardware trail through alerts and the queue.
+
+p67
+00:03:45.307 --> 00:03:47.067
+Most tickets never reach the bottom.
+
+p68
+00:03:47.067 --> 00:03:49.678
+And you changed nothing on the way down.
+

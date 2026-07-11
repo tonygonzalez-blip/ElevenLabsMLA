@@ -1,0 +1,302 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.349
+Start in CRM, open Customers, and click into the member's record.
+
+p02
+00:00:01.599 --> 00:00:04.346
+Customer three-sixty opens on nine tabs,
+
+p03
+00:00:05.185 --> 00:00:10.035
+with the header carrying Back, Delete, Edit Customer, and the green Actions menu.
+
+p04
+00:00:10.245 --> 00:00:12.931
+That green menu decides most of this playbook.
+
+p05
+00:00:13.607 --> 00:00:17.669
+Leave it closed for now.
+
+p06
+00:00:18.364 --> 00:00:20.880
+First you confirm what the member actually holds.
+
+p07
+00:00:21.336 --> 00:00:22.781
+Open the Membership tab.
+
+p08
+00:00:23.720 --> 00:00:26.128
+Plan details gives you the membership type, the home location, and the status.
+
+p09
+00:00:26.459 --> 00:00:28.575
+Billing cycle gives you the next charge.
+
+p10
+00:00:29.460 --> 00:00:31.712
+Read status and next charge first.
+
+p11
+00:00:32.014 --> 00:00:34.430
+A cancel or pause request only makes sense against an active plan,
+
+p12
+00:00:35.239 --> 00:00:44.515
+and the next-charge date tells you how much time you have before the member gets billed again.
+
+p13
+00:00:45.040 --> 00:00:47.148
+Now open the green Actions menu.
+
+p14
+00:00:47.406 --> 00:00:48.700
+Look, don't touch.
+
+p15
+00:00:49.059 --> 00:00:51.159
+It offers exactly two actions: Issue Wash and Refund Customer.
+
+p16
+00:00:51.423 --> 00:00:53.599
+The legacy guide promised six, including cancel, pause, and reset.
+
+p17
+00:00:54.052 --> 00:00:58.501
+Those are not here.
+
+p18
+00:00:58.790 --> 00:01:00.170
+Whether they are role-gated or removed is an open question.
+
+p19
+00:01:00.511 --> 00:01:07.460
+So never promise a member a change you cannot see a control for.
+
+p20
+00:01:07.751 --> 00:01:09.953
+Close the menu without selecting anything.
+
+p21
+00:01:10.400 --> 00:01:12.646
+Decide the branch before you navigate.
+
+p22
+00:01:13.310 --> 00:01:16.060
+A refund is a live action, so it gets gated:
+
+p23
+00:01:16.467 --> 00:01:19.234
+who can approve it, and which standard reason applies.
+
+p24
+00:01:19.848 --> 00:01:24.445
+A cancel, pause, or reset is not a demo action, so it routes by role.
+
+p25
+00:01:24.947 --> 00:01:26.938
+Either way, the interaction gets logged.
+
+p26
+00:01:27.263 --> 00:01:29.094
+Two branches. One log.
+
+p27
+00:01:29.520 --> 00:01:31.150
+Take the refund branch first.
+
+p28
+00:01:31.553 --> 00:01:32.252
+Settings, Users and Security, Security Level.
+
+p29
+00:01:32.571 --> 00:01:34.909
+Three columns: name, level, and refund approval required.
+
+p30
+00:01:35.445 --> 00:01:36.302
+That last column is the gate.
+
+p31
+00:01:36.610 --> 00:01:37.104
+It marks, per level, whether a refund needs sign-off before anyone can process it.
+
+p32
+00:01:37.435 --> 00:01:39.878
+Today's capture returned a fetch error in place of rows,
+
+p33
+00:01:40.413 --> 00:01:54.160
+so confirm the list loaded before you read a level's answer.
+
+p34
+00:01:54.626 --> 00:01:57.440
+Read the approval column against the requester's level.
+
+p35
+00:01:57.964 --> 00:01:59.126
+Per the verified walk, Low, Low Medium, and Medium all require approval.
+
+p36
+00:01:59.425 --> 00:02:03.038
+So a Low or Medium user hands the refund to a High Medium or High approver
+
+p37
+00:02:03.469 --> 00:02:10.172
+instead of processing it themselves.
+
+p38
+00:02:10.869 --> 00:02:14.236
+Confirm the live yes or no per level at ticket time.
+
+p39
+00:02:14.595 --> 00:02:16.560
+The mapping was not observable today.
+
+p40
+00:02:16.960 --> 00:02:18.118
+Next, the reason. Settings, Operations, Refund Reasons.
+
+p41
+00:02:18.579 --> 00:02:21.330
+One description column, one job:
+
+p42
+00:02:21.827 --> 00:02:23.703
+every refund gets tagged with a standard reason so reporting stays clean.
+
+p43
+00:02:24.041 --> 00:02:27.986
+Pick from this list, never freehand.
+
+p44
+00:02:28.337 --> 00:02:30.606
+The rows did not load in today's capture,
+
+p45
+00:02:31.374 --> 00:02:36.073
+so the live list is your source at ticket time.
+
+p46
+00:02:36.480 --> 00:02:37.708
+Now the other branch.
+
+p47
+00:02:39.465 --> 00:02:44.716
+Cancel, pause, and reset are not in the demo menu, and that cuts both ways.
+
+p48
+00:02:45.074 --> 00:02:49.609
+You do not promise the change, and you do not tell the member it cannot be done.
+
+p49
+00:02:50.387 --> 00:02:53.064
+On production, confirm your role can perform it.
+
+p50
+00:02:53.500 --> 00:02:56.256
+If it cannot, route the request to someone who can.
+
+p51
+00:02:56.844 --> 00:02:58.473
+That is the whole move.
+
+p52
+00:02:58.948 --> 00:03:00.265
+Whatever happened, log it.
+
+p53
+00:03:00.265 --> 00:03:02.597
+Back on Customer three-sixty, open Notes.
+
+p54
+00:03:02.597 --> 00:03:06.229
+These are internal staff notes, not visible to the customer,
+
+p55
+00:03:06.229 --> 00:03:09.522
+with pin and save controls, and the communication history below.
+
+p56
+00:03:09.522 --> 00:03:14.050
+Record what the member asked, what you did or routed, and any approval.
+
+p57
+00:03:14.050 --> 00:03:16.597
+Pin it if the account is critical.
+
+p58
+00:03:16.597 --> 00:03:18.814
+And never log it in Messaging.
+
+p59
+00:03:18.814 --> 00:03:20.461
+That tab texts the customer.
+
+p60
+00:03:20.880 --> 00:03:21.852
+Then package it.
+
+p61
+00:03:21.852 --> 00:03:23.730
+The member.
+
+p62
+00:03:23.730 --> 00:03:25.674
+The exact change they asked for.
+
+p63
+00:03:25.674 --> 00:03:28.832
+The refund reason if one applies.
+
+p64
+00:03:28.832 --> 00:03:33.072
+The requester's security level and whether approval is required.
+
+p65
+00:03:33.072 --> 00:03:36.113
+And who it routes to.
+
+p66
+00:03:36.113 --> 00:03:38.610
+You verified and you logged.
+
+p67
+00:03:38.610 --> 00:03:42.170
+The cancel, the pause, the refund itself,
+
+p68
+00:03:42.170 --> 00:03:45.808
+all of that happens in production with the right role.
+
+p69
+00:03:46.240 --> 00:03:47.341
+That's the playbook.
+
+p70
+00:03:48.183 --> 00:03:49.830
+Confirm the plan on Membership.
+
+p71
+00:03:50.407 --> 00:03:54.064
+Read the Actions menu for what the platform will actually let you do.
+
+p72
+00:03:54.744 --> 00:03:58.885
+Gate a refund through Security Levels and tag it from Refund Reasons.
+
+p73
+00:03:59.781 --> 00:04:01.984
+Route a cancel or pause by role.
+
+p74
+00:04:02.739 --> 00:04:05.560
+And log everything in Notes, never Messaging.
+
+p75
+00:04:06.166 --> 00:04:07.918
+Every screen stayed read-only.
+

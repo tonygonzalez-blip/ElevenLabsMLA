@@ -1,0 +1,520 @@
+{
+  "lesson": "WC-12-01",
+  "audioMaster": "training/module12-settings/WC-12-01-full-narration-v1.0.mp3",
+  "audioDurationS": 220.291,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Every configuration screen in Wash Central lives behind one gear.",
+      "startS": 0,
+      "endS": 3.17,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Click it.",
+      "startS": 3.17,
+      "endS": 3.804,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Settings opens as its own full-screen area, with its own sidebar and its own front door.",
+      "startS": 3.804,
+      "endS": 9.534,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Setup tickets all end up here sooner or later,",
+      "startS": 9.534,
+      "endS": 12.771,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "so this walk is about learning the floor plan before you need it.",
+      "startS": 12.771,
+      "endS": 16.892,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Check the counter, top right.",
+      "startS": 17.412,
+      "endS": 19.678,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Sixteen categories, ninety two pages.",
+      "startS": 19.678,
+      "endS": 21.594,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "That's the platform's entire configuration surface in one line.",
+      "startS": 21.594,
+      "endS": 25.393,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Nobody memorizes ninety two pages.",
+      "startS": 25.393,
+      "endS": 27.719,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "You memorize how they're grouped, and the groups do the remembering for you.",
+      "startS": 27.719,
+      "endS": 32.701,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Below the heading sits a search box.",
+      "startS": 33.186,
+      "endS": 35.203,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "When you already know the page name, type it here and jump straight in.",
+      "startS": 35.732,
+      "endS": 39.254,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Much faster than scanning cards.",
+      "startS": 39.586,
+      "endS": 41.384,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "We'll leave it empty today and learn the layout the slow way, once.",
+      "startS": 41.906,
+      "endS": 45.51,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Now sweep the card grid.",
+      "startS": 45.92,
+      "endS": 47.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Sixteen cards, one per category, each with a one line summary of what it holds.",
+      "startS": 48.641,
+      "endS": 53.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Locations, payments, hardware, the customer portal, the A-I agent.",
+      "startS": 54.153,
+      "endS": 56.531,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This lesson stays inside the first card, General,",
+      "startS": 56.878,
+      "endS": 59.382,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "because that's where a client's account and org structure are defined.",
+      "startS": 60.192,
+      "endS": 66.092,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Open General.",
+      "startS": 66.56,
+      "endS": 67.557,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "The sidebar expands to nine pages, and the first of them, Account Information, opens on its own.",
+      "startS": 68.205,
+      "endS": 73.925,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Read the names as they appear: profit centers, departments, categories.",
+      "startS": 74.497,
+      "endS": 75.877,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Those three are the spine we came for.",
+      "startS": 76.185,
+      "endS": 81.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Start at the top of Account Information.",
+      "startS": 82.392,
+      "endS": 85.16,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Fifty six locations across fifteen states,",
+      "startS": 85.16,
+      "endS": 87.058,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "running in multi operation mode on an active license.",
+      "startS": 87.058,
+      "endS": 89.905,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "This page is the client's site registry.",
+      "startS": 89.905,
+      "endS": 93.181,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "When you need to confirm what a client actually runs, and where, this is the record of truth.",
+      "startS": 93.181,
+      "endS": 99.2,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Scan the list below.",
+      "startS": 99.6,
+      "endS": 100.972,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Each row is one site with its company, its operation mode, and its contact details.",
+      "startS": 101.361,
+      "endS": 106.514,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "There's a New Record button at the top right.",
+      "startS": 106.889,
+      "endS": 109.275,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Locate it, then leave it alone.",
+      "startS": 109.532,
+      "endS": 111.386,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Adding a site is production admin work, never part of a training walk.",
+      "startS": 111.829,
+      "endS": 115.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "Next page: Profit Centers.",
+      "startS": 116.08,
+      "endS": 116.824,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Four records.",
+      "startS": 117.119,
+      "endS": 118.092,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Wash, lube, detail, and store.",
+      "startS": 118.433,
+      "endS": 119.413,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "These are the top level revenue buckets,",
+      "startS": 119.742,
+      "endS": 120.233,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "and every sale in the platform rolls up into exactly one of them.",
+      "startS": 120.549,
+      "endS": 122.573,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Four short rows that shape every financial report the client will ever read.",
+      "startS": 123.049,
+      "endS": 133.326,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Now Departments.",
+      "startS": 133.819,
+      "endS": 135.075,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "The same four names again, and that's the point.",
+      "startS": 135.441,
+      "endS": 138.33,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Departments map the operational side of the business onto those same revenue buckets,",
+      "startS": 138.735,
+      "endS": 146.674,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "so labor and sales line up when a report compares them.",
+      "startS": 147.2,
+      "endS": 148.266,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "All four active, all maintained by Micro Logic.",
+      "startS": 148.476,
+      "endS": 150.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Then Categories, where the detail lives.",
+      "startS": 150.801,
+      "endS": 153.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "The tiles say forty nine.",
+      "startS": 154.159,
+      "endS": 155.826,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "The list header says sixty six records.",
+      "startS": 156.411,
+      "endS": 159.094,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "They disagree, and the list wins; trust the table count, not the tile.",
+      "startS": 159.581,
+      "endS": 161.634,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "Each category refines one profit center,",
+      "startS": 162.157,
+      "endS": 164.107,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "which is how a single wash bucket splits into dozens of reportable lines.",
+      "startS": 165.058,
+      "endS": 171.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "One more page, and it comes with a trick.",
+      "startS": 172.16,
+      "endS": 176.198,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Dashboard Settings is filed under Analytics, not General, whatever older material tells you.",
+      "startS": 176.198,
+      "endS": 181.187,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "The platform wins.",
+      "startS": 181.187,
+      "endS": 183.084,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Ten dashboards, one per user level,",
+      "startS": 183.084,
+      "endS": 185.214,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "deciding what an administrator, a manager, or a cashier sees the moment they sign in.",
+      "startS": 185.214,
+      "endS": 190.537,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Click Close Settings.",
+      "startS": 190.96,
+      "endS": 192.423,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "You're back in the app, exactly where you left it.",
+      "startS": 193.586,
+      "endS": 196.018,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Five pages read, nothing touched.",
+      "startS": 196.992,
+      "endS": 199.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "So that's the General group.",
+      "startS": 199.583,
+      "endS": 201.201,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "The Settings home reaches ninety two pages, and search jumps you to any of them.",
+      "startS": 201.881,
+      "endS": 204.439,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Account Information holds the sites.",
+      "startS": 204.651,
+      "endS": 206.455,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Profit centers, departments, and categories classify every sale, in that order.",
+      "startS": 207.203,
+      "endS": 209.072,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "And Dashboard Settings lives under Analytics,",
+      "startS": 209.305,
+      "endS": 214.164,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "which will save you a hunt the first time someone asks.",
+      "startS": 214.658,
+      "endS": 219.799,
+      "timing": "silence"
+    }
+  ]
+}

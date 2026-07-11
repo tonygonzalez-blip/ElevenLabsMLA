@@ -1,0 +1,126 @@
+{
+  "lesson": "WC-10-04",
+  "audioMaster": "training/module10-it-support/WC-10-04-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-10-04-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft): Σ(ffprobe audio+0.4) predicts 182.539s but the ffprobed master is 182.204s (0.335s off, past the ±0.3s gate). Cross-correlation shows the master is the 9 blocks concatenated with a uniform ~0.40s gap after each; per-file ffprobe durations carry ~0.037s of mp3 encoder-delay padding each that the PCM concat strips, and the error accumulates (9 x 0.037 ≈ 0.33s), which is the whole discrepancy. Each block startS is its measured onset (0.08s mp3-frame grid); block end = next block onset; final end = ffprobed master duration 182.204s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 18.0,
+      "phrases": [
+        { "id": "p01", "text": "Start on Support Tickets and look at the left rail." },
+        { "id": "p02", "text": "The SUPPORT group keeps every support surface in one place," },
+        { "id": "p03", "text": "tickets, knowledge base, alerts, training requests." },
+        { "id": "p04", "text": "Today's stop is System Alerts," },
+        { "id": "p05", "text": "the one feed that pulls infrastructure trouble from every site onto a single page." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 18.0,
+      "endS": 37.76,
+      "phrases": [
+        { "id": "p06", "text": "Click System Alerts." },
+        { "id": "p07", "text": "One rule before anything else." },
+        { "id": "p08", "text": "Reach this page through the sidebar, never by typing its address." },
+        { "id": "p09", "text": "The direct U-R-L still answers four oh four, while this link renders everything." },
+        { "id": "p10", "text": "The page settles inside the shell, breadcrumb up top," },
+        { "id": "p11", "text": "and four K-P-I tiles waiting across the band." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 37.76,
+      "endS": 56.56,
+      "phrases": [
+        { "id": "p12", "text": "Read the band left to right." },
+        { "id": "p13", "text": "Three alerts open right now." },
+        { "id": "p14", "text": "Fourteen logged today." },
+        { "id": "p15", "text": "And of the open three, one critical against two warnings." },
+        { "id": "p16", "text": "That single critical is the number that decides whether your coffee waits." },
+        { "id": "p17", "text": "Everything below this band exists to explain these four tiles." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 56.56,
+      "endS": 72.56,
+      "phrases": [
+        { "id": "p18", "text": "Upper left, Alert Volume." },
+        { "id": "p19", "text": "A year of history on one line, January through December," },
+        { "id": "p20", "text": "one hundred forty eight alerts in all and trending down eight percent." },
+        { "id": "p21", "text": "That slope is the long view." },
+        { "id": "p22", "text": "It is the sentence a quarterly health review wants to write." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 72.56,
+      "endS": 90.96,
+      "phrases": [
+        { "id": "p23", "text": "Next panel, By Severity." },
+        { "id": "p24", "text": "Four levels." },
+        { "id": "p25", "text": "Info carries fifty eight percent of the traffic, warnings twenty eight," },
+        { "id": "p26", "text": "errors ten, critical just four." },
+        { "id": "p27", "text": "Most of what this feed says is routine noise." },
+        { "id": "p28", "text": "Which is exactly why a critical row deserves your full attention when one shows up." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 90.96,
+      "endS": 106.16,
+      "phrases": [
+        { "id": "p29", "text": "Then System Health." },
+        { "id": "p30", "text": "Eighty six percent healthy, ten warning, four critical." },
+        { "id": "p31", "text": "Hold on that four." },
+        { "id": "p32", "text": "It matches the critical slice next door, one fact drawn two ways." },
+        { "id": "p33", "text": "When two panels agree like that, you can trust the read." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 106.16,
+      "endS": 131.04,
+      "phrases": [
+        { "id": "p34", "text": "Scroll to the Alert List." },
+        { "id": "p35", "text": "Six columns carry each alert's story:" },
+        { "id": "p36", "text": "when it fired, what kind, how severe, which site, what it said, and whether it is still open." },
+        { "id": "p37", "text": "Two buttons above the table stay untouched." },
+        { "id": "p38", "text": "New Record and Export act on the shared tenant, and a support read never creates an alert." },
+        { "id": "p39", "text": "The pager below counts four rows." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 131.04,
+      "endS": 159.12,
+      "phrases": [
+        { "id": "p40", "text": "Now the rows, top to bottom." },
+        { "id": "p41", "text": "The critical one is a tunnel alert at M-L-A-S," },
+        { "id": "p42", "text": "conveyor belt tension past its threshold, still active." },
+        { "id": "p43", "text": "Behind it, two warnings:" },
+        { "id": "p44", "text": "receipt paper running low on a P-O-S at S-S-N-B," },
+        { "id": "p45", "text": "and a chemical tank under twenty percent at Piscataway." },
+        { "id": "p46", "text": "The last row already resolved, a network failover note." },
+        { "id": "p47", "text": "Three rows still active." },
+        { "id": "p48", "text": "That is the Active Alerts tile, itemized." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 159.12,
+      "endS": 182.204082,
+      "phrases": [
+        { "id": "p49", "text": "That is the whole read." },
+        { "id": "p50", "text": "The band for the instant answer." },
+        { "id": "p51", "text": "The panels for trend and mix." },
+        { "id": "p52", "text": "The list for specifics, which type, at which site, still burning or already out." },
+        { "id": "p53", "text": "When a ticket asks whether an outage is one site or the whole platform," },
+        { "id": "p54", "text": "this page and the Command Center's priority board answer it" },
+        { "id": "p55", "text": "before the caller finishes explaining." }
+      ]
+    }
+  ],
+  "output": "WC-10-04-system-alerts-v1.1"
+}

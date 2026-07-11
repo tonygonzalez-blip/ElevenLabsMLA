@@ -1,0 +1,182 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.928
+A caller wants two things: who changed it, and what it said before.
+
+p02
+00:00:02.228 --> 00:00:04.694
+Two pages answer that between them, and you read them in order.
+
+p03
+00:00:05.279 --> 00:00:08.611
+One rule before you start.
+
+p04
+00:00:09.442 --> 00:00:10.914
+The audit trail is read only.
+
+p05
+00:00:11.455 --> 00:00:16.400
+It's only worth anything because nobody corrects it.
+
+p06
+00:00:16.871 --> 00:00:18.345
+Open IT and Support, then Audit.
+
+p07
+00:00:18.552 --> 00:00:19.448
+You land on the Audit Log, and the sidebar lists three pages.
+
+p08
+00:00:19.882 --> 00:00:23.389
+You need two of them today: the Audit Log for who did what,
+
+p09
+00:00:23.602 --> 00:00:24.833
+and Change History for the before and after.
+
+p10
+00:00:25.062 --> 00:00:26.694
+User Activity is login history.
+
+p11
+00:00:26.896 --> 00:00:33.840
+That one belongs to a different playbook.
+
+p12
+00:00:34.240 --> 00:00:35.241
+Read the log.
+
+p13
+00:00:35.899 --> 00:00:38.986
+Seven columns tell you who touched the record, when,
+
+p14
+00:00:39.189 --> 00:00:41.952
+from which location, and from which IP address.
+
+p15
+00:00:42.591 --> 00:00:45.140
+The change you're chasing is an Updated row.
+
+p16
+00:00:45.471 --> 00:00:49.173
+Settings changes land here too, with the module reading Settings.
+
+p17
+00:00:49.944 --> 00:00:51.453
+Don't scroll a busy log.
+
+p18
+00:00:51.706 --> 00:00:53.360
+Filter it, or search it.
+
+p19
+00:00:53.760 --> 00:00:55.784
+Now the page the caller actually wants.
+
+p20
+00:00:56.117 --> 00:00:58.291
+In the sidebar, click Change History.
+
+p21
+00:00:58.800 --> 00:01:00.410
+One quirk from today's capture: typing its address directly returned a four oh four.
+
+p22
+00:01:00.697 --> 00:01:07.663
+So you reach it this way, through the audit sidebar, not by URL.
+
+p23
+00:01:08.080 --> 00:01:09.326
+Narrow it to the record.
+
+p24
+00:01:09.860 --> 00:01:13.891
+Filter down to the module in question so one record's changes stand alone.
+
+p25
+00:01:14.134 --> 00:01:16.320
+You're reading a history, not editing one.
+
+p26
+00:01:16.821 --> 00:01:18.162
+And here's the answer.
+
+p27
+00:01:18.726 --> 00:01:20.774
+Each change is recorded at field level: the field, its old value, its new value,
+
+p28
+00:01:21.026 --> 00:01:25.820
+with the user and the timestamp.
+
+p29
+00:01:26.122 --> 00:01:29.195
+That row is, literally, what was it before.
+
+p30
+00:01:29.600 --> 00:01:31.380
+Now put the two pages together.
+
+p31
+00:01:32.262 --> 00:01:36.381
+Change History gives you the field and the exact old and new values.
+
+p32
+00:01:36.947 --> 00:01:41.708
+The Audit Log gives you the user, the date and time, and the IP address it came from.
+
+p33
+00:01:42.687 --> 00:01:44.866
+The price changed is not an answer.
+
+p34
+00:01:45.087 --> 00:01:46.420
+The two values are.
+
+p35
+00:01:47.018 --> 00:01:48.106
+Write the packet.
+
+p36
+00:01:48.106 --> 00:01:54.642
+The record, the field, both values, the user, the timestamp, the IP address, and screenshots.
+
+p37
+00:01:54.642 --> 00:01:57.692
+You never reverse the change from here.
+
+p38
+00:01:57.692 --> 00:02:02.297
+A correction happens in the record's own module, or gets escalated.
+
+p39
+00:02:02.297 --> 00:02:06.172
+And if the change looks unauthorized, that's a security escalation,
+
+p40
+00:02:06.172 --> 00:02:10.160
+and the next tier wants the IP and the user first.
+
+p41
+00:02:10.560 --> 00:02:11.552
+That's the order.
+
+p42
+00:02:12.174 --> 00:02:13.286
+Audit Log first, for who, when, where, and which IP.
+
+p43
+00:02:13.575 --> 00:02:16.391
+Change History second, for the field-level old to new.
+
+p44
+00:02:16.809 --> 00:02:18.082
+Then the exact answer, or a clean escalation.
+
+p45
+00:02:18.460 --> 00:02:26.080
+Nothing edited, nothing touched.
+

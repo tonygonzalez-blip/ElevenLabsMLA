@@ -1,0 +1,205 @@
+{
+  "lesson": "WC-12-03",
+  "audioMaster": "training/module12-settings/WC-12-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, spoken order, split at the script's break tags and sentence boundaries. Block windows are the blocks' MEASURED positions in the joined master: Σ(audio+0.4) predicts 291.892s but the ffprobed master is 291.318s (0.57s off, past the ±0.3s gate), so each block start is its true onset found by FFT normalized cross-correlation of sNN.mp3 against the joined master (8 kHz mono PCM); every segment matched at ncc=1.000, implied inter-block gaps ~0.36s. Final end = ffprobed master duration 291.318s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 19.04,
+      "phrases": [
+        { "id": "p01", "text": "Open Settings, then open Services." },
+        { "id": "p02", "text": "This is the catalog." },
+        { "id": "p03", "text": "Everything a site sells lives here as a row: a wash, an add-on, a token." },
+        { "id": "p04", "text": "Every price that shows up on the point of sale traces back to this list," },
+        { "id": "p05", "text": "so a pricing question usually ends right where we're standing." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 19.04,
+      "endS": 38.24,
+      "phrases": [
+        { "id": "p06", "text": "Look down the Services group in the sidebar." },
+        { "id": "p07", "text": "Services is the catalog itself." },
+        { "id": "p08", "text": "The pages beneath it, Service Types, Service Groups, Detail Types, Rewards," },
+        { "id": "p09", "text": "define the vocabulary a service draws on." },
+        { "id": "p10", "text": "You rarely edit those," },
+        { "id": "p11", "text": "but knowing they exist tells you where a stray label on a service actually comes from." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 38.24,
+      "endS": 57.2,
+      "phrases": [
+        { "id": "p12", "text": "Read the four tiles across the top." },
+        { "id": "p13", "text": "Twenty-four services, twenty-one active, six types, average price just under fifteen dollars." },
+        { "id": "p14", "text": "It's a health snapshot for the whole catalog, not one site." },
+        { "id": "p15", "text": "And take the counts loosely:" },
+        { "id": "p16", "text": "in this demo the tile totals and the row totals don't always agree." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 57.2,
+      "endS": 76.4,
+      "phrases": [
+        { "id": "p17", "text": "Two cards show the catalog's shape." },
+        { "id": "p18", "text": "The trend line is the count over the last year, ticking up a few percent." },
+        { "id": "p19", "text": "The status card is the one to remember:" },
+        { "id": "p20", "text": "active means it sells, draft means it isn't live yet," },
+        { "id": "p21", "text": "and inactive means it's retired but kept for the history." },
+        { "id": "p22", "text": "Most of the catalog is active." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 76.4,
+      "endS": 89.92,
+      "phrases": [
+        { "id": "p23", "text": "Now the mix by type." },
+        { "id": "p24", "text": "Washes are the biggest slice, then add-ons, then detail work." },
+        { "id": "p25", "text": "That top slice is what we open next," },
+        { "id": "p26", "text": "because a wash package is where the per-site pricing story really shows up." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 89.92,
+      "endS": 104.88,
+      "phrases": [
+        { "id": "p27", "text": "Drop down to the Services List." },
+        { "id": "p28", "text": "This is the real catalog table." },
+        { "id": "p29", "text": "New Service sits top-right, and it's how an admin adds a wash." },
+        { "id": "p30", "text": "We leave it alone:" },
+        { "id": "p31", "text": "creating a service is production work, not something you do from a support seat." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 104.88,
+      "endS": 124.64,
+      "phrases": [
+        { "id": "p32", "text": "Read the columns." },
+        { "id": "p33", "text": "Description, code, type, price, active." },
+        { "id": "p34", "text": "Watch the code column especially." },
+        { "id": "p35", "text": "That's the controller code," },
+        { "id": "p36", "text": "the value that wires the service to the point of sale and the tunnel controller." },
+        { "id": "p37", "text": "When a button rings up the wrong wash, the code is usually the first thing you check." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 124.64,
+      "endS": 145.04,
+      "phrases": [
+        { "id": "p38", "text": "Look at the rows." },
+        { "id": "p39", "text": "On a live tenant this fills with the migrated catalog: wash packages, add-ons, token sales." },
+        { "id": "p40", "text": "The demo is quirkier, it often loads one fixed sample when you open a service." },
+        { "id": "p41", "text": "If you ever see a failed-to-fetch message instead of rows," },
+        { "id": "p42", "text": "that's the data service dropping out, not an empty catalog." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 145.04,
+      "endS": 159.76,
+      "phrases": [
+        { "id": "p43", "text": "There's a search box for a reason." },
+        { "id": "p44", "text": "A full catalog runs a couple hundred rows, so you type the service name rather than scroll." },
+        { "id": "p45", "text": "Filters narrow it further." },
+        { "id": "p46", "text": "We won't run one today;" },
+        { "id": "p47", "text": "just know it's the fast way to find a single wash." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 159.76,
+      "endS": 171.6,
+      "phrases": [
+        { "id": "p48", "text": "Down at the bottom, the page controls." },
+        { "id": "p49", "text": "Twenty-five, fifty, or a hundred rows at a time." },
+        { "id": "p50", "text": "Small thing, but on a big catalog bumping it to a hundred saves a lot of clicking." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 171.6,
+      "endS": 192.0,
+      "phrases": [
+        { "id": "p51", "text": "Open a wash and read the detail." },
+        { "id": "p52", "text": "On the verified pass a service opened onto two tabs, Service Main and Active Locations," },
+        { "id": "p53", "text": "with Back, Delete, and Edit across the top." },
+        { "id": "p54", "text": "Heads up: in this capture the detail page wouldn't load," },
+        { "id": "p55", "text": "so treat what follows as the layout we confirmed earlier, parked for a fresh check." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 192.0,
+      "endS": 213.52,
+      "phrases": [
+        { "id": "p56", "text": "Service Main is where the service is defined." },
+        { "id": "p57", "text": "Eight groups of fields, from basic info to pricing to behavior." },
+        { "id": "p58", "text": "Two earn their keep for support." },
+        { "id": "p59", "text": "Controller code, again, is the point-of-sale mapping." },
+        { "id": "p60", "text": "And count as car decides whether the service adds to the site's car count," },
+        { "id": "p61", "text": "which is why selling a token doesn't fake your traffic numbers." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 213.52,
+      "endS": 232.72,
+      "phrases": [
+        { "id": "p62", "text": "Switch to Active Locations." },
+        { "id": "p63", "text": "This tab is the whole point of the lesson." },
+        { "id": "p64", "text": "It lists the sites and groups where the service actually sells," },
+        { "id": "p65", "text": "each with a status and a start date." },
+        { "id": "p66", "text": "A service only rings up where it's active here." },
+        { "id": "p67", "text": "So if a wash is missing at one site, this is the first tab you open." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 232.72,
+      "endS": 253.12,
+      "phrases": [
+        { "id": "p68", "text": "Now click Edit, and watch the little gears." },
+        { "id": "p69", "text": "They sit beside a handful of fields," },
+        { "id": "p70", "text": "the description, the controller code, the amount, and the tax settings." },
+        { "id": "p71", "text": "Hover one and it reads configure per location." },
+        { "id": "p72", "text": "The plain field is the default everywhere." },
+        { "id": "p73", "text": "The gear lets an admin override it for a single site or group." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 253.12,
+      "endS": 270.88,
+      "phrases": [
+        { "id": "p74", "text": "Click the gear beside the amount." },
+        { "id": "p75", "text": "On the verified pass, nothing opened." },
+        { "id": "p76", "text": "The dialog that's supposed to set a per-site value stayed shut in the demo tenant," },
+        { "id": "p77", "text": "so we park that step and check it on a real configuration." },
+        { "id": "p78", "text": "Point at the gear, explain what it does, and back out." },
+        { "id": "p79", "text": "Never save." }
+      ]
+    },
+    {
+      "block": "s16",
+      "startS": 270.88,
+      "endS": 291.318,
+      "phrases": [
+        { "id": "p80", "text": "So here's the pattern." },
+        { "id": "p81", "text": "One service, one record." },
+        { "id": "p82", "text": "Active Locations decides where it sells." },
+        { "id": "p83", "text": "The gears decide what it costs and how it's taxed at each site." },
+        { "id": "p84", "text": "That's how the Works can run two dollars more at one wash without a second record anywhere." },
+        { "id": "p85", "text": "You'll see the same shape on discounts next, so it's worth owning now." }
+      ]
+    }
+  ],
+  "output": "WC-12-03-services-per-location-v1.1"
+}

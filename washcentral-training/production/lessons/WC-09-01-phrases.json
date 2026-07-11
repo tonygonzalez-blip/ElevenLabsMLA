@@ -1,0 +1,161 @@
+{
+  "lesson": "WC-09-01",
+  "audioMaster": "training/module09-digital/WC-09-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence/clause boundaries (<=~95 chars). Block windows were measured by normalized FFT cross-correlation of each WC-09-01-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft; NCC score 1.000 for all 12). The Σ(ffprobe audio+0.4) formula predicts 230.42s but the ffprobed master is 229.956s (0.46s off, past the ±0.3s gate). Cross-correlation shows the master is the 12 blocks concatenated with an exact 0.400s gap after each; per-file ffprobe durations are inflated ~0.0386s each by mp3 encoder-delay padding that the PCM concat strips (12×0.0386≈0.46s), which is the whole discrepancy. Each block startS is its measured onset (an exact multiple of the 0.08s mp3-frame grid); final end = ffprobed master duration 229.956s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 13.68,
+      "phrases": [
+        { "id": "p01", "text": "Open the Digital module." },
+        { "id": "p02", "text": "The sidebar splits in two." },
+        { "id": "p03", "text": "The top group, Customer Portal, runs the surfaces your members sign into." },
+        { "id": "p04", "text": "Five entries." },
+        { "id": "p05", "text": "The mobile pages sit below, but those are the next lesson." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 13.68,
+      "endS": 23.76,
+      "phrases": [
+        { "id": "p06", "text": "Click Portal Members." },
+        { "id": "p07", "text": "This is your roster of everyone who holds a portal login." },
+        { "id": "p08", "text": "When a customer says the website won't let them in, this is where you start." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 23.76,
+      "endS": 41.28,
+      "phrases": [
+        { "id": "p09", "text": "Four numbers across the top." },
+        { "id": "p10", "text": "Registered members, how many were active this month, how many joined this week," },
+        { "id": "p11", "text": "and the share who reach you on mobile." },
+        { "id": "p12", "text": "One glance sizes the portal and shows how live it is." },
+        { "id": "p13", "text": "That mobile share matters, since most portal traffic now comes through the app." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 41.28,
+      "endS": 57.52,
+      "phrases": [
+        { "id": "p14", "text": "Below sit three cards." },
+        { "id": "p15", "text": "Growth over the year, the plan mix with unlimited monthly the biggest slice," },
+        { "id": "p16", "text": "and account health split into active, inactive, and suspended." },
+        { "id": "p17", "text": "Watch that suspended slice;" },
+        { "id": "p18", "text": "it's where locked-out members surface before they call." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 57.52,
+      "endS": 71.28,
+      "phrases": [
+        { "id": "p19", "text": "Now the roster itself." },
+        { "id": "p20", "text": "New Record and Export sit top-right, a search box and Filters just under them." },
+        { "id": "p21", "text": "Today you're only reading, so leave Export alone." },
+        { "id": "p22", "text": "It sends data out, and this is a look-only tour." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 71.28,
+      "endS": 88.8,
+      "phrases": [
+        { "id": "p23", "text": "Six columns." },
+        { "id": "p24", "text": "Name, email, when they joined, their plan, portal status, and last login." },
+        { "id": "p25", "text": "Portal status is your first stop when someone can't reach the website:" },
+        { "id": "p26", "text": "it tells you whether their access is even active." },
+        { "id": "p27", "text": "Last login backs it up, showing when they were really here." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 88.8,
+      "endS": 102.72,
+      "phrases": [
+        { "id": "p28", "text": "Down at the foot: rows per page, a record count, and the pager." },
+        { "id": "p29", "text": "Reading, paging, and searching change nothing." },
+        { "id": "p30", "text": "New Record would open a create form," },
+        { "id": "p31", "text": "but that form didn't load during verification, so we leave it parked." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 102.72,
+      "endS": 127.76,
+      "phrases": [
+        { "id": "p32", "text": "Back to the sidebar." },
+        { "id": "p33", "text": "Click Booking Page." },
+        { "id": "p34", "text": "The admin chrome disappears." },
+        { "id": "p35", "text": "What loads is the customer's own booking site," },
+        { "id": "p36", "text": "with its own branding and a five step wizard that runs from service to confirm." },
+        { "id": "p37", "text": "Step one offers three service categories: an inspection, an oil change, and detailing." },
+        { "id": "p38", "text": "Read that first screen, then stop." },
+        { "id": "p39", "text": "Advancing the wizard books a real visit, so Continue never gets clicked." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 127.76,
+      "endS": 153.12,
+      "phrases": [
+        { "id": "p40", "text": "Portal Messages next." },
+        { "id": "p41", "text": "This is where member messages land and get worked." },
+        { "id": "p42", "text": "Fourteen sit unread right now, twenty eight are open," },
+        { "id": "p43", "text": "and responses average around three hours." },
+        { "id": "p44", "text": "Every row carries a status, a priority, and an owner," },
+        { "id": "p45", "text": "so a billing question and a cancellation request never look alike." },
+        { "id": "p46", "text": "Replying reaches a real customer." },
+        { "id": "p47", "text": "We read the list and touch nothing." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 153.12,
+      "endS": 178.8,
+      "phrases": [
+        { "id": "p48", "text": "Portal Billing sits just under it." },
+        { "id": "p49", "text": "A running log of billing events on the portal side." },
+        { "id": "p50", "text": "Card updates, plan changes, auto renewals," },
+        { "id": "p51", "text": "and the failures that turn into phone calls." },
+        { "id": "p52", "text": "When a member asks why a card was declined," },
+        { "id": "p53", "text": "the action and status columns tell that story in one row." },
+        { "id": "p54", "text": "Every line here is live money." },
+        { "id": "p55", "text": "Read it, always; touch it, never." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 178.8,
+      "endS": 203.6,
+      "phrases": [
+        { "id": "p56", "text": "Last entry, Portal Notifications." },
+        { "id": "p57", "text": "The automated sends." },
+        { "id": "p58", "text": "A welcome email fires when an account is created," },
+        { "id": "p59", "text": "and a renewal reminder goes out a week ahead." },
+        { "id": "p60", "text": "The list tracks each one's audience, open rate, and status." },
+        { "id": "p61", "text": "Twelve are active, and more than eight hundred went out today alone." },
+        { "id": "p62", "text": "These reach real members, so nothing here is ever sent, created, or edited in training." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 203.6,
+      "endS": 229.956,
+      "phrases": [
+        { "id": "p63", "text": "So that's the Customer Portal group." },
+        { "id": "p64", "text": "Five entries, and you have now read all five." },
+        { "id": "p65", "text": "Portal Members for the roster and login trouble." },
+        { "id": "p66", "text": "The booking page for what the customer actually sees." },
+        { "id": "p67", "text": "Messages for the inbox, Billing for the money log, Notifications for the automated sends." },
+        { "id": "p68", "text": "Reach them from the sidebar, since a pasted address still fails." },
+        { "id": "p69", "text": "And read everything without sending, booking, or exporting a thing." }
+      ]
+    }
+  ],
+  "output": "WC-09-01-portal-pages-v1.1"
+}

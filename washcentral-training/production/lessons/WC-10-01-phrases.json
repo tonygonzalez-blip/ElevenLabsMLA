@@ -1,0 +1,191 @@
+{
+  "lesson": "WC-10-01",
+  "audioMaster": "training/module10-it-support/WC-10-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-10-01-sNN.mp3 against the joined master (8 kHz mono f32 PCM, numpy rfft): the Sigma(ffprobe audio+0.4) formula predicts 270.202s but the ffprobed master is 269.714s (0.488s off, past the +/-0.3s gate). Cross-correlation shows the master is the 15 blocks concatenated with an ~0.4s gap after each; per-file ffprobe durations are inflated ~0.033s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates monotonically (diff reaches -0.493s by s15), which is the whole discrepancy. Each block startS is its measured onset, which lands cleanly on the 0.08s mp3-frame grid; final end = ffprobed master duration 269.714s. Spelled acronyms (N-O-C, S-L-A) are kept verbatim from the master script per house caption convention.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 18.24,
+      "phrases": [
+        { "id": "p01", "text": "This is the Micrologic N-O-C." },
+        { "id": "p02", "text": "One board, watching every customer we support, all at once." },
+        { "id": "p03", "text": "Tech support and customer success both live here." },
+        { "id": "p04", "text": "A tenant's own Command Center covers a single operator;" },
+        { "id": "p05", "text": "this one sits above all of them, so you catch trouble before the phone even rings." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 18.24,
+      "endS": 39.84,
+      "phrases": [
+        { "id": "p06", "text": "Look at the top strip." },
+        { "id": "p07", "text": "A red count of the customers in critical shape right now." },
+        { "id": "p08", "text": "A live badge, and a note that it just refreshed." },
+        { "id": "p09", "text": "That matters: the board updates itself, so you are never staring at stale numbers." },
+        { "id": "p10", "text": "And the search box up here is scoped to this screen, to customers, locations, and incidents." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 39.84,
+      "endS": 57.6,
+      "phrases": [
+        { "id": "p11", "text": "Under the header, three tabs: all customers, enterprise, general." },
+        { "id": "p12", "text": "All customers is the whole book." },
+        { "id": "p13", "text": "The other two split it by tier, enterprise on one side, general on the other." },
+        { "id": "p14", "text": "It is the same instinct as the location scope you already know." },
+        { "id": "p15", "text": "They aim the board, and they touch nothing underneath." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 57.6,
+      "endS": 72.0,
+      "phrases": [
+        { "id": "p16", "text": "Tap Enterprise." },
+        { "id": "p17", "text": "Everything tightens to that tier: the counts, the map, the feed." },
+        { "id": "p18", "text": "Tap All Customers and the whole network snaps back." },
+        { "id": "p19", "text": "It is a filter on your view, nothing deeper, and it undoes itself in a single click." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 72.0,
+      "endS": 90.0,
+      "phrases": [
+        { "id": "p20", "text": "Beside the filters, three small counts." },
+        { "id": "p21", "text": "Critical, warning, healthy." },
+        { "id": "p22", "text": "That is the room in one glance, how many customers sit in each band this minute." },
+        { "id": "p23", "text": "When the critical number climbs, that is your first signal to slow down and look closer," },
+        { "id": "p24", "text": "before you have opened a single account." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 90.0,
+      "endS": 107.76,
+      "phrases": [
+        { "id": "p25", "text": "Now the saved views." },
+        { "id": "p26", "text": "All Accounts is everything." },
+        { "id": "p27", "text": "Enterprise Critical and Needs Attention" },
+        { "id": "p28", "text": "drag the board straight to what deserves your eyes first." },
+        { "id": "p29", "text": "Reach for Needs Attention when you walk in cold and want the short list," },
+        { "id": "p30", "text": "then drop back to All Accounts." },
+        { "id": "p31", "text": "View only, same as the filters." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 107.76,
+      "endS": 125.76,
+      "phrases": [
+        { "id": "p32", "text": "Across the top, five cards." },
+        { "id": "p33", "text": "Customers, critical, warning, healthy, and average S-L-A." },
+        { "id": "p34", "text": "The first four sort your accounts by health." },
+        { "id": "p35", "text": "The last one is the service level for the whole board," },
+        { "id": "p36", "text": "a single clean number you can quote in a morning stand-up without opening anything else." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 125.76,
+      "endS": 141.04,
+      "phrases": [
+        { "id": "p37", "text": "Read the small print under each count." },
+        { "id": "p38", "text": "Every card splits enterprise against general." },
+        { "id": "p39", "text": "So a card never just tells you how many." },
+        { "id": "p40", "text": "It tells you which tier is carrying the weight," },
+        { "id": "p41", "text": "and that split is exactly where you decide who gets the first call." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 141.04,
+      "endS": 157.84,
+      "phrases": [
+        { "id": "p42", "text": "The average S-L-A card earns a second look." },
+        { "id": "p43", "text": "It reads just over ninety-seven percent, with the day-over-day drift right beneath it." },
+        { "id": "p44", "text": "A down arrow is a quiet alarm." },
+        { "id": "p45", "text": "Attainment slipped since yesterday," },
+        { "id": "p46", "text": "and on this board that is worth chasing down before it grows." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 157.84,
+      "endS": 175.44,
+      "phrases": [
+        { "id": "p47", "text": "Drop to Network Coverage." },
+        { "id": "p48", "text": "Every supported site on one map, painted by health: green, amber, red." },
+        { "id": "p49", "text": "The header counts the customers, the locations, and the states behind them." },
+        { "id": "p50", "text": "This is the shape of the whole network in a single picture," },
+        { "id": "p51", "text": "and it is where a regional pattern jumps out at you." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 175.44,
+      "endS": 190.48,
+      "phrases": [
+        { "id": "p52", "text": "The map is live under your cursor." },
+        { "id": "p53", "text": "Plus and minus zoom, the arrows go full screen," },
+        { "id": "p54", "text": "and the numbered bubbles group nearby sites by their worst case." },
+        { "id": "p55", "text": "Click a state or a cluster and it drops you into that region, without ever leaving the board." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 190.48,
+      "endS": 207.28,
+      "phrases": [
+        { "id": "p56", "text": "Swing to the feed on the right." },
+        { "id": "p57", "text": "Three tabs: incidents, locations, customers, each with a live count." },
+        { "id": "p58", "text": "Incidents is the default, and the one you live in during a shift." },
+        { "id": "p59", "text": "The other two re-cut the same trouble by site and by account," },
+        { "id": "p60", "text": "for when you want a different angle on it." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 207.28,
+      "endS": 225.12,
+      "phrases": [
+        { "id": "p61", "text": "The feed stacks by severity." },
+        { "id": "p62", "text": "Critical up top, then warning, then info and monitoring, each with its own tally." },
+        { "id": "p63", "text": "Hold onto one thing here: these count incidents, while the cards up top count customers." },
+        { "id": "p64", "text": "Two different denominators, so the numbers will not always line up, and that is fine." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 225.12,
+      "endS": 245.12,
+      "phrases": [
+        { "id": "p65", "text": "Now read one row." },
+        { "id": "p66", "text": "The customer, its tier, the headline of what broke, a tag for the kind of failure," },
+        { "id": "p67", "text": "an owner or a status, and how long it has been running." },
+        { "id": "p68", "text": "That last part matters most." },
+        { "id": "p69", "text": "An old, unassigned critical is the one that should bother you." },
+        { "id": "p70", "text": "Read it here; you work it somewhere else." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 245.12,
+      "endS": 269.714,
+      "phrases": [
+        { "id": "p71", "text": "So that is the cockpit." },
+        { "id": "p72", "text": "Filters and saved views aim it." },
+        { "id": "p73", "text": "The cards and the map give you the shape at a glance." },
+        { "id": "p74", "text": "The feed tells you what is broken and who has it." },
+        { "id": "p75", "text": "Nothing here changes a thing." },
+        { "id": "p76", "text": "You spot it on this board," },
+        { "id": "p77", "text": "then open the customer, the ticket, or the alert somewhere else to fix it." },
+        { "id": "p78", "text": "Learn this screen well, because on a busy day it is the first thing you open." }
+      ]
+    }
+  ],
+  "output": "WC-10-01-ml-command-center-v1.1"
+}

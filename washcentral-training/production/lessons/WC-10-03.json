@@ -1,0 +1,364 @@
+{
+  "lesson": "WC-10-03",
+  "title": "IT Support: Help Desk (Zoho)",
+  "audioMaster": "training/module10-it-support/WC-10-03-full-narration-v1.0.mp3",
+  "audioDurationS": 167.706122,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/support-tickets.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railITSupport": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^IT & Support$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railSettingsBtn": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Settings$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railPanelToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideSupportTickets": {
+      "selector": "aside.sidebar a[href=\"support-tickets.html\"]"
+    },
+    "sideHelpDesk": {
+      "selector": "aside.sidebar a[href=\"zoho-tickets.html\"]"
+    },
+    "zSubtitle": {
+      "js": "[...document.querySelectorAll('.a-meta')].find(e=>/Not connected/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "zCountsStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "zEmptyCard": {
+      "js": "[...document.querySelectorAll('div')].find(e=>{const t=e.textContent||'';return /Zoho Desk not connected/.test(t)&&/Configure and authorize/.test(t)&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().width<1700})"
+    },
+    "zFilterStatus": {
+      "js": "[...document.querySelectorAll('select')].find(s=>s.options&&/All Statuses/.test((s.options[0]&&s.options[0].text)||''))"
+    },
+    "zFilterPriority": {
+      "js": "[...document.querySelectorAll('select')].find(s=>s.options&&/All Priorities/.test((s.options[0]&&s.options[0].text)||''))"
+    },
+    "zGoSettingsBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/Go to Zoho Desk Settings/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "integCard": {
+      "js": "[...document.querySelectorAll('.sh-card-name')].find(e=>/^Integrations$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "zohoSubItem": {
+      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^Zoho Desk$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "statusBadge": {
+      "selector": ".int-badge.not-configured"
+    },
+    "planBadge": {
+      "js": "[...document.querySelectorAll('.a-plan-badge')].find(e=>/Help Desk Integration/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "capOAuth": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>/^OAuth 2\\.0$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "capLiveView": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>/^Live View$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "capServer": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>/^Server-side Token$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tileConnection": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Connection/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileDataCenter": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Data Center/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileOrgId": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Org ID/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileSyncDir": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sync Direction/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "credGroupHdr": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Credentials$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "genGroupHdr": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^General$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "fiClientId": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/Client ID/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "fiClientSecret": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/Client Secret/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "fiAccessToken": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/Access Token/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "fiRefreshToken": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/Refresh Token/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "fiTokenExpiry": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/Token Expiry/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "fiEnabled": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Enabled/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tabSettings": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>/^Settings$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tabInstructions": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>/^Instructions$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "testBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Test Connection$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "editBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^Edit Configuration$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onSupportTickets": "location.pathname.endsWith('/support-tickets.html')",
+    "onZoho": "location.pathname.endsWith('/zoho-tickets.html')",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onZohoSettings": "location.pathname.endsWith('/settings-integrations-zoho.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "supportLinksVisible": "['support-tickets.html','zoho-tickets.html'].every(h=>{const a=document.querySelector('aside.sidebar a[href=\"'+h+'\"]');return !!a&&a.getBoundingClientRect().width>0})",
+    "zohoViewLoaded": "location.pathname.endsWith('/zoho-tickets.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=5&&/Zoho Desk not connected/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
+    "integCardOpen": "[...document.querySelectorAll('a.sh-card-item')].some(e=>/^Zoho Desk$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "zohoSettingsLoaded": "location.pathname.endsWith('/settings-integrations-zoho.html')&&!!document.querySelector('.int-badge.not-configured')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-fi')].filter(e=>e.getBoundingClientRect().width>0).length>=6&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
+    "notConfiguredHeld": "location.pathname.endsWith('/settings-integrations-zoho.html')&&!!document.querySelector('.int-badge.not-configured')",
+    "noMutationNav": "!/edit|create|-new\\./i.test(location.pathname)"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railPanelToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted rail-panel preference EXPANDED so step 1 reads the SUPPORT group links with labels and every downstream page renders in the expanded layout. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: expanded reads aside.sidebar width 220 with Support Tickets at x102 y184 and Help Desk (Zoho) at x102 y219). Skipped when already expanded."
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onSupportTickets", "note": "start page identity: the lesson opens on Support Tickets so the IT & Support / SUPPORT sidebar group is in view (step 1 sweeps it; the active Support Tickets link is never clicked)" },
+    { "op": "assert", "at": -1.0, "predicate": "sidebarExpanded", "note": "pre-roll: preflight staged the persisted rail panel expanded; abort the take if collapsed" },
+    { "op": "assert", "at": -0.7, "predicate": "supportLinksVisible", "note": "pre-roll: both Support Tickets and Help Desk (Zoho) links are visible in the SUPPORT group" },
+    { "op": "watch", "key": "sidebarHeld", "from": 1, "to": 36.5, "predicate": "sidebarExpanded", "everyMs": 2000, "mustHold": true, "note": "steps 1-2 run with the sidebar panel expanded" },
+    { "op": "watch", "key": "noMutationNav", "from": 1, "to": 166.5, "predicate": "noMutationNav", "everyMs": 1500, "mustHold": true, "note": "read-only guardrail: the path never becomes an edit/create/new form on any page — proves Edit Configuration, New, and every create-form link were never activated" },
+    { "op": "watch", "key": "zohoViewHeld", "from": 20, "to": 36.8, "predicate": "onZoho", "everyMs": 1500, "mustHold": true, "note": "step 2 guardrail: while on the embedded Zoho view nothing is clicked — Refresh, the two Refresh buttons, the header back and Go to Zoho Desk Settings all navigate, so an unchanged path proves none was pressed" },
+    { "op": "watch", "key": "configHeld", "from": 42, "to": 166.5, "predicate": "notConfiguredHeld", "everyMs": 2000, "mustHold": true, "note": "steps 4-10 mutation guardrail: we stay on settings-integrations-zoho and the integration stays reading .int-badge.not-configured the whole time — proves Test Connection and Edit Configuration were never clicked and nothing was connected or configured" },
+
+    { "op": "pointer-enter", "at": 0.35, "from": [40, 1079], "to": { "target": "sideHelpDesk", "offset": [235, -30] }, "note": "step 1: enter from the bottom-left toward the SUPPORT group as p01 says 'Start in the left rail, under I-T and Support'" },
+    { "op": "log-rects", "at": 0.8, "key": "supportPair", "targets": ["sideSupportTickets", "sideHelpDesk"] },
+    { "op": "log-rect", "at": 0.9, "key": "railITSupportRect", "target": "railITSupport" },
+    { "op": "move", "at": 1.0, "to": { "target": "sideSupportTickets", "offset": [235, -4], "outside": true }, "note": "step 1 (p01): rest beside the top of the SUPPORT group (never on the active Support Tickets link)" },
+    { "op": "move", "at": 3.9, "to": { "target": "sideHelpDesk", "offset": [235, 8], "outside": true }, "note": "step 1 (p02): 'The Support group stacks your ticket tools together' — sweep down the group" },
+    { "op": "move", "at": 6.8, "to": { "target": "sideSupportTickets", "offset": [235, 0], "outside": true }, "note": "step 1 (p03): 'Right below Support Tickets' — Support Tickets" },
+    { "op": "move", "at": 8.6, "to": { "target": "sideHelpDesk", "offset": [235, 0], "outside": true }, "note": "step 1 (p03): '...sits Help Desk, Zoho'" },
+    { "op": "move", "at": 10.6, "to": { "target": "sideSupportTickets", "offset": [235, 0], "outside": true }, "note": "step 1 (p04): 'One is WashCentral's own queue' — Support Tickets" },
+    { "op": "move", "at": 12.9, "to": { "target": "sideHelpDesk", "offset": [235, 0], "outside": true }, "note": "step 1 (p05): 'The other is meant to mirror a help desk that lives outside the platform' — Help Desk (Zoho)" },
+    { "op": "move", "at": 15.6, "to": { "target": "sideHelpDesk", "offset": [235, 0], "outside": true }, "note": "step 1 tail: hold beside Help Desk (Zoho) into the step-2 click" },
+
+    { "op": "click", "target": "sideHelpDesk", "pressAt": 18.3, "hoverMs": 500, "postcondition": "onZoho", "nav": true, "timeoutMs": 6000, "note": "step 2 (p06): 'Open Help Desk, Zoho' — the one genuine navigation, a pure <a href=\"zoho-tickets.html\"> sidebar link (no onclick, probe-verified); reaching the page by the sidebar is required (the direct URL 404'd July 9)" },
+    { "op": "wait-stable", "afterNav": true, "key": "zohoReady", "predicate": "zohoViewLoaded", "settleMs": 700, "timeoutMs": 8000, "note": "the embedded not-connected view: 5 em-dash count placeholders, filters, and the 'Zoho Desk not connected' empty state" },
+    { "op": "log-rect", "at": 19.4, "key": "zSubtitleRect", "target": "zSubtitle" },
+    { "op": "log-rect", "at": 19.5, "key": "zCountsRect", "target": "zCountsStrip", "requireStableMs": 160 },
+    { "op": "log-rect", "at": 19.6, "key": "zEmptyRect", "target": "zEmptyCard" },
+    { "op": "log-rect", "at": 19.65, "key": "zGoSettingsRect", "target": "zGoSettingsBtn" },
+    { "op": "log-rects", "at": 19.7, "key": "zFilters", "targets": ["zFilterStatus", "zFilterPriority"] },
+    { "op": "move", "at": 19.64, "to": { "target": "zCountsStrip", "offset": [40, -24], "outside": true }, "note": "step 2 (p08): 'It is the data that is missing' — above the em-dash count row" },
+    { "op": "move", "at": 22.97, "to": { "target": "zCountsStrip", "offset": [40, 12], "outside": true }, "note": "step 2 (p09): 'Every count across the top shows a dash' — sweep from the left" },
+    { "op": "move", "at": 24.3, "to": { "target": "zCountsStrip", "offset": [1450, 12], "outside": true }, "note": "step 2 (p09): sweep across to the right of the count row" },
+    { "op": "move", "at": 25.46, "to": { "target": "zFilterStatus", "offset": [40, 17], "outside": true }, "note": "step 2 (p10): 'the status and priority filters have nothing to filter' — the status filter" },
+    { "op": "move", "at": 27.8, "to": { "target": "zFilterPriority", "offset": [40, 17], "outside": true }, "note": "step 2 (p10): the priority filter" },
+    { "op": "move", "at": 30.85, "to": { "target": "zEmptyCard", "offset": [-160, -250] }, "note": "step 2 (p11): 'the card in the middle says it plainly: Zoho Desk not connected' — the empty-state heading" },
+    { "op": "move", "at": 33.19, "to": { "target": "zGoSettingsBtn", "offset": [-45, 42], "outside": true }, "note": "step 2 (p12) guardrail: 'a button straight to its settings' — the Go to Zoho Desk Settings button is pointed at from beside with the red do-not-click ring, never pressed (step 3 uses the normal Settings menu path instead, per the director note)" },
+    { "op": "move", "at": 35.8, "to": { "target": "zGoSettingsBtn", "offset": [-45, 42], "outside": true }, "note": "step 2 tail: hold beside the Go to Zoho Desk Settings button" },
+
+    { "op": "click", "target": "railSettingsBtn", "pressAt": 38.0, "hoverMs": 520, "postcondition": "onSettingsHome", "nav": true, "timeoutMs": 6000, "note": "step 3 (p13) 'Head to Settings' — the global rail Settings button (app chrome) navigates to settings.html; the forbidden page buttons (Go to Zoho Desk Settings / back to Settings) are avoided" },
+    { "op": "wait-stable", "afterNav": true, "key": "settingsReady", "predicate": "pageReady", "settleMs": 400, "timeoutMs": 8000 },
+    { "op": "click", "target": "integCard", "pressAt": 38.95, "hoverMs": 340, "postcondition": "integCardOpen", "timeoutMs": 4000, "note": "step 3 (p13) 'Integrations' — expand the stateless Integrations category card (closed on fresh load) to reveal its sub-items; this expand does not navigate" },
+    { "op": "click", "target": "zohoSubItem", "pressAt": 39.85, "hoverMs": 340, "postcondition": "onZohoSettings", "nav": true, "timeoutMs": 6000, "note": "step 3 (p13) 'Zoho Desk' — the Zoho Desk sub-item is a pure <a class=\"sh-card-item\" href=\"settings-integrations-zoho.html\"> (probe-verified), landing on the connection settings inside the 1.4s break before p14" },
+    { "op": "wait-stable", "afterNav": true, "key": "zohoSettingsReady", "predicate": "zohoSettingsLoaded", "settleMs": 700, "timeoutMs": 9000, "note": "the Zoho Desk integration settings: Not Configured badge, four status tiles, the credential fields" },
+    { "op": "log-rect", "at": 40.9, "key": "crumbBarRect", "target": "crumbBar", "requireStableMs": 200 },
+    { "op": "move", "at": 40.98, "to": { "target": "crumbBar", "offset": [30, 46], "outside": true }, "note": "step 3 (p14): 'This is the control room for the connection' — settle under the SETTINGS > Zoho Desk breadcrumb" },
+    { "op": "move", "at": 43.59, "to": { "point": [960, 320] }, "note": "step 3 (p15): 'Whether Zoho talks to WashCentral is read from this one page'" },
+    { "op": "move", "at": 47.62, "to": { "point": [980, 360] }, "note": "step 3 (p16): 'so it's where support work on this integration starts'" },
+
+    { "op": "log-rect", "at": 50.7, "key": "statusBadgeRect", "target": "statusBadge", "requireStableMs": 160 },
+    { "op": "log-rect", "at": 50.74, "key": "planBadgeRect", "target": "planBadge" },
+    { "op": "log-rects", "at": 50.8, "key": "capChips", "targets": ["capOAuth", "capLiveView", "capServer"] },
+    { "op": "move", "at": 50.64, "to": { "target": "statusBadge", "offset": [0, 34], "outside": true }, "note": "step 4 (p17): 'Look at the header'" },
+    { "op": "move", "at": 51.93, "to": { "target": "statusBadge", "offset": [0, 26], "outside": true }, "note": "step 4 (p18): 'A warning badge reads Not Configured'" },
+    { "op": "move", "at": 54.91, "to": { "target": "statusBadge", "offset": [0, 26], "outside": true }, "note": "step 4 (p19): 'That's the whole story in two words' — hold beneath the badge" },
+    { "op": "move", "at": 57.32, "to": { "target": "capOAuth", "offset": [0, 26], "outside": true }, "note": "step 4 (p20): 'The chips beside it name how the link would work'" },
+    { "op": "move", "at": 61.58, "to": { "target": "capOAuth", "offset": [0, 26], "outside": true }, "note": "step 4 (p21): 'oh-auth' — the OAuth 2.0 chip" },
+    { "op": "move", "at": 62.8, "to": { "target": "capLiveView", "offset": [0, 26], "outside": true }, "note": "step 4 (p21): 'a live view' — the Live View chip" },
+    { "op": "move", "at": 63.9, "to": { "target": "capServer", "offset": [0, 26], "outside": true }, "note": "step 4 (p21): 'a server-side token' — the Server-side Token chip" },
+
+    { "op": "log-rects", "at": 65.6, "key": "tiles", "targets": ["tileConnection", "tileDataCenter", "tileOrgId", "tileSyncDir"] },
+    { "op": "move", "at": 65.52, "to": { "target": "tileConnection", "offset": [0, 12] }, "note": "step 5 (p22): 'Run across the four tiles'" },
+    { "op": "move", "at": 68.94, "to": { "target": "tileConnection", "offset": [0, 12] }, "note": "step 5 (p23): 'Connection, not set'" },
+    { "op": "move", "at": 70.67, "to": { "target": "tileDataCenter", "offset": [0, 12] }, "note": "step 5 (p24): 'Data center, US'" },
+    { "op": "move", "at": 72.42, "to": { "target": "tileSyncDir", "offset": [0, 12] }, "note": "step 5 (p25): 'Sync direction, both'" },
+    { "op": "move", "at": 74.79, "to": { "target": "tileConnection", "offset": [0, 12] }, "note": "step 5 (p26): 'So the tenant has picked how it wants to sync, but no one has authorized the link yet'" },
+    { "op": "move", "at": 77.2, "to": { "point": [1000, 220] }, "note": "step 5 tail: ease across the tile strip" },
+
+    { "op": "log-rect", "at": 79.7, "key": "credGroupRect", "target": "credGroupHdr", "requireStableMs": 160 },
+    { "op": "log-rects", "at": 79.8, "key": "credFields", "targets": ["fiClientId", "fiClientSecret", "fiAccessToken", "fiRefreshToken"] },
+    { "op": "log-rect", "at": 79.85, "key": "tokenExpiryRect", "target": "fiTokenExpiry" },
+    { "op": "move", "at": 79.6, "to": { "target": "credGroupHdr", "offset": [20, 40], "outside": true }, "note": "step 6 (p27): 'Drop into the Credentials group'" },
+    { "op": "move", "at": 82.38, "to": { "target": "fiClientId", "offset": [0, 8] }, "note": "step 6 (p28): 'Client I-D, blank'" },
+    { "op": "move", "at": 83.86, "to": { "target": "fiClientSecret", "offset": [0, 8] }, "note": "step 6 (p29): 'Secret, not set'" },
+    { "op": "move", "at": 84.67, "to": { "target": "fiAccessToken", "offset": [0, 8] }, "note": "step 6 (p30): 'Access ... tokens, not set'" },
+    { "op": "move", "at": 85.6, "to": { "target": "fiRefreshToken", "offset": [0, 8] }, "note": "step 6 (p30): '...and refresh tokens, not set'" },
+    { "op": "move", "at": 86.47, "to": { "target": "fiTokenExpiry", "offset": [0, 8] }, "note": "step 6 (p31): 'With nothing stored here, there's no live line to Zoho'" },
+    { "op": "move", "at": 89.71, "to": { "point": [960, 470] }, "note": "step 6 (p32): 'which is exactly why the Help Desk view had nothing to show'" },
+
+    { "op": "log-rect", "at": 96.8, "key": "genGroupRect", "target": "genGroupHdr", "requireStableMs": 160 },
+    { "op": "log-rect", "at": 96.85, "key": "enabledRect", "target": "fiEnabled" },
+    { "op": "move", "at": 96.72, "to": { "target": "genGroupHdr", "offset": [20, 40], "outside": true }, "note": "step 7 (p33): 'Keep reading down'" },
+    { "op": "move", "at": 98.18, "to": { "point": [980, 770] }, "note": "step 7 (p34): 'Routing, sync, behavior, mapping' — gesture down the lower groups" },
+    { "op": "move", "at": 101.84, "to": { "point": [980, 720] }, "note": "step 7 (p35): 'These rules decide where tickets land and which way they flow once the link goes live'" },
+    { "op": "move", "at": 106.75, "to": { "target": "fiEnabled", "offset": [40, 8] }, "note": "step 7 (p36): 'Notice Enabled says Yes' — the GENERAL / ENABLED field" },
+    { "op": "move", "at": 108.9, "to": { "target": "statusBadge", "offset": [0, 26], "outside": true }, "note": "step 7 (p36): '...while the status still says Not Configured' — glance up to the badge" },
+    { "op": "move", "at": 111.55, "to": { "target": "fiEnabled", "offset": [40, 8] }, "note": "step 7 (p37): 'Switched on in intent, not yet connected'" },
+
+    { "op": "log-rects", "at": 114.8, "key": "tabs", "targets": ["tabSettings", "tabInstructions"] },
+    { "op": "move", "at": 114.72, "to": { "target": "tabSettings", "offset": [0, 34], "outside": true }, "note": "step 8 (p38): 'Two tabs sit under the header'" },
+    { "op": "move", "at": 116.86, "to": { "target": "tabSettings", "offset": [0, 34], "outside": true }, "note": "step 8 (p39): 'Settings, where you are'" },
+    { "op": "move", "at": 118.4, "to": { "target": "tabInstructions", "offset": [0, 34], "outside": true }, "note": "step 8 (p39): 'and Instructions'" },
+    { "op": "move", "at": 120.24, "to": { "target": "tabInstructions", "offset": [0, 34], "outside": true }, "note": "step 8 (p40) guardrail: 'The full setup walk-through lives under Instructions, and in lesson twelve point nine' — pointed at from beside, the Instructions tab is never opened (its content is out of scope, WC-12-09)" },
+    { "op": "move", "at": 125.21, "to": { "target": "tabSettings", "offset": [0, 34], "outside": true }, "note": "step 8 (p41): 'For today, stay on Settings and just read'" },
+
+    { "op": "log-rects", "at": 128.4, "key": "btns", "targets": ["testBtn", "editBtn"] },
+    { "op": "move", "at": 128.24, "to": { "target": "testBtn", "offset": [-55, 44], "outside": true }, "note": "step 9 (p42): 'Top right, two buttons' — approach from beside, never onto them" },
+    { "op": "move", "at": 129.71, "to": { "target": "testBtn", "offset": [-55, 44], "outside": true }, "note": "step 9 (p43): 'Test Connection...'" },
+    { "op": "move", "at": 130.9, "to": { "target": "editBtn", "offset": [-45, 44], "outside": true }, "note": "step 9 (p43): '...and Edit Configuration'" },
+    { "op": "move", "at": 132.57, "to": { "target": "testBtn", "offset": [-55, 44], "outside": true }, "note": "step 9 (p44) guardrail: 'Test Connection pings Zoho for real' — beside the button with the red do-not-click ring, never pressed" },
+    { "op": "move", "at": 135.8, "to": { "target": "editBtn", "offset": [-45, 44], "outside": true }, "note": "step 9 (p45) guardrail: 'Edit Configuration opens the credentials' — beside it with the red do-not-click ring, never pressed" },
+    { "op": "move", "at": 137.92, "to": { "point": [1690, 150] }, "note": "step 9 (p46): 'Both touch the live integration' — hold clear of both buttons" },
+    { "op": "move", "at": 139.75, "to": { "point": [1690, 150] }, "note": "step 9 (p47): 'so neither one gets clicked in a read-only check'" },
+    { "op": "move", "at": 143.06, "to": { "point": [1690, 150] }, "note": "step 9 (p48): 'or in support unless the change is yours to make'" },
+
+    { "op": "log-rect", "at": 147.5, "key": "statusBadgeRect2", "target": "statusBadge" },
+    { "op": "log-rect", "at": 147.55, "key": "tokenExpiryRect2", "target": "fiTokenExpiry" },
+    { "op": "move", "at": 147.44, "to": { "point": [960, 300] }, "note": "step 10 (p49): 'So, Help Desk, Zoho'" },
+    { "op": "move", "at": 148.87, "to": { "point": [960, 330] }, "note": "step 10 (p50): 'It's an embedded window into an outside help desk'" },
+    { "op": "move", "at": 150.13, "to": { "target": "statusBadge", "offset": [0, 26], "outside": true }, "note": "step 10 (p51): 'empty here because the integration is Not Configured'" },
+    { "op": "move", "at": 153.23, "to": { "point": [960, 360] }, "note": "step 10 (p52): 'When a real client's Zoho tickets go quiet, this is the page you open'" },
+    { "op": "move", "at": 156.65, "to": { "target": "fiTokenExpiry", "offset": [40, 8] }, "note": "step 10 (p53): 'and Token Expiry is the first field you read' — the field now spoken" },
+    { "op": "move", "at": 163.98, "to": { "target": "testBtn", "offset": [-55, 44], "outside": true }, "note": "step 10 (p54) guardrail: 'You never have to click Test Connection to know where you stand' — beside the button, red ring, still never pressed" },
+    { "op": "move", "at": 166.5, "to": { "point": [1620, 320] }, "note": "step 10 tail: final park, clear of content and captions" },
+    { "op": "assert", "at": 166.9, "predicate": "onZohoSettings", "note": "end state: still on the Zoho Desk integration settings, unchanged" },
+    { "op": "assert", "at": 167.1, "predicate": "notConfiguredHeld", "note": "end state: the integration still reads Not Configured — nothing was tested, edited, connected, or configured" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "supportPair.sideHelpDesk", "place": "right", "from": 1.2, "to": 16.6 },
+      { "n": 2, "anchor": "zSubtitleRect", "place": "below-left", "from": 19.5, "to": 30.7 },
+      { "n": 3, "anchor": "crumbBarRect", "place": "below-left", "from": 41.1, "to": 50.3 },
+      { "n": 4, "anchor": "statusBadgeRect", "place": "below-left", "from": 52.0, "to": 65.1 },
+      { "n": 5, "anchor": "tiles.tileConnection", "place": "below-left", "from": 66.0, "to": 79.3 },
+      { "n": 6, "anchor": "credGroupRect", "place": "below-left", "from": 79.9, "to": 96.4 },
+      { "n": 7, "anchor": "enabledRect", "place": "right", "from": 106.9, "to": 114.4 },
+      { "n": 8, "anchor": "tabs.tabInstructions", "place": "below-left", "from": 115.0, "to": 128.0 },
+      { "n": 9, "anchor": "btns.testBtn", "place": "left", "from": 128.6, "to": 147.2 },
+      { "n": 10, "anchor": "tokenExpiryRect2", "place": "right", "from": 150.3, "to": 166.3 }
+    ],
+    "highlights": [
+      { "anchor": "supportPair.sideSupportTickets", "from": 10.6, "to": 12.9, "note": "step 1 (p04): Support Tickets — WashCentral's own queue" },
+      { "anchor": "supportPair.sideHelpDesk", "from": 12.9, "to": 16.6, "note": "step 1 (p05): Help Desk (Zoho) — mirrors an outside help desk" },
+      { "anchor": "zCountsRect", "from": 22.97, "to": 25.46, "note": "step 2 (p09): the em-dash count placeholders" },
+      { "anchor": "zEmptyRect", "from": 30.85, "to": 33.19, "note": "step 2 (p11): the 'Zoho Desk not connected' empty state" },
+      { "anchor": "zGoSettingsRect", "from": 33.19, "to": 36.8, "color": "#dc2626", "note": "step 2 (p12) do-not-click: Go to Zoho Desk Settings navigates the connector — pointed at, never pressed" },
+      { "anchor": "crumbBarRect", "from": 40.98, "to": 47.4, "note": "step 3 (p14-p15): the SETTINGS > Zoho Desk breadcrumb" },
+      { "anchor": "statusBadgeRect", "from": 51.93, "to": 57.32, "note": "step 4 (p18-p19): the warning Not Configured status" },
+      { "anchor": "capChips.capOAuth", "from": 61.58, "to": 62.8, "note": "step 4 (p21): OAuth 2.0" },
+      { "anchor": "capChips.capLiveView", "from": 62.8, "to": 63.9, "note": "step 4 (p21): Live View" },
+      { "anchor": "capChips.capServer", "from": 63.9, "to": 65.1, "note": "step 4 (p21): Server-side Token" },
+      { "anchor": "tiles.tileConnection", "from": 68.94, "to": 70.67, "note": "step 5 (p23): Connection Not set" },
+      { "anchor": "tiles.tileDataCenter", "from": 70.67, "to": 72.42, "note": "step 5 (p24): Data Center US" },
+      { "anchor": "tiles.tileSyncDir", "from": 72.42, "to": 74.79, "note": "step 5 (p25): Sync Direction both" },
+      { "anchor": "credFields.fiClientId", "from": 82.38, "to": 83.86, "note": "step 6 (p28): Client ID blank" },
+      { "anchor": "credFields.fiClientSecret", "from": 83.86, "to": 84.67, "note": "step 6 (p29): Client Secret Not set" },
+      { "anchor": "credFields.fiAccessToken", "from": 84.67, "to": 85.6, "note": "step 6 (p30): Access Token Not set" },
+      { "anchor": "credFields.fiRefreshToken", "from": 85.6, "to": 86.47, "note": "step 6 (p30): Refresh Token Not set" },
+      { "anchor": "enabledRect", "from": 106.75, "to": 111.55, "note": "step 7 (p36-p37): ENABLED Yes — switched on in intent" },
+      { "anchor": "statusBadgeRect", "from": 108.9, "to": 111.55, "note": "step 7 (p36): ...while the status still reads Not Configured" },
+      { "anchor": "tabs.tabSettings", "from": 116.86, "to": 118.4, "note": "step 8 (p39): the Settings tab (where you are)" },
+      { "anchor": "tabs.tabInstructions", "from": 118.4, "to": 124.9, "note": "step 8 (p39-p40): the Instructions tab (named, never opened)" },
+      { "anchor": "btns.testBtn", "from": 129.71, "to": 147.2, "color": "#dc2626", "note": "step 9 do-not-click: Test Connection reaches out to Zoho for real — never pressed" },
+      { "anchor": "btns.editBtn", "from": 129.71, "to": 147.2, "color": "#dc2626", "note": "step 9 do-not-click: Edit Configuration opens the live credentials — never pressed" },
+      { "anchor": "statusBadgeRect2", "from": 150.13, "to": 153.23, "note": "step 10 (p51): Not Configured" },
+      { "anchor": "tokenExpiryRect2", "from": 156.65, "to": 163.98, "note": "step 10 (p53): TOKEN EXPIRY — the field to read when a connected tenant's tickets stop syncing" },
+      { "anchor": "btns.testBtn", "from": 163.98, "to": 166.5, "color": "#dc2626", "note": "step 10 (p54) do-not-click: you never click Test Connection to know where you stand" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 0.9, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 1.6, "z": 1.32, "cx": 210, "cy": 220, "ease": true, "note": "step 1: the SUPPORT sidebar group" },
+      { "t": 16.6, "z": 1.32, "cx": 210, "cy": 220 },
+      { "t": 17.3, "z": 1.12, "cx": 960, "cy": 400, "ease": true, "note": "step 2: the embedded not-connected view" },
+      { "t": 30.0, "z": 1.12, "cx": 960, "cy": 400 },
+      { "t": 30.7, "z": 1.3, "cx": 960, "cy": 520, "ease": true, "note": "step 2: 130% on the empty-state card" },
+      { "t": 36.8, "z": 1.3, "cx": 960, "cy": 520 },
+      { "t": 37.4, "z": 1.06, "cx": 960, "cy": 320, "ease": true, "note": "step 3: pull wide through the Settings navigation" },
+      { "t": 40.6, "z": 1.06, "cx": 960, "cy": 300 },
+      { "t": 41.0, "z": 1.14, "cx": 900, "cy": 300, "ease": true, "note": "step 3: the Zoho Desk settings page identity" },
+      { "t": 50.3, "z": 1.14, "cx": 900, "cy": 300 },
+      { "t": 50.8, "z": 1.5, "cx": 720, "cy": 135, "ease": true, "note": "step 4: 150% on the Not Configured status chip" },
+      { "t": 65.0, "z": 1.5, "cx": 720, "cy": 135 },
+      { "t": 65.6, "z": 1.18, "cx": 1010, "cy": 220, "ease": true, "note": "step 5: the four status tiles" },
+      { "t": 79.3, "z": 1.18, "cx": 1010, "cy": 220 },
+      { "t": 79.8, "z": 1.2, "cx": 950, "cy": 445, "ease": true, "note": "step 6: the Credentials group" },
+      { "t": 96.4, "z": 1.2, "cx": 950, "cy": 445 },
+      { "t": 96.9, "z": 1.08, "cx": 950, "cy": 380, "ease": true, "note": "step 7: General/Enabled with the status badge still in frame" },
+      { "t": 114.4, "z": 1.08, "cx": 950, "cy": 380 },
+      { "t": 114.9, "z": 1.35, "cx": 440, "cy": 280, "ease": true, "note": "step 8: the Settings / Instructions tabs" },
+      { "t": 128.0, "z": 1.35, "cx": 440, "cy": 280 },
+      { "t": 128.6, "z": 1.34, "cx": 1690, "cy": 135, "ease": true, "note": "step 9: the Test Connection / Edit Configuration buttons (both red guardrails)" },
+      { "t": 147.2, "z": 1.34, "cx": 1690, "cy": 135 },
+      { "t": 147.6, "z": 1.12, "cx": 960, "cy": 320, "ease": true, "note": "step 10: recap wide" },
+      { "t": 156.4, "z": 1.12, "cx": 960, "cy": 320 },
+      { "t": 156.7, "z": 1.22, "cx": 710, "cy": 410, "ease": true, "note": "step 10: settle on TOKEN EXPIRY" },
+      { "t": 164.0, "z": 1.22, "cx": 710, "cy": 410 },
+      { "t": 164.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
+      { "t": 167.706, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": true,
+    "completion": { "text": "Help Desk (Zoho) — Complete", "from": 165.9, "fadeOutFrames": 10 },
+    "captionsBurnClearAt": 165.6
+  },
+  "output": "WC-10-03-help-desk-zoho-v1.1",
+  "neverClick": [
+    "test connection",
+    "edit configuration",
+    "go to zoho desk settings",
+    "\\brefresh\\b",
+    "\\binstructions\\b",
+    "ask shyne",
+    "log ?out",
+    "logout",
+    "log out now",
+    "stay logged in",
+    "stay active",
+    "\\bsave\\b",
+    "save changes",
+    "\\bdelete\\b",
+    "yes, delete",
+    "\\bsend\\b",
+    "submit",
+    "authorize",
+    "\\bconnect\\b",
+    "disconnect",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "approve",
+    "export",
+    "\\breset\\b"
+  ]
+}

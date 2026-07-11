@@ -1,0 +1,112 @@
+{
+  "lesson": "WC-15-02",
+  "audioMaster": "training/module15-migration/WC-15-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries into caption-sized pieces (<=~95 chars). Nothing rewritten, summarized, or reordered; <break/> tags and stage directions stripped. Block windows use the default measured-onset rule (BUILDER-BRIEF): startS = cumulative Sigma(ffprobe per-step audio + 0.4). Per-step ffprobe: s01 9.952653, s02 18.912653, s03 16.352653, s04 15.307755, s05 21.968980, s06 27.010612, s07 24.346122, s08 12.512653. Sigma(audio+0.4)=149.564; ffprobed master=149.316 (diff 0.248s, within the 0.3s gate) so no cross-correlation needed. Final block endS clamped to the probed master duration 149.316, which is audioDurationS in the lesson JSON.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 10.353,
+      "phrases": [
+        { "id": "p01", "text": "Sooner or later a migrated client says the platform looks different," },
+        { "id": "p02", "text": "or asks where one of their features went." },
+        { "id": "p03", "text": "You have two kinds of answer, and one hard rule." },
+        { "id": "p04", "text": "Here they are." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 10.353,
+      "endS": 29.665,
+      "phrases": [
+        { "id": "p05", "text": "Start with the big picture, and attribute it." },
+        { "id": "p06", "text": "Per Micrologic platform documentation," },
+        { "id": "p07", "text": "all one hundred seventy-nine WashAssist modules carried forward with full parity," },
+        { "id": "p08", "text": "plus sixteen or more new capability areas." },
+        { "id": "p09", "text": "Say \"per the documentation.\"" },
+        { "id": "p10", "text": "You are quoting it, not claiming you counted." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 29.665,
+      "endS": 46.418,
+      "phrases": [
+        { "id": "p11", "text": "If the client is technical, there is a second attributed layer." },
+        { "id": "p12", "text": "The platform was rebuilt on AWS, with token-based sign-in," },
+        { "id": "p13", "text": "sessions tied to the device, and rate limiting on the busy screens." },
+        { "id": "p14", "text": "Again, that is the documentation talking," },
+        { "id": "p15", "text": "not something you can point to on screen." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 46.418,
+      "endS": 62.126,
+      "phrases": [
+        { "id": "p16", "text": "For \"what is coming,\" keep it to what is documented." },
+        { "id": "p17", "text": "Release two moves Marketing onto an event-driven backbone with two-way data replication." },
+        { "id": "p18", "text": "Release three brings event-driven microservices." },
+        { "id": "p19", "text": "No dates." },
+        { "id": "p20", "text": "If they push for a date, that is parked." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 62.126,
+      "endS": 84.495,
+      "phrases": [
+        { "id": "p21", "text": "Now the question you will actually get: where did my feature go." },
+        { "id": "p22", "text": "Whole modules were regrouped." },
+        { "id": "p23", "text": "Employees, Gamification, and the Scheduler live under Team now." },
+        { "id": "p24", "text": "Maintenance, Incidents, and appointment Scheduling are under Operations." },
+        { "id": "p25", "text": "Mobile and the Portal are under Digital." },
+        { "id": "p26", "text": "Support and Audit sit under IT and Support." },
+        { "id": "p27", "text": "And Billing and Academy are brand new." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 84.495,
+      "endS": 111.905,
+      "phrases": [
+        { "id": "p28", "text": "Some features did not leave, they just moved or became a button." },
+        { "id": "p29", "text": "Retention Log is a button on the Customer List." },
+        { "id": "p30", "text": "Generate Invoices is a button on House Accounts." },
+        { "id": "p31", "text": "Rewards moved into Settings, under Services." },
+        { "id": "p32", "text": "Adjustments moved into Inventory." },
+        { "id": "p33", "text": "Forecasting is under Analytics." },
+        { "id": "p34", "text": "Report scheduling is on the Reports hub." },
+        { "id": "p35", "text": "The full map is in our own verified records," },
+        { "id": "p36", "text": "so you are citing what we saw, not guessing." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 111.905,
+      "endS": 136.651,
+      "phrases": [
+        { "id": "p37", "text": "Here is the rule that keeps you honest." },
+        { "id": "p38", "text": "If you cannot find a feature live, you do not say it is gone." },
+        { "id": "p39", "text": "PIN Codes, Loyalty Discounts, Tech Commissions, Site Watch," },
+        { "id": "p40", "text": "and a few others are not visible today." },
+        { "id": "p41", "text": "The correct answer is that their status is being confirmed." },
+        { "id": "p42", "text": "It might have moved, it might be in a later release." },
+        { "id": "p43", "text": "Log the ask, and let it be answered properly." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 136.651,
+      "endS": 149.316,
+      "phrases": [
+        { "id": "p44", "text": "So, three moves." },
+        { "id": "p45", "text": "Give the parity story and attribute it." },
+        { "id": "p46", "text": "Locate the specific feature from the verified map." },
+        { "id": "p47", "text": "And never, ever call something gone." },
+        { "id": "p48", "text": "Confirm first, then answer." }
+      ]
+    }
+  ],
+  "output": "WC-15-02-parity-conversations-v1.1"
+}

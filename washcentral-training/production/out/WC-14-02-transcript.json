@@ -1,0 +1,608 @@
+{
+  "lesson": "WC-14-02",
+  "audioMaster": "training/module14-academy/WC-14-02-full-narration-v1.0.mp3",
+  "audioDurationS": 261.956,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "The Academy has a second half.",
+      "startS": 0,
+      "endS": 1.856,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Click in from the rail and you land on the same learner dashboard as last lesson,",
+      "startS": 2.403,
+      "endS": 6.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "with the Academy running its own sidebar instead of the platform rail.",
+      "startS": 6.886,
+      "endS": 10.444,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Today we go past the learner pages, into the group underneath.",
+      "startS": 11.129,
+      "endS": 14.581,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Read both sidebar groups first.",
+      "startS": 15.04,
+      "endS": 17.202,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "The top one holds the learner pages you already know.",
+      "startS": 17.866,
+      "endS": 20.714,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Below it sits Admin, four doors:",
+      "startS": 21.364,
+      "endS": 22.912,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "the dashboard, users and enrollment, course management, and reports.",
+      "startS": 23.215,
+      "endS": 23.966,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "One naming note.",
+      "startS": 24.478,
+      "endS": 25.248,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "The learning plan says LMS Administration, the sidebar says Admin,",
+      "startS": 25.603,
+      "endS": 26.741,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "and the screen always wins.",
+      "startS": 27.147,
+      "endS": 38.796,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Open Admin Dashboard.",
+      "startS": 39.2,
+      "endS": 40.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The subtitle states the job plainly: manage training across your organization.",
+      "startS": 41.749,
+      "endS": 43.65,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Up in the header sits an Enroll Users button.",
+      "startS": 44.051,
+      "endS": 46.408,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Find it, remember where it lives, and leave it alone.",
+      "startS": 47.249,
+      "endS": 49.725,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "On this shared tenant, enrolling someone creates a real training record.",
+      "startS": 50.262,
+      "endS": 57.904,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Five tiles across the top.",
+      "startS": 58.456,
+      "endS": 59.994,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Nineteen learners active this month.",
+      "startS": 60.292,
+      "endS": 62.371,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "A twenty six percent completion rate across one hundred eighty six enrollments,",
+      "startS": 62.613,
+      "endS": 66.954,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "with nine hours forty six minutes of average time spent.",
+      "startS": 67.155,
+      "endS": 70.484,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "And forty nine items overdue, flagged action needed.",
+      "startS": 70.787,
+      "endS": 73.961,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "That last tile is where every rollout conversation starts.",
+      "startS": 74.555,
+      "endS": 78.063,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Scroll to the completion heatmap.",
+      "startS": 78.551,
+      "endS": 80.976,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "All nineteen courses against all twenty five users.",
+      "startS": 80.976,
+      "endS": 84.062,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Take the top row.",
+      "startS": 84.062,
+      "endS": 86.753,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Getting Started with WashCentral:",
+      "startS": 86.753,
+      "endS": 88.295,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "six finished, seven in progress, six overdue, six never began, twenty four percent complete.",
+      "startS": 88.295,
+      "endS": 93.695,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "One glance per course tells you where a crew's training actually stands.",
+      "startS": 93.695,
+      "endS": 99.021,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Three admin actions live on this page.",
+      "startS": 99.516,
+      "endS": 101.644,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Enroll Users in the header, then Manage, then New Announcement.",
+      "startS": 102.015,
+      "endS": 105.875,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Each one either creates training records or sends a message to real people.",
+      "startS": 106.274,
+      "endS": 110.282,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "So today they get located and named, never opened for use.",
+      "startS": 110.492,
+      "endS": 114.084,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "That restraint is half the lesson.",
+      "startS": 114.342,
+      "endS": 116.306,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Second door, Users and Enrollment.",
+      "startS": 116.72,
+      "endS": 118.651,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "Twenty five learners.",
+      "startS": 118.651,
+      "endS": 120.881,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Twenty seven percent average completion on required courses,",
+      "startS": 120.881,
+      "endS": 123.97,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "and seventeen people carrying something overdue.",
+      "startS": 123.97,
+      "endS": 126.581,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Fully compliant reads zero.",
+      "startS": 126.581,
+      "endS": 128.887,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "Nobody on this tenant has finished everything required of them yet,",
+      "startS": 128.887,
+      "endS": 133.66,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "and that is this page's headline.",
+      "startS": 133.66,
+      "endS": 135.977,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Read one row of the table.",
+      "startS": 136.4,
+      "endS": 137.959,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "Marcus Johnson, a general manager in Fort Lauderdale,",
+      "startS": 139.883,
+      "endS": 143.041,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "three of seven required courses done, overdue, last active a month ago.",
+      "startS": 143.38,
+      "endS": 146.482,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "Required progress against status is your per person compliance read.",
+      "startS": 146.737,
+      "endS": 148.386,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "His row also offers Assign Course.",
+      "startS": 148.829,
+      "endS": 152.742,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "Not on the demo.",
+      "startS": 153.325,
+      "endS": 156.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "Third door, Course Management.",
+      "startS": 157.28,
+      "endS": 158.649,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "Three sections stack down the page:",
+      "startS": 158.649,
+      "endS": 161.535,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "the courses themselves, the learning paths that chain them, and the certifications.",
+      "startS": 161.535,
+      "endS": 165.642,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "A New Course button and an Import control sit in the toolbar, and both stay untouched.",
+      "startS": 165.642,
+      "endS": 171.573,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "This is the page where the library gets shaped.",
+      "startS": 171.573,
+      "endS": 175.022,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "Look at the first course card.",
+      "startS": 175.44,
+      "endS": 177.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "Twenty five enrolled, twenty four percent complete, an average score of seventy eight.",
+      "startS": 177.752,
+      "endS": 182.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "A publish toggle reads On, with four controls beside it: settings, edit, preview, learners.",
+      "startS": 183.197,
+      "endS": 186.592,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "Flip that toggle and a course disappears for real staff.",
+      "startS": 187.025,
+      "endS": 187.599,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p56",
+      "text": "So it stays exactly where it is.",
+      "startS": 188.052,
+      "endS": 196.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Last door, Reports and Compliance.",
+      "startS": 197.04,
+      "endS": 199.312,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "Seven report tabs run across the top, completion overview through scheduled reports.",
+      "startS": 200.348,
+      "endS": 204.972,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "The tiles repeat the dashboard's story,",
+      "startS": 205.592,
+      "endS": 207.593,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "one eighty six enrollments, twenty six percent complete, forty nine overdue,",
+      "startS": 207.91,
+      "endS": 210.819,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "plus an eighty one percent average quiz score.",
+      "startS": 211.153,
+      "endS": 212.359,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p62",
+      "text": "When two pages agree on the numbers, you can quote them.",
+      "startS": 212.731,
+      "endS": 218.637,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "Stay on the overview and scroll.",
+      "startS": 219.04,
+      "endS": 220.919,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "A year of completions charted, then the two tables a client review runs on.",
+      "startS": 221.429,
+      "endS": 225.883,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "By location: Fort Lauderdale, five users, forty four enrollments,",
+      "startS": 226.639,
+      "endS": 230.983,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p66",
+      "text": "twelve complete, thirteen overdue.",
+      "startS": 231.245,
+      "endS": 232.104,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p67",
+      "text": "By course: Getting Started, twenty five enrolled, six complete,",
+      "startS": 232.369,
+      "endS": 233.354,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p68",
+      "text": "about two hours of time spent apiece.",
+      "startS": 234.09,
+      "endS": 240.399,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p69",
+      "text": "The learning plan promised this page, and it is live.",
+      "startS": 241.084,
+      "endS": 244.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p70",
+      "text": "Four pages, four jobs.",
+      "startS": 244.72,
+      "endS": 246.653,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p71",
+      "text": "The dashboard for the org wide read.",
+      "startS": 247.304,
+      "endS": 249.338,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p72",
+      "text": "Users and Enrollment for the per person truth.",
+      "startS": 249.579,
+      "endS": 251.942,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p73",
+      "text": "Course Management for the levers.",
+      "startS": 252.456,
+      "endS": 254.03,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p74",
+      "text": "Reports and Compliance for the numbers a client review needs.",
+      "startS": 254.332,
+      "endS": 257.306,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p75",
+      "text": "You reached all four from the sidebar, and you changed nothing along the way.",
+      "startS": 257.647,
+      "endS": 261.517,
+      "timing": "silence"
+    }
+  ]
+}

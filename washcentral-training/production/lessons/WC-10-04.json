@@ -1,0 +1,1747 @@
+{
+  "lesson": "WC-10-04",
+  "title": "IT & Support: System Alerts (read-only tour)",
+  "audioMaster": "training/module10-it-support/WC-10-04-full-narration-v1.0.mp3",
+  "audioDurationS": 182.204082,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/support-tickets.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-10-04-system-alerts-v1.1",
+  "targets": {
+    "railPanelToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "supportGroupLbl": {
+      "js": "[...document.querySelectorAll('.menu-group-lbl')].find(e=>/^Support$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "menuNav": {
+      "js": "document.querySelector('aside.sidebar .menu')"
+    },
+    "sideSystemAlerts": {
+      "selector": "aside.sidebar a[href=\"support-alerts.html\"]"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumb-bar *')].find(e=>e.children.length===0&&/System Alerts/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiBand": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Alerts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiToday": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Today/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiCritical": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/^\\s*1\\s*Critical\\s*$/i.test((e.textContent||'').replace(/\\s+/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiWarnings": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Warnings/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardVolume": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Alert Volume/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardSeverity": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/By Severity/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardHealth": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/System Health/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "sevInfo": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/By Severity/i.test(x.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Info'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "sevWarning": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/By Severity/i.test(x.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Warning'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "sevError": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/By Severity/i.test(x.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Error'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "sevCritical": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/By Severity/i.test(x.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Critical'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "healthCritical": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/System Health/i.test(x.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&/Critical/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^SUPPORT\\s*·\\s*ALERTS$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Alert List'&&e.getBoundingClientRect().width>0)"
+    },
+    "recordsBadge": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^14 records$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "searchBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Search'&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "selector": "#support-alerts-search"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thDate": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Date\\/Time$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thType": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSeverity": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Severity$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Location$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thMessage": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Message$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowTunnel": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Conveyor belt tension exceeds threshold/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowPOS": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Low receipt paper on POS-2/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowChemical": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Chemical tank #2 below 20%/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowNetwork": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Backup connection activated/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "typeTunnel": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr.row-link')].find(t=>/Conveyor belt tension exceeds threshold/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[2]:null})()"
+    },
+    "sevTunnel": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr.row-link')].find(t=>/Conveyor belt tension exceeds threshold/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[3]:null})()"
+    },
+    "locTunnel": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr.row-link')].find(t=>/Conveyor belt tension exceeds threshold/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "statusNetwork": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr.row-link')].find(t=>/Backup connection activated/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[6]:null})()"
+    },
+    "pgBar": {
+      "selector": ".pagination-bar"
+    },
+    "pgInfo": {
+      "selector": ".pg-info"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onTickets": "location.pathname.endsWith('/support-tickets.html')",
+    "onAlerts": "location.pathname.endsWith('/support-alerts.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "supportLinksVisible": "[...document.querySelectorAll('aside.sidebar a.menu-header')].filter(e=>e.getBoundingClientRect().width>60).length>=7",
+    "alertsLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr.row-link')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/support-alerts.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length===4&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length===3&&rows.length===4&&!!pi&&/1[\\u2013-]4 of 4/.test(pi.textContent||'')&&[...document.querySelectorAll('table thead th')].some(e=>/^Severity$/i.test((e.textContent||'').trim()))&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "listIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr.row-link')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/support-alerts.html')&&rows.length===4&&!!pi&&/1[\\u2013-]4 of 4/.test(pi.textContent||'')})()",
+    "alertsSidebarActive": "!!document.querySelector('aside.sidebar a[href=\"support-alerts.html\"].active')"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railPanelToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference expanded so step 1's SUPPORT group reads with labels. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11 on 9226: expanded reads 'Hide panel', aside.sidebar width 220-232 with the SUPPORT+AUDIT menu-header links at x102 w203; collapsed reads 'Show panel', links clip to 28px icons). Skipped when already expanded."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onTickets",
+      "note": "pre-roll: start page staged on Support Tickets (startUrl support-tickets.html; the walk opens here and reaches System Alerts only by the sidebar link, per the navigation caution)"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "supportLinksVisible",
+      "note": "pre-roll: the SUPPORT + AUDIT menu-header links read with labels (>=7 links wider than an icon)"
+    },
+    {
+      "op": "watch",
+      "key": "onTicketsS1",
+      "from": 0.5,
+      "to": 17.8,
+      "predicate": "onTickets",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "step 1 read-only proof: the sidebar is only pointed at; nothing is clicked before the step-2 navigation, so the page stays on Support Tickets through step 1"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeldS1",
+      "from": 0.5,
+      "to": 17.8,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true
+    },
+    {
+      "op": "watch",
+      "key": "onAlertsHeld",
+      "from": 40,
+      "to": 181,
+      "predicate": "onAlerts",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "after the step-2 sidebar navigation, the tour never leaves System Alerts: + New Record, Export, Filters, Search, the rows-per-page control, the page arrows, and the four row-link rows are all pointed at, never pressed"
+    },
+    {
+      "op": "watch",
+      "key": "listIntact",
+      "from": 42,
+      "to": 181,
+      "predicate": "listIntact",
+      "everyMs": 3000,
+      "mustHold": true,
+      "note": "mutation guardrail: the Alert List holds 4 rows and '1-4 of 4' the whole tour — proves no alert was created, acknowledged, resolved, muted, exported, or deleted"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "supportGroupLbl",
+        "offset": [
+          150,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 1: enter from the bottom-left toward the SUPPORT group header as p01 says 'look at the left rail'"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.8,
+      "key": "supportGroupRect",
+      "target": "supportGroupLbl",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 0.95,
+      "key": "menuNavRect",
+      "target": "menuNav"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "sideAlertsRect",
+      "target": "sideSystemAlerts"
+    },
+    {
+      "op": "move",
+      "at": 1.6,
+      "to": {
+        "target": "supportGroupLbl",
+        "offset": [
+          170,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): rest beside the SUPPORT group header"
+    },
+    {
+      "op": "move",
+      "at": 3.4,
+      "to": {
+        "target": "supportGroupLbl",
+        "offset": [
+          150,
+          48
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02): 'the SUPPORT group keeps every support surface in one place' — begin the slow sweep down the group"
+    },
+    {
+      "op": "move",
+      "at": 6.95,
+      "to": {
+        "target": "sideSystemAlerts",
+        "offset": [
+          150,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): 'tickets, knowledge base, alerts, training requests' — sweep down past the surfaces"
+    },
+    {
+      "op": "move",
+      "at": 9.49,
+      "to": {
+        "target": "sideSystemAlerts",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04): 'Today's stop is System Alerts' — settle beside the System Alerts link (pointed at, never clicked here)"
+    },
+    {
+      "op": "move",
+      "at": 11.08,
+      "to": {
+        "target": "sideSystemAlerts",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p05): hold beside System Alerts while the one-feed framing is spoken"
+    },
+    {
+      "op": "move",
+      "at": 14.6,
+      "to": {
+        "point": [
+          430,
+          640
+        ]
+      },
+      "note": "ease down over the group for the p05 tail 'from every site onto a single page'"
+    },
+    {
+      "op": "move",
+      "at": 18.0,
+      "to": {
+        "target": "sideSystemAlerts",
+        "offset": [
+          80,
+          0
+        ]
+      },
+      "note": "step 2 (p06 cue 'Click System Alerts'): approach onto the System Alerts link to press it"
+    },
+    {
+      "op": "click",
+      "target": "sideSystemAlerts",
+      "pressAt": 19.5,
+      "hoverMs": 420,
+      "postcondition": "onAlerts",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 2: genuine sidebar navigation to support-alerts.html (the ONLY click in the lesson; a pure href navigation, no data mutation). Reached by the sidebar per the guide's navigation rule (the direct URL 404'd on the July 9 sweep; sidebar route renders — both rendered on the July 11 9226 probe). Press inside the p06->p07 silence gap (19.24-20.04)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "alertsStable",
+      "predicate": "pageReady",
+      "settleMs": 700,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 20.6,
+      "predicate": "onAlerts",
+      "note": "step 2: landed on System Alerts (sidebar route rendered — not a 404)"
+    },
+    {
+      "op": "assert",
+      "at": 20.75,
+      "predicate": "alertsLoaded",
+      "note": "load check: 4 KPI tiles, 3 panels, 4 alert rows, Severity column, '1-4 of 4', no agent-service error"
+    },
+    {
+      "op": "log-rect",
+      "at": 20.9,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 21.05,
+      "key": "crumbStrongRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "move",
+      "at": 21.2,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07-p08): point below the breadcrumb 'Support > System Alerts' while the sidebar-only rule is spoken"
+    },
+    {
+      "op": "move",
+      "at": 26.24,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          40,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p09): 'the direct U-R-L still answers four oh four, while this link renders everything'"
+    },
+    {
+      "op": "move",
+      "at": 31.44,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          10,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p10): 'the page settles inside the shell, breadcrumb up top'"
+    },
+    {
+      "op": "move",
+      "at": 34.62,
+      "to": {
+        "target": "kpiBand",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 2 (p11): 'and four K-P-I tiles waiting across the band' — gesture toward the tile strip"
+    },
+    {
+      "op": "log-rect",
+      "at": 37.5,
+      "key": "kpiBandRect",
+      "target": "kpiBand",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 37.6,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiActive",
+        "kpiToday",
+        "kpiCritical",
+        "kpiWarnings"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 37.76,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p12): 'Read the band left to right'"
+    },
+    {
+      "op": "move",
+      "at": 40.8,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p13): three alerts open right now (Active Alerts)"
+    },
+    {
+      "op": "move",
+      "at": 42.66,
+      "to": {
+        "target": "kpiToday",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p14): fourteen logged today (Today)"
+    },
+    {
+      "op": "move",
+      "at": 44.4,
+      "to": {
+        "target": "kpiCritical",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p15): one critical..."
+    },
+    {
+      "op": "move",
+      "at": 45.7,
+      "to": {
+        "target": "kpiWarnings",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p15): ...against two warnings"
+    },
+    {
+      "op": "move",
+      "at": 47.95,
+      "to": {
+        "target": "kpiCritical",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p16): rest on the 1 Critical tile — 'the number that decides whether your coffee waits'"
+    },
+    {
+      "op": "move",
+      "at": 52.42,
+      "to": {
+        "point": [
+          1123,
+          320
+        ]
+      },
+      "note": "step 3 (p17): ease below the band — 'everything below this band exists to explain these four tiles'"
+    },
+    {
+      "op": "log-rect",
+      "at": 56.3,
+      "key": "cardVolumeRect",
+      "target": "cardVolume",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 56.56,
+      "to": {
+        "target": "cardVolume",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 4 (p18): 'Upper left, Alert Volume'"
+    },
+    {
+      "op": "move",
+      "at": 58.96,
+      "to": {
+        "target": "cardVolume",
+        "offset": [
+          -120,
+          70
+        ]
+      },
+      "note": "step 4 (p19): 'a year of history on one line, January through December' — sweep the axis"
+    },
+    {
+      "op": "move",
+      "at": 60.9,
+      "to": {
+        "target": "cardVolume",
+        "offset": [
+          120,
+          70
+        ]
+      },
+      "note": "step 4 (p19): sweep across to December"
+    },
+    {
+      "op": "move",
+      "at": 62.67,
+      "to": {
+        "target": "cardVolume",
+        "offset": [
+          40,
+          30
+        ]
+      },
+      "note": "step 4 (p20): the 148 total and the down-eight-percent trend"
+    },
+    {
+      "op": "move",
+      "at": 66.98,
+      "to": {
+        "target": "cardVolume",
+        "offset": [
+          120,
+          70
+        ]
+      },
+      "note": "step 4 (p21): 'that slope is the long view'"
+    },
+    {
+      "op": "move",
+      "at": 69.13,
+      "to": {
+        "point": [
+          601,
+          330
+        ]
+      },
+      "note": "step 4 (p22): ease off for the quarterly-health-review tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 72.3,
+      "key": "cardSeverityRect",
+      "target": "cardSeverity",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 72.4,
+      "key": "sevLevels",
+      "targets": [
+        "sevInfo",
+        "sevWarning",
+        "sevError",
+        "sevCritical"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 72.56,
+      "to": {
+        "target": "cardSeverity",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 5 (p23): 'Next panel, By Severity'"
+    },
+    {
+      "op": "move",
+      "at": 74.86,
+      "to": {
+        "target": "sevInfo",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p24): 'Four levels' — start at the top of the breakdown"
+    },
+    {
+      "op": "move",
+      "at": 76.15,
+      "to": {
+        "target": "sevInfo",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p25): Info carries fifty eight percent, warnings twenty eight"
+    },
+    {
+      "op": "move",
+      "at": 78.4,
+      "to": {
+        "target": "sevWarning",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p25): warnings twenty eight"
+    },
+    {
+      "op": "move",
+      "at": 80.25,
+      "to": {
+        "target": "sevError",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p26): errors ten"
+    },
+    {
+      "op": "move",
+      "at": 81.6,
+      "to": {
+        "target": "sevCritical",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p26): critical just four"
+    },
+    {
+      "op": "move",
+      "at": 83.27,
+      "to": {
+        "target": "cardSeverity",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 5 (p27): 'most of what this feed says is routine noise'"
+    },
+    {
+      "op": "move",
+      "at": 86.2,
+      "to": {
+        "target": "sevCritical",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p28): rest on the Critical level — 'a critical row deserves your full attention when one shows up'"
+    },
+    {
+      "op": "move",
+      "at": 89.6,
+      "to": {
+        "point": [
+          1123,
+          330
+        ]
+      },
+      "note": "ease off the severity panel"
+    },
+    {
+      "op": "log-rect",
+      "at": 90.7,
+      "key": "cardHealthRect",
+      "target": "cardHealth",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 90.8,
+      "key": "healthCriticalRect",
+      "target": "healthCritical"
+    },
+    {
+      "op": "move",
+      "at": 90.96,
+      "to": {
+        "target": "cardHealth",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 6 (p29): 'Then System Health'"
+    },
+    {
+      "op": "move",
+      "at": 92.97,
+      "to": {
+        "target": "cardHealth",
+        "offset": [
+          0,
+          60
+        ]
+      },
+      "note": "step 6 (p30): eighty six percent healthy, ten warning, four critical"
+    },
+    {
+      "op": "move",
+      "at": 97.1,
+      "to": {
+        "target": "healthCritical",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p31): 'Hold on that four' — the 4% critical share"
+    },
+    {
+      "op": "move",
+      "at": 98.48,
+      "to": {
+        "target": "healthCritical",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p32): 'it matches the critical slice next door, one fact drawn two ways'"
+    },
+    {
+      "op": "move",
+      "at": 102.95,
+      "to": {
+        "point": [
+          1645,
+          330
+        ]
+      },
+      "note": "step 6 (p33): ease off — 'when two panels agree like that, you can trust the read'"
+    },
+    {
+      "op": "log-rect",
+      "at": 105.85,
+      "key": "theadRect",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 105.95,
+      "key": "ths",
+      "targets": [
+        "thDate",
+        "thType",
+        "thSeverity",
+        "thLocation",
+        "thMessage",
+        "thStatus"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 106.02,
+      "key": "newRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 106.08,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 106.12,
+      "key": "pgInfoRect",
+      "target": "pgInfo"
+    },
+    {
+      "op": "move",
+      "at": 106.16,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 7 (p34): 'Scroll to the Alert List' (single-viewport page; no real scroll) — gesture to the list card"
+    },
+    {
+      "op": "move",
+      "at": 108.5,
+      "to": {
+        "target": "thDate",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p35): 'Six columns carry each alert's story'"
+    },
+    {
+      "op": "move",
+      "at": 111.37,
+      "to": {
+        "target": "thDate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p36): when it fired (Date/Time)"
+    },
+    {
+      "op": "move",
+      "at": 111.75,
+      "to": {
+        "target": "thType",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "what kind (Type)"
+    },
+    {
+      "op": "move",
+      "at": 112.1,
+      "to": {
+        "target": "thSeverity",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "how severe (Severity)"
+    },
+    {
+      "op": "move",
+      "at": 112.45,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "which site (Location)"
+    },
+    {
+      "op": "move",
+      "at": 112.8,
+      "to": {
+        "target": "thMessage",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "what it said (Message)"
+    },
+    {
+      "op": "move",
+      "at": 113.15,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and whether it is still open (Status)"
+    },
+    {
+      "op": "move",
+      "at": 113.51,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p37): 'Two buttons above the table stay untouched' — approach beside + New Record, never onto it"
+    },
+    {
+      "op": "move",
+      "at": 114.58,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -40,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p38) guardrail: '+ New Record and Export act on the shared tenant, and a support read never creates an alert' — Export pointed at from beside, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 115.69,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          0,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p39): 'The pager below counts four rows' — point at the 1-4 of 4 readout"
+    },
+    {
+      "op": "move",
+      "at": 120.5,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          90,
+          0
+        ]
+      },
+      "note": "step 7 (p39 tail): the pager reads 1-4 of 4 (the true row count; the header '14 records' is a logged discrepancy and is never read as the row count)"
+    },
+    {
+      "op": "move",
+      "at": 125.5,
+      "to": {
+        "point": [
+          1000,
+          600
+        ]
+      },
+      "note": "step 7 tail: ease up toward the rows in preparation for step 8"
+    },
+    {
+      "op": "log-rect",
+      "at": 130.75,
+      "key": "rowTunnelRect",
+      "target": "rowTunnel"
+    },
+    {
+      "op": "log-rects",
+      "at": 130.85,
+      "key": "tunnelCells",
+      "targets": [
+        "typeTunnel",
+        "sevTunnel",
+        "locTunnel"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 130.95,
+      "key": "statusNetworkRect",
+      "target": "statusNetwork"
+    },
+    {
+      "op": "move",
+      "at": 131.04,
+      "to": {
+        "target": "rowTunnel",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 8 (p40): 'Now the rows, top to bottom' (rows are row-link but are never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 134.0,
+      "to": {
+        "target": "typeTunnel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p41): the critical row — a Tunnel alert..."
+    },
+    {
+      "op": "move",
+      "at": 135.2,
+      "to": {
+        "target": "sevTunnel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p41): ...Critical..."
+    },
+    {
+      "op": "move",
+      "at": 136.2,
+      "to": {
+        "target": "locTunnel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p41): ...at M-L-A-S"
+    },
+    {
+      "op": "move",
+      "at": 137.36,
+      "to": {
+        "target": "rowTunnel",
+        "offset": [
+          1350,
+          0
+        ]
+      },
+      "note": "step 8 (p42): 'conveyor belt tension past its threshold, still active' — across to the Active status"
+    },
+    {
+      "op": "move",
+      "at": 141.2,
+      "to": {
+        "target": "rowPOS",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 8 (p43): 'Behind it, two warnings' — down to the two Warning rows"
+    },
+    {
+      "op": "move",
+      "at": 142.69,
+      "to": {
+        "target": "rowPOS",
+        "offset": [
+          850,
+          0
+        ]
+      },
+      "note": "step 8 (p44): receipt paper running low on a P-O-S at S-S-N-B"
+    },
+    {
+      "op": "move",
+      "at": 146.05,
+      "to": {
+        "target": "rowChemical",
+        "offset": [
+          850,
+          0
+        ]
+      },
+      "note": "step 8 (p45): a chemical tank under twenty percent at Piscataway"
+    },
+    {
+      "op": "move",
+      "at": 149.4,
+      "to": {
+        "target": "statusNetwork",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p46): 'the last row already resolved, a network failover note' — the Resolved status"
+    },
+    {
+      "op": "move",
+      "at": 153.42,
+      "to": {
+        "target": "rowTunnel",
+        "offset": [
+          1350,
+          0
+        ]
+      },
+      "note": "step 8 (p47): 'Three rows still active' — sweep the three Active statuses"
+    },
+    {
+      "op": "move",
+      "at": 154.3,
+      "to": {
+        "target": "rowChemical",
+        "offset": [
+          1350,
+          0
+        ]
+      },
+      "note": "step 8 (p47): down the Active column"
+    },
+    {
+      "op": "move",
+      "at": 155.39,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 8 (p48): 'That is the Active Alerts tile, itemized' — glance back up at the 3 Active Alerts tile"
+    },
+    {
+      "op": "move",
+      "at": 157.6,
+      "to": {
+        "point": [
+          1000,
+          600
+        ]
+      },
+      "note": "ease back over the rows for the step-8 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.85,
+      "key": "kpiBandRect2",
+      "target": "kpiBand"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.92,
+      "key": "panelsRowRect",
+      "target": "panelsRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.98,
+      "key": "theadRect2",
+      "target": "theadRow"
+    },
+    {
+      "op": "move",
+      "at": 159.12,
+      "to": {
+        "point": [
+          1123,
+          420
+        ]
+      },
+      "note": "step 9 (p49): 'That is the whole read' — recap"
+    },
+    {
+      "op": "move",
+      "at": 161.37,
+      "to": {
+        "target": "kpiBand",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 9 (p50): 'the band for the instant answer'"
+    },
+    {
+      "op": "move",
+      "at": 163.59,
+      "to": {
+        "target": "cardVolume",
+        "offset": [
+          0,
+          -30
+        ]
+      },
+      "note": "step 9 (p51): 'the panels for trend and mix' — sweep the three panels"
+    },
+    {
+      "op": "move",
+      "at": 164.4,
+      "to": {
+        "target": "cardSeverity",
+        "offset": [
+          0,
+          -30
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 165.0,
+      "to": {
+        "target": "cardHealth",
+        "offset": [
+          0,
+          -30
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 165.95,
+      "to": {
+        "target": "thMessage",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p52): 'the list for specifics, which type, at which site, still burning or already out'"
+    },
+    {
+      "op": "move",
+      "at": 167.93,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p53): 'when a ticket asks whether an outage is one site or the whole platform' — Location + Type answer it"
+    },
+    {
+      "op": "move",
+      "at": 172.53,
+      "to": {
+        "point": [
+          1123,
+          320
+        ]
+      },
+      "note": "step 9 (p54): 'this page and the Command Center's priority board answer it' — pull wide"
+    },
+    {
+      "op": "move",
+      "at": 176.51,
+      "to": {
+        "point": [
+          1560,
+          930
+        ]
+      },
+      "note": "step 9 (p55): final park, clear of content and burned captions, as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 180.6,
+      "predicate": "onAlerts",
+      "note": "end state: still on System Alerts, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 181.0,
+      "predicate": "listIntact",
+      "note": "end state: list intact — 4 rows, '1-4 of 4'; nothing was created, acknowledged, resolved, muted, exported, or deleted"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "supportGroupRect",
+        "place": "right",
+        "from": 1.6,
+        "to": 17.4
+      },
+      {
+        "n": 2,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 21.2,
+        "to": 37.2
+      },
+      {
+        "n": 3,
+        "anchor": "kpiBandRect",
+        "place": "below-left",
+        "from": 37.9,
+        "to": 56.0
+      },
+      {
+        "n": 4,
+        "anchor": "cardVolumeRect",
+        "place": "below-left",
+        "from": 56.7,
+        "to": 72.1
+      },
+      {
+        "n": 5,
+        "anchor": "cardSeverityRect",
+        "place": "below-left",
+        "from": 72.7,
+        "to": 90.5
+      },
+      {
+        "n": 6,
+        "anchor": "cardHealthRect",
+        "place": "left",
+        "from": 91.1,
+        "to": 105.7
+      },
+      {
+        "n": 7,
+        "anchor": "theadRect",
+        "place": "below-left",
+        "from": 108.5,
+        "to": 130.6
+      },
+      {
+        "n": 8,
+        "anchor": "tunnelCells.sevTunnel",
+        "place": "left-top",
+        "from": 131.5,
+        "to": 158.6
+      },
+      {
+        "n": 9,
+        "anchor": "kpiBandRect2",
+        "place": "below-left",
+        "from": 159.5,
+        "to": 180.6
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideAlertsRect",
+        "from": 9.49,
+        "to": 17.4,
+        "note": "step 1 (p04): the SUPPORT System Alerts link — today's destination (pointed at, never clicked here)"
+      },
+      {
+        "anchor": "kpiTiles.kpiActive",
+        "from": 40.8,
+        "to": 42.66,
+        "note": "step 3 (p13): Active Alerts (three open)"
+      },
+      {
+        "anchor": "kpiTiles.kpiToday",
+        "from": 42.66,
+        "to": 44.4,
+        "note": "step 3 (p14): Today (fourteen logged)"
+      },
+      {
+        "anchor": "kpiTiles.kpiCritical",
+        "from": 44.4,
+        "to": 52.0,
+        "note": "step 3 (p15-p16): 1 Critical — the number that decides the day"
+      },
+      {
+        "anchor": "kpiTiles.kpiWarnings",
+        "from": 45.7,
+        "to": 47.95,
+        "note": "step 3 (p15): 2 Warnings"
+      },
+      {
+        "anchor": "cardVolumeRect",
+        "from": 62.67,
+        "to": 69.0,
+        "note": "step 4 (p20): Alert Volume — 148 total and the down-eight-percent trend"
+      },
+      {
+        "anchor": "cardSeverityRect",
+        "from": 76.15,
+        "to": 82.9,
+        "note": "step 5 (p25-p26): By Severity — Info 58 / Warning 28 / Error 10 / Critical 4, in spoken order"
+      },
+      {
+        "anchor": "sevLevels.sevCritical",
+        "from": 86.2,
+        "to": 90.4,
+        "note": "step 5 (p28): the thin Critical slice — the one that earns attention"
+      },
+      {
+        "anchor": "cardHealthRect",
+        "from": 92.97,
+        "to": 105.5,
+        "note": "step 6 (p30-p32): System Health — 86% healthy, and the 4% critical that matches By Severity"
+      },
+      {
+        "anchor": "healthCriticalRect",
+        "from": 97.1,
+        "to": 102.9,
+        "note": "step 6 (p31): the 4% CRITICAL share, one fact drawn two ways"
+      },
+      {
+        "anchor": "ths.thType",
+        "from": 111.75,
+        "to": 113.4,
+        "note": "step 7 (p36): TYPE"
+      },
+      {
+        "anchor": "ths.thSeverity",
+        "from": 112.1,
+        "to": 113.4,
+        "note": "step 7 (p36): SEVERITY"
+      },
+      {
+        "anchor": "newRecordRect",
+        "from": 113.51,
+        "to": 130.6,
+        "color": "#dc2626",
+        "note": "step 7 (p37-p38) do-not-click STOP: + New Record opens a create surface (support-alerts-edit.html) on the shared tenant — held beside, never pressed"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 114.58,
+        "to": 130.6,
+        "color": "#dc2626",
+        "note": "step 7 (p38) do-not-click STOP: Export is a restricted data-out on the shared tenant — pointed at from beside, never pressed"
+      },
+      {
+        "anchor": "pgInfoRect",
+        "from": 115.69,
+        "to": 125.0,
+        "note": "step 7 (p39): the pager reads 1-4 of 4 (the true row count)"
+      },
+      {
+        "anchor": "tunnelCells.sevTunnel",
+        "from": 134.0,
+        "to": 141.0,
+        "note": "step 8 (p41-p42): the Critical Tunnel row at MLAS, still Active"
+      },
+      {
+        "anchor": "statusNetworkRect",
+        "from": 149.4,
+        "to": 153.4,
+        "note": "step 8 (p46): the Resolved status on the network failover row"
+      },
+      {
+        "anchor": "kpiBandRect2",
+        "from": 161.37,
+        "to": 163.59,
+        "note": "step 9 (p50): recap — the band, the instant answer"
+      },
+      {
+        "anchor": "panelsRowRect",
+        "from": 163.59,
+        "to": 165.95,
+        "note": "step 9 (p51): the three panels, trend and mix"
+      },
+      {
+        "anchor": "theadRect2",
+        "from": 165.95,
+        "to": 172.4,
+        "note": "step 9 (p52): the list, the specifics"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.1,
+        "z": 1.25,
+        "cx": 430,
+        "cy": 330,
+        "ease": true,
+        "note": "step 1: favor the left sidebar / SUPPORT group"
+      },
+      {
+        "t": 17.4,
+        "z": 1.25,
+        "cx": 430,
+        "cy": 330
+      },
+      {
+        "t": 18.4,
+        "z": 1.12,
+        "cx": 720,
+        "cy": 420,
+        "ease": true,
+        "note": "ease back as the System Alerts link is pressed"
+      },
+      {
+        "t": 20.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 2: pull wide for the full-page render (breadcrumb + KPI band appear)"
+      },
+      {
+        "t": 37.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 37.9,
+        "z": 1.35,
+        "cx": 1123,
+        "cy": 150,
+        "ease": true,
+        "note": "step 3: close read of the KPI band"
+      },
+      {
+        "t": 56.0,
+        "z": 1.35,
+        "cx": 1123,
+        "cy": 150
+      },
+      {
+        "t": 56.7,
+        "z": 1.4,
+        "cx": 601,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: the Alert Volume panel (148, down 8%)"
+      },
+      {
+        "t": 72.1,
+        "z": 1.4,
+        "cx": 601,
+        "cy": 250
+      },
+      {
+        "t": 72.7,
+        "z": 1.4,
+        "cx": 1123,
+        "cy": 250,
+        "ease": true,
+        "note": "step 5: the By Severity panel"
+      },
+      {
+        "t": 90.5,
+        "z": 1.4,
+        "cx": 1123,
+        "cy": 250
+      },
+      {
+        "t": 91.1,
+        "z": 1.4,
+        "cx": 1645,
+        "cy": 250,
+        "ease": true,
+        "note": "step 6: the System Health panel (4% critical)"
+      },
+      {
+        "t": 105.7,
+        "z": 1.4,
+        "cx": 1645,
+        "cy": 250
+      },
+      {
+        "t": 106.3,
+        "z": 1.18,
+        "cx": 1150,
+        "cy": 455,
+        "ease": true,
+        "note": "step 7: the Alert List header, columns, and the + New Record / Export guardrails"
+      },
+      {
+        "t": 130.6,
+        "z": 1.18,
+        "cx": 1150,
+        "cy": 455
+      },
+      {
+        "t": 131.2,
+        "z": 1.25,
+        "cx": 1123,
+        "cy": 600,
+        "ease": true,
+        "note": "step 8: the four alert rows and their STATUS chips"
+      },
+      {
+        "t": 134.0,
+        "z": 1.45,
+        "cx": 900,
+        "cy": 552,
+        "ease": true,
+        "note": "step 8: punch in on Tunnel / Critical / MLAS"
+      },
+      {
+        "t": 141.0,
+        "z": 1.25,
+        "cx": 1123,
+        "cy": 600,
+        "ease": true,
+        "note": "step 8: back to the full row set"
+      },
+      {
+        "t": 155.0,
+        "z": 1.25,
+        "cx": 1123,
+        "cy": 460,
+        "ease": true,
+        "note": "step 8 (p48): lift to include the Active Alerts tile with the rows"
+      },
+      {
+        "t": 158.6,
+        "z": 1.25,
+        "cx": 1123,
+        "cy": 460
+      },
+      {
+        "t": 159.4,
+        "z": 1.12,
+        "cx": 1123,
+        "cy": 430,
+        "ease": true,
+        "note": "step 9: recap sweep — band, panels, list"
+      },
+      {
+        "t": 172.2,
+        "z": 1.12,
+        "cx": 1123,
+        "cy": 430
+      },
+      {
+        "t": 173.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 182.204082,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "System Alerts — Complete",
+      "from": 180.4,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 180.1
+  },
+  "neverClick": [
+    "\\+ ?new record",
+    "new record",
+    "new alert",
+    "create alert",
+    "report alert",
+    "export",
+    "filters",
+    "\\bsearch\\b",
+    "acknowledge",
+    "\\backnowledge\\b",
+    "resolve",
+    "mark resolved",
+    "dismiss",
+    "\\bmute\\b",
+    "snooze",
+    "configure",
+    "\\bsave\\b",
+    "\\bedit\\b",
+    "\\bdelete\\b",
+    "yes, delete",
+    "\\bassign\\b",
+    "\\bsend\\b",
+    "submit",
+    "rows per page",
+    "row-link alert rows (no row is opened; alert detail is out of scope)",
+    "page arrows / pagination buttons",
+    "ask shyne",
+    "log ?out",
+    "logout",
+    "log out now"
+  ]
+}

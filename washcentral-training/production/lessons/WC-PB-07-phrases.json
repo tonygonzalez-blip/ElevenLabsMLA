@@ -1,0 +1,160 @@
+{
+  "lesson": "WC-PB-07",
+  "audioMaster": "training/playbooks/WC-PB-07-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; the 'Customer three-sixty', 'Low Medium', 'High Medium' pronunciation spellings are kept exactly as written in the script). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s11 end at 248.749s, which overshoots the ffprobe-probed master (248.346s) by 0.403s (> 0.3 tolerance) because the concatenated MP3 frames decode ~0.03-0.4s shorter than ffprobe's per-file duration sum. Onsets were therefore measured by normalized FFT cross-correlation of each WC-PB-07-sNN.mp3 (first 3.0s template) against the joined master decoded to 8 kHz mono PCM (all 11 blocks matched at NCC score 1.0000). Master ffprobe duration 248.346s; decoded-PCM duration 248.320s; last block end set to the ffprobe master duration.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 21.28,
+      "phrases": [
+        { "id": "p01", "text": "Start in CRM, open Customers, and click into the member's record." },
+        { "id": "p02", "text": "Customer three-sixty opens on nine tabs," },
+        { "id": "p03", "text": "with the header carrying Back, Delete, Edit Customer, and the green Actions menu." },
+        { "id": "p04", "text": "That green menu decides most of this playbook." },
+        { "id": "p05", "text": "Leave it closed for now." },
+        { "id": "p06", "text": "First you confirm what the member actually holds." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 21.28,
+      "endS": 45.04,
+      "phrases": [
+        { "id": "p07", "text": "Open the Membership tab." },
+        { "id": "p08", "text": "Plan details gives you the membership type, the home location, and the status." },
+        { "id": "p09", "text": "Billing cycle gives you the next charge." },
+        { "id": "p10", "text": "Read status and next charge first." },
+        { "id": "p11", "text": "A cancel or pause request only makes sense against an active plan," },
+        { "id": "p12", "text": "and the next-charge date tells you how much time you have before the member gets billed again." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 45.04,
+      "endS": 70.4,
+      "phrases": [
+        { "id": "p13", "text": "Now open the green Actions menu." },
+        { "id": "p14", "text": "Look, don't touch." },
+        { "id": "p15", "text": "It offers exactly two actions: Issue Wash and Refund Customer." },
+        { "id": "p16", "text": "The legacy guide promised six, including cancel, pause, and reset." },
+        { "id": "p17", "text": "Those are not here." },
+        { "id": "p18", "text": "Whether they are role-gated or removed is an open question." },
+        { "id": "p19", "text": "So never promise a member a change you cannot see a control for." },
+        { "id": "p20", "text": "Close the menu without selecting anything." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 70.4,
+      "endS": 89.52,
+      "phrases": [
+        { "id": "p21", "text": "Decide the branch before you navigate." },
+        { "id": "p22", "text": "A refund is a live action, so it gets gated:" },
+        { "id": "p23", "text": "who can approve it, and which standard reason applies." },
+        { "id": "p24", "text": "A cancel, pause, or reset is not a demo action, so it routes by role." },
+        { "id": "p25", "text": "Either way, the interaction gets logged." },
+        { "id": "p26", "text": "Two branches. One log." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 89.52,
+      "endS": 114.56,
+      "phrases": [
+        { "id": "p27", "text": "Take the refund branch first." },
+        { "id": "p28", "text": "Settings, Users and Security, Security Level." },
+        { "id": "p29", "text": "Three columns: name, level, and refund approval required." },
+        { "id": "p30", "text": "That last column is the gate." },
+        { "id": "p31", "text": "It marks, per level, whether a refund needs sign-off before anyone can process it." },
+        { "id": "p32", "text": "Today's capture returned a fetch error in place of rows," },
+        { "id": "p33", "text": "so confirm the list loaded before you read a level's answer." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 114.56,
+      "endS": 136.96,
+      "phrases": [
+        { "id": "p34", "text": "Read the approval column against the requester's level." },
+        { "id": "p35", "text": "Per the verified walk, Low, Low Medium, and Medium all require approval." },
+        { "id": "p36", "text": "So a Low or Medium user hands the refund to a High Medium or High approver" },
+        { "id": "p37", "text": "instead of processing it themselves." },
+        { "id": "p38", "text": "Confirm the live yes or no per level at ticket time." },
+        { "id": "p39", "text": "The mapping was not observable today." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 136.96,
+      "endS": 156.48,
+      "phrases": [
+        { "id": "p40", "text": "Next, the reason. Settings, Operations, Refund Reasons." },
+        { "id": "p41", "text": "One description column, one job:" },
+        { "id": "p42", "text": "every refund gets tagged with a standard reason so reporting stays clean." },
+        { "id": "p43", "text": "Pick from this list, never freehand." },
+        { "id": "p44", "text": "The rows did not load in today's capture," },
+        { "id": "p45", "text": "so the live list is your source at ticket time." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 156.48,
+      "endS": 178.88,
+      "phrases": [
+        { "id": "p46", "text": "Now the other branch." },
+        { "id": "p47", "text": "Cancel, pause, and reset are not in the demo menu, and that cuts both ways." },
+        { "id": "p48", "text": "You do not promise the change, and you do not tell the member it cannot be done." },
+        { "id": "p49", "text": "On production, confirm your role can perform it." },
+        { "id": "p50", "text": "If it cannot, route the request to someone who can." },
+        { "id": "p51", "text": "That is the whole move." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 178.88,
+      "endS": 200.88,
+      "phrases": [
+        { "id": "p52", "text": "Whatever happened, log it." },
+        { "id": "p53", "text": "Back on Customer three-sixty, open Notes." },
+        { "id": "p54", "text": "These are internal staff notes, not visible to the customer," },
+        { "id": "p55", "text": "with pin and save controls, and the communication history below." },
+        { "id": "p56", "text": "Record what the member asked, what you did or routed, and any approval." },
+        { "id": "p57", "text": "Pin it if the account is critical." },
+        { "id": "p58", "text": "And never log it in Messaging." },
+        { "id": "p59", "text": "That tab texts the customer." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 200.88,
+      "endS": 226.24,
+      "phrases": [
+        { "id": "p60", "text": "Then package it." },
+        { "id": "p61", "text": "The member." },
+        { "id": "p62", "text": "The exact change they asked for." },
+        { "id": "p63", "text": "The refund reason if one applies." },
+        { "id": "p64", "text": "The requester's security level and whether approval is required." },
+        { "id": "p65", "text": "And who it routes to." },
+        { "id": "p66", "text": "You verified and you logged." },
+        { "id": "p67", "text": "The cancel, the pause, the refund itself," },
+        { "id": "p68", "text": "all of that happens in production with the right role." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 226.24,
+      "endS": 248.346,
+      "phrases": [
+        { "id": "p69", "text": "That's the playbook." },
+        { "id": "p70", "text": "Confirm the plan on Membership." },
+        { "id": "p71", "text": "Read the Actions menu for what the platform will actually let you do." },
+        { "id": "p72", "text": "Gate a refund through Security Levels and tag it from Refund Reasons." },
+        { "id": "p73", "text": "Route a cancel or pause by role." },
+        { "id": "p74", "text": "And log everything in Notes, never Messaging." },
+        { "id": "p75", "text": "Every screen stayed read-only." }
+      ]
+    }
+  ],
+  "output": "WC-PB-07-membership-changes-v1.1"
+}

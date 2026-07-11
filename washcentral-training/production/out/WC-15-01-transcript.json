@@ -1,0 +1,304 @@
+{
+  "lesson": "WC-15-01",
+  "audioMaster": "training/module15-migration/WC-15-01-full-narration-v1.0.mp3",
+  "audioDurationS": 132.911,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Migration questions come with a client's system on the line, so the answers have to be exact.",
+      "startS": 0,
+      "endS": 5.18,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Everything in this lesson comes straight from the Migration FAQ.",
+      "startS": 5.844,
+      "endS": 9.177,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "If a question falls outside it, you park it and ask.",
+      "startS": 9.697,
+      "endS": 12.658,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "You never improvise.",
+      "startS": 12.948,
+      "endS": 14.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Here is the whole client-side story.",
+      "startS": 14.86,
+      "endS": 16.935,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "To reach WashCentral, they need one thing: the new URL.",
+      "startS": 17.506,
+      "endS": 21.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "It comes to them directly, or WashAssist redirects them automatically.",
+      "startS": 21.89,
+      "endS": 26.057,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "That is it.",
+      "startS": 26.305,
+      "endS": 27.028,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "This next part prevents most migration support calls.",
+      "startS": 27.44,
+      "endS": 30.492,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Credentials do not change.",
+      "startS": 31.095,
+      "endS": 32.65,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Users are not re-created, and data is not copied over.",
+      "startS": 32.989,
+      "endS": 36.616,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "WashCentral runs on the WashAssist data.",
+      "startS": 37.18,
+      "endS": 39.642,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "So a migrated client signs in with the exact login they already had.",
+      "startS": 39.885,
+      "endS": 43.937,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "For brand-new clients, nothing about your process changes.",
+      "startS": 44.515,
+      "endS": 47.728,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "The Pre-Configuration team onboards them the same way as always.",
+      "startS": 48.115,
+      "endS": 51.644,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "The only difference is the URL they are given.",
+      "startS": 51.926,
+      "endS": 54.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "Switching an existing client depends on the phase.",
+      "startS": 54.794,
+      "endS": 57.662,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "During beta, you submit a Jira ticket on the CSI board, and Development redirects the URL.",
+      "startS": 58.167,
+      "endS": 64.052,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Once it reaches general availability,",
+      "startS": 64.483,
+      "endS": 66.405,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Tech Support makes the switch directly in the Admin Portal, no ticket needed.",
+      "startS": 66.772,
+      "endS": 71.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "One consequence to know.",
+      "startS": 71.52,
+      "endS": 73.114,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "After the redirect, the client can no longer reach WashAssist.",
+      "startS": 74.111,
+      "endS": 77.936,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "The only way back is to reverse the switch.",
+      "startS": 78.282,
+      "endS": 80.877,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p24",
+      "text": "And it does reverse.",
+      "startS": 81.371,
+      "endS": 82.912,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p25",
+      "text": "The same path that made the switch undoes it.",
+      "startS": 83.284,
+      "endS": 85.853,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "In beta, that is another Jira ticket on the CSI board to revert the redirection.",
+      "startS": 86.479,
+      "endS": 91.24,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "So when a client asks to move back to WashAssist for month-end, that is your answer.",
+      "startS": 91.592,
+      "endS": 96.456,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p28",
+      "text": "Clients often ask what becomes of the old system.",
+      "startS": 96.972,
+      "endS": 100.755,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p29",
+      "text": "WashAssist goes into support mode, critical fixes only,",
+      "startS": 100.755,
+      "endS": 103.453,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "for a period still to be set, and is eventually retired.",
+      "startS": 103.453,
+      "endS": 107.66,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Their data stays available in WashCentral the whole time,",
+      "startS": 107.66,
+      "endS": 110.696,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "because WashCentral was already using it.",
+      "startS": 110.696,
+      "endS": 112.72,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p33",
+      "text": "So the short version you can say with confidence:",
+      "startS": 113.12,
+      "endS": 115.345,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "the login stays the same, only the URL changes,",
+      "startS": 115.661,
+      "endS": 118.987,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "the switch is a CSI Jira ticket in beta or an Admin Portal action at general availability,",
+      "startS": 119.303,
+      "endS": 125.299,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "it is fully reversible, and no data is lost.",
+      "startS": 125.619,
+      "endS": 128.492,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Anything the FAQ does not answer, you park and confirm.",
+      "startS": 129.186,
+      "endS": 132.461,
+      "timing": "silence"
+    }
+  ]
+}

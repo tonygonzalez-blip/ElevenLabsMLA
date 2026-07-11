@@ -1,0 +1,342 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.209
+Start in Settings, and open the Hardware group.
+
+p02
+00:00:02.209 --> 00:00:06.393
+Five lists live here, and together they describe the machines at a wash:
+
+p03
+00:00:06.393 --> 00:00:10.848
+the terminals that exist, the screen layouts they run, and the lube-bay buttons they show.
+
+p04
+00:00:10.848 --> 00:00:14.323
+Think of this as the field tech's corner of Settings,
+
+p05
+00:00:14.323 --> 00:00:17.360
+the place you check before you touch anything at the site.
+
+p06
+00:00:17.760 --> 00:00:18.978
+Click Hardware / Terminals.
+
+p07
+00:00:18.978 --> 00:00:22.944
+Every machine a wash runs shows up here as one row:
+
+p08
+00:00:22.944 --> 00:00:28.389
+its location, its address on the network, the build it runs, and when it last checked in.
+
+p09
+00:00:28.389 --> 00:00:31.907
+When a site reports a dead register, start here.
+
+p10
+00:00:31.907 --> 00:00:35.876
+A terminal that isn't listed, or whose last-seen time is hours stale,
+
+p11
+00:00:35.876 --> 00:00:37.398
+has already told you something.
+
+p12
+00:00:37.398 --> 00:00:40.818
+The rows didn't load today, so read the columns.
+
+p13
+00:00:41.280 --> 00:00:42.570
+Now Screen Layout.
+
+p14
+00:00:43.019 --> 00:00:44.043
+This one loaded.
+
+p15
+00:00:44.470 --> 00:00:52.127
+The tiles count six layouts, split evenly between POS and kiosk,
+
+p16
+00:00:52.559 --> 00:00:56.251
+and each row pins a screen type and a resolution to a location.
+
+p17
+00:00:56.888 --> 00:00:57.513
+A portrait kiosk, a landscape register, each with its own entry.
+
+p18
+00:00:57.778 --> 00:01:00.232
+One quirk: the card claims six records but lists two.
+
+p19
+00:01:00.696 --> 00:01:04.042
+Trust the tiles for the real count, and treat the rows as samples.
+
+p20
+00:01:04.480 --> 00:01:05.969
+System Types is next.
+
+p21
+00:01:06.384 --> 00:01:09.454
+It's a short lookup list, one description per row,
+
+p22
+00:01:09.783 --> 00:01:12.836
+the kind of behind-the-scenes list other pages point at.
+
+p23
+00:01:13.160 --> 00:01:18.729
+Nothing to configure day to day.
+
+p24
+00:01:19.833 --> 00:01:22.769
+Today it didn't load either, so note what it is and move on.
+
+p25
+00:01:23.045 --> 00:01:25.562
+When you see "failed to fetch" on a page like this, it's the data service, not an empty list.
+
+p26
+00:01:26.060 --> 00:01:27.236
+Lube Buttons.
+
+p27
+00:01:28.048 --> 00:01:30.219
+Here's button wiring at its plainest.
+
+p28
+00:01:30.638 --> 00:01:34.946
+Twenty-four buttons across a few lube-bay terminals, one row each.
+
+p29
+00:01:35.532 --> 00:01:37.402
+The row names the group it belongs to, the terminal it appears on,
+
+p30
+00:01:37.746 --> 00:01:42.357
+the label the operator taps, and the tile's color.
+
+p31
+00:01:43.002 --> 00:01:44.230
+Oil Change in teal, Tire Rotation in blue.
+
+p32
+00:01:44.617 --> 00:01:50.535
+When someone says a lube button is wrong, this is the row you read.
+
+p33
+00:01:51.011 --> 00:01:51.613
+Lube Checklists.
+
+p34
+00:01:51.613 --> 00:01:53.271
+One column, the service.
+
+p35
+00:01:53.271 --> 00:01:57.587
+These are the checklist items a lube bay works through on a job.
+
+p36
+00:01:57.587 --> 00:01:59.979
+Like System Types, it didn't load today,
+
+p37
+00:01:59.979 --> 00:02:02.991
+so read the column and the purpose, not the values.
+
+p38
+00:02:02.991 --> 00:02:06.960
+A menu tour like this is about knowing where each list lives,
+
+p39
+00:02:06.960 --> 00:02:10.574
+so that when a ticket points here you go straight to it.
+
+p40
+00:02:11.040 --> 00:02:13.889
+Collapse Hardware, and open UI and Display.
+
+p41
+00:02:14.791 --> 00:02:16.139
+Eleven lists this time.
+
+p42
+00:02:16.479 --> 00:02:18.028
+Most are the paint and the plumbing: button types, images, colors, templates.
+
+p43
+00:02:18.323 --> 00:02:21.331
+We'll read the ones a technician gets asked about:
+
+p44
+00:02:21.841 --> 00:02:23.986
+the cashier and greeter buttons, the button groups behind them,
+
+p45
+00:02:24.583 --> 00:02:30.628
+the macros, and the kiosk screen flows.
+
+p46
+00:02:31.258 --> 00:02:33.360
+The rest are the lookups those five draw from.
+
+p47
+00:02:33.760 --> 00:02:34.742
+Button Groups.
+
+p48
+00:02:35.445 --> 00:02:38.455
+A group is just the named set a button is filed under,
+
+p49
+00:02:38.898 --> 00:02:42.193
+the same group value you saw on the lube buttons a moment ago.
+
+p50
+00:02:42.617 --> 00:02:45.516
+Two columns, a description and whether it's active.
+
+p51
+00:02:45.836 --> 00:02:47.936
+It didn't load today, so read the shape.
+
+p52
+00:02:48.455 --> 00:02:51.298
+Groups are the folder; the buttons are what's inside.
+
+p53
+00:02:51.760 --> 00:02:52.832
+Cashier Buttons.
+
+p54
+00:02:53.196 --> 00:02:55.953
+These are the tap targets on the register screen.
+
+p55
+00:02:56.507 --> 00:02:57.729
+Each row is a button: its slot number, its label,
+
+p56
+00:02:58.079 --> 00:03:02.867
+the kind of action it runs, and its tile color.
+
+p57
+00:03:03.352 --> 00:03:08.199
+So "the void button moved" or "the wrong color" is answered right here, one row per button.
+
+p58
+00:03:08.562 --> 00:03:13.100
+The list didn't load today, but the columns tell the story.
+
+p59
+00:03:13.520 --> 00:03:14.108
+Greeter Buttons.
+
+p60
+00:03:14.108 --> 00:03:19.355
+Same four columns, aimed at the greeter station out at the lane instead of the register.
+
+p61
+00:03:19.355 --> 00:03:23.515
+Keeping the two lists apart lets a site put different buttons
+
+p62
+00:03:23.515 --> 00:03:26.750
+in front of the greeter than the cashier.
+
+p63
+00:03:26.750 --> 00:03:30.863
+If a lane's entry screen looks wrong, you check here, not the cashier page.
+
+p64
+00:03:30.863 --> 00:03:33.280
+This one didn't load today either.
+
+p65
+00:03:33.680 --> 00:03:33.973
+Macros.
+
+p66
+00:03:33.973 --> 00:03:38.470
+A macro is a saved action a button or a scanned barcode can fire.
+
+p67
+00:03:38.470 --> 00:03:42.128
+The columns tell you its type, whether a barcode triggers it,
+
+p68
+00:03:42.128 --> 00:03:44.470
+and whether it also shows on the handheld.
+
+p69
+00:03:44.470 --> 00:03:47.691
+That last one matters when an operator says a shortcut works
+
+p70
+00:03:47.691 --> 00:03:50.538
+at the register but not on the handheld device.
+
+p71
+00:03:50.538 --> 00:03:52.880
+It didn't load today, so read the columns.
+
+p72
+00:03:53.280 --> 00:03:54.121
+Last list: Kiosk Screen Flows.
+
+p73
+00:03:54.465 --> 00:03:55.932
+This is where self-serve kiosk screens are built and pushed live.
+
+p74
+00:03:56.489 --> 00:04:00.191
+The tiles count three flows, two published and one draft, across eleven screens.
+
+p75
+00:04:00.893 --> 00:04:02.420
+Each row is a flow: its locations, how many screens and tappable hotspots, and a status chip.
+
+p76
+00:04:02.711 --> 00:04:06.109
+Read the chip first.
+
+p77
+00:04:06.697 --> 00:04:12.756
+Published is live on the kiosks;
+
+p78
+00:04:13.300 --> 00:04:14.641
+a draft, like Express Tunnel, is built but not out yet.
+
+p79
+00:04:15.262 --> 00:04:23.680
+The create button here reads New Flow.
+
+p80
+00:04:24.171 --> 00:04:26.772
+So that's Hardware and UI and Display.
+
+p81
+00:04:27.494 --> 00:04:30.138
+Hardware registers the machines and their screens.
+
+p82
+00:04:30.494 --> 00:04:35.627
+UI and Display wires the buttons a cashier and greeter tap,
+
+p83
+00:04:35.962 --> 00:04:38.332
+the macros behind them, and the kiosk flows a site publishes.
+
+p84
+00:04:38.956 --> 00:04:42.453
+Two groups, ten lists, all read-only for you.
+
+p85
+00:04:42.842 --> 00:04:47.631
+Learn where each one lives, because a POS ticket usually ends on one of these pages.
+

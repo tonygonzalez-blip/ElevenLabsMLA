@@ -1,0 +1,608 @@
+{
+  "lesson": "WC-PB-07",
+  "audioMaster": "training/playbooks/WC-PB-07-full-narration-v1.0.mp3",
+  "audioDurationS": 248.346,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in CRM, open Customers, and click into the member's record.",
+      "startS": 0,
+      "endS": 1.349,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Customer three-sixty opens on nine tabs,",
+      "startS": 1.599,
+      "endS": 4.346,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "with the header carrying Back, Delete, Edit Customer, and the green Actions menu.",
+      "startS": 5.185,
+      "endS": 10.035,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "That green menu decides most of this playbook.",
+      "startS": 10.245,
+      "endS": 12.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Leave it closed for now.",
+      "startS": 13.607,
+      "endS": 17.669,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "First you confirm what the member actually holds.",
+      "startS": 18.364,
+      "endS": 20.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Open the Membership tab.",
+      "startS": 21.336,
+      "endS": 22.781,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Plan details gives you the membership type, the home location, and the status.",
+      "startS": 23.72,
+      "endS": 26.128,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Billing cycle gives you the next charge.",
+      "startS": 26.459,
+      "endS": 28.575,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Read status and next charge first.",
+      "startS": 29.46,
+      "endS": 31.712,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "A cancel or pause request only makes sense against an active plan,",
+      "startS": 32.014,
+      "endS": 34.43,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "and the next-charge date tells you how much time you have before the member gets billed again.",
+      "startS": 35.239,
+      "endS": 44.515,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Now open the green Actions menu.",
+      "startS": 45.04,
+      "endS": 47.148,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Look, don't touch.",
+      "startS": 47.406,
+      "endS": 48.7,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "It offers exactly two actions: Issue Wash and Refund Customer.",
+      "startS": 49.059,
+      "endS": 51.159,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "The legacy guide promised six, including cancel, pause, and reset.",
+      "startS": 51.423,
+      "endS": 53.599,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Those are not here.",
+      "startS": 54.052,
+      "endS": 58.501,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "Whether they are role-gated or removed is an open question.",
+      "startS": 58.79,
+      "endS": 60.17,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "So never promise a member a change you cannot see a control for.",
+      "startS": 60.511,
+      "endS": 67.46,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p20",
+      "text": "Close the menu without selecting anything.",
+      "startS": 67.751,
+      "endS": 69.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Decide the branch before you navigate.",
+      "startS": 70.4,
+      "endS": 72.646,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "A refund is a live action, so it gets gated:",
+      "startS": 73.31,
+      "endS": 76.06,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "who can approve it, and which standard reason applies.",
+      "startS": 76.467,
+      "endS": 79.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "A cancel, pause, or reset is not a demo action, so it routes by role.",
+      "startS": 79.848,
+      "endS": 84.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "Either way, the interaction gets logged.",
+      "startS": 84.947,
+      "endS": 86.938,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p26",
+      "text": "Two branches. One log.",
+      "startS": 87.263,
+      "endS": 89.094,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Take the refund branch first.",
+      "startS": 89.52,
+      "endS": 91.15,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Settings, Users and Security, Security Level.",
+      "startS": 91.553,
+      "endS": 92.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "Three columns: name, level, and refund approval required.",
+      "startS": 92.571,
+      "endS": 94.909,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "That last column is the gate.",
+      "startS": 95.445,
+      "endS": 96.302,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p31",
+      "text": "It marks, per level, whether a refund needs sign-off before anyone can process it.",
+      "startS": 96.61,
+      "endS": 97.104,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p32",
+      "text": "Today's capture returned a fetch error in place of rows,",
+      "startS": 97.435,
+      "endS": 99.878,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p33",
+      "text": "so confirm the list loaded before you read a level's answer.",
+      "startS": 100.413,
+      "endS": 114.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "Read the approval column against the requester's level.",
+      "startS": 114.626,
+      "endS": 117.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Per the verified walk, Low, Low Medium, and Medium all require approval.",
+      "startS": 117.964,
+      "endS": 119.126,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "So a Low or Medium user hands the refund to a High Medium or High approver",
+      "startS": 119.425,
+      "endS": 123.038,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p37",
+      "text": "instead of processing it themselves.",
+      "startS": 123.469,
+      "endS": 130.172,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p38",
+      "text": "Confirm the live yes or no per level at ticket time.",
+      "startS": 130.869,
+      "endS": 134.236,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p39",
+      "text": "The mapping was not observable today.",
+      "startS": 134.595,
+      "endS": 136.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "Next, the reason. Settings, Operations, Refund Reasons.",
+      "startS": 136.96,
+      "endS": 138.118,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "One description column, one job:",
+      "startS": 138.579,
+      "endS": 141.33,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "every refund gets tagged with a standard reason so reporting stays clean.",
+      "startS": 141.827,
+      "endS": 143.703,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "Pick from this list, never freehand.",
+      "startS": 144.041,
+      "endS": 147.986,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p44",
+      "text": "The rows did not load in today's capture,",
+      "startS": 148.337,
+      "endS": 150.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p45",
+      "text": "so the live list is your source at ticket time.",
+      "startS": 151.374,
+      "endS": 156.073,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "Now the other branch.",
+      "startS": 156.48,
+      "endS": 157.708,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "Cancel, pause, and reset are not in the demo menu, and that cuts both ways.",
+      "startS": 159.465,
+      "endS": 164.716,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "You do not promise the change, and you do not tell the member it cannot be done.",
+      "startS": 165.074,
+      "endS": 169.609,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p49",
+      "text": "On production, confirm your role can perform it.",
+      "startS": 170.387,
+      "endS": 173.064,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p50",
+      "text": "If it cannot, route the request to someone who can.",
+      "startS": 173.5,
+      "endS": 176.256,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p51",
+      "text": "That is the whole move.",
+      "startS": 176.844,
+      "endS": 178.473,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "Whatever happened, log it.",
+      "startS": 178.948,
+      "endS": 180.265,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "Back on Customer three-sixty, open Notes.",
+      "startS": 180.265,
+      "endS": 182.597,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "These are internal staff notes, not visible to the customer,",
+      "startS": 182.597,
+      "endS": 186.229,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p55",
+      "text": "with pin and save controls, and the communication history below.",
+      "startS": 186.229,
+      "endS": 189.522,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p56",
+      "text": "Record what the member asked, what you did or routed, and any approval.",
+      "startS": 189.522,
+      "endS": 194.05,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p57",
+      "text": "Pin it if the account is critical.",
+      "startS": 194.05,
+      "endS": 196.597,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p58",
+      "text": "And never log it in Messaging.",
+      "startS": 196.597,
+      "endS": 198.814,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p59",
+      "text": "That tab texts the customer.",
+      "startS": 198.814,
+      "endS": 200.461,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p60",
+      "text": "Then package it.",
+      "startS": 200.88,
+      "endS": 201.852,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p61",
+      "text": "The member.",
+      "startS": 201.852,
+      "endS": 203.73,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p62",
+      "text": "The exact change they asked for.",
+      "startS": 203.73,
+      "endS": 205.674,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p63",
+      "text": "The refund reason if one applies.",
+      "startS": 205.674,
+      "endS": 208.832,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p64",
+      "text": "The requester's security level and whether approval is required.",
+      "startS": 208.832,
+      "endS": 213.072,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p65",
+      "text": "And who it routes to.",
+      "startS": 213.072,
+      "endS": 216.113,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p66",
+      "text": "You verified and you logged.",
+      "startS": 216.113,
+      "endS": 218.61,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p67",
+      "text": "The cancel, the pause, the refund itself,",
+      "startS": 218.61,
+      "endS": 222.17,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p68",
+      "text": "all of that happens in production with the right role.",
+      "startS": 222.17,
+      "endS": 225.808,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p69",
+      "text": "That's the playbook.",
+      "startS": 226.24,
+      "endS": 227.341,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p70",
+      "text": "Confirm the plan on Membership.",
+      "startS": 228.183,
+      "endS": 229.83,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p71",
+      "text": "Read the Actions menu for what the platform will actually let you do.",
+      "startS": 230.407,
+      "endS": 234.064,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p72",
+      "text": "Gate a refund through Security Levels and tag it from Refund Reasons.",
+      "startS": 234.744,
+      "endS": 238.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p73",
+      "text": "Route a cancel or pause by role.",
+      "startS": 239.781,
+      "endS": 241.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p74",
+      "text": "And log everything in Notes, never Messaging.",
+      "startS": 242.739,
+      "endS": 245.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p75",
+      "text": "Every screen stayed read-only.",
+      "startS": 246.166,
+      "endS": 247.918,
+      "timing": "silence"
+    }
+  ]
+}

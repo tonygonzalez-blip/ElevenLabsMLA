@@ -1,0 +1,539 @@
+{
+  "lesson": "WC-12-05",
+  "title": "Settings: Hardware & UI (POS-facing config)",
+  "audioMaster": "training/module12-settings/WC-12-05-full-narration-v1.0.mp3",
+  "audioDurationS": 288.131,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "hwHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/hardware/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "uiHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/ui\\s*&\\s*display/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkHwTerminals": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Hardware / Terminals'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkScreenLayout": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Screen Layout'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkSystemTypes": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='System Types'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkLubeButtons": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Lube Buttons'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkLubeChecklists": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Lube Checklists'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkButtonGroups": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Button Groups'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkCashierButtons": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Cashier Buttons'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkGreeterButtons": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Greeter Buttons'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkMacros": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Macros'&&e.getBoundingClientRect().width>0)"
+    },
+    "linkKioskFlows": {
+      "js": "[...document.querySelectorAll('.submenu a')].find(e=>(e.textContent||'').trim()==='Kiosk Screen Flows'&&e.getBoundingClientRect().width>0)"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/(List|Screen Flows)$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search /i.test(e.placeholder||'')&&!/pages, modules/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record|new flow/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thTerminal": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^terminal$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^location$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thIP": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^ip$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSoftwareVersion": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^software version$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thOS": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^os$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastSeen": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^last seen$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thType": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thResolution": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^resolution$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thActive": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDescription": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thGroup": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^group$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thButtonText": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^button text$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thColor": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^color$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thService": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^service$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thButtonNum": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^button #$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thButton": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^button$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thBarcode": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^barcode$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thShowHandheld": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^show on handheld$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thFlowName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^flow name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSchedule": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^schedule$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalTerminals": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Terminals/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalLayouts": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Layouts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tilePOSLayouts": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/POS Layouts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileKioskLayouts": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Kiosk Layouts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalFlows": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Flows/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tilePublished": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Published/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileDraft": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Draft/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "rowStandardPOS": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Standard POS')"
+    },
+    "rowExpressKiosk": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Express Kiosk')"
+    },
+    "rowOilChange": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&/Oil Change/.test(tr.textContent||''))"
+    },
+    "rowTireRotation": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&/Tire Rotation/.test(tr.textContent||''))"
+    },
+    "rowMainFlow": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Main Kiosk Flow')"
+    },
+    "rowPremiumLane": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Premium Lane')"
+    },
+    "rowExpressTunnel": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Express Tunnel')"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onTerminals": "location.pathname.endsWith('/settings-hardware-terminals.html')",
+    "onScreenLayout": "location.pathname.endsWith('/settings-screen-layout.html')",
+    "onSystemTypes": "location.pathname.endsWith('/settings-system-types.html')",
+    "onLubeButtons": "location.pathname.endsWith('/settings-lube-buttons.html')",
+    "onLubeChecklists": "location.pathname.endsWith('/settings-lube-checklists.html')",
+    "onButtonGroups": "location.pathname.endsWith('/settings-button-groups.html')",
+    "onCashierButtons": "location.pathname.endsWith('/settings-cashier-buttons.html')",
+    "onGreeterButtons": "location.pathname.endsWith('/settings-greeter-buttons.html')",
+    "onMacros": "location.pathname.endsWith('/settings-macros.html')",
+    "onKioskFlows": "location.pathname.endsWith('/settings-kiosk-flows.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "hwSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Hardware \\/ Terminals|Screen Layout|System Types|Lube Buttons|Lube Checklists)$/.test((e.textContent||'').trim())).length>=5",
+    "hwSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Hardware \\/ Terminals|Screen Layout|System Types|Lube Buttons|Lube Checklists)$/.test((e.textContent||'').trim())).length===0",
+    "uiSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Button Groups|Cashier Buttons|Greeter Buttons|Macros|Kiosk Screen Flows)$/.test((e.textContent||'').trim())).length>=5",
+    "uiSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Button Groups|Cashier Buttons|Greeter Buttons|Macros|Kiosk Screen Flows)$/.test((e.textContent||'').trim())).length===0",
+    "hasCard": "[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/(List|Screen Flows)$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "notLoginPage": "!location.pathname.endsWith('/login.html')",
+    "terminalsReady": "location.pathname.endsWith('/settings-hardware-terminals.html')&&[...document.querySelectorAll('th')].some(e=>/^terminal$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^last seen$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Terminals List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "screenLayoutReady": "location.pathname.endsWith('/settings-screen-layout.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Layouts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('tbody tr')].some(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Standard POS')&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')",
+    "systemTypesReady": "location.pathname.endsWith('/settings-system-types.html')&&[...document.querySelectorAll('th')].some(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^System Types List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "lubeButtonsReady": "location.pathname.endsWith('/settings-lube-buttons.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Buttons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('tbody tr')].some(tr=>tr.getBoundingClientRect().width>0&&/Oil Change/.test(tr.textContent||''))&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')",
+    "lubeChecklistsReady": "location.pathname.endsWith('/settings-lube-checklists.html')&&[...document.querySelectorAll('th')].some(e=>/^service$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Lube Checklists List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "buttonGroupsReady": "location.pathname.endsWith('/settings-button-groups.html')&&[...document.querySelectorAll('th')].some(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Button Groups List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "cashierButtonsReady": "location.pathname.endsWith('/settings-cashier-buttons.html')&&[...document.querySelectorAll('th')].some(e=>/^button #$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^button$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Cashier Buttons List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "greeterButtonsReady": "location.pathname.endsWith('/settings-greeter-buttons.html')&&[...document.querySelectorAll('th')].some(e=>/^button #$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^button$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Greeter Buttons List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "macrosReady": "location.pathname.endsWith('/settings-macros.html')&&[...document.querySelectorAll('th')].some(e=>/^barcode$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^show on handheld$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Macros List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "kioskFlowsReady": "location.pathname.endsWith('/settings-kiosk-flows.html')&&[...document.querySelectorAll('th')].some(e=>/^flow name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Flows/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')"
+  },
+  "ops": [
+    { "op": "assert", "at": -1.8, "predicate": "onSettingsHome", "note": "start page staged before capture" },
+    { "op": "assert", "at": -1.4, "predicate": "sidebarExpanded", "note": "pre-roll: preflight staged the persisted sidebar preference expanded; abort the take if collapsed" },
+    { "op": "assert", "at": -1.0, "predicate": "hwSubmenuClosed", "note": "pre-roll: Hardware group must start collapsed so step 1 genuinely expands it (persisted washcentral-settings-menu-v1 hardware:false, staged by preflight)" },
+    { "op": "assert", "at": -0.6, "predicate": "uiSubmenuClosed", "note": "pre-roll: UI & Display group must start collapsed so step 7's reveal is genuine" },
+
+    { "op": "pointer-enter", "at": 0.35, "from": [ 220, 1079 ], "to": { "target": "hwHeader", "offset": [ 60, 6 ] }, "note": "enter from the bottom edge and settle beside the Hardware group header as p01 says 'open the Hardware group'" },
+    { "op": "log-rect", "at": 1.0, "key": "hwHeaderRect", "target": "hwHeader" },
+    { "op": "move", "at": 1.4, "to": { "target": "hwHeader", "offset": [ 0, 0 ] }, "note": "approach the Hardware group header inside p01's action cue" },
+    { "op": "click", "target": "hwHeader", "pressAt": 2.5, "hoverMs": 400, "postcondition": "hwSubmenuOpen", "timeoutMs": 4000, "note": "step 1: genuine group toggle — the five Hardware pages appear before p02 names them" },
+    { "op": "log-rects", "at": 3.1, "key": "hwNav", "targets": [ "linkHwTerminals", "linkScreenLayout", "linkSystemTypes", "linkLubeButtons", "linkLubeChecklists" ] },
+    { "op": "move", "at": 6.5, "to": { "target": "linkHwTerminals", "offset": [ 40, 0 ] }, "note": "slow sweep down the five links while p03 names terminals, screen layouts, lube buttons" },
+    { "op": "move", "at": 7.8, "to": { "target": "linkScreenLayout", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 9.0, "to": { "target": "linkSystemTypes", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 10.0, "to": { "target": "linkLubeButtons", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 11.0, "to": { "target": "linkLubeChecklists", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 14.5, "to": { "point": [ 360, 640 ] }, "note": "ease off toward the rail for the p04-p05 tail" },
+
+    { "op": "move", "at": 17.9, "to": { "target": "linkHwTerminals", "offset": [ 0, 0 ] }, "note": "step 2 approach starts at the p06 cue 'Click Hardware / Terminals'" },
+    { "op": "click", "target": "linkHwTerminals", "pressAt": 19.3, "hoverMs": 380, "postcondition": "onTerminals", "timeoutMs": 8000, "nav": true, "note": "step 2: genuine sidebar navigation, press inside the p06 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "termStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 20.9, "predicate": "terminalsReady", "note": "shot-list load check: the six columns + Terminals List card are present (July 11 the rows also load; the check is column-level so it holds whether the agent-service rows load or show 'Failed to fetch')" },
+    { "op": "assert", "at": 21.0, "predicate": "hwSubmenuOpen", "note": "persisted Hardware submenu held across the navigation" },
+    { "op": "log-rect", "at": 21.1, "key": "bcTerm", "target": "bcStrong" },
+    { "op": "log-rect", "at": 21.25, "key": "tileTermRect", "target": "tileTotalTerminals" },
+    { "op": "log-rect", "at": 21.4, "key": "cardTerm", "target": "cardTitle" },
+    { "op": "log-rect", "at": 21.55, "key": "searchTerm", "target": "searchBox" },
+    { "op": "log-rect", "at": 21.7, "key": "newRecTerm", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 21.9, "key": "termTh", "targets": [ "thTerminal", "thLocation", "thIP", "thSoftwareVersion", "thOS", "thLastSeen" ] },
+    { "op": "watch", "key": "termHold", "from": 22.4, "to": 40.8, "predicate": "onTerminals", "everyMs": 500, "mustHold": true, "note": "step 2 read-only guardrail: the page never changes — nothing is clicked while the columns and the + New Record button are read" },
+    { "op": "move", "at": 22.6, "to": { "target": "thTerminal", "offset": [ 0, -26 ], "outside": true }, "note": "start of the header sweep on p08 'its location, its address on the network...'" },
+    { "op": "move", "at": 23.4, "to": { "target": "thTerminal", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 24.6, "to": { "target": "thLocation", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 26.0, "to": { "target": "thSoftwareVersion", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 27.3, "to": { "target": "thLastSeen", "offset": [ 0, 0 ] }, "note": "sweep ends at the right edge of the header row" },
+    { "op": "move", "at": 31.0, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 2 STOP: rest BESIDE + New Record while p09-p12 read the page; the button itself is never approached for a press" },
+    { "op": "move", "at": 38.5, "to": { "point": [ 1150, 780 ] }, "note": "ease off over the rows for the p12 tail" },
+
+    { "op": "move", "at": 42.0, "to": { "target": "linkScreenLayout", "offset": [ 0, 0 ] }, "note": "step 3 approach on the p13 cue 'Now Screen Layout'" },
+    { "op": "click", "target": "linkScreenLayout", "pressAt": 42.9, "hoverMs": 360, "postcondition": "onScreenLayout", "timeoutMs": 8000, "nav": true, "note": "step 3: press inside the p13 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "slStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 44.3, "predicate": "screenLayoutReady", "note": "this page loads reliably (p14 'This one loaded'): tiles + the Standard POS sample row, never the agent-service error" },
+    { "op": "log-rect", "at": 44.45, "key": "bcSL", "target": "bcStrong" },
+    { "op": "log-rect", "at": 44.6, "key": "cardSL", "target": "cardTitle" },
+    { "op": "log-rect", "at": 44.75, "key": "newRecSL", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 44.95, "key": "slTiles", "targets": [ "tileTotalLayouts", "tilePOSLayouts", "tileKioskLayouts" ] },
+    { "op": "log-rects", "at": 45.2, "key": "slRows", "targets": [ "rowStandardPOS", "rowExpressKiosk" ] },
+    { "op": "log-rects", "at": 45.4, "key": "slTh", "targets": [ "thName", "thType", "thResolution", "thActive" ] },
+    { "op": "watch", "key": "slHold", "from": 45.6, "to": 63.5, "predicate": "onScreenLayout", "everyMs": 500, "mustHold": true, "note": "step 3 read-only guardrail: page unchanged through the tile + row read" },
+    { "op": "move", "at": 45.8, "to": { "target": "tileTotalLayouts", "offset": [ 0, 0 ] }, "note": "p15 'the tiles count six layouts, split evenly between POS and kiosk'" },
+    { "op": "move", "at": 47.5, "to": { "target": "tilePOSLayouts", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 49.5, "to": { "target": "tileKioskLayouts", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 52.8, "to": { "target": "rowStandardPOS", "offset": [ 900, 0 ] }, "note": "p16 'each row pins a screen type and a resolution to a location' — the resolution cell on the landscape POS row" },
+    { "op": "move", "at": 56.9, "to": { "target": "rowExpressKiosk", "offset": [ 900, 0 ] }, "note": "p17 'a portrait kiosk' — the 1080x1920 kiosk row" },
+    { "op": "move", "at": 58.2, "to": { "target": "cardTitle", "offset": [ 20, 40 ], "outside": true }, "note": "p18 'the card claims six records but lists two' — under the Screen Layout List card header" },
+    { "op": "move", "at": 61.2, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 3 STOP: beside + New Record, never pressed" },
+
+    { "op": "move", "at": 65.2, "to": { "target": "linkSystemTypes", "offset": [ 0, 0 ] }, "note": "step 4 approach on the p20 cue 'System Types is next'" },
+    { "op": "click", "target": "linkSystemTypes", "pressAt": 66.2, "hoverMs": 360, "postcondition": "onSystemTypes", "timeoutMs": 8000, "nav": true, "note": "step 4: press inside the p20 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "stStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 67.6, "predicate": "systemTypesReady", "note": "column-level check: the single Description column + System Types List card (holds whether the lookup rows load — July 11 they do — or show 'Failed to fetch')" },
+    { "op": "log-rect", "at": 67.75, "key": "bcST", "target": "bcStrong" },
+    { "op": "log-rect", "at": 67.9, "key": "cardST", "target": "cardTitle" },
+    { "op": "log-rect", "at": 68.05, "key": "newRecST", "target": "newRecordBtn" },
+    { "op": "log-rect", "at": 68.2, "key": "stCol", "target": "thDescription" },
+    { "op": "watch", "key": "stHold", "from": 68.4, "to": 85.2, "predicate": "onSystemTypes", "everyMs": 500, "mustHold": true, "note": "step 4 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 68.6, "to": { "target": "thDescription", "offset": [ 0, -26 ], "outside": true }, "note": "p21-p22 'one description per row, the kind of behind-the-scenes list other pages point at'" },
+    { "op": "move", "at": 69.8, "to": { "target": "thDescription", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 74.5, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 4 STOP: beside + New Record; p24-p25 read the 'failed to fetch' rule" },
+    { "op": "move", "at": 80.5, "to": { "point": [ 900, 700 ] }, "note": "ease off for the p25 tail" },
+
+    { "op": "move", "at": 86.5, "to": { "target": "linkLubeButtons", "offset": [ 0, 0 ] }, "note": "step 5 approach on the p26 cue 'Lube Buttons'" },
+    { "op": "click", "target": "linkLubeButtons", "pressAt": 87.7, "hoverMs": 360, "postcondition": "onLubeButtons", "timeoutMs": 8000, "nav": true, "note": "step 5: press inside the p26 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "lubeStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 89.1, "predicate": "lubeButtonsReady", "note": "this page loads reliably: tiles + the Oil Change sample row, never the error state" },
+    { "op": "log-rect", "at": 89.25, "key": "bcLube", "target": "bcStrong" },
+    { "op": "log-rect", "at": 89.4, "key": "cardLube", "target": "cardTitle" },
+    { "op": "log-rect", "at": 89.55, "key": "newRecLube", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 89.75, "key": "lubeTh", "targets": [ "thGroup", "thType", "thButtonText", "thColor" ] },
+    { "op": "log-rects", "at": 89.95, "key": "lubeRows", "targets": [ "rowOilChange", "rowTireRotation" ] },
+    { "op": "watch", "key": "lubeHold", "from": 90.2, "to": 110.0, "predicate": "onLubeButtons", "everyMs": 500, "mustHold": true, "note": "step 5 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 90.6, "to": { "target": "rowOilChange", "offset": [ 0, 0 ] }, "note": "p29-p30 sweep a row: group, terminal, button text, color" },
+    { "op": "move", "at": 92.5, "to": { "target": "rowOilChange", "offset": [ 900, 0 ] }, "note": "the Button Text cell — 'Oil Change'" },
+    { "op": "move", "at": 97.6, "to": { "target": "rowOilChange", "offset": [ 1330, 0 ] }, "note": "p30 'and the tile's color' — teal" },
+    { "op": "move", "at": 103.2, "to": { "target": "rowTireRotation", "offset": [ 1330, 0 ] }, "note": "p31 'Tire Rotation in blue'" },
+    { "op": "move", "at": 105.2, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 5 STOP: beside + New Record; p32 'this is the row you read'" },
+
+    { "op": "move", "at": 111.5, "to": { "target": "linkLubeChecklists", "offset": [ 0, 0 ] }, "note": "step 6 approach on the p33 cue 'Lube Checklists'" },
+    { "op": "click", "target": "linkLubeChecklists", "pressAt": 112.6, "hoverMs": 360, "postcondition": "onLubeChecklists", "timeoutMs": 8000, "nav": true, "note": "step 6: press inside the p33 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "lcStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 114.0, "predicate": "lubeChecklistsReady", "note": "column-level check: the single Service column + Lube Checklists List card (holds whether the rows load — July 11 they do — or show 'Failed to fetch')" },
+    { "op": "log-rect", "at": 114.15, "key": "bcLC", "target": "bcStrong" },
+    { "op": "log-rect", "at": 114.3, "key": "cardLC", "target": "cardTitle" },
+    { "op": "log-rect", "at": 114.45, "key": "newRecLC", "target": "newRecordBtn" },
+    { "op": "log-rect", "at": 114.6, "key": "lcCol", "target": "thService" },
+    { "op": "watch", "key": "lcHold", "from": 114.8, "to": 130.5, "predicate": "onLubeChecklists", "everyMs": 500, "mustHold": true, "note": "step 6 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 115.0, "to": { "target": "thService", "offset": [ 0, -26 ], "outside": true }, "note": "p34-p35 'One column, the service' — the checklist items a lube bay works through" },
+    { "op": "move", "at": 116.2, "to": { "target": "thService", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 120.5, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 6 STOP: beside + New Record; p37-p39 read the 'know where each list lives' rule" },
+    { "op": "move", "at": 127.0, "to": { "point": [ 900, 700 ] }, "note": "ease off toward the rail for the step-7 sidebar switch" },
+
+    { "op": "move", "at": 131.3, "to": { "target": "hwHeader", "offset": [ 0, 0 ] }, "note": "step 7 approach on the p40 cue 'Collapse Hardware'" },
+    { "op": "click", "target": "hwHeader", "pressAt": 132.2, "hoverMs": 360, "postcondition": "hwSubmenuClosed", "timeoutMs": 4000, "note": "step 7a: genuine toggle collapses the Hardware group" },
+    { "op": "move", "at": 132.9, "to": { "target": "uiHeader", "offset": [ 0, 0 ] }, "note": "move down to the UI & Display header as p40 says 'and open UI and Display'" },
+    { "op": "log-rect", "at": 133.1, "key": "uiHeaderRect", "target": "uiHeader" },
+    { "op": "click", "target": "uiHeader", "pressAt": 133.5, "hoverMs": 360, "postcondition": "uiSubmenuOpen", "timeoutMs": 4000, "note": "step 7b: genuine toggle expands UI & Display; the eleven pages appear before p41 'Eleven lists this time'" },
+    { "op": "log-rects", "at": 134.1, "key": "uiNav", "targets": [ "linkButtonGroups", "linkCashierButtons", "linkGreeterButtons", "linkMacros", "linkKioskFlows" ] },
+    { "op": "move", "at": 141.9, "to": { "target": "linkCashierButtons", "offset": [ 40, 0 ] }, "note": "p44 'the cashier and greeter buttons, the button groups behind them' — sweep the lesson's links" },
+    { "op": "move", "at": 143.2, "to": { "target": "linkGreeterButtons", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 144.4, "to": { "target": "linkButtonGroups", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 145.4, "to": { "target": "linkMacros", "offset": [ 40, 0 ] }, "note": "p45 'the macros, and the kiosk screen flows'" },
+    { "op": "move", "at": 146.4, "to": { "target": "linkKioskFlows", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 151.6, "to": { "point": [ 380, 700 ] }, "note": "ease off for the p46 tail" },
+
+    { "op": "move", "at": 153.9, "to": { "target": "linkButtonGroups", "offset": [ 0, 0 ] }, "note": "step 8 approach on the p47 cue 'Button Groups'" },
+    { "op": "click", "target": "linkButtonGroups", "pressAt": 155.1, "hoverMs": 360, "postcondition": "onButtonGroups", "timeoutMs": 8000, "nav": true, "note": "step 8: press inside the p47 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "bgStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 156.6, "predicate": "buttonGroupsReady", "note": "column-level check: Description + Active columns + Button Groups List card (holds whether the rows load — July 11 they do — or show 'Failed to fetch')" },
+    { "op": "assert", "at": 156.7, "predicate": "uiSubmenuOpen", "note": "persisted UI & Display submenu held across the navigation" },
+    { "op": "log-rect", "at": 156.85, "key": "bcBG", "target": "bcStrong" },
+    { "op": "log-rect", "at": 157.0, "key": "cardBG", "target": "cardTitle" },
+    { "op": "log-rect", "at": 157.15, "key": "newRecBG", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 157.35, "key": "bgTh", "targets": [ "thDescription", "thActive" ] },
+    { "op": "watch", "key": "bgHold", "from": 157.5, "to": 171.0, "predicate": "onButtonGroups", "everyMs": 500, "mustHold": true, "note": "step 8 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 157.7, "to": { "target": "thDescription", "offset": [ 0, 0 ] }, "note": "p48-p50 'a description and whether it's active'" },
+    { "op": "move", "at": 162.8, "to": { "target": "thActive", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 166.0, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 8 STOP: beside + New Record; p52 'Groups are the folder'" },
+
+    { "op": "move", "at": 171.9, "to": { "target": "linkCashierButtons", "offset": [ 0, 0 ] }, "note": "step 9 approach on the p53 cue 'Cashier Buttons'" },
+    { "op": "click", "target": "linkCashierButtons", "pressAt": 173.3, "hoverMs": 360, "postcondition": "onCashierButtons", "timeoutMs": 8000, "nav": true, "note": "step 9: press inside the p53 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "cbStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 174.7, "predicate": "cashierButtonsReady", "note": "column-level check: Button # + Button columns + Cashier Buttons List card (holds whether the rows load — July 11 they do — or show 'Failed to fetch')" },
+    { "op": "log-rect", "at": 174.85, "key": "bcCB", "target": "bcStrong" },
+    { "op": "log-rect", "at": 175.0, "key": "cardCB", "target": "cardTitle" },
+    { "op": "log-rect", "at": 175.15, "key": "newRecCB", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 175.35, "key": "cbTh", "targets": [ "thButtonNum", "thButton", "thType", "thColor" ] },
+    { "op": "watch", "key": "cbHold", "from": 175.5, "to": 193.0, "predicate": "onCashierButtons", "everyMs": 500, "mustHold": true, "note": "step 9 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 176.6, "to": { "target": "thButtonNum", "offset": [ 0, -26 ], "outside": true }, "note": "p55-p56 header sweep: slot number, label, type, color" },
+    { "op": "move", "at": 177.4, "to": { "target": "thButtonNum", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 178.6, "to": { "target": "thButton", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 180.0, "to": { "target": "thType", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 181.3, "to": { "target": "thColor", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 184.5, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 9 STOP: beside + New Record; p57-p58 'answered right here, one row per button'" },
+
+    { "op": "move", "at": 193.7, "to": { "target": "linkGreeterButtons", "offset": [ 0, 0 ] }, "note": "step 10 approach on the p59 cue 'Greeter Buttons'" },
+    { "op": "click", "target": "linkGreeterButtons", "pressAt": 195.1, "hoverMs": 360, "postcondition": "onGreeterButtons", "timeoutMs": 8000, "nav": true, "note": "step 10: press inside the p59 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "gbStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 196.5, "predicate": "greeterButtonsReady", "note": "column-level check: same Button #/Button columns + Greeter Buttons List card (holds whether the rows load — July 11 they do — or show 'Failed to fetch')" },
+    { "op": "log-rect", "at": 196.65, "key": "bcGB", "target": "bcStrong" },
+    { "op": "log-rect", "at": 196.8, "key": "cardGB", "target": "cardTitle" },
+    { "op": "log-rect", "at": 196.95, "key": "newRecGB", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 197.15, "key": "gbTh", "targets": [ "thButtonNum", "thButton", "thType", "thColor" ] },
+    { "op": "watch", "key": "gbHold", "from": 197.3, "to": 213.0, "predicate": "onGreeterButtons", "everyMs": 500, "mustHold": true, "note": "step 10 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 197.6, "to": { "target": "thButton", "offset": [ 0, 0 ] }, "note": "p60 'Same four columns, aimed at the greeter station'" },
+    { "op": "move", "at": 200.0, "to": { "target": "thColor", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 206.5, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 10 STOP: beside + New Record; p63 'you check here, not the cashier page'" },
+
+    { "op": "move", "at": 213.85, "to": { "target": "linkMacros", "offset": [ 0, 0 ] }, "note": "step 11 approach on the p65 cue 'Macros'" },
+    { "op": "click", "target": "linkMacros", "pressAt": 215.2, "hoverMs": 360, "postcondition": "onMacros", "timeoutMs": 8000, "nav": true, "note": "step 11: press inside the p65 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "macStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 216.6, "predicate": "macrosReady", "note": "column-level check: Barcode + Show on Handheld columns + Macros List card (holds whether the rows load — July 11 they do — or show 'Failed to fetch')" },
+    { "op": "log-rect", "at": 216.75, "key": "bcMac", "target": "bcStrong" },
+    { "op": "log-rect", "at": 216.9, "key": "cardMac", "target": "cardTitle" },
+    { "op": "log-rect", "at": 217.05, "key": "newRecMac", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 217.25, "key": "macTh", "targets": [ "thDescription", "thType", "thBarcode", "thShowHandheld" ] },
+    { "op": "watch", "key": "macHold", "from": 217.4, "to": 232.8, "predicate": "onMacros", "everyMs": 500, "mustHold": true, "note": "step 11 read-only guardrail: page unchanged" },
+    { "op": "move", "at": 218.7, "to": { "target": "thType", "offset": [ 0, 0 ] }, "note": "p67 'its type, whether a barcode triggers it'" },
+    { "op": "move", "at": 220.5, "to": { "target": "thBarcode", "offset": [ 0, 0 ] } },
+    { "op": "move", "at": 222.5, "to": { "target": "thShowHandheld", "offset": [ 0, 0 ] }, "note": "p68 'and whether it also shows on the handheld'" },
+    { "op": "move", "at": 228.0, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 11 STOP: beside + New Record; p71 'read the columns'" },
+
+    { "op": "move", "at": 233.6, "to": { "target": "linkKioskFlows", "offset": [ 0, 0 ] }, "note": "step 12 approach on the p72 cue 'Last list: Kiosk Screen Flows'" },
+    { "op": "click", "target": "linkKioskFlows", "pressAt": 235.2, "hoverMs": 360, "postcondition": "onKioskFlows", "timeoutMs": 8000, "nav": true, "note": "step 12: press inside the p72 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "kfStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 236.6, "predicate": "kioskFlowsReady", "note": "this page loads reliably: Flow Name/Status columns + Total Flows tile + the three flow rows, never the error state" },
+    { "op": "log-rect", "at": 236.75, "key": "bcKF", "target": "bcStrong" },
+    { "op": "log-rect", "at": 236.9, "key": "cardKF", "target": "cardTitle" },
+    { "op": "log-rect", "at": 237.05, "key": "newRecKF", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 237.25, "key": "kfTiles", "targets": [ "tileTotalFlows", "tilePublished", "tileDraft" ] },
+    { "op": "log-rects", "at": 237.45, "key": "kfTh", "targets": [ "thFlowName", "thStatus", "thSchedule" ] },
+    { "op": "log-rects", "at": 237.65, "key": "kfRows", "targets": [ "rowMainFlow", "rowPremiumLane", "rowExpressTunnel" ] },
+    { "op": "watch", "key": "kfHold", "from": 237.8, "to": 263.5, "predicate": "onKioskFlows", "everyMs": 500, "mustHold": true, "note": "step 12 read-only guardrail: page unchanged through the status + row read; the create button is only pointed at, never clicked" },
+    { "op": "move", "at": 240.9, "to": { "target": "tileTotalFlows", "offset": [ 0, 0 ] }, "note": "p74 'three flows, two published and one draft'" },
+    { "op": "move", "at": 242.9, "to": { "target": "thStatus", "offset": [ 0, 0 ] }, "note": "p75-p76 'a status chip. Read the chip first.'" },
+    { "op": "move", "at": 247.0, "to": { "target": "rowMainFlow", "offset": [ 1090, 0 ] }, "note": "p77 'Published is live on the kiosks' — Main Kiosk Flow status" },
+    { "op": "move", "at": 249.0, "to": { "target": "rowPremiumLane", "offset": [ 1090, 0 ] } },
+    { "op": "move", "at": 253.5, "to": { "target": "rowExpressTunnel", "offset": [ 1090, 0 ] }, "note": "p78 'a draft, like Express Tunnel, is built but not out yet'" },
+    { "op": "move", "at": 256.0, "to": { "target": "newRecordBtn", "offset": [ -120, 44 ], "outside": true }, "note": "step 12 STOP: beside New Flow while p79 'The create button here reads New Flow'; never pressed" },
+
+    { "op": "assert", "at": 264.5, "predicate": "hwSubmenuClosed", "note": "recap: Hardware group is collapsed (step 7) — its header sits above the expanded UI & Display group" },
+    { "op": "assert", "at": 264.6, "predicate": "uiSubmenuOpen", "note": "recap sweep needs the UI & Display links still on screen (group opened genuinely at step 7, still rendered open)" },
+    { "op": "log-rects", "at": 264.8, "key": "recapHeads", "targets": [ "hwHeader", "uiHeader" ] },
+    { "op": "move", "at": 266.5, "to": { "target": "hwHeader", "offset": [ 30, 0 ] }, "note": "step 13 recap sweep: rest on the Hardware group as p80-p81 'Hardware registers the machines'" },
+    { "op": "move", "at": 270.6, "to": { "target": "uiHeader", "offset": [ 30, 0 ] }, "note": "p82 'UI and Display wires the buttons' — sweep down to the group" },
+    { "op": "move", "at": 275.9, "to": { "target": "linkMacros", "offset": [ 40, 0 ] }, "note": "p83 'the macros behind them, and the kiosk flows'" },
+    { "op": "move", "at": 278.5, "to": { "target": "linkKioskFlows", "offset": [ 40, 0 ] } },
+    { "op": "move", "at": 283.0, "to": { "point": [ 1520, 940 ] }, "note": "final park, clear of content and captions, for the p85 close" },
+    { "op": "assert", "at": 287.0, "predicate": "onKioskFlows", "note": "the lesson ends on the Kiosk Screen Flows page, nothing mutated" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "hwNav.linkScreenLayout", "place": "right", "from": 3.4, "to": 13.8 },
+      { "n": 2, "anchor": "termTh.thTerminal", "place": "below-left", "from": 22.6, "to": 30.5 },
+      { "n": 3, "anchor": "slTiles.tileTotalLayouts", "place": "below-left", "from": 44.9, "to": 60.5 },
+      { "n": 4, "anchor": "stCol", "place": "below-left", "from": 68.4, "to": 78.5 },
+      { "n": 5, "anchor": "lubeTh.thButtonText", "place": "below-left", "from": 90.2, "to": 105.0 },
+      { "n": 6, "anchor": "lcCol", "place": "below-left", "from": 114.8, "to": 121.5 },
+      { "n": 7, "anchor": "uiNav.linkCashierButtons", "place": "right", "from": 134.1, "to": 151.5 },
+      { "n": 8, "anchor": "bgTh.thDescription", "place": "below-left", "from": 157.4, "to": 168.0 },
+      { "n": 9, "anchor": "cbTh.thButton", "place": "below-left", "from": 176.6, "to": 186.5 },
+      { "n": 10, "anchor": "gbTh.thButton", "place": "below-left", "from": 197.3, "to": 208.5 },
+      { "n": 11, "anchor": "macTh.thShowHandheld", "place": "left-top", "from": 218.6, "to": 230.5 },
+      { "n": 12, "anchor": "kfTh.thStatus", "place": "below-left", "from": 240.8, "to": 257.5 },
+      { "n": 13, "anchor": "recapHeads.hwHeader", "place": "right", "from": 266.5, "to": 285.5 }
+    ],
+    "highlights": [
+      { "anchor": "hwNav.linkHwTerminals", "from": 6.5, "to": 7.6, "note": "p03 sweep the group in order" },
+      { "anchor": "hwNav.linkScreenLayout", "from": 7.6, "to": 8.7 },
+      { "anchor": "hwNav.linkSystemTypes", "from": 8.7, "to": 9.6 },
+      { "anchor": "hwNav.linkLubeButtons", "from": 9.6, "to": 10.5 },
+      { "anchor": "hwNav.linkLubeChecklists", "from": 10.5, "to": 11.6 },
+      { "anchor": "termTh.thTerminal", "from": 23.4, "to": 24.6, "note": "p08 column sweep in spoken order" },
+      { "anchor": "termTh.thLocation", "from": 24.6, "to": 26.0 },
+      { "anchor": "termTh.thSoftwareVersion", "from": 26.0, "to": 27.3 },
+      { "anchor": "termTh.thLastSeen", "from": 27.3, "to": 29.0 },
+      { "anchor": "newRecTerm", "from": 31.2, "to": 37.4, "color": "#dc2626", "note": "step 2 do-not-click guardrail on + New Record (read-only lesson)" },
+      { "anchor": "slTiles.tileTotalLayouts", "from": 45.8, "to": 47.4, "note": "p15 tiles" },
+      { "anchor": "slTiles.tilePOSLayouts", "from": 47.5, "to": 49.4 },
+      { "anchor": "slTiles.tileKioskLayouts", "from": 49.5, "to": 51.5 },
+      { "anchor": "slRows.rowStandardPOS", "from": 52.8, "to": 56.8, "note": "p16 landscape register row" },
+      { "anchor": "slRows.rowExpressKiosk", "from": 56.9, "to": 58.1, "note": "p17 portrait kiosk row" },
+      { "anchor": "newRecSL", "from": 61.4, "to": 63.8, "color": "#dc2626", "note": "step 3 do-not-click guardrail on + New Record" },
+      { "anchor": "stCol", "from": 68.6, "to": 73.0, "note": "p21-p22 the Description column" },
+      { "anchor": "newRecST", "from": 74.7, "to": 82.5, "color": "#dc2626", "note": "step 4 do-not-click guardrail on + New Record" },
+      { "anchor": "lubeRows.rowOilChange", "from": 90.6, "to": 97.5, "note": "p29-p30 Oil Change row: button text and teal color" },
+      { "anchor": "lubeRows.rowTireRotation", "from": 103.2, "to": 104.9, "note": "p31 Tire Rotation in blue" },
+      { "anchor": "newRecLube", "from": 105.4, "to": 110.0, "color": "#dc2626", "note": "step 5 do-not-click guardrail on + New Record" },
+      { "anchor": "lcCol", "from": 115.0, "to": 120.2, "note": "p34-p35 the Service column" },
+      { "anchor": "newRecLC", "from": 120.7, "to": 126.5, "color": "#dc2626", "note": "step 6 do-not-click guardrail on + New Record" },
+      { "anchor": "uiNav.linkButtonGroups", "from": 144.4, "to": 145.4, "note": "p44-p45 sweep the lesson's UI links" },
+      { "anchor": "uiNav.linkCashierButtons", "from": 141.9, "to": 143.2 },
+      { "anchor": "uiNav.linkGreeterButtons", "from": 143.2, "to": 144.4 },
+      { "anchor": "uiNav.linkMacros", "from": 145.4, "to": 146.4 },
+      { "anchor": "uiNav.linkKioskFlows", "from": 146.4, "to": 147.6 },
+      { "anchor": "bgTh.thDescription", "from": 157.7, "to": 162.7, "note": "p50 a description" },
+      { "anchor": "bgTh.thActive", "from": 162.8, "to": 165.5, "note": "and whether it's active" },
+      { "anchor": "newRecBG", "from": 166.2, "to": 171.0, "color": "#dc2626", "note": "step 8 do-not-click guardrail on + New Record" },
+      { "anchor": "cbTh.thButtonNum", "from": 177.4, "to": 178.6, "note": "p55-p56 column sweep in spoken order" },
+      { "anchor": "cbTh.thButton", "from": 178.6, "to": 180.0 },
+      { "anchor": "cbTh.thType", "from": 180.0, "to": 181.3 },
+      { "anchor": "cbTh.thColor", "from": 181.3, "to": 183.0 },
+      { "anchor": "newRecCB", "from": 184.7, "to": 191.5, "color": "#dc2626", "note": "step 9 do-not-click guardrail on + New Record" },
+      { "anchor": "gbTh.thButton", "from": 197.6, "to": 200.0, "note": "p60 same four columns" },
+      { "anchor": "gbTh.thColor", "from": 200.0, "to": 202.5 },
+      { "anchor": "newRecGB", "from": 206.7, "to": 212.5, "color": "#dc2626", "note": "step 10 do-not-click guardrail on + New Record" },
+      { "anchor": "macTh.thBarcode", "from": 220.5, "to": 222.5, "note": "p67 whether a barcode triggers it" },
+      { "anchor": "macTh.thShowHandheld", "from": 222.5, "to": 227.0, "note": "p68 and whether it also shows on the handheld" },
+      { "anchor": "newRecMac", "from": 228.2, "to": 232.8, "color": "#dc2626", "note": "step 11 do-not-click guardrail on + New Record" },
+      { "anchor": "kfTh.thStatus", "from": 242.9, "to": 246.9, "note": "p76 read the chip first" },
+      { "anchor": "kfRows.rowMainFlow", "from": 247.0, "to": 249.0, "note": "p77 Published" },
+      { "anchor": "kfRows.rowPremiumLane", "from": 249.0, "to": 251.0 },
+      { "anchor": "kfRows.rowExpressTunnel", "from": 253.5, "to": 255.5, "note": "p78 Draft — Express Tunnel" },
+      { "anchor": "newRecKF", "from": 256.2, "to": 262.0, "color": "#dc2626", "note": "step 12 do-not-click guardrail on New Flow" },
+      { "anchor": "recapHeads.hwHeader", "from": 266.5, "to": 270.5, "note": "p81 Hardware group" },
+      { "anchor": "recapHeads.uiHeader", "from": 270.6, "to": 275.5, "note": "p82 UI & Display group" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 21.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 22.0, "z": 1.45, "cx": 1050, "cy": 360, "ease": true, "note": "step 2 close framing on the six Terminals column headers" },
+      { "t": 29.5, "z": 1.45, "cx": 1050, "cy": 360 },
+      { "t": 30.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the + New Record guardrail and the next navigation" },
+      { "t": 44.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 45.0, "z": 1.4, "cx": 1000, "cy": 400, "ease": true, "note": "step 3 close framing on the Screen Layout tiles and two sample rows" },
+      { "t": 60.5, "z": 1.4, "cx": 1000, "cy": 400 },
+      { "t": 61.5, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 66.5, "z": 1.45, "cx": 920, "cy": 340, "ease": true, "note": "step 4 close framing on the single Description column" },
+      { "t": 78.5, "z": 1.45, "cx": 920, "cy": 340 },
+      { "t": 79.5, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 89.5, "z": 1.4, "cx": 1050, "cy": 420, "ease": true, "note": "step 5 close framing on the Lube Buttons rows (button text + color)" },
+      { "t": 105.0, "z": 1.4, "cx": 1050, "cy": 420 },
+      { "t": 106.0, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 114.0, "z": 1.45, "cx": 920, "cy": 340, "ease": true, "note": "step 6 close framing on the single Service column" },
+      { "t": 120.5, "z": 1.45, "cx": 920, "cy": 340 },
+      { "t": 121.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide through the step-7 sidebar switch and the UI & Display reveal" },
+      { "t": 157.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 158.0, "z": 1.45, "cx": 950, "cy": 360, "ease": true, "note": "step 8 close framing on the Description / Active columns" },
+      { "t": 167.5, "z": 1.45, "cx": 950, "cy": 360 },
+      { "t": 168.5, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 176.5, "z": 1.5, "cx": 1050, "cy": 360, "ease": true, "note": "step 9 150% close framing on the Cashier Buttons header row" },
+      { "t": 185.5, "z": 1.5, "cx": 1050, "cy": 360 },
+      { "t": 186.5, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 197.0, "z": 1.45, "cx": 1050, "cy": 360, "ease": true, "note": "step 10 close framing on the Greeter Buttons columns" },
+      { "t": 207.5, "z": 1.45, "cx": 1050, "cy": 360 },
+      { "t": 208.5, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 218.0, "z": 1.45, "cx": 1150, "cy": 360, "ease": true, "note": "step 11 close framing on the Barcode / Show on Handheld columns" },
+      { "t": 230.5, "z": 1.45, "cx": 1150, "cy": 360 },
+      { "t": 231.5, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 240.5, "z": 1.4, "cx": 1050, "cy": 400, "ease": true, "note": "step 12 close framing on the Status chips and the three flow rows" },
+      { "t": 256.0, "z": 1.4, "cx": 1050, "cy": 400 },
+      { "t": 257.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide and calm through the recap" },
+      { "t": 288.131, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Hardware & UI — Complete",
+      "from": 286.33,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 286.03
+  },
+  "output": "WC-12-05-hardware-ui-v1.1",
+  "neverClick": [
+    "new record",
+    "new flow",
+    "filters",
+    "save",
+    "save changes",
+    "edit",
+    "update",
+    "delete",
+    "add",
+    "apply",
+    "reset",
+    "export",
+    "ask shyne",
+    "log out now",
+    "logout"
+  ],
+  "preflight": [
+    { "op": "click", "target": "railToggle", "pressAt": 0, "hoverMs": 200, "unless": "sidebarExpanded", "postcondition": "sidebarExpanded", "timeoutMs": 4000, "note": "off-camera: stage the shared persisted sidebar preference expanded before the take" },
+    { "op": "click", "target": "hwHeader", "pressAt": 0, "hoverMs": 200, "unless": "hwSubmenuClosed", "postcondition": "hwSubmenuClosed", "timeoutMs": 4000, "note": "off-camera: genuine toggle closes the persisted Hardware group (washcentral-settings-menu-v1) so step 1 expands it on camera" },
+    { "op": "click", "target": "uiHeader", "pressAt": 0, "hoverMs": 200, "unless": "uiSubmenuClosed", "postcondition": "uiSubmenuClosed", "timeoutMs": 4000, "note": "off-camera: genuine toggle closes the persisted UI & Display group so the step-7 reveal is genuine" }
+  ]
+}

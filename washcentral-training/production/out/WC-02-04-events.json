@@ -1,0 +1,26 @@
+{
+  "lesson": "WC-02-04",
+  "mode": "record",
+  "startedISO": "2026-07-11T23:25:27.945Z",
+  "display": ":99",
+  "pointer": [],
+  "ops": [
+    {
+      "op": "assert",
+      "note": "start on CRM › Customers, sidebar expanded (preflight), stable before capture",
+      "scheduled": -1.5,
+      "ok": false,
+      "error": "postcondition failed within 2500ms: startReady",
+      "actualT": 2.555
+    }
+  ],
+  "rects": {},
+  "watches": [],
+  "navs": [],
+  "stability": {},
+  "keys": [],
+  "audioDurationS": 152.111,
+  "captureOffsetS": 1.678,
+  "rawFile": "/home/user/ElevenLabsMLA/washcentral-training/production/out/WC-02-04-capture.mkv",
+  "rawDurationS": 4.233
+}

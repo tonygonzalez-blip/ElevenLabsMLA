@@ -1,0 +1,592 @@
+{
+  "lesson": "WC-PB-08",
+  "audioMaster": "training/playbooks/WC-PB-08-full-narration-v1.0.mp3",
+  "audioDurationS": 228.598,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in Marketing, on Campaigns.",
+      "startS": 0,
+      "endS": 2.339,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Four tiles across the top, and one is the headline: zero sent this month.",
+      "startS": 3.548,
+      "endS": 6.184,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "When a manager says nothing went out, that tile confirms it at the network level.",
+      "startS": 6.502,
+      "endS": 7.647,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Sends have stalled.",
+      "startS": 8.749,
+      "endS": 13.079,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "This is bigger than one missed text.",
+      "startS": 13.37,
+      "endS": 17.264,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Drop to the campaign list. Read, don't click.",
+      "startS": 17.742,
+      "endS": 19.155,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The column that matters is status.",
+      "startS": 19.393,
+      "endS": 20.86,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "A draft was never launched.",
+      "startS": 21.53,
+      "endS": 23.488,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "A completed campaign already finished its run.",
+      "startS": 23.693,
+      "endS": 25.221,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Neither will send now.",
+      "startS": 25.543,
+      "endS": 29.398,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Only scheduled and active campaigns are eligible, so those rows are the investigation.",
+      "startS": 29.767,
+      "endS": 34.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Look closer at the eligible rows.",
+      "startS": 34.88,
+      "endS": 36.83,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Two carry a pill: weather paused, six locations.",
+      "startS": 37.423,
+      "endS": 38.492,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "That is a built-in hold, not an error.",
+      "startS": 38.807,
+      "endS": 40.993,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "The platform is holding sends at those six sites on purpose.",
+      "startS": 41.525,
+      "endS": 44.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Name the pill in the ticket, and route the config question.",
+      "startS": 44.446,
+      "endS": 47.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Where it is set is not visible here.",
+      "startS": 47.993,
+      "endS": 53.194,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Now Marketing, Deliverability.",
+      "startS": 53.76,
+      "endS": 55.812,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "The banner is the second reason a campaign goes quiet.",
+      "startS": 57.035,
+      "endS": 59.948,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Spam complaints on Flash Sale Weekend hit point one eight percent",
+      "startS": 60.449,
+      "endS": 62.659,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "against a point one zero threshold,",
+      "startS": 62.945,
+      "endS": 66.537,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "so the platform recommends pausing sends to protect the domain.",
+      "startS": 67.031,
+      "endS": 70.21,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "A campaign can look active and still be held here.",
+      "startS": 70.869,
+      "endS": 73.592,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Sweep the numbers underneath.",
+      "startS": 74,
+      "endS": 75.681,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "In the metrics list, spam complaint rate is flagged for action.",
+      "startS": 77.18,
+      "endS": 80.942,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "That flag is what the banner reacts to.",
+      "startS": 81.3,
+      "endS": 83.451,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Below it sit the engagement suppression toggles,",
+      "startS": 84.483,
+      "endS": 87.099,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "live switches that decide who the platform stops emailing.",
+      "startS": 88.206,
+      "endS": 91.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "Note their state.",
+      "startS": 91.966,
+      "endS": 92.916,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "Never flip one while diagnosing.",
+      "startS": 93.212,
+      "endS": 95.174,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Third stop: the engine. Settings, Automation, Task Scheduler.",
+      "startS": 95.718,
+      "endS": 97.172,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "Eighteen tasks, sixteen active, zero failed.",
+      "startS": 97.397,
+      "endS": 99.068,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Read zero failed first.",
+      "startS": 99.322,
+      "endS": 100.476,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "The scheduling engine is healthy,",
+      "startS": 100.912,
+      "endS": 106.419,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "so a stopped campaign is more likely a status or a guardrail than a broken job.",
+      "startS": 106.714,
+      "endS": 113.077,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "A positive number here would change that instantly.",
+      "startS": 113.338,
+      "endS": 115.819,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Find the SMS Campaigns row.",
+      "startS": 116.24,
+      "endS": 118.322,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "This is the heartbeat of outbound texting.",
+      "startS": 118.722,
+      "endS": 121.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "It runs hourly, it last ran an hour ago,",
+      "startS": 121.479,
+      "endS": 124.071,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "it is due again in fifty-two minutes, and its status is active.",
+      "startS": 124.282,
+      "endS": 128.15,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "An eligible, unpaused campaign that is still silent, plus a stale or inactive row here?",
+      "startS": 128.427,
+      "endS": 131.29,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "That is your evidence.",
+      "startS": 131.491,
+      "endS": 135.434,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "Fourth stop: the trail. Settings, Automation, Mass SMS Log.",
+      "startS": 136.256,
+      "endS": 137.852,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "One row per recipient, with a status on each.",
+      "startS": 138.433,
+      "endS": 141.852,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "Today's capture returned a fetch error and zero entries.",
+      "startS": 142.366,
+      "endS": 145.047,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "Do not read that as nothing sent.",
+      "startS": 145.654,
+      "endS": 148.829,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "Confirm the data loaded before you tell anyone the messages never went out.",
+      "startS": 149.228,
+      "endS": 155.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "Last angle: money. Open Billing, then Usage and Billing.",
+      "startS": 155.731,
+      "endS": 157.247,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "Two tabs matter.",
+      "startS": 157.71,
+      "endS": 160.201,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "Invoices shows one open, an unpaid bill.",
+      "startS": 160.695,
+      "endS": 161.824,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "Spending Alerts is where a usage cap would live.",
+      "startS": 162.153,
+      "endS": 165.036,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "Both are places to check, not confirmed causes.",
+      "startS": 165.361,
+      "endS": 167.745,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "Name the tab and the count.",
+      "startS": 168.051,
+      "endS": 170.949,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "Do not assert the mechanism.",
+      "startS": 171.243,
+      "endS": 174.755,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "Stay on Overview and read Usage by Source.",
+      "startS": 175.2,
+      "endS": 177.623,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p56",
+      "text": "Every row is a campaign, an automation, or a transactional send,",
+      "startS": 177.623,
+      "endS": 181.302,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p57",
+      "text": "with volume and cost this period.",
+      "startS": 181.302,
+      "endS": 183.118,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p58",
+      "text": "If the ticket names a campaign, this panel settles it:",
+      "startS": 183.118,
+      "endS": 186.637,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p59",
+      "text": "did it send anything this month, and how much.",
+      "startS": 186.637,
+      "endS": 189.656,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "Now build the ticket.",
+      "startS": 190.131,
+      "endS": 191.601,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "The campaign name, its type and status chip, the weather pause pill if present.",
+      "startS": 192.456,
+      "endS": 195.548,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p62",
+      "text": "The deliverability signal.",
+      "startS": 195.835,
+      "endS": 197.908,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p63",
+      "text": "The scheduler timestamps, last run and next run.",
+      "startS": 198.24,
+      "endS": 199.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p64",
+      "text": "State which gate you found.",
+      "startS": 200.186,
+      "endS": 203.932,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p65",
+      "text": "Resuming the campaign happens in production with the right role.",
+      "startS": 204.312,
+      "endS": 205.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p66",
+      "text": "Never here.",
+      "startS": 206.322,
+      "endS": 210.676,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p67",
+      "text": "That's the narrowing flow.",
+      "startS": 211.12,
+      "endS": 212.786,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p68",
+      "text": "Status first, because draft and completed never send.",
+      "startS": 213.13,
+      "endS": 216.187,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p69",
+      "text": "Deliverability for a reputation hold.",
+      "startS": 216.436,
+      "endS": 218.603,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p70",
+      "text": "Task Scheduler for the heartbeat.",
+      "startS": 219.179,
+      "endS": 220.717,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p71",
+      "text": "The log for the trail.",
+      "startS": 220.945,
+      "endS": 222.279,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p72",
+      "text": "Billing for a cap or an open invoice.",
+      "startS": 222.556,
+      "endS": 224.902,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p73",
+      "text": "You escalated with evidence and moved nothing.",
+      "startS": 225.202,
+      "endS": 228.142,
+      "timing": "silence"
+    }
+  ]
+}

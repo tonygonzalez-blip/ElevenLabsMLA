@@ -1,0 +1,218 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.184
+Start in the left rail, under I-T and Support.
+
+p02
+00:00:03.737 --> 00:00:06.190
+The Support group stacks your ticket tools together.
+
+p03
+00:00:06.622 --> 00:00:10.082
+Right below Support Tickets sits Help Desk, Zoho.
+
+p04
+00:00:10.534 --> 00:00:12.536
+One is WashCentral's own queue.
+
+p05
+00:00:12.821 --> 00:00:16.688
+The other is meant to mirror a help desk that lives outside the platform.
+
+p06
+00:00:17.197 --> 00:00:18.261
+Open Help Desk, Zoho.
+
+p07
+00:00:18.461 --> 00:00:19.131
+The frame loads fine.
+
+p08
+00:00:19.643 --> 00:00:22.700
+It is the data that is missing.
+
+p09
+00:00:22.968 --> 00:00:25.238
+Every count across the top shows a dash,
+
+p10
+00:00:25.456 --> 00:00:30.576
+the status and priority filters have nothing to filter,
+
+p11
+00:00:30.848 --> 00:00:32.776
+and the card in the middle says it plainly: Zoho Desk not connected.
+
+p12
+00:00:33.189 --> 00:00:36.939
+The page even hands you the next move, a button straight to its settings.
+
+p13
+00:00:37.412 --> 00:00:40.557
+Head to Settings, Integrations, Zoho Desk.
+
+p14
+00:00:40.978 --> 00:00:43.119
+This is the control room for the connection.
+
+p15
+00:00:43.594 --> 00:00:47.252
+Whether Zoho talks to WashCentral is read from this one page,
+
+p16
+00:00:47.616 --> 00:00:50.201
+so it's where support work on this integration starts.
+
+p17
+00:00:50.640 --> 00:00:51.462
+Look at the header.
+
+p18
+00:00:51.933 --> 00:00:54.474
+A warning badge reads Not Configured.
+
+p19
+00:00:54.910 --> 00:00:56.819
+That's the whole story in two words.
+
+p20
+00:00:57.320 --> 00:01:01.131
+The chips beside it name how the link would work once someone sets it up:
+
+p21
+00:01:01.578 --> 00:01:05.119
+oh-auth, a live view, a server-side token.
+
+p22
+00:01:05.520 --> 00:01:07.321
+Run across the four tiles.
+
+p23
+00:01:08.944 --> 00:01:10.449
+Connection, not set.
+
+p24
+00:01:10.674 --> 00:01:12.202
+Data center, US.
+
+p25
+00:01:12.425 --> 00:01:13.902
+Sync direction, both.
+
+p26
+00:01:14.793 --> 00:01:19.171
+So the tenant has picked how it wants to sync, but no one has authorized the link yet.
+
+p27
+00:01:19.600 --> 00:01:21.196
+Drop into the Credentials group.
+
+p28
+00:01:22.379 --> 00:01:23.524
+Client I-D, blank.
+
+p29
+00:01:23.864 --> 00:01:24.310
+Secret, not set.
+
+p30
+00:01:24.666 --> 00:01:26.006
+Access and refresh tokens, not set.
+
+p31
+00:01:26.465 --> 00:01:29.121
+With nothing stored here, there's no live line to Zoho,
+
+p32
+00:01:29.709 --> 00:01:36.320
+which is exactly why the Help Desk view had nothing to show.
+
+p33
+00:01:36.720 --> 00:01:37.725
+Keep reading down.
+
+p34
+00:01:38.181 --> 00:01:41.297
+Routing, sync, behavior, mapping.
+
+p35
+00:01:41.836 --> 00:01:46.231
+These rules decide where tickets land and which way they flow once the link goes live.
+
+p36
+00:01:46.749 --> 00:01:51.251
+Notice Enabled says Yes while the status still says Not Configured.
+
+p37
+00:01:51.553 --> 00:01:54.279
+Switched on in intent, not yet connected.
+
+p38
+00:01:54.720 --> 00:01:56.395
+Two tabs sit under the header.
+
+p39
+00:01:56.860 --> 00:01:59.732
+Settings, where you are, and Instructions.
+
+p40
+00:02:00.238 --> 00:02:04.674
+The full setup walk-through lives under Instructions, and in lesson twelve point nine.
+
+p41
+00:02:05.209 --> 00:02:07.806
+For today, stay on Settings and just read.
+
+p42
+00:02:08.240 --> 00:02:09.709
+Top right, two buttons.
+
+p43
+00:02:09.709 --> 00:02:12.569
+Test Connection, and Edit Configuration.
+
+p44
+00:02:12.569 --> 00:02:15.796
+Test Connection pings Zoho for real.
+
+p45
+00:02:15.796 --> 00:02:17.918
+Edit Configuration opens the credentials.
+
+p46
+00:02:17.918 --> 00:02:19.755
+Both touch the live integration,
+
+p47
+00:02:19.755 --> 00:02:23.061
+so neither one gets clicked in a read-only check,
+
+p48
+00:02:23.061 --> 00:02:26.958
+or in support unless the change is yours to make.
+
+p49
+00:02:27.440 --> 00:02:28.665
+So, Help Desk, Zoho.
+
+p50
+00:02:28.868 --> 00:02:29.559
+It's an embedded window into an outside help desk,
+
+p51
+00:02:30.127 --> 00:02:32.977
+empty here because the integration is Not Configured.
+
+p52
+00:02:33.231 --> 00:02:36.293
+When a real client's Zoho tickets go quiet, this is the page you open,
+
+p53
+00:02:36.654 --> 00:02:43.651
+and Token Expiry is the first field you read.
+
+p54
+00:02:43.977 --> 00:02:47.247
+You never have to click Test Connection to know where you stand.
+

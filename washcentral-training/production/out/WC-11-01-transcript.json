@@ -1,0 +1,576 @@
+{
+  "lesson": "WC-11-01",
+  "audioMaster": "training/module11-billing/WC-11-01-full-narration-v1.0.mp3",
+  "audioDurationS": 236.513,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Messaging costs money, and this is the page where that money shows up.",
+      "startS": 0,
+      "endS": 4.535,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "From the Billing area, open Usage and Billing.",
+      "startS": 4.535,
+      "endS": 6.884,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "One screen turns a wash's texts and emails into a bill.",
+      "startS": 6.884,
+      "endS": 10.675,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "When a client calls about messaging charges, everything you need is here,",
+      "startS": 10.675,
+      "endS": 14.557,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "and all of it is read only.",
+      "startS": 14.557,
+      "endS": 16.613,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Read the line under the heading first.",
+      "startS": 17.36,
+      "endS": 20.627,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Current billing period, May 2026, with the date range,",
+      "startS": 20.627,
+      "endS": 23.625,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "the next invoice date, and the days remaining.",
+      "startS": 23.625,
+      "endS": 26.29,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Every number on this page belongs to that period.",
+      "startS": 26.29,
+      "endS": 29.551,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Anchor here before you quote a single figure to a client.",
+      "startS": 29.551,
+      "endS": 33.52,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Now the four tiles.",
+      "startS": 33.983,
+      "endS": 35.292,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Two of them are spend: what texting cost this period, and what email cost.",
+      "startS": 36.06,
+      "endS": 37.362,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The other two are volume, each with a delivered percentage beside it.",
+      "startS": 37.907,
+      "endS": 40.898,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Cost on the left, activity on the right.",
+      "startS": 41.693,
+      "endS": 45.37,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "That's the whole bill at a glance.",
+      "startS": 46.105,
+      "endS": 50.476,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Under the band, six tabs.",
+      "startS": 50.955,
+      "endS": 52.768,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Overview is the summary, and it's open now.",
+      "startS": 53.689,
+      "endS": 56.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "The rest drill into one thing each: text detail, email detail, invoices,",
+      "startS": 56.477,
+      "endS": 58.372,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "the rate card, and spending alerts.",
+      "startS": 58.769,
+      "endS": 59.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Notice the badge on Invoices.",
+      "startS": 59.886,
+      "endS": 60.844,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "One open.",
+      "startS": 61.056,
+      "endS": 63.959,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "That's a client's actual bill, waiting.",
+      "startS": 64.498,
+      "endS": 69.963,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Start with the left panel, Monthly Usage Cost.",
+      "startS": 70.4,
+      "endS": 73.264,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Stacked bars show combined text and email spend by month, back through November.",
+      "startS": 73.8,
+      "endS": 78.037,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "The current month carries an asterisk: estimated, month not complete.",
+      "startS": 78.749,
+      "endS": 80.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Never quote May as final until it closes.",
+      "startS": 80.811,
+      "endS": 82.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "And one caption quirk: the subtitle says six months, but seven bars render.",
+      "startS": 83.152,
+      "endS": 85.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Count the bars.",
+      "startS": 86.266,
+      "endS": 92.079,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "The right panel is the one to learn: Usage by Source.",
+      "startS": 92.48,
+      "endS": 95.966,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Every row is one campaign, automation, or transactional stream,",
+      "startS": 96.608,
+      "endS": 103.842,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "with its volume, its cost, and a share bar ranking it.",
+      "startS": 104.42,
+      "endS": 107.352,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "This table answers the most common billing call there is: why did my bill move?",
+      "startS": 107.62,
+      "endS": 108.8,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Read the rows top down.",
+      "startS": 109.2,
+      "endS": 111.284,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "This period, the Enth Wash Rewards automation is the biggest line at nearly thirty two dollars,",
+      "startS": 111.284,
+      "endS": 116.766,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "ahead of the membership drive and the win-back campaigns.",
+      "startS": 116.766,
+      "endS": 119.849,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Receipts barely register.",
+      "startS": 119.849,
+      "endS": 121.229,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "One row usually explains the whole swing, and the share bars point you straight at it.",
+      "startS": 121.229,
+      "endS": 127.165,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Scroll to the Year to Date Summary.",
+      "startS": 127.6,
+      "endS": 129.543,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Platform fees, text and email cost for the year, total billed, and total paid,",
+      "startS": 130.315,
+      "endS": 133.14,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "with a checkmark reading current.",
+      "startS": 133.446,
+      "endS": 135.319,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Billed equals paid, so this account is square.",
+      "startS": 135.579,
+      "endS": 137.18,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "There's an export control on this panel.",
+      "startS": 137.846,
+      "endS": 140.788,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "Leave it alone; nothing exports in this walk.",
+      "startS": 141.411,
+      "endS": 146.177,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Now walk the tabs.",
+      "startS": 146.64,
+      "endS": 147.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Click S-M-S Usage.",
+      "startS": 148.323,
+      "endS": 150.153,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "This is the detail behind the period's texting spend:",
+      "startS": 150.734,
+      "endS": 153.289,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "one row per send batch, with its recipients, deliveries, failures, and cost.",
+      "startS": 153.686,
+      "endS": 158.487,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "When a client asks whether a text actually went out,",
+      "startS": 159.076,
+      "endS": 161.722,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "the failed column against delivered is your answer.",
+      "startS": 161.976,
+      "endS": 164.454,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Next, Email Usage.",
+      "startS": 164.88,
+      "endS": 165.362,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "Same log for the email channel, with bounces in place of failures.",
+      "startS": 165.657,
+      "endS": 166.643,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "Receipts show up here too, tagged transactional, at a fraction of a cent each.",
+      "startS": 167.165,
+      "endS": 175.964,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "Click Invoices, the tab with the badge.",
+      "startS": 176.474,
+      "endS": 179.031,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Usage explains the charges; this tab holds the bill itself.",
+      "startS": 179.741,
+      "endS": 183.553,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "When a client wants the document rather than the why, send them here.",
+      "startS": 184.313,
+      "endS": 187.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "One invoice sits open in this period.",
+      "startS": 188.7,
+      "endS": 190.914,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Rate Card next.",
+      "startS": 191.52,
+      "endS": 192.752,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "The multiplier that turns volume into spend:",
+      "startS": 193.248,
+      "endS": 195.855,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "two and a half cents a text, a fraction of a cent an email, and failed sends are never billed.",
+      "startS": 196.312,
+      "endS": 201.766,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "And Spending Alerts.",
+      "startS": 202.298,
+      "endS": 203.665,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Thresholds that warn before messaging spend runs away,",
+      "startS": 204.411,
+      "endS": 209.553,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "with an early warning at eighty percent and a per-campaign cap that pauses sends over budget.",
+      "startS": 209.908,
+      "endS": 213.235,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "Worth knowing when a client is surprised by a bill.",
+      "startS": 213.862,
+      "endS": 216.24,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p64",
+      "text": "Back to Overview.",
+      "startS": 216.64,
+      "endS": 217.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p65",
+      "text": "Two questions cover most billing calls.",
+      "startS": 218.451,
+      "endS": 220.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "Why did the bill move?",
+      "startS": 220.996,
+      "endS": 222.033,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "Usage by Source, top row first.",
+      "startS": 222.361,
+      "endS": 223.458,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "Where's the bill itself?",
+      "startS": 223.76,
+      "endS": 224.818,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "The Invoices tab, badged one open.",
+      "startS": 225.584,
+      "endS": 226.631,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "Read the period line, respect the asterisk, and never touch the export.",
+      "startS": 226.994,
+      "endS": 229.579,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p71",
+      "text": "That's the whole page.",
+      "startS": 230.202,
+      "endS": 236.07,
+      "timing": "silence"
+    }
+  ]
+}

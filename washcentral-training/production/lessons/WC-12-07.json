@@ -1,0 +1,481 @@
+{
+  "lesson": "WC-12-07",
+  "title": "Operations & Automation (support reference)",
+  "audioMaster": "training/module12-settings/WC-12-07-full-narration-v1.0.mp3",
+  "audioDurationS": 235.154,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": { "selector": ".wc-rail-panel-toggle" },
+    "opsHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/operations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "autoHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/automation/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkCancellation": { "text": "Cancellation Reasons", "scope": ".submenu a" },
+    "linkRefund": { "text": "Refund Reasons", "scope": ".submenu a" },
+    "linkRewash": { "text": "Rewash Reasons", "scope": ".submenu a" },
+    "linkEvent": { "text": "Event Types", "scope": ".submenu a" },
+    "linkTransaction": { "text": "Transaction Types", "scope": ".submenu a" },
+    "linkIssue": { "text": "Issue Status Types", "scope": ".submenu a" },
+    "linkTaskScheduler": { "text": "Task Scheduler", "scope": ".submenu a" },
+    "linkTaskParameters": { "text": "Task Parameters", "scope": ".submenu a" },
+    "linkMassSms": { "text": "Mass SMS Log", "scope": ".submenu a" },
+    "linkUserLevels": { "text": "User Levels", "scope": ".submenu a" },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/ List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search (cancellation|refund|rewash|event|transaction|issue|task|SMS)/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thDescription": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thShowPos": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/show on pos/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalReasons": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileShownPos": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Shown on POS/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileHidden": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Hidden/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "crNoChip": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('tbody tr')].find(t=>{const td=t.querySelectorAll('td');return td.length>=2&&/^No$/i.test((td[1].textContent||'').trim())&&t.getBoundingClientRect().width>0;});return tr?(tr.querySelectorAll('td')[1].querySelector('.badge')||tr.querySelectorAll('td')[1]):null;})()"
+    },
+    "emptyStateRefund": {
+      "js": "[...document.querySelectorAll('td')].find(e=>/No refund reasons found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "rowRewashBugs": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>/^Bugs on Car/.test((t.querySelector('td')?.textContent||'').trim())&&t.getBoundingClientRect().width>0)"
+    },
+    "rowRewashWheels": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>/^Wheels Not Clean/.test((t.querySelector('td')?.textContent||'').trim())&&t.getBoundingClientRect().width>0)"
+    },
+    "rowIssueOpen": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>(t.querySelector('td')?.textContent||'').trim()==='Open'&&t.getBoundingClientRect().width>0)"
+    },
+    "rowIssueInProgress": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>(t.querySelector('td')?.textContent||'').trim()==='In Progress'&&t.getBoundingClientRect().width>0)"
+    },
+    "rowIssuePendingParts": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>(t.querySelector('td')?.textContent||'').trim()==='Pending Parts'&&t.getBoundingClientRect().width>0)"
+    },
+    "rowIssueResolved": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>(t.querySelector('td')?.textContent||'').trim()==='Resolved'&&t.getBoundingClientRect().width>0)"
+    },
+    "rowIssueClosed": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>(t.querySelector('td')?.textContent||'').trim()==='Closed'&&t.getBoundingClientRect().width>0)"
+    },
+    "panelStatusBreakdown": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Status Breakdown$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "tileTotalTasks": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileActiveTS": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/\\d+Active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tileRunning": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Running Now/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileFailed": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thTaskName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^task name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSchedule": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^schedule$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastRun": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^last run$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thNextRun": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^next run$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowDailyReport": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>/Daily Report Email/.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    },
+    "rowSmsCampaigns": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>/SMS Campaigns/.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    },
+    "rowDatabaseBackup": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(t=>/Database Backup/.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    },
+    "footerTS": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/Showing 1.3 of 3 records/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "thTPName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTPTable": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^table$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTPUpdatedBy": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^updated by$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTPUpdated": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^updated$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSmsDate": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onCancellation": "location.pathname.endsWith('/settings-cancellation-reasons.html')",
+    "onRefund": "location.pathname.endsWith('/settings-refund-reasons.html')",
+    "onRewash": "location.pathname.endsWith('/settings-rewash-reasons.html')",
+    "onEvent": "location.pathname.endsWith('/settings-event-types.html')",
+    "onTransaction": "location.pathname.endsWith('/settings-transaction-types.html')",
+    "onIssue": "location.pathname.endsWith('/settings-issue-status-types.html')",
+    "onTaskScheduler": "location.pathname.endsWith('/settings-task-scheduler.html')",
+    "onTaskParameters": "location.pathname.endsWith('/settings-task-parameters.html')",
+    "onMassSms": "location.pathname.endsWith('/settings-mass-sms-log.html')",
+    "sidebarExpanded": "[...document.querySelectorAll('button.menu-header')].some(e=>e.getBoundingClientRect().width>120)",
+    "opsSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Cancellation Reasons|Refund Reasons|Rewash Reasons)$/.test((e.textContent||'').trim())).length>=3",
+    "opsSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Cancellation Reasons|Refund Reasons|Rewash Reasons)$/.test((e.textContent||'').trim())).length===0",
+    "autoSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Task Scheduler')",
+    "autoSubmenuClosed": "![...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Task Scheduler')",
+    "crLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-cancellation-reasons.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "refundLoaded": "(()=>{return location.pathname.endsWith('/settings-refund-reasons.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('td')].some(e=>/No refund reasons found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "rewashLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-rewash-reasons.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "eventLoaded": "(()=>{return location.pathname.endsWith('/settings-event-types.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Types/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "transactionLoaded": "(()=>{return location.pathname.endsWith('/settings-transaction-types.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Types/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "issueLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-issue-status-types.html')&&rows.length>=5&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Types/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "schedLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-task-scheduler.html')&&rows.length>=3&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "paramsLoaded": "(()=>{return location.pathname.endsWith('/settings-task-parameters.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Parameters/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^updated by$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "smsLoaded": "(()=>{return location.pathname.endsWith('/settings-mass-sms-log.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Entries/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "taskSchedulerReadOnly": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const modal=[...document.querySelectorAll('[class*=\"modal\"],[role=\"dialog\"]')].some(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-task-scheduler.html')&&rows.length===3&&!modal})()"
+  },
+  "ops": [
+    { "op": "assert", "at": -1.8, "predicate": "onSettingsHome", "note": "start page staged before capture" },
+    { "op": "assert", "at": -1.4, "predicate": "sidebarExpanded", "note": "pre-roll: preflight staged the persisted sidebar preference expanded (washcentral-sidebar-collapsed-v5=false); abort the take if collapsed" },
+    { "op": "assert", "at": -1.0, "predicate": "opsSubmenuClosed", "note": "pre-roll: Operations group must start collapsed so step 1 genuinely expands it (persisted washcentral-settings-menu-v1 operations:false, staged by preflight)" },
+    { "op": "assert", "at": -0.6, "predicate": "autoSubmenuClosed", "note": "pre-roll: Automation group must start collapsed so step 8's reveal is genuine" },
+
+    { "op": "pointer-enter", "at": 0.35, "from": [160, 1079], "to": { "target": "opsHeader", "offset": [150, 15] }, "note": "enter from the bottom edge and settle beside the left rail as p01 says look at Settings" },
+    { "op": "log-rect", "at": 1.4, "key": "opsHeaderRect", "target": "opsHeader" },
+    { "op": "move", "at": 2.0, "to": { "target": "opsHeader", "offset": [0, 0] }, "note": "approach the Operations group header while p01 is spoken" },
+    { "op": "click", "target": "opsHeader", "pressAt": 2.9, "hoverMs": 400, "postcondition": "opsSubmenuOpen", "timeoutMs": 4000, "note": "step 1: genuine group toggle — the eight Operations pages are revealed before p02" },
+    { "op": "log-rects", "at": 3.4, "key": "opsNav", "targets": ["linkCancellation", "linkRefund", "linkRewash", "linkEvent", "linkTransaction", "linkIssue"] },
+    { "op": "move", "at": 4.5, "to": { "target": "linkCancellation", "offset": [40, 0] }, "note": "slow sweep down the group while p02 explains the dropdowns" },
+    { "op": "move", "at": 6.2, "to": { "target": "linkRewash", "offset": [40, 0] } },
+    { "op": "move", "at": 8.0, "to": { "target": "linkTransaction", "offset": [40, 0] } },
+    { "op": "move", "at": 9.6, "to": { "target": "linkIssue", "offset": [40, 0] }, "note": "p03 tail" },
+    { "op": "move", "at": 12.4, "to": { "point": [520, 640] }, "note": "ease off the rail for p04" },
+
+    { "op": "move", "at": 16.3, "to": { "target": "linkCancellation", "offset": [0, 0] }, "note": "step 2 approach starts at the p05 cue Open Cancellation Reasons" },
+    { "op": "click", "target": "linkCancellation", "pressAt": 17.4, "hoverMs": 380, "postcondition": "onCancellation", "timeoutMs": 8000, "nav": true, "note": "step 2: genuine sidebar navigation, press inside the p05 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "crStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 18.8, "predicate": "crLoaded", "note": "shot-list load check: 33 real rows + KPI band, no Failed to fetch error; abort otherwise" },
+    { "op": "assert", "at": 18.95, "predicate": "opsSubmenuOpen", "note": "persisted Operations submenu held across the navigation" },
+    { "op": "assert", "at": 19.05, "predicate": "autoSubmenuClosed", "note": "fail fast: Automation group must still be closed or step 8's reveal is spoiled" },
+    { "op": "log-rect", "at": 19.15, "key": "bcCR", "target": "bcStrong" },
+    { "op": "log-rect", "at": 19.3, "key": "cardCR", "target": "cardTitle" },
+    { "op": "log-rect", "at": 19.45, "key": "searchCR", "target": "searchBox" },
+    { "op": "log-rect", "at": 19.6, "key": "newRecCR", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 19.8, "key": "crTh", "targets": ["thDescription", "thShowPos"] },
+    { "op": "log-rects", "at": 19.95, "key": "crTiles", "targets": ["tileTotalReasons", "tileShownPos", "tileHidden"] },
+    { "op": "move", "at": 20.2, "to": { "target": "thDescription", "offset": [0, 0] }, "note": "p06 Two columns here — the description column" },
+    { "op": "move", "at": 21.0, "to": { "target": "thShowPos", "offset": [0, 0] }, "note": "p07-p08 the other decides whether a cashier sees it; camera pushes to the Show on POS column" },
+    { "op": "move", "at": 22.8, "to": { "target": "thShowPos", "offset": [0, 40], "outside": true }, "note": "rest under Show on POS while p08 explains the check-first column" },
+    { "op": "move", "at": 27.6, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 2 guardrail: rest BESIDE + New Record while p09 finishes; the button is never approached for a press" },
+    { "op": "move", "at": 30.9, "to": { "point": [900, 620] }, "note": "ease off for the step-3 read" },
+
+    { "op": "log-rect", "at": 33.0, "key": "crNoChipRect", "target": "crNoChip" },
+    { "op": "move", "at": 33.2, "to": { "point": [850, 520] }, "note": "step 3 p10 Look at the list body" },
+    { "op": "move", "at": 35.4, "to": { "target": "tileShownPos", "offset": [0, 20], "outside": true }, "note": "p12 the tiles above count thirty shown" },
+    { "op": "move", "at": 37.0, "to": { "target": "tileHidden", "offset": [0, 20], "outside": true }, "note": "and three kept hidden" },
+    { "op": "move", "at": 40.9, "to": { "point": [1130, 1240] }, "note": "p13 the footer pages you through the full set" },
+    { "op": "move", "at": 44.9, "to": { "target": "crNoChip", "offset": [90, 0], "outside": true }, "note": "p14 those three hidden rows read No — point beside the No chip" },
+    { "op": "move", "at": 47.9, "to": { "target": "crNoChip", "offset": [230, 0], "outside": true }, "note": "p15 ease along the row" },
+
+    { "op": "move", "at": 50.7, "to": { "target": "linkRefund", "offset": [0, 0] }, "note": "step 4 approach at the p16 cue Now Refund Reasons" },
+    { "op": "click", "target": "linkRefund", "pressAt": 51.7, "hoverMs": 380, "postcondition": "onRefund", "timeoutMs": 8000, "nav": true, "note": "step 4: genuine navigation, press inside the p16 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "rfStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 53.2, "predicate": "refundLoaded", "note": "genuine empty state (Total Reasons 0, no-refund-reasons note), never the Failed-to-fetch error state" },
+    { "op": "log-rect", "at": 53.4, "key": "bcRF", "target": "bcStrong" },
+    { "op": "log-rect", "at": 53.55, "key": "cardRF", "target": "cardTitle" },
+    { "op": "log-rect", "at": 53.7, "key": "newRecRF", "target": "newRecordBtn" },
+    { "op": "log-rect", "at": 53.85, "key": "thRFDesc", "target": "thDescription" },
+    { "op": "log-rect", "at": 54.0, "key": "emptyRF", "target": "emptyStateRefund" },
+    { "op": "move", "at": 54.2, "to": { "target": "thDescription", "offset": [0, 0] }, "note": "p17 one column, one job" },
+    { "op": "move", "at": 55.4, "to": { "target": "emptyStateRefund", "offset": [-420, 0] }, "note": "sweep toward the empty-state line for p18" },
+    { "op": "move", "at": 57.2, "to": { "target": "emptyStateRefund", "offset": [-40, 0] }, "note": "p18-p19 genuinely empty, POS database note" },
+    { "op": "move", "at": 61.5, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 4 guardrail: rest beside + New Record; never pressed" },
+    { "op": "move", "at": 65.9, "to": { "point": [900, 520] }, "note": "p20 real empty state, not a load error — ease off" },
+
+    { "op": "move", "at": 69.3, "to": { "target": "linkRewash", "offset": [0, 0] }, "note": "step 5 approach at the p21 cue Rewash Reasons, same idea" },
+    { "op": "click", "target": "linkRewash", "pressAt": 70.3, "hoverMs": 380, "postcondition": "onRewash", "timeoutMs": 8000, "nav": true, "note": "step 5: genuine navigation" },
+    { "op": "wait-stable", "afterNav": true, "key": "rwStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 71.7, "predicate": "rewashLoaded", "note": "12 real rows + Total Reasons tile" },
+    { "op": "log-rect", "at": 71.85, "key": "bcRW", "target": "bcStrong" },
+    { "op": "log-rect", "at": 72.0, "key": "cardRW", "target": "cardTitle" },
+    { "op": "log-rect", "at": 72.15, "key": "tileRW", "target": "tileTotalReasons" },
+    { "op": "log-rect", "at": 72.3, "key": "newRecRW", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 72.5, "key": "rwRows", "targets": ["rowRewashBugs", "rowRewashWheels"] },
+    { "op": "move", "at": 72.7, "to": { "target": "cardTitle", "offset": [0, 40], "outside": true }, "note": "p22 the list an attendant picks from" },
+    { "op": "move", "at": 76.2, "to": { "target": "rowRewashBugs", "offset": [200, 0] }, "note": "p23 sweep the twelve rows, from bugs on the car" },
+    { "op": "move", "at": 79.2, "to": { "target": "rowRewashWheels", "offset": [200, 0] }, "note": "to wheels not clean" },
+    { "op": "move", "at": 81.3, "to": { "point": [900, 520] }, "note": "p24 identical shape to refunds — ease off" },
+
+    { "op": "move", "at": 85.0, "to": { "target": "linkEvent", "offset": [0, 0] }, "note": "step 6 approach on p25-p26 Event Types, then Transaction Types" },
+    { "op": "click", "target": "linkEvent", "pressAt": 86.9, "hoverMs": 380, "postcondition": "onEvent", "timeoutMs": 8000, "nav": true, "note": "step 6a: open Event Types, press inside the p26 cue" },
+    { "op": "wait-stable", "afterNav": true, "key": "evStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 88.4, "predicate": "eventLoaded", "note": "Event Types renders (Total Types tile + Description column); the empty body is a real state, never Failed to fetch" },
+    { "op": "log-rect", "at": 88.55, "key": "bcEV", "target": "bcStrong" },
+    { "op": "log-rect", "at": 88.7, "key": "cardEV", "target": "cardTitle" },
+    { "op": "log-rect", "at": 88.85, "key": "thEVDesc", "target": "thDescription" },
+    { "op": "log-rect", "at": 89.0, "key": "newRecEV", "target": "newRecordBtn" },
+    { "op": "move", "at": 89.4, "to": { "target": "thDescription", "offset": [0, 0] }, "note": "p27 one classifies things that happen — Event Types description column" },
+    { "op": "move", "at": 90.7, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 6 guardrail on Event Types + New Record; never pressed" },
+    { "op": "move", "at": 92.6, "to": { "target": "linkTransaction", "offset": [0, 0] }, "note": "approach Transaction Types on p28" },
+    { "op": "click", "target": "linkTransaction", "pressAt": 93.9, "hoverMs": 360, "postcondition": "onTransaction", "timeoutMs": 8000, "nav": true, "note": "step 6b: open Transaction Types, press inside the p28 tail so the page is up for p29" },
+    { "op": "wait-stable", "afterNav": true, "key": "txStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 95.0, "predicate": "transactionLoaded", "note": "Transaction Types renders identically (Total Types + Description); empty body is a real state" },
+    { "op": "log-rect", "at": 95.15, "key": "bcTX", "target": "bcStrong" },
+    { "op": "log-rect", "at": 95.3, "key": "cardTX", "target": "cardTitle" },
+    { "op": "log-rect", "at": 95.45, "key": "thTXDesc", "target": "thDescription" },
+    { "op": "log-rect", "at": 95.6, "key": "newRecTX", "target": "newRecordBtn" },
+    { "op": "move", "at": 95.9, "to": { "target": "thDescription", "offset": [0, 0] }, "note": "p29 the layout never changes: a description column and a count" },
+    { "op": "move", "at": 97.7, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 6 guardrail on Transaction Types + New Record; never pressed" },
+
+    { "op": "move", "at": 99.8, "to": { "target": "linkIssue", "offset": [0, 0] }, "note": "step 7 approach at the p30 cue Issue Status Types" },
+    { "op": "click", "target": "linkIssue", "pressAt": 100.3, "hoverMs": 360, "postcondition": "onIssue", "timeoutMs": 8000, "nav": true, "note": "step 7: press so the page lands as p31 says This one loaded" },
+    { "op": "wait-stable", "afterNav": true, "key": "isStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 101.6, "predicate": "issueLoaded", "note": "5 real status rows + Total Types tile" },
+    { "op": "log-rect", "at": 101.75, "key": "bcIS", "target": "bcStrong" },
+    { "op": "log-rect", "at": 101.9, "key": "cardIS", "target": "cardTitle" },
+    { "op": "log-rects", "at": 102.1, "key": "isRows", "targets": ["rowIssueOpen", "rowIssueInProgress", "rowIssuePendingParts", "rowIssueResolved", "rowIssueClosed"] },
+    { "op": "log-rect", "at": 102.35, "key": "panelSB", "target": "panelStatusBreakdown" },
+    { "op": "move", "at": 102.5, "to": { "point": [700, 560] }, "note": "p31 rest while the real values are named" },
+    { "op": "move", "at": 105.4, "to": { "target": "rowIssueOpen", "offset": [140, 0] }, "note": "p32 sweep the five statuses in spoken order: Open," },
+    { "op": "move", "at": 106.3, "to": { "target": "rowIssueInProgress", "offset": [140, 0] }, "note": "in progress," },
+    { "op": "move", "at": 106.9, "to": { "target": "rowIssuePendingParts", "offset": [140, 0] }, "note": "pending parts," },
+    { "op": "move", "at": 107.5, "to": { "target": "rowIssueResolved", "offset": [140, 0] }, "note": "resolved," },
+    { "op": "move", "at": 108.1, "to": { "target": "rowIssueClosed", "offset": [140, 0] }, "note": "closed" },
+    { "op": "move", "at": 111.5, "to": { "target": "panelStatusBreakdown", "offset": [0, 40], "outside": true }, "note": "p33-p34 the Status Breakdown panel shows the workflow stages; camera pushes to it" },
+    { "op": "move", "at": 113.8, "to": { "point": [1100, 320] }, "note": "ease within the Status Breakdown framing" },
+
+    { "op": "log-rect", "at": 114.9, "key": "autoHeaderRect", "target": "autoHeader" },
+    { "op": "move", "at": 115.6, "to": { "target": "autoHeader", "offset": [0, 0] }, "note": "step 8 approach the Automation group header on p35" },
+    { "op": "click", "target": "autoHeader", "pressAt": 116.6, "hoverMs": 400, "postcondition": "autoSubmenuOpen", "timeoutMs": 4000, "note": "step 8: genuine group toggle as p35 switches to Automation" },
+    { "op": "log-rects", "at": 117.1, "key": "autoNav", "targets": ["linkTaskScheduler", "linkTaskParameters", "linkMassSms", "linkUserLevels"] },
+    { "op": "move", "at": 118.1, "to": { "target": "linkTaskScheduler", "offset": [40, 0] }, "note": "p36-p37 sweep the automation pages: the scheduler," },
+    { "op": "move", "at": 120.2, "to": { "target": "linkTaskParameters", "offset": [40, 0] }, "note": "its parameters," },
+    { "op": "move", "at": 121.2, "to": { "target": "linkMassSms", "offset": [40, 0] }, "note": "and the mass text log" },
+    { "op": "move", "at": 123.6, "to": { "target": "linkUserLevels", "offset": [40, 0] }, "note": "p38 User Levels sits here too, but it is a security page" },
+    { "op": "move", "at": 126.4, "to": { "point": [520, 780] }, "note": "ease off for the step-9 open" },
+
+    { "op": "move", "at": 128.5, "to": { "target": "linkTaskScheduler", "offset": [0, 0] }, "note": "step 9 approach at the p39 cue Open Task Scheduler" },
+    { "op": "click", "target": "linkTaskScheduler", "pressAt": 129.0, "hoverMs": 360, "postcondition": "onTaskScheduler", "timeoutMs": 8000, "nav": true, "note": "step 9: genuine navigation; page lands as p40 says Read the tiles first" },
+    { "op": "wait-stable", "afterNav": true, "key": "tsStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 130.4, "predicate": "schedLoaded", "note": "3 real job rows + Total Tasks tile, no error state" },
+    { "op": "assert", "at": 130.5, "predicate": "onTaskScheduler" },
+    { "op": "log-rect", "at": 130.6, "key": "bcTS", "target": "bcStrong" },
+    { "op": "log-rects", "at": 130.75, "key": "tsTiles", "targets": ["tileTotalTasks", "tileActiveTS", "tileRunning", "tileFailed"] },
+    { "op": "log-rect", "at": 130.9, "key": "cardTS", "target": "cardTitle" },
+    { "op": "log-rect", "at": 131.05, "key": "newRecTS", "target": "newRecordBtn" },
+    { "op": "log-rects", "at": 131.2, "key": "tsTh", "targets": ["thTaskName", "thSchedule", "thLastRun", "thNextRun", "thStatus"] },
+    { "op": "log-rects", "at": 131.35, "key": "tsRows", "targets": ["rowDailyReport", "rowSmsCampaigns", "rowDatabaseBackup"] },
+    { "op": "log-rect", "at": 131.5, "key": "footerTSrect", "target": "footerTS" },
+    { "op": "watch", "key": "tsReadOnlyHold", "from": 131.6, "to": 179.0, "predicate": "taskSchedulerReadOnly", "everyMs": 500, "mustHold": true, "note": "automation guardrail: the Task Scheduler page identity and its 3-row count never change and no dialog opens across steps 9-11 — proof no task was run, added, or edited" },
+    { "op": "move", "at": 131.7, "to": { "target": "tileFailed", "offset": [0, 40], "outside": true }, "note": "p41 the one that earns your attention is Failed; camera pushes to the KPI band" },
+    { "op": "move", "at": 137.9, "to": { "target": "tileFailed", "offset": [-30, 40], "outside": true }, "note": "p42-p43 a non-zero Failed count is your fastest signal" },
+    { "op": "move", "at": 141.2, "to": { "point": [1100, 320] }, "note": "ease as the camera pulls wide for the column tour" },
+
+    { "op": "move", "at": 144.8, "to": { "point": [900, 520] }, "note": "step 10 p44 Now the list itself" },
+    { "op": "move", "at": 146.7, "to": { "target": "thTaskName", "offset": [0, 0] }, "note": "p45 five columns: a job's name," },
+    { "op": "move", "at": 147.6, "to": { "target": "thSchedule", "offset": [0, 0] }, "note": "its schedule," },
+    { "op": "move", "at": 148.4, "to": { "target": "thLastRun", "offset": [0, 0] }, "note": "when it last ran," },
+    { "op": "move", "at": 149.2, "to": { "target": "thNextRun", "offset": [0, 0] }, "note": "p46 when it runs next," },
+    { "op": "move", "at": 150.1, "to": { "target": "thStatus", "offset": [0, 0] }, "note": "and its status" },
+    { "op": "move", "at": 151.5, "to": { "target": "rowDailyReport", "offset": [-660, 0] }, "note": "p47 the daily report email is right here — its name at the left of the row" },
+    { "op": "move", "at": 154.4, "to": { "target": "rowDailyReport", "offset": [30, 0] }, "note": "p48 read last run on that row (LAST RUN cell, center of the row)" },
+    { "op": "move", "at": 157.6, "to": { "target": "rowDailyReport", "offset": [660, 0] }, "note": "and status (STATUS cell, right of the row)" },
+    { "op": "move", "at": 159.8, "to": { "point": [1100, 760] }, "note": "ease off for the read-only rule" },
+
+    { "op": "move", "at": 162.6, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 11 p49: rest BESIDE + New Record; the read-only guardrail — never approached for a press" },
+    { "op": "move", "at": 166.2, "to": { "target": "newRecordBtn", "offset": [-95, 62], "outside": true }, "note": "p50-p51 you read this page; you never edit a schedule and you never run a task" },
+    { "op": "move", "at": 171.6, "to": { "target": "tileTotalTasks", "offset": [0, 40], "outside": true }, "note": "p52 the header claims eighteen tasks" },
+    { "op": "move", "at": 173.4, "to": { "target": "footerTS", "offset": [0, -34], "outside": true }, "note": "p53 but only three rows actually rendered — beside the footer count" },
+    { "op": "move", "at": 178.0, "to": { "point": [900, 780] }, "note": "p54 the rest we've parked — ease off" },
+
+    { "op": "move", "at": 179.7, "to": { "target": "linkTaskParameters", "offset": [0, 0] }, "note": "step 12 approach at the p55 cue Task Parameters" },
+    { "op": "click", "target": "linkTaskParameters", "pressAt": 180.6, "hoverMs": 360, "postcondition": "onTaskParameters", "timeoutMs": 8000, "nav": true, "note": "step 12: genuine navigation" },
+    { "op": "wait-stable", "afterNav": true, "key": "tpStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 182.0, "predicate": "paramsLoaded", "note": "Task Parameters renders (Total Parameters tile + Updated By column); record what renders" },
+    { "op": "log-rect", "at": 182.15, "key": "bcTP", "target": "bcStrong" },
+    { "op": "log-rect", "at": 182.3, "key": "cardTP", "target": "cardTitle" },
+    { "op": "log-rects", "at": 182.5, "key": "tpTh", "targets": ["thTPName", "thTPTable", "thTPUpdatedBy", "thTPUpdated"] },
+    { "op": "log-rect", "at": 182.7, "key": "newRecTP", "target": "newRecordBtn" },
+    { "op": "move", "at": 182.9, "to": { "target": "thTPName", "offset": [0, 0] }, "note": "p56 the reusable inputs the jobs read" },
+    { "op": "move", "at": 184.9, "to": { "target": "thTPUpdatedBy", "offset": [0, 0] }, "note": "p57 the updated-by column" },
+    { "op": "move", "at": 186.6, "to": { "target": "thTPUpdated", "offset": [0, 0] }, "note": "and the updated column" },
+    { "op": "move", "at": 189.9, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 12 guardrail: rest beside + New Record; never pressed" },
+    { "op": "move", "at": 193.9, "to": { "point": [900, 520] }, "note": "p59 ease off" },
+
+    { "op": "move", "at": 197.0, "to": { "target": "linkMassSms", "offset": [0, 0] }, "note": "step 13 approach at the p60 cue Mass SMS Log" },
+    { "op": "click", "target": "linkMassSms", "pressAt": 197.9, "hoverMs": 360, "postcondition": "onMassSms", "timeoutMs": 8000, "nav": true, "note": "step 13: genuine navigation" },
+    { "op": "wait-stable", "afterNav": true, "key": "smsStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 199.4, "predicate": "smsLoaded", "note": "Mass SMS Log renders (Total Entries tile + Status column); record what renders" },
+    { "op": "log-rect", "at": 199.55, "key": "bcSMS", "target": "bcStrong" },
+    { "op": "log-rect", "at": 199.7, "key": "cardSMS", "target": "cardTitle" },
+    { "op": "log-rects", "at": 199.9, "key": "smsTh", "targets": ["thSmsDate", "thStatus"] },
+    { "op": "log-rect", "at": 200.1, "key": "newRecSMS", "target": "newRecordBtn" },
+    { "op": "move", "at": 200.3, "to": { "target": "thSmsDate", "offset": [0, 0] }, "note": "p61 the delivery record for mass texts" },
+    { "op": "move", "at": 201.7, "to": { "target": "thStatus", "offset": [0, 0] }, "note": "p62-p63 approach the status column" },
+    { "op": "move", "at": 203.7, "to": { "target": "thStatus", "offset": [0, 40], "outside": true }, "note": "p63 the status column is where you confirm it went out" },
+    { "op": "move", "at": 206.7, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "step 13 guardrail: rest beside + New Record; never pressed" },
+    { "op": "move", "at": 210.0, "to": { "point": [900, 520] }, "note": "p64 ease off" },
+
+    { "op": "assert", "at": 212.9, "predicate": "opsSubmenuOpen", "note": "recap needs the Operations links still on screen (persisted open since step 1)" },
+    { "op": "assert", "at": 213.0, "predicate": "autoSubmenuOpen", "note": "and the Automation links (persisted open since step 8)" },
+    { "op": "log-rect", "at": 213.1, "key": "opsHeaderRect2", "target": "opsHeader" },
+    { "op": "move", "at": 213.2, "to": { "target": "opsHeader", "offset": [0, 0] }, "note": "step 14 p65 start on the Operations group" },
+    { "op": "log-rects", "at": 213.35, "key": "recapOpsNav", "targets": ["linkCancellation", "linkRefund", "linkRewash"] },
+    { "op": "log-rects", "at": 213.5, "key": "recapAutoNav", "targets": ["linkTaskScheduler", "linkTaskParameters", "linkMassSms"] },
+    { "op": "move", "at": 215.4, "to": { "target": "linkCancellation", "offset": [40, 0] }, "note": "p66 Operations feeds the dropdowns" },
+    { "op": "move", "at": 217.6, "to": { "target": "linkRewash", "offset": [40, 0] }, "note": "sweep the reason lists" },
+    { "op": "move", "at": 219.7, "to": { "target": "linkCancellation", "offset": [40, 0] }, "note": "p67 and Show on POS decides what a cashier sees — Cancellation Reasons" },
+    { "op": "move", "at": 223.2, "to": { "target": "autoHeader", "offset": [0, 0] }, "note": "p68 Automation runs the jobs — cross to the Automation group" },
+    { "op": "move", "at": 225.2, "to": { "target": "linkTaskScheduler", "offset": [40, 0] }, "note": "p68-p69 a report that never came starts at the scheduler" },
+    { "op": "move", "at": 227.6, "to": { "target": "linkTaskScheduler", "offset": [40, 0] }, "note": "p69 its last run and status" },
+    { "op": "move", "at": 230.9, "to": { "point": [1540, 900] }, "note": "p70 final park, clear of content and captions" },
+    { "op": "assert", "at": 234.0, "predicate": "onMassSms", "note": "recap never navigated away — the walk ended read-only on Mass SMS Log" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "opsNav.linkCancellation", "place": "right", "from": 4.4, "to": 11.5 },
+      { "n": 2, "anchor": "crTh.thShowPos", "place": "below-left", "from": 20.4, "to": 27.2 },
+      { "n": 3, "anchor": "crNoChipRect", "place": "left", "from": 44.7, "to": 50.1 },
+      { "n": 4, "anchor": "thRFDesc", "place": "below-left", "from": 54.2, "to": 60.5 },
+      { "n": 5, "anchor": "cardRW", "place": "below-left", "from": 72.7, "to": 80.5 },
+      { "n": 6, "anchor": "thTXDesc", "place": "below-left", "from": 95.9, "to": 99.1 },
+      { "n": 7, "anchor": "isRows.rowIssueOpen", "place": "left", "from": 105.3, "to": 111.2 },
+      { "n": 8, "anchor": "autoNav.linkTaskScheduler", "place": "right", "from": 117.3, "to": 123.4 },
+      { "n": 9, "anchor": "tsTiles.tileFailed", "place": "below-left", "from": 131.5, "to": 140.0 },
+      { "n": 10, "anchor": "tsRows.rowDailyReport", "place": "left-top", "from": 151.4, "to": 159.5 },
+      { "n": 11, "anchor": "newRecTS", "place": "below-left", "from": 162.6, "to": 171.2 },
+      { "n": 12, "anchor": "tpTh.thTPUpdatedBy", "place": "below-left", "from": 184.8, "to": 192.5 },
+      { "n": 13, "anchor": "smsTh.thStatus", "place": "below-left", "from": 202.9, "to": 209.5 },
+      { "n": 14, "anchor": "opsHeaderRect2", "place": "right", "from": 215.3, "to": 231.0 }
+    ],
+    "highlights": [
+      { "anchor": "opsNav.linkCancellation", "from": 4.6, "to": 6.1, "note": "p02 sweep the Operations group in order" },
+      { "anchor": "opsNav.linkRewash", "from": 6.2, "to": 7.9 },
+      { "anchor": "opsNav.linkIssue", "from": 9.6, "to": 11.4 },
+      { "anchor": "crTh.thShowPos", "from": 21.0, "to": 25.2, "note": "p07-p08 the Show on POS column decides register visibility" },
+      { "anchor": "newRecCR", "from": 28.0, "to": 31.6, "color": "#dc2626", "note": "shot-list STOP ring: + New Record located, never clicked (read-only lesson)" },
+      { "anchor": "crTiles.tileShownPos", "from": 35.4, "to": 36.9, "note": "p12 thirty shown at the register" },
+      { "anchor": "crTiles.tileHidden", "from": 37.0, "to": 40.5, "note": "and three kept hidden" },
+      { "anchor": "crNoChipRect", "from": 44.7, "to": 49.9, "note": "p14-p15 the hidden rows read No — still on the books, invisible to the cashier" },
+      { "anchor": "thRFDesc", "from": 54.2, "to": 55.3, "note": "p17 single Description column on Refund Reasons" },
+      { "anchor": "emptyRF", "from": 55.4, "to": 65.0, "note": "p18-p20 the genuine empty state is a real state, not a load error" },
+      { "anchor": "newRecRF", "from": 61.5, "to": 65.0, "color": "#dc2626", "note": "STOP ring over + New Record on Refund Reasons" },
+      { "anchor": "cardRW", "from": 72.7, "to": 76.0, "note": "p22 same shape as Refund Reasons, populated" },
+      { "anchor": "rwRows.rowRewashBugs", "from": 76.2, "to": 79.1, "note": "p23 twelve rows, bugs on the car" },
+      { "anchor": "rwRows.rowRewashWheels", "from": 79.2, "to": 81.2, "note": "to wheels not clean" },
+      { "anchor": "thEVDesc", "from": 89.4, "to": 92.3, "note": "p27 the identical Description column on Event Types" },
+      { "anchor": "newRecEV", "from": 90.7, "to": 92.4, "color": "#dc2626", "note": "STOP ring over + New Record on Event Types" },
+      { "anchor": "thTXDesc", "from": 95.9, "to": 99.0, "note": "p29 same layout on Transaction Types: a description column and a count" },
+      { "anchor": "newRecTX", "from": 97.7, "to": 99.1, "color": "#dc2626", "note": "STOP ring over + New Record on Transaction Types" },
+      { "anchor": "isRows.rowIssueOpen", "from": 105.4, "to": 106.2, "note": "p32 spoken order: Open," },
+      { "anchor": "isRows.rowIssueInProgress", "from": 106.3, "to": 106.8, "note": "in progress," },
+      { "anchor": "isRows.rowIssuePendingParts", "from": 106.9, "to": 107.4, "note": "pending parts," },
+      { "anchor": "isRows.rowIssueResolved", "from": 107.5, "to": 108.0, "note": "resolved," },
+      { "anchor": "isRows.rowIssueClosed", "from": 108.1, "to": 108.9, "note": "closed" },
+      { "anchor": "panelSB", "from": 111.5, "to": 114.4, "note": "p33-p34 the Status Breakdown panel shows the workflow stages" },
+      { "anchor": "autoNav.linkTaskScheduler", "from": 118.1, "to": 120.1, "note": "p37 the scheduler," },
+      { "anchor": "autoNav.linkTaskParameters", "from": 120.2, "to": 121.1, "note": "its parameters," },
+      { "anchor": "autoNav.linkMassSms", "from": 121.2, "to": 123.4, "note": "and the mass text log" },
+      { "anchor": "autoNav.linkUserLevels", "from": 123.6, "to": 127.4, "note": "p38 User Levels sits here too, but it is a security page (WC-12-06)" },
+      { "anchor": "tsTiles.tileFailed", "from": 131.7, "to": 137.6, "note": "p41-p43 the Failed tile is the first read for a stuck job" },
+      { "anchor": "tsRows.rowDailyReport", "from": 151.5, "to": 159.3, "note": "p47-p48 the Daily Report Email row: read LAST RUN and STATUS" },
+      { "anchor": "newRecTS", "from": 162.6, "to": 171.1, "color": "#dc2626", "note": "step 11 do-not-click guardrail on + New Record while p49-p51 state the read-only rule" },
+      { "anchor": "tsTiles.tileTotalTasks", "from": 171.6, "to": 177.4, "note": "p52 the header claims eighteen tasks" },
+      { "anchor": "footerTSrect", "from": 173.4, "to": 177.4, "note": "p53 but only three rows actually rendered (18-vs-3, unchanged July 11)" },
+      { "anchor": "tpTh.thTPUpdatedBy", "from": 184.8, "to": 189.3, "note": "p57 who last changed a parameter" },
+      { "anchor": "tpTh.thTPUpdated", "from": 186.6, "to": 189.3, "note": "and when" },
+      { "anchor": "newRecTP", "from": 189.9, "to": 193.6, "color": "#dc2626", "note": "STOP ring over + New Record on Task Parameters" },
+      { "anchor": "smsTh.thStatus", "from": 203.7, "to": 209.4, "note": "p63 the STATUS column confirms whether a text went out" },
+      { "anchor": "newRecSMS", "from": 206.7, "to": 209.4, "color": "#dc2626", "note": "STOP ring over + New Record on Mass SMS Log" },
+      { "anchor": "recapOpsNav.linkCancellation", "from": 215.4, "to": 219.4, "note": "p66-p67 Operations feeds the dropdowns; Show on POS decides visibility" },
+      { "anchor": "recapAutoNav.linkTaskScheduler", "from": 223.4, "to": 230.0, "note": "p68-p69 Automation runs the jobs; the scheduler's last run and status" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 20.8, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 21.7, "z": 1.5, "cx": 1520, "cy": 430, "ease": true, "note": "step 2 close framing (150% per shot list): the SHOW ON POS column" },
+      { "t": 27.2, "z": 1.5, "cx": 1520, "cy": 430 },
+      { "t": 28.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the step-3 read and the reason-list navigations (page identity on each open)" },
+      { "t": 108.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 109.2, "z": 1.4, "cx": 1080, "cy": 400, "ease": true, "note": "step 7 push to the Status Breakdown panel" },
+      { "t": 114.4, "z": 1.4, "cx": 1080, "cy": 400 },
+      { "t": 115.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the step-8 rail work" },
+      { "t": 131.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 131.8, "z": 1.45, "cx": 1100, "cy": 380, "ease": true, "note": "step 9 close framing (150% per shot list): the Task Scheduler KPI band, Failed tile" },
+      { "t": 140.2, "z": 1.45, "cx": 1100, "cy": 380 },
+      { "t": 141.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide and calm through the column tour, the read-only rule, the last two pages, and the recap" },
+      { "t": 235.154, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Operations & Automation — Complete",
+      "from": 233.6,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 233.3
+  },
+  "output": "WC-12-07-operations-automation-v1.1",
+  "neverClick": [
+    "new record",
+    "save",
+    "save changes",
+    "edit",
+    "delete",
+    "yes, delete",
+    "add",
+    "reset",
+    "run task",
+    "run now",
+    "new schedule",
+    "edit schedule",
+    "enable",
+    "disable",
+    "activate",
+    "deactivate",
+    "send",
+    "submit",
+    "logout",
+    "ask shyne"
+  ],
+  "preflight": [
+    { "op": "click", "target": "railToggle", "pressAt": 0, "hoverMs": 200, "unless": "sidebarExpanded", "postcondition": "sidebarExpanded", "timeoutMs": 4000, "note": "off-camera: stage the shared persisted sidebar preference expanded (washcentral-sidebar-collapsed-v5) before the take" },
+    { "op": "click", "target": "opsHeader", "pressAt": 0, "hoverMs": 200, "unless": "opsSubmenuClosed", "postcondition": "opsSubmenuClosed", "timeoutMs": 4000, "note": "off-camera: genuine toggle closes the persisted Operations group (washcentral-settings-menu-v1) so step 1 expands it on camera" },
+    { "op": "click", "target": "autoHeader", "pressAt": 0, "hoverMs": 200, "unless": "autoSubmenuClosed", "postcondition": "autoSubmenuClosed", "timeoutMs": 4000, "note": "off-camera: genuine toggle closes the persisted Automation group so the step-8 reveal is genuine" }
+  ]
+}

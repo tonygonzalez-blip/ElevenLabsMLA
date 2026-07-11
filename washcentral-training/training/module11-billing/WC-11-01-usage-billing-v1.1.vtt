@@ -1,0 +1,286 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:04.535
+Messaging costs money, and this is the page where that money shows up.
+
+p02
+00:00:04.535 --> 00:00:06.884
+From the Billing area, open Usage and Billing.
+
+p03
+00:00:06.884 --> 00:00:10.675
+One screen turns a wash's texts and emails into a bill.
+
+p04
+00:00:10.675 --> 00:00:14.557
+When a client calls about messaging charges, everything you need is here,
+
+p05
+00:00:14.557 --> 00:00:16.613
+and all of it is read only.
+
+p06
+00:00:17.360 --> 00:00:20.627
+Read the line under the heading first.
+
+p07
+00:00:20.627 --> 00:00:23.625
+Current billing period, May 2026, with the date range,
+
+p08
+00:00:23.625 --> 00:00:26.290
+the next invoice date, and the days remaining.
+
+p09
+00:00:26.290 --> 00:00:29.551
+Every number on this page belongs to that period.
+
+p10
+00:00:29.551 --> 00:00:33.520
+Anchor here before you quote a single figure to a client.
+
+p11
+00:00:33.983 --> 00:00:35.292
+Now the four tiles.
+
+p12
+00:00:36.060 --> 00:00:37.362
+Two of them are spend: what texting cost this period, and what email cost.
+
+p13
+00:00:37.907 --> 00:00:40.898
+The other two are volume, each with a delivered percentage beside it.
+
+p14
+00:00:41.693 --> 00:00:45.370
+Cost on the left, activity on the right.
+
+p15
+00:00:46.105 --> 00:00:50.476
+That's the whole bill at a glance.
+
+p16
+00:00:50.955 --> 00:00:52.768
+Under the band, six tabs.
+
+p17
+00:00:53.689 --> 00:00:56.232
+Overview is the summary, and it's open now.
+
+p18
+00:00:56.477 --> 00:00:58.372
+The rest drill into one thing each: text detail, email detail, invoices,
+
+p19
+00:00:58.769 --> 00:00:59.651
+the rate card, and spending alerts.
+
+p20
+00:00:59.886 --> 00:01:00.844
+Notice the badge on Invoices.
+
+p21
+00:01:01.056 --> 00:01:03.959
+One open.
+
+p22
+00:01:04.498 --> 00:01:09.963
+That's a client's actual bill, waiting.
+
+p23
+00:01:10.400 --> 00:01:13.264
+Start with the left panel, Monthly Usage Cost.
+
+p24
+00:01:13.800 --> 00:01:18.037
+Stacked bars show combined text and email spend by month, back through November.
+
+p25
+00:01:18.749 --> 00:01:20.509
+The current month carries an asterisk: estimated, month not complete.
+
+p26
+00:01:20.811 --> 00:01:22.661
+Never quote May as final until it closes.
+
+p27
+00:01:23.152 --> 00:01:25.661
+And one caption quirk: the subtitle says six months, but seven bars render.
+
+p28
+00:01:26.266 --> 00:01:32.079
+Count the bars.
+
+p29
+00:01:32.480 --> 00:01:35.966
+The right panel is the one to learn: Usage by Source.
+
+p30
+00:01:36.608 --> 00:01:43.842
+Every row is one campaign, automation, or transactional stream,
+
+p31
+00:01:44.420 --> 00:01:47.352
+with its volume, its cost, and a share bar ranking it.
+
+p32
+00:01:47.620 --> 00:01:48.800
+This table answers the most common billing call there is: why did my bill move?
+
+p33
+00:01:49.200 --> 00:01:51.284
+Read the rows top down.
+
+p34
+00:01:51.284 --> 00:01:56.766
+This period, the Enth Wash Rewards automation is the biggest line at nearly thirty two dollars,
+
+p35
+00:01:56.766 --> 00:01:59.849
+ahead of the membership drive and the win-back campaigns.
+
+p36
+00:01:59.849 --> 00:02:01.229
+Receipts barely register.
+
+p37
+00:02:01.229 --> 00:02:07.165
+One row usually explains the whole swing, and the share bars point you straight at it.
+
+p38
+00:02:07.600 --> 00:02:09.543
+Scroll to the Year to Date Summary.
+
+p39
+00:02:10.315 --> 00:02:13.140
+Platform fees, text and email cost for the year, total billed, and total paid,
+
+p40
+00:02:13.446 --> 00:02:15.319
+with a checkmark reading current.
+
+p41
+00:02:15.579 --> 00:02:17.180
+Billed equals paid, so this account is square.
+
+p42
+00:02:17.846 --> 00:02:20.788
+There's an export control on this panel.
+
+p43
+00:02:21.411 --> 00:02:26.177
+Leave it alone; nothing exports in this walk.
+
+p44
+00:02:26.640 --> 00:02:27.885
+Now walk the tabs.
+
+p45
+00:02:28.323 --> 00:02:30.153
+Click S-M-S Usage.
+
+p46
+00:02:30.734 --> 00:02:33.289
+This is the detail behind the period's texting spend:
+
+p47
+00:02:33.686 --> 00:02:38.487
+one row per send batch, with its recipients, deliveries, failures, and cost.
+
+p48
+00:02:39.076 --> 00:02:41.722
+When a client asks whether a text actually went out,
+
+p49
+00:02:41.976 --> 00:02:44.454
+the failed column against delivered is your answer.
+
+p50
+00:02:44.880 --> 00:02:45.362
+Next, Email Usage.
+
+p51
+00:02:45.657 --> 00:02:46.643
+Same log for the email channel, with bounces in place of failures.
+
+p52
+00:02:47.165 --> 00:02:55.964
+Receipts show up here too, tagged transactional, at a fraction of a cent each.
+
+p53
+00:02:56.474 --> 00:02:59.031
+Click Invoices, the tab with the badge.
+
+p54
+00:02:59.741 --> 00:03:03.553
+Usage explains the charges; this tab holds the bill itself.
+
+p55
+00:03:04.313 --> 00:03:07.953
+When a client wants the document rather than the why, send them here.
+
+p56
+00:03:08.700 --> 00:03:10.914
+One invoice sits open in this period.
+
+p57
+00:03:11.520 --> 00:03:12.752
+Rate Card next.
+
+p58
+00:03:13.248 --> 00:03:15.855
+The multiplier that turns volume into spend:
+
+p59
+00:03:16.312 --> 00:03:21.766
+two and a half cents a text, a fraction of a cent an email, and failed sends are never billed.
+
+p60
+00:03:22.298 --> 00:03:23.665
+And Spending Alerts.
+
+p61
+00:03:24.411 --> 00:03:29.553
+Thresholds that warn before messaging spend runs away,
+
+p62
+00:03:29.908 --> 00:03:33.235
+with an early warning at eighty percent and a per-campaign cap that pauses sends over budget.
+
+p63
+00:03:33.862 --> 00:03:36.240
+Worth knowing when a client is surprised by a bill.
+
+p64
+00:03:36.640 --> 00:03:37.657
+Back to Overview.
+
+p65
+00:03:38.451 --> 00:03:40.549
+Two questions cover most billing calls.
+
+p66
+00:03:40.996 --> 00:03:42.033
+Why did the bill move?
+
+p67
+00:03:42.361 --> 00:03:43.458
+Usage by Source, top row first.
+
+p68
+00:03:43.760 --> 00:03:44.818
+Where's the bill itself?
+
+p69
+00:03:45.584 --> 00:03:46.631
+The Invoices tab, badged one open.
+
+p70
+00:03:46.994 --> 00:03:49.579
+Read the period line, respect the asterisk, and never touch the export.
+
+p71
+00:03:50.202 --> 00:03:56.070
+That's the whole page.
+

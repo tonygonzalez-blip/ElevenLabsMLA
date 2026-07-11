@@ -1,0 +1,2253 @@
+{
+  "lesson": "WC-11-01",
+  "title": "Billing: Usage & Billing (read-only tour)",
+  "audioMaster": "training/module11-billing/WC-11-01-full-narration-v1.0.mp3",
+  "audioDurationS": 236.513,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/billing-usage.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-11-01-usage-billing-v1.1",
+  "targets": {
+    "railPanelToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideBilling": {
+      "selector": "aside.sidebar a[href=\"billing-usage.html\"]"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "periodBar": {
+      "selector": ".bill-period-bar"
+    },
+    "periodLabel": {
+      "js": "document.querySelector('.bill-period-label')",
+      "textRect": true
+    },
+    "periodMeta": {
+      "js": "document.querySelector('.bill-period-meta')",
+      "textRect": true
+    },
+    "kpiBand": {
+      "js": "[...document.querySelectorAll('.a-metrics')].find(b=>/SMS Usage/.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "kpiSms": {
+      "js": "(()=>{const b=document.querySelector('.a-metrics');return b?[...b.querySelectorAll('.a-metric')].find(e=>/SMS Usage/.test(e.textContent||'')&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "kpiEmail": {
+      "js": "(()=>{const b=document.querySelector('.a-metrics');return b?[...b.querySelectorAll('.a-metric')].find(e=>/Email Usage/.test(e.textContent||'')&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "kpiSmsSent": {
+      "js": "(()=>{const b=document.querySelector('.a-metrics');return b?[...b.querySelectorAll('.a-metric')].find(e=>/SMS Sent/.test(e.textContent||'')&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "kpiEmailsSent": {
+      "js": "(()=>{const b=document.querySelector('.a-metrics');return b?[...b.querySelectorAll('.a-metric')].find(e=>/Emails Sent/.test(e.textContent||'')&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "tabNav": {
+      "selector": ".a-tab-nav"
+    },
+    "tabOverview": {
+      "js": "document.querySelector('.a-tab-nav button[data-tab=overview]')"
+    },
+    "tabSms": {
+      "js": "document.querySelector('.a-tab-nav button[data-tab=sms]')"
+    },
+    "tabEmail": {
+      "js": "document.querySelector('.a-tab-nav button[data-tab=email]')"
+    },
+    "tabInvoices": {
+      "js": "document.querySelector('.a-tab-nav button[data-tab=invoices]')"
+    },
+    "tabRates": {
+      "js": "document.querySelector('.a-tab-nav button[data-tab=rates]')"
+    },
+    "tabAlerts": {
+      "js": "document.querySelector('.a-tab-nav button[data-tab=alerts]')"
+    },
+    "mcCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Monthly Usage Cost/.test(c.textContent||''))"
+    },
+    "mcSub": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Monthly Usage Cost/.test(c.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&/Last 6 months/.test(e.textContent||'')):null})()"
+    },
+    "mcNote": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Monthly Usage Cost/.test(c.textContent||''));return c?[...c.querySelectorAll('*')].find(e=>e.children.length===0&&/Estimated, month not complete/.test(e.textContent||'')):null})()"
+    },
+    "ucCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Usage by Source/.test(c.textContent||''))"
+    },
+    "ucHead": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Usage by Source/.test(c.textContent||''));return c?c.querySelector('table thead tr'):null})()"
+    },
+    "nthRow": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Usage by Source/.test(c.textContent||''));return c?[...c.querySelectorAll('table tbody tr')].find(tr=>/Nth Wash Rewards/.test(tr.textContent||'')):null})()"
+    },
+    "ytdPaid": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Paid YTD/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ytdRange": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/Jan\\s*[\\u2013-]\\s*May 2026/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "ytdExport": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export CSV$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "smsExport": {
+      "js": "(()=>{const p=document.getElementById('tab-sms');return p?[...p.querySelectorAll('button,a')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "smsHeadline": {
+      "js": "(()=>{const p=document.getElementById('tab-sms');return p?[...p.querySelectorAll('*')].find(e=>e.children.length===0&&/1,847 messages/.test(e.textContent||'')):null})()"
+    },
+    "smsThDelivered": {
+      "js": "(()=>{const p=document.getElementById('tab-sms');return p?[...p.querySelectorAll('table thead th')].find(e=>/^Delivered$/i.test((e.textContent||'').trim())):null})()"
+    },
+    "smsThFailed": {
+      "js": "(()=>{const p=document.getElementById('tab-sms');return p?[...p.querySelectorAll('table thead th')].find(e=>/^Failed$/i.test((e.textContent||'').trim())):null})()"
+    },
+    "emailExport": {
+      "js": "(()=>{const p=document.getElementById('tab-email');return p?[...p.querySelectorAll('button,a')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "emailHeadline": {
+      "js": "(()=>{const p=document.getElementById('tab-email');return p?[...p.querySelectorAll('*')].find(e=>e.children.length===0&&/42,350 emails/.test(e.textContent||'')):null})()"
+    },
+    "emailTransRow": {
+      "js": "(()=>{const p=document.getElementById('tab-email');return p?[...p.querySelectorAll('table tbody tr')].find(tr=>/Transactional/.test(tr.textContent||'')&&/Member Receipts/.test(tr.textContent||'')):null})()"
+    },
+    "emailThBounced": {
+      "js": "(()=>{const p=document.getElementById('tab-email');return p?[...p.querySelectorAll('table thead th')].find(e=>/^Bounced$/i.test((e.textContent||'').trim())):null})()"
+    },
+    "invBanner": {
+      "js": "(()=>{const p=document.getElementById('tab-invoices');return p?[...p.querySelectorAll('*')].find(e=>/INV-2026-04/.test(e.textContent||'')&&/is due/.test(e.textContent||'')&&e.getBoundingClientRect().width>400&&e.getBoundingClientRect().width<1700&&e.children.length<=6):null})()"
+    },
+    "invPayNow": {
+      "js": "(()=>{const p=document.getElementById('tab-invoices');return p?[...p.querySelectorAll('button,a')].find(e=>/^Pay Now$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "invDownloadPdf": {
+      "js": "(()=>{const p=document.getElementById('tab-invoices');return p?[...p.querySelectorAll('button,a')].find(e=>/^Download PDF$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "invExportAll": {
+      "js": "(()=>{const p=document.getElementById('tab-invoices');return p?[...p.querySelectorAll('button,a')].find(e=>/^Export All$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "invOpenRow": {
+      "js": "(()=>{const p=document.getElementById('tab-invoices');return p?[...p.querySelectorAll('table tbody tr')].find(tr=>/INV-2026-04/.test(tr.textContent||'')):null})()"
+    },
+    "invOpenStatus": {
+      "js": "(()=>{const p=document.getElementById('tab-invoices');return p?(()=>{const tr=[...p.querySelectorAll('table tbody tr')].find(t=>/INV-2026-04/.test(t.textContent||''));return tr?[...tr.querySelectorAll('td')].find(td=>/Open/.test(td.textContent||'')):null})():null})()"
+    },
+    "rateSms": {
+      "js": "(()=>{const p=document.getElementById('tab-rates');return p?[...p.querySelectorAll('*')].find(e=>/SMS\\s*[\\u2014-]?\\s*Outbound/i.test(e.textContent||'')&&!!e.querySelector('button')&&e.getBoundingClientRect().width>200&&e.getBoundingClientRect().width<700&&e.getBoundingClientRect().height>120):null})()"
+    },
+    "rateEmail": {
+      "js": "(()=>{const p=document.getElementById('tab-rates');return p?[...p.querySelectorAll('*')].find(e=>/EMAIL\\s*[\\u2014-]?\\s*Outbound/i.test(e.textContent||'')&&!!e.querySelector('button')&&e.getBoundingClientRect().width>200&&e.getBoundingClientRect().width<700&&e.getBoundingClientRect().height>120):null})()"
+    },
+    "rateUpdateSms": {
+      "js": "(()=>{const p=document.getElementById('tab-rates');return p?(()=>{const c=[...p.querySelectorAll('*')].find(e=>/SMS\\s*[\\u2014-]?\\s*Outbound/i.test(e.textContent||'')&&!!e.querySelector('button')&&e.getBoundingClientRect().width>200&&e.getBoundingClientRect().width<700&&e.getBoundingClientRect().height>120);return c?[...c.querySelectorAll('button')].find(b=>/Update Rate/i.test(b.textContent||'')):null})():null})()"
+    },
+    "rateUpdateEmail": {
+      "js": "(()=>{const p=document.getElementById('tab-rates');return p?(()=>{const c=[...p.querySelectorAll('*')].find(e=>/EMAIL\\s*[\\u2014-]?\\s*Outbound/i.test(e.textContent||'')&&!!e.querySelector('button')&&e.getBoundingClientRect().width>200&&e.getBoundingClientRect().width<700&&e.getBoundingClientRect().height>120);return c?[...c.querySelectorAll('button')].find(b=>/Update Rate/i.test(b.textContent||'')):null})():null})()"
+    },
+    "rateSave": {
+      "js": "(()=>{const p=document.getElementById('tab-rates');return p?[...p.querySelectorAll('button')].find(e=>/^Save Changes$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "alertCard": {
+      "js": "(()=>{const p=document.getElementById('tab-alerts');return p?[...p.querySelectorAll('*')].find(e=>e.children.length===0&&/Spending Alert Configuration/i.test(e.textContent||'')):null})()"
+    },
+    "alertPreWarn": {
+      "js": "(()=>{const p=document.getElementById('tab-alerts');return p?[...p.querySelectorAll('*')].find(e=>/80%\\s*Threshold Pre-Warning/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().width<900):null})()"
+    },
+    "alertPreToggle": {
+      "js": "(()=>{const p=document.getElementById('tab-alerts');return p?(()=>{const r=[...p.querySelectorAll('*')].find(e=>/80%\\s*Threshold Pre-Warning/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().width<900);return r?(r.querySelector('input[type=checkbox],.toggle')||r.parentElement.querySelector('input[type=checkbox],.toggle')):null})():null})()"
+    },
+    "alertSave": {
+      "js": "(()=>{const p=document.getElementById('tab-alerts');return p?[...p.querySelectorAll('button')].find(e=>/^Save Alerts$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0):null})()"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onBilling": "location.pathname.endsWith('/billing-usage.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar,.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "billingActive": "!!document.querySelector('aside.sidebar a[href=\"billing-usage.html\"].active')",
+    "billingIntact": "(()=>{const inv=document.querySelector('.a-tab-nav button[data-tab=invoices]');const b=document.querySelector('.a-metrics');const per=document.querySelector('.bill-period-label');return !!inv&&/1\\s*open/i.test(inv.textContent||'')&&!!b&&/\\$46\\.18/.test(b.textContent||'')&&/\\$33\\.88/.test(b.textContent||'')&&!!per&&/May 2026/.test(per.textContent||'')})()",
+    "overviewLoaded": "(()=>{const ov=document.getElementById('tab-overview');const b=document.querySelector('.a-metrics');const topN=b?[...b.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length:0;const tabs=[...document.querySelectorAll('.a-tab-nav button.a-tab-btn')];const cards=[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/billing-usage.html')&&!!ov&&ov.classList.contains('active')&&tabs.length===6&&topN===4&&cards.length===2&&/Usage by Source/.test(document.body.textContent||'')&&/Paid YTD/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "overviewActive": "(()=>{const b=document.querySelector('.a-tab-nav button[data-tab=overview]');const p=document.getElementById('tab-overview');return !!b&&b.classList.contains('active')&&!!p&&p.classList.contains('active')})()",
+    "smsActive": "(()=>{const b=document.querySelector('.a-tab-nav button[data-tab=sms]');const p=document.getElementById('tab-sms');return !!b&&b.classList.contains('active')&&!!p&&p.classList.contains('active')})()",
+    "emailActive": "(()=>{const b=document.querySelector('.a-tab-nav button[data-tab=email]');const p=document.getElementById('tab-email');return !!b&&b.classList.contains('active')&&!!p&&p.classList.contains('active')})()",
+    "invoicesActive": "(()=>{const b=document.querySelector('.a-tab-nav button[data-tab=invoices]');const p=document.getElementById('tab-invoices');return !!b&&b.classList.contains('active')&&!!p&&p.classList.contains('active')})()",
+    "ratesActive": "(()=>{const b=document.querySelector('.a-tab-nav button[data-tab=rates]');const p=document.getElementById('tab-rates');return !!b&&b.classList.contains('active')&&!!p&&p.classList.contains('active')})()",
+    "alertsActive": "(()=>{const b=document.querySelector('.a-tab-nav button[data-tab=alerts]');const p=document.getElementById('tab-alerts');return !!b&&b.classList.contains('active')&&!!p&&p.classList.contains('active')})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railPanelToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar panel expanded so step 1's active Billing > Usage & Billing link reads with a label. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: 'Hide panel' expanded at aside width 220 with the active 'Usage & Billing' link at x102 w203; 'Show panel' collapsed at aside width 1). Skipped when already expanded. This persisted preference drifts on the shared profile, so the pre-roll asserts abort a take that starts collapsed."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "predicate": "onBilling",
+      "note": "pre-roll: start page staged on billing-usage.html (startUrl)",
+      "at": -1.6
+    },
+    {
+      "op": "assert",
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight left the Billing sidebar panel expanded so the active Usage & Billing link reads with a label; abort the take if collapsed",
+      "at": -1.2
+    },
+    {
+      "op": "assert",
+      "predicate": "billingActive",
+      "note": "pre-roll: the Usage & Billing sidebar link is the active item",
+      "at": -0.8
+    },
+    {
+      "op": "assert",
+      "predicate": "overviewLoaded",
+      "note": "pre-roll load check: Overview active, 4 KPI tiles, 2 chart cards, 6 tabs, YTD present, Invoices badged 1 open, no agent-service error",
+      "at": -0.5
+    },
+    {
+      "op": "watch",
+      "key": "onBillingHeld",
+      "from": 1,
+      "to": 235.5,
+      "predicate": "onBilling",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "read-only tour: the URL never changes across all 14 steps. The only clicks are the six pure client-side tab switches (verified in the page inline script: the .a-tab-btn handler only removes/adds the 'active' class on the button and its #tab-<key> panel — no fetch, XHR, localStorage, or form submit). Every money control (Export CSV, Export, Pay Now, Download PDF, Export All, PDF, Update Rate, Save Changes, Save Alerts, the pre-warning toggle) is pointed at / red-guardrailed, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 235.5,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true
+    },
+    {
+      "op": "watch",
+      "key": "billingIntact",
+      "from": 2,
+      "to": 235,
+      "predicate": "billingIntact",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "mutation guardrail: the Invoices tab keeps its '1 open' badge, the KPI band keeps $46.18 SMS / $33.88 Email, and the period stays 'May 2026' for the whole lesson — proves nothing was paid, exported, saved, or otherwise changed. Probe-verified July 11: the top band + invoice badge are byte-identical before and after walking all five detail tabs (INTEGRITY MATCH true)."
+    },
+    {
+      "op": "pointer-enter",
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "point": [
+          720,
+          520
+        ]
+      },
+      "note": "step 1 (p01 intro): cursor enters low-left and drifts over the page while 'Messaging costs money' is spoken — no action yet",
+      "at": 0.35
+    },
+    {
+      "op": "log-rect",
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 200,
+      "at": 0.55
+    },
+    {
+      "op": "log-rect",
+      "key": "crumbStrongRect",
+      "target": "crumbStrong",
+      "at": 0.65
+    },
+    {
+      "op": "log-rect",
+      "key": "sideBillingRect",
+      "target": "sideBilling",
+      "at": 0.75
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          640,
+          430
+        ]
+      },
+      "note": "p01 tail: ease across the page",
+      "at": 2.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "sideBilling",
+        "offset": [
+          235,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 cue (p02) 'From the Billing area, open Usage and Billing' — rest BESIDE the active Usage & Billing sidebar link; it is a same-page href but never clicked (page already loaded via startUrl)",
+      "at": 4.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          40,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): up to the breadcrumb title 'Usage & Billing' (callout 1)",
+      "at": 7
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          820,
+          320
+        ]
+      },
+      "note": "step 1 (p04): ease onto the page — 'everything you need is here'",
+      "at": 10.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          900,
+          380
+        ]
+      },
+      "note": "step 1 (p05): drift for 'and all of it is read only'",
+      "at": 14.6
+    },
+    {
+      "op": "log-rect",
+      "key": "periodBarRect",
+      "target": "periodBar",
+      "requireStableMs": 160,
+      "at": 17.45
+    },
+    {
+      "op": "log-rect",
+      "key": "periodLabelRect",
+      "target": "periodLabel",
+      "at": 17.55
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "periodLabel",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 2 cue (p06) 'Read the line under the heading first'",
+      "at": 17.6
+    },
+    {
+      "op": "log-rect",
+      "key": "periodMetaRect",
+      "target": "periodMeta",
+      "at": 17.62
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "periodLabel",
+        "offset": [
+          40,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07): 'Current billing period, May 2026, with the date range'",
+      "at": 20.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "periodMeta",
+        "offset": [
+          40,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): the next invoice date and the days remaining",
+      "at": 23.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "periodMeta",
+        "offset": [
+          180,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p09): every number belongs to that period",
+      "at": 26.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          700,
+          300
+        ]
+      },
+      "note": "step 2 (p10): ease off — 'anchor here before you quote a figure'",
+      "at": 29.6
+    },
+    {
+      "op": "log-rect",
+      "key": "kpiBandRect",
+      "target": "kpiBand",
+      "requireStableMs": 160,
+      "at": 33.98
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiSms",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 cue (p11) 'Now the four tiles'",
+      "at": 34
+    },
+    {
+      "op": "log-rects",
+      "key": "kpiTiles",
+      "targets": [
+        "kpiSms",
+        "kpiEmail",
+        "kpiSmsSent",
+        "kpiEmailsSent"
+      ],
+      "at": 34.05
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiSms",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p12): spend — what texting cost this period",
+      "at": 36.05
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiEmail",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "p12: and what email cost",
+      "at": 37
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiSmsSent",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p13): volume — the other two",
+      "at": 37.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiEmailsSent",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "p13: each with a delivered percentage",
+      "at": 39.4
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiSms",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p14): 'Cost on the left'",
+      "at": 41.7
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiEmailsSent",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "p14: 'activity on the right'",
+      "at": 43.4
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1117,
+          320
+        ]
+      },
+      "note": "step 3 (p15): ease off — 'the whole bill at a glance'",
+      "at": 46.1
+    },
+    {
+      "op": "log-rect",
+      "key": "tabNavRect",
+      "target": "tabNav",
+      "requireStableMs": 160,
+      "at": 50.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 cue (p16) 'Under the band, six tabs'",
+      "at": 50.95
+    },
+    {
+      "op": "log-rect",
+      "key": "tabInvoicesRect",
+      "target": "tabInvoices",
+      "at": 50.98
+    },
+    {
+      "op": "log-rects",
+      "key": "tabAll",
+      "targets": [
+        "tabOverview",
+        "tabSms",
+        "tabEmail",
+        "tabInvoices",
+        "tabRates",
+        "tabAlerts"
+      ],
+      "at": 51.05
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p17): 'Overview is the summary, and it's open now'",
+      "at": 53.7
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabSms",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p18): text detail, email detail, invoices",
+      "at": 56.5
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabEmail",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p18: email detail",
+      "at": 57.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p18: invoices",
+      "at": 57.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabRates",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p19): the rate card",
+      "at": 58.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabAlerts",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p19: and spending alerts",
+      "at": 59.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p20-p21): 'Notice the badge on Invoices. One open.' — point beside the badged Invoices tab, never clicked",
+      "at": 59.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p22): 'That's a client's actual bill, waiting'",
+      "at": 64.5
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1117,
+          300
+        ]
+      },
+      "note": "step 4: ease off the tab bar",
+      "at": 67.5
+    },
+    {
+      "op": "log-rect",
+      "key": "mcCardRect",
+      "target": "mcCard",
+      "requireStableMs": 160,
+      "at": 70.45
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "mcCard",
+        "offset": [
+          0,
+          -20
+        ]
+      },
+      "note": "step 5 cue (p23) 'Start with the left panel, Monthly Usage Cost'",
+      "at": 70.5
+    },
+    {
+      "op": "log-rect",
+      "key": "mcSubRect",
+      "target": "mcSub",
+      "at": 70.55
+    },
+    {
+      "op": "log-rect",
+      "key": "mcNoteRect",
+      "target": "mcNote",
+      "at": 70.62
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "mcCard",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 5 (p24): stacked bars by month, back through November",
+      "at": 73.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "mcNote",
+        "offset": [
+          0,
+          -8
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p25): the May bar's asterisk — estimated, month not complete",
+      "at": 78.75
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "mcNote",
+        "offset": [
+          0,
+          -8
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p26): never quote May as final until it closes",
+      "at": 80.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "mcSub",
+        "offset": [
+          0,
+          -6
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): the subtitle says six months, but seven bars render",
+      "at": 83.15
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "mcCard",
+        "offset": [
+          40,
+          60
+        ]
+      },
+      "note": "step 5 (p28): 'Count the bars'",
+      "at": 86.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          640,
+          300
+        ]
+      },
+      "note": "step 5: ease off the panel",
+      "at": 89.5
+    },
+    {
+      "op": "log-rect",
+      "key": "ucCardRect",
+      "target": "ucCard",
+      "requireStableMs": 160,
+      "at": 92.55
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucCard",
+        "offset": [
+          0,
+          -20
+        ]
+      },
+      "note": "step 6 cue (p29) 'The right panel is the one to learn: Usage by Source'",
+      "at": 92.55
+    },
+    {
+      "op": "log-rect",
+      "key": "ucHeadRect",
+      "target": "ucHead",
+      "at": 92.62
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucHead",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p30): every row is one campaign, automation, or transactional stream",
+      "at": 96.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucHead",
+        "offset": [
+          520,
+          0
+        ]
+      },
+      "note": "step 6 (p31): its volume, its cost, and a share bar ranking it",
+      "at": 100.5
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucCard",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 6 (p32): 'the most common billing call there is: why did my bill move?'",
+      "at": 104.4
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1400,
+          300
+        ]
+      },
+      "note": "step 6: ease",
+      "at": 107.7
+    },
+    {
+      "op": "log-rect",
+      "key": "nthRowRect",
+      "target": "nthRow",
+      "at": 109.25
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucCard",
+        "offset": [
+          0,
+          90
+        ]
+      },
+      "note": "step 7 cue (p33) 'Read the rows top down'",
+      "at": 109.25
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "nthRow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p34): 'the Enth Wash Rewards automation is the biggest line at nearly thirty two dollars'",
+      "at": 111.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "nthRow",
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "note": "step 7 (p35): ahead of the membership drive and the win-back campaigns",
+      "at": 116.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucCard",
+        "offset": [
+          40,
+          240
+        ]
+      },
+      "note": "step 7 (p36): 'Receipts barely register'",
+      "at": 119.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "nthRow",
+        "offset": [
+          720,
+          0
+        ]
+      },
+      "note": "step 7 (p37): the share bars point you straight at the row",
+      "at": 121.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1400,
+          430
+        ]
+      },
+      "note": "step 7: ease",
+      "at": 125
+    },
+    {
+      "op": "log-rect",
+      "key": "ytdPaidRect",
+      "target": "ytdPaid",
+      "at": 127.65
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ytdRange",
+        "offset": [
+          80,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 8 cue (p38) 'Scroll to the Year to Date Summary' (the panel is already in view within 1080; the cursor moves down to it — see residual R2)",
+      "at": 127.65
+    },
+    {
+      "op": "log-rect",
+      "key": "ytdRangeRect",
+      "target": "ytdRange",
+      "at": 127.72
+    },
+    {
+      "op": "log-rect",
+      "key": "ytdExportRect",
+      "target": "ytdExport",
+      "at": 127.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ytdPaid",
+        "offset": [
+          -900,
+          0
+        ]
+      },
+      "note": "step 8 (p39): platform fees, text and email cost, total billed and total paid",
+      "at": 130.3
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ytdPaid",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p40-p41): the checkmark reading current — billed equals paid, the account is square",
+      "at": 133.5
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ytdExport",
+        "offset": [
+          -60,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p42) guardrail: 'There's an export control on this panel' — approach BESIDE Export CSV, never onto it (red do-not-click ring)",
+      "at": 137.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ytdExport",
+        "offset": [
+          -60,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p43): 'Leave it alone; nothing exports in this walk'",
+      "at": 141.4
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1000,
+          300
+        ]
+      },
+      "note": "step 8: ease off, having never touched the export",
+      "at": 144.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabSms",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 cue (p44-p45) 'Now walk the tabs. Click S-M-S Usage.' — travel to the SMS Usage tab",
+      "at": 146.75
+    },
+    {
+      "op": "log-rect",
+      "key": "tabSmsRect",
+      "target": "tabSms",
+      "at": 147.6
+    },
+    {
+      "op": "click",
+      "target": "tabSms",
+      "pressAt": 150.35,
+      "hoverMs": 380,
+      "postcondition": "smsActive",
+      "timeoutMs": 4000,
+      "note": "step 9: click the SMS Usage tab. VERIFIED PURE VIEW SWITCH (inline .a-tab-btn handler toggles the 'active' class on the button + #tab-sms panel only; no network write). Press inside the p45->p46 gap (cue ends 150.15, p46 starts 150.73). Nothing is fetched, saved, or sent.",
+      "at": 150.35
+    },
+    {
+      "op": "log-rect",
+      "key": "smsPanelReady",
+      "target": "smsHeadline",
+      "at": 150.75
+    },
+    {
+      "op": "log-rect",
+      "key": "smsThDeliveredRect",
+      "target": "smsThDelivered",
+      "at": 150.82
+    },
+    {
+      "op": "log-rect",
+      "key": "smsThFailedRect",
+      "target": "smsThFailed",
+      "at": 150.89
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "smsHeadline",
+        "offset": [
+          40,
+          20
+        ]
+      },
+      "note": "step 9 (p46): 'the detail behind the period's texting spend' — the SMS Log, 1,847 messages",
+      "at": 150.9
+    },
+    {
+      "op": "log-rect",
+      "key": "smsExportRect",
+      "target": "smsExport",
+      "at": 150.96
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "smsThDelivered",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 9 (p47): one row per send batch — recipients, deliveries, failures, and cost",
+      "at": 153.7
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "smsThFailed",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 9 (p48-p49): 'the failed column against delivered is your answer'",
+      "at": 159.1
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "smsThDelivered",
+        "offset": [
+          0,
+          60
+        ]
+      },
+      "note": "step 9: rest between Delivered and Failed",
+      "at": 162.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabEmail",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 cue (p50) 'Next, Email Usage' — travel to the Email Usage tab",
+      "at": 164.9
+    },
+    {
+      "op": "click",
+      "target": "tabEmail",
+      "pressAt": 165.48,
+      "hoverMs": 300,
+      "postcondition": "emailActive",
+      "timeoutMs": 4000,
+      "note": "step 10: click the Email Usage tab — same verified-pure client-side switch (#tab-email). Press inside the p50->p51 gap (cue ends 165.36, p51 starts 165.66).",
+      "at": 165.48
+    },
+    {
+      "op": "log-rect",
+      "key": "emailPanelReady",
+      "target": "emailHeadline",
+      "at": 165.7
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "emailThBounced",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 10 (p51): same log for the email channel, with bounces in place of failures",
+      "at": 165.75
+    },
+    {
+      "op": "log-rect",
+      "key": "emailThBouncedRect",
+      "target": "emailThBounced",
+      "at": 165.78
+    },
+    {
+      "op": "log-rect",
+      "key": "emailTransRowRect",
+      "target": "emailTransRow",
+      "at": 165.85
+    },
+    {
+      "op": "log-rect",
+      "key": "emailExportRect",
+      "target": "emailExport",
+      "at": 165.92
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "emailTransRow",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 10 (p52): 'Receipts show up here too, tagged transactional' — the Member Receipts row ($0.25)",
+      "at": 167.2
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "emailTransRow",
+        "offset": [
+          420,
+          0
+        ]
+      },
+      "note": "step 10 (p52): a fraction of a cent each",
+      "at": 172
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 cue (p53) 'Click Invoices, the tab with the badge' — travel to the Invoices tab",
+      "at": 176.5
+    },
+    {
+      "op": "click",
+      "target": "tabInvoices",
+      "pressAt": 179.35,
+      "hoverMs": 360,
+      "postcondition": "invoicesActive",
+      "timeoutMs": 4000,
+      "note": "step 11: click the Invoices tab — verified-pure client-side switch (#tab-invoices). Press inside the p53->p54 gap (cue ends 179.03, p54 starts 179.74). No invoice is opened, paid, downloaded, or approved.",
+      "at": 179.35
+    },
+    {
+      "op": "log-rect",
+      "key": "invBannerRect",
+      "target": "invBanner",
+      "at": 179.7
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "invBanner",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p54): 'this tab holds the bill itself' — the due-invoice banner (INV-2026-04, $542.30)",
+      "at": 179.75
+    },
+    {
+      "op": "log-rect",
+      "key": "invOpenRowRect",
+      "target": "invOpenRow",
+      "at": 179.78
+    },
+    {
+      "op": "log-rect",
+      "key": "invOpenStatusRect",
+      "target": "invOpenStatus",
+      "at": 179.85
+    },
+    {
+      "op": "log-rect",
+      "key": "invPayNowRect",
+      "target": "invPayNow",
+      "at": 179.92
+    },
+    {
+      "op": "log-rect",
+      "key": "invDownloadPdfRect",
+      "target": "invDownloadPdf",
+      "at": 179.98
+    },
+    {
+      "op": "log-rect",
+      "key": "invExportAllRect",
+      "target": "invExportAll",
+      "at": 180.04
+    },
+    {
+      "op": "log-rect",
+      "key": "tabInvoicesRect2",
+      "target": "tabInvoices",
+      "at": 180.1
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "invPayNow",
+        "offset": [
+          -40,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p55) guardrail: point BESIDE Pay Now and Download PDF — money controls, never pressed (red do-not-click rings)",
+      "at": 183.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "invOpenRow",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 11 (p56): 'One invoice sits open in this period' — the INV-2026-04 ● Open row",
+      "at": 186.5
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "invOpenStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p56): the ● Open status chip",
+      "at": 189
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabRates",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 cue (p57) 'Rate Card next' — travel to the Rate Card tab",
+      "at": 191.6
+    },
+    {
+      "op": "click",
+      "target": "tabRates",
+      "pressAt": 193,
+      "hoverMs": 360,
+      "postcondition": "ratesActive",
+      "timeoutMs": 4000,
+      "note": "step 12: click the Rate Card tab — verified-pure client-side switch (#tab-rates). Press inside the p57->p58 gap (cue ends 192.75, p58 starts 193.25). No rate is edited or saved.",
+      "at": 193
+    },
+    {
+      "op": "log-rect",
+      "key": "rateSmsRect",
+      "target": "rateSms",
+      "at": 193.35
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "rateSms",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 12 (p58) 'The multiplier that turns volume into spend'",
+      "at": 193.4
+    },
+    {
+      "op": "log-rect",
+      "key": "rateEmailRect",
+      "target": "rateEmail",
+      "at": 193.42
+    },
+    {
+      "op": "log-rect",
+      "key": "rateUpdateSmsRect",
+      "target": "rateUpdateSms",
+      "at": 193.49
+    },
+    {
+      "op": "log-rect",
+      "key": "rateUpdateEmailRect",
+      "target": "rateUpdateEmail",
+      "at": 193.56
+    },
+    {
+      "op": "log-rect",
+      "key": "rateSaveRect",
+      "target": "rateSave",
+      "at": 193.63
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "rateSms",
+        "offset": [
+          0,
+          60
+        ]
+      },
+      "note": "step 12 (p59): two and a half cents a text",
+      "at": 196.4
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "rateEmail",
+        "offset": [
+          0,
+          60
+        ]
+      },
+      "note": "step 12 (p59): a fraction of a cent an email, and failed sends are never billed",
+      "at": 198.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabAlerts",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13 cue (p60) 'And Spending Alerts' — travel to the Spending Alerts tab",
+      "at": 202.35
+    },
+    {
+      "op": "click",
+      "target": "tabAlerts",
+      "pressAt": 203.95,
+      "hoverMs": 360,
+      "postcondition": "alertsActive",
+      "timeoutMs": 4000,
+      "note": "step 13: click the Spending Alerts tab — verified-pure client-side switch (#tab-alerts). Press inside the p60->p61 gap (cue ends 203.66, p61 starts 204.41). Nothing is toggled or saved.",
+      "at": 203.95
+    },
+    {
+      "op": "log-rect",
+      "key": "alertCardRect",
+      "target": "alertCard",
+      "at": 204.3
+    },
+    {
+      "op": "log-rect",
+      "key": "alertPreWarnRect",
+      "target": "alertPreWarn",
+      "at": 204.37
+    },
+    {
+      "op": "log-rect",
+      "key": "alertPreToggleRect",
+      "target": "alertPreToggle",
+      "at": 204.44
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "alertCard",
+        "offset": [
+          40,
+          20
+        ]
+      },
+      "note": "step 13 (p61): thresholds that warn before messaging spend runs away",
+      "at": 204.45
+    },
+    {
+      "op": "log-rect",
+      "key": "alertSaveRect",
+      "target": "alertSave",
+      "at": 204.51
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "alertPreWarn",
+        "offset": [
+          0,
+          6
+        ]
+      },
+      "note": "step 13 (p62): the early warning at eighty percent and a per-campaign cap that pauses sends over budget",
+      "at": 209.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "alertPreWarn",
+        "offset": [
+          200,
+          6
+        ]
+      },
+      "note": "step 13 (p63): 'Worth knowing when a client is surprised by a bill'",
+      "at": 213.9
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 cue (p64) 'Back to Overview' — travel to the Overview tab",
+      "at": 216.75
+    },
+    {
+      "op": "click",
+      "target": "tabOverview",
+      "pressAt": 217.95,
+      "hoverMs": 360,
+      "postcondition": "overviewActive",
+      "timeoutMs": 4000,
+      "note": "step 14: click the Overview tab — verified-pure client-side switch back (#tab-overview). Press inside the p64->p65 gap (cue ends 217.66, p65 starts 218.45). The summary returns exactly as it was.",
+      "at": 217.95
+    },
+    {
+      "op": "log-rect",
+      "key": "ucCardRect2",
+      "target": "ucCard",
+      "requireStableMs": 160,
+      "at": 218.3
+    },
+    {
+      "op": "log-rect",
+      "key": "nthRowRect2",
+      "target": "nthRow",
+      "at": 218.4
+    },
+    {
+      "op": "log-rect",
+      "key": "tabInvoicesRect3",
+      "target": "tabInvoices",
+      "at": 218.5
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "kpiBand",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 14 (p65): 'Two questions cover most billing calls'",
+      "at": 218.5
+    },
+    {
+      "op": "log-rect",
+      "key": "ytdExportRect2",
+      "target": "ytdExport",
+      "at": 218.6
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ucCard",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 (p66-p67): 'Why did the bill move? Usage by Source, top row first'",
+      "at": 221
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "nthRow",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 14 (p67): the top row of Usage by Source",
+      "at": 222.4
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p68-p69): 'Where's the bill itself? The Invoices tab, badged one open'",
+      "at": 223.8
+    },
+    {
+      "op": "move",
+      "to": {
+        "target": "ytdExport",
+        "offset": [
+          -60,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p70) guardrail: 'never touch the export' — point BESIDE Export CSV, red do-not-click ring, still never pressed",
+      "at": 226.99
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1000,
+          320
+        ]
+      },
+      "note": "step 14 (p71): 'That's the whole page' — ease toward a clean final park",
+      "at": 230.2
+    },
+    {
+      "op": "move",
+      "to": {
+        "point": [
+          1450,
+          900
+        ]
+      },
+      "note": "step 14: final park, clear of content and burned captions",
+      "at": 233.4
+    },
+    {
+      "op": "assert",
+      "predicate": "onBilling",
+      "note": "end: still on billing-usage.html, unchanged",
+      "at": 235.7
+    },
+    {
+      "op": "assert",
+      "predicate": "overviewActive",
+      "note": "end: returned to the Overview tab",
+      "at": 235.95
+    },
+    {
+      "op": "assert",
+      "predicate": "billingIntact",
+      "note": "end: Invoices still badged 1 open, KPI band and period unchanged — nothing paid, exported, saved, or sent",
+      "at": 236.15
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 1.2,
+        "to": 16.8
+      },
+      {
+        "n": 2,
+        "anchor": "periodMetaRect",
+        "place": "below-left",
+        "from": 17.65,
+        "to": 33.5
+      },
+      {
+        "n": 3,
+        "anchor": "kpiBandRect",
+        "place": "below-left",
+        "from": 34.01,
+        "to": 50.5
+      },
+      {
+        "n": 4,
+        "anchor": "tabNavRect",
+        "place": "below-left",
+        "from": 51,
+        "to": 69.9
+      },
+      {
+        "n": 5,
+        "anchor": "mcCardRect",
+        "place": "below-left",
+        "from": 70.5,
+        "to": 92
+      },
+      {
+        "n": 6,
+        "anchor": "ucHeadRect",
+        "place": "below-left",
+        "from": 92.65,
+        "to": 108.9
+      },
+      {
+        "n": 7,
+        "anchor": "nthRowRect",
+        "place": "left",
+        "from": 109.3,
+        "to": 127.3
+      },
+      {
+        "n": 8,
+        "anchor": "ytdPaidRect",
+        "place": "left-top",
+        "from": 127.7,
+        "to": 146.3
+      },
+      {
+        "n": 9,
+        "anchor": "smsThDeliveredRect",
+        "place": "below-left",
+        "from": 151,
+        "to": 164.6
+      },
+      {
+        "n": 10,
+        "anchor": "emailTransRowRect",
+        "place": "below-left",
+        "from": 165.9,
+        "to": 176.2
+      },
+      {
+        "n": 11,
+        "anchor": "invOpenRowRect",
+        "place": "left",
+        "from": 179.81,
+        "to": 191.3
+      },
+      {
+        "n": 12,
+        "anchor": "rateSmsRect",
+        "place": "below-left",
+        "from": 193.4,
+        "to": 202.1
+      },
+      {
+        "n": 13,
+        "anchor": "alertPreWarnRect",
+        "place": "left-top",
+        "from": 204.5,
+        "to": 216.4
+      },
+      {
+        "n": 14,
+        "anchor": "tabInvoicesRect3",
+        "place": "below-left",
+        "from": 218.6,
+        "to": 234.5
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideBillingRect",
+        "from": 4.6,
+        "to": 7,
+        "note": "step 1 (p02): the active Usage & Billing sidebar link (pointed at, never clicked)"
+      },
+      {
+        "anchor": "crumbStrongRect",
+        "from": 7,
+        "to": 11.5,
+        "note": "step 1 (p03): the Usage & Billing breadcrumb title"
+      },
+      {
+        "anchor": "kpiTiles.kpiSms",
+        "from": 36.05,
+        "to": 37,
+        "note": "step 3 (p12) spend: SMS Usage $46.18"
+      },
+      {
+        "anchor": "kpiTiles.kpiEmail",
+        "from": 37,
+        "to": 37.9,
+        "note": "p12 spend: Email Usage $33.88"
+      },
+      {
+        "anchor": "kpiTiles.kpiSmsSent",
+        "from": 37.9,
+        "to": 39.4,
+        "note": "step 3 (p13) volume: 1,847 SMS Sent · 98.1% delivered"
+      },
+      {
+        "anchor": "kpiTiles.kpiEmailsSent",
+        "from": 39.4,
+        "to": 41.7,
+        "note": "p13 volume: 42,350 Emails Sent · 99.1% delivered"
+      },
+      {
+        "anchor": "tabInvoicesRect",
+        "from": 59.9,
+        "to": 66.5,
+        "note": "step 4 (p20-p22): the Invoices tab badged '1 open' (pointed at, never clicked)"
+      },
+      {
+        "anchor": "mcNoteRect",
+        "from": 78.75,
+        "to": 82.66,
+        "note": "step 5 (p25-p26): the May bar asterisk — * Estimated, month not complete"
+      },
+      {
+        "anchor": "mcSubRect",
+        "from": 83.15,
+        "to": 86.27,
+        "note": "step 5 (p27): the 'Last 6 months' caption vs seven rendered bars (known discrepancy)"
+      },
+      {
+        "anchor": "ucHeadRect",
+        "from": 96.6,
+        "to": 104.4,
+        "note": "step 6 (p30-p31): SOURCE · TYPE · VOLUME · COST · SHARE columns"
+      },
+      {
+        "anchor": "nthRowRect",
+        "from": 111.3,
+        "to": 119.9,
+        "note": "step 7 (p34): Nth Wash Rewards — the biggest line at $31.98"
+      },
+      {
+        "anchor": "ytdPaidRect",
+        "from": 133.5,
+        "to": 137.85,
+        "note": "step 8 (p40-p41): $2,845 Paid YTD · ✓ Current — billed equals paid"
+      },
+      {
+        "anchor": "ytdExportRect",
+        "from": 137.9,
+        "to": 146.3,
+        "color": "#dc2626",
+        "note": "step 8 (p42-p43) do-not-click: the Export CSV control on Year-to-Date Summary — pointed at from beside, NEVER pressed"
+      },
+      {
+        "anchor": "smsThDeliveredRect",
+        "from": 153.7,
+        "to": 159.1,
+        "note": "step 9 (p47): the DELIVERED column"
+      },
+      {
+        "anchor": "smsThFailedRect",
+        "from": 159.1,
+        "to": 164.6,
+        "note": "step 9 (p48-p49): the FAILED column — the per-batch delivery check"
+      },
+      {
+        "anchor": "smsExportRect",
+        "from": 151,
+        "to": 164.6,
+        "color": "#dc2626",
+        "note": "step 9 do-not-click: the SMS Log Export control — red guardrail, never pressed"
+      },
+      {
+        "anchor": "emailTransRowRect",
+        "from": 167.2,
+        "to": 176.2,
+        "note": "step 10 (p52): the Transactional row — Member Receipts, $0.25"
+      },
+      {
+        "anchor": "emailExportRect",
+        "from": 165.95,
+        "to": 176.2,
+        "color": "#dc2626",
+        "note": "step 10 do-not-click: the Email Send Log Export control — red guardrail, never pressed"
+      },
+      {
+        "anchor": "invBannerRect",
+        "from": 179.75,
+        "to": 183.6,
+        "note": "step 11 (p54): the due-invoice banner (INV-2026-04, $542.30)"
+      },
+      {
+        "anchor": "invPayNowRect",
+        "from": 179.95,
+        "to": 191.3,
+        "color": "#dc2626",
+        "note": "step 11 (p55) do-not-click: Pay Now — a money control, NEVER pressed"
+      },
+      {
+        "anchor": "invDownloadPdfRect",
+        "from": 180.01,
+        "to": 191.3,
+        "color": "#dc2626",
+        "note": "step 11 (p55) do-not-click: Download PDF — NEVER pressed"
+      },
+      {
+        "anchor": "invExportAllRect",
+        "from": 180.07,
+        "to": 191.3,
+        "color": "#dc2626",
+        "note": "step 11 do-not-click: Export All on Invoice History — NEVER pressed"
+      },
+      {
+        "anchor": "invOpenRowRect",
+        "from": 186.5,
+        "to": 191.3,
+        "note": "step 11 (p56): the INV-2026-04 ● Open row — the client's actual open bill"
+      },
+      {
+        "anchor": "rateSmsRect",
+        "from": 196.4,
+        "to": 198.8,
+        "note": "step 12 (p59): SMS — Outbound, $0.025 per message"
+      },
+      {
+        "anchor": "rateEmailRect",
+        "from": 198.8,
+        "to": 202.1,
+        "note": "step 12 (p59): Email — Outbound, $0.0008 per email"
+      },
+      {
+        "anchor": "rateUpdateSmsRect",
+        "from": 193.6,
+        "to": 202.1,
+        "color": "#dc2626",
+        "note": "step 12 do-not-click: Update Rate (SMS) — NEVER pressed"
+      },
+      {
+        "anchor": "rateUpdateEmailRect",
+        "from": 193.6,
+        "to": 202.1,
+        "color": "#dc2626",
+        "note": "step 12 do-not-click: Update Rate (Email) — NEVER pressed"
+      },
+      {
+        "anchor": "rateSaveRect",
+        "from": 193.66,
+        "to": 202.1,
+        "color": "#dc2626",
+        "note": "step 12 do-not-click: Save Changes on Billing Configuration — NEVER pressed"
+      },
+      {
+        "anchor": "alertPreWarnRect",
+        "from": 209.9,
+        "to": 216.4,
+        "note": "step 13 (p62): the 80% Threshold Pre-Warning setting"
+      },
+      {
+        "anchor": "alertPreToggleRect",
+        "from": 204.5,
+        "to": 216.4,
+        "color": "#dc2626",
+        "note": "step 13 do-not-click: the 80% pre-warning toggle — NEVER toggled"
+      },
+      {
+        "anchor": "alertSaveRect",
+        "from": 204.54,
+        "to": 216.4,
+        "color": "#dc2626",
+        "note": "step 13 do-not-click: Save Alerts — NEVER pressed"
+      },
+      {
+        "anchor": "nthRowRect2",
+        "from": 221,
+        "to": 223.8,
+        "note": "step 14 (p67): recap — Usage by Source, top row first"
+      },
+      {
+        "anchor": "tabInvoicesRect3",
+        "from": 223.8,
+        "to": 226.99,
+        "note": "step 14 (p69): recap — the Invoices tab, badged one open"
+      },
+      {
+        "anchor": "ytdExportRect2",
+        "from": 226.99,
+        "to": 230.2,
+        "color": "#dc2626",
+        "note": "step 14 (p70) do-not-click: 'never touch the export' — Export CSV, still never pressed"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 4.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 4.9,
+        "z": 1.2,
+        "cx": 720,
+        "cy": 280,
+        "ease": true,
+        "note": "step 1: the sidebar Usage & Billing link + the breadcrumb title"
+      },
+      {
+        "t": 16.6,
+        "z": 1.2,
+        "cx": 720,
+        "cy": 280
+      },
+      {
+        "t": 17.2,
+        "z": 1.45,
+        "cx": 780,
+        "cy": 240,
+        "ease": true,
+        "note": "step 2: 145% on the billing-period line (shot list wants 150% on 'Next invoice · 17 days remaining')"
+      },
+      {
+        "t": 33.4,
+        "z": 1.45,
+        "cx": 780,
+        "cy": 240
+      },
+      {
+        "t": 34,
+        "z": 1.3,
+        "cx": 1000,
+        "cy": 300,
+        "ease": true,
+        "note": "step 3: 130% across the KPI band"
+      },
+      {
+        "t": 50.4,
+        "z": 1.3,
+        "cx": 1000,
+        "cy": 300
+      },
+      {
+        "t": 50.95,
+        "z": 1.32,
+        "cx": 900,
+        "cy": 300,
+        "ease": true,
+        "note": "step 4: the six-tab bar, then the Invoices badge"
+      },
+      {
+        "t": 59.6,
+        "z": 1.32,
+        "cx": 900,
+        "cy": 300
+      },
+      {
+        "t": 59.95,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: 150% push on the Invoices '1 open' badge (shot list)"
+      },
+      {
+        "t": 66.4,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 250
+      },
+      {
+        "t": 67.5,
+        "z": 1.15,
+        "cx": 960,
+        "cy": 420,
+        "ease": true,
+        "note": "ease wide before the panels"
+      },
+      {
+        "t": 70.4,
+        "z": 1.15,
+        "cx": 960,
+        "cy": 420
+      },
+      {
+        "t": 70.5,
+        "z": 1.3,
+        "cx": 700,
+        "cy": 380,
+        "ease": true,
+        "note": "step 5: 130% on the Monthly Usage Cost panel"
+      },
+      {
+        "t": 92,
+        "z": 1.3,
+        "cx": 700,
+        "cy": 380
+      },
+      {
+        "t": 92.55,
+        "z": 1.3,
+        "cx": 1350,
+        "cy": 320,
+        "ease": true,
+        "note": "step 6: the Usage by Source column header"
+      },
+      {
+        "t": 108.8,
+        "z": 1.3,
+        "cx": 1350,
+        "cy": 320
+      },
+      {
+        "t": 109.25,
+        "z": 1.3,
+        "cx": 1350,
+        "cy": 430,
+        "ease": true,
+        "note": "step 7: the Usage by Source rows"
+      },
+      {
+        "t": 127.4,
+        "z": 1.3,
+        "cx": 1350,
+        "cy": 430
+      },
+      {
+        "t": 127.65,
+        "z": 1.25,
+        "cx": 1050,
+        "cy": 560,
+        "ease": true,
+        "note": "step 8: the full-width Year-to-Date Summary + its export guardrail"
+      },
+      {
+        "t": 146.4,
+        "z": 1.25,
+        "cx": 1050,
+        "cy": 560
+      },
+      {
+        "t": 146.9,
+        "z": 1.15,
+        "cx": 1000,
+        "cy": 470,
+        "ease": true,
+        "note": "step 9: the SMS Log detail table"
+      },
+      {
+        "t": 164.7,
+        "z": 1.15,
+        "cx": 1000,
+        "cy": 470
+      },
+      {
+        "t": 165,
+        "z": 1.15,
+        "cx": 1000,
+        "cy": 460,
+        "ease": true,
+        "note": "step 10: the Email Send Log"
+      },
+      {
+        "t": 176.3,
+        "z": 1.15,
+        "cx": 1000,
+        "cy": 460
+      },
+      {
+        "t": 176.6,
+        "z": 1.12,
+        "cx": 1000,
+        "cy": 410,
+        "ease": true,
+        "note": "step 11: the Invoices tab — banner + Invoice History"
+      },
+      {
+        "t": 191.4,
+        "z": 1.12,
+        "cx": 1000,
+        "cy": 410
+      },
+      {
+        "t": 191.7,
+        "z": 1.18,
+        "cx": 1050,
+        "cy": 430,
+        "ease": true,
+        "note": "step 12: the Rate Card pricing cards"
+      },
+      {
+        "t": 202.1,
+        "z": 1.18,
+        "cx": 1050,
+        "cy": 430
+      },
+      {
+        "t": 202.4,
+        "z": 1.2,
+        "cx": 1050,
+        "cy": 420,
+        "ease": true,
+        "note": "step 13: the Spending Alert Configuration"
+      },
+      {
+        "t": 216.4,
+        "z": 1.2,
+        "cx": 1050,
+        "cy": 420
+      },
+      {
+        "t": 217.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 14: pull wide for the Overview recap"
+      },
+      {
+        "t": 234,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 236.513,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Usage & Billing — Complete",
+      "from": 234.7,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 234.4
+  },
+  "neverClick": [
+    "export csv",
+    "export all",
+    "\\bexport\\b",
+    "pay now",
+    "\\bpay\\b",
+    "download pdf",
+    "download",
+    "\\bpdf\\b",
+    "update rate",
+    "\\bupdate\\b",
+    "save changes",
+    "save alerts",
+    "\\bsave\\b",
+    "80% threshold pre-warning",
+    "pre-warning",
+    "\\btoggle\\b",
+    "process",
+    "charge",
+    "\\brefund\\b",
+    "approve",
+    "\\bsend\\b",
+    "submit",
+    "\\bdelete\\b",
+    "\\bedit\\b",
+    "\\bnew\\b",
+    "change plan",
+    "update payment",
+    "invoice / table row-links (they navigate away via data-href — no row is ever clicked)",
+    "log out",
+    "log out now",
+    "logout",
+    "ask shyne"
+  ]
+}

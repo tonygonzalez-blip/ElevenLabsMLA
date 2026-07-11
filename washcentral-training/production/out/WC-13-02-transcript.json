@@ -1,0 +1,560 @@
+{
+  "lesson": "WC-13-02",
+  "audioMaster": "training/module13-reports-audit/WC-13-02-full-narration-v1.0.mp3",
+  "audioDurationS": 228.284,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open I-T and Support.",
+      "startS": 0,
+      "endS": 1.929,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Down the sidebar, past the support tools, sits a small group called Audit.",
+      "startS": 2.938,
+      "endS": 7.23,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Three pages.",
+      "startS": 7.506,
+      "endS": 8.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Between them they answer almost every who-did-this question a client will ever send you.",
+      "startS": 8.653,
+      "endS": 13.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Open the Audit Log.",
+      "startS": 13.84,
+      "endS": 15.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "This is the master feed.",
+      "startS": 15.518,
+      "endS": 17.058,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Every meaningful event on the platform lands here in one running list, newest first,",
+      "startS": 17.429,
+      "endS": 22.743,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "with a dashboard on top to read the shape of it before you dig.",
+      "startS": 22.995,
+      "endS": 26.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Start with the four tiles.",
+      "startS": 26.624,
+      "endS": 28.324,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Events today, events this week, how many different people were active,",
+      "startS": 29.524,
+      "endS": 31.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "and how many events tripped a critical flag.",
+      "startS": 32.631,
+      "endS": 34.377,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "One glance tells you whether today looks normal or busy.",
+      "startS": 35.005,
+      "endS": 40.867,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "To the left, the yearly trend.",
+      "startS": 41.341,
+      "endS": 43.183,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Twelve months of logged activity in a single line, ticking up.",
+      "startS": 43.681,
+      "endS": 47.115,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "It's context, not an alarm: is the platform getting busier, or holding steady.",
+      "startS": 47.644,
+      "endS": 52.334,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p16",
+      "text": "Next, the split by action.",
+      "startS": 52.8,
+      "endS": 54.843,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "Most of what gets logged is edits and new records.",
+      "startS": 55.416,
+      "endS": 58.118,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Logins are a chunk.",
+      "startS": 58.403,
+      "endS": 59.626,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Deletions are the thin slice at the bottom,",
+      "startS": 60.086,
+      "endS": 62.416,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "and on a support ticket, that thin slice is usually the one you came for.",
+      "startS": 62.65,
+      "endS": 66.475,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "Beside it, severity.",
+      "startS": 66.949,
+      "endS": 68.505,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Nearly everything is normal.",
+      "startS": 68.971,
+      "endS": 70.565,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "A little is a warning.",
+      "startS": 70.997,
+      "endS": 72.343,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "A sliver is critical, and that sliver is the same three events the top tile just flagged.",
+      "startS": 72.632,
+      "endS": 78.426,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Two views of one number.",
+      "startS": 78.786,
+      "endS": 80.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Now the list itself.",
+      "startS": 80.96,
+      "endS": 82.163,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Read a row left to right and it tells a whole story:",
+      "startS": 83.019,
+      "endS": 85.836,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "when, who, what they did, in which module, to which record, at which location,",
+      "startS": 86.323,
+      "endS": 88.547,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "and the I-P address it came from.",
+      "startS": 88.775,
+      "endS": 93.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "There are Export and New Record buttons up here.",
+      "startS": 94.7,
+      "endS": 97.062,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Leave them. You're reading, not changing.",
+      "startS": 97.516,
+      "endS": 99.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Find the deleted event.",
+      "startS": 100.16,
+      "endS": 101.633,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Here it is: a payment record, removed, tied to a name, a location, and an I-P.",
+      "startS": 102.317,
+      "endS": 104.823,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "That's the power of this page.",
+      "startS": 105.071,
+      "endS": 107.776,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "When something goes missing, you don't guess who touched it.",
+      "startS": 108.348,
+      "endS": 109.964,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "You read the row.",
+      "startS": 110.615,
+      "endS": 114.225,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Move to User Activity.",
+      "startS": 114.8,
+      "endS": 116.376,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Where the Audit Log tracks events, this page tracks people at the door.",
+      "startS": 116.963,
+      "endS": 120.856,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Who's signing in, how often, and who keeps bouncing off the login screen.",
+      "startS": 121.223,
+      "endS": 125.181,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "Its tiles lead with the sign-in picture.",
+      "startS": 125.653,
+      "endS": 127.775,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Active users, logins today, average session length,",
+      "startS": 128.286,
+      "endS": 130.412,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "and the one you'll reach for most: failed logins.",
+      "startS": 130.748,
+      "endS": 131.854,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "When a cashier says they're locked out, that number is where you start.",
+      "startS": 132.164,
+      "endS": 139.218,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "The table fills in the rest.",
+      "startS": 139.84,
+      "endS": 141.379,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Each person, their role, when they last got in, how many times this month, from where,",
+      "startS": 141.855,
+      "endS": 146.7,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "and whether the account is active.",
+      "startS": 146.995,
+      "endS": 149.554,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "It answers a quiet but common question:",
+      "startS": 150.296,
+      "endS": 152.703,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "is this user actually signing in, and as what.",
+      "startS": 153.077,
+      "endS": 156.344,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "Last page. Change History.",
+      "startS": 156.876,
+      "endS": 157.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "The Audit Log tells you a record was updated.",
+      "startS": 158.037,
+      "endS": 159.03,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "This one tells you exactly which field moved, and what it was before.",
+      "startS": 160.544,
+      "endS": 167.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p52",
+      "text": "The tiles count the churn.",
+      "startS": 167.656,
+      "endS": 169.316,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p53",
+      "text": "How many changes today, how many this week,",
+      "startS": 169.677,
+      "endS": 170.941,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "and how the load splits between configuration and everyday data.",
+      "startS": 171.234,
+      "endS": 172.258,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "It's a pulse on how much is being edited under the hood.",
+      "startS": 172.643,
+      "endS": 179.505,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p56",
+      "text": "But the columns are the payoff.",
+      "startS": 179.982,
+      "endS": 181.482,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p57",
+      "text": "Alongside the usual when and who, this page names the exact field that changed",
+      "startS": 182.166,
+      "endS": 184.251,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "and lays the old value and the new value side by side.",
+      "startS": 184.634,
+      "endS": 190.837,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p59",
+      "text": "No other audit page does that.",
+      "startS": 191.169,
+      "endS": 193.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p60",
+      "text": "Picture a membership price.",
+      "startS": 193.56,
+      "endS": 195.225,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p61",
+      "text": "The plan's example is a monthly rate moving from",
+      "startS": 195.815,
+      "endS": 201.508,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p62",
+      "text": "twenty-nine ninety-nine to thirty-four ninety-nine.",
+      "startS": 202.644,
+      "endS": 206.144,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p63",
+      "text": "One row, before on one side, after on the other.",
+      "startS": 207.14,
+      "endS": 209.249,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p64",
+      "text": "When a client swears their price jumped, this is the receipt.",
+      "startS": 209.486,
+      "endS": 210.671,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p65",
+      "text": "So, three pages, three questions.",
+      "startS": 211.185,
+      "endS": 213.596,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p66",
+      "text": "What happened, and from what machine? That's the Audit Log.",
+      "startS": 213.945,
+      "endS": 217.386,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p67",
+      "text": "Who's getting in, and who isn't? User Activity.",
+      "startS": 217.673,
+      "endS": 219.452,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p68",
+      "text": "Who changed which field, and to what? Change History.",
+      "startS": 219.905,
+      "endS": 223.089,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p69",
+      "text": "Match the ticket to the page, and the answer is already waiting.",
+      "startS": 223.482,
+      "endS": 227.84,
+      "timing": "silence"
+    }
+  ]
+}

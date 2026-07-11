@@ -1,0 +1,552 @@
+{
+  "lesson": "WC-PB-06",
+  "audioMaster": "training/playbooks/WC-PB-06-full-narration-v1.0.mp3",
+  "audioDurationS": 230.113,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in CRM, on Vehicles.",
+      "startS": 0,
+      "endS": 2.203,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Read the top band before you open anyone's account.",
+      "startS": 2.55,
+      "endS": 9.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Nearly four thousand vehicles on file, and fourteen flagged.",
+      "startS": 9.312,
+      "endS": 10.287,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Fourteen. Across the whole network.",
+      "startS": 10.525,
+      "endS": 11.903,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "That tells you this ticket is almost certainly one member, not a wave.",
+      "startS": 12.142,
+      "endS": 16.047,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "So work the funnel in order: the account, the plate, the blocklist, the hardware.",
+      "startS": 16.257,
+      "endS": 21.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Open the member from the customer list and go to the Membership tab.",
+      "startS": 21.68,
+      "endS": 24.982,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Three blocks answer most of these tickets.",
+      "startS": 25.715,
+      "endS": 27.949,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Loyalty and points holds the barcode.",
+      "startS": 28.469,
+      "endS": 30.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "That is the code the P-O-S actually reads.",
+      "startS": 30.856,
+      "endS": 33.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Plan details tells you the status is active.",
+      "startS": 33.883,
+      "endS": 36.26,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "Billing cycle tells you the next charge, so the plan is not past due.",
+      "startS": 36.774,
+      "endS": 40.762,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p13",
+      "text": "Any of those fails, and you already have your answer.",
+      "startS": 41.381,
+      "endS": 44.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Now the header chips.",
+      "startS": 44.48,
+      "endS": 45.625,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Plate linked is the one that matters here.",
+      "startS": 46.332,
+      "endS": 48.264,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "It says a plate is on file for the cameras.",
+      "startS": 48.795,
+      "endS": 51.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Open the Vehicles tab and read what is actually on the account.",
+      "startS": 52.08,
+      "endS": 55.548,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "No chip, or the wrong plate, and the gate has nothing to match.",
+      "startS": 56.138,
+      "endS": 59.971,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "Do not add a vehicle.",
+      "startS": 60.309,
+      "endS": 61.802,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p20",
+      "text": "You report the gap. You never fill it from the demo.",
+      "startS": 62.126,
+      "endS": 65.133,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Back out to CRM Vehicles and search the exact plate.",
+      "startS": 65.68,
+      "endS": 69.142,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "The master list is the plate's own record:",
+      "startS": 69.884,
+      "endS": 74.951,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "license plate, make and model, year, customer, location, status, last visit.",
+      "startS": 75.282,
+      "endS": 78.617,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "Confirm three things.",
+      "startS": 79.206,
+      "endS": 80.551,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "Right customer. A sane status. A last visit that matches the member's story.",
+      "startS": 80.892,
+      "endS": 83.085,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p26",
+      "text": "One caution from today's capture: the list returned a fetch error.",
+      "startS": 83.446,
+      "endS": 85.896,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p27",
+      "text": "Make sure rows actually loaded before you say a plate is not on file.",
+      "startS": 86.631,
+      "endS": 95.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Now the blocklist. Settings, Users and Security, Blacklisted.",
+      "startS": 95.6,
+      "endS": 96.814,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "Four columns: plate, terminal, created by, created.",
+      "startS": 97.3,
+      "endS": 99.504,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "A plate on this list is refused at the gate no matter how healthy the membership looks.",
+      "startS": 99.812,
+      "endS": 100.681,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p31",
+      "text": "So a clean account with a won't-scan symptom sends you straight here.",
+      "startS": 101.5,
+      "endS": 105.496,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p32",
+      "text": "Read it and leave it alone.",
+      "startS": 106.006,
+      "endS": 108.522,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p33",
+      "text": "Adding or removing a blacklisted plate from the demo is forbidden.",
+      "startS": 108.858,
+      "endS": 122,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "Both clean? Then it's the site.",
+      "startS": 122.4,
+      "endS": 124.184,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Open IT and Support, then System Alerts.",
+      "startS": 124.184,
+      "endS": 126.541,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "A tunnel or P-O-S fault at the member's location would surface here.",
+      "startS": 126.541,
+      "endS": 130.506,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p37",
+      "text": "In today's corpus the page would not load at all.",
+      "startS": 130.506,
+      "endS": 133.706,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p38",
+      "text": "If it is still down when you get there, hold the parked card",
+      "startS": 133.706,
+      "endS": 137.793,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p39",
+      "text": "and route the hardware question to the site team.",
+      "startS": 137.793,
+      "endS": 140.469,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "Still in IT and Support, open the Support Queue.",
+      "startS": 140.88,
+      "endS": 143.727,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "You want an open ticket at the member's home site.",
+      "startS": 144.356,
+      "endS": 146.63,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "Today's capture has one: an L-P-R ticket at Miami North, high priority.",
+      "startS": 146.944,
+      "endS": 151.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "L-P-R is the plate-reading hardware.",
+      "startS": 152.225,
+      "endS": 154.348,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p44",
+      "text": "An open ticket there changes your whole read.",
+      "startS": 154.68,
+      "endS": 156.941,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p45",
+      "text": "This stops being one member and becomes an attachment to a known site issue.",
+      "startS": 157.291,
+      "endS": 161.279,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "One last stop, and it's a quiet one.",
+      "startS": 161.749,
+      "endS": 162.667,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "Settings, Operations, Cancellation Reasons.",
+      "startS": 162.867,
+      "endS": 165.923,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "The migrated reason set includes R-F-I-D tag issues, not reading.",
+      "startS": 166.152,
+      "endS": 167.458,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p49",
+      "text": "That is a recognized failure mode,",
+      "startS": 167.909,
+      "endS": 172.767,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p50",
+      "text": "and naming it tells the next team exactly what the field already knows.",
+      "startS": 172.981,
+      "endS": 178.786,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p51",
+      "text": "Confirm the wording against the live list.",
+      "startS": 179.029,
+      "endS": 181.156,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p52",
+      "text": "The rows did not load in today's capture.",
+      "startS": 181.448,
+      "endS": 183.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "Now build the ticket.",
+      "startS": 184.24,
+      "endS": 185.454,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "State which checks passed and which failed.",
+      "startS": 186.038,
+      "endS": 188.213,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p55",
+      "text": "Barcode present, plan active, or not.",
+      "startS": 188.754,
+      "endS": 191.336,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p56",
+      "text": "Plate linked, or not. The master-list status.",
+      "startS": 191.886,
+      "endS": 193.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p57",
+      "text": "Whether the plate appears on Blacklisted.",
+      "startS": 193.762,
+      "endS": 195.081,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p58",
+      "text": "Any open L-P-R ticket or system alert at the site.",
+      "startS": 195.414,
+      "endS": 197.257,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p59",
+      "text": "Tag the R-F-I-D reason when it fits, and name the location.",
+      "startS": 197.87,
+      "endS": 200.675,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p60",
+      "text": "The fix happens in production with the right role.",
+      "startS": 201.184,
+      "endS": 204.463,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p61",
+      "text": "A relink, a blocklist removal, a dispatch. Never here.",
+      "startS": 205.056,
+      "endS": 211.642,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p62",
+      "text": "That's the funnel.",
+      "startS": 212.08,
+      "endS": 213.372,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p63",
+      "text": "Frame it on the vehicle list.",
+      "startS": 213.372,
+      "endS": 215.374,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p64",
+      "text": "Read the barcode, the status, and the next charge.",
+      "startS": 215.374,
+      "endS": 218.013,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p65",
+      "text": "Confirm the plate is linked, find it in the master list, check the blocklist,",
+      "startS": 218.013,
+      "endS": 222.374,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p66",
+      "text": "then work the hardware trail through alerts and the queue.",
+      "startS": 222.374,
+      "endS": 225.307,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p67",
+      "text": "Most tickets never reach the bottom.",
+      "startS": 225.307,
+      "endS": 227.067,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p68",
+      "text": "And you changed nothing on the way down.",
+      "startS": 227.067,
+      "endS": 229.678,
+      "timing": "proportional"
+    }
+  ]
+}

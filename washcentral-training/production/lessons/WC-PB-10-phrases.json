@@ -1,0 +1,144 @@
+{
+  "lesson": "WC-PB-10",
+  "audioMaster": "training/playbooks/WC-PB-10-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; stage directions and pronunciation spellings kept exactly as spoken, e.g. 'four point oh five', 'four point two one'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s11 end at 214.895s, overshooting the ffprobe-probed master (214.518s) by 0.377s (> 0.3 tolerance) because the concatenated MP3 frames decode shorter than the per-file duration sum, and the accumulated 0.4s gaps drift (s11 nominal onset 195.086s vs measured 194.72s). Onsets were therefore measured by normalized cross-correlation of each WC-PB-10-sNN.mp3 against the joined master (8 kHz mono PCM; all 11 blocks matched at score 1.000). The last block end is set to the ffprobe master duration. Master ffprobe duration 214.518s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 18.08,
+      "phrases": [
+        { "id": "p01", "text": "Start in Settings, under Customer Portal." },
+        { "id": "p02", "text": "The hub names the portal and, right beside it, one chip does the heavy lifting: Live." },
+        { "id": "p03", "text": "If that chip isn't showing, nobody signs in and the ticket is portal-wide." },
+        { "id": "p04", "text": "It is, so keep going." },
+        { "id": "p05", "text": "And leave Publish Changes alone." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 18.08,
+      "endS": 36.32,
+      "phrases": [
+        { "id": "p06", "text": "Now the five tiles across the top." },
+        { "id": "p07", "text": "Eighteen hundred forty registered members." },
+        { "id": "p08", "text": "Two hundred forty-seven logins today." },
+        { "id": "p09", "text": "That second number is your triage: members are getting in right now," },
+        { "id": "p10", "text": "so this ticket is probably one account." },
+        { "id": "p11", "text": "Zero logins on a live portal means the opposite." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 36.32,
+      "endS": 55.04,
+      "phrases": [
+        { "id": "p12", "text": "Next, the address." },
+        { "id": "p13", "text": "Click Copy and compare it to the link the member is using." },
+        { "id": "p14", "text": "A stale URL is the most common can't-log-in there is." },
+        { "id": "p15", "text": "Then open Preview Portal and try to reproduce what they see." },
+        { "id": "p16", "text": "Portal Health backs you up: API connected, certificate valid." },
+        { "id": "p17", "text": "The backend is fine." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 55.04,
+      "endS": 73.04,
+      "phrases": [
+        { "id": "p18", "text": "Back on the hub, two cards settle most of these tickets." },
+        { "id": "p19", "text": "Access and Security holds the login rules: phone and email, OTP on, thirty-minute sessions." },
+        { "id": "p20", "text": "Features and Modules reads seven of nine enabled." },
+        { "id": "p21", "text": "For a missing feature, that line is usually the whole answer." },
+        { "id": "p22", "text": "Two modules are just off." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 73.04,
+      "endS": 96.48,
+      "phrases": [
+        { "id": "p23", "text": "Open Access and Security and read the login methods." },
+        { "id": "p24", "text": "Phone, yes. Email, yes. Membership number, no. Guest access, no." },
+        { "id": "p25", "text": "So the member typing their membership number at sign-in isn't broken," },
+        { "id": "p26", "text": "and neither is the portal." },
+        { "id": "p27", "text": "That method is switched off." },
+        { "id": "p28", "text": "Match how they log in against what's actually enabled." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 96.48,
+      "endS": 117.68,
+      "phrases": [
+        { "id": "p29", "text": "Stay on this tab for the quiet culprit: OTP." },
+        { "id": "p30", "text": "A one-time code is required on every login, delivered by SMS, and it dies after ten minutes." },
+        { "id": "p31", "text": "A wrong or dead mobile number means the code never lands." },
+        { "id": "p32", "text": "The password rules sit just below: eight characters minimum, nothing fancier required." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 117.68,
+      "endS": 136.64,
+      "phrases": [
+        { "id": "p33", "text": "Back on the hub, read Recent Portal Activity." },
+        { "id": "p34", "text": "One line is worth the whole feed:" },
+        { "id": "p35", "text": "three failed login attempts on one account, this morning, from mobile." },
+        { "id": "p36", "text": "That names the member, counts the tries, stamps the time, and tells you which channel to test." },
+        { "id": "p37", "text": "They're reaching the login and getting rejected." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 136.64,
+      "endS": 152.48,
+      "phrases": [
+        { "id": "p38", "text": "For a mobile-app complaint, switch to Digital and open Mobile App Users." },
+        { "id": "p39", "text": "Forty-eight hundred twenty users, more than half on iOS." },
+        { "id": "p40", "text": "The list below carries the three columns that explain most app tickets:" },
+        { "id": "p41", "text": "app version, notifications, and status." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 152.48,
+      "endS": 172.56,
+      "phrases": [
+        { "id": "p42", "text": "Find the member's row." },
+        { "id": "p43", "text": "Tom Brown is running four point oh five on Android while others are on four point two one." },
+        { "id": "p44", "text": "An out-of-date build explains a login that fails or a feature that never appears." },
+        { "id": "p45", "text": "Notifications off explains I never get alerts." },
+        { "id": "p46", "text": "And status confirms the account itself is active." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 172.56,
+      "endS": 194.72,
+      "phrases": [
+        { "id": "p47", "text": "Now write it up." },
+        { "id": "p48", "text": "Portal live, on the right address." },
+        { "id": "p49", "text": "Which login method they used against what's enabled." },
+        { "id": "p50", "text": "OTP required, delivered by SMS." },
+        { "id": "p51", "text": "The failed-login line with its account, count, time, and channel." },
+        { "id": "p52", "text": "For mobile, the app version, notifications, and status." },
+        { "id": "p53", "text": "Flipping any of those switches happens in production, never here." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 194.72,
+      "endS": 214.518,
+      "phrases": [
+        { "id": "p54", "text": "That's the flow." },
+        { "id": "p55", "text": "Read the Live chip and the logins before you blame one account." },
+        { "id": "p56", "text": "Check the login methods and OTP when sign-in fails." },
+        { "id": "p57", "text": "Read the activity feed for proof." },
+        { "id": "p58", "text": "Check the member's app row when it's mobile." },
+        { "id": "p59", "text": "Then route it, with nothing published and nothing saved." }
+      ]
+    }
+  ],
+  "output": "WC-PB-10-portal-mobile-login-v1.1"
+}

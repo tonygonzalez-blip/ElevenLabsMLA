@@ -1,0 +1,342 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:00.996
+Open Settings, then open Services.
+
+p02
+00:00:01.279 --> 00:00:02.831
+This is the catalog.
+
+p03
+00:00:03.448 --> 00:00:04.651
+Everything a site sells lives here as a row: a wash, an add-on, a token.
+
+p04
+00:00:05.075 --> 00:00:07.637
+Every price that shows up on the point of sale traces back to this list,
+
+p05
+00:00:07.997 --> 00:00:18.625
+so a pricing question usually ends right where we're standing.
+
+p06
+00:00:19.040 --> 00:00:21.148
+Look down the Services group in the sidebar.
+
+p07
+00:00:21.553 --> 00:00:23.445
+Services is the catalog itself.
+
+p08
+00:00:23.804 --> 00:00:24.897
+The pages beneath it, Service Types, Service Groups, Detail Types, Rewards,
+
+p09
+00:00:25.104 --> 00:00:26.997
+define the vocabulary a service draws on.
+
+p10
+00:00:27.198 --> 00:00:31.543
+You rarely edit those,
+
+p11
+00:00:31.830 --> 00:00:37.840
+but knowing they exist tells you where a stray label on a service actually comes from.
+
+p12
+00:00:38.240 --> 00:00:40.276
+Read the four tiles across the top.
+
+p13
+00:00:41.001 --> 00:00:44.727
+Twenty-four services, twenty-one active, six types, average price just under fifteen dollars.
+
+p14
+00:00:45.044 --> 00:00:47.404
+It's a health snapshot for the whole catalog, not one site.
+
+p15
+00:00:47.925 --> 00:00:51.210
+And take the counts loosely:
+
+p16
+00:00:51.527 --> 00:00:56.795
+in this demo the tile totals and the row totals don't always agree.
+
+p17
+00:00:57.253 --> 00:00:58.993
+Two cards show the catalog's shape.
+
+p18
+00:00:59.498 --> 00:01:03.307
+The trend line is the count over the last year, ticking up a few percent.
+
+p19
+00:01:03.924 --> 00:01:05.895
+The status card is the one to remember:
+
+p20
+00:01:06.408 --> 00:01:09.972
+active means it sells, draft means it isn't live yet,
+
+p21
+00:01:10.304 --> 00:01:13.462
+and inactive means it's retired but kept for the history.
+
+p22
+00:01:14.168 --> 00:01:15.892
+Most of the catalog is active.
+
+p23
+00:01:16.400 --> 00:01:18.875
+Now the mix by type.
+
+p24
+00:01:18.875 --> 00:01:22.105
+Washes are the biggest slice, then add-ons, then detail work.
+
+p25
+00:01:22.105 --> 00:01:25.245
+That top slice is what we open next,
+
+p26
+00:01:25.245 --> 00:01:29.443
+because a wash package is where the per-site pricing story really shows up.
+
+p27
+00:01:29.992 --> 00:01:31.946
+Drop down to the Services List.
+
+p28
+00:01:32.545 --> 00:01:34.640
+This is the real catalog table.
+
+p29
+00:01:35.092 --> 00:01:39.166
+New Service sits top-right, and it's how an admin adds a wash.
+
+p30
+00:01:39.431 --> 00:01:40.304
+We leave it alone:
+
+p31
+00:01:40.543 --> 00:01:44.480
+creating a service is production work, not something you do from a support seat.
+
+p32
+00:01:44.880 --> 00:01:46.005
+Read the columns.
+
+p33
+00:01:46.845 --> 00:01:48.376
+Description, code, type, price, active.
+
+p34
+00:01:48.698 --> 00:01:50.675
+Watch the code column especially.
+
+p35
+00:01:51.532 --> 00:01:53.425
+That's the controller code,
+
+p36
+00:01:53.716 --> 00:01:55.045
+the value that wires the service to the point of sale and the tunnel controller.
+
+p37
+00:01:55.348 --> 00:02:04.220
+When a button rings up the wrong wash, the code is usually the first thing you check.
+
+p38
+00:02:04.640 --> 00:02:05.774
+Look at the rows.
+
+p39
+00:02:06.371 --> 00:02:12.516
+On a live tenant this fills with the migrated catalog: wash packages, add-ons, token sales.
+
+p40
+00:02:12.948 --> 00:02:17.382
+The demo is quirkier, it often loads one fixed sample when you open a service.
+
+p41
+00:02:17.805 --> 00:02:21.027
+If you ever see a failed-to-fetch message instead of rows,
+
+p42
+00:02:21.336 --> 00:02:24.640
+that's the data service dropping out, not an empty catalog.
+
+p43
+00:02:25.040 --> 00:02:26.792
+There's a search box for a reason.
+
+p44
+00:02:27.365 --> 00:02:32.451
+A full catalog runs a couple hundred rows, so you type the service name rather than scroll.
+
+p45
+00:02:33.151 --> 00:02:34.662
+Filters narrow it further.
+
+p46
+00:02:35.078 --> 00:02:36.260
+We won't run one today;
+
+p47
+00:02:36.649 --> 00:02:39.360
+just know it's the fast way to find a single wash.
+
+p48
+00:02:39.760 --> 00:02:41.919
+Down at the bottom, the page controls.
+
+p49
+00:02:42.963 --> 00:02:45.913
+Twenty-five, fifty, or a hundred rows at a time.
+
+p50
+00:02:46.508 --> 00:02:51.190
+Small thing, but on a big catalog bumping it to a hundred saves a lot of clicking.
+
+p51
+00:02:51.651 --> 00:02:53.591
+Open a wash and read the detail.
+
+p52
+00:02:54.406 --> 00:03:02.802
+On the verified pass a service opened onto two tabs, Service Main and Active Locations,
+
+p53
+00:03:03.582 --> 00:03:04.021
+with Back, Delete, and Edit across the top.
+
+p54
+00:03:04.360 --> 00:03:09.991
+Heads up: in this capture the detail page wouldn't load,
+
+p55
+00:03:10.234 --> 00:03:11.600
+so treat what follows as the layout we confirmed earlier, parked for a fresh check.
+
+p56
+00:03:12.000 --> 00:03:14.661
+Service Main is where the service is defined.
+
+p57
+00:03:15.191 --> 00:03:19.309
+Eight groups of fields, from basic info to pricing to behavior.
+
+p58
+00:03:19.983 --> 00:03:21.593
+Two earn their keep for support.
+
+p59
+00:03:21.952 --> 00:03:24.972
+Controller code, again, is the point-of-sale mapping.
+
+p60
+00:03:25.454 --> 00:03:29.428
+And count as car decides whether the service adds to the site's car count,
+
+p61
+00:03:29.819 --> 00:03:33.072
+which is why selling a token doesn't fake your traffic numbers.
+
+p62
+00:03:33.520 --> 00:03:34.692
+Switch to Active Locations.
+
+p63
+00:03:34.692 --> 00:03:38.387
+This tab is the whole point of the lesson.
+
+p64
+00:03:38.387 --> 00:03:41.867
+It lists the sites and groups where the service actually sells,
+
+p65
+00:03:41.867 --> 00:03:44.211
+each with a status and a start date.
+
+p66
+00:03:44.211 --> 00:03:47.360
+A service only rings up where it's active here.
+
+p67
+00:03:47.360 --> 00:03:52.279
+So if a wash is missing at one site, this is the first tab you open.
+
+p68
+00:03:52.720 --> 00:03:56.111
+Now click Edit, and watch the little gears.
+
+p69
+00:03:56.111 --> 00:03:58.319
+They sit beside a handful of fields,
+
+p70
+00:03:58.319 --> 00:04:01.789
+the description, the controller code, the amount, and the tax settings.
+
+p71
+00:04:01.789 --> 00:04:05.209
+Hover one and it reads configure per location.
+
+p72
+00:04:05.209 --> 00:04:08.296
+The plain field is the default everywhere.
+
+p73
+00:04:08.296 --> 00:04:12.645
+The gear lets an admin override it for a single site or group.
+
+p74
+00:04:13.189 --> 00:04:14.842
+Click the gear beside the amount.
+
+p75
+00:04:15.419 --> 00:04:17.557
+On the verified pass, nothing opened.
+
+p76
+00:04:17.919 --> 00:04:22.130
+The dialog that's supposed to set a per-site value stayed shut in the demo tenant,
+
+p77
+00:04:22.330 --> 00:04:25.413
+so we park that step and check it on a real configuration.
+
+p78
+00:04:26.043 --> 00:04:29.061
+Point at the gear, explain what it does, and back out.
+
+p79
+00:04:29.286 --> 00:04:30.480
+Never save.
+
+p80
+00:04:30.880 --> 00:04:32.286
+So here's the pattern.
+
+p81
+00:04:32.609 --> 00:04:34.520
+One service, one record.
+
+p82
+00:04:34.894 --> 00:04:37.082
+Active Locations decides where it sells.
+
+p83
+00:04:37.439 --> 00:04:41.270
+The gears decide what it costs and how it's taxed at each site.
+
+p84
+00:04:41.579 --> 00:04:46.586
+That's how the Works can run two dollars more at one wash without a second record anywhere.
+
+p85
+00:04:47.107 --> 00:04:50.880
+You'll see the same shape on discounts next, so it's worth owning now.
+

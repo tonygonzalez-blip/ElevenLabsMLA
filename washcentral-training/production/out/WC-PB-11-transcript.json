@@ -1,0 +1,368 @@
+{
+  "lesson": "WC-PB-11",
+  "audioMaster": "training/playbooks/WC-PB-11-full-narration-v1.0.mp3",
+  "audioDurationS": 146.521,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "A caller wants two things: who changed it, and what it said before.",
+      "startS": 0,
+      "endS": 1.928,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Two pages answer that between them, and you read them in order.",
+      "startS": 2.228,
+      "endS": 4.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "One rule before you start.",
+      "startS": 5.279,
+      "endS": 8.611,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "The audit trail is read only.",
+      "startS": 9.442,
+      "endS": 10.914,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "It's only worth anything because nobody corrects it.",
+      "startS": 11.455,
+      "endS": 16.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Open IT and Support, then Audit.",
+      "startS": 16.871,
+      "endS": 18.345,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "You land on the Audit Log, and the sidebar lists three pages.",
+      "startS": 18.552,
+      "endS": 19.448,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "You need two of them today: the Audit Log for who did what,",
+      "startS": 19.882,
+      "endS": 23.389,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "and Change History for the before and after.",
+      "startS": 23.602,
+      "endS": 24.833,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "User Activity is login history.",
+      "startS": 25.062,
+      "endS": 26.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "That one belongs to a different playbook.",
+      "startS": 26.896,
+      "endS": 33.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Read the log.",
+      "startS": 34.24,
+      "endS": 35.241,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Seven columns tell you who touched the record, when,",
+      "startS": 35.899,
+      "endS": 38.986,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "from which location, and from which IP address.",
+      "startS": 39.189,
+      "endS": 41.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "The change you're chasing is an Updated row.",
+      "startS": 42.591,
+      "endS": 45.14,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Settings changes land here too, with the module reading Settings.",
+      "startS": 45.471,
+      "endS": 49.173,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Don't scroll a busy log.",
+      "startS": 49.944,
+      "endS": 51.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "Filter it, or search it.",
+      "startS": 51.706,
+      "endS": 53.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Now the page the caller actually wants.",
+      "startS": 53.76,
+      "endS": 55.784,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "In the sidebar, click Change History.",
+      "startS": 56.117,
+      "endS": 58.291,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "One quirk from today's capture: typing its address directly returned a four oh four.",
+      "startS": 58.8,
+      "endS": 60.41,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "So you reach it this way, through the audit sidebar, not by URL.",
+      "startS": 60.697,
+      "endS": 67.663,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Narrow it to the record.",
+      "startS": 68.08,
+      "endS": 69.326,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Filter down to the module in question so one record's changes stand alone.",
+      "startS": 69.86,
+      "endS": 73.891,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "You're reading a history, not editing one.",
+      "startS": 74.134,
+      "endS": 76.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "And here's the answer.",
+      "startS": 76.821,
+      "endS": 78.162,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Each change is recorded at field level: the field, its old value, its new value,",
+      "startS": 78.726,
+      "endS": 80.774,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "with the user and the timestamp.",
+      "startS": 81.026,
+      "endS": 85.82,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "That row is, literally, what was it before.",
+      "startS": 86.122,
+      "endS": 89.195,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Now put the two pages together.",
+      "startS": 89.6,
+      "endS": 91.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Change History gives you the field and the exact old and new values.",
+      "startS": 92.262,
+      "endS": 96.381,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "The Audit Log gives you the user, the date and time, and the IP address it came from.",
+      "startS": 96.947,
+      "endS": 101.708,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "The price changed is not an answer.",
+      "startS": 102.687,
+      "endS": 104.866,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "The two values are.",
+      "startS": 105.087,
+      "endS": 106.42,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Write the packet.",
+      "startS": 107.018,
+      "endS": 108.106,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "The record, the field, both values, the user, the timestamp, the IP address, and screenshots.",
+      "startS": 108.106,
+      "endS": 114.642,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "You never reverse the change from here.",
+      "startS": 114.642,
+      "endS": 117.692,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "A correction happens in the record's own module, or gets escalated.",
+      "startS": 117.692,
+      "endS": 122.297,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "And if the change looks unauthorized, that's a security escalation,",
+      "startS": 122.297,
+      "endS": 126.172,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "and the next tier wants the IP and the user first.",
+      "startS": 126.172,
+      "endS": 130.16,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "That's the order.",
+      "startS": 130.56,
+      "endS": 131.552,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Audit Log first, for who, when, where, and which IP.",
+      "startS": 132.174,
+      "endS": 133.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Change History second, for the field-level old to new.",
+      "startS": 133.575,
+      "endS": 136.391,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Then the exact answer, or a clean escalation.",
+      "startS": 136.809,
+      "endS": 138.082,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Nothing edited, nothing touched.",
+      "startS": 138.46,
+      "endS": 146.08,
+      "timing": "silence"
+    }
+  ]
+}

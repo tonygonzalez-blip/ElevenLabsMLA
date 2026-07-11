@@ -1,0 +1,194 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.114
+Sooner or later a migrated client says the platform looks different,
+
+p02
+00:00:03.114 --> 00:00:05.379
+or asks where one of their features went.
+
+p03
+00:00:05.379 --> 00:00:08.697
+You have two kinds of answer, and one hard rule.
+
+p04
+00:00:08.697 --> 00:00:09.920
+Here they are.
+
+p05
+00:00:10.353 --> 00:00:14.627
+Start with the big picture, and attribute it.
+
+p06
+00:00:14.627 --> 00:00:16.218
+Per Micrologic platform documentation,
+
+p07
+00:00:16.218 --> 00:00:20.593
+all one hundred seventy-nine WashAssist modules carried forward with full parity,
+
+p08
+00:00:20.593 --> 00:00:23.588
+plus sixteen or more new capability areas.
+
+p09
+00:00:23.588 --> 00:00:25.581
+Say "per the documentation."
+
+p10
+00:00:25.581 --> 00:00:29.200
+You are quoting it, not claiming you counted.
+
+p11
+00:00:29.665 --> 00:00:33.930
+If the client is technical, there is a second attributed layer.
+
+p12
+00:00:33.930 --> 00:00:36.826
+The platform was rebuilt on AWS, with token-based sign-in,
+
+p13
+00:00:36.826 --> 00:00:40.687
+sessions tied to the device, and rate limiting on the busy screens.
+
+p14
+00:00:40.687 --> 00:00:43.346
+Again, that is the documentation talking,
+
+p15
+00:00:43.346 --> 00:00:45.920
+not something you can point to on screen.
+
+p16
+00:00:46.418 --> 00:00:50.639
+For "what is coming," keep it to what is documented.
+
+p17
+00:00:50.639 --> 00:00:55.354
+Release two moves Marketing onto an event-driven backbone with two-way data replication.
+
+p18
+00:00:55.354 --> 00:00:57.221
+Release three brings event-driven microservices.
+
+p19
+00:00:57.221 --> 00:00:57.967
+No dates.
+
+p20
+00:00:57.967 --> 00:01:01.570
+If they push for a date, that is parked.
+
+p21
+00:01:02.126 --> 00:01:03.967
+Now the question you will actually get: where did my feature go.
+
+p22
+00:01:04.335 --> 00:01:05.735
+Whole modules were regrouped.
+
+p23
+00:01:06.252 --> 00:01:07.953
+Employees, Gamification, and the Scheduler live under Team now.
+
+p24
+00:01:08.165 --> 00:01:11.808
+Maintenance, Incidents, and appointment Scheduling are under Operations.
+
+p25
+00:01:12.147 --> 00:01:15.846
+Mobile and the Portal are under Digital.
+
+p26
+00:01:16.053 --> 00:01:18.190
+Support and Audit sit under IT and Support.
+
+p27
+00:01:18.539 --> 00:01:23.920
+And Billing and Academy are brand new.
+
+p28
+00:01:24.495 --> 00:01:28.173
+Some features did not leave, they just moved or became a button.
+
+p29
+00:01:28.713 --> 00:01:31.292
+Retention Log is a button on the Customer List.
+
+p30
+00:01:31.885 --> 00:01:34.754
+Generate Invoices is a button on House Accounts.
+
+p31
+00:01:35.301 --> 00:01:37.889
+Rewards moved into Settings, under Services.
+
+p32
+00:01:38.321 --> 00:01:40.227
+Adjustments moved into Inventory.
+
+p33
+00:01:40.867 --> 00:01:42.709
+Forecasting is under Analytics.
+
+p34
+00:01:43.078 --> 00:01:45.086
+Report scheduling is on the Reports hub.
+
+p35
+00:01:45.610 --> 00:01:51.280
+The full map is in our own verified records,
+
+p36
+00:01:51.725 --> 00:01:51.905
+so you are citing what we saw, not guessing.
+
+p37
+00:01:51.905 --> 00:01:53.710
+Here is the rule that keeps you honest.
+
+p38
+00:01:54.596 --> 00:01:58.619
+If you cannot find a feature live, you do not say it is gone.
+
+p39
+00:01:59.466 --> 00:02:06.119
+PIN Codes, Loyalty Discounts, Tech Commissions, Site Watch,
+
+p40
+00:02:06.785 --> 00:02:09.922
+and a few others are not visible today.
+
+p41
+00:02:10.300 --> 00:02:12.844
+The correct answer is that their status is being confirmed.
+
+p42
+00:02:13.260 --> 00:02:15.944
+It might have moved, it might be in a later release.
+
+p43
+00:02:16.400 --> 00:02:16.651
+Log the ask, and let it be answered properly.
+
+p44
+00:02:16.651 --> 00:02:17.733
+So, three moves.
+
+p45
+00:02:18.167 --> 00:02:20.350
+Give the parity story and attribute it.
+
+p46
+00:02:20.804 --> 00:02:23.417
+Locate the specific feature from the verified map.
+
+p47
+00:02:23.946 --> 00:02:26.448
+And never, ever call something gone.
+
+p48
+00:02:26.750 --> 00:02:28.880
+Confirm first, then answer.
+

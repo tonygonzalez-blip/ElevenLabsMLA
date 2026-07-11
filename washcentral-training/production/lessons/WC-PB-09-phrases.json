@@ -1,0 +1,124 @@
+{
+  "lesson": "WC-PB-09",
+  "audioMaster": "training/playbooks/WC-PB-09-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s10 end at 167.500s, which overshoots the ffprobe-probed master (167.158s) by 0.343s (> 0.3 tolerance) because the concatenated MP3 frames were joined with ~0.36s inter-block gaps rather than 0.4s. Onsets were therefore measured by normalized FFT cross-correlation of each WC-PB-09-sNN.mp3 (8 kHz mono PCM) against the joined master; all 10 blocks matched at score 1.000. Master ffprobe duration 167.158s; audioDurationS in the lesson JSON is set to that probed value.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 14.08,
+      "phrases": [
+        { "id": "p01", "text": "Open Reports from the left rail." },
+        { "id": "p02", "text": "Every report a site runs lives in this one hub." },
+        { "id": "p03", "text": "A hundred seventy-three in all, five favorites, three on a schedule." },
+        { "id": "p04", "text": "Each row carries a type tag and the last time it ran." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 14.08,
+      "endS": 30.88,
+      "phrases": [
+        { "id": "p05", "text": "Name the symptom before you touch a filter." },
+        { "id": "p06", "text": "Wrong numbers or an empty report is a filter question." },
+        { "id": "p07", "text": "A scheduled report that never landed is a scheduler question." },
+        { "id": "p08", "text": "Decide which ticket you have, or you'll re-run the wrong report ten times." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 30.88,
+      "endS": 46.08,
+      "phrases": [
+        { "id": "p09", "text": "Take the wrong-or-empty trail first. Open the report from the list." },
+        { "id": "p10", "text": "It loads in the Report Viewer, and the filter bar across the top is the whole story." },
+        { "id": "p11", "text": "More filters, a location selector, a date range, and the run control." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 46.08,
+      "endS": 62.56,
+      "phrases": [
+        { "id": "p12", "text": "Now read the scope." },
+        { "id": "p13", "text": "Most wrong-numbers tickets die here." },
+        { "id": "p14", "text": "The selector sat on one site when the manager meant the network," },
+        { "id": "p15", "text": "or the dates missed the week in question." },
+        { "id": "p16", "text": "Fix both, run it again, compare." },
+        { "id": "p17", "text": "A report is only wrong once its filters are right." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 62.56,
+      "endS": 78.08,
+      "phrases": [
+        { "id": "p18", "text": "One caution before you file anything." },
+        { "id": "p19", "text": "In this demo tenant, a KPI tile and the table beneath it often disagree, sometimes wildly." },
+        { "id": "p20", "text": "That's a known demo artifact, not a platform bug." },
+        { "id": "p21", "text": "Reproduce the numbers in production before you open a ticket." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 78.08,
+      "endS": 93.2,
+      "phrases": [
+        { "id": "p22", "text": "Now the report that never arrived. Open the Scheduled Reports view." },
+        { "id": "p23", "text": "Three reports run on a schedule here." },
+        { "id": "p24", "text": "Confirm the missing one is actually among them, and read its last run." },
+        { "id": "p25", "text": "Not scheduled at all? There's your answer." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 93.2,
+      "endS": 113.6,
+      "phrases": [
+        { "id": "p26", "text": "Cross-check the job that sends it. Settings, then Automation, then Task Scheduler." },
+        { "id": "p27", "text": "Eighteen tasks, sixteen active, two running now." },
+        { "id": "p28", "text": "And the tile that matters reads failed, zero." },
+        { "id": "p29", "text": "Nothing errored overnight." },
+        { "id": "p30", "text": "When that count isn't zero, you have your lead." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 113.6,
+      "endS": 133.36,
+      "phrases": [
+        { "id": "p31", "text": "Find the Daily Report Email row." },
+        { "id": "p32", "text": "Read across it." },
+        { "id": "p33", "text": "Scheduled daily at six. Last ran today at six." },
+        { "id": "p34", "text": "Next run, tomorrow at six. Status, active." },
+        { "id": "p35", "text": "A missing report usually shows here as a stale last run or a status that isn't active." },
+        { "id": "p36", "text": "Read it, never edit it." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 133.36,
+      "endS": 149.44,
+      "phrases": [
+        { "id": "p37", "text": "Now build the ticket." },
+        { "id": "p38", "text": "Name the report, the location scope, and the date range you ran it with." },
+        { "id": "p39", "text": "For a scheduled report, add the job's last run, next run, and status." },
+        { "id": "p40", "text": "Attach a screenshot. Leave the demo-tenant number quirks out of it." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 149.44,
+      "endS": 167.158,
+      "phrases": [
+        { "id": "p41", "text": "That's the playbook." },
+        { "id": "p42", "text": "Name the symptom." },
+        { "id": "p43", "text": "Wrong or empty means the filter bar." },
+        { "id": "p44", "text": "Never arrived means Scheduled Reports and the Task Scheduler." },
+        { "id": "p45", "text": "Rule out the demo artifact, escalate with the filters and the run times," },
+        { "id": "p46", "text": "and change nothing along the way." }
+      ]
+    }
+  ],
+  "output": "WC-PB-09-reports-wrong-v1.1"
+}

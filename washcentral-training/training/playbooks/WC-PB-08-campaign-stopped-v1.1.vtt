@@ -1,0 +1,294 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.339
+Start in Marketing, on Campaigns.
+
+p02
+00:00:03.548 --> 00:00:06.184
+Four tiles across the top, and one is the headline: zero sent this month.
+
+p03
+00:00:06.502 --> 00:00:07.647
+When a manager says nothing went out, that tile confirms it at the network level.
+
+p04
+00:00:08.749 --> 00:00:13.079
+Sends have stalled.
+
+p05
+00:00:13.370 --> 00:00:17.264
+This is bigger than one missed text.
+
+p06
+00:00:17.742 --> 00:00:19.155
+Drop to the campaign list. Read, don't click.
+
+p07
+00:00:19.393 --> 00:00:20.860
+The column that matters is status.
+
+p08
+00:00:21.530 --> 00:00:23.488
+A draft was never launched.
+
+p09
+00:00:23.693 --> 00:00:25.221
+A completed campaign already finished its run.
+
+p10
+00:00:25.543 --> 00:00:29.398
+Neither will send now.
+
+p11
+00:00:29.767 --> 00:00:34.480
+Only scheduled and active campaigns are eligible, so those rows are the investigation.
+
+p12
+00:00:34.880 --> 00:00:36.830
+Look closer at the eligible rows.
+
+p13
+00:00:37.423 --> 00:00:38.492
+Two carry a pill: weather paused, six locations.
+
+p14
+00:00:38.807 --> 00:00:40.993
+That is a built-in hold, not an error.
+
+p15
+00:00:41.525 --> 00:00:44.080
+The platform is holding sends at those six sites on purpose.
+
+p16
+00:00:44.446 --> 00:00:47.694
+Name the pill in the ticket, and route the config question.
+
+p17
+00:00:47.993 --> 00:00:53.194
+Where it is set is not visible here.
+
+p18
+00:00:53.760 --> 00:00:55.812
+Now Marketing, Deliverability.
+
+p19
+00:00:57.035 --> 00:00:59.948
+The banner is the second reason a campaign goes quiet.
+
+p20
+00:01:00.449 --> 00:01:02.659
+Spam complaints on Flash Sale Weekend hit point one eight percent
+
+p21
+00:01:02.945 --> 00:01:06.537
+against a point one zero threshold,
+
+p22
+00:01:07.031 --> 00:01:10.210
+so the platform recommends pausing sends to protect the domain.
+
+p23
+00:01:10.869 --> 00:01:13.592
+A campaign can look active and still be held here.
+
+p24
+00:01:14.000 --> 00:01:15.681
+Sweep the numbers underneath.
+
+p25
+00:01:17.180 --> 00:01:20.942
+In the metrics list, spam complaint rate is flagged for action.
+
+p26
+00:01:21.300 --> 00:01:23.451
+That flag is what the banner reacts to.
+
+p27
+00:01:24.483 --> 00:01:27.099
+Below it sit the engagement suppression toggles,
+
+p28
+00:01:28.206 --> 00:01:31.560
+live switches that decide who the platform stops emailing.
+
+p29
+00:01:31.966 --> 00:01:32.916
+Note their state.
+
+p30
+00:01:33.212 --> 00:01:35.174
+Never flip one while diagnosing.
+
+p31
+00:01:35.718 --> 00:01:37.172
+Third stop: the engine. Settings, Automation, Task Scheduler.
+
+p32
+00:01:37.397 --> 00:01:39.068
+Eighteen tasks, sixteen active, zero failed.
+
+p33
+00:01:39.322 --> 00:01:40.476
+Read zero failed first.
+
+p34
+00:01:40.912 --> 00:01:46.419
+The scheduling engine is healthy,
+
+p35
+00:01:46.714 --> 00:01:53.077
+so a stopped campaign is more likely a status or a guardrail than a broken job.
+
+p36
+00:01:53.338 --> 00:01:55.819
+A positive number here would change that instantly.
+
+p37
+00:01:56.240 --> 00:01:58.322
+Find the SMS Campaigns row.
+
+p38
+00:01:58.722 --> 00:02:01.192
+This is the heartbeat of outbound texting.
+
+p39
+00:02:01.479 --> 00:02:04.071
+It runs hourly, it last ran an hour ago,
+
+p40
+00:02:04.282 --> 00:02:08.150
+it is due again in fifty-two minutes, and its status is active.
+
+p41
+00:02:08.427 --> 00:02:11.290
+An eligible, unpaused campaign that is still silent, plus a stale or inactive row here?
+
+p42
+00:02:11.491 --> 00:02:15.434
+That is your evidence.
+
+p43
+00:02:16.256 --> 00:02:17.852
+Fourth stop: the trail. Settings, Automation, Mass SMS Log.
+
+p44
+00:02:18.433 --> 00:02:21.852
+One row per recipient, with a status on each.
+
+p45
+00:02:22.366 --> 00:02:25.047
+Today's capture returned a fetch error and zero entries.
+
+p46
+00:02:25.654 --> 00:02:28.829
+Do not read that as nothing sent.
+
+p47
+00:02:29.228 --> 00:02:35.280
+Confirm the data loaded before you tell anyone the messages never went out.
+
+p48
+00:02:35.731 --> 00:02:37.247
+Last angle: money. Open Billing, then Usage and Billing.
+
+p49
+00:02:37.710 --> 00:02:40.201
+Two tabs matter.
+
+p50
+00:02:40.695 --> 00:02:41.824
+Invoices shows one open, an unpaid bill.
+
+p51
+00:02:42.153 --> 00:02:45.036
+Spending Alerts is where a usage cap would live.
+
+p52
+00:02:45.361 --> 00:02:47.745
+Both are places to check, not confirmed causes.
+
+p53
+00:02:48.051 --> 00:02:50.949
+Name the tab and the count.
+
+p54
+00:02:51.243 --> 00:02:54.755
+Do not assert the mechanism.
+
+p55
+00:02:55.200 --> 00:02:57.623
+Stay on Overview and read Usage by Source.
+
+p56
+00:02:57.623 --> 00:03:01.302
+Every row is a campaign, an automation, or a transactional send,
+
+p57
+00:03:01.302 --> 00:03:03.118
+with volume and cost this period.
+
+p58
+00:03:03.118 --> 00:03:06.637
+If the ticket names a campaign, this panel settles it:
+
+p59
+00:03:06.637 --> 00:03:09.656
+did it send anything this month, and how much.
+
+p60
+00:03:10.131 --> 00:03:11.601
+Now build the ticket.
+
+p61
+00:03:12.456 --> 00:03:15.548
+The campaign name, its type and status chip, the weather pause pill if present.
+
+p62
+00:03:15.835 --> 00:03:17.908
+The deliverability signal.
+
+p63
+00:03:18.240 --> 00:03:19.778
+The scheduler timestamps, last run and next run.
+
+p64
+00:03:20.186 --> 00:03:23.932
+State which gate you found.
+
+p65
+00:03:24.312 --> 00:03:25.931
+Resuming the campaign happens in production with the right role.
+
+p66
+00:03:26.322 --> 00:03:30.676
+Never here.
+
+p67
+00:03:31.120 --> 00:03:32.786
+That's the narrowing flow.
+
+p68
+00:03:33.130 --> 00:03:36.187
+Status first, because draft and completed never send.
+
+p69
+00:03:36.436 --> 00:03:38.603
+Deliverability for a reputation hold.
+
+p70
+00:03:39.179 --> 00:03:40.717
+Task Scheduler for the heartbeat.
+
+p71
+00:03:40.945 --> 00:03:42.279
+The log for the trail.
+
+p72
+00:03:42.556 --> 00:03:44.902
+Billing for a cap or an open invoice.
+
+p73
+00:03:45.202 --> 00:03:48.142
+You escalated with evidence and moved nothing.
+

@@ -1,0 +1,440 @@
+{
+  "lesson": "WC-10-03",
+  "audioMaster": "training/module10-it-support/WC-10-03-full-narration-v1.0.mp3",
+  "audioDurationS": 167.706,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in the left rail, under I-T and Support.",
+      "startS": 0,
+      "endS": 3.184,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The Support group stacks your ticket tools together.",
+      "startS": 3.737,
+      "endS": 6.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Right below Support Tickets sits Help Desk, Zoho.",
+      "startS": 6.622,
+      "endS": 10.082,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "One is WashCentral's own queue.",
+      "startS": 10.534,
+      "endS": 12.536,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "The other is meant to mirror a help desk that lives outside the platform.",
+      "startS": 12.821,
+      "endS": 16.688,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Open Help Desk, Zoho.",
+      "startS": 17.197,
+      "endS": 18.261,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The frame loads fine.",
+      "startS": 18.461,
+      "endS": 19.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "It is the data that is missing.",
+      "startS": 19.643,
+      "endS": 22.7,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Every count across the top shows a dash,",
+      "startS": 22.968,
+      "endS": 25.238,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "the status and priority filters have nothing to filter,",
+      "startS": 25.456,
+      "endS": 30.576,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "and the card in the middle says it plainly: Zoho Desk not connected.",
+      "startS": 30.848,
+      "endS": 32.776,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "The page even hands you the next move, a button straight to its settings.",
+      "startS": 33.189,
+      "endS": 36.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Head to Settings, Integrations, Zoho Desk.",
+      "startS": 37.412,
+      "endS": 40.557,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "This is the control room for the connection.",
+      "startS": 40.978,
+      "endS": 43.119,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Whether Zoho talks to WashCentral is read from this one page,",
+      "startS": 43.594,
+      "endS": 47.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "so it's where support work on this integration starts.",
+      "startS": 47.616,
+      "endS": 50.201,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Look at the header.",
+      "startS": 50.64,
+      "endS": 51.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "A warning badge reads Not Configured.",
+      "startS": 51.933,
+      "endS": 54.474,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "That's the whole story in two words.",
+      "startS": 54.91,
+      "endS": 56.819,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "The chips beside it name how the link would work once someone sets it up:",
+      "startS": 57.32,
+      "endS": 61.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "oh-auth, a live view, a server-side token.",
+      "startS": 61.578,
+      "endS": 65.119,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Run across the four tiles.",
+      "startS": 65.52,
+      "endS": 67.321,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Connection, not set.",
+      "startS": 68.944,
+      "endS": 70.449,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Data center, US.",
+      "startS": 70.674,
+      "endS": 72.202,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Sync direction, both.",
+      "startS": 72.425,
+      "endS": 73.902,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "So the tenant has picked how it wants to sync, but no one has authorized the link yet.",
+      "startS": 74.793,
+      "endS": 79.171,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Drop into the Credentials group.",
+      "startS": 79.6,
+      "endS": 81.196,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Client I-D, blank.",
+      "startS": 82.379,
+      "endS": 83.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Secret, not set.",
+      "startS": 83.864,
+      "endS": 84.31,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Access and refresh tokens, not set.",
+      "startS": 84.666,
+      "endS": 86.006,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "With nothing stored here, there's no live line to Zoho,",
+      "startS": 86.465,
+      "endS": 89.121,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "which is exactly why the Help Desk view had nothing to show.",
+      "startS": 89.709,
+      "endS": 96.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Keep reading down.",
+      "startS": 96.72,
+      "endS": 97.725,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Routing, sync, behavior, mapping.",
+      "startS": 98.181,
+      "endS": 101.297,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "These rules decide where tickets land and which way they flow once the link goes live.",
+      "startS": 101.836,
+      "endS": 106.231,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Notice Enabled says Yes while the status still says Not Configured.",
+      "startS": 106.749,
+      "endS": 111.251,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Switched on in intent, not yet connected.",
+      "startS": 111.553,
+      "endS": 114.279,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Two tabs sit under the header.",
+      "startS": 114.72,
+      "endS": 116.395,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Settings, where you are, and Instructions.",
+      "startS": 116.86,
+      "endS": 119.732,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "The full setup walk-through lives under Instructions, and in lesson twelve point nine.",
+      "startS": 120.238,
+      "endS": 124.674,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "For today, stay on Settings and just read.",
+      "startS": 125.209,
+      "endS": 127.806,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Top right, two buttons.",
+      "startS": 128.24,
+      "endS": 129.709,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Test Connection, and Edit Configuration.",
+      "startS": 129.709,
+      "endS": 132.569,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Test Connection pings Zoho for real.",
+      "startS": 132.569,
+      "endS": 135.796,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Edit Configuration opens the credentials.",
+      "startS": 135.796,
+      "endS": 137.918,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "Both touch the live integration,",
+      "startS": 137.918,
+      "endS": 139.755,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "so neither one gets clicked in a read-only check,",
+      "startS": 139.755,
+      "endS": 143.061,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "or in support unless the change is yours to make.",
+      "startS": 143.061,
+      "endS": 146.958,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "So, Help Desk, Zoho.",
+      "startS": 147.44,
+      "endS": 148.665,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "It's an embedded window into an outside help desk,",
+      "startS": 148.868,
+      "endS": 149.559,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "empty here because the integration is Not Configured.",
+      "startS": 150.127,
+      "endS": 152.977,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "When a real client's Zoho tickets go quiet, this is the page you open,",
+      "startS": 153.231,
+      "endS": 156.293,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "and Token Expiry is the first field you read.",
+      "startS": 156.654,
+      "endS": 163.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "You never have to click Test Connection to know where you stand.",
+      "startS": 163.977,
+      "endS": 167.247,
+      "timing": "silence"
+    }
+  ]
+}

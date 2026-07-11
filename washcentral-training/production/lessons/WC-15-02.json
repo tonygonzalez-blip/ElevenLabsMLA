@@ -1,0 +1,918 @@
+{
+  "lesson": "WC-15-02",
+  "title": "Migration: Parity & Conversations",
+  "audioMaster": "training/module15-migration/WC-15-02-full-narration-v1.0.mp3",
+  "audioDurationS": 149.316,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "pageTitle": {
+      "js": "[...document.querySelectorAll('strong')].find(e=>/^Command Center$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().top<120&&e.getBoundingClientRect().left<600)",
+      "textRect": true
+    },
+    "railContainer": {
+      "selector": ".wc-rail-items"
+    },
+    "askShyne": {
+      "selector": ".a-btn-ai"
+    },
+    "railExpandToggle": {
+      "selector": ".wc-rail-expand-toggle"
+    },
+    "analytics": {
+      "selector": "button.wc-rail-item[data-rail-key=\"analytics\"]"
+    },
+    "marketing": {
+      "selector": "button.wc-rail-item[data-rail-key=\"marketing\"]"
+    },
+    "crm": {
+      "selector": "button.wc-rail-item[data-rail-key=\"crm\"]"
+    },
+    "inventory": {
+      "selector": "button.wc-rail-item[data-rail-key=\"inventory\"]"
+    },
+    "team": {
+      "selector": "button.wc-rail-item[data-rail-key=\"team\"]"
+    },
+    "operations": {
+      "selector": "button.wc-rail-item[data-rail-key=\"operations\"]"
+    },
+    "digital": {
+      "selector": "button.wc-rail-item[data-rail-key=\"digital\"]"
+    },
+    "itsupport": {
+      "selector": "button.wc-rail-item[data-rail-key=\"compliance\"]"
+    },
+    "billing": {
+      "selector": "button.wc-rail-item[data-rail-key=\"billing\"]"
+    },
+    "academy": {
+      "selector": "button.wc-rail-item[data-rail-key=\"training\"]"
+    },
+    "reports": {
+      "selector": "button.wc-rail-item[title=\"Reports\"]"
+    },
+    "settings": {
+      "selector": "button.wc-rail-item[title=\"Settings\"]"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "railLabeled": "(()=>{const b=[...document.querySelectorAll('button.wc-rail-item')].find(e=>e.getAttribute('data-rail-key')==='team');return !!b && b.getBoundingClientRect().width>60})()",
+    "railComplete": "(()=>{const items=[...document.querySelectorAll('button.wc-rail-item')];const labels=items.map(b=>((b.querySelector('.wc-rail-label')||{}).textContent||b.getAttribute('title')||'').trim());const need=['Command Center','Analytics','Marketing','CRM','Sales','Inventory','Team','Operations','Digital','IT & Support','Billing','Academy','Reports','Settings'];return items.length===14 && need.every(n=>labels.includes(n)) && location.pathname.endsWith('/command-center.html')})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railExpandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "railLabeled",
+      "postcondition": "railLabeled",
+      "timeoutMs": 4000,
+      "note": "off-camera: guarantee the module rail is in its default LABELED state (icon + text label under each module) so the regrouped modules read by name. Probe-verified July 11: default is labeled (a rail item is 73px wide with a visible .wc-rail-label); the .wc-rail-expand-toggle flips labeled<->icon-only. Skipped whenever already labeled (the normal case). This is a local view preference, not a tenant mutation."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page identity before capture (startUrl command-center.html — the whole-platform home; step 1 establishes 'the platform looks different' here). Nothing on this page is ever clicked."
+    },
+    {
+      "op": "assert",
+      "at": -1.0,
+      "predicate": "railLabeled",
+      "note": "pre-roll: preflight staged the module rail labeled; abort the take if icon-only"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "railComplete",
+      "note": "loaded: all 14 rail modules present with their labels (Command Center, Analytics, Marketing, CRM, Sales, Inventory, Team, Operations, Digital, IT & Support, Billing, Academy, Reports, Settings)"
+    },
+    {
+      "op": "watch",
+      "key": "pageHeld",
+      "from": 1,
+      "to": 148.8,
+      "predicate": "onCommandCenter",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: nothing is clicked across all 8 steps — the page never navigates. Every rail module and the header controls (Search, All Locations, Ask Shyne) are pointed at or held near, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "railHeld",
+      "from": 1,
+      "to": 148.8,
+      "predicate": "railComplete",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "mutation guardrail: all 14 rail modules stay present and named the whole lesson — proves the interface was not altered, no module opened, no sub-panel/dialog left open, nothing on the shared live tenant changed."
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "pageTitle",
+        "offset": [
+          40,
+          64
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): enter from the bottom-left onto the whole-platform home as 'a migrated client says the platform looks different'"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.9,
+      "key": "pageTitleRect",
+      "target": "pageTitle",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 1.0,
+      "key": "railRect",
+      "target": "railContainer"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "askShyneRect",
+      "target": "askShyne"
+    },
+    {
+      "op": "log-rects",
+      "at": 1.2,
+      "key": "rail",
+      "targets": [
+        "analytics",
+        "marketing",
+        "crm",
+        "inventory",
+        "team",
+        "operations",
+        "digital",
+        "itsupport",
+        "billing",
+        "academy",
+        "reports",
+        "settings"
+      ],
+      "note": "the module rail is static the whole lesson; log every module rect once, up front, for the step-5/6 callouts and highlights"
+    },
+    {
+      "op": "move",
+      "at": 1.5,
+      "to": {
+        "target": "pageTitle",
+        "offset": [
+          40,
+          64
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01-p02): settle just under the Command Center title (callout ①) while the two client questions are framed"
+    },
+    {
+      "op": "move",
+      "at": 5.4,
+      "to": {
+        "point": [
+          640,
+          500
+        ]
+      },
+      "note": "step 1 (p03-p04): ease over the whole interface for 'two kinds of answer, and one hard rule'"
+    },
+    {
+      "op": "move",
+      "at": 10.6,
+      "to": {
+        "point": [
+          720,
+          560
+        ]
+      },
+      "note": "step 2 (p05): 'Start with the big picture' — rest over the platform (parity is an attributed claim, not a control to point at)"
+    },
+    {
+      "op": "move",
+      "at": 16.3,
+      "to": {
+        "point": [
+          200,
+          460
+        ]
+      },
+      "note": "step 2 (p07): drift beside the module rail as '179 modules carried forward' is quoted — the rail is the modules, but we do NOT tick through them ('not claiming you counted')"
+    },
+    {
+      "op": "move",
+      "at": 23.7,
+      "to": {
+        "point": [
+          640,
+          520
+        ]
+      },
+      "note": "step 2 (p09-p10): ease back for 'Say per the documentation. You are quoting it.'"
+    },
+    {
+      "op": "move",
+      "at": 30.0,
+      "to": {
+        "point": [
+          700,
+          640
+        ]
+      },
+      "note": "step 3 (p11): architecture is a second attributed layer — rest over the interface"
+    },
+    {
+      "op": "move",
+      "at": 36.9,
+      "to": {
+        "point": [
+          620,
+          560
+        ]
+      },
+      "note": "step 3 (p13): 'rate limiting on the busy screens' — drift over the live dashboard"
+    },
+    {
+      "op": "move",
+      "at": 43.4,
+      "to": {
+        "point": [
+          560,
+          500
+        ]
+      },
+      "note": "step 3 (p15): 'not something you can point to on screen' — ease to a neutral hold (callout ③ is a screen badge, anchored to nothing, matching the narration)"
+    },
+    {
+      "op": "move",
+      "at": 46.6,
+      "to": {
+        "point": [
+          540,
+          460
+        ]
+      },
+      "note": "step 4 (p16): 'keep it to what is documented' — neutral hold"
+    },
+    {
+      "op": "log-rect",
+      "at": 50.2,
+      "key": "marketingRect",
+      "target": "marketing"
+    },
+    {
+      "op": "move",
+      "at": 50.3,
+      "to": {
+        "target": "marketing",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p17): 'Release two moves Marketing onto an event-driven backbone' — point beside the Marketing rail module (a real, nameable module; never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 55.5,
+      "to": {
+        "point": [
+          600,
+          520
+        ]
+      },
+      "note": "step 4 (p18): 'Release three brings event-driven microservices' — nothing to point at; ease off"
+    },
+    {
+      "op": "move",
+      "at": 58.5,
+      "to": {
+        "point": [
+          640,
+          540
+        ]
+      },
+      "note": "step 4 (p20): 'If they push for a date, that is parked' — hold neutral"
+    },
+    {
+      "op": "move",
+      "at": 62.3,
+      "to": {
+        "point": [
+          200,
+          340
+        ]
+      },
+      "note": "step 5 (p21): 'where did my feature go' — approach the module rail (the answer lives here)"
+    },
+    {
+      "op": "move",
+      "at": 64.3,
+      "to": {
+        "target": "team",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p22-p23): 'Whole modules were regrouped. Employees, Gamification, and the Scheduler live under Team now' — point beside Team (highlight on Team)"
+    },
+    {
+      "op": "move",
+      "at": 67.9,
+      "to": {
+        "target": "operations",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p24): 'Maintenance, Incidents, and appointment Scheduling are under Operations'"
+    },
+    {
+      "op": "move",
+      "at": 71.8,
+      "to": {
+        "target": "digital",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p25): 'Mobile and the Portal are under Digital'"
+    },
+    {
+      "op": "move",
+      "at": 75.7,
+      "to": {
+        "target": "itsupport",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p26): 'Support and Audit sit under IT and Support'"
+    },
+    {
+      "op": "move",
+      "at": 78.2,
+      "to": {
+        "target": "billing",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): 'And Billing ... are brand new'"
+    },
+    {
+      "op": "move",
+      "at": 80.3,
+      "to": {
+        "target": "academy",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): '... and Academy are brand new'"
+    },
+    {
+      "op": "move",
+      "at": 84.6,
+      "to": {
+        "target": "crm",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p28-p29): 'Some features just moved or became a button. Retention Log is a button on the Customer List' — the Customer List lives under CRM (point beside CRM)"
+    },
+    {
+      "op": "move",
+      "at": 91.9,
+      "to": {
+        "target": "crm",
+        "offset": [
+          86,
+          32
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p30): 'Generate Invoices is a button on House Accounts' — House Accounts is also under CRM; hold beside CRM"
+    },
+    {
+      "op": "move",
+      "at": 95.1,
+      "to": {
+        "target": "settings",
+        "offset": [
+          72,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p31): 'Rewards moved into Settings, under Services' — point beside Settings"
+    },
+    {
+      "op": "move",
+      "at": 98.1,
+      "to": {
+        "target": "inventory",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p32): 'Adjustments moved into Inventory'"
+    },
+    {
+      "op": "move",
+      "at": 100.6,
+      "to": {
+        "target": "analytics",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p33): 'Forecasting is under Analytics'"
+    },
+    {
+      "op": "move",
+      "at": 102.8,
+      "to": {
+        "target": "reports",
+        "offset": [
+          86,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p34): 'Report scheduling is on the Reports hub'"
+    },
+    {
+      "op": "move",
+      "at": 105.6,
+      "to": {
+        "point": [
+          440,
+          520
+        ]
+      },
+      "note": "step 6 (p35-p36): 'The full map is in our own verified records, so you are citing what we saw' — ease off the rail"
+    },
+    {
+      "op": "move",
+      "at": 109.5,
+      "to": {
+        "point": [
+          440,
+          520
+        ]
+      },
+      "note": "step 6 tail: hold neutral"
+    },
+    {
+      "op": "move",
+      "at": 112.0,
+      "to": {
+        "point": [
+          180,
+          240
+        ]
+      },
+      "note": "step 7 (p37): 'the rule that keeps you honest' — return to the top of the rail"
+    },
+    {
+      "op": "move",
+      "at": 114.6,
+      "to": {
+        "point": [
+          180,
+          440
+        ]
+      },
+      "note": "step 7 (p38): 'you do not say it is gone' — begin a slow scan down the rail"
+    },
+    {
+      "op": "move",
+      "at": 119.5,
+      "to": {
+        "point": [
+          180,
+          640
+        ]
+      },
+      "note": "step 7 (p39): 'PIN Codes, Loyalty Discounts, Tech Commissions, Site Watch' — keep scanning; these features are NOT in the rail (that is the point)"
+    },
+    {
+      "op": "move",
+      "at": 126.8,
+      "to": {
+        "point": [
+          180,
+          800
+        ]
+      },
+      "note": "step 7 (p40): 'and a few others are not visible today' — reach the bottom of the rail, still not found"
+    },
+    {
+      "op": "move",
+      "at": 130.3,
+      "to": {
+        "point": [
+          420,
+          520
+        ]
+      },
+      "note": "step 7 (p41): 'their status is being confirmed' — ease off the rail"
+    },
+    {
+      "op": "move",
+      "at": 133.3,
+      "to": {
+        "point": [
+          420,
+          520
+        ]
+      },
+      "note": "step 7 (p42-p43): 'Log the ask, and let it be answered properly' — hold neutral"
+    },
+    {
+      "op": "move",
+      "at": 137.0,
+      "to": {
+        "point": [
+          600,
+          460
+        ]
+      },
+      "note": "step 8 (p44): 'So, three moves' — recap, pulling wide"
+    },
+    {
+      "op": "move",
+      "at": 138.2,
+      "to": {
+        "point": [
+          760,
+          520
+        ]
+      },
+      "note": "step 8 (p45): 'Give the parity story and attribute it' — gesture over the whole platform"
+    },
+    {
+      "op": "move",
+      "at": 140.8,
+      "to": {
+        "point": [
+          200,
+          460
+        ]
+      },
+      "note": "step 8 (p46): 'Locate the specific feature from the verified map' — back to the rail (the map)"
+    },
+    {
+      "op": "move",
+      "at": 144.0,
+      "to": {
+        "point": [
+          640,
+          540
+        ]
+      },
+      "note": "step 8 (p47): 'And never, ever call something gone' — ease off"
+    },
+    {
+      "op": "move",
+      "at": 146.8,
+      "to": {
+        "point": [
+          1500,
+          900
+        ]
+      },
+      "note": "step 8 (p48): 'Confirm first, then answer' — final park, clear of the completion card and captions"
+    },
+    {
+      "op": "assert",
+      "at": 148.9,
+      "predicate": "onCommandCenter",
+      "note": "end state: still on the Command Center home, never navigated"
+    },
+    {
+      "op": "assert",
+      "at": 149.1,
+      "predicate": "railComplete",
+      "note": "end state: all 14 rail modules intact — nothing was clicked, opened, or changed on the shared live tenant"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "pageTitleRect",
+        "place": "below-left",
+        "from": 1.2,
+        "to": 9.9
+      },
+      {
+        "n": 2,
+        "anchor": "railRect",
+        "place": "right",
+        "from": 10.7,
+        "to": 29.2
+      },
+      {
+        "n": 3,
+        "anchor": "screen:1050,620",
+        "place": "at",
+        "from": 30.0,
+        "to": 46.0
+      },
+      {
+        "n": 4,
+        "anchor": "rail.marketing",
+        "place": "right",
+        "from": 50.4,
+        "to": 57.0
+      },
+      {
+        "n": 5,
+        "anchor": "rail.team",
+        "place": "right",
+        "from": 62.5,
+        "to": 84.0
+      },
+      {
+        "n": 6,
+        "anchor": "rail.crm",
+        "place": "right",
+        "from": 84.7,
+        "to": 111.6
+      },
+      {
+        "n": 7,
+        "anchor": "railRect",
+        "place": "right",
+        "from": 112.1,
+        "to": 136.3
+      },
+      {
+        "n": 8,
+        "anchor": "railRect",
+        "place": "right",
+        "from": 137.3,
+        "to": 146.9
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "askShyneRect",
+        "from": 11.5,
+        "to": 18.5,
+        "color": "#dc2626",
+        "note": "safety guardrail: Ask Shyne is the only send-type control on the captured page (an AI query). This browse-only tour never activates it; a red do-not-click ring flags it while the header is in the wide frame. The narration stages no click (see residual R2)."
+      },
+      {
+        "anchor": "rail.marketing",
+        "from": 50.6,
+        "to": 55.3,
+        "note": "step 4 (p17): Marketing module — Release 2 backbone target"
+      },
+      {
+        "anchor": "rail.team",
+        "from": 66.25,
+        "to": 68.17,
+        "note": "step 5 (p23): Employees, Gamification, Scheduler -> Team"
+      },
+      {
+        "anchor": "rail.operations",
+        "from": 68.17,
+        "to": 72.15,
+        "note": "step 5 (p24): Maintenance, Incidents, Scheduling -> Operations"
+      },
+      {
+        "anchor": "rail.digital",
+        "from": 72.15,
+        "to": 76.05,
+        "note": "step 5 (p25): Mobile, Portal -> Digital"
+      },
+      {
+        "anchor": "rail.itsupport",
+        "from": 76.05,
+        "to": 78.54,
+        "note": "step 5 (p26): Support, Audit -> IT & Support"
+      },
+      {
+        "anchor": "rail.billing",
+        "from": 78.54,
+        "to": 80.55,
+        "note": "step 5 (p27): Billing is a new module"
+      },
+      {
+        "anchor": "rail.academy",
+        "from": 80.55,
+        "to": 83.9,
+        "note": "step 5 (p27): Academy is a new module"
+      },
+      {
+        "anchor": "rail.crm",
+        "from": 88.71,
+        "to": 95.3,
+        "note": "step 6 (p29-p30): Retention Log (Customer List) and Generate Invoices (House Accounts) are CRM buttons"
+      },
+      {
+        "anchor": "rail.settings",
+        "from": 95.3,
+        "to": 98.32,
+        "note": "step 6 (p31): Rewards -> Settings -> Services"
+      },
+      {
+        "anchor": "rail.inventory",
+        "from": 98.32,
+        "to": 100.87,
+        "note": "step 6 (p32): Adjustments -> Inventory"
+      },
+      {
+        "anchor": "rail.analytics",
+        "from": 100.87,
+        "to": 103.08,
+        "note": "step 6 (p33): Forecasting -> Analytics"
+      },
+      {
+        "anchor": "rail.reports",
+        "from": 103.08,
+        "to": 105.61,
+        "note": "step 6 (p34): Report scheduling -> Reports hub"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 46.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "steps 1-3 wide: the attributed parity story is about the whole platform, and the narration says these claims cannot be pointed to on screen"
+      },
+      {
+        "t": 49.0,
+        "z": 1.15,
+        "cx": 835,
+        "cy": 470,
+        "ease": true,
+        "note": "step 4: gentle push to bring the module rail and the Marketing module closer"
+      },
+      {
+        "t": 61.5,
+        "z": 1.15,
+        "cx": 835,
+        "cy": 470
+      },
+      {
+        "t": 62.5,
+        "z": 1.4,
+        "cx": 686,
+        "cy": 560,
+        "ease": true,
+        "note": "step 5: zoom onto the rail block Team..Academy for the regrouping walk"
+      },
+      {
+        "t": 84.2,
+        "z": 1.4,
+        "cx": 686,
+        "cy": 560
+      },
+      {
+        "t": 84.9,
+        "z": 1.08,
+        "cx": 888,
+        "cy": 540,
+        "ease": true,
+        "note": "step 6: pull back so the whole rail (Analytics down to Settings) is in frame for the moved-feature destinations"
+      },
+      {
+        "t": 136.3,
+        "z": 1.08,
+        "cx": 888,
+        "cy": 540,
+        "note": "hold on the whole rail through step 7 (the absent features are not on it)"
+      },
+      {
+        "t": 137.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 8: pull wide for the recap and close"
+      },
+      {
+        "t": 149.316,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Parity & Conversations — Complete",
+      "from": 147.5,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 147.2
+  },
+  "output": "WC-15-02-parity-conversations-v1.1",
+  "orderedMentions": [
+    "Team",
+    "Operations",
+    "Digital",
+    "IT and Support",
+    "Billing",
+    "Academy",
+    "Settings",
+    "Inventory",
+    "Analytics",
+    "Reports"
+  ],
+  "neverClick": [
+    "logout",
+    "log ?out",
+    "ask shyne",
+    "\\bswitch\\b",
+    "migrate",
+    "go live",
+    "revert",
+    "\\bsend\\b",
+    "submit",
+    "\\bsave\\b",
+    "save changes",
+    "confirm",
+    "\\bdelete\\b",
+    "approve",
+    "refund",
+    "export",
+    "resolve",
+    "\\bassign\\b",
+    "reassign",
+    "stay logged in",
+    "\\bsearch\\b",
+    "all locations",
+    "command center",
+    "analytics",
+    "marketing",
+    "\\bcrm\\b",
+    "\\bsales\\b",
+    "inventory",
+    "\\bteam\\b",
+    "operations",
+    "digital",
+    "it & support",
+    "billing",
+    "academy",
+    "reports",
+    "settings"
+  ]
+}

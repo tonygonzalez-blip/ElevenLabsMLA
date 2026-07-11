@@ -1,0 +1,274 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:04.232
+Start in Settings, under AI Agent, and open Conversations.
+
+p02
+00:00:04.816 --> 00:00:08.868
+This is the customer facing agent, the one your customers text and talk to.
+
+p03
+00:00:09.088 --> 00:00:10.663
+Not Ask Shyne in the header. That's a staff tool, and a different playbook.
+
+p04
+00:00:10.881 --> 00:00:17.953
+The transcript is the ticket, so this log is always your first stop.
+
+p05
+00:00:18.400 --> 00:00:20.422
+Read the layout before you search.
+
+p06
+00:00:21.369 --> 00:00:24.435
+Six KPIs across the top cover thirty days.
+
+p07
+00:00:24.830 --> 00:00:26.026
+Below them, a table: customer, channel, topic, status, message count, sentiment.
+
+p08
+00:00:26.478 --> 00:00:30.641
+Today's demo tenant shows no conversations at all, while Analytics reports thousands.
+
+p09
+00:00:31.244 --> 00:00:41.389
+That gap is a demo artifact. Trust this log only after it actually loads.
+
+p10
+00:00:41.840 --> 00:00:43.891
+Now narrow to the chat in question.
+
+p11
+00:00:43.891 --> 00:00:47.499
+Search or filter on the customer, the channel, or the topic.
+
+p12
+00:00:47.499 --> 00:00:51.090
+The message count tells you how long the exchange dragged on,
+
+p13
+00:00:51.090 --> 00:00:53.141
+and sentiment tells you how it felt.
+
+p14
+00:00:53.141 --> 00:00:57.805
+Opening the row gives you the full back and forth plus the conversation ID.
+
+p15
+00:00:57.805 --> 00:00:59.856
+That ID rides along into your ticket.
+
+p16
+00:01:00.320 --> 00:01:01.181
+Next question: did it hand off when it should have? Click Escalations.
+
+p17
+00:01:01.586 --> 00:01:03.042
+Seven open, three claimed, one SLA breach.
+
+p18
+00:01:03.524 --> 00:01:04.800
+Average wait, six minutes and change.
+
+p19
+00:01:05.108 --> 00:01:13.736
+This queue is where the agent admits it needs a human.
+
+p20
+00:01:14.160 --> 00:01:16.411
+The reason column is the diagnostic.
+
+p21
+00:01:16.907 --> 00:01:18.893
+Negative sentiment on a billing dispute. A refund above the cap.
+
+p22
+00:01:19.399 --> 00:01:20.882
+A customer asking for a manager. Eight turns with no resolution.
+
+p23
+00:01:21.445 --> 00:01:23.349
+Those are the guardrails, and a healthy agent trips them.
+
+p24
+00:01:24.016 --> 00:01:26.039
+If your customer's chat sits here with a sensible reason, the agent behaved.
+
+p25
+00:01:26.607 --> 00:01:38.880
+If it never showed up, that gap is the misbehavior you report.
+
+p26
+00:01:39.280 --> 00:01:40.962
+So where does a handoff land?
+
+p27
+00:01:41.335 --> 00:01:45.370
+In the C-R-M module, under Service Desk, open the Agent Console.
+
+p28
+00:01:45.668 --> 00:01:48.409
+This is the human side of the escalation you just read.
+
+p29
+00:01:48.618 --> 00:01:52.362
+A teammate sets themselves available and picks the case up right here.
+
+p30
+00:01:52.800 --> 00:01:54.359
+Look over the queue controls.
+
+p31
+00:01:54.925 --> 00:01:58.211
+Filters for mine, unassigned, team, and all. Channel chips.
+
+p32
+00:01:59.133 --> 00:01:59.931
+Sort by longest wait or by priority.
+
+p33
+00:02:00.374 --> 00:02:02.848
+Today the queue is empty, so the console panes stay blank.
+
+p34
+00:02:03.532 --> 00:02:10.720
+That's fine. You came to confirm the intake exists, not to claim anything.
+
+p35
+00:02:11.120 --> 00:02:12.897
+Now chase the bad answer. Back in Settings, open the Knowledge Base.
+
+p36
+00:02:13.214 --> 00:02:15.399
+These are the documents the agent searches before it answers a customer.
+
+p37
+00:02:15.776 --> 00:02:24.880
+A wrong answer usually starts here, with an article that went stale or never existed at all.
+
+p38
+00:02:25.280 --> 00:02:27.477
+Read the table, not just the counts.
+
+p39
+00:02:27.908 --> 00:02:30.983
+Status tells you whether an article is indexed and searchable.
+
+p40
+00:02:31.322 --> 00:02:33.228
+Updated tells you how old it is.
+
+p41
+00:02:33.774 --> 00:02:37.210
+Search the topic the customer asked about,
+
+p42
+00:02:37.437 --> 00:02:39.068
+and if nothing comes back, you have probably found your cause.
+
+p43
+00:02:39.841 --> 00:02:44.160
+Leave the add and re-index controls alone. Each one changes the index.
+
+p44
+00:02:44.560 --> 00:02:45.486
+Channel next. Open Channels and Deployment.
+
+p45
+00:02:46.013 --> 00:02:47.610
+Three channels, three of three live.
+
+p46
+00:02:48.354 --> 00:02:49.214
+Thirty day uptime just shy of one hundred percent, latency around four hundred milliseconds.
+
+p47
+00:02:49.500 --> 00:02:59.920
+Healthy numbers up top. The story is in the cards below.
+
+p48
+00:03:00.320 --> 00:03:03.399
+Read all three cards, and touch none of the test controls.
+
+p49
+00:03:03.984 --> 00:03:05.809
+Web chat is installed and live.
+
+p50
+00:03:06.217 --> 00:03:09.398
+SMS is live, with stop and help handled automatically.
+
+p51
+00:03:09.746 --> 00:03:14.662
+Voice is beta, and beta means rougher behavior is expected, so say so up front.
+
+p52
+00:03:15.087 --> 00:03:16.774
+And that nighttime silence complaint? Quiet hours.
+
+p53
+00:03:17.207 --> 00:03:18.128
+The overview page flags T-C-P-A quiet hours on for SMS.
+
+p54
+00:03:18.620 --> 00:03:26.613
+The agent wasn't ignoring anyone. It was honoring the window.
+
+p55
+00:03:27.040 --> 00:03:29.581
+One more page. Analytics.
+
+p56
+00:03:29.581 --> 00:03:32.710
+Thirty eight hundred conversations in thirty days,
+
+p57
+00:03:32.710 --> 00:03:35.471
+and seventy eight percent never needed a human.
+
+p58
+00:03:35.471 --> 00:03:36.935
+That is containment.
+
+p59
+00:03:36.935 --> 00:03:41.224
+Web runs highest, voice lowest, which fits a beta channel.
+
+p60
+00:03:41.224 --> 00:03:46.622
+A channel whose containment has slipped is real evidence the agent is struggling there,
+
+p61
+00:03:46.622 --> 00:03:48.693
+and it belongs in your escalation.
+
+p62
+00:03:49.120 --> 00:03:50.794
+Now write the ticket and stop.
+
+p63
+00:03:51.769 --> 00:03:53.041
+The conversation ID. The channel. The containment context.
+
+p64
+00:03:53.572 --> 00:03:54.305
+Then the finding: a missing escalation row, a stale article,
+
+p65
+00:03:54.940 --> 00:03:56.346
+or a channel state like voice beta or quiet hours.
+
+p66
+00:03:57.030 --> 00:03:58.037
+You read six screens and changed nothing.
+
+p67
+00:03:58.519 --> 00:03:59.956
+Configuration and knowledge edits happen upstream, with the right role.
+
+p68
+00:04:00.330 --> 00:04:15.737
+Your job was the diagnosis, and it's done.
+

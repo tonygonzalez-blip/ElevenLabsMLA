@@ -1,0 +1,448 @@
+{
+  "lesson": "WC-10-05",
+  "audioMaster": "training/module10-it-support/WC-10-05-full-narration-v1.0.mp3",
+  "audioDurationS": 183.719,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the IT and Support module and look at the left rail.",
+      "startS": 0,
+      "endS": 4.154,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Two groups organize it.",
+      "startS": 4.154,
+      "endS": 5.724,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Support sits at the top, holding the tickets, the help desk, and the alerts you work every day.",
+      "startS": 5.724,
+      "endS": 11.493,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Audit sits underneath, for the history questions.",
+      "startS": 11.493,
+      "endS": 13.638,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Today, two of those Support entries are the whole job.",
+      "startS": 13.638,
+      "endS": 16.968,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "Let's find them.",
+      "startS": 16.968,
+      "endS": 17.887,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "First, the Knowledge Base.",
+      "startS": 18.346,
+      "endS": 19.544,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "It's in the Support group, tucked between the help desk and the alerts.",
+      "startS": 19.544,
+      "endS": 23.849,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Picture it as the team's memory.",
+      "startS": 23.849,
+      "endS": 26.082,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "A tech works out a fix, writes it down once, and from then on the answer is a search away.",
+      "startS": 26.082,
+      "endS": 32.405,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Nobody has to solve the same problem from scratch a second time.",
+      "startS": 32.405,
+      "endS": 36,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Open it.",
+      "startS": 36.457,
+      "endS": 36.993,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Here's the honest part of this lesson.",
+      "startS": 37.963,
+      "endS": 39.732,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "On the day we verified, the page did not load.",
+      "startS": 40.088,
+      "endS": 43.083,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "It came back with a plain not-found error, a four oh four, and nothing else on the screen.",
+      "startS": 43.398,
+      "endS": 47.271,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "So the article list, the way it's organized, the write-ups themselves,",
+      "startS": 47.472,
+      "endS": 48.875,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "none of that can be shown to you yet.",
+      "startS": 49.299,
+      "endS": 54.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "This is the reflex worth building.",
+      "startS": 55.394,
+      "endS": 57.087,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "A page is missing, you record exactly that, and you flag it.",
+      "startS": 57.316,
+      "endS": 61.011,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p20",
+      "text": "You never paint in the blank from memory.",
+      "startS": 61.38,
+      "endS": 63.397,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Once it does render, here's why it earns your time.",
+      "startS": 64.024,
+      "endS": 66.528,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "The Knowledge Base is where the how-to and troubleshooting write-ups live.",
+      "startS": 67.038,
+      "endS": 70.344,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "The team norm is simple: close a ticket that taught you something reusable,",
+      "startS": 70.833,
+      "endS": 72.07,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "and you document it here before you move on.",
+      "startS": 72.356,
+      "endS": 76.715,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "The next tech inherits the answer in seconds instead of retracing your whole afternoon.",
+      "startS": 77.154,
+      "endS": 81.798,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Back to the rail.",
+      "startS": 82.371,
+      "endS": 84.02,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Find Training Requests, just under System Alerts.",
+      "startS": 84.02,
+      "endS": 86.27,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "This is the client-training pipeline.",
+      "startS": 86.27,
+      "endS": 88.424,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "Your team files into it and works out of it, so it runs in both directions.",
+      "startS": 88.424,
+      "endS": 93.569,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Open it.",
+      "startS": 94.16,
+      "endS": 94.61,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Same story as before.",
+      "startS": 95.339,
+      "endS": 96.784,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "On verification day it returned the same not-found error and did not render.",
+      "startS": 97.405,
+      "endS": 101.906,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "The counts, the request types, the columns, all parked until a live pass can confirm them.",
+      "startS": 102.227,
+      "endS": 104.992,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "So you do the same thing you did a moment ago.",
+      "startS": 105.327,
+      "endS": 107.967,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Record the missing page.",
+      "startS": 108.265,
+      "endS": 110.352,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "Resist the urge to rebuild it from an old screenshot in your head.",
+      "startS": 110.636,
+      "endS": 116.607,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "What it's for, so you're ready when it comes back.",
+      "startS": 116.607,
+      "endS": 119.995,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Training Requests follows a client's ask from the first request,",
+      "startS": 119.995,
+      "endS": 122.851,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "through scheduling, to a session that's actually done.",
+      "startS": 122.851,
+      "endS": 125.136,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "You'll use it two ways.",
+      "startS": 125.136,
+      "endS": 126.564,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "You file a request when a site asks for training,",
+      "startS": 126.564,
+      "endS": 129.626,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "and you pick requests up when it's your turn to deliver.",
+      "startS": 129.626,
+      "endS": 133.203,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "Now glance back at the header.",
+      "startS": 133.203,
+      "endS": 134.484,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "Search and Ask Shyne stay pinned up here on every page.",
+      "startS": 134.987,
+      "endS": 138.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "That matters most on a day exactly like this one.",
+      "startS": 139.038,
+      "endS": 141.981,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "When a page won't open, control K still jumps you anywhere in the platform,",
+      "startS": 142.401,
+      "endS": 146.835,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "and Shyne can answer a plain question while the page is down.",
+      "startS": 147.121,
+      "endS": 150.278,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "One rule holds: confirm whatever Shyne tells you before you act on it.",
+      "startS": 150.737,
+      "endS": 156.278,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "So, the recap.",
+      "startS": 156.278,
+      "endS": 157.258,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "Knowledge Base and Training Requests both live right here, under Support, inside IT and Support.",
+      "startS": 157.908,
+      "endS": 163.945,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "Today both came back empty, a four oh four, so their contents stay parked.",
+      "startS": 164.741,
+      "endS": 169.062,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "The lesson was never the page you couldn't see.",
+      "startS": 169.776,
+      "endS": 171.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "It's the habit underneath it.",
+      "startS": 172.306,
+      "endS": 173.749,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "Find the destination, read its real state, and when it's missing, report it instead of guessing.",
+      "startS": 174.456,
+      "endS": 176.768,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p55",
+      "text": "That reflex is what keeps this training honest.",
+      "startS": 177.1,
+      "endS": 183.255,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "lesson": "WC-PB-14",
+  "audioMaster": "training/playbooks/WC-PB-14-full-narration-v1.0.mp3",
+  "audioDurationS": 210.834,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Someone says a page is broken.",
+      "startS": 0,
+      "endS": 1.865,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Before you believe them, or doubt them, reproduce it.",
+      "startS": 2.113,
+      "endS": 4.324,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Load the exact address they used, then read two things:",
+      "startS": 4.572,
+      "endS": 5.517,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "the URL in the bar, and the message on the screen.",
+      "startS": 5.79,
+      "endS": 9.287,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Three very different failures hide behind that one complaint,",
+      "startS": 9.507,
+      "endS": 12.341,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "and those two reads are what tell them apart.",
+      "startS": 12.601,
+      "endS": 18.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Class one is the hard four-oh-four.",
+      "startS": 19.113,
+      "endS": 21.42,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "The Settings hub lists Logic P-O-S links,",
+      "startS": 22.083,
+      "endS": 24.824,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "and when they were last confirmed in July they served the web server's own error page.",
+      "startS": 25.15,
+      "endS": 27.025,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "No Wash Central header. No sidebar.",
+      "startS": 27.334,
+      "endS": 29.742,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Just the server saying it has no file at that address.",
+      "startS": 30.379,
+      "endS": 32.826,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "Their status today is parked, so re-check on your own tenant before quoting it.",
+      "startS": 33.265,
+      "endS": 41.459,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The same class wears a second face inside the app.",
+      "startS": 41.92,
+      "endS": 46.662,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "System Alerts still sits in the IT and Support menu,",
+      "startS": 46.662,
+      "endS": 50.194,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "yet on July ninth the page answered with an HTTP four-oh-four.",
+      "startS": 50.194,
+      "endS": 54.464,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "So a listed feature can still four-oh-four.",
+      "startS": 54.464,
+      "endS": 56.936,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "That usually means release gated, or mid deploy.",
+      "startS": 56.936,
+      "endS": 60.172,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "Never tell a client the feature doesn't exist.",
+      "startS": 60.172,
+      "endS": 63.405,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Class two looks like nothing at all.",
+      "startS": 63.84,
+      "endS": 65.979,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Fundraiser sits in the C-R-M sidebar like any other entry.",
+      "startS": 66.475,
+      "endS": 70.034,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Click it, and watch the address bar.",
+      "startS": 70.418,
+      "endS": 72.257,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "The URL just gains a trailing hash mark, and the page never changes.",
+      "startS": 72.752,
+      "endS": 76.95,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "That is a stub. A menu item with no page wired behind it.",
+      "startS": 77.253,
+      "endS": 81.308,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "Not a four-oh-four, and not their connection.",
+      "startS": 81.653,
+      "endS": 84.239,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Class three fools the most people.",
+      "startS": 84.736,
+      "endS": 88.05,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Open Terminals, under Hardware.",
+      "startS": 88.05,
+      "endS": 90.361,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "The page loads.",
+      "startS": 90.361,
+      "endS": 91.571,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Breadcrumb, KPI, buttons, column headers, all there.",
+      "startS": 91.571,
+      "endS": 94.394,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "But where the rows belong, it says it couldn't load records.",
+      "startS": 94.394,
+      "endS": 99.228,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "Failed to fetch.",
+      "startS": 99.228,
+      "endS": 100.72,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Now look at what did render.",
+      "startS": 101.12,
+      "endS": 102.788,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "Header, sidebar, KPIs, columns. Only the data is missing.",
+      "startS": 103.713,
+      "endS": 106.834,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "The page shell arrived fine and one background call failed,",
+      "startS": 107.218,
+      "endS": 108.53,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "and that is usually transient.",
+      "startS": 108.969,
+      "endS": 112.094,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "On July ninth this same banner hit roughly sixty pages at once.",
+      "startS": 112.459,
+      "endS": 114.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "That's one service hiccup, not sixty broken screens.",
+      "startS": 115,
+      "endS": 122.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Put the three side by side.",
+      "startS": 122.789,
+      "endS": 124.188,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Whole page replaced by an error, at the address you asked for: hard four-oh-four.",
+      "startS": 124.805,
+      "endS": 128.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "A click that does nothing but add a hash mark: dead stub.",
+      "startS": 128.35,
+      "endS": 129.679,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "A page frame with a failed-records panel inside it: data-fetch error.",
+      "startS": 130.472,
+      "endS": 133.776,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "One look at the screen, plus the URL, settles it.",
+      "startS": 134.596,
+      "endS": 142.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "Whichever class it is, capture the same evidence.",
+      "startS": 142.48,
+      "endS": 145.574,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "The exact URL. A screenshot of the message.",
+      "startS": 145.975,
+      "endS": 147.314,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "The module you were in, where you clicked from, and what you expected to load.",
+      "startS": 147.697,
+      "endS": 149.105,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "Then the class-specific note: for a four-oh-four, whether it's a known parked item.",
+      "startS": 149.529,
+      "endS": 153.912,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "For a stub, say so. For a fetch error, whether a refresh clears it.",
+      "startS": 154.375,
+      "endS": 164.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "Then escalate from Support Tickets, under IT and Support.",
+      "startS": 164.88,
+      "endS": 168.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "On a real issue, on your tenant, the new ticket carries all five facts plus the class.",
+      "startS": 169.544,
+      "endS": 175.158,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "Two exceptions.",
+      "startS": 175.834,
+      "endS": 176.689,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "A fetch error that clears on refresh needs no ticket at all,",
+      "startS": 177.185,
+      "endS": 180.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "and migration switches go to Jira, not here.",
+      "startS": 180.929,
+      "endS": 183.508,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "On the shared demo, nothing gets submitted.",
+      "startS": 184.12,
+      "endS": 186.397,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "That's the sort.",
+      "startS": 186.8,
+      "endS": 187.612,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "Read the URL, read the message, pick the class.",
+      "startS": 188.397,
+      "endS": 191.849,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "Hard four-oh-four? Escalate it as a serving problem.",
+      "startS": 192.347,
+      "endS": 193.322,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p56",
+      "text": "Dead stub? Log it as release gated, never as gone.",
+      "startS": 193.795,
+      "endS": 195.718,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p57",
+      "text": "Fetch error? Refresh first, and escalate only if it sticks.",
+      "startS": 196.125,
+      "endS": 196.91,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p58",
+      "text": "Three problems that look identical from a distance, told apart in one glance.",
+      "startS": 197.441,
+      "endS": 210.387,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "lesson": "WC-PB-05",
+  "audioMaster": "training/playbooks/WC-PB-05-full-narration-v1.0.mp3",
+  "audioDurationS": 207.491,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start on Payments Reconciliation.",
+      "startS": 0,
+      "endS": 1.975,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the settlement ledger, one row per batch.",
+      "startS": 2.477,
+      "endS": 5.366,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Expected is what the day should have banked.",
+      "startS": 5.672,
+      "endS": 7.882,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Settled is what the processor actually deposited.",
+      "startS": 8.192,
+      "endS": 10.927,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Variance is the gap between the two.",
+      "startS": 11.251,
+      "endS": 13.243,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "Read those three columns and the whole page makes sense.",
+      "startS": 13.591,
+      "endS": 16.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Now the status column.",
+      "startS": 16.8,
+      "endS": 18.223,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Fort Lauderdale and Orlando Central settled exactly what they expected, so they read balanced.",
+      "startS": 19.211,
+      "endS": 24.521,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Miami North came up a hundred sixty dollars short:",
+      "startS": 25.361,
+      "endS": 28.242,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "expected fourteen thousand, eight hundred eighty,",
+      "startS": 28.755,
+      "endS": 31.34,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "settled fourteen thousand, seven hundred twenty.",
+      "startS": 31.689,
+      "endS": 34.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "That nonzero gap flags it for review.",
+      "startS": 34.995,
+      "endS": 37.49,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p13",
+      "text": "The review row is the one you work.",
+      "startS": 38.12,
+      "endS": 40.077,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "With more than a few batches, narrow the list.",
+      "startS": 40.546,
+      "endS": 43.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Search by batch, location, or status,",
+      "startS": 43.405,
+      "endS": 45.943,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "or sort straight on the variance column to pull the gaps to the top.",
+      "startS": 46.254,
+      "endS": 49.648,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Nothing here touches a batch.",
+      "startS": 49.965,
+      "endS": 51.518,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "You're only deciding which one to chase.",
+      "startS": 51.745,
+      "endS": 53.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Top-right of the panel, find Resolve batch.",
+      "startS": 54.16,
+      "endS": 56.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "That's the control a supervisor uses to close out a review batch.",
+      "startS": 57.276,
+      "endS": 60.766,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "You locate it and stop.",
+      "startS": 61.229,
+      "endS": 62.731,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "Working it, and running any refund, happens in production with the right role.",
+      "startS": 63.604,
+      "endS": 67.621,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "Never from this demo.",
+      "startS": 67.956,
+      "endS": 69.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Before you leave the ledger, decide what to chase.",
+      "startS": 69.789,
+      "endS": 72.433,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "A settlement gap is usually one of two things at that site:",
+      "startS": 73.037,
+      "endS": 76.356,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "the drawer came up over or short, or cash was paid out and never banked.",
+      "startS": 76.986,
+      "endS": 79.028,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Carry the location to both checks.",
+      "startS": 79.463,
+      "endS": 81.55,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "There's no date column here, so location is the join,",
+      "startS": 82.41,
+      "endS": 84.273,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "and a shift number ties a payout back to its drawer.",
+      "startS": 84.894,
+      "endS": 91.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "First the drawer. In Sales, open Shifts.",
+      "startS": 91.757,
+      "endS": 92.591,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Every drawer session lists out:",
+      "startS": 93.392,
+      "endS": 95.075,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "shift number, location, terminal,",
+      "startS": 95.664,
+      "endS": 99.179,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "when it opened and closed, and the opening and closing drawer.",
+      "startS": 99.431,
+      "endS": 103.441,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "Those last two are where an over or short shows up for the day.",
+      "startS": 103.951,
+      "endS": 107.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Filter to the batch's location and read them.",
+      "startS": 107.93,
+      "endS": 110.202,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "One caution from today's capture.",
+      "startS": 110.64,
+      "endS": 112.352,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "The list came back empty with a fetch error, and the total-shifts count was blank.",
+      "startS": 112.698,
+      "endS": 116.887,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Don't read that as no shifts.",
+      "startS": 117.561,
+      "endS": 119.389,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "Confirm the data actually loaded before you tell anyone the drawer was clean.",
+      "startS": 119.737,
+      "endS": 123.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Now the cash side. Open Payouts.",
+      "startS": 124,
+      "endS": 125.07,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Each row shows the location, payout ID, shift number, cashier, terminal, vendor, and amount.",
+      "startS": 125.414,
+      "endS": 126.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "A payout links to a drawer by its shift number,",
+      "startS": 127.03,
+      "endS": 133.793,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "so cash pulled for a vendor explains part of a gap with nothing actually missing.",
+      "startS": 134.065,
+      "endS": 140.658,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Read the payout status card.",
+      "startS": 141.177,
+      "endS": 142.98,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "It says approval and dispute status aren't tracked here;",
+      "startS": 143.577,
+      "endS": 146.821,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "payouts records completed disbursements only.",
+      "startS": 147.294,
+      "endS": 149.823,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "So this page confirms what went out, not whether it was approved.",
+      "startS": 150.337,
+      "endS": 153.97,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "And today it too returned the fetch error, so treat the rows as unconfirmed until they load.",
+      "startS": 154.276,
+      "endS": 159.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "Now build the ticket.",
+      "startS": 160.24,
+      "endS": 161.541,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Name the batch, B-T one-oh-three-ninety-three, and the location, Miami North.",
+      "startS": 162.045,
+      "endS": 163.028,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "Give the three numbers:",
+      "startS": 163.319,
+      "endS": 165.741,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "expected fourteen thousand, eight hundred eighty;",
+      "startS": 166.123,
+      "endS": 168.018,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "settled fourteen thousand, seven hundred twenty;",
+      "startS": 168.461,
+      "endS": 172.882,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "variance a hundred sixty.",
+      "startS": 173.29,
+      "endS": 176.229,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "Mark it review, and say whether a drawer figure or a payout explains the gap.",
+      "startS": 176.544,
+      "endS": 178.308,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p56",
+      "text": "You never resolve the batch, and you never run a refund from demo.",
+      "startS": 178.652,
+      "endS": 187.518,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "So that's the playbook.",
+      "startS": 188.131,
+      "endS": 189.432,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "Read the ledger, find the review batch by its status and its variance,",
+      "startS": 189.844,
+      "endS": 190.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "locate Resolve batch without touching it,",
+      "startS": 190.989,
+      "endS": 193.765,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "then cross-check the location's shifts and payouts to explain the gap.",
+      "startS": 193.993,
+      "endS": 196.141,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "Escalate with the batch and the amounts.",
+      "startS": 196.524,
+      "endS": 200.253,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p62",
+      "text": "You moved nothing.",
+      "startS": 200.601,
+      "endS": 202.693,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p63",
+      "text": "You found where the money went and passed it on.",
+      "startS": 202.951,
+      "endS": 207.04,
+      "timing": "silence"
+    }
+  ]
+}

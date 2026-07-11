@@ -1,0 +1,544 @@
+{
+  "lesson": "WC-PB-13",
+  "audioMaster": "training/playbooks/WC-PB-13-full-narration-v1.0.mp3",
+  "audioDurationS": 236.356,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Three complaints, one shape.",
+      "startS": 0,
+      "endS": 1.412,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Tickets stopped reaching Zoho.",
+      "startS": 1.412,
+      "endS": 3.363,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Single sign-on users locked out.",
+      "startS": 3.363,
+      "endS": 5.626,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "An accounting export full of holes.",
+      "startS": 5.626,
+      "endS": 8.173,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Each one is a connector that quit authenticating, and each gets the same read:",
+      "startS": 8.173,
+      "endS": 13.719,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "open the connector, check its status, check its token,",
+      "startS": 13.719,
+      "endS": 17.178,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p07",
+      "text": "then look at the surface the user actually feels.",
+      "startS": 17.178,
+      "endS": 20.355,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Open the connector. Settings, Integrations, Zoho Desk.",
+      "startS": 20.894,
+      "endS": 21.897,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "One chip is the headline: Not Configured, with a warning triangle.",
+      "startS": 22.727,
+      "endS": 25.842,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "In this demo tenant Zoho was never connected, so that reading is honest.",
+      "startS": 26.455,
+      "endS": 30.307,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "On a live tenant that chip is your first and fastest read, before you touch anything else.",
+      "startS": 30.731,
+      "endS": 41.085,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Four tiles sit across the top of the card.",
+      "startS": 41.715,
+      "endS": 43.889,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Connection reads Not set, which matches the banner.",
+      "startS": 44.656,
+      "endS": 47.798,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Data center, US. Sync direction, both.",
+      "startS": 48.235,
+      "endS": 49.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "When a working connection drops, this row is the quick read",
+      "startS": 50.019,
+      "endS": 51.407,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "before you go digging through credentials.",
+      "startS": 52.297,
+      "endS": 57.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Top right, two buttons.",
+      "startS": 57.89,
+      "endS": 59.251,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Test Connection fires a live probe against the real integration.",
+      "startS": 59.68,
+      "endS": 63.254,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Edit Configuration opens the credential form.",
+      "startS": 63.855,
+      "endS": 66.18,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Both are admin actions on production.",
+      "startS": 66.623,
+      "endS": 68.836,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "You locate them so your escalation can name them,",
+      "startS": 69.194,
+      "endS": 71.647,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "and you never click either one from the demo tenant.",
+      "startS": 72.011,
+      "endS": 74.668,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Now the Settings tab, and the credentials block.",
+      "startS": 75.12,
+      "endS": 76.27,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Client ID, secret, tokens: all blank or not set here.",
+      "startS": 76.481,
+      "endS": 77.641,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "The field that matters most is token expiry.",
+      "startS": 78.323,
+      "endS": 79.942,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "A connector that worked yesterday and fails today usually has a lapsed token behind it.",
+      "startS": 80.19,
+      "endS": 80.832,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Expiry in the past, access token gone.",
+      "startS": 81.082,
+      "endS": 82.753,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "The re-auth is an admin job, and none of these values ever goes into your ticket.",
+      "startS": 82.978,
+      "endS": 97.799,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Two more reads before you leave.",
+      "startS": 98.329,
+      "endS": 99.81,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Under General, Enabled says yes. Under Sync, the direction is both.",
+      "startS": 100.396,
+      "endS": 102.765,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "So nobody switched it off. The failure is authentication.",
+      "startS": 103.5,
+      "endS": 105.378,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "And the Instructions tab next door holds the reconnect procedure for the admin who runs it.",
+      "startS": 105.708,
+      "endS": 114.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Symptom one, the help desk surface.",
+      "startS": 114.72,
+      "endS": 116.658,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Open I-T and Support, then Help Desk Zoho.",
+      "startS": 116.658,
+      "endS": 119.455,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "The page loads, and it tells the truth.",
+      "startS": 119.455,
+      "endS": 122.312,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Every ticket count reads as a dash, and the card in the middle says Zoho Desk not connected,",
+      "startS": 122.312,
+      "endS": 128.443,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "with a button routing back to Settings.",
+      "startS": 128.443,
+      "endS": 131.118,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Dashes in a healthy frame point at the connector, not the page.",
+      "startS": 131.118,
+      "endS": 134.995,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "That is your ticket surface evidence.",
+      "startS": 134.995,
+      "endS": 136.933,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Symptom two, single sign-on lockouts.",
+      "startS": 137.36,
+      "endS": 138.359,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Open System Users, under Users and Security.",
+      "startS": 138.585,
+      "endS": 140.351,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "More than eight thousand accounts load here, and two columns carry this ticket.",
+      "startS": 140.718,
+      "endS": 144.153,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "S-S-O flags who signs in through the provider, plain yes or no chips.",
+      "startS": 144.466,
+      "endS": 148.475,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "Last login shows when each of them last got in.",
+      "startS": 148.779,
+      "endS": 156.418,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "When the provider drops, the yes rows are your outage list.",
+      "startS": 156.62,
+      "endS": 159.889,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "Symptom three, the accounting export.",
+      "startS": 160.32,
+      "endS": 162.922,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "Back in Integrations, the accounting connector reads exactly like Zoho did:",
+      "startS": 163.392,
+      "endS": 167.749,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "status chip, test button, token block.",
+      "startS": 168.068,
+      "endS": 170.707,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "Same read, same rules, same hands off.",
+      "startS": 171.113,
+      "endS": 173.843,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "And if the connection is fine but entries land under the wrong codes, that's GL Code mapping.",
+      "startS": 174.456,
+      "endS": 177.822,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "Different lesson.",
+      "startS": 178.193,
+      "endS": 180.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "One trap before you write anything up.",
+      "startS": 181.12,
+      "endS": 182.991,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "Pages have bad minutes.",
+      "startS": 183.472,
+      "endS": 185.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "A list that will not load, or a stray fetch error,",
+      "startS": 185.651,
+      "endS": 193.414,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "can be the app's own data service hiccuping, and neither one proves an integration is down.",
+      "startS": 193.643,
+      "endS": 194.646,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p56",
+      "text": "Reload first. Then let the connector's status chip make the call.",
+      "startS": 194.862,
+      "endS": 197.439,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Now the escalation.",
+      "startS": 197.84,
+      "endS": 199.196,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "Name the integration. Quote the status banner word for word.",
+      "startS": 199.551,
+      "endS": 200.86,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "Say whether an admin ran Test Connection and what it returned.",
+      "startS": 201.387,
+      "endS": 203.415,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "Give the failure window with timestamps.",
+      "startS": 203.939,
+      "endS": 207.458,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "And keep every token, secret, and masked value out of it. No exceptions.",
+      "startS": 207.934,
+      "endS": 215.497,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "That's the whole playbook.",
+      "startS": 215.92,
+      "endS": 217.219,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "Scope to one connector. Read the chip, then the token expiry.",
+      "startS": 218.414,
+      "endS": 219.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "Locate Test Connection and leave it alone.",
+      "startS": 220.221,
+      "endS": 222.431,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "Confirm the surface the user feels, rule out a transient fetch error,",
+      "startS": 222.706,
+      "endS": 225.068,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p66",
+      "text": "and route a ticket an admin can act on.",
+      "startS": 225.272,
+      "endS": 231.854,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p67",
+      "text": "Every screen stayed read-only, start to finish.",
+      "startS": 232.901,
+      "endS": 235.92,
+      "timing": "silence"
+    }
+  ]
+}

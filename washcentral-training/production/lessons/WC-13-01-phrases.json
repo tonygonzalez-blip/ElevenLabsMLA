@@ -1,0 +1,168 @@
+{
+  "lesson": "WC-13-01",
+  "audioMaster": "training/module13-reports-audit/WC-13-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Never rewrite, summarize, or reorder. Block windows are MEASURED onsets (FFT cross-correlation of each sNN.mp3 against the joined 8 kHz mono master): the nominal Sigma(ffprobe audio+0.4) formula overshoots the probed master by 0.53s (> 0.3 tolerance) because ffprobe's mp3 durations overstate the decoded sample counts; the cross-correlation shows every block joined at an exact 0.400s gap after the prior block's decoded audio. Master ffprobe duration 210.207s (xcorr 8 kHz decode 210.16s).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 12.8,
+      "phrases": [
+        { "id": "p01", "text": "Open the Reports module." },
+        { "id": "p02", "text": "Every figure a client asks you for starts here." },
+        { "id": "p03", "text": "A hundred and seventy-three reports, already sorted so you're not digging through a folder." },
+        { "id": "p04", "text": "The left sidebar is your way in." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 12.8,
+      "endS": 27.68,
+      "phrases": [
+        { "id": "p05", "text": "Start at the top of the sidebar." },
+        { "id": "p06", "text": "These five shortcuts are pre-built slices of the same list." },
+        { "id": "p07", "text": "The ones you starred, the ones running on a timer, the analytics set." },
+        { "id": "p08", "text": "When a client wants what they always want, you skip the search and click the view." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 27.68,
+      "endS": 50.4,
+      "phrases": [
+        { "id": "p09", "text": "Below that, nineteen categories." },
+        { "id": "p10", "text": "Financial, transactions, employee labor, inventory, and the rest," },
+        { "id": "p11", "text": "each with a live count beside it." },
+        { "id": "p12", "text": "Some are broad, like transactions with twenty-one reports." },
+        { "id": "p13", "text": "Some hold just one, like weather." },
+        { "id": "p14", "text": "This is how you turn a wall of reports into the two or three" },
+        { "id": "p15", "text": "that actually answer the question in front of you." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 50.4,
+      "endS": 63.84,
+      "phrases": [
+        { "id": "p16", "text": "On the right, the list itself." },
+        { "id": "p17", "text": "A search box sits above it." },
+        { "id": "p18", "text": "Type a few letters of a report's name and the list shrinks to match." },
+        { "id": "p19", "text": "Faster than paging through four screens when you already know what you're after." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 63.84,
+      "endS": 74.72,
+      "phrases": [
+        { "id": "p20", "text": "Top right, one button: Schedule Report." },
+        { "id": "p21", "text": "That's how a report gets put on a timer and mailed out on its own." },
+        { "id": "p22", "text": "We're only pointing at it today." },
+        { "id": "p23", "text": "It sends, so we leave it alone." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 74.72,
+      "endS": 88.64,
+      "phrases": [
+        { "id": "p24", "text": "Now the columns." },
+        { "id": "p25", "text": "A star for favorites, the report's name, its category, its type, and when it last ran." },
+        { "id": "p26", "text": "Five columns tell you what a report is and whether anyone has touched it lately." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 88.64,
+      "endS": 110.4,
+      "phrases": [
+        { "id": "p27", "text": "Look at the Type column." },
+        { "id": "p28", "text": "Standard, Scheduled, or Analytics." },
+        { "id": "p29", "text": "A dash under Last Run means nobody has run it yet." },
+        { "id": "p30", "text": "A date and time means someone did." },
+        { "id": "p31", "text": "The daily financial, for instance, has a scheduled twin that last ran in late March." },
+        { "id": "p32", "text": "And the starred rows are your favorites, one click away in that view up top." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 110.4,
+      "endS": 122.96,
+      "phrases": [
+        { "id": "p33", "text": "Click a report to open it." },
+        { "id": "p34", "text": "Take the daily financial." },
+        { "id": "p35", "text": "The list steps aside and the report viewer takes over." },
+        { "id": "p36", "text": "Same idea as opening a file: you picked it, now you're inside it." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 122.96,
+      "endS": 136.56,
+      "phrases": [
+        { "id": "p37", "text": "Across the top, the filters." },
+        { "id": "p38", "text": "A location selector, a date range with a from and a to, and a More Filters button for the rest." },
+        { "id": "p39", "text": "This is where you tell the report which sites and which days before you run it." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 136.56,
+      "endS": 149.28,
+      "phrases": [
+        { "id": "p40", "text": "Two buttons frame it." },
+        { "id": "p41", "text": "Run Report renders it." },
+        { "id": "p42", "text": "Close Report backs you out." },
+        { "id": "p43", "text": "Notice Schedule Report isn't here." },
+        { "id": "p44", "text": "Scheduling stays on the hub; in here you only run and read." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 149.28,
+      "endS": 166.0,
+      "phrases": [
+        { "id": "p45", "text": "Click Run Report." },
+        { "id": "p46", "text": "Summary tiles and a table build from the filters you set." },
+        { "id": "p47", "text": "Running it only reads the numbers, so nothing is sent and nothing is saved." },
+        { "id": "p48", "text": "In the drill, you'll hunt down the per-location and per-shift rows," },
+        { "id": "p49", "text": "and the refund column, before you close it." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 166.0,
+      "endS": 179.76,
+      "phrases": [
+        { "id": "p50", "text": "Check the stamp on the result." },
+        { "id": "p51", "text": "It carries the date the report was generated," },
+        { "id": "p52", "text": "and in this demo it flags the figures as sample data." },
+        { "id": "p53", "text": "On a real client tenant that same line reads their live numbers instead." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 179.76,
+      "endS": 189.2,
+      "phrases": [
+        { "id": "p54", "text": "Done reading? Close Report." },
+        { "id": "p55", "text": "The viewer folds away and the full list is back, exactly as you left it." },
+        { "id": "p56", "text": "You ran a report and touched nothing." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 189.2,
+      "endS": 210.207,
+      "phrases": [
+        { "id": "p57", "text": "That's the whole loop." },
+        { "id": "p58", "text": "Find a report by view or category, open it," },
+        { "id": "p59", "text": "set the location and the dates, run it, read it, close it." },
+        { "id": "p60", "text": "When a client swears a report looks wrong, this is the screen you'll share with them." },
+        { "id": "p61", "text": "Now you know every control on it," },
+        { "id": "p62", "text": "and the next lesson takes you into the audit trail behind those numbers." }
+      ]
+    }
+  ],
+  "output": "WC-13-01-reports-hub-viewer-v1.1"
+}
