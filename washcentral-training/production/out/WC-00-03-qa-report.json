@@ -144,7 +144,7 @@
       "id": 24,
       "name": "no loading/partial-render frames after navigation",
       "pass": true,
-      "detail": "2 navs; 2 loading-cut freeze(s): academyStable 66.67-67.738s, commandCenterStable 78.578-79.555s"
+      "detail": "2/2 navs stabilized; freezes: academyStable 66.67-67.738s, commandCenterStable 78.578-79.555s"
     },
     {
       "id": 25,

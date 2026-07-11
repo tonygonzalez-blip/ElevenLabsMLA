@@ -1,0 +1,262 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.598
+Open C-R-M, then Customers.
+
+p02
+00:00:02.910 --> 00:00:06.756
+This is the member database, and it's where most support calls begin.
+
+p03
+00:00:07.013 --> 00:00:10.453
+Every tool you need to find a customer sits on this one screen.
+
+p04
+00:00:10.919 --> 00:00:11.838
+Start at the top.
+
+p05
+00:00:12.617 --> 00:00:14.455
+Four numbers frame the whole base: total customers, active members, at risk, and prospects.
+
+p06
+00:00:14.812 --> 00:00:18.891
+They cover every customer, not just the page in front of you.
+
+p07
+00:00:19.625 --> 00:00:23.947
+Read them first.
+
+p08
+00:00:24.477 --> 00:00:25.543
+Below the numbers, three cards.
+
+p09
+00:00:25.836 --> 00:00:26.685
+One tracks member growth over the last year.
+
+p10
+00:00:27.211 --> 00:00:29.714
+Another splits active members by plan.
+
+p11
+00:00:30.249 --> 00:00:32.678
+The third grades customer health, low, medium, and high risk, at a glance.
+
+p12
+00:00:33.185 --> 00:00:41.278
+You read these; you don't click into them.
+
+p13
+00:00:41.796 --> 00:00:43.159
+Now the list card itself.
+
+p14
+00:00:43.766 --> 00:00:46.350
+The eyebrow labels it the member database, and the title reads Customer List.
+
+p15
+00:00:46.742 --> 00:00:52.908
+This card holds the searchable table of every customer you have.
+
+p16
+00:00:53.577 --> 00:00:55.596
+Three buttons sit top-right of the card.
+
+p17
+00:00:56.295 --> 00:00:59.462
+Retention Log opens a churn report we'll visit in a minute.
+
+p18
+00:01:00.431 --> 00:01:04.517
+Delete and Add Customer both change data, so we leave them alone today.
+
+p19
+00:01:05.034 --> 00:01:06.960
+Adding a customer gets its own lesson.
+
+p20
+00:01:07.527 --> 00:01:09.485
+Just above the table, the search box.
+
+p21
+00:01:09.895 --> 00:01:10.998
+Read the placeholder.
+
+p22
+00:01:11.447 --> 00:01:13.433
+It names exactly what you can search by: a name, a plate, an email, a location, or a plan.
+
+p23
+00:01:13.757 --> 00:01:20.160
+You never have to guess which field will match.
+
+p24
+00:01:20.744 --> 00:01:22.527
+Next to it, the Filters control.
+
+p25
+00:01:23.059 --> 00:01:24.909
+The badge counts active filters.
+
+p26
+00:01:25.314 --> 00:01:28.422
+Right now it reads zero, so nothing is narrowing the list.
+
+p27
+00:01:29.003 --> 00:01:31.324
+Open it for a panel that trims the base down;
+
+p28
+00:01:31.780 --> 00:01:35.660
+any count above zero means the list is already filtered.
+
+p29
+00:01:35.660 --> 00:01:36.496
+Now the columns.
+
+p30
+00:01:36.977 --> 00:01:37.542
+Eight of them: customer, location, plan, member since, status,
+
+p31
+00:01:38.115 --> 00:01:38.655
+then the member's numbers, visits, total spend, and last visit.
+
+p32
+00:01:38.937 --> 00:01:39.657
+Every header sorts.
+
+p33
+00:01:39.985 --> 00:01:55.775
+The checkbox column on the left selects rows, and on this tour those boxes stay empty.
+
+p34
+00:01:55.775 --> 00:01:57.168
+Look at one row across.
+
+p35
+00:01:57.573 --> 00:02:00.918
+The plan and the status each show as a coloured chip.
+
+p36
+00:02:01.537 --> 00:02:02.594
+Active is green, inactive is grey, and the plan chip names the package.
+
+p37
+00:02:03.127 --> 00:02:11.396
+The colour is how a row's state reads in a half-second.
+
+p38
+00:02:11.396 --> 00:02:12.201
+Drop to the footer.
+
+p39
+00:02:12.737 --> 00:02:17.803
+Twenty-five rows a page, and the last page button reads sixty-five thousand.
+
+p40
+00:02:18.498 --> 00:02:22.141
+This table runs past a million and a half migrated records,
+
+p41
+00:02:22.468 --> 00:02:25.183
+so you search for a customer, not page to them.
+
+p42
+00:02:26.065 --> 00:02:30.747
+The strip up top counts a smaller headline figure that does not reconcile with the table,
+
+p43
+00:02:31.094 --> 00:02:35.115
+a known demo quirk, which is why the two counts differ.
+
+p44
+00:02:35.115 --> 00:02:36.042
+Click Retention Log.
+
+p45
+00:02:36.600 --> 00:02:40.098
+This read-only page tracks members who left or nearly did.
+
+p46
+00:02:40.465 --> 00:02:42.218
+Its own four numbers frame it: total events, saves this month, cancellations, and the churn rate.
+
+p47
+00:02:42.498 --> 00:02:46.806
+No delete or add here.
+
+p48
+00:02:47.119 --> 00:02:52.016
+It is a log you read, not a list you edit.
+
+p49
+00:02:52.016 --> 00:02:53.410
+The table tells the story.
+
+p50
+00:02:53.888 --> 00:02:55.389
+Each row is one event: date, customer, site, event type, and outcome.
+
+p51
+00:02:55.751 --> 00:02:59.425
+A green Saved chip means you kept them, Cancelled means you lost them,
+
+p52
+00:02:59.732 --> 00:03:02.314
+and Downgraded and At Risk fall in between.
+
+p53
+00:03:02.672 --> 00:03:11.634
+When a churn question comes in, the answer lives here.
+
+p54
+00:03:11.634 --> 00:03:12.373
+Head back to the list.
+
+p55
+00:03:13.078 --> 00:03:19.340
+The breadcrumb or the sidebar both drop you on the Customer List again, right where you started.
+
+p56
+00:03:19.340 --> 00:03:20.044
+Now use the search.
+
+p57
+00:03:20.520 --> 00:03:24.131
+Type the first few letters of a name you can see, then hit Search.
+
+p58
+00:03:24.665 --> 00:03:26.860
+The table collapses to just the matches.
+
+p59
+00:03:27.330 --> 00:03:32.480
+On a list this size, that is how you land on the right customer in seconds.
+
+p60
+00:03:32.480 --> 00:03:33.307
+Clear the box.
+
+p61
+00:03:33.699 --> 00:03:36.248
+The full list snaps back, untouched.
+
+p62
+00:03:36.753 --> 00:03:38.270
+That is the Customer List: numbers up top, health in the cards,
+
+p63
+00:03:38.647 --> 00:03:39.579
+a search that names its own fields, sortable columns with colour-coded chips,
+
+p64
+00:03:39.887 --> 00:03:41.029
+and a Retention Log one click away.
+
+p65
+00:03:41.479 --> 00:03:52.538
+Learn this screen and C-R-M support gets faster.
+

@@ -1,0 +1,373 @@
+{
+  "lesson": "WC-02-01",
+  "audioMaster": "training/module02-crm/WC-02-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows come from the ffprobe'd per-block audio durations plus the measured inter-block join gap of the delivered master (14 gaps of 0.3918s; probed master total 232.986s, matched exactly).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 10.919,
+      "phrases": [
+        {
+          "id": "p01",
+          "text": "Open C-R-M, then Customers."
+        },
+        {
+          "id": "p02",
+          "text": "This is the member database, and it's where most support calls begin."
+        },
+        {
+          "id": "p03",
+          "text": "Every tool you need to find a customer sits on this one screen."
+        }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 10.919,
+      "endS": 24.477,
+      "phrases": [
+        {
+          "id": "p04",
+          "text": "Start at the top."
+        },
+        {
+          "id": "p05",
+          "text": "Four numbers frame the whole base: total customers, active members, at risk, and prospects."
+        },
+        {
+          "id": "p06",
+          "text": "They cover every customer, not just the page in front of you."
+        },
+        {
+          "id": "p07",
+          "text": "Read them first."
+        }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 24.477,
+      "endS": 41.796,
+      "phrases": [
+        {
+          "id": "p08",
+          "text": "Below the numbers, three cards."
+        },
+        {
+          "id": "p09",
+          "text": "One tracks member growth over the last year."
+        },
+        {
+          "id": "p10",
+          "text": "Another splits active members by plan."
+        },
+        {
+          "id": "p11",
+          "text": "The third grades customer health, low, medium, and high risk, at a glance."
+        },
+        {
+          "id": "p12",
+          "text": "You read these; you don't click into them."
+        }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 41.796,
+      "endS": 53.577,
+      "phrases": [
+        {
+          "id": "p13",
+          "text": "Now the list card itself."
+        },
+        {
+          "id": "p14",
+          "text": "The eyebrow labels it the member database, and the title reads Customer List."
+        },
+        {
+          "id": "p15",
+          "text": "This card holds the searchable table of every customer you have."
+        }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 53.577,
+      "endS": 67.527,
+      "phrases": [
+        {
+          "id": "p16",
+          "text": "Three buttons sit top-right of the card."
+        },
+        {
+          "id": "p17",
+          "text": "Retention Log opens a churn report we'll visit in a minute."
+        },
+        {
+          "id": "p18",
+          "text": "Delete and Add Customer both change data, so we leave them alone today."
+        },
+        {
+          "id": "p19",
+          "text": "Adding a customer gets its own lesson."
+        }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 67.527,
+      "endS": 80.744,
+      "phrases": [
+        {
+          "id": "p20",
+          "text": "Just above the table, the search box."
+        },
+        {
+          "id": "p21",
+          "text": "Read the placeholder."
+        },
+        {
+          "id": "p22",
+          "text": "It names exactly what you can search by: a name, a plate, an email, a location, or a plan."
+        },
+        {
+          "id": "p23",
+          "text": "You never have to guess which field will match."
+        }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 80.744,
+      "endS": 95.66,
+      "phrases": [
+        {
+          "id": "p24",
+          "text": "Next to it, the Filters control."
+        },
+        {
+          "id": "p25",
+          "text": "The badge counts active filters."
+        },
+        {
+          "id": "p26",
+          "text": "Right now it reads zero, so nothing is narrowing the list."
+        },
+        {
+          "id": "p27",
+          "text": "Open it for a panel that trims the base down;"
+        },
+        {
+          "id": "p28",
+          "text": "any count above zero means the list is already filtered."
+        }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 95.66,
+      "endS": 115.775,
+      "phrases": [
+        {
+          "id": "p29",
+          "text": "Now the columns."
+        },
+        {
+          "id": "p30",
+          "text": "Eight of them: customer, location, plan, member since, status,"
+        },
+        {
+          "id": "p31",
+          "text": "then the member's numbers, visits, total spend, and last visit."
+        },
+        {
+          "id": "p32",
+          "text": "Every header sorts."
+        },
+        {
+          "id": "p33",
+          "text": "The checkbox column on the left selects rows, and on this tour those boxes stay empty."
+        }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 115.775,
+      "endS": 131.396,
+      "phrases": [
+        {
+          "id": "p34",
+          "text": "Look at one row across."
+        },
+        {
+          "id": "p35",
+          "text": "The plan and the status each show as a coloured chip."
+        },
+        {
+          "id": "p36",
+          "text": "Active is green, inactive is grey, and the plan chip names the package."
+        },
+        {
+          "id": "p37",
+          "text": "The colour is how a row's state reads in a half-second."
+        }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 131.396,
+      "endS": 155.115,
+      "phrases": [
+        {
+          "id": "p38",
+          "text": "Drop to the footer."
+        },
+        {
+          "id": "p39",
+          "text": "Twenty-five rows a page, and the last page button reads sixty-five thousand."
+        },
+        {
+          "id": "p40",
+          "text": "This table runs past a million and a half migrated records,"
+        },
+        {
+          "id": "p41",
+          "text": "so you search for a customer, not page to them."
+        },
+        {
+          "id": "p42",
+          "text": "The strip up top counts a smaller headline figure that does not reconcile with the table,"
+        },
+        {
+          "id": "p43",
+          "text": "a known demo quirk, which is why the two counts differ."
+        }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 155.115,
+      "endS": 172.016,
+      "phrases": [
+        {
+          "id": "p44",
+          "text": "Click Retention Log."
+        },
+        {
+          "id": "p45",
+          "text": "This read-only page tracks members who left or nearly did."
+        },
+        {
+          "id": "p46",
+          "text": "Its own four numbers frame it: total events, saves this month, cancellations, and the churn rate."
+        },
+        {
+          "id": "p47",
+          "text": "No delete or add here."
+        },
+        {
+          "id": "p48",
+          "text": "It is a log you read, not a list you edit."
+        }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 172.016,
+      "endS": 191.634,
+      "phrases": [
+        {
+          "id": "p49",
+          "text": "The table tells the story."
+        },
+        {
+          "id": "p50",
+          "text": "Each row is one event: date, customer, site, event type, and outcome."
+        },
+        {
+          "id": "p51",
+          "text": "A green Saved chip means you kept them, Cancelled means you lost them,"
+        },
+        {
+          "id": "p52",
+          "text": "and Downgraded and At Risk fall in between."
+        },
+        {
+          "id": "p53",
+          "text": "When a churn question comes in, the answer lives here."
+        }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 191.634,
+      "endS": 199.34,
+      "phrases": [
+        {
+          "id": "p54",
+          "text": "Head back to the list."
+        },
+        {
+          "id": "p55",
+          "text": "The breadcrumb or the sidebar both drop you on the Customer List again, right where you started."
+        }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 199.34,
+      "endS": 212.48,
+      "phrases": [
+        {
+          "id": "p56",
+          "text": "Now use the search."
+        },
+        {
+          "id": "p57",
+          "text": "Type the first few letters of a name you can see, then hit Search."
+        },
+        {
+          "id": "p58",
+          "text": "The table collapses to just the matches."
+        },
+        {
+          "id": "p59",
+          "text": "On a list this size, that is how you land on the right customer in seconds."
+        }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 212.48,
+      "endS": 232.986,
+      "phrases": [
+        {
+          "id": "p60",
+          "text": "Clear the box."
+        },
+        {
+          "id": "p61",
+          "text": "The full list snaps back, untouched."
+        },
+        {
+          "id": "p62",
+          "text": "That is the Customer List: numbers up top, health in the cards,"
+        },
+        {
+          "id": "p63",
+          "text": "a search that names its own fields, sortable columns with colour-coded chips,"
+        },
+        {
+          "id": "p64",
+          "text": "and a Retention Log one click away."
+        },
+        {
+          "id": "p65",
+          "text": "Learn this screen and C-R-M support gets faster."
+        }
+      ]
+    }
+  ],
+  "output": "WC-02-01-customer-list-v1.1"
+}

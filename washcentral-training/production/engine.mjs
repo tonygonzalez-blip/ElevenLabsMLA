@@ -101,7 +101,7 @@ class Engine {
   constructor(cdp, log) { this.cdp = cdp; this.log = log; this.pointer = [960, 1079]; this.watchers = []; }
   now() { return (Date.now() - this.t0) / 1000; }
   async evalRO(expr) { return this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${expr}); })()`); }
-  async resolve(name, { requireStableMs = 160 } = {}) {
+  async resolve(name, { requireStableMs = 160, allowDisabled = false } = {}) {
     const t = L.targets[name];
     if (!t) throw new Error(`unknown target ${name}`);
     const one = async () => this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${resolveJS(t)}); })()`);
@@ -112,7 +112,7 @@ class Engine {
     if (!b) throw new Error(`target vanished during stability check: ${name}`);
     if (Math.abs(a.rect.x - b.rect.x) > 2 || Math.abs(a.rect.y - b.rect.y) > 2) throw new Error(`target rect unstable: ${name}`);
     if (!b.visible) throw new Error(`target not visible: ${name}`);
-    if (b.disabled) throw new Error(`target disabled: ${name}`);
+    if (b.disabled && !allowDisabled) throw new Error(`target disabled: ${name}`);
     return b;
   }
   dispatchMove(x, y) {
@@ -252,16 +252,36 @@ class Engine {
           entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `${combos.join(',')} -> ${op.postcondition}`);
           entry.postcondition = op.postcondition;
         }
+      } else if (op.op === 'type') {
+        // Genuine typed text via per-character CDP key events (keyDown carries `text`, so the
+        // browser inserts it exactly as a keyboard would). Only ever used on lesson-reviewed,
+        // read-only inputs (e.g. a live search box) — never on credential fields.
+        await this.waitUntil(op.pressAt ?? op.at);
+        const typeT = +this.now().toFixed(3);
+        for (const ch of String(op.text)) {
+          await this.cdp.send('Input.dispatchKeyEvent', { type: 'keyDown', text: ch, unmodifiedText: ch, key: ch });
+          await sleep(28);
+          await this.cdp.send('Input.dispatchKeyEvent', { type: 'keyUp', key: ch });
+          await sleep(op.perCharMs ?? 95);
+        }
+        entry.typeT = typeT; entry.text = op.text;
+        this.log.keys.push({ t: typeT, keys: [op.text], label: op.keyLabel || 'type: ' + op.text });
+        if (op.postcondition) {
+          entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `type -> ${op.postcondition}`);
+          entry.postcondition = op.postcondition;
+        }
       } else if (op.op === 'log-rect') {
         await this.waitUntil(op.at);
-        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160 }, 3000);
+        // log-rect only reads geometry for external graphics; a disabled control (e.g. a Send
+        // button with an empty input) is a legitimate thing to point at, never to click
+        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160, allowDisabled: true }, 3000);
         entry.rect = tgt.rect; entry.label = tgt.label;
         this.log.rects[op.key] = { t: +this.now().toFixed(3), rect: tgt.rect, label: tgt.label };
       } else if (op.op === 'log-rects') {
         await this.waitUntil(op.at);
         const group = {};
         for (const name of op.targets) {
-          const tgt = await this.resolve(name);
+          const tgt = await this.resolve(name, { allowDisabled: true });
           group[name] = { rect: tgt.rect, label: tgt.label };
         }
         this.log.rects[op.key] = { t: +this.now().toFixed(3), items: group };

@@ -1,0 +1,1460 @@
+{
+  "lesson": "WC-01-04",
+  "title": "Interface Conventions: Lists",
+  "audioMaster": "training/module01-foundations/WC-01-04-full-narration-v1.0.mp3",
+  "audioDurationS": 199.236,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/crm-customers.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-01-04-list-conventions-v1.1",
+  "orderedMentions": [
+    "Customers",
+    "Delete",
+    "Add Customer",
+    "Filters",
+    "Gift Cards",
+    "Customer List"
+  ],
+  "neverClick": [
+    "logout",
+    "log out now",
+    "delete",
+    "+ add customer",
+    "+ issue gift card"
+  ],
+  "targets": {
+    "kpiStrip": {
+      "selector": ".a-metrics"
+    },
+    "tileTotal": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "tileActive": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "tileRisk": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "tileProspects": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "cardsRow": {
+      "js": "document.querySelector('.a-chart-card') ? document.querySelector('.a-chart-card').parentElement : null"
+    },
+    "growthCard": {
+      "js": "document.querySelectorAll('.a-chart-card')[0]"
+    },
+    "planCard": {
+      "js": "document.querySelectorAll('.a-chart-card')[1]"
+    },
+    "riskCard": {
+      "js": "document.querySelectorAll('.a-chart-card')[2]"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Customer List'&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/^CRM · Member Database$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "retentionBtn": {
+      "text": "Retention Log",
+      "scope": "a,button"
+    },
+    "deleteBtn": {
+      "text": "Delete",
+      "scope": "button"
+    },
+    "addCustomerBtn": {
+      "text": "+ Add Customer",
+      "scope": "a,button"
+    },
+    "searchBox": {
+      "selector": "#customer-search"
+    },
+    "searchBtn": {
+      "text": "Search",
+      "scope": "button"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "filtersPanel": {
+      "selector": ".adv-panel.open"
+    },
+    "tableHead": {
+      "selector": "table thead"
+    },
+    "selectAllBox": {
+      "selector": ".bulk-select-all"
+    },
+    "planChipActive": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(r=>r.querySelector('.badge.active'));return tr?tr.querySelector('[class*=\"pill\"]'):null})()"
+    },
+    "statusChipActive": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(r=>r.querySelector('.badge.active'));return tr?tr.querySelector('.badge.active'):null})()"
+    },
+    "statusChipInactive": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(r=>r.querySelector('.badge.inactive'));return tr?tr.querySelector('.badge.inactive'):null})()"
+    },
+    "pagBar": {
+      "selector": ".pagination-bar"
+    },
+    "perPageBtn": {
+      "selector": ".pg-per-page-btn"
+    },
+    "prevPageBtn": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(b=>(b.textContent||'').trim()==='‹')"
+    },
+    "nextPageBtn": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(b=>(b.textContent||'').trim()==='›')"
+    },
+    "lastPageBtn": {
+      "js": "[...document.querySelectorAll('.page-btn')].filter(b=>/^[0-9][0-9,]*$/.test((b.textContent||'').trim())).pop()"
+    },
+    "countInfo": {
+      "js": "[...document.querySelector('.pagination-bar').querySelectorAll('*')].find(e=>e.children.length===0&&/ of /.test(e.textContent||''))",
+      "textRect": true
+    },
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "giftLink": {
+      "selector": "a[href=\"crm-gift-cards.html\"]"
+    },
+    "gcSearch": {
+      "selector": "#gc-search"
+    },
+    "gcTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Gift Card List'&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "gcPerPageDropdown": {
+      "selector": ".pg-per-page-dropdown"
+    }
+  },
+  "predicates": {
+    "onCustomers": "location.pathname.endsWith('/crm-customers.html')",
+    "onGiftCards": "location.pathname.endsWith('/crm-gift-cards.html')",
+    "startReady": "document.readyState==='complete'&&document.querySelector('.app').classList.contains('sidebar-collapsed')&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "filtersOpen": "!!document.querySelector('.adv-panel.open')",
+    "filtersClosed": "!document.querySelector('.adv-panel.open')",
+    "atFooter": "window.scrollY >= document.scrollingElement.scrollHeight - window.innerHeight - 60",
+    "atTop": "window.scrollY <= 8",
+    "perPageOpen": "(()=>{const d=document.querySelector('.pg-per-page-dropdown');return !!d&&d.getBoundingClientRect().height>40})()",
+    "perPageClosed25": "(()=>{const d=document.querySelector('.pg-per-page-dropdown');return (!d||d.getBoundingClientRect().height<5)&&document.querySelector('.pg-per-page-val').textContent.trim()==='25'})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCustomers",
+      "note": "start page identity before capture"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "startReady",
+      "note": "loaded, sidebar collapsed (persisted pref washcentral-sidebar-collapsed-v5), scrolled to top"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.45,
+      "from": [
+        1919,
+        320
+      ],
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          910,
+          190
+        ]
+      },
+      "note": "enter from right edge, settle in right gutter beside the Risk Profile card"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.15,
+      "key": "kpiStripRect",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.4,
+      "key": "cardsRowRect",
+      "target": "cardsRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.65,
+      "key": "tableHeadRect",
+      "target": "tableHead"
+    },
+    {
+      "op": "move",
+      "at": 2.2,
+      "to": {
+        "point": [
+          1893,
+          120
+        ]
+      },
+      "note": "top of the slow vertical pan (p02)"
+    },
+    {
+      "op": "move",
+      "at": 3.65,
+      "to": {
+        "point": [
+          1893,
+          420
+        ]
+      },
+      "note": "pan past the insight cards as p03 names the bands"
+    },
+    {
+      "op": "move",
+      "at": 4.35,
+      "to": {
+        "point": [
+          1893,
+          700
+        ]
+      },
+      "note": "pan down to the table band"
+    },
+    {
+      "op": "move",
+      "at": 5.6,
+      "to": {
+        "point": [
+          1893,
+          860
+        ]
+      },
+      "note": "park at right edge for p04-p05"
+    },
+    {
+      "op": "move",
+      "at": 15.7,
+      "to": {
+        "target": "tileTotal",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "step 2 cue: under the first KPI tile"
+    },
+    {
+      "op": "log-rects",
+      "at": 16.0,
+      "key": "kpiTiles",
+      "targets": [
+        "tileTotal",
+        "tileActive",
+        "tileRisk",
+        "tileProspects"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 18.0,
+      "to": {
+        "target": "tileActive",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "left-to-right sweep across the tiles"
+    },
+    {
+      "op": "move",
+      "at": 20.0,
+      "to": {
+        "target": "tileRisk",
+        "offset": [
+          0,
+          44
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 22.0,
+      "to": {
+        "target": "tileProspects",
+        "offset": [
+          0,
+          44
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 24.3,
+      "to": {
+        "point": [
+          960,
+          145
+        ]
+      },
+      "note": "park in the band gap for p09"
+    },
+    {
+      "op": "move",
+      "at": 32.1,
+      "to": {
+        "target": "growthCard",
+        "offset": [
+          0,
+          120
+        ]
+      },
+      "note": "step 3 cue: under the first insight card"
+    },
+    {
+      "op": "log-rects",
+      "at": 32.4,
+      "key": "insightCards",
+      "targets": [
+        "growthCard",
+        "planCard",
+        "riskCard"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 35.2,
+      "to": {
+        "target": "planCard",
+        "offset": [
+          0,
+          120
+        ]
+      },
+      "note": "sweep follows the spoken order of the cards"
+    },
+    {
+      "op": "move",
+      "at": 36.2,
+      "to": {
+        "target": "riskCard",
+        "offset": [
+          0,
+          120
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 39.2,
+      "to": {
+        "point": [
+          1600,
+          430
+        ]
+      },
+      "note": "park for p13-p14"
+    },
+    {
+      "op": "log-rect",
+      "at": 47.55,
+      "key": "titleRect",
+      "target": "listTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 47.8,
+      "key": "eyebrowRect",
+      "target": "eyebrow"
+    },
+    {
+      "op": "move",
+      "at": 47.9,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          260,
+          10
+        ]
+      },
+      "note": "step 4 cue: beside the card title"
+    },
+    {
+      "op": "log-rects",
+      "at": 48.3,
+      "key": "actionBtns",
+      "targets": [
+        "retentionBtn",
+        "deleteBtn",
+        "addCustomerBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 54.5,
+      "to": {
+        "point": [
+          1593,
+          428
+        ]
+      },
+      "note": "point toward the action buttons for p17-p19; hover only, never click"
+    },
+    {
+      "op": "move",
+      "at": 64.35,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -600,
+          26
+        ]
+      },
+      "note": "step 5 cue: under the placeholder text"
+    },
+    {
+      "op": "log-rect",
+      "at": 64.6,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 64.85,
+      "key": "searchBtnRect",
+      "target": "searchBtn"
+    },
+    {
+      "op": "move",
+      "at": 73.4,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "point out the green Search button (shot-list step 5); no click"
+    },
+    {
+      "op": "move",
+      "at": 74.8,
+      "to": {
+        "point": [
+          900,
+          435
+        ]
+      },
+      "note": "park in the row gap for the rest of p23"
+    },
+    {
+      "op": "click",
+      "target": "filtersBtn",
+      "pressAt": 84.15,
+      "hoverMs": 380,
+      "postcondition": "filtersOpen",
+      "timeoutMs": 4000,
+      "note": "step 6: open the Filters panel inside the p24 break, before the badge explanation"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.65,
+      "key": "filtersBtnRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.95,
+      "key": "filtersPanelRect",
+      "target": "filtersPanel",
+      "requireStableMs": 240
+    },
+    {
+      "op": "watch",
+      "key": "filtersPanelHold",
+      "from": 85.2,
+      "to": 92.5,
+      "predicate": "filtersOpen",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 85.3,
+      "to": {
+        "target": "filtersPanel",
+        "offset": [
+          -30,
+          120
+        ],
+        "outside": true
+      },
+      "note": "park in the left gutter while p25-p27 explain the badge"
+    },
+    {
+      "op": "click",
+      "target": "filtersBtn",
+      "pressAt": 94.6,
+      "hoverMs": 320,
+      "postcondition": "filtersClosed",
+      "timeoutMs": 4000,
+      "note": "genuine close via the same Filters toggle; badge logic stays at 0 (contents parked)"
+    },
+    {
+      "op": "move",
+      "at": 95.4,
+      "to": {
+        "point": [
+          960,
+          437
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 96.45,
+      "to": {
+        "point": [
+          160,
+          522
+        ]
+      },
+      "note": "step 7 cue: start of the header sweep"
+    },
+    {
+      "op": "log-rect",
+      "at": 96.7,
+      "key": "selectAllRect",
+      "target": "selectAllBox"
+    },
+    {
+      "op": "move",
+      "at": 98.3,
+      "to": {
+        "point": [
+          700,
+          522
+        ]
+      },
+      "note": "sweep along the column headers; hover only, no sort click"
+    },
+    {
+      "op": "move",
+      "at": 99.8,
+      "to": {
+        "point": [
+          1300,
+          522
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 101.2,
+      "to": {
+        "point": [
+          1850,
+          522
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 111.0,
+      "to": {
+        "target": "selectAllBox",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "point down the checkbox column for p32; nothing is checked"
+    },
+    {
+      "op": "move",
+      "at": 112.6,
+      "to": {
+        "point": [
+          330,
+          435
+        ]
+      }
+    },
+    {
+      "op": "log-rect",
+      "at": 113.05,
+      "key": "planChipRect",
+      "target": "planChipActive"
+    },
+    {
+      "op": "log-rect",
+      "at": 113.3,
+      "key": "statusActiveRect",
+      "target": "statusChipActive"
+    },
+    {
+      "op": "log-rect",
+      "at": 113.55,
+      "key": "statusInactiveRect",
+      "target": "statusChipInactive"
+    },
+    {
+      "op": "move",
+      "at": 113.7,
+      "to": {
+        "target": "planChipActive",
+        "offset": [
+          0,
+          34
+        ]
+      },
+      "note": "step 8 cue: under the first Active row's plan chip"
+    },
+    {
+      "op": "move",
+      "at": 114.8,
+      "to": {
+        "point": [
+          880,
+          770
+        ]
+      },
+      "note": "clear of the chips so callout 8 and highlights read"
+    },
+    {
+      "op": "move",
+      "at": 124.6,
+      "to": {
+        "point": [
+          1480,
+          850
+        ]
+      },
+      "note": "park for p37"
+    },
+    {
+      "op": "key",
+      "pressAt": 129.78,
+      "keys": [
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown"
+      ],
+      "gapMs": 50,
+      "keyLabel": "↓ scroll",
+      "postcondition": "atFooter",
+      "timeoutMs": 5000,
+      "note": "step 9: genuine keyboard scroll to the table footer during the p38 break"
+    },
+    {
+      "op": "log-rect",
+      "at": 131.35,
+      "key": "pagBarRect",
+      "target": "pagBar",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rects",
+      "at": 131.75,
+      "key": "pagerItems",
+      "targets": [
+        "perPageBtn",
+        "prevPageBtn",
+        "nextPageBtn",
+        "lastPageBtn",
+        "countInfo"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 131.85,
+      "to": {
+        "target": "perPageBtn",
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "note": "point at the rows-per-page control; hover only, not changed"
+    },
+    {
+      "op": "move",
+      "at": 133.5,
+      "to": {
+        "target": "prevPageBtn",
+        "offset": [
+          0,
+          -32
+        ]
+      },
+      "note": "point at the page arrows; no page click"
+    },
+    {
+      "op": "move",
+      "at": 136.6,
+      "to": {
+        "target": "countInfo",
+        "offset": [
+          0,
+          -30
+        ]
+      },
+      "note": "1-25 of 1,643,807 while p40 says a million and a half"
+    },
+    {
+      "op": "move",
+      "at": 138.3,
+      "to": {
+        "target": "lastPageBtn",
+        "offset": [
+          0,
+          -34
+        ]
+      },
+      "note": "final page 65,753 while p41 says the pages say millions"
+    },
+    {
+      "op": "move",
+      "at": 142.6,
+      "to": {
+        "point": [
+          500,
+          950
+        ]
+      },
+      "note": "pre-park near the rail so the step-10 approach starts on cue"
+    },
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 150.3,
+      "hoverMs": 320,
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "step 10a: genuine Expand sidebar toggle reveals the CRM menu (collapsed by default live)"
+    },
+    {
+      "op": "click",
+      "target": "giftLink",
+      "pressAt": 151.55,
+      "hoverMs": 300,
+      "postcondition": "onGiftCards",
+      "timeoutMs": 10000,
+      "nav": true,
+      "note": "step 10b: genuine in-app sidebar navigation to Gift Cards"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "giftStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "log-rect",
+      "at": 153.35,
+      "key": "gcKpiRect",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 153.6,
+      "key": "gcCardsRect",
+      "target": "cardsRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 153.85,
+      "key": "gcTheadRect",
+      "target": "tableHead"
+    },
+    {
+      "op": "log-rect",
+      "at": 154.1,
+      "key": "gcTitleRect",
+      "target": "gcTitle"
+    },
+    {
+      "op": "move",
+      "at": 154.2,
+      "to": {
+        "point": [
+          1895,
+          300
+        ]
+      },
+      "note": "right-edge pan down the mirrored layout (p45)"
+    },
+    {
+      "op": "move",
+      "at": 155.1,
+      "to": {
+        "point": [
+          1895,
+          620
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 157.6,
+      "to": {
+        "point": [
+          1895,
+          820
+        ]
+      },
+      "note": "park for p46-p48"
+    },
+    {
+      "op": "move",
+      "at": 164.45,
+      "to": {
+        "target": "gcSearch",
+        "offset": [
+          -380,
+          28
+        ]
+      },
+      "note": "step 11 cue: under the gift-card search hint"
+    },
+    {
+      "op": "log-rect",
+      "at": 164.7,
+      "key": "gcSearchRect",
+      "target": "gcSearch"
+    },
+    {
+      "op": "log-rect",
+      "at": 164.95,
+      "key": "gcFiltersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "move",
+      "at": 167.0,
+      "to": {
+        "point": [
+          900,
+          524
+        ]
+      },
+      "note": "over the column headers as p50 names them"
+    },
+    {
+      "op": "key",
+      "pressAt": 167.9,
+      "keys": [
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown"
+      ],
+      "gapMs": 50,
+      "keyLabel": "↓ scroll",
+      "postcondition": "atFooter",
+      "timeoutMs": 5000,
+      "note": "scroll to the gift-card footer before the rows-per-page choices are spoken"
+    },
+    {
+      "op": "click",
+      "target": "perPageBtn",
+      "pressAt": 169.6,
+      "hoverMs": 280,
+      "postcondition": "perPageOpen",
+      "timeoutMs": 4000,
+      "note": "open the rows-per-page dropdown so 25/50/100 are genuinely on screen when spoken"
+    },
+    {
+      "op": "log-rect",
+      "at": 170.05,
+      "key": "gcDropdownRect",
+      "target": "gcPerPageDropdown",
+      "requireStableMs": 200
+    },
+    {
+      "op": "watch",
+      "key": "perPageDropdownHold",
+      "from": 170.3,
+      "to": 172.9,
+      "predicate": "perPageOpen",
+      "everyMs": 400,
+      "mustHold": true
+    },
+    {
+      "op": "click",
+      "target": "perPageBtn",
+      "pressAt": 174.4,
+      "hoverMs": 260,
+      "postcondition": "perPageClosed25",
+      "timeoutMs": 4000,
+      "note": "genuine close via the same control; value verified unchanged at 25"
+    },
+    {
+      "op": "move",
+      "at": 175.3,
+      "to": {
+        "point": [
+          960,
+          940
+        ]
+      },
+      "note": "park for p52-p53"
+    },
+    {
+      "op": "key",
+      "pressAt": 181.78,
+      "keys": [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp"
+      ],
+      "gapMs": 45,
+      "keyLabel": "↑ scroll",
+      "postcondition": "atTop",
+      "timeoutMs": 5000,
+      "note": "step 12: scroll back to the top of the Gift Card List during p54"
+    },
+    {
+      "op": "move",
+      "at": 182.75,
+      "to": {
+        "point": [
+          1895,
+          560
+        ]
+      },
+      "note": "recap pan back up the page"
+    },
+    {
+      "op": "move",
+      "at": 183.4,
+      "to": {
+        "point": [
+          1895,
+          300
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 184.2,
+      "to": {
+        "point": [
+          1895,
+          140
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 190.8,
+      "to": {
+        "point": [
+          1500,
+          950
+        ]
+      },
+      "note": "final park, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 196.5,
+      "predicate": "onGiftCards"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "screen:960,142",
+        "place": "at",
+        "from": 2.3,
+        "to": 7.3,
+        "note": "the three stacked bands (step 1)"
+      },
+      {
+        "n": 2,
+        "anchor": "kpiTiles.tileActive",
+        "place": "below-left",
+        "from": 16.4,
+        "to": 23.6,
+        "note": "KPI strip (step 2)"
+      },
+      {
+        "n": 3,
+        "anchor": "insightCards.planCard",
+        "place": "below-left",
+        "from": 32.7,
+        "to": 38.9,
+        "note": "three insight cards (step 3)"
+      },
+      {
+        "n": 4,
+        "anchor": "titleRect",
+        "place": "right",
+        "from": 49.6,
+        "to": 53.4,
+        "note": "list-card title + eyebrow (step 4)"
+      },
+      {
+        "n": 5,
+        "anchor": "searchBoxRect",
+        "place": "left-top",
+        "from": 66.3,
+        "to": 71.9,
+        "note": "search placeholder (step 5)"
+      },
+      {
+        "n": 6,
+        "anchor": "screen:1705,437",
+        "place": "at",
+        "from": 84.7,
+        "to": 89.3,
+        "note": "Filters button / active-filter count (step 6); badge renders only when count > 0"
+      },
+      {
+        "n": 7,
+        "anchor": "tableHeadRect",
+        "place": "below-left",
+        "from": 98.4,
+        "to": 111.9,
+        "note": "sortable headers + checkbox column (step 7)"
+      },
+      {
+        "n": 8,
+        "anchor": "planChipRect",
+        "place": "below-left",
+        "from": 115.5,
+        "to": 122.5,
+        "note": "plan + status chips (step 8)"
+      },
+      {
+        "n": 9,
+        "anchor": "pagerItems.perPageBtn",
+        "place": "below-left",
+        "from": 132.1,
+        "to": 141.3,
+        "note": "pagination footer (step 9)"
+      },
+      {
+        "n": 10,
+        "anchor": "gcTitleRect",
+        "place": "right",
+        "from": 154.4,
+        "to": 161.8,
+        "note": "same skeleton, different data (step 10)"
+      },
+      {
+        "n": 11,
+        "anchor": "gcDropdownRect",
+        "place": "left",
+        "from": 170.4,
+        "to": 172.9,
+        "note": "rows-per-page options 25/50/100 (step 11)"
+      },
+      {
+        "n": 12,
+        "anchor": "screen:968,142",
+        "place": "at",
+        "from": 184.7,
+        "to": 195.4,
+        "note": "recap: the shared anatomy (step 12)"
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "kpiStripRect",
+        "from": 3.69,
+        "to": 4.15,
+        "note": "p03 spoken order: summary numbers on top"
+      },
+      {
+        "anchor": "cardsRowRect",
+        "from": 4.15,
+        "to": 4.62,
+        "note": "insight cards in the middle"
+      },
+      {
+        "anchor": "tableHeadRect",
+        "from": 4.62,
+        "to": 5.5,
+        "note": "the table underneath"
+      },
+      {
+        "anchor": "kpiTiles.tileTotal",
+        "from": 21.0,
+        "to": 21.65,
+        "note": "p08: how many customers"
+      },
+      {
+        "anchor": "kpiTiles.tileActive",
+        "from": 21.65,
+        "to": 22.3
+      },
+      {
+        "anchor": "kpiTiles.tileRisk",
+        "from": 22.3,
+        "to": 22.95
+      },
+      {
+        "anchor": "kpiTiles.tileProspects",
+        "from": 22.95,
+        "to": 23.8
+      },
+      {
+        "anchor": "insightCards.growthCard",
+        "from": 34.25,
+        "to": 35.3,
+        "note": "p11: one tracks growth over the year"
+      },
+      {
+        "anchor": "insightCards.planCard",
+        "from": 35.3,
+        "to": 36.13,
+        "note": "one shows how members split across plans"
+      },
+      {
+        "anchor": "insightCards.riskCard",
+        "from": 36.13,
+        "to": 38.1,
+        "note": "p12: one rates overall health"
+      },
+      {
+        "anchor": "titleRect",
+        "from": 49.43,
+        "to": 50.5,
+        "note": "p16: its title"
+      },
+      {
+        "anchor": "eyebrowRect",
+        "from": 50.5,
+        "to": 51.7,
+        "note": "and the small label above it"
+      },
+      {
+        "anchor": "actionBtns.retentionBtn",
+        "from": 54.6,
+        "to": 55.25,
+        "note": "p17: the action buttons, left to right"
+      },
+      {
+        "anchor": "actionBtns.deleteBtn",
+        "from": 55.25,
+        "to": 55.9
+      },
+      {
+        "anchor": "actionBtns.addCustomerBtn",
+        "from": 55.9,
+        "to": 56.5
+      },
+      {
+        "anchor": "actionBtns.deleteBtn",
+        "from": 57.2,
+        "to": 63.3,
+        "color": "#dc2626",
+        "note": "do-not-click guardrail through p18-p19 (Delete)"
+      },
+      {
+        "anchor": "actionBtns.addCustomerBtn",
+        "from": 57.45,
+        "to": 63.3,
+        "color": "#dc2626",
+        "note": "do-not-click guardrail (+ Add Customer)"
+      },
+      {
+        "anchor": "searchBoxRect",
+        "from": 66.2,
+        "to": 72.1,
+        "note": "p21-p22: the placeholder spells out the searchable fields"
+      },
+      {
+        "anchor": "filtersBtnRect",
+        "from": 84.6,
+        "to": 89.4,
+        "note": "p25-p26: the Filters control (badge hidden while count is 0)"
+      },
+      {
+        "anchor": "tableHeadRect",
+        "from": 98.2,
+        "to": 106.0,
+        "note": "p30: the sortable column headers"
+      },
+      {
+        "anchor": "selectAllRect",
+        "from": 111.2,
+        "to": 112.6,
+        "note": "p32: the checkbox column feeds Delete; none checked"
+      },
+      {
+        "anchor": "planChipRect",
+        "from": 115.38,
+        "to": 118.14,
+        "note": "p35: the plan chip"
+      },
+      {
+        "anchor": "statusActiveRect",
+        "from": 118.86,
+        "to": 120.7,
+        "note": "p36: green for active"
+      },
+      {
+        "anchor": "statusInactiveRect",
+        "from": 120.7,
+        "to": 122.7,
+        "note": "grey for inactive"
+      },
+      {
+        "anchor": "pagerItems.perPageBtn",
+        "from": 131.9,
+        "to": 133.4,
+        "note": "p39: the rows-per-page control"
+      },
+      {
+        "anchor": "pagerItems.prevPageBtn",
+        "from": 133.4,
+        "to": 134.4,
+        "note": "and the page arrows"
+      },
+      {
+        "anchor": "pagerItems.nextPageBtn",
+        "from": 134.4,
+        "to": 135.9
+      },
+      {
+        "anchor": "pagerItems.countInfo",
+        "from": 136.5,
+        "to": 137.9,
+        "note": "p40: 1-25 of 1,643,807"
+      },
+      {
+        "anchor": "pagerItems.lastPageBtn",
+        "from": 138.0,
+        "to": 141.4,
+        "note": "p41: the pages say millions (65,753)"
+      },
+      {
+        "anchor": "gcKpiRect",
+        "from": 153.6,
+        "to": 154.6,
+        "note": "p45 spoken order: tiles across the top"
+      },
+      {
+        "anchor": "gcCardsRect",
+        "from": 154.6,
+        "to": 155.7,
+        "note": "three insight cards"
+      },
+      {
+        "anchor": "gcTheadRect",
+        "from": 155.7,
+        "to": 156.9,
+        "note": "then the list"
+      },
+      {
+        "anchor": "gcSearchRect",
+        "from": 165.59,
+        "to": 166.9,
+        "note": "p50: the search hint"
+      },
+      {
+        "anchor": "gcTheadRect",
+        "from": 166.9,
+        "to": 167.8,
+        "note": "the columns (highlight ends before the scroll starts)"
+      },
+      {
+        "anchor": "gcDropdownRect",
+        "from": 170.2,
+        "to": 172.95,
+        "note": "the rows-per-page choices 25/50/100, genuinely open"
+      },
+      {
+        "anchor": "gcKpiRect",
+        "from": 182.85,
+        "to": 183.2,
+        "note": "p55 recap order: KPI strip"
+      },
+      {
+        "anchor": "gcCardsRect",
+        "from": 183.2,
+        "to": 183.6,
+        "note": "insight cards"
+      },
+      {
+        "anchor": "gcSearchRect",
+        "from": 183.6,
+        "to": 183.95,
+        "note": "search"
+      },
+      {
+        "anchor": "gcFiltersRect",
+        "from": 183.95,
+        "to": 184.35,
+        "note": "and filters"
+      },
+      {
+        "anchor": "gcTheadRect",
+        "from": 184.35,
+        "to": 185.4,
+        "note": "p56: sortable columns with chips"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 15.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.1,
+        "z": 1.12,
+        "cx": 960,
+        "cy": 482,
+        "ease": true,
+        "note": "gentle top framing for the KPI strip and insight cards (steps 2-3)"
+      },
+      {
+        "t": 46.3,
+        "z": 1.12,
+        "cx": 960,
+        "cy": 482
+      },
+      {
+        "t": 47.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide: the list-card header spans the full width incl. right-side buttons"
+      },
+      {
+        "t": 68.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 69.6,
+        "z": 1.5,
+        "cx": 640,
+        "cy": 466,
+        "ease": true,
+        "note": "close framing on the search placeholder while p22 reads the fields"
+      },
+      {
+        "t": 72.4,
+        "z": 1.5,
+        "cx": 640,
+        "cy": 466
+      },
+      {
+        "t": 73.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for Filters panel, headers, and the full-width footer"
+      },
+      {
+        "t": 113.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 114.6,
+        "z": 1.5,
+        "cx": 940,
+        "cy": 620,
+        "ease": true,
+        "note": "close framing on one row's plan + status chips (step 8)"
+      },
+      {
+        "t": 122.9,
+        "z": 1.5,
+        "cx": 940,
+        "cy": 620
+      },
+      {
+        "t": 124.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide and stay wide: footer, page switch, and recap are full-interface moments"
+      },
+      {
+        "t": 199.236,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "List Conventions — Complete",
+      "from": 197.4,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 197.1
+  }
+}

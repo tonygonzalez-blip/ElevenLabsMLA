@@ -132,7 +132,7 @@
     {
       "block": "s12",
       "startS": 156.0,
-      "endS": 162.6,
+      "endS": 163.0,
       "phrases": [
         { "id": "p50", "text": "Click Close." },
         { "id": "p51", "text": "The window disappears with no question sent, your workspace right where you left it." }
@@ -140,7 +140,7 @@
     },
     {
       "block": "s13",
-      "startS": 162.6,
+      "startS": 163.0,
       "endS": 181.473,
       "phrases": [
         { "id": "p52", "text": "So that's the header." },

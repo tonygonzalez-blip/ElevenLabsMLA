@@ -164,9 +164,13 @@ const stab = events.stability;
 let edits = { freezes: [] };
 try { edits = JSON.parse(fs.readFileSync(path.join(outDir, `${L.lesson}-edits.json`), 'utf8')); } catch (e) {}
 const covered = (pressT, stableT) => edits.freezes.some(fz => fz.fromS <= pressT + 0.2 && fz.toS >= stableT - 0.05);
-const navsCut = Object.values(stab).length >= 2 && Object.values(stab).every(s => s.readyT != null && s.stableT != null && covered(s.navPressT, s.stableT));
+const expectedNavs = L.ops.filter(o => o.op === 'click' && o.nav).length;
+const stabVals = Object.values(stab);
+const navsCut = expectedNavs === 0 ? true
+  : (stabVals.length >= expectedNavs && stabVals.every(s => s.readyT != null && s.stableT != null && covered(s.navPressT, s.stableT)));
 add(24, 'no loading/partial-render frames after navigation', navsCut,
-  `${Object.keys(stab).length} navs; ${edits.freezes.length} loading-cut freeze(s): ${edits.freezes.map(f => `${f.key} ${f.fromS}-${f.toS}s`).join(', ')}`);
+  expectedNavs === 0 ? 'no navigations in this lesson (overlay-only)' :
+  `${stabVals.length}/${expectedNavs} navs stabilized; freezes: ${edits.freezes.map(f => `${f.key} ${f.fromS}-${f.toS}s`).join(', ')}`);
 
 // 25 no pointer teleport (no jump > 90px between consecutive 33ms samples)
 let teleport = null;
