@@ -1,0 +1,81 @@
+{
+  "base": "WC-10-05",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 184.01,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "IT & Support nav",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-10-05-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Locate Knowledge Base",
+      "audioS": 17.71,
+      "stepS": 18.11,
+      "file": "WC-10-05-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Open Knowledge Base",
+      "audioS": 27.17,
+      "stepS": 27.57,
+      "file": "WC-10-05-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Knowledge Base role",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-10-05-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Locate Training Requests",
+      "audioS": 11.39,
+      "stepS": 11.79,
+      "file": "WC-10-05-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Open Training Requests",
+      "audioS": 22.05,
+      "stepS": 22.45,
+      "file": "WC-10-05-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Training Requests role",
+      "audioS": 16.2,
+      "stepS": 16.6,
+      "file": "WC-10-05-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Header fallback",
+      "audioS": 22.67,
+      "stepS": 23.07,
+      "file": "WC-10-05-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Recap",
+      "audioS": 27.32,
+      "stepS": 27.72,
+      "file": "WC-10-05-s09.mp3"
+    }
+  ]
+}

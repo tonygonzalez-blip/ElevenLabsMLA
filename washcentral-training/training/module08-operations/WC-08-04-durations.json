@@ -1,0 +1,129 @@
+{
+  "base": "WC-08-04",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 239.05,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Land on Appointments",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-08-04-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "The KPI band",
+      "audioS": 18.13,
+      "stepS": 18.53,
+      "file": "WC-08-04-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Booking Trend",
+      "audioS": 14.84,
+      "stepS": 15.24,
+      "file": "WC-08-04-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "By Service",
+      "audioS": 13.79,
+      "stepS": 14.19,
+      "file": "WC-08-04-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Booking Status",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-08-04-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "The list and the view toggle",
+      "audioS": 13.64,
+      "stepS": 14.04,
+      "file": "WC-08-04-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "New Record and Export",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-08-04-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Search and Filters",
+      "audioS": 12.75,
+      "stepS": 13.15,
+      "file": "WC-08-04-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "The columns",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-08-04-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Staff and status",
+      "audioS": 17.48,
+      "stepS": 17.88,
+      "file": "WC-08-04-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "The pager",
+      "audioS": 10.92,
+      "stepS": 11.32,
+      "file": "WC-08-04-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Switch to Calendar",
+      "audioS": 14.03,
+      "stepS": 14.43,
+      "file": "WC-08-04-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Back to List",
+      "audioS": 12.36,
+      "stepS": 12.76,
+      "file": "WC-08-04-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "The rest of the group",
+      "audioS": 21.16,
+      "stepS": 21.56,
+      "file": "WC-08-04-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Recap",
+      "audioS": 20.27,
+      "stepS": 20.67,
+      "file": "WC-08-04-s15.mp3"
+    }
+  ]
+}

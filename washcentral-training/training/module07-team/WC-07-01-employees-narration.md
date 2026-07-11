@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION.** Re-authored July 11, 2026 against the v1.1 guide and shot list. The July 11 credentialed pass captured the full employee detail page (header, metric band, five Overview panels, all six deeper tabs — digests `emp-employee-detail-*.json`); blocks s10, s12, s13 now narrate that captured page, and s14 closes the record with **← Back** per guide step 14. Audio is rendered later once the ElevenLabs key is available in this environment. Render settings: WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 15 blocks `WC-07-01-s01.mp3`…`WC-07-01-s15.mp3`, assembled at each step's marker. Estimated per-step seconds (speech at ~145 wpm + break + 0.4 s tail): s01 15.3 · s02 17.9 · s03 18.4 · s04 15.9 · s05 13.8 · s06 14.8 · s07 19.8 · s08 15.5 · s09 17.7 · s10 31.6 · s11 21.9 · s12 30.1 · s13 30.6 · s14 22.3 · s15 22.1. Estimated total ~5:08; timestamps below are estimates pending render.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 15 blocks `WC-07-01-s01.mp3`…`WC-07-01-s15.mp3` + joined `WC-07-01-full-narration-v1.0.mp3` (254.3s ≈ 4:14). Step duration = audio + 0.4 s. Per-step render seconds: s01 10.53 · s02 13.17 · s03 13.24 · s04 11.55 · s05 11.81 · s06 10.84 · s07 16.12 · s08 11.73 · s09 12.36 · s10 23.48 · s11 21.55 · s12 27.72 · s13 28.6 · s14 18.05 · s15 17.55.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

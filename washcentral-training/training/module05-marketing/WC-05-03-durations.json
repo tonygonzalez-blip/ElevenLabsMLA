@@ -1,0 +1,113 @@
+{
+  "base": "WC-05-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 225.51,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Marketing sidebar",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-05-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "SmartLinks",
+      "audioS": 14.52,
+      "stepS": 14.92,
+      "file": "WC-05-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Customer Segments",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-05-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Offers & Promotions",
+      "audioS": 14.11,
+      "stepS": 14.51,
+      "file": "WC-05-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Email Templates",
+      "audioS": 18.44,
+      "stepS": 18.84,
+      "file": "WC-05-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Paid Media",
+      "audioS": 20.92,
+      "stepS": 21.32,
+      "file": "WC-05-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Deliverability",
+      "audioS": 18.36,
+      "stepS": 18.76,
+      "file": "WC-05-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Referral Program",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-05-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "SMS Templates",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-05-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "RCS Templates",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-05-03-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Mobile Content Blocks",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-05-03-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Push Campaigns",
+      "audioS": 16.67,
+      "stepS": 17.07,
+      "file": "WC-05-03-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-05-03-s13.mp3"
+    }
+  ]
+}

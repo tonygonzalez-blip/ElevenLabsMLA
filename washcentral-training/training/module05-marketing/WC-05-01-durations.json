@@ -1,0 +1,121 @@
+{
+  "base": "WC-05-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 226.35,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open Campaigns",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-05-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI tiles",
+      "audioS": 18.52,
+      "stepS": 18.92,
+      "file": "WC-05-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Send Volume",
+      "audioS": 12.28,
+      "stepS": 12.68,
+      "file": "WC-05-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Campaigns by Type",
+      "audioS": 15.15,
+      "stepS": 15.55,
+      "file": "WC-05-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Campaign Performance",
+      "audioS": 11.08,
+      "stepS": 11.48,
+      "file": "WC-05-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Campaign List",
+      "audioS": 12.43,
+      "stepS": 12.83,
+      "file": "WC-05-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Columns",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-05-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Statuses",
+      "audioS": 14.92,
+      "stepS": 15.32,
+      "file": "WC-05-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Weather-paused chip",
+      "audioS": 21.79,
+      "stepS": 22.19,
+      "file": "WC-05-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Open the form",
+      "audioS": 16.59,
+      "stepS": 16.99,
+      "file": "WC-05-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Campaign Details fields",
+      "audioS": 21.32,
+      "stepS": 21.72,
+      "file": "WC-05-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Cancel",
+      "audioS": 14.76,
+      "stepS": 15.16,
+      "file": "WC-05-01-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Find a campaign",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-05-01-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Recap",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-05-01-s14.mp3"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "base": "WC-09-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 230.42,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Digital / Customer Portal group",
+      "audioS": 13.32,
+      "stepS": 13.72,
+      "file": "WC-09-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open Portal Members",
+      "audioS": 9.72,
+      "stepS": 10.12,
+      "file": "WC-09-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "KPI strip",
+      "audioS": 17.16,
+      "stepS": 17.56,
+      "file": "WC-09-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Insight cards",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-09-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Member List card & toolbar",
+      "audioS": 13.4,
+      "stepS": 13.8,
+      "file": "WC-09-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Columns",
+      "audioS": 17.16,
+      "stepS": 17.56,
+      "file": "WC-09-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Pagination / read-only",
+      "audioS": 13.56,
+      "stepS": 13.96,
+      "file": "WC-09-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Booking Page (Customer)",
+      "audioS": 24.69,
+      "stepS": 25.09,
+      "file": "WC-09-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Portal Messages",
+      "audioS": 25,
+      "stepS": 25.4,
+      "file": "WC-09-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Portal Billing",
+      "audioS": 25.31,
+      "stepS": 25.71,
+      "file": "WC-09-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Portal Notifications",
+      "audioS": 24.45,
+      "stepS": 24.85,
+      "file": "WC-09-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 25.97,
+      "stepS": 26.37,
+      "file": "WC-09-01-s12.mp3"
+    }
+  ]
+}

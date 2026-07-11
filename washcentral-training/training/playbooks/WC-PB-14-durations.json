@@ -1,0 +1,89 @@
+{
+  "base": "WC-PB-14",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 211.19,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Reproduce and read two things",
+      "audioS": 18.68,
+      "stepS": 19.08,
+      "file": "WC-PB-14-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Class one: the hard 404",
+      "audioS": 22.52,
+      "stepS": 22.92,
+      "file": "WC-PB-14-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Same class, inside the app",
+      "audioS": 21.55,
+      "stepS": 21.95,
+      "file": "WC-PB-14-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Class two: the dead # stub",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-PB-14-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Class three: the data-fetch error",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-PB-14-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Read what rendered",
+      "audioS": 21.24,
+      "stepS": 21.64,
+      "file": "WC-PB-14-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Three side by side",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-PB-14-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Capture the evidence",
+      "audioS": 22.05,
+      "stepS": 22.45,
+      "file": "WC-PB-14-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Escalate cleanly",
+      "audioS": 21.55,
+      "stepS": 21.95,
+      "file": "WC-PB-14-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Recap the sort",
+      "audioS": 23.64,
+      "stepS": 24.04,
+      "file": "WC-PB-14-s10.mp3"
+    }
+  ]
+}

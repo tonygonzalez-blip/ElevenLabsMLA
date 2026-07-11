@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION.** Re-authored July 11, 2026 against the v2.0 guide and shot list. The July 11 credentialed pass reached all four pages through the in-app sidebar (direct URLs still 404; digests `maint-schedule-inapp.json`, `maint-equipment-inapp.json`, `maint-checklist-inapp.json`, `maint-parts-inapp.json`). Blocks s02–s06 now narrate the live pages; the July 9 Not-Found narration is retired. Render settings: voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, one TTS call per step, files `WC-08-02-s01.mp3` … `WC-08-02-s06.mp3`. Step duration = audio + 0.4 s.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 6 blocks `WC-08-02-s01.mp3`…`WC-08-02-s06.mp3` + joined `WC-08-02-full-narration-v1.0.mp3` (165.53s ≈ 2:46). Step duration = audio + 0.4 s. Per-step render seconds: s01 27.17 · s02 24.35 · s03 23.88 · s04 25.97 · s05 29 · s06 32.76.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice. Never switch without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

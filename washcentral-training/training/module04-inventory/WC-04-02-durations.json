@@ -1,0 +1,73 @@
+{
+  "base": "WC-04-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 171.14,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Inventory sidebar",
+      "audioS": 16.27,
+      "stepS": 16.67,
+      "file": "WC-04-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Inventory Batches",
+      "audioS": 21.97,
+      "stepS": 22.37,
+      "file": "WC-04-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Adjustments",
+      "audioS": 23.33,
+      "stepS": 23.73,
+      "file": "WC-04-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Vendors",
+      "audioS": 20.11,
+      "stepS": 20.51,
+      "file": "WC-04-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Chemicals & Supplies",
+      "audioS": 25.97,
+      "stepS": 26.37,
+      "file": "WC-04-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Purchase Orders",
+      "audioS": 24.19,
+      "stepS": 24.59,
+      "file": "WC-04-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Purchase Order quick-look",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-04-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Recap",
+      "audioS": 20.61,
+      "stepS": 21.01,
+      "file": "WC-04-02-s08.mp3"
+    }
+  ]
+}

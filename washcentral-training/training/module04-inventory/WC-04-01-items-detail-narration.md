@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION.** Re-authored July 11, 2026 against guide and shot list v2.0. The July 11 pass confirmed the row click opens the read-only **Item Detail** page (`inv-items-detail.html`: **← Back / Delete / Edit Record**, three tabs all captured — digests `inv-item-detail-main.json`, `inv-item-detail-pricing-stock.json`, `inv-item-detail-storage-location.json`), and blocks s07 and s09–s12 now narrate that page, including the observed repetition of the same eight fields on tabs 2–3 (logged discrepancy) and the **← Back** exit. Render settings: WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3, 13 blocks `WC-04-01-s01.mp3` … `WC-04-01-s13.mp3`.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 13 blocks `WC-04-01-s01.mp3`…`WC-04-01-s13.mp3` + joined `WC-04-01-full-narration-v1.0.mp3` (218.64s ≈ 3:39). Step duration = audio + 0.4 s. Per-step render seconds: s01 16.27 · s02 13.17 · s03 16.43 · s04 16.12 · s05 17.87 · s06 15.31 · s07 20.27 · s08 13.56 · s09 19.64 · s10 17.08 · s11 17.24 · s12 17.16 · s13 13.32.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved by user July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

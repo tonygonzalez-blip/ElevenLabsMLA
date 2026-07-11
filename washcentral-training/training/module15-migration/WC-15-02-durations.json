@@ -1,0 +1,73 @@
+{
+  "base": "WC-15-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 149.56,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Title",
+      "audioS": 9.95,
+      "stepS": 10.35,
+      "file": "WC-15-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Parity",
+      "audioS": 18.91,
+      "stepS": 19.31,
+      "file": "WC-15-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Architecture",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-15-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Roadmap",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-15-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "The map, part one",
+      "audioS": 21.97,
+      "stepS": 22.37,
+      "file": "WC-15-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "The map, part two",
+      "audioS": 27.01,
+      "stepS": 27.41,
+      "file": "WC-15-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "The rule",
+      "audioS": 24.35,
+      "stepS": 24.75,
+      "file": "WC-15-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Recap",
+      "audioS": 12.51,
+      "stepS": 12.91,
+      "file": "WC-15-02-s08.mp3"
+    }
+  ]
+}

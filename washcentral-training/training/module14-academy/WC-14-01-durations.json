@@ -1,0 +1,113 @@
+{
+  "base": "WC-14-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 230.19,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open the Academy",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-14-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "ACADEMY sidebar group",
+      "audioS": 18.76,
+      "stepS": 19.16,
+      "file": "WC-14-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Progress tiles",
+      "audioS": 18.91,
+      "stepS": 19.31,
+      "file": "WC-14-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Continue Learning section",
+      "audioS": 16.27,
+      "stepS": 16.67,
+      "file": "WC-14-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "The resume card",
+      "audioS": 18.44,
+      "stepS": 18.84,
+      "file": "WC-14-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "All Courses anatomy",
+      "audioS": 19.96,
+      "stepS": 20.36,
+      "file": "WC-14-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "The six course cards",
+      "audioS": 16.85,
+      "stepS": 17.25,
+      "file": "WC-14-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "My Achievements",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-14-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Org Leaderboard",
+      "audioS": 13.79,
+      "stepS": 14.19,
+      "file": "WC-14-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Quick Links",
+      "audioS": 11.65,
+      "stepS": 12.05,
+      "file": "WC-14-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "The other three destinations",
+      "audioS": 24.45,
+      "stepS": 24.85,
+      "file": "WC-14-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "The enrollment rule",
+      "audioS": 16.67,
+      "stepS": 17.07,
+      "file": "WC-14-01-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 17.32,
+      "stepS": 17.72,
+      "file": "WC-14-01-s13.mp3"
+    }
+  ]
+}

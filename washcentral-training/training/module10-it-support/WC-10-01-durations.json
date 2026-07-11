@@ -1,0 +1,129 @@
+{
+  "base": "WC-10-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 270.21,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open ML Command Center",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-10-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Header status",
+      "audioS": 21.24,
+      "stepS": 21.64,
+      "file": "WC-10-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Scope filters",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-10-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Focus a tier",
+      "audioS": 14.03,
+      "stepS": 14.43,
+      "file": "WC-10-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Status chips",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-10-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Saved views",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-10-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "KPI band",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-10-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Tier split",
+      "audioS": 14.92,
+      "stepS": 15.32,
+      "file": "WC-10-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Average SLA",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-10-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Network Coverage map",
+      "audioS": 17.24,
+      "stepS": 17.64,
+      "file": "WC-10-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Map controls",
+      "audioS": 14.68,
+      "stepS": 15.08,
+      "file": "WC-10-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Feed tabs",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-10-01-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Severity groups",
+      "audioS": 17.48,
+      "stepS": 17.88,
+      "file": "WC-10-01-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Row anatomy",
+      "audioS": 19.64,
+      "stepS": 20.04,
+      "file": "WC-10-01-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Recap",
+      "audioS": 24.19,
+      "stepS": 24.59,
+      "file": "WC-10-01-s15.mp3"
+    }
+  ]
+}

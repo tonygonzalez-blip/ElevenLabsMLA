@@ -1,0 +1,105 @@
+{
+  "base": "WC-08-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 178.45,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Incident Reports list",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-08-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Column headers",
+      "audioS": 12.36,
+      "stepS": 12.76,
+      "file": "WC-08-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Report number prefixes",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-08-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "The five types",
+      "audioS": 21.32,
+      "stepS": 21.72,
+      "file": "WC-08-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Status",
+      "audioS": 12.59,
+      "stepS": 12.99,
+      "file": "WC-08-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Location",
+      "audioS": 12.51,
+      "stepS": 12.91,
+      "file": "WC-08-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Date",
+      "audioS": 12.04,
+      "stepS": 12.44,
+      "file": "WC-08-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Search box",
+      "audioS": 13.4,
+      "stepS": 13.8,
+      "file": "WC-08-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Filters and Search",
+      "audioS": 10.27,
+      "stepS": 10.67,
+      "file": "WC-08-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Pagination",
+      "audioS": 11,
+      "stepS": 11.4,
+      "file": "WC-08-03-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "New Report",
+      "audioS": 13.09,
+      "stepS": 13.49,
+      "file": "WC-08-03-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 24.35,
+      "stepS": 24.75,
+      "file": "WC-08-03-s12.mp3"
+    }
+  ]
+}

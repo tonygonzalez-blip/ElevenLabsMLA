@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 13 blocks `WC-07-04-s01.mp3`…`WC-07-04-s13.mp3`, plus a joined `WC-07-04-full-narration-v1.0.mp3` after render. Audio is rendered later (the ElevenLabs key is not set in this session); the timestamps below are estimates pending render.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 13 blocks `WC-07-04-s01.mp3`…`WC-07-04-s13.mp3` + joined `WC-07-04-full-narration-v1.0.mp3` (197.51s ≈ 3:18). Step duration = audio + 0.4 s. Per-step render seconds: s01 15.07 · s02 16.2 · s03 16.43 · s04 18.91 · s05 17.16 · s06 15.8 · s07 13.24 · s08 14.03 · s09 10.11 · s10 12.12 · s11 11.39 · s12 9.33 · s13 22.52.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

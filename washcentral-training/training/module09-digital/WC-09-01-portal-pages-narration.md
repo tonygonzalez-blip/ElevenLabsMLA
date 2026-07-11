@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION.** Re-authored July 11, 2026 against guide and shot list v2.0. The July 11 credentialed pass reached all four sibling pages via the in-app sidebar (direct URLs still 404; digests `portal-book-inapp.json`, `portal-messages-inapp.json`, `portal-billing-inapp.json`, `portal-notifications-inapp.json`), and blocks s08–s12 now narrate the read-only page opens in steps 8–11 plus the five-page recap. Render settings: voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, 12 blocks `WC-09-01-s01.mp3`…`WC-09-01-s12.mp3`, one TTS call per step. Step duration = audio + 0.4 s.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 12 blocks `WC-09-01-s01.mp3`…`WC-09-01-s12.mp3` + joined `WC-09-01-full-narration-v1.0.mp3` (230.42s ≈ 3:50). Step duration = audio + 0.4 s. Per-step render seconds: s01 13.32 · s02 9.72 · s03 17.16 · s04 15.88 · s05 13.4 · s06 17.16 · s07 13.56 · s08 24.69 · s09 25 · s10 25.31 · s11 24.45 · s12 25.97.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

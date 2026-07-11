@@ -1,0 +1,113 @@
+{
+  "base": "WC-07-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 205.46,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Employee Schedules",
+      "audioS": 16.04,
+      "stepS": 16.44,
+      "file": "WC-07-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Schedule grid",
+      "audioS": 17.48,
+      "stepS": 17.88,
+      "file": "WC-07-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Shift Types & Coverage",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-07-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Time Clock",
+      "audioS": 13.09,
+      "stepS": 13.49,
+      "file": "WC-07-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Open punch",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-07-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Punch Status",
+      "audioS": 14.99,
+      "stepS": 15.39,
+      "file": "WC-07-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Employee Roles",
+      "audioS": 12.59,
+      "stepS": 12.99,
+      "file": "WC-07-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Role List",
+      "audioS": 14.92,
+      "stepS": 15.32,
+      "file": "WC-07-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Access Levels",
+      "audioS": 13.24,
+      "stepS": 13.64,
+      "file": "WC-07-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "User Groups",
+      "audioS": 10.76,
+      "stepS": 11.16,
+      "file": "WC-07-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "User Group List",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-07-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Coverage & Maintenance",
+      "audioS": 17.71,
+      "stepS": 18.11,
+      "file": "WC-07-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 24.61,
+      "stepS": 25.01,
+      "file": "WC-07-02-s13.mp3"
+    }
+  ]
+}

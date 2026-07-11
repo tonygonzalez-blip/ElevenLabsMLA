@@ -1,0 +1,113 @@
+{
+  "base": "WC-14-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 262.43,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open the Academy",
+      "audioS": 14.68,
+      "stepS": 15.08,
+      "file": "WC-14-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Two sidebar groups",
+      "audioS": 23.8,
+      "stepS": 24.2,
+      "file": "WC-14-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Open Admin Dashboard",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-14-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Five KPI tiles",
+      "audioS": 19.72,
+      "stepS": 20.12,
+      "file": "WC-14-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Course Completion Heatmap",
+      "audioS": 20.61,
+      "stepS": 21.01,
+      "file": "WC-14-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Locate the admin actions",
+      "audioS": 16.93,
+      "stepS": 17.33,
+      "file": "WC-14-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Users & Enrollment",
+      "audioS": 19.33,
+      "stepS": 19.73,
+      "file": "WC-14-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "The user table",
+      "audioS": 20.51,
+      "stepS": 20.91,
+      "file": "WC-14-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Course Management",
+      "audioS": 17.79,
+      "stepS": 18.19,
+      "file": "WC-14-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "One course card",
+      "audioS": 21.24,
+      "stepS": 21.64,
+      "file": "WC-14-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Reports & Compliance",
+      "audioS": 21.63,
+      "stepS": 22.03,
+      "file": "WC-14-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "The two completion tables",
+      "audioS": 25.31,
+      "stepS": 25.71,
+      "file": "WC-14-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 16.85,
+      "stepS": 17.25,
+      "file": "WC-14-02-s13.mp3"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "base": "WC-09-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 197.06,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "MOBILE group",
+      "audioS": 15.57,
+      "stepS": 15.97,
+      "file": "WC-09-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI band",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-09-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Insight cards",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-09-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "List columns",
+      "audioS": 14.11,
+      "stepS": 14.51,
+      "file": "WC-09-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Troubleshooting",
+      "audioS": 13.4,
+      "stepS": 13.8,
+      "file": "WC-09-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "List toolbar",
+      "audioS": 12.43,
+      "stepS": 12.83,
+      "file": "WC-09-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Open Mobile App Branding",
+      "audioS": 12.83,
+      "stepS": 13.23,
+      "file": "WC-09-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Branding fields",
+      "audioS": 17.48,
+      "stepS": 17.88,
+      "file": "WC-09-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Mobile App Features",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-09-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Push Notifications",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-09-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Previews",
+      "audioS": 12.59,
+      "stepS": 12.99,
+      "file": "WC-09-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Close Settings",
+      "audioS": 8.36,
+      "stepS": 8.76,
+      "file": "WC-09-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Mobile Feedback",
+      "audioS": 10.11,
+      "stepS": 10.51,
+      "file": "WC-09-02-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Recap",
+      "audioS": 14.03,
+      "stepS": 14.43,
+      "file": "WC-09-02-s14.mp3"
+    }
+  ]
+}

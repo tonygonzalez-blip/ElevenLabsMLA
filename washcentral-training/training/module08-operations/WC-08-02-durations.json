@@ -1,0 +1,57 @@
+{
+  "base": "WC-08-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 165.53,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Operations · Maintenance sidebar",
+      "audioS": 27.17,
+      "stepS": 27.57,
+      "file": "WC-08-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Maintenance Schedule",
+      "audioS": 24.35,
+      "stepS": 24.75,
+      "file": "WC-08-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Equipment Registry",
+      "audioS": 23.88,
+      "stepS": 24.28,
+      "file": "WC-08-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Checklists",
+      "audioS": 25.97,
+      "stepS": 26.37,
+      "file": "WC-08-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Parts & Supplies",
+      "audioS": 29,
+      "stepS": 29.4,
+      "file": "WC-08-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Recap",
+      "audioS": 32.76,
+      "stepS": 33.16,
+      "file": "WC-08-02-s06.mp3"
+    }
+  ]
+}
