@@ -1,0 +1,194 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.653
+Start in Operations and look down the sidebar.
+
+p02
+00:00:03.333 --> 00:00:05.639
+The whole module is laid out in three groups.
+
+p03
+00:00:06.140 --> 00:00:07.430
+Maintenance sits at the top, then Incident Reports, then the Scheduler pages.
+
+p04
+00:00:07.857 --> 00:00:10.730
+We are in Maintenance, where five entries stack together.
+
+p05
+00:00:11.596 --> 00:00:14.512
+The first is Issues, the work-order list you already know.
+
+p06
+00:00:15.106 --> 00:00:18.341
+The four below it are the planned side of upkeep,
+
+p07
+00:00:18.889 --> 00:00:21.244
+the routines and gear and parts that sit behind every ticket.
+
+p08
+00:00:21.590 --> 00:00:27.079
+That set is today's tour.
+
+p09
+00:00:27.567 --> 00:00:28.937
+Click Maintenance Schedule.
+
+p10
+00:00:29.634 --> 00:00:31.508
+This is the planned side of upkeep.
+
+p11
+00:00:31.980 --> 00:00:37.769
+Forty two recurring tasks live on this calendar, six due this week and two already overdue.
+
+p12
+00:00:38.442 --> 00:00:40.215
+Each row is a job that repeats:
+
+p13
+00:00:40.553 --> 00:00:42.339
+lubricate the conveyor chain weekly, inspect the chemical pumps once a month.
+
+p14
+00:00:42.648 --> 00:00:44.734
+The column a manager reads first is Next Due,
+
+p15
+00:00:45.390 --> 00:00:51.840
+because it names the service that is coming before anything breaks.
+
+p16
+00:00:52.313 --> 00:00:54.019
+Now Equipment Registry.
+
+p17
+00:00:54.401 --> 00:00:56.935
+Every machine a work order points back to.
+
+p18
+00:00:57.168 --> 00:00:59.125
+This tenant carries four assets:
+
+p19
+00:00:59.351 --> 00:01:00.304
+a blower system, a chemical pump array, the main tunnel conveyor, and a point of sale terminal.
+
+p20
+00:01:00.518 --> 00:01:04.943
+Three are operational and one sits in repair.
+
+p21
+00:01:05.204 --> 00:01:07.894
+When a caller says the air dryer is down,
+
+p22
+00:01:08.158 --> 00:01:16.080
+this page names the exact unit, places it at its site, and shows whether it is already flagged.
+
+p23
+00:01:16.589 --> 00:01:17.286
+Open Checklists.
+
+p24
+00:01:17.286 --> 00:01:23.869
+These are the fixed steps a tech follows so nothing gets skipped on a busy day.
+
+p25
+00:01:23.869 --> 00:01:28.959
+Daily opening and closing walks, a weekly safety inspection, a monthly deep clean.
+
+p26
+00:01:28.959 --> 00:01:32.708
+The completion column shows how faithfully each one gets done,
+
+p27
+00:01:32.708 --> 00:01:36.177
+and the average sits at ninety four percent.
+
+p28
+00:01:36.177 --> 00:01:36.874
+One caution.
+
+p29
+00:01:36.874 --> 00:01:41.005
+This is not the Lube Checklists page over in Hardware settings.
+
+p30
+00:01:41.005 --> 00:01:42.399
+Different place, different job.
+
+p31
+00:01:42.955 --> 00:01:45.074
+Last one. Parts and Supplies.
+
+p32
+00:01:45.753 --> 00:01:47.532
+The stock a repair pulls from.
+
+p33
+00:01:48.046 --> 00:01:48.897
+Drive belts, pump seal kits, dryer filters, a spare power supply.
+
+p34
+00:01:49.146 --> 00:01:52.810
+A hundred forty two parts, about eighteen thousand dollars sitting on the shelf.
+
+p35
+00:01:53.259 --> 00:01:57.460
+Read quantity on hand against the reorder point
+
+p36
+00:01:57.826 --> 00:02:03.663
+and you can answer a do we have it call in seconds.
+
+p37
+00:02:04.005 --> 00:02:07.177
+And keep it straight from Chemicals and Supplies over in Inventory;
+
+p38
+00:02:07.454 --> 00:02:12.351
+that page is wash chemistry and retail goods, this one is upkeep.
+
+p39
+00:02:12.351 --> 00:02:13.289
+So, the map.
+
+p40
+00:02:14.017 --> 00:02:17.719
+Four live pages under Maintenance, right beside Issues.
+
+p41
+00:02:18.487 --> 00:02:20.483
+A recurring job lands on the Schedule, and Next Due says when.
+
+p42
+00:02:20.772 --> 00:02:22.348
+A question about a machine goes to the Registry.
+
+p43
+00:02:23.029 --> 00:02:25.466
+The steps a tech follows are the Checklists.
+
+p44
+00:02:26.150 --> 00:02:28.712
+The parts a repair burns through are Parts and Supplies.
+
+p45
+00:02:29.243 --> 00:02:32.578
+One habit before you go.
+
+p46
+00:02:33.518 --> 00:02:34.979
+Reach these pages from the sidebar inside Operations,
+
+p47
+00:02:35.584 --> 00:02:42.446
+because typing an address straight into the browser still fails.
+
+p48
+00:02:43.094 --> 00:02:44.880
+The sidebar is the front door.
+

@@ -1,0 +1,146 @@
+{
+  "lesson": "WC-08-03",
+  "audioMaster": "training/module08-operations/WC-08-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries (<=~95 chars). Block windows were measured by FFT cross-correlation of each WC-08-03-sNN.mp3 against the joined master (8 kHz mono f32 PCM, numpy rfft): the Sigma(ffprobe audio+0.4) formula predicts 178.436s but the ffprobed master is 178.051s (0.39s off, past the +-0.3s gate). Cross-correlation shows the master is the 12 blocks concatenated with an exact 0.400s gap after each; per-file ffprobe durations are inflated ~0.03s each by mp3 encoder-delay padding that the PCM concat strips, which is the whole discrepancy. Each block startS is its measured onset; final end = ffprobed master duration 178.051s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 18.16,
+      "phrases": [
+        { "id": "p01", "text": "This is where every damage claim and injury report lands." },
+        { "id": "p02", "text": "One list, under Operations." },
+        { "id": "p03", "text": "When a customer calls about a scratch from the tunnel," },
+        { "id": "p04", "text": "or a manager reports someone hurt on site, the record lives right here." },
+        { "id": "p05", "text": "Know this screen and you can pull up any incident without hunting through menus." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 18.16,
+      "endS": 30.88,
+      "phrases": [
+        { "id": "p06", "text": "Five columns run across the top." },
+        { "id": "p07", "text": "Report number, type, location, date, status." },
+        { "id": "p08", "text": "Read them left to right and you have the whole story of an incident" },
+        { "id": "p09", "text": "before you open a single record." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 30.88,
+      "endS": 44.16,
+      "phrases": [
+        { "id": "p10", "text": "Look at the first column." },
+        { "id": "p11", "text": "Every report number starts with I-R, then a short code for what happened." },
+        { "id": "p12", "text": "The code is not decoration." },
+        { "id": "p13", "text": "It tells you the kind of incident at a glance, before you read anything else." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 44.16,
+      "endS": 65.84,
+      "phrases": [
+        { "id": "p14", "text": "Now the type column, and this is the part to memorize." },
+        { "id": "p15", "text": "Five kinds of report, five codes." },
+        { "id": "p16", "text": "Customer Injury is C-I." },
+        { "id": "p17", "text": "Employee Injury, E-I." },
+        { "id": "p18", "text": "Property Damage is P." },
+        { "id": "p19", "text": "Vehicle Damage, V." },
+        { "id": "p20", "text": "And wash equipment damage carries W-E-D." },
+        { "id": "p21", "text": "Every incident you log is one of these five." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 65.84,
+      "endS": 78.8,
+      "phrases": [
+        { "id": "p22", "text": "Over on the right, the status." },
+        { "id": "p23", "text": "Most reports sit at Open." },
+        { "id": "p24", "text": "One here reads Under Review." },
+        { "id": "p25", "text": "That is the report's place in its lifecycle," },
+        { "id": "p26", "text": "so a quick scan of this column tells you what still needs attention." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 78.8,
+      "endS": 91.68,
+      "phrases": [
+        { "id": "p27", "text": "Third column, the location code." },
+        { "id": "p28", "text": "Each report is tagged to the site where it happened," },
+        { "id": "p29", "text": "shown as a short code like the ones in this list." },
+        { "id": "p30", "text": "On a support call, that tag tells you which wash and which manager you are dealing with." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 91.68,
+      "endS": 104.08,
+      "phrases": [
+        { "id": "p31", "text": "Then the date." },
+        { "id": "p32", "text": "Written year first, month, then day," },
+        { "id": "p33", "text": "so the column sorts cleanly and reads the same for everyone." },
+        { "id": "p34", "text": "It is the day the incident occurred, not the day someone typed it up." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 104.08,
+      "endS": 117.84,
+      "phrases": [
+        { "id": "p35", "text": "Say the list is hundreds long, not five." },
+        { "id": "p36", "text": "The search box up top takes a report number or a keyword and narrows the table as you type." },
+        { "id": "p37", "text": "When a customer gives you a claim number, this is your fastest way in." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 117.84,
+      "endS": 128.48,
+      "phrases": [
+        { "id": "p38", "text": "Next to it, two more tools." },
+        { "id": "p39", "text": "Filters opens options to narrow the list, and the Search button runs what you have entered." },
+        { "id": "p40", "text": "We are not stepping through the filter choices here." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 128.48,
+      "endS": 139.84,
+      "phrases": [
+        { "id": "p41", "text": "At the bottom, a count." },
+        { "id": "p42", "text": "Showing one through five of five records, on a single page." },
+        { "id": "p43", "text": "On a busy site, this footer and its page arrows are how you work through the backlog." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 139.84,
+      "endS": 153.28,
+      "phrases": [
+        { "id": "p44", "text": "Top right sits New Report." },
+        { "id": "p45", "text": "That is how a fresh incident gets started, and it opens by asking for the report type." },
+        { "id": "p46", "text": "On camera we open it to show the choices, then cancel straight back out." },
+        { "id": "p47", "text": "We file nothing today." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 153.28,
+      "endS": 178.051,
+      "phrases": [
+        { "id": "p48", "text": "So the incident log, in one screen." },
+        { "id": "p49", "text": "Five report types, each with its own code." },
+        { "id": "p50", "text": "A status that shows what is still open." },
+        { "id": "p51", "text": "Search and filters for when the list runs long." },
+        { "id": "p52", "text": "Picture the calls: a scratched car is Vehicle Damage," },
+        { "id": "p53", "text": "an employee who slips is Employee Injury, and both are logged right here." },
+        { "id": "p54", "text": "Learn the five types now, because on a support call you will be naming them from memory." }
+      ]
+    }
+  ],
+  "output": "WC-08-03-incident-reports-v1.1"
+}

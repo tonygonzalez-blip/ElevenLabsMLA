@@ -1,0 +1,164 @@
+{
+  "lesson": "WC-08-01",
+  "audioMaster": "training/module08-operations/WC-08-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-08-01-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft): the Σ(ffprobe audio+0.4) formula predicts 201.858s but the ffprobed master is 201.404s (0.45s off, past the ±0.3s gate). Cross-correlation shows the master is the 14 blocks concatenated with an ~0.4s gap after each; per-file ffprobe durations are inflated ~0.03s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates (diff reaches -0.469s by s14), which is the whole discrepancy. Each block startS is its measured onset (multiples of the 0.08s mp3-frame grid); final end = ffprobed master duration 201.404s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 16.72,
+      "phrases": [
+        { "id": "p01", "text": "Open the Operations module, then Issues." },
+        { "id": "p02", "text": "This is Maintenance Issues." },
+        { "id": "p03", "text": "Every equipment problem across your sites lands here as one work order." },
+        { "id": "p04", "text": "A dryer that won't heat, a touch screen that quit, a leaking pump." },
+        { "id": "p05", "text": "One list tracks them all the way to fixed." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.72,
+      "endS": 32.24,
+      "phrases": [
+        { "id": "p06", "text": "Start at the top." },
+        { "id": "p07", "text": "Four numbers frame the board: how many issues are open, how many are being worked," },
+        { "id": "p08", "text": "how many are high priority, and the average time to a fix." },
+        { "id": "p09", "text": "Before you read a single row, you know how heavy the load is." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 32.24,
+      "endS": 48.16,
+      "phrases": [
+        { "id": "p10", "text": "First panel, the twelve-month trend." },
+        { "id": "p11", "text": "It counts issues reported over the last year and flags the recent change." },
+        { "id": "p12", "text": "A rising line means more tickets coming in." },
+        { "id": "p13", "text": "Useful when someone asks whether last month was really busier, or it just felt that way." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 48.16,
+      "endS": 62.16,
+      "phrases": [
+        { "id": "p14", "text": "Next, the priority breakdown." },
+        { "id": "p15", "text": "Low, Medium, High, and Critical, each as a share of the total." },
+        { "id": "p16", "text": "This is your triage picture." },
+        { "id": "p17", "text": "When High and Critical creep up, that's where the day's attention goes." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 62.16,
+      "endS": 76.24,
+      "phrases": [
+        { "id": "p18", "text": "Third panel, the pipeline." },
+        { "id": "p19", "text": "It splits the open work into Resolved, in Progress, and Blocked." },
+        { "id": "p20", "text": "Blocked is the one to watch." },
+        { "id": "p21", "text": "A blocked job is stuck waiting on a part or a person, and it won't clear itself." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 76.24,
+      "endS": 89.44,
+      "phrases": [
+        { "id": "p22", "text": "Now the list itself." },
+        { "id": "p23", "text": "The header calls it the Issue List and gives the record count." },
+        { "id": "p24", "text": "The subtitle says the job out loud: work order tracking." },
+        { "id": "p25", "text": "Everything above this card is just the summary." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 89.44,
+      "endS": 101.76,
+      "phrases": [
+        { "id": "p26", "text": "Top-right of that card, two buttons." },
+        { "id": "p27", "text": "New Issue opens a blank work order." },
+        { "id": "p28", "text": "Export pulls the list out to a file." },
+        { "id": "p29", "text": "We won't export anything today; just know where it is when a manager asks for it." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 101.76,
+      "endS": 113.76,
+      "phrases": [
+        { "id": "p30", "text": "Click New Issue to see the form." },
+        { "id": "p31", "text": "This is where a technician writes up a new problem: what broke, where, and how urgent." },
+        { "id": "p32", "text": "We're only looking, so we back out without saving." },
+        { "id": "p33", "text": "Nothing gets logged." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 113.76,
+      "endS": 126.64,
+      "phrases": [
+        { "id": "p34", "text": "Below the buttons, the search row." },
+        { "id": "p35", "text": "Type a few letters to find an issue by title," },
+        { "id": "p36", "text": "or open Filters to narrow by status, priority, or site." },
+        { "id": "p37", "text": "On a long list, this is how you reach one ticket fast." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 126.64,
+      "endS": 140.88,
+      "phrases": [
+        { "id": "p38", "text": "The table has seven columns." },
+        { "id": "p39", "text": "Which site logged it, the title, its status, its priority," },
+        { "id": "p40", "text": "who owns it, who reported it, and the date." },
+        { "id": "p41", "text": "Read across one row and you have the whole story of a work order." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 140.88,
+      "endS": 158.64,
+      "phrases": [
+        { "id": "p42", "text": "Look at the live examples." },
+        { "id": "p43", "text": "An air dryer not reaching temperature, marked Open and high." },
+        { "id": "p44", "text": "A conveyor belt squeaking in the tunnel, already In Progress." },
+        { "id": "p45", "text": "A chemical pump leak, Critical, and already Resolved." },
+        { "id": "p46", "text": "Real problems, each at a different stage." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 158.64,
+      "endS": 172.72,
+      "phrases": [
+        { "id": "p47", "text": "Notice two columns are blank." },
+        { "id": "p48", "text": "Assigned To and Created By show a dash on every row here." },
+        { "id": "p49", "text": "In a live tenant they carry names." },
+        { "id": "p50", "text": "A row with no owner is your cue that somebody still needs to pick it up." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 172.72,
+      "endS": 183.2,
+      "phrases": [
+        { "id": "p51", "text": "At the foot of the list, the counter." },
+        { "id": "p52", "text": "It reads five of five, on one page." },
+        { "id": "p53", "text": "When your network fills this up, the arrows here walk you through the rest." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 183.2,
+      "endS": 201.404,
+      "phrases": [
+        { "id": "p54", "text": "So that's the work-order board." },
+        { "id": "p55", "text": "The four numbers up top tell you the load, the three panels tell you its shape," },
+        { "id": "p56", "text": "and the list is where every fix gets tracked." },
+        { "id": "p57", "text": "New Issue starts one; the columns tell you where it stands." },
+        { "id": "p58", "text": "This is the page you live in for anything broken on site." }
+      ]
+    }
+  ],
+  "output": "WC-08-01-maintenance-issues-v1.1"
+}
