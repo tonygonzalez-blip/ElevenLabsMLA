@@ -1,0 +1,230 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.937
+Every WashCentral screen carries the same tools in the top-right corner.
+
+p02
+00:00:04.347 --> 00:00:06.118
+They follow you from page to page.
+
+p03
+00:00:06.747 --> 00:00:08.304
+Three of them do the daily work:
+
+p04
+00:00:08.528 --> 00:00:12.880
+jumping anywhere, focusing the view, and asking questions in plain language.
+
+p05
+00:00:13.300 --> 00:00:14.773
+Press Control K.
+
+p06
+00:00:15.879 --> 00:00:19.899
+The command palette opens dead center, cursor already blinking.
+
+p07
+00:00:20.168 --> 00:00:22.116
+It's the quickest way to any page.
+
+p08
+00:00:22.417 --> 00:00:26.400
+Rather than hunt through menus, you picture where you're headed and type it.
+
+p09
+00:00:26.800 --> 00:00:27.739
+Now, the results.
+
+p10
+00:00:27.739 --> 00:00:31.545
+Search reads the whole platform, not just page titles.
+
+p11
+00:00:31.545 --> 00:00:35.533
+Each hit names where you'll land and the module it lives under,
+
+p12
+00:00:35.533 --> 00:00:38.038
+so the palette quietly teaches you the layout.
+
+p13
+00:00:38.500 --> 00:00:41.151
+Watch the footer, then tap the arrow keys.
+
+p14
+00:00:41.556 --> 00:00:45.826
+The highlight moves with each press.
+
+p15
+00:00:46.189 --> 00:00:47.035
+The palette runs entirely from the keyboard:
+
+p16
+00:00:47.322 --> 00:00:49.549
+arrows to move, Enter to open, Escape to back out.
+
+p17
+00:00:49.972 --> 00:00:51.166
+Build the habit early.
+
+p18
+00:00:51.701 --> 00:00:52.398
+Press Escape.
+
+p19
+00:00:52.398 --> 00:00:56.807
+The palette closes and drops you back exactly where you were,
+
+p20
+00:00:56.807 --> 00:00:59.370
+without opening or changing a thing.
+
+p21
+00:00:59.370 --> 00:01:01.113
+Closing Search is always safe.
+
+p22
+00:01:01.576 --> 00:01:03.406
+Now click the location selector.
+
+p23
+00:01:03.910 --> 00:01:07.532
+By default it reads All Locations, your whole network.
+
+p24
+00:01:08.098 --> 00:01:11.878
+This control decides which sites your dashboards and numbers come from.
+
+p25
+00:01:12.347 --> 00:01:14.612
+Right now, that's every wash you run.
+
+p26
+00:01:15.109 --> 00:01:16.162
+Underneath, two lists.
+
+p27
+00:01:16.162 --> 00:01:20.152
+One groups sites by state, with a count beside each.
+
+p28
+00:01:20.152 --> 00:01:23.046
+The other drills into a single wash.
+
+p29
+00:01:23.046 --> 00:01:26.376
+Pick either, and every dashboard narrows to match.
+
+p30
+00:01:26.376 --> 00:01:30.102
+For support work, remember: it only changes your view.
+
+p31
+00:01:30.102 --> 00:01:35.367
+The data never moves, and one click back to All Locations restores the whole network.
+
+p32
+00:01:35.889 --> 00:01:37.770
+Click the selector again to close it.
+
+p33
+00:01:38.836 --> 00:01:42.300
+We browsed and picked nothing, so scope stays on the full network.
+
+p34
+00:01:43.013 --> 00:01:46.852
+Scanning the list never filters a thing until you actually choose.
+
+p35
+00:01:47.400 --> 00:01:48.116
+Last tool.
+
+p36
+00:01:48.116 --> 00:01:49.398
+Click Ask Shyne.
+
+p37
+00:01:49.398 --> 00:01:52.411
+Shyne is the assistant built into WashCentral.
+
+p38
+00:01:52.411 --> 00:01:56.242
+Ask it about customers, operations, or marketing in plain language,
+
+p39
+00:01:56.242 --> 00:01:58.390
+and it pulls the answer together.
+
+p40
+00:01:58.900 --> 00:02:01.945
+The Try Asking prompts give you a feel for its range.
+
+p41
+00:02:02.715 --> 00:02:04.289
+Payment declines at one site, prepaid members gone quiet,
+
+p42
+00:02:04.746 --> 00:02:06.358
+last week's damage claims, VIPs at risk of leaving.
+
+p43
+00:02:06.857 --> 00:02:15.600
+If that's a question you'd normally dig through reports for, try Shyne first.
+
+p44
+00:02:16.100 --> 00:02:18.904
+At the bottom, a question box and a Send button.
+
+p45
+00:02:19.733 --> 00:02:22.544
+Normally you'd type a question here and Shyne would answer.
+
+p46
+00:02:22.745 --> 00:02:23.941
+We won't send one today.
+
+p47
+00:02:24.849 --> 00:02:27.047
+What matters is the line just below:
+
+p48
+00:02:27.307 --> 00:02:31.002
+the answer is AI-generated, so verify it before you act.
+
+p49
+00:02:31.745 --> 00:02:35.414
+Treat Shyne's reply as a fast first draft you always confirm.
+
+p50
+00:02:36.000 --> 00:02:36.981
+Click Close.
+
+p51
+00:02:37.612 --> 00:02:42.480
+The window disappears with no question sent, your workspace right where you left it.
+
+p52
+00:02:42.940 --> 00:02:44.103
+So that's the header.
+
+p53
+00:02:44.507 --> 00:02:47.525
+From any screen, Control K jumps you anywhere,
+
+p54
+00:02:47.816 --> 00:02:50.993
+the location selector focuses the view without touching a record,
+
+p55
+00:02:51.282 --> 00:02:55.053
+and Ask Shyne answers your questions, as long as you verify first.
+
+p56
+00:02:55.473 --> 00:02:57.096
+Three tools, one corner.
+
+p57
+00:02:57.413 --> 00:03:01.039
+Learn them now, because every lesson ahead assumes you can reach them.
+

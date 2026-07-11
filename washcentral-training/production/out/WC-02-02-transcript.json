@@ -1,0 +1,728 @@
+{
+  "lesson": "WC-02-02",
+  "audioMaster": "training/module02-crm/WC-02-02-full-narration-v1.0.mp3",
+  "audioDurationS": 315.716,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Click one row in the customer list.",
+      "startS": 0,
+      "endS": 2.026,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "That single click opens the whole member.",
+      "startS": 2.68,
+      "endS": 5.156,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Everything you need for most tickets is now on one page:",
+      "startS": 5.415,
+      "endS": 8.702,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "who they are up top, their numbers just below, and the detail waiting in the tabs.",
+      "startS": 8.988,
+      "endS": 13.704,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Start at the top and work down.",
+      "startS": 13.982,
+      "endS": 15.678,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Look at the header.",
+      "startS": 16.153,
+      "endS": 17.151,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The avatar, the name, the plan badge, and the line beneath it tell you four things at a glance:",
+      "startS": 17.462,
+      "endS": 23.217,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "who you have, what they pay for, where they wash, and whether the account is in good standing.",
+      "startS": 23.726,
+      "endS": 24.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Read that line first on every call.",
+      "startS": 24.699,
+      "endS": 26.837,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "It confirms you are on the right person.",
+      "startS": 27.172,
+      "endS": 34.145,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Now the chips under the name.",
+      "startS": 34.555,
+      "endS": 36.272,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Plan active, a plate on file for the cameras, auto-pay running, texting turned on.",
+      "startS": 37.125,
+      "endS": 40.121,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Four little flags that answer half the \"is my account set up right\" questions",
+      "startS": 40.552,
+      "endS": 43.15,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "before you open a single tab.",
+      "startS": 43.708,
+      "endS": 50.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Over on the right, four controls.",
+      "startS": 50.771,
+      "endS": 51.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Back returns you to the list.",
+      "startS": 51.977,
+      "endS": 52.995,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Edit Customer opens the form we cover next lesson.",
+      "startS": 53.308,
+      "endS": 54.852,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Actions holds the member-level moves, and we open that at the end.",
+      "startS": 55.37,
+      "endS": 58.333,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "The one you never touch is Delete.",
+      "startS": 58.751,
+      "endS": 64.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Under the header sits a strip of six numbers.",
+      "startS": 65.426,
+      "endS": 68.325,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Think of it as the account's vital signs:",
+      "startS": 69.088,
+      "endS": 71.211,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "when they joined, what they spend, how often they come, their points, the next renewal,",
+      "startS": 71.608,
+      "endS": 73.533,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "and the last time you saw them.",
+      "startS": 73.779,
+      "endS": 77.087,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "When a member asks \"how long have I been with you\" or \"when do I renew,\"",
+      "startS": 77.329,
+      "endS": 78.886,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "the answer is right here, no digging.",
+      "startS": 79.704,
+      "endS": 87.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Below that, a row of shortcuts.",
+      "startS": 87.596,
+      "endS": 89.558,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Each chip is a doorway into one slice of the account:",
+      "startS": 90.224,
+      "endS": 93.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "their vehicles, their tickets, their wash books, gift cards, house account, loyalty, rewards.",
+      "startS": 93.58,
+      "endS": 99.869,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Instead of hunting, you click straight through to the part you need.",
+      "startS": 100.628,
+      "endS": 103.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "The Overview tab opens first.",
+      "startS": 103.976,
+      "endS": 105.887,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Up top, an A-I snapshot writes the account in plain language,",
+      "startS": 106.422,
+      "endS": 112.582,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "with a Regenerate button to refresh it.",
+      "startS": 113.346,
+      "endS": 114.53,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Below are the charts: visits by month, the mix of services, spend over time, and points.",
+      "startS": 114.96,
+      "endS": 115.908,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Treat the snapshot as a helpful draft you confirm against the real tabs,",
+      "startS": 116.235,
+      "endS": 119.764,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "the same rule you use for Shyne.",
+      "startS": 120.754,
+      "endS": 126.529,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Switch to Contact.",
+      "startS": 126.96,
+      "endS": 128.133,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "This is the record itself: name and business details, address, phone and email,",
+      "startS": 128.796,
+      "endS": 130.212,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "plus the notification and consent settings.",
+      "startS": 130.88,
+      "endS": 132.557,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "You read it here; you change it on the edit form in the next lesson.",
+      "startS": 133.029,
+      "endS": 135.006,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "For now it answers \"is our contact info current.\"",
+      "startS": 135.464,
+      "endS": 145.63,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Open Membership. This is the one you will use most.",
+      "startS": 146.138,
+      "endS": 147.148,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Plan details, the loyalty section with the bar code,",
+      "startS": 147.417,
+      "endS": 149.229,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "the visit and spend totals, and the billing cycle.",
+      "startS": 149.669,
+      "endS": 152.731,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Two fields earn their keep here.",
+      "startS": 153.069,
+      "endS": 156.039,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "The bar code is exactly what the POS scans, so this is your first stop when a tag will not read.",
+      "startS": 156.543,
+      "endS": 164.107,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "And next charge tells the member when they get billed again.",
+      "startS": 164.536,
+      "endS": 167.895,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Now Payments.",
+      "startS": 168.305,
+      "endS": 169.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "The cards on file and any prepaid credit live here.",
+      "startS": 170.24,
+      "endS": 173.403,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "You can see what is set up to bill, and you can see remaining book value.",
+      "startS": 174.002,
+      "endS": 177.583,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Reading it is safe.",
+      "startS": 177.838,
+      "endS": 178.87,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "Adding a card is not part of this walk.",
+      "startS": 179.214,
+      "endS": 181.302,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Last tab in Part 1, Vehicles.",
+      "startS": 181.76,
+      "endS": 184.149,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "These are the plates the cameras match to the plan.",
+      "startS": 184.77,
+      "endS": 187.217,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "You will also see a re-tracts list, the equipment holds set on this account's washes,",
+      "startS": 187.725,
+      "endS": 189.828,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "like a skipped tire shine or top brush.",
+      "startS": 190.16,
+      "endS": 192.521,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "When a member says the wash left something off, this is where you check.",
+      "startS": 192.904,
+      "endS": 199.459,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Linked Accounts.",
+      "startS": 199.92,
+      "endS": 200.556,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Shared plans and household members show up here:",
+      "startS": 200.556,
+      "endS": 203.564,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "a spouse on the same membership, a second driver, a family link.",
+      "startS": 203.564,
+      "endS": 207.948,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "When one person is asking about another's plan,",
+      "startS": 207.948,
+      "endS": 211.06,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "check this tab before you assume they are separate accounts.",
+      "startS": 211.06,
+      "endS": 214.24,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Activity is the running log.",
+      "startS": 214.743,
+      "endS": 216.844,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "Every visit and transaction, newest first, each with a type, a date, and an amount.",
+      "startS": 217.167,
+      "endS": 220.11,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "When you need \"what happened and when,\"",
+      "startS": 220.323,
+      "endS": 223.003,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "you scroll this instead of piecing it together from tickets.",
+      "startS": 223.275,
+      "endS": 228.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "Open Messaging.",
+      "startS": 229.36,
+      "endS": 230.419,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "This is the two-way text thread with the member, and it shows whether they opted in.",
+      "startS": 231.045,
+      "endS": 235.169,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "Read it to see what was already said, so you are not repeating a message someone sent yesterday.",
+      "startS": 235.652,
+      "endS": 240.284,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "One hard rule: you never send from here in the demo.",
+      "startS": 241.034,
+      "endS": 242.134,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "Read only.",
+      "startS": 242.544,
+      "endS": 245.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p71",
+      "text": "Now Notes.",
+      "startS": 246.24,
+      "endS": 247.068,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p72",
+      "text": "These are internal staff notes, and the label says it plainly: not visible to the customer.",
+      "startS": 247.546,
+      "endS": 250.85,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p73",
+      "text": "Below them, the full communication history by channel, and a change log.",
+      "startS": 251.19,
+      "endS": 252.715,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "This is where you leave context for the next agent",
+      "startS": 253.411,
+      "endS": 257.554,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p75",
+      "text": "and where you find what a teammate already did.",
+      "startS": 258.249,
+      "endS": 260.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p76",
+      "text": "Save Note stays untouched today.",
+      "startS": 261.047,
+      "endS": 266.243,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p77",
+      "text": "Finally, open Actions.",
+      "startS": 266.72,
+      "endS": 268.429,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p78",
+      "text": "Two items today: Issue Wash and Refund Customer.",
+      "startS": 269.589,
+      "endS": 270.495,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p79",
+      "text": "The old guide listed six, so if you are expecting Cancel or Pause here and they are missing,",
+      "startS": 270.959,
+      "endS": 273.443,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p80",
+      "text": "that gap is logged and parked, not something you broke.",
+      "startS": 273.996,
+      "endS": 282.705,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p81",
+      "text": "Read the list, then close it.",
+      "startS": 283.377,
+      "endS": 285.02,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p82",
+      "text": "Both of these move money or issue value, so in the demo you open the menu and stop.",
+      "startS": 285.521,
+      "endS": 290.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p83",
+      "text": "That is the whole record.",
+      "startS": 290.72,
+      "endS": 292.279,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p84",
+      "text": "Header and chips tell you who.",
+      "startS": 292.864,
+      "endS": 294.806,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p85",
+      "text": "The metric strip gives the headline numbers.",
+      "startS": 295.444,
+      "endS": 297.712,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p86",
+      "text": "The chips jump you into any slice.",
+      "startS": 298.021,
+      "endS": 300.35,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p87",
+      "text": "And nine tabs answer the everyday tickets:",
+      "startS": 300.606,
+      "endS": 303.177,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p88",
+      "text": "the bar code and the next charge on Membership,",
+      "startS": 303.493,
+      "endS": 305.812,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p89",
+      "text": "consent on Contact and Messaging, the internal trail on Notes.",
+      "startS": 306.071,
+      "endS": 310.052,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p90",
+      "text": "One page, read top to bottom, and you changed nothing to get every answer.",
+      "startS": 310.644,
+      "endS": 315.231,
+      "timing": "silence"
+    }
+  ]
+}

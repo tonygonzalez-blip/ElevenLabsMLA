@@ -1,0 +1,420 @@
+{
+  "lesson": "WC-01-06",
+  "audioMaster": "training/module01-foundations/WC-01-06-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence/clause pauses. Caption text must never be rewritten, summarized, or reordered. Block windows use the ffprobe-measured per-block audio plus the measured effective inter-block gap of the joined master (0.3674s; nominal 0.4s tails shrank in the MP3 join), so the final end matches the probed master duration exactly. Boundaries cross-checked against silencedetect on the master.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 13.193,
+      "phrases": [
+        {
+          "id": "p01",
+          "text": "This is the Command Center, the first screen your network hands you."
+        },
+        {
+          "id": "p02",
+          "text": "It looks like a wall of numbers. It isn't."
+        },
+        {
+          "id": "p03",
+          "text": "It's a triage board, stacked top to bottom."
+        },
+        {
+          "id": "p04",
+          "text": "Read the stack in order, and the thing that needs you rises to the top."
+        }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 13.193,
+      "endS": 30.07,
+      "phrases": [
+        {
+          "id": "p05",
+          "text": "First panel, the mobile app."
+        },
+        {
+          "id": "p06",
+          "text": "That Live tag means the figures move on their own, refreshing as members open the app."
+        },
+        {
+          "id": "p07",
+          "text": "You're reading its pulse right now, not a report someone ran this morning."
+        },
+        {
+          "id": "p08",
+          "text": "For a network pushing an app, this is the first read on whether members actually use it."
+        }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 30.07,
+      "endS": 48.384,
+      "phrases": [
+        {
+          "id": "p09",
+          "text": "Four cards across."
+        },
+        {
+          "id": "p10",
+          "text": "Installs, weekly actives, redemptions, opt-in rate."
+        },
+        {
+          "id": "p11",
+          "text": "Linger on redemptions: it splits Q-R scans from kiosk taps,"
+        },
+        {
+          "id": "p12",
+          "text": "so you see whether members cash in at the phone or at the machine."
+        },
+        {
+          "id": "p13",
+          "text": "That split tells you which channel is carrying the program."
+        }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 48.384,
+      "endS": 66.958,
+      "phrases": [
+        {
+          "id": "p14",
+          "text": "Scroll to the map panel."
+        },
+        {
+          "id": "p15",
+          "text": "The heading counts the whole network: a hundred forty-four sites across seven states."
+        },
+        {
+          "id": "p16",
+          "text": "That color key beside it, healthy, warning, critical, is the same key the pins use."
+        },
+        {
+          "id": "p17",
+          "text": "Once you know the key, the map tells you where to look without reading a single label."
+        }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 66.958,
+      "endS": 84.096,
+      "phrases": [
+        {
+          "id": "p18",
+          "text": "Down the left, four vitals."
+        },
+        {
+          "id": "p19",
+          "text": "Money in today, who's active, cars through the tunnels,"
+        },
+        {
+          "id": "p20",
+          "text": "and the share of card charges that bounced."
+        },
+        {
+          "id": "p21",
+          "text": "That last one, the decline rate, is what a support tech watches closest,"
+        },
+        {
+          "id": "p22",
+          "text": "because a climbing decline rate usually means a billing problem, not a slow day."
+        }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 84.096,
+      "endS": 102.41,
+      "phrases": [
+        {
+          "id": "p23",
+          "text": "Now the map itself."
+        },
+        {
+          "id": "p24",
+          "text": "Every pin is a wash, colored by health, so a red dot is a site in trouble at a glance."
+        },
+        {
+          "id": "p25",
+          "text": "Hover one and it shows that site's revenue, members, and tickets, with a link to open it."
+        },
+        {
+          "id": "p26",
+          "text": "Not today, though. We're reading the network, not diving into a single site."
+        }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 102.41,
+      "endS": 116.335,
+      "phrases": [
+        {
+          "id": "p27",
+          "text": "Click Active States, then Full USA."
+        },
+        {
+          "id": "p28",
+          "text": "The map reframes, and that's all it does."
+        },
+        {
+          "id": "p29",
+          "text": "This toggle is view-only."
+        },
+        {
+          "id": "p30",
+          "text": "It changes the shot, never the data, and never the panels below."
+        },
+        {
+          "id": "p31",
+          "text": "One click puts it back."
+        }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 116.335,
+      "endS": 133.055,
+      "phrases": [
+        {
+          "id": "p32",
+          "text": "Here's the heart of the page."
+        },
+        {
+          "id": "p33",
+          "text": "Priority Intelligence, eleven items, four urgent."
+        },
+        {
+          "id": "p34",
+          "text": "It's your triage feed, sorted by severity,"
+        },
+        {
+          "id": "p35",
+          "text": "and every row is a door onto the module where you'd actually fix it."
+        },
+        {
+          "id": "p36",
+          "text": "For a support tech, this is the panel you scan first."
+        }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 133.055,
+      "endS": 148.181,
+      "phrases": [
+        {
+          "id": "p37",
+          "text": "Top of the feed, Critical."
+        },
+        {
+          "id": "p38",
+          "text": "Two rows, and this is where a downed P-O-S shows up first, before the phone even rings."
+        },
+        {
+          "id": "p39",
+          "text": "Open jumps you to reconciliation to work the outage."
+        },
+        {
+          "id": "p40",
+          "text": "Review drops you into Support for the tickets about to breach their S-L-A."
+        }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 148.181,
+      "endS": 163.229,
+      "phrases": [
+        {
+          "id": "p41",
+          "text": "Next tier, High Priority."
+        },
+        {
+          "id": "p42",
+          "text": "A kiosk printer down, a site's conversion slipping."
+        },
+        {
+          "id": "p43",
+          "text": "Not on fire yet, but they will be if they sit."
+        },
+        {
+          "id": "p44",
+          "text": "Watch the verbs shift: Assign hands the work off, Analyze opens the numbers behind it."
+        }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 163.229,
+      "endS": 182.744,
+      "phrases": [
+        {
+          "id": "p45",
+          "text": "Now the money."
+        },
+        {
+          "id": "p46",
+          "text": "Revenue Plays, five suggestions worth thirty-two hundred dollars today,"
+        },
+        {
+          "id": "p47",
+          "text": "each tagged with what it's worth."
+        },
+        {
+          "id": "p48",
+          "text": "Read them as prompts, not orders."
+        },
+        {
+          "id": "p49",
+          "text": "Launch, Target, Recover, those fire real outreach to real customers,"
+        },
+        {
+          "id": "p50",
+          "text": "so on a live tenant you look, you don't press."
+        }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 182.744,
+      "endS": 199.778,
+      "phrases": [
+        {
+          "id": "p51",
+          "text": "Last group, Automations."
+        },
+        {
+          "id": "p52",
+          "text": "Two jobs already running with no one steering,"
+        },
+        {
+          "id": "p53",
+          "text": "a win-back text sequence and the payment retry engine, quietly clawing back failed charges."
+        },
+        {
+          "id": "p54",
+          "text": "Inspect and View check on them without touching a thing,"
+        },
+        {
+          "id": "p55",
+          "text": "which is just what you want with something already working."
+        }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 199.778,
+      "endS": 219.476,
+      "phrases": [
+        {
+          "id": "p56",
+          "text": "One habit ties this panel together."
+        },
+        {
+          "id": "p57",
+          "text": "Read the arrow before you click."
+        },
+        {
+          "id": "p58",
+          "text": "Open, Review, View, those take you somewhere to look."
+        },
+        {
+          "id": "p59",
+          "text": "Launch, Target, Recover, Assign, those start something."
+        },
+        {
+          "id": "p60",
+          "text": "Read arrows are safe."
+        },
+        {
+          "id": "p61",
+          "text": "Action arrows you leave alone here, on a shared live tenant."
+        }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 219.476,
+      "endS": 237.084,
+      "phrases": [
+        {
+          "id": "p62",
+          "text": "To the right, Action Ownership."
+        },
+        {
+          "id": "p63",
+          "text": "Same items, now answered by who owns them and when they're due."
+        },
+        {
+          "id": "p64",
+          "text": "Regional Ops on the outage within the half hour, Support on the aging tickets,"
+        },
+        {
+          "id": "p65",
+          "text": "Marketing and Revenue on the plays."
+        },
+        {
+          "id": "p66",
+          "text": "It answers the question a manager always asks: whose job is this."
+        }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 237.084,
+      "endS": 256.129,
+      "phrases": [
+        {
+          "id": "p67",
+          "text": "At the bottom, Ask MAIA."
+        },
+        {
+          "id": "p68",
+          "text": "Five plain-language shortcuts, each jumping straight to the module that answers it."
+        },
+        {
+          "id": "p69",
+          "text": "Worth flagging: the header button reads Ask Shyne, this panel reads Ask MAIA."
+        },
+        {
+          "id": "p70",
+          "text": "Two names, so we don't tell a client they're one feature yet, and we send neither one today."
+        }
+      ]
+    },
+    {
+      "block": "s16",
+      "startS": 256.129,
+      "endS": 276.68898,
+      "phrases": [
+        {
+          "id": "p71",
+          "text": "Scroll back up, and you've got the whole board."
+        },
+        {
+          "id": "p72",
+          "text": "App engagement, the network map, the priority feed, who owns what, and a shortcut to ask."
+        },
+        {
+          "id": "p73",
+          "text": "Five panels, one screen."
+        },
+        {
+          "id": "p74",
+          "text": "Read it top to bottom, and never click an arrow until you know which kind it is."
+        },
+        {
+          "id": "p75",
+          "text": "Do that, and the Command Center works for you, not against you."
+        }
+      ]
+    }
+  ],
+  "output": "WC-01-06-command-center-v1.1"
+}

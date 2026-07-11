@@ -1,0 +1,156 @@
+{
+  "lesson": "WC-01-02",
+  "audioMaster": "training/module01-foundations/WC-01-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows come from the per-step render durations (audio + 0.4s tail each); the final end is the ffprobe duration of the joined master.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 13.3,
+      "phrases": [
+        { "id": "p01", "text": "Every WashCentral screen carries the same tools in the top-right corner." },
+        { "id": "p02", "text": "They follow you from page to page." },
+        { "id": "p03", "text": "Three of them do the daily work:" },
+        { "id": "p04", "text": "jumping anywhere, focusing the view, and asking questions in plain language." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 13.3,
+      "endS": 26.8,
+      "phrases": [
+        { "id": "p05", "text": "Press Control K." },
+        { "id": "p06", "text": "The command palette opens dead center, cursor already blinking." },
+        { "id": "p07", "text": "It's the quickest way to any page." },
+        { "id": "p08", "text": "Rather than hunt through menus, you picture where you're headed and type it." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 26.8,
+      "endS": 38.5,
+      "phrases": [
+        { "id": "p09", "text": "Now, the results." },
+        { "id": "p10", "text": "Search reads the whole platform, not just page titles." },
+        { "id": "p11", "text": "Each hit names where you'll land and the module it lives under," },
+        { "id": "p12", "text": "so the palette quietly teaches you the layout." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 38.5,
+      "endS": 51.6,
+      "phrases": [
+        { "id": "p13", "text": "Watch the footer, then tap the arrow keys." },
+        { "id": "p14", "text": "The highlight moves with each press." },
+        { "id": "p15", "text": "The palette runs entirely from the keyboard:" },
+        { "id": "p16", "text": "arrows to move, Enter to open, Escape to back out." },
+        { "id": "p17", "text": "Build the habit early." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 51.6,
+      "endS": 61.5,
+      "phrases": [
+        { "id": "p18", "text": "Press Escape." },
+        { "id": "p19", "text": "The palette closes and drops you back exactly where you were," },
+        { "id": "p20", "text": "without opening or changing a thing." },
+        { "id": "p21", "text": "Closing Search is always safe." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 61.5,
+      "endS": 75.0,
+      "phrases": [
+        { "id": "p22", "text": "Now click the location selector." },
+        { "id": "p23", "text": "By default it reads All Locations, your whole network." },
+        { "id": "p24", "text": "This control decides which sites your dashboards and numbers come from." },
+        { "id": "p25", "text": "Right now, that's every wash you run." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 75.0,
+      "endS": 95.8,
+      "phrases": [
+        { "id": "p26", "text": "Underneath, two lists." },
+        { "id": "p27", "text": "One groups sites by state, with a count beside each." },
+        { "id": "p28", "text": "The other drills into a single wash." },
+        { "id": "p29", "text": "Pick either, and every dashboard narrows to match." },
+        { "id": "p30", "text": "For support work, remember: it only changes your view." },
+        { "id": "p31", "text": "The data never moves, and one click back to All Locations restores the whole network." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 95.8,
+      "endS": 107.4,
+      "phrases": [
+        { "id": "p32", "text": "Click the selector again to close it." },
+        { "id": "p33", "text": "We browsed and picked nothing, so scope stays on the full network." },
+        { "id": "p34", "text": "Scanning the list never filters a thing until you actually choose." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 107.4,
+      "endS": 118.9,
+      "phrases": [
+        { "id": "p35", "text": "Last tool." },
+        { "id": "p36", "text": "Click Ask Shyne." },
+        { "id": "p37", "text": "Shyne is the assistant built into WashCentral." },
+        { "id": "p38", "text": "Ask it about customers, operations, or marketing in plain language," },
+        { "id": "p39", "text": "and it pulls the answer together." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 118.9,
+      "endS": 136.1,
+      "phrases": [
+        { "id": "p40", "text": "The Try Asking prompts give you a feel for its range." },
+        { "id": "p41", "text": "Payment declines at one site, prepaid members gone quiet," },
+        { "id": "p42", "text": "last week's damage claims, VIPs at risk of leaving." },
+        { "id": "p43", "text": "If that's a question you'd normally dig through reports for, try Shyne first." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 136.1,
+      "endS": 156.0,
+      "phrases": [
+        { "id": "p44", "text": "At the bottom, a question box and a Send button." },
+        { "id": "p45", "text": "Normally you'd type a question here and Shyne would answer." },
+        { "id": "p46", "text": "We won't send one today." },
+        { "id": "p47", "text": "What matters is the line just below:" },
+        { "id": "p48", "text": "the answer is AI-generated, so verify it before you act." },
+        { "id": "p49", "text": "Treat Shyne's reply as a fast first draft you always confirm." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 156.0,
+      "endS": 162.6,
+      "phrases": [
+        { "id": "p50", "text": "Click Close." },
+        { "id": "p51", "text": "The window disappears with no question sent, your workspace right where you left it." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 162.6,
+      "endS": 181.473,
+      "phrases": [
+        { "id": "p52", "text": "So that's the header." },
+        { "id": "p53", "text": "From any screen, Control K jumps you anywhere," },
+        { "id": "p54", "text": "the location selector focuses the view without touching a record," },
+        { "id": "p55", "text": "and Ask Shyne answers your questions, as long as you verify first." },
+        { "id": "p56", "text": "Three tools, one corner." },
+        { "id": "p57", "text": "Learn them now, because every lesson ahead assumes you can reach them." }
+      ]
+    }
+  ],
+  "output": "WC-01-02-search-location-shyne-v1.1"
+}
