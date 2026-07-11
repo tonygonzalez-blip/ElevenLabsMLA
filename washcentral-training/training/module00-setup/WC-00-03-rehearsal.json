@@ -1,0 +1,61 @@
+{
+  "wallS": 88.88,
+  "report": [
+    {
+      "step": "1",
+      "action": "js",
+      "scheduledS": 0,
+      "actualS": 0.01,
+      "title": "Command Center — WashCentral",
+      "ok": true
+    },
+    {
+      "step": "2",
+      "action": "click-selector",
+      "scheduledS": 11.87,
+      "actualS": 11.88,
+      "title": "Command Center — WashCentral",
+      "ok": true
+    },
+    {
+      "step": "3",
+      "action": "js",
+      "scheduledS": 23.35,
+      "actualS": 23.36,
+      "title": "Command Center — WashCentral",
+      "ok": true
+    },
+    {
+      "step": "4",
+      "action": "js",
+      "scheduledS": 43.08,
+      "actualS": 43.09,
+      "title": "Command Center — WashCentral",
+      "ok": true
+    },
+    {
+      "step": "5",
+      "action": "js",
+      "scheduledS": 54.79,
+      "actualS": 54.8,
+      "title": "Command Center — WashCentral",
+      "ok": true
+    },
+    {
+      "step": "6",
+      "action": "js",
+      "scheduledS": 64.02,
+      "actualS": 64.03,
+      "title": "My Dashboard — WashCentral Academy",
+      "ok": true
+    },
+    {
+      "step": "7",
+      "action": "nav",
+      "scheduledS": 77.01,
+      "actualS": 77.01,
+      "title": "Command Center — WashCentral",
+      "ok": true
+    }
+  ]
+}
