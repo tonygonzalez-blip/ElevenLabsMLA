@@ -1,10 +1,10 @@
 # WC-PB-13 — Integration down: Zoho, SSO, and accounting · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 (spoken script unchanged; non-spoken notes updated July 11, 2026) · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps).
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — audio is rendered later (the ElevenLabs key is not set in this session). Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-PB-13-s01.mp3` … `WC-PB-13-s12.mp3` + joined `WC-PB-13-full-narration-v1.0.mp3`. Timestamps below are estimates at ~145 wpm plus break time plus a 0.4 s tail, pending render.
+- **Status:** ~~READY FOR GENERATION~~ **BLOCKED — blocks s07 and s08 pending re-script (see scope notes, July 11, 2026)** — audio is rendered later (the ElevenLabs key is not set in this session). Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-PB-13-s01.mp3` … `WC-PB-13-s12.mp3` + joined `WC-PB-13-full-narration-v1.0.mp3`. Timestamps below are estimates at ~145 wpm plus break time plus a 0.4 s tail, pending render.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.

@@ -33,4 +33,4 @@ Estimated runtime: about 3:10 (see narration for the block-by-block total, pendi
 
 ## If Claude drives while you record
 
-Once the live tenant is reachable I can execute steps 1–9 with the timings above on request; you run Snagit (or any 1920×1080 MP4 recorder) on the window. No action row is ever triggered: **Export** and **+ New Record** stay read-only holds, no audit entry is touched, and **Change History** is reached only through the **AUDIT** sidebar with any unshowable layout held as TBD — parked. Say "drive playbook PB-11" when you're rolling.
+Once the live tenant is reachable I can execute steps 1–9 with the timings above on request; you run Snagit (or any 1920×1080 MP4 recorder) on the window. No action row is ever triggered: **Export** and **+ New Record** stay read-only holds, no audit entry is touched, and **Change History** is reached only through the **AUDIT** sidebar (layout verified live July 11). Say "drive playbook PB-11" when you're rolling.

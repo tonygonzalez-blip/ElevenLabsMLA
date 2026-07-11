@@ -82,5 +82,5 @@ _(Estimated narration total: ~254s ≈ 04:14. Timestamps are estimates at ~145 w
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format).
-- No enrollment is depicted anywhere: **Start Course**, **Start**, and every enroll-type control are pointed at with STOP rings and never clicked; the three parked learner pages are named, not opened.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- No enrollment is depicted anywhere: **Start Course**, **Start**, and every enroll-type control are pointed at with STOP rings and never clicked; the three other learner pages are named, not opened (interiors verified July 11; s11's spoken justification is flagged for re-render — see the scope note).
+- Verification stamp: **Verified against demo.washcentral.com on July 11, 2026** (non-spoken notes only; spoken script v1.0 pending s11 re-script).

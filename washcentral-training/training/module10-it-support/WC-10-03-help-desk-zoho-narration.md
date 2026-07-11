@@ -1,6 +1,6 @@
 # WC-10-03 — Help Desk (Zoho) · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the canonical spec, guide, and shot list one-to-one (10 steps). Timestamps are estimates at ~145 wpm pending render.
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 (spoken script unchanged; non-spoken notes updated July 11, 2026) · Author: Claude — Micrologic training project. Steps match the canonical spec, guide, and shot list one-to-one (10 steps). Timestamps are estimates at ~145 wpm pending render.
 
 ## Settings header
 

@@ -1,6 +1,6 @@
 # WC-PB-03 — POS down / terminal offline · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 (spoken script unchanged; non-spoken notes updated July 11, 2026) · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps).
 
 ## Settings header
 
@@ -95,6 +95,6 @@ _(Estimated total ≈ 4:53. Timestamps are estimates at ~145 wpm; they firm up w
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration prose. Verbatim UI strings, navigation paths, and the numbered steps are left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside verbatim platform strings quoted from the corpus (e.g. "POS system offline — 0 transactions for 47 min").
-- Parked surfaces are read, not staged: the Priority Intelligence deep-link destination (Step 4), System Alerts (Step 8, 404), and the Terminals row values (Step 10) are called out as TBD — parked; no alert types or terminal values are invented. LogicPOS 404 referenced as PARKED-ITEMS.md #2.
-- No create, submit, or export control is triggered. Status set to **READY FOR GENERATION**; audio to be rendered when the ElevenLabs key is available.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Parked-surface status as of July 11: the Priority Intelligence deep-link destination (Step 4) remains TBD — parked; System Alerts (Step 8) and the Terminals rows (Step 10) are now observed live, which is why blocks s08 and s10 are flagged for re-render (see the scope note). LogicPOS 404 referenced as PARKED-ITEMS.md #2.
+- No create, submit, or export control is triggered. Status: blocks s08/s10 pending re-script; do not generate until then.
+- Verification stamp: **Verified against demo.washcentral.com on July 11, 2026** (non-spoken notes only; spoken script v1.0 pending s08/s10 re-script).

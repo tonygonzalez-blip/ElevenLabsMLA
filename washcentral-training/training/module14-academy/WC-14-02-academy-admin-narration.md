@@ -30,7 +30,7 @@
 ### Scope notes (non-spoken)
 
 - Read-only lesson about pages that do not load. Enrolling users and editing or publishing courses are never depicted, and there is nothing clickable inside the admin pages because all four return HTTP 404 in the July 9 corpus.
-- The four admin page interiors are TBD — parked (new parked item, analogous to PARKED-ITEMS.md #2 for LogicPOS). Do not describe any tile, column, or control behind the 404s.
+- (v1.0 premise, superseded — see the banner above.) The four admin page interiors were parked behind July 9 direct-URL 404s. The July 11 in-app captures cleared that parked item: all four pages render, and the v2.0 guide/shot list document them.
 - Naming discrepancy carried from the guide: the learning plan says "LMS Administration"; the sidebar renders **ADMIN**. The narration follows the sidebar.
 - Steps 9 and 10 narrate over title cards, not live pages. The session-timeout "Still there?" dialog is out of scope (lesson 1.3).
 
