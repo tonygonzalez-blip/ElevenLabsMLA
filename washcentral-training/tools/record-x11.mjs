@@ -68,9 +68,23 @@ const OVERLAY_JS = `(() => {
   // being discussed. __wcHighlight(x,y,w,h) shows the outline; __wcHighlight() hides it.
   window.__wcHighlight = (x, y, w, h2) => {
     const el = window.__wcHlEl;
-    if (!(w > 0)) { el.style.opacity = '0'; try { sessionStorage.setItem('wc-hl-rect', ''); } catch (e) {} return; }
-    el.style.left = (x - 6) + 'px'; el.style.top = (y - 6) + 'px';
-    el.style.width = (w + 12) + 'px'; el.style.height = (h2 + 12) + 'px'; el.style.opacity = '1';
+    if (!(w > 0)) { el.style.transition = 'opacity .35s ease'; el.style.opacity = '0'; try { sessionStorage.setItem('wc-hl-rect', ''); } catch (e) {} return; }
+    const showing = el.style.opacity !== '1';
+    if (showing) {
+      // ease on: settle from a slight over-scale + fade, never materialize instantly
+      el.style.transition = 'none';
+      el.style.left = (x - 6) + 'px'; el.style.top = (y - 6) + 'px';
+      el.style.width = (w + 12) + 'px'; el.style.height = (h2 + 12) + 'px';
+      el.style.transform = 'scale(1.045)'; el.style.opacity = '0';
+      void el.offsetWidth;
+      el.style.transition = 'opacity .45s ease, transform .45s ease';
+      el.style.transform = 'scale(1)'; el.style.opacity = '1';
+    } else {
+      // retarget while visible: the box glides to the new element
+      el.style.transition = 'left .5s ease, top .5s ease, width .5s ease, height .5s ease';
+      el.style.left = (x - 6) + 'px'; el.style.top = (y - 6) + 'px';
+      el.style.width = (w + 12) + 'px'; el.style.height = (h2 + 12) + 'px';
+    }
     try { sessionStorage.setItem('wc-hl-rect', JSON.stringify([x, y, w, h2])); } catch (e) {}
   };
   window.__wcMoveCursor = (x, y) => {
@@ -100,7 +114,7 @@ const OVERLAY_JS = `(() => {
     try { sessionStorage.setItem('wc-caption-text', t || ''); } catch (e) {}
   };
   if (!window.__wcOverlayObs) {
-    window.__wcOverlayObs = new MutationObserver(() => {
+    window.__wcOverlayObs = new MutationObserver((muts) => {
       const cur = window.__wcCurEl, cap = window.__wcCapEl, body = document.body;
       if (!body) return;
       if (cur && !cur.isConnected) {
@@ -114,6 +128,17 @@ const OVERLAY_JS = `(() => {
       }
       if (cap && !cap.isConnected) body.appendChild(cap);
       if (window.__wcHlEl && !window.__wcHlEl.isConnected) body.appendChild(window.__wcHlEl);
+      // The demo's idle "Still there?" dialog must never paint on camera: hide its container
+      // in the same mutation microtask it is inserted (pre-paint), then click Stay Logged In
+      // so the app's idle timer resets through its own native path.
+      if (muts.some(m => m.addedNodes.length)) {
+        const stay = [...document.querySelectorAll('button')].find(x => /stay logged in|stay active/i.test(x.textContent || '') && x.getBoundingClientRect().width > 0);
+        if (stay) {
+          const dlg = stay.closest('[role=dialog],[class*="modal"],[class*="idle"],[class*="overlay"],[class*="dialog"]');
+          if (dlg) dlg.style.display = 'none';
+          stay.click();
+        }
+      }
     });
     window.__wcOverlayObs.observe(document.documentElement, { childList: true, subtree: true });
   }
@@ -129,6 +154,16 @@ const RESET_JS = `(() => {
   try { sessionStorage.removeItem('wc-cursor-pos'); sessionStorage.removeItem('wc-caption-text'); sessionStorage.removeItem('wc-hl-rect'); } catch (e) {}
   for (const id of ['wc-cursor', 'wc-subtitle', 'wc-highlight']) { const el = document.getElementById(id); if (el) el.remove(); }
   return true;
+})()`;
+
+// Registered once via Page.addScriptToEvaluateOnNewDocument: the overlay self-restores the
+// moment each new document has a body, so the cursor/caption/highlight never visibly vanish
+// during a navigation while waiting for the driver's next injection.
+const BOOT_JS = `(function () {
+  if (window.__wcBoot) return; window.__wcBoot = true;
+  const run = () => { try { ${OVERLAY_JS} } catch (e) {} };
+  if (document.body) run();
+  else new MutationObserver((m, o) => { if (document.body) { o.disconnect(); run(); } }).observe(document.documentElement || document, { childList: true, subtree: true });
 })()`;
 
 // End-of-beat clear (caption + highlight) must not depend on the overlay functions existing:
@@ -237,6 +272,7 @@ async function runDrive(cdp, report) {
 
 async function main() {
   const cdp = await CDP.connect('first');
+  await cdp.send('Page.addScriptToEvaluateOnNewDocument', { source: BOOT_JS });
   await cdp.eval(RESET_JS);
   await cdp.eval(OVERLAY_JS);
   const report = [];
