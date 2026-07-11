@@ -1,0 +1,113 @@
+{
+  "base": "WC-PB-12",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 256.64,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Conversations log",
+      "audioS": 18.05,
+      "stepS": 18.45,
+      "file": "WC-PB-12-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Read the log layout",
+      "audioS": 23.07,
+      "stepS": 23.47,
+      "file": "WC-PB-12-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Narrow to the chat",
+      "audioS": 18.13,
+      "stepS": 18.53,
+      "file": "WC-PB-12-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Escalations queue",
+      "audioS": 13.48,
+      "stepS": 13.88,
+      "file": "WC-PB-12-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Read the REASON column",
+      "audioS": 24.76,
+      "stepS": 25.16,
+      "file": "WC-PB-12-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Agent Console",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-PB-12-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Handoff Queue controls",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-PB-12-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Knowledge Base",
+      "audioS": 13.79,
+      "stepS": 14.19,
+      "file": "WC-PB-12-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Article table",
+      "audioS": 18.91,
+      "stepS": 19.31,
+      "file": "WC-PB-12-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Channels & Deployment",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-PB-12-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Three channel cards",
+      "audioS": 26.36,
+      "stepS": 26.76,
+      "file": "WC-PB-12-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Analytics containment",
+      "audioS": 21.71,
+      "stepS": 22.11,
+      "file": "WC-PB-12-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Package and stop",
+      "audioS": 26.67,
+      "stepS": 27.07,
+      "file": "WC-PB-12-s13.mp3"
+    }
+  ]
+}
