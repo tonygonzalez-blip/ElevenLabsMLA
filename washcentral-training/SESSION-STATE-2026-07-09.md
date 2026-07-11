@@ -1,37 +1,38 @@
-# Session state — July 9, 2026 (handoff for remote continuation)
+# Session state — July 9, 2026, end of remote authoring run
 
-Written by Claude — Micrologic training project. This file records exactly where production stands so any session (local or remote) can continue without this machine's context. Delete or update it as work proceeds.
+Written by Claude — Micrologic training project. Supersedes the earlier July 9 handoff in this file. Records exactly where production stands after the remote (Claude Code on the web) authoring run.
 
-## Where the project stands
+## What this run produced
 
-- **Done lessons (unchanged):** WC-01-01 and WC-01-02 — full packages with QA PASS (see `QA-LOG.md`). Do not regenerate their audio or artifacts.
-- **All other lessons (71 packages):** still to produce. None were authored today — two production runs were started and intentionally stopped before any package was written (first a parallel run, stopped for pacing; then a sequential run, stopped for this handoff). The trackers (`00-curriculum.md`, `DISCREPANCIES.md`, `PARKED-ITEMS.md`, `QA-LOG.md`, `RECORDS-CREATED.md`) are unchanged since July 8 and remain accurate.
+**All 71 remaining lesson packages are authored.** Every lesson in `tools/lesson-map.json` now has its package in `training/<moduleFolder>/`: guide + shot list + narration script (status **READY FOR GENERATION**), steps synced 1:1 across the three artifacts, humanizer pass applied, stamped July 9, 2026. Doc-only deliverables (WC-00-01 workstation prerequisites; WC-CERT-01 written exam + practical matrix) are guide-only by design. WC-01-01 and WC-01-02 remain Done from July 8 and were not touched.
 
-## What was built today (all committed)
+Branch: `main-kdmqi0`, PR: https://github.com/tonygonzalez-blip/ElevenLabsMLA/pull/1 (draft).
 
-1. **`tools/` — the production system:**
-   - `cdp-lib.mjs` / `cdp.mjs` — dependency-free Chrome DevTools driver (port 9222): navigate, digest, screenshot, click-by-text, idle-dialog dismissal, login-bounce self-healing. `node cdp.mjs signin` re-enters the demo via its built-in quick-access button (`#qa-btn` on login.html) — no credentials involved.
-   - `sweep.mjs` — full-site verification crawl.
-   - `authoring-brief.md` — the per-lesson authoring contract (rules, single-tab walk protocol, artifact standards, output contract). **Read this first before producing any lesson.**
-   - `lesson-map.json` — canonical map of all 71 remaining lessons: codes, slugs, module folders, plan headings, pages, walk instructions, flags (docOnly / docSourced / twoParts / parked#n).
-   - `render-narration.mjs` — ElevenLabs block renderer (voice + model locked in-file). Parses a narration .md, renders per-step MP3s, joins the full track, writes a `-durations.json` timing file. Parser validated against WC-01-02. Needs `ELEVENLABS_API_KEY`.
-   - `record-lesson.mjs` — generic drive/record engine (cumulative scheduler locked to narration timings, cursor + caption overlays, patched screencast capture, trim + mux). Rehearse mode validated (timing exact); record mode not yet exercised this session.
-2. **`verification/2026-07-09/` — fresh ground truth (July 9):** 251 pages crawled signed-in; per-page label digests (`digests/*.json`), 1920×1080 screenshots (`shots/*.png`), `sweep-index.json`. Zero hard 404s; 9 tertiary `settings-*-edit` pages timed out at sweep end (retry if needed). Authoring and QA label checks should cite these.
+## How the packages are grounded (important)
 
-## The production pipeline (per lesson, priority order in `00-curriculum.md` §bottom)
+A live re-walk was **not possible** this run. The demo's `assets/app.js` (v26.0704) now gates every interior page on a valid `wc-staff-token` JWT from a real credentialed login to `agentapiqa.washcentral.com`; the demo quick-access button (`#qa-btn`) sets the legacy localStorage flag but no longer passes the gate (PARKED #15). No credentials are available remotely and none were guessed.
 
-1. **Author** — live walk per `lesson-map.json` walk instructions (single shared tab, gentle pacing, tenant-safety allowlist in the brief) → write guide + shot list + narration script (READY FOR GENERATION) into `training/<moduleFolder>/`, evidence into `verification/2026-07-09/lessons/<code>/`.
-2. **Verify (adversarial)** — label fidelity vs digests/evidence, 1:1 step sync, standards, tenant safety, narration craft, humanizer. Zero blocker/major to pass.
-3. **Fix + recheck** if needed.
-4. **Narrate** — `render-narration.mjs` once the ElevenLabs key/connector works (voice **WashCentral New** `CDbF7Jxnv3azemv9dXMP`, model **eleven_v3**, 44.1 kHz, block-by-block; never regenerate approved audio).
-5. **Record** — `record-lesson.mjs` (needs a `-drive.json` per lesson derived from the shot list, the rendered `-durations.json`, a 1920×1080 display, signed-in fullscreen Chrome, and the patched screencast skill — see QA-LOG 2026-07-08 entries for the validated method and the Windows patches).
-6. **QA + trackers** — §11 checklist into `QA-LOG.md`; update `00-curriculum.md` status; merge new discrepancies/parked items.
+Authoring therefore used the **committed July 9 authenticated sweep corpus** (`verification/2026-07-09/`: 251 signed-in digests + 251 screenshots + per-lesson evidence), which the authoring brief sanctions as ground-truth source (b). `tools/authoring-contract-remote.md` records the grounding contract every authoring agent followed. Every bold UI label traces to a digest/screenshot; anything unobservable is marked `TBD — parked (#n)`, never invented.
 
-## Environment notes (this machine, July 9)
+## Corpus limits found (all tracked; see PARKED #16–#22, DISCREPANCIES #26–#36)
 
-- Chrome debug instance: `chrome.exe --remote-debugging-port=9222 --user-data-dir=%TEMP%\wc-demo-profile --window-size=1920,1080`. Demo auth is a client-side flag; visiting `login.html` clears it for every tab (the lib self-heals via `#qa-btn`).
-- ffmpeg 8.1.2 and Node 24 installed. Screencast skill retains the July 8 Windows patches (`-draw_mouse 0`, constant `-r`, fragmented MP4).
-- **ElevenLabs:** the desktop connector is installed and the locked voice is on the account, but its TTS tool currently fails — its output-folder setting contains a quoted path (quotes included in the value). Fix the plugin setting or set `ELEVENLABS_API_KEY` and use `tools/render-narration.mjs`.
-- **Remote sessions:** demo.washcentral.com is reachable from anywhere; the site is static HTML with client-side auth, so a remote headless Chrome + `tools/cdp-lib.mjs` reproduces the whole verification/authoring flow. Recording, however, is tied to a 1920×1080 desktop with the patched screencast skill (this machine validated it).
+1. **Agent-service fetch failures (#16):** ~60 pages captured column headers but "Couldn't load … (Failed to fetch)" instead of rows; KPI tiles "—". Structure taught; values attributed to the July 8 pass or parked.
+2. **Direct-URL 404s (#17):** many SPA-routed pages 404 on direct navigation though their sidebar entries are live (audit-users/changes, support-alerts, four maint-* pages, six sched-* siblings, portal pages, lms-catalog/paths/my-learning, zoho-tickets, most -edit/-detail probes). Those lessons ship structure/menu-level with page bodies parked.
+3. **Row-click detail views (#18):** Customer 360 view, Ticket View, employee detail interior etc. need URL params and are not in the static sweep; authored structurally from the July 8-verified plan, specifics parked. (House-account detail IS fully captured live with all ten tabs.)
+4. Small parks: Filters panel (#19), sign-in 2FA (#20), Executive Dashboard below-fold GOALS panel (#21), MAIA/MLAS/SSNB pronunciations (#22).
 
-**Remaining user-owned blockers:** ElevenLabs key or connector fix (narration), a dedicated machine window for recording sessions, and the standing parked items in `PARKED-ITEMS.md` (notably #1 gear dialog, #2 LogicPOS 404s, #4 Actions menu depth, #5 refund execution approval).
+Parked **#13 (Site Detail) is resolved** — the page was captured July 9 and WC-10-06 is authored from it.
+
+## Pipeline stages remaining (per lesson)
+
+1. **Pre-recording live verify:** one credentialed in-app walk per lesson to clear its `TBD — parked` markers and re-confirm labels (unblocks #15–#22). The walk instructions are already in each shot list.
+2. **Narrate:** `tools/render-narration.mjs` per narration script (voice **WashCentral New** `CDbF7Jxnv3azemv9dXMP`, model **eleven_v3**, 44.1 kHz, block-by-block). Needs `ELEVENLABS_API_KEY` — not set in the remote environment. Never regenerate WC-01-01/WC-01-02 approved audio.
+3. **Record:** `tools/record-lesson.mjs` per shot list on a 1920×1080 desktop with the validated screencast setup (local machine only).
+4. **QA + trackers:** §11 checklist per lesson into `QA-LOG.md`; statuses to Recorded → QA → Done.
+
+## Environment notes (remote, July 9)
+
+- demo.washcentral.com reachable; site loads in headless Chromium only with `--ssl-version-max=tls1.2` through the session proxy (Chrome's TLS 1.3 handshake is reset by the egress proxy). Irrelevant once running locally.
+- Trackers updated this run: `00-curriculum.md` (header + per-lesson production note, 10.6/14.2 rows), `DISCREPANCIES.md` (#26–#36), `PARKED-ITEMS.md` (#13 resolved; #15–#22 added), `tools/lesson-map.json` (two slug fixes: crm-gift-cards.html, settings-mobile-push.html).
+
+**Remaining user-owned blockers:** demo-tenant credentials for the pre-recording live verify (#15), `ELEVENLABS_API_KEY` for narration, a recording-machine window, and the standing platform questions (#1 gear dialog, #2 LogicPOS, #4 Actions depth, #5 refund execution, #6 weather-pause config, #8 assistant naming/test prompts, #9 timeout thresholds, #14 legacy features).

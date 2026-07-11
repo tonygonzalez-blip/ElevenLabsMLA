@@ -1,0 +1,42 @@
+# WC-09-02 — Mobile app pages · Snagit Shot List (operator-ready)
+
+v1.0 · July 9, 2026 · Target output: **WC-09-02-mobile-app-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+Step numbers match the guide and the narration blocks one-to-one.
+**Verified against demo.washcentral.com on July 9, 2026.**
+
+## Pre-roll checklist (not recorded)
+
+- [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions before recording anything else.
+- [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
+- [ ] Signed in already (credentials never on camera); start on the **Digital** module, on **Mobile App Users**, with the **MOBILE** sidebar group visible.
+- [ ] Snagit: cursor highlight ON, click animation ON; no on-screen keystroke display needed (this lesson is pointer-only).
+- [ ] Nothing open over the page: no command palette, no Ask Shyne modal, no idle prompt.
+- [ ] Do NOT click **Export** or **+ New Record** on **Mobile App Users** (step 6). Do NOT click **Save & Publish** on any configuration page (steps 8–10). Do NOT touch a feature toggle on **Mobile App Features** (step 9). Do NOT click **+ New campaign** or send anything on **Push Campaigns** (step 10).
+- [ ] Demo data (customer names/emails in the user list) is approved to show unblurred in internal training assets (PARKED-ITEMS.md #10, resolved).
+
+## Shots
+
+Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stillness after the expected state renders. Move deliberately: cursor travel about 1.3s, hover about 1s, then click. Steps 1–6 are on the **Mobile App Users** list in the **Digital** shell; steps 7–11 move into the **Settings** shell; step 12 returns to **Digital**.
+
+| Step | Action (exact target) | Expected state | Hold | Edit notes |
+|---|---|---|---|---|
+| 1 | Open the **Digital** module on the left rail; slowly sweep the cursor down the **MOBILE** sidebar group | Eyebrow **MOBILE** above title **Mobile App Users**; the **MOBILE** group lists five entries: **Mobile App Branding**, **Mobile App Features**, **Mobile App Users**, **Push Notifications**, **Mobile Feedback** | 3s | Callout ① bracketing the five MOBILE entries; slow top-to-bottom cursor sweep (about 2s); note **Mobile App Users** is the current page |
+| 2 | Point across the KPI band (do not click) | Four tiles in a row: **Total Users** (4,820), **Active Monthly** (3,240), **iOS** (58%), **Android** (42%) | 3s | Callout ② bracketing the four KPIs; slow left-to-right cursor sweep (about 2s); light emphasis on the **iOS** / **Android** split |
+| 3 | Point to each of the three insight cards in turn | **User Growth** ("Last 12 months", +31%), **By Platform** ("Device distribution": iOS 58% / Android 42% / Tablet 0% / Other 0%), **User Status** ("Activity overview": 67% ACTIVE / 21% MONTHLY / 12% INACTIVE) | 4s | Callout ③ labelling the three cards; hover each card header ~1s; do not click a bar or segment |
+| 4 | Point to the **Mobile User List** card header, then along the column headers | Card labelled **MOBILE · USERS** / **Mobile User List** / "4 records"; seven columns: **NAME · EMAIL · APP VERSION · PLATFORM · LAST ACTIVE · NOTIFICATIONS · STATUS** | 4s | Callout ④ on the card title; slow sweep across the header row (about 2.5s); extra emphasis rings on **APP VERSION** and **NOTIFICATIONS** |
+| 5 | Point across one data row (do not click) | Row shows an **APP VERSION** (sample range 4.0.5–4.2.1), a **PLATFORM** (**iOS** / **Android**), a **LAST ACTIVE** date, and a **NOTIFICATIONS** state (On or Off); one sample row reads **NOTIFICATIONS** Off | 4s | Callout ⑤ "read this row like a support ticket"; trace **APP VERSION** then **NOTIFICATIONS** with the cursor (~2s); no row is opened |
+| 6 | Point to the list toolbar, then the pager (do not click) | Toolbar shows **+ New Record**, **Export**, a **Search mobile app users…** box, **Filters ▾**, and **Search**; pager reads "1–4 of 4" with a **25** rows-per-page control | 3s | Callout ⑥ on the search box; STOP callout with a red "do not click" ring over **Export** and over **+ New Record**; both stay untouched |
+| 7 | Click **Mobile App Branding** in the **MOBILE** group | Shell switches to **Settings** (left rail shows **Close Settings**, **All Settings**); page titled **Mobile App Branding**, tag **Mobile**, **● Loaded**; sections **Tenant** / **Brand** / **Colors** / **Support**; **LIVE PREVIEW** phone on the right | 3s | Callout ⑦ on the title + **Mobile** tag; note the shell change to Settings; zoom-in 150% on the **LIVE PREVIEW** phone (1.5s) |
+| 8 | Point down the **Brand**, **Colors**, and **Support** fields (do not edit) | **Brand**: **Display name**, **Tagline**, **Logo URL (light)**, **Logo URL (dark)**, **Hero image URL**. **Colors**: **Primary**, **Primary (dark)**, **Hero gradient (3 stops)**, **Accent**. **Support**: **Support phone**, **Support email**, **FAQ URL** | 4s | Callout ⑧ labelling the three sections; STOP callout with a red "do not click" ring over **Save & Publish**; no field is edited |
+| 9 | Click **Mobile App Features** in the **MOBILE** group | Page titled **Mobile App Features & Games**, tag **Mobile**; **Games**: **Daily Spin**, **Wash Streak**, **Lucky Wash**, **Scratch Cards**, **Slot Machine**, **Wash Bingo**; **Wallet & Gift Cards**: **Wallet**, **Gift Cards**; each row has a toggle; **LIVE PREVIEW** shows "PLAY & WIN" | 4s | Callout ⑨ on the **Games** list; STOP callout ring over the toggle column and over **Save & Publish**; no toggle is touched |
+| 10 | Click **Push Notifications** in the **MOBILE** group | Page titled **Push Campaigns**, tag **Mobile**; sections **Tenant** / **Campaigns** / **Editor**; **LOCK-SCREEN PREVIEW** and **ESTIMATED REACH** panels on the right; body reads "No campaigns yet." | 4s | Callout ⑩ on the title; STOP callout with a red "no send" ring over **+ New campaign** and over **Save & Publish**; nothing composed or sent |
+| 11 | Slowly move the cursor to the **LOCK-SCREEN PREVIEW** panel (still on Push Campaigns) | Preview panel renders the notification as a member would see it; the same in-page preview idea appears as a **LIVE PREVIEW** phone on Branding and Features | 3s | Callout ⑪ "in-page preview = the customer's view"; caption note: a standalone app-preview launcher is not in this build (TBD — parked, new item) |
+| 12 | Click **Close Settings** | Settings menu closes; back on the **Digital** module with **Mobile App Users** and the **MOBILE** group visible again; nothing saved, published, or sent | 2s | Callout ⑫ "left the config area untouched"; confirm the shell is back to **Digital** |
+| 13 | Hover **Mobile Feedback** in the **MOBILE** group — do NOT click | The entry is confirmed in the group; its page did not load in the July 9 capture, so contents are TBD — parked | 2s | Callout ⑬ "entry confirmed; contents parked"; hover only, no click |
+| 14 | Slowly sweep the cursor back up the **MOBILE** group | Recap state: five entries; **Mobile App Users** reads in full (KPI band + three cards + seven-column list); Branding / Features / Push are recognized but left alone; Mobile Feedback and the app-preview launcher are parked; nothing saved, published, sent, or exported | 3s | Callout ⑭ tying the group together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+
+Estimated runtime: about 4:10 (narration estimate pending render). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03). If the **Mobile Feedback** page or a standalone app-preview launcher is deployed after July 9 and resolves, re-verify and re-roll steps 11 and 13 before publishing.
+
+## If Claude drives while you record
+
+I can execute steps 1–14 live in the browser with the timings above on request; you run Snagit (or any 1920×1080 MP4 screen recorder) on the window. No publish, toggle, campaign, send, or export is ever triggered — step 6 stops at the **Export** and **+ New Record** guardrails, steps 8–10 stop at **Save & Publish** (and the feature toggles and **+ New campaign**), and step 13 hovers **Mobile Feedback** only. Say "drive lesson 09-02" when you're rolling.

@@ -1,0 +1,41 @@
+# WC-06-01 — Executive Dashboard · Snagit Shot List (operator-ready)
+
+v1.0 · July 9, 2026 · Target output: **WC-06-01-executive-dashboard-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+Step numbers match the guide and the narration blocks one-to-one (13 steps).
+**Verified against demo.washcentral.com on July 9, 2026.**
+
+## Pre-roll checklist (not recorded)
+
+- [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions before recording anything else.
+- [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
+- [ ] Signed in already (credentials never on camera); start URL: `demo.washcentral.com/dashboard-executive.html` (the sign-in landing page).
+- [ ] Snagit: cursor highlight ON, click animation ON; on-screen keystroke display can stay OFF (this lesson uses no keyboard entry).
+- [ ] Header, section band, and the full KPI card row are visible; the period row reads **Today Week Month Quarter YTD 1Y** with **Month** selected before rolling.
+- [ ] This lesson has no destructive or send controls. The only clicks are the period toggles (step 4), the **REVENUE** card (step 11), and **Back to Executive Dashboard** (step 12). On the Revenue Detail page, do NOT click **Open Reports** or the **Jump to workflow** links; they navigate away.
+- [ ] Plan-listed **GOALS · Q2 2026** panel is not present in the captured corpus and is parked; do not stage or imply it (see step 10 note).
+
+## Shots
+
+Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stillness after the expected state renders. Move deliberately: cursor travel about 1.3s, hover about 1s, then click. This is a dense analytics page, so favor slow sweeps and generous holds over fast cuts.
+
+| Step | Action (exact target) | Expected state | Hold | Edit notes |
+|---|---|---|---|---|
+| 1 | None — open on **Executive Dashboard**; slowly sweep the cursor from the sidebar's highlighted **Executive Dashboard** across the title and out to the header tools | Breadcrumb **Dashboard › Executive Dashboard**; sidebar **ANALYTICS** group with **Executive Dashboard** active; title **Executive Dashboard** under a **DASHBOARD** eyebrow, subtitle "Executive overview · revenue, members, locations, and operational health for the entire network"; header tools **Search ⌘K**, **Ask Shyne**, **All Locations▾**, **MG** top-right | 3s | Callout ① on the title + breadcrumb; slow left-to-right cursor sweep (about 2s); no click |
+| 2 | Point to the section band under the header | Eyebrow **NETWORK · APRIL 2026 MTD**; heading **The state of the business**; subtitle "All locations rolled up. Each card shows lifetime totals plus 14-day momentum." | 3s | Callout ② on the eyebrow + heading; note "whole-network rollup"; no click |
+| 3 | Point to the period toggle row at the right of the band (do not click yet) | Six toggles: **Today**, **Week**, **Month**, **Quarter**, **YTD**, **1Y**, with **Month** selected; **Updated just now** timestamp beside them | 3s | Callout ③ bracketing the six toggles; zoom-in 150% on the row showing **Month** highlighted (1.5s) |
+| 4 | Click **Today**, then **Week**, **Quarter**, **YTD**, **1Y**, then **Month**, pausing about 1s on each | The KPI cards and panels re-scope with each click; layout holds; ends back on **Month** (default view restored) | 4s | Callout ④ "view control only, no data changes"; let each redraw settle before the next click; end on **Month** |
+| 5 | Sweep the cursor across the first three KPI cards left to right | **REVENUE** **$1.42M** ↑ 9.4% vs prior month · **CARS WASHED** **19,606** ↑ 8.2% · **ACTIVE MEMBERS** **18,816** ↑ 3.4% · +1,408 new; each card has a sparkline | 4s | Callout ⑤ across the three cards; slow horizontal sweep (about 2.5s); brief zoom on the ↑ arrows (1.5s); no click |
+| 6 | Continue the sweep across the last three KPI cards | **CONVERSION RATE** **7.1%** ↓ 0.3 pt vs target · **AVG VISIT FREQUENCY** **2.6×** ↑ 0.2× per member / mo · **LABOR %** **17.4%** "↑ 2.4 pt — over target 15%" rendered in amber | 4s | Callout ⑥ with a highlight ring on the amber **LABOR %** card; zoom-in 150% on the amber value + delta (1.5s); no click |
+| 7 | Point to the **Revenue · last 12 months** panel; trace the legend | Panel subtitle "Membership recurring + retail visits, network-wide"; headline **$15.8M** ↑ 11.4% trailing 12 mo; stacked area chart May→Apr; legend **Membership**, **Pay-per-wash**, **Retail (gift cards, books)** | 4s | Callout ⑦ on the panel title + legend; slow sweep across the three legend swatches (about 2s); no click |
+| 8 | Sweep down the **Location health** panel rows | Subtitle "Status across all 6 locations"; rows: **Fort Lauderdale** 98.7% · **Miami North** 98.7% · **Boca Raton** 100% · **Tampa West** 97.3% · **Orlando Central** 89.3% · **Naples Coast** 81.3% conv to target, each with revenue · cars · Labor % and a colored status dot | 4s | Callout ⑧ tracking the status dots green→red; brief pause on the red **Naples Coast** dot; no click |
+| 9 | Point to the **Members vs churn** panel (scroll down if below the fold) | Subtitle "Monthly active members, gross adds, churn — last 12 months"; a line (active members) over bars (gross adds and churn) across twelve months | 3s | Callout ⑨ on the panel title + subtitle; do not quote per-bar values on screen; no click |
+| 10 | Point to the **Revenue mix** panel beside it | Subtitle "Composition this month"; a donut chart of this month's revenue split | 3s | Callout ⑩ on the donut; describe as "shape of the month's revenue"; do NOT stage a GOALS panel (parked); no click |
+| 11 | Click the **REVENUE** KPI card | **Revenue Detail** page opens: breadcrumb **Dashboard › Revenue Detail**, **Live Prototype** chip, **Back to Executive Dashboard** button; cards **Revenue Today** **$184,260**, **Avg Ticket** **$26.93**, **Member Revenue** **$112,440**, **Add-on Revenue** **$18,960**; panels **30-day revenue trend**, **Revenue actions**, **Revenue by location** table (**Location · Washes · Avg Ticket · Revenue**) | 4s | Callout ⑪ "cards are launch points"; slow sweep over the four detail cards then the table header; do NOT click **Open Reports** or **Jump to workflow** links |
+| 12 | Click **Back to Executive Dashboard** | The detail view closes; Executive Dashboard returns unchanged, still on **Month** | 3s | Callout ⑫ "returns unchanged"; confirm the period still reads **Month** |
+| 13 | None — slow sweep from the period row, across the KPI cards, down to the panels | Recap state: pick a **period**, read the six cards for scale and health, then the panels for trend, sites, members, and mix; nothing edited, and any card drills deeper | 3s | Callout ⑬ tying the scan together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+
+Estimated runtime: about 4:24 (estimated narration total 263.9s at ~145 wpm, pending render); with the sweeps and holds above the finished video lands near 5 min. If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
+
+## If Claude drives while you record
+
+I can execute steps 1–13 live in the browser with the timings above on request; you run Snagit (or any 1920×1080 MP4 screen recorder) on the window. The only clicks are the six period toggles (step 4), the **REVENUE** card (step 11), and **Back to Executive Dashboard** (step 12); no send, edit, export, or destructive control is touched. Say "drive lesson 06-01" when you're rolling.
