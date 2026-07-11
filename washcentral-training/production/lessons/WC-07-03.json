@@ -10,39 +10,108 @@
     1080
   ],
   "targets": {
-    "railToggle": { "selector": ".wc-rail-panel-toggle" },
-    "sideQaDashboard": { "selector": "aside.sidebar a[href=\"qa-dashboard.html\"]" },
-    "sideScoringScripts": { "selector": "aside.sidebar a[href=\"qa-scripts.html\"]" },
-    "sideConversations": { "selector": "aside.sidebar a[href=\"qa-conversations.html\"]" },
-    "breadcrumb": { "selector": ".breadcrumb-bar" },
-    "bcStrong": { "js": "document.querySelector('.breadcrumb-bar strong')", "textRect": true },
-    "kpiStrip": { "selector": ".a-metrics" },
-    "tile0": { "js": "document.querySelectorAll('.a-metric')[0]" },
-    "tile1": { "js": "document.querySelectorAll('.a-metric')[1]" },
-    "tile2": { "js": "document.querySelectorAll('.a-metric')[2]" },
-    "tile3": { "js": "document.querySelectorAll('.a-metric')[3]" },
-    "theadRow": { "selector": "table thead tr" },
-    "cardTrend": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Average Score Trend/.test(c.textContent||''))" },
-    "cardDist": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Score Distribution/.test(c.textContent||''))" },
-    "cardCheckpoints": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Checkpoint Hit Rates/.test(c.textContent||''))" },
-    "cardTopPerf": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Top Performers/.test(c.textContent||''))" },
-    "membershipRow": { "js": "[...document.querySelectorAll('div,li')].filter(x=>/Presented membership/.test(x.textContent||'')&&x.getBoundingClientRect().width>0&&x.getBoundingClientRect().height<40).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]" },
-    "coachingOpp": { "js": "[...document.querySelectorAll('div,section,p')].filter(x=>/Coaching Opportunity/.test(x.textContent||'')&&/Focus team/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0&&x.getBoundingClientRect().height<90).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]" },
-    "viewAllConv": { "js": "[...document.querySelectorAll('a,button')].find(x=>/View All Conversations/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)" },
-    "thScript": { "text": "Script", "scope": "table thead th" },
-    "reviewBtn": { "js": "[...document.querySelectorAll('a,button')].find(x=>/^Review$/.test((x.textContent||'').trim())&&x.getBoundingClientRect().width>0)" },
-    "newScriptBtn": { "js": "[...document.querySelectorAll('a,button')].find(x=>/New Script/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)" },
-    "makeDefaultBtn": { "js": "[...document.querySelectorAll('a,button')].find(x=>/Make Default/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)" },
-    "scriptRowStandard": { "js": "[...document.querySelectorAll('*')].filter(x=>/Standard Wash Script/.test(x.textContent||'')&&x.getBoundingClientRect().height>40&&x.getBoundingClientRect().height<260&&x.getBoundingClientRect().width>800).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]" },
-    "scriptRowMembership": { "js": "[...document.querySelectorAll('*')].filter(x=>/Membership Upsell Focus/.test(x.textContent||'')&&x.getBoundingClientRect().height>40&&x.getBoundingClientRect().height<260&&x.getBoundingClientRect().width>800).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]" },
-    "scriptRowReturning": { "js": "[...document.querySelectorAll('*')].filter(x=>/Returning Customer Re-engagement/.test(x.textContent||'')&&x.getBoundingClientRect().height>40&&x.getBoundingClientRect().height<260&&x.getBoundingClientRect().width>800).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]" },
-    "bestPractices": { "js": "(()=>{let e=[...document.querySelectorAll('div,section,p')].find(x=>/Industry Best Practices/i.test(x.textContent||'')&&x.children.length<4);for(let i=0;i<5&&e&&e.getBoundingClientRect().height<40;i++)e=e.parentElement;return e})()" },
-    "exportBtn": { "js": "[...document.querySelectorAll('a,button')].find(x=>/Export CSV/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)" },
-    "filtersBtn": { "js": "[...document.querySelectorAll('a,button')].find(x=>/Filters/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)" },
-    "searchBox": { "js": "[...document.querySelectorAll('input[placeholder]')].find(i=>/employee or transcript/i.test(i.placeholder||'')&&i.getBoundingClientRect().width>0)" },
-    "needsCoachingTile": { "js": "[...document.querySelectorAll('.a-metric')].find(m=>/Needs Coaching/i.test(m.textContent||'')&&m.getBoundingClientRect().width>0)" },
-    "thCheckpointsMet": { "text": "Checkpoints Met", "scope": "table thead th" },
-    "flagBtn": { "js": "[...document.querySelectorAll('a,button')].find(x=>/🚩/.test(x.textContent||'')&&x.getBoundingClientRect().width>0)" }
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideQaDashboard": {
+      "selector": "aside.sidebar a[href=\"qa-dashboard.html\"]"
+    },
+    "sideScoringScripts": {
+      "selector": "aside.sidebar a[href=\"qa-scripts.html\"]"
+    },
+    "sideConversations": {
+      "selector": "aside.sidebar a[href=\"qa-conversations.html\"]"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "bcStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "kpiStrip": {
+      "selector": ".a-metrics"
+    },
+    "tile0": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "tile1": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "tile2": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "tile3": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "cardTrend": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Average Score Trend/.test(c.textContent||''))"
+    },
+    "cardDist": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Score Distribution/.test(c.textContent||''))"
+    },
+    "cardCheckpoints": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Checkpoint Hit Rates/.test(c.textContent||''))"
+    },
+    "cardTopPerf": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Top Performers/.test(c.textContent||''))"
+    },
+    "membershipRow": {
+      "js": "[...document.querySelectorAll('div,li')].filter(x=>/Presented membership/.test(x.textContent||'')&&x.getBoundingClientRect().width>0&&x.getBoundingClientRect().height<40).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]"
+    },
+    "coachingOpp": {
+      "js": "[...document.querySelectorAll('div,section,p')].filter(x=>/Coaching Opportunity/.test(x.textContent||'')&&/Focus team/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0&&x.getBoundingClientRect().height<90).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]"
+    },
+    "viewAllConv": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/View All Conversations/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)"
+    },
+    "thScript": {
+      "text": "Script",
+      "scope": "table thead th"
+    },
+    "reviewBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/^Review$/.test((x.textContent||'').trim())&&x.getBoundingClientRect().width>0)"
+    },
+    "newScriptBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/New Script/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)"
+    },
+    "makeDefaultBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/Make Default/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)"
+    },
+    "scriptRowStandard": {
+      "js": "[...document.querySelectorAll('*')].filter(x=>/Standard Wash Script/.test(x.textContent||'')&&x.getBoundingClientRect().height>40&&x.getBoundingClientRect().height<260&&x.getBoundingClientRect().width>800).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]"
+    },
+    "scriptRowMembership": {
+      "js": "[...document.querySelectorAll('*')].filter(x=>/Membership Upsell Focus/.test(x.textContent||'')&&x.getBoundingClientRect().height>40&&x.getBoundingClientRect().height<260&&x.getBoundingClientRect().width>800).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]"
+    },
+    "scriptRowReturning": {
+      "js": "[...document.querySelectorAll('*')].filter(x=>/Returning Customer Re-engagement/.test(x.textContent||'')&&x.getBoundingClientRect().height>40&&x.getBoundingClientRect().height<260&&x.getBoundingClientRect().width>800).sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]"
+    },
+    "bestPractices": {
+      "js": "(()=>{let e=[...document.querySelectorAll('div,section,p')].find(x=>/Industry Best Practices/i.test(x.textContent||'')&&x.children.length<4);for(let i=0;i<5&&e&&e.getBoundingClientRect().height<40;i++)e=e.parentElement;return e})()"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/Export CSV/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/Filters/i.test(x.textContent||'')&&x.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input[placeholder]')].find(i=>/employee or transcript/i.test(i.placeholder||'')&&i.getBoundingClientRect().width>0)"
+    },
+    "needsCoachingTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(m=>/Needs Coaching/i.test(m.textContent||'')&&m.getBoundingClientRect().width>0)"
+    },
+    "thCheckpointsMet": {
+      "text": "Checkpoints Met",
+      "scope": "table thead th"
+    },
+    "flagBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(x=>/🚩/.test(x.textContent||'')&&x.getBoundingClientRect().width>0)"
+    }
   },
   "predicates": {
     "onDashboard": "location.pathname.endsWith('/qa-dashboard.html')",
@@ -67,250 +136,1791 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.5, "predicate": "onDashboard", "note": "start page identity before capture (lesson opens already on the QA Dashboard; step 1's 'Open the Team module... click QA Dashboard' is the arrival, not an on-camera click)" },
-    { "op": "assert", "at": -0.9, "predicate": "startReady", "note": "loaded: 4 KPI tiles, 4 chart cards, the three Sales Coaching sidebar links, scrolled to top, no skeletons" },
-    { "op": "watch", "key": "sidebarHeld", "from": 1.5, "to": 235.5, "predicate": "sidebarExpanded", "everyMs": 2500, "mustHold": true },
-
-    { "op": "pointer-enter", "at": 0.4, "from": [2, 880], "to": { "target": "breadcrumb", "offset": [-820, 22] }, "note": "enter from the left edge toward the header (p01 names the QA Dashboard we land on)" },
-    { "op": "log-rects", "at": 1.0, "key": "sideCoaching", "targets": ["sideQaDashboard", "sideScoringScripts", "sideConversations"] },
-    { "op": "log-rect", "at": 1.4, "key": "breadcrumbRect", "target": "breadcrumb", "requireStableMs": 240 },
-    { "op": "log-rect", "at": 1.8, "key": "dashKpiStrip", "target": "kpiStrip" },
-    { "op": "log-rects", "at": 2.1, "key": "dashTiles", "targets": ["tile0", "tile1", "tile2", "tile3"] },
-    { "op": "log-rects", "at": 2.4, "key": "dashCards", "targets": ["cardTrend", "cardDist", "cardCheckpoints", "cardTopPerf"] },
-
-    { "op": "move", "at": 0.6, "to": { "target": "bcStrong", "offset": [40, 34], "outside": true }, "note": "step 1: under the breadcrumb title while p01 says click QA Dashboard" },
-    { "op": "move", "at": 5.4, "to": { "point": [1050, 470] }, "note": "step 1: ease over the dashboard body for p02 ('records how staff sell... scores every interaction')" },
-    { "op": "move", "at": 11.3, "to": { "target": "sideQaDashboard", "offset": [210, 8], "outside": true }, "note": "step 1: p03 sweep the three Sales Coaching pages in spoken order — 'the dashboard'" },
-    { "op": "move", "at": 13.0, "to": { "target": "sideScoringScripts", "offset": [210, 8], "outside": true }, "note": "step 1: '...the scripts behind it'" },
-    { "op": "move", "at": 14.5, "to": { "target": "sideConversations", "offset": [210, 8], "outside": true }, "note": "step 1: '...and the conversations themselves'" },
-
-    { "op": "move", "at": 17.4, "to": { "target": "tile0", "offset": [0, -40], "outside": true }, "note": "step 2 cue p04 'the four numbers up top'" },
-    { "op": "move", "at": 19.3, "to": { "target": "tile0", "offset": [0, 12] }, "note": "step 2: KPI sweep left-to-right in spoken order (p05) — Avg Score This Month" },
-    { "op": "move", "at": 20.5, "to": { "target": "tile1", "offset": [0, 12] }, "note": "Conversations Recorded" },
-    { "op": "move", "at": 21.5, "to": { "target": "tile2", "offset": [0, 12] }, "note": "p06: Above Target (75%)" },
-    { "op": "move", "at": 23.2, "to": { "target": "tile3", "offset": [0, 12] }, "note": "vs. Last Month (+4.2%)" },
-    { "op": "move", "at": 25.4, "to": { "point": [1100, 300] }, "note": "ease off for p07 ('green and up means trending the right way')" },
-
-    { "op": "move", "at": 30.7, "to": { "target": "cardTrend", "offset": [-380, -60] }, "note": "step 3 cue p08 'Look at the trend' — over the Average Score Trend card" },
-    { "op": "move", "at": 32.6, "to": { "target": "cardTrend", "offset": [-360, 30] }, "note": "step 3: trace the trend line left-to-right above the dashed target (p09-p10)" },
-    { "op": "move", "at": 35.0, "to": { "target": "cardTrend", "offset": [200, 10] } },
-    { "op": "move", "at": 37.2, "to": { "target": "cardTrend", "offset": [440, -10] }, "note": "p10: the solid line riding above the dash" },
-    { "op": "move", "at": 41.3, "to": { "point": [900, 300] }, "note": "ease off for p11 ('right now it's climbing')" },
-
-    { "op": "move", "at": 43.3, "to": { "target": "cardDist", "offset": [0, -60] }, "note": "step 4 cue p12 'Now the distribution' — over the Score Distribution card" },
-    { "op": "move", "at": 45.1, "to": { "target": "cardDist", "offset": [40, -40] }, "note": "step 4: slow vertical sweep down the five letter-grade bars (p13)" },
-    { "op": "move", "at": 47.2, "to": { "target": "cardDist", "offset": [40, 0] } },
-    { "op": "move", "at": 49.9, "to": { "target": "cardDist", "offset": [40, 40] }, "note": "p14: half land in the B band" },
-    { "op": "move", "at": 52.7, "to": { "target": "cardDist", "offset": [40, 80] }, "note": "p15: A's and B's together are the at-or-above-target share" },
-
-    { "op": "move", "at": 57.9, "to": { "target": "cardCheckpoints", "offset": [-420, -120] }, "note": "step 5 cue p16 'the panel that earns its keep'" },
-    { "op": "log-rect", "at": 58.4, "key": "checkpointRect", "target": "cardCheckpoints" },
-    { "op": "log-rect", "at": 58.7, "key": "membershipRowRect", "target": "membershipRow" },
-    { "op": "move", "at": 61.5, "to": { "target": "cardCheckpoints", "offset": [-420, -80] }, "note": "step 5: sweep down the seven checkpoint rows (p17), greeting to closing" },
-    { "op": "move", "at": 63.4, "to": { "target": "cardCheckpoints", "offset": [-420, 0] } },
-    { "op": "move", "at": 65.6, "to": { "target": "cardCheckpoints", "offset": [-420, 90] }, "note": "p18: 'each with a hit rate'" },
-    { "op": "move", "at": 68.1, "to": { "target": "membershipRow", "offset": [-160, 0] }, "note": "step 5: p19 rest on the red Presented membership row at 47%" },
-    { "op": "move", "at": 71.6, "to": { "target": "membershipRow", "offset": [280, 0] }, "note": "p20 'there's the gap' — toward the 47% value" },
-
-    { "op": "move", "at": 73.5, "to": { "target": "coachingOpp", "offset": [-380, -40] }, "note": "step 6 cue p21 'the system already flagged it'" },
-    { "op": "log-rect", "at": 74.0, "key": "coachingRect", "target": "coachingOpp" },
-    { "op": "move", "at": 75.9, "to": { "target": "coachingOpp", "offset": [-360, 6] }, "note": "step 6: rest on the Coaching Opportunity callout (p22-p23), the weakest number turned into a sentence" },
-    { "op": "move", "at": 84.8, "to": { "target": "coachingOpp", "offset": [-360, -70] }, "note": "p24: link the callout up to the membership row above ('read this panel first')" },
-
-    { "op": "move", "at": 88.2, "to": { "target": "cardTopPerf", "offset": [-160, -120] }, "note": "step 7 cue p25 'on the right, the leaderboard'" },
-    { "op": "log-rect", "at": 88.7, "key": "topPerfRect", "target": "cardTopPerf" },
-    { "op": "log-rect", "at": 89.0, "key": "viewAllRect", "target": "viewAllConv" },
-    { "op": "move", "at": 90.4, "to": { "target": "cardTopPerf", "offset": [-160, -70] }, "note": "step 7: down the ranked five (p26), volume next to score" },
-    { "op": "move", "at": 93.0, "to": { "target": "cardTopPerf", "offset": [-160, 60] } },
-    { "op": "move", "at": 98.7, "to": { "target": "viewAllConv", "offset": [-70, 44], "outside": true }, "note": "step 7: p28 rest BESIDE the View All Conversations button — located, never clicked ('leave it for now')" },
-
-    { "op": "move", "at": 103.1, "to": { "target": "theadRow", "offset": [-700, -34], "outside": true }, "note": "step 8 cue p29 'the recent activity table' — the table header is on screen; the page only scrolls ~194px so the walk stays in-frame (RESIDUAL R1)" },
-    { "op": "log-rect", "at": 103.6, "key": "recentTheadRect", "target": "theadRow", "requireStableMs": 220 },
-    { "op": "log-rect", "at": 103.9, "key": "reviewRect", "target": "reviewBtn" },
-    { "op": "log-rect", "at": 104.2, "key": "thScriptRect", "target": "thScript" },
-    { "op": "move", "at": 105.6, "to": { "target": "theadRow", "offset": [-700, 0] }, "note": "step 8: sweep the column header left-to-right (p30) — who, when, where, how long, grade" },
-    { "op": "move", "at": 108.0, "to": { "target": "theadRow", "offset": [500, 0] } },
-    { "op": "move", "at": 112.4, "to": { "target": "thScript", "offset": [0, 0] }, "note": "step 8: p31 the SCRIPT column reads a dash" },
-    { "op": "move", "at": 117.1, "to": { "target": "sideScoringScripts", "offset": [210, 8], "outside": true }, "note": "step 8 tail / step 9 approach: p32 'we open the scripts page' — point beside Scoring Scripts, no click yet" },
-
-    { "op": "click", "target": "sideScoringScripts", "pressAt": 120.95, "hoverMs": 380, "postcondition": "onScripts", "timeoutMs": 8000, "nav": true, "note": "step 9: p33 'Click Scoring Scripts' (cue ends 120.87) — genuine sidebar navigation, press lands in the 0.87s break so the page is up before p34" },
-    { "op": "wait-stable", "afterNav": true, "key": "scriptsStable", "predicate": "scriptsReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 121.5, "predicate": "scriptsReady", "note": "Scoring Scripts loaded: 4 KPI tiles, the Scoring Script Library, + New Script button; abort on an error state" },
-    { "op": "log-rect", "at": 121.7, "key": "bcScriptsRect", "target": "bcStrong" },
-    { "op": "log-rect", "at": 121.9, "key": "scriptsKpiStrip", "target": "kpiStrip" },
-    { "op": "log-rects", "at": 122.1, "key": "scriptTiles", "targets": ["tile0", "tile1", "tile2", "tile3"] },
-    { "op": "move", "at": 122.4, "to": { "target": "tile0", "offset": [0, 12] }, "note": "step 9: KPI band in spoken order (p34) — Active Scripts" },
-    { "op": "move", "at": 122.9, "to": { "target": "tile2", "offset": [0, 12] }, "note": "'one draft' — the Draft tile" },
-    { "op": "move", "at": 124.0, "to": { "target": "tile1", "offset": [0, 12] }, "note": "p35 'seven checkpoints on average' — Avg Checkpoints" },
-    { "op": "move", "at": 126.5, "to": { "target": "tile3", "offset": [0, 12] }, "note": "'two hundred eighty-four scored this month' — Scored This Month (matches the dashboard pool)" },
-    { "op": "move", "at": 130.5, "to": { "point": [1000, 250] }, "note": "ease off over the band for p36" },
-
-    { "op": "move", "at": 135.4, "to": { "target": "scriptRowStandard", "offset": [-560, -34] }, "note": "step 10 cue p37 'this is the rulebook'" },
-    { "op": "log-rect", "at": 135.7, "key": "scriptRow1Rect", "target": "scriptRowStandard" },
-    { "op": "log-rect", "at": 135.9, "key": "scriptRow2Rect", "target": "scriptRowMembership" },
-    { "op": "log-rect", "at": 136.1, "key": "scriptRow3Rect", "target": "scriptRowReturning" },
-    { "op": "log-rect", "at": 136.3, "key": "newScriptRect", "target": "newScriptBtn" },
-    { "op": "log-rect", "at": 136.5, "key": "makeDefaultRect", "target": "makeDefaultBtn" },
-    { "op": "move", "at": 140.6, "to": { "target": "scriptRowStandard", "offset": [-360, 0] }, "note": "step 10: p39 down the three scripts in spoken order — the default standard-wash script" },
-    { "op": "move", "at": 142.8, "to": { "target": "scriptRowMembership", "offset": [-360, 0] }, "note": "the membership-focused one with a higher target" },
-    { "op": "move", "at": 145.2, "to": { "target": "scriptRowReturning", "offset": [-360, 0] }, "note": "p40 the win-back script still in draft" },
-    { "op": "move", "at": 147.6, "to": { "target": "newScriptBtn", "offset": [-60, 44], "outside": true }, "note": "step 10 guardrail: p41 point BESIDE + New Script (and Make Default) — read-only, a manager builds and edits; never clicked" },
-
-    { "op": "move", "at": 151.1, "to": { "target": "bestPractices", "offset": [-380, -20] }, "note": "step 11 cue p42 'one note card sits below'" },
-    { "op": "log-rect", "at": 151.5, "key": "bestPracticeRect", "target": "bestPractices" },
-    { "op": "move", "at": 152.9, "to": { "target": "bestPractices", "offset": [-360, 30] }, "note": "step 11: rest on the Industry Best Practices note (p43-p44), guidance not a control" },
-    { "op": "move", "at": 158.4, "to": { "point": [1000, 620] }, "note": "ease off for p45 ('just a note, not a setting')" },
-
-    { "op": "move", "at": 167.3, "to": { "target": "sideConversations", "offset": [210, 8], "outside": true }, "note": "step 12 approach: p46 'Last page. Click Conversations' — point beside the link before the press" },
-    { "op": "click", "target": "sideConversations", "pressAt": 168.1, "hoverMs": 360, "postcondition": "onConversations", "timeoutMs": 8000, "nav": true, "note": "step 12: press right after the p46 cue (rendered break only ~0.48s) so the page is up as p47 names the KPIs" },
-    { "op": "wait-stable", "afterNav": true, "key": "convStable", "predicate": "convReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 169.4, "predicate": "convReady", "note": "Conversations loaded: 4 KPI tiles incl. Needs Coaching, the table header; abort on an error state" },
-    { "op": "log-rect", "at": 169.6, "key": "bcConvRect", "target": "bcStrong" },
-    { "op": "log-rect", "at": 169.8, "key": "convKpiStrip", "target": "kpiStrip" },
-    { "op": "log-rect", "at": 170.0, "key": "needsCoachingRect", "target": "needsCoachingTile" },
-    { "op": "move", "at": 168.6, "to": { "target": "kpiStrip", "offset": [-560, 12] }, "note": "step 12: p47 the headline numbers echo the dashboard" },
-    { "op": "move", "at": 170.4, "to": { "target": "needsCoachingTile", "offset": [0, 12] }, "note": "step 12: p48 ring the 12 Needs Coaching count — the triage number / work queue" },
-    { "op": "move", "at": 176.2, "to": { "point": [1100, 250] }, "note": "ease off for p49 ('that's your work queue')" },
-
-    { "op": "move", "at": 181.5, "to": { "target": "theadRow", "offset": [-720, -34], "outside": true }, "note": "step 13 cue p50 'the full log, all two hundred eighty-four records'" },
-    { "op": "log-rect", "at": 182.0, "key": "convTheadRect", "target": "theadRow", "requireStableMs": 220 },
-    { "op": "log-rect", "at": 182.3, "key": "exportRect", "target": "exportBtn" },
-    { "op": "log-rect", "at": 182.5, "key": "reviewRect2", "target": "reviewBtn" },
-    { "op": "log-rect", "at": 182.7, "key": "flagRect", "target": "flagBtn" },
-    { "op": "log-rect", "at": 182.9, "key": "searchRect", "target": "searchBox" },
-    { "op": "log-rect", "at": 183.1, "key": "filtersRect", "target": "filtersBtn" },
-    { "op": "log-rect", "at": 183.3, "key": "checkpointsMetRect", "target": "thCheckpointsMet" },
-    { "op": "move", "at": 185.1, "to": { "target": "searchBox", "offset": [-540, 0] }, "note": "step 13: p51 the search box (search employee or transcript); Export located, never clicked ('we won't export today')" },
-    { "op": "move", "at": 186.8, "to": { "target": "exportBtn", "offset": [-60, 42], "outside": true }, "note": "step 13 guardrail: point BESIDE Export CSV — never clicked" },
-    { "op": "move", "at": 189.2, "to": { "target": "thCheckpointsMet", "offset": [0, 0] }, "note": "step 13: p53-p54 the CHECKPOINTS MET column reads 0/8 on every row — demo data, not a real count (RESIDUAL R2)" },
-    { "op": "move", "at": 193.8, "to": { "point": [1050, 250] }, "note": "ease off for p55 ('the real hit rates live on the dashboard')" },
-    { "op": "move", "at": 198.4, "to": { "target": "reviewBtn", "offset": [-70, 40], "outside": true }, "note": "step 13 guardrail: point BESIDE a Review button (the 🚩 flag sits just right of it) — neither opened" },
-
-    { "op": "log-rects", "at": 203.1, "key": "sideCoaching2", "targets": ["sideQaDashboard", "sideScoringScripts", "sideConversations"] },
-    { "op": "move", "at": 204.8, "to": { "target": "sideQaDashboard", "offset": [210, 8], "outside": true }, "note": "step 14: p57 tie the pages — the dashboard flagged membership as weak" },
-    { "op": "move", "at": 207.5, "to": { "target": "sideScoringScripts", "offset": [210, 8], "outside": true }, "note": "p58 the scripts page holds the script built to fix it" },
-    { "op": "move", "at": 210.4, "to": { "target": "sideConversations", "offset": [210, 8], "outside": true }, "note": "p59 this log is where a manager pulls the actual calls to coach from" },
-    { "op": "move", "at": 214.6, "to": { "point": [1000, 620] }, "note": "ease off for p60 ('one weak number, three pages, a real next step')" },
-
-    { "op": "move", "at": 218.6, "to": { "target": "sideQaDashboard", "offset": [210, 8], "outside": true }, "note": "step 15 recap cue p61 'three pages, three questions'" },
-    { "op": "move", "at": 221.5, "to": { "target": "sideQaDashboard", "offset": [210, 8], "outside": true }, "note": "p62 how's the team and what's weak — QA Dashboard" },
-    { "op": "move", "at": 223.8, "to": { "target": "sideScoringScripts", "offset": [210, 8], "outside": true }, "note": "p63 what are we grading against — Scoring Scripts" },
-    { "op": "move", "at": 225.4, "to": { "target": "sideConversations", "offset": [210, 8], "outside": true }, "note": "p64 show me the actual calls — Conversations" },
-    { "op": "move", "at": 227.4, "to": { "point": [1480, 930] }, "note": "final park, clear of content and captions, while p65 closes" },
-
-    { "op": "assert", "at": 234.0, "predicate": "onConversations" },
-    { "op": "assert", "at": 234.6, "predicate": "sidebarExpanded" }
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onDashboard",
+      "note": "start page identity before capture (lesson opens already on the QA Dashboard; step 1's 'Open the Team module... click QA Dashboard' is the arrival, not an on-camera click)"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "startReady",
+      "note": "loaded: 4 KPI tiles, 4 chart cards, the three Sales Coaching sidebar links, scrolled to top, no skeletons"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1.5,
+      "to": 235.5,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2500,
+      "mustHold": true
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        2,
+        880
+      ],
+      "to": {
+        "target": "breadcrumb",
+        "offset": [
+          -820,
+          22
+        ]
+      },
+      "note": "enter from the left edge toward the header (p01 names the QA Dashboard we land on)"
+    },
+    {
+      "op": "log-rects",
+      "at": 1,
+      "key": "sideCoaching",
+      "targets": [
+        "sideQaDashboard",
+        "sideScoringScripts",
+        "sideConversations"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.4,
+      "key": "breadcrumbRect",
+      "target": "breadcrumb",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 1.8,
+      "key": "dashKpiStrip",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rects",
+      "at": 2.1,
+      "key": "dashTiles",
+      "targets": [
+        "tile0",
+        "tile1",
+        "tile2",
+        "tile3"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 2.4,
+      "key": "dashCards",
+      "targets": [
+        "cardTrend",
+        "cardDist",
+        "cardCheckpoints",
+        "cardTopPerf"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 0.6,
+      "to": {
+        "target": "bcStrong",
+        "offset": [
+          40,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 1: under the breadcrumb title while p01 says click QA Dashboard"
+    },
+    {
+      "op": "move",
+      "at": 5.4,
+      "to": {
+        "point": [
+          1050,
+          470
+        ]
+      },
+      "note": "step 1: ease over the dashboard body for p02 ('records how staff sell... scores every interaction')"
+    },
+    {
+      "op": "move",
+      "at": 11.3,
+      "to": {
+        "target": "sideQaDashboard",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1: p03 sweep the three Sales Coaching pages in spoken order — 'the dashboard'"
+    },
+    {
+      "op": "move",
+      "at": 13,
+      "to": {
+        "target": "sideScoringScripts",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1: '...the scripts behind it'"
+    },
+    {
+      "op": "move",
+      "at": 14.5,
+      "to": {
+        "target": "sideConversations",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1: '...and the conversations themselves'"
+    },
+    {
+      "op": "move",
+      "at": 17.4,
+      "to": {
+        "target": "tile0",
+        "offset": [
+          0,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "step 2 cue p04 'the four numbers up top'"
+    },
+    {
+      "op": "move",
+      "at": 19.3,
+      "to": {
+        "target": "tile0",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2: KPI sweep left-to-right in spoken order (p05) — Avg Score This Month"
+    },
+    {
+      "op": "move",
+      "at": 20.5,
+      "to": {
+        "target": "tile1",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "Conversations Recorded"
+    },
+    {
+      "op": "move",
+      "at": 21.5,
+      "to": {
+        "target": "tile2",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p06: Above Target (75%)"
+    },
+    {
+      "op": "move",
+      "at": 23.2,
+      "to": {
+        "target": "tile3",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "vs. Last Month (+4.2%)"
+    },
+    {
+      "op": "move",
+      "at": 25.4,
+      "to": {
+        "point": [
+          1100,
+          300
+        ]
+      },
+      "note": "ease off for p07 ('green and up means trending the right way')"
+    },
+    {
+      "op": "move",
+      "at": 30.7,
+      "to": {
+        "target": "cardTrend",
+        "offset": [
+          -380,
+          -60
+        ]
+      },
+      "note": "step 3 cue p08 'Look at the trend' — over the Average Score Trend card"
+    },
+    {
+      "op": "move",
+      "at": 32.6,
+      "to": {
+        "target": "cardTrend",
+        "offset": [
+          -360,
+          30
+        ]
+      },
+      "note": "step 3: trace the trend line left-to-right above the dashed target (p09-p10)"
+    },
+    {
+      "op": "move",
+      "at": 35,
+      "to": {
+        "target": "cardTrend",
+        "offset": [
+          200,
+          10
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 37.2,
+      "to": {
+        "target": "cardTrend",
+        "offset": [
+          440,
+          -10
+        ]
+      },
+      "note": "p10: the solid line riding above the dash"
+    },
+    {
+      "op": "move",
+      "at": 41.3,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "ease off for p11 ('right now it's climbing')"
+    },
+    {
+      "op": "move",
+      "at": 43.3,
+      "to": {
+        "target": "cardDist",
+        "offset": [
+          0,
+          -60
+        ]
+      },
+      "note": "step 4 cue p12 'Now the distribution' — over the Score Distribution card"
+    },
+    {
+      "op": "move",
+      "at": 45.1,
+      "to": {
+        "target": "cardDist",
+        "offset": [
+          40,
+          -40
+        ]
+      },
+      "note": "step 4: slow vertical sweep down the five letter-grade bars (p13)"
+    },
+    {
+      "op": "move",
+      "at": 47.2,
+      "to": {
+        "target": "cardDist",
+        "offset": [
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 49.9,
+      "to": {
+        "target": "cardDist",
+        "offset": [
+          40,
+          40
+        ]
+      },
+      "note": "p14: half land in the B band"
+    },
+    {
+      "op": "move",
+      "at": 52.7,
+      "to": {
+        "target": "cardDist",
+        "offset": [
+          40,
+          80
+        ]
+      },
+      "note": "p15: A's and B's together are the at-or-above-target share"
+    },
+    {
+      "op": "move",
+      "at": 57.9,
+      "to": {
+        "target": "cardCheckpoints",
+        "offset": [
+          -420,
+          -120
+        ]
+      },
+      "note": "step 5 cue p16 'the panel that earns its keep'"
+    },
+    {
+      "op": "log-rect",
+      "at": 58.4,
+      "key": "checkpointRect",
+      "target": "cardCheckpoints"
+    },
+    {
+      "op": "log-rect",
+      "at": 58.7,
+      "key": "membershipRowRect",
+      "target": "membershipRow"
+    },
+    {
+      "op": "move",
+      "at": 61.5,
+      "to": {
+        "target": "cardCheckpoints",
+        "offset": [
+          -420,
+          -80
+        ]
+      },
+      "note": "step 5: sweep down the seven checkpoint rows (p17), greeting to closing"
+    },
+    {
+      "op": "move",
+      "at": 63.4,
+      "to": {
+        "target": "cardCheckpoints",
+        "offset": [
+          -420,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 65.6,
+      "to": {
+        "target": "cardCheckpoints",
+        "offset": [
+          -420,
+          90
+        ]
+      },
+      "note": "p18: 'each with a hit rate'"
+    },
+    {
+      "op": "move",
+      "at": 68.1,
+      "to": {
+        "target": "membershipRow",
+        "offset": [
+          -160,
+          0
+        ]
+      },
+      "note": "step 5: p19 rest on the red Presented membership row at 47%"
+    },
+    {
+      "op": "move",
+      "at": 71.6,
+      "to": {
+        "target": "membershipRow",
+        "offset": [
+          280,
+          0
+        ]
+      },
+      "note": "p20 'there's the gap' — toward the 47% value"
+    },
+    {
+      "op": "move",
+      "at": 73.5,
+      "to": {
+        "target": "coachingOpp",
+        "offset": [
+          -380,
+          -40
+        ]
+      },
+      "note": "step 6 cue p21 'the system already flagged it'"
+    },
+    {
+      "op": "log-rect",
+      "at": 74,
+      "key": "coachingRect",
+      "target": "coachingOpp"
+    },
+    {
+      "op": "move",
+      "at": 75.9,
+      "to": {
+        "target": "coachingOpp",
+        "offset": [
+          -360,
+          6
+        ]
+      },
+      "note": "step 6: rest on the Coaching Opportunity callout (p22-p23), the weakest number turned into a sentence"
+    },
+    {
+      "op": "move",
+      "at": 84.8,
+      "to": {
+        "target": "coachingOpp",
+        "offset": [
+          -360,
+          -70
+        ]
+      },
+      "note": "p24: link the callout up to the membership row above ('read this panel first')"
+    },
+    {
+      "op": "move",
+      "at": 88.2,
+      "to": {
+        "target": "cardTopPerf",
+        "offset": [
+          -160,
+          -120
+        ]
+      },
+      "note": "step 7 cue p25 'on the right, the leaderboard'"
+    },
+    {
+      "op": "log-rect",
+      "at": 88.7,
+      "key": "topPerfRect",
+      "target": "cardTopPerf"
+    },
+    {
+      "op": "log-rect",
+      "at": 89,
+      "key": "viewAllRect",
+      "target": "viewAllConv"
+    },
+    {
+      "op": "move",
+      "at": 90.4,
+      "to": {
+        "target": "cardTopPerf",
+        "offset": [
+          -160,
+          -70
+        ]
+      },
+      "note": "step 7: down the ranked five (p26), volume next to score"
+    },
+    {
+      "op": "move",
+      "at": 93,
+      "to": {
+        "target": "cardTopPerf",
+        "offset": [
+          -160,
+          60
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 98.7,
+      "to": {
+        "target": "viewAllConv",
+        "offset": [
+          -70,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 7: p28 rest BESIDE the View All Conversations button — located, never clicked ('leave it for now')"
+    },
+    {
+      "op": "move",
+      "at": 103.1,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -700,
+          -34
+        ],
+        "outside": true
+      },
+      "note": "step 8 cue p29 'the recent activity table' — the table header is on screen; the page only scrolls ~194px so the walk stays in-frame (RESIDUAL R1)"
+    },
+    {
+      "op": "log-rect",
+      "at": 103.6,
+      "key": "recentTheadRect",
+      "target": "theadRow",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 103.9,
+      "key": "reviewRect",
+      "target": "reviewBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 104.2,
+      "key": "thScriptRect",
+      "target": "thScript"
+    },
+    {
+      "op": "move",
+      "at": 105.6,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -700,
+          0
+        ]
+      },
+      "note": "step 8: sweep the column header left-to-right (p30) — who, when, where, how long, grade"
+    },
+    {
+      "op": "move",
+      "at": 108,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          500,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 112.4,
+      "to": {
+        "target": "thScript",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: p31 the SCRIPT column reads a dash"
+    },
+    {
+      "op": "move",
+      "at": 117.1,
+      "to": {
+        "target": "sideScoringScripts",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 tail / step 9 approach: p32 'we open the scripts page' — point beside Scoring Scripts, no click yet"
+    },
+    {
+      "op": "click",
+      "target": "sideScoringScripts",
+      "pressAt": 120.95,
+      "hoverMs": 380,
+      "postcondition": "onScripts",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: p33 'Click Scoring Scripts' (cue ends 120.87) — genuine sidebar navigation, press lands in the 0.87s break so the page is up before p34"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "scriptsStable",
+      "predicate": "scriptsReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 121.5,
+      "predicate": "scriptsReady",
+      "note": "Scoring Scripts loaded: 4 KPI tiles, the Scoring Script Library, + New Script button; abort on an error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 121.7,
+      "key": "bcScriptsRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 121.9,
+      "key": "scriptsKpiStrip",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rects",
+      "at": 122.1,
+      "key": "scriptTiles",
+      "targets": [
+        "tile0",
+        "tile1",
+        "tile2",
+        "tile3"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 122.4,
+      "to": {
+        "target": "tile0",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 9: KPI band in spoken order (p34) — Active Scripts"
+    },
+    {
+      "op": "move",
+      "at": 122.9,
+      "to": {
+        "target": "tile2",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "'one draft' — the Draft tile"
+    },
+    {
+      "op": "move",
+      "at": 124,
+      "to": {
+        "target": "tile1",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p35 'seven checkpoints on average' — Avg Checkpoints"
+    },
+    {
+      "op": "move",
+      "at": 126.5,
+      "to": {
+        "target": "tile3",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "'two hundred eighty-four scored this month' — Scored This Month (matches the dashboard pool)"
+    },
+    {
+      "op": "move",
+      "at": 130.5,
+      "to": {
+        "point": [
+          1000,
+          250
+        ]
+      },
+      "note": "ease off over the band for p36"
+    },
+    {
+      "op": "move",
+      "at": 135.4,
+      "to": {
+        "target": "scriptRowStandard",
+        "offset": [
+          -560,
+          -34
+        ]
+      },
+      "note": "step 10 cue p37 'this is the rulebook'"
+    },
+    {
+      "op": "log-rect",
+      "at": 135.7,
+      "key": "scriptRow1Rect",
+      "target": "scriptRowStandard"
+    },
+    {
+      "op": "log-rect",
+      "at": 135.9,
+      "key": "scriptRow2Rect",
+      "target": "scriptRowMembership"
+    },
+    {
+      "op": "log-rect",
+      "at": 136.1,
+      "key": "scriptRow3Rect",
+      "target": "scriptRowReturning"
+    },
+    {
+      "op": "log-rect",
+      "at": 136.3,
+      "key": "newScriptRect",
+      "target": "newScriptBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 136.5,
+      "key": "makeDefaultRect",
+      "target": "makeDefaultBtn"
+    },
+    {
+      "op": "move",
+      "at": 140.6,
+      "to": {
+        "target": "scriptRowStandard",
+        "offset": [
+          -360,
+          0
+        ]
+      },
+      "note": "step 10: p39 down the three scripts in spoken order — the default standard-wash script"
+    },
+    {
+      "op": "move",
+      "at": 142.8,
+      "to": {
+        "target": "scriptRowMembership",
+        "offset": [
+          -360,
+          0
+        ]
+      },
+      "note": "the membership-focused one with a higher target"
+    },
+    {
+      "op": "move",
+      "at": 145.2,
+      "to": {
+        "target": "scriptRowReturning",
+        "offset": [
+          -360,
+          0
+        ]
+      },
+      "note": "p40 the win-back script still in draft"
+    },
+    {
+      "op": "move",
+      "at": 147.6,
+      "to": {
+        "target": "newScriptBtn",
+        "offset": [
+          -60,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 10 guardrail: p41 point BESIDE + New Script (and Make Default) — read-only, a manager builds and edits; never clicked"
+    },
+    {
+      "op": "move",
+      "at": 151.1,
+      "to": {
+        "target": "bestPractices",
+        "offset": [
+          -380,
+          -20
+        ]
+      },
+      "note": "step 11 cue p42 'one note card sits below'"
+    },
+    {
+      "op": "log-rect",
+      "at": 151.5,
+      "key": "bestPracticeRect",
+      "target": "bestPractices"
+    },
+    {
+      "op": "move",
+      "at": 152.9,
+      "to": {
+        "target": "bestPractices",
+        "offset": [
+          -360,
+          30
+        ]
+      },
+      "note": "step 11: rest on the Industry Best Practices note (p43-p44), guidance not a control"
+    },
+    {
+      "op": "move",
+      "at": 158.4,
+      "to": {
+        "point": [
+          1000,
+          620
+        ]
+      },
+      "note": "ease off for p45 ('just a note, not a setting')"
+    },
+    {
+      "op": "move",
+      "at": 167.3,
+      "to": {
+        "target": "sideConversations",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 12 approach: p46 'Last page. Click Conversations' — point beside the link before the press"
+    },
+    {
+      "op": "click",
+      "target": "sideConversations",
+      "pressAt": 168.1,
+      "hoverMs": 360,
+      "postcondition": "onConversations",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 12: press right after the p46 cue (rendered break only ~0.48s) so the page is up as p47 names the KPIs"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "convStable",
+      "predicate": "convReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 169.4,
+      "predicate": "convReady",
+      "note": "Conversations loaded: 4 KPI tiles incl. Needs Coaching, the table header; abort on an error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 169.6,
+      "key": "bcConvRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 169.8,
+      "key": "convKpiStrip",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 170,
+      "key": "needsCoachingRect",
+      "target": "needsCoachingTile"
+    },
+    {
+      "op": "move",
+      "at": 168.6,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          -560,
+          12
+        ]
+      },
+      "note": "step 12: p47 the headline numbers echo the dashboard"
+    },
+    {
+      "op": "move",
+      "at": 170.4,
+      "to": {
+        "target": "needsCoachingTile",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 12: p48 ring the 12 Needs Coaching count — the triage number / work queue"
+    },
+    {
+      "op": "move",
+      "at": 176.2,
+      "to": {
+        "point": [
+          1100,
+          250
+        ]
+      },
+      "note": "ease off for p49 ('that's your work queue')"
+    },
+    {
+      "op": "move",
+      "at": 181.5,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -720,
+          -34
+        ],
+        "outside": true
+      },
+      "note": "step 13 cue p50 'the full log, all two hundred eighty-four records'"
+    },
+    {
+      "op": "log-rect",
+      "at": 182,
+      "key": "convTheadRect",
+      "target": "theadRow",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 182.3,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 182.5,
+      "key": "reviewRect2",
+      "target": "reviewBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 182.7,
+      "key": "flagRect",
+      "target": "flagBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 182.9,
+      "key": "searchRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.1,
+      "key": "filtersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.3,
+      "key": "checkpointsMetRect",
+      "target": "thCheckpointsMet"
+    },
+    {
+      "op": "move",
+      "at": 185.1,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -540,
+          0
+        ]
+      },
+      "note": "step 13: p51 the search box (search employee or transcript); Export located, never clicked ('we won't export today')"
+    },
+    {
+      "op": "move",
+      "at": 186.8,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -60,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 13 guardrail: point BESIDE Export CSV — never clicked"
+    },
+    {
+      "op": "move",
+      "at": 189.2,
+      "to": {
+        "target": "thCheckpointsMet",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13: p53-p54 the CHECKPOINTS MET column reads 0/8 on every row — demo data, not a real count (RESIDUAL R2)"
+    },
+    {
+      "op": "move",
+      "at": 193.8,
+      "to": {
+        "point": [
+          1050,
+          250
+        ]
+      },
+      "note": "ease off for p55 ('the real hit rates live on the dashboard')"
+    },
+    {
+      "op": "move",
+      "at": 198.4,
+      "to": {
+        "target": "reviewBtn",
+        "offset": [
+          -70,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 13 guardrail: point BESIDE a Review button (the 🚩 flag sits just right of it) — neither opened"
+    },
+    {
+      "op": "log-rects",
+      "at": 203.1,
+      "key": "sideCoaching2",
+      "targets": [
+        "sideQaDashboard",
+        "sideScoringScripts",
+        "sideConversations"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 204.8,
+      "to": {
+        "target": "sideQaDashboard",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 14: p57 tie the pages — the dashboard flagged membership as weak"
+    },
+    {
+      "op": "move",
+      "at": 207.5,
+      "to": {
+        "target": "sideScoringScripts",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p58 the scripts page holds the script built to fix it"
+    },
+    {
+      "op": "move",
+      "at": 210.4,
+      "to": {
+        "target": "sideConversations",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p59 this log is where a manager pulls the actual calls to coach from"
+    },
+    {
+      "op": "move",
+      "at": 214.6,
+      "to": {
+        "point": [
+          1000,
+          620
+        ]
+      },
+      "note": "ease off for p60 ('one weak number, three pages, a real next step')"
+    },
+    {
+      "op": "move",
+      "at": 218.6,
+      "to": {
+        "target": "sideQaDashboard",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 15 recap cue p61 'three pages, three questions'"
+    },
+    {
+      "op": "move",
+      "at": 221.5,
+      "to": {
+        "target": "sideQaDashboard",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p62 how's the team and what's weak — QA Dashboard"
+    },
+    {
+      "op": "move",
+      "at": 223.8,
+      "to": {
+        "target": "sideScoringScripts",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p63 what are we grading against — Scoring Scripts"
+    },
+    {
+      "op": "move",
+      "at": 225.4,
+      "to": {
+        "target": "sideConversations",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p64 show me the actual calls — Conversations"
+    },
+    {
+      "op": "move",
+      "at": 227.4,
+      "to": {
+        "point": [
+          1480,
+          930
+        ]
+      },
+      "note": "final park, clear of content and captions, while p65 closes"
+    },
+    {
+      "op": "assert",
+      "at": 234,
+      "predicate": "onConversations"
+    },
+    {
+      "op": "assert",
+      "at": 234.6,
+      "predicate": "sidebarExpanded"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "sideCoaching.sideScoringScripts", "place": "right", "from": 2.6, "to": 16.4 },
-      { "n": 2, "anchor": "dashKpiStrip", "place": "below-left", "from": 18.9, "to": 30.2 },
-      { "n": 3, "anchor": "dashCards.cardTrend", "place": "left-top", "from": 32.4, "to": 42.6 },
-      { "n": 4, "anchor": "dashCards.cardDist", "place": "left-top", "from": 45.0, "to": 57.4 },
-      { "n": 5, "anchor": "checkpointRect", "place": "left-top", "from": 61.4, "to": 72.9 },
-      { "n": 6, "anchor": "coachingRect", "place": "left-top", "from": 75.8, "to": 87.7 },
-      { "n": 7, "anchor": "topPerfRect", "place": "left", "from": 90.3, "to": 102.6 },
-      { "n": 8, "anchor": "recentTheadRect", "place": "left-top", "from": 105.5, "to": 118.7 },
-      { "n": 9, "anchor": "scriptsKpiStrip", "place": "below-left", "from": 122.0, "to": 134.8 },
-      { "n": 10, "anchor": "scriptRow1Rect", "place": "left", "from": 140.5, "to": 150.4 },
-      { "n": 11, "anchor": "bestPracticeRect", "place": "left-top", "from": 152.9, "to": 166.6 },
-      { "n": 12, "anchor": "convKpiStrip", "place": "below-left", "from": 168.6, "to": 180.9 },
-      { "n": 13, "anchor": "convTheadRect", "place": "left-top", "from": 185.0, "to": 202.4 },
-      { "n": 14, "anchor": "sideCoaching2.sideScoringScripts", "place": "right", "from": 204.7, "to": 217.6 },
-      { "n": 15, "anchor": "sideCoaching2.sideQaDashboard", "place": "right", "from": 221.4, "to": 233.4 }
+      {
+        "n": 1,
+        "anchor": "sideCoaching.sideScoringScripts",
+        "place": "right",
+        "from": 2.6,
+        "to": 16.4
+      },
+      {
+        "n": 2,
+        "anchor": "dashKpiStrip",
+        "place": "below-left",
+        "from": 18.9,
+        "to": 30.2
+      },
+      {
+        "n": 3,
+        "anchor": "dashCards.cardTrend",
+        "place": "left-top",
+        "from": 32.4,
+        "to": 42.6
+      },
+      {
+        "n": 4,
+        "anchor": "dashCards.cardDist",
+        "place": "left-top",
+        "from": 45,
+        "to": 57.4
+      },
+      {
+        "n": 5,
+        "anchor": "checkpointRect",
+        "place": "left-top",
+        "from": 61.4,
+        "to": 72.9
+      },
+      {
+        "n": 6,
+        "anchor": "coachingRect",
+        "place": "left-top",
+        "from": 75.8,
+        "to": 87.7
+      },
+      {
+        "n": 7,
+        "anchor": "topPerfRect",
+        "place": "left",
+        "from": 90.3,
+        "to": 102.6
+      },
+      {
+        "n": 8,
+        "anchor": "recentTheadRect",
+        "place": "left-top",
+        "from": 105.5,
+        "to": 118.7
+      },
+      {
+        "n": 9,
+        "anchor": "scriptsKpiStrip",
+        "place": "below-left",
+        "from": 122,
+        "to": 134.8
+      },
+      {
+        "n": 10,
+        "anchor": "scriptRow1Rect",
+        "place": "left",
+        "from": 140.5,
+        "to": 150.4
+      },
+      {
+        "n": 11,
+        "anchor": "bestPracticeRect",
+        "place": "left-top",
+        "from": 152.9,
+        "to": 166.6
+      },
+      {
+        "n": 12,
+        "anchor": "convKpiStrip",
+        "place": "below-left",
+        "from": 168.6,
+        "to": 180.9
+      },
+      {
+        "n": 13,
+        "anchor": "convTheadRect",
+        "place": "left-top",
+        "from": 185,
+        "to": 202.4
+      },
+      {
+        "n": 14,
+        "anchor": "sideCoaching2.sideScoringScripts",
+        "place": "right",
+        "from": 204.7,
+        "to": 217.6
+      },
+      {
+        "n": 15,
+        "anchor": "sideCoaching2.sideQaDashboard",
+        "place": "right",
+        "from": 221.4,
+        "to": 233.4
+      }
     ],
     "highlights": [
-      { "anchor": "breadcrumbRect", "from": 0.9, "to": 4.8, "note": "p01: the QA Dashboard we opened" },
-      { "anchor": "sideCoaching.sideQaDashboard", "from": 11.3, "to": 12.9, "note": "p03 spoken order: the dashboard" },
-      { "anchor": "sideCoaching.sideScoringScripts", "from": 13.0, "to": 14.4, "note": "the scripts behind it" },
-      { "anchor": "sideCoaching.sideConversations", "from": 14.5, "to": 16.4, "note": "the conversations themselves" },
-
-      { "anchor": "dashTiles.tile0", "from": 19.3, "to": 20.45, "note": "p05 spoken order: Avg Score This Month" },
-      { "anchor": "dashTiles.tile1", "from": 20.5, "to": 20.83, "note": "Conversations Recorded" },
-      { "anchor": "dashTiles.tile2", "from": 20.83, "to": 22.9, "note": "p06: Above Target (75%)" },
-      { "anchor": "dashTiles.tile3", "from": 22.9, "to": 24.8, "note": "vs. Last Month" },
-
-      { "anchor": "dashCards.cardTrend", "from": 32.5, "to": 42.4, "note": "p09-p11: 12 weeks vs the dashed target" },
-      { "anchor": "dashCards.cardDist", "from": 45.1, "to": 57.3, "note": "p13-p15: five letter-grade bars, B band the mode" },
-
-      { "anchor": "checkpointRect", "from": 61.5, "to": 67.9, "note": "p17-p18: the seven checkpoints, each with a hit rate" },
-      { "anchor": "membershipRowRect", "from": 68.0, "to": 72.4, "note": "p19: Presented membership at 47%, the gap (neutral emphasis; red is reserved for do-not-click guardrails)" },
-
-      { "anchor": "coachingRect", "from": 75.8, "to": 84.6, "note": "p22-p23: the weakest number turned into a coaching sentence" },
-
-      { "anchor": "topPerfRect", "from": 90.4, "to": 97.9, "note": "p26-p27: the ranked five, volume vs score" },
-      { "anchor": "viewAllRect", "from": 98.7, "to": 102.5, "note": "p28: View All Conversations located, left for now (neutral — not a write/send control)" },
-
-      { "anchor": "recentTheadRect", "from": 105.6, "to": 111.9, "note": "p30: the Recent Conversations column header" },
-      { "anchor": "thScriptRect", "from": 112.4, "to": 116.7, "note": "p31: the SCRIPT column reads a dash" },
-      { "anchor": "reviewRect", "from": 105.5, "to": 118.7, "color": "#dc2626", "note": "step 8 guardrail (shot-list STOP): a Review row is never opened" },
-
-      { "anchor": "scriptTiles.tile0", "from": 122.4, "to": 122.87, "note": "p34 spoken order: Active Scripts" },
-      { "anchor": "scriptTiles.tile2", "from": 122.87, "to": 123.6, "note": "one Draft" },
-      { "anchor": "scriptTiles.tile1", "from": 124.0, "to": 126.4, "note": "p35: Avg Checkpoints (seven)" },
-      { "anchor": "scriptTiles.tile3", "from": 126.5, "to": 129.6, "note": "Scored This Month — the same 284 pool" },
-
-      { "anchor": "scriptRow1Rect", "from": 140.6, "to": 142.7, "note": "p39 spoken order: the default standard-wash script" },
-      { "anchor": "scriptRow2Rect", "from": 142.8, "to": 145.1, "note": "the membership-focused one, higher target" },
-      { "anchor": "scriptRow3Rect", "from": 145.2, "to": 147.1, "note": "p40: the win-back script in draft" },
-      { "anchor": "newScriptRect", "from": 147.5, "to": 150.4, "color": "#dc2626", "note": "step 10 guardrail: + New Script located, never clicked (a manager builds/edits)" },
-      { "anchor": "makeDefaultRect", "from": 147.5, "to": 150.4, "color": "#dc2626", "note": "step 10 guardrail: Make Default located, never clicked" },
-
-      { "anchor": "bestPracticeRect", "from": 152.9, "to": 158.0, "note": "p43-p44: weighting guidance and the 75-80% pass mark — a note, not a setting" },
-
-      { "anchor": "needsCoachingRect", "from": 170.4, "to": 175.9, "note": "p48: 12 Needs Coaching — the triage / work queue count" },
-
-      { "anchor": "convTheadRect", "from": 185.1, "to": 188.9, "note": "p51-p52: the All Conversations column header, one row per scored interaction" },
-      { "anchor": "checkpointsMetRect", "from": 189.2, "to": 193.4, "note": "p53-p54: CHECKPOINTS MET reads 0/8 on every row (demo data)" },
-      { "anchor": "exportRect", "from": 185.0, "to": 197.0, "color": "#dc2626", "note": "step 13 guardrail (shot-list STOP): Export CSV never clicked; Filters never opened" },
-      { "anchor": "reviewRect2", "from": 198.4, "to": 202.4, "color": "#dc2626", "note": "step 13 guardrail: Review never opened" },
-      { "anchor": "flagRect", "from": 198.4, "to": 202.4, "color": "#dc2626", "note": "step 13 guardrail: the 🚩 flag never clicked (would notify/mark a record)" },
-
-      { "anchor": "sideCoaching2.sideQaDashboard", "from": 204.8, "to": 207.4, "note": "step 14 chain, spoken order: dashboard flagged the weak number" },
-      { "anchor": "sideCoaching2.sideScoringScripts", "from": 207.5, "to": 210.3, "note": "scripts page holds the fix" },
-      { "anchor": "sideCoaching2.sideConversations", "from": 210.4, "to": 214.4, "note": "this log is where the calls are pulled" },
-
-      { "anchor": "sideCoaching2.sideQaDashboard", "from": 221.5, "to": 223.7, "note": "step 15 recap, spoken order: QA Dashboard" },
-      { "anchor": "sideCoaching2.sideScoringScripts", "from": 223.8, "to": 225.3, "note": "Scoring Scripts" },
-      { "anchor": "sideCoaching2.sideConversations", "from": 225.4, "to": 227.2, "note": "Conversations" }
+      {
+        "anchor": "breadcrumbRect",
+        "from": 0.9,
+        "to": 4.8,
+        "note": "p01: the QA Dashboard we opened"
+      },
+      {
+        "anchor": "sideCoaching.sideQaDashboard",
+        "from": 11.3,
+        "to": 12.9,
+        "note": "p03 spoken order: the dashboard"
+      },
+      {
+        "anchor": "sideCoaching.sideScoringScripts",
+        "from": 13,
+        "to": 14.4,
+        "note": "the scripts behind it"
+      },
+      {
+        "anchor": "sideCoaching.sideConversations",
+        "from": 14.5,
+        "to": 16.4,
+        "note": "the conversations themselves"
+      },
+      {
+        "anchor": "dashTiles.tile0",
+        "from": 19.3,
+        "to": 20.45,
+        "note": "p05 spoken order: Avg Score This Month"
+      },
+      {
+        "anchor": "dashTiles.tile1",
+        "from": 20.5,
+        "to": 20.83,
+        "note": "Conversations Recorded"
+      },
+      {
+        "anchor": "dashTiles.tile2",
+        "from": 20.83,
+        "to": 22.9,
+        "note": "p06: Above Target (75%)"
+      },
+      {
+        "anchor": "dashTiles.tile3",
+        "from": 22.9,
+        "to": 24.8,
+        "note": "vs. Last Month"
+      },
+      {
+        "anchor": "dashCards.cardTrend",
+        "from": 32.5,
+        "to": 42.4,
+        "note": "p09-p11: 12 weeks vs the dashed target"
+      },
+      {
+        "anchor": "dashCards.cardDist",
+        "from": 45.1,
+        "to": 57.3,
+        "note": "p13-p15: five letter-grade bars, B band the mode"
+      },
+      {
+        "anchor": "checkpointRect",
+        "from": 61.5,
+        "to": 67.9,
+        "note": "p17-p18: the seven checkpoints, each with a hit rate"
+      },
+      {
+        "anchor": "membershipRowRect",
+        "from": 68,
+        "to": 72.4,
+        "note": "p19: Presented membership at 47%, the gap (neutral emphasis; red is reserved for do-not-click guardrails)"
+      },
+      {
+        "anchor": "coachingRect",
+        "from": 75.8,
+        "to": 84.6,
+        "note": "p22-p23: the weakest number turned into a coaching sentence"
+      },
+      {
+        "anchor": "topPerfRect",
+        "from": 90.4,
+        "to": 97.9,
+        "note": "p26-p27: the ranked five, volume vs score"
+      },
+      {
+        "anchor": "viewAllRect",
+        "from": 98.7,
+        "to": 102.5,
+        "note": "p28: View All Conversations located, left for now (neutral — not a write/send control)"
+      },
+      {
+        "anchor": "recentTheadRect",
+        "from": 105.6,
+        "to": 111.9,
+        "note": "p30: the Recent Conversations column header"
+      },
+      {
+        "anchor": "thScriptRect",
+        "from": 112.4,
+        "to": 116.7,
+        "note": "p31: the SCRIPT column reads a dash"
+      },
+      {
+        "anchor": "reviewRect",
+        "from": 105.5,
+        "to": 118.7,
+        "color": "#dc2626",
+        "note": "step 8 guardrail (shot-list STOP): a Review row is never opened"
+      },
+      {
+        "anchor": "scriptTiles.tile0",
+        "from": 122.4,
+        "to": 122.87,
+        "note": "p34 spoken order: Active Scripts"
+      },
+      {
+        "anchor": "scriptTiles.tile2",
+        "from": 122.87,
+        "to": 123.6,
+        "note": "one Draft"
+      },
+      {
+        "anchor": "scriptTiles.tile1",
+        "from": 124,
+        "to": 126.4,
+        "note": "p35: Avg Checkpoints (seven)"
+      },
+      {
+        "anchor": "scriptTiles.tile3",
+        "from": 126.5,
+        "to": 129.6,
+        "note": "Scored This Month — the same 284 pool"
+      },
+      {
+        "anchor": "scriptRow1Rect",
+        "from": 140.6,
+        "to": 142.7,
+        "note": "p39 spoken order: the default standard-wash script"
+      },
+      {
+        "anchor": "scriptRow2Rect",
+        "from": 142.8,
+        "to": 145.1,
+        "note": "the membership-focused one, higher target"
+      },
+      {
+        "anchor": "scriptRow3Rect",
+        "from": 145.2,
+        "to": 147.1,
+        "note": "p40: the win-back script in draft"
+      },
+      {
+        "anchor": "newScriptRect",
+        "from": 147.5,
+        "to": 150.4,
+        "color": "#dc2626",
+        "note": "step 10 guardrail: + New Script located, never clicked (a manager builds/edits)"
+      },
+      {
+        "anchor": "makeDefaultRect",
+        "from": 147.5,
+        "to": 150.4,
+        "color": "#dc2626",
+        "note": "step 10 guardrail: Make Default located, never clicked"
+      },
+      {
+        "anchor": "bestPracticeRect",
+        "from": 152.9,
+        "to": 158,
+        "note": "p43-p44: weighting guidance and the 75-80% pass mark — a note, not a setting"
+      },
+      {
+        "anchor": "needsCoachingRect",
+        "from": 170.4,
+        "to": 175.9,
+        "note": "p48: 12 Needs Coaching — the triage / work queue count"
+      },
+      {
+        "anchor": "convTheadRect",
+        "from": 185.1,
+        "to": 188.9,
+        "note": "p51-p52: the All Conversations column header, one row per scored interaction"
+      },
+      {
+        "anchor": "checkpointsMetRect",
+        "from": 189.2,
+        "to": 193.4,
+        "note": "p53-p54: CHECKPOINTS MET reads 0/8 on every row (demo data)"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 185,
+        "to": 197,
+        "color": "#dc2626",
+        "note": "step 13 guardrail (shot-list STOP): Export CSV never clicked; Filters never opened"
+      },
+      {
+        "anchor": "reviewRect2",
+        "from": 198.4,
+        "to": 202.4,
+        "color": "#dc2626",
+        "note": "step 13 guardrail: Review never opened"
+      },
+      {
+        "anchor": "flagRect",
+        "from": 198.4,
+        "to": 202.4,
+        "color": "#dc2626",
+        "note": "step 13 guardrail: the 🚩 flag never clicked (would notify/mark a record)"
+      },
+      {
+        "anchor": "sideCoaching2.sideQaDashboard",
+        "from": 204.8,
+        "to": 207.4,
+        "note": "step 14 chain, spoken order: dashboard flagged the weak number"
+      },
+      {
+        "anchor": "sideCoaching2.sideScoringScripts",
+        "from": 207.5,
+        "to": 210.3,
+        "note": "scripts page holds the fix"
+      },
+      {
+        "anchor": "sideCoaching2.sideConversations",
+        "from": 210.4,
+        "to": 214.4,
+        "note": "this log is where the calls are pulled"
+      },
+      {
+        "anchor": "sideCoaching2.sideQaDashboard",
+        "from": 221.5,
+        "to": 223.7,
+        "note": "step 15 recap, spoken order: QA Dashboard"
+      },
+      {
+        "anchor": "sideCoaching2.sideScoringScripts",
+        "from": 223.8,
+        "to": 225.3,
+        "note": "Scoring Scripts"
+      },
+      {
+        "anchor": "sideCoaching2.sideConversations",
+        "from": 225.4,
+        "to": 227.2,
+        "note": "Conversations"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 5.5, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 6.6, "z": 1.3, "cx": 760, "cy": 430, "ease": true, "note": "step 1: sidebar walk — the three Sales Coaching pages readable" },
-      { "t": 16.4, "z": 1.3, "cx": 760, "cy": 430 },
-      { "t": 17.6, "z": 1.2, "cx": 1109, "cy": 450, "ease": true, "note": "step 2: the four KPI tiles across the band (all four in frame)" },
-      { "t": 30.2, "z": 1.2, "cx": 1109, "cy": 450 },
-      { "t": 31.4, "z": 1.25, "cx": 820, "cy": 430, "ease": true, "note": "step 3: Average Score Trend card" },
-      { "t": 42.6, "z": 1.25, "cx": 820, "cy": 430 },
-      { "t": 43.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "step 4: wide — Score Distribution sits at the right edge, no tight crop possible" },
-      { "t": 57.5, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 58.6, "z": 1.3, "cx": 820, "cy": 500, "ease": true, "note": "step 5: Checkpoint Hit Rates — 130% close, the red membership row (shot list)" },
-      { "t": 72.9, "z": 1.3, "cx": 820, "cy": 500 },
-      { "t": 74.0, "z": 1.25, "cx": 800, "cy": 560, "ease": true, "note": "step 6: Coaching Opportunity callout, linked up to the 47% row" },
-      { "t": 87.7, "z": 1.25, "cx": 800, "cy": 560 },
-      { "t": 88.7, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "step 7: wide — Top Performers is at the right edge; View All guardrail in frame" },
-      { "t": 103.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 104.1, "z": 1.1, "cx": 900, "cy": 590, "ease": true, "note": "step 8: reframe low onto the Recent Conversations header and top rows" },
-      { "t": 118.7, "z": 1.1, "cx": 900, "cy": 590 },
-      { "t": 119.8, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change (step 9 click)" },
-      { "t": 122.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 123.0, "z": 1.15, "cx": 1000, "cy": 450, "ease": true, "note": "step 9: Scoring Scripts KPI band" },
-      { "t": 134.8, "z": 1.15, "cx": 1000, "cy": 450 },
-      { "t": 135.8, "z": 1.1, "cx": 960, "cy": 450, "ease": true, "note": "step 10: Scoring Script Library — the three cards, + New Script and Make Default guardrails in frame" },
-      { "t": 150.4, "z": 1.1, "cx": 960, "cy": 450 },
-      { "t": 151.4, "z": 1.15, "cx": 900, "cy": 560, "ease": true, "note": "step 11: the Industry Best Practices note" },
-      { "t": 166.6, "z": 1.15, "cx": 900, "cy": 560 },
-      { "t": 167.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change (step 12 click)" },
-      { "t": 169.4, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 170.4, "z": 1.2, "cx": 1109, "cy": 450, "ease": true, "note": "step 12: Conversations KPI band incl. 12 Needs Coaching (rightmost tile in frame)" },
-      { "t": 180.9, "z": 1.2, "cx": 1109, "cy": 450 },
-      { "t": 182.0, "z": 1.1, "cx": 980, "cy": 490, "ease": true, "note": "step 13: All Conversations header, controls (Export/Filters) and the columns" },
-      { "t": 202.4, "z": 1.1, "cx": 980, "cy": 490 },
-      { "t": 203.5, "z": 1.3, "cx": 760, "cy": 430, "ease": true, "note": "step 14-15: sidebar recap — the three pages readable" },
-      { "t": 233.4, "z": 1.3, "cx": 760, "cy": 430 },
-      { "t": 234.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
-      { "t": 236.434, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 5.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 6.6,
+        "z": 1.3,
+        "cx": 760,
+        "cy": 430,
+        "ease": true,
+        "note": "step 1: sidebar walk — the three Sales Coaching pages readable"
+      },
+      {
+        "t": 16.4,
+        "z": 1.3,
+        "cx": 760,
+        "cy": 430
+      },
+      {
+        "t": 17.6,
+        "z": 1.2,
+        "cx": 1109,
+        "cy": 450,
+        "ease": true,
+        "note": "step 2: the four KPI tiles across the band (all four in frame)"
+      },
+      {
+        "t": 30.2,
+        "z": 1.2,
+        "cx": 1109,
+        "cy": 450
+      },
+      {
+        "t": 31.4,
+        "z": 1.25,
+        "cx": 820,
+        "cy": 430,
+        "ease": true,
+        "note": "step 3: Average Score Trend card"
+      },
+      {
+        "t": 42.6,
+        "z": 1.25,
+        "cx": 820,
+        "cy": 430
+      },
+      {
+        "t": 43.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 4: wide — Score Distribution sits at the right edge, no tight crop possible"
+      },
+      {
+        "t": 57.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 58.6,
+        "z": 1.3,
+        "cx": 820,
+        "cy": 500,
+        "ease": true,
+        "note": "step 5: Checkpoint Hit Rates — 130% close, the red membership row (shot list)"
+      },
+      {
+        "t": 72.9,
+        "z": 1.3,
+        "cx": 820,
+        "cy": 500
+      },
+      {
+        "t": 74,
+        "z": 1.25,
+        "cx": 800,
+        "cy": 560,
+        "ease": true,
+        "note": "step 6: Coaching Opportunity callout, linked up to the 47% row"
+      },
+      {
+        "t": 87.7,
+        "z": 1.25,
+        "cx": 800,
+        "cy": 560
+      },
+      {
+        "t": 88.7,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 7: wide — Top Performers is at the right edge; View All guardrail in frame"
+      },
+      {
+        "t": 103,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 104.1,
+        "z": 1.1,
+        "cx": 900,
+        "cy": 590,
+        "ease": true,
+        "note": "step 8: reframe low onto the Recent Conversations header and top rows"
+      },
+      {
+        "t": 118.7,
+        "z": 1.1,
+        "cx": 900,
+        "cy": 590
+      },
+      {
+        "t": 119.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change (step 9 click)"
+      },
+      {
+        "t": 122,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 123,
+        "z": 1.15,
+        "cx": 1000,
+        "cy": 450,
+        "ease": true,
+        "note": "step 9: Scoring Scripts KPI band"
+      },
+      {
+        "t": 134.8,
+        "z": 1.15,
+        "cx": 1000,
+        "cy": 450
+      },
+      {
+        "t": 135.8,
+        "z": 1.1,
+        "cx": 960,
+        "cy": 450,
+        "ease": true,
+        "note": "step 10: Scoring Script Library — the three cards, + New Script and Make Default guardrails in frame"
+      },
+      {
+        "t": 150.4,
+        "z": 1.1,
+        "cx": 960,
+        "cy": 450
+      },
+      {
+        "t": 151.4,
+        "z": 1.15,
+        "cx": 900,
+        "cy": 560,
+        "ease": true,
+        "note": "step 11: the Industry Best Practices note"
+      },
+      {
+        "t": 166.6,
+        "z": 1.15,
+        "cx": 900,
+        "cy": 560
+      },
+      {
+        "t": 167.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change (step 12 click)"
+      },
+      {
+        "t": 169.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 170.4,
+        "z": 1.2,
+        "cx": 1109,
+        "cy": 450,
+        "ease": true,
+        "note": "step 12: Conversations KPI band incl. 12 Needs Coaching (rightmost tile in frame)"
+      },
+      {
+        "t": 180.9,
+        "z": 1.2,
+        "cx": 1109,
+        "cy": 450
+      },
+      {
+        "t": 182,
+        "z": 1.1,
+        "cx": 980,
+        "cy": 490,
+        "ease": true,
+        "note": "step 13: All Conversations header, controls (Export/Filters) and the columns"
+      },
+      {
+        "t": 202.4,
+        "z": 1.1,
+        "cx": 980,
+        "cy": 490
+      },
+      {
+        "t": 203.5,
+        "z": 1.3,
+        "cx": 760,
+        "cy": 430,
+        "ease": true,
+        "note": "step 14-15: sidebar recap — the three pages readable"
+      },
+      {
+        "t": 233.4,
+        "z": 1.3,
+        "cx": 760,
+        "cy": 430
+      },
+      {
+        "t": 234.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 236.434,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": false,
     "completion": {
@@ -321,24 +1931,6 @@
     "captionsBurnClearAt": 234.3
   },
   "output": "WC-07-03-sales-coaching-v1.1",
-  "orderedMentions": [
-    "Team",
-    "Sales Coaching",
-    "QA Dashboard",
-    "Scoring Scripts",
-    "Conversations",
-    "Average Score Trend",
-    "Score Distribution",
-    "Checkpoint Hit Rates",
-    "Coaching Opportunity",
-    "Top Performers",
-    "Recent Conversations",
-    "Scoring Script Library",
-    "Industry Best Practices for Sales Scoring",
-    "Needs Coaching",
-    "All Conversations",
-    "Export CSV"
-  ],
   "neverClick": [
     "export csv",
     "export",

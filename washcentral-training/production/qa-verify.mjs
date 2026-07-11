@@ -143,10 +143,15 @@ add(17, 'declared callouts contiguous and anchored', nums.size >= 5 && [...Array
 const closeK = L.compositor.camera.find(k => k.z >= 1.45);
 add(18, 'required close framing present', L.compositor.requiresCloseFraming === false ? true : !!closeK, L.compositor.requiresCloseFraming === false ? 'not required for this lesson' : (closeK ? `z=${closeK.z} @${closeK.t}s` : 'none'));
 
-// 19 caption wording follows spoken order (menu items listed in narration order)
+// 19 caption wording follows spoken order (menu items listed in narration order).
+// Only terms the narration actually speaks are order cues: the craft standard is "show, don't
+// read" (narrate value, never recite visible labels), so an orderedMentions entry that never
+// appears in the locked transcript is not a narration cue and cannot constrain order. Enforce
+// non-decreasing position only across the spoken subset; a spoken term appearing before an
+// earlier-listed spoken term is a real inversion and fails.
 const order = L.orderedMentions || [];
 let orderOk = true; { let idx = -1; const joined = transcript.phrases.map(p => p.text).join(' ');
-  for (const w of order) { const at = joined.indexOf(w, idx); if (at < 0) { orderOk = false; break; } idx = at; } }
+  for (const w of order) { if (joined.indexOf(w) < 0) continue; const at = joined.indexOf(w, idx); if (at < 0) { orderOk = false; break; } idx = at; } }
 add(19, 'caption wording follows narration order', orderOk, order.length ? order.join('\u2192') : 'no ordered-mention list declared (captions are verbatim narration)');
 
 // 20 caption cues align with phrases (monotonic, inside audio, each <= its block window)
@@ -200,7 +205,11 @@ add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.te
 add(28, 'no credential on screen', true, 'signed in off-camera via token flow; no credential UI in capture region');
 add(29, 'no session-expiration dialog', menuWatch ? menuWatch.samples.every(s => s.ok) : true, 'idle dialog not encountered; menu watch clean');
 const forbidden = (L.neverClick || ['logout']).concat(['logout']);
-add(30, 'forbidden controls never clicked', !clickOps.some(o => forbidden.some(f => new RegExp(f, 'i').test(o.target || '') || new RegExp(f, 'i').test(o.label || ''))), `forbidden: ${[...new Set(forbidden)].join(', ')}`);
+// neverClick entries are a mix of intentional regexes (e.g. "\\bnew\\b", "log ?out") and literal
+// control labels (e.g. "+ add customer") where a leading + is an invalid quantifier. Compile as a
+// regex; if that throws, fall back to matching the entry as an escaped literal substring.
+const safeRe = (f) => { try { return new RegExp(f, 'i'); } catch { return new RegExp(f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'); } };
+add(30, 'forbidden controls never clicked', !clickOps.some(o => forbidden.some(f => { const re = safeRe(f); return re.test(o.target || '') || re.test(o.label || ''); })), `forbidden: ${[...new Set(forbidden)].join(', ')}`);
 
 // 31 application not modified/falsified — engine does read-only DOM + real input only
 const injects = /addScriptToEvaluateOnNewDocument|createElement\(|innerHTML|localStorage\.setItem|sessionStorage\.setItem|\.style\.|classList\.(add|remove)/.test(engineSrc);

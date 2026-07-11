@@ -5,64 +5,180 @@
   "audioDurationS": 225.881,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/command-center.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "output": "WC-05-01-campaigns-v1.1",
   "targets": {
     "railMarketing": {
       "js": "[...document.querySelectorAll('button.wc-rail-item')].find(e=>(e.textContent||'').trim()==='Marketing'&&e.getBoundingClientRect().width>0)"
     },
-    "railExpandToggle": { "selector": ".wc-rail-expand-toggle" },
-    "locScope": { "selector": ".loc-selector-wrap" },
-    "sideCampaigns": { "selector": "aside.sidebar a[href=\"mkt-campaigns.html\"]" },
-    "crumbStrong": { "js": "document.querySelector('.breadcrumbs')", "textRect": true },
-    "kpiActive": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Campaigns/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiSent": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sent This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiOpen": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Open Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiConv": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Conversions/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiBand": { "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()" },
-    "cardSendVolume": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Send Volume/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)" },
-    "cardByType": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Campaigns by Type/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)" },
-    "cardPerformance": { "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Campaign Performance/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)" },
-    "listEyebrow": { "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^MARKETING\\s*·\\s*CAMPAIGNS$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "listTitle": { "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Campaign List'&&e.getBoundingClientRect().width>0)" },
-    "recordsBadge": { "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^5 records$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "newRecordBtn": { "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "exportBtn": { "js": "[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)" },
-    "filtersBtn": { "js": "[...document.querySelectorAll('button')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "searchBtn": { "js": "[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Search'&&e.getBoundingClientRect().width>0)" },
-    "searchBox": { "selector": "#mkt-campaigns-search" },
-    "footerBar": { "selector": ".pagination-bar" },
-    "pgInfo": { "selector": ".pg-info", "textRect": true },
-    "pgRight": { "selector": ".pg-right" },
-    "thCampaignName": { "text": "Campaign Name", "scope": "table thead th" },
-    "thType": { "text": "Type", "scope": "table thead th" },
-    "thStatus": { "text": "Status", "scope": "table thead th" },
-    "thAudience": { "text": "Audience", "scope": "table thead th" },
-    "thSent": { "text": "Sent", "scope": "table thead th" },
-    "thOpenRate": { "text": "Open Rate", "scope": "table thead th" },
-    "thConversions": { "text": "Conversions", "scope": "table thead th" },
-    "rowDraft": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Monthly Newsletter/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowHoliday": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowSummer": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowWinback": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Win-Back/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowNewMember": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/New Member Welcome/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "weatherChipHoliday": { "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()" },
-    "weatherChipSummer": { "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()" },
-    "tabPerformance": { "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Performance'&&e.getBoundingClientRect().width>0)" },
-    "tabAudience": { "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Audience'&&e.getBoundingClientRect().width>0)" },
-    "tabContent": { "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Content'&&e.getBoundingClientRect().width>0)" },
-    "tabGoals": { "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Goals'&&e.getBoundingClientRect().width>0)" },
-    "tabDetails": { "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Details'&&e.getBoundingClientRect().width>0)" },
-    "detEditBtn": { "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Edit Campaign/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "detDeleteBtn": { "js": "[...document.querySelectorAll('button.a-btn-danger')].find(e=>/Delete/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "detBackBtn": { "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Back/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "detGroupHdr": { "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/Campaign Details/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "detFieldName": { "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Campaign Name'&&e.getBoundingClientRect().width>0)" },
-    "detFieldType": { "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Type'&&e.getBoundingClientRect().width>0)" },
-    "detFieldStatus": { "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Status'&&e.getBoundingClientRect().width>0)" },
-    "detFieldAudience": { "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Audience'&&e.getBoundingClientRect().width>0)" },
-    "detFieldStarted": { "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Started'&&e.getBoundingClientRect().width>0)" },
-    "detFieldEnds": { "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Ends'&&e.getBoundingClientRect().width>0)" }
+    "railExpandToggle": {
+      "selector": ".wc-rail-expand-toggle"
+    },
+    "locScope": {
+      "selector": ".loc-selector-wrap"
+    },
+    "sideCampaigns": {
+      "selector": "aside.sidebar a[href=\"mkt-campaigns.html\"]"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumbs')",
+      "textRect": true
+    },
+    "kpiActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Campaigns/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiSent": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sent This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiOpen": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Open Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiConv": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Conversions/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiBand": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "cardSendVolume": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Send Volume/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardByType": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Campaigns by Type/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardPerformance": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Campaign Performance/i.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "listEyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^MARKETING\\s*·\\s*CAMPAIGNS$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Campaign List'&&e.getBoundingClientRect().width>0)"
+    },
+    "recordsBadge": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^5 records$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Search'&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "selector": "#mkt-campaigns-search"
+    },
+    "footerBar": {
+      "selector": ".pagination-bar"
+    },
+    "pgInfo": {
+      "selector": ".pg-info",
+      "textRect": true
+    },
+    "pgRight": {
+      "selector": ".pg-right"
+    },
+    "thCampaignName": {
+      "text": "Campaign Name",
+      "scope": "table thead th"
+    },
+    "thType": {
+      "text": "Type",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thAudience": {
+      "text": "Audience",
+      "scope": "table thead th"
+    },
+    "thSent": {
+      "text": "Sent",
+      "scope": "table thead th"
+    },
+    "thOpenRate": {
+      "text": "Open Rate",
+      "scope": "table thead th"
+    },
+    "thConversions": {
+      "text": "Conversions",
+      "scope": "table thead th"
+    },
+    "rowDraft": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Monthly Newsletter/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowHoliday": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowSummer": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowWinback": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Win-Back/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowNewMember": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/New Member Welcome/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "weatherChipHoliday": {
+      "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()"
+    },
+    "weatherChipSummer": {
+      "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()"
+    },
+    "tabPerformance": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Performance'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabAudience": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Audience'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabContent": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Content'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabGoals": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Goals'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabDetails": {
+      "js": "[...document.querySelectorAll('button.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Details'&&e.getBoundingClientRect().width>0)"
+    },
+    "detEditBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Edit Campaign/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "detDeleteBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn-danger')].find(e=>/Delete/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "detBackBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Back/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "detGroupHdr": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/Campaign Details/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "detFieldName": {
+      "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Campaign Name'&&e.getBoundingClientRect().width>0)"
+    },
+    "detFieldType": {
+      "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Type'&&e.getBoundingClientRect().width>0)"
+    },
+    "detFieldStatus": {
+      "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Status'&&e.getBoundingClientRect().width>0)"
+    },
+    "detFieldAudience": {
+      "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Audience'&&e.getBoundingClientRect().width>0)"
+    },
+    "detFieldStarted": {
+      "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Started'&&e.getBoundingClientRect().width>0)"
+    },
+    "detFieldEnds": {
+      "js": "[...document.querySelectorAll('.a-fi-lbl')].find(e=>(e.textContent||'').trim()==='Ends'&&e.getBoundingClientRect().width>0)"
+    }
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
@@ -90,259 +206,1790 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.6, "predicate": "onCommandCenter", "note": "pre-roll: start page staged on the Command Center" },
-    { "op": "assert", "at": -1.2, "predicate": "railExpanded", "note": "pre-roll: preflight left the module rail expanded" },
-    { "op": "assert", "at": -0.8, "predicate": "scopeAllLocations", "note": "pre-roll: header location scope reads All Locations (shot-list requirement)" },
-
-    { "op": "pointer-enter", "at": 0.3, "from": [960, 1079], "to": { "target": "railMarketing", "offset": [40, 26] }, "note": "enter from the bottom edge toward the Marketing rail item as p01 says 'Open Marketing, then Campaigns'" },
-    { "op": "log-rect", "at": 0.6, "key": "railMarketingRect", "target": "railMarketing" },
-    { "op": "move", "at": 1.7, "to": { "target": "railMarketing", "offset": [0, 0] }, "note": "deliberate approach to the Marketing rail item during p01" },
-    { "op": "click", "target": "railMarketing", "pressAt": 2.55, "hoverMs": 420, "postcondition": "onCampaigns", "timeoutMs": 8000, "nav": true, "note": "step 1: genuine rail navigation; Campaigns is the default Marketing page, so this lands on it. Press inside the p01->p02 silence gap (2.11-3.04)" },
-    { "op": "wait-stable", "afterNav": true, "key": "cmpStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 3.2, "predicate": "campaignsLoaded", "note": "load check: 5 real rows + KPI tiles + 'of 5' counter, no agent-service error" },
-    { "op": "assert", "at": 3.35, "predicate": "sidebarCampaignsActive", "note": "Campaigns highlighted in the Marketing sidebar" },
-    { "op": "log-rect", "at": 3.45, "key": "sideCampaignsRect", "target": "sideCampaigns" },
-    { "op": "log-rect", "at": 3.55, "key": "crumbRect", "target": "crumbStrong" },
-    { "op": "move", "at": 3.7, "to": { "target": "sideCampaigns", "offset": [70, 0] }, "note": "point at the highlighted Campaigns item as p02 explains" },
-    { "op": "move", "at": 7.4, "to": { "target": "sideCampaigns", "offset": [70, 0] }, "note": "p03 'the rest of Marketing sits in the sidebar beside it'" },
-    { "op": "move", "at": 11.0, "to": { "point": [720, 360] }, "note": "p04 'look-only' — ease off the rail toward the page" },
-    { "op": "move", "at": 13.4, "to": { "point": [940, 300] } },
-
-    { "op": "log-rects", "at": 15.8, "key": "kpiTiles", "targets": ["kpiActive", "kpiSent", "kpiOpen", "kpiConv"] },
-    { "op": "log-rect", "at": 15.95, "key": "kpiBandRect", "target": "kpiBand" },
-    { "op": "move", "at": 16.05, "to": { "target": "kpiActive", "offset": [0, 0] }, "note": "step 2 cue p05 'Start at the top row'" },
-    { "op": "move", "at": 18.2, "to": { "target": "kpiActive", "offset": [0, 0] }, "note": "p06 active campaigns" },
-    { "op": "move", "at": 19.4, "to": { "target": "kpiSent", "offset": [0, 0] }, "note": "p06 messages sent this month" },
-    { "op": "move", "at": 20.3, "to": { "target": "kpiOpen", "offset": [0, 0] }, "note": "p07 average open rate" },
-    { "op": "move", "at": 20.95, "to": { "target": "kpiConv", "offset": [0, 0] }, "note": "p07 'revenue attributed' — live 4th tile reads Conversions (see residuals)" },
-    { "op": "move", "at": 23.8, "to": { "point": [960, 300] }, "note": "p08-p09 ease below the band" },
-    { "op": "move", "at": 28.5, "to": { "point": [720, 320] } },
-
-    { "op": "log-rect", "at": 34.6, "key": "cardSVRect", "target": "cardSendVolume" },
-    { "op": "log-rect", "at": 34.68, "key": "cardTypeRect", "target": "cardByType" },
-    { "op": "log-rect", "at": 34.74, "key": "cardPerfRect", "target": "cardPerformance" },
-    { "op": "move", "at": 34.85, "to": { "target": "cardSendVolume", "offset": [0, -40] }, "note": "step 3 cue p10 'three panels' — gesture across the trio" },
-    { "op": "move", "at": 35.6, "to": { "target": "cardByType", "offset": [0, -40] } },
-    { "op": "move", "at": 36.1, "to": { "target": "cardPerformance", "offset": [0, -40] } },
-    { "op": "move", "at": 36.8, "to": { "target": "cardSendVolume", "offset": [0, 0] }, "note": "p11 'First, Send Volume'" },
-    { "op": "move", "at": 38.65, "to": { "target": "cardSendVolume", "offset": [130, 12] }, "note": "p12 sweep along the trend line" },
-    { "op": "move", "at": 40.6, "to": { "target": "cardSendVolume", "offset": [-130, 12] } },
-    { "op": "move", "at": 43.2, "to": { "point": [720, 360] } },
-
-    { "op": "move", "at": 47.2, "to": { "target": "cardByType", "offset": [0, -40] }, "note": "step 4 cue p14 'Next, Campaigns by Type'" },
-    { "op": "move", "at": 49.65, "to": { "target": "cardByType", "offset": [0, 20] }, "note": "p15 channel mix" },
-    { "op": "move", "at": 51.5, "to": { "target": "cardByType", "offset": [-130, 20] }, "note": "p16 sweep the bars / percentages" },
-    { "op": "move", "at": 53.2, "to": { "target": "cardByType", "offset": [130, 20] } },
-    { "op": "move", "at": 59.7, "to": { "point": [900, 360] }, "note": "p18 ease" },
-
-    { "op": "move", "at": 62.83, "to": { "target": "cardPerformance", "offset": [0, -40] }, "note": "step 5 cue p19 'Campaign Performance'" },
-    { "op": "move", "at": 65.75, "to": { "target": "cardPerformance", "offset": [0, 20] }, "note": "p20 counts by state" },
-    { "op": "move", "at": 67.75, "to": { "target": "cardPerformance", "offset": [0, 40] }, "note": "p21 quick pulse" },
-    { "op": "move", "at": 71.2, "to": { "point": [900, 400] } },
-
-    { "op": "log-rects", "at": 74.2, "key": "listHdr", "targets": ["listEyebrow", "listTitle", "recordsBadge"] },
-    { "op": "log-rect", "at": 74.35, "key": "newRecordRect", "target": "newRecordBtn" },
-    { "op": "log-rect", "at": 74.45, "key": "exportRect", "target": "exportBtn" },
-    { "op": "log-rect", "at": 74.55, "key": "filtersRect", "target": "filtersBtn" },
-    { "op": "log-rect", "at": 74.62, "key": "searchBoxRect", "target": "searchBox" },
-    { "op": "move", "at": 74.75, "to": { "target": "listTitle", "offset": [40, 0] }, "note": "step 6 cue p22 'Now scroll to the Campaign List' (page is single-viewport; no real scroll)" },
-    { "op": "move", "at": 76.4, "to": { "target": "recordsBadge", "offset": [40, 0] }, "note": "p23 'One row per campaign'" },
-    { "op": "move", "at": 78.4, "to": { "target": "newRecordBtn", "offset": [-95, 42], "outside": true }, "note": "p24 rest BESIDE + New Record (create surface -> mkt-campaigns-edit.html) — pointed at, never approached for a press" },
-    { "op": "move", "at": 79.7, "to": { "target": "exportBtn", "offset": [0, 46], "outside": true }, "note": "p24 Export — beside it, do-not-click guardrail" },
-    { "op": "move", "at": 81.3, "to": { "target": "filtersBtn", "offset": [0, 0] }, "note": "p25 Filters" },
-    { "op": "move", "at": 82.7, "to": { "target": "searchBox", "offset": [-540, 0] }, "note": "p25 search box (never typed into)" },
-    { "op": "move", "at": 85.2, "to": { "point": [900, 430] } },
-
-    { "op": "log-rects", "at": 87.0, "key": "ths", "targets": ["thCampaignName", "thType", "thStatus", "thAudience", "thSent", "thOpenRate", "thConversions"] },
-    { "op": "move", "at": 87.1, "to": { "target": "thCampaignName", "offset": [0, -28], "outside": true }, "note": "step 7 cue p26 'Read across the headers'" },
-    { "op": "move", "at": 88.65, "to": { "target": "thCampaignName", "offset": [0, 0] }, "note": "p27 spoken order: Name" },
-    { "op": "move", "at": 89.6, "to": { "target": "thType", "offset": [0, 0] }, "note": "type" },
-    { "op": "move", "at": 90.3, "to": { "target": "thStatus", "offset": [0, 0] }, "note": "status" },
-    { "op": "move", "at": 91.1, "to": { "target": "thAudience", "offset": [0, 0] }, "note": "audience" },
-    { "op": "move", "at": 91.8, "to": { "target": "thSent", "offset": [0, 0] }, "note": "sent" },
-    { "op": "move", "at": 92.3, "to": { "target": "thOpenRate", "offset": [0, 0] }, "note": "open rate" },
-    { "op": "move", "at": 92.75, "to": { "target": "thConversions", "offset": [0, 0] }, "note": "p28 'revenue' — live 7th column reads Conversions (see residuals)" },
-    { "op": "move", "at": 95.2, "to": { "target": "thSent", "offset": [0, 44], "outside": true }, "note": "p29 rest under the result columns" },
-    { "op": "move", "at": 100.5, "to": { "point": [1100, 540] } },
-
-    { "op": "log-rect", "at": 103.3, "key": "thStatusRect", "target": "thStatus" },
-    { "op": "log-rects", "at": 103.4, "key": "rows8", "targets": ["rowDraft", "rowHoliday", "rowSummer", "rowWinback"] },
-    { "op": "move", "at": 103.5, "to": { "target": "thStatus", "offset": [0, 12] }, "note": "step 8 cue p30 'Down the status column'" },
-    { "op": "move", "at": 105.97, "to": { "target": "rowDraft", "offset": [-267, 0] }, "note": "p31 Draft (Monthly Newsletter status cell)" },
-    { "op": "move", "at": 107.91, "to": { "target": "rowHoliday", "offset": [-267, 0] }, "note": "p32 Scheduled (Holiday Referral Blast)" },
-    { "op": "move", "at": 110.19, "to": { "target": "rowSummer", "offset": [-267, 0] }, "note": "p33 Active (Summer Unlimited Push)" },
-    { "op": "move", "at": 111.99, "to": { "target": "rowWinback", "offset": [-267, 0] }, "note": "p34 Completed (Win-Back October)" },
-    { "op": "move", "at": 114.6, "to": { "point": [1050, 600] }, "note": "p35 ease" },
-
-    { "op": "log-rect", "at": 118.58, "key": "chipHolidayRect", "target": "weatherChipHoliday" },
-    { "op": "log-rect", "at": 118.66, "key": "chipSummerRect", "target": "weatherChipSummer" },
-    { "op": "move", "at": 118.7, "to": { "target": "weatherChipHoliday", "offset": [110, 0] }, "note": "step 9 cue p36 'the two campaigns with an extra chip'" },
-    { "op": "move", "at": 121.75, "to": { "target": "weatherChipSummer", "offset": [0, 0] }, "note": "p37 'weather paused, six locations' (camera punches in here)" },
-    { "op": "move", "at": 126.2, "to": { "target": "weatherChipSummer", "offset": [12, 0] } },
-    { "op": "move", "at": 131.9, "to": { "point": [1000, 630] }, "note": "p38-p40 ease" },
-    { "op": "move", "at": 137.5, "to": { "point": [1000, 650] } },
-
-    { "op": "move", "at": 140.8, "to": { "target": "rowDraft", "offset": [-120, 0] }, "note": "step 10 cue p42 'Click New Record to open a blank campaign form' — SAFE substitution: approach the Draft row whose click provably navigates to a READ-ONLY detail viewer (verified: pure window.location nav, no mutation)" },
-    { "op": "log-rect", "at": 141.0, "key": "rowDraftRect", "target": "rowDraft" },
-    { "op": "click", "target": "rowDraft", "pressAt": 143.6, "hoverMs": 420, "postcondition": "onDetail", "timeoutMs": 8000, "nav": true, "note": "step 10: genuine row navigation to mkt-campaigns-detail.html (read-only). Press inside the p42->p43 gap (143.50-144.90). Does NOT click + New Record (create surface) — see residuals" },
-    { "op": "wait-stable", "afterNav": true, "key": "detStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 145.0, "predicate": "detailLoaded", "note": "read-only detail viewer up with its 5-tab row, no agent-service error" },
-    { "op": "log-rects", "at": 145.2, "key": "detTabs", "targets": ["tabPerformance", "tabAudience", "tabContent", "tabGoals", "tabDetails"] },
-    { "op": "log-rect", "at": 145.4, "key": "detEditRect", "target": "detEditBtn" },
-    { "op": "log-rect", "at": 145.5, "key": "detDeleteRect", "target": "detDeleteBtn" },
-    { "op": "move", "at": 145.65, "to": { "target": "tabPerformance", "offset": [0, 0] }, "note": "p43 sweep the tab row" },
-    { "op": "move", "at": 146.4, "to": { "target": "tabContent", "offset": [0, 0] } },
-    { "op": "move", "at": 147.1, "to": { "target": "tabGoals", "offset": [0, 0] } },
-    { "op": "move", "at": 147.9, "to": { "target": "tabDetails", "offset": [0, 0] }, "note": "p44 tail — the live tabs are Performance/Audience/Content/Goals/Details (see residuals)" },
-    { "op": "move", "at": 151.3, "to": { "target": "detEditBtn", "offset": [-80, 46], "outside": true }, "note": "p45 approach beside the mutate controls" },
-    { "op": "move", "at": 154.5, "to": { "target": "detDeleteBtn", "offset": [0, 46], "outside": true }, "note": "p46 'Do not save' — guardrail beside Edit/Delete (no Save exists on the read-only view)" },
-    { "op": "move", "at": 156.4, "to": { "target": "tabDetails", "offset": [0, 12] }, "note": "settle toward the Details tab for step 11" },
-
-    { "op": "click", "target": "tabDetails", "pressAt": 159.6, "hoverMs": 380, "postcondition": "detailsTabActive", "timeoutMs": 4000, "note": "step 11: inert client-side tab toggle (verified) — reveals the read-only Campaign Details fields. Press inside p47" },
-    { "op": "log-rect", "at": 159.85, "key": "detGroupRect", "target": "detGroupHdr" },
-    { "op": "log-rects", "at": 159.95, "key": "detFields", "targets": ["detFieldName", "detFieldType", "detFieldStatus", "detFieldAudience", "detFieldStarted", "detFieldEnds"] },
-    { "op": "move", "at": 161.7, "to": { "target": "detFieldName", "offset": [90, 12] }, "note": "p48 sweep: a name" },
-    { "op": "move", "at": 163.0, "to": { "target": "detFieldType", "offset": [90, 12] }, "note": "the type" },
-    { "op": "move", "at": 164.0, "to": { "target": "detFieldStatus", "offset": [90, 12] }, "note": "a status" },
-    { "op": "move", "at": 164.7, "to": { "target": "detFieldType", "offset": [90, 12] }, "note": "p49 'mode' — nearest on the read-only view is the Type field (mode cards are create-form only; see residuals)" },
-    { "op": "move", "at": 168.2, "to": { "target": "detFieldAudience", "offset": [90, 12] }, "note": "p50 the audience" },
-    { "op": "move", "at": 172.2, "to": { "point": [960, 640] }, "note": "ease for the p50 tail" },
-
-    { "op": "log-rect", "at": 179.3, "key": "detBackRect", "target": "detBackBtn" },
-    { "op": "move", "at": 179.45, "to": { "target": "detBackBtn", "offset": [0, 46], "outside": true }, "note": "step 12 cue p51 'click Cancel' — approach the read-only viewer's Back control (its genuine exit)" },
-    { "op": "click", "target": "detBackBtn", "pressAt": 181.5, "hoverMs": 400, "postcondition": "onCampaigns", "timeoutMs": 8000, "nav": true, "note": "step 12: 'Cancel' is realized as the read-only viewer's <- Back (verified pure nav back to the unchanged list). Press inside the p51 tail; nothing was saved because nothing was ever editable" },
-    { "op": "wait-stable", "afterNav": true, "key": "listStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 183.4, "predicate": "listReturned", "note": "back on the Campaign List, still 5 records" },
-    { "op": "assert", "at": 183.5, "predicate": "sidebarCampaignsActive" },
-    { "op": "log-rect", "at": 183.6, "key": "recordsBadge2", "target": "recordsBadge" },
-    { "op": "log-rect", "at": 183.7, "key": "listTitle2", "target": "listTitle" },
-    { "op": "log-rect", "at": 183.8, "key": "searchBox2", "target": "searchBox" },
-    { "op": "log-rect", "at": 183.9, "key": "export2", "target": "exportBtn" },
-    { "op": "log-rect", "at": 184.0, "key": "footerRect", "target": "footerBar" },
-    { "op": "log-rect", "at": 184.1, "key": "pgInfoRect", "target": "pgInfo" },
-    { "op": "move", "at": 184.4, "to": { "target": "recordsBadge", "offset": [40, 0] }, "note": "p52 'nothing saved, the list is right where we left it'" },
-    { "op": "move", "at": 188.7, "to": { "point": [900, 420] }, "note": "p53 Weather Gate parked — ease" },
-    { "op": "move", "at": 192.2, "to": { "point": [800, 320] } },
-
-    { "op": "move", "at": 194.5, "to": { "target": "searchBox", "offset": [-540, 0] }, "note": "step 13 cue p54/p55 — the search box (never typed into)" },
-    { "op": "move", "at": 195.85, "to": { "target": "filtersBtn", "offset": [0, 0] }, "note": "p55 Filters" },
-    { "op": "move", "at": 198.35, "to": { "target": "pgInfo", "offset": [80, 0] }, "note": "p56 the footer record count" },
-    { "op": "move", "at": 200.6, "to": { "target": "pgRight", "offset": [0, 0] }, "note": "p56 pager controls (never clicked)" },
-    { "op": "move", "at": 202.3, "to": { "target": "exportBtn", "offset": [0, 46], "outside": true }, "note": "p57 Export — second do-not-click guardrail, pointed at from beside" },
-    { "op": "move", "at": 206.6, "to": { "point": [1200, 520] } },
-
-    { "op": "move", "at": 209.25, "to": { "point": [900, 150] }, "note": "step 14 cue p58 recap — toward the KPI band" },
-    { "op": "move", "at": 211.1, "to": { "target": "kpiActive", "offset": [0, 0] }, "note": "p59 four tiles" },
-    { "op": "move", "at": 211.9, "to": { "target": "kpiConv", "offset": [0, 0] } },
-    { "op": "move", "at": 212.95, "to": { "target": "cardSendVolume", "offset": [0, -30] }, "note": "p60 three panels" },
-    { "op": "move", "at": 214.1, "to": { "target": "cardByType", "offset": [0, -30] } },
-    { "op": "move", "at": 214.9, "to": { "target": "cardPerformance", "offset": [0, -30] } },
-    { "op": "move", "at": 216.2, "to": { "target": "listTitle", "offset": [40, 0] }, "note": "p60 one list" },
-    { "op": "move", "at": 218.55, "to": { "target": "thStatus", "offset": [0, 12] }, "note": "p61 read a status" },
-    { "op": "move", "at": 220.1, "to": { "target": "weatherChipSummer", "offset": [0, 0] }, "note": "p61 catch a weather pause" },
-    { "op": "move", "at": 221.4, "to": { "target": "rowDraft", "offset": [-120, 0] }, "note": "p61 open the form to learn its shape (the row we opened)" },
-    { "op": "move", "at": 222.95, "to": { "point": [1520, 900] }, "note": "p62 final park, clear of content and burned captions" },
-    { "op": "assert", "at": 225.2, "predicate": "onCampaigns", "note": "read-only tour ends on the unchanged Campaign List" }
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onCommandCenter",
+      "note": "pre-roll: start page staged on the Command Center"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "railExpanded",
+      "note": "pre-roll: preflight left the module rail expanded"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "scopeAllLocations",
+      "note": "pre-roll: header location scope reads All Locations (shot-list requirement)"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.3,
+      "from": [
+        960,
+        1079
+      ],
+      "to": {
+        "target": "railMarketing",
+        "offset": [
+          40,
+          26
+        ]
+      },
+      "note": "enter from the bottom edge toward the Marketing rail item as p01 says 'Open Marketing, then Campaigns'"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.6,
+      "key": "railMarketingRect",
+      "target": "railMarketing"
+    },
+    {
+      "op": "move",
+      "at": 1.7,
+      "to": {
+        "target": "railMarketing",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "deliberate approach to the Marketing rail item during p01"
+    },
+    {
+      "op": "click",
+      "target": "railMarketing",
+      "pressAt": 2.55,
+      "hoverMs": 420,
+      "postcondition": "onCampaigns",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: genuine rail navigation; Campaigns is the default Marketing page, so this lands on it. Press inside the p01->p02 silence gap (2.11-3.04)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "cmpStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 3.2,
+      "predicate": "campaignsLoaded",
+      "note": "load check: 5 real rows + KPI tiles + 'of 5' counter, no agent-service error"
+    },
+    {
+      "op": "assert",
+      "at": 3.35,
+      "predicate": "sidebarCampaignsActive",
+      "note": "Campaigns highlighted in the Marketing sidebar"
+    },
+    {
+      "op": "log-rect",
+      "at": 3.45,
+      "key": "sideCampaignsRect",
+      "target": "sideCampaigns"
+    },
+    {
+      "op": "log-rect",
+      "at": 3.55,
+      "key": "crumbRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "move",
+      "at": 3.7,
+      "to": {
+        "target": "sideCampaigns",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "point at the highlighted Campaigns item as p02 explains"
+    },
+    {
+      "op": "move",
+      "at": 7.4,
+      "to": {
+        "target": "sideCampaigns",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "p03 'the rest of Marketing sits in the sidebar beside it'"
+    },
+    {
+      "op": "move",
+      "at": 11,
+      "to": {
+        "point": [
+          720,
+          360
+        ]
+      },
+      "note": "p04 'look-only' — ease off the rail toward the page"
+    },
+    {
+      "op": "move",
+      "at": 13.4,
+      "to": {
+        "point": [
+          940,
+          300
+        ]
+      }
+    },
+    {
+      "op": "log-rects",
+      "at": 15.8,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiActive",
+        "kpiSent",
+        "kpiOpen",
+        "kpiConv"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 15.95,
+      "key": "kpiBandRect",
+      "target": "kpiBand"
+    },
+    {
+      "op": "move",
+      "at": 16.05,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 cue p05 'Start at the top row'"
+    },
+    {
+      "op": "move",
+      "at": 18.2,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p06 active campaigns"
+    },
+    {
+      "op": "move",
+      "at": 19.4,
+      "to": {
+        "target": "kpiSent",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p06 messages sent this month"
+    },
+    {
+      "op": "move",
+      "at": 20.3,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p07 average open rate"
+    },
+    {
+      "op": "move",
+      "at": 20.95,
+      "to": {
+        "target": "kpiConv",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p07 'revenue attributed' — live 4th tile reads Conversions (see residuals)"
+    },
+    {
+      "op": "move",
+      "at": 23.8,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "p08-p09 ease below the band"
+    },
+    {
+      "op": "move",
+      "at": 28.5,
+      "to": {
+        "point": [
+          720,
+          320
+        ]
+      }
+    },
+    {
+      "op": "log-rect",
+      "at": 34.6,
+      "key": "cardSVRect",
+      "target": "cardSendVolume"
+    },
+    {
+      "op": "log-rect",
+      "at": 34.68,
+      "key": "cardTypeRect",
+      "target": "cardByType"
+    },
+    {
+      "op": "log-rect",
+      "at": 34.74,
+      "key": "cardPerfRect",
+      "target": "cardPerformance"
+    },
+    {
+      "op": "move",
+      "at": 34.85,
+      "to": {
+        "target": "cardSendVolume",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "step 3 cue p10 'three panels' — gesture across the trio"
+    },
+    {
+      "op": "move",
+      "at": 35.6,
+      "to": {
+        "target": "cardByType",
+        "offset": [
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 36.1,
+      "to": {
+        "target": "cardPerformance",
+        "offset": [
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 36.8,
+      "to": {
+        "target": "cardSendVolume",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p11 'First, Send Volume'"
+    },
+    {
+      "op": "move",
+      "at": 38.65,
+      "to": {
+        "target": "cardSendVolume",
+        "offset": [
+          130,
+          12
+        ]
+      },
+      "note": "p12 sweep along the trend line"
+    },
+    {
+      "op": "move",
+      "at": 40.6,
+      "to": {
+        "target": "cardSendVolume",
+        "offset": [
+          -130,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 43.2,
+      "to": {
+        "point": [
+          720,
+          360
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 47.2,
+      "to": {
+        "target": "cardByType",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "step 4 cue p14 'Next, Campaigns by Type'"
+    },
+    {
+      "op": "move",
+      "at": 49.65,
+      "to": {
+        "target": "cardByType",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "p15 channel mix"
+    },
+    {
+      "op": "move",
+      "at": 51.5,
+      "to": {
+        "target": "cardByType",
+        "offset": [
+          -130,
+          20
+        ]
+      },
+      "note": "p16 sweep the bars / percentages"
+    },
+    {
+      "op": "move",
+      "at": 53.2,
+      "to": {
+        "target": "cardByType",
+        "offset": [
+          130,
+          20
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 59.7,
+      "to": {
+        "point": [
+          900,
+          360
+        ]
+      },
+      "note": "p18 ease"
+    },
+    {
+      "op": "move",
+      "at": 62.83,
+      "to": {
+        "target": "cardPerformance",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "step 5 cue p19 'Campaign Performance'"
+    },
+    {
+      "op": "move",
+      "at": 65.75,
+      "to": {
+        "target": "cardPerformance",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "p20 counts by state"
+    },
+    {
+      "op": "move",
+      "at": 67.75,
+      "to": {
+        "target": "cardPerformance",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "p21 quick pulse"
+    },
+    {
+      "op": "move",
+      "at": 71.2,
+      "to": {
+        "point": [
+          900,
+          400
+        ]
+      }
+    },
+    {
+      "op": "log-rects",
+      "at": 74.2,
+      "key": "listHdr",
+      "targets": [
+        "listEyebrow",
+        "listTitle",
+        "recordsBadge"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 74.35,
+      "key": "newRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.45,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.55,
+      "key": "filtersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.62,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "move",
+      "at": 74.75,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 6 cue p22 'Now scroll to the Campaign List' (page is single-viewport; no real scroll)"
+    },
+    {
+      "op": "move",
+      "at": 76.4,
+      "to": {
+        "target": "recordsBadge",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p23 'One row per campaign'"
+    },
+    {
+      "op": "move",
+      "at": 78.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          42
+        ],
+        "outside": true
+      },
+      "note": "p24 rest BESIDE + New Record (create surface -> mkt-campaigns-edit.html) — pointed at, never approached for a press"
+    },
+    {
+      "op": "move",
+      "at": 79.7,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          0,
+          46
+        ],
+        "outside": true
+      },
+      "note": "p24 Export — beside it, do-not-click guardrail"
+    },
+    {
+      "op": "move",
+      "at": 81.3,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p25 Filters"
+    },
+    {
+      "op": "move",
+      "at": 82.7,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -540,
+          0
+        ]
+      },
+      "note": "p25 search box (never typed into)"
+    },
+    {
+      "op": "move",
+      "at": 85.2,
+      "to": {
+        "point": [
+          900,
+          430
+        ]
+      }
+    },
+    {
+      "op": "log-rects",
+      "at": 87,
+      "key": "ths",
+      "targets": [
+        "thCampaignName",
+        "thType",
+        "thStatus",
+        "thAudience",
+        "thSent",
+        "thOpenRate",
+        "thConversions"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 87.1,
+      "to": {
+        "target": "thCampaignName",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 7 cue p26 'Read across the headers'"
+    },
+    {
+      "op": "move",
+      "at": 88.65,
+      "to": {
+        "target": "thCampaignName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p27 spoken order: Name"
+    },
+    {
+      "op": "move",
+      "at": 89.6,
+      "to": {
+        "target": "thType",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "type"
+    },
+    {
+      "op": "move",
+      "at": 90.3,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "status"
+    },
+    {
+      "op": "move",
+      "at": 91.1,
+      "to": {
+        "target": "thAudience",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "audience"
+    },
+    {
+      "op": "move",
+      "at": 91.8,
+      "to": {
+        "target": "thSent",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "sent"
+    },
+    {
+      "op": "move",
+      "at": 92.3,
+      "to": {
+        "target": "thOpenRate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "open rate"
+    },
+    {
+      "op": "move",
+      "at": 92.75,
+      "to": {
+        "target": "thConversions",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p28 'revenue' — live 7th column reads Conversions (see residuals)"
+    },
+    {
+      "op": "move",
+      "at": 95.2,
+      "to": {
+        "target": "thSent",
+        "offset": [
+          0,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p29 rest under the result columns"
+    },
+    {
+      "op": "move",
+      "at": 100.5,
+      "to": {
+        "point": [
+          1100,
+          540
+        ]
+      }
+    },
+    {
+      "op": "log-rect",
+      "at": 103.3,
+      "key": "thStatusRect",
+      "target": "thStatus"
+    },
+    {
+      "op": "log-rects",
+      "at": 103.4,
+      "key": "rows8",
+      "targets": [
+        "rowDraft",
+        "rowHoliday",
+        "rowSummer",
+        "rowWinback"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 103.5,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 8 cue p30 'Down the status column'"
+    },
+    {
+      "op": "move",
+      "at": 105.97,
+      "to": {
+        "target": "rowDraft",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p31 Draft (Monthly Newsletter status cell)"
+    },
+    {
+      "op": "move",
+      "at": 107.91,
+      "to": {
+        "target": "rowHoliday",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p32 Scheduled (Holiday Referral Blast)"
+    },
+    {
+      "op": "move",
+      "at": 110.19,
+      "to": {
+        "target": "rowSummer",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p33 Active (Summer Unlimited Push)"
+    },
+    {
+      "op": "move",
+      "at": 111.99,
+      "to": {
+        "target": "rowWinback",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p34 Completed (Win-Back October)"
+    },
+    {
+      "op": "move",
+      "at": 114.6,
+      "to": {
+        "point": [
+          1050,
+          600
+        ]
+      },
+      "note": "p35 ease"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.58,
+      "key": "chipHolidayRect",
+      "target": "weatherChipHoliday"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.66,
+      "key": "chipSummerRect",
+      "target": "weatherChipSummer"
+    },
+    {
+      "op": "move",
+      "at": 118.7,
+      "to": {
+        "target": "weatherChipHoliday",
+        "offset": [
+          110,
+          0
+        ]
+      },
+      "note": "step 9 cue p36 'the two campaigns with an extra chip'"
+    },
+    {
+      "op": "move",
+      "at": 121.75,
+      "to": {
+        "target": "weatherChipSummer",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p37 'weather paused, six locations' (camera punches in here)"
+    },
+    {
+      "op": "move",
+      "at": 126.2,
+      "to": {
+        "target": "weatherChipSummer",
+        "offset": [
+          12,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 131.9,
+      "to": {
+        "point": [
+          1000,
+          630
+        ]
+      },
+      "note": "p38-p40 ease"
+    },
+    {
+      "op": "move",
+      "at": 137.5,
+      "to": {
+        "point": [
+          1000,
+          650
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 140.8,
+      "to": {
+        "target": "rowDraft",
+        "offset": [
+          -120,
+          0
+        ]
+      },
+      "note": "step 10 cue p42 'Click New Record to open a blank campaign form' — SAFE substitution: approach the Draft row whose click provably navigates to a READ-ONLY detail viewer (verified: pure window.location nav, no mutation)"
+    },
+    {
+      "op": "log-rect",
+      "at": 141,
+      "key": "rowDraftRect",
+      "target": "rowDraft"
+    },
+    {
+      "op": "click",
+      "target": "rowDraft",
+      "pressAt": 143.6,
+      "hoverMs": 420,
+      "postcondition": "onDetail",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: genuine row navigation to mkt-campaigns-detail.html (read-only). Press inside the p42->p43 gap (143.50-144.90). Does NOT click + New Record (create surface) — see residuals"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "detStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 145,
+      "predicate": "detailLoaded",
+      "note": "read-only detail viewer up with its 5-tab row, no agent-service error"
+    },
+    {
+      "op": "log-rects",
+      "at": 145.2,
+      "key": "detTabs",
+      "targets": [
+        "tabPerformance",
+        "tabAudience",
+        "tabContent",
+        "tabGoals",
+        "tabDetails"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 145.4,
+      "key": "detEditRect",
+      "target": "detEditBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 145.5,
+      "key": "detDeleteRect",
+      "target": "detDeleteBtn"
+    },
+    {
+      "op": "move",
+      "at": 145.65,
+      "to": {
+        "target": "tabPerformance",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p43 sweep the tab row"
+    },
+    {
+      "op": "move",
+      "at": 146.4,
+      "to": {
+        "target": "tabContent",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 147.1,
+      "to": {
+        "target": "tabGoals",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 147.9,
+      "to": {
+        "target": "tabDetails",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p44 tail — the live tabs are Performance/Audience/Content/Goals/Details (see residuals)"
+    },
+    {
+      "op": "move",
+      "at": 151.3,
+      "to": {
+        "target": "detEditBtn",
+        "offset": [
+          -80,
+          46
+        ],
+        "outside": true
+      },
+      "note": "p45 approach beside the mutate controls"
+    },
+    {
+      "op": "move",
+      "at": 154.5,
+      "to": {
+        "target": "detDeleteBtn",
+        "offset": [
+          0,
+          46
+        ],
+        "outside": true
+      },
+      "note": "p46 'Do not save' — guardrail beside Edit/Delete (no Save exists on the read-only view)"
+    },
+    {
+      "op": "move",
+      "at": 156.4,
+      "to": {
+        "target": "tabDetails",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "settle toward the Details tab for step 11"
+    },
+    {
+      "op": "click",
+      "target": "tabDetails",
+      "pressAt": 159.6,
+      "hoverMs": 380,
+      "postcondition": "detailsTabActive",
+      "timeoutMs": 4000,
+      "note": "step 11: inert client-side tab toggle (verified) — reveals the read-only Campaign Details fields. Press inside p47"
+    },
+    {
+      "op": "log-rect",
+      "at": 159.85,
+      "key": "detGroupRect",
+      "target": "detGroupHdr"
+    },
+    {
+      "op": "log-rects",
+      "at": 159.95,
+      "key": "detFields",
+      "targets": [
+        "detFieldName",
+        "detFieldType",
+        "detFieldStatus",
+        "detFieldAudience",
+        "detFieldStarted",
+        "detFieldEnds"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 161.7,
+      "to": {
+        "target": "detFieldName",
+        "offset": [
+          90,
+          12
+        ]
+      },
+      "note": "p48 sweep: a name"
+    },
+    {
+      "op": "move",
+      "at": 163,
+      "to": {
+        "target": "detFieldType",
+        "offset": [
+          90,
+          12
+        ]
+      },
+      "note": "the type"
+    },
+    {
+      "op": "move",
+      "at": 164,
+      "to": {
+        "target": "detFieldStatus",
+        "offset": [
+          90,
+          12
+        ]
+      },
+      "note": "a status"
+    },
+    {
+      "op": "move",
+      "at": 164.7,
+      "to": {
+        "target": "detFieldType",
+        "offset": [
+          90,
+          12
+        ]
+      },
+      "note": "p49 'mode' — nearest on the read-only view is the Type field (mode cards are create-form only; see residuals)"
+    },
+    {
+      "op": "move",
+      "at": 168.2,
+      "to": {
+        "target": "detFieldAudience",
+        "offset": [
+          90,
+          12
+        ]
+      },
+      "note": "p50 the audience"
+    },
+    {
+      "op": "move",
+      "at": 172.2,
+      "to": {
+        "point": [
+          960,
+          640
+        ]
+      },
+      "note": "ease for the p50 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 179.3,
+      "key": "detBackRect",
+      "target": "detBackBtn"
+    },
+    {
+      "op": "move",
+      "at": 179.45,
+      "to": {
+        "target": "detBackBtn",
+        "offset": [
+          0,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 12 cue p51 'click Cancel' — approach the read-only viewer's Back control (its genuine exit)"
+    },
+    {
+      "op": "click",
+      "target": "detBackBtn",
+      "pressAt": 181.5,
+      "hoverMs": 400,
+      "postcondition": "onCampaigns",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 12: 'Cancel' is realized as the read-only viewer's <- Back (verified pure nav back to the unchanged list). Press inside the p51 tail; nothing was saved because nothing was ever editable"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "listStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 183.4,
+      "predicate": "listReturned",
+      "note": "back on the Campaign List, still 5 records"
+    },
+    {
+      "op": "assert",
+      "at": 183.5,
+      "predicate": "sidebarCampaignsActive"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.6,
+      "key": "recordsBadge2",
+      "target": "recordsBadge"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.7,
+      "key": "listTitle2",
+      "target": "listTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.8,
+      "key": "searchBox2",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.9,
+      "key": "export2",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 184,
+      "key": "footerRect",
+      "target": "footerBar"
+    },
+    {
+      "op": "log-rect",
+      "at": 184.1,
+      "key": "pgInfoRect",
+      "target": "pgInfo"
+    },
+    {
+      "op": "move",
+      "at": 184.4,
+      "to": {
+        "target": "recordsBadge",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p52 'nothing saved, the list is right where we left it'"
+    },
+    {
+      "op": "move",
+      "at": 188.7,
+      "to": {
+        "point": [
+          900,
+          420
+        ]
+      },
+      "note": "p53 Weather Gate parked — ease"
+    },
+    {
+      "op": "move",
+      "at": 192.2,
+      "to": {
+        "point": [
+          800,
+          320
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 194.5,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -540,
+          0
+        ]
+      },
+      "note": "step 13 cue p54/p55 — the search box (never typed into)"
+    },
+    {
+      "op": "move",
+      "at": 195.85,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p55 Filters"
+    },
+    {
+      "op": "move",
+      "at": 198.35,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          80,
+          0
+        ]
+      },
+      "note": "p56 the footer record count"
+    },
+    {
+      "op": "move",
+      "at": 200.6,
+      "to": {
+        "target": "pgRight",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p56 pager controls (never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 202.3,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          0,
+          46
+        ],
+        "outside": true
+      },
+      "note": "p57 Export — second do-not-click guardrail, pointed at from beside"
+    },
+    {
+      "op": "move",
+      "at": 206.6,
+      "to": {
+        "point": [
+          1200,
+          520
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 209.25,
+      "to": {
+        "point": [
+          900,
+          150
+        ]
+      },
+      "note": "step 14 cue p58 recap — toward the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 211.1,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p59 four tiles"
+    },
+    {
+      "op": "move",
+      "at": 211.9,
+      "to": {
+        "target": "kpiConv",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 212.95,
+      "to": {
+        "target": "cardSendVolume",
+        "offset": [
+          0,
+          -30
+        ]
+      },
+      "note": "p60 three panels"
+    },
+    {
+      "op": "move",
+      "at": 214.1,
+      "to": {
+        "target": "cardByType",
+        "offset": [
+          0,
+          -30
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 214.9,
+      "to": {
+        "target": "cardPerformance",
+        "offset": [
+          0,
+          -30
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 216.2,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p60 one list"
+    },
+    {
+      "op": "move",
+      "at": 218.55,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p61 read a status"
+    },
+    {
+      "op": "move",
+      "at": 220.1,
+      "to": {
+        "target": "weatherChipSummer",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p61 catch a weather pause"
+    },
+    {
+      "op": "move",
+      "at": 221.4,
+      "to": {
+        "target": "rowDraft",
+        "offset": [
+          -120,
+          0
+        ]
+      },
+      "note": "p61 open the form to learn its shape (the row we opened)"
+    },
+    {
+      "op": "move",
+      "at": 222.95,
+      "to": {
+        "point": [
+          1520,
+          900
+        ]
+      },
+      "note": "p62 final park, clear of content and burned captions"
+    },
+    {
+      "op": "assert",
+      "at": 225.2,
+      "predicate": "onCampaigns",
+      "note": "read-only tour ends on the unchanged Campaign List"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "sideCampaignsRect", "place": "right", "from": 3.7, "to": 10.6 },
-      { "n": 2, "anchor": "kpiBandRect", "place": "below-left", "from": 16.1, "to": 23.4 },
-      { "n": 3, "anchor": "cardSVRect", "place": "below-left", "from": 36.8, "to": 46.6 },
-      { "n": 4, "anchor": "cardTypeRect", "place": "below-left", "from": 47.4, "to": 59.4 },
-      { "n": 5, "anchor": "cardPerfRect", "place": "below-left", "from": 62.9, "to": 73.6 },
-      { "n": 6, "anchor": "listHdr.listTitle", "place": "right", "from": 74.75, "to": 85.0 },
-      { "n": 7, "anchor": "ths.thCampaignName", "place": "left", "from": 88.6, "to": 99.9 },
-      { "n": 8, "anchor": "thStatusRect", "place": "below-left", "from": 103.5, "to": 114.2 },
-      { "n": 9, "anchor": "chipSummerRect", "place": "left-top", "from": 121.0, "to": 140.2 },
-      { "n": 10, "anchor": "detTabs.tabDetails", "place": "below-left", "from": 145.6, "to": 157.1 },
-      { "n": 11, "anchor": "detGroupRect", "place": "left-top", "from": 161.5, "to": 178.8 },
-      { "n": 12, "anchor": "recordsBadge2", "place": "below-left", "from": 184.4, "to": 193.9 },
-      { "n": 13, "anchor": "searchBox2", "place": "left-top", "from": 195.0, "to": 208.6 },
-      { "n": 14, "anchor": "listTitle2", "place": "right", "from": 211.0, "to": 224.0 }
+      {
+        "n": 1,
+        "anchor": "sideCampaignsRect",
+        "place": "right",
+        "from": 3.7,
+        "to": 10.6
+      },
+      {
+        "n": 2,
+        "anchor": "kpiBandRect",
+        "place": "below-left",
+        "from": 16.1,
+        "to": 23.4
+      },
+      {
+        "n": 3,
+        "anchor": "cardSVRect",
+        "place": "below-left",
+        "from": 36.8,
+        "to": 46.6
+      },
+      {
+        "n": 4,
+        "anchor": "cardTypeRect",
+        "place": "below-left",
+        "from": 47.4,
+        "to": 59.4
+      },
+      {
+        "n": 5,
+        "anchor": "cardPerfRect",
+        "place": "below-left",
+        "from": 62.9,
+        "to": 73.6
+      },
+      {
+        "n": 6,
+        "anchor": "listHdr.listTitle",
+        "place": "right",
+        "from": 74.75,
+        "to": 85
+      },
+      {
+        "n": 7,
+        "anchor": "ths.thCampaignName",
+        "place": "left",
+        "from": 88.6,
+        "to": 99.9
+      },
+      {
+        "n": 8,
+        "anchor": "thStatusRect",
+        "place": "below-left",
+        "from": 103.5,
+        "to": 114.2
+      },
+      {
+        "n": 9,
+        "anchor": "chipSummerRect",
+        "place": "left-top",
+        "from": 121,
+        "to": 140.2
+      },
+      {
+        "n": 10,
+        "anchor": "detTabs.tabDetails",
+        "place": "below-left",
+        "from": 145.6,
+        "to": 157.1
+      },
+      {
+        "n": 11,
+        "anchor": "detGroupRect",
+        "place": "left-top",
+        "from": 161.5,
+        "to": 178.8
+      },
+      {
+        "n": 12,
+        "anchor": "recordsBadge2",
+        "place": "below-left",
+        "from": 184.4,
+        "to": 193.9
+      },
+      {
+        "n": 13,
+        "anchor": "searchBox2",
+        "place": "left-top",
+        "from": 195,
+        "to": 208.6
+      },
+      {
+        "n": 14,
+        "anchor": "listTitle2",
+        "place": "right",
+        "from": 211,
+        "to": 224
+      }
     ],
     "highlights": [
-      { "anchor": "kpiTiles.kpiActive", "from": 18.2, "to": 19.4, "note": "p06 spoken order: active campaigns" },
-      { "anchor": "kpiTiles.kpiSent", "from": 19.4, "to": 20.3, "note": "messages sent this month" },
-      { "anchor": "kpiTiles.kpiOpen", "from": 20.3, "to": 20.95, "note": "p07 average open rate" },
-      { "anchor": "kpiTiles.kpiConv", "from": 20.95, "to": 22.4, "note": "p07 'revenue attributed' (live tile: Conversions)" },
-      { "anchor": "newRecordRect", "from": 78.4, "to": 81.2, "color": "#dc2626", "note": "guardrail: + New Record opens the create surface (mkt-campaigns-edit.html) — pointed at, NEVER clicked" },
-      { "anchor": "exportRect", "from": 79.7, "to": 81.2, "color": "#dc2626", "note": "shot-list STOP ring on Export — never clicked" },
-      { "anchor": "ths.thSent", "from": 92.75, "to": 94.4, "note": "p28 the result columns" },
-      { "anchor": "ths.thOpenRate", "from": 92.75, "to": 94.4 },
-      { "anchor": "ths.thConversions", "from": 92.75, "to": 94.4 },
-      { "anchor": "rows8.rowDraft", "from": 105.97, "to": 107.9, "note": "p31 Draft" },
-      { "anchor": "rows8.rowHoliday", "from": 107.91, "to": 110.15, "note": "p32 Scheduled" },
-      { "anchor": "rows8.rowSummer", "from": 110.19, "to": 111.95, "note": "p33 Active" },
-      { "anchor": "rows8.rowWinback", "from": 111.99, "to": 114.2, "note": "p34 Completed" },
-      { "anchor": "chipSummerRect", "from": 121.75, "to": 130.9, "note": "p37 weather-paused chip — check-this-first" },
-      { "anchor": "chipHolidayRect", "from": 121.75, "to": 130.9, "note": "the second weather-paused chip" },
-      { "anchor": "detEditRect", "from": 153.9, "to": 157.1, "color": "#dc2626", "note": "p46 'Do not save' guardrail: Edit Campaign opens the edit/create surface — never clicked" },
-      { "anchor": "detDeleteRect", "from": 153.9, "to": 157.1, "color": "#dc2626", "note": "p46 guardrail: Delete (destructive) — never clicked" },
-      { "anchor": "detFields.detFieldName", "from": 161.7, "to": 163.0, "note": "p48 spoken order: name" },
-      { "anchor": "detFields.detFieldType", "from": 163.0, "to": 164.6, "note": "type/mode" },
-      { "anchor": "detFields.detFieldStatus", "from": 164.0, "to": 164.7, "note": "status" },
-      { "anchor": "detFields.detFieldAudience", "from": 168.2, "to": 171.9, "note": "p50 audience" },
-      { "anchor": "export2", "from": 202.3, "to": 208.4, "color": "#dc2626", "note": "p57 second Export guardrail — never clicked" }
+      {
+        "anchor": "kpiTiles.kpiActive",
+        "from": 18.2,
+        "to": 19.4,
+        "note": "p06 spoken order: active campaigns"
+      },
+      {
+        "anchor": "kpiTiles.kpiSent",
+        "from": 19.4,
+        "to": 20.3,
+        "note": "messages sent this month"
+      },
+      {
+        "anchor": "kpiTiles.kpiOpen",
+        "from": 20.3,
+        "to": 20.95,
+        "note": "p07 average open rate"
+      },
+      {
+        "anchor": "kpiTiles.kpiConv",
+        "from": 20.95,
+        "to": 22.4,
+        "note": "p07 'revenue attributed' (live tile: Conversions)"
+      },
+      {
+        "anchor": "newRecordRect",
+        "from": 78.4,
+        "to": 81.2,
+        "color": "#dc2626",
+        "note": "guardrail: + New Record opens the create surface (mkt-campaigns-edit.html) — pointed at, NEVER clicked"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 79.7,
+        "to": 81.2,
+        "color": "#dc2626",
+        "note": "shot-list STOP ring on Export — never clicked"
+      },
+      {
+        "anchor": "ths.thSent",
+        "from": 92.75,
+        "to": 94.4,
+        "note": "p28 the result columns"
+      },
+      {
+        "anchor": "ths.thOpenRate",
+        "from": 92.75,
+        "to": 94.4
+      },
+      {
+        "anchor": "ths.thConversions",
+        "from": 92.75,
+        "to": 94.4
+      },
+      {
+        "anchor": "rows8.rowDraft",
+        "from": 105.97,
+        "to": 107.9,
+        "note": "p31 Draft"
+      },
+      {
+        "anchor": "rows8.rowHoliday",
+        "from": 107.91,
+        "to": 110.15,
+        "note": "p32 Scheduled"
+      },
+      {
+        "anchor": "rows8.rowSummer",
+        "from": 110.19,
+        "to": 111.95,
+        "note": "p33 Active"
+      },
+      {
+        "anchor": "rows8.rowWinback",
+        "from": 111.99,
+        "to": 114.2,
+        "note": "p34 Completed"
+      },
+      {
+        "anchor": "chipSummerRect",
+        "from": 121.75,
+        "to": 130.9,
+        "note": "p37 weather-paused chip — check-this-first"
+      },
+      {
+        "anchor": "chipHolidayRect",
+        "from": 121.75,
+        "to": 130.9,
+        "note": "the second weather-paused chip"
+      },
+      {
+        "anchor": "detEditRect",
+        "from": 153.9,
+        "to": 157.1,
+        "color": "#dc2626",
+        "note": "p46 'Do not save' guardrail: Edit Campaign opens the edit/create surface — never clicked"
+      },
+      {
+        "anchor": "detDeleteRect",
+        "from": 153.9,
+        "to": 157.1,
+        "color": "#dc2626",
+        "note": "p46 guardrail: Delete (destructive) — never clicked"
+      },
+      {
+        "anchor": "detFields.detFieldName",
+        "from": 161.7,
+        "to": 163,
+        "note": "p48 spoken order: name"
+      },
+      {
+        "anchor": "detFields.detFieldType",
+        "from": 163,
+        "to": 164.6,
+        "note": "type/mode"
+      },
+      {
+        "anchor": "detFields.detFieldStatus",
+        "from": 164,
+        "to": 164.7,
+        "note": "status"
+      },
+      {
+        "anchor": "detFields.detFieldAudience",
+        "from": 168.2,
+        "to": 171.9,
+        "note": "p50 audience"
+      },
+      {
+        "anchor": "export2",
+        "from": 202.3,
+        "to": 208.4,
+        "color": "#dc2626",
+        "note": "p57 second Export guardrail — never clicked"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 15.5, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 16.6, "z": 1.45, "cx": 960, "cy": 210, "ease": true, "note": "step 2 close read of the KPI band (shot list: zoom-in 150%)" },
-      { "t": 23.2, "z": 1.45, "cx": 960, "cy": 210 },
-      { "t": 24.2, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 50.8, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 51.8, "z": 1.4, "cx": 1117, "cy": 235, "ease": true, "note": "step 4 brief zoom on the Campaigns-by-Type percentages" },
-      { "t": 58.8, "z": 1.4, "cx": 1117, "cy": 235 },
-      { "t": 59.8, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 120.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 121.7, "z": 1.5, "cx": 950, "cy": 555, "ease": true, "note": "step 9 close-up on the weather-paused chip (shot list: zoom-in 150%)" },
-      { "t": 131.0, "z": 1.5, "cx": 950, "cy": 555 },
-      { "t": 132.0, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 160.5, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 161.6, "z": 1.35, "cx": 960, "cy": 415, "ease": true, "note": "step 11 focus on the read-only Campaign Details fields" },
-      { "t": 172.0, "z": 1.35, "cx": 960, "cy": 415 },
-      { "t": 173.0, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 225.881, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 15.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.6,
+        "z": 1.45,
+        "cx": 960,
+        "cy": 210,
+        "ease": true,
+        "note": "step 2 close read of the KPI band (shot list: zoom-in 150%)"
+      },
+      {
+        "t": 23.2,
+        "z": 1.45,
+        "cx": 960,
+        "cy": 210
+      },
+      {
+        "t": 24.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 50.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 51.8,
+        "z": 1.4,
+        "cx": 1117,
+        "cy": 235,
+        "ease": true,
+        "note": "step 4 brief zoom on the Campaigns-by-Type percentages"
+      },
+      {
+        "t": 58.8,
+        "z": 1.4,
+        "cx": 1117,
+        "cy": 235
+      },
+      {
+        "t": 59.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 120.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 121.7,
+        "z": 1.5,
+        "cx": 950,
+        "cy": 555,
+        "ease": true,
+        "note": "step 9 close-up on the weather-paused chip (shot list: zoom-in 150%)"
+      },
+      {
+        "t": 131,
+        "z": 1.5,
+        "cx": 950,
+        "cy": 555
+      },
+      {
+        "t": 132,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 160.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 161.6,
+        "z": 1.35,
+        "cx": 960,
+        "cy": 415,
+        "ease": true,
+        "note": "step 11 focus on the read-only Campaign Details fields"
+      },
+      {
+        "t": 172,
+        "z": 1.35,
+        "cx": 960,
+        "cy": 415
+      },
+      {
+        "t": 173,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 225.881,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
-    "completion": { "text": "Campaigns — Complete", "from": 224.08, "fadeOutFrames": 10 },
+    "completion": {
+      "text": "Campaigns — Complete",
+      "from": 224.08,
+      "fadeOutFrames": 10
+    },
     "captionsBurnClearAt": 223.78
   },
-  "orderedMentions": [
-    "Marketing",
-    "Campaigns",
-    "Active Campaigns",
-    "Sent This Month",
-    "Avg Open Rate",
-    "Revenue Attributed",
-    "Send Volume",
-    "Campaigns by Type",
-    "Campaign Performance",
-    "Campaign List",
-    "New Record",
-    "Export",
-    "Filters",
-    "Search",
-    "Campaign Name",
-    "Type",
-    "Status",
-    "Audience",
-    "Sent",
-    "Open Rate",
-    "Revenue",
-    "Draft",
-    "Scheduled",
-    "Active",
-    "Completed",
-    "Weather paused",
-    "Campaign Details",
-    "Content",
-    "Goals",
-    "Delivery Strategy",
-    "A/B Test",
-    "Weather Gate",
-    "Cancel"
-  ],
   "neverClick": [
     "new record",
     "new campaign",

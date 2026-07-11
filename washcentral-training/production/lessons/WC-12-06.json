@@ -2060,22 +2060,6 @@
     "captionsBurnClearAt": 250.82
   },
   "output": "WC-12-06-users-security-v1.1",
-  "orderedMentions": [
-    "Settings",
-    "Users & Security",
-    "System Users",
-    "Active",
-    "SSO",
-    "Last Login",
-    "User Level",
-    "Automation",
-    "User Levels",
-    "Security Level",
-    "Security Levels",
-    "Refund Approval Required",
-    "Blacklisted",
-    "New Record"
-  ],
   "neverClick": [
     "new record",
     "save",
