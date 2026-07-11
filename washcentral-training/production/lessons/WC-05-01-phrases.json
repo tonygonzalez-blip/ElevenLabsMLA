@@ -1,0 +1,168 @@
+{
+  "lesson": "WC-05-01",
+  "audioMaster": "training/module05-marketing/WC-05-01-full-narration-v1.0.mp3",
+  "output": "WC-05-01-campaigns-v1.1",
+  "note": "Verbatim phrases of the LOCKED narration, in spoken order, split at the script's <break> tags and sentence boundaries (<=~95 chars). Block windows are the blocks' MEASURED onsets in the joined master: Sigma(ffprobe audio+0.4) predicts 226.335s but the ffprobed master is 225.881s (0.454s off, past the +-0.3s gate), because the master was assembled with ~0.365s inter-block gaps, not 14 trailing 0.4s tails. Each block start is therefore the cross-correlation-measured onset of its sNN inside the master (mono 8 kHz PCM, 1.2s opening window, +-0.8s search); measured onsets drift monotonically from -0.028s (s02) to -0.462s (s14) versus the tail-padded prediction. Final end = ffprobed master duration 225.881s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 15.68,
+      "phrases": [
+        { "id": "p01", "text": "Open Marketing, then Campaigns." },
+        { "id": "p02", "text": "This page gathers every campaign the network runs into one list." },
+        { "id": "p03", "text": "The rest of Marketing sits in the sidebar beside it." },
+        { "id": "p04", "text": "This whole lesson is look-only, so nothing here sends or launches." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.68,
+      "endS": 34.56,
+      "phrases": [
+        { "id": "p05", "text": "Start at the top row." },
+        { "id": "p06", "text": "Four tiles hold the snapshot: active campaigns, messages sent this month," },
+        { "id": "p07", "text": "average open rate, and revenue attributed." },
+        { "id": "p08", "text": "Here the numbers are quiet, mostly zero." },
+        { "id": "p09", "text": "On a live tenant this is your fast read on how marketing is doing." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.56,
+      "endS": 47.2,
+      "phrases": [
+        { "id": "p10", "text": "Below the tiles, three panels." },
+        { "id": "p11", "text": "First, Send Volume." },
+        { "id": "p12", "text": "It draws email and text volume across the last thirty days." },
+        { "id": "p13", "text": "One glance tells you whether sending is climbing, holding steady, or falling off." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 47.2,
+      "endS": 62.72,
+      "phrases": [
+        { "id": "p14", "text": "Next, Campaigns by Type." },
+        { "id": "p15", "text": "This is the channel mix." },
+        { "id": "p16", "text": "Most of the network's campaigns go by email, a chunk pair email with text," },
+        { "id": "p17", "text": "and smaller slices run text-only or push." },
+        { "id": "p18", "text": "It tells you how customers are actually being reached." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 62.72,
+      "endS": 74.16,
+      "phrases": [
+        { "id": "p19", "text": "The third panel, Campaign Performance." },
+        { "id": "p20", "text": "It counts campaigns by state: how many are active, sitting in draft, or already wrapped." },
+        { "id": "p21", "text": "A quick pulse on where the work stands." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 74.16,
+      "endS": 86.96,
+      "phrases": [
+        { "id": "p22", "text": "Now scroll to the Campaign List." },
+        { "id": "p23", "text": "One row per campaign." },
+        { "id": "p24", "text": "Up top, a New Record button to build one, Export to pull the list out," },
+        { "id": "p25", "text": "plus filters and a search box to find a campaign fast." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 86.96,
+      "endS": 103.28,
+      "phrases": [
+        { "id": "p26", "text": "Read across the headers." },
+        { "id": "p27", "text": "Name, type, and status, then audience, sent, open rate, and revenue." },
+        { "id": "p28", "text": "Those last columns are the results, and they fill in only after a campaign sends." },
+        { "id": "p29", "text": "Here they're all dashes, because none have gone out yet." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 103.28,
+      "endS": 118.56,
+      "phrases": [
+        { "id": "p30", "text": "Down the status column, four states." },
+        { "id": "p31", "text": "Draft is still being built." },
+        { "id": "p32", "text": "Scheduled is set to go out later." },
+        { "id": "p33", "text": "Active is running now." },
+        { "id": "p34", "text": "Completed has finished its run." },
+        { "id": "p35", "text": "You'll see those same four words everywhere in Marketing, so learn them here." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 118.56,
+      "endS": 140.72,
+      "phrases": [
+        { "id": "p36", "text": "Look at the two campaigns with an extra chip." },
+        { "id": "p37", "text": "It reads weather paused, six locations." },
+        { "id": "p38", "text": "That campaign is held at those sites for weather," },
+        { "id": "p39", "text": "while its status still reads scheduled or active." },
+        { "id": "p40", "text": "If a client says a campaign stopped in one town but not another, check this chip first." },
+        { "id": "p41", "text": "Where the pause is configured is parked for a later lesson." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 140.72,
+      "endS": 157.68,
+      "phrases": [
+        { "id": "p42", "text": "Click New Record to open a blank campaign form." },
+        { "id": "p43", "text": "Across the top runs a set of tabs: details, content, goals," },
+        { "id": "p44", "text": "delivery, an A B test, and a weather gate." },
+        { "id": "p45", "text": "We're only here to see the shape of it." },
+        { "id": "p46", "text": "Do not save." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 157.68,
+      "endS": 179.36,
+      "phrases": [
+        { "id": "p47", "text": "The first tab, Campaign Details, holds the basics." },
+        { "id": "p48", "text": "A name and subject line, the type and mode, a status, a description, and the run dates." },
+        { "id": "p49", "text": "Mode is worth a look: a single send, or a drip sequence that spreads messages over days." },
+        { "id": "p50", "text": "Below it, the audience, where you'd attach who receives the campaign." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 179.36,
+      "endS": 194.48,
+      "phrases": [
+        { "id": "p51", "text": "Leave the way we came in: click Cancel." },
+        { "id": "p52", "text": "The form closes, nothing saved, and the list is right where we left it." },
+        { "id": "p53", "text": "One tab here, Weather Gate, we didn't open, so how the weather pause is set stays parked too." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 194.48,
+      "endS": 209.12,
+      "phrases": [
+        { "id": "p54", "text": "Back on the list, two ways to find a campaign." },
+        { "id": "p55", "text": "Type a name into the search box, or narrow with Filters." },
+        { "id": "p56", "text": "The footer counts the records and pages through them." },
+        { "id": "p57", "text": "Export sits up top for pulling the list out, though we won't touch it." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 209.12,
+      "endS": 225.881,
+      "phrases": [
+        { "id": "p58", "text": "So that's Campaigns." },
+        { "id": "p59", "text": "Four tiles for the snapshot," },
+        { "id": "p60", "text": "three panels for volume, mix, and status, and one list for the campaigns themselves." },
+        { "id": "p61", "text": "Read a status, catch a weather pause, open the form to learn its shape." },
+        { "id": "p62", "text": "All of it without sending or changing a thing." }
+      ]
+    }
+  ]
+}
