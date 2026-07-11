@@ -85,6 +85,16 @@ function cameraAt(t) {
 // ---- rect anchors from the event log (screen coords) ----
 function rectByKey(key) {
   if (key.startsWith('screen:')) { const [x, y] = key.slice(7).split(',').map(Number); return { x, y, w: 0, h: 0, point: true }; }
+  // literal screen-space rect, usable by highlights and callouts: "rect:x,y,w,h"
+  if (key.startsWith('rect:')) { const [x, y, w, h] = key.slice(5).split(',').map(Number); return { x, y, w, h }; }
+  // union of every item rect in a logged log-rects group: "union:<groupKey>"
+  if (key.startsWith('union:')) {
+    const items = events.rects[key.slice(6)]?.items; if (!items) return null;
+    const rs = Object.values(items).map(i => i.rect).filter(Boolean);
+    if (!rs.length) return null;
+    const x0 = Math.min(...rs.map(r => r.x)), y0 = Math.min(...rs.map(r => r.y));
+    return { x: x0, y: y0, w: Math.max(...rs.map(r => r.x + r.w)) - x0, h: Math.max(...rs.map(r => r.y + r.h)) - y0 };
+  }
   if (key.includes('.')) { const [g, item] = key.split('.'); return events.rects[g]?.items?.[item]?.rect; }
   return events.rects[key]?.rect;
 }
@@ -184,15 +194,21 @@ function overlaySVG(t, camr) {
   const sc = 1.0; // 22px pointer at 1080p
   s += `<g transform="translate(${cxp.toFixed(1)},${cyp.toFixed(1)}) scale(${sc})">`
     + `<path d="M0,0 L0,15.5 L4.4,12 L7.2,18.5 L9.4,17.6 L6.6,11.3 L12,10.8 Z" fill="#ffffff" stroke="#111" stroke-width="1.1" stroke-linejoin="round"/></g>`;
-  // completion treatment
+  // completion treatment — card auto-sizes to its text (fixed 470px truncated long titles);
+  // optional second line from lesson JSON `completion.stamp` (verification stamp)
   const comp = L.compositor.completion;
   if (comp && t >= comp.from) {
     const a = Math.min(1, (t - comp.from) / 0.4);
-    const cw = 470, ch = 84, cx = (W - cw) / 2, cy = (H - ch) / 2;
+    const titleFS = 26, stampFS = 18;
+    const textW = Math.ceil(Math.max(comp.text.length * titleFS * 0.63, comp.stamp ? comp.stamp.length * stampFS * 0.61 : 0));
+    const cw = Math.min(W - 160, 88 + textW + 34), ch = comp.stamp ? 118 : 84;
+    const cx = (W - cw) / 2, cy = (H - ch) / 2;
     s += `<rect x="${cx}" y="${cy}" width="${cw}" height="${ch}" rx="16" fill="#0c1016" opacity="${(0.92 * a).toFixed(2)}"/>`;
     s += `<circle cx="${cx + 54}" cy="${cy + ch / 2}" r="17" fill="none" stroke="#22c55e" stroke-width="3" opacity="${a.toFixed(2)}"/>`;
     s += `<path d="M${cx + 46},${cy + ch / 2} l6,7 l12,-15" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="${a.toFixed(2)}"/>`;
-    s += `<text x="${cx + 88}" y="${cy + ch / 2 + 8}" font-family="DejaVu Sans" font-size="26" font-weight="600" fill="#fff" opacity="${a.toFixed(2)}">${esc(comp.text)}</text>`;
+    const titleY = comp.stamp ? cy + 47 : cy + ch / 2 + 8;
+    s += `<text x="${cx + 88}" y="${titleY}" font-family="DejaVu Sans" font-size="${titleFS}" font-weight="600" fill="#fff" opacity="${a.toFixed(2)}">${esc(comp.text)}</text>`;
+    if (comp.stamp) s += `<text x="${cx + 88}" y="${cy + 82}" font-family="DejaVu Sans" font-size="${stampFS}" font-weight="400" fill="#9fb0c0" opacity="${a.toFixed(2)}">${esc(comp.stamp)}</text>`;
   }
   s += `</svg>`;
   return s;
@@ -215,10 +231,15 @@ function camExpr(field) {
   return expr;
 }
 const zExpr = camExpr('z'), cxExpr = camExpr('cx'), cyExpr = camExpr('cy');
-// zoompan: zoom>=1; x,y are the top-left of the WxH window in the (iw*zoom) upscaled source.
+// zoompan: zoom>=1; x,y are the crop's TOP-LEFT IN INPUT PIXELS of an (iw/zoom)x(ih/zoom)
+// window (verified empirically with a coordinate-grid test pattern) — NOT coordinates in the
+// zoom-scaled plane. The earlier scaled-plane formula (cx*zoom - W/2) therefore panned the
+// camera (z-1)*cw/2-ish too far right/down at off-center framings, which misregistered every
+// overlay inside zoomed shots. Mirror cameraAt()'s source-space math exactly:
+//   x = cx - (W/z)/2, clamped to [0, W - W/z]  (same for y with H).
 const zoomE = `max(1\\,${zExpr})`;
-const panX = `clip((${cxExpr})*zoom-${W / 2}\\,0\\,iw*zoom-iw)`;
-const panY = `clip((${cyExpr})*zoom-${H / 2}\\,0\\,ih*zoom-ih)`;
+const panX = `clip((${cxExpr})-(${W}/2)/zoom\\,0\\,iw-iw/zoom)`;
+const panY = `clip((${cyExpr})-(${H}/2)/zoom\\,0\\,ih-ih/zoom)`;
 
 // ---- render ----
 fs.rmSync(workDir, { recursive: true, force: true });

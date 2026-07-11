@@ -315,8 +315,40 @@ class Engine {
   }
 }
 
+// ---------- stage-window normalization ----------
+// x11grab captures the DISPLAY at +0,0, so the browser VIEWPORT must sit exactly there at
+// exactly 1920x1080. On a WM-less Xvfb, Chromium's kiosk "fullscreen" keeps its default
+// (10,10) window origin and self-sizes to 1919x1079 — which put ~10px black bars across the
+// top/left of every capture and clipped the page's right/bottom edges (WC-01-02 review #10).
+// Normal window state honors exact bounds, so park the toolbar above the screen (negative
+// top) and size the window so the viewport is exactly 1920x1080 at screen (0,0).
+// Runs for rehearse AND record so both stages lay out at identical viewport geometry.
+async function normalizeStageWindow(cdp) {
+  const metrics = async () => JSON.parse(await cdp.eval(
+    'JSON.stringify({iw:innerWidth,ih:innerHeight,ow:outerWidth,oh:outerHeight,sx:screenX,sy:screenY})'));
+  let m = await metrics();
+  if (m.iw === 1920 && m.ih === 1080 && m.sx + Math.round((m.ow - m.iw) / 2) === 0 && m.sy + (m.oh - m.ih) === 0) {
+    console.log('  stage window already normalized (1920x1080 viewport at screen 0,0)');
+    return;
+  }
+  const { windowId } = await cdp.send('Browser.getWindowForTarget', { targetId: cdp.targetId });
+  await cdp.send('Browser.setWindowBounds', { windowId, bounds: { windowState: 'normal' } });
+  await sleep(350);
+  await cdp.send('Browser.setWindowBounds', { windowId, bounds: { left: 0, top: 0, width: 1920, height: 1080 } });
+  await sleep(350);
+  m = await metrics();
+  const K = m.oh - m.ih, KW = m.ow - m.iw;   // browser-chrome height / side-border width
+  await cdp.send('Browser.setWindowBounds', { windowId, bounds: { left: -Math.round(KW / 2), top: -K, width: 1920 + KW, height: 1080 + K } });
+  await sleep(350);
+  m = await metrics();
+  if (m.iw !== 1920 || m.ih !== 1080 || m.sx !== -Math.round(KW / 2) || m.sy !== -K)
+    throw new Error(`stage window normalization failed: ${JSON.stringify(m)} (need 1920x1080 viewport at screen 0,0)`);
+  console.log(`  stage window normalized: 1920x1080 viewport at (0,0), browser chrome parked at y=${-K}`);
+}
+
 async function main() {
   const cdp = await CDP.connect('first');
+  await normalizeStageWindow(cdp);
   const log = {
     lesson: L.lesson, mode, startedISO: null, display: DISPLAY,
     pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {}, keys: [],
