@@ -1,0 +1,464 @@
+{
+  "lesson": "WC-01-02",
+  "audioMaster": "training/module01-foundations/WC-01-02-full-narration-v1.0.mp3",
+  "audioDurationS": 181.473,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Every WashCentral screen carries the same tools in the top-right corner.",
+      "startS": 0,
+      "endS": 3.937,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "They follow you from page to page.",
+      "startS": 4.347,
+      "endS": 6.118,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Three of them do the daily work:",
+      "startS": 6.747,
+      "endS": 8.304,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "jumping anywhere, focusing the view, and asking questions in plain language.",
+      "startS": 8.528,
+      "endS": 12.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Press Control K.",
+      "startS": 13.3,
+      "endS": 14.773,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "The command palette opens dead center, cursor already blinking.",
+      "startS": 15.879,
+      "endS": 19.899,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "It's the quickest way to any page.",
+      "startS": 20.168,
+      "endS": 22.116,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Rather than hunt through menus, you picture where you're headed and type it.",
+      "startS": 22.417,
+      "endS": 26.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Now, the results.",
+      "startS": 26.8,
+      "endS": 27.739,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Search reads the whole platform, not just page titles.",
+      "startS": 27.739,
+      "endS": 31.545,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Each hit names where you'll land and the module it lives under,",
+      "startS": 31.545,
+      "endS": 35.533,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "so the palette quietly teaches you the layout.",
+      "startS": 35.533,
+      "endS": 38.038,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Watch the footer, then tap the arrow keys.",
+      "startS": 38.5,
+      "endS": 41.151,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "The highlight moves with each press.",
+      "startS": 41.556,
+      "endS": 45.826,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "The palette runs entirely from the keyboard:",
+      "startS": 46.189,
+      "endS": 47.035,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "arrows to move, Enter to open, Escape to back out.",
+      "startS": 47.322,
+      "endS": 49.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Build the habit early.",
+      "startS": 49.972,
+      "endS": 51.166,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Press Escape.",
+      "startS": 51.701,
+      "endS": 52.398,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "The palette closes and drops you back exactly where you were,",
+      "startS": 52.398,
+      "endS": 56.807,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "without opening or changing a thing.",
+      "startS": 56.807,
+      "endS": 59.37,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Closing Search is always safe.",
+      "startS": 59.37,
+      "endS": 61.113,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Now click the location selector.",
+      "startS": 61.576,
+      "endS": 63.406,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "By default it reads All Locations, your whole network.",
+      "startS": 63.91,
+      "endS": 67.532,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "This control decides which sites your dashboards and numbers come from.",
+      "startS": 68.098,
+      "endS": 71.878,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Right now, that's every wash you run.",
+      "startS": 72.347,
+      "endS": 74.612,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Underneath, two lists.",
+      "startS": 75.109,
+      "endS": 76.162,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "One groups sites by state, with a count beside each.",
+      "startS": 76.162,
+      "endS": 80.152,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "The other drills into a single wash.",
+      "startS": 80.152,
+      "endS": 83.046,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Pick either, and every dashboard narrows to match.",
+      "startS": 83.046,
+      "endS": 86.376,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "For support work, remember: it only changes your view.",
+      "startS": 86.376,
+      "endS": 90.102,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "The data never moves, and one click back to All Locations restores the whole network.",
+      "startS": 90.102,
+      "endS": 95.367,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Click the selector again to close it.",
+      "startS": 95.889,
+      "endS": 97.77,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "We browsed and picked nothing, so scope stays on the full network.",
+      "startS": 98.836,
+      "endS": 102.3,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "Scanning the list never filters a thing until you actually choose.",
+      "startS": 103.013,
+      "endS": 106.852,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "Last tool.",
+      "startS": 107.4,
+      "endS": 108.116,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Click Ask Shyne.",
+      "startS": 108.116,
+      "endS": 109.398,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Shyne is the assistant built into WashCentral.",
+      "startS": 109.398,
+      "endS": 112.411,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Ask it about customers, operations, or marketing in plain language,",
+      "startS": 112.411,
+      "endS": 116.242,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "and it pulls the answer together.",
+      "startS": 116.242,
+      "endS": 118.39,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "The Try Asking prompts give you a feel for its range.",
+      "startS": 118.9,
+      "endS": 121.945,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Payment declines at one site, prepaid members gone quiet,",
+      "startS": 122.715,
+      "endS": 124.289,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "last week's damage claims, VIPs at risk of leaving.",
+      "startS": 124.746,
+      "endS": 126.358,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "If that's a question you'd normally dig through reports for, try Shyne first.",
+      "startS": 126.857,
+      "endS": 135.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "At the bottom, a question box and a Send button.",
+      "startS": 136.1,
+      "endS": 138.904,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Normally you'd type a question here and Shyne would answer.",
+      "startS": 139.733,
+      "endS": 142.544,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "We won't send one today.",
+      "startS": 142.745,
+      "endS": 143.941,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "What matters is the line just below:",
+      "startS": 144.849,
+      "endS": 147.047,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "the answer is AI-generated, so verify it before you act.",
+      "startS": 147.307,
+      "endS": 151.002,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Treat Shyne's reply as a fast first draft you always confirm.",
+      "startS": 151.745,
+      "endS": 155.414,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "Click Close.",
+      "startS": 156,
+      "endS": 156.981,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "The window disappears with no question sent, your workspace right where you left it.",
+      "startS": 157.612,
+      "endS": 162.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p52",
+      "text": "So that's the header.",
+      "startS": 163,
+      "endS": 164.103,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p53",
+      "text": "From any screen, Control K jumps you anywhere,",
+      "startS": 164.507,
+      "endS": 167.525,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "the location selector focuses the view without touching a record,",
+      "startS": 167.816,
+      "endS": 170.993,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "and Ask Shyne answers your questions, as long as you verify first.",
+      "startS": 171.282,
+      "endS": 175.053,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "Three tools, one corner.",
+      "startS": 175.473,
+      "endS": 177.096,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "Learn them now, because every lesson ahead assumes you can reach them.",
+      "startS": 177.413,
+      "endS": 181.039,
+      "timing": "silence"
+    }
+  ]
+}

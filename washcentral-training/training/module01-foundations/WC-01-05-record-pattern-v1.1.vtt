@@ -1,0 +1,250 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:00.638
+Open Settings,
+
+p02
+00:00:00.638 --> 00:00:02.461
+then Operations, then Cancellation Reasons.
+
+p03
+00:00:02.461 --> 00:00:04.057
+This is a list page,
+
+p04
+00:00:04.057 --> 00:00:10.249
+and it is the doorway into a shape you will meet on nearly every screen in WashCentral.
+
+p05
+00:00:10.249 --> 00:00:14.960
+Learn it once here, and the rest of the platform stops surprising you.
+
+p06
+00:00:15.394 --> 00:00:16.579
+Look across the top.
+
+p07
+00:00:16.966 --> 00:00:18.864
+Three tiles count the list below:
+
+p08
+00:00:19.660 --> 00:00:21.063
+how many reasons exist,
+
+p09
+00:00:21.667 --> 00:00:23.224
+how many reach the POS,
+
+p10
+00:00:23.545 --> 00:00:25.094
+and how many stay hidden.
+
+p11
+00:00:25.842 --> 00:00:28.101
+Numbers on top, records underneath.
+
+p12
+00:00:28.462 --> 00:00:30.587
+The same shape you met on the customer lists.
+
+p13
+00:00:31.075 --> 00:00:32.308
+Now the card itself.
+
+p14
+00:00:33.057 --> 00:00:33.697
+A title,
+
+p15
+00:00:34.006 --> 00:00:36.050
+a search box scoped to these reasons,
+
+p16
+00:00:36.359 --> 00:00:38.396
+and one green button to add a record.
+
+p17
+00:00:39.104 --> 00:00:42.315
+When a list runs long, you search it instead of scrolling.
+
+p18
+00:00:42.752 --> 00:00:43.805
+Read the columns.
+
+p19
+00:00:44.290 --> 00:00:48.566
+Each row is a single reason: what it says, and whether the register shows it.
+
+p20
+00:00:48.989 --> 00:00:50.580
+One row, one record.
+
+p21
+00:00:51.098 --> 00:00:54.075
+Click any row, and that record opens on a page of its own.
+
+p22
+00:00:54.509 --> 00:00:55.583
+Drop to the footer.
+
+p23
+00:00:56.075 --> 00:00:59.809
+Rows per page, a count of what matched, and the page arrows.
+
+p24
+00:01:00.135 --> 00:01:04.798
+Set it once, read the counter, and you always know how many records you are working through.
+
+p25
+00:01:05.201 --> 00:01:06.864
+Jump to Refund Reasons.
+
+p26
+00:01:07.303 --> 00:01:09.124
+Same page, lighter version.
+
+p27
+00:01:09.621 --> 00:01:12.612
+One tile, one column, the same add button.
+
+p28
+00:01:12.875 --> 00:01:16.130
+The fields change from list to list, but the shape holds.
+
+p29
+00:01:16.396 --> 00:01:18.640
+That is the whole point of learning it once.
+
+p30
+00:01:19.071 --> 00:01:21.788
+Back on Cancellation Reasons, click a row.
+
+p31
+00:01:22.143 --> 00:01:23.938
+And notice what does not happen.
+
+p32
+00:01:24.386 --> 00:01:26.097
+No detail page opens.
+
+p33
+00:01:26.517 --> 00:01:29.173
+This lean reference list keeps you right here;
+
+p34
+00:01:29.569 --> 00:01:32.796
+its only record action is that green New Record button.
+
+p35
+00:01:33.200 --> 00:01:35.399
+Now scan the page for record buttons.
+
+p36
+00:01:35.850 --> 00:01:36.762
+There is no Back,
+
+p37
+00:01:37.048 --> 00:01:38.602
+no Edit, no Delete.
+
+p38
+00:01:39.488 --> 00:01:42.499
+On richer record types you will meet that three-button band;
+
+p39
+00:01:42.882 --> 00:01:44.928
+this list simply never grew one.
+
+p40
+00:01:45.325 --> 00:01:47.760
+Everything it can do sits in New Record.
+
+p41
+00:01:48.226 --> 00:01:51.086
+Before we open the form, learn its two exits.
+
+p42
+00:01:51.922 --> 00:01:53.453
+Cancel walks away clean.
+
+p43
+00:01:54.198 --> 00:01:59.093
+Save Changes writes to the shared tenant, so on the demo you always leave through Cancel.
+
+p44
+00:02:00.307 --> 00:02:02.825
+A star marks anything the form requires.
+
+p45
+00:02:03.384 --> 00:02:08.140
+And the delete rule still applies, even without a Delete button here.
+
+p46
+00:02:08.140 --> 00:02:11.916
+Where other record types carry one, it always asks first.
+
+p47
+00:02:11.916 --> 00:02:13.999
+Choose No, Keep at that confirmation,
+
+p48
+00:02:13.999 --> 00:02:18.166
+and treat Yes, Delete as off-limits on anything you did not create.
+
+p49
+00:02:18.689 --> 00:02:21.069
+Back on the list, open New Record.
+
+p50
+00:02:22.019 --> 00:02:25.740
+The same form again, blank this time, ready for a fresh entry.
+
+p51
+00:02:26.241 --> 00:02:30.686
+You are only here to see the layout, so close it the way you closed the edit: Cancel.
+
+p52
+00:02:31.030 --> 00:02:32.076
+Nothing gets added.
+
+p53
+00:02:32.560 --> 00:02:34.935
+So that is the pattern on this lean list.
+
+p54
+00:02:35.412 --> 00:02:35.921
+List,
+
+p55
+00:02:36.325 --> 00:02:37.305
+then New Record,
+
+p56
+00:02:37.657 --> 00:02:39.903
+then the form, and Cancel back out.
+
+p57
+00:02:40.282 --> 00:02:41.969
+Two exits keep you safe:
+
+p58
+00:02:42.465 --> 00:02:43.604
+Cancel out of a form,
+
+p59
+00:02:43.987 --> 00:02:46.907
+No, Keep out of any delete you meet elsewhere.
+
+p60
+00:02:47.620 --> 00:02:49.294
+One demo quirk to expect:
+
+p61
+00:02:49.591 --> 00:02:55.073
+the form header may name a sample record over a blank form. That is the tenant, not a bug.
+
+p62
+00:02:56.089 --> 00:03:00.640
+Richer record types add the detail view, and this rhythm carries straight into them.
+

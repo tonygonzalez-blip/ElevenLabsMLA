@@ -1,0 +1,472 @@
+{
+  "lesson": "WC-01-04",
+  "audioMaster": "training/module01-foundations/WC-01-04-full-narration-v1.0.mp3",
+  "audioDurationS": 199.236,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Customers list.",
+      "startS": 0,
+      "endS": 1.327,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Notice how the page stacks up.",
+      "startS": 1.719,
+      "endS": 3.405,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Summary numbers on top, insight cards in the middle, the table underneath.",
+      "startS": 3.689,
+      "endS": 5.034,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Every list in WashCentral is built this way,",
+      "startS": 5.264,
+      "endS": 7.714,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "so the shape you learn right here is the shape you'll read on every screen after it.",
+      "startS": 8.15,
+      "endS": 15.003,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Start at the four tiles up top.",
+      "startS": 15.47,
+      "endS": 17.212,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "They summarize the whole customer base in one glance:",
+      "startS": 17.634,
+      "endS": 20.614,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "how many customers, how many active members, how many at risk, how many prospects.",
+      "startS": 21.014,
+      "endS": 23.551,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Read these before the table, because they frame everything the rows are about to show you.",
+      "startS": 23.899,
+      "endS": 31.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Below the tiles, three cards.",
+      "startS": 31.83,
+      "endS": 33.725,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "One tracks growth over the year, one shows how members split across plans,",
+      "startS": 34.249,
+      "endS": 35.86,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "one rates overall health from low to high.",
+      "startS": 36.129,
+      "endS": 38.37,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "It's the trend and the risk at a glance,",
+      "startS": 38.719,
+      "endS": 41.249,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "so you catch the story before you ever sort a column.",
+      "startS": 41.798,
+      "endS": 46.848,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Now the list card itself.",
+      "startS": 47.38,
+      "endS": 48.699,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Its title and the small label above it tell you which dataset you're looking at.",
+      "startS": 49.434,
+      "endS": 53.521,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Off to the right sit the action buttons.",
+      "startS": 54.464,
+      "endS": 56.502,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Two of them, Delete and Add Customer, change records,",
+      "startS": 57.045,
+      "endS": 60.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "so we leave them alone today and just note where they live.",
+      "startS": 60.845,
+      "endS": 63.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Look at the search box.",
+      "startS": 64.13,
+      "endS": 65.477,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "The grey placeholder inside it isn't decoration.",
+      "startS": 66.006,
+      "endS": 68.978,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "It spells out every field the search will match: name, plate, email, location, plan.",
+      "startS": 69.561,
+      "endS": 72.175,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "When you're not sure how a list can be searched, that hint answers it for you.",
+      "startS": 72.637,
+      "endS": 81.798,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Next to it, the Filters button.",
+      "startS": 82.4,
+      "endS": 83.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Watch the little number on it.",
+      "startS": 84.412,
+      "endS": 85.755,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Zero means nothing is filtered and you're seeing the full list.",
+      "startS": 86.099,
+      "endS": 89.46,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Anything higher means someone narrowed it,",
+      "startS": 89.826,
+      "endS": 95.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "which is the first thing to check when a customer swears a record is missing.",
+      "startS": 96.035,
+      "endS": 96.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Run your eye across the headers.",
+      "startS": 96.2,
+      "endS": 97.796,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Six columns, and every one sorts,",
+      "startS": 98.139,
+      "endS": 106.109,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "so you can order by plan, by join date, by monthly price, whatever the question needs.",
+      "startS": 107.03,
+      "endS": 110.877,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "The checkboxes down the left let you pick rows for the Delete button.",
+      "startS": 111.186,
+      "endS": 112.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "We won't check any.",
+      "startS": 112.514,
+      "endS": 112.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "Look at the coloured chips in a row.",
+      "startS": 112.72,
+      "endS": 114.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "The plan chip names what the customer pays for;",
+      "startS": 115.377,
+      "endS": 118.145,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "the status chip is green for active, grey for inactive.",
+      "startS": 118.861,
+      "endS": 122.715,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Colour does the work, so you read a customer's standing in a glance instead of parsing text.",
+      "startS": 123.571,
+      "endS": 129.71,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Drop to the footer.",
+      "startS": 129.71,
+      "endS": 130.388,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "The rows-per-page control and the page arrows are how you travel a big table.",
+      "startS": 131.134,
+      "endS": 136.005,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "And these are big: this list runs past a million and a half migrated records.",
+      "startS": 136.472,
+      "endS": 137.685,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "The tiles said two thousand, the pages say millions.",
+      "startS": 137.997,
+      "endS": 141.554,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Both are right, they're just counting different things.",
+      "startS": 142.182,
+      "endS": 149.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "Now switch to Gift Cards.",
+      "startS": 149.52,
+      "endS": 150.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Same page, different subject.",
+      "startS": 151.148,
+      "endS": 153.073,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Tiles across the top, three insight cards, then the list.",
+      "startS": 153.444,
+      "endS": 156.852,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "The words changed to cards and balances,",
+      "startS": 157.266,
+      "endS": 162.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "but the skeleton is identical to the one you just learned.",
+      "startS": 162.453,
+      "endS": 163.43,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "That's the whole point.",
+      "startS": 163.92,
+      "endS": 164.29,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Read the controls here.",
+      "startS": 164.29,
+      "endS": 165.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "The search hint, the columns, and the rows-per-page choices, twenty-five, fifty, or a hundred,",
+      "startS": 165.589,
+      "endS": 171.306,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "all match the Customer List.",
+      "startS": 171.51,
+      "endS": 173.116,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "If the table reads couldn't load records, that's a data hiccup, not an empty list,",
+      "startS": 173.579,
+      "endS": 178.186,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "and the dashes in the tiles are the same story.",
+      "startS": 178.407,
+      "endS": 181.7,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "That's the pattern.",
+      "startS": 181.7,
+      "endS": 182.123,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "KPI strip, insight cards, search and filters,",
+      "startS": 182.543,
+      "endS": 183.55,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "sortable columns with chips, and a pager at the bottom.",
+      "startS": 183.85,
+      "endS": 189.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Learn it on these two lists and you've learned it everywhere.",
+      "startS": 190.141,
+      "endS": 193.194,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "From here on, every list in WashCentral reads the same, no matter which module you're in.",
+      "startS": 193.697,
+      "endS": 198.8,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,1322 @@
+{
+  "lesson": "WC-01-05",
+  "title": "Interface Conventions: The Universal Record Pattern",
+  "audioMaster": "training/module01-foundations/WC-01-05-full-narration-v1.0.mp3",
+  "audioDurationS": 181.081,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railSettings": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^settings$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "opsCard": {
+      "js": "[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Operations$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
+    },
+    "opsCardItemCancellation": {
+      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^Cancellation Reasons$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "sidebarOpsHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/operations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkCancellationReasons": {
+      "text": "Cancellation Reasons",
+      "scope": ".submenu a"
+    },
+    "linkRefundReasons": {
+      "text": "Refund Reasons",
+      "scope": ".submenu a"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "metricsStrip": {
+      "selector": ".a-metrics"
+    },
+    "tileTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileShown": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Shown on POS/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileHidden": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Hidden/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Cancellation Reasons List'&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search cancellation reasons/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thDescription": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thShowOnPos": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^show on pos$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "firstDataRow": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0&&/aftermarket/i.test(e.textContent||''))"
+    },
+    "pgLeft": {
+      "selector": ".pg-left"
+    },
+    "pgInfo": {
+      "selector": ".pg-info"
+    },
+    "pgRight": {
+      "selector": ".pg-right"
+    },
+    "refundMetric": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "refundTh": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "refundNewRec": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "refundEmpty": {
+      "js": "[...document.querySelectorAll('td')].find(e=>/No refund reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "heroBand": {
+      "selector": ".a-hero-top"
+    },
+    "tabReasonDetails": {
+      "selector": ".a-tab-btn"
+    },
+    "descInput": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^description$/i.test((e.placeholder||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cancelTop": {
+      "js": "[...document.querySelectorAll('a.a-btn')].filter(e=>(e.textContent||'').trim()==='Cancel'&&e.getBoundingClientRect().width>0)[0]"
+    },
+    "saveTop": {
+      "js": "[...document.querySelectorAll('button.a-btn')].filter(e=>(e.textContent||'').trim()==='Save Changes'&&e.getBoundingClientRect().width>0)[0]"
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Back/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "opsSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Cancellation Reasons|Refund Reasons)$/.test((e.textContent||'').trim())).length>=2",
+    "opsCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Operations$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^Cancellation Reasons$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
+    "onCancellationList": "location.pathname.endsWith('/settings-cancellation-reasons.html')",
+    "rowsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-cancellation-reasons.html')&&rows.length>=10&&!!pi&&/of\\s*\\d+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "stillOnList": "location.pathname.endsWith('/settings-cancellation-reasons.html')&&[...document.querySelectorAll('tbody tr')].some(e=>e.getBoundingClientRect().width>0)",
+    "footerVisible": "(()=>{const p=document.querySelector('.pagination-bar');if(!p)return false;const r=p.getBoundingClientRect();return r.top>200&&r.top<1040})()",
+    "onRefundList": "location.pathname.endsWith('/settings-refund-reasons.html')",
+    "refundLoaded": "location.pathname.endsWith('/settings-refund-reasons.html')&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&([...document.querySelectorAll('td')].some(e=>/No refund reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)||[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0).length>1)",
+    "onEditForm": "location.pathname.endsWith('/settings-cancellation-reasons-edit.html')",
+    "formOpen": "(()=>{const i=[...document.querySelectorAll('input')].find(e=>/^description$/i.test((e.placeholder||'').trim()));const c=[...document.querySelectorAll('a.a-btn')].find(e=>(e.textContent||'').trim()==='Cancel');return !!(i&&c&&i.getBoundingClientRect().width>0&&c.getBoundingClientRect().width>0)})()",
+    "onDetailPage": "location.pathname.endsWith('/settings-cancellation-reasons-detail.html')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: sidebar panel must be expanded (shot-list checklist); abort the take if collapsed"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.25,
+      "from": [
+        220,
+        1079
+      ],
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          52,
+          -4
+        ]
+      },
+      "note": "enter from bottom edge, settle beside the Settings rail item as p01 says 'Open Settings'"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 1.45,
+      "hoverMs": 400,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1a: genuine rail navigation into Settings"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable",
+      "predicate": "pageReady",
+      "settleMs": 350,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "opsCard",
+      "pressAt": 4.3,
+      "hoverMs": 350,
+      "postcondition": "opsCardOpen",
+      "timeoutMs": 4000,
+      "note": "step 1b: open the Operations group card as it is named (stateless accordion \u2014 closed on every fresh load of settings.html)"
+    },
+    {
+      "op": "click",
+      "target": "opsCardItemCancellation",
+      "pressAt": 5.15,
+      "hoverMs": 300,
+      "postcondition": "onCancellationList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1c: land on the list inside the script's 1.4s break, before 'This is a list page'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "listStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 6.4,
+      "predicate": "rowsLoaded",
+      "note": "shot-list load check: real rows + counter present, no 'Failed to fetch' state; abort otherwise"
+    },
+    {
+      "op": "assert",
+      "at": 6.55,
+      "predicate": "opsSubmenuOpen",
+      "note": "pre-roll enforcement, fail fast: step 6 needs the sidebar Operations submenu expanded (washcentral-settings-menu-v1 operations:true); if this aborts, expand the group once by hand before re-rolling"
+    },
+    {
+      "op": "log-rect",
+      "at": 6.75,
+      "key": "bcStrongRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 7.0,
+      "to": {
+        "target": "sidebarOpsHeader",
+        "offset": [
+          92,
+          2
+        ]
+      },
+      "note": "point at the expanded Operations group while p04 explains"
+    },
+    {
+      "op": "move",
+      "at": 11.2,
+      "to": {
+        "point": [
+          166,
+          545
+        ]
+      },
+      "note": "begin the slow sweep down the Operations submenu (p05)"
+    },
+    {
+      "op": "move",
+      "at": 12.5,
+      "to": {
+        "point": [
+          166,
+          605
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 13.7,
+      "to": {
+        "point": [
+          166,
+          662
+        ]
+      },
+      "note": "sweep ends at the bottom of the submenu"
+    },
+    {
+      "op": "log-rects",
+      "at": 15.55,
+      "key": "kpiRects",
+      "targets": [
+        "tileTotal",
+        "tileShown",
+        "tileHidden"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 15.85,
+      "key": "metricsStripRect",
+      "target": "metricsStrip"
+    },
+    {
+      "op": "move",
+      "at": 16.1,
+      "to": {
+        "target": "metricsStrip",
+        "offset": [
+          900,
+          78
+        ],
+        "outside": true
+      },
+      "note": "park just below the KPI strip for step 2"
+    },
+    {
+      "op": "move",
+      "at": 26,
+      "to": {
+        "point": [
+          1172,
+          420
+        ]
+      },
+      "note": "drift down toward the rows on 'Numbers on top, records underneath'"
+    },
+    {
+      "op": "move",
+      "at": 31.3,
+      "to": {
+        "target": "cardTitle",
+        "offset": [
+          40,
+          38
+        ],
+        "outside": true
+      },
+      "note": "step 3: settle under the card title"
+    },
+    {
+      "op": "log-rect",
+      "at": 31.7,
+      "key": "cardTitleRect",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 31.95,
+      "key": "searchRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 32.2,
+      "key": "newRecordBtnRect1",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 34.2,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -600,
+          0
+        ]
+      },
+      "note": "point at the search box as it is named (p15)"
+    },
+    {
+      "op": "move",
+      "at": 36.5,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point beside + New Record (p16); do not click at this step"
+    },
+    {
+      "op": "move",
+      "at": 39.4,
+      "to": {
+        "point": [
+          1000,
+          420
+        ]
+      },
+      "note": "over the list for p17"
+    },
+    {
+      "op": "log-rect",
+      "at": 42.9,
+      "key": "thDescRect",
+      "target": "thDescription"
+    },
+    {
+      "op": "log-rect",
+      "at": 43.15,
+      "key": "thPosRect",
+      "target": "thShowOnPos"
+    },
+    {
+      "op": "log-rect",
+      "at": 43.38,
+      "key": "firstRowRect",
+      "target": "firstDataRow"
+    },
+    {
+      "op": "move",
+      "at": 43.6,
+      "to": {
+        "target": "thDescription",
+        "offset": [
+          450,
+          -18
+        ],
+        "outside": true
+      },
+      "note": "step 4: settle above the column headers"
+    },
+    {
+      "op": "move",
+      "at": 48.9,
+      "to": {
+        "target": "firstDataRow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "genuine hover on the first data row for 'One row, one record'"
+    },
+    {
+      "op": "move",
+      "at": 52.4,
+      "to": {
+        "point": [
+          860,
+          470
+        ]
+      },
+      "note": "ease off the row during p21; no click at step 4"
+    },
+    {
+      "op": "key",
+      "pressAt": 55.75,
+      "keys": [
+        "End"
+      ],
+      "gapMs": 200,
+      "keyLabel": "End \u2014 drop to the footer",
+      "postcondition": "footerVisible",
+      "timeoutMs": 3000,
+      "note": "step 5: genuine keyboard scroll inside the pause after 'Drop to the footer.'"
+    },
+    {
+      "op": "log-rects",
+      "at": 56.2,
+      "key": "pagRects",
+      "targets": [
+        "pgLeft",
+        "pgInfo",
+        "pgRight"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 56.55,
+      "to": {
+        "target": "pgLeft",
+        "offset": [
+          60,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "above Rows per page"
+    },
+    {
+      "op": "move",
+      "at": 57.7,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          10,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "above the range counter"
+    },
+    {
+      "op": "move",
+      "at": 59.05,
+      "to": {
+        "target": "pgRight",
+        "offset": [
+          -55,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "beside the page arrows"
+    },
+    {
+      "op": "click",
+      "target": "linkRefundReasons",
+      "pressAt": 66.5,
+      "hoverMs": 380,
+      "postcondition": "onRefundList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6a: sibling list via the genuine sidebar link (sticky, still visible while scrolled)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "refundStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 67.9,
+      "predicate": "refundLoaded",
+      "note": "empty state is a real state here (July 11: Total Reasons 0)"
+    },
+    {
+      "op": "log-rect",
+      "at": 68.1,
+      "key": "refundMetricRect",
+      "target": "refundMetric"
+    },
+    {
+      "op": "log-rect",
+      "at": 68.35,
+      "key": "refundThRect",
+      "target": "refundTh"
+    },
+    {
+      "op": "log-rect",
+      "at": 68.6,
+      "key": "refundNewRecRect",
+      "target": "refundNewRec"
+    },
+    {
+      "op": "log-rect",
+      "at": 68.85,
+      "key": "refundEmptyRect",
+      "target": "refundEmpty"
+    },
+    {
+      "op": "move",
+      "at": 69.7,
+      "to": {
+        "target": "refundMetric",
+        "offset": [
+          300,
+          80
+        ],
+        "outside": true
+      },
+      "note": "below the single KPI tile as it is named"
+    },
+    {
+      "op": "move",
+      "at": 71.7,
+      "to": {
+        "target": "refundNewRec",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "beside the same add button (p27)"
+    },
+    {
+      "op": "click",
+      "target": "linkCancellationReasons",
+      "pressAt": 77.7,
+      "hoverMs": 340,
+      "postcondition": "onCancellationList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6b: return so 'Back on Cancellation Reasons' is already true when s07 starts"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "listStable2",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 79,
+      "predicate": "rowsLoaded"
+    },
+    {
+      "op": "log-rect",
+      "at": 79.6,
+      "key": "rowRect",
+      "target": "firstDataRow"
+    },
+    {
+      "op": "click",
+      "target": "firstDataRow",
+      "pressAt": 82,
+      "hoverMs": 400,
+      "postcondition": "stillOnList",
+      "timeoutMs": 3000,
+      "note": "step 7: the row click that goes nowhere \u2014 press inside the pause after 'click a row'"
+    },
+    {
+      "op": "watch",
+      "key": "stillOnListDuringStep7",
+      "from": 82.6,
+      "to": 92.6,
+      "predicate": "stillOnList",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 84.6,
+      "to": {
+        "point": [
+          1150,
+          560
+        ]
+      },
+      "note": "ease off the row; the unchanged list is the point"
+    },
+    {
+      "op": "log-rect",
+      "at": 88.9,
+      "key": "newRecordBtnRect2",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 89.7,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point beside the green New Record button on p34"
+    },
+    {
+      "op": "move",
+      "at": 93.6,
+      "to": {
+        "point": [
+          600,
+          215
+        ]
+      },
+      "note": "step 8: scan gesture, left end of the card action area"
+    },
+    {
+      "op": "move",
+      "at": 94.9,
+      "to": {
+        "point": [
+          1500,
+          215
+        ]
+      },
+      "note": "sweep right across where a Back/Edit/Delete band would sit"
+    },
+    {
+      "op": "move",
+      "at": 99.8,
+      "to": {
+        "point": [
+          1620,
+          260
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 105.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "'Everything it can do sits in New Record'"
+    },
+    {
+      "op": "move",
+      "at": 108.7,
+      "to": {
+        "point": [
+          1700,
+          300
+        ]
+      },
+      "note": "step 9: park under the top-right spot where the form's exits will appear (indicate only)"
+    },
+    {
+      "op": "move",
+      "at": 123.9,
+      "to": {
+        "point": [
+          960,
+          740
+        ]
+      },
+      "note": "step 10 is a rule card: cursor parks neutrally, nothing to point at"
+    },
+    {
+      "op": "click",
+      "target": "newRecordBtn",
+      "pressAt": 141.35,
+      "hoverMs": 380,
+      "postcondition": "onEditForm",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11: open the blank form inside the break after 'open New Record'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "editStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "watch",
+      "key": "formOpenDuringStep11",
+      "from": 143,
+      "to": 150.6,
+      "predicate": "formOpen",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "log-rect",
+      "at": 142.6,
+      "key": "heroBandRect",
+      "target": "heroBand"
+    },
+    {
+      "op": "log-rect",
+      "at": 142.85,
+      "key": "tabBtnRect",
+      "target": "tabReasonDetails"
+    },
+    {
+      "op": "log-rect",
+      "at": 143.1,
+      "key": "descInputRect",
+      "target": "descInput"
+    },
+    {
+      "op": "log-rect",
+      "at": 143.35,
+      "key": "cancelTopRect",
+      "target": "cancelTop"
+    },
+    {
+      "op": "log-rect",
+      "at": 143.6,
+      "key": "saveTopRect",
+      "target": "saveTop"
+    },
+    {
+      "op": "move",
+      "at": 144,
+      "to": {
+        "target": "descInput",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "hover the empty required Description field (no click, no focus)"
+    },
+    {
+      "op": "move",
+      "at": 146.6,
+      "to": {
+        "target": "saveTop",
+        "offset": [
+          -120,
+          52
+        ],
+        "outside": true
+      },
+      "note": "settle below the exits while p51 names them"
+    },
+    {
+      "op": "click",
+      "target": "cancelTop",
+      "pressAt": 150.95,
+      "hoverMs": 380,
+      "postcondition": "onDetailPage",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "leave through Cancel on cue; observed July 11 (re-verified today): Cancel lands on the read-only Detail page, not the list"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "detailStable",
+      "predicate": "pageReady",
+      "settleMs": 450,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "backBtn",
+      "pressAt": 152.95,
+      "hoverMs": 320,
+      "postcondition": "onCancellationList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine \u2190 Back off the detail page so the s12 recap plays on the list; Delete on that page is never approached"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "listStable3",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 154.35,
+      "predicate": "rowsLoaded",
+      "note": "'Nothing gets added' \u2014 the list is back, still 33 records"
+    },
+    {
+      "op": "log-rect",
+      "at": 154.6,
+      "key": "bcStrong2Rect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 154.85,
+      "key": "newRecordBtnRect3",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 155.6,
+      "to": {
+        "target": "metricsStrip",
+        "offset": [
+          500,
+          80
+        ],
+        "outside": true
+      },
+      "note": "step 12 recap sweep: start under the KPI strip ('List,')"
+    },
+    {
+      "op": "move",
+      "at": 156.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "'then New Record,'"
+    },
+    {
+      "op": "move",
+      "at": 158.2,
+      "to": {
+        "point": [
+          1000,
+          430
+        ]
+      },
+      "note": "sweep back across the rows"
+    },
+    {
+      "op": "move",
+      "at": 163,
+      "to": {
+        "point": [
+          800,
+          650
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 169,
+      "to": {
+        "point": [
+          640,
+          840
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 176.6,
+      "to": {
+        "point": [
+          1540,
+          930
+        ]
+      },
+      "note": "final park, clear of rows and captions"
+    },
+    {
+      "op": "assert",
+      "at": 178.6,
+      "predicate": "onCancellationList"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "bcStrongRect",
+        "place": "below-left",
+        "from": 6.9,
+        "to": 14.9
+      },
+      {
+        "n": 2,
+        "anchor": "metricsStripRect",
+        "place": "below-left",
+        "from": 16.4,
+        "to": 24.9
+      },
+      {
+        "n": 3,
+        "anchor": "cardTitleRect",
+        "place": "right",
+        "from": 31.9,
+        "to": 38.2
+      },
+      {
+        "n": 4,
+        "anchor": "thDescRect",
+        "place": "left",
+        "from": 43.5,
+        "to": 48.5
+      },
+      {
+        "n": 5,
+        "anchor": "pagRects.pgLeft",
+        "place": "left-top",
+        "from": 56.5,
+        "to": 64.3
+      },
+      {
+        "n": 6,
+        "anchor": "refundEmptyRect",
+        "place": "left",
+        "from": 69,
+        "to": 76.2
+      },
+      {
+        "n": 7,
+        "anchor": "rowRect",
+        "place": "left",
+        "from": 82.6,
+        "to": 88.8
+      },
+      {
+        "n": 8,
+        "anchor": "screen:1620,195",
+        "place": "at",
+        "from": 96,
+        "to": 104.6
+      },
+      {
+        "n": 9,
+        "anchor": "screen:1790,113",
+        "place": "at",
+        "from": 109.2,
+        "to": 122.4
+      },
+      {
+        "n": 10,
+        "anchor": "screen:960,430",
+        "place": "at",
+        "from": 124.3,
+        "to": 137.5
+      },
+      {
+        "n": 11,
+        "anchor": "descInputRect",
+        "place": "left-top",
+        "from": 143.5,
+        "to": 149.8
+      },
+      {
+        "n": 12,
+        "anchor": "bcStrong2Rect",
+        "place": "below-left",
+        "from": 156,
+        "to": 174
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "kpiRects.tileTotal",
+        "from": 19.66,
+        "to": 21.06,
+        "note": "'how many reasons exist'"
+      },
+      {
+        "anchor": "kpiRects.tileShown",
+        "from": 21.67,
+        "to": 23.22,
+        "note": "'how many reach the POS'"
+      },
+      {
+        "anchor": "kpiRects.tileHidden",
+        "from": 23.55,
+        "to": 25.09,
+        "note": "'and how many stay hidden'"
+      },
+      {
+        "anchor": "cardTitleRect",
+        "from": 33,
+        "to": 33.95,
+        "note": "'A title,'"
+      },
+      {
+        "anchor": "searchRect",
+        "from": 34.01,
+        "to": 36.05,
+        "note": "'a search box scoped to these reasons'"
+      },
+      {
+        "anchor": "newRecordBtnRect1",
+        "from": 36.36,
+        "to": 38.4,
+        "note": "'one green button to add a record'"
+      },
+      {
+        "anchor": "thDescRect",
+        "from": 44.29,
+        "to": 46.4,
+        "note": "'what it says'"
+      },
+      {
+        "anchor": "thPosRect",
+        "from": 46.4,
+        "to": 48.57,
+        "note": "'whether the register shows it'"
+      },
+      {
+        "anchor": "firstRowRect",
+        "from": 48.99,
+        "to": 50.58,
+        "note": "'One row, one record.'"
+      },
+      {
+        "anchor": "pagRects.pgLeft",
+        "from": 56.35,
+        "to": 57.55,
+        "note": "'Rows per page'"
+      },
+      {
+        "anchor": "pagRects.pgInfo",
+        "from": 57.55,
+        "to": 58.7,
+        "note": "'a count of what matched'"
+      },
+      {
+        "anchor": "pagRects.pgRight",
+        "from": 59.15,
+        "to": 60.05,
+        "note": "'and the page arrows' \u2014 after the camera is wide again"
+      },
+      {
+        "anchor": "pagRects.pgInfo",
+        "from": 60.9,
+        "to": 62.3,
+        "note": "'read the counter'"
+      },
+      {
+        "anchor": "refundMetricRect",
+        "from": 69.62,
+        "to": 70.62,
+        "note": "'One tile,'"
+      },
+      {
+        "anchor": "refundThRect",
+        "from": 70.62,
+        "to": 71.62,
+        "note": "'one column,'"
+      },
+      {
+        "anchor": "refundNewRecRect",
+        "from": 71.62,
+        "to": 72.61,
+        "note": "'the same add button'"
+      },
+      {
+        "anchor": "rowRect",
+        "from": 80.1,
+        "to": 81.95,
+        "note": "guide the eye to the row about to be clicked"
+      },
+      {
+        "anchor": "newRecordBtnRect2",
+        "from": 89.57,
+        "to": 92.8,
+        "note": "'that green New Record button'"
+      },
+      {
+        "anchor": "newRecordBtnRect2",
+        "from": 105.33,
+        "to": 107.76,
+        "note": "'Everything it can do sits in New Record.'"
+      },
+      {
+        "anchor": "descInputRect",
+        "from": 143.7,
+        "to": 145.7,
+        "note": "'blank this time' \u2014 the empty required field"
+      },
+      {
+        "anchor": "saveTopRect",
+        "from": 146.3,
+        "to": 150.2,
+        "color": "#dc2626",
+        "note": "do-not-click guardrail on Save Changes while the exit is taken through Cancel"
+      },
+      {
+        "anchor": "cancelTopRect",
+        "from": 149.6,
+        "to": 150.7,
+        "note": "eye to Cancel as it is named, just before the press"
+      },
+      {
+        "anchor": "newRecordBtnRect3",
+        "from": 156.32,
+        "to": 157.45,
+        "note": "'then New Record,' in the recap"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 17.8,
+        "z": 1.5,
+        "cx": 820,
+        "cy": 360,
+        "ease": true,
+        "note": "step 2 close framing: Total Reasons + Shown on POS tiles at 150%"
+      },
+      {
+        "t": 23.1,
+        "z": 1.5,
+        "cx": 820,
+        "cy": 360
+      },
+      {
+        "t": 24.1,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "pan to the Hidden tile as it is named"
+      },
+      {
+        "t": 25.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 26.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for 'Numbers on top, records underneath'"
+      },
+      {
+        "t": 30.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 31.9,
+        "z": 1.3,
+        "cx": 800,
+        "cy": 400,
+        "ease": true,
+        "note": "step 3: card title + search framing"
+      },
+      {
+        "t": 35.7,
+        "z": 1.3,
+        "cx": 800,
+        "cy": 400
+      },
+      {
+        "t": 36.6,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 400,
+        "ease": true,
+        "note": "pan right to keep + New Record in frame as it is named"
+      },
+      {
+        "t": 38.5,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 400
+      },
+      {
+        "t": 39.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide through the columns step"
+      },
+      {
+        "t": 55.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 56.6,
+        "z": 1.5,
+        "cx": 800,
+        "cy": 720,
+        "ease": true,
+        "note": "step 5 close framing: ROWS PER PAGE + counter at 150% (~1.5s)"
+      },
+      {
+        "t": 58.1,
+        "z": 1.5,
+        "cx": 800,
+        "cy": 720
+      },
+      {
+        "t": 59.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide before the page-arrows highlight and the sibling-list jump"
+      },
+      {
+        "t": 140.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "calm wide hold through steps 6-10: two navigations, the non-event row click, and two rule cards"
+      },
+      {
+        "t": 141.9,
+        "z": 1.22,
+        "cx": 1133,
+        "cy": 430,
+        "ease": true,
+        "note": "step 11: form framing \u2014 hero band, Reason Details tab, required field, Cancel / Save Changes"
+      },
+      {
+        "t": 150.3,
+        "z": 1.22,
+        "cx": 1133,
+        "cy": 430
+      },
+      {
+        "t": 151.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the exit, the return to the list, and the recap"
+      },
+      {
+        "t": 181.081,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Record Pattern \u2014 Complete",
+      "from": 179.28,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 178.98
+  },
+  "output": "WC-01-05-record-pattern-v1.1",
+  "orderedMentions": [
+    "Settings",
+    "Operations",
+    "Cancellation Reasons",
+    "Refund Reasons",
+    "New Record",
+    "Back",
+    "Edit",
+    "Delete",
+    "Cancel",
+    "Save Changes",
+    "No, Keep"
+  ],
+  "neverClick": [
+    "logout",
+    "delete",
+    "save changes",
+    "yes, delete",
+    "send",
+    "submit"
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "lesson": "WC-01-05",
+  "audioMaster": "training/module01-foundations/WC-01-05-full-narration-v1.0.mp3",
+  "audioDurationS": 181.081,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Settings,",
+      "startS": 0,
+      "endS": 0.638,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "then Operations, then Cancellation Reasons.",
+      "startS": 0.638,
+      "endS": 2.461,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "This is a list page,",
+      "startS": 2.461,
+      "endS": 4.057,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "and it is the doorway into a shape you will meet on nearly every screen in WashCentral.",
+      "startS": 4.057,
+      "endS": 10.249,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Learn it once here, and the rest of the platform stops surprising you.",
+      "startS": 10.249,
+      "endS": 14.96,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Look across the top.",
+      "startS": 15.394,
+      "endS": 16.579,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Three tiles count the list below:",
+      "startS": 16.966,
+      "endS": 18.864,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "how many reasons exist,",
+      "startS": 19.66,
+      "endS": 21.063,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "how many reach the POS,",
+      "startS": 21.667,
+      "endS": 23.224,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "and how many stay hidden.",
+      "startS": 23.545,
+      "endS": 25.094,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Numbers on top, records underneath.",
+      "startS": 25.842,
+      "endS": 28.101,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "The same shape you met on the customer lists.",
+      "startS": 28.462,
+      "endS": 30.587,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Now the card itself.",
+      "startS": 31.075,
+      "endS": 32.308,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "A title,",
+      "startS": 33.057,
+      "endS": 33.697,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "a search box scoped to these reasons,",
+      "startS": 34.006,
+      "endS": 36.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "and one green button to add a record.",
+      "startS": 36.359,
+      "endS": 38.396,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "When a list runs long, you search it instead of scrolling.",
+      "startS": 39.104,
+      "endS": 42.315,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Read the columns.",
+      "startS": 42.752,
+      "endS": 43.805,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Each row is a single reason: what it says, and whether the register shows it.",
+      "startS": 44.29,
+      "endS": 48.566,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "One row, one record.",
+      "startS": 48.989,
+      "endS": 50.58,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Click any row, and that record opens on a page of its own.",
+      "startS": 51.098,
+      "endS": 54.075,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Drop to the footer.",
+      "startS": 54.509,
+      "endS": 55.583,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Rows per page, a count of what matched, and the page arrows.",
+      "startS": 56.075,
+      "endS": 59.809,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Set it once, read the counter, and you always know how many records you are working through.",
+      "startS": 60.135,
+      "endS": 64.798,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Jump to Refund Reasons.",
+      "startS": 65.201,
+      "endS": 66.864,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Same page, lighter version.",
+      "startS": 67.303,
+      "endS": 69.124,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "One tile, one column, the same add button.",
+      "startS": 69.621,
+      "endS": 72.612,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "The fields change from list to list, but the shape holds.",
+      "startS": 72.875,
+      "endS": 76.13,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "That is the whole point of learning it once.",
+      "startS": 76.396,
+      "endS": 78.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Back on Cancellation Reasons, click a row.",
+      "startS": 79.071,
+      "endS": 81.788,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "And notice what does not happen.",
+      "startS": 82.143,
+      "endS": 83.938,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "No detail page opens.",
+      "startS": 84.386,
+      "endS": 86.097,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "This lean reference list keeps you right here;",
+      "startS": 86.517,
+      "endS": 89.173,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "its only record action is that green New Record button.",
+      "startS": 89.569,
+      "endS": 92.796,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Now scan the page for record buttons.",
+      "startS": 93.2,
+      "endS": 95.399,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "There is no Back,",
+      "startS": 95.85,
+      "endS": 96.762,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "no Edit, no Delete.",
+      "startS": 97.048,
+      "endS": 98.602,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "On richer record types you will meet that three-button band;",
+      "startS": 99.488,
+      "endS": 102.499,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "this list simply never grew one.",
+      "startS": 102.882,
+      "endS": 104.928,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Everything it can do sits in New Record.",
+      "startS": 105.325,
+      "endS": 107.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Before we open the form, learn its two exits.",
+      "startS": 108.226,
+      "endS": 111.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Cancel walks away clean.",
+      "startS": 111.922,
+      "endS": 113.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Save Changes writes to the shared tenant, so on the demo you always leave through Cancel.",
+      "startS": 114.198,
+      "endS": 119.093,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "A star marks anything the form requires.",
+      "startS": 120.307,
+      "endS": 122.825,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "And the delete rule still applies, even without a Delete button here.",
+      "startS": 123.384,
+      "endS": 128.14,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "Where other record types carry one, it always asks first.",
+      "startS": 128.14,
+      "endS": 131.916,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Choose No, Keep at that confirmation,",
+      "startS": 131.916,
+      "endS": 133.999,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "and treat Yes, Delete as off-limits on anything you did not create.",
+      "startS": 133.999,
+      "endS": 138.166,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Back on the list, open New Record.",
+      "startS": 138.689,
+      "endS": 141.069,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "The same form again, blank this time, ready for a fresh entry.",
+      "startS": 142.019,
+      "endS": 145.74,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "You are only here to see the layout, so close it the way you closed the edit: Cancel.",
+      "startS": 146.241,
+      "endS": 150.686,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Nothing gets added.",
+      "startS": 151.03,
+      "endS": 152.076,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "So that is the pattern on this lean list.",
+      "startS": 152.56,
+      "endS": 154.935,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "List,",
+      "startS": 155.412,
+      "endS": 155.921,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "then New Record,",
+      "startS": 156.325,
+      "endS": 157.305,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "then the form, and Cancel back out.",
+      "startS": 157.657,
+      "endS": 159.903,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Two exits keep you safe:",
+      "startS": 160.282,
+      "endS": 161.969,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Cancel out of a form,",
+      "startS": 162.465,
+      "endS": 163.604,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "No, Keep out of any delete you meet elsewhere.",
+      "startS": 163.987,
+      "endS": 166.907,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "One demo quirk to expect:",
+      "startS": 167.62,
+      "endS": 169.294,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "the form header may name a sample record over a blank form. That is the tenant, not a bug.",
+      "startS": 169.591,
+      "endS": 175.073,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "Richer record types add the detail view, and this rhythm carries straight into them.",
+      "startS": 176.089,
+      "endS": 180.64,
+      "timing": "silence"
+    }
+  ]
+}

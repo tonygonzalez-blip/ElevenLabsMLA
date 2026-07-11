@@ -1,0 +1,1703 @@
+{
+  "lesson": "WC-02-01",
+  "title": "The Customer List (CRM)",
+  "audioMaster": "training/module02-crm/WC-02-01-full-narration-v1.0.mp3",
+  "audioDurationS": 232.986,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railCRM": {
+      "js": "[...document.querySelectorAll('button[title]')].find(e=>e.getAttribute('title')==='CRM'&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().left<60)"
+    },
+    "sideCustomers": {
+      "text": "Customers",
+      "scope": "aside.sidebar a"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "kpiTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "kpiTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "kpiTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "growthCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Member Growth/.test(c.textContent||''))"
+    },
+    "planCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Plan Distribution/.test(c.textContent||''))"
+    },
+    "riskCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Risk Profile/.test(c.textContent||''))"
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^CRM\\s*·\\s*Member Database$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div,h1,h2,h3')].find(e=>(e.textContent||'').trim()==='Customer List'&&e.getBoundingClientRect().height<30&&e.getBoundingClientRect().width>0)"
+    },
+    "retentionBtn": {
+      "text": "Retention Log",
+      "scope": "a.a-btn,button.a-btn"
+    },
+    "deleteBtn": {
+      "selector": "#bulk-delete-btn"
+    },
+    "addBtn": {
+      "text": "+ Add Customer",
+      "scope": "a.a-btn"
+    },
+    "searchInput": {
+      "selector": "#customer-search"
+    },
+    "searchWrap": {
+      "js": "(()=>{const i=document.querySelector('#customer-search');return i?i.closest('div'):null})()"
+    },
+    "searchBtn": {
+      "selector": "#search-btn"
+    },
+    "filtersBtn": {
+      "selector": "#adv-toggle"
+    },
+    "advPanel": {
+      "selector": "#adv-panel.open"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thCustomer": {
+      "text": "Customer",
+      "scope": "table thead th"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thPlan": {
+      "text": "Plan",
+      "scope": "table thead th"
+    },
+    "thMemberSince": {
+      "text": "Member Since",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thVisits": {
+      "text": "Visits",
+      "scope": "table thead th"
+    },
+    "thTotalSpend": {
+      "text": "Total Spend",
+      "scope": "table thead th"
+    },
+    "thLastVisit": {
+      "text": "Last Visit",
+      "scope": "table thead th"
+    },
+    "selectAll": {
+      "selector": "table thead input.bulk-select-all"
+    },
+    "activeRow": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(t=>t.querySelector('.badge.active'))"
+    },
+    "activePlanChip": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(t=>t.querySelector('.badge.active'));return r?r.querySelector('.a-pill'):null})()"
+    },
+    "activeStatusChip": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(t=>t.querySelector('.badge.active'));return r?r.querySelector('.badge.active'):null})()"
+    },
+    "inactivePlanChip": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(t=>t.querySelector('.badge.inactive'));return r?r.querySelector('.a-pill'):null})()"
+    },
+    "inactiveStatusChip": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(t=>t.querySelector('.badge.inactive'));return r?r.querySelector('.badge.inactive'):null})()"
+    },
+    "lastPageBtn": {
+      "js": "(()=>{const b=[...document.querySelectorAll('.pg-nums button.page-btn')];return b.length?b[b.length-1]:null})()"
+    },
+    "rowsPerPageBtn": {
+      "selector": "button.pg-per-page-btn"
+    },
+    "pgBar": {
+      "js": "(()=>{const n=document.querySelector('.pg-nums');return n?n.parentElement:null})()"
+    },
+    "savedChip": {
+      "selector": "table tbody span.a-pill.a-pill-green"
+    },
+    "cancelledChip": {
+      "selector": "table tbody span.a-pill.a-pill-red"
+    },
+    "downgradedChip": {
+      "selector": "table tbody span.a-pill.a-pill-amber"
+    },
+    "atRiskChip": {
+      "selector": "table tbody span.a-pill.a-pill-gray"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onCustomers": "location.pathname.endsWith('/crm-customers.html')",
+    "onRetention": "location.pathname.endsWith('/crm-retention-log.html')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "filtersOpen": "(()=>{const p=document.querySelector('#adv-panel');return !!p&&p.classList.contains('open')&&p.getBoundingClientRect().height>50})()",
+    "filtersClosed": "(()=>{const p=document.querySelector('#adv-panel');return !!p&&!p.classList.contains('open')})()",
+    "scrolledToFooter": "window.scrollY>700",
+    "scrolledToTop": "window.scrollY<10",
+    "searchFocused": "document.activeElement===document.querySelector('#customer-search')",
+    "searchBtnFocused": "!!document.activeElement&&document.activeElement.id==='search-btn'",
+    "searchFiltered": "(()=>{const i=document.querySelector('#customer-search');if(!i||i.value!=='pat')return false;const c=document.querySelector('table tbody tr td:nth-child(2)');return !!c&&/pat/i.test(c.textContent||'')})()",
+    "searchApplied": "(()=>{if(!document.activeElement||document.activeElement.id!=='search-btn')return false;const i=document.querySelector('#customer-search');if(!i||i.value!=='pat')return false;const c=document.querySelector('table tbody tr td:nth-child(2)');return !!c&&/pat/i.test(c.textContent||'')})()",
+    "fullListRestored": "(()=>{const i=document.querySelector('#customer-search');return !!i&&i.value===''&&document.querySelectorAll('table tbody tr').length>=20})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page stable before capture"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        2,
+        880
+      ],
+      "to": {
+        "target": "railCRM",
+        "offset": [
+          44,
+          120
+        ]
+      },
+      "note": "enter from left edge, settle beside the rail below CRM"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.0,
+      "key": "railCrmRect",
+      "target": "railCRM"
+    },
+    {
+      "op": "click",
+      "target": "railCRM",
+      "pressAt": 2.2,
+      "hoverMs": 380,
+      "postcondition": "onCustomers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1a: 'Open C-R-M' — rail CRM lands on the CRM Customers page with the sidebar expanded"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "customersStable1",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "sideCustomers",
+      "pressAt": 4.4,
+      "hoverMs": 360,
+      "postcondition": "onCustomers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1b: '...then Customers' — genuine sidebar Customers click (same-page nav; destination identical)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "customersStable2",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 5.8,
+      "key": "breadcrumbRect",
+      "target": "breadcrumb",
+      "requireStableMs": 300
+    },
+    {
+      "op": "move",
+      "at": 6.2,
+      "to": {
+        "point": [
+          1898,
+          300
+        ]
+      },
+      "note": "park in the right margin while p03 explains the screen"
+    },
+    {
+      "op": "move",
+      "at": 11.0,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 2: 'Start at the top' — cursor to the first KPI tile"
+    },
+    {
+      "op": "log-rects",
+      "at": 11.5,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiTile1",
+        "kpiTile2",
+        "kpiTile3",
+        "kpiTile4"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 11.8,
+      "key": "kpiStripRect",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "move",
+      "at": 12.9,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "sweep left-to-right across the four tiles during p05"
+    },
+    {
+      "op": "move",
+      "at": 13.8,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 14.8,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 17.2,
+      "to": {
+        "point": [
+          1898,
+          300
+        ]
+      },
+      "note": "park clear of the strip for p06-p07"
+    },
+    {
+      "op": "log-rects",
+      "at": 24.8,
+      "key": "insightCards",
+      "targets": [
+        "growthCard",
+        "planCard",
+        "riskCard"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 25.9,
+      "to": {
+        "target": "growthCard",
+        "offset": [
+          0,
+          60
+        ]
+      },
+      "note": "step 3: card sweep follows the spoken order (growth, plan, risk)"
+    },
+    {
+      "op": "move",
+      "at": 27.3,
+      "to": {
+        "target": "planCard",
+        "offset": [
+          0,
+          60
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 30.4,
+      "to": {
+        "target": "riskCard",
+        "offset": [
+          0,
+          60
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 33.5,
+      "to": {
+        "point": [
+          1898,
+          300
+        ]
+      },
+      "note": "park during 'You read these; you don't click into them'"
+    },
+    {
+      "op": "log-rect",
+      "at": 42.1,
+      "key": "eyebrowRect",
+      "target": "eyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 42.4,
+      "key": "cardTitleRect",
+      "target": "cardTitle"
+    },
+    {
+      "op": "move",
+      "at": 42.7,
+      "to": {
+        "point": [
+          260,
+          410
+        ]
+      },
+      "note": "step 4: settle left of the card header; highlights carry the eyebrow/title beats"
+    },
+    {
+      "op": "log-rects",
+      "at": 53.9,
+      "key": "actionButtons",
+      "targets": [
+        "retentionBtn",
+        "deleteBtn",
+        "addBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 56.4,
+      "to": {
+        "target": "retentionBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5: hover Retention Log ONLY while p17 names it — no click yet"
+    },
+    {
+      "op": "move",
+      "at": 60.3,
+      "to": {
+        "point": [
+          1350,
+          436
+        ]
+      },
+      "note": "pull clear of Delete / + Add Customer while the red do-not-click brackets show"
+    },
+    {
+      "op": "move",
+      "at": 67.7,
+      "to": {
+        "point": [
+          700,
+          425
+        ]
+      },
+      "note": "step 6: settle above the search box"
+    },
+    {
+      "op": "log-rect",
+      "at": 68.0,
+      "key": "searchWrapRect",
+      "target": "searchWrap"
+    },
+    {
+      "op": "log-rect",
+      "at": 68.3,
+      "key": "searchInputRect",
+      "target": "searchInput"
+    },
+    {
+      "op": "move",
+      "at": 80.9,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "step 7: settle just above the Filters control (inert gap between button row and search row)"
+    },
+    {
+      "op": "log-rect",
+      "at": 81.2,
+      "key": "filtersBtnRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "watch",
+      "key": "panelOpenDuringExplanation",
+      "from": 91.4,
+      "to": 94.6,
+      "predicate": "filtersOpen",
+      "everyMs": 400,
+      "mustHold": true
+    },
+    {
+      "op": "click",
+      "target": "filtersBtn",
+      "pressAt": 90.55,
+      "hoverMs": 380,
+      "postcondition": "filtersOpen",
+      "timeoutMs": 4000,
+      "note": "step 7: 'Open it' — the FILTER BY FIELD panel opens inside the p27 cue"
+    },
+    {
+      "op": "log-rect",
+      "at": 91.2,
+      "key": "advPanelRect",
+      "target": "advPanel",
+      "requireStableMs": 260
+    },
+    {
+      "op": "move",
+      "at": 92.0,
+      "to": {
+        "point": [
+          370,
+          570
+        ]
+      },
+      "note": "slow sweep down the panel's field rows (hover only; never near Apply Filters)"
+    },
+    {
+      "op": "move",
+      "at": 93.0,
+      "to": {
+        "point": [
+          370,
+          634
+        ]
+      }
+    },
+    {
+      "op": "click",
+      "target": "filtersBtn",
+      "pressAt": 95.15,
+      "hoverMs": 340,
+      "postcondition": "filtersClosed",
+      "timeoutMs": 4000,
+      "note": "step 7: close the panel via its genuine toggle before the columns block; badge untouched, nothing applied"
+    },
+    {
+      "op": "log-rect",
+      "at": 96.3,
+      "key": "theadRect",
+      "target": "theadRow",
+      "requireStableMs": 280
+    },
+    {
+      "op": "log-rects",
+      "at": 96.8,
+      "key": "columnHeads",
+      "targets": [
+        "thCustomer",
+        "thLocation",
+        "thPlan",
+        "thMemberSince",
+        "thStatus",
+        "thVisits",
+        "thTotalSpend",
+        "thLastVisit"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 97.2,
+      "key": "selectAllRect",
+      "target": "selectAll"
+    },
+    {
+      "op": "move",
+      "at": 97.4,
+      "to": {
+        "point": [
+          360,
+          490
+        ]
+      },
+      "note": "step 8: sweep along the header row, left to right"
+    },
+    {
+      "op": "move",
+      "at": 98.4,
+      "to": {
+        "point": [
+          1780,
+          490
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 100.3,
+      "to": {
+        "target": "selectAll",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "point out the checkbox column during p33 — hover only, boxes stay empty"
+    },
+    {
+      "op": "move",
+      "at": 104.0,
+      "to": {
+        "point": [
+          1898,
+          600
+        ]
+      }
+    },
+    {
+      "op": "log-rects",
+      "at": 115.95,
+      "key": "rowChips",
+      "targets": [
+        "activePlanChip",
+        "activeStatusChip",
+        "inactivePlanChip",
+        "inactiveStatusChip"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 116.25,
+      "key": "activeRowRect",
+      "target": "activeRow"
+    },
+    {
+      "op": "move",
+      "at": 116.45,
+      "to": {
+        "target": "activeRow",
+        "offset": [
+          -760,
+          0
+        ]
+      },
+      "note": "step 9: read one row across — start at its left end"
+    },
+    {
+      "op": "move",
+      "at": 117.6,
+      "to": {
+        "target": "activeRow",
+        "offset": [
+          530,
+          0
+        ]
+      },
+      "note": "sweep across the row during p35 (hover only; rows are links and are never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 123.3,
+      "to": {
+        "point": [
+          1898,
+          700
+        ]
+      }
+    },
+    {
+      "op": "key",
+      "pressAt": 131.5,
+      "keys": [
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowDown"
+      ],
+      "gapMs": 55,
+      "keyLabel": "Scroll to the footer",
+      "postcondition": "scrolledToFooter",
+      "timeoutMs": 4000,
+      "note": "step 10: 'Drop to the footer' — genuine keyboard scroll (engine key op has no text/PageDown support; ArrowDown carries a real keycode)"
+    },
+    {
+      "op": "watch",
+      "key": "footerInView",
+      "from": 133.5,
+      "to": 145.0,
+      "predicate": "scrolledToFooter",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "log-rect",
+      "at": 133.3,
+      "key": "lastPageRect",
+      "target": "lastPageBtn",
+      "requireStableMs": 260
+    },
+    {
+      "op": "log-rect",
+      "at": 133.7,
+      "key": "rowsPerPageRect",
+      "target": "rowsPerPageBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 134.0,
+      "key": "pgBarRect",
+      "target": "pgBar"
+    },
+    {
+      "op": "move",
+      "at": 134.3,
+      "to": {
+        "target": "rowsPerPageBtn",
+        "offset": [
+          0,
+          -44
+        ]
+      },
+      "note": "beside the rows-per-page selector as p39 names it"
+    },
+    {
+      "op": "move",
+      "at": 136.0,
+      "to": {
+        "target": "lastPageBtn",
+        "offset": [
+          -30,
+          -50
+        ]
+      },
+      "note": "over to the 65,753 last-page button (hover clear of it; never clicked)"
+    },
+    {
+      "op": "key",
+      "pressAt": 146.05,
+      "keys": [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowUp"
+      ],
+      "gapMs": 55,
+      "keyLabel": "Back to the top",
+      "postcondition": "scrolledToTop",
+      "timeoutMs": 4000,
+      "note": "return to the top on 'The strip up top...' so the KPI strip is on screen for p42-p43"
+    },
+    {
+      "op": "log-rect",
+      "at": 147.8,
+      "key": "kpiStripRect2",
+      "target": "kpiStrip",
+      "requireStableMs": 240
+    },
+    {
+      "op": "move",
+      "at": 148.2,
+      "to": {
+        "point": [
+          960,
+          143
+        ]
+      },
+      "note": "under the strip while p42 contrasts the two counts"
+    },
+    {
+      "op": "move",
+      "at": 151.3,
+      "to": {
+        "point": [
+          1300,
+          270
+        ]
+      },
+      "note": "drift toward the card's top-right during the p43 tail so the step-11 approach starts on cue"
+    },
+    {
+      "op": "click",
+      "target": "retentionBtn",
+      "pressAt": 156.0,
+      "hoverMs": 380,
+      "postcondition": "onRetention",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11: 'Click Retention Log' — press inside the cue's trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "retentionStable",
+      "predicate": "pageReady",
+      "settleMs": 700,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "watch",
+      "key": "retentionHold",
+      "from": 158.0,
+      "to": 191.0,
+      "predicate": "onRetention",
+      "everyMs": 600,
+      "mustHold": true
+    },
+    {
+      "op": "log-rect",
+      "at": 157.8,
+      "key": "rlBreadcrumbRect",
+      "target": "breadcrumb",
+      "requireStableMs": 260
+    },
+    {
+      "op": "log-rects",
+      "at": 158.2,
+      "key": "rlKpis",
+      "targets": [
+        "kpiTile1",
+        "kpiTile2",
+        "kpiTile3",
+        "kpiTile4"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 158.5,
+      "key": "rlStripRect",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "move",
+      "at": 158.8,
+      "to": {
+        "point": [
+          960,
+          143
+        ]
+      },
+      "note": "park under the Retention Log KPI strip for p46"
+    },
+    {
+      "op": "log-rect",
+      "at": 172.3,
+      "key": "rlTheadRect",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 172.8,
+      "key": "rlChips",
+      "targets": [
+        "savedChip",
+        "cancelledChip",
+        "downgradedChip",
+        "atRiskChip"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 173.95,
+      "to": {
+        "point": [
+          340,
+          517
+        ]
+      },
+      "note": "step 12: sweep the Retention Log header row while p50 lists the columns"
+    },
+    {
+      "op": "move",
+      "at": 175.1,
+      "to": {
+        "point": [
+          1700,
+          517
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 176.3,
+      "to": {
+        "target": "savedChip",
+        "offset": [
+          -130,
+          0
+        ]
+      },
+      "note": "beside the green Saved chip as p51 names it"
+    },
+    {
+      "op": "move",
+      "at": 179.85,
+      "to": {
+        "target": "downgradedChip",
+        "offset": [
+          -130,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 181.3,
+      "to": {
+        "target": "atRiskChip",
+        "offset": [
+          -130,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 183.6,
+      "to": {
+        "point": [
+          1898,
+          650
+        ]
+      },
+      "note": "park for p53"
+    },
+    {
+      "op": "move",
+      "at": 189.9,
+      "to": {
+        "point": [
+          430,
+          270
+        ]
+      },
+      "note": "drift left in the p53 silence tail so the step-13 approach starts on cue"
+    },
+    {
+      "op": "click",
+      "target": "sideCustomers",
+      "pressAt": 192.3,
+      "hoverMs": 360,
+      "postcondition": "onCustomers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 13: genuine sidebar Customers click back to the list (narration allows breadcrumb or sidebar; the breadcrumb crumb is a span, the sidebar is the live link)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "customersStable3",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 194.3,
+      "key": "returnBreadcrumbRect",
+      "target": "breadcrumb",
+      "requireStableMs": 260
+    },
+    {
+      "op": "move",
+      "at": 194.6,
+      "to": {
+        "point": [
+          1400,
+          300
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 199.5,
+      "to": {
+        "point": [
+          700,
+          425
+        ]
+      },
+      "note": "step 14: settle above the search box on the cue"
+    },
+    {
+      "op": "log-rect",
+      "at": 199.9,
+      "key": "searchWrapRect2",
+      "target": "searchWrap"
+    },
+    {
+      "op": "click",
+      "target": "searchInput",
+      "pressAt": 201.2,
+      "hoverMs": 360,
+      "postcondition": "searchFocused",
+      "timeoutMs": 4000,
+      "note": "step 14: genuine click into the search box — caret lands before the typing"
+    },
+    {
+      "op": "type",
+      "pressAt": 201.9,
+      "text": "pat",
+      "perCharMs": 95,
+      "keyLabel": "type: pat",
+      "postcondition": "searchFiltered",
+      "timeoutMs": 4000,
+      "note": "step 14: type the first letters of PATRICIA A COOK (a name visibly on screen pre-filter, probe-verified); the live table filters as typed — pagination drops 65,753 -> 473 pages, PATRICIA rows on top"
+    },
+    {
+      "op": "log-rect",
+      "at": 202.7,
+      "key": "searchBtnRect",
+      "target": "searchBtn"
+    },
+    {
+      "op": "click",
+      "target": "searchBtn",
+      "pressAt": 204.05,
+      "hoverMs": 320,
+      "postcondition": "searchApplied",
+      "timeoutMs": 4000,
+      "note": "step 14: '...then hit Search' — genuine Search press inside the cue tail; filtered result verified live (value 'pat' + first-row match)"
+    },
+    {
+      "op": "log-rect",
+      "at": 204.9,
+      "key": "firstRowRect",
+      "target": "activeRow",
+      "requireStableMs": 240,
+      "note": "first matched row (PATRICIA A COOK) for the p58 highlight"
+    },
+    {
+      "op": "watch",
+      "key": "searchFilteredHold",
+      "from": 205.2,
+      "to": 212.6,
+      "predicate": "searchFiltered",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 205.4,
+      "to": {
+        "target": "activeRow",
+        "offset": [
+          -680,
+          0
+        ]
+      },
+      "note": "beside the first matched row while p58 'collapses to just the matches' plays"
+    },
+    {
+      "op": "move",
+      "at": 211.4,
+      "to": {
+        "point": [
+          820,
+          520
+        ]
+      },
+      "note": "drift toward the search box in the p59 tail so the step-15 approach starts on cue"
+    },
+    {
+      "op": "click",
+      "target": "searchInput",
+      "pressAt": 212.95,
+      "hoverMs": 340,
+      "postcondition": "searchFocused",
+      "timeoutMs": 4000,
+      "note": "step 15: 'Clear the box' — genuine click back into the box holding 'pat'"
+    },
+    {
+      "op": "key",
+      "pressAt": 213.5,
+      "keys": [
+        "ctrl+a",
+        "Backspace"
+      ],
+      "gapMs": 240,
+      "keyLabel": "Ctrl+A · Backspace",
+      "postcondition": "fullListRestored",
+      "timeoutMs": 4000,
+      "note": "step 15: genuine keyboard clear (pressKey now carries real keycodes: a=65, Backspace=8; probe-verified select-3 then empty value) — the live table snaps back to the full unfiltered list during p61"
+    },
+    {
+      "op": "assert",
+      "at": 215.0,
+      "predicate": "fullListRestored",
+      "note": "belt-and-braces: empty box + full table still true as the recap starts"
+    },
+    {
+      "op": "log-rect",
+      "at": 215.3,
+      "key": "theadRect2",
+      "target": "theadRow"
+    },
+    {
+      "op": "move",
+      "at": 217.3,
+      "to": {
+        "point": [
+          1898,
+          860
+        ]
+      },
+      "note": "final park in the right margin, clear of rows and captions"
+    },
+    {
+      "op": "assert",
+      "at": 229.5,
+      "predicate": "onCustomers"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "breadcrumbRect",
+        "place": "below-left",
+        "from": 6.2,
+        "to": 10.2
+      },
+      {
+        "n": 2,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 12.5,
+        "to": 18.7
+      },
+      {
+        "n": 3,
+        "anchor": "insightCards.growthCard",
+        "place": "left",
+        "from": 25.0,
+        "to": 32.4
+      },
+      {
+        "n": 4,
+        "anchor": "eyebrowRect",
+        "place": "left",
+        "from": 42.9,
+        "to": 47.5
+      },
+      {
+        "n": 5,
+        "anchor": "actionButtons.retentionBtn",
+        "place": "below-left",
+        "from": 54.2,
+        "to": 59.2
+      },
+      {
+        "n": 6,
+        "anchor": "searchWrapRect",
+        "place": "left-top",
+        "from": 68.2,
+        "to": 73.3
+      },
+      {
+        "n": 7,
+        "anchor": "filtersBtnRect",
+        "place": "left-top",
+        "from": 83.2,
+        "to": 88.3
+      },
+      {
+        "n": 8,
+        "anchor": "theadRect",
+        "place": "left-top",
+        "from": 96.6,
+        "to": 103.4
+      },
+      {
+        "n": 9,
+        "anchor": "rowChips.activeStatusChip",
+        "place": "right",
+        "from": 116.6,
+        "to": 122.4
+      },
+      {
+        "n": 10,
+        "anchor": "lastPageRect",
+        "place": "left-top",
+        "from": 133.7,
+        "to": 141.0
+      },
+      {
+        "n": 11,
+        "anchor": "rlStripRect",
+        "place": "below-left",
+        "from": 158.6,
+        "to": 166.0
+      },
+      {
+        "n": 12,
+        "anchor": "rlChips.savedChip",
+        "place": "left",
+        "from": 174.1,
+        "to": 182.1
+      },
+      {
+        "n": 13,
+        "anchor": "returnBreadcrumbRect",
+        "place": "below-left",
+        "from": 194.4,
+        "to": 198.5
+      },
+      {
+        "n": 14,
+        "anchor": "searchWrapRect2",
+        "place": "left-top",
+        "from": 200.3,
+        "to": 206.6
+      },
+      {
+        "n": 15,
+        "anchor": "theadRect2",
+        "place": "left-top",
+        "from": 215.5,
+        "to": 219.0
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "kpiStripRect",
+        "from": 12.62,
+        "to": 18.89,
+        "note": "p05-p06: the four headline numbers"
+      },
+      {
+        "anchor": "insightCards.growthCard",
+        "from": 25.84,
+        "to": 27.21
+      },
+      {
+        "anchor": "insightCards.planCard",
+        "from": 27.21,
+        "to": 30.25
+      },
+      {
+        "anchor": "insightCards.riskCard",
+        "from": 30.25,
+        "to": 32.68
+      },
+      {
+        "anchor": "eyebrowRect",
+        "from": 43.77,
+        "to": 45.05,
+        "note": "p14: 'The eyebrow labels it the member database'"
+      },
+      {
+        "anchor": "cardTitleRect",
+        "from": 45.05,
+        "to": 46.35,
+        "note": "p14: '...and the title reads Customer List'"
+      },
+      {
+        "anchor": "actionButtons.retentionBtn",
+        "from": 56.3,
+        "to": 59.46
+      },
+      {
+        "anchor": "actionButtons.deleteBtn",
+        "from": 60.43,
+        "to": 64.52,
+        "color": "#dc2626",
+        "note": "p18 guardrail: Delete is never clicked"
+      },
+      {
+        "anchor": "actionButtons.addBtn",
+        "from": 60.43,
+        "to": 64.52,
+        "color": "#dc2626",
+        "note": "p18 guardrail: + Add Customer is never clicked"
+      },
+      {
+        "anchor": "searchInputRect",
+        "from": 71.45,
+        "to": 73.43,
+        "note": "p22: the placeholder names the searchable fields"
+      },
+      {
+        "anchor": "filtersBtnRect",
+        "from": 85.31,
+        "to": 88.42,
+        "note": "p26: the badge area on the Filters control (badge renders only when count > 0 — see residual R2)"
+      },
+      {
+        "anchor": "advPanelRect",
+        "from": 91.9,
+        "to": 94.6,
+        "note": "p28: panel genuinely open in this window only"
+      },
+      {
+        "anchor": "theadRect",
+        "from": 96.98,
+        "to": 99.66,
+        "note": "p30-p32: the eight headers"
+      },
+      {
+        "anchor": "selectAllRect",
+        "from": 99.98,
+        "to": 103.2,
+        "note": "p33: the checkbox column stays empty"
+      },
+      {
+        "anchor": "rowChips.activePlanChip",
+        "from": 117.57,
+        "to": 119.25
+      },
+      {
+        "anchor": "rowChips.activeStatusChip",
+        "from": 119.25,
+        "to": 120.92
+      },
+      {
+        "anchor": "rowChips.activeStatusChip",
+        "from": 121.54,
+        "to": 122.59,
+        "note": "p36: 'Active is green'"
+      },
+      {
+        "anchor": "rowChips.inactiveStatusChip",
+        "from": 121.54,
+        "to": 122.59,
+        "note": "p36: '...inactive is grey'"
+      },
+      {
+        "anchor": "rowsPerPageRect",
+        "from": 133.8,
+        "to": 135.6,
+        "note": "p39: twenty-five rows a page"
+      },
+      {
+        "anchor": "lastPageRect",
+        "from": 135.6,
+        "to": 137.8,
+        "note": "p39: the 65,753 last-page button"
+      },
+      {
+        "anchor": "kpiStripRect2",
+        "from": 148.0,
+        "to": 150.75,
+        "note": "p42: 'The strip up top...' after the genuine scroll back"
+      },
+      {
+        "anchor": "rlBreadcrumbRect",
+        "from": 157.9,
+        "to": 159.6,
+        "note": "p45: page identity — CRM › Retention Log"
+      },
+      {
+        "anchor": "rlStripRect",
+        "from": 160.47,
+        "to": 162.22,
+        "note": "p46: its own four numbers"
+      },
+      {
+        "anchor": "rlTheadRect",
+        "from": 173.89,
+        "to": 175.39,
+        "note": "p50: the five columns"
+      },
+      {
+        "anchor": "rlChips.savedChip",
+        "from": 175.75,
+        "to": 177.6
+      },
+      {
+        "anchor": "rlChips.cancelledChip",
+        "from": 177.6,
+        "to": 179.43
+      },
+      {
+        "anchor": "rlChips.downgradedChip",
+        "from": 179.73,
+        "to": 181.0
+      },
+      {
+        "anchor": "rlChips.atRiskChip",
+        "from": 181.0,
+        "to": 182.31
+      },
+      {
+        "anchor": "returnBreadcrumbRect",
+        "from": 194.5,
+        "to": 197.2,
+        "note": "p55: back on CRM › Customers"
+      },
+      {
+        "anchor": "searchBtnRect",
+        "from": 202.8,
+        "to": 204.13,
+        "note": "p57: '...then hit Search'"
+      },
+      {
+        "anchor": "firstRowRect",
+        "from": 205.2,
+        "to": 206.86,
+        "note": "p58: the first matched row — the table genuinely collapsed to /pat/ matches while typing"
+      },
+      {
+        "anchor": "theadRect2",
+        "from": 215.5,
+        "to": 216.75,
+        "note": "p61 tail: the full list back on screen, untouched, after the genuine keyboard clear"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 11.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 11.9,
+        "z": 1.35,
+        "cx": 960,
+        "cy": 400,
+        "ease": true,
+        "note": "KPI strip + insight-card band"
+      },
+      {
+        "t": 41.4,
+        "z": 1.35,
+        "cx": 960,
+        "cy": 400
+      },
+      {
+        "t": 42.4,
+        "z": 1.5,
+        "cx": 800,
+        "cy": 430,
+        "ease": true,
+        "note": "close framing on the card eyebrow + title"
+      },
+      {
+        "t": 53.0,
+        "z": 1.5,
+        "cx": 800,
+        "cy": 430
+      },
+      {
+        "t": 54.0,
+        "z": 1.4,
+        "cx": 1234,
+        "cy": 430,
+        "ease": true,
+        "note": "slide right to the three action buttons"
+      },
+      {
+        "t": 66.5,
+        "z": 1.4,
+        "cx": 1234,
+        "cy": 430
+      },
+      {
+        "t": 67.5,
+        "z": 1.2,
+        "cx": 1080,
+        "cy": 491,
+        "ease": true,
+        "note": "search row in context (input through Search button)"
+      },
+      {
+        "t": 70.6,
+        "z": 1.2,
+        "cx": 1080,
+        "cy": 491
+      },
+      {
+        "t": 71.5,
+        "z": 1.5,
+        "cx": 992,
+        "cy": 500,
+        "ease": true,
+        "note": "placeholder text legible while p22 reads it"
+      },
+      {
+        "t": 74.5,
+        "z": 1.5,
+        "cx": 992,
+        "cy": 500
+      },
+      {
+        "t": 75.6,
+        "z": 1.15,
+        "cx": 1080,
+        "cy": 520,
+        "ease": true,
+        "note": "calm framing held through Filters open/close and the whole column walk"
+      },
+      {
+        "t": 115.5,
+        "z": 1.15,
+        "cx": 1080,
+        "cy": 520
+      },
+      {
+        "t": 116.5,
+        "z": 1.45,
+        "cx": 860,
+        "cy": 650,
+        "ease": true,
+        "note": "close framing on the chip rows (one Active, one Inactive in frame)"
+      },
+      {
+        "t": 130.3,
+        "z": 1.45,
+        "cx": 860,
+        "cy": 650
+      },
+      {
+        "t": 131.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the genuine scroll to the footer"
+      },
+      {
+        "t": 133.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 133.9,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 720,
+        "ease": true,
+        "note": "punch in on the pagination footer / 65,753"
+      },
+      {
+        "t": 144.9,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 720
+      },
+      {
+        "t": 145.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide before the scroll back; held through the strip contrast and the Retention Log nav"
+      },
+      {
+        "t": 159.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 160.5,
+        "z": 1.15,
+        "cx": 1085,
+        "cy": 470,
+        "ease": true,
+        "note": "Retention Log KPI strip readable"
+      },
+      {
+        "t": 171.5,
+        "z": 1.15,
+        "cx": 1085,
+        "cy": 470
+      },
+      {
+        "t": 172.4,
+        "z": 1.18,
+        "cx": 1096,
+        "cy": 560,
+        "ease": true,
+        "note": "settle down to the event table for the chip walk"
+      },
+      {
+        "t": 190.6,
+        "z": 1.18,
+        "cx": 1096,
+        "cy": 560
+      },
+      {
+        "t": 191.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the return navigation"
+      },
+      {
+        "t": 199.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 200.5,
+        "z": 1.2,
+        "cx": 1080,
+        "cy": 500,
+        "ease": true,
+        "note": "search demonstration framing"
+      },
+      {
+        "t": 208.9,
+        "z": 1.2,
+        "cx": 1080,
+        "cy": 500
+      },
+      {
+        "t": 210.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the recap and completion"
+      },
+      {
+        "t": 232.986,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Customer List — Complete",
+      "from": 231.2,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 230.9
+  },
+  "output": "WC-02-01-customer-list-v1.1",
+  "orderedMentions": [
+    "CRM",
+    "Customers",
+    "Total Customers",
+    "Active Members",
+    "At Risk",
+    "Prospects",
+    "Member Growth",
+    "Plan Distribution",
+    "Risk Profile",
+    "Customer List",
+    "Retention Log",
+    "Delete",
+    "Add Customer",
+    "Filters",
+    "Customer",
+    "Location",
+    "Plan",
+    "Member Since",
+    "Status",
+    "Visits",
+    "Total Spend",
+    "Last Visit",
+    "Active",
+    "Inactive",
+    "Retention Log",
+    "Saved",
+    "Cancelled",
+    "Downgraded",
+    "At Risk",
+    "Search"
+  ],
+  "neverClick": [
+    "delete",
+    "+ add customer",
+    "apply filters",
+    "clear all",
+    "logout",
+    "log out now",
+    "row checkboxes / select-all",
+    "customer table rows (row-link)",
+    "pagination page buttons",
+    "rows-per-page selector",
+    "ask shyne",
+    "send"
+  ]
+}

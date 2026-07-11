@@ -1,0 +1,302 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.397
+This is the Command Center, the first screen your network hands you.
+
+p02
+00:00:03.761 --> 00:00:05.458
+It looks like a wall of numbers. It isn't.
+
+p03
+00:00:05.722 --> 00:00:08.946
+It's a triage board, stacked top to bottom.
+
+p04
+00:00:09.414 --> 00:00:12.726
+Read the stack in order, and the thing that needs you rises to the top.
+
+p05
+00:00:13.276 --> 00:00:15.042
+First panel, the mobile app.
+
+p06
+00:00:15.769 --> 00:00:20.308
+That Live tag means the figures move on their own, refreshing as members open the app.
+
+p07
+00:00:20.805 --> 00:00:24.570
+You're reading its pulse right now, not a report someone ran this morning.
+
+p08
+00:00:25.195 --> 00:00:29.627
+For a network pushing an app, this is the first read on whether members actually use it.
+
+p09
+00:00:30.070 --> 00:00:31.296
+Four cards across.
+
+p10
+00:00:32.218 --> 00:00:35.034
+Installs, weekly actives, redemptions, opt-in rate.
+
+p11
+00:00:35.242 --> 00:00:35.989
+Linger on redemptions: it splits Q-R scans from kiosk taps,
+
+p12
+00:00:36.921 --> 00:00:38.276
+so you see whether members cash in at the phone or at the machine.
+
+p13
+00:00:38.492 --> 00:00:48.000
+That split tells you which channel is carrying the program.
+
+p14
+00:00:48.384 --> 00:00:49.772
+Scroll to the map panel.
+
+p15
+00:00:50.665 --> 00:00:52.405
+The heading counts the whole network: a hundred forty-four sites across seven states.
+
+p16
+00:00:52.885 --> 00:00:55.526
+That color key beside it, healthy, warning, critical, is the same key the pins use.
+
+p17
+00:00:56.066 --> 00:01:06.560
+Once you know the key, the map tells you where to look without reading a single label.
+
+p18
+00:01:06.958 --> 00:01:08.804
+Down the left, four vitals.
+
+p19
+00:01:09.115 --> 00:01:10.959
+Money in today, who's active, cars through the tunnels,
+
+p20
+00:01:11.344 --> 00:01:14.569
+and the share of card charges that bounced.
+
+p21
+00:01:14.930 --> 00:01:19.057
+That last one, the decline rate, is what a support tech watches closest,
+
+p22
+00:01:19.368 --> 00:01:23.658
+because a climbing decline rate usually means a billing problem, not a slow day.
+
+p23
+00:01:24.096 --> 00:01:25.408
+Now the map itself.
+
+p24
+00:01:26.517 --> 00:01:28.746
+Every pin is a wash, colored by health, so a red dot is a site in trouble at a glance.
+
+p25
+00:01:29.188 --> 00:01:32.108
+Hover one and it shows that site's revenue, members, and tickets, with a link to open it.
+
+p26
+00:01:32.683 --> 00:01:41.951
+Not today, though. We're reading the network, not diving into a single site.
+
+p27
+00:01:42.410 --> 00:01:44.531
+Click Active States, then Full USA.
+
+p28
+00:01:44.531 --> 00:01:47.889
+The map reframes, and that's all it does.
+
+p29
+00:01:47.889 --> 00:01:49.559
+This toggle is view-only.
+
+p30
+00:01:49.559 --> 00:01:53.801
+It changes the shot, never the data, and never the panels below.
+
+p31
+00:01:53.801 --> 00:01:55.861
+One click puts it back.
+
+p32
+00:01:56.415 --> 00:01:57.786
+Here's the heart of the page.
+
+p33
+00:01:58.293 --> 00:01:59.802
+Priority Intelligence, eleven items, four urgent.
+
+p34
+00:02:00.005 --> 00:02:02.036
+It's your triage feed, sorted by severity,
+
+p35
+00:02:02.671 --> 00:02:05.232
+and every row is a door onto the module where you'd actually fix it.
+
+p36
+00:02:05.455 --> 00:02:12.604
+For a support tech, this is the panel you scan first.
+
+p37
+00:02:13.055 --> 00:02:14.566
+Top of the feed, Critical.
+
+p38
+00:02:15.017 --> 00:02:20.204
+Two rows, and this is where a downed P-O-S shows up first, before the phone even rings.
+
+p39
+00:02:20.649 --> 00:02:23.621
+Open jumps you to reconciliation to work the outage.
+
+p40
+00:02:24.058 --> 00:02:27.742
+Review drops you into Support for the tickets about to breach their S-L-A.
+
+p41
+00:02:28.181 --> 00:02:30.037
+Next tier, High Priority.
+
+p42
+00:02:30.419 --> 00:02:36.768
+A kiosk printer down, a site's conversion slipping.
+
+p43
+00:02:37.208 --> 00:02:38.523
+Not on fire yet, but they will be if they sit.
+
+p44
+00:02:38.820 --> 00:02:42.747
+Watch the verbs shift: Assign hands the work off, Analyze opens the numbers behind it.
+
+p45
+00:02:43.229 --> 00:02:44.139
+Now the money.
+
+p46
+00:02:44.740 --> 00:02:45.719
+Revenue Plays, five suggestions worth thirty-two hundred dollars today,
+
+p47
+00:02:46.054 --> 00:02:49.019
+each tagged with what it's worth.
+
+p48
+00:02:49.418 --> 00:02:50.877
+Read them as prompts, not orders.
+
+p49
+00:02:51.413 --> 00:02:53.424
+Launch, Target, Recover, those fire real outreach to real customers,
+
+p50
+00:02:54.153 --> 00:03:02.312
+so on a live tenant you look, you don't press.
+
+p51
+00:03:02.744 --> 00:03:03.491
+Last group, Automations.
+
+p52
+00:03:03.772 --> 00:03:04.592
+Two jobs already running with no one steering,
+
+p53
+00:03:05.210 --> 00:03:13.090
+a win-back text sequence and the payment retry engine, quietly clawing back failed charges.
+
+p54
+00:03:13.796 --> 00:03:16.413
+Inspect and View check on them without touching a thing,
+
+p55
+00:03:16.818 --> 00:03:19.352
+which is just what you want with something already working.
+
+p56
+00:03:19.778 --> 00:03:21.935
+One habit ties this panel together.
+
+p57
+00:03:22.302 --> 00:03:24.381
+Read the arrow before you click.
+
+p58
+00:03:24.812 --> 00:03:28.557
+Open, Review, View, those take you somewhere to look.
+
+p59
+00:03:28.958 --> 00:03:31.585
+Launch, Target, Recover, Assign, those start something.
+
+p60
+00:03:31.874 --> 00:03:33.190
+Read arrows are safe.
+
+p61
+00:03:33.636 --> 00:03:39.003
+Action arrows you leave alone here, on a shared live tenant.
+
+p62
+00:03:39.476 --> 00:03:40.201
+To the right, Action Ownership.
+
+p63
+00:03:40.423 --> 00:03:41.483
+Same items, now answered by who owns them and when they're due.
+
+p64
+00:03:41.781 --> 00:03:45.321
+Regional Ops on the outage within the half hour, Support on the aging tickets,
+
+p65
+00:03:45.746 --> 00:03:55.227
+Marketing and Revenue on the plays.
+
+p66
+00:03:55.429 --> 00:03:56.640
+It answers the question a manager always asks: whose job is this.
+
+p67
+00:03:57.084 --> 00:03:59.000
+At the bottom, Ask MAIA.
+
+p68
+00:03:59.506 --> 00:04:03.885
+Five plain-language shortcuts, each jumping straight to the module that answers it.
+
+p69
+00:04:04.571 --> 00:04:10.086
+Worth flagging: the header button reads Ask Shyne, this panel reads Ask MAIA.
+
+p70
+00:04:10.447 --> 00:04:15.677
+Two names, so we don't tell a client they're one feature yet, and we send neither one today.
+
+p71
+00:04:16.129 --> 00:04:18.630
+Scroll back up, and you've got the whole board.
+
+p72
+00:04:19.166 --> 00:04:25.120
+App engagement, the network map, the priority feed, who owns what, and a shortcut to ask.
+
+p73
+00:04:25.649 --> 00:04:27.386
+Five panels, one screen.
+
+p74
+00:04:27.783 --> 00:04:31.975
+Read it top to bottom, and never click an arrow until you know which kind it is.
+
+p75
+00:04:32.427 --> 00:04:36.237
+Do that, and the Command Center works for you, not against you.
+

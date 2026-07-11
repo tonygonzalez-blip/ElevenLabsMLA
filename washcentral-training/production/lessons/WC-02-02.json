@@ -1,0 +1,360 @@
+{
+  "lesson": "WC-02-02",
+  "title": "Customer 360",
+  "audioMaster": "training/module02-crm/WC-02-02-full-narration-v1.0.mp3",
+  "audioDurationS": 315.716,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/crm-customers.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "custRow": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "avatar": {
+      "selector": ".a-avatar"
+    },
+    "nameRow": {
+      "selector": ".a-name-row"
+    },
+    "idLine": {
+      "selector": ".a-meta-id"
+    },
+    "planBadge": {
+      "selector": ".a-plan-badge"
+    },
+    "chipRow": {
+      "selector": ".a-badges"
+    },
+    "chip1": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][0]"
+    },
+    "chip2": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][1]"
+    },
+    "chip3": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][2]"
+    },
+    "chip4": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][3]"
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top .a-btn')].find(e=>/Back/.test(e.textContent||''))"
+    },
+    "deleteBtn": {
+      "js": "document.querySelector('.a-hero-top .a-btn-danger')"
+    },
+    "editBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top .a-btn')].find(e=>/Edit Customer/.test(e.textContent||''))"
+    },
+    "actionsBtn": {
+      "selector": "#hero-actions-btn"
+    },
+    "metricBand": {
+      "js": "document.querySelector('.a-metrics') || document.querySelector('.a-metric')?.parentElement"
+    },
+    "tile1": {
+      "js": "[...document.querySelectorAll('.a-metric')][0]"
+    },
+    "tile2": {
+      "js": "[...document.querySelectorAll('.a-metric')][1]"
+    },
+    "tile3": {
+      "js": "[...document.querySelectorAll('.a-metric')][2]"
+    },
+    "tile4": {
+      "js": "[...document.querySelectorAll('.a-metric')][3]"
+    },
+    "tile5": {
+      "js": "[...document.querySelectorAll('.a-metric')][4]"
+    },
+    "tile6": {
+      "js": "[...document.querySelectorAll('.a-metric')][5]"
+    },
+    "relatedRow": {
+      "js": "document.querySelector('.a-related') || [...document.querySelectorAll('*')].find(e=>/^RELATED$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)?.parentElement"
+    },
+    "relChip1": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][0]"
+    },
+    "relChip2": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][1]"
+    },
+    "relChip3": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][2]"
+    },
+    "relChip5": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][4]"
+    },
+    "relChip7": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][6]"
+    },
+    "tabBar": {
+      "js": "document.querySelector('.a-tab-nav') || document.querySelector('.a-tab-btn')?.parentElement"
+    },
+    "tabOverview": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Overview')"
+    },
+    "tabContact": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Contact')"
+    },
+    "tabMembership": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Membership')"
+    },
+    "tabPayments": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Payments')"
+    },
+    "tabVehicles": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Vehicles')"
+    },
+    "tabLinked": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Linked Accounts')"
+    },
+    "tabActivity": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Activity')"
+    },
+    "tabMessaging": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Messaging')"
+    },
+    "tabNotes": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Notes')"
+    },
+    "panelActive": {
+      "js": "document.querySelector('.a-panel.active') || document.querySelector('.a-panel')"
+    },
+    "ovSnap": {
+      "js": "[...document.querySelectorAll('.a-panel.active *')].find(e=>/Customer 360 Snapshot/.test(e.textContent||'')&&e.children.length<=6&&e.getBoundingClientRect().width>300)"
+    },
+    "regenBtn": {
+      "selector": ".ai-summary-action"
+    },
+    "msgCompose": {
+      "js": "document.querySelector('.a-panel.active textarea') || [...document.querySelectorAll('textarea')].find(e=>/Type a message/i.test(e.placeholder||''))"
+    },
+    "sendBtn": {
+      "selector": ".cx-send-btn"
+    },
+    "saveNoteBtn": {
+      "js": "[...document.querySelectorAll('.a-panel.active button, button')].find(e=>(e.textContent||'').trim()==='Save Note')"
+    },
+    "actionsMenu": {
+      "js": "[...document.querySelectorAll('#hero-actions-wrap *')].filter(e=>{const t=e.textContent||'';const r=e.getBoundingClientRect();return /Issue Wash/.test(t)&&/Refund Customer/.test(t)&&r.width>0&&r.width<420&&r.height>40&&r.height<220&&r.top>110}).sort((a,b)=>{const x=a.getBoundingClientRect(),y=b.getBoundingClientRect();return x.width*x.height-y.width*y.height})[0]"
+    },
+    "issueWash": {
+      "js": "[...document.querySelectorAll('#hero-actions-wrap button')].find(e=>(e.textContent||'').trim()==='Issue Wash'&&e.offsetParent!==null)"
+    },
+    "refund": {
+      "js": "[...document.querySelectorAll('#hero-actions-wrap button')].find(e=>(e.textContent||'').trim()==='Refund Customer'&&e.offsetParent!==null)"
+    }
+  },
+  "predicates": {
+    "onList": "location.pathname.endsWith('/crm-customers.html')",
+    "onDetail": "location.pathname.endsWith('/crm-customer-detail.html')",
+    "pageReady": "document.readyState==='complete' && !![...document.querySelectorAll('.a-tab-btn')].length && ![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "overviewShown": "!!document.querySelector('.a-panel.active') && /Customer 360 Snapshot/.test(document.querySelector('.a-panel.active').innerText)",
+    "contactShown": "!!document.querySelector('.a-panel.active') && /PERSONAL & BUSINESS/.test(document.querySelector('.a-panel.active').innerText)",
+    "membershipShown": "!!document.querySelector('.a-panel.active') && /VISIT & SPEND STATS/.test(document.querySelector('.a-panel.active').innerText)",
+    "paymentsShown": "!!document.querySelector('.a-panel.active') && /PAYMENT METHODS/.test(document.querySelector('.a-panel.active').innerText)",
+    "vehiclesShown": "!!document.querySelector('.a-panel.active') && /VEHICLES ON ACCOUNT/.test(document.querySelector('.a-panel.active').innerText)",
+    "linkedShown": "!!document.querySelector('.a-panel.active') && /LINKED ACCOUNTS/.test(document.querySelector('.a-panel.active').innerText)",
+    "activityShown": "!!document.querySelector('.a-panel.active') && /VISIT & TRANSACTION HISTORY/.test(document.querySelector('.a-panel.active').innerText)",
+    "messagingShown": "!!document.querySelector('.a-panel.active') && /TWO-WAY MESSAGING/.test(document.querySelector('.a-panel.active').innerText)",
+    "notesShown": "!!document.querySelector('.a-panel.active') && /Communication History/.test(document.querySelector('.a-panel.active').innerText)",
+    "actionsMenuOpen": "!![...document.querySelectorAll('#hero-actions-wrap button')].find(e=>{const t=(e.textContent||'').trim();const r=e.getBoundingClientRect();return t==='Issue Wash'&&r.width>0&&r.height>0&&e.offsetParent!==null})",
+    "actionsMenuClosed": "![...document.querySelectorAll('#hero-actions-wrap button')].find(e=>{const t=(e.textContent||'').trim();const r=e.getBoundingClientRect();return t==='Issue Wash'&&r.width>0&&r.height>0&&e.offsetParent!==null})"
+  },
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onList", "note": "start on the Customer List, stable before capture" },
+    { "op": "pointer-enter", "at": 0.35, "from": [1919, 640], "to": { "target": "custRow", "offset": [-360, 0] }, "note": "enter from right edge toward the first customer row" },
+    { "op": "log-rect", "at": 1.0, "key": "custRowRect", "target": "custRow" },
+    { "op": "move", "at": 1.1, "to": { "target": "custRow", "offset": [-360, 0] }, "note": "settle on the row during 'Click one row'" },
+    { "op": "click", "target": "custRow", "pressAt": 2.35, "hoverMs": 420, "postcondition": "onDetail", "timeoutMs": 8000, "nav": true, "clickPoint": [600, 0], "note": "step 1: genuine row click opens Customer 360; land inside the p01 trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "detailStable", "predicate": "pageReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 4.0, "key": "hdr", "targets": ["idLine", "chipRow", "deleteBtn", "editBtn", "actionsBtn", "metricBand", "relatedRow", "tabBar", "avatar", "planBadge", "nameRow"] },
+    { "op": "move", "at": 4.4, "to": { "target": "metricBand", "offset": [780, 0], "outside": true }, "note": "rest clear of the record while p02-p05 explain the whole page" },
+    { "op": "move", "at": 16.25, "to": { "target": "avatar", "offset": [0, 0] }, "note": "step 2: begin the header identity sweep at the avatar (cue p06)" },
+    { "op": "move", "at": 17.7, "to": { "target": "nameRow", "offset": [-560, 0] }, "note": "to the member name" },
+    { "op": "move", "at": 19.3, "to": { "target": "planBadge", "offset": [0, 0] }, "note": "to the plan badge" },
+    { "op": "move", "at": 20.8, "to": { "target": "idLine", "offset": [0, 0] }, "note": "to the identifier line (who / plan / where / status)" },
+    { "op": "move", "at": 34.7, "to": { "target": "chip1", "offset": [0, 0] }, "note": "step 3: status chips sweep (cue p11)" },
+    { "op": "move", "at": 36.4, "to": { "target": "chip2", "offset": [0, 0] } },
+    { "op": "move", "at": 37.6, "to": { "target": "chip3", "offset": [0, 0] } },
+    { "op": "move", "at": 38.7, "to": { "target": "chip4", "offset": [0, 0] } },
+    { "op": "move", "at": 50.9, "to": { "target": "backBtn", "offset": [0, 0] }, "note": "step 4: header buttons sweep (cue p15) — read only, never click" },
+    { "op": "move", "at": 52.2, "to": { "target": "deleteBtn", "offset": [0, 0] }, "note": "point out Delete; STOP warning, never clicked" },
+    { "op": "move", "at": 53.6, "to": { "target": "editBtn", "offset": [0, 0] } },
+    { "op": "move", "at": 55.4, "to": { "target": "actionsBtn", "offset": [0, 0] }, "note": "Actions, opened later at step 16" },
+    { "op": "move", "at": 58.9, "to": { "target": "deleteBtn", "offset": [0, -34], "outside": true }, "note": "park just above Delete while p19 warns 'never touch'" },
+    { "op": "move", "at": 65.5, "to": { "target": "tile1", "offset": [0, 0] }, "note": "step 5: metric band sweep (cue p20)" },
+    { "op": "move", "at": 69.2, "to": { "target": "tile2", "offset": [0, 0] } },
+    { "op": "move", "at": 71.7, "to": { "target": "tile3", "offset": [0, 0] } },
+    { "op": "move", "at": 73.2, "to": { "target": "tile4", "offset": [0, 0] } },
+    { "op": "move", "at": 74.7, "to": { "target": "tile5", "offset": [0, 0] } },
+    { "op": "move", "at": 76.1, "to": { "target": "tile6", "offset": [0, 0] } },
+    { "op": "move", "at": 87.7, "to": { "target": "relChip1", "offset": [0, 0] }, "note": "step 6: Related chips sweep (cue p26)" },
+    { "op": "move", "at": 90.3, "to": { "target": "relChip2", "offset": [0, 0] } },
+    { "op": "move", "at": 93.6, "to": { "target": "relChip3", "offset": [0, 0] } },
+    { "op": "move", "at": 96.0, "to": { "target": "relChip5", "offset": [0, 0] } },
+    { "op": "move", "at": 98.5, "to": { "target": "relChip7", "offset": [0, 0] } },
+    { "op": "move", "at": 104.0, "to": { "target": "tabOverview", "offset": [0, 0] }, "note": "step 7: to the Overview tab (cue p30)" },
+    { "op": "click", "target": "tabOverview", "pressAt": 106.0, "hoverMs": 380, "postcondition": "overviewShown", "timeoutMs": 5000, "note": "step 7: genuine Overview tab click (default tab; re-affirms selection)" },
+    { "op": "log-rect", "at": 106.7, "key": "ovSnapRect", "target": "ovSnap", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 107.0, "key": "regenRect", "target": "regenBtn" },
+    { "op": "move", "at": 107.2, "to": { "target": "ovSnap", "offset": [0, 60] }, "note": "rest over the AI snapshot while p31-p35 explain" },
+    { "op": "move", "at": 127.0, "to": { "target": "tabContact", "offset": [0, 0] }, "note": "step 8: to Contact (cue p36)" },
+    { "op": "click", "target": "tabContact", "pressAt": 128.4, "hoverMs": 360, "postcondition": "contactShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 129.1, "key": "contactPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "move", "at": 129.4, "to": { "target": "panelActive", "offset": [0, -140] }, "note": "rest near the Contact groups" },
+    { "op": "move", "at": 146.2, "to": { "target": "tabMembership", "offset": [0, 0] }, "note": "step 9: to Membership (cue p41)" },
+    { "op": "click", "target": "tabMembership", "pressAt": 147.3, "hoverMs": 360, "postcondition": "membershipShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 148.0, "key": "memPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "move", "at": 156.5, "to": { "target": "panelActive", "offset": [-560, -120] }, "note": "toward the loyalty/barcode area while p45 explains the POS barcode" },
+    { "op": "move", "at": 164.6, "to": { "target": "panelActive", "offset": [-560, 120] }, "note": "toward the billing/next-charge area while p46 explains next charge" },
+    { "op": "move", "at": 168.4, "to": { "target": "tabPayments", "offset": [0, 0] }, "note": "step 10: to Payments (cue p47)" },
+    { "op": "click", "target": "tabPayments", "pressAt": 169.8, "hoverMs": 340, "postcondition": "paymentsShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 170.5, "key": "payPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "move", "at": 170.8, "to": { "target": "panelActive", "offset": [0, -120] }, "note": "rest over Payment Methods; Add Card never clicked" },
+    { "op": "move", "at": 181.9, "to": { "target": "tabVehicles", "offset": [0, 0] }, "note": "step 11: to Vehicles (cue p52)" },
+    { "op": "click", "target": "tabVehicles", "pressAt": 184.4, "hoverMs": 360, "postcondition": "vehiclesShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 185.1, "key": "vehPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "move", "at": 185.4, "to": { "target": "panelActive", "offset": [0, -80] }, "note": "rest over the vehicle card / RETRACTS; Add Vehicle & Open Vehicle never clicked" },
+    { "op": "move", "at": 199.98, "to": { "target": "tabLinked", "offset": [0, 0] }, "note": "step 12: to Linked Accounts (cue p57)" },
+    { "op": "click", "target": "tabLinked", "pressAt": 200.55, "hoverMs": 320, "postcondition": "linkedShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 201.2, "key": "linkedPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "move", "at": 201.5, "to": { "target": "panelActive", "offset": [0, -60] }, "note": "rest over Linked Accounts; Link Account never clicked" },
+    { "op": "move", "at": 214.8, "to": { "target": "tabActivity", "offset": [0, 0] }, "note": "step 13: to Activity (cue p62)" },
+    { "op": "click", "target": "tabActivity", "pressAt": 216.5, "hoverMs": 360, "postcondition": "activityShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 217.2, "key": "actPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "move", "at": 217.5, "to": { "target": "panelActive", "offset": [0, -60] }, "note": "rest over the visit/transaction log" },
+    { "op": "move", "at": 229.4, "to": { "target": "tabMessaging", "offset": [0, 0] }, "note": "step 14: to Messaging (cue p66)" },
+    { "op": "click", "target": "tabMessaging", "pressAt": 230.7, "hoverMs": 360, "postcondition": "messagingShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 231.4, "key": "msgPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 231.7, "key": "msgComposeRect", "target": "msgCompose" },
+    { "op": "log-rect", "at": 231.9, "key": "sendRect", "target": "sendBtn" },
+    { "op": "move", "at": 232.2, "to": { "target": "msgCompose", "offset": [0, -80], "outside": true }, "note": "read the thread; the compose box and Send are a STOP zone, never used" },
+    { "op": "move", "at": 246.3, "to": { "target": "tabNotes", "offset": [0, 0] }, "note": "step 15: to Notes (cue p71)" },
+    { "op": "click", "target": "tabNotes", "pressAt": 247.3, "hoverMs": 360, "postcondition": "notesShown", "timeoutMs": 5000 },
+    { "op": "log-rect", "at": 248.0, "key": "notesPanel", "target": "panelActive", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 248.3, "key": "saveNoteRect", "target": "saveNoteBtn" },
+    { "op": "move", "at": 248.6, "to": { "target": "panelActive", "offset": [0, -120] }, "note": "rest over 'not visible to customer'; Save Note never clicked" },
+    { "op": "move", "at": 266.9, "to": { "target": "actionsBtn", "offset": [0, 0] }, "note": "step 16: to Actions (cue p77)" },
+    { "op": "click", "target": "actionsBtn", "pressAt": 268.9, "hoverMs": 420, "postcondition": "actionsMenuOpen", "timeoutMs": 5000, "note": "step 16a: open the Actions menu to list its items; nothing inside is clicked" },
+    { "op": "log-rect", "at": 269.6, "key": "actionsMenuRect", "target": "actionsMenu", "requireStableMs": 200 },
+    { "op": "log-rects", "at": 269.9, "key": "actItems", "targets": ["issueWash", "refund"] },
+    { "op": "move", "at": 270.3, "to": { "target": "actionsMenu", "offset": [-90, 0], "outside": true }, "note": "read the two items; both are money/value moves and are a STOP zone" },
+    { "op": "watch", "key": "menuHeldDuringExplanation", "from": 269.6, "to": 284.3, "predicate": "actionsMenuOpen", "everyMs": 500, "mustHold": true },
+    { "op": "move", "at": 283.4, "to": { "target": "actionsBtn", "offset": [0, 0] }, "note": "step 16b: back to Actions to close" },
+    { "op": "click", "target": "actionsBtn", "pressAt": 284.6, "hoverMs": 360, "postcondition": "actionsMenuClosed", "timeoutMs": 5000, "note": "genuine dismiss: click Actions again closes the menu (Esc does not close it live — see RESIDUAL)" },
+    { "op": "move", "at": 291.0, "to": { "target": "idLine", "offset": [0, 0] }, "note": "step 17: recap sweep, header down to tabs (cue p83)" },
+    { "op": "move", "at": 294.0, "to": { "target": "chipRow", "offset": [-540, 0] } },
+    { "op": "move", "at": 296.6, "to": { "target": "metricBand", "offset": [0, 0] } },
+    { "op": "move", "at": 299.2, "to": { "target": "relatedRow", "offset": [-760, 0] } },
+    { "op": "move", "at": 301.5, "to": { "target": "tabBar", "offset": [-760, 0] } },
+    { "op": "move", "at": 305.5, "to": { "point": [1720, 900] }, "note": "final park, clear of content and captions" },
+    { "op": "assert", "at": 314.5, "predicate": "onDetail" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "custRowRect", "place": "right", "from": 0.8, "to": 2.2 },
+      { "n": 2, "anchor": "hdr.idLine", "place": "below-left", "from": 16.4, "to": 22.5 },
+      { "n": 3, "anchor": "hdr.chipRow", "place": "left-top", "from": 34.8, "to": 40.2 },
+      { "n": 4, "anchor": "hdr.deleteBtn", "place": "below-left", "from": 51.0, "to": 58.0 },
+      { "n": 5, "anchor": "hdr.metricBand", "place": "left-top", "from": 65.6, "to": 72.0 },
+      { "n": 6, "anchor": "hdr.relatedRow", "place": "left-top", "from": 87.8, "to": 93.0 },
+      { "n": 7, "anchor": "ovSnapRect", "place": "left-top", "from": 106.6, "to": 113.0 },
+      { "n": 8, "anchor": "contactPanel", "place": "left-top", "from": 128.8, "to": 133.5 },
+      { "n": 9, "anchor": "memPanel", "place": "left-top", "from": 147.6, "to": 156.0 },
+      { "n": 10, "anchor": "payPanel", "place": "left-top", "from": 170.2, "to": 174.5 },
+      { "n": 11, "anchor": "vehPanel", "place": "left-top", "from": 184.8, "to": 190.5 },
+      { "n": 12, "anchor": "linkedPanel", "place": "left-top", "from": 200.8, "to": 205.5 },
+      { "n": 13, "anchor": "actPanel", "place": "left-top", "from": 216.8, "to": 221.0 },
+      { "n": 14, "anchor": "msgComposeRect", "place": "left-top", "from": 231.5, "to": 240.5 },
+      { "n": 15, "anchor": "notesPanel", "place": "left-top", "from": 247.6, "to": 253.5 },
+      { "n": 16, "anchor": "actionsMenuRect", "place": "left", "from": 269.6, "to": 283.0 },
+      { "n": 17, "anchor": "hdr.tabBar", "place": "left-top", "from": 291.2, "to": 302.5 }
+    ],
+    "highlights": [
+      { "anchor": "custRowRect", "from": 0.8, "to": 2.2 },
+      { "anchor": "hdr.idLine", "from": 20.9, "to": 26.8, "note": "'Read that line first' (p09-p10)" },
+      { "anchor": "chips.chip1", "from": 37.1, "to": 38.0 },
+      { "anchor": "chips.chip2", "from": 38.0, "to": 38.8 },
+      { "anchor": "chips.chip3", "from": 38.8, "to": 39.5 },
+      { "anchor": "chips.chip4", "from": 39.5, "to": 40.2 },
+      { "anchor": "hdr.deleteBtn", "from": 58.75, "to": 64.5, "color": "#dc2626", "note": "do-not-click warning bracketing Delete (p19)" },
+      { "anchor": "hdr.metricBand", "from": 71.6, "to": 77.1, "note": "the six vital-signs numbers (p22-p23)" },
+      { "anchor": "regenRect", "from": 113.3, "to": 114.6, "color": "#dc2626", "note": "do-not-click Regenerate (p32)" },
+      { "anchor": "memPanel", "from": 156.5, "to": 167.9, "note": "barcode + next charge, the money-question fields (p45-p46)" },
+      { "anchor": "msgComposeRect", "from": 241.0, "to": 245.8, "color": "#dc2626", "note": "never send: STOP on the compose box (p69-p70)" },
+      { "anchor": "sendRect", "from": 241.0, "to": 245.8, "color": "#dc2626", "note": "never send: STOP on the Send control" },
+      { "anchor": "saveNoteRect", "from": 261.0, "to": 266.2, "color": "#dc2626", "note": "Save Note stays untouched (p76)" },
+      { "anchor": "actItems.issueWash", "from": 269.6, "to": 274.0, "color": "#dc2626", "note": "STOP on Issue Wash (p78)" },
+      { "anchor": "actItems.refund", "from": 269.6, "to": 274.0, "color": "#dc2626", "note": "STOP on Refund Customer (p78)" },
+      { "anchor": "actItems.issueWash", "from": 285.5, "to": 290.3, "color": "#dc2626", "note": "'you open the menu and stop' (p82) — both items held red" },
+      { "anchor": "actItems.refund", "from": 285.5, "to": 290.3, "color": "#dc2626" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 3.0, "z": 1, "cx": 960, "cy": 540, "note": "hold wide while the whole record loads (p01-p05, one page)" },
+      { "t": 14.0, "z": 1.32, "cx": 720, "cy": 150, "ease": true, "note": "header identity focus (steps 2-3)" },
+      { "t": 49.0, "z": 1.32, "cx": 720, "cy": 150 },
+      { "t": 50.0, "z": 1.42, "cx": 1640, "cy": 112, "ease": true, "note": "header buttons on the right (step 4), Delete guardrail" },
+      { "t": 64.0, "z": 1.42, "cx": 1640, "cy": 112 },
+      { "t": 65.0, "z": 1.34, "cx": 960, "cy": 220, "ease": true, "note": "metric band (step 5)" },
+      { "t": 86.0, "z": 1.34, "cx": 960, "cy": 220 },
+      { "t": 87.0, "z": 1.34, "cx": 960, "cy": 272, "ease": true, "note": "Related chips row (step 6)" },
+      { "t": 103.0, "z": 1.34, "cx": 960, "cy": 272 },
+      { "t": 104.5, "z": 1.08, "cx": 960, "cy": 640, "ease": true, "note": "pull to the panel body for the tab walk (steps 7-8)" },
+      { "t": 146.0, "z": 1.08, "cx": 960, "cy": 640 },
+      { "t": 148.0, "z": 1.2, "cx": 760, "cy": 560, "ease": true, "note": "Membership groups" },
+      { "t": 156.0, "z": 1.5, "cx": 560, "cy": 540, "ease": true, "note": "close on the loyalty/barcode region (step 9)" },
+      { "t": 164.0, "z": 1.5, "cx": 560, "cy": 700, "ease": true, "note": "close on the billing/next-charge region" },
+      { "t": 168.0, "z": 1.08, "cx": 960, "cy": 640, "ease": true, "note": "pull back for Payments (step 10)" },
+      { "t": 229.0, "z": 1.08, "cx": 960, "cy": 640 },
+      { "t": 230.8, "z": 1.14, "cx": 960, "cy": 600, "ease": true, "note": "Messaging thread (step 14)" },
+      { "t": 246.0, "z": 1.1, "cx": 960, "cy": 620, "ease": true, "note": "Notes (step 15)" },
+      { "t": 266.0, "z": 1.1, "cx": 960, "cy": 620 },
+      { "t": 267.5, "z": 1.45, "cx": 1600, "cy": 180, "ease": true, "note": "Actions menu, top-right (step 16)" },
+      { "t": 289.5, "z": 1.45, "cx": 1600, "cy": 180 },
+      { "t": 291.0, "z": 1.0, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the recap (step 17)" },
+      { "t": 315.716, "z": 1.0, "cx": 960, "cy": 540 }
+    ],
+    "completion": {
+      "text": "Customer 360 — Complete",
+      "from": 313.9,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 313.6
+  },
+  "output": "WC-02-02-customer-360-v1.1",
+  "orderedMentions": [
+    "Overview",
+    "Contact",
+    "Membership",
+    "Payments",
+    "Vehicles",
+    "Linked Accounts",
+    "Activity",
+    "Messaging",
+    "Notes",
+    "Issue Wash",
+    "Refund Customer"
+  ],
+  "neverClick": [
+    "delete",
+    "regenerate",
+    "add card",
+    "add vehicle",
+    "link account",
+    "open vehicle",
+    "save note",
+    "clear",
+    "send message",
+    "send",
+    "issue wash",
+    "refund customer",
+    "edit customer",
+    "logout"
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "lesson": "WC-02-01",
+  "audioMaster": "training/module02-crm/WC-02-01-full-narration-v1.0.mp3",
+  "audioDurationS": 232.986,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open C-R-M, then Customers.",
+      "startS": 0,
+      "endS": 2.598,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the member database, and it's where most support calls begin.",
+      "startS": 2.91,
+      "endS": 6.756,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Every tool you need to find a customer sits on this one screen.",
+      "startS": 7.013,
+      "endS": 10.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p04",
+      "text": "Start at the top.",
+      "startS": 10.919,
+      "endS": 11.838,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Four numbers frame the whole base: total customers, active members, at risk, and prospects.",
+      "startS": 12.617,
+      "endS": 14.455,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "They cover every customer, not just the page in front of you.",
+      "startS": 14.812,
+      "endS": 18.891,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Read them first.",
+      "startS": 19.625,
+      "endS": 23.947,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p08",
+      "text": "Below the numbers, three cards.",
+      "startS": 24.477,
+      "endS": 25.543,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "One tracks member growth over the last year.",
+      "startS": 25.836,
+      "endS": 26.685,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Another splits active members by plan.",
+      "startS": 27.211,
+      "endS": 29.714,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "The third grades customer health, low, medium, and high risk, at a glance.",
+      "startS": 30.249,
+      "endS": 32.678,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "You read these; you don't click into them.",
+      "startS": 33.185,
+      "endS": 41.278,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Now the list card itself.",
+      "startS": 41.796,
+      "endS": 43.159,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "The eyebrow labels it the member database, and the title reads Customer List.",
+      "startS": 43.766,
+      "endS": 46.35,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "This card holds the searchable table of every customer you have.",
+      "startS": 46.742,
+      "endS": 52.908,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p16",
+      "text": "Three buttons sit top-right of the card.",
+      "startS": 53.577,
+      "endS": 55.596,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "Retention Log opens a churn report we'll visit in a minute.",
+      "startS": 56.295,
+      "endS": 59.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Delete and Add Customer both change data, so we leave them alone today.",
+      "startS": 60.431,
+      "endS": 64.517,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Adding a customer gets its own lesson.",
+      "startS": 65.034,
+      "endS": 66.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p20",
+      "text": "Just above the table, the search box.",
+      "startS": 67.527,
+      "endS": 69.485,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "Read the placeholder.",
+      "startS": 69.895,
+      "endS": 70.998,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "It names exactly what you can search by: a name, a plate, an email, a location, or a plan.",
+      "startS": 71.447,
+      "endS": 73.433,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "You never have to guess which field will match.",
+      "startS": 73.757,
+      "endS": 80.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p24",
+      "text": "Next to it, the Filters control.",
+      "startS": 80.744,
+      "endS": 82.527,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p25",
+      "text": "The badge counts active filters.",
+      "startS": 83.059,
+      "endS": 84.909,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Right now it reads zero, so nothing is narrowing the list.",
+      "startS": 85.314,
+      "endS": 88.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Open it for a panel that trims the base down;",
+      "startS": 89.003,
+      "endS": 91.324,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "any count above zero means the list is already filtered.",
+      "startS": 91.78,
+      "endS": 95.66,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p29",
+      "text": "Now the columns.",
+      "startS": 95.66,
+      "endS": 96.496,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "Eight of them: customer, location, plan, member since, status,",
+      "startS": 96.977,
+      "endS": 97.542,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "then the member's numbers, visits, total spend, and last visit.",
+      "startS": 98.115,
+      "endS": 98.655,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Every header sorts.",
+      "startS": 98.937,
+      "endS": 99.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "The checkbox column on the left selects rows, and on this tour those boxes stay empty.",
+      "startS": 99.985,
+      "endS": 115.775,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "Look at one row across.",
+      "startS": 115.775,
+      "endS": 117.168,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "The plan and the status each show as a coloured chip.",
+      "startS": 117.573,
+      "endS": 120.918,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Active is green, inactive is grey, and the plan chip names the package.",
+      "startS": 121.537,
+      "endS": 122.594,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "The colour is how a row's state reads in a half-second.",
+      "startS": 123.127,
+      "endS": 131.396,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p38",
+      "text": "Drop to the footer.",
+      "startS": 131.396,
+      "endS": 132.201,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "Twenty-five rows a page, and the last page button reads sixty-five thousand.",
+      "startS": 132.737,
+      "endS": 137.803,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "This table runs past a million and a half migrated records,",
+      "startS": 138.498,
+      "endS": 142.141,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "so you search for a customer, not page to them.",
+      "startS": 142.468,
+      "endS": 145.183,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "The strip up top counts a smaller headline figure that does not reconcile with the table,",
+      "startS": 146.065,
+      "endS": 150.747,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "a known demo quirk, which is why the two counts differ.",
+      "startS": 151.094,
+      "endS": 155.115,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "Click Retention Log.",
+      "startS": 155.115,
+      "endS": 156.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "This read-only page tracks members who left or nearly did.",
+      "startS": 156.6,
+      "endS": 160.098,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "Its own four numbers frame it: total events, saves this month, cancellations, and the churn rate.",
+      "startS": 160.465,
+      "endS": 162.218,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "No delete or add here.",
+      "startS": 162.498,
+      "endS": 166.806,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "It is a log you read, not a list you edit.",
+      "startS": 167.119,
+      "endS": 172.016,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "The table tells the story.",
+      "startS": 172.016,
+      "endS": 173.41,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "Each row is one event: date, customer, site, event type, and outcome.",
+      "startS": 173.888,
+      "endS": 175.389,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "A green Saved chip means you kept them, Cancelled means you lost them,",
+      "startS": 175.751,
+      "endS": 179.425,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "and Downgraded and At Risk fall in between.",
+      "startS": 179.732,
+      "endS": 182.314,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "When a churn question comes in, the answer lives here.",
+      "startS": 182.672,
+      "endS": 191.634,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "Head back to the list.",
+      "startS": 191.634,
+      "endS": 192.373,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "The breadcrumb or the sidebar both drop you on the Customer List again, right where you started.",
+      "startS": 193.078,
+      "endS": 199.34,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p56",
+      "text": "Now use the search.",
+      "startS": 199.34,
+      "endS": 200.044,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p57",
+      "text": "Type the first few letters of a name you can see, then hit Search.",
+      "startS": 200.52,
+      "endS": 204.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "The table collapses to just the matches.",
+      "startS": 204.665,
+      "endS": 206.86,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p59",
+      "text": "On a list this size, that is how you land on the right customer in seconds.",
+      "startS": 207.33,
+      "endS": 212.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p60",
+      "text": "Clear the box.",
+      "startS": 212.48,
+      "endS": 213.307,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p61",
+      "text": "The full list snaps back, untouched.",
+      "startS": 213.699,
+      "endS": 216.248,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p62",
+      "text": "That is the Customer List: numbers up top, health in the cards,",
+      "startS": 216.753,
+      "endS": 218.27,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p63",
+      "text": "a search that names its own fields, sortable columns with colour-coded chips,",
+      "startS": 218.647,
+      "endS": 219.579,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p64",
+      "text": "and a Retention Log one click away.",
+      "startS": 219.887,
+      "endS": 221.029,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p65",
+      "text": "Learn this screen and C-R-M support gets faster.",
+      "startS": 221.479,
+      "endS": 232.538,
+      "timing": "silence"
+    }
+  ]
+}

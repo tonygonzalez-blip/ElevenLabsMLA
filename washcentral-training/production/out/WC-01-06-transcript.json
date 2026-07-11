@@ -1,0 +1,608 @@
+{
+  "lesson": "WC-01-06",
+  "audioMaster": "training/module01-foundations/WC-01-06-full-narration-v1.0.mp3",
+  "audioDurationS": 276.689,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is the Command Center, the first screen your network hands you.",
+      "startS": 0,
+      "endS": 3.397,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "It looks like a wall of numbers. It isn't.",
+      "startS": 3.761,
+      "endS": 5.458,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "It's a triage board, stacked top to bottom.",
+      "startS": 5.722,
+      "endS": 8.946,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Read the stack in order, and the thing that needs you rises to the top.",
+      "startS": 9.414,
+      "endS": 12.726,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "First panel, the mobile app.",
+      "startS": 13.276,
+      "endS": 15.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "That Live tag means the figures move on their own, refreshing as members open the app.",
+      "startS": 15.769,
+      "endS": 20.308,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "You're reading its pulse right now, not a report someone ran this morning.",
+      "startS": 20.805,
+      "endS": 24.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "For a network pushing an app, this is the first read on whether members actually use it.",
+      "startS": 25.195,
+      "endS": 29.627,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Four cards across.",
+      "startS": 30.07,
+      "endS": 31.296,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Installs, weekly actives, redemptions, opt-in rate.",
+      "startS": 32.218,
+      "endS": 35.034,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Linger on redemptions: it splits Q-R scans from kiosk taps,",
+      "startS": 35.242,
+      "endS": 35.989,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "so you see whether members cash in at the phone or at the machine.",
+      "startS": 36.921,
+      "endS": 38.276,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "That split tells you which channel is carrying the program.",
+      "startS": 38.492,
+      "endS": 48,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Scroll to the map panel.",
+      "startS": 48.384,
+      "endS": 49.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "The heading counts the whole network: a hundred forty-four sites across seven states.",
+      "startS": 50.665,
+      "endS": 52.405,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "That color key beside it, healthy, warning, critical, is the same key the pins use.",
+      "startS": 52.885,
+      "endS": 55.526,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Once you know the key, the map tells you where to look without reading a single label.",
+      "startS": 56.066,
+      "endS": 66.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Down the left, four vitals.",
+      "startS": 66.958,
+      "endS": 68.804,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Money in today, who's active, cars through the tunnels,",
+      "startS": 69.115,
+      "endS": 70.959,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "and the share of card charges that bounced.",
+      "startS": 71.344,
+      "endS": 74.569,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "That last one, the decline rate, is what a support tech watches closest,",
+      "startS": 74.93,
+      "endS": 79.057,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "because a climbing decline rate usually means a billing problem, not a slow day.",
+      "startS": 79.368,
+      "endS": 83.658,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Now the map itself.",
+      "startS": 84.096,
+      "endS": 85.408,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Every pin is a wash, colored by health, so a red dot is a site in trouble at a glance.",
+      "startS": 86.517,
+      "endS": 88.746,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Hover one and it shows that site's revenue, members, and tickets, with a link to open it.",
+      "startS": 89.188,
+      "endS": 92.108,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Not today, though. We're reading the network, not diving into a single site.",
+      "startS": 92.683,
+      "endS": 101.951,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Click Active States, then Full USA.",
+      "startS": 102.41,
+      "endS": 104.531,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "The map reframes, and that's all it does.",
+      "startS": 104.531,
+      "endS": 107.889,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "This toggle is view-only.",
+      "startS": 107.889,
+      "endS": 109.559,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "It changes the shot, never the data, and never the panels below.",
+      "startS": 109.559,
+      "endS": 113.801,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "One click puts it back.",
+      "startS": 113.801,
+      "endS": 115.861,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Here's the heart of the page.",
+      "startS": 116.415,
+      "endS": 117.786,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Priority Intelligence, eleven items, four urgent.",
+      "startS": 118.293,
+      "endS": 119.802,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "It's your triage feed, sorted by severity,",
+      "startS": 120.005,
+      "endS": 122.036,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "and every row is a door onto the module where you'd actually fix it.",
+      "startS": 122.671,
+      "endS": 125.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "For a support tech, this is the panel you scan first.",
+      "startS": 125.455,
+      "endS": 132.604,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Top of the feed, Critical.",
+      "startS": 133.055,
+      "endS": 134.566,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Two rows, and this is where a downed P-O-S shows up first, before the phone even rings.",
+      "startS": 135.017,
+      "endS": 140.204,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Open jumps you to reconciliation to work the outage.",
+      "startS": 140.649,
+      "endS": 143.621,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Review drops you into Support for the tickets about to breach their S-L-A.",
+      "startS": 144.058,
+      "endS": 147.742,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Next tier, High Priority.",
+      "startS": 148.181,
+      "endS": 150.037,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "A kiosk printer down, a site's conversion slipping.",
+      "startS": 150.419,
+      "endS": 156.768,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "Not on fire yet, but they will be if they sit.",
+      "startS": 157.208,
+      "endS": 158.523,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Watch the verbs shift: Assign hands the work off, Analyze opens the numbers behind it.",
+      "startS": 158.82,
+      "endS": 162.747,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Now the money.",
+      "startS": 163.229,
+      "endS": 164.139,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "Revenue Plays, five suggestions worth thirty-two hundred dollars today,",
+      "startS": 164.74,
+      "endS": 165.719,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "each tagged with what it's worth.",
+      "startS": 166.054,
+      "endS": 169.019,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "Read them as prompts, not orders.",
+      "startS": 169.418,
+      "endS": 170.877,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Launch, Target, Recover, those fire real outreach to real customers,",
+      "startS": 171.413,
+      "endS": 173.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "so on a live tenant you look, you don't press.",
+      "startS": 174.153,
+      "endS": 182.312,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "Last group, Automations.",
+      "startS": 182.744,
+      "endS": 183.491,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "Two jobs already running with no one steering,",
+      "startS": 183.772,
+      "endS": 184.592,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "a win-back text sequence and the payment retry engine, quietly clawing back failed charges.",
+      "startS": 185.21,
+      "endS": 193.09,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "Inspect and View check on them without touching a thing,",
+      "startS": 193.796,
+      "endS": 196.413,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "which is just what you want with something already working.",
+      "startS": 196.818,
+      "endS": 199.352,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "One habit ties this panel together.",
+      "startS": 199.778,
+      "endS": 201.935,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "Read the arrow before you click.",
+      "startS": 202.302,
+      "endS": 204.381,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "Open, Review, View, those take you somewhere to look.",
+      "startS": 204.812,
+      "endS": 208.557,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "Launch, Target, Recover, Assign, those start something.",
+      "startS": 208.958,
+      "endS": 211.585,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "Read arrows are safe.",
+      "startS": 211.874,
+      "endS": 213.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Action arrows you leave alone here, on a shared live tenant.",
+      "startS": 213.636,
+      "endS": 219.003,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p62",
+      "text": "To the right, Action Ownership.",
+      "startS": 219.476,
+      "endS": 220.201,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p63",
+      "text": "Same items, now answered by who owns them and when they're due.",
+      "startS": 220.423,
+      "endS": 221.483,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p64",
+      "text": "Regional Ops on the outage within the half hour, Support on the aging tickets,",
+      "startS": 221.781,
+      "endS": 225.321,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p65",
+      "text": "Marketing and Revenue on the plays.",
+      "startS": 225.746,
+      "endS": 235.227,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "It answers the question a manager always asks: whose job is this.",
+      "startS": 235.429,
+      "endS": 236.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p67",
+      "text": "At the bottom, Ask MAIA.",
+      "startS": 237.084,
+      "endS": 239,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p68",
+      "text": "Five plain-language shortcuts, each jumping straight to the module that answers it.",
+      "startS": 239.506,
+      "endS": 243.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p69",
+      "text": "Worth flagging: the header button reads Ask Shyne, this panel reads Ask MAIA.",
+      "startS": 244.571,
+      "endS": 250.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p70",
+      "text": "Two names, so we don't tell a client they're one feature yet, and we send neither one today.",
+      "startS": 250.447,
+      "endS": 255.677,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p71",
+      "text": "Scroll back up, and you've got the whole board.",
+      "startS": 256.129,
+      "endS": 258.63,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p72",
+      "text": "App engagement, the network map, the priority feed, who owns what, and a shortcut to ask.",
+      "startS": 259.166,
+      "endS": 265.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p73",
+      "text": "Five panels, one screen.",
+      "startS": 265.649,
+      "endS": 267.386,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p74",
+      "text": "Read it top to bottom, and never click an arrow until you know which kind it is.",
+      "startS": 267.783,
+      "endS": 271.975,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p75",
+      "text": "Do that, and the Command Center works for you, not against you.",
+      "startS": 272.427,
+      "endS": 276.237,
+      "timing": "silence"
+    }
+  ]
+}

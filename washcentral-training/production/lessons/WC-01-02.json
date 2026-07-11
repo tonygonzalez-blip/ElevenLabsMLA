@@ -1,0 +1,1178 @@
+{
+  "lesson": "WC-01-02",
+  "title": "Search, Location Scope & Ask Shyne",
+  "audioMaster": "training/module01-foundations/WC-01-02-full-narration-v1.0.mp3",
+  "audioDurationS": 181.473,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-01-02-search-location-shyne-v1.1",
+  "orderedMentions": [
+    "Control K",
+    "Escape",
+    "All Locations",
+    "Ask Shyne",
+    "Send",
+    "Close"
+  ],
+  "neverClick": [
+    "logout",
+    "send",
+    "submit"
+  ],
+  "targets": {
+    "searchBtn": {
+      "selector": ".wc-cmd-trigger-btn"
+    },
+    "locBtn": {
+      "selector": ".loc-selector-btn"
+    },
+    "shyneBtn": {
+      "text": "Ask Shyne",
+      "scope": "button"
+    },
+    "avatar": {
+      "selector": "#user-menu-btn"
+    },
+    "paletteBox": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-box"
+    },
+    "paletteInput": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-inp"
+    },
+    "escChip": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-esc"
+    },
+    "pagesHdr": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-grp"
+    },
+    "cmdFooter": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-footer"
+    },
+    "row1": {
+      "js": "document.querySelectorAll('.wc-cmd-overlay.open .wc-cmd-row')[0]"
+    },
+    "row2": {
+      "js": "document.querySelectorAll('.wc-cmd-overlay.open .wc-cmd-row')[1]"
+    },
+    "row3": {
+      "js": "document.querySelectorAll('.wc-cmd-overlay.open .wc-cmd-row')[2]"
+    },
+    "row4": {
+      "js": "document.querySelectorAll('.wc-cmd-overlay.open .wc-cmd-row')[3]"
+    },
+    "row5": {
+      "js": "document.querySelectorAll('.wc-cmd-overlay.open .wc-cmd-row')[4]"
+    },
+    "allLocRow": {
+      "selector": ".loc-dropdown .loc-dropdown-item.selected"
+    },
+    "groupsHdr": {
+      "js": "[...document.querySelectorAll('.loc-dropdown .loc-dropdown-section-label')].find(e=>/^groups$/i.test((e.textContent||'').trim()))"
+    },
+    "locationsHdr": {
+      "js": "[...document.querySelectorAll('.loc-dropdown .loc-dropdown-section-label')].find(e=>/^locations$/i.test((e.textContent||'').trim()))"
+    },
+    "shyneModal": {
+      "selector": ".ai-modal"
+    },
+    "shyneTitle": {
+      "selector": ".ai-modal .ai-modal-title"
+    },
+    "tryAskingHdr": {
+      "selector": ".ai-modal .ai-examples-hdr"
+    },
+    "ex1": {
+      "js": "document.querySelectorAll('.ai-modal .ai-example')[0]"
+    },
+    "ex2": {
+      "js": "document.querySelectorAll('.ai-modal .ai-example')[1]"
+    },
+    "ex3": {
+      "js": "document.querySelectorAll('.ai-modal .ai-example')[2]"
+    },
+    "ex4": {
+      "js": "document.querySelectorAll('.ai-modal .ai-example')[3]"
+    },
+    "ex5": {
+      "js": "document.querySelectorAll('.ai-modal .ai-example')[4]"
+    },
+    "ex6": {
+      "js": "document.querySelectorAll('.ai-modal .ai-example')[5]"
+    },
+    "askBox": {
+      "selector": ".ai-modal textarea"
+    },
+    "sendBtn": {
+      "selector": ".ai-modal .ai-modal-send"
+    },
+    "guardrail": {
+      "selector": ".ai-modal .ai-disclaimer"
+    },
+    "shyneClose": {
+      "selector": ".ai-modal .ai-modal-close"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "paletteOpen": "!!document.querySelector('.wc-cmd-overlay.open')",
+    "paletteClosed": "!document.querySelector('.wc-cmd-overlay.open')",
+    "selOnExecDash": "/^Executive Dashboard/.test((document.querySelector('.wc-cmd-overlay.open .wc-cmd-row.sel')?.textContent||'').trim())",
+    "selOnLocSummary": "/^Location Summary/.test((document.querySelector('.wc-cmd-overlay.open .wc-cmd-row.sel')?.textContent||'').trim())",
+    "locOpen": "!!document.querySelector('.loc-dropdown')",
+    "locClosed": "!document.querySelector('.loc-dropdown')",
+    "scopeStillAll": "/All Locations/.test(document.querySelector('.loc-selector-btn')?.textContent||'')",
+    "shyneOpen": "!!document.querySelector('.ai-modal-overlay.open')",
+    "shyneClosed": "!document.querySelector('.ai-modal-overlay.open')",
+    "allClosed": "!document.querySelector('.wc-cmd-overlay.open')&&!document.querySelector('.loc-dropdown')&&!document.querySelector('.ai-modal-overlay.open')"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page stable before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "allClosed",
+      "note": "no palette, no dropdown, no Ask Shyne modal before rolling (pre-roll checklist)"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.5,
+      "from": [
+        1919,
+        210
+      ],
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          10,
+          46
+        ]
+      },
+      "note": "enter from right edge, settle just below the Search button (p01)"
+    },
+    {
+      "op": "log-rects",
+      "at": 1.3,
+      "key": "headerBtns",
+      "targets": [
+        "searchBtn",
+        "locBtn",
+        "shyneBtn",
+        "avatar"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 4.4,
+      "to": {
+        "target": "locBtn",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "left-to-right sweep across the four tools during p02"
+    },
+    {
+      "op": "move",
+      "at": 5.4,
+      "to": {
+        "target": "shyneBtn",
+        "offset": [
+          0,
+          44
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 6.2,
+      "to": {
+        "target": "avatar",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "sweep ends under the avatar (fourth tool, out of scope this lesson)"
+    },
+    {
+      "op": "move",
+      "at": 7.3,
+      "to": {
+        "point": [
+          1740,
+          120
+        ]
+      },
+      "note": "park during p03"
+    },
+    {
+      "op": "move",
+      "at": 8.6,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "p04 'jumping anywhere' = Search"
+    },
+    {
+      "op": "move",
+      "at": 10.1,
+      "to": {
+        "target": "locBtn",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "p04 'focusing the view' = location selector"
+    },
+    {
+      "op": "move",
+      "at": 11.5,
+      "to": {
+        "target": "shyneBtn",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "p04 'asking questions in plain language' = Ask Shyne"
+    },
+    {
+      "op": "key",
+      "pressAt": 15.3,
+      "keys": [
+        "ctrl+k"
+      ],
+      "keyLabel": "Ctrl + K",
+      "postcondition": "paletteOpen",
+      "timeoutMs": 4000,
+      "note": "step 2: genuine Ctrl+K inside the p05 trailing break; palette on screen before p06"
+    },
+    {
+      "op": "log-rect",
+      "at": 15.8,
+      "key": "paletteBoxRect",
+      "target": "paletteBox",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 16.1,
+      "key": "paletteInputRect",
+      "target": "paletteInput"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.3,
+      "key": "escChipRect",
+      "target": "escChip"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.5,
+      "key": "pagesHdrRect",
+      "target": "pagesHdr"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.7,
+      "key": "cmdFooterRect",
+      "target": "cmdFooter"
+    },
+    {
+      "op": "log-rects",
+      "at": 16.9,
+      "key": "pageRows",
+      "targets": [
+        "row1",
+        "row2",
+        "row3",
+        "row4",
+        "row5"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "paletteVisibleDuringExplanation",
+      "from": 15.7,
+      "to": 52.6,
+      "predicate": "paletteOpen",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 16.4,
+      "to": {
+        "point": [
+          610,
+          62
+        ]
+      },
+      "note": "top-edge route into the palette zone: result rows are hover-selecting, keep the path above them"
+    },
+    {
+      "op": "move",
+      "at": 17.3,
+      "to": {
+        "point": [
+          648,
+          200
+        ]
+      },
+      "note": "park left of the palette card while p06-p08 explain"
+    },
+    {
+      "op": "move",
+      "at": 26.5,
+      "to": {
+        "point": [
+          610,
+          62
+        ]
+      },
+      "note": "route the palette approach along the top edge: hovering a result row moves the keyboard selection, so the path stays clear of the rows"
+    },
+    {
+      "op": "move",
+      "at": 27,
+      "to": {
+        "target": "pagesHdr",
+        "offset": [
+          -18,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 3 cue 'Now, the results.' — settle beside the PAGES header"
+    },
+    {
+      "op": "move",
+      "at": 28.2,
+      "to": {
+        "point": [
+          610,
+          168
+        ]
+      },
+      "note": "vertical sweep down the five result rows, along the card's left edge (x<673 so hover never moves the keyboard selection — verified live)"
+    },
+    {
+      "op": "move",
+      "at": 30.2,
+      "to": {
+        "point": [
+          610,
+          264
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 32.6,
+      "to": {
+        "point": [
+          610,
+          360
+        ]
+      },
+      "note": "sweep ends beside row 5 (Marketing)"
+    },
+    {
+      "op": "move",
+      "at": 35.8,
+      "to": {
+        "point": [
+          610,
+          382
+        ]
+      },
+      "note": "park below the rows during p12"
+    },
+    {
+      "op": "move",
+      "at": 38.7,
+      "to": {
+        "target": "cmdFooter",
+        "offset": [
+          -18,
+          15
+        ],
+        "outside": true
+      },
+      "note": "step 4 cue: settle beside the footer key hints"
+    },
+    {
+      "op": "key",
+      "pressAt": 42,
+      "keys": [
+        "ArrowDown"
+      ],
+      "keyLabel": "↓",
+      "postcondition": "selOnExecDash",
+      "timeoutMs": 3000,
+      "note": "arrow demo: sel Command Center -> Executive Dashboard (probed). Never Enter."
+    },
+    {
+      "op": "key",
+      "pressAt": 43.3,
+      "keys": [
+        "ArrowDown"
+      ],
+      "keyLabel": "↓",
+      "postcondition": "selOnLocSummary",
+      "timeoutMs": 3000,
+      "note": "sel -> Location Summary"
+    },
+    {
+      "op": "key",
+      "pressAt": 44.6,
+      "keys": [
+        "ArrowUp"
+      ],
+      "keyLabel": "↑",
+      "postcondition": "selOnExecDash",
+      "timeoutMs": 3000,
+      "note": "sel back up to Executive Dashboard; Enter is never pressed"
+    },
+    {
+      "op": "key",
+      "pressAt": 52.9,
+      "keys": [
+        "Escape"
+      ],
+      "keyLabel": "Esc",
+      "postcondition": "paletteClosed",
+      "timeoutMs": 4000,
+      "note": "step 5: Escape inside the p18 trailing break; nothing opened, no navigation"
+    },
+    {
+      "op": "move",
+      "at": 55,
+      "to": {
+        "point": [
+          1200,
+          350
+        ]
+      },
+      "note": "park on the restored page while p19-p21 explain"
+    },
+    {
+      "op": "click",
+      "target": "locBtn",
+      "pressAt": 63.65,
+      "hoverMs": 420,
+      "postcondition": "locOpen",
+      "timeoutMs": 4000,
+      "note": "step 6: open the location scope selector; dropdown on screen before p23"
+    },
+    {
+      "op": "log-rect",
+      "at": 64.4,
+      "key": "allLocRowRect",
+      "target": "allLocRow",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 64.7,
+      "key": "groupsHdrRect",
+      "target": "groupsHdr"
+    },
+    {
+      "op": "log-rect",
+      "at": 64.9,
+      "key": "locationsHdrRect",
+      "target": "locationsHdr"
+    },
+    {
+      "op": "watch",
+      "key": "dropdownVisibleDuringExplanation",
+      "from": 64.2,
+      "to": 97.8,
+      "predicate": "locOpen",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 65.4,
+      "to": {
+        "point": [
+          1520,
+          185
+        ]
+      },
+      "note": "park left of the dropdown while p23-p25 explain"
+    },
+    {
+      "op": "move",
+      "at": 76.2,
+      "to": {
+        "target": "groupsHdr",
+        "offset": [
+          -30,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 7: beside the GROUPS section label (p27)"
+    },
+    {
+      "op": "move",
+      "at": 80.3,
+      "to": {
+        "target": "locationsHdr",
+        "offset": [
+          -30,
+          8
+        ],
+        "outside": true
+      },
+      "note": "sweep down the group list's left edge to the LOCATIONS label (p28); x stays left of the panel so no row is hovered"
+    },
+    {
+      "op": "move",
+      "at": 84,
+      "to": {
+        "point": [
+          1500,
+          700
+        ]
+      },
+      "note": "park while p29-p31 explain view-scope safety"
+    },
+    {
+      "op": "click",
+      "target": "locBtn",
+      "pressAt": 98.3,
+      "hoverMs": 420,
+      "postcondition": "locClosed",
+      "timeoutMs": 4000,
+      "note": "step 8: the selector button itself is the genuine close (Esc does not close it — DISCREPANCIES.md #24); closed before p33"
+    },
+    {
+      "op": "assert",
+      "at": 99.6,
+      "predicate": "scopeStillAll",
+      "note": "scope stayed on All Locations — nothing was filtered"
+    },
+    {
+      "op": "move",
+      "at": 99.8,
+      "to": {
+        "point": [
+          1680,
+          130
+        ]
+      },
+      "note": "park below the selector while p33-p34 explain"
+    },
+    {
+      "op": "click",
+      "target": "shyneBtn",
+      "pressAt": 109.9,
+      "hoverMs": 400,
+      "postcondition": "shyneOpen",
+      "timeoutMs": 4000,
+      "note": "step 9: open Ask Shyne inside the p36 trailing break"
+    },
+    {
+      "op": "log-rect",
+      "at": 110.6,
+      "key": "modalRect",
+      "target": "shyneModal",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 110.9,
+      "key": "shyneTitleRect",
+      "target": "shyneTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 111.1,
+      "key": "tryAskingRect",
+      "target": "tryAskingHdr"
+    },
+    {
+      "op": "log-rects",
+      "at": 111.4,
+      "key": "exampleRects",
+      "targets": [
+        "ex1",
+        "ex2",
+        "ex3",
+        "ex4",
+        "ex5",
+        "ex6"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 111.6,
+      "key": "askBoxRect",
+      "target": "askBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 111.8,
+      "key": "sendBtnRect",
+      "target": "sendBtn",
+      "note": "logged for the red do-not-click bracket only; Send is NEVER clicked"
+    },
+    {
+      "op": "log-rect",
+      "at": 112,
+      "key": "guardrailRect",
+      "target": "guardrail"
+    },
+    {
+      "op": "log-rect",
+      "at": 112.2,
+      "key": "closeBtnRect",
+      "target": "shyneClose"
+    },
+    {
+      "op": "watch",
+      "key": "shyneVisibleDuringExplanation",
+      "from": 110.6,
+      "to": 157.2,
+      "predicate": "shyneOpen",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 112.5,
+      "to": {
+        "point": [
+          585,
+          225
+        ]
+      },
+      "note": "park left of the modal while p37-p39 explain"
+    },
+    {
+      "op": "move",
+      "at": 122.6,
+      "to": {
+        "point": [
+          618,
+          214
+        ]
+      },
+      "note": "step 10: sweep down the Try asking prompts along their left edge (x<632, no hover)"
+    },
+    {
+      "op": "move",
+      "at": 123.6,
+      "to": {
+        "point": [
+          618,
+          272
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 125.2,
+      "to": {
+        "point": [
+          618,
+          329
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 127.5,
+      "to": {
+        "point": [
+          600,
+          365
+        ]
+      },
+      "note": "park during p43"
+    },
+    {
+      "op": "move",
+      "at": 136.3,
+      "to": {
+        "target": "askBox",
+        "offset": [
+          -14,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 11: point beside the question box (p44); the pointer never approaches Send"
+    },
+    {
+      "op": "move",
+      "at": 145,
+      "to": {
+        "target": "guardrail",
+        "offset": [
+          -2,
+          12
+        ],
+        "outside": true
+      },
+      "note": "point beside 'the line just below' — the AI-generated guardrail (p47-p48)"
+    },
+    {
+      "op": "click",
+      "target": "shyneClose",
+      "pressAt": 157.5,
+      "hoverMs": 380,
+      "postcondition": "shyneClosed",
+      "timeoutMs": 4000,
+      "note": "step 12: dismiss via the modal's real close control (aria-label 'Close', the ✕ top-right); nothing sent"
+    },
+    {
+      "op": "move",
+      "at": 159,
+      "to": {
+        "point": [
+          1450,
+          300
+        ]
+      },
+      "note": "park on the untouched workspace during p51"
+    },
+    {
+      "op": "move",
+      "at": 164.6,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "step 13 recap sweep: Search (p53)"
+    },
+    {
+      "op": "move",
+      "at": 167.9,
+      "to": {
+        "target": "locBtn",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "location selector (p54)"
+    },
+    {
+      "op": "move",
+      "at": 171.4,
+      "to": {
+        "target": "shyneBtn",
+        "offset": [
+          0,
+          44
+        ]
+      },
+      "note": "Ask Shyne (p55)"
+    },
+    {
+      "op": "move",
+      "at": 176.2,
+      "to": {
+        "point": [
+          1520,
+          940
+        ]
+      },
+      "note": "final park, clear of KPIs and captions"
+    },
+    {
+      "op": "assert",
+      "at": 179,
+      "predicate": "allClosed",
+      "note": "all three tools genuinely closed at the end"
+    },
+    {
+      "op": "assert",
+      "at": 179.3,
+      "predicate": "onCommandCenter"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "headerBtns.locBtn",
+        "place": "below-left",
+        "from": 2.6,
+        "to": 7.9,
+        "note": "the four persistent header tools (no tighter DOM container exists than the full topbar, so the badge sits at the group's visual center; the three in-scope tools are bracketed by the p04 highlights)"
+      },
+      {
+        "n": 2,
+        "anchor": "paletteInputRect",
+        "place": "left",
+        "from": 16.4,
+        "to": 25.8
+      },
+      {
+        "n": 3,
+        "anchor": "pagesHdrRect",
+        "place": "left",
+        "from": 28,
+        "to": 35.3
+      },
+      {
+        "n": 4,
+        "anchor": "cmdFooterRect",
+        "place": "left",
+        "from": 39.2,
+        "to": 45.6
+      },
+      {
+        "n": 5,
+        "anchor": "headerBtns.searchBtn",
+        "place": "below-left",
+        "from": 55.2,
+        "to": 60.6,
+        "note": "palette closed, page underneath unchanged"
+      },
+      {
+        "n": 6,
+        "anchor": "allLocRowRect",
+        "place": "left",
+        "from": 65.2,
+        "to": 74.2
+      },
+      {
+        "n": 7,
+        "anchor": "groupsHdrRect",
+        "place": "left",
+        "from": 76.6,
+        "to": 86
+      },
+      {
+        "n": 8,
+        "anchor": "headerBtns.locBtn",
+        "place": "below-left",
+        "from": 99.2,
+        "to": 106.6,
+        "note": "left on the default — header still reads All Locations▾"
+      },
+      {
+        "n": 9,
+        "anchor": "shyneTitleRect",
+        "place": "left",
+        "from": 112.6,
+        "to": 118.4
+      },
+      {
+        "n": 10,
+        "anchor": "tryAskingRect",
+        "place": "left",
+        "from": 120.2,
+        "to": 134.8
+      },
+      {
+        "n": 11,
+        "anchor": "guardrailRect",
+        "place": "left",
+        "from": 145.2,
+        "to": 155.2
+      },
+      {
+        "n": 12,
+        "anchor": "closeBtnRect",
+        "place": "right",
+        "from": 156.2,
+        "to": 157.3
+      },
+      {
+        "n": 13,
+        "anchor": "headerBtns.locBtn",
+        "place": "below-left",
+        "from": 175.7,
+        "to": 179.2,
+        "note": "three tools, one corner"
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "headerBtns.searchBtn",
+        "from": 8.6,
+        "to": 10,
+        "note": "p04 'jumping anywhere'"
+      },
+      {
+        "anchor": "headerBtns.locBtn",
+        "from": 10,
+        "to": 11.4,
+        "note": "p04 'focusing the view'"
+      },
+      {
+        "anchor": "headerBtns.shyneBtn",
+        "from": 11.4,
+        "to": 12.88,
+        "note": "p04 'asking questions in plain language'"
+      },
+      {
+        "anchor": "paletteInputRect",
+        "from": 16.2,
+        "to": 19.9,
+        "note": "p06: the search box, cursor already blinking"
+      },
+      {
+        "anchor": "pagesHdrRect",
+        "from": 28,
+        "to": 31.5,
+        "note": "p10: the PAGES results section"
+      },
+      {
+        "anchor": "cmdFooterRect",
+        "from": 38.8,
+        "to": 41.2,
+        "note": "p13: the footer key hints"
+      },
+      {
+        "anchor": "allLocRowRect",
+        "from": 64.5,
+        "to": 67.5,
+        "note": "p23: All Locations ✓, the network-wide default"
+      },
+      {
+        "anchor": "groupsHdrRect",
+        "from": 76.2,
+        "to": 80.1,
+        "note": "p27: groups by state"
+      },
+      {
+        "anchor": "locationsHdrRect",
+        "from": 80.2,
+        "to": 83,
+        "note": "p28: single-site list"
+      },
+      {
+        "anchor": "headerBtns.locBtn",
+        "from": 99,
+        "to": 102.3,
+        "note": "p33: scope stays on the full network"
+      },
+      {
+        "anchor": "exampleRects.ex1",
+        "from": 122.7,
+        "to": 123.5,
+        "note": "p41 'Payment declines at one site'"
+      },
+      {
+        "anchor": "exampleRects.ex2",
+        "from": 123.5,
+        "to": 124.29,
+        "note": "p41 'prepaid members gone quiet'"
+      },
+      {
+        "anchor": "exampleRects.ex3",
+        "from": 124.75,
+        "to": 125.55,
+        "note": "p42 'last week's damage claims'"
+      },
+      {
+        "anchor": "exampleRects.ex5",
+        "from": 125.55,
+        "to": 126.36,
+        "note": "p42 'VIPs at risk of leaving'"
+      },
+      {
+        "anchor": "askBoxRect",
+        "from": 136.4,
+        "to": 138.9,
+        "note": "p44: the question box"
+      },
+      {
+        "anchor": "sendBtnRect",
+        "from": 144.85,
+        "to": 151,
+        "color": "#dc2626",
+        "note": "do-not-click bracket on Send through the guardrail phrases (p47-p48); Send is never clicked or pressed"
+      },
+      {
+        "anchor": "guardrailRect",
+        "from": 147.3,
+        "to": 151,
+        "note": "p48: 'AI-generated · always verify before taking action'"
+      },
+      {
+        "anchor": "closeBtnRect",
+        "from": 156.1,
+        "to": 157.3,
+        "note": "p50 'Click Close.' — the genuine dismiss, before the press"
+      },
+      {
+        "anchor": "headerBtns.searchBtn",
+        "from": 164.5,
+        "to": 167.5,
+        "note": "p53 recap: Control K"
+      },
+      {
+        "anchor": "headerBtns.locBtn",
+        "from": 167.8,
+        "to": 171,
+        "note": "p54 recap: location selector"
+      },
+      {
+        "anchor": "headerBtns.shyneBtn",
+        "from": 171.3,
+        "to": 175,
+        "note": "p55 recap: Ask Shyne"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 3.2,
+        "z": 1.4,
+        "cx": 1500,
+        "cy": 165,
+        "ease": true,
+        "note": "top-right punch-in: all four header tools in frame for step 1"
+      },
+      {
+        "t": 15.5,
+        "z": 1.4,
+        "cx": 1500,
+        "cy": 165
+      },
+      {
+        "t": 16.6,
+        "z": 1.5,
+        "cx": 953,
+        "cy": 360,
+        "ease": true,
+        "note": "close framing on the opened palette (box 673-1233 x 72-414 fully in view); held through steps 2-5"
+      },
+      {
+        "t": 52.9,
+        "z": 1.5,
+        "cx": 953,
+        "cy": 360
+      },
+      {
+        "t": 54.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide after Escape: the whole untouched page underneath"
+      },
+      {
+        "t": 63.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 65.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "close framing on the dropdown: checked default, GROUPS and LOCATIONS labels all in view (y 0-720); held through steps 6-8"
+      },
+      {
+        "t": 110.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 111.6,
+        "z": 1.5,
+        "cx": 953,
+        "cy": 360,
+        "ease": true,
+        "note": "pan to the Ask Shyne modal (613-1293 x 86-461 fully in view); held through steps 9-12"
+      },
+      {
+        "t": 157.8,
+        "z": 1.5,
+        "cx": 953,
+        "cy": 360
+      },
+      {
+        "t": 159.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide after Close: workspace right where you left it"
+      },
+      {
+        "t": 163.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 165.1,
+        "z": 1.25,
+        "cx": 1450,
+        "cy": 220,
+        "ease": true,
+        "note": "gentle recap punch toward the header corner for the three-tool sweep"
+      },
+      {
+        "t": 175.9,
+        "z": 1.25,
+        "cx": 1450,
+        "cy": 220
+      },
+      {
+        "t": 177.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 181.473,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Search, Location Scope & Ask Shyne — Complete",
+      "from": 179.7,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 179.4
+  }
+}

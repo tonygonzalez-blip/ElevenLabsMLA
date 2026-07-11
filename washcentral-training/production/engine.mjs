@@ -16,7 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync, spawn } from 'node:child_process';
-import { CDP, sleep } from '../tools/cdp-lib.mjs';
+import { CDP, sleep, dismissIdle } from '../tools/cdp-lib.mjs';
 
 const lessonPath = process.argv[2];
 const mode = process.argv.includes('--record') ? 'record' : 'rehearse';
@@ -101,7 +101,7 @@ class Engine {
   constructor(cdp, log) { this.cdp = cdp; this.log = log; this.pointer = [960, 1079]; this.watchers = []; }
   now() { return (Date.now() - this.t0) / 1000; }
   async evalRO(expr) { return this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${expr}); })()`); }
-  async resolve(name, { requireStableMs = 160 } = {}) {
+  async resolve(name, { requireStableMs = 160, allowDisabled = false } = {}) {
     const t = L.targets[name];
     if (!t) throw new Error(`unknown target ${name}`);
     const one = async () => this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${resolveJS(t)}); })()`);
@@ -112,7 +112,7 @@ class Engine {
     if (!b) throw new Error(`target vanished during stability check: ${name}`);
     if (Math.abs(a.rect.x - b.rect.x) > 2 || Math.abs(a.rect.y - b.rect.y) > 2) throw new Error(`target rect unstable: ${name}`);
     if (!b.visible) throw new Error(`target not visible: ${name}`);
-    if (b.disabled) throw new Error(`target disabled: ${name}`);
+    if (b.disabled && !allowDisabled) throw new Error(`target disabled: ${name}`);
     return b;
   }
   dispatchMove(x, y) {
@@ -178,6 +178,7 @@ class Engine {
     this.watchers.push(iv);
   }
   async waitUntil(audioT) {
+    if (this.noWait) return;
     const due = this.t0 + audioT * 1000;
     const wait = due - Date.now();
     if (wait > 0) await sleep(wait);
@@ -211,6 +212,11 @@ class Engine {
         entry.to = to;
         await this.glideTo(to);
       } else if (op.op === 'click') {
+        if (op.unless && await this.evalRO(L.predicates[op.unless])) {
+          entry.skipped = true; entry.ok = true;
+          this.log.ops[this.log.ops.length - 1] = entry;
+          return;
+        }
         const tgt = await this.resolveRetry(op.target, { requireStableMs: 200 }, 3500);
         if (tgt.obscured) throw new Error(`target obscured: ${op.target}`);
         const t = L.targets[op.target];
@@ -231,16 +237,57 @@ class Engine {
         entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `${op.target} -> ${op.postcondition}`);
         entry.postcondition = op.postcondition;
         if (op.nav) this.log.navs.push({ target: op.target, pressT: tPress, verifiedT: entry.verifiedT });
+      } else if (op.op === 'key') {
+        // Genuine keyboard input via CDP (rawKeyDown/keyUp), for lessons that demonstrate
+        // keystrokes (Ctrl+K, arrow keys, Escape). `keys` is one combo or an ordered list,
+        // e.g. "ctrl+k", "ArrowDown", "Escape". Optional postcondition is verified after.
+        await this.waitUntil(op.pressAt ?? op.at);
+        const keyT = +this.now().toFixed(3);
+        const combos = Array.isArray(op.keys) ? op.keys : [op.keys || op.key];
+        const modMap = { ctrl: 2, alt: 1, meta: 4, shift: 8 };
+        for (const combo of combos) {
+          const parts = String(combo).split('+');
+          const key = parts.pop();
+          const mods = parts.reduce((m, p) => m | (modMap[p.toLowerCase()] || 0), 0);
+          await this.cdp.pressKey(key, mods);
+          await sleep(op.gapMs ?? 240);
+        }
+        entry.keyT = keyT; entry.keys = combos;
+        this.log.keys.push({ t: keyT, keys: combos, label: op.keyLabel || combos.join(' ') });
+        if (op.postcondition) {
+          entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `${combos.join(',')} -> ${op.postcondition}`);
+          entry.postcondition = op.postcondition;
+        }
+      } else if (op.op === 'type') {
+        // Genuine typed text via per-character CDP key events (keyDown carries `text`, so the
+        // browser inserts it exactly as a keyboard would). Only ever used on lesson-reviewed,
+        // read-only inputs (e.g. a live search box) — never on credential fields.
+        await this.waitUntil(op.pressAt ?? op.at);
+        const typeT = +this.now().toFixed(3);
+        for (const ch of String(op.text)) {
+          await this.cdp.send('Input.dispatchKeyEvent', { type: 'keyDown', text: ch, unmodifiedText: ch, key: ch });
+          await sleep(28);
+          await this.cdp.send('Input.dispatchKeyEvent', { type: 'keyUp', key: ch });
+          await sleep(op.perCharMs ?? 95);
+        }
+        entry.typeT = typeT; entry.text = op.text;
+        this.log.keys.push({ t: typeT, keys: [op.text], label: op.keyLabel || 'type: ' + op.text });
+        if (op.postcondition) {
+          entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `type -> ${op.postcondition}`);
+          entry.postcondition = op.postcondition;
+        }
       } else if (op.op === 'log-rect') {
         await this.waitUntil(op.at);
-        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160 }, 3000);
+        // log-rect only reads geometry for external graphics; a disabled control (e.g. a Send
+        // button with an empty input) is a legitimate thing to point at, never to click
+        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160, allowDisabled: true }, 3000);
         entry.rect = tgt.rect; entry.label = tgt.label;
         this.log.rects[op.key] = { t: +this.now().toFixed(3), rect: tgt.rect, label: tgt.label };
       } else if (op.op === 'log-rects') {
         await this.waitUntil(op.at);
         const group = {};
         for (const name of op.targets) {
-          const tgt = await this.resolve(name);
+          const tgt = await this.resolve(name, { allowDisabled: true });
           group[name] = { rect: tgt.rect, label: tgt.label };
         }
         this.log.rects[op.key] = { t: +this.now().toFixed(3), items: group };
@@ -272,17 +319,30 @@ async function main() {
   const cdp = await CDP.connect('first');
   const log = {
     lesson: L.lesson, mode, startedISO: null, display: DISPLAY,
-    pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {},
+    pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {}, keys: [],
     audioDurationS: L.audioDurationS, captureOffsetS: null, rawFile: null
   };
 
-  // pre-flight (off-camera, before any capture): stage the start page and let it settle
-  const here = await cdp.eval('location.href');
-  if (!here.startsWith(L.startUrl)) {
-    console.log(`  staging start page: ${L.startUrl}`);
-    await cdp.navigate(L.startUrl, 1500);
-  }
+  // pre-flight (off-camera, before any capture): stage the start page, dismiss any idle
+  // "Still there?" session dialog via its own Stay-Logged-In button (a genuine user action),
+  // and let the page settle. A live idle dialog on a fresh capture would abort QA check 29.
+  // Always (re)load the start page: a fresh document guarantees no leftover overlay, modal,
+  // theme, or dialog from prior activity can leak into the take.
+  console.log(`  staging start page: ${L.startUrl}`);
+  await cdp.navigate(L.startUrl, 1500);
+  if (await dismissIdle(cdp)) { console.log('  dismissed idle session dialog (off-camera)'); await sleep(600); }
   await sleep(1200);
+
+  // per-lesson off-camera preflight: genuine UI clicks that stage persisted preferences
+  // (e.g. sidebar collapsed/expanded) to the lesson's documented start state. Runs before
+  // any capture; ops may carry `unless: <predicate>` to skip when already staged.
+  const engine0 = new Engine(cdp, { pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {}, keys: [] });
+  if (Array.isArray(L.preflight) && L.preflight.length) {
+    console.log(`  preflight: ${L.preflight.length} op(s) (off-camera)`);
+    engine0.t0 = Date.now(); engine0.noWait = true;
+    for (const op of L.preflight) await engine0.runOp(op);
+    await sleep(600);
+  }
 
   // Capture in record mode:
   let ff = null, rawPath = null, sigintAt = null;

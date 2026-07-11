@@ -128,8 +128,17 @@ function overlaySVG(t, camr) {
     if (fr.x + fr.w < 0 || fr.x > W || fr.y + fr.h < 0 || fr.y > H) continue;
     const appear = Math.min(1, (t - hl.from) / 0.28);
     const pad = 4;
-    s += `<rect x="${(fr.x - pad).toFixed(1)}" y="${(fr.y - pad).toFixed(1)}" width="${(fr.w + 2 * pad).toFixed(1)}" height="${(fr.h + 2 * pad).toFixed(1)}" rx="7" fill="none" stroke="#f59e0b" stroke-width="${(2.2).toFixed(1)}" opacity="${(appear).toFixed(2)}"/>`;
+    s += `<rect x="${(fr.x - pad).toFixed(1)}" y="${(fr.y - pad).toFixed(1)}" width="${(fr.w + 2 * pad).toFixed(1)}" height="${(fr.h + 2 * pad).toFixed(1)}" rx="7" fill="none" stroke="${hl.color || '#f59e0b'}" stroke-width="${(2.2).toFixed(1)}" opacity="${(appear).toFixed(2)}"/>`;
   }
+  // keystroke chips: each genuine key event from the log shows a small chip bottom-right ~1.2s
+  const keyEvents = (events.keys || []).filter(k => t >= k.t && t < k.t + 1.2);
+  keyEvents.slice(-2).forEach((k, i) => {
+    const a = Math.min(1, (t - k.t) / 0.15) * (k.t + 1.2 - t < 0.25 ? (k.t + 1.2 - t) / 0.25 : 1);
+    const label = k.label || (k.keys || []).join(' ');
+    const cw = Math.max(84, label.length * 15 + 30), chx = W - cw - 48, chy = H - 190 - i * 52;
+    s += `<rect x="${chx}" y="${chy}" width="${cw}" height="40" rx="9" fill="#0c1016" opacity="${(0.88 * a).toFixed(2)}"/>`;
+    s += `<text x="${chx + cw / 2}" y="${chy + 27}" font-family="DejaVu Sans" font-size="21" font-weight="600" fill="#fff" text-anchor="middle" opacity="${a.toFixed(2)}">${esc(label)}</text>`;
+  });
   // callouts (numbered badge beside the anchor)
   for (const co of L.compositor.callouts) {
     if (t < co.from || t >= co.to) continue;
@@ -281,7 +290,7 @@ execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
   '-map', '[o]', '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-pix_fmt', 'yuv420p', '-r', String(FPS),
   '-movflags', '+faststart', silentVideo], { stdio: ['ignore', 'ignore', 'inherit'] });
 
-const finalOut = path.join(repoRoot, 'training/module00-setup', `${L.lesson}-account-menu-v1.1.mp4`);
+const finalOut = path.join(path.dirname(audio), `${L.output || L.lesson + '-v1.1'}.mp4`);
 // stream-copy audio (NO transcode, NO -shortest); video is longer than audio by TAIL_S
 execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silentVideo, '-i', audio,
   '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'copy', '-movflags', '+faststart', finalOut]);

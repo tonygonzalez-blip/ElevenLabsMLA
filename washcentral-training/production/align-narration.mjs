@@ -125,7 +125,7 @@ const ts = s => {
 };
 let vtt = 'WEBVTT\n\n';
 for (const p of out.phrases) vtt += `${p.id}\n${ts(p.startS)} --> ${ts(p.endS)}\n${p.text}\n\n`;
-const vttPath = path.resolve(path.dirname(audio), 'WC-00-03-account-menu-v1.1.vtt');
+const vttPath = path.resolve(path.dirname(audio), `${man.output || man.lesson + '-v1.1'}.vtt`);
 fs.writeFileSync(vttPath, vtt);
 
 console.log(`transcript: ${tPath}`);

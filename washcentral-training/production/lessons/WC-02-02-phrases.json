@@ -1,0 +1,217 @@
+{
+  "lesson": "WC-02-02",
+  "audioMaster": "training/module02-crm/WC-02-02-full-narration-v1.0.mp3",
+  "output": "WC-02-02-customer-360-v1.1",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries into caption-sized pieces. Caption text is never rewritten, summarized, or reordered. Block windows are the measured onsets of each rendered block inside the joined master (normalized cross-correlation of each WC-02-02-sNN.mp3 against WC-02-02-full-narration-v1.0.mp3); the theoretical audio+0.4 tail model runs ~0.7s long against the ffprobe master duration (315.716s) because the joined master uses ~0.357s inter-block gaps, so measured onsets are used for accurate phrase placement.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 16.085,
+      "phrases": [
+        { "id": "p01", "text": "Click one row in the customer list." },
+        { "id": "p02", "text": "That single click opens the whole member." },
+        { "id": "p03", "text": "Everything you need for most tickets is now on one page:" },
+        { "id": "p04", "text": "who they are up top, their numbers just below, and the detail waiting in the tabs." },
+        { "id": "p05", "text": "Start at the top and work down." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.085,
+      "endS": 34.555,
+      "phrases": [
+        { "id": "p06", "text": "Look at the header." },
+        { "id": "p07", "text": "The avatar, the name, the plan badge, and the line beneath it tell you four things at a glance:" },
+        { "id": "p08", "text": "who you have, what they pay for, where they wash, and whether the account is in good standing." },
+        { "id": "p09", "text": "Read that line first on every call." },
+        { "id": "p10", "text": "It confirms you are on the right person." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.555,
+      "endS": 50.72,
+      "phrases": [
+        { "id": "p11", "text": "Now the chips under the name." },
+        { "id": "p12", "text": "Plan active, a plate on file for the cameras, auto-pay running, texting turned on." },
+        { "id": "p13", "text": "Four little flags that answer half the \"is my account set up right\" questions" },
+        { "id": "p14", "text": "before you open a single tab." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 50.72,
+      "endS": 65.36,
+      "phrases": [
+        { "id": "p15", "text": "Over on the right, four controls." },
+        { "id": "p16", "text": "Back returns you to the list." },
+        { "id": "p17", "text": "Edit Customer opens the form we cover next lesson." },
+        { "id": "p18", "text": "Actions holds the member-level moves, and we open that at the end." },
+        { "id": "p19", "text": "The one you never touch is Delete." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 65.36,
+      "endS": 87.596,
+      "phrases": [
+        { "id": "p20", "text": "Under the header sits a strip of six numbers." },
+        { "id": "p21", "text": "Think of it as the account's vital signs:" },
+        { "id": "p22", "text": "when they joined, what they spend, how often they come, their points, the next renewal," },
+        { "id": "p23", "text": "and the last time you saw them." },
+        { "id": "p24", "text": "When a member asks \"how long have I been with you\" or \"when do I renew,\"" },
+        { "id": "p25", "text": "the answer is right here, no digging." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 87.596,
+      "endS": 103.91,
+      "phrases": [
+        { "id": "p26", "text": "Below that, a row of shortcuts." },
+        { "id": "p27", "text": "Each chip is a doorway into one slice of the account:" },
+        { "id": "p28", "text": "their vehicles, their tickets, their wash books, gift cards, house account, loyalty, rewards." },
+        { "id": "p29", "text": "Instead of hunting, you click straight through to the part you need." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 103.91,
+      "endS": 126.96,
+      "phrases": [
+        { "id": "p30", "text": "The Overview tab opens first." },
+        { "id": "p31", "text": "Up top, an A-I snapshot writes the account in plain language," },
+        { "id": "p32", "text": "with a Regenerate button to refresh it." },
+        { "id": "p33", "text": "Below are the charts: visits by month, the mix of services, spend over time, and points." },
+        { "id": "p34", "text": "Treat the snapshot as a helpful draft you confirm against the real tabs," },
+        { "id": "p35", "text": "the same rule you use for Shyne." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 126.96,
+      "endS": 146.08,
+      "phrases": [
+        { "id": "p36", "text": "Switch to Contact." },
+        { "id": "p37", "text": "This is the record itself: name and business details, address, phone and email," },
+        { "id": "p38", "text": "plus the notification and consent settings." },
+        { "id": "p39", "text": "You read it here; you change it on the edit form in the next lesson." },
+        { "id": "p40", "text": "For now it answers \"is our contact info current.\"" }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 146.08,
+      "endS": 168.305,
+      "phrases": [
+        { "id": "p41", "text": "Open Membership. This is the one you will use most." },
+        { "id": "p42", "text": "Plan details, the loyalty section with the bar code," },
+        { "id": "p43", "text": "the visit and spend totals, and the billing cycle." },
+        { "id": "p44", "text": "Two fields earn their keep here." },
+        { "id": "p45", "text": "The bar code is exactly what the POS scans, so this is your first stop when a tag will not read." },
+        { "id": "p46", "text": "And next charge tells the member when they get billed again." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 168.305,
+      "endS": 181.76,
+      "phrases": [
+        { "id": "p47", "text": "Now Payments." },
+        { "id": "p48", "text": "The cards on file and any prepaid credit live here." },
+        { "id": "p49", "text": "You can see what is set up to bill, and you can see remaining book value." },
+        { "id": "p50", "text": "Reading it is safe." },
+        { "id": "p51", "text": "Adding a card is not part of this walk." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 181.76,
+      "endS": 199.92,
+      "phrases": [
+        { "id": "p52", "text": "Last tab in Part 1, Vehicles." },
+        { "id": "p53", "text": "These are the plates the cameras match to the plan." },
+        { "id": "p54", "text": "You will also see a re-tracts list, the equipment holds set on this account's washes," },
+        { "id": "p55", "text": "like a skipped tire shine or top brush." },
+        { "id": "p56", "text": "When a member says the wash left something off, this is where you check." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 199.92,
+      "endS": 214.64,
+      "phrases": [
+        { "id": "p57", "text": "Linked Accounts." },
+        { "id": "p58", "text": "Shared plans and household members show up here:" },
+        { "id": "p59", "text": "a spouse on the same membership, a second driver, a family link." },
+        { "id": "p60", "text": "When one person is asking about another's plan," },
+        { "id": "p61", "text": "check this tab before you assume they are separate accounts." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 214.64,
+      "endS": 229.36,
+      "phrases": [
+        { "id": "p62", "text": "Activity is the running log." },
+        { "id": "p63", "text": "Every visit and transaction, newest first, each with a type, a date, and an amount." },
+        { "id": "p64", "text": "When you need \"what happened and when,\"" },
+        { "id": "p65", "text": "you scroll this instead of piecing it together from tickets." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 229.36,
+      "endS": 246.24,
+      "phrases": [
+        { "id": "p66", "text": "Open Messaging." },
+        { "id": "p67", "text": "This is the two-way text thread with the member, and it shows whether they opted in." },
+        { "id": "p68", "text": "Read it to see what was already said, so you are not repeating a message someone sent yesterday." },
+        { "id": "p69", "text": "One hard rule: you never send from here in the demo." },
+        { "id": "p70", "text": "Read only." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 246.24,
+      "endS": 266.72,
+      "phrases": [
+        { "id": "p71", "text": "Now Notes." },
+        { "id": "p72", "text": "These are internal staff notes, and the label says it plainly: not visible to the customer." },
+        { "id": "p73", "text": "Below them, the full communication history by channel, and a change log." },
+        { "id": "p74", "text": "This is where you leave context for the next agent" },
+        { "id": "p75", "text": "and where you find what a teammate already did." },
+        { "id": "p76", "text": "Save Note stays untouched today." }
+      ]
+    },
+    {
+      "block": "s16",
+      "startS": 266.72,
+      "endS": 290.72,
+      "phrases": [
+        { "id": "p77", "text": "Finally, open Actions." },
+        { "id": "p78", "text": "Two items today: Issue Wash and Refund Customer." },
+        { "id": "p79", "text": "The old guide listed six, so if you are expecting Cancel or Pause here and they are missing," },
+        { "id": "p80", "text": "that gap is logged and parked, not something you broke." },
+        { "id": "p81", "text": "Read the list, then close it." },
+        { "id": "p82", "text": "Both of these move money or issue value, so in the demo you open the menu and stop." }
+      ]
+    },
+    {
+      "block": "s17",
+      "startS": 290.72,
+      "endS": 315.716,
+      "phrases": [
+        { "id": "p83", "text": "That is the whole record." },
+        { "id": "p84", "text": "Header and chips tell you who." },
+        { "id": "p85", "text": "The metric strip gives the headline numbers." },
+        { "id": "p86", "text": "The chips jump you into any slice." },
+        { "id": "p87", "text": "And nine tabs answer the everyday tickets:" },
+        { "id": "p88", "text": "the bar code and the next charge on Membership," },
+        { "id": "p89", "text": "consent on Contact and Messaging, the internal trail on Notes." },
+        { "id": "p90", "text": "One page, read top to bottom, and you changed nothing to get every answer." }
+      ]
+    }
+  ]
+}
