@@ -1,0 +1,568 @@
+{
+  "lesson": "WC-05-03",
+  "audioMaster": "training/module05-marketing/WC-05-03-full-narration-v1.0.mp3",
+  "audioDurationS": 225.071,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Marketing and look down the left rail.",
+      "startS": 0,
+      "endS": 2.34,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Campaigns and Automation you already know.",
+      "startS": 2.696,
+      "endS": 5.125,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Everything under them is what we map today.",
+      "startS": 5.616,
+      "endS": 7.718,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Think of this list as a lookup table:",
+      "startS": 8.306,
+      "endS": 10.163,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "a client asks a question, and one of these pages holds the answer.",
+      "startS": 10.556,
+      "endS": 14.378,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "By the end you'll go straight to the right one.",
+      "startS": 14.866,
+      "endS": 17.027,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "First, SmartLinks.",
+      "startS": 17.44,
+      "endS": 18.065,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "These are trackable links you drop into an email or a social post.",
+      "startS": 18.065,
+      "endS": 22.617,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "When a manager asks whether that link actually brought cars through the bay,",
+      "startS": 22.617,
+      "endS": 27.12,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "you don't guess.",
+      "startS": 27.12,
+      "endS": 28.413,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "The page counts clicks, conversions, and the revenue each link earned.",
+      "startS": 28.413,
+      "endS": 31.852,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Next, Customer Segments.",
+      "startS": 32.32,
+      "endS": 33.349,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "A segment is just a saved audience,",
+      "startS": 33.349,
+      "endS": 36.216,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "a group like win-back or VIP that a campaign gets pointed at.",
+      "startS": 36.216,
+      "endS": 40.331,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "So when someone asks who a message went to, the trail ends here.",
+      "startS": 40.331,
+      "endS": 45.487,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Every campaign starts from a list on this page.",
+      "startS": 45.487,
+      "endS": 48.572,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Offers and Promotions.",
+      "startS": 49.04,
+      "endS": 50.676,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This is where the discounts live.",
+      "startS": 51.717,
+      "endS": 53.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "A member says their promo code bounced?",
+      "startS": 53.863,
+      "endS": 55.766,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Open the offer, check the dates it's valid, and check its status.",
+      "startS": 56.2,
+      "endS": 57.01,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Nine times out of ten the code simply expired.",
+      "startS": 57.304,
+      "endS": 63.088,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Email Templates.",
+      "startS": 63.52,
+      "endS": 64.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "These are the reusable email layouts the campaigns and the automated lifecycle flows draw from.",
+      "startS": 65.216,
+      "endS": 70.725,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "They're sorted by moment: cancellation, refund, plan change, retention.",
+      "startS": 71.383,
+      "endS": 72.567,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "When a client asks what the cancellation email says,",
+      "startS": 72.852,
+      "endS": 75.999,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "you read it right here, without touching send.",
+      "startS": 76.707,
+      "endS": 81.848,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Paid Media, and notice the draft tag on it.",
+      "startS": 82.385,
+      "endS": 85.033,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "This one matches your members to ad accounts on Meta and Google,",
+      "startS": 85.819,
+      "endS": 89.385,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "then ties the ad spend back to actual washes.",
+      "startS": 89.743,
+      "endS": 92.819,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "It's powerful and it's still being built.",
+      "startS": 93.217,
+      "endS": 95.34,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Read the tabs, but do not click Sync Now or a row Sync.",
+      "startS": 95.96,
+      "endS": 99.938,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "Those push audience data out to the ad platforms.",
+      "startS": 100.412,
+      "endS": 103.032,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Now the page every technician should bookmark: Deliverability.",
+      "startS": 103.6,
+      "endS": 107.09,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Before you ever write \"the platform didn't send,\" come here.",
+      "startS": 107.736,
+      "endS": 111.27,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "Inbox rate, bounces, spam complaints, and the suppression list.",
+      "startS": 111.734,
+      "endS": 115.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "If an address was suppressed or bounced, the send didn't fail.",
+      "startS": 115.983,
+      "endS": 119.466,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "The system did exactly what it was told.",
+      "startS": 119.809,
+      "endS": 121.874,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Click Referral Program, and watch the breadcrumb.",
+      "startS": 122.413,
+      "endS": 124.875,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "It jumps you into Settings.",
+      "startS": 125.59,
+      "endS": 126.993,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "This is refer-a-friend: the reward the referrer gets, the reward the friend gets,",
+      "startS": 127.492,
+      "endS": 128.888,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "and how many referrals each program has driven.",
+      "startS": 129.209,
+      "endS": 134.802,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "Same menu, but it lives on the Settings side.",
+      "startS": 135.308,
+      "endS": 137.617,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "SMS Templates.",
+      "startS": 138.08,
+      "endS": 138.739,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "The text-message versions.",
+      "startS": 138.739,
+      "endS": 140.576,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Watch the character and segment counts here,",
+      "startS": 140.576,
+      "endS": 143.791,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "because a text that runs long splits into two segments and costs more to send.",
+      "startS": 143.791,
+      "endS": 148.735,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "Short and tight isn't a style choice on S-M-S.",
+      "startS": 148.735,
+      "endS": 152.313,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "It's the budget.",
+      "startS": 152.313,
+      "endS": 153.52,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "RCS Templates, the richer cousin of texting.",
+      "startS": 153.92,
+      "endS": 156.254,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Cards, carousels, images.",
+      "startS": 156.254,
+      "endS": 157.718,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "On a newer phone the member sees the full experience.",
+      "startS": 157.718,
+      "endS": 161.051,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "On an older one it quietly drops back to a plain text,",
+      "startS": 161.051,
+      "endS": 165.333,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "and the fallback column tells you how often that safety net is in place.",
+      "startS": 165.333,
+      "endS": 170,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Mobile Content Blocks, back on the Settings side.",
+      "startS": 170.4,
+      "endS": 173.14,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "This is what a customer sees inside the app:",
+      "startS": 174.529,
+      "endS": 176.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "the promo banner, the card rail, the announcements.",
+      "startS": 177.21,
+      "endS": 180.032,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "It's a live editor, so treat it gently.",
+      "startS": 180.837,
+      "endS": 183.228,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "Read the layout.",
+      "startS": 183.764,
+      "endS": 184.732,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "Do not click Save and Publish.",
+      "startS": 184.952,
+      "endS": 186.675,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "Last one, Push Campaigns.",
+      "startS": 187.2,
+      "endS": 187.917,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "This is where the app's push notifications get written and scheduled,",
+      "startS": 188.117,
+      "endS": 189.125,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "with a preview of how they'll look on a lock screen.",
+      "startS": 189.417,
+      "endS": 195.797,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "It's a compose-and-send surface, so we only name it.",
+      "startS": 196.051,
+      "endS": 198.947,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "Do not start a new campaign and do not publish.",
+      "startS": 199.249,
+      "endS": 202.301,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "Read it and move on.",
+      "startS": 202.52,
+      "endS": 203.818,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "That's the whole menu.",
+      "startS": 204.24,
+      "endS": 205.409,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "Links to SmartLinks, audiences to Segments, discounts to Offers,",
+      "startS": 205.755,
+      "endS": 209.955,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p68",
+      "text": "wording to the template pages, ad matching to Paid Media, and inbox health to Deliverability.",
+      "startS": 210.299,
+      "endS": 211.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p69",
+      "text": "Learn the map now, so when a client's win-back texts go quiet in one town,",
+      "startS": 212.245,
+      "endS": 215.893,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p70",
+      "text": "you already know the two pages that explain it before anyone files a bug.",
+      "startS": 216.316,
+      "endS": 224.635,
+      "timing": "silence"
+    }
+  ]
+}
