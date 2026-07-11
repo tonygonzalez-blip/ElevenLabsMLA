@@ -1,0 +1,496 @@
+{
+  "lesson": "WC-03-03",
+  "audioMaster": "training/module03-sales/WC-03-03-full-narration-v1.0.mp3",
+  "audioDurationS": 218.279,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "The Sales module keeps nine pages in one sidebar, all under the header Transactions.",
+      "startS": 0,
+      "endS": 5.528,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "You already know the first one, Tickets, from the last two lessons,",
+      "startS": 6.227,
+      "endS": 13.618,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "and the new Refund Approvals page waits for a lesson of its own.",
+      "startS": 14.387,
+      "endS": 15.797,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "That leaves seven for today: line items, payments, cash out, drawers,",
+      "startS": 16.302,
+      "endS": 17.079,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "declines, gift cards, and house accounts.",
+      "startS": 17.442,
+      "endS": 18.006,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "This is a map, not a deep dive.",
+      "startS": 18.537,
+      "endS": 19.137,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p07",
+      "text": "By the end you'll open the right one without thinking.",
+      "startS": 19.675,
+      "endS": 29.625,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Start where you already are, on Ticket Details.",
+      "startS": 30.08,
+      "endS": 32.579,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Tickets gave you one row per sale.",
+      "startS": 32.579,
+      "endS": 35.783,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "This page breaks each sale open: one row per line rung.",
+      "startS": 35.783,
+      "endS": 39.22,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Every service, every discount, every adjustment,",
+      "startS": 39.22,
+      "endS": 41.402,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "with the cashier and location right beside it.",
+      "startS": 41.402,
+      "endS": 44.134,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p13",
+      "text": "When a customer questions a charge and you need to see what was actually rung,",
+      "startS": 44.134,
+      "endS": 49.23,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p14",
+      "text": "not just the total, this is the view that shows it.",
+      "startS": 49.23,
+      "endS": 52.666,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Click Payments.",
+      "startS": 53.214,
+      "endS": 54.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Every completed payment across the network, searchable by ticket number.",
+      "startS": 54.643,
+      "endS": 58.333,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Method and amount tell you how a given sale was tendered: card, cash, or account.",
+      "startS": 58.63,
+      "endS": 61.644,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "One thing to hold onto: this page only records payments that went through.",
+      "startS": 61.882,
+      "endS": 63.662,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "Approvals and declines aren't its job.",
+      "startS": 64.04,
+      "endS": 65.298,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p20",
+      "text": "Declines are tracked on their own page, which is exactly where we go next.",
+      "startS": 65.526,
+      "endS": 74.436,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Now Payouts.",
+      "startS": 75.04,
+      "endS": 76.298,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "This is cash leaving the drawer instead of coming into it:",
+      "startS": 77.038,
+      "endS": 80.128,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "petty cash, or a vendor paid on delivery.",
+      "startS": 80.523,
+      "endS": 81.388,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "Read across the columns and you see why it matters.",
+      "startS": 81.697,
+      "endS": 83.321,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "Every payout is stamped with a shift number, a cashier, and the terminal it came from.",
+      "startS": 84.412,
+      "endS": 87.043,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p26",
+      "text": "That trail is what lets a manager account for cash that left the register during a shift.",
+      "startS": 87.712,
+      "endS": 98.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Click Shifts.",
+      "startS": 98.935,
+      "endS": 99.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Notice the page gets simpler here: one count, no charts.",
+      "startS": 100.235,
+      "endS": 102.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "A shift is a single drawer session, opened and closed on one terminal.",
+      "startS": 102.342,
+      "endS": 104.132,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "This is where you live when a drawer won't balance.",
+      "startS": 104.657,
+      "endS": 108.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p31",
+      "text": "Opening cash, closing cash, and every payment and payout in between,",
+      "startS": 108.992,
+      "endS": 115.634,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p32",
+      "text": "that's the reconciliation, and this page lines it up in one row.",
+      "startS": 115.953,
+      "endS": 119.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Here's the page I promised, the Declined Credit Card Log.",
+      "startS": 120.132,
+      "endS": 121.486,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "A member swears they paid, but their account shows nothing.",
+      "startS": 121.689,
+      "endS": 123.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Start here, every time.",
+      "startS": 124.075,
+      "endS": 127.306,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "The reason column tells you why the card was turned down,",
+      "startS": 127.601,
+      "endS": 129.431,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p37",
+      "text": "and the attempts column tells you how many times the system retried before it gave up.",
+      "startS": 130.528,
+      "endS": 138.136,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p38",
+      "text": "That usually answers the question before you even call the gateway.",
+      "startS": 138.527,
+      "endS": 141.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "Click Gift Card Transactions.",
+      "startS": 142.24,
+      "endS": 144.182,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "Every load and every redeem against a gift card lands here.",
+      "startS": 144.734,
+      "endS": 148.092,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "Type a card number into search and you get its whole history,",
+      "startS": 148.586,
+      "endS": 153.815,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "with the running balance after each line.",
+      "startS": 154.407,
+      "endS": 156.837,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "One caveat the page states in plain sight: this is completed activity, not card status.",
+      "startS": 157.128,
+      "endS": 160.272,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p44",
+      "text": "To issue a card or check whether it's active, that's CRM Gift Cards, a different page.",
+      "startS": 160.706,
+      "endS": 166.091,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "Last page, House Account Transactions.",
+      "startS": 166.56,
+      "endS": 168.995,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "These are sales billed to an account instead of paid at the register,",
+      "startS": 169.458,
+      "endS": 172.631,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "the fleets and businesses that run on terms.",
+      "startS": 173.087,
+      "endS": 175.358,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "Each row ties a ticket to the account that owes for it.",
+      "startS": 176.089,
+      "endS": 178.817,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p49",
+      "text": "That's the feed behind the balances and the invoices you'll work in CRM House Accounts.",
+      "startS": 179.343,
+      "endS": 183.752,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p50",
+      "text": "Here, it's just the raw charges.",
+      "startS": 184.4,
+      "endS": 186.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "That's the map.",
+      "startS": 186.537,
+      "endS": 187.31,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "Nine pages in the sidebar, and seven of them answer a question you'll hear.",
+      "startS": 187.704,
+      "endS": 191.572,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "Line items on a sale? Ticket Details.",
+      "startS": 191.998,
+      "endS": 193.236,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "How was it paid? Payments.",
+      "startS": 193.811,
+      "endS": 194.734,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p55",
+      "text": "Cash out of the drawer? Payouts.",
+      "startS": 195.104,
+      "endS": 196.022,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p56",
+      "text": "Drawer won't balance? Shifts.",
+      "startS": 196.445,
+      "endS": 197.013,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p57",
+      "text": "Says they paid but we show declined? The Declined log.",
+      "startS": 197.329,
+      "endS": 198.337,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p58",
+      "text": "Tracing a gift card? Gift Card Transactions.",
+      "startS": 198.807,
+      "endS": 199.429,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p59",
+      "text": "Billed to an account? House Account Transactions.",
+      "startS": 199.789,
+      "endS": 200.944,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p60",
+      "text": "Learn the map now, because for the rest of your support work,",
+      "startS": 201.299,
+      "endS": 201.844,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p61",
+      "text": "knowing the right page is half the job.",
+      "startS": 202.297,
+      "endS": 217.84,
+      "timing": "silence"
+    }
+  ]
+}

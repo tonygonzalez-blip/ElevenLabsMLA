@@ -1,0 +1,528 @@
+{
+  "lesson": "WC-PB-01",
+  "audioMaster": "training/playbooks/WC-PB-01-full-narration-v1.0.mp3",
+  "audioDurationS": 216.111,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "A caller says they can't sign in.",
+      "startS": 0,
+      "endS": 2.205,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Before you change a thing, fix the order in your head.",
+      "startS": 2.748,
+      "endS": 5.636,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Cheapest checks first, because two of them clear most of these tickets.",
+      "startS": 6.042,
+      "endS": 9.872,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "And in the demo tenant, you never reset a password.",
+      "startS": 10.231,
+      "endS": 13.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Start with the three fields.",
+      "startS": 13.537,
+      "endS": 15.687,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Every WashCentral sign-in wants an email, a password, and a tenant code.",
+      "startS": 15.687,
+      "endS": 19.633,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "That third one is where logins quietly fail.",
+      "startS": 19.633,
+      "endS": 22.743,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "A wrong tenant code sends a perfectly good account to the wrong company's data,",
+      "startS": 22.743,
+      "endS": 27.774,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "and nothing happens.",
+      "startS": 27.774,
+      "endS": 28.76,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Confirm the tenant before you ever suspect the password.",
+      "startS": 28.76,
+      "endS": 32.24,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Now one question.",
+      "startS": 32.64,
+      "endS": 33.632,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Did this client come from WashAssist?",
+      "startS": 33.632,
+      "endS": 35.616,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "If so, their login never changed.",
+      "startS": 35.616,
+      "endS": 37.95,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Same username, same password, same tenant.",
+      "startS": 37.95,
+      "endS": 40.17,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "A migrated user who can't get in is almost never a credentials problem.",
+      "startS": 40.17,
+      "endS": 44.795,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Have them try their old login first, and you may have skipped a reset you shouldn't be making.",
+      "startS": 44.795,
+      "endS": 50.958,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Open System Users, under Settings.",
+      "startS": 51.416,
+      "endS": 52.946,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This is the master list of everyone who can sign in.",
+      "startS": 52.946,
+      "endS": 56.725,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Eight columns, and four of them answer a login ticket by themselves.",
+      "startS": 56.725,
+      "endS": 60.828,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "There's a search across the top, and a New Record button you leave alone.",
+      "startS": 60.828,
+      "endS": 65.627,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "We're only reading here.",
+      "startS": 65.627,
+      "endS": 66.851,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "First, does the account even exist?",
+      "startS": 67.347,
+      "endS": 69.498,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Search by name, code, or email instead of scrolling a long list.",
+      "startS": 69.911,
+      "endS": 74.071,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "No match usually means the wrong tenant again, or a user who was never finished being set up.",
+      "startS": 74.544,
+      "endS": 80.314,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "And if the rows won't load, that's the data service, not an empty tenant.",
+      "startS": 80.737,
+      "endS": 85.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Read the Active column.",
+      "startS": 85.468,
+      "endS": 87.007,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "If it's switched off, the account can't sign in, full stop.",
+      "startS": 87.389,
+      "endS": 90.91,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "And to the caller, a disabled account looks exactly like a bad password.",
+      "startS": 91.328,
+      "endS": 95.242,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Re-enabling it is an admin's job in production, not yours in the demo.",
+      "startS": 96.299,
+      "endS": 100.614,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Next column: S-S-O.",
+      "startS": 101.041,
+      "endS": 101.903,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "If that reads yes, the password doesn't even live in WashCentral.",
+      "startS": 102.233,
+      "endS": 103.463,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "It's held by the identity provider.",
+      "startS": 103.765,
+      "endS": 109.459,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Reset it here and nothing changes.",
+      "startS": 109.663,
+      "endS": 111.89,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "So stop the password thread and send it to the single sign-on integration page instead.",
+      "startS": 112.143,
+      "endS": 116.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Then Last Login.",
+      "startS": 117.157,
+      "endS": 118.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "A recent date tells you the account works,",
+      "startS": 119.72,
+      "endS": 125.149,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "so today's failure is probably a typo or the tenant code.",
+      "startS": 125.828,
+      "endS": 128.063,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "A blank tells you it never signed in, which fits a setup that was never finished.",
+      "startS": 128.433,
+      "endS": 130.349,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "One column, and you know whether this ever worked.",
+      "startS": 130.888,
+      "endS": 133.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Last check.",
+      "startS": 134.118,
+      "endS": 134.883,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Open the Audit menu, then User Activity.",
+      "startS": 135.292,
+      "endS": 138.194,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Failed logins show up as one tile at the top, a count for the whole tenant.",
+      "startS": 138.871,
+      "endS": 143.071,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "There is no per user failure column, so read the caller's own row instead:",
+      "startS": 143.601,
+      "endS": 147.94,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "status, last login, logins this month.",
+      "startS": 148.16,
+      "endS": 150.908,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "A quiet row during a tenant wide spike points back at the tenant code,",
+      "startS": 151.49,
+      "endS": 155.335,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "and the event by event trail lives next door in the Audit Log.",
+      "startS": 155.561,
+      "endS": 159.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "By now you know whether a reset is even the fix.",
+      "startS": 159.5,
+      "endS": 162.633,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "You don't do it here.",
+      "startS": 163.175,
+      "endS": 164.272,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "In production there are two doors:",
+      "startS": 164.869,
+      "endS": 166.809,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "the user resets themselves with Forgot Password,",
+      "startS": 167.185,
+      "endS": 170.02,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "or an admin resets it from that user's own record.",
+      "startS": 170.434,
+      "endS": 173.337,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "If it's a single sign-on account, it's neither.",
+      "startS": 174.024,
+      "endS": 176.247,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "That fix lives with the identity provider.",
+      "startS": 176.627,
+      "endS": 178.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "If none of that lands it, escalate clean.",
+      "startS": 179.304,
+      "endS": 180.506,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "Username, tenant, the timestamps of the failures,",
+      "startS": 180.864,
+      "endS": 181.961,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "and screenshots with anything sensitive masked.",
+      "startS": 182.329,
+      "endS": 187.688,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Never the password.",
+      "startS": 187.933,
+      "endS": 189.229,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "The next tier should be able to reproduce it without calling the customer back.",
+      "startS": 189.957,
+      "endS": 193.907,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "That's the whole flow.",
+      "startS": 194.4,
+      "endS": 195.545,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "Three fields and the tenant code.",
+      "startS": 196.041,
+      "endS": 197.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "The migration question.",
+      "startS": 198.102,
+      "endS": 199.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "Then System Users for active, single sign-on, and last login.",
+      "startS": 200.141,
+      "endS": 204.607,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "Then User Activity for the failures.",
+      "startS": 205.321,
+      "endS": 207.613,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "A reset only in production, or a clean escalation.",
+      "startS": 208.033,
+      "endS": 211.267,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "Cheap checks first, every time, and nothing in the demo touched.",
+      "startS": 211.696,
+      "endS": 215.675,
+      "timing": "silence"
+    }
+  ]
+}

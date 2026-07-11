@@ -1,0 +1,113 @@
+{
+  "lesson": "WC-PB-02",
+  "audioMaster": "training/playbooks/WC-PB-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows follow Σ(audio_i + 0.4): the formula's final end (158.028) agrees with the ffprobed master (157.806) within ±0.3s (Δ 0.222s), so the formula windows stand and the last block end is clamped to the probed master duration.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 15.394,
+      "phrases": [
+        { "id": "p01", "text": "Two very different tickets sound identical." },
+        { "id": "p02", "text": "It keeps logging me out." },
+        { "id": "p03", "text": "My screen froze." },
+        { "id": "p04", "text": "Most of the time, the first one is the idle timeout doing exactly what it's set to do." },
+        { "id": "p05", "text": "So before you open a single setting, decide which of the two you're actually chasing." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.394,
+      "endS": 35.83,
+      "phrases": [
+        { "id": "p06", "text": "Here's the warning itself." },
+        { "id": "p07", "text": "After a stretch of no activity, a dialog counts down from two minutes," },
+        { "id": "p08", "text": "and a matching toast slides into the corner." },
+        { "id": "p09", "text": "One click keeps them in." },
+        { "id": "p10", "text": "So does a nudge of the mouse." },
+        { "id": "p11", "text": "Walk away and let it reach zero, and that's not a fault." },
+        { "id": "p12", "text": "It's the platform closing an idle station on purpose." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 35.83,
+      "endS": 51.46,
+      "phrases": [
+        { "id": "p13", "text": "Now the first real check." },
+        { "id": "p14", "text": "Open System Users and search for the person by name or code." },
+        { "id": "p15", "text": "The column you want is their user level." },
+        { "id": "p16", "text": "It's a single word, but it decides everything on the next page." },
+        { "id": "p17", "text": "Don't scroll the list hunting for them." },
+        { "id": "p18", "text": "Search." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 51.46,
+      "endS": 69.571,
+      "phrases": [
+        { "id": "p19", "text": "One caution before you trust a blank screen." },
+        { "id": "p20", "text": "If the list won't load and you see a note about the connection to the agent service," },
+        { "id": "p21", "text": "the rows aren't missing." },
+        { "id": "p22", "text": "The data just didn't arrive." },
+        { "id": "p23", "text": "And if that's what your caller is staring at instead of a logout, it's a different problem:" },
+        { "id": "p24", "text": "the data service, not the timeout." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 69.571,
+      "endS": 86.402,
+      "phrases": [
+        { "id": "p25", "text": "Second check, second page." },
+        { "id": "p26", "text": "User Levels lives under Automation, not with the other user pages, which trips people up." },
+        { "id": "p27", "text": "Once you're there, one column answers the whole ticket: session timeout, in minutes." },
+        { "id": "p28", "text": "That's how long a level can sit idle before the countdown starts." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 86.402,
+      "endS": 105.244,
+      "phrases": [
+        { "id": "p29", "text": "Read that number against the level you found." },
+        { "id": "p30", "text": "They run from five minutes up to a hundred and twenty." },
+        { "id": "p31", "text": "Cashiers and the other short-timeout roles sit at five," },
+        { "id": "p32", "text": "so a cashier who steps away for five minutes gets the warning, then the logout." },
+        { "id": "p33", "text": "Nothing is broken." },
+        { "id": "p34", "text": "Someone set it that way on purpose." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 105.244,
+      "endS": 127.43,
+      "phrases": [
+        { "id": "p35", "text": "If the timing matches that number, you're done." },
+        { "id": "p36", "text": "Tell them it's a setting for their role, not a glitch, and show them the fix:" },
+        { "id": "p37", "text": "move the mouse, press a key, or click Stay Logged In." },
+        { "id": "p38", "text": "If the role truly needs longer, an admin can raise it in production." },
+        { "id": "p39", "text": "One warning." },
+        { "id": "p40", "text": "Don't tap Log Out Now to clear the box." },
+        { "id": "p41", "text": "That ends the session for real." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 127.43,
+      "endS": 157.806,
+      "phrases": [
+        { "id": "p42", "text": "Now the cases that are real." },
+        { "id": "p43", "text": "Logged out well before the level allows, or frozen with no warning at all." },
+        { "id": "p44", "text": "First, rule out the simple thing:" },
+        { "id": "p45", "text": "a session is tied to one device and one browser, so switching either signs you out by design." },
+        { "id": "p46", "text": "If it still doesn't add up, capture the level, its set timeout, and the time it really took," },
+        { "id": "p47", "text": "and send that to support with the username, never a password." },
+        { "id": "p48", "text": "The trigger point for the demo login is still parked," },
+        { "id": "p49", "text": "so measure it before you promise a number." }
+      ]
+    }
+  ],
+  "output": "WC-PB-02-surprise-logouts-v1.1"
+}

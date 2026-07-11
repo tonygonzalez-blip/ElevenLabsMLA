@@ -1,0 +1,592 @@
+{
+  "lesson": "WC-12-06",
+  "audioMaster": "training/module12-settings/WC-12-06-full-narration-v1.0.mp3",
+  "audioDurationS": 252.918,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Settings, and look at the left rail.",
+      "startS": 0,
+      "endS": 2.199,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Four pages control who gets into Wash Central and what they can do once they're in.",
+      "startS": 2.963,
+      "endS": 7.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Three of them sit together under Users and Security.",
+      "startS": 8.418,
+      "endS": 11.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "The fourth is filed somewhere you wouldn't guess, and we'll go find it.",
+      "startS": 11.716,
+      "endS": 15.333,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Open System Users.",
+      "startS": 15.821,
+      "endS": 17.24,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "This is the master list of everyone with an account.",
+      "startS": 17.722,
+      "endS": 20.408,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Eight columns, and four carry the support work:",
+      "startS": 20.712,
+      "endS": 23.132,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "is the account active, does it use single sign-on,",
+      "startS": 23.616,
+      "endS": 24.724,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "when did it last sign in, and what role does it hold.",
+      "startS": 25.263,
+      "endS": 26.719,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Email and phone are there to reach the person, not to fix the ticket.",
+      "startS": 27.165,
+      "endS": 34.204,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Read those four in order.",
+      "startS": 34.662,
+      "endS": 36.026,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Active tells you the account is switched on.",
+      "startS": 36.778,
+      "endS": 39.024,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "S-S-O tells you the password lives with the identity provider, not here.",
+      "startS": 39.669,
+      "endS": 44.039,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Last Login tells you when they last got in,",
+      "startS": 44.807,
+      "endS": 47.176,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "and a blank there means the account has never been used.",
+      "startS": 47.528,
+      "endS": 50.351,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "User Level is the thread you pull into the next two pages.",
+      "startS": 51.341,
+      "endS": 54.372,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "You won't scroll this list.",
+      "startS": 54.824,
+      "endS": 56.63,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Search by name, code, or email instead.",
+      "startS": 56.63,
+      "endS": 59.16,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "On the July eighth verified pass the tenant carried more than eight thousand accounts,",
+      "startS": 59.16,
+      "endS": 64.51,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "integration logins and the Micrologic support account included.",
+      "startS": 64.51,
+      "endS": 67.73,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "The search box earns its keep here.",
+      "startS": 67.73,
+      "endS": 70.615,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Now the page that hides.",
+      "startS": 71.071,
+      "endS": 73.711,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "User Levels controls how long a session lasts, so you'd expect it under Users and Security.",
+      "startS": 73.711,
+      "endS": 79.646,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "It isn't.",
+      "startS": 79.646,
+      "endS": 80.334,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "It's filed under Automation, a few groups down the rail.",
+      "startS": 80.334,
+      "endS": 84.065,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Open it there, and remember the spot, because every surprise-logout ticket ends here.",
+      "startS": 84.065,
+      "endS": 88.534,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Three columns here.",
+      "startS": 89.22,
+      "endS": 90.304,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "A name, a security level number, and a session timeout in minutes.",
+      "startS": 90.944,
+      "endS": 91.527,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Hold onto that number, it drives refunds on the next page.",
+      "startS": 91.905,
+      "endS": 95.426,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "The minutes are the answer for anyone who keeps getting kicked out.",
+      "startS": 96.028,
+      "endS": 103.163,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Read the timeout column.",
+      "startS": 103.6,
+      "endS": 105.127,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "On the July eighth verified pass, cashiers get five minutes.",
+      "startS": 105.861,
+      "endS": 109.634,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "So do Managers, Senior Managers, and the entry-level roles.",
+      "startS": 109.854,
+      "endS": 113.469,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Customer Service and the back-office levels get two full hours.",
+      "startS": 114.122,
+      "endS": 117.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "So a cashier dropping out mid-shift isn't a bug,",
+      "startS": 118.446,
+      "endS": 121.403,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "it's the level doing exactly what it was set to do.",
+      "startS": 121.691,
+      "endS": 124.376,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Back under Users and Security, open Security Level.",
+      "startS": 124.813,
+      "endS": 128.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "The link says Security Level, the page says Security Levels, same destination.",
+      "startS": 128.75,
+      "endS": 133.689,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Three columns: a name, a level number,",
+      "startS": 134.477,
+      "endS": 138.821,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "and the one support cares about, Refund Approval Required.",
+      "startS": 139.105,
+      "endS": 140.71,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Here's the gate.",
+      "startS": 141.231,
+      "endS": 142.018,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "On the verified pass, levels zero, three, and five needed approval before a refund could go through.",
+      "startS": 142.49,
+      "endS": 148.527,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Eight and above did not.",
+      "startS": 149.043,
+      "endS": 150.589,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "The rule underneath is plain: level five or below asks permission, eight or over just refunds.",
+      "startS": 151.228,
+      "endS": 152.827,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "One column settles most of these disputes.",
+      "startS": 153.175,
+      "endS": 160.547,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "Now tie the pages together.",
+      "startS": 161.001,
+      "endS": 164.381,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "A person's role sets their user level.",
+      "startS": 164.381,
+      "endS": 166.828,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Their user level carries a security number.",
+      "startS": 166.828,
+      "endS": 169.267,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "That security number decides whether they can approve a refund.",
+      "startS": 169.267,
+      "endS": 172.661,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "So a manager who can't refund isn't being blocked at random,",
+      "startS": 172.661,
+      "endS": 176.006,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "their level maps to a security number that requires sign-off.",
+      "startS": 176.006,
+      "endS": 179.046,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "Trace it in that order every time.",
+      "startS": 179.046,
+      "endS": 181.598,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "Last page.",
+      "startS": 182.11,
+      "endS": 182.925,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Open Blacklisted.",
+      "startS": 183.317,
+      "endS": 184.736,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "These are plates the system refuses at the wash.",
+      "startS": 185.437,
+      "endS": 188.119,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "Four columns: the plate itself, the terminal where the block was set, who added it, and when.",
+      "startS": 188.62,
+      "endS": 194.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "This page answers one specific call.",
+      "startS": 195.389,
+      "endS": 197.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "When a customer swears their plate won't scan, look here before anything else.",
+      "startS": 198.26,
+      "endS": 202.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "If the plate's on the list, you can see who blocked it and when,",
+      "startS": 203.511,
+      "endS": 206.961,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "which turns a mystery into a two-minute answer.",
+      "startS": 207.332,
+      "endS": 209.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "One rule covers all four pages.",
+      "startS": 210.16,
+      "endS": 212.165,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Each has a New Record button, and an admin can edit every list.",
+      "startS": 212.165,
+      "endS": 217.184,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "You only read them.",
+      "startS": 217.184,
+      "endS": 218.803,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "Passwords, levels, and blocks are changed by an administrator in production,",
+      "startS": 218.803,
+      "endS": 222.478,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "never from a support seat.",
+      "startS": 222.478,
+      "endS": 224.483,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "And when the account uses single sign-on, a password reset here does nothing;",
+      "startS": 224.483,
+      "endS": 229.062,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "that fix lives with the identity provider.",
+      "startS": 229.062,
+      "endS": 231.401,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "So, four pages, four questions.",
+      "startS": 231.86,
+      "endS": 234.434,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "Can they sign in: System Users.",
+      "startS": 234.903,
+      "endS": 235.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "Why do they keep dropping: User Levels.",
+      "startS": 236.145,
+      "endS": 237.139,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p71",
+      "text": "Why can't they refund: Security Levels.",
+      "startS": 238.217,
+      "endS": 239.579,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p72",
+      "text": "Why won't the plate scan: Blacklisted.",
+      "startS": 239.967,
+      "endS": 240.912,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p73",
+      "text": "Learn where each one lives, and half your access tickets start answering themselves.",
+      "startS": 241.746,
+      "endS": 252.477,
+      "timing": "silence"
+    }
+  ]
+}

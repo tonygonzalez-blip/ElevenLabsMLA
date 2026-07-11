@@ -1,0 +1,294 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.199
+Open Settings, and look at the left rail.
+
+p02
+00:00:02.963 --> 00:00:07.509
+Four pages control who gets into Wash Central and what they can do once they're in.
+
+p03
+00:00:08.418 --> 00:00:11.086
+Three of them sit together under Users and Security.
+
+p04
+00:00:11.716 --> 00:00:15.333
+The fourth is filed somewhere you wouldn't guess, and we'll go find it.
+
+p05
+00:00:15.821 --> 00:00:17.240
+Open System Users.
+
+p06
+00:00:17.722 --> 00:00:20.408
+This is the master list of everyone with an account.
+
+p07
+00:00:20.712 --> 00:00:23.132
+Eight columns, and four carry the support work:
+
+p08
+00:00:23.616 --> 00:00:24.724
+is the account active, does it use single sign-on,
+
+p09
+00:00:25.263 --> 00:00:26.719
+when did it last sign in, and what role does it hold.
+
+p10
+00:00:27.165 --> 00:00:34.204
+Email and phone are there to reach the person, not to fix the ticket.
+
+p11
+00:00:34.662 --> 00:00:36.026
+Read those four in order.
+
+p12
+00:00:36.778 --> 00:00:39.024
+Active tells you the account is switched on.
+
+p13
+00:00:39.669 --> 00:00:44.039
+S-S-O tells you the password lives with the identity provider, not here.
+
+p14
+00:00:44.807 --> 00:00:47.176
+Last Login tells you when they last got in,
+
+p15
+00:00:47.528 --> 00:00:50.351
+and a blank there means the account has never been used.
+
+p16
+00:00:51.341 --> 00:00:54.372
+User Level is the thread you pull into the next two pages.
+
+p17
+00:00:54.824 --> 00:00:56.630
+You won't scroll this list.
+
+p18
+00:00:56.630 --> 00:00:59.160
+Search by name, code, or email instead.
+
+p19
+00:00:59.160 --> 00:01:04.510
+On the July eighth verified pass the tenant carried more than eight thousand accounts,
+
+p20
+00:01:04.510 --> 00:01:07.730
+integration logins and the Micrologic support account included.
+
+p21
+00:01:07.730 --> 00:01:10.615
+The search box earns its keep here.
+
+p22
+00:01:11.071 --> 00:01:13.711
+Now the page that hides.
+
+p23
+00:01:13.711 --> 00:01:19.646
+User Levels controls how long a session lasts, so you'd expect it under Users and Security.
+
+p24
+00:01:19.646 --> 00:01:20.334
+It isn't.
+
+p25
+00:01:20.334 --> 00:01:24.065
+It's filed under Automation, a few groups down the rail.
+
+p26
+00:01:24.065 --> 00:01:28.534
+Open it there, and remember the spot, because every surprise-logout ticket ends here.
+
+p27
+00:01:29.220 --> 00:01:30.304
+Three columns here.
+
+p28
+00:01:30.944 --> 00:01:31.527
+A name, a security level number, and a session timeout in minutes.
+
+p29
+00:01:31.905 --> 00:01:35.426
+Hold onto that number, it drives refunds on the next page.
+
+p30
+00:01:36.028 --> 00:01:43.163
+The minutes are the answer for anyone who keeps getting kicked out.
+
+p31
+00:01:43.600 --> 00:01:45.127
+Read the timeout column.
+
+p32
+00:01:45.861 --> 00:01:49.634
+On the July eighth verified pass, cashiers get five minutes.
+
+p33
+00:01:49.854 --> 00:01:53.469
+So do Managers, Senior Managers, and the entry-level roles.
+
+p34
+00:01:54.122 --> 00:01:57.952
+Customer Service and the back-office levels get two full hours.
+
+p35
+00:01:58.446 --> 00:02:01.403
+So a cashier dropping out mid-shift isn't a bug,
+
+p36
+00:02:01.691 --> 00:02:04.376
+it's the level doing exactly what it was set to do.
+
+p37
+00:02:04.813 --> 00:02:08.147
+Back under Users and Security, open Security Level.
+
+p38
+00:02:08.750 --> 00:02:13.689
+The link says Security Level, the page says Security Levels, same destination.
+
+p39
+00:02:14.477 --> 00:02:18.821
+Three columns: a name, a level number,
+
+p40
+00:02:19.105 --> 00:02:20.710
+and the one support cares about, Refund Approval Required.
+
+p41
+00:02:21.231 --> 00:02:22.018
+Here's the gate.
+
+p42
+00:02:22.490 --> 00:02:28.527
+On the verified pass, levels zero, three, and five needed approval before a refund could go through.
+
+p43
+00:02:29.043 --> 00:02:30.589
+Eight and above did not.
+
+p44
+00:02:31.228 --> 00:02:32.827
+The rule underneath is plain: level five or below asks permission, eight or over just refunds.
+
+p45
+00:02:33.175 --> 00:02:40.547
+One column settles most of these disputes.
+
+p46
+00:02:41.001 --> 00:02:44.381
+Now tie the pages together.
+
+p47
+00:02:44.381 --> 00:02:46.828
+A person's role sets their user level.
+
+p48
+00:02:46.828 --> 00:02:49.267
+Their user level carries a security number.
+
+p49
+00:02:49.267 --> 00:02:52.661
+That security number decides whether they can approve a refund.
+
+p50
+00:02:52.661 --> 00:02:56.006
+So a manager who can't refund isn't being blocked at random,
+
+p51
+00:02:56.006 --> 00:02:59.046
+their level maps to a security number that requires sign-off.
+
+p52
+00:02:59.046 --> 00:03:01.598
+Trace it in that order every time.
+
+p53
+00:03:02.110 --> 00:03:02.925
+Last page.
+
+p54
+00:03:03.317 --> 00:03:04.736
+Open Blacklisted.
+
+p55
+00:03:05.437 --> 00:03:08.119
+These are plates the system refuses at the wash.
+
+p56
+00:03:08.620 --> 00:03:14.931
+Four columns: the plate itself, the terminal where the block was set, who added it, and when.
+
+p57
+00:03:15.389 --> 00:03:17.782
+This page answers one specific call.
+
+p58
+00:03:18.260 --> 00:03:22.657
+When a customer swears their plate won't scan, look here before anything else.
+
+p59
+00:03:23.511 --> 00:03:26.961
+If the plate's on the list, you can see who blocked it and when,
+
+p60
+00:03:27.332 --> 00:03:29.760
+which turns a mystery into a two-minute answer.
+
+p61
+00:03:30.160 --> 00:03:32.165
+One rule covers all four pages.
+
+p62
+00:03:32.165 --> 00:03:37.184
+Each has a New Record button, and an admin can edit every list.
+
+p63
+00:03:37.184 --> 00:03:38.803
+You only read them.
+
+p64
+00:03:38.803 --> 00:03:42.478
+Passwords, levels, and blocks are changed by an administrator in production,
+
+p65
+00:03:42.478 --> 00:03:44.483
+never from a support seat.
+
+p66
+00:03:44.483 --> 00:03:49.062
+And when the account uses single sign-on, a password reset here does nothing;
+
+p67
+00:03:49.062 --> 00:03:51.401
+that fix lives with the identity provider.
+
+p68
+00:03:51.860 --> 00:03:54.434
+So, four pages, four questions.
+
+p69
+00:03:54.903 --> 00:03:55.794
+Can they sign in: System Users.
+
+p70
+00:03:56.145 --> 00:03:57.139
+Why do they keep dropping: User Levels.
+
+p71
+00:03:58.217 --> 00:03:59.579
+Why can't they refund: Security Levels.
+
+p72
+00:03:59.967 --> 00:04:00.912
+Why won't the plate scan: Blacklisted.
+
+p73
+00:04:01.746 --> 00:04:12.477
+Learn where each one lives, and half your access tickets start answering themselves.
+

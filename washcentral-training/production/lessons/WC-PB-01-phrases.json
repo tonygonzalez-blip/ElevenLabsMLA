@@ -1,0 +1,157 @@
+{
+  "lesson": "WC-PB-01",
+  "audioMaster": "training/playbooks/WC-PB-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration (v1.1: s09 re-authored and re-rendered; the joined master already carries the new 25.0s s09), in spoken order, split at the script's break tags and sentence boundaries. Block windows are the blocks' true positions in the joined master, measured as the speech-resume boundary of each inter-block 0.4s gap (silencedetect on the master): the Σ(audio+0.4) formula drifts ~0.03-0.04s/block from mp3 frame padding and misses the ffprobed master by 0.44s at block 12, so measured onsets are used. Final end = ffprobed master duration 216.111s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 13.537,
+      "phrases": [
+        { "id": "p01", "text": "A caller says they can't sign in." },
+        { "id": "p02", "text": "Before you change a thing, fix the order in your head." },
+        { "id": "p03", "text": "Cheapest checks first, because two of them clear most of these tickets." },
+        { "id": "p04", "text": "And in the demo tenant, you never reset a password." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 13.537,
+      "endS": 32.64,
+      "phrases": [
+        { "id": "p05", "text": "Start with the three fields." },
+        { "id": "p06", "text": "Every WashCentral sign-in wants an email, a password, and a tenant code." },
+        { "id": "p07", "text": "That third one is where logins quietly fail." },
+        { "id": "p08", "text": "A wrong tenant code sends a perfectly good account to the wrong company's data," },
+        { "id": "p09", "text": "and nothing happens." },
+        { "id": "p10", "text": "Confirm the tenant before you ever suspect the password." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 32.64,
+      "endS": 51.416,
+      "phrases": [
+        { "id": "p11", "text": "Now one question." },
+        { "id": "p12", "text": "Did this client come from WashAssist?" },
+        { "id": "p13", "text": "If so, their login never changed." },
+        { "id": "p14", "text": "Same username, same password, same tenant." },
+        { "id": "p15", "text": "A migrated user who can't get in is almost never a credentials problem." },
+        { "id": "p16", "text": "Have them try their old login first, and you may have skipped a reset you shouldn't be making." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 51.416,
+      "endS": 67.347,
+      "phrases": [
+        { "id": "p17", "text": "Open System Users, under Settings." },
+        { "id": "p18", "text": "This is the master list of everyone who can sign in." },
+        { "id": "p19", "text": "Eight columns, and four of them answer a login ticket by themselves." },
+        { "id": "p20", "text": "There's a search across the top, and a New Record button you leave alone." },
+        { "id": "p21", "text": "We're only reading here." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 67.347,
+      "endS": 85.468,
+      "phrases": [
+        { "id": "p22", "text": "First, does the account even exist?" },
+        { "id": "p23", "text": "Search by name, code, or email instead of scrolling a long list." },
+        { "id": "p24", "text": "No match usually means the wrong tenant again, or a user who was never finished being set up." },
+        { "id": "p25", "text": "And if the rows won't load, that's the data service, not an empty tenant." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 85.468,
+      "endS": 101.041,
+      "phrases": [
+        { "id": "p26", "text": "Read the Active column." },
+        { "id": "p27", "text": "If it's switched off, the account can't sign in, full stop." },
+        { "id": "p28", "text": "And to the caller, a disabled account looks exactly like a bad password." },
+        { "id": "p29", "text": "Re-enabling it is an admin's job in production, not yours in the demo." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 101.041,
+      "endS": 117.157,
+      "phrases": [
+        { "id": "p30", "text": "Next column: S-S-O." },
+        { "id": "p31", "text": "If that reads yes, the password doesn't even live in WashCentral." },
+        { "id": "p32", "text": "It's held by the identity provider." },
+        { "id": "p33", "text": "Reset it here and nothing changes." },
+        { "id": "p34", "text": "So stop the password thread and send it to the single sign-on integration page instead." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 117.157,
+      "endS": 134.118,
+      "phrases": [
+        { "id": "p35", "text": "Then Last Login." },
+        { "id": "p36", "text": "A recent date tells you the account works," },
+        { "id": "p37", "text": "so today's failure is probably a typo or the tenant code." },
+        { "id": "p38", "text": "A blank tells you it never signed in, which fits a setup that was never finished." },
+        { "id": "p39", "text": "One column, and you know whether this ever worked." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 134.118,
+      "endS": 159.5,
+      "phrases": [
+        { "id": "p40", "text": "Last check." },
+        { "id": "p41", "text": "Open the Audit menu, then User Activity." },
+        { "id": "p42", "text": "Failed logins show up as one tile at the top, a count for the whole tenant." },
+        { "id": "p43", "text": "There is no per user failure column, so read the caller's own row instead:" },
+        { "id": "p44", "text": "status, last login, logins this month." },
+        { "id": "p45", "text": "A quiet row during a tenant wide spike points back at the tenant code," },
+        { "id": "p46", "text": "and the event by event trail lives next door in the Audit Log." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 159.5,
+      "endS": 179.304,
+      "phrases": [
+        { "id": "p47", "text": "By now you know whether a reset is even the fix." },
+        { "id": "p48", "text": "You don't do it here." },
+        { "id": "p49", "text": "In production there are two doors:" },
+        { "id": "p50", "text": "the user resets themselves with Forgot Password," },
+        { "id": "p51", "text": "or an admin resets it from that user's own record." },
+        { "id": "p52", "text": "If it's a single sign-on account, it's neither." },
+        { "id": "p53", "text": "That fix lives with the identity provider." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 179.304,
+      "endS": 194.4,
+      "phrases": [
+        { "id": "p54", "text": "If none of that lands it, escalate clean." },
+        { "id": "p55", "text": "Username, tenant, the timestamps of the failures," },
+        { "id": "p56", "text": "and screenshots with anything sensitive masked." },
+        { "id": "p57", "text": "Never the password." },
+        { "id": "p58", "text": "The next tier should be able to reproduce it without calling the customer back." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 194.4,
+      "endS": 216.111,
+      "phrases": [
+        { "id": "p59", "text": "That's the whole flow." },
+        { "id": "p60", "text": "Three fields and the tenant code." },
+        { "id": "p61", "text": "The migration question." },
+        { "id": "p62", "text": "Then System Users for active, single sign-on, and last login." },
+        { "id": "p63", "text": "Then User Activity for the failures." },
+        { "id": "p64", "text": "A reset only in production, or a clean escalation." },
+        { "id": "p65", "text": "Cheap checks first, every time, and nothing in the demo touched." }
+      ]
+    }
+  ],
+  "output": "WC-PB-01-login-failures-v1.1"
+}

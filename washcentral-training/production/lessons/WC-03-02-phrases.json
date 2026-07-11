@@ -1,0 +1,159 @@
+{
+  "lesson": "WC-03-02",
+  "audioMaster": "training/module03-sales/WC-03-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows are MEASURED onsets (cross-correlation of each block mp3 against the joined master): the join used ~0.354s inter-block gaps, not the nominal 0.40s, so the Sigma(audio+0.4) formula drifts to +0.51s by s12 (> 0.3s tolerance). Master ffprobe duration 230.348s. Block s06 is the July 11 re-render (one-line summaries of Details/Payments/Notes), confirmed via git history (old block reset in b82e9fd, re-rendered + master re-joined in 28b7729) and by NCC=1.0 of the on-disk s06 against the master at 93.92s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 19.841,
+      "phrases": [
+        { "id": "p01", "text": "Start on the Tickets list." },
+        { "id": "p02", "text": "Every sale at the wash ends up here, one row per ticket," },
+        { "id": "p03", "text": "with its location, total, status, and tender." },
+        { "id": "p04", "text": "Status is worth a glance on the way in: paid and washed, paid but not washed, or voided." },
+        { "id": "p05", "text": "There are millions of tickets," },
+        { "id": "p06", "text": "so you always filter down to the one you need before you open it." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 19.841,
+      "endS": 35.04,
+      "phrases": [
+        { "id": "p07", "text": "Click the row." },
+        { "id": "p08", "text": "The ticket opens on its own page, and watch the address bar:" },
+        { "id": "p09", "text": "it picks up a ticket I-D on the end." },
+        { "id": "p10", "text": "That means this page has a fixed web address." },
+        { "id": "p11", "text": "Copy it later and anyone you send it to lands on this exact ticket." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 35.04,
+      "endS": 56.796,
+      "phrases": [
+        { "id": "p12", "text": "Read the header first." },
+        { "id": "p13", "text": "The ticket number is the title, with the I-D, the location, and the time it rang underneath." },
+        { "id": "p14", "text": "That timestamp matters more than it looks:" },
+        { "id": "p15", "text": "it tells you which shift the sale fell in, which you'll need if a drawer doesn't balance." },
+        { "id": "p16", "text": "Confirm this is the transaction the caller means before you read a single number off it." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 56.796,
+      "endS": 74.0,
+      "phrases": [
+        { "id": "p17", "text": "Top-right, two buttons." },
+        { "id": "p18", "text": "Back to Tickets takes you home." },
+        { "id": "p19", "text": "The red one is Refund, and we do not touch it." },
+        { "id": "p20", "text": "On a real ticket a refund moves money," },
+        { "id": "p21", "text": "so running the full refund flow is off the table today, and parked for a lesson of its own." },
+        { "id": "p22", "text": "Read the button, leave it alone." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 74.0,
+      "endS": 93.92,
+      "phrases": [
+        { "id": "p23", "text": "Under the header, four quick figures." },
+        { "id": "p24", "text": "Ticket total, payments, status, and payment type." },
+        { "id": "p25", "text": "For most calls, that band answers the question before you open a single tab." },
+        { "id": "p26", "text": "What was it, was it paid, and how." },
+        { "id": "p27", "text": "A mismatch between total and payments is your first clue something is off." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 93.92,
+      "endS": 115.76,
+      "phrases": [
+        { "id": "p28", "text": "Now the tabs." },
+        { "id": "p29", "text": "Five of them: Main, Details, Payments, Refunds, and Notes." },
+        { "id": "p30", "text": "Main opens by default and carries the record itself." },
+        { "id": "p31", "text": "Details breaks the sale into line items, Payments lists every tender against it," },
+        { "id": "p32", "text": "and Notes holds the ticket's notes." },
+        { "id": "p33", "text": "We work Main and Refunds today." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 115.76,
+      "endS": 131.04,
+      "phrases": [
+        { "id": "p34", "text": "Main opens on Ticket Information." },
+        { "id": "p35", "text": "The I-D, the ticket number, the date and time in," },
+        { "id": "p36", "text": "the location, the status, and the payment type." },
+        { "id": "p37", "text": "This is the group that proves you're looking at the right sale," },
+        { "id": "p38", "text": "and the status here matches the one you saw in the list." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 131.04,
+      "endS": 152.08,
+      "phrases": [
+        { "id": "p39", "text": "Next, Financial Summary." },
+        { "id": "p40", "text": "Total, taxes, tendered, change due, reversed, and house account." },
+        { "id": "p41", "text": "When someone disputes a charge, you read the numbers straight off here." },
+        { "id": "p42", "text": "Reversed is the field to check first:" },
+        { "id": "p43", "text": "it tells you whether money already came back before you promise anything." },
+        { "id": "p44", "text": "And house account tells you if a fleet or business paid instead of a card." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 152.08,
+      "endS": 171.84,
+      "phrases": [
+        { "id": "p45", "text": "Two more groups." },
+        { "id": "p46", "text": "Staff and Equipment names the cashier, the cashier terminal, the greeter terminal," },
+        { "id": "p47", "text": "and the shift, so you can tie a ticket to a person, a register, and a drawer session." },
+        { "id": "p48", "text": "Customer and Vehicle names the customer, the vehicle, the plate, and the state," },
+        { "id": "p49", "text": "which is how you match a ticket to a plate on a dispute." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 171.84,
+      "endS": 191.76,
+      "phrases": [
+        { "id": "p50", "text": "Open the Refunds tab." },
+        { "id": "p51", "text": "A table of any refunds on this ticket:" },
+        { "id": "p52", "text": "refund I-D, amount, reason, who processed it, and its status." },
+        { "id": "p53", "text": "On a clean ticket it simply says no refunds recorded." },
+        { "id": "p54", "text": "When there is one, this is where you read the reason it was given," },
+        { "id": "p55", "text": "who handled it, and whether it actually went through." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 191.76,
+      "endS": 211.68,
+      "phrases": [
+        { "id": "p56", "text": "One thing to notice: what isn't here." },
+        { "id": "p57", "text": "No Edit Ticket button, no add-refund control, and no ninety-day lock like the old system had." },
+        { "id": "p58", "text": "The header Refund button is the only way in," },
+        { "id": "p59", "text": "and whether you can finish one depends on your security level." },
+        { "id": "p60", "text": "Lower levels need approval first." },
+        { "id": "p61", "text": "We cover the security side later." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 211.68,
+      "endS": 230.348,
+      "phrases": [
+        { "id": "p62", "text": "Last, copy the address." },
+        { "id": "p63", "text": "That ticket I-D on the end means the URL reopens this exact ticket." },
+        { "id": "p64", "text": "Paste it into a support ticket" },
+        { "id": "p65", "text": "and the next technician opens the same transaction you were looking at," },
+        { "id": "p66", "text": "instead of searching millions of rows for it." },
+        { "id": "p67", "text": "Then Back to Tickets, and nothing on the ticket has changed." }
+      ]
+    }
+  ],
+  "output": "WC-03-02-ticket-view-v1.1"
+}
