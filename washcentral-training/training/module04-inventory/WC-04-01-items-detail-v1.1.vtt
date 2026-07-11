@@ -1,0 +1,258 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.231
+Open Inventory, then Inventory Items.
+
+p02
+00:00:01.472 --> 00:00:03.076
+This is the master catalog of everything a site stocks and sells off the shelf.
+
+p03
+00:00:03.459 --> 00:00:08.119
+Tunnel chemicals, counter supplies, the equipment behind them.
+
+p04
+00:00:08.540 --> 00:00:16.215
+The rest of the inventory pages wait in the sidebar for the next lesson.
+
+p05
+00:00:16.692 --> 00:00:18.564
+Start with the four tiles up top.
+
+p06
+00:00:18.892 --> 00:00:20.734
+Total items, low stock, categories, vendors.
+
+p07
+00:00:21.015 --> 00:00:22.657
+The one that earns a daily glance is low stock.
+
+p08
+00:00:23.137 --> 00:00:29.743
+It counts what's running thin before a cashier tells you the shelf is empty.
+
+p09
+00:00:30.223 --> 00:00:32.103
+Below them, three quick reads.
+
+p10
+00:00:32.536 --> 00:00:33.984
+A twelve-month count trend, the mix by category,
+
+p11
+00:00:34.309 --> 00:00:35.598
+and the split between active, low, and discontinued stock.
+
+p12
+00:00:35.936 --> 00:00:39.431
+You size up the whole catalog here before scrolling a single row,
+
+p13
+00:00:40.282 --> 00:00:46.559
+which is often all a quick stock question needs.
+
+p14
+00:00:46.960 --> 00:00:48.374
+Now the list itself.
+
+p15
+00:00:49.478 --> 00:00:51.872
+New Record builds an item from scratch; that's a training exercise, not for today.
+
+p16
+00:00:52.293 --> 00:00:54.562
+Export ships the data out, so leave it alone.
+
+p17
+00:00:55.322 --> 00:01:03.008
+Filters and search are how you find one item in a long catalog.
+
+p18
+00:01:03.440 --> 00:01:04.824
+Read across the columns.
+
+p19
+00:01:05.314 --> 00:01:09.454
+Two IDs, two prices, a count, a type, a vendor.
+
+p20
+00:01:10.328 --> 00:01:13.070
+The item ID is WashCentral's own number;
+
+p21
+00:01:13.511 --> 00:01:17.030
+the S-K-U is the stock code you match against a shipment.
+
+p22
+00:01:17.640 --> 00:01:21.269
+Cost is what you pay, price is what the customer pays.
+
+p23
+00:01:21.680 --> 00:01:23.822
+Click the first row to open its record.
+
+p24
+00:01:24.657 --> 00:01:26.156
+The header names the item, badges it as an inventory item,
+
+p25
+00:01:26.480 --> 00:01:28.431
+and tags it with type and stock chips,
+
+p26
+00:01:28.789 --> 00:01:33.665
+so you know what you're holding before you read a field.
+
+p27
+00:01:34.555 --> 00:01:36.858
+One row, one full record behind it.
+
+p28
+00:01:37.360 --> 00:01:39.472
+Look top right: three buttons.
+
+p29
+00:01:39.885 --> 00:01:42.035
+Back, Delete, and Edit Record.
+
+p30
+00:01:42.341 --> 00:01:44.042
+Back is the only one we use.
+
+p31
+00:01:44.987 --> 00:01:49.246
+Delete removes a record from a live shared tenant, so it never gets clicked in training.
+
+p32
+00:01:49.848 --> 00:01:54.839
+Edit Record opens the editing flow, and editing is its own workflow with its own rules.
+
+p33
+00:01:55.209 --> 00:01:57.588
+Find all three, then leave two of them alone.
+
+p34
+00:01:58.054 --> 00:02:00.661
+The record splits its fields across three tabs.
+
+p35
+00:02:01.120 --> 00:02:03.007
+Item details, pricing and stock, storage and location.
+
+p36
+00:02:03.278 --> 00:02:04.695
+The legacy Pricing and Tax and Commission and Service names are gone;
+
+p37
+00:02:04.992 --> 00:02:11.498
+this is the layout you'll actually see on the floor.
+
+p38
+00:02:11.920 --> 00:02:13.507
+Start on Item Details.
+
+p39
+00:02:14.085 --> 00:02:17.632
+Eight read-only fields, mirroring the eight columns you just left.
+
+p40
+00:02:17.948 --> 00:02:21.392
+The item's two IDs, its description, what it costs, what it sells for,
+
+p41
+00:02:21.681 --> 00:02:22.635
+forty two units on hand, its type, and its vendor.
+
+p42
+00:02:22.988 --> 00:02:24.344
+That is the ticket answer in one card.
+
+p43
+00:02:24.678 --> 00:02:31.492
+What do we charge, and how many are left.
+
+p44
+00:02:31.991 --> 00:02:34.196
+Open the Pricing and Stock tab.
+
+p45
+00:02:34.196 --> 00:02:35.177
+Watch what changes.
+
+p46
+00:02:35.177 --> 00:02:36.158
+The heading does.
+
+p47
+00:02:36.158 --> 00:02:37.794
+The fields underneath do not.
+
+p48
+00:02:37.794 --> 00:02:41.059
+The same eight facts render again, top to bottom.
+
+p49
+00:02:41.059 --> 00:02:45.312
+That repetition is what this tenant actually shows today, and it is logged,
+
+p50
+00:02:45.312 --> 00:02:48.910
+so do not hunt for pricing-only fields that are not there.
+
+p51
+00:02:49.360 --> 00:02:50.590
+Then Storage and Location.
+
+p52
+00:02:50.590 --> 00:02:51.558
+Same pattern.
+
+p53
+00:02:51.558 --> 00:02:56.784
+A new heading, the identical eight fields, and no bin, aisle, or site anywhere on the page.
+
+p54
+00:02:56.784 --> 00:03:01.359
+So treat the tabs as navigation and learn the eight fields once.
+
+p55
+00:03:01.359 --> 00:03:06.550
+If storage detail lands here on a later build, a future pass will pick it up.
+
+p56
+00:03:07.021 --> 00:03:09.347
+Change nothing, then click Back.
+
+p57
+00:03:10.581 --> 00:03:15.941
+The detail page closes and drops you back on the list, the record exactly as you found it.
+
+p58
+00:03:16.808 --> 00:03:19.600
+On a shared live tenant that discipline matters.
+
+p59
+00:03:19.930 --> 00:03:24.040
+Reading answers the ticket, and Back guarantees you left no mark.
+
+p60
+00:03:24.573 --> 00:03:26.257
+That's Inventory Items end to end.
+
+p61
+00:03:26.257 --> 00:03:29.811
+Counts and trends up top, eight columns across the list,
+
+p62
+00:03:29.811 --> 00:03:31.776
+and a three-tab record behind every row.
+
+p63
+00:03:31.776 --> 00:03:34.914
+You read all of it and change none of it,
+
+p64
+00:03:34.914 --> 00:03:37.721
+which is exactly how a stock question should be answered.
+

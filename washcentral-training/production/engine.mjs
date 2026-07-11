@@ -347,6 +347,35 @@ async function normalizeStageWindow(cdp) {
   console.log(`  stage window normalized: 1920x1080 viewport at (0,0), browser chrome parked at y=${-K}`);
 }
 
+// Guard against an unstyled render: the app's external stylesheet is fetched through the
+// egress proxy, and an intermittent bad/empty response gets cached as a 0-rule stylesheet.
+// With no CSS the layout collapses to vertical document flow (block, tens of thousands of px
+// tall), every target falls below the viewport, and every resolve reports "obscured"/"not
+// found". Verify the stylesheet actually parsed (styles.css has rules AND .app is a flex/grid
+// container, not block); if not, hard-reload bypassing cache until it does, then abort so the
+// take is never recorded against a broken page.
+async function ensureStyled(cdp, url, tries = 4) {
+  for (let i = 0; i < tries; i++) {
+    const s = await cdp.eval(`(()=>{
+      const ext=[...document.styleSheets].find(x=>x.href&&x.href.includes('styles.css'));
+      let rules=0; try{ rules = ext ? ext.cssRules.length : 0 }catch(e){ rules=-1 }
+      const app=document.querySelector('.app');
+      const disp=app?getComputedStyle(app).display:'';
+      return { rules, disp, hasApp:!!app };
+    })()`);
+    if (s.rules > 0 && (s.disp === 'flex' || s.disp === 'grid')) {
+      if (i > 0) console.log(`  page styled after ${i} reload(s) (styles.css ${s.rules} rules, .app ${s.disp})`);
+      return;
+    }
+    console.log(`  page UNSTYLED (styles.css rules=${s.rules}, .app display=${s.disp||'none'}); hard-reloading (${i + 1}/${tries})`);
+    const loaded = cdp.once('Page.loadEventFired').catch(() => null);
+    await cdp.send('Page.reload', { ignoreCache: true });
+    await loaded;
+    await sleep(1800);
+  }
+  throw new Error(`page failed to render styled after ${tries} cache-bypassing reloads (stylesheet fetch keeps returning empty/error): ${url}`);
+}
+
 async function main() {
   const cdp = await CDP.connect('first');
   await normalizeStageWindow(cdp);
@@ -363,6 +392,7 @@ async function main() {
   // theme, or dialog from prior activity can leak into the take.
   console.log(`  staging start page: ${L.startUrl}`);
   await cdp.navigate(L.startUrl, 1500);
+  await ensureStyled(cdp, L.startUrl);
   if (await dismissIdle(cdp)) { console.log('  dismissed idle session dialog (off-camera)'); await sleep(600); }
   await sleep(1200);
 
