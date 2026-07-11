@@ -10,6 +10,9 @@
     1080
   ],
   "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
     "railSettings": {
       "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^settings$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
     },
@@ -22,12 +25,11 @@
     "hdrSearchBtn": {
       "js": "[...document.querySelectorAll('button.wc-cmd-trigger-btn')].find(e=>e.getBoundingClientRect().width>0)"
     },
-    "usersHeader": {
-      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/users & security/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    "usCard": {
+      "js": "[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
     },
-    "linkSystemUsers": {
-      "text": "System Users",
-      "scope": ".submenu a"
+    "usCardItemSystemUsers": {
+      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^System Users$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
     },
     "bcStrong": {
       "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
@@ -75,13 +77,13 @@
   },
   "predicates": {
     "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
     "onSettingsHome": "location.pathname.endsWith('/settings.html')",
     "onSystemUsers": "location.pathname.endsWith('/settings-system-users.html')",
     "onSupportTickets": "location.pathname.endsWith('/support-tickets.html')",
     "onUserActivity": "location.pathname.endsWith('/audit-users.html')",
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "usersSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>(e.textContent||'').trim()==='System Users'&&e.getBoundingClientRect().width>0)",
-    "usersSubmenuClosed": "![...document.querySelectorAll('.submenu a')].some(e=>(e.textContent||'').trim()==='System Users'&&e.getBoundingClientRect().width>0)",
+    "usCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^System Users$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
     "searchFocused": "!!document.activeElement&&/^Search by name, code, or email/i.test(document.activeElement.placeholder||'')",
     "rowsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=6);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-system-users.html')&&rows.length>=10&&!!pi&&/of\\s*[\\d,]+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "uaLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=5&&!/loading/i.test(e.textContent||''));const tile=[...document.querySelectorAll('.a-metric')].some(e=>/Failed Logins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/audit-users.html')&&tile&&rows.length>=3&&!!pi&&/of\\s*\\d+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()"
@@ -95,8 +97,14 @@
     },
     {
       "op": "assert",
-      "at": -1,
+      "at": -1.2,
       "predicate": "pageReady"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: the persisted sidebar pref (washcentral-sidebar-collapsed-v5) must read expanded, or the step-4 settings sidebar renders collapsed and the Users & Security route dies; the preflight toggle stages this — abort the take if it did not hold"
     },
     {
       "op": "pointer-enter",
@@ -162,17 +170,17 @@
     },
     {
       "op": "click",
-      "target": "usersHeader",
-      "pressAt": 53.8,
-      "hoverMs": 300,
-      "postcondition": "usersSubmenuOpen",
+      "target": "usCard",
+      "pressAt": 53.85,
+      "hoverMs": 320,
+      "postcondition": "usCardOpen",
       "timeoutMs": 4000,
-      "note": "step 4b: expand the Users & Security sidebar group as the guide names it (preflight staged it closed, so this open is genuine; it persists via washcentral-settings-menu-v1 and is reused at step 10)"
+      "note": "step 4b: expand the Users & Security group card on the All Settings hub — stateless accordion, closed on every fresh load (the sidebar menu route is avoided: its persisted per-group state, washcentral-settings-menu-v1, is shared and hydrates asynchronously, shifting header positions — observed mis-hit July 11)"
     },
     {
       "op": "click",
-      "target": "linkSystemUsers",
-      "pressAt": 54.7,
+      "target": "usCardItemSystemUsers",
+      "pressAt": 54.75,
       "hoverMs": 300,
       "postcondition": "onSystemUsers",
       "timeoutMs": 8000,
@@ -999,7 +1007,17 @@
       "postcondition": "onCommandCenter",
       "timeoutMs": 8000,
       "nav": true,
-      "note": "off-camera: return to the start page before capture (command-center itself normalizes the main sidebar to its collapsed design state)"
+      "note": "off-camera: return to the start page before capture"
+    },
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera, MUST BE LAST: arriving at command-center force-writes washcentral-sidebar-collapsed-v5=true, and a collapsed pref makes the step-4 settings sidebar render collapsed (observed live July 11: Users & Security shrinks to a 16px glyph and the submenu is unreachable) — expand it here so the persisted pref reads false when capture starts"
     }
   ]
 }
