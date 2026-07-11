@@ -1,0 +1,2125 @@
+{
+  "lesson": "WC-12-06",
+  "title": "Users & Security (support-critical)",
+  "audioMaster": "training/module12-settings/WC-12-06-full-narration-v1.0.mp3",
+  "audioDurationS": 252.918,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "usHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/users\\s*&\\s*security/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "autoHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/automation/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkSystemUsers": {
+      "text": "System Users",
+      "scope": ".submenu a"
+    },
+    "linkSecurityLevel": {
+      "text": "Security Level",
+      "scope": ".submenu a"
+    },
+    "linkBlacklisted": {
+      "text": "Blacklisted",
+      "scope": ".submenu a"
+    },
+    "linkUserLevels": {
+      "text": "User Levels",
+      "scope": ".submenu a"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "tileTotalUsers": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalLevels": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Levels/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileMaxSec": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Max Security Level/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileLongestTimeout": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Longest Timeout/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileRequireApproval": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Require Refund Approval/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileNoApproval": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/No Approval Needed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalBlacklisted": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Blacklisted/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/ List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search (by name|user levels|security levels|blacklisted)/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thUserName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^user name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thUserLevel": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^user level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thEmail": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^email$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPhone": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^phone$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thActive": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSSO": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^sso$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastLogin": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^last login$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSecurityLevel": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^security level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTimeout": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^session timeout/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLevel": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thRefundApproval": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^refund approval required$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPlate": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^plate$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTerminal": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^terminal$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCreatedBy": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^created by$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCreated": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^created$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowCashiers": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Cashiers')"
+    },
+    "rowManagers": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Managers')"
+    },
+    "rowSrManager": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Sr.Manager')"
+    },
+    "rowLevel00": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Level 00')"
+    },
+    "rowLevel01": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Level 01')"
+    },
+    "rowCustomerService": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Customer Service')"
+    },
+    "rowLow": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Low')"
+    },
+    "rowLowMedium": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='LowMedium')"
+    },
+    "rowMedium": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='Medium')"
+    },
+    "rowHighMedium": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='HighMedium')"
+    },
+    "rowHigh": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='High')"
+    },
+    "rowSuperAdmin": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&(tr.querySelector('td')?.textContent||'').trim()==='SuperAdmin')"
+    },
+    "emptyBlacklisted": {
+      "js": "[...document.querySelectorAll('td')].find(e=>/No blacklisted plates found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onSystemUsers": "location.pathname.endsWith('/settings-system-users.html')",
+    "onUserLevels": "location.pathname.endsWith('/settings-user-levels.html')",
+    "onSecurityLevels": "location.pathname.endsWith('/settings-security-level.html')",
+    "onBlacklisted": "location.pathname.endsWith('/settings-blacklisted.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "usersSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(System Users|Security Level|Blacklisted)$/.test((e.textContent||'').trim())).length>=3",
+    "usersSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(System Users|Security Level|Blacklisted)$/.test((e.textContent||'').trim())).length===0",
+    "autoSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='User Levels')",
+    "autoSubmenuClosed": "![...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='User Levels')",
+    "sysUsersLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-system-users.html')&&rows.length>=10&&!!pi&&/of\\s*[\\d,]+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "userLevelsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-user-levels.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "secLevelsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-security-level.html')&&rows.length>=6&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "blacklistedLoaded": "(()=>{return location.pathname.endsWith('/settings-blacklisted.html')&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&([...document.querySelectorAll('td')].some(e=>/No blacklisted plates found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)||[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0).length>1)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.8,
+      "predicate": "onSettingsHome",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1.4,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar preference expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "usersSubmenuClosed",
+      "note": "pre-roll: Users & Security group must start collapsed so step 1 genuinely expands it (persisted washcentral-settings-menu-v1 users:false, staged by preflight)"
+    },
+    {
+      "op": "assert",
+      "at": -0.6,
+      "predicate": "autoSubmenuClosed",
+      "note": "pre-roll: Automation group must start collapsed so step 5's reveal is genuine"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        160,
+        1079
+      ],
+      "to": {
+        "target": "usHeader",
+        "offset": [
+          240,
+          40
+        ]
+      },
+      "note": "enter from the bottom edge and settle beside the left rail as p01 says 'look at the left rail'"
+    },
+    {
+      "op": "log-rect",
+      "at": 3.2,
+      "key": "usHeaderRect",
+      "target": "usHeader"
+    },
+    {
+      "op": "move",
+      "at": 6.9,
+      "to": {
+        "target": "usHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach the Users & Security group header in the p02-p03 gap"
+    },
+    {
+      "op": "click",
+      "target": "usHeader",
+      "pressAt": 8.2,
+      "hoverMs": 400,
+      "postcondition": "usersSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 1: genuine group toggle — the three pages are visible as p03 names Users and Security"
+    },
+    {
+      "op": "log-rects",
+      "at": 8.7,
+      "key": "usNav",
+      "targets": [
+        "linkSystemUsers",
+        "linkSecurityLevel",
+        "linkBlacklisted"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 9.3,
+      "to": {
+        "target": "linkSystemUsers",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "sweep the three submenu links while p03 explains"
+    },
+    {
+      "op": "move",
+      "at": 10.4,
+      "to": {
+        "target": "linkSecurityLevel",
+        "offset": [
+          30,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 11.5,
+      "to": {
+        "target": "linkBlacklisted",
+        "offset": [
+          30,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 12.9,
+      "to": {
+        "target": "autoHeader",
+        "offset": [
+          80,
+          2
+        ]
+      },
+      "note": "p04 'the fourth is filed somewhere you wouldn't guess' — gesture down the rail (no click yet)"
+    },
+    {
+      "op": "move",
+      "at": 15.85,
+      "to": {
+        "target": "linkSystemUsers",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 approach starts at the p05 cue 'Open System Users'"
+    },
+    {
+      "op": "click",
+      "target": "linkSystemUsers",
+      "pressAt": 17.3,
+      "hoverMs": 380,
+      "postcondition": "onSystemUsers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 2: genuine sidebar navigation, press inside the p05 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "suStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 18.85,
+      "predicate": "sysUsersLoaded",
+      "note": "shot-list load check: real rows + counter, no 'Failed to fetch' agent-service error; abort otherwise"
+    },
+    {
+      "op": "assert",
+      "at": 19,
+      "predicate": "usersSubmenuOpen",
+      "note": "persisted submenu state held across the navigation"
+    },
+    {
+      "op": "assert",
+      "at": 19.1,
+      "predicate": "autoSubmenuClosed",
+      "note": "fail fast: the Automation group must still be closed or step 5's reveal is spoiled"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.25,
+      "key": "bcSU",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.4,
+      "key": "tileTotalUsersRect",
+      "target": "tileTotalUsers"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.55,
+      "key": "cardSU",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.7,
+      "key": "searchSU",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.85,
+      "key": "newRecSU",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 20.05,
+      "key": "suTh",
+      "targets": [
+        "thUserName",
+        "thUserLevel",
+        "thEmail",
+        "thPhone",
+        "thActive",
+        "thSSO",
+        "thLastLogin"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 20.3,
+      "to": {
+        "target": "thUserName",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "start of the slow header sweep on p07 'Eight columns'"
+    },
+    {
+      "op": "move",
+      "at": 20.9,
+      "to": {
+        "target": "thUserName",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 21.9,
+      "to": {
+        "target": "thEmail",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 23.3,
+      "to": {
+        "target": "thLastLogin",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "sweep ends at the right edge of the header row (~2.4s, per shot list)"
+    },
+    {
+      "op": "move",
+      "at": 27.3,
+      "to": {
+        "target": "thEmail",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p10: 'Email and phone are there to reach the person'"
+    },
+    {
+      "op": "move",
+      "at": 28.5,
+      "to": {
+        "target": "thPhone",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 30.6,
+      "to": {
+        "point": [
+          1150,
+          500
+        ]
+      },
+      "note": "ease off over the rows for the p10 tail"
+    },
+    {
+      "op": "move",
+      "at": 34.85,
+      "to": {
+        "target": "thActive",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 3 cue p11 'Read those four in order'"
+    },
+    {
+      "op": "move",
+      "at": 36.9,
+      "to": {
+        "target": "thActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "genuine hover on ACTIVE (p12)"
+    },
+    {
+      "op": "move",
+      "at": 39.8,
+      "to": {
+        "target": "thSSO",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "SSO (p13)"
+    },
+    {
+      "op": "move",
+      "at": 44.95,
+      "to": {
+        "target": "thLastLogin",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "LAST LOGIN (p14-p15)"
+    },
+    {
+      "op": "move",
+      "at": 51.4,
+      "to": {
+        "target": "thUserLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "USER LEVEL (p16), camera back wide by now"
+    },
+    {
+      "op": "move",
+      "at": 55.2,
+      "to": {
+        "point": [
+          900,
+          500
+        ]
+      },
+      "note": "step 4 opens neutral on p17 'You won't scroll this list'"
+    },
+    {
+      "op": "move",
+      "at": 56.8,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "point at the search box as p18 names it; never typed in"
+    },
+    {
+      "op": "move",
+      "at": 59.4,
+      "to": {
+        "target": "tileTotalUsers",
+        "offset": [
+          -600,
+          0
+        ]
+      },
+      "note": "to the Total Users tile for the p19 count"
+    },
+    {
+      "op": "move",
+      "at": 64.7,
+      "to": {
+        "point": [
+          700,
+          400
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 67.85,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "back to the search box on p21 'earns its keep'"
+    },
+    {
+      "op": "move",
+      "at": 71.3,
+      "to": {
+        "point": [
+          400,
+          600
+        ]
+      },
+      "note": "step 5 cue p22 'Now the page that hides' — head toward the rail"
+    },
+    {
+      "op": "move",
+      "at": 74.1,
+      "to": {
+        "target": "usHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p23 'you'd expect it under Users and Security' — rest on the group it is NOT in"
+    },
+    {
+      "op": "log-rect",
+      "at": 79.3,
+      "key": "autoHeaderRect",
+      "target": "autoHeader"
+    },
+    {
+      "op": "move",
+      "at": 79.9,
+      "to": {
+        "target": "autoHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach Automation after p24 'It isn't.'"
+    },
+    {
+      "op": "click",
+      "target": "autoHeader",
+      "pressAt": 81.1,
+      "hoverMs": 400,
+      "postcondition": "autoSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 5a: genuine group toggle as p25 names Automation"
+    },
+    {
+      "op": "log-rects",
+      "at": 81.7,
+      "key": "autoNav",
+      "targets": [
+        "linkUserLevels"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 82.9,
+      "to": {
+        "target": "linkUserLevels",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "settle on User Levels inside the opened group"
+    },
+    {
+      "op": "click",
+      "target": "linkUserLevels",
+      "pressAt": 85.2,
+      "hoverMs": 380,
+      "postcondition": "onUserLevels",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5b: press right after the p26 cue 'Open it there', page is up before s06"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ulStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 86.9,
+      "predicate": "userLevelsLoaded",
+      "note": "14 real rows + tiles, no agent-service error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 87.15,
+      "key": "bcUL",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rects",
+      "at": 87.4,
+      "key": "ulTiles",
+      "targets": [
+        "tileTotalLevels",
+        "tileMaxSec",
+        "tileLongestTimeout"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 87.7,
+      "key": "cardUL",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 87.9,
+      "key": "searchUL",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 88.1,
+      "key": "newRecUL",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 88.35,
+      "key": "ulTh",
+      "targets": [
+        "thName",
+        "thSecurityLevel",
+        "thTimeout"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 89.3,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 6 cue p27 'Three columns here'"
+    },
+    {
+      "op": "move",
+      "at": 91,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p28 column sweep in spoken order: name,"
+    },
+    {
+      "op": "move",
+      "at": 92.5,
+      "to": {
+        "target": "thSecurityLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "security level number,"
+    },
+    {
+      "op": "move",
+      "at": 94,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "session timeout in minutes"
+    },
+    {
+      "op": "move",
+      "at": 96.2,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          0,
+          70
+        ],
+        "outside": true
+      },
+      "note": "rest over the timeout column for p30"
+    },
+    {
+      "op": "move",
+      "at": 103.7,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          0,
+          36
+        ],
+        "outside": true
+      },
+      "note": "step 7 cue p31 'Read the timeout column'"
+    },
+    {
+      "op": "log-rects",
+      "at": 104.1,
+      "key": "ulRows",
+      "targets": [
+        "rowCashiers",
+        "rowManagers",
+        "rowSrManager",
+        "rowLevel00",
+        "rowLevel01",
+        "rowCustomerService"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 105.95,
+      "to": {
+        "target": "rowCashiers",
+        "offset": [
+          460,
+          0
+        ]
+      },
+      "note": "p32: Cashiers timeout cell (5 min)"
+    },
+    {
+      "op": "move",
+      "at": 110,
+      "to": {
+        "target": "rowManagers",
+        "offset": [
+          460,
+          0
+        ]
+      },
+      "note": "p33 sweep of the other 5-minute levels"
+    },
+    {
+      "op": "move",
+      "at": 111.4,
+      "to": {
+        "target": "rowSrManager",
+        "offset": [
+          460,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 112.3,
+      "to": {
+        "target": "rowLevel00",
+        "offset": [
+          460,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 113,
+      "to": {
+        "target": "rowLevel01",
+        "offset": [
+          460,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 114.3,
+      "to": {
+        "target": "rowCustomerService",
+        "offset": [
+          460,
+          0
+        ]
+      },
+      "note": "p34: Customer Service reads 120 — two full hours"
+    },
+    {
+      "op": "move",
+      "at": 119.2,
+      "to": {
+        "point": [
+          1100,
+          860
+        ]
+      },
+      "note": "ease off during p35-p36; camera pulls wide"
+    },
+    {
+      "op": "assert",
+      "at": 125,
+      "predicate": "usersSubmenuOpen",
+      "note": "step 8 needs the persisted Users & Security group still expanded (it never closed; the shot list's 'reopen' is a no-op live)"
+    },
+    {
+      "op": "log-rect",
+      "at": 125.3,
+      "key": "linkSL2",
+      "target": "linkSecurityLevel"
+    },
+    {
+      "op": "move",
+      "at": 125.6,
+      "to": {
+        "target": "linkSecurityLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach on the p37 cue 'Back under Users and Security, open Security Level'"
+    },
+    {
+      "op": "click",
+      "target": "linkSecurityLevel",
+      "pressAt": 128,
+      "hoverMs": 400,
+      "postcondition": "onSecurityLevels",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8: press at the phrase tail so the page is up when p38 compares link vs page title"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "slStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 129.5,
+      "predicate": "secLevelsLoaded",
+      "note": "6 real rows + tiles"
+    },
+    {
+      "op": "log-rect",
+      "at": 129.7,
+      "key": "bcSL",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 129.9,
+      "to": {
+        "target": "bcStrong",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "point under the page title 'Security Levels' while p38 notes the singular/plural"
+    },
+    {
+      "op": "log-rects",
+      "at": 130.4,
+      "key": "slTiles",
+      "targets": [
+        "tileTotalLevels",
+        "tileRequireApproval",
+        "tileNoApproval"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 130.65,
+      "key": "cardSL",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 130.85,
+      "key": "newRecSL",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 131.1,
+      "key": "slTh",
+      "targets": [
+        "thName",
+        "thLevel",
+        "thRefundApproval"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 134.6,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p39 'Three columns: a name,'"
+    },
+    {
+      "op": "move",
+      "at": 136.6,
+      "to": {
+        "target": "thLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'a level number,'"
+    },
+    {
+      "op": "move",
+      "at": 139.2,
+      "to": {
+        "target": "thRefundApproval",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p40 'Refund Approval Required'"
+    },
+    {
+      "op": "move",
+      "at": 141.45,
+      "to": {
+        "target": "thRefundApproval",
+        "offset": [
+          0,
+          36
+        ],
+        "outside": true
+      },
+      "note": "step 9 cue p41 'Here's the gate'"
+    },
+    {
+      "op": "log-rects",
+      "at": 141.8,
+      "key": "slRows",
+      "targets": [
+        "rowLow",
+        "rowLowMedium",
+        "rowMedium",
+        "rowHighMedium",
+        "rowHigh",
+        "rowSuperAdmin"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 143.6,
+      "to": {
+        "target": "rowLow",
+        "offset": [
+          347,
+          0
+        ]
+      },
+      "note": "p42 sweep: level 0 — Yes"
+    },
+    {
+      "op": "move",
+      "at": 145.3,
+      "to": {
+        "target": "rowLowMedium",
+        "offset": [
+          347,
+          0
+        ]
+      },
+      "note": "level 3 — Yes"
+    },
+    {
+      "op": "move",
+      "at": 146.9,
+      "to": {
+        "target": "rowMedium",
+        "offset": [
+          347,
+          0
+        ]
+      },
+      "note": "level 5 — Yes"
+    },
+    {
+      "op": "move",
+      "at": 149.1,
+      "to": {
+        "target": "rowHighMedium",
+        "offset": [
+          347,
+          0
+        ]
+      },
+      "note": "p43 'Eight and above did not'"
+    },
+    {
+      "op": "move",
+      "at": 149.8,
+      "to": {
+        "target": "rowHigh",
+        "offset": [
+          347,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 150.4,
+      "to": {
+        "target": "rowSuperAdmin",
+        "offset": [
+          347,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 153.6,
+      "to": {
+        "point": [
+          1050,
+          700
+        ]
+      },
+      "note": "ease off for the p44-p45 rule"
+    },
+    {
+      "op": "move",
+      "at": 164.5,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 chain, spoken order: p47 role/user level"
+    },
+    {
+      "op": "move",
+      "at": 166.95,
+      "to": {
+        "target": "thLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p48 'carries a security number'"
+    },
+    {
+      "op": "move",
+      "at": 169.4,
+      "to": {
+        "target": "thRefundApproval",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p49 'decides whether they can approve a refund'"
+    },
+    {
+      "op": "move",
+      "at": 173.6,
+      "to": {
+        "point": [
+          1150,
+          800
+        ]
+      },
+      "note": "park for p50-p52; no navigation in step 10"
+    },
+    {
+      "op": "move",
+      "at": 182.3,
+      "to": {
+        "target": "linkBlacklisted",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 approach on p53-p54 'Last page. Open Blacklisted.'"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.5,
+      "key": "linkBL2",
+      "target": "linkBlacklisted"
+    },
+    {
+      "op": "click",
+      "target": "linkBlacklisted",
+      "pressAt": 184.85,
+      "hoverMs": 380,
+      "postcondition": "onBlacklisted",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11: press inside the p54 trailing break; page is up when p55 starts"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "blStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 186.5,
+      "predicate": "blacklistedLoaded",
+      "note": "the empty state is a real state here (July 11: Total Blacklisted 0), never the error state"
+    },
+    {
+      "op": "move",
+      "at": 186.55,
+      "to": {
+        "point": [
+          640,
+          380
+        ]
+      },
+      "note": "rest below the card header while p55 explains"
+    },
+    {
+      "op": "log-rect",
+      "at": 186.7,
+      "key": "bcBL",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 186.9,
+      "key": "tileBLRect",
+      "target": "tileTotalBlacklisted"
+    },
+    {
+      "op": "log-rect",
+      "at": 187.1,
+      "key": "cardBL",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 187.3,
+      "key": "searchBL",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 187.5,
+      "key": "newRecBL",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 187.75,
+      "key": "blTh",
+      "targets": [
+        "thPlate",
+        "thTerminal",
+        "thCreatedBy",
+        "thCreated"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 188,
+      "key": "emptyBL",
+      "target": "emptyBlacklisted"
+    },
+    {
+      "op": "move",
+      "at": 188.75,
+      "to": {
+        "target": "thPlate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p56 four-column sweep in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 190.4,
+      "to": {
+        "target": "thTerminal",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 191.9,
+      "to": {
+        "target": "thCreatedBy",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 193.3,
+      "to": {
+        "target": "thCreated",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 196,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "step 12 opens neutral on p57"
+    },
+    {
+      "op": "move",
+      "at": 198.6,
+      "to": {
+        "target": "emptyBlacklisted",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "p58: sweep along the row area, left to right"
+    },
+    {
+      "op": "move",
+      "at": 200.6,
+      "to": {
+        "target": "emptyBlacklisted",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 202.3,
+      "to": {
+        "target": "emptyBlacklisted",
+        "offset": [
+          500,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 205.2,
+      "to": {
+        "target": "emptyBlacklisted",
+        "offset": [
+          0,
+          60
+        ],
+        "outside": true
+      },
+      "note": "hold under the empty-state line for p59-p60; nothing is opened"
+    },
+    {
+      "op": "watch",
+      "key": "readOnlyHold",
+      "from": 211,
+      "to": 231.5,
+      "predicate": "onBlacklisted",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 13 guardrail window: the page never changes — nothing was clicked"
+    },
+    {
+      "op": "move",
+      "at": 212.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 13: rest BESIDE + New Record while p62 names it; the button itself is never approached for a press"
+    },
+    {
+      "op": "move",
+      "at": 217.5,
+      "to": {
+        "point": [
+          1200,
+          700
+        ]
+      },
+      "note": "pull away on p63 'You only read them.'"
+    },
+    {
+      "op": "move",
+      "at": 224.7,
+      "to": {
+        "point": [
+          1000,
+          820
+        ]
+      },
+      "note": "park through the p64-p67 admin/SSO rule"
+    },
+    {
+      "op": "assert",
+      "at": 232,
+      "predicate": "usersSubmenuOpen",
+      "note": "recap sweep needs the Users & Security links on screen"
+    },
+    {
+      "op": "assert",
+      "at": 232.1,
+      "predicate": "autoSubmenuOpen",
+      "note": "and the User Levels link (group opened genuinely at step 5, still rendered open)"
+    },
+    {
+      "op": "log-rects",
+      "at": 232.25,
+      "key": "blNav",
+      "targets": [
+        "linkSystemUsers",
+        "linkUserLevels",
+        "linkSecurityLevel",
+        "linkBlacklisted"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 232.6,
+      "to": {
+        "target": "linkSystemUsers",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 14 recap sweep, spoken order: p69 System Users"
+    },
+    {
+      "op": "move",
+      "at": 236.3,
+      "to": {
+        "target": "linkUserLevels",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "p70 User Levels"
+    },
+    {
+      "op": "move",
+      "at": 238.4,
+      "to": {
+        "target": "linkSecurityLevel",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "p71 Security Levels"
+    },
+    {
+      "op": "move",
+      "at": 240.1,
+      "to": {
+        "target": "linkBlacklisted",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "p72 Blacklisted"
+    },
+    {
+      "op": "move",
+      "at": 243.6,
+      "to": {
+        "point": [
+          1520,
+          920
+        ]
+      },
+      "note": "final park, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 251,
+      "predicate": "onBlacklisted"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "usNav.linkSecurityLevel",
+        "place": "right",
+        "from": 9,
+        "to": 15.3
+      },
+      {
+        "n": 2,
+        "anchor": "suTh.thUserName",
+        "place": "left",
+        "from": 20.9,
+        "to": 26.9
+      },
+      {
+        "n": 3,
+        "anchor": "suTh.thActive",
+        "place": "below-left",
+        "from": 35,
+        "to": 53.5
+      },
+      {
+        "n": 4,
+        "anchor": "searchSU",
+        "place": "left-top",
+        "from": 56.9,
+        "to": 64.6
+      },
+      {
+        "n": 5,
+        "anchor": "autoNav.linkUserLevels",
+        "place": "right",
+        "from": 81.9,
+        "to": 84.9
+      },
+      {
+        "n": 6,
+        "anchor": "ulTh.thName",
+        "place": "left",
+        "from": 90.9,
+        "to": 95.4
+      },
+      {
+        "n": 7,
+        "anchor": "ulTh.thTimeout",
+        "place": "below-left",
+        "from": 105.5,
+        "to": 113.3
+      },
+      {
+        "n": 8,
+        "anchor": "bcSL",
+        "place": "below-left",
+        "from": 129.75,
+        "to": 136
+      },
+      {
+        "n": 9,
+        "anchor": "slTh.thRefundApproval",
+        "place": "left-top",
+        "from": 142.8,
+        "to": 152
+      },
+      {
+        "n": 10,
+        "anchor": "slTh.thLevel",
+        "place": "left-top",
+        "from": 164.6,
+        "to": 178.5
+      },
+      {
+        "n": 11,
+        "anchor": "blTh.thPlate",
+        "place": "below-left",
+        "from": 188.8,
+        "to": 194.8
+      },
+      {
+        "n": 12,
+        "anchor": "emptyBL",
+        "place": "below-left",
+        "from": 198.6,
+        "to": 209.3
+      },
+      {
+        "n": 13,
+        "anchor": "newRecBL",
+        "place": "below-left",
+        "from": 212.5,
+        "to": 223.5
+      },
+      {
+        "n": 14,
+        "anchor": "blNav.linkSystemUsers",
+        "place": "right",
+        "from": 234.7,
+        "to": 247.5
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "usNav.linkSystemUsers",
+        "from": 9.4,
+        "to": 10.4,
+        "note": "'Three of them sit together' — sweep the group in order"
+      },
+      {
+        "anchor": "usNav.linkSecurityLevel",
+        "from": 10.4,
+        "to": 11.4
+      },
+      {
+        "anchor": "usNav.linkBlacklisted",
+        "from": 11.4,
+        "to": 12.4
+      },
+      {
+        "anchor": "suTh.thActive",
+        "from": 23.65,
+        "to": 24.35,
+        "note": "'is the account active' (p08)"
+      },
+      {
+        "anchor": "suTh.thSSO",
+        "from": 24.4,
+        "to": 25.2,
+        "note": "'does it use single sign-on'"
+      },
+      {
+        "anchor": "suTh.thLastLogin",
+        "from": 25.3,
+        "to": 26.1,
+        "note": "'when did it last sign in' (p09)"
+      },
+      {
+        "anchor": "suTh.thUserLevel",
+        "from": 26.15,
+        "to": 26.9,
+        "note": "'what role does it hold'"
+      },
+      {
+        "anchor": "suTh.thEmail",
+        "from": 27.3,
+        "to": 28.4,
+        "note": "'Email and phone are there to reach the person' (p10)"
+      },
+      {
+        "anchor": "suTh.thPhone",
+        "from": 28.45,
+        "to": 29.6
+      },
+      {
+        "anchor": "newRecSU",
+        "from": 31,
+        "to": 33.6,
+        "color": "#dc2626",
+        "note": "shot-list STOP ring: + New Record located, never clicked (read-only lesson)"
+      },
+      {
+        "anchor": "suTh.thActive",
+        "from": 36.9,
+        "to": 39,
+        "note": "step 3 spoken order (p12)"
+      },
+      {
+        "anchor": "suTh.thSSO",
+        "from": 39.75,
+        "to": 43.9,
+        "note": "p13"
+      },
+      {
+        "anchor": "suTh.thLastLogin",
+        "from": 44.9,
+        "to": 50.3,
+        "note": "p14-p15, incl. the blank-means-never-used read"
+      },
+      {
+        "anchor": "suTh.thUserLevel",
+        "from": 51.4,
+        "to": 54.3,
+        "note": "p16 — the thread into the next two pages"
+      },
+      {
+        "anchor": "searchSU",
+        "from": 56.7,
+        "to": 59.1,
+        "note": "'Search by name, code, or email instead' (p18)"
+      },
+      {
+        "anchor": "tileTotalUsersRect",
+        "from": 59.3,
+        "to": 64.4,
+        "note": "'more than eight thousand accounts' (p19)"
+      },
+      {
+        "anchor": "searchSU",
+        "from": 67.85,
+        "to": 70.5,
+        "note": "'The search box earns its keep here' (p21)"
+      },
+      {
+        "anchor": "autoHeaderRect",
+        "from": 80.4,
+        "to": 81.6,
+        "note": "'It's filed under Automation' (p25)"
+      },
+      {
+        "anchor": "autoNav.linkUserLevels",
+        "from": 82.9,
+        "to": 85,
+        "note": "eye to User Levels just before the press (p26)"
+      },
+      {
+        "anchor": "ulTh.thName",
+        "from": 90.95,
+        "to": 92.4,
+        "note": "p28 spoken order: 'A name,'"
+      },
+      {
+        "anchor": "ulTh.thSecurityLevel",
+        "from": 92.45,
+        "to": 93.9,
+        "note": "'a security level number,'"
+      },
+      {
+        "anchor": "ulTh.thTimeout",
+        "from": 93.95,
+        "to": 95.4,
+        "note": "'and a session timeout in minutes'"
+      },
+      {
+        "anchor": "ulTh.thTimeout",
+        "from": 96.1,
+        "to": 99.5,
+        "note": "'The minutes are the answer' (p30)"
+      },
+      {
+        "anchor": "newRecUL",
+        "from": 100.3,
+        "to": 102.9,
+        "color": "#dc2626",
+        "note": "shot-list STOP ring over + New Record on User Levels"
+      },
+      {
+        "anchor": "ulRows.rowCashiers",
+        "from": 106,
+        "to": 109.5,
+        "note": "'cashiers get five minutes' (p32)"
+      },
+      {
+        "anchor": "ulRows.rowManagers",
+        "from": 109.95,
+        "to": 110.9,
+        "note": "p33 sweep"
+      },
+      {
+        "anchor": "ulRows.rowSrManager",
+        "from": 110.95,
+        "to": 111.9
+      },
+      {
+        "anchor": "ulRows.rowLevel00",
+        "from": 111.95,
+        "to": 112.7
+      },
+      {
+        "anchor": "ulRows.rowLevel01",
+        "from": 112.75,
+        "to": 113.45
+      },
+      {
+        "anchor": "ulRows.rowCustomerService",
+        "from": 114.2,
+        "to": 117.9,
+        "note": "'two full hours' (p34)"
+      },
+      {
+        "anchor": "linkSL2",
+        "from": 126.6,
+        "to": 127.8,
+        "note": "eye to the Security Level link before the press (p37)"
+      },
+      {
+        "anchor": "bcSL",
+        "from": 129.7,
+        "to": 133.6,
+        "note": "'the page says Security Levels' (p38)"
+      },
+      {
+        "anchor": "slTh.thName",
+        "from": 135.2,
+        "to": 136.5,
+        "note": "p39 spoken order"
+      },
+      {
+        "anchor": "slTh.thLevel",
+        "from": 136.55,
+        "to": 138.6
+      },
+      {
+        "anchor": "slTh.thRefundApproval",
+        "from": 139.15,
+        "to": 140.7,
+        "note": "'Refund Approval Required' (p40)"
+      },
+      {
+        "anchor": "slRows.rowLow",
+        "from": 143.6,
+        "to": 145.2,
+        "note": "'levels zero,' (p42)"
+      },
+      {
+        "anchor": "slRows.rowLowMedium",
+        "from": 145.25,
+        "to": 146.8,
+        "note": "'three,'"
+      },
+      {
+        "anchor": "slRows.rowMedium",
+        "from": 146.85,
+        "to": 148.5,
+        "note": "'and five needed approval'"
+      },
+      {
+        "anchor": "slRows.rowHighMedium",
+        "from": 149.1,
+        "to": 149.65,
+        "note": "'Eight and above did not' (p43)"
+      },
+      {
+        "anchor": "slRows.rowHigh",
+        "from": 149.7,
+        "to": 150.15
+      },
+      {
+        "anchor": "slRows.rowSuperAdmin",
+        "from": 150.2,
+        "to": 150.6
+      },
+      {
+        "anchor": "slTh.thRefundApproval",
+        "from": 153.3,
+        "to": 157,
+        "note": "'One column settles most of these disputes' (p44-p45)"
+      },
+      {
+        "anchor": "slTh.thName",
+        "from": 164.4,
+        "to": 166.8,
+        "note": "step 10 chain in spoken order (p47)"
+      },
+      {
+        "anchor": "slTh.thLevel",
+        "from": 166.85,
+        "to": 169.25,
+        "note": "p48"
+      },
+      {
+        "anchor": "slTh.thRefundApproval",
+        "from": 169.3,
+        "to": 172.6,
+        "note": "p49"
+      },
+      {
+        "anchor": "linkBL2",
+        "from": 183.6,
+        "to": 184.7,
+        "note": "eye to Blacklisted just before the press (p54)"
+      },
+      {
+        "anchor": "blTh.thPlate",
+        "from": 188.9,
+        "to": 190.3,
+        "note": "p56 spoken order: the plate itself,"
+      },
+      {
+        "anchor": "blTh.thTerminal",
+        "from": 190.35,
+        "to": 191.8,
+        "note": "the terminal where the block was set,"
+      },
+      {
+        "anchor": "blTh.thCreatedBy",
+        "from": 191.85,
+        "to": 193.2,
+        "note": "who added it,"
+      },
+      {
+        "anchor": "blTh.thCreated",
+        "from": 193.25,
+        "to": 194.9,
+        "note": "and when"
+      },
+      {
+        "anchor": "emptyBL",
+        "from": 198.5,
+        "to": 202.6,
+        "note": "'look here before anything else' (p58) — the July 11 empty state is a real state"
+      },
+      {
+        "anchor": "newRecBL",
+        "from": 212.4,
+        "to": 218.7,
+        "color": "#dc2626",
+        "note": "step 13 do-not-click guardrail on + New Record while p62-p63 state the read-only rule"
+      },
+      {
+        "anchor": "blNav.linkSystemUsers",
+        "from": 234.9,
+        "to": 235.8,
+        "note": "recap, spoken order: 'Can they sign in: System Users.' (p69)"
+      },
+      {
+        "anchor": "blNav.linkUserLevels",
+        "from": 236.15,
+        "to": 237.2,
+        "note": "p70"
+      },
+      {
+        "anchor": "blNav.linkSecurityLevel",
+        "from": 238.2,
+        "to": 239.6,
+        "note": "p71"
+      },
+      {
+        "anchor": "blNav.linkBlacklisted",
+        "from": 239.95,
+        "to": 240.95,
+        "note": "p72"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 36.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 37.3,
+        "z": 1.3,
+        "cx": 1160,
+        "cy": 420,
+        "ease": true,
+        "note": "step 3 close framing (130% per shot list): ACTIVE / SSO / LAST LOGIN headers"
+      },
+      {
+        "t": 50.2,
+        "z": 1.3,
+        "cx": 1160,
+        "cy": 420
+      },
+      {
+        "t": 51.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for USER LEVEL, the search/count step, and the step-5 rail work"
+      },
+      {
+        "t": 104.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 105.9,
+        "z": 1.3,
+        "cx": 1170,
+        "cy": 480,
+        "ease": true,
+        "note": "step 7 close framing: SESSION TIMEOUT (MIN) column and the 5-minute rows"
+      },
+      {
+        "t": 117.9,
+        "z": 1.3,
+        "cx": 1170,
+        "cy": 480
+      },
+      {
+        "t": 118.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the step-8 navigation and column tour"
+      },
+      {
+        "t": 142.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 143.4,
+        "z": 1.3,
+        "cx": 1170,
+        "cy": 430,
+        "ease": true,
+        "note": "step 9 close framing: REFUND APPROVAL REQUIRED Yes/No column"
+      },
+      {
+        "t": 152.4,
+        "z": 1.3,
+        "cx": 1170,
+        "cy": 430
+      },
+      {
+        "t": 153.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide and calm through the chain recap, Blacklisted, the read-only rule, and the final recap"
+      },
+      {
+        "t": 252.918,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Users & Security — Complete",
+      "from": 251.12,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 250.82
+  },
+  "output": "WC-12-06-users-security-v1.1",
+  "orderedMentions": [
+    "Settings",
+    "Users & Security",
+    "System Users",
+    "Active",
+    "SSO",
+    "Last Login",
+    "User Level",
+    "Automation",
+    "User Levels",
+    "Security Level",
+    "Security Levels",
+    "Refund Approval Required",
+    "Blacklisted",
+    "New Record"
+  ],
+  "neverClick": [
+    "new record",
+    "save",
+    "save changes",
+    "edit",
+    "delete",
+    "yes, delete",
+    "add",
+    "reset",
+    "send",
+    "submit",
+    "logout",
+    "ask shyne"
+  ],
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar preference expanded before the take"
+    },
+    {
+      "op": "click",
+      "target": "usHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "usersSubmenuClosed",
+      "postcondition": "usersSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: genuine toggle click closes the persisted Users & Security group (washcentral-settings-menu-v1) so step 1 expands it on camera"
+    },
+    {
+      "op": "click",
+      "target": "autoHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "autoSubmenuClosed",
+      "postcondition": "autoSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: genuine toggle click closes the persisted Automation group so the step-5 reveal is genuine"
+    }
+  ]
+}
