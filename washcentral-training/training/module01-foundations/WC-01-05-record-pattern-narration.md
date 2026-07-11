@@ -1,10 +1,10 @@
 # WC-01-05 — Interface conventions: the universal record pattern · Narration Script
 
-**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps). (Spoken lines are audio-locked and unchanged; **blocks s07–s10 and the s12 recap need re-render** — see scope notes.)
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps). (**Blocks s07–s10 and s12 re-authored July 11 against the guide v1.1, pending block re-render**; all other spoken lines unchanged — see scope notes.)
 
 ## Settings header
 
-- **Status:** **RENDERED v1.0 — s07–s10 (and the s12 recap) FLAGGED FOR RE-RENDER against the July 11 corpus** (see scope notes); do not assemble with the v1.0 blocks for those steps. Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-01-05-s01.mp3` … `WC-01-05-s12.mp3` + a joined `WC-01-05-full-narration-v1.0.mp3`. Per-step render seconds recorded here after generation; timestamps below are estimates at ~145 wpm plus break time and a 0.4 s tail.
+- **Status:** **s07–s10 and s12 re-authored July 11, pending block re-render** (v1.0 audio for those steps is superseded; do not assemble with it). Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-01-05-s01.mp3` … `WC-01-05-s12.mp3` + a joined `WC-01-05-full-narration-v1.0.mp3`. Per-step render seconds recorded here after generation; timestamps below are estimates at ~145 wpm plus break time and a 0.4 s tail.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -27,9 +27,9 @@
 
 ### Scope notes (non-spoken)
 
-- Teaches the universal record pattern on the **Cancellation Reasons** list: list → row → read-only detail → **Edit** form → **Cancel**, plus **+ New Record** → **Cancel**, with the delete guardrail (**No, Keep**).
+- Teaches the universal record pattern on the **Cancellation Reasons** list: list → **+ New Record** → the **Cancellation Reasons Edit** form (**Cancel** / **Save Changes**) → **Cancel**, with the delete guardrail (**No, Keep**) taught as a rule — this lean list has no row-click detail view and no **Edit** / **Delete** controls (observed July 11).
 - The list page (steps 1–6) is grounded in the July 9 corpus and re-confirmed live in the July 11 credentialed corpus (33 rows; tiles 33 / 30 / 3; counter 1–25 of 33). Refund Reasons was empty on July 11 ("No refund reasons found…"); Rewash Reasons held 12 live rows.
-- **NEEDS RE-RENDER — blocks s07, s08, s09, s10 (and the s12 recap line).** The July 11 credentialed capture contradicts these rendered spoken lines: clicking a row does NOT open a read-only detail view on this list (s07), there are no **← Back** / **Edit** / **Delete** buttons (s08), there is no **Edit** to open (s09), and no **Delete** control exists here (s10); s12 recaps that flow. What the corpus does confirm: the **+ New Record** form at `settings-cancellation-reasons-edit.html` (**Cancellation Reasons Edit**) with a **Reason Details** tab, a required **DESCRIPTION \*** field, and **Cancel** / **Save Changes** — so s11's "same form, blank" spoken line survives, and s09's Cancel/Save Changes description matches the real form even though its "Open Edit" action cue does not. Re-write these blocks against the July 11 digests before rendering v1.1 audio; spoken text left untouched here per the audio-lock rule.
+- **s07–s10 and s12 RE-AUTHORED July 11 — pending re-render.** The v1.0 rendered takes spoke a row-click read-only detail view with **← Back** / **Edit** / **Delete**, which the July 11 credentialed capture shows does not exist on this list. The blocks below now match the guide v1.1: a row click stays on the list (s07), no record-level buttons exist here (s08), the form's two exits are read ahead of opening it (s09), the delete guardrail is taught as a rule for record types that carry a **Delete** (s10), and the recap reflects the lean flow (s12). The **+ New Record** form at `settings-cancellation-reasons-edit.html` (**Cancellation Reasons Edit**, **Reason Details** tab, required **DESCRIPTION \*** field, **Cancel** / **Save Changes**) is confirmed by the corpus, so s11 stands as rendered. Re-render s07–s10 and s12 as v1.1 audio before assembly.
 - The delete confirmation dialog remains unobserved on this platform; its wording stays parked. Do not add spoken values for unobserved fields.
 - Nothing is committed on camera: **Save Changes**, **Yes, Delete**, and any Save inside **+ New Record** are never clicked. Session-timeout ("Still there?") behavior belongs to WC-01-03.
 
