@@ -1,0 +1,8 @@
+# Recording intermediates — only the final delivery MP4 ships
+training/**/*-raw.mp4
+training/**/*-trimmed.mp4
+
+# Production intermediates (regenerable): captures, per-frame dirs, silent pre-mux video
+production/out/*-capture.mkv
+production/out/*-frames/
+production/out/*-video.mp4

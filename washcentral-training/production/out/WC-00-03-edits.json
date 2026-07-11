@@ -1,0 +1,18 @@
+{
+  "freezes": [
+    {
+      "key": "academyStable",
+      "fromS": 66.725,
+      "toS": 67.57,
+      "navPressT": 66.575,
+      "stableT": 67.57
+    },
+    {
+      "key": "commandCenterStable",
+      "fromS": 78.609,
+      "toS": 79.519,
+      "navPressT": 78.459,
+      "stableT": 79.519
+    }
+  ]
+}
