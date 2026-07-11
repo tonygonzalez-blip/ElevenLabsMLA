@@ -1,0 +1,105 @@
+{
+  "base": "WC-01-05",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 181.46,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open the list",
+      "audioS": 14.99,
+      "stepS": 15.39,
+      "file": "WC-01-05-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI strip",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-01-05-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "List card",
+      "audioS": 11.31,
+      "stepS": 11.71,
+      "file": "WC-01-05-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Columns and rows",
+      "audioS": 11.39,
+      "stepS": 11.79,
+      "file": "WC-01-05-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Pagination",
+      "audioS": 10.37,
+      "stepS": 10.77,
+      "file": "WC-01-05-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Sibling list",
+      "audioS": 13.48,
+      "stepS": 13.88,
+      "file": "WC-01-05-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Row click stays on the list",
+      "audioS": 13.79,
+      "stepS": 14.19,
+      "file": "WC-01-05-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "No record buttons here",
+      "audioS": 14.6,
+      "stepS": 15,
+      "file": "WC-01-05-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "The form's two exits",
+      "audioS": 14.76,
+      "stepS": 15.16,
+      "file": "WC-01-05-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Delete guardrail",
+      "audioS": 14.99,
+      "stepS": 15.39,
+      "file": "WC-01-05-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "New record",
+      "audioS": 13.56,
+      "stepS": 13.96,
+      "file": "WC-01-05-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 28.11,
+      "stepS": 28.51,
+      "file": "WC-01-05-s12.mp3"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "base": "WC-03-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 176.93,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Sales / Tickets header",
+      "audioS": 11.89,
+      "stepS": 12.29,
+      "file": "WC-03-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI band",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-03-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Ticket Volume",
+      "audioS": 10.61,
+      "stepS": 11.01,
+      "file": "WC-03-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "By Status",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-03-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Ticket Health",
+      "audioS": 11.47,
+      "stepS": 11.87,
+      "file": "WC-03-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Search Tickets card",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-03-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Ticket List header & Export",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-03-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Columns",
+      "audioS": 18.29,
+      "stepS": 18.69,
+      "file": "WC-03-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Example row",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-03-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Pagination",
+      "audioS": 14.76,
+      "stepS": 15.16,
+      "file": "WC-03-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Sales sidebar",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-03-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 13.4,
+      "stepS": 13.8,
+      "file": "WC-03-01-s12.mp3"
+    }
+  ]
+}

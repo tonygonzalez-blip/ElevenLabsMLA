@@ -1,0 +1,105 @@
+{
+  "base": "WC-PB-08",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 229.04,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Campaign KPIs",
+      "audioS": 17.32,
+      "stepS": 17.72,
+      "file": "WC-PB-08-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "The Status column",
+      "audioS": 16.85,
+      "stepS": 17.25,
+      "file": "WC-PB-08-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "The weather-pause pill",
+      "audioS": 18.52,
+      "stepS": 18.92,
+      "file": "WC-PB-08-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Deliverability banner",
+      "audioS": 19.88,
+      "stepS": 20.28,
+      "file": "WC-PB-08-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "List health and suppression",
+      "audioS": 21.24,
+      "stepS": 21.64,
+      "file": "WC-PB-08-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Task Scheduler KPIs",
+      "audioS": 20.27,
+      "stepS": 20.67,
+      "file": "WC-PB-08-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "The SMS Campaigns row",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-PB-08-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Mass SMS Log",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-PB-08-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Billing tabs",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-PB-08-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Usage by Source",
+      "audioS": 14.52,
+      "stepS": 14.92,
+      "file": "WC-PB-08-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Package the escalation",
+      "audioS": 20.69,
+      "stepS": 21.09,
+      "file": "WC-PB-08-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-PB-08-s12.mp3"
+    }
+  ]
+}

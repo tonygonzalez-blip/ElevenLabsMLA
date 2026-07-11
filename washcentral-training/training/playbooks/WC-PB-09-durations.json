@@ -1,0 +1,89 @@
+{
+  "base": "WC-PB-09",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 167.51,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Reports hub",
+      "audioS": 13.71,
+      "stepS": 14.11,
+      "file": "WC-PB-09-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Name the symptom",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-PB-09-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Report Viewer",
+      "audioS": 14.84,
+      "stepS": 15.24,
+      "file": "WC-PB-09-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Fix the scope, re-run",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-PB-09-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Demo-data caveat",
+      "audioS": 15.15,
+      "stepS": 15.55,
+      "file": "WC-PB-09-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Scheduled Reports view",
+      "audioS": 14.76,
+      "stepS": 15.16,
+      "file": "WC-PB-09-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Task Scheduler",
+      "audioS": 20.04,
+      "stepS": 20.44,
+      "file": "WC-PB-09-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Daily Report Email row",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-PB-09-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Package the escalation",
+      "audioS": 15.73,
+      "stepS": 16.13,
+      "file": "WC-PB-09-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Recap",
+      "audioS": 17.32,
+      "stepS": 17.72,
+      "file": "WC-PB-09-s10.mp3"
+    }
+  ]
+}
