@@ -1,4 +1,10 @@
-# Session state — July 9, 2026, end of remote authoring run
+# Session state — July 11, 2026, end of remote production run
+
+**July 11 update (supersedes the notes below where they conflict):** the credentialed live-verify ran (corpus `verification/2026-07-11/`, 87 captures; PARKED #15–#19/#21 resolved; DISCREPANCIES #37–#42 added incl. platform drift), affected lessons were patched, and **all 69 narrations are RENDERED** (per-step MP3s + joined tracks + durations files; 31 stale blocks re-authored and re-rendered; QA sweep 73/73). The ONLY remaining stage is local: screen recording + mux + per-lesson QA on a 1920×1080 machine (`tools/record-lesson.mjs` + each lesson's shot list and durations.json). Note for that session: several pages are SPA-routed — navigate in-app via the sidebar, not by direct URL (see DISCREPANCIES #35/#39) — and re-check the July 11 drift items (Refund Approvals, Contract Renewals, Prepaid Activity, Customer List columns) at record time.
+
+---
+
+# (Superseded) Session state — July 9, 2026, end of remote authoring run
 
 Written by Claude — Micrologic training project. Supersedes the earlier July 9 handoff in this file. Records exactly where production stands after the remote (Claude Code on the web) authoring run.
 
