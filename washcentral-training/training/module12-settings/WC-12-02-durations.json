@@ -1,0 +1,121 @@
+{
+  "base": "WC-12-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 270.36,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Settings / Locations group",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-12-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Locations page",
+      "audioS": 26.28,
+      "stepS": 26.68,
+      "file": "WC-12-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Locations list",
+      "audioS": 22.75,
+      "stepS": 23.15,
+      "file": "WC-12-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Open the detail",
+      "audioS": 18.68,
+      "stepS": 19.08,
+      "file": "WC-12-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Profile",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-12-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Operations",
+      "audioS": 19.07,
+      "stepS": 19.47,
+      "file": "WC-12-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Payments & Credentials",
+      "audioS": 25.97,
+      "stepS": 26.37,
+      "file": "WC-12-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Messaging",
+      "audioS": 16.2,
+      "stepS": 16.6,
+      "file": "WC-12-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Users",
+      "audioS": 13.32,
+      "stepS": 13.72,
+      "file": "WC-12-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Leave the detail",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-12-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Location Groups",
+      "audioS": 16.59,
+      "stepS": 16.99,
+      "file": "WC-12-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Location Sub-Brand",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-12-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Payment Credential Approval",
+      "audioS": 24.19,
+      "stepS": 24.59,
+      "file": "WC-12-02-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Recap",
+      "audioS": 19.64,
+      "stepS": 20.04,
+      "file": "WC-12-02-s14.mp3"
+    }
+  ]
+}

@@ -14,6 +14,15 @@ Rule: nothing here blocks work; each item is flagged TBD where relevant. A guess
 
 - **#13 Site Detail (Demo) — RESOLVED:** the July 9 sweep captured `site-detail.html` as a full page (a single-site status board for a sample site: header with Critical chip + ‹ NOC back link + CSM owner + Last sync; a 6-KPI band Washes/Revenue/Avg Wait/SLA/Open Incidents/Uptime; Equipment Status (8 units, click to drill down), Active Incidents, Event Timeline, and Quick Actions panels; no tabs). Lesson WC-10-06 authored from it. Remaining sub-gaps (equipment-card drill-down view; the Schedule PM / Acknowledge controls) are new small parks, not blockers.
 
+## Resolved July 11, 2026 (credentialed live-verify run — corpus in `verification/2026-07-11/`)
+
+- **#15 Live-walk credential gate — RESOLVED:** demo credentials supplied via environment variables (read at runtime only, never stored); the real three-field login succeeds headlessly with a valid staff token and no MFA step. All subsequent items were unblocked by this.
+- **#16 Agent-service "Failed to fetch" — RESOLVED (root cause confirmed):** the July 9 failures happened because the data API requires the staff-token the quick-access sweep lacked. With a real token, rows load: User Levels (e.g. Administrator | 20 | 120), Security Levels (Low | 0 | Yes …), reason codes, gift cards, terminals, and the rest captured with live values on July 11.
+- **#17 404-on-direct-URL routes — RESOLVED (explained):** all affected pages are real and load via in-app sidebar navigation; only direct URL entry 404s (SPA routing). Captured in-app July 11: audit-users, audit-changes, support-alerts, the four maint-* pages, six sched-* siblings, game-recognition/surveys, four portal-* pages, lms-catalog/paths/my-learning + all four lms-admin pages, zoho-tickets.
+- **#18 Row-click detail views — RESOLVED (captured):** Customer 360 view (all nine tabs + Actions menu; metric band confirmed as Member Since / Plan $/mo / Washes (30d) / Loyalty Points / Next Renewal / Last Visit — the edit form differs by design), Ticket View (all five tabs, deep-link `?ticket=<id>`, REFUND HISTORY columns), employee detail (all seven tabs at `emp-employees-detail.html`), inventory item read-only detail (`inv-items-detail.html` exists; Pricing & Stock and Storage & Location captured), reason-code record view + blank New Record form. Still open sub-gaps: Site Detail equipment drill-down; Agent Console populated view; PO quick-look on a real row.
+- **#19 Filters panel — RESOLVED:** captured open on the Customer List July 11 (`crm-customers-filters-open`).
+- **#21 Executive Dashboard GOALS panel — RESOLVED (as a discrepancy):** a full-page July 11 capture shows no GOALS · Q2 2026 panel anywhere on the live dashboard; the plan's panel does not exist on the current platform. Moved to DISCREPANCIES (#37).
+
 ## Open
 
 | # | Item | What was tried / observed | What is needed |

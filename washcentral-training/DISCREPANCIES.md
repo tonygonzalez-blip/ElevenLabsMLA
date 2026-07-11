@@ -48,6 +48,14 @@ Rule: when the live platform and a document disagree, the platform wins. Deliver
 | 35 | Direct-URL routing (systemic) | Sidebar entries imply reachable pages | Many pages 404 on **direct URL** while their sidebar entries render live in-app: audit-users, audit-changes, support-alerts, maint-schedule/-equipment/-checklist/-parts, sched-services/-resources/-hours/-messaging/-payments/-reports, game-recognition, game-surveys, portal-book/-messages/-billing/-notifications, lms-catalog/-paths/-my-learning, and various `-edit` form probes. Direct-nav sweep limitation vs missing pages: needs a live in-app walk to distinguish. See PARKED #17. |
 | 36 | mkt-automation panels | — | Corpus-internal inconsistency: Status Breakdown panel shows "Published 1 / Draft 19" while the KPI band and rows show 3 Published / 1 Draft; Top Triggers donut slices don't correspond to the four rows' TRIGGER values (separate rollup). Campaigns KPI band also differs between the list capture (2/0/—/$0) and the edit capture (4/18,400/36%/$8,420). Demo mock-state drift. |
 
+## July 11, 2026 additions (credentialed live-verify; corpus in `verification/2026-07-11/`)
+
+| # | Where | Doc/plan says | Platform (July 11) shows |
+|---|-------|----------------|--------------------------|
+| 37 | Executive Dashboard | Plan §6.1 lists a "GOALS · Q2 2026" target-vs-actual panel incl. NPS | No GOALS panel exists anywhere on the page (full-page capture). Closes PARKED #21. |
+| 38 | CRM sidebar (platform drift since July 9) | July 9 corpus: Customers, Gift Cards, House Accounts, Prepaid Books, Vehicles, Retail Customers, Bundles, Fundraiser | July 11 adds **Contract Renewals** and **Prepaid Activity** entries. New pages not yet covered by any lesson — future lesson or WC-02-06 extension. |
+| 39 | Direct-URL routing (updates #35) | — | Confirmed: the #35 pages are all real and reachable in-app; only direct URL entry 404s. Customer 360 metric-band question in #28 resolved: the VIEW band is Member Since / Plan $/mo / Washes (30d) / Loyalty Points / Next Renewal / Last Visit (plan was right); the EDIT form's band differs by design. #34 updated: the embedded Help Desk (Zoho) view exists in-app at zoho-tickets.html. |
+
 ## Demo-data observations (for training materials)
 
 - KPI tiles and tables frequently disagree (Customers KPI 2,418 vs table 1,643,807; Services KPI 24 vs list 187; Command Center map "144 locations / 7 states" vs Executive Dashboard "6 locations" in Florida).
