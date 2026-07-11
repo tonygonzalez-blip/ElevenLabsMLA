@@ -1,0 +1,1005 @@
+{
+  "lesson": "WC-PB-01",
+  "title": "Playbook PB-1: Login Failures",
+  "audioMaster": "training/playbooks/WC-PB-01-full-narration-v1.0.mp3",
+  "audioDurationS": 216.111,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railSettings": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^settings$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railIT": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^IT & Support$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railCommandCenter": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Command Center$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "hdrSearchBtn": {
+      "js": "[...document.querySelectorAll('button.wc-cmd-trigger-btn')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "usersHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/users & security/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkSystemUsers": {
+      "text": "System Users",
+      "scope": ".submenu a"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "tileTotalUsers": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search by name, code, or email/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "headerRow": {
+      "js": "[...document.querySelectorAll('thead tr')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "thUserName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^user name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thActive": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSSO": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^sso$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastLogin": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^last login$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "firstDataRow": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=6&&!/loading/i.test(e.textContent||''))"
+    },
+    "uaLink": {
+      "js": "[...document.querySelectorAll('aside.sidebar a.menu-header')].find(e=>(e.textContent||'').trim()==='User Activity'&&e.getBoundingClientRect().width>0)"
+    },
+    "auditLogLink": {
+      "js": "[...document.querySelectorAll('aside.sidebar a.menu-header')].find(e=>(e.textContent||'').trim()==='Audit Log'&&e.getBoundingClientRect().width>0)"
+    },
+    "failedTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed Logins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "uaFirstRow": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=5&&!/loading/i.test(e.textContent||''))"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onSystemUsers": "location.pathname.endsWith('/settings-system-users.html')",
+    "onSupportTickets": "location.pathname.endsWith('/support-tickets.html')",
+    "onUserActivity": "location.pathname.endsWith('/audit-users.html')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "usersSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>(e.textContent||'').trim()==='System Users'&&e.getBoundingClientRect().width>0)",
+    "usersSubmenuClosed": "![...document.querySelectorAll('.submenu a')].some(e=>(e.textContent||'').trim()==='System Users'&&e.getBoundingClientRect().width>0)",
+    "searchFocused": "!!document.activeElement&&/^Search by name, code, or email/i.test(document.activeElement.placeholder||'')",
+    "rowsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=6);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-system-users.html')&&rows.length>=10&&!!pi&&/of\\s*[\\d,]+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "uaLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=5&&!/loading/i.test(e.textContent||''));const tile=[...document.querySelectorAll('.a-metric')].some(e=>/Failed Logins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/audit-users.html')&&tile&&rows.length>=3&&!!pi&&/of\\s*\\d+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page staged before capture (command-center renders its own sidebar collapsed by design; no expand is asserted)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "pageReady"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        1443,
+        1079
+      ],
+      "to": {
+        "target": "hdrSearchBtn",
+        "offset": [
+          0,
+          150
+        ]
+      },
+      "note": "enter from bottom edge and settle below the header cluster the shot list names (Search ⌘K / Ask Shyne / avatar)"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.9,
+      "key": "hdrSearchRect",
+      "target": "hdrSearchBtn"
+    },
+    {
+      "op": "move",
+      "at": 1.6,
+      "to": {
+        "point": [
+          1500,
+          840
+        ]
+      },
+      "note": "park for the s01-s03 concept beats; steps 1-3 are spoken checks, nothing is clicked"
+    },
+    {
+      "op": "move",
+      "at": 51.42,
+      "to": {
+        "point": [
+          150,
+          905
+        ]
+      },
+      "note": "s04 cue starts (p17 'Open System Users, under Settings.'); approach the Settings rail item"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 52.55,
+      "hoverMs": 380,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 4a: genuine rail navigation into Settings"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable",
+      "predicate": "pageReady",
+      "settleMs": 300,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "usersHeader",
+      "pressAt": 53.8,
+      "hoverMs": 300,
+      "postcondition": "usersSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 4b: expand the Users & Security sidebar group as the guide names it (preflight staged it closed, so this open is genuine; it persists via washcentral-settings-menu-v1 and is reused at step 10)"
+    },
+    {
+      "op": "click",
+      "target": "linkSystemUsers",
+      "pressAt": 54.7,
+      "hoverMs": 300,
+      "postcondition": "onSystemUsers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 4c: land on System Users inside the cue's trailing 1.4s break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "sysStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 56.2,
+      "key": "bcSysRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 56.45,
+      "key": "headerRowRect",
+      "target": "headerRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 56.7,
+      "key": "thRects",
+      "targets": [
+        "thUserName",
+        "thActive",
+        "thSSO",
+        "thLastLogin"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 57.1,
+      "to": {
+        "target": "thUserName",
+        "offset": [
+          40,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "start the slow left-to-right sweep above the eight column headers (p19 'Eight columns')"
+    },
+    {
+      "op": "move",
+      "at": 59,
+      "to": {
+        "target": "thLastLogin",
+        "offset": [
+          100,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "sweep ends past the last header (~2s, per shot list step 4)"
+    },
+    {
+      "op": "assert",
+      "at": 60.3,
+      "predicate": "rowsLoaded",
+      "note": "shot-list load check: live rows + counter (8,022 users July 11), no 'Failed to fetch' banner; abort and re-roll otherwise"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.55,
+      "key": "tileRect",
+      "target": "tileTotalUsers"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.75,
+      "key": "searchRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.95,
+      "key": "newRecRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 61.2,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "point at the search box as p20 names it ('a search across the top')"
+    },
+    {
+      "op": "move",
+      "at": 63.1,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -85,
+          42
+        ],
+        "outside": true
+      },
+      "note": "settle beside + New Record while p20 says 'you leave alone' — never on it, never clicked"
+    },
+    {
+      "op": "watch",
+      "key": "sysUsersHeld",
+      "from": 63.5,
+      "to": 133.5,
+      "predicate": "onSystemUsers",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "steps 5-8 are read-only on this one page; any drift is an aborted take"
+    },
+    {
+      "op": "move",
+      "at": 66,
+      "to": {
+        "point": [
+          1150,
+          520
+        ]
+      },
+      "note": "ease off before step 5"
+    },
+    {
+      "op": "move",
+      "at": 70,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          420,
+          60
+        ],
+        "outside": true
+      },
+      "note": "approach on the p23 cue 'Search by name, code, or email'"
+    },
+    {
+      "op": "click",
+      "target": "searchBox",
+      "pressAt": 71.7,
+      "hoverMs": 380,
+      "postcondition": "searchFocused",
+      "timeoutMs": 4000,
+      "note": "step 5: focus the search box only — nothing is typed, no caller value ever appears on screen"
+    },
+    {
+      "op": "move",
+      "at": 75,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          430,
+          64
+        ],
+        "outside": true
+      },
+      "note": "drift just below the focused box while p24 explains no-match"
+    },
+    {
+      "op": "move",
+      "at": 81,
+      "to": {
+        "point": [
+          900,
+          640
+        ]
+      },
+      "note": "gesture at the row region for p25 'if the rows won't load'"
+    },
+    {
+      "op": "move",
+      "at": 85.6,
+      "to": {
+        "target": "thActive",
+        "offset": [
+          30,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 6: settle above the ACTIVE header on the p26 cue; column is read, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 101.2,
+      "to": {
+        "target": "thSSO",
+        "offset": [
+          20,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 7: above the SSO header (p30 'Next column: S-S-O.')"
+    },
+    {
+      "op": "move",
+      "at": 117.35,
+      "to": {
+        "target": "thLastLogin",
+        "offset": [
+          40,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 8: above the LAST LOGIN header (p35)"
+    },
+    {
+      "op": "move",
+      "at": 131,
+      "to": {
+        "point": [
+          1250,
+          560
+        ]
+      },
+      "note": "ease off while the camera pulls wide before the audit navigation"
+    },
+    {
+      "op": "move",
+      "at": 135.35,
+      "to": {
+        "point": [
+          150,
+          640
+        ]
+      },
+      "note": "step 9 cue starts (p41 'Open the Audit menu, then User Activity.'); approach the IT & Support rail — live, the AUDIT sidebar group is inside the IT & Support section"
+    },
+    {
+      "op": "click",
+      "target": "railIT",
+      "pressAt": 136.4,
+      "hoverMs": 360,
+      "postcondition": "onSupportTickets",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9a: the IT & Support rail lands on Support Tickets; its sidebar carries the AUDIT group (audit-users.html 404s on direct URL — sidebar is the only truthful route)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "supportStable",
+      "predicate": "pageReady",
+      "settleMs": 350,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "uaLink",
+      "pressAt": 138.4,
+      "hoverMs": 320,
+      "postcondition": "onUserActivity",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9b: User Activity under the AUDIT sidebar group, landing inside the cue's trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "uaStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 139.6,
+      "key": "bcUaRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 139.8,
+      "key": "failedTileRect",
+      "target": "failedTile"
+    },
+    {
+      "op": "move",
+      "at": 140,
+      "to": {
+        "target": "failedTile",
+        "offset": [
+          140,
+          64
+        ],
+        "outside": true
+      },
+      "note": "settle under the Failed Logins tile as p42 reads it — a page-level count, no per-user failure column"
+    },
+    {
+      "op": "assert",
+      "at": 141.4,
+      "predicate": "uaLoaded",
+      "note": "the four KPI tiles + 4 live rows (July 11: 14 / 28 / 42 min / 3 Failed Logins); abort on the transient fetch-error state"
+    },
+    {
+      "op": "watch",
+      "key": "uaHeld",
+      "from": 141.6,
+      "to": 158.8,
+      "predicate": "onUserActivity",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "log-rect",
+      "at": 143.35,
+      "key": "uaRowRect",
+      "target": "uaFirstRow"
+    },
+    {
+      "op": "move",
+      "at": 143.9,
+      "to": {
+        "target": "uaFirstRow",
+        "offset": [
+          -350,
+          0
+        ]
+      },
+      "note": "genuine hover on a user row for p43-p44 'read the caller's own row: status, last login, logins this month' — rows are read, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 151.7,
+      "to": {
+        "point": [
+          850,
+          700
+        ]
+      },
+      "note": "ease off during p45"
+    },
+    {
+      "op": "log-rect",
+      "at": 155.35,
+      "key": "auditLogRect",
+      "target": "auditLogLink"
+    },
+    {
+      "op": "move",
+      "at": 155.8,
+      "to": {
+        "target": "auditLogLink",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p46 'lives next door in the Audit Log' — point at the sidebar link only; it is not clicked"
+    },
+    {
+      "op": "move",
+      "at": 159.7,
+      "to": {
+        "point": [
+          150,
+          900
+        ]
+      },
+      "note": "step 10 needs the System Users frame back (shot list); quiet genuine return during p47"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 160.75,
+      "hoverMs": 340,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10a: back into Settings"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable2",
+      "predicate": "pageReady",
+      "settleMs": 300,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 161.7,
+      "predicate": "usersSubmenuOpen",
+      "note": "fail fast: the Users & Security submenu must still be expanded (persisted washcentral-settings-menu-v1 users:true from the on-camera step 4 click); if this aborts, something reset the persisted menu state mid-take"
+    },
+    {
+      "op": "click",
+      "target": "linkSystemUsers",
+      "pressAt": 162.5,
+      "hoverMs": 300,
+      "postcondition": "onSystemUsers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10b: System Users is on screen by p48 'You don't do it here.'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "sysStable2",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 163.5,
+      "key": "bcSys2Rect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 163.8,
+      "to": {
+        "point": [
+          1250,
+          680
+        ]
+      },
+      "note": "park while the two production reset doors are described; no edit form is ever opened"
+    },
+    {
+      "op": "assert",
+      "at": 167.4,
+      "predicate": "rowsLoaded",
+      "note": "rows re-loaded after the return navigation"
+    },
+    {
+      "op": "log-rect",
+      "at": 167.6,
+      "key": "sysRow2Rect",
+      "target": "firstDataRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 167.8,
+      "key": "newRec2Rect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "watch",
+      "key": "sysUsersHeld2",
+      "from": 168,
+      "to": 193.8,
+      "predicate": "onSystemUsers",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "steps 10-11 hold this frame; the row click that would open a record never happens"
+    },
+    {
+      "op": "move",
+      "at": 170.5,
+      "to": {
+        "target": "firstDataRow",
+        "offset": [
+          -26,
+          18
+        ],
+        "outside": true
+      },
+      "note": "p51 'an admin resets it from that user's own record' — indicate the row from beside the table; the record is never opened"
+    },
+    {
+      "op": "move",
+      "at": 179.6,
+      "to": {
+        "point": [
+          1520,
+          930
+        ]
+      },
+      "note": "step 11 escalation packet is a spoken rule; park clear of rows and captions"
+    },
+    {
+      "op": "move",
+      "at": 194.5,
+      "to": {
+        "point": [
+          150,
+          150
+        ]
+      },
+      "note": "step 12 recap returns to a clean Command Center (p59 'That's the whole flow.')"
+    },
+    {
+      "op": "click",
+      "target": "railCommandCenter",
+      "pressAt": 195.6,
+      "hoverMs": 340,
+      "postcondition": "onCommandCenter",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 12: genuine rail navigation home inside the p59 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ccStable",
+      "predicate": "pageReady",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "move",
+      "at": 197.4,
+      "to": {
+        "point": [
+          1500,
+          860
+        ]
+      },
+      "note": "final park, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 214.2,
+      "predicate": "onCommandCenter"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "hdrSearchRect",
+        "place": "below-left",
+        "from": 1.2,
+        "to": 12.6,
+        "note": "Symptom: 'I can't log in' — run the checks in order (shot list ①; header cluster the shot list names)"
+      },
+      {
+        "n": 2,
+        "anchor": "screen:960,560",
+        "place": "at",
+        "from": 14.2,
+        "to": 27.6,
+        "note": "Check 1: three fields — wrong Tenant / Customer Code is the classic miss (concept beat, no login still used)"
+      },
+      {
+        "n": 3,
+        "anchor": "screen:960,560",
+        "place": "at",
+        "from": 33.2,
+        "to": 44.7,
+        "note": "Check 2: migrated? Credentials carry over — Migration FAQ (concept beat)"
+      },
+      {
+        "n": 4,
+        "anchor": "headerRowRect",
+        "place": "left",
+        "from": 57,
+        "to": 60.6,
+        "note": "bracket the eight column headers (p19)"
+      },
+      {
+        "n": 5,
+        "anchor": "searchRect",
+        "place": "below-left",
+        "from": 68.2,
+        "to": 73.9,
+        "note": "Check 3a: does the account exist? Search, don't scroll"
+      },
+      {
+        "n": 6,
+        "anchor": "thRects.thActive",
+        "place": "left",
+        "from": 86.2,
+        "to": 90.7,
+        "note": "Check 3b: ACTIVE = Yes?"
+      },
+      {
+        "n": 7,
+        "anchor": "thRects.thSSO",
+        "place": "left",
+        "from": 101.4,
+        "to": 107.5,
+        "note": "Check 3c: SSO = Yes → reset lives at the identity provider (WC-12-09)"
+      },
+      {
+        "n": 8,
+        "anchor": "thRects.thLastLogin",
+        "place": "left",
+        "from": 117.6,
+        "to": 123,
+        "note": "Check 3d: LAST LOGIN — used to work vs never worked"
+      },
+      {
+        "n": 9,
+        "anchor": "failedTileRect",
+        "place": "below-left",
+        "from": 139.9,
+        "to": 150.5,
+        "note": "Check 4: the sign-in picture — page-level Failed Logins tile, no per-user failure column"
+      },
+      {
+        "n": 10,
+        "anchor": "bcSys2Rect",
+        "place": "below-left",
+        "from": 163.9,
+        "to": 176.3,
+        "note": "Where a reset happens — never in demo; no edit form is opened"
+      },
+      {
+        "n": 11,
+        "anchor": "screen:960,540",
+        "place": "at",
+        "from": 179.9,
+        "to": 192.6,
+        "note": "Escalate: username, tenant, timestamps, masked screenshots — never the password"
+      },
+      {
+        "n": 12,
+        "anchor": "screen:960,560",
+        "place": "at",
+        "from": 197.4,
+        "to": 213.6,
+        "note": "recap: ordered checks, cheap first; verification stamp July 11, 2026"
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "searchRect",
+        "from": 61,
+        "to": 62.4,
+        "note": "'a search across the top' (p20)"
+      },
+      {
+        "anchor": "newRecRect",
+        "from": 62.6,
+        "to": 65.4,
+        "color": "#dc2626",
+        "note": "do-not-click guardrail on + New Record — 'you leave alone' (p20, shot list ④ STOP)"
+      },
+      {
+        "anchor": "searchRect",
+        "from": 70,
+        "to": 73.9,
+        "note": "eye to the search box for the step-5 focus click (p23)"
+      },
+      {
+        "anchor": "thRects.thActive",
+        "from": 85.8,
+        "to": 90.7,
+        "note": "'Read the Active column' (p26-p27)"
+      },
+      {
+        "anchor": "thRects.thSSO",
+        "from": 101.2,
+        "to": 103.4,
+        "note": "'Next column: S-S-O.' (p30-p31)"
+      },
+      {
+        "anchor": "thRects.thLastLogin",
+        "from": 117.4,
+        "to": 121.8,
+        "note": "'Then Last Login.' (p35-p36)"
+      },
+      {
+        "anchor": "failedTileRect",
+        "from": 139.9,
+        "to": 143,
+        "note": "'one tile at the top, a count for the whole tenant' (p42)"
+      },
+      {
+        "anchor": "uaRowRect",
+        "from": 143.7,
+        "to": 150.8,
+        "note": "'read the caller's own row: status, last login, logins this month' (p43-p44)"
+      },
+      {
+        "anchor": "auditLogRect",
+        "from": 155.6,
+        "to": 158.9,
+        "note": "'the event by event trail lives next door in the Audit Log' (p46) — pointed at, never clicked"
+      },
+      {
+        "anchor": "sysRow2Rect",
+        "from": 170.5,
+        "to": 173.3,
+        "color": "#dc2626",
+        "note": "STOP: the user record a production admin would open for a reset — never opened here (p51, shot list ⑩)"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 85.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "wide through the concept beats, the System Users landing, and the search step"
+      },
+      {
+        "t": 87.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "steps 6-8 close framing at 150%: ACTIVE, SSO and LAST LOGIN headers all inside this frame (shot list zooms)"
+      },
+      {
+        "t": 131.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 132.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide before the audit navigation — page identity change shown full-frame"
+      },
+      {
+        "t": 139.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 140.8,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 420,
+        "ease": true,
+        "note": "step 9 close framing at 130% on the Failed Logins tile (shot list ⑨)"
+      },
+      {
+        "t": 143.6,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 420
+      },
+      {
+        "t": 145,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the row read, the return to System Users, and the recap"
+      },
+      {
+        "t": 216.111,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Login Failures — Complete",
+      "from": 214.31,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 214
+  },
+  "output": "WC-PB-01-login-failures-v1.1",
+  "orderedMentions": [
+    "System Users",
+    "Settings",
+    "New Record",
+    "Active",
+    "S-S-O",
+    "Last Login",
+    "Audit",
+    "User Activity",
+    "Audit Log",
+    "Forgot Password"
+  ],
+  "neverClick": [
+    "logout",
+    "log out now",
+    "new record",
+    "+ new record",
+    "export",
+    "delete",
+    "send",
+    "submit",
+    "save changes",
+    "ask shyne"
+  ],
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "off-camera: hop to Settings to stage the persisted settings menu (washcentral-settings-menu-v1)"
+    },
+    {
+      "op": "click",
+      "target": "usersHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "usersSubmenuClosed",
+      "postcondition": "usersSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse the Users & Security group if a prior session left it open, so the on-camera step-4 expand is genuine (skipped when already closed)"
+    },
+    {
+      "op": "click",
+      "target": "railCommandCenter",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "postcondition": "onCommandCenter",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "off-camera: return to the start page before capture (command-center itself normalizes the main sidebar to its collapsed design state)"
+    }
+  ]
+}

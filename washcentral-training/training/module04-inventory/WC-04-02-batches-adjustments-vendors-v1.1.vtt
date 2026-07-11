@@ -1,0 +1,210 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.464
+Open the Inventory menu.
+
+p02
+00:00:02.197 --> 00:00:06.092
+Six pages line the sidebar, and every one of them reads the same way.
+
+p03
+00:00:06.507 --> 00:00:08.292
+A row of headline numbers up top.
+
+p04
+00:00:08.620 --> 00:00:09.649
+Three cards under it.
+
+p05
+00:00:09.872 --> 00:00:11.299
+Then a searchable list.
+
+p06
+00:00:12.091 --> 00:00:14.062
+Item detail is its own lesson.
+
+p07
+00:00:14.408 --> 00:00:16.190
+Today we walk the other five.
+
+p08
+00:00:16.640 --> 00:00:18.511
+Start with Inventory Batches.
+
+p09
+00:00:18.865 --> 00:00:20.242
+This is your receiving log.
+
+p10
+00:00:20.635 --> 00:00:23.137
+The tiles up top count how many batches arrived, how many are still open, and what they cost.
+
+p11
+00:00:23.388 --> 00:00:25.709
+But the column that earns its keep is Reference.
+
+p12
+00:00:26.009 --> 00:00:28.439
+It carries the purchase order each batch filled,
+
+p13
+00:00:28.815 --> 00:00:34.618
+so a receipt on screen ties straight back to the order behind it.
+
+p14
+00:00:34.986 --> 00:00:38.534
+When someone asks what actually landed on a P-O, you look here.
+
+p15
+00:00:38.960 --> 00:00:40.249
+Now Adjustments.
+
+p16
+00:00:40.919 --> 00:00:46.246
+Every stock correction the network makes lands here, split into positives and negatives.
+
+p17
+00:00:46.876 --> 00:00:51.224
+What makes the page useful in support is that a correction is never anonymous.
+
+p18
+00:00:51.644 --> 00:00:56.241
+Each row names the location, the ticket, the shift, and the cashier behind it.
+
+p19
+00:00:56.614 --> 00:00:59.214
+So a write-off isn't just a dollar figure.
+
+p20
+00:00:59.564 --> 00:01:02.177
+It's a person and a moment you can go ask about.
+
+p21
+00:01:02.640 --> 00:01:04.767
+Vendors is the supplier directory.
+
+p22
+00:01:05.499 --> 00:01:09.285
+Account number, company, contact, address, phone.
+
+p23
+00:01:09.756 --> 00:01:12.835
+When an order runs late or a chemical shipment comes up short,
+
+p24
+00:01:13.089 --> 00:01:15.675
+this is the page that hands you the name and number to call.
+
+p25
+00:01:16.004 --> 00:01:18.677
+The tile up top counts three open P-Os.
+
+p26
+00:01:19.001 --> 00:01:22.700
+That's the same figure waiting for you one page over, on Purchase Orders.
+
+p27
+00:01:23.188 --> 00:01:24.668
+Chemicals and Supplies.
+
+p28
+00:01:25.272 --> 00:01:28.531
+For a field tech, this is the page that answers the call.
+
+p29
+00:01:29.118 --> 00:01:32.063
+Read Stock Level against Par, the reorder point,
+
+p30
+00:01:32.327 --> 00:01:34.606
+and the gap tells you how deep the hole is.
+
+p31
+00:01:35.180 --> 00:01:38.085
+The Status chip says the same thing in one word:
+
+p32
+00:01:38.481 --> 00:01:39.976
+In Stock, Low Stock, Critical, or Out of Stock.
+
+p33
+00:01:40.241 --> 00:01:41.939
+When an alert fires that a tank is low, you come here, confirm the level,
+
+p34
+00:01:42.459 --> 00:01:49.020
+and grab the supplier from the same row.
+
+p35
+00:01:49.440 --> 00:01:50.351
+Last page: Purchase Orders.
+
+p36
+00:01:50.698 --> 00:01:51.688
+This is the order pipeline.
+
+p37
+00:01:52.304 --> 00:01:53.948
+The tiles split it by stage: open, pending approval, in transit.
+
+p38
+00:01:54.817 --> 00:01:59.366
+The list adds the supplier, the site, the money, and the two dates a caller cares about,
+
+p39
+00:02:00.129 --> 00:02:05.081
+when it was created and when it's expected.
+
+p40
+00:02:05.452 --> 00:02:13.600
+The Status chip tells you whether it's still waiting on a signoff, riding on a truck, or done.
+
+p41
+00:02:14.000 --> 00:02:15.940
+Every order row has a View button.
+
+p42
+00:02:16.410 --> 00:02:19.069
+Click it and a quick-look slides in over the list.
+
+p43
+00:02:19.625 --> 00:02:23.405
+In the demo it opens on a sample record, so we won't read fields off it.
+
+p44
+00:02:24.256 --> 00:02:26.990
+Open Full Detail is the door to the real order.
+
+p45
+00:02:27.543 --> 00:02:29.440
+Close the peek, and nothing moves.
+
+p46
+00:02:29.840 --> 00:02:31.788
+Five pages, one sidebar.
+
+p47
+00:02:32.363 --> 00:02:35.443
+Batches for what came in and which P-O it filled.
+
+p48
+00:02:36.017 --> 00:02:38.414
+Adjustments for who changed a count and why.
+
+p49
+00:02:39.085 --> 00:02:40.524
+Vendors for who to call.
+
+p50
+00:02:41.077 --> 00:02:43.371
+Chemicals and Supplies for what's running low.
+
+p51
+00:02:43.882 --> 00:02:45.638
+Purchase Orders for what's on the way.
+
+p52
+00:02:46.137 --> 00:02:50.384
+Same layout every time, so once you can read one, you can read all six.
+
