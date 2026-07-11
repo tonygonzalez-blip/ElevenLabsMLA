@@ -1049,7 +1049,7 @@
       "op": "watch",
       "key": "searchFilteredHold",
       "from": 205.2,
-      "to": 211.6,
+      "to": 212.6,
       "predicate": "searchFiltered",
       "everyMs": 500,
       "mustHold": true
@@ -1068,42 +1068,46 @@
     },
     {
       "op": "move",
-      "at": 211.0,
+      "at": 211.4,
       "to": {
         "point": [
-          430,
-          270
+          820,
+          520
         ]
       },
-      "note": "drift toward the sidebar in the p59 tail so the step-15 approach starts on cue"
+      "note": "drift toward the search box in the p59 tail so the step-15 approach starts on cue"
     },
     {
       "op": "click",
-      "target": "sideCustomers",
-      "pressAt": 213.35,
-      "hoverMs": 360,
-      "postcondition": "onCustomers",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "step 15 (residual R1): 'Clear the box' — keyboard clear is impossible (key op ctrl+a/Backspace dispatch keyCode 0 and are inert, probe-verified); closest genuine action is the sidebar Customers reload, which restores the empty box and the full untouched list"
+      "target": "searchInput",
+      "pressAt": 212.95,
+      "hoverMs": 340,
+      "postcondition": "searchFocused",
+      "timeoutMs": 4000,
+      "note": "step 15: 'Clear the box' — genuine click back into the box holding 'pat'"
     },
     {
-      "op": "wait-stable",
-      "afterNav": true,
-      "key": "customersStable4",
-      "predicate": "pageReady",
-      "settleMs": 500,
-      "timeoutMs": 8000
+      "op": "key",
+      "pressAt": 213.5,
+      "keys": [
+        "ctrl+a",
+        "Backspace"
+      ],
+      "gapMs": 240,
+      "keyLabel": "Ctrl+A · Backspace",
+      "postcondition": "fullListRestored",
+      "timeoutMs": 4000,
+      "note": "step 15: genuine keyboard clear (pressKey now carries real keycodes: a=65, Backspace=8; probe-verified select-3 then empty value) — the live table snaps back to the full unfiltered list during p61"
     },
     {
       "op": "assert",
-      "at": 214.5,
+      "at": 215.0,
       "predicate": "fullListRestored",
-      "note": "step 15: empty box + full unfiltered table verified live before p61 finishes"
+      "note": "belt-and-braces: empty box + full table still true as the recap starts"
     },
     {
       "op": "log-rect",
-      "at": 214.9,
+      "at": 215.3,
       "key": "theadRect2",
       "target": "theadRow"
     },
@@ -1228,7 +1232,7 @@
         "n": 15,
         "anchor": "theadRect2",
         "place": "left-top",
-        "from": 215.1,
+        "from": 215.5,
         "to": 219.0
       }
     ],
@@ -1413,9 +1417,9 @@
       },
       {
         "anchor": "theadRect2",
-        "from": 215.1,
-        "to": 216.4,
-        "note": "p61: the full list back on screen, untouched, after the genuine reload"
+        "from": 215.5,
+        "to": 216.75,
+        "note": "p61 tail: the full list back on screen, untouched, after the genuine keyboard clear"
       }
     ],
     "camera": [

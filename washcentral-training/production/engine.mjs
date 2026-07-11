@@ -178,6 +178,7 @@ class Engine {
     this.watchers.push(iv);
   }
   async waitUntil(audioT) {
+    if (this.noWait) return;
     const due = this.t0 + audioT * 1000;
     const wait = due - Date.now();
     if (wait > 0) await sleep(wait);
@@ -211,6 +212,11 @@ class Engine {
         entry.to = to;
         await this.glideTo(to);
       } else if (op.op === 'click') {
+        if (op.unless && await this.evalRO(L.predicates[op.unless])) {
+          entry.skipped = true; entry.ok = true;
+          this.log.ops[this.log.ops.length - 1] = entry;
+          return;
+        }
         const tgt = await this.resolveRetry(op.target, { requireStableMs: 200 }, 3500);
         if (tgt.obscured) throw new Error(`target obscured: ${op.target}`);
         const t = L.targets[op.target];
@@ -326,6 +332,17 @@ async function main() {
   await cdp.navigate(L.startUrl, 1500);
   if (await dismissIdle(cdp)) { console.log('  dismissed idle session dialog (off-camera)'); await sleep(600); }
   await sleep(1200);
+
+  // per-lesson off-camera preflight: genuine UI clicks that stage persisted preferences
+  // (e.g. sidebar collapsed/expanded) to the lesson's documented start state. Runs before
+  // any capture; ops may carry `unless: <predicate>` to skip when already staged.
+  const engine0 = new Engine(cdp, { pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {}, keys: [] });
+  if (Array.isArray(L.preflight) && L.preflight.length) {
+    console.log(`  preflight: ${L.preflight.length} op(s) (off-camera)`);
+    engine0.t0 = Date.now(); engine0.noWait = true;
+    for (const op of L.preflight) await engine0.runOp(op);
+    await sleep(600);
+  }
 
   // Capture in record mode:
   let ff = null, rawPath = null, sigintAt = null;
