@@ -229,8 +229,8 @@
     "camera": [
       { "t": 0, "z": 1, "cx": 960, "cy": 540 },
       { "t": 18.3, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 19.4, "z": 1.15, "cx": 835, "cy": 469, "ease": true, "note": "step 2: section band + KPI band in one calm framing" },
-      { "t": 35.6, "z": 1.15, "cx": 835, "cy": 469 },
+      { "t": 19.4, "z": 1.15, "cx": 835, "cy": 470, "ease": true, "note": "step 2: section band + KPI band in one calm framing" },
+      { "t": 35.6, "z": 1.15, "cx": 835, "cy": 470 },
       { "t": 36.6, "z": 1, "cx": 960, "cy": 540, "ease": true },
       { "t": 37.7, "z": 1.5, "cx": 1280, "cy": 360, "ease": true, "note": "step 3: 150% on the period row (shot list), Month highlighted" },
       { "t": 52.4, "z": 1.5, "cx": 1280, "cy": 360 },
