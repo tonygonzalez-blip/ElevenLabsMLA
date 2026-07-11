@@ -15,6 +15,7 @@ while :; do
     case "$f" in *phrases*) continue;; esac
     L=$(basename "$f" .json)
     [ -f "production/out/$L.SKIP" ] && continue
+    [ -f "production/lessons/$L.ready" ] || continue   # builder must be finished (orchestrator marks ready)
     out=$(node -e "console.log(require('./$f').output||'')" 2>/dev/null)
     [ -z "$out" ] && continue
     vid=$(ls training/*/"$out".mp4 2>/dev/null | head -1)

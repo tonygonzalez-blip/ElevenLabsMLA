@@ -11,6 +11,8 @@ APP_LOCK=/tmp/wc-app.lock
 CPU_LOCK=/tmp/wc-cpu.lock
 [ -f "$LJ" ] || { echo "no lesson json: $LJ"; exit 2; }
 
+bash production/ensure-stages.sh || { echo "stage self-heal failed"; exit 1; }
+
 echo "=== [$L] align ==="
 node production/align-narration.mjs "production/lessons/$L-phrases.json" | tail -3 || exit 1
 

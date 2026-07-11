@@ -8,3 +8,5 @@ production/out/*-frames/
 production/out/*-video.mp4
 production/out/*-cs-tmp/
 production/out/*-produce.log
+production/out/*.SKIP
+production/lessons/*.ready

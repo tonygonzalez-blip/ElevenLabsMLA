@@ -1,0 +1,1088 @@
+{
+  "lesson": "WC-02-07",
+  "title": "Agent Console (Service Desk)",
+  "audioMaster": "training/module02-crm/WC-02-07-full-narration-v1.0.mp3",
+  "audioDurationS": 167.158,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/crm-customers.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "serviceDeskLbl": {
+      "js": "[...document.querySelectorAll('aside.sidebar .menu-group-lbl')].find(e=>/^service desk$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "sideAgentConsole": {
+      "text": "Agent Console",
+      "scope": "aside.sidebar a"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "grid": {
+      "selector": ".ac-grid"
+    },
+    "queueCol": {
+      "js": "[...document.querySelectorAll('.ac-col')][0]"
+    },
+    "centerCol": {
+      "js": "[...document.querySelectorAll('.ac-col')][1]"
+    },
+    "ctxCol": {
+      "js": "document.querySelector('.ac-col.ac-ctxcol')"
+    },
+    "presenceWrap": {
+      "selector": ".ac-presence"
+    },
+    "hqHeader": {
+      "js": "[...document.querySelectorAll('.ac-col-hd h2')].find(e=>/^handoff queue$/i.test((e.textContent||'').trim()))"
+    },
+    "qstats": {
+      "selector": ".ac-qstats"
+    },
+    "statWaiting": {
+      "js": "[...document.querySelectorAll('.ac-qstats span')][0]"
+    },
+    "statAvg": {
+      "js": "[...document.querySelectorAll('.ac-qstats span')][1]"
+    },
+    "statHigh": {
+      "js": "[...document.querySelectorAll('.ac-qstats span')][2]"
+    },
+    "searchBox": {
+      "selector": "#ac-q"
+    },
+    "btnMine": {
+      "js": "[...document.querySelectorAll('.ac-vbtn')].find(e=>/^Mine\\b/.test((e.textContent||'').trim()))"
+    },
+    "btnUnassigned": {
+      "js": "[...document.querySelectorAll('.ac-vbtn')].find(e=>/^Unassigned\\b/.test((e.textContent||'').trim()))"
+    },
+    "btnTeam": {
+      "js": "[...document.querySelectorAll('.ac-vbtn')].find(e=>/^Team\\b/.test((e.textContent||'').trim()))"
+    },
+    "chipAll": {
+      "js": "[...document.querySelectorAll('.ac-chip')].find(e=>/^All\\b/.test((e.textContent||'').trim()))"
+    },
+    "chipVoice": {
+      "js": "[...document.querySelectorAll('.ac-chip')].find(e=>/^Voice\\b/.test((e.textContent||'').trim()))"
+    },
+    "chipSMS": {
+      "js": "[...document.querySelectorAll('.ac-chip')].find(e=>/^SMS\\b/.test((e.textContent||'').trim()))"
+    },
+    "chipWeb": {
+      "js": "[...document.querySelectorAll('.ac-chip')].find(e=>/^Web\\b/.test((e.textContent||'').trim()))"
+    },
+    "sortSel": {
+      "selector": "#ac-sort"
+    },
+    "showing": {
+      "selector": ".ac-showing"
+    },
+    "queueEmptyMsg": {
+      "js": "document.querySelector('.ac-scroll:not(.ac-ctx) .ac-empty')",
+      "textRect": true
+    },
+    "centerEmptyMsg": {
+      "js": "[...document.querySelectorAll('.ac-empty div')].find(e=>/Select a handoff from the queue/.test(e.textContent||''))"
+    },
+    "custHeader": {
+      "js": "[...document.querySelectorAll('.ac-col-hd h2')].find(e=>/^customer$/i.test((e.textContent||'').trim()))"
+    },
+    "noConvMsg": {
+      "js": "document.querySelector('.ac-scroll.ac-ctx .ac-empty')",
+      "textRect": true
+    }
+  },
+  "predicates": {
+    "onCustomers": "location.pathname.endsWith('/crm-customers.html')",
+    "onAgentConsole": "location.pathname.endsWith('/agent-console.html')",
+    "sidebarExpanded": "(()=>{const a=document.querySelector('.app');return !!a&&!a.classList.contains('sidebar-collapsed')})()",
+    "pageReady": "document.readyState==='complete'&&!!document.querySelector('.ac-grid')&&[...document.querySelectorAll('.ac-empty')].some(e=>e.getBoundingClientRect().width>0)&&(()=>{const l=document.querySelector('#page-loader');return !l||getComputedStyle(l).opacity==='0'})()",
+    "presenceOffline": "(()=>{const s=document.querySelector('#ac-presence');return !!s&&s.value==='offline'})()",
+    "queueEmpty": "(()=>{const q=document.querySelector('.ac-qstats');const e=document.querySelector('.ac-scroll:not(.ac-ctx) .ac-empty');return !!q&&/0 waiting/.test(q.textContent||'')&&!!e&&e.getBoundingClientRect().width>0&&/No matching handoffs/.test(e.textContent||'')})()",
+    "sortOpen": "(()=>{const s=document.querySelector('#ac-sort');try{return !!s&&s.matches(':open')}catch(e){return false}})()",
+    "sortClosedDefault": "(()=>{const s=document.querySelector('#ac-sort');if(!s)return false;let o=false;try{o=s.matches(':open')}catch(e){}return !o&&s.value==='wait'})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 240,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the sidebar EXPANDED (persisted preference shared across sessions; the Service Desk group and Agent Console link must be readable for step 1); skipped when already expanded"
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCustomers",
+      "note": "start on the CRM Customer List, stable before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1.1,
+      "predicate": "sidebarExpanded",
+      "note": "preflight staged the sidebar expanded; verify before rolling"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        2,
+        760
+      ],
+      "to": {
+        "target": "sideAgentConsole",
+        "offset": [
+          6,
+          46
+        ]
+      },
+      "note": "enter from the left edge, settle just below the Agent Console link"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.9,
+      "key": "sdLabelRect",
+      "target": "serviceDeskLbl"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.2,
+      "key": "acLinkRect",
+      "target": "sideAgentConsole"
+    },
+    {
+      "op": "click",
+      "target": "sideAgentConsole",
+      "pressAt": 3.72,
+      "hoverMs": 400,
+      "postcondition": "onAgentConsole",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: genuine sidebar click, press inside the p01 trailing break (3.50-4.07)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "consoleStable",
+      "predicate": "pageReady",
+      "settleMs": 700,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rects",
+      "at": 4.55,
+      "key": "panes",
+      "targets": [
+        "queueCol",
+        "centerCol",
+        "ctxCol"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 4.8,
+      "key": "gridRect",
+      "target": "grid",
+      "requireStableMs": 260
+    },
+    {
+      "op": "log-rect",
+      "at": 5.0,
+      "key": "bcRect",
+      "target": "breadcrumb"
+    },
+    {
+      "op": "log-rect",
+      "at": 5.2,
+      "key": "hqRect",
+      "target": "hqHeader"
+    },
+    {
+      "op": "assert",
+      "at": 5.4,
+      "predicate": "queueEmpty",
+      "note": "shot-list guardrail: the queue must be clear (0 waiting) or the take is parked — never open/answer/reassign a live handoff"
+    },
+    {
+      "op": "watch",
+      "key": "queueStaysEmpty",
+      "from": 6.0,
+      "to": 164.5,
+      "predicate": "queueEmpty",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "live tenant: if a real handoff arrives mid-take the narration's all-zero claims go false — abort and re-roll once clear"
+    },
+    {
+      "op": "move",
+      "at": 5.7,
+      "to": {
+        "point": [
+          1180,
+          950
+        ]
+      },
+      "note": "park low-center while p02 'One screen, three panes' plays"
+    },
+    {
+      "op": "move",
+      "at": 6.3,
+      "to": {
+        "point": [
+          442,
+          620
+        ]
+      },
+      "note": "p03 'The queue on the left' — cursor to the queue pane"
+    },
+    {
+      "op": "move",
+      "at": 7.63,
+      "to": {
+        "point": [
+          1100,
+          640
+        ]
+      },
+      "note": "p04 'the live conversation in the middle'"
+    },
+    {
+      "op": "move",
+      "at": 9.52,
+      "to": {
+        "point": [
+          1755,
+          640
+        ]
+      },
+      "note": "p05 'the customer's details on the right'"
+    },
+    {
+      "op": "move",
+      "at": 11.7,
+      "to": {
+        "point": [
+          1180,
+          940
+        ]
+      },
+      "note": "park for p06"
+    },
+    {
+      "op": "move",
+      "at": 14.31,
+      "to": {
+        "target": "presenceWrap",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "step 2 (cue p07): approach the presence selector — HOVER ZONE ONLY, the control is never opened or changed"
+    },
+    {
+      "op": "log-rect",
+      "at": 15.5,
+      "key": "presenceRect",
+      "target": "presenceWrap"
+    },
+    {
+      "op": "assert",
+      "at": 15.8,
+      "predicate": "presenceOffline",
+      "note": "narration says 'It reads Offline right now' — abort if a shift changed it"
+    },
+    {
+      "op": "watch",
+      "key": "presenceHeld",
+      "from": 16.0,
+      "to": 160.0,
+      "predicate": "presenceOffline",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "do-not-change guardrail: presence must still read Offline for the whole take"
+    },
+    {
+      "op": "move",
+      "at": 29.55,
+      "to": {
+        "point": [
+          520,
+          132
+        ]
+      },
+      "note": "step 3 (cue p11): to the counter line, parked right of the three numbers"
+    },
+    {
+      "op": "log-rect",
+      "at": 30.95,
+      "key": "qstatsRect",
+      "target": "qstats"
+    },
+    {
+      "op": "log-rects",
+      "at": 31.25,
+      "key": "stats",
+      "targets": [
+        "statWaiting",
+        "statAvg",
+        "statHigh"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 41.3,
+      "to": {
+        "point": [
+          668,
+          172
+        ]
+      },
+      "note": "step 4 (cue p16): beside the search box (inert center-column margin) — the box is never typed in, never clicked"
+    },
+    {
+      "op": "log-rect",
+      "at": 41.7,
+      "key": "searchRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rects",
+      "at": 54.0,
+      "key": "vbtns",
+      "targets": [
+        "btnMine",
+        "btnUnassigned",
+        "btnTeam"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 56.04,
+      "to": {
+        "target": "btnMine",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5: sweep the assignment filters on the spoken order — hover only, never clicked (p20 'Mine is yours')"
+    },
+    {
+      "op": "move",
+      "at": 57.67,
+      "to": {
+        "target": "btnUnassigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p21 'Unassigned is up for grabs'"
+    },
+    {
+      "op": "move",
+      "at": 60.23,
+      "to": {
+        "target": "btnTeam",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p22 'Team is the whole group's board' — rests here through p23 'set to Team'"
+    },
+    {
+      "op": "log-rects",
+      "at": 66.5,
+      "key": "chips",
+      "targets": [
+        "chipAll",
+        "chipVoice",
+        "chipSMS",
+        "chipWeb"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 69.11,
+      "to": {
+        "target": "chipAll",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6: channel sweep on the spoken order — hover only (p25 'All,')"
+    },
+    {
+      "op": "move",
+      "at": 70.01,
+      "to": {
+        "target": "chipVoice",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p26 'then Voice,'"
+    },
+    {
+      "op": "move",
+      "at": 71.31,
+      "to": {
+        "target": "chipSMS",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p27 'S-M-S,'"
+    },
+    {
+      "op": "move",
+      "at": 72.25,
+      "to": {
+        "target": "chipWeb",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p27 '...and Web.'"
+    },
+    {
+      "op": "move",
+      "at": 74.0,
+      "to": {
+        "point": [
+          640,
+          246
+        ]
+      },
+      "note": "park right of the chips while p28-p31 explain the channels"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.2,
+      "key": "sortRect",
+      "target": "sortSel"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.5,
+      "key": "showingRect",
+      "target": "showing"
+    },
+    {
+      "op": "click",
+      "target": "sortSel",
+      "pressAt": 84.45,
+      "hoverMs": 380,
+      "postcondition": "sortOpen",
+      "timeoutMs": 4000,
+      "note": "step 7: genuine click opens the native sort list (probe-verified: select matches :open after a real CDP click); press inside the p32 trailing break (84.24-84.74) so the three options are on screen when p33 names them"
+    },
+    {
+      "op": "watch",
+      "key": "sortHeldOpen",
+      "from": 85.0,
+      "to": 96.8,
+      "predicate": "sortOpen",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "the option list must stay genuinely open while p33-p35 describe it"
+    },
+    {
+      "op": "key",
+      "pressAt": 97.28,
+      "keys": [
+        "Escape"
+      ],
+      "gapMs": 200,
+      "keyLabel": "Esc — close without choosing",
+      "postcondition": "sortClosedDefault",
+      "timeoutMs": 3000,
+      "note": "step 7: 'Close it without changing anything' — Escape lands in the p36 trailing quiet (97.20-97.69); probe-verified the list closes and the value stays 'wait' (Longest wait first)"
+    },
+    {
+      "op": "move",
+      "at": 98.1,
+      "to": {
+        "target": "queueEmptyMsg",
+        "offset": [
+          0,
+          46
+        ]
+      },
+      "note": "step 8 (cue p37): under the 'No matching handoffs.' line"
+    },
+    {
+      "op": "log-rect",
+      "at": 98.8,
+      "key": "queueEmptyRect",
+      "target": "queueEmptyMsg"
+    },
+    {
+      "op": "move",
+      "at": 108.9,
+      "to": {
+        "target": "centerEmptyMsg",
+        "offset": [
+          0,
+          52
+        ]
+      },
+      "note": "step 9 (cue p40): under the center console's empty-state line"
+    },
+    {
+      "op": "log-rect",
+      "at": 109.8,
+      "key": "centerEmptyRect",
+      "target": "centerEmptyMsg"
+    },
+    {
+      "op": "move",
+      "at": 121.6,
+      "to": {
+        "point": [
+          1700,
+          655
+        ]
+      },
+      "note": "step 10 (cue p44): into the Customer panel, below its empty-state line"
+    },
+    {
+      "op": "log-rect",
+      "at": 122.4,
+      "key": "custHdRect",
+      "target": "custHeader"
+    },
+    {
+      "op": "log-rect",
+      "at": 122.7,
+      "key": "noConvRect",
+      "target": "noConvMsg"
+    },
+    {
+      "op": "move",
+      "at": 132.6,
+      "to": {
+        "point": [
+          1180,
+          945
+        ]
+      },
+      "note": "step 11: park low — steady full-frame hold while p47-p50 explain where handoffs come from (no cursor action per shot list)"
+    },
+    {
+      "op": "move",
+      "at": 151.44,
+      "to": {
+        "point": [
+          442,
+          540
+        ]
+      },
+      "note": "step 12 recap sweep: queue pane on p52"
+    },
+    {
+      "op": "move",
+      "at": 154.81,
+      "to": {
+        "point": [
+          1100,
+          540
+        ]
+      },
+      "note": "center console on p53"
+    },
+    {
+      "op": "move",
+      "at": 157.42,
+      "to": {
+        "point": [
+          1755,
+          540
+        ]
+      },
+      "note": "Customer panel on p54"
+    },
+    {
+      "op": "move",
+      "at": 160.3,
+      "to": {
+        "target": "presenceWrap",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "p55 'Your presence lives in the header' — back under the pill, still never touched"
+    },
+    {
+      "op": "move",
+      "at": 165.1,
+      "to": {
+        "point": [
+          1520,
+          66
+        ]
+      },
+      "note": "final rest on the header (inert space between breadcrumb and presence), clear of captions"
+    },
+    {
+      "op": "assert",
+      "at": 166.4,
+      "predicate": "onAgentConsole"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "gridRect",
+        "place": "left-top",
+        "from": 4.8,
+        "to": 11.2
+      },
+      {
+        "n": 2,
+        "anchor": "presenceRect",
+        "place": "below-left",
+        "from": 15.7,
+        "to": 20.3
+      },
+      {
+        "n": 3,
+        "anchor": "qstatsRect",
+        "place": "below-left",
+        "from": 31.3,
+        "to": 36.0
+      },
+      {
+        "n": 4,
+        "anchor": "searchRect",
+        "place": "right",
+        "from": 41.8,
+        "to": 47.6
+      },
+      {
+        "n": 5,
+        "anchor": "vbtns.btnUnassigned",
+        "place": "below-left",
+        "from": 54.2,
+        "to": 59.4
+      },
+      {
+        "n": 6,
+        "anchor": "chips.chipWeb",
+        "place": "right",
+        "from": 66.9,
+        "to": 72.9
+      },
+      {
+        "n": 7,
+        "anchor": "sortRect",
+        "place": "left-top",
+        "from": 83.6,
+        "to": 89.7
+      },
+      {
+        "n": 8,
+        "anchor": "queueEmptyRect",
+        "place": "right",
+        "from": 98.9,
+        "to": 104.0
+      },
+      {
+        "n": 9,
+        "anchor": "centerEmptyRect",
+        "place": "left-top",
+        "from": 109.9,
+        "to": 115.0
+      },
+      {
+        "n": 10,
+        "anchor": "noConvRect",
+        "place": "left",
+        "from": 122.8,
+        "to": 128.0
+      },
+      {
+        "n": 11,
+        "anchor": "panes.queueCol",
+        "place": "right",
+        "from": 134.5,
+        "to": 142.3
+      },
+      {
+        "n": 12,
+        "anchor": "bcRect",
+        "place": "below-left",
+        "from": 149.5,
+        "to": 154.4
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "acLinkRect",
+        "from": 1.3,
+        "to": 3.6,
+        "note": "p01 cue: the Agent Console link under SERVICE DESK, before the click"
+      },
+      {
+        "anchor": "panes.queueCol",
+        "from": 6.3,
+        "to": 7.33,
+        "note": "p03 'The queue on the left'"
+      },
+      {
+        "anchor": "panes.centerCol",
+        "from": 7.63,
+        "to": 9.21,
+        "note": "p04 'the live conversation in the middle'"
+      },
+      {
+        "anchor": "panes.ctxCol",
+        "from": 9.52,
+        "to": 11.15,
+        "note": "p05 'the customer's details on the right'"
+      },
+      {
+        "anchor": "presenceRect",
+        "from": 16.6,
+        "to": 20.36,
+        "note": "p08-p09: reads Offline; four states named from the control"
+      },
+      {
+        "anchor": "presenceRect",
+        "from": 20.63,
+        "to": 28.9,
+        "color": "#dc2626",
+        "note": "p10 do-not-change guardrail: 'Leave it where your shift set it; we don't touch it here'"
+      },
+      {
+        "anchor": "stats.statWaiting",
+        "from": 34.02,
+        "to": 35.45,
+        "note": "p13 'how many are waiting'"
+      },
+      {
+        "anchor": "stats.statAvg",
+        "from": 35.45,
+        "to": 36.85,
+        "note": "'the average wait'"
+      },
+      {
+        "anchor": "stats.statHigh",
+        "from": 36.85,
+        "to": 38.32,
+        "note": "'flagged high priority'"
+      },
+      {
+        "anchor": "qstatsRect",
+        "from": 38.6,
+        "to": 40.72,
+        "note": "p14-p15 'All zero now. A calm board.'"
+      },
+      {
+        "anchor": "searchRect",
+        "from": 43.4,
+        "to": 48.82,
+        "note": "p17: the placeholder names the searchable fields"
+      },
+      {
+        "anchor": "vbtns.btnMine",
+        "from": 56.04,
+        "to": 57.3
+      },
+      {
+        "anchor": "vbtns.btnUnassigned",
+        "from": 57.67,
+        "to": 59.38
+      },
+      {
+        "anchor": "vbtns.btnTeam",
+        "from": 60.23,
+        "to": 62.1
+      },
+      {
+        "anchor": "vbtns.btnTeam",
+        "from": 62.34,
+        "to": 64.6,
+        "note": "p23 'Right now it's set to Team' — the active filter"
+      },
+      {
+        "anchor": "chips.chipAll",
+        "from": 69.11,
+        "to": 69.53
+      },
+      {
+        "anchor": "chips.chipVoice",
+        "from": 70.01,
+        "to": 70.85
+      },
+      {
+        "anchor": "chips.chipSMS",
+        "from": 71.31,
+        "to": 72.1
+      },
+      {
+        "anchor": "chips.chipWeb",
+        "from": 72.1,
+        "to": 72.91
+      },
+      {
+        "anchor": "chips.chipVoice",
+        "from": 73.84,
+        "to": 76.5,
+        "note": "p28 'Those last three...'"
+      },
+      {
+        "anchor": "chips.chipSMS",
+        "from": 73.84,
+        "to": 76.5
+      },
+      {
+        "anchor": "chips.chipWeb",
+        "from": 73.84,
+        "to": 76.5
+      },
+      {
+        "anchor": "chips.chipAll",
+        "from": 76.5,
+        "to": 78.28,
+        "note": "'...and All shows them together'"
+      },
+      {
+        "anchor": "chips.chipVoice",
+        "from": 80.26,
+        "to": 80.78,
+        "note": "p30 'voice, text,'"
+      },
+      {
+        "anchor": "chips.chipSMS",
+        "from": 80.26,
+        "to": 80.78
+      },
+      {
+        "anchor": "chips.chipWeb",
+        "from": 81.11,
+        "to": 82.48,
+        "note": "p31 'and web chat.'"
+      },
+      {
+        "anchor": "sortRect",
+        "from": 84.74,
+        "to": 89.69,
+        "note": "p33: the three sort options, list genuinely open"
+      },
+      {
+        "anchor": "queueEmptyRect",
+        "from": 100.46,
+        "to": 103.71,
+        "note": "p38 'It says no matching handoffs'"
+      },
+      {
+        "anchor": "centerEmptyRect",
+        "from": 111.36,
+        "to": 114.98,
+        "note": "p41: the center empty-state line, read aloud"
+      },
+      {
+        "anchor": "noConvRect",
+        "from": 123.81,
+        "to": 125.69,
+        "note": "p45 'No conversation selected, for now.'"
+      },
+      {
+        "anchor": "panes.queueCol",
+        "from": 138.87,
+        "to": 142.27,
+        "note": "p49 'Those escalations land right here, in the Handoff Queue'"
+      },
+      {
+        "anchor": "panes.queueCol",
+        "from": 151.44,
+        "to": 154.43,
+        "note": "p52 recap: the queue"
+      },
+      {
+        "anchor": "panes.centerCol",
+        "from": 154.81,
+        "to": 157.08,
+        "note": "p53 recap: the console"
+      },
+      {
+        "anchor": "panes.ctxCol",
+        "from": 157.42,
+        "to": 159.53,
+        "note": "p54 recap: the customer's context"
+      },
+      {
+        "anchor": "presenceRect",
+        "from": 160.19,
+        "to": 164.46,
+        "color": "#dc2626",
+        "note": "p55 'you leave it alone unless your shift changes' — final do-not-touch beat"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 13.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "hold wide through the nav and the three-pane reveal (steps 1, p02-p06)"
+      },
+      {
+        "t": 14.4,
+        "z": 1.4,
+        "cx": 1234,
+        "cy": 386,
+        "ease": true,
+        "note": "header right: presence pill and Ask Shyne framed (step 2)"
+      },
+      {
+        "t": 28.5,
+        "z": 1.4,
+        "cx": 1234,
+        "cy": 386
+      },
+      {
+        "t": 29.5,
+        "z": 1.5,
+        "cx": 640,
+        "cy": 360,
+        "ease": true,
+        "note": "queue top-left quadrant at 150%: counters, search, filters, chips, sort all legible — held calm through steps 3-7 (shot-list 150% close-ups)"
+      },
+      {
+        "t": 96.9,
+        "z": 1.5,
+        "cx": 640,
+        "cy": 360
+      },
+      {
+        "t": 97.9,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 540,
+        "ease": true,
+        "note": "queue body: the empty state (step 8)"
+      },
+      {
+        "t": 107.9,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 540
+      },
+      {
+        "t": 108.9,
+        "z": 1.15,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "center console in context (step 9)"
+      },
+      {
+        "t": 120.5,
+        "z": 1.15,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 121.5,
+        "z": 1.45,
+        "cx": 1255,
+        "cy": 430,
+        "ease": true,
+        "note": "Customer panel close framing: title + 'No conversation selected.' (step 10, shot-list 150%)"
+      },
+      {
+        "t": 130.9,
+        "z": 1.45,
+        "cx": 1255,
+        "cy": 430
+      },
+      {
+        "t": 131.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide: full three-pane frame for the origin story and recap (steps 11-12)"
+      },
+      {
+        "t": 167.158,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Agent Console — Complete",
+      "from": 165.4,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 165.1
+  },
+  "output": "WC-02-07-agent-console-v1.1",
+  "orderedMentions": [
+    "Agent Console",
+    "Offline",
+    "Available",
+    "Away",
+    "Busy",
+    "Offline",
+    "Mine",
+    "Unassigned",
+    "Team",
+    "All",
+    "Voice",
+    "SMS",
+    "Web",
+    "Longest wait first",
+    "Priority first",
+    "Most recent first",
+    "Customer",
+    "AI Agent",
+    "Handoff Queue"
+  ],
+  "neverClick": [
+    "presence selector / your availability (do-not-change)",
+    "ask shyne",
+    "enable desktop notifications",
+    "mine",
+    "unassigned",
+    "team",
+    "all",
+    "voice",
+    "sms",
+    "web",
+    "queue search box (never typed)",
+    "queue rows / handoffs (none may be opened)",
+    "send",
+    "logout",
+    "log out now"
+  ]
+}
