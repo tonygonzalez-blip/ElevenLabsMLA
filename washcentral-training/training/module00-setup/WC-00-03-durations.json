@@ -1,0 +1,65 @@
+{
+  "base": "WC-00-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 88.88,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Find the avatar",
+      "audioS": 11.47,
+      "stepS": 11.87,
+      "file": "WC-00-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open the account menu",
+      "audioS": 11.08,
+      "stepS": 11.48,
+      "file": "WC-00-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Read the menu",
+      "audioS": 19.33,
+      "stepS": 19.73,
+      "file": "WC-00-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Dark Mode on",
+      "audioS": 11.31,
+      "stepS": 11.71,
+      "file": "WC-00-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Dark Mode off",
+      "audioS": 8.83,
+      "stepS": 9.23,
+      "file": "WC-00-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "My Training",
+      "audioS": 12.59,
+      "stepS": 12.99,
+      "file": "WC-00-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Back to work",
+      "audioS": 11.47,
+      "stepS": 11.87,
+      "file": "WC-00-03-s07.mp3"
+    }
+  ]
+}
