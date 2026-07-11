@@ -1,0 +1,81 @@
+{
+ "url": "/sched-payments.html",
+ "docTitle": "Scheduler Payments — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Scheduling›Payments"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ Add Override",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location",
+  "Deposit Required",
+  "Amount",
+  "Auto-Refund",
+  "Full Window",
+  "No-Show",
+  "Status"
+ ],
+ "kpiLabels": [
+  "$8,420Down Payments · 30d $71,310Service Revenue · 30d $640Refunded · 30d 94%Show-Up Rate",
+  "$8,420Down Payments · 30d",
+  "$8,420",
+  "Down Payments · 30d",
+  "$71,310Service Revenue · 30d",
+  "$71,310",
+  "Service Revenue · 30d",
+  "$640Refunded · 30d",
+  "$640",
+  "Refunded · 30d",
+  "94%Show-Up Rate",
+  "94%",
+  "Show-Up Rate"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Card",
+  "Apple Pay",
+  "ACH"
+ ],
+ "chips": [
+  "Inherited",
+  "Override"
+ ],
+ "firstRows": [
+  "MLAS — Mainland Auto Spa | Yes | 25% | On | 24h | Forfeit | Inherited",
+  "SSNB — Sunny Side N. Beach | Yes | $40 fixed | On | 12h | Refund 50% | Override",
+  "Piscataway | No | — | — | — | — | Override"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports SCHEDULING Payments Search ⌘K Ask Shyne MG $8,420 Down Payments · 30d $71,310 Service Revenue · 30d $640 Refunded · 30d 94% Show-Up Rate SCHEDULING · PAYMENTS Down-Payment Rules Charged at booking and applied to the service total at check-out. Require down payment at booking Master switch. Per-service overrides are configured on each service. Default amount Used when a service inherits the global rule. Percent of service Fixed amount % Minimum service price to require deposit Below this, no deposit is collected even if global is on. $ Accepted payment methods Customer-portal payment options for the deposit. Card Apple Pay ACH Members get reduced deposit Active membership halves the required deposit. REFUNDS Cancellation Policy Applies to deposits collected via this scheduler. Auto-refund on cancellation When a customer cancels (staff or via SMS link), automatically issue refund per the window below. Full-refund window Cancel earlier than this many hours before start → 100% refund. hours Partial-refund window Between this and the full-refund cutoff, refund this percentage. h → % No-show handling When the appointment passes without check-in. Forfeit deposit Refund 50% Refund 100% Refund destination Where the refund is issue"
+}

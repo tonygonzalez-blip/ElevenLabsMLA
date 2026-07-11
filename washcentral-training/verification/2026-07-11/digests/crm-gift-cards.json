@@ -1,0 +1,86 @@
+{
+ "url": "/crm-gift-cards.html",
+ "docTitle": "Gift Cards — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›Gift Cards"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Contract Renewals",
+  "Prepaid Books",
+  "Prepaid Activity",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Delete",
+  "+ Issue Gift Card",
+  "Filters 0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "4,661",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Card",
+  "Customer",
+  "Location",
+  "Balance",
+  "Status",
+  "Last Used"
+ ],
+ "kpiLabels": [
+  "116,524 Total Gift Cards $2053032.67 Outstanding Balance 71,481 Active Cards 45,043 Redeemed / Zero Balance",
+  "116,524 Total Gift Cards",
+  "116,524",
+  "Total Gift Cards",
+  "$2053032.67 Outstanding Balance",
+  "$2053032.67",
+  "Outstanding Balance",
+  "71,481 Active Cards",
+  "71,481",
+  "Active Cards",
+  "45,043 Redeemed / Zero Balance",
+  "45,043",
+  "Redeemed / Zero Balance"
+ ],
+ "inputPlaceholders": [
+  "Search by card number, customer, location, or status…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active"
+ ],
+ "firstRows": [
+  " | 80016195493 | — | ACE24 | $11.00 | Active | Jan 10, 2026",
+  " | 800161950561 | — | ACE24 | $11.00 | Active | Jan 10, 2026",
+  " | 80010515678 | — | MOO16 | $100.00 | Active | Jan 10, 2026"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Contract Renewals Prepaid Books Prepaid Activity Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Gift Cards Search ⌘K Ask Shyne MG 116,524 Total Gift Cards $2053032.67 Outstanding Balance 71,481 Active Cards 45,043 Redeemed / Zero Balance Issuance Trend Last 12 months 1,284 ↑ +9.2% Jan Dec Balance Distribution Cards by remaining balance $50 – $100 34% $25 – $49 28% $1 – $24 24% $100+ 14% Card Status Portfolio health at a glance 66% ACTIVE 28% REDEEMED 6% EXPIRED 847 active 437 closed CRM · GIFT CARDS Gift Card List 116,524 records Delete + Issue Gift Card Filters Search CARD CUSTOMER LOCATION BALANCE STATUS LAST USED 80016195493 — ACE24 $11.00 Active Jan 10, 2026 800161950561 — ACE24 $11.00 Active Jan 10, 2026 80010515678 — MOO16 $100.00 Active Jan 10, 2026 800131155712 — ACE03 $50.00 Active Jan 10, 2026 800132802028 — CLE21 $7.00 Active Jan 10, 2026 800162495092 — MOO127 $30.00 Active Jan 10, 2026 800132802011 — CLE21 $50.00 Active Jan 10, 2026 800132802004 — CLE21 $50.00 Active Jan 10, 2026 800165029072 — CLE21 $50.00 Active Jan 10, 2026 800165029065 — CLE21 $50.00 Active Jan 10, 2026 800132802622 — CLE21 $50.00 Active Jan 10, 2026 800130474319 — MOO16 $55.00 Active Jan 9, 2026 800132742409 — ACE04 $50.00 Active Jan 9, 2026 800161713982 — CLE404 $33.00 Active Jan 9, 2026 800165029034 — CLE21 $50.00 Active Jan 9, 2026 800165029171 — CLE21 $50.00 Active Jan 9, 2026 8001"
+}

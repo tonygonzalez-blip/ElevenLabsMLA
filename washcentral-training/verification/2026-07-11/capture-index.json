@@ -1,0 +1,524 @@
+[
+ {
+  "name": "settings-system-users",
+  "url": "/settings-system-users.html",
+  "title": "System Users",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-user-levels",
+  "url": "/settings-user-levels.html",
+  "title": "User Levels",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-security-level",
+  "url": "/settings-security-level.html",
+  "title": "Security Levels",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-blacklisted",
+  "url": "/settings-blacklisted.html",
+  "title": "Blacklisted Plates",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-cancellation-reasons",
+  "url": "/settings-cancellation-reasons.html",
+  "title": "Cancellation Reasons",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-refund-reasons",
+  "url": "/settings-refund-reasons.html",
+  "title": "Refund Reasons",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-rewash-reasons",
+  "url": "/settings-rewash-reasons.html",
+  "title": "Rewash Reasons",
+  "note": "refetch"
+ },
+ {
+  "name": "crm-gift-cards",
+  "url": "/crm-gift-cards.html",
+  "title": "Gift Cards — WashCentral",
+  "note": "refetch"
+ },
+ {
+  "name": "crm-prepaid-books",
+  "url": "/crm-prepaid-books.html",
+  "title": "Prepaid Books — WashCentral",
+  "note": "refetch"
+ },
+ {
+  "name": "crm-vehicles",
+  "url": "/crm-vehicles.html",
+  "title": "Vehicles — WashCentral",
+  "note": "refetch"
+ },
+ {
+  "name": "crm-retail-customers",
+  "url": "/crm-retail-customers.html",
+  "title": "Retail Customers — WashCentral",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-locations",
+  "url": "/settings-locations.html",
+  "title": "Locations",
+  "note": "refetch"
+ },
+ {
+  "name": "txn-declined",
+  "url": "/txn-declined.html",
+  "title": "Declined Charges",
+  "note": "refetch"
+ },
+ {
+  "name": "txn-shifts",
+  "url": "/txn-shifts.html",
+  "title": "Shifts",
+  "note": "refetch"
+ },
+ {
+  "name": "txn-payouts",
+  "url": "/txn-payouts.html",
+  "title": "Payouts — WashCentral",
+  "note": "refetch"
+ },
+ {
+  "name": "txn-gift-transactions",
+  "url": "/txn-gift-transactions.html",
+  "title": "Gift Card Transactions — WashCentral",
+  "note": "refetch"
+ },
+ {
+  "name": "txn-house-transactions",
+  "url": "/txn-house-transactions.html",
+  "title": "House Account Transactions",
+  "note": "refetch"
+ },
+ {
+  "name": "sales-payments",
+  "url": "/sales-payments.html",
+  "title": "Sales Payments",
+  "note": "refetch"
+ },
+ {
+  "name": "sales-transaction-details",
+  "url": "/sales-transaction-details.html",
+  "title": "Ticket Details",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-hardware-terminals",
+  "url": "/settings-hardware-terminals.html",
+  "title": "Terminals",
+  "note": "refetch"
+ },
+ {
+  "name": "payments-reconciliation",
+  "url": "/payments-reconciliation.html",
+  "title": "Payments Reconciliation",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-payment-types",
+  "url": "/settings-payment-types.html",
+  "title": "Payment Types",
+  "note": "refetch"
+ },
+ {
+  "name": "settings-task-scheduler",
+  "url": "/settings-task-scheduler.html",
+  "title": "Task Scheduler",
+  "note": "refetch"
+ },
+ {
+  "name": "crm-customers-filters-open",
+  "url": "/crm-customers.html",
+  "title": "Customers — WashCentral",
+  "note": "parked #19"
+ },
+ {
+  "name": "crm-customer-detail-overview",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "Customer 360 default tab"
+ },
+ {
+  "name": "crm-customer-detail-contact",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab"
+ },
+ {
+  "name": "crm-customer-detail-membership",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab"
+ },
+ {
+  "name": "crm-customer-detail-payments",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab"
+ },
+ {
+  "name": "crm-customer-detail-vehicles",
+  "url": "/crm-vehicles.html",
+  "title": "Vehicles — WashCentral",
+  "note": "360 tab"
+ },
+ {
+  "name": "sales-ticket-view-main",
+  "url": "/sales-ticket-view.html?ticket=1501159",
+  "title": "Ticket View — WashCentral",
+  "note": "Ticket View default"
+ },
+ {
+  "name": "sales-ticket-view-details",
+  "url": "/sales-ticket-view.html?ticket=1501159",
+  "title": "Ticket View — WashCentral",
+  "note": "ticket tab"
+ },
+ {
+  "name": "sales-ticket-view-payments",
+  "url": "/sales-payments.html",
+  "title": "Sales Payments",
+  "note": "ticket tab"
+ },
+ {
+  "name": "audit-users-inapp",
+  "url": "/audit-users.html",
+  "title": "User Activity — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "audit-changes-inapp",
+  "url": "/audit-changes.html",
+  "title": "Change History — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "support-alerts-inapp",
+  "url": "/support-alerts.html",
+  "title": "System Alerts — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "maint-schedule-inapp",
+  "url": "/maint-schedule.html",
+  "title": "Maintenance Schedule — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "maint-equipment-inapp",
+  "url": "/maint-equipment.html",
+  "title": "Equipment Registry — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "maint-checklist-inapp",
+  "url": "/maint-checklist.html",
+  "title": "Maintenance Checklists — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "maint-parts-inapp",
+  "url": "/maint-parts.html",
+  "title": "Parts & Supplies — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "sched-services-inapp",
+  "url": "/sched-services.html",
+  "title": "Schedulable Services — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "sched-resources-inapp",
+  "url": "/sched-resources.html",
+  "title": "Resources — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "sched-hours-inapp",
+  "url": "/sched-hours.html",
+  "title": "Business Hours — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "sched-messaging-inapp",
+  "url": "/sched-messaging.html",
+  "title": "Scheduler Messaging — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "sched-payments-inapp",
+  "url": "/sched-payments.html",
+  "title": "Scheduler Payments — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "sched-reports-inapp",
+  "url": "/sched-reports.html",
+  "title": "Scheduler Reports — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "game-recognition-inapp",
+  "url": "/game-recognition.html",
+  "title": "Recognition Feed — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "game-surveys-inapp",
+  "url": "/game-surveys.html",
+  "title": "Pulse Surveys — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "portal-book-inapp",
+  "url": "/portal-book.html",
+  "title": "Book a Service — Atlas Car Wash",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-catalog-inapp",
+  "url": "/lms-catalog.html",
+  "title": "Course Catalog — WashCentral Academy",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-paths-inapp",
+  "url": "/lms-paths.html",
+  "title": "Learning Paths — WashCentral Academy",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-my-learning-inapp",
+  "url": "/lms-my-learning.html",
+  "title": "My Learning — WashCentral Academy",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-admin-inapp",
+  "url": "/lms-admin.html",
+  "title": "Academy Admin — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-admin-users-inapp",
+  "url": "/lms-admin-users.html",
+  "title": "Users & Enrollment — WashCentral Academy Admin",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-admin-courses-inapp",
+  "url": "/lms-admin-courses.html",
+  "title": "Course Management — WashCentral Academy Admin",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "lms-admin-reports-inapp",
+  "url": "/lms-admin-reports.html",
+  "title": "Reports & Compliance — WashCentral Academy Admin",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "zoho-tickets-inapp",
+  "url": "/zoho-tickets.html",
+  "title": "Zoho Desk Tickets — WashCentral",
+  "note": "was 404 direct"
+ },
+ {
+  "name": "emp-employee-detail-overview",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "row-click detail"
+ },
+ {
+  "name": "emp-employee-detail-personal-info",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "employee tab"
+ },
+ {
+  "name": "emp-employee-detail-employment",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "employee tab"
+ },
+ {
+  "name": "emp-employee-detail-schedule",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "employee tab"
+ },
+ {
+  "name": "emp-employee-detail-emergency-contact",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "employee tab"
+ },
+ {
+  "name": "emp-employee-detail-notes-audit",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "employee tab"
+ },
+ {
+  "name": "emp-employee-detail-training",
+  "url": "/emp-employees-detail.html",
+  "title": "Employee Detail — WashCentral",
+  "note": "employee tab"
+ },
+ {
+  "name": "inv-item-detail-main",
+  "url": "/inv-items-detail.html",
+  "title": "Inventory Items Detail — WashCentral",
+  "note": "row-click detail"
+ },
+ {
+  "name": "inv-item-detail-pricing-stock",
+  "url": "/inv-items-detail.html",
+  "title": "Inventory Items Detail — WashCentral",
+  "note": "item tab"
+ },
+ {
+  "name": "inv-item-detail-storage-location",
+  "url": "/inv-items-detail.html",
+  "title": "Inventory Items Detail — WashCentral",
+  "note": "item tab"
+ },
+ {
+  "name": "settings-cancellation-reasons-rows",
+  "url": "/settings-cancellation-reasons.html",
+  "title": "Cancellation Reasons",
+  "note": "rows with token"
+ },
+ {
+  "name": "cancellation-reason-detail",
+  "url": "/settings-cancellation-reasons.html",
+  "title": "Cancellation Reasons",
+  "note": "record view"
+ },
+ {
+  "name": "cancellation-reason-new",
+  "url": "/settings-cancellation-reasons-edit.html",
+  "title": "Edit Cancellation Reasons",
+  "note": "blank form — will Cancel"
+ },
+ {
+  "name": "dashboard-executive-fullpage",
+  "url": "/dashboard-executive.html",
+  "title": "Executive Dashboard",
+  "note": "full-page incl. below-fold GOALS"
+ },
+ {
+  "name": "billing-usage-sms-usage",
+  "url": "/billing-usage.html",
+  "title": "Usage & Billing — WashCentral",
+  "note": "billing tab"
+ },
+ {
+  "name": "billing-usage-email-usage",
+  "url": "/billing-usage.html",
+  "title": "Usage & Billing — WashCentral",
+  "note": "billing tab"
+ },
+ {
+  "name": "billing-usage-invoices",
+  "url": "/billing-usage.html",
+  "title": "Usage & Billing — WashCentral",
+  "note": "billing tab"
+ },
+ {
+  "name": "billing-usage-rate-card",
+  "url": "/billing-usage.html",
+  "title": "Usage & Billing — WashCentral",
+  "note": "billing tab"
+ },
+ {
+  "name": "billing-usage-spending-alerts",
+  "url": "/billing-usage.html",
+  "title": "Usage & Billing — WashCentral",
+  "note": "billing tab"
+ },
+ {
+  "name": "crm-customer-detail-vehicles",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab (pass 2)"
+ },
+ {
+  "name": "crm-customer-detail-linked-accounts",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab (pass 2)"
+ },
+ {
+  "name": "crm-customer-detail-activity",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab (pass 2)"
+ },
+ {
+  "name": "crm-customer-detail-messaging",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab (pass 2)"
+ },
+ {
+  "name": "crm-customer-detail-notes",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "360 tab (pass 2)"
+ },
+ {
+  "name": "crm-customer-detail-actions-open",
+  "url": "/crm-customer-detail.html",
+  "title": "Customer 360 — WashCentral",
+  "note": "Actions menu list (pass 2)"
+ },
+ {
+  "name": "sales-ticket-view-payments",
+  "url": "/sales-ticket-view.html?ticket=1501159",
+  "title": "Ticket View — WashCentral",
+  "note": "ticket tab (pass 2)"
+ },
+ {
+  "name": "sales-ticket-view-refunds",
+  "url": "/sales-ticket-view.html?ticket=1501159",
+  "title": "Ticket View — WashCentral",
+  "note": "ticket tab (pass 2)"
+ },
+ {
+  "name": "sales-ticket-view-notes",
+  "url": "/sales-ticket-view.html?ticket=1501159",
+  "title": "Ticket View — WashCentral",
+  "note": "ticket tab (pass 2)"
+ },
+ {
+  "name": "portal-messages-inapp",
+  "url": "/portal-messages.html",
+  "title": "Portal Messages — WashCentral",
+  "note": "was 404 direct (pass 2)"
+ },
+ {
+  "name": "portal-billing-inapp",
+  "url": "/portal-billing.html",
+  "title": "Portal Billing — WashCentral",
+  "note": "was 404 direct (pass 2)"
+ },
+ {
+  "name": "portal-notifications-inapp",
+  "url": "/portal-notifications.html",
+  "title": "Portal Notifications — WashCentral",
+  "note": "was 404 direct (pass 2)"
+ }
+]

@@ -1,0 +1,89 @@
+{
+ "url": "/sales-payments.html",
+ "docTitle": "Sales Payments",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Sales Payments"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters",
+  "Search",
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "4,486,075",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "4,486,075",
+  "›"
+ ],
+ "tableHeaders": [
+  "Time",
+  "Location",
+  "Ticket #",
+  "Method",
+  "Amount"
+ ],
+ "kpiLabels": [
+  "112,151,868Total Payments —Top Method (30d) —2nd Method (30d) —Volume (30d)",
+  "112,151,868Total Payments",
+  "112,151,868",
+  "Total Payments",
+  "—Top Method (30d)",
+  "—",
+  "Top Method (30d)",
+  "—2nd Method (30d)",
+  "2nd Method (30d)",
+  "—Volume (30d)",
+  "Volume (30d)"
+ ],
+ "inputPlaceholders": [
+  "Search by ticket #…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "2026-01-11 04:04 | 811 - Southfield | UWC-UpGrade | CREDIT CARD | $0.39",
+  "2026-01-11 03:57 | 616 - Bridgeville Millers Run Road | WA90919202691 | CREDIT CARD | $34.24",
+  "2026-01-11 03:57 | Online PortalBeeclean | WA90919202690 | CREDIT CARD | $40.00"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Sales Payments Search ⌘K Ask Shyne MG 112,151,868 Total Payments — Top Method (30d) — 2nd Method (30d) — Volume (30d) Payment Volume Last 12 months $218K ↑ +9% Jan Dec By Method Payment mix (30d) Not available at this data volume. Payment Health Approval overview Approval/decline status isn't tracked in this POS system — Payments records completed transactions only. SEARCH PAYMENTS Filters Search Payment List 112,151,868 RECORDS Export TIME LOCATION TICKET # METHOD AMOUNT 2026-01-11 04:04 811 - Southfield UWC-UpGrade CREDIT CARD $0.39 2026-01-11 03:57 616 - Bridgeville Millers Run Road WA90919202691 CREDIT CARD $34.24 2026-01-11 03:57 Online PortalBeeclean WA90919202690 CREDIT CARD $40.00 2026-01-11 02:18 305 - Willowick Vine UWC-UpGrade CREDIT CARD $2.32 2026-01-11 02:03 507 - Suffolk N Main UWC-UpGrade CREDIT CARD $3.74 2026-01-11 02:01 507 - Suffolk N Main UWC-UpGrade CREDIT CARD $1.55 2026-01-11 02:01 506 - Portsmouth High D8980 CASH $4.00 2026-01-11 01:59 402 - Toledo Central Park F630679 CASH $0.00 2026-01-11 01:44 Online PortalBeeclean WA90919202686 CREDIT CARD $32.00 2026-01-11 01:25 126 - Whitehall E Main I1564 CASH $0.01 2026-01-11 01:07 126 - Whitehall E Main G33342 CASH $0.01 2026-01-11 01:06 312 - Garfield Heights Rockside F13754 CASH $0.50 2026-01-11 01:06 312 - Garfield "
+}

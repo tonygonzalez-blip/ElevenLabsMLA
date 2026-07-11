@@ -1,0 +1,85 @@
+{
+ "url": "/sched-resources.html",
+ "docTitle": "Resources — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Scheduling›Resources"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Resource Name",
+  "Type",
+  "Location",
+  "Capacity",
+  "Status"
+ ],
+ "kpiLabels": [
+  "18Total Resources 16Available 2In Use 5Locations",
+  "18Total Resources",
+  "18",
+  "Total Resources",
+  "16Available",
+  "16",
+  "Available",
+  "2In Use",
+  "2",
+  "In Use",
+  "5Locations",
+  "5",
+  "Locations"
+ ],
+ "inputPlaceholders": [
+  "Search resources…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Detail Bay 1 | Detail Bay | MLAS | 1 car | Available",
+  " | Detail Bay 2 | Detail Bay | MLAS | 1 car | In Use",
+  " | Lube Bay A | Lube Bay | MLAS | 1 car | Available"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports SCHEDULING Resources Search ⌘K Ask Shyne MG 18 Total Resources 16 Available 2 In Use 5 Locations Resource Utilization Last 12 months 18 ↑ +6% Jan Dec By Type Resource breakdown Wash Bay 44% Detail Bay 28% Vacuum 18% Equipment 10% Resource Status Availability overview 89% AVAILABLE 11% IN USE 0% MAINTENANCE SCHEDULING · RESOURCES Resource List 18 records + New Record Export Filters ▾ Search RESOURCE NAME TYPE LOCATION CAPACITY STATUS Detail Bay 1 Detail Bay MLAS 1 car Available Detail Bay 2 Detail Bay MLAS 1 car In Use Lube Bay A Lube Bay MLAS 1 car Available Detail Bay 1 Detail Bay SSNB 1 car Available ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,66 @@
+{
+ "url": "/txn-declined.html",
+ "docTitle": "Declined Charges",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Declined Credit Card Log"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Date",
+  "Customer",
+  "Plan",
+  "Amount",
+  "Reason",
+  "Attempts",
+  "Location"
+ ],
+ "kpiLabels": [
+  "26Declined Charges (so far)",
+  "26",
+  "Declined Charges (so far)"
+ ],
+ "inputPlaceholders": [
+  "Search by customer or location…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "2026-01-10 10:01 | VISA CARDHOLDER | Low Fat Unlimited | $0.00 | Declined | 10 | MOO08",
+  "2026-01-10 10:01 | Harmony Lynch | Low Fat Unlimited | $0.00 | Declined | 10 | MOO08",
+  "2026-01-10 10:01 | CUST-3422000001852744 | Low Fat Unlimited | $0.00 | Declined | 10 | MOO30"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Declined Credit Card Log Search ⌘K Ask Shyne MG 26 Declined Charges (so far) TRANSACTIONS · DECLINED CHARGES Declined Charges List 26 records + New Record DATE CUSTOMER PLAN AMOUNT REASON ATTEMPTS LOCATION 2026-01-10 10:01 VISA CARDHOLDER Low Fat Unlimited $0.00 Declined 10 MOO08 2026-01-10 10:01 Harmony Lynch Low Fat Unlimited $0.00 Declined 10 MOO08 2026-01-10 10:01 CUST-3422000001852744 Low Fat Unlimited $0.00 Declined 10 MOO30 2026-01-10 10:00 VISA CARDHOLDER Low Fat Unlimited $0.00 Declined 10 MOO36 2026-01-10 10:00 EVA LARA DE CAMACHO Low Fat Unlimited $0.00 Declined 10 MOO35 2026-01-10 10:00 TERENCE GERM Cleanest Ultra Unlimited $0.00 Declined 10 CLE602 2026-01-10 10:00 MARISSA HUTTER Cleanest Unlimited $0.00 Declined 10 CLE609 2026-01-10 10:00 KAYLEE PURDETTE Creme de la Creme Ceramic Unlimited $0.00 Declined 10 MOO07 2026-01-10 10:00 TODD HOLLIDAY Cleanest Ultra Unlimited $0.00 Declined 10 CLE811 2026-01-10 10:00 DAVID R HOOK Creme de la Creme Ceramic Unlimited $0.00 Declined 10 MOO07 2026-01-10 10:00 MICHELLE ANTHONY Creme de la Creme Unlimited $0.00 Declined 10 MOO07 2026-01-10 10:00 ZACHARY CHAPPELEAR Low Fat Unlimited $0.00 Declined 10 MOO07 2026-01-10 10:00 Chelsie Hill Creme de la Creme Ceramic Unlimited $0.00 Declined 10 MOO07 2026-01-10 10:00 XIANG FU Creme de la Creme"
+}

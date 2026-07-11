@@ -1,0 +1,91 @@
+{
+ "url": "/billing-usage.html",
+ "docTitle": "Usage & Billing — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Billing›Usage & Billing"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Usage & Billing"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Pay Now",
+  "Download PDF",
+  "Export All",
+  "PDF",
+  "‹",
+  "1",
+  "2",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Pay Now",
+  "Download PDF",
+  "Export All",
+  "PDF",
+  "‹",
+  "1",
+  "2",
+  "›"
+ ],
+ "tableHeaders": [
+  "Invoice #",
+  "Period",
+  "Platform",
+  "SMS",
+  "Email",
+  "Total",
+  "Status",
+  "Due Date"
+ ],
+ "kpiLabels": [
+  "$46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered",
+  "$46.18 SMS Usage",
+  "$46.18",
+  "SMS Usage",
+  "$33.88 Email Usage",
+  "$33.88",
+  "Email Usage",
+  "1,847 SMS Sent · 98.1% delivered",
+  "1,847",
+  "SMS Sent · 98.1% delivered",
+  "42,350 Emails Sent · 99.1% delivered",
+  "42,350",
+  "Emails Sent · 99.1% delivered"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "INV-2026-05 | May 2026 | $499.00 | — | — | Pending | ● Generating | Jun 1, 2026 | ",
+  "INV-2026-04 | Apr 2026 | $499.00 | $32.55 | $10.75 | $542.30 | ● Open | Jun 1, 2026 | PDF",
+  "INV-2026-03 | Mar 2026 | $499.00 | $47.23 | $41.20 | $587.43 | ✓ Paid | May 1, 2026 | PDF"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Billing Usage & Billing BILLING Usage & Billing Search ⌘K Ask Shyne MG Current Billing Period — May 2026 May 1 – May 31, 2026 · Next invoice: Jun 1, 2026 · ● 17 days remaining $46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered Overview SMS Usage Email Usage Invoices 1 open Rate Card Spending Alerts Invoice #INV-2026-04 — April 2026 — $542.30 is due Due June 1, 2026 · Net 30 terms Pay Now Download PDF Invoice History 12 invoices Export All INVOICE # PERIOD PLATFORM SMS EMAIL TOTAL STATUS DUE DATE INV-2026-05 May 2026 $499.00 — — Pending ● Generating Jun 1, 2026 INV-2026-04 Apr 2026 $499.00 $32.55 $10.75 $542.30 ● Open Jun 1, 2026 PDF INV-2026-03 Mar 2026 $499.00 $47.23 $41.20 $587.43 ✓ Paid May 1, 2026 PDF INV-2026-02 Feb 2026 $499.00 $38.10 $29.80 $566.90 ✓ Paid Apr 1, 2026 PDF INV-2026-01 Jan 2026 $499.00 $41.88 $31.20 $572.08 ✓ Paid Mar 1, 2026 PDF INV-2025-12 Dec 2025 $499.00 $28.45 $19.80 $547.25 ✓ Paid Feb 1, 2026 PDF Showing 1–6 of 12 invoices ‹ 1 2 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

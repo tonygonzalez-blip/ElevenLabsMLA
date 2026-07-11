@@ -1,0 +1,83 @@
+{
+ "url": "/settings-hardware-terminals.html",
+ "docTitle": "Terminals",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Terminals"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Hardware / Terminals",
+  "Screen Layout",
+  "System Types",
+  "Lube Buttons",
+  "Lube Checklists",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "43",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Terminal",
+  "Location",
+  "IP",
+  "Software Version",
+  "OS",
+  "Last Seen"
+ ],
+ "kpiLabels": [
+  "1,067Total Terminals",
+  "1,067",
+  "Total Terminals"
+ ],
+ "inputPlaceholders": [
+  "Search by terminal or location…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Moo124-VQ | 124 - Gahanna Morrison | — | 25.8.2.3 | Windows 10 Enterprise 2016 LTSB | 2026-01-10 22:47",
+  "CLE814-KIOSK1 | 814 - Livonia | 10.0.1.100 | 25.8.11.1 | Windows 10 IoT Enterprise LTSC | 2026-01-10 20:44",
+  "MOO34-KIOSK1 | 134 - Columbus E 5th Ave | 10.0.1.100 | 25.8.11.1 | Windows 10 Enterprise 2016 LTSB | 2026-01-10 20:25"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ Hardware / Terminals Screen Layout System Types Lube Buttons Lube Checklists UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Terminals Search ⌘K Ask Shyne MG 1,067 Total Terminals SETTINGS · TERMINALS Terminals List 1,067 records + New Record TERMINAL LOCATION IP SOFTWARE VERSION OS LAST SEEN Moo124-VQ 124 - Gahanna Morrison — 25.8.2.3 Windows 10 Enterprise 2016 LTSB 2026-01-10 22:47 CLE814-KIOSK1 814 - Livonia 10.0.1.100 25.8.11.1 Windows 10 IoT Enterprise LTSC 2026-01-10 20:44 MOO34-KIOSK1 134 - Columbus E 5th Ave 10.0.1.100 25.8.11.1 Windows 10 Enterprise 2016 LTSB 2026-01-10 20:25 ACE23-POS2 223 - Fairfield 10.0.1.31 25.8.8.1 Windows 10 IoT Enterprise LTSC 2026-01-10 20:08 MOO26-GRT 126 - Whitehall E Main 10.0.1.31 25.8.8.1 Windows 10 IoT Enterprise LTSC 2026-01-10 19:42 MOO36-KIOSK3 136 - Columbus Grener Ave 10.0.1.102 25.8.11.1 Windows 10 IoT Enterprise LTSC 2026-01-10 19:39 MOO36-KIOSK2 136 - Columbus Grener Ave 10.0.1.102 25.8.11.1 Windows 10 IoT Enterprise LTSC 2026-01-10 19:39 POS 208 - Hamilton Windford 10.10.10.30 25.8.8.1 Windows 10 Enterprise 2016 LTSB 2026-01-10 19:35 MOO132-GRT 132 - Columbus West Mound 10.0.1.31 25.6.1.34 Windows 10 IoT Enterprise LTSC 2026-01-10 19:08 MOO122-GRT 122 - Columbus Chantry 10.0.1.1 25.6.1.3"
+}

@@ -1,0 +1,77 @@
+{
+ "url": "/lms-admin-reports.html",
+ "docTitle": "Reports & Compliance — WashCentral Academy Admin",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Academy›Reports & Compliance"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "My Dashboard",
+  "Course Catalog",
+  "Learning Paths",
+  "My Learning",
+  "Admin Dashboard",
+  "Users & Enrollment",
+  "Course Management",
+  "Reports & Compliance"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Schedule Report",
+  "Export CSV",
+  "Filters",
+  "Apply Filters",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Location ↕",
+  "Users ↕",
+  "Enrolled ↕",
+  "Completed ↕",
+  "Completion % ↕",
+  "Overdue ↕",
+  "Avg Score ↕",
+  "Course ↕",
+  "Avg Quiz Score ↕",
+  "Avg Time Spent ↕"
+ ],
+ "kpiLabels": [
+  "Total Enrollments186Across all coursesCompletion Rate26%49 of 186 completedOverdue49Require attentionAvg Quiz Score81%Across all graded items",
+  "Total Enrollments186Across all courses",
+  "Total Enrollments",
+  "186",
+  "Across all courses",
+  "Completion Rate26%49 of 186 completed",
+  "Completion Rate",
+  "26%",
+  "49 of 186 completed",
+  "Overdue49Require attention",
+  "Overdue",
+  "49",
+  "Require attention",
+  "Avg Quiz Score81%Across all graded items",
+  "Avg Quiz Score",
+  "81%",
+  "Across all graded items"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Fort Lauderdale | 5 | 44 | 12 | 27% | 13 | 81%",
+  "Dallas Uptown | 4 | 39 | 11 | 28% | 9 | 82%",
+  "Atlanta Buckhead | 3 | 19 | 4 | 21% | 6 | 78%"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Academy ACADEMY My Dashboard Course Catalog Learning Paths My Learning ADMIN Admin Dashboard Users & Enrollment Course Management Reports & Compliance ACADEMY Reports & Compliance Track completion, compliance, and training ROI across your organization. Search ⌘K Schedule Report Export CSV Completion Overview Learner Progress Course Analytics Compliance Status Leaderboard Time & Engagement Scheduled Reports Filters Apply Filters TOTAL ENROLLMENTS 186 Across all courses COMPLETION RATE 26% 49 of 186 completed OVERDUE 49 Require attention AVG QUIZ SCORE 81% Across all graded items Completions Over Time Jun 2025 – May 2026 Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Completion by Location LOCATION ↕ USERS ↕ ENROLLED ↕ COMPLETED ↕ COMPLETION % ↕ OVERDUE ↕ AVG SCORE ↕ Fort Lauderdale 5 44 12 27% 13 81% Dallas Uptown 4 39 11 28% 9 82% Atlanta Buckhead 3 19 4 21% 6 78% Houston Memorial 3 19 5 26% 5 80% Charlotte Uptown 3 19 7 37% 6 81% Nashville Green Hills 3 19 5 26% 4 86% Orlando Central 2 15 2 13% 3 83% Atlanta Midtown 2 12 3 25% 3 76% Completion by Course COURSE ↕ ENROLLED ↕ COMPLETED ↕ COMPLETION % ↕ AVG QUIZ SCORE ↕ AVG TIME SPENT ↕ Getting Started with WashCentral 25 6 24% 78% 1h 59m Command Center Mastery 17 6 35% 82% 1h 28m Executive Dashboard & KPIs 11 4 36% 74% 1h 53m CRM Deep Dive: Customers & Members 11 3 27% 80% 1h 23m Marketing Campaigns & Automation 10 3 30% 83% 1h 37m Sales & Transaction Management 21 6 29% 78% 1h 37m Operation"
+}

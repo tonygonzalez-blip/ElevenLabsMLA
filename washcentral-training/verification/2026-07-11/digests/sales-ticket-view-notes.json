@@ -1,0 +1,70 @@
+{
+ "url": "/sales-ticket-view.html?ticket=1501159",
+ "docTitle": "Ticket View — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Ticket View"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "← Back to Tickets",
+  "Refund",
+  "Main",
+  "Details",
+  "Payments",
+  "Refunds",
+  "Notes",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Main",
+  "Details",
+  "Payments",
+  "Refunds",
+  "Notes"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "$13.00Ticket Total $213.49Payments Paid / Not WashedStatus Credit CardPayment Type",
+  "$13.00Ticket Total",
+  "$13.00",
+  "Ticket Total",
+  "$213.49Payments",
+  "$213.49",
+  "Payments",
+  "Paid / Not WashedStatus",
+  "Paid / Not Washed",
+  "Status",
+  "Credit CardPayment Type",
+  "Credit Card",
+  "Payment Type"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Ticket View Search ⌘K Ask Shyne MG A349461 Sales · Ticket · ID: 1501159 · 111 - Lancaster River Valley · 2022-10-23 18:24 ← Back to Tickets Refund $13.00 Ticket Total $213.49 Payments Paid / Not Washed Status Credit Card Payment Type Main Details Payments Refunds Notes TICKET NOTES Couldn’t load notes. Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

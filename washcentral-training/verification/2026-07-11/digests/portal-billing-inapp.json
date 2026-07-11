@@ -1,0 +1,83 @@
+{
+ "url": "/portal-billing.html",
+ "docTitle": "Portal Billing — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Customer Portal›Portal Billing"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Booking Page (Customer)",
+  "Portal Members",
+  "Portal Messages",
+  "Portal Billing",
+  "Portal Notifications",
+  "Mobile App Branding",
+  "Mobile App Features",
+  "Mobile App Users",
+  "Push Notifications",
+  "Mobile Feedback"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Customer",
+  "Action",
+  "Plan",
+  "Amount",
+  "Status"
+ ],
+ "kpiLabels": [
+  "8Updates Today 4Failed Billing 2Pending Review 148Auto-Renewed",
+  "8Updates Today",
+  "8",
+  "Updates Today",
+  "4Failed Billing",
+  "4",
+  "Failed Billing",
+  "2Pending Review",
+  "2",
+  "Pending Review",
+  "148Auto-Renewed",
+  "148",
+  "Auto-Renewed"
+ ],
+ "inputPlaceholders": [
+  "Search portal billing…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2025-06-01 | Sarah Johnson | Card Update | Monthly Unlimited | — | Success",
+  " | 2025-06-01 | Mike Chen | Plan Upgrade | Annual Plan | $240.00 | Success",
+  " | 2025-05-31 | Lisa Park | Card Failed | Monthly Basic | $19.99 | Failed"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Digital CUSTOMER PORTAL Booking Page (Customer) Portal Members Portal Messages Portal Billing Portal Notifications MOBILE Mobile App Branding Mobile App Features Mobile App Users Push Notifications Mobile Feedback CUSTOMER PORTAL Portal Billing Search ⌘K Ask Shyne MG 8 Updates Today 4 Failed Billing 2 Pending Review 148 Auto-Renewed Billing Activity Last 12 months 148 ↑ +12% Jan Dec By Action Billing breakdown Auto-Renewal 62% Card Update 18% Plan Change 12% Card Failed 8% Billing Health Payment overview 84% SUCCESS 10% PENDING 6% FAILED PORTAL · BILLING Billing Records 4 records + New Record Export Filters ▾ Search DATE CUSTOMER ACTION PLAN AMOUNT STATUS 2025-06-01 Sarah Johnson Card Update Monthly Unlimited — Success 2025-06-01 Mike Chen Plan Upgrade Annual Plan $240.00 Success 2025-05-31 Lisa Park Card Failed Monthly Basic $19.99 Failed 2025-05-31 Tom Brown Auto-Renewal Annual Plan $240.00 Success ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

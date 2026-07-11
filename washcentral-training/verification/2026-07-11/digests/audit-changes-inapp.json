@@ -1,0 +1,77 @@
+{
+ "url": "/audit-changes.html",
+ "docTitle": "Change History — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Audit›Change History"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Date/Time",
+  "User",
+  "Module",
+  "Field",
+  "Old Value",
+  "New Value"
+ ],
+ "kpiLabels": [
+  "84Changes Today 420This Week 12Config Changes 408Data Changes",
+  "84Changes Today",
+  "84",
+  "Changes Today",
+  "420This Week",
+  "420",
+  "This Week",
+  "12Config Changes",
+  "12",
+  "Config Changes",
+  "408Data Changes",
+  "408",
+  "Data Changes"
+ ],
+ "inputPlaceholders": [
+  "Search change history…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2025-06-01 10:44 | M. Gonzalez | Settings | Monthly Price | $29.99 | $34.99",
+  " | 2025-06-01 10:32 | L. Nguyen | CRM | Customer Status | Active | At Risk",
+  " | 2025-06-01 09:18 | J. Martinez | Employees | Pay Rate | $15.00 | $16.50"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History AUDIT Change History Search ⌘K Ask Shyne MG 84 Changes Today 420 This Week 12 Config Changes 408 Data Changes Change Volume Last 12 months 5,040 ↑ +8.2% Jan Dec By Module Change distribution CRM 42% Employees 28% Settings 18% Transactions 12% Change Types This month overview 74% DATA 19% CONFIG 7% DELETE AUDIT · CHANGE HISTORY Change History List 3 records Export + New Record Filters ▾ Search DATE/TIME USER MODULE FIELD OLD VALUE NEW VALUE 2025-06-01 10:44 M. Gonzalez Settings Monthly Price $29.99 $34.99 2025-06-01 10:32 L. Nguyen CRM Customer Status Active At Risk 2025-06-01 09:18 J. Martinez Employees Pay Rate $15.00 $16.50 Showing 1–3 of 3 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

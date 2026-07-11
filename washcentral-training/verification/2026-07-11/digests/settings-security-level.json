@@ -1,0 +1,84 @@
+{
+ "url": "/settings-security-level.html",
+ "docTitle": "Security Levels",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Security Levels"
+ ],
+ "railButtons": [
+  "Primary navigation",
+  "Previous page",
+  "Next page"
+ ],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations",
+  "+ New Record"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Name",
+  "Level",
+  "Refund Approval Required"
+ ],
+ "kpiLabels": [
+  "6Total Levels 3Require Refund Approval 3No Approval Needed",
+  "6Total Levels",
+  "6",
+  "Total Levels",
+  "3Require Refund Approval",
+  "3",
+  "Require Refund Approval",
+  "3No Approval Needed",
+  "No Approval Needed"
+ ],
+ "inputPlaceholders": [
+  "Search security levels…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Yes",
+  "No"
+ ],
+ "firstRows": [
+  "Low | 0 | Yes",
+  "LowMedium | 3 | Yes",
+  "Medium | 5 | Yes"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General Analytics Locations Services Payments & Finance Hardware UI & Display Users & Security Operations VIP & Membership Automation Customer Portal AI Agent Marketing Integrations SETTINGS Security Levels Search ⌘K Ask Shyne MG 6 Total Levels 3 Require Refund Approval 3 No Approval Needed SETTINGS · SECURITY LEVELS Security Levels List 6 records + New Record NAME LEVEL REFUND APPROVAL REQUIRED Low 0 Yes LowMedium 3 Yes Medium 5 Yes HighMedium 8 No High 10 No SuperAdmin 20 No ROWS PER PAGE: 25 50 100 25 1–6 of 6 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,88 @@
+{
+ "url": "/sales-ticket-view.html?ticket=1501159",
+ "docTitle": "Ticket View — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Ticket View"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "← Back to Tickets",
+  "Refund",
+  "Main",
+  "Details",
+  "Payments",
+  "Refunds",
+  "Notes",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Main",
+  "Details",
+  "Payments",
+  "Refunds",
+  "Notes"
+ ],
+ "tableHeaders": [
+  "Type",
+  "Part Number",
+  "Category",
+  "Profit Center",
+  "Service Group",
+  "Description",
+  "QTY",
+  "Amount",
+  "Tax",
+  "Total",
+  "Taxable",
+  "Cashier",
+  "Shift"
+ ],
+ "kpiLabels": [
+  "$0.00Ticket Total $213.49Payments Paid / Not WashedStatus CashPayment Type",
+  "$0.00Ticket Total",
+  "$0.00",
+  "Ticket Total",
+  "$213.49Payments",
+  "$213.49",
+  "Payments",
+  "Paid / Not WashedStatus",
+  "Paid / Not Washed",
+  "Status",
+  "CashPayment Type",
+  "Cash",
+  "Payment Type"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "Service | — | WASH SALES | WASH | WASH | Barnstormer Wash | 1 | $10.00 | $0.00 | $10.00 | No | Kiosk 2 | 21396",
+  "Service | MONTHLY | WASH SALES | WASH | WASH | The Flying Ace | 1 | $15.00 | $0.00 | $15.00 | No | Kiosk 2 | 19192",
+  "Unlimited | MONTHLY | UNLIMITED RECURRING | WASH | — | Flying Ace Unlimited | 1 | $-15.00 | $0.00 | $-15.00 | No | Kiosk 2 | 19192"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Ticket View Search ⌘K Ask Shyne MG Shift28753 Sales · Ticket · ID: 1501159 · 121 - Groveport S Hamilton · 2026-01-11 04:51 ← Back to Tickets Refund $0.00 Ticket Total $213.49 Payments Paid / Not Washed Status Cash Payment Type Main Details Payments Refunds Notes TICKET DETAILS TYPE PART NUMBER CATEGORY PROFIT CENTER SERVICE GROUP DESCRIPTION QTY AMOUNT TAX TOTAL TAXABLE CASHIER SHIFT Service — WASH SALES WASH WASH Barnstormer Wash 1 $10.00 $0.00 $10.00 No Kiosk 2 21396 Service MONTHLY WASH SALES WASH WASH The Flying Ace 1 $15.00 $0.00 $15.00 No Kiosk 2 19192 Unlimited MONTHLY UNLIMITED RECURRING WASH — Flying Ace Unlimited 1 $-15.00 $0.00 $-15.00 No Kiosk 2 19192 Service MONTHLY WASH SALES WASH WASH Creme de la Creme VIP Wash 1 $18.00 $0.00 $18.00 No — 0 Unlimited MONTHLY UNLIMITED RECURRING WASH — Creme de la Creme VIP Unlimited 1 $-18.00 $0.00 $-18.00 No — 0 Service MONTHLY WASH SALES WASH WASH Creme de la Creme VIP Wash 1 $18.00 $0.00 $18.00 No — 0 Unlimited MONTHLY UNLIMITED RECURRING WASH — Creme de la Creme VIP Unlimited 1 $-18.00 $0.00 $-18.00 No — 0 Service — WASH SALES WASH WASH Creme de la Creme VIP Wash 1 $18.00 $0.00 $18.00 No — 0 Inventory Items — Air Fresheners STORE — LITTLE TREES SUMMER LINEN 1 $0.70 $0.05 $0.70 Yes Jade Dennis 16445 Inventory Items — Air Fresheners STO"
+}

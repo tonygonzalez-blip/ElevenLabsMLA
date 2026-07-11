@@ -1,0 +1,80 @@
+{
+ "url": "/audit-users.html",
+ "docTitle": "User Activity — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Audit›User Activity"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Export",
+  "+ New Record",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "User",
+  "Role",
+  "Last Login",
+  "Logins This Month",
+  "Location",
+  "Status"
+ ],
+ "kpiLabels": [
+  "14Active Users 28Logins Today 42 minAvg Session 3Failed Logins",
+  "14Active Users",
+  "14",
+  "Active Users",
+  "28Logins Today",
+  "28",
+  "Logins Today",
+  "42 minAvg Session",
+  "42 min",
+  "Avg Session",
+  "3Failed Logins",
+  "3",
+  "Failed Logins"
+ ],
+ "inputPlaceholders": [
+  "Search user activity…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Active",
+  "Inactive"
+ ],
+ "firstRows": [
+  " | Miguel Gonzalez | Administrator | 2025-06-01 09:55 | 18 | MLAS | Active",
+  " | Jose Martinez | Site Manager | 2025-06-01 07:02 | 22 | MLAS | Active",
+  " | Lisa Nguyen | Cashier | 2025-06-01 08:05 | 20 | SSNB | Active"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History AUDIT User Activity Search ⌘K Ask Shyne MG 14 Active Users 28 Logins Today 42 min Avg Session 3 Failed Logins Login Activity Last 12 months 4,840 ↑ +6.4% Jan Dec Users by Role Active session distribution Cashier 43% Site Manager 29% Technician 21% Administrator 7% Account Status User account health 78% ACTIVE 15% IDLE 7% INACTIVE AUDIT · USER ACTIVITY User Activity List 4 records Export + New Record Filters ▾ Search USER ROLE LAST LOGIN LOGINS THIS MONTH LOCATION STATUS Miguel Gonzalez Administrator 2025-06-01 09:55 18 MLAS Active Jose Martinez Site Manager 2025-06-01 07:02 22 MLAS Active Lisa Nguyen Cashier 2025-06-01 08:05 20 SSNB Active Kevin Davis Cashier 2025-05-31 15:02 18 MLAS Inactive Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

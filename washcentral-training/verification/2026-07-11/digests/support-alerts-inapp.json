@@ -1,0 +1,83 @@
+{
+ "url": "/support-alerts.html",
+ "docTitle": "System Alerts — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Support›System Alerts"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "ML Command Center",
+  "Site Detail (Demo)",
+  "Support Tickets",
+  "Help Desk (Zoho)",
+  "Knowledge Base",
+  "System Alerts",
+  "Training Requests",
+  "Audit Log",
+  "User Activity",
+  "Change History"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date/Time",
+  "Type",
+  "Severity",
+  "Location",
+  "Message",
+  "Status"
+ ],
+ "kpiLabels": [
+  "3Active Alerts 14Today 1Critical 2Warnings",
+  "3Active Alerts",
+  "3",
+  "Active Alerts",
+  "14Today",
+  "14",
+  "Today",
+  "1Critical",
+  "1",
+  "Critical",
+  "2Warnings",
+  "2",
+  "Warnings"
+ ],
+ "inputPlaceholders": [
+  "Search system alerts…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2025-06-01 10:22 | Tunnel | Critical | MLAS | Conveyor belt tension exceeds threshold | Active",
+  " | 2025-06-01 09:48 | POS | Warning | SSNB | Low receipt paper on POS-2 | Active",
+  " | 2025-06-01 09:12 | Chemical | Warning | Piscataway | Chemical tank #2 below 20% | Active"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL IT & Support SUPPORT ML Command Center Site Detail (Demo) Support Tickets Help Desk (Zoho) Knowledge Base System Alerts Training Requests AUDIT Audit Log User Activity Change History SUPPORT System Alerts Search ⌘K Ask Shyne MG 3 Active Alerts 14 Today 1 Critical 2 Warnings Alert Volume Last 12 months 148 ↓ -8% Jan Dec By Severity Alert breakdown Info 58% Warning 28% Error 10% Critical 4% System Health Alert overview 86% HEALTHY 10% WARNING 4% CRITICAL SUPPORT · ALERTS Alert List 14 records + New Record Export Filters ▾ Search DATE/TIME TYPE SEVERITY LOCATION MESSAGE STATUS 2025-06-01 10:22 Tunnel Critical MLAS Conveyor belt tension exceeds threshold Active 2025-06-01 09:48 POS Warning SSNB Low receipt paper on POS-2 Active 2025-06-01 09:12 Chemical Warning Piscataway Chemical tank #2 below 20% Active 2025-05-31 15:30 Network Info MLAS Backup connection activated Resolved ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

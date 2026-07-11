@@ -1,0 +1,75 @@
+{
+ "url": "/lms-admin-users.html",
+ "docTitle": "Users & Enrollment — WashCentral Academy Admin",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Academy›Users & Enrollment"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "My Dashboard",
+  "Course Catalog",
+  "Learning Paths",
+  "My Learning",
+  "Admin Dashboard",
+  "Users & Enrollment",
+  "Course Management",
+  "Reports & Compliance"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters",
+  "Auto-Enroll Rules",
+  "Export CSV",
+  "Bulk Enroll",
+  "View Profile",
+  "Assign Course",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "User ↕",
+  "Location",
+  "Required Progress",
+  "Status ↕",
+  "Last Activity ↕",
+  "Avg Score ↕",
+  "Actions"
+ ],
+ "kpiLabels": [
+  "25",
+  "Active learners",
+  "27%",
+  "Required courses",
+  "17",
+  "Need attention",
+  "0",
+  "All required completed"
+ ],
+ "inputPlaceholders": [
+  "Search users by name, email, location...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "General Manager",
+  "Shift Supervisor",
+  "Cashier",
+  "Regional Manager"
+ ],
+ "firstRows": [
+  " | MJMarcus Johnsonm.johnson@demo.wcGeneral Manager | Fort Lauderdale | 3/7 | Overdue | 1 month ago | 78% | View ProfileAssign Course",
+  " | PSPriya Sharmap.sharma@demo.wcShift Supervisor | Fort Lauderdale | 2/5 | Overdue | 5 days ago | 78% | View ProfileAssign Course",
+  " | DMDerek Millsd.mills@demo.wcCashier | Fort Lauderdale | 0/3 | In Progress | 2 months ago | 83% | View ProfileAssign Course"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Academy ACADEMY My Dashboard Course Catalog Learning Paths My Learning ADMIN Admin Dashboard Users & Enrollment Course Management Reports & Compliance ACADEMY Users & Enrollment Manage user enrollments, track progress, and assign courses. Search ⌘K Ask Shyne MG Filters Auto-Enroll Rules Export CSV Bulk Enroll TOTAL USERS 25 Active learners AVG COMPLETION RATE 27% Required courses USERS WITH OVERDUE 17 Need attention FULLY COMPLIANT 0 All required completed USER ↕ LOCATION REQUIRED PROGRESS STATUS ↕ LAST ACTIVITY ↕ AVG SCORE ↕ ACTIONS MJ Marcus Johnson m.johnson@demo.wc General Manager Fort Lauderdale 3/7 Overdue 1 month ago 78% View Profile Assign Course PS Priya Sharma p.sharma@demo.wc Shift Supervisor Fort Lauderdale 2/5 Overdue 5 days ago 78% View Profile Assign Course DM Derek Mills d.mills@demo.wc Cashier Fort Lauderdale 0/3 In Progress 2 months ago 83% View Profile Assign Course AR Aaliyah Roberts a.roberts@demo.wc Cashier Fort Lauderdale 0/3 In Progress 3 weeks ago 77% View Profile Assign Course TG Tom Guerrero t.guerrero@demo.wc General Manager Dallas Uptown 3/7 Overdue 1 week ago 86% View Profile Assign Course ST Simone Tran s.tran@demo.wc Shift Supervisor Dallas Uptown 2/5 Overdue 3 weeks ago 83% View Profile Assign Course JO James Okafor j.okafor@demo.wc Cashier Dallas Uptown 0/3 In Progress 5 days ago 80% View Profile Assign Course LC Lily Chen l.chen@demo.wc General Manager Atlanta Buckhead 2/7 Overdue 2 weeks ago 79% View Prof"
+}

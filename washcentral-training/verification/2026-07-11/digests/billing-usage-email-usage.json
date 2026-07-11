@@ -1,0 +1,86 @@
+{
+ "url": "/billing-usage.html",
+ "docTitle": "Usage & Billing — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Billing›Usage & Billing"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Usage & Billing"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Export",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Export",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Source",
+  "Campaign / Automation",
+  "Sent",
+  "Delivered",
+  "Bounced",
+  "Cost"
+ ],
+ "kpiLabels": [
+  "$46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered",
+  "$46.18 SMS Usage",
+  "$46.18",
+  "SMS Usage",
+  "$33.88 Email Usage",
+  "$33.88",
+  "Email Usage",
+  "1,847 SMS Sent · 98.1% delivered",
+  "1,847",
+  "SMS Sent · 98.1% delivered",
+  "42,350 Emails Sent · 99.1% delivered",
+  "42,350",
+  "Emails Sent · 99.1% delivered"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Campaign",
+  "Transactional",
+  "Automation"
+ ],
+ "firstRows": [
+  "May 14, 2026 | Campaign | Summer Membership Drive | 4,200 | 4,162 | 38 | $3.36",
+  "May 13, 2026 | Transactional | Member Receipts | 312 | 312 | 0 | $0.25",
+  "May 10, 2026 | Campaign | Summer Membership Drive | 4,200 | 4,158 | 42 | $3.36"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Billing Usage & Billing BILLING Usage & Billing Search ⌘K Ask Shyne MG Current Billing Period — May 2026 May 1 – May 31, 2026 · Next invoice: Jun 1, 2026 · ● 17 days remaining $46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered Overview SMS Usage Email Usage Invoices 1 open Rate Card Spending Alerts Email Send Log 42,350 emails May 2026 ▾ All Sources ▾ Export DATE SOURCE CAMPAIGN / AUTOMATION SENT DELIVERED BOUNCED COST May 14, 2026 Campaign Summer Membership Drive 4,200 4,162 38 $3.36 May 13, 2026 Transactional Member Receipts 312 312 0 $0.25 May 10, 2026 Campaign Summer Membership Drive 4,200 4,158 42 $3.36 May 8, 2026 Campaign Win-Back: Lapsed 90 Days 1,840 1,824 16 $1.47 May 7, 2026 Automation Nth Wash Rewards — Milestone Emails 1,240 1,234 6 $0.99 May 5, 2026 Campaign Referral Bonus Push 4,800 4,764 36 $3.84 May 1, 2026 Campaign Summer Membership Drive 9,840 9,744 96 $7.87 May 1, 2026 Transactional Billing Cycle Renewal Notices 6,240 6,210 30 $4.99 Showing 1–8 of 8 batches · 42,350 total emails ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

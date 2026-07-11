@@ -1,0 +1,81 @@
+{
+  "base": "WC-03-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 216.42,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "The Transactions menu",
+      "audioS": 24.53,
+      "stepS": 24.93,
+      "file": "WC-03-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Ticket Details",
+      "audioS": 22.67,
+      "stepS": 23.07,
+      "file": "WC-03-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Payments",
+      "audioS": 21.55,
+      "stepS": 21.95,
+      "file": "WC-03-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Payouts",
+      "audioS": 23.48,
+      "stepS": 23.88,
+      "file": "WC-03-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Shifts",
+      "audioS": 20.85,
+      "stepS": 21.25,
+      "file": "WC-03-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Declined Credit Card Log",
+      "audioS": 21.79,
+      "stepS": 22.19,
+      "file": "WC-03-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Gift Card Transactions",
+      "audioS": 23.95,
+      "stepS": 24.35,
+      "file": "WC-03-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "House Account Transactions",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-03-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Recap",
+      "audioS": 34.43,
+      "stepS": 34.83,
+      "file": "WC-03-03-s09.mp3"
+    }
+  ]
+}

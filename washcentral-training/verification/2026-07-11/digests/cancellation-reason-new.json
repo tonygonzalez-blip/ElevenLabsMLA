@@ -1,0 +1,74 @@
+{
+ "url": "/settings-cancellation-reasons-edit.html",
+ "docTitle": "Edit Cancellation Reasons",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Cancellation Reasons Edit"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Cancellation Reasons",
+  "Refund Reasons",
+  "Rewash Reasons",
+  "Event Types",
+  "Transaction Types",
+  "Issue Status Types",
+  "Prepaid Book Types",
+  "Prepaid Book Type Types",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Cancel",
+  "Save Changes",
+  "Reason Details",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Reason Details",
+  "Save Changes"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Description",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Description *"
+ ],
+ "chips": [
+  "Cancellation Reasons",
+  "Settings Memberships",
+  "Settings",
+  "Memberships"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ Cancellation Reasons Refund Reasons Rewash Reasons Event Types Transaction Types Issue Status Types Prepaid Book Types Prepaid Book Type Types VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Cancellation Reasons Edit Search ⌘K Ask Shyne MG Cu Customer Request Cancellation Reasons Cancellation Reasons · Settings Settings Memberships Cancel Save Changes Reason Details REASON DETAILS DESCRIPTION * Cancel Save Changes Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

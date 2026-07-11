@@ -1,0 +1,70 @@
+{
+ "url": "/lms-paths.html",
+ "docTitle": "Learning Paths — WashCentral Academy",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Academy›Learning Paths"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "My Dashboard",
+  "Course Catalog",
+  "Learning Paths",
+  "My Learning",
+  "Admin Dashboard",
+  "Users & Enrollment",
+  "Course Management",
+  "Reports & Compliance"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters",
+  "Search",
+  "Start Path",
+  "Browse Full Course Catalog",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "0 Active Paths 0 Completed Paths 22 Total Courses in Paths",
+  "0",
+  "Active Paths",
+  "Completed Paths",
+  "22",
+  "Total Courses in Paths"
+ ],
+ "inputPlaceholders": [
+  "Search learning paths…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "6 Courses~7.6hBeginner",
+  "6 Courses",
+  "~7.6h",
+  "Beginner",
+  "5 Courses~10.3hIntermediate",
+  "5 Courses",
+  "~10.3h",
+  "Intermediate",
+  "4 Courses~6.3hIntermediate",
+  "4 Courses",
+  "~6.3h",
+  "7 Courses~8.8hAdvanced",
+  "7 Courses",
+  "~8.8h",
+  "Advanced"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Academy ACADEMY My Dashboard Course Catalog Learning Paths My Learning ADMIN Admin Dashboard Users & Enrollment Course Management Reports & Compliance ACADEMY Learning Paths Structured learning journeys designed for your role and goals. Search ⌘K Ask Shyne MG Filters Search 0 ACTIVE PATHS 0 COMPLETED PATHS 22 TOTAL COURSES IN PATHS RECOMMENDED FOR YOU WashCentral Foundations Based on your role and the Academy's recommended sequence, WashCentral Foundations is a great place to start. Start Path 0% complete 6 COURSES ~7.6H BEGINNER WashCentral Foundations The essential starting path for all WashCentral users. Covers platform navigation, Command Center, CRM basics, sales workflows, and compliance fundamentals. 6 courses ~ 7.6h Beginner +2 Not started · 0 of 6 courses done Enroll Foundations Badge on completion Start Path 5 COURSES ~10.3H INTERMEDIATE Analytics Power User Go deep on WashCentral's analytics and intelligence suite. Master Executive Dashboards, Business Intelligence reports, and the operational data that drives strategic decisions. 5 courses ~ 10.3h Intermediate +1 Not started · 0 of 5 courses done Enroll Analytics Expert Badge on completion Start Path 4 COURSES ~6.3H INTERMEDIATE CRM & Customer Success Build deep expertise in WashCentral CRM — customer lifecycle management, marketing automation, the customer-facing digital portal, and compliance basics. 4 courses ~ 6.3h Intermediate Not started · 0 of 4 courses done Enroll CRM Sp"
+}
