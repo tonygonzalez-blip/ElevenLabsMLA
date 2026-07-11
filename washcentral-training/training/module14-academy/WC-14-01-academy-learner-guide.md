@@ -1,7 +1,7 @@
 # WC-14-01 · Academy (LMS) — learner side (Academy)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Purpose
 
@@ -29,7 +29,11 @@ One action per step. Hold each new screen for two to three seconds before moving
 8. Find the **My Achievements** section. **Expected:** the header reads "3 earned · 3 locked" and six badge tiles are shown: **Fast Starter**, **First Certificate**, **7-Day Streak**, **Analytics Pro**, **Top Learner**, and **Platform Expert**. Earned badges are filled in; locked ones are dimmed until you meet their condition.
 9. Look at the **Org Leaderboard** panel on the right. **Expected:** a ranked list of colleagues by learning points, with the signed-in learner highlighted in the standings, and a **View Full Leaderboard →** link at the bottom. This is the Academy's team-engagement view; the ranking is view-only from here.
 10. Below the leaderboard, find the **Quick Links** panel. **Expected:** a short list of dashboard shortcuts. The captured shortcuts include **My Learning Paths** and **My Certificates**, which jump straight to those views without hunting through the sidebar.
-11. Point to the three remaining **ACADEMY** destinations in the sidebar: **Course Catalog**, **Learning Paths**, and **My Learning**. **Expected:** **Course Catalog** is the full course library (the dashboard's **Browse Catalog** button lands here), **Learning Paths** groups courses into sequenced tracks, and **My Learning** is your personal in-progress and completed list. The on-page layout of these three pages (catalog filters and sort, per-card rating and enrollment, the learning-path cards, and the My Learning list) is not captured in the July 9 verification corpus and is parked: TBD — parked (new item, see structured return). Author-to-operator note: capture these three pages live before recording.
+11. Point to the three remaining **ACADEMY** destinations in the sidebar: **Course Catalog**, **Learning Paths**, and **My Learning**. **Expected:** all three interiors were captured live on July 11, 2026 (via the Academy sidebar; their direct URLs 404'd on July 9), clearing the July 9 parked marker. What each holds, as observed:
+    - **Course Catalog** (breadcrumb **Academy › Course Catalog**, subtitle "Browse and search all available training courses."): a **Search courses, topics, instructors…** box, a **Filters** control, category chips (**All**, **Analytics**, **CRM**, **Marketing**, **Operations**, **Command Center**, **Compliance**, **Onboarding**, **Digital**, **Billing**), the count line **Showing 19 courses**, and a **Sort by: Most Popular ▾** control. Each course card carries category and level ribbons, the instructor, duration, lesson count, a star rating, a **Not started** status, an enrolled count, and a **Start** button (for example **Getting Started with WashCentral** — Rachel Kim · 45m · 6 lessons · 4.9 · 342 enrolled).
+    - **Learning Paths** (subtitle "Structured learning journeys designed for your role and goals."): three counters (**0 Active Paths**, **0 Completed Paths**, **22 Total Courses in Paths**), a **RECOMMENDED FOR YOU** card suggesting **WashCentral Foundations** with a **Start Path** button, and path cards such as **WashCentral Foundations** (6 courses · ~7.6h · Beginner · Foundations Badge on completion), **Analytics Power User** (5 courses · ~10.3h · Intermediate · Analytics Expert Badge), and **CRM & Customer Success** (4 courses · ~6.3h · Intermediate), each with an enrollment control and a **Start Path** button. A **Browse Full Course Catalog** button closes the page.
+    - **My Learning** (subtitle "Track your enrolled courses, completions, and earned certificates."): four tabs — **In Progress 0**, **Completed 0**, **Certificates 0**, **Bookmarked 0** — a **Search your courses and certificates…** box, and on this fresh account the empty state "You haven't started any courses" with a **Browse Catalog** button.
+    In this recorded walk you still point at the three entries without opening them (the locked narration is built around a pointer-only step); the follow-up lesson that walks their interiors can now be authored from the July 11 captures.
 12. Note the enrollment safety rule for this lesson. **Expected:** browsing the dashboard, hovering a card, or reading the catalog changes nothing. Enrolling in or starting a course is a real action, so in this lesson the **Start Course**, **Start**, and any **Enroll** / **Start Path** buttons are never clicked. Enrollment and taking a course are deferred to a later lesson.
 13. Recap the learner side. **Expected:** **My Dashboard** is your home base. The four tiles show your status, **Continue Learning** resumes a course, **All Courses** and **Browse Catalog** reach the catalog, **My Achievements** and the **Org Leaderboard** track progress and standing, and the sidebar reaches **Course Catalog**, **Learning Paths**, and **My Learning** without enrolling in anything.
 
@@ -45,7 +49,8 @@ From the rail you open the **Academy** and land on **My Dashboard**. You can rea
 
 - The dashboard is read-only to browse. Reading tiles, cards, badges, and the leaderboard changes nothing. The only state-changing controls here are the enroll/start buttons (**Start Course**, **Start**), which this lesson does not click.
 - The four tiles and every course card read **0** / **Not started** on this demo account because it has no enrollments yet. On a real learner account these fill in with actual progress.
-- **Course Catalog**, **Learning Paths**, and **My Learning** are named and reachable from the sidebar, but their page contents were not captured in the July 9 corpus (the sweep returned a Not Found response for each). Their filters, card fields, and lists are parked until those pages are verified live; do not state their layout from memory or from the plan.
+- **Course Catalog**, **Learning Paths**, and **My Learning** returned Not Found on their direct URLs in the July 9 sweep but rendered in full through the Academy sidebar on July 11 (`verification/2026-07-11/digests/lms-catalog-inapp.json`, `lms-paths-inapp.json`, `lms-my-learning-inapp.json`). The parked marker is cleared and step 11 now documents their observed contents. Reach all three by sidebar click, not by typed URL.
+- Narration sync note: the locked narration for step 11 says the three interiors "have not been verified yet." As of July 11 they have; the recorded walk still works (the step only points at the sidebar), but that spoken justification is stale and block s11 is flagged for re-render in the July 11 return.
 - The **ADMIN** sidebar group (**Admin Dashboard**, **Users & Enrollment**, **Course Management**, **Reports & Compliance**) belongs to the Academy admin side and is covered in WC-14-02.
 - If the "Still there?" idle dialog appears during a recording, dismiss it with **Stay Logged In** off-camera and re-roll the segment. Session-timeout behavior is out of scope here; see WC-01-03.
 
@@ -53,4 +58,4 @@ From the rail you open the **Academy** and land on **My Dashboard**. You can rea
 
 WC-00-03 Account menu & personal setup (the **My Training** entry) · WC-01-02 Search, Location Scope & Ask Shyne (the shared header tools) · WC-14-02 Academy (LMS) — admin side.
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**

@@ -1,10 +1,10 @@
 # WC-12-06 — Users & Security (support-critical) · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (14 steps). (Spoken lines unchanged from v1.0 — audio-locked script; July 11 re-verification recorded in the non-spoken notes only.)
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 14 blocks `WC-12-06-s01.mp3`…`WC-12-06-s14.mp3` + joined `WC-12-06-full-narration-v1.0.mp3`. Audio is rendered later once the ElevenLabs key is available in the environment; timestamps below are estimates at ~145 wpm plus break time, pending render.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 14 blocks `WC-12-06-s01.mp3`…`WC-12-06-s14.mp3` + joined `WC-12-06-full-narration-v1.0.mp3` (253.47s ≈ 4:13). Step duration = audio + 0.4 s. Per-step render seconds: s01 15.39 · s02 18.52 · s03 19.8 · s04 15.88 · s05 17.71 · s06 14.11 · s07 20.85 · s08 15.96 · s09 19.49 · s10 20.77 · s11 12.93 · s12 14.45 · s13 21.32 · s14 20.69.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved by user July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -31,7 +31,8 @@
 ### Scope notes (non-spoken)
 
 - Covers the four Settings access-control pages: System Users, User Levels, Security Levels, Blacklisted. Read-only throughout; no row is opened and **+ New Record** is never clicked.
-- Row values (user-level timeouts, security-level refund gates) are from the July 8, 2026 verified pass; session-timeout figures cross-reference PARKED-ITEMS.md #9 and refund-approval figures cross-reference #5. The July 9 corpus confirms column structure only; the lists showed a "Couldn't load records" agent-service error at capture.
+- Row values (user-level timeouts, security-level refund gates) were spoken as attributed to the July 8, 2026 verified pass and were re-confirmed live on July 11, 2026, so the spoken attributions remain true. Session-timeout figures cross-reference PARKED-ITEMS.md #9 and refund-approval figures cross-reference #5. (The July 9 sweep had hit an agent-service token issue; resolved.)
+- July 11 data notes, not spoken and not contradicting any spoken line: System Users now counts 8,022 accounts (script says "more than eight thousand" — still correct); User Levels gained a fourteenth level, **MLAQA** (5 / 100 min); Blacklisted is empty on this tenant ("No blacklisted plates found…"). Step 12's spoken text is conditional ("If the plate's on the list…") and stays valid over the empty state.
 - Session idle timeout ("Still there?") firing threshold is out of scope and parked (#9); its behavior lesson is 1.3.
 
 ## Timed script
@@ -86,5 +87,5 @@ _(Estimated narration total: ~289s ≈ 04:49 at ~145 wpm plus break time. Actual
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI labels, the navigation paths, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and in the generation-log lines noting the standard.
-- Read-only throughout: no row opened, **+ New Record** never clicked. Row values attributed to the July 8, 2026 verified pass (session timeout → PARKED-ITEMS.md #9; refund approval → #5).
-- Status: **READY FOR GENERATION** — audio renders once `ELEVENLABS_API_KEY` is set. Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Read-only throughout: no row opened, **+ New Record** never clicked. Row values attributed to the July 8, 2026 verified pass (session timeout → PARKED-ITEMS.md #9; refund approval → #5) and re-confirmed live July 11, 2026.
+- Status: **READY FOR GENERATION** — audio renders once `ELEVENLABS_API_KEY` is set. Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**

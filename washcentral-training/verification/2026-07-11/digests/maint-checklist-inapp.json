@@ -1,0 +1,80 @@
+{
+ "url": "/maint-checklist.html",
+ "docTitle": "Maintenance Checklists — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Maintenance›Maintenance Checklists"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Checklist",
+  "Type",
+  "Location",
+  "Frequency",
+  "Last Run",
+  "Completion %"
+ ],
+ "kpiLabels": [
+  "24Total Checklists 8Completed Today 94%Avg Completion 1Overdue",
+  "24Total Checklists",
+  "24",
+  "Total Checklists",
+  "8Completed Today",
+  "8",
+  "Completed Today",
+  "94%Avg Completion",
+  "94%",
+  "Avg Completion",
+  "1Overdue",
+  "1",
+  "Overdue"
+ ],
+ "inputPlaceholders": [
+  "Search maintenance checklists…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Daily Opening Checklist | Opening | MLAS | Daily | 2025-06-01 | 100%",
+  " | Daily Closing Checklist | Closing | MLAS | Daily | 2025-05-31 | 96%",
+  " | Weekly Safety Inspection | Safety | All | Weekly | 2025-05-27 | 88%"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports MAINTENANCE Maintenance Checklists Search ⌘K Ask Shyne MG 24 Total Checklists 8 Completed Today 94% Avg Completion 1 Overdue Completion Rate Last 12 months 94% ↑ +3% Jan Dec Checklists by Type By checklist category Daily 50% Weekly 25% Monthly 17% Safety 8% Checklist Status Today's completion overview 94% DONE 2% PARTIAL 4% OVERDUE MAINTENANCE · CHECKLIST Checklist List 24 records · maintenance checklists & inspection forms + New Record Export Filters ▾ Search CHECKLIST TYPE LOCATION FREQUENCY LAST RUN COMPLETION % Daily Opening Checklist Opening MLAS Daily 2025-06-01 100% Daily Closing Checklist Closing MLAS Daily 2025-05-31 96% Weekly Safety Inspection Safety All Weekly 2025-05-27 88% Monthly Deep Clean Cleaning SSNB Monthly 2025-05-01 100% Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

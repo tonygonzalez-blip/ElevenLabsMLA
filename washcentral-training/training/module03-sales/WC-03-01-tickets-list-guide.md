@@ -1,7 +1,7 @@
 # WC-03-01 · Tickets List (Sales / Transactions)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.** (Tickets list page: July 9 capture; sidebar re-verified July 11 — see the drift note in step 11.)
 
 ## Purpose
 
@@ -29,16 +29,16 @@ One action per step. Hold each region for two to three seconds before moving on.
 8. Read the column headers of the list. **Expected:** seven columns, left to right: **LOCATION · TICKET # · DATE/TIME · TOTAL · STATUS · TENDER TYPE · CUSTOMER**. Each header carries a sort control, and a checkbox sits at the far left of every row for selection.
 9. Read one example row without clicking it. **Expected:** a row such as **121 - Groveport S Hamilton · Shift28753 · 2026-01-11 04:51 · $0.00 · Paid / Not Washed · Cash · —**. The **TICKET #** value is a link that opens the Ticket View for that transaction; opening it is WC-03-02, so leave it alone here. **CUSTOMER** reads **—** when no customer is linked to the ticket, as on these cash tickets.
 10. Look at the pagination control under the list. **Expected:** a page size of **25** and page numbers running **‹ 1 2 3 4 5 … 5,049,509 ›**. Five million pages of twenty-five is the same 126 million records restated, and it is the reason step 6 matters: filter before you page.
-11. Read the Sales sidebar down the left of the list. **Expected:** eight pages in order: **Tickets · Ticket Details · Payments · Payouts · Shifts · Declined Credit Card Log · Gift Card Transactions · House Account Transactions**. You are on **Tickets**; the other seven are the rest of the Transactions menu, covered in WC-03-03. **Legacy note (legacy User Guide vs. live platform, DISCREPANCIES.md #10):** this list is not the old Sales menu. Adjustments moved to Inventory, and there is no Credit Card Transactions, Retail Customer Transactions, or Refunds Approval page here; refund approval is governed by Security Levels instead (Lesson 12.6).
-12. Recap what the page gives you. **Expected:** from **Sales → Tickets** you can read health at a glance from the KPI band and the three insight cards, narrow 126 million tickets with **SEARCH TICKETS** before browsing, read the seven-column list, find **Export**, and see the eight Sales pages in the sidebar.
+11. Read the Sales sidebar down the left of the list. **Expected:** nine pages in order: **Tickets · Ticket Details · Payments · Refund Approvals · Payouts · Shifts · Declined Credit Card Log · Gift Card Transactions · House Account Transactions**. You are on **Tickets**; the rest of the Transactions menu is covered in WC-03-03. **Drift note (July 11):** **Refund Approvals** is new — the July 9 capture showed eight entries with no such page, and this guide previously taught "there is no Refunds Approval page." The July 11 sidebar carries one; its page content is not yet captured or covered by a lesson (flagged for the curriculum map and DISCREPANCIES.md). **Legacy note (legacy User Guide vs. live platform, DISCREPANCIES.md #10):** Adjustments moved to Inventory, and there is still no Credit Card Transactions or Retail Customer Transactions page; refund approval permissions per Security Level are covered in Lesson 12.6.
+12. Recap what the page gives you. **Expected:** from **Sales → Tickets** you can read health at a glance from the KPI band and the three insight cards, narrow 126 million tickets with **SEARCH TICKETS** before browsing, read the seven-column list, find **Export**, and see the nine Sales pages in the sidebar.
 
-**Exercise 3.1a [READ-ONLY]:** on **Sales → Tickets**, name the four KPI tiles, the three insight cards, and the seven column headers out loud; point to the **Export** button and the **Filters** control without clicking either; then read the eight Sales sidebar pages top to bottom. Change nothing.
+**Exercise 3.1a [READ-ONLY]:** on **Sales → Tickets**, name the four KPI tiles, the three insight cards, and the seven column headers out loud; point to the **Export** button and the **Filters** control without clicking either; then read the nine Sales sidebar pages top to bottom. Change nothing.
 
 **Knowledge check:** (1) With 126 million tickets in the list, what do you do before you start scrolling, and which control do you use? (2) Which button runs a search *inside* Tickets, and which one jumps *between* pages? (3) Name the three insight cards and say where **Export** lives.
 
 ## Expected results
 
-You can open **Sales → Tickets**, name the page from its **TRANSACTIONS** header and breadcrumb, and read the KPI band and the **Ticket Volume**, **By Status**, and **Ticket Health** cards without opening a single ticket. You can use **SEARCH TICKETS** to filter before browsing, recite the seven columns, locate **Export**, and list the eight pages in the Sales sidebar. Nothing you do on this page changes a record.
+You can open **Sales → Tickets**, name the page from its **TRANSACTIONS** header and breadcrumb, and read the KPI band and the **Ticket Volume**, **By Status**, and **Ticket Health** cards without opening a single ticket. You can use **SEARCH TICKETS** to filter before browsing, recite the seven columns, locate **Export**, and list the nine pages in the Sales sidebar. Nothing you do on this page changes a record.
 
 ## Notes and troubleshooting (observed behavior only)
 
@@ -49,9 +49,10 @@ You can open **Sales → Tickets**, name the page from its **TRANSACTIONS** head
 - **TICKET #** values are links into the Ticket View (`sales-ticket-view.html?ticket=…`). Reading a single ticket, the red **Refund** button, and the ticket tabs are WC-03-02; the refund workflow itself is parked (PARKED-ITEMS.md #5, #7).
 - The **Filters** control shows a **0** (no active filters) in this capture. Its expanded panel was not captured in the July 9 corpus, so this lesson locates the control at button level only and leaves filter mechanics to the list-conventions and search lessons.
 - Long idle on this page raises the session dialog ("Still there?") with **Stay Logged In** / **Log Out Now**. That is session behavior, out of scope here and covered in WC-01-03. During recording, dismiss it off-camera and re-roll the segment.
+- **Platform drift (July 11) and re-render flag.** The Transactions sidebar gained a **Refund Approvals** entry between the July 9 and July 11 captures (observed consistently across all July 11 sales-page digests), making nine pages. The rendered narration block s11 speaks "Eight pages live under Sales... there's no Refunds Approval page" and now contradicts the platform; it is flagged for re-render. The Tickets list page itself (KPIs, cards, columns) was not re-captured on July 11; those sections stand on the July 9 corpus.
 
 ## Related lessons
 
 WC-01-02 Search, location scope, and Ask Shyne · WC-03-02 Ticket View · WC-03-03 The rest of the Transactions menu · WC-01-04 List conventions.
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**

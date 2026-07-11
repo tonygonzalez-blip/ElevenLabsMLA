@@ -1,0 +1,137 @@
+{
+  "base": "WC-12-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 291.91,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open Services",
+      "audioS": 18.68,
+      "stepS": 19.08,
+      "file": "WC-12-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Services group",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-12-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "KPI band",
+      "audioS": 18.6,
+      "stepS": 19,
+      "file": "WC-12-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Trend & Status",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-12-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Distribution",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-12-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Services List",
+      "audioS": 14.6,
+      "stepS": 15,
+      "file": "WC-12-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Columns & code",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-12-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "List body",
+      "audioS": 20.04,
+      "stepS": 20.44,
+      "file": "WC-12-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Search",
+      "audioS": 14.37,
+      "stepS": 14.77,
+      "file": "WC-12-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Pagination",
+      "audioS": 11.47,
+      "stepS": 11.87,
+      "file": "WC-12-03-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Open a service",
+      "audioS": 20.04,
+      "stepS": 20.44,
+      "file": "WC-12-03-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Service Main",
+      "audioS": 21.16,
+      "stepS": 21.56,
+      "file": "WC-12-03-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Active Locations",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-12-03-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Edit & gears",
+      "audioS": 20.04,
+      "stepS": 20.44,
+      "file": "WC-12-03-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Click a gear",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-12-03-s15.mp3"
+    },
+    {
+      "block": "s16",
+      "step": "16",
+      "target": "Recap",
+      "audioS": 20.04,
+      "stepS": 20.44,
+      "file": "WC-12-03-s16.mp3"
+    }
+  ]
+}

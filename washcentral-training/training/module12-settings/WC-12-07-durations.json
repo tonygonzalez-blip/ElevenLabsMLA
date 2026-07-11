@@ -1,0 +1,121 @@
+{
+  "base": "WC-12-07",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 235.72,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Operations group",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-12-07-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Cancellation Reasons",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-12-07-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Live rows",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-12-07-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Refund Reasons",
+      "audioS": 18.21,
+      "stepS": 18.61,
+      "file": "WC-12-07-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Rewash Reasons",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-12-07-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Event & Transaction Types",
+      "audioS": 14.45,
+      "stepS": 14.85,
+      "file": "WC-12-07-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Issue Status Types",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-12-07-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Automation group",
+      "audioS": 12.51,
+      "stepS": 12.91,
+      "file": "WC-12-07-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Task Scheduler tiles",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-12-07-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Columns & jobs",
+      "audioS": 17.4,
+      "stepS": 17.8,
+      "file": "WC-12-07-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Read-only & count",
+      "audioS": 16.85,
+      "stepS": 17.25,
+      "file": "WC-12-07-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Task Parameters",
+      "audioS": 17.01,
+      "stepS": 17.41,
+      "file": "WC-12-07-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Mass SMS Log",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-12-07-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Recap",
+      "audioS": 21.97,
+      "stepS": 22.37,
+      "file": "WC-12-07-s14.mp3"
+    }
+  ]
+}

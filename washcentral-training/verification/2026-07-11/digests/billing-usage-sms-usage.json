@@ -1,0 +1,85 @@
+{
+ "url": "/billing-usage.html",
+ "docTitle": "Usage & Billing — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Billing›Usage & Billing"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Usage & Billing"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Export",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Export",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Source",
+  "Campaign / Automation",
+  "Recipients",
+  "Delivered",
+  "Failed",
+  "Cost"
+ ],
+ "kpiLabels": [
+  "$46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered",
+  "$46.18 SMS Usage",
+  "$46.18",
+  "SMS Usage",
+  "$33.88 Email Usage",
+  "$33.88",
+  "Email Usage",
+  "1,847 SMS Sent · 98.1% delivered",
+  "1,847",
+  "SMS Sent · 98.1% delivered",
+  "42,350 Emails Sent · 99.1% delivered",
+  "42,350",
+  "Emails Sent · 99.1% delivered"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Automation",
+  "Campaign"
+ ],
+ "firstRows": [
+  "May 14, 2026 | Automation | Nth Wash Rewards — 10th Wash | 84 | 84 | 0 | $2.10",
+  "May 13, 2026 | Automation | No Visit Win-Back — 30 Days | 112 | 109 | 3 | $2.80",
+  "May 12, 2026 | Campaign | Win-Back: Lapsed 90 Days | 380 | 374 | 6 | $9.50"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Billing Usage & Billing BILLING Usage & Billing Search ⌘K Ask Shyne MG Current Billing Period — May 2026 May 1 – May 31, 2026 · Next invoice: Jun 1, 2026 · ● 17 days remaining $46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered Overview SMS Usage Email Usage Invoices 1 open Rate Card Spending Alerts SMS Log 1,847 messages May 2026 ▾ All Sources ▾ Export DATE SOURCE CAMPAIGN / AUTOMATION RECIPIENTS DELIVERED FAILED COST May 14, 2026 Automation Nth Wash Rewards — 10th Wash 84 84 0 $2.10 May 13, 2026 Automation No Visit Win-Back — 30 Days 112 109 3 $2.80 May 12, 2026 Campaign Win-Back: Lapsed 90 Days 380 374 6 $9.50 May 10, 2026 Automation Nth Wash Rewards — 25th Wash 47 47 0 $1.18 May 8, 2026 Campaign Win-Back: Lapsed 90 Days 232 228 4 $5.80 May 6, 2026 Automation No Visit Win-Back — 60 Days 93 91 2 $2.33 May 3, 2026 Automation Nth Wash Rewards — 10th Wash 76 75 1 $1.90 May 1, 2026 Campaign Flash Sale Weekend 823 804 19 $20.58 Showing 1–8 of 8 batches · 1,847 total messages ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

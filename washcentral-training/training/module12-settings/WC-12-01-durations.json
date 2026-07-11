@@ -1,0 +1,113 @@
+{
+  "base": "WC-12-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 220.72,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Settings home",
+      "audioS": 17.01,
+      "stepS": 17.41,
+      "file": "WC-12-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "The counter",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-12-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Search settings box",
+      "audioS": 12.43,
+      "stepS": 12.83,
+      "file": "WC-12-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "The card grid",
+      "audioS": 20.27,
+      "stepS": 20.67,
+      "file": "WC-12-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Open General",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-12-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Account Information top",
+      "audioS": 16.93,
+      "stepS": 17.33,
+      "file": "WC-12-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Account Information list",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-12-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Profit Centers",
+      "audioS": 17.32,
+      "stepS": 17.72,
+      "file": "WC-12-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Departments",
+      "audioS": 16.59,
+      "stepS": 16.99,
+      "file": "WC-12-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Categories",
+      "audioS": 21.08,
+      "stepS": 21.48,
+      "file": "WC-12-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Dashboard Settings",
+      "audioS": 18.44,
+      "stepS": 18.84,
+      "file": "WC-12-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Close Settings",
+      "audioS": 8.2,
+      "stepS": 8.6,
+      "file": "WC-12-01-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 20.35,
+      "stepS": 20.75,
+      "file": "WC-12-01-s13.mp3"
+    }
+  ]
+}

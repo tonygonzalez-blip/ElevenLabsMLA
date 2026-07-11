@@ -1,0 +1,96 @@
+{
+ "url": "/sales-transaction-details.html",
+ "docTitle": "Ticket Details",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Ticket Details"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters 0",
+  "Search",
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "7,744,002",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "7,744,002",
+  "›"
+ ],
+ "tableHeaders": [
+  "Location",
+  "Ticket No",
+  "Date In",
+  "Type",
+  "Category",
+  "Profit Center",
+  "Service Group",
+  "Description",
+  "Total",
+  "Tax",
+  "Taxable",
+  "Cashier"
+ ],
+ "kpiLabels": [
+  "193,600,035Total Line Items —Services (30d) —Discounts (30d) —Revenue (30d)",
+  "193,600,035Total Line Items",
+  "193,600,035",
+  "Total Line Items",
+  "—Services (30d)",
+  "—",
+  "Services (30d)",
+  "—Discounts (30d)",
+  "Discounts (30d)",
+  "—Revenue (30d)",
+  "Revenue (30d)"
+ ],
+ "inputPlaceholders": [
+  "Search by location, ticket, type, description…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 811 - Southfield | UWC-UpGrade | 2026-01-11 04:04 | Unknown type 31 | — | — | — | Clean Unlimited | $0.39 | $0.00 | No | —",
+  " | 616 - Bridgeville Millers Run Road | WA90919202691 | 2026-01-11 03:57 | Surcharge | — | — | — | Cleaner Unlimited | $34.24 | $0.00 | No | Mobile Api",
+  " | Online PortalBeeclean | WA90919202690 | 2026-01-11 03:57 | Surcharge | — | — | — | Clean Extreme Ceramic Unlimited | $40.00 | $0.00 | No | Mobile Api"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Ticket Details Search ⌘K Ask Shyne MG 193,600,035 Total Line Items — Services (30d) — Discounts (30d) — Revenue (30d) Line Item Trend Last 12 months 1,812 ↑ +11% Jan Dec By Type Item breakdown Service 78% Discount 22% Adjustment 0% Other 0% Revenue Health Sales quality 88% SERVICE 10% DISCOUNT 2% OTHER SEARCH TICKET DETAILS Filters Search Ticket Detail List 193,600,035 RECORDS Export LOCATION TICKET NO DATE IN TYPE CATEGORY PROFIT CENTER SERVICE GROUP DESCRIPTION TOTAL TAX TAXABLE CASHIER 811 - Southfield UWC-UpGrade 2026-01-11 04:04 Unknown type 31 — — — Clean Unlimited $0.39 $0.00 No — 616 - Bridgeville Millers Run Road WA90919202691 2026-01-11 03:57 Surcharge — — — Cleaner Unlimited $34.24 $0.00 No Mobile Api Online PortalBeeclean WA90919202690 2026-01-11 03:57 Surcharge — — — Clean Extreme Ceramic Unlimited $40.00 $0.00 No Mobile Api 305 - Willowick Vine UWC-UpGrade 2026-01-11 02:18 Unknown type 31 — — — Cleaner Unlimited $2.32 $0.00 No — 507 - Suffolk N Main UWC-UpGrade 2026-01-11 02:03 Unknown type 31 — — — Clean Extreme Ceramic Unlimited $3.74 $0.00 No — 507 - Suffolk N Main UWC-UpGrade 2026-01-11 02:01 Unknown type 31 — — — Clean Extreme Unlimited $1.55 $0.00 No — 402 - Toledo Central Park F630679 2026-01-11 01:59 Unlimited — — — Creme de la Creme Unlimited $-22.00 $0.00 No Rob"
+}

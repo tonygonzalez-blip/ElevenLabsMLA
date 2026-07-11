@@ -4,7 +4,7 @@
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, one TTS call per step, files `WC-15-01-s01.mp3` … `WC-15-01-s09.mp3`. Step duration = audio + 0.4 s. Timestamps below are estimates at ~145 wpm pending render.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 9 blocks `WC-15-01-s01.mp3`…`WC-15-01-s09.mp3` + joined `WC-15-01-full-narration-v1.0.mp3` (133.22s ≈ 2:13). Step duration = audio + 0.4 s. Per-step render seconds: s01 14.45 · s02 12.28 · s03 16.59 · s04 9.95 · s05 16.43 · s06 9.4 · s07 15.23 · s08 15.88 · s09 19.41.
 - **Voice:** **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`). Never switch without sign-off.
 - **Model:** **eleven_v3** — pass explicitly.
 - **Output:** 44.1 kHz MP3.

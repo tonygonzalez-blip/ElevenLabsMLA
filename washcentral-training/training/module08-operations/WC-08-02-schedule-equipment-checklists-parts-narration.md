@@ -1,10 +1,10 @@
 # WC-08-02 — Maintenance Schedule, Equipment Registry, Checklists, Parts & Supplies · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (6 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v2.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (6 steps).
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3, block-by-block, one TTS call per step, files `WC-08-02-s01.mp3` … `WC-08-02-s06.mp3`. Step duration = audio + 0.4 s. Timestamps below are estimates at ~145 wpm pending render.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 6 blocks `WC-08-02-s01.mp3`…`WC-08-02-s06.mp3` + joined `WC-08-02-full-narration-v1.0.mp3` (165.53s ≈ 2:46). Step duration = audio + 0.4 s. Per-step render seconds: s01 27.17 · s02 24.35 · s03 23.88 · s04 25.97 · s05 29 · s06 32.76.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice. Never switch without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -19,15 +19,15 @@
 ### Pronunciation guide
 
 - WashCentral → "Wash Central"
-- 404 → "four oh four"
 - Lube (as in Lube Checklists) → "loob"
 - MG → "M-G" (spoken as letters; it is the avatar's initials on the demo)
 
 ### Scope notes (non-spoken)
 
 - Menu-level tour of the four MAINTENANCE pages that follow Issues: Maintenance Schedule, Equipment Registry, Checklists, Parts & Supplies.
-- On July 9, all four pages returned **Not Found** ("HTTP Error 404. The requested resource is not found.") in the corpus. The script documents that state and teaches each page's purpose and location. It does not read KPIs, columns, or rows, because none rendered. If the pages are later built, re-verify and re-author before generating audio.
-- Nothing here is a send-type or destructive action; the four pages carry no controls in their current state.
+- All four pages verified **live** on the July 11, 2026 credentialed pass via in-app sidebar navigation; direct URLs still 404, which is why the July 9 probe missed them. Block s06 teaches the sidebar-only route without reading the error text aloud.
+- Spoken numbers come from each page's KPI band (42/6/2/18 · 4/3/1/0 · 24/8/94%/1 · 142/8/12/$18,400) and its sample rows, all grounded in the July 11 digests and the v2.0 guide. Header record counts disagree with the four-row table footers on three pages (guide Notes); the narration voices KPI values only and never reads a row count.
+- The live pages carry **+ New Record**, **Export**, **Filters ▾**, and search controls; the script keeps them read-only (nothing clicked, exported, or created).
 
 ## Timed script
 
@@ -35,27 +35,26 @@
 Start in Operations and look down the sidebar. <break time="1.0s" /> The whole module is laid out in three groups. Maintenance sits at the top, then Incident Reports, then the Scheduler pages. We are in Maintenance, where five entries stack together. The first is Issues, the work-order list you already know. The four below it are the planned side of upkeep, the routines and gear and parts that sit behind every ticket. That set is today's tour.
 
 [00:31 | Step 2 — Maintenance Schedule]
-Click Maintenance Schedule. <break time="1.4s" /> Here is the honest part. Today this page comes back Not Found, a plain four oh four, so there are no numbers to read yet. What it is built for is preventive work, the upkeep you run on a calendar instead of waiting for something to break. Once it loads, this is where a manager pulls up what service is due this month, and where a recurring job like a monthly brush change would live. Until then, we note the entry and we do not invent what is not on the screen.
+Click Maintenance Schedule. <break time="1.4s" /> This is the planned side of upkeep. Forty two recurring tasks live on this calendar, six due this week and two already overdue. Each row is a job that repeats: lubricate the conveyor chain weekly, inspect the chemical pumps once a month. The column a manager reads first is Next Due, because it names the service that is coming before anything breaks.
 
-_[Director: the page shows a browser Not Found screen. Hold on it. Do not narrate or imply any KPIs, columns, or rows.]_
+[01:00 | Step 3 — Equipment Registry]
+Now Equipment Registry. <break time="1.4s" /> Every machine a work order points back to. This tenant carries four assets: a blower system, a chemical pump array, the main tunnel conveyor, and a point of sale terminal. Three are operational and one sits in repair. When a caller says the air dryer is down, this page names the exact unit, places it at its site, and shows whether it is already flagged.
 
-[01:11 | Step 3 — Equipment Registry]
-Now Equipment Registry. <break time="1.4s" /> Same result today, the same four oh four. Picture what it will hold once it is live: every machine at every site, the asset that a work order points back to. A field tech calls in and says the air dryer in bay two is down. This is the page that would name that exact unit, tell you where it sits, and tie it to its service history. For now the entry is real and the page is parked.
+[01:30 | Step 4 — Checklists]
+Open Checklists. <break time="1.4s" /> These are the fixed steps a tech follows so nothing gets skipped on a busy day. Daily opening and closing walks, a weekly safety inspection, a monthly deep clean. The completion column shows how faithfully each one gets done, and the average sits at ninety four percent. One caution. This is not the Lube Checklists page over in Hardware settings. Different place, different job.
 
-[01:45 | Step 4 — Checklists]
-Open Checklists. <break time="1.4s" /> Not Found again. This one is meant for the standard steps a tech runs, the fixed inspection a scheduled service follows so nothing gets skipped on a busy day. One caution for when it loads: this is not the Lube Checklists page that lives over in Hardware settings. Different place, different job. We flag the difference now so you do not go looking in the wrong menu later.
+[01:59 | Step 5 — Parts & Supplies]
+Last one. Parts and Supplies. <break time="1.4s" /> The stock a repair pulls from. Drive belts, pump seal kits, dryer filters, a spare power supply. A hundred forty two parts, about eighteen thousand dollars sitting on the shelf. Read quantity on hand against the reorder point and you can answer a do we have it call in seconds. And keep it straight from Chemicals and Supplies over in Inventory; that page is wash chemistry and retail goods, this one is upkeep.
 
-[02:15 | Step 5 — Parts & Supplies]
-Last one. Parts and Supplies. <break time="1.4s" /> Not Found, like the other three. When it comes up, it is the maintenance stock a repair pulls from, the belts and filters and fittings behind a fix. Keep it straight from Chemicals and Supplies over in Inventory, which is wash chemistry and retail goods. This page is the parts side of upkeep, and its columns wait until it actually loads.
+[02:32 | Step 6 — Recap]
+So, the map. <break time="1.0s" /> Four live pages under Maintenance, right beside Issues. A recurring job lands on the Schedule, and Next Due says when. A question about a machine goes to the Registry. The steps a tech follows are the Checklists. The parts a repair burns through are Parts and Supplies. One habit before you go. Reach these pages from the sidebar inside Operations, because typing an address straight into the browser still fails. The sidebar is the front door.
 
-[02:43 | Step 6 — Recap]
-So, the map. <break time="1.0s" /> Four entries under Maintenance, right beside Issues. A recurring job lands on the Schedule. A question about a machine goes to the Registry. The steps a tech follows are the Checklists. The parts a repair burns through are Parts and Supplies. Every one of them opened to Not Found today, so the first time a page loads for you, walk its numbers and its columns and write them down. Learn the map now. The detail comes when the pages do.
-
-_(Estimated total: ~199 s ≈ 03:19 at ~145 wpm. Timestamps are estimates pending render; regenerate durations from the rendered blocks and align to the recording.)_
+_(Estimated total: ~186 s ≈ 03:06 at ~145 wpm. Timestamps are estimates pending render; regenerate durations from the rendered blocks and align to the recording.)_
 
 ## Generation log
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
-- Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI entry names (Maintenance Schedule, Equipment Registry, Checklists, Parts & Supplies) and the observed error state (Not Found / 404) were left exact. The only em dashes are in the timed-block headers, which is the established `[mm:ss | Step N — target]` house format.
-- Status **READY FOR GENERATION**: audio is rendered later once the ElevenLabs key is available. The four pages returned Not Found on July 9; if they are built before recording, re-verify and re-author this script before generating audio.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI entry names (Maintenance Schedule, Equipment Registry, Checklists, Parts & Supplies) were left exact. The only em dashes are in the timed-block headers, which is the established `[mm:ss | Step N — target]` house format.
+- Status history: v1.0 was READY FOR GENERATION against the July 9 corpus (pages Not Found by direct URL) and narrated the 404 state in blocks s02–s06. **July 11, 2026:** the four pages loaded via in-app sidebar navigation on the credentialed pass, contradicting those blocks; status moved to DO NOT GENERATE pending re-author. No audio was ever rendered from v1.0, so nothing approved was discarded.
+- **July 11, 2026 — v2.0 re-author.** Blocks s02–s06 rewritten against the v2.0 guide and shot list and the July 11 digests (`maint-*-inapp.json`): each block now narrates the live page's KPI values, sample rows, and job, read-only throughout, with the sidebar-only route taught in s06. Block s01 unchanged. Timestamps recomputed at ~145 wpm; new estimated total ~03:06. Humanizer craft rules re-applied to the new blocks. Status returned to **READY FOR GENERATION**.
+- Script text stamp updated to **July 11, 2026**, matching the v2.0 guide and shot list.

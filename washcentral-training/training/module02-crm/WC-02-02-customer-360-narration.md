@@ -1,10 +1,10 @@
 # WC-02-02 — Customer 360 · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (17 steps, two parts).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.1 (non-spoken notes only; spoken lines unchanged and audio-locked) · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (17 steps, two parts).
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. Render block-by-block: 17 blocks `WC-02-02-s01.mp3` … `WC-02-02-s17.mp3`, one TTS call per step, assembled at each step's marker. Step duration = audio + 0.4 s. Audio is rendered later, once the ElevenLabs key is available in the session; it is not set now.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 17 blocks `WC-02-02-s01.mp3`…`WC-02-02-s17.mp3` + joined `WC-02-02-full-narration-v1.0.mp3` (316.41s ≈ 5:16). Step duration = audio + 0.4 s. Per-step render seconds: s01 15.73 · s02 18.13 · s03 15.8 · s04 14.29 · s05 21.89 · s06 15.96 · s07 22.67 · s08 18.76 · s09 21.89 · s10 13.09 · s11 17.79 · s12 14.37 · s13 14.37 · s14 16.51 · s15 20.11 · s16 23.64 · s17 24.61.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -23,16 +23,16 @@
 - Customer 360 → "Customer three-sixty"
 - CRM → "C-R-M" · POS → "P-O-S" · SMS → "S-M-S" · ALPR → "A-L-P-R" · AI → "A-I"
 - Shyne → "Shine"
-- CUS-10284 → "the customer number" (do not spell the digits on camera)
+- Customer ids (CUS-/CUST- prefixed) → "the customer number" (do not spell the digits on camera)
 - RETRACTS → "re-tracts"
 - Barcode → "bar code"
 
 ### Scope notes (non-spoken)
 
 - Read-only walk of the Customer 360 view across all nine tabs plus the Actions menu. Two parts: Part 1 = header band + tabs 1–5; Part 2 = tabs 6–9 + Actions ▾ + recap.
-- The view page was not re-captured in the July 9 static sweep. Narrate the documented structure; the operator records what is on screen and parks any mismatch.
+- The view page and all nine tabs were captured credentialed on July 11 (digests `crm-customer-detail-*`); the spoken blocks are consistent with that capture. The open **Actions ▾** menu is the one region still uncaptured (step 16 speaks the July 8-observed two items; confirm on camera).
 - Never send on the Messaging tab. Never click **Issue Wash** or **Refund Customer** in the Actions menu; the menu is opened only to list its items. Do not click any add, link, save, regenerate, or delete control.
-- Metric band: two tiles are pending re-capture (see guide and DISCREPANCIES return). Narrate the band as headline numbers without asserting the two disputed labels.
+- Metric band: RESOLVED July 11 — the view page's six tiles are confirmed as Member Since · Plan $/mo · Washes (30d) · Loyalty Points · Next Renewal · Last Visit (the Edit form differs by design). The spoken block s05 narrates the band generically and needs no change.
 
 ## Timed script
 
@@ -53,7 +53,7 @@ _[Director: sweep the four buttons; do not click any. STOP ring on Delete.]_
 
 [01:03 | Step 5 — Metric band]
 Under the header sits a strip of six numbers. <break time="1.4s" /> Think of it as the account's vital signs: when they joined, what they spend, how often they come, their points, the next renewal, and the last time you saw them. When a member asks "how long have I been with you" or "when do I renew," the answer is right here, no digging.
-_[Director: record the tile labels exactly as shown; two of them are pending re-capture, so do not relabel on camera.]_
+_[Director: tile set confirmed July 11 (Member Since · Plan $/mo · Washes (30d) · Loyalty Points · Next Renewal · Last Visit); record the labels exactly as shown.]_
 
 [01:27 | Step 6 — Related chips]
 Below that, a row of shortcuts. <break time="1.2s" /> Each chip is a doorway into one slice of the account: their vehicles, their tickets, their wash books, gift cards, house account, loyalty, rewards. Instead of hunting, you click straight through to the part you need.
@@ -107,3 +107,4 @@ That is the whole record. <break time="1.2s" /> Header and chips tell you who. T
 - Two-part structure tagged: Part 1 (steps 1–11) header band + tabs 1–5; Part 2 (steps 12–17) tabs 6–9 + Actions ▾ + recap. Clean break after step 11 on the same record.
 - Send- and money-type controls (Delete, Regenerate, Add Card, Add Vehicle, Link Account, Messaging send, Save Note, Issue Wash, Refund Customer) are read and held, never clicked. Messaging is never sent.
 - Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- July 11, 2026 update (v1.1): scope and director notes refreshed against the credentialed July 11 capture of the view page and all nine tabs. Metric-band question resolved (view tile set confirmed); no spoken line contradicts the July 11 corpus, so all 17 rendered blocks stand — no re-render needed. The Actions ▾ open-menu capture missed on July 11; step 16's spoken item list (July 8 walk) must be confirmed on camera before final assembly. Stamp updated to July 11.

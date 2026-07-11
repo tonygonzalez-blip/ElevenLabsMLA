@@ -1,0 +1,113 @@
+{
+  "base": "WC-04-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 218.64,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Inventory Items",
+      "audioS": 16.27,
+      "stepS": 16.67,
+      "file": "WC-04-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI strip",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-04-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Insight panels",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-04-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Item List toolbar",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-04-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Columns",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-04-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Open item",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-04-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Action buttons",
+      "audioS": 20.27,
+      "stepS": 20.67,
+      "file": "WC-04-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Tabs",
+      "audioS": 13.56,
+      "stepS": 13.96,
+      "file": "WC-04-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Item Details fields",
+      "audioS": 19.64,
+      "stepS": 20.04,
+      "file": "WC-04-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Pricing & Stock",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-04-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Storage & Location",
+      "audioS": 17.24,
+      "stepS": 17.64,
+      "file": "WC-04-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Back out",
+      "audioS": 17.16,
+      "stepS": 17.56,
+      "file": "WC-04-01-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 13.32,
+      "stepS": 13.72,
+      "file": "WC-04-01-s13.mp3"
+    }
+  ]
+}

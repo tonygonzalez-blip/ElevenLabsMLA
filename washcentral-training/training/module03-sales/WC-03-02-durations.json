@@ -1,0 +1,105 @@
+{
+  "base": "WC-03-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 230.86,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Tickets list",
+      "audioS": 19.49,
+      "stepS": 19.89,
+      "file": "WC-03-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open the ticket",
+      "audioS": 14.84,
+      "stepS": 15.24,
+      "file": "WC-03-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Header",
+      "audioS": 21.39,
+      "stepS": 21.79,
+      "file": "WC-03-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Header buttons and the Refund guardrail",
+      "audioS": 16.85,
+      "stepS": 17.25,
+      "file": "WC-03-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Metric band",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-03-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Five tabs",
+      "audioS": 21.47,
+      "stepS": 21.87,
+      "file": "WC-03-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Ticket Information",
+      "audioS": 14.92,
+      "stepS": 15.32,
+      "file": "WC-03-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Financial Summary",
+      "audioS": 20.69,
+      "stepS": 21.09,
+      "file": "WC-03-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Staff, equipment, customer, and vehicle",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-03-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Refunds tab",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-03-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "What isn't here",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-03-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Copy the deep link and go back",
+      "audioS": 18.29,
+      "stepS": 18.69,
+      "file": "WC-03-02-s12.mp3"
+    }
+  ]
+}

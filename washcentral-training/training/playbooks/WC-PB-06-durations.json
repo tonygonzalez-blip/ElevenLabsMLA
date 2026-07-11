@@ -1,0 +1,89 @@
+{
+  "base": "WC-PB-06",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 230.49,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Frame it on Vehicles",
+      "audioS": 21.32,
+      "stepS": 21.72,
+      "file": "WC-PB-06-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Membership tab",
+      "audioS": 22.44,
+      "stepS": 22.84,
+      "file": "WC-PB-06-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Plate linked and the Vehicles tab",
+      "audioS": 20.85,
+      "stepS": 21.25,
+      "file": "WC-PB-06-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Master vehicle list",
+      "audioS": 29.57,
+      "stepS": 29.97,
+      "file": "WC-PB-06-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Blacklisted",
+      "audioS": 26.44,
+      "stepS": 26.84,
+      "file": "WC-PB-06-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "System Alerts",
+      "audioS": 18.13,
+      "stepS": 18.53,
+      "file": "WC-PB-06-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Support Queue",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-PB-06-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Cancellation reason",
+      "audioS": 22.2,
+      "stepS": 22.6,
+      "file": "WC-PB-06-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Package the escalation",
+      "audioS": 27.48,
+      "stepS": 27.88,
+      "file": "WC-PB-06-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Recap",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-PB-06-s10.mp3"
+    }
+  ]
+}

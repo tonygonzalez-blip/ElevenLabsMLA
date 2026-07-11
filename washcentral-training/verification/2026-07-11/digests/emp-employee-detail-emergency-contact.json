@@ -1,0 +1,89 @@
+{
+ "url": "/emp-employees-detail.html",
+ "docTitle": "Employee Detail — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Employees›Employee Detail"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Employees",
+  "Employee Roles",
+  "Employee Schedules",
+  "Time Clock",
+  "User Groups",
+  "QA Dashboard",
+  "Scoring Scripts",
+  "Conversations",
+  "Challenges",
+  "Leaderboard",
+  "Targets",
+  "Prizes",
+  "Recognition Feed",
+  "Pulse Surveys"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "← Back",
+  "Delete",
+  "Edit Employee",
+  "Overview",
+  "Personal Info",
+  "Employment",
+  "Schedule",
+  "Emergency Contact",
+  "Notes & Audit",
+  "Training",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "Personal Info",
+  "Employment",
+  "Schedule",
+  "Emergency Contact",
+  "Notes & Audit",
+  "Training"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "3 yrs 1 moTenure 168Hours This Month 97.2%Attendance Rate ActiveStatus 4.6 / 5Performance",
+  "3 yrs 1 moTenure",
+  "3 yrs 1 mo",
+  "Tenure",
+  "168Hours This Month",
+  "168",
+  "Hours This Month",
+  "97.2%Attendance Rate",
+  "97.2%",
+  "Attendance Rate",
+  "ActiveStatus",
+  "Active",
+  "Status",
+  "4.6 / 5Performance",
+  "4.6 / 5",
+  "Performance"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Shift Manager",
+  "Employees Operations Active",
+  "Employees",
+  "Operations",
+  "Active"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Team EMPLOYEES Employees Employee Roles Employee Schedules Time Clock User Groups SALES COACHING QA Dashboard Scoring Scripts Conversations GAMIFICATION Challenges Leaderboard Targets Prizes Recognition Feed Pulse Surveys EMPLOYEES Employee Detail Search ⌘K Ask Shyne MG Jo Jose Martinez Shift Manager EMP-001 · Fort Lauderdale · Full-Time Employees Operations Active ← Back Delete Edit Employee 3 yrs 1 mo Tenure 168 Hours This Month 97.2% Attendance Rate Active Status 4.6 / 5 Performance Overview Personal Info Employment Schedule Emergency Contact Notes & Audit Training EMERGENCY CONTACT CONTACT NAME Sofia Martinez RELATIONSHIP Spouse PHONE 973-555-0142 ALT PHONE 973-555-0188 EMAIL sofia.m@email.com SAME ADDRESS Yes ✓ MEDICAL INFORMATION KNOWN ALLERGIES None on file BLOOD TYPE O+ MEDICAL NOTES None Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

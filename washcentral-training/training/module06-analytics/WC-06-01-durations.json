@@ -1,0 +1,113 @@
+{
+  "base": "WC-06-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 205.38,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Arrive on Executive Dashboard",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-06-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "The state of the business",
+      "audioS": 17.95,
+      "stepS": 18.35,
+      "file": "WC-06-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Period toggles",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-06-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Flip the period",
+      "audioS": 13.87,
+      "stepS": 14.27,
+      "file": "WC-06-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Scale cards",
+      "audioS": 17.01,
+      "stepS": 17.41,
+      "file": "WC-06-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Health cards",
+      "audioS": 17.55,
+      "stepS": 17.95,
+      "file": "WC-06-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Revenue trend",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-06-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Location health",
+      "audioS": 19.57,
+      "stepS": 19.97,
+      "file": "WC-06-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Members vs churn",
+      "audioS": 13.32,
+      "stepS": 13.72,
+      "file": "WC-06-01-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Revenue mix",
+      "audioS": 11.08,
+      "stepS": 11.48,
+      "file": "WC-06-01-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Drill into Revenue",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-06-01-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Back to the dashboard",
+      "audioS": 7.39,
+      "stepS": 7.79,
+      "file": "WC-06-01-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-06-01-s13.mp3"
+    }
+  ]
+}

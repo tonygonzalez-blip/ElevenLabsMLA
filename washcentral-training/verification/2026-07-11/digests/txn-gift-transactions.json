@@ -1,0 +1,94 @@
+{
+ "url": "/txn-gift-transactions.html",
+ "docTitle": "Gift Card Transactions — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Gift Card Transactions"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters ▾",
+  "Search",
+  "+ New Record",
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "13,289",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "13,289",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Card Number",
+  "Type",
+  "Amount",
+  "Balance",
+  "Customer",
+  "Location"
+ ],
+ "kpiLabels": [
+  "332,213Total Transactions 55%SALE (30d) 45%REDEEM (30d) 10,305Transactions (30d)",
+  "332,213Total Transactions",
+  "332,213",
+  "Total Transactions",
+  "55%SALE (30d)",
+  "55%",
+  "SALE (30d)",
+  "45%REDEEM (30d)",
+  "45%",
+  "REDEEM (30d)",
+  "10,305Transactions (30d)",
+  "10,305",
+  "Transactions (30d)"
+ ],
+ "inputPlaceholders": [
+  "Search by card number...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2026-01-10 22:28 | 80016195493 | SALE | $-11.00 | — | — | 224 - Springdale",
+  " | 2026-01-10 22:26 | 800161950561 | SALE | $-11.00 | — | — | 224 - Springdale",
+  " | 2026-01-10 21:23 | 800139349533 | REDEEM | $16.00 | — | — | 508 - Norfolk Tidewater"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Gift Card Transactions Search ⌘K Ask Shyne MG 332,213 Total Transactions 55% SALE (30d) 45% REDEEM (30d) 10,305 Transactions (30d) Gift Card Trend Last 12 months $4,280 ↑ +18% Jan Dec By Type Transaction breakdown (30d) SALE 55% REDEEM 45% REFUND 0% Balance Health Gift card overview Active/expired card status isn't tracked in this POS system — Gift Card Transactions records completed activity only. SEARCH GIFT CARD TRANSACTIONS Filters ▾ Search Gift Card Transaction List 332,213 RECORDS + New Record Export DATE CARD NUMBER TYPE AMOUNT BALANCE CUSTOMER LOCATION 2026-01-10 22:28 80016195493 SALE $-11.00 — — 224 - Springdale 2026-01-10 22:26 800161950561 SALE $-11.00 — — 224 - Springdale 2026-01-10 21:23 800139349533 REDEEM $16.00 — — 508 - Norfolk Tidewater 2026-01-10 21:01 800162361663 REDEEM $26.00 — — 130 - Hilliard Cemetery 2026-01-10 20:57 800162452293 REDEEM $10.00 — — 106 - Grandview W Fifth 2026-01-10 20:44 800131057955 REDEEM $16.00 — — 129 - New Albany Johnstown 2026-01-10 20:28 800132650582 REDEEM $8.00 — — 210 - Hamilton NW Washington 2026-01-10 20:27 800132737511 REDEEM $16.00 — — 215 - Kettering Wilmington 2026-01-10 20:01 800161931003 REDEEM $2.00 — — 228 - Cincinnati Montgomery 2026-01-10 20:01 800161930990 REDEEM $9.00 — — 228 - Cincinnati Montgomery 2026-01-10 20:01 676"
+}

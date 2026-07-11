@@ -1,0 +1,88 @@
+{
+ "url": "/settings-cancellation-reasons.html",
+ "docTitle": "Cancellation Reasons",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Cancellation Reasons"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Cancellation Reasons",
+  "Refund Reasons",
+  "Rewash Reasons",
+  "Event Types",
+  "Transaction Types",
+  "Issue Status Types",
+  "Prepaid Book Types",
+  "Prepaid Book Type Types",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Description",
+  "Show on POS"
+ ],
+ "kpiLabels": [
+  "33Total Reasons 30Shown on POS 3Hidden",
+  "33Total Reasons",
+  "33",
+  "Total Reasons",
+  "30Shown on POS",
+  "30",
+  "Shown on POS",
+  "3Hidden",
+  "3",
+  "Hidden"
+ ],
+ "inputPlaceholders": [
+  "Search cancellation reasons…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Yes",
+  "No"
+ ],
+ "firstRows": [
+  "— | Yes",
+  "Aftermarket Large Item On Vehicle | Yes",
+  "Chargeback | Yes"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ Cancellation Reasons Refund Reasons Rewash Reasons Event Types Transaction Types Issue Status Types Prepaid Book Types Prepaid Book Type Types VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Cancellation Reasons Search ⌘K Ask Shyne MG 33 Total Reasons 30 Shown on POS 3 Hidden SETTINGS · CANCELLATION REASONS Cancellation Reasons List 33 records + New Record DESCRIPTION SHOW ON POS — Yes Aftermarket Large Item On Vehicle Yes Chargeback Yes COVID-19 (coronavirus) No Financial Yes Gained Employment with EWC No Green Clean Price Change Yes Inconvenient Location Yes Moved Yes Not Provided Yes Not Using Yes Other Yes Price Increase Yes Program is Confusing Yes Purchased Another Membership Yes Quality of Wash/Service Yes RACK: Bike Rack On Vehicle Yes RACK: Ladder Rack On Vehicle Yes RACK: Wheel Chair Rack On Vehicle Yes Requested by Location Yes RFID Tag Issues/Not Reading/cross read activate Yes Seasonal Yes Sold Vehicle Yes Tag not on vehicle. Tampered with. Yes Test No ROWS PER PAGE: 25 50 100 25 1–25 of 33 ‹ 1 2 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ "
+}

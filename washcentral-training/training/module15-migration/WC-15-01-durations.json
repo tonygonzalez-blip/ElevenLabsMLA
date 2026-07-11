@@ -1,0 +1,81 @@
+{
+  "base": "WC-15-01",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 133.22,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Title",
+      "audioS": 14.45,
+      "stepS": 14.85,
+      "file": "WC-15-01-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "What the client needs",
+      "audioS": 12.28,
+      "stepS": 12.68,
+      "file": "WC-15-01-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Credentials & data",
+      "audioS": 16.59,
+      "stepS": 16.99,
+      "file": "WC-15-01-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Onboarding",
+      "audioS": 9.95,
+      "stepS": 10.35,
+      "file": "WC-15-01-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Performing a switch",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-15-01-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "After redirection",
+      "audioS": 9.4,
+      "stepS": 9.8,
+      "file": "WC-15-01-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Reversing a switch",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-15-01-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "What happens to WashAssist",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-15-01-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Recap",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-15-01-s09.mp3"
+    }
+  ]
+}

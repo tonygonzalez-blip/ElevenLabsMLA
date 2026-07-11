@@ -1,10 +1,10 @@
 # WC-02-04 — Gift Cards · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps). (**Blocks s06 and s10 re-authored July 11, pending block re-render**; all other spoken lines unchanged.)
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — audio is rendered later once the ElevenLabs key is available (not set in this session). Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-02-04-s01.mp3`…`WC-02-04-s12.mp3` plus a joined `WC-02-04-full-narration-v1.0.mp3`. Timestamps below are estimates at ~145 wpm plus break time plus a 0.4 s tail, pending render; estimated total ~190.7 s (~3:11).
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 12 blocks `WC-02-04-s01.mp3`…`WC-02-04-s12.mp3` + joined `WC-02-04-full-narration-v1.0.mp3` (152.56s ≈ 2:33). Step duration = audio + 0.4 s. Per-step render seconds: s01 14.68 · s02 11.47 · s03 12.04 · s04 11.23 · s05 9.72 · s06 11.73 · s07 9.72 · s08 11.89 · s09 14.29 · s10 14.92 · s11 12.2 · s12 13.87.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -31,7 +31,8 @@
 
 - Read-only tour of **CRM → Gift Cards**. No record is created, edited, or deleted.
 - **Delete** and **+ Issue Gift Card** are write actions. Do not depict clicking either; issuing a card is never shown (Step 7 reads them and moves on).
-- July 9 capture state: the four KPI tiles displayed "—" and the records table displayed "Couldn't load records (Failed to fetch). Check your connection to the AI agent service." Step 10 narrates this as a data-fetch error, not an empty portfolio. A worked balance-lookup example (card number, balance, status, last used) is parked (TBD) because the rows were in the error state at capture.
+- July 9 capture history: the four KPI tiles displayed "—" and the records table displayed "Couldn't load records (Failed to fetch). Check your connection to the AI agent service." That failure mode is retained in s10 only as a spoken contingency ("if the table ever says it couldn't load, refresh"); the block now narrates the healthy July 11 state.
+- **July 11 re-verification — s06 and s10 RE-AUTHORED, pending re-render.** The July 11 credentialed capture shows the page healthy: KPI tiles live (116,524 / $2053032.67 / 71,481 / 45,043), rows listing (first row 80016195493 · — · ACE24 · $11.00 · Active · Jan 10, 2026), and the list header reading a single record count, "116,524 records". The v1.0 rendered takes for s06 (old two-number subtitle) and s10 (July 9 error state) contradicted that; the spoken blocks below now match the live page. Re-render s06 and s10 and re-measure durations before assembly. The step 11 worked example is no longer parked (see guide step 11).
 - Header **Search ⌘K** and **Ask Shyne** are covered in WC-01-02 and are not re-taught. The idle "Still there?" prompt is out of scope (WC-01-03).
 
 ## Timed script
@@ -52,37 +53,37 @@ Next to it, where the money sits. <break time="1.2s" /> Most cards carry small a
 The third panel is portfolio health. <break time="1.0s" /> Most active, a good share redeemed, a few expired. The same split as the status column, rolled into one bar.
 
 [01:20 | Step 6 — Gift Card List]
-Now the list itself. <break time="1.2s" /> The line under the title carries the two numbers a manager asks for: how many cards, and the total balance outstanding.
+Now the list itself. <break time="1.2s" /> One number sits under the title: the record count, a hundred sixteen thousand cards and change, the same figure as the total tile up top.
 
-[01:32 | Step 7 — List actions]
+[01:34 | Step 7 — List actions]
 Two buttons sit above the table. <break time="1.4s" /> Delete removes a card. Issue Gift Card creates one. Both write to real records, so we point and read, and never click either.
 
 _[Director: do not click Delete or + Issue Gift Card, and never depict issuing a card. Point and read only.]_
 
-[01:45 | Step 8 — Search & Filters]
+[01:47 | Step 8 — Search & Filters]
 Under the buttons, one search box. <break time="1.2s" /> Type a card number, a customer, a location, or a status, and the list narrows to the match. When a caller has the card in hand, this is the fast path.
 
-[02:02 | Step 9 — Columns]
+[02:04 | Step 9 — Columns]
 Six columns describe each card. <break time="1.2s" /> The number, who owns it, where it sold, what is left, whether it is still good, and when it last moved. Balance, status, last used carry most calls.
 
-[02:17 | Step 10 — Records state]
-In this capture the rows did not load. <break time="1.4s" /> The table says it couldn't load records, a failed fetch. A service hiccup, not an empty portfolio; the counts above prove there are cards. Live, refresh before you quote a balance.
+[02:19 | Step 10 — Live rows]
+Now the rows themselves. <break time="1.4s" /> They load live, twenty-five cards to a page, thousands of pages deep. Where the customer cell shows a dash, no one is linked to that card. And if the table ever says it couldn't load, refresh before you quote a balance.
 
-_[Director: in the July 9 capture the records table was in the "Couldn't load records (Failed to fetch)" state. Record in a healthy data state, or keep the example row values parked (TBD) rather than inventing them.]_
+_[Director: July 11 capture shows the table healthy (rows listing, pager to page 4,661). Record the live rows; the couldn't-load line is spoken as a contingency only, never staged.]_
 
-[02:36 | Step 11 — Balance lookup]
+[02:39 | Step 11 — Balance lookup]
 Here is the everyday move. <break time="1.4s" /> A customer reads you their card number. You drop it into the search, and the row returns the balance, the status, and the last-used date. Read those back and the call is answered.
 
-_[Director: run this only against a real card number in a healthy data state; if the records error persists, hold on the search box and keep the values parked.]_
+_[Director: run this against a real card number from the live list (July 11 worked example: 80016195493 → $11.00 · Active · Jan 10, 2026). If the records error reappears, hold on the search box and re-roll later.]_
 
-[02:54 | Step 12 — Recap]
+[02:57 | Step 12 — Recap]
 So, the gift card screen. <break time="0.8s" /> Totals up top, three quick-read panels, and a list where every lookup lands. Find the card by number, read its balance and status, and you have handled almost every gift card call.
 
-_(Estimated total: ~190.7 s ≈ 3:11 at ~145 wpm, pending render. Timestamps are estimates until the audio is generated.)_
+_(Estimated total: ~193.7 s ≈ 3:14 at ~145 wpm, pending render. Re-authored per-step estimates: s06 13.6 · s10 20.4. Timestamps are estimates until the audio is generated.)_
 
 ## Generation log
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration. Verbatim UI labels, the navigation path, and the numbered steps were left exact. Em dashes appear only in the `[mm:ss | Step N — target]` block headers (the established house format) and inside the verbatim error-banner quote.
-- **Delete** and **+ Issue Gift Card** are never clicked and issuing a card is never depicted. The records-table error state at capture is narrated honestly (data-fetch error, not an empty portfolio); example row values are parked, not invented.
-- Status: **READY FOR GENERATION** (ElevenLabs key not set this session). Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- **Delete** and **+ Issue Gift Card** are never clicked and issuing a card is never depicted. Blocks s06 and s10 were re-authored July 11 against the healthy credentialed capture (single record-count header; live rows); the couldn't-load error is kept only as a spoken contingency in s10.
+- Status: **s06 and s10 re-authored July 11, pending block re-render**; remaining blocks unchanged. Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**

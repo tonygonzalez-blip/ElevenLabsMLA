@@ -1,0 +1,79 @@
+{
+ "url": "/lms-admin.html",
+ "docTitle": "Academy Admin — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Academy›Admin Dashboard"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "My Dashboard",
+  "Course Catalog",
+  "Learning Paths",
+  "My Learning",
+  "Admin Dashboard",
+  "Users & Enrollment",
+  "Course Management",
+  "Reports & Compliance"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Enroll Users",
+  "MG",
+  "Manage",
+  "New Announcement",
+  "Edit",
+  "Archive",
+  "Cancel",
+  "Send Announcement",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "19 Active Learners Last 30 days 26% Completion Rate All enrollments Action needed 49 Overdue Across all courses 186 Total Enrollments Active records 9h 46m Avg Time Spent Per learner",
+  "19 Active Learners Last 30 days",
+  "19",
+  "Active Learners",
+  "26% Completion Rate All enrollments",
+  "26%",
+  "Completion Rate",
+  "Action needed 49 Overdue Across all courses",
+  "Action needed",
+  "49",
+  "Overdue",
+  "186 Total Enrollments Active records",
+  "186",
+  "Total Enrollments",
+  "9h 46m Avg Time Spent Per learner",
+  "9h 46m",
+  "Avg Time Spent"
+ ],
+ "inputPlaceholders": [
+  "e.g. New Course Available: Sales Fundamentals",
+  "Write your announcement...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Select Users",
+  "Enroll In",
+  "Course",
+  "Due Date (optional)",
+  "Title",
+  "Message",
+  "Audience"
+ ],
+ "chips": [
+  "Action needed",
+  "19d overdue"
+ ],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Academy ACADEMY My Dashboard Course Catalog Learning Paths My Learning ADMIN Admin Dashboard Users & Enrollment Course Management Reports & Compliance ACADEMY Admin Dashboard Manage training across your organization. Search ⌘K Enroll Users MG 19 ACTIVE LEARNERS Last 30 days 26% COMPLETION RATE All enrollments Action needed 49 OVERDUE Across all courses 186 TOTAL ENROLLMENTS Active records 9h 46m AVG TIME SPENT Per learner Course Completion Heatmap All 19 courses across 25 users COURSE COMPLETION BREAKDOWN ENROLLED COMPLETE % Getting Started with WashCentral 6 completed 7 in progress 6 overdue 6 not started 25 24% Command Center Mastery 6 completed 5 in progress 3 overdue 3 not started 17 35% Executive Dashboard & KPIs 4 completed 1 in progress 3 overdue 3 not started 11 36% CRM Deep Dive: Customers & Members 3 completed 4 in progress 4 overdue 0 not started 11 27% Marketing Campaigns & Automation 3 completed 4 in progress 3 overdue 0 not started 10 30% Sales & Transaction Management 6 completed 5 in progress 5 overdue 5 not started 21 29% Operations & Maintenance Workflows 3 completed 2 in progress 4 overdue 4 not started 13 23% Gamification & Team Engagement 1 completed 1 in progress 1 overdue 1 not started 4 25% Compliance & Audit Essentials 6 completed 6 in progress 6 overdue 7 not started 25 24% Advanced Analytics & BI 0 completed 4 in progress 3 overdue 4 not started 11 0% Customer Portal & Mobile App 1 completed 0 in progress 2 overdu"
+}

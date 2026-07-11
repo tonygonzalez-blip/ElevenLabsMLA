@@ -1,0 +1,97 @@
+{
+ "url": "/sched-messaging.html",
+ "docTitle": "Scheduler Messaging — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Scheduling›Messaging"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Template",
+  "Import",
+  "+ Add Override",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Template",
+  "Trigger",
+  "Channel",
+  "Language",
+  "Last sent",
+  "Status",
+  "Location",
+  "Confirmation",
+  "Reminder Lead",
+  "Reminder Channel",
+  "Cancel Cutoff",
+  "Quiet Hours"
+ ],
+ "kpiLabels": [
+  "12,840Messages Sent · 30d 98.2%Delivery Rate 42%Confirm via Link 7.1%Cancel via Link",
+  "12,840Messages Sent · 30d",
+  "12,840",
+  "Messages Sent · 30d",
+  "98.2%Delivery Rate",
+  "98.2%",
+  "Delivery Rate",
+  "42%Confirm via Link",
+  "42%",
+  "Confirm via Link",
+  "7.1%Cancel via Link",
+  "7.1%",
+  "Cancel via Link"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Full Detail",
+  "2:00 PM",
+  "Sunny Coast – Naples",
+  "{customer_first}",
+  "{service_name}",
+  "{appt_time}",
+  "{appt_date}",
+  "{location_name}",
+  "{bay_name}",
+  "{confirm_link}",
+  "{cancel_link}",
+  "{down_payment}",
+  "{plate}",
+  "Inherited",
+  "Override"
+ ],
+ "firstRows": [
+  " | Booking Confirmation | On create | SMS Email | EN | 2 min ago | ● Live",
+  " | Day-Before Reminder | 24h before start | SMS | EN | 14 min ago | ● Live",
+  " | Day-Before Reminder · Email | 24h before start | Email | EN | 14 min ago | ● Live"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports SCHEDULING Messaging Search ⌘K Ask Shyne MG 12,840 Messages Sent · 30d 98.2% Delivery Rate 42% Confirm via Link 7.1% Cancel via Link SCHEDULING · MESSAGING Global Send Rules When and how reminders are delivered. Per-location overrides are configured below. Confirmation message Sent immediately after booking is created. SMS & Email SMS only Email only Off Reminder lead time How long before the appointment to send the reminder. 30 minutes 1 hour 2 hours 4 hours 12 hours 24 hours (day before) 48 hours Reminder channel Falls back to email if no mobile on file. SMS preferred, email fallback SMS only Email only SMS & Email both Allow customer confirm via link Tap-to-confirm in the reminder updates appointment status to Confirmed. Allow customer cancel via link Tap-to-cancel respects refund window from Payments. Cancel cutoff Customers cannot self-cancel after this many hours before start. hours Quiet hours No SMS sent outside this window (location time zone). – PREVIEW Reminder · Day Before · SMS Live render with sample data for an Unlimited Plus member. Hi Maria — quick reminder: Full Detail tomorrow at 2:00 PM at Sunny Coast – Naples. Reply Y to confirm or N to cancel. Or tap: https://sccw.io/c/9F2L Available tokens {customer"
+}

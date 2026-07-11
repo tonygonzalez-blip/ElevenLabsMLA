@@ -3,7 +3,7 @@
   "voice": "CDbF7Jxnv3azemv9dXMP",
   "model": "eleven_v3",
   "tailS": 0.4,
-  "totalS": 150.39,
+  "totalS": 152.56,
   "blocks": [
     {
       "block": "s01",
@@ -49,8 +49,8 @@
       "block": "s06",
       "step": "6",
       "target": "Gift Card List",
-      "audioS": 9.64,
-      "stepS": 10.04,
+      "audioS": 11.73,
+      "stepS": 12.13,
       "file": "WC-02-04-s06.mp3"
     },
     {
@@ -80,9 +80,9 @@
     {
       "block": "s10",
       "step": "10",
-      "target": "Records state",
-      "audioS": 14.84,
-      "stepS": 15.24,
+      "target": "Live rows",
+      "audioS": 14.92,
+      "stepS": 15.32,
       "file": "WC-02-04-s10.mp3"
     },
     {

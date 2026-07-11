@@ -1,0 +1,129 @@
+{
+  "base": "WC-06-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 261.35,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Analytics sidebar",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-06-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "ANALYTICS group",
+      "audioS": 22.13,
+      "stepS": 22.53,
+      "file": "WC-06-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Executive Dashboard landing",
+      "audioS": 13.87,
+      "stepS": 14.27,
+      "file": "WC-06-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Downsells",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-06-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Downsells reasons and Command Center",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-06-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "MARKETING group",
+      "audioS": 13.56,
+      "stepS": 13.96,
+      "file": "WC-06-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Campaign Performance",
+      "audioS": 19.96,
+      "stepS": 20.36,
+      "file": "WC-06-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "INTELLIGENCE group",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-06-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "BI Overview",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-06-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "BI Overview panels",
+      "audioS": 15.39,
+      "stepS": 15.79,
+      "file": "WC-06-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "FORECASTING group",
+      "audioS": 13.79,
+      "stepS": 14.19,
+      "file": "WC-06-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Forecasting",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-06-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Forecasting panels and list",
+      "audioS": 16.27,
+      "stepS": 16.67,
+      "file": "WC-06-02-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Read a row",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-06-02-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Recap",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-06-02-s15.mp3"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+ "url": "/lms-my-learning.html",
+ "docTitle": "My Learning — WashCentral Academy",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Academy›My Learning"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "My Dashboard",
+  "Course Catalog",
+  "Learning Paths",
+  "My Learning",
+  "Admin Dashboard",
+  "Users & Enrollment",
+  "Course Management",
+  "Reports & Compliance"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters",
+  "Search",
+  "In Progress 0",
+  "Completed 0",
+  "Certificates 0",
+  "Bookmarked 0",
+  "Browse Catalog",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "In Progress 0",
+  "Completed 0",
+  "Certificates 0",
+  "Bookmarked 0"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [],
+ "inputPlaceholders": [
+  "Search your courses and certificates…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Academy ACADEMY My Dashboard Course Catalog Learning Paths My Learning ADMIN Admin Dashboard Users & Enrollment Course Management Reports & Compliance ACADEMY My Learning Track your enrolled courses, completions, and earned certificates. Search ⌘K Ask Shyne MG Filters Search In Progress 0 Completed 0 Certificates 0 Bookmarked 0 You haven't started any courses Browse the catalog and start a course to see your progress here. Browse Catalog Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

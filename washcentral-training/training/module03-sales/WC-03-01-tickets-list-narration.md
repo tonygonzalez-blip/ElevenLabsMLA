@@ -1,10 +1,10 @@
 # WC-03-01 — Tickets List · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** (Tickets list page: July 9 capture; sidebar re-verified July 11.) v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps). (**Block s11 re-authored July 11, pending block re-render**; all other spoken lines unchanged.)
 
 ## Settings header
 
-- **Status: READY FOR GENERATION.** WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 12 blocks `WC-03-01-s01.mp3` … `WC-03-01-s12.mp3` plus a joined `WC-03-01-full-narration-v1.0.mp3`. Audio is rendered later once the ElevenLabs key is available; it is not set in this session.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 12 blocks `WC-03-01-s01.mp3`…`WC-03-01-s12.mp3` + joined `WC-03-01-full-narration-v1.0.mp3` (176.93s ≈ 2:57). Step duration = audio + 0.4 s. Per-step render seconds: s01 11.89 · s02 14.29 · s03 10.61 · s04 14.29 · s05 11.47 · s06 17.08 · s07 15.49 · s08 18.29 · s09 12.93 · s10 14.76 · s11 17.63 · s12 13.4.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`), project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3**, pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -34,6 +34,7 @@
 - The three 30-day KPI tiles (**Paid (30d)**, **Not Washed (30d)**, **Revenue (30d)**) render a dash in the July 9 corpus. Narrate the structure and the dash-means-no-value point, not a figure.
 - The **Filters** panel internals were not captured; the script locates the control only.
 - Session-timeout ("Still there?") behavior is out of scope; it belongs to WC-01-03.
+- **July 11 re-verification — s11 RE-AUTHORED, pending re-render.** The July 11 credentialed capture shows the Transactions sidebar with NINE pages: a **Refund Approvals** entry now sits between Payments and Payouts (observed consistently across every July 11 sales-page digest). The v1.0 rendered s11 audio speaks "Eight pages live under Sales... there's no Refunds Approval page.", which contradicts the live sidebar; the spoken block below now matches the guide v1.1 (nine pages, Refund Approvals named at name level only — its page is not yet captured). Re-render s11 and re-measure durations before assembly. The Tickets list page itself was not re-captured July 11; the other blocks stand on the July 9 corpus.
 
 ## Timed script
 
@@ -72,12 +73,12 @@ _[Director: read the row, do not click the TICKET # link. The single-ticket view
 Glance at the pager. <break time="1.2s" /> Twenty-five to a page, and the last page number sits just past five million. That's the same mountain of tickets said a different way. It's exactly why you filter before you page.
 
 [02:53 | Step 11 — Sales sidebar]
-Last, the sidebar. <break time="1.4s" /> Eight pages live under Sales, and Tickets is only the first. The other seven get their own lesson. If you trained on the old system, notice what moved: Adjustments went to Inventory, and there's no Refunds Approval page. Approvals run through security levels now.
+Last, the sidebar. <break time="1.4s" /> Nine pages live under Sales, and Tickets is only the first. The rest get their own lessons, Refund Approvals among them. And if you trained on the old system, notice what moved: Adjustments went to Inventory, and refund permissions still run through security levels.
 
 [03:14 | Step 12 — Recap]
 That's the Tickets page. <break time="0.8s" /> Read health from the band and the three cards, filter before you browse, and know the list and where Export sits. Master this one page, and every transaction question you get starts right here.
 
-_(Estimated narration total ≈ 210.5 s ≈ 3:31. Timestamps are estimates pending render; re-measure and re-align before assembly.)_
+_(Estimated narration total ≈ 210.7 s ≈ 3:31. Re-authored s11 estimate: 21.2 s, so downstream timestamps are unchanged. Timestamps are estimates pending render; re-measure and re-align before assembly.)_
 
 ## Generation log
 
@@ -86,4 +87,4 @@ _(Estimated narration total ≈ 210.5 s ≈ 3:31. Timestamps are estimates pendi
 - Humanizer pass (per CLAUDE.md §6): spoken prose kept clear of the listed AI tells (no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice) and free of em and en dashes. The only em dashes are in the `[mm:ss | Step N — target]` block headers (established house format). Verified UI labels, the navigation path, and the numbered steps were left exact.
 - Legacy/menu differences are spoken as the project's own verified map, attributed to DISCREPANCIES.md #10 (see the guide's step 11 migration note). No pricing, no roadmap, no credentials, no customer-identifiable data are spoken.
 - Nothing is clicked in the script: Export is located (step 7), the TICKET # link is not opened (step 9), and sidebar siblings are not followed (step 11).
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Block s11 re-authored July 11 against the nine-page sidebar (guide v1.1); pending block re-render. Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**

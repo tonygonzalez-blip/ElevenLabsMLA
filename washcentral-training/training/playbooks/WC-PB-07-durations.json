@@ -1,0 +1,97 @@
+{
+  "base": "WC-PB-07",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 248.77,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open Customer 360",
+      "audioS": 20.92,
+      "stepS": 21.32,
+      "file": "WC-PB-07-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Membership tab",
+      "audioS": 23.41,
+      "stepS": 23.81,
+      "file": "WC-PB-07-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "The Actions menu",
+      "audioS": 25,
+      "stepS": 25.4,
+      "file": "WC-PB-07-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Pick the branch",
+      "audioS": 18.76,
+      "stepS": 19.16,
+      "file": "WC-PB-07-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Security Levels",
+      "audioS": 24.69,
+      "stepS": 25.09,
+      "file": "WC-PB-07-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "The approval column",
+      "audioS": 22.05,
+      "stepS": 22.45,
+      "file": "WC-PB-07-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Refund Reasons",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-PB-07-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Cancel, pause, reset",
+      "audioS": 22.05,
+      "stepS": 22.45,
+      "file": "WC-PB-07-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Log it in Notes",
+      "audioS": 21.63,
+      "stepS": 22.03,
+      "file": "WC-PB-07-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Package the escalation",
+      "audioS": 25,
+      "stepS": 25.4,
+      "file": "WC-PB-07-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Recap",
+      "audioS": 21.71,
+      "stepS": 22.11,
+      "file": "WC-PB-07-s11.mp3"
+    }
+  ]
+}

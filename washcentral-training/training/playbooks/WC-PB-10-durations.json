@@ -1,0 +1,97 @@
+{
+  "base": "WC-PB-10",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 214.9,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Portal hub and the Live chip",
+      "audioS": 17.71,
+      "stepS": 18.11,
+      "file": "WC-PB-10-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Portal KPI strip",
+      "audioS": 17.87,
+      "stepS": 18.27,
+      "file": "WC-PB-10-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "URL and Preview Portal",
+      "audioS": 18.36,
+      "stepS": 18.76,
+      "file": "WC-PB-10-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "The two hub cards",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-PB-10-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Login methods",
+      "audioS": 23.07,
+      "stepS": 23.47,
+      "file": "WC-PB-10-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "OTP and password policy",
+      "audioS": 20.85,
+      "stepS": 21.25,
+      "file": "WC-PB-10-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Recent Portal Activity",
+      "audioS": 18.6,
+      "stepS": 19,
+      "file": "WC-PB-10-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Mobile App Users",
+      "audioS": 15.49,
+      "stepS": 15.89,
+      "file": "WC-PB-10-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "The member's row",
+      "audioS": 19.72,
+      "stepS": 20.12,
+      "file": "WC-PB-10-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Package the escalation",
+      "audioS": 21.79,
+      "stepS": 22.19,
+      "file": "WC-PB-10-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Recap",
+      "audioS": 19.41,
+      "stepS": 19.81,
+      "file": "WC-PB-10-s11.mp3"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+ "url": "/billing-usage.html",
+ "docTitle": "Usage & Billing — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Billing›Usage & Billing"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Usage & Billing"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Save Alerts",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Overview",
+  "SMS Usage",
+  "Email Usage",
+  "Invoices 1 open",
+  "Rate Card",
+  "Spending Alerts",
+  "Save Alerts"
+ ],
+ "tableHeaders": [],
+ "kpiLabels": [
+  "$46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered",
+  "$46.18 SMS Usage",
+  "$46.18",
+  "SMS Usage",
+  "$33.88 Email Usage",
+  "$33.88",
+  "Email Usage",
+  "1,847 SMS Sent · 98.1% delivered",
+  "1,847",
+  "SMS Sent · 98.1% delivered",
+  "42,350 Emails Sent · 99.1% delivered",
+  "42,350",
+  "Emails Sent · 99.1% delivered"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Billing Usage & Billing BILLING Usage & Billing Search ⌘K Ask Shyne MG Current Billing Period — May 2026 May 1 – May 31, 2026 · Next invoice: Jun 1, 2026 · ● 17 days remaining $46.18 SMS Usage $33.88 Email Usage 1,847 SMS Sent · 98.1% delivered 42,350 Emails Sent · 99.1% delivered Overview SMS Usage Email Usage Invoices 1 open Rate Card Spending Alerts Spending Alert Configuration Save Alerts Monthly SMS Spending Threshold Send an email alert when SMS cost exceeds this amount in a single billing period $ Monthly Email Spending Threshold Send an email alert when email cost exceeds this amount in a single billing period $ Total Monthly Usage Threshold Alert when combined SMS + Email usage cost (excluding platform fee) exceeds this amount $ Per-Campaign SMS Budget Cap Pause campaign sends automatically if a single campaign exceeds this SMS cost (0 = no cap) $ Alert Recipient Email All billing alerts will be sent to this address in addition to the account owner 80% Threshold Pre-Warning Also send a warning at 80% of each threshold so you can act before the limit is hit On Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

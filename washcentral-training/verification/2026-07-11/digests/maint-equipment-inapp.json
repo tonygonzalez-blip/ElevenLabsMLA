@@ -1,0 +1,81 @@
+{
+ "url": "/maint-equipment.html",
+ "docTitle": "Equipment Registry — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Maintenance›Equipment Registry"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Asset ID",
+  "Name",
+  "Type",
+  "Location",
+  "Serial #",
+  "Install Date",
+  "Status"
+ ],
+ "kpiLabels": [
+  "4Total Assets 3Operational 1In Repair 0Retired",
+  "4Total Assets",
+  "4",
+  "Total Assets",
+  "3Operational",
+  "3",
+  "Operational",
+  "1In Repair",
+  "1",
+  "In Repair",
+  "0Retired",
+  "0",
+  "Retired"
+ ],
+ "inputPlaceholders": [
+  "Search equipment registry…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | a1000000 | Blower System | Air Dryer | SSNB | — | 2021-03-10 | operational",
+  " | a1000000 | Chemical Pump Array | Chemical System | MLAS | — | 2020-08-22 | in repair",
+  " | a1000000 | Main Tunnel Conveyor | Tunnel | MLAS | — | 2019-04-15 | operational"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports MAINTENANCE Equipment Registry Search ⌘K Ask Shyne MG 4 Total Assets 3 Operational 1 In Repair 0 Retired Asset Growth Last 12 months 84 ↑ +4% Jan Dec Assets by Type By equipment category Conveyor 30% Chemical System 28% POS / Tech 24% Other 18% Equipment Health Operational vs in-repair 93% ONLINE 5% REPAIR 2% RETIRED MAINTENANCE · EQUIPMENT Equipment List 4 records · assets & maintenance status + New Record Export Filters ▾ Search ASSET ID NAME TYPE LOCATION SERIAL # INSTALL DATE STATUS a1000000 Blower System Air Dryer SSNB — 2021-03-10 operational a1000000 Chemical Pump Array Chemical System MLAS — 2020-08-22 in repair a1000000 Main Tunnel Conveyor Tunnel MLAS — 2019-04-15 operational a1000000 POS Terminal 1 POS Terminal MLAS — 2022-01-05 operational Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

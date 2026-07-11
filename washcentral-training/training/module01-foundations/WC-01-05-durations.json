@@ -3,7 +3,7 @@
   "voice": "CDbF7Jxnv3azemv9dXMP",
   "model": "eleven_v3",
   "tailS": 0.4,
-  "totalS": 173.4,
+  "totalS": 181.46,
   "blocks": [
     {
       "block": "s01",
@@ -56,33 +56,33 @@
     {
       "block": "s07",
       "step": "7",
-      "target": "Open a record",
-      "audioS": 11,
-      "stepS": 11.4,
+      "target": "Row click stays on the list",
+      "audioS": 13.79,
+      "stepS": 14.19,
       "file": "WC-01-05-s07.mp3"
     },
     {
       "block": "s08",
       "step": "8",
-      "target": "Detail buttons",
-      "audioS": 13.01,
-      "stepS": 13.41,
+      "target": "No record buttons here",
+      "audioS": 14.6,
+      "stepS": 15,
       "file": "WC-01-05-s08.mp3"
     },
     {
       "block": "s09",
       "step": "9",
-      "target": "Edit form",
-      "audioS": 14.03,
-      "stepS": 14.43,
+      "target": "The form's two exits",
+      "audioS": 14.76,
+      "stepS": 15.16,
       "file": "WC-01-05-s09.mp3"
     },
     {
       "block": "s10",
       "step": "10",
       "target": "Delete guardrail",
-      "audioS": 14.76,
-      "stepS": 15.16,
+      "audioS": 14.99,
+      "stepS": 15.39,
       "file": "WC-01-05-s10.mp3"
     },
     {
@@ -97,8 +97,8 @@
       "block": "s12",
       "step": "12",
       "target": "Recap",
-      "audioS": 25.39,
-      "stepS": 25.79,
+      "audioS": 28.11,
+      "stepS": 28.51,
       "file": "WC-01-05-s12.mp3"
     }
   ]

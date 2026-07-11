@@ -1,0 +1,81 @@
+{
+ "url": "/maint-parts.html",
+ "docTitle": "Parts & Supplies — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Maintenance›Parts & Supplies"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Part #",
+  "Description",
+  "Qty on Hand",
+  "Reorder Pt",
+  "Unit Cost",
+  "Vendor",
+  "Last Ordered"
+ ],
+ "kpiLabels": [
+  "142Total Parts 8Low Stock 12On Order $18,400Total Value",
+  "142Total Parts",
+  "142",
+  "Total Parts",
+  "8Low Stock",
+  "8",
+  "Low Stock",
+  "12On Order",
+  "12",
+  "On Order",
+  "$18,400Total Value",
+  "$18,400",
+  "Total Value"
+ ],
+ "inputPlaceholders": [
+  "Search parts & supplies…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | PRT-001 | Conveyor Drive Belt | 4 | 2 | $84.00 | BeltPro Inc | 2025-05-10",
+  " | PRT-002 | Chemical Pump Seal Kit | 8 | 4 | $22.50 | PumpTech | 2025-05-20",
+  " | PRT-003 | Air Dryer Filter 12\" | 12 | 6 | $14.00 | FilterCo | 2025-05-15"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports MAINTENANCE Parts & Supplies Search ⌘K Ask Shyne MG 142 Total Parts 8 Low Stock 12 On Order $18,400 Total Value Parts Usage Last 12 months $18.4k ↑ +7% Jan Dec Parts by Category By equipment type Conveyor 35% Chemical 28% Electrical 22% Other 15% Parts Availability In stock vs low vs out 88% IN STOCK 6% LOW 6% OUT MAINTENANCE · PARTS Parts List 142 records · spare parts & stock levels + New Record Export Filters ▾ Search PART # DESCRIPTION QTY ON HAND REORDER PT UNIT COST VENDOR LAST ORDERED PRT-001 Conveyor Drive Belt 4 2 $84.00 BeltPro Inc 2025-05-10 PRT-002 Chemical Pump Seal Kit 8 4 $22.50 PumpTech 2025-05-20 PRT-003 Air Dryer Filter 12\" 12 6 $14.00 FilterCo 2025-05-15 PRT-004 POS Power Supply 2 1 $145.00 TechParts 2025-04-30 Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

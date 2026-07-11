@@ -1,0 +1,84 @@
+{
+ "url": "/portal-notifications.html",
+ "docTitle": "Portal Notifications — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Customer Portal›Portal Notifications"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Booking Page (Customer)",
+  "Portal Members",
+  "Portal Messages",
+  "Portal Billing",
+  "Portal Notifications",
+  "Mobile App Branding",
+  "Mobile App Features",
+  "Mobile App Users",
+  "Push Notifications",
+  "Mobile Feedback"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Name",
+  "Type",
+  "Trigger",
+  "Audience",
+  "Sent",
+  "Open Rate",
+  "Status"
+ ],
+ "kpiLabels": [
+  "12Active Notifications 840Sent Today 38%Avg Open Rate 12%Clicks",
+  "12Active Notifications",
+  "12",
+  "Active Notifications",
+  "840Sent Today",
+  "840",
+  "Sent Today",
+  "38%Avg Open Rate",
+  "38%",
+  "Avg Open Rate",
+  "12%Clicks",
+  "12%",
+  "Clicks"
+ ],
+ "inputPlaceholders": [
+  "Search portal notifications…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Welcome Email | Email | Account Created | New Members | 1,840 | 48% | Active",
+  " | Renewal Reminder | Email/SMS | 7 Days Before | All Members | 3,200 | 42% | Active",
+  " | Failed Payment Alert | Email | Billing Failed | All | 84 | 65% | Active"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Digital CUSTOMER PORTAL Booking Page (Customer) Portal Members Portal Messages Portal Billing Portal Notifications MOBILE Mobile App Branding Mobile App Features Mobile App Users Push Notifications Mobile Feedback CUSTOMER PORTAL Portal Notifications Search ⌘K Ask Shyne MG 12 Active Notifications 840 Sent Today 38% Avg Open Rate 12% Clicks Notification Sends Last 12 months 23.4K ↑ +15% Jan Dec By Type Channel distribution Email 48% SMS 28% Push 18% In-App 6% Delivery Status Health overview 81% DELIVERED 12% PENDING 7% FAILED PORTAL · NOTIFICATIONS Notification List 4 records + New Record Export Filters ▾ Search NAME TYPE TRIGGER AUDIENCE SENT OPEN RATE STATUS Welcome Email Email Account Created New Members 1,840 48% Active Renewal Reminder Email/SMS 7 Days Before All Members 3,200 42% Active Failed Payment Alert Email Billing Failed All 84 65% Active Wash Completion SMS SMS After Wash Opted In 18,400 — Active ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,10 +1,10 @@
 # WC-12-04 — Payments & Finance · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps). (Spoken lines unchanged — audio-locked script; the July 11 re-capture of Payment Types contradicts nothing spoken in step 2, which names only the three flags.)
 
 ## Settings header
 
-- **Status:** **READY FOR GENERATION** — audio renders later, once the ElevenLabs key is set in the environment (not set in this session). Voice **WashCentral New** (`CDbF7Jxnv3azemv9dXMP`), model **eleven_v3**, 44.1 kHz MP3. 12 blocks `WC-12-04-s01.mp3`…`WC-12-04-s12.mp3`, one TTS call per step. Break tags to be honored at render.
+- **Status:** **RENDERED (July 11, 2026)** — WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 12 blocks `WC-12-04-s01.mp3`…`WC-12-04-s12.mp3` + joined `WC-12-04-full-narration-v1.0.mp3` (197.92s ≈ 3:18). Step duration = audio + 0.4 s. Per-step render seconds: s01 18.99 · s02 17.48 · s03 18.44 · s04 24.45 · s05 11.23 · s06 11.81 · s07 13.24 · s08 11.73 · s09 13.87 · s10 18.44 · s11 13.56 · s12 19.88.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -80,4 +80,4 @@ _(Estimated total ≈ 4:17 / ~257 s at ~145 wpm, pending render. Replace with me
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, navigation paths, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and the version line.
 - Read-only throughout: **+ New Record**, edit, and save are never clicked. Step 4's Discount detail is parked (`settings-discounts-edit.html` 404 in the July 9 corpus); the pattern is narrated and cross-referenced to WC-12-03, with no fabricated detail content.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.** (July 11 credentialed re-capture: Payment Types live — 9 rows, KPI 9 / 9 / 0 — consistent with every spoken line; Discount detail still parked.)

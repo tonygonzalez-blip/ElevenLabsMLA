@@ -1,0 +1,74 @@
+{
+ "url": "/settings-blacklisted.html",
+ "docTitle": "Blacklisted Plates",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Blacklisted"
+ ],
+ "railButtons": [
+  "Primary navigation",
+  "Previous page",
+  "Next page"
+ ],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations",
+  "+ New Record"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Plate",
+  "Terminal",
+  "Created By",
+  "Created"
+ ],
+ "kpiLabels": [
+  "0Total Blacklisted",
+  "0",
+  "Total Blacklisted"
+ ],
+ "inputPlaceholders": [
+  "Search blacklisted plates…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "No blacklisted plates found. The POS database may not be configured for this tenant yet."
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General Analytics Locations Services Payments & Finance Hardware UI & Display Users & Security Operations VIP & Membership Automation Customer Portal AI Agent Marketing Integrations SETTINGS Blacklisted Search ⌘K Ask Shyne MG 0 Total Blacklisted SETTINGS · BLACKLISTED PLATES Blacklisted Plates List 0 records + New Record PLATE TERMINAL CREATED BY CREATED No blacklisted plates found. The POS database may not be configured for this tenant yet. ROWS PER PAGE: 25 50 100 25 1–1 of 1 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

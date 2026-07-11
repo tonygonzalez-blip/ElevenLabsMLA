@@ -1,0 +1,105 @@
+{
+  "base": "WC-PB-13",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 236.75,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Scope the ticket",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-PB-13-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open the Zoho Desk connector",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-PB-13-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Four summary tiles",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-PB-13-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Locate Test Connection, never click",
+      "audioS": 16.93,
+      "stepS": 17.33,
+      "file": "WC-PB-13-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Credentials and TOKEN EXPIRY",
+      "audioS": 22.75,
+      "stepS": 23.15,
+      "file": "WC-PB-13-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Enabled, sync, Instructions",
+      "audioS": 16.12,
+      "stepS": 16.52,
+      "file": "WC-PB-13-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Help Desk (Zoho) surface",
+      "audioS": 22.28,
+      "stepS": 22.68,
+      "file": "WC-PB-13-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "System Users SSO column",
+      "audioS": 22.6,
+      "stepS": 23,
+      "file": "WC-PB-13-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Accounting connector",
+      "audioS": 20.43,
+      "stepS": 20.83,
+      "file": "WC-PB-13-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Rule out transient errors",
+      "audioS": 16.35,
+      "stepS": 16.75,
+      "file": "WC-PB-13-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Package the escalation",
+      "audioS": 17.71,
+      "stepS": 18.11,
+      "file": "WC-PB-13-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 20.04,
+      "stepS": 20.44,
+      "file": "WC-PB-13-s12.mp3"
+    }
+  ]
+}

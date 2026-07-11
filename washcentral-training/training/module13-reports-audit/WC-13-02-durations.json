@@ -1,0 +1,137 @@
+{
+  "base": "WC-13-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 228.88,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "AUDIT group",
+      "audioS": 13.48,
+      "stepS": 13.88,
+      "file": "WC-13-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open Audit Log",
+      "audioS": 12.36,
+      "stepS": 12.76,
+      "file": "WC-13-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "KPI band",
+      "audioS": 14.37,
+      "stepS": 14.77,
+      "file": "WC-13-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Event Volume",
+      "audioS": 11.15,
+      "stepS": 11.55,
+      "file": "WC-13-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Action Types",
+      "audioS": 13.71,
+      "stepS": 14.11,
+      "file": "WC-13-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Event Severity",
+      "audioS": 13.71,
+      "stepS": 14.11,
+      "file": "WC-13-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Audit Log List",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-13-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Deleted row",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-13-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "User Activity",
+      "audioS": 10.45,
+      "stepS": 10.85,
+      "file": "WC-13-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "User Activity KPIs",
+      "audioS": 13.87,
+      "stepS": 14.27,
+      "file": "WC-13-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "User Activity columns",
+      "audioS": 16.59,
+      "stepS": 16.99,
+      "file": "WC-13-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Change History",
+      "audioS": 10.45,
+      "stepS": 10.85,
+      "file": "WC-13-02-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Change History KPIs",
+      "audioS": 11.96,
+      "stepS": 12.36,
+      "file": "WC-13-02-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Change History columns",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-13-02-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Price-change example",
+      "audioS": 17.32,
+      "stepS": 17.72,
+      "file": "WC-13-02-s15.mp3"
+    },
+    {
+      "block": "s16",
+      "step": "16",
+      "target": "Recap",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-13-02-s16.mp3"
+    }
+  ]
+}

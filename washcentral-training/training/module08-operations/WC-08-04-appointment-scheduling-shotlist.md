@@ -1,8 +1,8 @@
 # WC-08-04 — Appointment Scheduling · Snagit Shot List (operator-ready)
 
-v1.0 · July 9, 2026 · Target output: **WC-08-04-appointment-scheduling-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+v1.1 · July 11, 2026 · Target output: **WC-08-04-appointment-scheduling-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
 Step numbers match the guide and the narration blocks one-to-one (15 steps).
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Pre-roll checklist (not recorded)
 
@@ -32,8 +32,8 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 11 | Point to the pager at the bottom of the list | Page-size control reads **25**; pager shows **‹ 1 ›** | 2s | Callout ⑪ on the page size and pager; do not change the page |
 | 12 | Click **Calendar** | The toggle highlight moves to **Calendar**; the same bookings redisplay as a calendar layout; no data changes | 3s | Callout ⑫ "view only, nothing booked or moved"; hold on the switched view; the specific calendar layout is TBD — parked (new item), so do not over-narrate its contents on camera |
 | 13 | Click **List** | The toggle highlight returns to **List**; the row-by-row table comes back exactly as before | 2s | Callout ⑬ "fully reversible"; confirm the list looks identical to step 9 |
-| 14 | Slowly sweep the cursor down the rest of the **SCHEDULER** sidebar group — do NOT click any item | Group lists **Schedulable Services**, **Resources**, **Business Hours**, **Messaging**, **Payments**, **Reports** below **Appointments** | 4s | Callout ⑭ naming the six siblings "menu level only, each its own lesson"; STOP callout on **Messaging** with a "send-type, do not open" note; cursor hovers, never clicks |
-| 15 | Sweep the cursor back to the KPI band and the **List / Calendar** toggle to close the tour | Recap state: KPIs and panels read the booking picture; the list works individual bookings; **List / Calendar** flips the view without changing data | 3s | Callout ⑮ tying the page together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+| 14 | Slowly sweep the cursor down the rest of the **SCHEDULER** sidebar group — do NOT click any item | Group lists **Schedulable Services**, **Resources**, **Business Hours**, **Messaging**, **Payments**, **Reports** below **Appointments**. All six are real, live pages (verified July 11 in-app; their direct URLs 404 — sidebar is the route in) | 4s | Callout ⑭ naming the six siblings "each its own lesson — page facts in the guide Notes"; STOP callout on **Messaging** with a "send-type, do not open" note; cursor hovers, never clicks (the tour stays on Appointments by design, not because the siblings are missing) |
+| 15 | Sweep the cursor back to the KPI band and the **List / Calendar** toggle to close the tour | Recap state: KPIs and panels read the booking picture; the list works individual bookings; **List / Calendar** flips the view without changing data | 3s | Callout ⑮ tying the page together; end card / verification stamp "Verified against demo.washcentral.com on July 11, 2026."; fade out |
 
 Estimated runtime: about 5:00 (narration blocks sum to an estimated ~4:54 at ~145 wpm; final timing pending render). If any unexpected dialog, error, changed data, or a **Still there?** timeout prompt appears: stop, note it, dismiss off-camera (**Stay Logged In** / **Stay Active**), resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
 

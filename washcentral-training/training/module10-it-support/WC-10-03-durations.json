@@ -1,0 +1,89 @@
+{
+  "base": "WC-10-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 168.09,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "IT & Support sidebar",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-10-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open Help Desk (Zoho)",
+      "audioS": 19.88,
+      "stepS": 20.28,
+      "file": "WC-10-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Open Zoho Desk settings",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-10-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Header & status",
+      "audioS": 14.52,
+      "stepS": 14.92,
+      "file": "WC-10-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Status tiles",
+      "audioS": 13.71,
+      "stepS": 14.11,
+      "file": "WC-10-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Credentials",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-10-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Routing, sync, behavior, mapping",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-10-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Settings & Instructions tabs",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-10-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Guardrail buttons",
+      "audioS": 18.83,
+      "stepS": 19.23,
+      "file": "WC-10-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Recap",
+      "audioS": 19.88,
+      "stepS": 20.28,
+      "file": "WC-10-03-s10.mp3"
+    }
+  ]
+}

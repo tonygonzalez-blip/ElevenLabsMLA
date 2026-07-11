@@ -1,8 +1,8 @@
 # WC-06-01 — Executive Dashboard · Snagit Shot List (operator-ready)
 
-v1.0 · July 9, 2026 · Target output: **WC-06-01-executive-dashboard-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+v1.1 · July 11, 2026 · Target output: **WC-06-01-executive-dashboard-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
 Step numbers match the guide and the narration blocks one-to-one (13 steps).
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Pre-roll checklist (not recorded)
 
@@ -12,7 +12,7 @@ Step numbers match the guide and the narration blocks one-to-one (13 steps).
 - [ ] Snagit: cursor highlight ON, click animation ON; on-screen keystroke display can stay OFF (this lesson uses no keyboard entry).
 - [ ] Header, section band, and the full KPI card row are visible; the period row reads **Today Week Month Quarter YTD 1Y** with **Month** selected before rolling.
 - [ ] This lesson has no destructive or send controls. The only clicks are the period toggles (step 4), the **REVENUE** card (step 11), and **Back to Executive Dashboard** (step 12). On the Revenue Detail page, do NOT click **Open Reports** or the **Jump to workflow** links; they navigate away.
-- [ ] Plan-listed **GOALS · Q2 2026** panel is not present in the captured corpus and is parked; do not stage or imply it (see step 10 note).
+- [ ] The **GOALS · Q2 2026** panel ("Where we are vs targets", five target-vs-actual bars incl. Customer NPS) was confirmed below the fold in the July 11 full-page capture. The narration does not cover it, so steps 9–10 scroll past it without lingering; it may appear at the bottom of frame during the step 10 hold, which is fine. Extending the lesson to narrate it needs a script revision + render (flagged in the return).
 
 ## Shots
 
@@ -28,11 +28,11 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 6 | Continue the sweep across the last three KPI cards | **CONVERSION RATE** **7.1%** ↓ 0.3 pt vs target · **AVG VISIT FREQUENCY** **2.6×** ↑ 0.2× per member / mo · **LABOR %** **17.4%** "↑ 2.4 pt — over target 15%" rendered in amber | 4s | Callout ⑥ with a highlight ring on the amber **LABOR %** card; zoom-in 150% on the amber value + delta (1.5s); no click |
 | 7 | Point to the **Revenue · last 12 months** panel; trace the legend | Panel subtitle "Membership recurring + retail visits, network-wide"; headline **$15.8M** ↑ 11.4% trailing 12 mo; stacked area chart May→Apr; legend **Membership**, **Pay-per-wash**, **Retail (gift cards, books)** | 4s | Callout ⑦ on the panel title + legend; slow sweep across the three legend swatches (about 2s); no click |
 | 8 | Sweep down the **Location health** panel rows | Subtitle "Status across all 6 locations"; rows: **Fort Lauderdale** 98.7% · **Miami North** 98.7% · **Boca Raton** 100% · **Tampa West** 97.3% · **Orlando Central** 89.3% · **Naples Coast** 81.3% conv to target, each with revenue · cars · Labor % and a colored status dot | 4s | Callout ⑧ tracking the status dots green→red; brief pause on the red **Naples Coast** dot; no click |
-| 9 | Point to the **Members vs churn** panel (scroll down if below the fold) | Subtitle "Monthly active members, gross adds, churn — last 12 months"; a line (active members) over bars (gross adds and churn) across twelve months | 3s | Callout ⑨ on the panel title + subtitle; do not quote per-bar values on screen; no click |
-| 10 | Point to the **Revenue mix** panel beside it | Subtitle "Composition this month"; a donut chart of this month's revenue split | 3s | Callout ⑩ on the donut; describe as "shape of the month's revenue"; do NOT stage a GOALS panel (parked); no click |
+| 9 | Point to the **Members vs churn** panel (scroll down if below the fold) | Subtitle "Monthly active members, gross adds, churn — last 12 months"; a line (**Active members (right)**) over paired bars (**Gross adds (left)**, **Churn (left)**) across twelve months (July 11 full-page capture) | 3s | Callout ⑨ on the panel title + subtitle; do not quote per-bar values on screen (unlabeled on the chart); no click |
+| 10 | Point to the **Revenue mix** panel beside it | Subtitle "Composition this month"; a donut chart labeled **Membership 68% · Pay-per-wash 22% · Retail 7% · Add-ons 3%** (July 11) | 3s | Callout ⑩ on the donut legend; describe as "shape of the month's revenue"; the **GOALS · Q2 2026** section sits just below and may enter frame — do not linger on it (not narrated in this version); no click |
 | 11 | Click the **REVENUE** KPI card | **Revenue Detail** page opens: breadcrumb **Dashboard › Revenue Detail**, **Live Prototype** chip, **Back to Executive Dashboard** button; cards **Revenue Today** **$184,260**, **Avg Ticket** **$26.93**, **Member Revenue** **$112,440**, **Add-on Revenue** **$18,960**; panels **30-day revenue trend**, **Revenue actions**, **Revenue by location** table (**Location · Washes · Avg Ticket · Revenue**) | 4s | Callout ⑪ "cards are launch points"; slow sweep over the four detail cards then the table header; do NOT click **Open Reports** or **Jump to workflow** links |
 | 12 | Click **Back to Executive Dashboard** | The detail view closes; Executive Dashboard returns unchanged, still on **Month** | 3s | Callout ⑫ "returns unchanged"; confirm the period still reads **Month** |
-| 13 | None — slow sweep from the period row, across the KPI cards, down to the panels | Recap state: pick a **period**, read the six cards for scale and health, then the panels for trend, sites, members, and mix; nothing edited, and any card drills deeper | 3s | Callout ⑬ tying the scan together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+| 13 | None — slow sweep from the period row, across the KPI cards, down to the panels | Recap state: pick a **period**, read the six cards for scale and health, then the panels for trend, sites, members, and mix; nothing edited, and any card drills deeper | 3s | Callout ⑬ tying the scan together; end card / verification stamp "Verified against demo.washcentral.com on July 11, 2026."; fade out |
 
 Estimated runtime: about 4:24 (estimated narration total 263.9s at ~145 wpm, pending render); with the sweeps and holds above the finished video lands near 5 min. If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
 

@@ -1,0 +1,105 @@
+{
+  "base": "WC-10-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 181.02,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Support Tickets page",
+      "audioS": 13.32,
+      "stepS": 13.72,
+      "file": "WC-10-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI row",
+      "audioS": 15.57,
+      "stepS": 15.97,
+      "file": "WC-10-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Ticket Volume",
+      "audioS": 12.67,
+      "stepS": 13.07,
+      "file": "WC-10-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "By Category",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-10-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Ticket Health",
+      "audioS": 13.17,
+      "stepS": 13.57,
+      "file": "WC-10-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Ticket List",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-10-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Search & Filters",
+      "audioS": 14.03,
+      "stepS": 14.43,
+      "file": "WC-10-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Columns",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-10-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Example rows",
+      "audioS": 18.44,
+      "stepS": 18.84,
+      "file": "WC-10-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Pagination",
+      "audioS": 16.27,
+      "stepS": 16.67,
+      "file": "WC-10-02-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "New Record",
+      "audioS": 13.87,
+      "stepS": 14.27,
+      "file": "WC-10-02-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Recap",
+      "audioS": 14.92,
+      "stepS": 15.32,
+      "file": "WC-10-02-s12.mp3"
+    }
+  ]
+}

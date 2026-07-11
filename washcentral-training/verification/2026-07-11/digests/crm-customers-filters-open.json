@@ -1,0 +1,110 @@
+{
+ "url": "/crm-customers.html",
+ "docTitle": "Customers — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "CRM›Customers"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Customers",
+  "Gift Cards",
+  "House Accounts",
+  "Contract Renewals",
+  "Prepaid Books",
+  "Prepaid Activity",
+  "Vehicles",
+  "Retail Customers",
+  "Bundles",
+  "Fundraiser",
+  "Agent Console"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Retention Log",
+  "Delete",
+  "+ Add Customer",
+  "Filters 0",
+  "Search",
+  "✕ Clear all",
+  "✓ Apply Filters",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "65,753",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Customer",
+  "Location",
+  "Plan",
+  "Member Since",
+  "Status",
+  "Visits",
+  "Total Spend",
+  "Last Visit"
+ ],
+ "kpiLabels": [
+  "2,418 Total Customers 1,964 Active Members 146 At Risk 308 Prospects",
+  "2,418 Total Customers",
+  "2,418",
+  "Total Customers",
+  "1,964 Active Members",
+  "1,964",
+  "Active Members",
+  "146 At Risk",
+  "146",
+  "At Risk",
+  "308 Prospects",
+  "308",
+  "Prospects"
+ ],
+ "inputPlaceholders": [
+  "Search by name, plate, email, location, or plan…",
+  "e.g. Gonzalez",
+  "e.g. CUS-10284",
+  "e.g. FLA-4821",
+  "e.g. @email.com",
+  "All Locations — type to filter",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [
+  "Name",
+  "Customer ID",
+  "License Plate",
+  "Email",
+  "Location",
+  "Membership Plan",
+  "Status",
+  "Sign Up Date"
+ ],
+ "chips": [
+  "No plan",
+  "Inactive",
+  "Cleanest Ultra Unlimited",
+  "Active",
+  "Cleanest Ultra Unlimited - Founders",
+  "Cleanest Unlimited"
+ ],
+ "firstRows": [
+  " | UnknownCUST-8888000000771774 | — | No plan | — | Inactive | 0 | $0.00 | —",
+  " | UnknownCUST-8888000000683023 | — | No plan | — | Inactive | 0 | $0.00 | —",
+  " | LyleCUST-4433000000098467 | — | No plan | — | Inactive | 0 | $0.00 | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL CRM CRM Customers Gift Cards House Accounts Contract Renewals Prepaid Books Prepaid Activity Vehicles Retail Customers Bundles Fundraiser SERVICE DESK Agent Console CRM Customers Search ⌘K Ask Shyne MG 2,418 Total Customers 1,964 Active Members 146 At Risk 308 Prospects Member Growth Last 12 months 24,816 ↑ +12.3% Jan Dec Plan Distribution Active members by plan Unlimited Plus 38% Unlimited 27% Pay Per Wash 22% Premium Detail 13% Risk Profile Customer health at a glance 81% LOW 13% MED 6% HIGH 1,961 healthy 146 at risk CRM · MEMBER DATABASE Customer List All customers Retention Log Delete + Add Customer Filters Search FILTER BY FIELD ✕ Clear all NAME CUSTOMER ID LICENSE PLATE EMAIL LOCATION MEMBERSHIP PLAN All Plans ▾ STATUS All Statuses ▾ SIGN UP DATE From To ✓ Apply Filters CUSTOMER LOCATION PLAN MEMBER SINCE STATUS VISITS TOTAL SPEND LAST VISIT Unknown CUST-8888000000771774 — No plan — Inactive 0 $0.00 — Unknown CUST-8888000000683023 — No plan — Inactive 0 $0.00 — Lyle CUST-4433000000098467 — No plan — Inactive 0 $0.00 — VISA CARDHOLDER CUST-4420000001643501 CLE17 Cleanest Ultra Unlimited Jan 2026 Active 1 $0.00 Jan 10, 2026 PATRICIA A COOK CUST-4420000001643489 CLE17 Cleanest Ultra Unlimited Jan 2026 Active 1 $20.00 Jan 10, 2026 CRYSTAL TIDMORE CUST-4420000001643482 CLE17 Cleanest Ultra Unlimited Jan 2026 Active 1 $0.00 Jan 10, 2026 VISA CARDHOLDER CUST-4420000001643370 CLE17 Cleanest Ultra Unlimited - Founders Jan 2026 Active 1 $0.00 J"
+}

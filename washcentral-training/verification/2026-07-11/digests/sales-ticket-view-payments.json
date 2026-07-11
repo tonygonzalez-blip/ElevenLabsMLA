@@ -1,0 +1,80 @@
+{
+ "url": "/sales-ticket-view.html?ticket=1501159",
+ "docTitle": "Ticket View — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Ticket View"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "← Back to Tickets",
+  "Refund",
+  "Main",
+  "Details",
+  "Payments",
+  "Refunds",
+  "Notes",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Main",
+  "Details",
+  "Payments",
+  "Refunds",
+  "Notes"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Payment ID",
+  "Method",
+  "Amount",
+  "Reference"
+ ],
+ "kpiLabels": [
+  "$13.00Ticket Total $213.49Payments Paid / Not WashedStatus Credit CardPayment Type",
+  "$13.00Ticket Total",
+  "$13.00",
+  "Ticket Total",
+  "$213.49Payments",
+  "$213.49",
+  "Payments",
+  "Paid / Not WashedStatus",
+  "Paid / Not Washed",
+  "Status",
+  "Credit CardPayment Type",
+  "Credit Card",
+  "Payment Type"
+ ],
+ "inputPlaceholders": [
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "2021-02-19 12:17 | 14426753 | CREDIT CARD | $10.00 | —",
+  "2021-05-01 13:58 | 16508430 | CASH | $0.00 | —",
+  "2021-06-05 15:59 | 17593327 | CASH | $0.00 | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Ticket View Search ⌘K Ask Shyne MG A349461 Sales · Ticket · ID: 1501159 · 111 - Lancaster River Valley · 2022-10-23 18:24 ← Back to Tickets Refund $13.00 Ticket Total $213.49 Payments Paid / Not Washed Status Credit Card Payment Type Main Details Payments Refunds Notes PAYMENT RECORDS DATE PAYMENT ID METHOD AMOUNT REFERENCE 2021-02-19 12:17 14426753 CREDIT CARD $10.00 — 2021-05-01 13:58 16508430 CASH $0.00 — 2021-06-05 15:59 17593327 CASH $0.00 — 2021-06-26 21:06 18195638 CASH $0.00 — 2021-07-28 19:48 19105069 CREDIT CARD $18.00 — 2021-08-03 16:55 23023161 CASH $1.51 — 2021-12-01 07:09 27096848 CREDIT CARD $24.99 — 2021-12-07 22:46 27300082 CASH $5.00 — 2022-01-08 19:06 28156615 CASH $0.00 — 2022-05-12 19:24 33138133 CASH $0.00 — 2022-05-15 13:49 33277794 CASH $0.00 — 2022-10-23 18:24 40098423 CREDIT CARD $13.00 — 2022-11-15 07:05 40995095 CREDIT CARD $28.99 — 2022-11-23 18:20 41323018 DISCOUNT $0.00 — 2023-05-05 11:01 48737702 CASH $0.00 — 2023-05-10 06:02 49046079 CREDIT CARD $36.00 — 2023-07-10 22:28 52652110 CASH $0.00 — 2024-04-26 11:58 67912584 CASH $0.00 — 2024-08-15 17:02 74932033 CASH $0.00 — 2024-08-25 18:59 75552184 CASH $0.00 — 2025-01-11 17:35 83781769 CASH $0.00 — 2025-02-08 09:04 86072899 CREDIT CARD $36.00 — 2025-04-12 08:13 91155332 CREDIT CARD $40.00 — 2025-04-23 13:2"
+}

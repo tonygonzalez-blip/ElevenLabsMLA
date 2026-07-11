@@ -1,0 +1,95 @@
+{
+ "url": "/settings-locations.html",
+ "docTitle": "Locations",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›Locations"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Locations",
+  "Location Groups",
+  "Location Sub-Brand",
+  "Payment Credential Approval",
+  "Integrations"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Filters0",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Code",
+  "Name",
+  "Address",
+  "City",
+  "State",
+  "Zip",
+  "Phone",
+  "Last Sync"
+ ],
+ "kpiLabels": [
+  "6Total Locations 6Active 2States TodayLast Sync",
+  "6Total Locations",
+  "6",
+  "Total Locations",
+  "6Active",
+  "Active",
+  "2States",
+  "2",
+  "States",
+  "TodayLast Sync",
+  "Today",
+  "Last Sync"
+ ],
+ "inputPlaceholders": [
+  "Search locations…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  "212 | Richmond Chester | 1929 Chester Blvd | Richmond | IN | 47374 | 765-598-4044 | —",
+  "211 | Richmond National | 5151 E. National Road | Richmond | IN | 47374 | 765-598-4422 | —",
+  "533 | Owning Mills | 10215 Reisterstown Road | Owning Mills | MD | 21117 | 111-111-1111 | —"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General ▾ Analytics ▾ Locations ▾ Locations Location Groups Location Sub-Brand Payment Credential Approval Services ▾ Payments & Finance ▾ Hardware ▾ UI & Display ▾ Users & Security ▾ Operations ▾ VIP & Membership ▾ Automation ▾ Customer Portal ▾ AI Agent ▾ Marketing ▾ Integrations SETTINGS Locations Search ⌘K Ask Shyne MG 6 Total Locations 6 Active 2 States Today Last Sync Location Growth Trend Last 12 months 6 ↑ +20% Jan Dec Location Breakdown By state New Jersey 67% New York 17% Online 16% Other 0% Location Status Configuration health 100% ACTIVE 0% DRAFT 0% INACTIVE SETTINGS · LOCATIONS Locations List 144 records + New Record Filters Search CODE NAME ADDRESS CITY STATE ZIP PHONE LAST SYNC 212 Richmond Chester 1929 Chester Blvd Richmond IN 47374 765-598-4044 — 211 Richmond National 5151 E. National Road Richmond IN 47374 765-598-4422 — 533 Owning Mills 10215 Reisterstown Road Owning Mills MD 21117 111-111-1111 — 809 Dearborn Heights 25600 Michigan Avenue Dearborn Heights MI 48125 248-247-6260 — 408 Lambertville Secor 7326 Secor Rd Lambertville MI 48144 734-790-5527 — 802 Lincoln Park 2350 Fort Street Lincoln Park MI 48146 248-247-6330 — 817 Livonia Plymouth 34835 Plymouth Rd Livonia MI 48150 248-247-6350 — 814 Livonia 20340 Farmington Road Livonia MI 48152 248-247-6270 — 829 Madison John 29448 John R Road Madison Heights MI 48071 111-111-1111 — 804 Redford Telegraph 9423 Telegraph Road Redford MI 4823"
+}

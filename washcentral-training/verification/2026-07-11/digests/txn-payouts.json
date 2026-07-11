@@ -1,0 +1,94 @@
+{
+ "url": "/txn-payouts.html",
+ "docTitle": "Payouts — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Transactions›Payouts"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Tickets",
+  "Ticket Details",
+  "Payments",
+  "Refund Approvals",
+  "Payouts",
+  "Shifts",
+  "Declined Credit Card Log",
+  "Gift Card Transactions",
+  "House Account Transactions"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "Filters ▾",
+  "Search",
+  "+ New Record",
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "1,230",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "Export",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "1,230",
+  "›"
+ ],
+ "tableHeaders": [
+  "Location",
+  "Payout ID",
+  "Shift #",
+  "Cashier",
+  "Terminal",
+  "Vendor",
+  "Amount"
+ ],
+ "kpiLabels": [
+  "30,750Total Payouts 44%Petty Cash (30d) 39%Misc. (30d) $6,384.99Volume (30d)",
+  "30,750Total Payouts",
+  "30,750",
+  "Total Payouts",
+  "44%Petty Cash (30d)",
+  "44%",
+  "Petty Cash (30d)",
+  "39%Misc. (30d)",
+  "39%",
+  "Misc. (30d)",
+  "$6,384.99Volume (30d)",
+  "$6,384.99",
+  "Volume (30d)"
+ ],
+ "inputPlaceholders": [
+  "Search by vendor or cashier...",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 110 - Heath Hebron | PYT-32757 | 35623 | Noah Murphy | POS | Misc. | $5.00",
+  " | 101 - Columbus E Broad | PYT-32756 | 37672 | TJ Cameron | POS | Misc. | $5.89",
+  " | 212 - Richmond Chester | PYT-32755 | 13843 | Amadeus Long | ACE12-POS | Misc. | $25.00"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Sales Tickets Ticket Details Payments Refund Approvals Payouts Shifts Declined Credit Card Log Gift Card Transactions House Account Transactions TRANSACTIONS Payouts Search ⌘K Ask Shyne MG 30,750 Total Payouts 44% Petty Cash (30d) 39% Misc. (30d) $6,384.99 Volume (30d) Payout Trend Last 12 months $18,900 ↑ +7% Jan Dec By Vendor Payout mix (30d) Petty Cash 44% Misc. 39% Change Dispense Error 13% Customer Concern 4% Payout Status Disbursement overview Approval/dispute status isn't tracked in this POS system — Payouts records completed disbursements only. SEARCH PAYOUTS Filters ▾ Search Payout List 30,750 RECORDS + New Record Export LOCATION PAYOUT ID SHIFT # CASHIER TERMINAL VENDOR AMOUNT 110 - Heath Hebron PYT-32757 35623 Noah Murphy POS Misc. $5.00 101 - Columbus E Broad PYT-32756 37672 TJ Cameron POS Misc. $5.89 212 - Richmond Chester PYT-32755 13843 Amadeus Long ACE12-POS Misc. $25.00 607 - Pittsburgh Mt Nebo PYT-32754 11096 Jack Cyphers CLE607-POS Petty Cash $28.00 502 - Virginia Beach S Military PYT-32753 14636 Jasmin Briddell POS Misc. $10.00 114 - Bexley E Livingston PYT-32752 0 Vincent McCarthy POS Petty Cash $16.07 804 - Redford Telegraph PYT-32751 203 Montell Sewell CLE804-POS1 Petty Cash $7.00 804 - Redford Telegraph PYT-32750 203 Montell Sewell CLE804-POS1 Misc. $7.00 612 - Route 30 Irwin PYT-32749 7654 Demarcus Flint CLEAN612-POS Misc. $18.18 215 - Kettering Wilmington PYT-32748 8314 Michael Jones ACE15-POS Misc. $10.20 612 - Ro"
+}

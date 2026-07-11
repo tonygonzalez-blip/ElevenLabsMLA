@@ -1,0 +1,88 @@
+{
+ "url": "/settings-system-users.html",
+ "docTitle": "System Users",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Settings›System Users"
+ ],
+ "railButtons": [
+  "Primary navigation",
+  "Previous page",
+  "Next page"
+ ],
+ "sidebarItems": [
+  "Close Settings",
+  "All Settings",
+  "Integrations",
+  "+ New Record"
+ ],
+ "buttons": [
+  "Close Settings",
+  "General▾",
+  "Analytics▾",
+  "Locations▾",
+  "Services▾",
+  "Payments & Finance▾",
+  "Hardware▾",
+  "UI & Display▾",
+  "Users & Security▾",
+  "Operations▾",
+  "VIP & Membership▾",
+  "Automation▾",
+  "Customer Portal▾",
+  "AI Agent▾",
+  "Marketing▾",
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "25",
+  "‹",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "321",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "User Name",
+  "User Code",
+  "User Level",
+  "Email",
+  "Phone",
+  "Active",
+  "SSO",
+  "Last Login"
+ ],
+ "kpiLabels": [
+  "8,022Total Users",
+  "8,022",
+  "Total Users"
+ ],
+ "inputPlaceholders": [
+  "Search by name, code, or email…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [
+  "Yes",
+  "No"
+ ],
+ "firstRows": [
+  "MLADev | 6326457 | Administrator | — | 963-264-5799 | Yes | No | 2026-07-09 19:32",
+  "repTestPostIndex | 111111 | ReportOnly | — | — | Yes | No | 2026-06-22 15:20",
+  "Rinsed | 75147514 | Administrator | — | — | Yes | No | 2026-01-11 06:10"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Settings Close Settings All Settings General Analytics Locations Services Payments & Finance Hardware UI & Display Users & Security Operations VIP & Membership Automation Customer Portal AI Agent Marketing Integrations SETTINGS System Users Search ⌘K Ask Shyne MG 8,022 Total Users SETTINGS · SYSTEM USERS System Users List 8,022 records + New Record USER NAME USER CODE USER LEVEL EMAIL PHONE ACTIVE SSO LAST LOGIN MLADev 6326457 Administrator — 963-264-5799 Yes No 2026-07-09 19:32 repTestPostIndex 111111 ReportOnly — — Yes No 2026-06-22 15:20 Rinsed 75147514 Administrator — — Yes No 2026-01-11 06:10 EWC612 612612612 Cashiers — — Yes No 2026-01-11 04:08 EWC206 206201 Cashiers — — Yes No 2026-01-11 03:22 EWC401 4014340 Cashiers — — Yes No 2026-01-11 03:19 EWC409 409409409 Cashiers — — Yes No 2026-01-11 03:04 automationadmin 1217 Administrator posintegrations@rinsed.co — Yes No 2026-01-11 03:01 EWC115 1151296 Cashiers — — Yes No 2026-01-11 02:18 EWC201 2017175 Cashiers — — Yes No 2026-01-11 02:09 EWC514 5142825 Cashiers — — Yes No 2026-01-11 02:00 Jocelynn Pfister 101423 Managers — 380-710-1423 Yes No 2026-01-11 01:58 EWC118 1186071 Cashiers — — Yes No 2026-01-11 01:53 EWC503 5061005 Cashiers a@b.com — Yes No 2026-01-11 01:51 EWC135 135135135 Cashiers — — Yes No 2026-01-11 01:46 EWC128 128128999 Cashiers jacob.bogan@moomoocarwash.com 937-725-0700 Yes No 2026-01-11 01:45 EWC505 5054620 Cashiers . — Yes No 2026-01-11 01:44 EWC407 407407407 Cashier"
+}

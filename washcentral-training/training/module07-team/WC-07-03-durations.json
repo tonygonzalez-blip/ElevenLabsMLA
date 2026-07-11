@@ -1,0 +1,129 @@
+{
+  "base": "WC-07-03",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 236.97,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "QA Dashboard",
+      "audioS": 16.67,
+      "stepS": 17.07,
+      "file": "WC-07-03-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI band",
+      "audioS": 13.24,
+      "stepS": 13.64,
+      "file": "WC-07-03-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Average Score Trend",
+      "audioS": 12.2,
+      "stepS": 12.6,
+      "file": "WC-07-03-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Score Distribution",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-07-03-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Checkpoint Hit Rates",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-07-03-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Coaching Opportunity",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-07-03-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Top Performers",
+      "audioS": 14.6,
+      "stepS": 15,
+      "file": "WC-07-03-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Recent Conversations",
+      "audioS": 15.96,
+      "stepS": 16.36,
+      "file": "WC-07-03-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Scoring Scripts KPIs",
+      "audioS": 15.57,
+      "stepS": 15.97,
+      "file": "WC-07-03-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Scoring Script Library",
+      "audioS": 15.31,
+      "stepS": 15.71,
+      "file": "WC-07-03-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Best-practice note",
+      "audioS": 15.88,
+      "stepS": 16.28,
+      "file": "WC-07-03-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Conversations KPIs",
+      "audioS": 13.79,
+      "stepS": 14.19,
+      "file": "WC-07-03-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "All Conversations log",
+      "audioS": 21.24,
+      "stepS": 21.64,
+      "file": "WC-07-03-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Tie the pages together",
+      "audioS": 15.15,
+      "stepS": 15.55,
+      "file": "WC-07-03-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Recap",
+      "audioS": 17.55,
+      "stepS": 17.95,
+      "file": "WC-07-03-s15.mp3"
+    }
+  ]
+}

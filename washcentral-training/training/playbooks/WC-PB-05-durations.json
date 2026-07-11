@@ -1,0 +1,97 @@
+{
+  "base": "WC-PB-05",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 207.87,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Read the ledger",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-PB-05-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Find the batch that's off",
+      "audioS": 23.33,
+      "stepS": 23.73,
+      "file": "WC-PB-05-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Narrow the list",
+      "audioS": 13.32,
+      "stepS": 13.72,
+      "file": "WC-PB-05-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Locate Resolve batch",
+      "audioS": 15.15,
+      "stepS": 15.55,
+      "file": "WC-PB-05-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Decide what to chase",
+      "audioS": 21.63,
+      "stepS": 22.03,
+      "file": "WC-PB-05-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Cross-check Shifts",
+      "audioS": 18.6,
+      "stepS": 19,
+      "file": "WC-PB-05-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Shifts load state",
+      "audioS": 13.01,
+      "stepS": 13.41,
+      "file": "WC-PB-05-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Cross-check Payouts",
+      "audioS": 16.77,
+      "stepS": 17.17,
+      "file": "WC-PB-05-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Payouts scope and load state",
+      "audioS": 18.76,
+      "stepS": 19.16,
+      "file": "WC-PB-05-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Package the escalation",
+      "audioS": 27.48,
+      "stepS": 27.88,
+      "file": "WC-PB-05-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Recap",
+      "audioS": 18.99,
+      "stepS": 19.39,
+      "file": "WC-PB-05-s11.mp3"
+    }
+  ]
+}

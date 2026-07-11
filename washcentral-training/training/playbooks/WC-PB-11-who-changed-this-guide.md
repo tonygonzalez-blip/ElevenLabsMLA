@@ -1,7 +1,7 @@
 # WC-PB-11 · PB-11 Who changed this? (Troubleshooting playbook)
 
-v1.0 · July 9, 2026 · Author: Claude — Micrologic training project
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Author: Claude — Micrologic training project
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Purpose
 
@@ -13,7 +13,7 @@ Internal Micrologic technicians on Tech Support. You should be comfortable readi
 
 ## Navigation path
 
-Both pages live under `IT & Support → Audit`. The **Audit Log** opens directly at `audit-log.html`. **Change History** is reached from the **AUDIT** group in the left sidebar once you are on the **Audit Log** page. In the July 9 corpus, its own address (`audit-changes.html`) returned an HTTP 404, so it is opened by in-app navigation from the Audit Log page, not by typing the URL.
+Both pages live under `IT & Support → Audit`. The **Audit Log** opens directly at `audit-log.html`. **Change History** is reached from the **AUDIT** group in the left sidebar once you are on the **Audit Log** page. Its own address (`audit-changes.html`) returned an HTTP 404 in the July 9 sweep, so open it by in-app navigation, not by typing the URL; the July 11 pass captured the full page through that sidebar route.
 
 ## Steps
 
@@ -25,11 +25,11 @@ One action per step. This is a read-only diagnostic sequence: open two audit pag
 
 3. Read the **Audit Log** to locate the event. **Expected:** the **Audit Log List** card shows seven columns: **DATE/TIME**, **USER**, **ACTION**, **MODULE**, **RECORD**, **LOCATION**, and **IP ADDRESS**. The change you are chasing is an **Updated** row; the other actions in this log are **Created**, **Deleted**, and **Login**. Read across one row and it tells you who made the change (**USER**), on which record (**RECORD**), in which part of the platform (**MODULE**), and from where (**LOCATION** and **IP ADDRESS**). Settings changes surface here too, with **MODULE** reading **Settings**. Narrow a busy log with **Filters ▾** or the **Search audit log…** box rather than scrolling. The tiles across the top (**Events Today**, **This Week**, **Unique Users**, **Critical Events**) and the **Action Types** panel show volume by category before you drill in. What this page does not carry is the value before and after; for that you move to **Change History**.
 
-4. Open **Change History**. **Expected:** from the **AUDIT** group in the sidebar, click **Change History**. It opens the field-level change log for the platform. *(July 9 note: the direct URL `audit-changes.html` returned an HTTP 404 in today's corpus, so **Change History** is reachable only by this in-app navigation from the Audit Log page. The page's own layout, its tiles, and the exact rendered column headers could not be re-confirmed in this corpus: TBD — parked (new item; see the structured return). The column set read in Step 6 is carried from the project's verified audit map and the PB-11 plan, not from a July 9 capture of this page.)*
+4. Open **Change History**. **Expected (observed live July 11, 2026):** from the **AUDIT** group in the sidebar, click **Change History**. The page opens with the breadcrumb **Audit › Change History** and four KPI tiles: **84 Changes Today**, **420 This Week**, **12 Config Changes**, and **408 Data Changes**. Three panels sit below the band: **Change Volume** (Last 12 months, **5,040**, **↑ +8.2%**), **By Module** (**CRM 42% · Employees 28% · Settings 18% · Transactions 12%**), and **Change Types** (**74% DATA · 19% CONFIG · 7% DELETE**). Reach it by the sidebar link only; the direct URL 404'd on the July 9 sweep.
 
-5. Filter **Change History** to the record. **Expected:** narrow the log to the module or record in question so you are reading only its changes. *(The exact filter control on this page is not observable in the July 9 corpus: TBD — parked. The intent, per the PB-11 plan, is to filter by module, for example CRM, Inventory, or Settings, so a single record's changes stand alone.)*
+5. Filter **Change History** to the record. **Expected (observed July 11):** the **Change History List** card carries a **Filters ▾** control, a **Search change history…** box, and a **Search** button. Narrow the log to the module or record in question — the **By Module** panel tells you where the volume sits (CRM, Employees, Settings, Transactions) — so a single record's changes stand alone. You are reading a history, not editing one.
 
-6. Read the field-level change. **Expected:** per the project's verified audit map (DISCREPANCIES.md #18) and the PB-11 plan, **Change History** records each change at field level with a **FIELD** column (the field that changed), an **OLD VALUE** column (what it was), and a **NEW VALUE** column (what it became), together with the user who made the change and the timestamp. That row is the literal answer to "what was it before." *(The exact rendered column labels are attributed to the plan and flagged for a live in-app re-walk: TBD — parked.)*
+6. Read the field-level change. **Expected (observed live July 11, 2026):** the columns render as **DATE/TIME · USER · MODULE · FIELD · OLD VALUE · NEW VALUE**, confirming the audit map (DISCREPANCIES.md #18). The **Change History List** shows **3 records**; the top row reads **2025-06-01 10:44 · M. Gonzalez · Settings · Monthly Price · $29.99 · $34.99**, with a CRM **Customer Status** flip (**Active → At Risk**) and an Employees **Pay Rate** change (**$15.00 → $16.50**) beneath it. That row is the literal answer to "what was it before."
 
 7. Assemble the answer from both pages. **Expected:** you now answer the caller precisely. From **Change History**: the field and its exact old value and new value. From the **Audit Log**: the **USER** who made the change, the **DATE/TIME**, and the **IP ADDRESS** it came from. Give the exact old-to-new values, not a paraphrase. "The price changed" is not an answer; the two values are.
 
@@ -44,10 +44,10 @@ You can take a "who changed this?" ticket and work it in order. You read the **A
 ## Notes and troubleshooting (observed behavior only)
 
 - The **Audit Log** page was captured cleanly on July 9: seven columns (**DATE/TIME**, **USER**, **ACTION**, **MODULE**, **RECORD**, **LOCATION**, **IP ADDRESS**), the four tiles, and the **Action Types** and **Event Severity** panels all render. The **IP ADDRESS** column is what ties a change to a workstation or location, which matters when a change looks unauthorized.
-- **Change History** could not be re-verified on its own URL in the July 9 corpus: `audit-changes.html` returned an HTTP 404, while its sidebar entry renders as a live nav item on the working **Audit Log** page. Its field-level column set (**FIELD**, **OLD VALUE**, **NEW VALUE**) is carried from the project's verified audit map (DISCREPANCIES.md #18) and the PB-11 plan; the page's on-page layout and exact rendered labels are parked for a live in-app re-walk.
+- **Change History** was captured live on July 11, 2026 through the AUDIT sidebar link (`verification/2026-07-11/digests/audit-changes-inapp.json`), clearing the July 9 parked marker. Observed: KPI band **84 / 420 / 12 / 408**, panels **Change Volume / By Module / Change Types**, columns **DATE/TIME · USER · MODULE · FIELD · OLD VALUE · NEW VALUE**, and three live rows led by **Monthly Price $29.99 → $34.99**. Its direct URL (`audit-changes.html`) 404'd on July 9, so keep reaching it in-app.
 - Audit entries are read-only. Neither page has an edit path you should use for a correction; the **Export** and **+ New Record** controls on the **Audit Log** are not part of this read-only playbook and are not clicked.
 - Settings changes appear in the **Audit Log** with **MODULE** = **Settings** (for example an **Updated** row on **Account Info**), so a "who changed a setting?" ticket is worked exactly like a record change: find the event here, then read the old-to-new in **Change History**.
-- **User Activity**, the third page in the **AUDIT** group, is the per-user login history (logins, failed logins, roles). It answers "who signed in and when," not "who changed this," and belongs to PB-1.
+- **User Activity**, the third page in the **AUDIT** group, is the per-user login history (columns **USER · ROLE · LAST LOGIN · LOGINS THIS MONTH · LOCATION · STATUS**, plus a page-level **Failed Logins** tile — observed July 11). It answers "who signed in and when," not "who changed this," and belongs to PB-1.
 
 ## Knowledge check
 
@@ -59,4 +59,4 @@ You can take a "who changed this?" ticket and work it in order. You read the **A
 
 WC-13-02 Audit trio (Audit Log · User Activity · Change History) · PB-1 Login failures (audit User Activity) · WC-12-06 Users & Security (Settings changes) · WC-01-04 Reading a WashCentral list · WC-CERT-01 Certification (practical checkout #7, Who-changed-it).
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**

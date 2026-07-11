@@ -1,15 +1,16 @@
 # WC-03-01 — Tickets List · Snagit Shot List (operator-ready)
 
-v1.0 · July 9, 2026 · Target output: **WC-03-01-tickets-list-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+v1.1 · July 11, 2026 · Target output: **WC-03-01-tickets-list-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
 Step numbers match the guide and the narration blocks one-to-one (12 steps).
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Pre-roll checklist (not recorded)
 
 - [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions before recording anything else.
 - [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
 - [ ] Signed in already (credentials never on camera); start URL: `demo.washcentral.com/sales-transactions.html`.
-- [ ] Page settled on **Sales → Tickets**: eyebrow **TRANSACTIONS**, title **Tickets**, sidebar showing eight Sales pages; no dialog open.
+- [ ] Page settled on **Sales → Tickets**: eyebrow **TRANSACTIONS**, title **Tickets**, sidebar showing nine Sales pages (July 11: **Refund Approvals** appeared between Payments and Payouts); no dialog open.
+- [ ] AUDIO NOTE — narration s11 speaks "Eight pages... there's no Refunds Approval page", contradicted by the July 11 sidebar. Flagged for re-render; do not assemble step 11 against the old audio.
 - [ ] Snagit: cursor highlight ON, click animation ON. This lesson has no keystrokes and no clicks on records.
 - [ ] Do NOT click **Export** at any point (step 7). Do NOT click a **TICKET #** link (that opens the Ticket View, WC-03-02). This is a read-only walk of the list.
 
@@ -29,8 +30,8 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 8 | Sweep left to right across the column headers | Seven headers: **LOCATION · TICKET # · DATE/TIME · TOTAL · STATUS · TENDER TYPE · CUSTOMER**; sort control on each; row checkbox at far left | 4s | Callout ⑧ numbering the seven columns; slow horizontal sweep across the header row (about 2.5s); brief zoom on a sort control (1s) |
 | 9 | Point to one example row (do NOT click the **TICKET #** link) | Row reads **121 - Groveport S Hamilton · Shift28753 · 2026-01-11 04:51 · $0.00 · Paid / Not Washed · Cash · —**; **TICKET #** renders as a link; **CUSTOMER** shows **—** | 3s | Callout ⑨ on the row; small STOP note on the TICKET # link ("opens Ticket View, WC-03-02, not here"); hold on the row, no click |
 | 10 | Point to the pagination control below the list | Page size **25**; pages **‹ 1 2 3 4 5 … 5,049,509 ›** | 3s | Callout ⑩ on the page-count "5,049,509"; zoom-in 150% (1.5s); tie back to "filter before you page" |
-| 11 | Sweep down the Sales sidebar on the left | Eight pages: **Tickets · Ticket Details · Payments · Payouts · Shifts · Declined Credit Card Log · Gift Card Transactions · House Account Transactions**; **Tickets** highlighted | 4s | Callout ⑪ down the eight items; note "the rest = WC-03-03"; on-screen note "legacy Sales menu differs; DISCREPANCIES #10"; do not click a sibling |
-| 12 | Slowly pull the cursor back to frame the KPI band + insights + list together | Recap state: header identity, KPI band, three insight cards, **SEARCH TICKETS**, seven-column list, **Export**, eight-page sidebar all in one view | 3s | Callout ⑫ tying the page together; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+| 11 | Sweep down the Sales sidebar on the left | Nine pages (July 11): **Tickets · Ticket Details · Payments · Refund Approvals · Payouts · Shifts · Declined Credit Card Log · Gift Card Transactions · House Account Transactions**; **Tickets** highlighted | 4s | Callout ⑪ down the nine items; note "the rest = WC-03-03"; on-screen note "legacy Sales menu differs; DISCREPANCIES #10; Refund Approvals new July 11"; do not click a sibling. AUDIO NOTE: s11 flagged for re-render (speaks eight pages / no Refunds Approval) |
+| 12 | Slowly pull the cursor back to frame the KPI band + insights + list together | Recap state: header identity, KPI band, three insight cards, **SEARCH TICKETS**, seven-column list, **Export**, nine-page sidebar all in one view | 3s | Callout ⑫ tying the page together; end card / verification stamp "Verified against demo.washcentral.com on July 11, 2026."; fade out |
 
 Estimated runtime: about 3:30 (estimated narration total ~210s at ~145 wpm; confirm against the rendered audio before final assembly). If any unexpected dialog, error, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, then re-record the segment. Do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
 

@@ -1,0 +1,81 @@
+{
+  "base": "WC-PB-11",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 146.83,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "The ticket and the rule",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-PB-11-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Open the Audit module",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-PB-11-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Read the Audit Log",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-PB-11-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Open Change History",
+      "audioS": 13.95,
+      "stepS": 14.35,
+      "file": "WC-PB-11-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Filter to the record",
+      "audioS": 8.28,
+      "stepS": 8.68,
+      "file": "WC-PB-11-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "The field-level change",
+      "audioS": 12.51,
+      "stepS": 12.91,
+      "file": "WC-PB-11-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Assemble the answer",
+      "audioS": 17.01,
+      "stepS": 17.41,
+      "file": "WC-PB-11-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Document or escalate",
+      "audioS": 23.25,
+      "stepS": 23.65,
+      "file": "WC-PB-11-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Recap",
+      "audioS": 15.57,
+      "stepS": 15.97,
+      "file": "WC-PB-11-s09.mp3"
+    }
+  ]
+}

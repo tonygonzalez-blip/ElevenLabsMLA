@@ -1,0 +1,86 @@
+{
+ "url": "/sched-services.html",
+ "docTitle": "Schedulable Services — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Scheduling›Schedulable Services"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Service Name",
+  "Category",
+  "Duration",
+  "Price",
+  "Locations",
+  "Active"
+ ],
+ "kpiLabels": [
+  "18Total Services 15Active 4Categories 75 minAvg Duration",
+  "18Total Services",
+  "18",
+  "Total Services",
+  "15Active",
+  "15",
+  "Active",
+  "4Categories",
+  "4",
+  "Categories",
+  "75 minAvg Duration",
+  "75 min",
+  "Avg Duration"
+ ],
+ "inputPlaceholders": [
+  "Search schedulable services…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Full Detail | Detail | 180 min | $149.00 | All | Yes",
+  " | Interior Detail | Detail | 90 min | $89.00 | All | Yes",
+  " | Oil Change | Lube | 30 min | $49.99 | MLAS, Piscataway | Yes"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports SCHEDULING Schedulable Services Search ⌘K Ask Shyne MG 18 Total Services 15 Active 4 Categories 75 min Avg Duration Service Bookings Last 12 months 840 ↑ +13% Jan Dec By Category Service distribution Exterior 36% Interior 28% Full Detail 24% Add-ons 12% Service Status Health overview 83% ACTIVE 11% SEASONAL 6% INACTIVE SCHEDULING · SERVICES Service List 18 records + New Record Export Filters ▾ Search SERVICE NAME CATEGORY DURATION PRICE LOCATIONS ACTIVE Full Detail Detail 180 min $149.00 All Yes Interior Detail Detail 90 min $89.00 All Yes Oil Change Lube 30 min $49.99 MLAS, Piscataway Yes Tire Rotation Lube 45 min $29.99 MLAS, Piscataway Yes ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

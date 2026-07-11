@@ -3,7 +3,7 @@
   "voice": "CDbF7Jxnv3azemv9dXMP",
   "model": "eleven_v3",
   "tailS": 0.4,
-  "totalS": 232.71,
+  "totalS": 233.52,
   "blocks": [
     {
       "block": "s01",
@@ -65,8 +65,8 @@
       "block": "s08",
       "step": "8",
       "target": "Columns",
-      "audioS": 18.91,
-      "stepS": 19.31,
+      "audioS": 19.72,
+      "stepS": 20.12,
       "file": "WC-02-01-s08.mp3"
     },
     {

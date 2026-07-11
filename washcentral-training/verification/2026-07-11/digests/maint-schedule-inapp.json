@@ -1,0 +1,81 @@
+{
+ "url": "/maint-schedule.html",
+ "docTitle": "Maintenance Schedule — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Maintenance›Maintenance Schedule"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [],
+ "tableHeaders": [
+  "Task",
+  "Equipment",
+  "Location",
+  "Frequency",
+  "Last Done",
+  "Next Due",
+  "Assigned To"
+ ],
+ "kpiLabels": [
+  "42Scheduled Tasks 6Due This Week 2Overdue 18Completed This Month",
+  "42Scheduled Tasks",
+  "42",
+  "Scheduled Tasks",
+  "6Due This Week",
+  "6",
+  "Due This Week",
+  "2Overdue",
+  "2",
+  "Overdue",
+  "18Completed This Month",
+  "18",
+  "Completed This Month"
+ ],
+ "inputPlaceholders": [
+  "Search maintenance schedule…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | Lubricate conveyor chain | Conveyor | MLAS | Weekly | 2025-05-25 | 2025-06-01 | Tech Team",
+  " | Inspect chemical pumps | Chemical System | All | Monthly | 2025-05-01 | 2025-06-01 | Tech Team",
+  " | Clean air dryer filters | Air Dryer | All | Monthly | 2025-05-15 | 2025-06-15 | Maintenance"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports MAINTENANCE Maintenance Schedule Search ⌘K Ask Shyne MG 42 Scheduled Tasks 6 Due This Week 2 Overdue 18 Completed This Month Tasks Completed Last 12 months 42 ↑ +5% Jan Dec Tasks by Frequency By scheduling cadence Weekly 40% Monthly 35% Quarterly 15% Daily 10% Schedule Compliance On-time vs overdue tasks 90% ON TIME 5% DUE SOON 5% OVERDUE MAINTENANCE · SCHEDULE Maintenance Schedule 42 records · preventive maintenance planning + New Record Export Filters ▾ Search TASK EQUIPMENT LOCATION FREQUENCY LAST DONE NEXT DUE ASSIGNED TO Lubricate conveyor chain Conveyor MLAS Weekly 2025-05-25 2025-06-01 Tech Team Inspect chemical pumps Chemical System All Monthly 2025-05-01 2025-06-01 Tech Team Clean air dryer filters Air Dryer All Monthly 2025-05-15 2025-06-15 Maintenance Check belt tension Tunnel Belt MLAS Weekly 2025-05-28 2025-06-04 Tech Team Showing 1–4 of 4 records ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

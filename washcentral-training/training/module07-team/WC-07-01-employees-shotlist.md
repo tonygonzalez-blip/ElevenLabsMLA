@@ -1,8 +1,8 @@
 # WC-07-01 — Employees List and Detail · Snagit Shot List (operator-ready)
 
-v1.0 · July 9, 2026 · Target output: **WC-07-01-employees-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
+v1.1 · July 11, 2026 · Target output: **WC-07-01-employees-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
 Step numbers match the guide and the narration blocks one-to-one.
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**
 
 ## Pre-roll checklist (not recorded)
 
@@ -11,8 +11,9 @@ Step numbers match the guide and the narration blocks one-to-one.
 - [ ] Signed in already (credentials never on camera); start URL: `demo.washcentral.com/emp-employees.html` (or navigate there from the rail: **Team → Employees**).
 - [ ] Snagit: cursor highlight ON, click animation ON; no on-screen keystroke display needed (this lesson is mouse-only, no keyboard entry).
 - [ ] Employees page fully loaded: KPI strip, the three insight cards, and the **Employee List** table all visible; nothing open, no idle dialog on screen.
-- [ ] Do not click **Export** or **+ New Record** at any point (steps 6, 14). Do not edit, Save, or Delete on the employee record (steps 10–14).
-- [ ] Detail-view internals are TBD — parked (not captured in the July 9 corpus). If live access is available, capture Overview per steps 10–12; otherwise hold on the seven-tab bar and let the narration carry the parked note.
+- [ ] Do not click **Export** or **+ New Record** at any point (steps 6, 14). On the employee record, never click **Delete**, **Edit Employee**, or **Assign Course** (steps 10–14); leave only by **← Back**.
+- [ ] Detail-view internals were captured July 11, 2026 (all seven tabs) and are documented in the guide. The detail page loads from the row click only — never paste `emp-employees-detail.html` (it 404s by direct URL).
+- [ ] **Narration gate:** narration blocks s10, s12, and s13 (v1.0) voice the detail internals as "parked / not captured," which now contradicts the page. Do not record until those blocks are re-authored and re-rendered.
 
 ## Shots
 
@@ -29,12 +30,12 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 7 | Sweep the cursor across the column header row | Columns **EMPLOYEE · PHONE · HIRE DATE · TYPE · STATUS · LOCATION**; leading checkbox column; avatar in the EMPLOYEE cell | 3s | Callout ⑦ along the header; brief zoom on the EMPLOYEE cell showing avatar + name + role chip (1.5s) |
 | 8 | Trace the **Jose Martinez** row, then sweep the role chips down the table | Row: **Jose Martinez**, **Shift Manager** chip, **973-555-0101**, **2022-03-15**, **Full-Time**, green **Active**, **MLAS**. Chips down the five rows: **Shift Manager, Cashier, Tunnel Attendant, Detail Tech, Greeter** | 4s | Callout ⑧ on the role chip; slow cursor sweep down the five chips (about 2.5s); do not click yet |
 | 9 | Point to the **Search employees…** box, **Filters ▾**, and the pager | Placeholder **Search employees…**, a **Filters ▾** control, a **Search** button; footer **Showing 1–5 of 5 records** with **‹ 1 ›** | 3s | Callout ⑨ on the search box and the pager; no typing (mouse-only lesson) |
-| 10 | Click the **Jose Martinez** row | The employee's detail view opens on its landing tab | 3s | Callout ⑩ "one click opens the record"; if live, hold on Overview; if authoring from corpus, note detail internals are TBD — parked |
-| 11 | Sweep the cursor across the tab bar | Seven tabs: **Overview · Personal Info · Employment · Schedule · Emergency Contact · Notes & Audit · Training**, with **Overview** active | 4s | Callout ⑪ bracketing all seven tabs; slow left-to-right sweep (about 3s); do not switch tabs |
-| 12 | Rest on the **Overview** tab | Overview is the analytics home: performance, attendance, and earnings summaries for the employee (specific panels TBD — parked) | 4s | Callout ⑫ "Overview = analytics home"; hold; if live, capture the Overview panels for a later cut |
-| 13 | Point along the six deeper tabs (do NOT click) | **Personal Info, Employment, Schedule, Emergency Contact, Notes & Audit, Training** — each holds a slice of the record (field contents TBD — parked) | 4s | Callout ⑬ naming the six tabs; hover only; no tab switching (contents not authored from corpus) |
-| 14 | Show the record unchanged; do NOT Save/Delete/Edit | Nothing edited; no Save, no Delete, no field touched | 2s | Callout ⑭ "read-only — nothing changed"; STOP ring over any edit/Save/Delete control if visible |
-| 15 | Return toward the **Employee List**; slow cursor sweep back across the page | Recap state: directory (KPIs + three insights + searchable table) and the one-click seven-tab profile with **Overview** as its analytics home | 3s | Callout ⑮ tying list to detail; end card / verification stamp "Verified against demo.washcentral.com on July 9, 2026."; fade out |
+| 10 | Click the **Jose Martinez** row | The **Employee Detail** page opens: breadcrumb **Employees › Employee Detail**; header band with avatar, **Jose Martinez**, **Shift Manager** chip, **EMP-001 · Fort Lauderdale · Full-Time**, chips **Employees / Operations / Active**; buttons **← Back**, **Delete**, **Edit Employee**; metric band **3 yrs 1 mo Tenure · 168 Hours This Month · 97.2% Attendance Rate · Active Status · 4.6 / 5 Performance** | 4s | Callout ⑩ "one click opens the record"; STOP callout with red "do not click" rings over **Delete** and **Edit Employee**; zoom-in 140% on the header band (1.5s) |
+| 11 | Sweep the cursor across the tab bar | Seven tabs: **Overview · Personal Info · Employment · Schedule · Emergency Contact · Notes & Audit · Training**, with **Overview** active | 4s | Callout ⑪ bracketing all seven tabs; slow left-to-right sweep (about 3s); do not switch tabs yet |
+| 12 | Rest on the **Overview** tab | Five analytics panels: **Monthly Hours Worked** (162 avg / 168 this month / 488 YTD), **Hours Breakdown** (Regular 78% · OT 14% · PTO 6% · Unpaid 2%), **Attendance Rate** (97.2% 12-mo · 4 missed · 100% last month), **Monthly Earnings** ($14,820 YTD · $3,860 avg · $4,284 last month), **Performance Score Trend** (4.6 latest vs 3.9 location avg, ↑ +0.4, 8 reviews) | 5s | Callout ⑫ "Overview = analytics home"; slow sweep across the five panels (~3s); zoom-in 130% on **Performance Score Trend** (1.5s) |
+| 13 | Click through the six deeper tabs in order, pausing on each (read-only) | **Personal Info** (personal + address fields, SSN masked) → **Employment** (role & classification, assignment & reporting, benefits) → **Schedule** (current-week grid + recent punches with **On Time / Minor OT** chips) → **Emergency Contact** (contact + medical panels) → **Notes & Audit** (manager notes + dated audit trail) → **Training** (progress tiles, learning paths, enrolled courses, **Assign Course** button NOT clicked) | 12s (~2s per tab) | Callout ⑬ naming each tab as it lands; STOP ring over **Assign Course** on the Training tab; no field is touched, nothing typed |
+| 14 | Show the record unchanged, then click **← Back** | Nothing edited: no **Delete**, no **Edit Employee**, no **Assign Course**, no field touched; **← Back** returns to the **Employee List** | 2s | Callout ⑭ "read-only — nothing changed; ← Back is the only exit" |
+| 15 | Return toward the **Employee List**; slow cursor sweep back across the page | Recap state: directory (KPIs + three insights + searchable table) and the one-click seven-tab profile with **Overview** as its analytics home | 3s | Callout ⑮ tying list to detail; end card / verification stamp "Verified against demo.washcentral.com on July 11, 2026."; fade out |
 
 Estimated runtime: about 4:25 (narration blocks estimated at ~145 wpm; timestamps pending render). If any unexpected dialog, error, changed data, or a **Still there?** timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment — do not improvise. Session-timeout behavior is out of scope here (see WC-01-03).
 

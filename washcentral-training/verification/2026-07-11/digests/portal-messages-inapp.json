@@ -1,0 +1,83 @@
+{
+ "url": "/portal-messages.html",
+ "docTitle": "Portal Messages — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Customer Portal›Portal Messages"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Booking Page (Customer)",
+  "Portal Members",
+  "Portal Messages",
+  "Portal Billing",
+  "Portal Notifications",
+  "Mobile App Branding",
+  "Mobile App Features",
+  "Mobile App Users",
+  "Push Notifications",
+  "Mobile Feedback"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Date",
+  "Customer",
+  "Subject",
+  "Status",
+  "Priority",
+  "Assigned To"
+ ],
+ "kpiLabels": [
+  "14Unread 28Open 3.2 hrsAvg Response 4.6/5Satisfaction",
+  "14Unread",
+  "14",
+  "Unread",
+  "28Open",
+  "28",
+  "Open",
+  "3.2 hrsAvg Response",
+  "3.2 hrs",
+  "Avg Response",
+  "4.6/5Satisfaction",
+  "4.6/5",
+  "Satisfaction"
+ ],
+ "inputPlaceholders": [
+  "Search portal messages…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | 2025-06-01 | Sarah Johnson | Billing question for May | Open | Medium | J. Martinez",
+  " | 2025-06-01 | Mike Chen | Membership cancellation request | In Progress | High | Manager",
+  " | 2025-05-31 | Lisa Park | Scratch on vehicle after wash | Open | High | Manager"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Digital CUSTOMER PORTAL Booking Page (Customer) Portal Members Portal Messages Portal Billing Portal Notifications MOBILE Mobile App Branding Mobile App Features Mobile App Users Push Notifications Mobile Feedback CUSTOMER PORTAL Portal Messages Search ⌘K Ask Shyne MG 14 Unread 28 Open 3.2 hrs Avg Response 4.6/5 Satisfaction Message Volume Last 12 months 342 ↑ +8% Jan Dec By Status Message breakdown Resolved 58% In Progress 22% Open 14% Unread 6% Response Health Support quality 72% RESOLVED 20% IN PROGRESS 8% OVERDUE PORTAL · MESSAGES Message List 4 records + New Record Export Filters ▾ Search DATE CUSTOMER SUBJECT STATUS PRIORITY ASSIGNED TO 2025-06-01 Sarah Johnson Billing question for May Open Medium J. Martinez 2025-06-01 Mike Chen Membership cancellation request In Progress High Manager 2025-05-31 Lisa Park Scratch on vehicle after wash Open High Manager 2025-05-31 Tom Brown Change membership plan Resolved Low System ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

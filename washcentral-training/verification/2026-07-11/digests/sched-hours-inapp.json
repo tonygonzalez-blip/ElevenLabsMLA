@@ -1,0 +1,86 @@
+{
+ "url": "/sched-hours.html",
+ "docTitle": "Business Hours — WashCentral",
+ "h1": [],
+ "h2": [
+  "Still there?"
+ ],
+ "h3": [],
+ "breadcrumb": [
+  "Scheduling›Business Hours"
+ ],
+ "railButtons": [],
+ "sidebarItems": [
+  "Issues",
+  "Maintenance Schedule",
+  "Equipment Registry",
+  "Checklists",
+  "Parts & Supplies",
+  "All Reports",
+  "Appointments",
+  "Schedulable Services",
+  "Resources",
+  "Business Hours",
+  "Messaging",
+  "Payments",
+  "Reports"
+ ],
+ "buttons": [
+  "Search ⌘K",
+  "Ask Shyne",
+  "MG",
+  "+ New Record",
+  "Export",
+  "Filters ▾",
+  "Search",
+  "25",
+  "‹",
+  "1",
+  "›",
+  "Stay Logged In",
+  "Log Out Now",
+  "Stay Active"
+ ],
+ "tabs": [
+  "25",
+  "‹",
+  "1",
+  "›"
+ ],
+ "tableHeaders": [
+  "Location",
+  "Day",
+  "Open",
+  "Close",
+  "Appointment Slots",
+  "Status"
+ ],
+ "kpiLabels": [
+  "6Locations Configured 3Holiday Blocks 48Total Slots/Day 38Avg Bookable",
+  "6Locations Configured",
+  "6",
+  "Locations Configured",
+  "3Holiday Blocks",
+  "3",
+  "Holiday Blocks",
+  "48Total Slots/Day",
+  "48",
+  "Total Slots/Day",
+  "38Avg Bookable",
+  "38",
+  "Avg Bookable"
+ ],
+ "inputPlaceholders": [
+  "Search business hours…",
+  "Search pages, modules, actions…"
+ ],
+ "labels": [],
+ "chips": [],
+ "firstRows": [
+  " | MLAS | Monday | 7:00 AM | 7:00 PM | Every 30 min | Open",
+  " | MLAS | Saturday | 7:00 AM | 5:00 PM | Every 30 min | Open",
+  " | MLAS | Sunday | 8:00 AM | 4:00 PM | Every 60 min | Open"
+ ],
+ "modals": [],
+ "bodySnippet": "Skip to main content MG WASHCENTRAL Operations MAINTENANCE Issues Maintenance Schedule Equipment Registry Checklists Parts & Supplies INCIDENT REPORTS All Reports SCHEDULER Appointments Schedulable Services Resources Business Hours Messaging Payments Reports SCHEDULING Business Hours Search ⌘K Ask Shyne MG 6 Locations Configured 3 Holiday Blocks 48 Total Slots/Day 38 Avg Bookable Capacity Trend Last 12 months 48 ↑ +5% Jan Dec By Location Slot distribution MLAS 28% SSNB 22% Piscataway 18% Other 32% Schedule Health Availability overview 79% AVAILABLE 15% PARTIALLY 6% BLOCKED SCHEDULING · HOURS Hours List 6 records + New Record Export Filters ▾ Search LOCATION DAY OPEN CLOSE APPOINTMENT SLOTS STATUS MLAS Monday 7:00 AM 7:00 PM Every 30 min Open MLAS Saturday 7:00 AM 5:00 PM Every 30 min Open MLAS Sunday 8:00 AM 4:00 PM Every 60 min Open All July 4 2025 — — — Closed ROWS PER PAGE: 25 50 100 25 1–4 of 4 ‹ 1 › Loading… 2:00 REMAINING Still there? Your session will end in 2:00 due to inactivity. Move your mouse or press any key to stay logged in. Stay Logged In Log Out Now ⏱ Session expiring soon Auto-logout in 2:00 Stay Active esc ↑ ↓ Navigate ↵ Open Esc Close"
+}

@@ -1,0 +1,113 @@
+{
+  "base": "WC-07-04",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 197.51,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open Challenges",
+      "audioS": 15.07,
+      "stepS": 15.47,
+      "file": "WC-07-04-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI band",
+      "audioS": 16.2,
+      "stepS": 16.6,
+      "file": "WC-07-04-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Sibling pages",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-07-04-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Board and views",
+      "audioS": 18.91,
+      "stepS": 19.31,
+      "file": "WC-07-04-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "First card, top",
+      "audioS": 17.16,
+      "stepS": 17.56,
+      "file": "WC-07-04-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "First card, bottom",
+      "audioS": 15.8,
+      "stepS": 16.2,
+      "file": "WC-07-04-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Other live cards",
+      "audioS": 13.24,
+      "stepS": 13.64,
+      "file": "WC-07-04-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Starting soon",
+      "audioS": 14.03,
+      "stepS": 14.43,
+      "file": "WC-07-04-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Create card",
+      "audioS": 10.11,
+      "stepS": 10.51,
+      "file": "WC-07-04-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "All view",
+      "audioS": 12.12,
+      "stepS": 12.52,
+      "file": "WC-07-04-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "Completed view",
+      "audioS": 11.39,
+      "stepS": 11.79,
+      "file": "WC-07-04-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Back to Active",
+      "audioS": 9.33,
+      "stepS": 9.73,
+      "file": "WC-07-04-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "Recap",
+      "audioS": 22.52,
+      "stepS": 22.92,
+      "file": "WC-07-04-s13.mp3"
+    }
+  ]
+}
