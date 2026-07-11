@@ -1,0 +1,187 @@
+{
+  "lesson": "WC-08-04",
+  "audioMaster": "training/module08-operations/WC-08-04-full-narration-v1.0.mp3",
+  "output": "WC-08-04-appointment-scheduling-v1.1",
+  "note": "Verbatim phrases of the LOCKED narration, in spoken order, split at the script's <break> tags and sentence boundaries (<=~95 chars). Block windows are the MEASURED onsets of each sNN inside the joined master: Sigma(ffprobe audio+0.4) predicts 239.038s but the ffprobed master is 238.524s (0.514s short, past the +-0.3s gate) because the master was assembled with ~0.36s inter-block gaps, not fifteen 0.4s trailing tails. Each block start is therefore the normalized-cross-correlation onset of its sNN opening (mono 8 kHz PCM, 1.6s template, searched in a window after the prior onset); every block matched at nc=1.000, gaps a steady 0.349-0.372s. Final end = ffprobed master duration 238.524s (=audioDurationS).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 16.24,
+      "phrases": [
+        { "id": "p01", "text": "Open Operations, then Appointments." },
+        { "id": "p02", "text": "This is the booking board customers land on, not the staff roster." },
+        { "id": "p03", "text": "Shifts live somewhere else." },
+        { "id": "p04", "text": "Here you are looking at the jobs people reserved: details, oil changes, inspections," },
+        { "id": "p05", "text": "each pinned to a day and a time." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.24,
+      "endS": 34.72,
+      "phrases": [
+        { "id": "p06", "text": "Start with the four numbers up top." },
+        { "id": "p07", "text": "Eighteen today, eighty-four this week." },
+        { "id": "p08", "text": "Utilization at seventy-eight percent tells you how full your capacity is running," },
+        { "id": "p09", "text": "and the three percent no-show rate is the slice that never showed." },
+        { "id": "p10", "text": "Read these first and you know how the week is going before opening a single row." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.72,
+      "endS": 49.92,
+      "phrases": [
+        { "id": "p11", "text": "Next, the three panels. First one, Booking Trend." },
+        { "id": "p12", "text": "It plots the last twelve months, eight hundred forty bookings, up nineteen percent." },
+        { "id": "p13", "text": "One glance tells you whether volume is climbing or sliding," },
+        { "id": "p14", "text": "which is the context every other number sits inside." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 49.92,
+      "endS": 64.08,
+      "phrases": [
+        { "id": "p15", "text": "Middle panel, the service mix." },
+        { "id": "p16", "text": "Full details lead, interior details next, then oil changes," },
+        { "id": "p17", "text": "with everything else rolled into other." },
+        { "id": "p18", "text": "This is what customers are actually booking," },
+        { "id": "p19", "text": "and it is the mix your bays and your people have to be ready for." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 64.08,
+      "endS": 82.24,
+      "phrases": [
+        { "id": "p20", "text": "Right panel, schedule health." },
+        { "id": "p21", "text": "Most bookings are confirmed, a smaller share still pending, and a thin slice marked no-show." },
+        { "id": "p22", "text": "Confirmed is locked in." },
+        { "id": "p23", "text": "Pending still needs the customer to say yes." },
+        { "id": "p24", "text": "Watch that middle band," },
+        { "id": "p25", "text": "because a quick phone call there turns a maybe into a filled bay." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 82.24,
+      "endS": 96.24,
+      "phrases": [
+        { "id": "p26", "text": "Now scroll to the list." },
+        { "id": "p27", "text": "Eighteen records, one row per booking." },
+        { "id": "p28", "text": "Up on the right, a small toggle: List or Calendar." },
+        { "id": "p29", "text": "You are in List now, the row-by-row view." },
+        { "id": "p30", "text": "We flip to Calendar shortly, but first walk the controls." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 96.24,
+      "endS": 109.52,
+      "phrases": [
+        { "id": "p31", "text": "Two buttons here." },
+        { "id": "p32", "text": "New Record starts a fresh booking, and Export downloads the list." },
+        { "id": "p33", "text": "We touch neither today." },
+        { "id": "p34", "text": "Export especially stays untouched while recording," },
+        { "id": "p35", "text": "and the new-booking form is its own lesson." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 109.52,
+      "endS": 122.64,
+      "phrases": [
+        { "id": "p36", "text": "Under the header, the search row." },
+        { "id": "p37", "text": "Type into the box to narrow the list by a name or a service," },
+        { "id": "p38", "text": "or open Filters to slice it by column." },
+        { "id": "p39", "text": "Handy when a customer calls and you need their booking in seconds, not scrolling." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 122.64,
+      "endS": 140.08,
+      "phrases": [
+        { "id": "p40", "text": "Look at the columns." },
+        { "id": "p41", "text": "Date, time, customer, service, location, staff, and status." },
+        { "id": "p42", "text": "Seven of them, each sortable, with a checkbox on every row." },
+        { "id": "p43", "text": "One line carries the whole booking: when, who, what, where, who works it, and where it stands." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 140.08,
+      "endS": 157.92,
+      "phrases": [
+        { "id": "p44", "text": "Run down the staff and status columns." },
+        { "id": "p45", "text": "Right now staff reads to be determined on these bookings," },
+        { "id": "p46", "text": "and status shows confirmed or scheduled." },
+        { "id": "p47", "text": "That is the tell." },
+        { "id": "p48", "text": "This board captures the booking first," },
+        { "id": "p49", "text": "and who actually works it gets assigned separately, over on the team schedule." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 157.92,
+      "endS": 169.2,
+      "phrases": [
+        { "id": "p50", "text": "Down at the foot, the pager." },
+        { "id": "p51", "text": "Twenty-five rows to a page, arrows to move between them." },
+        { "id": "p52", "text": "A small thing, but it keeps a busy week from turning into an endless scroll." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 169.2,
+      "endS": 183.6,
+      "phrases": [
+        { "id": "p53", "text": "Now flip the view. Click Calendar." },
+        { "id": "p54", "text": "The same bookings rearrange into a calendar." },
+        { "id": "p55", "text": "Nothing gets booked, nothing moves." },
+        { "id": "p56", "text": "It is purely a different way to look at the week," },
+        { "id": "p57", "text": "which is the faster read when someone wants to shift a day around." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 183.6,
+      "endS": 196.32,
+      "phrases": [
+        { "id": "p58", "text": "Click List to come back." },
+        { "id": "p59", "text": "The table returns exactly as it was." },
+        { "id": "p60", "text": "The toggle is a lens, not a change." },
+        { "id": "p61", "text": "Flip it as often as you like without touching a record." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 196.32,
+      "endS": 217.84,
+      "phrases": [
+        { "id": "p62", "text": "One more look, the sidebar." },
+        { "id": "p63", "text": "Under Appointments sit its neighbors: schedulable services, resources, business hours," },
+        { "id": "p64", "text": "messaging, payments, and reports." },
+        { "id": "p65", "text": "Each is its own workspace, and each is its own lesson." },
+        { "id": "p66", "text": "We name them and move on." },
+        { "id": "p67", "text": "Messaging sends real customer notices, so we leave it closed." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 217.84,
+      "endS": 238.524,
+      "phrases": [
+        { "id": "p68", "text": "So that is Appointments." },
+        { "id": "p69", "text": "Numbers up top for the pulse of the day," },
+        { "id": "p70", "text": "panels for the mix and the health," },
+        { "id": "p71", "text": "a list for the individual bookings," },
+        { "id": "p72", "text": "and a toggle to read it as rows or as a week." },
+        { "id": "p73", "text": "Keep one line straight: bookings live here, shifts live on the team schedule." },
+        { "id": "p74", "text": "Learn this page and every scheduling call gets shorter." }
+      ]
+    }
+  ]
+}

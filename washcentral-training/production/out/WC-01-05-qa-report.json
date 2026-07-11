@@ -1,0 +1,231 @@
+{
+  "lesson": "WC-01-05",
+  "generatedISO": "2026-07-11T18:58:04.097Z",
+  "checks": [
+    {
+      "id": 1,
+      "name": "1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "id": 2,
+      "name": "exact 30 fps",
+      "pass": true,
+      "detail": "30"
+    },
+    {
+      "id": 3,
+      "name": "progressive",
+      "pass": true,
+      "detail": "progressive"
+    },
+    {
+      "id": 4,
+      "name": "approved audio stream-copied unchanged",
+      "pass": true,
+      "detail": "src 9c85a1c588cc130e40bdb1d63c6911ce vs out 9c85a1c588cc130e40bdb1d63c6911ce"
+    },
+    {
+      "id": 5,
+      "name": "entire approved audio present",
+      "pass": true,
+      "detail": "packets src 6932 == out 6932; md5 identical"
+    },
+    {
+      "id": 6,
+      "name": "video continues ~300-500ms beyond audio",
+      "pass": true,
+      "detail": "tail 386ms"
+    },
+    {
+      "id": 7,
+      "name": "first frame not center cursor",
+      "pass": true,
+      "detail": "t0 pointer 220,1079"
+    },
+    {
+      "id": 8,
+      "name": "every click inside live target rect",
+      "pass": true,
+      "detail": "9 clicks"
+    },
+    {
+      "id": 9,
+      "name": "clicks preceded by arrival + readable hover",
+      "pass": true,
+      "detail": "railSettings:418ms, opsCard:300ms, opsCardItemCancellation:243ms, linkRefundReasons:882ms, linkCancellationReasons:396ms, firstDataRow:437ms, newRecordBtn:472ms, cancelTop:484ms, backBtn:4872ms"
+    },
+    {
+      "id": 10,
+      "name": "no app action before cursor arrival",
+      "pass": true,
+      "detail": "arrival<=press<=stateVerified for all"
+    },
+    {
+      "id": 11,
+      "name": "click feedback matches real press frame",
+      "pass": true,
+      "detail": "compositor draws ring at pressT (same event log)"
+    },
+    {
+      "id": 12,
+      "name": "no DOM .click() in interaction flow",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "id": 13,
+      "name": "no hardcoded interaction coords where live resolution exists",
+      "pass": true,
+      "detail": "all clicks resolve a live target"
+    },
+    {
+      "id": 14,
+      "name": "no stale highlight after target disappears",
+      "pass": true,
+      "detail": "menu intervals ; all menu highlights within"
+    },
+    {
+      "id": 15,
+      "name": "no highlight over empty space",
+      "pass": true,
+      "detail": "all anchors have logged rects"
+    },
+    {
+      "id": 16,
+      "name": "required visibility watches held",
+      "pass": true,
+      "detail": "stillOnListDuringStep7:held=true(20), formOpenDuringStep11:held=true(15)"
+    },
+    {
+      "id": 17,
+      "name": "declared callouts contiguous and anchored",
+      "pass": true,
+      "detail": "1..12 declared, all anchors logged"
+    },
+    {
+      "id": 18,
+      "name": "required close framing present",
+      "pass": true,
+      "detail": "z=1.5 @17.8s"
+    },
+    {
+      "id": 19,
+      "name": "caption wording follows narration order",
+      "pass": true,
+      "detail": "Settings→Operations→Cancellation Reasons→Refund Reasons→New Record→Back→Edit→Delete→Cancel→Save Changes→No, Keep"
+    },
+    {
+      "id": 20,
+      "name": "caption cues align with spoken phrases",
+      "pass": true,
+      "detail": "62 cues monotonic and in-bounds"
+    },
+    {
+      "id": 21,
+      "name": "no caption exceeds two lines",
+      "pass": true,
+      "detail": "all phrases wrap to <=2 lines"
+    },
+    {
+      "id": 22,
+      "name": "captions readable at 50% playback",
+      "pass": true,
+      "detail": "caption font 27px @1080p (>=24px requirement)"
+    },
+    {
+      "id": 23,
+      "name": "captions do not obscure active target",
+      "pass": true,
+      "detail": "all clicks clear of caption region"
+    },
+    {
+      "id": 24,
+      "name": "no loading/partial-render frames after navigation",
+      "pass": true,
+      "detail": "7/7 navs stabilized; freezes: settingsStable 1.733-2.644s, listStable 5.381-6.684s, refundStable 70.787-71.565s, listStable2 77.93-78.664s, editStable 141.599-142.379s, detailStable 151.227-152.384s, listStable3 162.579-163.294s"
+    },
+    {
+      "id": 25,
+      "name": "no pointer teleport",
+      "pass": true,
+      "detail": "max sample step within bounds"
+    },
+    {
+      "id": 26,
+      "name": "no unexplained cursor reversal",
+      "pass": true,
+      "detail": "pointer path is a single eased plan per move; reversals only at target arrivals"
+    },
+    {
+      "id": 27,
+      "name": "no login screen",
+      "pass": true,
+      "detail": "flow starts and ends on command-center"
+    },
+    {
+      "id": 28,
+      "name": "no credential on screen",
+      "pass": true,
+      "detail": "signed in off-camera via token flow; no credential UI in capture region"
+    },
+    {
+      "id": 29,
+      "name": "no session-expiration dialog",
+      "pass": true,
+      "detail": "idle dialog not encountered; menu watch clean"
+    },
+    {
+      "id": 30,
+      "name": "forbidden controls never clicked",
+      "pass": true,
+      "detail": "forbidden: logout, delete, save changes, yes, delete, send, submit"
+    },
+    {
+      "id": 31,
+      "name": "application not modified or visually falsified",
+      "pass": true,
+      "detail": "engine is read-only DOM + CDP input; graphics are external"
+    },
+    {
+      "id": 32,
+      "name": "captions/emphasis/highlights cleared before ending",
+      "pass": true,
+      "detail": "captions clear @178.98s, completion @179.28s"
+    },
+    {
+      "id": 33,
+      "name": "final completion hold and visual fade present",
+      "pass": true,
+      "detail": "fade 10 frames"
+    }
+  ],
+  "residuals": [
+    "Step 4/5 narration says \"the whole interface\" drops to dark; the real app does change the whole interface theme, so no wording-vs-behavior conflict was found. Framing pulls wide at the theme flip so the learner sees the genuine extent of the change."
+  ],
+  "artifacts": {
+    "audioSource": "training/module01-foundations/WC-01-05-full-narration-v1.0.mp3",
+    "audioSourceSha256": "1ae77a90b2b07bc8624ef906cce95313c3ba73f2a2786e2a204016279245ae58",
+    "audioSourcePacketMD5": "9c85a1c588cc130e40bdb1d63c6911ce",
+    "audioOutputPacketMD5": "9c85a1c588cc130e40bdb1d63c6911ce",
+    "audioCodec": "mp3 44100Hz 1ch",
+    "audioDurationS": 181.080816,
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "pix_fmt": "yuv420p",
+      "codec": "h264",
+      "durationS": 181.466667,
+      "field_order": "progressive"
+    },
+    "audioPacketsSource": 6932,
+    "audioPacketsOutput": 6932
+  },
+  "summary": {
+    "total": 33,
+    "passed": 33,
+    "failed": 0
+  }
+}
