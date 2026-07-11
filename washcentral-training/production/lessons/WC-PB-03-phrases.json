@@ -1,0 +1,172 @@
+{
+  "lesson": "WC-PB-03",
+  "audioMaster": "training/playbooks/WC-PB-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and the TTS's real sentence pauses. Block windows are the blocks' measured positions in the joined master: the Σ(audio+0.4) formula ends at 246.762s vs the ffprobed master 246.282s (0.48s off, outside the ±0.3s cross-check), so each block start is the measured speech-resume boundary of its inter-block gap (silencedetect -40dB/0.25s; boundaries drift monotonically -0.03..-0.49s from mp3 frame padding, matching the per-step render seconds within that padding). Final end = ffprobed master duration 246.282s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 11.841,
+      "phrases": [
+        { "id": "p01", "text": "Open the Command Center." },
+        { "id": "p02", "text": "This is your first look when a site calls in a dead register." },
+        { "id": "p03", "text": "The dashboard pulls the whole network into one view," },
+        { "id": "p04", "text": "and the panel you want is lower down, under the map." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 11.841,
+      "endS": 23.064,
+      "phrases": [
+        { "id": "p05", "text": "Find Priority Intelligence." },
+        { "id": "p06", "text": "It ranks what needs you right now, worst first." },
+        { "id": "p07", "text": "Eleven items today, four of them urgent," },
+        { "id": "p08", "text": "and the Critical group is already sitting at the top." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 23.064,
+      "endS": 36.936,
+      "phrases": [
+        { "id": "p09", "text": "There it is." },
+        { "id": "p10", "text": "Henrico West Broad, POS system offline, card terminals down at peak." },
+        { "id": "p11", "text": "The row names the site, the symptom, and tells you a tech is already en route." },
+        { "id": "p12", "text": "Check one is done before you lifted a finger." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 36.936,
+      "endS": 56.451,
+      "phrases": [
+        { "id": "p13", "text": "Now look right, not through." },
+        { "id": "p14", "text": "The row has an Open arrow into the item." },
+        { "id": "p15", "text": "We leave it alone on the shared demo, and this pass did not capture where it lands." },
+        { "id": "p16", "text": "What earns your attention is Action Ownership beside it:" },
+        { "id": "p17", "text": "Regional Ops already holds this one, due inside thirty minutes." },
+        { "id": "p18", "text": "Know who owns it before you move." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 56.451,
+      "endS": 70.205,
+      "phrases": [
+        { "id": "p19", "text": "Head to I-T and Support, and open M-L Command Center." },
+        { "id": "p20", "text": "This is the Micrologic N-O-C, the room support watches across every customer." },
+        { "id": "p21", "text": "Two criticals live right now, and the incidents tab is where they land." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 70.205,
+      "endS": 86.046,
+      "phrases": [
+        { "id": "p22", "text": "Read the top incident." },
+        { "id": "p23", "text": "POS system offline, zero transactions for forty-seven minutes." },
+        { "id": "p24", "text": "That zero is the tell." },
+        { "id": "p25", "text": "A slow lane still writes tickets;" },
+        { "id": "p26", "text": "a stopped one does not, and this one stopped almost an hour ago." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 86.046,
+      "endS": 107.952,
+      "phrases": [
+        { "id": "p27", "text": "Two things on that card do your triage." },
+        { "id": "p28", "text": "The tag tells you what broke:" },
+        { "id": "p29", "text": "this one reads Tunnel Down, others say Hardware, Payments, Equipment." },
+        { "id": "p30", "text": "The assignee tells you who has it, or that it is unassigned and yours to claim." },
+        { "id": "p31", "text": "Create Ticket and View Full Profile are right there, but on the demo you only read them." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 107.952,
+      "endS": 131.793,
+      "phrases": [
+        { "id": "p32", "text": "Next check is System Alerts, under I-T and Support." },
+        { "id": "p33", "text": "Open it from the sidebar link and the live feed loads, three active alerts, one critical." },
+        { "id": "p34", "text": "Every row names its type, tunnel, P-O-S, chemical, network," },
+        { "id": "p35", "text": "and today's P-O-S row is a warning, low receipt paper on P-O-S two, still active." },
+        { "id": "p36", "text": "Filter to the site and read what is still open there." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 131.793,
+      "endS": 145.564,
+      "phrases": [
+        { "id": "p37", "text": "Into Settings, Hardware, Terminals." },
+        { "id": "p38", "text": "This is the register you would check for that offline complaint." },
+        { "id": "p39", "text": "There is a plus New Record button up top; leave it alone." },
+        { "id": "p40", "text": "We are here to read, not to register anything." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 145.564,
+      "endS": 169.6,
+      "phrases": [
+        { "id": "p41", "text": "Run your eye across the columns." },
+        { "id": "p42", "text": "Terminal, location, I-P, software version, O-S, and Last Seen." },
+        { "id": "p43", "text": "Over a thousand terminals load here, and notice what is missing: no active or status column." },
+        { "id": "p44", "text": "So Last Seen is your answer, the moment each register last checked in." },
+        { "id": "p45", "text": "Search the site, find the terminal, and read how long it has been quiet." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 169.6,
+      "endS": 184.395,
+      "phrases": [
+        { "id": "p46", "text": "Last surface: Sales, then Tickets." },
+        { "id": "p47", "text": "This is the live pulse of the lane." },
+        { "id": "p48", "text": "The list carries Location, Ticket number, Date and Time, Total," },
+        { "id": "p49", "text": "Status, Tender Type, and Customer, with a running total up top." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 184.395,
+      "endS": 201.2,
+      "phrases": [
+        { "id": "p50", "text": "Filter to the site, then read the newest time stamp." },
+        { "id": "p51", "text": "If the last ticket is minutes old, the lane is still writing." },
+        { "id": "p52", "text": "If it has been quiet for a stretch, that matches the N-O-C's zero transactions," },
+        { "id": "p53", "text": "and now you have a hard outage in writing." },
+        { "id": "p54", "text": "Skip Export." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 201.2,
+      "endS": 223.2,
+      "phrases": [
+        { "id": "p55", "text": "Now escalate, cleanly." },
+        { "id": "p56", "text": "Open Support Tickets and raise one with four things:" },
+        { "id": "p57", "text": "the location code, the terminal I-D, the last-ticket time, and any alert I-Ds." },
+        { "id": "p58", "text": "The queue sorts by Ticket, Category, Location, Owner, Age, and Priority." },
+        { "id": "p59", "text": "Migration switches are the exception; those go to Jira, not here." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 223.2,
+      "endS": 246.282,
+      "phrases": [
+        { "id": "p60", "text": "That is the whole loop." },
+        { "id": "p61", "text": "Priority Intelligence to confirm the flag and its owner." },
+        { "id": "p62", "text": "The N-O-C for what broke and who has it." },
+        { "id": "p63", "text": "System Alerts and Terminals for the hardware picture." },
+        { "id": "p64", "text": "And the ticket feed to show whether the lane is still writing." },
+        { "id": "p65", "text": "Run them in that order every time," },
+        { "id": "p66", "text": "and your escalation carries the four facts a field tech needs to move without calling you back." }
+      ]
+    }
+  ],
+  "output": "WC-PB-03-pos-down-v1.1"
+}
