@@ -1,0 +1,136 @@
+{
+  "lesson": "WC-02-04",
+  "audioMaster": "training/module02-crm/WC-02-04-full-narration-v1.0.mp3",
+  "output": "WC-02-04-gift-cards-v1.1",
+  "note": "Verbatim phrases of the locked narration (s06/s10 July 11 re-render), in spoken order, split at the script's break tags and sentence boundaries into caption-sized pieces. Caption text is never rewritten, summarized, or reordered. Block windows are the measured onsets of each rendered block inside the joined master (normalized cross-correlation of each WC-02-04-sNN.mp3 against WC-02-04-full-narration-v1.0.mp3, all match scores >= 0.9997); the theoretical audio+0.4 tail model ends at 152.548s but the ffprobe master duration is 152.111s (the joined master uses ~0.36s inter-block gaps), so measured onsets are used for accurate phrase placement.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 15.04,
+      "phrases": [
+        { "id": "p01", "text": "Every prepaid card the network has sold lives on one screen." },
+        { "id": "p02", "text": "This is the gift card portfolio." },
+        { "id": "p03", "text": "Four headline tiles up top, three insight panels, and a searchable card list below." },
+        { "id": "p04", "text": "On a support call, this is almost always where you start." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.04,
+      "endS": 26.88,
+      "phrases": [
+        { "id": "p05", "text": "Four tiles run across the top." },
+        { "id": "p06", "text": "How many cards exist, how much is still owed on them," },
+        { "id": "p07", "text": "how many are live, and how many are spent to zero." },
+        { "id": "p08", "text": "Read them left to right for the whole portfolio at a glance." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 26.88,
+      "endS": 39.28,
+      "phrases": [
+        { "id": "p09", "text": "First panel, issuance over the last year." },
+        { "id": "p10", "text": "The line climbs, up about nine percent, with the running total in the corner." },
+        { "id": "p11", "text": "It tells you the program is growing before you open a report." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 39.28,
+      "endS": 50.88,
+      "phrases": [
+        { "id": "p12", "text": "Next to it, where the money sits." },
+        { "id": "p13", "text": "Most cards carry small amounts; only a thin slice hold a hundred dollars or more." },
+        { "id": "p14", "text": "So a big disputed balance is already the unusual case." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 50.88,
+      "endS": 60.96,
+      "phrases": [
+        { "id": "p15", "text": "The third panel is portfolio health." },
+        { "id": "p16", "text": "Most active, a good share redeemed, a few expired." },
+        { "id": "p17", "text": "The same split as the status column, rolled into one bar." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 60.96,
+      "endS": 73.04,
+      "phrases": [
+        { "id": "p18", "text": "Now the list itself." },
+        { "id": "p19", "text": "One number sits under the title: the record count," },
+        { "id": "p20", "text": "a hundred sixteen thousand cards and change, the same figure as the total tile up top." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 73.04,
+      "endS": 83.12,
+      "phrases": [
+        { "id": "p21", "text": "Two buttons sit above the table." },
+        { "id": "p22", "text": "Delete removes a card." },
+        { "id": "p23", "text": "Issue Gift Card creates one." },
+        { "id": "p24", "text": "Both write to real records, so we point and read, and never click either." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 83.12,
+      "endS": 95.36,
+      "phrases": [
+        { "id": "p25", "text": "Under the buttons, one search box." },
+        { "id": "p26", "text": "Type a card number, a customer, a location, or a status, and the list narrows to the match." },
+        { "id": "p27", "text": "When a caller has the card in hand, this is the fast path." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 95.36,
+      "endS": 110.0,
+      "phrases": [
+        { "id": "p28", "text": "Six columns describe each card." },
+        { "id": "p29", "text": "The number, who owns it, where it sold," },
+        { "id": "p30", "text": "what is left, whether it is still good, and when it last moved." },
+        { "id": "p31", "text": "Balance, status, last used carry most calls." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 110.0,
+      "endS": 125.28,
+      "phrases": [
+        { "id": "p32", "text": "Now the rows themselves." },
+        { "id": "p33", "text": "They load live, twenty-five cards to a page, thousands of pages deep." },
+        { "id": "p34", "text": "Where the customer cell shows a dash, no one is linked to that card." },
+        { "id": "p35", "text": "And if the table ever says it couldn't load, refresh before you quote a balance." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 125.28,
+      "endS": 137.84,
+      "phrases": [
+        { "id": "p36", "text": "Here is the everyday move." },
+        { "id": "p37", "text": "A customer reads you their card number." },
+        { "id": "p38", "text": "You drop it into the search," },
+        { "id": "p39", "text": "and the row returns the balance, the status, and the last-used date." },
+        { "id": "p40", "text": "Read those back and the call is answered." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 137.84,
+      "endS": 152.111,
+      "phrases": [
+        { "id": "p41", "text": "So, the gift card screen." },
+        { "id": "p42", "text": "Totals up top, three quick-read panels, and a list where every lookup lands." },
+        { "id": "p43", "text": "Find the card by number, read its balance and status," },
+        { "id": "p44", "text": "and you have handled almost every gift card call." }
+      ]
+    }
+  ]
+}

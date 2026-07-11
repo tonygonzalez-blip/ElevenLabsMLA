@@ -1,0 +1,210 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.570
+This is where every ticket in the business lands.
+
+p02
+00:00:03.085 --> 00:00:05.392
+On the rail the module says Sales.
+
+p03
+00:00:05.924 --> 00:00:07.919
+The page header says Transactions.
+
+p04
+00:00:08.433 --> 00:00:11.818
+Same place, two names, so don't let the wording throw you.
+
+p05
+00:00:12.240 --> 00:00:13.518
+Now the numbers up top.
+
+p06
+00:00:13.993 --> 00:00:18.590
+One tile counts every migrated ticket, past a hundred and twenty-six million.
+
+p07
+00:00:19.126 --> 00:00:23.157
+The other three cover the last thirty days, and right now they read as a dash.
+
+p08
+00:00:23.716 --> 00:00:26.478
+A dash means no value loaded, not zero.
+
+p09
+00:00:26.880 --> 00:00:27.553
+First card, Ticket Volume.
+
+p10
+00:00:27.969 --> 00:00:28.877
+It trends the last twelve months and tells you which way the line is heading.
+
+p11
+00:00:29.360 --> 00:00:37.390
+It answers whether business is up, not what any one ticket did.
+
+p12
+00:00:37.840 --> 00:00:38.593
+Middle card, By Status.
+
+p13
+00:00:38.803 --> 00:00:39.795
+This is the breakdown you'll lean on.
+
+p14
+00:00:40.256 --> 00:00:44.274
+Most tickets are paid and washed.
+
+p15
+00:00:44.524 --> 00:00:46.961
+A quarter are paid but not yet washed.
+
+p16
+00:00:47.230 --> 00:00:50.162
+A small slice is voided.
+
+p17
+00:00:50.388 --> 00:00:52.080
+Know the normal split, and the odd day jumps out at you.
+
+p18
+00:00:52.480 --> 00:00:53.978
+Right card, Ticket Health.
+
+p19
+00:00:55.140 --> 00:01:00.300
+Three quick percentages: how many paid, how many not washed, how many voided.
+
+p20
+00:01:00.805 --> 00:01:03.901
+It's the one-glance pulse for whatever scope you're looking at.
+
+p21
+00:01:04.378 --> 00:01:06.046
+Drop to the Search Tickets card.
+
+p22
+00:01:06.387 --> 00:01:09.610
+With more than a hundred and twenty-six million tickets underneath, you never scroll blind.
+
+p23
+00:01:09.877 --> 00:01:11.319
+Type what you already know, or narrow it with Filters, then search.
+
+p24
+00:01:11.595 --> 00:01:15.461
+And keep this straight: this button queries tickets;
+
+p25
+00:01:15.724 --> 00:01:21.360
+the Search up in the header jumps between pages.
+
+p26
+00:01:21.760 --> 00:01:23.740
+Under that, the ticket list itself.
+
+p27
+00:01:24.487 --> 00:01:28.620
+The count on the card is that same hundred-and-twenty-six-million, restated.
+
+p28
+00:01:29.364 --> 00:01:30.886
+Top-right sits Export.
+
+p29
+00:01:31.444 --> 00:01:32.509
+Find it, and leave it.
+
+p30
+00:01:33.451 --> 00:01:37.140
+In training we locate the data-out buttons; we don't fire them.
+
+p31
+00:01:37.600 --> 00:01:38.659
+Now the columns.
+
+p32
+00:01:39.243 --> 00:01:40.065
+Seven of them, each a way to read or sort the list:
+
+p33
+00:01:40.416 --> 00:01:42.583
+where it rang up, its number, when, how much,
+
+p34
+00:01:43.252 --> 00:01:44.152
+its status, how it was paid, and who it belongs to.
+
+p35
+00:01:44.522 --> 00:01:55.811
+Every header sorts, and every row has a checkbox.
+
+p36
+00:01:56.361 --> 00:01:57.447
+Take one row.
+
+p37
+00:01:57.951 --> 00:01:59.372
+The ticket number is a link.
+
+p38
+00:01:59.768 --> 00:02:04.643
+Click it and you'd open that single ticket, which is the next lesson, so leave it alone here.
+
+p39
+00:02:04.898 --> 00:02:09.094
+And where Customer shows a dash, no customer was tied to that sale.
+
+p40
+00:02:09.597 --> 00:02:11.066
+Glance at the pager.
+
+p41
+00:02:11.945 --> 00:02:17.104
+Twenty-five to a page, and the last page number sits just past five million.
+
+p42
+00:02:17.656 --> 00:02:20.661
+That's the same mountain of tickets said a different way.
+
+p43
+00:02:21.239 --> 00:02:24.197
+It's exactly why you filter before you page.
+
+p44
+00:02:24.640 --> 00:02:26.013
+Last, the sidebar.
+
+p45
+00:02:26.465 --> 00:02:30.286
+Nine pages live under Sales, and Tickets is only the first.
+
+p46
+00:02:30.728 --> 00:02:33.994
+The rest get their own lessons, Refund Approvals among them.
+
+p47
+00:02:34.428 --> 00:02:37.195
+And if you trained on the old system, notice what moved:
+
+p48
+00:02:37.527 --> 00:02:42.210
+Adjustments went to Inventory, and refund permissions still run through security levels.
+
+p49
+00:02:42.640 --> 00:02:44.513
+That's the Tickets page.
+
+p50
+00:02:44.513 --> 00:02:48.905
+Read health from the band and the three cards, filter before you browse,
+
+p51
+00:02:48.905 --> 00:02:51.608
+and know the list and where Export sits.
+
+p52
+00:02:51.608 --> 00:02:56.000
+Master this one page, and every transaction question you get starts right here.
+

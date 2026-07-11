@@ -1,0 +1,300 @@
+{
+  "lesson": "WC-03-01",
+  "audioMaster": "training/module03-sales/WC-03-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows are MEASURED onsets (cross-correlation of each block mp3 against the joined master): the join used ~0.35s inter-block gaps, not the nominal 0.40s, so the Sigma(audio+0.4) formula drifts to +0.49s by s12 (> 0.3s tolerance). Master ffprobe duration 176.431s. Block s11 is the July 11 re-render (nine sidebar pages incl. Refund Approvals), confirmed via git history (old block reset in b82e9fd, re-rendered in 28b7729, master re-joined same commit).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 12.24,
+      "phrases": [
+        {
+          "id": "p01",
+          "text": "This is where every ticket in the business lands."
+        },
+        {
+          "id": "p02",
+          "text": "On the rail the module says Sales."
+        },
+        {
+          "id": "p03",
+          "text": "The page header says Transactions."
+        },
+        {
+          "id": "p04",
+          "text": "Same place, two names, so don't let the wording throw you."
+        }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 12.24,
+      "endS": 26.88,
+      "phrases": [
+        {
+          "id": "p05",
+          "text": "Now the numbers up top."
+        },
+        {
+          "id": "p06",
+          "text": "One tile counts every migrated ticket, past a hundred and twenty-six million."
+        },
+        {
+          "id": "p07",
+          "text": "The other three cover the last thirty days, and right now they read as a dash."
+        },
+        {
+          "id": "p08",
+          "text": "A dash means no value loaded, not zero."
+        }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 26.88,
+      "endS": 37.84,
+      "phrases": [
+        {
+          "id": "p09",
+          "text": "First card, Ticket Volume."
+        },
+        {
+          "id": "p10",
+          "text": "It trends the last twelve months and tells you which way the line is heading."
+        },
+        {
+          "id": "p11",
+          "text": "It answers whether business is up, not what any one ticket did."
+        }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 37.84,
+      "endS": 52.48,
+      "phrases": [
+        {
+          "id": "p12",
+          "text": "Middle card, By Status."
+        },
+        {
+          "id": "p13",
+          "text": "This is the breakdown you'll lean on."
+        },
+        {
+          "id": "p14",
+          "text": "Most tickets are paid and washed."
+        },
+        {
+          "id": "p15",
+          "text": "A quarter are paid but not yet washed."
+        },
+        {
+          "id": "p16",
+          "text": "A small slice is voided."
+        },
+        {
+          "id": "p17",
+          "text": "Know the normal split, and the odd day jumps out at you."
+        }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 52.48,
+      "endS": 64.32,
+      "phrases": [
+        {
+          "id": "p18",
+          "text": "Right card, Ticket Health."
+        },
+        {
+          "id": "p19",
+          "text": "Three quick percentages: how many paid, how many not washed, how many voided."
+        },
+        {
+          "id": "p20",
+          "text": "It's the one-glance pulse for whatever scope you're looking at."
+        }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 64.32,
+      "endS": 81.76,
+      "phrases": [
+        {
+          "id": "p21",
+          "text": "Drop to the Search Tickets card."
+        },
+        {
+          "id": "p22",
+          "text": "With more than a hundred and twenty-six million tickets underneath, you never scroll blind."
+        },
+        {
+          "id": "p23",
+          "text": "Type what you already know, or narrow it with Filters, then search."
+        },
+        {
+          "id": "p24",
+          "text": "And keep this straight: this button queries tickets;"
+        },
+        {
+          "id": "p25",
+          "text": "the Search up in the header jumps between pages."
+        }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 81.76,
+      "endS": 97.6,
+      "phrases": [
+        {
+          "id": "p26",
+          "text": "Under that, the ticket list itself."
+        },
+        {
+          "id": "p27",
+          "text": "The count on the card is that same hundred-and-twenty-six-million, restated."
+        },
+        {
+          "id": "p28",
+          "text": "Top-right sits Export."
+        },
+        {
+          "id": "p29",
+          "text": "Find it, and leave it."
+        },
+        {
+          "id": "p30",
+          "text": "In training we locate the data-out buttons; we don't fire them."
+        }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 97.6,
+      "endS": 116.24,
+      "phrases": [
+        {
+          "id": "p31",
+          "text": "Now the columns."
+        },
+        {
+          "id": "p32",
+          "text": "Seven of them, each a way to read or sort the list:"
+        },
+        {
+          "id": "p33",
+          "text": "where it rang up, its number, when, how much,"
+        },
+        {
+          "id": "p34",
+          "text": "its status, how it was paid, and who it belongs to."
+        },
+        {
+          "id": "p35",
+          "text": "Every header sorts, and every row has a checkbox."
+        }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 116.24,
+      "endS": 129.52,
+      "phrases": [
+        {
+          "id": "p36",
+          "text": "Take one row."
+        },
+        {
+          "id": "p37",
+          "text": "The ticket number is a link."
+        },
+        {
+          "id": "p38",
+          "text": "Click it and you'd open that single ticket, which is the next lesson, so leave it alone here."
+        },
+        {
+          "id": "p39",
+          "text": "And where Customer shows a dash, no customer was tied to that sale."
+        }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 129.52,
+      "endS": 144.64,
+      "phrases": [
+        {
+          "id": "p40",
+          "text": "Glance at the pager."
+        },
+        {
+          "id": "p41",
+          "text": "Twenty-five to a page, and the last page number sits just past five million."
+        },
+        {
+          "id": "p42",
+          "text": "That's the same mountain of tickets said a different way."
+        },
+        {
+          "id": "p43",
+          "text": "It's exactly why you filter before you page."
+        }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 144.64,
+      "endS": 162.64,
+      "phrases": [
+        {
+          "id": "p44",
+          "text": "Last, the sidebar."
+        },
+        {
+          "id": "p45",
+          "text": "Nine pages live under Sales, and Tickets is only the first."
+        },
+        {
+          "id": "p46",
+          "text": "The rest get their own lessons, Refund Approvals among them."
+        },
+        {
+          "id": "p47",
+          "text": "And if you trained on the old system, notice what moved:"
+        },
+        {
+          "id": "p48",
+          "text": "Adjustments went to Inventory, and refund permissions still run through security levels."
+        }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 162.64,
+      "endS": 176.431,
+      "phrases": [
+        {
+          "id": "p49",
+          "text": "That's the Tickets page."
+        },
+        {
+          "id": "p50",
+          "text": "Read health from the band and the three cards, filter before you browse,"
+        },
+        {
+          "id": "p51",
+          "text": "and know the list and where Export sits."
+        },
+        {
+          "id": "p52",
+          "text": "Master this one page, and every transaction question you get starts right here."
+        }
+      ]
+    }
+  ],
+  "output": "WC-03-01-tickets-list-v1.1"
+}

@@ -1,6 +1,6 @@
 {
   "lesson": "WC-01-02",
-  "generatedISO": "2026-07-11T14:02:20.513Z",
+  "generatedISO": "2026-07-11T14:53:38.294Z",
   "checks": [
     {
       "id": 1,
@@ -54,7 +54,7 @@
       "id": 9,
       "name": "clicks preceded by arrival + readable hover",
       "pass": true,
-      "detail": "locBtn:507ms, locBtn:481ms, shyneBtn:388ms, shyneClose:518ms"
+      "detail": "locBtn:417ms, locBtn:536ms, shyneBtn:479ms, shyneClose:601ms"
     },
     {
       "id": 10,
@@ -96,7 +96,7 @@
       "id": 16,
       "name": "required visibility watches held",
       "pass": true,
-      "detail": "paletteVisibleDuringExplanation:held=true(70), dropdownVisibleDuringExplanation:held=true(65), shyneVisibleDuringExplanation:held=true(89)"
+      "detail": "paletteVisibleDuringExplanation:held=true(70), dropdownVisibleDuringExplanation:held=true(65), shyneVisibleDuringExplanation:held=true(86)"
     },
     {
       "id": 17,
