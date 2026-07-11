@@ -9,4 +9,5 @@ production/out/*-video.mp4
 production/out/*-cs-tmp/
 production/out/*-produce.log
 production/out/*.SKIP
+production/out/*-events-rehearsal.json
 production/lessons/*.ready
