@@ -41,8 +41,8 @@ From the Executive Dashboard you can read the whole network at a glance: pick th
 
 - The whole dashboard is read-only. The period toggles are a view control; changing the period re-scopes the cards and panels and does not modify any record. Selecting **Month** returns you to the default window.
 - **LABOR %** renders in amber when it is over target (17.4% against a 15% target). In **Location health**, each site carries a colored status dot and its conv-to-target figure shades from green toward red as the site slips. These colors are the dashboard flagging where to look; they change nothing.
-- The learning plan also lists a **GOALS · Q2 2026** panel (target-vs-actual bars including NPS). It sits below the captured viewport and does not appear in today's digest or screenshot, so it reads TBD — parked (new parked item; see structured return). Confirm and document it on a live pass.
-- **Members vs churn** and **Revenue mix** have their titles and subtitles captured, but their internal chart values fall below the captured view, so this lesson documents them at the panel level only and does not quote per-bar or per-segment values.
+- The **GOALS · Q2 2026** panel exists on the live platform and was captured in full on the July 11, 2026 full-page pass (it sits below the fold, which is why the July 9 viewport capture missed it — parked marker cleared). Eyebrow **GOALS · Q2 2026**, heading **Where we are vs targets**, five target-vs-actual bars: **Revenue** (Target $1.55M · Actual $1.42M — 92%), **Active Members** (Target 19,000 · Actual 18,816 — 99%), **Conversion rate (≥ 7.5%)** (Target 7.5% · Actual 7.1% — ↓ 0.4 pt), **Labor % (≤ 15%)** (Target ≤15% · Actual 17.4% — ↑ 2.4 pt over, drawn amber-to-red), and **Customer NPS** (Target 60 · Actual 64 — +4 ✓). This matches the learning plan's description, NPS included. The narration script does not cover this panel; extending the lesson to narrate it would need a script revision and render (flagged in the structured return).
+- **Members vs churn** and **Revenue mix** are captured in full in the July 11 full-page shot: the churn chart's legend reads **Active members (right)**, **Gross adds (left)**, **Churn (left)**, and the donut's segments are labeled **Membership 68% / Pay-per-wash 22% / Retail 7% / Add-ons 3%**. Per-bar churn values remain unlabeled on the chart and are not quoted.
 - The **REVENUE** card drills into a **Revenue Detail** page that carries a **Live Prototype** chip. Use **Back to Executive Dashboard** to return; do not follow **Open Reports** or the **Jump to workflow** links during this lesson, which navigate away.
 - The session timeout ("Still there?") prompt is not covered here. If it appears while recording, dismiss it off-camera and re-roll the segment. See WC-01-03.
 
@@ -50,4 +50,4 @@ From the Executive Dashboard you can read the whole network at a glance: pick th
 
 WC-01-02 Global header tools · WC-06-02 The Analytics sidebar.
 
-**Verified against demo.washcentral.com on July 9, 2026.**
+**Verified against demo.washcentral.com on July 11, 2026.**
