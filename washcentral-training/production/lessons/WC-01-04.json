@@ -148,7 +148,8 @@
     "atFooter": "window.scrollY >= document.scrollingElement.scrollHeight - window.innerHeight - 60",
     "atTop": "window.scrollY <= 8",
     "perPageOpen": "(()=>{const d=document.querySelector('.pg-per-page-dropdown');return !!d&&d.getBoundingClientRect().height>40})()",
-    "perPageClosed25": "(()=>{const d=document.querySelector('.pg-per-page-dropdown');return (!d||d.getBoundingClientRect().height<5)&&document.querySelector('.pg-per-page-val').textContent.trim()==='25'})()"
+    "perPageClosed25": "(()=>{const d=document.querySelector('.pg-per-page-dropdown');return (!d||d.getBoundingClientRect().height<5)&&document.querySelector('.pg-per-page-val').textContent.trim()==='25'})()",
+    "sidebarCollapsedNow": "document.querySelector('.app')&&document.querySelector('.app').classList.contains('sidebar-collapsed')"
   },
   "ops": [
     {
@@ -255,7 +256,7 @@
     },
     {
       "op": "log-rects",
-      "at": 16.0,
+      "at": 16,
       "key": "kpiTiles",
       "targets": [
         "tileTotal",
@@ -266,7 +267,7 @@
     },
     {
       "op": "move",
-      "at": 18.0,
+      "at": 18,
       "to": {
         "target": "tileActive",
         "offset": [
@@ -278,7 +279,7 @@
     },
     {
       "op": "move",
-      "at": 20.0,
+      "at": 20,
       "to": {
         "target": "tileRisk",
         "offset": [
@@ -289,7 +290,7 @@
     },
     {
       "op": "move",
-      "at": 22.0,
+      "at": 22,
       "to": {
         "target": "tileProspects",
         "offset": [
@@ -570,7 +571,7 @@
     },
     {
       "op": "move",
-      "at": 111.0,
+      "at": 111,
       "to": {
         "target": "selectAllBox",
         "offset": [
@@ -861,7 +862,7 @@
     },
     {
       "op": "move",
-      "at": 167.0,
+      "at": 167,
       "to": {
         "point": [
           900,
@@ -1135,7 +1136,7 @@
       },
       {
         "anchor": "kpiTiles.tileTotal",
-        "from": 21.0,
+        "from": 21,
         "to": 21.65,
         "note": "p08: how many customers"
       },
@@ -1229,7 +1230,7 @@
       {
         "anchor": "tableHeadRect",
         "from": 98.2,
-        "to": 106.0,
+        "to": 106,
         "note": "p30: the sortable column headers"
       },
       {
@@ -1281,7 +1282,7 @@
       },
       {
         "anchor": "pagerItems.lastPageBtn",
-        "from": 138.0,
+        "from": 138,
         "to": 141.4,
         "note": "p41: the pages say millions (65,753)"
       },
@@ -1360,7 +1361,7 @@
         "cy": 540
       },
       {
-        "t": 15.0,
+        "t": 15,
         "z": 1,
         "cx": 960,
         "cy": 540
@@ -1456,5 +1457,17 @@
       "fadeOutFrames": 10
     },
     "captionsBurnClearAt": 197.1
-  }
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarCollapsedNow",
+      "postcondition": "sidebarCollapsedNow",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the sidebar collapsed (the toggle is the same control both ways); skipped when already collapsed"
+    }
+  ]
 }
