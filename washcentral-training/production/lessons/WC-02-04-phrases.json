@@ -116,9 +116,8 @@
       "phrases": [
         { "id": "p36", "text": "Here is the everyday move." },
         { "id": "p37", "text": "A customer reads you their card number." },
-        { "id": "p38", "text": "You drop it into the search," },
-        { "id": "p39", "text": "and the row returns the balance, the status, and the last-used date." },
-        { "id": "p40", "text": "Read those back and the call is answered." }
+        { "id": "p38", "text": "You drop it into the search, and the row returns the balance, the status, and the last-used date." },
+        { "id": "p39", "text": "Read those back and the call is answered." }
       ]
     },
     {
@@ -126,10 +125,12 @@
       "startS": 137.84,
       "endS": 152.111,
       "phrases": [
-        { "id": "p41", "text": "So, the gift card screen." },
-        { "id": "p42", "text": "Totals up top, three quick-read panels, and a list where every lookup lands." },
-        { "id": "p43", "text": "Find the card by number, read its balance and status," },
-        { "id": "p44", "text": "and you have handled almost every gift card call." }
+        { "id": "p40", "text": "So, the gift card screen." },
+        { "id": "p41", "text": "Totals up top," },
+        { "id": "p42", "text": "three quick-read panels," },
+        { "id": "p43", "text": "and a list where every lookup lands." },
+        { "id": "p44", "text": "Find the card by number, read its balance and status," },
+        { "id": "p45", "text": "and you have handled almost every gift card call." }
       ]
     }
   ]

@@ -295,14 +295,18 @@
         },
         {
           "id": "p53",
-          "text": "the console that opens the conversation, and the customer's context beside it."
+          "text": "the console that opens the conversation,"
         },
         {
           "id": "p54",
-          "text": "Your presence lives in the header, and you leave it alone unless your shift changes."
+          "text": "and the customer's context beside it."
         },
         {
           "id": "p55",
+          "text": "Your presence lives in the header, and you leave it alone unless your shift changes."
+        },
+        {
+          "id": "p56",
           "text": "That's the Agent Console."
         }
       ]

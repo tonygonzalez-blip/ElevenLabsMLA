@@ -289,71 +289,79 @@
       "id": "p36",
       "text": "Here is the everyday move.",
       "startS": 125.342,
-      "endS": 126.737,
-      "timing": "proportional"
+      "endS": 127.07,
+      "timing": "silence"
     },
     {
       "block": "s11",
       "id": "p37",
       "text": "A customer reads you their card number.",
-      "startS": 126.737,
-      "endS": 129.445,
-      "timing": "proportional"
+      "startS": 127.825,
+      "endS": 129.635,
+      "timing": "silence"
     },
     {
       "block": "s11",
       "id": "p38",
-      "text": "You drop it into the search,",
-      "startS": 129.445,
-      "endS": 131.422,
-      "timing": "proportional"
+      "text": "You drop it into the search, and the row returns the balance, the status, and the last-used date.",
+      "startS": 129.938,
+      "endS": 135.002,
+      "timing": "silence"
     },
     {
       "block": "s11",
       "id": "p39",
-      "text": "and the row returns the balance, the status, and the last-used date.",
-      "startS": 131.422,
-      "endS": 134.771,
-      "timing": "proportional"
+      "text": "Read those back and the call is answered.",
+      "startS": 135.418,
+      "endS": 137.419,
+      "timing": "silence"
     },
     {
-      "block": "s11",
+      "block": "s12",
       "id": "p40",
-      "text": "Read those back and the call is answered.",
-      "startS": 134.771,
-      "endS": 137.419,
-      "timing": "proportional"
+      "text": "So, the gift card screen.",
+      "startS": 137.84,
+      "endS": 139.591,
+      "timing": "silence"
     },
     {
       "block": "s12",
       "id": "p41",
-      "text": "So, the gift card screen.",
-      "startS": 137.84,
-      "endS": 139.582,
+      "text": "Totals up top,",
+      "startS": 140.089,
+      "endS": 141.054,
       "timing": "silence"
     },
     {
       "block": "s12",
       "id": "p42",
-      "text": "Totals up top, three quick-read panels, and a list where every lookup lands.",
-      "startS": 140.089,
-      "endS": 141.033,
+      "text": "three quick-read panels,",
+      "startS": 141.363,
+      "endS": 142.771,
       "timing": "silence"
     },
     {
       "block": "s12",
       "id": "p43",
-      "text": "Find the card by number, read its balance and status,",
-      "startS": 141.364,
-      "endS": 145.231,
+      "text": "and a list where every lookup lands.",
+      "startS": 143.025,
+      "endS": 145.241,
       "timing": "silence"
     },
     {
       "block": "s12",
       "id": "p44",
+      "text": "Find the card by number, read its balance and status,",
+      "startS": 145.633,
+      "endS": 148.61,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p45",
       "text": "and you have handled almost every gift card call.",
-      "startS": 145.676,
-      "endS": 151.658,
+      "startS": 148.835,
+      "endS": 151.666,
       "timing": "silence"
     }
   ]

@@ -23,7 +23,7 @@
     {
       "block": "s01",
       "id": "p03",
-      "text": "The queue on the left, the live conversation in the middle, the customer's details on the right.",
+      "text": "The queue on the left,",
       "startS": 6.301,
       "endS": 7.328,
       "timing": "silence"
@@ -31,14 +31,30 @@
     {
       "block": "s01",
       "id": "p04",
-      "text": "No tab-hopping while someone waits on you.",
+      "text": "the live conversation in the middle,",
       "startS": 7.625,
+      "endS": 9.206,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "the customer's details on the right.",
+      "startS": 9.522,
+      "endS": 11.146,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "No tab-hopping while someone waits on you.",
+      "startS": 11.66,
       "endS": 13.84,
       "timing": "silence"
     },
     {
       "block": "s02",
-      "id": "p05",
+      "id": "p07",
       "text": "Up in the header, your presence.",
       "startS": 14.307,
       "endS": 16.237,
@@ -46,7 +62,7 @@
     },
     {
       "block": "s02",
-      "id": "p06",
+      "id": "p08",
       "text": "It reads Offline right now, and it can be Available, Away, Busy, or Offline.",
       "startS": 16.599,
       "endS": 18.571,
@@ -54,7 +70,7 @@
     },
     {
       "block": "s02",
-      "id": "p07",
+      "id": "p09",
       "text": "This is how the desk knows whether you're ready for a contact.",
       "startS": 18.834,
       "endS": 20.361,
@@ -62,7 +78,7 @@
     },
     {
       "block": "s02",
-      "id": "p08",
+      "id": "p10",
       "text": "Leave it where your shift set it; we don't touch it here.",
       "startS": 20.625,
       "endS": 29.12,
@@ -70,7 +86,7 @@
     },
     {
       "block": "s03",
-      "id": "p09",
+      "id": "p11",
       "text": "Look at the top of the queue.",
       "startS": 29.52,
       "endS": 31.025,
@@ -78,7 +94,7 @@
     },
     {
       "block": "s03",
-      "id": "p10",
+      "id": "p12",
       "text": "Three numbers give you the load at a glance:",
       "startS": 31.518,
       "endS": 33.748,
@@ -86,7 +102,7 @@
     },
     {
       "block": "s03",
-      "id": "p11",
+      "id": "p13",
       "text": "how many are waiting, the average wait, and how many are flagged high priority.",
       "startS": 34.016,
       "endS": 38.318,
@@ -94,7 +110,7 @@
     },
     {
       "block": "s03",
-      "id": "p12",
+      "id": "p14",
       "text": "All zero now.",
       "startS": 38.599,
       "endS": 39.539,
@@ -102,7 +118,7 @@
     },
     {
       "block": "s03",
-      "id": "p13",
+      "id": "p15",
       "text": "A calm board.",
       "startS": 39.78,
       "endS": 40.719,
@@ -110,7 +126,7 @@
     },
     {
       "block": "s04",
-      "id": "p14",
+      "id": "p16",
       "text": "There's a search box over the queue.",
       "startS": 41.205,
       "endS": 42.916,
@@ -118,7 +134,7 @@
     },
     {
       "block": "s04",
-      "id": "p15",
+      "id": "p17",
       "text": "Type a name, a phone number, a plan, or the reason for the handoff, and the list narrows to it.",
       "startS": 43.402,
       "endS": 48.822,
@@ -126,7 +142,7 @@
     },
     {
       "block": "s04",
-      "id": "p16",
+      "id": "p18",
       "text": "On a busy shift, that's how you pull one contact out of a crowd.",
       "startS": 49.719,
       "endS": 53.266,
@@ -134,7 +150,7 @@
     },
     {
       "block": "s05",
-      "id": "p17",
+      "id": "p19",
       "text": "Three buttons scope the queue.",
       "startS": 53.788,
       "endS": 55.588,
@@ -142,7 +158,7 @@
     },
     {
       "block": "s05",
-      "id": "p18",
+      "id": "p20",
       "text": "Mine is yours.",
       "startS": 56.043,
       "endS": 57.301,
@@ -150,7 +166,7 @@
     },
     {
       "block": "s05",
-      "id": "p19",
+      "id": "p21",
       "text": "Unassigned is up for grabs.",
       "startS": 57.675,
       "endS": 59.383,
@@ -158,7 +174,7 @@
     },
     {
       "block": "s05",
-      "id": "p20",
+      "id": "p22",
       "text": "Team is the whole group's board.",
       "startS": 60.235,
       "endS": 62.104,
@@ -166,7 +182,7 @@
     },
     {
       "block": "s05",
-      "id": "p21",
+      "id": "p23",
       "text": "Right now it's set to Team, so you're seeing everything, not only your own.",
       "startS": 62.344,
       "endS": 66.397,
@@ -174,7 +190,7 @@
     },
     {
       "block": "s06",
-      "id": "p22",
+      "id": "p24",
       "text": "Below that, the channels.",
       "startS": 66.889,
       "endS": 68.325,
@@ -182,31 +198,63 @@
     },
     {
       "block": "s06",
-      "id": "p23",
-      "text": "All, then Voice, S-M-S, and Web.",
+      "id": "p25",
+      "text": "All,",
       "startS": 69.109,
       "endS": 69.526,
       "timing": "silence"
     },
     {
       "block": "s06",
-      "id": "p24",
-      "text": "Those last three are the ways a customer reaches you, and All shows them together.",
+      "id": "p26",
+      "text": "then Voice,",
       "startS": 70.014,
       "endS": 70.853,
       "timing": "silence"
     },
     {
       "block": "s06",
-      "id": "p25",
-      "text": "Remember the three: voice, text, and web chat.",
+      "id": "p27",
+      "text": "S-M-S, and Web.",
       "startS": 71.305,
+      "endS": 72.906,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Those last three are the ways a customer reaches you, and All shows them together.",
+      "startS": 73.837,
+      "endS": 78.278,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Remember the three:",
+      "startS": 78.988,
+      "endS": 79.841,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "voice, text,",
+      "startS": 80.26,
+      "endS": 80.784,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "and web chat.",
+      "startS": 81.105,
       "endS": 82.48,
       "timing": "silence"
     },
     {
       "block": "s07",
-      "id": "p26",
+      "id": "p32",
       "text": "Open the sort control.",
       "startS": 83,
       "endS": 84.24,
@@ -214,7 +262,7 @@
     },
     {
       "block": "s07",
-      "id": "p27",
+      "id": "p33",
       "text": "You can work the queue longest wait first, priority first, or most recent first.",
       "startS": 84.737,
       "endS": 89.686,
@@ -222,23 +270,31 @@
     },
     {
       "block": "s07",
-      "id": "p28",
-      "text": "Longest wait first is the fair choice; it clears whoever has been holding the longest.",
+      "id": "p34",
+      "text": "Longest wait first is the fair choice;",
       "startS": 90.258,
       "endS": 92.504,
       "timing": "silence"
     },
     {
       "block": "s07",
-      "id": "p29",
-      "text": "Close it without changing anything.",
+      "id": "p35",
+      "text": "it clears whoever has been holding the longest.",
       "startS": 92.903,
+      "endS": 95.154,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Close it without changing anything.",
+      "startS": 95.561,
       "endS": 97.2,
       "timing": "silence"
     },
     {
       "block": "s08",
-      "id": "p30",
+      "id": "p37",
       "text": "Under the filters, the queue itself.",
       "startS": 97.691,
       "endS": 99.702,
@@ -246,7 +302,7 @@
     },
     {
       "block": "s08",
-      "id": "p31",
+      "id": "p38",
       "text": "It says no matching handoffs, because nothing is waiting.",
       "startS": 100.456,
       "endS": 103.707,
@@ -254,7 +310,7 @@
     },
     {
       "block": "s08",
-      "id": "p32",
+      "id": "p39",
       "text": "When a contact comes in, its row shows up right here for you to pick up.",
       "startS": 104.346,
       "endS": 108.339,
@@ -262,7 +318,7 @@
     },
     {
       "block": "s09",
-      "id": "p33",
+      "id": "p40",
       "text": "The middle is empty too.",
       "startS": 108.8,
       "endS": 110.107,
@@ -270,7 +326,7 @@
     },
     {
       "block": "s09",
-      "id": "p34",
+      "id": "p41",
       "text": "Select a handoff from the queue, it says, to open its console.",
       "startS": 111.36,
       "endS": 114.978,
@@ -278,7 +334,7 @@
     },
     {
       "block": "s09",
-      "id": "p35",
+      "id": "p42",
       "text": "That's the cue.",
       "startS": 115.666,
       "endS": 116.462,
@@ -286,7 +342,7 @@
     },
     {
       "block": "s09",
-      "id": "p36",
+      "id": "p43",
       "text": "You click a waiting row, and the conversation loads into this space.",
       "startS": 117.256,
       "endS": 120.96,
@@ -294,7 +350,7 @@
     },
     {
       "block": "s10",
-      "id": "p37",
+      "id": "p44",
       "text": "And on the right, the Customer panel.",
       "startS": 121.462,
       "endS": 123.365,
@@ -302,7 +358,7 @@
     },
     {
       "block": "s10",
-      "id": "p38",
+      "id": "p45",
       "text": "No conversation selected, for now.",
       "startS": 123.805,
       "endS": 125.692,
@@ -310,7 +366,7 @@
     },
     {
       "block": "s10",
-      "id": "p39",
+      "id": "p46",
       "text": "Once you open one, this is where the customer's context sits, so you're never guessing who you're helping.",
       "startS": 126.28,
       "endS": 131.715,
@@ -318,7 +374,7 @@
     },
     {
       "block": "s11",
-      "id": "p40",
+      "id": "p47",
       "text": "So why is it all empty?",
       "startS": 132.16,
       "endS": 133.574,
@@ -326,7 +382,7 @@
     },
     {
       "block": "s11",
-      "id": "p41",
+      "id": "p48",
       "text": "The queue fills when the AI Agent hands a conversation to a person.",
       "startS": 134.433,
       "endS": 138.283,
@@ -334,7 +390,7 @@
     },
     {
       "block": "s11",
-      "id": "p42",
+      "id": "p49",
       "text": "Those escalations land right here, in the Handoff Queue.",
       "startS": 138.868,
       "endS": 142.268,
@@ -342,7 +398,7 @@
     },
     {
       "block": "s11",
-      "id": "p43",
+      "id": "p50",
       "text": "The agent side of that is a later lesson; for now, know this is where a handed-off customer waits for you.",
       "startS": 142.943,
       "endS": 148.878,
@@ -350,7 +406,7 @@
     },
     {
       "block": "s12",
-      "id": "p44",
+      "id": "p51",
       "text": "One screen, three panes.",
       "startS": 149.28,
       "endS": 151.081,
@@ -358,25 +414,41 @@
     },
     {
       "block": "s12",
-      "id": "p45",
-      "text": "The queue you scope by who owns it and by channel, the console that opens the conversation, and the customer's context beside it.",
+      "id": "p52",
+      "text": "The queue you scope by who owns it and by channel,",
       "startS": 151.444,
       "endS": 154.432,
       "timing": "silence"
     },
     {
       "block": "s12",
-      "id": "p46",
-      "text": "Your presence lives in the header, and you leave it alone unless your shift changes.",
+      "id": "p53",
+      "text": "the console that opens the conversation,",
       "startS": 154.812,
       "endS": 157.08,
       "timing": "silence"
     },
     {
       "block": "s12",
-      "id": "p47",
-      "text": "That's the Agent Console.",
+      "id": "p54",
+      "text": "and the customer's context beside it.",
       "startS": 157.418,
+      "endS": 159.53,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "Your presence lives in the header, and you leave it alone unless your shift changes.",
+      "startS": 160.194,
+      "endS": 164.456,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "That's the Agent Console.",
+      "startS": 164.984,
       "endS": 166.696,
       "timing": "silence"
     }
