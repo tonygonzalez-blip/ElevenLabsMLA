@@ -1,0 +1,296 @@
+{
+  "lesson": "WC-01-05",
+  "audioMaster": "training/module01-foundations/WC-01-05-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows come from ffprobe of the per-step block MP3s (audio + 0.4s tail each); the final block end is clamped to the ffprobed master duration (181.081s; the joined master carries no trailing tail).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 15.394,
+      "phrases": [
+        {
+          "id": "p01",
+          "text": "Open Settings, then Operations, then Cancellation Reasons."
+        },
+        {
+          "id": "p02",
+          "text": "This is a list page,"
+        },
+        {
+          "id": "p03",
+          "text": "and it is the doorway into a shape you will meet on nearly every screen in WashCentral."
+        },
+        {
+          "id": "p04",
+          "text": "Learn it once here, and the rest of the platform stops surprising you."
+        }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.394,
+      "endS": 31.102,
+      "phrases": [
+        {
+          "id": "p05",
+          "text": "Look across the top."
+        },
+        {
+          "id": "p06",
+          "text": "Three tiles count the list below:"
+        },
+        {
+          "id": "p07",
+          "text": "how many reasons exist, how many reach the POS, and how many stay hidden."
+        },
+        {
+          "id": "p08",
+          "text": "Numbers on top, records underneath."
+        },
+        {
+          "id": "p09",
+          "text": "The same shape you met on the customer lists."
+        }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 31.102,
+      "endS": 42.813,
+      "phrases": [
+        {
+          "id": "p10",
+          "text": "Now the card itself."
+        },
+        {
+          "id": "p11",
+          "text": "A title, a search box scoped to these reasons, and one green button to add a record."
+        },
+        {
+          "id": "p12",
+          "text": "When a list runs long, you search it instead of scrolling."
+        }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 42.813,
+      "endS": 54.602,
+      "phrases": [
+        {
+          "id": "p13",
+          "text": "Read the columns."
+        },
+        {
+          "id": "p14",
+          "text": "Each row is a single reason: what it says, and whether the register shows it."
+        },
+        {
+          "id": "p15",
+          "text": "One row, one record."
+        },
+        {
+          "id": "p16",
+          "text": "Click any row, and that record opens on a page of its own."
+        }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 54.602,
+      "endS": 65.373,
+      "phrases": [
+        {
+          "id": "p17",
+          "text": "Drop to the footer."
+        },
+        {
+          "id": "p18",
+          "text": "Rows per page, a count of what matched, and the page arrows."
+        },
+        {
+          "id": "p19",
+          "text": "Set it once, read the counter, and you always know how many records you are working through."
+        }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 65.373,
+      "endS": 79.252,
+      "phrases": [
+        {
+          "id": "p20",
+          "text": "Jump to Refund Reasons."
+        },
+        {
+          "id": "p21",
+          "text": "Same page, lighter version."
+        },
+        {
+          "id": "p22",
+          "text": "One tile, one column, the same add button."
+        },
+        {
+          "id": "p23",
+          "text": "The fields change from list to list, but the shape holds."
+        },
+        {
+          "id": "p24",
+          "text": "That is the whole point of learning it once."
+        }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 79.252,
+      "endS": 93.445,
+      "phrases": [
+        {
+          "id": "p25",
+          "text": "Back on Cancellation Reasons, click a row."
+        },
+        {
+          "id": "p26",
+          "text": "And notice what does not happen."
+        },
+        {
+          "id": "p27",
+          "text": "No detail page opens."
+        },
+        {
+          "id": "p28",
+          "text": "This lean reference list keeps you right here;"
+        },
+        {
+          "id": "p29",
+          "text": "its only record action is that green New Record button."
+        }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 93.445,
+      "endS": 108.447,
+      "phrases": [
+        {
+          "id": "p30",
+          "text": "Now scan the page for record buttons."
+        },
+        {
+          "id": "p31",
+          "text": "There is no Back, no Edit, no Delete."
+        },
+        {
+          "id": "p32",
+          "text": "On richer record types you will meet that three-button band; this list simply never grew one."
+        },
+        {
+          "id": "p33",
+          "text": "Everything it can do sits in New Record."
+        }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 108.447,
+      "endS": 123.607,
+      "phrases": [
+        {
+          "id": "p34",
+          "text": "Before we open the form, learn its two exits."
+        },
+        {
+          "id": "p35",
+          "text": "Cancel walks away clean."
+        },
+        {
+          "id": "p36",
+          "text": "Save Changes writes to the shared tenant, so on the demo you always leave through Cancel."
+        },
+        {
+          "id": "p37",
+          "text": "A star marks anything the form requires."
+        }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 123.607,
+      "endS": 139.001,
+      "phrases": [
+        {
+          "id": "p38",
+          "text": "And the delete rule still applies, even without a Delete button here."
+        },
+        {
+          "id": "p39",
+          "text": "Where other record types carry one, it always asks first."
+        },
+        {
+          "id": "p40",
+          "text": "Choose No, Keep at that confirmation,"
+        },
+        {
+          "id": "p41",
+          "text": "and treat Yes, Delete as off-limits on anything you did not create."
+        }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 139.001,
+      "endS": 152.958,
+      "phrases": [
+        {
+          "id": "p42",
+          "text": "Back on the list, open New Record."
+        },
+        {
+          "id": "p43",
+          "text": "The same form again, blank this time, ready for a fresh entry."
+        },
+        {
+          "id": "p44",
+          "text": "You are only here to see the layout, so close it the way you closed the edit: Cancel."
+        },
+        {
+          "id": "p45",
+          "text": "Nothing gets added."
+        }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 152.958,
+      "endS": 181.081,
+      "phrases": [
+        {
+          "id": "p46",
+          "text": "So that is the pattern on this lean list."
+        },
+        {
+          "id": "p47",
+          "text": "List, then New Record, then the form, and Cancel back out."
+        },
+        {
+          "id": "p48",
+          "text": "Two exits keep you safe: Cancel out of a form, No, Keep out of any delete you meet elsewhere."
+        },
+        {
+          "id": "p49",
+          "text": "One demo quirk to expect: the form header may name a sample record over a blank form."
+        },
+        {
+          "id": "p50",
+          "text": "That is the tenant, not a bug."
+        },
+        {
+          "id": "p51",
+          "text": "Richer record types add the detail view, and this rhythm carries straight into them."
+        }
+      ]
+    }
+  ],
+  "output": "WC-01-05-record-pattern-v1.1"
+}
