@@ -29,7 +29,7 @@
 ### Scope notes (non-spoken)
 
 - Read-only playbook. Never trigger **Export** or **+ New Record** on the **Audit Log**, and never edit or delete an audit entry. A correction to the underlying record happens in that record's own module, or gets escalated.
-- Steps 4–6: **Change History** could not be re-verified on its own URL in the July 9 corpus (`audit-changes.html` returned HTTP 404); it is reached only via the **AUDIT** sidebar. Its layout, filter control, and rendered column labels are TBD — parked; the **FIELD / OLD VALUE / NEW VALUE** column set is attributed to DISCREPANCIES.md #18 and the PB-11 plan.
+- Steps 4–6: **Change History** is reached only via the **AUDIT** sidebar (`audit-changes.html` 404'd on the July 9 direct sweep). Captured live July 11 (`verification/2026-07-11/digests/audit-changes-inapp.json`): KPI band 84 / 420 / 12 / 408; **Filters ▾** + **Search change history…** toolbar; columns **DATE/TIME · USER · MODULE · FIELD · OLD VALUE · NEW VALUE**; top row **Monthly Price $29.99 → $34.99**. Every spoken claim in s04–s06 holds against the capture (the s04 line about the direct URL 404 describes the July 9 sweep and remains true as nav guidance) — no re-render needed.
 - **Ask Shyne** and the session idle prompt ("Still there?") are out of scope here (session behavior is PARKED-ITEMS.md #9).
 
 ## Timed script
@@ -48,17 +48,17 @@ _[Director: do not click Export or + New Record.]_
 [01:04 | Step 4 — Open Change History]
 Now the page the caller actually wants. In the sidebar, click Change History. <break time="1.4s" /> One quirk from today's capture: typing its address directly returned a four oh four. So you reach it this way, through the audit sidebar, not by URL.
 
-_[Director: in-app navigation only. Page layout is TBD — parked; if it does not render, hold the parked title card.]_
+_[Director: in-app navigation only. Page verified live July 11 (tiles 84 / 420 / 12 / 408); the parked title card is retired — if the page fails to render, stop and re-verify instead.]_
 
 [01:23 | Step 5 — Filter to the record]
 Narrow it to the record. <break time="1.2s" /> Filter down to the module in question so one record's changes stand alone. You're reading a history, not editing one.
 
-_[Director: the exact filter control is TBD — parked; record the live control.]_
+_[Director: verified July 11 — the controls are **Filters ▾**, a **Search change history…** box, and **Search**; hover them, apply nothing.]_
 
 [01:35 | Step 6 — The field-level change]
 And here's the answer. <break time="1.2s" /> Each change is recorded at field level: the field, its old value, its new value, with the user and the timestamp. That row is, literally, what was it before.
 
-_[Director: column set attributed to DISCREPANCIES #18 and the PB-11 plan; rendered labels TBD — parked.]_
+_[Director: columns confirmed live July 11 — DATE/TIME · USER · MODULE · FIELD · OLD VALUE · NEW VALUE; hold on the Monthly Price $29.99 → $34.99 row.]_
 
 [01:51 | Step 7 — Assemble the answer]
 Now put the two pages together. <break time="1.0s" /> Change History gives you the field and the exact old and new values. The Audit Log gives you the user, the date and time, and the IP address it came from. The price changed is not an answer. The two values are.
@@ -76,6 +76,6 @@ _(Estimated total: about 2:53 / 173 s. Timestamps are estimates at ~145 wpm; con
 - Status **READY FOR GENERATION**: script complete, not yet rendered (no ElevenLabs key in this session). Voice **WashCentral New** / **eleven_v3** / 44.1 kHz locked per project.
 - Written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading (column names spoken only where they are the diagnostic content).
 - Humanizer pass (per CLAUDE.md §6): spoken prose kept clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, navigation paths, and numbered steps left exact. Em dashes appear only in the `[mm:ss | Step N — target]` house-format block headers and in the mandated "TBD — parked" token inside non-spoken director notes.
-- Corpus-grounded, no live walk: the **Audit Log** (seven columns, four tiles, **Action Types** panel, **AUDIT** sidebar group) is grounded in the July 9 digests and screenshots. **Change History** (steps 4–6) could not be re-verified on its own URL (HTTP 404 in the corpus); its **FIELD / OLD VALUE / NEW VALUE** column set is attributed to DISCREPANCIES.md #18 and the PB-11 plan, with layout, filter control, and rendered labels TBD — parked.
+- Corpus-grounded: the **Audit Log** (seven columns, four tiles, **Action Types** panel, **AUDIT** sidebar group) is grounded in the July 9 digests and screenshots. **Change History** (steps 4–6) is grounded in the July 11 in-app capture (`audit-changes-inapp.json`): tiles, **Filters ▾** / search toolbar, and the **FIELD / OLD VALUE / NEW VALUE** columns are all observed, and DISCREPANCIES.md #18's column attribution is confirmed. Spoken lines untouched July 11 (all remain accurate); only these non-spoken notes were updated.
 - No audit entry is edited or deleted anywhere; **Export** and **+ New Record** are never clicked.
 - Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**

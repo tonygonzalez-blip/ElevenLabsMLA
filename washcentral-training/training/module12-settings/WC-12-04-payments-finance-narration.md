@@ -1,6 +1,6 @@
 # WC-12-04 — Payments & Finance · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (12 steps). (Spoken lines unchanged — audio-locked script; the July 11 re-capture of Payment Types contradicts nothing spoken in step 2, which names only the three flags.)
 
 ## Settings header
 
@@ -80,4 +80,4 @@ _(Estimated total ≈ 4:17 / ~257 s at ~145 wpm, pending render. Replace with me
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Verbatim UI labels, navigation paths, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and the version line.
 - Read-only throughout: **+ New Record**, edit, and save are never clicked. Step 4's Discount detail is parked (`settings-discounts-edit.html` 404 in the July 9 corpus); the pattern is narrated and cross-referenced to WC-12-03, with no fabricated detail content.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.** (July 11 credentialed re-capture: Payment Types live — 9 rows, KPI 9 / 9 / 0 — consistent with every spoken line; Discount detail still parked.)

@@ -30,7 +30,7 @@
 ### Scope notes (non-spoken)
 
 - Read-only playbook. **Test Connection** and **Edit Configuration** are located and ringed, never clicked, never depicted running (steps 4 and 9). **+ New Record** (step 8) stays untouched. No credential value, masked or empty, is ever read aloud, zoomed, or copied.
-- Corpus gaps, all TBD — parked and never staged: the connected-state status label (step 2), the **Instructions** tab body (step 6), the **Help Desk (Zoho)** page contents (step 7 — 404 on July 9), the **System Users** rows (step 8 — fetch error on July 9), and the accounting connector's field contents (step 9).
+- **NEEDS PARTIAL RE-RENDER (July 11, 2026): blocks s07 and s08.** The July 11 captures show (a) **Help Desk (Zoho)** renders its not-connected view via the sidebar (`zoho-tickets-inapp.json`: subtitle **Support Tickets · Not connected**, **—** counts, **Zoho Desk not connected** card; only the direct URL 404'd July 9) — block s07's spoken "this page came back as a four-oh-four... The page is not serving" contradicts the live page; and (b) **System Users** loads live rows (`settings-system-users.json`: 8,022 Total Users) — block s08's spoken "Today the rows themselves failed to load" contradicts the list. Both blocks need re-script/re-render. Block s10's fetch-error rule still teaches correctly but quotes the July 9 states; re-check its wording during the re-script. Still TBD — parked, never staged: the connected-state status label (step 2), the **Instructions** tab body (step 6), and the accounting connector's field contents (step 9). Spoken lines left untouched per the audio-lock rule.
 - **Ask Shyne** and the session idle prompt ("Still there?") are out of scope (PARKED-ITEMS.md #9).
 
 ## Timed script

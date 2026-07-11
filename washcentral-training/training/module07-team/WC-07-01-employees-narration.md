@@ -1,10 +1,10 @@
 # WC-07-01 — Employees List and Detail · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (15 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.1 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (15 steps).
 
 ## Settings header
 
-- **Status:** **PARTIAL RE-AUTHOR + RE-RENDER NEEDED (July 11, 2026).** Blocks s10, s12, and s13 voice the employee detail as "parked / not captured"; the July 11 credentialed pass captured the full detail page (header, metric band, five Overview panels, all six deeper tabs — see the v1.1 guide steps 10–13). Spoken lines are preserved unedited per the audio-lock rule; re-author s10, s12, s13 (and re-check s11, s14, s15 for flow) before any TTS call. Render settings when re-authored: WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. Audio is rendered later once the ElevenLabs key is available in this environment. 15 blocks `WC-07-01-s01.mp3`…`WC-07-01-s15.mp3`, assembled at each step's marker. Estimated per-step seconds (speech at ~145 wpm + break + 0.4 s tail): s01 15.3 · s02 17.9 · s03 18.4 · s04 15.9 · s05 13.8 · s06 14.8 · s07 19.8 · s08 15.5 · s09 17.7 · s10 20.4 · s11 21.9 · s12 17.3 · s13 17.7 · s14 16.1 · s15 22.1. Estimated total ~4:25; timestamps below are estimates pending render.
+- **Status:** **READY FOR GENERATION.** Re-authored July 11, 2026 against the v1.1 guide and shot list. The July 11 credentialed pass captured the full employee detail page (header, metric band, five Overview panels, all six deeper tabs — digests `emp-employee-detail-*.json`); blocks s10, s12, s13 now narrate that captured page, and s14 closes the record with **← Back** per guide step 14. Audio is rendered later once the ElevenLabs key is available in this environment. Render settings: WashCentral New (`CDbF7Jxnv3azemv9dXMP`), eleven_v3, 44.1 kHz MP3. 15 blocks `WC-07-01-s01.mp3`…`WC-07-01-s15.mp3`, assembled at each step's marker. Estimated per-step seconds (speech at ~145 wpm + break + 0.4 s tail): s01 15.3 · s02 17.9 · s03 18.4 · s04 15.9 · s05 13.8 · s06 14.8 · s07 19.8 · s08 15.5 · s09 17.7 · s10 31.6 · s11 21.9 · s12 30.1 · s13 30.6 · s14 22.3 · s15 22.1. Estimated total ~5:08; timestamps below are estimates pending render.
 - **Voice:** **WashCentral New** (ElevenLabs voice ID `CDbF7Jxnv3azemv9dXMP`) — project voice, approved July 8, 2026. Never switch voice without sign-off.
 - **Model:** **eleven_v3** — pass explicitly on every generation.
 - **Output:** 44.1 kHz MP3.
@@ -27,7 +27,8 @@
 ### Scope notes (non-spoken)
 
 - Read-only lesson. **Export** and **+ New Record** are located, never clicked. The employee record is opened but never edited (no Save, Delete, or field entry).
-- **July 11, 2026 update:** the employee detail view is now fully captured (row-click on the list; the direct URL still 404s). The header, metric band, Overview panels, and per-tab fields are documented in guide v1.1 steps 10–13; the parked markers there are cleared. Blocks s10, s12, and s13 below still voice the July 9 "parked" state and are superseded — do not generate audio from them (see Status). The detail page carries **Delete**, **Edit Employee**, and **Assign Course** controls; the re-authored script must keep them untouched, with **← Back** as the only exit.
+- **July 11, 2026:** the employee detail view is fully captured (row-click on the list; the direct URL still 404s — navigate in-app). The header, metric band, five Overview panels, and per-tab fields are documented in guide v1.1 steps 10–13, and blocks s10, s12, s13 narrate that captured page. The detail page carries **Delete**, **Edit Employee**, and **Assign Course** controls; the script keeps them untouched, with **← Back** as the only exit (voiced in s14).
+- Per the pronunciation guide, no location code or site name is read aloud in the detail blocks; the header's site value is spoken as "his site." Spoken figures (tenure, monthly hours, attendance, performance, YTD earnings) come from the metric band and Overview panels in `emp-employee-detail-overview.json`.
 - Original July 9 note, kept for history: the detail view was not captured on July 9 (direct probe 404'd); only the seven tab names and the Overview analytics category were grounded then (DISCREPANCIES.md #13). Do not depict Save.
 - The idle "Still there?" timeout prompt is out of scope; session behavior belongs to WC-01-03.
 
@@ -63,31 +64,32 @@ Look at one row. <break time="1.4s" /> A shift manager, full-time, active, at on
 On a real site the roster runs long. <break time="1.2s" /> That's what the search box and filters are for: type a name, narrow the list, jump to your person. Here it's a five-row sample, so everyone already fits on one page.
 
 [02:29 | Step 10 — Open the record]
-Click a name to open the record. <break time="1.4s" /> One click carries you from the list into a single employee's file. Heads up: today's capture stopped at the tab names, so the header and the panels around them are parked until a live walk fills them in.
+Click a name to open the record. <break time="1.4s" /> One click, and the list becomes a person. The header introduces him with a role chip, his site, and his employment type. Three buttons sit beside it, and Back is the only one we touch. Below, five tiles size him up fast: three years in, a hundred sixty eight hours this month, attendance above ninety seven percent, and a performance score of four point six.
 
-_[Director note, updated July 11, 2026: the detail view is now fully captured (guide v1.1 step 10 — header band, ← Back / Delete / Edit Employee, five-tile metric band). This spoken block still says the capture "stopped at the tab names" and is queued for re-author + re-render. Do not depict Delete/Edit Employee.]_
+_[Director: point out ← Back, Delete, and Edit Employee; do not click Delete or Edit Employee at any point. ← Back is the only exit used (step 14).]_
 
-[02:49 | Step 11 — Tab bar]
+[03:01 | Step 11 — Tab bar]
 Look across the top of the file. <break time="1.2s" /> Seven tabs: overview, personal info, employment, schedule, emergency contact, notes and audit, and training. That's the whole person, sorted into seven drawers, and you land in the first one. Worth knowing this layout is the live one, not the old WashAssist record.
 
-[03:11 | Step 12 — Overview]
-Stay on Overview. <break time="1.2s" /> This is the dashboard for one person: how they're performing, how their attendance looks, what they've earned. The exact panels weren't captured today, so treat the numbers as parked, but this is where they live.
+[03:23 | Step 12 — Overview]
+Stay on Overview. <break time="1.2s" /> This is the dashboard for one person, five panels deep. Hours worked, month by month. How those hours split between regular time, overtime, and leave. Attendance across the year, with every missed shift counted. Earnings, closing in on fifteen thousand for the year. And a review trend running well above the location average. When a manager asks how someone is doing, this one tab answers it.
 
-[03:28 | Step 13 — Six deeper tabs]
-Six more tabs sit beside Overview. <break time="1.2s" /> Personal info, employment, schedule, emergency contact, notes and audit, training. Each one holds a slice of the record. The field-level detail is parked today, but you now know which drawer to reach for.
+[03:53 | Step 13 — Six deeper tabs]
+Six more tabs sit beside Overview. <break time="1.2s" /> Each one is a drawer. Personal info holds identity and address, with the social masked. Employment carries role, pay, reporting line, and benefits. Schedule pairs the current week with recent time clock punches. Emergency contact adds the medical basics. Notes and audit keeps a dated trail of every change to the record. And training tracks Academy courses, with an assign button we leave alone.
 
-[03:46 | Step 14 — Read-only rule]
-One rule holds this whole lesson. <break time="1.2s" /> We opened the record, read it, and changed nothing in it. Editing a person is a real workflow with its own approvals, and this lesson stays clear of it.
+[04:23 | Step 14 — Read-only rule & ← Back]
+One rule holds this whole lesson. <break time="1.2s" /> We opened the record, read it, and changed nothing in it. Editing a person is a real workflow with its own approvals, and this lesson stays clear of it. So click Back. The list returns, and the record sits exactly as you found it.
 
-[04:02 | Step 15 — Recap]
+[04:46 | Step 15 — Recap]
 So that's the Employees page. <break time="1.0s" /> A directory up front: headcount, a few charts, and a table you can search. Behind any name, a seven-tab file with Overview as its home. When a shift question walks in, start here and let the rest of the Team module branch off from it.
 
-_(Estimated narration total: ~264.6 s ≈ 04:25. Timestamps are estimates at ~145 wpm pending render; regenerate this line from ffprobe once audio exists.)_
+_(Estimated narration total: ~307.7 s ≈ 05:08. Timestamps are estimates at ~145 wpm pending render; regenerate this line from ffprobe once audio exists.)_
 
 ## Generation log
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose cleared of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the spoken lines. Tailing negations and staccato fragments were rewritten as full clauses. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format), the director notes, and the mandated `TBD — parked` string, all quoted verbatim.
-- Detail-view internals voiced as parked (new parked item): header, metric band, Overview panels, and per-tab fields were not in the July 9 corpus. Only the seven tab names and the Overview analytics category are grounded (DISCREPANCIES.md #13). No Save/Edit is depicted.
-- **July 11, 2026:** detail view captured in full via row click (direct URL still 404s); the parked markers cleared in guide v1.1 and shot list v1.1. Blocks s10/s12/s13 contradict the platform and the status changed to **PARTIAL RE-AUTHOR + RE-RENDER NEEDED**. No audio was ever rendered from v1.0, so nothing approved is discarded.
-- Script text stamp remains **July 9, 2026** (the state it describes); the July 11 corpus check is logged above and in the v1.1 guide and shot list.
+- v1.0 history: detail-view internals were voiced as parked (header, metric band, Overview panels, and per-tab fields were not in the July 9 corpus; only the seven tab names and the Overview analytics category were grounded then — DISCREPANCIES.md #13).
+- **July 11, 2026:** detail view captured in full via row click (direct URL still 404s); the parked markers cleared in guide v1.1 and shot list v1.1. Blocks s10/s12/s13 contradicted the platform and the status moved to PARTIAL RE-AUTHOR pending rewrite. No audio was ever rendered from v1.0, so nothing approved was discarded.
+- **July 11, 2026 — v1.1 re-author.** Blocks s10, s12, s13 rewritten against guide v1.1 steps 10–13 and the `emp-employee-detail-*.json` digests (header band, five-tile metrics, five Overview panels, six deeper tabs); s14 extended to voice the **← Back** exit per guide step 14. Blocks s01–s09, s11, s15 unchanged. No Save, Delete, Edit Employee, or Assign Course is depicted. Timestamps recomputed at ~145 wpm; new estimated total ~05:08. Humanizer craft rules re-applied to the new blocks. Status: **READY FOR GENERATION**.
+- Script text stamp updated to **July 11, 2026**, matching the v1.1 guide and shot list.
