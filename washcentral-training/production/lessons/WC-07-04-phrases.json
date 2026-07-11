@@ -1,0 +1,159 @@
+{
+  "lesson": "WC-07-04",
+  "audioMaster": "training/module07-team/WC-07-04-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses. Never rewrite, summarize, or reorder. Block windows are MEASURED onsets (FFT cross-correlation of each per-step mp3 against the joined master, 8 kHz mono PCM, rfft correlation): the nominal Sigma(ffprobe audio+0.4) formula overshoots the probed master (197.068s) by 0.446s (> 0.3 tolerance) because ffprobe's mp3 durations overstate the decoded sample counts. The measured onsets land exactly at Sigma(decoded_audio+0.4) with a clean 0.400s inter-block gap confirmed at every boundary. Master ffprobe duration 197.068s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 15.44,
+      "phrases": [
+        { "id": "p01", "text": "Open Challenges under Gamification." },
+        { "id": "p02", "text": "This is the Challenge Board." },
+        { "id": "p03", "text": "WashCentral turns your everyday targets into a running competition here," },
+        { "id": "p04", "text": "with points on the line and a deadline on every one." },
+        { "id": "p05", "text": "It's what keeps a crew pushing when the lobby goes quiet." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.44,
+      "endS": 32.0,
+      "phrases": [
+        { "id": "p06", "text": "Start at the top." },
+        { "id": "p07", "text": "Five numbers sum up the whole program at a glance:" },
+        { "id": "p08", "text": "how many challenges exist, how many are live, how many finished," },
+        { "id": "p09", "text": "how many are about to start, and how many slipped past their deadline." },
+        { "id": "p10", "text": "One row, and you know where the program stands." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 32.0,
+      "endS": 48.8,
+      "phrases": [
+        { "id": "p11", "text": "Glance down the Gamification group." },
+        { "id": "p12", "text": "Six pages sit together: the board you're on," },
+        { "id": "p13", "text": "plus the leaderboard, targets, prizes, a recognition feed, and pulse surveys." },
+        { "id": "p14", "text": "Today we stay on Challenges." },
+        { "id": "p15", "text": "Just know the rest of the program lives one click away." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 48.8,
+      "endS": 68.08,
+      "phrases": [
+        { "id": "p16", "text": "Now the board itself, Active and Upcoming Challenges." },
+        { "id": "p17", "text": "Three controls sit up top: Active, All, and Completed." },
+        { "id": "p18", "text": "They only change what you're looking at, never the data underneath." },
+        { "id": "p19", "text": "And that green New Challenge button?" },
+        { "id": "p20", "text": "Leave it alone today." },
+        { "id": "p21", "text": "Building challenges is a manager's job." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 68.08,
+      "endS": 85.6,
+      "phrases": [
+        { "id": "p22", "text": "Take the first live card." },
+        { "id": "p23", "text": "A ring shows how far along the team is." },
+        { "id": "p24", "text": "Beside it, the reward in points, who it's for, when it ends, and how many days are left." },
+        { "id": "p25", "text": "Then the hard number: washes done against the goal." },
+        { "id": "p26", "text": "That's the whole story of the challenge in one glance." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 85.6,
+      "endS": 101.76,
+      "phrases": [
+        { "id": "p27", "text": "Look lower on the same card." },
+        { "id": "p28", "text": "A cluster of avatars and a headcount tell you who's taking part." },
+        { "id": "p29", "text": "Off to the right, the current leader and their score." },
+        { "id": "p30", "text": "So a technician can answer two questions fast:" },
+        { "id": "p31", "text": "how's the team doing, and who's out front." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 101.76,
+      "endS": 115.36,
+      "phrases": [
+        { "id": "p32", "text": "The other two live cards read exactly the same way." },
+        { "id": "p33", "text": "One tracks upsell dollars, another tracks attendance." },
+        { "id": "p34", "text": "Only the metric and its unit change from card to card." },
+        { "id": "p35", "text": "Learn one card and you've learned them all." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 115.36,
+      "endS": 129.76,
+      "phrases": [
+        { "id": "p36", "text": "Below the live ones, the challenges warming up." },
+        { "id": "p37", "text": "Same shape, but instead of progress you get a start date and the rule for winning." },
+        { "id": "p38", "text": "Each one carries an Edit button." },
+        { "id": "p39", "text": "That's a manager's control, so we read it and move on." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 129.76,
+      "endS": 140.24,
+      "phrases": [
+        { "id": "p40", "text": "At the end of that row, a dashed tile invites you to create a new challenge." },
+        { "id": "p41", "text": "It's the second door into the same builder." },
+        { "id": "p42", "text": "We're reviewing, not building, so we leave it closed." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 140.24,
+      "endS": 152.72,
+      "phrases": [
+        { "id": "p43", "text": "Now try the All view." },
+        { "id": "p44", "text": "The board widens to every challenge, while the numbers up top hold steady." },
+        { "id": "p45", "text": "Notice what didn't happen: nothing was edited or sent." },
+        { "id": "p46", "text": "You're just changing the lens." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 152.72,
+      "endS": 164.48,
+      "phrases": [
+        { "id": "p47", "text": "Switch to Completed." },
+        { "id": "p48", "text": "Here are the challenges that already wrapped," },
+        { "id": "p49", "text": "and the count lines up with the Completed figure you read at the top." },
+        { "id": "p50", "text": "This is where you'd look back to see how a past competition landed." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 164.48,
+      "endS": 174.16,
+      "phrases": [
+        { "id": "p51", "text": "Click back to Active." },
+        { "id": "p52", "text": "The live and upcoming cards return, right where they were." },
+        { "id": "p53", "text": "Three views, one board, and switching between them never touches a thing." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 174.16,
+      "endS": 197.068,
+      "phrases": [
+        { "id": "p54", "text": "So that's Gamification." },
+        { "id": "p55", "text": "The KPIs count the whole program," },
+        { "id": "p56", "text": "the Active view shows what's live and what's coming," },
+        { "id": "p57", "text": "and every card reads the same once you know the pattern." },
+        { "id": "p58", "text": "When you need the wider picture," },
+        { "id": "p59", "text": "the leaderboard, targets, prizes, recognition, and surveys are right there in the sidebar." },
+        { "id": "p60", "text": "Read the board, point people to it, and leave the building to the managers." }
+      ]
+    }
+  ],
+  "output": "WC-07-04-gamification-v1.1"
+}

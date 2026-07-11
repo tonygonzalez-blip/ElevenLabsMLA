@@ -1,0 +1,640 @@
+{
+  "lesson": "WC-06-02",
+  "audioMaster": "training/module06-analytics/WC-06-02-full-narration-v1.0.mp3",
+  "audioDurationS": 260.833,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Analytics.",
+      "startS": 0,
+      "endS": 0.638,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the deepest sidebar in the platform.",
+      "startS": 0.638,
+      "endS": 4.26,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Twenty-two pages.",
+      "startS": 4.26,
+      "endS": 4.898,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Do not try to memorize them one at a time.",
+      "startS": 4.898,
+      "endS": 8.388,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Learn the four buckets they fall into, and any page becomes easy to find.",
+      "startS": 8.388,
+      "endS": 12.854,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "The labels down the left are your map.",
+      "startS": 12.854,
+      "endS": 15.92,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "First bucket, Analytics.",
+      "startS": 16.32,
+      "endS": 17.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Ten pages, and these are the live dashboards:",
+      "startS": 17.344,
+      "endS": 18.161,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "the whole network at a glance, each location, memberships, downsells, retail.",
+      "startS": 18.709,
+      "endS": 21.843,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "One catch worth flagging now.",
+      "startS": 22.365,
+      "endS": 23.903,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "The item named Marketing up here is a single dashboard, not the Marketing group further down.",
+      "startS": 24.223,
+      "endS": 28.063,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "Same word, two places.",
+      "startS": 28.727,
+      "endS": 38.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The module drops you on the Executive Dashboard.",
+      "startS": 38.8,
+      "endS": 41.396,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "You met this one last lesson: the period toggles up top, the location scope right beside them.",
+      "startS": 41.929,
+      "endS": 43.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "We are not stopping.",
+      "startS": 43.85,
+      "endS": 45.355,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Today is about learning what lives all around it.",
+      "startS": 45.781,
+      "endS": 52.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Click Downsells.",
+      "startS": 53.115,
+      "endS": 54.349,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "When a member goes to cancel, the system offers a downgrade to keep them instead.",
+      "startS": 54.749,
+      "endS": 59.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "These six cards are the scoreboard for that fight:",
+      "startS": 59.396,
+      "endS": 61.982,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "how many tried to leave, how many you talked into staying, and the dollars you kept.",
+      "startS": 62.273,
+      "endS": 66.665,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Right now, you are saving better than four in ten.",
+      "startS": 67.208,
+      "endS": 70.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Scroll down for the why.",
+      "startS": 70.48,
+      "endS": 71.767,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "The reasons people cancel, ranked, and the offers that win them back.",
+      "startS": 72.442,
+      "endS": 76.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Remember the Command Center flagging members with downsell signals?",
+      "startS": 77.37,
+      "endS": 80.561,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "This is where that play cashes out.",
+      "startS": 80.943,
+      "endS": 82.692,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Read the top reason, read the save rate, and you know in ten seconds whether the flow is working.",
+      "startS": 83.365,
+      "endS": 88.317,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Second bucket, Marketing.",
+      "startS": 88.72,
+      "endS": 90.318,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Five pages, and the feel changes.",
+      "startS": 90.766,
+      "endS": 92.868,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "These are reports, not dashboards.",
+      "startS": 93.154,
+      "endS": 95.33,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Campaign results, who responded, which offers landed,",
+      "startS": 95.644,
+      "endS": 98.943,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "where new members came from, and who you managed to win back.",
+      "startS": 99.25,
+      "endS": 102.206,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Open Campaign Performance.",
+      "startS": 102.714,
+      "endS": 104.599,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "A summary band on top, a sortable table underneath.",
+      "startS": 105.236,
+      "endS": 108.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Look at the header.",
+      "startS": 108.919,
+      "endS": 111.628,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "No location picker this time.",
+      "startS": 111.862,
+      "endS": 114.128,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Instead, Filters and Export.",
+      "startS": 114.63,
+      "endS": 116.456,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "That is the tell for a report: you slice it, sort it, and pull it into a spreadsheet.",
+      "startS": 116.702,
+      "endS": 119.78,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Every page in this group works the same way.",
+      "startS": 120.284,
+      "endS": 122.558,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Third bucket, Intelligence.",
+      "startS": 123.023,
+      "endS": 124.744,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Six pages, and this is the analyst's shelf:",
+      "startS": 125.105,
+      "endS": 127.808,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "revenue trends, industry benchmarks, churn prediction, lifetime value, and your online reputation.",
+      "startS": 128.418,
+      "endS": 134.583,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "These are the heavier questions, the ones you dig into rather than glance at.",
+      "startS": 135.185,
+      "endS": 139.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Start at B-I Overview.",
+      "startS": 139.68,
+      "endS": 141.687,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Eight cards, and together they read the health of the whole business:",
+      "startS": 142.139,
+      "endS": 145.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "recurring revenue, retention, churn, lifetime value, even your net promoter score.",
+      "startS": 145.991,
+      "endS": 151.195,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "When someone asks how the network is really doing, this is the single screen you open.",
+      "startS": 151.676,
+      "endS": 156.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Keep scrolling.",
+      "startS": 156.8,
+      "endS": 157.679,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "A full year of revenue, your plan mix, and the members quietly drifting toward the exit.",
+      "startS": 158.07,
+      "endS": 163.154,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "At the bottom, the Deep Dives.",
+      "startS": 163.775,
+      "endS": 165.512,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Picture B-I Overview as the front door,",
+      "startS": 165.835,
+      "endS": 168.266,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "and the other five Intelligence pages as the rooms it opens into.",
+      "startS": 168.494,
+      "endS": 172.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Last bucket, Forecasting.",
+      "startS": 172.56,
+      "endS": 173.377,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "Just one page this time.",
+      "startS": 173.736,
+      "endS": 174.528,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Ten under Analytics, five under Marketing, six under Intelligence, one here.",
+      "startS": 174.975,
+      "endS": 176.311,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "That is your twenty-two, and now the whole sidebar fits in your head.",
+      "startS": 176.714,
+      "endS": 186.238,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Click Forecasting.",
+      "startS": 186.826,
+      "endS": 187.408,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "This is the only page that looks forward instead of back.",
+      "startS": 187.408,
+      "endS": 191.096,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Four numbers set the scene:",
+      "startS": 191.096,
+      "endS": 193.087,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "next month's projected revenue, how close you are running against plan for the year,",
+      "startS": 193.087,
+      "endS": 197.48,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "and how accurate the model has been.",
+      "startS": 197.48,
+      "endS": 199.518,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "See the New Record button?",
+      "startS": 199.518,
+      "endS": 201.525,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "We leave that one alone.",
+      "startS": 201.525,
+      "endS": 203.426,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "Below, the workhorse.",
+      "startS": 203.84,
+      "endS": 205.324,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "A revenue projection, the forecast broken out by location, and an accuracy readout.",
+      "startS": 205.98,
+      "endS": 211.162,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "Then the Forecast List itself:",
+      "startS": 211.972,
+      "endS": 213.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "every period lined up with what you predicted, what actually came in, and the gap between the two.",
+      "startS": 214.604,
+      "endS": 220.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "Read one line and it clicks.",
+      "startS": 220.48,
+      "endS": 222.35,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "Take May of last year: forecast around two hundred thirty-eight thousand,",
+      "startS": 223.01,
+      "endS": 224.158,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "actual came in near two forty-two, off by a point and a half.",
+      "startS": 224.664,
+      "endS": 226.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "That is a closed month.",
+      "startS": 227.272,
+      "endS": 229.235,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p71",
+      "text": "The pending row shows dashes, because its real numbers are not in yet.",
+      "startS": 229.566,
+      "endS": 230.751,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p72",
+      "text": "Hands off New Record.",
+      "startS": 231.118,
+      "endS": 232.416,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p73",
+      "text": "We are only reading.",
+      "startS": 233.228,
+      "endS": 239.597,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "So that is the map.",
+      "startS": 240,
+      "endS": 241.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p75",
+      "text": "Four buckets.",
+      "startS": 241.788,
+      "endS": 242.75,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p76",
+      "text": "Analytics for the dashboards, Marketing for the reports,",
+      "startS": 243.095,
+      "endS": 244.744,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p77",
+      "text": "Intelligence for the deep questions, Forecasting for what comes next.",
+      "startS": 245.1,
+      "endS": 246.552,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p78",
+      "text": "Twenty-two pages, and you can reach any of them from the sidebar, or jump straight there with Search.",
+      "startS": 246.892,
+      "endS": 248.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p79",
+      "text": "Learn the buckets, and you never hunt for a page again.",
+      "startS": 249.446,
+      "endS": 260.4,
+      "timing": "silence"
+    }
+  ]
+}

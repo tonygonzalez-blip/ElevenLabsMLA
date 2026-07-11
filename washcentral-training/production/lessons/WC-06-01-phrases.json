@@ -1,0 +1,160 @@
+{
+  "lesson": "WC-06-01",
+  "audioMaster": "training/module06-analytics/WC-06-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the LOCKED narration, in spoken order, split at the script's <break> tags and sentence boundaries into caption-sized pieces (<=~95 chars). Never rewritten, summarized, or reordered. Block windows are MEASURED onsets: Sigma(ffprobe audio+0.4) overshoots the ffprobe-probed master (204.931s) by 0.446s (> 0.3 tolerance) because ffprobe's mp3 durations overstate decoded sample counts, so onsets were measured by normalized cross-correlation of each WC-06-01-sNN.mp3 leading 2.0s against the joined master (all 13 blocks matched at peak R=1.0000; monotonic drift 0.000 -> -0.446s). Measured onsets: s01 0.000, s02 18.320, s03 36.640, s04 53.120, s05 67.360, s06 84.720, s07 102.640, s08 118.800, s09 138.720, s10 152.400, s11 163.840, s12 180.000, s13 187.760. Master ffprobe duration 204.931s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 18.32,
+      "phrases": [
+        { "id": "p01", "text": "This is the screen WashCentral opens to." },
+        { "id": "p02", "text": "The Executive Dashboard is the whole network on one page." },
+        { "id": "p03", "text": "Before you ever open a ticket or a single site," },
+        { "id": "p04", "text": "this is where you check the pulse of the business." },
+        { "id": "p05", "text": "Learn to read it quickly," },
+        { "id": "p06", "text": "because a lot of support calls start with a number that lives right here." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 18.32,
+      "endS": 36.64,
+      "phrases": [
+        { "id": "p07", "text": "Read the band up top." },
+        { "id": "p08", "text": "Network, April, month to date." },
+        { "id": "p09", "text": "Every card below rolls all your locations into one figure," },
+        { "id": "p10", "text": "so what you see is the business as a whole, not any single wash." },
+        { "id": "p11", "text": "The location selector in the header is what narrows it when you need one site." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 36.64,
+      "endS": 53.12,
+      "phrases": [
+        { "id": "p12", "text": "Now find the period row on the right." },
+        { "id": "p13", "text": "Today, Week, Month, Quarter, Y-T-D, one year." },
+        { "id": "p14", "text": "It is set to Month." },
+        { "id": "p15", "text": "That one choice decides the window every card and panel reports on," },
+        { "id": "p16", "text": "so always check it before you trust a number." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 53.12,
+      "endS": 67.36,
+      "phrases": [
+        { "id": "p17", "text": "Click through the periods, one at a time." },
+        { "id": "p18", "text": "Watch the numbers redraw for today, then the week, then the quarter, then the year." },
+        { "id": "p19", "text": "Nothing is edited." },
+        { "id": "p20", "text": "You are only changing the lens, and landing back on Month puts it right where it started." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 67.36,
+      "endS": 84.72,
+      "phrases": [
+        { "id": "p21", "text": "Start with the first three cards." },
+        { "id": "p22", "text": "Revenue, cars washed, active members." },
+        { "id": "p23", "text": "These are your scale numbers," },
+        { "id": "p24", "text": "each with its change against the month before and a small trend line." },
+        { "id": "p25", "text": "Green arrows mean the network is growing," },
+        { "id": "p26", "text": "and growth in members is the one that quietly lifts the other two." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 84.72,
+      "endS": 102.64,
+      "phrases": [
+        { "id": "p27", "text": "Now the next three." },
+        { "id": "p28", "text": "Conversion rate, visit frequency, and labor percent." },
+        { "id": "p29", "text": "Labor is the one to watch." },
+        { "id": "p30", "text": "It has gone amber because it is running over the fifteen percent target," },
+        { "id": "p31", "text": "and that color is the dashboard flagging it for you." },
+        { "id": "p32", "text": "When you see amber, that is your cue to look at which site is pulling it up." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 102.64,
+      "endS": 118.8,
+      "phrases": [
+        { "id": "p33", "text": "Drop to the big panel." },
+        { "id": "p34", "text": "Twelve months of revenue, stacked by where it came from: memberships, pay per wash, and retail." },
+        { "id": "p35", "text": "The membership band is the thick one at the base." },
+        { "id": "p36", "text": "That is the recurring money you want climbing, month after month." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 118.8,
+      "endS": 138.72,
+      "phrases": [
+        { "id": "p37", "text": "On the right, every site in one list." },
+        { "id": "p38", "text": "Revenue, cars, labor, and how close each runs to its conversion target." },
+        { "id": "p39", "text": "The dots and the numbers slide from green toward red as a site slips." },
+        { "id": "p40", "text": "One look tells you Naples Coast is the one to check on today," },
+        { "id": "p41", "text": "and it saves you scanning six separate reports to find it." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 138.72,
+      "endS": 152.4,
+      "phrases": [
+        { "id": "p42", "text": "Keep going to the members panel." },
+        { "id": "p43", "text": "A line for how many members you have," },
+        { "id": "p44", "text": "against bars for the ones you gained and the ones you lost, month by month." },
+        { "id": "p45", "text": "The gap between those bars is what grows or shrinks the base over time." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 152.4,
+      "endS": 163.84,
+      "phrases": [
+        { "id": "p46", "text": "Beside it, the revenue mix." },
+        { "id": "p47", "text": "A single donut for how this month's money splits apart." },
+        { "id": "p48", "text": "It is the quick shape of where revenue is coming from right now," },
+        { "id": "p49", "text": "before you go digging for detail." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 163.84,
+      "endS": 180.0,
+      "phrases": [
+        { "id": "p50", "text": "Click the Revenue card." },
+        { "id": "p51", "text": "It opens a page just for revenue:" },
+        { "id": "p52", "text": "today's take, the average ticket, the member share, add-ons, and a table by location." },
+        { "id": "p53", "text": "So the cards are not dead ends." },
+        { "id": "p54", "text": "Any one of them is a door to the next level of detail." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 180.0,
+      "endS": 187.76,
+      "phrases": [
+        { "id": "p55", "text": "Click Back to Executive Dashboard." },
+        { "id": "p56", "text": "You return to the full scorecard, still on Month, exactly as you left it." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 187.76,
+      "endS": 204.931,
+      "phrases": [
+        { "id": "p57", "text": "That is the whole dashboard." },
+        { "id": "p58", "text": "Pick a period, read the six cards for scale and health," },
+        { "id": "p59", "text": "then the panels for the trend, the sites, your members, and the mix." },
+        { "id": "p60", "text": "It edits nothing, and every card can take you deeper." },
+        { "id": "p61", "text": "Start your day here, then go where the numbers point." }
+      ]
+    }
+  ],
+  "output": "WC-06-01-executive-dashboard-v1.1"
+}

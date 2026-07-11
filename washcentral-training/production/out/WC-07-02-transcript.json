@@ -1,0 +1,480 @@
+{
+  "lesson": "WC-07-02",
+  "audioMaster": "training/module07-team/WC-07-02-full-narration-v1.0.mp3",
+  "audioDurationS": 205.009,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Employee Schedules from the sidebar.",
+      "startS": 0,
+      "endS": 2.208,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Four tiles read across the top: who's scheduled this week, how many shifts sit open,",
+      "startS": 3.267,
+      "endS": 4.799,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "your coverage percentage, and how many sites that covers.",
+      "startS": 5.309,
+      "endS": 6.332,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "This is your first stop when a manager asks whether the week is staffed.",
+      "startS": 6.684,
+      "endS": 15.922,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Now the grid itself.",
+      "startS": 16.4,
+      "endS": 17.656,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "One row per person, one column per day, Monday through Sunday.",
+      "startS": 18.396,
+      "endS": 22.585,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Each cell holds a shift code, a start and end like seven to three, or off for a day off.",
+      "startS": 23.331,
+      "endS": 29.14,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Read across a single row and you have that person's whole week.",
+      "startS": 29.993,
+      "endS": 33.806,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Above the grid, two panels do the math for you.",
+      "startS": 34.304,
+      "endS": 36.896,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "One splits the week by time of day: morning, afternoon, evening.",
+      "startS": 37.448,
+      "endS": 39.347,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "The other rates coverage, how much is covered, at risk, or still open.",
+      "startS": 39.669,
+      "endS": 41.419,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "You can spot a thin day before you ever open a row.",
+      "startS": 41.904,
+      "endS": 49.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Switch to Time Clock.",
+      "startS": 49.84,
+      "endS": 51.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Schedules are the plan.",
+      "startS": 51.54,
+      "endS": 53.003,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "This is what actually happened.",
+      "startS": 53.847,
+      "endS": 55.46,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "The tile to watch is On Clock Now, your live count of everyone punched in across the network,",
+      "startS": 55.94,
+      "endS": 58.196,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "right this second.",
+      "startS": 58.46,
+      "endS": 62.821,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Run your eye down the clock-out column.",
+      "startS": 63.28,
+      "endS": 65.351,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Most rows show a time in and a time out.",
+      "startS": 66.015,
+      "endS": 68.371,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "One shows a dash.",
+      "startS": 68.889,
+      "endS": 70.165,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "That dash isn't missing data.",
+      "startS": 70.658,
+      "endS": 72.413,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "It means the person is still on the clock, and their hours keep climbing until they punch out.",
+      "startS": 72.787,
+      "endS": 77.458,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Off to the side, the punch-status panel.",
+      "startS": 77.92,
+      "endS": 80.364,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "It splits today into on the clock, clocked out, and no show.",
+      "startS": 80.95,
+      "endS": 84.632,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "No show is the one to scan for: scheduled staff who never punched in.",
+      "startS": 85.261,
+      "endS": 87.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "That's a call worth making before the shift falls short.",
+      "startS": 87.557,
+      "endS": 92.857,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Open Employee Roles.",
+      "startS": 93.28,
+      "endS": 94.753,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "A role is a job's permission set, what that person is allowed to touch.",
+      "startS": 95.528,
+      "endS": 97.477,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "The tiles count your total roles, how many are active,",
+      "startS": 97.84,
+      "endS": 99.584,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "and how many sit at manager or admin level.",
+      "startS": 100.158,
+      "endS": 105.816,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "The list names each role and, in the last column, its access level.",
+      "startS": 106.34,
+      "endS": 110.483,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Administrator has full reach.",
+      "startS": 111.084,
+      "endS": 112.896,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "A cashier gets the point of sale and little else.",
+      "startS": 113.356,
+      "endS": 116.205,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "When someone can't do something they expect to, this column is usually the reason.",
+      "startS": 116.825,
+      "endS": 121.097,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "The access-levels panel sums it up.",
+      "startS": 121.649,
+      "endS": 123.659,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Most of your staff sit at the low tier, and that's by design.",
+      "startS": 124.032,
+      "endS": 127.235,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Far more cashiers and attendants than managers.",
+      "startS": 127.66,
+      "endS": 130.442,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "The panel beside it ranks roles by how many people hold each one.",
+      "startS": 130.781,
+      "endS": 134.689,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "Last page, User Groups.",
+      "startS": 135.12,
+      "endS": 136.959,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "A group is a named set of people, and it's a different idea from a role.",
+      "startS": 137.762,
+      "endS": 141.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "A role is about permissions.",
+      "startS": 141.901,
+      "endS": 143.551,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "A group is about who belongs together.",
+      "startS": 143.834,
+      "endS": 145.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "Each group lists its description, its member count, and its locations.",
+      "startS": 146.308,
+      "endS": 150.262,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "Some cover a single site, like the M-L-A-S staff group.",
+      "startS": 150.712,
+      "endS": 154.121,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Others span every location, like all cashiers.",
+      "startS": 154.683,
+      "endS": 157.949,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "The locations column tells you a group's reach at a glance.",
+      "startS": 158.529,
+      "endS": 161.516,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p47",
+      "text": "One thing that isn't obvious on screen.",
+      "startS": 161.92,
+      "endS": 164.255,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p48",
+      "text": "Groups are how Maintenance work gets assigned.",
+      "startS": 165.096,
+      "endS": 167.441,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "Route an issue to the detail team, and it reaches everyone in that group.",
+      "startS": 168.136,
+      "endS": 171.632,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "So hold the split in your head: roles decide what a person can do,",
+      "startS": 172.352,
+      "endS": 173.875,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "groups decide who the work lands on.",
+      "startS": 174.436,
+      "endS": 179.585,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p52",
+      "text": "Four pages, four questions.",
+      "startS": 180,
+      "endS": 182.21,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p53",
+      "text": "Schedules, for who works which days.",
+      "startS": 182.654,
+      "endS": 185.179,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "Time Clock, for who's punched in right now.",
+      "startS": 185.743,
+      "endS": 186.443,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "Roles, for what someone's allowed to do.",
+      "startS": 186.735,
+      "endS": 188.369,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "Groups, for who belongs to which team.",
+      "startS": 189.101,
+      "endS": 191.433,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "Every one is a list you read, never a screen you edit.",
+      "startS": 192.07,
+      "endS": 194.538,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "Trust the tiles for the live count, read the rows for the detail,",
+      "startS": 195,
+      "endS": 198.414,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "and leave the punches and schedules alone.",
+      "startS": 198.763,
+      "endS": 204.529,
+      "timing": "silence"
+    }
+  ]
+}

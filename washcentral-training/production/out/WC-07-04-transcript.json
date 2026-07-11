@@ -1,0 +1,488 @@
+{
+  "lesson": "WC-07-04",
+  "audioMaster": "training/module07-team/WC-07-04-full-narration-v1.0.mp3",
+  "audioDurationS": 197.068,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Challenges under Gamification.",
+      "startS": 0,
+      "endS": 1.351,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the Challenge Board.",
+      "startS": 1.351,
+      "endS": 3.679,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "WashCentral turns your everyday targets into a running competition here,",
+      "startS": 3.679,
+      "endS": 7.363,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "with points on the line and a deadline on every one.",
+      "startS": 7.363,
+      "endS": 11.079,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "It's what keeps a crew pushing when the lobby goes quiet.",
+      "startS": 11.079,
+      "endS": 15.009,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Start at the top.",
+      "startS": 15.44,
+      "endS": 16.562,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Five numbers sum up the whole program at a glance:",
+      "startS": 17.524,
+      "endS": 20.512,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "how many challenges exist, how many are live, how many finished,",
+      "startS": 20.822,
+      "endS": 24.582,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "how many are about to start, and how many slipped past their deadline.",
+      "startS": 24.902,
+      "endS": 28.539,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "One row, and you know where the program stands.",
+      "startS": 28.95,
+      "endS": 31.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Glance down the Gamification group.",
+      "startS": 32.053,
+      "endS": 33.973,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Six pages sit together: the board you're on,",
+      "startS": 34.452,
+      "endS": 35.861,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "plus the leaderboard, targets, prizes, a recognition feed, and pulse surveys.",
+      "startS": 36.333,
+      "endS": 42.599,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Today we stay on Challenges.",
+      "startS": 43.302,
+      "endS": 44.989,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Just know the rest of the program lives one click away.",
+      "startS": 45.553,
+      "endS": 48.379,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Now the board itself, Active and Upcoming Challenges.",
+      "startS": 48.8,
+      "endS": 49.924,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Three controls sit up top: Active, All, and Completed.",
+      "startS": 50.408,
+      "endS": 52.434,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "They only change what you're looking at, never the data underneath.",
+      "startS": 53.512,
+      "endS": 54.955,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "And that green New Challenge button?",
+      "startS": 55.287,
+      "endS": 55.797,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Leave it alone today.",
+      "startS": 56.112,
+      "endS": 57.375,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Building challenges is a manager's job.",
+      "startS": 57.815,
+      "endS": 67.654,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Take the first live card.",
+      "startS": 68.168,
+      "endS": 69.707,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "A ring shows how far along the team is.",
+      "startS": 70.075,
+      "endS": 78.092,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Beside it, the reward in points, who it's for, when it ends, and how many days are left.",
+      "startS": 78.417,
+      "endS": 79.703,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Then the hard number: washes done against the goal.",
+      "startS": 80.082,
+      "endS": 81.954,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "That's the whole story of the challenge in one glance.",
+      "startS": 82.317,
+      "endS": 85.193,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Look lower on the same card.",
+      "startS": 85.6,
+      "endS": 87.575,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "A cluster of avatars and a headcount tell you who's taking part.",
+      "startS": 88.248,
+      "endS": 92.41,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Off to the right, the current leader and their score.",
+      "startS": 93.089,
+      "endS": 95.825,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "So a technician can answer two questions fast:",
+      "startS": 96.207,
+      "endS": 98.795,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "how's the team doing, and who's out front.",
+      "startS": 99.132,
+      "endS": 101.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "The other two live cards read exactly the same way.",
+      "startS": 101.76,
+      "endS": 104.683,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "One tracks upsell dollars, another tracks attendance.",
+      "startS": 105.296,
+      "endS": 108.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Only the metric and its unit change from card to card.",
+      "startS": 109.283,
+      "endS": 112.366,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "Learn one card and you've learned them all.",
+      "startS": 112.887,
+      "endS": 114.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Below the live ones, the challenges warming up.",
+      "startS": 115.445,
+      "endS": 117.945,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Same shape, but instead of progress you get a start date and the rule for winning.",
+      "startS": 118.593,
+      "endS": 123.111,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Each one carries an Edit button.",
+      "startS": 124.098,
+      "endS": 125.799,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "That's a manager's control, so we read it and move on.",
+      "startS": 126.11,
+      "endS": 129.334,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "At the end of that row, a dashed tile invites you to create a new challenge.",
+      "startS": 129.822,
+      "endS": 134.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "It's the second door into the same builder.",
+      "startS": 134.427,
+      "endS": 136.611,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "We're reviewing, not building, so we leave it closed.",
+      "startS": 136.872,
+      "endS": 139.799,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "Now try the All view.",
+      "startS": 140.24,
+      "endS": 141.671,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "The board widens to every challenge, while the numbers up top hold steady.",
+      "startS": 142.018,
+      "endS": 146.052,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Notice what didn't happen: nothing was edited or sent.",
+      "startS": 146.988,
+      "endS": 148.489,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "You're just changing the lens.",
+      "startS": 148.813,
+      "endS": 152.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "Switch to Completed.",
+      "startS": 152.72,
+      "endS": 153.888,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "Here are the challenges that already wrapped,",
+      "startS": 154.455,
+      "endS": 156.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "and the count lines up with the Completed figure you read at the top.",
+      "startS": 156.888,
+      "endS": 160.168,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "This is where you'd look back to see how a past competition landed.",
+      "startS": 160.776,
+      "endS": 164.061,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "Click back to Active.",
+      "startS": 164.48,
+      "endS": 165.86,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "The live and upcoming cards return, right where they were.",
+      "startS": 166.309,
+      "endS": 169.425,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "Three views, one board, and switching between them never touches a thing.",
+      "startS": 169.747,
+      "endS": 173.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "So that's Gamification.",
+      "startS": 174.217,
+      "endS": 175.232,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "The KPIs count the whole program,",
+      "startS": 175.232,
+      "endS": 177.661,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "the Active view shows what's live and what's coming,",
+      "startS": 177.661,
+      "endS": 180.934,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "and every card reads the same once you know the pattern.",
+      "startS": 180.934,
+      "endS": 185.15,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "When you need the wider picture,",
+      "startS": 185.15,
+      "endS": 187.181,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "the leaderboard, targets, prizes, recognition, and surveys are right there in the sidebar.",
+      "startS": 187.181,
+      "endS": 191.58,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "Read the board, point people to it, and leave the building to the managers.",
+      "startS": 191.58,
+      "endS": 196.64,
+      "timing": "proportional"
+    }
+  ]
+}

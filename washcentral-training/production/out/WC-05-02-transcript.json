@@ -1,0 +1,392 @@
+{
+  "lesson": "WC-05-02",
+  "audioMaster": "training/module05-marketing/WC-05-02-full-narration-v1.0.mp3",
+  "audioDurationS": 163.709,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Marketing, then Automation.",
+      "startS": 0,
+      "endS": 1.82,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Open this page when a client asks why a lifecycle text went out, or didn't.",
+      "startS": 2.401,
+      "endS": 7.002,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Every automated flow you run sits here on one screen.",
+      "startS": 7.554,
+      "endS": 10.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p04",
+      "text": "Across the top, four numbers.",
+      "startS": 11.341,
+      "endS": 13.242,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "How many automations exist, how many are live,",
+      "startS": 13.664,
+      "endS": 16.529,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "how many are still drafts, and how many messages they've sent this month.",
+      "startS": 16.825,
+      "endS": 20.481,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Read left to right and you already know the shape of the account.",
+      "startS": 21.166,
+      "endS": 24.248,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p08",
+      "text": "First panel, Send Volume.",
+      "startS": 24.72,
+      "endS": 26.756,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "A thirty-day line of daily sends.",
+      "startS": 27.042,
+      "endS": 29.154,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "When a client says the texts stopped last Tuesday, this curve is where a drop shows up first.",
+      "startS": 29.49,
+      "endS": 34.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p11",
+      "text": "Next to it, Status Breakdown.",
+      "startS": 34.96,
+      "endS": 37.183,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p12",
+      "text": "It splits your automations into published and draft.",
+      "startS": 37.521,
+      "endS": 40.49,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "For the real count, trust the cards up top: three published, one draft.",
+      "startS": 40.965,
+      "endS": 45.386,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p14",
+      "text": "Then Top Triggers.",
+      "startS": 45.894,
+      "endS": 47.356,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p15",
+      "text": "A donut showing which events set your automations off.",
+      "startS": 48.282,
+      "endS": 51.229,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p16",
+      "text": "Cancellations lead, recharges and plan upgrades follow.",
+      "startS": 51.656,
+      "endS": 55.435,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "It tells you where the automated work is concentrated.",
+      "startS": 55.911,
+      "endS": 58.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p18",
+      "text": "Scroll to the list.",
+      "startS": 58.88,
+      "endS": 60.006,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p19",
+      "text": "Four automations on record.",
+      "startS": 61.653,
+      "endS": 63.247,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p20",
+      "text": "Two buttons sit to the right, Export and New Automation.",
+      "startS": 63.505,
+      "endS": 64.882,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "We're only reading today, so leave both alone.",
+      "startS": 65.129,
+      "endS": 70.194,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p22",
+      "text": "A search box, a filter, a search button.",
+      "startS": 70.755,
+      "endS": 73.587,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p23",
+      "text": "Type a name to narrow the list.",
+      "startS": 74.252,
+      "endS": 75.795,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p24",
+      "text": "Browsing changes nothing, so poke around without worry.",
+      "startS": 76.372,
+      "endS": 79.338,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p25",
+      "text": "Five columns.",
+      "startS": 79.76,
+      "endS": 80.739,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p26",
+      "text": "Name, the trigger that fires it, when it was created,",
+      "startS": 81.259,
+      "endS": 83.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p27",
+      "text": "when it was last touched, and its status.",
+      "startS": 83.494,
+      "endS": 87.391,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p28",
+      "text": "That last column is the one you'll check most.",
+      "startS": 87.832,
+      "endS": 90.102,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p29",
+      "text": "Top row, Win Back, No Visit ninety days.",
+      "startS": 90.667,
+      "endS": 93.994,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p30",
+      "text": "Its trigger is a customer who hasn't come back.",
+      "startS": 94.522,
+      "endS": 96.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p31",
+      "text": "Status reads Draft, so it isn't live yet.",
+      "startS": 97.32,
+      "endS": 99.988,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p32",
+      "text": "Nothing is going out from this one.",
+      "startS": 100.418,
+      "endS": 101.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p33",
+      "text": "Cancel Plan Recovery, next.",
+      "startS": 102.403,
+      "endS": 104.372,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p34",
+      "text": "Trigger's a cancellation, status Published, so it's live.",
+      "startS": 104.829,
+      "endS": 106.267,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p35",
+      "text": "But look right: weather paused at six locations.",
+      "startS": 106.477,
+      "endS": 108.295,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p36",
+      "text": "Live and paused at once, which is exactly the answer to a stopped-texts call.",
+      "startS": 108.542,
+      "endS": 115.909,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p37",
+      "text": "Two more.",
+      "startS": 116.377,
+      "endS": 117.06,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p38",
+      "text": "Birthday Surprise fires on a member's birthday and runs clean.",
+      "startS": 117.367,
+      "endS": 121.146,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p39",
+      "text": "First Wash Welcome greets new customers, published, but weather-paused at five sites.",
+      "startS": 121.661,
+      "endS": 126.756,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p40",
+      "text": "Same story as the cancellation flow.",
+      "startS": 127.047,
+      "endS": 129.105,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p41",
+      "text": "Status shows as a chip.",
+      "startS": 129.52,
+      "endS": 131.044,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p42",
+      "text": "Green Published, amber Draft, and that weather note layered on top when a pause is active.",
+      "startS": 132.744,
+      "endS": 133.783,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p43",
+      "text": "Down the bottom, one through four of four, so the whole account fits on one page.",
+      "startS": 134.125,
+      "endS": 144.216,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p44",
+      "text": "So, the automation page.",
+      "startS": 144.8,
+      "endS": 146.582,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p45",
+      "text": "Four numbers up top, three panels for the trends, one table for the detail.",
+      "startS": 147.384,
+      "endS": 148.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p46",
+      "text": "When someone reports a flow that stopped, you can tell in seconds",
+      "startS": 149.005,
+      "endS": 150.42,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p47",
+      "text": "whether it's a draft, a pause, or something worth a bug.",
+      "startS": 150.777,
+      "endS": 152.231,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p48",
+      "text": "Where weather pausing gets switched on is still parked.",
+      "startS": 153.034,
+      "endS": 163.234,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "lesson": "WC-07-01",
+  "audioMaster": "training/module07-team/WC-07-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence/clause boundaries into caption-sized pieces. The Σ(audio+0.4) block formula predicts a final end of 254.294s but the ffprobed master is 253.727s (0.567s short, past the ±0.3s gate — MP3 concat trims frame padding, drift accumulating to -0.58s by the last block). So each block start is the measured speech onset of its block inside the joined master, found by FFT normalized cross-correlation of each WC-07-01-sNN.mp3 against the master (ncc 1.000 for all 15 blocks; tools/xcorr method). Block end = the next block's measured onset; the final end = the ffprobed master duration 253.727s. audioDurationS in the lesson JSON = 253.727.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 10.88,
+      "phrases": [
+        { "id": "p01", "text": "This is the team, on one page." },
+        { "id": "p02", "text": "The Employees screen is where you go when the question is about a person, not a wash." },
+        { "id": "p03", "text": "Headcount up top, a few charts, then the directory." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 10.88,
+      "endS": 24.4,
+      "phrases": [
+        { "id": "p04", "text": "Start with the four tiles." },
+        { "id": "p05", "text": "They give you the whole crew at a glance." },
+        { "id": "p06", "text": "Everyone on the books, who's active, and the full-time against part-time split," },
+        { "id": "p07", "text": "so a staffing question gets answered before you ever scroll to the table." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 24.4,
+      "endS": 38.0,
+      "phrases": [
+        { "id": "p08", "text": "Now the charts." },
+        { "id": "p09", "text": "The first tracks headcount over the last year, and right now it's trending up." },
+        { "id": "p10", "text": "When someone asks whether the team is growing, this is your answer in one line," },
+        { "id": "p11", "text": "and you skip pulling a report to get it." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 38.0,
+      "endS": 49.92,
+      "phrases": [
+        { "id": "p12", "text": "The middle chart splits your people by site." },
+        { "id": "p13", "text": "It's the fast read on where everyone actually sits," },
+        { "id": "p14", "text": "which is exactly what you want when one location calls in short a body on a Saturday morning." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 49.92,
+      "endS": 62.08,
+      "phrases": [
+        { "id": "p15", "text": "Third chart, same crew, different cut." },
+        { "id": "p16", "text": "Full-time against part-time as a percentage, plus the count of anyone inactive." },
+        { "id": "p17", "text": "It says the same thing as the tiles, drawn for the eye." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 62.08,
+      "endS": 73.28,
+      "phrases": [
+        { "id": "p18", "text": "Down to the directory." },
+        { "id": "p19", "text": "Notice the two buttons in its corner." },
+        { "id": "p20", "text": "One exports data, one starts a new hire." },
+        { "id": "p21", "text": "We're only reading today, so find them and leave them where they are." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 73.28,
+      "endS": 89.76,
+      "phrases": [
+        { "id": "p22", "text": "Read the column headers." },
+        { "id": "p23", "text": "Name, phone, hire date, type, status, location." },
+        { "id": "p24", "text": "Six columns, and the name cell doubles as a badge:" },
+        { "id": "p25", "text": "an avatar and the person's role sit right next to who they are," },
+        { "id": "p26", "text": "so the job is obvious before you open a thing." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 89.76,
+      "endS": 101.84,
+      "phrases": [
+        { "id": "p27", "text": "Look at one row." },
+        { "id": "p28", "text": "A shift manager, full-time, active, at one of the sites." },
+        { "id": "p29", "text": "Run your eye down the role chips" },
+        { "id": "p30", "text": "and you've read half the team's jobs without opening a single record." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 101.84,
+      "endS": 114.56,
+      "phrases": [
+        { "id": "p31", "text": "On a real site the roster runs long." },
+        { "id": "p32", "text": "That's what the search box and filters are for:" },
+        { "id": "p33", "text": "type a name, narrow the list, jump to your person." },
+        { "id": "p34", "text": "Here it's a five-row sample, so everyone already fits on one page." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 114.56,
+      "endS": 138.4,
+      "phrases": [
+        { "id": "p35", "text": "Click a name to open the record." },
+        { "id": "p36", "text": "One click, and the list becomes a person." },
+        { "id": "p37", "text": "The header introduces him with a role chip, his site, and his employment type." },
+        { "id": "p38", "text": "Three buttons sit beside it, and Back is the only one we touch." },
+        { "id": "p39", "text": "Below, five tiles size him up fast:" },
+        { "id": "p40", "text": "three years in, a hundred sixty eight hours this month," },
+        { "id": "p41", "text": "attendance above ninety seven percent, and a performance score of four point six." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 138.4,
+      "endS": 160.32,
+      "phrases": [
+        { "id": "p42", "text": "Look across the top of the file." },
+        { "id": "p43", "text": "Seven tabs: overview, personal info, employment, schedule," },
+        { "id": "p44", "text": "emergency contact, notes and audit, and training." },
+        { "id": "p45", "text": "That's the whole person, sorted into seven drawers, and you land in the first one." },
+        { "id": "p46", "text": "Worth knowing this layout is the live one, not the old WashAssist record." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 160.32,
+      "endS": 188.4,
+      "phrases": [
+        { "id": "p47", "text": "Stay on Overview." },
+        { "id": "p48", "text": "This is the dashboard for one person, five panels deep." },
+        { "id": "p49", "text": "Hours worked, month by month." },
+        { "id": "p50", "text": "How those hours split between regular time, overtime, and leave." },
+        { "id": "p51", "text": "Attendance across the year, with every missed shift counted." },
+        { "id": "p52", "text": "Earnings, closing in on fifteen thousand for the year." },
+        { "id": "p53", "text": "And a review trend running well above the location average." },
+        { "id": "p54", "text": "When a manager asks how someone is doing, this one tab answers it." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 188.4,
+      "endS": 217.36,
+      "phrases": [
+        { "id": "p55", "text": "Six more tabs sit beside Overview." },
+        { "id": "p56", "text": "Each one is a drawer." },
+        { "id": "p57", "text": "Personal info holds identity and address, with the social masked." },
+        { "id": "p58", "text": "Employment carries role, pay, reporting line, and benefits." },
+        { "id": "p59", "text": "Schedule pairs the current week with recent time clock punches." },
+        { "id": "p60", "text": "Emergency contact adds the medical basics." },
+        { "id": "p61", "text": "Notes and audit keeps a dated trail of every change to the record." },
+        { "id": "p62", "text": "And training tracks Academy courses, with an assign button we leave alone." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 217.36,
+      "endS": 235.76,
+      "phrases": [
+        { "id": "p63", "text": "One rule holds this whole lesson." },
+        { "id": "p64", "text": "We opened the record, read it, and changed nothing in it." },
+        { "id": "p65", "text": "Editing a person is a real workflow with its own approvals, and this lesson stays clear of it." },
+        { "id": "p66", "text": "So click Back." },
+        { "id": "p67", "text": "The list returns, and the record sits exactly as you found it." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 235.76,
+      "endS": 253.727,
+      "phrases": [
+        { "id": "p68", "text": "So that's the Employees page." },
+        { "id": "p69", "text": "A directory up front: headcount, a few charts, and a table you can search." },
+        { "id": "p70", "text": "Behind any name, a seven-tab file with Overview as its home." },
+        { "id": "p71", "text": "When a shift question walks in, start here" },
+        { "id": "p72", "text": "and let the rest of the Team module branch off from it." }
+      ]
+    }
+  ],
+  "output": "WC-07-01-employees-v1.1"
+}

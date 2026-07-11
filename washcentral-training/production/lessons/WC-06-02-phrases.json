@@ -1,0 +1,193 @@
+{
+  "lesson": "WC-06-02",
+  "audioMaster": "training/module06-analytics/WC-06-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence/colon boundaries into caption-sized pieces. Never rewritten, summarized, or reordered. Block windows are MEASURED onsets (normalized cross-correlation of each block mp3 against the joined master, 8 kHz mono): the nominal Sigma(audio+0.4) formula using ffprobe per-file durations overshoots the ffprobe-probed master by 0.514s (> 0.3 tolerance) because the joined master pads each block boundary with ~0.36s of silence, not the full 0.4s the formula assumes; measured onsets drift monotonically from 0 at s01 to -0.519s at s15. ffprobe master duration 260.833s (audioDurationS)."
+,
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.320,
+      "phrases": [
+        { "id": "p01", "text": "Open Analytics." },
+        { "id": "p02", "text": "This is the deepest sidebar in the platform." },
+        { "id": "p03", "text": "Twenty-two pages." },
+        { "id": "p04", "text": "Do not try to memorize them one at a time." },
+        { "id": "p05", "text": "Learn the four buckets they fall into, and any page becomes easy to find." },
+        { "id": "p06", "text": "The labels down the left are your map." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.320,
+      "endS": 38.800,
+      "phrases": [
+        { "id": "p07", "text": "First bucket, Analytics." },
+        { "id": "p08", "text": "Ten pages, and these are the live dashboards:" },
+        { "id": "p09", "text": "the whole network at a glance, each location, memberships, downsells, retail." },
+        { "id": "p10", "text": "One catch worth flagging now." },
+        { "id": "p11", "text": "The item named Marketing up here is a single dashboard, not the Marketing group further down." },
+        { "id": "p12", "text": "Same word, two places." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 38.800,
+      "endS": 53.040,
+      "phrases": [
+        { "id": "p13", "text": "The module drops you on the Executive Dashboard." },
+        { "id": "p14", "text": "You met this one last lesson: the period toggles up top, the location scope right beside them." },
+        { "id": "p15", "text": "We are not stopping." },
+        { "id": "p16", "text": "Today is about learning what lives all around it." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 53.040,
+      "endS": 70.480,
+      "phrases": [
+        { "id": "p17", "text": "Click Downsells." },
+        { "id": "p18", "text": "When a member goes to cancel, the system offers a downgrade to keep them instead." },
+        { "id": "p19", "text": "These six cards are the scoreboard for that fight:" },
+        { "id": "p20", "text": "how many tried to leave, how many you talked into staying, and the dollars you kept." },
+        { "id": "p21", "text": "Right now, you are saving better than four in ten." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 70.480,
+      "endS": 88.720,
+      "phrases": [
+        { "id": "p22", "text": "Scroll down for the why." },
+        { "id": "p23", "text": "The reasons people cancel, ranked, and the offers that win them back." },
+        { "id": "p24", "text": "Remember the Command Center flagging members with downsell signals?" },
+        { "id": "p25", "text": "This is where that play cashes out." },
+        { "id": "p26", "text": "Read the top reason, read the save rate, and you know in ten seconds whether the flow is working." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 88.720,
+      "endS": 102.640,
+      "phrases": [
+        { "id": "p27", "text": "Second bucket, Marketing." },
+        { "id": "p28", "text": "Five pages, and the feel changes." },
+        { "id": "p29", "text": "These are reports, not dashboards." },
+        { "id": "p30", "text": "Campaign results, who responded, which offers landed," },
+        { "id": "p31", "text": "where new members came from, and who you managed to win back." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 102.640,
+      "endS": 122.960,
+      "phrases": [
+        { "id": "p32", "text": "Open Campaign Performance." },
+        { "id": "p33", "text": "A summary band on top, a sortable table underneath." },
+        { "id": "p34", "text": "Look at the header." },
+        { "id": "p35", "text": "No location picker this time." },
+        { "id": "p36", "text": "Instead, Filters and Export." },
+        { "id": "p37", "text": "That is the tell for a report: you slice it, sort it, and pull it into a spreadsheet." },
+        { "id": "p38", "text": "Every page in this group works the same way." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 122.960,
+      "endS": 139.680,
+      "phrases": [
+        { "id": "p39", "text": "Third bucket, Intelligence." },
+        { "id": "p40", "text": "Six pages, and this is the analyst's shelf:" },
+        { "id": "p41", "text": "revenue trends, industry benchmarks, churn prediction, lifetime value, and your online reputation." },
+        { "id": "p42", "text": "These are the heavier questions, the ones you dig into rather than glance at." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 139.680,
+      "endS": 156.800,
+      "phrases": [
+        { "id": "p43", "text": "Start at B-I Overview." },
+        { "id": "p44", "text": "Eight cards, and together they read the health of the whole business:" },
+        { "id": "p45", "text": "recurring revenue, retention, churn, lifetime value, even your net promoter score." },
+        { "id": "p46", "text": "When someone asks how the network is really doing, this is the single screen you open." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 156.800,
+      "endS": 172.560,
+      "phrases": [
+        { "id": "p47", "text": "Keep scrolling." },
+        { "id": "p48", "text": "A full year of revenue, your plan mix, and the members quietly drifting toward the exit." },
+        { "id": "p49", "text": "At the bottom, the Deep Dives." },
+        { "id": "p50", "text": "Picture B-I Overview as the front door," },
+        { "id": "p51", "text": "and the other five Intelligence pages as the rooms it opens into." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 172.560,
+      "endS": 186.720,
+      "phrases": [
+        { "id": "p52", "text": "Last bucket, Forecasting." },
+        { "id": "p53", "text": "Just one page this time." },
+        { "id": "p54", "text": "Ten under Analytics, five under Marketing, six under Intelligence, one here." },
+        { "id": "p55", "text": "That is your twenty-two, and now the whole sidebar fits in your head." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 186.720,
+      "endS": 203.840,
+      "phrases": [
+        { "id": "p56", "text": "Click Forecasting." },
+        { "id": "p57", "text": "This is the only page that looks forward instead of back." },
+        { "id": "p58", "text": "Four numbers set the scene:" },
+        { "id": "p59", "text": "next month's projected revenue, how close you are running against plan for the year," },
+        { "id": "p60", "text": "and how accurate the model has been." },
+        { "id": "p61", "text": "See the New Record button?" },
+        { "id": "p62", "text": "We leave that one alone." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 203.840,
+      "endS": 220.480,
+      "phrases": [
+        { "id": "p63", "text": "Below, the workhorse." },
+        { "id": "p64", "text": "A revenue projection, the forecast broken out by location, and an accuracy readout." },
+        { "id": "p65", "text": "Then the Forecast List itself:" },
+        { "id": "p66", "text": "every period lined up with what you predicted, what actually came in, and the gap between the two." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 220.480,
+      "endS": 240.000,
+      "phrases": [
+        { "id": "p67", "text": "Read one line and it clicks." },
+        { "id": "p68", "text": "Take May of last year: forecast around two hundred thirty-eight thousand," },
+        { "id": "p69", "text": "actual came in near two forty-two, off by a point and a half." },
+        { "id": "p70", "text": "That is a closed month." },
+        { "id": "p71", "text": "The pending row shows dashes, because its real numbers are not in yet." },
+        { "id": "p72", "text": "Hands off New Record." },
+        { "id": "p73", "text": "We are only reading." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 240.000,
+      "endS": 260.833,
+      "phrases": [
+        { "id": "p74", "text": "So that is the map." },
+        { "id": "p75", "text": "Four buckets." },
+        { "id": "p76", "text": "Analytics for the dashboards, Marketing for the reports," },
+        { "id": "p77", "text": "Intelligence for the deep questions, Forecasting for what comes next." },
+        { "id": "p78", "text": "Twenty-two pages, and you can reach any of them from the sidebar, or jump straight there with Search." },
+        { "id": "p79", "text": "Learn the buckets, and you never hunt for a page again." }
+      ]
+    }
+  ],
+  "output": "WC-06-02-analytics-sidebar-forecasting-v1.1"
+}
