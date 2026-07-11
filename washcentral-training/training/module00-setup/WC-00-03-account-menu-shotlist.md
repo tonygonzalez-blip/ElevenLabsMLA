@@ -16,15 +16,16 @@ This shot list describes what the produced video shows. It is internally consist
 
 Format: Step, real action, expected + verified state, camera, callout/emphasis, caption cue.
 
-| Step | Action (exact target) | Expected state | Hold | Edit notes |
-|---|---|---|---|---|
-| 1 | Open on Command Center; move the cursor slowly to the top-right header and rest on the avatar | The **MG** avatar badge sits at the far right of the header, past Search ⌘K, All Locations▾, and Ask Shyne | 3s | Callout ① on the avatar; slow cursor travel; no click yet |
-| 2 | Click the **MG** avatar | The account menu opens; its header shows the display name and tenant code | 3s | Callout ② on the menu header (name + tenant code); zoom-in 150% on the header for 1.5s |
-| 3 | Cursor rests on the avatar; highlight-outline the open menu panel (do not click) | Menu lists **Profile**, **My Training**, **Notifications**, **Preferences**, **Dark Mode** toggle, **Help Center**, **Logout** | 4s | Callout ③ = amber highlight outline around the whole menu panel while the items are read; outline clears before step 4. Never click **Logout** |
-| 4 | Click the **Dark Mode** toggle | The interface switches to the dark theme immediately | 3s | Callout ④ "view-only, your display"; hold on the theme change so the switch is obvious |
-| 5 | Click **Dark Mode** again | The interface returns to the light theme | 2s | Callout ⑤ "toggles back, no data touched" |
-| 6 | Open the avatar menu again and click **My Training** | The WashCentral Academy loads at `lms-home.html` | 3s | Callout ⑥ on the Academy landing; note the URL bar shows lms-home.html |
-| 7 | Navigate back to the **Command Center** | Back on the Command Center; the session is unchanged | 2s | Callout ⑦ "one step back to the menu from anywhere"; end card / verification stamp; fade out. Do NOT click Logout on camera |
+| Step | Real action (live target) | Verified state | Camera | Callout / emphasis | Caption source |
+|---|---|---|---|---|---|
+| 1 | Cursor enters from the right edge and settles beside the **MG** avatar (`#user-menu-btn`). No click. | Avatar present at far right of the header, past Search ⌘K, All Locations ▾, Ask Shyne. | Restrained top-right punch-in (~1.4×) that keeps Search, the location selector, Ask Shyne, and the avatar in frame. | ① on the avatar. Cursor parks beside it, not over it. | s01 phrases |
+| 2 | Genuine press+release on the avatar during the "Click it." beat. | Menu opens; `menuOpen` verified. Menu header shows the display name and tenant code. | Close framing (~1.55×) on the name + tenant-code header for ~1.5 s. | ② on the menu header (clear of the text); click ring on the real press. | s02 phrases |
+| 3 | No click. Cursor parked left of the menu. | Menu stays open (watched, held for the whole explanation). Items: Profile, My Training, Notifications, Preferences, Dark Mode, Help Center, Logout. | Medium framing (~1.34×) that keeps the whole menu readable and enough interface for the coming theme flip. | ③ establishes the menu; a moving highlight tracks the items in the exact spoken order (Profile → Preferences → Notifications → Help Center → My Training → Dark Mode → Logout). Logout is named, never hovered. | s03 phrases |
+| 4 | Genuine press on the **Dark Mode** item. | `themeDark` verified (page background luminance drops). Menu stays open. | Held medium framing; the genuine dark theme is visible across the framed interface. | ④ near the toggle; click ring on the real press. | s04 phrases |
+| 5 | Genuine press on the **Light Mode** item (the same control, now labelled Light Mode). | `themeLight` verified. Menu stays open. | Held medium framing. | ⑤ near the toggle; click ring. | s05 phrases |
+| 6 | Real click on inert header space dismisses the menu (`menuClosed` verified), then a real avatar click re-opens it (`menuOpen`), then a real click on **My Training** navigates. | Academy page loads and stabilizes (`onAcademy` + `pageReady` + settle). The genuine loading interval is cut by holding the first stable Academy frame — no partial-render frames. | Held medium framing for the re-open, then pulls wide as the Academy appears. | ⑥ on the real **My Dashboard** Academy heading (no fabricated URL bar). My Training emphasized before the click. | s06 phrases |
+| 7 | Genuine click on the in-app Command Center rail control (a real navigation action, not a hardcoded URL). | `onCommandCenter` + `pageReady` verified; loading cut. Same session, unchanged. | Wide, stable. | ⑦ / completion. Cursor and captions clear. | s07 phrases |
+| End | — | Stable Command Center held. | Wide. | Captions, cursor emphasis, highlights cleared; **"Account Menu — Complete"** card with a small check; 8–12-frame visual fade. Visual continues ~0.4 s past the unchanged audio; the audio is not faded or modified. | — |
 
 Never click **Logout** on camera. If any unexpected dialog, changed data, or idle "Still there?" prompt appears mid-take, the engine aborts with a nonzero status and the take is re-rolled.
 

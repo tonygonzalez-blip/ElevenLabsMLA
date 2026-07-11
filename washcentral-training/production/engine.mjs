@@ -16,7 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync, spawn } from 'node:child_process';
-import { CDP, sleep } from '../tools/cdp-lib.mjs';
+import { CDP, sleep, dismissIdle } from '../tools/cdp-lib.mjs';
 
 const lessonPath = process.argv[2];
 const mode = process.argv.includes('--record') ? 'record' : 'rehearse';
@@ -231,6 +231,27 @@ class Engine {
         entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `${op.target} -> ${op.postcondition}`);
         entry.postcondition = op.postcondition;
         if (op.nav) this.log.navs.push({ target: op.target, pressT: tPress, verifiedT: entry.verifiedT });
+      } else if (op.op === 'key') {
+        // Genuine keyboard input via CDP (rawKeyDown/keyUp), for lessons that demonstrate
+        // keystrokes (Ctrl+K, arrow keys, Escape). `keys` is one combo or an ordered list,
+        // e.g. "ctrl+k", "ArrowDown", "Escape". Optional postcondition is verified after.
+        await this.waitUntil(op.pressAt ?? op.at);
+        const keyT = +this.now().toFixed(3);
+        const combos = Array.isArray(op.keys) ? op.keys : [op.keys || op.key];
+        const modMap = { ctrl: 2, alt: 1, meta: 4, shift: 8 };
+        for (const combo of combos) {
+          const parts = String(combo).split('+');
+          const key = parts.pop();
+          const mods = parts.reduce((m, p) => m | (modMap[p.toLowerCase()] || 0), 0);
+          await this.cdp.pressKey(key, mods);
+          await sleep(op.gapMs ?? 240);
+        }
+        entry.keyT = keyT; entry.keys = combos;
+        this.log.keys.push({ t: keyT, keys: combos, label: op.keyLabel || combos.join(' ') });
+        if (op.postcondition) {
+          entry.verifiedT = await this.waitPredicate(op.postcondition, op.timeoutMs ?? 4000, `${combos.join(',')} -> ${op.postcondition}`);
+          entry.postcondition = op.postcondition;
+        }
       } else if (op.op === 'log-rect') {
         await this.waitUntil(op.at);
         const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160 }, 3000);
@@ -272,16 +293,19 @@ async function main() {
   const cdp = await CDP.connect('first');
   const log = {
     lesson: L.lesson, mode, startedISO: null, display: DISPLAY,
-    pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {},
+    pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {}, keys: [],
     audioDurationS: L.audioDurationS, captureOffsetS: null, rawFile: null
   };
 
-  // pre-flight (off-camera, before any capture): stage the start page and let it settle
+  // pre-flight (off-camera, before any capture): stage the start page, dismiss any idle
+  // "Still there?" session dialog via its own Stay-Logged-In button (a genuine user action),
+  // and let the page settle. A live idle dialog on a fresh capture would abort QA check 29.
   const here = await cdp.eval('location.href');
   if (!here.startsWith(L.startUrl)) {
     console.log(`  staging start page: ${L.startUrl}`);
     await cdp.navigate(L.startUrl, 1500);
   }
+  if (await dismissIdle(cdp)) { console.log('  dismissed idle session dialog (off-camera)'); await sleep(600); }
   await sleep(1200);
 
   // Capture in record mode:
