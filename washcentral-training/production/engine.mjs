@@ -356,29 +356,38 @@ async function normalizeStageWindow(cdp) {
 // egress proxy, and an intermittent bad/empty response gets cached as a 0-rule stylesheet.
 // With no CSS the layout collapses to vertical document flow (block, tens of thousands of px
 // tall), every target falls below the viewport, and every resolve reports "obscured"/"not
-// found". Verify the stylesheet actually parsed (styles.css has rules AND .app is a flex/grid
-// container, not block); if not, hard-reload bypassing cache until it does, then abort so the
-// take is never recorded against a broken page.
-async function ensureStyled(cdp, url, tries = 4) {
+// found". The same bad-shell state also leaves the app's JS-built content (KPI strip, pager,
+// rail toggle) unrendered, so whichever target the on-camera timeline hits first fails
+// "not found" — a different target failing on each run is the tell (not static selector drift).
+// Verify the page is both STYLED and BUILT before capture: styles.css parsed (rules>0), .app is
+// a flex/grid container (not block), document load complete, and the layout is not the collapsed
+// shell (an unstyled/unbuilt document balloons to tens of thousands of px; every real WashCentral
+// page is a single/short screen well under 6000px). If any fails, hard-reload bypassing cache
+// until it holds, then abort so a take is never recorded against a broken/unbuilt page.
+async function ensureStyled(cdp, url, tries = 5) {
   for (let i = 0; i < tries; i++) {
     const s = await cdp.eval(`(()=>{
       const ext=[...document.styleSheets].find(x=>x.href&&x.href.includes('styles.css'));
       let rules=0; try{ rules = ext ? ext.cssRules.length : 0 }catch(e){ rules=-1 }
       const app=document.querySelector('.app');
       const disp=app?getComputedStyle(app).display:'';
-      return { rules, disp, hasApp:!!app };
+      return { rules, disp, hasApp:!!app, ready:document.readyState, docH:document.documentElement.scrollHeight };
     })()`);
-    if (s.rules > 0 && (s.disp === 'flex' || s.disp === 'grid')) {
-      if (i > 0) console.log(`  page styled after ${i} reload(s) (styles.css ${s.rules} rules, .app ${s.disp})`);
+    const styled = s.rules > 0 && (s.disp === 'flex' || s.disp === 'grid');
+    const built = s.ready === 'complete' && s.docH > 0 && s.docH < 6000;
+    if (styled && built) {
+      if (i > 0) console.log(`  page styled+built after ${i} reload(s) (styles.css ${s.rules} rules, .app ${s.disp}, docH ${s.docH})`);
       return;
     }
-    console.log(`  page UNSTYLED (styles.css rules=${s.rules}, .app display=${s.disp||'none'}); hard-reloading (${i + 1}/${tries})`);
+    const why = !styled ? `UNSTYLED (styles.css rules=${s.rules}, .app display=${s.disp || 'none'})`
+      : `UNBUILT shell (readyState=${s.ready}, docH=${s.docH})`;
+    console.log(`  page ${why}; hard-reloading (${i + 1}/${tries})`);
     const loaded = cdp.once('Page.loadEventFired').catch(() => null);
     await cdp.send('Page.reload', { ignoreCache: true });
     await loaded;
     await sleep(1800);
   }
-  throw new Error(`page failed to render styled after ${tries} cache-bypassing reloads (stylesheet fetch keeps returning empty/error): ${url}`);
+  throw new Error(`page failed to render styled+built after ${tries} cache-bypassing reloads (stylesheet/bootstrap fetch keeps returning empty/error): ${url}`);
 }
 
 async function main() {
