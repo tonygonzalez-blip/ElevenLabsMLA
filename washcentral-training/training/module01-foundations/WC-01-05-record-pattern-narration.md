@@ -53,38 +53,38 @@ Drop to the footer. <break time="1.0s" /> Rows per page, a count of what matched
 [01:21 | Step 6 — Sibling list]
 Jump to Refund Reasons. <break time="1.4s" /> Same page, lighter version. One tile, one column, the same add button. The fields change from list to list, but the shape holds. That is the whole point of learning it once.
 
-[01:37 | Step 7 — Open a record]
-Back on Cancellation Reasons, open one row. <break time="1.4s" /> A record opens read-only, its details laid out for you to check. Nothing is editable yet, so you can look without any risk of changing it.
+[01:37 | Step 7 — Row click stays on the list]
+Back on Cancellation Reasons, click a row. <break time="1.4s" /> And notice what does not happen. No detail page opens. This lean reference list keeps you right here; its only record action is that green New Record button.
 
-_[Director: July 11 credentialed capture — a row click does NOT open a detail view on this list, and no ← Back / Edit / Delete exists. This block contradicts the platform: re-render s07 before assembly.]_
+_[Director: confirmed July 11 — a row click stays on the list; hold on the unchanged list after the click so the non-event reads on camera.]_
 
-[01:52 | Step 8 — Detail buttons]
-Find the three buttons up top. <break time="1.2s" /> Back returns you to the list. Edit opens the record for changes. Delete removes it, but never on the first click. Three buttons, and you meet them on every record you open.
+[01:53 | Step 8 — No record buttons here]
+Now scan the page for record buttons. <break time="1.2s" /> There is no Back, no Edit, no Delete. On richer record types you will meet that three-button band; this list simply never grew one. Everything it can do sits in New Record.
 
-[02:11 | Step 9 — Edit form]
-Open Edit, and touch nothing. <break time="1.4s" /> Two buttons close this form. Cancel walks away clean. Save Changes writes to the shared tenant, so on the demo you always leave through Cancel. A star marks anything the form requires.
+[02:11 | Step 9 — The form's two exits]
+Before we open the form, learn its two exits. <break time="1.2s" /> Cancel walks away clean. Save Changes writes to the shared tenant, so on the demo you always leave through Cancel. A star marks anything the form requires.
 
-_[Director: change no field; leave via Cancel. July 11: there is no Edit button — the form opens only via + New Record (Cancellation Reasons Edit page; required DESCRIPTION * field; Cancel / Save Changes). Re-render s09's action cue.]_
+_[Director: nothing is opened at this step — the form itself opens at step 11 via + New Record (Cancellation Reasons Edit page; required DESCRIPTION * field; Cancel / Save Changes). Indicate only.]_
 
 [02:28 | Step 10 — Delete guardrail]
-Notice Delete, and leave it alone. <break time="1.2s" /> It always asks first. When the confirmation appears, choose No, Keep, and the record stays put. Treat Yes, Delete as off-limits on anything you did not create.
+And the delete rule still applies, even without a Delete button here. <break time="1.2s" /> Where other record types carry one, it always asks first. Choose No, Keep at that confirmation, and treat Yes, Delete as off-limits on anything you did not create.
 
-_[Director: July 11 — no Delete control exists on this page, so there is no confirmation to record here. Dialog text stays parked. Re-render s10 as a rule card ("where Delete exists elsewhere…"). Never click Yes, Delete anywhere.]_
+_[Director: July 11 — no Delete control exists on this page, so there is no confirmation to record here. Dialog text stays parked. This block is a rule card; never click Yes, Delete anywhere.]_
 
-[02:44 | Step 11 — New record]
+[02:46 | Step 11 — New record]
 Back on the list, open New Record. <break time="1.4s" /> The same form again, blank this time, ready for a fresh entry. You are only here to see the layout, so close it the way you closed the edit: Cancel. Nothing gets added.
 
 _[Director: the + New Record form was captured July 11 — Cancellation Reasons Edit page, Reason Details tab, required DESCRIPTION * field, Cancel / Save Changes, sample-record name "Customer Request" over the blank form (demo quirk). Leave via Cancel. Spoken s11 matches; no re-render needed.]_
 
-[03:02 | Step 12 — Recap]
-So that is the pattern. <break time="1.0s" /> List, record, edit, and a blank form to start a new one. Two exits keep you safe: Cancel out of a form, No, Keep out of a delete. One quirk to expect on the demo: a detail page may open a fixed sample record instead of the row you picked. That is the tenant, not a bug. Learn this rhythm now, because every record page ahead follows it.
+[03:04 | Step 12 — Recap]
+So that is the pattern on this lean list. <break time="1.0s" /> List, then New Record, then the form, and Cancel back out. Two exits keep you safe: Cancel out of a form, No, Keep out of any delete you meet elsewhere. One demo quirk to expect: the form header may name a sample record over a blank form. That is the tenant, not a bug. Richer record types add the detail view, and this rhythm carries straight into them.
 
-_(Estimated narration total: ~3:30 at 145 wpm. Final per-step seconds recorded in the Settings header after render.)_
+_(Estimated narration total: ~217 s ≈ 03:37 at 145 wpm. Re-authored per-step estimates: s07 16.3 · s08 17.7 · s09 16.5 · s10 18.2 · s12 33.3. Final per-step seconds recorded in the Settings header after render.)_
 
 ## Generation log
 
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, and value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice throughout, and no em or en dashes in the narration. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format) and inside director notes' mandated "parked" phrasing.
-- Grounding: steps 1–6 trace to the July 9 digests and are re-confirmed by the July 11 credentialed digests (`settings-cancellation-reasons-rows`, `settings-refund-reasons`, `settings-rewash-reasons`). Steps 7–11 were written from the learning plan before capture; the July 11 digests (`cancellation-reason-detail`, `cancellation-reason-new`) now contradict s07–s10 (no row-click detail view, no ← Back / Edit / Delete on this list) and confirm s11's blank form.
+- Grounding: steps 1–6 trace to the July 9 digests and are re-confirmed by the July 11 credentialed digests (`settings-cancellation-reasons-rows`, `settings-refund-reasons`, `settings-rewash-reasons`). Blocks s07–s10 and s12 were re-authored July 11 against the credentialed digests (`cancellation-reason-detail`, `cancellation-reason-new`) and the guide v1.1: no row-click detail view, no ← Back / Edit / Delete on this list, form reached via + New Record only; s11's blank form is confirmed as rendered.
 - Nothing committed: Save Changes, Yes, Delete, and + New Record Save are never clicked; the delete guardrail stops at the confirmation with No, Keep wherever a Delete control exists.
-- Status **BLOCKED FOR ASSEMBLY — re-render s07–s10 (and the s12 recap) against the July 11 corpus before use**; remaining blocks stay valid. Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**
+- Status **s07–s10 and s12 re-authored July 11, pending block re-render**; remaining blocks stay valid as rendered. Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**
