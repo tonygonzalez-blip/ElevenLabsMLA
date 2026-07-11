@@ -1,0 +1,153 @@
+{
+  "base": "WC-02-05",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 301.69,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open House Accounts",
+      "audioS": 14.99,
+      "stepS": 15.39,
+      "file": "WC-02-05-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "KPI strip",
+      "audioS": 13.87,
+      "stepS": 14.27,
+      "file": "WC-02-05-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Insight cards",
+      "audioS": 15.65,
+      "stepS": 16.05,
+      "file": "WC-02-05-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "List card & Generate Invoices",
+      "audioS": 16.43,
+      "stepS": 16.83,
+      "file": "WC-02-05-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Search & columns",
+      "audioS": 12.36,
+      "stepS": 12.76,
+      "file": "WC-02-05-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Open an account",
+      "audioS": 12.83,
+      "stepS": 13.23,
+      "file": "WC-02-05-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Detail header",
+      "audioS": 16.93,
+      "stepS": 17.33,
+      "file": "WC-02-05-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Header buttons",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-02-05-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Metric band",
+      "audioS": 15.23,
+      "stepS": 15.63,
+      "file": "WC-02-05-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Related chips",
+      "audioS": 12.12,
+      "stepS": 12.52,
+      "file": "WC-02-05-s10.mp3"
+    },
+    {
+      "block": "s11",
+      "step": "11",
+      "target": "The ten tabs",
+      "audioS": 18.21,
+      "stepS": 18.61,
+      "file": "WC-02-05-s11.mp3"
+    },
+    {
+      "block": "s12",
+      "step": "12",
+      "target": "Monthly Charges",
+      "audioS": 12.36,
+      "stepS": 12.76,
+      "file": "WC-02-05-s12.mp3"
+    },
+    {
+      "block": "s13",
+      "step": "13",
+      "target": "AR Aging",
+      "audioS": 21.89,
+      "stepS": 22.29,
+      "file": "WC-02-05-s13.mp3"
+    },
+    {
+      "block": "s14",
+      "step": "14",
+      "target": "Wash Frequency & Account Health",
+      "audioS": 19.33,
+      "stepS": 19.73,
+      "file": "WC-02-05-s14.mp3"
+    },
+    {
+      "block": "s15",
+      "step": "15",
+      "target": "Invoices tab",
+      "audioS": 14.68,
+      "stepS": 15.08,
+      "file": "WC-02-05-s15.mp3"
+    },
+    {
+      "block": "s16",
+      "step": "16",
+      "target": "Payments tab",
+      "audioS": 17.08,
+      "stepS": 17.48,
+      "file": "WC-02-05-s16.mp3"
+    },
+    {
+      "block": "s17",
+      "step": "17",
+      "target": "Remaining tabs",
+      "audioS": 28.45,
+      "stepS": 28.85,
+      "file": "WC-02-05-s17.mp3"
+    },
+    {
+      "block": "s18",
+      "step": "18",
+      "target": "Back & recap",
+      "audioS": 19.15,
+      "stepS": 19.55,
+      "file": "WC-02-05-s18.mp3"
+    }
+  ]
+}

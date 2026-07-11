@@ -1,0 +1,89 @@
+{
+  "base": "WC-00-02",
+  "voice": "CDbF7Jxnv3azemv9dXMP",
+  "model": "eleven_v3",
+  "tailS": 0.4,
+  "totalS": 143.24,
+  "blocks": [
+    {
+      "block": "s01",
+      "step": "1",
+      "target": "Open the sign-in page",
+      "audioS": 11.08,
+      "stepS": 11.48,
+      "file": "WC-00-02-s01.mp3"
+    },
+    {
+      "block": "s02",
+      "step": "2",
+      "target": "Marketing panel",
+      "audioS": 14.29,
+      "stepS": 14.69,
+      "file": "WC-00-02-s02.mp3"
+    },
+    {
+      "block": "s03",
+      "step": "3",
+      "target": "Welcome back form",
+      "audioS": 16.93,
+      "stepS": 17.33,
+      "file": "WC-00-02-s03.mp3"
+    },
+    {
+      "block": "s04",
+      "step": "4",
+      "target": "Email field",
+      "audioS": 13.87,
+      "stepS": 14.27,
+      "file": "WC-00-02-s04.mp3"
+    },
+    {
+      "block": "s05",
+      "step": "5",
+      "target": "Password and Show password eye",
+      "audioS": 12.28,
+      "stepS": 12.68,
+      "file": "WC-00-02-s05.mp3"
+    },
+    {
+      "block": "s06",
+      "step": "6",
+      "target": "Tenant / Customer Code",
+      "audioS": 17.63,
+      "stepS": 18.03,
+      "file": "WC-00-02-s06.mp3"
+    },
+    {
+      "block": "s07",
+      "step": "7",
+      "target": "Remember me and Forgot password?",
+      "audioS": 11.81,
+      "stepS": 12.21,
+      "file": "WC-00-02-s07.mp3"
+    },
+    {
+      "block": "s08",
+      "step": "8",
+      "target": "Sign In",
+      "audioS": 14.21,
+      "stepS": 14.61,
+      "file": "WC-00-02-s08.mp3"
+    },
+    {
+      "block": "s09",
+      "step": "9",
+      "target": "Land on the Command Center",
+      "audioS": 12.93,
+      "stepS": 13.33,
+      "file": "WC-00-02-s09.mp3"
+    },
+    {
+      "block": "s10",
+      "step": "10",
+      "target": "Recap",
+      "audioS": 14.21,
+      "stepS": 14.61,
+      "file": "WC-00-02-s10.mp3"
+    }
+  ]
+}
