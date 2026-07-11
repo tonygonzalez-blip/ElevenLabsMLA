@@ -1,0 +1,111 @@
+{
+  "lesson": "WC-00-03",
+  "title": "The Account Menu and Personal Setup",
+  "audioMaster": "training/module00-setup/WC-00-03-full-narration-v1.0.mp3",
+  "audioDurationS": 88.686,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [1920, 1080],
+
+  "targets": {
+    "avatar": { "selector": "#user-menu-btn" },
+    "menuPanel": { "js": "[...document.querySelectorAll('[class*=\"dropdown\"],[class*=\"menu\"]')].filter(e=>{const t=e.textContent||'';const r=e.getBoundingClientRect();return /My Training/.test(t)&&/Profile/.test(t)&&/Logout/.test(t)&&r.width>0}).sort((a,b)=>{const ra=a.getBoundingClientRect(),rb=b.getBoundingClientRect();return ra.width*ra.height-rb.width*rb.height})[0]" },
+    "menuHeader": { "js": "(()=>{const p=[...document.querySelectorAll('[class*=\"dropdown\"],[class*=\"menu\"]')].filter(e=>{const t=e.textContent||'';const r=e.getBoundingClientRect();return /My Training/.test(t)&&/Profile/.test(t)&&/Logout/.test(t)&&r.width>0}).sort((a,b)=>{const ra=a.getBoundingClientRect(),rb=b.getBoundingClientRect();return ra.width*ra.height-rb.width*rb.height})[0];if(!p)return null;return [...p.querySelectorAll('div,header')].find(e=>/EWC|DEMO|[A-Z]{2,}-/.test(e.textContent||'')&&e.getBoundingClientRect().height<90&&e.getBoundingClientRect().width>120)||p.firstElementChild})()" },
+    "itemProfile":       { "text": "Profile", "scope": "a,button,[role=menuitem],li" },
+    "itemMyTraining":    { "text": "My Training", "scope": "a,button,[role=menuitem],li" },
+    "itemNotifications": { "text": "Notifications", "scope": "a,button,[role=menuitem],li" },
+    "itemPreferences":   { "text": "Preferences", "scope": "a,button,[role=menuitem],li" },
+    "itemDarkMode":      { "text": "Dark Mode", "scope": "a,button,[role=menuitem],li" },
+    "itemLightMode":     { "text": "Light Mode", "scope": "a,button,[role=menuitem],li" },
+    "itemHelpCenter":    { "text": "Help Center", "scope": "a,button,[role=menuitem],li" },
+    "itemLogout":        { "text": "Logout", "scope": "a,button,[role=menuitem],li" },
+    "inertHeaderSpot":   { "js": "(()=>{const el=document.elementFromPoint(820,50);return el&&!el.closest('a,button,[role=button],input,[onclick]')?el:null})()", "clickPoint": [820, 50] },
+    "railCommandCenter": { "js": "(()=>{const c=[...document.querySelectorAll('nav a,nav button,[class*=\"rail\"] a,[class*=\"sidebar\"] a,[class*=\"rail\"] button,[class*=\"sidebar\"] button,a[aria-label],button[aria-label]')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.left<80});return c.find(e=>/command\\s*center/i.test(e.getAttribute('aria-label')||e.getAttribute('title')||''))||c.find(e=>/command-center/.test(e.getAttribute('href')||''))})()" },
+    "academyHeading":    { "js": "[...document.querySelectorAll('strong,h1,h2')].find(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.left>200&&r.top<120&&/^my dashboard$/i.test((e.textContent||'').trim())})", "textRect": true }
+  },
+
+  "predicates": {
+    "menuOpen": "!![...document.querySelectorAll('[class*=\"dropdown\"],[class*=\"menu\"]')].find(e=>{const t=e.textContent||'';return /My Training/.test(t)&&/Profile/.test(t)&&/Logout/.test(t)&&e.getBoundingClientRect().width>0})",
+    "menuClosed": "![...document.querySelectorAll('[class*=\"dropdown\"],[class*=\"menu\"]')].find(e=>{const t=e.textContent||'';return /My Training/.test(t)&&/Profile/.test(t)&&/Logout/.test(t)&&e.getBoundingClientRect().width>0})",
+    "themeDark": "(()=>{const c=getComputedStyle(document.body).backgroundColor.match(/\\d+/g).map(Number);return (0.2126*c[0]+0.7152*c[1]+0.0722*c[2])<80})()",
+    "themeLight": "(()=>{const c=getComputedStyle(document.body).backgroundColor.match(/\\d+/g).map(Number);return (0.2126*c[0]+0.7152*c[1]+0.0722*c[2])>=80})()",
+    "onAcademy": "/lms|academy/i.test(location.pathname)||/academy/i.test(document.title)",
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)"
+  },
+
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onCommandCenter", "note": "start page stable before capture" },
+    { "op": "pointer-enter", "at": 0.4, "from": [1919, 210], "to": { "target": "avatar", "offset": [-52, 30] }, "note": "enter from right edge, settle below-left of avatar" },
+    { "op": "log-rect", "at": 1.6, "key": "avatarRect", "target": "avatar" },
+    { "op": "move", "at": 4.6, "to": { "target": "avatar", "offset": [0, 0] }, "note": "point out the badge itself while p02 names it" },
+    { "op": "move", "at": 7.2, "to": { "target": "avatar", "offset": [-46, 34] }, "note": "park beside the avatar, not on it (p03)" },
+
+    { "op": "click", "target": "avatar", "pressAt": 12.9, "hoverMs": 420, "postcondition": "menuOpen", "timeoutMs": 4000, "note": "step 2: real avatar click during the Click-it break" },
+    { "op": "log-rect", "at": 13.9, "key": "menuRect", "target": "menuPanel", "requireStableMs": 260 },
+    { "op": "log-rect", "at": 14.3, "key": "menuHeaderRect", "target": "menuHeader" },
+    { "op": "move", "at": 14.6, "to": { "target": "menuPanel", "offset": [-58, 120], "outside": true }, "note": "park left of the menu; header framing belongs to the camera" },
+
+    { "op": "log-rects", "at": 23.6, "key": "menuItems", "targets": ["itemProfile", "itemPreferences", "itemNotifications", "itemHelpCenter", "itemMyTraining", "itemDarkMode", "itemLogout"] },
+    { "op": "watch", "key": "menuVisibleDuringExplanation", "from": 14.5, "to": 44.3, "predicate": "menuOpen", "everyMs": 500, "mustHold": true },
+
+    { "op": "click", "target": "itemDarkMode", "pressAt": 44.85, "hoverMs": 380, "postcondition": "themeDark", "timeoutMs": 4000, "note": "step 4: flip lands inside the narration break, before 'The whole interface drops'" },
+    { "op": "log-rect", "at": 45.6, "key": "darkToggleRect", "target": "itemLightMode" },
+    { "op": "move", "at": 46.4, "to": { "target": "menuPanel", "offset": [-58, 150], "outside": true }, "note": "park off the labels while p14-p16 explain" },
+
+    { "op": "click", "target": "itemLightMode", "pressAt": 55.65, "hoverMs": 360, "postcondition": "themeLight", "timeoutMs": 4000, "note": "step 5: back to light before 'Light again.'" },
+    { "op": "log-rect", "at": 56.3, "key": "lightToggleRect", "target": "itemDarkMode" },
+    { "op": "move", "at": 57.4, "to": { "target": "menuPanel", "offset": [-58, 150], "outside": true } },
+
+    { "op": "click", "target": "inertHeaderSpot", "pressAt": 63.2, "hoverMs": 260, "postcondition": "menuClosed", "timeoutMs": 3000, "note": "genuine dismiss so 'Open the menu again' is true on camera; header spot verified inert" },
+
+    { "op": "click", "target": "avatar", "pressAt": 65.05, "hoverMs": 380, "postcondition": "menuOpen", "timeoutMs": 4000, "note": "step 6a: open the menu again, on cue" },
+    { "op": "click", "target": "itemMyTraining", "pressAt": 66.45, "hoverMs": 340, "postcondition": "onAcademy", "timeoutMs": 8000, "nav": true, "note": "step 6b: Academy loads during the break" },
+    { "op": "wait-stable", "afterNav": true, "key": "academyStable", "predicate": "pageReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 69.2, "key": "academyHeadingRect", "target": "academyHeading" },
+    { "op": "move", "at": 69.8, "to": { "target": "academyHeading", "offset": [240, 90], "outside": true }, "note": "park clear of the heading and stat row" },
+
+    { "op": "click", "target": "railCommandCenter", "pressAt": 78.35, "hoverMs": 380, "postcondition": "onCommandCenter", "timeoutMs": 8000, "nav": true, "note": "step 7: genuine in-app rail navigation back" },
+    { "op": "wait-stable", "afterNav": true, "key": "commandCenterStable", "predicate": "pageReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "move", "at": 81.5, "to": { "point": [1520, 940] }, "note": "final park, clear of KPIs and captions" },
+    { "op": "assert", "at": 86.0, "predicate": "onCommandCenter" }
+  ],
+
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "avatarRect", "place": "below-left", "from": 2.4, "to": 11.4 },
+      { "n": 2, "anchor": "menuHeaderRect", "place": "left", "from": 14.2, "to": 19.2 },
+      { "n": 3, "anchor": "menuRect", "place": "left-top", "from": 23.6, "to": 25.4 },
+      { "n": 4, "anchor": "darkToggleRect", "place": "left", "from": 45.4, "to": 50.8 },
+      { "n": 5, "anchor": "lightToggleRect", "place": "left", "from": 56.2, "to": 60.0 },
+      { "n": 6, "anchor": "academyHeadingRect", "place": "right", "from": 68.9, "to": 76.0 },
+      { "n": 7, "anchor": "screen:1500,120", "place": "at", "from": 80.9, "to": 85.8 }
+    ],
+    "highlights": [
+      { "anchor": "menuRect", "from": 23.6, "to": 25.4, "note": "establish the list with ③" },
+      { "anchor": "menuItems.itemProfile", "from": 25.64, "to": 27.15 },
+      { "anchor": "menuItems.itemPreferences", "from": 27.15, "to": 28.75 },
+      { "anchor": "menuItems.itemNotifications", "from": 29.78, "to": 31.05 },
+      { "anchor": "menuItems.itemHelpCenter", "from": 31.05, "to": 32.4 },
+      { "anchor": "menuItems.itemMyTraining", "from": 32.97, "to": 34.95 },
+      { "anchor": "menuItems.itemDarkMode", "from": 34.95, "to": 37.0 },
+      { "anchor": "menuItems.itemLogout", "from": 37.98, "to": 42.4 },
+      { "anchor": "avatarRect", "from": 64.15, "to": 65.0, "note": "re-anchor the eye to the avatar on 'Open the menu again'" },
+      { "anchor": "menuItems.itemMyTraining", "from": 65.3, "to": 66.4, "note": "emphasize My Training as the narration says 'choose My Training', before the click" }
+    ],
+    "camera": [
+      { "t": 0.0, "z": 1.0, "cx": 960, "cy": 540 },
+      { "t": 2.0, "z": 1.0, "cx": 960, "cy": 540 },
+      { "t": 2.9, "z": 1.4, "cx": 1500, "cy": 165, "ease": true, "note": "restrained top-right punch-in; keeps Search, All Locations, Ask Shyne, avatar in frame" },
+      { "t": 13.4, "z": 1.4, "cx": 1500, "cy": 165 },
+      { "t": 14.4, "z": 1.55, "cx": 1690, "cy": 235, "ease": true, "note": "close framing on the name + tenant-code header (~1.5s)" },
+      { "t": 16.4, "z": 1.55, "cx": 1690, "cy": 235 },
+      { "t": 17.4, "z": 1.34, "cx": 1500, "cy": 360, "ease": true, "note": "menu-and-context: the whole account menu is readable AND enough interface shows for the theme flip; held through explanation + both toggles so the camera stays calm" },
+      { "t": 66.6, "z": 1.34, "cx": 1500, "cy": 360 },
+      { "t": 67.6, "z": 1.0, "cx": 960, "cy": 540, "ease": true, "note": "pull wide as the Academy loads: show the whole destination" },
+      { "t": 88.686, "z": 1.0, "cx": 960, "cy": 540 }
+    ],
+    "completion": { "text": "Account Menu — Complete", "from": 86.9, "fadeOutFrames": 10 },
+    "captionsBurnClearAt": 86.6
+  }
+}

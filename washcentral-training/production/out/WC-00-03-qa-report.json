@@ -1,0 +1,231 @@
+{
+  "lesson": "WC-00-03",
+  "generatedISO": "2026-07-11T11:20:16.751Z",
+  "checks": [
+    {
+      "id": 1,
+      "name": "1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "id": 2,
+      "name": "exact 30 fps",
+      "pass": true,
+      "detail": "30"
+    },
+    {
+      "id": 3,
+      "name": "progressive",
+      "pass": true,
+      "detail": "progressive"
+    },
+    {
+      "id": 4,
+      "name": "approved audio stream-copied unchanged",
+      "pass": true,
+      "detail": "src a19062b64c4bd0e50c56513d9d6e0d41 vs out a19062b64c4bd0e50c56513d9d6e0d41"
+    },
+    {
+      "id": 5,
+      "name": "entire approved audio present",
+      "pass": true,
+      "detail": "packets src 3395 == out 3395; md5 identical"
+    },
+    {
+      "id": 6,
+      "name": "video continues ~300-500ms beyond audio",
+      "pass": true,
+      "detail": "tail 414ms"
+    },
+    {
+      "id": 7,
+      "name": "first frame not center cursor",
+      "pass": true,
+      "detail": "t0 pointer 1919,210"
+    },
+    {
+      "id": 8,
+      "name": "every click inside live target rect",
+      "pass": true,
+      "detail": "7 clicks"
+    },
+    {
+      "id": 9,
+      "name": "clicks preceded by arrival + readable hover",
+      "pass": true,
+      "detail": "avatar:459ms, itemDarkMode:385ms, itemLightMode:456ms, inertHeaderSpot:331ms, avatar:427ms, itemMyTraining:446ms, railCommandCenter:446ms"
+    },
+    {
+      "id": 10,
+      "name": "no app action before cursor arrival",
+      "pass": true,
+      "detail": "arrival<=press<=stateVerified for all"
+    },
+    {
+      "id": 11,
+      "name": "click feedback matches real press frame",
+      "pass": true,
+      "detail": "compositor draws ring at pressT (same event log)"
+    },
+    {
+      "id": 12,
+      "name": "no DOM .click() in interaction flow",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "id": 13,
+      "name": "no hardcoded interaction coords where live resolution exists",
+      "pass": true,
+      "detail": "all clicks resolve a live target"
+    },
+    {
+      "id": 14,
+      "name": "no stale highlight after target disappears",
+      "pass": true,
+      "detail": "menu intervals 13.1-63.4, 65.2-66.6; all menu highlights within"
+    },
+    {
+      "id": 15,
+      "name": "no highlight over empty space",
+      "pass": true,
+      "detail": "all anchors have logged rects"
+    },
+    {
+      "id": 16,
+      "name": "menu visible during full explanation",
+      "pass": true,
+      "detail": "held=true, 40 samples"
+    },
+    {
+      "id": 17,
+      "name": "callouts 1-7 present",
+      "pass": true,
+      "detail": "1,2,3,4,5,6,7"
+    },
+    {
+      "id": 18,
+      "name": "required close framing present",
+      "pass": true,
+      "detail": "z=1.55 @14.4s"
+    },
+    {
+      "id": 19,
+      "name": "caption wording follows narration order",
+      "pass": true,
+      "detail": "Profile→Preferences→Notifications→Help Center→My Training→Dark Mode→Logout"
+    },
+    {
+      "id": 20,
+      "name": "caption cues align with spoken phrases",
+      "pass": true,
+      "detail": "25 cues monotonic and in-bounds"
+    },
+    {
+      "id": 21,
+      "name": "no caption exceeds two lines",
+      "pass": true,
+      "detail": "all phrases wrap to <=2 lines"
+    },
+    {
+      "id": 22,
+      "name": "captions readable at 50% playback",
+      "pass": true,
+      "detail": "caption font 27px @1080p (>=24px requirement)"
+    },
+    {
+      "id": 23,
+      "name": "captions do not obscure active target",
+      "pass": true,
+      "detail": "all clicks clear of caption region"
+    },
+    {
+      "id": 24,
+      "name": "no loading/partial-render frames after navigation",
+      "pass": true,
+      "detail": "2 navs; 2 loading-cut freeze(s): academyStable 66.725-67.57s, commandCenterStable 78.609-79.519s"
+    },
+    {
+      "id": 25,
+      "name": "no pointer teleport",
+      "pass": true,
+      "detail": "max sample step within bounds"
+    },
+    {
+      "id": 26,
+      "name": "no unexplained cursor reversal",
+      "pass": true,
+      "detail": "pointer path is a single eased plan per move; reversals only at target arrivals"
+    },
+    {
+      "id": 27,
+      "name": "no login screen",
+      "pass": true,
+      "detail": "flow starts and ends on command-center"
+    },
+    {
+      "id": 28,
+      "name": "no credential on screen",
+      "pass": true,
+      "detail": "signed in off-camera via token flow; no credential UI in capture region"
+    },
+    {
+      "id": 29,
+      "name": "no session-expiration dialog",
+      "pass": true,
+      "detail": "idle dialog not encountered; menu watch clean"
+    },
+    {
+      "id": 30,
+      "name": "Logout never clicked",
+      "pass": true,
+      "detail": "no click op targets Logout"
+    },
+    {
+      "id": 31,
+      "name": "application not modified or visually falsified",
+      "pass": true,
+      "detail": "engine is read-only DOM + CDP input; graphics are external"
+    },
+    {
+      "id": 32,
+      "name": "captions/emphasis/highlights cleared before ending",
+      "pass": true,
+      "detail": "captions clear @86.6s, completion @86.9s"
+    },
+    {
+      "id": 33,
+      "name": "final completion hold and visual fade present",
+      "pass": true,
+      "detail": "fade 10 frames"
+    }
+  ],
+  "residuals": [
+    "Step 4/5 narration says \"the whole interface\" drops to dark; the real app does change the whole interface theme, so no wording-vs-behavior conflict was found. Framing pulls wide at the theme flip so the learner sees the genuine extent of the change."
+  ],
+  "artifacts": {
+    "audioSource": "training/module00-setup/WC-00-03-full-narration-v1.0.mp3",
+    "audioSourceSha256": "aeb0ed6e57d019992be6f11625027e89aebcf6442151e43291c8ea5ecb38e963",
+    "audioSourcePacketMD5": "a19062b64c4bd0e50c56513d9d6e0d41",
+    "audioOutputPacketMD5": "a19062b64c4bd0e50c56513d9d6e0d41",
+    "audioCodec": "mp3 44100Hz 1ch",
+    "audioDurationS": 88.685714,
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "pix_fmt": "yuv420p",
+      "codec": "h264",
+      "durationS": 89.1,
+      "field_order": "progressive"
+    },
+    "audioPacketsSource": 3395,
+    "audioPacketsOutput": 3395
+  },
+  "summary": {
+    "total": 33,
+    "passed": 33,
+    "failed": 0
+  }
+}

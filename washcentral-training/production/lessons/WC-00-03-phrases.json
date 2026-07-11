@@ -1,0 +1,67 @@
+{
+  "lesson": "WC-00-03",
+  "audioMaster": "training/module00-setup/WC-00-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows come from the per-step render durations (audio + 0.4s tail each).",
+  "blocks": [
+    {
+      "block": "s01", "startS": 0, "endS": 11.87,
+      "phrases": [
+        { "id": "p01", "text": "Look to the far right of the header." },
+        { "id": "p02", "text": "Past Search, the location selector, and Ask Shyne, there is a small badge with your initials." },
+        { "id": "p03", "text": "That is your account, and it rides along on every page." }
+      ]
+    },
+    {
+      "block": "s02", "startS": 11.87, "endS": 23.35,
+      "phrases": [
+        { "id": "p04", "text": "Click it." },
+        { "id": "p05", "text": "The menu opens with your name and your tenant code right at the top." },
+        { "id": "p06", "text": "Get in the habit of reading that line." },
+        { "id": "p07", "text": "It is the fastest way to confirm which company you are actually signed into." }
+      ]
+    },
+    {
+      "block": "s03", "startS": 23.35, "endS": 43.08,
+      "phrases": [
+        { "id": "p08", "text": "Now the list." },
+        { "id": "p09", "text": "Profile and Preferences hold your personal settings." },
+        { "id": "p10", "text": "Notifications and Help Center do what they say." },
+        { "id": "p11", "text": "The two you will reach for most are My Training and the Dark Mode switch." },
+        { "id": "p12", "text": "One thing to leave alone for now: Logout, at the bottom, ends your session." }
+      ]
+    },
+    {
+      "block": "s04", "startS": 43.08, "endS": 54.79,
+      "phrases": [
+        { "id": "p13", "text": "Flip the Dark Mode toggle." },
+        { "id": "p14", "text": "The whole interface drops to a dark theme on the spot." },
+        { "id": "p15", "text": "This is a display preference for you alone." },
+        { "id": "p16", "text": "It changes nothing in the data and nothing for anyone else." }
+      ]
+    },
+    {
+      "block": "s05", "startS": 54.79, "endS": 64.02,
+      "phrases": [
+        { "id": "p17", "text": "Toggle it back." },
+        { "id": "p18", "text": "Light again." },
+        { "id": "p19", "text": "Work in whichever theme is easier on your eyes; the switch is always safe to flip mid-shift." }
+      ]
+    },
+    {
+      "block": "s06", "startS": 64.02, "endS": 77.01,
+      "phrases": [
+        { "id": "p20", "text": "Open the menu again and choose My Training." },
+        { "id": "p21", "text": "That opens the WashCentral Academy, your learning home for this whole program." },
+        { "id": "p22", "text": "Knowing it sits one click away in the account menu saves you hunting for it later." }
+      ]
+    },
+    {
+      "block": "s07", "startS": 77.01, "endS": 88.686,
+      "phrases": [
+        { "id": "p23", "text": "Head back to the Command Center." },
+        { "id": "p24", "text": "Same session, right where you left it." },
+        { "id": "p25", "text": "From any screen, your initials in the corner are the door to your settings, your training, and, when you really mean it, the way out." }
+      ]
+    }
+  ]
+}

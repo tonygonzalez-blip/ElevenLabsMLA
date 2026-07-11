@@ -1,20 +1,20 @@
-# WC-00-03 — The Account Menu and Personal Setup · Shot List (operator-ready)
+# WC-00-03 — The Account Menu and Personal Setup · Shot List v1.1
 
-v1.0 · July 9, 2026 · Target output: **WC-00-03-account-menu-v1.0.mp4** · MP4 (H.264) · 30 fps · **1920×1080 native, no scaling** · mic and system audio OFF (narration is ElevenLabs only)
-Step numbers match the guide and the narration blocks one-to-one.
-**Verified against demo.washcentral.com on July 9, 2026.**
+v1.1 · July 11, 2026 · Output: **WC-00-03-account-menu-v1.1.mp4** · MP4 (H.264 + stream-copied MP3 narration) · 30 fps · **1920×1080 native, no scaling** · captions burned + sidecar **WebVTT**.
+**Verified against demo.washcentral.com on July 11, 2026.**
 
-## Pre-roll checklist (not recorded)
+This shot list describes what the produced video shows. It is internally consistent with: internal-training use; an immutable website (no injected graphics, no forced states); immutable approved audio (the narration master is the clock); browser-capture in kiosk mode (no OS browser chrome / no URL bar on camera); and the real application behavior observed live.
 
-- [ ] Display/capture region exactly 1920×1080; verify the first export's pixel dimensions.
-- [ ] Clean browser profile, maximized, 100% zoom, bookmarks bar hidden, one tab, no extension badges; OS Do Not Disturb on.
-- [ ] Signed in already (credentials never on camera); start URL: `demo.washcentral.com/command-center.html`.
-- [ ] Start in the **light** theme so the Dark Mode toggle in steps 4–5 reads clearly on camera.
-- [ ] Cursor highlight ON, click animation ON. Nothing open in the header (no Search palette, no location dropdown, no Ask Shyne).
+## Production model (how this lesson is made)
+
+- **Real interaction only.** Every action is a genuine CDP mouse move / press / release against the live page. Targets are resolved live and verified (visible, enabled, unobscured, stable) immediately before each action; the resulting application state is verified after. No DOM `.click()`, no injected elements, no storage writes, no forced menu. Config: `production/lessons/WC-00-03.json`. Engine: `production/engine.mjs`.
+- **External graphics.** Cursor, click ring, numbered callouts ①–⑦, highlights, captions, camera punch-ins, completion card and fade are composited *outside* the application from the authoritative event log. Compositor: `production/compositor.mjs`.
+- **The account menu is a click toggle** (press opens, press again closes; hover does nothing). Observed live July 11.
+- **Menu continuity.** The menu is opened once (step 2) and stays genuinely open through the entire explanation and both theme toggles (steps 3–5); the camera frames it. It is dismissed with a real click on inert header space before it is genuinely re-opened for step 6.
 
 ## Shots
 
-Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stillness after the state renders. Cursor travel about 1.3s, hover about 1s, then click.
+Format: Step, real action, expected + verified state, camera, callout/emphasis, caption cue.
 
 | Step | Action (exact target) | Expected state | Hold | Edit notes |
 |---|---|---|---|---|
@@ -26,8 +26,8 @@ Format: Step, action, expected state, hold, edit notes. "Hold" = seconds of stil
 | 6 | Open the avatar menu again and click **My Training** | The WashCentral Academy loads at `lms-home.html` | 3s | Callout ⑥ on the Academy landing; note the URL bar shows lms-home.html |
 | 7 | Navigate back to the **Command Center** | Back on the Command Center; the session is unchanged | 2s | Callout ⑦ "one step back to the menu from anywhere"; end card / verification stamp; fade out. Do NOT click Logout on camera |
 
-Estimated runtime: about 2:00. If any unexpected dialog, changed data, or a "Still there?" timeout prompt appears: stop, note it, dismiss off-camera, resolve or park, then re-record the segment. Never click **Logout** while recording; it ends the session.
+Never click **Logout** on camera. If any unexpected dialog, changed data, or idle "Still there?" prompt appears mid-take, the engine aborts with a nonzero status and the take is re-rolled.
 
-## If Claude drives while you record
+## Known residual (documented, not hidden)
 
-I can execute steps 1–7 live with the timings above; you run the 1920×1080 recorder on the window. Logout is never clicked. Say "drive lesson 00-03" when you are rolling.
+- None affecting truthfulness. The narration's "the whole interface drops to a dark theme" matches the real application (the entire theme changes); framing shows the genuine extent.
