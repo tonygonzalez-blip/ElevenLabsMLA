@@ -1,6 +1,6 @@
 # WC-06-01 — Executive Dashboard · Narration Script
 
-**Verified against demo.washcentral.com on July 9, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (13 steps).
+**Verified against demo.washcentral.com on July 11, 2026.** v1.0 · Author: Claude — Micrologic training project. Steps match the guide and shot list one-to-one (13 steps). (Spoken lines unchanged — audio-locked script; July 11 re-verification recorded in the non-spoken notes only. No block contradicts the July 11 corpus.)
 
 ## Settings header
 
@@ -30,8 +30,8 @@
 
 - Covers the Executive Dashboard as a read-through: header, period toggles, six KPI cards, and the summary panels, plus a single drill into the Revenue Detail view and back.
 - Period toggles are a view-only control. Depict clicking them as a recording-time action; no data changes.
-- The plan-listed **GOALS · Q2 2026** panel is not in the captured corpus and is parked; do not narrate it.
-- **Members vs churn** and **Revenue mix** internal values are below the captured view; narrate them at the panel level, never quote per-bar or per-segment numbers.
+- The **GOALS · Q2 2026** panel was confirmed on the live platform in the July 11, 2026 full-page capture ("Where we are vs targets": Revenue 92%, Active Members 99%, Conversion ↓ 0.4 pt, Labor ↑ 2.4 pt over, Customer NPS +4). This script does not narrate it (written before the panel was captured); the omission does not contradict any spoken line, so no re-render is required — but covering the panel would take a script revision and new render (flagged in the structured return as an optional coverage gap).
+- **Members vs churn** and **Revenue mix** are now fully captured (July 11): the donut is labeled Membership 68% / Pay-per-wash 22% / Retail 7% / Add-ons 3%. The spoken blocks describe both at panel level and quote no numbers, so they remain valid over the labeled charts.
 - Session-timeout ("Still there?") behavior is out of scope — it belongs to lesson 1.3.
 
 ## Timed script
@@ -84,5 +84,5 @@ _(Estimated narration total: 263.9 s ≈ 04:24 at ~145 wpm, pending render. With
 - Script v1.0 written to the project narration craft standard: 1-second visual buffer on every action cue, varied sentence length between adjacent blocks, value-and-context over label-reading.
 - Humanizer pass (per CLAUDE.md §6): spoken prose written clear of the listed AI tells — no promotional inflation, no forced rule-of-three, no copula avoidance, no filler or hedging, active voice, and no em or en dashes in the narration prose. Verbatim UI labels, the navigation path, and the numbered steps were left exact. The only em dashes are in the timed-block headers (the established `[mm:ss | Step N — target]` house format).
 - Period toggles depicted as a recording-time, view-only action; no data changed. The single drill into Revenue Detail returns via **Back to Executive Dashboard**; **Open Reports** and the **Jump to workflow** links are not followed.
-- Plan-listed **GOALS · Q2 2026** panel not narrated (not in the captured corpus; parked). **Members vs churn** and **Revenue mix** narrated at panel level only.
-- Verification stamp current: **Verified against demo.washcentral.com on July 9, 2026.**
+- **GOALS · Q2 2026** panel not narrated in v1.0 (authored before its July 11 full-page capture confirmed it; see scope notes — optional coverage extension flagged). **Members vs churn** and **Revenue mix** narrated at panel level only, which stays valid over the now-labeled July 11 charts.
+- Verification stamp current: **Verified against demo.washcentral.com on July 11, 2026.**
