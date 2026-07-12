@@ -130,7 +130,13 @@ let staleHi = false, emptyHi = false, staleDetail = '';
 for (const hl of L.compositor.highlights) {
   const r = anchorRect(hl.anchor);
   if (!r && !hl.anchor.startsWith('screen:') && !/avatar/i.test(hl.anchor)) emptyHi = true;
-  const isDropdownAnchor = /menu/i.test(hl.anchor) || (/item/i.test(hl.anchor) && !/side/i.test(hl.anchor));
+  // The menu-open-interval staleness rule only makes sense for lessons that actually opened a
+  // dropdown menu (menuIntervals derived from menuOpen clicks). With no dropdown, there are no
+  // ephemeral menu items to go stale, and the /menu|item/ name heuristic otherwise false-matches
+  // ordinary anchors that merely contain "item" (form fields like fiItemPrice, line-item rows,
+  // invoice items) or "menu". Persistent left-sidebar nav ("side" prefix) is likewise excluded.
+  const isDropdownAnchor = menuIntervals.length > 0
+    && (/menu/i.test(hl.anchor) || (/item/i.test(hl.anchor) && !/side/i.test(hl.anchor)));
   if (isDropdownAnchor && !inMenu(hl.from, hl.to)) { staleHi = true; staleDetail = `${hl.anchor} ${hl.from}-${hl.to} outside menu-open intervals`; }
 }
 add(14, 'no stale highlight after target disappears', !staleHi, staleHi ? staleDetail : `menu intervals ${menuIntervals.map(i => `${i.s.toFixed(1)}-${i.e.toFixed(1)}`).join(', ')}; all menu highlights within`);
