@@ -18,3 +18,4 @@ production/out/*-events.json
 production/out/*-edits.json
 production/out/*-transcript.json
 production/out/*-qa-report.json
+production/out/supervise.log
