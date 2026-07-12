@@ -5,57 +5,147 @@
   "audioDurationS": 205.009,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/emp-schedules.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "targets": {
-    "railToggle": { "selector": ".wc-rail-panel-toggle" },
-    "bcStrong": { "js": "[...document.querySelectorAll('.breadcrumbs strong, [class*=\"breadcrumb\"] strong')].find(e=>e.getBoundingClientRect().width>0)", "textRect": true },
-    "linkSchedules": { "selector": "aside.sidebar a[href=\"emp-schedules.html\"]" },
-    "linkTimeClock": { "selector": "aside.sidebar a[href=\"emp-timeclock.html\"]" },
-    "linkRoles": { "selector": "aside.sidebar a[href=\"emp-roles.html\"]" },
-    "linkGroups": { "selector": "aside.sidebar a[href=\"emp-user-groups.html\"]" },
-    "newRecordBtn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/\\+\\s*New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "exportBtn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "filtersBtn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "searchBox": { "js": "[...document.querySelectorAll('input[placeholder]')].find(e=>e.id!=='wc-cmd-inp'&&/^Search /i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)" },
-    "cardTitleList": { "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&/ List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-
-    "tileScheduled": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Scheduled This Week/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileOpenShifts": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Open Shifts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileCoverage": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Coverage %/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileLocationsSched": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Locations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardShiftTypes": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Shift Types/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardCoverageStatus": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Coverage Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thEmployee": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Employee$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "thMon": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Mon$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "thSun": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Sun$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowJose": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Jose Martinez'&&tr.getBoundingClientRect().width>0})" },
-
-    "tileTodayPunches": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Today Punches/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileOnClockNow": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/On Clock Now/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileWeekHours": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/This Week Hours/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardPunchStatus": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Punch Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thClockOut": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Clock Out$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowKevin": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[2]&&c[2].textContent.trim()==='Kevin Davis'&&tr.getBoundingClientRect().width>0})" },
-    "kevOutCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&c[2].textContent.trim()==='Kevin Davis'});return tr?tr.querySelectorAll('td')[5]:null})()" },
-
-    "tileTotalRoles": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Roles/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileActive": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/\\d+Active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "tileManagers": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Managers/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileAdmins": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Admins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardAccessLevels": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Access Levels/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardUsersPerRole": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Users per Role/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thAccessLevel": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Access Level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "alAdmin": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Administrator'});return tr?tr.querySelectorAll('td')[4]:null})()" },
-    "alCashier": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Cashier'});return tr?tr.querySelectorAll('td')[4]:null})()" },
-
-    "tileTotalGroups": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Groups/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "tileTotalMembers": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Members/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardGroupCoverage": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Group Coverage/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardMembersByGroup": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Members by Group/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thLocations": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Locations$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "locMlas": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='MLAS Staff'});return tr?tr.querySelectorAll('td')[4]:null})()" },
-    "locCashiers": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Cashiers'});return tr?tr.querySelectorAll('td')[4]:null})()" },
-    "rowMlas": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='MLAS Staff'&&tr.getBoundingClientRect().width>0})" }
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong, [class*=\"breadcrumb\"] strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "linkSchedules": {
+      "selector": "aside.sidebar a[href=\"emp-schedules.html\"]"
+    },
+    "linkTimeClock": {
+      "selector": "aside.sidebar a[href=\"emp-timeclock.html\"]"
+    },
+    "linkRoles": {
+      "selector": "aside.sidebar a[href=\"emp-roles.html\"]"
+    },
+    "linkGroups": {
+      "selector": "aside.sidebar a[href=\"emp-user-groups.html\"]"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/\\+\\s*New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input[placeholder]')].find(e=>e.id!=='wc-cmd-inp'&&/^Search /i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitleList": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&/ List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tileScheduled": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Scheduled This Week/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileOpenShifts": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Open Shifts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileCoverage": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Coverage %/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileLocationsSched": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Locations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardShiftTypes": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Shift Types/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardCoverageStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Coverage Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thEmployee": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Employee$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thMon": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Mon$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSun": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Sun$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowJose": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Jose Martinez'&&tr.getBoundingClientRect().width>0})"
+    },
+    "tileTodayPunches": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Today Punches/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileOnClockNow": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/On Clock Now/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileWeekHours": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/This Week Hours/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardPunchStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Punch Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thClockOut": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Clock Out$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowKevin": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[2]&&c[2].textContent.trim()==='Kevin Davis'&&tr.getBoundingClientRect().width>0})"
+    },
+    "kevOutCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&c[2].textContent.trim()==='Kevin Davis'});return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "tileTotalRoles": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Roles/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/\\d+Active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tileManagers": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Managers/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileAdmins": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Admins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardAccessLevels": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Access Levels/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardUsersPerRole": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Users per Role/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thAccessLevel": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Access Level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "alAdmin": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Administrator'});return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "alCashier": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Cashier'});return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "tileTotalGroups": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Groups/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalMembers": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Members/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardGroupCoverage": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Group Coverage/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardMembersByGroup": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Members by Group/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocations": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Locations$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "locMlas": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='MLAS Staff'});return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "locCashiers": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='Cashiers'});return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "rowMlas": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[1]&&c[1].textContent.trim()==='MLAS Staff'&&tr.getBoundingClientRect().width>0})"
+    }
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
@@ -72,6 +162,14 @@
   },
   "preflight": [
     {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -83,223 +181,1699 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.6, "predicate": "onSchedules", "note": "start page identity before capture (startUrl emp-schedules.html)" },
-    { "op": "assert", "at": -1.2, "predicate": "sidebarExpanded", "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed" },
-    { "op": "assert", "at": -0.8, "predicate": "schedulesLoaded", "note": "loaded: 4 KPI tiles, weekly grid rows, Employee header, no agent-service error state" },
-    { "op": "watch", "key": "sidebarHeld", "from": 1.0, "to": 204.0, "predicate": "sidebarExpanded", "everyMs": 2000, "mustHold": true },
-
-    { "op": "pointer-enter", "at": 0.35, "from": [160, 1079], "to": { "target": "linkSchedules", "offset": [230, 0], "outside": true }, "note": "enter from the bottom edge and settle beside the EMPLOYEES rail as p01 says 'Open Employee Schedules from the sidebar'" },
-    { "op": "log-rects", "at": 0.9, "key": "sideNav", "targets": ["linkSchedules", "linkTimeClock", "linkRoles", "linkGroups"] },
-    { "op": "log-rects", "at": 1.1, "key": "schedTiles", "targets": ["tileScheduled", "tileOpenShifts", "tileCoverage", "tileLocationsSched"] },
-    { "op": "log-rects", "at": 1.3, "key": "schedCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "log-rect", "at": 1.45, "key": "cardShiftTypesRect", "target": "cardShiftTypes" },
-    { "op": "log-rect", "at": 1.6, "key": "cardCoverageStatusRect", "target": "cardCoverageStatus" },
-    { "op": "log-rect", "at": 1.75, "key": "cardTitleSched", "target": "cardTitleList" },
-
-    { "op": "move", "at": 2.0, "to": { "target": "linkSchedules", "offset": [215, 6], "outside": true }, "note": "rest beside the active Employee Schedules entry on the p01 tail; never on the nav link" },
-    { "op": "move", "at": 3.3, "to": { "target": "tileScheduled", "offset": [0, 12] }, "note": "step 1 (p02): slow left-to-right sweep of the four KPI tiles" },
-    { "op": "move", "at": 4.2, "to": { "target": "tileOpenShifts", "offset": [0, 12] } },
-    { "op": "move", "at": 5.1, "to": { "target": "tileCoverage", "offset": [0, 12] }, "note": "p03 'your coverage percentage'" },
-    { "op": "move", "at": 5.9, "to": { "target": "tileLocationsSched", "offset": [0, 12] }, "note": "p03 'how many sites that covers'" },
-    { "op": "move", "at": 7.2, "to": { "point": [960, 320] }, "note": "ease off over the band for the p04 tail 'first stop when a manager asks'" },
-
-    { "op": "log-rects", "at": 16.42, "key": "schedTh", "targets": ["thEmployee", "thMon", "thSun"] },
-    { "op": "log-rect", "at": 16.5, "key": "rowJoseRect", "target": "rowJose" },
-    { "op": "move", "at": 16.55, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 2 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; the buttons are never approached for a press (read-only tour, adding a shift is a mutation)" },
-    { "op": "move", "at": 18.5, "to": { "target": "thMon", "offset": [0, -30], "outside": true }, "note": "step 2 (p06): approach the day-column headers" },
-    { "op": "move", "at": 19.3, "to": { "target": "thMon", "offset": [0, 0] }, "note": "sweep MON..SUN" },
-    { "op": "move", "at": 21.0, "to": { "target": "thSun", "offset": [0, 0] } },
-    { "op": "move", "at": 23.4, "to": { "target": "rowJose", "offset": [40, 0] }, "note": "step 2 (p07): slow horizontal sweep across the Jose Martinez shift-code row, left to right" },
-    { "op": "move", "at": 26.8, "to": { "target": "rowJose", "offset": [760, 0] } },
-    { "op": "move", "at": 30.2, "to": { "target": "rowJose", "offset": [1200, 0] }, "note": "step 2 (p08): 'Read across a single row and you have that person's whole week'" },
-
-    { "op": "move", "at": 34.3, "to": { "target": "cardShiftTypes", "offset": [0, 10] }, "note": "step 3 (p09-p10): the Shift Types panel — morning, afternoon, evening" },
-    { "op": "move", "at": 37.5, "to": { "target": "cardShiftTypes", "offset": [40, 60] } },
-    { "op": "move", "at": 39.7, "to": { "target": "cardCoverageStatus", "offset": [0, 10] }, "note": "step 3 (p11): the Coverage Status panel — covered, at risk, open" },
-    { "op": "move", "at": 42.0, "to": { "target": "cardCoverageStatus", "offset": [40, 60] }, "note": "rest on Coverage Status for the p12 tail" },
-
-    { "op": "move", "at": 49.84, "to": { "target": "linkTimeClock", "offset": [0, 0] }, "note": "step 4 approach starts at the p13 cue 'Switch to Time Clock'" },
-    { "op": "click", "target": "linkTimeClock", "pressAt": 51.15, "hoverMs": 380, "postcondition": "onTimeClock", "timeoutMs": 8000, "nav": true, "note": "step 4: genuine sidebar navigation (read-only, opens a list); press inside the p13 trailing gap (cue ends 51.05, p14 starts 51.54) so Time Clock is up well before the On Clock Now line (p16 at 55.94)" },
-    { "op": "wait-stable", "afterNav": true, "key": "tcStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 52.1, "predicate": "timeclockLoaded", "note": "shot-list load check: 4 tiles, punch rows, Clock Out column, no error state; abort otherwise" },
-    { "op": "log-rects", "at": 52.25, "key": "tcTiles", "targets": ["tileTodayPunches", "tileOnClockNow", "tileWeekHours"] },
-    { "op": "log-rect", "at": 52.4, "key": "thClockOutRect", "target": "thClockOut" },
-    { "op": "log-rect", "at": 52.5, "key": "rowKevinRect", "target": "rowKevin" },
-    { "op": "log-rect", "at": 52.6, "key": "kevOutRect", "target": "kevOutCell" },
-    { "op": "log-rect", "at": 52.7, "key": "punchStatusRect", "target": "cardPunchStatus" },
-    { "op": "log-rects", "at": 52.8, "key": "tcCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "move", "at": 53.0, "to": { "target": "tileOnClockNow", "offset": [0, 60], "outside": true }, "note": "step 4 (p14-p15): approach the On Clock Now tile as the page settles" },
-    { "op": "move", "at": 55.94, "to": { "target": "tileOnClockNow", "offset": [0, 12] }, "note": "step 4 (p16): rest on On Clock Now, the live count; camera at 150%" },
-    { "op": "move", "at": 59.0, "to": { "target": "tileOnClockNow", "offset": [0, 30] }, "note": "hold through the p17 tail 'right this second'" },
-
-    { "op": "watch", "key": "tcHold", "from": 63.3, "to": 92.9, "predicate": "onTimeClock", "everyMs": 1000, "mustHold": true, "note": "steps 5-6 read-only hold: the Time Clock page never changes — nothing is clicked, no punch is opened or edited" },
-    { "op": "move", "at": 63.3, "to": { "target": "thClockOut", "offset": [0, 0] }, "note": "step 5 (p18): 'Run your eye down the clock-out column'" },
-    { "op": "move", "at": 66.0, "to": { "target": "kevOutCell", "offset": [0, -60], "outside": true }, "note": "step 5 (p19): approach the Kevin Davis row from above the clock-out cell" },
-    { "op": "move", "at": 68.9, "to": { "target": "kevOutCell", "offset": [0, 0] }, "note": "step 5 (p20-p22): rest on the '—' open punch; camera 150%; the row itself is never clicked" },
-    { "op": "move", "at": 74.5, "to": { "target": "kevOutCell", "offset": [140, 0] }, "note": "drift to the HOURS 4.5 beside it as p22 says the hours keep climbing" },
-
-    { "op": "move", "at": 77.92, "to": { "target": "cardPunchStatus", "offset": [0, 10] }, "note": "step 6 (p23-p24): the Punch Status panel — on the clock, clocked out, no show" },
-    { "op": "move", "at": 82.0, "to": { "target": "cardPunchStatus", "offset": [40, 70] } },
-    { "op": "move", "at": 85.3, "to": { "target": "cardPunchStatus", "offset": [40, 110] }, "note": "step 6 (p25): rest on the NO SHOW share, the one to scan for" },
-    { "op": "move", "at": 90.5, "to": { "point": [1400, 360] }, "note": "ease off for the p26 tail" },
-
-    { "op": "move", "at": 93.28, "to": { "target": "linkRoles", "offset": [0, 0] }, "note": "step 7 approach at the p27 cue 'Open Employee Roles'" },
-    { "op": "click", "target": "linkRoles", "pressAt": 94.95, "hoverMs": 380, "postcondition": "onRoles", "timeoutMs": 8000, "nav": true, "note": "step 7: genuine sidebar navigation; press inside the p27 trailing gap (cue ends 94.75, p28 starts 95.53)" },
-    { "op": "wait-stable", "afterNav": true, "key": "rolesStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 95.65, "predicate": "rolesLoaded", "note": "load check: 4 tiles, 5 role rows, Access Level column, no error state" },
-    { "op": "log-rects", "at": 95.8, "key": "rolesTiles", "targets": ["tileTotalRoles", "tileActive", "tileManagers", "tileAdmins"] },
-    { "op": "log-rect", "at": 95.95, "key": "accessLevelsRect", "target": "cardAccessLevels" },
-    { "op": "log-rect", "at": 96.05, "key": "usersPerRoleRect", "target": "cardUsersPerRole" },
-    { "op": "log-rects", "at": 96.15, "key": "rolesTh", "targets": ["thAccessLevel"] },
-    { "op": "log-rect", "at": 96.25, "key": "alAdminRect", "target": "alAdmin" },
-    { "op": "log-rect", "at": 96.35, "key": "alCashierRect", "target": "alCashier" },
-    { "op": "log-rects", "at": 96.45, "key": "rolesCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "move", "at": 97.85, "to": { "target": "tileTotalRoles", "offset": [0, 12] }, "note": "step 7 (p29): sweep the KPI tiles — total roles, active" },
-    { "op": "move", "at": 98.8, "to": { "target": "tileActive", "offset": [0, 12] } },
-    { "op": "move", "at": 100.3, "to": { "target": "tileManagers", "offset": [0, 12] }, "note": "p30 'manager or admin level'" },
-    { "op": "move", "at": 101.4, "to": { "target": "tileAdmins", "offset": [0, 12] } },
-
-    { "op": "watch", "key": "rolesHold", "from": 106.3, "to": 134.7, "predicate": "onRoles", "everyMs": 1000, "mustHold": true, "note": "steps 8-9 read-only hold: the Employee Roles page never changes — no row is opened, no role edited" },
-    { "op": "move", "at": 106.34, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 8 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; never approached for a press (creating a role is a mutation)" },
-    { "op": "move", "at": 108.2, "to": { "target": "thAccessLevel", "offset": [0, 0] }, "note": "step 8 (p31): the ACCESS LEVEL column header" },
-    { "op": "move", "at": 111.1, "to": { "target": "alAdmin", "offset": [0, 0] }, "note": "step 8 (p32): Administrator reads Full" },
-    { "op": "move", "at": 113.4, "to": { "target": "alCashier", "offset": [0, 0] }, "note": "step 8 (p33): Cashier reads Medium — the point of sale and little else" },
-    { "op": "move", "at": 117.0, "to": { "target": "thAccessLevel", "offset": [0, 200] }, "note": "step 8 (p34): drift down the ACCESS LEVEL column (Low, Low) for the tail" },
-
-    { "op": "move", "at": 121.65, "to": { "target": "cardAccessLevels", "offset": [0, 10] }, "note": "step 9 (p35-p36): the Access Levels panel — most staff at the LOW tier" },
-    { "op": "move", "at": 125.5, "to": { "target": "cardAccessLevels", "offset": [40, 70] }, "note": "p37 rest on the LOW share" },
-    { "op": "move", "at": 130.8, "to": { "target": "cardUsersPerRole", "offset": [0, 10] }, "note": "step 9 (p38): the Users per Role panel beside it, ranked by headcount" },
-
-    { "op": "move", "at": 135.12, "to": { "target": "linkGroups", "offset": [0, 0] }, "note": "step 10 approach at the p39 cue 'Last page, User Groups'" },
-    { "op": "click", "target": "linkGroups", "pressAt": 137.2, "hoverMs": 380, "postcondition": "onGroups", "timeoutMs": 8000, "nav": true, "note": "step 10: genuine sidebar navigation; press inside the p39 trailing gap (cue ends 136.96, p40 starts 137.76)" },
-    { "op": "wait-stable", "afterNav": true, "key": "groupsStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 137.9, "predicate": "groupsLoaded", "note": "load check: 4 tiles, 4 group rows, Locations column, no error state" },
-    { "op": "log-rects", "at": 138.05, "key": "groupsTiles", "targets": ["tileTotalGroups", "tileTotalMembers"] },
-    { "op": "log-rect", "at": 138.2, "key": "groupCoverageRect", "target": "cardGroupCoverage" },
-    { "op": "log-rect", "at": 138.3, "key": "membersByGroupRect", "target": "cardMembersByGroup" },
-    { "op": "log-rects", "at": 138.4, "key": "groupsTh", "targets": ["thLocations"] },
-    { "op": "log-rect", "at": 138.5, "key": "locMlasRect", "target": "locMlas" },
-    { "op": "log-rect", "at": 138.6, "key": "locCashiersRect", "target": "locCashiers" },
-    { "op": "log-rects", "at": 138.7, "key": "groupsCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "move", "at": 138.9, "to": { "target": "tileTotalGroups", "offset": [0, 12] }, "note": "step 10 (p40): sweep the KPI tiles" },
-    { "op": "move", "at": 141.0, "to": { "target": "tileTotalMembers", "offset": [0, 12] }, "note": "44 Total Members" },
-    { "op": "move", "at": 143.8, "to": { "point": [960, 320] }, "note": "ease off for the p41-p42 role-versus-group contrast" },
-
-    { "op": "watch", "key": "groupsHold", "from": 146.3, "to": 179.6, "predicate": "onGroups", "everyMs": 1000, "mustHold": true, "note": "steps 11-12 read-only hold: the User Groups page never changes — no group opened or edited" },
-    { "op": "move", "at": 146.35, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 11 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; never approached for a press (creating a group is a mutation)" },
-    { "op": "move", "at": 148.2, "to": { "target": "thLocations", "offset": [0, 0] }, "note": "step 11 (p43): the LOCATIONS column header" },
-    { "op": "move", "at": 150.75, "to": { "target": "locMlas", "offset": [0, 0] }, "note": "step 11 (p44): MLAS Staff reads MLAS — a single-site group" },
-    { "op": "move", "at": 154.7, "to": { "target": "locCashiers", "offset": [0, 0] }, "note": "step 11 (p45): Cashiers reads All — every location" },
-    { "op": "move", "at": 158.6, "to": { "target": "thLocations", "offset": [0, 120] }, "note": "step 11 (p46): drift down the LOCATIONS column for the reach-at-a-glance tail" },
-
-    { "op": "move", "at": 161.92, "to": { "target": "cardGroupCoverage", "offset": [0, 10] }, "note": "step 12 (p47-p48): the Group Coverage panel — how the split maps to Maintenance assignment" },
-    { "op": "move", "at": 168.2, "to": { "target": "cardMembersByGroup", "offset": [0, 10] }, "note": "step 12 (p49): Members by Group — routing to the detail team reaches everyone in it" },
-    { "op": "move", "at": 173.0, "to": { "point": [1150, 300] }, "note": "ease off for the p50-p51 roles-versus-groups rule" },
-
-    { "op": "log-rects", "at": 180.05, "key": "sideNavRecap", "targets": ["linkSchedules", "linkTimeClock", "linkRoles", "linkGroups"] },
-    { "op": "assert", "at": 180.1, "predicate": "empLinksVisible", "note": "recap needs the four EMPLOYEES links on screen (they persist across every Team page)" },
-    { "op": "move", "at": 180.2, "to": { "target": "linkSchedules", "offset": [215, 6], "outside": true }, "note": "step 13 recap sweep, spoken order (p53): Employee Schedules" },
-    { "op": "move", "at": 182.65, "to": { "target": "linkSchedules", "offset": [215, 6], "outside": true }, "note": "p53 'Schedules, for who works which days'" },
-    { "op": "move", "at": 185.74, "to": { "target": "linkTimeClock", "offset": [215, 6], "outside": true }, "note": "p54 'Time Clock, for who's punched in right now'" },
-    { "op": "move", "at": 186.74, "to": { "target": "linkRoles", "offset": [215, 6], "outside": true }, "note": "p55 'Roles, for what someone's allowed to do'" },
-    { "op": "move", "at": 189.1, "to": { "target": "linkGroups", "offset": [215, 6], "outside": true }, "note": "p56 'Groups, for who belongs to which team'" },
-    { "op": "move", "at": 192.5, "to": { "point": [400, 620] }, "note": "ease down the rail for the p57-p59 read-only rule" },
-    { "op": "move", "at": 200.5, "to": { "point": [1520, 930] }, "note": "final park, clear of content and captions, as the close lands" },
-    { "op": "assert", "at": 203.8, "predicate": "onGroups", "note": "end state: still on User Groups, unchanged; nothing was created or edited on any of the four pages" }
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onSchedules",
+      "note": "start page identity before capture (startUrl emp-schedules.html)"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "schedulesLoaded",
+      "note": "loaded: 4 KPI tiles, weekly grid rows, Employee header, no agent-service error state"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 204,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        160,
+        1079
+      ],
+      "to": {
+        "target": "linkSchedules",
+        "offset": [
+          230,
+          0
+        ],
+        "outside": true
+      },
+      "note": "enter from the bottom edge and settle beside the EMPLOYEES rail as p01 says 'Open Employee Schedules from the sidebar'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.9,
+      "key": "sideNav",
+      "targets": [
+        "linkSchedules",
+        "linkTimeClock",
+        "linkRoles",
+        "linkGroups"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 1.1,
+      "key": "schedTiles",
+      "targets": [
+        "tileScheduled",
+        "tileOpenShifts",
+        "tileCoverage",
+        "tileLocationsSched"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 1.3,
+      "key": "schedCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.45,
+      "key": "cardShiftTypesRect",
+      "target": "cardShiftTypes"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.6,
+      "key": "cardCoverageStatusRect",
+      "target": "cardCoverageStatus"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.75,
+      "key": "cardTitleSched",
+      "target": "cardTitleList"
+    },
+    {
+      "op": "move",
+      "at": 2,
+      "to": {
+        "target": "linkSchedules",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "rest beside the active Employee Schedules entry on the p01 tail; never on the nav link"
+    },
+    {
+      "op": "move",
+      "at": 3.3,
+      "to": {
+        "target": "tileScheduled",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 1 (p02): slow left-to-right sweep of the four KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 4.2,
+      "to": {
+        "target": "tileOpenShifts",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 5.1,
+      "to": {
+        "target": "tileCoverage",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p03 'your coverage percentage'"
+    },
+    {
+      "op": "move",
+      "at": 5.9,
+      "to": {
+        "target": "tileLocationsSched",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p03 'how many sites that covers'"
+    },
+    {
+      "op": "move",
+      "at": 7.2,
+      "to": {
+        "point": [
+          960,
+          320
+        ]
+      },
+      "note": "ease off over the band for the p04 tail 'first stop when a manager asks'"
+    },
+    {
+      "op": "log-rects",
+      "at": 16.42,
+      "key": "schedTh",
+      "targets": [
+        "thEmployee",
+        "thMon",
+        "thSun"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 16.5,
+      "key": "rowJoseRect",
+      "target": "rowJose"
+    },
+    {
+      "op": "move",
+      "at": 16.55,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 2 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; the buttons are never approached for a press (read-only tour, adding a shift is a mutation)"
+    },
+    {
+      "op": "move",
+      "at": 18.5,
+      "to": {
+        "target": "thMon",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p06): approach the day-column headers"
+    },
+    {
+      "op": "move",
+      "at": 19.3,
+      "to": {
+        "target": "thMon",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "sweep MON..SUN"
+    },
+    {
+      "op": "move",
+      "at": 21,
+      "to": {
+        "target": "thSun",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 23.4,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 2 (p07): slow horizontal sweep across the Jose Martinez shift-code row, left to right"
+    },
+    {
+      "op": "move",
+      "at": 26.8,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          760,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 30.2,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          1200,
+          0
+        ]
+      },
+      "note": "step 2 (p08): 'Read across a single row and you have that person's whole week'"
+    },
+    {
+      "op": "move",
+      "at": 34.3,
+      "to": {
+        "target": "cardShiftTypes",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p09-p10): the Shift Types panel — morning, afternoon, evening"
+    },
+    {
+      "op": "move",
+      "at": 37.5,
+      "to": {
+        "target": "cardShiftTypes",
+        "offset": [
+          40,
+          60
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 39.7,
+      "to": {
+        "target": "cardCoverageStatus",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 3 (p11): the Coverage Status panel — covered, at risk, open"
+    },
+    {
+      "op": "move",
+      "at": 42,
+      "to": {
+        "target": "cardCoverageStatus",
+        "offset": [
+          40,
+          60
+        ]
+      },
+      "note": "rest on Coverage Status for the p12 tail"
+    },
+    {
+      "op": "move",
+      "at": 49.84,
+      "to": {
+        "target": "linkTimeClock",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 approach starts at the p13 cue 'Switch to Time Clock'"
+    },
+    {
+      "op": "click",
+      "target": "linkTimeClock",
+      "pressAt": 51.15,
+      "hoverMs": 380,
+      "postcondition": "onTimeClock",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 4: genuine sidebar navigation (read-only, opens a list); press inside the p13 trailing gap (cue ends 51.05, p14 starts 51.54) so Time Clock is up well before the On Clock Now line (p16 at 55.94)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "tcStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 52.1,
+      "predicate": "timeclockLoaded",
+      "note": "shot-list load check: 4 tiles, punch rows, Clock Out column, no error state; abort otherwise"
+    },
+    {
+      "op": "log-rects",
+      "at": 52.25,
+      "key": "tcTiles",
+      "targets": [
+        "tileTodayPunches",
+        "tileOnClockNow",
+        "tileWeekHours"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 52.4,
+      "key": "thClockOutRect",
+      "target": "thClockOut"
+    },
+    {
+      "op": "log-rect",
+      "at": 52.5,
+      "key": "rowKevinRect",
+      "target": "rowKevin"
+    },
+    {
+      "op": "log-rect",
+      "at": 52.6,
+      "key": "kevOutRect",
+      "target": "kevOutCell"
+    },
+    {
+      "op": "log-rect",
+      "at": 52.7,
+      "key": "punchStatusRect",
+      "target": "cardPunchStatus"
+    },
+    {
+      "op": "log-rects",
+      "at": 52.8,
+      "key": "tcCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 53,
+      "to": {
+        "target": "tileOnClockNow",
+        "offset": [
+          0,
+          60
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p14-p15): approach the On Clock Now tile as the page settles"
+    },
+    {
+      "op": "move",
+      "at": 55.94,
+      "to": {
+        "target": "tileOnClockNow",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p16): rest on On Clock Now, the live count; camera at 150%"
+    },
+    {
+      "op": "move",
+      "at": 59,
+      "to": {
+        "target": "tileOnClockNow",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "hold through the p17 tail 'right this second'"
+    },
+    {
+      "op": "watch",
+      "key": "tcHold",
+      "from": 63.3,
+      "to": 92.9,
+      "predicate": "onTimeClock",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "steps 5-6 read-only hold: the Time Clock page never changes — nothing is clicked, no punch is opened or edited"
+    },
+    {
+      "op": "move",
+      "at": 63.3,
+      "to": {
+        "target": "thClockOut",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p18): 'Run your eye down the clock-out column'"
+    },
+    {
+      "op": "move",
+      "at": 66,
+      "to": {
+        "target": "kevOutCell",
+        "offset": [
+          0,
+          -60
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p19): approach the Kevin Davis row from above the clock-out cell"
+    },
+    {
+      "op": "move",
+      "at": 68.9,
+      "to": {
+        "target": "kevOutCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p20-p22): rest on the '—' open punch; camera 150%; the row itself is never clicked"
+    },
+    {
+      "op": "move",
+      "at": 74.5,
+      "to": {
+        "target": "kevOutCell",
+        "offset": [
+          140,
+          0
+        ]
+      },
+      "note": "drift to the HOURS 4.5 beside it as p22 says the hours keep climbing"
+    },
+    {
+      "op": "move",
+      "at": 77.92,
+      "to": {
+        "target": "cardPunchStatus",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 6 (p23-p24): the Punch Status panel — on the clock, clocked out, no show"
+    },
+    {
+      "op": "move",
+      "at": 82,
+      "to": {
+        "target": "cardPunchStatus",
+        "offset": [
+          40,
+          70
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 85.3,
+      "to": {
+        "target": "cardPunchStatus",
+        "offset": [
+          40,
+          110
+        ]
+      },
+      "note": "step 6 (p25): rest on the NO SHOW share, the one to scan for"
+    },
+    {
+      "op": "move",
+      "at": 90.5,
+      "to": {
+        "point": [
+          1400,
+          360
+        ]
+      },
+      "note": "ease off for the p26 tail"
+    },
+    {
+      "op": "move",
+      "at": 93.28,
+      "to": {
+        "target": "linkRoles",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 approach at the p27 cue 'Open Employee Roles'"
+    },
+    {
+      "op": "click",
+      "target": "linkRoles",
+      "pressAt": 94.95,
+      "hoverMs": 380,
+      "postcondition": "onRoles",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7: genuine sidebar navigation; press inside the p27 trailing gap (cue ends 94.75, p28 starts 95.53)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "rolesStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 95.65,
+      "predicate": "rolesLoaded",
+      "note": "load check: 4 tiles, 5 role rows, Access Level column, no error state"
+    },
+    {
+      "op": "log-rects",
+      "at": 95.8,
+      "key": "rolesTiles",
+      "targets": [
+        "tileTotalRoles",
+        "tileActive",
+        "tileManagers",
+        "tileAdmins"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 95.95,
+      "key": "accessLevelsRect",
+      "target": "cardAccessLevels"
+    },
+    {
+      "op": "log-rect",
+      "at": 96.05,
+      "key": "usersPerRoleRect",
+      "target": "cardUsersPerRole"
+    },
+    {
+      "op": "log-rects",
+      "at": 96.15,
+      "key": "rolesTh",
+      "targets": [
+        "thAccessLevel"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 96.25,
+      "key": "alAdminRect",
+      "target": "alAdmin"
+    },
+    {
+      "op": "log-rect",
+      "at": 96.35,
+      "key": "alCashierRect",
+      "target": "alCashier"
+    },
+    {
+      "op": "log-rects",
+      "at": 96.45,
+      "key": "rolesCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 97.85,
+      "to": {
+        "target": "tileTotalRoles",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 7 (p29): sweep the KPI tiles — total roles, active"
+    },
+    {
+      "op": "move",
+      "at": 98.8,
+      "to": {
+        "target": "tileActive",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 100.3,
+      "to": {
+        "target": "tileManagers",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p30 'manager or admin level'"
+    },
+    {
+      "op": "move",
+      "at": 101.4,
+      "to": {
+        "target": "tileAdmins",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "watch",
+      "key": "rolesHold",
+      "from": 106.3,
+      "to": 134.7,
+      "predicate": "onRoles",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "steps 8-9 read-only hold: the Employee Roles page never changes — no row is opened, no role edited"
+    },
+    {
+      "op": "move",
+      "at": 106.34,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 8 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; never approached for a press (creating a role is a mutation)"
+    },
+    {
+      "op": "move",
+      "at": 108.2,
+      "to": {
+        "target": "thAccessLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p31): the ACCESS LEVEL column header"
+    },
+    {
+      "op": "move",
+      "at": 111.1,
+      "to": {
+        "target": "alAdmin",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p32): Administrator reads Full"
+    },
+    {
+      "op": "move",
+      "at": 113.4,
+      "to": {
+        "target": "alCashier",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p33): Cashier reads Medium — the point of sale and little else"
+    },
+    {
+      "op": "move",
+      "at": 117,
+      "to": {
+        "target": "thAccessLevel",
+        "offset": [
+          0,
+          200
+        ]
+      },
+      "note": "step 8 (p34): drift down the ACCESS LEVEL column (Low, Low) for the tail"
+    },
+    {
+      "op": "move",
+      "at": 121.65,
+      "to": {
+        "target": "cardAccessLevels",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 9 (p35-p36): the Access Levels panel — most staff at the LOW tier"
+    },
+    {
+      "op": "move",
+      "at": 125.5,
+      "to": {
+        "target": "cardAccessLevels",
+        "offset": [
+          40,
+          70
+        ]
+      },
+      "note": "p37 rest on the LOW share"
+    },
+    {
+      "op": "move",
+      "at": 130.8,
+      "to": {
+        "target": "cardUsersPerRole",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 9 (p38): the Users per Role panel beside it, ranked by headcount"
+    },
+    {
+      "op": "move",
+      "at": 135.12,
+      "to": {
+        "target": "linkGroups",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 approach at the p39 cue 'Last page, User Groups'"
+    },
+    {
+      "op": "click",
+      "target": "linkGroups",
+      "pressAt": 137.2,
+      "hoverMs": 380,
+      "postcondition": "onGroups",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: genuine sidebar navigation; press inside the p39 trailing gap (cue ends 136.96, p40 starts 137.76)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "groupsStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 137.9,
+      "predicate": "groupsLoaded",
+      "note": "load check: 4 tiles, 4 group rows, Locations column, no error state"
+    },
+    {
+      "op": "log-rects",
+      "at": 138.05,
+      "key": "groupsTiles",
+      "targets": [
+        "tileTotalGroups",
+        "tileTotalMembers"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 138.2,
+      "key": "groupCoverageRect",
+      "target": "cardGroupCoverage"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.3,
+      "key": "membersByGroupRect",
+      "target": "cardMembersByGroup"
+    },
+    {
+      "op": "log-rects",
+      "at": 138.4,
+      "key": "groupsTh",
+      "targets": [
+        "thLocations"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 138.5,
+      "key": "locMlasRect",
+      "target": "locMlas"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.6,
+      "key": "locCashiersRect",
+      "target": "locCashiers"
+    },
+    {
+      "op": "log-rects",
+      "at": 138.7,
+      "key": "groupsCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 138.9,
+      "to": {
+        "target": "tileTotalGroups",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 10 (p40): sweep the KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 141,
+      "to": {
+        "target": "tileTotalMembers",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "44 Total Members"
+    },
+    {
+      "op": "move",
+      "at": 143.8,
+      "to": {
+        "point": [
+          960,
+          320
+        ]
+      },
+      "note": "ease off for the p41-p42 role-versus-group contrast"
+    },
+    {
+      "op": "watch",
+      "key": "groupsHold",
+      "from": 146.3,
+      "to": 179.6,
+      "predicate": "onGroups",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "steps 11-12 read-only hold: the User Groups page never changes — no group opened or edited"
+    },
+    {
+      "op": "move",
+      "at": 146.35,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 11 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; never approached for a press (creating a group is a mutation)"
+    },
+    {
+      "op": "move",
+      "at": 148.2,
+      "to": {
+        "target": "thLocations",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p43): the LOCATIONS column header"
+    },
+    {
+      "op": "move",
+      "at": 150.75,
+      "to": {
+        "target": "locMlas",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p44): MLAS Staff reads MLAS — a single-site group"
+    },
+    {
+      "op": "move",
+      "at": 154.7,
+      "to": {
+        "target": "locCashiers",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p45): Cashiers reads All — every location"
+    },
+    {
+      "op": "move",
+      "at": 158.6,
+      "to": {
+        "target": "thLocations",
+        "offset": [
+          0,
+          120
+        ]
+      },
+      "note": "step 11 (p46): drift down the LOCATIONS column for the reach-at-a-glance tail"
+    },
+    {
+      "op": "move",
+      "at": 161.92,
+      "to": {
+        "target": "cardGroupCoverage",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 12 (p47-p48): the Group Coverage panel — how the split maps to Maintenance assignment"
+    },
+    {
+      "op": "move",
+      "at": 168.2,
+      "to": {
+        "target": "cardMembersByGroup",
+        "offset": [
+          0,
+          10
+        ]
+      },
+      "note": "step 12 (p49): Members by Group — routing to the detail team reaches everyone in it"
+    },
+    {
+      "op": "move",
+      "at": 173,
+      "to": {
+        "point": [
+          1150,
+          300
+        ]
+      },
+      "note": "ease off for the p50-p51 roles-versus-groups rule"
+    },
+    {
+      "op": "log-rects",
+      "at": 180.05,
+      "key": "sideNavRecap",
+      "targets": [
+        "linkSchedules",
+        "linkTimeClock",
+        "linkRoles",
+        "linkGroups"
+      ]
+    },
+    {
+      "op": "assert",
+      "at": 180.1,
+      "predicate": "empLinksVisible",
+      "note": "recap needs the four EMPLOYEES links on screen (they persist across every Team page)"
+    },
+    {
+      "op": "move",
+      "at": 180.2,
+      "to": {
+        "target": "linkSchedules",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 13 recap sweep, spoken order (p53): Employee Schedules"
+    },
+    {
+      "op": "move",
+      "at": 182.65,
+      "to": {
+        "target": "linkSchedules",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "p53 'Schedules, for who works which days'"
+    },
+    {
+      "op": "move",
+      "at": 185.74,
+      "to": {
+        "target": "linkTimeClock",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "p54 'Time Clock, for who's punched in right now'"
+    },
+    {
+      "op": "move",
+      "at": 186.74,
+      "to": {
+        "target": "linkRoles",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "p55 'Roles, for what someone's allowed to do'"
+    },
+    {
+      "op": "move",
+      "at": 189.1,
+      "to": {
+        "target": "linkGroups",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "p56 'Groups, for who belongs to which team'"
+    },
+    {
+      "op": "move",
+      "at": 192.5,
+      "to": {
+        "point": [
+          400,
+          620
+        ]
+      },
+      "note": "ease down the rail for the p57-p59 read-only rule"
+    },
+    {
+      "op": "move",
+      "at": 200.5,
+      "to": {
+        "point": [
+          1520,
+          930
+        ]
+      },
+      "note": "final park, clear of content and captions, as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 203.8,
+      "predicate": "onGroups",
+      "note": "end state: still on User Groups, unchanged; nothing was created or edited on any of the four pages"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "schedTiles.tileScheduled", "place": "below-left", "from": 3.2, "to": 15.3 },
-      { "n": 2, "anchor": "schedTh.thMon", "place": "below-left", "from": 18.5, "to": 33.6 },
-      { "n": 3, "anchor": "cardShiftTypesRect", "place": "below-left", "from": 34.3, "to": 49.3 },
-      { "n": 4, "anchor": "tcTiles.tileOnClockNow", "place": "below-left", "from": 55.9, "to": 62.7 },
-      { "n": 5, "anchor": "kevOutRect", "place": "left", "from": 66.0, "to": 77.4 },
-      { "n": 6, "anchor": "punchStatusRect", "place": "left", "from": 77.9, "to": 92.7 },
-      { "n": 7, "anchor": "rolesTiles.tileTotalRoles", "place": "below-left", "from": 97.8, "to": 105.7 },
-      { "n": 8, "anchor": "rolesTh.thAccessLevel", "place": "below-left", "from": 108.0, "to": 120.8 },
-      { "n": 9, "anchor": "accessLevelsRect", "place": "left", "from": 121.6, "to": 134.5 },
-      { "n": 10, "anchor": "groupsTiles.tileTotalGroups", "place": "below-left", "from": 138.9, "to": 145.8 },
-      { "n": 11, "anchor": "groupsTh.thLocations", "place": "below-left", "from": 148.2, "to": 161.4 },
-      { "n": 12, "anchor": "groupCoverageRect", "place": "left", "from": 161.9, "to": 179.4 },
-      { "n": 13, "anchor": "sideNavRecap.linkSchedules", "place": "right", "from": 182.6, "to": 200.0 }
+      {
+        "n": 1,
+        "anchor": "schedTiles.tileScheduled",
+        "place": "below-left",
+        "from": 3.2,
+        "to": 15.3
+      },
+      {
+        "n": 2,
+        "anchor": "schedTh.thMon",
+        "place": "below-left",
+        "from": 18.5,
+        "to": 33.6
+      },
+      {
+        "n": 3,
+        "anchor": "cardShiftTypesRect",
+        "place": "below-left",
+        "from": 34.3,
+        "to": 49.3
+      },
+      {
+        "n": 4,
+        "anchor": "tcTiles.tileOnClockNow",
+        "place": "below-left",
+        "from": 55.9,
+        "to": 62.7
+      },
+      {
+        "n": 5,
+        "anchor": "kevOutRect",
+        "place": "left",
+        "from": 66,
+        "to": 77.4
+      },
+      {
+        "n": 6,
+        "anchor": "punchStatusRect",
+        "place": "left",
+        "from": 77.9,
+        "to": 92.7
+      },
+      {
+        "n": 7,
+        "anchor": "rolesTiles.tileTotalRoles",
+        "place": "below-left",
+        "from": 97.8,
+        "to": 105.7
+      },
+      {
+        "n": 8,
+        "anchor": "rolesTh.thAccessLevel",
+        "place": "below-left",
+        "from": 108,
+        "to": 120.8
+      },
+      {
+        "n": 9,
+        "anchor": "accessLevelsRect",
+        "place": "left",
+        "from": 121.6,
+        "to": 134.5
+      },
+      {
+        "n": 10,
+        "anchor": "groupsTiles.tileTotalGroups",
+        "place": "below-left",
+        "from": 138.9,
+        "to": 145.8
+      },
+      {
+        "n": 11,
+        "anchor": "groupsTh.thLocations",
+        "place": "below-left",
+        "from": 148.2,
+        "to": 161.4
+      },
+      {
+        "n": 12,
+        "anchor": "groupCoverageRect",
+        "place": "left",
+        "from": 161.9,
+        "to": 179.4
+      },
+      {
+        "n": 13,
+        "anchor": "sideNavRecap.linkSchedules",
+        "place": "right",
+        "from": 182.6,
+        "to": 200
+      }
     ],
     "highlights": [
-      { "anchor": "schedTiles.tileScheduled", "from": 3.3, "to": 4.2, "note": "step 1 (p02): KPI sweep in order" },
-      { "anchor": "schedTiles.tileOpenShifts", "from": 4.2, "to": 5.1 },
-      { "anchor": "schedTiles.tileCoverage", "from": 5.1, "to": 5.9, "note": "p03 coverage percentage" },
-      { "anchor": "schedTiles.tileLocationsSched", "from": 5.9, "to": 6.8 },
-      { "anchor": "schedCtl.newRecordBtn", "from": 16.5, "to": 23.4, "color": "#dc2626", "note": "step 2 do-not-click guardrail: + New Record located, never clicked (adding a shift mutates a live schedule)" },
-      { "anchor": "schedCtl.exportBtn", "from": 16.5, "to": 23.4, "color": "#dc2626", "note": "step 2 do-not-click guardrail: Export never clicked" },
-      { "anchor": "schedTh.thMon", "from": 19.3, "to": 22.5, "note": "step 2 (p06): MON..SUN day columns" },
-      { "anchor": "rowJoseRect", "from": 23.4, "to": 33.6, "note": "step 2 (p07-p08): Jose Martinez's full week of shift codes in one row" },
-      { "anchor": "cardShiftTypesRect", "from": 34.4, "to": 39.6, "note": "step 3 (p10): Shift Types — morning, afternoon, evening" },
-      { "anchor": "cardCoverageStatusRect", "from": 39.7, "to": 49.3, "note": "step 3 (p11-p12): Coverage Status — covered, at risk, open" },
-      { "anchor": "tcTiles.tileOnClockNow", "from": 55.9, "to": 62.7, "note": "step 4 (p16): On Clock Now, the live count" },
-      { "anchor": "tcCtl.newRecordBtn", "from": 63.3, "to": 68.5, "color": "#dc2626", "note": "Time Clock do-not-click guardrail: + New Record never clicked (adding/adjusting a punch mutates the time clock)" },
-      { "anchor": "tcCtl.exportBtn", "from": 63.3, "to": 68.5, "color": "#dc2626", "note": "Time Clock do-not-click guardrail: Export never clicked" },
-      { "anchor": "thClockOutRect", "from": 63.3, "to": 66.0, "note": "step 5 (p18): the CLOCK OUT column" },
-      { "anchor": "kevOutRect", "from": 68.9, "to": 77.4, "note": "step 5 (p20-p22): the '—' open punch, still on the clock" },
-      { "anchor": "punchStatusRect", "from": 77.9, "to": 84.6, "note": "step 6 (p23-p24): Punch Status split" },
-      { "anchor": "punchStatusRect", "from": 85.3, "to": 92.7, "note": "step 6 (p25): NO SHOW is the one to scan for" },
-      { "anchor": "rolesTiles.tileTotalRoles", "from": 97.8, "to": 98.8, "note": "step 7 (p29): total roles" },
-      { "anchor": "rolesTiles.tileActive", "from": 98.8, "to": 99.7, "note": "active" },
-      { "anchor": "rolesTiles.tileManagers", "from": 100.3, "to": 101.4, "note": "p30 managers" },
-      { "anchor": "rolesTiles.tileAdmins", "from": 101.4, "to": 102.5, "note": "admins" },
-      { "anchor": "rolesCtl.newRecordBtn", "from": 106.3, "to": 111.0, "color": "#dc2626", "note": "step 8 do-not-click guardrail: + New Record never clicked (creating a role mutates permissions)" },
-      { "anchor": "rolesCtl.exportBtn", "from": 106.3, "to": 111.0, "color": "#dc2626", "note": "step 8 do-not-click guardrail: Export never clicked" },
-      { "anchor": "rolesTh.thAccessLevel", "from": 108.1, "to": 111.0, "note": "step 8 (p31): the ACCESS LEVEL column" },
-      { "anchor": "alAdminRect", "from": 111.1, "to": 113.3, "note": "step 8 (p32): Administrator — Full" },
-      { "anchor": "alCashierRect", "from": 113.4, "to": 116.2, "note": "step 8 (p33): Cashier — Medium" },
-      { "anchor": "accessLevelsRect", "from": 121.7, "to": 130.4, "note": "step 9 (p36-p37): most staff at the LOW tier, by design" },
-      { "anchor": "usersPerRoleRect", "from": 130.8, "to": 134.5, "note": "step 9 (p38): Users per Role, ranked by headcount" },
-      { "anchor": "groupsTiles.tileTotalGroups", "from": 139.0, "to": 140.9, "note": "step 10 (p40): total groups" },
-      { "anchor": "groupsTiles.tileTotalMembers", "from": 141.0, "to": 142.8 },
-      { "anchor": "groupsCtl.newRecordBtn", "from": 146.35, "to": 151.0, "color": "#dc2626", "note": "step 11 do-not-click guardrail: + New Record never clicked (creating a group mutates the tenant)" },
-      { "anchor": "groupsCtl.exportBtn", "from": 146.35, "to": 151.0, "color": "#dc2626", "note": "step 11 do-not-click guardrail: Export never clicked" },
-      { "anchor": "groupsTh.thLocations", "from": 148.3, "to": 150.7, "note": "step 11 (p43): the LOCATIONS column" },
-      { "anchor": "locMlasRect", "from": 150.75, "to": 154.1, "note": "step 11 (p44): MLAS Staff — single site" },
-      { "anchor": "locCashiersRect", "from": 154.7, "to": 158.2, "note": "step 11 (p45): Cashiers — All locations" },
-      { "anchor": "groupCoverageRect", "from": 161.9, "to": 167.9, "note": "step 12 (p48): Group Coverage — the Maintenance-assignment split" },
-      { "anchor": "membersByGroupRect", "from": 168.2, "to": 172.2, "note": "step 12 (p49): Members by Group — routing to the detail team" },
-      { "anchor": "sideNavRecap.linkSchedules", "from": 182.65, "to": 185.6, "note": "step 13 recap, spoken order (p53): Employee Schedules" },
-      { "anchor": "sideNavRecap.linkTimeClock", "from": 185.74, "to": 186.7, "note": "p54: Time Clock" },
-      { "anchor": "sideNavRecap.linkRoles", "from": 186.74, "to": 189.0, "note": "p55: Employee Roles" },
-      { "anchor": "sideNavRecap.linkGroups", "from": 189.1, "to": 191.4, "note": "p56: User Groups" }
+      {
+        "anchor": "schedTiles.tileScheduled",
+        "from": 3.3,
+        "to": 4.2,
+        "note": "step 1 (p02): KPI sweep in order"
+      },
+      {
+        "anchor": "schedTiles.tileOpenShifts",
+        "from": 4.2,
+        "to": 5.1
+      },
+      {
+        "anchor": "schedTiles.tileCoverage",
+        "from": 5.1,
+        "to": 5.9,
+        "note": "p03 coverage percentage"
+      },
+      {
+        "anchor": "schedTiles.tileLocationsSched",
+        "from": 5.9,
+        "to": 6.8
+      },
+      {
+        "anchor": "schedCtl.newRecordBtn",
+        "from": 16.5,
+        "to": 23.4,
+        "color": "#dc2626",
+        "note": "step 2 do-not-click guardrail: + New Record located, never clicked (adding a shift mutates a live schedule)"
+      },
+      {
+        "anchor": "schedCtl.exportBtn",
+        "from": 16.5,
+        "to": 23.4,
+        "color": "#dc2626",
+        "note": "step 2 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "schedTh.thMon",
+        "from": 19.3,
+        "to": 22.5,
+        "note": "step 2 (p06): MON..SUN day columns"
+      },
+      {
+        "anchor": "rowJoseRect",
+        "from": 23.4,
+        "to": 33.6,
+        "note": "step 2 (p07-p08): Jose Martinez's full week of shift codes in one row"
+      },
+      {
+        "anchor": "cardShiftTypesRect",
+        "from": 34.4,
+        "to": 39.6,
+        "note": "step 3 (p10): Shift Types — morning, afternoon, evening"
+      },
+      {
+        "anchor": "cardCoverageStatusRect",
+        "from": 39.7,
+        "to": 49.3,
+        "note": "step 3 (p11-p12): Coverage Status — covered, at risk, open"
+      },
+      {
+        "anchor": "tcTiles.tileOnClockNow",
+        "from": 55.9,
+        "to": 62.7,
+        "note": "step 4 (p16): On Clock Now, the live count"
+      },
+      {
+        "anchor": "tcCtl.newRecordBtn",
+        "from": 63.3,
+        "to": 68.5,
+        "color": "#dc2626",
+        "note": "Time Clock do-not-click guardrail: + New Record never clicked (adding/adjusting a punch mutates the time clock)"
+      },
+      {
+        "anchor": "tcCtl.exportBtn",
+        "from": 63.3,
+        "to": 68.5,
+        "color": "#dc2626",
+        "note": "Time Clock do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "thClockOutRect",
+        "from": 63.3,
+        "to": 66,
+        "note": "step 5 (p18): the CLOCK OUT column"
+      },
+      {
+        "anchor": "kevOutRect",
+        "from": 68.9,
+        "to": 77.4,
+        "note": "step 5 (p20-p22): the '—' open punch, still on the clock"
+      },
+      {
+        "anchor": "punchStatusRect",
+        "from": 77.9,
+        "to": 84.6,
+        "note": "step 6 (p23-p24): Punch Status split"
+      },
+      {
+        "anchor": "punchStatusRect",
+        "from": 85.3,
+        "to": 92.7,
+        "note": "step 6 (p25): NO SHOW is the one to scan for"
+      },
+      {
+        "anchor": "rolesTiles.tileTotalRoles",
+        "from": 97.8,
+        "to": 98.8,
+        "note": "step 7 (p29): total roles"
+      },
+      {
+        "anchor": "rolesTiles.tileActive",
+        "from": 98.8,
+        "to": 99.7,
+        "note": "active"
+      },
+      {
+        "anchor": "rolesTiles.tileManagers",
+        "from": 100.3,
+        "to": 101.4,
+        "note": "p30 managers"
+      },
+      {
+        "anchor": "rolesTiles.tileAdmins",
+        "from": 101.4,
+        "to": 102.5,
+        "note": "admins"
+      },
+      {
+        "anchor": "rolesCtl.newRecordBtn",
+        "from": 106.3,
+        "to": 111,
+        "color": "#dc2626",
+        "note": "step 8 do-not-click guardrail: + New Record never clicked (creating a role mutates permissions)"
+      },
+      {
+        "anchor": "rolesCtl.exportBtn",
+        "from": 106.3,
+        "to": 111,
+        "color": "#dc2626",
+        "note": "step 8 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "rolesTh.thAccessLevel",
+        "from": 108.1,
+        "to": 111,
+        "note": "step 8 (p31): the ACCESS LEVEL column"
+      },
+      {
+        "anchor": "alAdminRect",
+        "from": 111.1,
+        "to": 113.3,
+        "note": "step 8 (p32): Administrator — Full"
+      },
+      {
+        "anchor": "alCashierRect",
+        "from": 113.4,
+        "to": 116.2,
+        "note": "step 8 (p33): Cashier — Medium"
+      },
+      {
+        "anchor": "accessLevelsRect",
+        "from": 121.7,
+        "to": 130.4,
+        "note": "step 9 (p36-p37): most staff at the LOW tier, by design"
+      },
+      {
+        "anchor": "usersPerRoleRect",
+        "from": 130.8,
+        "to": 134.5,
+        "note": "step 9 (p38): Users per Role, ranked by headcount"
+      },
+      {
+        "anchor": "groupsTiles.tileTotalGroups",
+        "from": 139,
+        "to": 140.9,
+        "note": "step 10 (p40): total groups"
+      },
+      {
+        "anchor": "groupsTiles.tileTotalMembers",
+        "from": 141,
+        "to": 142.8
+      },
+      {
+        "anchor": "groupsCtl.newRecordBtn",
+        "from": 146.35,
+        "to": 151,
+        "color": "#dc2626",
+        "note": "step 11 do-not-click guardrail: + New Record never clicked (creating a group mutates the tenant)"
+      },
+      {
+        "anchor": "groupsCtl.exportBtn",
+        "from": 146.35,
+        "to": 151,
+        "color": "#dc2626",
+        "note": "step 11 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "groupsTh.thLocations",
+        "from": 148.3,
+        "to": 150.7,
+        "note": "step 11 (p43): the LOCATIONS column"
+      },
+      {
+        "anchor": "locMlasRect",
+        "from": 150.75,
+        "to": 154.1,
+        "note": "step 11 (p44): MLAS Staff — single site"
+      },
+      {
+        "anchor": "locCashiersRect",
+        "from": 154.7,
+        "to": 158.2,
+        "note": "step 11 (p45): Cashiers — All locations"
+      },
+      {
+        "anchor": "groupCoverageRect",
+        "from": 161.9,
+        "to": 167.9,
+        "note": "step 12 (p48): Group Coverage — the Maintenance-assignment split"
+      },
+      {
+        "anchor": "membersByGroupRect",
+        "from": 168.2,
+        "to": 172.2,
+        "note": "step 12 (p49): Members by Group — routing to the detail team"
+      },
+      {
+        "anchor": "sideNavRecap.linkSchedules",
+        "from": 182.65,
+        "to": 185.6,
+        "note": "step 13 recap, spoken order (p53): Employee Schedules"
+      },
+      {
+        "anchor": "sideNavRecap.linkTimeClock",
+        "from": 185.74,
+        "to": 186.7,
+        "note": "p54: Time Clock"
+      },
+      {
+        "anchor": "sideNavRecap.linkRoles",
+        "from": 186.74,
+        "to": 189,
+        "note": "p55: Employee Roles"
+      },
+      {
+        "anchor": "sideNavRecap.linkGroups",
+        "from": 189.1,
+        "to": 191.4,
+        "note": "p56: User Groups"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 3.0, "z": 1.3, "cx": 960, "cy": 230, "ease": true, "note": "step 1: 130% on the KPI band (shot list)" },
-      { "t": 15.6, "z": 1.3, "cx": 960, "cy": 230 },
-      { "t": 16.4, "z": 1.05, "cx": 1120, "cy": 560, "ease": true, "note": "step 2: the weekly schedule grid" },
-      { "t": 34.0, "z": 1.05, "cx": 1120, "cy": 560 },
-      { "t": 34.24, "z": 1.15, "cx": 1130, "cy": 250, "ease": true, "note": "step 3: the Shift Types and Coverage Status panels (top insight row)" },
-      { "t": 49.5, "z": 1.15, "cx": 1130, "cy": 250 },
-      { "t": 49.84, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Time Clock navigation" },
-      { "t": 55.5, "z": 1.5, "cx": 917, "cy": 200, "ease": true, "note": "step 4: 150% on the On Clock Now tile (shot list)" },
-      { "t": 62.7, "z": 1.5, "cx": 917, "cy": 200 },
-      { "t": 63.28, "z": 1.05, "cx": 1200, "cy": 560, "ease": true, "note": "settle over the Timeclock list" },
-      { "t": 67.5, "z": 1.5, "cx": 1390, "cy": 600, "ease": true, "note": "step 5: 150% on the Kevin Davis '—' open-punch cell (shot list)" },
-      { "t": 77.4, "z": 1.5, "cx": 1390, "cy": 600 },
-      { "t": 77.92, "z": 1.15, "cx": 1500, "cy": 250, "ease": true, "note": "step 6: the Punch Status panel" },
-      { "t": 92.7, "z": 1.15, "cx": 1500, "cy": 250 },
-      { "t": 93.28, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Employee Roles navigation" },
-      { "t": 97.5, "z": 1.2, "cx": 960, "cy": 320, "ease": true, "note": "step 7: Employee Roles KPI band" },
-      { "t": 105.9, "z": 1.2, "cx": 960, "cy": 320 },
-      { "t": 106.24, "z": 1.3, "cx": 1620, "cy": 620, "ease": true, "note": "step 8: the ACCESS LEVEL column and the five role rows" },
-      { "t": 120.8, "z": 1.3, "cx": 1620, "cy": 620 },
-      { "t": 121.52, "z": 1.15, "cx": 1500, "cy": 250, "ease": true, "note": "step 9: the Access Levels and Users per Role panels" },
-      { "t": 134.5, "z": 1.15, "cx": 1500, "cy": 250 },
-      { "t": 135.12, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the User Groups navigation" },
-      { "t": 139.0, "z": 1.2, "cx": 960, "cy": 320, "ease": true, "note": "step 10: User Groups KPI band" },
-      { "t": 145.8, "z": 1.2, "cx": 960, "cy": 320 },
-      { "t": 146.24, "z": 1.3, "cx": 1640, "cy": 600, "ease": true, "note": "step 11: the LOCATIONS column, contrasting MLAS Staff with the All rows" },
-      { "t": 161.4, "z": 1.3, "cx": 1640, "cy": 600 },
-      { "t": 161.92, "z": 1.15, "cx": 1500, "cy": 250, "ease": true, "note": "step 12: the Group Coverage and Members by Group panels" },
-      { "t": 179.4, "z": 1.15, "cx": 1500, "cy": 250 },
-      { "t": 180.0, "z": 1.35, "cx": 210, "cy": 205, "ease": true, "note": "step 13: sidebar recap of the four EMPLOYEES links" },
-      { "t": 200.0, "z": 1.35, "cx": 210, "cy": 205 },
-      { "t": 201.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
-      { "t": 205.009, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 3,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 230,
+        "ease": true,
+        "note": "step 1: 130% on the KPI band (shot list)"
+      },
+      {
+        "t": 15.6,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 230
+      },
+      {
+        "t": 16.4,
+        "z": 1.05,
+        "cx": 1120,
+        "cy": 560,
+        "ease": true,
+        "note": "step 2: the weekly schedule grid"
+      },
+      {
+        "t": 34,
+        "z": 1.05,
+        "cx": 1120,
+        "cy": 560
+      },
+      {
+        "t": 34.24,
+        "z": 1.15,
+        "cx": 1130,
+        "cy": 250,
+        "ease": true,
+        "note": "step 3: the Shift Types and Coverage Status panels (top insight row)"
+      },
+      {
+        "t": 49.5,
+        "z": 1.15,
+        "cx": 1130,
+        "cy": 250
+      },
+      {
+        "t": 49.84,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the Time Clock navigation"
+      },
+      {
+        "t": 55.5,
+        "z": 1.5,
+        "cx": 917,
+        "cy": 200,
+        "ease": true,
+        "note": "step 4: 150% on the On Clock Now tile (shot list)"
+      },
+      {
+        "t": 62.7,
+        "z": 1.5,
+        "cx": 917,
+        "cy": 200
+      },
+      {
+        "t": 63.28,
+        "z": 1.05,
+        "cx": 1200,
+        "cy": 560,
+        "ease": true,
+        "note": "settle over the Timeclock list"
+      },
+      {
+        "t": 67.5,
+        "z": 1.5,
+        "cx": 1390,
+        "cy": 600,
+        "ease": true,
+        "note": "step 5: 150% on the Kevin Davis '—' open-punch cell (shot list)"
+      },
+      {
+        "t": 77.4,
+        "z": 1.5,
+        "cx": 1390,
+        "cy": 600
+      },
+      {
+        "t": 77.92,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 250,
+        "ease": true,
+        "note": "step 6: the Punch Status panel"
+      },
+      {
+        "t": 92.7,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 250
+      },
+      {
+        "t": 93.28,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the Employee Roles navigation"
+      },
+      {
+        "t": 97.5,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 320,
+        "ease": true,
+        "note": "step 7: Employee Roles KPI band"
+      },
+      {
+        "t": 105.9,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 320
+      },
+      {
+        "t": 106.24,
+        "z": 1.3,
+        "cx": 1620,
+        "cy": 620,
+        "ease": true,
+        "note": "step 8: the ACCESS LEVEL column and the five role rows"
+      },
+      {
+        "t": 120.8,
+        "z": 1.3,
+        "cx": 1620,
+        "cy": 620
+      },
+      {
+        "t": 121.52,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 250,
+        "ease": true,
+        "note": "step 9: the Access Levels and Users per Role panels"
+      },
+      {
+        "t": 134.5,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 250
+      },
+      {
+        "t": 135.12,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the User Groups navigation"
+      },
+      {
+        "t": 139,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 320,
+        "ease": true,
+        "note": "step 10: User Groups KPI band"
+      },
+      {
+        "t": 145.8,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 320
+      },
+      {
+        "t": 146.24,
+        "z": 1.3,
+        "cx": 1640,
+        "cy": 600,
+        "ease": true,
+        "note": "step 11: the LOCATIONS column, contrasting MLAS Staff with the All rows"
+      },
+      {
+        "t": 161.4,
+        "z": 1.3,
+        "cx": 1640,
+        "cy": 600
+      },
+      {
+        "t": 161.92,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 250,
+        "ease": true,
+        "note": "step 12: the Group Coverage and Members by Group panels"
+      },
+      {
+        "t": 179.4,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 250
+      },
+      {
+        "t": 180,
+        "z": 1.35,
+        "cx": 210,
+        "cy": 205,
+        "ease": true,
+        "note": "step 13: sidebar recap of the four EMPLOYEES links"
+      },
+      {
+        "t": 200,
+        "z": 1.35,
+        "cx": 210,
+        "cy": 205
+      },
+      {
+        "t": 201.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 205.009,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": true,
     "completion": {

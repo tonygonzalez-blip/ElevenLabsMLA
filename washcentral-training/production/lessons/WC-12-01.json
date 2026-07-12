@@ -171,222 +171,1864 @@
     "dashGuard": "location.pathname.endsWith('/settings-dashboard-settings.html')&&![...document.querySelectorAll('[class*=\"modal\"],[role=\"dialog\"],[class*=\"drawer\"]')].some(e=>e.getBoundingClientRect().width>0)"
   },
   "ops": [
-    { "op": "assert", "at": 0.05, "predicate": "onCommandCenter", "note": "start page staged before capture" },
-    { "op": "pointer-enter", "at": 0.4, "from": [200, 1079], "to": { "target": "gearBtn", "offset": [10, -6] }, "note": "enter from the bottom edge toward the gear at the foot of the rail as p01 names 'one gear'" },
-    { "op": "log-rect", "at": 1.2, "key": "gearRect", "target": "gearBtn" },
-    { "op": "move", "at": 2.6, "to": { "target": "gearBtn", "offset": [8, -2] }, "note": "settle on the settings gear in the p01-p02 gap" },
-    { "op": "click", "target": "gearBtn", "pressAt": 4.3, "hoverMs": 420, "postcondition": "onSettingsHome", "timeoutMs": 8000, "nav": true, "note": "step 1: press inside the p02 'Click it.' trailing break; #wc-rail-settings is an inert location.href navigator" },
-    { "op": "wait-stable", "afterNav": true, "key": "settleHome", "predicate": "settingsHomeReady", "settleMs": 700, "timeoutMs": 9000 },
-    { "op": "assert", "at": 5.7, "predicate": "settingsHomeReady", "note": "Settings home rendered: counter + 16-card grid present" },
-    { "op": "assert", "at": 5.85, "predicate": "sidebarExpanded", "note": "preflight staged the settings rail panel expanded; abort the take if collapsed" },
-    { "op": "assert", "at": 6.0, "predicate": "generalSubmenuClosed", "note": "preflight staged the General group collapsed so step 5 genuinely expands it" },
-    { "op": "assert", "at": 6.15, "predicate": "analyticsSubmenuClosed", "note": "preflight staged the Analytics group collapsed so step 11's reveal is genuine" },
-    { "op": "log-rect", "at": 6.3, "key": "h1Rect", "target": "settingsH1" },
-    { "op": "move", "at": 7.2, "to": { "target": "settingsH1", "offset": [40, 60], "outside": true }, "note": "rest below the Settings heading through p03-p04" },
-    { "op": "move", "at": 11.5, "to": { "point": [980, 540] }, "note": "ease to a neutral hold for the p04-p05 tail" },
-    { "op": "log-rect", "at": 17.5, "key": "tallyRect", "target": "tally" },
-    { "op": "move", "at": 17.7, "to": { "target": "tally", "offset": [-24, 30], "outside": true }, "note": "step 2: point just below-left of the top-right counter on p06 'Check the counter, top right'" },
-    { "op": "move", "at": 24.8, "to": { "point": [1440, 320] }, "note": "small drift beside the counter while the count is read" },
-    { "op": "move", "at": 28.6, "to": { "point": [1050, 520] }, "note": "ease off as the camera pulls back wide" },
-    { "op": "log-rect", "at": 33.2, "key": "searchRect", "target": "searchBox" },
-    { "op": "move", "at": 33.4, "to": { "target": "searchBox", "offset": [20, 42], "outside": true }, "note": "step 3: point below the Search settings box on p11 (never typed in)" },
-    { "op": "move", "at": 39.7, "to": { "target": "searchBox", "offset": [220, 42], "outside": true }, "note": "slide along under the search box for p13-p14" },
-    { "op": "move", "at": 42.6, "to": { "point": [900, 470] }, "note": "ease toward the grid for the step-4 opener" },
-    { "op": "log-rect", "at": 45.5, "key": "gridRect", "target": "grid" },
-    { "op": "log-rect", "at": 45.6, "key": "cardGenRect", "target": "cardGeneral" },
-    { "op": "log-rect", "at": 45.7, "key": "cardIntRect", "target": "cardIntegrations" },
-    { "op": "move", "at": 46.0, "to": { "target": "cardGeneral", "offset": [160, 18] }, "note": "step 4: begin the card sweep on the General card, top-left" },
-    { "op": "move", "at": 49.2, "to": { "point": [1600, 300] }, "note": "sweep across the top row of cards" },
-    { "op": "move", "at": 52.2, "to": { "point": [1600, 560] }, "note": "down the right side" },
-    { "op": "move", "at": 54.4, "to": { "point": [720, 680] }, "note": "back across the lower cards as p17 names Locations, payments, hardware, portal, A-I agent" },
-    { "op": "move", "at": 57.4, "to": { "target": "cardGeneral", "offset": [160, 26] }, "note": "end the sweep resting on the General card for p18" },
-    { "op": "move", "at": 62.8, "to": { "point": [820, 600] }, "note": "ease off for the p19 tail" },
-    { "op": "move", "at": 66.8, "to": { "target": "genHeader", "offset": [0, 0] }, "note": "step 5: approach the General group header on the p20 cue 'Open General'" },
-    { "op": "log-rect", "at": 66.95, "key": "genHeaderRect", "target": "genHeader" },
-    { "op": "click", "target": "genHeader", "pressAt": 67.9, "hoverMs": 420, "postcondition": "generalSubmenuOpen", "timeoutMs": 4000, "note": "step 5a: genuine group toggle expands the nine General pages as p21 says the sidebar expands" },
-    { "op": "log-rects", "at": 68.4, "key": "genNav", "targets": ["linkAccountInfo", "linkProfitCenters", "linkDepartments", "linkCategories"] },
-    { "op": "move", "at": 69.0, "to": { "target": "linkAccountInfo", "offset": [40, 0] }, "note": "gesture to Account Information, the first page, before opening it" },
-    { "op": "click", "target": "linkAccountInfo", "pressAt": 72.0, "hoverMs": 380, "postcondition": "onAccountInfo", "timeoutMs": 8000, "nav": true, "note": "step 5b: open Account Information within p21 'opens on its own'" },
-    { "op": "wait-stable", "afterNav": true, "key": "settleAI", "predicate": "accountInfoLoaded", "settleMs": 600, "timeoutMs": 9000 },
-    { "op": "assert", "at": 73.5, "predicate": "onAccountInfo", "note": "shot-list load check: real rows + KPI tiles, no agent-service error" },
-    { "op": "assert", "at": 73.65, "predicate": "generalSubmenuOpen", "note": "persisted General submenu held across the navigation" },
-    { "op": "log-rects", "at": 73.8, "key": "genNav2", "targets": ["linkProfitCenters", "linkDepartments", "linkCategories"] },
-    { "op": "move", "at": 74.5, "to": { "target": "linkProfitCenters", "offset": [40, 0] }, "note": "p22 name sweep in spoken order: profit centers," },
-    { "op": "move", "at": 75.1, "to": { "target": "linkDepartments", "offset": [40, 0] }, "note": "departments," },
-    { "op": "move", "at": 75.7, "to": { "target": "linkCategories", "offset": [40, 0] }, "note": "categories" },
-    { "op": "move", "at": 77.6, "to": { "point": [900, 520] }, "note": "ease onto the page for the p23 spine line" },
-    { "op": "log-rects", "at": 82.4, "key": "aiTiles", "targets": ["tileLocations", "tileStates", "tileMode", "tileLicense"] },
-    { "op": "log-rect", "at": 82.55, "key": "bcAI", "target": "bcStrong" },
-    { "op": "move", "at": 82.7, "to": { "target": "tileLocations", "offset": [0, -34], "outside": true }, "note": "step 6: approach the KPI band on p24 'top of Account Information'" },
-    { "op": "move", "at": 85.2, "to": { "target": "tileLocations", "offset": [10, 10] }, "note": "p25: 56 Locations" },
-    { "op": "move", "at": 86.3, "to": { "target": "tileStates", "offset": [10, 10] }, "note": "15 States" },
-    { "op": "move", "at": 87.3, "to": { "target": "tileMode", "offset": [10, 10] }, "note": "p26: Multi Operation Mode" },
-    { "op": "move", "at": 88.4, "to": { "target": "tileLicense", "offset": [10, 10] }, "note": "Active License" },
-    { "op": "move", "at": 90.2, "to": { "point": [520, 600] }, "note": "slow sweep over the three summary panels for p27-p28" },
-    { "op": "move", "at": 92.2, "to": { "point": [1000, 600] } },
-    { "op": "move", "at": 93.8, "to": { "point": [1420, 600] } },
-    { "op": "move", "at": 96.6, "to": { "point": [1100, 500] }, "note": "ease off for the p28 tail" },
-    { "op": "log-rects", "at": 99.6, "key": "aiTh", "targets": ["thSiteName", "thCompany", "thOpMode", "thCity", "thState", "thPhone"] },
-    { "op": "log-rect", "at": 99.72, "key": "newRecAI", "target": "newRecordBtn" },
-    { "op": "log-rect", "at": 99.84, "key": "listTitleAI", "target": "listTitle" },
-    { "op": "move", "at": 100.0, "to": { "target": "thSiteName", "offset": [0, -28], "outside": true }, "note": "step 7: settle above the column header on p29 'Scan the list below'" },
-    { "op": "move", "at": 101.5, "to": { "target": "thSiteName", "offset": [10, 8] }, "note": "p30 column sweep: site," },
-    { "op": "move", "at": 102.9, "to": { "target": "thCompany", "offset": [10, 8] }, "note": "company," },
-    { "op": "move", "at": 104.1, "to": { "target": "thOpMode", "offset": [10, 8] }, "note": "operation mode," },
-    { "op": "move", "at": 105.3, "to": { "target": "thPhone", "offset": [10, 8] }, "note": "and contact details" },
-    { "op": "watch", "key": "aiHold", "from": 107.0, "to": 114.0, "predicate": "acctInfoGuard", "everyMs": 500, "mustHold": true, "note": "step 7 guardrail: page never changes and no create form opens while + New Record is pointed at" },
-    { "op": "move", "at": 106.9, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "p31: rest BESIDE + New Record; the button itself is never approached for a press" },
-    { "op": "move", "at": 109.7, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "p32 'Locate it, then leave it alone' — hold beside it" },
-    { "op": "move", "at": 112.4, "to": { "target": "newRecordBtn", "offset": [-120, 54], "outside": true }, "note": "pull further off for the p33 rule" },
-    { "op": "move", "at": 114.6, "to": { "point": [1000, 700] }, "note": "ease off before the next navigation" },
-    { "op": "move", "at": 115.2, "to": { "target": "linkProfitCenters", "offset": [0, 0] }, "note": "step 8: approach Profit Centers in the p33-p34 gap" },
-    { "op": "log-rect", "at": 115.3, "key": "linkPC", "target": "linkProfitCenters" },
-    { "op": "click", "target": "linkProfitCenters", "pressAt": 116.6, "hoverMs": 380, "postcondition": "onProfitCenters", "timeoutMs": 8000, "nav": true, "note": "step 8: genuine sidebar navigation on the p34 cue 'Next page: Profit Centers'" },
-    { "op": "wait-stable", "afterNav": true, "key": "settlePC", "predicate": "profitCentersLoaded", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "assert", "at": 117.6, "predicate": "onProfitCenters", "note": "4 real rows + tiles" },
-    { "op": "log-rect", "at": 117.7, "key": "bcPC", "target": "bcStrong" },
-    { "op": "log-rects", "at": 117.8, "key": "pcTiles", "targets": ["tileTotalPC", "tileInDaily"] },
-    { "op": "log-rects", "at": 117.9, "key": "pcRows", "targets": ["rowWash", "rowLube", "rowDetail", "rowStore"] },
-    { "op": "log-rect", "at": 118.0, "key": "newRecPC", "target": "newRecordBtn" },
-    { "op": "watch", "key": "pcHold", "from": 121.0, "to": 131.0, "predicate": "profitGuard", "everyMs": 500, "mustHold": true, "note": "step 8 guardrail: nothing mutates while + New Record is pointed at" },
-    { "op": "move", "at": 118.5, "to": { "target": "rowWash", "offset": [120, 0] }, "note": "p36 row sweep in spoken order: Wash," },
-    { "op": "move", "at": 119.1, "to": { "target": "rowLube", "offset": [120, 0] }, "note": "lube," },
-    { "op": "move", "at": 119.7, "to": { "target": "rowDetail", "offset": [120, 0] }, "note": "detail," },
-    { "op": "move", "at": 120.3, "to": { "target": "rowStore", "offset": [120, 0] }, "note": "and store" },
-    { "op": "move", "at": 122.6, "to": { "point": [700, 560] }, "note": "hold over the rows for p37-p38" },
-    { "op": "move", "at": 124.3, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "point beside + New Record for the p39 read-only beat" },
-    { "op": "move", "at": 127.6, "to": { "target": "newRecordBtn", "offset": [-120, 54], "outside": true } },
-    { "op": "move", "at": 130.6, "to": { "point": [900, 600] }, "note": "ease off before the next navigation" },
-    { "op": "move", "at": 132.6, "to": { "target": "linkDepartments", "offset": [0, 0] }, "note": "step 9: approach Departments in the p39-p40 gap" },
-    { "op": "log-rect", "at": 132.7, "key": "linkDep", "target": "linkDepartments" },
-    { "op": "click", "target": "linkDepartments", "pressAt": 134.2, "hoverMs": 380, "postcondition": "onDepartments", "timeoutMs": 8000, "nav": true, "note": "step 9: press on the p40 cue 'Now Departments'" },
-    { "op": "wait-stable", "afterNav": true, "key": "settleDep", "predicate": "departmentsLoaded", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "assert", "at": 135.2, "predicate": "onDepartments", "note": "4 real rows + tiles" },
-    { "op": "log-rect", "at": 135.3, "key": "bcDep", "target": "bcStrong" },
-    { "op": "log-rects", "at": 135.4, "key": "depTiles", "targets": ["tileTotalDept", "tileActive", "tileInactive"] },
-    { "op": "log-rects", "at": 135.5, "key": "depRows", "targets": ["rowDetail", "rowLube", "rowStore", "rowWash"] },
-    { "op": "log-rect", "at": 135.6, "key": "newRecDep", "target": "newRecordBtn" },
-    { "op": "watch", "key": "depHold", "from": 138.0, "to": 149.0, "predicate": "deptGuard", "everyMs": 500, "mustHold": true, "note": "step 9 guardrail: nothing mutates while + New Record is pointed at" },
-    { "op": "move", "at": 135.7, "to": { "target": "rowDetail", "offset": [120, 0] }, "note": "p41 'the same four names again' — sweep the four rows" },
-    { "op": "move", "at": 136.4, "to": { "target": "rowLube", "offset": [120, 0] } },
-    { "op": "move", "at": 137.1, "to": { "target": "rowStore", "offset": [120, 0] } },
-    { "op": "move", "at": 137.8, "to": { "target": "rowWash", "offset": [120, 0] } },
-    { "op": "move", "at": 139.2, "to": { "point": [720, 560] }, "note": "hold over the rows for p42-p43" },
-    { "op": "move", "at": 143.6, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "point beside + New Record for the p44 read-only beat" },
-    { "op": "move", "at": 147.6, "to": { "target": "newRecordBtn", "offset": [-120, 54], "outside": true } },
-    { "op": "move", "at": 149.3, "to": { "point": [900, 600] }, "note": "ease off before the next navigation" },
-    { "op": "move", "at": 149.7, "to": { "target": "linkCategories", "offset": [0, 0] }, "note": "step 10: approach Categories in the p44-p45 gap" },
-    { "op": "log-rect", "at": 149.8, "key": "linkCat", "target": "linkCategories" },
-    { "op": "click", "target": "linkCategories", "pressAt": 151.0, "hoverMs": 380, "postcondition": "onCategories", "timeoutMs": 8000, "nav": true, "note": "step 10: press on the p45 cue 'Then Categories'" },
-    { "op": "wait-stable", "afterNav": true, "key": "settleCat", "predicate": "categoriesLoaded", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "assert", "at": 152.4, "predicate": "onCategories", "note": "25 real rows + tiles; page count reads 66" },
-    { "op": "log-rect", "at": 152.5, "key": "tileCatRect", "target": "tileTotalCat" },
-    { "op": "log-rect", "at": 152.62, "key": "recCatRect", "target": "recCategories" },
-    { "op": "log-rect", "at": 152.74, "key": "listTitleCat", "target": "listTitle" },
-    { "op": "log-rect", "at": 152.86, "key": "bcCat", "target": "bcStrong" },
-    { "op": "log-rect", "at": 152.98, "key": "newRecCat", "target": "newRecordBtn" },
-    { "op": "watch", "key": "catHold", "from": 157.0, "to": 171.0, "predicate": "catGuard", "everyMs": 500, "mustHold": true, "note": "step 10 guardrail: nothing mutates while + New Record is pointed at" },
-    { "op": "move", "at": 154.1, "to": { "point": [190, 108] }, "note": "p46: point at the 49 in the Total Categories tile" },
-    { "op": "move", "at": 156.6, "to": { "target": "recCategories", "offset": [90, 8] }, "note": "p47: point at the 66 records list count" },
-    { "op": "move", "at": 159.8, "to": { "point": [230, 300] }, "note": "p48: rest between the two disagreeing numbers" },
-    { "op": "move", "at": 162.4, "to": { "point": [700, 520] }, "note": "onto the rows for p49" },
-    { "op": "move", "at": 165.7, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "point beside + New Record for the p50 read-only beat" },
-    { "op": "move", "at": 169.1, "to": { "target": "newRecordBtn", "offset": [-120, 54], "outside": true } },
-    { "op": "move", "at": 171.2, "to": { "point": [900, 600] }, "note": "ease off before the last navigation" },
-    { "op": "move", "at": 172.3, "to": { "target": "anaHeader", "offset": [90, 0], "outside": true }, "note": "step 11: gesture at the Analytics group on p51 'One more page, and it comes with a trick'" },
-    { "op": "log-rect", "at": 172.42, "key": "anaHeaderRect", "target": "anaHeader" },
-    { "op": "click", "target": "anaHeader", "pressAt": 174.5, "hoverMs": 400, "postcondition": "analyticsSubmenuOpen", "timeoutMs": 4000, "note": "step 11a: genuine group toggle reveals Dashboard Settings under Analytics as p52 names it" },
-    { "op": "log-rect", "at": 175.0, "key": "linkDash", "target": "linkDashboardSettings" },
-    { "op": "move", "at": 175.2, "to": { "target": "linkDashboardSettings", "offset": [40, 0] }, "note": "settle on Dashboard Settings inside the opened Analytics group" },
-    { "op": "click", "target": "linkDashboardSettings", "pressAt": 177.0, "hoverMs": 380, "postcondition": "onDashboardSettings", "timeoutMs": 8000, "nav": true, "note": "step 11b: open it there, page up before p53" },
-    { "op": "wait-stable", "afterNav": true, "key": "settleDash", "predicate": "dashboardsLoaded", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "assert", "at": 178.2, "predicate": "onDashboardSettings", "note": "10 real rows + tile" },
-    { "op": "assert", "at": 178.32, "predicate": "analyticsSubmenuOpen", "note": "Analytics group held open across the navigation" },
-    { "op": "log-rect", "at": 178.44, "key": "bcDash", "target": "bcStrong" },
-    { "op": "log-rect", "at": 178.56, "key": "tileDashRect", "target": "tileTotalDash" },
-    { "op": "log-rect", "at": 178.68, "key": "anaHeaderRect2", "target": "anaHeader" },
-    { "op": "log-rect", "at": 178.8, "key": "newRecDash", "target": "newRecordBtn" },
-    { "op": "watch", "key": "dashHold", "from": 179.2, "to": 190.0, "predicate": "dashGuard", "everyMs": 500, "mustHold": true, "note": "step 11 guardrail: nothing mutates while + New Record is pointed at" },
-    { "op": "move", "at": 179.0, "to": { "target": "anaHeader", "offset": [90, 6], "outside": true }, "note": "rest beside the Analytics group header — the page is filed here, not under General" },
-    { "op": "move", "at": 183.1, "to": { "point": [190, 108] }, "note": "p54: point at the 10 in the Total Dashboards tile" },
-    { "op": "move", "at": 185.4, "to": { "point": [640, 520] }, "note": "over the role-based dashboard rows for p55" },
-    { "op": "move", "at": 186.7, "to": { "target": "newRecordBtn", "offset": [-95, 44], "outside": true }, "note": "point beside + New Record for the read-only beat" },
-    { "op": "move", "at": 189.6, "to": { "target": "newRecordBtn", "offset": [-120, 54], "outside": true } },
-    { "op": "move", "at": 190.1, "to": { "target": "closeSettings", "offset": [70, 6], "outside": true }, "note": "step 12: approach Close Settings on the p56 cue" },
-    { "op": "log-rect", "at": 190.25, "key": "closeRect", "target": "closeSettings" },
-    { "op": "click", "target": "closeSettings", "pressAt": 191.7, "hoverMs": 400, "postcondition": "onCommandCenter", "timeoutMs": 8000, "nav": true, "note": "step 12: Close Settings returns to the app (verified inert nav to command-center)" },
-    { "op": "wait-stable", "afterNav": true, "key": "settleApp", "predicate": "onCommandCenter", "settleMs": 700, "timeoutMs": 9000 },
-    { "op": "assert", "at": 193.0, "predicate": "onCommandCenter", "note": "back in the app, exactly where the walk started" },
-    { "op": "log-rect", "at": 193.15, "key": "gearApp", "target": "gearBtn" },
-    { "op": "log-rect", "at": 193.3, "key": "ccCrumb", "target": "ccBreadcrumb" },
-    { "op": "move", "at": 193.6, "to": { "target": "gearBtn", "offset": [70, -4], "outside": true }, "note": "point beside the gear — the door we came through; nothing was changed" },
-    { "op": "move", "at": 196.6, "to": { "point": [900, 500] }, "note": "ease to a neutral hold for the p58 tail" },
-    { "op": "move", "at": 200.6, "to": { "point": [960, 360] }, "note": "step 13 recap: calm drift over the app" },
-    { "op": "move", "at": 205.2, "to": { "point": [880, 470] } },
-    { "op": "move", "at": 210.2, "to": { "point": [1020, 430] } },
-    { "op": "move", "at": 216.2, "to": { "point": [1520, 930] }, "note": "final park, clear of content and captions" },
-    { "op": "assert", "at": 219.4, "predicate": "onCommandCenter" }
+    {
+      "op": "assert",
+      "at": 0.05,
+      "predicate": "onCommandCenter",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        200,
+        1079
+      ],
+      "to": {
+        "target": "gearBtn",
+        "offset": [
+          10,
+          -6
+        ]
+      },
+      "note": "enter from the bottom edge toward the gear at the foot of the rail as p01 names 'one gear'"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.2,
+      "key": "gearRect",
+      "target": "gearBtn"
+    },
+    {
+      "op": "move",
+      "at": 2.6,
+      "to": {
+        "target": "gearBtn",
+        "offset": [
+          8,
+          -2
+        ]
+      },
+      "note": "settle on the settings gear in the p01-p02 gap"
+    },
+    {
+      "op": "click",
+      "target": "gearBtn",
+      "pressAt": 4.3,
+      "hoverMs": 420,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: press inside the p02 'Click it.' trailing break; #wc-rail-settings is an inert location.href navigator"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settleHome",
+      "predicate": "settingsHomeReady",
+      "settleMs": 700,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 5.7,
+      "predicate": "settingsHomeReady",
+      "note": "Settings home rendered: counter + 16-card grid present"
+    },
+    {
+      "op": "assert",
+      "at": 5.85,
+      "predicate": "sidebarExpanded",
+      "note": "preflight staged the settings rail panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": 6,
+      "predicate": "generalSubmenuClosed",
+      "note": "preflight staged the General group collapsed so step 5 genuinely expands it"
+    },
+    {
+      "op": "assert",
+      "at": 6.15,
+      "predicate": "analyticsSubmenuClosed",
+      "note": "preflight staged the Analytics group collapsed so step 11's reveal is genuine"
+    },
+    {
+      "op": "log-rect",
+      "at": 6.3,
+      "key": "h1Rect",
+      "target": "settingsH1"
+    },
+    {
+      "op": "move",
+      "at": 7.2,
+      "to": {
+        "target": "settingsH1",
+        "offset": [
+          40,
+          60
+        ],
+        "outside": true
+      },
+      "note": "rest below the Settings heading through p03-p04"
+    },
+    {
+      "op": "move",
+      "at": 11.5,
+      "to": {
+        "point": [
+          980,
+          540
+        ]
+      },
+      "note": "ease to a neutral hold for the p04-p05 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 17.5,
+      "key": "tallyRect",
+      "target": "tally"
+    },
+    {
+      "op": "move",
+      "at": 17.7,
+      "to": {
+        "target": "tally",
+        "offset": [
+          -24,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 2: point just below-left of the top-right counter on p06 'Check the counter, top right'"
+    },
+    {
+      "op": "move",
+      "at": 24.8,
+      "to": {
+        "point": [
+          1440,
+          320
+        ]
+      },
+      "note": "small drift beside the counter while the count is read"
+    },
+    {
+      "op": "move",
+      "at": 28.6,
+      "to": {
+        "point": [
+          1050,
+          520
+        ]
+      },
+      "note": "ease off as the camera pulls back wide"
+    },
+    {
+      "op": "log-rect",
+      "at": 33.2,
+      "key": "searchRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "move",
+      "at": 33.4,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          20,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 3: point below the Search settings box on p11 (never typed in)"
+    },
+    {
+      "op": "move",
+      "at": 39.7,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          220,
+          42
+        ],
+        "outside": true
+      },
+      "note": "slide along under the search box for p13-p14"
+    },
+    {
+      "op": "move",
+      "at": 42.6,
+      "to": {
+        "point": [
+          900,
+          470
+        ]
+      },
+      "note": "ease toward the grid for the step-4 opener"
+    },
+    {
+      "op": "log-rect",
+      "at": 45.5,
+      "key": "gridRect",
+      "target": "grid"
+    },
+    {
+      "op": "log-rect",
+      "at": 45.6,
+      "key": "cardGenRect",
+      "target": "cardGeneral"
+    },
+    {
+      "op": "log-rect",
+      "at": 45.7,
+      "key": "cardIntRect",
+      "target": "cardIntegrations"
+    },
+    {
+      "op": "move",
+      "at": 46,
+      "to": {
+        "target": "cardGeneral",
+        "offset": [
+          160,
+          18
+        ]
+      },
+      "note": "step 4: begin the card sweep on the General card, top-left"
+    },
+    {
+      "op": "move",
+      "at": 49.2,
+      "to": {
+        "point": [
+          1600,
+          300
+        ]
+      },
+      "note": "sweep across the top row of cards"
+    },
+    {
+      "op": "move",
+      "at": 52.2,
+      "to": {
+        "point": [
+          1600,
+          560
+        ]
+      },
+      "note": "down the right side"
+    },
+    {
+      "op": "move",
+      "at": 54.4,
+      "to": {
+        "point": [
+          720,
+          680
+        ]
+      },
+      "note": "back across the lower cards as p17 names Locations, payments, hardware, portal, A-I agent"
+    },
+    {
+      "op": "move",
+      "at": 57.4,
+      "to": {
+        "target": "cardGeneral",
+        "offset": [
+          160,
+          26
+        ]
+      },
+      "note": "end the sweep resting on the General card for p18"
+    },
+    {
+      "op": "move",
+      "at": 62.8,
+      "to": {
+        "point": [
+          820,
+          600
+        ]
+      },
+      "note": "ease off for the p19 tail"
+    },
+    {
+      "op": "move",
+      "at": 66.8,
+      "to": {
+        "target": "genHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5: approach the General group header on the p20 cue 'Open General'"
+    },
+    {
+      "op": "log-rect",
+      "at": 66.95,
+      "key": "genHeaderRect",
+      "target": "genHeader"
+    },
+    {
+      "op": "click",
+      "target": "genHeader",
+      "pressAt": 67.9,
+      "hoverMs": 420,
+      "postcondition": "generalSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 5a: genuine group toggle expands the nine General pages as p21 says the sidebar expands"
+    },
+    {
+      "op": "log-rects",
+      "at": 68.4,
+      "key": "genNav",
+      "targets": [
+        "linkAccountInfo",
+        "linkProfitCenters",
+        "linkDepartments",
+        "linkCategories"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 69,
+      "to": {
+        "target": "linkAccountInfo",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "gesture to Account Information, the first page, before opening it"
+    },
+    {
+      "op": "click",
+      "target": "linkAccountInfo",
+      "pressAt": 72,
+      "hoverMs": 380,
+      "postcondition": "onAccountInfo",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5b: open Account Information within p21 'opens on its own'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settleAI",
+      "predicate": "accountInfoLoaded",
+      "settleMs": 600,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 73.5,
+      "predicate": "onAccountInfo",
+      "note": "shot-list load check: real rows + KPI tiles, no agent-service error"
+    },
+    {
+      "op": "assert",
+      "at": 73.65,
+      "predicate": "generalSubmenuOpen",
+      "note": "persisted General submenu held across the navigation"
+    },
+    {
+      "op": "log-rects",
+      "at": 73.8,
+      "key": "genNav2",
+      "targets": [
+        "linkProfitCenters",
+        "linkDepartments",
+        "linkCategories"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 74.5,
+      "to": {
+        "target": "linkProfitCenters",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p22 name sweep in spoken order: profit centers,"
+    },
+    {
+      "op": "move",
+      "at": 75.1,
+      "to": {
+        "target": "linkDepartments",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "departments,"
+    },
+    {
+      "op": "move",
+      "at": 75.7,
+      "to": {
+        "target": "linkCategories",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "categories"
+    },
+    {
+      "op": "move",
+      "at": 77.6,
+      "to": {
+        "point": [
+          900,
+          520
+        ]
+      },
+      "note": "ease onto the page for the p23 spine line"
+    },
+    {
+      "op": "log-rects",
+      "at": 82.4,
+      "key": "aiTiles",
+      "targets": [
+        "tileLocations",
+        "tileStates",
+        "tileMode",
+        "tileLicense"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 82.55,
+      "key": "bcAI",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 82.7,
+      "to": {
+        "target": "tileLocations",
+        "offset": [
+          0,
+          -34
+        ],
+        "outside": true
+      },
+      "note": "step 6: approach the KPI band on p24 'top of Account Information'"
+    },
+    {
+      "op": "move",
+      "at": 85.2,
+      "to": {
+        "target": "tileLocations",
+        "offset": [
+          10,
+          10
+        ]
+      },
+      "note": "p25: 56 Locations"
+    },
+    {
+      "op": "move",
+      "at": 86.3,
+      "to": {
+        "target": "tileStates",
+        "offset": [
+          10,
+          10
+        ]
+      },
+      "note": "15 States"
+    },
+    {
+      "op": "move",
+      "at": 87.3,
+      "to": {
+        "target": "tileMode",
+        "offset": [
+          10,
+          10
+        ]
+      },
+      "note": "p26: Multi Operation Mode"
+    },
+    {
+      "op": "move",
+      "at": 88.4,
+      "to": {
+        "target": "tileLicense",
+        "offset": [
+          10,
+          10
+        ]
+      },
+      "note": "Active License"
+    },
+    {
+      "op": "move",
+      "at": 90.2,
+      "to": {
+        "point": [
+          520,
+          600
+        ]
+      },
+      "note": "slow sweep over the three summary panels for p27-p28"
+    },
+    {
+      "op": "move",
+      "at": 92.2,
+      "to": {
+        "point": [
+          1000,
+          600
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 93.8,
+      "to": {
+        "point": [
+          1420,
+          600
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 96.6,
+      "to": {
+        "point": [
+          1100,
+          500
+        ]
+      },
+      "note": "ease off for the p28 tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 99.6,
+      "key": "aiTh",
+      "targets": [
+        "thSiteName",
+        "thCompany",
+        "thOpMode",
+        "thCity",
+        "thState",
+        "thPhone"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 99.72,
+      "key": "newRecAI",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 99.84,
+      "key": "listTitleAI",
+      "target": "listTitle"
+    },
+    {
+      "op": "move",
+      "at": 100,
+      "to": {
+        "target": "thSiteName",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 7: settle above the column header on p29 'Scan the list below'"
+    },
+    {
+      "op": "move",
+      "at": 101.5,
+      "to": {
+        "target": "thSiteName",
+        "offset": [
+          10,
+          8
+        ]
+      },
+      "note": "p30 column sweep: site,"
+    },
+    {
+      "op": "move",
+      "at": 102.9,
+      "to": {
+        "target": "thCompany",
+        "offset": [
+          10,
+          8
+        ]
+      },
+      "note": "company,"
+    },
+    {
+      "op": "move",
+      "at": 104.1,
+      "to": {
+        "target": "thOpMode",
+        "offset": [
+          10,
+          8
+        ]
+      },
+      "note": "operation mode,"
+    },
+    {
+      "op": "move",
+      "at": 105.3,
+      "to": {
+        "target": "thPhone",
+        "offset": [
+          10,
+          8
+        ]
+      },
+      "note": "and contact details"
+    },
+    {
+      "op": "watch",
+      "key": "aiHold",
+      "from": 107,
+      "to": 114,
+      "predicate": "acctInfoGuard",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 7 guardrail: page never changes and no create form opens while + New Record is pointed at"
+    },
+    {
+      "op": "move",
+      "at": 106.9,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p31: rest BESIDE + New Record; the button itself is never approached for a press"
+    },
+    {
+      "op": "move",
+      "at": 109.7,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p32 'Locate it, then leave it alone' — hold beside it"
+    },
+    {
+      "op": "move",
+      "at": 112.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -120,
+          54
+        ],
+        "outside": true
+      },
+      "note": "pull further off for the p33 rule"
+    },
+    {
+      "op": "move",
+      "at": 114.6,
+      "to": {
+        "point": [
+          1000,
+          700
+        ]
+      },
+      "note": "ease off before the next navigation"
+    },
+    {
+      "op": "move",
+      "at": 115.2,
+      "to": {
+        "target": "linkProfitCenters",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: approach Profit Centers in the p33-p34 gap"
+    },
+    {
+      "op": "log-rect",
+      "at": 115.3,
+      "key": "linkPC",
+      "target": "linkProfitCenters"
+    },
+    {
+      "op": "click",
+      "target": "linkProfitCenters",
+      "pressAt": 116.6,
+      "hoverMs": 380,
+      "postcondition": "onProfitCenters",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8: genuine sidebar navigation on the p34 cue 'Next page: Profit Centers'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settlePC",
+      "predicate": "profitCentersLoaded",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 117.6,
+      "predicate": "onProfitCenters",
+      "note": "4 real rows + tiles"
+    },
+    {
+      "op": "log-rect",
+      "at": 117.7,
+      "key": "bcPC",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rects",
+      "at": 117.8,
+      "key": "pcTiles",
+      "targets": [
+        "tileTotalPC",
+        "tileInDaily"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 117.9,
+      "key": "pcRows",
+      "targets": [
+        "rowWash",
+        "rowLube",
+        "rowDetail",
+        "rowStore"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 118,
+      "key": "newRecPC",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "watch",
+      "key": "pcHold",
+      "from": 121,
+      "to": 131,
+      "predicate": "profitGuard",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 8 guardrail: nothing mutates while + New Record is pointed at"
+    },
+    {
+      "op": "move",
+      "at": 118.5,
+      "to": {
+        "target": "rowWash",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "p36 row sweep in spoken order: Wash,"
+    },
+    {
+      "op": "move",
+      "at": 119.1,
+      "to": {
+        "target": "rowLube",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "lube,"
+    },
+    {
+      "op": "move",
+      "at": 119.7,
+      "to": {
+        "target": "rowDetail",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "detail,"
+    },
+    {
+      "op": "move",
+      "at": 120.3,
+      "to": {
+        "target": "rowStore",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "and store"
+    },
+    {
+      "op": "move",
+      "at": 122.6,
+      "to": {
+        "point": [
+          700,
+          560
+        ]
+      },
+      "note": "hold over the rows for p37-p38"
+    },
+    {
+      "op": "move",
+      "at": 124.3,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point beside + New Record for the p39 read-only beat"
+    },
+    {
+      "op": "move",
+      "at": 127.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -120,
+          54
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 130.6,
+      "to": {
+        "point": [
+          900,
+          600
+        ]
+      },
+      "note": "ease off before the next navigation"
+    },
+    {
+      "op": "move",
+      "at": 132.6,
+      "to": {
+        "target": "linkDepartments",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9: approach Departments in the p39-p40 gap"
+    },
+    {
+      "op": "log-rect",
+      "at": 132.7,
+      "key": "linkDep",
+      "target": "linkDepartments"
+    },
+    {
+      "op": "click",
+      "target": "linkDepartments",
+      "pressAt": 134.2,
+      "hoverMs": 380,
+      "postcondition": "onDepartments",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: press on the p40 cue 'Now Departments'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settleDep",
+      "predicate": "departmentsLoaded",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 135.2,
+      "predicate": "onDepartments",
+      "note": "4 real rows + tiles"
+    },
+    {
+      "op": "log-rect",
+      "at": 135.3,
+      "key": "bcDep",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rects",
+      "at": 135.4,
+      "key": "depTiles",
+      "targets": [
+        "tileTotalDept",
+        "tileActive",
+        "tileInactive"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 135.5,
+      "key": "depRows",
+      "targets": [
+        "rowDetail",
+        "rowLube",
+        "rowStore",
+        "rowWash"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 135.6,
+      "key": "newRecDep",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "watch",
+      "key": "depHold",
+      "from": 138,
+      "to": 149,
+      "predicate": "deptGuard",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 9 guardrail: nothing mutates while + New Record is pointed at"
+    },
+    {
+      "op": "move",
+      "at": 135.7,
+      "to": {
+        "target": "rowDetail",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "p41 'the same four names again' — sweep the four rows"
+    },
+    {
+      "op": "move",
+      "at": 136.4,
+      "to": {
+        "target": "rowLube",
+        "offset": [
+          120,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 137.1,
+      "to": {
+        "target": "rowStore",
+        "offset": [
+          120,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 137.8,
+      "to": {
+        "target": "rowWash",
+        "offset": [
+          120,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 139.2,
+      "to": {
+        "point": [
+          720,
+          560
+        ]
+      },
+      "note": "hold over the rows for p42-p43"
+    },
+    {
+      "op": "move",
+      "at": 143.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point beside + New Record for the p44 read-only beat"
+    },
+    {
+      "op": "move",
+      "at": 147.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -120,
+          54
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 149.3,
+      "to": {
+        "point": [
+          900,
+          600
+        ]
+      },
+      "note": "ease off before the next navigation"
+    },
+    {
+      "op": "move",
+      "at": 149.7,
+      "to": {
+        "target": "linkCategories",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10: approach Categories in the p44-p45 gap"
+    },
+    {
+      "op": "log-rect",
+      "at": 149.8,
+      "key": "linkCat",
+      "target": "linkCategories"
+    },
+    {
+      "op": "click",
+      "target": "linkCategories",
+      "pressAt": 151,
+      "hoverMs": 380,
+      "postcondition": "onCategories",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: press on the p45 cue 'Then Categories'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settleCat",
+      "predicate": "categoriesLoaded",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 152.4,
+      "predicate": "onCategories",
+      "note": "25 real rows + tiles; page count reads 66"
+    },
+    {
+      "op": "log-rect",
+      "at": 152.5,
+      "key": "tileCatRect",
+      "target": "tileTotalCat"
+    },
+    {
+      "op": "log-rect",
+      "at": 152.62,
+      "key": "recCatRect",
+      "target": "recCategories"
+    },
+    {
+      "op": "log-rect",
+      "at": 152.74,
+      "key": "listTitleCat",
+      "target": "listTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 152.86,
+      "key": "bcCat",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 152.98,
+      "key": "newRecCat",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "watch",
+      "key": "catHold",
+      "from": 157,
+      "to": 171,
+      "predicate": "catGuard",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 10 guardrail: nothing mutates while + New Record is pointed at"
+    },
+    {
+      "op": "move",
+      "at": 154.1,
+      "to": {
+        "point": [
+          190,
+          108
+        ]
+      },
+      "note": "p46: point at the 49 in the Total Categories tile"
+    },
+    {
+      "op": "move",
+      "at": 156.6,
+      "to": {
+        "target": "recCategories",
+        "offset": [
+          90,
+          8
+        ]
+      },
+      "note": "p47: point at the 66 records list count"
+    },
+    {
+      "op": "move",
+      "at": 159.8,
+      "to": {
+        "point": [
+          230,
+          300
+        ]
+      },
+      "note": "p48: rest between the two disagreeing numbers"
+    },
+    {
+      "op": "move",
+      "at": 162.4,
+      "to": {
+        "point": [
+          700,
+          520
+        ]
+      },
+      "note": "onto the rows for p49"
+    },
+    {
+      "op": "move",
+      "at": 165.7,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point beside + New Record for the p50 read-only beat"
+    },
+    {
+      "op": "move",
+      "at": 169.1,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -120,
+          54
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 171.2,
+      "to": {
+        "point": [
+          900,
+          600
+        ]
+      },
+      "note": "ease off before the last navigation"
+    },
+    {
+      "op": "move",
+      "at": 172.3,
+      "to": {
+        "target": "anaHeader",
+        "offset": [
+          90,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 11: gesture at the Analytics group on p51 'One more page, and it comes with a trick'"
+    },
+    {
+      "op": "log-rect",
+      "at": 172.42,
+      "key": "anaHeaderRect",
+      "target": "anaHeader"
+    },
+    {
+      "op": "click",
+      "target": "anaHeader",
+      "pressAt": 174.5,
+      "hoverMs": 400,
+      "postcondition": "analyticsSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 11a: genuine group toggle reveals Dashboard Settings under Analytics as p52 names it"
+    },
+    {
+      "op": "log-rect",
+      "at": 175,
+      "key": "linkDash",
+      "target": "linkDashboardSettings"
+    },
+    {
+      "op": "move",
+      "at": 175.2,
+      "to": {
+        "target": "linkDashboardSettings",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "settle on Dashboard Settings inside the opened Analytics group"
+    },
+    {
+      "op": "click",
+      "target": "linkDashboardSettings",
+      "pressAt": 177,
+      "hoverMs": 380,
+      "postcondition": "onDashboardSettings",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11b: open it there, page up before p53"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settleDash",
+      "predicate": "dashboardsLoaded",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 178.2,
+      "predicate": "onDashboardSettings",
+      "note": "10 real rows + tile"
+    },
+    {
+      "op": "assert",
+      "at": 178.32,
+      "predicate": "analyticsSubmenuOpen",
+      "note": "Analytics group held open across the navigation"
+    },
+    {
+      "op": "log-rect",
+      "at": 178.44,
+      "key": "bcDash",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 178.56,
+      "key": "tileDashRect",
+      "target": "tileTotalDash"
+    },
+    {
+      "op": "log-rect",
+      "at": 178.68,
+      "key": "anaHeaderRect2",
+      "target": "anaHeader"
+    },
+    {
+      "op": "log-rect",
+      "at": 178.8,
+      "key": "newRecDash",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "watch",
+      "key": "dashHold",
+      "from": 179.2,
+      "to": 190,
+      "predicate": "dashGuard",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 11 guardrail: nothing mutates while + New Record is pointed at"
+    },
+    {
+      "op": "move",
+      "at": 179,
+      "to": {
+        "target": "anaHeader",
+        "offset": [
+          90,
+          6
+        ],
+        "outside": true
+      },
+      "note": "rest beside the Analytics group header — the page is filed here, not under General"
+    },
+    {
+      "op": "move",
+      "at": 183.1,
+      "to": {
+        "point": [
+          190,
+          108
+        ]
+      },
+      "note": "p54: point at the 10 in the Total Dashboards tile"
+    },
+    {
+      "op": "move",
+      "at": 185.4,
+      "to": {
+        "point": [
+          640,
+          520
+        ]
+      },
+      "note": "over the role-based dashboard rows for p55"
+    },
+    {
+      "op": "move",
+      "at": 186.7,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point beside + New Record for the read-only beat"
+    },
+    {
+      "op": "move",
+      "at": 189.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -120,
+          54
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 190.1,
+      "to": {
+        "target": "closeSettings",
+        "offset": [
+          70,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 12: approach Close Settings on the p56 cue"
+    },
+    {
+      "op": "log-rect",
+      "at": 190.25,
+      "key": "closeRect",
+      "target": "closeSettings"
+    },
+    {
+      "op": "click",
+      "target": "closeSettings",
+      "pressAt": 191.7,
+      "hoverMs": 400,
+      "postcondition": "onCommandCenter",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 12: Close Settings returns to the app (verified inert nav to command-center)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settleApp",
+      "predicate": "onCommandCenter",
+      "settleMs": 700,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 193,
+      "predicate": "onCommandCenter",
+      "note": "back in the app, exactly where the walk started"
+    },
+    {
+      "op": "log-rect",
+      "at": 193.15,
+      "key": "gearApp",
+      "target": "gearBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 193.3,
+      "key": "ccCrumb",
+      "target": "ccBreadcrumb"
+    },
+    {
+      "op": "move",
+      "at": 193.6,
+      "to": {
+        "target": "gearBtn",
+        "offset": [
+          70,
+          -4
+        ],
+        "outside": true
+      },
+      "note": "point beside the gear — the door we came through; nothing was changed"
+    },
+    {
+      "op": "move",
+      "at": 196.6,
+      "to": {
+        "point": [
+          900,
+          500
+        ]
+      },
+      "note": "ease to a neutral hold for the p58 tail"
+    },
+    {
+      "op": "move",
+      "at": 200.6,
+      "to": {
+        "point": [
+          960,
+          360
+        ]
+      },
+      "note": "step 13 recap: calm drift over the app"
+    },
+    {
+      "op": "move",
+      "at": 205.2,
+      "to": {
+        "point": [
+          880,
+          470
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 210.2,
+      "to": {
+        "point": [
+          1020,
+          430
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 216.2,
+      "to": {
+        "point": [
+          1520,
+          930
+        ]
+      },
+      "note": "final park, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 219.4,
+      "predicate": "onCommandCenter"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "h1Rect", "place": "below-left", "from": 6.4, "to": 9.4 },
-      { "n": 2, "anchor": "tallyRect", "place": "left", "from": 19.6, "to": 27.0 },
-      { "n": 3, "anchor": "searchRect", "place": "below-left", "from": 33.4, "to": 41.5 },
-      { "n": 4, "anchor": "gridRect", "place": "left-top", "from": 46.2, "to": 60.5 },
-      { "n": 5, "anchor": "genNav.linkProfitCenters", "place": "right", "from": 68.6, "to": 78.5 },
-      { "n": 6, "anchor": "aiTiles.tileLocations", "place": "below-left", "from": 83.0, "to": 92.5 },
-      { "n": 7, "anchor": "aiTh.thSiteName", "place": "below-left", "from": 101.3, "to": 106.5 },
-      { "n": 8, "anchor": "pcRows.rowWash", "place": "right", "from": 118.5, "to": 126.5 },
-      { "n": 9, "anchor": "depRows.rowDetail", "place": "right", "from": 135.7, "to": 146.5 },
-      { "n": 10, "anchor": "recCatRect", "place": "right", "from": 156.4, "to": 165.0 },
-      { "n": 11, "anchor": "anaHeaderRect2", "place": "right", "from": 179.0, "to": 186.0 },
-      { "n": 12, "anchor": "gearApp", "place": "right", "from": 193.6, "to": 199.0 },
-      { "n": 13, "anchor": "ccCrumb", "place": "below-left", "from": 200.6, "to": 217.8 }
+      {
+        "n": 1,
+        "anchor": "h1Rect",
+        "place": "below-left",
+        "from": 6.4,
+        "to": 9.4
+      },
+      {
+        "n": 2,
+        "anchor": "tallyRect",
+        "place": "left",
+        "from": 19.6,
+        "to": 27
+      },
+      {
+        "n": 3,
+        "anchor": "searchRect",
+        "place": "below-left",
+        "from": 33.4,
+        "to": 41.5
+      },
+      {
+        "n": 4,
+        "anchor": "gridRect",
+        "place": "left-top",
+        "from": 46.2,
+        "to": 60.5
+      },
+      {
+        "n": 5,
+        "anchor": "genNav.linkProfitCenters",
+        "place": "right",
+        "from": 68.6,
+        "to": 78.5
+      },
+      {
+        "n": 6,
+        "anchor": "aiTiles.tileLocations",
+        "place": "below-left",
+        "from": 83,
+        "to": 92.5
+      },
+      {
+        "n": 7,
+        "anchor": "aiTh.thSiteName",
+        "place": "below-left",
+        "from": 101.3,
+        "to": 106.5
+      },
+      {
+        "n": 8,
+        "anchor": "pcRows.rowWash",
+        "place": "right",
+        "from": 118.5,
+        "to": 126.5
+      },
+      {
+        "n": 9,
+        "anchor": "depRows.rowDetail",
+        "place": "right",
+        "from": 135.7,
+        "to": 146.5
+      },
+      {
+        "n": 10,
+        "anchor": "recCatRect",
+        "place": "right",
+        "from": 156.4,
+        "to": 165
+      },
+      {
+        "n": 11,
+        "anchor": "anaHeaderRect2",
+        "place": "right",
+        "from": 179,
+        "to": 186
+      },
+      {
+        "n": 12,
+        "anchor": "gearApp",
+        "place": "right",
+        "from": 193.6,
+        "to": 199
+      },
+      {
+        "n": 13,
+        "anchor": "ccCrumb",
+        "place": "below-left",
+        "from": 200.6,
+        "to": 217.8
+      }
     ],
     "highlights": [
-      { "anchor": "tallyRect", "from": 19.7, "to": 22.2, "note": "'Sixteen categories, ninety two pages' (p07)" },
-      { "anchor": "searchRect", "from": 35.7, "to": 39.3, "note": "'type it here and jump straight in' (p12)" },
-      { "anchor": "cardGenRect", "from": 56.9, "to": 60.3, "note": "'the first card, General' (p18)" },
-      { "anchor": "genNav2.linkProfitCenters", "from": 74.5, "to": 75.1, "note": "p22 spoken order: profit centers," },
-      { "anchor": "genNav2.linkDepartments", "from": 75.1, "to": 75.7, "note": "departments," },
-      { "anchor": "genNav2.linkCategories", "from": 75.7, "to": 76.3, "note": "categories" },
-      { "anchor": "aiTiles.tileLocations", "from": 85.2, "to": 86.3, "note": "p25: 56 Locations" },
-      { "anchor": "aiTiles.tileStates", "from": 86.3, "to": 87.3, "note": "15 States" },
-      { "anchor": "aiTiles.tileMode", "from": 87.3, "to": 88.4, "note": "p26: Multi Operation Mode" },
-      { "anchor": "aiTiles.tileLicense", "from": 88.4, "to": 89.5, "note": "Active License" },
-      { "anchor": "newRecAI", "from": 106.9, "to": 113.5, "color": "#dc2626", "note": "step 7 STOP: + New Record located, never clicked (read-only)" },
-      { "anchor": "pcRows.rowWash", "from": 118.5, "to": 119.1, "note": "p36 spoken order: Wash," },
-      { "anchor": "pcRows.rowLube", "from": 119.1, "to": 119.7, "note": "lube," },
-      { "anchor": "pcRows.rowDetail", "from": 119.7, "to": 120.3, "note": "detail," },
-      { "anchor": "pcRows.rowStore", "from": 120.3, "to": 121.2, "note": "and store" },
-      { "anchor": "newRecPC", "from": 124.3, "to": 130.0, "color": "#dc2626", "note": "step 8 STOP: + New Record never clicked" },
-      { "anchor": "depRows.rowDetail", "from": 135.7, "to": 136.4, "note": "p41 the same four names" },
-      { "anchor": "depRows.rowLube", "from": 136.4, "to": 137.1 },
-      { "anchor": "depRows.rowStore", "from": 137.1, "to": 137.8 },
-      { "anchor": "depRows.rowWash", "from": 137.8, "to": 138.6 },
-      { "anchor": "newRecDep", "from": 143.6, "to": 149.0, "color": "#dc2626", "note": "step 9 STOP: + New Record never clicked" },
-      { "anchor": "tileCatRect", "from": 154.1, "to": 156.3, "note": "'The tiles say forty nine' (p46)" },
-      { "anchor": "recCatRect", "from": 156.5, "to": 159.3, "note": "'The list header says sixty six records' (p47)" },
-      { "anchor": "newRecCat", "from": 165.7, "to": 171.0, "color": "#dc2626", "note": "step 10 STOP: + New Record never clicked" },
-      { "anchor": "anaHeaderRect", "from": 176.3, "to": 177.0, "note": "'filed under Analytics, not General' (p52) — the Analytics group in the rail" },
-      { "anchor": "tileDashRect", "from": 183.1, "to": 185.2, "note": "'Ten dashboards, one per user level' (p54)" },
-      { "anchor": "newRecDash", "from": 186.7, "to": 190.2, "color": "#dc2626", "note": "step 11 STOP: + New Record never clicked" }
+      {
+        "anchor": "tallyRect",
+        "from": 19.7,
+        "to": 22.2,
+        "note": "'Sixteen categories, ninety two pages' (p07)"
+      },
+      {
+        "anchor": "searchRect",
+        "from": 35.7,
+        "to": 39.3,
+        "note": "'type it here and jump straight in' (p12)"
+      },
+      {
+        "anchor": "cardGenRect",
+        "from": 56.9,
+        "to": 60.3,
+        "note": "'the first card, General' (p18)"
+      },
+      {
+        "anchor": "genNav2.linkProfitCenters",
+        "from": 74.5,
+        "to": 75.1,
+        "note": "p22 spoken order: profit centers,"
+      },
+      {
+        "anchor": "genNav2.linkDepartments",
+        "from": 75.1,
+        "to": 75.7,
+        "note": "departments,"
+      },
+      {
+        "anchor": "genNav2.linkCategories",
+        "from": 75.7,
+        "to": 76.3,
+        "note": "categories"
+      },
+      {
+        "anchor": "aiTiles.tileLocations",
+        "from": 85.2,
+        "to": 86.3,
+        "note": "p25: 56 Locations"
+      },
+      {
+        "anchor": "aiTiles.tileStates",
+        "from": 86.3,
+        "to": 87.3,
+        "note": "15 States"
+      },
+      {
+        "anchor": "aiTiles.tileMode",
+        "from": 87.3,
+        "to": 88.4,
+        "note": "p26: Multi Operation Mode"
+      },
+      {
+        "anchor": "aiTiles.tileLicense",
+        "from": 88.4,
+        "to": 89.5,
+        "note": "Active License"
+      },
+      {
+        "anchor": "newRecAI",
+        "from": 106.9,
+        "to": 113.5,
+        "color": "#dc2626",
+        "note": "step 7 STOP: + New Record located, never clicked (read-only)"
+      },
+      {
+        "anchor": "pcRows.rowWash",
+        "from": 118.5,
+        "to": 119.1,
+        "note": "p36 spoken order: Wash,"
+      },
+      {
+        "anchor": "pcRows.rowLube",
+        "from": 119.1,
+        "to": 119.7,
+        "note": "lube,"
+      },
+      {
+        "anchor": "pcRows.rowDetail",
+        "from": 119.7,
+        "to": 120.3,
+        "note": "detail,"
+      },
+      {
+        "anchor": "pcRows.rowStore",
+        "from": 120.3,
+        "to": 121.2,
+        "note": "and store"
+      },
+      {
+        "anchor": "newRecPC",
+        "from": 124.3,
+        "to": 130,
+        "color": "#dc2626",
+        "note": "step 8 STOP: + New Record never clicked"
+      },
+      {
+        "anchor": "depRows.rowDetail",
+        "from": 135.7,
+        "to": 136.4,
+        "note": "p41 the same four names"
+      },
+      {
+        "anchor": "depRows.rowLube",
+        "from": 136.4,
+        "to": 137.1
+      },
+      {
+        "anchor": "depRows.rowStore",
+        "from": 137.1,
+        "to": 137.8
+      },
+      {
+        "anchor": "depRows.rowWash",
+        "from": 137.8,
+        "to": 138.6
+      },
+      {
+        "anchor": "newRecDep",
+        "from": 143.6,
+        "to": 149,
+        "color": "#dc2626",
+        "note": "step 9 STOP: + New Record never clicked"
+      },
+      {
+        "anchor": "tileCatRect",
+        "from": 154.1,
+        "to": 156.3,
+        "note": "'The tiles say forty nine' (p46)"
+      },
+      {
+        "anchor": "recCatRect",
+        "from": 156.5,
+        "to": 159.3,
+        "note": "'The list header says sixty six records' (p47)"
+      },
+      {
+        "anchor": "newRecCat",
+        "from": 165.7,
+        "to": 171,
+        "color": "#dc2626",
+        "note": "step 10 STOP: + New Record never clicked"
+      },
+      {
+        "anchor": "anaHeaderRect",
+        "from": 176.3,
+        "to": 177,
+        "note": "'filed under Analytics, not General' (p52) — the Analytics group in the rail"
+      },
+      {
+        "anchor": "tileDashRect",
+        "from": 183.1,
+        "to": 185.2,
+        "note": "'Ten dashboards, one per user level' (p54)"
+      },
+      {
+        "anchor": "newRecDash",
+        "from": 186.7,
+        "to": 190.2,
+        "color": "#dc2626",
+        "note": "step 11 STOP: + New Record never clicked"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 18.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 19.7, "z": 1.45, "cx": 1258, "cy": 372, "ease": true, "note": "step 2: 145% on the 16 categories / 92 pages counter" },
-      { "t": 27.0, "z": 1.45, "cx": 1258, "cy": 372 },
-      { "t": 28.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for search and the card grid" },
-      { "t": 68.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 69.2, "z": 1.3, "cx": 700, "cy": 430, "ease": true, "note": "step 5: zoom the expanded General sidebar list" },
-      { "t": 76.2, "z": 1.3, "cx": 700, "cy": 430 },
-      { "t": 77.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Account Information, Profit Centers, and Departments reads" },
-      { "t": 155.4, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 156.6, "z": 1.35, "cx": 720, "cy": 400, "ease": true, "note": "step 10: frame the 49 tile against the 66-records count" },
-      { "t": 161.4, "z": 1.35, "cx": 720, "cy": 400 },
-      { "t": 162.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for Dashboard Settings, the close, and the recap" },
-      { "t": 220.290612, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 18.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 19.7,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 372,
+        "ease": true,
+        "note": "step 2: 145% on the 16 categories / 92 pages counter"
+      },
+      {
+        "t": 27,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 372
+      },
+      {
+        "t": 28.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for search and the card grid"
+      },
+      {
+        "t": 68,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 69.2,
+        "z": 1.3,
+        "cx": 700,
+        "cy": 430,
+        "ease": true,
+        "note": "step 5: zoom the expanded General sidebar list"
+      },
+      {
+        "t": 76.2,
+        "z": 1.3,
+        "cx": 700,
+        "cy": 430
+      },
+      {
+        "t": 77.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Account Information, Profit Centers, and Departments reads"
+      },
+      {
+        "t": 155.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 156.6,
+        "z": 1.35,
+        "cx": 720,
+        "cy": 400,
+        "ease": true,
+        "note": "step 10: frame the 49 tile against the 66-records count"
+      },
+      {
+        "t": 161.4,
+        "z": 1.35,
+        "cx": 720,
+        "cy": 400
+      },
+      {
+        "t": 162.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for Dashboard Settings, the close, and the recap"
+      },
+      {
+        "t": 220.290612,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "completion": {
       "text": "General & org structure — Complete",
@@ -415,10 +2057,61 @@
     "ask shyne"
   ],
   "preflight": [
-    { "op": "click", "target": "gearBtn", "pressAt": 0, "hoverMs": 200, "postcondition": "onSettingsHome", "timeoutMs": 8000, "note": "off-camera: open Settings to stage the persisted settings sidebar preferences" },
-    { "op": "click", "target": "railToggle", "pressAt": 0, "hoverMs": 200, "unless": "sidebarExpanded", "postcondition": "sidebarExpanded", "timeoutMs": 4000, "note": "off-camera: expand the settings rail panel so labels and submenus are readable" },
-    { "op": "click", "target": "genHeader", "pressAt": 0, "hoverMs": 200, "unless": "generalSubmenuClosed", "postcondition": "generalSubmenuClosed", "timeoutMs": 4000, "note": "off-camera: collapse the persisted General group so step 5 expands it on camera" },
-    { "op": "click", "target": "anaHeader", "pressAt": 0, "hoverMs": 200, "unless": "analyticsSubmenuClosed", "postcondition": "analyticsSubmenuClosed", "timeoutMs": 4000, "note": "off-camera: collapse the persisted Analytics group so step 11's reveal is genuine" },
-    { "op": "click", "target": "closeSettings", "pressAt": 0, "hoverMs": 200, "postcondition": "onCommandCenter", "timeoutMs": 8000, "note": "off-camera: return to the app so the take begins on command-center" }
+    {
+      "op": "click",
+      "target": "gearBtn",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "note": "off-camera: open Settings to stage the persisted settings sidebar preferences"
+    },
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: expand the settings rail panel so labels and submenus are readable"
+    },
+    {
+      "op": "click",
+      "target": "genHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "generalSubmenuClosed",
+      "postcondition": "generalSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse the persisted General group so step 5 expands it on camera"
+    },
+    {
+      "op": "click",
+      "target": "anaHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "analyticsSubmenuClosed",
+      "postcondition": "analyticsSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse the persisted Analytics group so step 11's reveal is genuine"
+    },
+    {
+      "op": "click",
+      "target": "closeSettings",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "postcondition": "onCommandCenter",
+      "timeoutMs": 8000,
+      "note": "off-camera: return to the app so the take begins on command-center"
+    }
   ]
 }

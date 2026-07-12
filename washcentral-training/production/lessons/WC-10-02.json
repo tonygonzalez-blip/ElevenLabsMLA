@@ -157,6 +157,14 @@
   },
   "preflight": [
     {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -1413,7 +1421,7 @@
         "anchor": "newRecordRect2",
         "place": "left",
         "from": 151.2,
-        "to": 165.0
+        "to": 165
       },
       {
         "n": 12,
@@ -1457,7 +1465,7 @@
       {
         "anchor": "kpiTiles.kpiAvg",
         "from": 22.67,
-        "to": 26.0,
+        "to": 26,
         "note": "p07 Avg Resolution"
       },
       {
@@ -1573,7 +1581,7 @@
       {
         "anchor": "row4201Rect",
         "from": 124.45,
-        "to": 129.0,
+        "to": 129,
         "note": "step 9 (p38): each ticket names a person or team (Assigned To)"
       },
       {
@@ -1597,7 +1605,7 @@
       {
         "anchor": "newRecordRect2",
         "from": 151.04,
-        "to": 165.0,
+        "to": 165,
         "color": "#dc2626",
         "note": "step 11 (p43-p46) do-not-click STOP: + New Record files a support ticket that notifies people on a live tenant — held beside, never clicked (RESIDUAL R1)"
       },
@@ -1616,13 +1624,13 @@
       {
         "anchor": "theadRect2",
         "from": 173.22,
-        "to": 177.0,
+        "to": 177,
         "note": "step 12 (p50): the list — each ticket's priority and owner"
       },
       {
         "anchor": "newRecordRect3",
-        "from": 175.0,
-        "to": 177.0,
+        "from": 175,
+        "to": 177,
         "color": "#dc2626",
         "note": "step 12: + New Record still a do-not-click guardrail, never pressed"
       }
@@ -1641,7 +1649,7 @@
         "cy": 540
       },
       {
-        "t": 2.0,
+        "t": 2,
         "z": 1.2,
         "cx": 420,
         "cy": 200,
@@ -1789,7 +1797,7 @@
         "note": "step 11: the + New Record guardrail — the form is never opened"
       },
       {
-        "t": 165.0,
+        "t": 165,
         "z": 1.35,
         "cx": 1690,
         "cy": 400

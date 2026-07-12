@@ -237,7 +237,7 @@
     },
     {
       "op": "log-rects",
-      "at": 4.0,
+      "at": 4,
       "key": "kpiTiles",
       "targets": [
         "tileTotalServices",
@@ -313,7 +313,7 @@
     },
     {
       "op": "move",
-      "at": 12.0,
+      "at": 12,
       "to": {
         "point": [
           780,
@@ -762,7 +762,7 @@
     {
       "op": "watch",
       "key": "searchHold",
-      "from": 145.0,
+      "from": 145,
       "to": 159.3,
       "predicate": "listUnchanged",
       "everyMs": 500,
@@ -882,7 +882,7 @@
     },
     {
       "op": "assert",
-      "at": 175.0,
+      "at": 175,
       "predicate": "detailLoaded",
       "note": "shot-list load check: Service Main + Active Locations tabs and the field groups present; the detail recovered since the July 9 corpus (see residuals). Abort if the detail 404s again"
     },
@@ -957,7 +957,7 @@
     },
     {
       "op": "move",
-      "at": 192.0,
+      "at": 192,
       "to": {
         "target": "grpBasic",
         "offset": [
@@ -1115,7 +1115,7 @@
     },
     {
       "op": "log-rect",
-      "at": 234.0,
+      "at": 234,
       "key": "lblAmtR2",
       "target": "lblAmount"
     },
@@ -1229,7 +1229,7 @@
     },
     {
       "op": "move",
-      "at": 266.0,
+      "at": 266,
       "to": {
         "target": "btnEdit",
         "offset": [
@@ -1288,7 +1288,7 @@
     },
     {
       "op": "move",
-      "at": 287.0,
+      "at": 287,
       "to": {
         "point": [
           1500,
@@ -1332,7 +1332,7 @@
         "anchor": "cardStatusR",
         "place": "left",
         "from": 63.9,
-        "to": 76.0
+        "to": 76
       },
       {
         "n": 5,
@@ -1352,21 +1352,21 @@
         "n": 7,
         "anchor": "svcTh.thCode",
         "place": "below-left",
-        "from": 106.0,
+        "from": 106,
         "to": 124.2
       },
       {
         "n": 8,
         "anchor": "washRowR",
         "place": "left",
-        "from": 125.0,
+        "from": 125,
         "to": 144.5
       },
       {
         "n": 9,
         "anchor": "searchR",
         "place": "left-top",
-        "from": 146.0,
+        "from": 146,
         "to": 159.3
       },
       {
@@ -1387,8 +1387,8 @@
         "n": 12,
         "anchor": "lblCtrlR",
         "place": "right",
-        "from": 193.0,
-        "to": 213.0
+        "from": 193,
+        "to": 213
       },
       {
         "n": 13,
@@ -1416,7 +1416,7 @@
         "anchor": "detTabs.tabActiveLocations",
         "place": "below-left",
         "from": 271.5,
-        "to": 290.0
+        "to": 290
       }
     ],
     "highlights": [
@@ -1443,7 +1443,7 @@
       },
       {
         "anchor": "kpiTiles.tileTotalServices",
-        "from": 41.0,
+        "from": 41,
         "to": 41.9,
         "note": "p13 reads the four tiles in order"
       },
@@ -1464,8 +1464,8 @@
       },
       {
         "anchor": "cardStatusR",
-        "from": 64.0,
-        "to": 73.0,
+        "from": 64,
+        "to": 73,
         "note": "p20-p21 active / draft / inactive"
       },
       {
@@ -1476,7 +1476,7 @@
       },
       {
         "anchor": "newSvcR",
-        "from": 95.0,
+        "from": 95,
         "to": 104.3,
         "color": "#dc2626",
         "note": "step 6 do-not-click guardrail: + New Service located, never clicked (read-only lesson)"
@@ -1510,7 +1510,7 @@
       {
         "anchor": "svcTh.thCode",
         "from": 108.7,
-        "to": 115.0,
+        "to": 115,
         "note": "p34-p36 'the controller code' — the support-critical column"
       },
       {
@@ -1530,7 +1530,7 @@
       {
         "anchor": "lblCtrlR",
         "from": 201.95,
-        "to": 205.0,
+        "to": 205,
         "note": "p59 controller code"
       },
       {
@@ -1573,13 +1573,13 @@
       {
         "anchor": "detTabs.tabActiveLocations",
         "from": 274.89,
-        "to": 277.0,
+        "to": 277,
         "note": "p82 recap: Active Locations decides where it sells"
       },
       {
         "anchor": "lblAmtR2",
         "from": 277.44,
-        "to": 281.0,
+        "to": 281,
         "note": "p83 recap: the gears decide what it costs"
       }
     ],
@@ -1619,13 +1619,13 @@
         "note": "wide for the trend and status cards"
       },
       {
-        "t": 76.0,
+        "t": 76,
         "z": 1,
         "cx": 960,
         "cy": 540
       },
       {
-        "t": 77.0,
+        "t": 77,
         "z": 1.3,
         "cx": 1080,
         "cy": 430,
@@ -1633,13 +1633,13 @@
         "note": "step 5 close framing (130% per shot list): the Service Distribution bars"
       },
       {
-        "t": 89.0,
+        "t": 89,
         "z": 1.3,
         "cx": 1080,
         "cy": 430
       },
       {
-        "t": 90.0,
+        "t": 90,
         "z": 1,
         "cx": 960,
         "cy": 540,
@@ -1647,13 +1647,13 @@
         "note": "wide through the list tour, the guardrail, the columns, search, pagination, and opening the detail"
       },
       {
-        "t": 192.0,
+        "t": 192,
         "z": 1,
         "cx": 960,
         "cy": 540
       },
       {
-        "t": 193.0,
+        "t": 193,
         "z": 1.3,
         "cx": 760,
         "cy": 560,
@@ -1704,6 +1704,14 @@
     "ask shyne"
   ],
   "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
     {
       "op": "click",
       "target": "railToggle",

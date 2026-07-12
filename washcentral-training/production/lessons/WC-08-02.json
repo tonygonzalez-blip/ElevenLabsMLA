@@ -5,67 +5,177 @@
   "audioDurationS": 165.329,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/maint-issues.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "targets": {
-    "railToggle": { "selector": ".wc-rail-panel-toggle" },
-    "maintGroupLbl": { "js": "[...document.querySelectorAll('aside.sidebar .menu-group-lbl')].find(e=>/^Maintenance$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)", "textRect": true },
-    "linkIssues": { "selector": "aside.sidebar a[href=\"maint-issues.html\"]" },
-    "linkSchedule": { "selector": "aside.sidebar a[href=\"maint-schedule.html\"]" },
-    "linkEquipment": { "selector": "aside.sidebar a[href=\"maint-equipment.html\"]" },
-    "linkChecklist": { "selector": "aside.sidebar a[href=\"maint-checklist.html\"]" },
-    "linkParts": { "selector": "aside.sidebar a[href=\"maint-parts.html\"]" },
-    "newRecordBtn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/\\+\\s*New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "exportBtn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "filtersBtn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-
-    "schTasks": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Scheduled Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "schDue": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Due This Week/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "schOverdue": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Overdue/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "schCompleted": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Completed This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "schCardCompleted": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Tasks Completed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "schCardFreq": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Tasks by Frequency/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "schCardCompliance": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Schedule Compliance/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thTask": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Task$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "thNextDue": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Next Due$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowLubricate": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Lubricate conveyor chain/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)" },
-    "nextDueCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Lubricate conveyor chain/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[6]:null})()" },
-
-    "eqAssets": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Assets/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "eqOperational": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Operational/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "eqInRepair": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/In Repair/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "eqRetired": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Retired/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "eqCardGrowth": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Asset Growth/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "eqCardType": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Assets by Type/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "eqCardHealth": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Equipment Health/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thStatusEq": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowInRepair": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Chemical Pump Array/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)" },
-    "statusRepairCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Chemical Pump Array/.test(t.textContent||''));if(!tr)return null;const c=tr.querySelectorAll('td');return c[c.length-1]})()" },
-
-    "ckTotal": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Checklists/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ckToday": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Completed Today/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ckAvg": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Completion/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ckOverdue": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Overdue/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ckCardRate": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Completion Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ckCardType": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Checklists by Type/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ckCardStatus": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Checklist Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thCompletion": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Completion/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowDailyOpening": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Daily Opening Checklist/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)" },
-    "rowWeeklySafety": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Weekly Safety Inspection/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)" },
-    "dailyOpenComplCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Daily Opening Checklist/.test(t.textContent||''));if(!tr)return null;const c=tr.querySelectorAll('td');return c[c.length-1]})()" },
-    "weeklySafetyComplCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Weekly Safety Inspection/.test(t.textContent||''));if(!tr)return null;const c=tr.querySelectorAll('td');return c[c.length-1]})()" },
-
-    "ptTotal": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Parts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ptLow": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Low Stock/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ptOnOrder": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/On Order/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ptValue": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Value/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ptCardUsage": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Parts Usage/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ptCardCategory": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Parts by Category/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "ptCardAvail": { "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Parts Availability/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "thQty": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Qty on Hand$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "thReorder": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Reorder Pt$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowPRT001": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/PRT-001/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)" },
-    "qtyCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/PRT-001/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[3]:null})()" },
-    "reorderCell": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/PRT-001/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[4]:null})()" }
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "maintGroupLbl": {
+      "js": "[...document.querySelectorAll('aside.sidebar .menu-group-lbl')].find(e=>/^Maintenance$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "linkIssues": {
+      "selector": "aside.sidebar a[href=\"maint-issues.html\"]"
+    },
+    "linkSchedule": {
+      "selector": "aside.sidebar a[href=\"maint-schedule.html\"]"
+    },
+    "linkEquipment": {
+      "selector": "aside.sidebar a[href=\"maint-equipment.html\"]"
+    },
+    "linkChecklist": {
+      "selector": "aside.sidebar a[href=\"maint-checklist.html\"]"
+    },
+    "linkParts": {
+      "selector": "aside.sidebar a[href=\"maint-parts.html\"]"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/\\+\\s*New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "schTasks": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Scheduled Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "schDue": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Due This Week/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "schOverdue": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Overdue/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "schCompleted": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Completed This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "schCardCompleted": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Tasks Completed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "schCardFreq": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Tasks by Frequency/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "schCardCompliance": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Schedule Compliance/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thTask": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Task$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thNextDue": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Next Due$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowLubricate": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Lubricate conveyor chain/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "nextDueCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Lubricate conveyor chain/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[6]:null})()"
+    },
+    "eqAssets": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Assets/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "eqOperational": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Operational/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "eqInRepair": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/In Repair/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "eqRetired": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Retired/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "eqCardGrowth": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Asset Growth/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "eqCardType": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Assets by Type/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "eqCardHealth": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Equipment Health/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatusEq": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowInRepair": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Chemical Pump Array/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "statusRepairCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Chemical Pump Array/.test(t.textContent||''));if(!tr)return null;const c=tr.querySelectorAll('td');return c[c.length-1]})()"
+    },
+    "ckTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Checklists/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ckToday": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Completed Today/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ckAvg": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Completion/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ckOverdue": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Overdue/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ckCardRate": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Completion Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ckCardType": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Checklists by Type/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ckCardStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Checklist Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thCompletion": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Completion/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowDailyOpening": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Daily Opening Checklist/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowWeeklySafety": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Weekly Safety Inspection/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "dailyOpenComplCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Daily Opening Checklist/.test(t.textContent||''));if(!tr)return null;const c=tr.querySelectorAll('td');return c[c.length-1]})()"
+    },
+    "weeklySafetyComplCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Weekly Safety Inspection/.test(t.textContent||''));if(!tr)return null;const c=tr.querySelectorAll('td');return c[c.length-1]})()"
+    },
+    "ptTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Parts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ptLow": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Low Stock/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ptOnOrder": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/On Order/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ptValue": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Value/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ptCardUsage": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Parts Usage/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ptCardCategory": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Parts by Category/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "ptCardAvail": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Parts Availability/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thQty": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Qty on Hand$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thReorder": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Reorder Pt$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowPRT001": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/PRT-001/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "qtyCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/PRT-001/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[3]:null})()"
+    },
+    "reorderCell": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/PRT-001/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[4]:null})()"
+    }
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
@@ -84,6 +194,14 @@
   },
   "preflight": [
     {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -95,202 +213,1616 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.6, "predicate": "onIssues", "note": "start page identity before capture (startUrl maint-issues.html — the WC-08-01 Issues list, reached in-app; its direct URL loads, unlike the four target pages)" },
-    { "op": "assert", "at": -1.2, "predicate": "sidebarExpanded", "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed" },
-    { "op": "assert", "at": -0.8, "predicate": "issuesReady", "note": "loaded: on Issues, KPI band present, all five MAINTENANCE links visible, no 404/error state" },
-    { "op": "watch", "key": "sidebarHeld", "from": 1.0, "to": 164.5, "predicate": "sidebarExpanded", "everyMs": 2000, "mustHold": true },
-
-    { "op": "pointer-enter", "at": 0.35, "from": [160, 1079], "to": { "target": "linkIssues", "offset": [230, 0], "outside": true }, "note": "enter from the bottom edge and settle beside the MAINTENANCE rail as p01 says 'Start in Operations and look down the sidebar'" },
-    { "op": "log-rects", "at": 0.9, "key": "sideNav", "targets": ["linkIssues", "linkSchedule", "linkEquipment", "linkChecklist", "linkParts"] },
-    { "op": "log-rect", "at": 1.15, "key": "maintGrpRect", "target": "maintGroupLbl" },
-
-    { "op": "move", "at": 2.0, "to": { "target": "linkIssues", "offset": [215, 4], "outside": true }, "note": "p01 tail / p02: rest beside the MAINTENANCE group; never on the nav links" },
-    { "op": "move", "at": 6.3, "to": { "target": "linkIssues", "offset": [215, 4], "outside": true }, "note": "p03-p04: hold at the top of the group as the three groups (Maintenance, Incident Reports, Scheduler) and the five entries are named" },
-    { "op": "move", "at": 11.8, "to": { "target": "linkIssues", "offset": [215, 4], "outside": true }, "note": "step 1 (p05): 'The first is Issues, the work-order list you already know' — beside the Issues entry (WC-08-01)" },
-    { "op": "move", "at": 15.3, "to": { "target": "linkSchedule", "offset": [215, 4], "outside": true }, "note": "step 1 (p06): 'The four below it' — begin the slow top-to-bottom sweep of the four covered entries" },
-    { "op": "move", "at": 16.7, "to": { "target": "linkEquipment", "offset": [215, 4], "outside": true } },
-    { "op": "move", "at": 17.9, "to": { "target": "linkChecklist", "offset": [215, 4], "outside": true } },
-    { "op": "move", "at": 19.1, "to": { "target": "linkParts", "offset": [215, 4], "outside": true }, "note": "step 1 (p07): 'the routines and gear and parts that sit behind every ticket'" },
-    { "op": "move", "at": 21.8, "to": { "point": [680, 720] }, "note": "p08 tail 'That set is today's tour' — ease off the rail" },
-
-    { "op": "move", "at": 27.57, "to": { "target": "linkSchedule", "offset": [0, 0] }, "note": "step 2 approach at the p09 cue 'Click Maintenance Schedule'" },
-    { "op": "click", "target": "linkSchedule", "pressAt": 29.2, "hoverMs": 380, "postcondition": "onSchedule", "timeoutMs": 8000, "nav": true, "note": "step 2: genuine in-app sidebar navigation (read-only, opens a list; the direct URL 404s, only the sidebar route loads it). Press inside the p09 trailing gap (cue ends 28.94, p10 starts 29.63)" },
-    { "op": "wait-stable", "afterNav": true, "key": "schedStable", "predicate": "scheduleLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 30.0, "predicate": "scheduleLoaded", "note": "load check: on Maintenance Schedule, 4 KPI tiles, Next Due column, rows, no error; abort otherwise" },
-    { "op": "log-rects", "at": 30.15, "key": "schedTiles", "targets": ["schTasks", "schDue", "schOverdue", "schCompleted"] },
-    { "op": "log-rects", "at": 30.3, "key": "schedTh", "targets": ["thTask", "thNextDue"] },
-    { "op": "log-rect", "at": 30.4, "key": "rowLubRect", "target": "rowLubricate" },
-    { "op": "log-rect", "at": 30.5, "key": "nextDueRect", "target": "nextDueCell" },
-    { "op": "log-rects", "at": 30.6, "key": "schedCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "watch", "key": "schedHold", "from": 31.0, "to": 53.5, "predicate": "onSchedule", "everyMs": 1000, "mustHold": true, "note": "step 2 read-only hold: the Maintenance Schedule page never changes — no row opened, no task edited, nothing created" },
-    { "op": "move", "at": 31.98, "to": { "target": "schTasks", "offset": [0, 12] }, "note": "step 2 (p11): slow left-to-right sweep of the four KPI tiles (42 / 6 / 2 / 18)" },
-    { "op": "move", "at": 33.5, "to": { "target": "schDue", "offset": [0, 12] } },
-    { "op": "move", "at": 35.2, "to": { "target": "schOverdue", "offset": [0, 12] } },
-    { "op": "move", "at": 36.8, "to": { "target": "schCompleted", "offset": [0, 12] } },
-    { "op": "move", "at": 38.44, "to": { "target": "rowLubricate", "offset": [40, 0] }, "note": "step 2 (p12-p13): 'Each row is a job that repeats' — the Lubricate conveyor chain / Inspect chemical pumps rows" },
-    { "op": "move", "at": 40.55, "to": { "target": "rowLubricate", "offset": [600, 0] } },
-    { "op": "move", "at": 42.65, "to": { "target": "thNextDue", "offset": [0, 0] }, "note": "step 2 (p14): the NEXT DUE column header — the column a manager reads first; camera punches in" },
-    { "op": "move", "at": 44.0, "to": { "target": "nextDueCell", "offset": [0, 0] }, "note": "the Lubricate row's Next Due (2025-06-01)" },
-    { "op": "move", "at": 45.5, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 2 guardrail (p15): rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; adding or editing a scheduled task mutates a live calendar, so they are never pressed" },
-
-    { "op": "move", "at": 52.31, "to": { "target": "linkEquipment", "offset": [0, 0] }, "note": "step 3 approach at the p16 cue 'Now Equipment Registry'" },
-    { "op": "click", "target": "linkEquipment", "pressAt": 54.1, "hoverMs": 380, "postcondition": "onEquipment", "timeoutMs": 8000, "nav": true, "note": "step 3: genuine in-app sidebar navigation (read-only; direct URL 404s). Press inside the p16 trailing gap (cue ends 54.02, p17 starts 54.40)" },
-    { "op": "wait-stable", "afterNav": true, "key": "eqStable", "predicate": "equipmentLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 54.9, "predicate": "equipmentLoaded", "note": "load check: on Equipment Registry, 4 tiles, Status column, rows, no error" },
-    { "op": "log-rects", "at": 55.0, "key": "eqTiles", "targets": ["eqAssets", "eqOperational", "eqInRepair", "eqRetired"] },
-    { "op": "log-rect", "at": 55.15, "key": "eqStatusRect", "target": "thStatusEq" },
-    { "op": "log-rect", "at": 55.25, "key": "rowRepairRect", "target": "rowInRepair" },
-    { "op": "log-rect", "at": 55.35, "key": "statusRepairRect", "target": "statusRepairCell" },
-    { "op": "log-rects", "at": 55.45, "key": "eqCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "watch", "key": "eqHold", "from": 55.6, "to": 77.6, "predicate": "onEquipment", "everyMs": 1000, "mustHold": true, "note": "step 3 read-only hold: the Equipment Registry page never changes — no asset row opened or edited" },
-    { "op": "move", "at": 55.7, "to": { "target": "eqAssets", "offset": [0, 12] }, "note": "step 3 (p17-p18): land on the KPI band — four total assets, three operational, one in repair, zero retired" },
-    { "op": "move", "at": 59.35, "to": { "target": "rowInRepair", "offset": [200, 0] }, "note": "step 3 (p19): the four assets named across the NAME column (blower system, chemical pump array, main tunnel conveyor, POS terminal)" },
-    { "op": "move", "at": 60.52, "to": { "target": "thStatusEq", "offset": [0, 0] }, "note": "step 3 (p20): 'Three are operational and one sits in repair' — the STATUS column; camera punches in" },
-    { "op": "move", "at": 62.5, "to": { "target": "statusRepairCell", "offset": [0, 0] }, "note": "the Chemical Pump Array 'in repair' status cell" },
-    { "op": "move", "at": 65.2, "to": { "target": "statusRepairCell", "offset": [0, 0] }, "note": "step 3 (p21): 'When a caller says the air dryer is down' — hold on the flagged unit" },
-    { "op": "move", "at": 68.16, "to": { "target": "rowInRepair", "offset": [0, 0] }, "note": "step 3 (p22): rest on the in-repair row; the row itself is never clicked" },
-    { "op": "move", "at": 72.0, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 3 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; creating or editing an asset is a mutation, never pressed" },
-
-    { "op": "move", "at": 76.59, "to": { "target": "linkChecklist", "offset": [0, 0] }, "note": "step 4 approach at the p23 cue 'Open Checklists'" },
-    { "op": "click", "target": "linkChecklist", "pressAt": 78.2, "hoverMs": 380, "postcondition": "onChecklist", "timeoutMs": 8000, "nav": true, "note": "step 4: genuine in-app sidebar navigation (read-only; direct URL 404s). Press inside the p23 trailing 1.4s break after 'Open Checklists' (block onset 76.59), well before the p25 detail line" },
-    { "op": "wait-stable", "afterNav": true, "key": "ckStable", "predicate": "checklistLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 79.0, "predicate": "checklistLoaded", "note": "load check: on Maintenance Checklists, 4 tiles, Completion % column, rows, no error" },
-    { "op": "log-rects", "at": 79.15, "key": "ckTiles", "targets": ["ckTotal", "ckToday", "ckAvg", "ckOverdue"] },
-    { "op": "log-rect", "at": 79.3, "key": "thCompletionRect", "target": "thCompletion" },
-    { "op": "log-rect", "at": 79.4, "key": "rowDailyRect", "target": "rowDailyOpening" },
-    { "op": "log-rect", "at": 79.5, "key": "rowSafetyRect", "target": "rowWeeklySafety" },
-    { "op": "log-rect", "at": 79.55, "key": "dailyComplRect", "target": "dailyOpenComplCell" },
-    { "op": "log-rect", "at": 79.6, "key": "safetyComplRect", "target": "weeklySafetyComplCell" },
-    { "op": "log-rects", "at": 79.7, "key": "ckCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "watch", "key": "ckHold", "from": 79.9, "to": 104.9, "predicate": "onChecklist", "everyMs": 1000, "mustHold": true, "note": "step 4 read-only hold: the Checklists page never changes — no checklist opened, run, or completed" },
-    { "op": "move", "at": 80.0, "to": { "target": "ckTotal", "offset": [0, 12] }, "note": "step 4 (p24): land on the KPI band (24 / 8 / 94% / 1)" },
-    { "op": "move", "at": 83.87, "to": { "target": "rowDailyOpening", "offset": [300, 0] }, "note": "step 4 (p25): 'Daily opening and closing walks, a weekly safety inspection, a monthly deep clean' — sweep the rows" },
-    { "op": "move", "at": 86.5, "to": { "target": "rowWeeklySafety", "offset": [300, 0] } },
-    { "op": "move", "at": 88.96, "to": { "target": "thCompletion", "offset": [0, 0] }, "note": "step 4 (p26): the COMPLETION % column; camera punches in" },
-    { "op": "move", "at": 91.0, "to": { "target": "dailyOpenComplCell", "offset": [0, 0] }, "note": "Daily Opening reads 100%" },
-    { "op": "move", "at": 92.71, "to": { "target": "ckAvg", "offset": [0, 12] }, "note": "step 4 (p27): 'the average sits at ninety four percent' — the Avg Completion tile" },
-    { "op": "move", "at": 94.6, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 4 guardrail (p28): rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; running or completing a checklist is a mutation, never pressed" },
-    { "op": "move", "at": 99.0, "to": { "point": [900, 320] }, "note": "step 4 (p29-p30): 'not the Lube Checklists page over in Hardware settings' — ease onto the list body while the on-screen caution note shows" },
-
-    { "op": "move", "at": 102.955, "to": { "target": "linkParts", "offset": [0, 0] }, "note": "step 5 approach at the p31 cue 'Last one. Parts and Supplies'" },
-    { "op": "click", "target": "linkParts", "pressAt": 105.3, "hoverMs": 380, "postcondition": "onParts", "timeoutMs": 8000, "nav": true, "note": "step 5: genuine in-app sidebar navigation (read-only; direct URL 404s). Press inside the p31 trailing gap (cue ends 105.07, p32 starts 105.75)" },
-    { "op": "wait-stable", "afterNav": true, "key": "ptStable", "predicate": "partsLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 106.0, "predicate": "partsLoaded", "note": "load check: on Parts & Supplies, 4 tiles, Qty on Hand column, rows, no error" },
-    { "op": "log-rects", "at": 106.15, "key": "ptTiles", "targets": ["ptTotal", "ptLow", "ptOnOrder", "ptValue"] },
-    { "op": "log-rects", "at": 106.3, "key": "ptTh", "targets": ["thQty", "thReorder"] },
-    { "op": "log-rect", "at": 106.4, "key": "rowPRTRect", "target": "rowPRT001" },
-    { "op": "log-rect", "at": 106.5, "key": "qtyRect", "target": "qtyCell" },
-    { "op": "log-rect", "at": 106.6, "key": "reorderRect", "target": "reorderCell" },
-    { "op": "log-rects", "at": 106.7, "key": "ptCtl", "targets": ["newRecordBtn", "exportBtn"] },
-    { "op": "watch", "key": "ptHold", "from": 106.9, "to": 133.2, "predicate": "onParts", "everyMs": 1000, "mustHold": true, "note": "step 5 read-only hold: the Parts & Supplies page never changes — no part opened, ordered, or edited" },
-    { "op": "move", "at": 107.0, "to": { "target": "ptTotal", "offset": [0, 12] }, "note": "step 5 (p32): land on the KPI band" },
-    { "op": "move", "at": 108.05, "to": { "target": "rowPRT001", "offset": [300, 0] }, "note": "step 5 (p33): 'Drive belts, pump seal kits, dryer filters, a spare power supply' — sweep the PRT rows" },
-    { "op": "move", "at": 109.15, "to": { "target": "ptTotal", "offset": [0, 12] }, "note": "step 5 (p34): '142 parts' — the Total Parts tile" },
-    { "op": "move", "at": 111.0, "to": { "target": "ptValue", "offset": [0, 12] }, "note": "'about eighteen thousand dollars' — the Total Value tile" },
-    { "op": "move", "at": 113.26, "to": { "target": "thQty", "offset": [0, 0] }, "note": "step 5 (p35): 'Read quantity on hand against the reorder point' — the QTY ON HAND header; camera punches in" },
-    { "op": "move", "at": 115.0, "to": { "target": "thReorder", "offset": [0, 0] }, "note": "the REORDER PT header beside it" },
-    { "op": "move", "at": 117.83, "to": { "target": "qtyCell", "offset": [0, 0] }, "note": "step 5 (p36): 'answer a do we have it call in seconds' — PRT-001 reads 4 on hand" },
-    { "op": "move", "at": 119.7, "to": { "target": "reorderCell", "offset": [0, 0] }, "note": "reorder at 2" },
-    { "op": "move", "at": 121.8, "to": { "target": "newRecordBtn", "offset": [-72, 44], "outside": true }, "note": "step 5 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; adding or ordering a part is a mutation, never pressed" },
-    { "op": "move", "at": 125.5, "to": { "point": [900, 320] }, "note": "step 5 (p37): 'keep it straight from Chemicals and Supplies over in Inventory' — ease onto the list while the separate-from-Inventory note shows" },
-    { "op": "move", "at": 128.5, "to": { "point": [1150, 320] }, "note": "p38 tail 'this one is upkeep'" },
-
-    { "op": "move", "at": 132.351, "to": { "target": "linkIssues", "offset": [0, 0] }, "note": "step 6 approach at the p39 cue 'So, the map' — return to Issues to show the whole MAINTENANCE group" },
-    { "op": "click", "target": "linkIssues", "pressAt": 133.5, "hoverMs": 340, "postcondition": "onIssues", "timeoutMs": 8000, "nav": true, "note": "step 6: genuine in-app sidebar navigation back to Issues (read-only). Press inside the p39 trailing gap (cue ends 133.29, p40 starts 134.02)" },
-    { "op": "wait-stable", "afterNav": true, "key": "isStable", "predicate": "issuesReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 134.2, "predicate": "issuesReady", "note": "recap load check: back on Issues, KPI band and all five MAINTENANCE links present" },
-    { "op": "log-rects", "at": 134.3, "key": "sideNavRecap", "targets": ["linkIssues", "linkSchedule", "linkEquipment", "linkChecklist", "linkParts"] },
-    { "op": "assert", "at": 134.4, "predicate": "maintLinksVisible", "note": "recap needs the five MAINTENANCE links on screen" },
-    { "op": "watch", "key": "issuesHold", "from": 135.0, "to": 163.4, "predicate": "onIssues", "everyMs": 1000, "mustHold": true, "note": "step 6 read-only hold: the recap stays on Issues; nothing was created or edited on any of the four toured pages" },
-    { "op": "move", "at": 135.0, "to": { "target": "linkIssues", "offset": [215, 4], "outside": true }, "note": "step 6 (p40): 'Four live pages under Maintenance, right beside Issues' — beside the Issues anchor" },
-    { "op": "move", "at": 138.49, "to": { "target": "linkSchedule", "offset": [215, 4], "outside": true }, "note": "step 6 recap, spoken order (p41): 'A recurring job lands on the Schedule, and Next Due says when'" },
-    { "op": "move", "at": 140.77, "to": { "target": "linkEquipment", "offset": [215, 4], "outside": true }, "note": "p42: 'A question about a machine goes to the Registry'" },
-    { "op": "move", "at": 143.03, "to": { "target": "linkChecklist", "offset": [215, 4], "outside": true }, "note": "p43: 'The steps a tech follows are the Checklists'" },
-    { "op": "move", "at": 146.15, "to": { "target": "linkParts", "offset": [215, 4], "outside": true }, "note": "p44: 'The parts a repair burns through are Parts and Supplies'" },
-    { "op": "move", "at": 149.24, "to": { "point": [420, 720] }, "note": "p45 'One habit before you go' — ease down the rail" },
-    { "op": "move", "at": 153.52, "to": { "target": "linkIssues", "offset": [215, 4], "outside": true }, "note": "step 6 (p46): 'Reach these pages from the sidebar inside Operations' — gesture up the whole group" },
-    { "op": "move", "at": 156.5, "to": { "point": [300, 650] }, "note": "p47: 'typing an address straight into the browser still fails' — the sidebar is the front door, not the URL bar" },
-    { "op": "move", "at": 160.0, "to": { "point": [1520, 930] }, "note": "p48 'The sidebar is the front door' — final park, clear of content and captions as the close lands" },
-    { "op": "assert", "at": 164.6, "predicate": "onIssues", "note": "end state: still on Issues, unchanged; nothing was created or edited on any of the four maintenance pages" }
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onIssues",
+      "note": "start page identity before capture (startUrl maint-issues.html — the WC-08-01 Issues list, reached in-app; its direct URL loads, unlike the four target pages)"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "issuesReady",
+      "note": "loaded: on Issues, KPI band present, all five MAINTENANCE links visible, no 404/error state"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 164.5,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        160,
+        1079
+      ],
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          230,
+          0
+        ],
+        "outside": true
+      },
+      "note": "enter from the bottom edge and settle beside the MAINTENANCE rail as p01 says 'Start in Operations and look down the sidebar'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.9,
+      "key": "sideNav",
+      "targets": [
+        "linkIssues",
+        "linkSchedule",
+        "linkEquipment",
+        "linkChecklist",
+        "linkParts"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.15,
+      "key": "maintGrpRect",
+      "target": "maintGroupLbl"
+    },
+    {
+      "op": "move",
+      "at": 2,
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "p01 tail / p02: rest beside the MAINTENANCE group; never on the nav links"
+    },
+    {
+      "op": "move",
+      "at": 6.3,
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "p03-p04: hold at the top of the group as the three groups (Maintenance, Incident Reports, Scheduler) and the five entries are named"
+    },
+    {
+      "op": "move",
+      "at": 11.8,
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p05): 'The first is Issues, the work-order list you already know' — beside the Issues entry (WC-08-01)"
+    },
+    {
+      "op": "move",
+      "at": 15.3,
+      "to": {
+        "target": "linkSchedule",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p06): 'The four below it' — begin the slow top-to-bottom sweep of the four covered entries"
+    },
+    {
+      "op": "move",
+      "at": 16.7,
+      "to": {
+        "target": "linkEquipment",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 17.9,
+      "to": {
+        "target": "linkChecklist",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 19.1,
+      "to": {
+        "target": "linkParts",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p07): 'the routines and gear and parts that sit behind every ticket'"
+    },
+    {
+      "op": "move",
+      "at": 21.8,
+      "to": {
+        "point": [
+          680,
+          720
+        ]
+      },
+      "note": "p08 tail 'That set is today's tour' — ease off the rail"
+    },
+    {
+      "op": "move",
+      "at": 27.57,
+      "to": {
+        "target": "linkSchedule",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 approach at the p09 cue 'Click Maintenance Schedule'"
+    },
+    {
+      "op": "click",
+      "target": "linkSchedule",
+      "pressAt": 29.2,
+      "hoverMs": 380,
+      "postcondition": "onSchedule",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 2: genuine in-app sidebar navigation (read-only, opens a list; the direct URL 404s, only the sidebar route loads it). Press inside the p09 trailing gap (cue ends 28.94, p10 starts 29.63)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "schedStable",
+      "predicate": "scheduleLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 30,
+      "predicate": "scheduleLoaded",
+      "note": "load check: on Maintenance Schedule, 4 KPI tiles, Next Due column, rows, no error; abort otherwise"
+    },
+    {
+      "op": "log-rects",
+      "at": 30.15,
+      "key": "schedTiles",
+      "targets": [
+        "schTasks",
+        "schDue",
+        "schOverdue",
+        "schCompleted"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 30.3,
+      "key": "schedTh",
+      "targets": [
+        "thTask",
+        "thNextDue"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 30.4,
+      "key": "rowLubRect",
+      "target": "rowLubricate"
+    },
+    {
+      "op": "log-rect",
+      "at": 30.5,
+      "key": "nextDueRect",
+      "target": "nextDueCell"
+    },
+    {
+      "op": "log-rects",
+      "at": 30.6,
+      "key": "schedCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "schedHold",
+      "from": 31,
+      "to": 53.5,
+      "predicate": "onSchedule",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "step 2 read-only hold: the Maintenance Schedule page never changes — no row opened, no task edited, nothing created"
+    },
+    {
+      "op": "move",
+      "at": 31.98,
+      "to": {
+        "target": "schTasks",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p11): slow left-to-right sweep of the four KPI tiles (42 / 6 / 2 / 18)"
+    },
+    {
+      "op": "move",
+      "at": 33.5,
+      "to": {
+        "target": "schDue",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 35.2,
+      "to": {
+        "target": "schOverdue",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 36.8,
+      "to": {
+        "target": "schCompleted",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 38.44,
+      "to": {
+        "target": "rowLubricate",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 2 (p12-p13): 'Each row is a job that repeats' — the Lubricate conveyor chain / Inspect chemical pumps rows"
+    },
+    {
+      "op": "move",
+      "at": 40.55,
+      "to": {
+        "target": "rowLubricate",
+        "offset": [
+          600,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 42.65,
+      "to": {
+        "target": "thNextDue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 (p14): the NEXT DUE column header — the column a manager reads first; camera punches in"
+    },
+    {
+      "op": "move",
+      "at": 44,
+      "to": {
+        "target": "nextDueCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "the Lubricate row's Next Due (2025-06-01)"
+    },
+    {
+      "op": "move",
+      "at": 45.5,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 2 guardrail (p15): rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; adding or editing a scheduled task mutates a live calendar, so they are never pressed"
+    },
+    {
+      "op": "move",
+      "at": 52.31,
+      "to": {
+        "target": "linkEquipment",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 approach at the p16 cue 'Now Equipment Registry'"
+    },
+    {
+      "op": "click",
+      "target": "linkEquipment",
+      "pressAt": 54.1,
+      "hoverMs": 380,
+      "postcondition": "onEquipment",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 3: genuine in-app sidebar navigation (read-only; direct URL 404s). Press inside the p16 trailing gap (cue ends 54.02, p17 starts 54.40)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "eqStable",
+      "predicate": "equipmentLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 54.9,
+      "predicate": "equipmentLoaded",
+      "note": "load check: on Equipment Registry, 4 tiles, Status column, rows, no error"
+    },
+    {
+      "op": "log-rects",
+      "at": 55,
+      "key": "eqTiles",
+      "targets": [
+        "eqAssets",
+        "eqOperational",
+        "eqInRepair",
+        "eqRetired"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 55.15,
+      "key": "eqStatusRect",
+      "target": "thStatusEq"
+    },
+    {
+      "op": "log-rect",
+      "at": 55.25,
+      "key": "rowRepairRect",
+      "target": "rowInRepair"
+    },
+    {
+      "op": "log-rect",
+      "at": 55.35,
+      "key": "statusRepairRect",
+      "target": "statusRepairCell"
+    },
+    {
+      "op": "log-rects",
+      "at": 55.45,
+      "key": "eqCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "eqHold",
+      "from": 55.6,
+      "to": 77.6,
+      "predicate": "onEquipment",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "step 3 read-only hold: the Equipment Registry page never changes — no asset row opened or edited"
+    },
+    {
+      "op": "move",
+      "at": 55.7,
+      "to": {
+        "target": "eqAssets",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 3 (p17-p18): land on the KPI band — four total assets, three operational, one in repair, zero retired"
+    },
+    {
+      "op": "move",
+      "at": 59.35,
+      "to": {
+        "target": "rowInRepair",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 3 (p19): the four assets named across the NAME column (blower system, chemical pump array, main tunnel conveyor, POS terminal)"
+    },
+    {
+      "op": "move",
+      "at": 60.52,
+      "to": {
+        "target": "thStatusEq",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p20): 'Three are operational and one sits in repair' — the STATUS column; camera punches in"
+    },
+    {
+      "op": "move",
+      "at": 62.5,
+      "to": {
+        "target": "statusRepairCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "the Chemical Pump Array 'in repair' status cell"
+    },
+    {
+      "op": "move",
+      "at": 65.2,
+      "to": {
+        "target": "statusRepairCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p21): 'When a caller says the air dryer is down' — hold on the flagged unit"
+    },
+    {
+      "op": "move",
+      "at": 68.16,
+      "to": {
+        "target": "rowInRepair",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p22): rest on the in-repair row; the row itself is never clicked"
+    },
+    {
+      "op": "move",
+      "at": 72,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 3 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; creating or editing an asset is a mutation, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 76.59,
+      "to": {
+        "target": "linkChecklist",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 approach at the p23 cue 'Open Checklists'"
+    },
+    {
+      "op": "click",
+      "target": "linkChecklist",
+      "pressAt": 78.2,
+      "hoverMs": 380,
+      "postcondition": "onChecklist",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 4: genuine in-app sidebar navigation (read-only; direct URL 404s). Press inside the p23 trailing 1.4s break after 'Open Checklists' (block onset 76.59), well before the p25 detail line"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ckStable",
+      "predicate": "checklistLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 79,
+      "predicate": "checklistLoaded",
+      "note": "load check: on Maintenance Checklists, 4 tiles, Completion % column, rows, no error"
+    },
+    {
+      "op": "log-rects",
+      "at": 79.15,
+      "key": "ckTiles",
+      "targets": [
+        "ckTotal",
+        "ckToday",
+        "ckAvg",
+        "ckOverdue"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 79.3,
+      "key": "thCompletionRect",
+      "target": "thCompletion"
+    },
+    {
+      "op": "log-rect",
+      "at": 79.4,
+      "key": "rowDailyRect",
+      "target": "rowDailyOpening"
+    },
+    {
+      "op": "log-rect",
+      "at": 79.5,
+      "key": "rowSafetyRect",
+      "target": "rowWeeklySafety"
+    },
+    {
+      "op": "log-rect",
+      "at": 79.55,
+      "key": "dailyComplRect",
+      "target": "dailyOpenComplCell"
+    },
+    {
+      "op": "log-rect",
+      "at": 79.6,
+      "key": "safetyComplRect",
+      "target": "weeklySafetyComplCell"
+    },
+    {
+      "op": "log-rects",
+      "at": 79.7,
+      "key": "ckCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "ckHold",
+      "from": 79.9,
+      "to": 104.9,
+      "predicate": "onChecklist",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "step 4 read-only hold: the Checklists page never changes — no checklist opened, run, or completed"
+    },
+    {
+      "op": "move",
+      "at": 80,
+      "to": {
+        "target": "ckTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p24): land on the KPI band (24 / 8 / 94% / 1)"
+    },
+    {
+      "op": "move",
+      "at": 83.87,
+      "to": {
+        "target": "rowDailyOpening",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 4 (p25): 'Daily opening and closing walks, a weekly safety inspection, a monthly deep clean' — sweep the rows"
+    },
+    {
+      "op": "move",
+      "at": 86.5,
+      "to": {
+        "target": "rowWeeklySafety",
+        "offset": [
+          300,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 88.96,
+      "to": {
+        "target": "thCompletion",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p26): the COMPLETION % column; camera punches in"
+    },
+    {
+      "op": "move",
+      "at": 91,
+      "to": {
+        "target": "dailyOpenComplCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Daily Opening reads 100%"
+    },
+    {
+      "op": "move",
+      "at": 92.71,
+      "to": {
+        "target": "ckAvg",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p27): 'the average sits at ninety four percent' — the Avg Completion tile"
+    },
+    {
+      "op": "move",
+      "at": 94.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 4 guardrail (p28): rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; running or completing a checklist is a mutation, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 99,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 4 (p29-p30): 'not the Lube Checklists page over in Hardware settings' — ease onto the list body while the on-screen caution note shows"
+    },
+    {
+      "op": "move",
+      "at": 102.955,
+      "to": {
+        "target": "linkParts",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 approach at the p31 cue 'Last one. Parts and Supplies'"
+    },
+    {
+      "op": "click",
+      "target": "linkParts",
+      "pressAt": 105.3,
+      "hoverMs": 380,
+      "postcondition": "onParts",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5: genuine in-app sidebar navigation (read-only; direct URL 404s). Press inside the p31 trailing gap (cue ends 105.07, p32 starts 105.75)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ptStable",
+      "predicate": "partsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 106,
+      "predicate": "partsLoaded",
+      "note": "load check: on Parts & Supplies, 4 tiles, Qty on Hand column, rows, no error"
+    },
+    {
+      "op": "log-rects",
+      "at": 106.15,
+      "key": "ptTiles",
+      "targets": [
+        "ptTotal",
+        "ptLow",
+        "ptOnOrder",
+        "ptValue"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 106.3,
+      "key": "ptTh",
+      "targets": [
+        "thQty",
+        "thReorder"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 106.4,
+      "key": "rowPRTRect",
+      "target": "rowPRT001"
+    },
+    {
+      "op": "log-rect",
+      "at": 106.5,
+      "key": "qtyRect",
+      "target": "qtyCell"
+    },
+    {
+      "op": "log-rect",
+      "at": 106.6,
+      "key": "reorderRect",
+      "target": "reorderCell"
+    },
+    {
+      "op": "log-rects",
+      "at": 106.7,
+      "key": "ptCtl",
+      "targets": [
+        "newRecordBtn",
+        "exportBtn"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "ptHold",
+      "from": 106.9,
+      "to": 133.2,
+      "predicate": "onParts",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "step 5 read-only hold: the Parts & Supplies page never changes — no part opened, ordered, or edited"
+    },
+    {
+      "op": "move",
+      "at": 107,
+      "to": {
+        "target": "ptTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 5 (p32): land on the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 108.05,
+      "to": {
+        "target": "rowPRT001",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 5 (p33): 'Drive belts, pump seal kits, dryer filters, a spare power supply' — sweep the PRT rows"
+    },
+    {
+      "op": "move",
+      "at": 109.15,
+      "to": {
+        "target": "ptTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 5 (p34): '142 parts' — the Total Parts tile"
+    },
+    {
+      "op": "move",
+      "at": 111,
+      "to": {
+        "target": "ptValue",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "'about eighteen thousand dollars' — the Total Value tile"
+    },
+    {
+      "op": "move",
+      "at": 113.26,
+      "to": {
+        "target": "thQty",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p35): 'Read quantity on hand against the reorder point' — the QTY ON HAND header; camera punches in"
+    },
+    {
+      "op": "move",
+      "at": 115,
+      "to": {
+        "target": "thReorder",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "the REORDER PT header beside it"
+    },
+    {
+      "op": "move",
+      "at": 117.83,
+      "to": {
+        "target": "qtyCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p36): 'answer a do we have it call in seconds' — PRT-001 reads 4 on hand"
+    },
+    {
+      "op": "move",
+      "at": 119.7,
+      "to": {
+        "target": "reorderCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "reorder at 2"
+    },
+    {
+      "op": "move",
+      "at": 121.8,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -72,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 5 guardrail: rest BESIDE + New Record while the red do-not-click ring marks + New Record and Export; adding or ordering a part is a mutation, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 125.5,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 5 (p37): 'keep it straight from Chemicals and Supplies over in Inventory' — ease onto the list while the separate-from-Inventory note shows"
+    },
+    {
+      "op": "move",
+      "at": 128.5,
+      "to": {
+        "point": [
+          1150,
+          320
+        ]
+      },
+      "note": "p38 tail 'this one is upkeep'"
+    },
+    {
+      "op": "move",
+      "at": 132.351,
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 approach at the p39 cue 'So, the map' — return to Issues to show the whole MAINTENANCE group"
+    },
+    {
+      "op": "click",
+      "target": "linkIssues",
+      "pressAt": 133.5,
+      "hoverMs": 340,
+      "postcondition": "onIssues",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6: genuine in-app sidebar navigation back to Issues (read-only). Press inside the p39 trailing gap (cue ends 133.29, p40 starts 134.02)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "isStable",
+      "predicate": "issuesReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 134.2,
+      "predicate": "issuesReady",
+      "note": "recap load check: back on Issues, KPI band and all five MAINTENANCE links present"
+    },
+    {
+      "op": "log-rects",
+      "at": 134.3,
+      "key": "sideNavRecap",
+      "targets": [
+        "linkIssues",
+        "linkSchedule",
+        "linkEquipment",
+        "linkChecklist",
+        "linkParts"
+      ]
+    },
+    {
+      "op": "assert",
+      "at": 134.4,
+      "predicate": "maintLinksVisible",
+      "note": "recap needs the five MAINTENANCE links on screen"
+    },
+    {
+      "op": "watch",
+      "key": "issuesHold",
+      "from": 135,
+      "to": 163.4,
+      "predicate": "onIssues",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "step 6 read-only hold: the recap stays on Issues; nothing was created or edited on any of the four toured pages"
+    },
+    {
+      "op": "move",
+      "at": 135,
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p40): 'Four live pages under Maintenance, right beside Issues' — beside the Issues anchor"
+    },
+    {
+      "op": "move",
+      "at": 138.49,
+      "to": {
+        "target": "linkSchedule",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 6 recap, spoken order (p41): 'A recurring job lands on the Schedule, and Next Due says when'"
+    },
+    {
+      "op": "move",
+      "at": 140.77,
+      "to": {
+        "target": "linkEquipment",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "p42: 'A question about a machine goes to the Registry'"
+    },
+    {
+      "op": "move",
+      "at": 143.03,
+      "to": {
+        "target": "linkChecklist",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "p43: 'The steps a tech follows are the Checklists'"
+    },
+    {
+      "op": "move",
+      "at": 146.15,
+      "to": {
+        "target": "linkParts",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "p44: 'The parts a repair burns through are Parts and Supplies'"
+    },
+    {
+      "op": "move",
+      "at": 149.24,
+      "to": {
+        "point": [
+          420,
+          720
+        ]
+      },
+      "note": "p45 'One habit before you go' — ease down the rail"
+    },
+    {
+      "op": "move",
+      "at": 153.52,
+      "to": {
+        "target": "linkIssues",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p46): 'Reach these pages from the sidebar inside Operations' — gesture up the whole group"
+    },
+    {
+      "op": "move",
+      "at": 156.5,
+      "to": {
+        "point": [
+          300,
+          650
+        ]
+      },
+      "note": "p47: 'typing an address straight into the browser still fails' — the sidebar is the front door, not the URL bar"
+    },
+    {
+      "op": "move",
+      "at": 160,
+      "to": {
+        "point": [
+          1520,
+          930
+        ]
+      },
+      "note": "p48 'The sidebar is the front door' — final park, clear of content and captions as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 164.6,
+      "predicate": "onIssues",
+      "note": "end state: still on Issues, unchanged; nothing was created or edited on any of the four maintenance pages"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "sideNav.linkSchedule", "place": "right", "from": 2.5, "to": 21.4 },
-      { "n": 2, "anchor": "schedTiles.schTasks", "place": "below-left", "from": 31.98, "to": 45.0 },
-      { "n": 3, "anchor": "eqStatusRect", "place": "left", "from": 60.52, "to": 76.0 },
-      { "n": 4, "anchor": "thCompletionRect", "place": "below-left", "from": 88.96, "to": 102.0 },
-      { "n": 5, "anchor": "ptTh.thQty", "place": "below-left", "from": 113.26, "to": 131.5 },
-      { "n": 6, "anchor": "sideNavRecap.linkSchedule", "place": "right", "from": 138.49, "to": 162.0 }
+      {
+        "n": 1,
+        "anchor": "sideNav.linkSchedule",
+        "place": "right",
+        "from": 2.5,
+        "to": 21.4
+      },
+      {
+        "n": 2,
+        "anchor": "schedTiles.schTasks",
+        "place": "below-left",
+        "from": 31.98,
+        "to": 45
+      },
+      {
+        "n": 3,
+        "anchor": "eqStatusRect",
+        "place": "left",
+        "from": 60.52,
+        "to": 76
+      },
+      {
+        "n": 4,
+        "anchor": "thCompletionRect",
+        "place": "below-left",
+        "from": 88.96,
+        "to": 102
+      },
+      {
+        "n": 5,
+        "anchor": "ptTh.thQty",
+        "place": "below-left",
+        "from": 113.26,
+        "to": 131.5
+      },
+      {
+        "n": 6,
+        "anchor": "sideNavRecap.linkSchedule",
+        "place": "right",
+        "from": 138.49,
+        "to": 162
+      }
     ],
     "highlights": [
-      { "anchor": "sideNav.linkIssues", "from": 11.8, "to": 15.2, "note": "step 1 (p05): Issues — WC-08-01, named not toured" },
-      { "anchor": "sideNav.linkSchedule", "from": 15.3, "to": 16.7, "note": "step 1 (p06): the four covered entries swept in order" },
-      { "anchor": "sideNav.linkEquipment", "from": 16.7, "to": 17.9 },
-      { "anchor": "sideNav.linkChecklist", "from": 17.9, "to": 19.1 },
-      { "anchor": "sideNav.linkParts", "from": 19.1, "to": 21.3 },
-      { "anchor": "schedTiles.schTasks", "from": 31.98, "to": 33.5, "note": "step 2 (p11): KPI sweep in spoken order (42 / 6 / 2 / 18)" },
-      { "anchor": "schedTiles.schDue", "from": 33.5, "to": 35.2 },
-      { "anchor": "schedTiles.schOverdue", "from": 35.2, "to": 36.8 },
-      { "anchor": "schedTiles.schCompleted", "from": 36.8, "to": 38.3 },
-      { "anchor": "schedTh.thNextDue", "from": 42.65, "to": 45.0, "note": "step 2 (p14): NEXT DUE — the column a manager reads first" },
-      { "anchor": "nextDueRect", "from": 44.0, "to": 45.0, "note": "the Lubricate row's Next Due date" },
-      { "anchor": "schedCtl.newRecordBtn", "from": 45.5, "to": 51.8, "color": "#dc2626", "note": "step 2 do-not-click guardrail: + New Record located, never clicked (adding/editing a scheduled task mutates a live calendar)" },
-      { "anchor": "schedCtl.exportBtn", "from": 45.5, "to": 51.8, "color": "#dc2626", "note": "step 2 do-not-click guardrail: Export never clicked" },
-      { "anchor": "eqStatusRect", "from": 60.52, "to": 65.0, "note": "step 3 (p20): the STATUS column" },
-      { "anchor": "statusRepairRect", "from": 62.5, "to": 71.5, "note": "step 3 (p20-p22): the Chemical Pump Array 'in repair' cell — the one flagged unit" },
-      { "anchor": "eqCtl.newRecordBtn", "from": 72.0, "to": 76.0, "color": "#dc2626", "note": "step 3 do-not-click guardrail: + New Record never clicked (creating/editing an asset is a mutation)" },
-      { "anchor": "eqCtl.exportBtn", "from": 72.0, "to": 76.0, "color": "#dc2626", "note": "step 3 do-not-click guardrail: Export never clicked" },
-      { "anchor": "thCompletionRect", "from": 88.96, "to": 92.7, "note": "step 4 (p26): the COMPLETION % column" },
-      { "anchor": "dailyComplRect", "from": 91.0, "to": 92.7, "note": "Daily Opening reads 100%" },
-      { "anchor": "ckCtl.newRecordBtn", "from": 94.6, "to": 99.0, "color": "#dc2626", "note": "step 4 do-not-click guardrail: + New Record never clicked (running/completing a checklist is a mutation)" },
-      { "anchor": "ckCtl.exportBtn", "from": 94.6, "to": 99.0, "color": "#dc2626", "note": "step 4 do-not-click guardrail: Export never clicked" },
-      { "anchor": "ptTh.thQty", "from": 113.26, "to": 117.8, "note": "step 5 (p35): QTY ON HAND — the do-we-have-it pairing" },
-      { "anchor": "ptTh.thReorder", "from": 115.0, "to": 117.8, "note": "against REORDER PT" },
-      { "anchor": "qtyRect", "from": 117.83, "to": 121.5, "note": "step 5 (p36): PRT-001 reads 4 on hand" },
-      { "anchor": "reorderRect", "from": 119.7, "to": 121.5, "note": "reorder at 2" },
-      { "anchor": "ptCtl.newRecordBtn", "from": 121.8, "to": 125.5, "color": "#dc2626", "note": "step 5 do-not-click guardrail: + New Record never clicked (adding/ordering a part is a mutation)" },
-      { "anchor": "ptCtl.exportBtn", "from": 121.8, "to": 125.5, "color": "#dc2626", "note": "step 5 do-not-click guardrail: Export never clicked" },
-      { "anchor": "sideNavRecap.linkSchedule", "from": 138.49, "to": 140.77, "note": "step 6 recap, spoken order (p41): Maintenance Schedule" },
-      { "anchor": "sideNavRecap.linkEquipment", "from": 140.77, "to": 142.35, "note": "p42: Equipment Registry" },
-      { "anchor": "sideNavRecap.linkChecklist", "from": 143.03, "to": 145.47, "note": "p43: Checklists" },
-      { "anchor": "sideNavRecap.linkParts", "from": 146.15, "to": 148.71, "note": "p44: Parts & Supplies" }
+      {
+        "anchor": "sideNav.linkIssues",
+        "from": 11.8,
+        "to": 15.2,
+        "note": "step 1 (p05): Issues — WC-08-01, named not toured"
+      },
+      {
+        "anchor": "sideNav.linkSchedule",
+        "from": 15.3,
+        "to": 16.7,
+        "note": "step 1 (p06): the four covered entries swept in order"
+      },
+      {
+        "anchor": "sideNav.linkEquipment",
+        "from": 16.7,
+        "to": 17.9
+      },
+      {
+        "anchor": "sideNav.linkChecklist",
+        "from": 17.9,
+        "to": 19.1
+      },
+      {
+        "anchor": "sideNav.linkParts",
+        "from": 19.1,
+        "to": 21.3
+      },
+      {
+        "anchor": "schedTiles.schTasks",
+        "from": 31.98,
+        "to": 33.5,
+        "note": "step 2 (p11): KPI sweep in spoken order (42 / 6 / 2 / 18)"
+      },
+      {
+        "anchor": "schedTiles.schDue",
+        "from": 33.5,
+        "to": 35.2
+      },
+      {
+        "anchor": "schedTiles.schOverdue",
+        "from": 35.2,
+        "to": 36.8
+      },
+      {
+        "anchor": "schedTiles.schCompleted",
+        "from": 36.8,
+        "to": 38.3
+      },
+      {
+        "anchor": "schedTh.thNextDue",
+        "from": 42.65,
+        "to": 45,
+        "note": "step 2 (p14): NEXT DUE — the column a manager reads first"
+      },
+      {
+        "anchor": "nextDueRect",
+        "from": 44,
+        "to": 45,
+        "note": "the Lubricate row's Next Due date"
+      },
+      {
+        "anchor": "schedCtl.newRecordBtn",
+        "from": 45.5,
+        "to": 51.8,
+        "color": "#dc2626",
+        "note": "step 2 do-not-click guardrail: + New Record located, never clicked (adding/editing a scheduled task mutates a live calendar)"
+      },
+      {
+        "anchor": "schedCtl.exportBtn",
+        "from": 45.5,
+        "to": 51.8,
+        "color": "#dc2626",
+        "note": "step 2 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "eqStatusRect",
+        "from": 60.52,
+        "to": 65,
+        "note": "step 3 (p20): the STATUS column"
+      },
+      {
+        "anchor": "statusRepairRect",
+        "from": 62.5,
+        "to": 71.5,
+        "note": "step 3 (p20-p22): the Chemical Pump Array 'in repair' cell — the one flagged unit"
+      },
+      {
+        "anchor": "eqCtl.newRecordBtn",
+        "from": 72,
+        "to": 76,
+        "color": "#dc2626",
+        "note": "step 3 do-not-click guardrail: + New Record never clicked (creating/editing an asset is a mutation)"
+      },
+      {
+        "anchor": "eqCtl.exportBtn",
+        "from": 72,
+        "to": 76,
+        "color": "#dc2626",
+        "note": "step 3 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "thCompletionRect",
+        "from": 88.96,
+        "to": 92.7,
+        "note": "step 4 (p26): the COMPLETION % column"
+      },
+      {
+        "anchor": "dailyComplRect",
+        "from": 91,
+        "to": 92.7,
+        "note": "Daily Opening reads 100%"
+      },
+      {
+        "anchor": "ckCtl.newRecordBtn",
+        "from": 94.6,
+        "to": 99,
+        "color": "#dc2626",
+        "note": "step 4 do-not-click guardrail: + New Record never clicked (running/completing a checklist is a mutation)"
+      },
+      {
+        "anchor": "ckCtl.exportBtn",
+        "from": 94.6,
+        "to": 99,
+        "color": "#dc2626",
+        "note": "step 4 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "ptTh.thQty",
+        "from": 113.26,
+        "to": 117.8,
+        "note": "step 5 (p35): QTY ON HAND — the do-we-have-it pairing"
+      },
+      {
+        "anchor": "ptTh.thReorder",
+        "from": 115,
+        "to": 117.8,
+        "note": "against REORDER PT"
+      },
+      {
+        "anchor": "qtyRect",
+        "from": 117.83,
+        "to": 121.5,
+        "note": "step 5 (p36): PRT-001 reads 4 on hand"
+      },
+      {
+        "anchor": "reorderRect",
+        "from": 119.7,
+        "to": 121.5,
+        "note": "reorder at 2"
+      },
+      {
+        "anchor": "ptCtl.newRecordBtn",
+        "from": 121.8,
+        "to": 125.5,
+        "color": "#dc2626",
+        "note": "step 5 do-not-click guardrail: + New Record never clicked (adding/ordering a part is a mutation)"
+      },
+      {
+        "anchor": "ptCtl.exportBtn",
+        "from": 121.8,
+        "to": 125.5,
+        "color": "#dc2626",
+        "note": "step 5 do-not-click guardrail: Export never clicked"
+      },
+      {
+        "anchor": "sideNavRecap.linkSchedule",
+        "from": 138.49,
+        "to": 140.77,
+        "note": "step 6 recap, spoken order (p41): Maintenance Schedule"
+      },
+      {
+        "anchor": "sideNavRecap.linkEquipment",
+        "from": 140.77,
+        "to": 142.35,
+        "note": "p42: Equipment Registry"
+      },
+      {
+        "anchor": "sideNavRecap.linkChecklist",
+        "from": 143.03,
+        "to": 145.47,
+        "note": "p43: Checklists"
+      },
+      {
+        "anchor": "sideNavRecap.linkParts",
+        "from": 146.15,
+        "to": 148.71,
+        "note": "p44: Parts & Supplies"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 2.3, "z": 1.3, "cx": 210, "cy": 250, "ease": true, "note": "step 1: the MAINTENANCE sidebar group (five entries)" },
-      { "t": 21.4, "z": 1.3, "cx": 210, "cy": 250 },
-      { "t": 27.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Maintenance Schedule navigation" },
-      { "t": 30.0, "z": 1.2, "cx": 1030, "cy": 430, "ease": true, "note": "step 2: Maintenance Schedule — KPI band and list in one framing" },
-      { "t": 42.4, "z": 1.2, "cx": 1030, "cy": 430 },
-      { "t": 42.65, "z": 1.35, "cx": 1584, "cy": 560, "ease": true, "note": "step 2: punch in on the NEXT DUE column" },
-      { "t": 45.2, "z": 1.35, "cx": 1584, "cy": 560 },
-      { "t": 45.5, "z": 1.2, "cx": 1450, "cy": 430, "ease": true, "note": "+ New Record / Export guardrail in frame" },
-      { "t": 51.8, "z": 1.2, "cx": 1450, "cy": 430 },
-      { "t": 52.1, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Equipment Registry navigation" },
-      { "t": 55.5, "z": 1.2, "cx": 1030, "cy": 430, "ease": true, "note": "step 3: Equipment Registry — KPI band and list" },
-      { "t": 60.3, "z": 1.2, "cx": 1030, "cy": 430 },
-      { "t": 60.52, "z": 1.35, "cx": 1800, "cy": 560, "ease": true, "note": "step 3: punch in on the STATUS column and the in-repair row" },
-      { "t": 71.5, "z": 1.35, "cx": 1800, "cy": 560 },
-      { "t": 72.0, "z": 1.2, "cx": 1450, "cy": 430, "ease": true, "note": "guardrail in frame" },
-      { "t": 76.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Checklists navigation" },
-      { "t": 79.3, "z": 1.2, "cx": 1030, "cy": 430, "ease": true, "note": "step 4: Maintenance Checklists — KPI band and list" },
-      { "t": 88.7, "z": 1.2, "cx": 1030, "cy": 430 },
-      { "t": 88.96, "z": 1.35, "cx": 1750, "cy": 560, "ease": true, "note": "step 4: punch in on the COMPLETION % column" },
-      { "t": 93.0, "z": 1.35, "cx": 1750, "cy": 560 },
-      { "t": 94.6, "z": 1.2, "cx": 1450, "cy": 430, "ease": true, "note": "guardrail in frame" },
-      { "t": 99.0, "z": 1.15, "cx": 1030, "cy": 430, "ease": true, "note": "ease over the list for the Lube-Checklists caution note" },
-      { "t": 102.1, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Parts & Supplies navigation" },
-      { "t": 106.2, "z": 1.2, "cx": 1030, "cy": 430, "ease": true, "note": "step 5: Parts & Supplies — KPI band and list" },
-      { "t": 113.0, "z": 1.2, "cx": 1030, "cy": 430 },
-      { "t": 113.26, "z": 1.3, "cx": 1050, "cy": 560, "ease": true, "note": "step 5: the QTY ON HAND vs REORDER PT pairing" },
-      { "t": 121.5, "z": 1.3, "cx": 1050, "cy": 560 },
-      { "t": 121.8, "z": 1.2, "cx": 1450, "cy": 430, "ease": true, "note": "guardrail in frame" },
-      { "t": 125.5, "z": 1.15, "cx": 1030, "cy": 430, "ease": true, "note": "ease over the list for the separate-from-Inventory note" },
-      { "t": 132.1, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the return-to-Issues navigation" },
-      { "t": 135.0, "z": 1.3, "cx": 210, "cy": 250, "ease": true, "note": "step 6: sidebar recap of the MAINTENANCE group" },
-      { "t": 159.5, "z": 1.3, "cx": 210, "cy": 250 },
-      { "t": 160.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
-      { "t": 165.329, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.3,
+        "z": 1.3,
+        "cx": 210,
+        "cy": 250,
+        "ease": true,
+        "note": "step 1: the MAINTENANCE sidebar group (five entries)"
+      },
+      {
+        "t": 21.4,
+        "z": 1.3,
+        "cx": 210,
+        "cy": 250
+      },
+      {
+        "t": 27,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the Maintenance Schedule navigation"
+      },
+      {
+        "t": 30,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 2: Maintenance Schedule — KPI band and list in one framing"
+      },
+      {
+        "t": 42.4,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 42.65,
+        "z": 1.35,
+        "cx": 1584,
+        "cy": 560,
+        "ease": true,
+        "note": "step 2: punch in on the NEXT DUE column"
+      },
+      {
+        "t": 45.2,
+        "z": 1.35,
+        "cx": 1584,
+        "cy": 560
+      },
+      {
+        "t": 45.5,
+        "z": 1.2,
+        "cx": 1450,
+        "cy": 430,
+        "ease": true,
+        "note": "+ New Record / Export guardrail in frame"
+      },
+      {
+        "t": 51.8,
+        "z": 1.2,
+        "cx": 1450,
+        "cy": 430
+      },
+      {
+        "t": 52.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the Equipment Registry navigation"
+      },
+      {
+        "t": 55.5,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 3: Equipment Registry — KPI band and list"
+      },
+      {
+        "t": 60.3,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 60.52,
+        "z": 1.35,
+        "cx": 1800,
+        "cy": 560,
+        "ease": true,
+        "note": "step 3: punch in on the STATUS column and the in-repair row"
+      },
+      {
+        "t": 71.5,
+        "z": 1.35,
+        "cx": 1800,
+        "cy": 560
+      },
+      {
+        "t": 72,
+        "z": 1.2,
+        "cx": 1450,
+        "cy": 430,
+        "ease": true,
+        "note": "guardrail in frame"
+      },
+      {
+        "t": 76,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the Checklists navigation"
+      },
+      {
+        "t": 79.3,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 4: Maintenance Checklists — KPI band and list"
+      },
+      {
+        "t": 88.7,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 88.96,
+        "z": 1.35,
+        "cx": 1750,
+        "cy": 560,
+        "ease": true,
+        "note": "step 4: punch in on the COMPLETION % column"
+      },
+      {
+        "t": 93,
+        "z": 1.35,
+        "cx": 1750,
+        "cy": 560
+      },
+      {
+        "t": 94.6,
+        "z": 1.2,
+        "cx": 1450,
+        "cy": 430,
+        "ease": true,
+        "note": "guardrail in frame"
+      },
+      {
+        "t": 99,
+        "z": 1.15,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "ease over the list for the Lube-Checklists caution note"
+      },
+      {
+        "t": 102.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the Parts & Supplies navigation"
+      },
+      {
+        "t": 106.2,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 5: Parts & Supplies — KPI band and list"
+      },
+      {
+        "t": 113,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 113.26,
+        "z": 1.3,
+        "cx": 1050,
+        "cy": 560,
+        "ease": true,
+        "note": "step 5: the QTY ON HAND vs REORDER PT pairing"
+      },
+      {
+        "t": 121.5,
+        "z": 1.3,
+        "cx": 1050,
+        "cy": 560
+      },
+      {
+        "t": 121.8,
+        "z": 1.2,
+        "cx": 1450,
+        "cy": 430,
+        "ease": true,
+        "note": "guardrail in frame"
+      },
+      {
+        "t": 125.5,
+        "z": 1.15,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "ease over the list for the separate-from-Inventory note"
+      },
+      {
+        "t": 132.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the return-to-Issues navigation"
+      },
+      {
+        "t": 135,
+        "z": 1.3,
+        "cx": 210,
+        "cy": 250,
+        "ease": true,
+        "note": "step 6: sidebar recap of the MAINTENANCE group"
+      },
+      {
+        "t": 159.5,
+        "z": 1.3,
+        "cx": 210,
+        "cy": 250
+      },
+      {
+        "t": 160,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 165.329,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": false,
     "completion": {
