@@ -79,6 +79,14 @@
   },
   "preflight": [
     {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "onBatches",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: let the persisted sidebar preference settle before normalizing the rail. The collapsed/expanded default flickers during early page load, so a blind railToggle click can land mid-transition and end on the wrong state (postcondition sidebarExpanded then fails). Settling first makes the unless-check + toggle deterministic."
+    },
+    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
