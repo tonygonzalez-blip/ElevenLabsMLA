@@ -316,8 +316,8 @@
     "camera": [
       { "t": 0, "z": 1, "cx": 960, "cy": 540 },
       { "t": 2.4, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 2.8, "z": 1.42, "cx": 300, "cy": 620, "ease": true, "note": "step 1: the left LIVE column / Decline Rate (shot list ① 150% intent)" },
-      { "t": 20.4, "z": 1.42, "cx": 300, "cy": 620 },
+      { "t": 2.8, "z": 1.45, "cx": 300, "cy": 620, "ease": true, "note": "step 1: the left LIVE column / Decline Rate (shot list ① 150% intent)" },
+      { "t": 20.4, "z": 1.45, "cx": 300, "cy": 620 },
       { "t": 21.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the scroll to Priority Intelligence" },
       { "t": 24.2, "z": 1, "cx": 960, "cy": 540 },
       { "t": 24.9, "z": 1.18, "cx": 780, "cy": 520, "ease": true, "note": "step 2: the billing-recovery rows and Recover guardrail" },
