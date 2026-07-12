@@ -101,10 +101,14 @@ add(12, 'no DOM .click() in interaction flow', !hasDomClick, hasDomClick ? 'foun
 const hardCoordClick = L.ops.some(o => o.op === 'click' && Array.isArray(o.point));   // clicks resolve targets, not literal points
 add(13, 'no hardcoded interaction coords where live resolution exists', !hardCoordClick, 'all clicks resolve a live target');
 
-// 14/15 highlight validity: every highlight interval must have a logged rect, and a menu-
-// anchored highlight must lie entirely within a real menu-open interval (derived from the
+// 14/15 highlight validity: every highlight interval must have a logged rect, and a dropdown-
+// menu-anchored highlight must lie entirely within a real menu-open interval (derived from the
 // event log: opens at each avatar click that verified menuOpen; closes at the inert-spot
-// dismiss or when a menu item navigates away).
+// dismiss or when a menu item navigates away). NOTE: this constraint is about ephemeral DROPDOWN
+// menus whose items vanish when the menu closes. Persistent left-sidebar nav (anchor keys
+// prefixed "side", e.g. sideItems/sideHouse) is app-shell chrome that stays on screen across the
+// app's in-page navigations, so it is NOT subject to the menu-open-interval rule — those items
+// don't disappear, and check 32 already enforces that all highlights clear before the ending.
 const holdWatches = events.watches.filter(w => w.mustHold);
 const menuWatch = holdWatches[0];
 const navTargets = new Set(L.ops.filter(o => o.op === 'click' && o.nav).map(o => o.target));
@@ -126,7 +130,8 @@ let staleHi = false, emptyHi = false, staleDetail = '';
 for (const hl of L.compositor.highlights) {
   const r = anchorRect(hl.anchor);
   if (!r && !hl.anchor.startsWith('screen:') && !/avatar/i.test(hl.anchor)) emptyHi = true;
-  if (/menu|item/i.test(hl.anchor) && !inMenu(hl.from, hl.to)) { staleHi = true; staleDetail = `${hl.anchor} ${hl.from}-${hl.to} outside menu-open intervals`; }
+  const isDropdownAnchor = /menu/i.test(hl.anchor) || (/item/i.test(hl.anchor) && !/side/i.test(hl.anchor));
+  if (isDropdownAnchor && !inMenu(hl.from, hl.to)) { staleHi = true; staleDetail = `${hl.anchor} ${hl.from}-${hl.to} outside menu-open intervals`; }
 }
 add(14, 'no stale highlight after target disappears', !staleHi, staleHi ? staleDetail : `menu intervals ${menuIntervals.map(i => `${i.s.toFixed(1)}-${i.e.toFixed(1)}`).join(', ')}; all menu highlights within`);
 add(15, 'no highlight over empty space', !emptyHi, emptyHi ? 'missing anchor rect' : 'all anchors have logged rects');
