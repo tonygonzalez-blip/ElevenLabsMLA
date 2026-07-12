@@ -11,24 +11,26 @@ APP_LOCK=/tmp/wc-app.lock
 CPU_LOCK=/tmp/wc-cpu.lock
 [ -f "$LJ" ] || { echo "no lesson json: $LJ"; exit 2; }
 
-bash production/ensure-stages.sh || { echo "stage self-heal failed"; exit 1; }
-
 echo "=== [$L] align ==="
 node production/align-narration.mjs "production/lessons/$L-phrases.json" | tail -3 || exit 1
 
 # Resume support: container restarts frequently interrupt the long composite, and the daemon then
 # re-runs this whole script. If a clean capture from a prior attempt already exists and is newer
-# than the current config (so it reflects the latest lesson), skip the ~6-min rehearse+record and
-# jump straight to composite — a restart-interrupted composite only redoes the composite, not the
-# capture. The guard is strict: events.json must parse, carry ops, and contain no errored op.
+# than the current config (so it reflects the latest lesson), skip the ~6-min rehearse+record AND
+# the stage self-heal — the composite is pure CPU and needs no live Chrome, so a captured lesson can
+# finish even while the record/rehearse stages are down. The guard is strict: events.json must
+# parse, carry ops, and contain no errored op.
 CAP="production/out/$L-capture.mkv"
 EV="production/out/$L-events.json"
 PHR="production/lessons/$L-phrases.json"
 if [ -f "$CAP" ] && [ -f "$EV" ] && [ "$EV" -nt "$LJ" ] && [ "$EV" -nt "$PHR" ] \
    && [ "$(stat -c%s "$CAP" 2>/dev/null || echo 0)" -gt 1000000 ] \
    && node -e "const e=require('./$EV');process.exit(e.ops&&e.ops.length&&!e.ops.some(o=>o.error)?0:1)" 2>/dev/null; then
-  echo "=== [$L] resume: clean capture+events newer than config — skipping rehearse+record ==="
+  echo "=== [$L] resume: clean capture+events newer than config — skipping stages + rehearse + record ==="
 else
+  # A fresh record needs the live stages; heal them (with sign-in retry) or abort this lesson.
+  bash production/ensure-stages.sh || { echo "stage self-heal failed"; exit 1; }
+
   echo "=== [$L] rehearse (stage 2, shared app lock) ==="
   flock -s "$APP_LOCK" env CDP_HTTP=http://127.0.0.1:9223 node production/engine.mjs "$LJ" --rehearse || exit 1
 
