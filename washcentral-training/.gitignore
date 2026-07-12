@@ -14,3 +14,7 @@ production/out/*.SKIP
 production/out/*-events-rehearsal.json
 production/lessons/*.ready
 production/out/daemon.log
+production/out/*-events.json
+production/out/*-edits.json
+production/out/*-transcript.json
+production/out/*-qa-report.json
