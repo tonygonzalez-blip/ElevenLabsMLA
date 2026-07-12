@@ -20,9 +20,16 @@ ensure() {
     --disable-features=PasswordManagerEnabled,PasswordLeakDetection --password-store=basic \
     about:blank >/dev/null 2>&1 &
   sleep 5
-  if ! CDP_HTTP="http://127.0.0.1:$port" node "$SCRATCH/signin-token.mjs" >/dev/null 2>&1; then
-    echo "[stages] sign-in FAILED on $port"; return 1
-  fi
+  # Sign-in can fail transiently (auth endpoint hiccup during a proxy rotation / just-launched
+  # Chrome). Retry a few times with backoff before giving up so one flaky attempt doesn't SKIP a
+  # whole lesson.
+  local ok=0
+  for attempt in 1 2 3 4; do
+    if CDP_HTTP="http://127.0.0.1:$port" node "$SCRATCH/signin-token.mjs" >/dev/null 2>&1; then ok=1; break; fi
+    echo "[stages] sign-in attempt $attempt failed on $port; retrying"
+    sleep $((attempt * 3))
+  done
+  if [ "$ok" != 1 ]; then echo "[stages] sign-in FAILED on $port after retries"; return 1; fi
   echo "[stages] $port relaunched + signed in"
 }
 ensure :99 9222 rec || exit 1
