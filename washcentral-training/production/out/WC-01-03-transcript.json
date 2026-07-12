@@ -1,0 +1,360 @@
+{
+  "lesson": "WC-01-03",
+  "audioMaster": "training/module01-foundations/WC-01-03-full-narration-v1.0.mp3",
+  "audioDurationS": 156.918,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "WashCentral watches for inactivity.",
+      "startS": 0,
+      "endS": 2.185,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Leave a session untouched and it does not drop you cold.",
+      "startS": 2.514,
+      "endS": 5.658,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "It warns you first, right over whatever page you left open.",
+      "startS": 5.982,
+      "endS": 9.505,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Today that's the Command Center.",
+      "startS": 9.791,
+      "endS": 11.477,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Watch the lower corner.",
+      "startS": 11.92,
+      "endS": 13.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "A small toast slides in: Session expiring soon, auto log-out in two minutes,",
+      "startS": 13.607,
+      "endS": 15.285,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "with a Stay Active button.",
+      "startS": 15.761,
+      "endS": 20.774,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "It's the compact version of the warning, easy to miss if you're looking away.",
+      "startS": 21.294,
+      "endS": 25.035,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "At the same moment, a dialog opens dead center.",
+      "startS": 25.502,
+      "endS": 28.3,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Still there? it asks.",
+      "startS": 28.833,
+      "endS": 30.236,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Two minutes remaining, counting down.",
+      "startS": 30.811,
+      "endS": 32.737,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "The line underneath tells you exactly how to stay: move your mouse or press any key.",
+      "startS": 33.416,
+      "endS": 38.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Two buttons sit on the dialog.",
+      "startS": 38.955,
+      "endS": 40.627,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Stay Logged In keeps you signed in and returns you to your work.",
+      "startS": 41.097,
+      "endS": 44.642,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Log Out Now ends the session right away.",
+      "startS": 45.203,
+      "endS": 47.741,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "That one is a real logout, so leave it alone unless you mean to sign out.",
+      "startS": 48.169,
+      "endS": 52.334,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "So what if you ignore it?",
+      "startS": 52.8,
+      "endS": 55.241,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "At zero, the session closes and returns you to the sign-in page.",
+      "startS": 55.241,
+      "endS": 59.599,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "How long it may sit idle before the warning starts is set per user level,",
+      "startS": 59.599,
+      "endS": 63.884,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "and the exact figure for the demo login is still being pinned down.",
+      "startS": 63.884,
+      "endS": 67.599,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "Staying in is easy.",
+      "startS": 68,
+      "endS": 69.385,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Move the mouse, tap a key, or click Stay Logged In.",
+      "startS": 69.693,
+      "endS": 70.559,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "The countdown stops, the dialog clears, and you pick up exactly where you were.",
+      "startS": 70.765,
+      "endS": 78.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Stay Active on the toast does the same job.",
+      "startS": 78.707,
+      "endS": 81.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p25",
+      "text": "Now, where does that timer come from?",
+      "startS": 81.92,
+      "endS": 83.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Open Settings from the left rail and choose User Levels.",
+      "startS": 85.279,
+      "endS": 88.759,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "The breadcrumb reads Settings, then User Levels.",
+      "startS": 89.312,
+      "endS": 92.279,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "This page sets the idle limit for every level of user.",
+      "startS": 93.012,
+      "endS": 96.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p29",
+      "text": "Across the top, three summary tiles.",
+      "startS": 96.726,
+      "endS": 99.067,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "Total Levels, Max Security Level, and Longest Timeout in minutes.",
+      "startS": 99.463,
+      "endS": 100.291,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Today they read fourteen, twenty, and a hundred and twenty.",
+      "startS": 100.63,
+      "endS": 103.729,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Fourteen levels, and the longest idle window runs two full hours.",
+      "startS": 104.226,
+      "endS": 112.189,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p33",
+      "text": "The table has three columns.",
+      "startS": 112.64,
+      "endS": 114.354,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "Name, Security Level, and Session Timeout in minutes.",
+      "startS": 114.76,
+      "endS": 115.191,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "That last column is the one to know:",
+      "startS": 115.565,
+      "endS": 118.511,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "it's how many idle minutes a level gets before the Still there? countdown begins.",
+      "startS": 119.233,
+      "endS": 125.812,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p37",
+      "text": "The numbers run from five minutes up to a hundred and twenty.",
+      "startS": 126.32,
+      "endS": 129.708,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p38",
+      "text": "Cashiers and the lower levels sit at five;",
+      "startS": 130.296,
+      "endS": 132.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "administrators and service roles at a hundred and twenty.",
+      "startS": 132.888,
+      "endS": 135.678,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "So a cashier logged out after five idle minutes isn't hitting a bug.",
+      "startS": 136.209,
+      "endS": 140.357,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "That's the setting doing its job.",
+      "startS": 140.578,
+      "endS": 142.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p42",
+      "text": "So when a manager says the system logs them out every few minutes, you know the move.",
+      "startS": 142.857,
+      "endS": 147.409,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "Open User Levels, find their level under Name, and read its Session Timeout.",
+      "startS": 147.906,
+      "endS": 152.389,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "A small number is the whole answer, and you never touch the row.",
+      "startS": 152.778,
+      "endS": 156.471,
+      "timing": "silence"
+    }
+  ]
+}
