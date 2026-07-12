@@ -490,7 +490,7 @@
     "Back to Tickets"
   ],
   "neverClick": [
-    "refund",
+    "refundBtn",
     "logout",
     "ask shyne",
     "send",
