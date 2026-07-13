@@ -4,14 +4,14 @@
   "audioMaster": "training/module12-settings/WC-12-02-full-narration-v1.0.mp3",
   "audioDurationS": 269.871,
   "tailS": 0.4,
-  "startUrl": "https://demo.washcentral.com/settings.html",
+  "startUrl": "https://demo.washcentral.com/settings-account-info.html",
   "viewport": [
     1920,
     1080
   ],
   "targets": {
     "railToggle": {
-      "selector": ".wc-rail-panel-toggle"
+      "selector": "#wc-rail-panel-toggle"
     },
     "locHeader": {
       "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
@@ -199,7 +199,7 @@
     "settingsPanelExpanded": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim()));return !!h&&h.getBoundingClientRect().width>120})()",
     "locGroupOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
     "locGroupClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*locations/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
-    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onSettingsStart": "location.pathname.endsWith('/settings-account-info.html')",
     "onLocations": "location.pathname.endsWith('/settings-locations.html')",
     "onLocationDetail": "location.pathname.endsWith('/settings-locations-detail.html')",
     "onLocationGroups": "location.pathname.endsWith('/settings-location-groups.html')",
@@ -218,7 +218,7 @@
     "approvalLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-location-payment-approval.html')&&rows.length>=2&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim()))&&![...document.querySelectorAll('*')].some(e=>e.childElementCount===0&&/Couldn.t load|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()"
   },
   "ops": [
-    { "op": "assert", "at": -1.8, "predicate": "onSettingsHome", "note": "start page staged before capture: Settings home" },
+    { "op": "assert", "at": -1.8, "predicate": "onSettingsStart", "note": "start page staged before capture: a Settings sub-page (settings-account-info.html) where the classic left rail is live; the redesigned settings.html home no longer has a usable settings sidebar" },
     { "op": "assert", "at": -1.4, "predicate": "settingsPanelExpanded", "note": "pre-roll: preflight staged the settings menu panel expanded; abort if collapsed" },
     { "op": "assert", "at": -1.0, "predicate": "locGroupClosed", "note": "pre-roll: the Locations group must start collapsed so step 1 genuinely expands it" },
 
