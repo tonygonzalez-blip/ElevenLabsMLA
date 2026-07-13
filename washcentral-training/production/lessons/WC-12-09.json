@@ -661,7 +661,7 @@
       "op": "move",
       "at": 108.6,
       "to": {
-        "target": "grpCredRect",
+        "target": "grpCredentials",
         "offset": [
           260,
           8
