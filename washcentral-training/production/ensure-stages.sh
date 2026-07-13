@@ -17,6 +17,10 @@ ensure() {
   # is re-established by signin-token.mjs below regardless.
   local P="$SCRATCH/chrome-profiles/$prof"
   rm -rf "$P/Default/Cache" "$P/Default/Code Cache" "$P/Default/GPUCache" "$P/GrCache" "$P/ShaderCache" 2>/dev/null
+  # Also wipe the PWA Service Worker + its Cache Storage: during a proxy outage the app's SW can cache
+  # a failed fetch and then serve its "You're offline" fallback for a page even after connectivity
+  # returns. Local Storage (sign-in) is under a different dir and is preserved.
+  rm -rf "$P/Default/Service Worker" 2>/dev/null
   rm -f "$P/SingletonLock" "$P/SingletonCookie" "$P/SingletonSocket" 2>/dev/null
   if ! pgrep -f "Xvfb $disp " >/dev/null; then
     Xvfb "$disp" -screen 0 1920x1080x24 -nolisten tcp >/dev/null 2>&1 &
