@@ -38,10 +38,22 @@ real total pages now 95), right pane `.sw-body`.
   reduce the sweep offset so the cursor stays on-screen.
 - **WC-02-03** (Edit/New Customer) — `sideCustomers` intermittent: the customer-detail sidebar
   sometimes doesn't rebuild after the cancelTop nav. Add a settle/retry so the sidebar link resolves.
-- **WC-02-05** (House Accounts) — the badge chips (`.a-badges .a-chip` chip1/2/3) the lesson points at
-  and narrates (p34-p35) are EMPTY on house-account details (only `.a-related-chip` exist). Likely a
-  content mismatch; may need re-target to related chips or re-authoring — check narration.
+- **WC-02-05** (House Accounts) — CONFIRMED LOCKED-NARRATION BLOCKER (agent-probed 4 accounts). Block
+  s07 narrates "Three chips carry the terms: net thirty, a ten thousand dollar limit, fourteen
+  vehicles" but house-account details NEVER render badge chips (`.a-badges` always empty) and have no
+  Net-30 / Credit-Limit anywhere — only 1 of 3 spoken values (14 vehicles) has any on-screen referent.
+  Cannot be produced faithfully; needs re-cut of block s07 or a different account type = user sign-off.
 
 ## End-stage deferred blockers (raise at the very end)
 - WC-00-02 — sign-in lesson; login.html de-auths the shared profile; needs special sequencing.
 - WC-01-03 — narration speaks stale state; re-render decision = user sign-off.
+
+## User-decision blockers (summary — need human sign-off, cannot be produced faithfully as-is)
+The demo site was redesigned after the narration was locked, desyncing some approved audio from the
+live UI. These CANNOT be produced without re-recording narration (user sign-off) or a product decision:
+- WC-12-01 — "ninety two pages" counter + 16-card grid deleted by the Settings redesign.
+- WC-02-05 — s07 "net thirty / ten thousand dollar limit" chips never render on house accounts.
+- WC-01-03 — narration speaks stale state (pre-existing deferred).
+- WC-00-02 — sign-in lesson; login.html de-auths the shared profile (needs sequencing).
+- WC-09-02 — mobile pages (mobile-users / settings-mobile-branding) don't render their app shell in
+  headless Chrome; likely needs a mobile viewport/UA or is a demo-site limitation.
