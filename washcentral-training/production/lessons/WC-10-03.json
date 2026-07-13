@@ -44,10 +44,10 @@
       "js": "[...document.querySelectorAll('a,button')].find(e=>/Go to Zoho Desk Settings/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
     "integCard": {
-      "js": "[...document.querySelectorAll('.sh-card-name')].find(e=>/^Integrations$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>{const n=e.querySelector('.sw-cat-name');return n&&/^Integrations$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
     },
     "zohoSubItem": {
-      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^Zoho Desk$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('a.sw-fcard')].find(e=>{const t=e.querySelector('.sw-fcard-title');return t&&/^Zoho Desk$/.test((t.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
     },
     "crumbBar": {
       "selector": ".breadcrumb-bar"
@@ -125,7 +125,7 @@
     "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
     "supportLinksVisible": "['support-tickets.html','zoho-tickets.html'].every(h=>{const a=document.querySelector('aside.sidebar a[href=\"'+h+'\"]');return !!a&&a.getBoundingClientRect().width>0})",
     "zohoViewLoaded": "location.pathname.endsWith('/zoho-tickets.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=5&&/Zoho Desk not connected/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
-    "integCardOpen": "[...document.querySelectorAll('a.sh-card-item')].some(e=>/^Zoho Desk$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "integCardOpen": "[...document.querySelectorAll('a.sw-fcard .sw-fcard-title')].some(e=>/^Zoho Desk$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
     "zohoSettingsLoaded": "location.pathname.endsWith('/settings-integrations-zoho.html')&&!!document.querySelector('.int-badge.not-configured')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-fi')].filter(e=>e.getBoundingClientRect().width>0).length>=6&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
     "notConfiguredHeld": "location.pathname.endsWith('/settings-integrations-zoho.html')&&!!document.querySelector('.int-badge.not-configured')",
     "noMutationNav": "!/edit|create|-new\\./i.test(location.pathname)"
@@ -515,7 +515,7 @@
       "postcondition": "onZohoSettings",
       "nav": true,
       "timeoutMs": 6000,
-      "note": "step 3 (p13) 'Zoho Desk' — the Zoho Desk sub-item is a pure <a class=\"sh-card-item\" href=\"settings-integrations-zoho.html\"> (probe-verified), landing on the connection settings inside the 1.4s break before p14"
+      "note": "step 3 (p13) 'Zoho Desk' — the Zoho Desk sub-item is a pure <a class=\"sw-fcard\" href=\"settings-integrations-zoho.html\"> (probe-verified), landing on the connection settings inside the 1.4s break before p14"
     },
     {
       "op": "wait-stable",
