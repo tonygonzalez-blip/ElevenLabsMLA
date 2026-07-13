@@ -1,0 +1,278 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.929
+Open I-T and Support.
+
+p02
+00:00:02.938 --> 00:00:07.230
+Down the sidebar, past the support tools, sits a small group called Audit.
+
+p03
+00:00:07.506 --> 00:00:08.422
+Three pages.
+
+p04
+00:00:08.653 --> 00:00:13.440
+Between them they answer almost every who-did-this question a client will ever send you.
+
+p05
+00:00:13.840 --> 00:00:15.086
+Open the Audit Log.
+
+p06
+00:00:15.518 --> 00:00:17.058
+This is the master feed.
+
+p07
+00:00:17.429 --> 00:00:22.743
+Every meaningful event on the platform lands here in one running list, newest first,
+
+p08
+00:00:22.995 --> 00:00:26.160
+with a dashboard on top to read the shape of it before you dig.
+
+p09
+00:00:26.624 --> 00:00:28.324
+Start with the four tiles.
+
+p10
+00:00:29.524 --> 00:00:31.778
+Events today, events this week, how many different people were active,
+
+p11
+00:00:32.631 --> 00:00:34.377
+and how many events tripped a critical flag.
+
+p12
+00:00:35.005 --> 00:00:40.867
+One glance tells you whether today looks normal or busy.
+
+p13
+00:00:41.341 --> 00:00:43.183
+To the left, the yearly trend.
+
+p14
+00:00:43.681 --> 00:00:47.115
+Twelve months of logged activity in a single line, ticking up.
+
+p15
+00:00:47.644 --> 00:00:52.334
+It's context, not an alarm: is the platform getting busier, or holding steady.
+
+p16
+00:00:52.800 --> 00:00:54.843
+Next, the split by action.
+
+p17
+00:00:55.416 --> 00:00:58.118
+Most of what gets logged is edits and new records.
+
+p18
+00:00:58.403 --> 00:00:59.626
+Logins are a chunk.
+
+p19
+00:01:00.086 --> 00:01:02.416
+Deletions are the thin slice at the bottom,
+
+p20
+00:01:02.650 --> 00:01:06.475
+and on a support ticket, that thin slice is usually the one you came for.
+
+p21
+00:01:06.949 --> 00:01:08.505
+Beside it, severity.
+
+p22
+00:01:08.971 --> 00:01:10.565
+Nearly everything is normal.
+
+p23
+00:01:10.997 --> 00:01:12.343
+A little is a warning.
+
+p24
+00:01:12.632 --> 00:01:18.426
+A sliver is critical, and that sliver is the same three events the top tile just flagged.
+
+p25
+00:01:18.786 --> 00:01:20.560
+Two views of one number.
+
+p26
+00:01:20.960 --> 00:01:22.163
+Now the list itself.
+
+p27
+00:01:23.019 --> 00:01:25.836
+Read a row left to right and it tells a whole story:
+
+p28
+00:01:26.323 --> 00:01:28.547
+when, who, what they did, in which module, to which record, at which location,
+
+p29
+00:01:28.775 --> 00:01:33.778
+and the I-P address it came from.
+
+p30
+00:01:34.700 --> 00:01:37.062
+There are Export and New Record buttons up here.
+
+p31
+00:01:37.516 --> 00:01:39.760
+Leave them. You're reading, not changing.
+
+p32
+00:01:40.160 --> 00:01:41.633
+Find the deleted event.
+
+p33
+00:01:42.317 --> 00:01:44.823
+Here it is: a payment record, removed, tied to a name, a location, and an I-P.
+
+p34
+00:01:45.071 --> 00:01:47.776
+That's the power of this page.
+
+p35
+00:01:48.348 --> 00:01:49.964
+When something goes missing, you don't guess who touched it.
+
+p36
+00:01:50.615 --> 00:01:54.225
+You read the row.
+
+p37
+00:01:54.800 --> 00:01:56.376
+Move to User Activity.
+
+p38
+00:01:56.963 --> 00:02:00.856
+Where the Audit Log tracks events, this page tracks people at the door.
+
+p39
+00:02:01.223 --> 00:02:05.181
+Who's signing in, how often, and who keeps bouncing off the login screen.
+
+p40
+00:02:05.653 --> 00:02:07.775
+Its tiles lead with the sign-in picture.
+
+p41
+00:02:08.286 --> 00:02:10.412
+Active users, logins today, average session length,
+
+p42
+00:02:10.748 --> 00:02:11.854
+and the one you'll reach for most: failed logins.
+
+p43
+00:02:12.164 --> 00:02:19.218
+When a cashier says they're locked out, that number is where you start.
+
+p44
+00:02:19.840 --> 00:02:21.379
+The table fills in the rest.
+
+p45
+00:02:21.855 --> 00:02:26.700
+Each person, their role, when they last got in, how many times this month, from where,
+
+p46
+00:02:26.995 --> 00:02:29.554
+and whether the account is active.
+
+p47
+00:02:30.296 --> 00:02:32.703
+It answers a quiet but common question:
+
+p48
+00:02:33.077 --> 00:02:36.344
+is this user actually signing in, and as what.
+
+p49
+00:02:36.876 --> 00:02:37.701
+Last page. Change History.
+
+p50
+00:02:38.037 --> 00:02:39.030
+The Audit Log tells you a record was updated.
+
+p51
+00:02:40.544 --> 00:02:47.200
+This one tells you exactly which field moved, and what it was before.
+
+p52
+00:02:47.656 --> 00:02:49.316
+The tiles count the churn.
+
+p53
+00:02:49.677 --> 00:02:50.941
+How many changes today, how many this week,
+
+p54
+00:02:51.234 --> 00:02:52.258
+and how the load splits between configuration and everyday data.
+
+p55
+00:02:52.643 --> 00:02:59.505
+It's a pulse on how much is being edited under the hood.
+
+p56
+00:02:59.982 --> 00:03:01.482
+But the columns are the payoff.
+
+p57
+00:03:02.166 --> 00:03:04.251
+Alongside the usual when and who, this page names the exact field that changed
+
+p58
+00:03:04.634 --> 00:03:10.837
+and lays the old value and the new value side by side.
+
+p59
+00:03:11.169 --> 00:03:13.040
+No other audit page does that.
+
+p60
+00:03:13.560 --> 00:03:15.225
+Picture a membership price.
+
+p61
+00:03:15.815 --> 00:03:21.508
+The plan's example is a monthly rate moving from
+
+p62
+00:03:22.644 --> 00:03:26.144
+twenty-nine ninety-nine to thirty-four ninety-nine.
+
+p63
+00:03:27.140 --> 00:03:29.249
+One row, before on one side, after on the other.
+
+p64
+00:03:29.486 --> 00:03:30.671
+When a client swears their price jumped, this is the receipt.
+
+p65
+00:03:31.185 --> 00:03:33.596
+So, three pages, three questions.
+
+p66
+00:03:33.945 --> 00:03:37.386
+What happened, and from what machine? That's the Audit Log.
+
+p67
+00:03:37.673 --> 00:03:39.452
+Who's getting in, and who isn't? User Activity.
+
+p68
+00:03:39.905 --> 00:03:43.089
+Who changed which field, and to what? Change History.
+
+p69
+00:03:43.482 --> 00:03:47.840
+Match the ticket to the page, and the answer is already waiting.
+

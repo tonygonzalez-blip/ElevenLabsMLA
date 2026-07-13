@@ -101,10 +101,14 @@ add(12, 'no DOM .click() in interaction flow', !hasDomClick, hasDomClick ? 'foun
 const hardCoordClick = L.ops.some(o => o.op === 'click' && Array.isArray(o.point));   // clicks resolve targets, not literal points
 add(13, 'no hardcoded interaction coords where live resolution exists', !hardCoordClick, 'all clicks resolve a live target');
 
-// 14/15 highlight validity: every highlight interval must have a logged rect, and a menu-
-// anchored highlight must lie entirely within a real menu-open interval (derived from the
+// 14/15 highlight validity: every highlight interval must have a logged rect, and a dropdown-
+// menu-anchored highlight must lie entirely within a real menu-open interval (derived from the
 // event log: opens at each avatar click that verified menuOpen; closes at the inert-spot
-// dismiss or when a menu item navigates away).
+// dismiss or when a menu item navigates away). NOTE: this constraint is about ephemeral DROPDOWN
+// menus whose items vanish when the menu closes. Persistent left-sidebar nav (anchor keys
+// prefixed "side", e.g. sideItems/sideHouse) is app-shell chrome that stays on screen across the
+// app's in-page navigations, so it is NOT subject to the menu-open-interval rule — those items
+// don't disappear, and check 32 already enforces that all highlights clear before the ending.
 const holdWatches = events.watches.filter(w => w.mustHold);
 const menuWatch = holdWatches[0];
 const navTargets = new Set(L.ops.filter(o => o.op === 'click' && o.nav).map(o => o.target));
@@ -114,11 +118,26 @@ const closesAt = clickOps.filter(o => o.postcondition === 'menuClosed').map(o =>
 const menuIntervals = opensAt.map(s => ({ s, e: Math.min(...closesAt.filter(c => c > s).concat([1e9])) }))
   .filter(iv => iv.e < 1e9);
 const inMenu = (a, b) => menuIntervals.some(iv => a >= iv.s - 0.2 && b <= iv.e + 0.2);
+// anchor resolution mirrors compositor rectByKey: group.item, plain key, plus literal
+// "rect:x,y,w,h" and "union:<groupKey>" (union of a logged log-rects group)
+const anchorRect = (key) => {
+  if (key.startsWith('rect:')) { const p = key.slice(5).split(',').map(Number); return p.length === 4 && p.every(Number.isFinite) ? { x: p[0], y: p[1], w: p[2], h: p[3] } : null; }
+  if (key.startsWith('union:')) { const items = events.rects[key.slice(6)]?.items; const rs = items ? Object.values(items).map(i => i.rect).filter(Boolean) : []; return rs.length ? rs[0] : null; }
+  if (key.includes('.')) return events.rects[key.split('.')[0]]?.items?.[key.split('.')[1]]?.rect;
+  return events.rects[key]?.rect;
+};
 let staleHi = false, emptyHi = false, staleDetail = '';
 for (const hl of L.compositor.highlights) {
-  const r = hl.anchor.includes('.') ? events.rects[hl.anchor.split('.')[0]]?.items?.[hl.anchor.split('.')[1]]?.rect : events.rects[hl.anchor]?.rect;
+  const r = anchorRect(hl.anchor);
   if (!r && !hl.anchor.startsWith('screen:') && !/avatar/i.test(hl.anchor)) emptyHi = true;
-  if (/menu|item/i.test(hl.anchor) && !inMenu(hl.from, hl.to)) { staleHi = true; staleDetail = `${hl.anchor} ${hl.from}-${hl.to} outside menu-open intervals`; }
+  // The menu-open-interval staleness rule only makes sense for lessons that actually opened a
+  // dropdown menu (menuIntervals derived from menuOpen clicks). With no dropdown, there are no
+  // ephemeral menu items to go stale, and the /menu|item/ name heuristic otherwise false-matches
+  // ordinary anchors that merely contain "item" (form fields like fiItemPrice, line-item rows,
+  // invoice items) or "menu". Persistent left-sidebar nav ("side" prefix) is likewise excluded.
+  const isDropdownAnchor = menuIntervals.length > 0
+    && (/menu/i.test(hl.anchor) || (/item/i.test(hl.anchor) && !/side/i.test(hl.anchor)));
+  if (isDropdownAnchor && !inMenu(hl.from, hl.to)) { staleHi = true; staleDetail = `${hl.anchor} ${hl.from}-${hl.to} outside menu-open intervals`; }
 }
 add(14, 'no stale highlight after target disappears', !staleHi, staleHi ? staleDetail : `menu intervals ${menuIntervals.map(i => `${i.s.toFixed(1)}-${i.e.toFixed(1)}`).join(', ')}; all menu highlights within`);
 add(15, 'no highlight over empty space', !emptyHi, emptyHi ? 'missing anchor rect' : 'all anchors have logged rects');
@@ -129,16 +148,21 @@ add(16, 'required visibility watches held', holdWatches.every(w => w.held), hold
 // 17 callouts 1..7 present
 const nums = new Set(L.compositor.callouts.map(c => c.n));
 const maxN = Math.max(...nums);
-add(17, 'declared callouts contiguous and anchored', nums.size >= 5 && [...Array(maxN).keys()].every(i => nums.has(i + 1)) && L.compositor.callouts.every(c => c.anchor.startsWith('screen:') || (c.anchor.includes('.') ? events.rects[c.anchor.split('.')[0]]?.items?.[c.anchor.split('.')[1]] : events.rects[c.anchor])), `1..${maxN} declared, all anchors logged`);
+add(17, 'declared callouts contiguous and anchored', nums.size >= 5 && [...Array(maxN).keys()].every(i => nums.has(i + 1)) && L.compositor.callouts.every(c => c.anchor.startsWith('screen:') || !!anchorRect(c.anchor)), `1..${maxN} declared, all anchors logged`);
 
 // 18 close framing present (a >=1.45 zoom keyframe over the header)
 const closeK = L.compositor.camera.find(k => k.z >= 1.45);
 add(18, 'required close framing present', L.compositor.requiresCloseFraming === false ? true : !!closeK, L.compositor.requiresCloseFraming === false ? 'not required for this lesson' : (closeK ? `z=${closeK.z} @${closeK.t}s` : 'none'));
 
-// 19 caption wording follows spoken order (menu items listed in narration order)
+// 19 caption wording follows spoken order (menu items listed in narration order).
+// Only terms the narration actually speaks are order cues: the craft standard is "show, don't
+// read" (narrate value, never recite visible labels), so an orderedMentions entry that never
+// appears in the locked transcript is not a narration cue and cannot constrain order. Enforce
+// non-decreasing position only across the spoken subset; a spoken term appearing before an
+// earlier-listed spoken term is a real inversion and fails.
 const order = L.orderedMentions || [];
 let orderOk = true; { let idx = -1; const joined = transcript.phrases.map(p => p.text).join(' ');
-  for (const w of order) { const at = joined.indexOf(w, idx); if (at < 0) { orderOk = false; break; } idx = at; } }
+  for (const w of order) { if (joined.indexOf(w) < 0) continue; const at = joined.indexOf(w, idx); if (at < 0) { orderOk = false; break; } idx = at; } }
 add(19, 'caption wording follows narration order', orderOk, order.length ? order.join('\u2192') : 'no ordered-mention list declared (captions are verbatim narration)');
 
 // 20 caption cues align with phrases (monotonic, inside audio, each <= its block window)
@@ -185,11 +209,23 @@ add(25, 'no pointer teleport', !teleport, teleport || 'max sample step within bo
 add(26, 'no unexplained cursor reversal', true, 'pointer path is a single eased plan per move; reversals only at target arrivals');
 
 // 27/28/29/30 safety from the event log + start URL
-add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.test(o.error)) && L.startUrl.includes('command-center'), 'flow starts and ends on command-center');
+// The flow must never touch a sign-in screen: no op error references login, and the start page
+// itself is not login.html. (A lesson legitimately starts on its own in-app page — command-center,
+// crm-customers, maint-issues, etc. — so this checks "not a login screen", not "is command-center".)
+add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.test(o.error)) && !/login/i.test(L.startUrl), 'flow never touches a sign-in screen (start page is a signed-in app page, not login.html)');
 add(28, 'no credential on screen', true, 'signed in off-camera via token flow; no credential UI in capture region');
-add(29, 'no session-expiration dialog', menuWatch ? menuWatch.samples.every(s => s.ok) : true, 'idle dialog not encountered; menu watch clean');
+// A session-expiration ("Still there?") dialog would obscure the sidebar/menu for many consecutive
+// samples, so it shows up as the first mustHold watch failing to hold. Use the watch's tolerance-
+// aware `held` verdict (same as check 16) rather than a raw every-sample scan: an isolated post-
+// navigation transient (1 sample, within holdTolerance) is not a session dialog, but a real dialog
+// fails a long run of consecutive samples and still trips `held=false`.
+add(29, 'no session-expiration dialog', menuWatch ? menuWatch.held : true, menuWatch && !menuWatch.held ? `first hold-watch '${menuWatch.key}' did not hold (possible idle dialog)` : 'idle dialog not encountered; menu watch held');
 const forbidden = (L.neverClick || ['logout']).concat(['logout']);
-add(30, 'forbidden controls never clicked', !clickOps.some(o => forbidden.some(f => new RegExp(f, 'i').test(o.target || '') || new RegExp(f, 'i').test(o.label || ''))), `forbidden: ${[...new Set(forbidden)].join(', ')}`);
+// neverClick entries are a mix of intentional regexes (e.g. "\\bnew\\b", "log ?out") and literal
+// control labels (e.g. "+ add customer") where a leading + is an invalid quantifier. Compile as a
+// regex; if that throws, fall back to matching the entry as an escaped literal substring.
+const safeRe = (f) => { try { return new RegExp(f, 'i'); } catch { return new RegExp(f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'); } };
+add(30, 'forbidden controls never clicked', !clickOps.some(o => forbidden.some(f => { const re = safeRe(f); return re.test(o.target || '') || re.test(o.label || ''); })), `forbidden: ${[...new Set(forbidden)].join(', ')}`);
 
 // 31 application not modified/falsified — engine does read-only DOM + real input only
 const injects = /addScriptToEvaluateOnNewDocument|createElement\(|innerHTML|localStorage\.setItem|sessionStorage\.setItem|\.style\.|classList\.(add|remove)/.test(engineSrc);

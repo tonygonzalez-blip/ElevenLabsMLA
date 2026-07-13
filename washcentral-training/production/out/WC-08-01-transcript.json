@@ -1,0 +1,472 @@
+{
+  "lesson": "WC-08-01",
+  "audioMaster": "training/module08-operations/WC-08-01-full-narration-v1.0.mp3",
+  "audioDurationS": 201.404,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Operations module, then Issues.",
+      "startS": 0,
+      "endS": 2.65,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is Maintenance Issues.",
+      "startS": 3.217,
+      "endS": 4.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Every equipment problem across your sites lands here as one work order.",
+      "startS": 5.238,
+      "endS": 9.318,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "A dryer that won't heat, a touch screen that quit, a leaking pump.",
+      "startS": 9.827,
+      "endS": 13.454,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "One list tracks them all the way to fixed.",
+      "startS": 13.973,
+      "endS": 16.29,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Start at the top.",
+      "startS": 16.72,
+      "endS": 17.746,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Four numbers frame the board: how many issues are open, how many are being worked,",
+      "startS": 18.596,
+      "endS": 20.175,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "how many are high priority, and the average time to a fix.",
+      "startS": 20.651,
+      "endS": 21.923,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Before you read a single row, you know how heavy the load is.",
+      "startS": 22.277,
+      "endS": 31.81,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "First panel, the twelve-month trend.",
+      "startS": 32.322,
+      "endS": 34.444,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "It counts issues reported over the last year and flags the recent change.",
+      "startS": 35.101,
+      "endS": 39.331,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "A rising line means more tickets coming in.",
+      "startS": 39.822,
+      "endS": 42.294,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Useful when someone asks whether last month was really busier, or it just felt that way.",
+      "startS": 42.675,
+      "endS": 47.735,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Next, the priority breakdown.",
+      "startS": 48.16,
+      "endS": 50.266,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Low, Medium, High, and Critical, each as a share of the total.",
+      "startS": 50.785,
+      "endS": 55.099,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "This is your triage picture.",
+      "startS": 55.653,
+      "endS": 57.569,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "When High and Critical creep up, that's where the day's attention goes.",
+      "startS": 58.025,
+      "endS": 61.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Third panel, the pipeline.",
+      "startS": 62.223,
+      "endS": 63.965,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "It splits the open work into Resolved, in Progress, and Blocked.",
+      "startS": 64.402,
+      "endS": 68.5,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Blocked is the one to watch.",
+      "startS": 69.122,
+      "endS": 70.644,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "A blocked job is stuck waiting on a part or a person, and it won't clear itself.",
+      "startS": 71.121,
+      "endS": 75.705,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Now the list itself.",
+      "startS": 76.24,
+      "endS": 77.497,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "The header calls it the Issue List and gives the record count.",
+      "startS": 78.195,
+      "endS": 81.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "The subtitle says the job out loud: work order tracking.",
+      "startS": 82.316,
+      "endS": 84.315,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Everything above this card is just the summary.",
+      "startS": 84.596,
+      "endS": 89.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Top-right of that card, two buttons.",
+      "startS": 89.516,
+      "endS": 91.749,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "New Issue opens a blank work order.",
+      "startS": 92.282,
+      "endS": 94.347,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Export pulls the list out to a file.",
+      "startS": 94.674,
+      "endS": 96.904,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "We won't export anything today; just know where it is when a manager asks for it.",
+      "startS": 97.195,
+      "endS": 101.342,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "Click New Issue to see the form.",
+      "startS": 101.76,
+      "endS": 104.357,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "This is where a technician writes up a new problem: what broke, where, and how urgent.",
+      "startS": 104.357,
+      "endS": 109.72,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "We're only looking, so we back out without saving.",
+      "startS": 109.72,
+      "endS": 112.434,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Nothing gets logged.",
+      "startS": 112.434,
+      "endS": 113.339,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "Below the buttons, the search row.",
+      "startS": 113.76,
+      "endS": 115.56,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "Type a few letters to find an issue by title,",
+      "startS": 115.56,
+      "endS": 118.925,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "or open Filters to narrow by status, priority, or site.",
+      "startS": 118.925,
+      "endS": 121.925,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "On a long list, this is how you reach one ticket fast.",
+      "startS": 121.925,
+      "endS": 126.189,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p38",
+      "text": "The table has seven columns.",
+      "startS": 126.712,
+      "endS": 128.515,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "Which site logged it, the title, its status, its priority,",
+      "startS": 128.93,
+      "endS": 130.135,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "who owns it, who reported it, and the date.",
+      "startS": 130.342,
+      "endS": 133.138,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Read across one row and you have the whole story of a work order.",
+      "startS": 133.351,
+      "endS": 140.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p42",
+      "text": "Look at the live examples.",
+      "startS": 140.955,
+      "endS": 142.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "An air dryer not reaching temperature, marked Open and high.",
+      "startS": 142.923,
+      "endS": 146.681,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "A conveyor belt squeaking in the tunnel, already In Progress.",
+      "startS": 147.376,
+      "endS": 151.187,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "A chemical pump leak, Critical, and already Resolved.",
+      "startS": 151.726,
+      "endS": 155.134,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "Real problems, each at a different stage.",
+      "startS": 155.608,
+      "endS": 158.206,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p47",
+      "text": "Notice two columns are blank.",
+      "startS": 158.64,
+      "endS": 160.272,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p48",
+      "text": "Assigned To and Created By show a dash on every row here.",
+      "startS": 160.861,
+      "endS": 164.998,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "In a live tenant they carry names.",
+      "startS": 165.554,
+      "endS": 167.533,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "A row with no owner is your cue that somebody still needs to pick it up.",
+      "startS": 168.223,
+      "endS": 172.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p51",
+      "text": "At the foot of the list, the counter.",
+      "startS": 172.775,
+      "endS": 174.769,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p52",
+      "text": "It reads five of five, on one page.",
+      "startS": 175.305,
+      "endS": 175.854,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p53",
+      "text": "When your network fills this up, the arrows here walk you through the rest.",
+      "startS": 176.135,
+      "endS": 182.8,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p54",
+      "text": "So that's the work-order board.",
+      "startS": 183.2,
+      "endS": 185.101,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p55",
+      "text": "The four numbers up top tell you the load, the three panels tell you its shape,",
+      "startS": 185.454,
+      "endS": 187.671,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p56",
+      "text": "and the list is where every fix gets tracked.",
+      "startS": 188.081,
+      "endS": 192.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p57",
+      "text": "New Issue starts one; the columns tell you where it stands.",
+      "startS": 193.236,
+      "endS": 194.736,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "This is the page you live in for anything broken on site.",
+      "startS": 195.056,
+      "endS": 200.9,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "freezes": [
+    {
+      "key": "detailStable",
+      "fromS": 3.346,
+      "toS": 4.705,
+      "navPressT": 3.196,
+      "stableT": 4.705
+    }
+  ]
+}

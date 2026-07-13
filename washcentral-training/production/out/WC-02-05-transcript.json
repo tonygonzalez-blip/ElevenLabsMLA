@@ -1,0 +1,768 @@
+{
+  "lesson": "WC-02-05",
+  "audioMaster": "training/module02-crm/WC-02-05-full-narration-v1.0.mp3",
+  "audioDurationS": 301.009,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Fleet and corporate customers wash now and pay later.",
+      "startS": 0,
+      "endS": 3.437,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is where they live.",
+      "startS": 3.786,
+      "endS": 5.082,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Portfolio totals up top, three insight panels, and the account list below.",
+      "startS": 5.755,
+      "endS": 7.425,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "When a fleet manager calls about a bill, you start on this screen.",
+      "startS": 7.813,
+      "endS": 14.957,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Four numbers, the whole book.",
+      "startS": 15.36,
+      "endS": 17.294,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "How many accounts you carry, how many are live, what they owe you right now,",
+      "startS": 17.982,
+      "endS": 20.583,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "and the average credit line you extend.",
+      "startS": 20.825,
+      "endS": 24.338,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Outstanding is the one your callers care about.",
+      "startS": 25.118,
+      "endS": 27.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "It is the money on the street.",
+      "startS": 27.737,
+      "endS": 29.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Three panels read the portfolio's health.",
+      "startS": 29.676,
+      "endS": 31.755,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "A balance trend over the year, credit use broken out by location,",
+      "startS": 32.388,
+      "endS": 34.051,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "and the split of active, suspended, and closed.",
+      "startS": 34.38,
+      "endS": 36.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Watch the utilization bars.",
+      "startS": 36.677,
+      "endS": 39.584,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "An account near its limit is an account about to decline.",
+      "startS": 40.346,
+      "endS": 45.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Down to the list card.",
+      "startS": 45.6,
+      "endS": 48.29,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Three buttons sit here.",
+      "startS": 48.29,
+      "endS": 49.979,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "One of them, Generate Invoices, runs month-end billing across every account",
+      "startS": 49.979,
+      "endS": 53.641,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "and sends real invoices.",
+      "startS": 53.641,
+      "endS": 54.973,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "We locate it and we leave it alone.",
+      "startS": 54.973,
+      "endS": 58.146,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Know where it lives; never press it on a whim.",
+      "startS": 58.146,
+      "endS": 61.996,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "The rest is a familiar list.",
+      "startS": 62.473,
+      "endS": 64.081,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Search by account, company, or contact.",
+      "startS": 64.568,
+      "endS": 66.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Filters beside it.",
+      "startS": 67.463,
+      "endS": 68.426,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Seven columns, ending in status.",
+      "startS": 68.829,
+      "endS": 70.879,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "If you have worked the Customer List, you already know this one.",
+      "startS": 71.554,
+      "endS": 74.696,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Open one account.",
+      "startS": 75.181,
+      "endS": 76.05,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Click a row and the full account view opens.",
+      "startS": 76.05,
+      "endS": 79.256,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "In the demo tenant every row opens the same sample account,",
+      "startS": 79.256,
+      "endS": 82.741,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "so read the numbers as a layout, not as one real customer.",
+      "startS": 82.741,
+      "endS": 86.219,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "The shape is what matters.",
+      "startS": 86.219,
+      "endS": 87.902,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "The header is the account at a glance.",
+      "startS": 88.32,
+      "endS": 91.139,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Company name, an active badge,",
+      "startS": 91.139,
+      "endS": 92.673,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "then the account number, home location, and primary contact on one line.",
+      "startS": 92.673,
+      "endS": 96.353,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Three chips carry the terms:",
+      "startS": 96.353,
+      "endS": 98.667,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "net thirty, a ten thousand dollar limit, fourteen vehicles.",
+      "startS": 98.667,
+      "endS": 101.679,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "You know the deal before you read a single tab.",
+      "startS": 101.679,
+      "endS": 105.164,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Five buttons up top.",
+      "startS": 105.6,
+      "endS": 106.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Back and search are safe.",
+      "startS": 107.605,
+      "endS": 109.201,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Statement, delete, and edit change or generate records,",
+      "startS": 109.868,
+      "endS": 113.343,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "so on a support call you read them and stop.",
+      "startS": 113.611,
+      "endS": 116.22,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Nothing here gets clicked today.",
+      "startS": 116.719,
+      "endS": 118.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Six metrics run under the header.",
+      "startS": 118.88,
+      "endS": 120.678,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Total balance, available credit, the limit, a monthly average,",
+      "startS": 121.155,
+      "endS": 123.133,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "the last payment date, and when the account opened.",
+      "startS": 123.448,
+      "endS": 124.03,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Balance and available credit add up to the limit,",
+      "startS": 124.46,
+      "endS": 128.586,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "so one look tells you how much room is left.",
+      "startS": 129.29,
+      "endS": 134.046,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Beside the band, a set of quick counts.",
+      "startS": 134.544,
+      "endS": 137.032,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Vehicles, invoices, payments, documents.",
+      "startS": 138.046,
+      "endS": 141.248,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "They are shortcuts into the same records the tabs hold,",
+      "startS": 141.681,
+      "endS": 144.521,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "with the totals right on the chip.",
+      "startS": 144.751,
+      "endS": 146.544,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "Ten tabs across the account.",
+      "startS": 147.059,
+      "endS": 148.74,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Overview, details, contacts, vehicles, invoices, payments,",
+      "startS": 149.306,
+      "endS": 149.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "activity, documents, notes, and audit trail.",
+      "startS": 150.244,
+      "endS": 150.978,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "You will not touch all ten on a call.",
+      "startS": 151.245,
+      "endS": 151.983,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "Knowing they exist means you never have to guess where a fact is stored.",
+      "startS": 152.243,
+      "endS": 165.048,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Overview opens on the billing story.",
+      "startS": 165.52,
+      "endS": 167.526,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Monthly charges show the average month, the peak month, and last month, over the past year.",
+      "startS": 167.832,
+      "endS": 172.841,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "This is the account's normal rhythm.",
+      "startS": 173.127,
+      "endS": 174.911,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "It is what you compare against when a charge looks wrong.",
+      "startS": 175.115,
+      "endS": 177.665,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "Now the panel that earns this lesson.",
+      "startS": 178.295,
+      "endS": 180.327,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Aging splits what the account owes by how long it has gone unpaid:",
+      "startS": 180.841,
+      "endS": 184.814,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "current, thirty to sixty, sixty to ninety, ninety plus, and a total.",
+      "startS": 185.14,
+      "endS": 189.241,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "Older buckets are older debt.",
+      "startS": 189.589,
+      "endS": 190.382,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "Anything sitting in ninety plus is the account most likely to get suspended.",
+      "startS": 190.951,
+      "endS": 192.641,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "Read this before you promise a customer anything.",
+      "startS": 192.986,
+      "endS": 200.078,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "Two more panels finish the picture.",
+      "startS": 200.48,
+      "endS": 203.262,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "Wash frequency shows how hard the fleet is using its vehicles.",
+      "startS": 203.262,
+      "endS": 206.824,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "Account health rolls up credit use, a payment score, and average days to pay.",
+      "startS": 206.824,
+      "endS": 212.025,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "Payment score and days to pay are your fast read",
+      "startS": 212.025,
+      "endS": 216.199,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "on whether this account pays like clockwork or drags its feet.",
+      "startS": 216.199,
+      "endS": 219.76,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p71",
+      "text": "Click into invoices.",
+      "startS": 220.248,
+      "endS": 221.193,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p72",
+      "text": "Every bill the account has been sent, with its amount, what has been paid,",
+      "startS": 221.193,
+      "endS": 225.983,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p73",
+      "text": "the balance, and a status of paid, open, or overdue.",
+      "startS": 225.983,
+      "endS": 229.134,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "When someone asks about a specific charge,",
+      "startS": 229.134,
+      "endS": 231.949,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p75",
+      "text": "this is where you find the invoice behind it.",
+      "startS": 231.949,
+      "endS": 234.785,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p76",
+      "text": "Then payments.",
+      "startS": 235.269,
+      "endS": 235.923,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p77",
+      "text": "The ledger shows each payment, how it was applied to invoices,",
+      "startS": 235.923,
+      "endS": 240.163,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p78",
+      "text": "the method, and who posted it.",
+      "startS": 240.163,
+      "endS": 242.126,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p79",
+      "text": "Watch the status column.",
+      "startS": 242.126,
+      "endS": 244.243,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p80",
+      "text": "A voided row explains a payment that looked received but was reversed,",
+      "startS": 244.243,
+      "endS": 248.624,
+      "timing": "proportional"
+    },
+    {
+      "block": "s16",
+      "id": "p81",
+      "text": "which is often the real answer to a billing dispute.",
+      "startS": 248.624,
+      "endS": 252.24,
+      "timing": "proportional"
+    },
+    {
+      "block": "s17",
+      "id": "p82",
+      "text": "The rest of the tabs, in a sentence each.",
+      "startS": 252.64,
+      "endS": 254.966,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p83",
+      "text": "Details is the full record.",
+      "startS": 256.267,
+      "endS": 258.037,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p84",
+      "text": "Contacts, the people.",
+      "startS": 259.029,
+      "endS": 260.469,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p85",
+      "text": "Vehicles, the fleet roster.",
+      "startS": 261.678,
+      "endS": 263.532,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p86",
+      "text": "Documents holds agreements.",
+      "startS": 264.57,
+      "endS": 266.384,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p87",
+      "text": "Notes carries internal comments, some for everyone and some for management only.",
+      "startS": 267.615,
+      "endS": 272.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p88",
+      "text": "Audit trail is the change history.",
+      "startS": 273.58,
+      "endS": 275.565,
+      "timing": "silence"
+    },
+    {
+      "block": "s17",
+      "id": "p89",
+      "text": "Activity would be the live feed, but it did not load at capture, so we park it.",
+      "startS": 276.608,
+      "endS": 281.011,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p90",
+      "text": "Back to the list.",
+      "startS": 281.501,
+      "endS": 282.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p91",
+      "text": "That is a house account, end to end.",
+      "startS": 282.883,
+      "endS": 284.238,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p92",
+      "text": "The list gives you the portfolio and the billing button you never run casually.",
+      "startS": 284.486,
+      "endS": 285.304,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p93",
+      "text": "The detail gives you one account's balance, its aging,",
+      "startS": 285.791,
+      "endS": 290.364,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p94",
+      "text": "and the invoices and payments that answer where a charge came from.",
+      "startS": 290.832,
+      "endS": 297.451,
+      "timing": "silence"
+    },
+    {
+      "block": "s18",
+      "id": "p95",
+      "text": "Next time a fleet manager calls, you know the path.",
+      "startS": 297.826,
+      "endS": 300.559,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "lesson": "WC-12-09",
+  "audioMaster": "training/module12-settings/WC-12-09-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows are the blocks' MEASURED positions in the joined master: the Σ(audio+0.4) formula predicts 260.973s but the ffprobed master is 260.441s (0.53s off, past the ±0.3s gate), so the master was joined with gaps < 0.4s. Each block start is the measured speech-resume boundary of its inter-block gap (ffmpeg silencedetect -35dB/0.25s, cross-checked by FFT cross-correlation of each sNN.mp3 against the master; every measured block width agrees with its per-step render seconds within mp3 frame padding, inter-block gaps ~0.29-0.47s). Final end = ffprobed master duration 260.441s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 17.68,
+      "phrases": [
+        { "id": "p01", "text": "Every integration in WashCentral has its own page under Settings." },
+        { "id": "p02", "text": "The breadcrumb confirms where you are," },
+        { "id": "p03", "text": "and the Integrations entry at the bottom of the left rail is the way in." },
+        { "id": "p04", "text": "We start on Zoho Desk, the help desk connector," },
+        { "id": "p05", "text": "because once you can read this page, you can read all eight." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.68,
+      "endS": 35.587,
+      "phrases": [
+        { "id": "p06", "text": "Start at the top." },
+        { "id": "p07", "text": "The badge next to the title says what the integration is for, help desk in this case," },
+        { "id": "p08", "text": "and the pill beside it answers the client's first question." },
+        { "id": "p09", "text": "Not Configured means nothing is wired up in this tenant." },
+        { "id": "p10", "text": "One glance, and you already know the connection state." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 35.587,
+      "endS": 51.284,
+      "phrases": [
+        { "id": "p11", "text": "Under the title, three small chips." },
+        { "id": "p12", "text": "They name how WashCentral would talk to the vendor once connected." },
+        { "id": "p13", "text": "Every integration page swaps in its own set," },
+        { "id": "p14", "text": "so the chips become your fastest read on the method." },
+        { "id": "p15", "text": "Watch them change as we tour the other pages." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 51.284,
+      "endS": 69.631,
+      "phrases": [
+        { "id": "p16", "text": "Top right, two buttons, and we touch neither." },
+        { "id": "p17", "text": "Test Connection fires a live call out to the vendor." },
+        { "id": "p18", "text": "Edit Configuration opens the credential editor." },
+        { "id": "p19", "text": "Both belong to an administrator." },
+        { "id": "p20", "text": "Your job on this page is to read it," },
+        { "id": "p21", "text": "and reading never requires a click up here." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 69.631,
+      "endS": 85.986,
+      "phrases": [
+        { "id": "p22", "text": "Now the tile strip." },
+        { "id": "p23", "text": "Four tiles summarize health:" },
+        { "id": "p24", "text": "the connection state, the data center, the org I-D, and which way data syncs." },
+        { "id": "p25", "text": "Notice Connection reads Not set, which agrees with the pill above." },
+        { "id": "p26", "text": "When those two match, you can trust the page's story." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 85.986,
+      "endS": 101.84,
+      "phrases": [
+        { "id": "p27", "text": "Below the tiles, two tabs." },
+        { "id": "p28", "text": "Settings, the one that's open, holds the live field values." },
+        { "id": "p29", "text": "Instructions holds the vendor's setup steps," },
+        { "id": "p30", "text": "and we leave it closed today because its contents haven't been verified yet." },
+        { "id": "p31", "text": "Everything we need sits on the Settings tab." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 101.84,
+      "endS": 121.809,
+      "phrases": [
+        { "id": "p32", "text": "Scroll into the credentials group." },
+        { "id": "p33", "text": "Client I-D, secrets, tokens, expiry." },
+        { "id": "p34", "text": "Here is the rule that never bends:" },
+        { "id": "p35", "text": "you read the labels, never the values." },
+        { "id": "p36", "text": "In this demo tenant the fields sit empty anyway," },
+        { "id": "p37", "text": "but on a client's tenant a credential value never goes into a note, a screenshot, or a ticket." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 121.809,
+      "endS": 144.08,
+      "phrases": [
+        { "id": "p38", "text": "Keep scrolling." },
+        { "id": "p39", "text": "The remaining groups decide behavior once the connection is live." },
+        { "id": "p40", "text": "General turns it on, Routing picks a default department and assignee," },
+        { "id": "p41", "text": "Sync sets the direction, and Mapping ties Zoho's statuses to WashCentral's." },
+        { "id": "p42", "text": "That is the whole anatomy." },
+        { "id": "p43", "text": "The rest of this lesson is the same skeleton wearing different names." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 144.08,
+      "endS": 165.714,
+      "phrases": [
+        { "id": "p44", "text": "Now Microsoft Entra I-D." },
+        { "id": "p45", "text": "Same skeleton, different job." },
+        { "id": "p46", "text": "The badge now reads single sign-on, the chips describe Microsoft's method," },
+        { "id": "p47", "text": "and the tiles track the issuer, client I-D, and scopes instead of help desk fields." },
+        { "id": "p48", "text": "One field worth knowing: the redirect U-R-I, with its Copy button," },
+        { "id": "p49", "text": "is what an admin pastes into the identity provider." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 165.714,
+      "endS": 184.047,
+      "phrases": [
+        { "id": "p50", "text": "Google, Okta, Cognito." },
+        { "id": "p51", "text": "Three more providers, one layout." },
+        { "id": "p52", "text": "Only the name and the method chips change from page to page," },
+        { "id": "p53", "text": "and every one of them sits at Not Configured here." },
+        { "id": "p54", "text": "Learn the Entra page and you have learned all four." },
+        { "id": "p55", "text": "That is the payoff of the shared anatomy." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 184.047,
+      "endS": 201.184,
+      "phrases": [
+        { "id": "p56", "text": "SCIM, pronounced skim, is the odd one out." },
+        { "id": "p57", "text": "Instead of signing people in," },
+        { "id": "p58", "text": "it creates and deactivates users automatically from the identity provider." },
+        { "id": "p59", "text": "The tiles track its status and last event," },
+        { "id": "p60", "text": "and the sync log below stays empty until provisioning events start arriving." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 201.184,
+      "endS": 222.08,
+      "phrases": [
+        { "id": "p61", "text": "On to accounting. Open Sage." },
+        { "id": "p62", "text": "The shape holds, but the fields turn financial." },
+        { "id": "p63", "text": "The sync schedule tile shows a cron value because Sage posts on a timer," },
+        { "id": "p64", "text": "two in the morning here, not on every sale." },
+        { "id": "p65", "text": "And note the safety group's dry run flag," },
+        { "id": "p66", "text": "a rehearsal switch that tests a sync without posting anything." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 222.08,
+      "endS": 241.68,
+      "phrases": [
+        { "id": "p67", "text": "QuickBooks Online, the other ledger." },
+        { "id": "p68", "text": "Same badge, same subtitle, different vendor." },
+        { "id": "p69", "text": "Its credentials add a realm, which is QuickBooks' name for the company I-D," },
+        { "id": "p70", "text": "alongside the usual tokens." },
+        { "id": "p71", "text": "Sage and QuickBooks do one job through two doors," },
+        { "id": "p72", "text": "the same pattern you just saw across the four sign-on providers." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 241.68,
+      "endS": 260.441,
+      "phrases": [
+        { "id": "p73", "text": "Back to Zoho for the read that matters." },
+        { "id": "p74", "text": "A client says the integration is broken." },
+        { "id": "p75", "text": "You check three things in order: the status pill," },
+        { "id": "p76", "text": "then Test Connection, remembering an admin runs it, not you," },
+        { "id": "p77", "text": "then token expiry in the credentials." },
+        { "id": "p78", "text": "That answers \"is it connected?\" from one page, without filing a bug." }
+      ]
+    }
+  ],
+  "output": "WC-12-09-integrations-v1.1"
+}

@@ -1,0 +1,632 @@
+{
+  "lesson": "WC-12-09",
+  "audioMaster": "training/module12-settings/WC-12-09-full-narration-v1.0.mp3",
+  "audioDurationS": 260.441,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Every integration in WashCentral has its own page under Settings.",
+      "startS": 0,
+      "endS": 3.02,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The breadcrumb confirms where you are,",
+      "startS": 3.02,
+      "endS": 5.391,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "and the Integrations entry at the bottom of the left rail is the way in.",
+      "startS": 5.391,
+      "endS": 10.166,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "We start on Zoho Desk, the help desk connector,",
+      "startS": 10.166,
+      "endS": 13.638,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "because once you can read this page, you can read all eight.",
+      "startS": 13.638,
+      "endS": 17.262,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Start at the top.",
+      "startS": 17.68,
+      "endS": 18.743,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The badge next to the title says what the integration is for, help desk in this case,",
+      "startS": 19.372,
+      "endS": 22.893,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "and the pill beside it answers the client's first question.",
+      "startS": 23.221,
+      "endS": 24.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Not Configured means nothing is wired up in this tenant.",
+      "startS": 24.869,
+      "endS": 27.958,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "One glance, and you already know the connection state.",
+      "startS": 28.604,
+      "endS": 35.082,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Under the title, three small chips.",
+      "startS": 35.587,
+      "endS": 37.831,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "They name how WashCentral would talk to the vendor once connected.",
+      "startS": 38.585,
+      "endS": 41.836,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Every integration page swaps in its own set,",
+      "startS": 42.294,
+      "endS": 45.026,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "so the chips become your fastest read on the method.",
+      "startS": 45.388,
+      "endS": 47.918,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Watch them change as we tour the other pages.",
+      "startS": 48.427,
+      "endS": 50.747,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Top right, two buttons, and we touch neither.",
+      "startS": 51.284,
+      "endS": 53.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Test Connection fires a live call out to the vendor.",
+      "startS": 55.311,
+      "endS": 58.295,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Edit Configuration opens the credential editor.",
+      "startS": 59.686,
+      "endS": 62.257,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Both belong to an administrator.",
+      "startS": 62.466,
+      "endS": 64.269,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Your job on this page is to read it,",
+      "startS": 64.475,
+      "endS": 66.493,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "and reading never requires a click up here.",
+      "startS": 66.73,
+      "endS": 69.2,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Now the tile strip.",
+      "startS": 69.631,
+      "endS": 70.716,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Four tiles summarize health:",
+      "startS": 71.337,
+      "endS": 72.79,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "the connection state, the data center, the org I-D, and which way data syncs.",
+      "startS": 73.148,
+      "endS": 78.194,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Notice Connection reads Not set, which agrees with the pill above.",
+      "startS": 78.721,
+      "endS": 82.419,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "When those two match, you can trust the page's story.",
+      "startS": 82.771,
+      "endS": 85.493,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Below the tiles, two tabs.",
+      "startS": 85.986,
+      "endS": 87.718,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Settings, the one that's open, holds the live field values.",
+      "startS": 88.313,
+      "endS": 91.971,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Instructions holds the vendor's setup steps,",
+      "startS": 92.338,
+      "endS": 94.687,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "and we leave it closed today because its contents haven't been verified yet.",
+      "startS": 94.9,
+      "endS": 98.329,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Everything we need sits on the Settings tab.",
+      "startS": 99.037,
+      "endS": 101.247,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Scroll into the credentials group.",
+      "startS": 101.84,
+      "endS": 103.569,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Client I-D, secrets, tokens, expiry.",
+      "startS": 104.315,
+      "endS": 105.274,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Here is the rule that never bends:",
+      "startS": 105.529,
+      "endS": 106.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "you read the labels, never the values.",
+      "startS": 106.46,
+      "endS": 108.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "In this demo tenant the fields sit empty anyway,",
+      "startS": 108.578,
+      "endS": 113.069,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "but on a client's tenant a credential value never goes into a note, a screenshot, or a ticket.",
+      "startS": 113.597,
+      "endS": 121.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Keep scrolling.",
+      "startS": 121.809,
+      "endS": 122.639,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "The remaining groups decide behavior once the connection is live.",
+      "startS": 123.34,
+      "endS": 126.791,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "General turns it on, Routing picks a default department and assignee,",
+      "startS": 127.381,
+      "endS": 128.655,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "Sync sets the direction, and Mapping ties Zoho's statuses to WashCentral's.",
+      "startS": 128.957,
+      "endS": 131.645,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "That is the whole anatomy.",
+      "startS": 132.1,
+      "endS": 137.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "The rest of this lesson is the same skeleton wearing different names.",
+      "startS": 137.765,
+      "endS": 143.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Now Microsoft Entra I-D.",
+      "startS": 144.08,
+      "endS": 145.589,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Same skeleton, different job.",
+      "startS": 145.589,
+      "endS": 147.384,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "The badge now reads single sign-on, the chips describe Microsoft's method,",
+      "startS": 147.384,
+      "endS": 151.823,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "and the tiles track the issuer, client I-D, and scopes instead of help desk fields.",
+      "startS": 151.823,
+      "endS": 157.48,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "One field worth knowing: the redirect U-R-I, with its Copy button,",
+      "startS": 157.48,
+      "endS": 161.885,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "is what an admin pastes into the identity provider.",
+      "startS": 161.885,
+      "endS": 165.279,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Google, Okta, Cognito.",
+      "startS": 165.714,
+      "endS": 166.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "Three more providers, one layout.",
+      "startS": 166.565,
+      "endS": 167.978,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "Only the name and the method chips change from page to page,",
+      "startS": 169.06,
+      "endS": 171.168,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "and every one of them sits at Not Configured here.",
+      "startS": 171.604,
+      "endS": 174.726,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "Learn the Entra page and you have learned all four.",
+      "startS": 175.103,
+      "endS": 177.692,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "That is the payoff of the shared anatomy.",
+      "startS": 178.402,
+      "endS": 183.511,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "SCIM, pronounced skim, is the odd one out.",
+      "startS": 184.047,
+      "endS": 186.955,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Instead of signing people in,",
+      "startS": 186.955,
+      "endS": 189.251,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "it creates and deactivates users automatically from the identity provider.",
+      "startS": 189.251,
+      "endS": 192.886,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "The tiles track its status and last event,",
+      "startS": 192.886,
+      "endS": 196.341,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "and the sync log below stays empty until provisioning events start arriving.",
+      "startS": 196.341,
+      "endS": 200.703,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "On to accounting. Open Sage.",
+      "startS": 201.184,
+      "endS": 203.398,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "The shape holds, but the fields turn financial.",
+      "startS": 204.249,
+      "endS": 207.189,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "The sync schedule tile shows a cron value because Sage posts on a timer,",
+      "startS": 207.887,
+      "endS": 212.285,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "two in the morning here, not on every sale.",
+      "startS": 212.646,
+      "endS": 214.972,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "And note the safety group's dry run flag,",
+      "startS": 215.805,
+      "endS": 218.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p66",
+      "text": "a rehearsal switch that tests a sync without posting anything.",
+      "startS": 218.382,
+      "endS": 221.614,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "QuickBooks Online, the other ledger.",
+      "startS": 222.08,
+      "endS": 223.908,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p68",
+      "text": "Same badge, same subtitle, different vendor.",
+      "startS": 223.908,
+      "endS": 226.595,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p69",
+      "text": "Its credentials add a realm, which is QuickBooks' name for the company I-D,",
+      "startS": 226.595,
+      "endS": 231.815,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p70",
+      "text": "alongside the usual tokens.",
+      "startS": 231.815,
+      "endS": 233.277,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p71",
+      "text": "Sage and QuickBooks do one job through two doors,",
+      "startS": 233.277,
+      "endS": 236.96,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p72",
+      "text": "the same pattern you just saw across the four sign-on providers.",
+      "startS": 236.96,
+      "endS": 241.28,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p73",
+      "text": "Back to Zoho for the read that matters.",
+      "startS": 241.68,
+      "endS": 243.878,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p74",
+      "text": "A client says the integration is broken.",
+      "startS": 244.268,
+      "endS": 246.449,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p75",
+      "text": "You check three things in order: the status pill,",
+      "startS": 246.779,
+      "endS": 248.341,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p76",
+      "text": "then Test Connection, remembering an admin runs it, not you,",
+      "startS": 248.564,
+      "endS": 253.334,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p77",
+      "text": "then token expiry in the credentials.",
+      "startS": 253.56,
+      "endS": 255.725,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p78",
+      "text": "That answers \"is it connected?\" from one page, without filing a bug.",
+      "startS": 255.985,
+      "endS": 260,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "lesson": "WC-09-02",
+  "audioMaster": "training/module09-digital/WC-09-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-09-02-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft): the Σ(ffprobe audio+0.4) formula predicts 197.05s but the ffprobed master is 196.598s (0.45s off, past the ±0.3s gate). Cross-correlation shows the master is the 14 blocks concatenated with an exact 0.400s gap after each; per-file ffprobe durations are inflated ~0.03s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates to -0.45s by s14, which is the whole discrepancy. Each block startS is its measured onset (every onset landed on the 0.08s mp3-frame grid); final end = ffprobed master duration 196.598s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 15.92,
+      "phrases": [
+        { "id": "p01", "text": "Open Digital, and stay on Mobile App Users." },
+        { "id": "p02", "text": "The sidebar splits the customer's world in two: the portal, and the mobile app." },
+        { "id": "p03", "text": "Under Mobile you get five pages." },
+        { "id": "p04", "text": "This lesson visits all of them, but you only read." },
+        { "id": "p05", "text": "Nothing here gets saved." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.92,
+      "endS": 31.52,
+      "phrases": [
+        { "id": "p06", "text": "Four numbers run across the top." },
+        { "id": "p07", "text": "Total users, active this month, and the split between iOS and Android." },
+        { "id": "p08", "text": "That last pair earns its keep on a support call." },
+        { "id": "p09", "text": "It tells you, before you ask, which phone your customer is probably holding." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 31.52,
+      "endS": 46.16,
+      "phrases": [
+        { "id": "p10", "text": "Three cards fill in the shape." },
+        { "id": "p11", "text": "One tracks growth over the year." },
+        { "id": "p12", "text": "One breaks the base down by device." },
+        { "id": "p13", "text": "The last sorts users into active, monthly, and gone quiet." },
+        { "id": "p14", "text": "A rising inactive slice is worth a second look." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 46.16,
+      "endS": 60.64,
+      "phrases": [
+        { "id": "p15", "text": "Now the list itself." },
+        { "id": "p16", "text": "Seven columns per user: name, email, app version, platform, last active, notifications, and status." },
+        { "id": "p17", "text": "Two of those seven do most of the troubleshooting work." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 60.64,
+      "endS": 74.4,
+      "phrases": [
+        { "id": "p18", "text": "Read one row like a support ticket." },
+        { "id": "p19", "text": "App version tells you whether they're stuck behind a fix." },
+        { "id": "p20", "text": "Notifications, on or off, tells you why a customer swears the alert never came." },
+        { "id": "p21", "text": "Start here, before you touch anything else." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 74.4,
+      "endS": 87.2,
+      "phrases": [
+        { "id": "p22", "text": "Above the table, the usual controls." },
+        { "id": "p23", "text": "Search pulls up one customer by name or email." },
+        { "id": "p24", "text": "There's also Export and a New Record button." },
+        { "id": "p25", "text": "Leave both alone today; reading the list is all a technician needs." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 87.2,
+      "endS": 100.4,
+      "phrases": [
+        { "id": "p26", "text": "Now the pages that build the app." },
+        { "id": "p27", "text": "Open Mobile App Branding." },
+        { "id": "p28", "text": "Notice the shell flips to Settings." },
+        { "id": "p29", "text": "This is where a brand's name, logo, colors, and support details get set," },
+        { "id": "p30", "text": "with a live phone preview alongside." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 100.4,
+      "endS": 118.24,
+      "phrases": [
+        { "id": "p31", "text": "Four blocks, top to bottom." },
+        { "id": "p32", "text": "Tenant, brand, colors, support." },
+        { "id": "p33", "text": "Display names and taglines, logo links," },
+        { "id": "p34", "text": "the primary and accent colors, a support phone and email." },
+        { "id": "p35", "text": "Editing any of it and publishing would re-skin the real app, so we only look." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 118.24,
+      "endS": 133.84,
+      "phrases": [
+        { "id": "p36", "text": "Back to the group, open Mobile App Features." },
+        { "id": "p37", "text": "These are on-and-off switches for the fun: daily spin, wash streak, scratch cards, a few more," },
+        { "id": "p38", "text": "plus wallet and gift cards." },
+        { "id": "p39", "text": "Flip one and the preview updates." },
+        { "id": "p40", "text": "We flip nothing." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 133.84,
+      "endS": 150.0,
+      "phrases": [
+        { "id": "p41", "text": "Last page, Push Notifications." },
+        { "id": "p42", "text": "It opens as Push Campaigns: write a message, pick an audience," },
+        { "id": "p43", "text": "watch it land on a lock-screen preview." },
+        { "id": "p44", "text": "That's marketing's job, not ours." },
+        { "id": "p45", "text": "We create no campaign here, and we send nothing." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 150.0,
+      "endS": 162.96,
+      "phrases": [
+        { "id": "p46", "text": "One thing ties these pages together." },
+        { "id": "p47", "text": "Each shows a live preview beside the settings," },
+        { "id": "p48", "text": "so you can see what the customer sees without leaving the console." },
+        { "id": "p49", "text": "A standalone preview launcher isn't in this build, so we've parked it." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 162.96,
+      "endS": 171.68,
+      "phrases": [
+        { "id": "p50", "text": "Click Close Settings." },
+        { "id": "p51", "text": "The menu folds away and drops you back on the platform," },
+        { "id": "p52", "text": "with nothing saved, nothing published, and nothing sent." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 171.68,
+      "endS": 182.16,
+      "phrases": [
+        { "id": "p53", "text": "One entry stays closed: Mobile Feedback." },
+        { "id": "p54", "text": "It's listed in the group, but the page didn't load in our capture." },
+        { "id": "p55", "text": "Until someone walks it live, treat what's inside as unconfirmed." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 182.16,
+      "endS": 196.598,
+      "phrases": [
+        { "id": "p56", "text": "That's the mobile corner of Digital." },
+        { "id": "p57", "text": "One page you open on real calls, Mobile App Users," },
+        { "id": "p58", "text": "and three you'll recognize but leave alone." },
+        { "id": "p59", "text": "When a customer's app misbehaves, you already know the first two columns to read." }
+      ]
+    }
+  ],
+  "output": "WC-09-02-mobile-app-v1.1"
+}

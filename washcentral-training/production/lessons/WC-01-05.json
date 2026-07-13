@@ -102,6 +102,9 @@
     },
     "backBtn": {
       "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Back/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
     }
   },
   "predicates": {
@@ -175,7 +178,7 @@
       "hoverMs": 350,
       "postcondition": "opsCardOpen",
       "timeoutMs": 4000,
-      "note": "step 1b: open the Operations group card as it is named (stateless accordion \u2014 closed on every fresh load of settings.html)"
+      "note": "step 1b: open the Operations group card as it is named (stateless accordion — closed on every fresh load of settings.html)"
     },
     {
       "op": "click",
@@ -215,7 +218,7 @@
     },
     {
       "op": "move",
-      "at": 7.0,
+      "at": 7,
       "to": {
         "target": "sidebarOpsHeader",
         "offset": [
@@ -425,7 +428,7 @@
         "End"
       ],
       "gapMs": 200,
-      "keyLabel": "End \u2014 drop to the footer",
+      "keyLabel": "End — drop to the footer",
       "postcondition": "footerVisible",
       "timeoutMs": 3000,
       "note": "step 5: genuine keyboard scroll inside the pause after 'Drop to the footer.'"
@@ -589,7 +592,7 @@
       "hoverMs": 400,
       "postcondition": "stillOnList",
       "timeoutMs": 3000,
-      "note": "step 7: the row click that goes nowhere \u2014 press inside the pause after 'click a row'"
+      "note": "step 7: the row click that goes nowhere — press inside the pause after 'click a row'"
     },
     {
       "op": "watch",
@@ -805,7 +808,7 @@
       "postcondition": "onCancellationList",
       "timeoutMs": 8000,
       "nav": true,
-      "note": "genuine \u2190 Back off the detail page so the s12 recap plays on the list; Delete on that page is never approached"
+      "note": "genuine ← Back off the detail page so the s12 recap plays on the list; Delete on that page is never approached"
     },
     {
       "op": "wait-stable",
@@ -819,7 +822,7 @@
       "op": "assert",
       "at": 154.35,
       "predicate": "rowsLoaded",
-      "note": "'Nothing gets added' \u2014 the list is back, still 33 records"
+      "note": "'Nothing gets added' — the list is back, still 33 records"
     },
     {
       "op": "log-rect",
@@ -1065,7 +1068,7 @@
         "anchor": "pagRects.pgRight",
         "from": 59.15,
         "to": 60.05,
-        "note": "'and the page arrows' \u2014 after the camera is wide again"
+        "note": "'and the page arrows' — after the camera is wide again"
       },
       {
         "anchor": "pagRects.pgInfo",
@@ -1113,7 +1116,7 @@
         "anchor": "descInputRect",
         "from": 143.7,
         "to": 145.7,
-        "note": "'blank this time' \u2014 the empty required field"
+        "note": "'blank this time' — the empty required field"
       },
       {
         "anchor": "saveTopRect",
@@ -1267,7 +1270,7 @@
         "cx": 1133,
         "cy": 430,
         "ease": true,
-        "note": "step 11: form framing \u2014 hero band, Reason Details tab, required field, Cancel / Save Changes"
+        "note": "step 11: form framing — hero band, Reason Details tab, required field, Cancel / Save Changes"
       },
       {
         "t": 150.3,
@@ -1291,7 +1294,7 @@
       }
     ],
     "completion": {
-      "text": "Record Pattern \u2014 Complete",
+      "text": "Record Pattern — Complete",
       "from": 179.28,
       "fadeOutFrames": 10
     },
@@ -1318,5 +1321,17 @@
     "yes, delete",
     "send",
     "submit"
+  ],
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar preference expanded before the take"
+    }
   ]
 }

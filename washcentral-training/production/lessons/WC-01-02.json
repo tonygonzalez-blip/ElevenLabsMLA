@@ -653,7 +653,7 @@
       "op": "watch",
       "key": "shyneVisibleDuringExplanation",
       "from": 110.6,
-      "to": 157.2,
+      "to": 155.9,
       "predicate": "shyneOpen",
       "everyMs": 500,
       "mustHold": true
@@ -740,11 +740,11 @@
     {
       "op": "click",
       "target": "shyneClose",
-      "pressAt": 157.5,
+      "pressAt": 156.2,
       "hoverMs": 380,
       "postcondition": "shyneClosed",
       "timeoutMs": 4000,
-      "note": "step 12: dismiss via the modal's real close control (aria-label 'Close', the ✕ top-right); nothing sent"
+      "note": "step 12: dismiss via the modal's real close control (aria-label 'Close', the ✕ top-right); nothing sent. Press lands on the p50 'Click Close.' cue (156.0-156.98) so the window is gone before p51 'The window disappears...' begins at 157.61"
     },
     {
       "op": "move",
@@ -902,8 +902,8 @@
         "n": 12,
         "anchor": "closeBtnRect",
         "place": "right",
-        "from": 156.2,
-        "to": 157.3
+        "from": 154.9,
+        "to": 156.1
       },
       {
         "n": 13,
@@ -915,6 +915,12 @@
       }
     ],
     "highlights": [
+      {
+        "anchor": "union:headerBtns",
+        "from": 2.6,
+        "to": 7.9,
+        "note": "callout ① era: one bracket spanning all four logged header-tool rects (union computed at composite time)"
+      },
       {
         "anchor": "headerBtns.searchBtn",
         "from": 8.6,
@@ -1020,9 +1026,9 @@
       },
       {
         "anchor": "closeBtnRect",
-        "from": 156.1,
-        "to": 157.3,
-        "note": "p50 'Click Close.' — the genuine dismiss, before the press"
+        "from": 154.8,
+        "to": 156.1,
+        "note": "p50 'Click Close.' — the genuine dismiss, before the press (press now at ~156.2)"
       },
       {
         "anchor": "headerBtns.searchBtn",
@@ -1170,6 +1176,7 @@
     ],
     "completion": {
       "text": "Search, Location Scope & Ask Shyne — Complete",
+      "stamp": "Verified against demo.washcentral.com on July 8, 2026.",
       "from": 179.7,
       "fadeOutFrames": 10
     },

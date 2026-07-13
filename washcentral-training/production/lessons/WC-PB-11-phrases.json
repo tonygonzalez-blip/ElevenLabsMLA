@@ -1,0 +1,116 @@
+{
+  "lesson": "WC-PB-11",
+  "audioMaster": "training/playbooks/WC-PB-11-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked WC-PB-11 narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; spellings kept exactly, e.g. 'read only', 'four oh four', 'IT and Support'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s09 end at 146.829s, which overshoots the ffprobe-probed master (146.521s) by 0.308s (> 0.3 tolerance) because the concatenated MP3 was joined with gaps slightly under 0.4s (drift accumulates to -0.300s by s09). Onsets were therefore measured by normalized cross-correlation of each WC-PB-11-sNN.mp3 (0.75s template) against the joined master at 8 kHz mono (all 9 blocks matched at NCC 0.9999-1.000). Master ffprobe duration 146.521s (PCM-decoded 146.480s).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 16.8,
+      "phrases": [
+        { "id": "p01", "text": "A caller wants two things: who changed it, and what it said before." },
+        { "id": "p02", "text": "Two pages answer that between them, and you read them in order." },
+        { "id": "p03", "text": "One rule before you start." },
+        { "id": "p04", "text": "The audit trail is read only." },
+        { "id": "p05", "text": "It's only worth anything because nobody corrects it." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.8,
+      "endS": 34.24,
+      "phrases": [
+        { "id": "p06", "text": "Open IT and Support, then Audit." },
+        { "id": "p07", "text": "You land on the Audit Log, and the sidebar lists three pages." },
+        { "id": "p08", "text": "You need two of them today: the Audit Log for who did what," },
+        { "id": "p09", "text": "and Change History for the before and after." },
+        { "id": "p10", "text": "User Activity is login history." },
+        { "id": "p11", "text": "That one belongs to a different playbook." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.24,
+      "endS": 53.76,
+      "phrases": [
+        { "id": "p12", "text": "Read the log." },
+        { "id": "p13", "text": "Seven columns tell you who touched the record, when," },
+        { "id": "p14", "text": "from which location, and from which IP address." },
+        { "id": "p15", "text": "The change you're chasing is an Updated row." },
+        { "id": "p16", "text": "Settings changes land here too, with the module reading Settings." },
+        { "id": "p17", "text": "Don't scroll a busy log." },
+        { "id": "p18", "text": "Filter it, or search it." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 53.76,
+      "endS": 68.08,
+      "phrases": [
+        { "id": "p19", "text": "Now the page the caller actually wants." },
+        { "id": "p20", "text": "In the sidebar, click Change History." },
+        { "id": "p21", "text": "One quirk from today's capture: typing its address directly returned a four oh four." },
+        { "id": "p22", "text": "So you reach it this way, through the audit sidebar, not by URL." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 68.08,
+      "endS": 76.72,
+      "phrases": [
+        { "id": "p23", "text": "Narrow it to the record." },
+        { "id": "p24", "text": "Filter down to the module in question so one record's changes stand alone." },
+        { "id": "p25", "text": "You're reading a history, not editing one." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 76.72,
+      "endS": 89.6,
+      "phrases": [
+        { "id": "p26", "text": "And here's the answer." },
+        { "id": "p27", "text": "Each change is recorded at field level: the field, its old value, its new value," },
+        { "id": "p28", "text": "with the user and the timestamp." },
+        { "id": "p29", "text": "That row is, literally, what was it before." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 89.6,
+      "endS": 106.96,
+      "phrases": [
+        { "id": "p30", "text": "Now put the two pages together." },
+        { "id": "p31", "text": "Change History gives you the field and the exact old and new values." },
+        { "id": "p32", "text": "The Audit Log gives you the user, the date and time, and the IP address it came from." },
+        { "id": "p33", "text": "The price changed is not an answer." },
+        { "id": "p34", "text": "The two values are." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 106.96,
+      "endS": 130.56,
+      "phrases": [
+        { "id": "p35", "text": "Write the packet." },
+        { "id": "p36", "text": "The record, the field, both values, the user, the timestamp, the IP address, and screenshots." },
+        { "id": "p37", "text": "You never reverse the change from here." },
+        { "id": "p38", "text": "A correction happens in the record's own module, or gets escalated." },
+        { "id": "p39", "text": "And if the change looks unauthorized, that's a security escalation," },
+        { "id": "p40", "text": "and the next tier wants the IP and the user first." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 130.56,
+      "endS": 146.521,
+      "phrases": [
+        { "id": "p41", "text": "That's the order." },
+        { "id": "p42", "text": "Audit Log first, for who, when, where, and which IP." },
+        { "id": "p43", "text": "Change History second, for the field-level old to new." },
+        { "id": "p44", "text": "Then the exact answer, or a clean escalation." },
+        { "id": "p45", "text": "Nothing edited, nothing touched." }
+      ]
+    }
+  ],
+  "output": "WC-PB-11-who-changed-this-v1.1"
+}

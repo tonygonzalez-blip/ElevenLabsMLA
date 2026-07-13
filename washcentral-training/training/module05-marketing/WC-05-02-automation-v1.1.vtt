@@ -1,0 +1,194 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.820
+Marketing, then Automation.
+
+p02
+00:00:02.401 --> 00:00:07.002
+Open this page when a client asks why a lifecycle text went out, or didn't.
+
+p03
+00:00:07.554 --> 00:00:10.880
+Every automated flow you run sits here on one screen.
+
+p04
+00:00:11.341 --> 00:00:13.242
+Across the top, four numbers.
+
+p05
+00:00:13.664 --> 00:00:16.529
+How many automations exist, how many are live,
+
+p06
+00:00:16.825 --> 00:00:20.481
+how many are still drafts, and how many messages they've sent this month.
+
+p07
+00:00:21.166 --> 00:00:24.248
+Read left to right and you already know the shape of the account.
+
+p08
+00:00:24.720 --> 00:00:26.756
+First panel, Send Volume.
+
+p09
+00:00:27.042 --> 00:00:29.154
+A thirty-day line of daily sends.
+
+p10
+00:00:29.490 --> 00:00:34.560
+When a client says the texts stopped last Tuesday, this curve is where a drop shows up first.
+
+p11
+00:00:34.960 --> 00:00:37.183
+Next to it, Status Breakdown.
+
+p12
+00:00:37.521 --> 00:00:40.490
+It splits your automations into published and draft.
+
+p13
+00:00:40.965 --> 00:00:45.386
+For the real count, trust the cards up top: three published, one draft.
+
+p14
+00:00:45.894 --> 00:00:47.356
+Then Top Triggers.
+
+p15
+00:00:48.282 --> 00:00:51.229
+A donut showing which events set your automations off.
+
+p16
+00:00:51.656 --> 00:00:55.435
+Cancellations lead, recharges and plan upgrades follow.
+
+p17
+00:00:55.911 --> 00:00:58.480
+It tells you where the automated work is concentrated.
+
+p18
+00:00:58.880 --> 00:01:00.006
+Scroll to the list.
+
+p19
+00:01:01.653 --> 00:01:03.247
+Four automations on record.
+
+p20
+00:01:03.505 --> 00:01:04.882
+Two buttons sit to the right, Export and New Automation.
+
+p21
+00:01:05.129 --> 00:01:10.194
+We're only reading today, so leave both alone.
+
+p22
+00:01:10.755 --> 00:01:13.587
+A search box, a filter, a search button.
+
+p23
+00:01:14.252 --> 00:01:15.795
+Type a name to narrow the list.
+
+p24
+00:01:16.372 --> 00:01:19.338
+Browsing changes nothing, so poke around without worry.
+
+p25
+00:01:19.760 --> 00:01:20.739
+Five columns.
+
+p26
+00:01:21.259 --> 00:01:23.190
+Name, the trigger that fires it, when it was created,
+
+p27
+00:01:23.494 --> 00:01:27.391
+when it was last touched, and its status.
+
+p28
+00:01:27.832 --> 00:01:30.102
+That last column is the one you'll check most.
+
+p29
+00:01:30.667 --> 00:01:33.994
+Top row, Win Back, No Visit ninety days.
+
+p30
+00:01:34.522 --> 00:01:36.782
+Its trigger is a customer who hasn't come back.
+
+p31
+00:01:37.320 --> 00:01:39.988
+Status reads Draft, so it isn't live yet.
+
+p32
+00:01:40.418 --> 00:01:41.920
+Nothing is going out from this one.
+
+p33
+00:01:42.403 --> 00:01:44.372
+Cancel Plan Recovery, next.
+
+p34
+00:01:44.829 --> 00:01:46.267
+Trigger's a cancellation, status Published, so it's live.
+
+p35
+00:01:46.477 --> 00:01:48.295
+But look right: weather paused at six locations.
+
+p36
+00:01:48.542 --> 00:01:55.909
+Live and paused at once, which is exactly the answer to a stopped-texts call.
+
+p37
+00:01:56.377 --> 00:01:57.060
+Two more.
+
+p38
+00:01:57.367 --> 00:02:01.146
+Birthday Surprise fires on a member's birthday and runs clean.
+
+p39
+00:02:01.661 --> 00:02:06.756
+First Wash Welcome greets new customers, published, but weather-paused at five sites.
+
+p40
+00:02:07.047 --> 00:02:09.105
+Same story as the cancellation flow.
+
+p41
+00:02:09.520 --> 00:02:11.044
+Status shows as a chip.
+
+p42
+00:02:12.744 --> 00:02:13.783
+Green Published, amber Draft, and that weather note layered on top when a pause is active.
+
+p43
+00:02:14.125 --> 00:02:24.216
+Down the bottom, one through four of four, so the whole account fits on one page.
+
+p44
+00:02:24.800 --> 00:02:26.582
+So, the automation page.
+
+p45
+00:02:27.384 --> 00:02:28.588
+Four numbers up top, three panels for the trends, one table for the detail.
+
+p46
+00:02:29.005 --> 00:02:30.420
+When someone reports a flow that stopped, you can tell in seconds
+
+p47
+00:02:30.777 --> 00:02:32.231
+whether it's a draft, a pause, or something worth a bug.
+
+p48
+00:02:33.034 --> 00:02:43.234
+Where weather pausing gets switched on is still parked.
+

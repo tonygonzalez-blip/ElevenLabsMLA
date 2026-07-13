@@ -1,0 +1,222 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.669
+Start on Support Tickets and look at the left rail.
+
+p02
+00:00:03.197 --> 00:00:06.610
+The SUPPORT group keeps every support surface in one place,
+
+p03
+00:00:06.946 --> 00:00:09.236
+tickets, knowledge base, alerts, training requests.
+
+p04
+00:00:09.495 --> 00:00:10.410
+Today's stop is System Alerts,
+
+p05
+00:00:11.078 --> 00:00:17.600
+the one feed that pulls infrastructure trouble from every site onto a single page.
+
+p06
+00:00:18.000 --> 00:00:19.239
+Click System Alerts.
+
+p07
+00:00:20.042 --> 00:00:22.023
+One rule before anything else.
+
+p08
+00:00:22.423 --> 00:00:25.846
+Reach this page through the sidebar, never by typing its address.
+
+p09
+00:00:26.237 --> 00:00:30.939
+The direct U-R-L still answers four oh four, while this link renders everything.
+
+p10
+00:00:31.442 --> 00:00:34.250
+The page settles inside the shell, breadcrumb up top,
+
+p11
+00:00:34.616 --> 00:00:37.360
+and four K-P-I tiles waiting across the band.
+
+p12
+00:00:37.760 --> 00:00:39.554
+Read the band left to right.
+
+p13
+00:00:40.795 --> 00:00:42.303
+Three alerts open right now.
+
+p14
+00:00:42.659 --> 00:00:44.028
+Fourteen logged today.
+
+p15
+00:00:44.398 --> 00:00:47.743
+And of the open three, one critical against two warnings.
+
+p16
+00:00:47.947 --> 00:00:51.980
+That single critical is the number that decides whether your coffee waits.
+
+p17
+00:00:52.423 --> 00:00:56.163
+Everything below this band exists to explain these four tiles.
+
+p18
+00:00:56.560 --> 00:00:58.464
+Upper left, Alert Volume.
+
+p19
+00:00:58.958 --> 00:01:02.397
+A year of history on one line, January through December,
+
+p20
+00:01:02.675 --> 00:01:06.591
+one hundred forty eight alerts in all and trending down eight percent.
+
+p21
+00:01:06.982 --> 00:01:08.834
+That slope is the long view.
+
+p22
+00:01:09.132 --> 00:01:12.131
+It is the sentence a quarterly health review wants to write.
+
+p23
+00:01:12.560 --> 00:01:14.456
+Next panel, By Severity.
+
+p24
+00:01:14.859 --> 00:01:15.662
+Four levels.
+
+p25
+00:01:16.147 --> 00:01:19.982
+Info carries fifty eight percent of the traffic, warnings twenty eight,
+
+p26
+00:01:20.250 --> 00:01:22.684
+errors ten, critical just four.
+
+p27
+00:01:23.270 --> 00:01:25.782
+Most of what this feed says is routine noise.
+
+p28
+00:01:26.203 --> 00:01:30.560
+Which is exactly why a critical row deserves your full attention when one shows up.
+
+p29
+00:01:30.960 --> 00:01:32.227
+Then System Health.
+
+p30
+00:01:32.969 --> 00:01:36.463
+Eighty six percent healthy, ten warning, four critical.
+
+p31
+00:01:37.096 --> 00:01:38.067
+Hold on that four.
+
+p32
+00:01:38.480 --> 00:01:42.439
+It matches the critical slice next door, one fact drawn two ways.
+
+p33
+00:01:42.950 --> 00:01:45.734
+When two panels agree like that, you can trust the read.
+
+p34
+00:01:46.160 --> 00:01:47.712
+Scroll to the Alert List.
+
+p35
+00:01:48.499 --> 00:01:50.846
+Six columns carry each alert's story:
+
+p36
+00:01:51.366 --> 00:01:53.209
+when it fired, what kind, how severe, which site, what it said, and whether it is still open.
+
+p37
+00:01:53.506 --> 00:01:54.274
+Two buttons above the table stay untouched.
+
+p38
+00:01:54.580 --> 00:01:55.302
+New Record and Export act on the shared tenant, and a support read never creates an alert.
+
+p39
+00:01:55.693 --> 00:02:10.621
+The pager below counts four rows.
+
+p40
+00:02:11.040 --> 00:02:14.000
+Now the rows, top to bottom.
+
+p41
+00:02:14.000 --> 00:02:17.356
+The critical one is a tunnel alert at M-L-A-S,
+
+p42
+00:02:17.356 --> 00:02:21.199
+conveyor belt tension past its threshold, still active.
+
+p43
+00:02:21.199 --> 00:02:22.690
+Behind it, two warnings:
+
+p44
+00:02:22.690 --> 00:02:26.046
+receipt paper running low on a P-O-S at S-S-N-B,
+
+p45
+00:02:26.046 --> 00:02:29.402
+and a chemical tank under twenty percent at Piscataway.
+
+p46
+00:02:29.402 --> 00:02:33.418
+The last row already resolved, a network failover note.
+
+p47
+00:02:33.418 --> 00:02:35.387
+Three rows still active.
+
+p48
+00:02:35.387 --> 00:02:38.683
+That is the Active Alerts tile, itemized.
+
+p49
+00:02:39.120 --> 00:02:40.639
+That is the whole read.
+
+p50
+00:02:41.368 --> 00:02:43.128
+The band for the instant answer.
+
+p51
+00:02:43.586 --> 00:02:45.452
+The panels for trend and mix.
+
+p52
+00:02:45.950 --> 00:02:47.445
+The list for specifics, which type, at which site, still burning or already out.
+
+p53
+00:02:47.930 --> 00:02:51.464
+When a ticket asks whether an outage is one site or the whole platform,
+
+p54
+00:02:52.534 --> 00:02:56.211
+this page and the Command Center's priority board answer it
+
+p55
+00:02:56.512 --> 00:03:01.760
+before the caller finishes explaining.
+

@@ -1,0 +1,270 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.388
+Start on the Tickets list.
+
+p02
+00:00:01.799 --> 00:00:03.682
+Every sale at the wash ends up here, one row per ticket,
+
+p03
+00:00:03.984 --> 00:00:08.320
+with its location, total, status, and tender.
+
+p04
+00:00:08.737 --> 00:00:10.744
+Status is worth a glance on the way in: paid and washed, paid but not washed, or voided.
+
+p05
+00:00:11.127 --> 00:00:14.216
+There are millions of tickets,
+
+p06
+00:00:14.755 --> 00:00:19.375
+so you always filter down to the one you need before you open it.
+
+p07
+00:00:19.841 --> 00:00:20.694
+Click the row.
+
+p08
+00:00:21.243 --> 00:00:24.783
+The ticket opens on its own page, and watch the address bar:
+
+p09
+00:00:25.133 --> 00:00:27.361
+it picks up a ticket I-D on the end.
+
+p10
+00:00:27.761 --> 00:00:30.350
+That means this page has a fixed web address.
+
+p11
+00:00:30.682 --> 00:00:34.565
+Copy it later and anyone you send it to lands on this exact ticket.
+
+p12
+00:00:35.040 --> 00:00:36.471
+Read the header first.
+
+p13
+00:00:37.263 --> 00:00:42.674
+The ticket number is the title, with the I-D, the location, and the time it rang underneath.
+
+p14
+00:00:43.541 --> 00:00:45.865
+That timestamp matters more than it looks:
+
+p15
+00:00:46.219 --> 00:00:50.598
+it tells you which shift the sale fell in, which you'll need if a drawer doesn't balance.
+
+p16
+00:00:51.343 --> 00:00:56.381
+Confirm this is the transaction the caller means before you read a single number off it.
+
+p17
+00:00:56.855 --> 00:00:58.495
+Top-right, two buttons.
+
+p18
+00:00:58.946 --> 00:01:00.694
+Back to Tickets takes you home.
+
+p19
+00:01:01.075 --> 00:01:04.046
+The red one is Refund, and we do not touch it.
+
+p20
+00:01:04.334 --> 00:01:09.628
+On a real ticket a refund moves money,
+
+p21
+00:01:09.845 --> 00:01:11.502
+so running the full refund flow is off the table today, and parked for a lesson of its own.
+
+p22
+00:01:11.872 --> 00:01:13.592
+Read the button, leave it alone.
+
+p23
+00:01:14.070 --> 00:01:16.333
+Under the header, four quick figures.
+
+p24
+00:01:17.025 --> 00:01:20.326
+Ticket total, payments, status, and payment type.
+
+p25
+00:01:21.180 --> 00:01:25.472
+For most calls, that band answers the question before you open a single tab.
+
+p26
+00:01:25.917 --> 00:01:26.576
+What was it, was it paid, and how.
+
+p27
+00:01:26.889 --> 00:01:33.479
+A mismatch between total and payments is your first clue something is off.
+
+p28
+00:01:33.920 --> 00:01:34.916
+Now the tabs.
+
+p29
+00:01:35.638 --> 00:01:36.297
+Five of them: Main, Details, Payments, Refunds, and Notes.
+
+p30
+00:01:36.805 --> 00:01:40.752
+Main opens by default and carries the record itself.
+
+p31
+00:01:41.976 --> 00:01:44.782
+Details breaks the sale into line items, Payments lists every tender against it,
+
+p32
+00:01:45.553 --> 00:01:47.914
+and Notes holds the ticket's notes.
+
+p33
+00:01:48.195 --> 00:01:55.360
+We work Main and Refunds today.
+
+p34
+00:01:55.760 --> 00:01:57.291
+Main opens on Ticket Information.
+
+p35
+00:01:57.291 --> 00:02:00.583
+The I-D, the ticket number, the date and time in,
+
+p36
+00:02:00.583 --> 00:02:03.032
+the location, the status, and the payment type.
+
+p37
+00:02:03.032 --> 00:02:06.966
+This is the group that proves you're looking at the right sale,
+
+p38
+00:02:06.966 --> 00:02:10.640
+and the status here matches the one you saw in the list.
+
+p39
+00:02:11.040 --> 00:02:12.673
+Next, Financial Summary.
+
+p40
+00:02:13.018 --> 00:02:14.229
+Total, taxes, tendered, change due, reversed, and house account.
+
+p41
+00:02:14.434 --> 00:02:17.628
+When someone disputes a charge, you read the numbers straight off here.
+
+p42
+00:02:17.978 --> 00:02:21.492
+Reversed is the field to check first:
+
+p43
+00:02:21.711 --> 00:02:23.748
+it tells you whether money already came back before you promise anything.
+
+p44
+00:02:24.099 --> 00:02:31.667
+And house account tells you if a fleet or business paid instead of a card.
+
+p45
+00:02:32.080 --> 00:02:33.003
+Two more groups.
+
+p46
+00:02:33.428 --> 00:02:36.728
+Staff and Equipment names the cashier, the cashier terminal, the greeter terminal,
+
+p47
+00:02:37.025 --> 00:02:38.990
+and the shift, so you can tie a ticket to a person, a register, and a drawer session.
+
+p48
+00:02:39.407 --> 00:02:43.221
+Customer and Vehicle names the customer, the vehicle, the plate, and the state,
+
+p49
+00:02:44.110 --> 00:02:51.383
+which is how you match a ticket to a plate on a dispute.
+
+p50
+00:02:51.894 --> 00:02:53.160
+Open the Refunds tab.
+
+p51
+00:02:53.160 --> 00:02:56.399
+A table of any refunds on this ticket:
+
+p52
+00:02:56.399 --> 00:02:59.764
+refund I-D, amount, reason, who processed it, and its status.
+
+p53
+00:02:59.764 --> 00:03:03.594
+On a clean ticket it simply says no refunds recorded.
+
+p54
+00:03:03.594 --> 00:03:08.483
+When there is one, this is where you read the reason it was given,
+
+p55
+00:03:08.483 --> 00:03:11.331
+who handled it, and whether it actually went through.
+
+p56
+00:03:11.837 --> 00:03:14.129
+One thing to notice: what isn't here.
+
+p57
+00:03:14.129 --> 00:03:19.848
+No Edit Ticket button, no add-refund control, and no ninety-day lock like the old system had.
+
+p58
+00:03:19.848 --> 00:03:23.349
+The header Refund button is the only way in,
+
+p59
+00:03:23.349 --> 00:03:26.951
+and whether you can finish one depends on your security level.
+
+p60
+00:03:26.951 --> 00:03:29.020
+Lower levels need approval first.
+
+p61
+00:03:29.020 --> 00:03:31.280
+We cover the security side later.
+
+p62
+00:03:31.733 --> 00:03:32.968
+Last, copy the address.
+
+p63
+00:03:32.968 --> 00:03:37.601
+That ticket I-D on the end means the URL reopens this exact ticket.
+
+p64
+00:03:37.601 --> 00:03:39.864
+Paste it into a support ticket
+
+p65
+00:03:39.864 --> 00:03:43.569
+and the next technician opens the same transaction you were looking at,
+
+p66
+00:03:43.569 --> 00:03:46.039
+instead of searching millions of rows for it.
+
+p67
+00:03:46.039 --> 00:03:49.876
+Then Back to Tickets, and nothing on the ticket has changed.
+

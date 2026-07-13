@@ -1,0 +1,163 @@
+{
+  "lesson": "WC-04-01",
+  "audioMaster": "training/module04-inventory/WC-04-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries into caption-sized pieces (never rewritten, summarized, or reordered). Block windows are MEASURED onsets (FFT cross-correlation of each WC-04-01-sNN.mp3 against the joined master): the nominal Sigma(ffprobe audio+0.4) formula sums to 218.6465s, overshooting the ffprobe-probed master (218.2008s) by 0.446s (> 0.3 tolerance) because ffprobe's per-file mp3 durations overstate decoded sample counts. Measured onsets land exactly at Sigma(decoded_audio+0.4) (delta +0.000 for every block; decoded master 218.16s). audioDurationS in the lesson JSON is the probed master 218.201s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.64,
+      "phrases": [
+        { "id": "p01", "text": "Open Inventory, then Inventory Items." },
+        { "id": "p02", "text": "This is the master catalog of everything a site stocks and sells off the shelf." },
+        { "id": "p03", "text": "Tunnel chemicals, counter supplies, the equipment behind them." },
+        { "id": "p04", "text": "The rest of the inventory pages wait in the sidebar for the next lesson." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.64,
+      "endS": 30.16,
+      "phrases": [
+        { "id": "p05", "text": "Start with the four tiles up top." },
+        { "id": "p06", "text": "Total items, low stock, categories, vendors." },
+        { "id": "p07", "text": "The one that earns a daily glance is low stock." },
+        { "id": "p08", "text": "It counts what's running thin before a cashier tells you the shelf is empty." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 30.16,
+      "endS": 46.96,
+      "phrases": [
+        { "id": "p09", "text": "Below them, three quick reads." },
+        { "id": "p10", "text": "A twelve-month count trend, the mix by category," },
+        { "id": "p11", "text": "and the split between active, low, and discontinued stock." },
+        { "id": "p12", "text": "You size up the whole catalog here before scrolling a single row," },
+        { "id": "p13", "text": "which is often all a quick stock question needs." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 46.96,
+      "endS": 63.44,
+      "phrases": [
+        { "id": "p14", "text": "Now the list itself." },
+        { "id": "p15", "text": "New Record builds an item from scratch; that's a training exercise, not for today." },
+        { "id": "p16", "text": "Export ships the data out, so leave it alone." },
+        { "id": "p17", "text": "Filters and search are how you find one item in a long catalog." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 63.44,
+      "endS": 81.68,
+      "phrases": [
+        { "id": "p18", "text": "Read across the columns." },
+        { "id": "p19", "text": "Two IDs, two prices, a count, a type, a vendor." },
+        { "id": "p20", "text": "The item ID is WashCentral's own number;" },
+        { "id": "p21", "text": "the S-K-U is the stock code you match against a shipment." },
+        { "id": "p22", "text": "Cost is what you pay, price is what the customer pays." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 81.68,
+      "endS": 97.36,
+      "phrases": [
+        { "id": "p23", "text": "Click the first row to open its record." },
+        { "id": "p24", "text": "The header names the item, badges it as an inventory item," },
+        { "id": "p25", "text": "and tags it with type and stock chips," },
+        { "id": "p26", "text": "so you know what you're holding before you read a field." },
+        { "id": "p27", "text": "One row, one full record behind it." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 97.36,
+      "endS": 118.0,
+      "phrases": [
+        { "id": "p28", "text": "Look top right: three buttons." },
+        { "id": "p29", "text": "Back, Delete, and Edit Record." },
+        { "id": "p30", "text": "Back is the only one we use." },
+        { "id": "p31", "text": "Delete removes a record from a live shared tenant, so it never gets clicked in training." },
+        { "id": "p32", "text": "Edit Record opens the editing flow, and editing is its own workflow with its own rules." },
+        { "id": "p33", "text": "Find all three, then leave two of them alone." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 118.0,
+      "endS": 131.92,
+      "phrases": [
+        { "id": "p34", "text": "The record splits its fields across three tabs." },
+        { "id": "p35", "text": "Item details, pricing and stock, storage and location." },
+        { "id": "p36", "text": "The legacy Pricing and Tax and Commission and Service names are gone;" },
+        { "id": "p37", "text": "this is the layout you'll actually see on the floor." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 131.92,
+      "endS": 151.92,
+      "phrases": [
+        { "id": "p38", "text": "Start on Item Details." },
+        { "id": "p39", "text": "Eight read-only fields, mirroring the eight columns you just left." },
+        { "id": "p40", "text": "The item's two IDs, its description, what it costs, what it sells for," },
+        { "id": "p41", "text": "forty two units on hand, its type, and its vendor." },
+        { "id": "p42", "text": "That is the ticket answer in one card." },
+        { "id": "p43", "text": "What do we charge, and how many are left." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 151.92,
+      "endS": 169.36,
+      "phrases": [
+        { "id": "p44", "text": "Open the Pricing and Stock tab." },
+        { "id": "p45", "text": "Watch what changes." },
+        { "id": "p46", "text": "The heading does." },
+        { "id": "p47", "text": "The fields underneath do not." },
+        { "id": "p48", "text": "The same eight facts render again, top to bottom." },
+        { "id": "p49", "text": "That repetition is what this tenant actually shows today, and it is logged," },
+        { "id": "p50", "text": "so do not hunt for pricing-only fields that are not there." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 169.36,
+      "endS": 186.96,
+      "phrases": [
+        { "id": "p51", "text": "Then Storage and Location." },
+        { "id": "p52", "text": "Same pattern." },
+        { "id": "p53", "text": "A new heading, the identical eight fields, and no bin, aisle, or site anywhere on the page." },
+        { "id": "p54", "text": "So treat the tabs as navigation and learn the eight fields once." },
+        { "id": "p55", "text": "If storage detail lands here on a later build, a future pass will pick it up." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 186.96,
+      "endS": 204.48,
+      "phrases": [
+        { "id": "p56", "text": "Change nothing, then click Back." },
+        { "id": "p57", "text": "The detail page closes and drops you back on the list, the record exactly as you found it." },
+        { "id": "p58", "text": "On a shared live tenant that discipline matters." },
+        { "id": "p59", "text": "Reading answers the ticket, and Back guarantees you left no mark." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 204.48,
+      "endS": 218.201,
+      "phrases": [
+        { "id": "p60", "text": "That's Inventory Items end to end." },
+        { "id": "p61", "text": "Counts and trends up top, eight columns across the list," },
+        { "id": "p62", "text": "and a three-tab record behind every row." },
+        { "id": "p63", "text": "You read all of it and change none of it," },
+        { "id": "p64", "text": "which is exactly how a stock question should be answered." }
+      ]
+    }
+  ],
+  "output": "WC-04-01-items-detail-v1.1"
+}

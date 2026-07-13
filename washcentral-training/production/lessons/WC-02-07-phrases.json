@@ -1,0 +1,316 @@
+{
+  "lesson": "WC-02-07",
+  "audioMaster": "training/module02-crm/WC-02-07-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags, sentence boundaries, and the TTS's real intra-sentence pauses (verified against silencedetect so voiced-segment counts match). Caption text must never be rewritten, summarized, or reordered. Block windows are MEASURED onsets (cross-correlation of each per-step mp3 against the joined master, corr=1.0 for all 12 blocks): the joiner used ~0.365s inter-block gaps, not 0.4s, so formula windows drift up to -0.44s by s12. Final end = ffprobe of the master (167.158s).",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 14.24,
+      "phrases": [
+        {
+          "id": "p01",
+          "text": "Open Agent Console from the Service Desk group in the sidebar."
+        },
+        {
+          "id": "p02",
+          "text": "One screen, three panes."
+        },
+        {
+          "id": "p03",
+          "text": "The queue on the left,"
+        },
+        {
+          "id": "p04",
+          "text": "the live conversation in the middle,"
+        },
+        {
+          "id": "p05",
+          "text": "the customer's details on the right."
+        },
+        {
+          "id": "p06",
+          "text": "No tab-hopping while someone waits on you."
+        }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 14.24,
+      "endS": 29.52,
+      "phrases": [
+        {
+          "id": "p07",
+          "text": "Up in the header, your presence."
+        },
+        {
+          "id": "p08",
+          "text": "It reads Offline right now, and it can be Available, Away, Busy, or Offline."
+        },
+        {
+          "id": "p09",
+          "text": "This is how the desk knows whether you're ready for a contact."
+        },
+        {
+          "id": "p10",
+          "text": "Leave it where your shift set it; we don't touch it here."
+        }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 29.52,
+      "endS": 41.12,
+      "phrases": [
+        {
+          "id": "p11",
+          "text": "Look at the top of the queue."
+        },
+        {
+          "id": "p12",
+          "text": "Three numbers give you the load at a glance:"
+        },
+        {
+          "id": "p13",
+          "text": "how many are waiting, the average wait, and how many are flagged high priority."
+        },
+        {
+          "id": "p14",
+          "text": "All zero now."
+        },
+        {
+          "id": "p15",
+          "text": "A calm board."
+        }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 41.12,
+      "endS": 53.68,
+      "phrases": [
+        {
+          "id": "p16",
+          "text": "There's a search box over the queue."
+        },
+        {
+          "id": "p17",
+          "text": "Type a name, a phone number, a plan, or the reason for the handoff, and the list narrows to it."
+        },
+        {
+          "id": "p18",
+          "text": "On a busy shift, that's how you pull one contact out of a crowd."
+        }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 53.68,
+      "endS": 66.8,
+      "phrases": [
+        {
+          "id": "p19",
+          "text": "Three buttons scope the queue."
+        },
+        {
+          "id": "p20",
+          "text": "Mine is yours."
+        },
+        {
+          "id": "p21",
+          "text": "Unassigned is up for grabs."
+        },
+        {
+          "id": "p22",
+          "text": "Team is the whole group's board."
+        },
+        {
+          "id": "p23",
+          "text": "Right now it's set to Team, so you're seeing everything, not only your own."
+        }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 66.8,
+      "endS": 82.88,
+      "phrases": [
+        {
+          "id": "p24",
+          "text": "Below that, the channels."
+        },
+        {
+          "id": "p25",
+          "text": "All,"
+        },
+        {
+          "id": "p26",
+          "text": "then Voice,"
+        },
+        {
+          "id": "p27",
+          "text": "S-M-S, and Web."
+        },
+        {
+          "id": "p28",
+          "text": "Those last three are the ways a customer reaches you, and All shows them together."
+        },
+        {
+          "id": "p29",
+          "text": "Remember the three:"
+        },
+        {
+          "id": "p30",
+          "text": "voice, text,"
+        },
+        {
+          "id": "p31",
+          "text": "and web chat."
+        }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 82.88,
+      "endS": 97.6,
+      "phrases": [
+        {
+          "id": "p32",
+          "text": "Open the sort control."
+        },
+        {
+          "id": "p33",
+          "text": "You can work the queue longest wait first, priority first, or most recent first."
+        },
+        {
+          "id": "p34",
+          "text": "Longest wait first is the fair choice;"
+        },
+        {
+          "id": "p35",
+          "text": "it clears whoever has been holding the longest."
+        },
+        {
+          "id": "p36",
+          "text": "Close it without changing anything."
+        }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 97.6,
+      "endS": 108.8,
+      "phrases": [
+        {
+          "id": "p37",
+          "text": "Under the filters, the queue itself."
+        },
+        {
+          "id": "p38",
+          "text": "It says no matching handoffs, because nothing is waiting."
+        },
+        {
+          "id": "p39",
+          "text": "When a contact comes in, its row shows up right here for you to pick up."
+        }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 108.8,
+      "endS": 121.36,
+      "phrases": [
+        {
+          "id": "p40",
+          "text": "The middle is empty too."
+        },
+        {
+          "id": "p41",
+          "text": "Select a handoff from the queue, it says, to open its console."
+        },
+        {
+          "id": "p42",
+          "text": "That's the cue."
+        },
+        {
+          "id": "p43",
+          "text": "You click a waiting row, and the conversation loads into this space."
+        }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 121.36,
+      "endS": 132.16,
+      "phrases": [
+        {
+          "id": "p44",
+          "text": "And on the right, the Customer panel."
+        },
+        {
+          "id": "p45",
+          "text": "No conversation selected, for now."
+        },
+        {
+          "id": "p46",
+          "text": "Once you open one, this is where the customer's context sits, so you're never guessing who you're helping."
+        }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 132.16,
+      "endS": 149.28,
+      "phrases": [
+        {
+          "id": "p47",
+          "text": "So why is it all empty?"
+        },
+        {
+          "id": "p48",
+          "text": "The queue fills when the AI Agent hands a conversation to a person."
+        },
+        {
+          "id": "p49",
+          "text": "Those escalations land right here, in the Handoff Queue."
+        },
+        {
+          "id": "p50",
+          "text": "The agent side of that is a later lesson; for now, know this is where a handed-off customer waits for you."
+        }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 149.28,
+      "endS": 167.158,
+      "phrases": [
+        {
+          "id": "p51",
+          "text": "One screen, three panes."
+        },
+        {
+          "id": "p52",
+          "text": "The queue you scope by who owns it and by channel,"
+        },
+        {
+          "id": "p53",
+          "text": "the console that opens the conversation,"
+        },
+        {
+          "id": "p54",
+          "text": "and the customer's context beside it."
+        },
+        {
+          "id": "p55",
+          "text": "Your presence lives in the header, and you leave it alone unless your shift changes."
+        },
+        {
+          "id": "p56",
+          "text": "That's the Agent Console."
+        }
+      ]
+    }
+  ],
+  "output": "WC-02-07-agent-console-v1.1"
+}

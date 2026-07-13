@@ -1,0 +1,129 @@
+{
+  "lesson": "WC-01-03",
+  "audioMaster": "training/module01-foundations/WC-01-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the LOCKED narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-01-03-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft). The Σ(ffprobe audio+0.4) formula predicts 157.321s but the ffprobed master is 156.918s (0.403s off, past the ±0.3s gate). Cross-correlation shows the master is the 11 blocks concatenated with a uniform ~0.400s gap after each (peaks 3.4-4.7e12, all clean); the ffprobe per-file durations are inflated ~0.026-0.04s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates to the 0.40s discrepancy. Each block startS is its measured onset; final end = ffprobed master duration 156.918s. The s08 cross-correlation peak at 96.640s confirms the LOCKED master contains the July-11 03:52 re-render of s08 (the 14/20/120 tile take), not the earlier blank-tile take.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 11.92,
+      "phrases": [
+        { "id": "p01", "text": "WashCentral watches for inactivity." },
+        { "id": "p02", "text": "Leave a session untouched and it does not drop you cold." },
+        { "id": "p03", "text": "It warns you first, right over whatever page you left open." },
+        { "id": "p04", "text": "Today that's the Command Center." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 11.92,
+      "endS": 25.44,
+      "phrases": [
+        { "id": "p05", "text": "Watch the lower corner." },
+        { "id": "p06", "text": "A small toast slides in: Session expiring soon, auto log-out in two minutes," },
+        { "id": "p07", "text": "with a Stay Active button." },
+        { "id": "p08", "text": "It's the compact version of the warning, easy to miss if you're looking away." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 25.44,
+      "endS": 38.88,
+      "phrases": [
+        { "id": "p09", "text": "At the same moment, a dialog opens dead center." },
+        { "id": "p10", "text": "Still there? it asks." },
+        { "id": "p11", "text": "Two minutes remaining, counting down." },
+        { "id": "p12", "text": "The line underneath tells you exactly how to stay: move your mouse or press any key." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 38.88,
+      "endS": 52.8,
+      "phrases": [
+        { "id": "p13", "text": "Two buttons sit on the dialog." },
+        { "id": "p14", "text": "Stay Logged In keeps you signed in and returns you to your work." },
+        { "id": "p15", "text": "Log Out Now ends the session right away." },
+        { "id": "p16", "text": "That one is a real logout, so leave it alone unless you mean to sign out." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 52.8,
+      "endS": 68.0,
+      "phrases": [
+        { "id": "p17", "text": "So what if you ignore it?" },
+        { "id": "p18", "text": "At zero, the session closes and returns you to the sign-in page." },
+        { "id": "p19", "text": "How long it may sit idle before the warning starts is set per user level," },
+        { "id": "p20", "text": "and the exact figure for the demo login is still being pinned down." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 68.0,
+      "endS": 81.92,
+      "phrases": [
+        { "id": "p21", "text": "Staying in is easy." },
+        { "id": "p22", "text": "Move the mouse, tap a key, or click Stay Logged In." },
+        { "id": "p23", "text": "The countdown stops, the dialog clears, and you pick up exactly where you were." },
+        { "id": "p24", "text": "Stay Active on the toast does the same job." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 81.92,
+      "endS": 96.64,
+      "phrases": [
+        { "id": "p25", "text": "Now, where does that timer come from?" },
+        { "id": "p26", "text": "Open Settings from the left rail and choose User Levels." },
+        { "id": "p27", "text": "The breadcrumb reads Settings, then User Levels." },
+        { "id": "p28", "text": "This page sets the idle limit for every level of user." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 96.64,
+      "endS": 112.64,
+      "phrases": [
+        { "id": "p29", "text": "Across the top, three summary tiles." },
+        { "id": "p30", "text": "Total Levels, Max Security Level, and Longest Timeout in minutes." },
+        { "id": "p31", "text": "Today they read fourteen, twenty, and a hundred and twenty." },
+        { "id": "p32", "text": "Fourteen levels, and the longest idle window runs two full hours." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 112.64,
+      "endS": 126.24,
+      "phrases": [
+        { "id": "p33", "text": "The table has three columns." },
+        { "id": "p34", "text": "Name, Security Level, and Session Timeout in minutes." },
+        { "id": "p35", "text": "That last column is the one to know:" },
+        { "id": "p36", "text": "it's how many idle minutes a level gets before the Still there? countdown begins." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 126.24,
+      "endS": 142.8,
+      "phrases": [
+        { "id": "p37", "text": "The numbers run from five minutes up to a hundred and twenty." },
+        { "id": "p38", "text": "Cashiers and the lower levels sit at five;" },
+        { "id": "p39", "text": "administrators and service roles at a hundred and twenty." },
+        { "id": "p40", "text": "So a cashier logged out after five idle minutes isn't hitting a bug." },
+        { "id": "p41", "text": "That's the setting doing its job." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 142.8,
+      "endS": 156.918,
+      "phrases": [
+        { "id": "p42", "text": "So when a manager says the system logs them out every few minutes, you know the move." },
+        { "id": "p43", "text": "Open User Levels, find their level under Name, and read its Session Timeout." },
+        { "id": "p44", "text": "A small number is the whole answer, and you never touch the row." }
+      ]
+    }
+  ],
+  "output": "WC-01-03-session-timeouts-v1.1"
+}

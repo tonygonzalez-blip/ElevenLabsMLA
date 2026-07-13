@@ -1,0 +1,302 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.856
+The Academy has a second half.
+
+p02
+00:00:02.403 --> 00:00:06.570
+Click in from the rail and you land on the same learner dashboard as last lesson,
+
+p03
+00:00:06.886 --> 00:00:10.444
+with the Academy running its own sidebar instead of the platform rail.
+
+p04
+00:00:11.129 --> 00:00:14.581
+Today we go past the learner pages, into the group underneath.
+
+p05
+00:00:15.040 --> 00:00:17.202
+Read both sidebar groups first.
+
+p06
+00:00:17.866 --> 00:00:20.714
+The top one holds the learner pages you already know.
+
+p07
+00:00:21.364 --> 00:00:22.912
+Below it sits Admin, four doors:
+
+p08
+00:00:23.215 --> 00:00:23.966
+the dashboard, users and enrollment, course management, and reports.
+
+p09
+00:00:24.478 --> 00:00:25.248
+One naming note.
+
+p10
+00:00:25.603 --> 00:00:26.741
+The learning plan says LMS Administration, the sidebar says Admin,
+
+p11
+00:00:27.147 --> 00:00:38.796
+and the screen always wins.
+
+p12
+00:00:39.200 --> 00:00:40.651
+Open Admin Dashboard.
+
+p13
+00:00:41.749 --> 00:00:43.650
+The subtitle states the job plainly: manage training across your organization.
+
+p14
+00:00:44.051 --> 00:00:46.408
+Up in the header sits an Enroll Users button.
+
+p15
+00:00:47.249 --> 00:00:49.725
+Find it, remember where it lives, and leave it alone.
+
+p16
+00:00:50.262 --> 00:00:57.904
+On this shared tenant, enrolling someone creates a real training record.
+
+p17
+00:00:58.456 --> 00:00:59.994
+Five tiles across the top.
+
+p18
+00:01:00.292 --> 00:01:02.371
+Nineteen learners active this month.
+
+p19
+00:01:02.613 --> 00:01:06.954
+A twenty six percent completion rate across one hundred eighty six enrollments,
+
+p20
+00:01:07.155 --> 00:01:10.484
+with nine hours forty six minutes of average time spent.
+
+p21
+00:01:10.787 --> 00:01:13.961
+And forty nine items overdue, flagged action needed.
+
+p22
+00:01:14.555 --> 00:01:18.063
+That last tile is where every rollout conversation starts.
+
+p23
+00:01:18.551 --> 00:01:20.976
+Scroll to the completion heatmap.
+
+p24
+00:01:20.976 --> 00:01:24.062
+All nineteen courses against all twenty five users.
+
+p25
+00:01:24.062 --> 00:01:26.753
+Take the top row.
+
+p26
+00:01:26.753 --> 00:01:28.295
+Getting Started with WashCentral:
+
+p27
+00:01:28.295 --> 00:01:33.695
+six finished, seven in progress, six overdue, six never began, twenty four percent complete.
+
+p28
+00:01:33.695 --> 00:01:39.021
+One glance per course tells you where a crew's training actually stands.
+
+p29
+00:01:39.516 --> 00:01:41.644
+Three admin actions live on this page.
+
+p30
+00:01:42.015 --> 00:01:45.875
+Enroll Users in the header, then Manage, then New Announcement.
+
+p31
+00:01:46.274 --> 00:01:50.282
+Each one either creates training records or sends a message to real people.
+
+p32
+00:01:50.492 --> 00:01:54.084
+So today they get located and named, never opened for use.
+
+p33
+00:01:54.342 --> 00:01:56.306
+That restraint is half the lesson.
+
+p34
+00:01:56.720 --> 00:01:58.651
+Second door, Users and Enrollment.
+
+p35
+00:01:58.651 --> 00:02:00.881
+Twenty five learners.
+
+p36
+00:02:00.881 --> 00:02:03.970
+Twenty seven percent average completion on required courses,
+
+p37
+00:02:03.970 --> 00:02:06.581
+and seventeen people carrying something overdue.
+
+p38
+00:02:06.581 --> 00:02:08.887
+Fully compliant reads zero.
+
+p39
+00:02:08.887 --> 00:02:13.660
+Nobody on this tenant has finished everything required of them yet,
+
+p40
+00:02:13.660 --> 00:02:15.977
+and that is this page's headline.
+
+p41
+00:02:16.400 --> 00:02:17.959
+Read one row of the table.
+
+p42
+00:02:19.883 --> 00:02:23.041
+Marcus Johnson, a general manager in Fort Lauderdale,
+
+p43
+00:02:23.380 --> 00:02:26.482
+three of seven required courses done, overdue, last active a month ago.
+
+p44
+00:02:26.737 --> 00:02:28.386
+Required progress against status is your per person compliance read.
+
+p45
+00:02:28.829 --> 00:02:32.742
+His row also offers Assign Course.
+
+p46
+00:02:33.325 --> 00:02:36.880
+Not on the demo.
+
+p47
+00:02:37.280 --> 00:02:38.649
+Third door, Course Management.
+
+p48
+00:02:38.649 --> 00:02:41.535
+Three sections stack down the page:
+
+p49
+00:02:41.535 --> 00:02:45.642
+the courses themselves, the learning paths that chain them, and the certifications.
+
+p50
+00:02:45.642 --> 00:02:51.573
+A New Course button and an Import control sit in the toolbar, and both stay untouched.
+
+p51
+00:02:51.573 --> 00:02:55.022
+This is the page where the library gets shaped.
+
+p52
+00:02:55.440 --> 00:02:57.280
+Look at the first course card.
+
+p53
+00:02:57.752 --> 00:03:02.606
+Twenty five enrolled, twenty four percent complete, an average score of seventy eight.
+
+p54
+00:03:03.197 --> 00:03:06.592
+A publish toggle reads On, with four controls beside it: settings, edit, preview, learners.
+
+p55
+00:03:07.025 --> 00:03:07.599
+Flip that toggle and a course disappears for real staff.
+
+p56
+00:03:08.052 --> 00:03:16.640
+So it stays exactly where it is.
+
+p57
+00:03:17.040 --> 00:03:19.312
+Last door, Reports and Compliance.
+
+p58
+00:03:20.348 --> 00:03:24.972
+Seven report tabs run across the top, completion overview through scheduled reports.
+
+p59
+00:03:25.592 --> 00:03:27.593
+The tiles repeat the dashboard's story,
+
+p60
+00:03:27.910 --> 00:03:30.819
+one eighty six enrollments, twenty six percent complete, forty nine overdue,
+
+p61
+00:03:31.153 --> 00:03:32.359
+plus an eighty one percent average quiz score.
+
+p62
+00:03:32.731 --> 00:03:38.637
+When two pages agree on the numbers, you can quote them.
+
+p63
+00:03:39.040 --> 00:03:40.919
+Stay on the overview and scroll.
+
+p64
+00:03:41.429 --> 00:03:45.883
+A year of completions charted, then the two tables a client review runs on.
+
+p65
+00:03:46.639 --> 00:03:50.983
+By location: Fort Lauderdale, five users, forty four enrollments,
+
+p66
+00:03:51.245 --> 00:03:52.104
+twelve complete, thirteen overdue.
+
+p67
+00:03:52.369 --> 00:03:53.354
+By course: Getting Started, twenty five enrolled, six complete,
+
+p68
+00:03:54.090 --> 00:04:00.399
+about two hours of time spent apiece.
+
+p69
+00:04:01.084 --> 00:04:04.234
+The learning plan promised this page, and it is live.
+
+p70
+00:04:04.720 --> 00:04:06.653
+Four pages, four jobs.
+
+p71
+00:04:07.304 --> 00:04:09.338
+The dashboard for the org wide read.
+
+p72
+00:04:09.579 --> 00:04:11.942
+Users and Enrollment for the per person truth.
+
+p73
+00:04:12.456 --> 00:04:14.030
+Course Management for the levers.
+
+p74
+00:04:14.332 --> 00:04:17.306
+Reports and Compliance for the numbers a client review needs.
+
+p75
+00:04:17.647 --> 00:04:21.517
+You reached all four from the sidebar, and you changed nothing along the way.
+

@@ -1,0 +1,560 @@
+{
+  "lesson": "WC-09-01",
+  "audioMaster": "training/module09-digital/WC-09-01-full-narration-v1.0.mp3",
+  "audioDurationS": 229.956,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Digital module.",
+      "startS": 0,
+      "endS": 1.636,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The sidebar splits in two.",
+      "startS": 2.186,
+      "endS": 3.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "The top group, Customer Portal, runs the surfaces your members sign into.",
+      "startS": 4.261,
+      "endS": 8.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Five entries.",
+      "startS": 8.822,
+      "endS": 9.722,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "The mobile pages sit below, but those are the next lesson.",
+      "startS": 10.139,
+      "endS": 13.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Click Portal Members.",
+      "startS": 13.77,
+      "endS": 15.115,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "This is your roster of everyone who holds a portal login.",
+      "startS": 15.541,
+      "endS": 18.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "When a customer says the website won't let them in, this is where you start.",
+      "startS": 19.225,
+      "endS": 23.311,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Four numbers across the top.",
+      "startS": 23.76,
+      "endS": 25.367,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Registered members, how many were active this month, how many joined this week,",
+      "startS": 25.988,
+      "endS": 27.142,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "and the share who reach you on mobile.",
+      "startS": 27.357,
+      "endS": 28.91,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "One glance sizes the portal and shows how live it is.",
+      "startS": 29.122,
+      "endS": 32.288,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "That mobile share matters, since most portal traffic now comes through the app.",
+      "startS": 33.031,
+      "endS": 40.826,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Below sit three cards.",
+      "startS": 41.331,
+      "endS": 42.996,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Growth over the year, the plan mix with unlimited monthly the biggest slice,",
+      "startS": 43.504,
+      "endS": 44.696,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "and account health split into active, inactive, and suspended.",
+      "startS": 45.007,
+      "endS": 48.075,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Watch that suspended slice;",
+      "startS": 48.498,
+      "endS": 52.149,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "it's where locked-out members surface before they call.",
+      "startS": 52.614,
+      "endS": 57.092,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Now the roster itself.",
+      "startS": 57.52,
+      "endS": 58.765,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "New Record and Export sit top-right, a search box and Filters just under them.",
+      "startS": 59.407,
+      "endS": 61.924,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Today you're only reading, so leave Export alone.",
+      "startS": 62.281,
+      "endS": 64.591,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "It sends data out, and this is a look-only tour.",
+      "startS": 65.151,
+      "endS": 70.834,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Six columns.",
+      "startS": 71.28,
+      "endS": 72.356,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Name, email, when they joined, their plan, portal status, and last login.",
+      "startS": 72.806,
+      "endS": 73.29,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Portal status is your first stop when someone can't reach the website:",
+      "startS": 73.656,
+      "endS": 75.322,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "it tells you whether their access is even active.",
+      "startS": 75.604,
+      "endS": 76.241,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Last login backs it up, showing when they were really here.",
+      "startS": 76.566,
+      "endS": 88.23,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Down at the foot: rows per page, a record count, and the pager.",
+      "startS": 88.878,
+      "endS": 89.561,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Reading, paging, and searching change nothing.",
+      "startS": 89.816,
+      "endS": 92.948,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "New Record would open a create form,",
+      "startS": 93.765,
+      "endS": 96.307,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "but that form didn't load during verification, so we leave it parked.",
+      "startS": 96.824,
+      "endS": 102.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Back to the sidebar.",
+      "startS": 102.72,
+      "endS": 103.871,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Click Booking Page.",
+      "startS": 104.092,
+      "endS": 105.342,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "The admin chrome disappears.",
+      "startS": 106.147,
+      "endS": 107.774,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "What loads is the customer's own booking site,",
+      "startS": 107.988,
+      "endS": 114.461,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "with its own branding and a five step wizard that runs from service to confirm.",
+      "startS": 115.275,
+      "endS": 117.73,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Step one offers three service categories: an inspection, an oil change, and detailing.",
+      "startS": 117.948,
+      "endS": 120.617,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Read that first screen, then stop.",
+      "startS": 121.144,
+      "endS": 123.057,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Advancing the wizard books a real visit, so Continue never gets clicked.",
+      "startS": 123.37,
+      "endS": 127.301,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Portal Messages next.",
+      "startS": 127.76,
+      "endS": 129.224,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "This is where member messages land and get worked.",
+      "startS": 129.918,
+      "endS": 132.761,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Fourteen sit unread right now, twenty eight are open,",
+      "startS": 133.284,
+      "endS": 135.351,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "and responses average around three hours.",
+      "startS": 135.6,
+      "endS": 139.479,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "Every row carries a status, a priority, and an owner,",
+      "startS": 140.001,
+      "endS": 143.554,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "so a billing question and a cancellation request never look alike.",
+      "startS": 144.048,
+      "endS": 147.771,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "Replying reaches a real customer.",
+      "startS": 148.493,
+      "endS": 150.362,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "We read the list and touch nothing.",
+      "startS": 150.618,
+      "endS": 152.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Portal Billing sits just under it.",
+      "startS": 153.12,
+      "endS": 155.224,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "A running log of billing events on the portal side.",
+      "startS": 156.039,
+      "endS": 158.615,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Card updates, plan changes, auto renewals,",
+      "startS": 159.376,
+      "endS": 164.959,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "and the failures that turn into phone calls.",
+      "startS": 165.597,
+      "endS": 168.047,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "When a member asks why a card was declined,",
+      "startS": 168.405,
+      "endS": 172.045,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "the action and status columns tell that story in one row.",
+      "startS": 172.754,
+      "endS": 174.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "Every line here is live money.",
+      "startS": 175.242,
+      "endS": 176.667,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "Read it, always; touch it, never.",
+      "startS": 177.049,
+      "endS": 178.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "Last entry, Portal Notifications.",
+      "startS": 178.8,
+      "endS": 181.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "The automated sends.",
+      "startS": 181.688,
+      "endS": 183.064,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "A welcome email fires when an account is created,",
+      "startS": 183.675,
+      "endS": 186.315,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "and a renewal reminder goes out a week ahead.",
+      "startS": 186.66,
+      "endS": 188.924,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "The list tracks each one's audience, open rate, and status.",
+      "startS": 189.606,
+      "endS": 192.876,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "Twelve are active, and more than eight hundred went out today alone.",
+      "startS": 193.511,
+      "endS": 196.926,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p62",
+      "text": "These reach real members, so nothing here is ever sent, created, or edited in training.",
+      "startS": 197.528,
+      "endS": 203.197,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "So that's the Customer Portal group.",
+      "startS": 203.6,
+      "endS": 205.398,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "Five entries, and you have now read all five.",
+      "startS": 205.895,
+      "endS": 208.487,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "Portal Members for the roster and login trouble.",
+      "startS": 209.62,
+      "endS": 212.196,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p66",
+      "text": "The booking page for what the customer actually sees.",
+      "startS": 212.628,
+      "endS": 215.368,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p67",
+      "text": "Messages for the inbox, Billing for the money log, Notifications for the automated sends.",
+      "startS": 215.884,
+      "endS": 218.787,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p68",
+      "text": "Reach them from the sidebar, since a pasted address still fails.",
+      "startS": 219.081,
+      "endS": 221.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p69",
+      "text": "And read everything without sending, booking, or exporting a thing.",
+      "startS": 221.822,
+      "endS": 229.52,
+      "timing": "silence"
+    }
+  ]
+}

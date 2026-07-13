@@ -1,0 +1,1029 @@
+{
+  "lesson": "WC-01-03",
+  "title": "Foundations: Session Behavior and Timeouts",
+  "audioMaster": "training/module01-foundations/WC-01-03-full-narration-v1.0.mp3",
+  "audioDurationS": 156.918,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railSettings": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^settings$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "automationCardName": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(c=>{const n=c.querySelector('.sh-card-name');return n&&/^Automation$/.test((n.textContent||'').trim())});return c?c.querySelector('.sh-card-name'):null})()"
+    },
+    "userLevelsItem": {
+      "js": "[...document.querySelectorAll('a.sh-card-item')].find(a=>/^User Levels$/.test((a.textContent||'').trim())&&(a.getAttribute('href')||'')==='settings-user-levels.html'&&a.getBoundingClientRect().width>0)"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumbs"
+    },
+    "crumbStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "tileTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Levels/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileMaxSec": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Max Security Level/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileLongest": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Longest Timeout/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('table th')].find(e=>/^Name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSecurity": {
+      "js": "[...document.querySelectorAll('table th')].find(e=>/^Security Level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTimeout": {
+      "js": "[...document.querySelectorAll('table th')].find(e=>/^Session Timeout/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowCashiers": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(r=>{const td=r.querySelector('td');return td&&/^Cashiers$/.test((td.textContent||'').trim())&&r.getBoundingClientRect().width>0})"
+    },
+    "cellCashiersName": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(x=>{const td=x.querySelector('td');return td&&/^Cashiers$/.test((td.textContent||'').trim())});return r?r.querySelectorAll('td')[0]:null})()"
+    },
+    "cellCashiersTimeout": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(x=>{const td=x.querySelector('td');return td&&/^Cashiers$/.test((td.textContent||'').trim())});if(!r)return null;const t=r.querySelectorAll('td');return t[t.length-1]})()"
+    },
+    "rowAdmin": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(r=>{const td=r.querySelector('td');return td&&/^Administrator$/.test((td.textContent||'').trim())&&r.getBoundingClientRect().width>0})"
+    },
+    "cellAdminTimeout": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(x=>{const td=x.querySelector('td');return td&&/^Administrator$/.test((td.textContent||'').trim())});if(!r)return null;const t=r.querySelectorAll('td');return t[t.length-1]})()"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^\\+?\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitleLevels": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&/^User Levels List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onUserLevels": "location.pathname.endsWith('/settings-user-levels.html')",
+    "idleHidden": "(()=>{const o=document.getElementById('wc-idle-overlay');return o?getComputedStyle(o).opacity==='0':true})()",
+    "automationCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(c=>{const n=c.querySelector('.sh-card-name');return n&&/^Automation$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^User Levels$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
+    "levelsLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-user-levels.html')&&rows.length===14&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&/of\\s*14\\b/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "levelsIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-user-levels.html')&&rows.length===14&&/of\\s*14\\b/.test(document.body.textContent||'')})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page identity staged before capture (startUrl command-center.html; the idle warning is modeled over this page, exactly as WC-01-01 leaves the learner)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "idleHidden",
+      "note": "pre-roll honesty check: the #wc-idle-overlay is present in the DOM but opacity:0 (fires only after ~58 min idle). It must be hidden at capture start — we never stage or force it visible."
+    },
+    {
+      "op": "watch",
+      "key": "idleNeverStaged",
+      "from": 0.6,
+      "to": 80.6,
+      "predicate": "idleHidden",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "safety/honesty: the idle 'Still there?' overlay stays opacity:0 the entire time we model it (steps 1-6). Proves the dialog was never triggered, staged, or faked; the 2:00 countdown never ran on camera. (check 29: no session-expiration dialog encountered.)"
+    },
+    {
+      "op": "watch",
+      "key": "ccHeld",
+      "from": 0.6,
+      "to": 80.6,
+      "predicate": "onCommandCenter",
+      "everyMs": 1500,
+      "mustHold": true,
+      "note": "steps 1-6 never navigate: nothing on the idle dialog is clicked (Log Out Now / Stay Logged In / Stay Active all untouched). Had Log Out Now been pressed the page would leave for sign-in — this proves it did not."
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.3,
+      "from": [
+        40,
+        1040
+      ],
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          473,
+          -246
+        ]
+      },
+      "note": "step 1 (p01): enter from the bottom-left, gliding to a neutral dashboard spot (~520,760) anchored off the Settings rail item (23,978); first pointer far from center (check 7). The rail item is only pointed near, never clicked here."
+    },
+    {
+      "op": "move",
+      "at": 5.9,
+      "to": {
+        "point": [
+          760,
+          620
+        ]
+      },
+      "note": "step 1 (p03): small drift over the page while 'it warns you first, right over whatever page you left open'"
+    },
+    {
+      "op": "move",
+      "at": 9.79,
+      "to": {
+        "point": [
+          900,
+          500
+        ]
+      },
+      "note": "step 1 (p04): 'Today that's the Command Center' — settle over the dashboard the warning will cover"
+    },
+    {
+      "op": "move",
+      "at": 11.92,
+      "to": {
+        "point": [
+          1680,
+          980
+        ]
+      },
+      "note": "step 2 (p05): 'Watch the lower corner' — travel to the lower-right where the toast appears (real #wc-idle-toast rect 1526,1066)"
+    },
+    {
+      "op": "move",
+      "at": 15.76,
+      "to": {
+        "point": [
+          1700,
+          1000
+        ]
+      },
+      "note": "step 2 (p07): rest by the toast corner while 'Stay Active button' is named (modeled at the toast's known position; the toast itself is opacity:0 — RESIDUAL R1)"
+    },
+    {
+      "op": "move",
+      "at": 25.5,
+      "to": {
+        "point": [
+          953,
+          540
+        ]
+      },
+      "note": "step 3 (p09): 'a dialog opens dead center' — travel to screen center where #wc-idle-modal sits (title rect 784,516)"
+    },
+    {
+      "op": "move",
+      "at": 33.42,
+      "to": {
+        "point": [
+          953,
+          500
+        ]
+      },
+      "note": "step 3 (p12): hold at the dialog's center while the stay-alive line is read"
+    },
+    {
+      "op": "move",
+      "at": 38.95,
+      "to": {
+        "point": [
+          878,
+          665
+        ]
+      },
+      "note": "step 4 (p13-p14): 'Two buttons' — gesture to the button row; Stay Logged In sits at the real 784-975,643 position (modeled; buttons are opacity:0)"
+    },
+    {
+      "op": "move",
+      "at": 45.2,
+      "to": {
+        "point": [
+          1053,
+          665
+        ]
+      },
+      "note": "step 4 (p15): 'Log Out Now ends the session right away' — indicate the Log Out Now position (real 986-1121,643) and NEVER click it (neverClick; pointer only)"
+    },
+    {
+      "op": "move",
+      "at": 48.17,
+      "to": {
+        "point": [
+          1053,
+          665
+        ]
+      },
+      "note": "step 4 (p16): hold beside the Log Out Now position — 'a real logout, leave it alone'"
+    },
+    {
+      "op": "move",
+      "at": 52.8,
+      "to": {
+        "point": [
+          953,
+          470
+        ]
+      },
+      "note": "step 5 (p17-p18): move up to the countdown ring position (top of the modeled dialog) while the auto-logout outcome is explained"
+    },
+    {
+      "op": "move",
+      "at": 59.6,
+      "to": {
+        "point": [
+          900,
+          520
+        ]
+      },
+      "note": "step 5 (p19-p20): small drift over the dialog center while the per-level timing / parked figure is explained"
+    },
+    {
+      "op": "move",
+      "at": 69.69,
+      "to": {
+        "point": [
+          1010,
+          560
+        ]
+      },
+      "note": "step 6 (p22): 'Move the mouse, tap a key' — begin the genuine keep-alive mouse nudge (a real move, the actual stay-signed-in action)"
+    },
+    {
+      "op": "move",
+      "at": 70.5,
+      "to": {
+        "point": [
+          955,
+          585
+        ]
+      },
+      "note": "step 6 (p22): nudge back — the small real mouse movement that resets the idle clock (no click)"
+    },
+    {
+      "op": "move",
+      "at": 78.71,
+      "to": {
+        "point": [
+          1690,
+          995
+        ]
+      },
+      "note": "step 6 (p24): drift toward the toast corner — 'Stay Active on the toast does the same job'"
+    },
+    {
+      "op": "move",
+      "at": 83.9,
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          54,
+          -2
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p25 tail): approach the left-rail Settings icon before the p26 cue"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.6,
+      "key": "railSettingsRect",
+      "target": "railSettings"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 85.7,
+      "hoverMs": 380,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7a (p26 'Open Settings from the left rail'): genuine rail navigation to settings.html (Settings is an inert nav control; verified pure navigation)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable",
+      "predicate": "pageReady",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "automationCardName",
+      "pressAt": 87.0,
+      "hoverMs": 320,
+      "postcondition": "automationCardOpen",
+      "timeoutMs": 4000,
+      "note": "step 7b (p26 'choose User Levels'): open the Automation settings card (stateless accordion, closed on every fresh settings.html load — probe-verified July 12); reveals the User Levels item"
+    },
+    {
+      "op": "click",
+      "target": "userLevelsItem",
+      "pressAt": 88.3,
+      "hoverMs": 300,
+      "postcondition": "onUserLevels",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7c (p26): navigate into User Levels (href settings-user-levels.html) so the page is loaded before p27 reads the breadcrumb"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "levelsStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 89.1,
+      "predicate": "levelsLoaded",
+      "note": "load check (July 12 probe): 14 rows, 3 KPI tiles, '1–14 of 14', no agent-service 'Failed to fetch' state"
+    },
+    {
+      "op": "watch",
+      "key": "levelsHeld",
+      "from": 89.4,
+      "to": 156.2,
+      "predicate": "onUserLevels",
+      "everyMs": 1200,
+      "mustHold": true,
+      "note": "steps 8-11 read-only tour: the page never navigates or mutates. + New Record is pointed at, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "levelsIntactHeld",
+      "from": 90,
+      "to": 156,
+      "predicate": "levelsIntact",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "mutation guardrail: the User Levels list holds 14 rows and '1–14 of 14' the whole tour — proves no level was created (+ New Record), edited, or deleted"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.15,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 89.2,
+      "key": "crumbStrongRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "move",
+      "at": 89.31,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p27): 'The breadcrumb reads Settings, then User Levels' — settle under the breadcrumb title"
+    },
+    {
+      "op": "move",
+      "at": 93.01,
+      "to": {
+        "point": [
+          760,
+          300
+        ]
+      },
+      "note": "step 7 (p28): ease over the page — 'This page sets the idle limit for every level of user'"
+    },
+    {
+      "op": "log-rect",
+      "at": 96.66,
+      "key": "kpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 96.72,
+      "key": "tiles",
+      "targets": [
+        "tileTotal",
+        "tileMaxSec",
+        "tileLongest"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 96.73,
+      "to": {
+        "target": "tileTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 8 (p29): 'Across the top, three summary tiles' — settle on the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 99.46,
+      "to": {
+        "target": "tileTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 8 (p30): name the three tiles left to right — Total Levels"
+    },
+    {
+      "op": "move",
+      "at": 99.9,
+      "to": {
+        "target": "tileMaxSec",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "Max Security Level"
+    },
+    {
+      "op": "move",
+      "at": 100.3,
+      "to": {
+        "target": "tileLongest",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "and Longest Timeout in minutes"
+    },
+    {
+      "op": "move",
+      "at": 100.63,
+      "to": {
+        "target": "tileTotal",
+        "offset": [
+          40,
+          12
+        ]
+      },
+      "note": "step 8 (p31): 'fourteen' — the Total Levels value"
+    },
+    {
+      "op": "move",
+      "at": 101.6,
+      "to": {
+        "target": "tileMaxSec",
+        "offset": [
+          40,
+          12
+        ]
+      },
+      "note": "'twenty' — Max Security Level"
+    },
+    {
+      "op": "move",
+      "at": 102.3,
+      "to": {
+        "target": "tileLongest",
+        "offset": [
+          40,
+          12
+        ]
+      },
+      "note": "'and a hundred and twenty' — Longest Timeout"
+    },
+    {
+      "op": "move",
+      "at": 104.23,
+      "to": {
+        "target": "tileLongest",
+        "offset": [
+          40,
+          12
+        ]
+      },
+      "note": "step 8 (p32): rest on Longest Timeout while 'the longest idle window runs two full hours' is read"
+    },
+    {
+      "op": "log-rect",
+      "at": 112.66,
+      "key": "thNameRect",
+      "target": "thName"
+    },
+    {
+      "op": "log-rects",
+      "at": 112.72,
+      "key": "ths",
+      "targets": [
+        "thName",
+        "thSecurity",
+        "thTimeout"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 112.72,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p33-p34): 'three columns' — Name"
+    },
+    {
+      "op": "move",
+      "at": 114.9,
+      "to": {
+        "target": "thSecurity",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p34): Security Level"
+    },
+    {
+      "op": "move",
+      "at": 115.3,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p34): and Session Timeout in minutes"
+    },
+    {
+      "op": "move",
+      "at": 119.23,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 9 (p35-p36): rest on the Session Timeout (min) header — 'the one to know: idle minutes before the Still there? countdown begins'"
+    },
+    {
+      "op": "log-rect",
+      "at": 126.28,
+      "key": "cellCashiersTimeoutRect",
+      "target": "cellCashiersTimeout"
+    },
+    {
+      "op": "log-rect",
+      "at": 126.29,
+      "key": "cellAdminTimeoutRect",
+      "target": "cellAdminTimeout"
+    },
+    {
+      "op": "log-rect",
+      "at": 126.3,
+      "key": "rowCashiersRect",
+      "target": "rowCashiers"
+    },
+    {
+      "op": "move",
+      "at": 126.32,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          40,
+          40
+        ]
+      },
+      "note": "step 10 (p37): 'The numbers run from five up to a hundred and twenty' — start down the Session Timeout column"
+    },
+    {
+      "op": "move",
+      "at": 130.3,
+      "to": {
+        "target": "cellCashiersTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p38): 'Cashiers and the lower levels sit at five' — the Cashiers timeout value (5)"
+    },
+    {
+      "op": "move",
+      "at": 132.89,
+      "to": {
+        "target": "cellAdminTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p39): 'administrators and service roles at a hundred and twenty' — the Administrator timeout value (120)"
+    },
+    {
+      "op": "move",
+      "at": 136.21,
+      "to": {
+        "target": "cellCashiersTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p40): back to the Cashiers 5 — 'a cashier logged out after five idle minutes isn't hitting a bug'"
+    },
+    {
+      "op": "move",
+      "at": 140.58,
+      "to": {
+        "point": [
+          1300,
+          640
+        ]
+      },
+      "note": "step 10 (p41): ease off the column — 'That's the setting doing its job'"
+    },
+    {
+      "op": "log-rect",
+      "at": 142.8,
+      "key": "newRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 142.81,
+      "key": "thNameRect2",
+      "target": "thName"
+    },
+    {
+      "op": "log-rect",
+      "at": 142.82,
+      "key": "cellCashiersNameRect",
+      "target": "cellCashiersName"
+    },
+    {
+      "op": "log-rect",
+      "at": 142.83,
+      "key": "cellCashiersTimeoutRect2",
+      "target": "cellCashiersTimeout"
+    },
+    {
+      "op": "move",
+      "at": 142.86,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 11 (p42): 'when a manager says the system logs them out every few minutes' — over the table"
+    },
+    {
+      "op": "move",
+      "at": 147.91,
+      "to": {
+        "target": "cellCashiersName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p43): 'find their level under Name' — a level name in the Name column"
+    },
+    {
+      "op": "move",
+      "at": 150.4,
+      "to": {
+        "target": "cellCashiersTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p43): 'and read its Session Timeout' — that level's timeout value"
+    },
+    {
+      "op": "move",
+      "at": 152.78,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -60,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p44): 'you never touch the row' — hold BESIDE + New Record with the red do-not-click guardrail; it is a create-form control (settings-user-levels-edit.html), never pressed"
+    },
+    {
+      "op": "move",
+      "at": 154.2,
+      "to": {
+        "point": [
+          1560,
+          900
+        ]
+      },
+      "note": "step 11: final park, clear of the rows and the caption card, as the lesson closes"
+    },
+    {
+      "op": "assert",
+      "at": 156.1,
+      "predicate": "onUserLevels",
+      "note": "end state: still on Settings › User Levels, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 156.4,
+      "predicate": "levelsIntact",
+      "note": "end state: list intact — 14 rows, '1–14 of 14'; nothing created, edited, or deleted"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "screen:953,540",
+        "place": "at",
+        "from": 1.0,
+        "to": 11.3,
+        "note": "step 1: the idle warning appears over whatever page you left open — modeled at the dialog's real center (RESIDUAL R1: the overlay is opacity:0 until ~58 min idle, never staged)"
+      },
+      {
+        "n": 2,
+        "anchor": "screen:1700,1000",
+        "place": "left",
+        "from": 12.2,
+        "to": 24.9,
+        "note": "step 2: the ⏱ Session expiring soon toast with Stay Active — modeled at the real #wc-idle-toast corner (1526,1066)"
+      },
+      {
+        "n": 3,
+        "anchor": "screen:953,505",
+        "place": "right",
+        "from": 25.7,
+        "to": 38.4,
+        "note": "step 3: the centered Still there? dialog and its 2:00 countdown — modeled at the real #wc-idle-title position (784,516)"
+      },
+      {
+        "n": 4,
+        "anchor": "screen:953,665",
+        "place": "below-left",
+        "from": 39.1,
+        "to": 52.3,
+        "note": "step 4: the two dialog buttons — Stay Logged In (real 784,643) and Log Out Now (real 986,643, never clicked)"
+      },
+      {
+        "n": 5,
+        "anchor": "screen:953,470",
+        "place": "left-top",
+        "from": 52.9,
+        "to": 67.6,
+        "note": "step 5: at 0:00 the session ends and returns to sign-in — the idle length is per user level (parked #9)"
+      },
+      {
+        "n": 6,
+        "anchor": "screen:960,560",
+        "place": "below-left",
+        "from": 68.1,
+        "to": 81.4,
+        "note": "step 6: one real move of the mouse (or a key, or Stay Logged In / Stay Active) resets the clock — shown by the genuine keep-alive nudge"
+      },
+      {
+        "n": 7,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 89.4,
+        "to": 96.3,
+        "note": "step 7: the Settings › User Levels breadcrumb after the rail-Settings → Automation → User Levels navigation"
+      },
+      {
+        "n": 8,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 96.8,
+        "to": 112.3,
+        "note": "step 8: the three summary tiles — Total Levels 14, Max Security Level 20, Longest Timeout (min) 120 (live July 12, matches locked s08)"
+      },
+      {
+        "n": 9,
+        "anchor": "ths.thTimeout",
+        "place": "below-left",
+        "from": 112.7,
+        "to": 126.0,
+        "note": "step 9: the Session Timeout (min) column — the idle minutes each level gets before the countdown"
+      },
+      {
+        "n": 10,
+        "anchor": "cellCashiersTimeoutRect",
+        "place": "left",
+        "from": 126.4,
+        "to": 142.4,
+        "note": "step 10: per-level idle limits, by design — Cashiers 5, Administrator 120"
+      },
+      {
+        "n": 11,
+        "anchor": "cellCashiersNameRect",
+        "place": "left",
+        "from": 142.9,
+        "to": 154.0,
+        "note": "step 11: diagnose the ticket — match the user to their level under Name, read its Session Timeout; never touch the row"
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "tiles.tileTotal",
+        "from": 99.46,
+        "to": 100.3,
+        "note": "step 8 (p30): tiles named in spoken order — Total Levels"
+      },
+      {
+        "anchor": "tiles.tileMaxSec",
+        "from": 100.3,
+        "to": 100.63,
+        "note": "Max Security Level"
+      },
+      {
+        "anchor": "tiles.tileLongest",
+        "from": 100.63,
+        "to": 104.23,
+        "note": "Longest Timeout (min)"
+      },
+      {
+        "anchor": "ths.thTimeout",
+        "from": 115.3,
+        "to": 125.9,
+        "note": "step 9 (p35-p36): the Session Timeout (min) column, the one that answers the ticket"
+      },
+      {
+        "anchor": "cellCashiersTimeoutRect",
+        "from": 130.3,
+        "to": 132.89,
+        "note": "step 10 (p38): Cashiers timeout = 5"
+      },
+      {
+        "anchor": "cellAdminTimeoutRect",
+        "from": 132.89,
+        "to": 136.21,
+        "note": "step 10 (p39): Administrator timeout = 120"
+      },
+      {
+        "anchor": "cellCashiersTimeoutRect",
+        "from": 136.21,
+        "to": 140.4,
+        "note": "step 10 (p40): back to the Cashiers 5 — the setting working as configured"
+      },
+      {
+        "anchor": "newRecordRect",
+        "from": 152.78,
+        "to": 154.6,
+        "color": "#dc2626",
+        "note": "step 11 (p44) do-not-click guardrail: + New Record opens a create form (settings-user-levels-edit.html) — pointed at from beside, never pressed"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 96.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "wide through the modeled idle warning (steps 1-6) and the Settings → User Levels navigation (step 7) — the dialog is modeled at its real screen positions, never zoomed into empty space"
+      },
+      {
+        "t": 96.9,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 380,
+        "ease": true,
+        "note": "step 8: gentle rise onto the KPI band"
+      },
+      {
+        "t": 112.2,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 380
+      },
+      {
+        "t": 112.8,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "step 9: 150% close framing on the Session Timeout (min) column (shot-list zoom; satisfies required close framing)"
+      },
+      {
+        "t": 126.0,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 126.5,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 470,
+        "ease": true,
+        "note": "step 10: hold on the timeout values down the column (Cashiers 5, Administrator 120)"
+      },
+      {
+        "t": 142.4,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 470
+      },
+      {
+        "t": 143.0,
+        "z": 1.12,
+        "cx": 1000,
+        "cy": 360,
+        "ease": true,
+        "note": "step 11: pull wider for the recap — Name and Session Timeout columns plus the + New Record guardrail"
+      },
+      {
+        "t": 154.6,
+        "z": 1.12,
+        "cx": 1000,
+        "cy": 360
+      },
+      {
+        "t": 155.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 156.918,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Session Timeouts — Complete",
+      "from": 155.1,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 154.8
+  },
+  "output": "WC-01-03-session-timeouts-v1.1",
+  "orderedMentions": [
+    "Session expiring soon",
+    "Stay Active",
+    "Still there?",
+    "Stay Logged In",
+    "Log Out Now",
+    "User Levels",
+    "Total Levels",
+    "Max Security Level",
+    "Longest Timeout",
+    "Session Timeout"
+  ],
+  "neverClick": [
+    "logout",
+    "log ?out",
+    "log out now",
+    "stay logged in",
+    "stay active",
+    "\\+ ?new record",
+    "new record",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "edit record",
+    "delete",
+    "yes, delete",
+    "\\bsave\\b",
+    "save changes",
+    "\\bsend\\b",
+    "submit",
+    "ask shyne"
+  ]
+}

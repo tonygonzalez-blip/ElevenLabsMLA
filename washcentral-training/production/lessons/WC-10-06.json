@@ -1,0 +1,1759 @@
+{
+  "lesson": "WC-10-06",
+  "title": "IT Support: Site Detail",
+  "audioMaster": "training/module10-it-support/WC-10-06-full-narration-v1.0.mp3",
+  "audioDurationS": 176.196,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/site-detail.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideSiteDetail": {
+      "js": "[...document.querySelectorAll('aside.sidebar a')].find(a=>/site-detail\\.html$/.test(a.getAttribute('href')||'')&&a.getBoundingClientRect().width>0)"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumbs strong')",
+      "textRect": true
+    },
+    "backLink": {
+      "selector": "a.sd-back"
+    },
+    "hero": {
+      "selector": ".sd-hero"
+    },
+    "heroTitle": {
+      "selector": ".sd-hero-title"
+    },
+    "statusBadge": {
+      "selector": ".sd-status-badge.critical"
+    },
+    "heroSub": {
+      "selector": ".sd-hero-sub"
+    },
+    "addrSpan": {
+      "js": "[...document.querySelectorAll('.sd-hero-sub > span')][0]"
+    },
+    "ownerSpan": {
+      "js": "[...document.querySelectorAll('.sd-hero-sub > span')][1]"
+    },
+    "syncSpan": {
+      "js": "[...document.querySelectorAll('.sd-hero-sub > span')][2]"
+    },
+    "heroActions": {
+      "selector": ".sd-hero-actions"
+    },
+    "btnWorkOrder": {
+      "js": "[...document.querySelectorAll('.sd-hero-actions button')].find(b=>/Work Order/i.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "btnNotify": {
+      "js": "[...document.querySelectorAll('.sd-hero-actions button')].find(b=>/Notify CSM/i.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "btnEscalate": {
+      "js": "[...document.querySelectorAll('.sd-hero-actions button')].find(b=>/Escalate/i.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "kpiStrip": {
+      "selector": ".sd-kpi-strip"
+    },
+    "kpiWashes": {
+      "js": "[...document.querySelectorAll('.sd-kpi')].find(k=>/Washes Today/.test(k.textContent||'')&&k.getBoundingClientRect().width>0)"
+    },
+    "kpiRevenue": {
+      "js": "[...document.querySelectorAll('.sd-kpi')].find(k=>/Revenue Today/.test(k.textContent||'')&&k.getBoundingClientRect().width>0)"
+    },
+    "kpiAvgWait": {
+      "js": "[...document.querySelectorAll('.sd-kpi')].find(k=>/Avg Wait/.test(k.textContent||'')&&k.getBoundingClientRect().width>0)"
+    },
+    "kpiSLA": {
+      "js": "[...document.querySelectorAll('.sd-kpi')].find(k=>/\\bSLA\\b/.test(k.textContent||'')&&k.getBoundingClientRect().width>0)"
+    },
+    "kpiOpenInc": {
+      "js": "[...document.querySelectorAll('.sd-kpi')].find(k=>/Open Incidents/.test(k.textContent||'')&&k.getBoundingClientRect().width>0)"
+    },
+    "kpiUptime": {
+      "js": "[...document.querySelectorAll('.sd-kpi')].find(k=>/Uptime/.test(k.textContent||'')&&k.getBoundingClientRect().width>0)"
+    },
+    "eqHeader": {
+      "js": "document.querySelector('.sd-left .sd-section-hdr')"
+    },
+    "eqDrillHint": {
+      "js": "[...document.querySelectorAll('.sd-left .sd-section-hdr span')].find(s=>/click to drill down/.test(s.textContent||'')&&s.getBoundingClientRect().width>0)"
+    },
+    "eqGrid": {
+      "selector": "#sd-eq-grid"
+    },
+    "cardPOS": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/POS System/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "posScore": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.sd-eq-card')].find(c=>/POS System/.test(c.textContent||''));return c?c.querySelector('.sd-eq-footer-score'):null})()"
+    },
+    "cardConveyor": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/Tunnel Conveyor/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardScanner": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/Membership Scanner/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardChem": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/Chemical System/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardDryer": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/Dryer System/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardWater": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/Water System/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardGate": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/Entry Gate/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardLED": {
+      "js": "[...document.querySelectorAll('.sd-eq-card')].find(c=>/LED Lighting/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "incHeader": {
+      "js": "[...document.querySelectorAll('.sd-section-hdr')].find(h=>/Active Incidents/.test(h.textContent||'')&&h.getBoundingClientRect().width>0)"
+    },
+    "incCount": {
+      "selector": "#sd-inc-count"
+    },
+    "incidents": {
+      "selector": "#sd-incidents"
+    },
+    "incRowPOS": {
+      "js": "[...document.querySelectorAll('#sd-incidents a.sd-inc-row')].find(a=>/Terminal offline/.test(a.textContent||'')&&a.getBoundingClientRect().width>0)"
+    },
+    "incRowConveyor": {
+      "js": "[...document.querySelectorAll('#sd-incidents a.sd-inc-row')].find(a=>/E-Stop triggered/.test(a.textContent||'')&&a.getBoundingClientRect().width>0)"
+    },
+    "incRowScanner": {
+      "js": "[...document.querySelectorAll('#sd-incidents a.sd-inc-row')].find(a=>/Backup mode/.test(a.textContent||'')&&a.getBoundingClientRect().width>0)"
+    },
+    "tlHeader": {
+      "js": "[...document.querySelectorAll('.sd-section-hdr')].find(h=>/Event Timeline/.test(h.textContent||'')&&h.getBoundingClientRect().width>0)"
+    },
+    "timeline": {
+      "selector": "#sd-timeline"
+    },
+    "tlRowFirst": {
+      "js": "[...document.querySelectorAll('#sd-timeline .sd-tl-row')][0]"
+    },
+    "tlRowLast": {
+      "js": "(()=>{const r=[...document.querySelectorAll('#sd-timeline .sd-tl-row')];return r[r.length-1]})()"
+    },
+    "qaHeader": {
+      "js": "[...document.querySelectorAll('.sd-section-hdr')].find(h=>/Quick Actions/.test(h.textContent||'')&&h.getBoundingClientRect().width>0)"
+    },
+    "actions": {
+      "selector": ".sd-actions"
+    },
+    "actCreateWO": {
+      "js": "[...document.querySelectorAll('.sd-actions .sd-action-btn')].find(b=>/Create Work Order/.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "actSchedMaint": {
+      "js": "[...document.querySelectorAll('.sd-actions .sd-action-btn')].find(b=>/Schedule Maintenance/.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "actDispatch": {
+      "js": "[...document.querySelectorAll('.sd-actions .sd-action-btn')].find(b=>/Dispatch Technician/.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "actEmail": {
+      "js": "[...document.querySelectorAll('.sd-actions .sd-action-btn')].find(b=>/Email Customer/.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "actRestart": {
+      "js": "[...document.querySelectorAll('.sd-actions .sd-action-btn')].find(b=>/Remote Restart POS/.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "onSiteDetail": "location.pathname.endsWith('/site-detail.html')",
+    "drawerClosed": "(()=>{const b=document.querySelector('#sd-backdrop');return !!b&&getComputedStyle(b).opacity==='0'&&getComputedStyle(b).pointerEvents==='none'})()",
+    "siteLoaded": "(()=>{const V=e=>e.getBoundingClientRect().width>0;return location.pathname.endsWith('/site-detail.html')&&[...document.querySelectorAll('.sd-kpi')].filter(V).length===6&&[...document.querySelectorAll('.sd-eq-card')].filter(V).length===8&&[...document.querySelectorAll('#sd-incidents a.sd-inc-row')].filter(V).length===3&&[...document.querySelectorAll('#sd-timeline .sd-tl-row')].filter(V).length===6&&[...document.querySelectorAll('.sd-actions .sd-action-btn')].filter(V).length===5&&!!document.querySelector('.sd-status-badge.critical')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "pageIntact": "(()=>{const b=document.querySelector('#sd-backdrop');return location.pathname.endsWith('/site-detail.html')&&[...document.querySelectorAll('.sd-eq-card')].length===8&&[...document.querySelectorAll('#sd-incidents a.sd-inc-row')].length===3&&[...document.querySelectorAll('.sd-kpi')].length===6&&!!document.querySelector('.sd-status-badge.critical')&&!!b&&getComputedStyle(b).opacity==='0'})()"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference expanded so the SUPPORT group links (ML Command Center, Site Detail (Demo), ...) read with labels. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: expanded reads 'Hide panel', aside.sidebar width 220 with 'Site Detail (Demo)' active link at x102 y149 w203). Skipped when already expanded — the July 11 probe found it already expanded. No group toggle needed; the SUPPORT group is not collapsible."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onSiteDetail",
+      "note": "start page identity before capture (startUrl site-detail.html; the lesson opens on the Site Detail (Demo) sample site, Morris Plains, NJ — step 1 points at the already-active Site Detail link, never clicked)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "siteLoaded",
+      "note": "loaded: 6 KPI tiles, 8 Equipment Status cards, 3 Active Incidents rows, 6 Event Timeline rows, 5 Quick Actions, Critical status badge, no agent-service error state"
+    },
+    {
+      "op": "assert",
+      "at": -0.5,
+      "predicate": "drawerClosed",
+      "note": "pre-roll: the equipment drill-down drawer (#sd-drawer) is closed (backdrop opacity 0, pointer-events none) — no card has been opened"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 173.5,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "watch",
+      "key": "pageHeld",
+      "from": 1,
+      "to": 173.5,
+      "predicate": "onSiteDetail",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: nothing is clicked across all 11 steps — the page never navigates. The ‹ NOC back link, Work Order / Notify CSM / Escalate, the equipment cards, the Active Incidents rows, and the five Quick Actions are all pointed at, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "pageIntact",
+      "from": 2,
+      "to": 173,
+      "predicate": "pageIntact",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "mutation guardrail: 8 equipment cards + 3 incident rows + 6 KPI tiles + Critical badge hold the whole lesson AND the drill-down drawer stays closed — proves no card was opened, no incident drilled, no action fired, nothing changed"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.2,
+      "from": [
+        60,
+        200
+      ],
+      "to": {
+        "target": "sideSiteDetail",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): enter from the top-left toward the active SUPPORT > Site Detail (Demo) link as 'Open the site's own status board' is spoken"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.55,
+      "key": "sideSiteDetailRect",
+      "target": "sideSiteDetail"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.62,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 0.7,
+      "key": "crumbStrongRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.77,
+      "key": "backLinkRect",
+      "target": "backLink"
+    },
+    {
+      "op": "move",
+      "at": 0.9,
+      "to": {
+        "target": "sideSiteDetail",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1: rest beside the active Site Detail (Demo) link — never on the nav link (a same-page href, but we do not click it)"
+    },
+    {
+      "op": "move",
+      "at": 1.7,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02): travel to the breadcrumb title 'Micrologic NOC > Morris Plains, NJ' (callout 1)"
+    },
+    {
+      "op": "move",
+      "at": 3.7,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          90,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): hold under the breadcrumb as 'the trail up top shows you drilled in from the network center' is spoken"
+    },
+    {
+      "op": "move",
+      "at": 7.2,
+      "to": {
+        "target": "backLink",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04): move to the '< NOC' back link — pointed at from above, never clicked (it navigates to ML Command Center)"
+    },
+    {
+      "op": "move",
+      "at": 9.6,
+      "to": {
+        "point": [
+          700,
+          300
+        ]
+      },
+      "note": "ease over the page for the p04 tail 'runs you straight back there when you're done'"
+    },
+    {
+      "op": "log-rect",
+      "at": 10.72,
+      "key": "heroRect",
+      "target": "hero",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 10.79,
+      "key": "statusBadgeRect",
+      "target": "statusBadge"
+    },
+    {
+      "op": "log-rect",
+      "at": 10.86,
+      "key": "ownerSpanRect",
+      "target": "ownerSpan"
+    },
+    {
+      "op": "log-rect",
+      "at": 10.93,
+      "key": "syncSpanRect",
+      "target": "syncSpan"
+    },
+    {
+      "op": "move",
+      "at": 10.98,
+      "to": {
+        "target": "heroTitle",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p05): 'Start with the header' — settle under the site header block"
+    },
+    {
+      "op": "move",
+      "at": 12.7,
+      "to": {
+        "target": "ownerSpan",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p06): sweep the single strip — site, status, address, the account, and who manages it"
+    },
+    {
+      "op": "move",
+      "at": 15.25,
+      "to": {
+        "target": "syncSpan",
+        "offset": [
+          0,
+          16
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07): the sync time — 'Last sync: 2m ago' — how current this is"
+    },
+    {
+      "op": "move",
+      "at": 16.9,
+      "to": {
+        "target": "statusBadge",
+        "offset": [
+          0,
+          22
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): rest under the red Critical status chip"
+    },
+    {
+      "op": "move",
+      "at": 24.2,
+      "to": {
+        "point": [
+          900,
+          260
+        ]
+      },
+      "note": "ease off for the p08 tail before the buttons"
+    },
+    {
+      "op": "log-rect",
+      "at": 26.28,
+      "key": "heroActionsRect",
+      "target": "heroActions",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 26.35,
+      "key": "btnWorkOrderRect",
+      "target": "btnWorkOrder"
+    },
+    {
+      "op": "log-rect",
+      "at": 26.42,
+      "key": "btnNotifyRect",
+      "target": "btnNotify"
+    },
+    {
+      "op": "log-rect",
+      "at": 26.49,
+      "key": "btnEscalateRect",
+      "target": "btnEscalate"
+    },
+    {
+      "op": "move",
+      "at": 26.6,
+      "to": {
+        "target": "btnWorkOrder",
+        "offset": [
+          -60,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p09): 'Three buttons sit to the right' — approach the trio from beside/below, never onto them"
+    },
+    {
+      "op": "move",
+      "at": 28.6,
+      "to": {
+        "target": "btnWorkOrder",
+        "offset": [
+          -60,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p10) guardrail: Work Order opens a job (a real action) — pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 30.4,
+      "to": {
+        "target": "btnNotify",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p10-p11) guardrail: Notify CSM messages the account manager — pointed at from below, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 32.5,
+      "to": {
+        "target": "btnEscalate",
+        "offset": [
+          20,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p11) guardrail: Escalate raises the site's priority — pointed at from beside, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 36,
+      "to": {
+        "target": "heroActions",
+        "offset": [
+          -60,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p12): 'today we read them and keep our hands off' — hold beside the trio, hands off"
+    },
+    {
+      "op": "move",
+      "at": 39.4,
+      "to": {
+        "point": [
+          1100,
+          260
+        ]
+      },
+      "note": "ease off the buttons before the KPI band"
+    },
+    {
+      "op": "log-rect",
+      "at": 40.5,
+      "key": "kpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 40.57,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiWashes",
+        "kpiRevenue",
+        "kpiAvgWait",
+        "kpiSLA",
+        "kpiOpenInc",
+        "kpiUptime"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 40.74,
+      "to": {
+        "target": "kpiWashes",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p13): 'Now the numbers' — settle on the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 42.3,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p14-p15): six tiles, each with its own yardstick — Washes and Revenue vs their averages"
+    },
+    {
+      "op": "move",
+      "at": 46.5,
+      "to": {
+        "target": "kpiAvgWait",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p16): Avg Wait and SLA against target"
+    },
+    {
+      "op": "move",
+      "at": 49.7,
+      "to": {
+        "target": "kpiSLA",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p16): the SLA tile, 94.2% under the 98% target"
+    },
+    {
+      "op": "move",
+      "at": 52.5,
+      "to": {
+        "target": "kpiOpenInc",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p17): the Open Incidents count — where the trouble surfaces"
+    },
+    {
+      "op": "move",
+      "at": 56.7,
+      "to": {
+        "target": "kpiUptime",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 4 (p18): 'today's figure next to its benchmark' — ease across to Uptime"
+    },
+    {
+      "op": "move",
+      "at": 59.6,
+      "to": {
+        "point": [
+          700,
+          300
+        ]
+      },
+      "note": "ease off the band toward the equipment panel"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.72,
+      "key": "eqHeaderRect",
+      "target": "eqHeader",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 60.79,
+      "key": "eqDrillHintRect",
+      "target": "eqDrillHint"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.86,
+      "key": "eqGridRect",
+      "target": "eqGrid"
+    },
+    {
+      "op": "move",
+      "at": 60.98,
+      "to": {
+        "target": "eqHeader",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p19): 'Middle of the page, the equipment panel' — the Equipment Status header"
+    },
+    {
+      "op": "move",
+      "at": 63.8,
+      "to": {
+        "target": "eqGrid",
+        "offset": [
+          200,
+          40
+        ]
+      },
+      "note": "step 5 (p20-p21): eight units, one card each, each with live readings and a health score"
+    },
+    {
+      "op": "move",
+      "at": 70.4,
+      "to": {
+        "target": "eqDrillHint",
+        "offset": [
+          0,
+          22
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p22): the '8 units · click to drill down' hint — any card drills deeper on a click (not clicked here)"
+    },
+    {
+      "op": "move",
+      "at": 73.4,
+      "to": {
+        "point": [
+          470,
+          330
+        ]
+      },
+      "note": "ease toward the first card (POS card center ~x493 in the panel-shown STATE_B layout)"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.5,
+      "key": "cardPOSRect",
+      "target": "cardPOS",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 74.57,
+      "key": "posScoreRect",
+      "target": "posScore"
+    },
+    {
+      "op": "move",
+      "at": 74.72,
+      "to": {
+        "target": "cardPOS",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 6 (p23): 'Look at the first card' — the POS System card"
+    },
+    {
+      "op": "move",
+      "at": 77.15,
+      "to": {
+        "target": "cardPOS",
+        "offset": [
+          60,
+          40
+        ]
+      },
+      "note": "step 6 (p24-p25): OFFLINE, no transactions in 47 minutes, a red bar flagging it"
+    },
+    {
+      "op": "move",
+      "at": 79.4,
+      "to": {
+        "target": "posScore",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 6 (p25): Health: — with no score"
+    },
+    {
+      "op": "move",
+      "at": 85.1,
+      "to": {
+        "target": "cardPOS",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 6 (p26): 'this is the card you check first' — rest on the POS card"
+    },
+    {
+      "op": "move",
+      "at": 89.4,
+      "to": {
+        "point": [
+          680,
+          520
+        ]
+      },
+      "note": "ease across to the rest of the grid"
+    },
+    {
+      "op": "log-rects",
+      "at": 90.5,
+      "key": "otherCards",
+      "targets": [
+        "cardConveyor",
+        "cardScanner",
+        "cardChem",
+        "cardDryer",
+        "cardWater",
+        "cardGate",
+        "cardLED"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 90.82,
+      "to": {
+        "target": "cardConveyor",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 7 (p27-p28): 'Sweep the rest' — Conveyor, scanner, ..."
+    },
+    {
+      "op": "move",
+      "at": 93.2,
+      "to": {
+        "target": "cardScanner",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 7 (p28): scanner, chemicals ..."
+    },
+    {
+      "op": "move",
+      "at": 94.6,
+      "to": {
+        "target": "cardChem",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 7 (p28): chemicals, dryers ..."
+    },
+    {
+      "op": "move",
+      "at": 95.8,
+      "to": {
+        "target": "cardWater",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 7 (p28): water, gate, lighting — sweep across the healthy units"
+    },
+    {
+      "op": "move",
+      "at": 97.5,
+      "to": {
+        "target": "cardConveyor",
+        "offset": [
+          80,
+          70
+        ]
+      },
+      "note": "step 7 (p29): 'a couple sit lower and earn a second look' — Conveyor 71, Scanner 68"
+    },
+    {
+      "op": "move",
+      "at": 103.4,
+      "to": {
+        "target": "cardGate",
+        "offset": [
+          100,
+          70
+        ]
+      },
+      "note": "step 7 (p30): 'the health number and the color bar do your triage' — ease along the green cards"
+    },
+    {
+      "op": "move",
+      "at": 106.6,
+      "to": {
+        "point": [
+          1400,
+          300
+        ]
+      },
+      "note": "ease across to the Active Incidents panel"
+    },
+    {
+      "op": "log-rect",
+      "at": 107.7,
+      "key": "incHeaderRect",
+      "target": "incHeader",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 107.77,
+      "key": "incidentsRect",
+      "target": "incidents"
+    },
+    {
+      "op": "log-rects",
+      "at": 107.84,
+      "key": "incRows",
+      "targets": [
+        "incRowPOS",
+        "incRowConveyor",
+        "incRowScanner"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 107.98,
+      "to": {
+        "target": "incHeader",
+        "offset": [
+          -140,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p31): 'On the right, the open incidents' — the Active Incidents header (count 3)"
+    },
+    {
+      "op": "move",
+      "at": 110.3,
+      "to": {
+        "target": "incRowPOS",
+        "offset": [
+          260,
+          0
+        ]
+      },
+      "note": "step 8 (p32-p33): three incidents tagged by type and owner — the PAYMENTS outage is on Tyler R. (the account manager)"
+    },
+    {
+      "op": "move",
+      "at": 117.85,
+      "to": {
+        "target": "incRowConveyor",
+        "offset": [
+          260,
+          0
+        ]
+      },
+      "note": "step 8 (p34): the conveyor E-Stop is still Unassigned"
+    },
+    {
+      "op": "move",
+      "at": 120.7,
+      "to": {
+        "target": "incRowScanner",
+        "offset": [
+          260,
+          0
+        ]
+      },
+      "note": "step 8 (p35): the owner line — what already has a name (Sarah L.) and what's waiting for one"
+    },
+    {
+      "op": "move",
+      "at": 124,
+      "to": {
+        "point": [
+          1589,
+          430
+        ]
+      },
+      "note": "ease down toward the timeline"
+    },
+    {
+      "op": "log-rect",
+      "at": 125.05,
+      "key": "tlHeaderRect",
+      "target": "tlHeader",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 125.12,
+      "key": "timelineRect",
+      "target": "timeline"
+    },
+    {
+      "op": "move",
+      "at": 125.28,
+      "to": {
+        "target": "tlHeader",
+        "offset": [
+          -220,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p36): 'Underneath, the timeline' — the Event Timeline header"
+    },
+    {
+      "op": "move",
+      "at": 127.6,
+      "to": {
+        "target": "tlRowFirst",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 9 (p37): every event with a timestamp, from the shift opening this morning..."
+    },
+    {
+      "op": "move",
+      "at": 133.6,
+      "to": {
+        "target": "tlRowLast",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 9 (p38-p39): ...to the terminal offline later on — a slow vertical sweep down the day's story"
+    },
+    {
+      "op": "move",
+      "at": 136.3,
+      "to": {
+        "target": "timeline",
+        "offset": [
+          200,
+          120
+        ]
+      },
+      "note": "step 9 (p40): 'when you need to know what led up to an incident, you scroll here'"
+    },
+    {
+      "op": "move",
+      "at": 138.9,
+      "to": {
+        "point": [
+          1589,
+          700
+        ]
+      },
+      "note": "ease down to the Quick Actions column"
+    },
+    {
+      "op": "log-rect",
+      "at": 139.45,
+      "key": "qaHeaderRect",
+      "target": "qaHeader",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 139.52,
+      "key": "actionsRect",
+      "target": "actions"
+    },
+    {
+      "op": "log-rects",
+      "at": 139.59,
+      "key": "actionBtns",
+      "targets": [
+        "actCreateWO",
+        "actSchedMaint",
+        "actDispatch",
+        "actEmail",
+        "actRestart"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 139.72,
+      "to": {
+        "target": "qaHeader",
+        "offset": [
+          -220,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p41): 'Bottom right, the quick actions' — the Quick Actions header"
+    },
+    {
+      "op": "move",
+      "at": 142.5,
+      "to": {
+        "target": "actCreateWO",
+        "offset": [
+          -320,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p42-p43) guardrail: Create Work Order / Schedule Maintenance — pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 145.9,
+      "to": {
+        "target": "actDispatch",
+        "offset": [
+          -320,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p43) guardrail: Dispatch Technician / Email Customer — send-and-dispatch actions, pointed at from beside, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 148.4,
+      "to": {
+        "target": "actRestart",
+        "offset": [
+          -320,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p43) guardrail: Remote Restart POS touches live equipment — pointed at from beside with the red ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 149.7,
+      "to": {
+        "target": "actions",
+        "offset": [
+          -320,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p44): 'we read the list and stop there' — hold beside the column, hands off"
+    },
+    {
+      "op": "move",
+      "at": 155.6,
+      "to": {
+        "point": [
+          960,
+          520
+        ]
+      },
+      "note": "ease to center for the recap pull-back"
+    },
+    {
+      "op": "log-rect",
+      "at": 156.9,
+      "key": "kpiStripRect2",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 156.97,
+      "key": "eqGridRect2",
+      "target": "eqGrid"
+    },
+    {
+      "op": "log-rect",
+      "at": 157.04,
+      "key": "incidentsRect2",
+      "target": "incidents"
+    },
+    {
+      "op": "log-rect",
+      "at": 157.11,
+      "key": "timelineRect2",
+      "target": "timeline"
+    },
+    {
+      "op": "log-rect",
+      "at": 157.18,
+      "key": "actionsRect2",
+      "target": "actions"
+    },
+    {
+      "op": "move",
+      "at": 157.3,
+      "to": {
+        "target": "hero",
+        "offset": [
+          200,
+          40
+        ]
+      },
+      "note": "step 11 (p45): 'Step back and take it in' — begin the recap at the header, status up top"
+    },
+    {
+      "op": "move",
+      "at": 160.3,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          200,
+          20
+        ]
+      },
+      "note": "step 11 (p46): the numbers,"
+    },
+    {
+      "op": "move",
+      "at": 161,
+      "to": {
+        "target": "eqGrid",
+        "offset": [
+          200,
+          60
+        ]
+      },
+      "note": "step 11 (p46): the hardware,"
+    },
+    {
+      "op": "move",
+      "at": 161.8,
+      "to": {
+        "target": "incidents",
+        "offset": [
+          260,
+          40
+        ]
+      },
+      "note": "step 11 (p47): the open incidents with owners,"
+    },
+    {
+      "op": "move",
+      "at": 163.2,
+      "to": {
+        "target": "timeline",
+        "offset": [
+          260,
+          60
+        ]
+      },
+      "note": "step 11 (p47): the day's history,"
+    },
+    {
+      "op": "move",
+      "at": 164.4,
+      "to": {
+        "target": "actions",
+        "offset": [
+          -320,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p47): and the actions that answer them — beside the Quick Actions, still hands off"
+    },
+    {
+      "op": "move",
+      "at": 165.4,
+      "to": {
+        "point": [
+          960,
+          520
+        ]
+      },
+      "note": "step 11 (p48-p49): 'read it top to bottom and you know this site cold' — ease to a wide center hold"
+    },
+    {
+      "op": "move",
+      "at": 170.6,
+      "to": {
+        "point": [
+          1540,
+          930
+        ]
+      },
+      "note": "step 11 (p49): 'you did it without touching a thing' — final park, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 175.6,
+      "predicate": "onSiteDetail",
+      "note": "end state: still on Site Detail (Demo), unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 175.8,
+      "predicate": "pageIntact",
+      "note": "end state: page intact — 8 cards, 3 incidents, 6 KPI tiles, Critical badge, drawer still closed; nothing was opened, drilled, fired, or changed"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 0.7,
+        "to": 10.2
+      },
+      {
+        "n": 2,
+        "anchor": "heroRect",
+        "place": "below-left",
+        "from": 10.9,
+        "to": 25.6
+      },
+      {
+        "n": 3,
+        "anchor": "heroActionsRect",
+        "place": "left",
+        "from": 26.5,
+        "to": 40
+      },
+      {
+        "n": 4,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 40.6,
+        "to": 60.3
+      },
+      {
+        "n": 5,
+        "anchor": "eqHeaderRect",
+        "place": "below-left",
+        "from": 60.9,
+        "to": 74.2
+      },
+      {
+        "n": 6,
+        "anchor": "cardPOSRect",
+        "place": "right",
+        "from": 74.6,
+        "to": 90.2
+      },
+      {
+        "n": 7,
+        "anchor": "eqGridRect",
+        "place": "at",
+        "from": 90.8,
+        "to": 107.4
+      },
+      {
+        "n": 8,
+        "anchor": "incHeaderRect",
+        "place": "left",
+        "from": 108,
+        "to": 124.8
+      },
+      {
+        "n": 9,
+        "anchor": "tlHeaderRect",
+        "place": "left",
+        "from": 125.3,
+        "to": 139.2
+      },
+      {
+        "n": 10,
+        "anchor": "qaHeaderRect",
+        "place": "left",
+        "from": 139.7,
+        "to": 156.6
+      },
+      {
+        "n": 11,
+        "anchor": "kpiStripRect2",
+        "place": "below-left",
+        "from": 157.3,
+        "to": 173.6
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideSiteDetailRect",
+        "from": 0.9,
+        "to": 1.7,
+        "note": "step 1 (p01): the active SUPPORT > Site Detail (Demo) link (pointed at, never clicked)"
+      },
+      {
+        "anchor": "crumbStrongRect",
+        "from": 1.7,
+        "to": 7.2,
+        "note": "step 1 (p02-p03): the Micrologic NOC > Morris Plains, NJ breadcrumb title"
+      },
+      {
+        "anchor": "backLinkRect",
+        "from": 7.2,
+        "to": 9.6,
+        "note": "step 1 (p04): the '< NOC' back link (returns to ML Command Center; pointed at, never clicked)"
+      },
+      {
+        "anchor": "ownerSpanRect",
+        "from": 12.7,
+        "to": 15.25,
+        "note": "step 2 (p06): the account + CSM owner line — MLAS Corp · Tyler R. (CSM)"
+      },
+      {
+        "anchor": "syncSpanRect",
+        "from": 15.25,
+        "to": 16.9,
+        "note": "step 2 (p07): Last sync: 2m ago"
+      },
+      {
+        "anchor": "statusBadgeRect",
+        "from": 16.9,
+        "to": 24,
+        "note": "step 2 (p08): the red Critical status chip"
+      },
+      {
+        "anchor": "btnWorkOrderRect",
+        "from": 28.6,
+        "to": 39.8,
+        "color": "#dc2626",
+        "note": "step 3 (p10) do-not-click: Work Order opens a job — never pressed"
+      },
+      {
+        "anchor": "btnNotifyRect",
+        "from": 28.6,
+        "to": 39.8,
+        "color": "#dc2626",
+        "note": "step 3 (p10) do-not-click: Notify CSM messages the account manager — never pressed"
+      },
+      {
+        "anchor": "btnEscalateRect",
+        "from": 28.6,
+        "to": 39.8,
+        "color": "#dc2626",
+        "note": "step 3 (p11) do-not-click: Escalate raises the site's priority — never pressed"
+      },
+      {
+        "anchor": "kpiTiles.kpiAvgWait",
+        "from": 46.5,
+        "to": 49.7,
+        "note": "step 4 (p16): Avg Wait 8.2m against target <6m"
+      },
+      {
+        "anchor": "kpiTiles.kpiSLA",
+        "from": 49.7,
+        "to": 52.5,
+        "note": "step 4 (p16): SLA 94.2% against target 98%"
+      },
+      {
+        "anchor": "kpiTiles.kpiOpenInc",
+        "from": 52.5,
+        "to": 56.7,
+        "note": "step 4 (p17): Open Incidents — where the trouble surfaces"
+      },
+      {
+        "anchor": "eqDrillHintRect",
+        "from": 60.98,
+        "to": 63.8,
+        "note": "step 5 (p19): the '8 units · click to drill down' hint"
+      },
+      {
+        "anchor": "cardPOSRect",
+        "from": 77.15,
+        "to": 89.2,
+        "note": "step 6 (p24-p26): the POS System card — OFFLINE, the unit in trouble"
+      },
+      {
+        "anchor": "posScoreRect",
+        "from": 79.4,
+        "to": 85.1,
+        "note": "step 6 (p25): Health: — with no score"
+      },
+      {
+        "anchor": "incRows.incRowConveyor",
+        "from": 117.85,
+        "to": 120.7,
+        "note": "step 8 (p34): the Tunnel Conveyor E-Stop incident, still Unassigned"
+      },
+      {
+        "anchor": "actionBtns.actCreateWO",
+        "from": 142.5,
+        "to": 155.4,
+        "color": "#dc2626",
+        "note": "step 10 (p42-p44) do-not-click: Create Work Order — a real action, never pressed"
+      },
+      {
+        "anchor": "actionBtns.actSchedMaint",
+        "from": 142.5,
+        "to": 155.4,
+        "color": "#dc2626",
+        "note": "step 10 do-not-click: Schedule Maintenance — never pressed"
+      },
+      {
+        "anchor": "actionBtns.actDispatch",
+        "from": 142.5,
+        "to": 155.4,
+        "color": "#dc2626",
+        "note": "step 10 do-not-click: Dispatch Technician — never pressed"
+      },
+      {
+        "anchor": "actionBtns.actEmail",
+        "from": 142.5,
+        "to": 155.4,
+        "color": "#dc2626",
+        "note": "step 10 do-not-click: Email Customer (MLAS Corp) — never pressed"
+      },
+      {
+        "anchor": "actionBtns.actRestart",
+        "from": 142.5,
+        "to": 155.4,
+        "color": "#dc2626",
+        "note": "step 10 (p43) do-not-click: Remote Restart POS touches live equipment — never pressed"
+      },
+      {
+        "anchor": "kpiStripRect2",
+        "from": 160.3,
+        "to": 161,
+        "note": "step 11 (p46): recap — the numbers"
+      },
+      {
+        "anchor": "eqGridRect2",
+        "from": 161,
+        "to": 161.8,
+        "note": "step 11 (p46): the hardware"
+      },
+      {
+        "anchor": "incidentsRect2",
+        "from": 161.8,
+        "to": 163.2,
+        "note": "step 11 (p47): the open incidents with owners"
+      },
+      {
+        "anchor": "timelineRect2",
+        "from": 163.2,
+        "to": 164.4,
+        "note": "step 11 (p47): the day's history"
+      },
+      {
+        "anchor": "actionsRect2",
+        "from": 164.4,
+        "to": 165.4,
+        "color": "#dc2626",
+        "note": "step 11 (p47): the actions that answer them — still a do-not-click guardrail"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2,
+        "z": 1.25,
+        "cx": 500,
+        "cy": 432,
+        "ease": true,
+        "note": "step 1: sidebar link + breadcrumb + back link (top-left). Coords are the panel-shown STATE_B layout the preflight stages (sidebarExpanded true => content origin x~314)."
+      },
+      {
+        "t": 10.2,
+        "z": 1.25,
+        "cx": 500,
+        "cy": 432
+      },
+      {
+        "t": 10.9,
+        "z": 1.5,
+        "cx": 680,
+        "cy": 360,
+        "ease": true,
+        "note": "step 2: 150% close on the site header — Critical chip (x597) + owner line (x671)"
+      },
+      {
+        "t": 25.6,
+        "z": 1.5,
+        "cx": 680,
+        "cy": 360
+      },
+      {
+        "t": 26.5,
+        "z": 1.5,
+        "cx": 1700,
+        "cy": 360,
+        "ease": true,
+        "note": "step 3: 150% on the Work Order / Notify CSM / Escalate trio (right side, layout-invariant; red guardrails)"
+      },
+      {
+        "t": 40,
+        "z": 1.5,
+        "cx": 1700,
+        "cy": 360
+      },
+      {
+        "t": 40.74,
+        "z": 1.3,
+        "cx": 1109,
+        "cy": 415,
+        "ease": true,
+        "note": "step 4: the six-tile KPI band (band x314..1905, center 1109)"
+      },
+      {
+        "t": 49.4,
+        "z": 1.42,
+        "cx": 1110,
+        "cy": 400,
+        "ease": true,
+        "note": "step 4: brief punch on Avg Wait (x845) + SLA (x1110) under target"
+      },
+      {
+        "t": 60.3,
+        "z": 1.42,
+        "cx": 1110,
+        "cy": 400
+      },
+      {
+        "t": 60.98,
+        "z": 1.28,
+        "cx": 830,
+        "cy": 430,
+        "ease": true,
+        "note": "step 5: the Equipment Status header + top card row (eqGrid x314..1347, center 830)"
+      },
+      {
+        "t": 74.2,
+        "z": 1.28,
+        "cx": 830,
+        "cy": 430
+      },
+      {
+        "t": 74.72,
+        "z": 1.5,
+        "cx": 470,
+        "cy": 360,
+        "ease": true,
+        "note": "step 6: 150% close on the red POS System card (x330..656, center 493; OFFLINE, Health: —)"
+      },
+      {
+        "t": 90.2,
+        "z": 1.5,
+        "cx": 470,
+        "cy": 360
+      },
+      {
+        "t": 90.82,
+        "z": 1.15,
+        "cx": 830,
+        "cy": 520,
+        "ease": true,
+        "note": "step 7: the full equipment grid — sweep the other seven cards"
+      },
+      {
+        "t": 107.4,
+        "z": 1.15,
+        "cx": 830,
+        "cy": 520
+      },
+      {
+        "t": 107.98,
+        "z": 1.34,
+        "cx": 1626,
+        "cy": 403,
+        "ease": true,
+        "note": "step 8: the Active Incidents panel (x1348..1905, 3 rows, owners)"
+      },
+      {
+        "t": 124.8,
+        "z": 1.34,
+        "cx": 1626,
+        "cy": 403
+      },
+      {
+        "t": 125.28,
+        "z": 1.3,
+        "cx": 1626,
+        "cy": 560,
+        "ease": true,
+        "note": "step 9: the Event Timeline (x1348..1905)"
+      },
+      {
+        "t": 139.2,
+        "z": 1.3,
+        "cx": 1626,
+        "cy": 560
+      },
+      {
+        "t": 139.72,
+        "z": 1.34,
+        "cx": 1626,
+        "cy": 700,
+        "ease": true,
+        "note": "step 10: the Quick Actions column (x1348..1905; red guardrails)"
+      },
+      {
+        "t": 156.6,
+        "z": 1.34,
+        "cx": 1626,
+        "cy": 700
+      },
+      {
+        "t": 157.3,
+        "z": 1.08,
+        "cx": 1080,
+        "cy": 520,
+        "ease": true,
+        "note": "step 11: pull wide for the whole-board recap sweep (content centered ~x1109)"
+      },
+      {
+        "t": 173.6,
+        "z": 1.08,
+        "cx": 1080,
+        "cy": 520
+      },
+      {
+        "t": 174.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull all the way wide for the close"
+      },
+      {
+        "t": 176.196,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Site Detail — Complete",
+      "from": 174.4,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 174.1
+  },
+  "output": "WC-10-06-site-detail-v1.1",
+  "neverClick": [
+    "logout",
+    "log ?out",
+    "log out now",
+    "work order",
+    "\\+ ?create work order",
+    "create work order",
+    "notify csm",
+    "escalate",
+    "schedule maintenance",
+    "dispatch technician",
+    "email customer",
+    "remote restart pos",
+    "restart",
+    "schedule pm",
+    "acknowledge",
+    "\\bsend\\b",
+    "submit",
+    "\\bsave\\b",
+    "\\bedit\\b",
+    "delete",
+    "\\bnew\\b",
+    "\\bassign\\b",
+    "approve",
+    "dispatch",
+    "notify",
+    "back to noc / < noc back link (navigates to ML Command Center; pointed at, never clicked)",
+    "equipment cards / sd-eq-card (click to drill down; no card is opened)",
+    "active incidents rows / sd-inc-row (drill-down; never clicked)"
+  ]
+}

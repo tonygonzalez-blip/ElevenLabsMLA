@@ -85,6 +85,16 @@ function cameraAt(t) {
 // ---- rect anchors from the event log (screen coords) ----
 function rectByKey(key) {
   if (key.startsWith('screen:')) { const [x, y] = key.slice(7).split(',').map(Number); return { x, y, w: 0, h: 0, point: true }; }
+  // literal screen-space rect, usable by highlights and callouts: "rect:x,y,w,h"
+  if (key.startsWith('rect:')) { const [x, y, w, h] = key.slice(5).split(',').map(Number); return { x, y, w, h }; }
+  // union of every item rect in a logged log-rects group: "union:<groupKey>"
+  if (key.startsWith('union:')) {
+    const items = events.rects[key.slice(6)]?.items; if (!items) return null;
+    const rs = Object.values(items).map(i => i.rect).filter(Boolean);
+    if (!rs.length) return null;
+    const x0 = Math.min(...rs.map(r => r.x)), y0 = Math.min(...rs.map(r => r.y));
+    return { x: x0, y: y0, w: Math.max(...rs.map(r => r.x + r.w)) - x0, h: Math.max(...rs.map(r => r.y + r.h)) - y0 };
+  }
   if (key.includes('.')) { const [g, item] = key.split('.'); return events.rects[g]?.items?.[item]?.rect; }
   return events.rects[key]?.rect;
 }
@@ -184,15 +194,21 @@ function overlaySVG(t, camr) {
   const sc = 1.0; // 22px pointer at 1080p
   s += `<g transform="translate(${cxp.toFixed(1)},${cyp.toFixed(1)}) scale(${sc})">`
     + `<path d="M0,0 L0,15.5 L4.4,12 L7.2,18.5 L9.4,17.6 L6.6,11.3 L12,10.8 Z" fill="#ffffff" stroke="#111" stroke-width="1.1" stroke-linejoin="round"/></g>`;
-  // completion treatment
+  // completion treatment — card auto-sizes to its text (fixed 470px truncated long titles);
+  // optional second line from lesson JSON `completion.stamp` (verification stamp)
   const comp = L.compositor.completion;
   if (comp && t >= comp.from) {
     const a = Math.min(1, (t - comp.from) / 0.4);
-    const cw = 470, ch = 84, cx = (W - cw) / 2, cy = (H - ch) / 2;
+    const titleFS = 26, stampFS = 18;
+    const textW = Math.ceil(Math.max(comp.text.length * titleFS * 0.63, comp.stamp ? comp.stamp.length * stampFS * 0.61 : 0));
+    const cw = Math.min(W - 160, 88 + textW + 34), ch = comp.stamp ? 118 : 84;
+    const cx = (W - cw) / 2, cy = (H - ch) / 2;
     s += `<rect x="${cx}" y="${cy}" width="${cw}" height="${ch}" rx="16" fill="#0c1016" opacity="${(0.92 * a).toFixed(2)}"/>`;
     s += `<circle cx="${cx + 54}" cy="${cy + ch / 2}" r="17" fill="none" stroke="#22c55e" stroke-width="3" opacity="${a.toFixed(2)}"/>`;
     s += `<path d="M${cx + 46},${cy + ch / 2} l6,7 l12,-15" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="${a.toFixed(2)}"/>`;
-    s += `<text x="${cx + 88}" y="${cy + ch / 2 + 8}" font-family="DejaVu Sans" font-size="26" font-weight="600" fill="#fff" opacity="${a.toFixed(2)}">${esc(comp.text)}</text>`;
+    const titleY = comp.stamp ? cy + 47 : cy + ch / 2 + 8;
+    s += `<text x="${cx + 88}" y="${titleY}" font-family="DejaVu Sans" font-size="${titleFS}" font-weight="600" fill="#fff" opacity="${a.toFixed(2)}">${esc(comp.text)}</text>`;
+    if (comp.stamp) s += `<text x="${cx + 88}" y="${cy + 82}" font-family="DejaVu Sans" font-size="${stampFS}" font-weight="400" fill="#9fb0c0" opacity="${a.toFixed(2)}">${esc(comp.stamp)}</text>`;
   }
   s += `</svg>`;
   return s;
@@ -215,68 +231,102 @@ function camExpr(field) {
   return expr;
 }
 const zExpr = camExpr('z'), cxExpr = camExpr('cx'), cyExpr = camExpr('cy');
-// zoompan: zoom>=1; x,y are the top-left of the WxH window in the (iw*zoom) upscaled source.
+// zoompan: zoom>=1; x,y are the crop's TOP-LEFT IN INPUT PIXELS of an (iw/zoom)x(ih/zoom)
+// window (verified empirically with a coordinate-grid test pattern) — NOT coordinates in the
+// zoom-scaled plane. The earlier scaled-plane formula (cx*zoom - W/2) therefore panned the
+// camera (z-1)*cw/2-ish too far right/down at off-center framings, which misregistered every
+// overlay inside zoomed shots. Mirror cameraAt()'s source-space math exactly:
+//   x = cx - (W/z)/2, clamped to [0, W - W/z]  (same for y with H).
 const zoomE = `max(1\\,${zExpr})`;
-const panX = `clip((${cxExpr})*zoom-${W / 2}\\,0\\,iw*zoom-iw)`;
-const panY = `clip((${cyExpr})*zoom-${H / 2}\\,0\\,ih*zoom-ih)`;
+const panX = `clip((${cxExpr})-(${W}/2)/zoom\\,0\\,iw-iw/zoom)`;
+const panY = `clip((${cyExpr})-(${H}/2)/zoom\\,0\\,ih-ih/zoom)`;
 
-// ---- render ----
-fs.rmSync(workDir, { recursive: true, force: true });
-fs.mkdirSync(workDir, { recursive: true });
+// ---- render (RESUMABLE) ----
+// Container restarts frequently interrupt the ~20-min composite; the daemon then re-runs this whole
+// script. Rather than wipe and restart, keep the frames from a prior attempt when they belong to the
+// SAME capture (stamped by frame count + the events-file mtime, which changes only on a fresh record)
+// and skip whichever passes are already complete. Progress accumulates across restarts: one attempt
+// finishes pass A, the next skips it and does pass B, the next does pass C — even if no single attempt
+// survives long enough to finish alone. If the stamp differs (config/capture changed) we wipe clean.
 const camDir = path.join(workDir, 'cam'), ovDir = path.join(workDir, 'ov');
-fs.mkdirSync(camDir); fs.mkdirSync(ovDir);
-console.log(`compositing ${nFrames} frames (${totalOut.toFixed(2)}s @ ${FPS}fps)...`);
+const stampPath = path.join(workDir, '.stamp');
+const camReadyPath = path.join(workDir, '.camReady');
+const ovReadyPath = path.join(workDir, '.ovReady');
+const eventsMtime = fs.statSync(path.join(outDir, `${L.lesson}-events.json`)).mtimeMs;
+const stamp = `${nFrames}:${eventsMtime}`;
+let reuse = false;
+try { reuse = fs.readFileSync(stampPath, 'utf8') === stamp; } catch { /* no prior stamp */ }
+if (!reuse) fs.rmSync(workDir, { recursive: true, force: true });
+fs.mkdirSync(camDir, { recursive: true }); fs.mkdirSync(ovDir, { recursive: true });
+fs.writeFileSync(stampPath, stamp);
+console.log(`compositing ${nFrames} frames (${totalOut.toFixed(2)}s @ ${FPS}fps)${reuse ? ' [resuming]' : ''}...`);
 
-// Pass A (ONE ffmpeg): apply the eased camera zoom+pan to the capture -> cam PNG sequence.
-console.log('  pass A: camera zoom+pan...');
-execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-ss', offset.toFixed(3), '-i', capture,
-  '-vf', `fps=${FPS},zoompan=z='${zoomE}':x='${panX}':y='${panY}':d=1:s=${W}x${H}:fps=${FPS}`,
-  '-frames:v', String(nFrames), '-start_number', '0', path.join(camDir, 'c%05d.png')], { stdio: ['ignore', 'ignore', 'inherit'] });
-
-// Pass A2: truthful loading-cut. A real navigation paints progressively; the spec forbids
-// partial-render frames in the instructional timeline. For each nav, freeze the first fully
-// stable destination frame across the load window [press+0.15s, stableT] so the learner never
-// sees a half-painted page. This edits the VIDEO only — the website and audio are untouched.
-const edits = { freezes: [] };
 const idxPath = i => path.join(camDir, `c${String(i).padStart(5, '0')}.png`);
-for (const key of Object.keys(events.stability)) {
-  const st = events.stability[key];
-  if (st.navPressT == null || st.stableT == null) continue;
-  const holdFrom = st.navPressT + 0.15, holdTo = st.stableT;
-  const stableIdx = Math.min(nFrames - 1, Math.round(st.stableT * FPS));
-  const f0 = Math.max(0, Math.round(holdFrom * FPS)), f1 = Math.min(nFrames - 1, Math.round(holdTo * FPS));
-  const stableBuf = fs.readFileSync(idxPath(stableIdx));
-  for (let f = f0; f <= f1; f++) fs.writeFileSync(idxPath(f), stableBuf);
-  edits.freezes.push({ key, fromS: +holdFrom.toFixed(3), toS: +holdTo.toFixed(3), navPressT: st.navPressT, stableT: st.stableT });
-  console.log(`    loading-cut ${key}: froze ${f1 - f0 + 1} frames [${holdFrom.toFixed(2)}-${holdTo.toFixed(2)}s]`);
+if (reuse && fs.existsSync(camReadyPath)) {
+  console.log('  pass A: (resume) cam frames + loading-cuts already complete — skipping');
+} else {
+  // Pass A (ONE ffmpeg): apply the eased camera zoom+pan to the capture -> cam PNG sequence.
+  console.log('  pass A: camera zoom+pan...');
+  execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-ss', offset.toFixed(3), '-i', capture,
+    '-vf', `fps=${FPS},zoompan=z='${zoomE}':x='${panX}':y='${panY}':d=1:s=${W}x${H}:fps=${FPS}`,
+    '-frames:v', String(nFrames), '-start_number', '0', path.join(camDir, 'c%05d.png')], { stdio: ['ignore', 'ignore', 'inherit'] });
+
+  // Pass A2: truthful loading-cut. A real navigation paints progressively; the spec forbids
+  // partial-render frames in the instructional timeline. For each nav, freeze the first fully
+  // stable destination frame across the load window [press+0.15s, stableT] so the learner never
+  // sees a half-painted page. This edits the VIDEO only — the website and audio are untouched.
+  const edits = { freezes: [] };
+  for (const key of Object.keys(events.stability)) {
+    const st = events.stability[key];
+    if (st.navPressT == null || st.stableT == null) continue;
+    const holdFrom = st.navPressT + 0.15, holdTo = st.stableT;
+    const stableIdx = Math.min(nFrames - 1, Math.round(st.stableT * FPS));
+    const f0 = Math.max(0, Math.round(holdFrom * FPS)), f1 = Math.min(nFrames - 1, Math.round(holdTo * FPS));
+    const stableBuf = fs.readFileSync(idxPath(stableIdx));
+    for (let f = f0; f <= f1; f++) fs.writeFileSync(idxPath(f), stableBuf);
+    edits.freezes.push({ key, fromS: +holdFrom.toFixed(3), toS: +holdTo.toFixed(3), navPressT: st.navPressT, stableT: st.stableT });
+    console.log(`    loading-cut ${key}: froze ${f1 - f0 + 1} frames [${holdFrom.toFixed(2)}-${holdTo.toFixed(2)}s]`);
+  }
+  fs.writeFileSync(path.join(outDir, `${L.lesson}-edits.json`), JSON.stringify(edits, null, 2));
+  fs.writeFileSync(camReadyPath, stamp);
 }
-fs.writeFileSync(path.join(outDir, `${L.lesson}-edits.json`), JSON.stringify(edits, null, 2));
 
 // Pass B: rasterize each overlay SVG -> transparent PNG (output space), parallel worker pool.
-console.log('  pass B: rasterize overlays...');
-for (let f = 0; f < nFrames; f++) {
-  const t = f / FPS;
-  fs.writeFileSync(path.join(ovDir, `s${String(f).padStart(5, '0')}.svg`), overlaySVG(t, cameraAt(t)));
+// Resumable per-frame: skip frames whose output PNG already exists from a prior attempt.
+if (reuse && fs.existsSync(ovReadyPath)) {
+  console.log('  pass B: (resume) overlay frames already complete — skipping');
+} else {
+  console.log('  pass B: rasterize overlays...');
+  const ovPng = f => path.join(ovDir, `o${String(f).padStart(5, '0')}.png`);
+  const todo = [];
+  for (let f = 0; f < nFrames; f++) {
+    if (fs.existsSync(ovPng(f))) continue;               // already rasterized in a prior attempt
+    fs.writeFileSync(path.join(ovDir, `s${String(f).padStart(5, '0')}.svg`), overlaySVG(f / FPS, cameraAt(f / FPS)));
+    todo.push(f);
+  }
+  if (todo.length < nFrames) console.log(`    (resume) ${nFrames - todo.length}/${nFrames} overlays already present`);
+  const WORKERS = 8;
+  let ti = 0, active = 0, done = 0;
+  await new Promise((resolve, reject) => {
+    const pump = () => {
+      if (todo.length === 0) return resolve();
+      while (active < WORKERS && ti < todo.length) {
+        const f = todo[ti++]; active++;
+        const idx = String(f).padStart(5, '0');
+        const p = spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
+          '-i', path.join(ovDir, `s${idx}.svg`), path.join(ovDir, `o${idx}.png`)], { stdio: 'ignore' });
+        p.on('exit', (code) => {
+          active--; done++;
+          if (code !== 0) return reject(new Error(`overlay raster failed at frame ${f}`));
+          if (done % 400 === 0) console.log(`    rasterized ${done}/${todo.length}`);
+          if (done === todo.length) resolve(); else pump();
+        });
+      }
+    };
+    pump();
+  });
+  fs.writeFileSync(ovReadyPath, stamp);
 }
-const WORKERS = 8;
-let next = 0, active = 0, done = 0;
-await new Promise((resolve, reject) => {
-  const pump = () => {
-    while (active < WORKERS && next < nFrames) {
-      const f = next++; active++;
-      const idx = String(f).padStart(5, '0');
-      const p = spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
-        '-i', path.join(ovDir, `s${idx}.svg`), path.join(ovDir, `o${idx}.png`)], { stdio: 'ignore' });
-      p.on('exit', (code) => {
-        active--; done++;
-        if (code !== 0) return reject(new Error(`overlay raster failed at frame ${f}`));
-        if (done % 400 === 0) console.log(`    rasterized ${done}/${nFrames}`);
-        if (done === nFrames) resolve(); else pump();
-      });
-    }
-  };
-  pump();
-});
 
 // Pass C (ONE ffmpeg): composite overlay over camera frames, end fade, final H.264 encode.
 console.log('  pass C: composite + fade + encode...');
@@ -297,3 +347,7 @@ execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', silent
 
 console.log(`FINAL: ${finalOut}`);
 console.log(`  video frames: ${nFrames} (${totalOut.toFixed(2)}s), audio master stream-copied (${audioDur.toFixed(2)}s)`);
+
+// Composite fully succeeded — reclaim the ~GB of intermediate frames. Only runs after finalOut
+// exists, so a restart-interrupted run leaves the frames in place for the resume path above.
+try { fs.rmSync(workDir, { recursive: true, force: true }); } catch { /* best-effort */ }

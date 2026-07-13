@@ -1,0 +1,238 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.208
+Open Employee Schedules from the sidebar.
+
+p02
+00:00:03.267 --> 00:00:04.799
+Four tiles read across the top: who's scheduled this week, how many shifts sit open,
+
+p03
+00:00:05.309 --> 00:00:06.332
+your coverage percentage, and how many sites that covers.
+
+p04
+00:00:06.684 --> 00:00:15.922
+This is your first stop when a manager asks whether the week is staffed.
+
+p05
+00:00:16.400 --> 00:00:17.656
+Now the grid itself.
+
+p06
+00:00:18.396 --> 00:00:22.585
+One row per person, one column per day, Monday through Sunday.
+
+p07
+00:00:23.331 --> 00:00:29.140
+Each cell holds a shift code, a start and end like seven to three, or off for a day off.
+
+p08
+00:00:29.993 --> 00:00:33.806
+Read across a single row and you have that person's whole week.
+
+p09
+00:00:34.304 --> 00:00:36.896
+Above the grid, two panels do the math for you.
+
+p10
+00:00:37.448 --> 00:00:39.347
+One splits the week by time of day: morning, afternoon, evening.
+
+p11
+00:00:39.669 --> 00:00:41.419
+The other rates coverage, how much is covered, at risk, or still open.
+
+p12
+00:00:41.904 --> 00:00:49.440
+You can spot a thin day before you ever open a row.
+
+p13
+00:00:49.840 --> 00:00:51.049
+Switch to Time Clock.
+
+p14
+00:00:51.540 --> 00:00:53.003
+Schedules are the plan.
+
+p15
+00:00:53.847 --> 00:00:55.460
+This is what actually happened.
+
+p16
+00:00:55.940 --> 00:00:58.196
+The tile to watch is On Clock Now, your live count of everyone punched in across the network,
+
+p17
+00:00:58.460 --> 00:01:02.821
+right this second.
+
+p18
+00:01:03.280 --> 00:01:05.351
+Run your eye down the clock-out column.
+
+p19
+00:01:06.015 --> 00:01:08.371
+Most rows show a time in and a time out.
+
+p20
+00:01:08.889 --> 00:01:10.165
+One shows a dash.
+
+p21
+00:01:10.658 --> 00:01:12.413
+That dash isn't missing data.
+
+p22
+00:01:12.787 --> 00:01:17.458
+It means the person is still on the clock, and their hours keep climbing until they punch out.
+
+p23
+00:01:17.920 --> 00:01:20.364
+Off to the side, the punch-status panel.
+
+p24
+00:01:20.950 --> 00:01:24.632
+It splits today into on the clock, clocked out, and no show.
+
+p25
+00:01:25.261 --> 00:01:27.086
+No show is the one to scan for: scheduled staff who never punched in.
+
+p26
+00:01:27.557 --> 00:01:32.857
+That's a call worth making before the shift falls short.
+
+p27
+00:01:33.280 --> 00:01:34.753
+Open Employee Roles.
+
+p28
+00:01:35.528 --> 00:01:37.477
+A role is a job's permission set, what that person is allowed to touch.
+
+p29
+00:01:37.840 --> 00:01:39.584
+The tiles count your total roles, how many are active,
+
+p30
+00:01:40.158 --> 00:01:45.816
+and how many sit at manager or admin level.
+
+p31
+00:01:46.340 --> 00:01:50.483
+The list names each role and, in the last column, its access level.
+
+p32
+00:01:51.084 --> 00:01:52.896
+Administrator has full reach.
+
+p33
+00:01:53.356 --> 00:01:56.205
+A cashier gets the point of sale and little else.
+
+p34
+00:01:56.825 --> 00:02:01.097
+When someone can't do something they expect to, this column is usually the reason.
+
+p35
+00:02:01.649 --> 00:02:03.659
+The access-levels panel sums it up.
+
+p36
+00:02:04.032 --> 00:02:07.235
+Most of your staff sit at the low tier, and that's by design.
+
+p37
+00:02:07.660 --> 00:02:10.442
+Far more cashiers and attendants than managers.
+
+p38
+00:02:10.781 --> 00:02:14.689
+The panel beside it ranks roles by how many people hold each one.
+
+p39
+00:02:15.120 --> 00:02:16.959
+Last page, User Groups.
+
+p40
+00:02:17.762 --> 00:02:21.549
+A group is a named set of people, and it's a different idea from a role.
+
+p41
+00:02:21.901 --> 00:02:23.551
+A role is about permissions.
+
+p42
+00:02:23.834 --> 00:02:25.840
+A group is about who belongs together.
+
+p43
+00:02:26.308 --> 00:02:30.262
+Each group lists its description, its member count, and its locations.
+
+p44
+00:02:30.712 --> 00:02:34.121
+Some cover a single site, like the M-L-A-S staff group.
+
+p45
+00:02:34.683 --> 00:02:37.949
+Others span every location, like all cashiers.
+
+p46
+00:02:38.529 --> 00:02:41.516
+The locations column tells you a group's reach at a glance.
+
+p47
+00:02:41.920 --> 00:02:44.255
+One thing that isn't obvious on screen.
+
+p48
+00:02:45.096 --> 00:02:47.441
+Groups are how Maintenance work gets assigned.
+
+p49
+00:02:48.136 --> 00:02:51.632
+Route an issue to the detail team, and it reaches everyone in that group.
+
+p50
+00:02:52.352 --> 00:02:53.875
+So hold the split in your head: roles decide what a person can do,
+
+p51
+00:02:54.436 --> 00:02:59.585
+groups decide who the work lands on.
+
+p52
+00:03:00.000 --> 00:03:02.210
+Four pages, four questions.
+
+p53
+00:03:02.654 --> 00:03:05.179
+Schedules, for who works which days.
+
+p54
+00:03:05.743 --> 00:03:06.443
+Time Clock, for who's punched in right now.
+
+p55
+00:03:06.735 --> 00:03:08.369
+Roles, for what someone's allowed to do.
+
+p56
+00:03:09.101 --> 00:03:11.433
+Groups, for who belongs to which team.
+
+p57
+00:03:12.070 --> 00:03:14.538
+Every one is a list you read, never a screen you edit.
+
+p58
+00:03:15.000 --> 00:03:18.414
+Trust the tiles for the live count, read the rows for the detail,
+
+p59
+00:03:18.763 --> 00:03:24.529
+and leave the punches and schedules alone.
+

@@ -1,0 +1,552 @@
+{
+  "lesson": "WC-PB-12",
+  "audioMaster": "training/playbooks/WC-PB-12-full-narration-v1.0.mp3",
+  "audioDurationS": 256.209,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in Settings, under AI Agent, and open Conversations.",
+      "startS": 0,
+      "endS": 4.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the customer facing agent, the one your customers text and talk to.",
+      "startS": 4.816,
+      "endS": 8.868,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Not Ask Shyne in the header. That's a staff tool, and a different playbook.",
+      "startS": 9.088,
+      "endS": 10.663,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "The transcript is the ticket, so this log is always your first stop.",
+      "startS": 10.881,
+      "endS": 17.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Read the layout before you search.",
+      "startS": 18.4,
+      "endS": 20.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Six KPIs across the top cover thirty days.",
+      "startS": 21.369,
+      "endS": 24.435,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Below them, a table: customer, channel, topic, status, message count, sentiment.",
+      "startS": 24.83,
+      "endS": 26.026,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Today's demo tenant shows no conversations at all, while Analytics reports thousands.",
+      "startS": 26.478,
+      "endS": 30.641,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "That gap is a demo artifact. Trust this log only after it actually loads.",
+      "startS": 31.244,
+      "endS": 41.389,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Now narrow to the chat in question.",
+      "startS": 41.84,
+      "endS": 43.891,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Search or filter on the customer, the channel, or the topic.",
+      "startS": 43.891,
+      "endS": 47.499,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "The message count tells you how long the exchange dragged on,",
+      "startS": 47.499,
+      "endS": 51.09,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "and sentiment tells you how it felt.",
+      "startS": 51.09,
+      "endS": 53.141,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Opening the row gives you the full back and forth plus the conversation ID.",
+      "startS": 53.141,
+      "endS": 57.805,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "That ID rides along into your ticket.",
+      "startS": 57.805,
+      "endS": 59.856,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Next question: did it hand off when it should have? Click Escalations.",
+      "startS": 60.32,
+      "endS": 61.181,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Seven open, three claimed, one SLA breach.",
+      "startS": 61.586,
+      "endS": 63.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Average wait, six minutes and change.",
+      "startS": 63.524,
+      "endS": 64.8,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "This queue is where the agent admits it needs a human.",
+      "startS": 65.108,
+      "endS": 73.736,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "The reason column is the diagnostic.",
+      "startS": 74.16,
+      "endS": 76.411,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Negative sentiment on a billing dispute. A refund above the cap.",
+      "startS": 76.907,
+      "endS": 78.893,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "A customer asking for a manager. Eight turns with no resolution.",
+      "startS": 79.399,
+      "endS": 80.882,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Those are the guardrails, and a healthy agent trips them.",
+      "startS": 81.445,
+      "endS": 83.349,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "If your customer's chat sits here with a sensible reason, the agent behaved.",
+      "startS": 84.016,
+      "endS": 86.039,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "If it never showed up, that gap is the misbehavior you report.",
+      "startS": 86.607,
+      "endS": 98.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "So where does a handoff land?",
+      "startS": 99.28,
+      "endS": 100.962,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "In the C-R-M module, under Service Desk, open the Agent Console.",
+      "startS": 101.335,
+      "endS": 105.37,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "This is the human side of the escalation you just read.",
+      "startS": 105.668,
+      "endS": 108.409,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "A teammate sets themselves available and picks the case up right here.",
+      "startS": 108.618,
+      "endS": 112.362,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Look over the queue controls.",
+      "startS": 112.8,
+      "endS": 114.359,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Filters for mine, unassigned, team, and all. Channel chips.",
+      "startS": 114.925,
+      "endS": 118.211,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Sort by longest wait or by priority.",
+      "startS": 119.133,
+      "endS": 119.931,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Today the queue is empty, so the console panes stay blank.",
+      "startS": 120.374,
+      "endS": 122.848,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "That's fine. You came to confirm the intake exists, not to claim anything.",
+      "startS": 123.532,
+      "endS": 130.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Now chase the bad answer. Back in Settings, open the Knowledge Base.",
+      "startS": 131.12,
+      "endS": 132.897,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "These are the documents the agent searches before it answers a customer.",
+      "startS": 133.214,
+      "endS": 135.399,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "A wrong answer usually starts here, with an article that went stale or never existed at all.",
+      "startS": 135.776,
+      "endS": 144.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Read the table, not just the counts.",
+      "startS": 145.28,
+      "endS": 147.477,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Status tells you whether an article is indexed and searchable.",
+      "startS": 147.908,
+      "endS": 150.983,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Updated tells you how old it is.",
+      "startS": 151.322,
+      "endS": 153.228,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Search the topic the customer asked about,",
+      "startS": 153.774,
+      "endS": 157.21,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "and if nothing comes back, you have probably found your cause.",
+      "startS": 157.437,
+      "endS": 159.068,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Leave the add and re-index controls alone. Each one changes the index.",
+      "startS": 159.841,
+      "endS": 164.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Channel next. Open Channels and Deployment.",
+      "startS": 164.56,
+      "endS": 165.486,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Three channels, three of three live.",
+      "startS": 166.013,
+      "endS": 167.61,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "Thirty day uptime just shy of one hundred percent, latency around four hundred milliseconds.",
+      "startS": 168.354,
+      "endS": 169.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Healthy numbers up top. The story is in the cards below.",
+      "startS": 169.5,
+      "endS": 179.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "Read all three cards, and touch none of the test controls.",
+      "startS": 180.32,
+      "endS": 183.399,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Web chat is installed and live.",
+      "startS": 183.984,
+      "endS": 185.809,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "SMS is live, with stop and help handled automatically.",
+      "startS": 186.217,
+      "endS": 189.398,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "Voice is beta, and beta means rougher behavior is expected, so say so up front.",
+      "startS": 189.746,
+      "endS": 194.662,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "And that nighttime silence complaint? Quiet hours.",
+      "startS": 195.087,
+      "endS": 196.774,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "The overview page flags T-C-P-A quiet hours on for SMS.",
+      "startS": 197.207,
+      "endS": 198.128,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "The agent wasn't ignoring anyone. It was honoring the window.",
+      "startS": 198.62,
+      "endS": 206.613,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "One more page. Analytics.",
+      "startS": 207.04,
+      "endS": 209.581,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Thirty eight hundred conversations in thirty days,",
+      "startS": 209.581,
+      "endS": 212.71,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "and seventy eight percent never needed a human.",
+      "startS": 212.71,
+      "endS": 215.471,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "That is containment.",
+      "startS": 215.471,
+      "endS": 216.935,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "Web runs highest, voice lowest, which fits a beta channel.",
+      "startS": 216.935,
+      "endS": 221.224,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "A channel whose containment has slipped is real evidence the agent is struggling there,",
+      "startS": 221.224,
+      "endS": 226.622,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "and it belongs in your escalation.",
+      "startS": 226.622,
+      "endS": 228.693,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Now write the ticket and stop.",
+      "startS": 229.12,
+      "endS": 230.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "The conversation ID. The channel. The containment context.",
+      "startS": 231.769,
+      "endS": 233.041,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "Then the finding: a missing escalation row, a stale article,",
+      "startS": 233.572,
+      "endS": 234.305,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "or a channel state like voice beta or quiet hours.",
+      "startS": 234.94,
+      "endS": 236.346,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "You read six screens and changed nothing.",
+      "startS": 237.03,
+      "endS": 238.037,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "Configuration and knowledge edits happen upstream, with the right role.",
+      "startS": 238.519,
+      "endS": 239.956,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p68",
+      "text": "Your job was the diagnosis, and it's done.",
+      "startS": 240.33,
+      "endS": 255.737,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "lesson": "WC-02-06",
+  "audioMaster": "training/module02-crm/WC-02-06-full-narration-v1.0.mp3",
+  "audioDurationS": 179.644,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open CRM in the left rail.",
+      "startS": 0,
+      "endS": 1.788,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The sidebar stacks every kind of customer record: members, gift cards, house accounts,",
+      "startS": 2.504,
+      "endS": 5.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "and the four we cover today.",
+      "startS": 5.38,
+      "endS": 9.089,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "One page per record type.",
+      "startS": 9.772,
+      "endS": 11.215,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Learn where each one lives and you stop guessing which screen holds the answer.",
+      "startS": 11.806,
+      "endS": 15.593,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Click Prepaid Books.",
+      "startS": 16,
+      "endS": 17.392,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "A prepaid book is a stack of washes a customer already paid for.",
+      "startS": 17.896,
+      "endS": 21.63,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "The tiles up top count them: total, active, completed, and how many expire soon.",
+      "startS": 22.201,
+      "endS": 23.725,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "In today's capture those numbers were still loading,",
+      "startS": 24.201,
+      "endS": 27.965,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "but the labels tell you exactly what to read.",
+      "startS": 28.699,
+      "endS": 33.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Now the list itself.",
+      "startS": 34.32,
+      "endS": 35.608,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Six columns, and two do the work on a call:",
+      "startS": 36.643,
+      "endS": 39.382,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Remaining tells you washes left, Expiration tells you the deadline.",
+      "startS": 40.053,
+      "endS": 41.932,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "The rows failed to load in this capture,",
+      "startS": 42.424,
+      "endS": 44.282,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "so read the column headers and refresh live before you promise a customer anything.",
+      "startS": 45.116,
+      "endS": 51.765,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Click Vehicles.",
+      "startS": 52.306,
+      "endS": 53.685,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "This is the master plate list, nearly four thousand cars.",
+      "startS": 54.176,
+      "endS": 57.634,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "The tiles loaded here: total vehicles, active members, flagged, and new this month.",
+      "startS": 57.931,
+      "endS": 59.093,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "When a plate gets flagged at the gate, Flagged is your first stop.",
+      "startS": 59.606,
+      "endS": 67.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Scroll to the list.",
+      "startS": 67.831,
+      "endS": 68.821,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Seven columns: plate, make and model, year, customer, location, status, last visit.",
+      "startS": 69.32,
+      "endS": 70.862,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "For a dispute you want License Plate and Status.",
+      "startS": 71.304,
+      "endS": 72.133,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "The rows hit the same fetch error, but the tiles above prove the data is there.",
+      "startS": 72.451,
+      "endS": 72.944,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "It just didn't stream into the table.",
+      "startS": 73.484,
+      "endS": 86.925,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Click Retail Customers.",
+      "startS": 87.52,
+      "endS": 89.031,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "This one is bare on purpose.",
+      "startS": 89.993,
+      "endS": 91.853,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "No tiles, no charts, just a search box and five columns:",
+      "startS": 92.168,
+      "endS": 96.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "customer, plate, home location, email, phone.",
+      "startS": 96.932,
+      "endS": 100.465,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "It holds walk-ins and non-members, the people without a full membership record.",
+      "startS": 101.22,
+      "endS": 105.464,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Search, read the contact, done.",
+      "startS": 106.237,
+      "endS": 108.479,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Click Bundles.",
+      "startS": 108.88,
+      "endS": 109.884,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "A bundle is a packaged deal a site sells.",
+      "startS": 110.452,
+      "endS": 113.076,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "The tiles loaded: thirty-two bundles, twenty-eight active, and this month's sales and revenue.",
+      "startS": 113.368,
+      "endS": 114.423,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "The Revenue by Bundle panel ranks which packages actually move,",
+      "startS": 114.815,
+      "endS": 119.023,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "so you can see the Monthly Value Pack carrying the month.",
+      "startS": 119.606,
+      "endS": 126.561,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Now the list, and this one actually loaded.",
+      "startS": 127.094,
+      "endS": 127.864,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Seven columns, and five packages on screen,",
+      "startS": 128.121,
+      "endS": 129.487,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "from the Summer Special to the Fleet Pack built for fleets.",
+      "startS": 129.8,
+      "endS": 135.592,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Watch the Valid At column: some run at every site, others only at a couple.",
+      "startS": 136.236,
+      "endS": 140.65,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "That column settles most \"does this work at my location\" questions.",
+      "startS": 141.121,
+      "endS": 144.851,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "One more entry, Fundraiser, sits right below Bundles.",
+      "startS": 145.28,
+      "endS": 147.802,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Do not click it.",
+      "startS": 147.802,
+      "endS": 149.313,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Its link goes nowhere and the page was never built.",
+      "startS": 149.313,
+      "endS": 152.822,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "It is parked, so treat the menu item as a placeholder",
+      "startS": 152.822,
+      "endS": 156.692,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "and never promise a customer a fundraiser feature from this screen.",
+      "startS": 156.692,
+      "endS": 160.16,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "So, four lists, one sidebar.",
+      "startS": 160.56,
+      "endS": 162.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Prepaid Books for washes left and expiry.",
+      "startS": 163.424,
+      "endS": 166.143,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Vehicles for plates and flags.",
+      "startS": 166.449,
+      "endS": 168.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "Retail Customers for walk-ins.",
+      "startS": 168.367,
+      "endS": 170.484,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Bundles for what's on the menu and where.",
+      "startS": 170.846,
+      "endS": 172.947,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "Match the ticket to the list, open it, read the row.",
+      "startS": 173.415,
+      "endS": 175.008,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "That's the whole job on these four screens.",
+      "startS": 175.245,
+      "endS": 179.2,
+      "timing": "silence"
+    }
+  ]
+}

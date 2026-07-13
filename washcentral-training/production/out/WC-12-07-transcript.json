@@ -1,0 +1,568 @@
+{
+  "lesson": "WC-12-07",
+  "audioMaster": "training/module12-settings/WC-12-07-full-narration-v1.0.mp3",
+  "audioDurationS": 235.154,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Settings, and expand the Operations group.",
+      "startS": 0,
+      "endS": 3.055,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "These lists are the raw material for dropdowns all over the platform.",
+      "startS": 4.346,
+      "endS": 8.576,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "When a cashier reaches for a reason and it isn't there,",
+      "startS": 9.239,
+      "endS": 12.051,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "the fix lives on one of these pages, not in the register.",
+      "startS": 12.32,
+      "endS": 15.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Open Cancellation Reasons.",
+      "startS": 16.231,
+      "endS": 17.912,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Two columns here.",
+      "startS": 18.672,
+      "endS": 19.733,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "One names the reason, the other decides whether a cashier ever sees it.",
+      "startS": 20.064,
+      "endS": 21.262,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "That second column, Show on P-O-S, is the one to check first",
+      "startS": 21.524,
+      "endS": 24.594,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "when a reason exists but never shows up at the register.",
+      "startS": 25.36,
+      "endS": 32.466,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Look at the list body.",
+      "startS": 32.88,
+      "endS": 35.031,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Thirty-three reasons, loaded live.",
+      "startS": 35.031,
+      "endS": 36.267,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "The tiles above count thirty shown at the register and three kept hidden,",
+      "startS": 36.267,
+      "endS": 40.874,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "and the footer pages you through the full set.",
+      "startS": 40.874,
+      "endS": 44.681,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Those three hidden rows read No in the second column:",
+      "startS": 44.681,
+      "endS": 47.769,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "still on the books, invisible to the cashier.",
+      "startS": 47.769,
+      "endS": 50.24,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Now Refund Reasons.",
+      "startS": 50.64,
+      "endS": 52.359,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "One column, one job: it fills the reason picker on the refund screen.",
+      "startS": 52.802,
+      "endS": 54.527,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This tenant's list is genuinely empty, zero reasons,",
+      "startS": 54.959,
+      "endS": 57.331,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "with a note that the P-O-S database may not be configured yet.",
+      "startS": 57.88,
+      "endS": 65.381,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "That is a real empty state, not a load error.",
+      "startS": 65.704,
+      "endS": 68.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Rewash Reasons, same idea.",
+      "startS": 69.2,
+      "endS": 71.244,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "This is the list an attendant picks from when a car goes back through the wash.",
+      "startS": 71.87,
+      "endS": 75.678,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Twelve reasons live here, everything from bugs on the car to wheels not clean.",
+      "startS": 76.046,
+      "endS": 80.596,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Identical shape to refunds, just with its rows filled in.",
+      "startS": 80.965,
+      "endS": 84.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Two more, back to back.",
+      "startS": 84.945,
+      "endS": 86.151,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Event Types, then Transaction Types.",
+      "startS": 86.442,
+      "endS": 88.743,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "One classifies things that happen, the other classifies money that moves,",
+      "startS": 89.341,
+      "endS": 93.343,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "and reporting leans on both.",
+      "startS": 93.695,
+      "endS": 95.243,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "The layout never changes: a description column and a count.",
+      "startS": 95.877,
+      "endS": 99.166,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Issue Status Types.",
+      "startS": 99.742,
+      "endS": 100.77,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "This one loaded, so you can see the real values.",
+      "startS": 100.77,
+      "endS": 105.279,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Open, in progress, pending parts, resolved, closed.",
+      "startS": 105.279,
+      "endS": 107.678,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Those five are the stages an issue walks through,",
+      "startS": 107.678,
+      "endS": 111.351,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "and they're the same labels you'll meet on ticket records elsewhere.",
+      "startS": 111.351,
+      "endS": 115.12,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Switch groups, over to Automation.",
+      "startS": 115.52,
+      "endS": 117.565,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "This is where the background jobs live:",
+      "startS": 117.938,
+      "endS": 119.736,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "the scheduler, its parameters, and the mass text log.",
+      "startS": 120.085,
+      "endS": 123.139,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "User Levels sits here too, but that's a security page, and it's covered on its own.",
+      "startS": 123.508,
+      "endS": 127.98,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Open Task Scheduler.",
+      "startS": 128.459,
+      "endS": 129.374,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Read the tiles first.",
+      "startS": 129.374,
+      "endS": 131.236,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "They sum up the whole job list at a glance, and the one that earns your attention is Failed.",
+      "startS": 131.236,
+      "endS": 137.836,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "When someone says a job didn't run,",
+      "startS": 137.836,
+      "endS": 139.971,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "a non-zero Failed count is your fastest signal, before you open a single row.",
+      "startS": 139.971,
+      "endS": 144.24,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Now the list itself.",
+      "startS": 144.693,
+      "endS": 146.016,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Five columns tell you a job's name, its schedule, when it last ran,",
+      "startS": 146.638,
+      "endS": 148.809,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "when it runs next, and its status.",
+      "startS": 149.01,
+      "endS": 151.107,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "The daily report email is right here.",
+      "startS": 151.313,
+      "endS": 153.536,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "If it never arrived, read last run and status on that row before you blame the mailbox.",
+      "startS": 154.201,
+      "endS": 162,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Notice the new-record and filter controls.",
+      "startS": 162.463,
+      "endS": 165.031,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "You read this page.",
+      "startS": 165.493,
+      "endS": 166.564,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "You never edit a schedule, and you never run a task.",
+      "startS": 166.915,
+      "endS": 170.277,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "One quirk worth knowing: today the header claims eighteen tasks,",
+      "startS": 171.47,
+      "endS": 172.716,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "but only three rows actually rendered.",
+      "startS": 173.109,
+      "endS": 177.525,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "The rest we've parked.",
+      "startS": 177.853,
+      "endS": 179.138,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "Task Parameters.",
+      "startS": 179.665,
+      "endS": 180.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "These are the reusable inputs the jobs read when they run.",
+      "startS": 181.315,
+      "endS": 184.478,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "The updated-by and updated columns tell you who last changed one, and when,",
+      "startS": 184.756,
+      "endS": 189.329,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "which is exactly what you want the day a job starts behaving differently.",
+      "startS": 189.575,
+      "endS": 192.842,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "Rows are loading from the service.",
+      "startS": 193.803,
+      "endS": 195.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "Last page. Mass S-M-S Log.",
+      "startS": 196.96,
+      "endS": 197.913,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "This is the delivery record for mass texts.",
+      "startS": 198.374,
+      "endS": 200.124,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "When a customer swears they never got the message,",
+      "startS": 200.687,
+      "endS": 203.022,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "the status column is where you confirm whether it actually went out.",
+      "startS": 203.503,
+      "endS": 209.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "Same load error today, so the rows are pending.",
+      "startS": 209.761,
+      "endS": 212.345,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p65",
+      "text": "So, two groups, two kinds of ticket.",
+      "startS": 212.8,
+      "endS": 215.295,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "Operations feeds the dropdowns, so a missing reason ends there,",
+      "startS": 215.295,
+      "endS": 219.524,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "and Show on P-O-S decides what a cashier sees.",
+      "startS": 219.524,
+      "endS": 223.091,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "Automation runs the jobs, so a report that never came",
+      "startS": 223.091,
+      "endS": 227.304,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "starts at the scheduler's last run and status.",
+      "startS": 227.304,
+      "endS": 230.659,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "Learn which page owns which question, and the triage answers itself.",
+      "startS": 230.659,
+      "endS": 234.58,
+      "timing": "proportional"
+    }
+  ]
+}

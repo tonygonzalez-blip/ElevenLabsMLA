@@ -1,0 +1,2488 @@
+{
+  "lesson": "WC-07-01",
+  "title": "Employees (Team)",
+  "audioMaster": "training/module07-team/WC-07-01-full-narration-v1.0.mp3",
+  "audioDurationS": 253.727,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/emp-employees.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumb-bar strong, .breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "metricsStrip": {
+      "js": "[...document.querySelectorAll('.a-metrics')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalEmployees": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Total Employees'&&e.getBoundingClientRect().width>0)"
+    },
+    "tileActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Active'&&e.getBoundingClientRect().width>0)"
+    },
+    "tileFullTime": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Full Time'&&e.getBoundingClientRect().width>0)"
+    },
+    "tilePartTime": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Part Time'&&e.getBoundingClientRect().width>0)"
+    },
+    "cardHeadcount": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Headcount Growth/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardByLocation": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/By Location/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "cardEmploymentType": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Employment Type/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/EMPLOYEES · STAFF DIRECTORY/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Employee List'&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a')].find(e=>/\\+ ?New Record/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thEmployee": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Employee$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPhone": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Phone$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thHireDate": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Hire Date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thType": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Location$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowJose": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Jose Martinez/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row2": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Lisa Nguyen/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row3": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Kevin Davis/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row4": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Maria Smith/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row5": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Tyler Johnson/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "selector": "#emp-employees-search"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "pager": {
+      "selector": ".pg-info"
+    },
+    "empName": {
+      "js": "document.querySelector('span.a-name')",
+      "textRect": true
+    },
+    "metaId": {
+      "js": "[...document.querySelectorAll('.a-meta-id')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "roleBadge": {
+      "js": "[...document.querySelectorAll('.a-plan-badge')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "chipEmployees": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').trim()==='Employees'&&e.getBoundingClientRect().width>0)"
+    },
+    "chipOperations": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').trim()==='Operations'&&e.getBoundingClientRect().width>0)"
+    },
+    "chipActive": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').trim()==='Active'&&e.getBoundingClientRect().width>0)"
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('a')].find(e=>(e.textContent||'').trim()==='← Back'&&e.getBoundingClientRect().width>0)"
+    },
+    "deleteBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Delete'&&e.getBoundingClientRect().width>0)"
+    },
+    "editBtn": {
+      "js": "[...document.querySelectorAll('a')].find(e=>(e.textContent||'').trim()==='Edit Employee'&&e.getBoundingClientRect().width>0)"
+    },
+    "mTenure": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Tenure'&&e.getBoundingClientRect().width>0)"
+    },
+    "mHours": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Hours This Month'&&e.getBoundingClientRect().width>0)"
+    },
+    "mAttendance": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Attendance Rate'&&e.getBoundingClientRect().width>0)"
+    },
+    "mStatus": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Status'&&e.getBoundingClientRect().width>0)"
+    },
+    "mPerformance": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>((e.querySelector('.a-metric-lbl')||{}).textContent||'').trim()==='Performance'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabNav": {
+      "selector": ".a-tab-nav"
+    },
+    "tabOverview": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Overview'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabPersonal": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Personal Info'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabEmployment": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Employment'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabSchedule": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Schedule'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabEmergency": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Emergency Contact'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabNotes": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Notes & Audit'&&e.getBoundingClientRect().width>0)"
+    },
+    "tabTraining": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Training'&&e.getBoundingClientRect().width>0)"
+    },
+    "panelMonthlyHours": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Monthly Hours Worked/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelHoursBreakdown": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Hours Breakdown/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelAttendance": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Attendance Rate/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelEarnings": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Monthly Earnings/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelPerformance": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Performance Score Trend/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "groupHdr": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "assignCourse": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/Assign Course/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onList": "location.pathname.endsWith('/emp-employees.html')",
+    "onDetail": "location.pathname.endsWith('/emp-employees-detail.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "listLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr.row-link')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/emp-employees.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length===4&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length===3&&rows.length===5&&!!pi&&/of\\s*5\\s*records/.test(pi.textContent||'')&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)})()",
+    "detailLoaded": "(()=>{return location.pathname.endsWith('/emp-employees-detail.html')&&((document.querySelector('span.a-name')||{textContent:''}).textContent||'').trim()==='Jose Martinez'&&document.querySelectorAll('.a-metric').length===5&&document.querySelectorAll('.a-tab-btn').length===7&&[...document.querySelectorAll('a,button')].filter(e=>e.getBoundingClientRect().width>0&&/^(← Back|Delete|Edit Employee)$/.test((e.textContent||'').trim())).length===3&&!/Couldn.t load|Failed to fetch|404/i.test(document.body.textContent||'')})()",
+    "tabOverviewActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Overview'&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length===5",
+    "tabPersonalActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Personal Info'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Personal Information/.test(e.textContent||''))",
+    "tabEmploymentActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Employment'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Role & Classification/.test(e.textContent||''))",
+    "tabScheduleActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Schedule'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Current Week Schedule/.test(e.textContent||''))",
+    "tabEmergencyActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Emergency Contact'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Medical Information/.test(e.textContent||''))",
+    "tabNotesActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Notes & Audit'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Manager Notes/.test(e.textContent||''))",
+    "tabTrainingActive": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Training'&&[...document.querySelectorAll('a,button')].some(e=>/Assign Course/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the persisted shared sidebar preference expanded before the take (the rail panel toggle is the same control both ways; probe-verified July 11, aside width 220 when expanded on both the list and the detail shell). Skipped when already expanded. The Team rail lists the Employees group pages directly (no collapsible sub-group), so no group toggle is needed."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onList",
+      "note": "start page identity staged before capture (lesson opens on the Employees list)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.6,
+      "predicate": "listLoaded",
+      "note": "loaded: 4 KPI tiles, 3 insight cards, 5 row-link rows, 'of 5 records', no skeletons"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 252.5,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "the rail stays expanded across the row-click navigation and back (detail shell also carries the sidebar)",
+      "holdTolerance": 1
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        960,
+        1079
+      ],
+      "to": {
+        "target": "tileTotalEmployees",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 1: enter from the bottom edge as p01 'This is the team, on one page' opens"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.9,
+      "key": "stripRect",
+      "target": "metricsStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 1.1,
+      "key": "kpiTiles",
+      "targets": [
+        "tileTotalEmployees",
+        "tileActive",
+        "tileFullTime",
+        "tilePartTime"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.3,
+      "key": "cardHC",
+      "target": "cardHeadcount"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.5,
+      "key": "listTitleRect",
+      "target": "cardTitle"
+    },
+    {
+      "op": "move",
+      "at": 2.2,
+      "to": {
+        "target": "metricsStrip",
+        "offset": [
+          0,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 1: slow top-to-bottom sweep — the KPI band (p02 'Headcount up top')"
+    },
+    {
+      "op": "move",
+      "at": 4.8,
+      "to": {
+        "target": "cardHeadcount",
+        "offset": [
+          180,
+          40
+        ]
+      },
+      "note": "step 1: the insight-cards band ('a few charts')"
+    },
+    {
+      "op": "move",
+      "at": 7.4,
+      "to": {
+        "target": "cardTitle",
+        "offset": [
+          40,
+          30
+        ]
+      },
+      "note": "step 1: the directory band ('then the directory')"
+    },
+    {
+      "op": "move",
+      "at": 9.4,
+      "to": {
+        "point": [
+          960,
+          620
+        ]
+      },
+      "note": "ease off for the s01 tail"
+    },
+    {
+      "op": "move",
+      "at": 10.9,
+      "to": {
+        "target": "tileTotalEmployees",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 cue p04 'Start with the four tiles'"
+    },
+    {
+      "op": "move",
+      "at": 15.2,
+      "to": {
+        "target": "tileTotalEmployees",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2: name the tiles left to right on p06"
+    },
+    {
+      "op": "move",
+      "at": 16.6,
+      "to": {
+        "target": "tileActive",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 17.9,
+      "to": {
+        "target": "tileFullTime",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 19.2,
+      "to": {
+        "target": "tilePartTime",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 21.5,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "ease off the strip for the p07 tail"
+    },
+    {
+      "op": "move",
+      "at": 24.5,
+      "to": {
+        "target": "cardHeadcount",
+        "offset": [
+          140,
+          60
+        ]
+      },
+      "note": "step 3 cue p08 'Now the charts'"
+    },
+    {
+      "op": "move",
+      "at": 26.1,
+      "to": {
+        "target": "cardHeadcount",
+        "offset": [
+          140,
+          60
+        ]
+      },
+      "note": "step 3: rest on Headcount Growth (p09 '...trending up')"
+    },
+    {
+      "op": "move",
+      "at": 33.5,
+      "to": {
+        "point": [
+          590,
+          400
+        ]
+      },
+      "note": "ease off the left card for the s03 tail"
+    },
+    {
+      "op": "move",
+      "at": 38.1,
+      "to": {
+        "target": "cardByLocation",
+        "offset": [
+          140,
+          60
+        ]
+      },
+      "note": "step 4 cue p12 'The middle chart splits your people by site'"
+    },
+    {
+      "op": "move",
+      "at": 45.5,
+      "to": {
+        "point": [
+          1117,
+          400
+        ]
+      },
+      "note": "ease off for the s04 tail"
+    },
+    {
+      "op": "move",
+      "at": 50,
+      "to": {
+        "target": "cardEmploymentType",
+        "offset": [
+          140,
+          60
+        ]
+      },
+      "note": "step 5 cue p15 'Third chart, same crew, different cut'"
+    },
+    {
+      "op": "move",
+      "at": 58.5,
+      "to": {
+        "point": [
+          1400,
+          420
+        ]
+      },
+      "note": "ease off for the s05 tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 62,
+      "key": "listBtns",
+      "targets": [
+        "exportBtn",
+        "newRecordBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 62.2,
+      "to": {
+        "target": "cardTitle",
+        "offset": [
+          30,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 6 cue p18 'Down to the directory' — the Employee List header"
+    },
+    {
+      "op": "move",
+      "at": 64.1,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -46,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 6 guardrail: beside Export while p19-p20 name it — pointed at, never clicked (download action)"
+    },
+    {
+      "op": "move",
+      "at": 66.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -58,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 6 guardrail: beside + New Record ('one starts a new hire') — pointed at, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 70.6,
+      "to": {
+        "point": [
+          1400,
+          470
+        ]
+      },
+      "note": "step 6: pull away on p21 'leave them where they are'"
+    },
+    {
+      "op": "log-rects",
+      "at": 73.1,
+      "key": "ths",
+      "targets": [
+        "thEmployee",
+        "thPhone",
+        "thHireDate",
+        "thType",
+        "thStatus",
+        "thLocation"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 73.2,
+      "key": "rowJoseRect",
+      "target": "rowJose"
+    },
+    {
+      "op": "move",
+      "at": 73.5,
+      "to": {
+        "target": "thEmployee",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 7 cue p22 'Read the column headers'"
+    },
+    {
+      "op": "move",
+      "at": 75.1,
+      "to": {
+        "target": "thEmployee",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7: header sweep in spoken order on p23"
+    },
+    {
+      "op": "move",
+      "at": 75.9,
+      "to": {
+        "target": "thPhone",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 76.5,
+      "to": {
+        "target": "thHireDate",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 77.1,
+      "to": {
+        "target": "thType",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 77.7,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 78.3,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 79.5,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          90,
+          0
+        ]
+      },
+      "note": "step 7: to the EMPLOYEE cell (avatar + name + role chip) for p24-p26 'the name cell doubles as a badge'"
+    },
+    {
+      "op": "move",
+      "at": 86,
+      "to": {
+        "point": [
+          900,
+          640
+        ]
+      },
+      "note": "ease off for the p26 tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 89.6,
+      "key": "rowsChips",
+      "targets": [
+        "rowJose",
+        "row2",
+        "row3",
+        "row4",
+        "row5"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 89.9,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          160,
+          0
+        ]
+      },
+      "note": "step 8 cue p27 'Look at one row'"
+    },
+    {
+      "op": "move",
+      "at": 91.6,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          420,
+          0
+        ]
+      },
+      "note": "step 8: across the row cells on p28 (type, status, location)"
+    },
+    {
+      "op": "move",
+      "at": 93,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          1120,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 94.8,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          160,
+          0
+        ]
+      },
+      "note": "step 8: down the role chips on p29 'Run your eye down the role chips'"
+    },
+    {
+      "op": "move",
+      "at": 96.3,
+      "to": {
+        "target": "row2",
+        "offset": [
+          160,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 97.2,
+      "to": {
+        "target": "row3",
+        "offset": [
+          160,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 98.1,
+      "to": {
+        "target": "row4",
+        "offset": [
+          160,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 99,
+      "to": {
+        "target": "row5",
+        "offset": [
+          160,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 100.6,
+      "to": {
+        "point": [
+          900,
+          700
+        ]
+      },
+      "note": "ease off for the p30 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 101.7,
+      "key": "searchRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 101.85,
+      "key": "filtersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 102,
+      "key": "pagerRect",
+      "target": "pager"
+    },
+    {
+      "op": "move",
+      "at": 102.1,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "step 9 cue p31 'On a real site the roster runs long'"
+    },
+    {
+      "op": "move",
+      "at": 104.7,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "step 9: the Search employees box on p32 — located, never typed in"
+    },
+    {
+      "op": "move",
+      "at": 106,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 9: Filters ▾ ('search box and filters are for')"
+    },
+    {
+      "op": "move",
+      "at": 107.2,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "step 9: p33 'type a name, narrow the list'"
+    },
+    {
+      "op": "move",
+      "at": 110.4,
+      "to": {
+        "target": "pager",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "step 9: the pager 'Showing 1–5 of 5 records' on p34"
+    },
+    {
+      "op": "move",
+      "at": 113.4,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          -1000,
+          0
+        ]
+      },
+      "note": "step 10: stage beside the first row so the approach starts at the cue, not before"
+    },
+    {
+      "op": "move",
+      "at": 114.7,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          -1000,
+          0
+        ]
+      },
+      "note": "step 10 cue p35 'Click a name to open the record' — approach the Jose Martinez row"
+    },
+    {
+      "op": "click",
+      "target": "rowJose",
+      "pressAt": 116.2,
+      "hoverMs": 380,
+      "postcondition": "onDetail",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: genuine row click (tr.row-link, cursor:pointer — probe-verified navigation to emp-employees-detail.html; the direct URL 404s, loads only from this click). Press lands in the break after the p35 cue (voiced end 116.20) so the record is up as p36 'the list becomes a person' plays (116.55). Read-only navigation; nothing is created or edited."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "detStable",
+      "predicate": "detailLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 116.55,
+      "key": "empNameRect",
+      "target": "empName"
+    },
+    {
+      "op": "log-rect",
+      "at": 116.65,
+      "key": "roleBadgeRect",
+      "target": "roleBadge"
+    },
+    {
+      "op": "log-rects",
+      "at": 116.75,
+      "key": "detBtns",
+      "targets": [
+        "backBtn",
+        "deleteBtn",
+        "editBtn"
+      ]
+    },
+    {
+      "op": "assert",
+      "at": 116.9,
+      "predicate": "detailLoaded",
+      "note": "record up: Jose Martinez header, 5-tile metric band, 7 tabs, and the ← Back / Delete / Edit Employee trio; not the 404/error state"
+    },
+    {
+      "op": "assert",
+      "at": 117,
+      "predicate": "tabOverviewActive",
+      "note": "Overview is the default landing tab"
+    },
+    {
+      "op": "log-rects",
+      "at": 117.15,
+      "key": "mBand",
+      "targets": [
+        "mTenure",
+        "mHours",
+        "mAttendance",
+        "mStatus",
+        "mPerformance"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 117.3,
+      "key": "tabNavRect",
+      "target": "tabNav"
+    },
+    {
+      "op": "log-rects",
+      "at": 117.45,
+      "key": "detTabs",
+      "targets": [
+        "tabOverview",
+        "tabPersonal",
+        "tabEmployment",
+        "tabSchedule",
+        "tabEmergency",
+        "tabNotes",
+        "tabTraining"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "detailHeld",
+      "from": 118,
+      "to": 229.5,
+      "predicate": "onDetail",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "guardrail: the record stays put through steps 10-14 — proves Delete/Edit Employee/Assign Course were never triggered (all tab clicks are same-page)"
+    },
+    {
+      "op": "move",
+      "at": 117.6,
+      "to": {
+        "target": "empName",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 10: under the header name as p36 lands"
+    },
+    {
+      "op": "move",
+      "at": 119.4,
+      "to": {
+        "target": "roleBadge",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 10: p37 'a role chip, his site, and his employment type'"
+    },
+    {
+      "op": "move",
+      "at": 123.8,
+      "to": {
+        "target": "backBtn",
+        "offset": [
+          -46,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 10: p38 'Three buttons sit beside it, and Back is the only one we touch' — beside ← Back"
+    },
+    {
+      "op": "move",
+      "at": 125.2,
+      "to": {
+        "target": "deleteBtn",
+        "offset": [
+          2,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 10 guardrail: beside Delete — pointed at, never clicked (destructive, live shared tenant)"
+    },
+    {
+      "op": "move",
+      "at": 126.3,
+      "to": {
+        "target": "editBtn",
+        "offset": [
+          0,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 10 guardrail: beside Edit Employee — pointed at, never clicked (editing is its own approved workflow)"
+    },
+    {
+      "op": "move",
+      "at": 127.8,
+      "to": {
+        "target": "mTenure",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10: p39-p40 'five tiles size him up fast' — the metric band"
+    },
+    {
+      "op": "move",
+      "at": 130.5,
+      "to": {
+        "target": "mHours",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 132.5,
+      "to": {
+        "target": "mAttendance",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10: p41 'attendance above ninety seven percent'"
+    },
+    {
+      "op": "move",
+      "at": 134.2,
+      "to": {
+        "target": "mPerformance",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'a performance score of four point six'"
+    },
+    {
+      "op": "move",
+      "at": 136.3,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "ease off before the tab bar"
+    },
+    {
+      "op": "move",
+      "at": 138.5,
+      "to": {
+        "target": "tabNav",
+        "offset": [
+          -700,
+          0
+        ]
+      },
+      "note": "step 11 cue p42 'Look across the top of the file'"
+    },
+    {
+      "op": "move",
+      "at": 140.4,
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: name the seven tabs in spoken order on p43-p44"
+    },
+    {
+      "op": "move",
+      "at": 141,
+      "to": {
+        "target": "tabPersonal",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 141.4,
+      "to": {
+        "target": "tabEmployment",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 141.8,
+      "to": {
+        "target": "tabSchedule",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 142.1,
+      "to": {
+        "target": "tabEmergency",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 142.6,
+      "to": {
+        "target": "tabNotes",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 143.2,
+      "to": {
+        "target": "tabTraining",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 144.1,
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: back to the active first tab on p45 'you land in the first one'"
+    },
+    {
+      "op": "move",
+      "at": 146,
+      "to": {
+        "point": [
+          960,
+          360
+        ]
+      },
+      "note": "ease off for the p46 WashAssist note"
+    },
+    {
+      "op": "assert",
+      "at": 160.4,
+      "predicate": "tabOverviewActive",
+      "note": "step 12 reads the default Overview tab; still active (never switched during step 11)"
+    },
+    {
+      "op": "log-rects",
+      "at": 160.6,
+      "key": "detPanels",
+      "targets": [
+        "panelMonthlyHours",
+        "panelHoursBreakdown",
+        "panelAttendance",
+        "panelEarnings",
+        "panelPerformance"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 162.3,
+      "to": {
+        "target": "panelMonthlyHours",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 12: p48 'five panels deep'"
+    },
+    {
+      "op": "move",
+      "at": 166.2,
+      "to": {
+        "target": "panelMonthlyHours",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 12: sweep the five panels in spoken order — p49 hours"
+    },
+    {
+      "op": "move",
+      "at": 168,
+      "to": {
+        "target": "panelHoursBreakdown",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "p50 the split"
+    },
+    {
+      "op": "move",
+      "at": 172.5,
+      "to": {
+        "target": "panelAttendance",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "p51 attendance"
+    },
+    {
+      "op": "move",
+      "at": 176.8,
+      "to": {
+        "target": "panelEarnings",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "p52 earnings"
+    },
+    {
+      "op": "move",
+      "at": 180.4,
+      "to": {
+        "target": "panelPerformance",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 12: p53 the review trend — Performance Score Trend panel (zoom-in per shot list)"
+    },
+    {
+      "op": "move",
+      "at": 184.3,
+      "to": {
+        "target": "panelPerformance",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "hold for p54 'this one tab answers it'"
+    },
+    {
+      "op": "move",
+      "at": 187,
+      "to": {
+        "point": [
+          960,
+          400
+        ]
+      },
+      "note": "ease off before the deeper tabs"
+    },
+    {
+      "op": "move",
+      "at": 188.5,
+      "to": {
+        "target": "tabPersonal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13 cue p55 'Six more tabs sit beside Overview' — approach Personal Info"
+    },
+    {
+      "op": "click",
+      "target": "tabPersonal",
+      "pressAt": 192.5,
+      "hoverMs": 340,
+      "postcondition": "tabPersonalActive",
+      "timeoutMs": 4000,
+      "note": "step 13: genuine same-page tab switch (probe-verified: path stays on emp-employees-detail.html). Press in the p56 break so PERSONAL INFORMATION is up for p57"
+    },
+    {
+      "op": "assert",
+      "at": 193.1,
+      "predicate": "tabPersonalActive",
+      "note": "Personal Information + Address panels; SSN shown masked (never exposed)"
+    },
+    {
+      "op": "move",
+      "at": 193.5,
+      "to": {
+        "target": "groupHdr",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 13: under the PERSONAL INFORMATION heading on p57 'identity and address, with the social masked'"
+    },
+    {
+      "op": "move",
+      "at": 196.4,
+      "to": {
+        "target": "tabEmployment",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13: approach Employment"
+    },
+    {
+      "op": "click",
+      "target": "tabEmployment",
+      "pressAt": 196.9,
+      "hoverMs": 300,
+      "postcondition": "tabEmploymentActive",
+      "timeoutMs": 4000,
+      "note": "step 13: same-page tab switch; up for p58"
+    },
+    {
+      "op": "assert",
+      "at": 197.5,
+      "predicate": "tabEmploymentActive",
+      "note": "Role & Classification / Assignment & Reporting / Benefits & Entitlements"
+    },
+    {
+      "op": "move",
+      "at": 197.9,
+      "to": {
+        "target": "groupHdr",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 13: p58 'role, pay, reporting line, and benefits'"
+    },
+    {
+      "op": "move",
+      "at": 200.6,
+      "to": {
+        "target": "tabSchedule",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13: approach Schedule"
+    },
+    {
+      "op": "click",
+      "target": "tabSchedule",
+      "pressAt": 201,
+      "hoverMs": 300,
+      "postcondition": "tabScheduleActive",
+      "timeoutMs": 4000,
+      "note": "step 13: same-page tab switch; up for p59. TIME CLOCK punches are read-only — never edited"
+    },
+    {
+      "op": "assert",
+      "at": 201.6,
+      "predicate": "tabScheduleActive",
+      "note": "Current Week Schedule + Time Clock recent punches"
+    },
+    {
+      "op": "move",
+      "at": 202,
+      "to": {
+        "target": "groupHdr",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 13: p59 'the current week with recent time clock punches'"
+    },
+    {
+      "op": "move",
+      "at": 204.3,
+      "to": {
+        "target": "tabEmergency",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13: approach Emergency Contact"
+    },
+    {
+      "op": "click",
+      "target": "tabEmergency",
+      "pressAt": 204.7,
+      "hoverMs": 300,
+      "postcondition": "tabEmergencyActive",
+      "timeoutMs": 4000,
+      "note": "step 13: same-page tab switch; up for p60. Contact/medical values are never pointed at or exposed"
+    },
+    {
+      "op": "assert",
+      "at": 205.3,
+      "predicate": "tabEmergencyActive",
+      "note": "Emergency Contact + Medical Information"
+    },
+    {
+      "op": "move",
+      "at": 205.7,
+      "to": {
+        "target": "groupHdr",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 13: p60 'the medical basics'"
+    },
+    {
+      "op": "move",
+      "at": 207.3,
+      "to": {
+        "target": "tabNotes",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13: approach Notes & Audit"
+    },
+    {
+      "op": "click",
+      "target": "tabNotes",
+      "pressAt": 207.7,
+      "hoverMs": 300,
+      "postcondition": "tabNotesActive",
+      "timeoutMs": 4000,
+      "note": "step 13: same-page tab switch; up for p61"
+    },
+    {
+      "op": "assert",
+      "at": 208.3,
+      "predicate": "tabNotesActive",
+      "note": "Manager Notes + Audit Trail"
+    },
+    {
+      "op": "move",
+      "at": 208.7,
+      "to": {
+        "target": "groupHdr",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 13: p61 'a dated trail of every change to the record'"
+    },
+    {
+      "op": "move",
+      "at": 211.4,
+      "to": {
+        "target": "tabTraining",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13: approach Training"
+    },
+    {
+      "op": "click",
+      "target": "tabTraining",
+      "pressAt": 211.8,
+      "hoverMs": 300,
+      "postcondition": "tabTrainingActive",
+      "timeoutMs": 4000,
+      "note": "step 13: same-page tab switch; up for p62"
+    },
+    {
+      "op": "assert",
+      "at": 212.4,
+      "predicate": "tabTrainingActive",
+      "note": "Training Progress + Learning Paths + Enrolled Courses; the Assign Course button is present"
+    },
+    {
+      "op": "log-rect",
+      "at": 212.5,
+      "key": "assignRect",
+      "target": "assignCourse"
+    },
+    {
+      "op": "move",
+      "at": 212.9,
+      "to": {
+        "target": "assignCourse",
+        "offset": [
+          -58,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 13 guardrail: beside Assign Course while p62 says 'an assign button we leave alone' — pointed at, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 215.6,
+      "to": {
+        "point": [
+          960,
+          700
+        ]
+      },
+      "note": "ease off for the s13 tail"
+    },
+    {
+      "op": "move",
+      "at": 217.5,
+      "to": {
+        "target": "empName",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 14 cue p63 'One rule holds this whole lesson' — gesture across the record"
+    },
+    {
+      "op": "move",
+      "at": 224.7,
+      "to": {
+        "target": "editBtn",
+        "offset": [
+          0,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 14 guardrail: back beside Edit Employee on p65 'Editing a person is a real workflow' — never clicked"
+    },
+    {
+      "op": "move",
+      "at": 229.9,
+      "to": {
+        "target": "backBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14 cue p66 'So click Back' — approach ← Back, the only control we press on the record"
+    },
+    {
+      "op": "click",
+      "target": "backBtn",
+      "pressAt": 231,
+      "hoverMs": 380,
+      "postcondition": "onList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 14: genuine ← Back click (a href=emp-employees.html; full navigation — probe-verified return with 5 rows). Press in the p66 break so the list is back when p67 'The list returns' plays (232.09). Nothing was created, edited, or deleted."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "backStable",
+      "predicate": "listLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 231.9,
+      "predicate": "onList",
+      "note": "returned to the Employee List"
+    },
+    {
+      "op": "assert",
+      "at": 232,
+      "predicate": "listLoaded",
+      "note": "list intact: same KPIs, cards, 5 rows, 'of 5 records' — record untouched"
+    },
+    {
+      "op": "log-rect",
+      "at": 232.2,
+      "key": "bcListRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 232.4,
+      "to": {
+        "target": "bcStrong",
+        "offset": [
+          40,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 14: under the Employees breadcrumb on p67 'the record sits exactly as you found it'"
+    },
+    {
+      "op": "move",
+      "at": 234.6,
+      "to": {
+        "point": [
+          960,
+          540
+        ]
+      },
+      "note": "ease off before the recap"
+    },
+    {
+      "op": "move",
+      "at": 235.9,
+      "to": {
+        "target": "metricsStrip",
+        "offset": [
+          0,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 15 cue p68 'So that's the Employees page' — recap sweep from the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 238.2,
+      "to": {
+        "target": "cardHeadcount",
+        "offset": [
+          160,
+          40
+        ]
+      },
+      "note": "step 15: p69 'headcount, a few charts, and a table you can search'"
+    },
+    {
+      "op": "move",
+      "at": 240,
+      "to": {
+        "target": "thEmployee",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: down to the directory table"
+    },
+    {
+      "op": "move",
+      "at": 241,
+      "to": {
+        "target": "rowJose",
+        "offset": [
+          -1000,
+          0
+        ]
+      },
+      "note": "step 15: p70 'Behind any name, a seven-tab file with Overview as its home'"
+    },
+    {
+      "op": "move",
+      "at": 244,
+      "to": {
+        "point": [
+          1560,
+          930
+        ]
+      },
+      "note": "final park, clear of content and captions, through p71-p72"
+    },
+    {
+      "op": "assert",
+      "at": 252.5,
+      "predicate": "onList",
+      "note": "closes on the Employee List, nothing changed"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "stripRect",
+        "place": "below-left",
+        "from": 1.1,
+        "to": 9.6
+      },
+      {
+        "n": 2,
+        "anchor": "stripRect",
+        "place": "below-left",
+        "from": 11,
+        "to": 23.4
+      },
+      {
+        "n": 3,
+        "anchor": "cardHC",
+        "place": "below-left",
+        "from": 24.6,
+        "to": 37.6
+      },
+      {
+        "n": 4,
+        "anchor": "cardHC",
+        "place": "below-left",
+        "from": 38.1,
+        "to": 49.5,
+        "note": "anchored to the logged Headcount card row rect; badge sits over the middle card during step 4"
+      },
+      {
+        "n": 5,
+        "anchor": "cardHC",
+        "place": "below-left",
+        "from": 50,
+        "to": 61.7,
+        "note": "anchored to the logged card row; badge sits over the Employment Type card during step 5"
+      },
+      {
+        "n": 6,
+        "anchor": "listTitleRect",
+        "place": "right",
+        "from": 62.2,
+        "to": 72.6
+      },
+      {
+        "n": 7,
+        "anchor": "ths.thEmployee",
+        "place": "below-left",
+        "from": 73.5,
+        "to": 88.9
+      },
+      {
+        "n": 8,
+        "anchor": "rowJoseRect",
+        "place": "left",
+        "from": 89.9,
+        "to": 100.4
+      },
+      {
+        "n": 9,
+        "anchor": "searchRect",
+        "place": "left-top",
+        "from": 102.1,
+        "to": 113.9
+      },
+      {
+        "n": 10,
+        "anchor": "empNameRect",
+        "place": "below-left",
+        "from": 117,
+        "to": 135.9
+      },
+      {
+        "n": 11,
+        "anchor": "tabNavRect",
+        "place": "below-left",
+        "from": 138.5,
+        "to": 159.7
+      },
+      {
+        "n": 12,
+        "anchor": "detPanels.panelPerformance",
+        "place": "left-top",
+        "from": 160.6,
+        "to": 187.6
+      },
+      {
+        "n": 13,
+        "anchor": "tabNavRect",
+        "place": "below-left",
+        "from": 188.5,
+        "to": 216.7
+      },
+      {
+        "n": 14,
+        "anchor": "detBtns.backBtn",
+        "place": "below-left",
+        "from": 217.5,
+        "to": 234.4
+      },
+      {
+        "n": 15,
+        "anchor": "stripRect",
+        "place": "below-left",
+        "from": 235.9,
+        "to": 250.5
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "kpiTiles.tileTotalEmployees",
+        "from": 15.2,
+        "to": 16.6,
+        "note": "step 2 tiles named in order (p06)"
+      },
+      {
+        "anchor": "kpiTiles.tileActive",
+        "from": 16.6,
+        "to": 17.9
+      },
+      {
+        "anchor": "kpiTiles.tileFullTime",
+        "from": 17.9,
+        "to": 19.2
+      },
+      {
+        "anchor": "kpiTiles.tilePartTime",
+        "from": 19.2,
+        "to": 21
+      },
+      {
+        "anchor": "cardHC",
+        "from": 26.1,
+        "to": 33.3,
+        "note": "step 3 Headcount Growth (p09)"
+      },
+      {
+        "anchor": "listBtns.exportBtn",
+        "from": 64.1,
+        "to": 66.3,
+        "color": "#dc2626",
+        "note": "step 6 do-not-click ring: Export is a data-download (p20)"
+      },
+      {
+        "anchor": "listBtns.newRecordBtn",
+        "from": 66.4,
+        "to": 70.5,
+        "color": "#dc2626",
+        "note": "step 6 do-not-click ring: + New Record creates a person (p20-p21)"
+      },
+      {
+        "anchor": "ths.thEmployee",
+        "from": 75.1,
+        "to": 75.9,
+        "note": "step 7 header sweep in spoken order (p23)"
+      },
+      {
+        "anchor": "ths.thPhone",
+        "from": 75.9,
+        "to": 76.5
+      },
+      {
+        "anchor": "ths.thHireDate",
+        "from": 76.5,
+        "to": 77.1
+      },
+      {
+        "anchor": "ths.thType",
+        "from": 77.1,
+        "to": 77.7
+      },
+      {
+        "anchor": "ths.thStatus",
+        "from": 77.7,
+        "to": 78.3
+      },
+      {
+        "anchor": "ths.thLocation",
+        "from": 78.3,
+        "to": 79.4
+      },
+      {
+        "anchor": "rowJoseRect",
+        "from": 79.5,
+        "to": 85.8,
+        "note": "step 7 the EMPLOYEE cell doubles as a badge (p24-p26)"
+      },
+      {
+        "anchor": "rowsChips.rowJose",
+        "from": 94.8,
+        "to": 96.3,
+        "note": "step 8 role chips down the table (p29)"
+      },
+      {
+        "anchor": "rowsChips.row2",
+        "from": 96.3,
+        "to": 97.2
+      },
+      {
+        "anchor": "rowsChips.row3",
+        "from": 97.2,
+        "to": 98.1
+      },
+      {
+        "anchor": "rowsChips.row4",
+        "from": 98.1,
+        "to": 99
+      },
+      {
+        "anchor": "rowsChips.row5",
+        "from": 99,
+        "to": 100.2
+      },
+      {
+        "anchor": "searchRect",
+        "from": 104.7,
+        "to": 106,
+        "note": "step 9 search box (p32) — never typed in"
+      },
+      {
+        "anchor": "filtersRect",
+        "from": 106,
+        "to": 107.1,
+        "note": "step 9 Filters (located, not opened)"
+      },
+      {
+        "anchor": "pagerRect",
+        "from": 110.4,
+        "to": 113.8,
+        "note": "step 9 pager 'Showing 1–5 of 5 records' (p34)"
+      },
+      {
+        "anchor": "detBtns.backBtn",
+        "from": 123.8,
+        "to": 125.1,
+        "note": "step 10 Back is the only one we touch (p38)"
+      },
+      {
+        "anchor": "detBtns.deleteBtn",
+        "from": 125.2,
+        "to": 126.2,
+        "color": "#dc2626",
+        "note": "step 10 do-not-click ring: Delete on a live shared tenant"
+      },
+      {
+        "anchor": "detBtns.editBtn",
+        "from": 126.3,
+        "to": 127.6,
+        "color": "#dc2626",
+        "note": "step 10 do-not-click ring: Edit Employee (its own workflow)"
+      },
+      {
+        "anchor": "mBand.mTenure",
+        "from": 127.8,
+        "to": 130.5,
+        "note": "step 10 five metric tiles (p39-p40)"
+      },
+      {
+        "anchor": "mBand.mHours",
+        "from": 130.5,
+        "to": 132.5
+      },
+      {
+        "anchor": "mBand.mAttendance",
+        "from": 132.5,
+        "to": 134.2,
+        "note": "p41 attendance"
+      },
+      {
+        "anchor": "mBand.mPerformance",
+        "from": 134.2,
+        "to": 136.1,
+        "note": "p41 performance 4.6"
+      },
+      {
+        "anchor": "detTabs.tabOverview",
+        "from": 140.4,
+        "to": 141,
+        "note": "step 11 seven tabs named in order (p43-p44)"
+      },
+      {
+        "anchor": "detTabs.tabPersonal",
+        "from": 141,
+        "to": 141.4
+      },
+      {
+        "anchor": "detTabs.tabEmployment",
+        "from": 141.4,
+        "to": 141.8
+      },
+      {
+        "anchor": "detTabs.tabSchedule",
+        "from": 141.8,
+        "to": 142.1
+      },
+      {
+        "anchor": "detTabs.tabEmergency",
+        "from": 142.1,
+        "to": 142.6
+      },
+      {
+        "anchor": "detTabs.tabNotes",
+        "from": 142.6,
+        "to": 143.2
+      },
+      {
+        "anchor": "detTabs.tabTraining",
+        "from": 143.2,
+        "to": 144
+      },
+      {
+        "anchor": "detPanels.panelMonthlyHours",
+        "from": 166.2,
+        "to": 168,
+        "note": "step 12 five panels in spoken order (p49-p53)"
+      },
+      {
+        "anchor": "detPanels.panelHoursBreakdown",
+        "from": 168,
+        "to": 172.5
+      },
+      {
+        "anchor": "detPanels.panelAttendance",
+        "from": 172.5,
+        "to": 176.8
+      },
+      {
+        "anchor": "detPanels.panelEarnings",
+        "from": 176.8,
+        "to": 180.4
+      },
+      {
+        "anchor": "detPanels.panelPerformance",
+        "from": 180.4,
+        "to": 187.4,
+        "note": "p53-p54 the review trend"
+      },
+      {
+        "anchor": "detTabs.tabPersonal",
+        "from": 193.1,
+        "to": 196.4,
+        "note": "step 13 tabs highlighted as each is opened (p57-p62)"
+      },
+      {
+        "anchor": "detTabs.tabEmployment",
+        "from": 197.5,
+        "to": 200.6
+      },
+      {
+        "anchor": "detTabs.tabSchedule",
+        "from": 201.6,
+        "to": 204.3
+      },
+      {
+        "anchor": "detTabs.tabEmergency",
+        "from": 205.3,
+        "to": 207.3
+      },
+      {
+        "anchor": "detTabs.tabNotes",
+        "from": 208.3,
+        "to": 211.4
+      },
+      {
+        "anchor": "detTabs.tabTraining",
+        "from": 212.4,
+        "to": 214.5
+      },
+      {
+        "anchor": "assignRect",
+        "from": 212.9,
+        "to": 215.5,
+        "color": "#dc2626",
+        "note": "step 13 do-not-click ring: Assign Course (Training tab)"
+      },
+      {
+        "anchor": "detBtns.editBtn",
+        "from": 224.7,
+        "to": 229.6,
+        "color": "#dc2626",
+        "note": "step 14 read-only rule — Edit Employee never clicked (p65)"
+      },
+      {
+        "anchor": "bcListRect",
+        "from": 232.4,
+        "to": 234.4,
+        "note": "step 14 back on the Employees list (p67)"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 10.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 11,
+        "z": 1.5,
+        "cx": 960,
+        "cy": 150,
+        "ease": true,
+        "note": "step 2: 150% punch across the KPI strip (shot list)"
+      },
+      {
+        "t": 23.4,
+        "z": 1.5,
+        "cx": 960,
+        "cy": 150
+      },
+      {
+        "t": 24,
+        "z": 1.22,
+        "cx": 590,
+        "cy": 250,
+        "ease": true,
+        "note": "step 3: frame the Headcount Growth card"
+      },
+      {
+        "t": 37.6,
+        "z": 1.22,
+        "cx": 590,
+        "cy": 250
+      },
+      {
+        "t": 38.1,
+        "z": 1.22,
+        "cx": 1117,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: pan to the By Location card"
+      },
+      {
+        "t": 49.5,
+        "z": 1.22,
+        "cx": 1117,
+        "cy": 250
+      },
+      {
+        "t": 50,
+        "z": 1.22,
+        "cx": 1643,
+        "cy": 250,
+        "ease": true,
+        "note": "step 5: pan to the Employment Type card"
+      },
+      {
+        "t": 61.7,
+        "z": 1.22,
+        "cx": 1643,
+        "cy": 250
+      },
+      {
+        "t": 62.2,
+        "z": 1.3,
+        "cx": 1400,
+        "cy": 400,
+        "ease": true,
+        "note": "step 6: the Employee List toolbar — Export / + New Record guardrails"
+      },
+      {
+        "t": 72.6,
+        "z": 1.3,
+        "cx": 1400,
+        "cy": 400
+      },
+      {
+        "t": 73.2,
+        "z": 1.28,
+        "cx": 1000,
+        "cy": 520,
+        "ease": true,
+        "note": "step 7: the column header row"
+      },
+      {
+        "t": 79,
+        "z": 1.28,
+        "cx": 1000,
+        "cy": 520
+      },
+      {
+        "t": 79.6,
+        "z": 1.5,
+        "cx": 470,
+        "cy": 560,
+        "ease": true,
+        "note": "step 7: brief 150% punch on the EMPLOYEE cell (avatar + name + role chip)"
+      },
+      {
+        "t": 85.8,
+        "z": 1.5,
+        "cx": 470,
+        "cy": 560
+      },
+      {
+        "t": 86.4,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 620,
+        "ease": true,
+        "note": "step 8: the table body and role-chip column"
+      },
+      {
+        "t": 100.4,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 620
+      },
+      {
+        "t": 101,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 560,
+        "ease": true,
+        "note": "step 9: the search / filters / pager toolbar"
+      },
+      {
+        "t": 113,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 560
+      },
+      {
+        "t": 113.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the row-click page change (step 10)"
+      },
+      {
+        "t": 116.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 117.5,
+        "z": 1.4,
+        "cx": 1000,
+        "cy": 120,
+        "ease": true,
+        "note": "step 10: 140% punch on the header band (name, role chip, site, buttons)"
+      },
+      {
+        "t": 126.8,
+        "z": 1.4,
+        "cx": 1000,
+        "cy": 120
+      },
+      {
+        "t": 127.4,
+        "z": 1.24,
+        "cx": 960,
+        "cy": 220,
+        "ease": true,
+        "note": "step 10: settle onto the five-tile metric band"
+      },
+      {
+        "t": 136,
+        "z": 1.24,
+        "cx": 960,
+        "cy": 220
+      },
+      {
+        "t": 136.6,
+        "z": 1.3,
+        "cx": 680,
+        "cy": 268,
+        "ease": true,
+        "note": "step 11: the seven-tab strip"
+      },
+      {
+        "t": 145.5,
+        "z": 1.3,
+        "cx": 680,
+        "cy": 268
+      },
+      {
+        "t": 146.5,
+        "z": 1.1,
+        "cx": 960,
+        "cy": 480,
+        "ease": true,
+        "note": "settle for the p46 WashAssist note and into Overview"
+      },
+      {
+        "t": 160.4,
+        "z": 1.14,
+        "cx": 960,
+        "cy": 500,
+        "ease": true,
+        "note": "step 12: frame the Overview analytics panels"
+      },
+      {
+        "t": 179.8,
+        "z": 1.14,
+        "cx": 960,
+        "cy": 500
+      },
+      {
+        "t": 180.4,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 820,
+        "ease": true,
+        "note": "step 12: 130% punch toward the Performance Score Trend panel (bottom row)"
+      },
+      {
+        "t": 187.4,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 820
+      },
+      {
+        "t": 188.5,
+        "z": 1.06,
+        "cx": 960,
+        "cy": 460,
+        "ease": true,
+        "note": "step 13: calm framing through the six same-page tab switches"
+      },
+      {
+        "t": 216.7,
+        "z": 1.06,
+        "cx": 960,
+        "cy": 460
+      },
+      {
+        "t": 217.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the read-only rule and the ← Back page change"
+      },
+      {
+        "t": 234.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 235.9,
+        "z": 1.12,
+        "cx": 960,
+        "cy": 360,
+        "ease": true,
+        "note": "step 15: gentle recap sweep from the KPIs down to the list"
+      },
+      {
+        "t": 243.5,
+        "z": 1.12,
+        "cx": 960,
+        "cy": 360
+      },
+      {
+        "t": 244.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 253.727,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Employees — Complete",
+      "from": 251.93,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 251.63
+  },
+  "output": "WC-07-01-employees-v1.1",
+  "orderedMentions": [
+    "EMPLOYEE",
+    "PHONE",
+    "HIRE DATE",
+    "TYPE",
+    "STATUS",
+    "LOCATION",
+    "Overview",
+    "Personal Info",
+    "Employment",
+    "Schedule",
+    "Emergency Contact",
+    "Notes & Audit",
+    "Training",
+    "Back"
+  ],
+  "neverClick": [
+    "export",
+    "\\+ ?new record",
+    "new record",
+    "delete",
+    "edit employee",
+    "edit",
+    "save",
+    "save changes",
+    "assign course",
+    "deactivate",
+    "reset password",
+    "reset",
+    "new employee",
+    "role",
+    "permission",
+    "send",
+    "submit",
+    "log ?out",
+    "logout",
+    "ask shyne"
+  ]
+}

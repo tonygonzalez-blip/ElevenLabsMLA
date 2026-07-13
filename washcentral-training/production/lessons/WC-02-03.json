@@ -1,0 +1,332 @@
+{
+  "lesson": "WC-02-03",
+  "title": "Edit Customer & New Customer forms",
+  "audioMaster": "training/module02-crm/WC-02-03-full-narration-v1.0.mp3",
+  "audioDurationS": 148.114,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/crm-customer-detail.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "editBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top .a-btn')].find(e=>/Edit Customer/.test(e.textContent||''))"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "cancelTop": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>(e.textContent||'').trim()==='Cancel'&&e.getBoundingClientRect().top<200&&e.getBoundingClientRect().width>0)"
+    },
+    "saveTop": {
+      "selector": "#save-btn"
+    },
+    "avatar": {
+      "selector": ".a-avatar"
+    },
+    "nameRow": {
+      "selector": ".a-name-row"
+    },
+    "planBadge": {
+      "selector": ".a-plan-badge"
+    },
+    "chipRow": {
+      "selector": ".a-badges"
+    },
+    "chip2": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][1]"
+    },
+    "chip3": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][2]"
+    },
+    "chip4": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][3]"
+    },
+    "metricBand": {
+      "selector": ".a-metrics"
+    },
+    "tile1": {
+      "js": "[...document.querySelectorAll('.a-metric')][0]"
+    },
+    "tile3": {
+      "js": "[...document.querySelectorAll('.a-metric')][2]"
+    },
+    "tile6": {
+      "js": "[...document.querySelectorAll('.a-metric')][5]"
+    },
+    "tabNav": {
+      "selector": ".a-tab-nav"
+    },
+    "tabContact": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Contact')"
+    },
+    "tabMembership": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Membership')"
+    },
+    "tabPayments": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Payments')"
+    },
+    "tabVehicles": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Vehicles')"
+    },
+    "tabCommunication": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Communication')"
+    },
+    "tabComments": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Comments')"
+    },
+    "recToggle": {
+      "selector": ".a-rec-toggle"
+    },
+    "g1Hdr": {
+      "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/personal & business/i.test((e.textContent||'').trim()))"
+    },
+    "g1": {
+      "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/personal & business/i.test((e.textContent||'').trim()))?.closest('.a-group')"
+    },
+    "g2Hdr": {
+      "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/^address$/i.test((e.textContent||'').trim()))"
+    },
+    "g2": {
+      "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/^address$/i.test((e.textContent||'').trim()))?.closest('.a-group')"
+    },
+    "g3Hdr": {
+      "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/phone & email/i.test((e.textContent||'').trim()))"
+    },
+    "g3": {
+      "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/phone & email/i.test((e.textContent||'').trim()))?.closest('.a-group')"
+    },
+    "sideCustomers": {
+      "text": "Customers",
+      "scope": "aside.sidebar a"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "addBtn": {
+      "text": "+ Add Customer",
+      "scope": "a.a-btn"
+    },
+    "retentionBtn": {
+      "text": "Retention Log",
+      "scope": "a.a-btn,button.a-btn"
+    },
+    "deleteBtn": {
+      "selector": "#bulk-delete-btn"
+    },
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    }
+  },
+  "predicates": {
+    "onDetail": "location.pathname.endsWith('/crm-customer-detail.html')",
+    "onEdit": "location.pathname.endsWith('/crm-customer-edit.html')",
+    "onList": "location.pathname.endsWith('/crm-customers.html')",
+    "pageReady": "document.readyState==='complete' && ![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "editFormReady": "location.pathname.endsWith('/crm-customer-edit.html') && document.readyState==='complete' && !!document.querySelector('.a-panel.active') && /PERSONAL & BUSINESS/i.test(document.querySelector('.a-panel.active').innerText)",
+    "sidebarExpandedNow": "!!document.querySelector('.app') && !document.querySelector('.app').classList.contains('sidebar-collapsed')"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpandedNow",
+      "postcondition": "sidebarExpandedNow",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the persisted sidebar EXPANDED (washcentral-sidebar-collapsed-v5) so step 8's sidebar Customers click is on screen; the toggle is the same control both ways; skipped when already expanded"
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onDetail", "note": "start on the fixed sample customer's 360 profile (the screen WC-02-02 leaves you on), stable before capture" },
+    { "op": "pointer-enter", "at": 0.4, "from": [1919, 210], "to": { "target": "editBtn", "offset": [-30, 52] }, "note": "enter from the right edge, settle below-left of Edit Customer during the p01 cue" },
+    { "op": "log-rect", "at": 1.2, "key": "editBtnRect", "target": "editBtn" },
+    { "op": "move", "at": 2.0, "to": { "target": "editBtn", "offset": [0, 0] }, "note": "settle on Edit Customer as p01 names it" },
+    { "op": "click", "target": "editBtn", "pressAt": 3.5, "hoverMs": 400, "postcondition": "onEdit", "timeoutMs": 8000, "nav": true, "note": "step 1: genuine Edit Customer click; press inside the real rendered break (silencedetect 3.385-3.900) so the form is up before the explanation" },
+    { "op": "wait-stable", "afterNav": true, "key": "editFormStable", "predicate": "editFormReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 4.7, "key": "hdr", "targets": ["breadcrumb", "cancelTop", "saveTop", "avatar", "nameRow", "planBadge", "chipRow", "metricBand", "tabNav", "recToggle"] },
+    { "op": "watch", "key": "editFormHold", "from": 5.0, "to": 87.3, "predicate": "onEdit", "everyMs": 600, "mustHold": true },
+    { "op": "move", "at": 5.1, "to": { "target": "saveTop", "offset": [-70, 50], "outside": true }, "note": "park below the Cancel / Save Changes pair while p03-p05 explain the two exits" },
+    { "op": "move", "at": 14.6, "to": { "target": "avatar", "offset": [0, 0] }, "note": "step 2: identity-band sweep starts at the avatar (cue p06)" },
+    { "op": "log-rects", "at": 15.1, "key": "chips", "targets": ["chip2", "chip3", "chip4"] },
+    { "op": "move", "at": 18.05, "to": { "target": "nameRow", "offset": [-600, 0] }, "note": "to the member name (p07 'the name')" },
+    { "op": "move", "at": 19.4, "to": { "target": "planBadge", "offset": [0, 0] }, "note": "'the plan'" },
+    { "op": "move", "at": 20.7, "to": { "target": "chip2", "offset": [0, 0] }, "note": "'a few status chips' — sweep the three status chips" },
+    { "op": "move", "at": 21.4, "to": { "target": "chip3", "offset": [0, 0] } },
+    { "op": "move", "at": 22.0, "to": { "target": "chip4", "offset": [0, 0] } },
+    { "op": "log-rects", "at": 23.0, "key": "tiles", "targets": ["tile1", "tile3", "tile6"] },
+    { "op": "move", "at": 23.3, "to": { "target": "tile1", "offset": [0, 18] }, "note": "slow left-to-right sweep over the metric strip carried over from the profile (p08)" },
+    { "op": "move", "at": 24.4, "to": { "target": "tile3", "offset": [0, 18] } },
+    { "op": "move", "at": 25.5, "to": { "target": "tile6", "offset": [0, 18] } },
+    { "op": "move", "at": 26.7, "to": { "point": [1898, 320] }, "note": "park in the right margin" },
+    { "op": "move", "at": 28.5, "to": { "target": "tabContact", "offset": [0, 0] }, "note": "step 3: tab-strip sweep, no tab is clicked (cue p09)" },
+    { "op": "log-rects", "at": 29.2, "key": "tabs", "targets": ["tabContact", "tabMembership", "tabPayments", "tabVehicles", "tabCommunication", "tabComments"] },
+    { "op": "move", "at": 29.8, "to": { "target": "tabMembership", "offset": [0, 0] } },
+    { "op": "move", "at": 30.6, "to": { "target": "tabPayments", "offset": [0, 0] } },
+    { "op": "move", "at": 31.3, "to": { "target": "tabVehicles", "offset": [0, 0] } },
+    { "op": "move", "at": 32.0, "to": { "target": "tabCommunication", "offset": [0, 0] } },
+    { "op": "move", "at": 32.8, "to": { "target": "tabComments", "offset": [0, 0] } },
+    { "op": "move", "at": 34.2, "to": { "target": "tabNav", "offset": [-700, 52], "outside": true }, "note": "park below the strip while p11-p12 contrast reading vs changing" },
+    { "op": "move", "at": 39.6, "to": { "target": "tabCommunication", "offset": [0, 0] }, "note": "p13: 'Messaging turns into Communication'" },
+    { "op": "move", "at": 41.1, "to": { "target": "tabComments", "offset": [0, 0] }, "note": "p13: 'Notes into Comments'" },
+    { "op": "move", "at": 42.9, "to": { "point": [1898, 340] } },
+    { "op": "move", "at": 44.7, "to": { "target": "g1Hdr", "offset": [-620, 0] }, "note": "step 4: to the PERSONAL & BUSINESS group header (cue p15)" },
+    { "op": "log-rects", "at": 45.1, "key": "eg", "targets": ["g1Hdr", "g1", "g2Hdr", "g2", "g3Hdr", "g3"] },
+    { "op": "move", "at": 47.0, "to": { "point": [480, 415] }, "note": "slow sweep down the identity fields (p16 name/company/gender/DOB row)" },
+    { "op": "move", "at": 47.9, "to": { "point": [480, 478] } },
+    { "op": "move", "at": 48.7, "to": { "point": [480, 545] }, "note": "p17: the two switches — hover only, toggles never flipped" },
+    { "op": "move", "at": 52.2, "to": { "point": [1898, 470] }, "note": "park while p18 explains the identity block" },
+    { "op": "move", "at": 59.5, "to": { "target": "g2Hdr", "offset": [-620, 0] }, "note": "step 5: to the ADDRESS group header (cue p19)" },
+    { "op": "move", "at": 62.2, "to": { "point": [480, 650] }, "note": "vertical sweep down the address rows (p20); Country dropdown never opened" },
+    { "op": "move", "at": 63.7, "to": { "point": [480, 718] } },
+    { "op": "move", "at": 65.0, "to": { "point": [480, 782] } },
+    { "op": "move", "at": 66.3, "to": { "point": [1200, 838] }, "note": "over to the Country row" },
+    { "op": "move", "at": 68.7, "to": { "point": [1898, 650] }, "note": "park while p21 explains" },
+    { "op": "move", "at": 73.6, "to": { "target": "g3Hdr", "offset": [-620, 0] }, "note": "step 6: to the PHONE & EMAIL group header (cue p22)" },
+    { "op": "move", "at": 74.6, "to": { "point": [480, 957] }, "note": "p23 sweep: phone / mobile row" },
+    { "op": "move", "at": 75.4, "to": { "point": [1250, 957] } },
+    { "op": "move", "at": 76.3, "to": { "point": [480, 1018] }, "note": "down to the email row" },
+    { "op": "move", "at": 80.0, "to": { "point": [1898, 860] }, "note": "park while p24-p25 explain" },
+    { "op": "move", "at": 85.15, "to": { "target": "cancelTop", "offset": [0, 0] }, "note": "step 7: approach Cancel on the cue start (p26); Save Changes carries the red STOP ring until this press lands" },
+    { "op": "click", "target": "cancelTop", "pressAt": 87.9, "hoverMs": 400, "postcondition": "onDetail", "timeoutMs": 8000, "nav": true, "note": "step 7: genuine Cancel (an anchor back to the profile); press inside the real rendered break (silencedetect 87.464-88.436); Save Changes is NEVER clicked" },
+    { "op": "wait-stable", "afterNav": true, "key": "backOnProfile", "predicate": "pageReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "watch", "key": "profileHold", "from": 89.0, "to": 100.5, "predicate": "onDetail", "everyMs": 600, "mustHold": true },
+    { "op": "log-rect", "at": 89.2, "key": "bcDetailRect", "target": "breadcrumb", "requireStableMs": 260 },
+    { "op": "move", "at": 89.6, "to": { "point": [1730, 320] }, "note": "park while p27-p29 explain Cancel vs Save; the form is genuinely closed, nothing saved" },
+    { "op": "move", "at": 99.4, "to": { "target": "sideCustomers", "offset": [0, 0] }, "note": "step 8: to the CRM sidebar Customers link (cue p30)" },
+    { "op": "click", "target": "sideCustomers", "pressAt": 100.95, "hoverMs": 380, "postcondition": "onList", "timeoutMs": 8000, "nav": true, "note": "step 8: genuine sidebar navigation back to the Customer List; press inside the rendered break (silencedetect 100.823-101.140)" },
+    { "op": "wait-stable", "afterNav": true, "key": "listStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rects", "at": 102.3, "key": "lt", "targets": ["kpiStrip", "addBtn", "retentionBtn", "deleteBtn"] },
+    { "op": "move", "at": 102.6, "to": { "point": [960, 150] }, "note": "under the KPI counts as p32 names them" },
+    { "op": "move", "at": 105.5, "to": { "target": "addBtn", "offset": [0, 40] }, "note": "'the button that starts a brand new record' — settle below + Add Customer, no press yet" },
+    { "op": "click", "target": "addBtn", "pressAt": 109.95, "hoverMs": 380, "postcondition": "onEdit", "timeoutMs": 8000, "nav": true, "note": "step 9: genuine + Add Customer click; press inside the rendered break (silencedetect 109.731-110.308); live it opens the same form template pre-filled with the fixed sample record, not a blank form (see RESIDUAL R1)" },
+    { "op": "wait-stable", "afterNav": true, "key": "newFormStable", "predicate": "editFormReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "watch", "key": "newFormHold", "from": 111.4, "to": 136.2, "predicate": "onEdit", "everyMs": 600, "mustHold": true },
+    { "op": "log-rects", "at": 111.5, "key": "nf", "targets": ["breadcrumb", "tabNav", "cancelTop", "saveTop", "g1Hdr", "g1", "g2Hdr", "g2", "g3Hdr", "g3"] },
+    { "op": "move", "at": 111.8, "to": { "target": "saveTop", "offset": [-70, 50], "outside": true }, "note": "park below the button pair; the STOP ring returns on Save Changes while the form is open" },
+    { "op": "move", "at": 114.4, "to": { "target": "tabContact", "offset": [0, 0] }, "note": "p35 'Same tabs, same fields' — sweep the strip again" },
+    { "op": "move", "at": 115.5, "to": { "target": "tabComments", "offset": [0, 0] } },
+    { "op": "move", "at": 116.8, "to": { "point": [1898, 340] } },
+    { "op": "move", "at": 120.85, "to": { "target": "g1Hdr", "offset": [-620, 0] }, "note": "step 10: scan down the form (cue p37)" },
+    { "op": "move", "at": 123.0, "to": { "point": [480, 430] }, "note": "p38 sweep: personal details..." },
+    { "op": "move", "at": 124.8, "to": { "point": [480, 650] }, "note": "...address..." },
+    { "op": "move", "at": 126.6, "to": { "point": [480, 957] }, "note": "...phone and email, in the same order" },
+    { "op": "move", "at": 129.2, "to": { "point": [1898, 760] }, "note": "park while p39 explains" },
+    { "op": "move", "at": 133.7, "to": { "target": "cancelTop", "offset": [0, 0] }, "note": "step 11: approach Cancel on the cue start (p40); nothing was typed, nothing saved" },
+    { "op": "click", "target": "cancelTop", "pressAt": 136.55, "hoverMs": 380, "postcondition": "onDetail", "timeoutMs": 8000, "nav": true, "note": "step 11: genuine Cancel out of the form; press inside the rendered break (silencedetect 136.359-136.801); live it returns to the profile, not the list (see RESIDUAL R2); Save Changes never clicked" },
+    { "op": "wait-stable", "afterNav": true, "key": "endStable", "predicate": "pageReady", "settleMs": 700, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 138.0, "key": "endBcRect", "target": "breadcrumb", "requireStableMs": 260 },
+    { "op": "move", "at": 138.5, "to": { "point": [1720, 900] }, "note": "final park, clear of content and captions" },
+    { "op": "assert", "at": 146.0, "predicate": "onDetail" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "hdr.breadcrumb", "place": "below-left", "from": 4.9, "to": 8.0 },
+      { "n": 2, "anchor": "hdr.nameRow", "place": "below-left", "from": 15.2, "to": 19.3 },
+      { "n": 3, "anchor": "hdr.tabNav", "place": "left-top", "from": 29.4, "to": 34.5 },
+      { "n": 4, "anchor": "eg.g1Hdr", "place": "left-top", "from": 45.3, "to": 50.0 },
+      { "n": 5, "anchor": "eg.g2Hdr", "place": "left-top", "from": 60.3, "to": 65.0 },
+      { "n": 6, "anchor": "eg.g3Hdr", "place": "left-top", "from": 74.4, "to": 79.0 },
+      { "n": 7, "anchor": "bcDetailRect", "place": "below-left", "from": 89.4, "to": 93.5 },
+      { "n": 8, "anchor": "lt.addBtn", "place": "below-left", "from": 102.7, "to": 107.8 },
+      { "n": 9, "anchor": "nf.breadcrumb", "place": "below-left", "from": 111.7, "to": 116.5 },
+      { "n": 10, "anchor": "nf.g1Hdr", "place": "left-top", "from": 121.3, "to": 126.5 },
+      { "n": 11, "anchor": "endBcRect", "place": "below-left", "from": 138.3, "to": 143.5 }
+    ],
+    "highlights": [
+      { "anchor": "hdr.saveTop", "from": 6.14, "to": 13.5, "color": "#dc2626", "note": "p04-p05 guardrail: 'One saves your work' — Save Changes is a live write, never clicked" },
+      { "anchor": "hdr.cancelTop", "from": 8.08, "to": 10.2, "note": "p05: 'Today, we only back out' — Cancel is the exit" },
+      { "anchor": "hdr.nameRow", "from": 18.01, "to": 19.35, "note": "p07: 'the name'" },
+      { "anchor": "hdr.planBadge", "from": 19.35, "to": 20.6, "note": "'the plan'" },
+      { "anchor": "hdr.chipRow", "from": 20.6, "to": 22.2, "note": "'a few status chips'" },
+      { "anchor": "hdr.metricBand", "from": 23.0, "to": 26.5, "note": "p08: the band carried over from the profile proves whose record you are in" },
+      { "anchor": "hdr.tabNav", "from": 29.69, "to": 32.74, "note": "p10: 'Six here, not the nine on the profile'" },
+      { "anchor": "tabs.tabCommunication", "from": 39.56, "to": 40.9, "note": "p13: 'Messaging turns into Communication'" },
+      { "anchor": "tabs.tabComments", "from": 40.9, "to": 41.97, "note": "p13: 'Notes into Comments'" },
+      { "anchor": "eg.g1", "from": 47.02, "to": 50.5, "note": "p16-p17: the identity fields and the two switches" },
+      { "anchor": "eg.g2", "from": 62.07, "to": 67.79, "note": "p20: the address rows" },
+      { "anchor": "eg.g3", "from": 74.52, "to": 78.5, "note": "p23-p24: the phone & email block" },
+      { "anchor": "hdr.saveTop", "from": 85.04, "to": 87.9, "color": "#dc2626", "note": "step 7 STOP: ring stays on Save Changes until the Cancel press lands" },
+      { "anchor": "bcDetailRect", "from": 89.4, "to": 91.64, "note": "p27: back on the profile, untouched" },
+      { "anchor": "lt.kpiStrip", "from": 103.19, "to": 105.3, "note": "p32: 'Up top sit the counts'" },
+      { "anchor": "lt.addBtn", "from": 105.3, "to": 108.05, "note": "p32: '...the button that starts a brand new record'" },
+      { "anchor": "nf.saveTop", "from": 111.5, "to": 116.8, "color": "#dc2626", "note": "step 9: the STOP ring returns while the form is open" },
+      { "anchor": "nf.tabNav", "from": 114.3, "to": 117.64, "note": "p35: 'Same tabs, same fields'" },
+      { "anchor": "nf.g1", "from": 122.93, "to": 124.75, "note": "p38: 'Personal details...'" },
+      { "anchor": "nf.g2", "from": 124.75, "to": 126.55, "note": "'...address...'" },
+      { "anchor": "nf.g3", "from": 126.55, "to": 128.29, "note": "'...phone and email'" },
+      { "anchor": "nf.saveTop", "from": 133.6, "to": 136.4, "color": "#dc2626", "note": "step 11 STOP: Save Changes held red until the final Cancel press" },
+      { "anchor": "endBcRect", "from": 138.3, "to": 139.74, "note": "p41: no record created, nothing left behind" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 4.5, "z": 1, "cx": 960, "cy": 540, "note": "hold wide while the edit form replaces the profile (full-interface change)" },
+      { "t": 5.6, "z": 1.5, "cx": 1700, "cy": 140, "ease": true, "note": "shot-list close-up on the Cancel / Save Changes pair (150%)" },
+      { "t": 12.8, "z": 1.5, "cx": 1700, "cy": 140 },
+      { "t": 13.8, "z": 1.3, "cx": 860, "cy": 190, "ease": true, "note": "identity band + metric strip (step 2)" },
+      { "t": 27.3, "z": 1.3, "cx": 860, "cy": 190 },
+      { "t": 28.3, "z": 1.35, "cx": 760, "cy": 300, "ease": true, "note": "the six edit tabs (step 3)" },
+      { "t": 43.5, "z": 1.35, "cx": 760, "cy": 300 },
+      { "t": 44.5, "z": 1.3, "cx": 960, "cy": 460, "ease": true, "note": "PERSONAL & BUSINESS group (step 4)" },
+      { "t": 58.5, "z": 1.3, "cx": 960, "cy": 460 },
+      { "t": 59.5, "z": 1.3, "cx": 960, "cy": 640, "ease": true, "note": "ADDRESS group (step 5)" },
+      { "t": 72.5, "z": 1.3, "cx": 960, "cy": 640 },
+      { "t": 73.6, "z": 1.3, "cx": 960, "cy": 660, "ease": true, "note": "PHONE & EMAIL group (step 6)" },
+      { "t": 83.5, "z": 1.3, "cx": 960, "cy": 660 },
+      { "t": 84.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the Cancel exit and the return to the profile (step 7)" },
+      { "t": 101.9, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 102.9, "z": 1.3, "cx": 960, "cy": 300, "ease": true, "note": "Customer List counts + toolbar (step 8)" },
+      { "t": 105.2, "z": 1.3, "cx": 960, "cy": 300 },
+      { "t": 105.9, "z": 1.5, "cx": 1280, "cy": 380, "ease": true, "note": "shot-list brief zoom on + Add Customer" },
+      { "t": 108.9, "z": 1.5, "cx": 1280, "cy": 380 },
+      { "t": 109.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide as the form opens again (step 9)" },
+      { "t": 113.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 114.3, "z": 1.2, "cx": 960, "cy": 300, "ease": true, "note": "tabs + band on the reopened form" },
+      { "t": 119.8, "z": 1.2, "cx": 960, "cy": 300 },
+      { "t": 120.8, "z": 1.15, "cx": 960, "cy": 620, "ease": true, "note": "scan down the form groups (step 10)" },
+      { "t": 132.4, "z": 1.15, "cx": 960, "cy": 620 },
+      { "t": 133.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the final Cancel and the recap (step 11)" },
+      { "t": 148.114, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "completion": {
+      "text": "Edit & New Customer Forms — Complete",
+      "from": 146.3,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 146.0
+  },
+  "output": "WC-02-03-customer-edit-new-v1.1",
+  "orderedMentions": [
+    "Edit Customer",
+    "Messaging",
+    "Communication",
+    "Notes",
+    "Comments",
+    "Contact",
+    "Cancel",
+    "Add Customer",
+    "Cancel"
+  ],
+  "neverClick": [
+    "save changes",
+    "delete",
+    "actions",
+    "issue wash",
+    "refund customer",
+    "regenerate",
+    "record information",
+    "gender dropdown",
+    "country dropdown",
+    "house account toggle",
+    "signature on file toggle",
+    "retention log",
+    "apply filters",
+    "customer table rows (row-link)",
+    "ask shyne",
+    "send",
+    "logout",
+    "log out now"
+  ]
+}

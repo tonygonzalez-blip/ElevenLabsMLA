@@ -1,0 +1,440 @@
+{
+  "lesson": "WC-08-03",
+  "audioMaster": "training/module08-operations/WC-08-03-full-narration-v1.0.mp3",
+  "audioDurationS": 178.051,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is where every damage claim and injury report lands.",
+      "startS": 0,
+      "endS": 3.144,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "One list, under Operations.",
+      "startS": 3.144,
+      "endS": 4.661,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "When a customer calls about a scratch from the tunnel,",
+      "startS": 4.661,
+      "endS": 8.614,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "or a manager reports someone hurt on site, the record lives right here.",
+      "startS": 8.614,
+      "endS": 12.702,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Know this screen and you can pull up any incident without hunting through menus.",
+      "startS": 12.702,
+      "endS": 17.76,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Five columns run across the top.",
+      "startS": 18.16,
+      "endS": 19.976,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Report number, type, location, date, status.",
+      "startS": 20.472,
+      "endS": 21.338,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Read them left to right and you have the whole story of an incident",
+      "startS": 21.692,
+      "endS": 22.106,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "before you open a single record.",
+      "startS": 22.406,
+      "endS": 30.459,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Look at the first column.",
+      "startS": 30.88,
+      "endS": 32.153,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Every report number starts with I-R, then a short code for what happened.",
+      "startS": 32.564,
+      "endS": 35.173,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "The code is not decoration.",
+      "startS": 35.496,
+      "endS": 37.371,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "It tells you the kind of incident at a glance, before you read anything else.",
+      "startS": 37.68,
+      "endS": 43.719,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Now the type column, and this is the part to memorize.",
+      "startS": 44.215,
+      "endS": 45.575,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Five kinds of report, five codes.",
+      "startS": 45.829,
+      "endS": 47.624,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Customer Injury is C-I.",
+      "startS": 48.045,
+      "endS": 50.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Employee Injury, E-I.",
+      "startS": 50.906,
+      "endS": 52.974,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Property Damage is P.",
+      "startS": 53.265,
+      "endS": 54.346,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Vehicle Damage, V.",
+      "startS": 54.602,
+      "endS": 55.296,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "And wash equipment damage carries W-E-D.",
+      "startS": 55.668,
+      "endS": 57.257,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Every incident you log is one of these five.",
+      "startS": 57.543,
+      "endS": 65.41,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Over on the right, the status.",
+      "startS": 65.906,
+      "endS": 68.256,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Most reports sit at Open.",
+      "startS": 68.256,
+      "endS": 69.773,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "One here reads Under Review.",
+      "startS": 69.773,
+      "endS": 71.742,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "That is the report's place in its lifecycle,",
+      "startS": 71.742,
+      "endS": 74.457,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "so a quick scan of this column tells you what still needs attention.",
+      "startS": 74.457,
+      "endS": 78.4,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Third column, the location code.",
+      "startS": 78.8,
+      "endS": 80.15,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Each report is tagged to the site where it happened,",
+      "startS": 80.15,
+      "endS": 83.401,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "shown as a short code like the ones in this list.",
+      "startS": 83.401,
+      "endS": 86.685,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "On a support call, that tag tells you which wash and which manager you are dealing with.",
+      "startS": 86.685,
+      "endS": 91.273,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Then the date.",
+      "startS": 91.68,
+      "endS": 92.67,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Written year first, month, then day,",
+      "startS": 93.375,
+      "endS": 94.629,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "so the column sorts cleanly and reads the same for everyone.",
+      "startS": 94.927,
+      "endS": 96.296,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "It is the day the incident occurred, not the day someone typed it up.",
+      "startS": 96.654,
+      "endS": 103.652,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Say the list is hundreds long, not five.",
+      "startS": 104.08,
+      "endS": 106.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "The search box up top takes a report number or a keyword and narrows the table as you type.",
+      "startS": 107.5,
+      "endS": 112.946,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "When a customer gives you a claim number, this is your fastest way in.",
+      "startS": 113.737,
+      "endS": 117.419,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Next to it, two more tools.",
+      "startS": 117.84,
+      "endS": 119.629,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Filters opens options to narrow the list, and the Search button runs what you have entered.",
+      "startS": 120.423,
+      "endS": 122.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "We are not stepping through the filter choices here.",
+      "startS": 123.067,
+      "endS": 128.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "At the bottom, a count.",
+      "startS": 128.48,
+      "endS": 129.928,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "Showing one through five of five records, on a single page.",
+      "startS": 130.487,
+      "endS": 134.156,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "On a busy site, this footer and its page arrows are how you work through the backlog.",
+      "startS": 134.948,
+      "endS": 139.371,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "Top right sits New Report.",
+      "startS": 139.84,
+      "endS": 141.755,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "That is how a fresh incident gets started, and it opens by asking for the report type.",
+      "startS": 142.158,
+      "endS": 144.381,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "On camera we open it to show the choices, then cancel straight back out.",
+      "startS": 144.638,
+      "endS": 146.734,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "We file nothing today.",
+      "startS": 147.286,
+      "endS": 152.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p48",
+      "text": "So the incident log, in one screen.",
+      "startS": 153.28,
+      "endS": 155.602,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "Five report types, each with its own code.",
+      "startS": 156.151,
+      "endS": 158.611,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "A status that shows what is still open.",
+      "startS": 159.099,
+      "endS": 161.101,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "Search and filters for when the list runs long.",
+      "startS": 161.481,
+      "endS": 164.085,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "Picture the calls: a scratched car is Vehicle Damage,",
+      "startS": 164.524,
+      "endS": 165.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "an employee who slips is Employee Injury, and both are logged right here.",
+      "startS": 165.761,
+      "endS": 172.619,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "Learn the five types now, because on a support call you will be naming them from memory.",
+      "startS": 173.033,
+      "endS": 177.6,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "lesson": "WC-12-04",
+  "audioMaster": "training/module12-settings/WC-12-04-full-narration-v1.0.mp3",
+  "audioDurationS": 197.486,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is where the money rules live.",
+      "startS": 0,
+      "endS": 1.644,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Open Settings, then the Payments and Finance group.",
+      "startS": 2.378,
+      "endS": 5.002,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Nine pages, one list.",
+      "startS": 5.413,
+      "endS": 7.083,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Between them they decide how a payment is taken, how a price gets adjusted,",
+      "startS": 7.423,
+      "endS": 9.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "how tax is set, and how a sale lands in accounting.",
+      "startS": 10.198,
+      "endS": 14.848,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "Learn to spot them, because most billing questions end on one of these.",
+      "startS": 15.241,
+      "endS": 18.93,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Start at Payment Types.",
+      "startS": 19.36,
+      "endS": 20.892,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "This is your tender list, the payment methods the register accepts.",
+      "startS": 21.453,
+      "endS": 22.979,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Three flags do the real work.",
+      "startS": 23.3,
+      "endS": 25.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Locked marks the system types you can't delete.",
+      "startS": 25.707,
+      "endS": 27.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Require Reference forces a number at the register.",
+      "startS": 27.588,
+      "endS": 30.07,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "And Show as Bank Drop decides what counts toward the drawer drop.",
+      "startS": 30.367,
+      "endS": 36.702,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Now Discounts.",
+      "startS": 37.2,
+      "endS": 38.512,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "The panels up top read the file at a glance:",
+      "startS": 39.17,
+      "endS": 42.938,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "how many are active, how they split between dollars off and percent off.",
+      "startS": 43.19,
+      "endS": 45.7,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "But the row that answers questions is Amount, next to Discount Type.",
+      "startS": 46.218,
+      "endS": 50.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "That pair tells you fast whether a discount takes three dollars off or ten percent.",
+      "startS": 50.617,
+      "endS": 55.599,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Open one discount and it behaves like a service.",
+      "startS": 56,
+      "endS": 58.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "A detail view, an Active Locations tab, the sites where it's live,",
+      "startS": 59.199,
+      "endS": 60.144,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "and per-location overrides underneath.",
+      "startS": 60.358,
+      "endS": 63.395,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "That's how one discount is three dollars off at one wash and two at another.",
+      "startS": 63.605,
+      "endS": 66.171,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "We couldn't pull this exact screen from today's capture,",
+      "startS": 66.406,
+      "endS": 70.534,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "so lean on the Services lesson as your reference until we grab it live.",
+      "startS": 71.14,
+      "endS": 78.03,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "Look, don't save.",
+      "startS": 78.64,
+      "endS": 79.951,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Discount Types is the short list behind that column.",
+      "startS": 80.8,
+      "endS": 84.18,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Four categories, nothing more.",
+      "startS": 85.073,
+      "endS": 86.899,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Whatever shows under Discount Type on the list you just saw is filed from here.",
+      "startS": 87.543,
+      "endS": 91.913,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Surcharges are the mirror of a discount.",
+      "startS": 92.4,
+      "endS": 94.835,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Same idea, opposite sign.",
+      "startS": 95.251,
+      "endS": 96.1,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "An added fee, with an amount, a code, and a taxable flag",
+      "startS": 96.312,
+      "endS": 97.168,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "that decides whether tax rides on top of the fee.",
+      "startS": 97.777,
+      "endS": 104.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Surcharge Types carries one flag worth knowing.",
+      "startS": 104.56,
+      "endS": 107.318,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Disallow Discounts.",
+      "startS": 107.822,
+      "endS": 109.171,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Switch it on, and a discount can't stack on a ticket that already has this surcharge.",
+      "startS": 109.678,
+      "endS": 114.195,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "That single control settles a lot of pricing arguments.",
+      "startS": 114.597,
+      "endS": 117.748,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Payout Percentage is a band table.",
+      "startS": 118.258,
+      "endS": 120.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Each row is a range, a start and an end, with a percentage inside it.",
+      "startS": 120.836,
+      "endS": 125.143,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "A value drops into whichever band it lands in.",
+      "startS": 125.606,
+      "endS": 128.149,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Tiered, not flat.",
+      "startS": 128.441,
+      "endS": 129.787,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Tax Rates feeds the rest of the platform.",
+      "startS": 130.309,
+      "endS": 132.619,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Every rate here is what a service reaches for in its two tax slots.",
+      "startS": 132.957,
+      "endS": 136.926,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "So when a wash rings up the wrong tax, don't start at the service.",
+      "startS": 137.294,
+      "endS": 141.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Start here, and check which rate is the default.",
+      "startS": 142.053,
+      "endS": 143.991,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Down to accounting.",
+      "startS": 144.48,
+      "endS": 145.615,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "General Ledger Codes.",
+      "startS": 145.615,
+      "endS": 146.75,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "One small catch worth remembering:",
+      "startS": 146.75,
+      "endS": 149.275,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "the sidebar says General Ledger Codes, the page header says G-L Codes.",
+      "startS": 149.275,
+      "endS": 154.463,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Same page.",
+      "startS": 154.463,
+      "endS": 155.22,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "These codes are what your exports post against,",
+      "startS": 155.22,
+      "endS": 158.995,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "and a wrong one here is a classic month-end headache.",
+      "startS": 158.995,
+      "endS": 162.778,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "G-L Account Codes is the partner list.",
+      "startS": 163.28,
+      "endS": 165.801,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Same three columns, same shape.",
+      "startS": 166.247,
+      "endS": 168.26,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "Here's the split: G-L Codes name the ledger lines,",
+      "startS": 168.655,
+      "endS": 169.452,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "and G-L Account Codes tie them to accounts for the export.",
+      "startS": 169.943,
+      "endS": 175.202,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "The two work as a pair.",
+      "startS": 175.522,
+      "endS": 176.759,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "That's the whole group.",
+      "startS": 177.2,
+      "endS": 178.891,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Nine pages, one sidebar.",
+      "startS": 178.891,
+      "endS": 180.226,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Tender in Payment Types.",
+      "startS": 180.226,
+      "endS": 182.831,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "Price changes in Discounts and Surcharges.",
+      "startS": 182.831,
+      "endS": 185.222,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "Tiered payouts, tax, and the two ledger lists.",
+      "startS": 185.222,
+      "endS": 188.162,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "When a billing question comes in, you already know which page owns the answer.",
+      "startS": 188.162,
+      "endS": 194.032,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "And you got there without touching a single setting.",
+      "startS": 194.032,
+      "endS": 197.036,
+      "timing": "proportional"
+    }
+  ]
+}

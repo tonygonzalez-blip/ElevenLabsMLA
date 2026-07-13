@@ -1,0 +1,2105 @@
+{
+  "lesson": "WC-13-02",
+  "title": "Reports & Audit: Audit Trio (Audit Log, User Activity, Change History)",
+  "audioMaster": "training/module13-reports-audit/WC-13-02-full-narration-v1.0.mp3",
+  "audioDurationS": 228.284,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railITSupport": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/IT ?& ?Support/i.test(e.getAttribute('title')||e.textContent||''))"
+    },
+    "auditGroupHdr": {
+      "js": "(()=>{const a=[...document.querySelectorAll('aside.sidebar *')].filter(e=>e.children.length===0&&/^audit$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0);return a.length?a[a.length-1]:null})()"
+    },
+    "sideAuditLog": {
+      "selector": "aside.sidebar a[href=\"audit-log.html\"]"
+    },
+    "sideUserActivity": {
+      "selector": "aside.sidebar a[href=\"audit-users.html\"]"
+    },
+    "sideChangeHistory": {
+      "selector": "aside.sidebar a[href=\"audit-changes.html\"]"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "kpiTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "kpiTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "kpiTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "alChartVolume": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Event Volume/.test(c.textContent||''))"
+    },
+    "alChartActions": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Action Types/.test(c.textContent||''))"
+    },
+    "alChartSeverity": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Event Severity/.test(c.textContent||''))"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thIPAddress": {
+      "text": "IP Address",
+      "scope": "table thead th"
+    },
+    "thRole": {
+      "text": "Role",
+      "scope": "table thead th"
+    },
+    "thLoginsThisMonth": {
+      "text": "Logins This Month",
+      "scope": "table thead th"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thField": {
+      "text": "Field",
+      "scope": "table thead th"
+    },
+    "thOldValue": {
+      "text": "Old Value",
+      "scope": "table thead th"
+    },
+    "thNewValue": {
+      "text": "New Value",
+      "scope": "table thead th"
+    },
+    "deletedActionCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(tr=>[...tr.children].some(td=>(td.textContent||'').trim()==='Deleted'));return r?[...r.children].find(td=>(td.textContent||'').trim()==='Deleted'):null})()"
+    },
+    "deletedRecordCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(tr=>[...tr.children].some(td=>(td.textContent||'').trim()==='Deleted'));return r?[...r.children].find(td=>/^Payment #/.test((td.textContent||'').trim())):null})()"
+    },
+    "priceFieldCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(tr=>[...tr.children].some(td=>(td.textContent||'').trim()==='Monthly Price'));return r?[...r.children].find(td=>(td.textContent||'').trim()==='Monthly Price'):null})()"
+    },
+    "priceOldCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(tr=>[...tr.children].some(td=>(td.textContent||'').trim()==='Monthly Price'));return r?[...r.children].find(td=>(td.textContent||'').trim()==='$29.99'):null})()"
+    },
+    "priceNewCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr')].find(tr=>[...tr.children].some(td=>(td.textContent||'').trim()==='Monthly Price'));return r?[...r.children].find(td=>(td.textContent||'').trim()==='$34.99'):null})()"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^\\+?\\s*New Record$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onAuditLog": "location.pathname.endsWith('/audit-log.html')",
+    "onUserActivity": "location.pathname.endsWith('/audit-users.html')",
+    "onChangeHistory": "location.pathname.endsWith('/audit-changes.html')",
+    "sidebarExpanded": "!document.querySelector('.app')||!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "startReady": "location.pathname.endsWith('/command-center.html')&&document.readyState==='complete'&&document.querySelectorAll('.wc-rail-item').length>=10&&window.scrollY<=8",
+    "itSupportReady": "!!document.querySelector('aside.sidebar a[href=\"audit-log.html\"]')&&!!document.querySelector('aside.sidebar a[href=\"audit-users.html\"]')&&!!document.querySelector('aside.sidebar a[href=\"audit-changes.html\"]')&&!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "auditLogReady": "location.pathname.endsWith('/audit-log.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&document.querySelectorAll('table thead th').length>=7&&document.querySelectorAll('.a-chart-card').length>=3&&document.querySelectorAll('table tbody tr').length===4&&!!document.querySelector('aside.sidebar a[href=\"audit-changes.html\"]')&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "userActivityReady": "location.pathname.endsWith('/audit-users.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&document.querySelectorAll('table thead th').length>=6&&document.querySelectorAll('table tbody tr').length===4&&!!document.querySelector('aside.sidebar a[href=\"audit-log.html\"]')",
+    "changeHistoryReady": "location.pathname.endsWith('/audit-changes.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&document.querySelectorAll('table thead th').length>=6&&document.querySelectorAll('table tbody tr').length===3&&!!document.querySelector('aside.sidebar a[href=\"audit-log.html\"]')",
+    "auditLogUnchanged": "location.pathname.endsWith('/audit-log.html')&&document.querySelectorAll('table tbody tr').length===4",
+    "userActUnchanged": "location.pathname.endsWith('/audit-users.html')&&document.querySelectorAll('table tbody tr').length===4",
+    "changeHistUnchanged": "location.pathname.endsWith('/audit-changes.html')&&document.querySelectorAll('table tbody tr').length===3"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start on the Dashboard command center (shot-list pre-roll start URL); the IT & Support workspace opens from the global rail in step 1"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "startReady",
+      "note": "command-center loaded, global rail present (>=10 module icons), scrolled to top"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.3,
+      "from": [
+        2,
+        760
+      ],
+      "to": {
+        "target": "railITSupport",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "cursor enters toward the global-rail IT & Support icon (p01 'Open I-T and Support')"
+    },
+    {
+      "op": "click",
+      "target": "railITSupport",
+      "pressAt": 2.2,
+      "hoverMs": 420,
+      "postcondition": "itSupportReady",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 1: 'Open I-T and Support' (p01, cue ends 1.93) — genuine global-rail navigation into the IT & Support workspace; lands on its default page (support-tickets) with the sidebar expanded showing SUPPORT + AUDIT groups. Probe-verified July 11: the rail button navigates and expands the sidebar; not a destructive control."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "itSupportStable",
+      "predicate": "itSupportReady",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 3.6,
+      "to": 227,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2500,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "log-rects",
+      "at": 3.1,
+      "key": "auditGroup",
+      "targets": [
+        "auditGroupHdr",
+        "sideAuditLog",
+        "sideUserActivity",
+        "sideChangeHistory"
+      ],
+      "note": "the AUDIT group: header + three links (callout 1 brackets them)"
+    },
+    {
+      "op": "move",
+      "at": 3.4,
+      "to": {
+        "point": [
+          232,
+          205
+        ]
+      },
+      "note": "step 1: begin the slow sidebar sweep at the top (SUPPORT tools) — p02 'past the support tools'"
+    },
+    {
+      "op": "move",
+      "at": 5.5,
+      "to": {
+        "point": [
+          232,
+          360
+        ]
+      },
+      "note": "sweep down toward the AUDIT group header (p02 'sits a small group called Audit')"
+    },
+    {
+      "op": "move",
+      "at": 7.7,
+      "to": {
+        "point": [
+          232,
+          415
+        ]
+      },
+      "note": "over the AUDIT group — p03 'Three pages' (slow sweep, no click)"
+    },
+    {
+      "op": "move",
+      "at": 9.3,
+      "to": {
+        "point": [
+          232,
+          468
+        ]
+      },
+      "note": "bottom of the AUDIT group (p04)"
+    },
+    {
+      "op": "move",
+      "at": 11.6,
+      "to": {
+        "point": [
+          200,
+          545
+        ]
+      },
+      "note": "settle in empty sidebar space below the group while p04 finishes ('who-did-this question')"
+    },
+    {
+      "op": "move",
+      "at": 12.9,
+      "to": {
+        "point": [
+          200,
+          520
+        ]
+      },
+      "note": "stage near the sidebar so the step-2 approach starts at the cue, not before"
+    },
+    {
+      "op": "click",
+      "target": "sideAuditLog",
+      "pressAt": 15.4,
+      "hoverMs": 420,
+      "postcondition": "onAuditLog",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 2: 'Open the Audit Log' (p05, cue ends 15.09) — genuine sidebar navigation into the Audit Log; press inside the rendered break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "auditLogStable",
+      "predicate": "auditLogReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "watch",
+      "key": "auditLogHeld",
+      "from": 19,
+      "to": 114,
+      "predicate": "auditLogUnchanged",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "guardrail: proves the Audit Log stays read-only across steps 2-8 — row count stays 4 (no create/delete) and we never leave the page (no Export navigation)"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.5,
+      "key": "breadcrumbRect",
+      "target": "breadcrumb",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 16.7,
+      "key": "alKpiStrip",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "move",
+      "at": 16.9,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          -2
+        ]
+      },
+      "note": "step 2: 'Open the Audit Log' / breadcrumb Audit > Audit Log (p05-p06) — callout 2"
+    },
+    {
+      "op": "move",
+      "at": 19.6,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 2: 'the master feed... a dashboard on top' (p07-p08) — the KPI band overview"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.8,
+      "key": "alKpiTile4",
+      "target": "kpiTile4"
+    },
+    {
+      "op": "log-rect",
+      "at": 20,
+      "key": "alChartVol",
+      "target": "alChartVolume"
+    },
+    {
+      "op": "log-rect",
+      "at": 20.2,
+      "key": "alChartAct",
+      "target": "alChartActions"
+    },
+    {
+      "op": "log-rect",
+      "at": 20.4,
+      "key": "alChartSev",
+      "target": "alChartSeverity"
+    },
+    {
+      "op": "log-rect",
+      "at": 20.6,
+      "key": "alThead",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 20.8,
+      "key": "alThIP",
+      "target": "thIPAddress"
+    },
+    {
+      "op": "log-rect",
+      "at": 21,
+      "key": "alExport",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 21.2,
+      "key": "alNewRec",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 21.4,
+      "key": "alDeletedAction",
+      "target": "deletedActionCell"
+    },
+    {
+      "op": "log-rect",
+      "at": 21.6,
+      "key": "alDeletedRecord",
+      "target": "deletedRecordCell"
+    },
+    {
+      "op": "move",
+      "at": 22.8,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -640,
+          0
+        ]
+      },
+      "note": "step 2: 'in one running list, newest first' (p07) — the list header row (Date/Time end), no rows pointed at"
+    },
+    {
+      "op": "move",
+      "at": 26.9,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 3: 'Start with the four tiles' (p09)"
+    },
+    {
+      "op": "move",
+      "at": 29.7,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 3: 'Events today...' (p10) — sweep across the four tiles"
+    },
+    {
+      "op": "move",
+      "at": 30.7,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 31.7,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 32.9,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 3: 'how many events tripped a critical flag' (p11) — the Critical Events tile"
+    },
+    {
+      "op": "move",
+      "at": 35.3,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "hold on Critical Events through p12 ('normal or busy')"
+    },
+    {
+      "op": "move",
+      "at": 41.5,
+      "to": {
+        "target": "alChartVolume",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 4: 'To the left, the yearly trend' (p13) — the Event Volume panel"
+    },
+    {
+      "op": "move",
+      "at": 44,
+      "to": {
+        "target": "alChartVolume",
+        "offset": [
+          70,
+          30
+        ]
+      },
+      "note": "step 4: 'a single line, ticking up' (p14) — hover the trend line"
+    },
+    {
+      "op": "move",
+      "at": 48,
+      "to": {
+        "target": "alChartVolume",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 4: 'context, not an alarm' (p15)"
+    },
+    {
+      "op": "move",
+      "at": 53.1,
+      "to": {
+        "target": "alChartActions",
+        "offset": [
+          0,
+          -42
+        ]
+      },
+      "note": "step 5: 'the split by action' (p16) — the Action Types panel, By event category"
+    },
+    {
+      "op": "move",
+      "at": 55.7,
+      "to": {
+        "target": "alChartActions",
+        "offset": [
+          0,
+          6
+        ]
+      },
+      "note": "step 5: 'edits and new records' (p17) — Updated / Created bars"
+    },
+    {
+      "op": "move",
+      "at": 58.6,
+      "to": {
+        "target": "alChartActions",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 5: 'Logins are a chunk' (p18) — Login / Logout bar"
+    },
+    {
+      "op": "move",
+      "at": 60.4,
+      "to": {
+        "target": "alChartActions",
+        "offset": [
+          0,
+          72
+        ]
+      },
+      "note": "step 5: 'Deletions are the thin slice at the bottom' (p19) — the Deleted 7% bar"
+    },
+    {
+      "op": "move",
+      "at": 63,
+      "to": {
+        "target": "alChartActions",
+        "offset": [
+          0,
+          72
+        ]
+      },
+      "note": "hold on the Deleted bar through p20"
+    },
+    {
+      "op": "move",
+      "at": 67.2,
+      "to": {
+        "target": "alChartSeverity",
+        "offset": [
+          0,
+          -42
+        ]
+      },
+      "note": "step 6: 'severity' (p21) — the Event Severity panel"
+    },
+    {
+      "op": "move",
+      "at": 69.2,
+      "to": {
+        "target": "alChartSeverity",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6: 'Nearly everything is normal' (p22)"
+    },
+    {
+      "op": "move",
+      "at": 71.2,
+      "to": {
+        "target": "alChartSeverity",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 6: 'A little is a warning' (p23)"
+    },
+    {
+      "op": "move",
+      "at": 72.9,
+      "to": {
+        "target": "alChartSeverity",
+        "offset": [
+          0,
+          60
+        ]
+      },
+      "note": "step 6: 'A sliver is critical' (p24)"
+    },
+    {
+      "op": "move",
+      "at": 75.6,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 6: '...the same three events the top tile just flagged' (p24) — tie back to the Critical Events tile"
+    },
+    {
+      "op": "move",
+      "at": 78.9,
+      "to": {
+        "point": [
+          1600,
+          300
+        ]
+      },
+      "note": "step 6: 'Two views of one number' (p25) — settle between the tile and the panel"
+    },
+    {
+      "op": "move",
+      "at": 81.3,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -640,
+          0
+        ]
+      },
+      "note": "step 7: 'Now the list itself' (p26) — the header row, left end"
+    },
+    {
+      "op": "move",
+      "at": 83.4,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -640,
+          0
+        ]
+      },
+      "note": "step 7: 'Read a row left to right' (p27)"
+    },
+    {
+      "op": "move",
+      "at": 84.7,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -120,
+          0
+        ]
+      },
+      "note": "step 7: sweep across the headers (p28: when, who, what, module, record, location)"
+    },
+    {
+      "op": "move",
+      "at": 86.7,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          360,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 88.9,
+      "to": {
+        "target": "thIPAddress",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7: 'and the I-P address it came from' (p29) — the IP ADDRESS column header (header, not any row value)"
+    },
+    {
+      "op": "move",
+      "at": 92.2,
+      "to": {
+        "target": "thIPAddress",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "hold on the IP ADDRESS header"
+    },
+    {
+      "op": "move",
+      "at": 94.9,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -44,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 7 guardrail: 'There are Export and New Record buttons... Leave them' (p30-p31) — point BESIDE Export, never on it, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 97.8,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -44,
+          46
+        ],
+        "outside": true
+      },
+      "note": "hold the guardrail through p31 ('reading, not changing')"
+    },
+    {
+      "op": "move",
+      "at": 100.5,
+      "to": {
+        "target": "deletedActionCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: 'Find the deleted event' (p32) — approach the Deleted action cell (a status verb, not a personal value)"
+    },
+    {
+      "op": "move",
+      "at": 102.6,
+      "to": {
+        "target": "deletedActionCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: 'a payment record, removed' (p33) — the Deleted cell"
+    },
+    {
+      "op": "move",
+      "at": 103.9,
+      "to": {
+        "target": "deletedRecordCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: the record it touched (p33) — the Payment #TKT-10880 cell (a ticket id, not personal); the USER name and IP value cells are never pointed at (safety)"
+    },
+    {
+      "op": "move",
+      "at": 106.1,
+      "to": {
+        "target": "deletedRecordCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: 'That's the power of this page' (p34)"
+    },
+    {
+      "op": "move",
+      "at": 109,
+      "to": {
+        "target": "deletedActionCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: 'you don't guess who touched it' (p35) — back to the Deleted action"
+    },
+    {
+      "op": "move",
+      "at": 111.2,
+      "to": {
+        "target": "deletedActionCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: 'You read the row' (p36)"
+    },
+    {
+      "op": "move",
+      "at": 114.2,
+      "to": {
+        "point": [
+          200,
+          500
+        ]
+      },
+      "note": "stage near the sidebar so the step-9 approach starts at the cue"
+    },
+    {
+      "op": "click",
+      "target": "sideUserActivity",
+      "pressAt": 116.5,
+      "hoverMs": 400,
+      "postcondition": "onUserActivity",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: 'Move to User Activity' (p37, cue ends 116.38) — reached ONLY via the AUDIT sidebar link (direct URL 404'd July 9); genuine navigation, press inside the rendered break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "userActivityStable",
+      "predicate": "userActivityReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "watch",
+      "key": "userActHeld",
+      "from": 118.6,
+      "to": 156,
+      "predicate": "userActUnchanged",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "guardrail: User Activity stays read-only across steps 9-11 (4 rows, page unchanged)"
+    },
+    {
+      "op": "log-rect",
+      "at": 117.2,
+      "key": "uaBreadcrumb",
+      "target": "breadcrumb",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 117.4,
+      "key": "uaKpiStrip",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "move",
+      "at": 117.6,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          -2
+        ]
+      },
+      "note": "step 9: breadcrumb Audit > User Activity (p38) — callout 9 ('reach by sidebar link, not URL')"
+    },
+    {
+      "op": "log-rect",
+      "at": 118,
+      "key": "uaKpiTile4",
+      "target": "kpiTile4"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.2,
+      "key": "uaThead",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 118.4,
+      "key": "uaThRole",
+      "target": "thRole"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.6,
+      "key": "uaThLogins",
+      "target": "thLoginsThisMonth"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.8,
+      "key": "uaThStatus",
+      "target": "thStatus"
+    },
+    {
+      "op": "move",
+      "at": 121.5,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 9: 'who's signing in, how often...' (p39) — the KPI band overview"
+    },
+    {
+      "op": "move",
+      "at": 125.9,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 10: 'Its tiles lead with the sign-in picture' (p40) — Active Users"
+    },
+    {
+      "op": "move",
+      "at": 128.5,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 10: 'Active users, logins today, average session length' (p41)"
+    },
+    {
+      "op": "move",
+      "at": 129.5,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 130.9,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 10: 'the one you'll reach for most: failed logins' (p42) — the Failed Logins tile"
+    },
+    {
+      "op": "move",
+      "at": 133,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "hold on Failed Logins through p43 (locked-out cashier)"
+    },
+    {
+      "op": "move",
+      "at": 140.1,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -600,
+          0
+        ]
+      },
+      "note": "step 11: 'The table fills in the rest' (p44) — header row, left end"
+    },
+    {
+      "op": "move",
+      "at": 142.1,
+      "to": {
+        "target": "thRole",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: 'their role' (p45) — the ROLE header (headers only; row name cells never pointed at)"
+    },
+    {
+      "op": "move",
+      "at": 143.7,
+      "to": {
+        "target": "thLoginsThisMonth",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: 'how many times this month' (p45) — LOGINS THIS MONTH header"
+    },
+    {
+      "op": "move",
+      "at": 145.3,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: 'from where' (p45) — LOCATION header"
+    },
+    {
+      "op": "move",
+      "at": 147.2,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: 'whether the account is active' (p46) — STATUS header"
+    },
+    {
+      "op": "move",
+      "at": 150.5,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: 'a quiet but common question' (p47)"
+    },
+    {
+      "op": "move",
+      "at": 153.3,
+      "to": {
+        "target": "thRole",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11: 'signing in, and as what' (p48) — back to ROLE"
+    },
+    {
+      "op": "move",
+      "at": 156.3,
+      "to": {
+        "point": [
+          200,
+          500
+        ]
+      },
+      "note": "stage near the sidebar so the step-12 approach starts at the cue"
+    },
+    {
+      "op": "click",
+      "target": "sideChangeHistory",
+      "pressAt": 157.9,
+      "hoverMs": 380,
+      "postcondition": "onChangeHistory",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 12: 'Last page. Change History' (p49, cue ends 157.70) — reached ONLY via the AUDIT sidebar link (direct URL 404'd July 9); genuine navigation, press inside the 0.34s rendered break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "changeHistoryStable",
+      "predicate": "changeHistoryReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "watch",
+      "key": "changeHistHeld",
+      "from": 161.5,
+      "to": 224,
+      "predicate": "changeHistUnchanged",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "guardrail: Change History stays read-only across steps 12-16 (3 rows, page unchanged)"
+    },
+    {
+      "op": "log-rect",
+      "at": 159.4,
+      "key": "chBreadcrumb",
+      "target": "breadcrumb",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 159.6,
+      "key": "chKpiStrip",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "move",
+      "at": 159.8,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          -2
+        ]
+      },
+      "note": "step 12: breadcrumb Audit > Change History (p50) — callout 12 ('reach by sidebar link, not URL')"
+    },
+    {
+      "op": "log-rect",
+      "at": 160.2,
+      "key": "chKpiTile3",
+      "target": "kpiTile3"
+    },
+    {
+      "op": "log-rect",
+      "at": 160.4,
+      "key": "chKpiTile4",
+      "target": "kpiTile4"
+    },
+    {
+      "op": "log-rect",
+      "at": 160.6,
+      "key": "chThead",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 160.8,
+      "key": "chThField",
+      "target": "thField"
+    },
+    {
+      "op": "log-rect",
+      "at": 161,
+      "key": "chThOld",
+      "target": "thOldValue"
+    },
+    {
+      "op": "log-rect",
+      "at": 161.2,
+      "key": "chThNew",
+      "target": "thNewValue"
+    },
+    {
+      "op": "log-rect",
+      "at": 161.4,
+      "key": "chPriceField",
+      "target": "priceFieldCell"
+    },
+    {
+      "op": "log-rect",
+      "at": 161.6,
+      "key": "chPriceOld",
+      "target": "priceOldCell"
+    },
+    {
+      "op": "log-rect",
+      "at": 161.8,
+      "key": "chPriceNew",
+      "target": "priceNewCell"
+    },
+    {
+      "op": "move",
+      "at": 162,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 12: 'exactly which field moved, and what it was before' (p51) — toward the FIELD/OLD/NEW headers"
+    },
+    {
+      "op": "move",
+      "at": 167.9,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 13: 'The tiles count the churn' (p52) — Changes Today"
+    },
+    {
+      "op": "move",
+      "at": 169.9,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 13: 'changes today, this week' (p53)"
+    },
+    {
+      "op": "move",
+      "at": 170.7,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 171.5,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 13: 'splits between configuration and everyday data' (p54) — Config Changes"
+    },
+    {
+      "op": "move",
+      "at": 172.4,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 13: Data Changes (p54)"
+    },
+    {
+      "op": "move",
+      "at": 173.2,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          8
+        ]
+      },
+      "note": "step 13: 'a pulse on how much is being edited' (p55)"
+    },
+    {
+      "op": "move",
+      "at": 180.3,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -600,
+          0
+        ]
+      },
+      "note": "step 14: 'the columns are the payoff' (p56) — header row, left end"
+    },
+    {
+      "op": "move",
+      "at": 182.4,
+      "to": {
+        "target": "thField",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14: 'names the exact field that changed' (p57) — the FIELD header"
+    },
+    {
+      "op": "move",
+      "at": 184.9,
+      "to": {
+        "target": "thOldValue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14: 'the old value... side by side' (p58) — OLD VALUE header"
+    },
+    {
+      "op": "move",
+      "at": 186.6,
+      "to": {
+        "target": "thNewValue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14: NEW VALUE header (p58)"
+    },
+    {
+      "op": "move",
+      "at": 191.4,
+      "to": {
+        "target": "thNewValue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 14: 'No other audit page does that' (p59)"
+    },
+    {
+      "op": "move",
+      "at": 193.9,
+      "to": {
+        "target": "priceFieldCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: 'Picture a membership price' (p60) — approach the Monthly Price field cell (not a personal value; the USER cell in this row is never pointed at)"
+    },
+    {
+      "op": "move",
+      "at": 196.1,
+      "to": {
+        "target": "priceFieldCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: 'a monthly rate' (p61) — Monthly Price FIELD cell"
+    },
+    {
+      "op": "move",
+      "at": 202.9,
+      "to": {
+        "target": "priceOldCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: 'twenty-nine ninety-nine...' (p62) — OLD VALUE $29.99"
+    },
+    {
+      "op": "move",
+      "at": 204.7,
+      "to": {
+        "target": "priceNewCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: '...to thirty-four ninety-nine' (p62) — NEW VALUE $34.99"
+    },
+    {
+      "op": "move",
+      "at": 207.4,
+      "to": {
+        "target": "priceOldCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: 'before on one side' (p63)"
+    },
+    {
+      "op": "move",
+      "at": 208.5,
+      "to": {
+        "target": "priceNewCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: 'after on the other' (p63)"
+    },
+    {
+      "op": "move",
+      "at": 209.8,
+      "to": {
+        "target": "priceNewCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: 'this is the receipt' (p64)"
+    },
+    {
+      "op": "log-rects",
+      "at": 211.3,
+      "key": "auditGroup2",
+      "targets": [
+        "sideAuditLog",
+        "sideUserActivity",
+        "sideChangeHistory"
+      ],
+      "note": "re-log the AUDIT group on Change History for the recap graphics (callout 16)"
+    },
+    {
+      "op": "move",
+      "at": 211.6,
+      "to": {
+        "point": [
+          232,
+          360
+        ]
+      },
+      "note": "step 16: 'three pages, three questions' (p65) — return the cursor to the AUDIT group"
+    },
+    {
+      "op": "move",
+      "at": 214.3,
+      "to": {
+        "point": [
+          232,
+          398
+        ]
+      },
+      "note": "step 16: 'What happened... That's the Audit Log' (p66) — beside Audit Log"
+    },
+    {
+      "op": "move",
+      "at": 217.9,
+      "to": {
+        "point": [
+          232,
+          432
+        ]
+      },
+      "note": "step 16: 'Who's getting in... User Activity' (p67)"
+    },
+    {
+      "op": "move",
+      "at": 220.2,
+      "to": {
+        "point": [
+          232,
+          466
+        ]
+      },
+      "note": "step 16: 'Who changed which field... Change History' (p68)"
+    },
+    {
+      "op": "move",
+      "at": 223.7,
+      "to": {
+        "point": [
+          200,
+          545
+        ]
+      },
+      "note": "step 16: 'Match the ticket to the page' (p69) — settle below the group for the close"
+    },
+    {
+      "op": "assert",
+      "at": 226.6,
+      "predicate": "onChangeHistory",
+      "note": "end on Change History, the last page toured"
+    },
+    {
+      "op": "assert",
+      "at": 227.2,
+      "predicate": "sidebarExpanded"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "auditGroup.sideUserActivity",
+        "place": "right",
+        "from": 3.2,
+        "to": 13.2
+      },
+      {
+        "n": 2,
+        "anchor": "breadcrumbRect",
+        "place": "below-left",
+        "from": 16.9,
+        "to": 22.4
+      },
+      {
+        "n": 3,
+        "anchor": "alKpiStrip",
+        "place": "below-left",
+        "from": 27,
+        "to": 35.2
+      },
+      {
+        "n": 4,
+        "anchor": "alChartVol",
+        "place": "right",
+        "from": 41.6,
+        "to": 52
+      },
+      {
+        "n": 5,
+        "anchor": "alChartAct",
+        "place": "below-left",
+        "from": 53.2,
+        "to": 66
+      },
+      {
+        "n": 6,
+        "anchor": "alChartSev",
+        "place": "left",
+        "from": 67.3,
+        "to": 80.2
+      },
+      {
+        "n": 7,
+        "anchor": "alThIP",
+        "place": "below-left",
+        "from": 88.9,
+        "to": 94.4
+      },
+      {
+        "n": 8,
+        "anchor": "alDeletedAction",
+        "place": "below-left",
+        "from": 102.6,
+        "to": 110.4
+      },
+      {
+        "n": 9,
+        "anchor": "uaBreadcrumb",
+        "place": "below-left",
+        "from": 117.6,
+        "to": 124.8
+      },
+      {
+        "n": 10,
+        "anchor": "uaKpiTile4",
+        "place": "below-left",
+        "from": 130.9,
+        "to": 139
+      },
+      {
+        "n": 11,
+        "anchor": "uaThRole",
+        "place": "below-left",
+        "from": 142.1,
+        "to": 149.6
+      },
+      {
+        "n": 12,
+        "anchor": "chBreadcrumb",
+        "place": "below-left",
+        "from": 159.9,
+        "to": 166.8
+      },
+      {
+        "n": 13,
+        "anchor": "chKpiTile3",
+        "place": "below-left",
+        "from": 171.5,
+        "to": 179.2
+      },
+      {
+        "n": 14,
+        "anchor": "chThOld",
+        "place": "below-left",
+        "from": 184.9,
+        "to": 192.6
+      },
+      {
+        "n": 15,
+        "anchor": "chPriceOld",
+        "place": "below-left",
+        "from": 202.9,
+        "to": 210.4
+      },
+      {
+        "n": 16,
+        "anchor": "auditGroup2.sideUserActivity",
+        "place": "right",
+        "from": 213.9,
+        "to": 224.2
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "auditGroup.sideAuditLog",
+        "from": 7.7,
+        "to": 13.4,
+        "note": "p03-p04: the three AUDIT pages"
+      },
+      {
+        "anchor": "auditGroup.sideUserActivity",
+        "from": 7.9,
+        "to": 13.4
+      },
+      {
+        "anchor": "auditGroup.sideChangeHistory",
+        "from": 8.1,
+        "to": 13.4
+      },
+      {
+        "anchor": "alKpiTile4",
+        "from": 32.9,
+        "to": 35.2,
+        "note": "p11: Critical Events tile"
+      },
+      {
+        "anchor": "alChartVol",
+        "from": 41.6,
+        "to": 52,
+        "note": "p13-p15: Event Volume yearly trend"
+      },
+      {
+        "anchor": "alChartAct",
+        "from": 53.2,
+        "to": 66,
+        "note": "p16-p20: Action Types, Deleted the thin slice"
+      },
+      {
+        "anchor": "alChartSev",
+        "from": 67.3,
+        "to": 78.6,
+        "note": "p21-p24: Event Severity, the critical sliver"
+      },
+      {
+        "anchor": "alThIP",
+        "from": 88.9,
+        "to": 94.2,
+        "note": "p29: the IP ADDRESS column"
+      },
+      {
+        "anchor": "alExport",
+        "from": 94.7,
+        "to": 99.9,
+        "color": "#dc2626",
+        "note": "step 7 guardrail: Export is located, never clicked (do-not-click ring)"
+      },
+      {
+        "anchor": "alNewRec",
+        "from": 94.7,
+        "to": 99.9,
+        "color": "#dc2626",
+        "note": "step 7 guardrail: + New Record is located, never clicked"
+      },
+      {
+        "anchor": "alDeletedAction",
+        "from": 102.6,
+        "to": 108.6,
+        "note": "p33: the Deleted action"
+      },
+      {
+        "anchor": "alDeletedRecord",
+        "from": 103.9,
+        "to": 108.6,
+        "note": "p33: the record removed (Payment #TKT-10880)"
+      },
+      {
+        "anchor": "uaKpiTile4",
+        "from": 130.9,
+        "to": 138.8,
+        "note": "p42: Failed Logins tile"
+      },
+      {
+        "anchor": "uaThRole",
+        "from": 142.1,
+        "to": 146.7,
+        "note": "p45: ROLE"
+      },
+      {
+        "anchor": "uaThLogins",
+        "from": 143.7,
+        "to": 146.7,
+        "note": "p45: LOGINS THIS MONTH"
+      },
+      {
+        "anchor": "chKpiTile3",
+        "from": 171.5,
+        "to": 179.2,
+        "note": "p54: Config Changes"
+      },
+      {
+        "anchor": "chKpiTile4",
+        "from": 172.4,
+        "to": 179.2,
+        "note": "p54: Data Changes"
+      },
+      {
+        "anchor": "chThOld",
+        "from": 184.9,
+        "to": 192.8,
+        "note": "p58: OLD VALUE"
+      },
+      {
+        "anchor": "chThNew",
+        "from": 186.6,
+        "to": 192.8,
+        "note": "p58: NEW VALUE"
+      },
+      {
+        "anchor": "chPriceOld",
+        "from": 202.9,
+        "to": 210.4,
+        "note": "p62-p63: OLD VALUE $29.99"
+      },
+      {
+        "anchor": "chPriceNew",
+        "from": 204.7,
+        "to": 210.4,
+        "note": "p62-p63: NEW VALUE $34.99"
+      },
+      {
+        "anchor": "auditGroup2.sideAuditLog",
+        "from": 213.9,
+        "to": 217.4,
+        "note": "p66: Audit Log — recap in spoken order"
+      },
+      {
+        "anchor": "auditGroup2.sideUserActivity",
+        "from": 217.6,
+        "to": 219.7,
+        "note": "p67: User Activity"
+      },
+      {
+        "anchor": "auditGroup2.sideChangeHistory",
+        "from": 219.9,
+        "to": 223.4,
+        "note": "p68: Change History"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 3.4,
+        "z": 1.34,
+        "cx": 335,
+        "cy": 345,
+        "ease": true,
+        "note": "step 1: sidebar AUDIT group readable"
+      },
+      {
+        "t": 12.6,
+        "z": 1.34,
+        "cx": 335,
+        "cy": 345
+      },
+      {
+        "t": 13.7,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change to Audit Log"
+      },
+      {
+        "t": 16.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 17,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 330,
+        "ease": true,
+        "note": "step 2: Audit Log overview — breadcrumb, KPIs, list"
+      },
+      {
+        "t": 26,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 330
+      },
+      {
+        "t": 26.8,
+        "z": 1.26,
+        "cx": 960,
+        "cy": 150,
+        "ease": true,
+        "note": "step 3: KPI band"
+      },
+      {
+        "t": 32.4,
+        "z": 1.26,
+        "cx": 960,
+        "cy": 150
+      },
+      {
+        "t": 32.9,
+        "z": 1.34,
+        "cx": 1630,
+        "cy": 130,
+        "ease": true,
+        "note": "step 3: 130% on Critical Events tile"
+      },
+      {
+        "t": 35,
+        "z": 1.34,
+        "cx": 1630,
+        "cy": 130
+      },
+      {
+        "t": 35.6,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 150,
+        "ease": true,
+        "note": "back to the band"
+      },
+      {
+        "t": 40.9,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 150
+      },
+      {
+        "t": 41.5,
+        "z": 1.3,
+        "cx": 600,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: Event Volume, left chart"
+      },
+      {
+        "t": 52.2,
+        "z": 1.3,
+        "cx": 600,
+        "cy": 250
+      },
+      {
+        "t": 52.9,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 250,
+        "ease": true,
+        "note": "step 5: Action Types, middle chart"
+      },
+      {
+        "t": 66.2,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 250
+      },
+      {
+        "t": 66.9,
+        "z": 1.24,
+        "cx": 1560,
+        "cy": 190,
+        "ease": true,
+        "note": "step 6: Event Severity + the Critical Events tile"
+      },
+      {
+        "t": 80.3,
+        "z": 1.24,
+        "cx": 1560,
+        "cy": 190
+      },
+      {
+        "t": 81,
+        "z": 1.13,
+        "cx": 1050,
+        "cy": 520,
+        "ease": true,
+        "note": "step 7: full list, headers + Export / + New Record"
+      },
+      {
+        "t": 99.6,
+        "z": 1.13,
+        "cx": 1050,
+        "cy": 520
+      },
+      {
+        "t": 100.4,
+        "z": 1.3,
+        "cx": 1010,
+        "cy": 600,
+        "ease": true,
+        "note": "step 8: Deleted row, Action + Record cells (name/IP cells at the frame edges, never pointed at)"
+      },
+      {
+        "t": 114.2,
+        "z": 1.3,
+        "cx": 1010,
+        "cy": 600
+      },
+      {
+        "t": 114.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change to User Activity"
+      },
+      {
+        "t": 117.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 117.8,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 300,
+        "ease": true,
+        "note": "step 9: User Activity overview — breadcrumb + band"
+      },
+      {
+        "t": 125.2,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 300
+      },
+      {
+        "t": 125.9,
+        "z": 1.26,
+        "cx": 960,
+        "cy": 150,
+        "ease": true,
+        "note": "step 10: User Activity KPI band"
+      },
+      {
+        "t": 130.5,
+        "z": 1.26,
+        "cx": 960,
+        "cy": 150
+      },
+      {
+        "t": 131,
+        "z": 1.34,
+        "cx": 1630,
+        "cy": 130,
+        "ease": true,
+        "note": "step 10: 130% on Failed Logins tile"
+      },
+      {
+        "t": 139,
+        "z": 1.34,
+        "cx": 1630,
+        "cy": 130
+      },
+      {
+        "t": 139.7,
+        "z": 1.2,
+        "cx": 1050,
+        "cy": 500,
+        "ease": true,
+        "note": "step 11: User Activity columns"
+      },
+      {
+        "t": 156,
+        "z": 1.2,
+        "cx": 1050,
+        "cy": 500
+      },
+      {
+        "t": 156.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change to Change History"
+      },
+      {
+        "t": 159.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 159.9,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 300,
+        "ease": true,
+        "note": "step 12: Change History overview — breadcrumb"
+      },
+      {
+        "t": 167.2,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 300
+      },
+      {
+        "t": 167.9,
+        "z": 1.26,
+        "cx": 960,
+        "cy": 150,
+        "ease": true,
+        "note": "step 13: Change History KPI band"
+      },
+      {
+        "t": 179.5,
+        "z": 1.26,
+        "cx": 960,
+        "cy": 150
+      },
+      {
+        "t": 180.2,
+        "z": 1.2,
+        "cx": 1250,
+        "cy": 500,
+        "ease": true,
+        "note": "step 14: Change History columns — FIELD / OLD / NEW"
+      },
+      {
+        "t": 193,
+        "z": 1.2,
+        "cx": 1250,
+        "cy": 500
+      },
+      {
+        "t": 193.8,
+        "z": 1.34,
+        "cx": 1480,
+        "cy": 560,
+        "ease": true,
+        "note": "step 15: 130% on the Monthly Price row, OLD -> NEW (the USER cell falls at the left edge, off-focus)"
+      },
+      {
+        "t": 210.8,
+        "z": 1.34,
+        "cx": 1480,
+        "cy": 560
+      },
+      {
+        "t": 211.4,
+        "z": 1.3,
+        "cx": 340,
+        "cy": 415,
+        "ease": true,
+        "note": "step 16: sidebar recap of the AUDIT group"
+      },
+      {
+        "t": 223.4,
+        "z": 1.3,
+        "cx": 340,
+        "cy": 415
+      },
+      {
+        "t": 224.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 228.284,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Audit Trio — Complete",
+      "from": 226.5,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 226.2
+  },
+  "output": "WC-13-02-audit-trio-v1.1",
+  "neverClick": [
+    "export",
+    "+ new record",
+    "filters",
+    "search (audit-log list search button)",
+    "search ⌘k",
+    "ask shyne",
+    "log out now",
+    "logout",
+    "stay logged in",
+    "stay active",
+    "table rows / row links",
+    "row checkboxes / select-all",
+    "pagination page buttons (‹ 1 ›)"
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "lesson": "WC-02-01",
+  "generatedISO": "2026-07-11T22:10:01.929Z",
+  "checks": [
+    {
+      "id": 1,
+      "name": "1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "id": 2,
+      "name": "exact 30 fps",
+      "pass": true,
+      "detail": "30"
+    },
+    {
+      "id": 3,
+      "name": "progressive",
+      "pass": true,
+      "detail": "progressive"
+    },
+    {
+      "id": 4,
+      "name": "approved audio stream-copied unchanged",
+      "pass": true,
+      "detail": "src a1d5da731f8b56d1dd4dedcd45028e88 vs out a1d5da731f8b56d1dd4dedcd45028e88"
+    },
+    {
+      "id": 5,
+      "name": "entire approved audio present",
+      "pass": true,
+      "detail": "packets src 8919 == out 8919; md5 identical"
+    },
+    {
+      "id": 6,
+      "name": "video continues ~300-500ms beyond audio",
+      "pass": true,
+      "detail": "tail 414ms"
+    },
+    {
+      "id": 7,
+      "name": "first frame not center cursor",
+      "pass": true,
+      "detail": "t0 pointer 2,880"
+    },
+    {
+      "id": 8,
+      "name": "every click inside live target rect",
+      "pass": true,
+      "detail": "9 clicks"
+    },
+    {
+      "id": 9,
+      "name": "clicks preceded by arrival + readable hover",
+      "pass": true,
+      "detail": "railCRM:451ms, sideCustomers:358ms, filtersBtn:425ms, filtersBtn:125ms, retentionBtn:429ms, sideCustomers:434ms, searchInput:330ms, searchBtn:143ms, searchInput:403ms"
+    },
+    {
+      "id": 10,
+      "name": "no app action before cursor arrival",
+      "pass": true,
+      "detail": "arrival<=press<=stateVerified for all"
+    },
+    {
+      "id": 11,
+      "name": "click feedback matches real press frame",
+      "pass": true,
+      "detail": "compositor draws ring at pressT (same event log)"
+    },
+    {
+      "id": 12,
+      "name": "no DOM .click() in interaction flow",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "id": 13,
+      "name": "no hardcoded interaction coords where live resolution exists",
+      "pass": true,
+      "detail": "all clicks resolve a live target"
+    },
+    {
+      "id": 14,
+      "name": "no stale highlight after target disappears",
+      "pass": true,
+      "detail": "menu intervals ; all menu highlights within"
+    },
+    {
+      "id": 15,
+      "name": "no highlight over empty space",
+      "pass": true,
+      "detail": "all anchors have logged rects"
+    },
+    {
+      "id": 16,
+      "name": "required visibility watches held",
+      "pass": true,
+      "detail": "panelOpenDuringExplanation:held=true(8), footerInView:held=true(23), retentionHold:held=true(55), searchFilteredHold:held=true(15)"
+    },
+    {
+      "id": 17,
+      "name": "declared callouts contiguous and anchored",
+      "pass": true,
+      "detail": "1..15 declared, all anchors logged"
+    },
+    {
+      "id": 18,
+      "name": "required close framing present",
+      "pass": true,
+      "detail": "z=1.5 @42.4s"
+    },
+    {
+      "id": 19,
+      "name": "caption wording follows narration order",
+      "pass": true,
+      "detail": "no ordered-mention list declared (captions are verbatim narration)"
+    },
+    {
+      "id": 20,
+      "name": "caption cues align with spoken phrases",
+      "pass": true,
+      "detail": "65 cues monotonic and in-bounds"
+    },
+    {
+      "id": 21,
+      "name": "no caption exceeds two lines",
+      "pass": true,
+      "detail": "all phrases wrap to <=2 lines"
+    },
+    {
+      "id": 22,
+      "name": "captions readable at 50% playback",
+      "pass": true,
+      "detail": "caption font 27px @1080p (>=24px requirement)"
+    },
+    {
+      "id": 23,
+      "name": "captions do not obscure active target",
+      "pass": true,
+      "detail": "all clicks clear of caption region"
+    },
+    {
+      "id": 24,
+      "name": "no loading/partial-render frames after navigation",
+      "pass": true,
+      "detail": "4/4 navs stabilized; freezes: customersStable1 2.426-3.22s, customersStable2 4.639-6.197s, retentionStable 156.24-157.356s, customersStable3 192.542-193.348s"
+    },
+    {
+      "id": 25,
+      "name": "no pointer teleport",
+      "pass": true,
+      "detail": "max sample step within bounds"
+    },
+    {
+      "id": 26,
+      "name": "no unexplained cursor reversal",
+      "pass": true,
+      "detail": "pointer path is a single eased plan per move; reversals only at target arrivals"
+    },
+    {
+      "id": 27,
+      "name": "no login screen",
+      "pass": true,
+      "detail": "flow never touches a sign-in screen (start page is a signed-in app page, not login.html)"
+    },
+    {
+      "id": 28,
+      "name": "no credential on screen",
+      "pass": true,
+      "detail": "signed in off-camera via token flow; no credential UI in capture region"
+    },
+    {
+      "id": 29,
+      "name": "no session-expiration dialog",
+      "pass": true,
+      "detail": "idle dialog not encountered; menu watch clean"
+    },
+    {
+      "id": 30,
+      "name": "forbidden controls never clicked",
+      "pass": true,
+      "detail": "forbidden: delete, + add customer, apply filters, clear all, logout, log out now, row checkboxes / select-all, customer table rows (row-link), pagination page buttons, rows-per-page selector, ask shyne, send"
+    },
+    {
+      "id": 31,
+      "name": "application not modified or visually falsified",
+      "pass": true,
+      "detail": "engine is read-only DOM + CDP input; graphics are external"
+    },
+    {
+      "id": 32,
+      "name": "captions/emphasis/highlights cleared before ending",
+      "pass": true,
+      "detail": "captions clear @230.9s, completion @231.2s"
+    },
+    {
+      "id": 33,
+      "name": "final completion hold and visual fade present",
+      "pass": true,
+      "detail": "fade 10 frames"
+    }
+  ],
+  "residuals": [
+    "Step 4/5 narration says \"the whole interface\" drops to dark; the real app does change the whole interface theme, so no wording-vs-behavior conflict was found. Framing pulls wide at the theme flip so the learner sees the genuine extent of the change."
+  ],
+  "artifacts": {
+    "audioSource": "training/module02-crm/WC-02-01-full-narration-v1.0.mp3",
+    "audioSourceSha256": "ce0cea8c51fabcb1352b9803a322833f9452c57942fa4df2eee3edaf6aac9c68",
+    "audioSourcePacketMD5": "a1d5da731f8b56d1dd4dedcd45028e88",
+    "audioOutputPacketMD5": "a1d5da731f8b56d1dd4dedcd45028e88",
+    "audioCodec": "mp3 44100Hz 1ch",
+    "audioDurationS": 232.986122,
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "pix_fmt": "yuv420p",
+      "codec": "h264",
+      "durationS": 233.4,
+      "field_order": "progressive"
+    },
+    "audioPacketsSource": 8919,
+    "audioPacketsOutput": 8919
+  },
+  "summary": {
+    "total": 33,
+    "passed": 33,
+    "failed": 0
+  }
+}

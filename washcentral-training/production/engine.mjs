@@ -101,7 +101,7 @@ class Engine {
   constructor(cdp, log) { this.cdp = cdp; this.log = log; this.pointer = [960, 1079]; this.watchers = []; }
   now() { return (Date.now() - this.t0) / 1000; }
   async evalRO(expr) { return this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${expr}); })()`); }
-  async resolve(name, { requireStableMs = 160, allowDisabled = false } = {}) {
+  async resolve(name, { requireStableMs = 160, allowDisabled = false, stable = true } = {}) {
     const t = L.targets[name];
     if (!t) throw new Error(`unknown target ${name}`);
     const one = async () => this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${resolveJS(t)}); })()`);
@@ -110,7 +110,11 @@ class Engine {
     await sleep(Math.max(60, requireStableMs / 2));
     const b = await one();
     if (!b) throw new Error(`target vanished during stability check: ${name}`);
-    if (Math.abs(a.rect.x - b.rect.x) > 2 || Math.abs(a.rect.y - b.rect.y) > 2) throw new Error(`target rect unstable: ${name}`);
+    // stable=false: tolerate a wobbling rect (used by hover `move` ops, which only position the
+    // cursor and never press — a metric tile or button that reflows a few px while its data loads
+    // must not abort the lesson). Presses (click via resolveRetry) keep stable=true so a real
+    // press only ever lands on a settled target.
+    if (stable && (Math.abs(a.rect.x - b.rect.x) > 2 || Math.abs(a.rect.y - b.rect.y) > 2)) throw new Error(`target rect unstable: ${name}`);
     if (!b.visible) throw new Error(`target not visible: ${name}`);
     if (b.disabled && !allowDisabled) throw new Error(`target disabled: ${name}`);
     return b;
@@ -167,7 +171,7 @@ class Engine {
     throw new Error(`postcondition failed within ${timeoutMs}ms: ${label || expr}`);
   }
   startWatch(w) {
-    const rec = { key: w.key, samples: [], mustHold: !!w.mustHold, predicate: w.predicate };
+    const rec = { key: w.key, samples: [], mustHold: !!w.mustHold, predicate: w.predicate, holdTolerance: w.holdTolerance || 0 };
     this.log.watches.push(rec);
     const iv = setInterval(async () => {
       const t = this.now();
@@ -195,8 +199,15 @@ class Engine {
         await this.waitUntil(op.at);
         this.pointer = op.from;
         await this.dispatchMove(op.from[0], op.from[1]);
-        const tgt = await this.resolve(op.to.target);
-        const to = [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];
+        // enter to a fixed point or to a resolved target (same `to` shape as the move op)
+        let to;
+        if (op.to.point) to = op.to.point;
+        else {
+          const tgt = await this.resolve(op.to.target, { allowDisabled: true, stable: false });
+          to = op.to.outside
+            ? [tgt.rect.x + (op.to.offset?.[0] || 0), tgt.rect.y + (op.to.offset?.[1] || 0)]
+            : [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];
+        }
         entry.from = op.from; entry.to = to;
         await this.glideTo(to);
       } else if (op.op === 'move') {
@@ -204,7 +215,9 @@ class Engine {
         let to;
         if (op.to.point) to = op.to.point;
         else {
-          const tgt = await this.resolve(op.to.target);
+          // moves point at things; a natively-disabled control (pager on page 1) is fine to point at,
+          // and a reflowing target is fine to hover near (stable=false — a hover never presses)
+          const tgt = await this.resolve(op.to.target, { allowDisabled: true, stable: false });
           to = op.to.outside
             ? [tgt.rect.x + (op.to.offset?.[0] || 0), tgt.rect.y + (op.to.offset?.[1] || 0)]
             : [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];
@@ -279,15 +292,20 @@ class Engine {
       } else if (op.op === 'log-rect') {
         await this.waitUntil(op.at);
         // log-rect only reads geometry for external graphics; a disabled control (e.g. a Send
-        // button with an empty input) is a legitimate thing to point at, never to click
-        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160, allowDisabled: true }, 3000);
+        // button with an empty input) is a legitimate thing to point at, never to click.
+        // Retry generously: post-navigation the target's container (e.g. a KPI strip that
+        // renders after a data fetch) can lag several seconds under record-time CPU load from
+        // the capture encoder; resolveRetry returns the instant it resolves, so a larger cap
+        // only ever costs time in the genuine slow-render case, never on a ready element.
+        const tgt = await this.resolveRetry(op.target, { requireStableMs: op.requireStableMs ?? 160, allowDisabled: true }, 6000);
         entry.rect = tgt.rect; entry.label = tgt.label;
         this.log.rects[op.key] = { t: +this.now().toFixed(3), rect: tgt.rect, label: tgt.label };
       } else if (op.op === 'log-rects') {
         await this.waitUntil(op.at);
         const group = {};
         for (const name of op.targets) {
-          const tgt = await this.resolve(name, { allowDisabled: true });
+          // resolveRetry (not resolve): same post-nav slow-render tolerance as log-rect above.
+          const tgt = await this.resolveRetry(name, { allowDisabled: true }, 6000);
           group[name] = { rect: tgt.rect, label: tgt.label };
         }
         this.log.rects[op.key] = { t: +this.now().toFixed(3), items: group };
@@ -302,6 +320,10 @@ class Engine {
         const stableT = +this.now().toFixed(3);
         this.log.stability[op.key] = { navPressT: nav?.pressT ?? null, readyT: tReady, stableT };
         entry.stableT = stableT;
+      } else if (op.op === 'log') {
+        // documentation-only annotation (e.g. a builder's note in preflight explaining why no
+        // staging is needed); carries no action. Record the note for the event log and do nothing.
+        entry.note = op.note;
       } else throw new Error(`unknown op ${op.op}`);
       entry.ok = true;
     } catch (e) {
@@ -315,8 +337,92 @@ class Engine {
   }
 }
 
+// ---------- stage-window normalization ----------
+// x11grab captures the DISPLAY at +0,0, so the browser VIEWPORT must sit exactly there at
+// exactly 1920x1080. On a WM-less Xvfb, Chromium's kiosk "fullscreen" keeps its default
+// (10,10) window origin and self-sizes to 1919x1079 — which put ~10px black bars across the
+// top/left of every capture and clipped the page's right/bottom edges (WC-01-02 review #10).
+// Normal window state honors exact bounds, so park the toolbar above the screen (negative
+// top) and size the window so the viewport is exactly 1920x1080 at screen (0,0).
+// Runs for rehearse AND record so both stages lay out at identical viewport geometry.
+async function normalizeStageWindow(cdp) {
+  const metrics = async () => JSON.parse(await cdp.eval(
+    'JSON.stringify({iw:innerWidth,ih:innerHeight,ow:outerWidth,oh:outerHeight,sx:screenX,sy:screenY})'));
+  let m = await metrics();
+  if (m.iw === 1920 && m.ih === 1080 && m.sx + Math.round((m.ow - m.iw) / 2) === 0 && m.sy + (m.oh - m.ih) === 0) {
+    console.log('  stage window already normalized (1920x1080 viewport at screen 0,0)');
+    return;
+  }
+  const { windowId } = await cdp.send('Browser.getWindowForTarget', { targetId: cdp.targetId });
+  await cdp.send('Browser.setWindowBounds', { windowId, bounds: { windowState: 'normal' } });
+  await sleep(350);
+  await cdp.send('Browser.setWindowBounds', { windowId, bounds: { left: 0, top: 0, width: 1920, height: 1080 } });
+  await sleep(350);
+  m = await metrics();
+  const K = m.oh - m.ih, KW = m.ow - m.iw;   // browser-chrome height / side-border width
+  await cdp.send('Browser.setWindowBounds', { windowId, bounds: { left: -Math.round(KW / 2), top: -K, width: 1920 + KW, height: 1080 + K } });
+  await sleep(350);
+  m = await metrics();
+  if (m.iw !== 1920 || m.ih !== 1080 || m.sx !== -Math.round(KW / 2) || m.sy !== -K)
+    throw new Error(`stage window normalization failed: ${JSON.stringify(m)} (need 1920x1080 viewport at screen 0,0)`);
+  console.log(`  stage window normalized: 1920x1080 viewport at (0,0), browser chrome parked at y=${-K}`);
+}
+
+// Guard against an unstyled render: the app's external stylesheet is fetched through the
+// egress proxy, and an intermittent bad/empty response gets cached as a 0-rule stylesheet.
+// With no CSS the layout collapses to vertical document flow (block, tens of thousands of px
+// tall), every target falls below the viewport, and every resolve reports "obscured"/"not
+// found". The same bad-shell state also leaves the app's JS-built content (KPI strip, pager,
+// rail toggle) unrendered, so whichever target the on-camera timeline hits first fails
+// "not found" — a different target failing on each run is the tell (not static selector drift).
+// Verify the page is both STYLED and BUILT before capture: styles.css parsed (rules>0), .app is
+// a flex/grid container (not block), document load complete, and the layout is not the collapsed
+// shell (an unstyled/unbuilt document balloons to tens of thousands of px; every real WashCentral
+// page is a single/short screen well under 6000px). If any fails, hard-reload bypassing cache
+// until it holds, then abort so a take is never recorded against a broken/unbuilt page.
+async function ensureStyled(cdp, url, tries = 5) {
+  const probe = async () => cdp.eval(`(()=>{
+    const ext=[...document.styleSheets].find(x=>x.href&&x.href.includes('styles.css'));
+    let rules=0; try{ rules = ext ? ext.cssRules.length : 0 }catch(e){ rules=-1 }
+    const app=document.querySelector('.app');
+    const disp=app?getComputedStyle(app).display:'';
+    return { rules, disp, hasApp:!!app, ready:document.readyState, docH:document.documentElement.scrollHeight, ssLoaded:!!ext };
+  })()`);
+  // The styling signal is the APPLIED LAYOUT, not the readability of the rule list. `.app` computes
+  // to flex/grid only when styles.css actually applied; an empty/failed stylesheet leaves it
+  // block/none and is still caught. cssRules can throw a SecurityError (rules===-1) when the sheet
+  // is served opaque/cross-origin through the egress proxy even though the CSS is fully applied —
+  // the old `rules>0` gate wrongly failed those pages. We also poll patiently before hard-reloading:
+  // the 327KB stylesheet can take a few seconds over the proxy (worse right after a proxy rotation),
+  // and an ignoreCache reload re-fetches it every time, so checking too eagerly then thrashing never
+  // let it settle.
+  const isStyledBuilt = (s) => (s.disp === 'flex' || s.disp === 'grid') && s.ssLoaded
+    && s.ready === 'complete' && s.docH > 0 && s.docH < 6000;
+  for (let i = 0; i < tries; i++) {
+    let s;
+    for (let w = 0; w < 10; w++) {           // ~7s patient poll per attempt
+      s = await probe();
+      if (isStyledBuilt(s)) {
+        if (i > 0 || w > 0) console.log(`  page styled+built (.app ${s.disp}, styles.css ${s.rules === -1 ? 'applied/opaque' : s.rules + ' rules'}, docH ${s.docH})`);
+        return;
+      }
+      await sleep(700);
+    }
+    const styledNow = (s.disp === 'flex' || s.disp === 'grid') && s.ssLoaded;
+    const why = !styledNow ? `UNSTYLED (styles.css rules=${s.rules}, ssLoaded=${s.ssLoaded}, .app display=${s.disp || 'none'})`
+      : `UNBUILT shell (readyState=${s.ready}, docH=${s.docH})`;
+    console.log(`  page ${why}; hard-reloading (${i + 1}/${tries})`);
+    const loaded = cdp.once('Page.loadEventFired').catch(() => null);
+    await cdp.send('Page.reload', { ignoreCache: true });
+    await loaded;
+    await sleep(1500);
+  }
+  throw new Error(`page failed to render styled+built after ${tries} cache-bypassing reloads (stylesheet/bootstrap fetch keeps returning empty/error): ${url}`);
+}
+
 async function main() {
   const cdp = await CDP.connect('first');
+  await normalizeStageWindow(cdp);
   const log = {
     lesson: L.lesson, mode, startedISO: null, display: DISPLAY,
     pointer: [], ops: [], rects: {}, watches: [], navs: [], stability: {}, keys: [],
@@ -330,6 +436,7 @@ async function main() {
   // theme, or dialog from prior activity can leak into the take.
   console.log(`  staging start page: ${L.startUrl}`);
   await cdp.navigate(L.startUrl, 1500);
+  await ensureStyled(cdp, L.startUrl);
   if (await dismissIdle(cdp)) { console.log('  dismissed idle session dialog (off-camera)'); await sleep(600); }
   await sleep(1200);
 
@@ -379,9 +486,16 @@ async function main() {
     log.rawDurationS = +rawDur.toFixed(3);
   }
 
-  // watch verdicts
+  // watch verdicts. A watch holds when no RUN of consecutive failed samples exceeds its
+  // holdTolerance (default 0 = strict: any failed sample breaks it). Tolerance distinguishes an
+  // isolated post-navigation transient (the sidebar briefly renders collapsed for ~1 sample while
+  // the new page's JS re-applies the expanded preference) from a genuine sustained collapse (many
+  // consecutive failed samples). Safety guardrail watches (forbidden controls) set no tolerance and
+  // stay strict.
   for (const w of log.watches) {
-    w.held = w.samples.length > 0 && w.samples.every(s => s.ok);
+    let maxConsecFail = 0, consecFail = 0;
+    for (const s of w.samples) { if (s.ok) consecFail = 0; else { consecFail++; if (consecFail > maxConsecFail) maxConsecFail = consecFail; } }
+    w.held = w.samples.length > 0 && maxConsecFail <= (w.holdTolerance || 0);
     if (w.mustHold && !w.held && !failed) failed = new Error(`watch failed: ${w.key} did not hold`);
   }
 

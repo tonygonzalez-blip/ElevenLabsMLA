@@ -1,0 +1,174 @@
+{
+  "lesson": "WC-14-02",
+  "audioMaster": "training/module14-academy/WC-14-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries (caption-sized, <=~95 chars). Block windows were measured by FFT cross-correlation of each WC-14-02-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft): the Sigma(ffprobe audio+0.4) formula predicts 262.428s but the ffprobed master is 261.956s (0.472s off, past the +/-0.3s gate). Cross-correlation shows the master is the 13 blocks concatenated with a uniform ~0.35-0.37s gap after each; per-file ffprobe durations are inflated ~0.03s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates (whole discrepancy). Each block startS is its measured onset (multiples of the 0.08s mp3-frame grid); final end = ffprobed master duration 261.956s. Product/label names are rendered at their true spelling in captions (WashCentral, LMS); the script's 'Wash Central' / 'L-M-S' are TTS pronunciation spellings per the narration's pronunciation guide, so the spoken words are unchanged.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 15.04,
+      "phrases": [
+        { "id": "p01", "text": "The Academy has a second half." },
+        { "id": "p02", "text": "Click in from the rail and you land on the same learner dashboard as last lesson," },
+        { "id": "p03", "text": "with the Academy running its own sidebar instead of the platform rail." },
+        { "id": "p04", "text": "Today we go past the learner pages, into the group underneath." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 15.04,
+      "endS": 39.2,
+      "phrases": [
+        { "id": "p05", "text": "Read both sidebar groups first." },
+        { "id": "p06", "text": "The top one holds the learner pages you already know." },
+        { "id": "p07", "text": "Below it sits Admin, four doors:" },
+        { "id": "p08", "text": "the dashboard, users and enrollment, course management, and reports." },
+        { "id": "p09", "text": "One naming note." },
+        { "id": "p10", "text": "The learning plan says LMS Administration, the sidebar says Admin," },
+        { "id": "p11", "text": "and the screen always wins." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 39.2,
+      "endS": 58.4,
+      "phrases": [
+        { "id": "p12", "text": "Open Admin Dashboard." },
+        { "id": "p13", "text": "The subtitle states the job plainly: manage training across your organization." },
+        { "id": "p14", "text": "Up in the header sits an Enroll Users button." },
+        { "id": "p15", "text": "Find it, remember where it lives, and leave it alone." },
+        { "id": "p16", "text": "On this shared tenant, enrolling someone creates a real training record." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 58.4,
+      "endS": 78.48,
+      "phrases": [
+        { "id": "p17", "text": "Five tiles across the top." },
+        { "id": "p18", "text": "Nineteen learners active this month." },
+        { "id": "p19", "text": "A twenty six percent completion rate across one hundred eighty six enrollments," },
+        { "id": "p20", "text": "with nine hours forty six minutes of average time spent." },
+        { "id": "p21", "text": "And forty nine items overdue, flagged action needed." },
+        { "id": "p22", "text": "That last tile is where every rollout conversation starts." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 78.48,
+      "endS": 99.44,
+      "phrases": [
+        { "id": "p23", "text": "Scroll to the completion heatmap." },
+        { "id": "p24", "text": "All nineteen courses against all twenty five users." },
+        { "id": "p25", "text": "Take the top row." },
+        { "id": "p26", "text": "Getting Started with WashCentral:" },
+        { "id": "p27", "text": "six finished, seven in progress, six overdue, six never began, twenty four percent complete." },
+        { "id": "p28", "text": "One glance per course tells you where a crew's training actually stands." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 99.44,
+      "endS": 116.72,
+      "phrases": [
+        { "id": "p29", "text": "Three admin actions live on this page." },
+        { "id": "p30", "text": "Enroll Users in the header, then Manage, then New Announcement." },
+        { "id": "p31", "text": "Each one either creates training records or sends a message to real people." },
+        { "id": "p32", "text": "So today they get located and named, never opened for use." },
+        { "id": "p33", "text": "That restraint is half the lesson." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 116.72,
+      "endS": 136.4,
+      "phrases": [
+        { "id": "p34", "text": "Second door, Users and Enrollment." },
+        { "id": "p35", "text": "Twenty five learners." },
+        { "id": "p36", "text": "Twenty seven percent average completion on required courses," },
+        { "id": "p37", "text": "and seventeen people carrying something overdue." },
+        { "id": "p38", "text": "Fully compliant reads zero." },
+        { "id": "p39", "text": "Nobody on this tenant has finished everything required of them yet," },
+        { "id": "p40", "text": "and that is this page's headline." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 136.4,
+      "endS": 157.28,
+      "phrases": [
+        { "id": "p41", "text": "Read one row of the table." },
+        { "id": "p42", "text": "Marcus Johnson, a general manager in Fort Lauderdale," },
+        { "id": "p43", "text": "three of seven required courses done, overdue, last active a month ago." },
+        { "id": "p44", "text": "Required progress against status is your per person compliance read." },
+        { "id": "p45", "text": "His row also offers Assign Course." },
+        { "id": "p46", "text": "Not on the demo." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 157.28,
+      "endS": 175.44,
+      "phrases": [
+        { "id": "p47", "text": "Third door, Course Management." },
+        { "id": "p48", "text": "Three sections stack down the page:" },
+        { "id": "p49", "text": "the courses themselves, the learning paths that chain them, and the certifications." },
+        { "id": "p50", "text": "A New Course button and an Import control sit in the toolbar, and both stay untouched." },
+        { "id": "p51", "text": "This is the page where the library gets shaped." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 175.44,
+      "endS": 197.04,
+      "phrases": [
+        { "id": "p52", "text": "Look at the first course card." },
+        { "id": "p53", "text": "Twenty five enrolled, twenty four percent complete, an average score of seventy eight." },
+        { "id": "p54", "text": "A publish toggle reads On, with four controls beside it: settings, edit, preview, learners." },
+        { "id": "p55", "text": "Flip that toggle and a course disappears for real staff." },
+        { "id": "p56", "text": "So it stays exactly where it is." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 197.04,
+      "endS": 219.04,
+      "phrases": [
+        { "id": "p57", "text": "Last door, Reports and Compliance." },
+        { "id": "p58", "text": "Seven report tabs run across the top, completion overview through scheduled reports." },
+        { "id": "p59", "text": "The tiles repeat the dashboard's story," },
+        { "id": "p60", "text": "one eighty six enrollments, twenty six percent complete, forty nine overdue," },
+        { "id": "p61", "text": "plus an eighty one percent average quiz score." },
+        { "id": "p62", "text": "When two pages agree on the numbers, you can quote them." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 219.04,
+      "endS": 244.72,
+      "phrases": [
+        { "id": "p63", "text": "Stay on the overview and scroll." },
+        { "id": "p64", "text": "A year of completions charted, then the two tables a client review runs on." },
+        { "id": "p65", "text": "By location: Fort Lauderdale, five users, forty four enrollments," },
+        { "id": "p66", "text": "twelve complete, thirteen overdue." },
+        { "id": "p67", "text": "By course: Getting Started, twenty five enrolled, six complete," },
+        { "id": "p68", "text": "about two hours of time spent apiece." },
+        { "id": "p69", "text": "The learning plan promised this page, and it is live." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 244.72,
+      "endS": 261.956,
+      "phrases": [
+        { "id": "p70", "text": "Four pages, four jobs." },
+        { "id": "p71", "text": "The dashboard for the org wide read." },
+        { "id": "p72", "text": "Users and Enrollment for the per person truth." },
+        { "id": "p73", "text": "Course Management for the levers." },
+        { "id": "p74", "text": "Reports and Compliance for the numbers a client review needs." },
+        { "id": "p75", "text": "You reached all four from the sidebar, and you changed nothing along the way." }
+      ]
+    }
+  ],
+  "output": "WC-14-02-academy-admin-v1.1"
+}

@@ -1,0 +1,53 @@
+{
+  "freezes": [
+    {
+      "key": "settingsStable",
+      "fromS": 1.733,
+      "toS": 2.644,
+      "navPressT": 1.583,
+      "stableT": 2.644
+    },
+    {
+      "key": "listStable",
+      "fromS": 5.381,
+      "toS": 6.684,
+      "navPressT": 5.231,
+      "stableT": 6.684
+    },
+    {
+      "key": "refundStable",
+      "fromS": 70.787,
+      "toS": 71.565,
+      "navPressT": 70.637,
+      "stableT": 71.565
+    },
+    {
+      "key": "listStable2",
+      "fromS": 77.93,
+      "toS": 78.664,
+      "navPressT": 77.78,
+      "stableT": 78.664
+    },
+    {
+      "key": "editStable",
+      "fromS": 141.599,
+      "toS": 142.379,
+      "navPressT": 141.449,
+      "stableT": 142.379
+    },
+    {
+      "key": "detailStable",
+      "fromS": 151.227,
+      "toS": 152.384,
+      "navPressT": 151.077,
+      "stableT": 152.384
+    },
+    {
+      "key": "listStable3",
+      "fromS": 162.579,
+      "toS": 163.294,
+      "navPressT": 162.429,
+      "stableT": 163.294
+    }
+  ]
+}

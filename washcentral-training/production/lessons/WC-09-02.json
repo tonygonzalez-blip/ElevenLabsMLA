@@ -1,0 +1,2318 @@
+{
+  "lesson": "WC-09-02",
+  "title": "Digital: Mobile App Pages (read-only tour)",
+  "audioMaster": "training/module09-digital/WC-09-02-full-narration-v1.0.mp3",
+  "audioDurationS": 196.598,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/mobile-users.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-09-02-mobile-app-v1.1",
+  "targets": {
+    "railPanelToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "railDigital": {
+      "js": "[...document.querySelectorAll('button.wc-rail-item,[data-rail-key]')].find(e=>e.getAttribute('data-rail-key')==='digital'&&e.getBoundingClientRect().width>0)"
+    },
+    "crumbBar": {
+      "js": "document.querySelector('.breadcrumb-bar')",
+      "textRect": true
+    },
+    "mobGroupHdr": {
+      "js": "[...document.querySelectorAll('aside.sidebar *')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='MOBILE'&&e.getBoundingClientRect().width>0)"
+    },
+    "mobBranding": {
+      "selector": "aside.sidebar a[href=\"settings-mobile-branding.html\"]"
+    },
+    "mobFeatures": {
+      "selector": "aside.sidebar a[href=\"settings-mobile-features.html\"]"
+    },
+    "mobUsers": {
+      "selector": "aside.sidebar a[href=\"mobile-users.html\"]"
+    },
+    "mobPush": {
+      "selector": "aside.sidebar a[href=\"mobile-push.html\"]"
+    },
+    "mobFeedback": {
+      "selector": "aside.sidebar a[href=\"mobile-feedback.html\"]"
+    },
+    "kpiBand": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Monthly/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiIOS": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/\\biOS\\b/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiAndroid": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Android/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardGrowth": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/User Growth/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardPlatform": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/By Platform/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/User Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "listEyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/MOBILE\\s*·\\s*USERS/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Mobile User List'&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^\\+?\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "selector": "#mobile-users-search"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Filters/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>/^Search$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thEmail": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Email$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thAppVersion": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^App Version$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPlatform": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Platform$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastActive": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Last Active$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thNotifications": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Notifications$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowSarah": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Sarah Johnson/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "appVerSarah": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Sarah Johnson/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[3]:null})()"
+    },
+    "notifLisa": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/Lisa Park/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[6]:null})()"
+    },
+    "pager": {
+      "js": "[...document.querySelectorAll('div,span,nav')].find(e=>e.children.length<=4&&/1\\s*[\\u2013-]\\s*4 of 4/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "brandTitle": {
+      "js": "[...document.querySelectorAll('h1,h2,div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Mobile App Branding'&&e.getBoundingClientRect().width>0)"
+    },
+    "brandTag": {
+      "js": "[...document.querySelectorAll('[class*=\"tag\"],[class*=\"badge\"],[class*=\"chip\"],[class*=\"pill\"]')].find(e=>(e.textContent||'').trim()==='Mobile'&&e.getBoundingClientRect().width>0)"
+    },
+    "secTenant": {
+      "js": "[...document.querySelectorAll('h2,h3,div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Tenant'&&e.getBoundingClientRect().width>0)"
+    },
+    "secBrand": {
+      "js": "[...document.querySelectorAll('h2,h3,div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Brand'&&e.getBoundingClientRect().width>0)"
+    },
+    "secColors": {
+      "js": "[...document.querySelectorAll('h2,h3,div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Colors'&&e.getBoundingClientRect().width>0)"
+    },
+    "secSupport": {
+      "js": "[...document.querySelectorAll('h2,h3,div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Support'&&e.getBoundingClientRect().width>0)"
+    },
+    "livePreviewBrand": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length<8&&/LIVE PREVIEW/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().width<520)"
+    },
+    "savePublish": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Save\\s*&\\s*Publish$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "closeSettings": {
+      "js": "[...document.querySelectorAll('aside.sidebar a,.sidebar a')].find(e=>/^Close Settings$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "featTitle": {
+      "js": "[...document.querySelectorAll('h1,h2,div')].find(e=>e.children.length===0&&/^Features\\s*&\\s*Games$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "secGames": {
+      "js": "[...document.querySelectorAll('h2,h3,div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Games'&&e.getBoundingClientRect().width>0)"
+    },
+    "secWallet": {
+      "js": "[...document.querySelectorAll('h2,h3,div')].find(e=>e.children.length===0&&/^Wallet\\s*&\\s*Gift Cards$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "gameDailySpin": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length<=3&&/Daily Spin/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().width<900)"
+    },
+    "featToggleFirst": {
+      "js": "[...document.querySelectorAll('.mb-toggle,[class*=\"toggle\"],[role=\"switch\"]')].filter(e=>e.getBoundingClientRect().width>0).sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top)[0]"
+    },
+    "featToggleCol": {
+      "js": "(()=>{const t=[...document.querySelectorAll('.mb-toggle')].filter(e=>e.getBoundingClientRect().width>0);if(!t.length)return null;const xs=t.map(e=>e.getBoundingClientRect());const x=Math.min(...xs.map(r=>r.left)),y=Math.min(...xs.map(r=>r.top)),r=Math.max(...xs.map(g=>g.right)),b=Math.max(...xs.map(g=>g.bottom));const d=document.createElement('div');return t[0]})()"
+    },
+    "livePreviewFeat": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length<10&&/PLAY & WIN/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0&&e.getBoundingClientRect().width<520)"
+    },
+    "pushEyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/MOBILE\\s*·\\s*PUSH NOTIFICATIONS/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "pushListTitle": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Push Notification List'&&e.getBoundingClientRect().width>0)"
+    },
+    "pushCardAudience": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/By Audience/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "pushCardStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Campaign Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "pushNewRecord": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^\\+?\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "pushExport": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar,.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "onUsers": "location.pathname.endsWith('/mobile-users.html')",
+    "usersLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/mobile-users.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&rows.length===4&&[...document.querySelectorAll('table thead th')].some(e=>/^Notifications$/i.test((e.textContent||'').trim()))&&/4 records/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "usersIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const s=document.querySelector('aside.sidebar');return location.pathname.endsWith('/mobile-users.html')&&rows.length===4&&/4 records/.test(document.body.textContent||'')&&!!s&&s.getBoundingClientRect().width>160})()",
+    "mobGroupVisible": "[...document.querySelectorAll('aside.sidebar a')].filter(e=>e.getBoundingClientRect().width>150&&/(settings-mobile-branding|settings-mobile-features|mobile-users|mobile-push|mobile-feedback)\\.html$/.test(e.getAttribute('href')||'')).length===5",
+    "onBranding": "location.pathname.endsWith('/settings-mobile-branding.html')&&/Save\\s*&\\s*Publish/.test(document.body.textContent||'')&&/\\bTenant\\b/.test(document.body.textContent||'')&&/\\bColors\\b/.test(document.body.textContent||'')",
+    "brandingIntact": "(()=>{const s=document.querySelector('aside.sidebar');return location.pathname.endsWith('/settings-mobile-branding.html')&&/Loaded/.test(document.body.textContent||'')&&!/Publishing|Published|Saving/.test(document.body.textContent||'')&&!!s&&s.getBoundingClientRect().width>160})()",
+    "onFeatures": "location.pathname.endsWith('/settings-mobile-features.html')&&/\\bGames\\b/.test(document.body.textContent||'')&&/Save\\s*&\\s*Publish/.test(document.body.textContent||'')",
+    "featuresIntact": "(()=>{const s=document.querySelector('aside.sidebar');const t=[...document.querySelectorAll('.mb-toggle')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-mobile-features.html')&&/\\bGames\\b/.test(document.body.textContent||'')&&t.length>=6&&!/Publishing|Published|Saving/.test(document.body.textContent||'')&&!!s&&s.getBoundingClientRect().width>160})()",
+    "onPush": "location.pathname.endsWith('/mobile-push.html')&&/Push Notification List/.test(document.body.textContent||'')&&/3 records/.test(document.body.textContent||'')",
+    "pushIntact": "(()=>{const s=document.querySelector('aside.sidebar');const grp=[...document.querySelectorAll('aside.sidebar a')].filter(e=>e.getBoundingClientRect().width>150&&/(settings-mobile-branding|settings-mobile-features|mobile-users|mobile-push|mobile-feedback)\\.html$/.test(e.getAttribute('href')||'')).length;return location.pathname.endsWith('/mobile-push.html')&&/3 records/.test(document.body.textContent||'')&&grp===5&&!!s&&s.getBoundingClientRect().width>160})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railPanelToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference expanded so the MOBILE group reads with labels (steps 1, 13, 14 read the five entries; steps 7/9/10 click Mobile App Branding/Features and Push Notifications by label). .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: collapsed reads 'Show panel' at aside width 1; expanded reads 'Hide panel' at aside width 220 with the five MOBILE links at x102 w203). Probe-verified the expanded preference PERSISTS across every Digital<->Settings navigation in this lesson (aside stayed 220+, 5 labeled group links on every Digital-shell page). Skipped when already expanded."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onUsers",
+      "note": "pre-roll: start page staged on Mobile App Users (startUrl mobile-users.html; the Digital module's MOBILE group)"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight left the sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "usersLoaded",
+      "note": "pre-roll load check: 4 KPI tiles, 3 insight cards, 4 user rows, Notifications column, '4 records', no agent-service error"
+    },
+    {
+      "op": "watch",
+      "key": "usersIntact",
+      "from": 2,
+      "to": 86.5,
+      "predicate": "usersIntact",
+      "everyMs": 3000,
+      "mustHold": true,
+      "note": "mutation guardrail (steps 1-6): Mobile App Users holds 4 rows and '4 records' with the panel expanded — proves no user record was created, edited, or deleted and nothing was clicked on the list"
+    },
+    {
+      "op": "watch",
+      "key": "brandingIntact",
+      "from": 93.5,
+      "to": 117.5,
+      "predicate": "brandingIntact",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "mutation guardrail (steps 7-8): Mobile App Branding stays '● Loaded' (never Saving/Published) — proves Save & Publish was never pressed and no field was edited"
+    },
+    {
+      "op": "watch",
+      "key": "featuresIntact",
+      "from": 123,
+      "to": 132.8,
+      "predicate": "featuresIntact",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "mutation guardrail (step 9): Mobile App Features holds its six game toggles and never enters Saving/Published — proves no toggle was flipped and Save & Publish was never pressed"
+    },
+    {
+      "op": "watch",
+      "key": "pushIntact",
+      "from": 138,
+      "to": 194,
+      "predicate": "pushIntact",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "mutation guardrail (steps 10-14): the Push Notification List holds '3 records' with the MOBILE group visible — proves no campaign was created or sent, Mobile Feedback was never opened, and the panel held expanded through the recap"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "railDigital",
+        "offset": [
+          30,
+          16
+        ]
+      },
+      "note": "step 1 (p01): enter from the bottom-left toward the already-active Digital rail module as 'Open Digital, and stay on Mobile App Users'"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.7,
+      "key": "railDigitalRect",
+      "target": "railDigital"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.85,
+      "key": "crumbRect",
+      "target": "crumbBar",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rects",
+      "at": 1.0,
+      "key": "mobLinks",
+      "targets": [
+        "mobBranding",
+        "mobFeatures",
+        "mobUsers",
+        "mobPush",
+        "mobFeedback"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 1.5,
+      "to": {
+        "target": "railDigital",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 1 (p01): settle on the already-active Digital module (the page starts here; it is never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 3.4,
+      "to": {
+        "target": "mobUsers",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01 tail): rest beside the active Mobile App Users entry — 'stay on Mobile App Users' (never on the nav link)"
+    },
+    {
+      "op": "move",
+      "at": 4.3,
+      "to": {
+        "target": "mobBranding",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02-p03): slow top-to-bottom sweep of the MOBILE group — 'the portal, and the mobile app... Under Mobile you get five pages'"
+    },
+    {
+      "op": "move",
+      "at": 6.6,
+      "to": {
+        "target": "mobPush",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): continue the sweep down the five entries"
+    },
+    {
+      "op": "move",
+      "at": 8.9,
+      "to": {
+        "target": "mobFeedback",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03 tail): reach the fifth entry, Mobile Feedback"
+    },
+    {
+      "op": "move",
+      "at": 11.3,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 1 (p04): ease onto the page — 'This lesson visits all of them, but you only read'"
+    },
+    {
+      "op": "move",
+      "at": 14.3,
+      "to": {
+        "point": [
+          820,
+          360
+        ]
+      },
+      "note": "step 1 (p05): 'Nothing here gets saved'"
+    },
+    {
+      "op": "log-rect",
+      "at": 15.98,
+      "key": "kpiBandRect",
+      "target": "kpiBand",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 16.05,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiTotal",
+        "kpiActive",
+        "kpiIOS",
+        "kpiAndroid"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 16.1,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p06): 'Four numbers run across the top'"
+    },
+    {
+      "op": "move",
+      "at": 18.4,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p07): Total users,"
+    },
+    {
+      "op": "move",
+      "at": 19.0,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "active this month,"
+    },
+    {
+      "op": "move",
+      "at": 19.64,
+      "to": {
+        "target": "kpiIOS",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p07-p08): the split between iOS"
+    },
+    {
+      "op": "move",
+      "at": 20.3,
+      "to": {
+        "target": "kpiAndroid",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "and Android"
+    },
+    {
+      "op": "move",
+      "at": 21.0,
+      "to": {
+        "target": "kpiIOS",
+        "offset": [
+          40,
+          12
+        ]
+      },
+      "note": "step 2 (p08-p09): rest on the iOS / Android split — 'That last pair earns its keep... which phone your customer is probably holding'"
+    },
+    {
+      "op": "move",
+      "at": 25.5,
+      "to": {
+        "point": [
+          1240,
+          150
+        ]
+      },
+      "note": "step 2 (p09 tail): ease off the band"
+    },
+    {
+      "op": "log-rect",
+      "at": 31.5,
+      "key": "cardGrowthRect",
+      "target": "cardGrowth",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 31.55,
+      "key": "cardPlatformRect",
+      "target": "cardPlatform"
+    },
+    {
+      "op": "log-rect",
+      "at": 31.6,
+      "key": "cardStatusRect",
+      "target": "cardStatus"
+    },
+    {
+      "op": "move",
+      "at": 31.7,
+      "to": {
+        "target": "cardGrowth",
+        "offset": [
+          0,
+          -34
+        ]
+      },
+      "note": "step 3 (p10): 'Three cards fill in the shape' — gesture across the trio"
+    },
+    {
+      "op": "move",
+      "at": 32.5,
+      "to": {
+        "target": "cardPlatform",
+        "offset": [
+          0,
+          -34
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 33.0,
+      "to": {
+        "target": "cardStatus",
+        "offset": [
+          0,
+          -34
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 33.61,
+      "to": {
+        "target": "cardGrowth",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 3 (p11): 'One tracks growth over the year' — User Growth (+31%)"
+    },
+    {
+      "op": "move",
+      "at": 35.77,
+      "to": {
+        "target": "cardPlatform",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 3 (p12): 'One breaks the base down by device' — By Platform"
+    },
+    {
+      "op": "move",
+      "at": 38.32,
+      "to": {
+        "target": "cardStatus",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 3 (p13): 'active, monthly, and gone quiet' — User Status"
+    },
+    {
+      "op": "move",
+      "at": 42.59,
+      "to": {
+        "target": "cardStatus",
+        "offset": [
+          60,
+          60
+        ]
+      },
+      "note": "step 3 (p14): rest on the inactive share — 'A rising inactive slice is worth a second look'"
+    },
+    {
+      "op": "log-rect",
+      "at": 46.05,
+      "key": "listEyebrowRect",
+      "target": "listEyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 46.1,
+      "key": "listTitleRect",
+      "target": "listTitle",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rects",
+      "at": 46.2,
+      "key": "ths",
+      "targets": [
+        "thName",
+        "thEmail",
+        "thAppVersion",
+        "thPlatform",
+        "thLastActive",
+        "thNotifications",
+        "thStatus"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 46.16,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          0,
+          22
+        ]
+      },
+      "note": "step 4 (p15): 'Now the list itself' — the Mobile User List card header"
+    },
+    {
+      "op": "move",
+      "at": 48.01,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p16): seven columns in spoken order — name,"
+    },
+    {
+      "op": "move",
+      "at": 48.4,
+      "to": {
+        "target": "thEmail",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "email,"
+    },
+    {
+      "op": "move",
+      "at": 48.7,
+      "to": {
+        "target": "thAppVersion",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "app version,"
+    },
+    {
+      "op": "move",
+      "at": 49.0,
+      "to": {
+        "target": "thPlatform",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "platform,"
+    },
+    {
+      "op": "move",
+      "at": 49.25,
+      "to": {
+        "target": "thLastActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "last active,"
+    },
+    {
+      "op": "move",
+      "at": 49.5,
+      "to": {
+        "target": "thNotifications",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "notifications,"
+    },
+    {
+      "op": "move",
+      "at": 49.75,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and status"
+    },
+    {
+      "op": "move",
+      "at": 49.98,
+      "to": {
+        "target": "thAppVersion",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p17): 'Two of those seven do most of the troubleshooting work' — App Version"
+    },
+    {
+      "op": "move",
+      "at": 54.5,
+      "to": {
+        "target": "thNotifications",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p17): and Notifications"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.5,
+      "key": "rowSarahRect",
+      "target": "rowSarah",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 60.56,
+      "key": "appVerSarahRect",
+      "target": "appVerSarah"
+    },
+    {
+      "op": "log-rect",
+      "at": 60.62,
+      "key": "notifLisaRect",
+      "target": "notifLisa"
+    },
+    {
+      "op": "move",
+      "at": 60.64,
+      "to": {
+        "target": "rowSarah",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 5 (p18): 'Read one row like a support ticket' (rows are row-link but never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 63.13,
+      "to": {
+        "target": "appVerSarah",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p19): 'App version tells you whether they're stuck behind a fix'"
+    },
+    {
+      "op": "move",
+      "at": 66.22,
+      "to": {
+        "target": "notifLisa",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p20): 'Notifications, on or off, tells you why a customer swears the alert never came' — Lisa Park's row reads Off"
+    },
+    {
+      "op": "move",
+      "at": 71.42,
+      "to": {
+        "target": "appVerSarah",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p21): 'Start here, before you touch anything else' — back to the two troubleshooting columns"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.3,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.36,
+      "key": "newRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.42,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "move",
+      "at": 74.46,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p22): 'Above the table, the usual controls'"
+    },
+    {
+      "op": "move",
+      "at": 77.06,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          220,
+          0
+        ]
+      },
+      "note": "step 6 (p23): 'Search pulls up one customer by name or email' — the Search mobile app users box (never typed in)"
+    },
+    {
+      "op": "move",
+      "at": 80.24,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -40,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p24) guardrail: Export is a data-out download — pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 81.5,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -75,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p24) guardrail: + New Record opens a blank create form — red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 83.01,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -75,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p25): 'Leave both alone today; reading the list is all a technician needs'"
+    },
+    {
+      "op": "move",
+      "at": 87.2,
+      "to": {
+        "target": "mobBranding",
+        "offset": [
+          150,
+          2
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p26): 'Now the pages that build the app' — approach the MOBILE group's Mobile App Branding entry"
+    },
+    {
+      "op": "move",
+      "at": 89.4,
+      "to": {
+        "target": "mobBranding",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p27): hover the Mobile App Branding link as 'Open Mobile App Branding' is spoken"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.5,
+      "key": "mobBrandingRect",
+      "target": "mobBranding"
+    },
+    {
+      "op": "click",
+      "target": "mobBranding",
+      "pressAt": 90.85,
+      "hoverMs": 460,
+      "postcondition": "onBranding",
+      "timeoutMs": 6000,
+      "nav": true,
+      "note": "step 7 (p27): click Mobile App Branding — VERIFIED PURE NAVIGATION (plain <a href=\"settings-mobile-branding.html\">; probe-confirmed it loads the Branding page in the Settings shell, no mutation). Press lands in the 0.43s gap after 'Open Mobile App Branding' (ends ~90.98) so the Settings shell is up when p28 'Notice the shell flips to Settings' plays at ~91.4"
+    },
+    {
+      "op": "wait-stable",
+      "key": "brandingReady",
+      "predicate": "onBranding",
+      "settleMs": 500,
+      "timeoutMs": 8000,
+      "note": "cover the branding navigation with a stable-destination freeze (QA 24)"
+    },
+    {
+      "op": "log-rect",
+      "at": 92.0,
+      "key": "brandTitleRect",
+      "target": "brandTitle",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 92.08,
+      "key": "brandTagRect",
+      "target": "brandTag"
+    },
+    {
+      "op": "log-rect",
+      "at": 92.16,
+      "key": "livePreviewBrandRect",
+      "target": "livePreviewBrand",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 92.2,
+      "to": {
+        "target": "brandTitle",
+        "offset": [
+          0,
+          26
+        ]
+      },
+      "note": "step 7 (p28): 'Notice the shell flips to Settings' — the Mobile App Branding title with the Mobile tag"
+    },
+    {
+      "op": "move",
+      "at": 93.71,
+      "to": {
+        "target": "brandTitle",
+        "offset": [
+          120,
+          26
+        ]
+      },
+      "note": "step 7 (p29): 'a brand's name, logo, colors, and support details get set'"
+    },
+    {
+      "op": "move",
+      "at": 97.93,
+      "to": {
+        "target": "livePreviewBrand",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 7 (p30): 'with a live phone preview alongside' — the LIVE PREVIEW phone on the right"
+    },
+    {
+      "op": "log-rects",
+      "at": 100.2,
+      "key": "brandSecs",
+      "targets": [
+        "secTenant",
+        "secBrand",
+        "secColors",
+        "secSupport"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 100.28,
+      "key": "savePublishRect",
+      "target": "savePublish"
+    },
+    {
+      "op": "move",
+      "at": 100.4,
+      "to": {
+        "target": "secBrand",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 8 (p31): 'Four blocks, top to bottom'"
+    },
+    {
+      "op": "move",
+      "at": 102.6,
+      "to": {
+        "target": "secTenant",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 8 (p32): Tenant,"
+    },
+    {
+      "op": "move",
+      "at": 102.95,
+      "to": {
+        "target": "secBrand",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "brand,"
+    },
+    {
+      "op": "move",
+      "at": 103.35,
+      "to": {
+        "target": "secColors",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 8 (p33): colors — Display names and taglines, logo links"
+    },
+    {
+      "op": "move",
+      "at": 106.24,
+      "to": {
+        "target": "secSupport",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 8 (p34): support — the primary and accent colors, a support phone and email"
+    },
+    {
+      "op": "move",
+      "at": 111.35,
+      "to": {
+        "target": "savePublish",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p35) guardrail: Save & Publish would re-skin the live app — pointed at from beside with the red do-not-click ring, 'so we only look'"
+    },
+    {
+      "op": "move",
+      "at": 116.6,
+      "to": {
+        "target": "closeSettings",
+        "offset": [
+          150,
+          2
+        ],
+        "outside": true
+      },
+      "note": "step 8 tail -> step 9 approach: ease toward Close Settings ahead of the return"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.2,
+      "key": "closeSettingsRect1",
+      "target": "closeSettings"
+    },
+    {
+      "op": "move",
+      "at": 118.29,
+      "to": {
+        "target": "closeSettings",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p36): 'Back to the group,' — hover Close Settings"
+    },
+    {
+      "op": "click",
+      "target": "closeSettings",
+      "pressAt": 119.35,
+      "hoverMs": 420,
+      "postcondition": "onUsers",
+      "timeoutMs": 6000,
+      "nav": true,
+      "note": "step 9 (p36): click Close Settings — VERIFIED PURE NAVIGATION (returns to the Digital shell on mobile-users.html with the MOBILE group visible; probe-confirmed, no mutation). Press inside 'Back to the group,' (ends ~119.23) so the group is back before 'open Mobile App Features'"
+    },
+    {
+      "op": "wait-stable",
+      "key": "usersReady9",
+      "predicate": "onUsers",
+      "settleMs": 350,
+      "timeoutMs": 8000,
+      "note": "cover the Close-Settings navigation freeze (QA 24)"
+    },
+    {
+      "op": "log-rect",
+      "at": 120.2,
+      "key": "mobFeaturesRect",
+      "target": "mobFeatures"
+    },
+    {
+      "op": "move",
+      "at": 120.25,
+      "to": {
+        "target": "mobFeatures",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p36 tail): 'open Mobile App Features' — hover the Mobile App Features link"
+    },
+    {
+      "op": "click",
+      "target": "mobFeatures",
+      "pressAt": 121.05,
+      "hoverMs": 420,
+      "postcondition": "onFeatures",
+      "timeoutMs": 6000,
+      "nav": true,
+      "note": "step 9 (p36 tail): click Mobile App Features — VERIFIED PURE NAVIGATION (plain <a href=\"settings-mobile-features.html\">; Settings shell, no mutation). Press near the end of 'open Mobile App Features' (~121.26) so Features is up before 'These are on-and-off switches' at ~121.69"
+    },
+    {
+      "op": "wait-stable",
+      "key": "featuresReady",
+      "predicate": "onFeatures",
+      "settleMs": 350,
+      "timeoutMs": 8000,
+      "note": "cover the Features navigation freeze (QA 24)"
+    },
+    {
+      "op": "log-rect",
+      "at": 121.95,
+      "key": "secGamesRect",
+      "target": "secGames",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 122.02,
+      "key": "secWalletRect",
+      "target": "secWallet"
+    },
+    {
+      "op": "log-rect",
+      "at": 122.08,
+      "key": "featToggleRect",
+      "target": "featToggleFirst"
+    },
+    {
+      "op": "log-rect",
+      "at": 122.14,
+      "key": "savePublishFeatRect",
+      "target": "savePublish"
+    },
+    {
+      "op": "move",
+      "at": 121.75,
+      "to": {
+        "target": "secGames",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 9 (p37): 'on-and-off switches for the fun: daily spin, wash streak, scratch cards, a few more' — the Games list"
+    },
+    {
+      "op": "move",
+      "at": 123.9,
+      "to": {
+        "target": "secGames",
+        "offset": [
+          40,
+          70
+        ]
+      },
+      "note": "step 9 (p37): sweep down the game rows"
+    },
+    {
+      "op": "move",
+      "at": 125.0,
+      "to": {
+        "target": "secWallet",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 9 (p38): 'plus wallet and gift cards' — the Wallet & Gift Cards section"
+    },
+    {
+      "op": "move",
+      "at": 127.3,
+      "to": {
+        "target": "featToggleFirst",
+        "offset": [
+          -46,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p39) guardrail: the on/off toggle column — 'Flip one and the preview updates', pointed at from beside with the red do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 129.4,
+      "to": {
+        "target": "savePublish",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p40) guardrail: 'We flip nothing' — Save & Publish stays untouched (red do-not-click ring)"
+    },
+    {
+      "op": "move",
+      "at": 131.6,
+      "to": {
+        "target": "featToggleFirst",
+        "offset": [
+          -46,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p40 tail): hold beside the toggle column — nothing is flipped"
+    },
+    {
+      "op": "log-rect",
+      "at": 133.7,
+      "key": "closeSettingsRect2",
+      "target": "closeSettings"
+    },
+    {
+      "op": "move",
+      "at": 133.84,
+      "to": {
+        "target": "closeSettings",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p41): 'Last page,' — hover Close Settings to leave the Features settings"
+    },
+    {
+      "op": "click",
+      "target": "closeSettings",
+      "pressAt": 134.5,
+      "hoverMs": 420,
+      "postcondition": "onUsers",
+      "timeoutMs": 6000,
+      "nav": true,
+      "note": "step 10 (p41): click Close Settings — VERIFIED PURE NAVIGATION (returns to mobile-users, MOBILE group visible; no mutation). Press inside 'Last page,' (ends ~134.68) so the group is back for the Push Notifications click"
+    },
+    {
+      "op": "wait-stable",
+      "key": "usersReady10",
+      "predicate": "onUsers",
+      "settleMs": 300,
+      "timeoutMs": 8000,
+      "note": "cover the Close-Settings navigation freeze (QA 24)"
+    },
+    {
+      "op": "log-rect",
+      "at": 135.3,
+      "key": "mobPushRect",
+      "target": "mobPush"
+    },
+    {
+      "op": "move",
+      "at": 135.35,
+      "to": {
+        "target": "mobPush",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p41 tail): 'Push Notifications' — hover the Push Notifications link in the MOBILE group"
+    },
+    {
+      "op": "click",
+      "target": "mobPush",
+      "pressAt": 135.95,
+      "hoverMs": 420,
+      "postcondition": "onPush",
+      "timeoutMs": 6000,
+      "nav": true,
+      "note": "step 10 (p41 tail): click Push Notifications — VERIFIED PURE NAVIGATION (plain <a href=\"mobile-push.html\">; probe-confirmed it opens the Push Notification List in the Digital shell, no mutation). RESIDUAL R1: this group link now opens a push-campaign LIST/analytics page, not the 'Push Campaigns' composer the July-9 narration describes (see report). Press near the end of 'Push Notifications' (~136.29) so the page is up before 'It opens as Push Campaigns' at ~136.81"
+    },
+    {
+      "op": "wait-stable",
+      "key": "pushReady",
+      "predicate": "onPush",
+      "settleMs": 500,
+      "timeoutMs": 8000,
+      "note": "cover the Push Notifications navigation freeze (QA 24)"
+    },
+    {
+      "op": "log-rect",
+      "at": 137.2,
+      "key": "pushEyebrowRect",
+      "target": "pushEyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 137.26,
+      "key": "pushListTitleRect",
+      "target": "pushListTitle",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 137.32,
+      "key": "pushNewRecordRect",
+      "target": "pushNewRecord"
+    },
+    {
+      "op": "log-rect",
+      "at": 137.38,
+      "key": "pushExportRect",
+      "target": "pushExport"
+    },
+    {
+      "op": "move",
+      "at": 136.9,
+      "to": {
+        "target": "pushListTitle",
+        "offset": [
+          0,
+          22
+        ]
+      },
+      "note": "step 10 (p42): 'It opens as Push Campaigns: write a message, pick an audience' — the Push Notification List header (see RESIDUAL R1)"
+    },
+    {
+      "op": "move",
+      "at": 139.07,
+      "to": {
+        "target": "pushNewRecord",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p44) guardrail: 'That's marketing's job, not ours' — + New Record is where a campaign is composed/created; pointed at from beside with the red do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 143.76,
+      "to": {
+        "target": "pushExport",
+        "offset": [
+          -38,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p45) guardrail: 'We create no campaign here, and we send nothing' — Export stays untouched (red do-not-click ring); nothing is created or sent"
+    },
+    {
+      "op": "log-rect",
+      "at": 149.8,
+      "key": "pushCardAudienceRect",
+      "target": "pushCardAudience",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 149.86,
+      "key": "pushCardStatusRect",
+      "target": "pushCardStatus"
+    },
+    {
+      "op": "move",
+      "at": 150.0,
+      "to": {
+        "target": "pushCardAudience",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 11 (p46-p47): 'One thing ties these pages together. Each shows a live preview beside the settings' — the LIVE PREVIEW phones were shown on Branding and Features (steps 7, 9); on this push list the customer-facing view is the By Audience / Campaign Status panels (see RESIDUAL R1: the current push list page carries no in-page preview panel)"
+    },
+    {
+      "op": "move",
+      "at": 154.59,
+      "to": {
+        "target": "pushCardStatus",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 11 (p48): 'so you can see what the customer sees without leaving the console'"
+    },
+    {
+      "op": "move",
+      "at": 158.91,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 11 (p49): 'A standalone preview launcher isn't in this build, so we've parked it' — ease off (matches the parked launcher)"
+    },
+    {
+      "op": "move",
+      "at": 162.96,
+      "to": {
+        "target": "mobUsers",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p50): 'Click Close Settings' — RESIDUAL R2: in the current build Push Notifications is a Digital-shell page, so there is no Settings menu open to close; we are already back on the platform. The cursor eases toward the MOBILE group in the sidebar (the platform), and NOTHING is clicked. Nothing was saved, published, or sent."
+    },
+    {
+      "op": "move",
+      "at": 164.01,
+      "to": {
+        "target": "mobUsers",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p51): 'The menu folds away and drops you back on the platform' — the Digital platform with the MOBILE group is already showing"
+    },
+    {
+      "op": "move",
+      "at": 168.47,
+      "to": {
+        "point": [
+          600,
+          360
+        ]
+      },
+      "note": "step 12 (p52): 'with nothing saved, nothing published, and nothing sent' — ease onto the page"
+    },
+    {
+      "op": "log-rect",
+      "at": 171.55,
+      "key": "mobFeedbackRect",
+      "target": "mobFeedback"
+    },
+    {
+      "op": "move",
+      "at": 171.68,
+      "to": {
+        "target": "mobFeedback",
+        "offset": [
+          150,
+          2
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p53): 'One entry stays closed: Mobile Feedback' — approach beside the Mobile Feedback entry"
+    },
+    {
+      "op": "move",
+      "at": 173.46,
+      "to": {
+        "target": "mobFeedback",
+        "offset": [
+          150,
+          2
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p54): 'It's listed in the group, but the page didn't load in our capture' — held BESIDE the entry, never clicked. RESIDUAL R3: the page now DOES load in the current build; per the locked narration the entry stays closed, so it is not opened"
+    },
+    {
+      "op": "move",
+      "at": 174.88,
+      "to": {
+        "target": "mobFeedback",
+        "offset": [
+          150,
+          2
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p55): 'Until someone walks it live, treat what's inside as unconfirmed' — hold beside the entry"
+    },
+    {
+      "op": "log-rects",
+      "at": 181.9,
+      "key": "mobLinks2",
+      "targets": [
+        "mobBranding",
+        "mobFeatures",
+        "mobUsers",
+        "mobPush",
+        "mobFeedback"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 182.22,
+      "to": {
+        "target": "mobFeedback",
+        "offset": [
+          215,
+          2
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p56): 'That's the mobile corner of Digital' — begin the recap sweep from the bottom of the MOBILE group"
+    },
+    {
+      "op": "move",
+      "at": 184.48,
+      "to": {
+        "target": "mobUsers",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p57): 'One page you open on real calls, Mobile App Users'"
+    },
+    {
+      "op": "move",
+      "at": 188.29,
+      "to": {
+        "target": "mobBranding",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p58): 'and three you'll recognize but leave alone' — sweep up across Branding, Features, Push"
+    },
+    {
+      "op": "move",
+      "at": 189.6,
+      "to": {
+        "target": "mobPush",
+        "offset": [
+          215,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p58): the three configuration entries"
+    },
+    {
+      "op": "move",
+      "at": 191.52,
+      "to": {
+        "target": "mobUsers",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p59): 'When a customer's app misbehaves, you already know the first two columns to read' — rest beside Mobile App Users"
+    },
+    {
+      "op": "move",
+      "at": 194.4,
+      "to": {
+        "point": [
+          520,
+          900
+        ]
+      },
+      "note": "step 14 (p59 tail): final park, clear of content and the burned captions, as the completion card lands"
+    },
+    {
+      "op": "assert",
+      "at": 195.6,
+      "predicate": "onPush",
+      "note": "end state: still on the Push Notification List (Digital shell), unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 196.0,
+      "predicate": "pushIntact",
+      "note": "end state: push list intact — 3 records, MOBILE group visible; nothing was created, sent, saved, published, exported, or deleted anywhere in the walk"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "union:mobLinks",
+        "place": "right",
+        "from": 1.5,
+        "to": 15.4
+      },
+      {
+        "n": 2,
+        "anchor": "kpiBandRect",
+        "place": "below-left",
+        "from": 16.1,
+        "to": 31.3
+      },
+      {
+        "n": 3,
+        "anchor": "cardGrowthRect",
+        "place": "below-left",
+        "from": 31.7,
+        "to": 45.9
+      },
+      {
+        "n": 4,
+        "anchor": "listTitleRect",
+        "place": "below-left",
+        "from": 46.2,
+        "to": 60.4
+      },
+      {
+        "n": 5,
+        "anchor": "rowSarahRect",
+        "place": "below-left",
+        "from": 60.7,
+        "to": 74.2
+      },
+      {
+        "n": 6,
+        "anchor": "searchBoxRect",
+        "place": "below-left",
+        "from": 74.5,
+        "to": 87.0
+      },
+      {
+        "n": 7,
+        "anchor": "brandTitleRect",
+        "place": "below-left",
+        "from": 92.2,
+        "to": 100.2
+      },
+      {
+        "n": 8,
+        "anchor": "brandSecs.secBrand",
+        "place": "below-left",
+        "from": 100.4,
+        "to": 118.0
+      },
+      {
+        "n": 9,
+        "anchor": "secGamesRect",
+        "place": "below-left",
+        "from": 121.9,
+        "to": 133.4
+      },
+      {
+        "n": 10,
+        "anchor": "pushListTitleRect",
+        "place": "below-left",
+        "from": 137.0,
+        "to": 149.6
+      },
+      {
+        "n": 11,
+        "anchor": "pushCardAudienceRect",
+        "place": "below-left",
+        "from": 150.0,
+        "to": 162.6
+      },
+      {
+        "n": 12,
+        "anchor": "mobLinks.mobUsers",
+        "place": "right",
+        "from": 163.0,
+        "to": 171.4
+      },
+      {
+        "n": 13,
+        "anchor": "mobFeedbackRect",
+        "place": "right",
+        "from": 171.7,
+        "to": 181.7
+      },
+      {
+        "n": 14,
+        "anchor": "union:mobLinks2",
+        "place": "right",
+        "from": 182.2,
+        "to": 193.9
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "union:mobLinks",
+        "from": 4.3,
+        "to": 11.0,
+        "note": "step 1 (p02-p03): bracket the five MOBILE entries as the cursor sweeps them"
+      },
+      {
+        "anchor": "kpiTiles.kpiTotal",
+        "from": 18.4,
+        "to": 19.0,
+        "note": "step 2 (p07) spoken order: Total Users"
+      },
+      {
+        "anchor": "kpiTiles.kpiActive",
+        "from": 19.0,
+        "to": 19.64,
+        "note": "Active Monthly"
+      },
+      {
+        "anchor": "kpiTiles.kpiIOS",
+        "from": 19.64,
+        "to": 20.3,
+        "note": "iOS"
+      },
+      {
+        "anchor": "kpiTiles.kpiAndroid",
+        "from": 20.3,
+        "to": 24.5,
+        "note": "Android (the iOS/Android split held through p08-p09)"
+      },
+      {
+        "anchor": "cardGrowthRect",
+        "from": 33.61,
+        "to": 35.77,
+        "note": "step 3 (p11): User Growth (+31%)"
+      },
+      {
+        "anchor": "cardPlatformRect",
+        "from": 35.77,
+        "to": 38.32,
+        "note": "step 3 (p12): By Platform"
+      },
+      {
+        "anchor": "cardStatusRect",
+        "from": 38.32,
+        "to": 45.6,
+        "note": "step 3 (p13-p14): User Status (active / monthly / inactive)"
+      },
+      {
+        "anchor": "ths.thName",
+        "from": 48.01,
+        "to": 48.4,
+        "note": "step 4 (p16) spoken order: Name"
+      },
+      {
+        "anchor": "ths.thEmail",
+        "from": 48.4,
+        "to": 48.7,
+        "note": "Email"
+      },
+      {
+        "anchor": "ths.thAppVersion",
+        "from": 48.7,
+        "to": 49.0,
+        "note": "App Version"
+      },
+      {
+        "anchor": "ths.thPlatform",
+        "from": 49.0,
+        "to": 49.25,
+        "note": "Platform"
+      },
+      {
+        "anchor": "ths.thLastActive",
+        "from": 49.25,
+        "to": 49.5,
+        "note": "Last Active"
+      },
+      {
+        "anchor": "ths.thNotifications",
+        "from": 49.5,
+        "to": 49.75,
+        "note": "Notifications"
+      },
+      {
+        "anchor": "ths.thStatus",
+        "from": 49.75,
+        "to": 49.98,
+        "note": "Status"
+      },
+      {
+        "anchor": "ths.thAppVersion",
+        "from": 49.98,
+        "to": 54.5,
+        "note": "step 4 (p17): the two troubleshooting columns — App Version"
+      },
+      {
+        "anchor": "ths.thNotifications",
+        "from": 54.5,
+        "to": 60.2,
+        "note": "step 4 (p17): and Notifications"
+      },
+      {
+        "anchor": "appVerSarahRect",
+        "from": 63.13,
+        "to": 66.22,
+        "note": "step 5 (p19): App Version on the row (4.2.1)"
+      },
+      {
+        "anchor": "notifLisaRect",
+        "from": 66.22,
+        "to": 71.42,
+        "note": "step 5 (p20): the Notifications cell reading Off (Lisa Park)"
+      },
+      {
+        "anchor": "searchBoxRect",
+        "from": 77.06,
+        "to": 80.24,
+        "note": "step 6 (p23): the Search mobile app users box (never typed in)"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 80.24,
+        "to": 86.9,
+        "color": "#dc2626",
+        "note": "step 6 (p24) do-not-click: Export is a data-out download, never pressed"
+      },
+      {
+        "anchor": "newRecordRect",
+        "from": 80.24,
+        "to": 86.9,
+        "color": "#dc2626",
+        "note": "step 6 (p24) do-not-click: + New Record opens a create form, never pressed"
+      },
+      {
+        "anchor": "brandTagRect",
+        "from": 92.2,
+        "to": 93.71,
+        "note": "step 7 (p28): the Mobile tag on the Branding page (shell flipped to Settings)"
+      },
+      {
+        "anchor": "livePreviewBrandRect",
+        "from": 97.93,
+        "to": 100.1,
+        "note": "step 7 (p30): the LIVE PREVIEW phone"
+      },
+      {
+        "anchor": "brandSecs.secTenant",
+        "from": 102.6,
+        "to": 102.95,
+        "note": "step 8 (p32) spoken order: Tenant"
+      },
+      {
+        "anchor": "brandSecs.secBrand",
+        "from": 102.95,
+        "to": 103.35,
+        "note": "brand"
+      },
+      {
+        "anchor": "brandSecs.secColors",
+        "from": 103.35,
+        "to": 106.24,
+        "note": "colors"
+      },
+      {
+        "anchor": "brandSecs.secSupport",
+        "from": 106.24,
+        "to": 111.0,
+        "note": "support"
+      },
+      {
+        "anchor": "savePublishRect",
+        "from": 111.35,
+        "to": 117.4,
+        "color": "#dc2626",
+        "note": "step 8 (p35) do-not-click: Save & Publish would re-skin the live app, never pressed"
+      },
+      {
+        "anchor": "secGamesRect",
+        "from": 121.75,
+        "to": 125.0,
+        "note": "step 9 (p37): the Games list (Daily Spin, Wash Streak, Scratch Cards, and more)"
+      },
+      {
+        "anchor": "secWalletRect",
+        "from": 125.0,
+        "to": 127.3,
+        "note": "step 9 (p38): Wallet & Gift Cards"
+      },
+      {
+        "anchor": "featToggleRect",
+        "from": 127.3,
+        "to": 129.4,
+        "color": "#dc2626",
+        "note": "step 9 (p39) do-not-click: the on/off toggle column, never touched"
+      },
+      {
+        "anchor": "savePublishFeatRect",
+        "from": 129.4,
+        "to": 132.6,
+        "color": "#dc2626",
+        "note": "step 9 (p40) do-not-click: Save & Publish, never pressed — 'We flip nothing'"
+      },
+      {
+        "anchor": "pushNewRecordRect",
+        "from": 139.07,
+        "to": 143.76,
+        "color": "#dc2626",
+        "note": "step 10 (p44) do-not-click: + New Record composes/creates a campaign — never pressed"
+      },
+      {
+        "anchor": "pushExportRect",
+        "from": 143.76,
+        "to": 149.5,
+        "color": "#dc2626",
+        "note": "step 10 (p45) do-not-click: Export/data-out — never pressed; 'we send nothing'"
+      },
+      {
+        "anchor": "pushCardAudienceRect",
+        "from": 151.8,
+        "to": 154.59,
+        "note": "step 11 (p47): By Audience — the customer-facing cut of the campaigns"
+      },
+      {
+        "anchor": "pushCardStatusRect",
+        "from": 154.59,
+        "to": 158.7,
+        "note": "step 11 (p48): Campaign Status — delivery / open / tap"
+      },
+      {
+        "anchor": "mobFeedbackRect",
+        "from": 173.46,
+        "to": 181.4,
+        "color": "#dc2626",
+        "note": "step 13 (p54-p55) do-not-open: Mobile Feedback — pointed at from beside, never clicked (the locked narration keeps it closed)"
+      },
+      {
+        "anchor": "union:mobLinks2",
+        "from": 184.48,
+        "to": 193.0,
+        "note": "step 14 (p57-p59): the five MOBILE entries tied together in the recap"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.0,
+        "z": 1.2,
+        "cx": 360,
+        "cy": 400,
+        "ease": true,
+        "note": "step 1: the sidebar MOBILE group"
+      },
+      {
+        "t": 10.6,
+        "z": 1.2,
+        "cx": 360,
+        "cy": 400
+      },
+      {
+        "t": 11.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the intro tail (p04-p05)"
+      },
+      {
+        "t": 15.7,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.1,
+        "z": 1.3,
+        "cx": 1000,
+        "cy": 105,
+        "ease": true,
+        "note": "step 2: 130% across the KPI band (shot list)"
+      },
+      {
+        "t": 31.3,
+        "z": 1.3,
+        "cx": 1000,
+        "cy": 105
+      },
+      {
+        "t": 31.7,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 245,
+        "ease": true,
+        "note": "step 3: the three insight cards"
+      },
+      {
+        "t": 45.9,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 245
+      },
+      {
+        "t": 46.2,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 540,
+        "ease": true,
+        "note": "step 4: the list header and seven columns"
+      },
+      {
+        "t": 60.4,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 540
+      },
+      {
+        "t": 60.7,
+        "z": 1.3,
+        "cx": 1050,
+        "cy": 565,
+        "ease": true,
+        "note": "step 5: 130% on one data row (App Version / Notifications)"
+      },
+      {
+        "t": 74.1,
+        "z": 1.3,
+        "cx": 1050,
+        "cy": 565
+      },
+      {
+        "t": 74.5,
+        "z": 1.2,
+        "cx": 1050,
+        "cy": 430,
+        "ease": true,
+        "note": "step 6: the list toolbar (search box, Export, + New Record)"
+      },
+      {
+        "t": 87.0,
+        "z": 1.2,
+        "cx": 1050,
+        "cy": 430
+      },
+      {
+        "t": 87.6,
+        "z": 1.1,
+        "cx": 300,
+        "cy": 400,
+        "ease": true,
+        "note": "step 7: frame the MOBILE group for the Branding click"
+      },
+      {
+        "t": 90.85,
+        "z": 1.1,
+        "cx": 300,
+        "cy": 400
+      },
+      {
+        "t": 92.2,
+        "z": 1.18,
+        "cx": 760,
+        "cy": 200,
+        "ease": true,
+        "note": "step 7: the Branding title + Mobile tag after the shell flips to Settings"
+      },
+      {
+        "t": 97.7,
+        "z": 1.18,
+        "cx": 760,
+        "cy": 200
+      },
+      {
+        "t": 98.0,
+        "z": 1.5,
+        "cx": 1700,
+        "cy": 470,
+        "ease": true,
+        "note": "step 7: 150% close-up on the LIVE PREVIEW phone (shot list; required close framing)"
+      },
+      {
+        "t": 100.2,
+        "z": 1.5,
+        "cx": 1700,
+        "cy": 470
+      },
+      {
+        "t": 100.5,
+        "z": 1.2,
+        "cx": 780,
+        "cy": 430,
+        "ease": true,
+        "note": "step 8: the Brand / Colors / Support fields"
+      },
+      {
+        "t": 117.9,
+        "z": 1.2,
+        "cx": 780,
+        "cy": 430
+      },
+      {
+        "t": 118.4,
+        "z": 1.05,
+        "cx": 700,
+        "cy": 400,
+        "ease": true,
+        "note": "step 9: pull back for the return-to-group navigation"
+      },
+      {
+        "t": 121.7,
+        "z": 1.05,
+        "cx": 700,
+        "cy": 400
+      },
+      {
+        "t": 122.0,
+        "z": 1.2,
+        "cx": 780,
+        "cy": 430,
+        "ease": true,
+        "note": "step 9: the Games list and Wallet & Gift Cards toggles"
+      },
+      {
+        "t": 133.0,
+        "z": 1.2,
+        "cx": 780,
+        "cy": 430
+      },
+      {
+        "t": 133.7,
+        "z": 1.02,
+        "cx": 780,
+        "cy": 420,
+        "ease": true,
+        "note": "step 10: pull back for the two navigations to the Push Notification List"
+      },
+      {
+        "t": 136.6,
+        "z": 1.02,
+        "cx": 780,
+        "cy": 420
+      },
+      {
+        "t": 137.2,
+        "z": 1.16,
+        "cx": 900,
+        "cy": 430,
+        "ease": true,
+        "note": "step 10: the Push Notification List header and its top-right controls"
+      },
+      {
+        "t": 149.6,
+        "z": 1.16,
+        "cx": 900,
+        "cy": 430
+      },
+      {
+        "t": 150.0,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 245,
+        "ease": true,
+        "note": "step 11: the By Audience / Campaign Status panels"
+      },
+      {
+        "t": 162.6,
+        "z": 1.16,
+        "cx": 1000,
+        "cy": 245
+      },
+      {
+        "t": 163.0,
+        "z": 1.08,
+        "cx": 500,
+        "cy": 460,
+        "ease": true,
+        "note": "step 12: back on the platform (already on the Digital shell)"
+      },
+      {
+        "t": 171.4,
+        "z": 1.08,
+        "cx": 500,
+        "cy": 460
+      },
+      {
+        "t": 171.8,
+        "z": 1.3,
+        "cx": 300,
+        "cy": 470,
+        "ease": true,
+        "note": "step 13: the Mobile Feedback entry in the sidebar"
+      },
+      {
+        "t": 181.6,
+        "z": 1.3,
+        "cx": 300,
+        "cy": 470
+      },
+      {
+        "t": 182.2,
+        "z": 1.18,
+        "cx": 320,
+        "cy": 400,
+        "ease": true,
+        "note": "step 14: recap sweep of the MOBILE group"
+      },
+      {
+        "t": 193.4,
+        "z": 1.18,
+        "cx": 320,
+        "cy": 400
+      },
+      {
+        "t": 194.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 196.598,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Mobile App Pages — Complete",
+      "from": 194.8,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 194.5
+  },
+  "neverClick": [
+    "\\+ ?new record",
+    "new record",
+    "\\+ ?new campaign",
+    "new campaign",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "save",
+    "save & publish",
+    "save and publish",
+    "publish",
+    "\\btoggle\\b",
+    "delete",
+    "\\bsend\\b",
+    "send push",
+    "send campaign",
+    "submit",
+    "export",
+    "export csv",
+    "filters",
+    "view json",
+    "row-link user rows (no user record is opened)",
+    "page arrows / pagination buttons",
+    "ask shyne",
+    "log ?out",
+    "logout",
+    "log out now"
+  ]
+}

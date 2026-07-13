@@ -1,0 +1,400 @@
+{
+  "lesson": "WC-PB-02",
+  "audioMaster": "training/playbooks/WC-PB-02-full-narration-v1.0.mp3",
+  "audioDurationS": 157.806,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Two very different tickets sound identical.",
+      "startS": 0,
+      "endS": 1.735,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "It keeps logging me out.",
+      "startS": 1.735,
+      "endS": 3.474,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "My screen froze.",
+      "startS": 3.474,
+      "endS": 4.619,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Most of the time, the first one is the idle timeout doing exactly what it's set to do.",
+      "startS": 4.619,
+      "endS": 10.622,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "So before you open a single setting, decide which of the two you're actually chasing.",
+      "startS": 10.622,
+      "endS": 14.96,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Here's the warning itself.",
+      "startS": 15.394,
+      "endS": 16.634,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "After a stretch of no activity, a dialog counts down from two minutes,",
+      "startS": 16.634,
+      "endS": 21.506,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "and a matching toast slides into the corner.",
+      "startS": 21.506,
+      "endS": 23.985,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "One click keeps them in.",
+      "startS": 23.985,
+      "endS": 25.832,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "So does a nudge of the mouse.",
+      "startS": 25.832,
+      "endS": 28.311,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Walk away and let it reach zero, and that's not a fault.",
+      "startS": 28.311,
+      "endS": 32.571,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "It's the platform closing an idle station on purpose.",
+      "startS": 32.571,
+      "endS": 35.36,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Now the first real check.",
+      "startS": 35.83,
+      "endS": 37.284,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Open System Users and search for the person by name or code.",
+      "startS": 37.284,
+      "endS": 41.344,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "The column you want is their user level.",
+      "startS": 41.344,
+      "endS": 44.659,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "It's a single word, but it decides everything on the next page.",
+      "startS": 44.659,
+      "endS": 48.58,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Don't scroll the list hunting for them.",
+      "startS": 48.58,
+      "endS": 50.617,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "Search.",
+      "startS": 50.617,
+      "endS": 50.907,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "One caution before you trust a blank screen.",
+      "startS": 51.46,
+      "endS": 53.702,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "If the list won't load and you see a note about the connection to the agent service,",
+      "startS": 54.536,
+      "endS": 58.427,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "the rows aren't missing.",
+      "startS": 58.743,
+      "endS": 59.91,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "The data just didn't arrive.",
+      "startS": 60.245,
+      "endS": 61.636,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "And if that's what your caller is staring at instead of a logout, it's a different problem:",
+      "startS": 62.423,
+      "endS": 65.198,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "the data service, not the timeout.",
+      "startS": 65.547,
+      "endS": 69.012,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Second check, second page.",
+      "startS": 69.571,
+      "endS": 71.238,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "User Levels lives under Automation, not with the other user pages, which trips people up.",
+      "startS": 71.763,
+      "endS": 76.726,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Once you're there, one column answers the whole ticket: session timeout, in minutes.",
+      "startS": 77.285,
+      "endS": 80.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "That's how long a level can sit idle before the countdown starts.",
+      "startS": 80.454,
+      "endS": 85.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Read that number against the level you found.",
+      "startS": 86.402,
+      "endS": 88.612,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "They run from five minutes up to a hundred and twenty.",
+      "startS": 88.942,
+      "endS": 91.829,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Cashiers and the other short-timeout roles sit at five,",
+      "startS": 92.453,
+      "endS": 95.703,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "so a cashier who steps away for five minutes gets the warning, then the logout.",
+      "startS": 95.983,
+      "endS": 100.802,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Nothing is broken.",
+      "startS": 101.167,
+      "endS": 102.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "Someone set it that way on purpose.",
+      "startS": 102.633,
+      "endS": 104.585,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "If the timing matches that number, you're done.",
+      "startS": 105.244,
+      "endS": 107.609,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "Tell them it's a setting for their role, not a glitch, and show them the fix:",
+      "startS": 107.609,
+      "endS": 113.217,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "move the mouse, press a key, or click Stay Logged In.",
+      "startS": 113.217,
+      "endS": 117.675,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "If the role truly needs longer, an admin can raise it in production.",
+      "startS": 117.675,
+      "endS": 121.916,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "One warning.",
+      "startS": 121.916,
+      "endS": 122.508,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "Don't tap Log Out Now to clear the box.",
+      "startS": 122.508,
+      "endS": 125.168,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "That ends the session for real.",
+      "startS": 125.168,
+      "endS": 127.43,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "Now the cases that are real.",
+      "startS": 127.43,
+      "endS": 129.003,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "Logged out well before the level allows, or frozen with no warning at all.",
+      "startS": 129.799,
+      "endS": 134.487,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "First, rule out the simple thing:",
+      "startS": 135.306,
+      "endS": 136.925,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "a session is tied to one device and one browser, so switching either signs you out by design.",
+      "startS": 137.129,
+      "endS": 139.883,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "If it still doesn't add up, capture the level, its set timeout, and the time it really took,",
+      "startS": 140.174,
+      "endS": 142.86,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "and send that to support with the username, never a password.",
+      "startS": 143.458,
+      "endS": 148.346,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "The trigger point for the demo login is still parked,",
+      "startS": 148.641,
+      "endS": 151.734,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p49",
+      "text": "so measure it before you promise a number.",
+      "startS": 152.289,
+      "endS": 157.36,
+      "timing": "silence"
+    }
+  ]
+}

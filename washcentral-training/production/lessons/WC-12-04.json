@@ -1,0 +1,2204 @@
+{
+  "lesson": "WC-12-04",
+  "title": "Settings: Payments & Finance",
+  "audioMaster": "training/module12-settings/WC-12-04-full-narration-v1.0.mp3",
+  "audioDurationS": 197.486,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "pfHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/payments\\s*&\\s*finance/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkPaymentTypes": {
+      "text": "Payment Types",
+      "scope": ".submenu a"
+    },
+    "linkDiscounts": {
+      "text": "Discounts",
+      "scope": ".submenu a"
+    },
+    "linkDiscountTypes": {
+      "text": "Discount Types",
+      "scope": ".submenu a"
+    },
+    "linkSurcharges": {
+      "text": "Surcharges",
+      "scope": ".submenu a"
+    },
+    "linkSurchargeTypes": {
+      "text": "Surcharge Types",
+      "scope": ".submenu a"
+    },
+    "linkPayoutPercentage": {
+      "text": "Payout Percentage",
+      "scope": ".submenu a"
+    },
+    "linkTaxRates": {
+      "text": "Tax Rates",
+      "scope": ".submenu a"
+    },
+    "linkGLCodes": {
+      "text": "General Ledger Codes",
+      "scope": ".submenu a"
+    },
+    "linkGLAccountCodes": {
+      "text": "GL Account Codes",
+      "scope": ".submenu a"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/ List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "disRow1": {
+      "js": "[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0)[0]"
+    },
+    "tileDisTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Discounts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileDisActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileDisUnlimited": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Unlimited Discounts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileDisDollar": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Dollar Off/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileDTTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Types/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thDescription": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocked": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^locked$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thRequireReference": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^require reference$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thShowAsBankDrop": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^show as bank drop$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCode": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^code$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thAmount": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^amount$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTaxable": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^taxable$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDiscountType": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^discount type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thType": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDisallowDiscounts": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^disallow discounts$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thRangeStart": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^range start$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thRangeEnd": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^range end$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPercentage": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^percentage$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTaxRate": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^tax rate$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDefault": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^default$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thGLDescription": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^gl description$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onPaymentTypes": "location.pathname.endsWith('/settings-payment-types.html')",
+    "onDiscounts": "location.pathname.endsWith('/settings-discounts.html')",
+    "onDiscountTypes": "location.pathname.endsWith('/settings-discount-types.html')",
+    "onSurcharges": "location.pathname.endsWith('/settings-surcharges.html')",
+    "onSurchargeTypes": "location.pathname.endsWith('/settings-surcharge-types.html')",
+    "onPayout": "location.pathname.endsWith('/settings-payout-percentage.html')",
+    "onTaxRates": "location.pathname.endsWith('/settings-tax-rates.html')",
+    "onGLCodes": "location.pathname.endsWith('/settings-gl-codes.html')",
+    "onGLAccountCodes": "location.pathname.endsWith('/settings-gl-account-codes.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "pfSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Payment Types|Discounts|Discount Types|Surcharges|Surcharge Types|Payout Percentage|Tax Rates|General Ledger Codes|GL Account Codes)$/.test((e.textContent||'').trim())).length>=9",
+    "pfSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Payment Types|Discounts|Discount Types|Surcharges|Surcharge Types|Payout Percentage|Tax Rates|General Ledger Codes|GL Account Codes)$/.test((e.textContent||'').trim())).length===0",
+    "paymentTypesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-payment-types.html')&&rows.length>=9&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "discountsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-discounts.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "discountTypesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-discount-types.html')&&rows.length>=1&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "surchargesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-surcharges.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "surchargeTypesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-surcharge-types.html')&&rows.length>=8&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "payoutLoaded": "(()=>{return location.pathname.endsWith('/settings-payout-percentage.html')&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^range start$/i.test((e.textContent||'').trim()))&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "taxRatesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-tax-rates.html')&&rows.length>=7&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "glCodesLoaded": "(()=>{return location.pathname.endsWith('/settings-gl-codes.html')&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^gl description$/i.test((e.textContent||'').trim()))&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
+    "glAccountCodesLoaded": "(()=>{return location.pathname.endsWith('/settings-gl-account-codes.html')&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^gl description$/i.test((e.textContent||'').trim()))&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onSettingsHome",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1.1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: settings sidebar expanded (preflight-staged); abort if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "pfSubmenuClosed",
+      "note": "pre-roll: Payments & Finance group must start collapsed so step 1 genuinely expands it"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        160,
+        1079
+      ],
+      "to": {
+        "target": "pfHeader",
+        "offset": [
+          200,
+          20
+        ]
+      },
+      "note": "enter from the bottom edge as p01 'This is where the money rules live'"
+    },
+    {
+      "op": "log-rect",
+      "at": 2,
+      "key": "pfHeaderRect",
+      "target": "pfHeader"
+    },
+    {
+      "op": "move",
+      "at": 2.5,
+      "to": {
+        "target": "pfHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach the group header on p02 'Open Settings, then the Payments and Finance group'"
+    },
+    {
+      "op": "click",
+      "target": "pfHeader",
+      "pressAt": 4.5,
+      "hoverMs": 400,
+      "postcondition": "pfSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 1: genuine group toggle — the nine pages appear as p02 names the group"
+    },
+    {
+      "op": "log-rects",
+      "at": 5,
+      "key": "pfNav",
+      "targets": [
+        "linkPaymentTypes",
+        "linkDiscounts",
+        "linkDiscountTypes",
+        "linkSurcharges",
+        "linkSurchargeTypes",
+        "linkPayoutPercentage",
+        "linkTaxRates",
+        "linkGLCodes",
+        "linkGLAccountCodes"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 5.8,
+      "to": {
+        "target": "linkPaymentTypes",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "slow top-to-bottom sweep of the nine pages, p03 'Nine pages, one list'"
+    },
+    {
+      "op": "move",
+      "at": 7.6,
+      "to": {
+        "target": "linkDiscounts",
+        "offset": [
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 9.2,
+      "to": {
+        "target": "linkSurcharges",
+        "offset": [
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 10.9,
+      "to": {
+        "target": "linkPayoutPercentage",
+        "offset": [
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 12.6,
+      "to": {
+        "target": "linkTaxRates",
+        "offset": [
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 14.6,
+      "to": {
+        "target": "linkGLAccountCodes",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "sweep ends on the last page, p05-p06"
+    },
+    {
+      "op": "move",
+      "at": 16.6,
+      "to": {
+        "point": [
+          430,
+          720
+        ]
+      },
+      "note": "ease off beside the list for the p06 tail"
+    },
+    {
+      "op": "move",
+      "at": 19.36,
+      "to": {
+        "target": "linkPaymentTypes",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 approach on cue p07 'Start at Payment Types'"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.5,
+      "key": "linkPTeye",
+      "target": "linkPaymentTypes"
+    },
+    {
+      "op": "click",
+      "target": "linkPaymentTypes",
+      "pressAt": 20.5,
+      "hoverMs": 380,
+      "postcondition": "onPaymentTypes",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 2: genuine sidebar navigation inside p07 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ptStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 21.4,
+      "predicate": "paymentTypesLoaded",
+      "note": "shot-list load check: 9 real rows + KPI, no Failed-to-fetch error; abort otherwise"
+    },
+    {
+      "op": "assert",
+      "at": 21.5,
+      "predicate": "pfSubmenuOpen",
+      "note": "persisted submenu state held across the navigation"
+    },
+    {
+      "op": "log-rect",
+      "at": 21.6,
+      "key": "bcPT",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 21.7,
+      "key": "cardPT",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 21.8,
+      "key": "newRecPT",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 22,
+      "key": "ptTh",
+      "targets": [
+        "thDescription",
+        "thLocked",
+        "thRequireReference",
+        "thShowAsBankDrop"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 22.2,
+      "to": {
+        "point": [
+          900,
+          106
+        ]
+      },
+      "note": "point at the KPI band while the camera pushes to 150% (p08 'tender list')"
+    },
+    {
+      "op": "move",
+      "at": 24.6,
+      "to": {
+        "point": [
+          900,
+          450
+        ]
+      },
+      "note": "sweep down the nine tender rows, p09"
+    },
+    {
+      "op": "move",
+      "at": 25.4,
+      "to": {
+        "point": [
+          900,
+          620
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 25.9,
+      "to": {
+        "target": "thLocked",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p10 'Locked marks the system types you can't delete'"
+    },
+    {
+      "op": "move",
+      "at": 27.7,
+      "to": {
+        "target": "thRequireReference",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p11 'Require Reference forces a number at the register'"
+    },
+    {
+      "op": "move",
+      "at": 30.5,
+      "to": {
+        "target": "thShowAsBankDrop",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p12 'Show as Bank Drop decides what counts toward the drawer drop'"
+    },
+    {
+      "op": "watch",
+      "key": "watchPT",
+      "from": 31,
+      "to": 36.4,
+      "predicate": "onPaymentTypes",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "read-only guardrail: page never changes; + New Record is never clicked"
+    },
+    {
+      "op": "move",
+      "at": 32.8,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "rest BESIDE + New Record for the do-not-click ring (never approached for a press)"
+    },
+    {
+      "op": "move",
+      "at": 36.6,
+      "to": {
+        "point": [
+          900,
+          540
+        ]
+      },
+      "note": "ease to neutral before step 3"
+    },
+    {
+      "op": "move",
+      "at": 37.2,
+      "to": {
+        "target": "linkDiscounts",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 approach on cue p13 'Now Discounts'"
+    },
+    {
+      "op": "log-rect",
+      "at": 37.35,
+      "key": "linkDiseye",
+      "target": "linkDiscounts"
+    },
+    {
+      "op": "click",
+      "target": "linkDiscounts",
+      "pressAt": 38.1,
+      "hoverMs": 380,
+      "postcondition": "onDiscounts",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 3: genuine sidebar navigation inside p13 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "disStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 39,
+      "predicate": "discountsLoaded",
+      "note": "48-discount list + KPI band loaded, no error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 39.1,
+      "key": "bcDis",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 39.2,
+      "key": "cardDis",
+      "target": "cardTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 39.3,
+      "key": "newRecDis",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 39.45,
+      "key": "disTiles",
+      "targets": [
+        "tileDisTotal",
+        "tileDisActive",
+        "tileDisUnlimited",
+        "tileDisDollar"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 39.6,
+      "key": "disTh",
+      "targets": [
+        "thDescription",
+        "thCode",
+        "thAmount",
+        "thTaxable",
+        "thDiscountType"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 39.75,
+      "key": "disRow1",
+      "target": "disRow1"
+    },
+    {
+      "op": "move",
+      "at": 39.9,
+      "to": {
+        "point": [
+          700,
+          320
+        ]
+      },
+      "note": "sweep the three analytics panels, p14 'panels up top read the file at a glance'"
+    },
+    {
+      "op": "move",
+      "at": 41.5,
+      "to": {
+        "point": [
+          1050,
+          320
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 43.4,
+      "to": {
+        "point": [
+          1450,
+          320
+        ]
+      },
+      "note": "p15 'how many are active, how they split'"
+    },
+    {
+      "op": "move",
+      "at": 46.3,
+      "to": {
+        "target": "thAmount",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p16 'the row that answers questions is Amount'"
+    },
+    {
+      "op": "move",
+      "at": 48.3,
+      "to": {
+        "target": "thDiscountType",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p16 'next to Discount Type'"
+    },
+    {
+      "op": "move",
+      "at": 50.8,
+      "to": {
+        "point": [
+          1300,
+          600
+        ]
+      },
+      "note": "rest over the Amount / Discount Type cells, p17"
+    },
+    {
+      "op": "watch",
+      "key": "watchDis4",
+      "from": 56.5,
+      "to": 79.8,
+      "predicate": "onDiscounts",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 4 safety proof: the Discount detail is never opened — we remain on the list (locked narration says the detail could not be pulled)"
+    },
+    {
+      "op": "move",
+      "at": 56.2,
+      "to": {
+        "target": "disRow1",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p18 'Open one discount' — point at the first row; never clicked into an edit form"
+    },
+    {
+      "op": "move",
+      "at": 59.3,
+      "to": {
+        "point": [
+          700,
+          560
+        ]
+      },
+      "note": "p19 'a detail view, an Active Locations tab' — sweep the row (pattern narrated, not shown)"
+    },
+    {
+      "op": "move",
+      "at": 61,
+      "to": {
+        "point": [
+          1200,
+          560
+        ]
+      },
+      "note": "p20 'per-location overrides underneath'"
+    },
+    {
+      "op": "move",
+      "at": 63.7,
+      "to": {
+        "target": "thAmount",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p21 'three dollars off at one wash and two at another'"
+    },
+    {
+      "op": "move",
+      "at": 66.5,
+      "to": {
+        "point": [
+          1000,
+          560
+        ]
+      },
+      "note": "p22-p23 parked note; rest on the list"
+    },
+    {
+      "op": "move",
+      "at": 72,
+      "to": {
+        "point": [
+          900,
+          400
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 78.7,
+      "to": {
+        "point": [
+          1000,
+          560
+        ]
+      },
+      "note": "p24 'Look, don't save'"
+    },
+    {
+      "op": "move",
+      "at": 80.85,
+      "to": {
+        "target": "linkDiscountTypes",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 approach on cue p25 'Discount Types is the short list behind that column'"
+    },
+    {
+      "op": "log-rect",
+      "at": 81,
+      "key": "linkDTeye",
+      "target": "linkDiscountTypes"
+    },
+    {
+      "op": "click",
+      "target": "linkDiscountTypes",
+      "pressAt": 81.9,
+      "hoverMs": 380,
+      "postcondition": "onDiscountTypes",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "dtStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 83,
+      "predicate": "discountTypesLoaded",
+      "note": "list + KPI loaded, no error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.1,
+      "key": "bcDT",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.2,
+      "key": "newRecDT",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.3,
+      "key": "dtTile4",
+      "target": "tileDTTotal"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.4,
+      "key": "dtDesc",
+      "target": "thDescription"
+    },
+    {
+      "op": "move",
+      "at": 84.6,
+      "to": {
+        "target": "tileDTTotal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p26 'Four categories, nothing more' — the 4 Total Types tile"
+    },
+    {
+      "op": "move",
+      "at": 87.6,
+      "to": {
+        "target": "thDescription",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p27 DESCRIPTION column tied to the Discounts DISCOUNT TYPE column"
+    },
+    {
+      "op": "watch",
+      "key": "watchDT",
+      "from": 88,
+      "to": 91.6,
+      "predicate": "onDiscountTypes",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "read-only guardrail"
+    },
+    {
+      "op": "move",
+      "at": 89,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 92.5,
+      "to": {
+        "target": "linkSurcharges",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 approach on cue p28 'Surcharges are the mirror of a discount'"
+    },
+    {
+      "op": "log-rect",
+      "at": 92.65,
+      "key": "linkSureye",
+      "target": "linkSurcharges"
+    },
+    {
+      "op": "click",
+      "target": "linkSurcharges",
+      "pressAt": 93.5,
+      "hoverMs": 380,
+      "postcondition": "onSurcharges",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "surStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 94.6,
+      "predicate": "surchargesLoaded",
+      "note": "surcharge list + KPI loaded, no error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 94.7,
+      "key": "bcSur",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 94.8,
+      "key": "newRecSur",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 94.95,
+      "key": "surTh",
+      "targets": [
+        "thDescription",
+        "thType",
+        "thAmount",
+        "thTaxable",
+        "thCode"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 95.3,
+      "to": {
+        "target": "thAmount",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p30 spoken order 'an amount'"
+    },
+    {
+      "op": "move",
+      "at": 96.4,
+      "to": {
+        "target": "thCode",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'a code'"
+    },
+    {
+      "op": "move",
+      "at": 97.9,
+      "to": {
+        "target": "thTaxable",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p31 'a taxable flag ... tax rides on top of the fee'"
+    },
+    {
+      "op": "watch",
+      "key": "watchSur",
+      "from": 99.5,
+      "to": 103.7,
+      "predicate": "onSurcharges",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "read-only guardrail"
+    },
+    {
+      "op": "move",
+      "at": 100.2,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 104.65,
+      "to": {
+        "target": "linkSurchargeTypes",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 approach on cue p32 'Surcharge Types carries one flag worth knowing'"
+    },
+    {
+      "op": "log-rect",
+      "at": 104.8,
+      "key": "linkSTeye",
+      "target": "linkSurchargeTypes"
+    },
+    {
+      "op": "click",
+      "target": "linkSurchargeTypes",
+      "pressAt": 105.7,
+      "hoverMs": 380,
+      "postcondition": "onSurchargeTypes",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "stStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 106.9,
+      "predicate": "surchargeTypesLoaded",
+      "note": "8 rows + KPI loaded, no error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 107,
+      "key": "bcST",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 107.1,
+      "key": "newRecST",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 107.25,
+      "key": "stTh",
+      "targets": [
+        "thDescription",
+        "thDisallowDiscounts"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 107.9,
+      "to": {
+        "target": "thDisallowDiscounts",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p33 'Disallow Discounts'"
+    },
+    {
+      "op": "move",
+      "at": 110,
+      "to": {
+        "target": "thDisallowDiscounts",
+        "offset": [
+          0,
+          60
+        ],
+        "outside": true
+      },
+      "note": "p34 rest under the column over the rows"
+    },
+    {
+      "op": "watch",
+      "key": "watchST",
+      "from": 108,
+      "to": 117.6,
+      "predicate": "onSurchargeTypes",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "read-only guardrail"
+    },
+    {
+      "op": "move",
+      "at": 115.2,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p35 rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 118.25,
+      "to": {
+        "target": "linkPayoutPercentage",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 approach on cue p36 'Payout Percentage is a band table'"
+    },
+    {
+      "op": "log-rect",
+      "at": 118.4,
+      "key": "linkPPeye",
+      "target": "linkPayoutPercentage"
+    },
+    {
+      "op": "click",
+      "target": "linkPayoutPercentage",
+      "pressAt": 119.4,
+      "hoverMs": 380,
+      "postcondition": "onPayout",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ppStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 120.5,
+      "predicate": "payoutLoaded",
+      "note": "columns + KPI rendered; empty-state (0 Total Rules, POS not configured) is a real state here, never the fetch-error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 120.6,
+      "key": "bcPP",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 120.7,
+      "key": "newRecPP",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 120.85,
+      "key": "ppTh",
+      "targets": [
+        "thRangeStart",
+        "thRangeEnd",
+        "thPercentage"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 121,
+      "to": {
+        "target": "thRangeStart",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p37 spoken order 'a start'"
+    },
+    {
+      "op": "move",
+      "at": 122.6,
+      "to": {
+        "target": "thRangeEnd",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'and an end'"
+    },
+    {
+      "op": "move",
+      "at": 124.1,
+      "to": {
+        "target": "thPercentage",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'a percentage inside it'"
+    },
+    {
+      "op": "watch",
+      "key": "watchPP",
+      "from": 125.5,
+      "to": 129.8,
+      "predicate": "onPayout",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "payout-setting guardrail: never edited or created"
+    },
+    {
+      "op": "move",
+      "at": 126.2,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p38 rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 130.35,
+      "to": {
+        "target": "linkTaxRates",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 approach on cue p40 'Tax Rates feeds the rest of the platform'"
+    },
+    {
+      "op": "log-rect",
+      "at": 130.5,
+      "key": "linkTReye",
+      "target": "linkTaxRates"
+    },
+    {
+      "op": "click",
+      "target": "linkTaxRates",
+      "pressAt": 131.4,
+      "hoverMs": 380,
+      "postcondition": "onTaxRates",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "trStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 132.7,
+      "predicate": "taxRatesLoaded",
+      "note": "7 rate rows + KPI loaded, no error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 132.75,
+      "key": "bcTR",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 132.85,
+      "key": "newRecTR",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 133,
+      "key": "trTh",
+      "targets": [
+        "thDescription",
+        "thTaxRate",
+        "thDefault"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 133.1,
+      "to": {
+        "target": "thTaxRate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p41 'its two tax slots' — column header only, never a rate value or row"
+    },
+    {
+      "op": "watch",
+      "key": "watchTR",
+      "from": 133.5,
+      "to": 143.9,
+      "predicate": "onTaxRates",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "tax-rate guardrail: no rate row, default toggle, edit, or New Record is ever clicked"
+    },
+    {
+      "op": "move",
+      "at": 137.4,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p42 rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 142.1,
+      "to": {
+        "target": "thDefault",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p43 'check which rate is the default' — DEFAULT column header"
+    },
+    {
+      "op": "move",
+      "at": 144.55,
+      "to": {
+        "target": "linkGLCodes",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 approach on cue p44-p45 'Down to accounting. General Ledger Codes'"
+    },
+    {
+      "op": "log-rect",
+      "at": 144.7,
+      "key": "linkGLeye",
+      "target": "linkGLCodes"
+    },
+    {
+      "op": "click",
+      "target": "linkGLCodes",
+      "pressAt": 145.7,
+      "hoverMs": 380,
+      "postcondition": "onGLCodes",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "glStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 146.9,
+      "predicate": "glCodesLoaded",
+      "note": "columns + KPI rendered; empty-state is a real state (POS not configured), never the fetch-error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 147,
+      "key": "bcGL",
+      "target": "bcStrong",
+      "note": "breadcrumb/header reads 'GL Codes'"
+    },
+    {
+      "op": "log-rect",
+      "at": 147.1,
+      "key": "newRecGL",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 147.2,
+      "key": "glSidebarLink",
+      "target": "linkGLCodes",
+      "note": "sidebar link reads 'General Ledger Codes'"
+    },
+    {
+      "op": "log-rects",
+      "at": 147.35,
+      "key": "glTh",
+      "targets": [
+        "thCode",
+        "thDescription",
+        "thGLDescription"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 147.5,
+      "to": {
+        "point": [
+          1000,
+          540
+        ]
+      },
+      "note": "p46 'One small catch worth remembering'"
+    },
+    {
+      "op": "move",
+      "at": 149.4,
+      "to": {
+        "target": "linkGLCodes",
+        "offset": [
+          90,
+          0
+        ]
+      },
+      "note": "p47 'the sidebar says General Ledger Codes' — point at the sidebar link"
+    },
+    {
+      "op": "move",
+      "at": 151.6,
+      "to": {
+        "target": "bcStrong",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "p47 'the page header says G-L Codes' — under the header"
+    },
+    {
+      "op": "watch",
+      "key": "watchGL",
+      "from": 149,
+      "to": 160.2,
+      "predicate": "onGLCodes",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "ledger guardrail"
+    },
+    {
+      "op": "move",
+      "at": 156.2,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p49-p50 rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 163.35,
+      "to": {
+        "target": "linkGLAccountCodes",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 approach on cue p51 'G-L Account Codes is the partner list'"
+    },
+    {
+      "op": "log-rect",
+      "at": 163.5,
+      "key": "linkGLAeye",
+      "target": "linkGLAccountCodes"
+    },
+    {
+      "op": "click",
+      "target": "linkGLAccountCodes",
+      "pressAt": 164.5,
+      "hoverMs": 380,
+      "postcondition": "onGLAccountCodes",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "glaStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 165.9,
+      "predicate": "glAccountCodesLoaded",
+      "note": "columns + KPI rendered; empty-state is a real state, never the fetch-error state"
+    },
+    {
+      "op": "log-rect",
+      "at": 166,
+      "key": "bcGLA",
+      "target": "bcStrong"
+    },
+    {
+      "op": "log-rect",
+      "at": 166.1,
+      "key": "newRecGLA",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rects",
+      "at": 166.25,
+      "key": "glaTh",
+      "targets": [
+        "thCode",
+        "thDescription",
+        "thGLDescription"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 166.4,
+      "to": {
+        "target": "thCode",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p52 'Same three columns' sweep"
+    },
+    {
+      "op": "move",
+      "at": 167.6,
+      "to": {
+        "target": "thDescription",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 168.8,
+      "to": {
+        "target": "thGLDescription",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "watch",
+      "key": "watchGLA",
+      "from": 170,
+      "to": 174.2,
+      "predicate": "onGLAccountCodes",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "ledger guardrail"
+    },
+    {
+      "op": "move",
+      "at": 170.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p53-p54 rest beside + New Record for the do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 175.6,
+      "to": {
+        "point": [
+          900,
+          540
+        ]
+      },
+      "note": "p55 'The two work as a pair', ease off"
+    },
+    {
+      "op": "assert",
+      "at": 177.3,
+      "predicate": "pfSubmenuOpen",
+      "note": "recap needs the nine Payments & Finance links on screen"
+    },
+    {
+      "op": "log-rects",
+      "at": 177.5,
+      "key": "recapNav",
+      "targets": [
+        "linkPaymentTypes",
+        "linkDiscounts",
+        "linkDiscountTypes",
+        "linkSurcharges",
+        "linkSurchargeTypes",
+        "linkPayoutPercentage",
+        "linkTaxRates",
+        "linkGLCodes",
+        "linkGLAccountCodes"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 178.9,
+      "to": {
+        "target": "linkPaymentTypes",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p57-p58 recap sweep, spoken order: Payment Types"
+    },
+    {
+      "op": "move",
+      "at": 182.9,
+      "to": {
+        "target": "linkDiscounts",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p59 Discounts"
+    },
+    {
+      "op": "move",
+      "at": 184.1,
+      "to": {
+        "target": "linkSurcharges",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p59 Surcharges"
+    },
+    {
+      "op": "move",
+      "at": 185.3,
+      "to": {
+        "target": "linkPayoutPercentage",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p60 tiered payouts"
+    },
+    {
+      "op": "move",
+      "at": 186.4,
+      "to": {
+        "target": "linkTaxRates",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p60 tax"
+    },
+    {
+      "op": "move",
+      "at": 187.4,
+      "to": {
+        "target": "linkGLCodes",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p60 the two ledger lists"
+    },
+    {
+      "op": "move",
+      "at": 188.2,
+      "to": {
+        "target": "linkGLAccountCodes",
+        "offset": [
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 190,
+      "to": {
+        "point": [
+          500,
+          600
+        ]
+      },
+      "note": "p61 ease off"
+    },
+    {
+      "op": "move",
+      "at": 194.2,
+      "to": {
+        "point": [
+          1400,
+          900
+        ]
+      },
+      "note": "p62 final park, clear of caption and completion card"
+    },
+    {
+      "op": "assert",
+      "at": 196.5,
+      "predicate": "onGLAccountCodes"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "pfNav.linkPayoutPercentage",
+        "place": "right",
+        "from": 5.6,
+        "to": 18.3
+      },
+      {
+        "n": 2,
+        "anchor": "ptTh.thLocked",
+        "place": "below-left",
+        "from": 23.2,
+        "to": 36.2
+      },
+      {
+        "n": 3,
+        "anchor": "disTh.thAmount",
+        "place": "below-left",
+        "from": 46.3,
+        "to": 55.4
+      },
+      {
+        "n": 4,
+        "anchor": "disRow1",
+        "place": "below-left",
+        "from": 56.3,
+        "to": 66
+      },
+      {
+        "n": 5,
+        "anchor": "dtDesc",
+        "place": "right",
+        "from": 84.6,
+        "to": 91.3
+      },
+      {
+        "n": 6,
+        "anchor": "surTh.thAmount",
+        "place": "below-left",
+        "from": 95.3,
+        "to": 103.4
+      },
+      {
+        "n": 7,
+        "anchor": "stTh.thDisallowDiscounts",
+        "place": "below-left",
+        "from": 108,
+        "to": 116.3
+      },
+      {
+        "n": 8,
+        "anchor": "ppTh.thPercentage",
+        "place": "below-left",
+        "from": 121,
+        "to": 129.2
+      },
+      {
+        "n": 9,
+        "anchor": "trTh.thTaxRate",
+        "place": "below-left",
+        "from": 133,
+        "to": 143.8
+      },
+      {
+        "n": 10,
+        "anchor": "bcGL",
+        "place": "below-left",
+        "from": 149.2,
+        "to": 158.5
+      },
+      {
+        "n": 11,
+        "anchor": "glaTh.thCode",
+        "place": "below-left",
+        "from": 166.2,
+        "to": 176
+      },
+      {
+        "n": 12,
+        "anchor": "recapNav.linkTaxRates",
+        "place": "right",
+        "from": 179,
+        "to": 193
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "union:pfNav",
+        "from": 5.7,
+        "to": 18.2,
+        "note": "bracket the nine group items (step 1)"
+      },
+      {
+        "anchor": "ptTh.thLocked",
+        "from": 25.71,
+        "to": 27.5,
+        "note": "p10 Locked"
+      },
+      {
+        "anchor": "ptTh.thRequireReference",
+        "from": 27.59,
+        "to": 30.3,
+        "note": "p11 Require Reference"
+      },
+      {
+        "anchor": "ptTh.thShowAsBankDrop",
+        "from": 30.37,
+        "to": 35.5,
+        "note": "p12 Show as Bank Drop"
+      },
+      {
+        "anchor": "newRecPT",
+        "from": 32.6,
+        "to": 36.2,
+        "color": "#dc2626",
+        "note": "STOP ring: + New Record located, never clicked"
+      },
+      {
+        "anchor": "union:disTiles",
+        "from": 43.2,
+        "to": 45.9,
+        "note": "p15 KPI band"
+      },
+      {
+        "anchor": "disTh.thAmount",
+        "from": 46.3,
+        "to": 55.3,
+        "note": "p16-p17 Amount"
+      },
+      {
+        "anchor": "disTh.thDiscountType",
+        "from": 48.3,
+        "to": 55.3,
+        "note": "p16-p17 Discount Type"
+      },
+      {
+        "anchor": "disRow1",
+        "from": 56.3,
+        "to": 66,
+        "note": "p18-p21 the discount row (detail parked, narrated not shown)"
+      },
+      {
+        "anchor": "dtTile4",
+        "from": 84.6,
+        "to": 87.3,
+        "note": "p26 4 Total Types"
+      },
+      {
+        "anchor": "dtDesc",
+        "from": 87.6,
+        "to": 91,
+        "note": "p27 DESCRIPTION"
+      },
+      {
+        "anchor": "newRecDT",
+        "from": 88.8,
+        "to": 91.5,
+        "color": "#dc2626",
+        "note": "STOP ring"
+      },
+      {
+        "anchor": "surTh.thAmount",
+        "from": 95.3,
+        "to": 96.4
+      },
+      {
+        "anchor": "surTh.thCode",
+        "from": 96.4,
+        "to": 97.9
+      },
+      {
+        "anchor": "surTh.thTaxable",
+        "from": 97.9,
+        "to": 103.3,
+        "note": "p31 taxable"
+      },
+      {
+        "anchor": "newRecSur",
+        "from": 100,
+        "to": 103.4,
+        "color": "#dc2626",
+        "note": "STOP ring"
+      },
+      {
+        "anchor": "stTh.thDisallowDiscounts",
+        "from": 107.9,
+        "to": 115.5,
+        "note": "p33-p35 Disallow Discounts"
+      },
+      {
+        "anchor": "newRecST",
+        "from": 115,
+        "to": 117.4,
+        "color": "#dc2626",
+        "note": "STOP ring"
+      },
+      {
+        "anchor": "ppTh.thRangeStart",
+        "from": 121,
+        "to": 122.6
+      },
+      {
+        "anchor": "ppTh.thRangeEnd",
+        "from": 122.6,
+        "to": 124.1
+      },
+      {
+        "anchor": "ppTh.thPercentage",
+        "from": 124.1,
+        "to": 129
+      },
+      {
+        "anchor": "newRecPP",
+        "from": 126.2,
+        "to": 129.6,
+        "color": "#dc2626",
+        "note": "payout STOP ring"
+      },
+      {
+        "anchor": "trTh.thTaxRate",
+        "from": 133.1,
+        "to": 137,
+        "note": "p41 TAX RATE"
+      },
+      {
+        "anchor": "newRecTR",
+        "from": 137.5,
+        "to": 141.5,
+        "color": "#dc2626",
+        "note": "tax-rate STOP ring"
+      },
+      {
+        "anchor": "trTh.thDefault",
+        "from": 142.1,
+        "to": 143.9,
+        "note": "p43 DEFAULT"
+      },
+      {
+        "anchor": "glSidebarLink",
+        "from": 149.4,
+        "to": 153.8,
+        "note": "p47 sidebar 'General Ledger Codes'"
+      },
+      {
+        "anchor": "bcGL",
+        "from": 151.6,
+        "to": 155,
+        "note": "p47 header 'GL Codes'"
+      },
+      {
+        "anchor": "newRecGL",
+        "from": 156.2,
+        "to": 160,
+        "color": "#dc2626",
+        "note": "STOP ring"
+      },
+      {
+        "anchor": "glaTh.thCode",
+        "from": 166.4,
+        "to": 167.6
+      },
+      {
+        "anchor": "glaTh.thDescription",
+        "from": 167.6,
+        "to": 168.8
+      },
+      {
+        "anchor": "glaTh.thGLDescription",
+        "from": 168.8,
+        "to": 170.2
+      },
+      {
+        "anchor": "newRecGLA",
+        "from": 170.6,
+        "to": 174,
+        "color": "#dc2626",
+        "note": "STOP ring"
+      },
+      {
+        "anchor": "recapNav.linkPaymentTypes",
+        "from": 180.2,
+        "to": 182.8
+      },
+      {
+        "anchor": "recapNav.linkDiscounts",
+        "from": 182.9,
+        "to": 184.1
+      },
+      {
+        "anchor": "recapNav.linkSurcharges",
+        "from": 184.1,
+        "to": 185.2
+      },
+      {
+        "anchor": "recapNav.linkPayoutPercentage",
+        "from": 185.3,
+        "to": 186.4
+      },
+      {
+        "anchor": "recapNav.linkTaxRates",
+        "from": 186.4,
+        "to": 187.4
+      },
+      {
+        "anchor": "recapNav.linkGLCodes",
+        "from": 187.4,
+        "to": 188.2
+      },
+      {
+        "anchor": "recapNav.linkGLAccountCodes",
+        "from": 188.2,
+        "to": 189.2
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 21.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 22.2,
+        "z": 1.5,
+        "cx": 900,
+        "cy": 150,
+        "ease": true,
+        "note": "step 2 KPI 150% zoom (9 / 9 / 0 values)"
+      },
+      {
+        "t": 24.4,
+        "z": 1.35,
+        "cx": 1080,
+        "cy": 290,
+        "ease": true,
+        "note": "step 2 columns + rows + STOP ring"
+      },
+      {
+        "t": 36.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 46.3,
+        "z": 1.25,
+        "cx": 1300,
+        "cy": 520,
+        "ease": true,
+        "note": "step 3 Amount / Discount Type columns"
+      },
+      {
+        "t": 55.6,
+        "z": 1.12,
+        "cx": 1080,
+        "cy": 560,
+        "ease": true,
+        "note": "step 4 the Discounts list (no detail opened)"
+      },
+      {
+        "t": 80.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 95.6,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 430,
+        "ease": true,
+        "note": "step 6 Surcharges columns"
+      },
+      {
+        "t": 104,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 108,
+        "z": 1.5,
+        "cx": 1400,
+        "cy": 280,
+        "ease": true,
+        "note": "step 7 DISALLOW DISCOUNTS 150% zoom"
+      },
+      {
+        "t": 117,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 132.8,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 560,
+        "ease": true,
+        "note": "step 9 TAX RATE / DEFAULT columns"
+      },
+      {
+        "t": 144,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide and calm through the two ledger lists and the recap"
+      },
+      {
+        "t": 197.486,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Payments & Finance — Complete",
+      "stamp": "Verified against demo.washcentral.com on July 11, 2026.",
+      "from": 195.69,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 195.4
+  },
+  "output": "WC-12-04-payments-finance-v1.1",
+  "neverClick": [
+    "+ new record",
+    "new record",
+    "save",
+    "save changes",
+    "edit",
+    "update",
+    "delete",
+    "yes, delete",
+    "add",
+    "reset",
+    "connect",
+    "test",
+    "activate",
+    "refund",
+    "send",
+    "submit",
+    "logout",
+    "ask shyne"
+  ],
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar preference expanded before the take"
+    },
+    {
+      "op": "click",
+      "target": "pfHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "pfSubmenuClosed",
+      "postcondition": "pfSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: genuine toggle click closes the persisted Payments & Finance group (washcentral-settings-menu-v1) so step 1 expands it on camera"
+    }
+  ]
+}

@@ -1,0 +1,1882 @@
+{
+  "lesson": "WC-10-02",
+  "title": "IT & Support: Support Tickets",
+  "audioMaster": "training/module10-it-support/WC-10-02-full-narration-v1.0.mp3",
+  "audioDurationS": 180.611,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/support-tickets.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideTickets": {
+      "selector": "aside.sidebar a[href=\"support-tickets.html\"]"
+    },
+    "itSupportModule": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/IT & Support/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiOpen": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Open$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiInProgress": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/In Progress$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiResolved": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Resolved Today$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiAvg": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Resolution$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "panelsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "panelVolume": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Volume/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelCategory": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/By Category/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelHealth": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Ticket Health/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/SUPPORT\\s*·\\s*TICKETS/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Ticket List'&&e.getBoundingClientRect().width>0)"
+    },
+    "cardSubtitle": {
+      "js": "[...document.querySelectorAll('div,p,span')].find(e=>e.children.length===0&&/^18 records$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "searchBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>/^Search$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "selector": "#support-tickets-search"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thTicket": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Ticket #/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thSubject": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Subject/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Location/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPriority": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Priority/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thAssigned": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Assigned To/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCreated": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Created/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "row4201": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/TKT-4201/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row4200": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/TKT-4200/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row4199": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/TKT-4199/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "row4198": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/TKT-4198/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "status4201": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4201/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "status4200": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4200/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "status4199": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4199/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "status4198": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4198/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "prio4201": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4201/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "prio4198": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4198/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[4]:null})()"
+    },
+    "assigned4201": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>/TKT-4201/.test(t.textContent||''));return tr?tr.querySelectorAll('td')[6]:null})()"
+    },
+    "pgInfo": {
+      "selector": ".pg-info"
+    },
+    "pagePrev": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(e=>e.textContent.trim()==='‹'&&e.getBoundingClientRect().width>0)"
+    },
+    "pageNum": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(e=>e.textContent.trim()==='1'&&e.getBoundingClientRect().width>0)"
+    },
+    "pageNext": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(e=>e.textContent.trim()==='›'&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "onTickets": "location.pathname.endsWith('/support-tickets.html')",
+    "supportLinksVisible": "[...document.querySelectorAll('aside.sidebar a')].filter(e=>e.getBoundingClientRect().width>0&&/(ml-command-center|site-detail|support-tickets|zoho-tickets|support-kb|support-alerts|support-training)\\.html$/.test(e.getAttribute('href')||'')).length>=7",
+    "ticketsLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/support-tickets.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&rows.length===4&&[...document.querySelectorAll('table thead th')].some(e=>/^Status$/i.test((e.textContent||'').trim()))&&/18 records/.test(document.body.textContent||'')&&/1\\D4 of 4/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "listIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/support-tickets.html')&&rows.length===4&&/1\\D4 of 4/.test(document.body.textContent||'')&&/18 records/.test(document.body.textContent||'')})()"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference expanded so the SUPPORT group links read with labels for step 1. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: collapsed reads 'Show panel', aside.sidebar width 1 with icon-only links; expanded reads 'Hide panel', aside width 220 with 7 SUPPORT links at x102 w203 and the active Support Tickets at y184, content shifted right to x314). Skipped when already expanded. Restored to collapsed after probing; the preflight re-stages it."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onTickets",
+      "note": "start page identity before capture (startUrl support-tickets.html; the lesson opens on the Support Tickets dashboard — step 1 points at the already-active Support Tickets link, it is never clicked)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded so the SUPPORT group reads with labels; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "ticketsLoaded",
+      "note": "loaded: 4 KPI tiles, 3 summary panels, 4 ticket rows, Status column, '18 records', '1-4 of 4', no agent-service error state"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 180.4,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "watch",
+      "key": "pageHeld",
+      "from": 1,
+      "to": 180.4,
+      "predicate": "onTickets",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: support tickets notify people, so this is browse-and-point only — nothing is clicked across all 12 steps and the page never navigates. + New Record, Export, Filters, Search, the row-link rows, and the page arrows are all pointed at from beside, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "listIntact",
+      "from": 2,
+      "to": 179.5,
+      "predicate": "listIntact",
+      "everyMs": 3000,
+      "mustHold": true,
+      "note": "mutation guardrail: the Ticket List holds 4 rows, '18 records', and '1-4 of 4' the whole lesson — proves no ticket was created, edited, assigned, resolved, closed, or deleted, and the + New Record create-form was never opened"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "sideTickets",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1: enter from the bottom-left toward the SUPPORT group's active Support Tickets link as p01 says 'This is Support Tickets, the queue your team works inside WashCentral'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.8,
+      "key": "sideNav",
+      "targets": [
+        "sideTickets"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 0.95,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "crumbStrongRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "move",
+      "at": 1.4,
+      "to": {
+        "target": "sideTickets",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1: rest beside the active Support Tickets link in the SUPPORT group — never on the nav link (read-only; a same-page href, but we do not click it)"
+    },
+    {
+      "op": "move",
+      "at": 4.61,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02): travel to the breadcrumb title 'Support > Support Tickets' — the platform's own help desk, separate from the cross-customer view (callout ①)"
+    },
+    {
+      "op": "move",
+      "at": 9.81,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 1 (p03): ease over the page — 'Everything about the day's support load lives on this one screen'"
+    },
+    {
+      "op": "log-rect",
+      "at": 13.5,
+      "key": "kpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 13.58,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiOpen",
+        "kpiInProgress",
+        "kpiResolved",
+        "kpiAvg"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 13.72,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p04): 'Start at the top' — settle on the KPI strip"
+    },
+    {
+      "op": "move",
+      "at": 15.3,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p05): 'Four counters frame the backlog before you read a single row'"
+    },
+    {
+      "op": "move",
+      "at": 19.11,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p06): name them left to right — what's open (Open)"
+    },
+    {
+      "op": "move",
+      "at": 20.3,
+      "to": {
+        "target": "kpiInProgress",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "what's in progress (In Progress)"
+    },
+    {
+      "op": "move",
+      "at": 21.4,
+      "to": {
+        "target": "kpiResolved",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "what closed today (Resolved Today)"
+    },
+    {
+      "op": "move",
+      "at": 22.67,
+      "to": {
+        "target": "kpiAvg",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p07): and how long the average ticket takes to resolve (Avg Resolution)"
+    },
+    {
+      "op": "move",
+      "at": 26.06,
+      "to": {
+        "point": [
+          1117,
+          330
+        ]
+      },
+      "note": "step 2 (p08): ease off the strip — 'One look tells you whether the queue is calm or backed up'"
+    },
+    {
+      "op": "log-rect",
+      "at": 29.45,
+      "key": "panelVolumeRect",
+      "target": "panelVolume",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 29.6,
+      "to": {
+        "target": "panelVolume",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 3 (p09): 'Now the left panel' — the Ticket Volume panel"
+    },
+    {
+      "op": "move",
+      "at": 31.2,
+      "to": {
+        "target": "panelVolume",
+        "offset": [
+          40,
+          40
+        ]
+      },
+      "note": "step 3 (p10): the twelve-month trend, not today's numbers"
+    },
+    {
+      "op": "move",
+      "at": 34.78,
+      "to": {
+        "target": "panelVolume",
+        "offset": [
+          380,
+          30
+        ]
+      },
+      "note": "step 3 (p11): the total 342 and the up seven percent marker, top-right of the card"
+    },
+    {
+      "op": "move",
+      "at": 38.34,
+      "to": {
+        "point": [
+          591,
+          330
+        ]
+      },
+      "note": "step 3 (p12): ease off — 'Handy context when a client asks whether their run of issues is unusual'"
+    },
+    {
+      "op": "log-rect",
+      "at": 42.5,
+      "key": "panelCategoryRect",
+      "target": "panelCategory",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 42.64,
+      "to": {
+        "target": "panelCategory",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 4 (p13): 'The middle panel breaks tickets down by type' — By Category"
+    },
+    {
+      "op": "move",
+      "at": 45.52,
+      "to": {
+        "target": "panelCategory",
+        "offset": [
+          0,
+          45
+        ]
+      },
+      "note": "step 4 (p14): sweep the bars — Billing leads, then technical,"
+    },
+    {
+      "op": "move",
+      "at": 46.5,
+      "to": {
+        "target": "panelCategory",
+        "offset": [
+          0,
+          80
+        ]
+      },
+      "note": "then feedback and general"
+    },
+    {
+      "op": "move",
+      "at": 47.7,
+      "to": {
+        "target": "panelCategory",
+        "offset": [
+          60,
+          40
+        ]
+      },
+      "note": "step 4 (p15): 'When you're deciding where the team's hours go'"
+    },
+    {
+      "op": "move",
+      "at": 49.83,
+      "to": {
+        "target": "panelCategory",
+        "offset": [
+          60,
+          38
+        ]
+      },
+      "note": "step 4 (p16): rest on the Billing share — the heaviest load right now"
+    },
+    {
+      "op": "move",
+      "at": 54,
+      "to": {
+        "point": [
+          1117,
+          330
+        ]
+      },
+      "note": "step 4: ease off for the p16 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 55.8,
+      "key": "panelHealthRect",
+      "target": "panelHealth",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 55.98,
+      "to": {
+        "target": "panelHealth",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 5 (p17): 'On the right, the health panel' — Ticket Health"
+    },
+    {
+      "op": "move",
+      "at": 58.69,
+      "to": {
+        "target": "panelHealth",
+        "offset": [
+          0,
+          55
+        ]
+      },
+      "note": "step 5 (p18): most already resolved, a smaller share in progress,"
+    },
+    {
+      "op": "move",
+      "at": 62,
+      "to": {
+        "target": "panelHealth",
+        "offset": [
+          140,
+          55
+        ]
+      },
+      "note": "and a thin band still open — read across the segmented bar"
+    },
+    {
+      "op": "move",
+      "at": 64.61,
+      "to": {
+        "target": "panelHealth",
+        "offset": [
+          70,
+          70
+        ]
+      },
+      "note": "step 5 (p19): 'Read across, it's a quick pulse on whether work is getting closed or piling up'"
+    },
+    {
+      "op": "move",
+      "at": 68,
+      "to": {
+        "point": [
+          1643,
+          330
+        ]
+      },
+      "note": "step 5: ease off for the p19 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 69.25,
+      "key": "eyebrowRect",
+      "target": "eyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 69.3,
+      "key": "cardTitleRect",
+      "target": "cardTitle",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 69.35,
+      "key": "cardSubtitleRect",
+      "target": "cardSubtitle"
+    },
+    {
+      "op": "move",
+      "at": 69.44,
+      "to": {
+        "target": "cardTitle",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 6 (p20): 'Below the summary sits the list itself' — the Ticket List card header"
+    },
+    {
+      "op": "move",
+      "at": 72.27,
+      "to": {
+        "target": "cardSubtitle",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 6 (p21): 'This is where you actually work' — the 18 records subtitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.6,
+      "key": "newRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 74.66,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "move",
+      "at": 74.78,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p22): 'Two buttons ride the top corner' — approach from beside, never onto them"
+    },
+    {
+      "op": "move",
+      "at": 76.89,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p23) guardrail: + New Record opens a blank create form (href support-tickets-edit.html) — pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 78.6,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -30,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p23) guardrail: Export pulls the list out to a file — red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 80.88,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p24): 'We'll open a new one shortly' — beside + New Record, still never clicked"
+    },
+    {
+      "op": "move",
+      "at": 82.66,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -30,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p25): 'We never export while recording' — held beside Export with the red ring"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.9,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.95,
+      "key": "filtersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 85,
+      "key": "searchBtnRect",
+      "target": "searchBtn"
+    },
+    {
+      "op": "move",
+      "at": 85.13,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p26): 'Above the table, a search box and a filter control'"
+    },
+    {
+      "op": "move",
+      "at": 88.6,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          220,
+          0
+        ]
+      },
+      "note": "step 7 (p27): the Search support tickets box — located, never typed in"
+    },
+    {
+      "op": "move",
+      "at": 92.65,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          -40,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p28): 'or open the filters to narrow by field' — Filters located from beside, never opened"
+    },
+    {
+      "op": "move",
+      "at": 95.67,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          -40,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p29): the Search button — located, never pressed"
+    },
+    {
+      "op": "log-rect",
+      "at": 99.25,
+      "key": "theadRect",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 99.32,
+      "key": "ths",
+      "targets": [
+        "thTicket",
+        "thSubject",
+        "thLocation",
+        "thPriority",
+        "thStatus",
+        "thAssigned",
+        "thCreated"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 99.44,
+      "to": {
+        "target": "thTicket",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p30): 'Read the column headers'"
+    },
+    {
+      "op": "move",
+      "at": 101.9,
+      "to": {
+        "target": "thTicket",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p31): Ticket number,"
+    },
+    {
+      "op": "move",
+      "at": 102.4,
+      "to": {
+        "target": "thSubject",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "subject,"
+    },
+    {
+      "op": "move",
+      "at": 102.8,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "location,"
+    },
+    {
+      "op": "move",
+      "at": 103.2,
+      "to": {
+        "target": "thPriority",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "priority,"
+    },
+    {
+      "op": "move",
+      "at": 103.6,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "status,"
+    },
+    {
+      "op": "move",
+      "at": 104,
+      "to": {
+        "target": "thAssigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "owner (Assigned To),"
+    },
+    {
+      "op": "move",
+      "at": 104.4,
+      "to": {
+        "target": "thCreated",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and created date"
+    },
+    {
+      "op": "move",
+      "at": 104.9,
+      "to": {
+        "target": "thPriority",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p32): 'The two you'll lean on most are priority, for what to grab first'"
+    },
+    {
+      "op": "move",
+      "at": 105.81,
+      "to": {
+        "target": "thAssigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p33): 'and the owner, for who already has it' — the Assigned To column"
+    },
+    {
+      "op": "move",
+      "at": 111,
+      "to": {
+        "target": "thAssigned",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 8: hold on Assigned To through the p33 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 115.4,
+      "key": "row4201Rect",
+      "target": "row4201"
+    },
+    {
+      "op": "log-rects",
+      "at": 115.46,
+      "key": "statusChips",
+      "targets": [
+        "status4201",
+        "status4200",
+        "status4199",
+        "status4198"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 115.52,
+      "key": "prioCells",
+      "targets": [
+        "prio4198",
+        "prio4201"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 115.6,
+      "to": {
+        "target": "row4201",
+        "offset": [
+          260,
+          0
+        ]
+      },
+      "note": "step 9 (p34): 'Now the rows' (rows are row-link but are never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 117.47,
+      "to": {
+        "target": "status4201",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p35): a POS receipt problem in progress (TKT-4201, In Progress)"
+    },
+    {
+      "op": "move",
+      "at": 118.8,
+      "to": {
+        "target": "status4200",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p35): a billing dispute still open (TKT-4200, Open)"
+    },
+    {
+      "op": "move",
+      "at": 120.16,
+      "to": {
+        "target": "status4199",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p36): a membership that won't activate (TKT-4199, Open)"
+    },
+    {
+      "op": "move",
+      "at": 121.2,
+      "to": {
+        "target": "status4198",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p36): a tunnel emergency-stop already resolved (TKT-4198, Resolved)"
+    },
+    {
+      "op": "move",
+      "at": 122.3,
+      "to": {
+        "target": "prio4198",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p37): 'Priority runs from critical' (TKT-4198, Critical)"
+    },
+    {
+      "op": "move",
+      "at": 123.4,
+      "to": {
+        "target": "prio4201",
+        "offset": [
+          0,
+          80
+        ]
+      },
+      "note": "step 9 (p37): down to medium — sweep the Priority column"
+    },
+    {
+      "op": "move",
+      "at": 124.45,
+      "to": {
+        "target": "assigned4201",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 9 (p38): 'each ticket names a person or a team on the hook for it' — the Assigned To column"
+    },
+    {
+      "op": "move",
+      "at": 129,
+      "to": {
+        "point": [
+          1117,
+          670
+        ]
+      },
+      "note": "step 9: ease down the rows through the p38 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 134.2,
+      "key": "pgInfoRect",
+      "target": "pgInfo"
+    },
+    {
+      "op": "log-rects",
+      "at": 134.26,
+      "key": "pageCtl",
+      "targets": [
+        "pagePrev",
+        "pageNum",
+        "pageNext"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 134.32,
+      "key": "cardSubtitleRect2",
+      "target": "cardSubtitle"
+    },
+    {
+      "op": "move",
+      "at": 134.4,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p39): 'At the foot of the list, the page controls'"
+    },
+    {
+      "op": "move",
+      "at": 137.02,
+      "to": {
+        "target": "pageNext",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p40): rows per page, a simple counter, and pager arrows — located from beside, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 138.6,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 10 (p40): the counter"
+    },
+    {
+      "op": "move",
+      "at": 141.1,
+      "to": {
+        "target": "cardSubtitle",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "step 10 (p41): 'the card says eighteen records' — the 18 records header"
+    },
+    {
+      "op": "move",
+      "at": 143.6,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 10 (p41): 'while only four load here' — the 1-4 of 4 counter"
+    },
+    {
+      "op": "move",
+      "at": 146.32,
+      "to": {
+        "point": [
+          1200,
+          400
+        ]
+      },
+      "note": "step 10 (p42): ease off — 'treat those four as samples and the counts as stand-ins'"
+    },
+    {
+      "op": "log-rect",
+      "at": 150.85,
+      "key": "newRecordRect2",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 151.04,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p43): the narration says 'Now open a new ticket' — SAFETY OVERRIDE (RESIDUAL R1): + New Record is a create-form navigation (support-tickets-edit.html) that files a support ticket which notifies people, so on a live shared tenant it is NOT clicked; we hold beside it with the red do-not-click ring. The form is never opened; nothing is logged."
+    },
+    {
+      "op": "move",
+      "at": 153.17,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p44): 'This is the one write action in the lesson' — held beside + New Record, still never pressed"
+    },
+    {
+      "op": "move",
+      "at": 155.59,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p45): 'Open the blank form, look it over, then back out without saving and without touching a field' — matched by never opening it in the first place"
+    },
+    {
+      "op": "move",
+      "at": 161.29,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p46): 'documenting where a new ticket starts, not filing one' — held beside, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 164,
+      "to": {
+        "point": [
+          1690,
+          300
+        ]
+      },
+      "note": "step 11: ease off — nothing gets logged"
+    },
+    {
+      "op": "log-rect",
+      "at": 165.05,
+      "key": "kpiStripRect2",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 165.11,
+      "key": "panelsRowRect",
+      "target": "panelsRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 165.17,
+      "key": "theadRect2",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 165.23,
+      "key": "newRecordRect3",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 165.36,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 12 (p47): recap — 'That's the whole page', start at the KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 167.04,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 12 (p48): 'The counters give you the backlog'"
+    },
+    {
+      "op": "move",
+      "at": 169.05,
+      "to": {
+        "target": "panelsRow",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "step 12 (p49): 'the middle panels tell you what kind of work it is and how much is cleared'"
+    },
+    {
+      "op": "move",
+      "at": 173.22,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          340,
+          0
+        ]
+      },
+      "note": "step 12 (p50): 'and the list hands you each ticket with its priority and its owner'"
+    },
+    {
+      "op": "move",
+      "at": 175,
+      "to": {
+        "target": "row4201",
+        "offset": [
+          260,
+          0
+        ]
+      },
+      "note": "step 12: down into the list rows"
+    },
+    {
+      "op": "move",
+      "at": 177.33,
+      "to": {
+        "point": [
+          1600,
+          930
+        ]
+      },
+      "note": "step 12 (p51): final park, clear of content and captions — 'Enough to triage before you open a single one'"
+    },
+    {
+      "op": "assert",
+      "at": 180.3,
+      "predicate": "onTickets",
+      "note": "end state: still on Support Tickets, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 180.45,
+      "predicate": "listIntact",
+      "note": "end state: list intact — 4 rows, '18 records', '1-4 of 4'; nothing was created, edited, assigned, resolved, or deleted on the page"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 1.2,
+        "to": 13.4
+      },
+      {
+        "n": 2,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 13.8,
+        "to": 29.4
+      },
+      {
+        "n": 3,
+        "anchor": "panelVolumeRect",
+        "place": "below-left",
+        "from": 29.8,
+        "to": 42.4
+      },
+      {
+        "n": 4,
+        "anchor": "panelCategoryRect",
+        "place": "below-left",
+        "from": 42.8,
+        "to": 55.7
+      },
+      {
+        "n": 5,
+        "anchor": "panelHealthRect",
+        "place": "left",
+        "from": 56.2,
+        "to": 69.2
+      },
+      {
+        "n": 6,
+        "anchor": "cardTitleRect",
+        "place": "below-left",
+        "from": 69.6,
+        "to": 84.8
+      },
+      {
+        "n": 7,
+        "anchor": "searchBoxRect",
+        "place": "below-left",
+        "from": 85.3,
+        "to": 99.2
+      },
+      {
+        "n": 8,
+        "anchor": "theadRect",
+        "place": "below-left",
+        "from": 99.6,
+        "to": 115.3
+      },
+      {
+        "n": 9,
+        "anchor": "row4201Rect",
+        "place": "left",
+        "from": 115.8,
+        "to": 134.1
+      },
+      {
+        "n": 10,
+        "anchor": "pgInfoRect",
+        "place": "left",
+        "from": 134.6,
+        "to": 150.8
+      },
+      {
+        "n": 11,
+        "anchor": "newRecordRect2",
+        "place": "left",
+        "from": 151.2,
+        "to": 165
+      },
+      {
+        "n": 12,
+        "anchor": "kpiStripRect2",
+        "place": "below-left",
+        "from": 165.5,
+        "to": 178.8
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideNav.sideTickets",
+        "from": 1.4,
+        "to": 4.61,
+        "note": "step 1 (p01): the active SUPPORT Support Tickets link (pointed at, never clicked)"
+      },
+      {
+        "anchor": "crumbStrongRect",
+        "from": 4.61,
+        "to": 13.2,
+        "note": "step 1 (p02): the Support > Support Tickets breadcrumb title"
+      },
+      {
+        "anchor": "kpiTiles.kpiOpen",
+        "from": 19.11,
+        "to": 20.3,
+        "note": "step 2 (p06): tiles named in spoken order — Open"
+      },
+      {
+        "anchor": "kpiTiles.kpiInProgress",
+        "from": 20.3,
+        "to": 21.4,
+        "note": "In Progress"
+      },
+      {
+        "anchor": "kpiTiles.kpiResolved",
+        "from": 21.4,
+        "to": 22.67,
+        "note": "Resolved Today"
+      },
+      {
+        "anchor": "kpiTiles.kpiAvg",
+        "from": 22.67,
+        "to": 26,
+        "note": "p07 Avg Resolution"
+      },
+      {
+        "anchor": "panelVolumeRect",
+        "from": 31.2,
+        "to": 42.2,
+        "note": "step 3 (p10-p11): Ticket Volume — the twelve-month trend, total 342 and up seven percent"
+      },
+      {
+        "anchor": "panelCategoryRect",
+        "from": 45.52,
+        "to": 55.5,
+        "note": "step 4 (p14-p16): By Category — Billing, Technical, Feedback, General shares"
+      },
+      {
+        "anchor": "panelHealthRect",
+        "from": 58.69,
+        "to": 68.9,
+        "note": "step 5 (p18-p19): Ticket Health — Resolved, In Progress, Open across the segmented bar"
+      },
+      {
+        "anchor": "cardTitleRect",
+        "from": 69.44,
+        "to": 72.27,
+        "note": "step 6 (p20): Ticket List card header"
+      },
+      {
+        "anchor": "cardSubtitleRect",
+        "from": 72.27,
+        "to": 74.78,
+        "note": "step 6 (p21): 18 records subtitle"
+      },
+      {
+        "anchor": "newRecordRect",
+        "from": 76.89,
+        "to": 84.8,
+        "color": "#dc2626",
+        "note": "step 6 (p23-p24) do-not-click: + New Record is a create-form navigation, never pressed"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 74.78,
+        "to": 84.8,
+        "color": "#dc2626",
+        "note": "step 6 (p23-p25) do-not-click: Export is a data-out download, never pressed"
+      },
+      {
+        "anchor": "searchBoxRect",
+        "from": 88.6,
+        "to": 92.65,
+        "note": "step 7 (p27): Search support tickets box (never typed in)"
+      },
+      {
+        "anchor": "filtersRect",
+        "from": 92.65,
+        "to": 95.67,
+        "note": "step 7 (p28): Filters (located, never opened)"
+      },
+      {
+        "anchor": "searchBtnRect",
+        "from": 95.67,
+        "to": 99.2,
+        "note": "step 7 (p29): Search button (located, never pressed)"
+      },
+      {
+        "anchor": "theadRect",
+        "from": 101.9,
+        "to": 104.9,
+        "note": "step 8 (p31): the seven column headers, swept left to right"
+      },
+      {
+        "anchor": "ths.thPriority",
+        "from": 104.9,
+        "to": 105.81,
+        "note": "step 8 (p32): Priority — what to grab first"
+      },
+      {
+        "anchor": "ths.thAssigned",
+        "from": 105.81,
+        "to": 114.9,
+        "note": "step 8 (p33): Assigned To — who already has it"
+      },
+      {
+        "anchor": "statusChips.status4201",
+        "from": 117.47,
+        "to": 118.8,
+        "note": "step 9 (p35): STATUS chip — In Progress (TKT-4201 POS receipt)"
+      },
+      {
+        "anchor": "statusChips.status4200",
+        "from": 118.8,
+        "to": 120.16,
+        "note": "step 9 (p35): Open (TKT-4200 billing dispute)"
+      },
+      {
+        "anchor": "statusChips.status4199",
+        "from": 120.16,
+        "to": 121.2,
+        "note": "step 9 (p36): Open (TKT-4199 membership not activating)"
+      },
+      {
+        "anchor": "statusChips.status4198",
+        "from": 121.2,
+        "to": 122.3,
+        "note": "step 9 (p36): Resolved (TKT-4198 tunnel E-stop)"
+      },
+      {
+        "anchor": "prioCells.prio4198",
+        "from": 122.3,
+        "to": 124.45,
+        "note": "step 9 (p37): Priority runs from Critical (TKT-4198) down to Medium"
+      },
+      {
+        "anchor": "row4201Rect",
+        "from": 124.45,
+        "to": 129,
+        "note": "step 9 (p38): each ticket names a person or team (Assigned To)"
+      },
+      {
+        "anchor": "pgInfoRect",
+        "from": 137.02,
+        "to": 141.1,
+        "note": "step 10 (p40): the 1-4 of 4 counter and pager arrows"
+      },
+      {
+        "anchor": "cardSubtitleRect2",
+        "from": 141.1,
+        "to": 143.6,
+        "note": "step 10 (p41): the card says 18 records"
+      },
+      {
+        "anchor": "pgInfoRect",
+        "from": 143.6,
+        "to": 146.32,
+        "note": "step 10 (p41): while only four load here"
+      },
+      {
+        "anchor": "newRecordRect2",
+        "from": 151.04,
+        "to": 165,
+        "color": "#dc2626",
+        "note": "step 11 (p43-p46) do-not-click STOP: + New Record files a support ticket that notifies people on a live tenant — held beside, never clicked (RESIDUAL R1)"
+      },
+      {
+        "anchor": "kpiStripRect2",
+        "from": 167.04,
+        "to": 169.05,
+        "note": "step 12 (p48): recap — the counters (backlog)"
+      },
+      {
+        "anchor": "panelsRowRect",
+        "from": 169.05,
+        "to": 173.22,
+        "note": "step 12 (p49): the middle panels (what kind of work, how much cleared)"
+      },
+      {
+        "anchor": "theadRect2",
+        "from": 173.22,
+        "to": 177,
+        "note": "step 12 (p50): the list — each ticket's priority and owner"
+      },
+      {
+        "anchor": "newRecordRect3",
+        "from": 175,
+        "to": 177,
+        "color": "#dc2626",
+        "note": "step 12: + New Record still a do-not-click guardrail, never pressed"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2,
+        "z": 1.2,
+        "cx": 420,
+        "cy": 200,
+        "ease": true,
+        "note": "step 1: SUPPORT sidebar group + breadcrumb title"
+      },
+      {
+        "t": 13.3,
+        "z": 1.2,
+        "cx": 420,
+        "cy": 200
+      },
+      {
+        "t": 13.72,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 110,
+        "ease": true,
+        "note": "step 2: 130% on the KPI strip (shot list)"
+      },
+      {
+        "t": 29.3,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 110
+      },
+      {
+        "t": 29.6,
+        "z": 1.32,
+        "cx": 591,
+        "cy": 250,
+        "ease": true,
+        "note": "step 3: the Ticket Volume panel (342, +7%)"
+      },
+      {
+        "t": 42.4,
+        "z": 1.32,
+        "cx": 591,
+        "cy": 250
+      },
+      {
+        "t": 42.64,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: the By Category panel"
+      },
+      {
+        "t": 55.7,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 250
+      },
+      {
+        "t": 55.92,
+        "z": 1.32,
+        "cx": 1643,
+        "cy": 250,
+        "ease": true,
+        "note": "step 5: the Ticket Health panel"
+      },
+      {
+        "t": 69.2,
+        "z": 1.32,
+        "cx": 1643,
+        "cy": 250
+      },
+      {
+        "t": 69.44,
+        "z": 1.1,
+        "cx": 1010,
+        "cy": 390,
+        "ease": true,
+        "note": "step 6: one framing showing the Ticket List card header (left) and the two top-right buttons together — callout 6 spans both, and the Export / + New Record red do-not-click guardrails stay in frame (visible x range ~137-1883 covers Export's right edge at 1879)"
+      },
+      {
+        "t": 84.8,
+        "z": 1.1,
+        "cx": 1010,
+        "cy": 390
+      },
+      {
+        "t": 85.13,
+        "z": 1.24,
+        "cx": 1050,
+        "cy": 466,
+        "ease": true,
+        "note": "step 7: the search row (box, Filters, Search)"
+      },
+      {
+        "t": 99.2,
+        "z": 1.24,
+        "cx": 1050,
+        "cy": 466
+      },
+      {
+        "t": 99.44,
+        "z": 1.2,
+        "cx": 1117,
+        "cy": 505,
+        "ease": true,
+        "note": "step 8: the seven column headers"
+      },
+      {
+        "t": 115.3,
+        "z": 1.2,
+        "cx": 1117,
+        "cy": 505
+      },
+      {
+        "t": 115.6,
+        "z": 1.26,
+        "cx": 1117,
+        "cy": 605,
+        "ease": true,
+        "note": "step 9: the four example rows and their STATUS/PRIORITY cells"
+      },
+      {
+        "t": 134.1,
+        "z": 1.26,
+        "cx": 1117,
+        "cy": 605
+      },
+      {
+        "t": 134.4,
+        "z": 1.16,
+        "cx": 1250,
+        "cy": 720,
+        "ease": true,
+        "note": "step 10: the footer counter and page arrows"
+      },
+      {
+        "t": 150.8,
+        "z": 1.16,
+        "cx": 1250,
+        "cy": 720
+      },
+      {
+        "t": 151.04,
+        "z": 1.35,
+        "cx": 1690,
+        "cy": 400,
+        "ease": true,
+        "note": "step 11: the + New Record guardrail — the form is never opened"
+      },
+      {
+        "t": 165,
+        "z": 1.35,
+        "cx": 1690,
+        "cy": 400
+      },
+      {
+        "t": 165.36,
+        "z": 1.12,
+        "cx": 1117,
+        "cy": 380,
+        "ease": true,
+        "note": "step 12: recap sweep from the KPI strip down to the list"
+      },
+      {
+        "t": 178.6,
+        "z": 1.12,
+        "cx": 1117,
+        "cy": 380
+      },
+      {
+        "t": 179.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 180.611,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Support Tickets — Complete",
+      "from": 178.8,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 178.5
+  },
+  "output": "WC-10-02-support-tickets-v1.1",
+  "neverClick": [
+    "\\+ ?new record",
+    "new record",
+    "new ticket",
+    "create ticket",
+    "report ticket",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "edit ticket",
+    "delete",
+    "yes, delete",
+    "\\bsave\\b",
+    "save changes",
+    "\\bsend\\b",
+    "submit",
+    "\\breply\\b",
+    "comment",
+    "add comment",
+    "\\bassign\\b",
+    "assign to",
+    "reassign",
+    "resolve",
+    "\\bclose\\b",
+    "reopen",
+    "escalate",
+    "change status",
+    "\\bstatus\\b",
+    "priority",
+    "export",
+    "filters",
+    "\\bsearch\\b",
+    "ticket rows / row-link rows (no row is opened; ticket detail is out of scope)",
+    "page arrows / pagination buttons",
+    "ask shyne",
+    "log ?out",
+    "logout",
+    "log out now"
+  ]
+}

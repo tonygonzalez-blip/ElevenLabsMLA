@@ -1,0 +1,184 @@
+{
+  "lesson": "WC-12-05",
+  "audioMaster": "training/module12-settings/WC-12-05-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence/comma boundaries into caption-sized pieces. Block windows are the blocks' MEASURED positions in the joined master: the Σ(ffprobe audio+0.4) formula predicts 288.576s but the ffprobed master is 288.131s (0.446s over, past the ±0.3s gate) because each ffprobe per-block duration carries a little mp3 encoder/decoder padding that does not accumulate in the concatenation. Onsets were measured by FFT normalized cross-correlation of each sNN.mp3 against the joined master (8 kHz mono PCM); every block embeds at ncc≈1.000, consecutive onset gaps are all exactly 0.400s, and the trailing gap is 0.400s. Final end = ffprobed master duration 288.131s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 17.76,
+      "phrases": [
+        { "id": "p01", "text": "Start in Settings, and open the Hardware group." },
+        { "id": "p02", "text": "Five lists live here, and together they describe the machines at a wash:" },
+        { "id": "p03", "text": "the terminals that exist, the screen layouts they run, and the lube-bay buttons they show." },
+        { "id": "p04", "text": "Think of this as the field tech's corner of Settings," },
+        { "id": "p05", "text": "the place you check before you touch anything at the site." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.76,
+      "endS": 41.28,
+      "phrases": [
+        { "id": "p06", "text": "Click Hardware / Terminals." },
+        { "id": "p07", "text": "Every machine a wash runs shows up here as one row:" },
+        { "id": "p08", "text": "its location, its address on the network, the build it runs, and when it last checked in." },
+        { "id": "p09", "text": "When a site reports a dead register, start here." },
+        { "id": "p10", "text": "A terminal that isn't listed, or whose last-seen time is hours stale," },
+        { "id": "p11", "text": "has already told you something." },
+        { "id": "p12", "text": "The rows didn't load today, so read the columns." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 41.28,
+      "endS": 64.48,
+      "phrases": [
+        { "id": "p13", "text": "Now Screen Layout." },
+        { "id": "p14", "text": "This one loaded." },
+        { "id": "p15", "text": "The tiles count six layouts, split evenly between POS and kiosk," },
+        { "id": "p16", "text": "and each row pins a screen type and a resolution to a location." },
+        { "id": "p17", "text": "A portrait kiosk, a landscape register, each with its own entry." },
+        { "id": "p18", "text": "One quirk: the card claims six records but lists two." },
+        { "id": "p19", "text": "Trust the tiles for the real count, and treat the rows as samples." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 64.48,
+      "endS": 86.0,
+      "phrases": [
+        { "id": "p20", "text": "System Types is next." },
+        { "id": "p21", "text": "It's a short lookup list, one description per row," },
+        { "id": "p22", "text": "the kind of behind-the-scenes list other pages point at." },
+        { "id": "p23", "text": "Nothing to configure day to day." },
+        { "id": "p24", "text": "Today it didn't load either, so note what it is and move on." },
+        { "id": "p25", "text": "When you see \"failed to fetch\" on a page like this, it's the data service, not an empty list." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 86.0,
+      "endS": 110.96,
+      "phrases": [
+        { "id": "p26", "text": "Lube Buttons." },
+        { "id": "p27", "text": "Here's button wiring at its plainest." },
+        { "id": "p28", "text": "Twenty-four buttons across a few lube-bay terminals, one row each." },
+        { "id": "p29", "text": "The row names the group it belongs to, the terminal it appears on," },
+        { "id": "p30", "text": "the label the operator taps, and the tile's color." },
+        { "id": "p31", "text": "Oil Change in teal, Tire Rotation in blue." },
+        { "id": "p32", "text": "When someone says a lube button is wrong, this is the row you read." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 110.96,
+      "endS": 131.04,
+      "phrases": [
+        { "id": "p33", "text": "Lube Checklists." },
+        { "id": "p34", "text": "One column, the service." },
+        { "id": "p35", "text": "These are the checklist items a lube bay works through on a job." },
+        { "id": "p36", "text": "Like System Types, it didn't load today," },
+        { "id": "p37", "text": "so read the column and the purpose, not the values." },
+        { "id": "p38", "text": "A menu tour like this is about knowing where each list lives," },
+        { "id": "p39", "text": "so that when a ticket points here you go straight to it." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 131.04,
+      "endS": 153.76,
+      "phrases": [
+        { "id": "p40", "text": "Collapse Hardware, and open UI and Display." },
+        { "id": "p41", "text": "Eleven lists this time." },
+        { "id": "p42", "text": "Most are the paint and the plumbing: button types, images, colors, templates." },
+        { "id": "p43", "text": "We'll read the ones a technician gets asked about:" },
+        { "id": "p44", "text": "the cashier and greeter buttons, the button groups behind them," },
+        { "id": "p45", "text": "the macros, and the kiosk screen flows." },
+        { "id": "p46", "text": "The rest are the lookups those five draw from." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 153.76,
+      "endS": 171.76,
+      "phrases": [
+        { "id": "p47", "text": "Button Groups." },
+        { "id": "p48", "text": "A group is just the named set a button is filed under," },
+        { "id": "p49", "text": "the same group value you saw on the lube buttons a moment ago." },
+        { "id": "p50", "text": "Two columns, a description and whether it's active." },
+        { "id": "p51", "text": "It didn't load today, so read the shape." },
+        { "id": "p52", "text": "Groups are the folder; the buttons are what's inside." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 171.76,
+      "endS": 193.52,
+      "phrases": [
+        { "id": "p53", "text": "Cashier Buttons." },
+        { "id": "p54", "text": "These are the tap targets on the register screen." },
+        { "id": "p55", "text": "Each row is a button: its slot number, its label," },
+        { "id": "p56", "text": "the kind of action it runs, and its tile color." },
+        { "id": "p57", "text": "So \"the void button moved\" or \"the wrong color\" is answered right here, one row per button." },
+        { "id": "p58", "text": "The list didn't load today, but the columns tell the story." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 193.52,
+      "endS": 213.68,
+      "phrases": [
+        { "id": "p59", "text": "Greeter Buttons." },
+        { "id": "p60", "text": "Same four columns, aimed at the greeter station out at the lane instead of the register." },
+        { "id": "p61", "text": "Keeping the two lists apart lets a site put different buttons" },
+        { "id": "p62", "text": "in front of the greeter than the cashier." },
+        { "id": "p63", "text": "If a lane's entry screen looks wrong, you check here, not the cashier page." },
+        { "id": "p64", "text": "This one didn't load today either." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 213.68,
+      "endS": 233.28,
+      "phrases": [
+        { "id": "p65", "text": "Macros." },
+        { "id": "p66", "text": "A macro is a saved action a button or a scanned barcode can fire." },
+        { "id": "p67", "text": "The columns tell you its type, whether a barcode triggers it," },
+        { "id": "p68", "text": "and whether it also shows on the handheld." },
+        { "id": "p69", "text": "That last one matters when an operator says a shortcut works" },
+        { "id": "p70", "text": "at the register but not on the handheld device." },
+        { "id": "p71", "text": "It didn't load today, so read the columns." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 233.28,
+      "endS": 264.08,
+      "phrases": [
+        { "id": "p72", "text": "Last list: Kiosk Screen Flows." },
+        { "id": "p73", "text": "This is where self-serve kiosk screens are built and pushed live." },
+        { "id": "p74", "text": "The tiles count three flows, two published and one draft, across eleven screens." },
+        { "id": "p75", "text": "Each row is a flow: its locations, how many screens and tappable hotspots, and a status chip." },
+        { "id": "p76", "text": "Read the chip first." },
+        { "id": "p77", "text": "Published is live on the kiosks;" },
+        { "id": "p78", "text": "a draft, like Express Tunnel, is built but not out yet." },
+        { "id": "p79", "text": "The create button here reads New Flow." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 264.08,
+      "endS": 288.131,
+      "phrases": [
+        { "id": "p80", "text": "So that's Hardware and UI and Display." },
+        { "id": "p81", "text": "Hardware registers the machines and their screens." },
+        { "id": "p82", "text": "UI and Display wires the buttons a cashier and greeter tap," },
+        { "id": "p83", "text": "the macros behind them, and the kiosk flows a site publishes." },
+        { "id": "p84", "text": "Two groups, ten lists, all read-only for you." },
+        { "id": "p85", "text": "Learn where each one lives, because a POS ticket usually ends on one of these pages." }
+      ]
+    }
+  ],
+  "output": "WC-12-05-hardware-ui-v1.1"
+}

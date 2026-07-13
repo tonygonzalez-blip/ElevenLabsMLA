@@ -1,0 +1,234 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.650
+Open the Operations module, then Issues.
+
+p02
+00:00:03.217 --> 00:00:04.794
+This is Maintenance Issues.
+
+p03
+00:00:05.238 --> 00:00:09.318
+Every equipment problem across your sites lands here as one work order.
+
+p04
+00:00:09.827 --> 00:00:13.454
+A dryer that won't heat, a touch screen that quit, a leaking pump.
+
+p05
+00:00:13.973 --> 00:00:16.290
+One list tracks them all the way to fixed.
+
+p06
+00:00:16.720 --> 00:00:17.746
+Start at the top.
+
+p07
+00:00:18.596 --> 00:00:20.175
+Four numbers frame the board: how many issues are open, how many are being worked,
+
+p08
+00:00:20.651 --> 00:00:21.923
+how many are high priority, and the average time to a fix.
+
+p09
+00:00:22.277 --> 00:00:31.810
+Before you read a single row, you know how heavy the load is.
+
+p10
+00:00:32.322 --> 00:00:34.444
+First panel, the twelve-month trend.
+
+p11
+00:00:35.101 --> 00:00:39.331
+It counts issues reported over the last year and flags the recent change.
+
+p12
+00:00:39.822 --> 00:00:42.294
+A rising line means more tickets coming in.
+
+p13
+00:00:42.675 --> 00:00:47.735
+Useful when someone asks whether last month was really busier, or it just felt that way.
+
+p14
+00:00:48.160 --> 00:00:50.266
+Next, the priority breakdown.
+
+p15
+00:00:50.785 --> 00:00:55.099
+Low, Medium, High, and Critical, each as a share of the total.
+
+p16
+00:00:55.653 --> 00:00:57.569
+This is your triage picture.
+
+p17
+00:00:58.025 --> 00:01:01.760
+When High and Critical creep up, that's where the day's attention goes.
+
+p18
+00:01:02.223 --> 00:01:03.965
+Third panel, the pipeline.
+
+p19
+00:01:04.402 --> 00:01:08.500
+It splits the open work into Resolved, in Progress, and Blocked.
+
+p20
+00:01:09.122 --> 00:01:10.644
+Blocked is the one to watch.
+
+p21
+00:01:11.121 --> 00:01:15.705
+A blocked job is stuck waiting on a part or a person, and it won't clear itself.
+
+p22
+00:01:16.240 --> 00:01:17.497
+Now the list itself.
+
+p23
+00:01:18.195 --> 00:01:21.462
+The header calls it the Issue List and gives the record count.
+
+p24
+00:01:22.316 --> 00:01:24.315
+The subtitle says the job out loud: work order tracking.
+
+p25
+00:01:24.596 --> 00:01:29.040
+Everything above this card is just the summary.
+
+p26
+00:01:29.516 --> 00:01:31.749
+Top-right of that card, two buttons.
+
+p27
+00:01:32.282 --> 00:01:34.347
+New Issue opens a blank work order.
+
+p28
+00:01:34.674 --> 00:01:36.904
+Export pulls the list out to a file.
+
+p29
+00:01:37.195 --> 00:01:41.342
+We won't export anything today; just know where it is when a manager asks for it.
+
+p30
+00:01:41.760 --> 00:01:44.357
+Click New Issue to see the form.
+
+p31
+00:01:44.357 --> 00:01:49.720
+This is where a technician writes up a new problem: what broke, where, and how urgent.
+
+p32
+00:01:49.720 --> 00:01:52.434
+We're only looking, so we back out without saving.
+
+p33
+00:01:52.434 --> 00:01:53.339
+Nothing gets logged.
+
+p34
+00:01:53.760 --> 00:01:55.560
+Below the buttons, the search row.
+
+p35
+00:01:55.560 --> 00:01:58.925
+Type a few letters to find an issue by title,
+
+p36
+00:01:58.925 --> 00:02:01.925
+or open Filters to narrow by status, priority, or site.
+
+p37
+00:02:01.925 --> 00:02:06.189
+On a long list, this is how you reach one ticket fast.
+
+p38
+00:02:06.712 --> 00:02:08.515
+The table has seven columns.
+
+p39
+00:02:08.930 --> 00:02:10.135
+Which site logged it, the title, its status, its priority,
+
+p40
+00:02:10.342 --> 00:02:13.138
+who owns it, who reported it, and the date.
+
+p41
+00:02:13.351 --> 00:02:20.480
+Read across one row and you have the whole story of a work order.
+
+p42
+00:02:20.955 --> 00:02:22.524
+Look at the live examples.
+
+p43
+00:02:22.923 --> 00:02:26.681
+An air dryer not reaching temperature, marked Open and high.
+
+p44
+00:02:27.376 --> 00:02:31.187
+A conveyor belt squeaking in the tunnel, already In Progress.
+
+p45
+00:02:31.726 --> 00:02:35.134
+A chemical pump leak, Critical, and already Resolved.
+
+p46
+00:02:35.608 --> 00:02:38.206
+Real problems, each at a different stage.
+
+p47
+00:02:38.640 --> 00:02:40.272
+Notice two columns are blank.
+
+p48
+00:02:40.861 --> 00:02:44.998
+Assigned To and Created By show a dash on every row here.
+
+p49
+00:02:45.554 --> 00:02:47.533
+In a live tenant they carry names.
+
+p50
+00:02:48.223 --> 00:02:52.320
+A row with no owner is your cue that somebody still needs to pick it up.
+
+p51
+00:02:52.775 --> 00:02:54.769
+At the foot of the list, the counter.
+
+p52
+00:02:55.305 --> 00:02:55.854
+It reads five of five, on one page.
+
+p53
+00:02:56.135 --> 00:03:02.800
+When your network fills this up, the arrows here walk you through the rest.
+
+p54
+00:03:03.200 --> 00:03:05.101
+So that's the work-order board.
+
+p55
+00:03:05.454 --> 00:03:07.671
+The four numbers up top tell you the load, the three panels tell you its shape,
+
+p56
+00:03:08.081 --> 00:03:12.794
+and the list is where every fix gets tracked.
+
+p57
+00:03:13.236 --> 00:03:14.736
+New Issue starts one; the columns tell you where it stands.
+
+p58
+00:03:15.056 --> 00:03:20.900
+This is the page you live in for anything broken on site.
+

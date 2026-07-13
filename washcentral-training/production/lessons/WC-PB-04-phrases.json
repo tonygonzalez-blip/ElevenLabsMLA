@@ -1,0 +1,162 @@
+{
+  "lesson": "WC-PB-04",
+  "audioMaster": "training/playbooks/WC-PB-04-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; stage directions and pronunciation spellings kept exactly as written in the script, e.g. 'Customer three-sixty', 'Open Edge, Smart Tech, Other, and Card Connect'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s13 end at 245.134s, which overshoots the ffprobe-probed master (244.689s) by 0.445s (> 0.3 tolerance) because the concatenated MP3 frames decode ~0.03-0.46s shorter than ffprobe's per-file duration sum. Onsets were therefore measured by normalized cross-correlation of each WC-PB-04-sNN.mp3 against the joined master (all 13 blocks matched at score 1.000). Master ffprobe duration 244.689s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 21.84,
+      "phrases": [
+        { "id": "p01", "text": "Start on the Command Center." },
+        { "id": "p02", "text": "Down the left column, one number sizes the whole problem: the decline rate." },
+        { "id": "p03", "text": "Right now it reads a quarter of a percent, and the trend arrow points down." },
+        { "id": "p04", "text": "That's the entire network, not one member." },
+        { "id": "p05", "text": "Read it before you chase anyone." },
+        { "id": "p06", "text": "One expired card won't move it. A gateway going bad will." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 21.84,
+      "endS": 42.8,
+      "phrases": [
+        { "id": "p07", "text": "Now scroll to Priority Intelligence." },
+        { "id": "p08", "text": "WashCentral is already working the problem." },
+        { "id": "p09", "text": "One play flags eighteen recoverable billing failures through the card updater," },
+        { "id": "p10", "text": "worth about six hundred forty dollars to recover." },
+        { "id": "p11", "text": "Another shows the retry automation churning: thirty-seven queued, eleven already recovered." },
+        { "id": "p12", "text": "You're reading these, not launching them." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 42.8,
+      "endS": 60.8,
+      "phrases": [
+        { "id": "p13", "text": "Before you click anything, size it." },
+        { "id": "p14", "text": "One member says their card bounced? Head to Customer three-sixty." },
+        { "id": "p15", "text": "A wave of failures at one site? The declined card log, then that site's gateway." },
+        { "id": "p16", "text": "Charges about texts, not cards? That's a billing question." },
+        { "id": "p17", "text": "Same ticket, three different trails." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 60.8,
+      "endS": 73.2,
+      "phrases": [
+        { "id": "p18", "text": "Take the single-customer trail first. Open the member from the customer list." },
+        { "id": "p19", "text": "Customer three-sixty opens on nine tabs, everything about this account in one place." },
+        { "id": "p20", "text": "The billing answers live two tabs in." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 73.2,
+      "endS": 89.68,
+      "phrases": [
+        { "id": "p21", "text": "Open the Membership tab." },
+        { "id": "p22", "text": "Find the billing cycle block. Two fields answer the ticket." },
+        { "id": "p23", "text": "Last payment result tells you whether the most recent charge failed." },
+        { "id": "p24", "text": "Next charge tells you when the system tries again." },
+        { "id": "p25", "text": "That's the member's side of the story in ten seconds." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 89.68,
+      "endS": 108,
+      "phrases": [
+        { "id": "p26", "text": "Now the Payments tab." },
+        { "id": "p27", "text": "Here's the card on file and its expiry." },
+        { "id": "p28", "text": "Most single-member declines are just that: a card that expired or got pulled." },
+        { "id": "p29", "text": "The fix is a card update, or a link the member taps to re-enter it." },
+        { "id": "p30", "text": "That happens in production, with the right role. Never from this demo." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 108,
+      "endS": 127.52,
+      "phrases": [
+        { "id": "p31", "text": "Back out to the many-customer trail. In Sales, open the declined credit card log." },
+        { "id": "p32", "text": "Seven columns lay out every failed charge:" },
+        { "id": "p33", "text": "date, customer, plan, amount, reason, attempts, location." },
+        { "id": "p34", "text": "When a member swears they paid and your record says declined, reason and attempts settle it." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 127.52,
+      "endS": 141.84,
+      "phrases": [
+        { "id": "p35", "text": "Search by customer or location to narrow it." },
+        { "id": "p36", "text": "One caution from today's capture: the list came back empty with a fetch error." },
+        { "id": "p37", "text": "Don't read that as no declines." },
+        { "id": "p38", "text": "Confirm the data actually loaded before you tell a member their account is clean." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 141.84,
+      "endS": 159.36,
+      "phrases": [
+        { "id": "p39", "text": "When it's the whole site, go to Settings, then Locations." },
+        { "id": "p40", "text": "The locations list carries code, name, address, and last sync." },
+        { "id": "p41", "text": "And in the side menu, notice Payment Credential Approval." },
+        { "id": "p42", "text": "That's the gate every credential change has to pass through. Hold that thought." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 159.36,
+      "endS": 181.76,
+      "phrases": [
+        { "id": "p43", "text": "Open the site and read its Payments and Credentials tab." },
+        { "id": "p44", "text": "The processors sit in named blocks: Open Edge, Smart Tech, Other, and Card Connect." },
+        { "id": "p45", "text": "You report which block is involved." },
+        { "id": "p46", "text": "You never read the masked values, and you never hand-edit them." },
+        { "id": "p47", "text": "Any change goes through Payment Credential Approval, not this screen." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 181.76,
+      "endS": 203.12,
+      "phrases": [
+        { "id": "p48", "text": "Different complaint, different page." },
+        { "id": "p49", "text": "If it's about text or email charges, open Billing, then Usage and Billing." },
+        { "id": "p50", "text": "The Usage by Source panel breaks every charge down by campaign and automation:" },
+        { "id": "p51", "text": "source, type, volume, cost, share." },
+        { "id": "p52", "text": "Card declines and messaging bills are two separate questions. This answers the second one." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 203.12,
+      "endS": 222.88,
+      "phrases": [
+        { "id": "p53", "text": "Now build the ticket. Name the gateway." },
+        { "id": "p54", "text": "Attach a few decline samples with their reason and attempt count." },
+        { "id": "p55", "text": "Give the totals and the site or member affected." },
+        { "id": "p56", "text": "And the hard line: no card numbers, no credentials, not even masked." },
+        { "id": "p57", "text": "You diagnose and route. The retry and the fix happen upstream." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 222.88,
+      "endS": 244.689,
+      "phrases": [
+        { "id": "p58", "text": "So that's the playbook." },
+        { "id": "p59", "text": "Read the decline rate to size it. Scope to one member or many." },
+        { "id": "p60", "text": "Follow it to Customer three-sixty, the declined log, or a site's gateway." },
+        { "id": "p61", "text": "Check Billing when the charge was really about messaging." },
+        { "id": "p62", "text": "Then escalate with the gateway, the samples, and the counts." },
+        { "id": "p63", "text": "You touched nothing. You just found the truth and passed it on." }
+      ]
+    }
+  ],
+  "output": "WC-PB-04-payment-declines-v1.1"
+}

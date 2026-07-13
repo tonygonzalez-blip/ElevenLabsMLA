@@ -1,0 +1,819 @@
+{
+  "lesson": "WC-PB-02",
+  "title": "PB-2: Surprise Logouts / Frozen Session",
+  "audioMaster": "training/playbooks/WC-PB-02-full-narration-v1.0.mp3",
+  "audioDurationS": 157.806,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/command-center.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "railSettings": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^settings$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railCommandCenter": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^command center$/i.test((e.getAttribute('title')||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "bcStrong": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "usersCard": {
+      "js": "[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
+    },
+    "usersCardItemSystemUsers": {
+      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^System Users$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tileTotalUsers": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "searchUsers": {
+      "js": "[...document.querySelectorAll('input')].find(e=>/^Search by name, code, or email/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn, button.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thUserName": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^user name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thUserLevel": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^user level$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "firstUserRow": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardTitleUsers": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='System Users List'&&e.getBoundingClientRect().width>0)"
+    },
+    "sidebarAutomationHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/automation/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "linkUserLevels": {
+      "text": "User Levels",
+      "scope": ".submenu a"
+    },
+    "tileLongestTimeout": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Longest Timeout/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thTimeout": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^session timeout/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowCashiers": {
+      "js": "[...document.querySelectorAll('tbody tr')].find(r=>{const td=r.querySelector('td');return td&&(td.textContent||'').trim()==='Cashiers'&&r.getBoundingClientRect().width>0})"
+    },
+    "cellCashiersTimeout": {
+      "js": "(()=>{const r=[...document.querySelectorAll('tbody tr')].find(x=>{const td=x.querySelector('td');return td&&(td.textContent||'').trim()==='Cashiers'&&x.getBoundingClientRect().width>0});if(!r)return null;const tds=r.querySelectorAll('td');return tds[tds.length-1]})()"
+    },
+    "cardTitleLevels": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='User Levels List'&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onSystemUsers": "location.pathname.endsWith('/settings-system-users.html')",
+    "onUserLevels": "location.pathname.endsWith('/settings-user-levels.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "usersCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^System Users$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
+    "usersRowsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-system-users.html')&&rows.length>=10&&!!pi&&/of\\s*[\\d,]+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "automationSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&/^User Levels$/.test((e.textContent||'').trim()))",
+    "automationMenuStagedClosed": "(()=>{try{const s=JSON.parse(localStorage.getItem('washcentral-settings-menu-v1')||'{}');return s.automation!==true}catch(e){return true}})()",
+    "levelsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-user-levels.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "stillOnUserLevels": "location.pathname.endsWith('/settings-user-levels.html')&&[...document.querySelectorAll('tbody tr')].some(e=>e.getBoundingClientRect().width>0)"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: persisted sidebar preference (washcentral-sidebar-collapsed-v5) must be expanded; the preflight stages it"
+    },
+    {
+      "op": "assert",
+      "at": -0.6,
+      "predicate": "automationMenuStagedClosed",
+      "note": "pre-roll: persisted settings-menu state (washcentral-settings-menu-v1) must have automation closed so the step-5 header click genuinely EXPANDS; the preflight stages it"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        960,
+        1079
+      ],
+      "to": {
+        "target": "railCommandCenter",
+        "offset": [
+          1150,
+          600
+        ]
+      },
+      "note": "step 1: enter from the bottom edge to a neutral park over the dashboard; no navigation, no click in this step"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "bcHomeRect",
+      "target": "bcStrong",
+      "note": "breadcrumb Dashboard > Command Center anchors callout 1 (the two ticket shapes)"
+    },
+    {
+      "op": "move",
+      "at": 10.7,
+      "to": {
+        "point": [
+          1250,
+          700
+        ]
+      },
+      "note": "small drift during p05; the still dashboard is the point of step 1"
+    },
+    {
+      "op": "move",
+      "at": 25.95,
+      "to": {
+        "point": [
+          1300,
+          660
+        ]
+      },
+      "note": "step 2, p10 'So does a nudge of the mouse' — a genuine small mouse nudge, the real keep-alive action (the 58-min idle warning itself cannot truthfully appear; see RESIDUALS)"
+    },
+    {
+      "op": "move",
+      "at": 26.7,
+      "to": {
+        "point": [
+          1245,
+          700
+        ]
+      },
+      "note": "nudge back; no click"
+    },
+    {
+      "op": "move",
+      "at": 35.95,
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          52,
+          -4
+        ]
+      },
+      "note": "step 3 approach starts at the s03 cue ('Now the first real check.'), beside the Settings rail item"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 37.5,
+      "hoverMs": 400,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 3a: genuine rail navigation into Settings, inside the break after p13"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable",
+      "predicate": "pageReady",
+      "settleMs": 350,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "usersCard",
+      "pressAt": 39.2,
+      "hoverMs": 350,
+      "postcondition": "usersCardOpen",
+      "timeoutMs": 4000,
+      "note": "step 3b: open the Users & Security group card (stateless accordion — closed on every fresh load of settings.html) as p14 says 'Open System Users'"
+    },
+    {
+      "op": "click",
+      "target": "usersCardItemSystemUsers",
+      "pressAt": 40.4,
+      "hoverMs": 300,
+      "postcondition": "onSystemUsers",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 3c: land on System Users before p15 names the USER LEVEL column"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "usersStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 41.9,
+      "predicate": "usersRowsLoaded",
+      "note": "load check: real rows + counter, no 'Failed to fetch' (July 11: 8,022 users load; the July-9 banner state is gone — see RESIDUALS for step 4)"
+    },
+    {
+      "op": "log-rects",
+      "at": 42.1,
+      "key": "su",
+      "targets": [
+        "tileTotalUsers",
+        "searchUsers",
+        "newRecordBtn",
+        "thUserLevel",
+        "thUserName",
+        "firstUserRow",
+        "cardTitleUsers"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 42.35,
+      "key": "bcUsersRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 42.6,
+      "to": {
+        "target": "thUserName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3: slow sweep along the header row starts at USER NAME"
+    },
+    {
+      "op": "move",
+      "at": 43.5,
+      "to": {
+        "target": "thUserLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "rest on the USER LEVEL column header as p15 names it"
+    },
+    {
+      "op": "move",
+      "at": 47.9,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "point BESIDE + New Record for the do-not-click beat; never on it, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 49.6,
+      "to": {
+        "target": "searchUsers",
+        "offset": [
+          -600,
+          0
+        ]
+      },
+      "note": "hover the search box (no click, no focus) as p17-p18 say 'Don't scroll... Search.'"
+    },
+    {
+      "op": "move",
+      "at": 54.3,
+      "to": {
+        "point": [
+          1100,
+          520
+        ]
+      },
+      "note": "step 4: over the list body where a load-failure note would sit (p20)"
+    },
+    {
+      "op": "move",
+      "at": 58.5,
+      "to": {
+        "target": "tileTotalUsers",
+        "offset": [
+          420,
+          86
+        ],
+        "outside": true
+      },
+      "note": "under the Total Users tile — 8,022 present, the healthy contrast to the frozen branch (p21-p22)"
+    },
+    {
+      "op": "move",
+      "at": 62.9,
+      "to": {
+        "point": [
+          1250,
+          620
+        ]
+      },
+      "note": "park through p23-p24 ('the data service, not the timeout')"
+    },
+    {
+      "op": "move",
+      "at": 69.9,
+      "to": {
+        "target": "sidebarAutomationHeader",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 5 approach at the s05 cue ('Second check, second page.') — to the collapsed Automation group header"
+    },
+    {
+      "op": "click",
+      "target": "sidebarAutomationHeader",
+      "pressAt": 71.9,
+      "hoverMs": 380,
+      "postcondition": "automationSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 5a: genuinely EXPAND Automation (preflight staged it closed; a persisted-open state would make this click collapse instead)"
+    },
+    {
+      "op": "log-rect",
+      "at": 72.4,
+      "key": "userLevelsLinkRect",
+      "target": "linkUserLevels"
+    },
+    {
+      "op": "click",
+      "target": "linkUserLevels",
+      "pressAt": 73.5,
+      "hoverMs": 320,
+      "postcondition": "onUserLevels",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5b: into User Levels while p26 says it 'lives under Automation'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "levelsStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 75.1,
+      "predicate": "levelsLoaded",
+      "note": "July 11: all 14 levels load with real SESSION TIMEOUT (MIN) values (the July-9 'Failed to fetch' state is gone)"
+    },
+    {
+      "op": "log-rects",
+      "at": 75.35,
+      "key": "ul",
+      "targets": [
+        "tileLongestTimeout",
+        "thTimeout",
+        "rowCashiers",
+        "cellCashiersTimeout",
+        "sidebarAutomationHeader",
+        "cardTitleLevels"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 75.6,
+      "key": "bcLevelsRect",
+      "target": "bcStrong"
+    },
+    {
+      "op": "move",
+      "at": 76.7,
+      "to": {
+        "target": "thTimeout",
+        "offset": [
+          318,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "settle above the SESSION TIMEOUT (MIN) column header as p27 names the one column that answers the ticket"
+    },
+    {
+      "op": "move",
+      "at": 80.7,
+      "to": {
+        "point": [
+          1600,
+          470
+        ]
+      },
+      "note": "drift down the timeout column during p28"
+    },
+    {
+      "op": "move",
+      "at": 87.3,
+      "to": {
+        "target": "tileLongestTimeout",
+        "offset": [
+          265,
+          86
+        ],
+        "outside": true
+      },
+      "note": "step 6: under the Longest Timeout (min) tile — 120, the top of the range p30 describes"
+    },
+    {
+      "op": "move",
+      "at": 92,
+      "to": {
+        "target": "rowCashiers",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "genuine hover on the Cashiers row (5-minute level) as p31 names it"
+    },
+    {
+      "op": "move",
+      "at": 96.3,
+      "to": {
+        "target": "cellCashiersTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "onto the '5' itself for the cashier scenario (p32)"
+    },
+    {
+      "op": "move",
+      "at": 101.6,
+      "to": {
+        "point": [
+          1350,
+          640
+        ]
+      },
+      "note": "ease off during 'Nothing is broken.'"
+    },
+    {
+      "op": "move",
+      "at": 106,
+      "to": {
+        "target": "cellCashiersTimeout",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7: point back at the single level's SESSION TIMEOUT (MIN) value on the resolve cue"
+    },
+    {
+      "op": "move",
+      "at": 112.6,
+      "to": {
+        "point": [
+          1520,
+          840
+        ]
+      },
+      "note": "park neutrally: the stay controls / Log Out Now live on the idle dialog, which is genuinely absent (see RESIDUALS); nothing is faked"
+    },
+    {
+      "op": "move",
+      "at": 128.4,
+      "to": {
+        "point": [
+          1650,
+          930
+        ]
+      },
+      "note": "step 8 is the escalation rule beat: final park, clear of rows, callout 8, and captions"
+    },
+    {
+      "op": "watch",
+      "key": "stillOnUserLevelsThroughS08",
+      "from": 129,
+      "to": 155,
+      "predicate": "stillOnUserLevels",
+      "everyMs": 600,
+      "mustHold": true
+    },
+    {
+      "op": "assert",
+      "at": 155.4,
+      "predicate": "onUserLevels"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "bcHomeRect",
+        "place": "below-left",
+        "from": 1.6,
+        "to": 13.6,
+        "note": "step 1: the two ticket shapes, framed on the untouched Command Center"
+      },
+      {
+        "n": 2,
+        "anchor": "screen:960,470",
+        "place": "at",
+        "from": 16.9,
+        "to": 33,
+        "note": "step 2: where the centered Still there? dialog appears; the warning itself cannot truthfully be shown (58-min idle trigger) — RESIDUAL"
+      },
+      {
+        "n": 3,
+        "anchor": "su.thUserLevel",
+        "place": "below-left",
+        "from": 43.1,
+        "to": 48.3,
+        "note": "step 3: the USER LEVEL column header"
+      },
+      {
+        "n": 4,
+        "anchor": "su.tileTotalUsers",
+        "place": "below-left",
+        "from": 54.9,
+        "to": 64.6,
+        "note": "step 4: load state — rows present at record time (July 11), the frozen-branch caution is narrated conditionally"
+      },
+      {
+        "n": 5,
+        "anchor": "ul.sidebarAutomationHeader",
+        "place": "right",
+        "from": 75.8,
+        "to": 77.9,
+        "note": "step 5: filed under Automation, not Users & Security"
+      },
+      {
+        "n": 6,
+        "anchor": "ul.rowCashiers",
+        "place": "left",
+        "from": 92.9,
+        "to": 100.5,
+        "note": "step 6: Cashiers, a 5-minute level, read off the live table"
+      },
+      {
+        "n": 7,
+        "anchor": "ul.cellCashiersTimeout",
+        "place": "left",
+        "from": 106.4,
+        "to": 112.5,
+        "note": "step 7: match = configuration, not a fault"
+      },
+      {
+        "n": 8,
+        "anchor": "screen:960,850",
+        "place": "at",
+        "from": 135.7,
+        "to": 152.2,
+        "note": "step 8: escalation checklist as a lower-third (level + configured timeout + observed timing; username, never a password)"
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "su.thUserLevel",
+        "from": 42.9,
+        "to": 46.5,
+        "note": "'The column you want is their user level' (p15-p16)"
+      },
+      {
+        "anchor": "su.newRecordBtn",
+        "from": 48,
+        "to": 49.4,
+        "color": "#dc2626",
+        "note": "do-not-click guardrail on + New Record (shot-list step 3); pointed beside, never clicked"
+      },
+      {
+        "anchor": "su.searchUsers",
+        "from": 49.7,
+        "to": 50.9,
+        "note": "'Don't scroll the list hunting for them. Search.' (p17-p18)"
+      },
+      {
+        "anchor": "su.tileTotalUsers",
+        "from": 58.8,
+        "to": 61.7,
+        "note": "'the rows aren't missing' — Total Users 8,022 is live on screen (p21-p22)"
+      },
+      {
+        "anchor": "ul.thTimeout",
+        "from": 77.5,
+        "to": 80.1,
+        "note": "'one column answers the whole ticket: session timeout, in minutes' (p27)"
+      },
+      {
+        "anchor": "ul.tileLongestTimeout",
+        "from": 88.9,
+        "to": 91.8,
+        "note": "'up to a hundred and twenty' — the Longest Timeout (min) tile reads 120 (p30)"
+      },
+      {
+        "anchor": "ul.rowCashiers",
+        "from": 92.5,
+        "to": 95.7,
+        "note": "'Cashiers and the other short-timeout roles sit at five' (p31)"
+      },
+      {
+        "anchor": "ul.cellCashiersTimeout",
+        "from": 96.1,
+        "to": 100.6,
+        "note": "the '5' during the cashier scenario (p32)"
+      },
+      {
+        "anchor": "ul.cellCashiersTimeout",
+        "from": 106.3,
+        "to": 108,
+        "note": "'If the timing matches that number' (p35)"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 42.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "wide through steps 1-2 (still dashboard) and the three-click navigation of step 3"
+      },
+      {
+        "t": 43.3,
+        "z": 1.35,
+        "cx": 810,
+        "cy": 340,
+        "ease": true,
+        "note": "step 3 close framing: USER LEVEL column header over the first rows"
+      },
+      {
+        "t": 46.8,
+        "z": 1.35,
+        "cx": 810,
+        "cy": 340
+      },
+      {
+        "t": 47.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the + New Record guardrail, the search beat, and step 4"
+      },
+      {
+        "t": 78,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 79,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "step 5 close framing at 150%: SESSION TIMEOUT (MIN) header + the timeout tiles (shot-list zoom)"
+      },
+      {
+        "t": 81,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 82.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide before step 6"
+      },
+      {
+        "t": 91.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 92.9,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 430,
+        "ease": true,
+        "note": "step 6 framing: the Cashiers row and its 5-minute timeout"
+      },
+      {
+        "t": 100.4,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 430
+      },
+      {
+        "t": 101.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "calm wide hold through the resolve and escalate beats (steps 7-8)"
+      },
+      {
+        "t": 157.806,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Surprise Logouts — Complete",
+      "from": 156.0,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 155.7
+  },
+  "output": "WC-PB-02-surprise-logouts-v1.1",
+  "orderedMentions": [
+    "System Users",
+    "user level",
+    "User Levels",
+    "Automation",
+    "session timeout",
+    "Stay Logged In",
+    "Log Out Now"
+  ],
+  "neverClick": [
+    "logout",
+    "log out now",
+    "stay logged in",
+    "stay active",
+    "new record",
+    "delete",
+    "save changes",
+    "send",
+    "submit",
+    "ask shyne"
+  ],
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar preference (washcentral-sidebar-collapsed-v5) expanded before the take"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "automationMenuStagedClosed",
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "off-camera: only if the persisted settings menu has automation:true, hop to settings.html where the group header exists"
+    },
+    {
+      "op": "click",
+      "target": "sidebarAutomationHeader",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "automationMenuStagedClosed",
+      "postcondition": "automationMenuStagedClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: genuine header click collapses the persisted-open Automation group so the on-camera step-5 click expands it"
+    },
+    {
+      "op": "click",
+      "target": "railCommandCenter",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "onCommandCenter",
+      "postcondition": "onCommandCenter",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "off-camera: return to the documented start page"
+    }
+  ]
+}

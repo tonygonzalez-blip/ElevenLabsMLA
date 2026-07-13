@@ -1,0 +1,147 @@
+{
+  "lesson": "WC-05-02",
+  "audioMaster": "training/module05-marketing/WC-05-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows come from FFT cross-correlation of each per-step sNN.mp3 against the joined master (8 kHz mono, conj(FFT(sNN))·FFT(master), peak lag = block onset): the Σ(ffprobe audio+0.4) formula predicts 164.155s but the ffprobed master is 163.709s (0.446s off, past the ±0.3s gate), so each block start is its measured cross-correlation onset. Every measured block width equals its decoded audio length + 0.40s to the sample. Final end = ffprobed master duration 163.709s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 11.28,
+      "phrases": [
+        { "id": "p01", "text": "Marketing, then Automation." },
+        { "id": "p02", "text": "Open this page when a client asks why a lifecycle text went out, or didn't." },
+        { "id": "p03", "text": "Every automated flow you run sits here on one screen." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 11.28,
+      "endS": 24.72,
+      "phrases": [
+        { "id": "p04", "text": "Across the top, four numbers." },
+        { "id": "p05", "text": "How many automations exist, how many are live," },
+        { "id": "p06", "text": "how many are still drafts, and how many messages they've sent this month." },
+        { "id": "p07", "text": "Read left to right and you already know the shape of the account." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 24.72,
+      "endS": 34.96,
+      "phrases": [
+        { "id": "p08", "text": "First panel, Send Volume." },
+        { "id": "p09", "text": "A thirty-day line of daily sends." },
+        { "id": "p10", "text": "When a client says the texts stopped last Tuesday, this curve is where a drop shows up first." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 34.96,
+      "endS": 45.84,
+      "phrases": [
+        { "id": "p11", "text": "Next to it, Status Breakdown." },
+        { "id": "p12", "text": "It splits your automations into published and draft." },
+        { "id": "p13", "text": "For the real count, trust the cards up top: three published, one draft." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 45.84,
+      "endS": 58.88,
+      "phrases": [
+        { "id": "p14", "text": "Then Top Triggers." },
+        { "id": "p15", "text": "A donut showing which events set your automations off." },
+        { "id": "p16", "text": "Cancellations lead, recharges and plan upgrades follow." },
+        { "id": "p17", "text": "It tells you where the automated work is concentrated." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 58.88,
+      "endS": 70.64,
+      "phrases": [
+        { "id": "p18", "text": "Scroll to the list." },
+        { "id": "p19", "text": "Four automations on record." },
+        { "id": "p20", "text": "Two buttons sit to the right, Export and New Automation." },
+        { "id": "p21", "text": "We're only reading today, so leave both alone." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 70.64,
+      "endS": 79.76,
+      "phrases": [
+        { "id": "p22", "text": "A search box, a filter, a search button." },
+        { "id": "p23", "text": "Type a name to narrow the list." },
+        { "id": "p24", "text": "Browsing changes nothing, so poke around without worry." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 79.76,
+      "endS": 90.56,
+      "phrases": [
+        { "id": "p25", "text": "Five columns." },
+        { "id": "p26", "text": "Name, the trigger that fires it, when it was created," },
+        { "id": "p27", "text": "when it was last touched, and its status." },
+        { "id": "p28", "text": "That last column is the one you'll check most." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 90.56,
+      "endS": 102.32,
+      "phrases": [
+        { "id": "p29", "text": "Top row, Win Back, No Visit ninety days." },
+        { "id": "p30", "text": "Its trigger is a customer who hasn't come back." },
+        { "id": "p31", "text": "Status reads Draft, so it isn't live yet." },
+        { "id": "p32", "text": "Nothing is going out from this one." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 102.32,
+      "endS": 116.32,
+      "phrases": [
+        { "id": "p33", "text": "Cancel Plan Recovery, next." },
+        { "id": "p34", "text": "Trigger's a cancellation, status Published, so it's live." },
+        { "id": "p35", "text": "But look right: weather paused at six locations." },
+        { "id": "p36", "text": "Live and paused at once, which is exactly the answer to a stopped-texts call." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 116.32,
+      "endS": 129.52,
+      "phrases": [
+        { "id": "p37", "text": "Two more." },
+        { "id": "p38", "text": "Birthday Surprise fires on a member's birthday and runs clean." },
+        { "id": "p39", "text": "First Wash Welcome greets new customers, published, but weather-paused at five sites." },
+        { "id": "p40", "text": "Same story as the cancellation flow." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 129.52,
+      "endS": 144.8,
+      "phrases": [
+        { "id": "p41", "text": "Status shows as a chip." },
+        { "id": "p42", "text": "Green Published, amber Draft, and that weather note layered on top when a pause is active." },
+        { "id": "p43", "text": "Down the bottom, one through four of four, so the whole account fits on one page." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 144.8,
+      "endS": 163.709,
+      "phrases": [
+        { "id": "p44", "text": "So, the automation page." },
+        { "id": "p45", "text": "Four numbers up top, three panels for the trends, one table for the detail." },
+        { "id": "p46", "text": "When someone reports a flow that stopped, you can tell in seconds" },
+        { "id": "p47", "text": "whether it's a draft, a pause, or something worth a bug." },
+        { "id": "p48", "text": "Where weather pausing gets switched on is still parked." }
+      ]
+    }
+  ],
+  "output": "WC-05-02-automation-v1.1"
+}

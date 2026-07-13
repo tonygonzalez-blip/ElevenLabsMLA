@@ -1,0 +1,3051 @@
+{
+  "lesson": "WC-12-08",
+  "title": "Customer Portal & AI Agent",
+  "audioMaster": "training/module12-settings/WC-12-08-full-narration-v1.0.mp3",
+  "audioDurationS": 384.026,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "cpHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"customer portal\"))"
+    },
+    "aiHeader": {
+      "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"ai agent\"))"
+    },
+    "closeSettings": {
+      "js": "[...document.querySelectorAll('button.menu-header, a')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()==='Close Settings')"
+    },
+    "linkPortalOverview": {
+      "text": "Portal Overview",
+      "scope": ".submenu a"
+    },
+    "linkBranding": {
+      "text": "Branding & Appearance",
+      "scope": ".submenu a"
+    },
+    "linkFeatures": {
+      "text": "Features & Modules",
+      "scope": ".submenu a"
+    },
+    "linkAccess": {
+      "text": "Access & Security",
+      "scope": ".submenu a"
+    },
+    "linkContent": {
+      "text": "Content & Messaging",
+      "scope": ".submenu a"
+    },
+    "linkAgentOverview": {
+      "text": "Overview",
+      "scope": ".submenu a"
+    },
+    "linkConfig": {
+      "text": "Configuration",
+      "scope": ".submenu a"
+    },
+    "linkKnowledge": {
+      "text": "Knowledge Base",
+      "scope": ".submenu a"
+    },
+    "linkChannels": {
+      "text": "Channels & Deployment",
+      "scope": ".submenu a"
+    },
+    "linkConversations": {
+      "text": "Conversations",
+      "scope": ".submenu a"
+    },
+    "linkEscalations": {
+      "text": "Escalations",
+      "scope": ".submenu a"
+    },
+    "linkAnalytics": {
+      "text": "Analytics",
+      "scope": ".submenu a"
+    },
+    "hubTitle": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "hubLive": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=1&&/●\\s*Live/.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "tileReg": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Registered Members/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileLogins": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Logins Today/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileAvgSession": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Session/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileUptime": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Uptime/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileMobile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Mobile Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardBranding": {
+      "js": "[...document.querySelectorAll('a.a-chart-card')].find(e=>(e.getAttribute('href')||'').includes(\"customer-portal-branding\")&&e.getBoundingClientRect().width>0)"
+    },
+    "cardFeatures": {
+      "js": "[...document.querySelectorAll('a.a-chart-card')].find(e=>(e.getAttribute('href')||'').includes(\"customer-portal-features\")&&e.getBoundingClientRect().width>0)"
+    },
+    "cardAccess": {
+      "js": "[...document.querySelectorAll('a.a-chart-card')].find(e=>(e.getAttribute('href')||'').includes(\"customer-portal-access\")&&e.getBoundingClientRect().width>0)"
+    },
+    "cardContent": {
+      "js": "[...document.querySelectorAll('a.a-chart-card')].find(e=>(e.getAttribute('href')||'').includes(\"customer-portal-content\")&&e.getBoundingClientRect().width>0)"
+    },
+    "hubLoginMethod": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=2&&/^LOGIN METHOD/i.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "hubOtpRequired": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=2&&/^OTP REQUIRED/i.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "activityCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Recent Portal Activity/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "portalHealthCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Portal Health/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "failedLogin": {
+      "js": "[...document.querySelectorAll('.a-tl-title')].find(e=>/failed login attempts/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "publishChanges": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Publish Changes\")"
+    },
+    "brandingTabVisual": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"Visual Identity\")"
+    },
+    "brandingTabColors": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"Colors & Theme\")"
+    },
+    "brandingTabAdvanced": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"Advanced\")"
+    },
+    "brandingSave": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Save & Publish\")"
+    },
+    "brandingIdentity": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=2&&/^PORTAL IDENTITY/i.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "tileModules": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Modules Enabled/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "enableAll": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Enable All\")"
+    },
+    "disableAll": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Disable All\")"
+    },
+    "resetDefaults": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Reset to Defaults\")"
+    },
+    "featMembership": {
+      "js": "[...document.querySelectorAll('h1,h2,h3,h4')].find(e=>/^Membership Plans$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "featVehicle": {
+      "js": "[...document.querySelectorAll('h1,h2,h3,h4')].find(e=>/^Vehicle Management$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "accessTabAuth": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"Authentication\")"
+    },
+    "accessLoginMethods": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=1&&/^LOGIN METHODS/i.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "accessOtp": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=1&&/^ONE-TIME PASSWORD/i.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "accessSave": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Save Changes\")"
+    },
+    "contentTabWelcome": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"Welcome & Footer\")"
+    },
+    "contentTabFaq": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"FAQs & Links\")"
+    },
+    "contentSave": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Save Changes\")"
+    },
+    "agentTitle": {
+      "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "agentLive": {
+      "js": "(()=>{const els=[...document.querySelectorAll('*')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&e.children.length<=1&&/●\\s*Live/.test((e.textContent||'').trim())});return els.sort((a,b)=>a.getBoundingClientRect().height-b.getBoundingClientRect().height)[0]})()"
+    },
+    "tileContainment": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Containment Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileConversations": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Conversations \\(30d\\)/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tileCsat": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/CSAT/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "chWeb81": {
+      "js": "[...document.querySelectorAll('.aia-stat-val')].find(e=>(e.textContent||'').trim()===\"81%\"&&e.getBoundingClientRect().width>0)"
+    },
+    "chSms76": {
+      "js": "[...document.querySelectorAll('.aia-stat-val')].find(e=>(e.textContent||'').trim()===\"76%\"&&e.getBoundingClientRect().width>0)"
+    },
+    "chVoice68": {
+      "js": "[...document.querySelectorAll('.aia-stat-val')].find(e=>(e.textContent||'').trim()===\"68%\"&&e.getBoundingClientRect().width>0)"
+    },
+    "capabilities": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/AGENT CAPABILITIES/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "configRefund": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Refund Cap/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "configTabIdentity": {
+      "js": "[...document.querySelectorAll('button, [role=\\\"tab\\\"], .a-tab, [class*=\\\"tab\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim()===\"Identity & Persona\")"
+    },
+    "notSaved": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>/Not yet saved/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "configSave": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Save Changes\")"
+    },
+    "kbArticles": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Articles/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kbSynced": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>/●\\s*Synced/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kbTitleTh": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^Title$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "reindex": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Re-index\")"
+    },
+    "addArticle": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"+ Add Article\")"
+    },
+    "ch3of3": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').replace(/\\s+/g,' ').includes(\"3 / 3 Live\")&&e.getBoundingClientRect().width>0)"
+    },
+    "runHealth": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Run Health Check\")"
+    },
+    "chWebBlock": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Web Chat/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "chSmsBlock": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/SMS/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "chVoiceBlock": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Voice/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "convCustomerTh": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^Customer$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "convEmpty": {
+      "js": "[...document.querySelectorAll('td')].find(e=>/No conversations found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "convExport": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Export\")"
+    },
+    "escReasonTh": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^Reason$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "escEmpty": {
+      "js": "[...document.querySelectorAll('td')].find(e=>/No escalations right now/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "claimNext": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Claim Next\")"
+    },
+    "anConversations": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Conversations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "anExport": {
+      "js": "[...document.querySelectorAll('button, a.a-btn, a[class*=\\\"btn\\\"], [role=\\\"button\\\"]')].find(e=>e.getBoundingClientRect().width>0 && (e.textContent||'').trim().replace(/\\s+/g,' ')===\"Export\")"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\\\"skeleton\\\"],[class*=\\\"spinner\\\"],[class*=\\\"loading\\\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onHub": "location.pathname.endsWith('/settings-customer-portal.html')",
+    "onBranding": "location.pathname.endsWith('/settings-customer-portal-branding.html')",
+    "onFeatures": "location.pathname.endsWith('/settings-customer-portal-features.html')",
+    "onAccess": "location.pathname.endsWith('/settings-customer-portal-access.html')",
+    "onContent": "location.pathname.endsWith('/settings-customer-portal-content.html')",
+    "onAgent": "location.pathname.endsWith('/settings-ai-agent.html')",
+    "onConfig": "location.pathname.endsWith('/settings-ai-agent-config.html')",
+    "onKnowledge": "location.pathname.endsWith('/settings-ai-agent-knowledge.html')",
+    "onChannels": "location.pathname.endsWith('/settings-ai-agent-channels.html')",
+    "onConversations": "location.pathname.endsWith('/settings-ai-agent-conversations.html')",
+    "onEscalations": "location.pathname.endsWith('/settings-ai-agent-escalations.html')",
+    "onAnalytics": "location.pathname.endsWith('/settings-ai-agent-analytics.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "allGroupsClosed": "[...document.querySelectorAll('.menu-group.open')].length===0",
+    "cpSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()===\"Portal Overview\")",
+    "cpSubmenuClosed": "!([...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()===\"Portal Overview\"))",
+    "aiSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()===\"Configuration\")",
+    "aiSubmenuClosed": "!([...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()===\"Configuration\"))",
+    "hubLoaded": "(()=>{return location.pathname.endsWith('/settings-customer-portal.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=5&&[...document.querySelectorAll('button')].some(e=>/Publish Changes/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "brandingLoaded": "(()=>{return location.pathname.endsWith('/settings-customer-portal-branding.html')&&[...document.querySelectorAll('button')].some(e=>/Save & Publish/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('*')].some(e=>/^Visual Identity$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "featuresLoaded": "(()=>{return location.pathname.endsWith('/settings-customer-portal-features.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Modules Enabled/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "accessLoaded": "(()=>{return location.pathname.endsWith('/settings-customer-portal-access.html')&&/LOGIN METHODS/i.test(document.body.textContent||'')&&/ONE-TIME PASSWORD/i.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "contentLoaded": "(()=>{return location.pathname.endsWith('/settings-customer-portal-content.html')&&[...document.querySelectorAll('*')].some(e=>/^Welcome & Footer$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "agentLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent.html')&&[...document.querySelectorAll('.a-chip')].some(e=>/●\\s*Live/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&/AGENT CAPABILITIES/i.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "configLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent-config.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Refund Cap/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "knowledgeLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent-knowledge.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Articles/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "channelsLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent-channels.html')&&[...document.querySelectorAll('.a-chip')].some(e=>/3 \\/ 3 Live/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "conversationsLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent-conversations.html')&&[...document.querySelectorAll('th')].some(e=>/^Customer$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "escalationsLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent-escalations.html')&&[...document.querySelectorAll('th')].some(e=>/^Reason$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "analyticsLoaded": "(()=>{return location.pathname.endsWith('/settings-ai-agent-analytics.html')&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.8,
+      "predicate": "onSettingsHome",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1.4,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight expanded the persisted sidebar; abort if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -1.1,
+      "predicate": "allGroupsClosed",
+      "note": "pre-roll: preflight collapsed every rail group so the CP and AI submenu links land on-screen (rail is overflow:hidden, no scroll)"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "cpSubmenuClosed",
+      "note": "pre-roll: Customer Portal group starts collapsed so step 1 genuinely expands it"
+    },
+    {
+      "op": "assert",
+      "at": -0.5,
+      "predicate": "aiSubmenuClosed",
+      "note": "pre-roll: AI Agent group starts collapsed so step 10 genuinely expands it"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        160,
+        1079
+      ],
+      "to": {
+        "target": "cpHeader",
+        "offset": [
+          210,
+          -20
+        ]
+      },
+      "note": "enter from the bottom edge toward the left rail as p01 says 'look at the left rail'"
+    },
+    {
+      "op": "log-rect",
+      "at": 3.6,
+      "key": "cpHeaderRect",
+      "target": "cpHeader"
+    },
+    {
+      "op": "move",
+      "at": 4.9,
+      "to": {
+        "target": "cpHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach the Customer Portal group header on the p02 cue"
+    },
+    {
+      "op": "click",
+      "target": "cpHeader",
+      "pressAt": 5.7,
+      "hoverMs": 400,
+      "postcondition": "cpSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 1a: genuine group toggle expands Customer Portal"
+    },
+    {
+      "op": "log-rects",
+      "at": 6.1,
+      "key": "cpNav",
+      "targets": [
+        "linkPortalOverview",
+        "linkBranding",
+        "linkFeatures",
+        "linkAccess",
+        "linkContent"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 6.9,
+      "to": {
+        "target": "linkPortalOverview",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "settle on Portal Overview inside the opened group"
+    },
+    {
+      "op": "click",
+      "target": "linkPortalOverview",
+      "pressAt": 8.2,
+      "hoverMs": 380,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1b: genuine sidebar navigation, press inside the p02 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hubStable",
+      "predicate": "hubLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 9,
+      "predicate": "hubLoaded",
+      "note": "shot-list load check: 5 KPI tiles + Publish Changes, no agent-service error"
+    },
+    {
+      "op": "assert",
+      "at": 9.1,
+      "predicate": "cpSubmenuOpen",
+      "note": "persisted submenu state held across the navigation"
+    },
+    {
+      "op": "log-rect",
+      "at": 9.2,
+      "key": "hubLiveRect",
+      "target": "hubLive"
+    },
+    {
+      "op": "log-rect",
+      "at": 9.3,
+      "key": "hubTitleRect",
+      "target": "hubTitle"
+    },
+    {
+      "op": "log-rects",
+      "at": 9.45,
+      "key": "hubTiles",
+      "targets": [
+        "tileReg",
+        "tileLogins",
+        "tileAvgSession",
+        "tileUptime",
+        "tileMobile"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 9.6,
+      "key": "hubCards",
+      "targets": [
+        "cardBranding",
+        "cardFeatures",
+        "cardAccess",
+        "cardContent"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 9.75,
+      "key": "publishRect",
+      "target": "publishChanges"
+    },
+    {
+      "op": "move",
+      "at": 9.9,
+      "to": {
+        "target": "hubLive",
+        "offset": [
+          24,
+          0
+        ]
+      },
+      "note": "rest beside the title and Live chip while p03-p05 describe the hub"
+    },
+    {
+      "op": "move",
+      "at": 16.5,
+      "to": {
+        "point": [
+          900,
+          360
+        ]
+      },
+      "note": "ease over the hub for the p05 'It's live' beat"
+    },
+    {
+      "op": "move",
+      "at": 20.4,
+      "to": {
+        "target": "tileReg",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 2 cue p06 'Read the tile band'"
+    },
+    {
+      "op": "move",
+      "at": 22.1,
+      "to": {
+        "target": "tileReg",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p07 slow left-to-right sweep of the five KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 24,
+      "to": {
+        "target": "tileLogins",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 26,
+      "to": {
+        "target": "tileAvgSession",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 28,
+      "to": {
+        "target": "tileUptime",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 30,
+      "to": {
+        "target": "tileMobile",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "sweep ends on Mobile Users"
+    },
+    {
+      "op": "move",
+      "at": 33,
+      "to": {
+        "point": [
+          900,
+          470
+        ]
+      },
+      "note": "ease off for the p09 tail"
+    },
+    {
+      "op": "move",
+      "at": 37,
+      "to": {
+        "target": "cardBranding",
+        "offset": [
+          0,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "step 3 cue p10 'Four cards sit below'"
+    },
+    {
+      "op": "move",
+      "at": 40,
+      "to": {
+        "target": "cardBranding",
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "note": "p11 sweep: branding,"
+    },
+    {
+      "op": "move",
+      "at": 40.7,
+      "to": {
+        "target": "cardFeatures",
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "note": "features,"
+    },
+    {
+      "op": "move",
+      "at": 41.3,
+      "to": {
+        "target": "cardAccess",
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "note": "access,"
+    },
+    {
+      "op": "move",
+      "at": 41.9,
+      "to": {
+        "target": "cardContent",
+        "offset": [
+          0,
+          -10
+        ]
+      },
+      "note": "and content"
+    },
+    {
+      "op": "move",
+      "at": 42.4,
+      "to": {
+        "target": "hubLoginMethod",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p13 rest on LOGIN METHOD / OTP REQUIRED on the Access & Security card (zoom framing)"
+    },
+    {
+      "op": "move",
+      "at": 47,
+      "to": {
+        "point": [
+          820,
+          470
+        ]
+      },
+      "note": "ease off for the p14 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 54.6,
+      "key": "activityRect",
+      "target": "activityCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 54.8,
+      "key": "healthRect",
+      "target": "portalHealthCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 55,
+      "key": "failedRect",
+      "target": "failedLogin"
+    },
+    {
+      "op": "move",
+      "at": 55.5,
+      "to": {
+        "target": "activityCard",
+        "offset": [
+          0,
+          -140
+        ],
+        "outside": true
+      },
+      "note": "step 4 cue p15 'Below the cards, two panels'"
+    },
+    {
+      "op": "move",
+      "at": 57,
+      "to": {
+        "target": "activityCard",
+        "offset": [
+          -180,
+          -40
+        ]
+      },
+      "note": "rest over Recent Portal Activity while p16 reads it"
+    },
+    {
+      "op": "move",
+      "at": 61.7,
+      "to": {
+        "target": "failedLogin",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p17 the security line: three failed login attempts"
+    },
+    {
+      "op": "move",
+      "at": 64.6,
+      "to": {
+        "target": "portalHealthCard",
+        "offset": [
+          -180,
+          -40
+        ]
+      },
+      "note": "p18-p19 Portal Health: API, certificate, last published"
+    },
+    {
+      "op": "move",
+      "at": 71.7,
+      "to": {
+        "target": "publishChanges",
+        "offset": [
+          -24,
+          54
+        ],
+        "outside": true
+      },
+      "note": "step 4 STOP: rest BESIDE + below Publish Changes while p20-p21 name it; the button is never approached for a press"
+    },
+    {
+      "op": "watch",
+      "key": "pubHold",
+      "from": 71.5,
+      "to": 77.2,
+      "predicate": "onHub",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail: the hub never navigates or publishes while the cursor sits beside Publish Changes"
+    },
+    {
+      "op": "move",
+      "at": 77.9,
+      "to": {
+        "target": "linkBranding",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 5 cue p22 'Open Branding and Appearance' - approach the subpage link"
+    },
+    {
+      "op": "click",
+      "target": "linkBranding",
+      "pressAt": 78.9,
+      "hoverMs": 380,
+      "postcondition": "onBranding",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5: genuine sidebar navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "brStable",
+      "predicate": "brandingLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 80,
+      "predicate": "brandingLoaded",
+      "note": "tabs + Save & Publish present, no error state"
+    },
+    {
+      "op": "log-rects",
+      "at": 80.2,
+      "key": "brTabs",
+      "targets": [
+        "brandingTabVisual",
+        "brandingTabColors",
+        "brandingTabAdvanced"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 80.4,
+      "key": "brSaveRect",
+      "target": "brandingSave"
+    },
+    {
+      "op": "log-rect",
+      "at": 80.55,
+      "key": "brIdentityRect",
+      "target": "brandingIdentity"
+    },
+    {
+      "op": "move",
+      "at": 80.7,
+      "to": {
+        "target": "brandingTabVisual",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p23 'Three tabs' - point along the three tabs"
+    },
+    {
+      "op": "move",
+      "at": 81.7,
+      "to": {
+        "target": "brandingTabColors",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 82.5,
+      "to": {
+        "target": "brandingTabAdvanced",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 84,
+      "to": {
+        "target": "brandingIdentity",
+        "offset": [
+          -160,
+          0
+        ]
+      },
+      "note": "p24 slow sweep down the PORTAL IDENTITY form"
+    },
+    {
+      "op": "move",
+      "at": 88.5,
+      "to": {
+        "point": [
+          760,
+          620
+        ]
+      },
+      "note": "p25-p26 live preview underneath"
+    },
+    {
+      "op": "move",
+      "at": 95.1,
+      "to": {
+        "target": "brandingSave",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 5 STOP: beside Save & Publish for p27 'we never save'"
+    },
+    {
+      "op": "watch",
+      "key": "brHold",
+      "from": 94.9,
+      "to": 97,
+      "predicate": "onBranding",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail: no save/publish, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 97.7,
+      "to": {
+        "target": "linkFeatures",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 6 cue p28 'Next, Features and Modules'"
+    },
+    {
+      "op": "click",
+      "target": "linkFeatures",
+      "pressAt": 98.9,
+      "hoverMs": 380,
+      "postcondition": "onFeatures",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "ftStable",
+      "predicate": "featuresLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 100.1,
+      "predicate": "featuresLoaded",
+      "note": "Modules Enabled tile present"
+    },
+    {
+      "op": "log-rect",
+      "at": 100.3,
+      "key": "modulesRect",
+      "target": "tileModules"
+    },
+    {
+      "op": "log-rects",
+      "at": 100.5,
+      "key": "bulkCtl",
+      "targets": [
+        "enableAll",
+        "disableAll",
+        "resetDefaults"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 100.65,
+      "key": "featMemRect",
+      "target": "featMembership"
+    },
+    {
+      "op": "move",
+      "at": 100.9,
+      "to": {
+        "target": "featMembership",
+        "offset": [
+          -160,
+          0
+        ]
+      },
+      "note": "p29-p30 sweep the module sections"
+    },
+    {
+      "op": "move",
+      "at": 104,
+      "to": {
+        "target": "enableAll",
+        "offset": [
+          0,
+          42
+        ],
+        "outside": true
+      },
+      "note": "p30 tail - STOP band: below the Enable All / Disable All / Reset to Defaults controls (never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 108.6,
+      "to": {
+        "target": "tileModules",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p31 rest on the Modules Enabled 9 / 10 tile (zoom framing) - the mismatch vs the hub card's 7 of 9"
+    },
+    {
+      "op": "watch",
+      "key": "ftHold",
+      "from": 100.7,
+      "to": 114.5,
+      "predicate": "onFeatures",
+      "everyMs": 600,
+      "mustHold": true,
+      "note": "guardrail: no bulk toggle, page unchanged through the module read"
+    },
+    {
+      "op": "move",
+      "at": 115.5,
+      "to": {
+        "point": [
+          820,
+          520
+        ]
+      },
+      "note": "ease off for the p33 tail"
+    },
+    {
+      "op": "move",
+      "at": 120.7,
+      "to": {
+        "target": "linkAccess",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 7 cue p34 'Open Access and Security'"
+    },
+    {
+      "op": "click",
+      "target": "linkAccess",
+      "pressAt": 121.6,
+      "hoverMs": 380,
+      "postcondition": "onAccess",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "acStable",
+      "predicate": "accessLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 123,
+      "predicate": "accessLoaded",
+      "note": "LOGIN METHODS + OTP blocks present"
+    },
+    {
+      "op": "log-rect",
+      "at": 123.2,
+      "key": "acAuthRect",
+      "target": "accessTabAuth"
+    },
+    {
+      "op": "log-rect",
+      "at": 123.35,
+      "key": "acLoginRect",
+      "target": "accessLoginMethods"
+    },
+    {
+      "op": "log-rect",
+      "at": 123.5,
+      "key": "acOtpRect",
+      "target": "accessOtp"
+    },
+    {
+      "op": "log-rect",
+      "at": 123.65,
+      "key": "acSaveRect",
+      "target": "accessSave"
+    },
+    {
+      "op": "move",
+      "at": 124.6,
+      "to": {
+        "target": "accessTabAuth",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p35 'The Authentication tab'"
+    },
+    {
+      "op": "move",
+      "at": 128.1,
+      "to": {
+        "target": "accessLoginMethods",
+        "offset": [
+          -120,
+          0
+        ]
+      },
+      "note": "p36 login methods: phone/email yes, membership no, guest no (zoom framing)"
+    },
+    {
+      "op": "move",
+      "at": 133.7,
+      "to": {
+        "target": "accessOtp",
+        "offset": [
+          -120,
+          0
+        ]
+      },
+      "note": "p37 one-time password rules and the password policy"
+    },
+    {
+      "op": "move",
+      "at": 137.9,
+      "to": {
+        "target": "accessSave",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 7 STOP: beside Save Changes for the p38 tail"
+    },
+    {
+      "op": "watch",
+      "key": "acHold",
+      "from": 137.7,
+      "to": 141.7,
+      "predicate": "onAccess",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail: no save, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 142.4,
+      "to": {
+        "target": "linkContent",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 8 cue p39 'Then Content and Messaging'"
+    },
+    {
+      "op": "click",
+      "target": "linkContent",
+      "pressAt": 143.1,
+      "hoverMs": 360,
+      "postcondition": "onContent",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "cnStable",
+      "predicate": "contentLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 144.2,
+      "predicate": "contentLoaded",
+      "note": "Welcome & Footer tab present"
+    },
+    {
+      "op": "log-rects",
+      "at": 144.4,
+      "key": "cnTabs",
+      "targets": [
+        "contentTabWelcome",
+        "contentTabFaq"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 144.55,
+      "key": "cnSaveRect",
+      "target": "contentSave"
+    },
+    {
+      "op": "move",
+      "at": 144.7,
+      "to": {
+        "target": "contentTabWelcome",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p40 the tabs: welcome, footer, contact, FAQs"
+    },
+    {
+      "op": "move",
+      "at": 146,
+      "to": {
+        "target": "contentTabFaq",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 147.5,
+      "to": {
+        "point": [
+          720,
+          470
+        ]
+      },
+      "note": "p41-p42 plain-language wording lives here"
+    },
+    {
+      "op": "move",
+      "at": 152.5,
+      "to": {
+        "target": "contentSave",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 8 STOP: beside Save Changes; nothing typed or saved"
+    },
+    {
+      "op": "watch",
+      "key": "cnHold",
+      "from": 152.3,
+      "to": 157.1,
+      "predicate": "onContent",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail: no save, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 157.6,
+      "to": {
+        "target": "linkPortalOverview",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 9 cue p43 'That's the portal' - return to Portal Overview so the hub's login-check settings are on screen for p44-p46"
+    },
+    {
+      "op": "click",
+      "target": "linkPortalOverview",
+      "pressAt": 158.1,
+      "hoverMs": 360,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: genuine navigation back to the hub"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hb2Stable",
+      "predicate": "hubLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 159.1,
+      "predicate": "hubLoaded",
+      "note": "hub renders again, unchanged"
+    },
+    {
+      "op": "log-rect",
+      "at": 159.2,
+      "key": "hubLoginRect",
+      "target": "hubLoginMethod"
+    },
+    {
+      "op": "log-rect",
+      "at": 159.35,
+      "key": "hubOtpRect",
+      "target": "hubOtpRequired"
+    },
+    {
+      "op": "log-rect",
+      "at": 159.5,
+      "key": "failed2Rect",
+      "target": "failedLogin"
+    },
+    {
+      "op": "move",
+      "at": 159.6,
+      "to": {
+        "target": "hubLoginMethod",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p44 login method,"
+    },
+    {
+      "op": "move",
+      "at": 162.5,
+      "to": {
+        "target": "hubOtpRequired",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p44 and whether O-T-P is required"
+    },
+    {
+      "op": "move",
+      "at": 166.4,
+      "to": {
+        "target": "failedLogin",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p45 failed attempts in the activity feed"
+    },
+    {
+      "op": "move",
+      "at": 170.8,
+      "to": {
+        "target": "hubTitle",
+        "offset": [
+          24,
+          0
+        ]
+      },
+      "note": "p46 'Back to Portal Overview' - settle by the hub title"
+    },
+    {
+      "op": "log-rect",
+      "at": 176.9,
+      "key": "aiHeaderRect",
+      "target": "aiHeader"
+    },
+    {
+      "op": "move",
+      "at": 177.1,
+      "to": {
+        "target": "aiHeader",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 cue p47 'Part two... open A-I Agent'"
+    },
+    {
+      "op": "click",
+      "target": "aiHeader",
+      "pressAt": 178,
+      "hoverMs": 400,
+      "postcondition": "aiSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "step 10a: genuine group toggle expands AI Agent"
+    },
+    {
+      "op": "log-rects",
+      "at": 178.4,
+      "key": "aiNav",
+      "targets": [
+        "linkAgentOverview",
+        "linkConfig",
+        "linkKnowledge",
+        "linkChannels",
+        "linkConversations",
+        "linkEscalations",
+        "linkAnalytics"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 178.9,
+      "to": {
+        "target": "linkAgentOverview",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "settle on Overview inside the opened group"
+    },
+    {
+      "op": "click",
+      "target": "linkAgentOverview",
+      "pressAt": 179.9,
+      "hoverMs": 380,
+      "postcondition": "onAgent",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10b: genuine navigation to the agent overview"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "agStable",
+      "predicate": "agentLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 181.4,
+      "predicate": "agentLoaded",
+      "note": "Live chip + capabilities present"
+    },
+    {
+      "op": "assert",
+      "at": 181.5,
+      "predicate": "cpSubmenuOpen",
+      "note": "the Customer Portal group is still rendered open (persisted)"
+    },
+    {
+      "op": "log-rect",
+      "at": 181.6,
+      "key": "agLiveRect",
+      "target": "agentLive"
+    },
+    {
+      "op": "log-rect",
+      "at": 181.75,
+      "key": "agTitleRect",
+      "target": "agentTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 181.9,
+      "key": "containRect",
+      "target": "tileContainment"
+    },
+    {
+      "op": "log-rects",
+      "at": 182.05,
+      "key": "chVals",
+      "targets": [
+        "chWeb81",
+        "chSms76",
+        "chVoice68"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 182.2,
+      "key": "capRect",
+      "target": "capabilities"
+    },
+    {
+      "op": "move",
+      "at": 182.5,
+      "to": {
+        "target": "agentLive",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "p49 the header chips: Live on three channels"
+    },
+    {
+      "op": "move",
+      "at": 188.4,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "p50 read-only posture"
+    },
+    {
+      "op": "move",
+      "at": 194.8,
+      "to": {
+        "target": "tileConversations",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 11 cue p51 'Read the metric band'"
+    },
+    {
+      "op": "move",
+      "at": 196.9,
+      "to": {
+        "target": "tileConversations",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p52 conversations, handle time, satisfaction"
+    },
+    {
+      "op": "move",
+      "at": 198.7,
+      "to": {
+        "target": "tileContainment",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p53-p55 rest on the Containment Rate tile (zoom framing); live it reads a dash - see residuals"
+    },
+    {
+      "op": "move",
+      "at": 210.5,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "ease off for the p55 tail"
+    },
+    {
+      "op": "move",
+      "at": 213,
+      "to": {
+        "target": "chWeb81",
+        "offset": [
+          0,
+          -60
+        ],
+        "outside": true
+      },
+      "note": "step 12 cue p56 'Three channel cards'"
+    },
+    {
+      "op": "move",
+      "at": 215,
+      "to": {
+        "target": "chWeb81",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p57 web chat contains the most (81%)"
+    },
+    {
+      "op": "move",
+      "at": 218.7,
+      "to": {
+        "target": "chSms76",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p58 text / SMS (76%)"
+    },
+    {
+      "op": "move",
+      "at": 222.4,
+      "to": {
+        "target": "chVoice68",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p59 voice, beta (68%)"
+    },
+    {
+      "op": "move",
+      "at": 225,
+      "to": {
+        "point": [
+          960,
+          470
+        ]
+      },
+      "note": "p60 each card shows its own contained percentage"
+    },
+    {
+      "op": "move",
+      "at": 232.3,
+      "to": {
+        "target": "capabilities",
+        "offset": [
+          -160,
+          0
+        ]
+      },
+      "note": "step 13 cue p61 'Now the capabilities panel'"
+    },
+    {
+      "op": "move",
+      "at": 234,
+      "to": {
+        "target": "capabilities",
+        "offset": [
+          0,
+          80
+        ],
+        "outside": true
+      },
+      "note": "p62-p63 slow sweep down the six actions"
+    },
+    {
+      "op": "move",
+      "at": 243,
+      "to": {
+        "target": "capabilities",
+        "offset": [
+          220,
+          80
+        ],
+        "outside": true
+      },
+      "note": "p64-p65 secure A-P-Is, toggled under Configuration"
+    },
+    {
+      "op": "move",
+      "at": 248.4,
+      "to": {
+        "target": "linkConfig",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 14 cue p66 'Open Configuration'"
+    },
+    {
+      "op": "click",
+      "target": "linkConfig",
+      "pressAt": 248.95,
+      "hoverMs": 340,
+      "postcondition": "onConfig",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 14: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "cfStable",
+      "predicate": "configLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 250.2,
+      "predicate": "configLoaded",
+      "note": "Refund Cap tile present"
+    },
+    {
+      "op": "log-rect",
+      "at": 250.35,
+      "key": "cfRefundRect",
+      "target": "configRefund"
+    },
+    {
+      "op": "log-rect",
+      "at": 250.5,
+      "key": "cfNotSavedRect",
+      "target": "notSaved"
+    },
+    {
+      "op": "log-rect",
+      "at": 250.65,
+      "key": "cfSaveRect",
+      "target": "configSave"
+    },
+    {
+      "op": "log-rect",
+      "at": 250.8,
+      "key": "cfTabsRect",
+      "target": "configTabIdentity"
+    },
+    {
+      "op": "move",
+      "at": 251,
+      "to": {
+        "target": "configRefund",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p67 refund cap of fifty dollars"
+    },
+    {
+      "op": "move",
+      "at": 253.7,
+      "to": {
+        "target": "configTabIdentity",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p68 five tabs: identity, channels, tools, safety, model"
+    },
+    {
+      "op": "move",
+      "at": 257.9,
+      "to": {
+        "target": "notSaved",
+        "offset": [
+          0,
+          26
+        ],
+        "outside": true
+      },
+      "note": "p69-p70 unsaved form for a different demo brand ('Not yet saved')"
+    },
+    {
+      "op": "move",
+      "at": 265.3,
+      "to": {
+        "target": "configSave",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 14 STOP: beside Save Changes for p71 'never save'"
+    },
+    {
+      "op": "watch",
+      "key": "cfHold",
+      "from": 265.1,
+      "to": 270.2,
+      "predicate": "onConfig",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail: nothing saved, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 270.9,
+      "to": {
+        "target": "linkKnowledge",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 15 cue p72 'Next, Knowledge Base'"
+    },
+    {
+      "op": "click",
+      "target": "linkKnowledge",
+      "pressAt": 271.4,
+      "hoverMs": 340,
+      "postcondition": "onKnowledge",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 15: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "kbStable",
+      "predicate": "knowledgeLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 272.6,
+      "predicate": "knowledgeLoaded",
+      "note": "Articles tile present (empty table is a real tenant state)"
+    },
+    {
+      "op": "log-rect",
+      "at": 272.75,
+      "key": "kbSyncedRect",
+      "target": "kbSynced"
+    },
+    {
+      "op": "log-rect",
+      "at": 272.9,
+      "key": "kbArticlesRect",
+      "target": "kbArticles"
+    },
+    {
+      "op": "log-rect",
+      "at": 273.05,
+      "key": "kbTitleThRect",
+      "target": "kbTitleTh"
+    },
+    {
+      "op": "log-rects",
+      "at": 273.2,
+      "key": "kbBtns",
+      "targets": [
+        "reindex",
+        "addArticle"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 273.4,
+      "to": {
+        "target": "kbSynced",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "p73-p74 the documents the agent searches (Synced source)"
+    },
+    {
+      "op": "move",
+      "at": 278.4,
+      "to": {
+        "target": "kbArticles",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p75 tiles: articles, indexing, last sync"
+    },
+    {
+      "op": "move",
+      "at": 282.1,
+      "to": {
+        "target": "kbTitleTh",
+        "offset": [
+          0,
+          60
+        ],
+        "outside": true
+      },
+      "note": "p76 the table sits empty - a tenant quirk"
+    },
+    {
+      "op": "move",
+      "at": 285.5,
+      "to": {
+        "target": "addArticle",
+        "offset": [
+          -40,
+          44
+        ],
+        "outside": true
+      },
+      "note": "STOP: beside Re-index / + Add Article; nothing uploaded"
+    },
+    {
+      "op": "watch",
+      "key": "kbHold",
+      "from": 273.3,
+      "to": 288.5,
+      "predicate": "onKnowledge",
+      "everyMs": 600,
+      "mustHold": true,
+      "note": "guardrail: no re-index, no add, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 289.1,
+      "to": {
+        "target": "linkChannels",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 16 cue p77 'Open Channels and Deployment'"
+    },
+    {
+      "op": "click",
+      "target": "linkChannels",
+      "pressAt": 289.7,
+      "hoverMs": 340,
+      "postcondition": "onChannels",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 16: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "chStable",
+      "predicate": "channelsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 291,
+      "predicate": "channelsLoaded",
+      "note": "3 / 3 Live chip present"
+    },
+    {
+      "op": "log-rect",
+      "at": 291.2,
+      "key": "chRunHealthRect",
+      "target": "runHealth"
+    },
+    {
+      "op": "log-rect",
+      "at": 291.35,
+      "key": "chWebRect",
+      "target": "chWebBlock"
+    },
+    {
+      "op": "log-rect",
+      "at": 291.5,
+      "key": "chSmsRect",
+      "target": "chSmsBlock"
+    },
+    {
+      "op": "log-rect",
+      "at": 291.65,
+      "key": "chVoiceRect",
+      "target": "chVoiceBlock"
+    },
+    {
+      "op": "move",
+      "at": 291.9,
+      "to": {
+        "target": "chWebBlock",
+        "offset": [
+          -40,
+          0
+        ]
+      },
+      "note": "p78-p79 the three channel blocks: web chat,"
+    },
+    {
+      "op": "move",
+      "at": 294.6,
+      "to": {
+        "target": "chSmsBlock",
+        "offset": [
+          -40,
+          0
+        ]
+      },
+      "note": "SMS,"
+    },
+    {
+      "op": "move",
+      "at": 296.9,
+      "to": {
+        "target": "chVoiceBlock",
+        "offset": [
+          -40,
+          0
+        ]
+      },
+      "note": "voice - each a real channel"
+    },
+    {
+      "op": "move",
+      "at": 300.3,
+      "to": {
+        "target": "runHealth",
+        "offset": [
+          -36,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 16 STOP: beside Run Health Check for p81-p82; no control on this page is clicked (the narration's named test-send buttons are absent in this tenant - see residuals)"
+    },
+    {
+      "op": "watch",
+      "key": "chHold",
+      "from": 296.5,
+      "to": 309.9,
+      "predicate": "onChannels",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "guardrail (send-type page): the channel page never navigates or fires a test; nothing clicked"
+    },
+    {
+      "op": "move",
+      "at": 310.5,
+      "to": {
+        "target": "linkConversations",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 17 cue p83 'Then Conversations'"
+    },
+    {
+      "op": "click",
+      "target": "linkConversations",
+      "pressAt": 311,
+      "hoverMs": 340,
+      "postcondition": "onConversations",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 17: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "cvStable",
+      "predicate": "conversationsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 312.2,
+      "predicate": "conversationsLoaded",
+      "note": "log table header present; empty state is a real tenant state"
+    },
+    {
+      "op": "log-rect",
+      "at": 312.35,
+      "key": "cvCustomerRect",
+      "target": "convCustomerTh"
+    },
+    {
+      "op": "log-rect",
+      "at": 312.5,
+      "key": "cvEmptyRect",
+      "target": "convEmpty"
+    },
+    {
+      "op": "log-rect",
+      "at": 312.65,
+      "key": "cvExportRect",
+      "target": "convExport"
+    },
+    {
+      "op": "move",
+      "at": 312.9,
+      "to": {
+        "target": "convCustomerTh",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p84 the log columns: who, channel, topic, status"
+    },
+    {
+      "op": "move",
+      "at": 317.9,
+      "to": {
+        "target": "convEmpty",
+        "offset": [
+          -200,
+          0
+        ]
+      },
+      "note": "p85-p86 empty in this capture (No conversations found)"
+    },
+    {
+      "op": "move",
+      "at": 321.5,
+      "to": {
+        "target": "convExport",
+        "offset": [
+          -36,
+          44
+        ],
+        "outside": true
+      },
+      "note": "STOP: beside Export; it stays untouched"
+    },
+    {
+      "op": "watch",
+      "key": "cvHold",
+      "from": 312.7,
+      "to": 325.7,
+      "predicate": "onConversations",
+      "everyMs": 600,
+      "mustHold": true,
+      "note": "guardrail: no export, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 326.2,
+      "to": {
+        "target": "linkEscalations",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 18 cue p87 'Escalations is the page to remember'"
+    },
+    {
+      "op": "click",
+      "target": "linkEscalations",
+      "pressAt": 326.7,
+      "hoverMs": 340,
+      "postcondition": "onEscalations",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 18: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "esStable",
+      "predicate": "escalationsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 328,
+      "predicate": "escalationsLoaded",
+      "note": "Reason column present; the empty queue is a real tenant state (0 open)"
+    },
+    {
+      "op": "log-rect",
+      "at": 328.15,
+      "key": "esReasonRect",
+      "target": "escReasonTh"
+    },
+    {
+      "op": "log-rect",
+      "at": 328.3,
+      "key": "esEmptyRect",
+      "target": "escEmpty"
+    },
+    {
+      "op": "log-rect",
+      "at": 328.45,
+      "key": "esClaimRect",
+      "target": "claimNext"
+    },
+    {
+      "op": "move",
+      "at": 328.6,
+      "to": {
+        "target": "escReasonTh",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p88-p90 the REASON column - why the agent hands off (live the queue is empty; see residuals)"
+    },
+    {
+      "op": "move",
+      "at": 333.5,
+      "to": {
+        "target": "escEmpty",
+        "offset": [
+          -200,
+          0
+        ]
+      },
+      "note": "p89-p90 down the handoff table"
+    },
+    {
+      "op": "move",
+      "at": 342.4,
+      "to": {
+        "target": "claimNext",
+        "offset": [
+          -32,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 18 STOP: beside Claim Next for p91 'Don't click Claim Next'"
+    },
+    {
+      "op": "watch",
+      "key": "esHold",
+      "from": 339.5,
+      "to": 346,
+      "predicate": "onEscalations",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "guardrail: Claim Next never clicked, no live escalation assigned, page unchanged"
+    },
+    {
+      "op": "move",
+      "at": 346.4,
+      "to": {
+        "target": "linkAnalytics",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 19 cue p92 'Last, Analytics'"
+    },
+    {
+      "op": "click",
+      "target": "linkAnalytics",
+      "pressAt": 346.9,
+      "hoverMs": 340,
+      "postcondition": "onAnalytics",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 19: genuine navigation"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "anStable",
+      "predicate": "analyticsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 348.1,
+      "predicate": "analyticsLoaded",
+      "note": "KPI band present"
+    },
+    {
+      "op": "log-rect",
+      "at": 348.25,
+      "key": "anConvRect",
+      "target": "anConversations"
+    },
+    {
+      "op": "log-rect",
+      "at": 348.4,
+      "key": "anExportRect",
+      "target": "anExport"
+    },
+    {
+      "op": "move",
+      "at": 348.6,
+      "to": {
+        "target": "anConversations",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p93 the monthly review band: volume, containment, escalation rate, satisfaction, cost (live values are zeroed - see residuals)"
+    },
+    {
+      "op": "move",
+      "at": 354.2,
+      "to": {
+        "point": [
+          900,
+          560
+        ]
+      },
+      "note": "p94 per-channel and per-conversation cost panels"
+    },
+    {
+      "op": "move",
+      "at": 363.2,
+      "to": {
+        "target": "anExport",
+        "offset": [
+          -36,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 19 STOP: beside Export for p96 'Export stays alone'"
+    },
+    {
+      "op": "watch",
+      "key": "anHold",
+      "from": 348.5,
+      "to": 365,
+      "predicate": "onAnalytics",
+      "everyMs": 600,
+      "mustHold": true,
+      "note": "guardrail: no export, page unchanged"
+    },
+    {
+      "op": "log-rect",
+      "at": 365.4,
+      "key": "esLinkRect",
+      "target": "linkEscalations"
+    },
+    {
+      "op": "log-rect",
+      "at": 365.55,
+      "key": "closeRect",
+      "target": "closeSettings"
+    },
+    {
+      "op": "move",
+      "at": 365.7,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 20 cue p97 'Two areas, one habit'"
+    },
+    {
+      "op": "move",
+      "at": 366.9,
+      "to": {
+        "target": "hubOtpRequired",
+        "offset": [
+          0,
+          0
+        ],
+        "outside": true
+      },
+      "note": "p98 login method and O-T-P settings (recap gesture toward the rail's portal group)"
+    },
+    {
+      "op": "move",
+      "at": 372.3,
+      "to": {
+        "target": "linkEscalations",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "p99-p100 the Escalations queue, mirrored into the C-R-M Agent Console"
+    },
+    {
+      "op": "move",
+      "at": 379.1,
+      "to": {
+        "target": "closeSettings",
+        "offset": [
+          70,
+          0
+        ],
+        "outside": true
+      },
+      "note": "p101-p102 rest BESIDE Close Settings for 'Close Settings, and you're done' - pointed at, not clicked (browse-and-point; see residuals)"
+    },
+    {
+      "op": "watch",
+      "key": "closeHold",
+      "from": 372.1,
+      "to": 383.6,
+      "predicate": "onAnalytics",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail: Close Settings is only pointed at; the page never leaves Settings"
+    },
+    {
+      "op": "assert",
+      "at": 383.4,
+      "predicate": "onAnalytics"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "hubTitleRect",
+        "place": "below-left",
+        "from": 9.3,
+        "to": 15.5
+      },
+      {
+        "n": 2,
+        "anchor": "hubTiles.tileReg",
+        "place": "below-left",
+        "from": 22.1,
+        "to": 32.5
+      },
+      {
+        "n": 3,
+        "anchor": "hubCards.cardAccess",
+        "place": "below-left",
+        "from": 40,
+        "to": 46.5
+      },
+      {
+        "n": 4,
+        "anchor": "failedRect",
+        "place": "right",
+        "from": 61.7,
+        "to": 70.5
+      },
+      {
+        "n": 5,
+        "anchor": "brTabs.brandingTabVisual",
+        "place": "below-left",
+        "from": 80.6,
+        "to": 87.5
+      },
+      {
+        "n": 6,
+        "anchor": "modulesRect",
+        "place": "below-left",
+        "from": 108.6,
+        "to": 114.4
+      },
+      {
+        "n": 7,
+        "anchor": "acLoginRect",
+        "place": "right",
+        "from": 128.1,
+        "to": 137
+      },
+      {
+        "n": 8,
+        "anchor": "cnTabs.contentTabWelcome",
+        "place": "below-left",
+        "from": 144.7,
+        "to": 150.5
+      },
+      {
+        "n": 9,
+        "anchor": "hubLoginRect",
+        "place": "right",
+        "from": 159.6,
+        "to": 169.5
+      },
+      {
+        "n": 10,
+        "anchor": "agLiveRect",
+        "place": "below-left",
+        "from": 182.5,
+        "to": 188.2
+      },
+      {
+        "n": 11,
+        "anchor": "containRect",
+        "place": "below-left",
+        "from": 198.7,
+        "to": 210.3
+      },
+      {
+        "n": 12,
+        "anchor": "chVals.chWeb81",
+        "place": "below-left",
+        "from": 215,
+        "to": 230.5
+      },
+      {
+        "n": 13,
+        "anchor": "capRect",
+        "place": "right",
+        "from": 232.4,
+        "to": 247
+      },
+      {
+        "n": 14,
+        "anchor": "cfRefundRect",
+        "place": "below-left",
+        "from": 251,
+        "to": 257.5
+      },
+      {
+        "n": 15,
+        "anchor": "kbArticlesRect",
+        "place": "below-left",
+        "from": 273.4,
+        "to": 283.5
+      },
+      {
+        "n": 16,
+        "anchor": "chWebRect",
+        "place": "below-left",
+        "from": 291.9,
+        "to": 308.5
+      },
+      {
+        "n": 17,
+        "anchor": "cvEmptyRect",
+        "place": "below-left",
+        "from": 313,
+        "to": 324.5
+      },
+      {
+        "n": 18,
+        "anchor": "esReasonRect",
+        "place": "below-left",
+        "from": 328.6,
+        "to": 344.5
+      },
+      {
+        "n": 19,
+        "anchor": "anConvRect",
+        "place": "below-left",
+        "from": 348.6,
+        "to": 362.5
+      },
+      {
+        "n": 20,
+        "anchor": "closeRect",
+        "place": "right",
+        "from": 372.3,
+        "to": 382
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "hubCards.cardAccess",
+        "from": 42.4,
+        "to": 46,
+        "note": "p13 login method and one-time passwords on the Access card"
+      },
+      {
+        "anchor": "failedRect",
+        "from": 61.7,
+        "to": 64.2,
+        "note": "p17 three failed login attempts"
+      },
+      {
+        "anchor": "publishRect",
+        "from": 71.7,
+        "to": 77.1,
+        "color": "#dc2626",
+        "note": "step 4 STOP: Publish Changes pushes edits live to real customers - support never clicks it"
+      },
+      {
+        "anchor": "brTabs.brandingTabVisual",
+        "from": 80.7,
+        "to": 81.7
+      },
+      {
+        "anchor": "brTabs.brandingTabColors",
+        "from": 81.7,
+        "to": 82.5
+      },
+      {
+        "anchor": "brTabs.brandingTabAdvanced",
+        "from": 82.5,
+        "to": 83.4
+      },
+      {
+        "anchor": "brSaveRect",
+        "from": 95.1,
+        "to": 96.9,
+        "color": "#dc2626",
+        "note": "step 5 STOP: Save & Publish - we read, we never save"
+      },
+      {
+        "anchor": "bulkCtl.enableAll",
+        "from": 104,
+        "to": 108,
+        "color": "#dc2626",
+        "note": "step 6 STOP: Enable All / Disable All / Reset to Defaults - no toggle touched"
+      },
+      {
+        "anchor": "bulkCtl.disableAll",
+        "from": 104,
+        "to": 108,
+        "color": "#dc2626"
+      },
+      {
+        "anchor": "bulkCtl.resetDefaults",
+        "from": 104,
+        "to": 108,
+        "color": "#dc2626"
+      },
+      {
+        "anchor": "modulesRect",
+        "from": 108.6,
+        "to": 114.3,
+        "note": "p31 Modules Enabled 9 / 10 vs the hub card's 7 of 9"
+      },
+      {
+        "anchor": "acLoginRect",
+        "from": 128.1,
+        "to": 133,
+        "note": "p36 login methods"
+      },
+      {
+        "anchor": "acOtpRect",
+        "from": 133.7,
+        "to": 137.4,
+        "note": "p37 one-time password + password policy"
+      },
+      {
+        "anchor": "acSaveRect",
+        "from": 137.9,
+        "to": 141.5,
+        "color": "#dc2626",
+        "note": "step 7 STOP: Save Changes"
+      },
+      {
+        "anchor": "cnSaveRect",
+        "from": 152.5,
+        "to": 156.9,
+        "color": "#dc2626",
+        "note": "step 8 STOP: Save Changes; nothing typed"
+      },
+      {
+        "anchor": "hubLoginRect",
+        "from": 159.6,
+        "to": 162.4,
+        "note": "p44 login method"
+      },
+      {
+        "anchor": "hubOtpRect",
+        "from": 162.5,
+        "to": 165.9,
+        "note": "p44 OTP required"
+      },
+      {
+        "anchor": "failed2Rect",
+        "from": 166.4,
+        "to": 169.3,
+        "note": "p45 failed attempts feed"
+      },
+      {
+        "anchor": "agLiveRect",
+        "from": 182.5,
+        "to": 187.6,
+        "note": "p49 live on three channels"
+      },
+      {
+        "anchor": "containRect",
+        "from": 198.7,
+        "to": 209.3,
+        "note": "p53-p55 containment rate - the number to watch (live: dash; see residuals)"
+      },
+      {
+        "anchor": "chVals.chWeb81",
+        "from": 215,
+        "to": 218.6,
+        "note": "p57 web chat 81% contained"
+      },
+      {
+        "anchor": "chVals.chSms76",
+        "from": 218.7,
+        "to": 222.3,
+        "note": "p58 SMS 76% contained"
+      },
+      {
+        "anchor": "chVals.chVoice68",
+        "from": 222.4,
+        "to": 225.5,
+        "note": "p59 voice 68% contained"
+      },
+      {
+        "anchor": "cfRefundRect",
+        "from": 251,
+        "to": 253.6,
+        "note": "p67 refund cap $50"
+      },
+      {
+        "anchor": "cfNotSavedRect",
+        "from": 257.9,
+        "to": 264.5,
+        "note": "p69-p70 unsaved form for a different demo brand"
+      },
+      {
+        "anchor": "cfSaveRect",
+        "from": 265.3,
+        "to": 270.1,
+        "color": "#dc2626",
+        "note": "step 14 STOP: Save Changes - never save"
+      },
+      {
+        "anchor": "kbArticlesRect",
+        "from": 278.4,
+        "to": 281.9,
+        "note": "p75 articles / indexing / last sync"
+      },
+      {
+        "anchor": "kbBtns.reindex",
+        "from": 283.2,
+        "to": 288.4,
+        "color": "#dc2626",
+        "note": "step 15 STOP: Re-index"
+      },
+      {
+        "anchor": "kbBtns.addArticle",
+        "from": 283.2,
+        "to": 288.4,
+        "color": "#dc2626",
+        "note": "step 15 STOP: + Add Article"
+      },
+      {
+        "anchor": "chRunHealthRect",
+        "from": 300.3,
+        "to": 309.8,
+        "color": "#dc2626",
+        "note": "step 16 STOP: send-type page - nothing clicked (the narration's named Send Test Message/SMS/Place Test Call are absent in this tenant; see residuals)"
+      },
+      {
+        "anchor": "cvEmptyRect",
+        "from": 317.9,
+        "to": 321.3,
+        "note": "p86 empty in this capture"
+      },
+      {
+        "anchor": "cvExportRect",
+        "from": 321.5,
+        "to": 325.6,
+        "color": "#dc2626",
+        "note": "step 17 STOP: Export stays untouched"
+      },
+      {
+        "anchor": "esClaimRect",
+        "from": 342.4,
+        "to": 345.9,
+        "color": "#dc2626",
+        "note": "step 18 STOP: Claim Next assigns a live escalation - never clicked"
+      },
+      {
+        "anchor": "anExportRect",
+        "from": 363.2,
+        "to": 365,
+        "color": "#dc2626",
+        "note": "step 19 STOP: Export"
+      },
+      {
+        "anchor": "esLinkRect",
+        "from": 372.3,
+        "to": 376.2,
+        "note": "p99 the Escalations queue mirrors into the CRM Agent Console"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 40,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 41.5,
+        "z": 1.3,
+        "cx": 1120,
+        "cy": 400,
+        "ease": true,
+        "note": "step 3 close framing (130%): LOGIN METHOD + OTP REQUIRED on the Access & Security card"
+      },
+      {
+        "t": 46.5,
+        "z": 1.3,
+        "cx": 1120,
+        "cy": 400
+      },
+      {
+        "t": 48,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the activity feed / Portal Health / Publish Changes and the branding subpage"
+      },
+      {
+        "t": 107.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 109,
+        "z": 1.3,
+        "cx": 720,
+        "cy": 250,
+        "ease": true,
+        "note": "step 6 close framing (130%): Modules Enabled 9 / 10 tile"
+      },
+      {
+        "t": 114.3,
+        "z": 1.3,
+        "cx": 720,
+        "cy": 250
+      },
+      {
+        "t": 115.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 127,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 128.5,
+        "z": 1.3,
+        "cx": 640,
+        "cy": 430,
+        "ease": true,
+        "note": "step 7 close framing (130%): LOGIN METHODS + OTP block"
+      },
+      {
+        "t": 137,
+        "z": 1.3,
+        "cx": 640,
+        "cy": 430
+      },
+      {
+        "t": 138,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide through Content, the hub recap, and the Part 2 rail work"
+      },
+      {
+        "t": 197.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 199,
+        "z": 1.5,
+        "cx": 560,
+        "cy": 250,
+        "ease": true,
+        "note": "step 11 close framing (150%): Containment Rate tile"
+      },
+      {
+        "t": 209.5,
+        "z": 1.5,
+        "cx": 560,
+        "cy": 250
+      },
+      {
+        "t": 211,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide and calm through the remaining agent subpages and the recap"
+      },
+      {
+        "t": 384.026,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Customer Portal & AI Agent — Complete",
+      "from": 382.23,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 381.9
+  },
+  "output": "WC-12-08-portal-ai-agent-v1.1",
+  "neverClick": [
+    "publish changes",
+    "save & publish",
+    "save changes",
+    "enable all",
+    "disable all",
+    "reset to defaults",
+    "send test message",
+    "send test sms",
+    "place test call",
+    "claim next",
+    "export",
+    "re-index",
+    "+ add article",
+    "run health check",
+    "configure agent",
+    "view conversations",
+    "configure →",
+    "preview portal",
+    "preview portal ↗",
+    "↗ preview live widget",
+    "copy",
+    "escalation rules",
+    "channel settings",
+    "change favicon",
+    "new record",
+    "logout",
+    "log out now",
+    "ask shyne"
+  ],
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: expand the shared persisted sidebar before the take"
+    },
+    {
+      "op": "click",
+      "target": "cpHeader",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "cpSubmenuClosed",
+      "postcondition": "cpSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: close Customer Portal group so step 1 expands it on camera"
+    },
+    {
+      "op": "click",
+      "target": "aiHeader",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "aiSubmenuClosed",
+      "postcondition": "aiSubmenuClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: close AI Agent group so step 10 expands it on camera"
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"general\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse remaining groups (idempotent; skipped once all closed)"
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"analytics\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"locations\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"services\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"payments\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"hardware\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"ui & display\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"users & security\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"operations\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"vip\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"automation\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "timeoutMs": 4000
+    },
+    {
+      "op": "click",
+      "target": {
+        "js": "[...document.querySelectorAll('button.menu-header')].find(e=>(e.textContent||'').trim().toLowerCase().startsWith(\"marketing\"))"
+      },
+      "pressAt": 0,
+      "hoverMs": 120,
+      "unless": "allGroupsClosed",
+      "postcondition": "allGroupsClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: last collapse; verify every group is closed"
+    }
+  ]
+}

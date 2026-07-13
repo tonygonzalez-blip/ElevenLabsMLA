@@ -1,0 +1,262 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.205
+A caller says they can't sign in.
+
+p02
+00:00:02.748 --> 00:00:05.636
+Before you change a thing, fix the order in your head.
+
+p03
+00:00:06.042 --> 00:00:09.872
+Cheapest checks first, because two of them clear most of these tickets.
+
+p04
+00:00:10.231 --> 00:00:13.120
+And in the demo tenant, you never reset a password.
+
+p05
+00:00:13.537 --> 00:00:15.687
+Start with the three fields.
+
+p06
+00:00:15.687 --> 00:00:19.633
+Every WashCentral sign-in wants an email, a password, and a tenant code.
+
+p07
+00:00:19.633 --> 00:00:22.743
+That third one is where logins quietly fail.
+
+p08
+00:00:22.743 --> 00:00:27.774
+A wrong tenant code sends a perfectly good account to the wrong company's data,
+
+p09
+00:00:27.774 --> 00:00:28.760
+and nothing happens.
+
+p10
+00:00:28.760 --> 00:00:32.240
+Confirm the tenant before you ever suspect the password.
+
+p11
+00:00:32.640 --> 00:00:33.632
+Now one question.
+
+p12
+00:00:33.632 --> 00:00:35.616
+Did this client come from WashAssist?
+
+p13
+00:00:35.616 --> 00:00:37.950
+If so, their login never changed.
+
+p14
+00:00:37.950 --> 00:00:40.170
+Same username, same password, same tenant.
+
+p15
+00:00:40.170 --> 00:00:44.795
+A migrated user who can't get in is almost never a credentials problem.
+
+p16
+00:00:44.795 --> 00:00:50.958
+Have them try their old login first, and you may have skipped a reset you shouldn't be making.
+
+p17
+00:00:51.416 --> 00:00:52.946
+Open System Users, under Settings.
+
+p18
+00:00:52.946 --> 00:00:56.725
+This is the master list of everyone who can sign in.
+
+p19
+00:00:56.725 --> 00:01:00.828
+Eight columns, and four of them answer a login ticket by themselves.
+
+p20
+00:01:00.828 --> 00:01:05.627
+There's a search across the top, and a New Record button you leave alone.
+
+p21
+00:01:05.627 --> 00:01:06.851
+We're only reading here.
+
+p22
+00:01:07.347 --> 00:01:09.498
+First, does the account even exist?
+
+p23
+00:01:09.911 --> 00:01:14.071
+Search by name, code, or email instead of scrolling a long list.
+
+p24
+00:01:14.544 --> 00:01:20.314
+No match usually means the wrong tenant again, or a user who was never finished being set up.
+
+p25
+00:01:20.737 --> 00:01:25.040
+And if the rows won't load, that's the data service, not an empty tenant.
+
+p26
+00:01:25.468 --> 00:01:27.007
+Read the Active column.
+
+p27
+00:01:27.389 --> 00:01:30.910
+If it's switched off, the account can't sign in, full stop.
+
+p28
+00:01:31.328 --> 00:01:35.242
+And to the caller, a disabled account looks exactly like a bad password.
+
+p29
+00:01:36.299 --> 00:01:40.614
+Re-enabling it is an admin's job in production, not yours in the demo.
+
+p30
+00:01:41.041 --> 00:01:41.903
+Next column: S-S-O.
+
+p31
+00:01:42.233 --> 00:01:43.463
+If that reads yes, the password doesn't even live in WashCentral.
+
+p32
+00:01:43.765 --> 00:01:49.459
+It's held by the identity provider.
+
+p33
+00:01:49.663 --> 00:01:51.890
+Reset it here and nothing changes.
+
+p34
+00:01:52.143 --> 00:01:56.720
+So stop the password thread and send it to the single sign-on integration page instead.
+
+p35
+00:01:57.157 --> 00:01:58.885
+Then Last Login.
+
+p36
+00:01:59.720 --> 00:02:05.149
+A recent date tells you the account works,
+
+p37
+00:02:05.828 --> 00:02:08.063
+so today's failure is probably a typo or the tenant code.
+
+p38
+00:02:08.433 --> 00:02:10.349
+A blank tells you it never signed in, which fits a setup that was never finished.
+
+p39
+00:02:10.888 --> 00:02:13.680
+One column, and you know whether this ever worked.
+
+p40
+00:02:14.118 --> 00:02:14.883
+Last check.
+
+p41
+00:02:15.292 --> 00:02:18.194
+Open the Audit menu, then User Activity.
+
+p42
+00:02:18.871 --> 00:02:23.071
+Failed logins show up as one tile at the top, a count for the whole tenant.
+
+p43
+00:02:23.601 --> 00:02:27.940
+There is no per user failure column, so read the caller's own row instead:
+
+p44
+00:02:28.160 --> 00:02:30.908
+status, last login, logins this month.
+
+p45
+00:02:31.490 --> 00:02:35.335
+A quiet row during a tenant wide spike points back at the tenant code,
+
+p46
+00:02:35.561 --> 00:02:39.040
+and the event by event trail lives next door in the Audit Log.
+
+p47
+00:02:39.500 --> 00:02:42.633
+By now you know whether a reset is even the fix.
+
+p48
+00:02:43.175 --> 00:02:44.272
+You don't do it here.
+
+p49
+00:02:44.869 --> 00:02:46.809
+In production there are two doors:
+
+p50
+00:02:47.185 --> 00:02:50.020
+the user resets themselves with Forgot Password,
+
+p51
+00:02:50.434 --> 00:02:53.337
+or an admin resets it from that user's own record.
+
+p52
+00:02:54.024 --> 00:02:56.247
+If it's a single sign-on account, it's neither.
+
+p53
+00:02:56.627 --> 00:02:58.778
+That fix lives with the identity provider.
+
+p54
+00:02:59.304 --> 00:03:00.506
+If none of that lands it, escalate clean.
+
+p55
+00:03:00.864 --> 00:03:01.961
+Username, tenant, the timestamps of the failures,
+
+p56
+00:03:02.329 --> 00:03:07.688
+and screenshots with anything sensitive masked.
+
+p57
+00:03:07.933 --> 00:03:09.229
+Never the password.
+
+p58
+00:03:09.957 --> 00:03:13.907
+The next tier should be able to reproduce it without calling the customer back.
+
+p59
+00:03:14.400 --> 00:03:15.545
+That's the whole flow.
+
+p60
+00:03:16.041 --> 00:03:17.778
+Three fields and the tenant code.
+
+p61
+00:03:18.102 --> 00:03:19.453
+The migration question.
+
+p62
+00:03:20.141 --> 00:03:24.607
+Then System Users for active, single sign-on, and last login.
+
+p63
+00:03:25.321 --> 00:03:27.613
+Then User Activity for the failures.
+
+p64
+00:03:28.033 --> 00:03:31.267
+A reset only in production, or a clean escalation.
+
+p65
+00:03:31.696 --> 00:03:35.675
+Cheap checks first, every time, and nothing in the demo touched.
+

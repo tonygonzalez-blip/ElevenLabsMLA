@@ -1,0 +1,178 @@
+{
+  "lesson": "WC-07-03",
+  "audioMaster": "training/module07-team/WC-07-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses. Never rewrite, summarize, or reorder. Block windows are MEASURED onsets (global FFT normalized cross-correlation of each block mp3 against the joined master; every block matched at NCC=1.0000, monotonic, ~0.36s inter-block tail). The nominal Sigma(audio+0.4) formula using ffprobe per-file durations overshoots the probed master by 0.54s (> 0.3 tolerance) because ffprobe's mp3 durations overstate the decoded sample counts; the measured onsets are the ground truth. Master ffprobe duration 236.434s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 17.04,
+      "phrases": [
+        { "id": "p01", "text": "Open the Team module, then under Sales Coaching, click QA Dashboard." },
+        { "id": "p02", "text": "This area records how staff sell at the register and scores every interaction against a script." },
+        { "id": "p03", "text": "Three pages hold it: the dashboard, the scripts behind it, and the conversations themselves." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.04,
+      "endS": 30.64,
+      "phrases": [
+        { "id": "p04", "text": "Start with the four numbers up top." },
+        { "id": "p05", "text": "Average score this month, how many conversations fed it," },
+        { "id": "p06", "text": "the share clearing the seventy-five percent target, and the swing against last month." },
+        { "id": "p07", "text": "Green and up means the team is trending the right way." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 30.64,
+      "endS": 43.2,
+      "phrases": [
+        { "id": "p08", "text": "Look at the trend." },
+        { "id": "p09", "text": "Twelve weeks of average score, drawn against a dashed line at the target." },
+        { "id": "p10", "text": "When the solid line rides above the dash, the team is clearing the bar." },
+        { "id": "p11", "text": "Right now it's climbing." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 43.2,
+      "endS": 57.84,
+      "phrases": [
+        { "id": "p12", "text": "Now the distribution." },
+        { "id": "p13", "text": "Every scored interaction falls into a letter grade, A through F." },
+        { "id": "p14", "text": "Half of them land in the B band this month." },
+        { "id": "p15", "text": "The A's and B's together are your at-or-above-target share, in one glance." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 57.84,
+      "endS": 73.44,
+      "phrases": [
+        { "id": "p16", "text": "Here's the panel that earns its keep." },
+        { "id": "p17", "text": "Seven behaviors the platform listens for on every call, from greeting to closing," },
+        { "id": "p18", "text": "each with a hit rate." },
+        { "id": "p19", "text": "Membership sits at forty-seven percent, in red, well below the rest." },
+        { "id": "p20", "text": "There's the gap." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 73.44,
+      "endS": 88.08,
+      "phrases": [
+        { "id": "p21", "text": "The system already flagged it." },
+        { "id": "p22", "text": "The Coaching Opportunity callout takes that weakest number" },
+        { "id": "p23", "text": "and turns it into a sentence a manager can act on: focus training on the membership pitch." },
+        { "id": "p24", "text": "Read this panel first when you open the dashboard." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 88.08,
+      "endS": 103.04,
+      "phrases": [
+        { "id": "p25", "text": "On the right, the leaderboard." },
+        { "id": "p26", "text": "Top performers this month by average score, each with their conversation count next to it." },
+        { "id": "p27", "text": "Notice volume and score don't always line up." },
+        { "id": "p28", "text": "The button underneath jumps to every conversation, but leave it for now." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 103.04,
+      "endS": 119.36,
+      "phrases": [
+        { "id": "p29", "text": "Scroll to the recent activity table." },
+        { "id": "p30", "text": "The last ten interactions across every location: who, when, where, how long, and the grade." },
+        { "id": "p31", "text": "The script column shows only a dash, so it won't tell you which script scored the call." },
+        { "id": "p32", "text": "For that, we open the scripts page." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 119.36,
+      "endS": 135.28,
+      "phrases": [
+        { "id": "p33", "text": "Click Scoring Scripts." },
+        { "id": "p34", "text": "Its own header: two active scripts, one draft," },
+        { "id": "p35", "text": "seven checkpoints on average, and two hundred eighty-four scored this month." },
+        { "id": "p36", "text": "That last number is the same pool the dashboard counted, just labelled differently." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 135.28,
+      "endS": 150.96,
+      "phrases": [
+        { "id": "p37", "text": "This is the rulebook." },
+        { "id": "p38", "text": "Each script defines what the AI grades and how it's weighted." },
+        { "id": "p39", "text": "A default standard-wash script, a membership-focused one with a higher target," },
+        { "id": "p40", "text": "and a win-back script still in draft." },
+        { "id": "p41", "text": "You read these; a manager builds and edits them." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 150.96,
+      "endS": 167.2,
+      "phrases": [
+        { "id": "p42", "text": "One note card sits below." },
+        { "id": "p43", "text": "It's best-practice guidance on weighting: revenue behaviors like membership highest," },
+        { "id": "p44", "text": "soft skills like greeting lowest, and a pass mark around seventy-five to eighty percent." },
+        { "id": "p45", "text": "Helpful context, but it's just a note, not a setting." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 167.2,
+      "endS": 181.36,
+      "phrases": [
+        { "id": "p46", "text": "Last page. Click Conversations." },
+        { "id": "p47", "text": "Same headline numbers as the dashboard, plus one that matters most for triage: needs coaching." },
+        { "id": "p48", "text": "Twelve interactions this month scored low enough to review." },
+        { "id": "p49", "text": "That's your work queue." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 181.36,
+      "endS": 202.96,
+      "phrases": [
+        { "id": "p50", "text": "This is the full log, all two hundred eighty-four records." },
+        { "id": "p51", "text": "Search by employee or transcript, filter, or export, though we won't export today." },
+        { "id": "p52", "text": "Each row is one scored interaction." },
+        { "id": "p53", "text": "Ignore the checkpoints-met column here;" },
+        { "id": "p54", "text": "it reads zero of eight on every row, which is just demo data." },
+        { "id": "p55", "text": "The real hit rates live on the dashboard." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 202.96,
+      "endS": 218.48,
+      "phrases": [
+        { "id": "p56", "text": "Put the three together." },
+        { "id": "p57", "text": "The dashboard flagged membership as weak." },
+        { "id": "p58", "text": "The scripts page holds the script built to fix it." },
+        { "id": "p59", "text": "And this log is where a manager pulls the actual calls to coach from." },
+        { "id": "p60", "text": "One weak number, three pages, a real next step." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 218.48,
+      "endS": 236.434,
+      "phrases": [
+        { "id": "p61", "text": "So, three pages, three questions." },
+        { "id": "p62", "text": "How's the team and what's weak: the QA Dashboard." },
+        { "id": "p63", "text": "What are we grading against: Scoring Scripts." },
+        { "id": "p64", "text": "Show me the actual calls: Conversations." },
+        { "id": "p65", "text": "You read all three; the managers you support act on them." }
+      ]
+    }
+  ],
+  "output": "WC-07-03-sales-coaching-v1.1"
+}

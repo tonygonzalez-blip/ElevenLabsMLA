@@ -1,0 +1,600 @@
+{
+  "lesson": "WC-08-04",
+  "audioMaster": "training/module08-operations/WC-08-04-full-narration-v1.0.mp3",
+  "audioDurationS": 238.524,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Operations, then Appointments.",
+      "startS": 0,
+      "endS": 1.414,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the booking board customers land on, not the staff roster.",
+      "startS": 1.414,
+      "endS": 6.202,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Shifts live somewhere else.",
+      "startS": 6.202,
+      "endS": 7.616,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Here you are looking at the jobs people reserved: details, oil changes, inspections,",
+      "startS": 7.616,
+      "endS": 12.686,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "each pinned to a day and a time.",
+      "startS": 12.686,
+      "endS": 15.797,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Start with the four numbers up top.",
+      "startS": 16.24,
+      "endS": 18.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Eighteen today, eighty-four this week.",
+      "startS": 18.537,
+      "endS": 20.732,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Utilization at seventy-eight percent tells you how full your capacity is running,",
+      "startS": 21.429,
+      "endS": 25.546,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "and the three percent no-show rate is the slice that never showed.",
+      "startS": 26.055,
+      "endS": 29.515,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "Read these first and you know how the week is going before opening a single row.",
+      "startS": 30.148,
+      "endS": 34.297,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Next, the three panels. First one, Booking Trend.",
+      "startS": 34.72,
+      "endS": 36.267,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "It plots the last twelve months, eight hundred forty bookings, up nineteen percent.",
+      "startS": 36.529,
+      "endS": 38.095,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "One glance tells you whether volume is climbing or sliding,",
+      "startS": 38.568,
+      "endS": 43.255,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "which is the context every other number sits inside.",
+      "startS": 43.745,
+      "endS": 49.517,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Middle panel, the service mix.",
+      "startS": 49.92,
+      "endS": 51.456,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Full details lead, interior details next, then oil changes,",
+      "startS": 51.456,
+      "endS": 54.615,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "with everything else rolled into other.",
+      "startS": 54.615,
+      "endS": 56.457,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This is what customers are actually booking,",
+      "startS": 56.457,
+      "endS": 59.056,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "and it is the mix your bays and your people have to be ready for.",
+      "startS": 59.056,
+      "endS": 63.663,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Right panel, schedule health.",
+      "startS": 64.08,
+      "endS": 65.921,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Most bookings are confirmed, a smaller share still pending, and a thin slice marked no-show.",
+      "startS": 66.611,
+      "endS": 67.99,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Confirmed is locked in.",
+      "startS": 68.3,
+      "endS": 72.187,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Pending still needs the customer to say yes.",
+      "startS": 72.675,
+      "endS": 73.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Watch that middle band,",
+      "startS": 74.275,
+      "endS": 76.566,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "because a quick phone call there turns a maybe into a filled bay.",
+      "startS": 76.896,
+      "endS": 81.828,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Now scroll to the list.",
+      "startS": 82.24,
+      "endS": 83.538,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Eighteen records, one row per booking.",
+      "startS": 83.957,
+      "endS": 86.168,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Up on the right, a small toggle: List or Calendar.",
+      "startS": 86.737,
+      "endS": 89.65,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "You are in List now, the row-by-row view.",
+      "startS": 90.018,
+      "endS": 92.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "We flip to Calendar shortly, but first walk the controls.",
+      "startS": 92.662,
+      "endS": 95.804,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Two buttons here.",
+      "startS": 96.306,
+      "endS": 97.173,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "New Record starts a fresh booking, and Export downloads the list.",
+      "startS": 97.57,
+      "endS": 99.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "We touch neither today.",
+      "startS": 99.918,
+      "endS": 101.78,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Export especially stays untouched while recording,",
+      "startS": 102.12,
+      "endS": 103.529,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "and the new-booking form is its own lesson.",
+      "startS": 103.918,
+      "endS": 109.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Under the header, the search row.",
+      "startS": 109.52,
+      "endS": 111.25,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Type into the box to narrow the list by a name or a service,",
+      "startS": 111.728,
+      "endS": 115.058,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "or open Filters to slice it by column.",
+      "startS": 115.424,
+      "endS": 117.653,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Handy when a customer calls and you need their booking in seconds, not scrolling.",
+      "startS": 118.106,
+      "endS": 122.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "Look at the columns.",
+      "startS": 122.694,
+      "endS": 123.639,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Date, time, customer, service, location, staff, and status.",
+      "startS": 123.921,
+      "endS": 124.391,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Seven of them, each sortable, with a checkbox on every row.",
+      "startS": 124.635,
+      "endS": 125.113,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "One line carries the whole booking: when, who, what, where, who works it, and where it stands.",
+      "startS": 125.362,
+      "endS": 139.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Run down the staff and status columns.",
+      "startS": 140.138,
+      "endS": 143.285,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Right now staff reads to be determined on these bookings,",
+      "startS": 143.285,
+      "endS": 146.607,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "and status shows confirmed or scheduled.",
+      "startS": 146.607,
+      "endS": 148.839,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "That is the tell.",
+      "startS": 148.839,
+      "endS": 150.536,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "This board captures the booking first,",
+      "startS": 150.536,
+      "endS": 153.201,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "and who actually works it gets assigned separately, over on the team schedule.",
+      "startS": 153.201,
+      "endS": 157.52,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "Down at the foot, the pager.",
+      "startS": 157.92,
+      "endS": 159.78,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "Twenty-five rows to a page, arrows to move between them.",
+      "startS": 160.747,
+      "endS": 162.486,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "A small thing, but it keeps a busy week from turning into an endless scroll.",
+      "startS": 162.797,
+      "endS": 168.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "Now flip the view. Click Calendar.",
+      "startS": 169.2,
+      "endS": 170.336,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "The same bookings rearrange into a calendar.",
+      "startS": 170.764,
+      "endS": 171.744,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "Nothing gets booked, nothing moves.",
+      "startS": 172.069,
+      "endS": 174.527,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "It is purely a different way to look at the week,",
+      "startS": 175.006,
+      "endS": 177.034,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "which is the faster read when someone wants to shift a day around.",
+      "startS": 177.41,
+      "endS": 183.132,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "Click List to come back.",
+      "startS": 183.6,
+      "endS": 185.27,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "The table returns exactly as it was.",
+      "startS": 186.08,
+      "endS": 188.605,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "The toggle is a lens, not a change.",
+      "startS": 189.693,
+      "endS": 192.114,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Flip it as often as you like without touching a record.",
+      "startS": 192.736,
+      "endS": 195.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p62",
+      "text": "One more look, the sidebar.",
+      "startS": 196.32,
+      "endS": 198.591,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p63",
+      "text": "Under Appointments sit its neighbors: schedulable services, resources, business hours,",
+      "startS": 198.591,
+      "endS": 202.674,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p64",
+      "text": "messaging, payments, and reports.",
+      "startS": 202.674,
+      "endS": 204.307,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p65",
+      "text": "Each is its own workspace, and each is its own lesson.",
+      "startS": 204.307,
+      "endS": 209.533,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "We name them and move on.",
+      "startS": 209.533,
+      "endS": 212.364,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "Messaging sends real customer notices, so we leave it closed.",
+      "startS": 212.364,
+      "endS": 217.412,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p68",
+      "text": "So that is Appointments.",
+      "startS": 217.84,
+      "endS": 219.389,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p69",
+      "text": "Numbers up top for the pulse of the day,",
+      "startS": 219.861,
+      "endS": 221.744,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p70",
+      "text": "panels for the mix and the health,",
+      "startS": 222.06,
+      "endS": 223.472,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p71",
+      "text": "a list for the individual bookings,",
+      "startS": 223.913,
+      "endS": 228.731,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p72",
+      "text": "and a toggle to read it as rows or as a week.",
+      "startS": 229.586,
+      "endS": 230.843,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p73",
+      "text": "Keep one line straight: bookings live here, shifts live on the team schedule.",
+      "startS": 231.262,
+      "endS": 234.541,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "Learn this page and every scheduling call gets shorter.",
+      "startS": 235.063,
+      "endS": 238.055,
+      "timing": "silence"
+    }
+  ]
+}

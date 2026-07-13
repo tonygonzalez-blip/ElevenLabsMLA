@@ -1,0 +1,520 @@
+{
+  "lesson": "WC-04-01",
+  "audioMaster": "training/module04-inventory/WC-04-01-full-narration-v1.0.mp3",
+  "audioDurationS": 218.201,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Inventory, then Inventory Items.",
+      "startS": 0,
+      "endS": 1.231,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the master catalog of everything a site stocks and sells off the shelf.",
+      "startS": 1.472,
+      "endS": 3.076,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Tunnel chemicals, counter supplies, the equipment behind them.",
+      "startS": 3.459,
+      "endS": 8.119,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "The rest of the inventory pages wait in the sidebar for the next lesson.",
+      "startS": 8.54,
+      "endS": 16.215,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Start with the four tiles up top.",
+      "startS": 16.692,
+      "endS": 18.564,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Total items, low stock, categories, vendors.",
+      "startS": 18.892,
+      "endS": 20.734,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The one that earns a daily glance is low stock.",
+      "startS": 21.015,
+      "endS": 22.657,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "It counts what's running thin before a cashier tells you the shelf is empty.",
+      "startS": 23.137,
+      "endS": 29.743,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Below them, three quick reads.",
+      "startS": 30.223,
+      "endS": 32.103,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "A twelve-month count trend, the mix by category,",
+      "startS": 32.536,
+      "endS": 33.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "and the split between active, low, and discontinued stock.",
+      "startS": 34.309,
+      "endS": 35.598,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "You size up the whole catalog here before scrolling a single row,",
+      "startS": 35.936,
+      "endS": 39.431,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "which is often all a quick stock question needs.",
+      "startS": 40.282,
+      "endS": 46.559,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Now the list itself.",
+      "startS": 46.96,
+      "endS": 48.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "New Record builds an item from scratch; that's a training exercise, not for today.",
+      "startS": 49.478,
+      "endS": 51.872,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Export ships the data out, so leave it alone.",
+      "startS": 52.293,
+      "endS": 54.562,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Filters and search are how you find one item in a long catalog.",
+      "startS": 55.322,
+      "endS": 63.008,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Read across the columns.",
+      "startS": 63.44,
+      "endS": 64.824,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Two IDs, two prices, a count, a type, a vendor.",
+      "startS": 65.314,
+      "endS": 69.454,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "The item ID is WashCentral's own number;",
+      "startS": 70.328,
+      "endS": 73.07,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "the S-K-U is the stock code you match against a shipment.",
+      "startS": 73.511,
+      "endS": 77.03,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Cost is what you pay, price is what the customer pays.",
+      "startS": 77.64,
+      "endS": 81.269,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Click the first row to open its record.",
+      "startS": 81.68,
+      "endS": 83.822,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "The header names the item, badges it as an inventory item,",
+      "startS": 84.657,
+      "endS": 86.156,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "and tags it with type and stock chips,",
+      "startS": 86.48,
+      "endS": 88.431,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "so you know what you're holding before you read a field.",
+      "startS": 88.789,
+      "endS": 93.665,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "One row, one full record behind it.",
+      "startS": 94.555,
+      "endS": 96.858,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Look top right: three buttons.",
+      "startS": 97.36,
+      "endS": 99.472,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Back, Delete, and Edit Record.",
+      "startS": 99.885,
+      "endS": 102.035,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "Back is the only one we use.",
+      "startS": 102.341,
+      "endS": 104.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Delete removes a record from a live shared tenant, so it never gets clicked in training.",
+      "startS": 104.987,
+      "endS": 109.246,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Edit Record opens the editing flow, and editing is its own workflow with its own rules.",
+      "startS": 109.848,
+      "endS": 114.839,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Find all three, then leave two of them alone.",
+      "startS": 115.209,
+      "endS": 117.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "The record splits its fields across three tabs.",
+      "startS": 118.054,
+      "endS": 120.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Item details, pricing and stock, storage and location.",
+      "startS": 121.12,
+      "endS": 123.007,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "The legacy Pricing and Tax and Commission and Service names are gone;",
+      "startS": 123.278,
+      "endS": 124.695,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "this is the layout you'll actually see on the floor.",
+      "startS": 124.992,
+      "endS": 131.498,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Start on Item Details.",
+      "startS": 131.92,
+      "endS": 133.507,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Eight read-only fields, mirroring the eight columns you just left.",
+      "startS": 134.085,
+      "endS": 137.632,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "The item's two IDs, its description, what it costs, what it sells for,",
+      "startS": 137.948,
+      "endS": 141.392,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "forty two units on hand, its type, and its vendor.",
+      "startS": 141.681,
+      "endS": 142.635,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "That is the ticket answer in one card.",
+      "startS": 142.988,
+      "endS": 144.344,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "What do we charge, and how many are left.",
+      "startS": 144.678,
+      "endS": 151.492,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Open the Pricing and Stock tab.",
+      "startS": 151.991,
+      "endS": 154.196,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Watch what changes.",
+      "startS": 154.196,
+      "endS": 155.177,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "The heading does.",
+      "startS": 155.177,
+      "endS": 156.158,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "The fields underneath do not.",
+      "startS": 156.158,
+      "endS": 157.794,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "The same eight facts render again, top to bottom.",
+      "startS": 157.794,
+      "endS": 161.059,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "That repetition is what this tenant actually shows today, and it is logged,",
+      "startS": 161.059,
+      "endS": 165.312,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "so do not hunt for pricing-only fields that are not there.",
+      "startS": 165.312,
+      "endS": 168.91,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "Then Storage and Location.",
+      "startS": 169.36,
+      "endS": 170.59,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Same pattern.",
+      "startS": 170.59,
+      "endS": 171.558,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "A new heading, the identical eight fields, and no bin, aisle, or site anywhere on the page.",
+      "startS": 171.558,
+      "endS": 176.784,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "So treat the tabs as navigation and learn the eight fields once.",
+      "startS": 176.784,
+      "endS": 181.359,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "If storage detail lands here on a later build, a future pass will pick it up.",
+      "startS": 181.359,
+      "endS": 186.55,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Change nothing, then click Back.",
+      "startS": 187.021,
+      "endS": 189.347,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "The detail page closes and drops you back on the list, the record exactly as you found it.",
+      "startS": 190.581,
+      "endS": 195.941,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "On a shared live tenant that discipline matters.",
+      "startS": 196.808,
+      "endS": 199.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "Reading answers the ticket, and Back guarantees you left no mark.",
+      "startS": 199.93,
+      "endS": 204.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "That's Inventory Items end to end.",
+      "startS": 204.573,
+      "endS": 206.257,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Counts and trends up top, eight columns across the list,",
+      "startS": 206.257,
+      "endS": 209.811,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "and a three-tab record behind every row.",
+      "startS": 209.811,
+      "endS": 211.776,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "You read all of it and change none of it,",
+      "startS": 211.776,
+      "endS": 214.914,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "which is exactly how a stock question should be answered.",
+      "startS": 214.914,
+      "endS": 217.721,
+      "timing": "proportional"
+    }
+  ]
+}

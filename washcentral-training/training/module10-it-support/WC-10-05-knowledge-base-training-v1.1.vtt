@@ -1,0 +1,222 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:04.154
+Open the IT and Support module and look at the left rail.
+
+p02
+00:00:04.154 --> 00:00:05.724
+Two groups organize it.
+
+p03
+00:00:05.724 --> 00:00:11.493
+Support sits at the top, holding the tickets, the help desk, and the alerts you work every day.
+
+p04
+00:00:11.493 --> 00:00:13.638
+Audit sits underneath, for the history questions.
+
+p05
+00:00:13.638 --> 00:00:16.968
+Today, two of those Support entries are the whole job.
+
+p06
+00:00:16.968 --> 00:00:17.887
+Let's find them.
+
+p07
+00:00:18.346 --> 00:00:19.544
+First, the Knowledge Base.
+
+p08
+00:00:19.544 --> 00:00:23.849
+It's in the Support group, tucked between the help desk and the alerts.
+
+p09
+00:00:23.849 --> 00:00:26.082
+Picture it as the team's memory.
+
+p10
+00:00:26.082 --> 00:00:32.405
+A tech works out a fix, writes it down once, and from then on the answer is a search away.
+
+p11
+00:00:32.405 --> 00:00:36.000
+Nobody has to solve the same problem from scratch a second time.
+
+p12
+00:00:36.457 --> 00:00:36.993
+Open it.
+
+p13
+00:00:37.963 --> 00:00:39.732
+Here's the honest part of this lesson.
+
+p14
+00:00:40.088 --> 00:00:43.083
+On the day we verified, the page did not load.
+
+p15
+00:00:43.398 --> 00:00:47.271
+It came back with a plain not-found error, a four oh four, and nothing else on the screen.
+
+p16
+00:00:47.472 --> 00:00:48.875
+So the article list, the way it's organized, the write-ups themselves,
+
+p17
+00:00:49.299 --> 00:00:54.952
+none of that can be shown to you yet.
+
+p18
+00:00:55.394 --> 00:00:57.087
+This is the reflex worth building.
+
+p19
+00:00:57.316 --> 00:01:01.011
+A page is missing, you record exactly that, and you flag it.
+
+p20
+00:01:01.380 --> 00:01:03.397
+You never paint in the blank from memory.
+
+p21
+00:01:04.024 --> 00:01:06.528
+Once it does render, here's why it earns your time.
+
+p22
+00:01:07.038 --> 00:01:10.344
+The Knowledge Base is where the how-to and troubleshooting write-ups live.
+
+p23
+00:01:10.833 --> 00:01:12.070
+The team norm is simple: close a ticket that taught you something reusable,
+
+p24
+00:01:12.356 --> 00:01:16.715
+and you document it here before you move on.
+
+p25
+00:01:17.154 --> 00:01:21.798
+The next tech inherits the answer in seconds instead of retracing your whole afternoon.
+
+p26
+00:01:22.371 --> 00:01:24.020
+Back to the rail.
+
+p27
+00:01:24.020 --> 00:01:26.270
+Find Training Requests, just under System Alerts.
+
+p28
+00:01:26.270 --> 00:01:28.424
+This is the client-training pipeline.
+
+p29
+00:01:28.424 --> 00:01:33.569
+Your team files into it and works out of it, so it runs in both directions.
+
+p30
+00:01:34.160 --> 00:01:34.610
+Open it.
+
+p31
+00:01:35.339 --> 00:01:36.784
+Same story as before.
+
+p32
+00:01:37.405 --> 00:01:41.906
+On verification day it returned the same not-found error and did not render.
+
+p33
+00:01:42.227 --> 00:01:44.992
+The counts, the request types, the columns, all parked until a live pass can confirm them.
+
+p34
+00:01:45.327 --> 00:01:47.967
+So you do the same thing you did a moment ago.
+
+p35
+00:01:48.265 --> 00:01:50.352
+Record the missing page.
+
+p36
+00:01:50.636 --> 00:01:56.607
+Resist the urge to rebuild it from an old screenshot in your head.
+
+p37
+00:01:56.607 --> 00:01:59.995
+What it's for, so you're ready when it comes back.
+
+p38
+00:01:59.995 --> 00:02:02.851
+Training Requests follows a client's ask from the first request,
+
+p39
+00:02:02.851 --> 00:02:05.136
+through scheduling, to a session that's actually done.
+
+p40
+00:02:05.136 --> 00:02:06.564
+You'll use it two ways.
+
+p41
+00:02:06.564 --> 00:02:09.626
+You file a request when a site asks for training,
+
+p42
+00:02:09.626 --> 00:02:13.203
+and you pick requests up when it's your turn to deliver.
+
+p43
+00:02:13.203 --> 00:02:14.484
+Now glance back at the header.
+
+p44
+00:02:14.987 --> 00:02:18.701
+Search and Ask Shyne stay pinned up here on every page.
+
+p45
+00:02:19.038 --> 00:02:21.981
+That matters most on a day exactly like this one.
+
+p46
+00:02:22.401 --> 00:02:26.835
+When a page won't open, control K still jumps you anywhere in the platform,
+
+p47
+00:02:27.121 --> 00:02:30.278
+and Shyne can answer a plain question while the page is down.
+
+p48
+00:02:30.737 --> 00:02:36.278
+One rule holds: confirm whatever Shyne tells you before you act on it.
+
+p49
+00:02:36.278 --> 00:02:37.258
+So, the recap.
+
+p50
+00:02:37.908 --> 00:02:43.945
+Knowledge Base and Training Requests both live right here, under Support, inside IT and Support.
+
+p51
+00:02:44.741 --> 00:02:49.062
+Today both came back empty, a four oh four, so their contents stay parked.
+
+p52
+00:02:49.776 --> 00:02:51.920
+The lesson was never the page you couldn't see.
+
+p53
+00:02:52.306 --> 00:02:53.749
+It's the habit underneath it.
+
+p54
+00:02:54.456 --> 00:02:56.768
+Find the destination, read its real state, and when it's missing, report it instead of guessing.
+
+p55
+00:02:57.100 --> 00:03:03.255
+That reflex is what keeps this training honest.
+

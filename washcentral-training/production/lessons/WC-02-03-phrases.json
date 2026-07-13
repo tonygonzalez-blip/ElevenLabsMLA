@@ -1,0 +1,128 @@
+{
+  "lesson": "WC-02-03",
+  "audioMaster": "training/module02-crm/WC-02-03-full-narration-v1.0.mp3",
+  "output": "WC-02-03-customer-edit-new-v1.1",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries into caption-sized pieces. Caption text is never rewritten, summarized, or reordered. Block windows are the measured onsets of each rendered block inside the joined master (normalized cross-correlation of each WC-02-03-sNN.mp3 against WC-02-03-full-narration-v1.0.mp3 at 8 kHz; s06 verified with a mid-block template, ncc 1.0); the theoretical audio+0.4 tail model ends at 148.48s against the ffprobe master duration of 148.114s (0.366s over) because the joined master uses ~0.36s inter-block gaps, so measured onsets are used for accurate phrase placement.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 14.48,
+      "phrases": [
+        { "id": "p01", "text": "Open any customer's profile and click Edit Customer." },
+        { "id": "p02", "text": "The same record opens ready to change, every field now live." },
+        { "id": "p03", "text": "Two buttons wait in the corner." },
+        { "id": "p04", "text": "One saves your work, one backs out." },
+        { "id": "p05", "text": "Today, we only back out." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 14.48,
+      "endS": 28.32,
+      "phrases": [
+        { "id": "p06", "text": "Before anything else, read the band across the top." },
+        { "id": "p07", "text": "The name, the plan, and a few status chips ride along from the profile." },
+        { "id": "p08", "text": "It is your proof of whose record you are in, so you never edit the wrong person by accident." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 28.32,
+      "endS": 44.48,
+      "phrases": [
+        { "id": "p09", "text": "Now the tabs." },
+        { "id": "p10", "text": "Six here, not the nine on the profile." },
+        { "id": "p11", "text": "The view is built for reading a customer;" },
+        { "id": "p12", "text": "this form is built for changing one, so the layout shifts." },
+        { "id": "p13", "text": "Messaging turns into Communication, Notes into Comments," },
+        { "id": "p14", "text": "and the read-only summaries fall away." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 44.48,
+      "endS": 59.36,
+      "phrases": [
+        { "id": "p15", "text": "Start on Contact, the first group." },
+        { "id": "p16", "text": "Name, company, gender, date of birth," },
+        { "id": "p17", "text": "plus two switches for house account and signature on file." },
+        { "id": "p18", "text": "This is the identity block, the details that decide how the customer shows up everywhere else." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 59.36,
+      "endS": 73.44,
+      "phrases": [
+        { "id": "p19", "text": "Next, the address fields." },
+        { "id": "p20", "text": "Street, city, state, zip, and country, with a second line for an apartment or suite." },
+        { "id": "p21", "text": "Keep these clean and the customer's mail, receipts, and location reports all line up." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 73.44,
+      "endS": 84.96,
+      "phrases": [
+        { "id": "p22", "text": "Below that, phone and email." },
+        { "id": "p23", "text": "Phone, mobile, fax, and email address." },
+        { "id": "p24", "text": "When a member says their texts or receipts are going nowhere," },
+        { "id": "p25", "text": "this is the block you check first." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 84.96,
+      "endS": 99.28,
+      "phrases": [
+        { "id": "p26", "text": "We changed nothing, so click Cancel." },
+        { "id": "p27", "text": "The form closes and drops you right back on the profile, untouched." },
+        { "id": "p28", "text": "That Save button would have written straight to a live account," },
+        { "id": "p29", "text": "so while you are learning, Cancel is the only way out." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 99.28,
+      "endS": 108.48,
+      "phrases": [
+        { "id": "p30", "text": "Head back to the customer list." },
+        { "id": "p31", "text": "Same database you started in." },
+        { "id": "p32", "text": "Up top sit the counts, and along the toolbar, the button that starts a brand new record." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 108.48,
+      "endS": 120.64,
+      "phrases": [
+        { "id": "p33", "text": "Click Add Customer." },
+        { "id": "p34", "text": "The form looks familiar because it is the same one, just empty." },
+        { "id": "p35", "text": "Same tabs, same fields, every box blank and waiting." },
+        { "id": "p36", "text": "This is where a walk-in becomes a member." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 120.64,
+      "endS": 133.52,
+      "phrases": [
+        { "id": "p37", "text": "Scan down the empty form." },
+        { "id": "p38", "text": "Personal details, address, phone and email, all in the same order as the edit screen." },
+        { "id": "p39", "text": "Learn the layout once and you know both, whether you are fixing a record or building one." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 133.52,
+      "endS": 148.114,
+      "phrases": [
+        { "id": "p40", "text": "We are only touring, so click Cancel again." },
+        { "id": "p41", "text": "No record is created, and nothing is left behind." },
+        { "id": "p42", "text": "Two forms, one template, and the same safe habit both times:" },
+        { "id": "p43", "text": "read everything, change nothing, leave by Cancel." }
+      ]
+    }
+  ]
+}

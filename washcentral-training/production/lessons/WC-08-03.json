@@ -1,0 +1,1596 @@
+{
+  "lesson": "WC-08-03",
+  "title": "Operations: Incident Reports",
+  "audioMaster": "training/module08-operations/WC-08-03-full-narration-v1.0.mp3",
+  "audioDurationS": 178.051,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/incident-reports.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "allReports": {
+      "selector": "aside.sidebar a[href=\"incident-reports.html\"]"
+    },
+    "irGroupLabel": {
+      "js": "[...document.querySelectorAll('aside .menu-group-lbl')].find(e=>/Incident Reports/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "greenHeader": {
+      "js": "[...document.querySelectorAll('strong')].find(e=>(e.textContent||'').trim()==='All Reports'&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "cardBreadcrumb": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/OPERATIONS.{1,3}INCIDENT REPORTS/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>320&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Incident Reports'&&e.getBoundingClientRect().x>320&&e.getBoundingClientRect().y>118&&e.getBoundingClientRect().y<146)",
+      "textRect": true
+    },
+    "cardCount": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='5 records'&&e.getBoundingClientRect().x>320&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thReport": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Report #$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thType": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Type$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Location$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDate": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "repCI": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[0]&&c[0].textContent.trim()==='IR-CI-0001'});return t?t.querySelectorAll('td')[0]:null})()"
+    },
+    "repEI": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[0]&&c[0].textContent.trim()==='IR-EI-0001'});return t?t.querySelectorAll('td')[0]:null})()"
+    },
+    "repP": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[0]&&c[0].textContent.trim()==='IR-P-0001'});return t?t.querySelectorAll('td')[0]:null})()"
+    },
+    "repV": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[0]&&c[0].textContent.trim()==='IR-V-0001'});return t?t.querySelectorAll('td')[0]:null})()"
+    },
+    "repWED": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[0]&&c[0].textContent.trim()==='IR-WED-0001'});return t?t.querySelectorAll('td')[0]:null})()"
+    },
+    "typeCI": {
+      "js": "[...document.querySelectorAll('table tbody td .a-pill')].find(e=>e.textContent.trim()==='Customer Injury'&&e.getBoundingClientRect().width>0)"
+    },
+    "typeEI": {
+      "js": "[...document.querySelectorAll('table tbody td .a-pill')].find(e=>e.textContent.trim()==='Employee Injury'&&e.getBoundingClientRect().width>0)"
+    },
+    "typeP": {
+      "js": "[...document.querySelectorAll('table tbody td .a-pill')].find(e=>e.textContent.trim()==='Property Damage'&&e.getBoundingClientRect().width>0)"
+    },
+    "typeV": {
+      "js": "[...document.querySelectorAll('table tbody td .a-pill')].find(e=>e.textContent.trim()==='Vehicle Damage'&&e.getBoundingClientRect().width>0)"
+    },
+    "typeWED": {
+      "js": "[...document.querySelectorAll('table tbody td .a-pill')].find(e=>e.textContent.trim()==='Wash Equipment Damage'&&e.getBoundingClientRect().width>0)"
+    },
+    "statusOpen": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')][0];return t?t.querySelectorAll('td')[4].querySelector('.a-pill'):null})()"
+    },
+    "statusV": {
+      "js": "[...document.querySelectorAll('table tbody td .a-pill')].find(e=>e.textContent.trim()==='Under Review'&&e.getBoundingClientRect().width>0)"
+    },
+    "locMLAS": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')][0];return t?t.querySelectorAll('td')[2]:null})()"
+    },
+    "locSSNB": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[2]&&c[2].textContent.trim()==='SSNB'});return t?t.querySelectorAll('td')[2]:null})()"
+    },
+    "dateCI": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')][0];return t?t.querySelectorAll('td')[3]:null})()"
+    },
+    "dateWED": {
+      "js": "(()=>{const t=[...document.querySelectorAll('table tbody tr')].find(r=>{const c=r.querySelectorAll('td');return c[0]&&c[0].textContent.trim()==='IR-WED-0001'});return t?t.querySelectorAll('td')[3]:null})()"
+    },
+    "searchBox": {
+      "selector": "#incident-reports-search"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>/^Filters/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBtn": {
+      "selector": "#incident-reports-search-btn"
+    },
+    "footer": {
+      "selector": ".pg-info"
+    },
+    "pager": {
+      "selector": ".pg-right"
+    },
+    "newReportBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn-primary')].find(e=>/\\+\\s*New Report/.test(e.textContent||'')&&!e.closest('aside')&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0).length>=5",
+    "onIncidentReports": "location.pathname.endsWith('/incident-reports.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "listLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/incident-reports.html')&&rows.length===5&&[...document.querySelectorAll('table thead th')].some(e=>/^Report #$/i.test((e.textContent||'').trim()))&&[...document.querySelectorAll('table thead th')].some(e=>/^Status$/i.test((e.textContent||'').trim()))&&/Showing 1.5 of 5 records/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch|Error loading/i.test((document.querySelector('table tbody')||{textContent:''}).textContent||'')})()",
+    "listStable": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/incident-reports.html')&&rows.length===5&&/Showing 1.5 of 5 records/.test(document.body.textContent||'')})()",
+    "typesPresent": "['Customer Injury','Employee Injury','Property Damage','Vehicle Damage','Wash Equipment Damage'].every(t=>[...document.querySelectorAll('table tbody td .a-pill')].some(e=>e.textContent.trim()===t))"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference expanded so the Operations INCIDENT REPORTS group and its All Reports link read with labels for the step-1 sweep. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: this container restart came up EXPANDED at 220px/label 'Hide panel' on one load and COLLAPSED at 1px/label 'Show panel' on an earlier load — the pref genuinely varies, which is why this is guarded by unless). Skipped when already expanded. The INCIDENT REPORTS group itself is not collapsible — no group-toggle preflight is needed."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onIncidentReports",
+      "note": "start page identity before capture (startUrl incident-reports.html)"
+    },
+    {
+      "op": "assert",
+      "at": -1.1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "listLoaded",
+      "note": "loaded: five report rows, Report #/Status headers, 'Showing 1-5 of 5 records', no agent-service error state"
+    },
+    {
+      "op": "assert",
+      "at": -0.5,
+      "predicate": "typesPresent",
+      "note": "all five report-type pills present (Customer/Employee Injury, Property/Vehicle/Wash Equipment Damage)"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 176,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "watch",
+      "key": "listHeld",
+      "from": 1,
+      "to": 176,
+      "predicate": "listStable",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "read-only proof: the Incident Reports list never mutates and never navigates for the entire lesson — still on incident-reports.html, still exactly 5 rows, footer still 'of 5 records'. Nothing is clicked; no report is opened, no incident filed, no status changed"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.3,
+      "from": [
+        400,
+        1079
+      ],
+      "to": {
+        "target": "allReports",
+        "offset": [
+          230,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): enter from the bottom edge and settle beside the Operations INCIDENT REPORTS -> All Reports link as 'This is where every damage claim and injury report lands'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.7,
+      "key": "sideNav",
+      "targets": [
+        "allReports"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 0.9,
+      "key": "cardHead",
+      "targets": [
+        "cardBreadcrumb",
+        "cardTitle",
+        "cardCount"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "theadRowRect",
+      "target": "theadRow"
+    },
+    {
+      "op": "move",
+      "at": 1.6,
+      "to": {
+        "target": "allReports",
+        "offset": [
+          230,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02): rest beside the active All Reports entry, never on the nav link (read-only browse; the row-link rows and All Reports are never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 4.66,
+      "to": {
+        "target": "cardBreadcrumb",
+        "offset": [
+          40,
+          -14
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03-p04): slow sidebar-to-header sweep up to the OPERATIONS INCIDENT REPORTS card header"
+    },
+    {
+      "op": "move",
+      "at": 8.61,
+      "to": {
+        "target": "cardCount",
+        "offset": [
+          120,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04-p05): rest beside the 5 records count in the card header"
+    },
+    {
+      "op": "move",
+      "at": 13.5,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "ease toward the table for the p05 tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 18.05,
+      "key": "ths",
+      "targets": [
+        "thReport",
+        "thType",
+        "thLocation",
+        "thDate",
+        "thStatus"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 18.16,
+      "to": {
+        "target": "thReport",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p06): approach the column-header row from above"
+    },
+    {
+      "op": "move",
+      "at": 19,
+      "to": {
+        "target": "thReport",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 20.47,
+      "to": {
+        "target": "thReport",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 (p07): quick left-to-right sweep naming the five headers in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 20.85,
+      "to": {
+        "target": "thType",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 21.05,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 21.2,
+      "to": {
+        "target": "thDate",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 21.5,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 24,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "ease off over the header band for the p08-p09 tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 30.75,
+      "key": "repCells",
+      "targets": [
+        "repCI",
+        "repEI",
+        "repP",
+        "repV",
+        "repWED"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 30.88,
+      "to": {
+        "target": "thReport",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p10): 'Look at the first column'"
+    },
+    {
+      "op": "move",
+      "at": 32.56,
+      "to": {
+        "target": "repCI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p11): slow vertical sweep down the REPORT # column past the IR- prefixes; camera 150%"
+    },
+    {
+      "op": "move",
+      "at": 33.6,
+      "to": {
+        "target": "repEI",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 34.9,
+      "to": {
+        "target": "repP",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 36.2,
+      "to": {
+        "target": "repV",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 37.68,
+      "to": {
+        "target": "repWED",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p13): rest on IR-WED-0001 for the 'tells you the kind of incident at a glance' tail"
+    },
+    {
+      "op": "move",
+      "at": 41.5,
+      "to": {
+        "point": [
+          480,
+          470
+        ]
+      },
+      "note": "ease under the column for the p13 tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 44.1,
+      "key": "typeChips",
+      "targets": [
+        "typeCI",
+        "typeEI",
+        "typeP",
+        "typeV",
+        "typeWED"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 44.22,
+      "to": {
+        "target": "typeCI",
+        "offset": [
+          0,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p14): approach the TYPE column for the memorize beat"
+    },
+    {
+      "op": "move",
+      "at": 48.05,
+      "to": {
+        "target": "typeCI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p16): Customer Injury is C-I"
+    },
+    {
+      "op": "move",
+      "at": 50.91,
+      "to": {
+        "target": "typeEI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p17): Employee Injury, E-I"
+    },
+    {
+      "op": "move",
+      "at": 53.27,
+      "to": {
+        "target": "typeP",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p18): Property Damage is P"
+    },
+    {
+      "op": "move",
+      "at": 54.6,
+      "to": {
+        "target": "typeV",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p19): Vehicle Damage, V"
+    },
+    {
+      "op": "move",
+      "at": 55.67,
+      "to": {
+        "target": "typeWED",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p20): wash equipment damage carries W-E-D"
+    },
+    {
+      "op": "move",
+      "at": 57.54,
+      "to": {
+        "point": [
+          700,
+          375
+        ]
+      },
+      "note": "step 4 (p21): ease across the five chips, 'Every incident you log is one of these five'"
+    },
+    {
+      "op": "log-rects",
+      "at": 65.8,
+      "key": "statusChips",
+      "targets": [
+        "statusOpen",
+        "statusV"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 65.91,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p22): 'Over on the right, the status'; camera 150%"
+    },
+    {
+      "op": "move",
+      "at": 68.26,
+      "to": {
+        "target": "statusOpen",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p23): most reports sit at Open"
+    },
+    {
+      "op": "move",
+      "at": 69.77,
+      "to": {
+        "target": "statusV",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p24): the one Under Review (IR-V-0001)"
+    },
+    {
+      "op": "move",
+      "at": 74.46,
+      "to": {
+        "target": "statusV",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 5 (p25-p26): hold on the Under Review chip for the lifecycle tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 78.7,
+      "key": "locCells",
+      "targets": [
+        "locMLAS",
+        "locSSNB"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 78.8,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p27): 'Third column, the location code'"
+    },
+    {
+      "op": "move",
+      "at": 80.15,
+      "to": {
+        "target": "locMLAS",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p28): each report tagged to a site code (MLAS)"
+    },
+    {
+      "op": "move",
+      "at": 83.4,
+      "to": {
+        "target": "locSSNB",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p29): the distinct SSNB site on the Wash Equipment Damage row"
+    },
+    {
+      "op": "move",
+      "at": 86.69,
+      "to": {
+        "target": "locSSNB",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 6 (p30): hold for the support-call tail (site codes only; no personal or manager names are pointed at)"
+    },
+    {
+      "op": "log-rects",
+      "at": 91.55,
+      "key": "dateRects",
+      "targets": [
+        "dateCI",
+        "dateWED"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 91.68,
+      "to": {
+        "target": "thDate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p31): 'Then the date'"
+    },
+    {
+      "op": "move",
+      "at": 93.38,
+      "to": {
+        "target": "dateCI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p32-p33): year-first date cell (2026-06-28); camera 150% on one date cell"
+    },
+    {
+      "op": "move",
+      "at": 96.65,
+      "to": {
+        "target": "dateWED",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p34): the day the incident occurred (2026-07-01)"
+    },
+    {
+      "op": "move",
+      "at": 100,
+      "to": {
+        "target": "dateCI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "settle on the first date cell for the tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 103.95,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "move",
+      "at": 104.08,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p35): approach the search box from above"
+    },
+    {
+      "op": "move",
+      "at": 107.5,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 8 (p36): hover the 'Search incident reports...' placeholder; camera 150%; never typed in (read-only take)"
+    },
+    {
+      "op": "move",
+      "at": 113.74,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 8 (p37): hold on the box for the fastest-way-in tail"
+    },
+    {
+      "op": "log-rects",
+      "at": 117.7,
+      "key": "toolbarBtns",
+      "targets": [
+        "filtersBtn",
+        "searchBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 117.84,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p38): approach the two tools beside the box"
+    },
+    {
+      "op": "move",
+      "at": 120.42,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p39): hover Filters (never opened — the filter options are out of scope)"
+    },
+    {
+      "op": "move",
+      "at": 122,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p39): hover the Search button (never clicked — running a query is out of scope on a read-only take)"
+    },
+    {
+      "op": "move",
+      "at": 124,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          24
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p40): rest below the tools for 'not stepping through the filter choices here'"
+    },
+    {
+      "op": "log-rects",
+      "at": 128.35,
+      "key": "footerBits",
+      "targets": [
+        "footer",
+        "pager"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 128.48,
+      "to": {
+        "target": "footer",
+        "offset": [
+          0,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p41): approach the pagination footer"
+    },
+    {
+      "op": "move",
+      "at": 130.49,
+      "to": {
+        "target": "footer",
+        "offset": [
+          60,
+          0
+        ]
+      },
+      "note": "step 10 (p42): 'Showing 1-5 of 5 records, on a single page'"
+    },
+    {
+      "op": "move",
+      "at": 134.95,
+      "to": {
+        "target": "pager",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p43): the page control arrows; never clicked (one page of five)"
+    },
+    {
+      "op": "log-rect",
+      "at": 139.7,
+      "key": "newReportRect",
+      "target": "newReportBtn"
+    },
+    {
+      "op": "move",
+      "at": 139.84,
+      "to": {
+        "target": "newReportBtn",
+        "offset": [
+          -70,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p44): approach BESIDE + New Report (top-right of the card)"
+    },
+    {
+      "op": "move",
+      "at": 142.16,
+      "to": {
+        "target": "newReportBtn",
+        "offset": [
+          -70,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p45): rest beside + New Report while the red do-not-click ring marks it; the button is never approached for a press"
+    },
+    {
+      "op": "move",
+      "at": 144.64,
+      "to": {
+        "target": "newReportBtn",
+        "offset": [
+          -70,
+          22
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p46) GUARDRAIL / RESIDUAL R1: locked narration says 'On camera we open it to show the choices, then cancel straight back out', but + New Report navigates to incident-reports-new.html (a create flow on a live shared tenant). Safety is browse-and-point only, so the form is NOT opened; the cursor holds beside the button under the red ring and the choices are never revealed"
+    },
+    {
+      "op": "move",
+      "at": 147.29,
+      "to": {
+        "target": "newReportBtn",
+        "offset": [
+          -70,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p47): 'We file nothing today' — held beside the guardrail; nothing opened or submitted"
+    },
+    {
+      "op": "move",
+      "at": 153.28,
+      "to": {
+        "point": [
+          960,
+          540
+        ]
+      },
+      "note": "step 12 (p48): pull wide, 'So the incident log, in one screen'"
+    },
+    {
+      "op": "move",
+      "at": 156.15,
+      "to": {
+        "target": "typeCI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p49): recap the five report types by their codes"
+    },
+    {
+      "op": "move",
+      "at": 157.6,
+      "to": {
+        "target": "typeWED",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p49): sweep the type column"
+    },
+    {
+      "op": "move",
+      "at": 159.1,
+      "to": {
+        "target": "statusV",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p50): 'A status that shows what is still open'"
+    },
+    {
+      "op": "move",
+      "at": 161.48,
+      "to": {
+        "point": [
+          900,
+          220
+        ]
+      },
+      "note": "step 12 (p51): 'Search and filters for when the list runs long'"
+    },
+    {
+      "op": "move",
+      "at": 164.52,
+      "to": {
+        "target": "typeV",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p52): a scratched car is Vehicle Damage"
+    },
+    {
+      "op": "move",
+      "at": 165.76,
+      "to": {
+        "target": "typeEI",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p53): an employee who slips is Employee Injury"
+    },
+    {
+      "op": "move",
+      "at": 173.03,
+      "to": {
+        "point": [
+          700,
+          375
+        ]
+      },
+      "note": "step 12 (p54): ease across the types for 'Learn the five types now'"
+    },
+    {
+      "op": "move",
+      "at": 176,
+      "to": {
+        "point": [
+          1520,
+          930
+        ]
+      },
+      "note": "final park, clear of content and captions, as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 176.6,
+      "predicate": "onIncidentReports",
+      "note": "end state: still on Incident Reports, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 177.4,
+      "predicate": "listLoaded",
+      "note": "list intact: same five rows, headers, 'of 5 records' — nothing created, edited, filed, or deleted; no report opened"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "sideNav.allReports",
+        "place": "right",
+        "from": 1.6,
+        "to": 13
+      },
+      {
+        "n": 2,
+        "anchor": "theadRowRect",
+        "place": "below-left",
+        "from": 18.6,
+        "to": 30.4
+      },
+      {
+        "n": 3,
+        "anchor": "repCells.repCI",
+        "place": "right",
+        "from": 31.2,
+        "to": 43.7
+      },
+      {
+        "n": 4,
+        "anchor": "typeChips.typeCI",
+        "place": "right",
+        "from": 44.4,
+        "to": 65.4
+      },
+      {
+        "n": 5,
+        "anchor": "statusChips.statusV",
+        "place": "left",
+        "from": 66.2,
+        "to": 78.4
+      },
+      {
+        "n": 6,
+        "anchor": "locCells.locSSNB",
+        "place": "left",
+        "from": 79.2,
+        "to": 91.2
+      },
+      {
+        "n": 7,
+        "anchor": "dateRects.dateCI",
+        "place": "below-left",
+        "from": 91.9,
+        "to": 103.6
+      },
+      {
+        "n": 8,
+        "anchor": "searchBoxRect",
+        "place": "below-left",
+        "from": 104.3,
+        "to": 117.4
+      },
+      {
+        "n": 9,
+        "anchor": "toolbarBtns.filtersBtn",
+        "place": "left",
+        "from": 118.2,
+        "to": 128
+      },
+      {
+        "n": 10,
+        "anchor": "footerBits.footer",
+        "place": "left-top",
+        "from": 128.7,
+        "to": 139.4
+      },
+      {
+        "n": 11,
+        "anchor": "newReportRect",
+        "place": "left",
+        "from": 140.1,
+        "to": 153
+      },
+      {
+        "n": 12,
+        "anchor": "typeChips.typeCI",
+        "place": "right",
+        "from": 156.2,
+        "to": 176
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideNav.allReports",
+        "from": 1.6,
+        "to": 4.66,
+        "note": "step 1 (p01-p02): the All Reports entry in the INCIDENT REPORTS group"
+      },
+      {
+        "anchor": "cardHead.cardCount",
+        "from": 5,
+        "to": 13,
+        "note": "step 1 (p03-p05): the 5 records count in the card header"
+      },
+      {
+        "anchor": "ths.thReport",
+        "from": 20.47,
+        "to": 20.85,
+        "note": "step 2 (p07): headers named left to right in spoken order"
+      },
+      {
+        "anchor": "ths.thType",
+        "from": 20.85,
+        "to": 21.05
+      },
+      {
+        "anchor": "ths.thLocation",
+        "from": 21.05,
+        "to": 21.2
+      },
+      {
+        "anchor": "ths.thDate",
+        "from": 21.2,
+        "to": 21.5
+      },
+      {
+        "anchor": "ths.thStatus",
+        "from": 21.5,
+        "to": 23.8
+      },
+      {
+        "anchor": "repCells.repCI",
+        "from": 32.56,
+        "to": 33.6,
+        "note": "step 3 (p11-p13): the IR- prefixes down the REPORT # column"
+      },
+      {
+        "anchor": "repCells.repEI",
+        "from": 33.6,
+        "to": 34.9
+      },
+      {
+        "anchor": "repCells.repP",
+        "from": 34.9,
+        "to": 36.2
+      },
+      {
+        "anchor": "repCells.repV",
+        "from": 36.2,
+        "to": 37.68
+      },
+      {
+        "anchor": "repCells.repWED",
+        "from": 37.68,
+        "to": 43.5
+      },
+      {
+        "anchor": "typeChips.typeCI",
+        "from": 48.05,
+        "to": 50.9,
+        "note": "step 4 (p16): Customer Injury / C-I"
+      },
+      {
+        "anchor": "typeChips.typeEI",
+        "from": 50.91,
+        "to": 53.2,
+        "note": "step 4 (p17): Employee Injury / E-I"
+      },
+      {
+        "anchor": "typeChips.typeP",
+        "from": 53.27,
+        "to": 54.55,
+        "note": "step 4 (p18): Property Damage / P"
+      },
+      {
+        "anchor": "typeChips.typeV",
+        "from": 54.6,
+        "to": 55.6,
+        "note": "step 4 (p19): Vehicle Damage / V"
+      },
+      {
+        "anchor": "typeChips.typeWED",
+        "from": 55.67,
+        "to": 57.5,
+        "note": "step 4 (p20): Wash Equipment Damage / W-E-D"
+      },
+      {
+        "anchor": "statusChips.statusOpen",
+        "from": 68.26,
+        "to": 69.7,
+        "note": "step 5 (p23): the Open status"
+      },
+      {
+        "anchor": "statusChips.statusV",
+        "from": 69.77,
+        "to": 78.4,
+        "note": "step 5 (p24-p26): the one Under Review, its place in the lifecycle"
+      },
+      {
+        "anchor": "locCells.locMLAS",
+        "from": 80.15,
+        "to": 83.4,
+        "note": "step 6 (p28): the MLAS site code"
+      },
+      {
+        "anchor": "locCells.locSSNB",
+        "from": 83.4,
+        "to": 91.2,
+        "note": "step 6 (p29-p30): the distinct SSNB site"
+      },
+      {
+        "anchor": "dateRects.dateCI",
+        "from": 93.38,
+        "to": 103.5,
+        "note": "step 7 (p32-p34): the year-first date format"
+      },
+      {
+        "anchor": "searchBoxRect",
+        "from": 107.5,
+        "to": 117.4,
+        "note": "step 8 (p36-p37): the Search incident reports box (not typed in)"
+      },
+      {
+        "anchor": "toolbarBtns.filtersBtn",
+        "from": 120.42,
+        "to": 121.9,
+        "note": "step 9 (p39): Filters (located, not opened)"
+      },
+      {
+        "anchor": "toolbarBtns.searchBtn",
+        "from": 121.9,
+        "to": 127.8,
+        "note": "step 9 (p39): the Search button (located, not clicked)"
+      },
+      {
+        "anchor": "footerBits.footer",
+        "from": 130.49,
+        "to": 134.9,
+        "note": "step 10 (p42): Showing 1-5 of 5 records"
+      },
+      {
+        "anchor": "footerBits.pager",
+        "from": 134.95,
+        "to": 139.4,
+        "note": "step 10 (p43): the page arrows"
+      },
+      {
+        "anchor": "newReportRect",
+        "from": 140.1,
+        "to": 153,
+        "color": "#dc2626",
+        "note": "step 11 do-not-click guardrail: + New Report starts a new incident (navigates to incident-reports-new.html) — located and ringed red, never clicked or opened. See RESIDUAL R1: locked narration opens/cancels the form; safety keeps it closed"
+      },
+      {
+        "anchor": "typeChips.typeV",
+        "from": 164.52,
+        "to": 165.7,
+        "note": "step 12 (p52): scratched car = Vehicle Damage"
+      },
+      {
+        "anchor": "typeChips.typeEI",
+        "from": 165.76,
+        "to": 172,
+        "note": "step 12 (p53): employee who slips = Employee Injury"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1,
+        "z": 1.15,
+        "cx": 330,
+        "cy": 250,
+        "ease": true,
+        "note": "step 1: sidebar All Reports link + the card header, both readable"
+      },
+      {
+        "t": 17.6,
+        "z": 1.15,
+        "cx": 330,
+        "cy": 250
+      },
+      {
+        "t": 18,
+        "z": 1.22,
+        "cx": 940,
+        "cy": 262,
+        "ease": true,
+        "note": "step 2: the five column headers"
+      },
+      {
+        "t": 30.4,
+        "z": 1.22,
+        "cx": 940,
+        "cy": 262
+      },
+      {
+        "t": 30.9,
+        "z": 1.5,
+        "cx": 470,
+        "cy": 375,
+        "ease": true,
+        "note": "step 3: 150% on the REPORT # column and its IR- prefixes (shot list)"
+      },
+      {
+        "t": 43.7,
+        "z": 1.5,
+        "cx": 470,
+        "cy": 375
+      },
+      {
+        "t": 44.2,
+        "z": 1.32,
+        "cx": 710,
+        "cy": 372,
+        "ease": true,
+        "note": "step 4: the TYPE column, all five chips in frame for the memorize beat"
+      },
+      {
+        "t": 65.4,
+        "z": 1.32,
+        "cx": 710,
+        "cy": 372
+      },
+      {
+        "t": 65.9,
+        "z": 1.5,
+        "cx": 1645,
+        "cy": 372,
+        "ease": true,
+        "note": "step 5: 150% on the STATUS column, Under Review vs Open (shot list)"
+      },
+      {
+        "t": 78.4,
+        "z": 1.5,
+        "cx": 1645,
+        "cy": 372
+      },
+      {
+        "t": 78.8,
+        "z": 1.35,
+        "cx": 1160,
+        "cy": 372,
+        "ease": true,
+        "note": "step 6: the LOCATION column, MLAS vs SSNB"
+      },
+      {
+        "t": 91.2,
+        "z": 1.35,
+        "cx": 1160,
+        "cy": 372
+      },
+      {
+        "t": 91.7,
+        "z": 1.5,
+        "cx": 1400,
+        "cy": 300,
+        "ease": true,
+        "note": "step 7: 150% on a single DATE cell (shot list)"
+      },
+      {
+        "t": 103.6,
+        "z": 1.5,
+        "cx": 1400,
+        "cy": 300
+      },
+      {
+        "t": 104.1,
+        "z": 1.5,
+        "cx": 720,
+        "cy": 205,
+        "ease": true,
+        "note": "step 8: 150% on the Search incident reports box (shot list)"
+      },
+      {
+        "t": 117.4,
+        "z": 1.5,
+        "cx": 720,
+        "cy": 205
+      },
+      {
+        "t": 117.9,
+        "z": 1.4,
+        "cx": 1760,
+        "cy": 205,
+        "ease": true,
+        "note": "step 9: the Filters and Search buttons"
+      },
+      {
+        "t": 128,
+        "z": 1.4,
+        "cx": 1760,
+        "cy": 205
+      },
+      {
+        "t": 128.5,
+        "z": 1.16,
+        "cx": 1080,
+        "cy": 500,
+        "ease": true,
+        "note": "step 10: the pagination footer, counter and arrows"
+      },
+      {
+        "t": 139.4,
+        "z": 1.16,
+        "cx": 1080,
+        "cy": 500
+      },
+      {
+        "t": 139.9,
+        "z": 1.5,
+        "cx": 1790,
+        "cy": 135,
+        "ease": true,
+        "note": "step 11: 150% on the + New Report guardrail (top-right of the card)"
+      },
+      {
+        "t": 153,
+        "z": 1.5,
+        "cx": 1790,
+        "cy": 135
+      },
+      {
+        "t": 153.3,
+        "z": 1.05,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the recap"
+      },
+      {
+        "t": 156,
+        "z": 1.16,
+        "cx": 960,
+        "cy": 375,
+        "ease": true,
+        "note": "step 12: gentle recap framing across the whole list"
+      },
+      {
+        "t": 172,
+        "z": 1.16,
+        "cx": 960,
+        "cy": 375
+      },
+      {
+        "t": 173.5,
+        "z": 1.05,
+        "cx": 960,
+        "cy": 430,
+        "ease": true,
+        "note": "ease wide for the close"
+      },
+      {
+        "t": 176.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the completion card"
+      },
+      {
+        "t": 178.051,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Incident Reports — Complete",
+      "from": 176.25,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 175.95
+  },
+  "output": "WC-08-03-incident-reports-v1.1",
+  "orderedMentions": [
+    "Report #",
+    "Type",
+    "Location",
+    "Date",
+    "Status",
+    "Customer Injury",
+    "Employee Injury",
+    "Property Damage",
+    "Vehicle Damage",
+    "Wash Equipment Damage",
+    "Open",
+    "Under Review",
+    "Search incident reports…",
+    "Filters ▾",
+    "Search",
+    "+ New Report"
+  ],
+  "neverClick": [
+    "\\+ ?new report",
+    "new report",
+    "new incident",
+    "\\breport\\b",
+    "\\bfile\\b",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "edit report",
+    "delete",
+    "yes, delete",
+    "\\bsave\\b",
+    "save changes",
+    "submit",
+    "assign",
+    "resolve",
+    "\\bclose\\b",
+    "escalate",
+    "\\bsend\\b",
+    "change status",
+    "\\bstatus\\b",
+    "filters",
+    "search incident reports",
+    "\\bsearch\\b",
+    "ask shyne",
+    "logout",
+    "log out"
+  ]
+}

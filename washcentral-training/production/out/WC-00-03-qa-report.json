@@ -162,7 +162,7 @@
       "id": 27,
       "name": "no login screen",
       "pass": true,
-      "detail": "flow starts and ends on command-center"
+      "detail": "flow never touches a sign-in screen (start page is a signed-in app page, not login.html)"
     },
     {
       "id": 28,

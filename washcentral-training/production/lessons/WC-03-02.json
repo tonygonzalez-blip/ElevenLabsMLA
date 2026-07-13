@@ -1,0 +1,508 @@
+{
+  "lesson": "WC-03-02",
+  "title": "Ticket View (Sales / Transactions)",
+  "audioMaster": "training/module03-sales/WC-03-02-full-narration-v1.0.mp3",
+  "audioDurationS": 230.348,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/sales-transactions.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thTicket": {
+      "text": "Ticket #",
+      "scope": "table thead th"
+    },
+    "thDate": {
+      "text": "Date/Time",
+      "scope": "table thead th"
+    },
+    "thTotal": {
+      "text": "Total",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thTender": {
+      "text": "Tender Type",
+      "scope": "table thead th"
+    },
+    "thCustomer": {
+      "text": "Customer",
+      "scope": "table thead th"
+    },
+    "ticketRow": {
+      "js": "document.querySelector('table tbody tr.row-link')"
+    },
+    "ticketLink": {
+      "js": "document.querySelector('table tbody tr a')"
+    },
+    "rowStatusCell": {
+      "js": "(()=>{const tr=document.querySelector('table tbody tr');if(!tr)return null;const tds=tr.querySelectorAll('td');return tds.length>=6?tds[5]:null})()"
+    },
+    "heroTop": {
+      "selector": ".a-hero-top"
+    },
+    "nameRow": {
+      "selector": ".a-name-row"
+    },
+    "titleName": {
+      "selector": ".a-name",
+      "textRect": true
+    },
+    "metaLine": {
+      "js": "[...document.querySelectorAll('.a-meta span')].find(e=>e.children.length===0&&/^ID:\\s*\\d+/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/Back to Tickets/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "refundBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn-danger')].find(e=>(e.textContent||'').trim()==='Refund'&&e.getBoundingClientRect().width>0)"
+    },
+    "band": {
+      "selector": ".a-metrics"
+    },
+    "tile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "tile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "tile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "tile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "tabNav": {
+      "selector": ".a-tab-nav"
+    },
+    "tabMain": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Main')"
+    },
+    "tabDetails": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Details')"
+    },
+    "tabPayments": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Payments')"
+    },
+    "tabRefunds": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Refunds')"
+    },
+    "tabNotes": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Notes')"
+    },
+    "grpTicketInfo": {
+      "js": "[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()))"
+    },
+    "grpFinancial": {
+      "js": "[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()))"
+    },
+    "grpStaff": {
+      "js": "[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Staff & Equipment$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()))"
+    },
+    "grpCustomer": {
+      "js": "[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Customer & Vehicle$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()))"
+    },
+    "fldId": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='ID')})()"
+    },
+    "fldTicketNum": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Ticket Number')})()"
+    },
+    "fldDateIn": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Date/Time In')})()"
+    },
+    "fldLocation": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Location')})()"
+    },
+    "fldStatus": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Status')})()"
+    },
+    "fldPayType": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Ticket Information$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Payment Type')})()"
+    },
+    "fldTotal": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Total')})()"
+    },
+    "fldTaxes": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Taxes')})()"
+    },
+    "fldTendered": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Tendered')})()"
+    },
+    "fldChangeDue": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Change Due')})()"
+    },
+    "fldReversed": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Reversed')})()"
+    },
+    "fldHouseAcct": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Financial Summary$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='House Account')})()"
+    },
+    "fldCashier": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Staff & Equipment$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Cashier')})()"
+    },
+    "fldCashTerm": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Staff & Equipment$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Cashier Terminal')})()"
+    },
+    "fldGreetTerm": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Staff & Equipment$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Greeter Terminal')})()"
+    },
+    "fldShift": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Staff & Equipment$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Shift')})()"
+    },
+    "fldCustomer": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Customer & Vehicle$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Customer')})()"
+    },
+    "fldVehicle": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Customer & Vehicle$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Vehicle')})()"
+    },
+    "fldPlate": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Customer & Vehicle$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Vehicle Plate')})()"
+    },
+    "fldVehState": {
+      "js": "(()=>{const g=[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Customer & Vehicle$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()));if(!g)return null;return [...g.querySelectorAll('.a-fi')].find(f=>(f.querySelector('.a-fi-lbl')?.textContent||'').trim()==='Vehicle State')})()"
+    },
+    "refundPanel": {
+      "js": "[...document.querySelectorAll('.a-group')].find(g=>g.getBoundingClientRect().width>0&&/^Refund History$/i.test((g.querySelector('.a-group-hdr')?.textContent||'').trim()))"
+    },
+    "refundThead": {
+      "js": "[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "rthDate": {
+      "js": "(()=>{const h=[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0);if(!h)return null;return [...h.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Date')})()"
+    },
+    "rthRefundId": {
+      "js": "(()=>{const h=[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0);if(!h)return null;return [...h.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Refund ID')})()"
+    },
+    "rthAmount": {
+      "js": "(()=>{const h=[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0);if(!h)return null;return [...h.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Amount')})()"
+    },
+    "rthReason": {
+      "js": "(()=>{const h=[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0);if(!h)return null;return [...h.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Reason')})()"
+    },
+    "rthProcessedBy": {
+      "js": "(()=>{const h=[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0);if(!h)return null;return [...h.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Processed By')})()"
+    },
+    "rthStatus": {
+      "js": "(()=>{const h=[...document.querySelectorAll('table thead tr')].find(e=>e.getBoundingClientRect().width>0);if(!h)return null;return [...h.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Status')})()"
+    },
+    "emptyRow": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(e=>e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "onTickets": "location.pathname.endsWith('/sales-transactions.html')",
+    "onTicketView": "location.pathname.endsWith('/sales-ticket-view.html')&&/[?&]ticket=\\d+/.test(location.search)",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "startReady": "document.readyState==='complete'&&!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')&&document.querySelectorAll('aside.sidebar a').length===9&&document.querySelectorAll('.a-metric').length>=4&&!!document.querySelector('table tbody tr.row-link')&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "ticketReady": "document.readyState==='complete'&&!!document.querySelector('.a-name')&&document.querySelectorAll('.a-tab-btn').length>=5&&document.querySelectorAll('.a-metric').length>=4&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "mainShown": "[...document.querySelectorAll('.a-group-hdr')].some(e=>/^Ticket Information$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "refundsShown": "(document.querySelector('.a-tab-btn.active')?.textContent||'').trim()==='Refunds'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/^Refund History$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+    "listReady": "document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&!!document.querySelector('table tbody tr.row-link')&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the Sales sidebar expanded (persisted pref washcentral-sidebar-collapsed-v5; same control both ways); skipped when already expanded. Probe-verified July 11: one toggle click flips app.sidebar-collapsed and the state persists across the row-click nav and Back to Tickets."
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onTickets", "note": "start page identity before capture" },
+    { "op": "assert", "at": -0.9, "predicate": "startReady", "note": "list loaded, sidebar expanded (9 Sales pages), rows present, top of page, no skeletons" },
+    { "op": "pointer-enter", "at": 0.45, "from": [2, 880], "to": { "target": "breadcrumb", "offset": [70, 34], "outside": true }, "note": "enter from the left edge, settle under the Transactions crumb during p01" },
+    { "op": "log-rect", "at": 1.0, "key": "breadcrumbRect", "target": "breadcrumb", "requireStableMs": 260 },
+    { "op": "log-rect", "at": 1.3, "key": "theadRect", "target": "theadRow", "requireStableMs": 240 },
+    { "op": "log-rects", "at": 1.6, "key": "cols", "targets": ["thLocation", "thTicket", "thDate", "thTotal", "thStatus", "thTender", "thCustomer"] },
+    { "op": "log-rect", "at": 1.85, "key": "firstRowRect", "target": "ticketRow" },
+    { "op": "log-rect", "at": 2.05, "key": "ticketLinkRect", "target": "ticketLink" },
+    { "op": "log-rect", "at": 2.25, "key": "statusCellRect", "target": "rowStatusCell" },
+    { "op": "move", "at": 2.5, "to": { "target": "ticketRow", "offset": [-300, 0] }, "note": "step 1: 'one row per ticket' (p02) — settle on the first row" },
+    { "op": "move", "at": 4.15, "to": { "target": "thLocation", "offset": [0, 0] }, "note": "step 1: 'location, total, status, and tender' (p03) — header sweep in spoken order" },
+    { "op": "move", "at": 5.35, "to": { "target": "thTotal", "offset": [0, 0] } },
+    { "op": "move", "at": 6.35, "to": { "target": "thStatus", "offset": [0, 0] } },
+    { "op": "move", "at": 7.25, "to": { "target": "thTender", "offset": [0, 0] } },
+    { "op": "move", "at": 8.85, "to": { "target": "rowStatusCell", "offset": [0, 0] }, "note": "step 1: 'Status is worth a glance on the way in' (p04) — the row's live status value" },
+    { "op": "move", "at": 11.45, "to": { "point": [1898, 650] }, "note": "park in the right margin for p05-p06 (filter before you open)" },
+    { "op": "move", "at": 19.87, "to": { "target": "ticketRow", "offset": [0, 0] }, "note": "step 2 cue 'Click the row.' (p07) — approach starts at the cue; row center sits in the inert Date/Time area, the whole tr is the row-link" },
+    { "op": "click", "target": "ticketRow", "pressAt": 21.05, "hoverMs": 380, "postcondition": "onTicketView", "timeoutMs": 9000, "nav": true, "note": "step 2: GENUINE on-camera row click opens sales-ticket-view.html?ticket=<id> (probe-verified: real mouse click on tr.row-link navigated to ?ticket=1501159); press lands inside p07's trailing break" },
+    { "op": "wait-stable", "afterNav": true, "key": "ticketStable", "predicate": "ticketReady", "settleMs": 700, "timeoutMs": 9000 },
+    { "op": "assert", "at": 22.55, "predicate": "onTicketView", "note": "the address now carries ?ticket=<id> — page identity for the deep-link talk" },
+    { "op": "log-rects", "at": 22.75, "key": "hdr", "targets": ["heroTop", "nameRow", "titleName", "metaLine", "backBtn", "refundBtn", "band", "tile1", "tile2", "tile3", "tile4", "tabNav"] },
+    { "op": "move", "at": 23.3, "to": { "target": "metaLine", "offset": [0, 28], "outside": true }, "note": "step 2: settle under the ID line while p08-p11 explain the deep link (address bar itself is browser chrome, outside the page capture — RESIDUAL R1)" },
+    { "op": "watch", "key": "mainHold", "from": 23.6, "to": 171.4, "predicate": "mainShown", "everyMs": 600, "mustHold": true, "note": "Main tab must stay active through steps 2-9" },
+    { "op": "move", "at": 36.1, "to": { "target": "titleName", "offset": [0, 0] }, "note": "step 3: 'The ticket number is the title' (p13)" },
+    { "op": "move", "at": 39.75, "to": { "target": "metaLine", "offset": [-80, 0] }, "note": "step 3: '...with the I-D, the location' (p13) — the meta line beneath" },
+    { "op": "move", "at": 44.05, "to": { "target": "metaLine", "offset": [115, 0] }, "note": "step 3: 'That timestamp matters' (p14-p15) — the timestamp end of the line" },
+    { "op": "move", "at": 51.6, "to": { "point": [1898, 300] }, "note": "park for p16 (confirm the transaction)" },
+    { "op": "move", "at": 57.0, "to": { "target": "backBtn", "offset": [0, 0] }, "note": "step 4: 'Top-right, two buttons' (p17) then 'Back to Tickets takes you home' (p18)" },
+    { "op": "move", "at": 60.7, "to": { "target": "refundBtn", "offset": [-8, 42], "outside": true }, "note": "step 4: 'The red one is Refund, and we do not touch it' (p19) — hover NEAR the button, never on it, never clicked (PARKED #5)" },
+    { "op": "move", "at": 71.95, "to": { "target": "refundBtn", "offset": [-64, 46], "outside": true }, "note": "step 4: 'Read the button, leave it alone' (p22) — stay clear through the guardrail" },
+    { "op": "move", "at": 74.25, "to": { "target": "tile1", "offset": [0, 20] }, "note": "step 5: 'Under the header, four quick figures' (p23)" },
+    { "op": "move", "at": 77.9, "to": { "target": "tile2", "offset": [0, 20] }, "note": "step 5: p24 sweep in spoken order — total, payments, status, payment type" },
+    { "op": "move", "at": 78.7, "to": { "target": "tile3", "offset": [0, 20] } },
+    { "op": "move", "at": 79.5, "to": { "target": "tile4", "offset": [0, 20] } },
+    { "op": "move", "at": 81.5, "to": { "target": "band", "offset": [0, 64], "outside": true }, "note": "step 5: 'that band answers the question' (p25) — rest below the band" },
+    { "op": "move", "at": 87.1, "to": { "target": "tile1", "offset": [0, 20] }, "note": "step 5: 'a mismatch between total and payments' (p27) — the pair" },
+    { "op": "move", "at": 88.3, "to": { "target": "tile2", "offset": [0, 20] } },
+    { "op": "move", "at": 90.6, "to": { "point": [1898, 440] } },
+    { "op": "move", "at": 94.15, "to": { "target": "tabMain", "offset": [0, 0] }, "note": "step 6: 'Now the tabs' (p28) — Main is active by default, no click needed" },
+    { "op": "log-rects", "at": 94.45, "key": "tabs", "targets": ["tabMain", "tabDetails", "tabPayments", "tabRefunds", "tabNotes"] },
+    { "op": "move", "at": 102.05, "to": { "target": "tabDetails", "offset": [0, 0] }, "note": "step 6: 'Details breaks the sale into line items' (p31) — pointed at only, never opened this lesson" },
+    { "op": "move", "at": 103.45, "to": { "target": "tabPayments", "offset": [0, 0] }, "note": "step 6: 'Payments lists every tender' (p31) — pointed at only" },
+    { "op": "move", "at": 105.65, "to": { "target": "tabNotes", "offset": [0, 0] }, "note": "step 6: 'Notes holds the ticket's notes' (p32) — pointed at only" },
+    { "op": "move", "at": 108.3, "to": { "target": "tabMain", "offset": [0, 0] }, "note": "step 6: 'We work Main and Refunds today' (p33)" },
+    { "op": "move", "at": 109.9, "to": { "target": "tabRefunds", "offset": [0, 0] } },
+    { "op": "move", "at": 111.6, "to": { "point": [1898, 440] } },
+    { "op": "move", "at": 115.95, "to": { "target": "fldId", "offset": [0, -26], "outside": true }, "note": "step 7: 'Main opens on Ticket Information' (p34)" },
+    { "op": "log-rects", "at": 116.2, "key": "ti", "targets": ["fldId", "fldTicketNum", "fldDateIn", "fldLocation", "fldStatus", "fldPayType"] },
+    { "op": "log-rect", "at": 116.45, "key": "grpTicketInfoRect", "target": "grpTicketInfo" },
+    { "op": "move", "at": 117.45, "to": { "target": "fldId", "offset": [0, 0] }, "note": "step 7: six-field sweep in spoken order (p35-p36)" },
+    { "op": "move", "at": 118.55, "to": { "target": "fldTicketNum", "offset": [0, 0] } },
+    { "op": "move", "at": 119.65, "to": { "target": "fldDateIn", "offset": [0, 0] } },
+    { "op": "move", "at": 120.8, "to": { "target": "fldLocation", "offset": [0, 0] } },
+    { "op": "move", "at": 121.6, "to": { "target": "fldStatus", "offset": [0, 0] } },
+    { "op": "move", "at": 122.4, "to": { "target": "fldPayType", "offset": [0, 0] } },
+    { "op": "move", "at": 127.1, "to": { "target": "fldStatus", "offset": [0, 26] }, "note": "step 7: 'the status here matches the one you saw in the list' (p38)" },
+    { "op": "move", "at": 131.25, "to": { "target": "fldTotal", "offset": [0, -26], "outside": true }, "note": "step 8: 'Next, Financial Summary' (p39)" },
+    { "op": "log-rects", "at": 131.55, "key": "fs", "targets": ["fldTotal", "fldTaxes", "fldTendered", "fldChangeDue", "fldReversed", "fldHouseAcct"] },
+    { "op": "log-rect", "at": 131.85, "key": "grpFinancialRect", "target": "grpFinancial" },
+    { "op": "move", "at": 133.1, "to": { "target": "fldTotal", "offset": [0, 0] }, "note": "step 8: p40 sweep in spoken order — total, taxes, tendered, change due, reversed, house account" },
+    { "op": "move", "at": 133.85, "to": { "target": "fldTaxes", "offset": [0, 0] } },
+    { "op": "move", "at": 134.55, "to": { "target": "fldTendered", "offset": [0, 0] } },
+    { "op": "move", "at": 135.25, "to": { "target": "fldChangeDue", "offset": [0, 0] } },
+    { "op": "move", "at": 135.95, "to": { "target": "fldReversed", "offset": [0, 0] } },
+    { "op": "move", "at": 136.65, "to": { "target": "fldHouseAcct", "offset": [0, 0] } },
+    { "op": "move", "at": 138.1, "to": { "target": "fldReversed", "offset": [0, 0] }, "note": "step 8: 'Reversed is the field to check first' (p42-p43) — shot-list 150% punch-in" },
+    { "op": "move", "at": 144.3, "to": { "target": "fldHouseAcct", "offset": [0, 0] }, "note": "step 8: 'house account tells you if a fleet or business paid' (p44)" },
+    { "op": "move", "at": 148.9, "to": { "point": [1898, 650] } },
+    { "op": "move", "at": 152.25, "to": { "target": "fldCashier", "offset": [0, -26], "outside": true }, "note": "step 9: 'Two more groups' (p45)" },
+    { "op": "log-rects", "at": 152.55, "key": "se", "targets": ["fldCashier", "fldCashTerm", "fldGreetTerm", "fldShift"] },
+    { "op": "log-rects", "at": 152.8, "key": "cv", "targets": ["fldCustomer", "fldVehicle", "fldPlate", "fldVehState"] },
+    { "op": "log-rect", "at": 153.05, "key": "grpStaffRect", "target": "grpStaff" },
+    { "op": "log-rect", "at": 153.28, "key": "grpCustomerRect", "target": "grpCustomer" },
+    { "op": "move", "at": 153.55, "to": { "target": "fldCashier", "offset": [0, 0] }, "note": "step 9: p46 sweep in spoken order — cashier, cashier terminal, greeter terminal" },
+    { "op": "move", "at": 154.65, "to": { "target": "fldCashTerm", "offset": [0, 0] } },
+    { "op": "move", "at": 155.75, "to": { "target": "fldGreetTerm", "offset": [0, 0] } },
+    { "op": "move", "at": 157.15, "to": { "target": "fldShift", "offset": [0, 0] }, "note": "step 9: '...and the shift' (p47) — shot-list punch on Cashier Terminal + Shift" },
+    { "op": "move", "at": 159.5, "to": { "target": "fldCustomer", "offset": [0, 0] }, "note": "step 9: p48 sweep in spoken order — customer, vehicle, plate, state" },
+    { "op": "move", "at": 160.6, "to": { "target": "fldVehicle", "offset": [0, 0] } },
+    { "op": "move", "at": 161.55, "to": { "target": "fldPlate", "offset": [0, 0] } },
+    { "op": "move", "at": 162.45, "to": { "target": "fldVehState", "offset": [0, 0] } },
+    { "op": "move", "at": 164.25, "to": { "target": "fldPlate", "offset": [0, 26] }, "note": "step 9: 'match a ticket to a plate on a dispute' (p49)" },
+    { "op": "move", "at": 167.6, "to": { "point": [1898, 900] } },
+    { "op": "move", "at": 171.95, "to": { "target": "tabRefunds", "offset": [0, 0] }, "note": "step 10 cue 'Open the Refunds tab.' (p50) — approach starts at the cue" },
+    { "op": "click", "target": "tabRefunds", "pressAt": 173.5, "hoverMs": 380, "postcondition": "refundsShown", "timeoutMs": 6000, "note": "step 10: genuine Refunds tab click inside the cue's trailing break; Main groups hide, Refund History shows" },
+    { "op": "log-rect", "at": 174.15, "key": "refundPanelRect", "target": "refundPanel", "requireStableMs": 240 },
+    { "op": "log-rect", "at": 174.42, "key": "refundTheadRect", "target": "refundThead" },
+    { "op": "log-rects", "at": 174.68, "key": "rcols", "targets": ["rthDate", "rthRefundId", "rthAmount", "rthReason", "rthProcessedBy", "rthStatus"] },
+    { "op": "log-rect", "at": 174.92, "key": "emptyRowRect", "target": "emptyRow", "note": "the visible tbody row: the 'No refunds recorded for this ticket.' empty-state line (or the first refund row if the demo ticket carries one — narration covers both)" },
+    { "op": "watch", "key": "refundsHold", "from": 175.0, "to": 226.9, "predicate": "refundsShown", "everyMs": 600, "mustHold": true, "note": "Refunds tab must stay active through steps 10-12 until the Back nav" },
+    { "op": "move", "at": 175.1, "to": { "target": "rthDate", "offset": [0, 0] }, "note": "step 10: column sweep in spoken order (p51-p52)" },
+    { "op": "move", "at": 175.75, "to": { "target": "rthRefundId", "offset": [0, 0] } },
+    { "op": "move", "at": 176.4, "to": { "target": "rthAmount", "offset": [0, 0] } },
+    { "op": "move", "at": 177.05, "to": { "target": "rthReason", "offset": [0, 0] } },
+    { "op": "move", "at": 177.8, "to": { "target": "rthProcessedBy", "offset": [0, 0] } },
+    { "op": "move", "at": 178.55, "to": { "target": "rthStatus", "offset": [0, 0] } },
+    { "op": "move", "at": 180.05, "to": { "target": "emptyRow", "offset": [0, 0] }, "note": "step 10: 'On a clean ticket it simply says no refunds recorded' (p53)" },
+    { "op": "move", "at": 183.85, "to": { "target": "rthReason", "offset": [0, 32] }, "note": "step 10: 'the reason it was given' (p54)" },
+    { "op": "move", "at": 185.75, "to": { "target": "rthProcessedBy", "offset": [0, 32] }, "note": "step 10: 'who handled it' (p54-p55)" },
+    { "op": "move", "at": 187.55, "to": { "target": "rthStatus", "offset": [0, 32] }, "note": "step 10: 'whether it actually went through' (p55)" },
+    { "op": "move", "at": 189.6, "to": { "point": [1898, 650] } },
+    { "op": "move", "at": 192.1, "to": { "point": [1898, 540] }, "note": "step 11: 'what isn't here' (p56-p57) — parked wide; the absence of Edit Ticket / add-refund is shown by the whole page (probe-verified: no such controls exist)" },
+    { "op": "move", "at": 200.05, "to": { "target": "refundBtn", "offset": [-8, 42], "outside": true }, "note": "step 11: 'The header Refund button is the only way in' (p58) — near it, never on it" },
+    { "op": "move", "at": 205.6, "to": { "point": [1898, 300] }, "note": "park for p60-p61 (security levels, WC-12-06)" },
+    { "op": "move", "at": 212.05, "to": { "target": "metaLine", "offset": [0, 28], "outside": true }, "note": "step 12: 'Last, copy the address' (p62-p63) — the ticket I-D identity line stands in for the address bar (RESIDUAL R1); no fake keystrokes" },
+    { "op": "move", "at": 218.9, "to": { "point": [1898, 300] }, "note": "park for p64-p66 (paste into a support ticket)" },
+    { "op": "move", "at": 226.1, "to": { "target": "backBtn", "offset": [0, 0] }, "note": "step 12 cue 'Then Back to Tickets' (p67)" },
+    { "op": "click", "target": "backBtn", "pressAt": 227.5, "hoverMs": 380, "postcondition": "onTickets", "timeoutMs": 9000, "nav": true, "note": "step 12: genuine ← Back to Tickets link click (probe-verified href sales-transactions.html); the list is back while 'nothing on the ticket has changed' plays" },
+    { "op": "wait-stable", "afterNav": true, "key": "backStable", "predicate": "listReady", "settleMs": 600, "timeoutMs": 9000 },
+    { "op": "move", "at": 228.8, "to": { "point": [1560, 930] }, "note": "final park, clear of content and captions" },
+    { "op": "assert", "at": 229.6, "predicate": "onTickets" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "theadRect", "place": "below-left", "from": 2.2, "to": 7.9 },
+      { "n": 2, "anchor": "hdr.metaLine", "place": "below-left", "from": 25.2, "to": 30.1 },
+      { "n": 3, "anchor": "hdr.titleName", "place": "below-left", "from": 37.4, "to": 42.5 },
+      { "n": 4, "anchor": "hdr.backBtn", "place": "below-left", "from": 57.3, "to": 63.4 },
+      { "n": 5, "anchor": "hdr.band", "place": "below-left", "from": 74.4, "to": 79.9 },
+      { "n": 6, "anchor": "tabs.tabNotes", "place": "right", "from": 94.6, "to": 99.9 },
+      { "n": 7, "anchor": "grpTicketInfoRect", "place": "left-top", "from": 116.5, "to": 121.9 },
+      { "n": 8, "anchor": "grpFinancialRect", "place": "left-top", "from": 131.9, "to": 137.4 },
+      { "n": 9, "anchor": "grpStaffRect", "place": "left-top", "from": 153.1, "to": 158.4 },
+      { "n": 10, "anchor": "refundTheadRect", "place": "left-top", "from": 174.8, "to": 181.5 },
+      { "n": 11, "anchor": "hdr.refundBtn", "place": "left", "from": 200.1, "to": 206.6 },
+      { "n": 12, "anchor": "hdr.metaLine", "place": "below-left", "from": 212.4, "to": 217.4 }
+    ],
+    "highlights": [
+      { "anchor": "firstRowRect", "from": 2.0, "to": 3.7, "note": "p02: one row per ticket" },
+      { "anchor": "theadRect", "from": 4.1, "to": 8.3, "note": "p03: location, total, status, tender" },
+      { "anchor": "statusCellRect", "from": 8.8, "to": 10.75, "note": "p04: status glance on the way in" },
+      { "anchor": "firstRowRect", "from": 19.9, "to": 21.05, "note": "p07: 'Click the row.' — the sanctioned click" },
+      { "anchor": "hdr.metaLine", "from": 25.2, "to": 34.4, "note": "p09-p11: the ticket I-D identity (address-bar surrogate, RESIDUAL R1)" },
+      { "anchor": "hdr.titleName", "from": 37.35, "to": 39.6, "note": "p13: the ticket number is the title" },
+      { "anchor": "hdr.metaLine", "from": 39.75, "to": 42.65, "note": "p13: I-D, location, time underneath" },
+      { "anchor": "hdr.metaLine", "from": 46.3, "to": 50.5, "note": "p15: the timestamp ties the sale to a shift" },
+      { "anchor": "hdr.backBtn", "from": 58.95, "to": 60.6, "note": "p18: Back to Tickets takes you home" },
+      { "anchor": "hdr.refundBtn", "from": 61.05, "to": 73.55, "color": "#dc2626", "note": "p19-p22 guardrail: Refund is read, never touched (PARKED #5)" },
+      { "anchor": "hdr.tile1", "from": 77.05, "to": 77.9, "note": "p24 sweep" },
+      { "anchor": "hdr.tile2", "from": 77.9, "to": 78.7 },
+      { "anchor": "hdr.tile3", "from": 78.7, "to": 79.55 },
+      { "anchor": "hdr.tile4", "from": 79.55, "to": 80.4 },
+      { "anchor": "hdr.band", "from": 81.3, "to": 85.4, "note": "p25: the band answers the question" },
+      { "anchor": "hdr.tile1", "from": 87.0, "to": 92.8, "note": "p27: mismatch between total and payments — the pair" },
+      { "anchor": "hdr.tile2", "from": 87.0, "to": 92.8 },
+      { "anchor": "hdr.tabNav", "from": 95.6, "to": 96.5, "note": "p29: five of them" },
+      { "anchor": "tabs.tabMain", "from": 96.85, "to": 100.6, "note": "p30: Main opens by default" },
+      { "anchor": "tabs.tabDetails", "from": 102.0, "to": 103.35, "note": "p31: Details — named only, never opened" },
+      { "anchor": "tabs.tabPayments", "from": 103.45, "to": 104.8, "note": "p31: Payments — named only, never opened" },
+      { "anchor": "tabs.tabNotes", "from": 105.6, "to": 107.85, "note": "p32: Notes — named only, never opened" },
+      { "anchor": "tabs.tabMain", "from": 108.25, "to": 109.75, "note": "p33: we work Main and Refunds" },
+      { "anchor": "tabs.tabRefunds", "from": 109.9, "to": 112.6 },
+      { "anchor": "ti.fldId", "from": 117.45, "to": 118.5, "note": "p35-p36 sweep in spoken order" },
+      { "anchor": "ti.fldTicketNum", "from": 118.55, "to": 119.6 },
+      { "anchor": "ti.fldDateIn", "from": 119.65, "to": 120.6 },
+      { "anchor": "ti.fldLocation", "from": 120.8, "to": 121.55 },
+      { "anchor": "ti.fldStatus", "from": 121.6, "to": 122.35 },
+      { "anchor": "ti.fldPayType", "from": 122.4, "to": 123.15 },
+      { "anchor": "ti.fldStatus", "from": 127.05, "to": 130.55, "note": "p38: status here matches the list" },
+      { "anchor": "fs.fldTotal", "from": 133.1, "to": 133.85, "note": "p40 sweep in spoken order" },
+      { "anchor": "fs.fldTaxes", "from": 133.85, "to": 134.55 },
+      { "anchor": "fs.fldTendered", "from": 134.55, "to": 135.25 },
+      { "anchor": "fs.fldChangeDue", "from": 135.25, "to": 135.95 },
+      { "anchor": "fs.fldReversed", "from": 135.95, "to": 136.65 },
+      { "anchor": "fs.fldHouseAcct", "from": 136.65, "to": 137.5 },
+      { "anchor": "fs.fldReversed", "from": 138.05, "to": 143.8, "note": "p42-p43: Reversed is the field to check first (150% punch)" },
+      { "anchor": "fs.fldHouseAcct", "from": 144.15, "to": 148.2, "note": "p44: house account — fleet or business paid" },
+      { "anchor": "se.fldCashier", "from": 153.55, "to": 154.6, "note": "p46 sweep in spoken order" },
+      { "anchor": "se.fldCashTerm", "from": 154.65, "to": 155.7 },
+      { "anchor": "se.fldGreetTerm", "from": 155.75, "to": 156.75 },
+      { "anchor": "se.fldShift", "from": 157.1, "to": 159.0, "note": "p47: the shift — drawer session" },
+      { "anchor": "cv.fldCustomer", "from": 159.5, "to": 160.55, "note": "p48 sweep in spoken order" },
+      { "anchor": "cv.fldVehicle", "from": 160.6, "to": 161.5 },
+      { "anchor": "cv.fldPlate", "from": 161.55, "to": 162.4 },
+      { "anchor": "cv.fldVehState", "from": 162.45, "to": 163.25 },
+      { "anchor": "cv.fldPlate", "from": 164.2, "to": 167.1, "note": "p49: match a ticket to a plate on a dispute" },
+      { "anchor": "tabs.tabRefunds", "from": 171.95, "to": 173.5, "note": "p50: 'Open the Refunds tab.' — click cue" },
+      { "anchor": "refundTheadRect", "from": 174.95, "to": 179.7, "note": "p51-p52: the six refund columns" },
+      { "anchor": "emptyRowRect", "from": 179.85, "to": 183.55, "note": "p53: 'no refunds recorded' empty state" },
+      { "anchor": "rcols.rthReason", "from": 183.75, "to": 185.65, "note": "p54: the reason it was given" },
+      { "anchor": "rcols.rthProcessedBy", "from": 185.7, "to": 187.45, "note": "p54-p55: who handled it" },
+      { "anchor": "rcols.rthStatus", "from": 187.55, "to": 190.9, "note": "p55: whether it actually went through" },
+      { "anchor": "hdr.refundBtn", "from": 199.9, "to": 204.6, "color": "#dc2626", "note": "p58: the only way in — standing do-not-click reminder" },
+      { "anchor": "hdr.metaLine", "from": 212.95, "to": 217.55, "note": "p63: the ticket I-D on the end reopens this exact ticket (RESIDUAL R1)" },
+      { "anchor": "hdr.backBtn", "from": 226.1, "to": 227.5, "note": "p67: 'Then Back to Tickets' — click cue" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 1.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 2.6, "z": 1.25, "cx": 1110, "cy": 640, "ease": true, "note": "list table region: headers + first rows (step 1)" },
+      { "t": 11.6, "z": 1.25, "cx": 1110, "cy": 640 },
+      { "t": 12.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the row click and the full page swap (step 2)" },
+      { "t": 24.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 25.4, "z": 1.5, "cx": 640, "cy": 360, "ease": true, "note": "150% punch on the ID identity line — the shot-list ?ticket= zoom, on-page surrogate (RESIDUAL R1)" },
+      { "t": 30.3, "z": 1.5, "cx": 640, "cy": 360 },
+      { "t": 31.3, "z": 1.3, "cx": 960, "cy": 415, "ease": true, "note": "header framing: title, meta line, buttons, band (step 3)" },
+      { "t": 56.0, "z": 1.3, "cx": 960, "cy": 415 },
+      { "t": 56.9, "z": 1.45, "cx": 1258, "cy": 420, "ease": true, "note": "top-right buttons: Back to Tickets + Refund guardrail (step 4)" },
+      { "t": 73.7, "z": 1.45, "cx": 1258, "cy": 420 },
+      { "t": 74.5, "z": 1.15, "cx": 1085, "cy": 470, "ease": true, "note": "the whole metric band readable (step 5)" },
+      { "t": 93.2, "z": 1.15, "cx": 1085, "cy": 470 },
+      { "t": 94.1, "z": 1.4, "cx": 700, "cy": 400, "ease": true, "note": "tab row close-up (step 6)" },
+      { "t": 115.0, "z": 1.4, "cx": 700, "cy": 400 },
+      { "t": 115.9, "z": 1.2, "cx": 1117, "cy": 450, "ease": true, "note": "Ticket Information group, full width incl. both outer field columns (step 7)" },
+      { "t": 130.5, "z": 1.2, "cx": 1117, "cy": 450 },
+      { "t": 131.2, "z": 1.2, "cx": 1117, "cy": 557, "ease": true, "note": "Financial Summary group (step 8)" },
+      { "t": 137.7, "z": 1.2, "cx": 1117, "cy": 557 },
+      { "t": 138.3, "z": 1.5, "cx": 1117, "cy": 574, "ease": true, "note": "shot-list 150% punch on REVERSED (middle column, row 2)" },
+      { "t": 143.9, "z": 1.5, "cx": 1117, "cy": 574 },
+      { "t": 144.6, "z": 1.2, "cx": 1117, "cy": 557, "ease": true },
+      { "t": 151.5, "z": 1.2, "cx": 1117, "cy": 557 },
+      { "t": 152.3, "z": 1.2, "cx": 1117, "cy": 630, "ease": true, "note": "Staff & Equipment + Customer & Vehicle together (step 9)" },
+      { "t": 154.0, "z": 1.2, "cx": 1117, "cy": 630 },
+      { "t": 154.9, "z": 1.45, "cx": 1258, "cy": 708, "ease": true, "note": "shot-list punch on Cashier Terminal + Shift (third column)" },
+      { "t": 159.3, "z": 1.45, "cx": 1258, "cy": 708 },
+      { "t": 160.1, "z": 1.2, "cx": 1117, "cy": 630, "ease": true },
+      { "t": 171.0, "z": 1.2, "cx": 1117, "cy": 630 },
+      { "t": 172.0, "z": 1.1, "cx": 1000, "cy": 490, "ease": true, "note": "tab row + panel for the genuine Refunds click (step 10)" },
+      { "t": 173.8, "z": 1.1, "cx": 1000, "cy": 490 },
+      { "t": 174.6, "z": 1.15, "cx": 1085, "cy": 470, "ease": true, "note": "Refund History table, all six columns Date..Status in frame + empty state" },
+      { "t": 191.0, "z": 1.15, "cx": 1085, "cy": 470 },
+      { "t": 192.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide: what ISN'T on this page (step 11)" },
+      { "t": 199.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 200.3, "z": 1.4, "cx": 1234, "cy": 420, "ease": true, "note": "the header Refund button, the only way in" },
+      { "t": 207.3, "z": 1.4, "cx": 1234, "cy": 420 },
+      { "t": 208.2, "z": 1, "cx": 960, "cy": 540, "ease": true },
+      { "t": 211.3, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 212.2, "z": 1.4, "cx": 700, "cy": 386, "ease": true, "note": "the deep-link identity line for the copy-the-address recap (step 12, RESIDUAL R1)" },
+      { "t": 218.0, "z": 1.4, "cx": 700, "cy": 386 },
+      { "t": 218.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for Back to Tickets and the closing" },
+      { "t": 230.348, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "completion": {
+      "text": "Ticket View — Complete",
+      "from": 228.5,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 228.2
+  },
+  "output": "WC-03-02-ticket-view-v1.1",
+  "orderedMentions": [
+    "Tickets",
+    "Back to Tickets",
+    "Refund",
+    "Main",
+    "Details",
+    "Payments",
+    "Refunds",
+    "Notes",
+    "Ticket Information",
+    "Financial Summary",
+    "Staff and Equipment",
+    "Customer and Vehicle",
+    "Refunds",
+    "Edit Ticket",
+    "Back to Tickets"
+  ],
+  "neverClick": [
+    "refundBtn",
+    "logout",
+    "ask shyne",
+    "send",
+    "export (list page)",
+    "details tab (not opened this lesson)",
+    "payments tab (not opened this lesson)",
+    "notes tab (not opened this lesson)",
+    "row checkboxes / select-all",
+    "pagination page buttons",
+    "rows-per-page selector",
+    "filters / apply filters",
+    "search ⌘k",
+    "sidebar sibling pages (WC-03-03)"
+  ]
+}

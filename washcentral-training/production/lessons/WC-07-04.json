@@ -1,0 +1,1843 @@
+{
+  "lesson": "WC-07-04",
+  "title": "Gamification and the Challenge Board (Team)",
+  "audioMaster": "training/module07-team/WC-07-04-full-narration-v1.0.mp3",
+  "audioDurationS": 197.068,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/emp-employees.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "challengesLink": {
+      "selector": "aside.sidebar a[href=\"game-tasks.html\"]"
+    },
+    "sideLeaderboard": {
+      "selector": "aside.sidebar a[href=\"game-leaderboard.html\"]"
+    },
+    "sideTargets": {
+      "selector": "aside.sidebar a[href=\"game-targets.html\"]"
+    },
+    "sidePrizes": {
+      "selector": "aside.sidebar a[href=\"game-prizes.html\"]"
+    },
+    "sideRecognition": {
+      "selector": "aside.sidebar a[href=\"game-recognition.html\"]"
+    },
+    "sideSurveys": {
+      "selector": "aside.sidebar a[href=\"game-surveys.html\"]"
+    },
+    "gamGroupLabel": {
+      "js": "[...document.querySelectorAll('.menu-group-lbl')].find(e=>/Gamification/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "breadcrumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "bcStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "kpiBand": {
+      "selector": ".a-metrics"
+    },
+    "kpiTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Challenges/.test(e.textContent||''))"
+    },
+    "kpiActiveNow": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Now/.test(e.textContent||''))"
+    },
+    "kpiCompleted": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Completed/.test(e.textContent||'')&&/18/.test(e.textContent||''))"
+    },
+    "kpiStarting": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Starting Soon/.test(e.textContent||''))"
+    },
+    "kpiOverdue": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Overdue/.test(e.textContent||''))"
+    },
+    "boardTitle": {
+      "js": "[...document.querySelectorAll('h2.section-title')].find(e=>/Active & Upcoming Challenges/.test(e.textContent||''))",
+      "textRect": true
+    },
+    "viewActive": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Active')"
+    },
+    "viewAll": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='All')"
+    },
+    "viewCompleted": {
+      "js": "[...document.querySelectorAll('button.a-btn')].find(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Completed')"
+    },
+    "newChallengeBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn-primary')].find(e=>/New Challenge/.test(e.textContent||''))"
+    },
+    "createCard": {
+      "js": "[...document.querySelectorAll('a.challenge-card')].find(e=>/Create New Challenge/.test(e.textContent||''))"
+    },
+    "washCard": {
+      "js": "[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''))"
+    },
+    "washRing": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?[...c.querySelectorAll('*')].find(x=>/^\\d+%$/.test((x.textContent||'').trim())&&x.children.length===0):null})()"
+    },
+    "washPoints": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?c.querySelector('.a-pill'):null})()"
+    },
+    "washScope": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?[...c.querySelectorAll('div')].find(d=>/Network-wide/.test(d.textContent||'')&&d.children.length===0):null})()"
+    },
+    "washCountdown": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?[...c.querySelectorAll('span')].find(d=>/days left/.test(d.textContent||'')):null})()"
+    },
+    "washProgFig": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?[...c.querySelectorAll('span')].find(d=>/\\/ 500 washes/.test(d.textContent||'')):null})()"
+    },
+    "washBar": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?c.querySelector('.bar-track'):null})()"
+    },
+    "washParticipating": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?[...c.querySelectorAll('span')].find(d=>/participating/.test(d.textContent||'')):null})()"
+    },
+    "washAvatars": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));if(!c)return null;const p=[...c.querySelectorAll('span')].find(d=>/participating/.test(d.textContent||''));return p?p.parentElement:null})()"
+    },
+    "washLeading": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Wash Count Challenge/.test(c.textContent||''));return c?[...c.querySelectorAll('div')].find(d=>[...d.childNodes].some(n=>n.nodeType===3&&/Leading:/.test(n.textContent))):null})()"
+    },
+    "upsellCard": {
+      "js": "[...document.querySelectorAll('.challenge-card')].find(c=>/Upsell Champion/.test(c.textContent||''))"
+    },
+    "attendanceCard": {
+      "js": "[...document.querySelectorAll('.challenge-card')].find(c=>/Perfect Attendance/.test(c.textContent||''))"
+    },
+    "ratingCard": {
+      "js": "[...document.querySelectorAll('.challenge-card')].find(c=>/Customer Rating Sprint/.test(c.textContent||''))"
+    },
+    "blitzCard": {
+      "js": "[...document.querySelectorAll('.challenge-card')].find(c=>/Speed Service Blitz/.test(c.textContent||''))"
+    },
+    "editRating": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Customer Rating Sprint/.test(c.textContent||''));return c?[...c.querySelectorAll('a,button')].find(b=>/^Edit$/.test((b.textContent||'').trim())):null})()"
+    },
+    "editBlitz": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.challenge-card')].find(c=>/Speed Service Blitz/.test(c.textContent||''));return c?[...c.querySelectorAll('a,button')].find(b=>/^Edit$/.test((b.textContent||'').trim())):null})()"
+    }
+  },
+  "predicates": {
+    "onEmployees": "location.pathname.endsWith('/emp-employees.html')",
+    "onChallenges": "location.pathname.endsWith('/game-tasks.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "startReady": "location.pathname.endsWith('/emp-employees.html')&&document.readyState==='complete'&&!!document.querySelector('aside.sidebar a[href=\"game-tasks.html\"]')&&document.querySelector('aside.sidebar').getBoundingClientRect().width>120&&document.querySelectorAll('aside.sidebar a').length===14&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "challengesReady": "location.pathname.endsWith('/game-tasks.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=5&&[...document.querySelectorAll('.challenge-card')].filter(e=>e.getBoundingClientRect().width>0).length>=6&&!!document.querySelector('.breadcrumb-bar strong')&&document.querySelector('.breadcrumb-bar strong').textContent.trim()==='Challenges'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "challengesHighlighted": "(()=>{const a=document.querySelector('aside.sidebar a[href=\"game-tasks.html\"]');return !!a&&/\\bactive\\b/.test(a.className)})()",
+    "activeSelected": "(()=>{const b=[...document.querySelectorAll('button.a-btn')].find(e=>(e.textContent||'').trim()==='Active');return !!b&&/wc-lt|background/.test(b.getAttribute('style')||'')})()",
+    "sixSiblings": "['game-tasks.html','game-leaderboard.html','game-targets.html','game-prizes.html','game-recognition.html','game-surveys.html'].every(h=>{const a=document.querySelector('aside.sidebar a[href=\"'+h+'\"]');return !!a&&a.getBoundingClientRect().width>0})"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted Team sidebar preference expanded (localStorage washcentral-sidebar-collapsed-v5; probe-verified false/expanded at aside width 232 on July 11). The .wc-rail-panel-toggle ('Hide panel') is the same control both ways; skipped when already expanded so all 14 Team rail entries and the GAMIFICATION group stay on screen the whole lesson."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onEmployees",
+      "note": "start page identity before capture: step 1 opens on a Team page (Employees, top of the rail) so the Challenges click is a genuine in-module navigation"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "startReady",
+      "note": "loaded, sidebar expanded with all 14 Team entries incl. the GAMIFICATION group, no skeletons; Challenges link present in the rail"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 7,
+      "to": 196,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2500,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "watch",
+      "key": "noNavDuringToggles",
+      "from": 140.6,
+      "to": 173.9,
+      "predicate": "onChallenges",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "steps 10-12 guardrail: the three view controls are filters — the page never navigates and no record is mutated"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        2,
+        900
+      ],
+      "to": {
+        "target": "challengesLink",
+        "offset": [
+          110,
+          16
+        ]
+      },
+      "note": "enter from the bottom-left toward the GAMIFICATION > Challenges entry as p01 says 'Open Challenges under Gamification'"
+    },
+    {
+      "op": "click",
+      "target": "challengesLink",
+      "pressAt": 1.5,
+      "hoverMs": 380,
+      "postcondition": "challengesReady",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: genuine sidebar navigation to the Challenge Board; press lands in the p01 trailing 1.4s break so the board is up as p02 ('This is the Challenge Board') begins"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "boardStable",
+      "predicate": "challengesReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 2,
+      "predicate": "challengesHighlighted",
+      "note": "the Challenges rail entry carries the highlighted 'menu-header active' state after navigation"
+    },
+    {
+      "op": "log-rect",
+      "at": 2.2,
+      "key": "bcRect",
+      "target": "bcStrong",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 2.4,
+      "key": "challRect",
+      "target": "challengesLink"
+    },
+    {
+      "op": "log-rect",
+      "at": 2.6,
+      "key": "kpiBandRect",
+      "target": "kpiBand",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rects",
+      "at": 2.8,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiTotal",
+        "kpiActiveNow",
+        "kpiCompleted",
+        "kpiStarting",
+        "kpiOverdue"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 3,
+      "key": "gamGroupRect",
+      "target": "gamGroupLabel"
+    },
+    {
+      "op": "log-rects",
+      "at": 3.2,
+      "key": "sideGroup",
+      "targets": [
+        "challengesLink",
+        "sideLeaderboard",
+        "sideTargets",
+        "sidePrizes",
+        "sideRecognition",
+        "sideSurveys"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 3.4,
+      "key": "boardTitleRect",
+      "target": "boardTitle"
+    },
+    {
+      "op": "log-rects",
+      "at": 3.6,
+      "key": "viewCtrls",
+      "targets": [
+        "viewActive",
+        "viewAll",
+        "viewCompleted"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 3.8,
+      "key": "newChallengeRect",
+      "target": "newChallengeBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 4,
+      "key": "washCardRect",
+      "target": "washCard",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 4.2,
+      "key": "washRingRect",
+      "target": "washRing"
+    },
+    {
+      "op": "log-rects",
+      "at": 4.4,
+      "key": "washTop",
+      "targets": [
+        "washPoints",
+        "washScope",
+        "washCountdown",
+        "washProgFig"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 4.6,
+      "key": "washBarRect",
+      "target": "washBar"
+    },
+    {
+      "op": "log-rect",
+      "at": 4.8,
+      "key": "washAvatarsRect",
+      "target": "washAvatars"
+    },
+    {
+      "op": "log-rect",
+      "at": 5,
+      "key": "washPartRect",
+      "target": "washParticipating"
+    },
+    {
+      "op": "log-rect",
+      "at": 5.2,
+      "key": "washLeadRect",
+      "target": "washLeading"
+    },
+    {
+      "op": "log-rect",
+      "at": 5.4,
+      "key": "upsellRect",
+      "target": "upsellCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 5.6,
+      "key": "attendanceRect",
+      "target": "attendanceCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 5.8,
+      "key": "ratingRect",
+      "target": "ratingCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 6,
+      "key": "blitzRect",
+      "target": "blitzCard"
+    },
+    {
+      "op": "log-rects",
+      "at": 6.2,
+      "key": "editRects",
+      "targets": [
+        "editRating",
+        "editBlitz"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 6.4,
+      "key": "createCardRect",
+      "target": "createCard"
+    },
+    {
+      "op": "move",
+      "at": 7.2,
+      "to": {
+        "point": [
+          1640,
+          880
+        ]
+      },
+      "note": "park lower-right through the p03-p05 intro (no pointing; camera holds the whole board wide)"
+    },
+    {
+      "op": "move",
+      "at": 15.5,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          0,
+          -34
+        ],
+        "outside": true
+      },
+      "note": "step 2 cue p06 'Start at the top' — approach above the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 16.6,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "begin the slow left-to-right KPI sweep (p07)"
+    },
+    {
+      "op": "move",
+      "at": 20.9,
+      "to": {
+        "target": "kpiTotal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p08 enumeration in spoken order: how many exist (Total)"
+    },
+    {
+      "op": "move",
+      "at": 22.1,
+      "to": {
+        "target": "kpiActiveNow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "how many are live (Active Now)"
+    },
+    {
+      "op": "move",
+      "at": 23.3,
+      "to": {
+        "target": "kpiCompleted",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "how many finished (Completed)"
+    },
+    {
+      "op": "move",
+      "at": 25,
+      "to": {
+        "target": "kpiStarting",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p09: about to start (Starting Soon)"
+    },
+    {
+      "op": "move",
+      "at": 26.7,
+      "to": {
+        "target": "kpiOverdue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "slipped past deadline (Overdue)"
+    },
+    {
+      "op": "move",
+      "at": 29.3,
+      "to": {
+        "point": [
+          1640,
+          700
+        ]
+      },
+      "note": "ease off for the p10 tail 'One row, and you know where the program stands'"
+    },
+    {
+      "op": "move",
+      "at": 32.1,
+      "to": {
+        "target": "gamGroupLabel",
+        "offset": [
+          235,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 3 cue p11 'Glance down the Gamification group' — beside the group header"
+    },
+    {
+      "op": "move",
+      "at": 34.5,
+      "to": {
+        "target": "challengesLink",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p12 'the board you're on' — beside Challenges, never on the siblings"
+    },
+    {
+      "op": "move",
+      "at": 36.5,
+      "to": {
+        "target": "sideLeaderboard",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p13 sibling sweep in spoken order: leaderboard"
+    },
+    {
+      "op": "move",
+      "at": 37.7,
+      "to": {
+        "target": "sideTargets",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "targets"
+    },
+    {
+      "op": "move",
+      "at": 38.9,
+      "to": {
+        "target": "sidePrizes",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "prizes"
+    },
+    {
+      "op": "move",
+      "at": 40.1,
+      "to": {
+        "target": "sideRecognition",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "a recognition feed"
+    },
+    {
+      "op": "move",
+      "at": 41.4,
+      "to": {
+        "target": "sideSurveys",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "pulse surveys"
+    },
+    {
+      "op": "move",
+      "at": 43.6,
+      "to": {
+        "point": [
+          1480,
+          700
+        ]
+      },
+      "note": "ease off for p14-p15 ('Today we stay on Challenges')"
+    },
+    {
+      "op": "move",
+      "at": 48.9,
+      "to": {
+        "target": "boardTitle",
+        "offset": [
+          14,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 4 cue p16 'Now the board itself, Active and Upcoming Challenges' — under the section title"
+    },
+    {
+      "op": "move",
+      "at": 50.5,
+      "to": {
+        "target": "viewActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p17 sweep the three view controls in spoken order: Active"
+    },
+    {
+      "op": "move",
+      "at": 51.3,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "All"
+    },
+    {
+      "op": "move",
+      "at": 52.1,
+      "to": {
+        "target": "viewCompleted",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Completed"
+    },
+    {
+      "op": "move",
+      "at": 55.2,
+      "to": {
+        "target": "newChallengeBtn",
+        "offset": [
+          -46,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 4 guardrail p19-p21: rest BESIDE the green + New Challenge button (links to game-tasks-edit.html); never on it, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 65.6,
+      "to": {
+        "point": [
+          1660,
+          760
+        ]
+      },
+      "note": "ease away from the guardrail as s04 ends"
+    },
+    {
+      "op": "move",
+      "at": 68.2,
+      "to": {
+        "target": "washCard",
+        "offset": [
+          190,
+          24
+        ]
+      },
+      "note": "step 5 cue p22 'Take the first live card' — approach the Wash Count Challenge card"
+    },
+    {
+      "op": "move",
+      "at": 70.2,
+      "to": {
+        "target": "washRing",
+        "offset": [
+          0,
+          -6
+        ]
+      },
+      "note": "p23 'A ring shows how far along the team is'"
+    },
+    {
+      "op": "move",
+      "at": 78.4,
+      "to": {
+        "target": "washPoints",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p24 in spoken order: the reward in points"
+    },
+    {
+      "op": "move",
+      "at": 78.9,
+      "to": {
+        "target": "washScope",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "who it's for and when it ends"
+    },
+    {
+      "op": "move",
+      "at": 79.4,
+      "to": {
+        "target": "washCountdown",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "how many days are left"
+    },
+    {
+      "op": "move",
+      "at": 80.2,
+      "to": {
+        "target": "washProgFig",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p25 the hard number: washes done against the goal"
+    },
+    {
+      "op": "move",
+      "at": 83,
+      "to": {
+        "target": "washCard",
+        "offset": [
+          188,
+          90
+        ]
+      },
+      "note": "hold on the card for the p26 summary"
+    },
+    {
+      "op": "move",
+      "at": 85.7,
+      "to": {
+        "target": "washParticipating",
+        "offset": [
+          -12,
+          0
+        ]
+      },
+      "note": "step 6 cue p27 'Look lower on the same card'"
+    },
+    {
+      "op": "move",
+      "at": 88.3,
+      "to": {
+        "target": "washAvatars",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p28 avatars and headcount — who's taking part"
+    },
+    {
+      "op": "move",
+      "at": 93.1,
+      "to": {
+        "target": "washLeading",
+        "offset": [
+          44,
+          6
+        ]
+      },
+      "note": "p29 the current leader and their score"
+    },
+    {
+      "op": "move",
+      "at": 97.2,
+      "to": {
+        "target": "washCard",
+        "offset": [
+          188,
+          150
+        ]
+      },
+      "note": "ease off over the lower card for the p30-p31 tail"
+    },
+    {
+      "op": "move",
+      "at": 101.8,
+      "to": {
+        "target": "upsellCard",
+        "offset": [
+          190,
+          24
+        ]
+      },
+      "note": "step 7 cue p32 'The other two live cards read exactly the same way'"
+    },
+    {
+      "op": "move",
+      "at": 105.4,
+      "to": {
+        "target": "upsellCard",
+        "offset": [
+          80,
+          62
+        ]
+      },
+      "note": "p33 one tracks upsell dollars"
+    },
+    {
+      "op": "move",
+      "at": 106.9,
+      "to": {
+        "target": "attendanceCard",
+        "offset": [
+          80,
+          62
+        ]
+      },
+      "note": "another tracks attendance"
+    },
+    {
+      "op": "move",
+      "at": 110.2,
+      "to": {
+        "point": [
+          1120,
+          470
+        ]
+      },
+      "note": "hold across both cards for p34-p35"
+    },
+    {
+      "op": "move",
+      "at": 115.5,
+      "to": {
+        "target": "ratingCard",
+        "offset": [
+          190,
+          24
+        ]
+      },
+      "note": "step 8 cue p36 'Below the live ones, the challenges warming up'"
+    },
+    {
+      "op": "move",
+      "at": 118.7,
+      "to": {
+        "target": "ratingCard",
+        "offset": [
+          80,
+          120
+        ]
+      },
+      "note": "p37 start date and the rule for winning — Customer Rating Sprint"
+    },
+    {
+      "op": "move",
+      "at": 120.6,
+      "to": {
+        "target": "blitzCard",
+        "offset": [
+          80,
+          120
+        ]
+      },
+      "note": "Speed Service Blitz"
+    },
+    {
+      "op": "move",
+      "at": 124.2,
+      "to": {
+        "target": "editRating",
+        "offset": [
+          -52,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 8 guardrail p38-p39: rest BESIDE the first Edit button; never on it"
+    },
+    {
+      "op": "move",
+      "at": 126.6,
+      "to": {
+        "target": "editBlitz",
+        "offset": [
+          -52,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 8 guardrail: beside the second Edit button; a manager's control, read and move on"
+    },
+    {
+      "op": "move",
+      "at": 130.3,
+      "to": {
+        "target": "createCard",
+        "offset": [
+          0,
+          216
+        ],
+        "outside": true
+      },
+      "note": "step 9 cue p40: point below the dashed + Create New Challenge tile (links to game-tasks-edit.html); the second door into the builder, never opened"
+    },
+    {
+      "op": "move",
+      "at": 137,
+      "to": {
+        "point": [
+          1315,
+          760
+        ]
+      },
+      "note": "ease away below the create tile for p41-p42 'we leave it closed'"
+    },
+    {
+      "op": "move",
+      "at": 140.3,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 10 cue p43 'Now try the All view' — approach the All control"
+    },
+    {
+      "op": "click",
+      "target": "viewAll",
+      "pressAt": 141.5,
+      "hoverMs": 340,
+      "postcondition": "onChallenges",
+      "timeoutMs": 4000,
+      "note": "step 10: genuine, non-mutating click on the All filter (press inside the p43 break). RESIDUAL R1: the view controls are inert in this build — the click registers but the board and the selected state do not change; postcondition holds the page identity truthfully"
+    },
+    {
+      "op": "move",
+      "at": 147.2,
+      "to": {
+        "point": [
+          960,
+          470
+        ]
+      },
+      "note": "hold the whole board for p44-p46 ('changing the lens')"
+    },
+    {
+      "op": "move",
+      "at": 152.8,
+      "to": {
+        "target": "viewCompleted",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 11 cue p47 'Switch to Completed' — approach the Completed control"
+    },
+    {
+      "op": "click",
+      "target": "viewCompleted",
+      "pressAt": 153.7,
+      "hoverMs": 340,
+      "postcondition": "onChallenges",
+      "timeoutMs": 4000,
+      "note": "step 11: genuine, non-mutating click on the Completed filter. RESIDUAL R1: inert in this build; narration reads the view switch, not individual cards (cards parked, not captured July 9)"
+    },
+    {
+      "op": "move",
+      "at": 157,
+      "to": {
+        "target": "kpiCompleted",
+        "offset": [
+          0,
+          -32
+        ],
+        "outside": true
+      },
+      "note": "step 11 p49: tie the view to the 18 Completed figure in the KPI band above"
+    },
+    {
+      "op": "move",
+      "at": 161.6,
+      "to": {
+        "point": [
+          1117,
+          320
+        ]
+      },
+      "note": "ease off for the p50 tail"
+    },
+    {
+      "op": "move",
+      "at": 164.6,
+      "to": {
+        "target": "viewActive",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 12 cue p51 'Click back to Active' — approach the Active control"
+    },
+    {
+      "op": "click",
+      "target": "viewActive",
+      "pressAt": 165.5,
+      "hoverMs": 340,
+      "postcondition": "activeSelected",
+      "timeoutMs": 4000,
+      "note": "step 12: click Active; postcondition activeSelected is genuinely true (the Active control carries the wc-lt selected style — it is the default and never lost it, consistent with the inert filters of R1)"
+    },
+    {
+      "op": "move",
+      "at": 169.6,
+      "to": {
+        "point": [
+          960,
+          470
+        ]
+      },
+      "note": "settle wide on the default board for p52-p53"
+    },
+    {
+      "op": "move",
+      "at": 175.3,
+      "to": {
+        "target": "kpiBand",
+        "offset": [
+          0,
+          26
+        ]
+      },
+      "note": "step 13 recap p55 'The KPIs count the whole program' — gesture across the band"
+    },
+    {
+      "op": "move",
+      "at": 177.7,
+      "to": {
+        "target": "boardTitle",
+        "offset": [
+          14,
+          34
+        ],
+        "outside": true
+      },
+      "note": "p56 'the Active view shows what's live and what's coming'"
+    },
+    {
+      "op": "move",
+      "at": 181,
+      "to": {
+        "point": [
+          960,
+          470
+        ]
+      },
+      "note": "brief hold for p57"
+    },
+    {
+      "op": "log-rect",
+      "at": 185.6,
+      "key": "kpiBand2",
+      "target": "kpiBand",
+      "note": "re-log the KPI band on the final state for the recap graphics"
+    },
+    {
+      "op": "log-rects",
+      "at": 185.9,
+      "key": "sideGroup2",
+      "targets": [
+        "sideLeaderboard",
+        "sideTargets",
+        "sidePrizes",
+        "sideRecognition",
+        "sideSurveys"
+      ],
+      "note": "re-log the five sibling links for the recap sweep"
+    },
+    {
+      "op": "move",
+      "at": 187.2,
+      "to": {
+        "target": "sideLeaderboard",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p59 recap sweep in spoken order: leaderboard"
+    },
+    {
+      "op": "move",
+      "at": 188.2,
+      "to": {
+        "target": "sideTargets",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "targets"
+    },
+    {
+      "op": "move",
+      "at": 189.1,
+      "to": {
+        "target": "sidePrizes",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "prizes"
+    },
+    {
+      "op": "move",
+      "at": 190,
+      "to": {
+        "target": "sideRecognition",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "recognition"
+    },
+    {
+      "op": "move",
+      "at": 190.9,
+      "to": {
+        "target": "sideSurveys",
+        "offset": [
+          210,
+          8
+        ],
+        "outside": true
+      },
+      "note": "surveys"
+    },
+    {
+      "op": "move",
+      "at": 193,
+      "to": {
+        "point": [
+          1520,
+          900
+        ]
+      },
+      "note": "final park, clear of content and captions, while p60 closes"
+    },
+    {
+      "op": "assert",
+      "at": 196.4,
+      "predicate": "onChallenges",
+      "note": "read-only end state: still on the Challenge Board, nothing navigated or mutated"
+    },
+    {
+      "op": "assert",
+      "at": 196.7,
+      "predicate": "sidebarExpanded"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "bcRect",
+        "place": "below-left",
+        "from": 2.6,
+        "to": 14.6
+      },
+      {
+        "n": 2,
+        "anchor": "kpiBandRect",
+        "place": "below-left",
+        "from": 15.9,
+        "to": 31.3
+      },
+      {
+        "n": 3,
+        "anchor": "gamGroupRect",
+        "place": "right",
+        "from": 32.4,
+        "to": 48.4
+      },
+      {
+        "n": 4,
+        "anchor": "viewCtrls.viewAll",
+        "place": "below-left",
+        "from": 49.4,
+        "to": 67.6
+      },
+      {
+        "n": 5,
+        "anchor": "washCardRect",
+        "place": "right",
+        "from": 68.7,
+        "to": 85.3
+      },
+      {
+        "n": 6,
+        "anchor": "washPartRect",
+        "place": "below-left",
+        "from": 86.2,
+        "to": 101.4
+      },
+      {
+        "n": 7,
+        "anchor": "upsellRect",
+        "place": "below-left",
+        "from": 102.4,
+        "to": 115
+      },
+      {
+        "n": 8,
+        "anchor": "ratingRect",
+        "place": "below-left",
+        "from": 115.9,
+        "to": 129.5
+      },
+      {
+        "n": 9,
+        "anchor": "createCardRect",
+        "place": "left",
+        "from": 130.3,
+        "to": 139.9
+      },
+      {
+        "n": 10,
+        "anchor": "viewCtrls.viewAll",
+        "place": "below-left",
+        "from": 140.9,
+        "to": 152.3
+      },
+      {
+        "n": 11,
+        "anchor": "kpiTiles.kpiCompleted",
+        "place": "below-left",
+        "from": 153.4,
+        "to": 164
+      },
+      {
+        "n": 12,
+        "anchor": "viewCtrls.viewActive",
+        "place": "below-left",
+        "from": 164.9,
+        "to": 173.8
+      },
+      {
+        "n": 13,
+        "anchor": "sideGroup2.sideLeaderboard",
+        "place": "right",
+        "from": 186.6,
+        "to": 195.6
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "challRect",
+        "from": 2.6,
+        "to": 14.6,
+        "color": "#2563eb",
+        "note": "step 1: the Challenges rail entry is highlighted (breadcrumb Gamification > Challenges)"
+      },
+      {
+        "anchor": "kpiTiles.kpiTotal",
+        "from": 20.9,
+        "to": 22,
+        "color": "#2563eb",
+        "note": "p08 in spoken order: how many exist"
+      },
+      {
+        "anchor": "kpiTiles.kpiActiveNow",
+        "from": 22,
+        "to": 23.2,
+        "color": "#2563eb",
+        "note": "how many are live"
+      },
+      {
+        "anchor": "kpiTiles.kpiCompleted",
+        "from": 23.2,
+        "to": 24.5,
+        "color": "#2563eb",
+        "note": "how many finished"
+      },
+      {
+        "anchor": "kpiTiles.kpiStarting",
+        "from": 24.9,
+        "to": 26.6,
+        "color": "#2563eb",
+        "note": "p09: about to start"
+      },
+      {
+        "anchor": "kpiTiles.kpiOverdue",
+        "from": 26.6,
+        "to": 28.5,
+        "color": "#2563eb",
+        "note": "slipped past deadline"
+      },
+      {
+        "anchor": "sideGroup.challengesLink",
+        "from": 34.5,
+        "to": 36.2,
+        "color": "#2563eb",
+        "note": "p12 'the board you're on'"
+      },
+      {
+        "anchor": "sideGroup.sideLeaderboard",
+        "from": 36.4,
+        "to": 37.6,
+        "color": "#2563eb",
+        "note": "p13 spoken order: leaderboard"
+      },
+      {
+        "anchor": "sideGroup.sideTargets",
+        "from": 37.6,
+        "to": 38.8,
+        "color": "#2563eb",
+        "note": "targets"
+      },
+      {
+        "anchor": "sideGroup.sidePrizes",
+        "from": 38.8,
+        "to": 40,
+        "color": "#2563eb",
+        "note": "prizes"
+      },
+      {
+        "anchor": "sideGroup.sideRecognition",
+        "from": 40,
+        "to": 41.3,
+        "color": "#2563eb",
+        "note": "a recognition feed"
+      },
+      {
+        "anchor": "sideGroup.sideSurveys",
+        "from": 41.3,
+        "to": 42.6,
+        "color": "#2563eb",
+        "note": "pulse surveys"
+      },
+      {
+        "anchor": "viewCtrls.viewActive",
+        "from": 50.4,
+        "to": 51.2,
+        "color": "#2563eb",
+        "note": "p17 view controls in spoken order: Active"
+      },
+      {
+        "anchor": "viewCtrls.viewAll",
+        "from": 51.2,
+        "to": 51.9,
+        "color": "#2563eb",
+        "note": "All"
+      },
+      {
+        "anchor": "viewCtrls.viewCompleted",
+        "from": 51.9,
+        "to": 52.6,
+        "color": "#2563eb",
+        "note": "Completed"
+      },
+      {
+        "anchor": "newChallengeRect",
+        "from": 55.2,
+        "to": 67.6,
+        "color": "#dc2626",
+        "note": "step 4 guardrail: the green + New Challenge button is located, never clicked (opens game-tasks-edit.html)"
+      },
+      {
+        "anchor": "washRingRect",
+        "from": 70.1,
+        "to": 77.9,
+        "color": "#7c3aed",
+        "note": "p23: the progress ring"
+      },
+      {
+        "anchor": "washTop.washPoints",
+        "from": 78.4,
+        "to": 78.9,
+        "color": "#059669",
+        "note": "p24: reward in points"
+      },
+      {
+        "anchor": "washTop.washScope",
+        "from": 78.9,
+        "to": 79.4,
+        "color": "#059669",
+        "note": "scope and end date"
+      },
+      {
+        "anchor": "washTop.washCountdown",
+        "from": 79.4,
+        "to": 79.9,
+        "color": "#059669",
+        "note": "days left"
+      },
+      {
+        "anchor": "washTop.washProgFig",
+        "from": 80.1,
+        "to": 81.9,
+        "color": "#059669",
+        "note": "p25: washes done against the goal"
+      },
+      {
+        "anchor": "washBarRect",
+        "from": 80.1,
+        "to": 82.2,
+        "color": "#059669",
+        "note": "the progress bar"
+      },
+      {
+        "anchor": "washAvatarsRect",
+        "from": 88.3,
+        "to": 92.4,
+        "color": "#059669",
+        "note": "p28: participant avatars and headcount"
+      },
+      {
+        "anchor": "washPartRect",
+        "from": 88.3,
+        "to": 92.4,
+        "color": "#059669",
+        "note": "24 participating"
+      },
+      {
+        "anchor": "washLeadRect",
+        "from": 93.1,
+        "to": 95.8,
+        "color": "#f59e0b",
+        "note": "p29: the current leader and their score"
+      },
+      {
+        "anchor": "upsellRect",
+        "from": 105.3,
+        "to": 106.9,
+        "color": "#059669",
+        "note": "p33: upsell dollars card"
+      },
+      {
+        "anchor": "attendanceRect",
+        "from": 106.9,
+        "to": 108.6,
+        "color": "#059669",
+        "note": "attendance card — same anatomy, different metric"
+      },
+      {
+        "anchor": "ratingRect",
+        "from": 116.5,
+        "to": 122,
+        "color": "#2563eb",
+        "note": "p37: Customer Rating Sprint — start date and rule"
+      },
+      {
+        "anchor": "blitzRect",
+        "from": 118.6,
+        "to": 123.1,
+        "color": "#2563eb",
+        "note": "Speed Service Blitz"
+      },
+      {
+        "anchor": "editRects.editRating",
+        "from": 124.1,
+        "to": 129.4,
+        "color": "#dc2626",
+        "note": "step 8 guardrail: the per-card Edit buttons are read, never clicked"
+      },
+      {
+        "anchor": "editRects.editBlitz",
+        "from": 124.1,
+        "to": 129.4,
+        "color": "#dc2626",
+        "note": "step 8 guardrail: second Edit button"
+      },
+      {
+        "anchor": "createCardRect",
+        "from": 130.3,
+        "to": 139.9,
+        "color": "#dc2626",
+        "note": "step 9 guardrail: the dashed + Create New Challenge tile (opens game-tasks-edit.html) — never clicked"
+      },
+      {
+        "anchor": "viewCtrls.viewAll",
+        "from": 141,
+        "to": 146.1,
+        "color": "#2563eb",
+        "note": "step 10: the All filter is exercised (inert in this build — R1)"
+      },
+      {
+        "anchor": "viewCtrls.viewCompleted",
+        "from": 153.4,
+        "to": 156.5,
+        "color": "#2563eb",
+        "note": "step 11: the Completed filter (inert — R1)"
+      },
+      {
+        "anchor": "kpiTiles.kpiCompleted",
+        "from": 156.9,
+        "to": 160.2,
+        "color": "#f59e0b",
+        "note": "p49: the count lines up with the 18 Completed KPI"
+      },
+      {
+        "anchor": "viewCtrls.viewActive",
+        "from": 165,
+        "to": 169,
+        "color": "#2563eb",
+        "note": "step 12: back to the default Active view"
+      },
+      {
+        "anchor": "kpiBand2",
+        "from": 175.2,
+        "to": 180.5,
+        "color": "#2563eb",
+        "note": "recap p55: the KPIs count the whole program"
+      },
+      {
+        "anchor": "sideGroup2.sideLeaderboard",
+        "from": 187.2,
+        "to": 188.1,
+        "color": "#2563eb",
+        "note": "recap p59 spoken order: leaderboard"
+      },
+      {
+        "anchor": "sideGroup2.sideTargets",
+        "from": 188.1,
+        "to": 189,
+        "color": "#2563eb",
+        "note": "targets"
+      },
+      {
+        "anchor": "sideGroup2.sidePrizes",
+        "from": 189,
+        "to": 189.9,
+        "color": "#2563eb",
+        "note": "prizes"
+      },
+      {
+        "anchor": "sideGroup2.sideRecognition",
+        "from": 189.9,
+        "to": 190.8,
+        "color": "#2563eb",
+        "note": "recognition"
+      },
+      {
+        "anchor": "sideGroup2.sideSurveys",
+        "from": 190.8,
+        "to": 191.7,
+        "color": "#2563eb",
+        "note": "surveys"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 14.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "hold wide through step 1 nav and the intro"
+      },
+      {
+        "t": 15.8,
+        "z": 1.35,
+        "cx": 1117,
+        "cy": 160,
+        "ease": true,
+        "note": "step 2: 140%-class close on the KPI band (shot list)"
+      },
+      {
+        "t": 31.2,
+        "z": 1.35,
+        "cx": 1117,
+        "cy": 160
+      },
+      {
+        "t": 32.3,
+        "z": 1.32,
+        "cx": 235,
+        "cy": 500,
+        "ease": true,
+        "note": "step 3: the GAMIFICATION group — six sibling entries readable"
+      },
+      {
+        "t": 48.2,
+        "z": 1.32,
+        "cx": 235,
+        "cy": 500
+      },
+      {
+        "t": 49.3,
+        "z": 1.12,
+        "cx": 1080,
+        "cy": 260,
+        "ease": true,
+        "note": "step 4: board title, the three view controls, and the New Challenge guardrail"
+      },
+      {
+        "t": 67.6,
+        "z": 1.12,
+        "cx": 1080,
+        "cy": 260
+      },
+      {
+        "t": 68.7,
+        "z": 1.5,
+        "cx": 522,
+        "cy": 305,
+        "ease": true,
+        "note": "step 5: close on the Wash Count card top (shot list ~160%, capped at 1.5)"
+      },
+      {
+        "t": 85.3,
+        "z": 1.5,
+        "cx": 522,
+        "cy": 305
+      },
+      {
+        "t": 86.2,
+        "z": 1.5,
+        "cx": 522,
+        "cy": 388,
+        "ease": true,
+        "note": "step 6: the lower half of the same card"
+      },
+      {
+        "t": 101.4,
+        "z": 1.5,
+        "cx": 522,
+        "cy": 388
+      },
+      {
+        "t": 102.5,
+        "z": 1.2,
+        "cx": 1117,
+        "cy": 329,
+        "ease": true,
+        "note": "step 7: the other two RUNNING NOW cards"
+      },
+      {
+        "t": 115,
+        "z": 1.2,
+        "cx": 1117,
+        "cy": 329
+      },
+      {
+        "t": 115.9,
+        "z": 1.3,
+        "cx": 720,
+        "cy": 560,
+        "ease": true,
+        "note": "step 8: the STARTING SOON cards and their Edit guardrails"
+      },
+      {
+        "t": 129.4,
+        "z": 1.3,
+        "cx": 720,
+        "cy": 560
+      },
+      {
+        "t": 130.4,
+        "z": 1.35,
+        "cx": 1315,
+        "cy": 566,
+        "ease": true,
+        "note": "step 9: the dashed Create New Challenge tile"
+      },
+      {
+        "t": 139.9,
+        "z": 1.35,
+        "cx": 1315,
+        "cy": 566
+      },
+      {
+        "t": 141,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 10: pull wide for the All view"
+      },
+      {
+        "t": 152.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 153.4,
+        "z": 1.1,
+        "cx": 1117,
+        "cy": 300,
+        "ease": true,
+        "note": "step 11: show the board and the KPI band together to tie Completed to the 18 KPI"
+      },
+      {
+        "t": 164,
+        "z": 1.1,
+        "cx": 1117,
+        "cy": 300
+      },
+      {
+        "t": 164.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 12: settle wide on the default Active board"
+      },
+      {
+        "t": 174.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 175.6,
+        "z": 1.14,
+        "cx": 1117,
+        "cy": 250,
+        "ease": true,
+        "note": "step 13 recap: KPIs and board"
+      },
+      {
+        "t": 185.8,
+        "z": 1.14,
+        "cx": 1117,
+        "cy": 250
+      },
+      {
+        "t": 186.8,
+        "z": 1.32,
+        "cx": 235,
+        "cy": 500,
+        "ease": true,
+        "note": "recap: the sibling list in the sidebar"
+      },
+      {
+        "t": 192.2,
+        "z": 1.32,
+        "cx": 235,
+        "cy": 500
+      },
+      {
+        "t": 193.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 197.068,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Gamification — Complete",
+      "from": 195.27,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 194.97
+  },
+  "output": "WC-07-04-gamification-v1.1",
+  "orderedMentions": [
+    "Gamification",
+    "Challenges",
+    "Leaderboard",
+    "Targets",
+    "Prizes",
+    "Recognition Feed",
+    "Pulse Surveys",
+    "Active",
+    "All",
+    "Completed",
+    "New Challenge"
+  ],
+  "neverClick": [
+    "(?i)(save|edit|delete|new challenge|create new challenge|\\+ new|launch|activate|assign|award|send|post announcement|new survey|log ?out)",
+    "+ new challenge",
+    "create new challenge",
+    "edit",
+    "save",
+    "save changes",
+    "delete",
+    "launch",
+    "activate",
+    "assign",
+    "award",
+    "send",
+    "post announcement",
+    "+ new survey",
+    "leaderboard (sibling — named only, not toured)",
+    "targets (sibling — named only, not toured)",
+    "prizes (sibling — named only, not toured)",
+    "recognition feed (sibling — named only, not toured)",
+    "pulse surveys (sibling — named only, not toured)",
+    "ask shyne",
+    "logout"
+  ]
+}

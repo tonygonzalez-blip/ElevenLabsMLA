@@ -1,0 +1,165 @@
+{
+  "lesson": "WC-PB-08",
+  "audioMaster": "training/playbooks/WC-PB-08-full-narration-v1.0.mp3",
+  "output": "WC-PB-08-campaign-stopped-v1.1",
+  "note": "Verbatim phrases of the LOCKED narration, in spoken order, split at the script's <break> tags and sentence boundaries (<=~95 chars). Block windows are the blocks' MEASURED onsets in the joined master. ffprobe reports the master format duration at 228.598s and Sigma(per-file ffprobe audio + 0.4) at 229.035s (0.437s over, past the +-0.3s gate) — but that gap is MP3 container/encoder padding, not real inter-block spacing: decoding master and each sNN to 8 kHz mono PCM and FFT cross-correlating each block's 1.2s opening window against the master (+-0.8s search) returns onsets that match the tail-padded prediction with 0.000s drift and ncc=1.000 on every block. The master is a clean concatenation with exactly 0.4s inter-block gaps (decoded master = 228.56s). Block starts below are those measured onsets; final end and audioDurationS use the ffprobe master duration 228.598s. 'S-M-S' / 'Mass S-M-S Log' pronunciation hyphenation in the script is rendered as the spoken word 'SMS' / 'Mass SMS Log' in captions.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 17.68,
+      "phrases": [
+        { "id": "p01", "text": "Start in Marketing, on Campaigns." },
+        { "id": "p02", "text": "Four tiles across the top, and one is the headline: zero sent this month." },
+        { "id": "p03", "text": "When a manager says nothing went out, that tile confirms it at the network level." },
+        { "id": "p04", "text": "Sends have stalled." },
+        { "id": "p05", "text": "This is bigger than one missed text." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.68,
+      "endS": 34.88,
+      "phrases": [
+        { "id": "p06", "text": "Drop to the campaign list. Read, don't click." },
+        { "id": "p07", "text": "The column that matters is status." },
+        { "id": "p08", "text": "A draft was never launched." },
+        { "id": "p09", "text": "A completed campaign already finished its run." },
+        { "id": "p10", "text": "Neither will send now." },
+        { "id": "p11", "text": "Only scheduled and active campaigns are eligible, so those rows are the investigation." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.88,
+      "endS": 53.76,
+      "phrases": [
+        { "id": "p12", "text": "Look closer at the eligible rows." },
+        { "id": "p13", "text": "Two carry a pill: weather paused, six locations." },
+        { "id": "p14", "text": "That is a built-in hold, not an error." },
+        { "id": "p15", "text": "The platform is holding sends at those six sites on purpose." },
+        { "id": "p16", "text": "Name the pill in the ticket, and route the config question." },
+        { "id": "p17", "text": "Where it is set is not visible here." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 53.76,
+      "endS": 74.0,
+      "phrases": [
+        { "id": "p18", "text": "Now Marketing, Deliverability." },
+        { "id": "p19", "text": "The banner is the second reason a campaign goes quiet." },
+        { "id": "p20", "text": "Spam complaints on Flash Sale Weekend hit point one eight percent" },
+        { "id": "p21", "text": "against a point one zero threshold," },
+        { "id": "p22", "text": "so the platform recommends pausing sends to protect the domain." },
+        { "id": "p23", "text": "A campaign can look active and still be held here." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 74.0,
+      "endS": 95.6,
+      "phrases": [
+        { "id": "p24", "text": "Sweep the numbers underneath." },
+        { "id": "p25", "text": "In the metrics list, spam complaint rate is flagged for action." },
+        { "id": "p26", "text": "That flag is what the banner reacts to." },
+        { "id": "p27", "text": "Below it sit the engagement suppression toggles," },
+        { "id": "p28", "text": "live switches that decide who the platform stops emailing." },
+        { "id": "p29", "text": "Note their state." },
+        { "id": "p30", "text": "Never flip one while diagnosing." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 95.6,
+      "endS": 116.24,
+      "phrases": [
+        { "id": "p31", "text": "Third stop: the engine. Settings, Automation, Task Scheduler." },
+        { "id": "p32", "text": "Eighteen tasks, sixteen active, zero failed." },
+        { "id": "p33", "text": "Read zero failed first." },
+        { "id": "p34", "text": "The scheduling engine is healthy," },
+        { "id": "p35", "text": "so a stopped campaign is more likely a status or a guardrail than a broken job." },
+        { "id": "p36", "text": "A positive number here would change that instantly." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 116.24,
+      "endS": 136.16,
+      "phrases": [
+        { "id": "p37", "text": "Find the SMS Campaigns row." },
+        { "id": "p38", "text": "This is the heartbeat of outbound texting." },
+        { "id": "p39", "text": "It runs hourly, it last ran an hour ago," },
+        { "id": "p40", "text": "it is due again in fifty-two minutes, and its status is active." },
+        { "id": "p41", "text": "An eligible, unpaused campaign that is still silent, plus a stale or inactive row here?" },
+        { "id": "p42", "text": "That is your evidence." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 136.16,
+      "endS": 155.68,
+      "phrases": [
+        { "id": "p43", "text": "Fourth stop: the trail. Settings, Automation, Mass SMS Log." },
+        { "id": "p44", "text": "One row per recipient, with a status on each." },
+        { "id": "p45", "text": "Today's capture returned a fetch error and zero entries." },
+        { "id": "p46", "text": "Do not read that as nothing sent." },
+        { "id": "p47", "text": "Confirm the data loaded before you tell anyone the messages never went out." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 155.68,
+      "endS": 175.2,
+      "phrases": [
+        { "id": "p48", "text": "Last angle: money. Open Billing, then Usage and Billing." },
+        { "id": "p49", "text": "Two tabs matter." },
+        { "id": "p50", "text": "Invoices shows one open, an unpaid bill." },
+        { "id": "p51", "text": "Spending Alerts is where a usage cap would live." },
+        { "id": "p52", "text": "Both are places to check, not confirmed causes." },
+        { "id": "p53", "text": "Name the tab and the count." },
+        { "id": "p54", "text": "Do not assert the mechanism." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 175.2,
+      "endS": 190.08,
+      "phrases": [
+        { "id": "p55", "text": "Stay on Overview and read Usage by Source." },
+        { "id": "p56", "text": "Every row is a campaign, an automation, or a transactional send," },
+        { "id": "p57", "text": "with volume and cost this period." },
+        { "id": "p58", "text": "If the ticket names a campaign, this panel settles it:" },
+        { "id": "p59", "text": "did it send anything this month, and how much." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 190.08,
+      "endS": 211.12,
+      "phrases": [
+        { "id": "p60", "text": "Now build the ticket." },
+        { "id": "p61", "text": "The campaign name, its type and status chip, the weather pause pill if present." },
+        { "id": "p62", "text": "The deliverability signal." },
+        { "id": "p63", "text": "The scheduler timestamps, last run and next run." },
+        { "id": "p64", "text": "State which gate you found." },
+        { "id": "p65", "text": "Resuming the campaign happens in production with the right role." },
+        { "id": "p66", "text": "Never here." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 211.12,
+      "endS": 228.598,
+      "phrases": [
+        { "id": "p67", "text": "That's the narrowing flow." },
+        { "id": "p68", "text": "Status first, because draft and completed never send." },
+        { "id": "p69", "text": "Deliverability for a reputation hold." },
+        { "id": "p70", "text": "Task Scheduler for the heartbeat." },
+        { "id": "p71", "text": "The log for the trail." },
+        { "id": "p72", "text": "Billing for a cap or an open invoice." },
+        { "id": "p73", "text": "You escalated with evidence and moved nothing." }
+      ]
+    }
+  ]
+}

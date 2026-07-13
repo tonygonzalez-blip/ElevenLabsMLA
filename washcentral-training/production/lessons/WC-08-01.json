@@ -1,0 +1,1888 @@
+{
+  "lesson": "WC-08-01",
+  "title": "Operations: Maintenance Issues",
+  "audioMaster": "training/module08-operations/WC-08-01-full-narration-v1.0.mp3",
+  "audioDurationS": 201.404,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/maint-issues.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideIssues": {
+      "selector": "aside.sidebar a[href=\"maint-issues.html\"]"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiOpen": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Open Issues/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiInProgress": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/In Progress/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiHigh": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/High Priority/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiAvgRes": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Resolution/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "panelsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "panelReported": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Issues Reported/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelPriority": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Issues by Priority/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "panelStatusP": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Resolution Status/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/MAINTENANCE\\s*·\\s*ISSUES/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Issue List'&&e.getBoundingClientRect().width>0)"
+    },
+    "cardSubtitle": {
+      "js": "[...document.querySelectorAll('div,p,span')].find(e=>e.children.length===0&&/records · work order tracking/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newIssueBtn": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^\\+?\\s*New Issue$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "searchBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>/^Search$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "selector": "#maint-issues-search"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Location$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thTitle": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Title$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPriority": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Priority$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thAssigned": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Assigned To$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thCreated": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Created By$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thDate": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowAir": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Air dryer not reaching temp/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowConveyor": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Tunnel conveyor belt squeaking/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "rowPump": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/Chemical pump #3 leak/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "statusAir": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&/Air dryer not reaching temp/.test(c[2].textContent)});return tr?tr.querySelectorAll('td')[3]:null})()"
+    },
+    "statusConveyor": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&/Tunnel conveyor belt squeaking/.test(c[2].textContent)});return tr?tr.querySelectorAll('td')[3]:null})()"
+    },
+    "statusPump": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&/Chemical pump #3 leak/.test(c[2].textContent)});return tr?tr.querySelectorAll('td')[3]:null})()"
+    },
+    "assignedAir": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&/Air dryer not reaching temp/.test(c[2].textContent)});return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "assignedPump": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[2]&&/Chemical pump #3 leak/.test(c[2].textContent)});return tr?tr.querySelectorAll('td')[5]:null})()"
+    },
+    "pgInfo": {
+      "selector": ".pg-info"
+    },
+    "pagePrev": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(e=>e.textContent.trim()==='‹'&&e.getBoundingClientRect().width>0)"
+    },
+    "pageNum": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(e=>e.textContent.trim()==='1'&&e.getBoundingClientRect().width>0)"
+    },
+    "pageNext": {
+      "js": "[...document.querySelectorAll('.page-btn')].find(e=>e.textContent.trim()==='›'&&e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>160})()",
+    "onIssues": "location.pathname.endsWith('/maint-issues.html')",
+    "maintLinksVisible": "[...document.querySelectorAll('aside.sidebar a')].filter(e=>e.getBoundingClientRect().width>0&&/maint-(issues|schedule|equipment|checklist|parts)\\.html$/.test(e.getAttribute('href')||'')).length===5",
+    "issuesLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/maint-issues.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&rows.length===5&&[...document.querySelectorAll('table thead th')].some(e=>/^Status$/i.test((e.textContent||'').trim()))&&/of 5 records/.test(document.body.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "listIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/maint-issues.html')&&rows.length===5&&/of 5 records/.test(document.body.textContent||'')})()"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference expanded so the MAINTENANCE group links read with labels. .wc-rail-panel-toggle is the same control both ways (probe-verified July 11: expanded reads 'Hide panel', aside.sidebar width 220 with 5 MAINTENANCE links at x102 w203). Skipped when already expanded. The MAINTENANCE group itself is not collapsible — no group-toggle preflight is needed."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onIssues",
+      "note": "start page identity before capture (startUrl maint-issues.html; the lesson opens on the Maintenance Issues list — step 1 points at the already-active Issues link, it is never clicked)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted sidebar panel expanded; abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "issuesLoaded",
+      "note": "loaded: 4 KPI tiles, 3 insight panels, 5 issue rows, Status column, 'of 5 records', no agent-service error state"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 200.5,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "watch",
+      "key": "pageHeld",
+      "from": 1,
+      "to": 200.5,
+      "predicate": "onIssues",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: nothing is clicked across all 14 steps — the page never navigates or mutates. + New Issue, Export, Filters, Search, the row-link rows, and the page arrows are all pointed at, never pressed."
+    },
+    {
+      "op": "watch",
+      "key": "listIntact",
+      "from": 2,
+      "to": 200,
+      "predicate": "listIntact",
+      "everyMs": 3000,
+      "mustHold": true,
+      "note": "mutation guardrail: the Issue List holds 5 rows and 'of 5 records' the whole lesson — proves no issue was created, edited, resolved, or deleted"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "sideIssues",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1: enter from the bottom-left toward the MAINTENANCE Issues link as p01 says 'Open the Operations module, then Issues'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.8,
+      "key": "sideNav",
+      "targets": [
+        "sideIssues"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 0.95,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "crumbStrongRect",
+      "target": "crumbStrong"
+    },
+    {
+      "op": "move",
+      "at": 1.4,
+      "to": {
+        "target": "sideIssues",
+        "offset": [
+          150,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1: rest beside the active Issues link — never on the nav link (read-only; a same-page href, but we do not click it)"
+    },
+    {
+      "op": "move",
+      "at": 3.2,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02): travel to the breadcrumb title 'Maintenance Issues' (callout ①)"
+    },
+    {
+      "op": "move",
+      "at": 6,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          90,
+          34
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03-p04): hold under the breadcrumb while the work-order framing is spoken"
+    },
+    {
+      "op": "move",
+      "at": 10.2,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "ease over the page for the p05 tail 'One list tracks them all the way to fixed'"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.78,
+      "key": "kpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 16.85,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiOpen",
+        "kpiInProgress",
+        "kpiHigh",
+        "kpiAvgRes"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 16.9,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p06): 'Start at the top' — settle on the KPI strip"
+    },
+    {
+      "op": "move",
+      "at": 18.6,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p07): name the four tiles left to right — Open Issues"
+    },
+    {
+      "op": "move",
+      "at": 19.6,
+      "to": {
+        "target": "kpiInProgress",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "how many are being worked (In Progress)"
+    },
+    {
+      "op": "move",
+      "at": 20.65,
+      "to": {
+        "target": "kpiHigh",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 2 (p08): how many are high priority"
+    },
+    {
+      "op": "move",
+      "at": 21.3,
+      "to": {
+        "target": "kpiAvgRes",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "the average time to a fix (Avg Resolution)"
+    },
+    {
+      "op": "move",
+      "at": 22.5,
+      "to": {
+        "point": [
+          1117,
+          320
+        ]
+      },
+      "note": "ease off the strip for the p09 tail 'how heavy the load is'"
+    },
+    {
+      "op": "log-rect",
+      "at": 32.1,
+      "key": "panelReportedRect",
+      "target": "panelReported",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 32.32,
+      "to": {
+        "target": "panelReported",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 3 (p10): 'First panel, the twelve-month trend' — the Issues Reported panel"
+    },
+    {
+      "op": "move",
+      "at": 35.1,
+      "to": {
+        "target": "panelReported",
+        "offset": [
+          40,
+          40
+        ]
+      },
+      "note": "step 3 (p11): the total 18 and the ↑ +2 change marker"
+    },
+    {
+      "op": "move",
+      "at": 39.8,
+      "to": {
+        "target": "panelReported",
+        "offset": [
+          120,
+          60
+        ]
+      },
+      "note": "step 3 (p12): the rising trend line"
+    },
+    {
+      "op": "move",
+      "at": 42.7,
+      "to": {
+        "point": [
+          560,
+          320
+        ]
+      },
+      "note": "ease off for the p13 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 48,
+      "key": "panelPriorityRect",
+      "target": "panelPriority",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 48.16,
+      "to": {
+        "target": "panelPriority",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 4 (p14): 'Next, the priority breakdown' — Issues by Priority"
+    },
+    {
+      "op": "move",
+      "at": 50.78,
+      "to": {
+        "target": "panelPriority",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 4 (p15): sweep down Low, Medium,"
+    },
+    {
+      "op": "move",
+      "at": 52.6,
+      "to": {
+        "target": "panelPriority",
+        "offset": [
+          0,
+          70
+        ]
+      },
+      "note": "High,"
+    },
+    {
+      "op": "move",
+      "at": 54,
+      "to": {
+        "target": "panelPriority",
+        "offset": [
+          0,
+          100
+        ]
+      },
+      "note": "and Critical, each a share of the total"
+    },
+    {
+      "op": "move",
+      "at": 55.65,
+      "to": {
+        "target": "panelPriority",
+        "offset": [
+          40,
+          60
+        ]
+      },
+      "note": "step 4 (p16-p17): rest on the High share, the triage view"
+    },
+    {
+      "op": "move",
+      "at": 58.5,
+      "to": {
+        "point": [
+          1117,
+          320
+        ]
+      },
+      "note": "ease off for the p17 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 62,
+      "key": "panelStatusRect",
+      "target": "panelStatusP",
+      "requireStableMs": 200
+    },
+    {
+      "op": "move",
+      "at": 62.22,
+      "to": {
+        "target": "panelStatusP",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 5 (p18): 'Third panel, the pipeline' — Resolution Status"
+    },
+    {
+      "op": "move",
+      "at": 64.4,
+      "to": {
+        "target": "panelStatusP",
+        "offset": [
+          0,
+          45
+        ]
+      },
+      "note": "step 5 (p19): splits into Resolved, in Progress,"
+    },
+    {
+      "op": "move",
+      "at": 66.8,
+      "to": {
+        "target": "panelStatusP",
+        "offset": [
+          80,
+          70
+        ]
+      },
+      "note": "and Blocked"
+    },
+    {
+      "op": "move",
+      "at": 69.12,
+      "to": {
+        "target": "panelStatusP",
+        "offset": [
+          110,
+          90
+        ]
+      },
+      "note": "step 5 (p20-p21): rest on BLOCKED (0%), the one to watch"
+    },
+    {
+      "op": "move",
+      "at": 74.2,
+      "to": {
+        "point": [
+          1660,
+          320
+        ]
+      },
+      "note": "ease off for the p21 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 76.05,
+      "key": "eyebrowRect",
+      "target": "eyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 76.12,
+      "key": "cardTitleRect",
+      "target": "cardTitle",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 76.2,
+      "key": "cardSubtitleRect",
+      "target": "cardSubtitle"
+    },
+    {
+      "op": "move",
+      "at": 76.24,
+      "to": {
+        "target": "cardTitle",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 6 (p22): 'Now the list itself' — the Issue List card header"
+    },
+    {
+      "op": "move",
+      "at": 78.19,
+      "to": {
+        "target": "cardTitle",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 6 (p23): the header names it the Issue List and gives the record count"
+    },
+    {
+      "op": "move",
+      "at": 82.32,
+      "to": {
+        "target": "cardSubtitle",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "step 6 (p24): the subtitle — 5 records · work order tracking"
+    },
+    {
+      "op": "move",
+      "at": 84.6,
+      "to": {
+        "point": [
+          700,
+          300
+        ]
+      },
+      "note": "step 6 (p25): gesture up — everything above this card is just the summary"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.3,
+      "key": "newIssueRect",
+      "target": "newIssueBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 89.4,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "move",
+      "at": 89.52,
+      "to": {
+        "target": "newIssueBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p26): 'Top-right of that card, two buttons' — approach from beside, never onto them"
+    },
+    {
+      "op": "move",
+      "at": 92.28,
+      "to": {
+        "target": "newIssueBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p27) guardrail: + New Issue opens a blank work order — a create action (href maint-issues-edit.html); pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 94.67,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -38,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p28) guardrail: Export is a data-out download — red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 97.19,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -38,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p29): 'We won't export anything today; just know where it is'"
+    },
+    {
+      "op": "log-rect",
+      "at": 101.6,
+      "key": "newIssueRect2",
+      "target": "newIssueBtn"
+    },
+    {
+      "op": "move",
+      "at": 101.76,
+      "to": {
+        "target": "newIssueBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p30): the narration says 'Click New Issue to see the form' — SAFETY OVERRIDE (RESIDUAL R1): New Issue is a create-form navigation on a live shared tenant, so it is NOT clicked; we hold beside it with the red do-not-click ring. The form is never opened; nothing is logged."
+    },
+    {
+      "op": "move",
+      "at": 104.36,
+      "to": {
+        "target": "newIssueBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p31): hold beside + New Issue while the form's purpose is described (what broke, where, how urgent)"
+    },
+    {
+      "op": "move",
+      "at": 109.72,
+      "to": {
+        "target": "newIssueBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p32): 'We're only looking, so we back out without saving' — matched by never opening it in the first place"
+    },
+    {
+      "op": "move",
+      "at": 112.4,
+      "to": {
+        "point": [
+          1690,
+          300
+        ]
+      },
+      "note": "step 8 (p33): ease off — nothing gets logged"
+    },
+    {
+      "op": "log-rect",
+      "at": 113.6,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "log-rect",
+      "at": 113.68,
+      "key": "filtersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 113.72,
+      "key": "searchBtnRect",
+      "target": "searchBtn"
+    },
+    {
+      "op": "move",
+      "at": 113.76,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p34): 'Below the buttons, the search row'"
+    },
+    {
+      "op": "move",
+      "at": 115.56,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          220,
+          0
+        ]
+      },
+      "note": "step 9 (p35): the Search maintenance issues box — located, never typed in"
+    },
+    {
+      "op": "move",
+      "at": 118.92,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          -40,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p36): Filters ▾ narrows by status, priority, or site — located from beside, never opened"
+    },
+    {
+      "op": "move",
+      "at": 121.92,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          -40,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p37): the Search button — located, never pressed"
+    },
+    {
+      "op": "log-rect",
+      "at": 126.5,
+      "key": "theadRect",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 126.6,
+      "key": "ths",
+      "targets": [
+        "thLocation",
+        "thTitle",
+        "thStatus",
+        "thPriority",
+        "thAssigned",
+        "thCreated",
+        "thDate"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 126.71,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p38): 'The table has seven columns'"
+    },
+    {
+      "op": "move",
+      "at": 128.93,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p39): which site logged it,"
+    },
+    {
+      "op": "move",
+      "at": 129.5,
+      "to": {
+        "target": "thTitle",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "the title,"
+    },
+    {
+      "op": "move",
+      "at": 129.95,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "its status,"
+    },
+    {
+      "op": "move",
+      "at": 130.15,
+      "to": {
+        "target": "thPriority",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "its priority,"
+    },
+    {
+      "op": "move",
+      "at": 130.34,
+      "to": {
+        "target": "thAssigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p40): who owns it,"
+    },
+    {
+      "op": "move",
+      "at": 131,
+      "to": {
+        "target": "thCreated",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "who reported it,"
+    },
+    {
+      "op": "move",
+      "at": 131.6,
+      "to": {
+        "target": "thDate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and the date"
+    },
+    {
+      "op": "move",
+      "at": 133.35,
+      "to": {
+        "target": "rowAir",
+        "offset": [
+          420,
+          0
+        ]
+      },
+      "note": "step 10 (p41): 'Read across one row and you have the whole story'"
+    },
+    {
+      "op": "log-rect",
+      "at": 140.7,
+      "key": "rowAirRect",
+      "target": "rowAir"
+    },
+    {
+      "op": "log-rect",
+      "at": 140.78,
+      "key": "statusAirRect",
+      "target": "statusAir"
+    },
+    {
+      "op": "log-rect",
+      "at": 140.84,
+      "key": "statusConveyorRect",
+      "target": "statusConveyor"
+    },
+    {
+      "op": "log-rect",
+      "at": 140.9,
+      "key": "statusPumpRect",
+      "target": "statusPump"
+    },
+    {
+      "op": "move",
+      "at": 140.96,
+      "to": {
+        "target": "rowAir",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 11 (p42): 'Look at the live examples' (rows are row-link but are never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 142.92,
+      "to": {
+        "target": "statusAir",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p43): Air dryer not reaching temp — Open, high"
+    },
+    {
+      "op": "move",
+      "at": 147.38,
+      "to": {
+        "target": "statusConveyor",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p44): Tunnel conveyor belt squeaking — In Progress"
+    },
+    {
+      "op": "move",
+      "at": 151.73,
+      "to": {
+        "target": "statusPump",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p45): Chemical pump #3 leak — Critical, Resolved"
+    },
+    {
+      "op": "move",
+      "at": 155.61,
+      "to": {
+        "point": [
+          900,
+          660
+        ]
+      },
+      "note": "step 11 (p46): ease down the rows — real problems, each at a different stage"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.4,
+      "key": "thAssignedRect",
+      "target": "thAssigned"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.46,
+      "key": "thCreatedRect",
+      "target": "thCreated"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.52,
+      "key": "assignedAirRect",
+      "target": "assignedAir"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.58,
+      "key": "assignedPumpRect",
+      "target": "assignedPump"
+    },
+    {
+      "op": "move",
+      "at": 158.64,
+      "to": {
+        "target": "thAssigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p47): 'Notice two columns are blank' — the ASSIGNED TO header"
+    },
+    {
+      "op": "move",
+      "at": 160.86,
+      "to": {
+        "target": "assignedAir",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p48): Assigned To shows a dash on every row"
+    },
+    {
+      "op": "move",
+      "at": 163.2,
+      "to": {
+        "target": "assignedPump",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12: sweep the dash down the Assigned To column"
+    },
+    {
+      "op": "move",
+      "at": 165.55,
+      "to": {
+        "target": "thCreated",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p49): Created By — in a live tenant these carry names"
+    },
+    {
+      "op": "move",
+      "at": 168.22,
+      "to": {
+        "target": "assignedAir",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12 (p50): a row with no owner is your cue that somebody still needs to pick it up"
+    },
+    {
+      "op": "log-rect",
+      "at": 172.55,
+      "key": "pgInfoRect",
+      "target": "pgInfo"
+    },
+    {
+      "op": "log-rects",
+      "at": 172.65,
+      "key": "pageCtl",
+      "targets": [
+        "pagePrev",
+        "pageNum",
+        "pageNext"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 172.78,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p51): 'At the foot of the list, the counter'"
+    },
+    {
+      "op": "move",
+      "at": 175.31,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          90,
+          0
+        ]
+      },
+      "note": "step 13 (p52): it reads five of five, on one page"
+    },
+    {
+      "op": "move",
+      "at": 176.13,
+      "to": {
+        "target": "pageNext",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p53): the page arrows walk you through the rest — located from beside, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 180,
+      "to": {
+        "target": "pageNext",
+        "offset": [
+          0,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 13: hold beside the › arrow through the p53 tail"
+    },
+    {
+      "op": "log-rect",
+      "at": 183,
+      "key": "kpiStripRect2",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.08,
+      "key": "panelsRowRect",
+      "target": "panelsRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.14,
+      "key": "theadRect2",
+      "target": "theadRow"
+    },
+    {
+      "op": "move",
+      "at": 183.2,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 14 (p54): recap — 'So that's the work-order board', start at the KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 185.45,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 14 (p55): the four numbers up top tell you the load,"
+    },
+    {
+      "op": "move",
+      "at": 187.1,
+      "to": {
+        "target": "panelsRow",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "the three panels tell you its shape"
+    },
+    {
+      "op": "move",
+      "at": 188.08,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          340,
+          0
+        ]
+      },
+      "note": "step 14 (p56): and the list is where every fix gets tracked"
+    },
+    {
+      "op": "move",
+      "at": 190,
+      "to": {
+        "target": "rowAir",
+        "offset": [
+          300,
+          0
+        ]
+      },
+      "note": "step 14: down into the list rows"
+    },
+    {
+      "op": "move",
+      "at": 193.24,
+      "to": {
+        "target": "newIssueBtn",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 14 (p57): 'New Issue starts one' — beside + New Issue, never clicked; the columns tell you where it stands"
+    },
+    {
+      "op": "move",
+      "at": 195.06,
+      "to": {
+        "point": [
+          1560,
+          930
+        ]
+      },
+      "note": "step 14 (p58): final park, clear of content and captions, as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 200.9,
+      "predicate": "onIssues",
+      "note": "end state: still on Maintenance Issues, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 201.05,
+      "predicate": "listIntact",
+      "note": "end state: list intact — 5 rows, 'of 5 records'; nothing was created, edited, resolved, or deleted on the page"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 1.2,
+        "to": 9.6
+      },
+      {
+        "n": 2,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 17,
+        "to": 31.6
+      },
+      {
+        "n": 3,
+        "anchor": "panelReportedRect",
+        "place": "below-left",
+        "from": 32.4,
+        "to": 47.6
+      },
+      {
+        "n": 4,
+        "anchor": "panelPriorityRect",
+        "place": "below-left",
+        "from": 48.2,
+        "to": 61.7
+      },
+      {
+        "n": 5,
+        "anchor": "panelStatusRect",
+        "place": "left",
+        "from": 62.3,
+        "to": 75.9
+      },
+      {
+        "n": 6,
+        "anchor": "cardTitleRect",
+        "place": "below-left",
+        "from": 76.3,
+        "to": 89.1
+      },
+      {
+        "n": 7,
+        "anchor": "newIssueRect",
+        "place": "left",
+        "from": 89.5,
+        "to": 101.4
+      },
+      {
+        "n": 8,
+        "anchor": "newIssueRect2",
+        "place": "left",
+        "from": 101.8,
+        "to": 113.4
+      },
+      {
+        "n": 9,
+        "anchor": "searchBoxRect",
+        "place": "below-left",
+        "from": 113.8,
+        "to": 126.3
+      },
+      {
+        "n": 10,
+        "anchor": "theadRect",
+        "place": "below-left",
+        "from": 126.7,
+        "to": 140.5
+      },
+      {
+        "n": 11,
+        "anchor": "statusAirRect",
+        "place": "left",
+        "from": 141,
+        "to": 158.4
+      },
+      {
+        "n": 12,
+        "anchor": "thAssignedRect",
+        "place": "left",
+        "from": 158.6,
+        "to": 172.4
+      },
+      {
+        "n": 13,
+        "anchor": "pgInfoRect",
+        "place": "left",
+        "from": 172.7,
+        "to": 182.9
+      },
+      {
+        "n": 14,
+        "anchor": "kpiStripRect2",
+        "place": "below-left",
+        "from": 183.2,
+        "to": 198.6
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideNav.sideIssues",
+        "from": 1.4,
+        "to": 3.2,
+        "note": "step 1 (p01): the active MAINTENANCE Issues link (pointed at, never clicked)"
+      },
+      {
+        "anchor": "crumbStrongRect",
+        "from": 3.2,
+        "to": 8.5,
+        "note": "step 1 (p02): the Maintenance Issues title"
+      },
+      {
+        "anchor": "kpiTiles.kpiOpen",
+        "from": 18.6,
+        "to": 19.6,
+        "note": "step 2 (p07): tiles named in spoken order — Open Issues"
+      },
+      {
+        "anchor": "kpiTiles.kpiInProgress",
+        "from": 19.6,
+        "to": 20.65,
+        "note": "In Progress"
+      },
+      {
+        "anchor": "kpiTiles.kpiHigh",
+        "from": 20.65,
+        "to": 21.3,
+        "note": "p08 High Priority"
+      },
+      {
+        "anchor": "kpiTiles.kpiAvgRes",
+        "from": 21.3,
+        "to": 22.5,
+        "note": "Avg Resolution"
+      },
+      {
+        "anchor": "panelReportedRect",
+        "from": 35.1,
+        "to": 42.5,
+        "note": "step 3 (p11-p12): Issues Reported — the total 18 ↑ +2 and rising trend"
+      },
+      {
+        "anchor": "panelPriorityRect",
+        "from": 50.78,
+        "to": 58.3,
+        "note": "step 4 (p15-p17): Issues by Priority — Low, Medium, High, Critical shares"
+      },
+      {
+        "anchor": "panelStatusRect",
+        "from": 64.4,
+        "to": 74,
+        "note": "step 5 (p19-p21): Resolution Status — Resolved, in Progress, Blocked (0%)"
+      },
+      {
+        "anchor": "cardTitleRect",
+        "from": 78.19,
+        "to": 82.32,
+        "note": "step 6 (p23): Issue List title + record count"
+      },
+      {
+        "anchor": "cardSubtitleRect",
+        "from": 82.32,
+        "to": 88.8,
+        "note": "step 6 (p24): 5 records · work order tracking"
+      },
+      {
+        "anchor": "newIssueRect",
+        "from": 92.28,
+        "to": 101.5,
+        "color": "#dc2626",
+        "note": "step 7 (p27) do-not-click: + New Issue is a create-form navigation, never pressed"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 89.5,
+        "to": 101.5,
+        "color": "#dc2626",
+        "note": "step 7 (p28) do-not-click: Export is a data-out download, never pressed"
+      },
+      {
+        "anchor": "newIssueRect2",
+        "from": 101.8,
+        "to": 113.4,
+        "color": "#dc2626",
+        "note": "step 8 (p30-p32) do-not-click STOP: + New Issue opens a create form on a live tenant — held beside, never clicked (RESIDUAL R1)"
+      },
+      {
+        "anchor": "searchBoxRect",
+        "from": 115.56,
+        "to": 118.9,
+        "note": "step 9 (p35): Search maintenance issues box (never typed in)"
+      },
+      {
+        "anchor": "filtersRect",
+        "from": 118.92,
+        "to": 121.9,
+        "note": "step 9 (p36): Filters ▾ (located, never opened)"
+      },
+      {
+        "anchor": "searchBtnRect",
+        "from": 121.92,
+        "to": 126.3,
+        "note": "step 9 (p37): Search button (located, never pressed)"
+      },
+      {
+        "anchor": "theadRect",
+        "from": 126.71,
+        "to": 130.34,
+        "note": "step 10 (p39): the seven column headers, swept left to right"
+      },
+      {
+        "anchor": "ths.thAssigned",
+        "from": 130.34,
+        "to": 131,
+        "note": "step 10 (p40): Assigned To"
+      },
+      {
+        "anchor": "ths.thCreated",
+        "from": 131,
+        "to": 131.6,
+        "note": "Created By"
+      },
+      {
+        "anchor": "ths.thDate",
+        "from": 131.6,
+        "to": 133.35,
+        "note": "Date"
+      },
+      {
+        "anchor": "statusAirRect",
+        "from": 142.92,
+        "to": 147.38,
+        "note": "step 11 (p43): STATUS chip — Open (Air dryer)"
+      },
+      {
+        "anchor": "statusConveyorRect",
+        "from": 147.38,
+        "to": 151.73,
+        "note": "step 11 (p44): In Progress (Tunnel conveyor)"
+      },
+      {
+        "anchor": "statusPumpRect",
+        "from": 151.73,
+        "to": 158.2,
+        "note": "step 11 (p45): Resolved (Chemical pump #3 leak, critical)"
+      },
+      {
+        "anchor": "thAssignedRect",
+        "from": 160.86,
+        "to": 165.55,
+        "note": "step 12 (p48): the blank ASSIGNED TO column (a dash on every row)"
+      },
+      {
+        "anchor": "thCreatedRect",
+        "from": 165.55,
+        "to": 172.2,
+        "note": "step 12 (p49): the blank CREATED BY column"
+      },
+      {
+        "anchor": "pgInfoRect",
+        "from": 172.78,
+        "to": 176.13,
+        "note": "step 13 (p51-p52): Showing 1–5 of 5 records"
+      },
+      {
+        "anchor": "pageCtl.pageNext",
+        "from": 176.13,
+        "to": 182.7,
+        "note": "step 13 (p53): the › page arrow (located, never clicked)"
+      },
+      {
+        "anchor": "kpiStripRect2",
+        "from": 185.45,
+        "to": 188.08,
+        "note": "step 14 (p55): recap — the four numbers (load)"
+      },
+      {
+        "anchor": "panelsRowRect",
+        "from": 187.1,
+        "to": 188.08,
+        "note": "step 14 (p55): the three panels (shape)"
+      },
+      {
+        "anchor": "theadRect2",
+        "from": 188.08,
+        "to": 192.8,
+        "note": "step 14 (p56): the list, where every fix gets tracked"
+      },
+      {
+        "anchor": "newIssueRect2",
+        "from": 193.24,
+        "to": 195,
+        "color": "#dc2626",
+        "note": "step 14 (p57): + New Issue starts one — do-not-click guardrail, still never pressed"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.2,
+        "z": 1.2,
+        "cx": 560,
+        "cy": 200,
+        "ease": true,
+        "note": "step 1: sidebar + breadcrumb title"
+      },
+      {
+        "t": 9.6,
+        "z": 1.2,
+        "cx": 560,
+        "cy": 200
+      },
+      {
+        "t": 10.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the intro tail (p05)"
+      },
+      {
+        "t": 16.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.9,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 150,
+        "ease": true,
+        "note": "step 2: 130% on the KPI strip (shot list)"
+      },
+      {
+        "t": 31.6,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 150
+      },
+      {
+        "t": 32.32,
+        "z": 1.32,
+        "cx": 560,
+        "cy": 250,
+        "ease": true,
+        "note": "step 3: the Issues Reported panel (18 ↑ +2 and trend)"
+      },
+      {
+        "t": 47.6,
+        "z": 1.32,
+        "cx": 560,
+        "cy": 250
+      },
+      {
+        "t": 48.16,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: the Issues by Priority panel"
+      },
+      {
+        "t": 61.7,
+        "z": 1.3,
+        "cx": 1117,
+        "cy": 250
+      },
+      {
+        "t": 62.22,
+        "z": 1.32,
+        "cx": 1660,
+        "cy": 250,
+        "ease": true,
+        "note": "step 5: the Resolution Status panel (Blocked at 0%)"
+      },
+      {
+        "t": 75.9,
+        "z": 1.32,
+        "cx": 1660,
+        "cy": 250
+      },
+      {
+        "t": 76.24,
+        "z": 1.18,
+        "cx": 700,
+        "cy": 400,
+        "ease": true,
+        "note": "step 6: the Issue List card header"
+      },
+      {
+        "t": 89.1,
+        "z": 1.18,
+        "cx": 700,
+        "cy": 400
+      },
+      {
+        "t": 89.52,
+        "z": 1.35,
+        "cx": 1690,
+        "cy": 400,
+        "ease": true,
+        "note": "step 7: the + New Issue / Export buttons top-right (both red guardrails)"
+      },
+      {
+        "t": 113.4,
+        "z": 1.35,
+        "cx": 1690,
+        "cy": 400,
+        "note": "step 8: held on the + New Issue guardrail — the form is never opened"
+      },
+      {
+        "t": 113.76,
+        "z": 1.24,
+        "cx": 1000,
+        "cy": 468,
+        "ease": true,
+        "note": "step 9: the search row (box, Filters ▾, Search)"
+      },
+      {
+        "t": 126.3,
+        "z": 1.24,
+        "cx": 1000,
+        "cy": 468
+      },
+      {
+        "t": 126.71,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 560,
+        "ease": true,
+        "note": "step 10: the seven column headers"
+      },
+      {
+        "t": 140.5,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 560
+      },
+      {
+        "t": 140.96,
+        "z": 1.26,
+        "cx": 900,
+        "cy": 620,
+        "ease": true,
+        "note": "step 11: the five example rows and their STATUS chips"
+      },
+      {
+        "t": 158.4,
+        "z": 1.26,
+        "cx": 900,
+        "cy": 620
+      },
+      {
+        "t": 158.64,
+        "z": 1.34,
+        "cx": 1500,
+        "cy": 600,
+        "ease": true,
+        "note": "step 12: the blank ASSIGNED TO / CREATED BY columns"
+      },
+      {
+        "t": 172.4,
+        "z": 1.34,
+        "cx": 1500,
+        "cy": 600
+      },
+      {
+        "t": 172.78,
+        "z": 1.16,
+        "cx": 1080,
+        "cy": 760,
+        "ease": true,
+        "note": "step 13: the footer counter and page arrows"
+      },
+      {
+        "t": 182.9,
+        "z": 1.16,
+        "cx": 1080,
+        "cy": 760
+      },
+      {
+        "t": 183.2,
+        "z": 1.12,
+        "cx": 1117,
+        "cy": 380,
+        "ease": true,
+        "note": "step 14: recap sweep from the KPI strip down to the list"
+      },
+      {
+        "t": 198.6,
+        "z": 1.12,
+        "cx": 1117,
+        "cy": 380
+      },
+      {
+        "t": 199.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 201.404,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Maintenance Issues — Complete",
+      "from": 199.6,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 199.3
+  },
+  "output": "WC-08-01-maintenance-issues-v1.1",
+  "neverClick": [
+    "\\+ ?new issue",
+    "new issue",
+    "new record",
+    "report issue",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "edit record",
+    "delete",
+    "yes, delete",
+    "\\bsave\\b",
+    "save changes",
+    "\\bassign\\b",
+    "assign to",
+    "reassign",
+    "resolve",
+    "\\bclose\\b",
+    "reopen",
+    "change status",
+    "\\bstatus\\b",
+    "priority",
+    "export",
+    "filters",
+    "\\bsearch\\b",
+    "\\bsend\\b",
+    "submit",
+    "issue rows / row-link rows (no row is opened; detail is out of scope)",
+    "page arrows / pagination buttons",
+    "log ?out",
+    "logout",
+    "ask shyne"
+  ]
+}

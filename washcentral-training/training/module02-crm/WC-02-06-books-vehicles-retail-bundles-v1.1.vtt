@@ -1,0 +1,210 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.788
+Open CRM in the left rail.
+
+p02
+00:00:02.504 --> 00:00:05.042
+The sidebar stacks every kind of customer record: members, gift cards, house accounts,
+
+p03
+00:00:05.380 --> 00:00:09.089
+and the four we cover today.
+
+p04
+00:00:09.772 --> 00:00:11.215
+One page per record type.
+
+p05
+00:00:11.806 --> 00:00:15.593
+Learn where each one lives and you stop guessing which screen holds the answer.
+
+p06
+00:00:16.000 --> 00:00:17.392
+Click Prepaid Books.
+
+p07
+00:00:17.896 --> 00:00:21.630
+A prepaid book is a stack of washes a customer already paid for.
+
+p08
+00:00:22.201 --> 00:00:23.725
+The tiles up top count them: total, active, completed, and how many expire soon.
+
+p09
+00:00:24.201 --> 00:00:27.965
+In today's capture those numbers were still loading,
+
+p10
+00:00:28.699 --> 00:00:33.920
+but the labels tell you exactly what to read.
+
+p11
+00:00:34.320 --> 00:00:35.608
+Now the list itself.
+
+p12
+00:00:36.643 --> 00:00:39.382
+Six columns, and two do the work on a call:
+
+p13
+00:00:40.053 --> 00:00:41.932
+Remaining tells you washes left, Expiration tells you the deadline.
+
+p14
+00:00:42.424 --> 00:00:44.282
+The rows failed to load in this capture,
+
+p15
+00:00:45.116 --> 00:00:51.765
+so read the column headers and refresh live before you promise a customer anything.
+
+p16
+00:00:52.306 --> 00:00:53.685
+Click Vehicles.
+
+p17
+00:00:54.176 --> 00:00:57.634
+This is the master plate list, nearly four thousand cars.
+
+p18
+00:00:57.931 --> 00:00:59.093
+The tiles loaded here: total vehicles, active members, flagged, and new this month.
+
+p19
+00:00:59.606 --> 00:01:07.360
+When a plate gets flagged at the gate, Flagged is your first stop.
+
+p20
+00:01:07.831 --> 00:01:08.821
+Scroll to the list.
+
+p21
+00:01:09.320 --> 00:01:10.862
+Seven columns: plate, make and model, year, customer, location, status, last visit.
+
+p22
+00:01:11.304 --> 00:01:12.133
+For a dispute you want License Plate and Status.
+
+p23
+00:01:12.451 --> 00:01:12.944
+The rows hit the same fetch error, but the tiles above prove the data is there.
+
+p24
+00:01:13.484 --> 00:01:26.925
+It just didn't stream into the table.
+
+p25
+00:01:27.520 --> 00:01:29.031
+Click Retail Customers.
+
+p26
+00:01:29.993 --> 00:01:31.853
+This one is bare on purpose.
+
+p27
+00:01:32.168 --> 00:01:36.509
+No tiles, no charts, just a search box and five columns:
+
+p28
+00:01:36.932 --> 00:01:40.465
+customer, plate, home location, email, phone.
+
+p29
+00:01:41.220 --> 00:01:45.464
+It holds walk-ins and non-members, the people without a full membership record.
+
+p30
+00:01:46.237 --> 00:01:48.479
+Search, read the contact, done.
+
+p31
+00:01:48.880 --> 00:01:49.884
+Click Bundles.
+
+p32
+00:01:50.452 --> 00:01:53.076
+A bundle is a packaged deal a site sells.
+
+p33
+00:01:53.368 --> 00:01:54.423
+The tiles loaded: thirty-two bundles, twenty-eight active, and this month's sales and revenue.
+
+p34
+00:01:54.815 --> 00:01:59.023
+The Revenue by Bundle panel ranks which packages actually move,
+
+p35
+00:01:59.606 --> 00:02:06.561
+so you can see the Monthly Value Pack carrying the month.
+
+p36
+00:02:07.094 --> 00:02:07.864
+Now the list, and this one actually loaded.
+
+p37
+00:02:08.121 --> 00:02:09.487
+Seven columns, and five packages on screen,
+
+p38
+00:02:09.800 --> 00:02:15.592
+from the Summer Special to the Fleet Pack built for fleets.
+
+p39
+00:02:16.236 --> 00:02:20.650
+Watch the Valid At column: some run at every site, others only at a couple.
+
+p40
+00:02:21.121 --> 00:02:24.851
+That column settles most "does this work at my location" questions.
+
+p41
+00:02:25.280 --> 00:02:27.802
+One more entry, Fundraiser, sits right below Bundles.
+
+p42
+00:02:27.802 --> 00:02:29.313
+Do not click it.
+
+p43
+00:02:29.313 --> 00:02:32.822
+Its link goes nowhere and the page was never built.
+
+p44
+00:02:32.822 --> 00:02:36.692
+It is parked, so treat the menu item as a placeholder
+
+p45
+00:02:36.692 --> 00:02:40.160
+and never promise a customer a fundraiser feature from this screen.
+
+p46
+00:02:40.560 --> 00:02:42.880
+So, four lists, one sidebar.
+
+p47
+00:02:43.424 --> 00:02:46.143
+Prepaid Books for washes left and expiry.
+
+p48
+00:02:46.449 --> 00:02:48.147
+Vehicles for plates and flags.
+
+p49
+00:02:48.367 --> 00:02:50.484
+Retail Customers for walk-ins.
+
+p50
+00:02:50.846 --> 00:02:52.947
+Bundles for what's on the menu and where.
+
+p51
+00:02:53.415 --> 00:02:55.008
+Match the ticket to the list, open it, read the row.
+
+p52
+00:02:55.245 --> 00:02:59.200
+That's the whole job on these four screens.
+

@@ -1,0 +1,262 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:04.823
+Open the Team module, then under Sales Coaching, click QA Dashboard.
+
+p02
+00:00:05.402 --> 00:00:10.661
+This area records how staff sell at the register and scores every interaction against a script.
+
+p03
+00:00:11.298 --> 00:00:16.578
+Three pages hold it: the dashboard, the scripts behind it, and the conversations themselves.
+
+p04
+00:00:17.040 --> 00:00:18.799
+Start with the four numbers up top.
+
+p05
+00:00:19.317 --> 00:00:20.446
+Average score this month, how many conversations fed it,
+
+p06
+00:00:20.832 --> 00:00:24.824
+the share clearing the seventy-five percent target, and the swing against last month.
+
+p07
+00:00:25.210 --> 00:00:30.240
+Green and up means the team is trending the right way.
+
+p08
+00:00:30.640 --> 00:00:31.584
+Look at the trend.
+
+p09
+00:00:32.458 --> 00:00:36.453
+Twelve weeks of average score, drawn against a dashed line at the target.
+
+p10
+00:00:37.060 --> 00:00:40.953
+When the solid line rides above the dash, the team is clearing the bar.
+
+p11
+00:00:41.245 --> 00:00:42.568
+Right now it's climbing.
+
+p12
+00:00:43.267 --> 00:00:44.516
+Now the distribution.
+
+p13
+00:00:45.063 --> 00:00:49.015
+Every scored interaction falls into a letter grade, A through F.
+
+p14
+00:00:49.865 --> 00:00:52.083
+Half of them land in the B band this month.
+
+p15
+00:00:52.636 --> 00:00:57.440
+The A's and B's together are your at-or-above-target share, in one glance.
+
+p16
+00:00:57.840 --> 00:01:01.424
+Here's the panel that earns its keep.
+
+p17
+00:01:01.424 --> 00:01:05.548
+Seven behaviors the platform listens for on every call, from greeting to closing,
+
+p18
+00:01:05.548 --> 00:01:07.997
+each with a hit rate.
+
+p19
+00:01:07.997 --> 00:01:11.486
+Membership sits at forty-seven percent, in red, well below the rest.
+
+p20
+00:01:11.486 --> 00:01:12.968
+There's the gap.
+
+p21
+00:01:13.511 --> 00:01:14.975
+The system already flagged it.
+
+p22
+00:01:15.863 --> 00:01:21.958
+The Coaching Opportunity callout takes that weakest number
+
+p23
+00:01:22.535 --> 00:01:24.614
+and turns it into a sentence a manager can act on: focus training on the membership pitch.
+
+p24
+00:01:25.103 --> 00:01:27.680
+Read this panel first when you open the dashboard.
+
+p25
+00:01:28.156 --> 00:01:29.769
+On the right, the leaderboard.
+
+p26
+00:01:30.352 --> 00:01:34.910
+Top performers this month by average score, each with their conversation count next to it.
+
+p27
+00:01:35.386 --> 00:01:38.122
+Notice volume and score don't always line up.
+
+p28
+00:01:38.618 --> 00:01:42.566
+The button underneath jumps to every conversation, but leave it for now.
+
+p29
+00:01:43.040 --> 00:01:44.905
+Scroll to the recent activity table.
+
+p30
+00:01:45.530 --> 00:01:51.560
+The last ten interactions across every location: who, when, where, how long, and the grade.
+
+p31
+00:01:52.309 --> 00:01:56.777
+The script column shows only a dash, so it won't tell you which script scored the call.
+
+p32
+00:01:57.076 --> 00:01:58.930
+For that, we open the scripts page.
+
+p33
+00:01:59.425 --> 00:02:00.869
+Click Scoring Scripts.
+
+p34
+00:02:01.743 --> 00:02:02.570
+Its own header: two active scripts, one draft,
+
+p35
+00:02:02.871 --> 00:02:09.605
+seven checkpoints on average, and two hundred eighty-four scored this month.
+
+p36
+00:02:10.307 --> 00:02:14.880
+That last number is the same pool the dashboard counted, just labelled differently.
+
+p37
+00:02:15.280 --> 00:02:16.563
+This is the rulebook.
+
+p38
+00:02:17.039 --> 00:02:20.185
+Each script defines what the AI grades and how it's weighted.
+
+p39
+00:02:20.556 --> 00:02:24.890
+A default standard-wash script, a membership-focused one with a higher target,
+
+p40
+00:02:25.161 --> 00:02:27.136
+and a win-back script still in draft.
+
+p41
+00:02:27.522 --> 00:02:30.432
+You read these; a manager builds and edits them.
+
+p42
+00:02:30.960 --> 00:02:32.518
+One note card sits below.
+
+p43
+00:02:32.890 --> 00:02:35.036
+It's best-practice guidance on weighting: revenue behaviors like membership highest,
+
+p44
+00:02:35.578 --> 00:02:37.937
+soft skills like greeting lowest, and a pass mark around seventy-five to eighty percent.
+
+p45
+00:02:38.267 --> 00:02:46.782
+Helpful context, but it's just a note, not a setting.
+
+p46
+00:02:47.200 --> 00:02:48.025
+Last page. Click Conversations.
+
+p47
+00:02:48.515 --> 00:02:49.932
+Same headline numbers as the dashboard, plus one that matters most for triage: needs coaching.
+
+p48
+00:02:50.320 --> 00:02:55.758
+Twelve interactions this month scored low enough to review.
+
+p49
+00:02:56.144 --> 00:03:00.911
+That's your work queue.
+
+p50
+00:03:01.432 --> 00:03:04.611
+This is the full log, all two hundred eighty-four records.
+
+p51
+00:03:05.032 --> 00:03:07.083
+Search by employee or transcript, filter, or export, though we won't export today.
+
+p52
+00:03:07.393 --> 00:03:08.866
+Each row is one scored interaction.
+
+p53
+00:03:09.127 --> 00:03:10.663
+Ignore the checkpoints-met column here;
+
+p54
+00:03:11.148 --> 00:03:13.388
+it reads zero of eight on every row, which is just demo data.
+
+p55
+00:03:13.645 --> 00:03:22.536
+The real hit rates live on the dashboard.
+
+p56
+00:03:23.023 --> 00:03:24.197
+Put the three together.
+
+p57
+00:03:24.715 --> 00:03:26.855
+The dashboard flagged membership as weak.
+
+p58
+00:03:27.405 --> 00:03:29.995
+The scripts page holds the script built to fix it.
+
+p59
+00:03:30.336 --> 00:03:33.907
+And this log is where a manager pulls the actual calls to coach from.
+
+p60
+00:03:34.455 --> 00:03:38.080
+One weak number, three pages, a real next step.
+
+p61
+00:03:38.570 --> 00:03:41.079
+So, three pages, three questions.
+
+p62
+00:03:41.490 --> 00:03:43.214
+How's the team and what's weak: the QA Dashboard.
+
+p63
+00:03:43.780 --> 00:03:44.903
+What are we grading against: Scoring Scripts.
+
+p64
+00:03:45.388 --> 00:03:46.572
+Show me the actual calls: Conversations.
+
+p65
+00:03:46.894 --> 00:03:55.989
+You read all three; the managers you support act on them.
+

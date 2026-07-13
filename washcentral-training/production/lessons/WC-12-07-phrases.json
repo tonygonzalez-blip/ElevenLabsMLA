@@ -1,0 +1,176 @@
+{
+  "lesson": "WC-12-07",
+  "audioMaster": "training/module12-settings/WC-12-07-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows are the blocks' measured onsets in the joined master, not the Σ(audio+0.4) prediction: the formula predicts 235.713s but the ffprobed master is 235.154s (0.56s short, past the ±0.3s gate), so the master was joined with ~0.35s inter-block gaps rather than 0.40s. Each block start is its true onset measured by FFT cross-correlation of sNN.mp3 against the 8 kHz mono master (every inter-block gap came out 0.349–0.372s, tail 0.351s; block widths agree with the per-step ffprobe durations within mp3 frame padding). endS of block N = onset of block N+1; final end = ffprobed master duration 235.154s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.16,
+      "phrases": [
+        { "id": "p01", "text": "Open Settings, and expand the Operations group." },
+        { "id": "p02", "text": "These lists are the raw material for dropdowns all over the platform." },
+        { "id": "p03", "text": "When a cashier reaches for a reason and it isn't there," },
+        { "id": "p04", "text": "the fix lives on one of these pages, not in the register." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.16,
+      "endS": 32.88,
+      "phrases": [
+        { "id": "p05", "text": "Open Cancellation Reasons." },
+        { "id": "p06", "text": "Two columns here." },
+        { "id": "p07", "text": "One names the reason, the other decides whether a cashier ever sees it." },
+        { "id": "p08", "text": "That second column, Show on P-O-S, is the one to check first" },
+        { "id": "p09", "text": "when a reason exists but never shows up at the register." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 32.88,
+      "endS": 50.64,
+      "phrases": [
+        { "id": "p10", "text": "Look at the list body." },
+        { "id": "p11", "text": "Thirty-three reasons, loaded live." },
+        { "id": "p12", "text": "The tiles above count thirty shown at the register and three kept hidden," },
+        { "id": "p13", "text": "and the footer pages you through the full set." },
+        { "id": "p14", "text": "Those three hidden rows read No in the second column:" },
+        { "id": "p15", "text": "still on the books, invisible to the cashier." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 50.64,
+      "endS": 69.2,
+      "phrases": [
+        { "id": "p16", "text": "Now Refund Reasons." },
+        { "id": "p17", "text": "One column, one job: it fills the reason picker on the refund screen." },
+        { "id": "p18", "text": "This tenant's list is genuinely empty, zero reasons," },
+        { "id": "p19", "text": "with a note that the P-O-S database may not be configured yet." },
+        { "id": "p20", "text": "That is a real empty state, not a load error." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 69.2,
+      "endS": 84.88,
+      "phrases": [
+        { "id": "p21", "text": "Rewash Reasons, same idea." },
+        { "id": "p22", "text": "This is the list an attendant picks from when a car goes back through the wash." },
+        { "id": "p23", "text": "Twelve reasons live here, everything from bugs on the car to wheels not clean." },
+        { "id": "p24", "text": "Identical shape to refunds, just with its rows filled in." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 84.88,
+      "endS": 99.68,
+      "phrases": [
+        { "id": "p25", "text": "Two more, back to back." },
+        { "id": "p26", "text": "Event Types, then Transaction Types." },
+        { "id": "p27", "text": "One classifies things that happen, the other classifies money that moves," },
+        { "id": "p28", "text": "and reporting leans on both." },
+        { "id": "p29", "text": "The layout never changes: a description column and a count." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 99.68,
+      "endS": 115.52,
+      "phrases": [
+        { "id": "p30", "text": "Issue Status Types." },
+        { "id": "p31", "text": "This one loaded, so you can see the real values." },
+        { "id": "p32", "text": "Open, in progress, pending parts, resolved, closed." },
+        { "id": "p33", "text": "Those five are the stages an issue walks through," },
+        { "id": "p34", "text": "and they're the same labels you'll meet on ticket records elsewhere." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 115.52,
+      "endS": 128.4,
+      "phrases": [
+        { "id": "p35", "text": "Switch groups, over to Automation." },
+        { "id": "p36", "text": "This is where the background jobs live:" },
+        { "id": "p37", "text": "the scheduler, its parameters, and the mass text log." },
+        { "id": "p38", "text": "User Levels sits here too, but that's a security page, and it's covered on its own." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 128.4,
+      "endS": 144.64,
+      "phrases": [
+        { "id": "p39", "text": "Open Task Scheduler." },
+        { "id": "p40", "text": "Read the tiles first." },
+        { "id": "p41", "text": "They sum up the whole job list at a glance, and the one that earns your attention is Failed." },
+        { "id": "p42", "text": "When someone says a job didn't run," },
+        { "id": "p43", "text": "a non-zero Failed count is your fastest signal, before you open a single row." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 144.64,
+      "endS": 162.4,
+      "phrases": [
+        { "id": "p44", "text": "Now the list itself." },
+        { "id": "p45", "text": "Five columns tell you a job's name, its schedule, when it last ran," },
+        { "id": "p46", "text": "when it runs next, and its status." },
+        { "id": "p47", "text": "The daily report email is right here." },
+        { "id": "p48", "text": "If it never arrived, read last run and status on that row before you blame the mailbox." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 162.4,
+      "endS": 179.6,
+      "phrases": [
+        { "id": "p49", "text": "Notice the new-record and filter controls." },
+        { "id": "p50", "text": "You read this page." },
+        { "id": "p51", "text": "You never edit a schedule, and you never run a task." },
+        { "id": "p52", "text": "One quirk worth knowing: today the header claims eighteen tasks," },
+        { "id": "p53", "text": "but only three rows actually rendered." },
+        { "id": "p54", "text": "The rest we've parked." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 179.6,
+      "endS": 196.96,
+      "phrases": [
+        { "id": "p55", "text": "Task Parameters." },
+        { "id": "p56", "text": "These are the reusable inputs the jobs read when they run." },
+        { "id": "p57", "text": "The updated-by and updated columns tell you who last changed one, and when," },
+        { "id": "p58", "text": "which is exactly what you want the day a job starts behaving differently." },
+        { "id": "p59", "text": "Rows are loading from the service." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 196.96,
+      "endS": 212.8,
+      "phrases": [
+        { "id": "p60", "text": "Last page. Mass S-M-S Log." },
+        { "id": "p61", "text": "This is the delivery record for mass texts." },
+        { "id": "p62", "text": "When a customer swears they never got the message," },
+        { "id": "p63", "text": "the status column is where you confirm whether it actually went out." },
+        { "id": "p64", "text": "Same load error today, so the rows are pending." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 212.8,
+      "endS": 235.154,
+      "phrases": [
+        { "id": "p65", "text": "So, two groups, two kinds of ticket." },
+        { "id": "p66", "text": "Operations feeds the dropdowns, so a missing reason ends there," },
+        { "id": "p67", "text": "and Show on P-O-S decides what a cashier sees." },
+        { "id": "p68", "text": "Automation runs the jobs, so a report that never came" },
+        { "id": "p69", "text": "starts at the scheduler's last run and status." },
+        { "id": "p70", "text": "Learn which page owns which question, and the triage answers itself." }
+      ]
+    }
+  ],
+  "output": "WC-12-07-operations-automation-v1.1"
+}

@@ -1,0 +1,314 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.020
+Every integration in WashCentral has its own page under Settings.
+
+p02
+00:00:03.020 --> 00:00:05.391
+The breadcrumb confirms where you are,
+
+p03
+00:00:05.391 --> 00:00:10.166
+and the Integrations entry at the bottom of the left rail is the way in.
+
+p04
+00:00:10.166 --> 00:00:13.638
+We start on Zoho Desk, the help desk connector,
+
+p05
+00:00:13.638 --> 00:00:17.262
+because once you can read this page, you can read all eight.
+
+p06
+00:00:17.680 --> 00:00:18.743
+Start at the top.
+
+p07
+00:00:19.372 --> 00:00:22.893
+The badge next to the title says what the integration is for, help desk in this case,
+
+p08
+00:00:23.221 --> 00:00:24.445
+and the pill beside it answers the client's first question.
+
+p09
+00:00:24.869 --> 00:00:27.958
+Not Configured means nothing is wired up in this tenant.
+
+p10
+00:00:28.604 --> 00:00:35.082
+One glance, and you already know the connection state.
+
+p11
+00:00:35.587 --> 00:00:37.831
+Under the title, three small chips.
+
+p12
+00:00:38.585 --> 00:00:41.836
+They name how WashCentral would talk to the vendor once connected.
+
+p13
+00:00:42.294 --> 00:00:45.026
+Every integration page swaps in its own set,
+
+p14
+00:00:45.388 --> 00:00:47.918
+so the chips become your fastest read on the method.
+
+p15
+00:00:48.427 --> 00:00:50.747
+Watch them change as we tour the other pages.
+
+p16
+00:00:51.284 --> 00:00:53.952
+Top right, two buttons, and we touch neither.
+
+p17
+00:00:55.311 --> 00:00:58.295
+Test Connection fires a live call out to the vendor.
+
+p18
+00:00:59.686 --> 00:01:02.257
+Edit Configuration opens the credential editor.
+
+p19
+00:01:02.466 --> 00:01:04.269
+Both belong to an administrator.
+
+p20
+00:01:04.475 --> 00:01:06.493
+Your job on this page is to read it,
+
+p21
+00:01:06.730 --> 00:01:09.200
+and reading never requires a click up here.
+
+p22
+00:01:09.631 --> 00:01:10.716
+Now the tile strip.
+
+p23
+00:01:11.337 --> 00:01:12.790
+Four tiles summarize health:
+
+p24
+00:01:13.148 --> 00:01:18.194
+the connection state, the data center, the org I-D, and which way data syncs.
+
+p25
+00:01:18.721 --> 00:01:22.419
+Notice Connection reads Not set, which agrees with the pill above.
+
+p26
+00:01:22.771 --> 00:01:25.493
+When those two match, you can trust the page's story.
+
+p27
+00:01:25.986 --> 00:01:27.718
+Below the tiles, two tabs.
+
+p28
+00:01:28.313 --> 00:01:31.971
+Settings, the one that's open, holds the live field values.
+
+p29
+00:01:32.338 --> 00:01:34.687
+Instructions holds the vendor's setup steps,
+
+p30
+00:01:34.900 --> 00:01:38.329
+and we leave it closed today because its contents haven't been verified yet.
+
+p31
+00:01:39.037 --> 00:01:41.247
+Everything we need sits on the Settings tab.
+
+p32
+00:01:41.840 --> 00:01:43.569
+Scroll into the credentials group.
+
+p33
+00:01:44.315 --> 00:01:45.274
+Client I-D, secrets, tokens, expiry.
+
+p34
+00:01:45.529 --> 00:01:46.214
+Here is the rule that never bends:
+
+p35
+00:01:46.460 --> 00:01:48.040
+you read the labels, never the values.
+
+p36
+00:01:48.578 --> 00:01:53.069
+In this demo tenant the fields sit empty anyway,
+
+p37
+00:01:53.597 --> 00:02:01.360
+but on a client's tenant a credential value never goes into a note, a screenshot, or a ticket.
+
+p38
+00:02:01.809 --> 00:02:02.639
+Keep scrolling.
+
+p39
+00:02:03.340 --> 00:02:06.791
+The remaining groups decide behavior once the connection is live.
+
+p40
+00:02:07.381 --> 00:02:08.655
+General turns it on, Routing picks a default department and assignee,
+
+p41
+00:02:08.957 --> 00:02:11.645
+Sync sets the direction, and Mapping ties Zoho's statuses to WashCentral's.
+
+p42
+00:02:12.100 --> 00:02:17.192
+That is the whole anatomy.
+
+p43
+00:02:17.765 --> 00:02:23.680
+The rest of this lesson is the same skeleton wearing different names.
+
+p44
+00:02:24.080 --> 00:02:25.589
+Now Microsoft Entra I-D.
+
+p45
+00:02:25.589 --> 00:02:27.384
+Same skeleton, different job.
+
+p46
+00:02:27.384 --> 00:02:31.823
+The badge now reads single sign-on, the chips describe Microsoft's method,
+
+p47
+00:02:31.823 --> 00:02:37.480
+and the tiles track the issuer, client I-D, and scopes instead of help desk fields.
+
+p48
+00:02:37.480 --> 00:02:41.885
+One field worth knowing: the redirect U-R-I, with its Copy button,
+
+p49
+00:02:41.885 --> 00:02:45.279
+is what an admin pastes into the identity provider.
+
+p50
+00:02:45.714 --> 00:02:46.280
+Google, Okta, Cognito.
+
+p51
+00:02:46.565 --> 00:02:47.978
+Three more providers, one layout.
+
+p52
+00:02:49.060 --> 00:02:51.168
+Only the name and the method chips change from page to page,
+
+p53
+00:02:51.604 --> 00:02:54.726
+and every one of them sits at Not Configured here.
+
+p54
+00:02:55.103 --> 00:02:57.692
+Learn the Entra page and you have learned all four.
+
+p55
+00:02:58.402 --> 00:03:03.511
+That is the payoff of the shared anatomy.
+
+p56
+00:03:04.047 --> 00:03:06.955
+SCIM, pronounced skim, is the odd one out.
+
+p57
+00:03:06.955 --> 00:03:09.251
+Instead of signing people in,
+
+p58
+00:03:09.251 --> 00:03:12.886
+it creates and deactivates users automatically from the identity provider.
+
+p59
+00:03:12.886 --> 00:03:16.341
+The tiles track its status and last event,
+
+p60
+00:03:16.341 --> 00:03:20.703
+and the sync log below stays empty until provisioning events start arriving.
+
+p61
+00:03:21.184 --> 00:03:23.398
+On to accounting. Open Sage.
+
+p62
+00:03:24.249 --> 00:03:27.189
+The shape holds, but the fields turn financial.
+
+p63
+00:03:27.887 --> 00:03:32.285
+The sync schedule tile shows a cron value because Sage posts on a timer,
+
+p64
+00:03:32.646 --> 00:03:34.972
+two in the morning here, not on every sale.
+
+p65
+00:03:35.805 --> 00:03:38.120
+And note the safety group's dry run flag,
+
+p66
+00:03:38.382 --> 00:03:41.614
+a rehearsal switch that tests a sync without posting anything.
+
+p67
+00:03:42.080 --> 00:03:43.908
+QuickBooks Online, the other ledger.
+
+p68
+00:03:43.908 --> 00:03:46.595
+Same badge, same subtitle, different vendor.
+
+p69
+00:03:46.595 --> 00:03:51.815
+Its credentials add a realm, which is QuickBooks' name for the company I-D,
+
+p70
+00:03:51.815 --> 00:03:53.277
+alongside the usual tokens.
+
+p71
+00:03:53.277 --> 00:03:56.960
+Sage and QuickBooks do one job through two doors,
+
+p72
+00:03:56.960 --> 00:04:01.280
+the same pattern you just saw across the four sign-on providers.
+
+p73
+00:04:01.680 --> 00:04:03.878
+Back to Zoho for the read that matters.
+
+p74
+00:04:04.268 --> 00:04:06.449
+A client says the integration is broken.
+
+p75
+00:04:06.779 --> 00:04:08.341
+You check three things in order: the status pill,
+
+p76
+00:04:08.564 --> 00:04:13.334
+then Test Connection, remembering an admin runs it, not you,
+
+p77
+00:04:13.560 --> 00:04:15.725
+then token expiry in the credentials.
+
+p78
+00:04:15.985 --> 00:04:20.000
+That answers "is it connected?" from one page, without filing a bug.
+

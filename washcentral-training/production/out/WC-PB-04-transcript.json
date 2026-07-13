@@ -1,0 +1,512 @@
+{
+  "lesson": "WC-PB-04",
+  "audioMaster": "training/playbooks/WC-PB-04-full-narration-v1.0.mp3",
+  "audioDurationS": 244.689,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start on the Command Center.",
+      "startS": 0,
+      "endS": 1.427,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Down the left column, one number sizes the whole problem: the decline rate.",
+      "startS": 2.433,
+      "endS": 6.986,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Right now it reads a quarter of a percent, and the trend arrow points down.",
+      "startS": 7.794,
+      "endS": 11.966,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "That's the entire network, not one member.",
+      "startS": 12.573,
+      "endS": 14.999,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Read it before you chase anyone.",
+      "startS": 15.444,
+      "endS": 17.012,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "One expired card won't move it. A gateway going bad will.",
+      "startS": 17.509,
+      "endS": 21.439,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Now scroll to Priority Intelligence.",
+      "startS": 21.84,
+      "endS": 23.901,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "WashCentral is already working the problem.",
+      "startS": 23.901,
+      "endS": 26.744,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "One play flags eighteen recoverable billing failures through the card updater,",
+      "startS": 26.744,
+      "endS": 31.278,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "worth about six hundred forty dollars to recover.",
+      "startS": 31.278,
+      "endS": 34.951,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Another shows the retry automation churning: thirty-seven queued, eleven already recovered.",
+      "startS": 34.951,
+      "endS": 39.485,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "You're reading these, not launching them.",
+      "startS": 39.485,
+      "endS": 42.353,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Before you click anything, size it.",
+      "startS": 42.854,
+      "endS": 45.023,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "One member says their card bounced? Head to Customer three-sixty.",
+      "startS": 45.487,
+      "endS": 49.015,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "A wave of failures at one site? The declined card log, then that site's gateway.",
+      "startS": 49.363,
+      "endS": 51.041,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Charges about texts, not cards? That's a billing question.",
+      "startS": 51.371,
+      "endS": 53.978,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Same ticket, three different trails.",
+      "startS": 54.391,
+      "endS": 60.225,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Take the single-customer trail first. Open the member from the customer list.",
+      "startS": 60.855,
+      "endS": 62.892,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Customer three-sixty opens on nine tabs, everything about this account in one place.",
+      "startS": 63.326,
+      "endS": 65.054,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "The billing answers live two tabs in.",
+      "startS": 65.444,
+      "endS": 72.8,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Open the Membership tab.",
+      "startS": 73.25,
+      "endS": 74.434,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Find the billing cycle block. Two fields answer the ticket.",
+      "startS": 75.228,
+      "endS": 76.646,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Last payment result tells you whether the most recent charge failed.",
+      "startS": 77.338,
+      "endS": 78.855,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Next charge tells you when the system tries again.",
+      "startS": 79.329,
+      "endS": 82.977,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "That's the member's side of the story in ten seconds.",
+      "startS": 83.389,
+      "endS": 89.276,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Now the Payments tab.",
+      "startS": 89.732,
+      "endS": 90.976,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Here's the card on file and its expiry.",
+      "startS": 91.597,
+      "endS": 93.832,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Most single-member declines are just that: a card that expired or got pulled.",
+      "startS": 94.558,
+      "endS": 99.056,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "The fix is a card update, or a link the member taps to re-enter it.",
+      "startS": 99.472,
+      "endS": 103.266,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "That happens in production, with the right role. Never from this demo.",
+      "startS": 103.795,
+      "endS": 107.572,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "Back out to the many-customer trail. In Sales, open the declined credit card log.",
+      "startS": 108,
+      "endS": 109.921,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Seven columns lay out every failed charge:",
+      "startS": 110.323,
+      "endS": 112.905,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "date, customer, plan, amount, reason, attempts, location.",
+      "startS": 113.668,
+      "endS": 121.3,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "When a member swears they paid and your record says declined, reason and attempts settle it.",
+      "startS": 121.851,
+      "endS": 127.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Search by customer or location to narrow it.",
+      "startS": 127.52,
+      "endS": 130.102,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "One caution from today's capture: the list came back empty with a fetch error.",
+      "startS": 130.693,
+      "endS": 132.335,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Don't read that as no declines.",
+      "startS": 132.71,
+      "endS": 135.021,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Confirm the data actually loaded before you tell a member their account is clean.",
+      "startS": 135.532,
+      "endS": 141.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "When it's the whole site, go to Settings, then Locations.",
+      "startS": 141.908,
+      "endS": 145.303,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "The locations list carries code, name, address, and last sync.",
+      "startS": 146.082,
+      "endS": 150.579,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "And in the side menu, notice Payment Credential Approval.",
+      "startS": 151.35,
+      "endS": 154.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "That's the gate every credential change has to pass through. Hold that thought.",
+      "startS": 154.733,
+      "endS": 158.908,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "Open the site and read its Payments and Credentials tab.",
+      "startS": 159.36,
+      "endS": 162.616,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "The processors sit in named blocks: Open Edge, Smart Tech, Other, and Card Connect.",
+      "startS": 163.498,
+      "endS": 166.008,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "You report which block is involved.",
+      "startS": 166.48,
+      "endS": 167.158,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "You never read the masked values, and you never hand-edit them.",
+      "startS": 167.507,
+      "endS": 168.193,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Any change goes through Payment Credential Approval, not this screen.",
+      "startS": 168.595,
+      "endS": 181.34,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "Different complaint, different page.",
+      "startS": 181.76,
+      "endS": 183.683,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "If it's about text or email charges, open Billing, then Usage and Billing.",
+      "startS": 184.148,
+      "endS": 188.691,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "The Usage by Source panel breaks every charge down by campaign and automation:",
+      "startS": 189.125,
+      "endS": 193.613,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "source, type, volume, cost, share.",
+      "startS": 193.921,
+      "endS": 194.989,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "Card declines and messaging bills are two separate questions. This answers the second one.",
+      "startS": 195.283,
+      "endS": 202.684,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "Now build the ticket. Name the gateway.",
+      "startS": 203.12,
+      "endS": 204.122,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "Attach a few decline samples with their reason and attempt count.",
+      "startS": 204.761,
+      "endS": 205.771,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "Give the totals and the site or member affected.",
+      "startS": 206.446,
+      "endS": 209.755,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "And the hard line: no card numbers, no credentials, not even masked.",
+      "startS": 210.101,
+      "endS": 212.562,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "You diagnose and route. The retry and the fix happen upstream.",
+      "startS": 213.297,
+      "endS": 222.428,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "So that's the playbook.",
+      "startS": 222.88,
+      "endS": 224.179,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "Read the decline rate to size it. Scope to one member or many.",
+      "startS": 224.823,
+      "endS": 228.663,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "Follow it to Customer three-sixty, the declined log, or a site's gateway.",
+      "startS": 229.004,
+      "endS": 233.552,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Check Billing when the charge was really about messaging.",
+      "startS": 234,
+      "endS": 236.774,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Then escalate with the gateway, the samples, and the counts.",
+      "startS": 237.055,
+      "endS": 240.584,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "You touched nothing. You just found the truth and passed it on.",
+      "startS": 240.924,
+      "endS": 244.219,
+      "timing": "silence"
+    }
+  ]
+}

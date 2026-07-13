@@ -1,0 +1,1606 @@
+{
+  "lesson": "WC-02-04",
+  "title": "Gift Cards (CRM)",
+  "audioMaster": "training/module02-crm/WC-02-04-full-narration-v1.0.mp3",
+  "audioDurationS": 152.111,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/crm-customers.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "giftLink": {
+      "selector": "a[href=\"crm-gift-cards.html\"]"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "kpiTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "kpiTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "kpiTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "panelsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "trendCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Issuance Trend/.test(c.textContent||''))"
+    },
+    "balCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Balance Distribution/.test(c.textContent||''))"
+    },
+    "statusCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Card Status/.test(c.textContent||''))"
+    },
+    "trendStat": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Issuance Trend/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('*')].filter(e=>/1,284/.test(e.textContent||'')&&/\\+9\\.2%/.test(e.textContent||'')).sort((a,b)=>{const x=a.getBoundingClientRect(),y=b.getBoundingClientRect();return x.width*x.height-y.width*y.height})[0]})()"
+    },
+    "bucket100": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Balance Distribution/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('div')].find(e=>{const t=(e.textContent||'').trim();const r=e.getBoundingClientRect();return /^\\$100\\+/.test(t)&&r.height>15&&r.height<30})})()"
+    },
+    "chip66": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Card Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('*')].filter(e=>{const t=(e.textContent||'').trim();const r=e.getBoundingClientRect();return /^66%/.test(t)&&t.length<20&&r.height>15&&r.height<40}).sort((a,b)=>{const x=a.getBoundingClientRect(),y=b.getBoundingClientRect();return x.width*x.height-y.width*y.height})[0]})()"
+    },
+    "chip28": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Card Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('*')].filter(e=>{const t=(e.textContent||'').trim();const r=e.getBoundingClientRect();return /^28%/.test(t)&&t.length<20&&r.height>15&&r.height<40}).sort((a,b)=>{const x=a.getBoundingClientRect(),y=b.getBoundingClientRect();return x.width*x.height-y.width*y.height})[0]})()"
+    },
+    "chip6": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Card Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('*')].filter(e=>{const t=(e.textContent||'').trim();const r=e.getBoundingClientRect();return /^6%/.test(t)&&t.length<20&&r.height>15&&r.height<40}).sort((a,b)=>{const x=a.getBoundingClientRect(),y=b.getBoundingClientRect();return x.width*x.height-y.width*y.height})[0]})()"
+    },
+    "statusCounts": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(c=>/Card Status/.test(c.textContent||''));if(!c)return null;return [...c.querySelectorAll('*')].find(e=>/847 active/.test(e.textContent||'')&&e.getBoundingClientRect().height<30)})()"
+    },
+    "listHead": {
+      "js": "(()=>{const t=[...document.querySelectorAll('div,h1,h2,h3')].find(e=>(e.textContent||'').trim()==='Gift Card List'&&e.getBoundingClientRect().height<34&&e.getBoundingClientRect().width>0);return t?t.parentElement:null})()"
+    },
+    "gcEyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^CRM\\s*·\\s*Gift Cards$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "gcTitle": {
+      "js": "[...document.querySelectorAll('div,h1,h2,h3')].find(e=>(e.textContent||'').trim()==='Gift Card List'&&e.getBoundingClientRect().height<34&&e.getBoundingClientRect().width>0)"
+    },
+    "gcCount": {
+      "js": "[...document.querySelectorAll('div,span,p')].find(e=>e.children.length===0&&/^[\\d,]+ records$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "deleteBtn": {
+      "selector": "#bulk-delete-btn"
+    },
+    "issueBtn": {
+      "text": "+ Issue Gift Card",
+      "scope": "a.a-btn,button.a-btn"
+    },
+    "searchInput": {
+      "selector": "#gc-search"
+    },
+    "searchWrap": {
+      "js": "(()=>{const i=document.querySelector('#gc-search');return i?i.closest('div'):null})()"
+    },
+    "filtersBtn": {
+      "selector": "#adv-toggle"
+    },
+    "searchBtn": {
+      "selector": "#search-btn"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thCard": {
+      "text": "Card",
+      "scope": "table thead th"
+    },
+    "thCustomer": {
+      "text": "Customer",
+      "scope": "table thead th"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thBalance": {
+      "text": "Balance",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "thLastUsed": {
+      "text": "Last Used",
+      "scope": "table thead th"
+    },
+    "firstRow": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "custDashCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr.row-link')].find(e=>((e.querySelector('td:nth-child(3)')||{}).textContent||'').trim()==='—');return r?r.querySelector('td:nth-child(3)'):null})()"
+    },
+    "pgBar": {
+      "js": "(()=>{const n=document.querySelector('.pg-nums');return n?n.parentElement:null})()"
+    },
+    "lastPageBtn": {
+      "js": "(()=>{const b=[...document.querySelectorAll('.pg-nums button.page-btn')];return b.length?b[b.length-1]:null})()"
+    },
+    "perPageBtn": {
+      "selector": "button.pg-per-page-btn"
+    },
+    "matchedRow": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(e=>((e.querySelector('td:nth-child(2)')||{}).textContent||'').trim()==='80016195493')"
+    },
+    "balCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr.row-link')].find(e=>((e.querySelector('td:nth-child(2)')||{}).textContent||'').trim()==='80016195493');return r?r.querySelector('td:nth-child(5)'):null})()"
+    },
+    "statusCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr.row-link')].find(e=>((e.querySelector('td:nth-child(2)')||{}).textContent||'').trim()==='80016195493');return r?r.querySelector('td:nth-child(6)'):null})()"
+    },
+    "lastUsedCell": {
+      "js": "(()=>{const r=[...document.querySelectorAll('table tbody tr.row-link')].find(e=>((e.querySelector('td:nth-child(2)')||{}).textContent||'').trim()==='80016195493');return r?r.querySelector('td:nth-child(7)'):null})()"
+    }
+  },
+  "predicates": {
+    "onCustomers": "location.pathname.endsWith('/crm-customers.html')",
+    "onGiftCards": "location.pathname.endsWith('/crm-gift-cards.html')",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "startReady": "location.pathname.endsWith('/crm-customers.html')&&document.readyState==='complete'&&!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "giftCardsReady": "document.readyState==='complete'&&location.pathname.endsWith('/crm-gift-cards.html')&&document.querySelectorAll('table tbody tr.row-link').length>=20&&/[0-9]/.test((document.querySelector('.a-metric')||{textContent:''}).textContent||'')&&!/Couldn't load records/.test(document.body.innerText)",
+    "atFooter": "window.scrollY>=document.scrollingElement.scrollHeight-window.innerHeight-60",
+    "atTop": "window.scrollY<=8",
+    "searchFocused": "document.activeElement===document.querySelector('#gc-search')",
+    "cardMatched": "(()=>{const i=document.querySelector('#gc-search');if(!i||i.value!=='80016195493')return false;const c=document.querySelector('table tbody tr.row-link td:nth-child(2)');return !!c&&c.textContent.trim()==='80016195493'})()",
+    "searchApplied": "(()=>{if(!document.activeElement||document.activeElement.id!=='search-btn')return false;const i=document.querySelector('#gc-search');if(!i||i.value!=='80016195493')return false;const c=document.querySelector('table tbody tr.row-link td:nth-child(2)');return !!c&&c.textContent.trim()==='80016195493'})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the CRM sidebar expanded (persisted pref washcentral-sidebar-collapsed-v5 is shared and flips between sessions; the toggle is the same control both ways); skipped when already expanded"
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "startReady",
+      "note": "start on CRM › Customers, sidebar expanded (preflight), stable before capture"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        2,
+        880
+      ],
+      "to": {
+        "target": "giftLink",
+        "offset": [
+          40,
+          60
+        ]
+      },
+      "note": "enter from the left edge, settle just below the Gift Cards sidebar item"
+    },
+    {
+      "op": "click",
+      "target": "giftLink",
+      "pressAt": 3.45,
+      "hoverMs": 420,
+      "postcondition": "onGiftCards",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: genuine sidebar Gift Cards click; press lands in the p01 trailing break so the portfolio is on screen for 'This is the gift card portfolio' (p02 @3.67)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "giftCardsStable",
+      "predicate": "giftCardsReady",
+      "settleMs": 600,
+      "timeoutMs": 10000,
+      "note": "healthy-data gate: KPI tiles carry numbers and 25 live rows list (July 9 couldn't-load state would abort the take here, per shot-list pre-roll)"
+    },
+    {
+      "op": "watch",
+      "key": "giftCardsHold",
+      "from": 6.0,
+      "to": 151.5,
+      "predicate": "onGiftCards",
+      "everyMs": 1000,
+      "mustHold": true
+    },
+    {
+      "op": "log-rect",
+      "at": 5.6,
+      "key": "breadcrumbRect",
+      "target": "breadcrumb",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rects",
+      "at": 5.9,
+      "key": "regions",
+      "targets": [
+        "kpiStrip",
+        "panelsRow",
+        "listHead"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 6.1,
+      "to": {
+        "point": [
+          1899,
+          347
+        ]
+      },
+      "note": "park in the inert gap between the panels row and the list card while p03-p04 explain the three regions"
+    },
+    {
+      "op": "log-rects",
+      "at": 15.3,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiTile1",
+        "kpiTile2",
+        "kpiTile3",
+        "kpiTile4"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 15.4,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          22
+        ]
+      },
+      "note": "step 2: 'Four tiles run across the top' (p05 @15.15) — cursor to the first tile"
+    },
+    {
+      "op": "move",
+      "at": 18.1,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          22
+        ]
+      },
+      "note": "left-to-right sweep follows the spoken order: exist, owed, live, zero"
+    },
+    {
+      "op": "move",
+      "at": 19.0,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          22
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 20.7,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          22
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 23.9,
+      "to": {
+        "point": [
+          1899,
+          347
+        ]
+      },
+      "note": "park for p08 'Read them left to right...'"
+    },
+    {
+      "op": "move",
+      "at": 26.95,
+      "to": {
+        "target": "trendCard",
+        "offset": [
+          0,
+          70
+        ]
+      },
+      "note": "step 3: 'First panel, issuance over the last year' (p09 @26.88)"
+    },
+    {
+      "op": "log-rect",
+      "at": 27.5,
+      "key": "trendCardRect",
+      "target": "trendCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 27.8,
+      "key": "trendStatRect",
+      "target": "trendStat"
+    },
+    {
+      "op": "move",
+      "at": 30.3,
+      "to": {
+        "target": "trendStat",
+        "offset": [
+          0,
+          32
+        ]
+      },
+      "note": "point at the 1,284 / +9.2% stat while p10 reads it"
+    },
+    {
+      "op": "move",
+      "at": 35.6,
+      "to": {
+        "point": [
+          560,
+          350
+        ]
+      },
+      "note": "drop below the panel for p11"
+    },
+    {
+      "op": "move",
+      "at": 39.4,
+      "to": {
+        "target": "balCard",
+        "offset": [
+          0,
+          70
+        ]
+      },
+      "note": "step 4: 'Next to it, where the money sits' (p12 @39.33)"
+    },
+    {
+      "op": "log-rect",
+      "at": 39.9,
+      "key": "balCardRect",
+      "target": "balCard"
+    },
+    {
+      "op": "log-rect",
+      "at": 40.2,
+      "key": "bucket100Rect",
+      "target": "bucket100"
+    },
+    {
+      "op": "move",
+      "at": 42.3,
+      "to": {
+        "target": "balCard",
+        "offset": [
+          0,
+          -30
+        ]
+      },
+      "note": "slow sweep down the four bars during p13"
+    },
+    {
+      "op": "move",
+      "at": 43.3,
+      "to": {
+        "target": "balCard",
+        "offset": [
+          0,
+          10
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 44.4,
+      "to": {
+        "target": "bucket100",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "settle on the $100+ bucket for '...a hundred dollars or more'"
+    },
+    {
+      "op": "move",
+      "at": 47.4,
+      "to": {
+        "point": [
+          1100,
+          350
+        ]
+      },
+      "note": "park below the panel for p14"
+    },
+    {
+      "op": "move",
+      "at": 51.0,
+      "to": {
+        "target": "statusCard",
+        "offset": [
+          0,
+          70
+        ]
+      },
+      "note": "step 5: 'The third panel is portfolio health' (p15 @50.94)"
+    },
+    {
+      "op": "log-rects",
+      "at": 51.6,
+      "key": "statusChips",
+      "targets": [
+        "chip66",
+        "chip28",
+        "chip6"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 52.0,
+      "key": "statusCountsRect",
+      "target": "statusCounts"
+    },
+    {
+      "op": "log-rect",
+      "at": 52.2,
+      "key": "statusCardRect",
+      "target": "statusCard"
+    },
+    {
+      "op": "move",
+      "at": 53.7,
+      "to": {
+        "target": "chip66",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "chip sweep follows the spoken order: active, redeemed, expired (p16)"
+    },
+    {
+      "op": "move",
+      "at": 54.9,
+      "to": {
+        "target": "chip28",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 55.95,
+      "to": {
+        "target": "chip6",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 57.4,
+      "to": {
+        "target": "statusCounts",
+        "offset": [
+          0,
+          -16
+        ]
+      },
+      "note": "to the stacked bar / counts line for p17 'rolled into one bar'"
+    },
+    {
+      "op": "move",
+      "at": 61.1,
+      "to": {
+        "target": "gcCount",
+        "offset": [
+          140,
+          0
+        ]
+      },
+      "note": "step 6: 'Now the list itself' (p18 @60.96) — settle beside the list header"
+    },
+    {
+      "op": "log-rects",
+      "at": 61.7,
+      "key": "gcHead",
+      "targets": [
+        "gcEyebrow",
+        "gcTitle",
+        "gcCount"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 67.9,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          22
+        ]
+      },
+      "note": "up to the Total Gift Cards tile for p20 '...the same figure as the total tile up top'"
+    },
+    {
+      "op": "move",
+      "at": 71.6,
+      "to": {
+        "point": [
+          1300,
+          348
+        ]
+      },
+      "note": "drift right in the p20 tail so the step-7 approach starts on cue"
+    },
+    {
+      "op": "move",
+      "at": 73.2,
+      "to": {
+        "target": "deleteBtn",
+        "offset": [
+          0,
+          -38
+        ],
+        "outside": true
+      },
+      "note": "step 7: 'Two buttons sit above the table' (p21 @73.11) — settle above Delete, not on it"
+    },
+    {
+      "op": "log-rects",
+      "at": 73.6,
+      "key": "actions",
+      "targets": [
+        "deleteBtn",
+        "issueBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 74.8,
+      "to": {
+        "target": "deleteBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "point Delete while p22 names it — hover only, NEVER clicked (disabled with nothing selected, and a write action)"
+    },
+    {
+      "op": "move",
+      "at": 76.5,
+      "to": {
+        "target": "issueBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "point + Issue Gift Card while p23 names it — hover only, NEVER clicked; issuing a card is never depicted"
+    },
+    {
+      "op": "move",
+      "at": 78.9,
+      "to": {
+        "target": "issueBtn",
+        "offset": [
+          -240,
+          40
+        ],
+        "outside": true
+      },
+      "note": "pull clear while the red do-not-click brackets hold through p24"
+    },
+    {
+      "op": "move",
+      "at": 83.2,
+      "to": {
+        "target": "searchWrap",
+        "offset": [
+          90,
+          -14
+        ],
+        "outside": true
+      },
+      "note": "step 8: 'Under the buttons, one search box' (p25 @83.12) — settle above the box"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.6,
+      "key": "searchWrapRect",
+      "target": "searchWrap"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.9,
+      "key": "searchInputRect",
+      "target": "searchInput"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.2,
+      "key": "filtersBtnRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.5,
+      "key": "searchBtnRect",
+      "target": "searchBtn"
+    },
+    {
+      "op": "move",
+      "at": 85.6,
+      "to": {
+        "point": [
+          520,
+          505
+        ]
+      },
+      "note": "rest under the placeholder while p26 reads what it matches on"
+    },
+    {
+      "op": "move",
+      "at": 89.3,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "point out the Filters control (badge 0) — hover clear of it, never opened here"
+    },
+    {
+      "op": "move",
+      "at": 90.3,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          0,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "…and the Search button, used for real in step 11"
+    },
+    {
+      "op": "move",
+      "at": 92.2,
+      "to": {
+        "point": [
+          1500,
+          432
+        ]
+      },
+      "note": "park in the inert gap for p27"
+    },
+    {
+      "op": "log-rects",
+      "at": 95.5,
+      "key": "columnHeads",
+      "targets": [
+        "thCard",
+        "thCustomer",
+        "thLocation",
+        "thBalance",
+        "thStatus",
+        "thLastUsed"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 95.8,
+      "key": "theadRect",
+      "target": "theadRow"
+    },
+    {
+      "op": "move",
+      "at": 96.0,
+      "to": {
+        "point": [
+          380,
+          522
+        ]
+      },
+      "note": "step 9: 'Six columns describe each card' (p28 @95.36) — start of the header sweep"
+    },
+    {
+      "op": "move",
+      "at": 97.75,
+      "to": {
+        "target": "thCard",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "column sweep follows the spoken order (p29-p30)"
+    },
+    {
+      "op": "move",
+      "at": 98.65,
+      "to": {
+        "target": "thCustomer",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 99.6,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 100.85,
+      "to": {
+        "target": "thBalance",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 102.2,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 103.55,
+      "to": {
+        "target": "thLastUsed",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 105.3,
+      "to": {
+        "point": [
+          1899,
+          478
+        ]
+      },
+      "note": "park clear while p31 brackets Balance / Status / Last Used"
+    },
+    {
+      "op": "key",
+      "pressAt": 111.62,
+      "keys": [
+        "PageDown"
+      ],
+      "gapMs": 240,
+      "keyLabel": "Page Down",
+      "postcondition": "atFooter",
+      "timeoutMs": 4000,
+      "note": "step 10: 'Now the rows themselves' (p32) — genuine PageDown inside the trailing break brings the rows and pager into view (probe-verified: one press reaches scrollY 513 = footer)"
+    },
+    {
+      "op": "watch",
+      "key": "footerHold",
+      "from": 112.4,
+      "to": 124.7,
+      "predicate": "atFooter",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "log-rects",
+      "at": 112.3,
+      "key": "pager",
+      "targets": [
+        "pgBar",
+        "lastPageBtn",
+        "perPageBtn"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 112.6,
+      "key": "firstRowRect",
+      "target": "firstRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 112.9,
+      "key": "custDashCellRect",
+      "target": "custDashCell"
+    },
+    {
+      "op": "move",
+      "at": 113.1,
+      "to": {
+        "target": "perPageBtn",
+        "offset": [
+          0,
+          -42
+        ],
+        "outside": true
+      },
+      "note": "beside the rows-per-page selector as p33 says 'twenty-five cards to a page' — never clicked"
+    },
+    {
+      "op": "move",
+      "at": 114.4,
+      "to": {
+        "target": "lastPageBtn",
+        "offset": [
+          -30,
+          -46
+        ],
+        "outside": true
+      },
+      "note": "over to the 4,661 last-page button for 'thousands of pages deep' — hover clear, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 117.0,
+      "to": {
+        "target": "custDashCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "up to the dash customer cell while p34 explains it (hover only; rows are links and are never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 121.0,
+      "to": {
+        "point": [
+          1899,
+          700
+        ]
+      },
+      "note": "park for the p35 contingency line — the error state is spoken only, never staged"
+    },
+    {
+      "op": "key",
+      "pressAt": 127.35,
+      "keys": [
+        "Home"
+      ],
+      "gapMs": 240,
+      "keyLabel": "Home",
+      "postcondition": "atTop",
+      "timeoutMs": 4000,
+      "note": "step 11: genuine Home inside the p36 trailing break returns to the top so the search box is on screen for the lookup"
+    },
+    {
+      "op": "click",
+      "target": "searchInput",
+      "pressAt": 129.0,
+      "hoverMs": 360,
+      "postcondition": "searchFocused",
+      "timeoutMs": 4000,
+      "note": "step 11: genuine click into the search box during p37 'A customer reads you their card number' — caret lands before the typing"
+    },
+    {
+      "op": "type",
+      "pressAt": 129.98,
+      "text": "80016195493",
+      "perCharMs": 95,
+      "keyLabel": "type: 80016195493",
+      "postcondition": "cardMatched",
+      "timeoutMs": 5000,
+      "note": "step 11: type the worked-example card number (probe-verified live: first row of the July 11 list; the table filters live as typed, matched row on top ~1s after the last key)"
+    },
+    {
+      "op": "click",
+      "target": "searchBtn",
+      "pressAt": 133.2,
+      "hoverMs": 340,
+      "postcondition": "searchApplied",
+      "timeoutMs": 5000,
+      "note": "step 11: '...and press Search' — genuine Search press; read-only query, filtered result verified live (value + first-row card match)"
+    },
+    {
+      "op": "log-rect",
+      "at": 133.6,
+      "key": "matchedRowRect",
+      "target": "matchedRow",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rects",
+      "at": 133.9,
+      "key": "lookupCells",
+      "targets": [
+        "balCell",
+        "statusCell",
+        "lastUsedCell"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "matchedHold",
+      "from": 134.2,
+      "to": 151.3,
+      "predicate": "cardMatched",
+      "everyMs": 600,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 134.3,
+      "to": {
+        "target": "matchedRow",
+        "offset": [
+          220,
+          62
+        ],
+        "outside": true
+      },
+      "note": "rest below the matched row while p38-p39 read balance / status / last used back"
+    },
+    {
+      "op": "log-rects",
+      "at": 139.7,
+      "key": "regions2",
+      "targets": [
+        "kpiStrip",
+        "panelsRow",
+        "listHead"
+      ],
+      "note": "fresh recap rects after the genuine Home scroll (same top-of-page layout)"
+    },
+    {
+      "op": "move",
+      "at": 140.1,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "step 12: recap sweep — 'Totals up top' (p41 @140.09)"
+    },
+    {
+      "op": "move",
+      "at": 141.45,
+      "to": {
+        "target": "panelsRow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'three quick-read panels' (p42)"
+    },
+    {
+      "op": "move",
+      "at": 143.1,
+      "to": {
+        "target": "gcCount",
+        "offset": [
+          140,
+          0
+        ]
+      },
+      "note": "'and a list where every lookup lands' (p43) — the matched row still shows the answered lookup"
+    },
+    {
+      "op": "move",
+      "at": 145.9,
+      "to": {
+        "point": [
+          1650,
+          940
+        ]
+      },
+      "note": "final park in empty card whitespace, clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 151.2,
+      "predicate": "onGiftCards"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "breadcrumbRect",
+        "place": "below-left",
+        "from": 6.0,
+        "to": 10.9
+      },
+      {
+        "n": 2,
+        "anchor": "regions.kpiStrip",
+        "place": "below-left",
+        "from": 15.5,
+        "to": 21.5
+      },
+      {
+        "n": 3,
+        "anchor": "trendStatRect",
+        "place": "left",
+        "from": 28.2,
+        "to": 34.6
+      },
+      {
+        "n": 4,
+        "anchor": "balCardRect",
+        "place": "left-top",
+        "from": 40.5,
+        "to": 46.6
+      },
+      {
+        "n": 5,
+        "anchor": "statusCardRect",
+        "place": "left-top",
+        "from": 52.2,
+        "to": 57.0
+      },
+      {
+        "n": 6,
+        "anchor": "gcHead.gcCount",
+        "place": "right",
+        "from": 62.7,
+        "to": 67.5
+      },
+      {
+        "n": 7,
+        "anchor": "actions.deleteBtn",
+        "place": "below-left",
+        "from": 73.8,
+        "to": 78.4
+      },
+      {
+        "n": 8,
+        "anchor": "searchInputRect",
+        "place": "below-left",
+        "from": 83.8,
+        "to": 88.6
+      },
+      {
+        "n": 9,
+        "anchor": "columnHeads.thBalance",
+        "place": "below-left",
+        "from": 100.9,
+        "to": 109.0
+      },
+      {
+        "n": 10,
+        "anchor": "firstRowRect",
+        "place": "below-left",
+        "from": 112.8,
+        "to": 116.5
+      },
+      {
+        "n": 11,
+        "anchor": "lookupCells.balCell",
+        "place": "below-left",
+        "from": 134.1,
+        "to": 137.2
+      },
+      {
+        "n": 12,
+        "anchor": "regions2.kpiStrip",
+        "place": "below-left",
+        "from": 140.2,
+        "to": 149.3
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "regions.kpiStrip",
+        "from": 6.28,
+        "to": 6.85,
+        "note": "p03 enumeration in spoken order: 'Four headline tiles up top...'"
+      },
+      {
+        "anchor": "regions.panelsRow",
+        "from": 6.85,
+        "to": 7.4,
+        "note": "'...three insight panels...'"
+      },
+      {
+        "anchor": "regions.listHead",
+        "from": 7.4,
+        "to": 7.95,
+        "note": "'...and a searchable card list below'"
+      },
+      {
+        "anchor": "kpiTiles.kpiTile1",
+        "from": 17.49,
+        "to": 18.1,
+        "note": "p06: 'How many cards exist...'"
+      },
+      {
+        "anchor": "kpiTiles.kpiTile2",
+        "from": 18.1,
+        "to": 18.96,
+        "note": "'...how much is still owed on them'"
+      },
+      {
+        "anchor": "kpiTiles.kpiTile3",
+        "from": 18.96,
+        "to": 20.7,
+        "note": "p07: 'how many are live...'"
+      },
+      {
+        "anchor": "kpiTiles.kpiTile4",
+        "from": 20.7,
+        "to": 23.18,
+        "note": "'...and how many are spent to zero'"
+      },
+      {
+        "anchor": "trendStatRect",
+        "from": 30.16,
+        "to": 34.61,
+        "note": "p10: 'up about nine percent, with the running total in the corner'"
+      },
+      {
+        "anchor": "balCardRect",
+        "from": 42.21,
+        "to": 44.4,
+        "note": "p13: 'Most cards carry small amounts...'"
+      },
+      {
+        "anchor": "bucket100Rect",
+        "from": 44.4,
+        "to": 46.93,
+        "note": "'...only a thin slice hold a hundred dollars or more'"
+      },
+      {
+        "anchor": "statusChips.chip66",
+        "from": 53.68,
+        "to": 54.78,
+        "note": "p16 in spoken order: 'Most active...'"
+      },
+      {
+        "anchor": "statusChips.chip28",
+        "from": 54.78,
+        "to": 55.88,
+        "note": "'...a good share redeemed...'"
+      },
+      {
+        "anchor": "statusChips.chip6",
+        "from": 55.88,
+        "to": 56.98,
+        "note": "'...a few expired'"
+      },
+      {
+        "anchor": "statusCountsRect",
+        "from": 57.31,
+        "to": 60.3,
+        "note": "p17: 'rolled into one bar'"
+      },
+      {
+        "anchor": "gcHead.gcCount",
+        "from": 63.19,
+        "to": 67.6,
+        "note": "p19-p20: the record count under the title"
+      },
+      {
+        "anchor": "kpiTiles.kpiTile1",
+        "from": 68.0,
+        "to": 70.8,
+        "note": "p20 tail: '...the same figure as the total tile up top'"
+      },
+      {
+        "anchor": "actions.deleteBtn",
+        "from": 74.99,
+        "to": 76.41,
+        "note": "p22: 'Delete removes a card'"
+      },
+      {
+        "anchor": "actions.issueBtn",
+        "from": 76.75,
+        "to": 78.37,
+        "note": "p23: 'Issue Gift Card creates one'"
+      },
+      {
+        "anchor": "actions.deleteBtn",
+        "from": 78.66,
+        "to": 82.72,
+        "color": "#dc2626",
+        "note": "p24 guardrail: '...never click either' — STOP ring on Delete (shot-list step 7)"
+      },
+      {
+        "anchor": "actions.issueBtn",
+        "from": 78.66,
+        "to": 82.72,
+        "color": "#dc2626",
+        "note": "p24 guardrail: STOP ring on + Issue Gift Card; neither is ever clicked"
+      },
+      {
+        "anchor": "searchInputRect",
+        "from": 85.47,
+        "to": 88.6,
+        "note": "p26: the placeholder names the four things it matches on"
+      },
+      {
+        "anchor": "columnHeads.thCard",
+        "from": 97.71,
+        "to": 98.63,
+        "note": "p29 in spoken order: 'The number...'"
+      },
+      {
+        "anchor": "columnHeads.thCustomer",
+        "from": 98.63,
+        "to": 99.55,
+        "note": "'...who owns it...'"
+      },
+      {
+        "anchor": "columnHeads.thLocation",
+        "from": 99.55,
+        "to": 100.48,
+        "note": "'...where it sold'"
+      },
+      {
+        "anchor": "columnHeads.thBalance",
+        "from": 100.79,
+        "to": 102.14,
+        "note": "p30: 'what is left...'"
+      },
+      {
+        "anchor": "columnHeads.thStatus",
+        "from": 102.14,
+        "to": 103.48,
+        "note": "'...whether it is still good...'"
+      },
+      {
+        "anchor": "columnHeads.thLastUsed",
+        "from": 103.48,
+        "to": 104.83,
+        "note": "'...and when it last moved'"
+      },
+      {
+        "anchor": "columnHeads.thBalance",
+        "from": 105.57,
+        "to": 109.2,
+        "note": "p31: 'Balance, status, last used carry most calls' — the three held together"
+      },
+      {
+        "anchor": "columnHeads.thStatus",
+        "from": 105.57,
+        "to": 109.2
+      },
+      {
+        "anchor": "columnHeads.thLastUsed",
+        "from": 105.57,
+        "to": 109.2
+      },
+      {
+        "anchor": "pager.perPageBtn",
+        "from": 112.6,
+        "to": 114.1,
+        "note": "p33: 'twenty-five cards to a page...'"
+      },
+      {
+        "anchor": "pager.lastPageBtn",
+        "from": 114.1,
+        "to": 116.14,
+        "note": "'...thousands of pages deep' — the 4,661 last-page button"
+      },
+      {
+        "anchor": "custDashCellRect",
+        "from": 116.81,
+        "to": 120.22,
+        "note": "p34: the dash customer cell — no one linked to the card"
+      },
+      {
+        "anchor": "lookupCells.balCell",
+        "from": 133.95,
+        "to": 137.3,
+        "note": "p38-p39: the row returns the balance..."
+      },
+      {
+        "anchor": "lookupCells.statusCell",
+        "from": 133.95,
+        "to": 137.3,
+        "note": "...the status..."
+      },
+      {
+        "anchor": "lookupCells.lastUsedCell",
+        "from": 133.95,
+        "to": 137.3,
+        "note": "...and the last-used date"
+      },
+      {
+        "anchor": "regions2.kpiStrip",
+        "from": 140.09,
+        "to": 141.05,
+        "note": "p41 recap in spoken order: 'Totals up top'"
+      },
+      {
+        "anchor": "regions2.panelsRow",
+        "from": 141.36,
+        "to": 142.77,
+        "note": "p42: 'three quick-read panels'"
+      },
+      {
+        "anchor": "regions2.listHead",
+        "from": 143.03,
+        "to": 145.24,
+        "note": "p43: 'and a list where every lookup lands'"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 14.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "hold wide through the nav and the whole-page identity (steps 1, p01-p04)"
+      },
+      {
+        "t": 15.3,
+        "z": 1.17,
+        "cx": 1085,
+        "cy": 465,
+        "ease": true,
+        "note": "KPI band + panels band framing for the tile sweep (step 2); z1.17 keeps all four tiles in frame"
+      },
+      {
+        "t": 25.9,
+        "z": 1.17,
+        "cx": 1085,
+        "cy": 465
+      },
+      {
+        "t": 26.9,
+        "z": 1.5,
+        "cx": 660,
+        "cy": 360,
+        "ease": true,
+        "note": "close framing on Issuance Trend — the 1,284 / +9.2% stat legible (shot-list zoom, step 3)"
+      },
+      {
+        "t": 38.4,
+        "z": 1.5,
+        "cx": 660,
+        "cy": 360
+      },
+      {
+        "t": 39.4,
+        "z": 1.5,
+        "cx": 1088,
+        "cy": 360,
+        "ease": true,
+        "note": "slide right to Balance Distribution (step 4)"
+      },
+      {
+        "t": 49.9,
+        "z": 1.5,
+        "cx": 1088,
+        "cy": 360
+      },
+      {
+        "t": 50.9,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "slide right to Card Status — chips and 847/437 counts legible (shot-list zoom, step 5)"
+      },
+      {
+        "t": 60.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 61.1,
+        "z": 1.5,
+        "cx": 660,
+        "cy": 360,
+        "ease": true,
+        "note": "list header close-up (record count legible, shot-list 150% step 6); the Total tile stays in frame for the p20 comparison"
+      },
+      {
+        "t": 72.3,
+        "z": 1.5,
+        "cx": 660,
+        "cy": 360
+      },
+      {
+        "t": 73.2,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 400,
+        "ease": true,
+        "note": "top-right of the list card: Delete + Issue Gift Card and the STOP brackets (step 7)"
+      },
+      {
+        "t": 82.4,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 400
+      },
+      {
+        "t": 83.3,
+        "z": 1.15,
+        "cx": 1085,
+        "cy": 521,
+        "ease": true,
+        "note": "whole search row in frame (box, Filters, Search) for step 8"
+      },
+      {
+        "t": 85.0,
+        "z": 1.15,
+        "cx": 1085,
+        "cy": 521
+      },
+      {
+        "t": 85.8,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 470,
+        "ease": true,
+        "note": "placeholder text legible while p26 reads it"
+      },
+      {
+        "t": 88.3,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 470
+      },
+      {
+        "t": 89.2,
+        "z": 1.15,
+        "cx": 1085,
+        "cy": 540,
+        "ease": true,
+        "note": "back out for Filters/Search pointing and the whole column walk (step 9)"
+      },
+      {
+        "t": 109.6,
+        "z": 1.15,
+        "cx": 1085,
+        "cy": 540
+      },
+      {
+        "t": 110.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide before the genuine PageDown — rows and pager both readable (step 10)"
+      },
+      {
+        "t": 128.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 129.1,
+        "z": 1.2,
+        "cx": 1085,
+        "cy": 500,
+        "ease": true,
+        "note": "search demonstration framing — box through Search button (step 11)"
+      },
+      {
+        "t": 132.8,
+        "z": 1.2,
+        "cx": 1085,
+        "cy": 500
+      },
+      {
+        "t": 133.6,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 470,
+        "ease": true,
+        "note": "punch in on the matched row's BALANCE / STATUS / LAST USED cells (shot-list 150%, step 11)"
+      },
+      {
+        "t": 137.2,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 470
+      },
+      {
+        "t": 138.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the recap and completion (step 12)"
+      },
+      {
+        "t": 152.111,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "Gift Cards — Complete",
+      "from": 150.3,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 150.0
+  },
+  "output": "WC-02-04-gift-cards-v1.1",
+  "orderedMentions": [
+    "Gift Cards",
+    "Delete",
+    "Issue Gift Card",
+    "Balance",
+    "Status",
+    "Last Used",
+    "Search"
+  ],
+  "neverClick": [
+    "delete",
+    "+ issue gift card",
+    "issue gift card",
+    "apply filters",
+    "clear all",
+    "pagination page buttons",
+    "rows-per-page selector",
+    "table rows (row-link)",
+    "select-all / row checkboxes",
+    "sortable column headers",
+    "ask shyne",
+    "send",
+    "logout"
+  ]
+}

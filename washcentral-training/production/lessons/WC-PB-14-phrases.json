@@ -1,0 +1,136 @@
+{
+  "lesson": "WC-PB-14",
+  "audioMaster": "training/playbooks/WC-PB-14-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; pronunciation spellings kept exactly as written in the script, e.g. 'four-oh-four', 'Logic P-O-S', 'Wash Central', 'C-R-M', 'hash mark', 'Jira'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the s10 end at 211.177s, which overshoots the ffprobe-probed master (210.834s) by 0.343s (> 0.3 tolerance) because the concatenated MP3 frames decode ~0.02-0.34s shorter than the per-file duration sum. Onsets were therefore measured by FFT normalized cross-correlation of each WC-PB-14-sNN.mp3 (first 3 s template) against the joined master at 8 kHz mono PCM (all 10 blocks matched at score 1.000). Master ffprobe duration 210.834s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 19.04,
+      "phrases": [
+        { "id": "p01", "text": "Someone says a page is broken." },
+        { "id": "p02", "text": "Before you believe them, or doubt them, reproduce it." },
+        { "id": "p03", "text": "Load the exact address they used, then read two things:" },
+        { "id": "p04", "text": "the URL in the bar, and the message on the screen." },
+        { "id": "p05", "text": "Three very different failures hide behind that one complaint," },
+        { "id": "p06", "text": "and those two reads are what tell them apart." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 19.04,
+      "endS": 41.92,
+      "phrases": [
+        { "id": "p07", "text": "Class one is the hard four-oh-four." },
+        { "id": "p08", "text": "The Settings hub lists Logic P-O-S links," },
+        { "id": "p09", "text": "and when they were last confirmed in July they served the web server's own error page." },
+        { "id": "p10", "text": "No Wash Central header. No sidebar." },
+        { "id": "p11", "text": "Just the server saying it has no file at that address." },
+        { "id": "p12", "text": "Their status today is parked, so re-check on your own tenant before quoting it." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 41.92,
+      "endS": 63.84,
+      "phrases": [
+        { "id": "p13", "text": "The same class wears a second face inside the app." },
+        { "id": "p14", "text": "System Alerts still sits in the IT and Support menu," },
+        { "id": "p15", "text": "yet on July ninth the page answered with an HTTP four-oh-four." },
+        { "id": "p16", "text": "So a listed feature can still four-oh-four." },
+        { "id": "p17", "text": "That usually means release gated, or mid deploy." },
+        { "id": "p18", "text": "Never tell a client the feature doesn't exist." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 63.84,
+      "endS": 84.64,
+      "phrases": [
+        { "id": "p19", "text": "Class two looks like nothing at all." },
+        { "id": "p20", "text": "Fundraiser sits in the C-R-M sidebar like any other entry." },
+        { "id": "p21", "text": "Click it, and watch the address bar." },
+        { "id": "p22", "text": "The URL just gains a trailing hash mark, and the page never changes." },
+        { "id": "p23", "text": "That is a stub. A menu item with no page wired behind it." },
+        { "id": "p24", "text": "Not a four-oh-four, and not their connection." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 84.64,
+      "endS": 101.12,
+      "phrases": [
+        { "id": "p25", "text": "Class three fools the most people." },
+        { "id": "p26", "text": "Open Terminals, under Hardware." },
+        { "id": "p27", "text": "The page loads." },
+        { "id": "p28", "text": "Breadcrumb, KPI, buttons, column headers, all there." },
+        { "id": "p29", "text": "But where the rows belong, it says it couldn't load records." },
+        { "id": "p30", "text": "Failed to fetch." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 101.12,
+      "endS": 122.72,
+      "phrases": [
+        { "id": "p31", "text": "Now look at what did render." },
+        { "id": "p32", "text": "Header, sidebar, KPIs, columns. Only the data is missing." },
+        { "id": "p33", "text": "The page shell arrived fine and one background call failed," },
+        { "id": "p34", "text": "and that is usually transient." },
+        { "id": "p35", "text": "On July ninth this same banner hit roughly sixty pages at once." },
+        { "id": "p36", "text": "That's one service hiccup, not sixty broken screens." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 122.72,
+      "endS": 142.48,
+      "phrases": [
+        { "id": "p37", "text": "Put the three side by side." },
+        { "id": "p38", "text": "Whole page replaced by an error, at the address you asked for: hard four-oh-four." },
+        { "id": "p39", "text": "A click that does nothing but add a hash mark: dead stub." },
+        { "id": "p40", "text": "A page frame with a failed-records panel inside it: data-fetch error." },
+        { "id": "p41", "text": "One look at the screen, plus the URL, settles it." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 142.48,
+      "endS": 164.88,
+      "phrases": [
+        { "id": "p42", "text": "Whichever class it is, capture the same evidence." },
+        { "id": "p43", "text": "The exact URL. A screenshot of the message." },
+        { "id": "p44", "text": "The module you were in, where you clicked from, and what you expected to load." },
+        { "id": "p45", "text": "Then the class-specific note: for a four-oh-four, whether it's a known parked item." },
+        { "id": "p46", "text": "For a stub, say so. For a fetch error, whether a refresh clears it." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 164.88,
+      "endS": 186.8,
+      "phrases": [
+        { "id": "p47", "text": "Then escalate from Support Tickets, under IT and Support." },
+        { "id": "p48", "text": "On a real issue, on your tenant, the new ticket carries all five facts plus the class." },
+        { "id": "p49", "text": "Two exceptions." },
+        { "id": "p50", "text": "A fetch error that clears on refresh needs no ticket at all," },
+        { "id": "p51", "text": "and migration switches go to Jira, not here." },
+        { "id": "p52", "text": "On the shared demo, nothing gets submitted." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 186.8,
+      "endS": 210.834,
+      "phrases": [
+        { "id": "p53", "text": "That's the sort." },
+        { "id": "p54", "text": "Read the URL, read the message, pick the class." },
+        { "id": "p55", "text": "Hard four-oh-four? Escalate it as a serving problem." },
+        { "id": "p56", "text": "Dead stub? Log it as release gated, never as gone." },
+        { "id": "p57", "text": "Fetch error? Refresh first, and escalate only if it sticks." },
+        { "id": "p58", "text": "Three problems that look identical from a distance, told apart in one glance." }
+      ]
+    }
+  ],
+  "output": "WC-PB-14-broken-page-404-v1.1"
+}

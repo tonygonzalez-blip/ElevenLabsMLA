@@ -1,0 +1,130 @@
+{
+  "lesson": "WC-02-06",
+  "audioMaster": "training/module02-crm/WC-02-06-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Caption text must never be rewritten, summarized, or reordered. Block windows are MEASURED onsets from cross-correlating each per-step mp3 against the joined master (the join used ~0.35-0.37s gaps, not the nominal 0.4s; naive sums drift to +0.32s by s10). ffprobe master duration 179.644s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.0,
+      "phrases": [
+        { "id": "p01", "text": "Open CRM in the left rail." },
+        { "id": "p02", "text": "The sidebar stacks every kind of customer record: members, gift cards, house accounts," },
+        { "id": "p03", "text": "and the four we cover today." },
+        { "id": "p04", "text": "One page per record type." },
+        { "id": "p05", "text": "Learn where each one lives and you stop guessing which screen holds the answer." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.0,
+      "endS": 34.32,
+      "phrases": [
+        { "id": "p06", "text": "Click Prepaid Books." },
+        { "id": "p07", "text": "A prepaid book is a stack of washes a customer already paid for." },
+        { "id": "p08", "text": "The tiles up top count them: total, active, completed, and how many expire soon." },
+        { "id": "p09", "text": "In today's capture those numbers were still loading," },
+        { "id": "p10", "text": "but the labels tell you exactly what to read." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.32,
+      "endS": 52.24,
+      "phrases": [
+        { "id": "p11", "text": "Now the list itself." },
+        { "id": "p12", "text": "Six columns, and two do the work on a call:" },
+        { "id": "p13", "text": "Remaining tells you washes left, Expiration tells you the deadline." },
+        { "id": "p14", "text": "The rows failed to load in this capture," },
+        { "id": "p15", "text": "so read the column headers and refresh live before you promise a customer anything." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 52.24,
+      "endS": 67.76,
+      "phrases": [
+        { "id": "p16", "text": "Click Vehicles." },
+        { "id": "p17", "text": "This is the master plate list, nearly four thousand cars." },
+        { "id": "p18", "text": "The tiles loaded here: total vehicles, active members, flagged, and new this month." },
+        { "id": "p19", "text": "When a plate gets flagged at the gate, Flagged is your first stop." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 67.76,
+      "endS": 87.52,
+      "phrases": [
+        { "id": "p20", "text": "Scroll to the list." },
+        { "id": "p21", "text": "Seven columns: plate, make and model, year, customer, location, status, last visit." },
+        { "id": "p22", "text": "For a dispute you want License Plate and Status." },
+        { "id": "p23", "text": "The rows hit the same fetch error, but the tiles above prove the data is there." },
+        { "id": "p24", "text": "It just didn't stream into the table." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 87.52,
+      "endS": 108.88,
+      "phrases": [
+        { "id": "p25", "text": "Click Retail Customers." },
+        { "id": "p26", "text": "This one is bare on purpose." },
+        { "id": "p27", "text": "No tiles, no charts, just a search box and five columns:" },
+        { "id": "p28", "text": "customer, plate, home location, email, phone." },
+        { "id": "p29", "text": "It holds walk-ins and non-members, the people without a full membership record." },
+        { "id": "p30", "text": "Search, read the contact, done." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 108.88,
+      "endS": 127.04,
+      "phrases": [
+        { "id": "p31", "text": "Click Bundles." },
+        { "id": "p32", "text": "A bundle is a packaged deal a site sells." },
+        { "id": "p33", "text": "The tiles loaded: thirty-two bundles, twenty-eight active, and this month's sales and revenue." },
+        { "id": "p34", "text": "The Revenue by Bundle panel ranks which packages actually move," },
+        { "id": "p35", "text": "so you can see the Monthly Value Pack carrying the month." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 127.04,
+      "endS": 145.28,
+      "phrases": [
+        { "id": "p36", "text": "Now the list, and this one actually loaded." },
+        { "id": "p37", "text": "Seven columns, and five packages on screen," },
+        { "id": "p38", "text": "from the Summer Special to the Fleet Pack built for fleets." },
+        { "id": "p39", "text": "Watch the Valid At column: some run at every site, others only at a couple." },
+        { "id": "p40", "text": "That column settles most \"does this work at my location\" questions." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 145.28,
+      "endS": 160.56,
+      "phrases": [
+        { "id": "p41", "text": "One more entry, Fundraiser, sits right below Bundles." },
+        { "id": "p42", "text": "Do not click it." },
+        { "id": "p43", "text": "Its link goes nowhere and the page was never built." },
+        { "id": "p44", "text": "It is parked, so treat the menu item as a placeholder" },
+        { "id": "p45", "text": "and never promise a customer a fundraiser feature from this screen." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 160.56,
+      "endS": 179.644,
+      "phrases": [
+        { "id": "p46", "text": "So, four lists, one sidebar." },
+        { "id": "p47", "text": "Prepaid Books for washes left and expiry." },
+        { "id": "p48", "text": "Vehicles for plates and flags." },
+        { "id": "p49", "text": "Retail Customers for walk-ins." },
+        { "id": "p50", "text": "Bundles for what's on the menu and where." },
+        { "id": "p51", "text": "Match the ticket to the list, open it, read the row." },
+        { "id": "p52", "text": "That's the whole job on these four screens." }
+      ]
+    }
+  ],
+  "output": "WC-02-06-books-vehicles-retail-bundles-v1.1"
+}

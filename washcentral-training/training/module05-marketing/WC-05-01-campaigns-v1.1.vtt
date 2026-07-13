@@ -1,0 +1,250 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.111
+Open Marketing, then Campaigns.
+
+p02
+00:00:03.037 --> 00:00:06.944
+This page gathers every campaign the network runs into one list.
+
+p03
+00:00:07.695 --> 00:00:10.221
+The rest of Marketing sits in the sidebar beside it.
+
+p04
+00:00:11.181 --> 00:00:15.252
+This whole lesson is look-only, so nothing here sends or launches.
+
+p05
+00:00:15.680 --> 00:00:17.050
+Start at the top row.
+
+p06
+00:00:18.130 --> 00:00:19.814
+Four tiles hold the snapshot: active campaigns, messages sent this month,
+
+p07
+00:00:20.245 --> 00:00:21.415
+average open rate, and revenue attributed.
+
+p08
+00:00:21.852 --> 00:00:23.161
+Here the numbers are quiet, mostly zero.
+
+p09
+00:00:23.698 --> 00:00:34.159
+On a live tenant this is your fast read on how marketing is doing.
+
+p10
+00:00:34.663 --> 00:00:36.485
+Below the tiles, three panels.
+
+p11
+00:00:36.755 --> 00:00:38.123
+First, Send Volume.
+
+p12
+00:00:38.611 --> 00:00:41.911
+It draws email and text volume across the last thirty days.
+
+p13
+00:00:42.340 --> 00:00:46.641
+One glance tells you whether sending is climbing, holding steady, or falling off.
+
+p14
+00:00:47.200 --> 00:00:49.221
+Next, Campaigns by Type.
+
+p15
+00:00:49.629 --> 00:00:51.082
+This is the channel mix.
+
+p16
+00:00:51.475 --> 00:00:53.888
+Most of the network's campaigns go by email, a chunk pair email with text,
+
+p17
+00:00:54.206 --> 00:00:59.135
+and smaller slices run text-only or push.
+
+p18
+00:00:59.539 --> 00:01:02.320
+It tells you how customers are actually being reached.
+
+p19
+00:01:02.831 --> 00:01:05.346
+The third panel, Campaign Performance.
+
+p20
+00:01:05.723 --> 00:01:07.406
+It counts campaigns by state: how many are active, sitting in draft, or already wrapped.
+
+p21
+00:01:07.717 --> 00:01:13.714
+A quick pulse on where the work stands.
+
+p22
+00:01:14.160 --> 00:01:16.035
+Now scroll to the Campaign List.
+
+p23
+00:01:16.351 --> 00:01:17.803
+One row per campaign.
+
+p24
+00:01:18.382 --> 00:01:20.919
+Up top, a New Record button to build one, Export to pull the list out,
+
+p25
+00:01:21.260 --> 00:01:26.559
+plus filters and a search box to find a campaign fast.
+
+p26
+00:01:26.960 --> 00:01:28.300
+Read across the headers.
+
+p27
+00:01:28.597 --> 00:01:32.406
+Name, type, and status, then audience, sent, open rate, and revenue.
+
+p28
+00:01:32.646 --> 00:01:34.135
+Those last columns are the results, and they fill in only after a campaign sends.
+
+p29
+00:01:34.527 --> 00:01:42.788
+Here they're all dashes, because none have gone out yet.
+
+p30
+00:01:43.280 --> 00:01:45.711
+Down the status column, four states.
+
+p31
+00:01:45.971 --> 00:01:47.614
+Draft is still being built.
+
+p32
+00:01:47.911 --> 00:01:49.795
+Scheduled is set to go out later.
+
+p33
+00:01:50.193 --> 00:01:51.674
+Active is running now.
+
+p34
+00:01:51.994 --> 00:01:53.831
+Completed has finished its run.
+
+p35
+00:01:54.402 --> 00:01:58.139
+You'll see those same four words everywhere in Marketing, so learn them here.
+
+p36
+00:01:58.560 --> 00:02:01.147
+Look at the two campaigns with an extra chip.
+
+p37
+00:02:01.712 --> 00:02:04.760
+It reads weather paused, six locations.
+
+p38
+00:02:05.460 --> 00:02:10.899
+That campaign is held at those sites for weather,
+
+p39
+00:02:11.860 --> 00:02:15.227
+while its status still reads scheduled or active.
+
+p40
+00:02:15.521 --> 00:02:16.832
+If a client says a campaign stopped in one town but not another, check this chip first.
+
+p41
+00:02:17.347 --> 00:02:20.320
+Where the pause is configured is parked for a later lesson.
+
+p42
+00:02:20.794 --> 00:02:23.495
+Click New Record to open a blank campaign form.
+
+p43
+00:02:24.895 --> 00:02:27.085
+Across the top runs a set of tabs: details, content, goals,
+
+p44
+00:02:27.665 --> 00:02:30.882
+delivery, an A B test, and a weather gate.
+
+p45
+00:02:31.272 --> 00:02:33.528
+We're only here to see the shape of it.
+
+p46
+00:02:34.431 --> 00:02:37.115
+Do not save.
+
+p47
+00:02:37.680 --> 00:02:41.039
+The first tab, Campaign Details, holds the basics.
+
+p48
+00:02:41.597 --> 00:02:44.235
+A name and subject line, the type and mode, a status, a description, and the run dates.
+
+p49
+00:02:44.566 --> 00:02:47.387
+Mode is worth a look: a single send, or a drip sequence that spreads messages over days.
+
+p50
+00:02:48.139 --> 00:02:58.924
+Below it, the audience, where you'd attach who receives the campaign.
+
+p51
+00:02:59.360 --> 00:03:01.996
+Leave the way we came in: click Cancel.
+
+p52
+00:03:03.309 --> 00:03:07.457
+The form closes, nothing saved, and the list is right where we left it.
+
+p53
+00:03:08.566 --> 00:03:14.049
+One tab here, Weather Gate, we didn't open, so how the weather pause is set stays parked too.
+
+p54
+00:03:14.480 --> 00:03:15.294
+Back on the list, two ways to find a campaign.
+
+p55
+00:03:15.680 --> 00:03:17.247
+Type a name into the search box, or narrow with Filters.
+
+p56
+00:03:18.278 --> 00:03:21.568
+The footer counts the records and pages through them.
+
+p57
+00:03:22.225 --> 00:03:28.670
+Export sits up top for pulling the list out, though we won't touch it.
+
+p58
+00:03:29.120 --> 00:03:30.581
+So that's Campaigns.
+
+p59
+00:03:31.038 --> 00:03:32.554
+Four tiles for the snapshot,
+
+p60
+00:03:32.875 --> 00:03:38.094
+three panels for volume, mix, and status, and one list for the campaigns themselves.
+
+p61
+00:03:38.480 --> 00:03:42.494
+Read a status, catch a weather pause, open the form to learn its shape.
+
+p62
+00:03:42.893 --> 00:03:45.419
+All of it without sending or changing a thing.
+

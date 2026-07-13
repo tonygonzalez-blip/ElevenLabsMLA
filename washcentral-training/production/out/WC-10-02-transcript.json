@@ -1,0 +1,416 @@
+{
+  "lesson": "WC-10-02",
+  "audioMaster": "training/module10-it-support/WC-10-02-full-narration-v1.0.mp3",
+  "audioDurationS": 180.611,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is Support Tickets, the queue your team works inside WashCentral.",
+      "startS": 0,
+      "endS": 4.152,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "It's the platform's own help desk, separate from the cross-customer view in the last lesson.",
+      "startS": 4.606,
+      "endS": 9.37,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Everything about the day's support load lives on this one screen.",
+      "startS": 9.81,
+      "endS": 13.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p04",
+      "text": "Start at the top.",
+      "startS": 13.68,
+      "endS": 14.564,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Four counters frame the backlog before you read a single row:",
+      "startS": 15.3,
+      "endS": 18.596,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "what's open, what's in progress, what closed today,",
+      "startS": 19.111,
+      "endS": 22.384,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "and how long the average ticket takes to resolve.",
+      "startS": 22.67,
+      "endS": 25.166,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "One look tells you whether the queue is calm or backed up.",
+      "startS": 26.056,
+      "endS": 29.184,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Now the left panel.",
+      "startS": 29.6,
+      "endS": 30.814,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "This is the twelve-month trend, not today's numbers.",
+      "startS": 31.201,
+      "endS": 34.265,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Volume is climbing, up seven percent over the year.",
+      "startS": 34.778,
+      "endS": 37.842,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Handy context when a client asks whether their run of issues is unusual.",
+      "startS": 38.337,
+      "endS": 42.197,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "The middle panel breaks tickets down by type.",
+      "startS": 42.64,
+      "endS": 45.075,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Billing leads, then technical, then feedback and general.",
+      "startS": 45.521,
+      "endS": 47.492,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "When you're deciding where the team's hours go,",
+      "startS": 47.695,
+      "endS": 49.178,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "this is the split that says billing questions are the heaviest load right now.",
+      "startS": 49.834,
+      "endS": 55.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "On the right, the health panel.",
+      "startS": 55.979,
+      "endS": 57.482,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Most of the queue is already resolved, a smaller share in progress, and a thin band still open.",
+      "startS": 58.693,
+      "endS": 64.164,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Read across, it's a quick pulse on whether work is getting closed or piling up.",
+      "startS": 64.608,
+      "endS": 68.924,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p20",
+      "text": "Below the summary sits the list itself.",
+      "startS": 69.44,
+      "endS": 71.787,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "This is where you actually work.",
+      "startS": 72.274,
+      "endS": 74.013,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Two buttons ride the top corner:",
+      "startS": 74.783,
+      "endS": 76.399,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "one opens a brand-new ticket, the other exports the list.",
+      "startS": 76.885,
+      "endS": 80.466,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "We'll open a new one shortly.",
+      "startS": 80.877,
+      "endS": 82.265,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "We never export while recording.",
+      "startS": 82.658,
+      "endS": 84.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Above the table, a search box and a filter control.",
+      "startS": 85.131,
+      "endS": 87.936,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Type a ticket number or a few words of the subject to jump straight to it,",
+      "startS": 88.602,
+      "endS": 92.31,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "or open the filters to narrow by field.",
+      "startS": 92.647,
+      "endS": 94.811,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "On a busy queue, this is how you find one ticket fast.",
+      "startS": 95.665,
+      "endS": 98.99,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "Read the column headers.",
+      "startS": 99.44,
+      "endS": 100.89,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Ticket number, subject, location, priority, status, owner, and created date.",
+      "startS": 101.897,
+      "endS": 102.644,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "The two you'll lean on most are priority, for what to grab first,",
+      "startS": 102.935,
+      "endS": 105.516,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "and the owner, for who already has it.",
+      "startS": 105.809,
+      "endS": 115.129,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "Now the rows.",
+      "startS": 115.6,
+      "endS": 116.829,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "A POS receipt problem in progress, a billing dispute still open,",
+      "startS": 117.472,
+      "endS": 119.759,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "a membership that won't activate, a tunnel emergency-stop already resolved.",
+      "startS": 120.161,
+      "endS": 121.892,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Priority runs from critical down to medium,",
+      "startS": 122.302,
+      "endS": 124.051,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "and each ticket names a person or a team on the hook for it.",
+      "startS": 124.449,
+      "endS": 133.927,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "At the foot of the list, the page controls.",
+      "startS": 134.4,
+      "endS": 136.646,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "Rows per page, a simple counter, and pager arrows.",
+      "startS": 137.018,
+      "endS": 140.693,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "One quirk worth knowing: the card says eighteen records while only four load here.",
+      "startS": 141.099,
+      "endS": 145.944,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "In the demo tenant, treat those four as samples and the counts as stand-ins.",
+      "startS": 146.322,
+      "endS": 150.594,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "Now open a new ticket.",
+      "startS": 151.04,
+      "endS": 152.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "This is the one write action in the lesson.",
+      "startS": 153.173,
+      "endS": 155.363,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Open the blank form, look it over, then back out without saving and without touching a field.",
+      "startS": 155.585,
+      "endS": 160.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "We're documenting where a new ticket starts, not filing one.",
+      "startS": 161.294,
+      "endS": 164.834,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p47",
+      "text": "That's the whole page.",
+      "startS": 165.359,
+      "endS": 166.443,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p48",
+      "text": "The counters give you the backlog,",
+      "startS": 167.039,
+      "endS": 168.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "the middle panels tell you what kind of work it is and how much is cleared,",
+      "startS": 169.05,
+      "endS": 172.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "and the list hands you each ticket with its priority and its owner.",
+      "startS": 173.223,
+      "endS": 176.79,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "Enough to triage before you open a single one.",
+      "startS": 177.331,
+      "endS": 180.16,
+      "timing": "silence"
+    }
+  ]
+}

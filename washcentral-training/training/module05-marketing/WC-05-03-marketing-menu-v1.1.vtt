@@ -1,0 +1,282 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:02.340
+Open Marketing and look down the left rail.
+
+p02
+00:00:02.696 --> 00:00:05.125
+Campaigns and Automation you already know.
+
+p03
+00:00:05.616 --> 00:00:07.718
+Everything under them is what we map today.
+
+p04
+00:00:08.306 --> 00:00:10.163
+Think of this list as a lookup table:
+
+p05
+00:00:10.556 --> 00:00:14.378
+a client asks a question, and one of these pages holds the answer.
+
+p06
+00:00:14.866 --> 00:00:17.027
+By the end you'll go straight to the right one.
+
+p07
+00:00:17.440 --> 00:00:18.065
+First, SmartLinks.
+
+p08
+00:00:18.065 --> 00:00:22.617
+These are trackable links you drop into an email or a social post.
+
+p09
+00:00:22.617 --> 00:00:27.120
+When a manager asks whether that link actually brought cars through the bay,
+
+p10
+00:00:27.120 --> 00:00:28.413
+you don't guess.
+
+p11
+00:00:28.413 --> 00:00:31.852
+The page counts clicks, conversions, and the revenue each link earned.
+
+p12
+00:00:32.320 --> 00:00:33.349
+Next, Customer Segments.
+
+p13
+00:00:33.349 --> 00:00:36.216
+A segment is just a saved audience,
+
+p14
+00:00:36.216 --> 00:00:40.331
+a group like win-back or VIP that a campaign gets pointed at.
+
+p15
+00:00:40.331 --> 00:00:45.487
+So when someone asks who a message went to, the trail ends here.
+
+p16
+00:00:45.487 --> 00:00:48.572
+Every campaign starts from a list on this page.
+
+p17
+00:00:49.040 --> 00:00:50.676
+Offers and Promotions.
+
+p18
+00:00:51.717 --> 00:00:53.380
+This is where the discounts live.
+
+p19
+00:00:53.863 --> 00:00:55.766
+A member says their promo code bounced?
+
+p20
+00:00:56.200 --> 00:00:57.010
+Open the offer, check the dates it's valid, and check its status.
+
+p21
+00:00:57.304 --> 00:01:03.088
+Nine times out of ten the code simply expired.
+
+p22
+00:01:03.520 --> 00:01:04.657
+Email Templates.
+
+p23
+00:01:05.216 --> 00:01:10.725
+These are the reusable email layouts the campaigns and the automated lifecycle flows draw from.
+
+p24
+00:01:11.383 --> 00:01:12.567
+They're sorted by moment: cancellation, refund, plan change, retention.
+
+p25
+00:01:12.852 --> 00:01:15.999
+When a client asks what the cancellation email says,
+
+p26
+00:01:16.707 --> 00:01:21.848
+you read it right here, without touching send.
+
+p27
+00:01:22.385 --> 00:01:25.033
+Paid Media, and notice the draft tag on it.
+
+p28
+00:01:25.819 --> 00:01:29.385
+This one matches your members to ad accounts on Meta and Google,
+
+p29
+00:01:29.743 --> 00:01:32.819
+then ties the ad spend back to actual washes.
+
+p30
+00:01:33.217 --> 00:01:35.340
+It's powerful and it's still being built.
+
+p31
+00:01:35.960 --> 00:01:39.938
+Read the tabs, but do not click Sync Now or a row Sync.
+
+p32
+00:01:40.412 --> 00:01:43.032
+Those push audience data out to the ad platforms.
+
+p33
+00:01:43.600 --> 00:01:47.090
+Now the page every technician should bookmark: Deliverability.
+
+p34
+00:01:47.736 --> 00:01:51.270
+Before you ever write "the platform didn't send," come here.
+
+p35
+00:01:51.734 --> 00:01:55.509
+Inbox rate, bounces, spam complaints, and the suppression list.
+
+p36
+00:01:55.983 --> 00:01:59.466
+If an address was suppressed or bounced, the send didn't fail.
+
+p37
+00:01:59.809 --> 00:02:01.874
+The system did exactly what it was told.
+
+p38
+00:02:02.413 --> 00:02:04.875
+Click Referral Program, and watch the breadcrumb.
+
+p39
+00:02:05.590 --> 00:02:06.993
+It jumps you into Settings.
+
+p40
+00:02:07.492 --> 00:02:08.888
+This is refer-a-friend: the reward the referrer gets, the reward the friend gets,
+
+p41
+00:02:09.209 --> 00:02:14.802
+and how many referrals each program has driven.
+
+p42
+00:02:15.308 --> 00:02:17.617
+Same menu, but it lives on the Settings side.
+
+p43
+00:02:18.080 --> 00:02:18.739
+SMS Templates.
+
+p44
+00:02:18.739 --> 00:02:20.576
+The text-message versions.
+
+p45
+00:02:20.576 --> 00:02:23.791
+Watch the character and segment counts here,
+
+p46
+00:02:23.791 --> 00:02:28.735
+because a text that runs long splits into two segments and costs more to send.
+
+p47
+00:02:28.735 --> 00:02:32.313
+Short and tight isn't a style choice on S-M-S.
+
+p48
+00:02:32.313 --> 00:02:33.520
+It's the budget.
+
+p49
+00:02:33.920 --> 00:02:36.254
+RCS Templates, the richer cousin of texting.
+
+p50
+00:02:36.254 --> 00:02:37.718
+Cards, carousels, images.
+
+p51
+00:02:37.718 --> 00:02:41.051
+On a newer phone the member sees the full experience.
+
+p52
+00:02:41.051 --> 00:02:45.333
+On an older one it quietly drops back to a plain text,
+
+p53
+00:02:45.333 --> 00:02:50.000
+and the fallback column tells you how often that safety net is in place.
+
+p54
+00:02:50.400 --> 00:02:53.140
+Mobile Content Blocks, back on the Settings side.
+
+p55
+00:02:54.529 --> 00:02:56.701
+This is what a customer sees inside the app:
+
+p56
+00:02:57.210 --> 00:03:00.032
+the promo banner, the card rail, the announcements.
+
+p57
+00:03:00.837 --> 00:03:03.228
+It's a live editor, so treat it gently.
+
+p58
+00:03:03.764 --> 00:03:04.732
+Read the layout.
+
+p59
+00:03:04.952 --> 00:03:06.675
+Do not click Save and Publish.
+
+p60
+00:03:07.200 --> 00:03:07.917
+Last one, Push Campaigns.
+
+p61
+00:03:08.117 --> 00:03:09.125
+This is where the app's push notifications get written and scheduled,
+
+p62
+00:03:09.417 --> 00:03:15.797
+with a preview of how they'll look on a lock screen.
+
+p63
+00:03:16.051 --> 00:03:18.947
+It's a compose-and-send surface, so we only name it.
+
+p64
+00:03:19.249 --> 00:03:22.301
+Do not start a new campaign and do not publish.
+
+p65
+00:03:22.520 --> 00:03:23.818
+Read it and move on.
+
+p66
+00:03:24.240 --> 00:03:25.409
+That's the whole menu.
+
+p67
+00:03:25.755 --> 00:03:29.955
+Links to SmartLinks, audiences to Segments, discounts to Offers,
+
+p68
+00:03:30.299 --> 00:03:31.931
+wording to the template pages, ad matching to Paid Media, and inbox health to Deliverability.
+
+p69
+00:03:32.245 --> 00:03:35.893
+Learn the map now, so when a client's win-back texts go quiet in one town,
+
+p70
+00:03:36.316 --> 00:03:44.635
+you already know the two pages that explain it before anyone files a bug.
+

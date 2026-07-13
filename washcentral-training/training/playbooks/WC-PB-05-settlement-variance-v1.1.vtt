@@ -1,0 +1,254 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.975
+Start on Payments Reconciliation.
+
+p02
+00:00:02.477 --> 00:00:05.366
+This is the settlement ledger, one row per batch.
+
+p03
+00:00:05.672 --> 00:00:07.882
+Expected is what the day should have banked.
+
+p04
+00:00:08.192 --> 00:00:10.927
+Settled is what the processor actually deposited.
+
+p05
+00:00:11.251 --> 00:00:13.243
+Variance is the gap between the two.
+
+p06
+00:00:13.591 --> 00:00:16.400
+Read those three columns and the whole page makes sense.
+
+p07
+00:00:16.800 --> 00:00:18.223
+Now the status column.
+
+p08
+00:00:19.211 --> 00:00:24.521
+Fort Lauderdale and Orlando Central settled exactly what they expected, so they read balanced.
+
+p09
+00:00:25.361 --> 00:00:28.242
+Miami North came up a hundred sixty dollars short:
+
+p10
+00:00:28.755 --> 00:00:31.340
+expected fourteen thousand, eight hundred eighty,
+
+p11
+00:00:31.689 --> 00:00:34.232
+settled fourteen thousand, seven hundred twenty.
+
+p12
+00:00:34.995 --> 00:00:37.490
+That nonzero gap flags it for review.
+
+p13
+00:00:38.120 --> 00:00:40.077
+The review row is the one you work.
+
+p14
+00:00:40.546 --> 00:00:43.050
+With more than a few batches, narrow the list.
+
+p15
+00:00:43.405 --> 00:00:45.943
+Search by batch, location, or status,
+
+p16
+00:00:46.254 --> 00:00:49.648
+or sort straight on the variance column to pull the gaps to the top.
+
+p17
+00:00:49.965 --> 00:00:51.518
+Nothing here touches a batch.
+
+p18
+00:00:51.745 --> 00:00:53.760
+You're only deciding which one to chase.
+
+p19
+00:00:54.160 --> 00:00:56.772
+Top-right of the panel, find Resolve batch.
+
+p20
+00:00:57.276 --> 00:01:00.766
+That's the control a supervisor uses to close out a review batch.
+
+p21
+00:01:01.229 --> 00:01:02.731
+You locate it and stop.
+
+p22
+00:01:03.604 --> 00:01:07.621
+Working it, and running any refund, happens in production with the right role.
+
+p23
+00:01:07.956 --> 00:01:09.280
+Never from this demo.
+
+p24
+00:01:09.789 --> 00:01:12.433
+Before you leave the ledger, decide what to chase.
+
+p25
+00:01:13.037 --> 00:01:16.356
+A settlement gap is usually one of two things at that site:
+
+p26
+00:01:16.986 --> 00:01:19.028
+the drawer came up over or short, or cash was paid out and never banked.
+
+p27
+00:01:19.463 --> 00:01:21.550
+Carry the location to both checks.
+
+p28
+00:01:22.410 --> 00:01:24.273
+There's no date column here, so location is the join,
+
+p29
+00:01:24.894 --> 00:01:31.280
+and a shift number ties a payout back to its drawer.
+
+p30
+00:01:31.757 --> 00:01:32.591
+First the drawer. In Sales, open Shifts.
+
+p31
+00:01:33.392 --> 00:01:35.075
+Every drawer session lists out:
+
+p32
+00:01:35.664 --> 00:01:39.179
+shift number, location, terminal,
+
+p33
+00:01:39.431 --> 00:01:43.441
+when it opened and closed, and the opening and closing drawer.
+
+p34
+00:01:43.951 --> 00:01:47.252
+Those last two are where an over or short shows up for the day.
+
+p35
+00:01:47.930 --> 00:01:50.202
+Filter to the batch's location and read them.
+
+p36
+00:01:50.640 --> 00:01:52.352
+One caution from today's capture.
+
+p37
+00:01:52.698 --> 00:01:56.887
+The list came back empty with a fetch error, and the total-shifts count was blank.
+
+p38
+00:01:57.561 --> 00:01:59.389
+Don't read that as no shifts.
+
+p39
+00:01:59.737 --> 00:02:03.600
+Confirm the data actually loaded before you tell anyone the drawer was clean.
+
+p40
+00:02:04.000 --> 00:02:05.070
+Now the cash side. Open Payouts.
+
+p41
+00:02:05.414 --> 00:02:06.422
+Each row shows the location, payout ID, shift number, cashier, terminal, vendor, and amount.
+
+p42
+00:02:07.030 --> 00:02:13.793
+A payout links to a drawer by its shift number,
+
+p43
+00:02:14.065 --> 00:02:20.658
+so cash pulled for a vendor explains part of a gap with nothing actually missing.
+
+p44
+00:02:21.177 --> 00:02:22.980
+Read the payout status card.
+
+p45
+00:02:23.577 --> 00:02:26.821
+It says approval and dispute status aren't tracked here;
+
+p46
+00:02:27.294 --> 00:02:29.823
+payouts records completed disbursements only.
+
+p47
+00:02:30.337 --> 00:02:33.970
+So this page confirms what went out, not whether it was approved.
+
+p48
+00:02:34.276 --> 00:02:39.840
+And today it too returned the fetch error, so treat the rows as unconfirmed until they load.
+
+p49
+00:02:40.240 --> 00:02:41.541
+Now build the ticket.
+
+p50
+00:02:42.045 --> 00:02:43.028
+Name the batch, B-T one-oh-three-ninety-three, and the location, Miami North.
+
+p51
+00:02:43.319 --> 00:02:45.741
+Give the three numbers:
+
+p52
+00:02:46.123 --> 00:02:48.018
+expected fourteen thousand, eight hundred eighty;
+
+p53
+00:02:48.461 --> 00:02:52.882
+settled fourteen thousand, seven hundred twenty;
+
+p54
+00:02:53.290 --> 00:02:56.229
+variance a hundred sixty.
+
+p55
+00:02:56.544 --> 00:02:58.308
+Mark it review, and say whether a drawer figure or a payout explains the gap.
+
+p56
+00:02:58.652 --> 00:03:07.518
+You never resolve the batch, and you never run a refund from demo.
+
+p57
+00:03:08.131 --> 00:03:09.432
+So that's the playbook.
+
+p58
+00:03:09.844 --> 00:03:10.760
+Read the ledger, find the review batch by its status and its variance,
+
+p59
+00:03:10.989 --> 00:03:13.765
+locate Resolve batch without touching it,
+
+p60
+00:03:13.993 --> 00:03:16.141
+then cross-check the location's shifts and payouts to explain the gap.
+
+p61
+00:03:16.524 --> 00:03:20.253
+Escalate with the batch and the amounts.
+
+p62
+00:03:20.601 --> 00:03:22.693
+You moved nothing.
+
+p63
+00:03:22.951 --> 00:03:27.040
+You found where the money went and passed it on.
+

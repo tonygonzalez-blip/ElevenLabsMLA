@@ -1,0 +1,368 @@
+{
+  "lesson": "WC-02-04",
+  "audioMaster": "training/module02-crm/WC-02-04-full-narration-v1.0.mp3",
+  "audioDurationS": 152.111,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Every prepaid card the network has sold lives on one screen.",
+      "startS": 0,
+      "endS": 3.331,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the gift card portfolio.",
+      "startS": 3.667,
+      "endS": 5.724,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Four headline tiles up top, three insight panels, and a searchable card list below.",
+      "startS": 6.277,
+      "endS": 7.864,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "On a support call, this is almost always where you start.",
+      "startS": 8.166,
+      "endS": 14.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Four tiles run across the top.",
+      "startS": 15.152,
+      "endS": 16.803,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "How many cards exist, how much is still owed on them,",
+      "startS": 17.492,
+      "endS": 18.666,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "how many are live, and how many are spent to zero.",
+      "startS": 18.957,
+      "endS": 23.183,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Read them left to right for the whole portfolio at a glance.",
+      "startS": 23.676,
+      "endS": 26.473,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "First panel, issuance over the last year.",
+      "startS": 26.88,
+      "endS": 29.518,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "The line climbs, up about nine percent, with the running total in the corner.",
+      "startS": 30.164,
+      "endS": 34.611,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "It tells you the program is growing before you open a report.",
+      "startS": 35.409,
+      "endS": 38.802,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p12",
+      "text": "Next to it, where the money sits.",
+      "startS": 39.331,
+      "endS": 41.305,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Most cards carry small amounts; only a thin slice hold a hundred dollars or more.",
+      "startS": 42.21,
+      "endS": 46.581,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "So a big disputed balance is already the unusual case.",
+      "startS": 46.927,
+      "endS": 50.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p15",
+      "text": "The third panel is portfolio health.",
+      "startS": 50.938,
+      "endS": 52.98,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p16",
+      "text": "Most active, a good share redeemed, a few expired.",
+      "startS": 53.681,
+      "endS": 56.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "The same split as the status column, rolled into one bar.",
+      "startS": 57.315,
+      "endS": 60.544,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p18",
+      "text": "Now the list itself.",
+      "startS": 60.96,
+      "endS": 62.401,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p19",
+      "text": "One number sits under the title: the record count,",
+      "startS": 63.185,
+      "endS": 64.987,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p20",
+      "text": "a hundred sixteen thousand cards and change, the same figure as the total tile up top.",
+      "startS": 65.361,
+      "endS": 72.632,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p21",
+      "text": "Two buttons sit above the table.",
+      "startS": 73.106,
+      "endS": 74.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p22",
+      "text": "Delete removes a card.",
+      "startS": 74.991,
+      "endS": 76.414,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p23",
+      "text": "Issue Gift Card creates one.",
+      "startS": 76.75,
+      "endS": 78.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p24",
+      "text": "Both write to real records, so we point and read, and never click either.",
+      "startS": 78.657,
+      "endS": 82.72,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p25",
+      "text": "Under the buttons, one search box.",
+      "startS": 83.12,
+      "endS": 85.029,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p26",
+      "text": "Type a card number, a customer, a location, or a status, and the list narrows to the match.",
+      "startS": 85.465,
+      "endS": 90.83,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p27",
+      "text": "When a caller has the card in hand, this is the fast path.",
+      "startS": 91.722,
+      "endS": 94.869,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p28",
+      "text": "Six columns describe each card.",
+      "startS": 95.36,
+      "endS": 97.332,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p29",
+      "text": "The number, who owns it, where it sold,",
+      "startS": 97.712,
+      "endS": 100.484,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p30",
+      "text": "what is left, whether it is still good, and when it last moved.",
+      "startS": 100.786,
+      "endS": 104.829,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p31",
+      "text": "Balance, status, last used carry most calls.",
+      "startS": 105.569,
+      "endS": 109.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p32",
+      "text": "Now the rows themselves.",
+      "startS": 110.053,
+      "endS": 111.383,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p33",
+      "text": "They load live, twenty-five cards to a page, thousands of pages deep.",
+      "startS": 111.997,
+      "endS": 116.138,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p34",
+      "text": "Where the customer cell shows a dash, no one is linked to that card.",
+      "startS": 116.809,
+      "endS": 120.218,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p35",
+      "text": "And if the table ever says it couldn't load, refresh before you quote a balance.",
+      "startS": 120.819,
+      "endS": 124.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p36",
+      "text": "Here is the everyday move.",
+      "startS": 125.342,
+      "endS": 127.07,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p37",
+      "text": "A customer reads you their card number.",
+      "startS": 127.825,
+      "endS": 129.635,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p38",
+      "text": "You drop it into the search, and the row returns the balance, the status, and the last-used date.",
+      "startS": 129.938,
+      "endS": 135.002,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p39",
+      "text": "Read those back and the call is answered.",
+      "startS": 135.418,
+      "endS": 137.419,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p40",
+      "text": "So, the gift card screen.",
+      "startS": 137.84,
+      "endS": 139.591,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p41",
+      "text": "Totals up top,",
+      "startS": 140.089,
+      "endS": 141.054,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p42",
+      "text": "three quick-read panels,",
+      "startS": 141.363,
+      "endS": 142.771,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p43",
+      "text": "and a list where every lookup lands.",
+      "startS": 143.025,
+      "endS": 145.241,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p44",
+      "text": "Find the card by number, read its balance and status,",
+      "startS": 145.633,
+      "endS": 148.61,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p45",
+      "text": "and you have handled almost every gift card call.",
+      "startS": 148.835,
+      "endS": 151.666,
+      "timing": "silence"
+    }
+  ]
+}

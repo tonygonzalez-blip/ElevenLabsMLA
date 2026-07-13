@@ -1,0 +1,108 @@
+{
+  "lesson": "WC-15-01",
+  "audioMaster": "training/module15-migration/WC-15-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split only at the script's <break> tags and sentence/comma boundaries into caption-sized pieces; no word is rewritten, summarized, or reordered. Block windows were measured by normalized FFT cross-correlation (numpy rfft) of each WC-15-01-sNN.mp3 leading segment against the joined master decoded to 8 kHz mono PCM: the Sigma(ffprobe audio+0.4) formula predicts 133.220s but the ffprobed master is 132.911s (0.309s off, just past the +/-0.3s gate), so measured onsets are used instead. Every block matched at corr=1.000 and every onset lands exactly on the 0.08s mp3-frame grid; the per-file ffprobe durations are inflated ~0.03s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates. Each block startS is its measured onset; final end = ffprobed master duration 132.911s. This is a doc-sourced (title-card / document-over-narration) lesson: every phrase is a Migration FAQ fact, carried by the captions.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 14.8,
+      "phrases": [
+        { "id": "p01", "text": "Migration questions come with a client's system on the line, so the answers have to be exact." },
+        { "id": "p02", "text": "Everything in this lesson comes straight from the Migration FAQ." },
+        { "id": "p03", "text": "If a question falls outside it, you park it and ask." },
+        { "id": "p04", "text": "You never improvise." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 14.8,
+      "endS": 27.44,
+      "phrases": [
+        { "id": "p05", "text": "Here is the whole client-side story." },
+        { "id": "p06", "text": "To reach WashCentral, they need one thing: the new URL." },
+        { "id": "p07", "text": "It comes to them directly, or WashAssist redirects them automatically." },
+        { "id": "p08", "text": "That is it." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 27.44,
+      "endS": 44.4,
+      "phrases": [
+        { "id": "p09", "text": "This next part prevents most migration support calls." },
+        { "id": "p10", "text": "Credentials do not change." },
+        { "id": "p11", "text": "Users are not re-created, and data is not copied over." },
+        { "id": "p12", "text": "WashCentral runs on the WashAssist data." },
+        { "id": "p13", "text": "So a migrated client signs in with the exact login they already had." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 44.4,
+      "endS": 54.72,
+      "phrases": [
+        { "id": "p14", "text": "For brand-new clients, nothing about your process changes." },
+        { "id": "p15", "text": "The Pre-Configuration team onboards them the same way as always." },
+        { "id": "p16", "text": "The only difference is the URL they are given." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 54.72,
+      "endS": 71.52,
+      "phrases": [
+        { "id": "p17", "text": "Switching an existing client depends on the phase." },
+        { "id": "p18", "text": "During beta, you submit a Jira ticket on the CSI board, and Development redirects the URL." },
+        { "id": "p19", "text": "Once it reaches general availability," },
+        { "id": "p20", "text": "Tech Support makes the switch directly in the Admin Portal, no ticket needed." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 71.52,
+      "endS": 81.28,
+      "phrases": [
+        { "id": "p21", "text": "One consequence to know." },
+        { "id": "p22", "text": "After the redirect, the client can no longer reach WashAssist." },
+        { "id": "p23", "text": "The only way back is to reverse the switch." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 81.28,
+      "endS": 96.88,
+      "phrases": [
+        { "id": "p24", "text": "And it does reverse." },
+        { "id": "p25", "text": "The same path that made the switch undoes it." },
+        { "id": "p26", "text": "In beta, that is another Jira ticket on the CSI board to revert the redirection." },
+        { "id": "p27", "text": "So when a client asks to move back to WashAssist for month-end, that is your answer." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 96.88,
+      "endS": 113.12,
+      "phrases": [
+        { "id": "p28", "text": "Clients often ask what becomes of the old system." },
+        { "id": "p29", "text": "WashAssist goes into support mode, critical fixes only," },
+        { "id": "p30", "text": "for a period still to be set, and is eventually retired." },
+        { "id": "p31", "text": "Their data stays available in WashCentral the whole time," },
+        { "id": "p32", "text": "because WashCentral was already using it." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 113.12,
+      "endS": 132.911,
+      "phrases": [
+        { "id": "p33", "text": "So the short version you can say with confidence:" },
+        { "id": "p34", "text": "the login stays the same, only the URL changes," },
+        { "id": "p35", "text": "the switch is a CSI Jira ticket in beta or an Admin Portal action at general availability," },
+        { "id": "p36", "text": "it is fully reversible, and no data is lost." },
+        { "id": "p37", "text": "Anything the FAQ does not answer, you park and confirm." }
+      ]
+    }
+  ],
+  "output": "WC-15-01-migration-switching-v1.1"
+}

@@ -1,0 +1,392 @@
+{
+  "lesson": "WC-15-02",
+  "audioMaster": "training/module15-migration/WC-15-02-full-narration-v1.0.mp3",
+  "audioDurationS": 149.316,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Sooner or later a migrated client says the platform looks different,",
+      "startS": 0,
+      "endS": 3.114,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "or asks where one of their features went.",
+      "startS": 3.114,
+      "endS": 5.379,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "You have two kinds of answer, and one hard rule.",
+      "startS": 5.379,
+      "endS": 8.697,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Here they are.",
+      "startS": 8.697,
+      "endS": 9.92,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Start with the big picture, and attribute it.",
+      "startS": 10.353,
+      "endS": 14.627,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Per Micrologic platform documentation,",
+      "startS": 14.627,
+      "endS": 16.218,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "all one hundred seventy-nine WashAssist modules carried forward with full parity,",
+      "startS": 16.218,
+      "endS": 20.593,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "plus sixteen or more new capability areas.",
+      "startS": 20.593,
+      "endS": 23.588,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Say \"per the documentation.\"",
+      "startS": 23.588,
+      "endS": 25.581,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "You are quoting it, not claiming you counted.",
+      "startS": 25.581,
+      "endS": 29.2,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "If the client is technical, there is a second attributed layer.",
+      "startS": 29.665,
+      "endS": 33.93,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "The platform was rebuilt on AWS, with token-based sign-in,",
+      "startS": 33.93,
+      "endS": 36.826,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "sessions tied to the device, and rate limiting on the busy screens.",
+      "startS": 36.826,
+      "endS": 40.687,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Again, that is the documentation talking,",
+      "startS": 40.687,
+      "endS": 43.346,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "not something you can point to on screen.",
+      "startS": 43.346,
+      "endS": 45.92,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "For \"what is coming,\" keep it to what is documented.",
+      "startS": 46.418,
+      "endS": 50.639,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Release two moves Marketing onto an event-driven backbone with two-way data replication.",
+      "startS": 50.639,
+      "endS": 55.354,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Release three brings event-driven microservices.",
+      "startS": 55.354,
+      "endS": 57.221,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "No dates.",
+      "startS": 57.221,
+      "endS": 57.967,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "If they push for a date, that is parked.",
+      "startS": 57.967,
+      "endS": 61.57,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Now the question you will actually get: where did my feature go.",
+      "startS": 62.126,
+      "endS": 63.967,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Whole modules were regrouped.",
+      "startS": 64.335,
+      "endS": 65.735,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Employees, Gamification, and the Scheduler live under Team now.",
+      "startS": 66.252,
+      "endS": 67.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Maintenance, Incidents, and appointment Scheduling are under Operations.",
+      "startS": 68.165,
+      "endS": 71.808,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Mobile and the Portal are under Digital.",
+      "startS": 72.147,
+      "endS": 75.846,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Support and Audit sit under IT and Support.",
+      "startS": 76.053,
+      "endS": 78.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "And Billing and Academy are brand new.",
+      "startS": 78.539,
+      "endS": 83.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Some features did not leave, they just moved or became a button.",
+      "startS": 84.495,
+      "endS": 88.173,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Retention Log is a button on the Customer List.",
+      "startS": 88.713,
+      "endS": 91.292,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Generate Invoices is a button on House Accounts.",
+      "startS": 91.885,
+      "endS": 94.754,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Rewards moved into Settings, under Services.",
+      "startS": 95.301,
+      "endS": 97.889,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "Adjustments moved into Inventory.",
+      "startS": 98.321,
+      "endS": 100.227,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Forecasting is under Analytics.",
+      "startS": 100.867,
+      "endS": 102.709,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "Report scheduling is on the Reports hub.",
+      "startS": 103.078,
+      "endS": 105.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "The full map is in our own verified records,",
+      "startS": 105.61,
+      "endS": 111.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "so you are citing what we saw, not guessing.",
+      "startS": 111.725,
+      "endS": 111.905,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Here is the rule that keeps you honest.",
+      "startS": 111.905,
+      "endS": 113.71,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "If you cannot find a feature live, you do not say it is gone.",
+      "startS": 114.596,
+      "endS": 118.619,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "PIN Codes, Loyalty Discounts, Tech Commissions, Site Watch,",
+      "startS": 119.466,
+      "endS": 126.119,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "and a few others are not visible today.",
+      "startS": 126.785,
+      "endS": 129.922,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "The correct answer is that their status is being confirmed.",
+      "startS": 130.3,
+      "endS": 132.844,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "It might have moved, it might be in a later release.",
+      "startS": 133.26,
+      "endS": 135.944,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "Log the ask, and let it be answered properly.",
+      "startS": 136.4,
+      "endS": 136.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "So, three moves.",
+      "startS": 136.651,
+      "endS": 137.733,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "Give the parity story and attribute it.",
+      "startS": 138.167,
+      "endS": 140.35,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "Locate the specific feature from the verified map.",
+      "startS": 140.804,
+      "endS": 143.417,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "And never, ever call something gone.",
+      "startS": 143.946,
+      "endS": 146.448,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "Confirm first, then answer.",
+      "startS": 146.75,
+      "endS": 148.88,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "lesson": "WC-PB-03",
+  "audioMaster": "training/playbooks/WC-PB-03-full-narration-v1.0.mp3",
+  "audioDurationS": 246.282,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Command Center.",
+      "startS": 0,
+      "endS": 1.141,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is your first look when a site calls in a dead register.",
+      "startS": 1.141,
+      "endS": 5.224,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "The dashboard pulls the whole network into one view,",
+      "startS": 5.224,
+      "endS": 8.162,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "and the panel you want is lower down, under the map.",
+      "startS": 8.162,
+      "endS": 11.3,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Find Priority Intelligence.",
+      "startS": 11.841,
+      "endS": 13.639,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "It ranks what needs you right now, worst first.",
+      "startS": 13.978,
+      "endS": 16.933,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Eleven items today, four of them urgent,",
+      "startS": 17.205,
+      "endS": 19.739,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "and the Critical group is already sitting at the top.",
+      "startS": 19.972,
+      "endS": 22.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "There it is.",
+      "startS": 23.064,
+      "endS": 23.834,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Henrico West Broad, POS system offline, card terminals down at peak.",
+      "startS": 24.229,
+      "endS": 29.06,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "The row names the site, the symptom, and tells you a tech is already en route.",
+      "startS": 29.609,
+      "endS": 33.666,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Check one is done before you lifted a finger.",
+      "startS": 33.981,
+      "endS": 36.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Now look right,",
+      "startS": 36.936,
+      "endS": 37.936,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "not through.",
+      "startS": 38.14,
+      "endS": 38.937,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "The row has an Open arrow into the item.",
+      "startS": 39.367,
+      "endS": 41.702,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "We leave it alone on the shared demo, and this pass did not capture where it lands.",
+      "startS": 41.91,
+      "endS": 46.133,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "What earns your attention is Action Ownership beside it:",
+      "startS": 46.729,
+      "endS": 49.688,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Regional Ops already holds this one, due inside thirty minutes.",
+      "startS": 50.04,
+      "endS": 53.848,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Know who owns it before you move.",
+      "startS": 54.165,
+      "endS": 56,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Head to I-T and Support, and open M-L Command Center.",
+      "startS": 56.451,
+      "endS": 60.124,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "This is the Micrologic N-O-C, the room support watches across every customer.",
+      "startS": 60.482,
+      "endS": 65.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Two criticals live right now, and the incidents tab is where they land.",
+      "startS": 66.15,
+      "endS": 69.667,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Read the top incident.",
+      "startS": 70.205,
+      "endS": 71.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "POS system offline, zero transactions for forty-seven minutes.",
+      "startS": 72.365,
+      "endS": 76.991,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "That zero is the tell.",
+      "startS": 77.387,
+      "endS": 78.906,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "A slow lane still writes tickets;",
+      "startS": 79.423,
+      "endS": 83.022,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "a stopped one does not, and this one stopped almost an hour ago.",
+      "startS": 83.34,
+      "endS": 85.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Two things on that card do your triage.",
+      "startS": 86.046,
+      "endS": 88.038,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "The tag tells you what broke:",
+      "startS": 88.615,
+      "endS": 90.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "this one reads Tunnel Down,",
+      "startS": 90.622,
+      "endS": 92.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "others say Hardware, Payments, Equipment.",
+      "startS": 92.68,
+      "endS": 95.446,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "The assignee tells you who has it,",
+      "startS": 96.411,
+      "endS": 98.266,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "or that it is unassigned and yours to claim.",
+      "startS": 98.735,
+      "endS": 101.235,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Create Ticket and View Full Profile are right there, but on the demo you only read them.",
+      "startS": 102.186,
+      "endS": 107.502,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Next check is System Alerts, under I-T and Support.",
+      "startS": 107.952,
+      "endS": 111.275,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Open it from the sidebar link and the live feed loads, three active alerts, one critical.",
+      "startS": 112.103,
+      "endS": 117.047,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Every row names its type, tunnel, P-O-S, chemical, network,",
+      "startS": 117.721,
+      "endS": 122.126,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "and today's P-O-S row is a warning,",
+      "startS": 122.406,
+      "endS": 124.531,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "low receipt paper on P-O-S two, still active.",
+      "startS": 124.801,
+      "endS": 127.925,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Filter to the site and read what is still open there.",
+      "startS": 128.657,
+      "endS": 131.134,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Into Settings, Hardware, Terminals.",
+      "startS": 131.793,
+      "endS": 134.488,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "This is the register you would check for that offline complaint.",
+      "startS": 135.105,
+      "endS": 137.857,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "There is a plus New Record button up top; leave it alone.",
+      "startS": 138.339,
+      "endS": 140.864,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "We are here to read, not to register anything.",
+      "startS": 141.179,
+      "endS": 145.105,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "Run your eye across the columns.",
+      "startS": 145.564,
+      "endS": 147.292,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "Terminal,",
+      "startS": 147.754,
+      "endS": 148.272,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "location,",
+      "startS": 148.555,
+      "endS": 149.314,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "I-P,",
+      "startS": 149.673,
+      "endS": 150.328,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "software version,",
+      "startS": 150.601,
+      "endS": 151.653,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "O-S,",
+      "startS": 151.898,
+      "endS": 152.565,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "and Last Seen.",
+      "startS": 152.836,
+      "endS": 153.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "Over a thousand terminals load here, and notice what is missing:",
+      "startS": 154.439,
+      "endS": 157.867,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "no active or status column.",
+      "startS": 158.159,
+      "endS": 160.189,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "So Last Seen is your answer, the moment each register last checked in.",
+      "startS": 160.527,
+      "endS": 164.93,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "Search the site, find the terminal, and read how long it has been quiet.",
+      "startS": 165.316,
+      "endS": 169.148,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "Last surface: Sales, then Tickets.",
+      "startS": 169.6,
+      "endS": 172.512,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "This is the live pulse of the lane.",
+      "startS": 173.031,
+      "endS": 174.863,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "The list carries Location, Ticket number,",
+      "startS": 175.328,
+      "endS": 176.714,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "Date and Time, Total,",
+      "startS": 177.02,
+      "endS": 178.835,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "Status, Tender Type, and Customer, with a running total up top.",
+      "startS": 179.142,
+      "endS": 183.857,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "Filter to the site, then read the newest time stamp.",
+      "startS": 184.395,
+      "endS": 187.29,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "If the last ticket is minutes old, the lane is still writing.",
+      "startS": 187.91,
+      "endS": 191.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "If it has been quiet for a stretch, that matches the N-O-C's zero transactions,",
+      "startS": 191.769,
+      "endS": 196.535,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "and now you have a hard outage in writing.",
+      "startS": 196.885,
+      "endS": 199.267,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "Skip Export.",
+      "startS": 199.553,
+      "endS": 200.498,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "Now escalate,",
+      "startS": 201.2,
+      "endS": 202.059,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "cleanly.",
+      "startS": 202.426,
+      "endS": 203.004,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p68",
+      "text": "Open Support Tickets and raise one with four things:",
+      "startS": 203.803,
+      "endS": 206.691,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p69",
+      "text": "the location code, the terminal I-D,",
+      "startS": 207.053,
+      "endS": 209.491,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p70",
+      "text": "the last-ticket time, and any alert I-Ds.",
+      "startS": 209.752,
+      "endS": 212.45,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p71",
+      "text": "The queue sorts by Ticket, Category, Location, Owner, Age, and Priority.",
+      "startS": 213.264,
+      "endS": 218.311,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p72",
+      "text": "Migration switches are the exception;",
+      "startS": 218.886,
+      "endS": 220.715,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p73",
+      "text": "those go to Jira, not here.",
+      "startS": 221.013,
+      "endS": 222.786,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p74",
+      "text": "That is the whole loop.",
+      "startS": 223.2,
+      "endS": 225.194,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p75",
+      "text": "Priority Intelligence to confirm the flag and its owner.",
+      "startS": 225.194,
+      "endS": 227.912,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p76",
+      "text": "The N-O-C for what broke and who has it.",
+      "startS": 227.912,
+      "endS": 231.522,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p77",
+      "text": "System Alerts and Terminals for the hardware picture.",
+      "startS": 231.522,
+      "endS": 233.938,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p78",
+      "text": "And the ticket feed to show whether the lane is still writing.",
+      "startS": 233.938,
+      "endS": 238.547,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p79",
+      "text": "Run them in that order every time,",
+      "startS": 238.547,
+      "endS": 240.661,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p80",
+      "text": "and your escalation carries the four facts a field tech needs to move without calling you back.",
+      "startS": 240.661,
+      "endS": 245.794,
+      "timing": "proportional"
+    }
+  ]
+}

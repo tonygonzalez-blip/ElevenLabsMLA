@@ -1,0 +1,11 @@
+{
+  "freezes": [
+    {
+      "key": "consoleStable",
+      "fromS": 4.003,
+      "toS": 5.49,
+      "navPressT": 3.853,
+      "stableT": 5.49
+    }
+  ]
+}

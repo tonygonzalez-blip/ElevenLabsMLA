@@ -1,0 +1,424 @@
+{
+  "lesson": "WC-04-02",
+  "audioMaster": "training/module04-inventory/WC-04-02-full-narration-v1.0.mp3",
+  "audioDurationS": 170.841,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Inventory menu.",
+      "startS": 0,
+      "endS": 1.464,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Six pages line the sidebar, and every one of them reads the same way.",
+      "startS": 2.197,
+      "endS": 6.092,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "A row of headline numbers up top.",
+      "startS": 6.507,
+      "endS": 8.292,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Three cards under it.",
+      "startS": 8.62,
+      "endS": 9.649,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Then a searchable list.",
+      "startS": 9.872,
+      "endS": 11.299,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "Item detail is its own lesson.",
+      "startS": 12.091,
+      "endS": 14.062,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p07",
+      "text": "Today we walk the other five.",
+      "startS": 14.408,
+      "endS": 16.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Start with Inventory Batches.",
+      "startS": 16.64,
+      "endS": 18.511,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "This is your receiving log.",
+      "startS": 18.865,
+      "endS": 20.242,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "The tiles up top count how many batches arrived, how many are still open, and what they cost.",
+      "startS": 20.635,
+      "endS": 23.137,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "But the column that earns its keep is Reference.",
+      "startS": 23.388,
+      "endS": 25.709,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "It carries the purchase order each batch filled,",
+      "startS": 26.009,
+      "endS": 28.439,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p13",
+      "text": "so a receipt on screen ties straight back to the order behind it.",
+      "startS": 28.815,
+      "endS": 34.618,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p14",
+      "text": "When someone asks what actually landed on a P-O, you look here.",
+      "startS": 34.986,
+      "endS": 38.534,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Now Adjustments.",
+      "startS": 38.96,
+      "endS": 40.249,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Every stock correction the network makes lands here, split into positives and negatives.",
+      "startS": 40.919,
+      "endS": 46.246,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "What makes the page useful in support is that a correction is never anonymous.",
+      "startS": 46.876,
+      "endS": 51.224,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "Each row names the location, the ticket, the shift, and the cashier behind it.",
+      "startS": 51.644,
+      "endS": 56.241,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "So a write-off isn't just a dollar figure.",
+      "startS": 56.614,
+      "endS": 59.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p20",
+      "text": "It's a person and a moment you can go ask about.",
+      "startS": 59.564,
+      "endS": 62.177,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Vendors is the supplier directory.",
+      "startS": 62.64,
+      "endS": 64.767,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "Account number, company, contact, address, phone.",
+      "startS": 65.499,
+      "endS": 69.285,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "When an order runs late or a chemical shipment comes up short,",
+      "startS": 69.756,
+      "endS": 72.835,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "this is the page that hands you the name and number to call.",
+      "startS": 73.089,
+      "endS": 75.675,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "The tile up top counts three open P-Os.",
+      "startS": 76.004,
+      "endS": 78.677,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p26",
+      "text": "That's the same figure waiting for you one page over, on Purchase Orders.",
+      "startS": 79.001,
+      "endS": 82.7,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Chemicals and Supplies.",
+      "startS": 83.188,
+      "endS": 84.668,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "For a field tech, this is the page that answers the call.",
+      "startS": 85.272,
+      "endS": 88.531,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "Read Stock Level against Par, the reorder point,",
+      "startS": 89.118,
+      "endS": 92.063,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "and the gap tells you how deep the hole is.",
+      "startS": 92.327,
+      "endS": 94.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p31",
+      "text": "The Status chip says the same thing in one word:",
+      "startS": 95.18,
+      "endS": 98.085,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p32",
+      "text": "In Stock, Low Stock, Critical, or Out of Stock.",
+      "startS": 98.481,
+      "endS": 99.976,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p33",
+      "text": "When an alert fires that a tank is low, you come here, confirm the level,",
+      "startS": 100.241,
+      "endS": 101.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p34",
+      "text": "and grab the supplier from the same row.",
+      "startS": 102.459,
+      "endS": 109.02,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Last page: Purchase Orders.",
+      "startS": 109.44,
+      "endS": 110.351,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "This is the order pipeline.",
+      "startS": 110.698,
+      "endS": 111.688,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p37",
+      "text": "The tiles split it by stage: open, pending approval, in transit.",
+      "startS": 112.304,
+      "endS": 113.948,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p38",
+      "text": "The list adds the supplier, the site, the money, and the two dates a caller cares about,",
+      "startS": 114.817,
+      "endS": 119.366,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p39",
+      "text": "when it was created and when it's expected.",
+      "startS": 120.129,
+      "endS": 125.081,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p40",
+      "text": "The Status chip tells you whether it's still waiting on a signoff, riding on a truck, or done.",
+      "startS": 125.452,
+      "endS": 133.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "Every order row has a View button.",
+      "startS": 134,
+      "endS": 135.94,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "Click it and a quick-look slides in over the list.",
+      "startS": 136.41,
+      "endS": 139.069,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "In the demo it opens on a sample record, so we won't read fields off it.",
+      "startS": 139.625,
+      "endS": 143.405,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p44",
+      "text": "Open Full Detail is the door to the real order.",
+      "startS": 144.256,
+      "endS": 146.99,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p45",
+      "text": "Close the peek, and nothing moves.",
+      "startS": 147.543,
+      "endS": 149.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "Five pages, one sidebar.",
+      "startS": 149.84,
+      "endS": 151.788,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "Batches for what came in and which P-O it filled.",
+      "startS": 152.363,
+      "endS": 155.443,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "Adjustments for who changed a count and why.",
+      "startS": 156.017,
+      "endS": 158.414,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p49",
+      "text": "Vendors for who to call.",
+      "startS": 159.085,
+      "endS": 160.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p50",
+      "text": "Chemicals and Supplies for what's running low.",
+      "startS": 161.077,
+      "endS": 163.371,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p51",
+      "text": "Purchase Orders for what's on the way.",
+      "startS": 163.882,
+      "endS": 165.638,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p52",
+      "text": "Same layout every time, so once you can read one, you can read all six.",
+      "startS": 166.137,
+      "endS": 170.384,
+      "timing": "silence"
+    }
+  ]
+}

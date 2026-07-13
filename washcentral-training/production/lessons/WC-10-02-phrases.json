@@ -1,0 +1,143 @@
+{
+  "lesson": "WC-10-02",
+  "audioMaster": "training/module10-it-support/WC-10-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries (captions <= ~95 chars). Block windows were measured by FFT cross-correlation of each WC-10-02-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft, energy-normalized): the Sigma(ffprobe audio+0.4) formula predicts 181.022s but the ffprobed master is 180.611s (0.41s off, past the +/-0.3s gate). Normalized cross-correlation shows the master is the 12 blocks concatenated with an exact 0.400s gap after each (match score 1.000 every block); per-file ffprobe durations are inflated ~0.04s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates (~0.41s by s12), which is the whole discrepancy. Each block startS is its measured onset; final end = ffprobed master duration 180.611s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 13.68,
+      "phrases": [
+        { "id": "p01", "text": "This is Support Tickets, the queue your team works inside WashCentral." },
+        { "id": "p02", "text": "It's the platform's own help desk, separate from the cross-customer view in the last lesson." },
+        { "id": "p03", "text": "Everything about the day's support load lives on this one screen." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 13.68,
+      "endS": 29.6,
+      "phrases": [
+        { "id": "p04", "text": "Start at the top." },
+        { "id": "p05", "text": "Four counters frame the backlog before you read a single row:" },
+        { "id": "p06", "text": "what's open, what's in progress, what closed today," },
+        { "id": "p07", "text": "and how long the average ticket takes to resolve." },
+        { "id": "p08", "text": "One look tells you whether the queue is calm or backed up." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 29.6,
+      "endS": 42.64,
+      "phrases": [
+        { "id": "p09", "text": "Now the left panel." },
+        { "id": "p10", "text": "This is the twelve-month trend, not today's numbers." },
+        { "id": "p11", "text": "Volume is climbing, up seven percent over the year." },
+        { "id": "p12", "text": "Handy context when a client asks whether their run of issues is unusual." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 42.64,
+      "endS": 55.92,
+      "phrases": [
+        { "id": "p13", "text": "The middle panel breaks tickets down by type." },
+        { "id": "p14", "text": "Billing leads, then technical, then feedback and general." },
+        { "id": "p15", "text": "When you're deciding where the team's hours go," },
+        { "id": "p16", "text": "this is the split that says billing questions are the heaviest load right now." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 55.92,
+      "endS": 69.44,
+      "phrases": [
+        { "id": "p17", "text": "On the right, the health panel." },
+        { "id": "p18", "text": "Most of the queue is already resolved, a smaller share in progress, and a thin band still open." },
+        { "id": "p19", "text": "Read across, it's a quick pulse on whether work is getting closed or piling up." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 69.44,
+      "endS": 85.04,
+      "phrases": [
+        { "id": "p20", "text": "Below the summary sits the list itself." },
+        { "id": "p21", "text": "This is where you actually work." },
+        { "id": "p22", "text": "Two buttons ride the top corner:" },
+        { "id": "p23", "text": "one opens a brand-new ticket, the other exports the list." },
+        { "id": "p24", "text": "We'll open a new one shortly." },
+        { "id": "p25", "text": "We never export while recording." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 85.04,
+      "endS": 99.44,
+      "phrases": [
+        { "id": "p26", "text": "Above the table, a search box and a filter control." },
+        { "id": "p27", "text": "Type a ticket number or a few words of the subject to jump straight to it," },
+        { "id": "p28", "text": "or open the filters to narrow by field." },
+        { "id": "p29", "text": "On a busy queue, this is how you find one ticket fast." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 99.44,
+      "endS": 115.6,
+      "phrases": [
+        { "id": "p30", "text": "Read the column headers." },
+        { "id": "p31", "text": "Ticket number, subject, location, priority, status, owner, and created date." },
+        { "id": "p32", "text": "The two you'll lean on most are priority, for what to grab first," },
+        { "id": "p33", "text": "and the owner, for who already has it." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 115.6,
+      "endS": 134.4,
+      "phrases": [
+        { "id": "p34", "text": "Now the rows." },
+        { "id": "p35", "text": "A POS receipt problem in progress, a billing dispute still open," },
+        { "id": "p36", "text": "a membership that won't activate, a tunnel emergency-stop already resolved." },
+        { "id": "p37", "text": "Priority runs from critical down to medium," },
+        { "id": "p38", "text": "and each ticket names a person or a team on the hook for it." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 134.4,
+      "endS": 151.04,
+      "phrases": [
+        { "id": "p39", "text": "At the foot of the list, the page controls." },
+        { "id": "p40", "text": "Rows per page, a simple counter, and pager arrows." },
+        { "id": "p41", "text": "One quirk worth knowing: the card says eighteen records while only four load here." },
+        { "id": "p42", "text": "In the demo tenant, treat those four as samples and the counts as stand-ins." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 151.04,
+      "endS": 165.28,
+      "phrases": [
+        { "id": "p43", "text": "Now open a new ticket." },
+        { "id": "p44", "text": "This is the one write action in the lesson." },
+        { "id": "p45", "text": "Open the blank form, look it over, then back out without saving and without touching a field." },
+        { "id": "p46", "text": "We're documenting where a new ticket starts, not filing one." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 165.28,
+      "endS": 180.611,
+      "phrases": [
+        { "id": "p47", "text": "That's the whole page." },
+        { "id": "p48", "text": "The counters give you the backlog," },
+        { "id": "p49", "text": "the middle panels tell you what kind of work it is and how much is cleared," },
+        { "id": "p50", "text": "and the list hands you each ticket with its priority and its owner." },
+        { "id": "p51", "text": "Enough to triage before you open a single one." }
+      ]
+    }
+  ],
+  "output": "WC-10-02-support-tickets-v1.1"
+}

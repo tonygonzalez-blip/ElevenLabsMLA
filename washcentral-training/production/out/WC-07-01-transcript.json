@@ -1,0 +1,584 @@
+{
+  "lesson": "WC-07-01",
+  "audioMaster": "training/module07-team/WC-07-01-full-narration-v1.0.mp3",
+  "audioDurationS": 253.727,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is the team, on one page.",
+      "startS": 0,
+      "endS": 2.041,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The Employees screen is where you go when the question is about a person, not a wash.",
+      "startS": 2.606,
+      "endS": 7.013,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Headcount up top, a few charts, then the directory.",
+      "startS": 7.353,
+      "endS": 10.437,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p04",
+      "text": "Start with the four tiles.",
+      "startS": 10.88,
+      "endS": 12.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "They give you the whole crew at a glance.",
+      "startS": 12.71,
+      "endS": 14.794,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Everyone on the books, who's active, and the full-time against part-time split,",
+      "startS": 15.11,
+      "endS": 19.67,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "so a staffing question gets answered before you ever scroll to the table.",
+      "startS": 19.959,
+      "endS": 23.934,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p08",
+      "text": "Now the charts.",
+      "startS": 24.456,
+      "endS": 25.376,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "The first tracks headcount over the last year, and right now it's trending up.",
+      "startS": 25.924,
+      "endS": 28.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "When someone asks whether the team is growing, this is your answer in one line,",
+      "startS": 28.707,
+      "endS": 30.45,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "and you skip pulling a report to get it.",
+      "startS": 30.965,
+      "endS": 37.529,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p12",
+      "text": "The middle chart splits your people by site.",
+      "startS": 38,
+      "endS": 40.393,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "It's the fast read on where everyone actually sits,",
+      "startS": 40.957,
+      "endS": 44.066,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "which is exactly what you want when one location calls in short a body on a Saturday morning.",
+      "startS": 44.313,
+      "endS": 49.497,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p15",
+      "text": "Third chart, same crew, different cut.",
+      "startS": 49.988,
+      "endS": 50.594,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p16",
+      "text": "Full-time against part-time as a percentage, plus the count of anyone inactive.",
+      "startS": 50.914,
+      "endS": 52.669,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "It says the same thing as the tiles, drawn for the eye.",
+      "startS": 53.245,
+      "endS": 61.626,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p18",
+      "text": "Down to the directory.",
+      "startS": 62.08,
+      "endS": 63.458,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p19",
+      "text": "Notice the two buttons in its corner.",
+      "startS": 63.929,
+      "endS": 65.875,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p20",
+      "text": "One exports data, one starts a new hire.",
+      "startS": 66.16,
+      "endS": 69.078,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "We're only reading today, so find them and leave them where they are.",
+      "startS": 69.385,
+      "endS": 72.854,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p22",
+      "text": "Read the column headers.",
+      "startS": 73.412,
+      "endS": 74.692,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p23",
+      "text": "Name, phone, hire date, type, status, location.",
+      "startS": 75.039,
+      "endS": 75.485,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p24",
+      "text": "Six columns, and the name cell doubles as a badge:",
+      "startS": 75.827,
+      "endS": 76.225,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p25",
+      "text": "an avatar and the person's role sit right next to who they are,",
+      "startS": 76.517,
+      "endS": 77.23,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "so the job is obvious before you open a thing.",
+      "startS": 77.531,
+      "endS": 89.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p27",
+      "text": "Look at one row.",
+      "startS": 89.82,
+      "endS": 91.496,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p28",
+      "text": "A shift manager, full-time, active, at one of the sites.",
+      "startS": 91.496,
+      "endS": 94.7,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p29",
+      "text": "Run your eye down the role chips",
+      "startS": 94.7,
+      "endS": 97.532,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "and you've read half the team's jobs without opening a single record.",
+      "startS": 97.532,
+      "endS": 101.377,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p31",
+      "text": "On a real site the roster runs long.",
+      "startS": 101.927,
+      "endS": 104.324,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p32",
+      "text": "That's what the search box and filters are for:",
+      "startS": 104.628,
+      "endS": 106.684,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p33",
+      "text": "type a name, narrow the list, jump to your person.",
+      "startS": 106.992,
+      "endS": 109.848,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "Here it's a five-row sample, so everyone already fits on one page.",
+      "startS": 110.311,
+      "endS": 114.132,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p35",
+      "text": "Click a name to open the record.",
+      "startS": 114.646,
+      "endS": 116.198,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p36",
+      "text": "One click, and the list becomes a person.",
+      "startS": 116.553,
+      "endS": 118.797,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p37",
+      "text": "The header introduces him with a role chip, his site, and his employment type.",
+      "startS": 119.256,
+      "endS": 123.206,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p38",
+      "text": "Three buttons sit beside it, and Back is the only one we touch.",
+      "startS": 123.718,
+      "endS": 127.173,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "Below, five tiles size him up fast:",
+      "startS": 127.664,
+      "endS": 130.178,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "three years in, a hundred sixty eight hours this month,",
+      "startS": 130.439,
+      "endS": 133.377,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "attendance above ninety seven percent, and a performance score of four point six.",
+      "startS": 133.585,
+      "endS": 138,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p42",
+      "text": "Look across the top of the file.",
+      "startS": 138.4,
+      "endS": 140.03,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "Seven tabs: overview, personal info, employment, schedule,",
+      "startS": 140.321,
+      "endS": 141.33,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "emergency contact, notes and audit, and training.",
+      "startS": 141.739,
+      "endS": 143.586,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "That's the whole person, sorted into seven drawers, and you land in the first one.",
+      "startS": 143.874,
+      "endS": 144.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "Worth knowing this layout is the live one, not the old WashAssist record.",
+      "startS": 144.938,
+      "endS": 159.912,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p47",
+      "text": "Stay on Overview.",
+      "startS": 160.32,
+      "endS": 161.758,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p48",
+      "text": "This is the dashboard for one person, five panels deep.",
+      "startS": 162.155,
+      "endS": 165.456,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "Hours worked, month by month.",
+      "startS": 166.096,
+      "endS": 167.634,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "How those hours split between regular time, overtime, and leave.",
+      "startS": 167.937,
+      "endS": 171.565,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "Attendance across the year, with every missed shift counted.",
+      "startS": 172.425,
+      "endS": 176.015,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "Earnings, closing in on fifteen thousand for the year.",
+      "startS": 176.699,
+      "endS": 179.823,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "And a review trend running well above the location average.",
+      "startS": 180.327,
+      "endS": 183.523,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p54",
+      "text": "When a manager asks how someone is doing, this one tab answers it.",
+      "startS": 184.168,
+      "endS": 188,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "Six more tabs sit beside Overview.",
+      "startS": 188.4,
+      "endS": 190.828,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "Each one is a drawer.",
+      "startS": 191.321,
+      "endS": 192.516,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "Personal info holds identity and address, with the social masked.",
+      "startS": 193.316,
+      "endS": 197.066,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "Employment carries role, pay, reporting line, and benefits.",
+      "startS": 197.653,
+      "endS": 201.384,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "Schedule pairs the current week with recent time clock punches.",
+      "startS": 201.927,
+      "endS": 205.125,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "Emergency contact adds the medical basics.",
+      "startS": 205.604,
+      "endS": 208.118,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Notes and audit keeps a dated trail of every change to the record.",
+      "startS": 208.594,
+      "endS": 212.223,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "And training tracks Academy courses, with an assign button we leave alone.",
+      "startS": 212.761,
+      "endS": 216.946,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p63",
+      "text": "One rule holds this whole lesson.",
+      "startS": 217.36,
+      "endS": 219.534,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p64",
+      "text": "We opened the record, read it, and changed nothing in it.",
+      "startS": 220.324,
+      "endS": 223.693,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p65",
+      "text": "Editing a person is a real workflow with its own approvals, and this lesson stays clear of it.",
+      "startS": 224.566,
+      "endS": 229.594,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "So click Back.",
+      "startS": 230.072,
+      "endS": 230.909,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "The list returns, and the record sits exactly as you found it.",
+      "startS": 232.086,
+      "endS": 235.325,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p68",
+      "text": "So that's the Employees page.",
+      "startS": 235.76,
+      "endS": 237.603,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p69",
+      "text": "A directory up front: headcount, a few charts, and a table you can search.",
+      "startS": 238.091,
+      "endS": 239.292,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p70",
+      "text": "Behind any name, a seven-tab file with Overview as its home.",
+      "startS": 239.816,
+      "endS": 242.769,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p71",
+      "text": "When a shift question walks in, start here",
+      "startS": 243.214,
+      "endS": 247.271,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p72",
+      "text": "and let the rest of the Team module branch off from it.",
+      "startS": 247.995,
+      "endS": 253.211,
+      "timing": "silence"
+    }
+  ]
+}

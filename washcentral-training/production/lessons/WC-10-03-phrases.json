@@ -1,0 +1,132 @@
+{
+  "lesson": "WC-10-03",
+  "audioMaster": "training/module10-it-support/WC-10-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries into caption-sized pieces (<=~95 chars). Block windows were measured by cross-correlation of each WC-10-03-sNN.mp3 against the joined master (8 kHz mono PCM). The Sigma(ffprobe audio + 0.4) formula over 10 blocks predicts 168.101s but the ffprobed master is 167.706s (0.395s off, past the +-0.3s gate), so onsets were measured rather than assumed. Sigma(audio) = 164.101s; master - Sigma(audio) = 3.605s ~= 9 x 0.4 -> the master is the 10 blocks concatenated with a 0.4s gap BETWEEN blocks (9 gaps, no trailing gap); the naive x10 formula over-counts one trailing gap. Energy-envelope and fine 1-sample waveform cross-correlation both align every block at corr = 1.000, and every measured onset falls exactly on the 0.08s mp3-frame grid (mp3 encoder-delay padding strips in the PCM concat, so the measured onsets drift progressively behind the naive cumulative sum, reaching -0.38s by s10). Each block startS is its measured onset; endS is the next block's onset; the final block end = ffprobed master duration 167.706s. Hyphenated tokens (I-T, oh-auth, twelve point nine) are the script's TTS pronunciation spellings kept verbatim.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 17.12,
+      "phrases": [
+        { "id": "p01", "text": "Start in the left rail, under I-T and Support." },
+        { "id": "p02", "text": "The Support group stacks your ticket tools together." },
+        { "id": "p03", "text": "Right below Support Tickets sits Help Desk, Zoho." },
+        { "id": "p04", "text": "One is WashCentral's own queue." },
+        { "id": "p05", "text": "The other is meant to mirror a help desk that lives outside the platform." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.12,
+      "endS": 37.36,
+      "phrases": [
+        { "id": "p06", "text": "Open Help Desk, Zoho." },
+        { "id": "p07", "text": "The frame loads fine." },
+        { "id": "p08", "text": "It is the data that is missing." },
+        { "id": "p09", "text": "Every count across the top shows a dash," },
+        { "id": "p10", "text": "the status and priority filters have nothing to filter," },
+        { "id": "p11", "text": "and the card in the middle says it plainly: Zoho Desk not connected." },
+        { "id": "p12", "text": "The page even hands you the next move, a button straight to its settings." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 37.36,
+      "endS": 50.64,
+      "phrases": [
+        { "id": "p13", "text": "Head to Settings, Integrations, Zoho Desk." },
+        { "id": "p14", "text": "This is the control room for the connection." },
+        { "id": "p15", "text": "Whether Zoho talks to WashCentral is read from this one page," },
+        { "id": "p16", "text": "so it's where support work on this integration starts." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 50.64,
+      "endS": 65.52,
+      "phrases": [
+        { "id": "p17", "text": "Look at the header." },
+        { "id": "p18", "text": "A warning badge reads Not Configured." },
+        { "id": "p19", "text": "That's the whole story in two words." },
+        { "id": "p20", "text": "The chips beside it name how the link would work once someone sets it up:" },
+        { "id": "p21", "text": "oh-auth, a live view, a server-side token." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 65.52,
+      "endS": 79.6,
+      "phrases": [
+        { "id": "p22", "text": "Run across the four tiles." },
+        { "id": "p23", "text": "Connection, not set." },
+        { "id": "p24", "text": "Data center, US." },
+        { "id": "p25", "text": "Sync direction, both." },
+        { "id": "p26", "text": "So the tenant has picked how it wants to sync, but no one has authorized the link yet." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 79.6,
+      "endS": 96.72,
+      "phrases": [
+        { "id": "p27", "text": "Drop into the Credentials group." },
+        { "id": "p28", "text": "Client I-D, blank." },
+        { "id": "p29", "text": "Secret, not set." },
+        { "id": "p30", "text": "Access and refresh tokens, not set." },
+        { "id": "p31", "text": "With nothing stored here, there's no live line to Zoho," },
+        { "id": "p32", "text": "which is exactly why the Help Desk view had nothing to show." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 96.72,
+      "endS": 114.72,
+      "phrases": [
+        { "id": "p33", "text": "Keep reading down." },
+        { "id": "p34", "text": "Routing, sync, behavior, mapping." },
+        { "id": "p35", "text": "These rules decide where tickets land and which way they flow once the link goes live." },
+        { "id": "p36", "text": "Notice Enabled says Yes while the status still says Not Configured." },
+        { "id": "p37", "text": "Switched on in intent, not yet connected." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 114.72,
+      "endS": 128.24,
+      "phrases": [
+        { "id": "p38", "text": "Two tabs sit under the header." },
+        { "id": "p39", "text": "Settings, where you are, and Instructions." },
+        { "id": "p40", "text": "The full setup walk-through lives under Instructions, and in lesson twelve point nine." },
+        { "id": "p41", "text": "For today, stay on Settings and just read." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 128.24,
+      "endS": 147.44,
+      "phrases": [
+        { "id": "p42", "text": "Top right, two buttons." },
+        { "id": "p43", "text": "Test Connection, and Edit Configuration." },
+        { "id": "p44", "text": "Test Connection pings Zoho for real." },
+        { "id": "p45", "text": "Edit Configuration opens the credentials." },
+        { "id": "p46", "text": "Both touch the live integration," },
+        { "id": "p47", "text": "so neither one gets clicked in a read-only check," },
+        { "id": "p48", "text": "or in support unless the change is yours to make." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 147.44,
+      "endS": 167.706122,
+      "phrases": [
+        { "id": "p49", "text": "So, Help Desk, Zoho." },
+        { "id": "p50", "text": "It's an embedded window into an outside help desk," },
+        { "id": "p51", "text": "empty here because the integration is Not Configured." },
+        { "id": "p52", "text": "When a real client's Zoho tickets go quiet, this is the page you open," },
+        { "id": "p53", "text": "and Token Expiry is the first field you read." },
+        { "id": "p54", "text": "You never have to click Test Connection to know where you stand." }
+      ]
+    }
+  ],
+  "output": "WC-10-03-help-desk-zoho-v1.1"
+}

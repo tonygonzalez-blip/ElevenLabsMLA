@@ -1,0 +1,688 @@
+{
+  "lesson": "WC-12-03",
+  "audioMaster": "training/module12-settings/WC-12-03-full-narration-v1.0.mp3",
+  "audioDurationS": 291.318,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Settings, then open Services.",
+      "startS": 0,
+      "endS": 0.996,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This is the catalog.",
+      "startS": 1.279,
+      "endS": 2.831,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Everything a site sells lives here as a row: a wash, an add-on, a token.",
+      "startS": 3.448,
+      "endS": 4.651,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Every price that shows up on the point of sale traces back to this list,",
+      "startS": 5.075,
+      "endS": 7.637,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "so a pricing question usually ends right where we're standing.",
+      "startS": 7.997,
+      "endS": 18.625,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Look down the Services group in the sidebar.",
+      "startS": 19.04,
+      "endS": 21.148,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Services is the catalog itself.",
+      "startS": 21.553,
+      "endS": 23.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "The pages beneath it, Service Types, Service Groups, Detail Types, Rewards,",
+      "startS": 23.804,
+      "endS": 24.897,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "define the vocabulary a service draws on.",
+      "startS": 25.104,
+      "endS": 26.997,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "You rarely edit those,",
+      "startS": 27.198,
+      "endS": 31.543,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "but knowing they exist tells you where a stray label on a service actually comes from.",
+      "startS": 31.83,
+      "endS": 37.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Read the four tiles across the top.",
+      "startS": 38.24,
+      "endS": 40.276,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Twenty-four services, twenty-one active, six types, average price just under fifteen dollars.",
+      "startS": 41.001,
+      "endS": 44.727,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "It's a health snapshot for the whole catalog, not one site.",
+      "startS": 45.044,
+      "endS": 47.404,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "And take the counts loosely:",
+      "startS": 47.925,
+      "endS": 51.21,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "in this demo the tile totals and the row totals don't always agree.",
+      "startS": 51.527,
+      "endS": 56.795,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Two cards show the catalog's shape.",
+      "startS": 57.253,
+      "endS": 58.993,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "The trend line is the count over the last year, ticking up a few percent.",
+      "startS": 59.498,
+      "endS": 63.307,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "The status card is the one to remember:",
+      "startS": 63.924,
+      "endS": 65.895,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "active means it sells, draft means it isn't live yet,",
+      "startS": 66.408,
+      "endS": 69.972,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "and inactive means it's retired but kept for the history.",
+      "startS": 70.304,
+      "endS": 73.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "Most of the catalog is active.",
+      "startS": 74.168,
+      "endS": 75.892,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Now the mix by type.",
+      "startS": 76.4,
+      "endS": 78.875,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Washes are the biggest slice, then add-ons, then detail work.",
+      "startS": 78.875,
+      "endS": 82.105,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "That top slice is what we open next,",
+      "startS": 82.105,
+      "endS": 85.245,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "because a wash package is where the per-site pricing story really shows up.",
+      "startS": 85.245,
+      "endS": 89.443,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Drop down to the Services List.",
+      "startS": 89.992,
+      "endS": 91.946,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "This is the real catalog table.",
+      "startS": 92.545,
+      "endS": 94.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "New Service sits top-right, and it's how an admin adds a wash.",
+      "startS": 95.092,
+      "endS": 99.166,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "We leave it alone:",
+      "startS": 99.431,
+      "endS": 100.304,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "creating a service is production work, not something you do from a support seat.",
+      "startS": 100.543,
+      "endS": 104.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Read the columns.",
+      "startS": 104.88,
+      "endS": 106.005,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Description, code, type, price, active.",
+      "startS": 106.845,
+      "endS": 108.376,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Watch the code column especially.",
+      "startS": 108.698,
+      "endS": 110.675,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "That's the controller code,",
+      "startS": 111.532,
+      "endS": 113.425,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "the value that wires the service to the point of sale and the tunnel controller.",
+      "startS": 113.716,
+      "endS": 115.045,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "When a button rings up the wrong wash, the code is usually the first thing you check.",
+      "startS": 115.348,
+      "endS": 124.22,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Look at the rows.",
+      "startS": 124.64,
+      "endS": 125.774,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "On a live tenant this fills with the migrated catalog: wash packages, add-ons, token sales.",
+      "startS": 126.371,
+      "endS": 132.516,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "The demo is quirkier, it often loads one fixed sample when you open a service.",
+      "startS": 132.948,
+      "endS": 137.382,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "If you ever see a failed-to-fetch message instead of rows,",
+      "startS": 137.805,
+      "endS": 141.027,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "that's the data service dropping out, not an empty catalog.",
+      "startS": 141.336,
+      "endS": 144.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "There's a search box for a reason.",
+      "startS": 145.04,
+      "endS": 146.792,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "A full catalog runs a couple hundred rows, so you type the service name rather than scroll.",
+      "startS": 147.365,
+      "endS": 152.451,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Filters narrow it further.",
+      "startS": 153.151,
+      "endS": 154.662,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "We won't run one today;",
+      "startS": 155.078,
+      "endS": 156.26,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "just know it's the fast way to find a single wash.",
+      "startS": 156.649,
+      "endS": 159.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Down at the bottom, the page controls.",
+      "startS": 159.76,
+      "endS": 161.919,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "Twenty-five, fifty, or a hundred rows at a time.",
+      "startS": 162.963,
+      "endS": 165.913,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Small thing, but on a big catalog bumping it to a hundred saves a lot of clicking.",
+      "startS": 166.508,
+      "endS": 171.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "Open a wash and read the detail.",
+      "startS": 171.651,
+      "endS": 173.591,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "On the verified pass a service opened onto two tabs, Service Main and Active Locations,",
+      "startS": 174.406,
+      "endS": 182.802,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "with Back, Delete, and Edit across the top.",
+      "startS": 183.582,
+      "endS": 184.021,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Heads up: in this capture the detail page wouldn't load,",
+      "startS": 184.36,
+      "endS": 189.991,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "so treat what follows as the layout we confirmed earlier, parked for a fresh check.",
+      "startS": 190.234,
+      "endS": 191.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Service Main is where the service is defined.",
+      "startS": 192,
+      "endS": 194.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Eight groups of fields, from basic info to pricing to behavior.",
+      "startS": 195.191,
+      "endS": 199.309,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Two earn their keep for support.",
+      "startS": 199.983,
+      "endS": 201.593,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "Controller code, again, is the point-of-sale mapping.",
+      "startS": 201.952,
+      "endS": 204.972,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "And count as car decides whether the service adds to the site's car count,",
+      "startS": 205.454,
+      "endS": 209.428,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p61",
+      "text": "which is why selling a token doesn't fake your traffic numbers.",
+      "startS": 209.819,
+      "endS": 213.072,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Switch to Active Locations.",
+      "startS": 213.52,
+      "endS": 214.692,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "This tab is the whole point of the lesson.",
+      "startS": 214.692,
+      "endS": 218.387,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "It lists the sites and groups where the service actually sells,",
+      "startS": 218.387,
+      "endS": 221.867,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p65",
+      "text": "each with a status and a start date.",
+      "startS": 221.867,
+      "endS": 224.211,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "A service only rings up where it's active here.",
+      "startS": 224.211,
+      "endS": 227.36,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "So if a wash is missing at one site, this is the first tab you open.",
+      "startS": 227.36,
+      "endS": 232.279,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "Now click Edit, and watch the little gears.",
+      "startS": 232.72,
+      "endS": 236.111,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "They sit beside a handful of fields,",
+      "startS": 236.111,
+      "endS": 238.319,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "the description, the controller code, the amount, and the tax settings.",
+      "startS": 238.319,
+      "endS": 241.789,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p71",
+      "text": "Hover one and it reads configure per location.",
+      "startS": 241.789,
+      "endS": 245.209,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p72",
+      "text": "The plain field is the default everywhere.",
+      "startS": 245.209,
+      "endS": 248.296,
+      "timing": "proportional"
+    },
+    {
+      "block": "s14",
+      "id": "p73",
+      "text": "The gear lets an admin override it for a single site or group.",
+      "startS": 248.296,
+      "endS": 252.645,
+      "timing": "proportional"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "Click the gear beside the amount.",
+      "startS": 253.189,
+      "endS": 254.842,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p75",
+      "text": "On the verified pass, nothing opened.",
+      "startS": 255.419,
+      "endS": 257.557,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p76",
+      "text": "The dialog that's supposed to set a per-site value stayed shut in the demo tenant,",
+      "startS": 257.919,
+      "endS": 262.13,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p77",
+      "text": "so we park that step and check it on a real configuration.",
+      "startS": 262.33,
+      "endS": 265.413,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p78",
+      "text": "Point at the gear, explain what it does, and back out.",
+      "startS": 266.043,
+      "endS": 269.061,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p79",
+      "text": "Never save.",
+      "startS": 269.286,
+      "endS": 270.48,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p80",
+      "text": "So here's the pattern.",
+      "startS": 270.88,
+      "endS": 272.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p81",
+      "text": "One service, one record.",
+      "startS": 272.609,
+      "endS": 274.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p82",
+      "text": "Active Locations decides where it sells.",
+      "startS": 274.894,
+      "endS": 277.082,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p83",
+      "text": "The gears decide what it costs and how it's taxed at each site.",
+      "startS": 277.439,
+      "endS": 281.27,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p84",
+      "text": "That's how the Works can run two dollars more at one wash without a second record anywhere.",
+      "startS": 281.579,
+      "endS": 286.586,
+      "timing": "silence"
+    },
+    {
+      "block": "s16",
+      "id": "p85",
+      "text": "You'll see the same shape on discounts next, so it's worth owning now.",
+      "startS": 287.107,
+      "endS": 290.88,
+      "timing": "silence"
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "lesson": "WC-07-03",
+  "audioMaster": "training/module07-team/WC-07-03-full-narration-v1.0.mp3",
+  "audioDurationS": 236.434,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Team module, then under Sales Coaching, click QA Dashboard.",
+      "startS": 0,
+      "endS": 4.823,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This area records how staff sell at the register and scores every interaction against a script.",
+      "startS": 5.402,
+      "endS": 10.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Three pages hold it: the dashboard, the scripts behind it, and the conversations themselves.",
+      "startS": 11.298,
+      "endS": 16.578,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p04",
+      "text": "Start with the four numbers up top.",
+      "startS": 17.04,
+      "endS": 18.799,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Average score this month, how many conversations fed it,",
+      "startS": 19.317,
+      "endS": 20.446,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "the share clearing the seventy-five percent target, and the swing against last month.",
+      "startS": 20.832,
+      "endS": 24.824,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Green and up means the team is trending the right way.",
+      "startS": 25.21,
+      "endS": 30.24,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p08",
+      "text": "Look at the trend.",
+      "startS": 30.64,
+      "endS": 31.584,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Twelve weeks of average score, drawn against a dashed line at the target.",
+      "startS": 32.458,
+      "endS": 36.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "When the solid line rides above the dash, the team is clearing the bar.",
+      "startS": 37.06,
+      "endS": 40.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Right now it's climbing.",
+      "startS": 41.245,
+      "endS": 42.568,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p12",
+      "text": "Now the distribution.",
+      "startS": 43.267,
+      "endS": 44.516,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "Every scored interaction falls into a letter grade, A through F.",
+      "startS": 45.063,
+      "endS": 49.015,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Half of them land in the B band this month.",
+      "startS": 49.865,
+      "endS": 52.083,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "The A's and B's together are your at-or-above-target share, in one glance.",
+      "startS": 52.636,
+      "endS": 57.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p16",
+      "text": "Here's the panel that earns its keep.",
+      "startS": 57.84,
+      "endS": 61.424,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p17",
+      "text": "Seven behaviors the platform listens for on every call, from greeting to closing,",
+      "startS": 61.424,
+      "endS": 65.548,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "each with a hit rate.",
+      "startS": 65.548,
+      "endS": 67.997,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Membership sits at forty-seven percent, in red, well below the rest.",
+      "startS": 67.997,
+      "endS": 71.486,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "There's the gap.",
+      "startS": 71.486,
+      "endS": 72.968,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "The system already flagged it.",
+      "startS": 73.511,
+      "endS": 74.975,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "The Coaching Opportunity callout takes that weakest number",
+      "startS": 75.863,
+      "endS": 81.958,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "and turns it into a sentence a manager can act on: focus training on the membership pitch.",
+      "startS": 82.535,
+      "endS": 84.614,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Read this panel first when you open the dashboard.",
+      "startS": 85.103,
+      "endS": 87.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p25",
+      "text": "On the right, the leaderboard.",
+      "startS": 88.156,
+      "endS": 89.769,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Top performers this month by average score, each with their conversation count next to it.",
+      "startS": 90.352,
+      "endS": 94.91,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Notice volume and score don't always line up.",
+      "startS": 95.386,
+      "endS": 98.122,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "The button underneath jumps to every conversation, but leave it for now.",
+      "startS": 98.618,
+      "endS": 102.566,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p29",
+      "text": "Scroll to the recent activity table.",
+      "startS": 103.04,
+      "endS": 104.905,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "The last ten interactions across every location: who, when, where, how long, and the grade.",
+      "startS": 105.53,
+      "endS": 111.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "The script column shows only a dash, so it won't tell you which script scored the call.",
+      "startS": 112.309,
+      "endS": 116.777,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "For that, we open the scripts page.",
+      "startS": 117.076,
+      "endS": 118.93,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p33",
+      "text": "Click Scoring Scripts.",
+      "startS": 119.425,
+      "endS": 120.869,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "Its own header: two active scripts, one draft,",
+      "startS": 121.743,
+      "endS": 122.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "seven checkpoints on average, and two hundred eighty-four scored this month.",
+      "startS": 122.871,
+      "endS": 129.605,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "That last number is the same pool the dashboard counted, just labelled differently.",
+      "startS": 130.307,
+      "endS": 134.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p37",
+      "text": "This is the rulebook.",
+      "startS": 135.28,
+      "endS": 136.563,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p38",
+      "text": "Each script defines what the AI grades and how it's weighted.",
+      "startS": 137.039,
+      "endS": 140.185,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "A default standard-wash script, a membership-focused one with a higher target,",
+      "startS": 140.556,
+      "endS": 144.89,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "and a win-back script still in draft.",
+      "startS": 145.161,
+      "endS": 147.136,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "You read these; a manager builds and edits them.",
+      "startS": 147.522,
+      "endS": 150.432,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p42",
+      "text": "One note card sits below.",
+      "startS": 150.96,
+      "endS": 152.518,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "It's best-practice guidance on weighting: revenue behaviors like membership highest,",
+      "startS": 152.89,
+      "endS": 155.036,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "soft skills like greeting lowest, and a pass mark around seventy-five to eighty percent.",
+      "startS": 155.578,
+      "endS": 157.937,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Helpful context, but it's just a note, not a setting.",
+      "startS": 158.267,
+      "endS": 166.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p46",
+      "text": "Last page. Click Conversations.",
+      "startS": 167.2,
+      "endS": 168.025,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p47",
+      "text": "Same headline numbers as the dashboard, plus one that matters most for triage: needs coaching.",
+      "startS": 168.515,
+      "endS": 169.932,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p48",
+      "text": "Twelve interactions this month scored low enough to review.",
+      "startS": 170.32,
+      "endS": 175.758,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "That's your work queue.",
+      "startS": 176.144,
+      "endS": 180.911,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p50",
+      "text": "This is the full log, all two hundred eighty-four records.",
+      "startS": 181.432,
+      "endS": 184.611,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p51",
+      "text": "Search by employee or transcript, filter, or export, though we won't export today.",
+      "startS": 185.032,
+      "endS": 187.083,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p52",
+      "text": "Each row is one scored interaction.",
+      "startS": 187.393,
+      "endS": 188.866,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p53",
+      "text": "Ignore the checkpoints-met column here;",
+      "startS": 189.127,
+      "endS": 190.663,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "it reads zero of eight on every row, which is just demo data.",
+      "startS": 191.148,
+      "endS": 193.388,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "The real hit rates live on the dashboard.",
+      "startS": 193.645,
+      "endS": 202.536,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p56",
+      "text": "Put the three together.",
+      "startS": 203.023,
+      "endS": 204.197,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p57",
+      "text": "The dashboard flagged membership as weak.",
+      "startS": 204.715,
+      "endS": 206.855,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "The scripts page holds the script built to fix it.",
+      "startS": 207.405,
+      "endS": 209.995,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p59",
+      "text": "And this log is where a manager pulls the actual calls to coach from.",
+      "startS": 210.336,
+      "endS": 213.907,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p60",
+      "text": "One weak number, three pages, a real next step.",
+      "startS": 214.455,
+      "endS": 218.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p61",
+      "text": "So, three pages, three questions.",
+      "startS": 218.57,
+      "endS": 221.079,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p62",
+      "text": "How's the team and what's weak: the QA Dashboard.",
+      "startS": 221.49,
+      "endS": 223.214,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p63",
+      "text": "What are we grading against: Scoring Scripts.",
+      "startS": 223.78,
+      "endS": 224.903,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p64",
+      "text": "Show me the actual calls: Conversations.",
+      "startS": 225.388,
+      "endS": 226.572,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p65",
+      "text": "You read all three; the managers you support act on them.",
+      "startS": 226.894,
+      "endS": 235.989,
+      "timing": "silence"
+    }
+  ]
+}

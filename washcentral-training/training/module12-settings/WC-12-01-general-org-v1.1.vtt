@@ -1,0 +1,258 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.170
+Every configuration screen in Wash Central lives behind one gear.
+
+p02
+00:00:03.170 --> 00:00:03.804
+Click it.
+
+p03
+00:00:03.804 --> 00:00:09.534
+Settings opens as its own full-screen area, with its own sidebar and its own front door.
+
+p04
+00:00:09.534 --> 00:00:12.771
+Setup tickets all end up here sooner or later,
+
+p05
+00:00:12.771 --> 00:00:16.892
+so this walk is about learning the floor plan before you need it.
+
+p06
+00:00:17.412 --> 00:00:19.678
+Check the counter, top right.
+
+p07
+00:00:19.678 --> 00:00:21.594
+Sixteen categories, ninety two pages.
+
+p08
+00:00:21.594 --> 00:00:25.393
+That's the platform's entire configuration surface in one line.
+
+p09
+00:00:25.393 --> 00:00:27.719
+Nobody memorizes ninety two pages.
+
+p10
+00:00:27.719 --> 00:00:32.701
+You memorize how they're grouped, and the groups do the remembering for you.
+
+p11
+00:00:33.186 --> 00:00:35.203
+Below the heading sits a search box.
+
+p12
+00:00:35.732 --> 00:00:39.254
+When you already know the page name, type it here and jump straight in.
+
+p13
+00:00:39.586 --> 00:00:41.384
+Much faster than scanning cards.
+
+p14
+00:00:41.906 --> 00:00:45.510
+We'll leave it empty today and learn the layout the slow way, once.
+
+p15
+00:00:45.920 --> 00:00:47.374
+Now sweep the card grid.
+
+p16
+00:00:48.641 --> 00:00:53.445
+Sixteen cards, one per category, each with a one line summary of what it holds.
+
+p17
+00:00:54.153 --> 00:00:56.531
+Locations, payments, hardware, the customer portal, the A-I agent.
+
+p18
+00:00:56.878 --> 00:00:59.382
+This lesson stays inside the first card, General,
+
+p19
+00:01:00.192 --> 00:01:06.092
+because that's where a client's account and org structure are defined.
+
+p20
+00:01:06.560 --> 00:01:07.557
+Open General.
+
+p21
+00:01:08.205 --> 00:01:13.925
+The sidebar expands to nine pages, and the first of them, Account Information, opens on its own.
+
+p22
+00:01:14.497 --> 00:01:15.877
+Read the names as they appear: profit centers, departments, categories.
+
+p23
+00:01:16.185 --> 00:01:21.920
+Those three are the spine we came for.
+
+p24
+00:01:22.392 --> 00:01:25.160
+Start at the top of Account Information.
+
+p25
+00:01:25.160 --> 00:01:27.058
+Fifty six locations across fifteen states,
+
+p26
+00:01:27.058 --> 00:01:29.905
+running in multi operation mode on an active license.
+
+p27
+00:01:29.905 --> 00:01:33.181
+This page is the client's site registry.
+
+p28
+00:01:33.181 --> 00:01:39.200
+When you need to confirm what a client actually runs, and where, this is the record of truth.
+
+p29
+00:01:39.600 --> 00:01:40.972
+Scan the list below.
+
+p30
+00:01:41.361 --> 00:01:46.514
+Each row is one site with its company, its operation mode, and its contact details.
+
+p31
+00:01:46.889 --> 00:01:49.275
+There's a New Record button at the top right.
+
+p32
+00:01:49.532 --> 00:01:51.386
+Locate it, then leave it alone.
+
+p33
+00:01:51.829 --> 00:01:55.680
+Adding a site is production admin work, never part of a training walk.
+
+p34
+00:01:56.080 --> 00:01:56.824
+Next page: Profit Centers.
+
+p35
+00:01:57.119 --> 00:01:58.092
+Four records.
+
+p36
+00:01:58.433 --> 00:01:59.413
+Wash, lube, detail, and store.
+
+p37
+00:01:59.742 --> 00:02:00.233
+These are the top level revenue buckets,
+
+p38
+00:02:00.549 --> 00:02:02.573
+and every sale in the platform rolls up into exactly one of them.
+
+p39
+00:02:03.049 --> 00:02:13.326
+Four short rows that shape every financial report the client will ever read.
+
+p40
+00:02:13.819 --> 00:02:15.075
+Now Departments.
+
+p41
+00:02:15.441 --> 00:02:18.330
+The same four names again, and that's the point.
+
+p42
+00:02:18.735 --> 00:02:26.674
+Departments map the operational side of the business onto those same revenue buckets,
+
+p43
+00:02:27.200 --> 00:02:28.266
+so labor and sales line up when a report compares them.
+
+p44
+00:02:28.476 --> 00:02:30.320
+All four active, all maintained by Micro Logic.
+
+p45
+00:02:30.801 --> 00:02:33.422
+Then Categories, where the detail lives.
+
+p46
+00:02:34.159 --> 00:02:35.826
+The tiles say forty nine.
+
+p47
+00:02:36.411 --> 00:02:39.094
+The list header says sixty six records.
+
+p48
+00:02:39.581 --> 00:02:41.634
+They disagree, and the list wins; trust the table count, not the tile.
+
+p49
+00:02:42.157 --> 00:02:44.107
+Each category refines one profit center,
+
+p50
+00:02:45.058 --> 00:02:51.760
+which is how a single wash bucket splits into dozens of reportable lines.
+
+p51
+00:02:52.160 --> 00:02:56.198
+One more page, and it comes with a trick.
+
+p52
+00:02:56.198 --> 00:03:01.187
+Dashboard Settings is filed under Analytics, not General, whatever older material tells you.
+
+p53
+00:03:01.187 --> 00:03:03.084
+The platform wins.
+
+p54
+00:03:03.084 --> 00:03:05.214
+Ten dashboards, one per user level,
+
+p55
+00:03:05.214 --> 00:03:10.537
+deciding what an administrator, a manager, or a cashier sees the moment they sign in.
+
+p56
+00:03:10.960 --> 00:03:12.423
+Click Close Settings.
+
+p57
+00:03:13.586 --> 00:03:16.018
+You're back in the app, exactly where you left it.
+
+p58
+00:03:16.992 --> 00:03:19.120
+Five pages read, nothing touched.
+
+p59
+00:03:19.583 --> 00:03:21.201
+So that's the General group.
+
+p60
+00:03:21.881 --> 00:03:24.439
+The Settings home reaches ninety two pages, and search jumps you to any of them.
+
+p61
+00:03:24.651 --> 00:03:26.455
+Account Information holds the sites.
+
+p62
+00:03:27.203 --> 00:03:29.072
+Profit centers, departments, and categories classify every sale, in that order.
+
+p63
+00:03:29.305 --> 00:03:34.164
+And Dashboard Settings lives under Analytics,
+
+p64
+00:03:34.658 --> 00:03:39.799
+which will save you a hunt the first time someone asks.
+

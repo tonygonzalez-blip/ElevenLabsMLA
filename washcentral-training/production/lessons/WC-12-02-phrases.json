@@ -1,0 +1,183 @@
+{
+  "lesson": "WC-12-02",
+  "audioMaster": "training/module12-settings/WC-12-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows are the blocks' MEASURED positions in the joined master: the Σ(audio+0.4) formula predicts 270.351s but the ffprobed master is 269.871s (0.48s off, past the ±0.3s gate), so each block start is the block's true onset found by FFT normalized cross-correlation of sNN.mp3 against the joined master (8 kHz mono PCM) — every block matched at NCC=1.000 with an exact 0.400s inter-block gap. Final end = ffprobed master duration 269.871s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 17.76,
+      "phrases": [
+        { "id": "p01", "text": "Open Settings, and find the Locations group in the left rail." },
+        { "id": "p02", "text": "Four pages live here." },
+        { "id": "p03", "text": "One holds every site you run and everything hanging off it." },
+        { "id": "p04", "text": "The other three group your sites, style what customers see, and guard the payment keys." },
+        { "id": "p05", "text": "We'll read all four, and change none of them." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.76,
+      "endS": 44.4,
+      "phrases": [
+        { "id": "p06", "text": "Now open Locations." },
+        { "id": "p07", "text": "A band of tiles reads the network at a glance: how many sites, how many active," },
+        { "id": "p08", "text": "how many states, and when they last synced." },
+        { "id": "p09", "text": "Under it, three panels chart growth, split the sites by state," },
+        { "id": "p10", "text": "and score how healthy their setup is." },
+        { "id": "p11", "text": "This is your map before you open a single site." },
+        { "id": "p12", "text": "And if the list underneath ever reads couldn't load," },
+        { "id": "p13", "text": "that's the agent service dropping, not an empty tenant." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 44.4,
+      "endS": 67.52,
+      "phrases": [
+        { "id": "p14", "text": "Look at the list itself." },
+        { "id": "p15", "text": "Eight columns, and the one that matters most is Code." },
+        { "id": "p16", "text": "That short site code follows a location through every screen in the platform," },
+        { "id": "p17", "text": "so learn to read it first." },
+        { "id": "p18", "text": "Search by name or code up top, filter beside it, and leave New Record alone." },
+        { "id": "p19", "text": "Last Sync on the right tells you when the site last checked in," },
+        { "id": "p20", "text": "which is the first thing you read when a site looks silent." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 67.52,
+      "endS": 86.56,
+      "phrases": [
+        { "id": "p21", "text": "Click a site to open it." },
+        { "id": "p22", "text": "One location, five tabs." },
+        { "id": "p23", "text": "Profile, Operations, Payments and Credentials, Messaging, and Users." },
+        { "id": "p24", "text": "That strip is the whole record," },
+        { "id": "p25", "text": "and every support question about a site starts by picking the right tab." },
+        { "id": "p26", "text": "Profile is where you land." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 86.56,
+      "endS": 103.28,
+      "phrases": [
+        { "id": "p27", "text": "Start with Profile." },
+        { "id": "p28", "text": "This is who and where: the site's code and name, its address, its contact details, its hours." },
+        { "id": "p29", "text": "When a ticket names a location you don't recognize," },
+        { "id": "p30", "text": "this tab confirms you're looking at the right one before you touch anything else." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 103.28,
+      "endS": 122.72,
+      "phrases": [
+        { "id": "p31", "text": "Now Operations." },
+        { "id": "p32", "text": "This tab runs the site's behavior and its time clock." },
+        { "id": "p33", "text": "Whether it shows on dashboards, whether it takes online orders," },
+        { "id": "p34", "text": "and the rules that clock staff out and pay overtime." },
+        { "id": "p35", "text": "Find the automatic clock-out timeout and the overtime threshold," },
+        { "id": "p36", "text": "read them, and leave them exactly as they are." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 122.72,
+      "endS": 149.04,
+      "phrases": [
+        { "id": "p37", "text": "Open Payments and Credentials." },
+        { "id": "p38", "text": "Below the portal and auto-charge options sits Credential Configuration," },
+        { "id": "p39", "text": "split into a block for each processor a site can run:" },
+        { "id": "p40", "text": "Open Edge, Smart Tech, Other, and Card Connect." },
+        { "id": "p41", "text": "Every secret shows masked." },
+        { "id": "p42", "text": "Your job is to name which block is present, never to read the value." },
+        { "id": "p43", "text": "For a decline ticket, the gateway name is all support needs." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 149.04,
+      "endS": 165.6,
+      "phrases": [
+        { "id": "p44", "text": "Two tabs left. Messaging." },
+        { "id": "p45", "text": "This holds the messages a site sends on its own, set per location rather than network-wide." },
+        { "id": "p46", "text": "When a customer at one site gets a text that another site's customers don't, this tab is why." },
+        { "id": "p47", "text": "You read what's set here; you send nothing." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 165.6,
+      "endS": 179.28,
+      "phrases": [
+        { "id": "p48", "text": "Then Users." },
+        { "id": "p49", "text": "This is who can work this site." },
+        { "id": "p50", "text": "When someone says they can't get into a location, check here before you reset anything:" },
+        { "id": "p51", "text": "they may simply not be assigned to it." },
+        { "id": "p52", "text": "Read the list; open nothing." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 179.28,
+      "endS": 192.56,
+      "phrases": [
+        { "id": "p53", "text": "Back out with the Back button." },
+        { "id": "p54", "text": "Nothing saved, nothing changed." },
+        { "id": "p55", "text": "And even if you wanted to swap a site's credentials, you couldn't finish it here:" },
+        { "id": "p56", "text": "those changes route to an approval queue, which is the next page we read." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 192.56,
+      "endS": 209.52,
+      "phrases": [
+        { "id": "p57", "text": "Open Location Groups." },
+        { "id": "p58", "text": "A group bundles several sites so a report or a dashboard treats them as one." },
+        { "id": "p59", "text": "Five columns: the name, a description, how many sites it holds," },
+        { "id": "p60", "text": "its geo group, and whether it shows on the dashboard." },
+        { "id": "p61", "text": "Read only." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 209.52,
+      "endS": 225.28,
+      "phrases": [
+        { "id": "p62", "text": "Next, Location Sub-Brand." },
+        { "id": "p63", "text": "The link says Sub-Brand, the page says Sub-Brands, same place." },
+        { "id": "p64", "text": "This styles the customer-facing panels, the panel type and the colors," },
+        { "id": "p65", "text": "so one operator can run sites under more than one look." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 225.28,
+      "endS": 249.84,
+      "phrases": [
+        { "id": "p66", "text": "Last page: Payment Credential Approval." },
+        { "id": "p67", "text": "This is where those credential changes land for sign-off." },
+        { "id": "p68", "text": "Each row shows a location, its gateway, and a status: pending, approved, or rejected." },
+        { "id": "p69", "text": "In the capture, two sites sat approved on Open Edge." },
+        { "id": "p70", "text": "When an admin says a site's new keys aren't live yet, this status column is your answer," },
+        { "id": "p71", "text": "one pending row and you know it's still in the queue." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 249.84,
+      "endS": 269.871,
+      "phrases": [
+        { "id": "p72", "text": "So that's the Locations area." },
+        { "id": "p73", "text": "One list, one five-tab record, three sibling pages." },
+        { "id": "p74", "text": "The site list gets you in," },
+        { "id": "p75", "text": "the tabs tell you who, how, and with which processor," },
+        { "id": "p76", "text": "and the sibling pages bundle sites, style them, and sign off their credentials." },
+        { "id": "p77", "text": "You read all of it, and you change none of it." }
+      ]
+    }
+  ],
+  "output": "WC-12-02-locations-v1.1"
+}

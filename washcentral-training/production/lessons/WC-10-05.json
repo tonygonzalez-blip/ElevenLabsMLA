@@ -1,0 +1,1150 @@
+{
+  "lesson": "WC-10-05",
+  "title": "IT & Support: Knowledge Base & Training Requests",
+  "audioMaster": "training/module10-it-support/WC-10-05-full-narration-v1.0.mp3",
+  "audioDurationS": 183.719,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/support-tickets.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-10-05-knowledge-base-training-v1.1",
+  "neverClick": [
+    "logout",
+    "log out",
+    "ask shyne",
+    "send",
+    "submit",
+    "\\+ ?new record",
+    "new record",
+    "\\+ ?new request",
+    "new request",
+    "\\+ ?new article",
+    "new article",
+    "create ticket",
+    "\\bnew\\b",
+    "\\bedit\\b",
+    "edit article",
+    "publish",
+    "unpublish",
+    "delete",
+    "yes, delete",
+    "\\bsave\\b",
+    "save changes",
+    "approve",
+    "refund",
+    "\\bassign\\b",
+    "export",
+    "filters",
+    "\\bsearch\\b",
+    "knowledge base",
+    "training requests"
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "ctxHdr": {
+      "selector": ".wc-ctx-hdr"
+    },
+    "supLabel": {
+      "js": "[...document.querySelectorAll('.menu .menu-group-lbl')].find(e=>(e.textContent||'').trim()==='Support')"
+    },
+    "audLabel": {
+      "js": "[...document.querySelectorAll('.menu .menu-group-lbl')].find(e=>(e.textContent||'').trim()==='Audit')"
+    },
+    "navMLCC": {
+      "selector": ".menu a[href=\"ml-command-center.html\"]"
+    },
+    "navSiteDetail": {
+      "selector": ".menu a[href=\"site-detail.html\"]"
+    },
+    "navTickets": {
+      "selector": ".menu a[href=\"support-tickets.html\"]"
+    },
+    "navHelpDesk": {
+      "selector": ".menu a[href=\"zoho-tickets.html\"]"
+    },
+    "navKB": {
+      "selector": ".menu a[href=\"support-kb.html\"]"
+    },
+    "navAlerts": {
+      "selector": ".menu a[href=\"support-alerts.html\"]"
+    },
+    "navTraining": {
+      "selector": ".menu a[href=\"support-training.html\"]"
+    },
+    "navAuditLog": {
+      "selector": ".menu a[href=\"audit-log.html\"]"
+    },
+    "navUserActivity": {
+      "selector": ".menu a[href=\"audit-users.html\"]"
+    },
+    "navChangeHistory": {
+      "selector": ".menu a[href=\"audit-changes.html\"]"
+    },
+    "searchBtn": {
+      "selector": ".wc-cmd-trigger-btn"
+    },
+    "shyneBtn": {
+      "js": "[...document.querySelectorAll('button')].find(b=>/ask shyne/i.test(b.textContent||'')&&b.getBoundingClientRect().width>0)"
+    },
+    "avatar": {
+      "selector": "#user-menu-btn"
+    },
+    "primItsup": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^IT ?& ?Support$/.test((e.textContent||'').trim()))"
+    },
+    "paletteBox": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-box"
+    },
+    "paletteInput": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-inp"
+    },
+    "escChip": {
+      "selector": ".wc-cmd-overlay.open .wc-cmd-esc"
+    }
+  },
+  "predicates": {
+    "onSupport": "location.pathname.endsWith('/support-tickets.html')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "panelFull": "(()=>{const m=document.querySelector('.menu');return !!m&&m.getBoundingClientRect().width>=200})()",
+    "railIntact": "(()=>{const kb=document.querySelector('.menu a[href=\"support-kb.html\"]');const tr=document.querySelector('.menu a[href=\"support-training.html\"]');const sup=[...document.querySelectorAll('.menu .menu-group-lbl')].some(e=>(e.textContent||'').trim()==='Support');const aud=[...document.querySelectorAll('.menu .menu-group-lbl')].some(e=>(e.textContent||'').trim()==='Audit');return !!kb&&!!tr&&sup&&aud&&location.pathname.endsWith('/support-tickets.html')})()",
+    "ticketsIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/support-tickets.html')&&rows.length===4&&/18 records/.test(document.body.textContent||'')})()",
+    "noShyneModal": "!document.querySelector('.ai-modal-overlay.open')",
+    "paletteOpen": "!!document.querySelector('.wc-cmd-overlay.open')",
+    "paletteClosed": "!document.querySelector('.wc-cmd-overlay.open')"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "panelFull",
+      "postcondition": "panelFull",
+      "timeoutMs": 5000,
+      "note": "off-camera: the sub-nav panel width is a shared persisted preference (probe-verified July 11 — flips between the 219px labeled panel and an 87px icon rail). This expands it so the SUPPORT/AUDIT group labels read. .wc-rail-panel-toggle is the same control both ways ('Show panel' when collapsed, 'Hide panel' when expanded). Skipped when already full (width>=200). support-tickets.html is a genuine SUPPORT-group page, so the panel module is forced to IT & Support regardless of prior state (probe-verified even right after an Academy page)."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onSupport",
+      "note": "start page identity before capture (startUrl support-tickets.html = the IT & Support module's Support Tickets page; its left panel shows the SUPPORT and AUDIT groups. Support Tickets content is neutral and never narrated — the lesson only tours the rail + header)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "panelFull",
+      "note": "pre-roll: preflight staged the shared sub-nav panel expanded (219px, labels visible); abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "railIntact",
+      "note": "loaded: IT & Support sub-nav present — SUPPORT + AUDIT group labels, Knowledge Base and Training Requests entries both resolve on support-tickets.html"
+    },
+    {
+      "op": "watch",
+      "key": "onSupportHeld",
+      "from": 1,
+      "to": 183,
+      "predicate": "onSupport",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "read-only tour proof: the page never navigates across all 9 steps. Knowledge Base and Training Requests are pointed at, NEVER opened (RESIDUAL R1/R2 — both now render live content that contradicts the locked 404 narration, so they are held beside with red do-not-click guardrails, never clicked)."
+    },
+    {
+      "op": "watch",
+      "key": "railHeld",
+      "from": 1,
+      "to": 183,
+      "predicate": "railIntact",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "the IT & Support rail (SUPPORT + AUDIT groups, KB + Training entries) stays present the whole lesson — proves we stayed in the module and never opened a sub-page"
+    },
+    {
+      "op": "watch",
+      "key": "ticketsHeld",
+      "from": 2,
+      "to": 182,
+      "predicate": "ticketsIntact",
+      "everyMs": 3000,
+      "mustHold": true,
+      "note": "mutation guardrail: the start page's Ticket List holds 4 rows and '18 records' throughout — proves nothing on the visible page was created, edited, or deleted"
+    },
+    {
+      "op": "watch",
+      "key": "shyneClosedHeld",
+      "from": 1,
+      "to": 183,
+      "predicate": "noShyneModal",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "Ask Shyne is send-type (PARKED-ITEMS #8): the modal is never opened — named and pointed at only"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        60,
+        1060
+      ],
+      "to": {
+        "target": "ctxHdr",
+        "offset": [
+          235,
+          18
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): enter from the bottom-left toward the panel context header 'IT & Support' as the narration says 'Open the IT and Support module'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.8,
+      "key": "supItems",
+      "targets": [
+        "navMLCC",
+        "navSiteDetail",
+        "navTickets",
+        "navHelpDesk",
+        "navKB",
+        "navAlerts",
+        "navTraining"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 0.9,
+      "key": "supLabelRect",
+      "target": "supLabel",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 0.95,
+      "key": "audLabelRect",
+      "target": "audLabel"
+    },
+    {
+      "op": "log-rects",
+      "at": 1.0,
+      "key": "auditItems",
+      "targets": [
+        "navAuditLog",
+        "navUserActivity",
+        "navChangeHistory"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.1,
+      "key": "ctxHdrRect",
+      "target": "ctxHdr"
+    },
+    {
+      "op": "log-rects",
+      "at": 1.15,
+      "key": "hdr",
+      "targets": [
+        "searchBtn",
+        "shyneBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 2.4,
+      "to": {
+        "target": "supLabel",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01 tail): drift to the left rail beside the SUPPORT group label"
+    },
+    {
+      "op": "move",
+      "at": 6.0,
+      "to": {
+        "target": "navTickets",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): 'holding the tickets' — beside Support Tickets"
+    },
+    {
+      "op": "move",
+      "at": 7.7,
+      "to": {
+        "target": "navHelpDesk",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): 'the help desk' — beside Help Desk (Zoho)"
+    },
+    {
+      "op": "move",
+      "at": 9.4,
+      "to": {
+        "target": "navAlerts",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p03): 'the alerts you work every day' — beside System Alerts"
+    },
+    {
+      "op": "move",
+      "at": 11.6,
+      "to": {
+        "target": "audLabel",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04): 'Audit sits underneath' — beside the AUDIT group label"
+    },
+    {
+      "op": "move",
+      "at": 13.7,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p05): 'two of those Support entries are the whole job' — gesture back to the two targets"
+    },
+    {
+      "op": "move",
+      "at": 16.9,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p06): 'Let's find them' — rest beside Knowledge Base, leading into step 2"
+    },
+    {
+      "op": "move",
+      "at": 18.5,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07): 'First, the Knowledge Base' — beside the Knowledge Base entry (never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 19.8,
+      "to": {
+        "target": "navHelpDesk",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): 'tucked between the help desk'"
+    },
+    {
+      "op": "move",
+      "at": 21.7,
+      "to": {
+        "target": "navAlerts",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): 'and the alerts'"
+    },
+    {
+      "op": "move",
+      "at": 23.9,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p09-p11): back beside Knowledge Base — the team's memory"
+    },
+    {
+      "op": "move",
+      "at": 30.0,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p10-p11): hold beside Knowledge Base"
+    },
+    {
+      "op": "move",
+      "at": 36.6,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p12): narration says 'Open it' — SAFETY OVERRIDE (RESIDUAL R1): Knowledge Base now renders live content (84 articles) that contradicts the locked 404 narration, and per browse-and-point on the shared tenant it is NOT opened. Held beside with the red do-not-click ring; the page is never navigated."
+    },
+    {
+      "op": "move",
+      "at": 43.4,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p14-p15): hold beside Knowledge Base while the narration reports the July 9 not-found finding"
+    },
+    {
+      "op": "move",
+      "at": 55.4,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p18-p20): hold beside Knowledge Base — 'record it, flag it, never paint in the blank from memory'"
+    },
+    {
+      "op": "move",
+      "at": 64.1,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p21-p22): Knowledge Base role — beside the entry (no screen change)"
+    },
+    {
+      "op": "move",
+      "at": 72.4,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p24-p25): hold beside Knowledge Base — document the reusable fix here"
+    },
+    {
+      "op": "move",
+      "at": 82.5,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p26): 'Back to the rail'"
+    },
+    {
+      "op": "move",
+      "at": 84.1,
+      "to": {
+        "target": "navAlerts",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): 'just under System Alerts' — start at System Alerts"
+    },
+    {
+      "op": "move",
+      "at": 85.4,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): down to the Training Requests entry (never clicked)"
+    },
+    {
+      "op": "move",
+      "at": 88.6,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p28-p29): hold beside Training Requests — the client-training pipeline"
+    },
+    {
+      "op": "move",
+      "at": 94.3,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p30): narration says 'Open it' — SAFETY OVERRIDE (RESIDUAL R2): Training Requests now renders live content (21 requests) that contradicts the locked 404 narration; NOT opened. Held beside with the red do-not-click ring."
+    },
+    {
+      "op": "move",
+      "at": 102.2,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p33): hold beside Training Requests while the July 9 not-found finding is reported"
+    },
+    {
+      "op": "move",
+      "at": 110.6,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p35-p36): 'record the missing page; resist rebuilding it from memory'"
+    },
+    {
+      "op": "move",
+      "at": 116.7,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p37-p38): Training Requests role — beside the entry (no screen change)"
+    },
+    {
+      "op": "move",
+      "at": 125.2,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p40-p42): file a request / pick one up — two directions"
+    },
+    {
+      "op": "move",
+      "at": 133.4,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          20,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p43): 'Now glance back at the header' — travel up to the header tools"
+    },
+    {
+      "op": "move",
+      "at": 135.1,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          20,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p44): 'Search' — beside the Search ⌘K trigger (located, never clicked; we use the keystroke)"
+    },
+    {
+      "op": "move",
+      "at": 137.0,
+      "to": {
+        "target": "shyneBtn",
+        "offset": [
+          20,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p44): 'and Ask Shyne' — beside the Ask Shyne button"
+    },
+    {
+      "op": "move",
+      "at": 139.1,
+      "to": {
+        "target": "searchBtn",
+        "offset": [
+          20,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p45): hold near the header tools — 'that matters most on a day like this'"
+    },
+    {
+      "op": "key",
+      "pressAt": 143.2,
+      "keys": [
+        "ctrl+k"
+      ],
+      "keyLabel": "Ctrl + K",
+      "postcondition": "paletteOpen",
+      "timeoutMs": 4000,
+      "note": "step 8 (p46): genuine Ctrl+K as the narration says 'control K still jumps you anywhere in the platform'; the command palette is on screen before it is described"
+    },
+    {
+      "op": "log-rect",
+      "at": 143.9,
+      "key": "paletteBoxRect",
+      "target": "paletteBox",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 144.0,
+      "key": "paletteInputRect",
+      "target": "paletteInput"
+    },
+    {
+      "op": "log-rect",
+      "at": 144.05,
+      "key": "escChipRect",
+      "target": "escChip"
+    },
+    {
+      "op": "watch",
+      "key": "paletteShown",
+      "from": 143.7,
+      "to": 146.4,
+      "predicate": "paletteOpen",
+      "everyMs": 300,
+      "mustHold": true,
+      "note": "the palette stays open while p46 describes it"
+    },
+    {
+      "op": "move",
+      "at": 144.3,
+      "to": {
+        "target": "paletteInput",
+        "offset": [
+          -24,
+          4
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p46): point beside the palette's search box (never typed in)"
+    },
+    {
+      "op": "key",
+      "pressAt": 146.6,
+      "keys": [
+        "Escape"
+      ],
+      "keyLabel": "Esc",
+      "postcondition": "paletteClosed",
+      "timeoutMs": 4000,
+      "note": "step 8: genuine Escape closes the palette before Ask Shyne is discussed; nothing typed, no navigation"
+    },
+    {
+      "op": "move",
+      "at": 147.3,
+      "to": {
+        "target": "shyneBtn",
+        "offset": [
+          20,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p47): 'and Shyne can answer a plain question while the page is down' — beside Ask Shyne"
+    },
+    {
+      "op": "move",
+      "at": 150.9,
+      "to": {
+        "target": "shyneBtn",
+        "offset": [
+          20,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p48) guardrail: 'confirm whatever Shyne tells you before you act on it' — held beside Ask Shyne with the red do-not-open ring (send-type, never opened)"
+    },
+    {
+      "op": "move",
+      "at": 156.5,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p49-p50): recap — 'Knowledge Base' beside its entry"
+    },
+    {
+      "op": "move",
+      "at": 160.2,
+      "to": {
+        "target": "navTraining",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p50): 'and Training Requests both live right here'"
+    },
+    {
+      "op": "move",
+      "at": 164.8,
+      "to": {
+        "target": "supLabel",
+        "offset": [
+          215,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p51): 'under Support' — beside the SUPPORT group label; both came back empty on July 9"
+    },
+    {
+      "op": "move",
+      "at": 169.8,
+      "to": {
+        "target": "navKB",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p52-p54): the habit underneath — find the destination, read its real state, report a miss"
+    },
+    {
+      "op": "move",
+      "at": 177.2,
+      "to": {
+        "point": [
+          1400,
+          720
+        ]
+      },
+      "note": "step 9 (p55): final park, clear of the rail and the caption band, as the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 183.0,
+      "predicate": "onSupport",
+      "note": "end state: still on the IT & Support Support Tickets page, never navigated"
+    },
+    {
+      "op": "assert",
+      "at": 183.15,
+      "predicate": "railIntact",
+      "note": "end state: rail intact — SUPPORT + AUDIT groups and both target entries still present; nothing was opened"
+    },
+    {
+      "op": "assert",
+      "at": 183.25,
+      "predicate": "ticketsIntact",
+      "note": "end state: Ticket List unchanged — 4 rows, '18 records'; the shared tenant was not mutated"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "supLabelRect",
+        "place": "right",
+        "from": 1.4,
+        "to": 17.4,
+        "note": "step 1: the SUPPORT group at the top of the IT & Support rail"
+      },
+      {
+        "n": 2,
+        "anchor": "supItems.navKB",
+        "place": "right",
+        "from": 18.5,
+        "to": 35.9,
+        "note": "step 2: the Knowledge Base entry, between Help Desk and System Alerts"
+      },
+      {
+        "n": 3,
+        "anchor": "supItems.navKB",
+        "place": "right",
+        "from": 36.6,
+        "to": 63.5,
+        "note": "step 3: Knowledge Base — do-not-open guardrail while the July 9 not-found finding is reported"
+      },
+      {
+        "n": 4,
+        "anchor": "supItems.navKB",
+        "place": "right",
+        "from": 64.1,
+        "to": 81.9,
+        "note": "step 4: Knowledge Base role — the article library you read and contribute to"
+      },
+      {
+        "n": 5,
+        "anchor": "supItems.navTraining",
+        "place": "right",
+        "from": 82.5,
+        "to": 93.8,
+        "note": "step 5: the Training Requests entry, just under System Alerts"
+      },
+      {
+        "n": 6,
+        "anchor": "supItems.navTraining",
+        "place": "right",
+        "from": 94.3,
+        "to": 116.3,
+        "note": "step 6: Training Requests — do-not-open guardrail while the July 9 not-found finding is reported"
+      },
+      {
+        "n": 7,
+        "anchor": "supItems.navTraining",
+        "place": "right",
+        "from": 116.7,
+        "to": 132.9,
+        "note": "step 7: Training Requests role — the client-training pipeline"
+      },
+      {
+        "n": 8,
+        "anchor": "hdr.searchBtn",
+        "place": "below-left",
+        "from": 133.4,
+        "to": 155.9,
+        "note": "step 8: the header fallback — Search ⌘K and Ask Shyne stay pinned on every page"
+      },
+      {
+        "n": 9,
+        "anchor": "supItems.navKB",
+        "place": "right",
+        "from": 156.5,
+        "to": 182.4,
+        "note": "step 9: recap tying Knowledge Base and Training Requests together under SUPPORT"
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "union:supItems",
+        "from": 4.2,
+        "to": 11.4,
+        "note": "step 1 (p02-p03): bracket the whole SUPPORT group — 'Support sits at the top'"
+      },
+      {
+        "anchor": "supItems.navTickets",
+        "from": 6.0,
+        "to": 7.7,
+        "note": "step 1 (p03): the tickets"
+      },
+      {
+        "anchor": "supItems.navHelpDesk",
+        "from": 7.7,
+        "to": 9.4,
+        "note": "step 1 (p03): the help desk"
+      },
+      {
+        "anchor": "supItems.navAlerts",
+        "from": 9.4,
+        "to": 11.3,
+        "note": "step 1 (p03): the alerts"
+      },
+      {
+        "anchor": "union:auditItems",
+        "from": 11.6,
+        "to": 13.6,
+        "note": "step 1 (p04): the AUDIT group underneath"
+      },
+      {
+        "anchor": "supItems.navKB",
+        "from": 18.5,
+        "to": 35.8,
+        "note": "step 2 (p07-p11): the Knowledge Base entry"
+      },
+      {
+        "anchor": "supItems.navHelpDesk",
+        "from": 19.8,
+        "to": 21.7,
+        "note": "step 2 (p08): between the help desk"
+      },
+      {
+        "anchor": "supItems.navAlerts",
+        "from": 21.7,
+        "to": 23.8,
+        "note": "step 2 (p08): and the alerts"
+      },
+      {
+        "anchor": "supItems.navKB",
+        "from": 36.6,
+        "to": 63.4,
+        "color": "#dc2626",
+        "note": "step 3 (p12-p20) do-not-open: narration says 'Open it' but Knowledge Base now renders live content contradicting the locked 404 narration — held beside, never clicked (RESIDUAL R1)"
+      },
+      {
+        "anchor": "supItems.navKB",
+        "from": 64.1,
+        "to": 81.8,
+        "note": "step 4 (p21-p25): Knowledge Base role"
+      },
+      {
+        "anchor": "supItems.navAlerts",
+        "from": 84.1,
+        "to": 86.2,
+        "note": "step 5 (p27): just under System Alerts"
+      },
+      {
+        "anchor": "supItems.navTraining",
+        "from": 85.4,
+        "to": 93.7,
+        "note": "step 5 (p27-p29): the Training Requests entry"
+      },
+      {
+        "anchor": "supItems.navTraining",
+        "from": 94.3,
+        "to": 116.3,
+        "color": "#dc2626",
+        "note": "step 6 (p30-p36) do-not-open: narration says 'Open it' but Training Requests now renders live content contradicting the locked 404 narration — held beside, never clicked (RESIDUAL R2)"
+      },
+      {
+        "anchor": "supItems.navTraining",
+        "from": 116.7,
+        "to": 132.9,
+        "note": "step 7 (p37-p42): Training Requests role"
+      },
+      {
+        "anchor": "hdr.searchBtn",
+        "from": 135.1,
+        "to": 137.0,
+        "note": "step 8 (p44): Search ⌘K (located, never clicked — the keystroke opens it)"
+      },
+      {
+        "anchor": "hdr.shyneBtn",
+        "from": 137.0,
+        "to": 138.9,
+        "note": "step 8 (p44): Ask Shyne (named, never opened)"
+      },
+      {
+        "anchor": "paletteInputRect",
+        "from": 143.9,
+        "to": 146.4,
+        "note": "step 8 (p46): the command palette search box, opened by Ctrl+K"
+      },
+      {
+        "anchor": "hdr.shyneBtn",
+        "from": 150.9,
+        "to": 155.9,
+        "color": "#dc2626",
+        "note": "step 8 (p48) do-not-open: Ask Shyne is send-type — 'confirm whatever Shyne tells you'; pointed at from beside, never opened"
+      },
+      {
+        "anchor": "supItems.navKB",
+        "from": 157.9,
+        "to": 160.5,
+        "note": "step 9 (p50): Knowledge Base"
+      },
+      {
+        "anchor": "supItems.navTraining",
+        "from": 160.5,
+        "to": 163.4,
+        "note": "step 9 (p50): Training Requests"
+      },
+      {
+        "anchor": "supLabelRect",
+        "from": 163.4,
+        "to": 169.0,
+        "note": "step 9 (p50-p51): both under Support, inside IT & Support"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.4,
+        "z": 1.4,
+        "cx": 520,
+        "cy": 300,
+        "ease": true,
+        "note": "step 1: punch in on the left rail — SUPPORT and AUDIT groups"
+      },
+      {
+        "t": 17.4,
+        "z": 1.4,
+        "cx": 520,
+        "cy": 300
+      },
+      {
+        "t": 18.4,
+        "z": 1.5,
+        "cx": 560,
+        "cy": 270,
+        "ease": true,
+        "note": "steps 2-4: 150% close on the Knowledge Base entry (held while its 404 finding and role are explained)"
+      },
+      {
+        "t": 81.9,
+        "z": 1.5,
+        "cx": 560,
+        "cy": 270
+      },
+      {
+        "t": 82.6,
+        "z": 1.5,
+        "cx": 560,
+        "cy": 330,
+        "ease": true,
+        "note": "steps 5-7: 150% close on the Training Requests entry"
+      },
+      {
+        "t": 132.9,
+        "z": 1.5,
+        "cx": 560,
+        "cy": 330
+      },
+      {
+        "t": 133.6,
+        "z": 1.12,
+        "cx": 1150,
+        "cy": 240,
+        "ease": true,
+        "note": "step 8: pull to the top band — the header tools stay pinned top-right"
+      },
+      {
+        "t": 143.4,
+        "z": 1.3,
+        "cx": 953,
+        "cy": 250,
+        "ease": true,
+        "note": "step 8: frame the command palette opened by Ctrl+K"
+      },
+      {
+        "t": 146.9,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 180,
+        "ease": true,
+        "note": "step 8: back to the header tools for Ask Shyne (the send-type guardrail)"
+      },
+      {
+        "t": 155.9,
+        "z": 1.15,
+        "cx": 1500,
+        "cy": 180
+      },
+      {
+        "t": 156.6,
+        "z": 1.4,
+        "cx": 520,
+        "cy": 300,
+        "ease": true,
+        "note": "step 9: recap framing on the rail — both target entries in view"
+      },
+      {
+        "t": 181.0,
+        "z": 1.4,
+        "cx": 520,
+        "cy": 300
+      },
+      {
+        "t": 182.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 183.719,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Knowledge Base & Training Requests — Complete",
+      "stamp": "Verified against demo.washcentral.com on July 9, 2026.",
+      "from": 182.8,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 182.5
+  }
+}

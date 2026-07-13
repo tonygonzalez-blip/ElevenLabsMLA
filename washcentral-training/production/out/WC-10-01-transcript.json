@@ -1,0 +1,632 @@
+{
+  "lesson": "WC-10-01",
+  "audioMaster": "training/module10-it-support/WC-10-01-full-narration-v1.0.mp3",
+  "audioDurationS": 269.714,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is the Micrologic N-O-C.",
+      "startS": 0,
+      "endS": 2.636,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "One board, watching every customer we support, all at once.",
+      "startS": 2.96,
+      "endS": 5.885,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Tech support and customer success both live here.",
+      "startS": 6.092,
+      "endS": 6.898,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "A tenant's own Command Center covers a single operator;",
+      "startS": 7.275,
+      "endS": 10.053,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "this one sits above all of them, so you catch trouble before the phone even rings.",
+      "startS": 10.341,
+      "endS": 17.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Look at the top strip.",
+      "startS": 18.29,
+      "endS": 19.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "A red count of the customers in critical shape right now.",
+      "startS": 20.323,
+      "endS": 23.547,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "A live badge, and a note that it just refreshed.",
+      "startS": 24.069,
+      "endS": 27.215,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "That matters: the board updates itself, so you are never staring at stale numbers.",
+      "startS": 27.851,
+      "endS": 28.821,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "And the search box up here is scoped to this screen, to customers, locations, and incidents.",
+      "startS": 29.218,
+      "endS": 39.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Under the header, three tabs: all customers, enterprise, general.",
+      "startS": 39.84,
+      "endS": 44.144,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "All customers is the whole book.",
+      "startS": 44.713,
+      "endS": 46.421,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The other two split it by tier, enterprise on one side, general on the other.",
+      "startS": 46.709,
+      "endS": 50.843,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "It is the same instinct as the location scope you already know.",
+      "startS": 51.273,
+      "endS": 54.318,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "They aim the board, and they touch nothing underneath.",
+      "startS": 54.724,
+      "endS": 57.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Tap Enterprise.",
+      "startS": 57.679,
+      "endS": 58.739,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Everything tightens to that tier: the counts, the map, the feed.",
+      "startS": 59.274,
+      "endS": 63.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Tap All Customers and the whole network snaps back.",
+      "startS": 63.561,
+      "endS": 66.496,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "It is a filter on your view, nothing deeper, and it undoes itself in a single click.",
+      "startS": 66.974,
+      "endS": 71.528,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Beside the filters, three small counts.",
+      "startS": 72.058,
+      "endS": 74.733,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Critical, warning, healthy.",
+      "startS": 75.03,
+      "endS": 75.604,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "That is the room in one glance, how many customers sit in each band this minute.",
+      "startS": 75.882,
+      "endS": 77.167,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "When the critical number climbs, that is your first signal to slow down and look closer,",
+      "startS": 77.666,
+      "endS": 82.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "before you have opened a single account.",
+      "startS": 83.023,
+      "endS": 89.582,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Now the saved views.",
+      "startS": 90,
+      "endS": 91.206,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "All Accounts is everything.",
+      "startS": 91.206,
+      "endS": 93.058,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Enterprise Critical and Needs Attention",
+      "startS": 93.058,
+      "endS": 95.071,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "drag the board straight to what deserves your eyes first.",
+      "startS": 95.071,
+      "endS": 98.085,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Reach for Needs Attention when you walk in cold and want the short list,",
+      "startS": 98.085,
+      "endS": 102.871,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "then drop back to All Accounts.",
+      "startS": 102.871,
+      "endS": 105.501,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "View only, same as the filters.",
+      "startS": 105.501,
+      "endS": 107.309,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "Across the top, five cards.",
+      "startS": 107.76,
+      "endS": 109.629,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Customers, critical, warning, healthy, and average S-L-A.",
+      "startS": 109.949,
+      "endS": 114.627,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "The first four sort your accounts by health.",
+      "startS": 115.205,
+      "endS": 117.342,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "The last one is the service level for the whole board,",
+      "startS": 117.696,
+      "endS": 120.395,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "a single clean number you can quote in a morning stand-up without opening anything else.",
+      "startS": 120.684,
+      "endS": 125.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "Read the small print under each count.",
+      "startS": 125.76,
+      "endS": 127.902,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Every card splits enterprise against general.",
+      "startS": 128.602,
+      "endS": 131.223,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "So a card never just tells you how many.",
+      "startS": 131.514,
+      "endS": 133.749,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "It tells you which tier is carrying the weight,",
+      "startS": 134.003,
+      "endS": 136.43,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "and that split is exactly where you decide who gets the first call.",
+      "startS": 136.835,
+      "endS": 140.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "The average S-L-A card earns a second look.",
+      "startS": 141.04,
+      "endS": 143.77,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "It reads just over ninety-seven percent, with the day-over-day drift right beneath it.",
+      "startS": 143.77,
+      "endS": 148.724,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "A down arrow is a quiet alarm.",
+      "startS": 148.724,
+      "endS": 151.72,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Attainment slipped since yesterday,",
+      "startS": 151.72,
+      "endS": 153.327,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "and on this board that is worth chasing down before it grows.",
+      "startS": 153.327,
+      "endS": 157.421,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Drop to Network Coverage.",
+      "startS": 157.906,
+      "endS": 159.356,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Every supported site on one map, painted by health: green, amber, red.",
+      "startS": 159.764,
+      "endS": 162.67,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "The header counts the customers, the locations, and the states behind them.",
+      "startS": 162.965,
+      "endS": 164.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "This is the shape of the whole network in a single picture,",
+      "startS": 164.837,
+      "endS": 168.835,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "and it is where a regional pattern jumps out at you.",
+      "startS": 169.213,
+      "endS": 175.013,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "The map is live under your cursor.",
+      "startS": 175.511,
+      "endS": 177.287,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "Plus and minus zoom, the arrows go full screen,",
+      "startS": 177.841,
+      "endS": 180.921,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "and the numbered bubbles group nearby sites by their worst case.",
+      "startS": 181.218,
+      "endS": 184.585,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "Click a state or a cluster and it drops you into that region, without ever leaving the board.",
+      "startS": 185.293,
+      "endS": 190.06,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "Swing to the feed on the right.",
+      "startS": 190.48,
+      "endS": 191.936,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p57",
+      "text": "Three tabs: incidents, locations, customers, each with a live count.",
+      "startS": 192.425,
+      "endS": 193.237,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p58",
+      "text": "Incidents is the default, and the one you live in during a shift.",
+      "startS": 193.565,
+      "endS": 196.053,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p59",
+      "text": "The other two re-cut the same trouble by site and by account,",
+      "startS": 196.339,
+      "endS": 197.534,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p60",
+      "text": "for when you want a different angle on it.",
+      "startS": 198.202,
+      "endS": 206.836,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "The feed stacks by severity.",
+      "startS": 207.28,
+      "endS": 209.063,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p62",
+      "text": "Critical up top, then warning, then info and monitoring, each with its own tally.",
+      "startS": 209.458,
+      "endS": 210.436,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p63",
+      "text": "Hold onto one thing here: these count incidents, while the cards up top count customers.",
+      "startS": 210.64,
+      "endS": 214.53,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p64",
+      "text": "Two different denominators, so the numbers will not always line up, and that is fine.",
+      "startS": 214.797,
+      "endS": 224.674,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p65",
+      "text": "Now read one row.",
+      "startS": 225.12,
+      "endS": 226.535,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p66",
+      "text": "The customer, its tier, the headline of what broke, a tag for the kind of failure,",
+      "startS": 227.353,
+      "endS": 230.595,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p67",
+      "text": "an owner or a status, and how long it has been running.",
+      "startS": 230.822,
+      "endS": 235.817,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p68",
+      "text": "That last part matters most.",
+      "startS": 236.432,
+      "endS": 238.188,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p69",
+      "text": "An old, unassigned critical is the one that should bother you.",
+      "startS": 238.552,
+      "endS": 241.813,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p70",
+      "text": "Read it here; you work it somewhere else.",
+      "startS": 242.308,
+      "endS": 244.717,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p71",
+      "text": "So that is the cockpit.",
+      "startS": 245.12,
+      "endS": 246.739,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p72",
+      "text": "Filters and saved views aim it.",
+      "startS": 247.497,
+      "endS": 248.996,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p73",
+      "text": "The cards and the map give you the shape at a glance.",
+      "startS": 249.289,
+      "endS": 249.746,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p74",
+      "text": "The feed tells you what is broken and who has it.",
+      "startS": 250.537,
+      "endS": 253.065,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p75",
+      "text": "Nothing here changes a thing.",
+      "startS": 253.513,
+      "endS": 256.322,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p76",
+      "text": "You spot it on this board,",
+      "startS": 257.045,
+      "endS": 258.623,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p77",
+      "text": "then open the customer, the ticket, or the alert somewhere else to fix it.",
+      "startS": 258.998,
+      "endS": 264.51,
+      "timing": "silence"
+    },
+    {
+      "block": "s15",
+      "id": "p78",
+      "text": "Learn this screen well, because on a busy day it is the first thing you open.",
+      "startS": 265.299,
+      "endS": 269.274,
+      "timing": "silence"
+    }
+  ]
+}

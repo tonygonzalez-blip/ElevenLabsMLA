@@ -1,0 +1,504 @@
+{
+  "lesson": "WC-05-01",
+  "audioMaster": "training/module05-marketing/WC-05-01-full-narration-v1.0.mp3",
+  "audioDurationS": 225.881,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Marketing, then Campaigns.",
+      "startS": 0,
+      "endS": 2.111,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "This page gathers every campaign the network runs into one list.",
+      "startS": 3.037,
+      "endS": 6.944,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "The rest of Marketing sits in the sidebar beside it.",
+      "startS": 7.695,
+      "endS": 10.221,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "This whole lesson is look-only, so nothing here sends or launches.",
+      "startS": 11.181,
+      "endS": 15.252,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Start at the top row.",
+      "startS": 15.68,
+      "endS": 17.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Four tiles hold the snapshot: active campaigns, messages sent this month,",
+      "startS": 18.13,
+      "endS": 19.814,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "average open rate, and revenue attributed.",
+      "startS": 20.245,
+      "endS": 21.415,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Here the numbers are quiet, mostly zero.",
+      "startS": 21.852,
+      "endS": 23.161,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "On a live tenant this is your fast read on how marketing is doing.",
+      "startS": 23.698,
+      "endS": 34.159,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Below the tiles, three panels.",
+      "startS": 34.663,
+      "endS": 36.485,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "First, Send Volume.",
+      "startS": 36.755,
+      "endS": 38.123,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "It draws email and text volume across the last thirty days.",
+      "startS": 38.611,
+      "endS": 41.911,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "One glance tells you whether sending is climbing, holding steady, or falling off.",
+      "startS": 42.34,
+      "endS": 46.641,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Next, Campaigns by Type.",
+      "startS": 47.2,
+      "endS": 49.221,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "This is the channel mix.",
+      "startS": 49.629,
+      "endS": 51.082,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Most of the network's campaigns go by email, a chunk pair email with text,",
+      "startS": 51.475,
+      "endS": 53.888,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "and smaller slices run text-only or push.",
+      "startS": 54.206,
+      "endS": 59.135,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "It tells you how customers are actually being reached.",
+      "startS": 59.539,
+      "endS": 62.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "The third panel, Campaign Performance.",
+      "startS": 62.831,
+      "endS": 65.346,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "It counts campaigns by state: how many are active, sitting in draft, or already wrapped.",
+      "startS": 65.723,
+      "endS": 67.406,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "A quick pulse on where the work stands.",
+      "startS": 67.717,
+      "endS": 73.714,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Now scroll to the Campaign List.",
+      "startS": 74.16,
+      "endS": 76.035,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "One row per campaign.",
+      "startS": 76.351,
+      "endS": 77.803,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Up top, a New Record button to build one, Export to pull the list out,",
+      "startS": 78.382,
+      "endS": 80.919,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "plus filters and a search box to find a campaign fast.",
+      "startS": 81.26,
+      "endS": 86.559,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Read across the headers.",
+      "startS": 86.96,
+      "endS": 88.3,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Name, type, and status, then audience, sent, open rate, and revenue.",
+      "startS": 88.597,
+      "endS": 92.406,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Those last columns are the results, and they fill in only after a campaign sends.",
+      "startS": 92.646,
+      "endS": 94.135,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Here they're all dashes, because none have gone out yet.",
+      "startS": 94.527,
+      "endS": 102.788,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "Down the status column, four states.",
+      "startS": 103.28,
+      "endS": 105.711,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Draft is still being built.",
+      "startS": 105.971,
+      "endS": 107.614,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Scheduled is set to go out later.",
+      "startS": 107.911,
+      "endS": 109.795,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Active is running now.",
+      "startS": 110.193,
+      "endS": 111.674,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "Completed has finished its run.",
+      "startS": 111.994,
+      "endS": 113.831,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "You'll see those same four words everywhere in Marketing, so learn them here.",
+      "startS": 114.402,
+      "endS": 118.139,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Look at the two campaigns with an extra chip.",
+      "startS": 118.56,
+      "endS": 121.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "It reads weather paused, six locations.",
+      "startS": 121.712,
+      "endS": 124.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "That campaign is held at those sites for weather,",
+      "startS": 125.46,
+      "endS": 130.899,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "while its status still reads scheduled or active.",
+      "startS": 131.86,
+      "endS": 135.227,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "If a client says a campaign stopped in one town but not another, check this chip first.",
+      "startS": 135.521,
+      "endS": 136.832,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p41",
+      "text": "Where the pause is configured is parked for a later lesson.",
+      "startS": 137.347,
+      "endS": 140.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "Click New Record to open a blank campaign form.",
+      "startS": 140.794,
+      "endS": 143.495,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "Across the top runs a set of tabs: details, content, goals,",
+      "startS": 144.895,
+      "endS": 147.085,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "delivery, an A B test, and a weather gate.",
+      "startS": 147.665,
+      "endS": 150.882,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "We're only here to see the shape of it.",
+      "startS": 151.272,
+      "endS": 153.528,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "Do not save.",
+      "startS": 154.431,
+      "endS": 157.115,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "The first tab, Campaign Details, holds the basics.",
+      "startS": 157.68,
+      "endS": 161.039,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "A name and subject line, the type and mode, a status, a description, and the run dates.",
+      "startS": 161.597,
+      "endS": 164.235,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "Mode is worth a look: a single send, or a drip sequence that spreads messages over days.",
+      "startS": 164.566,
+      "endS": 167.387,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "Below it, the audience, where you'd attach who receives the campaign.",
+      "startS": 168.139,
+      "endS": 178.924,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "Leave the way we came in: click Cancel.",
+      "startS": 179.36,
+      "endS": 181.996,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "The form closes, nothing saved, and the list is right where we left it.",
+      "startS": 183.309,
+      "endS": 187.457,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "One tab here, Weather Gate, we didn't open, so how the weather pause is set stays parked too.",
+      "startS": 188.566,
+      "endS": 194.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "Back on the list, two ways to find a campaign.",
+      "startS": 194.48,
+      "endS": 195.294,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "Type a name into the search box, or narrow with Filters.",
+      "startS": 195.68,
+      "endS": 197.247,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "The footer counts the records and pages through them.",
+      "startS": 198.278,
+      "endS": 201.568,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "Export sits up top for pulling the list out, though we won't touch it.",
+      "startS": 202.225,
+      "endS": 208.67,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "So that's Campaigns.",
+      "startS": 209.12,
+      "endS": 210.581,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p59",
+      "text": "Four tiles for the snapshot,",
+      "startS": 211.038,
+      "endS": 212.554,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p60",
+      "text": "three panels for volume, mix, and status, and one list for the campaigns themselves.",
+      "startS": 212.875,
+      "endS": 218.094,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p61",
+      "text": "Read a status, catch a weather pause, open the form to learn its shape.",
+      "startS": 218.48,
+      "endS": 222.494,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p62",
+      "text": "All of it without sending or changing a thing.",
+      "startS": 222.893,
+      "endS": 225.419,
+      "timing": "silence"
+    }
+  ]
+}

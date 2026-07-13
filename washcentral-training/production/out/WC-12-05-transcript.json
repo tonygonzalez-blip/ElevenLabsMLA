@@ -1,0 +1,688 @@
+{
+  "lesson": "WC-12-05",
+  "audioMaster": "training/module12-settings/WC-12-05-full-narration-v1.0.mp3",
+  "audioDurationS": 288.131,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in Settings, and open the Hardware group.",
+      "startS": 0,
+      "endS": 2.209,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Five lists live here, and together they describe the machines at a wash:",
+      "startS": 2.209,
+      "endS": 6.393,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "the terminals that exist, the screen layouts they run, and the lube-bay buttons they show.",
+      "startS": 6.393,
+      "endS": 10.848,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Think of this as the field tech's corner of Settings,",
+      "startS": 10.848,
+      "endS": 14.323,
+      "timing": "proportional"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "the place you check before you touch anything at the site.",
+      "startS": 14.323,
+      "endS": 17.36,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Click Hardware / Terminals.",
+      "startS": 17.76,
+      "endS": 18.978,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Every machine a wash runs shows up here as one row:",
+      "startS": 18.978,
+      "endS": 22.944,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "its location, its address on the network, the build it runs, and when it last checked in.",
+      "startS": 22.944,
+      "endS": 28.389,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "When a site reports a dead register, start here.",
+      "startS": 28.389,
+      "endS": 31.907,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "A terminal that isn't listed, or whose last-seen time is hours stale,",
+      "startS": 31.907,
+      "endS": 35.876,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "has already told you something.",
+      "startS": 35.876,
+      "endS": 37.398,
+      "timing": "proportional"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "The rows didn't load today, so read the columns.",
+      "startS": 37.398,
+      "endS": 40.818,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Now Screen Layout.",
+      "startS": 41.28,
+      "endS": 42.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "This one loaded.",
+      "startS": 43.019,
+      "endS": 44.043,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "The tiles count six layouts, split evenly between POS and kiosk,",
+      "startS": 44.47,
+      "endS": 52.127,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "and each row pins a screen type and a resolution to a location.",
+      "startS": 52.559,
+      "endS": 56.251,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "A portrait kiosk, a landscape register, each with its own entry.",
+      "startS": 56.888,
+      "endS": 57.513,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "One quirk: the card claims six records but lists two.",
+      "startS": 57.778,
+      "endS": 60.232,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "Trust the tiles for the real count, and treat the rows as samples.",
+      "startS": 60.696,
+      "endS": 64.042,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "System Types is next.",
+      "startS": 64.48,
+      "endS": 65.969,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "It's a short lookup list, one description per row,",
+      "startS": 66.384,
+      "endS": 69.454,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "the kind of behind-the-scenes list other pages point at.",
+      "startS": 69.783,
+      "endS": 72.836,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "Nothing to configure day to day.",
+      "startS": 73.16,
+      "endS": 78.729,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "Today it didn't load either, so note what it is and move on.",
+      "startS": 79.833,
+      "endS": 82.769,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "When you see \"failed to fetch\" on a page like this, it's the data service, not an empty list.",
+      "startS": 83.045,
+      "endS": 85.562,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Lube Buttons.",
+      "startS": 86.06,
+      "endS": 87.236,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Here's button wiring at its plainest.",
+      "startS": 88.048,
+      "endS": 90.219,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Twenty-four buttons across a few lube-bay terminals, one row each.",
+      "startS": 90.638,
+      "endS": 94.946,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "The row names the group it belongs to, the terminal it appears on,",
+      "startS": 95.532,
+      "endS": 97.402,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "the label the operator taps, and the tile's color.",
+      "startS": 97.746,
+      "endS": 102.357,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p31",
+      "text": "Oil Change in teal, Tire Rotation in blue.",
+      "startS": 103.002,
+      "endS": 104.23,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p32",
+      "text": "When someone says a lube button is wrong, this is the row you read.",
+      "startS": 104.617,
+      "endS": 110.535,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Lube Checklists.",
+      "startS": 111.011,
+      "endS": 111.613,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "One column, the service.",
+      "startS": 111.613,
+      "endS": 113.271,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "These are the checklist items a lube bay works through on a job.",
+      "startS": 113.271,
+      "endS": 117.587,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "Like System Types, it didn't load today,",
+      "startS": 117.587,
+      "endS": 119.979,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p37",
+      "text": "so read the column and the purpose, not the values.",
+      "startS": 119.979,
+      "endS": 122.991,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p38",
+      "text": "A menu tour like this is about knowing where each list lives,",
+      "startS": 122.991,
+      "endS": 126.96,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p39",
+      "text": "so that when a ticket points here you go straight to it.",
+      "startS": 126.96,
+      "endS": 130.574,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "Collapse Hardware, and open UI and Display.",
+      "startS": 131.04,
+      "endS": 133.889,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "Eleven lists this time.",
+      "startS": 134.791,
+      "endS": 136.139,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "Most are the paint and the plumbing: button types, images, colors, templates.",
+      "startS": 136.479,
+      "endS": 138.028,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "We'll read the ones a technician gets asked about:",
+      "startS": 138.323,
+      "endS": 141.331,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p44",
+      "text": "the cashier and greeter buttons, the button groups behind them,",
+      "startS": 141.841,
+      "endS": 143.986,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p45",
+      "text": "the macros, and the kiosk screen flows.",
+      "startS": 144.583,
+      "endS": 150.628,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p46",
+      "text": "The rest are the lookups those five draw from.",
+      "startS": 151.258,
+      "endS": 153.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "Button Groups.",
+      "startS": 153.76,
+      "endS": 154.742,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "A group is just the named set a button is filed under,",
+      "startS": 155.445,
+      "endS": 158.455,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p49",
+      "text": "the same group value you saw on the lube buttons a moment ago.",
+      "startS": 158.898,
+      "endS": 162.193,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p50",
+      "text": "Two columns, a description and whether it's active.",
+      "startS": 162.617,
+      "endS": 165.516,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p51",
+      "text": "It didn't load today, so read the shape.",
+      "startS": 165.836,
+      "endS": 167.936,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p52",
+      "text": "Groups are the folder; the buttons are what's inside.",
+      "startS": 168.455,
+      "endS": 171.298,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "Cashier Buttons.",
+      "startS": 171.76,
+      "endS": 172.832,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "These are the tap targets on the register screen.",
+      "startS": 173.196,
+      "endS": 175.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p55",
+      "text": "Each row is a button: its slot number, its label,",
+      "startS": 176.507,
+      "endS": 177.729,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p56",
+      "text": "the kind of action it runs, and its tile color.",
+      "startS": 178.079,
+      "endS": 182.867,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p57",
+      "text": "So \"the void button moved\" or \"the wrong color\" is answered right here, one row per button.",
+      "startS": 183.352,
+      "endS": 188.199,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p58",
+      "text": "The list didn't load today, but the columns tell the story.",
+      "startS": 188.562,
+      "endS": 193.1,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p59",
+      "text": "Greeter Buttons.",
+      "startS": 193.52,
+      "endS": 194.108,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p60",
+      "text": "Same four columns, aimed at the greeter station out at the lane instead of the register.",
+      "startS": 194.108,
+      "endS": 199.355,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p61",
+      "text": "Keeping the two lists apart lets a site put different buttons",
+      "startS": 199.355,
+      "endS": 203.515,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p62",
+      "text": "in front of the greeter than the cashier.",
+      "startS": 203.515,
+      "endS": 206.75,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p63",
+      "text": "If a lane's entry screen looks wrong, you check here, not the cashier page.",
+      "startS": 206.75,
+      "endS": 210.863,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p64",
+      "text": "This one didn't load today either.",
+      "startS": 210.863,
+      "endS": 213.28,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p65",
+      "text": "Macros.",
+      "startS": 213.68,
+      "endS": 213.973,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p66",
+      "text": "A macro is a saved action a button or a scanned barcode can fire.",
+      "startS": 213.973,
+      "endS": 218.47,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p67",
+      "text": "The columns tell you its type, whether a barcode triggers it,",
+      "startS": 218.47,
+      "endS": 222.128,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p68",
+      "text": "and whether it also shows on the handheld.",
+      "startS": 222.128,
+      "endS": 224.47,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p69",
+      "text": "That last one matters when an operator says a shortcut works",
+      "startS": 224.47,
+      "endS": 227.691,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p70",
+      "text": "at the register but not on the handheld device.",
+      "startS": 227.691,
+      "endS": 230.538,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p71",
+      "text": "It didn't load today, so read the columns.",
+      "startS": 230.538,
+      "endS": 232.88,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p72",
+      "text": "Last list: Kiosk Screen Flows.",
+      "startS": 233.28,
+      "endS": 234.121,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p73",
+      "text": "This is where self-serve kiosk screens are built and pushed live.",
+      "startS": 234.465,
+      "endS": 235.932,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p74",
+      "text": "The tiles count three flows, two published and one draft, across eleven screens.",
+      "startS": 236.489,
+      "endS": 240.191,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p75",
+      "text": "Each row is a flow: its locations, how many screens and tappable hotspots, and a status chip.",
+      "startS": 240.893,
+      "endS": 242.42,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p76",
+      "text": "Read the chip first.",
+      "startS": 242.711,
+      "endS": 246.109,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p77",
+      "text": "Published is live on the kiosks;",
+      "startS": 246.697,
+      "endS": 252.756,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p78",
+      "text": "a draft, like Express Tunnel, is built but not out yet.",
+      "startS": 253.3,
+      "endS": 254.641,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p79",
+      "text": "The create button here reads New Flow.",
+      "startS": 255.262,
+      "endS": 263.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p80",
+      "text": "So that's Hardware and UI and Display.",
+      "startS": 264.171,
+      "endS": 266.772,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p81",
+      "text": "Hardware registers the machines and their screens.",
+      "startS": 267.494,
+      "endS": 270.138,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p82",
+      "text": "UI and Display wires the buttons a cashier and greeter tap,",
+      "startS": 270.494,
+      "endS": 275.627,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p83",
+      "text": "the macros behind them, and the kiosk flows a site publishes.",
+      "startS": 275.962,
+      "endS": 278.332,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p84",
+      "text": "Two groups, ten lists, all read-only for you.",
+      "startS": 278.956,
+      "endS": 282.453,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p85",
+      "text": "Learn where each one lives, because a POS ticket usually ends on one of these pages.",
+      "startS": 282.842,
+      "endS": 287.631,
+      "timing": "silence"
+    }
+  ]
+}

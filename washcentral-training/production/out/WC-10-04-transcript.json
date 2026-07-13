@@ -1,0 +1,448 @@
+{
+  "lesson": "WC-10-04",
+  "audioMaster": "training/module10-it-support/WC-10-04-full-narration-v1.0.mp3",
+  "audioDurationS": 182.204,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start on Support Tickets and look at the left rail.",
+      "startS": 0,
+      "endS": 2.669,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The SUPPORT group keeps every support surface in one place,",
+      "startS": 3.197,
+      "endS": 6.61,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "tickets, knowledge base, alerts, training requests.",
+      "startS": 6.946,
+      "endS": 9.236,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Today's stop is System Alerts,",
+      "startS": 9.495,
+      "endS": 10.41,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "the one feed that pulls infrastructure trouble from every site onto a single page.",
+      "startS": 11.078,
+      "endS": 17.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Click System Alerts.",
+      "startS": 18,
+      "endS": 19.239,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "One rule before anything else.",
+      "startS": 20.042,
+      "endS": 22.023,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Reach this page through the sidebar, never by typing its address.",
+      "startS": 22.423,
+      "endS": 25.846,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "The direct U-R-L still answers four oh four, while this link renders everything.",
+      "startS": 26.237,
+      "endS": 30.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "The page settles inside the shell, breadcrumb up top,",
+      "startS": 31.442,
+      "endS": 34.25,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "and four K-P-I tiles waiting across the band.",
+      "startS": 34.616,
+      "endS": 37.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Read the band left to right.",
+      "startS": 37.76,
+      "endS": 39.554,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Three alerts open right now.",
+      "startS": 40.795,
+      "endS": 42.303,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Fourteen logged today.",
+      "startS": 42.659,
+      "endS": 44.028,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "And of the open three, one critical against two warnings.",
+      "startS": 44.398,
+      "endS": 47.743,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "That single critical is the number that decides whether your coffee waits.",
+      "startS": 47.947,
+      "endS": 51.98,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "Everything below this band exists to explain these four tiles.",
+      "startS": 52.423,
+      "endS": 56.163,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Upper left, Alert Volume.",
+      "startS": 56.56,
+      "endS": 58.464,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "A year of history on one line, January through December,",
+      "startS": 58.958,
+      "endS": 62.397,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "one hundred forty eight alerts in all and trending down eight percent.",
+      "startS": 62.675,
+      "endS": 66.591,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "That slope is the long view.",
+      "startS": 66.982,
+      "endS": 68.834,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "It is the sentence a quarterly health review wants to write.",
+      "startS": 69.132,
+      "endS": 72.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Next panel, By Severity.",
+      "startS": 72.56,
+      "endS": 74.456,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Four levels.",
+      "startS": 74.859,
+      "endS": 75.662,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Info carries fifty eight percent of the traffic, warnings twenty eight,",
+      "startS": 76.147,
+      "endS": 79.982,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "errors ten, critical just four.",
+      "startS": 80.25,
+      "endS": 82.684,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Most of what this feed says is routine noise.",
+      "startS": 83.27,
+      "endS": 85.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Which is exactly why a critical row deserves your full attention when one shows up.",
+      "startS": 86.203,
+      "endS": 90.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Then System Health.",
+      "startS": 90.96,
+      "endS": 92.227,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Eighty six percent healthy, ten warning, four critical.",
+      "startS": 92.969,
+      "endS": 96.463,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Hold on that four.",
+      "startS": 97.096,
+      "endS": 98.067,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "It matches the critical slice next door, one fact drawn two ways.",
+      "startS": 98.48,
+      "endS": 102.439,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "When two panels agree like that, you can trust the read.",
+      "startS": 102.95,
+      "endS": 105.734,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Scroll to the Alert List.",
+      "startS": 106.16,
+      "endS": 107.712,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "Six columns carry each alert's story:",
+      "startS": 108.499,
+      "endS": 110.846,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "when it fired, what kind, how severe, which site, what it said, and whether it is still open.",
+      "startS": 111.366,
+      "endS": 113.209,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Two buttons above the table stay untouched.",
+      "startS": 113.506,
+      "endS": 114.274,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "New Record and Export act on the shared tenant, and a support read never creates an alert.",
+      "startS": 114.58,
+      "endS": 115.302,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "The pager below counts four rows.",
+      "startS": 115.693,
+      "endS": 130.621,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Now the rows, top to bottom.",
+      "startS": 131.04,
+      "endS": 134,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "The critical one is a tunnel alert at M-L-A-S,",
+      "startS": 134,
+      "endS": 137.356,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "conveyor belt tension past its threshold, still active.",
+      "startS": 137.356,
+      "endS": 141.199,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "Behind it, two warnings:",
+      "startS": 141.199,
+      "endS": 142.69,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "receipt paper running low on a P-O-S at S-S-N-B,",
+      "startS": 142.69,
+      "endS": 146.046,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "and a chemical tank under twenty percent at Piscataway.",
+      "startS": 146.046,
+      "endS": 149.402,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "The last row already resolved, a network failover note.",
+      "startS": 149.402,
+      "endS": 153.418,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "Three rows still active.",
+      "startS": 153.418,
+      "endS": 155.387,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p48",
+      "text": "That is the Active Alerts tile, itemized.",
+      "startS": 155.387,
+      "endS": 158.683,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "That is the whole read.",
+      "startS": 159.12,
+      "endS": 160.639,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "The band for the instant answer.",
+      "startS": 161.368,
+      "endS": 163.128,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "The panels for trend and mix.",
+      "startS": 163.586,
+      "endS": 165.452,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "The list for specifics, which type, at which site, still burning or already out.",
+      "startS": 165.95,
+      "endS": 167.445,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p53",
+      "text": "When a ticket asks whether an outage is one site or the whole platform,",
+      "startS": 167.93,
+      "endS": 171.464,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p54",
+      "text": "this page and the Command Center's priority board answer it",
+      "startS": 172.534,
+      "endS": 176.211,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p55",
+      "text": "before the caller finishes explaining.",
+      "startS": 176.512,
+      "endS": 181.76,
+      "timing": "silence"
+    }
+  ]
+}

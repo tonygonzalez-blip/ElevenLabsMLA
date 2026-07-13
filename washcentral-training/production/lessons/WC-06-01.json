@@ -1,0 +1,1647 @@
+{
+  "lesson": "WC-06-01",
+  "title": "Analytics: Executive Dashboard",
+  "audioMaster": "training/module06-analytics/WC-06-01-full-narration-v1.0.mp3",
+  "audioDurationS": 204.931,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/dashboard-executive.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "sideExec": {
+      "js": "[...document.querySelectorAll('aside.sidebar a')].find(a=>/dashboard-executive\\.html$/.test(a.getAttribute('href')||''))"
+    },
+    "sectionEyebrow": {
+      "js": "[...document.querySelectorAll('.cp-kicker')].find(e=>/Network · April 2026 MTD/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "sectionTitle": {
+      "js": "document.querySelector('.cp-section-title')",
+      "textRect": true
+    },
+    "periodRow": {
+      "selector": ".cp-range-seg"
+    },
+    "segToday": {
+      "js": "[...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Today')"
+    },
+    "segWeek": {
+      "js": "[...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Week')"
+    },
+    "segMonth": {
+      "js": "[...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Month')"
+    },
+    "segQuarter": {
+      "js": "[...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Quarter')"
+    },
+    "segYTD": {
+      "js": "[...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='YTD')"
+    },
+    "seg1Y": {
+      "js": "[...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='1Y')"
+    },
+    "kpiRevenue": {
+      "js": "[...document.querySelectorAll('.cp-kpi')].find(e=>/^Revenue$/i.test((e.querySelector('.cp-kpi-lbl')?.textContent||'').trim()))"
+    },
+    "kpiCars": {
+      "js": "[...document.querySelectorAll('.cp-kpi')].find(e=>/Cars Washed/i.test(e.querySelector('.cp-kpi-lbl')?.textContent||''))"
+    },
+    "kpiMembers": {
+      "js": "[...document.querySelectorAll('.cp-kpi')].find(e=>/Active Members/i.test(e.querySelector('.cp-kpi-lbl')?.textContent||''))"
+    },
+    "kpiConv": {
+      "js": "[...document.querySelectorAll('.cp-kpi')].find(e=>/Conversion Rate/i.test(e.querySelector('.cp-kpi-lbl')?.textContent||''))"
+    },
+    "kpiFreq": {
+      "js": "[...document.querySelectorAll('.cp-kpi')].find(e=>/Avg Visit Frequency/i.test(e.querySelector('.cp-kpi-lbl')?.textContent||''))"
+    },
+    "kpiLabor": {
+      "js": "[...document.querySelectorAll('.cp-kpi')].find(e=>/Labor/i.test(e.querySelector('.cp-kpi-lbl')?.textContent||''))"
+    },
+    "laborVal": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.cp-kpi')].find(e=>/Labor/i.test(e.querySelector('.cp-kpi-lbl')?.textContent||''));return c?c.querySelector('.cp-kpi-val'):null;})()",
+      "textRect": true
+    },
+    "panelRevTrend": {
+      "js": "[...document.querySelectorAll('.cp-chart-title')].find(e=>/Revenue · last 12 months/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "panelLocHealth": {
+      "js": "[...document.querySelectorAll('.cp-chart-title')].find(e=>/Location health/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "panelMembers": {
+      "js": "[...document.querySelectorAll('.cp-chart-title')].find(e=>/Members vs churn/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "panelMix": {
+      "js": "[...document.querySelectorAll('.cp-chart-title')].find(e=>/Revenue mix/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "rowNaples": {
+      "js": "[...document.querySelectorAll('.cp-goal-name')].find(e=>/Naples Coast/i.test(e.textContent||''))",
+      "textRect": true
+    },
+    "chartRev": {
+      "selector": "#exec-rev"
+    },
+    "chartMembers": {
+      "selector": "#exec-members"
+    },
+    "chartMix": {
+      "selector": "#exec-mix"
+    },
+    "searchBtn": {
+      "selector": ".wc-cmd-trigger-btn"
+    },
+    "askShyne": {
+      "selector": ".a-btn-ai"
+    },
+    "locSelector": {
+      "selector": ".loc-selector-btn"
+    },
+    "avatar": {
+      "selector": ".user-menu-btn"
+    }
+  },
+  "predicates": {
+    "onExec": "location.pathname.endsWith('/dashboard-executive.html')",
+    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
+    "startReady": "document.readyState==='complete'&&location.pathname.endsWith('/dashboard-executive.html')&&document.querySelectorAll('.cp-kpi').length>=6&&document.querySelectorAll('button.cp-range-seg-opt').length===6&&!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Month'&&b.classList.contains('selected'))&&document.querySelector('aside.sidebar').getBoundingClientRect().width>120&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "monthSel": "!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Month'&&b.classList.contains('selected'))",
+    "todaySel": "!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Today'&&b.classList.contains('selected'))",
+    "weekSel": "!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Week'&&b.classList.contains('selected'))",
+    "quarterSel": "!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='Quarter'&&b.classList.contains('selected'))",
+    "ytdSel": "!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='YTD'&&b.classList.contains('selected'))",
+    "y1Sel": "!![...document.querySelectorAll('button.cp-range-seg-opt')].find(b=>(b.textContent||'').trim()==='1Y'&&b.classList.contains('selected'))",
+    "chartsRendered": "!!document.querySelector('#exec-rev')&&document.querySelector('#exec-rev').getBoundingClientRect().height>50"
+  },
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the persisted sidebar preference expanded (aside.sidebar width 220 when expanded; probe-observed expanded July 11). Skipped when already expanded. The ANALYTICS group with Executive Dashboard highlighted must be on screen the whole lesson."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onExec",
+      "note": "start page identity before capture (lesson opens on the sign-in landing page, the Executive Dashboard)"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "startReady",
+      "note": "loaded: six KPI cards, six period toggles with Month selected, sidebar expanded, scrolled to top, no skeletons"
+    },
+    {
+      "op": "watch",
+      "key": "onExecHeld",
+      "from": 1,
+      "to": 204,
+      "predicate": "onExec",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "read-only guardrail: the page never navigates the entire lesson (period toggles re-scope in place; the REVENUE-card drill is inert live — see RESIDUAL R1)"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 204,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.45,
+      "from": [
+        2,
+        1010
+      ],
+      "to": {
+        "target": "sideExec",
+        "offset": [
+          232,
+          12
+        ],
+        "outside": true
+      },
+      "note": "enter from the lower-left toward the highlighted Executive Dashboard rail item (step 1 sweep origin)"
+    },
+    {
+      "op": "log-rect",
+      "at": 1,
+      "key": "bcCrumb",
+      "target": "crumbStrong",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 1.3,
+      "key": "sideExecR",
+      "target": "sideExec"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.6,
+      "key": "askShyneR",
+      "target": "askShyne"
+    },
+    {
+      "op": "move",
+      "at": 2.8,
+      "to": {
+        "target": "sideExec",
+        "offset": [
+          232,
+          12
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): rest beside the highlighted Executive Dashboard rail item"
+    },
+    {
+      "op": "move",
+      "at": 6.9,
+      "to": {
+        "target": "crumbStrong",
+        "offset": [
+          40,
+          12
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02-p03): sweep across the title/breadcrumb 'Executive Dashboard'"
+    },
+    {
+      "op": "move",
+      "at": 12.5,
+      "to": {
+        "target": "askShyne",
+        "offset": [
+          -64,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04-p05): drift to the top-right header tools; rest BESIDE Ask Shyne (a send-type AI control) — never on it (red guardrail)"
+    },
+    {
+      "op": "move",
+      "at": 15.8,
+      "to": {
+        "point": [
+          1900,
+          300
+        ]
+      },
+      "note": "park in the right margin for p06"
+    },
+    {
+      "op": "move",
+      "at": 18.4,
+      "to": {
+        "target": "sectionEyebrow",
+        "offset": [
+          30,
+          -8
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p07): approach the section band 'Read the band up top'"
+    },
+    {
+      "op": "log-rect",
+      "at": 18.8,
+      "key": "eyebrowR",
+      "target": "sectionEyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.1,
+      "key": "sectionTitleR",
+      "target": "sectionTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.4,
+      "key": "locSelR",
+      "target": "locSelector"
+    },
+    {
+      "op": "move",
+      "at": 20.6,
+      "to": {
+        "target": "sectionEyebrow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 (p08): 'Network, April, month to date' — the eyebrow"
+    },
+    {
+      "op": "move",
+      "at": 22.4,
+      "to": {
+        "target": "sectionTitle",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 (p09-p10): 'The state of the business' heading — whole-network rollup"
+    },
+    {
+      "op": "move",
+      "at": 27.76,
+      "to": {
+        "target": "locSelector",
+        "offset": [
+          0,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p11): point below the All Locations selector — 'what narrows it when you need one site'; never opened"
+    },
+    {
+      "op": "move",
+      "at": 33.2,
+      "to": {
+        "point": [
+          1180,
+          260
+        ]
+      },
+      "note": "ease off for the p11 tail"
+    },
+    {
+      "op": "move",
+      "at": 36.7,
+      "to": {
+        "target": "periodRow",
+        "offset": [
+          -44,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p12): approach the period row 'Now find the period row on the right'"
+    },
+    {
+      "op": "log-rect",
+      "at": 37,
+      "key": "periodRowR",
+      "target": "periodRow",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 37.3,
+      "key": "segMonthR",
+      "target": "segMonth"
+    },
+    {
+      "op": "move",
+      "at": 39.3,
+      "to": {
+        "target": "segToday",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p13): sweep along the six toggles 'Today, Week, Month, Quarter, Y-T-D, one year'"
+    },
+    {
+      "op": "move",
+      "at": 40.13,
+      "to": {
+        "target": "segMonth",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p14): rest above Month 'It is set to Month'"
+    },
+    {
+      "op": "move",
+      "at": 42,
+      "to": {
+        "point": [
+          1730,
+          90
+        ]
+      },
+      "note": "hold above the row for p15-p16"
+    },
+    {
+      "op": "move",
+      "at": 48.5,
+      "to": {
+        "point": [
+          1730,
+          200
+        ]
+      },
+      "note": "ease toward the toggles ahead of the step-4 clicks (approach starts at the cue, not before)"
+    },
+    {
+      "op": "click",
+      "target": "segToday",
+      "pressAt": 54.9,
+      "hoverMs": 360,
+      "postcondition": "todaySel",
+      "timeoutMs": 4000,
+      "note": "step 4 (p17 cue 53.12, break 1.4s): genuine view-only toggle — press lands after the cue; Today becomes selected"
+    },
+    {
+      "op": "click",
+      "target": "segWeek",
+      "pressAt": 56.6,
+      "hoverMs": 340,
+      "postcondition": "weekSel",
+      "timeoutMs": 4000,
+      "note": "step 4 (p18 'then the week'): genuine toggle"
+    },
+    {
+      "op": "click",
+      "target": "segQuarter",
+      "pressAt": 58.3,
+      "hoverMs": 340,
+      "postcondition": "quarterSel",
+      "timeoutMs": 4000,
+      "note": "step 4 (p18 'then the quarter')"
+    },
+    {
+      "op": "click",
+      "target": "segYTD",
+      "pressAt": 60,
+      "hoverMs": 340,
+      "postcondition": "ytdSel",
+      "timeoutMs": 4000,
+      "note": "step 4: YTD in turn (per shot list)"
+    },
+    {
+      "op": "click",
+      "target": "seg1Y",
+      "pressAt": 61.4,
+      "hoverMs": 340,
+      "postcondition": "y1Sel",
+      "timeoutMs": 4000,
+      "note": "step 4 (p18 'then the year')"
+    },
+    {
+      "op": "click",
+      "target": "segMonth",
+      "pressAt": 63.4,
+      "hoverMs": 360,
+      "postcondition": "monthSel",
+      "timeoutMs": 4000,
+      "note": "step 4 (p20 'landing back on Month'): restore the default window"
+    },
+    {
+      "op": "move",
+      "at": 65.2,
+      "to": {
+        "point": [
+          1200,
+          300
+        ]
+      },
+      "note": "ease off; Month restored"
+    },
+    {
+      "op": "move",
+      "at": 67.4,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          -44,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p21): approach the first three KPI cards"
+    },
+    {
+      "op": "log-rects",
+      "at": 67.8,
+      "key": "scaleCards",
+      "targets": [
+        "kpiRevenue",
+        "kpiCars",
+        "kpiMembers"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 69.75,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p22): 'Revenue,' — spoken order"
+    },
+    {
+      "op": "move",
+      "at": 70.5,
+      "to": {
+        "target": "kpiCars",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'cars washed,'"
+    },
+    {
+      "op": "move",
+      "at": 71.3,
+      "to": {
+        "target": "kpiMembers",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'active members'"
+    },
+    {
+      "op": "move",
+      "at": 73.2,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          0,
+          78
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p24-p26): drop to the sparkline/trend row 'a small trend line', 'green arrows'"
+    },
+    {
+      "op": "move",
+      "at": 79.5,
+      "to": {
+        "point": [
+          820,
+          400
+        ]
+      },
+      "note": "ease off for the p26 tail"
+    },
+    {
+      "op": "move",
+      "at": 84.8,
+      "to": {
+        "target": "kpiConv",
+        "offset": [
+          -44,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p27): approach the next three cards"
+    },
+    {
+      "op": "log-rects",
+      "at": 85.2,
+      "key": "healthCards",
+      "targets": [
+        "kpiConv",
+        "kpiFreq",
+        "kpiLabor"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 85.6,
+      "key": "laborValR",
+      "target": "laborVal"
+    },
+    {
+      "op": "move",
+      "at": 86.43,
+      "to": {
+        "target": "kpiConv",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p28): 'Conversion rate,' — spoken order"
+    },
+    {
+      "op": "move",
+      "at": 87.4,
+      "to": {
+        "target": "kpiFreq",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'visit frequency,'"
+    },
+    {
+      "op": "move",
+      "at": 88.35,
+      "to": {
+        "target": "kpiLabor",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p29): 'and labor percent' — 'Labor is the one to watch'"
+    },
+    {
+      "op": "move",
+      "at": 90.53,
+      "to": {
+        "target": "laborVal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p30-p31): the amber LABOR % value, over the 15% target"
+    },
+    {
+      "op": "move",
+      "at": 97.4,
+      "to": {
+        "point": [
+          1500,
+          420
+        ]
+      },
+      "note": "ease off for the p32 tail 'which site is pulling it up'"
+    },
+    {
+      "op": "move",
+      "at": 102.7,
+      "to": {
+        "target": "panelRevTrend",
+        "offset": [
+          -30,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p33): 'Drop to the big panel'"
+    },
+    {
+      "op": "log-rect",
+      "at": 103,
+      "key": "panelRevR",
+      "target": "panelRevTrend",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 103.4,
+      "key": "chartRevR",
+      "target": "chartRev",
+      "requireStableMs": 320
+    },
+    {
+      "op": "move",
+      "at": 105.04,
+      "to": {
+        "target": "panelRevTrend",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p34): the panel title + legend (Membership, Pay-per-wash, Retail)"
+    },
+    {
+      "op": "move",
+      "at": 108.64,
+      "to": {
+        "target": "chartRev",
+        "offset": [
+          0,
+          118
+        ]
+      },
+      "note": "step 7 (p35): the thick membership band at the base of the stacked area"
+    },
+    {
+      "op": "move",
+      "at": 113.5,
+      "to": {
+        "point": [
+          700,
+          620
+        ]
+      },
+      "note": "ease off for the p36 tail"
+    },
+    {
+      "op": "move",
+      "at": 118.9,
+      "to": {
+        "target": "panelLocHealth",
+        "offset": [
+          -30,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p37): 'On the right, every site in one list'"
+    },
+    {
+      "op": "log-rect",
+      "at": 119.1,
+      "key": "panelLocR",
+      "target": "panelLocHealth",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 119.4,
+      "key": "naplesR",
+      "target": "rowNaples"
+    },
+    {
+      "op": "move",
+      "at": 119.76,
+      "to": {
+        "target": "panelLocHealth",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p38): 'Revenue, cars, labor, and how close each runs to its conversion target'"
+    },
+    {
+      "op": "move",
+      "at": 121.75,
+      "to": {
+        "target": "rowNaples",
+        "offset": [
+          -260,
+          -120
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p39): sweep down the rows 'green toward red as a site slips'"
+    },
+    {
+      "op": "move",
+      "at": 127.23,
+      "to": {
+        "target": "rowNaples",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 (p40): the weakest site, Naples Coast"
+    },
+    {
+      "op": "move",
+      "at": 133.5,
+      "to": {
+        "point": [
+          1120,
+          620
+        ]
+      },
+      "note": "ease off for the p41 tail"
+    },
+    {
+      "op": "move",
+      "at": 138.9,
+      "to": {
+        "target": "panelMembers",
+        "offset": [
+          -30,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p42): 'Keep going to the members panel'"
+    },
+    {
+      "op": "log-rect",
+      "at": 139.1,
+      "key": "panelMembersR",
+      "target": "panelMembers",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 139.4,
+      "key": "chartMembersR",
+      "target": "chartMembers",
+      "requireStableMs": 320
+    },
+    {
+      "op": "move",
+      "at": 140.43,
+      "to": {
+        "target": "panelMembers",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p43): the title/subtitle — a line for members"
+    },
+    {
+      "op": "move",
+      "at": 143.2,
+      "to": {
+        "target": "chartMembers",
+        "offset": [
+          0,
+          34
+        ]
+      },
+      "note": "step 9 (p44): the paired bars (gross adds / churn), upper portion within the fold — see RESIDUAL R3"
+    },
+    {
+      "op": "move",
+      "at": 148.5,
+      "to": {
+        "point": [
+          760,
+          900
+        ]
+      },
+      "note": "ease off for the p45 tail"
+    },
+    {
+      "op": "move",
+      "at": 152.5,
+      "to": {
+        "target": "panelMix",
+        "offset": [
+          -30,
+          26
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p46): 'Beside it, the revenue mix'"
+    },
+    {
+      "op": "log-rect",
+      "at": 152.7,
+      "key": "panelMixR",
+      "target": "panelMix",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 153,
+      "key": "chartMixR",
+      "target": "chartMix",
+      "requireStableMs": 320
+    },
+    {
+      "op": "move",
+      "at": 154.62,
+      "to": {
+        "target": "panelMix",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p47): the donut title — this month's split"
+    },
+    {
+      "op": "move",
+      "at": 158.18,
+      "to": {
+        "target": "chartMix",
+        "offset": [
+          0,
+          34
+        ]
+      },
+      "note": "step 10 (p48): the donut, upper portion within the fold"
+    },
+    {
+      "op": "move",
+      "at": 161.8,
+      "to": {
+        "point": [
+          1560,
+          900
+        ]
+      },
+      "note": "ease off for the p49 tail"
+    },
+    {
+      "op": "move",
+      "at": 163.9,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          -44,
+          20
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p50): approach the REVENUE card. RESIDUAL R1 — the card is inert live (no drill), so it is POINTED at, not clicked"
+    },
+    {
+      "op": "log-rect",
+      "at": 164.2,
+      "key": "revCardR",
+      "target": "kpiRevenue"
+    },
+    {
+      "op": "move",
+      "at": 166.1,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p51-p52): hold on the REVENUE card while the narration describes the detail view it is meant to open"
+    },
+    {
+      "op": "move",
+      "at": 171.68,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          80,
+          70
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p53-p54): 'any card is a door to the next level of detail' — cards as launch points"
+    },
+    {
+      "op": "move",
+      "at": 176.5,
+      "to": {
+        "point": [
+          720,
+          420
+        ]
+      },
+      "note": "ease off for the s11 tail"
+    },
+    {
+      "op": "move",
+      "at": 180.1,
+      "to": {
+        "target": "segMonth",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p55): the narration says 'Click Back… still on Month' — confirm the period still reads Month (the card drill/Back are not reachable live, RESIDUAL R1)"
+    },
+    {
+      "op": "log-rect",
+      "at": 180.4,
+      "key": "segMonthR2",
+      "target": "segMonth"
+    },
+    {
+      "op": "assert",
+      "at": 181,
+      "predicate": "monthSel",
+      "note": "still on Month, exactly as it started (view never changed)"
+    },
+    {
+      "op": "move",
+      "at": 183.15,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          -200,
+          100
+        ],
+        "outside": true
+      },
+      "note": "step 12 (p56): sweep back across the full scorecard 'exactly as you left it'"
+    },
+    {
+      "op": "move",
+      "at": 186.2,
+      "to": {
+        "point": [
+          960,
+          620
+        ]
+      },
+      "note": "settle wide before the recap"
+    },
+    {
+      "op": "move",
+      "at": 187.9,
+      "to": {
+        "target": "periodRow",
+        "offset": [
+          -44,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p57): 'That is the whole dashboard'"
+    },
+    {
+      "op": "log-rect",
+      "at": 188.2,
+      "key": "periodRowR2",
+      "target": "periodRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 188.6,
+      "key": "recapPanels",
+      "targets": [
+        "panelRevTrend",
+        "panelLocHealth",
+        "panelMembers",
+        "panelMix"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 189.32,
+      "to": {
+        "target": "periodRow",
+        "offset": [
+          -44,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 13 (p58): 'Pick a period, read the six cards for scale and health'"
+    },
+    {
+      "op": "move",
+      "at": 191.2,
+      "to": {
+        "target": "kpiRevenue",
+        "offset": [
+          0,
+          80
+        ],
+        "outside": true
+      },
+      "note": "sweep across the KPI cards"
+    },
+    {
+      "op": "move",
+      "at": 193.75,
+      "to": {
+        "target": "panelRevTrend",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 13 (p59): 'the trend' — panels in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 195.4,
+      "to": {
+        "target": "panelLocHealth",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'the sites'"
+    },
+    {
+      "op": "move",
+      "at": 197,
+      "to": {
+        "target": "panelMembers",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'your members'"
+    },
+    {
+      "op": "move",
+      "at": 198.6,
+      "to": {
+        "target": "panelMix",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'and the mix'"
+    },
+    {
+      "op": "move",
+      "at": 200.91,
+      "to": {
+        "point": [
+          1540,
+          940
+        ]
+      },
+      "note": "final park, clear of content and captions, for p61"
+    },
+    {
+      "op": "assert",
+      "at": 203.6,
+      "predicate": "onExec"
+    },
+    {
+      "op": "assert",
+      "at": 204.1,
+      "predicate": "monthSel",
+      "note": "close: unchanged, still on Month"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "bcCrumb",
+        "place": "below-left",
+        "from": 2.8,
+        "to": 13
+      },
+      {
+        "n": 2,
+        "anchor": "sectionTitleR",
+        "place": "below-left",
+        "from": 19.8,
+        "to": 30
+      },
+      {
+        "n": 3,
+        "anchor": "periodRowR",
+        "place": "below-left",
+        "from": 37.8,
+        "to": 52.2
+      },
+      {
+        "n": 4,
+        "anchor": "periodRowR",
+        "place": "below-left",
+        "from": 53.6,
+        "to": 66.5
+      },
+      {
+        "n": 5,
+        "anchor": "scaleCards.kpiRevenue",
+        "place": "below-left",
+        "from": 68.4,
+        "to": 78.6
+      },
+      {
+        "n": 6,
+        "anchor": "healthCards.kpiLabor",
+        "place": "below-left",
+        "from": 85.6,
+        "to": 97.2
+      },
+      {
+        "n": 7,
+        "anchor": "panelRevR",
+        "place": "below-left",
+        "from": 103.6,
+        "to": 113.2
+      },
+      {
+        "n": 8,
+        "anchor": "panelLocR",
+        "place": "below-left",
+        "from": 119.6,
+        "to": 131.6
+      },
+      {
+        "n": 9,
+        "anchor": "panelMembersR",
+        "place": "below-left",
+        "from": 139.6,
+        "to": 148.2
+      },
+      {
+        "n": 10,
+        "anchor": "panelMixR",
+        "place": "below-left",
+        "from": 153.2,
+        "to": 161.4
+      },
+      {
+        "n": 11,
+        "anchor": "revCardR",
+        "place": "below-left",
+        "from": 164.6,
+        "to": 172.2
+      },
+      {
+        "n": 12,
+        "anchor": "segMonthR2",
+        "place": "below-left",
+        "from": 180.8,
+        "to": 187.2
+      },
+      {
+        "n": 13,
+        "anchor": "periodRowR2",
+        "place": "below-left",
+        "from": 188.6,
+        "to": 202.6
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideExecR",
+        "from": 2.8,
+        "to": 6.9,
+        "note": "step 1 (p01-p02): the highlighted Executive Dashboard rail item"
+      },
+      {
+        "anchor": "bcCrumb",
+        "from": 6.95,
+        "to": 12.2,
+        "note": "step 1 (p02-p03): the title/breadcrumb"
+      },
+      {
+        "anchor": "askShyneR",
+        "from": 12.5,
+        "to": 17.6,
+        "color": "#dc2626",
+        "note": "step 1 guardrail: Ask Shyne is a send-type AI control — pointed at from beside, never clicked"
+      },
+      {
+        "anchor": "eyebrowR",
+        "from": 20.4,
+        "to": 22.2,
+        "note": "step 2 (p08): NETWORK · APRIL 2026 MTD"
+      },
+      {
+        "anchor": "sectionTitleR",
+        "from": 22.3,
+        "to": 26.8,
+        "note": "step 2 (p07/p09): 'The state of the business' — whole-network rollup"
+      },
+      {
+        "anchor": "locSelR",
+        "from": 27.9,
+        "to": 33.4,
+        "note": "step 2 (p11): the All Locations selector narrows the rollup"
+      },
+      {
+        "anchor": "periodRowR",
+        "from": 39.3,
+        "to": 40.1,
+        "note": "step 3 (p13): the six period toggles"
+      },
+      {
+        "anchor": "segMonthR",
+        "from": 40.13,
+        "to": 41.7,
+        "note": "step 3 (p14): 'It is set to Month'"
+      },
+      {
+        "anchor": "scaleCards.kpiRevenue",
+        "from": 69.75,
+        "to": 70.5,
+        "note": "step 5 (p22) spoken order: Revenue"
+      },
+      {
+        "anchor": "scaleCards.kpiCars",
+        "from": 70.5,
+        "to": 71.3,
+        "note": "cars washed"
+      },
+      {
+        "anchor": "scaleCards.kpiMembers",
+        "from": 71.3,
+        "to": 72.8,
+        "note": "active members"
+      },
+      {
+        "anchor": "healthCards.kpiConv",
+        "from": 86.43,
+        "to": 87.4,
+        "note": "step 6 (p28) spoken order: conversion rate"
+      },
+      {
+        "anchor": "healthCards.kpiFreq",
+        "from": 87.4,
+        "to": 88.35,
+        "note": "visit frequency"
+      },
+      {
+        "anchor": "healthCards.kpiLabor",
+        "from": 88.35,
+        "to": 90.5,
+        "note": "labor percent — the one to watch"
+      },
+      {
+        "anchor": "laborValR",
+        "from": 90.53,
+        "to": 97.2,
+        "note": "step 6 (p30-p31): the amber LABOR % value, over the 15% target (data flag, not a guardrail)"
+      },
+      {
+        "anchor": "panelRevR",
+        "from": 105.04,
+        "to": 108.4,
+        "note": "step 7 (p34): Revenue · last 12 months, the three-part legend"
+      },
+      {
+        "anchor": "chartRevR",
+        "from": 108.64,
+        "to": 112.4,
+        "note": "step 7 (p35): the membership band at the base"
+      },
+      {
+        "anchor": "panelLocR",
+        "from": 119.76,
+        "to": 121.6,
+        "note": "step 8 (p38): Location health columns"
+      },
+      {
+        "anchor": "naplesR",
+        "from": 127.23,
+        "to": 131.4,
+        "note": "step 8 (p40): Naples Coast, the weakest site"
+      },
+      {
+        "anchor": "panelMembersR",
+        "from": 140.43,
+        "to": 143.1,
+        "note": "step 9 (p43): Members vs churn"
+      },
+      {
+        "anchor": "chartMembersR",
+        "from": 143.2,
+        "to": 147.8,
+        "note": "step 9 (p44): active members line over gross-adds/churn bars"
+      },
+      {
+        "anchor": "panelMixR",
+        "from": 154.62,
+        "to": 157.6,
+        "note": "step 10 (p47): Revenue mix donut"
+      },
+      {
+        "anchor": "chartMixR",
+        "from": 158.18,
+        "to": 161.6,
+        "note": "step 10 (p48): the month's revenue composition"
+      },
+      {
+        "anchor": "revCardR",
+        "from": 166.1,
+        "to": 171.4,
+        "note": "step 11 (p51-p52): the REVENUE card as a launch point (drill inert live — RESIDUAL R1)"
+      },
+      {
+        "anchor": "segMonthR2",
+        "from": 180.8,
+        "to": 186.8,
+        "note": "step 12 (p56): still on Month, unchanged"
+      },
+      {
+        "anchor": "periodRowR2",
+        "from": 189.32,
+        "to": 193.6,
+        "note": "step 13 (p58): pick a period"
+      },
+      {
+        "anchor": "recapPanels.panelRevTrend",
+        "from": 193.75,
+        "to": 195.3,
+        "note": "step 13 (p59) spoken order: the trend"
+      },
+      {
+        "anchor": "recapPanels.panelLocHealth",
+        "from": 195.35,
+        "to": 196.9,
+        "note": "the sites"
+      },
+      {
+        "anchor": "recapPanels.panelMembers",
+        "from": 196.95,
+        "to": 198.5,
+        "note": "your members"
+      },
+      {
+        "anchor": "recapPanels.panelMix",
+        "from": 198.55,
+        "to": 200.6,
+        "note": "and the mix"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 18.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 19.4,
+        "z": 1.15,
+        "cx": 835,
+        "cy": 470,
+        "ease": true,
+        "note": "step 2: section band + KPI band in one calm framing"
+      },
+      {
+        "t": 35.6,
+        "z": 1.15,
+        "cx": 835,
+        "cy": 470
+      },
+      {
+        "t": 36.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 37.7,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "step 3: 150% on the period row (shot list), Month highlighted"
+      },
+      {
+        "t": 52.4,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 53.5,
+        "z": 1.12,
+        "cx": 1055,
+        "cy": 490,
+        "ease": true,
+        "note": "step 4: toggles + KPI band together while the period flips"
+      },
+      {
+        "t": 66.9,
+        "z": 1.12,
+        "cx": 1055,
+        "cy": 490
+      },
+      {
+        "t": 67.9,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 420,
+        "ease": true,
+        "note": "step 5: the three scale cards, brief closer read of the sparklines/arrows"
+      },
+      {
+        "t": 83.8,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 420
+      },
+      {
+        "t": 84.9,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "step 6: 150% on the last three cards, the amber LABOR %"
+      },
+      {
+        "t": 101.8,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 102.9,
+        "z": 1.2,
+        "cx": 800,
+        "cy": 560,
+        "ease": true,
+        "note": "step 7: Revenue · last 12 months panel"
+      },
+      {
+        "t": 117.8,
+        "z": 1.2,
+        "cx": 800,
+        "cy": 560
+      },
+      {
+        "t": 118.9,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 560,
+        "ease": true,
+        "note": "step 8: Location health rows on the right"
+      },
+      {
+        "t": 137.8,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 560
+      },
+      {
+        "t": 138.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "steps 9-10: wide so the below-band panel titles (y~827) stay in frame; no scroll available (RESIDUAL R3)"
+      },
+      {
+        "t": 163.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 164,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 420,
+        "ease": true,
+        "note": "step 11: frame the REVENUE card (pointed at, not clicked)"
+      },
+      {
+        "t": 179.9,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 420
+      },
+      {
+        "t": 181,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 12: pull wide to the full scorecard, still on Month"
+      },
+      {
+        "t": 187.7,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 204.931,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Executive Dashboard — Complete",
+      "from": 203.1,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 202.8
+  },
+  "output": "WC-06-01-executive-dashboard-v1.1",
+  "orderedMentions": [
+    "Executive Dashboard",
+    "Network · April 2026 MTD",
+    "The state of the business",
+    "All Locations",
+    "Today",
+    "Week",
+    "Month",
+    "Quarter",
+    "YTD",
+    "1Y",
+    "Revenue",
+    "Cars Washed",
+    "Active Members",
+    "Conversion Rate",
+    "Avg Visit Frequency",
+    "Labor %",
+    "Revenue · last 12 months",
+    "Location health",
+    "Naples Coast",
+    "Members vs churn",
+    "Revenue mix",
+    "Back to Executive Dashboard"
+  ],
+  "neverClick": [
+    "export",
+    "download",
+    "print",
+    "email",
+    "send",
+    "send report",
+    "save",
+    "save view",
+    "schedule",
+    "share",
+    "open reports",
+    "jump to workflow",
+    "ask shyne",
+    "all locations (scope selector — referenced, not opened this lesson)",
+    "mg / user menu avatar",
+    "search ⌘k",
+    "revenue card drill (inert live — RESIDUAL R1)",
+    "logout",
+    "sign out"
+  ]
+}

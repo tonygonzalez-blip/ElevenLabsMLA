@@ -1,0 +1,238 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.006
+Open Digital, and stay on Mobile App Users.
+
+p02
+00:00:04.065 --> 00:00:08.289
+The sidebar splits the customer's world in two: the portal, and the mobile app.
+
+p03
+00:00:08.813 --> 00:00:10.729
+Under Mobile you get five pages.
+
+p04
+00:00:11.197 --> 00:00:14.020
+This lesson visits all of them, but you only read.
+
+p05
+00:00:14.267 --> 00:00:15.520
+Nothing here gets saved.
+
+p06
+00:00:16.011 --> 00:00:17.645
+Four numbers run across the top.
+
+p07
+00:00:18.384 --> 00:00:19.330
+Total users, active this month, and the split between iOS and Android.
+
+p08
+00:00:19.637 --> 00:00:20.623
+That last pair earns its keep on a support call.
+
+p09
+00:00:20.951 --> 00:00:31.118
+It tells you, before you ask, which phone your customer is probably holding.
+
+p10
+00:00:31.663 --> 00:00:33.004
+Three cards fill in the shape.
+
+p11
+00:00:33.611 --> 00:00:35.388
+One tracks growth over the year.
+
+p12
+00:00:35.772 --> 00:00:37.926
+One breaks the base down by device.
+
+p13
+00:00:38.323 --> 00:00:42.202
+The last sorts users into active, monthly, and gone quiet.
+
+p14
+00:00:42.593 --> 00:00:45.711
+A rising inactive slice is worth a second look.
+
+p15
+00:00:46.160 --> 00:00:47.273
+Now the list itself.
+
+p16
+00:00:48.009 --> 00:00:49.490
+Seven columns per user: name, email, app version, platform, last active, notifications, and status.
+
+p17
+00:00:49.977 --> 00:00:59.904
+Two of those seven do most of the troubleshooting work.
+
+p18
+00:01:00.640 --> 00:01:02.568
+Read one row like a support ticket.
+
+p19
+00:01:03.130 --> 00:01:05.764
+App version tells you whether they're stuck behind a fix.
+
+p20
+00:01:06.225 --> 00:01:11.072
+Notifications, on or off, tells you why a customer swears the alert never came.
+
+p21
+00:01:11.417 --> 00:01:13.999
+Start here, before you touch anything else.
+
+p22
+00:01:14.456 --> 00:01:16.557
+Above the table, the usual controls.
+
+p23
+00:01:17.065 --> 00:01:19.828
+Search pulls up one customer by name or email.
+
+p24
+00:01:20.244 --> 00:01:22.606
+There's also Export and a New Record button.
+
+p25
+00:01:23.012 --> 00:01:26.732
+Leave both alone today; reading the list is all a technician needs.
+
+p26
+00:01:27.200 --> 00:01:29.822
+Now the pages that build the app.
+
+p27
+00:01:29.822 --> 00:01:31.546
+Open Mobile App Branding.
+
+p28
+00:01:31.546 --> 00:01:33.708
+Notice the shell flips to Settings.
+
+p29
+00:01:33.708 --> 00:01:37.934
+This is where a brand's name, logo, colors, and support details get set,
+
+p30
+00:01:37.934 --> 00:01:39.885
+with a live phone preview alongside.
+
+p31
+00:01:40.400 --> 00:01:42.027
+Four blocks, top to bottom.
+
+p32
+00:01:42.604 --> 00:01:43.069
+Tenant, brand, colors, support.
+
+p33
+00:01:43.350 --> 00:01:45.430
+Display names and taglines, logo links,
+
+p34
+00:01:46.240 --> 00:01:51.064
+the primary and accent colors, a support phone and email.
+
+p35
+00:01:51.349 --> 00:01:57.840
+Editing any of it and publishing would re-skin the real app, so we only look.
+
+p36
+00:01:58.293 --> 00:01:59.233
+Back to the group, open Mobile App Features.
+
+p37
+00:01:59.493 --> 00:02:01.257
+These are on-and-off switches for the fun: daily spin, wash streak, scratch cards, a few more,
+
+p38
+00:02:01.686 --> 00:02:03.835
+plus wallet and gift cards.
+
+p39
+00:02:04.231 --> 00:02:05.086
+Flip one and the preview updates.
+
+p40
+00:02:05.332 --> 00:02:13.433
+We flip nothing.
+
+p41
+00:02:13.893 --> 00:02:14.681
+Last page, Push Notifications.
+
+p42
+00:02:14.979 --> 00:02:16.288
+It opens as Push Campaigns: write a message, pick an audience,
+
+p43
+00:02:16.815 --> 00:02:18.754
+watch it land on a lock-screen preview.
+
+p44
+00:02:19.071 --> 00:02:23.198
+That's marketing's job, not ours.
+
+p45
+00:02:23.757 --> 00:02:29.570
+We create no campaign here, and we send nothing.
+
+p46
+00:02:30.000 --> 00:02:31.804
+One thing ties these pages together.
+
+p47
+00:02:31.804 --> 00:02:34.587
+Each shows a live preview beside the settings,
+
+p48
+00:02:34.587 --> 00:02:38.910
+so you can see what the customer sees without leaving the console.
+
+p49
+00:02:38.910 --> 00:02:42.519
+A standalone preview launcher isn't in this build, so we've parked it.
+
+p50
+00:02:42.960 --> 00:02:44.014
+Click Close Settings.
+
+p51
+00:02:44.014 --> 00:02:48.468
+The menu folds away and drops you back on the platform,
+
+p52
+00:02:48.468 --> 00:02:51.280
+with nothing saved, nothing published, and nothing sent.
+
+p53
+00:02:51.680 --> 00:02:53.253
+One entry stays closed: Mobile Feedback.
+
+p54
+00:02:53.463 --> 00:02:54.424
+It's listed in the group, but the page didn't load in our capture.
+
+p55
+00:02:54.876 --> 00:03:01.760
+Until someone walks it live, treat what's inside as unconfirmed.
+
+p56
+00:03:02.223 --> 00:03:04.087
+That's the mobile corner of Digital.
+
+p57
+00:03:04.480 --> 00:03:07.952
+One page you open on real calls, Mobile App Users,
+
+p58
+00:03:08.289 --> 00:03:10.750
+and three you'll recognize but leave alone.
+
+p59
+00:03:11.520 --> 00:03:16.160
+When a customer's app misbehaves, you already know the first two columns to read.
+

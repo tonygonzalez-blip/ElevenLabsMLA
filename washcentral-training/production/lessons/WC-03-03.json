@@ -1,0 +1,423 @@
+{
+  "lesson": "WC-03-03",
+  "title": "The Rest of the Transactions Menu (Sales)",
+  "audioMaster": "training/module03-sales/WC-03-03-full-narration-v1.0.mp3",
+  "audioDurationS": 218.279,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/sales-transaction-details.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "sideTickets": {
+      "selector": "aside.sidebar a[href=\"sales-transactions.html\"]"
+    },
+    "sideTicketDetails": {
+      "selector": "aside.sidebar a[href=\"sales-transaction-details.html\"]"
+    },
+    "sidePayments": {
+      "selector": "aside.sidebar a[href=\"sales-payments.html\"]"
+    },
+    "sideRefundApprovals": {
+      "selector": "aside.sidebar a[href=\"refund-workflow.html\"]"
+    },
+    "sidePayouts": {
+      "selector": "aside.sidebar a[href=\"txn-payouts.html\"]"
+    },
+    "sideShifts": {
+      "selector": "aside.sidebar a[href=\"txn-shifts.html\"]"
+    },
+    "sideDeclined": {
+      "selector": "aside.sidebar a[href=\"txn-declined.html\"]"
+    },
+    "sideGift": {
+      "selector": "aside.sidebar a[href=\"txn-gift-transactions.html\"]"
+    },
+    "sideHouse": {
+      "selector": "aside.sidebar a[href=\"txn-house-transactions.html\"]"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "rowFirst": {
+      "js": "document.querySelector('table tbody tr')"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input[placeholder]')].find(i=>i.id!=='wc-cmd-inp'&&i.getBoundingClientRect().width>0)"
+    },
+    "payHealthCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Payment Health/.test(c.textContent||''))"
+    },
+    "balanceCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Balance Health/.test(c.textContent||''))"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thDescription": {
+      "text": "Description",
+      "scope": "table thead th"
+    },
+    "thCashier": {
+      "text": "Cashier",
+      "scope": "table thead th"
+    },
+    "thMethod": {
+      "text": "Method",
+      "scope": "table thead th"
+    },
+    "thAmount": {
+      "text": "Amount",
+      "scope": "table thead th"
+    },
+    "thShift": {
+      "text": "Shift #",
+      "scope": "table thead th"
+    },
+    "thTerminal": {
+      "text": "Terminal",
+      "scope": "table thead th"
+    },
+    "thOpening": {
+      "text": "Opening Drawer",
+      "scope": "table thead th"
+    },
+    "thClosing": {
+      "text": "Closing Drawer",
+      "scope": "table thead th"
+    },
+    "thReason": {
+      "text": "Reason",
+      "scope": "table thead th"
+    },
+    "thAttempts": {
+      "text": "Attempts",
+      "scope": "table thead th"
+    },
+    "thCardNumber": {
+      "text": "Card Number",
+      "scope": "table thead th"
+    },
+    "thBalance": {
+      "text": "Balance",
+      "scope": "table thead th"
+    },
+    "thAccount": {
+      "text": "Account",
+      "scope": "table thead th"
+    }
+  },
+  "predicates": {
+    "onTicketDetails": "location.pathname.endsWith('/sales-transaction-details.html')",
+    "onPayments": "location.pathname.endsWith('/sales-payments.html')",
+    "onPayouts": "location.pathname.endsWith('/txn-payouts.html')",
+    "onShifts": "location.pathname.endsWith('/txn-shifts.html')",
+    "onDeclined": "location.pathname.endsWith('/txn-declined.html')",
+    "onGift": "location.pathname.endsWith('/txn-gift-transactions.html')",
+    "onHouse": "location.pathname.endsWith('/txn-house-transactions.html')",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "startReady": "document.readyState==='complete'&&!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')&&document.querySelectorAll('aside.sidebar a').length===9&&document.querySelectorAll('.a-metric').length>=4&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "paymentsReady": "location.pathname.endsWith('/sales-payments.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&document.querySelectorAll('table thead th').length>=5&&document.querySelectorAll('aside.sidebar a').length===9",
+    "payoutsReady": "location.pathname.endsWith('/txn-payouts.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&document.querySelectorAll('table thead th').length>=7&&document.querySelectorAll('aside.sidebar a').length===9",
+    "shiftsReady": "location.pathname.endsWith('/txn-shifts.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=1&&document.querySelectorAll('table thead th').length>=8&&document.querySelectorAll('aside.sidebar a').length===9",
+    "declinedReady": "location.pathname.endsWith('/txn-declined.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=1&&document.querySelectorAll('table thead th').length>=7&&document.querySelectorAll('aside.sidebar a').length===9",
+    "giftReady": "location.pathname.endsWith('/txn-gift-transactions.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=4&&document.querySelectorAll('table thead th').length>=8&&document.querySelectorAll('aside.sidebar a').length===9",
+    "houseReady": "location.pathname.endsWith('/txn-house-transactions.html')&&document.readyState==='complete'&&document.querySelectorAll('.a-metric').length>=1&&document.querySelectorAll('table thead th').length>=6&&document.querySelectorAll('aside.sidebar a').length===9"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the Sales sidebar expanded (persisted pref washcentral-sidebar-collapsed-v5; the panel toggle is the same control both ways — probe-verified both directions July 11); skipped when already expanded. All nine TRANSACTIONS entries must be on screen the whole lesson."
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onTicketDetails", "note": "start page identity before capture (step 1 opens on Ticket Details)" },
+    { "op": "assert", "at": -0.9, "predicate": "startReady", "note": "loaded, sidebar expanded with all nine Transactions pages, scrolled to top, no skeletons" },
+    { "op": "watch", "key": "sidebarHeld", "from": 1.0, "to": 217.5, "predicate": "sidebarExpanded", "everyMs": 2000, "mustHold": true },
+    { "op": "pointer-enter", "at": 0.45, "from": [2, 880], "to": { "target": "breadcrumb", "offset": [-450, 22] }, "note": "enter from the left edge toward the header area (p01: 'all under the header Transactions')" },
+    { "op": "log-rects", "at": 1.0, "key": "sideItems", "targets": ["sideTickets", "sideTicketDetails", "sidePayments", "sideRefundApprovals", "sidePayouts", "sideShifts", "sideDeclined", "sideGift", "sideHouse"] },
+    { "op": "log-rect", "at": 1.5, "key": "breadcrumbRect", "target": "breadcrumb", "requireStableMs": 260 },
+    { "op": "log-rect", "at": 1.9, "key": "tdKpiStrip", "target": "kpiStrip" },
+    { "op": "log-rect", "at": 2.2, "key": "tdTheadRect", "target": "theadRow", "requireStableMs": 240 },
+    { "op": "log-rect", "at": 2.5, "key": "tdExportRect", "target": "exportBtn" },
+    { "op": "log-rects", "at": 2.8, "key": "tdThs", "targets": ["thLocation", "thDescription", "thCashier"] },
+    { "op": "move", "at": 3.4, "to": { "target": "breadcrumb", "offset": [70, 44], "outside": true }, "note": "step 1: 'all under the header Transactions' (p01) — under the Transactions crumb" },
+    { "op": "move", "at": 6.3, "to": { "target": "sideTickets", "offset": [210, 8], "outside": true }, "note": "step 1: 'the first one, Tickets' (p02) — beside the entry, never on it (WC-03-01/02)" },
+    { "op": "move", "at": 10.0, "to": { "target": "sideRefundApprovals", "offset": [210, 8], "outside": true }, "note": "step 1: 'the new Refund Approvals page waits for a lesson of its own' (p03) — named only, NOT toured, never clicked" },
+    { "op": "move", "at": 14.5, "to": { "target": "sideTicketDetails", "offset": [210, 8], "outside": true }, "note": "step 1: sweep down the seven taught entries in spoken order (p04-p05: 'line items, payments, cash out, drawers, declines, gift cards, house accounts')" },
+    { "op": "move", "at": 16.75, "to": { "target": "sidePayments", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 17.5, "to": { "target": "sidePayouts", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 17.95, "to": { "target": "sideShifts", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 18.6, "to": { "target": "sideDeclined", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 19.75, "to": { "target": "sideGift", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 20.9, "to": { "target": "sideHouse", "offset": [210, 10], "outside": true } },
+    { "op": "move", "at": 22.4, "to": { "point": [1898, 300] }, "note": "park in the right margin for p06-p07 ('a map, not a deep dive')" },
+    { "op": "move", "at": 30.4, "to": { "target": "breadcrumb", "offset": [220, 44], "outside": true }, "note": "step 2: 'Start where you already are, on Ticket Details' (p08) — under the Ticket Details crumb" },
+    { "op": "move", "at": 35.9, "to": { "target": "rowFirst", "offset": [-500, 0] }, "note": "step 2: 'one row per line rung' (p10) — the first line-item row; rows are never clicked" },
+    { "op": "log-rect", "at": 36.3, "key": "tdRowRect", "target": "rowFirst" },
+    { "op": "move", "at": 39.95, "to": { "target": "thLocation", "offset": [0, 0] }, "note": "step 2: columns sweep (p11) — 'every service, every discount, every adjustment'" },
+    { "op": "move", "at": 41.3, "to": { "target": "thDescription", "offset": [0, 0] } },
+    { "op": "move", "at": 42.75, "to": { "target": "thCashier", "offset": [0, 0] }, "note": "step 2: 'with the cashier...' (p12)" },
+    { "op": "move", "at": 44.2, "to": { "target": "thLocation", "offset": [0, 0] }, "note": "step 2: '...and location right beside it' (p12)" },
+    { "op": "move", "at": 46.3, "to": { "target": "exportBtn", "offset": [-52, 46], "outside": true }, "note": "step 2 guardrail: STOP ring over Export per shot list — hover NEAR it, never on it, never clicked" },
+    { "op": "move", "at": 50.9, "to": { "point": [620, 700] }, "note": "stage near the sidebar so the step-3 approach starts at the cue, not before" },
+    { "op": "click", "target": "sidePayments", "pressAt": 54.4, "hoverMs": 380, "postcondition": "onPayments", "timeoutMs": 8000, "nav": true, "note": "step 3: 'Click Payments' (p15, cue ends 54.31) — genuine sidebar click; the rendered break is only 0.33s so the press lands immediately after the cue" },
+    { "op": "wait-stable", "afterNav": true, "key": "paymentsStable", "predicate": "paymentsReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 55.5, "key": "payKpiStrip", "target": "kpiStrip" },
+    { "op": "log-rect", "at": 55.75, "key": "paySearchRect", "target": "searchBox" },
+    { "op": "log-rect", "at": 56.0, "key": "payTheadRect", "target": "theadRow" },
+    { "op": "log-rect", "at": 56.2, "key": "payHealthRect", "target": "payHealthCard" },
+    { "op": "log-rect", "at": 56.4, "key": "payExportRect", "target": "exportBtn" },
+    { "op": "log-rects", "at": 56.65, "key": "payThs", "targets": ["thMethod", "thAmount"] },
+    { "op": "move", "at": 57.0, "to": { "target": "searchBox", "offset": [0, -34] }, "note": "step 3: 'searchable by ticket number' (p16) — above the SEARCH PAYMENTS box; never typed in" },
+    { "op": "move", "at": 58.75, "to": { "target": "thMethod", "offset": [0, 0] }, "note": "step 3: 'Method and amount...' (p17) in spoken order" },
+    { "op": "move", "at": 60.15, "to": { "target": "thAmount", "offset": [0, 0] } },
+    { "op": "move", "at": 62.0, "to": { "target": "payHealthCard", "offset": [0, 24] }, "note": "step 3: 'only records payments that went through... declines aren't its job' (p18-p19) — the Payment Health scope note" },
+    { "op": "move", "at": 66.0, "to": { "target": "sideDeclined", "offset": [210, 8], "outside": true }, "note": "step 3: 'tracked on their own page, which is exactly where we go next' (p20) — point beside the Declined entry, no click yet" },
+    { "op": "move", "at": 70.7, "to": { "target": "exportBtn", "offset": [-52, 46], "outside": true }, "note": "step 3 guardrail: STOP ring over Export per shot list — never clicked" },
+    { "op": "move", "at": 73.8, "to": { "point": [620, 700] }, "note": "stage for the step-4 approach" },
+    { "op": "click", "target": "sidePayouts", "pressAt": 76.6, "hoverMs": 380, "postcondition": "onPayouts", "timeoutMs": 8000, "nav": true, "note": "step 4: 'Now Payouts' (p21, cue ends 76.30) — press inside the 0.74s rendered break" },
+    { "op": "wait-stable", "afterNav": true, "key": "payoutsStable", "predicate": "payoutsReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 77.7, "key": "poKpiStrip", "target": "kpiStrip" },
+    { "op": "log-rect", "at": 77.95, "key": "poTheadRect", "target": "theadRow" },
+    { "op": "log-rect", "at": 78.2, "key": "poExportRect", "target": "exportBtn" },
+    { "op": "log-rects", "at": 78.5, "key": "poThs", "targets": ["thShift", "thCashier", "thTerminal"] },
+    { "op": "move", "at": 78.9, "to": { "target": "kpiTile1", "offset": [0, 16] }, "note": "step 4: 'cash leaving the drawer' (p22-p23) — the Total Payouts tile" },
+    { "op": "move", "at": 81.85, "to": { "target": "theadRow", "offset": [-680, 0] }, "note": "step 4: 'Read across the columns' (p24) — sweep the header row left to right" },
+    { "op": "move", "at": 82.7, "to": { "target": "theadRow", "offset": [680, 0] } },
+    { "op": "move", "at": 84.5, "to": { "target": "thShift", "offset": [0, 0] }, "note": "step 4: 'a shift number, a cashier, and the terminal' (p25) in spoken order" },
+    { "op": "move", "at": 85.6, "to": { "target": "thCashier", "offset": [0, 0] } },
+    { "op": "move", "at": 86.5, "to": { "target": "thTerminal", "offset": [0, 0] } },
+    { "op": "move", "at": 89.2, "to": { "target": "exportBtn", "offset": [-52, 46], "outside": true }, "note": "step 4 guardrail: STOP ring over Export; + New Record is also present and never opened" },
+    { "op": "move", "at": 94.5, "to": { "point": [620, 700] }, "note": "stage for the step-5 approach while p26 finishes" },
+    { "op": "click", "target": "sideShifts", "pressAt": 100.05, "hoverMs": 380, "postcondition": "onShifts", "timeoutMs": 8000, "nav": true, "note": "step 5: 'Click Shifts' (p27, cue ends 99.89) — press inside the 0.34s rendered break" },
+    { "op": "wait-stable", "afterNav": true, "key": "shiftsStable", "predicate": "shiftsReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 101.0, "key": "shKpiRect", "target": "kpiTile1" },
+    { "op": "log-rect", "at": 101.25, "key": "shTheadRect", "target": "theadRow" },
+    { "op": "log-rects", "at": 101.5, "key": "shThs", "targets": ["thOpening", "thClosing"] },
+    { "op": "log-rect", "at": 101.75, "key": "shRowRect", "target": "rowFirst" },
+    { "op": "move", "at": 102.0, "to": { "target": "kpiTile1", "offset": [-600, 14] }, "note": "step 5: 'one count, no charts' (p28) — the single Total Shifts KPI" },
+    { "op": "move", "at": 103.1, "to": { "target": "rowFirst", "offset": [-550, 0] }, "note": "step 5: 'a single drawer session' (p29) — one shift row" },
+    { "op": "move", "at": 109.15, "to": { "target": "thOpening", "offset": [0, 0] }, "note": "step 5: 'Opening cash, closing cash' (p31) in spoken order" },
+    { "op": "move", "at": 110.75, "to": { "target": "thClosing", "offset": [0, 0] } },
+    { "op": "move", "at": 116.1, "to": { "target": "rowFirst", "offset": [-550, 0] }, "note": "step 5: 'this page lines it up in one row' (p32)" },
+    { "op": "move", "at": 118.9, "to": { "point": [620, 700] }, "note": "stage for the step-6 approach" },
+    { "op": "click", "target": "sideDeclined", "pressAt": 123.75, "hoverMs": 380, "postcondition": "onDeclined", "timeoutMs": 8000, "nav": true, "note": "step 6: 'Here's the page I promised, the Declined Credit Card Log' (p33, cue ends 123.38) — press inside the 0.70s rendered break" },
+    { "op": "wait-stable", "afterNav": true, "key": "declinedStable", "predicate": "declinedReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 124.7, "key": "dcKpiRect", "target": "kpiTile1" },
+    { "op": "log-rect", "at": 124.95, "key": "dcTheadRect", "target": "theadRow" },
+    { "op": "log-rects", "at": 125.2, "key": "dcThs", "targets": ["thReason", "thAttempts"] },
+    { "op": "move", "at": 125.5, "to": { "target": "kpiTile1", "offset": [-600, 14] }, "note": "step 6: 'member swears they paid... start here' (p34-p35) — the Declined Charges count" },
+    { "op": "move", "at": 127.7, "to": { "target": "thReason", "offset": [0, 0] }, "note": "step 6: 'the reason column' (p36)" },
+    { "op": "move", "at": 130.6, "to": { "target": "thAttempts", "offset": [0, 0] }, "note": "step 6: 'the attempts column' (p37)" },
+    { "op": "move", "at": 135.5, "to": { "point": [1898, 650] }, "note": "park for p38 ('before you even call the gateway')" },
+    { "op": "move", "at": 140.9, "to": { "point": [620, 700] }, "note": "stage for the step-7 approach" },
+    { "op": "click", "target": "sideGift", "pressAt": 144.45, "hoverMs": 380, "postcondition": "onGift", "timeoutMs": 8000, "nav": true, "note": "step 7: 'Click Gift Card Transactions' (p39, cue ends 144.18) — press inside the 0.55s rendered break" },
+    { "op": "wait-stable", "afterNav": true, "key": "giftStable", "predicate": "giftReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 145.4, "key": "gtKpiStrip", "target": "kpiStrip" },
+    { "op": "log-rect", "at": 145.65, "key": "gtSearchRect", "target": "searchBox" },
+    { "op": "log-rect", "at": 145.9, "key": "gtTheadRect", "target": "theadRow" },
+    { "op": "log-rect", "at": 146.1, "key": "gtBalanceCardRect", "target": "balanceCard" },
+    { "op": "log-rect", "at": 146.3, "key": "gtExportRect", "target": "exportBtn" },
+    { "op": "log-rects", "at": 146.55, "key": "gtThs", "targets": ["thCardNumber", "thBalance"] },
+    { "op": "move", "at": 146.8, "to": { "target": "kpiTile1", "offset": [0, 16] }, "note": "step 7: 'every load and every redeem lands here' (p40) — the Total Transactions tile" },
+    { "op": "move", "at": 148.7, "to": { "target": "searchBox", "offset": [0, -32] }, "note": "step 7: 'Type a card number into search' (p41) — located only, never typed in" },
+    { "op": "move", "at": 154.5, "to": { "target": "thBalance", "offset": [0, 0] }, "note": "step 7: 'the running balance after each line' (p42) — the BALANCE column (live cells showed dashes; see RESIDUAL R2)" },
+    { "op": "move", "at": 157.3, "to": { "target": "balanceCard", "offset": [0, 30] }, "note": "step 7: 'one caveat the page states in plain sight' (p43) — the Balance Health scope note" },
+    { "op": "move", "at": 161.3, "to": { "target": "exportBtn", "offset": [-52, 46], "outside": true }, "note": "step 7 guardrail: STOP ring over Export; + New Record never opened" },
+    { "op": "move", "at": 164.4, "to": { "point": [620, 700] }, "note": "stage for the step-8 approach while p44 finishes" },
+    { "op": "click", "target": "sideHouse", "pressAt": 169.2, "hoverMs": 380, "postcondition": "onHouse", "timeoutMs": 8000, "nav": true, "note": "step 8: 'Last page, House Account Transactions' (p45, cue ends 169.00) — press inside the 0.46s rendered break" },
+    { "op": "wait-stable", "afterNav": true, "key": "houseStable", "predicate": "houseReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "log-rect", "at": 170.1, "key": "haKpiRect", "target": "kpiTile1" },
+    { "op": "log-rect", "at": 170.35, "key": "haTheadRect", "target": "theadRow" },
+    { "op": "log-rects", "at": 170.6, "key": "haThs", "targets": ["thAccount"] },
+    { "op": "move", "at": 170.9, "to": { "target": "kpiTile1", "offset": [-600, 14] }, "note": "step 8: page level (p46-p47); the list may sit in its Loading state live — KPI dash tolerated (RESIDUAL R1)" },
+    { "op": "move", "at": 176.2, "to": { "target": "thAccount", "offset": [0, 0] }, "note": "step 8: 'ties a ticket to the account that owes for it' (p48) — the ACCOUNT column" },
+    { "op": "move", "at": 179.5, "to": { "point": [1898, 500] }, "note": "park for p49-p50 (CRM House Accounts is spoken context, not on screen)" },
+    { "op": "log-rects", "at": 186.9, "key": "sideItems2", "targets": ["sideTickets", "sideTicketDetails", "sidePayments", "sideRefundApprovals", "sidePayouts", "sideShifts", "sideDeclined", "sideGift", "sideHouse"], "note": "re-log the sidebar on the final page for the recap graphics" },
+    { "op": "move", "at": 187.8, "to": { "target": "sideTickets", "offset": [210, 6], "outside": true }, "note": "step 9: 'Nine pages in the sidebar' (p52) — top of the list" },
+    { "op": "move", "at": 192.1, "to": { "target": "sideTicketDetails", "offset": [210, 8], "outside": true }, "note": "step 9: recap walk in SPOKEN order (p53-p59), Ticket Details down to House Account Transactions" },
+    { "op": "move", "at": 195.15, "to": { "target": "sidePayments", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 197.4, "to": { "target": "sidePayouts", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 199.85, "to": { "target": "sideShifts", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 202.35, "to": { "target": "sideDeclined", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 206.15, "to": { "target": "sideGift", "offset": [210, 8], "outside": true } },
+    { "op": "move", "at": 209.4, "to": { "target": "sideHouse", "offset": [210, 10], "outside": true } },
+    { "op": "move", "at": 213.2, "to": { "point": [1560, 930] }, "note": "final park, clear of content and captions, while p60-p61 close wide" },
+    { "op": "assert", "at": 216.8, "predicate": "onHouse" },
+    { "op": "assert", "at": 217.3, "predicate": "sidebarExpanded" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "sideItems.sideTickets", "place": "right", "from": 2.6, "to": 13.5 },
+      { "n": 2, "anchor": "tdTheadRect", "place": "left-top", "from": 40.1, "to": 45.4 },
+      { "n": 3, "anchor": "payTheadRect", "place": "left-top", "from": 58.8, "to": 64.0 },
+      { "n": 4, "anchor": "poTheadRect", "place": "left-top", "from": 81.9, "to": 87.3 },
+      { "n": 5, "anchor": "shThs.thOpening", "place": "below-left", "from": 109.2, "to": 115.5 },
+      { "n": 6, "anchor": "dcThs.thReason", "place": "below-left", "from": 127.7, "to": 134.5 },
+      { "n": 7, "anchor": "gtThs.thCardNumber", "place": "below-left", "from": 148.8, "to": 156.6 },
+      { "n": 8, "anchor": "haThs.thAccount", "place": "below-left", "from": 176.3, "to": 181.5 },
+      { "n": 9, "anchor": "sideItems2.sideTicketDetails", "place": "right", "from": 192.2, "to": 211.9 }
+    ],
+    "highlights": [
+      { "anchor": "breadcrumbRect", "from": 1.8, "to": 5.4, "note": "p01: 'all under the header Transactions'" },
+      { "anchor": "sideItems.sideTickets", "from": 6.4, "to": 9.6, "note": "p02: Tickets, WC-03-01/02" },
+      { "anchor": "sideItems.sideRefundApprovals", "from": 10.0, "to": 13.6, "note": "p03: Refund Approvals — new July 11, named only, not toured" },
+      { "anchor": "sideItems.sideTicketDetails", "from": 16.3, "to": 16.7, "note": "p04: 'line items' — the seven taught entries in spoken order" },
+      { "anchor": "sideItems.sidePayments", "from": 16.7, "to": 17.1 },
+      { "anchor": "sideItems.sidePayouts", "from": 17.45, "to": 17.78 },
+      { "anchor": "sideItems.sideShifts", "from": 17.78, "to": 18.05 },
+      { "anchor": "sideItems.sideDeclined", "from": 18.55, "to": 19.15 },
+      { "anchor": "sideItems.sideGift", "from": 19.68, "to": 20.35 },
+      { "anchor": "sideItems.sideHouse", "from": 20.85, "to": 21.55 },
+      { "anchor": "tdRowRect", "from": 36.4, "to": 39.3, "note": "p10: one row per line rung" },
+      { "anchor": "tdTheadRect", "from": 39.95, "to": 42.6, "note": "p11: services, discounts, adjustments live in the columns" },
+      { "anchor": "tdThs.thCashier", "from": 42.75, "to": 44.1, "note": "p12: cashier" },
+      { "anchor": "tdThs.thLocation", "from": 44.15, "to": 45.5, "note": "p12: location" },
+      { "anchor": "tdExportRect", "from": 46.1, "to": 52.4, "color": "#dc2626", "note": "step 2 guardrail: Export is located, never clicked (shot list STOP ring)" },
+      { "anchor": "payKpiStrip", "from": 55.3, "to": 56.6, "note": "p16: every completed payment across the network" },
+      { "anchor": "paySearchRect", "from": 56.7, "to": 58.35, "note": "p16: searchable by ticket number" },
+      { "anchor": "payThs.thMethod", "from": 58.8, "to": 60.1, "note": "p17: method" },
+      { "anchor": "payThs.thAmount", "from": 60.15, "to": 61.6, "note": "p17: amount" },
+      { "anchor": "payHealthRect", "from": 61.95, "to": 65.3, "note": "p18-p19: completed transactions only; approvals/declines aren't tracked here" },
+      { "anchor": "sideItems.sideDeclined", "from": 66.1, "to": 70.0, "note": "p20: declines have their own page — where we go next" },
+      { "anchor": "payExportRect", "from": 70.7, "to": 74.4, "color": "#dc2626", "note": "step 3 guardrail: Export never clicked" },
+      { "anchor": "poKpiStrip", "from": 78.0, "to": 81.3, "note": "p22-p23: cash leaving the drawer" },
+      { "anchor": "poTheadRect", "from": 81.85, "to": 84.3, "note": "p24: read across the columns" },
+      { "anchor": "poThs.thShift", "from": 84.45, "to": 85.5, "note": "p25: shift number" },
+      { "anchor": "poThs.thCashier", "from": 85.5, "to": 86.4, "note": "p25: cashier" },
+      { "anchor": "poThs.thTerminal", "from": 86.4, "to": 87.4, "note": "p25: terminal" },
+      { "anchor": "poExportRect", "from": 89.2, "to": 93.0, "color": "#dc2626", "note": "step 4 guardrail: Export never clicked; + New Record never opened" },
+      { "anchor": "shKpiRect", "from": 100.5, "to": 102.05, "note": "p28: one count, no charts" },
+      { "anchor": "shRowRect", "from": 103.1, "to": 105.6, "note": "p29: a single drawer session per row" },
+      { "anchor": "shThs.thOpening", "from": 109.1, "to": 110.7, "note": "p31: opening cash" },
+      { "anchor": "shThs.thClosing", "from": 110.7, "to": 112.3, "note": "p31: closing cash" },
+      { "anchor": "shRowRect", "from": 116.0, "to": 119.5, "note": "p32: this page lines it up in one row" },
+      { "anchor": "dcKpiRect", "from": 125.3, "to": 127.3, "note": "p34-p35: start here, every time" },
+      { "anchor": "dcThs.thReason", "from": 127.65, "to": 129.5, "note": "p36: why the card was turned down" },
+      { "anchor": "dcThs.thAttempts", "from": 130.55, "to": 133.8, "note": "p37: how many times it retried" },
+      { "anchor": "gtKpiStrip", "from": 145.6, "to": 148.1, "note": "p40: every load and every redeem" },
+      { "anchor": "gtSearchRect", "from": 148.7, "to": 153.8, "note": "p41: type a card number into search — located only" },
+      { "anchor": "gtThs.thBalance", "from": 154.45, "to": 156.85, "note": "p42: the BALANCE column (RESIDUAL R2: live cells showed dashes)" },
+      { "anchor": "gtBalanceCardRect", "from": 157.15, "to": 160.3, "note": "p43: completed activity, not card status" },
+      { "anchor": "gtExportRect", "from": 161.3, "to": 165.2, "color": "#dc2626", "note": "step 7 guardrail: Export never clicked" },
+      { "anchor": "haThs.thAccount", "from": 176.15, "to": 178.9, "note": "p48: the ACCOUNT column ties the ticket to the account" },
+      { "anchor": "sideItems2.sideTicketDetails", "from": 192.0, "to": 194.75, "note": "p53: line items? Ticket Details — recap in spoken order" },
+      { "anchor": "sideItems2.sidePayments", "from": 195.1, "to": 197.05, "note": "p54" },
+      { "anchor": "sideItems2.sidePayouts", "from": 197.35, "to": 199.45, "note": "p55" },
+      { "anchor": "sideItems2.sideShifts", "from": 199.8, "to": 201.9, "note": "p56" },
+      { "anchor": "sideItems2.sideDeclined", "from": 202.3, "to": 205.7, "note": "p57" },
+      { "anchor": "sideItems2.sideGift", "from": 206.1, "to": 208.95, "note": "p58" },
+      { "anchor": "sideItems2.sideHouse", "from": 209.3, "to": 212.2, "note": "p59" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 5.5, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 6.6, "z": 1.32, "cx": 500, "cy": 290, "ease": true, "note": "step 1: sidebar walk — all nine TRANSACTIONS entries readable" },
+      { "t": 21.6, "z": 1.32, "cx": 500, "cy": 290 },
+      { "t": 22.8, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for 'a map, not a deep dive' (p06-p07)" },
+      { "t": 30.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 31.0, "z": 1.18, "cx": 1000, "cy": 430, "ease": true, "note": "step 2: Ticket Details — KPIs, cards, search, list in one calm framing" },
+      { "t": 38.9, "z": 1.18, "cx": 1000, "cy": 430 },
+      { "t": 39.9, "z": 1.3, "cx": 780, "cy": 555, "ease": true, "note": "step 2: 130% along the columns (shot list)" },
+      { "t": 41.6, "z": 1.3, "cx": 780, "cy": 555 },
+      { "t": 44.0, "z": 1.3, "cx": 1300, "cy": 555, "ease": true, "note": "pan right across the twelve headers" },
+      { "t": 45.3, "z": 1.3, "cx": 1300, "cy": 555 },
+      { "t": 46.3, "z": 1.18, "cx": 1090, "cy": 470, "ease": true, "note": "Export guardrail in frame" },
+      { "t": 51.8, "z": 1.18, "cx": 1090, "cy": 470 },
+      { "t": 52.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the page change (step 3 click)" },
+      { "t": 56.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 57.2, "z": 1.15, "cx": 1080, "cy": 400, "ease": true, "note": "step 3: Payments — KPIs, health card, columns" },
+      { "t": 64.8, "z": 1.15, "cx": 1080, "cy": 400 },
+      { "t": 65.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide: sidebar Declined pointer + Export guardrail + page change (step 4)" },
+      { "t": 78.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 79.2, "z": 1.15, "cx": 1080, "cy": 400, "ease": true, "note": "step 4: Payouts — KPI band and columns" },
+      { "t": 92.5, "z": 1.15, "cx": 1080, "cy": 400 },
+      { "t": 93.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change (step 5 click)" },
+      { "t": 101.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 102.2, "z": 1.2, "cx": 1000, "cy": 330, "ease": true, "note": "step 5: Shifts — the leaner single-KPI shape, drawer columns" },
+      { "t": 117.6, "z": 1.2, "cx": 1000, "cy": 330 },
+      { "t": 118.7, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change (step 6 click)" },
+      { "t": 124.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 125.8, "z": 1.2, "cx": 1030, "cy": 330, "ease": true, "note": "step 6: Declined Charges List — REASON and ATTEMPTS" },
+      { "t": 139.6, "z": 1.2, "cx": 1030, "cy": 330 },
+      { "t": 140.7, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change (step 7 click)" },
+      { "t": 145.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 146.8, "z": 1.15, "cx": 1080, "cy": 400, "ease": true, "note": "step 7: Gift Card Transactions — search, columns, Balance Health" },
+      { "t": 164.6, "z": 1.15, "cx": 1080, "cy": 400 },
+      { "t": 165.7, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change (step 8 click)" },
+      { "t": 170.2, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 171.3, "z": 1.2, "cx": 1000, "cy": 330, "ease": true, "note": "step 8: House Account Transactions — ACCOUNT column" },
+      { "t": 183.4, "z": 1.2, "cx": 1000, "cy": 330 },
+      { "t": 184.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "settle wide before the recap" },
+      { "t": 186.8, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 187.9, "z": 1.3, "cx": 500, "cy": 300, "ease": true, "note": "step 9: sidebar recap — seven pages, seven questions" },
+      { "t": 211.9, "z": 1.3, "cx": 500, "cy": 300 },
+      { "t": 213.1, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
+      { "t": 218.279, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Transactions Menu — Complete",
+      "from": 216.5,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 216.2
+  },
+  "output": "WC-03-03-transactions-menu-v1.1",
+  "orderedMentions": [
+    "Transactions",
+    "Tickets",
+    "Refund Approvals",
+    "Ticket Details",
+    "Payments",
+    "Payouts",
+    "Shifts",
+    "Declined Credit Card Log",
+    "Gift Card Transactions",
+    "House Account Transactions"
+  ],
+  "neverClick": [
+    "export",
+    "+ new record",
+    "refund approvals (sidebar — new page, not toured)",
+    "tickets (sidebar — WC-03-01/02)",
+    "filters",
+    "search (card query — unused this lesson)",
+    "search ⌘k",
+    "row links / table rows",
+    "row checkboxes / select-all",
+    "pagination page buttons",
+    "rows-per-page selector",
+    "ask shyne",
+    "send",
+    "logout"
+  ]
+}

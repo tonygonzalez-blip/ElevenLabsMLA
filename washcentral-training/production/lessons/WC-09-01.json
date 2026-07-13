@@ -1,0 +1,2469 @@
+{
+  "lesson": "WC-09-01",
+  "title": "Digital: Portal Pages",
+  "audioMaster": "training/module09-digital/WC-09-01-full-narration-v1.0.mp3",
+  "audioDurationS": 229.956,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/portal-members.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "output": "WC-09-01-portal-pages-v1.1",
+  "targets": {
+    "railExpandToggle": {
+      "selector": ".wc-rail-expand-toggle"
+    },
+    "railPanelToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "railDigital": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Digital$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cpGroup": {
+      "js": "[...document.querySelectorAll('.menu-group-lbl')].find(e=>/Customer Portal/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "mobileGroup": {
+      "js": "[...document.querySelectorAll('.menu-group-lbl')].find(e=>/^Mobile$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "sideBooking": {
+      "selector": "aside.sidebar a[href=\"portal-book.html\"]"
+    },
+    "sideMembers": {
+      "selector": "aside.sidebar a[href=\"portal-members.html\"]"
+    },
+    "sideMessages": {
+      "selector": "aside.sidebar a[href=\"portal-messages.html\"]"
+    },
+    "sideBilling": {
+      "selector": "aside.sidebar a[href=\"portal-billing.html\"]"
+    },
+    "sideNotifications": {
+      "selector": "aside.sidebar a[href=\"portal-notifications.html\"]"
+    },
+    "crumbBar": {
+      "selector": ".breadcrumb-bar"
+    },
+    "kpiStrip": {
+      "selector": ".a-metrics"
+    },
+    "kpiRegistered": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Registered/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiNew": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/New This Week/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiMobile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Mobile Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "cardGrowth": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Member Growth/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardByPlan": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/By Plan/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(e=>/Member Status/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "listEyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^PORTAL\\s*·\\s*MEMBERS$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('div,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Member List'&&e.getBoundingClientRect().width>0)"
+    },
+    "recordsBadge": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^4 records$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn-primary,a.a-btn,button.a-btn')].find(e=>/New Record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Export$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "searchBox": {
+      "selector": "#portal-members-search"
+    },
+    "searchBtn": {
+      "selector": "#portal-members-search-btn"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thEmail": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Email$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thMemberSince": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Member Since$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPlan": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Plan$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thPortalStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Portal Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thLastLogin": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Last Login$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "pgInfo": {
+      "selector": ".pg-info"
+    },
+    "footerBar": {
+      "selector": ".pagination-bar"
+    },
+    "rowsPerPage": {
+      "js": "[...document.querySelectorAll('span,div,label')].find(e=>e.children.length===0&&/Rows per page/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiUnread": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Unread/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiMsgOpen": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/(^|\\d)\\s*Open\\b/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiAvgResp": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Response/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiSat": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Satisfaction/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thMsgStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thMsgPriority": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Priority$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thMsgAssigned": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Assigned To$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiUpdates": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Updates Today/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiFailed": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed Billing/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiAutoRenew": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Auto-Renewed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thBillAction": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Action$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thBillStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowCardFailed": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(t=>/Card Failed/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    },
+    "kpiActiveNotif": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Notifications/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiSentToday": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sent Today/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiOpenRate": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Open Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "thNotifAudience": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Audience$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thNotifOpenRate": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Open Rate$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thNotifStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowWelcome": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(t=>/Welcome Email/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    },
+    "rowRenewal": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(t=>/Renewal Reminder/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "railExpanded": "!!document.querySelector('.wc-rail.rail-expanded')",
+    "panelExpanded": "(()=>{const a=document.querySelector('aside.sidebar');return !!a&&a.getBoundingClientRect().width>160})()",
+    "onMembers": "location.pathname.endsWith('/portal-members.html')",
+    "onMessages": "location.pathname.endsWith('/portal-messages.html')",
+    "onBilling": "location.pathname.endsWith('/portal-billing.html')",
+    "onNotifications": "location.pathname.endsWith('/portal-notifications.html')",
+    "onAllowedPortal": "/\\/portal-(members|messages|billing|notifications)\\.html$/.test(location.pathname)",
+    "cpLinksVisible": "[...document.querySelectorAll('aside.sidebar a.menu-header')].filter(e=>e.getBoundingClientRect().width>0&&/portal-(book|members|messages|billing|notifications)\\.html$/.test(e.getAttribute('href')||'')).length===5",
+    "membersLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-members.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chart-card')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&rows.length===4&&[...document.querySelectorAll('table thead th')].some(e=>/^Portal Status$/i.test((e.textContent||'').trim()))&&!!pi&&/1.4 of 4/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "messagesLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-messages.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&rows.length===4&&[...document.querySelectorAll('table thead th')].some(e=>/^Priority$/i.test((e.textContent||'').trim()))&&!!pi&&/1.4 of 4/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "billingLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-billing.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&rows.length===4&&[...document.querySelectorAll('table thead th')].some(e=>/^Action$/i.test((e.textContent||'').trim()))&&!!pi&&/1.4 of 4/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "notificationsLoaded": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-notifications.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&rows.length===4&&[...document.querySelectorAll('table thead th')].some(e=>/^Trigger$/i.test((e.textContent||'').trim()))&&!!pi&&/1.4 of 4/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "membersIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-members.html')&&rows.length===4&&!!pi&&/1.4 of 4/.test(pi.textContent||'')})()",
+    "messagesIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-messages.html')&&rows.length===4&&!!pi&&/1.4 of 4/.test(pi.textContent||'')})()",
+    "billingIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-billing.html')&&rows.length===4&&!!pi&&/1.4 of 4/.test(pi.textContent||'')})()",
+    "notifIntact": "(()=>{const rows=[...document.querySelectorAll('table tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/portal-notifications.html')&&rows.length===4&&!!pi&&/1.4 of 4/.test(pi.textContent||'')})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "railExpandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "railExpanded",
+      "postcondition": "railExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted module-rail preference to expanded so the Digital module label reads on camera (step 1). .wc-rail-expand-toggle toggles the '.wc-rail.rail-expanded' class; skipped when already expanded (the observed default). Probe-verified July 11: expanded shows the Digital rail label at x31 with the Digital item active."
+    },
+    {
+      "op": "click",
+      "target": "railPanelToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "panelExpanded",
+      "postcondition": "panelExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted sidebar-panel preference to expanded so the CUSTOMER PORTAL group's five entries read with labels (aside.sidebar width 220). .wc-rail-panel-toggle is the same control both ways; skipped when already expanded (the observed default)."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onMembers",
+      "note": "start page identity: the lesson opens on Portal Members (the one list read in full). startUrl portal-members.html loads directly; the four sibling pages are reached by genuine sidebar clicks later."
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "panelExpanded",
+      "note": "pre-roll: preflight staged the CUSTOMER PORTAL sidebar panel expanded (width 220, labels visible); abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -1.0,
+      "predicate": "railExpanded",
+      "note": "pre-roll: preflight staged the module rail expanded so 'Digital' reads"
+    },
+    {
+      "op": "assert",
+      "at": -0.7,
+      "predicate": "membersLoaded",
+      "note": "loaded: 4 KPI tiles, 3 insight cards, 4 member rows, Portal Status column, '1–4 of 4', no agent-service error state"
+    },
+    {
+      "op": "assert",
+      "at": -0.4,
+      "predicate": "cpLinksVisible",
+      "note": "the five CUSTOMER PORTAL entries (Booking Page, Members, Messages, Billing, Notifications) are visible with labels"
+    },
+    {
+      "op": "watch",
+      "key": "allowedPortalHeld",
+      "from": 1,
+      "to": 229,
+      "predicate": "onAllowedPortal",
+      "everyMs": 1000,
+      "mustHold": true,
+      "note": "safety proof: the tour only ever sits on portal-members/messages/billing/notifications. It never enters portal-book.html (a chrome-less customer page — pointed at, never opened; RESIDUAL R1), never a *-edit create form, never login.html. Full-page navs change location atomically between allowed pages; mid-nav samples throw and are skipped."
+    },
+    {
+      "op": "watch",
+      "key": "panelHeld",
+      "from": 2,
+      "to": 229,
+      "predicate": "panelExpanded",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "the CUSTOMER PORTAL sidebar stays expanded the whole tour (it never collapses and we never leave the admin chrome)"
+    },
+    {
+      "op": "watch",
+      "key": "membersIntact",
+      "from": 2,
+      "to": 126,
+      "predicate": "membersIntact",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "mutation guardrail (Members dwell): 4 rows and '1–4 of 4' hold — no member created, edited, or deleted; + New Record and Export pointed at, never pressed"
+    },
+    {
+      "op": "watch",
+      "key": "messagesIntact",
+      "from": 132,
+      "to": 152.5,
+      "predicate": "messagesIntact",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "mutation guardrail (Messages dwell): 4 rows, '1–4 of 4' — no message opened, composed, replied, or sent; list read only"
+    },
+    {
+      "op": "watch",
+      "key": "billingIntact",
+      "from": 157.5,
+      "to": 178,
+      "predicate": "billingIntact",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "mutation guardrail (Billing dwell): 4 rows, '1–4 of 4' — a live-money activity log, read only"
+    },
+    {
+      "op": "watch",
+      "key": "notifIntact",
+      "from": 183.5,
+      "to": 228,
+      "predicate": "notifIntact",
+      "everyMs": 2000,
+      "mustHold": true,
+      "note": "mutation guardrail (Notifications dwell): 4 rows, '1–4 of 4' — no notification sent, created, or edited; list read only"
+    },
+
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        40,
+        1079
+      ],
+      "to": {
+        "target": "railDigital",
+        "offset": [
+          90,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01): enter from the bottom-left toward the active Digital module rail item as 'Open the Digital module' is spoken"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.6,
+      "key": "railDigitalRect",
+      "target": "railDigital"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.75,
+      "key": "cpGroupRect",
+      "target": "cpGroup",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 0.9,
+      "key": "cpLinks",
+      "targets": [
+        "sideBooking",
+        "sideMembers",
+        "sideMessages",
+        "sideBilling",
+        "sideNotifications"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.05,
+      "key": "mobileGroupRect",
+      "target": "mobileGroup"
+    },
+    {
+      "op": "move",
+      "at": 1.4,
+      "to": {
+        "target": "railDigital",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 1 (p01): rest on the active Digital rail item"
+    },
+    {
+      "op": "move",
+      "at": 2.3,
+      "to": {
+        "target": "cpGroup",
+        "offset": [
+          70,
+          6
+        ]
+      },
+      "note": "step 1 (p02): 'The sidebar splits in two' — move to the CUSTOMER PORTAL group header"
+    },
+    {
+      "op": "move",
+      "at": 4.35,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 1 (p03): sweep the five entries — Booking Page (Customer)"
+    },
+    {
+      "op": "move",
+      "at": 5.6,
+      "to": {
+        "target": "sideMembers",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "Portal Members"
+    },
+    {
+      "op": "move",
+      "at": 6.6,
+      "to": {
+        "target": "sideMessages",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "Portal Messages"
+    },
+    {
+      "op": "move",
+      "at": 7.6,
+      "to": {
+        "target": "sideNotifications",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "down to Portal Notifications — 'runs the surfaces your members sign into'"
+    },
+    {
+      "op": "move",
+      "at": 8.9,
+      "to": {
+        "target": "cpGroup",
+        "offset": [
+          70,
+          6
+        ]
+      },
+      "note": "step 1 (p04): 'Five entries' — back to the group header"
+    },
+    {
+      "op": "move",
+      "at": 10.3,
+      "to": {
+        "target": "mobileGroup",
+        "offset": [
+          70,
+          6
+        ]
+      },
+      "note": "step 1 (p05): 'The mobile pages sit below, but those are the next lesson' — gesture to the MOBILE group"
+    },
+    {
+      "op": "move",
+      "at": 12.6,
+      "to": {
+        "target": "mobileGroup",
+        "offset": [
+          70,
+          40
+        ]
+      },
+      "note": "step 1 (p05 tail): hold just below the MOBILE group label"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 13.55,
+      "key": "crumbBarRect",
+      "target": "crumbBar",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 13.62,
+      "key": "sideMembersRect",
+      "target": "sideMembers"
+    },
+    {
+      "op": "move",
+      "at": 13.85,
+      "to": {
+        "target": "sideMembers",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 2 (p06): narration says 'Click Portal Members' — SAFETY/START note (RESIDUAL R2): the start page is already Portal Members (the list read in full), so its active sidebar link is POINTED AT, not clicked (mirrors WC-08-01's already-active link). The roster is already on screen; nothing navigates."
+    },
+    {
+      "op": "move",
+      "at": 15.6,
+      "to": {
+        "target": "crumbBar",
+        "offset": [
+          40,
+          20
+        ]
+      },
+      "note": "step 2 (p07): travel to the breadcrumb 'Customer Portal › Portal Members' — this is the roster of everyone who holds a portal login"
+    },
+    {
+      "op": "move",
+      "at": 19.4,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 2 (p08): ease over the page — 'when a customer says the website won't let them in, this is where you start'"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 23.62,
+      "key": "kpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 23.68,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiRegistered",
+        "kpiActive",
+        "kpiNew",
+        "kpiMobile"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 23.9,
+      "to": {
+        "target": "kpiRegistered",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 3 (p09): 'Four numbers across the top' — settle on the KPI strip"
+    },
+    {
+      "op": "move",
+      "at": 26.0,
+      "to": {
+        "target": "kpiRegistered",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 3 (p10): name them left to right — Registered members"
+    },
+    {
+      "op": "move",
+      "at": 26.6,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "how many were active this month"
+    },
+    {
+      "op": "move",
+      "at": 27.0,
+      "to": {
+        "target": "kpiNew",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "how many joined this week"
+    },
+    {
+      "op": "move",
+      "at": 27.4,
+      "to": {
+        "target": "kpiMobile",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 3 (p11): 'and the share who reach you on mobile' — Mobile Users"
+    },
+    {
+      "op": "move",
+      "at": 29.2,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          400,
+          80
+        ]
+      },
+      "note": "step 3 (p12): ease below the strip — 'one glance sizes the portal'"
+    },
+    {
+      "op": "move",
+      "at": 33.1,
+      "to": {
+        "target": "kpiMobile",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 3 (p13): 'that mobile share matters' — rest on Mobile Users"
+    },
+    {
+      "op": "move",
+      "at": 37.5,
+      "to": {
+        "point": [
+          1100,
+          320
+        ]
+      },
+      "note": "step 3 (p13 tail): ease off"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 41.15,
+      "key": "cardsRowRect",
+      "target": "cardsRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 41.22,
+      "key": "cards",
+      "targets": [
+        "cardGrowth",
+        "cardByPlan",
+        "cardStatus"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 41.45,
+      "to": {
+        "target": "cardGrowth",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "step 4 (p14): 'Below sit three cards' — gesture across the trio"
+    },
+    {
+      "op": "move",
+      "at": 43.6,
+      "to": {
+        "target": "cardGrowth",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 4 (p15): Growth over the year"
+    },
+    {
+      "op": "move",
+      "at": 44.3,
+      "to": {
+        "target": "cardByPlan",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "the plan mix with unlimited monthly the biggest slice"
+    },
+    {
+      "op": "move",
+      "at": 45.1,
+      "to": {
+        "target": "cardStatus",
+        "offset": [
+          0,
+          20
+        ]
+      },
+      "note": "step 4 (p16): and account health — active, inactive, and suspended"
+    },
+    {
+      "op": "move",
+      "at": 48.6,
+      "to": {
+        "target": "cardStatus",
+        "offset": [
+          40,
+          70
+        ]
+      },
+      "note": "step 4 (p17): 'Watch that suspended slice' — rest on the Member Status card's suspended segment"
+    },
+    {
+      "op": "move",
+      "at": 52.7,
+      "to": {
+        "target": "cardStatus",
+        "offset": [
+          40,
+          70
+        ]
+      },
+      "note": "step 4 (p18): 'it's where locked-out members surface before they call'"
+    },
+    {
+      "op": "move",
+      "at": 55.6,
+      "to": {
+        "point": [
+          900,
+          360
+        ]
+      },
+      "note": "step 4 (p18 tail): ease off"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 57.4,
+      "key": "listTitleRect",
+      "target": "listTitle",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 57.47,
+      "key": "listEyebrowRect",
+      "target": "listEyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.54,
+      "key": "recordsBadgeRect",
+      "target": "recordsBadge"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.61,
+      "key": "newRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.68,
+      "key": "exportRect",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.75,
+      "key": "filtersRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.82,
+      "key": "searchBoxRect",
+      "target": "searchBox"
+    },
+    {
+      "op": "move",
+      "at": 57.9,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 5 (p19): 'Now the roster itself' — the Member List card header"
+    },
+    {
+      "op": "move",
+      "at": 59.5,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p20): 'New Record and Export sit top-right' — approach from beside, never onto the create button"
+    },
+    {
+      "op": "move",
+      "at": 60.6,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p20): Export — beside it (do-not-click guardrail); then a search box and Filters just under them"
+    },
+    {
+      "op": "move",
+      "at": 61.3,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          220,
+          -24
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p20): the search box and Filters row"
+    },
+    {
+      "op": "move",
+      "at": 62.4,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p21): 'leave Export alone' — hold beside Export with the red do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 65.3,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -30,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p22): 'It sends data out, and this is a look-only tour' — still beside Export, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 68.5,
+      "to": {
+        "point": [
+          900,
+          470
+        ]
+      },
+      "note": "step 5 (p22 tail): ease off the toolbar"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 71.15,
+      "key": "theadRect",
+      "target": "theadRow",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 71.22,
+      "key": "ths",
+      "targets": [
+        "thName",
+        "thEmail",
+        "thMemberSince",
+        "thPlan",
+        "thPortalStatus",
+        "thLastLogin"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 71.45,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p23): 'Six columns'"
+    },
+    {
+      "op": "move",
+      "at": 72.85,
+      "to": {
+        "target": "thName",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p24): sweep left to right — Name"
+    },
+    {
+      "op": "move",
+      "at": 73.05,
+      "to": {
+        "target": "thEmail",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "email"
+    },
+    {
+      "op": "move",
+      "at": 73.2,
+      "to": {
+        "target": "thMemberSince",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "when they joined"
+    },
+    {
+      "op": "move",
+      "at": 73.35,
+      "to": {
+        "target": "thPlan",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "their plan"
+    },
+    {
+      "op": "move",
+      "at": 73.5,
+      "to": {
+        "target": "thPortalStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "portal status"
+    },
+    {
+      "op": "move",
+      "at": 73.7,
+      "to": {
+        "target": "thLastLogin",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and last login"
+    },
+    {
+      "op": "move",
+      "at": 73.9,
+      "to": {
+        "target": "thPortalStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p25): 'Portal status is your first stop when someone can't reach the website' — rest on PORTAL STATUS"
+    },
+    {
+      "op": "move",
+      "at": 76.6,
+      "to": {
+        "target": "thPortalStatus",
+        "offset": [
+          0,
+          80
+        ]
+      },
+      "note": "step 6 (p26-p27): down the Portal Status column — access active; then Last Login backs it up"
+    },
+    {
+      "op": "move",
+      "at": 80.5,
+      "to": {
+        "target": "thLastLogin",
+        "offset": [
+          0,
+          80
+        ]
+      },
+      "note": "step 6 (p27): 'Last login backs it up, showing when they were really here'"
+    },
+    {
+      "op": "move",
+      "at": 85.0,
+      "to": {
+        "point": [
+          900,
+          560
+        ]
+      },
+      "note": "step 6 (p27 tail): ease off"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 88.65,
+      "key": "footerRect",
+      "target": "footerBar",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 88.72,
+      "key": "pgInfoRect",
+      "target": "pgInfo"
+    },
+    {
+      "op": "log-rect",
+      "at": 88.79,
+      "key": "rowsPerPageRect",
+      "target": "rowsPerPage"
+    },
+    {
+      "op": "log-rect",
+      "at": 88.86,
+      "key": "newRecordRect2",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 89.0,
+      "to": {
+        "target": "rowsPerPage",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 7 (p28): 'Down at the foot: rows per page, a record count, and the pager'"
+    },
+    {
+      "op": "move",
+      "at": 89.9,
+      "to": {
+        "target": "pgInfo",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 7 (p28-p29): the record count '1–4 of 4'; reading, paging, and searching change nothing"
+    },
+    {
+      "op": "move",
+      "at": 93.85,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p30): 'New Record would open a create form' — pointed at from beside with the red do-not-click ring, never pressed"
+    },
+    {
+      "op": "move",
+      "at": 96.9,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p31): 'but that form didn't load during verification, so we leave it parked' — still beside + New Record (RESIDUAL R3: create form uncaptured, parked)"
+    },
+    {
+      "op": "move",
+      "at": 100.2,
+      "to": {
+        "point": [
+          760,
+          300
+        ]
+      },
+      "note": "step 7 (p31 tail): ease off, back toward the sidebar for step 8"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 102.55,
+      "key": "sideBookingRect",
+      "target": "sideBooking",
+      "requireStableMs": 160
+    },
+    {
+      "op": "move",
+      "at": 102.8,
+      "to": {
+        "target": "cpGroup",
+        "offset": [
+          70,
+          6
+        ]
+      },
+      "note": "step 8 (p32): 'Back to the sidebar' — return to the CUSTOMER PORTAL group"
+    },
+    {
+      "op": "move",
+      "at": 104.1,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 8 (p33): 'Click Booking Page' — SAFETY/ENGINE OVERRIDE (RESIDUAL R1): Booking Page (Customer) opens a chrome-less full-page customer site (no admin sidebar, only inert Help/Sign-in anchors) from which the engine — which navigates only via on-screen clicks and cannot go back or trim mid-take — cannot return to reach steps 9–11. So the Booking Page entry is POINTED AT (callout ⑧), the customer site is described from the narration, and the page is never opened. Verified July 11: portal-book.html has no return-to-admin control; CDP Alt+Left does not drive browser-back."
+    },
+    {
+      "op": "move",
+      "at": 106.2,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 8 (p34): 'The admin chrome disappears' — hold on the Booking Page entry"
+    },
+    {
+      "op": "move",
+      "at": 108.1,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          170,
+          6
+        ]
+      },
+      "note": "step 8 (p35-p36): the customer's own booking site with its own branding and a five-step wizard"
+    },
+    {
+      "op": "move",
+      "at": 118.0,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 8 (p37): three service categories — an inspection, an oil change, and detailing"
+    },
+    {
+      "op": "move",
+      "at": 121.2,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 8 (p38-p39): 'Read that first screen, then stop' — Continue never gets clicked; the wizard is never advanced (matched by never opening the page)"
+    },
+    {
+      "op": "move",
+      "at": 125.6,
+      "to": {
+        "target": "sideMessages",
+        "offset": [
+          120,
+          0
+        ]
+      },
+      "note": "step 8 (p39 tail): drift down toward the next entry, Portal Messages"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 127.5,
+      "key": "sideMessagesRect",
+      "target": "sideMessages"
+    },
+    {
+      "op": "move",
+      "at": 127.85,
+      "to": {
+        "target": "sideMessages",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p40): 'Portal Messages next' — approach the Portal Messages sidebar link"
+    },
+    {
+      "op": "click",
+      "target": "sideMessages",
+      "pressAt": 128.85,
+      "hoverMs": 420,
+      "postcondition": "onMessages",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: genuine sidebar navigation to portal-messages.html (a read-only list — a plain <a href> full-page nav, probe-verified inert). Press inside the p40→p41 gap so the inbox is up before 'This is where member messages land' plays."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "msgStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 130.4,
+      "predicate": "messagesLoaded",
+      "note": "load check: Message inbox up — 4 KPI tiles, 4 rows, Priority column, '1–4 of 4', no agent-service error"
+    },
+    {
+      "op": "log-rect",
+      "at": 130.5,
+      "key": "msgKpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 130.58,
+      "key": "msgKpis",
+      "targets": [
+        "kpiUnread",
+        "kpiMsgOpen",
+        "kpiAvgResp"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 130.7,
+      "to": {
+        "target": "kpiUnread",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 9 (p41): 'This is where member messages land and get worked'"
+    },
+    {
+      "op": "move",
+      "at": 133.3,
+      "to": {
+        "target": "kpiUnread",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 9 (p42): Fourteen unread"
+    },
+    {
+      "op": "move",
+      "at": 134.0,
+      "to": {
+        "target": "kpiMsgOpen",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "twenty-eight open"
+    },
+    {
+      "op": "move",
+      "at": 135.65,
+      "to": {
+        "target": "kpiAvgResp",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 9 (p43): responses average around three hours"
+    },
+    {
+      "op": "log-rect",
+      "at": 139.7,
+      "key": "thMsgStatusRect",
+      "target": "thMsgStatus",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 139.77,
+      "key": "thMsgPriorityRect",
+      "target": "thMsgPriority"
+    },
+    {
+      "op": "log-rect",
+      "at": 139.84,
+      "key": "thMsgAssignedRect",
+      "target": "thMsgAssigned"
+    },
+    {
+      "op": "move",
+      "at": 140.1,
+      "to": {
+        "target": "thMsgStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p44): 'Every row carries a status,"
+    },
+    {
+      "op": "move",
+      "at": 141.3,
+      "to": {
+        "target": "thMsgPriority",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "a priority,"
+    },
+    {
+      "op": "move",
+      "at": 142.4,
+      "to": {
+        "target": "thMsgAssigned",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and an owner'"
+    },
+    {
+      "op": "move",
+      "at": 144.1,
+      "to": {
+        "target": "thMsgStatus",
+        "offset": [
+          0,
+          90
+        ]
+      },
+      "note": "step 9 (p45): 'a billing question and a cancellation request never look alike' — down the Status column"
+    },
+    {
+      "op": "log-rect",
+      "at": 148.3,
+      "key": "msgNewRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 148.55,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p46): 'Replying reaches a real customer' — hold beside + New Record with the red do-not-click ring (compose/reply/send never opened)"
+    },
+    {
+      "op": "move",
+      "at": 150.7,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 9 (p47): 'We read the list and touch nothing'"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 153.0,
+      "key": "sideBillingRect",
+      "target": "sideBilling"
+    },
+    {
+      "op": "move",
+      "at": 153.25,
+      "to": {
+        "target": "sideBilling",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p48): 'Portal Billing sits just under it' — approach the Portal Billing sidebar link"
+    },
+    {
+      "op": "click",
+      "target": "sideBilling",
+      "pressAt": 155.4,
+      "hoverMs": 420,
+      "postcondition": "onBilling",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: genuine sidebar navigation to portal-billing.html (read-only activity log; plain <a href> nav, probe-verified inert). Press inside the p48→p49 gap."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "billStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 156.9,
+      "predicate": "billingLoaded",
+      "note": "load check: Billing log up — 4 KPI tiles, 4 rows, Action column, '1–4 of 4', no error"
+    },
+    {
+      "op": "log-rect",
+      "at": 157.0,
+      "key": "billKpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 157.08,
+      "key": "billKpis",
+      "targets": [
+        "kpiUpdates",
+        "kpiFailed",
+        "kpiAutoRenew"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 157.2,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          300,
+          12
+        ]
+      },
+      "note": "step 10 (p49): 'A running log of billing events on the portal side'"
+    },
+    {
+      "op": "log-rect",
+      "at": 159.2,
+      "key": "rowCardFailedRect",
+      "target": "rowCardFailed"
+    },
+    {
+      "op": "move",
+      "at": 159.45,
+      "to": {
+        "target": "rowCardFailed",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 10 (p50-p51): card updates, plan changes, auto renewals, and the failures that turn into phone calls"
+    },
+    {
+      "op": "log-rect",
+      "at": 167.9,
+      "key": "thBillActionRect",
+      "target": "thBillAction",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 167.97,
+      "key": "thBillStatusRect",
+      "target": "thBillStatus"
+    },
+    {
+      "op": "move",
+      "at": 168.5,
+      "to": {
+        "target": "thBillAction",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 (p52-p53): 'When a member asks why a card was declined, the action"
+    },
+    {
+      "op": "move",
+      "at": 172.9,
+      "to": {
+        "target": "thBillStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and status columns tell that story in one row'"
+    },
+    {
+      "op": "log-rect",
+      "at": 175.0,
+      "key": "billNewRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 175.25,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p54-p55): 'Every line here is live money. Read it, always; touch it, never' — beside + New Record / Export with the red do-not-click ring"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 178.55,
+      "key": "sideNotifRect",
+      "target": "sideNotifications"
+    },
+    {
+      "op": "move",
+      "at": 178.9,
+      "to": {
+        "target": "sideNotifications",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p56): 'Last entry, Portal Notifications' — approach the Portal Notifications sidebar link"
+    },
+    {
+      "op": "click",
+      "target": "sideNotifications",
+      "pressAt": 181.1,
+      "hoverMs": 420,
+      "postcondition": "onNotifications",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11: genuine sidebar navigation to portal-notifications.html (read-only automated-send list; plain <a href> nav, probe-verified inert). Press near the end of the 'Portal Notifications' cue, inside its trailing break."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "notifStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 182.9,
+      "predicate": "notificationsLoaded",
+      "note": "load check: Notification list up — 4 KPI tiles, 4 rows, Trigger column, '1–4 of 4', no error"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.0,
+      "key": "notifKpiStripRect",
+      "target": "kpiStrip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 183.08,
+      "key": "notifKpis",
+      "targets": [
+        "kpiActiveNotif",
+        "kpiSentToday",
+        "kpiOpenRate"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 183.2,
+      "to": {
+        "target": "kpiStrip",
+        "offset": [
+          300,
+          12
+        ]
+      },
+      "note": "step 11 (p57): 'The automated sends'"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.6,
+      "key": "rowWelcomeRect",
+      "target": "rowWelcome"
+    },
+    {
+      "op": "log-rect",
+      "at": 183.67,
+      "key": "rowRenewalRect",
+      "target": "rowRenewal"
+    },
+    {
+      "op": "move",
+      "at": 183.85,
+      "to": {
+        "target": "rowWelcome",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 11 (p58): a welcome email fires when an account is created"
+    },
+    {
+      "op": "move",
+      "at": 186.7,
+      "to": {
+        "target": "rowRenewal",
+        "offset": [
+          200,
+          0
+        ]
+      },
+      "note": "step 11 (p59): and a renewal reminder goes out a week ahead"
+    },
+    {
+      "op": "log-rect",
+      "at": 189.4,
+      "key": "thNotifAudienceRect",
+      "target": "thNotifAudience",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rect",
+      "at": 189.47,
+      "key": "thNotifOpenRateRect",
+      "target": "thNotifOpenRate"
+    },
+    {
+      "op": "log-rect",
+      "at": 189.54,
+      "key": "thNotifStatusRect",
+      "target": "thNotifStatus"
+    },
+    {
+      "op": "move",
+      "at": 189.7,
+      "to": {
+        "target": "thNotifAudience",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 (p60): the list tracks each one's audience,"
+    },
+    {
+      "op": "move",
+      "at": 190.7,
+      "to": {
+        "target": "thNotifOpenRate",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "open rate,"
+    },
+    {
+      "op": "move",
+      "at": 191.5,
+      "to": {
+        "target": "thNotifStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and status"
+    },
+    {
+      "op": "move",
+      "at": 193.6,
+      "to": {
+        "target": "kpiActiveNotif",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 11 (p61): Twelve are active,"
+    },
+    {
+      "op": "move",
+      "at": 194.9,
+      "to": {
+        "target": "kpiSentToday",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "and more than eight hundred went out today alone"
+    },
+    {
+      "op": "log-rect",
+      "at": 197.3,
+      "key": "notifNewRecordRect",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 197.6,
+      "to": {
+        "target": "newRecordBtn",
+        "offset": [
+          -80,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 11 (p62): 'nothing here is ever sent, created, or edited in training' — beside + New Record with the red do-not-click ring"
+    },
+    {
+      "op": "move",
+      "at": 201.6,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      },
+      "note": "step 11 (p62 tail): ease off toward the sidebar for the recap"
+    },
+
+    {
+      "op": "log-rect",
+      "at": 203.4,
+      "key": "cpGroupRect2",
+      "target": "cpGroup",
+      "requireStableMs": 160
+    },
+    {
+      "op": "log-rects",
+      "at": 203.47,
+      "key": "cpLinks2",
+      "targets": [
+        "sideBooking",
+        "sideMembers",
+        "sideMessages",
+        "sideBilling",
+        "sideNotifications"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 203.7,
+      "to": {
+        "target": "cpGroup",
+        "offset": [
+          70,
+          6
+        ]
+      },
+      "note": "step 12 (p63): 'So that's the Customer Portal group'"
+    },
+    {
+      "op": "move",
+      "at": 205.9,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 12 (p64): 'Five entries, and you have now read all five' — top of the group"
+    },
+    {
+      "op": "move",
+      "at": 209.7,
+      "to": {
+        "target": "sideMembers",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 12 (p65): Portal Members for the roster and login trouble"
+    },
+    {
+      "op": "move",
+      "at": 212.7,
+      "to": {
+        "target": "sideBooking",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 12 (p66): the booking page for what the customer actually sees"
+    },
+    {
+      "op": "move",
+      "at": 215.95,
+      "to": {
+        "target": "sideMessages",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 12 (p67): Messages for the inbox,"
+    },
+    {
+      "op": "move",
+      "at": 217.0,
+      "to": {
+        "target": "sideBilling",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "Billing for the money log,"
+    },
+    {
+      "op": "move",
+      "at": 218.0,
+      "to": {
+        "target": "sideNotifications",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "Notifications for the automated sends"
+    },
+    {
+      "op": "move",
+      "at": 219.2,
+      "to": {
+        "target": "cpGroup",
+        "offset": [
+          70,
+          6
+        ]
+      },
+      "note": "step 12 (p68): 'Reach them from the sidebar, since a pasted address still fails'"
+    },
+    {
+      "op": "move",
+      "at": 222.0,
+      "to": {
+        "point": [
+          760,
+          300
+        ]
+      },
+      "note": "step 12 (p69): 'read everything without sending, booking, or exporting a thing' — ease clear of content and captions for the close"
+    },
+    {
+      "op": "move",
+      "at": 226.5,
+      "to": {
+        "point": [
+          1400,
+          900
+        ]
+      },
+      "note": "step 12: final park, clear of the burned captions and completion card"
+    },
+    {
+      "op": "assert",
+      "at": 229.0,
+      "predicate": "onNotifications",
+      "note": "end state: still on Portal Notifications, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 229.4,
+      "predicate": "notifIntact",
+      "note": "end state: list intact — 4 rows, '1–4 of 4'; across the whole tour nothing was sent, created, edited, deleted, booked, or exported"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "cpGroupRect",
+        "place": "right",
+        "from": 1.5,
+        "to": 13.3
+      },
+      {
+        "n": 2,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 13.9,
+        "to": 23.5
+      },
+      {
+        "n": 3,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 24.0,
+        "to": 41.0
+      },
+      {
+        "n": 4,
+        "anchor": "cardsRowRect",
+        "place": "below-left",
+        "from": 41.5,
+        "to": 57.3
+      },
+      {
+        "n": 5,
+        "anchor": "listTitleRect",
+        "place": "right",
+        "from": 57.9,
+        "to": 71.1
+      },
+      {
+        "n": 6,
+        "anchor": "theadRect",
+        "place": "below-left",
+        "from": 71.6,
+        "to": 88.6
+      },
+      {
+        "n": 7,
+        "anchor": "pgInfoRect",
+        "place": "left-top",
+        "from": 89.1,
+        "to": 102.5
+      },
+      {
+        "n": 8,
+        "anchor": "sideBookingRect",
+        "place": "right",
+        "from": 103.0,
+        "to": 127.4
+      },
+      {
+        "n": 9,
+        "anchor": "thMsgStatusRect",
+        "place": "below-left",
+        "from": 139.9,
+        "to": 152.9
+      },
+      {
+        "n": 10,
+        "anchor": "thBillActionRect",
+        "place": "below-left",
+        "from": 167.9,
+        "to": 178.4
+      },
+      {
+        "n": 11,
+        "anchor": "notifNewRecordRect",
+        "place": "left",
+        "from": 197.6,
+        "to": 203.2
+      },
+      {
+        "n": 12,
+        "anchor": "cpGroupRect2",
+        "place": "right",
+        "from": 203.9,
+        "to": 228.0
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "sideMembersRect",
+        "from": 13.85,
+        "to": 15.6,
+        "note": "step 2 (p06): the active Portal Members entry (pointed at, never clicked — start page is already Members)"
+      },
+      {
+        "anchor": "kpiTiles.kpiRegistered",
+        "from": 26.0,
+        "to": 26.6,
+        "note": "step 3 (p10) spoken order: Registered"
+      },
+      {
+        "anchor": "kpiTiles.kpiActive",
+        "from": 26.6,
+        "to": 27.0,
+        "note": "Active This Month"
+      },
+      {
+        "anchor": "kpiTiles.kpiNew",
+        "from": 27.0,
+        "to": 27.4,
+        "note": "New This Week"
+      },
+      {
+        "anchor": "kpiTiles.kpiMobile",
+        "from": 27.4,
+        "to": 29.2,
+        "note": "step 3 (p11): Mobile Users"
+      },
+      {
+        "anchor": "cards.cardStatus",
+        "from": 48.6,
+        "to": 57.0,
+        "note": "step 4 (p17-p18): the Member Status card — the suspended slice to watch"
+      },
+      {
+        "anchor": "exportRect",
+        "from": 60.6,
+        "to": 71.0,
+        "color": "#dc2626",
+        "note": "step 5 (p21-p22) do-not-click: Export sends data out of the tenant — pointed at from beside, never pressed"
+      },
+      {
+        "anchor": "newRecordRect",
+        "from": 59.5,
+        "to": 62.4,
+        "color": "#dc2626",
+        "note": "step 5 (p20) do-not-click: + New Record opens a create form — pointed at, never pressed"
+      },
+      {
+        "anchor": "ths.thPortalStatus",
+        "from": 73.9,
+        "to": 80.5,
+        "note": "step 6 (p25-p26): PORTAL STATUS — the first field to check on a portal-login call"
+      },
+      {
+        "anchor": "ths.thLastLogin",
+        "from": 80.5,
+        "to": 88.4,
+        "note": "step 6 (p27): LAST LOGIN backs it up"
+      },
+      {
+        "anchor": "newRecordRect2",
+        "from": 93.85,
+        "to": 102.4,
+        "color": "#dc2626",
+        "note": "step 7 (p30-p31) do-not-click: + New Record opens a create form (uncaptured, parked — RESIDUAL R3); never pressed"
+      },
+      {
+        "anchor": "sideBookingRect",
+        "from": 104.1,
+        "to": 125.0,
+        "note": "step 8 (p33-p39): the Booking Page (Customer) entry — the customer booking site is described from here; the page is a chrome-less dead-end and is never opened (RESIDUAL R1)"
+      },
+      {
+        "anchor": "msgKpis.kpiUnread",
+        "from": 133.3,
+        "to": 134.0,
+        "note": "step 9 (p42): 14 Unread"
+      },
+      {
+        "anchor": "msgKpis.kpiMsgOpen",
+        "from": 134.0,
+        "to": 135.65,
+        "note": "28 Open"
+      },
+      {
+        "anchor": "msgKpis.kpiAvgResp",
+        "from": 135.65,
+        "to": 139.0,
+        "note": "step 9 (p43): 3.2 hrs Avg Response"
+      },
+      {
+        "anchor": "thMsgStatusRect",
+        "from": 140.1,
+        "to": 141.3,
+        "note": "step 9 (p44): STATUS"
+      },
+      {
+        "anchor": "thMsgPriorityRect",
+        "from": 141.3,
+        "to": 142.4,
+        "note": "PRIORITY"
+      },
+      {
+        "anchor": "thMsgAssignedRect",
+        "from": 142.4,
+        "to": 144.1,
+        "note": "ASSIGNED TO (owner)"
+      },
+      {
+        "anchor": "msgNewRecordRect",
+        "from": 148.55,
+        "to": 152.7,
+        "color": "#dc2626",
+        "note": "step 9 (p46-p47) do-not-click: + New Record / compose-reply-send never opened — replying reaches a real customer"
+      },
+      {
+        "anchor": "thBillActionRect",
+        "from": 168.5,
+        "to": 172.9,
+        "note": "step 10 (p52-p53): ACTION"
+      },
+      {
+        "anchor": "thBillStatusRect",
+        "from": 172.9,
+        "to": 178.3,
+        "note": "STATUS — together they tell the declined-card story"
+      },
+      {
+        "anchor": "billNewRecordRect",
+        "from": 175.25,
+        "to": 178.3,
+        "color": "#dc2626",
+        "note": "step 10 (p54-p55) do-not-click: live money — + New Record / Export never pressed"
+      },
+      {
+        "anchor": "notifNewRecordRect",
+        "from": 197.6,
+        "to": 203.2,
+        "color": "#dc2626",
+        "note": "step 11 (p62) do-not-click: live sends — + New Record never pressed; nothing sent, created, or edited"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.0,
+        "z": 1.32,
+        "cx": 260,
+        "cy": 280,
+        "ease": true,
+        "note": "step 1: the module rail + CUSTOMER PORTAL group"
+      },
+      {
+        "t": 13.2,
+        "z": 1.32,
+        "cx": 260,
+        "cy": 280
+      },
+      {
+        "t": 13.9,
+        "z": 1.22,
+        "cx": 540,
+        "cy": 220,
+        "ease": true,
+        "note": "step 2: the breadcrumb / page identity, top-left"
+      },
+      {
+        "t": 23.5,
+        "z": 1.22,
+        "cx": 540,
+        "cy": 220
+      },
+      {
+        "t": 23.9,
+        "z": 1.35,
+        "cx": 1117,
+        "cy": 150,
+        "ease": true,
+        "note": "step 3: the KPI strip"
+      },
+      {
+        "t": 41.0,
+        "z": 1.35,
+        "cx": 1117,
+        "cy": 150
+      },
+      {
+        "t": 41.45,
+        "z": 1.24,
+        "cx": 1117,
+        "cy": 250,
+        "ease": true,
+        "note": "step 4: the three insight cards"
+      },
+      {
+        "t": 57.3,
+        "z": 1.24,
+        "cx": 1117,
+        "cy": 250
+      },
+      {
+        "t": 57.9,
+        "z": 1.16,
+        "cx": 1080,
+        "cy": 430,
+        "ease": true,
+        "note": "step 5: the Member List card header + toolbar (New Record / Export guardrails)"
+      },
+      {
+        "t": 71.1,
+        "z": 1.16,
+        "cx": 1080,
+        "cy": 430
+      },
+      {
+        "t": 71.45,
+        "z": 1.2,
+        "cx": 1100,
+        "cy": 545,
+        "ease": true,
+        "note": "step 6: the six column headers"
+      },
+      {
+        "t": 88.6,
+        "z": 1.2,
+        "cx": 1100,
+        "cy": 545
+      },
+      {
+        "t": 89.0,
+        "z": 1.18,
+        "cx": 1080,
+        "cy": 720,
+        "ease": true,
+        "note": "step 7: the pagination row"
+      },
+      {
+        "t": 102.5,
+        "z": 1.18,
+        "cx": 1080,
+        "cy": 720
+      },
+      {
+        "t": 102.9,
+        "z": 1.3,
+        "cx": 240,
+        "cy": 230,
+        "ease": true,
+        "note": "step 8: the Booking Page (Customer) sidebar entry (pointed at; the page is never opened)"
+      },
+      {
+        "t": 127.4,
+        "z": 1.3,
+        "cx": 240,
+        "cy": 230
+      },
+      {
+        "t": 128.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 9: pull wide across the nav to show the Portal Messages page identity"
+      },
+      {
+        "t": 131.0,
+        "z": 1.32,
+        "cx": 1117,
+        "cy": 150,
+        "ease": true,
+        "note": "step 9: the message inbox KPIs"
+      },
+      {
+        "t": 138.8,
+        "z": 1.32,
+        "cx": 1117,
+        "cy": 150
+      },
+      {
+        "t": 139.6,
+        "z": 1.2,
+        "cx": 1240,
+        "cy": 520,
+        "ease": true,
+        "note": "step 9: the Status / Priority / Assigned To columns"
+      },
+      {
+        "t": 152.9,
+        "z": 1.2,
+        "cx": 1240,
+        "cy": 520
+      },
+      {
+        "t": 153.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 10: pull wide across the nav to show the Portal Billing page identity"
+      },
+      {
+        "t": 157.2,
+        "z": 1.28,
+        "cx": 1117,
+        "cy": 300,
+        "ease": true,
+        "note": "step 10: the billing activity log"
+      },
+      {
+        "t": 166.5,
+        "z": 1.28,
+        "cx": 1117,
+        "cy": 300
+      },
+      {
+        "t": 168.2,
+        "z": 1.22,
+        "cx": 1300,
+        "cy": 520,
+        "ease": true,
+        "note": "step 10: the ACTION / STATUS columns"
+      },
+      {
+        "t": 178.4,
+        "z": 1.22,
+        "cx": 1300,
+        "cy": 520
+      },
+      {
+        "t": 178.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "step 11: pull wide across the nav to show the Portal Notifications page identity"
+      },
+      {
+        "t": 183.0,
+        "z": 1.24,
+        "cx": 1117,
+        "cy": 330,
+        "ease": true,
+        "note": "step 11: the notification list + KPIs"
+      },
+      {
+        "t": 196.5,
+        "z": 1.24,
+        "cx": 1117,
+        "cy": 330
+      },
+      {
+        "t": 197.6,
+        "z": 1.3,
+        "cx": 1620,
+        "cy": 400,
+        "ease": true,
+        "note": "step 11: the + New Record do-not-click guardrail, top-right"
+      },
+      {
+        "t": 203.2,
+        "z": 1.3,
+        "cx": 1620,
+        "cy": 400
+      },
+      {
+        "t": 203.7,
+        "z": 1.26,
+        "cx": 240,
+        "cy": 230,
+        "ease": true,
+        "note": "step 12: recap — the CUSTOMER PORTAL group"
+      },
+      {
+        "t": 221.0,
+        "z": 1.26,
+        "cx": 240,
+        "cy": 230
+      },
+      {
+        "t": 222.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 229.956,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Portal Pages — Complete",
+      "from": 228.16,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 227.86
+  },
+  "neverClick": [
+    "\\+ ?new record",
+    "new record",
+    "new member",
+    "\\bnew\\b",
+    "export",
+    "\\bcontinue\\b",
+    "continue →",
+    "state inspection",
+    "oil change",
+    "five star detailing",
+    "book a service",
+    "\\bbook\\b",
+    "sign in",
+    "\\bhelp\\b",
+    "filters",
+    "\\bsearch\\b",
+    "\\bsend\\b",
+    "reply",
+    "compose",
+    "\\bsave\\b",
+    "save changes",
+    "\\bedit\\b",
+    "delete",
+    "confirm",
+    "submit",
+    "approve",
+    "member rows / row-link rows (no row is opened; detail is out of scope)",
+    "page arrows / pagination buttons",
+    "search ⌘k",
+    "ask shyne",
+    "log out",
+    "log out now",
+    "logout"
+  ]
+}

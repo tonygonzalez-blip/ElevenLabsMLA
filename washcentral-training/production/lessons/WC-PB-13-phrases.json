@@ -1,0 +1,159 @@
+{
+  "lesson": "WC-PB-13",
+  "audioMaster": "training/playbooks/WC-PB-13-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence pauses (never rewritten, summarized, or reordered; pronunciation spellings kept as spoken, e.g. 'I-T and Support', 'S-S-O', 'GL Code'). Block windows are MEASURED onsets, not the nominal formula: Sigma(ffprobe per-file audio + 0.4) puts the total at 236.741s, which overshoots the ffprobe-probed master (236.356s) by 0.385s (> 0.3 tolerance) because the concatenated MP3 was joined with ~0.37s inter-block gaps rather than 0.4s. Onsets were therefore measured by normalized cross-correlation of each WC-PB-13-sNN.mp3 (8 kHz mono PCM) against the joined master (all 12 blocks matched at score 1.000). Master ffprobe duration 236.356s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 20.8,
+      "phrases": [
+        { "id": "p01", "text": "Three complaints, one shape." },
+        { "id": "p02", "text": "Tickets stopped reaching Zoho." },
+        { "id": "p03", "text": "Single sign-on users locked out." },
+        { "id": "p04", "text": "An accounting export full of holes." },
+        { "id": "p05", "text": "Each one is a connector that quit authenticating, and each gets the same read:" },
+        { "id": "p06", "text": "open the connector, check its status, check its token," },
+        { "id": "p07", "text": "then look at the surface the user actually feels." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 20.8,
+      "endS": 41.6,
+      "phrases": [
+        { "id": "p08", "text": "Open the connector. Settings, Integrations, Zoho Desk." },
+        { "id": "p09", "text": "One chip is the headline: Not Configured, with a warning triangle." },
+        { "id": "p10", "text": "In this demo tenant Zoho was never connected, so that reading is honest." },
+        { "id": "p11", "text": "On a live tenant that chip is your first and fastest read, before you touch anything else." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 41.6,
+      "endS": 57.84,
+      "phrases": [
+        { "id": "p12", "text": "Four tiles sit across the top of the card." },
+        { "id": "p13", "text": "Connection reads Not set, which matches the banner." },
+        { "id": "p14", "text": "Data center, US. Sync direction, both." },
+        { "id": "p15", "text": "When a working connection drops, this row is the quick read" },
+        { "id": "p16", "text": "before you go digging through credentials." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 57.84,
+      "endS": 75.12,
+      "phrases": [
+        { "id": "p17", "text": "Top right, two buttons." },
+        { "id": "p18", "text": "Test Connection fires a live probe against the real integration." },
+        { "id": "p19", "text": "Edit Configuration opens the credential form." },
+        { "id": "p20", "text": "Both are admin actions on production." },
+        { "id": "p21", "text": "You locate them so your escalation can name them," },
+        { "id": "p22", "text": "and you never click either one from the demo tenant." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 75.12,
+      "endS": 98.24,
+      "phrases": [
+        { "id": "p23", "text": "Now the Settings tab, and the credentials block." },
+        { "id": "p24", "text": "Client ID, secret, tokens: all blank or not set here." },
+        { "id": "p25", "text": "The field that matters most is token expiry." },
+        { "id": "p26", "text": "A connector that worked yesterday and fails today usually has a lapsed token behind it." },
+        { "id": "p27", "text": "Expiry in the past, access token gone." },
+        { "id": "p28", "text": "The re-auth is an admin job, and none of these values ever goes into your ticket." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 98.24,
+      "endS": 114.72,
+      "phrases": [
+        { "id": "p29", "text": "Two more reads before you leave." },
+        { "id": "p30", "text": "Under General, Enabled says yes. Under Sync, the direction is both." },
+        { "id": "p31", "text": "So nobody switched it off. The failure is authentication." },
+        { "id": "p32", "text": "And the Instructions tab next door holds the reconnect procedure for the admin who runs it." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 114.72,
+      "endS": 137.36,
+      "phrases": [
+        { "id": "p33", "text": "Symptom one, the help desk surface." },
+        { "id": "p34", "text": "Open I-T and Support, then Help Desk Zoho." },
+        { "id": "p35", "text": "The page loads, and it tells the truth." },
+        { "id": "p36", "text": "Every ticket count reads as a dash, and the card in the middle says Zoho Desk not connected," },
+        { "id": "p37", "text": "with a button routing back to Settings." },
+        { "id": "p38", "text": "Dashes in a healthy frame point at the connector, not the page." },
+        { "id": "p39", "text": "That is your ticket surface evidence." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 137.36,
+      "endS": 160.32,
+      "phrases": [
+        { "id": "p40", "text": "Symptom two, single sign-on lockouts." },
+        { "id": "p41", "text": "Open System Users, under Users and Security." },
+        { "id": "p42", "text": "More than eight thousand accounts load here, and two columns carry this ticket." },
+        { "id": "p43", "text": "S-S-O flags who signs in through the provider, plain yes or no chips." },
+        { "id": "p44", "text": "Last login shows when each of them last got in." },
+        { "id": "p45", "text": "When the provider drops, the yes rows are your outage list." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 160.32,
+      "endS": 181.12,
+      "phrases": [
+        { "id": "p46", "text": "Symptom three, the accounting export." },
+        { "id": "p47", "text": "Back in Integrations, the accounting connector reads exactly like Zoho did:" },
+        { "id": "p48", "text": "status chip, test button, token block." },
+        { "id": "p49", "text": "Same read, same rules, same hands off." },
+        { "id": "p50", "text": "And if the connection is fine but entries land under the wrong codes, that's GL Code mapping." },
+        { "id": "p51", "text": "Different lesson." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 181.12,
+      "endS": 197.84,
+      "phrases": [
+        { "id": "p52", "text": "One trap before you write anything up." },
+        { "id": "p53", "text": "Pages have bad minutes." },
+        { "id": "p54", "text": "A list that will not load, or a stray fetch error," },
+        { "id": "p55", "text": "can be the app's own data service hiccuping, and neither one proves an integration is down." },
+        { "id": "p56", "text": "Reload first. Then let the connector's status chip make the call." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 197.84,
+      "endS": 215.92,
+      "phrases": [
+        { "id": "p57", "text": "Now the escalation." },
+        { "id": "p58", "text": "Name the integration. Quote the status banner word for word." },
+        { "id": "p59", "text": "Say whether an admin ran Test Connection and what it returned." },
+        { "id": "p60", "text": "Give the failure window with timestamps." },
+        { "id": "p61", "text": "And keep every token, secret, and masked value out of it. No exceptions." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 215.92,
+      "endS": 236.356,
+      "phrases": [
+        { "id": "p62", "text": "That's the whole playbook." },
+        { "id": "p63", "text": "Scope to one connector. Read the chip, then the token expiry." },
+        { "id": "p64", "text": "Locate Test Connection and leave it alone." },
+        { "id": "p65", "text": "Confirm the surface the user feels, rule out a transient fetch error," },
+        { "id": "p66", "text": "and route a ticket an admin can act on." },
+        { "id": "p67", "text": "Every screen stayed read-only, start to finish." }
+      ]
+    }
+  ],
+  "output": "WC-PB-13-integration-down-v1.1"
+}

@@ -1,0 +1,521 @@
+{
+  "lesson": "WC-04-01",
+  "title": "Inventory: Items & Item Detail",
+  "audioMaster": "training/module04-inventory/WC-04-01-full-narration-v1.0.mp3",
+  "audioDurationS": 218.201,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/inv-items.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "sideItems": {
+      "selector": "aside.sidebar a[href=\"inv-items.html\"]"
+    },
+    "sideBatches": {
+      "selector": "aside.sidebar a[href=\"inv-batches.html\"]"
+    },
+    "sideAdjustments": {
+      "selector": "aside.sidebar a[href=\"inv-adjustments.html\"]"
+    },
+    "sideVendors": {
+      "selector": "aside.sidebar a[href=\"inv-vendors.html\"]"
+    },
+    "sideChemicals": {
+      "selector": "aside.sidebar a[href=\"inv-chemicals.html\"]"
+    },
+    "sidePOs": {
+      "selector": "aside.sidebar a[href=\"inv-purchase-orders.html\"]"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTotalItems": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Items/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiLowStock": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Low Stock/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiCategories": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Categories/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiVendors": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Vendors/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "panelsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "panelTrend": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Item Count Trend/.test(c.textContent||''))"
+    },
+    "panelType": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Items by Type/.test(c.textContent||''))"
+    },
+    "panelStatus": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Item Status/.test(c.textContent||''))"
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Item List'&&e.getBoundingClientRect().width>0)"
+    },
+    "cardSubtitle": {
+      "js": "[...document.querySelectorAll('div')].find(e=>e.children.length===0&&/records · retail inventory/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "selector": ".adv-toggle-btn"
+    },
+    "searchBox": {
+      "selector": "#inv-items-search"
+    },
+    "searchBtn": {
+      "selector": "#inv-items-search-btn"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thID": {
+      "text": "ID",
+      "scope": "table thead th"
+    },
+    "thSKU": {
+      "text": "SKU",
+      "scope": "table thead th"
+    },
+    "thDescription": {
+      "text": "Description",
+      "scope": "table thead th"
+    },
+    "thItemCost": {
+      "text": "Item Cost",
+      "scope": "table thead th"
+    },
+    "thItemPrice": {
+      "text": "Item Price",
+      "scope": "table thead th"
+    },
+    "thQty": {
+      "text": "QTY on Hand",
+      "scope": "table thead th"
+    },
+    "thType": {
+      "text": "Type",
+      "scope": "table thead th"
+    },
+    "thVendor": {
+      "text": "Vendor",
+      "scope": "table thead th"
+    },
+    "rowINV001": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(tr=>/INV-001/.test(tr.textContent||'')&&tr.getBoundingClientRect().width>0)"
+    },
+    "pgInfo": {
+      "selector": ".pg-info"
+    },
+    "itemName": {
+      "js": "document.querySelector('span.a-name')",
+      "textRect": true
+    },
+    "itemBadge": {
+      "js": "document.querySelector('span.a-plan-badge')"
+    },
+    "itemSubtitle": {
+      "js": "[...document.querySelectorAll('div,p,span')].find(e=>e.children.length===0&&/Track all inventory/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "chipsBar": {
+      "selector": ".a-badges"
+    },
+    "chipInventory": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').trim()==='Inventory'&&e.getBoundingClientRect().width>0)"
+    },
+    "chipChemical": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').trim()==='Chemical'&&e.getBoundingClientRect().width>0)"
+    },
+    "chipInStock": {
+      "js": "[...document.querySelectorAll('.a-chip')].find(e=>(e.textContent||'').trim()==='In Stock'&&e.getBoundingClientRect().width>0)"
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('a')].find(e=>(e.textContent||'').trim()==='← Back'&&e.getBoundingClientRect().width>0)"
+    },
+    "deleteBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Delete'&&e.getBoundingClientRect().width>0)"
+    },
+    "editBtn": {
+      "js": "[...document.querySelectorAll('a')].find(e=>(e.textContent||'').trim()==='Edit Record'&&e.getBoundingClientRect().width>0)"
+    },
+    "dKpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "tabNav": {
+      "selector": ".a-tab-nav"
+    },
+    "tabItemDetails": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(b=>(b.textContent||'').trim()==='Item Details')"
+    },
+    "tabPricing": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(b=>(b.textContent||'').trim()==='Pricing & Stock')"
+    },
+    "tabStorage": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(b=>(b.textContent||'').trim()==='Storage & Location')"
+    },
+    "groupHdr": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "fiID": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='ID')"
+    },
+    "fiSKU": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='SKU')"
+    },
+    "fiDescription": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='Description')"
+    },
+    "fiItemCost": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='Item Cost')"
+    },
+    "fiItemPrice": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='Item Price')"
+    },
+    "fiQty": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='QTY on Hand')"
+    },
+    "fiType": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='Type')"
+    },
+    "fiVendor": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>e.getBoundingClientRect().width>0&&((e.querySelector('.a-fi-lbl')||{}).textContent||'').trim()==='Vendor')"
+    }
+  },
+  "predicates": {
+    "onItems": "location.pathname.endsWith('/inv-items.html')",
+    "onItemDetail": "location.pathname.endsWith('/inv-items-detail.html')",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "itemsReady": "location.pathname.endsWith('/inv-items.html')&&document.readyState==='complete'&&!document.querySelector('.app').classList.contains('sidebar-collapsed')&&document.querySelectorAll('aside.sidebar a').length===6&&document.querySelectorAll('.a-metric').length===4&&document.querySelectorAll('.a-chart-card').length===3&&[...document.querySelectorAll('table tbody tr.row-link')].filter(e=>e.getBoundingClientRect().width>0).length===5&&/of 5 records/.test((document.querySelector('.pg-info')||{textContent:''}).textContent)&&window.scrollY<=8&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "detailReady": "location.pathname.endsWith('/inv-items-detail.html')&&document.readyState==='complete'&&!document.querySelector('.app').classList.contains('sidebar-collapsed')&&((document.querySelector('span.a-name')||{textContent:''}).textContent||'').trim()==='INV-001'&&document.querySelectorAll('.a-metric').length===4&&document.querySelectorAll('.a-tab-btn').length===3&&[...document.querySelectorAll('.a-fi')].filter(e=>e.getBoundingClientRect().width>0).length===8&&[...document.querySelectorAll('a,button')].filter(e=>e.getBoundingClientRect().width>0&&/^(← Back|Delete|Edit Record)$/.test((e.textContent||'').trim())).length===3",
+    "tab1Active": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Item Details'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Item Details')",
+    "tab2Active": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Pricing & Stock'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Pricing & Stock')",
+    "tab3Active": "(document.querySelector('.a-tab-btn.active')||{textContent:''}).textContent.trim()==='Storage & Location'&&[...document.querySelectorAll('.a-group-hdr')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Storage & Location')"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 220,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the Inventory sidebar expanded (persisted shared pref; the rail panel toggle is the same control both ways — probe-verified live July 11, collapsed at start on some loads). Skipped when already expanded. All six Inventory pages must be on screen the whole lesson. The Inventory module lists its six pages directly (no collapsible sub-group), so no group toggle is needed."
+    }
+  ],
+  "ops": [
+    { "op": "assert", "at": -1.5, "predicate": "onItems", "note": "start page identity before capture (lesson opens on the Inventory Items list)" },
+    { "op": "assert", "at": -0.9, "predicate": "itemsReady", "note": "loaded: sidebar expanded with all six Inventory pages, 4 KPIs, 3 insight panels, 5 row-link rows, 'of 5 records', scrolled to top, no skeletons" },
+    { "op": "watch", "key": "sidebarHeld", "from": 1.0, "to": 217.5, "predicate": "sidebarExpanded", "everyMs": 2000, "mustHold": true },
+
+    { "op": "pointer-enter", "at": 0.4, "from": [2, 560], "to": { "target": "sideItems", "offset": [130, -22], "outside": true }, "note": "step 1: enter from the left edge toward the top of the Inventory sidebar (p01 'Open Inventory, then Inventory Items')" },
+    { "op": "log-rects", "at": 1.0, "key": "sideNav", "targets": ["sideItems", "sideBatches", "sideAdjustments", "sideVendors", "sideChemicals", "sidePOs"] },
+    { "op": "log-rect", "at": 1.4, "key": "breadcrumbRect", "target": "breadcrumb", "requireStableMs": 240 },
+    { "op": "move", "at": 3.4, "to": { "target": "sideItems", "offset": [130, 0], "outside": true }, "note": "step 1: beside Inventory Items — never on the nav link (read-only)" },
+    { "op": "move", "at": 5.4, "to": { "target": "sideBatches", "offset": [130, 0], "outside": true }, "note": "step 1: slow top-to-bottom sweep of the six pages (p02-p04); named as 'the rest wait for the next lesson', never clicked" },
+    { "op": "move", "at": 7.0, "to": { "target": "sideAdjustments", "offset": [130, 0], "outside": true } },
+    { "op": "move", "at": 8.7, "to": { "target": "sideVendors", "offset": [130, 0], "outside": true } },
+    { "op": "move", "at": 10.3, "to": { "target": "sideChemicals", "offset": [130, 0], "outside": true } },
+    { "op": "move", "at": 11.8, "to": { "target": "sidePOs", "offset": [130, 0], "outside": true } },
+    { "op": "move", "at": 13.6, "to": { "point": [1898, 300] }, "note": "park in the right margin for the p04 tail" },
+
+    { "op": "log-rect", "at": 16.7, "key": "kpiStripRect", "target": "kpiStrip", "requireStableMs": 200 },
+    { "op": "log-rects", "at": 16.95, "key": "kpiTiles", "targets": ["kpiTotalItems", "kpiLowStock", "kpiCategories", "kpiVendors"] },
+    { "op": "move", "at": 17.3, "to": { "target": "kpiTotalItems", "offset": [0, 0] }, "note": "step 2: 'Start with the four tiles up top' (p05)" },
+    { "op": "move", "at": 18.95, "to": { "target": "kpiTotalItems", "offset": [0, 0] }, "note": "step 2: name the tiles left to right in spoken order (p06)" },
+    { "op": "move", "at": 19.5, "to": { "target": "kpiLowStock", "offset": [0, 0] } },
+    { "op": "move", "at": 20.0, "to": { "target": "kpiCategories", "offset": [0, 0] } },
+    { "op": "move", "at": 20.5, "to": { "target": "kpiVendors", "offset": [0, 0] } },
+    { "op": "move", "at": 21.2, "to": { "target": "kpiLowStock", "offset": [0, 0] }, "note": "step 2: 'the one that earns a daily glance is low stock' (p07-p08) — dwell on the Low Stock tile" },
+    { "op": "move", "at": 27.5, "to": { "point": [960, 430] }, "note": "ease off the KPI strip before the panels" },
+
+    { "op": "log-rect", "at": 30.25, "key": "panelsRowRect", "target": "panelsRow", "requireStableMs": 200 },
+    { "op": "log-rects", "at": 30.45, "key": "panels", "targets": ["panelTrend", "panelType", "panelStatus"] },
+    { "op": "move", "at": 30.6, "to": { "target": "panelTrend", "offset": [0, 24] }, "note": "step 3: 'three quick reads' (p09)" },
+    { "op": "move", "at": 32.6, "to": { "target": "panelTrend", "offset": [0, 24] }, "note": "step 3: sweep the three panels left to right (p10 count trend, mix by category)" },
+    { "op": "move", "at": 33.4, "to": { "target": "panelType", "offset": [0, 24] } },
+    { "op": "move", "at": 34.4, "to": { "target": "panelStatus", "offset": [0, 24] }, "note": "step 3: 'the split between active, low, and discontinued stock' (p11)" },
+    { "op": "move", "at": 36.2, "to": { "point": [960, 540] }, "note": "ease off over the panels for the p12-p13 tail" },
+
+    { "op": "log-rect", "at": 46.98, "key": "cardTitleRect", "target": "cardTitle", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 47.15, "key": "newRecRect", "target": "newRecordBtn" },
+    { "op": "log-rect", "at": 47.35, "key": "exportRect", "target": "exportBtn" },
+    { "op": "log-rect", "at": 47.55, "key": "filtersRect", "target": "filtersBtn" },
+    { "op": "log-rect", "at": 47.75, "key": "searchBoxRect", "target": "searchBox" },
+    { "op": "move", "at": 47.85, "to": { "target": "cardTitle", "offset": [0, 26] }, "note": "step 4: 'Now the list itself' (p14) — the Item List card line" },
+    { "op": "move", "at": 49.7, "to": { "target": "newRecordBtn", "offset": [-58, 44], "outside": true }, "note": "step 4 guardrail: '+ New Record builds an item from scratch; a training exercise, not for today' (p15) — pointed at from beside, never clicked (create action)" },
+    { "op": "move", "at": 52.4, "to": { "target": "exportBtn", "offset": [-48, 44], "outside": true }, "note": "step 4 guardrail: 'Export ships the data out, so leave it alone' (p16) — STOP ring, never clicked" },
+    { "op": "move", "at": 55.5, "to": { "target": "filtersBtn", "offset": [-48, 44], "outside": true }, "note": "step 4: 'Filters and search are how you find one item' (p17) — Filters located, never opened" },
+    { "op": "move", "at": 57.8, "to": { "target": "searchBox", "offset": [0, -30] }, "note": "step 4: the Search inventory items box — located, never typed in" },
+    { "op": "move", "at": 61.0, "to": { "point": [960, 620] }, "note": "ease off the toolbar before the columns" },
+
+    { "op": "log-rect", "at": 63.5, "key": "theadRect", "target": "theadRow", "requireStableMs": 200 },
+    { "op": "log-rects", "at": 63.75, "key": "ths", "targets": ["thID", "thSKU", "thDescription", "thItemCost", "thItemPrice", "thQty", "thType", "thVendor"] },
+    { "op": "log-rect", "at": 64.0, "key": "rowRect", "target": "rowINV001" },
+    { "op": "move", "at": 65.4, "to": { "target": "thID", "offset": [0, 0] }, "note": "step 5: 'Two IDs, two prices, a count, a type, a vendor' (p19) — sweep the header left to right" },
+    { "op": "move", "at": 66.3, "to": { "target": "thSKU", "offset": [0, 0] } },
+    { "op": "move", "at": 67.0, "to": { "target": "thItemCost", "offset": [0, 0] } },
+    { "op": "move", "at": 67.7, "to": { "target": "thItemPrice", "offset": [0, 0] } },
+    { "op": "move", "at": 68.3, "to": { "target": "thQty", "offset": [0, 0] } },
+    { "op": "move", "at": 68.9, "to": { "target": "thType", "offset": [0, 0] } },
+    { "op": "move", "at": 69.4, "to": { "target": "thVendor", "offset": [0, 0] } },
+    { "op": "move", "at": 70.5, "to": { "target": "thID", "offset": [0, 0] }, "note": "step 5: 'The item ID is WashCentral's own number' (p20)" },
+    { "op": "move", "at": 73.6, "to": { "target": "thSKU", "offset": [0, 0] }, "note": "step 5: 'the S-K-U is the stock code you match against a shipment' (p21) — sweep down the SKU column" },
+    { "op": "move", "at": 75.0, "to": { "target": "rowINV001", "offset": [-1000, 0] }, "note": "step 5: down the SKU cells of the sample rows (rows are never clicked here)" },
+    { "op": "move", "at": 77.8, "to": { "target": "thItemCost", "offset": [0, 0] }, "note": "step 5: 'Cost is what you pay, price is what the customer pays' (p22)" },
+    { "op": "move", "at": 79.3, "to": { "target": "thItemPrice", "offset": [0, 0] } },
+
+    { "op": "move", "at": 80.6, "to": { "target": "rowINV001", "offset": [-1000, 0] }, "note": "step 6: stage beside the first row so the approach starts at the cue, not before" },
+    { "op": "click", "target": "rowINV001", "pressAt": 84.3, "hoverMs": 380, "postcondition": "onItemDetail", "timeoutMs": 8000, "nav": true, "note": "step 6: 'Click the first row to open its record' (p23, cue ends 83.82) — genuine row click (row-link, cursor:pointer); a full navigation to inv-items-detail.html (probe: loadEventFired=1). Press lands in the 1.4s rendered break before p24 (84.66). Demo loads the fixed INV-001 sample regardless of row (guide Notes); the first row is INV-001." },
+    { "op": "wait-stable", "afterNav": true, "key": "detailStable", "predicate": "detailReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 85.45, "predicate": "detailReady", "note": "record up: INV-001 header, 4-tile KPI band, three tabs, eight fields, and the ← Back / Delete / Edit Record trio" },
+    { "op": "assert", "at": 85.52, "predicate": "tab1Active", "note": "Item Details is the default active tab" },
+    { "op": "watch", "key": "detailHeld", "from": 86.2, "to": 189.0, "predicate": "onItemDetail", "everyMs": 1000, "mustHold": true, "note": "guardrail: the record stays put through steps 6-11 — proves Delete/Edit Record were never triggered (tab clicks are same-page)" },
+    { "op": "log-rects", "at": 85.6, "key": "detHeader", "targets": ["itemName", "itemBadge", "chipsBar"] },
+    { "op": "log-rects", "at": 85.7, "key": "btns", "targets": ["backBtn", "deleteBtn", "editBtn"] },
+    { "op": "log-rect", "at": 85.78, "key": "dKpiRect", "target": "dKpiStrip" },
+    { "op": "log-rect", "at": 85.86, "key": "tabNavRect", "target": "tabNav" },
+    { "op": "move", "at": 85.95, "to": { "target": "itemName", "offset": [0, 34], "outside": true }, "note": "step 6: 'The header names the item, badges it as an inventory item' (p24) — under INV-001 and the Inventory Item badge" },
+    { "op": "move", "at": 86.6, "to": { "target": "chipsBar", "offset": [140, 26], "outside": true }, "note": "step 6: 'tags it with type and stock chips' (p25) — the Inventory / Chemical / In Stock chips" },
+    { "op": "move", "at": 89.2, "to": { "target": "chipsBar", "offset": [140, 26], "outside": true }, "note": "step 6: hold near the chips for p26 'so you know what you're holding before you read a field'" },
+    { "op": "move", "at": 94.7, "to": { "target": "dKpiStrip", "offset": [0, 20] }, "note": "step 6: 'One row, one full record behind it' (p27) — gesture across the record's KPI band" },
+
+    { "op": "move", "at": 98.1, "to": { "target": "backBtn", "offset": [-52, 44], "outside": true }, "note": "step 7: 'Look top right: three buttons' (p28) — approach the top-right button row from beside" },
+    { "op": "move", "at": 99.95, "to": { "target": "backBtn", "offset": [-52, 44], "outside": true }, "note": "step 7: name them in spoken order 'Back, Delete, and Edit Record' (p29)" },
+    { "op": "move", "at": 100.8, "to": { "target": "deleteBtn", "offset": [4, 46], "outside": true } },
+    { "op": "move", "at": 101.6, "to": { "target": "editBtn", "offset": [0, 46], "outside": true } },
+    { "op": "move", "at": 102.5, "to": { "target": "backBtn", "offset": [-52, 44], "outside": true }, "note": "step 7: 'Back is the only one we use' (p30) — beside ← Back (the only control we later press, at step 12)" },
+    { "op": "move", "at": 105.2, "to": { "target": "deleteBtn", "offset": [4, 46], "outside": true }, "note": "step 7 guardrail: 'Delete removes a record from a live shared tenant, so it never gets clicked' (p31) — STOP ring, pointed at from beside, never on it" },
+    { "op": "move", "at": 110.0, "to": { "target": "editBtn", "offset": [0, 46], "outside": true }, "note": "step 7 guardrail: 'Edit Record opens the editing flow... its own workflow' (p32) — STOP ring, never clicked (Edit is out of scope; routes to inv-items-edit.html per DOM href, not exercised)" },
+    { "op": "move", "at": 115.4, "to": { "target": "backBtn", "offset": [-52, 44], "outside": true }, "note": "step 7: 'Find all three, then leave two of them alone' (p33)" },
+
+    { "op": "log-rects", "at": 118.3, "key": "tabs", "targets": ["tabItemDetails", "tabPricing", "tabStorage"] },
+    { "op": "move", "at": 118.5, "to": { "target": "tabNav", "offset": [-680, 0] }, "note": "step 8: 'The record splits its fields across three tabs' (p34)" },
+    { "op": "move", "at": 121.2, "to": { "target": "tabItemDetails", "offset": [0, 0] }, "note": "step 8: name the tabs in spoken order 'Item details, pricing and stock, storage and location' (p35)" },
+    { "op": "move", "at": 121.9, "to": { "target": "tabPricing", "offset": [0, 0] } },
+    { "op": "move", "at": 122.6, "to": { "target": "tabStorage", "offset": [0, 0] } },
+    { "op": "move", "at": 124.2, "to": { "point": [960, 540] }, "note": "ease off for p36-p37 (legacy Pricing & Tax / Commission & Service names are gone — spoken context, nothing on screen)" },
+
+    { "op": "assert", "at": 132.1, "predicate": "tab1Active", "note": "step 9 reads the default Item Details tab; still active" },
+    { "op": "log-rect", "at": 132.2, "key": "ghItemDetails", "target": "groupHdr", "requireStableMs": 160 },
+    { "op": "log-rects", "at": 132.4, "key": "fields", "targets": ["fiID", "fiSKU", "fiDescription", "fiItemCost", "fiItemPrice", "fiQty", "fiType", "fiVendor"] },
+    { "op": "move", "at": 134.2, "to": { "target": "fiID", "offset": [0, 0] }, "note": "step 9: 'Eight read-only fields, mirroring the eight columns' (p39)" },
+    { "op": "move", "at": 138.0, "to": { "target": "fiID", "offset": [0, 0] }, "note": "step 9: 'The item's two IDs, its description, what it costs, what it sells for' (p40) — sweep the fields in spoken order" },
+    { "op": "move", "at": 138.7, "to": { "target": "fiSKU", "offset": [0, 0] } },
+    { "op": "move", "at": 139.3, "to": { "target": "fiDescription", "offset": [0, 0] } },
+    { "op": "move", "at": 139.9, "to": { "target": "fiItemCost", "offset": [0, 0] } },
+    { "op": "move", "at": 140.5, "to": { "target": "fiItemPrice", "offset": [0, 0] } },
+    { "op": "move", "at": 141.7, "to": { "target": "fiQty", "offset": [0, 0] }, "note": "step 9: 'forty two units on hand, its type, and its vendor' (p41)" },
+    { "op": "move", "at": 142.2, "to": { "target": "fiType", "offset": [0, 0] } },
+    { "op": "move", "at": 142.55, "to": { "target": "fiVendor", "offset": [0, 0] } },
+    { "op": "move", "at": 144.8, "to": { "target": "fiItemPrice", "offset": [0, 0] }, "note": "step 9: 'What do we charge, and how many are left' (p42-p43) — Item Price then QTY on Hand" },
+    { "op": "move", "at": 146.4, "to": { "target": "fiQty", "offset": [0, 0] } },
+
+    { "op": "move", "at": 152.1, "to": { "target": "tabPricing", "offset": [0, 0] }, "note": "step 10: approach the Pricing & Stock tab at the cue 'Open the Pricing and Stock tab' (p44)" },
+    { "op": "click", "target": "tabPricing", "pressAt": 154.5, "hoverMs": 360, "postcondition": "tab2Active", "timeoutMs": 4000, "note": "step 10: genuine tab switch (same-page, no navigation — probe confirmed). Press lands in the 1.4s rendered break so the new heading is up when p45-p46 say 'Watch what changes. The heading does.'" },
+    { "op": "assert", "at": 155.0, "predicate": "tab2Active", "note": "heading now reads PRICING & STOCK; active tab is Pricing & Stock" },
+    { "op": "log-rect", "at": 155.2, "key": "ghPricing", "target": "groupHdr", "requireStableMs": 160 },
+    { "op": "move", "at": 155.4, "to": { "target": "groupHdr", "offset": [0, 40], "outside": true }, "note": "step 10: 'The heading does' (p46) — under the PRICING & STOCK heading" },
+    { "op": "move", "at": 157.9, "to": { "target": "fiID", "offset": [0, 0] }, "note": "step 10: 'The fields underneath do not. The same eight facts render again' (p47-p48) — the identical eight fields (RESIDUAL: tenant repeats the field set; logged in guide/shot list)" },
+    { "op": "move", "at": 160.0, "to": { "target": "fiVendor", "offset": [0, 0] } },
+    { "op": "move", "at": 162.5, "to": { "point": [960, 640] }, "note": "ease off for the p49-p50 'logged, do not hunt for pricing-only fields' tail" },
+
+    { "op": "move", "at": 169.5, "to": { "target": "tabStorage", "offset": [0, 0] }, "note": "step 11: approach the Storage & Location tab at the cue 'Then Storage and Location' (p51)" },
+    { "op": "click", "target": "tabStorage", "pressAt": 171.0, "hoverMs": 360, "postcondition": "tab3Active", "timeoutMs": 4000, "note": "step 11: genuine tab switch (same-page). Press inside the 1.4s rendered break; the STORAGE & LOCATION heading is up for p52-p53 'Same pattern. A new heading, the identical eight fields...'" },
+    { "op": "assert", "at": 171.5, "predicate": "tab3Active", "note": "heading now reads STORAGE & LOCATION; active tab is Storage & Location" },
+    { "op": "log-rect", "at": 171.7, "key": "ghStorage", "target": "groupHdr", "requireStableMs": 160 },
+    { "op": "move", "at": 172.0, "to": { "target": "groupHdr", "offset": [0, 40], "outside": true }, "note": "step 11: under the STORAGE & LOCATION heading (p52-p53)" },
+    { "op": "move", "at": 174.0, "to": { "target": "fiID", "offset": [0, 0] }, "note": "step 11: 'the identical eight fields, and no bin, aisle, or site' (p53) — the same eight (RESIDUAL: no storage-specific fields on this tenant, logged)" },
+    { "op": "move", "at": 176.5, "to": { "target": "fiVendor", "offset": [0, 0] } },
+    { "op": "move", "at": 179.0, "to": { "point": [960, 640] }, "note": "ease off for p54-p55 'treat the tabs as navigation... a future pass will pick it up'" },
+
+    { "op": "move", "at": 187.1, "to": { "target": "backBtn", "offset": [0, 0] }, "note": "step 12: approach ← Back at the cue 'Change nothing, then click Back' (p56); this is the only control we press on the record" },
+    { "op": "click", "target": "backBtn", "pressAt": 189.9, "hoverMs": 380, "postcondition": "onItems", "timeoutMs": 8000, "nav": true, "note": "step 12: genuine ← Back click (a href=inv-items.html; full navigation — probe: loadEventFired=1). Press lands in the 1.2s rendered break before p57 (190.58); the list is back when p57 'the detail page closes and drops you back on the list' plays. Nothing was created, edited, or deleted." },
+    { "op": "wait-stable", "afterNav": true, "key": "backStable", "predicate": "itemsReady", "settleMs": 600, "timeoutMs": 8000 },
+    { "op": "assert", "at": 191.1, "predicate": "onItems", "note": "returned to the Inventory Items list" },
+    { "op": "assert", "at": 191.3, "predicate": "itemsReady", "note": "list intact: same six pages, KPIs, panels, five rows, 'of 5 records' — record untouched" },
+    { "op": "log-rect", "at": 191.5, "key": "breadcrumbRect2", "target": "breadcrumb", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 191.7, "key": "kpiStripRect2", "target": "kpiStrip" },
+    { "op": "log-rect", "at": 191.9, "key": "theadRect2", "target": "theadRow" },
+    { "op": "move", "at": 192.2, "to": { "target": "breadcrumb", "offset": [70, 44], "outside": true }, "note": "step 12: under the Inventory Items breadcrumb — confirm we are back on the list (p57-p58)" },
+    { "op": "move", "at": 197.5, "to": { "point": [960, 540] }, "note": "ease off for p58-p59 'discipline matters... Back guarantees you left no mark'" },
+
+    { "op": "move", "at": 205.0, "to": { "target": "kpiStrip", "offset": [0, 20] }, "note": "step 13 recap: 'Counts and trends up top' (p60-p61) — sweep from the KPI strip down" },
+    { "op": "move", "at": 207.0, "to": { "target": "panelTrend", "offset": [0, 24] }, "note": "step 13: 'eight columns across the list' bridge (p61)" },
+    { "op": "move", "at": 208.5, "to": { "target": "theadRow", "offset": [-680, 0] }, "note": "step 13: down to the header row and list (p61-p62 'a three-tab record behind every row')" },
+    { "op": "move", "at": 210.0, "to": { "target": "rowINV001", "offset": [-1000, 0] } },
+    { "op": "move", "at": 213.0, "to": { "point": [1560, 930] }, "note": "final park, clear of content and captions, while p63-p64 close" },
+    { "op": "assert", "at": 216.6, "predicate": "onItems" },
+    { "op": "assert", "at": 217.2, "predicate": "sidebarExpanded" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "sideNav.sideItems", "place": "right", "from": 2.6, "to": 13.2 },
+      { "n": 2, "anchor": "kpiStripRect", "place": "below-left", "from": 17.1, "to": 24.4 },
+      { "n": 3, "anchor": "panelsRowRect", "place": "below-left", "from": 30.5, "to": 40.0 },
+      { "n": 4, "anchor": "cardTitleRect", "place": "below-left", "from": 47.4, "to": 55.0 },
+      { "n": 5, "anchor": "theadRect", "place": "below-left", "from": 65.0, "to": 70.2 },
+      { "n": 6, "anchor": "detHeader.itemName", "place": "below-left", "from": 85.2, "to": 93.4 },
+      { "n": 7, "anchor": "btns.backBtn", "place": "below-left", "from": 99.0, "to": 106.0 },
+      { "n": 8, "anchor": "tabNavRect", "place": "below-left", "from": 118.8, "to": 124.0 },
+      { "n": 9, "anchor": "fields.fiItemCost", "place": "below-left", "from": 139.9, "to": 147.5 },
+      { "n": 10, "anchor": "ghPricing", "place": "below-left", "from": 155.2, "to": 162.2 },
+      { "n": 11, "anchor": "ghStorage", "place": "below-left", "from": 172.0, "to": 181.0 },
+      { "n": 12, "anchor": "breadcrumbRect2", "place": "below-left", "from": 191.5, "to": 199.0 },
+      { "n": 13, "anchor": "kpiStripRect2", "place": "below-left", "from": 206.0, "to": 213.0 }
+    ],
+    "highlights": [
+      { "anchor": "sideNav.sideItems", "from": 3.4, "to": 5.4, "note": "p02 Inventory Items" },
+      { "anchor": "sideNav.sideBatches", "from": 5.4, "to": 7.0 },
+      { "anchor": "sideNav.sideAdjustments", "from": 7.0, "to": 8.7 },
+      { "anchor": "sideNav.sideVendors", "from": 8.7, "to": 10.3 },
+      { "anchor": "sideNav.sideChemicals", "from": 10.3, "to": 11.8 },
+      { "anchor": "sideNav.sidePOs", "from": 11.8, "to": 13.4 },
+      { "anchor": "kpiTiles.kpiTotalItems", "from": 18.95, "to": 19.5, "note": "p06 tiles named in order" },
+      { "anchor": "kpiTiles.kpiLowStock", "from": 19.5, "to": 20.0 },
+      { "anchor": "kpiTiles.kpiCategories", "from": 20.0, "to": 20.5 },
+      { "anchor": "kpiTiles.kpiVendors", "from": 20.5, "to": 21.1 },
+      { "anchor": "kpiTiles.kpiLowStock", "from": 21.2, "to": 26.5, "note": "p07-p08 'the one that earns a daily glance is low stock'" },
+      { "anchor": "panels.panelTrend", "from": 32.6, "to": 33.4, "note": "p10 count trend + mix" },
+      { "anchor": "panels.panelType", "from": 33.4, "to": 34.35 },
+      { "anchor": "panels.panelStatus", "from": 34.4, "to": 35.9, "note": "p11 active / low / discontinued" },
+      { "anchor": "newRecRect", "from": 49.6, "to": 52.3, "color": "#dc2626", "note": "step 4 do-not-click: + New Record is create-only (p15)" },
+      { "anchor": "exportRect", "from": 52.4, "to": 55.2, "color": "#dc2626", "note": "step 4 do-not-click: Export is a data-out action (p16)" },
+      { "anchor": "filtersRect", "from": 55.5, "to": 57.6, "note": "p17 Filters (located, not opened)" },
+      { "anchor": "searchBoxRect", "from": 57.8, "to": 61.0, "note": "p17 Search inventory items (not typed in)" },
+      { "anchor": "theadRect", "from": 65.4, "to": 69.9, "note": "p19 the eight columns" },
+      { "anchor": "ths.thID", "from": 70.5, "to": 73.4, "note": "p20 the item ID column" },
+      { "anchor": "ths.thSKU", "from": 73.6, "to": 77.4, "note": "p21 the SKU column" },
+      { "anchor": "ths.thItemCost", "from": 77.8, "to": 79.25, "note": "p22 cost is what you pay" },
+      { "anchor": "ths.thItemPrice", "from": 79.3, "to": 81.2, "note": "p22 price is what the customer pays" },
+      { "anchor": "detHeader.chipsBar", "from": 86.6, "to": 89.0, "note": "p25 type and stock chips" },
+      { "anchor": "btns.backBtn", "from": 102.5, "to": 104.9, "note": "p30 Back is the only one we use" },
+      { "anchor": "btns.deleteBtn", "from": 105.0, "to": 109.3, "color": "#dc2626", "note": "step 7 do-not-click: Delete on a live shared tenant (p31)" },
+      { "anchor": "btns.editBtn", "from": 109.85, "to": 114.85, "color": "#dc2626", "note": "step 7 do-not-click: Edit Record (p32) — editing out of scope" },
+      { "anchor": "tabs.tabItemDetails", "from": 121.2, "to": 121.85, "note": "p35 tabs named in order" },
+      { "anchor": "tabs.tabPricing", "from": 121.9, "to": 122.55 },
+      { "anchor": "tabs.tabStorage", "from": 122.6, "to": 123.3 },
+      { "anchor": "fields.fiID", "from": 138.0, "to": 138.7, "note": "p40 fields swept in spoken order" },
+      { "anchor": "fields.fiSKU", "from": 138.7, "to": 139.3 },
+      { "anchor": "fields.fiDescription", "from": 139.3, "to": 139.9 },
+      { "anchor": "fields.fiItemCost", "from": 139.9, "to": 140.5 },
+      { "anchor": "fields.fiItemPrice", "from": 140.5, "to": 141.6 },
+      { "anchor": "fields.fiQty", "from": 141.7, "to": 142.2, "note": "p41 forty two units on hand" },
+      { "anchor": "fields.fiType", "from": 142.2, "to": 142.55 },
+      { "anchor": "fields.fiVendor", "from": 142.55, "to": 143.4 },
+      { "anchor": "fields.fiItemPrice", "from": 144.8, "to": 146.3, "note": "p43 what do we charge" },
+      { "anchor": "fields.fiQty", "from": 146.4, "to": 148.0, "note": "p43 how many are left" },
+      { "anchor": "ghPricing", "from": 155.4, "to": 157.8, "note": "p46 the heading does (change)" },
+      { "anchor": "ghStorage", "from": 172.0, "to": 174.0, "note": "p52-p53 same pattern, a new heading" },
+      { "anchor": "kpiStripRect2", "from": 205.0, "to": 208.4, "note": "p61 counts and trends up top" },
+      { "anchor": "theadRect2", "from": 208.5, "to": 212.0, "note": "p61-p62 eight columns / a record behind every row" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 1.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 2.6, "z": 1.3, "cx": 780, "cy": 430, "ease": true, "note": "step 1: sidebar walk — all six Inventory pages readable" },
+      { "t": 13.2, "z": 1.3, "cx": 780, "cy": 430 },
+      { "t": 14.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the intro tail (p04)" },
+      { "t": 16.9, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 17.3, "z": 1.2, "cx": 900, "cy": 150, "ease": true, "note": "step 2: KPI strip framing" },
+      { "t": 20.9, "z": 1.2, "cx": 900, "cy": 150 },
+      { "t": 21.3, "z": 1.5, "cx": 917, "cy": 180, "ease": true, "note": "step 2: 150% punch-in on the Low Stock tile (shot list 'watch this one')" },
+      { "t": 26.4, "z": 1.5, "cx": 917, "cy": 180 },
+      { "t": 27.4, "z": 1.14, "cx": 960, "cy": 250, "ease": true, "note": "step 3: pull to frame the three insight panels" },
+      { "t": 39.9, "z": 1.14, "cx": 960, "cy": 250 },
+      { "t": 41.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for p12-p13" },
+      { "t": 46.9, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 47.4, "z": 1.24, "cx": 1360, "cy": 430, "ease": true, "note": "step 4: Item List toolbar — New Record / Export guardrails, Filters, Search" },
+      { "t": 60.6, "z": 1.24, "cx": 1360, "cy": 430 },
+      { "t": 61.6, "z": 1.22, "cx": 1000, "cy": 560, "ease": true, "note": "step 5: the table header and columns" },
+      { "t": 79.6, "z": 1.22, "cx": 1000, "cy": 560 },
+      { "t": 80.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the row-click page change (step 6)" },
+      { "t": 85.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 85.6, "z": 1.5, "cx": 760, "cy": 380, "ease": true, "note": "step 6: 150% punch-in on the item ID + Inventory Item badge + chips (shot list)" },
+      { "t": 90.4, "z": 1.5, "cx": 760, "cy": 380 },
+      { "t": 91.4, "z": 1.16, "cx": 960, "cy": 220, "ease": true, "note": "step 6: settle onto the header + KPI band for p26-p27" },
+      { "t": 96.9, "z": 1.16, "cx": 960, "cy": 220 },
+      { "t": 97.9, "z": 1.34, "cx": 1660, "cy": 118, "ease": true, "note": "step 7: close framing on the ← Back / Delete / Edit Record trio (top-right)" },
+      { "t": 115.4, "z": 1.34, "cx": 1660, "cy": 118 },
+      { "t": 116.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide into step 8" },
+      { "t": 118.2, "z": 1.26, "cx": 520, "cy": 268, "ease": true, "note": "step 8: the three-tab strip" },
+      { "t": 124.0, "z": 1.26, "cx": 520, "cy": 268 },
+      { "t": 125.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "settle wide for p36-p37" },
+      { "t": 131.7, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 132.3, "z": 1.2, "cx": 960, "cy": 400, "ease": true, "note": "step 9: the ITEM DETAILS field grid" },
+      { "t": 139.6, "z": 1.2, "cx": 960, "cy": 400 },
+      { "t": 140.2, "z": 1.42, "cx": 960, "cy": 418, "ease": true, "note": "step 9: punch toward Item Cost / Item Price / QTY on Hand (shot list 150%; held to 1.42 so all three columns stay in frame — see RESIDUAL R4)" },
+      { "t": 147.4, "z": 1.42, "cx": 960, "cy": 418 },
+      { "t": 148.4, "z": 1.2, "cx": 900, "cy": 360, "ease": true, "note": "step 10: heading + fields framing" },
+      { "t": 168.4, "z": 1.2, "cx": 900, "cy": 360 },
+      { "t": 169.4, "z": 1.2, "cx": 900, "cy": 360, "note": "step 11: keep the same calm framing (symmetry with step 10)" },
+      { "t": 185.6, "z": 1.2, "cx": 900, "cy": 360 },
+      { "t": 186.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the ← Back page change (step 12)" },
+      { "t": 191.1, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 192.2, "z": 1.14, "cx": 900, "cy": 220, "ease": true, "note": "step 12: confirm back on the list (breadcrumb + KPIs)" },
+      { "t": 199.5, "z": 1.14, "cx": 900, "cy": 220 },
+      { "t": 200.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide and calm for the recap" },
+      { "t": 205.0, "z": 1.12, "cx": 960, "cy": 320, "ease": true, "note": "step 13: gentle recap sweep from KPIs down to the list" },
+      { "t": 212.6, "z": 1.12, "cx": 960, "cy": 320 },
+      { "t": 213.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
+      { "t": 218.201, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Items & Item Detail — Complete",
+      "from": 216.4,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 216.1
+  },
+  "output": "WC-04-01-items-detail-v1.1",
+  "orderedMentions": [
+    "Inventory Items",
+    "Total Items",
+    "Low Stock",
+    "Categories",
+    "Vendors",
+    "New Record",
+    "Export",
+    "← Back",
+    "Delete",
+    "Edit Record",
+    "Item Details",
+    "Pricing & Stock",
+    "Storage & Location"
+  ],
+  "neverClick": [
+    "export",
+    "\\+ ?new record",
+    "delete",
+    "edit record",
+    "filters",
+    "search inventory items",
+    "search ⌘k",
+    "ask shyne",
+    "table rows / other item rows (only INV-001 is opened)",
+    "pagination page buttons",
+    "log ?out",
+    "logout"
+  ]
+}

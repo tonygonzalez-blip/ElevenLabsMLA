@@ -1,0 +1,98 @@
+{
+  "lesson": "WC-08-02",
+  "audioMaster": "training/module08-operations/WC-08-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence/clause boundaries (<=~95 chars). NEVER rewritten or reordered; stage directions and <break/> tags stripped, spoken words kept exact. Block windows use the AUTHORING Σ(ffprobe audio+0.4) rule: per-block ffprobe s01 27.167 · s02 24.346 · s03 23.876 · s04 25.966 · s05 28.996 · s06 32.758; the six-gap sum predicts 165.509s and the ffprobed master is 165.329s (0.180s off, inside the ±0.3s gate) so the formula holds without FFT cross-correlation. Each block startS is the cumulative Σ(audio+0.4) of prior blocks; endS = start + audio + 0.4, with the final block clamped to the probed master duration 165.329s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 27.567,
+      "phrases": [
+        { "id": "p01", "text": "Start in Operations and look down the sidebar." },
+        { "id": "p02", "text": "The whole module is laid out in three groups." },
+        { "id": "p03", "text": "Maintenance sits at the top, then Incident Reports, then the Scheduler pages." },
+        { "id": "p04", "text": "We are in Maintenance, where five entries stack together." },
+        { "id": "p05", "text": "The first is Issues, the work-order list you already know." },
+        { "id": "p06", "text": "The four below it are the planned side of upkeep," },
+        { "id": "p07", "text": "the routines and gear and parts that sit behind every ticket." },
+        { "id": "p08", "text": "That set is today's tour." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 27.567,
+      "endS": 52.313,
+      "phrases": [
+        { "id": "p09", "text": "Click Maintenance Schedule." },
+        { "id": "p10", "text": "This is the planned side of upkeep." },
+        { "id": "p11", "text": "Forty two recurring tasks live on this calendar, six due this week and two already overdue." },
+        { "id": "p12", "text": "Each row is a job that repeats:" },
+        { "id": "p13", "text": "lubricate the conveyor chain weekly, inspect the chemical pumps once a month." },
+        { "id": "p14", "text": "The column a manager reads first is Next Due," },
+        { "id": "p15", "text": "because it names the service that is coming before anything breaks." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 52.313,
+      "endS": 76.589,
+      "phrases": [
+        { "id": "p16", "text": "Now Equipment Registry." },
+        { "id": "p17", "text": "Every machine a work order points back to." },
+        { "id": "p18", "text": "This tenant carries four assets:" },
+        { "id": "p19", "text": "a blower system, a chemical pump array, the main tunnel conveyor, and a point of sale terminal." },
+        { "id": "p20", "text": "Three are operational and one sits in repair." },
+        { "id": "p21", "text": "When a caller says the air dryer is down," },
+        { "id": "p22", "text": "this page names the exact unit, places it at its site, and shows whether it is already flagged." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 76.589,
+      "endS": 102.955,
+      "phrases": [
+        { "id": "p23", "text": "Open Checklists." },
+        { "id": "p24", "text": "These are the fixed steps a tech follows so nothing gets skipped on a busy day." },
+        { "id": "p25", "text": "Daily opening and closing walks, a weekly safety inspection, a monthly deep clean." },
+        { "id": "p26", "text": "The completion column shows how faithfully each one gets done," },
+        { "id": "p27", "text": "and the average sits at ninety four percent." },
+        { "id": "p28", "text": "One caution." },
+        { "id": "p29", "text": "This is not the Lube Checklists page over in Hardware settings." },
+        { "id": "p30", "text": "Different place, different job." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 102.955,
+      "endS": 132.351,
+      "phrases": [
+        { "id": "p31", "text": "Last one. Parts and Supplies." },
+        { "id": "p32", "text": "The stock a repair pulls from." },
+        { "id": "p33", "text": "Drive belts, pump seal kits, dryer filters, a spare power supply." },
+        { "id": "p34", "text": "A hundred forty two parts, about eighteen thousand dollars sitting on the shelf." },
+        { "id": "p35", "text": "Read quantity on hand against the reorder point" },
+        { "id": "p36", "text": "and you can answer a do we have it call in seconds." },
+        { "id": "p37", "text": "And keep it straight from Chemicals and Supplies over in Inventory;" },
+        { "id": "p38", "text": "that page is wash chemistry and retail goods, this one is upkeep." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 132.351,
+      "endS": 165.329,
+      "phrases": [
+        { "id": "p39", "text": "So, the map." },
+        { "id": "p40", "text": "Four live pages under Maintenance, right beside Issues." },
+        { "id": "p41", "text": "A recurring job lands on the Schedule, and Next Due says when." },
+        { "id": "p42", "text": "A question about a machine goes to the Registry." },
+        { "id": "p43", "text": "The steps a tech follows are the Checklists." },
+        { "id": "p44", "text": "The parts a repair burns through are Parts and Supplies." },
+        { "id": "p45", "text": "One habit before you go." },
+        { "id": "p46", "text": "Reach these pages from the sidebar inside Operations," },
+        { "id": "p47", "text": "because typing an address straight into the browser still fails." },
+        { "id": "p48", "text": "The sidebar is the front door." }
+      ]
+    }
+  ],
+  "output": "WC-08-02-schedule-equipment-checklists-parts-v1.1"
+}

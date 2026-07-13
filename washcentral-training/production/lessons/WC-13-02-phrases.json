@@ -1,0 +1,189 @@
+{
+  "lesson": "WC-13-02",
+  "audioMaster": "training/module13-reports-audit/WC-13-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Never rewritten, summarized, or reordered; only <break/> tags and the italic director notes were stripped, and the block-header lines dropped. Block windows are MEASURED onsets: FFT cross-correlation of each sNN.mp3 against the joined 8 kHz-mono master. The nominal Sigma(ffprobe audio + 0.4) formula overshoots the ffprobe-probed master (228.284s) by 0.60s (> 0.3 tolerance) because ffprobe's mp3 durations overstate decoded sample counts; the cross-correlated onsets land exactly at Sigma(decoded_audio + 0.4) with a clean 0.400s gap after every block (master 8 kHz decode 228.240s). Last block endS set to the ffprobe master duration 228.284s per the audioDurationS rule.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 13.84,
+      "phrases": [
+        { "id": "p01", "text": "Open I-T and Support." },
+        { "id": "p02", "text": "Down the sidebar, past the support tools, sits a small group called Audit." },
+        { "id": "p03", "text": "Three pages." },
+        { "id": "p04", "text": "Between them they answer almost every who-did-this question a client will ever send you." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 13.84,
+      "endS": 26.56,
+      "phrases": [
+        { "id": "p05", "text": "Open the Audit Log." },
+        { "id": "p06", "text": "This is the master feed." },
+        { "id": "p07", "text": "Every meaningful event on the platform lands here in one running list, newest first," },
+        { "id": "p08", "text": "with a dashboard on top to read the shape of it before you dig." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 26.56,
+      "endS": 41.28,
+      "phrases": [
+        { "id": "p09", "text": "Start with the four tiles." },
+        { "id": "p10", "text": "Events today, events this week, how many different people were active," },
+        { "id": "p11", "text": "and how many events tripped a critical flag." },
+        { "id": "p12", "text": "One glance tells you whether today looks normal or busy." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 41.28,
+      "endS": 52.8,
+      "phrases": [
+        { "id": "p13", "text": "To the left, the yearly trend." },
+        { "id": "p14", "text": "Twelve months of logged activity in a single line, ticking up." },
+        { "id": "p15", "text": "It's context, not an alarm: is the platform getting busier, or holding steady." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 52.8,
+      "endS": 66.88,
+      "phrases": [
+        { "id": "p16", "text": "Next, the split by action." },
+        { "id": "p17", "text": "Most of what gets logged is edits and new records." },
+        { "id": "p18", "text": "Logins are a chunk." },
+        { "id": "p19", "text": "Deletions are the thin slice at the bottom," },
+        { "id": "p20", "text": "and on a support ticket, that thin slice is usually the one you came for." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 66.88,
+      "endS": 80.96,
+      "phrases": [
+        { "id": "p21", "text": "Beside it, severity." },
+        { "id": "p22", "text": "Nearly everything is normal." },
+        { "id": "p23", "text": "A little is a warning." },
+        { "id": "p24", "text": "A sliver is critical, and that sliver is the same three events the top tile just flagged." },
+        { "id": "p25", "text": "Two views of one number." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 80.96,
+      "endS": 100.16,
+      "phrases": [
+        { "id": "p26", "text": "Now the list itself." },
+        { "id": "p27", "text": "Read a row left to right and it tells a whole story:" },
+        { "id": "p28", "text": "when, who, what they did, in which module, to which record, at which location," },
+        { "id": "p29", "text": "and the I-P address it came from." },
+        { "id": "p30", "text": "There are Export and New Record buttons up here." },
+        { "id": "p31", "text": "Leave them. You're reading, not changing." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 100.16,
+      "endS": 114.8,
+      "phrases": [
+        { "id": "p32", "text": "Find the deleted event." },
+        { "id": "p33", "text": "Here it is: a payment record, removed, tied to a name, a location, and an I-P." },
+        { "id": "p34", "text": "That's the power of this page." },
+        { "id": "p35", "text": "When something goes missing, you don't guess who touched it." },
+        { "id": "p36", "text": "You read the row." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 114.8,
+      "endS": 125.6,
+      "phrases": [
+        { "id": "p37", "text": "Move to User Activity." },
+        { "id": "p38", "text": "Where the Audit Log tracks events, this page tracks people at the door." },
+        { "id": "p39", "text": "Who's signing in, how often, and who keeps bouncing off the login screen." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 125.6,
+      "endS": 139.84,
+      "phrases": [
+        { "id": "p40", "text": "Its tiles lead with the sign-in picture." },
+        { "id": "p41", "text": "Active users, logins today, average session length," },
+        { "id": "p42", "text": "and the one you'll reach for most: failed logins." },
+        { "id": "p43", "text": "When a cashier says they're locked out, that number is where you start." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 139.84,
+      "endS": 156.8,
+      "phrases": [
+        { "id": "p44", "text": "The table fills in the rest." },
+        { "id": "p45", "text": "Each person, their role, when they last got in, how many times this month, from where," },
+        { "id": "p46", "text": "and whether the account is active." },
+        { "id": "p47", "text": "It answers a quiet but common question:" },
+        { "id": "p48", "text": "is this user actually signing in, and as what." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 156.8,
+      "endS": 167.6,
+      "phrases": [
+        { "id": "p49", "text": "Last page. Change History." },
+        { "id": "p50", "text": "The Audit Log tells you a record was updated." },
+        { "id": "p51", "text": "This one tells you exactly which field moved, and what it was before." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 167.6,
+      "endS": 179.92,
+      "phrases": [
+        { "id": "p52", "text": "The tiles count the churn." },
+        { "id": "p53", "text": "How many changes today, how many this week," },
+        { "id": "p54", "text": "and how the load splits between configuration and everyday data." },
+        { "id": "p55", "text": "It's a pulse on how much is being edited under the hood." }
+      ]
+    },
+    {
+      "block": "s14",
+      "startS": 179.92,
+      "endS": 193.44,
+      "phrases": [
+        { "id": "p56", "text": "But the columns are the payoff." },
+        { "id": "p57", "text": "Alongside the usual when and who, this page names the exact field that changed" },
+        { "id": "p58", "text": "and lays the old value and the new value side by side." },
+        { "id": "p59", "text": "No other audit page does that." }
+      ]
+    },
+    {
+      "block": "s15",
+      "startS": 193.44,
+      "endS": 211.12,
+      "phrases": [
+        { "id": "p60", "text": "Picture a membership price." },
+        { "id": "p61", "text": "The plan's example is a monthly rate moving from" },
+        { "id": "p62", "text": "twenty-nine ninety-nine to thirty-four ninety-nine." },
+        { "id": "p63", "text": "One row, before on one side, after on the other." },
+        { "id": "p64", "text": "When a client swears their price jumped, this is the receipt." }
+      ]
+    },
+    {
+      "block": "s16",
+      "startS": 211.12,
+      "endS": 228.284,
+      "phrases": [
+        { "id": "p65", "text": "So, three pages, three questions." },
+        { "id": "p66", "text": "What happened, and from what machine? That's the Audit Log." },
+        { "id": "p67", "text": "Who's getting in, and who isn't? User Activity." },
+        { "id": "p68", "text": "Who changed which field, and to what? Change History." },
+        { "id": "p69", "text": "Match the ticket to the page, and the answer is already waiting." }
+      ]
+    }
+  ],
+  "output": "WC-13-02-audit-trio-v1.1"
+}

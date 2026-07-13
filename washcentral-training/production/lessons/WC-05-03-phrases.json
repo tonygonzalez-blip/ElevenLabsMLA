@@ -1,0 +1,169 @@
+{
+  "lesson": "WC-05-03",
+  "audioMaster": "training/module05-marketing/WC-05-03-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows are the blocks' MEASURED positions in the joined master. The Sigma(audio+0.4) formula predicts 225.517s but the ffprobed master is 225.071s (0.446s over, past the +-0.3s gate), so each block start is measured by FFT normalized cross-correlation of each sNN against the master (8 kHz mono; every block matched at corr>=0.9999). Gaps between blocks measured 0.35-0.37s rather than the nominal 0.40s, which accounts for the deficit. Final end = ffprobed master duration 225.071s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 17.44,
+      "phrases": [
+        { "id": "p01", "text": "Open Marketing and look down the left rail." },
+        { "id": "p02", "text": "Campaigns and Automation you already know." },
+        { "id": "p03", "text": "Everything under them is what we map today." },
+        { "id": "p04", "text": "Think of this list as a lookup table:" },
+        { "id": "p05", "text": "a client asks a question, and one of these pages holds the answer." },
+        { "id": "p06", "text": "By the end you'll go straight to the right one." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.44,
+      "endS": 32.32,
+      "phrases": [
+        { "id": "p07", "text": "First, SmartLinks." },
+        { "id": "p08", "text": "These are trackable links you drop into an email or a social post." },
+        { "id": "p09", "text": "When a manager asks whether that link actually brought cars through the bay," },
+        { "id": "p10", "text": "you don't guess." },
+        { "id": "p11", "text": "The page counts clicks, conversions, and the revenue each link earned." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 32.32,
+      "endS": 49.04,
+      "phrases": [
+        { "id": "p12", "text": "Next, Customer Segments." },
+        { "id": "p13", "text": "A segment is just a saved audience," },
+        { "id": "p14", "text": "a group like win-back or VIP that a campaign gets pointed at." },
+        { "id": "p15", "text": "So when someone asks who a message went to, the trail ends here." },
+        { "id": "p16", "text": "Every campaign starts from a list on this page." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 49.04,
+      "endS": 63.52,
+      "phrases": [
+        { "id": "p17", "text": "Offers and Promotions." },
+        { "id": "p18", "text": "This is where the discounts live." },
+        { "id": "p19", "text": "A member says their promo code bounced?" },
+        { "id": "p20", "text": "Open the offer, check the dates it's valid, and check its status." },
+        { "id": "p21", "text": "Nine times out of ten the code simply expired." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 63.52,
+      "endS": 82.32,
+      "phrases": [
+        { "id": "p22", "text": "Email Templates." },
+        { "id": "p23", "text": "These are the reusable email layouts the campaigns and the automated lifecycle flows draw from." },
+        { "id": "p24", "text": "They're sorted by moment: cancellation, refund, plan change, retention." },
+        { "id": "p25", "text": "When a client asks what the cancellation email says," },
+        { "id": "p26", "text": "you read it right here, without touching send." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 82.32,
+      "endS": 103.6,
+      "phrases": [
+        { "id": "p27", "text": "Paid Media, and notice the draft tag on it." },
+        { "id": "p28", "text": "This one matches your members to ad accounts on Meta and Google," },
+        { "id": "p29", "text": "then ties the ad spend back to actual washes." },
+        { "id": "p30", "text": "It's powerful and it's still being built." },
+        { "id": "p31", "text": "Read the tabs, but do not click Sync Now or a row Sync." },
+        { "id": "p32", "text": "Those push audience data out to the ad platforms." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 103.6,
+      "endS": 122.32,
+      "phrases": [
+        { "id": "p33", "text": "Now the page every technician should bookmark: Deliverability." },
+        { "id": "p34", "text": "Before you ever write \"the platform didn't send,\" come here." },
+        { "id": "p35", "text": "Inbox rate, bounces, spam complaints, and the suppression list." },
+        { "id": "p36", "text": "If an address was suppressed or bounced, the send didn't fail." },
+        { "id": "p37", "text": "The system did exactly what it was told." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 122.32,
+      "endS": 138.08,
+      "phrases": [
+        { "id": "p38", "text": "Click Referral Program, and watch the breadcrumb." },
+        { "id": "p39", "text": "It jumps you into Settings." },
+        { "id": "p40", "text": "This is refer-a-friend: the reward the referrer gets, the reward the friend gets," },
+        { "id": "p41", "text": "and how many referrals each program has driven." },
+        { "id": "p42", "text": "Same menu, but it lives on the Settings side." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 138.08,
+      "endS": 153.92,
+      "phrases": [
+        { "id": "p43", "text": "SMS Templates." },
+        { "id": "p44", "text": "The text-message versions." },
+        { "id": "p45", "text": "Watch the character and segment counts here," },
+        { "id": "p46", "text": "because a text that runs long splits into two segments and costs more to send." },
+        { "id": "p47", "text": "Short and tight isn't a style choice on S-M-S." },
+        { "id": "p48", "text": "It's the budget." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 153.92,
+      "endS": 170.4,
+      "phrases": [
+        { "id": "p49", "text": "RCS Templates, the richer cousin of texting." },
+        { "id": "p50", "text": "Cards, carousels, images." },
+        { "id": "p51", "text": "On a newer phone the member sees the full experience." },
+        { "id": "p52", "text": "On an older one it quietly drops back to a plain text," },
+        { "id": "p53", "text": "and the fallback column tells you how often that safety net is in place." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 170.4,
+      "endS": 187.2,
+      "phrases": [
+        { "id": "p54", "text": "Mobile Content Blocks, back on the Settings side." },
+        { "id": "p55", "text": "This is what a customer sees inside the app:" },
+        { "id": "p56", "text": "the promo banner, the card rail, the announcements." },
+        { "id": "p57", "text": "It's a live editor, so treat it gently." },
+        { "id": "p58", "text": "Read the layout." },
+        { "id": "p59", "text": "Do not click Save and Publish." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 187.2,
+      "endS": 204.24,
+      "phrases": [
+        { "id": "p60", "text": "Last one, Push Campaigns." },
+        { "id": "p61", "text": "This is where the app's push notifications get written and scheduled," },
+        { "id": "p62", "text": "with a preview of how they'll look on a lock screen." },
+        { "id": "p63", "text": "It's a compose-and-send surface, so we only name it." },
+        { "id": "p64", "text": "Do not start a new campaign and do not publish." },
+        { "id": "p65", "text": "Read it and move on." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 204.24,
+      "endS": 225.071,
+      "phrases": [
+        { "id": "p66", "text": "That's the whole menu." },
+        { "id": "p67", "text": "Links to SmartLinks, audiences to Segments, discounts to Offers," },
+        { "id": "p68", "text": "wording to the template pages, ad matching to Paid Media, and inbox health to Deliverability." },
+        { "id": "p69", "text": "Learn the map now, so when a client's win-back texts go quiet in one town," },
+        { "id": "p70", "text": "you already know the two pages that explain it before anyone files a bug." }
+      ]
+    }
+  ],
+  "output": "WC-05-03-marketing-menu-v1.1"
+}

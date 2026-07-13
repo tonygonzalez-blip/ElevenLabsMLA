@@ -1,0 +1,206 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:04.152
+This is Support Tickets, the queue your team works inside WashCentral.
+
+p02
+00:00:04.606 --> 00:00:09.370
+It's the platform's own help desk, separate from the cross-customer view in the last lesson.
+
+p03
+00:00:09.810 --> 00:00:13.280
+Everything about the day's support load lives on this one screen.
+
+p04
+00:00:13.680 --> 00:00:14.564
+Start at the top.
+
+p05
+00:00:15.300 --> 00:00:18.596
+Four counters frame the backlog before you read a single row:
+
+p06
+00:00:19.111 --> 00:00:22.384
+what's open, what's in progress, what closed today,
+
+p07
+00:00:22.670 --> 00:00:25.166
+and how long the average ticket takes to resolve.
+
+p08
+00:00:26.056 --> 00:00:29.184
+One look tells you whether the queue is calm or backed up.
+
+p09
+00:00:29.600 --> 00:00:30.814
+Now the left panel.
+
+p10
+00:00:31.201 --> 00:00:34.265
+This is the twelve-month trend, not today's numbers.
+
+p11
+00:00:34.778 --> 00:00:37.842
+Volume is climbing, up seven percent over the year.
+
+p12
+00:00:38.337 --> 00:00:42.197
+Handy context when a client asks whether their run of issues is unusual.
+
+p13
+00:00:42.640 --> 00:00:45.075
+The middle panel breaks tickets down by type.
+
+p14
+00:00:45.521 --> 00:00:47.492
+Billing leads, then technical, then feedback and general.
+
+p15
+00:00:47.695 --> 00:00:49.178
+When you're deciding where the team's hours go,
+
+p16
+00:00:49.834 --> 00:00:55.520
+this is the split that says billing questions are the heaviest load right now.
+
+p17
+00:00:55.979 --> 00:00:57.482
+On the right, the health panel.
+
+p18
+00:00:58.693 --> 00:01:04.164
+Most of the queue is already resolved, a smaller share in progress, and a thin band still open.
+
+p19
+00:01:04.608 --> 00:01:08.924
+Read across, it's a quick pulse on whether work is getting closed or piling up.
+
+p20
+00:01:09.440 --> 00:01:11.787
+Below the summary sits the list itself.
+
+p21
+00:01:12.274 --> 00:01:14.013
+This is where you actually work.
+
+p22
+00:01:14.783 --> 00:01:16.399
+Two buttons ride the top corner:
+
+p23
+00:01:16.885 --> 00:01:20.466
+one opens a brand-new ticket, the other exports the list.
+
+p24
+00:01:20.877 --> 00:01:22.265
+We'll open a new one shortly.
+
+p25
+00:01:22.658 --> 00:01:24.640
+We never export while recording.
+
+p26
+00:01:25.131 --> 00:01:27.936
+Above the table, a search box and a filter control.
+
+p27
+00:01:28.602 --> 00:01:32.310
+Type a ticket number or a few words of the subject to jump straight to it,
+
+p28
+00:01:32.647 --> 00:01:34.811
+or open the filters to narrow by field.
+
+p29
+00:01:35.665 --> 00:01:38.990
+On a busy queue, this is how you find one ticket fast.
+
+p30
+00:01:39.440 --> 00:01:40.890
+Read the column headers.
+
+p31
+00:01:41.897 --> 00:01:42.644
+Ticket number, subject, location, priority, status, owner, and created date.
+
+p32
+00:01:42.935 --> 00:01:45.516
+The two you'll lean on most are priority, for what to grab first,
+
+p33
+00:01:45.809 --> 00:01:55.129
+and the owner, for who already has it.
+
+p34
+00:01:55.600 --> 00:01:56.829
+Now the rows.
+
+p35
+00:01:57.472 --> 00:01:59.759
+A POS receipt problem in progress, a billing dispute still open,
+
+p36
+00:02:00.161 --> 00:02:01.892
+a membership that won't activate, a tunnel emergency-stop already resolved.
+
+p37
+00:02:02.302 --> 00:02:04.051
+Priority runs from critical down to medium,
+
+p38
+00:02:04.449 --> 00:02:13.927
+and each ticket names a person or a team on the hook for it.
+
+p39
+00:02:14.400 --> 00:02:16.646
+At the foot of the list, the page controls.
+
+p40
+00:02:17.018 --> 00:02:20.693
+Rows per page, a simple counter, and pager arrows.
+
+p41
+00:02:21.099 --> 00:02:25.944
+One quirk worth knowing: the card says eighteen records while only four load here.
+
+p42
+00:02:26.322 --> 00:02:30.594
+In the demo tenant, treat those four as samples and the counts as stand-ins.
+
+p43
+00:02:31.040 --> 00:02:32.509
+Now open a new ticket.
+
+p44
+00:02:33.173 --> 00:02:35.363
+This is the one write action in the lesson.
+
+p45
+00:02:35.585 --> 00:02:40.984
+Open the blank form, look it over, then back out without saving and without touching a field.
+
+p46
+00:02:41.294 --> 00:02:44.834
+We're documenting where a new ticket starts, not filing one.
+
+p47
+00:02:45.359 --> 00:02:46.443
+That's the whole page.
+
+p48
+00:02:47.039 --> 00:02:48.651
+The counters give you the backlog,
+
+p49
+00:02:49.050 --> 00:02:52.661
+the middle panels tell you what kind of work it is and how much is cleared,
+
+p50
+00:02:53.223 --> 00:02:56.790
+and the list hands you each ticket with its priority and its owner.
+
+p51
+00:02:57.331 --> 00:03:00.160
+Enough to triage before you open a single one.
+

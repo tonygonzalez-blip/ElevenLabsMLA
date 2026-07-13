@@ -1,0 +1,496 @@
+{
+  "lesson": "WC-06-01",
+  "audioMaster": "training/module06-analytics/WC-06-01-full-narration-v1.0.mp3",
+  "audioDurationS": 204.931,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is the screen WashCentral opens to.",
+      "startS": 0,
+      "endS": 2.703,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The Executive Dashboard is the whole network on one page.",
+      "startS": 3.066,
+      "endS": 6.524,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Before you ever open a ticket or a single site,",
+      "startS": 6.985,
+      "endS": 9.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "this is where you check the pulse of the business.",
+      "startS": 9.986,
+      "endS": 12.182,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Learn to read it quickly,",
+      "startS": 12.684,
+      "endS": 13.836,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "because a lot of support calls start with a number that lives right here.",
+      "startS": 14.145,
+      "endS": 17.893,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Read the band up top.",
+      "startS": 18.32,
+      "endS": 19.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Network, April, month to date.",
+      "startS": 20.604,
+      "endS": 21.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Every card below rolls all your locations into one figure,",
+      "startS": 21.456,
+      "endS": 23.059,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "so what you see is the business as a whole, not any single wash.",
+      "startS": 23.811,
+      "endS": 27.374,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "The location selector in the header is what narrows it when you need one site.",
+      "startS": 27.758,
+      "endS": 36.24,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Now find the period row on the right.",
+      "startS": 36.64,
+      "endS": 38.795,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Today, Week, Month, Quarter, Y-T-D, one year.",
+      "startS": 39.303,
+      "endS": 39.792,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "It is set to Month.",
+      "startS": 40.127,
+      "endS": 40.521,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "That one choice decides the window every card and panel reports on,",
+      "startS": 40.909,
+      "endS": 41.337,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "so always check it before you trust a number.",
+      "startS": 41.681,
+      "endS": 52.695,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Click through the periods, one at a time.",
+      "startS": 53.12,
+      "endS": 55.963,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Watch the numbers redraw for today, then the week, then the quarter, then the year.",
+      "startS": 55.963,
+      "endS": 60.946,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Nothing is edited.",
+      "startS": 60.946,
+      "endS": 61.846,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "You are only changing the lens, and landing back on Month puts it right where it started.",
+      "startS": 61.846,
+      "endS": 66.943,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Start with the first three cards.",
+      "startS": 67.36,
+      "endS": 69.163,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "Revenue, cars washed, active members.",
+      "startS": 69.755,
+      "endS": 70.371,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "These are your scale numbers,",
+      "startS": 70.623,
+      "endS": 71.422,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "each with its change against the month before and a small trend line.",
+      "startS": 71.728,
+      "endS": 72.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "Green arrows mean the network is growing,",
+      "startS": 73.03,
+      "endS": 78.179,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "and growth in members is the one that quietly lifts the other two.",
+      "startS": 78.74,
+      "endS": 84.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p27",
+      "text": "Now the next three.",
+      "startS": 84.72,
+      "endS": 86.43,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Conversion rate, visit frequency, and labor percent.",
+      "startS": 86.43,
+      "endS": 88.349,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Labor is the one to watch.",
+      "startS": 88.349,
+      "endS": 90.529,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "It has gone amber because it is running over the fifteen percent target,",
+      "startS": 90.529,
+      "endS": 94.309,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "and that color is the dashboard flagging it for you.",
+      "startS": 94.309,
+      "endS": 97.051,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "When you see amber, that is your cue to look at which site is pulling it up.",
+      "startS": 97.051,
+      "endS": 102.178,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Drop to the big panel.",
+      "startS": 102.64,
+      "endS": 104.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Twelve months of revenue, stacked by where it came from: memberships, pay per wash, and retail.",
+      "startS": 105.038,
+      "endS": 108.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "The membership band is the thick one at the base.",
+      "startS": 108.64,
+      "endS": 111.174,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "That is the recurring money you want climbing, month after month.",
+      "startS": 112.131,
+      "endS": 118.298,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p37",
+      "text": "On the right, every site in one list.",
+      "startS": 118.863,
+      "endS": 119.513,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "Revenue, cars, labor, and how close each runs to its conversion target.",
+      "startS": 119.761,
+      "endS": 121.343,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "The dots and the numbers slide from green toward red as a site slips.",
+      "startS": 121.748,
+      "endS": 126.744,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "One look tells you Naples Coast is the one to check on today,",
+      "startS": 127.235,
+      "endS": 131.395,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "and it saves you scanning six separate reports to find it.",
+      "startS": 131.915,
+      "endS": 138.256,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Keep going to the members panel.",
+      "startS": 138.771,
+      "endS": 140.433,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "A line for how many members you have,",
+      "startS": 140.433,
+      "endS": 143.196,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "against bars for the ones you gained and the ones you lost, month by month.",
+      "startS": 143.196,
+      "endS": 148.12,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "The gap between those bars is what grows or shrinks the base over time.",
+      "startS": 148.12,
+      "endS": 151.997,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p46",
+      "text": "Beside it, the revenue mix.",
+      "startS": 152.4,
+      "endS": 154.186,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "A single donut for how this month's money splits apart.",
+      "startS": 154.624,
+      "endS": 157.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "It is the quick shape of where revenue is coming from right now,",
+      "startS": 158.18,
+      "endS": 161.504,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "before you go digging for detail.",
+      "startS": 161.726,
+      "endS": 163.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p50",
+      "text": "Click the Revenue card.",
+      "startS": 163.84,
+      "endS": 165.131,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p51",
+      "text": "It opens a page just for revenue:",
+      "startS": 166.101,
+      "endS": 168.045,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p52",
+      "text": "today's take, the average ticket, the member share, add-ons, and a table by location.",
+      "startS": 168.404,
+      "endS": 169.162,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p53",
+      "text": "So the cards are not dead ends.",
+      "startS": 169.446,
+      "endS": 171.394,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "Any one of them is a door to the next level of detail.",
+      "startS": 171.681,
+      "endS": 179.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p55",
+      "text": "Click Back to Executive Dashboard.",
+      "startS": 180,
+      "endS": 182.02,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p56",
+      "text": "You return to the full scorecard, still on Month, exactly as you left it.",
+      "startS": 183.148,
+      "endS": 187.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p57",
+      "text": "That is the whole dashboard.",
+      "startS": 187.76,
+      "endS": 189.318,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p58",
+      "text": "Pick a period, read the six cards for scale and health,",
+      "startS": 189.318,
+      "endS": 193.746,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p59",
+      "text": "then the panels for the trend, the sites, your members, and the mix.",
+      "startS": 193.746,
+      "endS": 197.797,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p60",
+      "text": "It edits nothing, and every card can take you deeper.",
+      "startS": 197.797,
+      "endS": 200.914,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p61",
+      "text": "Start your day here, then go where the numbers point.",
+      "startS": 200.914,
+      "endS": 204.424,
+      "timing": "proportional"
+    }
+  ]
+}

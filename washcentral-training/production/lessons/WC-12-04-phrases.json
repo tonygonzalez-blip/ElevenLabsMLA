@@ -1,0 +1,154 @@
+{
+  "lesson": "WC-12-04",
+  "audioMaster": "training/module12-settings/WC-12-04-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows are each block's measured onset in the joined master: the Σ(audio+0.4) formula predicts 197.923s but the ffprobed master is 197.486s (0.44s off, past the ±0.3s gate — each per-block mp3 carries encoder padding that accumulates), so each block start is the FFT cross-correlation onset of its sNN.mp3 against the joined master (8 kHz mono PCM); measured inter-block gaps are a consistent 0.40s. Windows are contiguous (endS = next onset). Final end = ffprobed master duration 197.486s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 19.36,
+      "phrases": [
+        { "id": "p01", "text": "This is where the money rules live." },
+        { "id": "p02", "text": "Open Settings, then the Payments and Finance group." },
+        { "id": "p03", "text": "Nine pages, one list." },
+        { "id": "p04", "text": "Between them they decide how a payment is taken, how a price gets adjusted," },
+        { "id": "p05", "text": "how tax is set, and how a sale lands in accounting." },
+        { "id": "p06", "text": "Learn to spot them, because most billing questions end on one of these." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 19.36,
+      "endS": 37.2,
+      "phrases": [
+        { "id": "p07", "text": "Start at Payment Types." },
+        { "id": "p08", "text": "This is your tender list, the payment methods the register accepts." },
+        { "id": "p09", "text": "Three flags do the real work." },
+        { "id": "p10", "text": "Locked marks the system types you can't delete." },
+        { "id": "p11", "text": "Require Reference forces a number at the register." },
+        { "id": "p12", "text": "And Show as Bank Drop decides what counts toward the drawer drop." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 37.2,
+      "endS": 56.0,
+      "phrases": [
+        { "id": "p13", "text": "Now Discounts." },
+        { "id": "p14", "text": "The panels up top read the file at a glance:" },
+        { "id": "p15", "text": "how many are active, how they split between dollars off and percent off." },
+        { "id": "p16", "text": "But the row that answers questions is Amount, next to Discount Type." },
+        { "id": "p17", "text": "That pair tells you fast whether a discount takes three dollars off or ten percent." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 56.0,
+      "endS": 80.8,
+      "phrases": [
+        { "id": "p18", "text": "Open one discount and it behaves like a service." },
+        { "id": "p19", "text": "A detail view, an Active Locations tab, the sites where it's live," },
+        { "id": "p20", "text": "and per-location overrides underneath." },
+        { "id": "p21", "text": "That's how one discount is three dollars off at one wash and two at another." },
+        { "id": "p22", "text": "We couldn't pull this exact screen from today's capture," },
+        { "id": "p23", "text": "so lean on the Services lesson as your reference until we grab it live." },
+        { "id": "p24", "text": "Look, don't save." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 80.8,
+      "endS": 92.4,
+      "phrases": [
+        { "id": "p25", "text": "Discount Types is the short list behind that column." },
+        { "id": "p26", "text": "Four categories, nothing more." },
+        { "id": "p27", "text": "Whatever shows under Discount Type on the list you just saw is filed from here." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 92.4,
+      "endS": 104.56,
+      "phrases": [
+        { "id": "p28", "text": "Surcharges are the mirror of a discount." },
+        { "id": "p29", "text": "Same idea, opposite sign." },
+        { "id": "p30", "text": "An added fee, with an amount, a code, and a taxable flag" },
+        { "id": "p31", "text": "that decides whether tax rides on top of the fee." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 104.56,
+      "endS": 118.16,
+      "phrases": [
+        { "id": "p32", "text": "Surcharge Types carries one flag worth knowing." },
+        { "id": "p33", "text": "Disallow Discounts." },
+        { "id": "p34", "text": "Switch it on, and a discount can't stack on a ticket that already has this surcharge." },
+        { "id": "p35", "text": "That single control settles a lot of pricing arguments." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 118.16,
+      "endS": 130.24,
+      "phrases": [
+        { "id": "p36", "text": "Payout Percentage is a band table." },
+        { "id": "p37", "text": "Each row is a range, a start and an end, with a percentage inside it." },
+        { "id": "p38", "text": "A value drops into whichever band it lands in." },
+        { "id": "p39", "text": "Tiered, not flat." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 130.24,
+      "endS": 144.48,
+      "phrases": [
+        { "id": "p40", "text": "Tax Rates feeds the rest of the platform." },
+        { "id": "p41", "text": "Every rate here is what a service reaches for in its two tax slots." },
+        { "id": "p42", "text": "So when a wash rings up the wrong tax, don't start at the service." },
+        { "id": "p43", "text": "Start here, and check which rate is the default." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 144.48,
+      "endS": 163.28,
+      "phrases": [
+        { "id": "p44", "text": "Down to accounting." },
+        { "id": "p45", "text": "General Ledger Codes." },
+        { "id": "p46", "text": "One small catch worth remembering:" },
+        { "id": "p47", "text": "the sidebar says General Ledger Codes, the page header says G-L Codes." },
+        { "id": "p48", "text": "Same page." },
+        { "id": "p49", "text": "These codes are what your exports post against," },
+        { "id": "p50", "text": "and a wrong one here is a classic month-end headache." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 163.28,
+      "endS": 177.2,
+      "phrases": [
+        { "id": "p51", "text": "G-L Account Codes is the partner list." },
+        { "id": "p52", "text": "Same three columns, same shape." },
+        { "id": "p53", "text": "Here's the split: G-L Codes name the ledger lines," },
+        { "id": "p54", "text": "and G-L Account Codes tie them to accounts for the export." },
+        { "id": "p55", "text": "The two work as a pair." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 177.2,
+      "endS": 197.486,
+      "phrases": [
+        { "id": "p56", "text": "That's the whole group." },
+        { "id": "p57", "text": "Nine pages, one sidebar." },
+        { "id": "p58", "text": "Tender in Payment Types." },
+        { "id": "p59", "text": "Price changes in Discounts and Surcharges." },
+        { "id": "p60", "text": "Tiered payouts, tax, and the two ledger lists." },
+        { "id": "p61", "text": "When a billing question comes in, you already know which page owns the answer." },
+        { "id": "p62", "text": "And you got there without touching a single setting." }
+      ]
+    }
+  ],
+  "output": "WC-12-04-payments-finance-v1.1"
+}

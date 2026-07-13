@@ -1,0 +1,163 @@
+{
+  "lesson": "WC-12-01",
+  "audioMaster": "training/module12-settings/WC-12-01-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence boundaries. Block windows are the blocks' measured positions in the joined master: the Sigma(audio+0.4) formula predicts 220.710s but the ffprobed master is 220.290612s (0.42s off, past the +-0.3s gate), so each block start is the measured onset from FFT cross-correlation of each sNN.mp3 against the joined master (8 kHz mono PCM; every block correlated at 1.000). Windows are contiguous (each block endS = the next block's measured onset; the joined gaps are ~0.363s, not 0.4s). Final end = ffprobed master duration 220.290612s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 17.36,
+      "phrases": [
+        { "id": "p01", "text": "Every configuration screen in Wash Central lives behind one gear." },
+        { "id": "p02", "text": "Click it." },
+        { "id": "p03", "text": "Settings opens as its own full-screen area, with its own sidebar and its own front door." },
+        { "id": "p04", "text": "Setup tickets all end up here sooner or later," },
+        { "id": "p05", "text": "so this walk is about learning the floor plan before you need it." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 17.36,
+      "endS": 33.12,
+      "phrases": [
+        { "id": "p06", "text": "Check the counter, top right." },
+        { "id": "p07", "text": "Sixteen categories, ninety two pages." },
+        { "id": "p08", "text": "That's the platform's entire configuration surface in one line." },
+        { "id": "p09", "text": "Nobody memorizes ninety two pages." },
+        { "id": "p10", "text": "You memorize how they're grouped, and the groups do the remembering for you." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 33.12,
+      "endS": 45.92,
+      "phrases": [
+        { "id": "p11", "text": "Below the heading sits a search box." },
+        { "id": "p12", "text": "When you already know the page name, type it here and jump straight in." },
+        { "id": "p13", "text": "Much faster than scanning cards." },
+        { "id": "p14", "text": "We'll leave it empty today and learn the layout the slow way, once." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 45.92,
+      "endS": 66.56,
+      "phrases": [
+        { "id": "p15", "text": "Now sweep the card grid." },
+        { "id": "p16", "text": "Sixteen cards, one per category, each with a one line summary of what it holds." },
+        { "id": "p17", "text": "Locations, payments, hardware, the customer portal, the A-I agent." },
+        { "id": "p18", "text": "This lesson stays inside the first card, General," },
+        { "id": "p19", "text": "because that's where a client's account and org structure are defined." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 66.56,
+      "endS": 82.32,
+      "phrases": [
+        { "id": "p20", "text": "Open General." },
+        { "id": "p21", "text": "The sidebar expands to nine pages, and the first of them, Account Information, opens on its own." },
+        { "id": "p22", "text": "Read the names as they appear: profit centers, departments, categories." },
+        { "id": "p23", "text": "Those three are the spine we came for." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 82.32,
+      "endS": 99.6,
+      "phrases": [
+        { "id": "p24", "text": "Start at the top of Account Information." },
+        { "id": "p25", "text": "Fifty six locations across fifteen states," },
+        { "id": "p26", "text": "running in multi operation mode on an active license." },
+        { "id": "p27", "text": "This page is the client's site registry." },
+        { "id": "p28", "text": "When you need to confirm what a client actually runs, and where, this is the record of truth." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 99.6,
+      "endS": 116.08,
+      "phrases": [
+        { "id": "p29", "text": "Scan the list below." },
+        { "id": "p30", "text": "Each row is one site with its company, its operation mode, and its contact details." },
+        { "id": "p31", "text": "There's a New Record button at the top right." },
+        { "id": "p32", "text": "Locate it, then leave it alone." },
+        { "id": "p33", "text": "Adding a site is production admin work, never part of a training walk." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 116.08,
+      "endS": 133.76,
+      "phrases": [
+        { "id": "p34", "text": "Next page: Profit Centers." },
+        { "id": "p35", "text": "Four records." },
+        { "id": "p36", "text": "Wash, lube, detail, and store." },
+        { "id": "p37", "text": "These are the top level revenue buckets," },
+        { "id": "p38", "text": "and every sale in the platform rolls up into exactly one of them." },
+        { "id": "p39", "text": "Four short rows that shape every financial report the client will ever read." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 133.76,
+      "endS": 150.72,
+      "phrases": [
+        { "id": "p40", "text": "Now Departments." },
+        { "id": "p41", "text": "The same four names again, and that's the point." },
+        { "id": "p42", "text": "Departments map the operational side of the business onto those same revenue buckets," },
+        { "id": "p43", "text": "so labor and sales line up when a report compares them." },
+        { "id": "p44", "text": "All four active, all maintained by Micro Logic." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 150.72,
+      "endS": 172.16,
+      "phrases": [
+        { "id": "p45", "text": "Then Categories, where the detail lives." },
+        { "id": "p46", "text": "The tiles say forty nine." },
+        { "id": "p47", "text": "The list header says sixty six records." },
+        { "id": "p48", "text": "They disagree, and the list wins; trust the table count, not the tile." },
+        { "id": "p49", "text": "Each category refines one profit center," },
+        { "id": "p50", "text": "which is how a single wash bucket splits into dozens of reportable lines." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 172.16,
+      "endS": 190.96,
+      "phrases": [
+        { "id": "p51", "text": "One more page, and it comes with a trick." },
+        { "id": "p52", "text": "Dashboard Settings is filed under Analytics, not General, whatever older material tells you." },
+        { "id": "p53", "text": "The platform wins." },
+        { "id": "p54", "text": "Ten dashboards, one per user level," },
+        { "id": "p55", "text": "deciding what an administrator, a manager, or a cashier sees the moment they sign in." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 190.96,
+      "endS": 199.52,
+      "phrases": [
+        { "id": "p56", "text": "Click Close Settings." },
+        { "id": "p57", "text": "You're back in the app, exactly where you left it." },
+        { "id": "p58", "text": "Five pages read, nothing touched." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 199.52,
+      "endS": 220.290612,
+      "phrases": [
+        { "id": "p59", "text": "So that's the General group." },
+        { "id": "p60", "text": "The Settings home reaches ninety two pages, and search jumps you to any of them." },
+        { "id": "p61", "text": "Account Information holds the sites." },
+        { "id": "p62", "text": "Profit centers, departments, and categories classify every sale, in that order." },
+        { "id": "p63", "text": "And Dashboard Settings lives under Analytics," },
+        { "id": "p64", "text": "which will save you a hunt the first time someone asks." }
+      ]
+    }
+  ],
+  "output": "WC-12-01-general-org-v1.1"
+}

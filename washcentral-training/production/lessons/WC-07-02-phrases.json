@@ -1,0 +1,158 @@
+{
+  "lesson": "WC-07-02",
+  "audioMaster": "training/module07-team/WC-07-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence boundaries. Block windows were measured by FFT cross-correlation of each WC-07-02-sNN.mp3 against the joined master (8 kHz mono PCM, numpy rfft): the Σ(ffprobe audio+0.4) formula predicts 205.455s but the ffprobed master is 205.009s (0.45s off, past the ±0.3s gate). Cross-correlation shows the master is the 13 blocks concatenated with an exact 0.4s gap after each; per-file ffprobe durations are inflated ~0.03-0.05s by mp3 encoder-delay padding that the PCM concat strips, which is the whole discrepancy. Each block startS is its measured onset; final end = ffprobed master duration 205.009s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.4,
+      "phrases": [
+        { "id": "p01", "text": "Open Employee Schedules from the sidebar." },
+        { "id": "p02", "text": "Four tiles read across the top: who's scheduled this week, how many shifts sit open," },
+        { "id": "p03", "text": "your coverage percentage, and how many sites that covers." },
+        { "id": "p04", "text": "This is your first stop when a manager asks whether the week is staffed." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.4,
+      "endS": 34.24,
+      "phrases": [
+        { "id": "p05", "text": "Now the grid itself." },
+        { "id": "p06", "text": "One row per person, one column per day, Monday through Sunday." },
+        { "id": "p07", "text": "Each cell holds a shift code, a start and end like seven to three, or off for a day off." },
+        { "id": "p08", "text": "Read across a single row and you have that person's whole week." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 34.24,
+      "endS": 49.84,
+      "phrases": [
+        { "id": "p09", "text": "Above the grid, two panels do the math for you." },
+        { "id": "p10", "text": "One splits the week by time of day: morning, afternoon, evening." },
+        { "id": "p11", "text": "The other rates coverage, how much is covered, at risk, or still open." },
+        { "id": "p12", "text": "You can spot a thin day before you ever open a row." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 49.84,
+      "endS": 63.28,
+      "phrases": [
+        { "id": "p13", "text": "Switch to Time Clock." },
+        { "id": "p14", "text": "Schedules are the plan." },
+        { "id": "p15", "text": "This is what actually happened." },
+        { "id": "p16", "text": "The tile to watch is On Clock Now, your live count of everyone punched in across the network," },
+        { "id": "p17", "text": "right this second." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 63.28,
+      "endS": 77.92,
+      "phrases": [
+        { "id": "p18", "text": "Run your eye down the clock-out column." },
+        { "id": "p19", "text": "Most rows show a time in and a time out." },
+        { "id": "p20", "text": "One shows a dash." },
+        { "id": "p21", "text": "That dash isn't missing data." },
+        { "id": "p22", "text": "It means the person is still on the clock, and their hours keep climbing until they punch out." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 77.92,
+      "endS": 93.28,
+      "phrases": [
+        { "id": "p23", "text": "Off to the side, the punch-status panel." },
+        { "id": "p24", "text": "It splits today into on the clock, clocked out, and no show." },
+        { "id": "p25", "text": "No show is the one to scan for: scheduled staff who never punched in." },
+        { "id": "p26", "text": "That's a call worth making before the shift falls short." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 93.28,
+      "endS": 106.24,
+      "phrases": [
+        { "id": "p27", "text": "Open Employee Roles." },
+        { "id": "p28", "text": "A role is a job's permission set, what that person is allowed to touch." },
+        { "id": "p29", "text": "The tiles count your total roles, how many are active," },
+        { "id": "p30", "text": "and how many sit at manager or admin level." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 106.24,
+      "endS": 121.52,
+      "phrases": [
+        { "id": "p31", "text": "The list names each role and, in the last column, its access level." },
+        { "id": "p32", "text": "Administrator has full reach." },
+        { "id": "p33", "text": "A cashier gets the point of sale and little else." },
+        { "id": "p34", "text": "When someone can't do something they expect to, this column is usually the reason." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 121.52,
+      "endS": 135.12,
+      "phrases": [
+        { "id": "p35", "text": "The access-levels panel sums it up." },
+        { "id": "p36", "text": "Most of your staff sit at the low tier, and that's by design." },
+        { "id": "p37", "text": "Far more cashiers and attendants than managers." },
+        { "id": "p38", "text": "The panel beside it ranks roles by how many people hold each one." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 135.12,
+      "endS": 146.24,
+      "phrases": [
+        { "id": "p39", "text": "Last page, User Groups." },
+        { "id": "p40", "text": "A group is a named set of people, and it's a different idea from a role." },
+        { "id": "p41", "text": "A role is about permissions." },
+        { "id": "p42", "text": "A group is about who belongs together." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 146.24,
+      "endS": 161.92,
+      "phrases": [
+        { "id": "p43", "text": "Each group lists its description, its member count, and its locations." },
+        { "id": "p44", "text": "Some cover a single site, like the M-L-A-S staff group." },
+        { "id": "p45", "text": "Others span every location, like all cashiers." },
+        { "id": "p46", "text": "The locations column tells you a group's reach at a glance." }
+      ]
+    },
+    {
+      "block": "s12",
+      "startS": 161.92,
+      "endS": 180.0,
+      "phrases": [
+        { "id": "p47", "text": "One thing that isn't obvious on screen." },
+        { "id": "p48", "text": "Groups are how Maintenance work gets assigned." },
+        { "id": "p49", "text": "Route an issue to the detail team, and it reaches everyone in that group." },
+        { "id": "p50", "text": "So hold the split in your head: roles decide what a person can do," },
+        { "id": "p51", "text": "groups decide who the work lands on." }
+      ]
+    },
+    {
+      "block": "s13",
+      "startS": 180.0,
+      "endS": 205.009,
+      "phrases": [
+        { "id": "p52", "text": "Four pages, four questions." },
+        { "id": "p53", "text": "Schedules, for who works which days." },
+        { "id": "p54", "text": "Time Clock, for who's punched in right now." },
+        { "id": "p55", "text": "Roles, for what someone's allowed to do." },
+        { "id": "p56", "text": "Groups, for who belongs to which team." },
+        { "id": "p57", "text": "Every one is a list you read, never a screen you edit." },
+        { "id": "p58", "text": "Trust the tiles for the live count, read the rows for the detail," },
+        { "id": "p59", "text": "and leave the punches and schedules alone." }
+      ]
+    }
+  ],
+  "output": "WC-07-02-schedules-timeclock-roles-v1.1"
+}

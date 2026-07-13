@@ -1,0 +1,624 @@
+{
+  "lesson": "WC-12-02",
+  "audioMaster": "training/module12-settings/WC-12-02-full-narration-v1.0.mp3",
+  "audioDurationS": 269.871,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Settings, and find the Locations group in the left rail.",
+      "startS": 0,
+      "endS": 3.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Four pages live here.",
+      "startS": 3.879,
+      "endS": 5.244,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "One holds every site you run and everything hanging off it.",
+      "startS": 5.606,
+      "endS": 9.041,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "The other three group your sites, style what customers see, and guard the payment keys.",
+      "startS": 9.435,
+      "endS": 14.428,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "We'll read all four, and change none of them.",
+      "startS": 14.712,
+      "endS": 17.358,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Now open Locations.",
+      "startS": 17.76,
+      "endS": 19.434,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "A band of tiles reads the network at a glance: how many sites, how many active,",
+      "startS": 20.091,
+      "endS": 22.686,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "how many states, and when they last synced.",
+      "startS": 23.004,
+      "endS": 27.452,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Under it, three panels chart growth, split the sites by state,",
+      "startS": 27.934,
+      "endS": 28.354,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "and score how healthy their setup is.",
+      "startS": 28.642,
+      "endS": 30.108,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "This is your map before you open a single site.",
+      "startS": 30.407,
+      "endS": 34.046,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p12",
+      "text": "And if the list underneath ever reads couldn't load,",
+      "startS": 34.547,
+      "endS": 37.302,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p13",
+      "text": "that's the agent service dropping, not an empty tenant.",
+      "startS": 37.803,
+      "endS": 43.911,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "Look at the list itself.",
+      "startS": 44.496,
+      "endS": 46.313,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Eight columns, and the one that matters most is Code.",
+      "startS": 46.313,
+      "endS": 49.074,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "That short site code follows a location through every screen in the platform,",
+      "startS": 49.074,
+      "endS": 53.152,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "so learn to read it first.",
+      "startS": 53.152,
+      "endS": 54.808,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p18",
+      "text": "Search by name or code up top, filter beside it, and leave New Record alone.",
+      "startS": 54.808,
+      "endS": 59.757,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p19",
+      "text": "Last Sync on the right tells you when the site last checked in,",
+      "startS": 59.757,
+      "endS": 63.759,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p20",
+      "text": "which is the first thing you read when a site looks silent.",
+      "startS": 63.759,
+      "endS": 67.071,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "Click a site to open it.",
+      "startS": 67.52,
+      "endS": 68.865,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "One location, five tabs.",
+      "startS": 70.172,
+      "endS": 72.04,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p23",
+      "text": "Profile, Operations, Payments and Credentials, Messaging, and Users.",
+      "startS": 72.432,
+      "endS": 74.152,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p24",
+      "text": "That strip is the whole record,",
+      "startS": 74.387,
+      "endS": 75.592,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p25",
+      "text": "and every support question about a site starts by picking the right tab.",
+      "startS": 75.808,
+      "endS": 77.379,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p26",
+      "text": "Profile is where you land.",
+      "startS": 77.84,
+      "endS": 85.99,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "Start with Profile.",
+      "startS": 86.56,
+      "endS": 87.961,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "This is who and where: the site's code and name, its address, its contact details, its hours.",
+      "startS": 88.424,
+      "endS": 90.065,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p29",
+      "text": "When a ticket names a location you don't recognize,",
+      "startS": 90.311,
+      "endS": 94.909,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p30",
+      "text": "this tab confirms you're looking at the right one before you touch anything else.",
+      "startS": 95.544,
+      "endS": 102.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Now Operations.",
+      "startS": 103.28,
+      "endS": 103.965,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "This tab runs the site's behavior and its time clock.",
+      "startS": 103.965,
+      "endS": 107.983,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Whether it shows on dashboards, whether it takes online orders,",
+      "startS": 107.983,
+      "endS": 111.991,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p34",
+      "text": "and the rules that clock staff out and pay overtime.",
+      "startS": 111.991,
+      "endS": 116.154,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p35",
+      "text": "Find the automatic clock-out timeout and the overtime threshold,",
+      "startS": 116.154,
+      "endS": 119.237,
+      "timing": "proportional"
+    },
+    {
+      "block": "s06",
+      "id": "p36",
+      "text": "read them, and leave them exactly as they are.",
+      "startS": 119.237,
+      "endS": 122.32,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Open Payments and Credentials.",
+      "startS": 122.72,
+      "endS": 124.564,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Below the portal and auto-charge options sits Credential Configuration,",
+      "startS": 125.528,
+      "endS": 133.101,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p39",
+      "text": "split into a block for each processor a site can run:",
+      "startS": 133.572,
+      "endS": 134.226,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p40",
+      "text": "Open Edge, Smart Tech, Other, and Card Connect.",
+      "startS": 134.561,
+      "endS": 135.282,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p41",
+      "text": "Every secret shows masked.",
+      "startS": 135.724,
+      "endS": 137.402,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p42",
+      "text": "Your job is to name which block is present, never to read the value.",
+      "startS": 138.351,
+      "endS": 140.012,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p43",
+      "text": "For a decline ticket, the gateway name is all support needs.",
+      "startS": 140.293,
+      "endS": 148.64,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "Two tabs left. Messaging.",
+      "startS": 149.114,
+      "endS": 150.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p45",
+      "text": "This holds the messages a site sends on its own, set per location rather than network-wide.",
+      "startS": 150.625,
+      "endS": 151.364,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p46",
+      "text": "When a customer at one site gets a text that another site's customers don't, this tab is why.",
+      "startS": 151.854,
+      "endS": 162.454,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p47",
+      "text": "You read what's set here; you send nothing.",
+      "startS": 162.718,
+      "endS": 165.152,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "Then Users.",
+      "startS": 165.6,
+      "endS": 166.905,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "This is who can work this site.",
+      "startS": 167.442,
+      "endS": 169.05,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p50",
+      "text": "When someone says they can't get into a location, check here before you reset anything:",
+      "startS": 169.597,
+      "endS": 174.105,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p51",
+      "text": "they may simply not be assigned to it.",
+      "startS": 174.416,
+      "endS": 176.387,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p52",
+      "text": "Read the list; open nothing.",
+      "startS": 176.838,
+      "endS": 178.88,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "Back out with the Back button.",
+      "startS": 179.28,
+      "endS": 180.764,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "Nothing saved, nothing changed.",
+      "startS": 181.324,
+      "endS": 183.269,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "And even if you wanted to swap a site's credentials, you couldn't finish it here:",
+      "startS": 183.832,
+      "endS": 187.737,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p56",
+      "text": "those changes route to an approval queue, which is the next page we read.",
+      "startS": 188.227,
+      "endS": 192.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Open Location Groups.",
+      "startS": 192.64,
+      "endS": 194.302,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "A group bundles several sites so a report or a dashboard treats them as one.",
+      "startS": 195.506,
+      "endS": 200.176,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "Five columns: the name, a description, how many sites it holds,",
+      "startS": 200.837,
+      "endS": 201.709,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "its geo group, and whether it shows on the dashboard.",
+      "startS": 202.016,
+      "endS": 206.115,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "Read only.",
+      "startS": 206.444,
+      "endS": 209.085,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "Next, Location Sub-Brand.",
+      "startS": 209.577,
+      "endS": 211.699,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "The link says Sub-Brand, the page says Sub-Brands, same place.",
+      "startS": 212.456,
+      "endS": 213.799,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "This styles the customer-facing panels, the panel type and the colors,",
+      "startS": 214.045,
+      "endS": 216.745,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "so one operator can run sites under more than one look.",
+      "startS": 217.405,
+      "endS": 224.837,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p66",
+      "text": "Last page: Payment Credential Approval.",
+      "startS": 225.28,
+      "endS": 226.102,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p67",
+      "text": "This is where those credential changes land for sign-off.",
+      "startS": 226.48,
+      "endS": 227.939,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p68",
+      "text": "Each row shows a location, its gateway, and a status: pending, approved, or rejected.",
+      "startS": 228.414,
+      "endS": 230.871,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p69",
+      "text": "In the capture, two sites sat approved on Open Edge.",
+      "startS": 231.505,
+      "endS": 235.01,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p70",
+      "text": "When an admin says a site's new keys aren't live yet, this status column is your answer,",
+      "startS": 235.363,
+      "endS": 237.416,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p71",
+      "text": "one pending row and you know it's still in the queue.",
+      "startS": 238.049,
+      "endS": 249.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p72",
+      "text": "So that's the Locations area.",
+      "startS": 249.84,
+      "endS": 251.58,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p73",
+      "text": "One list, one five-tab record, three sibling pages.",
+      "startS": 251.968,
+      "endS": 254.243,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p74",
+      "text": "The site list gets you in,",
+      "startS": 254.492,
+      "endS": 255.823,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p75",
+      "text": "the tabs tell you who, how, and with which processor,",
+      "startS": 256.03,
+      "endS": 257.786,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p76",
+      "text": "and the sibling pages bundle sites, style them, and sign off their credentials.",
+      "startS": 258.011,
+      "endS": 266.192,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p77",
+      "text": "You read all of it, and you change none of it.",
+      "startS": 266.619,
+      "endS": 269.439,
+      "timing": "silence"
+    }
+  ]
+}

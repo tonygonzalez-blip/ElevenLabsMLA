@@ -1,0 +1,198 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.628
+Open the site's own status board.
+
+p02
+00:00:01.628 --> 00:00:03.661
+One location, pulled onto one screen.
+
+p03
+00:00:03.661 --> 00:00:07.187
+The trail up top shows you drilled in from the network center,
+
+p04
+00:00:07.187 --> 00:00:10.443
+and the back link runs you straight back there when you're done.
+
+p05
+00:00:10.880 --> 00:00:11.890
+Start with the header.
+
+p06
+00:00:12.680 --> 00:00:14.905
+Site, status, address, the account it belongs to, and who manages it, all in a single strip.
+
+p07
+00:00:15.189 --> 00:00:16.544
+The sync time tells you how current this is.
+
+p08
+00:00:16.856 --> 00:00:25.977
+Right now it's a couple of minutes old, and the status reads critical.
+
+p09
+00:00:26.468 --> 00:00:28.042
+Three buttons sit to the right.
+
+p10
+00:00:28.491 --> 00:00:31.429
+These are your fast responses: open a job, ping the account manager,
+
+p11
+00:00:31.782 --> 00:00:35.255
+or push the site up the priority list.
+
+p12
+00:00:35.963 --> 00:00:40.081
+Each one kicks off something real, so today we read them and keep our hands off.
+
+p13
+00:00:40.640 --> 00:00:41.541
+Now the numbers.
+
+p14
+00:00:42.177 --> 00:00:45.947
+Six tiles across, and every one carries its own yardstick.
+
+p15
+00:00:46.391 --> 00:00:49.004
+Washes and revenue today against their averages.
+
+p16
+00:00:49.558 --> 00:00:51.820
+Wait time and service level against target.
+
+p17
+00:00:52.338 --> 00:00:55.851
+And the count of open incidents, which is where the trouble surfaces.
+
+p18
+00:00:56.563 --> 00:01:00.480
+You read today's figure next to its benchmark, without doing the math yourself.
+
+p19
+00:01:00.880 --> 00:01:03.096
+Middle of the page, the equipment panel.
+
+p20
+00:01:03.720 --> 00:01:06.424
+Eight units at this wash, one card each,
+
+p21
+00:01:06.745 --> 00:01:09.851
+every card showing a few live readings and a health score.
+
+p22
+00:01:10.294 --> 00:01:14.234
+It's the hardware view of the site, and any card drills deeper on a click.
+
+p23
+00:01:14.640 --> 00:01:16.186
+Look at the first card.
+
+p24
+00:01:17.045 --> 00:01:18.931
+The point-of-sale is offline.
+
+p25
+00:01:19.188 --> 00:01:24.337
+No health score, no transactions in forty-seven minutes, a red bar flagging it.
+
+p26
+00:01:25.020 --> 00:01:30.259
+When the P-O-S is down the site takes no money, so this is the card you check first.
+
+p27
+00:01:30.720 --> 00:01:31.769
+Sweep the rest.
+
+p28
+00:01:32.746 --> 00:01:36.993
+Conveyor, scanner, chemicals, dryers, water, gate, lighting.
+
+p29
+00:01:37.417 --> 00:01:37.885
+Most run green and healthy; a couple sit lower and earn a second look.
+
+p30
+00:01:38.246 --> 00:01:47.433
+The health number and the color bar do your triage at a glance.
+
+p31
+00:01:47.900 --> 00:01:49.794
+On the right, the open incidents.
+
+p32
+00:01:50.266 --> 00:01:54.730
+Three of them, each tagged by type and, just as usefully, by owner.
+
+p33
+00:01:55.234 --> 00:01:57.462
+The payments outage is on the account manager.
+
+p34
+00:01:57.798 --> 00:01:59.921
+The conveyor stop is still unassigned.
+
+p35
+00:02:00.608 --> 00:02:04.800
+That owner line tells you what already has a name on it and what's waiting for one.
+
+p36
+00:02:05.200 --> 00:02:06.922
+Underneath, the timeline.
+
+p37
+00:02:07.529 --> 00:02:09.084
+Every event with a timestamp, from the shift opening this morning
+
+p38
+00:02:09.333 --> 00:02:13.246
+to the terminal dropping offline later on.
+
+p39
+00:02:13.537 --> 00:02:15.636
+This is the site's story of the day.
+
+p40
+00:02:16.177 --> 00:02:19.200
+When you need to know what led up to an incident, you scroll here.
+
+p41
+00:02:19.600 --> 00:02:21.625
+Bottom right, the quick actions.
+
+p42
+00:02:22.402 --> 00:02:25.475
+The common responses, gathered so you don't go hunting:
+
+p43
+00:02:25.839 --> 00:02:29.186
+raise a work order, book maintenance, send a tech, email the customer, restart the P-O-S.
+
+p44
+00:02:29.526 --> 00:02:36.720
+Every one does something real, so we read the list and stop there.
+
+p45
+00:02:37.120 --> 00:02:38.820
+Step back and take it in.
+
+p46
+00:02:40.186 --> 00:02:40.965
+One page: status up top, then the numbers, the hardware,
+
+p47
+00:02:41.660 --> 00:02:44.938
+the open incidents with owners, the day's history, and the actions that answer them.
+
+p48
+00:02:45.269 --> 00:02:46.997
+Read it top to bottom and you know this site cold,
+
+p49
+00:02:47.310 --> 00:02:55.743
+and you did it without touching a thing.
+

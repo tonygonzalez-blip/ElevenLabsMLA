@@ -1,0 +1,186 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.959
+Open Reports from the left rail.
+
+p02
+00:00:03.021 --> 00:00:07.663
+Every report a site runs lives in this one hub.
+
+p03
+00:00:07.953 --> 00:00:10.044
+A hundred seventy-three in all, five favorites, three on a schedule.
+
+p04
+00:00:10.785 --> 00:00:13.680
+Each row carries a type tag and the last time it ran.
+
+p05
+00:00:14.080 --> 00:00:16.670
+Name the symptom before you touch a filter.
+
+p06
+00:00:17.501 --> 00:00:20.649
+Wrong numbers or an empty report is a filter question.
+
+p07
+00:00:21.401 --> 00:00:24.750
+A scheduled report that never landed is a scheduler question.
+
+p08
+00:00:25.678 --> 00:00:30.427
+Decide which ticket you have, or you'll re-run the wrong report ten times.
+
+p09
+00:00:30.880 --> 00:00:33.060
+Take the wrong-or-empty trail first. Open the report from the list.
+
+p10
+00:00:34.096 --> 00:00:35.619
+It loads in the Report Viewer, and the filter bar across the top is the whole story.
+
+p11
+00:00:36.011 --> 00:00:45.680
+More filters, a location selector, a date range, and the run control.
+
+p12
+00:00:46.134 --> 00:00:47.194
+Now read the scope.
+
+p13
+00:00:47.828 --> 00:00:50.068
+Most wrong-numbers tickets die here.
+
+p14
+00:00:50.634 --> 00:00:53.871
+The selector sat on one site when the manager meant the network,
+
+p15
+00:00:54.196 --> 00:00:56.135
+or the dates missed the week in question.
+
+p16
+00:00:56.570 --> 00:00:58.829
+Fix both, run it again, compare.
+
+p17
+00:00:59.460 --> 00:01:02.091
+A report is only wrong once its filters are right.
+
+p18
+00:01:02.560 --> 00:01:04.660
+One caution before you file anything.
+
+p19
+00:01:05.107 --> 00:01:11.115
+In this demo tenant, a KPI tile and the table beneath it often disagree, sometimes wildly.
+
+p20
+00:01:11.711 --> 00:01:14.320
+That's a known demo artifact, not a platform bug.
+
+p21
+00:01:14.770 --> 00:01:17.676
+Reproduce the numbers in production before you open a ticket.
+
+p22
+00:01:18.136 --> 00:01:20.262
+Now the report that never arrived. Open the Scheduled Reports view.
+
+p23
+00:01:21.179 --> 00:01:22.996
+Three reports run on a schedule here.
+
+p24
+00:01:23.641 --> 00:01:25.543
+Confirm the missing one is actually among them, and read its last run.
+
+p25
+00:01:25.872 --> 00:01:32.727
+Not scheduled at all? There's your answer.
+
+p26
+00:01:33.200 --> 00:01:34.891
+Cross-check the job that sends it. Settings, then Automation, then Task Scheduler.
+
+p27
+00:01:35.939 --> 00:01:39.638
+Eighteen tasks, sixteen active, two running now.
+
+p28
+00:01:40.520 --> 00:01:44.064
+And the tile that matters reads failed, zero.
+
+p29
+00:01:44.954 --> 00:01:48.050
+Nothing errored overnight.
+
+p30
+00:01:48.375 --> 00:01:53.116
+When that count isn't zero, you have your lead.
+
+p31
+00:01:53.677 --> 00:01:55.808
+Find the Daily Report Email row.
+
+p32
+00:01:56.151 --> 00:02:00.817
+Read across it.
+
+p33
+00:02:01.108 --> 00:02:02.910
+Scheduled daily at six. Last ran today at six.
+
+p34
+00:02:03.160 --> 00:02:04.515
+Next run, tomorrow at six. Status, active.
+
+p35
+00:02:04.867 --> 00:02:10.576
+A missing report usually shows here as a stale last run or a status that isn't active.
+
+p36
+00:02:11.073 --> 00:02:12.902
+Read it, never edit it.
+
+p37
+00:02:13.360 --> 00:02:14.538
+Now build the ticket.
+
+p38
+00:02:15.090 --> 00:02:19.112
+Name the report, the location scope, and the date range you ran it with.
+
+p39
+00:02:20.054 --> 00:02:24.647
+For a scheduled report, add the job's last run, next run, and status.
+
+p40
+00:02:24.991 --> 00:02:29.040
+Attach a screenshot. Leave the demo-tenant number quirks out of it.
+
+p41
+00:02:29.440 --> 00:02:30.783
+That's the playbook.
+
+p42
+00:02:31.118 --> 00:02:32.154
+Name the symptom.
+
+p43
+00:02:32.865 --> 00:02:35.392
+Wrong or empty means the filter bar.
+
+p44
+00:02:35.851 --> 00:02:39.798
+Never arrived means Scheduled Reports and the Task Scheduler.
+
+p45
+00:02:40.231 --> 00:02:42.189
+Rule out the demo artifact, escalate with the filters and the run times,
+
+p46
+00:02:42.413 --> 00:02:46.696
+and change nothing along the way.
+

@@ -1,0 +1,592 @@
+{
+  "lesson": "WC-14-01",
+  "audioMaster": "training/module14-academy/WC-14-01-full-narration-v1.0.mp3",
+  "audioDurationS": 229.721,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "WashCentral ships with its own training platform, the Academy.",
+      "startS": 0,
+      "endS": 3.501,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Click the graduation cap.",
+      "startS": 3.738,
+      "endS": 5.075,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "You land on My Dashboard, your learning home base.",
+      "startS": 5.461,
+      "endS": 8.672,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Notice the top-right corner: search and Ask Shyne follow you in here too.",
+      "startS": 9.094,
+      "endS": 10.526,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Same platform, different wing.",
+      "startS": 10.741,
+      "endS": 15.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Read the sidebar before anything else.",
+      "startS": 15.84,
+      "endS": 18.183,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The Academy group holds the four places a learner lives:",
+      "startS": 18.915,
+      "endS": 22.239,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "your dashboard, the catalog, learning paths, and your own course list.",
+      "startS": 22.543,
+      "endS": 27.067,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "Below it sits an Admin group.",
+      "startS": 27.687,
+      "endS": 29.41,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "That is the back office, another lesson entirely, and we stay out of it today.",
+      "startS": 29.88,
+      "endS": 34.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "Four tiles across the top.",
+      "startS": 34.96,
+      "endS": 36.595,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Enrolled, completed, hours, certificates.",
+      "startS": 37.013,
+      "endS": 38.544,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Every one reads zero because this account has never taken a course,",
+      "startS": 38.811,
+      "endS": 40.442,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "and that is worth seeing once:",
+      "startS": 40.96,
+      "endS": 44.879,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "it is exactly what a brand new client learner sees on day one.",
+      "startS": 45.287,
+      "endS": 46.992,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "These four numbers are your status at a glance.",
+      "startS": 47.244,
+      "endS": 53.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Under the tiles, Continue Learning.",
+      "startS": 54.24,
+      "endS": 55.703,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This is the resume slot.",
+      "startS": 55.703,
+      "endS": 57.622,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "When you are partway through a course, it surfaces here",
+      "startS": 57.622,
+      "endS": 60.957,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "so you pick up mid-lesson instead of hunting for where you left off.",
+      "startS": 60.957,
+      "endS": 65.505,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "On a fresh account it previews the starter course instead,",
+      "startS": 65.505,
+      "endS": 68.431,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "and View All opens the fuller list.",
+      "startS": 68.431,
+      "endS": 70.48,
+      "timing": "proportional"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Look closer at the card, hands off the buttons.",
+      "startS": 70.88,
+      "endS": 72.364,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Two chips set the category and the level, then the title,",
+      "startS": 72.669,
+      "endS": 73.954,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "a progress bar at zero of six lessons, and the total runtime, forty five minutes.",
+      "startS": 74.986,
+      "endS": 78.381,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "Start Course would enroll you, and this walk is browse only,",
+      "startS": 78.691,
+      "endS": 83.654,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "so it stays unclicked.",
+      "startS": 84.348,
+      "endS": 89.275,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Below that, All Courses.",
+      "startS": 89.68,
+      "endS": 91.569,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Each card follows one anatomy:",
+      "startS": 92.418,
+      "endS": 98.635,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "a category ribbon, the title, who teaches it and how long it runs,",
+      "startS": 99.007,
+      "endS": 101.119,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "a progress bar, and a status line.",
+      "startS": 101.783,
+      "endS": 103.527,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "Not started means available; a moving bar means enrolled.",
+      "startS": 103.834,
+      "endS": 105.46,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "Browse Catalog up in the corner reaches the full library.",
+      "startS": 106.233,
+      "endS": 109.588,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Six courses on this dashboard.",
+      "startS": 110,
+      "endS": 111.953,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "They start with the platform basics at forty five minutes",
+      "startS": 112.466,
+      "endS": 118.686,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "and climb to a two hour fifteen minute analytics course.",
+      "startS": 119.155,
+      "endS": 121.512,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "Real instructors, real lesson counts.",
+      "startS": 121.801,
+      "endS": 123.904,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "Every one reads Not started here, and every Start button stays untouched.",
+      "startS": 124.364,
+      "endS": 126.778,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Now My Achievements.",
+      "startS": 127.2,
+      "endS": 128.479,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Three badges earned, three locked.",
+      "startS": 129.137,
+      "endS": 130.243,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "The earned ones render in full color;",
+      "startS": 130.517,
+      "endS": 131.217,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "the locked ones sit dimmed until you meet their condition.",
+      "startS": 131.696,
+      "endS": 133.713,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "A small thing, but it is the Academy's gamification layer,",
+      "startS": 134.004,
+      "endS": 137.029,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "and client crews notice it more than you would expect.",
+      "startS": 137.495,
+      "endS": 143.581,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "On the right, the Org Leaderboard.",
+      "startS": 144,
+      "endS": 145.64,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "Colleagues ranked by learning points,",
+      "startS": 145.64,
+      "endS": 147.583,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "with your own row highlighted so you can find yourself in the standings.",
+      "startS": 147.583,
+      "endS": 151.136,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "It is view only from here,",
+      "startS": 151.136,
+      "endS": 153.36,
+      "timing": "proportional"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "and it is the panel that turns a training rollout into a bit of a competition.",
+      "startS": 153.36,
+      "endS": 157.733,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Under the standings, Quick Links.",
+      "startS": 158.16,
+      "endS": 159.738,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "A couple of shortcuts, your learning paths and your certificates,",
+      "startS": 159.738,
+      "endS": 163.453,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "that jump straight to those views without a trip through the sidebar.",
+      "startS": 163.453,
+      "endS": 167.551,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "Nothing deep here.",
+      "startS": 167.551,
+      "endS": 168.498,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "Just the fast lane.",
+      "startS": 168.498,
+      "endS": 169.76,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "Back to the sidebar for the other three stops.",
+      "startS": 170.16,
+      "endS": 172.519,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "The catalog is the full library, nineteen courses deep.",
+      "startS": 173.787,
+      "endS": 177.225,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Learning Paths chains them into named tracks,",
+      "startS": 178.127,
+      "endS": 180.604,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "twenty two courses in all, none started on this account.",
+      "startS": 180.866,
+      "endS": 183.882,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "And My Learning keeps your own record across four tabs, every one at zero today.",
+      "startS": 184.895,
+      "endS": 189.791,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "We point without opening.",
+      "startS": 190.74,
+      "endS": 191.966,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "Their interiors are a walk for another lesson.",
+      "startS": 192.295,
+      "endS": 194.56,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "One rule before you explore on your own.",
+      "startS": 194.96,
+      "endS": 196.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "Browsing, hovering, reading: all free.",
+      "startS": 197.472,
+      "endS": 199.415,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "Enrolling is not.",
+      "startS": 199.772,
+      "endS": 200.475,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "Start Course, Start, and any enroll button create real training records,",
+      "startS": 200.792,
+      "endS": 201.988,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p66",
+      "text": "so in this lesson none of them get clicked.",
+      "startS": 202.506,
+      "endS": 209.688,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p67",
+      "text": "Taking a course comes later.",
+      "startS": 210.039,
+      "endS": 211.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p68",
+      "text": "That is the learner side.",
+      "startS": 212,
+      "endS": 213.427,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p69",
+      "text": "Four tiles for your status, Continue Learning to resume,",
+      "startS": 214.46,
+      "endS": 217.728,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p70",
+      "text": "the course grid and catalog to browse,",
+      "startS": 218.211,
+      "endS": 220.276,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p71",
+      "text": "badges and the leaderboard to keep score,",
+      "startS": 220.816,
+      "endS": 223.174,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p72",
+      "text": "and three more sidebar stops when you are ready.",
+      "startS": 223.548,
+      "endS": 225.877,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p73",
+      "text": "You read all of it without enrolling in a thing.",
+      "startS": 226.802,
+      "endS": 229.28,
+      "timing": "silence"
+    }
+  ]
+}

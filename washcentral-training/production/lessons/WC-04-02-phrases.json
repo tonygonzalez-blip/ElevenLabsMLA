@@ -1,0 +1,116 @@
+{
+  "lesson": "WC-04-02",
+  "audioMaster": "training/module04-inventory/WC-04-02-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's break tags and sentence pauses. Never rewrite, summarize, or reorder. Block windows are MEASURED onsets (FFT cross-correlation of each block mp3 against the joined master at 8 kHz, correlation 1.0000 on all eight blocks): the nominal Sigma(audio+0.4) formula using ffprobe per-file durations overshoots the probed master (170.841s) by 0.30s because ffprobe's mp3 durations overstate the decoded sample counts. Measured onsets land exactly at Sigma(decoded_audio+0.4): s01 0.000, s02 16.640, s03 38.960, s04 62.640, s05 83.120, s06 109.440, s07 134.000, s08 149.840.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0,
+      "endS": 16.64,
+      "phrases": [
+        { "id": "p01", "text": "Open the Inventory menu." },
+        { "id": "p02", "text": "Six pages line the sidebar, and every one of them reads the same way." },
+        { "id": "p03", "text": "A row of headline numbers up top." },
+        { "id": "p04", "text": "Three cards under it." },
+        { "id": "p05", "text": "Then a searchable list." },
+        { "id": "p06", "text": "Item detail is its own lesson." },
+        { "id": "p07", "text": "Today we walk the other five." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 16.64,
+      "endS": 38.96,
+      "phrases": [
+        { "id": "p08", "text": "Start with Inventory Batches." },
+        { "id": "p09", "text": "This is your receiving log." },
+        { "id": "p10", "text": "The tiles up top count how many batches arrived, how many are still open, and what they cost." },
+        { "id": "p11", "text": "But the column that earns its keep is Reference." },
+        { "id": "p12", "text": "It carries the purchase order each batch filled," },
+        { "id": "p13", "text": "so a receipt on screen ties straight back to the order behind it." },
+        { "id": "p14", "text": "When someone asks what actually landed on a P-O, you look here." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 38.96,
+      "endS": 62.64,
+      "phrases": [
+        { "id": "p15", "text": "Now Adjustments." },
+        { "id": "p16", "text": "Every stock correction the network makes lands here, split into positives and negatives." },
+        { "id": "p17", "text": "What makes the page useful in support is that a correction is never anonymous." },
+        { "id": "p18", "text": "Each row names the location, the ticket, the shift, and the cashier behind it." },
+        { "id": "p19", "text": "So a write-off isn't just a dollar figure." },
+        { "id": "p20", "text": "It's a person and a moment you can go ask about." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 62.64,
+      "endS": 83.12,
+      "phrases": [
+        { "id": "p21", "text": "Vendors is the supplier directory." },
+        { "id": "p22", "text": "Account number, company, contact, address, phone." },
+        { "id": "p23", "text": "When an order runs late or a chemical shipment comes up short," },
+        { "id": "p24", "text": "this is the page that hands you the name and number to call." },
+        { "id": "p25", "text": "The tile up top counts three open P-Os." },
+        { "id": "p26", "text": "That's the same figure waiting for you one page over, on Purchase Orders." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 83.12,
+      "endS": 109.44,
+      "phrases": [
+        { "id": "p27", "text": "Chemicals and Supplies." },
+        { "id": "p28", "text": "For a field tech, this is the page that answers the call." },
+        { "id": "p29", "text": "Read Stock Level against Par, the reorder point," },
+        { "id": "p30", "text": "and the gap tells you how deep the hole is." },
+        { "id": "p31", "text": "The Status chip says the same thing in one word:" },
+        { "id": "p32", "text": "In Stock, Low Stock, Critical, or Out of Stock." },
+        { "id": "p33", "text": "When an alert fires that a tank is low, you come here, confirm the level," },
+        { "id": "p34", "text": "and grab the supplier from the same row." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 109.44,
+      "endS": 134,
+      "phrases": [
+        { "id": "p35", "text": "Last page: Purchase Orders." },
+        { "id": "p36", "text": "This is the order pipeline." },
+        { "id": "p37", "text": "The tiles split it by stage: open, pending approval, in transit." },
+        { "id": "p38", "text": "The list adds the supplier, the site, the money, and the two dates a caller cares about," },
+        { "id": "p39", "text": "when it was created and when it's expected." },
+        { "id": "p40", "text": "The Status chip tells you whether it's still waiting on a signoff, riding on a truck, or done." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 134,
+      "endS": 149.84,
+      "phrases": [
+        { "id": "p41", "text": "Every order row has a View button." },
+        { "id": "p42", "text": "Click it and a quick-look slides in over the list." },
+        { "id": "p43", "text": "In the demo it opens on a sample record, so we won't read fields off it." },
+        { "id": "p44", "text": "Open Full Detail is the door to the real order." },
+        { "id": "p45", "text": "Close the peek, and nothing moves." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 149.84,
+      "endS": 170.841,
+      "phrases": [
+        { "id": "p46", "text": "Five pages, one sidebar." },
+        { "id": "p47", "text": "Batches for what came in and which P-O it filled." },
+        { "id": "p48", "text": "Adjustments for who changed a count and why." },
+        { "id": "p49", "text": "Vendors for who to call." },
+        { "id": "p50", "text": "Chemicals and Supplies for what's running low." },
+        { "id": "p51", "text": "Purchase Orders for what's on the way." },
+        { "id": "p52", "text": "Same layout every time, so once you can read one, you can read all six." }
+      ]
+    }
+  ],
+  "output": "WC-04-02-batches-adjustments-vendors-v1.1"
+}

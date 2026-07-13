@@ -1,0 +1,134 @@
+{
+  "lesson": "WC-10-06",
+  "audioMaster": "training/module10-it-support/WC-10-06-full-narration-v1.0.mp3",
+  "note": "Verbatim phrases of the locked narration, in spoken order, split at the script's <break> tags and sentence/clause boundaries (<=~95 chars). Block windows measured by FFT cross-correlation of each WC-10-06-sNN.mp3 against the joined master (8 kHz mono PCM): the Sigma(ffprobe audio+0.4) formula predicts 176.599s but the ffprobed master is 176.196s (0.40s off, past the +-0.3s gate). Sequential normalized cross-correlation (full-block probe, local search) locks every block at ncc=1.000 with a consistent ~0.36s inter-block gap; the master is the 11 blocks concatenated with that gap after each. Per-file ffprobe durations are inflated ~0.037s each by mp3 encoder-delay padding that the PCM concat strips, and the error accumulates to -0.40s by s11, which is the whole discrepancy. Each block startS is its measured onset (a multiple of the 0.08s mp3-frame grid: s01 0.00, s02 10.88, s03 26.40, s04 40.64, s05 60.88, s06 74.64, s07 90.72, s08 107.84, s09 125.20, s10 139.60, s11 157.12); each endS is the next block's onset; the final end = ffprobed master duration 176.196s.",
+  "blocks": [
+    {
+      "block": "s01",
+      "startS": 0.0,
+      "endS": 10.88,
+      "phrases": [
+        { "id": "p01", "text": "Open the site's own status board." },
+        { "id": "p02", "text": "One location, pulled onto one screen." },
+        { "id": "p03", "text": "The trail up top shows you drilled in from the network center," },
+        { "id": "p04", "text": "and the back link runs you straight back there when you're done." }
+      ]
+    },
+    {
+      "block": "s02",
+      "startS": 10.88,
+      "endS": 26.4,
+      "phrases": [
+        { "id": "p05", "text": "Start with the header." },
+        { "id": "p06", "text": "Site, status, address, the account it belongs to, and who manages it, all in a single strip." },
+        { "id": "p07", "text": "The sync time tells you how current this is." },
+        { "id": "p08", "text": "Right now it's a couple of minutes old, and the status reads critical." }
+      ]
+    },
+    {
+      "block": "s03",
+      "startS": 26.4,
+      "endS": 40.64,
+      "phrases": [
+        { "id": "p09", "text": "Three buttons sit to the right." },
+        { "id": "p10", "text": "These are your fast responses: open a job, ping the account manager," },
+        { "id": "p11", "text": "or push the site up the priority list." },
+        { "id": "p12", "text": "Each one kicks off something real, so today we read them and keep our hands off." }
+      ]
+    },
+    {
+      "block": "s04",
+      "startS": 40.64,
+      "endS": 60.88,
+      "phrases": [
+        { "id": "p13", "text": "Now the numbers." },
+        { "id": "p14", "text": "Six tiles across, and every one carries its own yardstick." },
+        { "id": "p15", "text": "Washes and revenue today against their averages." },
+        { "id": "p16", "text": "Wait time and service level against target." },
+        { "id": "p17", "text": "And the count of open incidents, which is where the trouble surfaces." },
+        { "id": "p18", "text": "You read today's figure next to its benchmark, without doing the math yourself." }
+      ]
+    },
+    {
+      "block": "s05",
+      "startS": 60.88,
+      "endS": 74.64,
+      "phrases": [
+        { "id": "p19", "text": "Middle of the page, the equipment panel." },
+        { "id": "p20", "text": "Eight units at this wash, one card each," },
+        { "id": "p21", "text": "every card showing a few live readings and a health score." },
+        { "id": "p22", "text": "It's the hardware view of the site, and any card drills deeper on a click." }
+      ]
+    },
+    {
+      "block": "s06",
+      "startS": 74.64,
+      "endS": 90.72,
+      "phrases": [
+        { "id": "p23", "text": "Look at the first card." },
+        { "id": "p24", "text": "The point-of-sale is offline." },
+        { "id": "p25", "text": "No health score, no transactions in forty-seven minutes, a red bar flagging it." },
+        { "id": "p26", "text": "When the P-O-S is down the site takes no money, so this is the card you check first." }
+      ]
+    },
+    {
+      "block": "s07",
+      "startS": 90.72,
+      "endS": 107.84,
+      "phrases": [
+        { "id": "p27", "text": "Sweep the rest." },
+        { "id": "p28", "text": "Conveyor, scanner, chemicals, dryers, water, gate, lighting." },
+        { "id": "p29", "text": "Most run green and healthy; a couple sit lower and earn a second look." },
+        { "id": "p30", "text": "The health number and the color bar do your triage at a glance." }
+      ]
+    },
+    {
+      "block": "s08",
+      "startS": 107.84,
+      "endS": 125.2,
+      "phrases": [
+        { "id": "p31", "text": "On the right, the open incidents." },
+        { "id": "p32", "text": "Three of them, each tagged by type and, just as usefully, by owner." },
+        { "id": "p33", "text": "The payments outage is on the account manager." },
+        { "id": "p34", "text": "The conveyor stop is still unassigned." },
+        { "id": "p35", "text": "That owner line tells you what already has a name on it and what's waiting for one." }
+      ]
+    },
+    {
+      "block": "s09",
+      "startS": 125.2,
+      "endS": 139.6,
+      "phrases": [
+        { "id": "p36", "text": "Underneath, the timeline." },
+        { "id": "p37", "text": "Every event with a timestamp, from the shift opening this morning" },
+        { "id": "p38", "text": "to the terminal dropping offline later on." },
+        { "id": "p39", "text": "This is the site's story of the day." },
+        { "id": "p40", "text": "When you need to know what led up to an incident, you scroll here." }
+      ]
+    },
+    {
+      "block": "s10",
+      "startS": 139.6,
+      "endS": 157.12,
+      "phrases": [
+        { "id": "p41", "text": "Bottom right, the quick actions." },
+        { "id": "p42", "text": "The common responses, gathered so you don't go hunting:" },
+        { "id": "p43", "text": "raise a work order, book maintenance, send a tech, email the customer, restart the P-O-S." },
+        { "id": "p44", "text": "Every one does something real, so we read the list and stop there." }
+      ]
+    },
+    {
+      "block": "s11",
+      "startS": 157.12,
+      "endS": 176.196,
+      "phrases": [
+        { "id": "p45", "text": "Step back and take it in." },
+        { "id": "p46", "text": "One page: status up top, then the numbers, the hardware," },
+        { "id": "p47", "text": "the open incidents with owners, the day's history, and the actions that answer them." },
+        { "id": "p48", "text": "Read it top to bottom and you know this site cold," },
+        { "id": "p49", "text": "and you did it without touching a thing." }
+      ]
+    }
+  ],
+  "output": "WC-10-06-site-detail-v1.1"
+}

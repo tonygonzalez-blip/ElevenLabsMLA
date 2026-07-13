@@ -1,0 +1,322 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.141
+Open the Command Center.
+
+p02
+00:00:01.141 --> 00:00:05.224
+This is your first look when a site calls in a dead register.
+
+p03
+00:00:05.224 --> 00:00:08.162
+The dashboard pulls the whole network into one view,
+
+p04
+00:00:08.162 --> 00:00:11.300
+and the panel you want is lower down, under the map.
+
+p05
+00:00:11.841 --> 00:00:13.639
+Find Priority Intelligence.
+
+p06
+00:00:13.978 --> 00:00:16.933
+It ranks what needs you right now, worst first.
+
+p07
+00:00:17.205 --> 00:00:19.739
+Eleven items today, four of them urgent,
+
+p08
+00:00:19.972 --> 00:00:22.640
+and the Critical group is already sitting at the top.
+
+p09
+00:00:23.064 --> 00:00:23.834
+There it is.
+
+p10
+00:00:24.229 --> 00:00:29.060
+Henrico West Broad, POS system offline, card terminals down at peak.
+
+p11
+00:00:29.609 --> 00:00:33.666
+The row names the site, the symptom, and tells you a tech is already en route.
+
+p12
+00:00:33.981 --> 00:00:36.400
+Check one is done before you lifted a finger.
+
+p13
+00:00:36.936 --> 00:00:37.936
+Now look right,
+
+p14
+00:00:38.140 --> 00:00:38.937
+not through.
+
+p15
+00:00:39.367 --> 00:00:41.702
+The row has an Open arrow into the item.
+
+p16
+00:00:41.910 --> 00:00:46.133
+We leave it alone on the shared demo, and this pass did not capture where it lands.
+
+p17
+00:00:46.729 --> 00:00:49.688
+What earns your attention is Action Ownership beside it:
+
+p18
+00:00:50.040 --> 00:00:53.848
+Regional Ops already holds this one, due inside thirty minutes.
+
+p19
+00:00:54.165 --> 00:00:56.000
+Know who owns it before you move.
+
+p20
+00:00:56.451 --> 00:01:00.124
+Head to I-T and Support, and open M-L Command Center.
+
+p21
+00:01:00.482 --> 00:01:05.772
+This is the Micrologic N-O-C, the room support watches across every customer.
+
+p22
+00:01:06.150 --> 00:01:09.667
+Two criticals live right now, and the incidents tab is where they land.
+
+p23
+00:01:10.205 --> 00:01:11.570
+Read the top incident.
+
+p24
+00:01:12.365 --> 00:01:16.991
+POS system offline, zero transactions for forty-seven minutes.
+
+p25
+00:01:17.387 --> 00:01:18.906
+That zero is the tell.
+
+p26
+00:01:19.423 --> 00:01:23.022
+A slow lane still writes tickets;
+
+p27
+00:01:23.340 --> 00:01:25.600
+a stopped one does not, and this one stopped almost an hour ago.
+
+p28
+00:01:26.046 --> 00:01:28.038
+Two things on that card do your triage.
+
+p29
+00:01:28.615 --> 00:01:30.086
+The tag tells you what broke:
+
+p30
+00:01:30.622 --> 00:01:32.252
+this one reads Tunnel Down,
+
+p31
+00:01:32.680 --> 00:01:35.446
+others say Hardware, Payments, Equipment.
+
+p32
+00:01:36.411 --> 00:01:38.266
+The assignee tells you who has it,
+
+p33
+00:01:38.735 --> 00:01:41.235
+or that it is unassigned and yours to claim.
+
+p34
+00:01:42.186 --> 00:01:47.502
+Create Ticket and View Full Profile are right there, but on the demo you only read them.
+
+p35
+00:01:47.952 --> 00:01:51.275
+Next check is System Alerts, under I-T and Support.
+
+p36
+00:01:52.103 --> 00:01:57.047
+Open it from the sidebar link and the live feed loads, three active alerts, one critical.
+
+p37
+00:01:57.721 --> 00:02:02.126
+Every row names its type, tunnel, P-O-S, chemical, network,
+
+p38
+00:02:02.406 --> 00:02:04.531
+and today's P-O-S row is a warning,
+
+p39
+00:02:04.801 --> 00:02:07.925
+low receipt paper on P-O-S two, still active.
+
+p40
+00:02:08.657 --> 00:02:11.134
+Filter to the site and read what is still open there.
+
+p41
+00:02:11.793 --> 00:02:14.488
+Into Settings, Hardware, Terminals.
+
+p42
+00:02:15.105 --> 00:02:17.857
+This is the register you would check for that offline complaint.
+
+p43
+00:02:18.339 --> 00:02:20.864
+There is a plus New Record button up top; leave it alone.
+
+p44
+00:02:21.179 --> 00:02:25.105
+We are here to read, not to register anything.
+
+p45
+00:02:25.564 --> 00:02:27.292
+Run your eye across the columns.
+
+p46
+00:02:27.754 --> 00:02:28.272
+Terminal,
+
+p47
+00:02:28.555 --> 00:02:29.314
+location,
+
+p48
+00:02:29.673 --> 00:02:30.328
+I-P,
+
+p49
+00:02:30.601 --> 00:02:31.653
+software version,
+
+p50
+00:02:31.898 --> 00:02:32.565
+O-S,
+
+p51
+00:02:32.836 --> 00:02:33.782
+and Last Seen.
+
+p52
+00:02:34.439 --> 00:02:37.867
+Over a thousand terminals load here, and notice what is missing:
+
+p53
+00:02:38.159 --> 00:02:40.189
+no active or status column.
+
+p54
+00:02:40.527 --> 00:02:44.930
+So Last Seen is your answer, the moment each register last checked in.
+
+p55
+00:02:45.316 --> 00:02:49.148
+Search the site, find the terminal, and read how long it has been quiet.
+
+p56
+00:02:49.600 --> 00:02:52.512
+Last surface: Sales, then Tickets.
+
+p57
+00:02:53.031 --> 00:02:54.863
+This is the live pulse of the lane.
+
+p58
+00:02:55.328 --> 00:02:56.714
+The list carries Location, Ticket number,
+
+p59
+00:02:57.020 --> 00:02:58.835
+Date and Time, Total,
+
+p60
+00:02:59.142 --> 00:03:03.857
+Status, Tender Type, and Customer, with a running total up top.
+
+p61
+00:03:04.395 --> 00:03:07.290
+Filter to the site, then read the newest time stamp.
+
+p62
+00:03:07.910 --> 00:03:11.214
+If the last ticket is minutes old, the lane is still writing.
+
+p63
+00:03:11.769 --> 00:03:16.535
+If it has been quiet for a stretch, that matches the N-O-C's zero transactions,
+
+p64
+00:03:16.885 --> 00:03:19.267
+and now you have a hard outage in writing.
+
+p65
+00:03:19.553 --> 00:03:20.498
+Skip Export.
+
+p66
+00:03:21.200 --> 00:03:22.059
+Now escalate,
+
+p67
+00:03:22.426 --> 00:03:23.004
+cleanly.
+
+p68
+00:03:23.803 --> 00:03:26.691
+Open Support Tickets and raise one with four things:
+
+p69
+00:03:27.053 --> 00:03:29.491
+the location code, the terminal I-D,
+
+p70
+00:03:29.752 --> 00:03:32.450
+the last-ticket time, and any alert I-Ds.
+
+p71
+00:03:33.264 --> 00:03:38.311
+The queue sorts by Ticket, Category, Location, Owner, Age, and Priority.
+
+p72
+00:03:38.886 --> 00:03:40.715
+Migration switches are the exception;
+
+p73
+00:03:41.013 --> 00:03:42.786
+those go to Jira, not here.
+
+p74
+00:03:43.200 --> 00:03:45.194
+That is the whole loop.
+
+p75
+00:03:45.194 --> 00:03:47.912
+Priority Intelligence to confirm the flag and its owner.
+
+p76
+00:03:47.912 --> 00:03:51.522
+The N-O-C for what broke and who has it.
+
+p77
+00:03:51.522 --> 00:03:53.938
+System Alerts and Terminals for the hardware picture.
+
+p78
+00:03:53.938 --> 00:03:58.547
+And the ticket feed to show whether the lane is still writing.
+
+p79
+00:03:58.547 --> 00:04:00.661
+Run them in that order every time,
+
+p80
+00:04:00.661 --> 00:04:05.794
+and your escalation carries the four facts a field tech needs to move without calling you back.
+

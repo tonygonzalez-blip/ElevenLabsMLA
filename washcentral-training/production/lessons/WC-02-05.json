@@ -1,0 +1,2459 @@
+{
+  "lesson": "WC-02-05",
+  "title": "House Accounts (CRM)",
+  "audioMaster": "training/module02-crm/WC-02-05-full-narration-v1.0.mp3",
+  "audioDurationS": 301.009,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/crm-customers.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "sideHouseAccounts": {
+      "selector": "aside.sidebar a[href=\"crm-house-accounts.html\"]"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "kpiTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "kpiTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "kpiTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "trendCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Balance Trend/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "utilCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Credit Utilization/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "statusCard": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Account Status/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "eyebrow": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^CRM\\s*·\\s*House Accounts$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "cardTitle": {
+      "js": "[...document.querySelectorAll('div,h1,h2,h3')].find(e=>(e.textContent||'').trim()==='House Account List'&&e.getBoundingClientRect().height<34&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "delBtn": {
+      "selector": "#bulk-delete-btn"
+    },
+    "genBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Generate Invoices'&&e.getBoundingClientRect().width>0)"
+    },
+    "addBtn": {
+      "text": "+ New House Account",
+      "scope": "a.a-btn"
+    },
+    "searchInput": {
+      "selector": "#ha-search"
+    },
+    "searchWrap": {
+      "js": "(()=>{const i=document.querySelector('#ha-search');return i?i.closest('div'):null})()"
+    },
+    "filtersBtn": {
+      "selector": "#adv-toggle"
+    },
+    "searchBtn": {
+      "selector": "#search-btn"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thAccount": {
+      "text": "Account #",
+      "scope": "table thead th"
+    },
+    "thCompany": {
+      "text": "Company",
+      "scope": "table thead th"
+    },
+    "thContact": {
+      "text": "Contact",
+      "scope": "table thead th"
+    },
+    "thLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "thWashCount": {
+      "text": "Wash Count",
+      "scope": "table thead th"
+    },
+    "thEmail": {
+      "text": "Email",
+      "scope": "table thead th"
+    },
+    "thStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "activeRow": {
+      "js": "[...document.querySelectorAll('table tbody tr.row-link')].find(t=>t.querySelector('.a-pill-green'))"
+    },
+    "avatar": {
+      "selector": ".a-avatar"
+    },
+    "nameRow": {
+      "selector": ".a-name-row"
+    },
+    "metaId": {
+      "selector": ".a-meta-id"
+    },
+    "chipRow": {
+      "selector": ".a-badges"
+    },
+    "chip1": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][0]"
+    },
+    "chip2": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][1]"
+    },
+    "chip3": {
+      "js": "[...document.querySelectorAll('.a-badges .a-chip')][2]"
+    },
+    "backBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top a,.a-hero-top button')].find(e=>/Back/.test(e.textContent||''))"
+    },
+    "hdrSearchBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top a,.a-hero-top button')].find(e=>(e.textContent||'').trim()==='Search')"
+    },
+    "stmtBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top a,.a-hero-top button')].find(e=>(e.textContent||'').trim()==='Statement')"
+    },
+    "delAcctBtn": {
+      "js": "document.querySelector('.a-hero-top .a-btn-danger')"
+    },
+    "editBtn": {
+      "js": "[...document.querySelectorAll('.a-hero-top a,.a-hero-top button')].find(e=>(e.textContent||'').trim()==='Edit Account')"
+    },
+    "metricBand": {
+      "selector": ".a-metrics"
+    },
+    "dTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "dTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "dTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "dTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "dTile5": {
+      "js": "document.querySelectorAll('.a-metric')[4]"
+    },
+    "dTile6": {
+      "js": "document.querySelectorAll('.a-metric')[5]"
+    },
+    "relatedRow": {
+      "selector": ".a-related"
+    },
+    "relChip1": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][0]"
+    },
+    "relChip2": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][1]"
+    },
+    "relChip3": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][2]"
+    },
+    "relChip4": {
+      "js": "[...document.querySelectorAll('.a-related-chip')][3]"
+    },
+    "tabNav": {
+      "selector": ".a-tab-nav"
+    },
+    "tabOverview": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Overview')"
+    },
+    "tabDetails": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Details')"
+    },
+    "tabContacts": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Contacts')"
+    },
+    "tabVehicles": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Vehicles')"
+    },
+    "tabInvoices": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Invoices')"
+    },
+    "tabPayments": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Payments')"
+    },
+    "tabActivity": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Activity')"
+    },
+    "tabDocuments": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Documents')"
+    },
+    "tabNotes": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Notes')"
+    },
+    "tabAudit": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>(e.textContent||'').trim()==='Audit Trail')"
+    },
+    "mcPanel": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Monthly Charges/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "agingPanel": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/AR Aging/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "wfPanel": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Vehicle Wash Frequency/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "healthPanel": {
+      "js": "[...document.querySelectorAll('.a-chart-card')].find(c=>/Account Health/.test(c.textContent||'')&&c.getBoundingClientRect().width>0)"
+    },
+    "aging90Row": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/AR Aging/.test(x.textContent||'')&&x.getBoundingClientRect().width>0);if(!c)return null;return [...c.querySelectorAll('div')].filter(e=>/^90\\+ days \\$[\\d,.]+$/.test((e.textContent||'').trim().replace(/\\s+/g,' '))).sort((a,b)=>b.getBoundingClientRect().height-a.getBoundingClientRect().height)[0]||null})()"
+    },
+    "agingTotalRow": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/AR Aging/.test(x.textContent||'')&&x.getBoundingClientRect().width>0);if(!c)return null;return [...c.querySelectorAll('div')].filter(e=>/^Total Outstanding \\$[\\d,.]+$/.test((e.textContent||'').trim().replace(/\\s+/g,' '))).sort((a,b)=>b.getBoundingClientRect().height-a.getBoundingClientRect().height)[0]||null})()"
+    },
+    "psBox": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/Account Health/.test(x.textContent||'')&&x.getBoundingClientRect().width>0);if(!c)return null;const l=[...c.querySelectorAll('*')].find(e=>e.children.length===0&&/^payment score$/i.test((e.textContent||'').trim()));return l?l.parentElement:null})()"
+    },
+    "adpBox": {
+      "js": "(()=>{const c=[...document.querySelectorAll('.a-chart-card')].find(x=>/Account Health/.test(x.textContent||'')&&x.getBoundingClientRect().width>0);if(!c)return null;const l=[...c.querySelectorAll('*')].find(e=>e.children.length===0&&/^avg days to pay$/i.test((e.textContent||'').trim()));return l?l.parentElement:null})()"
+    },
+    "activePanel": {
+      "selector": ".a-panel.active"
+    },
+    "activeThead": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');const t=p?p.querySelector('thead tr'):null;return t&&t.getBoundingClientRect().width>0?t:null})()"
+    },
+    "statusTh": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');return p?[...p.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Status'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "invOverduePill": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');return p?[...p.querySelectorAll('.a-pill')].find(e=>(e.textContent||'').trim()==='Overdue'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "invOpenPill": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');return p?[...p.querySelectorAll('.a-pill')].find(e=>(e.textContent||'').trim()==='Open'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "payAppliedTh": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');return p?[...p.querySelectorAll('th')].find(e=>(e.textContent||'').trim()==='Applied To'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "voidedPill": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');return p?[...p.querySelectorAll('.a-pill')].find(e=>(e.textContent||'').trim()==='Voided'&&e.getBoundingClientRect().width>0):null})()"
+    },
+    "voidedRow": {
+      "js": "(()=>{const p=document.querySelector('.a-panel.active');const v=p?[...p.querySelectorAll('.a-pill')].find(e=>(e.textContent||'').trim()==='Voided'&&e.getBoundingClientRect().width>0):null;return v?v.closest('tr'):null})()"
+    }
+  },
+  "predicates": {
+    "onStart": "location.pathname.endsWith('/crm-customers.html')",
+    "onList": "location.pathname.endsWith('/crm-house-accounts.html')",
+    "onDetail": "location.pathname.endsWith('/crm-house-account-detail.html')",
+    "sidebarExpanded": "!!document.querySelector('.app')&&!document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "rowsLoaded": "document.querySelectorAll('table tbody tr.row-link').length>0&&!/Couldn/.test((document.querySelector('table tbody tr')||{textContent:''}).textContent||'')",
+    "detailReady": "document.readyState==='complete'&&document.querySelectorAll('.a-tab-btn').length===10&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "overviewShown": "(()=>{const p=document.querySelector('.a-panel.active');return !!p&&/Monthly Charges/.test(p.innerText)&&/AR Aging/.test(p.innerText)})()",
+    "invoicesShown": "(()=>{const t=document.querySelector('.a-tab-btn.active');const p=document.querySelector('.a-panel.active');return !!t&&t.textContent.trim()==='Invoices'&&!!p&&/INVOICE #/i.test(p.innerText)})()",
+    "paymentsShown": "(()=>{const t=document.querySelector('.a-tab-btn.active');const p=document.querySelector('.a-panel.active');return !!t&&t.textContent.trim()==='Payments'&&!!p&&/Payment History/i.test(p.innerText)})()"
+  },
+  "preflight": [
+    {
+      "op": "click",
+      "target": "expandToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the CRM sidebar expanded (state persists per profile; collapsed rail links do not navigate). Skipped when already expanded."
+    }
+  ],
+  "ops": [
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onStart",
+      "note": "start on CRM Customers, stable before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "sidebarExpanded",
+      "note": "preflight staged the sidebar expanded so House Accounts is reachable"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.5,
+      "from": [
+        2,
+        760
+      ],
+      "to": {
+        "target": "sideHouseAccounts",
+        "offset": [
+          140,
+          40
+        ]
+      },
+      "note": "enter from the left edge, settle beside the sidebar below the link"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.2,
+      "key": "sideHaRect",
+      "target": "sideHouseAccounts"
+    },
+    {
+      "op": "move",
+      "at": 1.9,
+      "to": {
+        "target": "sideHouseAccounts",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "onto House Accounts while p01 sets up fleet customers"
+    },
+    {
+      "op": "click",
+      "target": "sideHouseAccounts",
+      "pressAt": 3.55,
+      "hoverMs": 480,
+      "postcondition": "onList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: genuine sidebar House Accounts click inside the p01 trailing break, so 'This is where they live' lands on the new page"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "listStable",
+      "predicate": "pageReady",
+      "settleMs": 700,
+      "timeoutMs": 12000
+    },
+    {
+      "op": "log-rect",
+      "at": 5.1,
+      "key": "listBreadcrumb",
+      "target": "breadcrumb",
+      "requireStableMs": 260
+    },
+    {
+      "op": "log-rects",
+      "at": 5.5,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiTile1",
+        "kpiTile2",
+        "kpiTile3",
+        "kpiTile4"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 5.8,
+      "key": "kpiStripRect",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "move",
+      "at": 6.1,
+      "to": {
+        "point": [
+          1898,
+          320
+        ]
+      },
+      "note": "park in the right margin while p03-p04 describe the whole page"
+    },
+    {
+      "op": "watch",
+      "key": "listHold",
+      "from": 6.2,
+      "to": 76.5,
+      "predicate": "onList",
+      "everyMs": 800,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 15.7,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "step 2: KPI sweep starts on the p05 cue"
+    },
+    {
+      "op": "move",
+      "at": 18.3,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          18
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 19.6,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          18
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 21.1,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          18
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 25.3,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "back to Outstanding while p08-p09 single it out"
+    },
+    {
+      "op": "move",
+      "at": 28.7,
+      "to": {
+        "point": [
+          1898,
+          320
+        ]
+      }
+    },
+    {
+      "op": "log-rects",
+      "at": 29.9,
+      "key": "insightCards",
+      "targets": [
+        "trendCard",
+        "utilCard",
+        "statusCard"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 32.4,
+      "to": {
+        "target": "trendCard",
+        "offset": [
+          0,
+          64
+        ]
+      },
+      "note": "step 3: card sweep in spoken order (trend, utilization, status)"
+    },
+    {
+      "op": "move",
+      "at": 33.5,
+      "to": {
+        "target": "utilCard",
+        "offset": [
+          0,
+          64
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 34.5,
+      "to": {
+        "target": "statusCard",
+        "offset": [
+          0,
+          64
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 36.8,
+      "to": {
+        "target": "utilCard",
+        "offset": [
+          0,
+          64
+        ]
+      },
+      "note": "'Watch the utilization bars' (p13)"
+    },
+    {
+      "op": "move",
+      "at": 41,
+      "to": {
+        "point": [
+          1898,
+          320
+        ]
+      }
+    },
+    {
+      "op": "log-rect",
+      "at": 42,
+      "key": "eyebrowRect",
+      "target": "eyebrow"
+    },
+    {
+      "op": "log-rect",
+      "at": 42.3,
+      "key": "cardTitleRect",
+      "target": "cardTitle"
+    },
+    {
+      "op": "move",
+      "at": 45.8,
+      "to": {
+        "point": [
+          560,
+          396
+        ]
+      },
+      "note": "step 4: settle by the card title on 'Down to the list card'"
+    },
+    {
+      "op": "log-rects",
+      "at": 46.3,
+      "key": "actionButtons",
+      "targets": [
+        "delBtn",
+        "genBtn",
+        "addBtn"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 48.5,
+      "to": {
+        "target": "delBtn",
+        "offset": [
+          0,
+          -36
+        ]
+      },
+      "note": "'Three buttons sit here' — approach the button row from above"
+    },
+    {
+      "op": "move",
+      "at": 50.3,
+      "to": {
+        "target": "genBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "hover Generate Invoices while p17-p18 explain what it does — HOVER ONLY, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 58.3,
+      "to": {
+        "point": [
+          1350,
+          345
+        ]
+      },
+      "note": "pull clear while the red do-not-click ring holds (p19-p20)"
+    },
+    {
+      "op": "move",
+      "at": 62.6,
+      "to": {
+        "target": "searchInput",
+        "offset": [
+          0,
+          -42
+        ]
+      },
+      "note": "step 5: settle above the search box"
+    },
+    {
+      "op": "log-rect",
+      "at": 63,
+      "key": "searchWrapRect",
+      "target": "searchWrap"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.3,
+      "key": "searchInputRect",
+      "target": "searchInput"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.6,
+      "key": "filtersBtnRect",
+      "target": "filtersBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.9,
+      "key": "searchBtnRect",
+      "target": "searchBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 64.2,
+      "key": "theadRect",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 64.6,
+      "key": "columnHeads",
+      "targets": [
+        "thAccount",
+        "thCompany",
+        "thContact",
+        "thLocation",
+        "thWashCount",
+        "thEmail",
+        "thStatus"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 67.5,
+      "to": {
+        "target": "filtersBtn",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "'Filters beside it' (p23)"
+    },
+    {
+      "op": "move",
+      "at": 68.9,
+      "to": {
+        "point": [
+          360,
+          522
+        ]
+      },
+      "note": "step 5: header-row sweep, left end"
+    },
+    {
+      "op": "move",
+      "at": 69.4,
+      "to": {
+        "point": [
+          1800,
+          522
+        ]
+      },
+      "note": "sweep across the seven headers during p24"
+    },
+    {
+      "op": "move",
+      "at": 71.8,
+      "to": {
+        "point": [
+          1898,
+          640
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 75.3,
+      "to": {
+        "target": "activeRow",
+        "offset": [
+          -400,
+          0
+        ]
+      },
+      "note": "step 6: approach an Active account row on the p26 cue"
+    },
+    {
+      "op": "log-rect",
+      "at": 75.6,
+      "key": "rowRect",
+      "target": "activeRow",
+      "requireStableMs": 240
+    },
+    {
+      "op": "click",
+      "target": "activeRow",
+      "pressAt": 77.55,
+      "hoverMs": 420,
+      "postcondition": "onDetail",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6: genuine row click opens the House Account Detail; press lands inside the p27 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "detailStable",
+      "predicate": "detailReady",
+      "settleMs": 700,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "move",
+      "at": 79.8,
+      "to": {
+        "point": [
+          1750,
+          880
+        ]
+      },
+      "note": "park wide while p28-p30 frame the sample-account caveat"
+    },
+    {
+      "op": "log-rects",
+      "at": 80.6,
+      "key": "hdr",
+      "targets": [
+        "avatar",
+        "nameRow",
+        "metaId",
+        "backBtn",
+        "hdrSearchBtn",
+        "stmtBtn",
+        "delAcctBtn",
+        "editBtn",
+        "metricBand",
+        "relatedRow",
+        "tabNav"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 81.1,
+      "key": "chips",
+      "targets": [
+        "chip1",
+        "chip2",
+        "chip3"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 81.5,
+      "key": "band",
+      "targets": [
+        "dTile1",
+        "dTile2",
+        "dTile3",
+        "dTile4",
+        "dTile5",
+        "dTile6"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 82,
+      "key": "rel",
+      "targets": [
+        "relChip1",
+        "relChip2",
+        "relChip3",
+        "relChip4"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 82.5,
+      "key": "tabItems",
+      "targets": [
+        "tabOverview",
+        "tabDetails",
+        "tabContacts",
+        "tabVehicles",
+        "tabInvoices",
+        "tabPayments",
+        "tabActivity",
+        "tabDocuments",
+        "tabNotes",
+        "tabAudit"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 83,
+      "key": "panels",
+      "targets": [
+        "mcPanel",
+        "agingPanel",
+        "wfPanel",
+        "healthPanel"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 83.5,
+      "key": "agingRows",
+      "targets": [
+        "aging90Row",
+        "agingTotalRow"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 84,
+      "key": "healthBits",
+      "targets": [
+        "psBox",
+        "adpBox"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "detailHold",
+      "from": 84.2,
+      "to": 281.2,
+      "predicate": "onDetail",
+      "everyMs": 800,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 88.6,
+      "to": {
+        "target": "avatar",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7: header sweep begins at the avatar (p31)"
+    },
+    {
+      "op": "move",
+      "at": 91.3,
+      "to": {
+        "target": "nameRow",
+        "offset": [
+          -400,
+          0
+        ]
+      },
+      "note": "to the company name + status badge (p32)"
+    },
+    {
+      "op": "move",
+      "at": 92.9,
+      "to": {
+        "target": "metaId",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "to the identity line (p33)"
+    },
+    {
+      "op": "move",
+      "at": 96.6,
+      "to": {
+        "target": "chip1",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "chips in spoken order (p34-p35)"
+    },
+    {
+      "op": "move",
+      "at": 99,
+      "to": {
+        "target": "chip2",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 100.4,
+      "to": {
+        "target": "chip3",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 102.2,
+      "to": {
+        "point": [
+          1898,
+          340
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 105.8,
+      "to": {
+        "target": "backBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: button sweep (p37) — read only, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 108,
+      "to": {
+        "target": "hdrSearchBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'Back and search are safe' (p38)"
+    },
+    {
+      "op": "move",
+      "at": 110.1,
+      "to": {
+        "target": "stmtBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Statement — STOP zone begins (p39)"
+    },
+    {
+      "op": "move",
+      "at": 111.5,
+      "to": {
+        "target": "delAcctBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Delete Account — never clicked"
+    },
+    {
+      "op": "move",
+      "at": 112.7,
+      "to": {
+        "target": "editBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Edit Account — never clicked"
+    },
+    {
+      "op": "move",
+      "at": 114,
+      "to": {
+        "target": "editBtn",
+        "offset": [
+          0,
+          -40
+        ]
+      },
+      "note": "park just above the buttons while p40-p41 warn"
+    },
+    {
+      "op": "move",
+      "at": 119.1,
+      "to": {
+        "target": "dTile1",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 9: metric band sweep (p42)"
+    },
+    {
+      "op": "move",
+      "at": 121.3,
+      "to": {
+        "target": "dTile2",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 122.3,
+      "to": {
+        "target": "dTile3",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 123.1,
+      "to": {
+        "target": "dTile4",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 123.7,
+      "to": {
+        "target": "dTile5",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 124.2,
+      "to": {
+        "target": "dTile6",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 125,
+      "to": {
+        "target": "dTile1",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "p45 pairs balance + available credit + limit"
+    },
+    {
+      "op": "move",
+      "at": 126.2,
+      "to": {
+        "target": "dTile2",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 127.4,
+      "to": {
+        "target": "dTile3",
+        "offset": [
+          0,
+          12
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 129.6,
+      "to": {
+        "point": [
+          1898,
+          400
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 134.7,
+      "to": {
+        "target": "relChip1",
+        "offset": [
+          -46,
+          0
+        ]
+      },
+      "note": "step 10: to the RELATED row (p47)"
+    },
+    {
+      "op": "move",
+      "at": 138.2,
+      "to": {
+        "target": "relChip1",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "chips in spoken order (p48)"
+    },
+    {
+      "op": "move",
+      "at": 139.1,
+      "to": {
+        "target": "relChip2",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 139.9,
+      "to": {
+        "target": "relChip3",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 140.7,
+      "to": {
+        "target": "relChip4",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 144.9,
+      "to": {
+        "point": [
+          1898,
+          430
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 147.2,
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          -42
+        ]
+      },
+      "note": "step 11: settle above the tab row (p51) — no tab is clicked yet"
+    },
+    {
+      "op": "move",
+      "at": 149.4,
+      "to": {
+        "point": [
+          383,
+          315
+        ]
+      },
+      "note": "slow left-to-right sweep along the ten tabs during the p52-p53 enumeration"
+    },
+    {
+      "op": "move",
+      "at": 151.2,
+      "to": {
+        "point": [
+          700,
+          315
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 153,
+      "to": {
+        "point": [
+          960,
+          315
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 154.6,
+      "to": {
+        "point": [
+          1105,
+          315
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 157,
+      "to": {
+        "point": [
+          1898,
+          460
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 165.8,
+      "to": {
+        "target": "mcPanel",
+        "offset": [
+          0,
+          -60
+        ]
+      },
+      "note": "step 12: to Monthly Charges on the p56 cue"
+    },
+    {
+      "op": "move",
+      "at": 178.5,
+      "to": {
+        "target": "agingPanel",
+        "offset": [
+          30,
+          54
+        ],
+        "outside": true
+      },
+      "note": "step 13: to AR Aging (p60)"
+    },
+    {
+      "op": "move",
+      "at": 180.9,
+      "to": {
+        "point": [
+          1650,
+          433
+        ]
+      },
+      "note": "vertical sweep down the buckets during p61-p62"
+    },
+    {
+      "op": "move",
+      "at": 183.2,
+      "to": {
+        "point": [
+          1650,
+          469
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 185.3,
+      "to": {
+        "point": [
+          1650,
+          505
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 187.2,
+      "to": {
+        "point": [
+          1650,
+          541
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 190.9,
+      "to": {
+        "target": "aging90Row",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "hold on 90+ days while p64 warns about suspension"
+    },
+    {
+      "op": "move",
+      "at": 192.9,
+      "to": {
+        "target": "agingTotalRow",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Total Outstanding for the p65 close"
+    },
+    {
+      "op": "move",
+      "at": 200.7,
+      "to": {
+        "target": "wfPanel",
+        "offset": [
+          0,
+          -60
+        ]
+      },
+      "note": "step 14: Wash Frequency (p66-p67)"
+    },
+    {
+      "op": "move",
+      "at": 206.9,
+      "to": {
+        "target": "healthPanel",
+        "offset": [
+          0,
+          -60
+        ]
+      },
+      "note": "Account Health (p68)"
+    },
+    {
+      "op": "move",
+      "at": 212.2,
+      "to": {
+        "target": "psBox",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Payment Score (p69)"
+    },
+    {
+      "op": "move",
+      "at": 214.6,
+      "to": {
+        "target": "adpBox",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Avg Days to Pay (p70)"
+    },
+    {
+      "op": "move",
+      "at": 220.3,
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 15: approach starts on the 'Click into invoices' cue"
+    },
+    {
+      "op": "click",
+      "target": "tabInvoices",
+      "pressAt": 221.9,
+      "hoverMs": 400,
+      "postcondition": "invoicesShown",
+      "timeoutMs": 5000,
+      "note": "step 15: genuine Invoices tab click inside the p71 trailing break"
+    },
+    {
+      "op": "log-rect",
+      "at": 222.5,
+      "key": "invPanelRect",
+      "target": "activePanel",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 222.9,
+      "key": "invTheadRect",
+      "target": "activeThead"
+    },
+    {
+      "op": "log-rects",
+      "at": 223.3,
+      "key": "invBits",
+      "targets": [
+        "statusTh",
+        "invOverduePill",
+        "invOpenPill"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "invoicesHold",
+      "from": 223.5,
+      "to": 234.8,
+      "predicate": "invoicesShown",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 223.7,
+      "to": {
+        "point": [
+          900,
+          520
+        ]
+      },
+      "note": "over the invoice table while p72 reads the columns"
+    },
+    {
+      "op": "move",
+      "at": 226.3,
+      "to": {
+        "target": "invOverduePill",
+        "offset": [
+          -60,
+          0
+        ]
+      },
+      "note": "beside the Overdue status (p73)"
+    },
+    {
+      "op": "move",
+      "at": 227.8,
+      "to": {
+        "target": "invOpenPill",
+        "offset": [
+          -60,
+          0
+        ]
+      },
+      "note": "beside an Open status"
+    },
+    {
+      "op": "move",
+      "at": 230.2,
+      "to": {
+        "point": [
+          1898,
+          700
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 235.3,
+      "to": {
+        "target": "tabPayments",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 16: to Payments on the p76 cue"
+    },
+    {
+      "op": "click",
+      "target": "tabPayments",
+      "pressAt": 236.7,
+      "hoverMs": 380,
+      "postcondition": "paymentsShown",
+      "timeoutMs": 5000,
+      "note": "step 16: genuine Payments tab click inside the p76 trailing break"
+    },
+    {
+      "op": "log-rect",
+      "at": 237.3,
+      "key": "payPanelRect",
+      "target": "activePanel",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rects",
+      "at": 237.8,
+      "key": "payBits",
+      "targets": [
+        "payAppliedTh",
+        "statusTh",
+        "voidedPill"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 238.2,
+      "key": "voidedRowRect",
+      "target": "voidedRow"
+    },
+    {
+      "op": "watch",
+      "key": "paymentsHold",
+      "from": 238.4,
+      "to": 252.3,
+      "predicate": "paymentsShown",
+      "everyMs": 500,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 238.6,
+      "to": {
+        "target": "payAppliedTh",
+        "offset": [
+          0,
+          34
+        ]
+      },
+      "note": "under APPLIED TO while p77 explains application (p77-p78)"
+    },
+    {
+      "op": "move",
+      "at": 242.3,
+      "to": {
+        "target": "statusTh",
+        "offset": [
+          0,
+          34
+        ]
+      },
+      "note": "'Watch the status column' (p79)"
+    },
+    {
+      "op": "move",
+      "at": 244.5,
+      "to": {
+        "target": "voidedRow",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "hold on the Voided row (p80-p81)"
+    },
+    {
+      "op": "move",
+      "at": 249,
+      "to": {
+        "point": [
+          1898,
+          700
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 252.9,
+      "to": {
+        "point": [
+          500,
+          270
+        ]
+      },
+      "note": "step 17: settle above the tab row for the no-click sweep"
+    },
+    {
+      "op": "move",
+      "at": 256.4,
+      "to": {
+        "target": "tabDetails",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "tabs named one by one (p83-p89) — hover only, no tab is clicked"
+    },
+    {
+      "op": "move",
+      "at": 259.1,
+      "to": {
+        "target": "tabContacts",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 261.8,
+      "to": {
+        "target": "tabVehicles",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 264.7,
+      "to": {
+        "target": "tabDocuments",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 267.8,
+      "to": {
+        "target": "tabNotes",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 273.7,
+      "to": {
+        "target": "tabAudit",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 276.8,
+      "to": {
+        "target": "tabActivity",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "Activity named last and parked (p89) — never clicked"
+    },
+    {
+      "op": "move",
+      "at": 281.5,
+      "to": {
+        "target": "backBtn",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 18: approach ← Back on the p90 cue"
+    },
+    {
+      "op": "click",
+      "target": "backBtn",
+      "pressAt": 282.62,
+      "hoverMs": 360,
+      "postcondition": "onList",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 18: genuine ← Back returns to the House Accounts list inside the p90 trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "returnStable",
+      "predicate": "pageReady",
+      "settleMs": 600,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rect",
+      "at": 284.1,
+      "key": "returnBreadcrumb",
+      "target": "breadcrumb",
+      "requireStableMs": 260
+    },
+    {
+      "op": "log-rect",
+      "at": 284.5,
+      "key": "genBtnRect2",
+      "target": "genBtn"
+    },
+    {
+      "op": "move",
+      "at": 284.8,
+      "to": {
+        "point": [
+          1380,
+          346
+        ]
+      },
+      "note": "near the list-card buttons (not on them) while p92 recaps the billing guardrail"
+    },
+    {
+      "op": "move",
+      "at": 291.5,
+      "to": {
+        "point": [
+          1898,
+          860
+        ]
+      },
+      "note": "final park, clear of rows and captions"
+    },
+    {
+      "op": "assert",
+      "at": 293,
+      "predicate": "rowsLoaded",
+      "note": "list back with rows rendered, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 298.5,
+      "predicate": "onList"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "listBreadcrumb",
+        "place": "below-left",
+        "from": 5.3,
+        "to": 10.5
+      },
+      {
+        "n": 2,
+        "anchor": "kpiStripRect",
+        "place": "below-left",
+        "from": 16,
+        "to": 24.3
+      },
+      {
+        "n": 3,
+        "anchor": "insightCards.trendCard",
+        "place": "left",
+        "from": 30,
+        "to": 36.3
+      },
+      {
+        "n": 4,
+        "anchor": "actionButtons.genBtn",
+        "place": "below-left",
+        "from": 48.6,
+        "to": 54.6
+      },
+      {
+        "n": 5,
+        "anchor": "theadRect",
+        "place": "left-top",
+        "from": 69,
+        "to": 74.5
+      },
+      {
+        "n": 6,
+        "anchor": "rowRect",
+        "place": "right",
+        "from": 75.8,
+        "to": 77.4
+      },
+      {
+        "n": 7,
+        "anchor": "hdr.nameRow",
+        "place": "below-left",
+        "from": 91.3,
+        "to": 96.2
+      },
+      {
+        "n": 8,
+        "anchor": "hdr.delAcctBtn",
+        "place": "below-left",
+        "from": 106,
+        "to": 112.5
+      },
+      {
+        "n": 9,
+        "anchor": "hdr.metricBand",
+        "place": "left-top",
+        "from": 119.2,
+        "to": 124
+      },
+      {
+        "n": 10,
+        "anchor": "hdr.relatedRow",
+        "place": "left-top",
+        "from": 134.9,
+        "to": 141.3
+      },
+      {
+        "n": 11,
+        "anchor": "hdr.tabNav",
+        "place": "left-top",
+        "from": 147.4,
+        "to": 153.5
+      },
+      {
+        "n": 12,
+        "anchor": "panels.mcPanel",
+        "place": "left-top",
+        "from": 166,
+        "to": 172.8
+      },
+      {
+        "n": 13,
+        "anchor": "panels.agingPanel",
+        "place": "left",
+        "from": 178.7,
+        "to": 185
+      },
+      {
+        "n": 14,
+        "anchor": "panels.wfPanel",
+        "place": "left-top",
+        "from": 201,
+        "to": 206.6
+      },
+      {
+        "n": 15,
+        "anchor": "invBits.statusTh",
+        "place": "left",
+        "from": 222.8,
+        "to": 229
+      },
+      {
+        "n": 16,
+        "anchor": "payBits.payAppliedTh",
+        "place": "below-left",
+        "from": 238,
+        "to": 244
+      },
+      {
+        "n": 17,
+        "anchor": "hdr.tabNav",
+        "place": "left-top",
+        "from": 253,
+        "to": 258.5
+      },
+      {
+        "n": 18,
+        "anchor": "returnBreadcrumb",
+        "place": "below-left",
+        "from": 284.3,
+        "to": 290
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "kpiStripRect",
+        "from": 16,
+        "to": 24.34,
+        "note": "p05-p07: the four headline numbers"
+      },
+      {
+        "anchor": "kpiTiles.kpiTile3",
+        "from": 25.12,
+        "to": 29.2,
+        "note": "p08-p09: Outstanding, the money on the street"
+      },
+      {
+        "anchor": "insightCards.trendCard",
+        "from": 32.39,
+        "to": 33.45,
+        "note": "p11: balance trend"
+      },
+      {
+        "anchor": "insightCards.utilCard",
+        "from": 33.45,
+        "to": 34.38,
+        "note": "p11: credit use by location"
+      },
+      {
+        "anchor": "insightCards.statusCard",
+        "from": 34.38,
+        "to": 36.38,
+        "note": "p12: active / suspended / closed split"
+      },
+      {
+        "anchor": "insightCards.utilCard",
+        "from": 36.68,
+        "to": 40.35,
+        "note": "p13-p14: watch the utilization bars"
+      },
+      {
+        "anchor": "actionButtons.delBtn",
+        "from": 48.29,
+        "to": 49.98,
+        "note": "p16: three buttons"
+      },
+      {
+        "anchor": "actionButtons.genBtn",
+        "from": 48.29,
+        "to": 49.98
+      },
+      {
+        "anchor": "actionButtons.addBtn",
+        "from": 48.29,
+        "to": 49.98
+      },
+      {
+        "anchor": "actionButtons.genBtn",
+        "from": 54.97,
+        "to": 61.9,
+        "color": "#dc2626",
+        "note": "p19-p20 STOP: Generate Invoices runs live month-end billing — located, never clicked"
+      },
+      {
+        "anchor": "searchInputRect",
+        "from": 64.57,
+        "to": 66.98,
+        "note": "p22: search by account, company, or contact"
+      },
+      {
+        "anchor": "filtersBtnRect",
+        "from": 67.46,
+        "to": 68.43,
+        "note": "p23: Filters beside it"
+      },
+      {
+        "anchor": "theadRect",
+        "from": 68.83,
+        "to": 70.88,
+        "note": "p24: seven columns, ending in status"
+      },
+      {
+        "anchor": "rowRect",
+        "from": 76.05,
+        "to": 77.4,
+        "note": "p27: 'Click a row' — the row about to be clicked"
+      },
+      {
+        "anchor": "hdr.nameRow",
+        "from": 91.14,
+        "to": 92.67,
+        "note": "p32: company name + active badge"
+      },
+      {
+        "anchor": "hdr.metaId",
+        "from": 92.67,
+        "to": 96.35,
+        "note": "p33: the identity line (live detail shows the account number — see RESIDUALS)"
+      },
+      {
+        "anchor": "chips.chip1",
+        "from": 98.67,
+        "to": 99.67,
+        "note": "p35: Net 30"
+      },
+      {
+        "anchor": "chips.chip2",
+        "from": 99.67,
+        "to": 100.67,
+        "note": "p35: $10,000 Credit Limit"
+      },
+      {
+        "anchor": "chips.chip3",
+        "from": 100.67,
+        "to": 101.68,
+        "note": "p35: 14 Vehicles"
+      },
+      {
+        "anchor": "hdr.backBtn",
+        "from": 107.61,
+        "to": 109.2,
+        "note": "p38: Back is safe"
+      },
+      {
+        "anchor": "hdr.hdrSearchBtn",
+        "from": 107.61,
+        "to": 109.2,
+        "note": "p38: Search is safe"
+      },
+      {
+        "anchor": "hdr.stmtBtn",
+        "from": 109.87,
+        "to": 118.4,
+        "color": "#dc2626",
+        "note": "p39-p41 STOP: Statement generates records"
+      },
+      {
+        "anchor": "hdr.delAcctBtn",
+        "from": 109.87,
+        "to": 118.4,
+        "color": "#dc2626",
+        "note": "STOP: Delete Account"
+      },
+      {
+        "anchor": "hdr.editBtn",
+        "from": 109.87,
+        "to": 118.4,
+        "color": "#dc2626",
+        "note": "STOP: Edit Account"
+      },
+      {
+        "anchor": "hdr.metricBand",
+        "from": 121.16,
+        "to": 124.03,
+        "note": "p43-p44: the six metrics"
+      },
+      {
+        "anchor": "band.dTile1",
+        "from": 124.46,
+        "to": 128.59,
+        "note": "p45: balance…"
+      },
+      {
+        "anchor": "band.dTile2",
+        "from": 124.46,
+        "to": 128.59,
+        "note": "p45: …plus available credit…"
+      },
+      {
+        "anchor": "band.dTile3",
+        "from": 126.6,
+        "to": 128.59,
+        "note": "p45: …equals the limit"
+      },
+      {
+        "anchor": "rel.relChip1",
+        "from": 138.05,
+        "to": 138.85,
+        "note": "p48: Vehicles"
+      },
+      {
+        "anchor": "rel.relChip2",
+        "from": 138.85,
+        "to": 139.65,
+        "note": "p48: Invoices"
+      },
+      {
+        "anchor": "rel.relChip3",
+        "from": 139.65,
+        "to": 140.45,
+        "note": "p48: Payments"
+      },
+      {
+        "anchor": "rel.relChip4",
+        "from": 140.45,
+        "to": 141.25,
+        "note": "p48: Documents"
+      },
+      {
+        "anchor": "hdr.relatedRow",
+        "from": 141.68,
+        "to": 144.52,
+        "note": "p49-p50: shortcuts with totals on the chip"
+      },
+      {
+        "anchor": "hdr.tabNav",
+        "from": 149.31,
+        "to": 155.3,
+        "note": "p52-p53: the ten tabs, bracketed while the cursor sweeps them in spoken order"
+      },
+      {
+        "anchor": "panels.mcPanel",
+        "from": 167.83,
+        "to": 172.84,
+        "note": "p57: Monthly Charges figures"
+      },
+      {
+        "anchor": "panels.agingPanel",
+        "from": 180.84,
+        "to": 185.14,
+        "note": "p61: the aging buckets"
+      },
+      {
+        "anchor": "agingRows.agingTotalRow",
+        "from": 187.8,
+        "to": 189.24,
+        "note": "p62 tail: '…and a total'"
+      },
+      {
+        "anchor": "agingRows.aging90Row",
+        "from": 190.95,
+        "to": 192.64,
+        "note": "p64: ninety plus, the suspension bucket"
+      },
+      {
+        "anchor": "panels.wfPanel",
+        "from": 203.26,
+        "to": 206.82,
+        "note": "p67: wash frequency"
+      },
+      {
+        "anchor": "panels.healthPanel",
+        "from": 206.82,
+        "to": 212.03,
+        "note": "p68: account health rollup"
+      },
+      {
+        "anchor": "healthBits.psBox",
+        "from": 212.03,
+        "to": 219.7,
+        "note": "p69-p70: payment score"
+      },
+      {
+        "anchor": "healthBits.adpBox",
+        "from": 212.03,
+        "to": 219.7,
+        "note": "p69-p70: avg days to pay"
+      },
+      {
+        "anchor": "invTheadRect",
+        "from": 223,
+        "to": 225.98,
+        "note": "p72: the invoice columns"
+      },
+      {
+        "anchor": "invBits.invOverduePill",
+        "from": 225.98,
+        "to": 227.6,
+        "note": "p73: overdue status"
+      },
+      {
+        "anchor": "invBits.invOpenPill",
+        "from": 227.6,
+        "to": 229.13,
+        "note": "p73: open status"
+      },
+      {
+        "anchor": "payBits.payAppliedTh",
+        "from": 238,
+        "to": 240.16,
+        "note": "p77: how a payment was applied"
+      },
+      {
+        "anchor": "payBits.statusTh",
+        "from": 242.13,
+        "to": 244.24,
+        "note": "p79: watch the status column"
+      },
+      {
+        "anchor": "voidedRowRect",
+        "from": 244.24,
+        "to": 248.62,
+        "note": "p80: the Voided row"
+      },
+      {
+        "anchor": "tabItems.tabDetails",
+        "from": 256.27,
+        "to": 258.04,
+        "note": "p83"
+      },
+      {
+        "anchor": "tabItems.tabContacts",
+        "from": 259.03,
+        "to": 260.47,
+        "note": "p84"
+      },
+      {
+        "anchor": "tabItems.tabVehicles",
+        "from": 261.68,
+        "to": 263.53,
+        "note": "p85"
+      },
+      {
+        "anchor": "tabItems.tabDocuments",
+        "from": 264.57,
+        "to": 266.38,
+        "note": "p86"
+      },
+      {
+        "anchor": "tabItems.tabNotes",
+        "from": 267.62,
+        "to": 272.36,
+        "note": "p87"
+      },
+      {
+        "anchor": "tabItems.tabAudit",
+        "from": 273.58,
+        "to": 275.56,
+        "note": "p88"
+      },
+      {
+        "anchor": "tabItems.tabActivity",
+        "from": 276.61,
+        "to": 281.01,
+        "note": "p89: Activity, parked — feed did not load at capture; never clicked"
+      },
+      {
+        "anchor": "genBtnRect2",
+        "from": 284.9,
+        "to": 287,
+        "color": "#dc2626",
+        "note": "p92: 'the billing button you never run casually' — re-anchored after the return nav"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 15.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "hold wide through the nav and the p03-p04 whole-page read"
+      },
+      {
+        "t": 16.4,
+        "z": 1.18,
+        "cx": 1089,
+        "cy": 460,
+        "ease": true,
+        "note": "KPI strip + insight cards, full strip width preserved (steps 2-3)"
+      },
+      {
+        "t": 41.6,
+        "z": 1.18,
+        "cx": 1089,
+        "cy": 460
+      },
+      {
+        "t": 42.6,
+        "z": 1.22,
+        "cx": 1088,
+        "cy": 470,
+        "ease": true,
+        "note": "list card: eyebrow/title through the three buttons, search row, column headers (steps 4-5)"
+      },
+      {
+        "t": 74.3,
+        "z": 1.22,
+        "cx": 1088,
+        "cy": 470
+      },
+      {
+        "t": 75.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the row click and the detail load (step 6)"
+      },
+      {
+        "t": 88.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 89.3,
+        "z": 1.45,
+        "cx": 720,
+        "cy": 372,
+        "ease": true,
+        "note": "header identity: avatar, name, badge, meta line, chips (step 7)"
+      },
+      {
+        "t": 104.9,
+        "z": 1.45,
+        "cx": 720,
+        "cy": 372
+      },
+      {
+        "t": 105.9,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 372,
+        "ease": true,
+        "note": "slide right to the five header buttons + STOP ring (step 8)"
+      },
+      {
+        "t": 118.2,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 372
+      },
+      {
+        "t": 119.1,
+        "z": 1.18,
+        "cx": 1092,
+        "cy": 462,
+        "ease": true,
+        "note": "metric band full width; held through the RELATED chips (steps 9-10)"
+      },
+      {
+        "t": 146.3,
+        "z": 1.18,
+        "cx": 1092,
+        "cy": 462
+      },
+      {
+        "t": 147.3,
+        "z": 1.4,
+        "cx": 710,
+        "cy": 390,
+        "ease": true,
+        "note": "tab row readable for the ten-tab enumeration (step 11)"
+      },
+      {
+        "t": 164.8,
+        "z": 1.4,
+        "cx": 710,
+        "cy": 390
+      },
+      {
+        "t": 165.8,
+        "z": 1.35,
+        "cx": 834,
+        "cy": 516,
+        "ease": true,
+        "note": "Monthly Charges panel (step 12)"
+      },
+      {
+        "t": 177.5,
+        "z": 1.35,
+        "cx": 834,
+        "cy": 516
+      },
+      {
+        "t": 178.5,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 516,
+        "ease": true,
+        "note": "close on AR Aging, the core panel (step 13)"
+      },
+      {
+        "t": 199.7,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 516
+      },
+      {
+        "t": 200.6,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 660,
+        "ease": true,
+        "note": "Vehicle Wash Frequency (step 14a)"
+      },
+      {
+        "t": 206,
+        "z": 1.3,
+        "cx": 740,
+        "cy": 660
+      },
+      {
+        "t": 206.9,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 660,
+        "ease": true,
+        "note": "Account Health (step 14b)"
+      },
+      {
+        "t": 219.5,
+        "z": 1.3,
+        "cx": 1182,
+        "cy": 660
+      },
+      {
+        "t": 220.5,
+        "z": 1.12,
+        "cx": 1060,
+        "cy": 560,
+        "ease": true,
+        "note": "calm framing held through the Invoices and Payments tables (steps 15-16)"
+      },
+      {
+        "t": 252,
+        "z": 1.12,
+        "cx": 1060,
+        "cy": 560
+      },
+      {
+        "t": 252.9,
+        "z": 1.4,
+        "cx": 710,
+        "cy": 390,
+        "ease": true,
+        "note": "back to the tab row for the no-click sweep (step 17)"
+      },
+      {
+        "t": 280.5,
+        "z": 1.4,
+        "cx": 710,
+        "cy": 390
+      },
+      {
+        "t": 281.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for ← Back and the recap (step 18)"
+      },
+      {
+        "t": 301.009,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "completion": {
+      "text": "House Accounts — Complete",
+      "from": 299.2,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 298.9
+  },
+  "output": "WC-02-05-house-accounts-v1.1",
+  "neverClick": [
+    "generate invoices",
+    "delete",
+    "+ new house account",
+    "statement",
+    "delete account",
+    "edit account",
+    "+ new invoice",
+    "+ record payment",
+    "+ add vehicle",
+    "+ add contact",
+    "upload document",
+    "post note",
+    "related chips (a-related-chip links)",
+    "apply filters",
+    "row checkboxes / select-all",
+    "pagination / rows-per-page",
+    "ask shyne",
+    "logout",
+    "log out now",
+    "send"
+  ]
+}

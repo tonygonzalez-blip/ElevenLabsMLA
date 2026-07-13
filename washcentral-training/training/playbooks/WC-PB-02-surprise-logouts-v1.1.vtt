@@ -1,0 +1,198 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:01.735
+Two very different tickets sound identical.
+
+p02
+00:00:01.735 --> 00:00:03.474
+It keeps logging me out.
+
+p03
+00:00:03.474 --> 00:00:04.619
+My screen froze.
+
+p04
+00:00:04.619 --> 00:00:10.622
+Most of the time, the first one is the idle timeout doing exactly what it's set to do.
+
+p05
+00:00:10.622 --> 00:00:14.960
+So before you open a single setting, decide which of the two you're actually chasing.
+
+p06
+00:00:15.394 --> 00:00:16.634
+Here's the warning itself.
+
+p07
+00:00:16.634 --> 00:00:21.506
+After a stretch of no activity, a dialog counts down from two minutes,
+
+p08
+00:00:21.506 --> 00:00:23.985
+and a matching toast slides into the corner.
+
+p09
+00:00:23.985 --> 00:00:25.832
+One click keeps them in.
+
+p10
+00:00:25.832 --> 00:00:28.311
+So does a nudge of the mouse.
+
+p11
+00:00:28.311 --> 00:00:32.571
+Walk away and let it reach zero, and that's not a fault.
+
+p12
+00:00:32.571 --> 00:00:35.360
+It's the platform closing an idle station on purpose.
+
+p13
+00:00:35.830 --> 00:00:37.284
+Now the first real check.
+
+p14
+00:00:37.284 --> 00:00:41.344
+Open System Users and search for the person by name or code.
+
+p15
+00:00:41.344 --> 00:00:44.659
+The column you want is their user level.
+
+p16
+00:00:44.659 --> 00:00:48.580
+It's a single word, but it decides everything on the next page.
+
+p17
+00:00:48.580 --> 00:00:50.617
+Don't scroll the list hunting for them.
+
+p18
+00:00:50.617 --> 00:00:50.907
+Search.
+
+p19
+00:00:51.460 --> 00:00:53.702
+One caution before you trust a blank screen.
+
+p20
+00:00:54.536 --> 00:00:58.427
+If the list won't load and you see a note about the connection to the agent service,
+
+p21
+00:00:58.743 --> 00:00:59.910
+the rows aren't missing.
+
+p22
+00:01:00.245 --> 00:01:01.636
+The data just didn't arrive.
+
+p23
+00:01:02.423 --> 00:01:05.198
+And if that's what your caller is staring at instead of a logout, it's a different problem:
+
+p24
+00:01:05.547 --> 00:01:09.012
+the data service, not the timeout.
+
+p25
+00:01:09.571 --> 00:01:11.238
+Second check, second page.
+
+p26
+00:01:11.763 --> 00:01:16.726
+User Levels lives under Automation, not with the other user pages, which trips people up.
+
+p27
+00:01:17.285 --> 00:01:20.147
+Once you're there, one column answers the whole ticket: session timeout, in minutes.
+
+p28
+00:01:20.454 --> 00:01:25.778
+That's how long a level can sit idle before the countdown starts.
+
+p29
+00:01:26.402 --> 00:01:28.612
+Read that number against the level you found.
+
+p30
+00:01:28.942 --> 00:01:31.829
+They run from five minutes up to a hundred and twenty.
+
+p31
+00:01:32.453 --> 00:01:35.703
+Cashiers and the other short-timeout roles sit at five,
+
+p32
+00:01:35.983 --> 00:01:40.802
+so a cashier who steps away for five minutes gets the warning, then the logout.
+
+p33
+00:01:41.167 --> 00:01:42.424
+Nothing is broken.
+
+p34
+00:01:42.633 --> 00:01:44.585
+Someone set it that way on purpose.
+
+p35
+00:01:45.244 --> 00:01:47.609
+If the timing matches that number, you're done.
+
+p36
+00:01:47.609 --> 00:01:53.217
+Tell them it's a setting for their role, not a glitch, and show them the fix:
+
+p37
+00:01:53.217 --> 00:01:57.675
+move the mouse, press a key, or click Stay Logged In.
+
+p38
+00:01:57.675 --> 00:02:01.916
+If the role truly needs longer, an admin can raise it in production.
+
+p39
+00:02:01.916 --> 00:02:02.508
+One warning.
+
+p40
+00:02:02.508 --> 00:02:05.168
+Don't tap Log Out Now to clear the box.
+
+p41
+00:02:05.168 --> 00:02:07.430
+That ends the session for real.
+
+p42
+00:02:07.430 --> 00:02:09.003
+Now the cases that are real.
+
+p43
+00:02:09.799 --> 00:02:14.487
+Logged out well before the level allows, or frozen with no warning at all.
+
+p44
+00:02:15.306 --> 00:02:16.925
+First, rule out the simple thing:
+
+p45
+00:02:17.129 --> 00:02:19.883
+a session is tied to one device and one browser, so switching either signs you out by design.
+
+p46
+00:02:20.174 --> 00:02:22.860
+If it still doesn't add up, capture the level, its set timeout, and the time it really took,
+
+p47
+00:02:23.458 --> 00:02:28.346
+and send that to support with the username, never a password.
+
+p48
+00:02:28.641 --> 00:02:31.734
+The trigger point for the demo login is still parked,
+
+p49
+00:02:32.289 --> 00:02:37.360
+so measure it before you promise a number.
+

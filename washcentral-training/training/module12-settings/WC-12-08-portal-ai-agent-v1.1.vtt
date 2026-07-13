@@ -1,0 +1,410 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:04.455
+Two Settings areas face the customer directly, and this lesson reads both.
+
+p02
+00:00:04.907 --> 00:00:08.768
+In the left rail, open Customer Portal, then Portal Overview.
+
+p03
+00:00:09.272 --> 00:00:13.935
+This hub is the portal your client's members log into, summarized on one screen:
+
+p04
+00:00:14.380 --> 00:00:17.638
+its status, its address, and a version stamp.
+
+p05
+00:00:17.965 --> 00:00:19.726
+It's live. Treat it that way.
+
+p06
+00:00:20.160 --> 00:00:21.606
+Read the tile band.
+
+p07
+00:00:22.096 --> 00:00:23.192
+Registered members, logins today, average session, uptime, and the share on mobile.
+
+p08
+00:00:23.395 --> 00:00:24.490
+When someone reports the portal is slow or quiet, this row is your first read.
+
+p09
+00:00:24.717 --> 00:00:36.131
+Healthy numbers here move the problem somewhere else.
+
+p10
+00:00:36.560 --> 00:00:39.667
+Four cards sit below, one per configuration area.
+
+p11
+00:00:40.015 --> 00:00:40.635
+Branding, features, access, and content.
+
+p12
+00:00:40.844 --> 00:00:41.422
+Each card previews its own headline values,
+
+p13
+00:00:41.638 --> 00:00:43.072
+like the login method and whether one time passwords are required.
+
+p14
+00:00:43.931 --> 00:00:53.920
+You can answer most portal questions from these cards without opening anything.
+
+p15
+00:00:54.320 --> 00:00:56.192
+Below the cards, two panels.
+
+p16
+00:00:56.574 --> 00:01:01.304
+Recent activity lists what members did in the last day, including a security line:
+
+p17
+00:01:01.642 --> 00:01:04.053
+three failed login attempts from one address.
+
+p18
+00:01:04.506 --> 00:01:09.738
+Portal Health confirms the A-P-I connection, the certificate,
+
+p19
+00:01:09.995 --> 00:01:11.501
+and when the portal was last published.
+
+p20
+00:01:11.752 --> 00:01:15.283
+And note the button top right.
+
+p21
+00:01:15.535 --> 00:01:17.158
+Publish Changes pushes edits live to real customers. Support never clicks it.
+
+p22
+00:01:17.600 --> 00:01:19.418
+Open Branding and Appearance.
+
+p23
+00:01:19.939 --> 00:01:20.824
+Three tabs.
+
+p24
+00:01:21.554 --> 00:01:28.040
+Visual Identity holds the portal's name, tagline, logo, and header style,
+
+p25
+00:01:28.779 --> 00:01:32.171
+with a live preview underneath.
+
+p26
+00:01:32.718 --> 00:01:34.759
+Everything a customer sees before signing in gets styled here.
+
+p27
+00:01:35.156 --> 00:01:36.960
+There's a Save and Publish button at the bottom. We read; we never save.
+
+p28
+00:01:37.360 --> 00:01:39.477
+Next, Features and Modules.
+
+p29
+00:01:40.169 --> 00:01:42.628
+Every portal capability is a section here,
+
+p30
+00:01:42.832 --> 00:01:48.125
+from membership plans to gift cards to vehicle management, each with its own sub options.
+
+p31
+00:01:48.544 --> 00:01:54.409
+One catch: this page says nine of ten modules enabled, while the hub card said seven of nine.
+
+p32
+00:01:54.795 --> 00:01:55.901
+The two disagree.
+
+p33
+00:01:56.126 --> 00:01:59.920
+When you need the real number, read it here, and flag the mismatch.
+
+p34
+00:02:00.397 --> 00:02:03.651
+Open Access and Security, the page for login trouble.
+
+p35
+00:02:04.500 --> 00:02:07.574
+The Authentication tab shows how members can sign in:
+
+p36
+00:02:08.022 --> 00:02:13.034
+phone yes, email yes, membership number no, and no guest access.
+
+p37
+00:02:13.659 --> 00:02:17.488
+Below that, the one time password rules and the password policy.
+
+p38
+00:02:17.800 --> 00:02:21.742
+A customer locked out of the portal? Start on this page, every time.
+
+p39
+00:02:22.160 --> 00:02:24.021
+Then Content and Messaging.
+
+p40
+00:02:24.559 --> 00:02:25.766
+Welcome text, footer, contact details, and the FAQ list.
+
+p41
+00:02:26.065 --> 00:02:26.447
+Plain language a confused customer reads first.
+
+p42
+00:02:26.736 --> 00:02:37.120
+If a member quotes the portal saying something odd, this is where that wording lives.
+
+p43
+00:02:37.598 --> 00:02:38.663
+That's the portal.
+
+p44
+00:02:39.319 --> 00:02:45.901
+For a login complaint, check two settings, the login method and whether O-T-P is required,
+
+p45
+00:02:46.285 --> 00:02:49.161
+then look for failed attempts in the activity feed.
+
+p46
+00:02:50.480 --> 00:02:56.242
+Back to Portal Overview, and remember the rule: nothing gets published, nothing gets saved.
+
+p47
+00:02:56.780 --> 00:02:57.477
+Part two. In the left rail, open A-I Agent, then Overview.
+
+p48
+00:02:57.874 --> 00:03:01.906
+This is the automated agent answering your client's customers on web chat, text, and phone.
+
+p49
+00:03:02.319 --> 00:03:07.732
+The header says it's live on three channels.
+
+p50
+00:03:08.202 --> 00:03:14.216
+Same posture as the portal: everything here is read only.
+
+p51
+00:03:14.640 --> 00:03:16.012
+Read the metric band.
+
+p52
+00:03:16.841 --> 00:03:18.301
+Conversations this month, average handle time, a satisfaction score.
+
+p53
+00:03:18.562 --> 00:03:21.172
+The number to watch is containment rate,
+
+p54
+00:03:21.959 --> 00:03:29.291
+the share of conversations the agent finished without a person.
+
+p55
+00:03:29.612 --> 00:03:32.374
+Seventy eight percent here. When that slides, humans are picking up the slack.
+
+p56
+00:03:32.876 --> 00:03:34.099
+Three channel cards.
+
+p57
+00:03:34.934 --> 00:03:38.097
+Web chat carries the most volume and contains the most.
+
+p58
+00:03:38.632 --> 00:03:41.688
+Text runs through a provisioned number with quiet hours on.
+
+p59
+00:03:42.341 --> 00:03:44.481
+Voice is newer, still marked beta, with recording consent enabled.
+
+p60
+00:03:44.781 --> 00:03:51.580
+Each card shows its own contained percentage, so you can spot which channel is struggling.
+
+p61
+00:03:52.135 --> 00:03:53.461
+Now the capabilities panel.
+
+p62
+00:03:53.461 --> 00:03:57.082
+Six actions the agent can take on its own,
+
+p63
+00:03:57.082 --> 00:04:02.587
+from looking up an account to processing a small refund to escalating to a human.
+
+p64
+00:04:02.587 --> 00:04:04.576
+They run through secure platform A-P-Is,
+
+p65
+00:04:04.576 --> 00:04:07.891
+and each one can be switched off individually under Configuration.
+
+p66
+00:04:08.320 --> 00:04:09.090
+Open Configuration.
+
+p67
+00:04:09.090 --> 00:04:13.610
+Status tiles up top, including a refund cap of fifty dollars,
+
+p68
+00:04:13.610 --> 00:04:17.844
+then five tabs covering identity, channels, tools, safety, and the model.
+
+p69
+00:04:17.844 --> 00:04:23.295
+One caution: in the captured tenant this page renders as an unsaved form
+
+p70
+00:04:23.295 --> 00:04:25.220
+for a different demo brand.
+
+p71
+00:04:25.220 --> 00:04:30.193
+Read the structure, trust nothing as the live values, and never save.
+
+p72
+00:04:30.720 --> 00:04:31.781
+Next, Knowledge Base.
+
+p73
+00:04:31.781 --> 00:04:35.840
+These are the documents the agent searches before it answers,
+
+p74
+00:04:35.840 --> 00:04:38.316
+so it quotes policy instead of guessing.
+
+p75
+00:04:38.316 --> 00:04:41.991
+Tiles track articles, indexing, and the last sync.
+
+p76
+00:04:41.991 --> 00:04:48.510
+In this capture the table sits empty, which is a tenant quirk, not the real agent.
+
+p77
+00:04:48.960 --> 00:04:50.647
+Open Channels and Deployment, and keep your hands off the buttons.
+
+p78
+00:04:50.977 --> 00:04:53.156
+Each channel block carries a test control:
+
+p79
+00:04:54.468 --> 00:04:56.683
+send a test message, send a test text, place a test call.
+
+p80
+00:04:57.014 --> 00:04:58.286
+All three reach a real channel.
+
+p81
+00:04:58.592 --> 00:04:59.861
+None of them get clicked, ever, in the demo tenant.
+
+p82
+00:05:00.204 --> 00:05:09.900
+Read the uptime and latency, and move on.
+
+p83
+00:05:10.389 --> 00:05:11.770
+Then Conversations.
+
+p84
+00:05:12.101 --> 00:05:13.074
+The transcript log: who talked to the agent, on which channel, about what, and how it ended.
+
+p85
+00:05:13.464 --> 00:05:17.485
+This is your audit trail when a client asks what the agent actually said.
+
+p86
+00:05:17.949 --> 00:05:25.600
+Empty in this capture, and the Export control stays untouched.
+
+p87
+00:05:26.059 --> 00:05:27.975
+Escalations is the page to remember.
+
+p88
+00:05:27.975 --> 00:05:33.078
+When the agent hits a limit, a refund over the cap, an angry customer,
+
+p89
+00:05:33.078 --> 00:05:38.275
+a direct ask for a manager, or a stalled conversation, it hands off here.
+
+p90
+00:05:38.275 --> 00:05:42.301
+Each row shows the reason, the priority, and who claimed it.
+
+p91
+00:05:42.301 --> 00:05:45.814
+Don't click Claim Next; that assigns a live escalation to you.
+
+p92
+00:05:46.240 --> 00:05:47.789
+Last, Analytics.
+
+p93
+00:05:48.364 --> 00:05:53.757
+The monthly review view: volume, containment, escalation rate, satisfaction,
+
+p94
+00:05:54.080 --> 00:05:57.713
+and what the agent costs to run, per channel and per conversation.
+
+p95
+00:05:58.537 --> 00:06:02.588
+When a client asks whether the agent is worth it, this page is the answer.
+
+p96
+00:06:03.109 --> 00:06:04.794
+Export stays alone here too.
+
+p97
+00:06:05.262 --> 00:06:06.718
+Two areas, one habit.
+
+p98
+00:06:06.718 --> 00:06:12.135
+The portal hub answers login complaints through the login method and O-T-P settings,
+
+p99
+00:06:12.135 --> 00:06:16.138
+and the agent hands humans a conversation through the Escalations queue,
+
+p100
+00:06:16.138 --> 00:06:18.971
+which mirrors into the C-R-M Agent Console.
+
+p101
+00:06:18.971 --> 00:06:21.439
+You read everything and published nothing.
+
+p102
+00:06:21.439 --> 00:06:23.600
+Close Settings, and you're done.
+

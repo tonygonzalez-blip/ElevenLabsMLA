@@ -1,0 +1,11 @@
+{
+  "freezes": [
+    {
+      "key": "giftStable",
+      "fromS": 151.945,
+      "toS": 153.166,
+      "navPressT": 151.795,
+      "stableT": 153.166
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "lesson": "WC-03-02",
+  "audioMaster": "training/module03-sales/WC-03-02-full-narration-v1.0.mp3",
+  "audioDurationS": 230.348,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start on the Tickets list.",
+      "startS": 0,
+      "endS": 1.388,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Every sale at the wash ends up here, one row per ticket,",
+      "startS": 1.799,
+      "endS": 3.682,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "with its location, total, status, and tender.",
+      "startS": 3.984,
+      "endS": 8.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Status is worth a glance on the way in: paid and washed, paid but not washed, or voided.",
+      "startS": 8.737,
+      "endS": 10.744,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "There are millions of tickets,",
+      "startS": 11.127,
+      "endS": 14.216,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p06",
+      "text": "so you always filter down to the one you need before you open it.",
+      "startS": 14.755,
+      "endS": 19.375,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Click the row.",
+      "startS": 19.841,
+      "endS": 20.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "The ticket opens on its own page, and watch the address bar:",
+      "startS": 21.243,
+      "endS": 24.783,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "it picks up a ticket I-D on the end.",
+      "startS": 25.133,
+      "endS": 27.361,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "That means this page has a fixed web address.",
+      "startS": 27.761,
+      "endS": 30.35,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Copy it later and anyone you send it to lands on this exact ticket.",
+      "startS": 30.682,
+      "endS": 34.565,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Read the header first.",
+      "startS": 35.04,
+      "endS": 36.471,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The ticket number is the title, with the I-D, the location, and the time it rang underneath.",
+      "startS": 37.263,
+      "endS": 42.674,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "That timestamp matters more than it looks:",
+      "startS": 43.541,
+      "endS": 45.865,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "it tells you which shift the sale fell in, which you'll need if a drawer doesn't balance.",
+      "startS": 46.219,
+      "endS": 50.598,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Confirm this is the transaction the caller means before you read a single number off it.",
+      "startS": 51.343,
+      "endS": 56.381,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Top-right, two buttons.",
+      "startS": 56.855,
+      "endS": 58.495,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Back to Tickets takes you home.",
+      "startS": 58.946,
+      "endS": 60.694,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "The red one is Refund, and we do not touch it.",
+      "startS": 61.075,
+      "endS": 64.046,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "On a real ticket a refund moves money,",
+      "startS": 64.334,
+      "endS": 69.628,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "so running the full refund flow is off the table today, and parked for a lesson of its own.",
+      "startS": 69.845,
+      "endS": 71.502,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "Read the button, leave it alone.",
+      "startS": 71.872,
+      "endS": 73.592,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Under the header, four quick figures.",
+      "startS": 74.07,
+      "endS": 76.333,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Ticket total, payments, status, and payment type.",
+      "startS": 77.025,
+      "endS": 80.326,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "For most calls, that band answers the question before you open a single tab.",
+      "startS": 81.18,
+      "endS": 85.472,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "What was it, was it paid, and how.",
+      "startS": 85.917,
+      "endS": 86.576,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "A mismatch between total and payments is your first clue something is off.",
+      "startS": 86.889,
+      "endS": 93.479,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p28",
+      "text": "Now the tabs.",
+      "startS": 93.92,
+      "endS": 94.916,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Five of them: Main, Details, Payments, Refunds, and Notes.",
+      "startS": 95.638,
+      "endS": 96.297,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "Main opens by default and carries the record itself.",
+      "startS": 96.805,
+      "endS": 100.752,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "Details breaks the sale into line items, Payments lists every tender against it,",
+      "startS": 101.976,
+      "endS": 104.782,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "and Notes holds the ticket's notes.",
+      "startS": 105.553,
+      "endS": 107.914,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p33",
+      "text": "We work Main and Refunds today.",
+      "startS": 108.195,
+      "endS": 115.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "Main opens on Ticket Information.",
+      "startS": 115.76,
+      "endS": 117.291,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "The I-D, the ticket number, the date and time in,",
+      "startS": 117.291,
+      "endS": 120.583,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "the location, the status, and the payment type.",
+      "startS": 120.583,
+      "endS": 123.032,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "This is the group that proves you're looking at the right sale,",
+      "startS": 123.032,
+      "endS": 126.966,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p38",
+      "text": "and the status here matches the one you saw in the list.",
+      "startS": 126.966,
+      "endS": 130.64,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Next, Financial Summary.",
+      "startS": 131.04,
+      "endS": 132.673,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "Total, taxes, tendered, change due, reversed, and house account.",
+      "startS": 133.018,
+      "endS": 134.229,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "When someone disputes a charge, you read the numbers straight off here.",
+      "startS": 134.434,
+      "endS": 137.628,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p42",
+      "text": "Reversed is the field to check first:",
+      "startS": 137.978,
+      "endS": 141.492,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p43",
+      "text": "it tells you whether money already came back before you promise anything.",
+      "startS": 141.711,
+      "endS": 143.748,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p44",
+      "text": "And house account tells you if a fleet or business paid instead of a card.",
+      "startS": 144.099,
+      "endS": 151.667,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Two more groups.",
+      "startS": 152.08,
+      "endS": 153.003,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "Staff and Equipment names the cashier, the cashier terminal, the greeter terminal,",
+      "startS": 153.428,
+      "endS": 156.728,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p47",
+      "text": "and the shift, so you can tie a ticket to a person, a register, and a drawer session.",
+      "startS": 157.025,
+      "endS": 158.99,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p48",
+      "text": "Customer and Vehicle names the customer, the vehicle, the plate, and the state,",
+      "startS": 159.407,
+      "endS": 163.221,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p49",
+      "text": "which is how you match a ticket to a plate on a dispute.",
+      "startS": 164.11,
+      "endS": 171.383,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "Open the Refunds tab.",
+      "startS": 171.894,
+      "endS": 173.16,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "A table of any refunds on this ticket:",
+      "startS": 173.16,
+      "endS": 176.399,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "refund I-D, amount, reason, who processed it, and its status.",
+      "startS": 176.399,
+      "endS": 179.764,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "On a clean ticket it simply says no refunds recorded.",
+      "startS": 179.764,
+      "endS": 183.594,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p54",
+      "text": "When there is one, this is where you read the reason it was given,",
+      "startS": 183.594,
+      "endS": 188.483,
+      "timing": "proportional"
+    },
+    {
+      "block": "s10",
+      "id": "p55",
+      "text": "who handled it, and whether it actually went through.",
+      "startS": 188.483,
+      "endS": 191.331,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "One thing to notice: what isn't here.",
+      "startS": 191.837,
+      "endS": 194.129,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "No Edit Ticket button, no add-refund control, and no ninety-day lock like the old system had.",
+      "startS": 194.129,
+      "endS": 199.848,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "The header Refund button is the only way in,",
+      "startS": 199.848,
+      "endS": 203.349,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "and whether you can finish one depends on your security level.",
+      "startS": 203.349,
+      "endS": 206.951,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p60",
+      "text": "Lower levels need approval first.",
+      "startS": 206.951,
+      "endS": 209.02,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p61",
+      "text": "We cover the security side later.",
+      "startS": 209.02,
+      "endS": 211.28,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p62",
+      "text": "Last, copy the address.",
+      "startS": 211.733,
+      "endS": 212.968,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p63",
+      "text": "That ticket I-D on the end means the URL reopens this exact ticket.",
+      "startS": 212.968,
+      "endS": 217.601,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p64",
+      "text": "Paste it into a support ticket",
+      "startS": 217.601,
+      "endS": 219.864,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p65",
+      "text": "and the next technician opens the same transaction you were looking at,",
+      "startS": 219.864,
+      "endS": 223.569,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p66",
+      "text": "instead of searching millions of rows for it.",
+      "startS": 223.569,
+      "endS": 226.039,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p67",
+      "text": "Then Back to Tickets, and nothing on the ticket has changed.",
+      "startS": 226.039,
+      "endS": 229.876,
+      "timing": "proportional"
+    }
+  ]
+}

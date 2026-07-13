@@ -1,0 +1,480 @@
+{
+  "lesson": "WC-09-02",
+  "audioMaster": "training/module09-digital/WC-09-02-full-narration-v1.0.mp3",
+  "audioDurationS": 196.598,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open Digital, and stay on Mobile App Users.",
+      "startS": 0,
+      "endS": 3.006,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The sidebar splits the customer's world in two: the portal, and the mobile app.",
+      "startS": 4.065,
+      "endS": 8.289,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Under Mobile you get five pages.",
+      "startS": 8.813,
+      "endS": 10.729,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "This lesson visits all of them, but you only read.",
+      "startS": 11.197,
+      "endS": 14.02,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Nothing here gets saved.",
+      "startS": 14.267,
+      "endS": 15.52,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Four numbers run across the top.",
+      "startS": 16.011,
+      "endS": 17.645,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Total users, active this month, and the split between iOS and Android.",
+      "startS": 18.384,
+      "endS": 19.33,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "That last pair earns its keep on a support call.",
+      "startS": 19.637,
+      "endS": 20.623,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "It tells you, before you ask, which phone your customer is probably holding.",
+      "startS": 20.951,
+      "endS": 31.118,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Three cards fill in the shape.",
+      "startS": 31.663,
+      "endS": 33.004,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "One tracks growth over the year.",
+      "startS": 33.611,
+      "endS": 35.388,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "One breaks the base down by device.",
+      "startS": 35.772,
+      "endS": 37.926,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "The last sorts users into active, monthly, and gone quiet.",
+      "startS": 38.323,
+      "endS": 42.202,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "A rising inactive slice is worth a second look.",
+      "startS": 42.593,
+      "endS": 45.711,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Now the list itself.",
+      "startS": 46.16,
+      "endS": 47.273,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Seven columns per user: name, email, app version, platform, last active, notifications, and status.",
+      "startS": 48.009,
+      "endS": 49.49,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Two of those seven do most of the troubleshooting work.",
+      "startS": 49.977,
+      "endS": 59.904,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Read one row like a support ticket.",
+      "startS": 60.64,
+      "endS": 62.568,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "App version tells you whether they're stuck behind a fix.",
+      "startS": 63.13,
+      "endS": 65.764,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Notifications, on or off, tells you why a customer swears the alert never came.",
+      "startS": 66.225,
+      "endS": 71.072,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Start here, before you touch anything else.",
+      "startS": 71.417,
+      "endS": 73.999,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Above the table, the usual controls.",
+      "startS": 74.456,
+      "endS": 76.557,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Search pulls up one customer by name or email.",
+      "startS": 77.065,
+      "endS": 79.828,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "There's also Export and a New Record button.",
+      "startS": 80.244,
+      "endS": 82.606,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "Leave both alone today; reading the list is all a technician needs.",
+      "startS": 83.012,
+      "endS": 86.732,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Now the pages that build the app.",
+      "startS": 87.2,
+      "endS": 89.822,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Open Mobile App Branding.",
+      "startS": 89.822,
+      "endS": 91.546,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Notice the shell flips to Settings.",
+      "startS": 91.546,
+      "endS": 93.708,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "This is where a brand's name, logo, colors, and support details get set,",
+      "startS": 93.708,
+      "endS": 97.934,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "with a live phone preview alongside.",
+      "startS": 97.934,
+      "endS": 99.885,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Four blocks, top to bottom.",
+      "startS": 100.4,
+      "endS": 102.027,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Tenant, brand, colors, support.",
+      "startS": 102.604,
+      "endS": 103.069,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Display names and taglines, logo links,",
+      "startS": 103.35,
+      "endS": 105.43,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "the primary and accent colors, a support phone and email.",
+      "startS": 106.24,
+      "endS": 111.064,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Editing any of it and publishing would re-skin the real app, so we only look.",
+      "startS": 111.349,
+      "endS": 117.84,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Back to the group, open Mobile App Features.",
+      "startS": 118.293,
+      "endS": 119.233,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "These are on-and-off switches for the fun: daily spin, wash streak, scratch cards, a few more,",
+      "startS": 119.493,
+      "endS": 121.257,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "plus wallet and gift cards.",
+      "startS": 121.686,
+      "endS": 123.835,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "Flip one and the preview updates.",
+      "startS": 124.231,
+      "endS": 125.086,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p40",
+      "text": "We flip nothing.",
+      "startS": 125.332,
+      "endS": 133.433,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Last page, Push Notifications.",
+      "startS": 133.893,
+      "endS": 134.681,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "It opens as Push Campaigns: write a message, pick an audience,",
+      "startS": 134.979,
+      "endS": 136.288,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "watch it land on a lock-screen preview.",
+      "startS": 136.815,
+      "endS": 138.754,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "That's marketing's job, not ours.",
+      "startS": 139.071,
+      "endS": 143.198,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p45",
+      "text": "We create no campaign here, and we send nothing.",
+      "startS": 143.757,
+      "endS": 149.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "One thing ties these pages together.",
+      "startS": 150,
+      "endS": 151.804,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "Each shows a live preview beside the settings,",
+      "startS": 151.804,
+      "endS": 154.587,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "so you can see what the customer sees without leaving the console.",
+      "startS": 154.587,
+      "endS": 158.91,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "A standalone preview launcher isn't in this build, so we've parked it.",
+      "startS": 158.91,
+      "endS": 162.519,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "Click Close Settings.",
+      "startS": 162.96,
+      "endS": 164.014,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "The menu folds away and drops you back on the platform,",
+      "startS": 164.014,
+      "endS": 168.468,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "with nothing saved, nothing published, and nothing sent.",
+      "startS": 168.468,
+      "endS": 171.28,
+      "timing": "proportional"
+    },
+    {
+      "block": "s13",
+      "id": "p53",
+      "text": "One entry stays closed: Mobile Feedback.",
+      "startS": 171.68,
+      "endS": 173.253,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "It's listed in the group, but the page didn't load in our capture.",
+      "startS": 173.463,
+      "endS": 174.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "Until someone walks it live, treat what's inside as unconfirmed.",
+      "startS": 174.876,
+      "endS": 181.76,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p56",
+      "text": "That's the mobile corner of Digital.",
+      "startS": 182.223,
+      "endS": 184.087,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p57",
+      "text": "One page you open on real calls, Mobile App Users,",
+      "startS": 184.48,
+      "endS": 187.952,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "and three you'll recognize but leave alone.",
+      "startS": 188.289,
+      "endS": 190.75,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p59",
+      "text": "When a customer's app misbehaves, you already know the first two columns to read.",
+      "startS": 191.52,
+      "endS": 196.16,
+      "timing": "silence"
+    }
+  ]
+}

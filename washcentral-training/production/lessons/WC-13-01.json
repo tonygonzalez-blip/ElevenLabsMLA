@@ -1,0 +1,390 @@
+{
+  "lesson": "WC-13-01",
+  "title": "Reports Hub & Report Viewer (Reports & Audit)",
+  "audioMaster": "training/module13-reports-audit/WC-13-01-full-narration-v1.0.mp3",
+  "audioDurationS": 210.207,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/reports.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railReports": {
+      "selector": ".wc-rail-item.active"
+    },
+    "viewsLabel": {
+      "js": "[...document.querySelectorAll('.rsb-section-label')].find(e=>/^views$/i.test((e.textContent||'').trim()))"
+    },
+    "catsLabel": {
+      "js": "[...document.querySelectorAll('.rsb-section-label')].find(e=>/^categories$/i.test((e.textContent||'').trim()))"
+    },
+    "sidebarPanel": {
+      "js": "(()=>{const l=[...document.querySelectorAll('.rsb-section-label')].find(e=>/^views$/i.test((e.textContent||'').trim()));return l?l.parentElement:null})()"
+    },
+    "viewAll": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('All Reports'))"
+    },
+    "viewFav": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Favorites'))"
+    },
+    "viewSched": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Scheduled Reports'))"
+    },
+    "viewAnalytics": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Advanced Analytics'))"
+    },
+    "viewBuilder": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Report Builder'))"
+    },
+    "catFinancial": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Financial'))"
+    },
+    "catTransactions": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Transactions'))"
+    },
+    "catWeather": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>(e.textContent||'').trim().startsWith('Weather'))"
+    },
+    "panelH1": {
+      "js": "document.querySelector('h1')",
+      "textRect": true
+    },
+    "panelSubtitle": {
+      "selector": ".rpt-subtitle"
+    },
+    "searchBox": {
+      "selector": ".rpt-search"
+    },
+    "schedGateway": {
+      "js": "[...document.querySelectorAll('button.a-btn-secondary')].find(e=>/^scheduled reports$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().y<170)"
+    },
+    "listCardTitle": {
+      "js": "[...document.querySelectorAll('.text-heading-sm')].find(e=>/report list/i.test(e.textContent||''))"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thStar": {
+      "js": "document.querySelector('table thead th:nth-child(1)')"
+    },
+    "thName": {
+      "text": "Report Name",
+      "scope": "table thead th"
+    },
+    "thCategory": {
+      "text": "Category",
+      "scope": "table thead th"
+    },
+    "thType": {
+      "text": "Type",
+      "scope": "table thead th"
+    },
+    "thLastRun": {
+      "text": "Last Run",
+      "scope": "table thead th"
+    },
+    "typeChipStandard": {
+      "js": "document.querySelector('table tbody tr:nth-child(1) td:nth-child(4)')"
+    },
+    "typeChipScheduled": {
+      "js": "document.querySelector('table tbody tr:nth-child(2) td:nth-child(4)')"
+    },
+    "typeChipAnalytics": {
+      "js": "document.querySelector('table tbody tr:nth-child(4) td:nth-child(4)')"
+    },
+    "lastRunDash": {
+      "js": "document.querySelector('table tbody tr:nth-child(1) td:nth-child(5)')"
+    },
+    "lastRunDate": {
+      "js": "document.querySelector('table tbody tr:nth-child(2) td:nth-child(5)')"
+    },
+    "rowDaily2": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/Daily, Period, and Shift Financial 2\\.0/.test(tr.textContent||''))"
+    },
+    "starCell": {
+      "js": "document.querySelector('table tbody tr:nth-child(2) td:nth-child(1)')"
+    },
+    "rowNameLink": {
+      "js": "[...document.querySelectorAll('a.rpt-name-link')].find(e=>(e.textContent||'').trim()==='Daily, Period, and Shift Financial')"
+    },
+    "vwTitle": {
+      "js": "[...document.querySelectorAll('h1')].find(e=>/Daily, Period, and Shift Financial/.test(e.textContent||''))",
+      "textRect": true
+    },
+    "filterBar": {
+      "selector": ".rpt-filter-bar"
+    },
+    "locBtn": {
+      "selector": ".rpt-loc-btn"
+    },
+    "dateRange": {
+      "selector": ".rpt-hdr-date-range"
+    },
+    "moreFilters": {
+      "selector": ".rpt-more-filters-btn"
+    },
+    "runBtn": {
+      "selector": ".f-run-btn"
+    },
+    "closeBtn": {
+      "selector": ".f-close-btn"
+    },
+    "kpiStrip": {
+      "selector": ".rpt-kpi-strip"
+    },
+    "kpiCard1": {
+      "js": "document.querySelector('.rpt-kpi-card')"
+    },
+    "reportTable": {
+      "js": "document.querySelector('#reportOutput table')"
+    },
+    "reportTheadRow": {
+      "js": "document.querySelector('#reportOutput table thead tr')"
+    },
+    "thLocationRpt": {
+      "text": "Location",
+      "scope": "#reportOutput table thead th"
+    },
+    "thShiftRpt": {
+      "text": "Shift",
+      "scope": "#reportOutput table thead th"
+    },
+    "thRefundsRpt": {
+      "text": "Refunds",
+      "scope": "#reportOutput table thead th"
+    },
+    "genStamp": {
+      "selector": ".rpt-doc-generated",
+      "textRect": true
+    }
+  },
+  "predicates": {
+    "onReports": "location.pathname.endsWith('/reports.html')",
+    "onViewer": "location.pathname.endsWith('/report-view.html')",
+    "startReady": "document.readyState==='complete'&&location.pathname.endsWith('/reports.html')&&document.querySelectorAll('.rsb-item').length>=24&&document.querySelectorAll('table thead th').length>=5&&document.querySelectorAll('table tbody tr').length>=5&&!!document.querySelector('h1')&&!!document.querySelector('.rpt-search')&&window.scrollY<=8",
+    "hubListPresent": "location.pathname.endsWith('/reports.html')&&document.querySelectorAll('.rsb-item').length>=24&&document.querySelectorAll('table tbody tr').length>=5",
+    "schedUnchanged": "location.pathname.endsWith('/reports.html')&&document.querySelectorAll('table tbody tr').length===50&&!document.querySelector('.rbc-overlay.open')",
+    "viewerReady": "location.pathname.endsWith('/report-view.html')&&document.readyState==='complete'&&document.querySelectorAll('.rpt-kpi-card').length>=4&&document.querySelectorAll('#reportOutput table tbody tr').length>=1&&!!document.querySelector('.rpt-doc-generated')&&!!document.querySelector('.f-run-btn')&&!!document.querySelector('.f-close-btn')",
+    "viewerHeld": "location.pathname.endsWith('/report-view.html')&&!!document.querySelector('.f-close-btn')&&document.querySelectorAll('.rpt-kpi-card').length>=4",
+    "runRendered": "location.pathname.endsWith('/report-view.html')&&document.querySelectorAll('.rpt-kpi-card').length>=4&&!!document.querySelector('.rpt-doc-generated')"
+  },
+  "ops": [
+    { "op": "assert", "at": -1.1, "predicate": "onReports", "note": "start page identity before capture (lesson opens on the Reports hub)" },
+    { "op": "assert", "at": -0.6, "predicate": "startReady", "note": "loaded: report sidebar (5 views + 19 categories), report list, panel header + search, scrolled to top" },
+    { "op": "pointer-enter", "at": 0.35, "from": [2, 880], "to": { "target": "railReports", "offset": [70, 26] }, "note": "step 1 (p01 'Open the Reports module'): enter from the left toward the active Reports rail button" },
+    { "op": "watch", "key": "hubHeld1", "from": 1.0, "to": 108.5, "predicate": "hubListPresent", "everyMs": 2500, "mustHold": true },
+    { "op": "log-rect", "at": 1.0, "key": "cSidebar", "target": "sidebarPanel", "requireStableMs": 240 },
+    { "op": "log-rect", "at": 1.3, "key": "cPanelH1", "target": "panelH1" },
+    { "op": "log-rect", "at": 1.6, "key": "cSearch", "target": "searchBox" },
+    { "op": "move", "at": 2.1, "to": { "target": "panelH1", "offset": [250, 12] }, "note": "step 1 (p02 'Every figure a client asks you for starts here'): to the panel header / list" },
+    { "op": "move", "at": 5.3, "to": { "target": "panelH1", "offset": [250, 12] }, "note": "step 1 (p03 '173 reports, already sorted'): the All Reports 173 counter" },
+    { "op": "move", "at": 10.5, "to": { "target": "viewsLabel", "offset": [206, 8], "outside": true }, "note": "step 1 (p04 'The left sidebar is your way in'): beside the top of the report sidebar" },
+
+    { "op": "log-rect", "at": 12.82, "key": "cViewsLabel", "target": "viewsLabel", "requireStableMs": 220 },
+    { "op": "log-rects", "at": 12.86, "key": "viewItems", "targets": ["viewAll", "viewFav", "viewSched", "viewAnalytics", "viewBuilder"] },
+    { "op": "move", "at": 12.95, "to": { "target": "viewsLabel", "offset": [206, 8], "outside": true }, "note": "step 2 (p05 'Start at the top of the sidebar')" },
+    { "op": "move", "at": 15.0, "to": { "target": "viewAll", "offset": [206, 8], "outside": true }, "note": "step 2 (p06 'These five shortcuts'): sweep the five views, beside each, never on them" },
+    { "op": "move", "at": 16.4, "to": { "target": "viewBuilder", "offset": [206, 8], "outside": true } },
+    { "op": "move", "at": 18.7, "to": { "target": "viewFav", "offset": [206, 8], "outside": true }, "note": "step 2 (p07 'the ones you starred'): Favorites" },
+    { "op": "move", "at": 20.1, "to": { "target": "viewSched", "offset": [206, 8], "outside": true }, "note": "step 2 (p07 'running on a timer'): Scheduled Reports" },
+    { "op": "move", "at": 21.4, "to": { "target": "viewAnalytics", "offset": [206, 8], "outside": true }, "note": "step 2 (p07 'the analytics set'): Advanced Analytics" },
+    { "op": "move", "at": 23.4, "to": { "point": [660, 250] }, "note": "step 2 (p08): park by the sidebar while the view idea lands" },
+
+    { "op": "log-rect", "at": 27.7, "key": "cCatsLabel", "target": "catsLabel", "requireStableMs": 220 },
+    { "op": "log-rect", "at": 27.73, "key": "cCatTransactions", "target": "catTransactions" },
+    { "op": "log-rect", "at": 27.76, "key": "cCatWeather", "target": "catWeather" },
+    { "op": "move", "at": 27.8, "to": { "target": "catsLabel", "offset": [206, 6], "outside": true }, "note": "step 3 (p09 'Below that, nineteen categories')" },
+    { "op": "move", "at": 30.2, "to": { "target": "catFinancial", "offset": [206, 6], "outside": true }, "note": "step 3 (p10 'Financial, transactions...'): begin the slow sweep down the categories" },
+    { "op": "move", "at": 33.7, "to": { "target": "catTransactions", "offset": [206, 6], "outside": true }, "note": "step 3 (p12 'like transactions with twenty-one reports'): Transactions (21)" },
+    { "op": "move", "at": 35.8, "to": { "target": "catWeather", "offset": [206, 6], "outside": true }, "note": "step 3 (p13 'Some hold just one, like weather'): Weather (1)" },
+    { "op": "move", "at": 38.0, "to": { "point": [660, 500] }, "note": "step 3 (p14-p15): park beside the list while 'a wall of reports into the two or three' lands" },
+
+    { "op": "move", "at": 50.5, "to": { "target": "panelH1", "offset": [250, 12] }, "note": "step 4 (p16 'On the right, the list itself')" },
+    { "op": "move", "at": 53.2, "to": { "target": "searchBox", "offset": [40, 0] }, "note": "step 4 (p17 'A search box sits above it'): the Search reports box, never typed in" },
+    { "op": "move", "at": 55.3, "to": { "target": "searchBox", "offset": [40, 0] }, "note": "step 4 (p18 'Type a few letters...shrinks to match'): located only" },
+    { "op": "move", "at": 59.6, "to": { "point": [900, 240] }, "note": "step 4 (p19): park above the list" },
+
+    { "op": "log-rect", "at": 63.85, "key": "cSchedGateway", "target": "schedGateway", "requireStableMs": 240 },
+    { "op": "move", "at": 63.9, "to": { "target": "schedGateway", "offset": [-48, 16], "outside": true }, "note": "step 5 (p20 'Top right, one button: Schedule Report'): point BESIDE the top-right scheduling button, never on it (see RESIDUAL R1: live label is 'Scheduled Reports')" },
+    { "op": "watch", "key": "schedGuard", "from": 64.2, "to": 74.4, "predicate": "schedUnchanged", "everyMs": 1500, "mustHold": true, "note": "step 5 guardrail: prove the scheduling gateway is never triggered — still on the hub, all 50 rows intact, no schedule/customize overlay open" },
+    { "op": "move", "at": 66.8, "to": { "target": "schedGateway", "offset": [-48, 16], "outside": true }, "note": "step 5 (p21 'put on a timer and mailed out')" },
+    { "op": "move", "at": 72.4, "to": { "target": "schedGateway", "offset": [-48, 16], "outside": true }, "note": "step 5 (p23 'It sends, so we leave it alone'): held beside it, no click" },
+
+    { "op": "log-rect", "at": 74.82, "key": "cThead", "target": "theadRow", "requireStableMs": 220 },
+    { "op": "log-rects", "at": 74.86, "key": "cThs", "targets": ["thStar", "thName", "thCategory", "thType", "thLastRun"] },
+    { "op": "move", "at": 74.95, "to": { "target": "thStar", "offset": [10, 0] }, "note": "step 6 (p24 'Now the columns'): start at the star column" },
+    { "op": "move", "at": 76.4, "to": { "target": "thName", "offset": [0, 0] }, "note": "step 6 (p25): sweep the five headers in spoken order — name..." },
+    { "op": "move", "at": 76.8, "to": { "target": "thCategory", "offset": [0, 0] }, "note": "...category..." },
+    { "op": "move", "at": 77.2, "to": { "target": "thType", "offset": [0, 0] }, "note": "...type..." },
+    { "op": "move", "at": 77.6, "to": { "target": "thLastRun", "offset": [0, 0] }, "note": "...and when it last ran" },
+    { "op": "move", "at": 78.3, "to": { "point": [900, 470] }, "note": "step 6 (p26 'Five columns tell you...'): settle over the list" },
+
+    { "op": "log-rect", "at": 88.6, "key": "cThType", "target": "thType", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 88.63, "key": "cTypeChip", "target": "typeChipStandard" },
+    { "op": "log-rect", "at": 88.66, "key": "cStarCell", "target": "starCell" },
+    { "op": "move", "at": 88.7, "to": { "target": "thType", "offset": [0, 0] }, "note": "step 7 (p27 'Look at the Type column')" },
+    { "op": "move", "at": 90.5, "to": { "target": "typeChipStandard", "offset": [10, 0] }, "note": "step 7 (p28 'Standard...'): the Standard chip (row 1)" },
+    { "op": "move", "at": 91.3, "to": { "target": "typeChipScheduled", "offset": [10, 0] }, "note": "step 7 (p28 'Scheduled...'): the Scheduled chip (row 2)" },
+    { "op": "move", "at": 92.1, "to": { "target": "typeChipAnalytics", "offset": [10, 0] }, "note": "step 7 (p28 '...or Analytics'): the Analytics chip (row 4)" },
+    { "op": "move", "at": 93.8, "to": { "target": "lastRunDash", "offset": [10, 0] }, "note": "step 7 (p29 'A dash under Last Run means nobody has run it yet'): the em dash in row 1" },
+    { "op": "move", "at": 96.0, "to": { "target": "lastRunDate", "offset": [10, 0] }, "note": "step 7 (p30-p31 'a date and time means someone did...scheduled twin, late March'): row 2 last-run date" },
+    { "op": "move", "at": 100.8, "to": { "target": "starCell", "offset": [8, 0] }, "note": "step 7 (p32 'the starred rows are your favorites'): the favorite star in row 2" },
+    { "op": "move", "at": 104.0, "to": { "point": [640, 470] }, "note": "step 7: stage near the list so the step-8 approach starts at the cue, not before" },
+
+    { "op": "log-rect", "at": 109.4, "key": "cRowLink", "target": "rowNameLink", "requireStableMs": 200 },
+    { "op": "move", "at": 110.5, "to": { "target": "rowNameLink", "offset": [40, 0] }, "note": "step 8 (p33 'Click a report to open it'): approach the Daily, Period, and Shift Financial row name" },
+    { "op": "click", "target": "rowNameLink", "pressAt": 112.15, "hoverMs": 360, "postcondition": "onViewer", "timeoutMs": 9000, "nav": true, "note": "step 8: genuine navigation click on the report-name link (a[href=report-view.html?name=...]) — opening the read-only viewer is allowed; press lands just after the cue while p34 'Take the daily financial' plays" },
+    { "op": "wait-stable", "afterNav": true, "key": "viewerStable", "predicate": "viewerReady", "settleMs": 900, "timeoutMs": 12000, "note": "the viewer auto-renders the report async (tiles + table + stamp) — wait for stable rects (RESIDUAL R2)" },
+    { "op": "log-rect", "at": 114.8, "key": "cVwTitle", "target": "vwTitle", "requireStableMs": 220 },
+    { "op": "move", "at": 114.9, "to": { "target": "vwTitle", "offset": [0, 34] }, "note": "step 8 (p35 'the report viewer takes over'): under the viewer title" },
+    { "op": "watch", "key": "viewerHeld", "from": 116.0, "to": 178.8, "predicate": "viewerHeld", "everyMs": 2500, "mustHold": true },
+    { "op": "move", "at": 118.8, "to": { "point": [960, 470] }, "note": "step 8 (p36 'now you're inside it'): settle over the rendered report" },
+
+    { "op": "log-rect", "at": 122.9, "key": "cFilterBar", "target": "filterBar", "requireStableMs": 220 },
+    { "op": "log-rect", "at": 122.93, "key": "cLocBtn", "target": "locBtn" },
+    { "op": "log-rect", "at": 122.96, "key": "cDateRange", "target": "dateRange" },
+    { "op": "log-rect", "at": 122.99, "key": "cMoreFilters", "target": "moreFilters" },
+    { "op": "move", "at": 123.05, "to": { "target": "filterBar", "offset": [40, 12] }, "note": "step 9 (p37 'Across the top, the filters')" },
+    { "op": "move", "at": 125.5, "to": { "target": "locBtn", "offset": [0, 0] }, "note": "step 9 (p38 'A location selector'): the All Locations selector, never changed" },
+    { "op": "move", "at": 128.2, "to": { "target": "dateRange", "offset": [30, 20] }, "note": "step 9 (p38 'a date range with a from and a to')" },
+    { "op": "move", "at": 130.6, "to": { "target": "moreFilters", "offset": [0, 0] }, "note": "step 9 (p38 'and a More Filters button for the rest'): located only, not expanded" },
+    { "op": "move", "at": 133.0, "to": { "point": [960, 470] }, "note": "step 9 (p39): settle while 'which sites and which days' lands" },
+
+    { "op": "log-rect", "at": 136.6, "key": "cRunBtn", "target": "runBtn", "requireStableMs": 200 },
+    { "op": "log-rect", "at": 136.63, "key": "cCloseBtn", "target": "closeBtn" },
+    { "op": "move", "at": 136.7, "to": { "target": "closeBtn", "offset": [-40, 16], "outside": true }, "note": "step 10 (p40 'Two buttons frame it'): approach the top-right button pair" },
+    { "op": "move", "at": 138.4, "to": { "target": "runBtn", "offset": [-42, 16], "outside": true }, "note": "step 10 (p41 'Run Report renders it'): beside Run Report" },
+    { "op": "move", "at": 140.5, "to": { "target": "closeBtn", "offset": [-40, 16], "outside": true }, "note": "step 10 (p42 'Close Report backs you out'): beside Close Report" },
+    { "op": "move", "at": 142.7, "to": { "target": "filterBar", "offset": [700, 12] }, "note": "step 10 (p43 'Notice Schedule Report isn't here'): sweep the viewer header — no scheduling control lives here" },
+    { "op": "move", "at": 145.0, "to": { "point": [960, 300] }, "note": "step 10 (p44 'Scheduling stays on the hub')" },
+
+    { "op": "move", "at": 149.4, "to": { "target": "runBtn", "offset": [-42, 16], "outside": true }, "note": "step 11 (p45 'Click Run Report'): approach Run Report" },
+    { "op": "click", "target": "runBtn", "pressAt": 150.75, "hoverMs": 360, "postcondition": "runRendered", "timeoutMs": 9000, "note": "step 11: Run Report is read-only (runReport() renders in place, no nav, nothing sent or saved) — press inside the 1.4s cue break" },
+    { "op": "wait-stable", "key": "runStable", "predicate": "runRendered", "settleMs": 900, "timeoutMs": 9000, "note": "re-rendered tiles + table + fresh generation stamp; wait for stable rects" },
+    { "op": "log-rect", "at": 151.85, "key": "cKpiStrip", "target": "kpiStrip", "requireStableMs": 240 },
+    { "op": "log-rect", "at": 151.88, "key": "cReportTable", "target": "reportTable" },
+    { "op": "log-rects", "at": 151.91, "key": "cRptThs", "targets": ["thLocationRpt", "thShiftRpt", "thRefundsRpt"] },
+    { "op": "move", "at": 151.95, "to": { "target": "kpiStrip", "offset": [40, 40] }, "note": "step 11 (p46 'Summary tiles and a table build from the filters'): the KPI strip" },
+    { "op": "move", "at": 155.0, "to": { "point": [960, 520] }, "note": "step 11 (p47 'only reads the numbers, nothing sent or saved')" },
+    { "op": "move", "at": 159.7, "to": { "target": "thLocationRpt", "offset": [10, 0] }, "note": "step 11 (p48 'per-location and per-shift rows'): the Location column..." },
+    { "op": "move", "at": 161.3, "to": { "target": "thShiftRpt", "offset": [10, 0] }, "note": "...and the Shift column" },
+    { "op": "move", "at": 163.1, "to": { "target": "thRefundsRpt", "offset": [10, 0] }, "note": "step 11 (p49 'and the refund column'): the Refunds column" },
+
+    { "op": "log-rect", "at": 165.8, "key": "cGenStamp", "target": "genStamp", "requireStableMs": 240 },
+    { "op": "move", "at": 166.0, "to": { "target": "genStamp", "offset": [60, 16] }, "note": "step 12 (p50 'Check the stamp on the result')" },
+    { "op": "move", "at": 168.3, "to": { "target": "genStamp", "offset": [60, 16] }, "note": "step 12 (p51 'the date the report was generated')" },
+    { "op": "move", "at": 170.9, "to": { "target": "genStamp", "offset": [360, 14] }, "note": "step 12 (p52 'flags the figures as sample data'): the Sample data flag on the stamp" },
+    { "op": "move", "at": 175.0, "to": { "point": [960, 300] }, "note": "step 12 (p53 'a real client tenant reads their live numbers')" },
+
+    { "op": "move", "at": 179.9, "to": { "target": "closeBtn", "offset": [-40, 16], "outside": true }, "note": "step 13 (p54 'Done reading? Close Report'): approach Close Report" },
+    { "op": "click", "target": "closeBtn", "pressAt": 181.85, "hoverMs": 360, "postcondition": "onReports", "timeoutMs": 9000, "nav": true, "note": "step 13: Close Report is a plain link back to reports.html (a[href=reports.html]) — genuine navigation, nothing mutated; press inside the 1.2s cue break" },
+    { "op": "wait-stable", "afterNav": true, "key": "hubStable2", "predicate": "startReady", "settleMs": 800, "timeoutMs": 10000 },
+    { "op": "log-rect", "at": 183.0, "key": "cSidebar2", "target": "sidebarPanel", "requireStableMs": 240 },
+    { "op": "log-rect", "at": 183.03, "key": "cViewsLabel2", "target": "viewsLabel" },
+    { "op": "log-rect", "at": 183.06, "key": "cCatsLabel2", "target": "catsLabel" },
+    { "op": "move", "at": 183.1, "to": { "target": "viewsLabel", "offset": [206, 8], "outside": true }, "note": "step 13 (p55 'the full list is back, exactly as you left it')" },
+    { "op": "watch", "key": "hubHeld2", "from": 184.0, "to": 209.5, "predicate": "hubListPresent", "everyMs": 2500, "mustHold": true },
+    { "op": "move", "at": 186.9, "to": { "point": [900, 470] }, "note": "step 13 (p56 'You ran a report and touched nothing')" },
+
+    { "op": "move", "at": 191.1, "to": { "target": "viewsLabel", "offset": [206, 8], "outside": true }, "note": "step 14 (p58 'Find a report by view or category'): sweep Views..." },
+    { "op": "move", "at": 192.6, "to": { "target": "catsLabel", "offset": [206, 8], "outside": true }, "note": "...and Categories" },
+    { "op": "move", "at": 194.4, "to": { "target": "panelH1", "offset": [250, 12] }, "note": "step 14 (p60 'this is the screen you'll share with them'): the report list" },
+    { "op": "move", "at": 197.1, "to": { "point": [1520, 900] }, "note": "step 14 (p61-p62): final park, clear of content and captions, while the close plays wide" },
+    { "op": "assert", "at": 208.6, "predicate": "onReports" },
+    { "op": "assert", "at": 209.2, "predicate": "hubListPresent" }
+  ],
+  "compositor": {
+    "callouts": [
+      { "n": 1, "anchor": "cSidebar", "place": "right", "from": 2.4, "to": 12.2 },
+      { "n": 2, "anchor": "cViewsLabel", "place": "right", "from": 13.2, "to": 26.9 },
+      { "n": 3, "anchor": "cCatsLabel", "place": "right", "from": 28.0, "to": 49.6 },
+      { "n": 4, "anchor": "cSearch", "place": "below-left", "from": 53.0, "to": 63.2 },
+      { "n": 5, "anchor": "cSchedGateway", "place": "left", "from": 64.0, "to": 74.3, "color": "#dc2626" },
+      { "n": 6, "anchor": "cThead", "place": "below-left", "from": 75.0, "to": 88.2 },
+      { "n": 7, "anchor": "cThType", "place": "below-left", "from": 89.0, "to": 109.6 },
+      { "n": 8, "anchor": "cVwTitle", "place": "below-left", "from": 115.3, "to": 122.4 },
+      { "n": 9, "anchor": "cFilterBar", "place": "below-left", "from": 123.3, "to": 136.0 },
+      { "n": 10, "anchor": "cRunBtn", "place": "left", "from": 137.0, "to": 148.6 },
+      { "n": 11, "anchor": "cKpiStrip", "place": "below-left", "from": 152.4, "to": 165.4 },
+      { "n": 12, "anchor": "cGenStamp", "place": "below-left", "from": 166.2, "to": 179.0 },
+      { "n": 13, "anchor": "cViewsLabel2", "place": "right", "from": 183.4, "to": 188.7 },
+      { "n": 14, "anchor": "cSidebar2", "place": "right", "from": 191.0, "to": 208.2 }
+    ],
+    "highlights": [
+      { "anchor": "cSidebar", "from": 10.4, "to": 12.4, "note": "p04: the left sidebar is your way in" },
+      { "anchor": "viewItems.viewFav", "from": 18.7, "to": 20.1, "note": "p07: the ones you starred" },
+      { "anchor": "viewItems.viewSched", "from": 20.1, "to": 21.4, "note": "p07: running on a timer" },
+      { "anchor": "viewItems.viewAnalytics", "from": 21.4, "to": 22.6, "note": "p07: the analytics set" },
+      { "anchor": "cCatTransactions", "from": 33.6, "to": 35.3, "note": "p12: transactions with twenty-one reports" },
+      { "anchor": "cCatWeather", "from": 35.7, "to": 37.4, "note": "p13: some hold just one, like weather" },
+      { "anchor": "cSearch", "from": 53.1, "to": 59.3, "note": "p17-p18: search box, filters as you type" },
+      { "anchor": "cSchedGateway", "from": 64.0, "to": 74.3, "color": "#dc2626", "note": "step 5 guardrail: scheduling gateway located, never clicked" },
+      { "anchor": "cThead", "from": 75.0, "to": 78.3, "note": "p25: the five column headers" },
+      { "anchor": "cThType", "from": 88.8, "to": 93.2, "note": "p27-p28: the Type column" },
+      { "anchor": "cStarCell", "from": 100.8, "to": 104.0, "note": "p32: the starred favorites" },
+      { "anchor": "cVwTitle", "from": 115.3, "to": 118.6, "note": "p35: the report viewer takes over" },
+      { "anchor": "cLocBtn", "from": 125.5, "to": 127.9, "note": "p38: the location selector" },
+      { "anchor": "cDateRange", "from": 128.2, "to": 130.4, "note": "p38: date range from and to" },
+      { "anchor": "cMoreFilters", "from": 130.6, "to": 132.6, "note": "p38: More Filters button" },
+      { "anchor": "cRunBtn", "from": 138.4, "to": 140.3, "note": "p41: Run Report renders it" },
+      { "anchor": "cCloseBtn", "from": 140.5, "to": 142.4, "note": "p42: Close Report backs you out" },
+      { "anchor": "cKpiStrip", "from": 151.95, "to": 158.5, "note": "p46: summary tiles" },
+      { "anchor": "cRptThs.thLocationRpt", "from": 159.7, "to": 161.2, "note": "p48: per-location rows" },
+      { "anchor": "cRptThs.thShiftRpt", "from": 161.3, "to": 162.9, "note": "p48: per-shift rows" },
+      { "anchor": "cRptThs.thRefundsRpt", "from": 163.1, "to": 165.4, "note": "p49: the refund column" },
+      { "anchor": "cGenStamp", "from": 166.2, "to": 174.4, "note": "p50-p52: the generation stamp and Sample data flag" },
+      { "anchor": "cViewsLabel2", "from": 191.0, "to": 193.6, "note": "p58: find by view" },
+      { "anchor": "cCatsLabel2", "from": 192.6, "to": 194.4, "note": "p58: or category" }
+    ],
+    "camera": [
+      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 1.4, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 2.6, "z": 1.28, "cx": 620, "cy": 430, "ease": true, "note": "steps 1-3: the report sidebar (Views + Categories) readable" },
+      { "t": 49.4, "z": 1.28, "cx": 620, "cy": 430 },
+      { "t": 50.4, "z": 1.2, "cx": 900, "cy": 300, "ease": true, "note": "step 4: panel header, counter, and search" },
+      { "t": 62.8, "z": 1.2, "cx": 900, "cy": 300 },
+      { "t": 63.9, "z": 1.26, "cx": 1360, "cy": 200, "ease": true, "note": "step 5: the top-right scheduling gateway guardrail" },
+      { "t": 74.3, "z": 1.26, "cx": 1360, "cy": 200 },
+      { "t": 75.0, "z": 1.3, "cx": 900, "cy": 380, "ease": true, "note": "steps 6-7: the Report List columns and Type chips" },
+      { "t": 109.2, "z": 1.3, "cx": 900, "cy": 380 },
+      { "t": 110.3, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the page change (step 8 opens the viewer)" },
+      { "t": 114.6, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 115.6, "z": 1.2, "cx": 900, "cy": 320, "ease": true, "note": "steps 9-10: the REPORT FILTERS bar and the Run/Close buttons" },
+      { "t": 148.4, "z": 1.2, "cx": 900, "cy": 320 },
+      { "t": 149.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the read-only Run Report render" },
+      { "t": 152.2, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 153.2, "z": 1.16, "cx": 960, "cy": 460, "ease": true, "note": "step 11: the rendered tiles and table" },
+      { "t": 165.6, "z": 1.16, "cx": 960, "cy": 460 },
+      { "t": 166.4, "z": 1.32, "cx": 560, "cy": 322, "ease": true, "note": "step 12: the generation stamp" },
+      { "t": 178.8, "z": 1.32, "cx": 560, "cy": 322 },
+      { "t": 179.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the page change (step 13 closes back to the hub)" },
+      { "t": 184.0, "z": 1, "cx": 960, "cy": 540 },
+      { "t": 185.0, "z": 1.26, "cx": 620, "cy": 430, "ease": true, "note": "steps 13-14: back on the hub, sidebar recap" },
+      { "t": 196.6, "z": 1.26, "cx": 620, "cy": 430 },
+      { "t": 197.8, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
+      { "t": 210.207, "z": 1, "cx": 960, "cy": 540 }
+    ],
+    "requiresCloseFraming": false,
+    "completion": {
+      "text": "Reports Hub & Viewer — Complete",
+      "from": 208.4,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 208.1
+  },
+  "output": "WC-13-01-reports-hub-viewer-v1.1",
+  "neverClick": [
+    "schedule report",
+    "scheduled reports",
+    "schedule",
+    "customize",
+    "more filters",
+    "all locations",
+    "ask shyne",
+    "search ⌘k",
+    "log out now",
+    "logout",
+    "send"
+  ]
+}

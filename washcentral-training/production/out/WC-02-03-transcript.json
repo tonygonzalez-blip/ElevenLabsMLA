@@ -1,0 +1,352 @@
+{
+  "lesson": "WC-02-03",
+  "audioMaster": "training/module02-crm/WC-02-03-full-narration-v1.0.mp3",
+  "audioDurationS": 148.114,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open any customer's profile and click Edit Customer.",
+      "startS": 0,
+      "endS": 2.335,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The same record opens ready to change, every field now live.",
+      "startS": 2.539,
+      "endS": 3.398,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "Two buttons wait in the corner.",
+      "startS": 3.898,
+      "endS": 5.91,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "One saves your work, one backs out.",
+      "startS": 6.137,
+      "endS": 7.55,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "Today, we only back out.",
+      "startS": 8.081,
+      "endS": 14.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Before anything else, read the band across the top.",
+      "startS": 14.48,
+      "endS": 17.404,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The name, the plan, and a few status chips ride along from the profile.",
+      "startS": 18.012,
+      "endS": 22.204,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "It is your proof of whose record you are in, so you never edit the wrong person by accident.",
+      "startS": 23.012,
+      "endS": 27.92,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Now the tabs.",
+      "startS": 28.32,
+      "endS": 29.694,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Six here, not the nine on the profile.",
+      "startS": 29.694,
+      "endS": 32.744,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "The view is built for reading a customer;",
+      "startS": 32.744,
+      "endS": 35.508,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "this form is built for changing one, so the layout shifts.",
+      "startS": 35.508,
+      "endS": 39.556,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Messaging turns into Communication, Notes into Comments,",
+      "startS": 39.556,
+      "endS": 41.974,
+      "timing": "proportional"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "and the read-only summaries fall away.",
+      "startS": 41.974,
+      "endS": 44.048,
+      "timing": "proportional"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "Start on Contact, the first group.",
+      "startS": 44.48,
+      "endS": 46.508,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "Name, company, gender, date of birth,",
+      "startS": 47.022,
+      "endS": 47.456,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "plus two switches for house account and signature on file.",
+      "startS": 47.726,
+      "endS": 48.292,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "This is the identity block, the details that decide how the customer shows up everywhere else.",
+      "startS": 48.577,
+      "endS": 58.96,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Next, the address fields.",
+      "startS": 59.432,
+      "endS": 61.208,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Street, city, state, zip, and country, with a second line for an apartment or suite.",
+      "startS": 62.072,
+      "endS": 67.791,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "Keep these clean and the customer's mail, receipts, and location reports all line up.",
+      "startS": 68.319,
+      "endS": 72.983,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "Below that, phone and email.",
+      "startS": 73.44,
+      "endS": 74.176,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Phone, mobile, fax, and email address.",
+      "startS": 74.517,
+      "endS": 75.525,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "When a member says their texts or receipts are going nowhere,",
+      "startS": 76.486,
+      "endS": 79.396,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "this is the block you check first.",
+      "startS": 79.73,
+      "endS": 84.515,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "We changed nothing, so click Cancel.",
+      "startS": 85.037,
+      "endS": 86.914,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "The form closes and drops you right back on the profile, untouched.",
+      "startS": 86.914,
+      "endS": 91.642,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "That Save button would have written straight to a live account,",
+      "startS": 91.642,
+      "endS": 95.438,
+      "timing": "proportional"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "so while you are learning, Cancel is the only way out.",
+      "startS": 95.438,
+      "endS": 98.88,
+      "timing": "proportional"
+    },
+    {
+      "block": "s08",
+      "id": "p30",
+      "text": "Head back to the customer list.",
+      "startS": 99.28,
+      "endS": 100.823,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Same database you started in.",
+      "startS": 101.14,
+      "endS": 102.768,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Up top sit the counts, and along the toolbar, the button that starts a brand new record.",
+      "startS": 103.193,
+      "endS": 108.049,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p33",
+      "text": "Click Add Customer.",
+      "startS": 108.566,
+      "endS": 109.731,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p34",
+      "text": "The form looks familiar because it is the same one, just empty.",
+      "startS": 110.308,
+      "endS": 113.978,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p35",
+      "text": "Same tabs, same fields, every box blank and waiting.",
+      "startS": 114.304,
+      "endS": 117.641,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "This is where a walk-in becomes a member.",
+      "startS": 118.164,
+      "endS": 120.216,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p37",
+      "text": "Scan down the empty form.",
+      "startS": 120.753,
+      "endS": 122.356,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p38",
+      "text": "Personal details, address, phone and email, all in the same order as the edit screen.",
+      "startS": 122.928,
+      "endS": 128.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p39",
+      "text": "Learn the layout once and you know both, whether you are fixing a record or building one.",
+      "startS": 128.498,
+      "endS": 133.12,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p40",
+      "text": "We are only touring, so click Cancel again.",
+      "startS": 133.581,
+      "endS": 136.37,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p41",
+      "text": "No record is created, and nothing is left behind.",
+      "startS": 136.8,
+      "endS": 139.739,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p42",
+      "text": "Two forms, one template, and the same safe habit both times:",
+      "startS": 140.146,
+      "endS": 144.176,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p43",
+      "text": "read everything, change nothing, leave by Cancel.",
+      "startS": 144.389,
+      "endS": 147.68,
+      "timing": "silence"
+    }
+  ]
+}

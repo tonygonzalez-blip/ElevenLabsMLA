@@ -1,0 +1,1946 @@
+{
+  "lesson": "WC-12-09",
+  "title": "Settings: Integrations (SSO, Accounting, Help Desk)",
+  "audioMaster": "training/module12-settings/WC-12-09-full-narration-v1.0.mp3",
+  "audioDurationS": 260.440816,
+  "tailS": 0.4,
+  "startUrl": "https://demo.washcentral.com/settings-integrations-zoho.html",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "targets": {
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "integRail": {
+      "js": "[...document.querySelectorAll('a.menu-header')].find(e=>/^integrations$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "breadcrumb": {
+      "js": "document.querySelector('.breadcrumbs')",
+      "textRect": true
+    },
+    "badge": {
+      "js": "[...document.querySelectorAll('.a-plan-badge')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "pill": {
+      "js": "[...document.querySelectorAll('.int-badge')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "subtitle": {
+      "js": "[...document.querySelectorAll('.a-meta-id')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "chip1": {
+      "js": "[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0)[0]"
+    },
+    "chip2": {
+      "js": "[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0)[1]"
+    },
+    "chip3": {
+      "js": "[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0)[2]"
+    },
+    "testBtn": {
+      "js": "[...document.querySelectorAll('.a-btn,button,a')].find(e=>/^test connection$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "editBtn": {
+      "js": "[...document.querySelectorAll('.a-btn,button,a')].find(e=>/^edit configuration$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tile1": {
+      "js": "[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0)[0]"
+    },
+    "tile2": {
+      "js": "[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0)[1]"
+    },
+    "tile3": {
+      "js": "[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0)[2]"
+    },
+    "tile4": {
+      "js": "[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0)[3]"
+    },
+    "tileConnection": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/^Connection$/i.test((e.querySelector('.a-metric-lbl')||{}).textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "sageSyncTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sync Schedule/i.test((e.querySelector('.a-metric-lbl')||{}).textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "scimStatusTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/^Status$/i.test((e.querySelector('.a-metric-lbl')||{}).textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "scimLastEventTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Last Event/i.test((e.querySelector('.a-metric-lbl')||{}).textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "qbRealmTile": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/^Realm$/i.test((e.querySelector('.a-metric-lbl')||{}).textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "tabSettings": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>/^settings$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tabInstructions": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>/^instructions$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "grpCredentials": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Credentials$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "grpGeneral": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^General$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "grpRouting": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Routing$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "grpSync": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Sync$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "scimSyncLog": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Sync Log$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "lblClientId": {
+      "js": "[...document.querySelectorAll('.a-group *')].find(e=>e.children.length===0&&/^Client ID$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "lblTokenExpiry": {
+      "js": "[...document.querySelectorAll('.a-group *')].find(e=>e.children.length===0&&/^Token Expiry$/i.test((e.textContent||'').replace(/\\u00a0/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "cardZoho": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-zoho.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardEntra": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-entra.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardGoogle": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-google.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardOkta": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-okta.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardCognito": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-cognito.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardScim": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-scim.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardSage": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-sage.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "cardQuickbooks": {
+      "js": "[...document.querySelectorAll('a[href$=\"integrations-quickbooks.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    }
+  },
+  "predicates": {
+    "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
+    "onZoho": "location.pathname.endsWith('/settings-integrations-zoho.html')",
+    "onEntra": "location.pathname.endsWith('/settings-integrations-entra.html')",
+    "onScim": "location.pathname.endsWith('/settings-integrations-scim.html')",
+    "onSage": "location.pathname.endsWith('/settings-integrations-sage.html')",
+    "onQuickbooks": "location.pathname.endsWith('/settings-integrations-quickbooks.html')",
+    "onHub": "location.pathname.endsWith('/settings-integrations.html')",
+    "sidebarExpanded": "(()=>{const a=document.querySelector('aside.sidebar');return !!a&&a.getBoundingClientRect().width>120})()",
+    "integrationsRailInFrame": "(()=>{const e=[...document.querySelectorAll('a.menu-header')].find(x=>/^integrations$/i.test((x.textContent||'').trim()));if(!e)return false;const r=e.getBoundingClientRect();return r.width>0&&r.top>=0&&r.bottom<=1060})()",
+    "groupsCollapsed": "[...document.querySelectorAll('aside .submenu')].every(s=>getComputedStyle(s).display==='none')",
+    "integrationLoaded": "(()=>{const badge=[...document.querySelectorAll('.a-plan-badge')].some(e=>e.getBoundingClientRect().width>0);const tiles=[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length;return badge&&tiles>=4&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "zohoLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-zoho.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "entraLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-entra.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "scimLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-scim.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Sync Log/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "sageLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-sage.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "qbLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-quickbooks.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "hubLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations.html')&&['entra','google','okta','scim','sage','quickbooks','zoho'].filter(w=>[...document.querySelectorAll('a[href$=\"integrations-'+w+'.html\"]')].some(a=>a.getBoundingClientRect().width>0)).length>=6})()"
+  },
+  "ops": [
+    {
+      "op": "assert",
+      "at": -2,
+      "predicate": "onZoho",
+      "note": "start page staged before capture: the Zoho Desk integration page"
+    },
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight staged the persisted settings submenu expanded (washcentral-sidebar-collapsed-v5=false); abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "groupsCollapsed",
+      "note": "pre-roll: persisted washcentral-settings-menu-v1 all-false (every settings group collapsed) staged by preflight, so the Integrations entry sits at the bottom of the rail in frame (y651)"
+    },
+    {
+      "op": "assert",
+      "at": -1,
+      "predicate": "integrationsRailInFrame",
+      "note": "pre-roll: the Integrations rail entry must be on screen for step 1 and for every genuine hub navigation click; abort otherwise"
+    },
+    {
+      "op": "assert",
+      "at": -0.6,
+      "predicate": "zohoLoaded",
+      "note": "shot-list load check: real tiles + chips, no agent-service error state"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        220,
+        1079
+      ],
+      "to": {
+        "target": "integRail",
+        "offset": [
+          150,
+          -20
+        ]
+      },
+      "note": "enter from the bottom-left beside the settings rail as p01 opens on 'its own page under Settings'"
+    },
+    {
+      "op": "log-rect",
+      "at": 1,
+      "key": "bcZoho",
+      "target": "breadcrumb"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.3,
+      "key": "integRailRect",
+      "target": "integRail"
+    },
+    {
+      "op": "move",
+      "at": 3.1,
+      "to": {
+        "target": "breadcrumb",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p02 'The breadcrumb confirms where you are' — sweep up to the breadcrumb"
+    },
+    {
+      "op": "move",
+      "at": 5.5,
+      "to": {
+        "target": "integRail",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "p03 'the Integrations entry at the bottom of the left rail is the way in' — down to the rail entry (never clicked here)"
+    },
+    {
+      "op": "move",
+      "at": 10.3,
+      "to": {
+        "target": "badge",
+        "offset": [
+          -240,
+          -10
+        ]
+      },
+      "note": "p04 'We start on Zoho Desk' — ease toward the Zoho header/title"
+    },
+    {
+      "op": "move",
+      "at": 14.2,
+      "to": {
+        "point": [
+          760,
+          360
+        ]
+      },
+      "note": "park over the page for the p05 tail"
+    },
+    {
+      "op": "move",
+      "at": 17.85,
+      "to": {
+        "target": "badge",
+        "offset": [
+          -250,
+          -12
+        ]
+      },
+      "note": "step 2 cue p06 'Start at the top' — approach the header identity block"
+    },
+    {
+      "op": "log-rects",
+      "at": 18.2,
+      "key": "hdrZoho",
+      "targets": [
+        "badge",
+        "pill",
+        "subtitle"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 19.4,
+      "to": {
+        "target": "badge",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p07 'The badge next to the title says what the integration is for'"
+    },
+    {
+      "op": "move",
+      "at": 23.2,
+      "to": {
+        "target": "pill",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p08-p09 'the pill... Not Configured means nothing is wired up'"
+    },
+    {
+      "op": "move",
+      "at": 30,
+      "to": {
+        "point": [
+          760,
+          360
+        ]
+      },
+      "note": "ease off for the p10 tail 'One glance, and you already know the connection state'"
+    },
+    {
+      "op": "move",
+      "at": 35.7,
+      "to": {
+        "target": "chip1",
+        "offset": [
+          -20,
+          -28
+        ],
+        "outside": true
+      },
+      "note": "step 3 cue p11 'Under the title, three small chips'"
+    },
+    {
+      "op": "log-rects",
+      "at": 36.1,
+      "key": "chipsZoho",
+      "targets": [
+        "chip1",
+        "chip2",
+        "chip3"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 36.6,
+      "to": {
+        "target": "chip1",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "slow left-to-right chip sweep begins"
+    },
+    {
+      "op": "move",
+      "at": 38.6,
+      "to": {
+        "target": "chip2",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 40.6,
+      "to": {
+        "target": "chip3",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p12 'how WashCentral would talk to the vendor'"
+    },
+    {
+      "op": "move",
+      "at": 45.4,
+      "to": {
+        "point": [
+          700,
+          360
+        ]
+      },
+      "note": "ease off over p14-p15 'watch them change as we tour the other pages'"
+    },
+    {
+      "op": "log-rects",
+      "at": 51.3,
+      "key": "btnsZoho",
+      "targets": [
+        "testBtn",
+        "editBtn"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "s04Hold",
+      "from": 52.5,
+      "to": 68.8,
+      "predicate": "onZoho",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 4 guardrail: neither Test Connection nor Edit Configuration is ever clicked — the page must not change or navigate"
+    },
+    {
+      "op": "move",
+      "at": 51.5,
+      "to": {
+        "target": "testBtn",
+        "offset": [
+          10,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 4 cue p16 'Top right, two buttons, and we touch neither' — rest BELOW Test Connection, never on it"
+    },
+    {
+      "op": "move",
+      "at": 55.4,
+      "to": {
+        "target": "testBtn",
+        "offset": [
+          10,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p17 'Test Connection fires a live call out to the vendor' — point from beside; do-not-click ring above"
+    },
+    {
+      "op": "move",
+      "at": 59.7,
+      "to": {
+        "target": "editBtn",
+        "offset": [
+          20,
+          44
+        ],
+        "outside": true
+      },
+      "note": "p18 'Edit Configuration opens the credential editor' — point from beside, never on it"
+    },
+    {
+      "op": "move",
+      "at": 64.6,
+      "to": {
+        "point": [
+          1300,
+          360
+        ]
+      },
+      "note": "ease away on p20-p21 'reading never requires a click up here'"
+    },
+    {
+      "op": "move",
+      "at": 69.7,
+      "to": {
+        "target": "tile1",
+        "offset": [
+          0,
+          -30
+        ],
+        "outside": true
+      },
+      "note": "step 5 cue p22 'Now the tile strip'"
+    },
+    {
+      "op": "log-rects",
+      "at": 70,
+      "key": "tilesZoho",
+      "targets": [
+        "tile1",
+        "tile2",
+        "tile3",
+        "tile4"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 70.3,
+      "key": "tileConnRect",
+      "target": "tileConnection"
+    },
+    {
+      "op": "move",
+      "at": 71.4,
+      "to": {
+        "target": "tile1",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p23-p24 slow sweep across the four tiles in spoken order: connection,"
+    },
+    {
+      "op": "move",
+      "at": 73.6,
+      "to": {
+        "target": "tile2",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "data center,"
+    },
+    {
+      "op": "move",
+      "at": 75.4,
+      "to": {
+        "target": "tile3",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "org ID,"
+    },
+    {
+      "op": "move",
+      "at": 77.1,
+      "to": {
+        "target": "tile4",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "and which way data syncs"
+    },
+    {
+      "op": "move",
+      "at": 78.9,
+      "to": {
+        "target": "tileConnection",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p25 'Notice Connection reads Not set, which agrees with the pill above'"
+    },
+    {
+      "op": "move",
+      "at": 82.9,
+      "to": {
+        "point": [
+          760,
+          360
+        ]
+      },
+      "note": "ease off for the p26 tail"
+    },
+    {
+      "op": "move",
+      "at": 86.1,
+      "to": {
+        "target": "tabSettings",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 6 cue p27 'Below the tiles, two tabs'"
+    },
+    {
+      "op": "log-rects",
+      "at": 86.5,
+      "key": "tabsZoho",
+      "targets": [
+        "tabSettings",
+        "tabInstructions"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 88.3,
+      "to": {
+        "target": "tabSettings",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p28 'Settings, the one that's open, holds the live field values'"
+    },
+    {
+      "op": "move",
+      "at": 92.3,
+      "to": {
+        "target": "tabInstructions",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p29-p30 'Instructions... we leave it closed today' — pointed at, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 99.2,
+      "to": {
+        "target": "tabSettings",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p31 'Everything we need sits on the Settings tab'"
+    },
+    {
+      "op": "move",
+      "at": 101.95,
+      "to": {
+        "target": "grpCredentials",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 7 cue p32 'Scroll into the credentials group' (the group is already in frame; no engine scroll)"
+    },
+    {
+      "op": "log-rect",
+      "at": 102.4,
+      "key": "grpCredRect",
+      "target": "grpCredentials"
+    },
+    {
+      "op": "log-rects",
+      "at": 102.7,
+      "key": "credLbls",
+      "targets": [
+        "lblClientId",
+        "lblTokenExpiry"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 104.3,
+      "to": {
+        "target": "lblClientId",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p33 'Client I-D, secrets, tokens, expiry' — sweep down the credential labels"
+    },
+    {
+      "op": "move",
+      "at": 105.6,
+      "to": {
+        "target": "lblTokenExpiry",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "down to Token Expiry"
+    },
+    {
+      "op": "move",
+      "at": 108.6,
+      "to": {
+        "target": "grpCredRect",
+        "offset": [
+          260,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p34-p36 'read the labels, never the values' — rest beside the (empty) field labels; no value is ever read"
+    },
+    {
+      "op": "move",
+      "at": 114,
+      "to": {
+        "point": [
+          700,
+          470
+        ]
+      },
+      "note": "hold over the credentials group for the p37 rule"
+    },
+    {
+      "op": "move",
+      "at": 121.9,
+      "to": {
+        "target": "grpGeneral",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "step 8 cue p38 'Keep scrolling' — move down to the operational group headers (all in frame; Mapping sits below the fold — see residuals)"
+    },
+    {
+      "op": "log-rects",
+      "at": 122.3,
+      "key": "opGroups",
+      "targets": [
+        "grpGeneral",
+        "grpRouting",
+        "grpSync"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 127.4,
+      "to": {
+        "target": "grpGeneral",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "p40 'General turns it on, Routing picks a default department and assignee'"
+    },
+    {
+      "op": "move",
+      "at": 128.4,
+      "to": {
+        "target": "grpRouting",
+        "offset": [
+          20,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 129,
+      "to": {
+        "target": "grpSync",
+        "offset": [
+          20,
+          0
+        ]
+      },
+      "note": "p41 'Sync sets the direction, and Mapping ties Zoho's statuses' (Mapping named; its header is below the 1080 fold)"
+    },
+    {
+      "op": "move",
+      "at": 132.2,
+      "to": {
+        "point": [
+          760,
+          760
+        ]
+      },
+      "note": "ease off for p42-p43 'the same skeleton wearing different names'"
+    },
+    {
+      "op": "move",
+      "at": 144.15,
+      "to": {
+        "target": "integRail",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 9 cue p44 'Now Microsoft Entra I-D' — approach the Integrations rail entry to open the hub"
+    },
+    {
+      "op": "click",
+      "target": "integRail",
+      "pressAt": 145,
+      "hoverMs": 300,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation: the Integrations rail entry is a plain <a href=settings-integrations.html> (pure navigation, no mutation) — opens the integrations hub"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hub1Stable",
+      "predicate": "hubLoaded",
+      "settleMs": 450,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "move",
+      "at": 145.7,
+      "to": {
+        "target": "cardEntra",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "on the hub, head to the Microsoft Entra ID card"
+    },
+    {
+      "op": "click",
+      "target": "cardEntra",
+      "pressAt": 146.2,
+      "hoverMs": 300,
+      "postcondition": "onEntra",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation: the hub card is a plain <a href=settings-integrations-entra.html> — opens the Entra page (p46 will describe it)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "entraStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 147.4,
+      "predicate": "entraLoaded",
+      "note": "SSO page loaded: badge, chips, and four tiles present, no agent-service error"
+    },
+    {
+      "op": "log-rects",
+      "at": 147.6,
+      "key": "hdrEntra",
+      "targets": [
+        "badge",
+        "chip1",
+        "chip2",
+        "chip3"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 147.9,
+      "key": "tilesEntra",
+      "targets": [
+        "tile1",
+        "tile2",
+        "tile3",
+        "tile4"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 148.1,
+      "to": {
+        "target": "badge",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p46 'The badge now reads single sign-on, the chips describe Microsoft's method'"
+    },
+    {
+      "op": "move",
+      "at": 150,
+      "to": {
+        "target": "chip2",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 152,
+      "to": {
+        "target": "tile2",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p47 'the tiles track the issuer, client I-D, and scopes'"
+    },
+    {
+      "op": "move",
+      "at": 154,
+      "to": {
+        "target": "tile4",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 157.6,
+      "to": {
+        "point": [
+          760,
+          360
+        ]
+      },
+      "note": "p48-p49 name the redirect U-R-I + Copy button, which sit below the 1080 fold (residual) — ease off over the header"
+    },
+    {
+      "op": "move",
+      "at": 165.8,
+      "to": {
+        "target": "integRail",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 10 cue p50 'Google, Okta, Cognito' — back to the Integrations rail to reopen the hub"
+    },
+    {
+      "op": "click",
+      "target": "integRail",
+      "pressAt": 166.5,
+      "hoverMs": 300,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation back to the integrations hub, where Google, Okta and Cognito appear as cards"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hub2Stable",
+      "predicate": "hubLoaded",
+      "settleMs": 450,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rects",
+      "at": 167.6,
+      "key": "hubCards",
+      "targets": [
+        "cardGoogle",
+        "cardOkta",
+        "cardCognito"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 169.1,
+      "to": {
+        "target": "cardGoogle",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p52 'Only the name and the method chips change from page to page' — sweep the three SSO cards"
+    },
+    {
+      "op": "move",
+      "at": 171.7,
+      "to": {
+        "target": "cardOkta",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 173.2,
+      "to": {
+        "target": "cardCognito",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p53 'and every one of them sits at Not Configured here'"
+    },
+    {
+      "op": "move",
+      "at": 178.5,
+      "to": {
+        "point": [
+          960,
+          640
+        ]
+      },
+      "note": "ease off for p54-p55 'Learn the Entra page and you have learned all four'"
+    },
+    {
+      "op": "move",
+      "at": 184.15,
+      "to": {
+        "target": "cardScim",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 11 cue p56 'SCIM, pronounced skim' — head to the SCIM Provisioning card (still on the hub)"
+    },
+    {
+      "op": "click",
+      "target": "cardScim",
+      "pressAt": 184.9,
+      "hoverMs": 300,
+      "postcondition": "onScim",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation: hub card <a href=settings-integrations-scim.html>"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "scimStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 186.5,
+      "predicate": "scimLoaded",
+      "note": "SCIM page loaded: four tiles + an empty Sync Log group, no error"
+    },
+    {
+      "op": "log-rects",
+      "at": 186.8,
+      "key": "scimTiles",
+      "targets": [
+        "scimStatusTile",
+        "scimLastEventTile"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 187.1,
+      "key": "scimSyncLogRect",
+      "target": "scimSyncLog"
+    },
+    {
+      "op": "move",
+      "at": 189.4,
+      "to": {
+        "target": "scimStatusTile",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p59 'The tiles track its status and last event'"
+    },
+    {
+      "op": "move",
+      "at": 191.8,
+      "to": {
+        "target": "scimLastEventTile",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 196.4,
+      "to": {
+        "target": "scimSyncLog",
+        "offset": [
+          40,
+          20
+        ],
+        "outside": true
+      },
+      "note": "p60 'and the sync log below stays empty until provisioning events start arriving'"
+    },
+    {
+      "op": "move",
+      "at": 201.3,
+      "to": {
+        "target": "integRail",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 12 cue p61 'On to accounting. Open Sage' — back to the rail to reopen the hub"
+    },
+    {
+      "op": "click",
+      "target": "integRail",
+      "pressAt": 202,
+      "hoverMs": 280,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation to the hub"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hub3Stable",
+      "predicate": "hubLoaded",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "move",
+      "at": 202.7,
+      "to": {
+        "target": "cardSage",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "head to the Sage card"
+    },
+    {
+      "op": "click",
+      "target": "cardSage",
+      "pressAt": 203.3,
+      "hoverMs": 280,
+      "postcondition": "onSage",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation: hub card <a href=settings-integrations-sage.html>"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "sageStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 204.4,
+      "predicate": "sageLoaded",
+      "note": "Sage page loaded: badge, chips, four tiles incl the Sync Schedule cron tile"
+    },
+    {
+      "op": "log-rect",
+      "at": 204.7,
+      "key": "sageTileRect",
+      "target": "sageSyncTile"
+    },
+    {
+      "op": "log-rect",
+      "at": 204.9,
+      "key": "sageSyncGrp",
+      "target": "grpSync"
+    },
+    {
+      "op": "move",
+      "at": 207.9,
+      "to": {
+        "target": "sageSyncTile",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p63-p64 'The sync schedule tile shows a cron value... two in the morning here, not on every sale'"
+    },
+    {
+      "op": "move",
+      "at": 213,
+      "to": {
+        "target": "grpSync",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "p65-p66 'the safety group's dry run flag' — the Safety/Dry Run group sits below the fold (residual); rest over the SYNC group instead"
+    },
+    {
+      "op": "move",
+      "at": 218.6,
+      "to": {
+        "point": [
+          900,
+          560
+        ]
+      },
+      "note": "ease off for the p66 tail"
+    },
+    {
+      "op": "move",
+      "at": 222.15,
+      "to": {
+        "target": "integRail",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 13 cue p67 'QuickBooks Online, the other ledger' — back to the rail to reopen the hub"
+    },
+    {
+      "op": "click",
+      "target": "integRail",
+      "pressAt": 222.85,
+      "hoverMs": 280,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation to the hub"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hub4Stable",
+      "predicate": "hubLoaded",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "move",
+      "at": 223.5,
+      "to": {
+        "target": "cardQuickbooks",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "head to the QuickBooks Online card"
+    },
+    {
+      "op": "click",
+      "target": "cardQuickbooks",
+      "pressAt": 224.1,
+      "hoverMs": 280,
+      "postcondition": "onQuickbooks",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation: hub card <a href=settings-integrations-quickbooks.html>"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "qbStable",
+      "predicate": "pageReady",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 225.8,
+      "predicate": "qbLoaded",
+      "note": "QuickBooks page loaded: badge, chips, four tiles incl the Realm tile"
+    },
+    {
+      "op": "move",
+      "at": 226,
+      "to": {
+        "target": "badge",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p68 'Same badge, same subtitle, different vendor' (QuickBooks is up just as p68 lands)"
+    },
+    {
+      "op": "log-rects",
+      "at": 226.3,
+      "key": "qbChips",
+      "targets": [
+        "chip1",
+        "chip2",
+        "chip3"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 226.5,
+      "key": "qbRealmRect",
+      "target": "qbRealmTile"
+    },
+    {
+      "op": "move",
+      "at": 226.9,
+      "to": {
+        "target": "qbRealmTile",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p69 'Its credentials add a realm, which is QuickBooks' name for the company I-D'"
+    },
+    {
+      "op": "move",
+      "at": 233.4,
+      "to": {
+        "point": [
+          900,
+          470
+        ]
+      },
+      "note": "ease off for p71-p72 'the same pattern you just saw across the four sign-on providers'"
+    },
+    {
+      "op": "move",
+      "at": 241.75,
+      "to": {
+        "target": "integRail",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 14 cue p73 'Back to Zoho for the read that matters' — back to the rail to reopen the hub"
+    },
+    {
+      "op": "click",
+      "target": "integRail",
+      "pressAt": 242.45,
+      "hoverMs": 280,
+      "postcondition": "onHub",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation to the hub"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "hub5Stable",
+      "predicate": "hubLoaded",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "move",
+      "at": 243.1,
+      "to": {
+        "target": "cardZoho",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "head to the Zoho Desk card"
+    },
+    {
+      "op": "click",
+      "target": "cardZoho",
+      "pressAt": 243.7,
+      "hoverMs": 280,
+      "postcondition": "onZoho",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "genuine navigation back to Zoho Desk for the recap"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "zohoStable",
+      "predicate": "zohoLoaded",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "watch",
+      "key": "s14Hold",
+      "from": 245,
+      "to": 258,
+      "predicate": "onZoho",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "recap guardrail: Test Connection is pointed at but never clicked — the page must not change"
+    },
+    {
+      "op": "log-rect",
+      "at": 244.6,
+      "key": "recapPill",
+      "target": "pill"
+    },
+    {
+      "op": "log-rect",
+      "at": 244.8,
+      "key": "recapTest",
+      "target": "testBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 245,
+      "key": "recapExpiry",
+      "target": "lblTokenExpiry"
+    },
+    {
+      "op": "move",
+      "at": 246.8,
+      "to": {
+        "target": "pill",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "recap read 1 (p75) 'the status pill'"
+    },
+    {
+      "op": "move",
+      "at": 248.7,
+      "to": {
+        "target": "testBtn",
+        "offset": [
+          10,
+          46
+        ],
+        "outside": true
+      },
+      "note": "recap read 2 (p76) 'then Test Connection, remembering an admin runs it, not you' — point from beside, never on it"
+    },
+    {
+      "op": "move",
+      "at": 253.6,
+      "to": {
+        "target": "lblTokenExpiry",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "recap read 3 (p77) 'then token expiry in the credentials'"
+    },
+    {
+      "op": "move",
+      "at": 256.4,
+      "to": {
+        "point": [
+          760,
+          360
+        ]
+      },
+      "note": "settle for the p78 close 'without filing a bug'"
+    },
+    {
+      "op": "assert",
+      "at": 259.5,
+      "predicate": "onZoho",
+      "note": "final: still on the Zoho recap page, nothing was clicked"
+    }
+  ],
+  "compositor": {
+    "callouts": [
+      {
+        "n": 1,
+        "anchor": "bcZoho",
+        "place": "below-left",
+        "from": 3.1,
+        "to": 13
+      },
+      {
+        "n": 2,
+        "anchor": "hdrZoho.pill",
+        "place": "below-left",
+        "from": 19.4,
+        "to": 29.5
+      },
+      {
+        "n": 3,
+        "anchor": "chipsZoho.chip2",
+        "place": "below-left",
+        "from": 36.8,
+        "to": 48
+      },
+      {
+        "n": 4,
+        "anchor": "btnsZoho.testBtn",
+        "place": "below-left",
+        "from": 53,
+        "to": 66
+      },
+      {
+        "n": 5,
+        "anchor": "tileConnRect",
+        "place": "below-left",
+        "from": 71.4,
+        "to": 83
+      },
+      {
+        "n": 6,
+        "anchor": "tabsZoho.tabInstructions",
+        "place": "below-left",
+        "from": 87,
+        "to": 99
+      },
+      {
+        "n": 7,
+        "anchor": "grpCredRect",
+        "place": "right",
+        "from": 104,
+        "to": 118
+      },
+      {
+        "n": 8,
+        "anchor": "opGroups.grpGeneral",
+        "place": "right",
+        "from": 123,
+        "to": 140
+      },
+      {
+        "n": 9,
+        "anchor": "hdrEntra.badge",
+        "place": "below-left",
+        "from": 148,
+        "to": 162
+      },
+      {
+        "n": 10,
+        "anchor": "hubCards.cardGoogle",
+        "place": "below-left",
+        "from": 169,
+        "to": 181
+      },
+      {
+        "n": 11,
+        "anchor": "scimTiles.scimStatusTile",
+        "place": "below-left",
+        "from": 189,
+        "to": 199
+      },
+      {
+        "n": 12,
+        "anchor": "sageTileRect",
+        "place": "below-left",
+        "from": 205,
+        "to": 219
+      },
+      {
+        "n": 13,
+        "anchor": "qbRealmRect",
+        "place": "below-left",
+        "from": 225,
+        "to": 239
+      },
+      {
+        "n": 14,
+        "anchor": "recapPill",
+        "place": "below-left",
+        "from": 245,
+        "to": 258
+      }
+    ],
+    "highlights": [
+      {
+        "anchor": "bcZoho",
+        "from": 3.1,
+        "to": 5.4,
+        "note": "p02 'The breadcrumb confirms where you are'"
+      },
+      {
+        "anchor": "integRailRect",
+        "from": 5.5,
+        "to": 9.8,
+        "note": "p03 'the Integrations entry at the bottom of the left rail is the way in'"
+      },
+      {
+        "anchor": "hdrZoho.badge",
+        "from": 19.4,
+        "to": 23.1,
+        "note": "p07 the Help Desk Integration badge"
+      },
+      {
+        "anchor": "hdrZoho.pill",
+        "from": 23.2,
+        "to": 29.5,
+        "note": "p08-p09 the Not Configured pill"
+      },
+      {
+        "anchor": "chipsZoho.chip1",
+        "from": 36.6,
+        "to": 38.6,
+        "note": "p11 chip sweep in order"
+      },
+      {
+        "anchor": "chipsZoho.chip2",
+        "from": 38.6,
+        "to": 40.6
+      },
+      {
+        "anchor": "chipsZoho.chip3",
+        "from": 40.6,
+        "to": 43.5
+      },
+      {
+        "anchor": "btnsZoho.testBtn",
+        "from": 53,
+        "to": 59,
+        "color": "#dc2626",
+        "note": "step 4 do-not-click guardrail on Test Connection (p16-p17)"
+      },
+      {
+        "anchor": "btnsZoho.editBtn",
+        "from": 59.7,
+        "to": 66,
+        "color": "#dc2626",
+        "note": "step 4 do-not-click guardrail on Edit Configuration (p18)"
+      },
+      {
+        "anchor": "tilesZoho.tile1",
+        "from": 71.4,
+        "to": 73.6,
+        "note": "p24 four-tile sweep in spoken order"
+      },
+      {
+        "anchor": "tilesZoho.tile2",
+        "from": 73.6,
+        "to": 75.4
+      },
+      {
+        "anchor": "tilesZoho.tile3",
+        "from": 75.4,
+        "to": 77.1
+      },
+      {
+        "anchor": "tilesZoho.tile4",
+        "from": 77.1,
+        "to": 78.9
+      },
+      {
+        "anchor": "tileConnRect",
+        "from": 78.9,
+        "to": 82.9,
+        "note": "p25 'Connection reads Not set, which agrees with the pill above'"
+      },
+      {
+        "anchor": "tabsZoho.tabSettings",
+        "from": 88.3,
+        "to": 92.3,
+        "note": "p28 the open Settings tab"
+      },
+      {
+        "anchor": "tabsZoho.tabInstructions",
+        "from": 92.3,
+        "to": 98.5,
+        "note": "p29-p30 Instructions, left closed (never clicked)"
+      },
+      {
+        "anchor": "credLbls.lblClientId",
+        "from": 104.3,
+        "to": 105.6,
+        "note": "p33 'Client I-D'"
+      },
+      {
+        "anchor": "credLbls.lblTokenExpiry",
+        "from": 105.6,
+        "to": 108.4,
+        "note": "p33 'tokens, expiry'"
+      },
+      {
+        "anchor": "grpCredRect",
+        "from": 108.6,
+        "to": 118,
+        "note": "p34-p37 'read the labels, never the values' (fields empty in this demo tenant)"
+      },
+      {
+        "anchor": "opGroups.grpGeneral",
+        "from": 127.4,
+        "to": 128.4,
+        "note": "p40 General"
+      },
+      {
+        "anchor": "opGroups.grpRouting",
+        "from": 128.4,
+        "to": 129
+      },
+      {
+        "anchor": "opGroups.grpSync",
+        "from": 129,
+        "to": 131.9,
+        "note": "p41 Sync"
+      },
+      {
+        "anchor": "hdrEntra.badge",
+        "from": 148.1,
+        "to": 150,
+        "note": "p46 SSO Integration badge"
+      },
+      {
+        "anchor": "hdrEntra.chip2",
+        "from": 150,
+        "to": 152,
+        "note": "p46 Microsoft method chips"
+      },
+      {
+        "anchor": "tilesEntra.tile2",
+        "from": 152,
+        "to": 156.5,
+        "note": "p47 issuer / client ID / scopes tiles"
+      },
+      {
+        "anchor": "hubCards.cardGoogle",
+        "from": 169.1,
+        "to": 171.7,
+        "note": "p52 Google card"
+      },
+      {
+        "anchor": "hubCards.cardOkta",
+        "from": 171.7,
+        "to": 173.2,
+        "note": "Okta card"
+      },
+      {
+        "anchor": "hubCards.cardCognito",
+        "from": 173.2,
+        "to": 177.7,
+        "note": "p53 Cognito card, all Not Configured"
+      },
+      {
+        "anchor": "scimTiles.scimStatusTile",
+        "from": 189.4,
+        "to": 191.8,
+        "note": "p59 Status tile"
+      },
+      {
+        "anchor": "scimTiles.scimLastEventTile",
+        "from": 191.8,
+        "to": 195.5,
+        "note": "p59 Last Event tile"
+      },
+      {
+        "anchor": "scimSyncLogRect",
+        "from": 196.4,
+        "to": 200.4,
+        "note": "p60 the empty Sync Log"
+      },
+      {
+        "anchor": "sageTileRect",
+        "from": 207.9,
+        "to": 214,
+        "note": "p63-p64 the Sync Schedule cron tile"
+      },
+      {
+        "anchor": "qbChips.chip1",
+        "from": 226.3,
+        "to": 228.4,
+        "note": "p68 Accounting method chips (Accounting / OAuth 2.0 / REST API)"
+      },
+      {
+        "anchor": "qbRealmRect",
+        "from": 226.7,
+        "to": 232.5,
+        "note": "p69 the Realm tile (QuickBooks' company ID)"
+      },
+      {
+        "anchor": "recapPill",
+        "from": 246.8,
+        "to": 248.7,
+        "note": "recap read 1 (p75) status pill"
+      },
+      {
+        "anchor": "recapTest",
+        "from": 248.7,
+        "to": 253.6,
+        "color": "#dc2626",
+        "note": "recap read 2 (p76) Test Connection do-not-click guardrail — an admin runs it, not you"
+      },
+      {
+        "anchor": "recapExpiry",
+        "from": 253.6,
+        "to": 257.5,
+        "note": "recap read 3 (p77) token expiry in the credentials"
+      }
+    ],
+    "camera": [
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 23.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 23.9,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 130,
+        "ease": true,
+        "note": "step 2 close framing (150% per shot list) on the Not Configured pill"
+      },
+      {
+        "t": 28.4,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 130
+      },
+      {
+        "t": 29.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for chips, buttons and tiles"
+      },
+      {
+        "t": 102.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 103.4,
+        "z": 1.32,
+        "cx": 900,
+        "cy": 430,
+        "ease": true,
+        "note": "step 7 close framing on the CREDENTIALS group labels"
+      },
+      {
+        "t": 120.5,
+        "z": 1.32,
+        "cx": 900,
+        "cy": 430
+      },
+      {
+        "t": 121.4,
+        "z": 1.16,
+        "cx": 900,
+        "cy": 700,
+        "ease": true,
+        "note": "step 8 pan down to the operational group headers (kept within the 1080 frame)"
+      },
+      {
+        "t": 143,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the hub navigation to Entra"
+      },
+      {
+        "t": 147.6,
+        "z": 1.28,
+        "cx": 960,
+        "cy": 300,
+        "ease": true,
+        "note": "step 9 frame the Entra header, chips and tile row"
+      },
+      {
+        "t": 163.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the hub (SSO provider cards) and the SCIM page"
+      },
+      {
+        "t": 205,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 206,
+        "z": 1.26,
+        "cx": 1250,
+        "cy": 300,
+        "ease": true,
+        "note": "step 12 frame the Sage tile row incl the Sync Schedule cron tile"
+      },
+      {
+        "t": 219.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the QuickBooks navigation"
+      },
+      {
+        "t": 225,
+        "z": 1.24,
+        "cx": 960,
+        "cy": 300,
+        "ease": true,
+        "note": "step 13 frame the QuickBooks tiles incl Realm"
+      },
+      {
+        "t": 240,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide and calm for the Zoho recap"
+      },
+      {
+        "t": 260.440816,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
+    ],
+    "requiresCloseFraming": true,
+    "completion": {
+      "text": "Integrations — Complete",
+      "from": 258.64,
+      "fadeOutFrames": 10
+    },
+    "captionsBurnClearAt": 258.34
+  },
+  "output": "WC-12-09-integrations-v1.1",
+  "neverClick": [
+    "test connection",
+    "edit configuration",
+    "copy",
+    "instructions",
+    "connect",
+    "disconnect",
+    "save",
+    "save changes",
+    "edit",
+    "configure",
+    "delete",
+    "new record",
+    "new",
+    "add",
+    "reset",
+    "send",
+    "submit",
+    "diagnostics",
+    "sso settings",
+    "logout",
+    "log out now",
+    "ask shyne"
+  ],
+  "preflight": [
+    {
+      "op": "wait-stable",
+      "key": "presettle",
+      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
+      "settleMs": 2000,
+      "timeoutMs": 8000,
+      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
+    },
+    {
+      "op": "click",
+      "target": "railToggle",
+      "pressAt": 0,
+      "hoverMs": 200,
+      "unless": "sidebarExpanded",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: stage the shared persisted settings-submenu preference expanded (washcentral-sidebar-collapsed-v5=false) so step 1's Integrations rail entry is a labelled entry, and every hub navigation click has the rail link on screen"
+    }
+  ]
+}

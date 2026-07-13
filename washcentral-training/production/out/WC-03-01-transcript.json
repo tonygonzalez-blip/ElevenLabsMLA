@@ -1,0 +1,424 @@
+{
+  "lesson": "WC-03-01",
+  "audioMaster": "training/module03-sales/WC-03-01-full-narration-v1.0.mp3",
+  "audioDurationS": 176.431,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "This is where every ticket in the business lands.",
+      "startS": 0,
+      "endS": 2.57,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "On the rail the module says Sales.",
+      "startS": 3.085,
+      "endS": 5.392,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "The page header says Transactions.",
+      "startS": 5.924,
+      "endS": 7.919,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "Same place, two names, so don't let the wording throw you.",
+      "startS": 8.433,
+      "endS": 11.818,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Now the numbers up top.",
+      "startS": 12.24,
+      "endS": 13.518,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "One tile counts every migrated ticket, past a hundred and twenty-six million.",
+      "startS": 13.993,
+      "endS": 18.59,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The other three cover the last thirty days, and right now they read as a dash.",
+      "startS": 19.126,
+      "endS": 23.157,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "A dash means no value loaded, not zero.",
+      "startS": 23.716,
+      "endS": 26.478,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "First card, Ticket Volume.",
+      "startS": 26.88,
+      "endS": 27.553,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "It trends the last twelve months and tells you which way the line is heading.",
+      "startS": 27.969,
+      "endS": 28.877,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "It answers whether business is up, not what any one ticket did.",
+      "startS": 29.36,
+      "endS": 37.39,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p12",
+      "text": "Middle card, By Status.",
+      "startS": 37.84,
+      "endS": 38.593,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p13",
+      "text": "This is the breakdown you'll lean on.",
+      "startS": 38.803,
+      "endS": 39.795,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p14",
+      "text": "Most tickets are paid and washed.",
+      "startS": 40.256,
+      "endS": 44.274,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p15",
+      "text": "A quarter are paid but not yet washed.",
+      "startS": 44.524,
+      "endS": 46.961,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "A small slice is voided.",
+      "startS": 47.23,
+      "endS": 50.162,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "Know the normal split, and the odd day jumps out at you.",
+      "startS": 50.388,
+      "endS": 52.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p18",
+      "text": "Right card, Ticket Health.",
+      "startS": 52.48,
+      "endS": 53.978,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p19",
+      "text": "Three quick percentages: how many paid, how many not washed, how many voided.",
+      "startS": 55.14,
+      "endS": 60.3,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "It's the one-glance pulse for whatever scope you're looking at.",
+      "startS": 60.805,
+      "endS": 63.901,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p21",
+      "text": "Drop to the Search Tickets card.",
+      "startS": 64.378,
+      "endS": 66.046,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p22",
+      "text": "With more than a hundred and twenty-six million tickets underneath, you never scroll blind.",
+      "startS": 66.387,
+      "endS": 69.61,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p23",
+      "text": "Type what you already know, or narrow it with Filters, then search.",
+      "startS": 69.877,
+      "endS": 71.319,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "And keep this straight: this button queries tickets;",
+      "startS": 71.595,
+      "endS": 75.461,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "the Search up in the header jumps between pages.",
+      "startS": 75.724,
+      "endS": 81.36,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p26",
+      "text": "Under that, the ticket list itself.",
+      "startS": 81.76,
+      "endS": 83.74,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "The count on the card is that same hundred-and-twenty-six-million, restated.",
+      "startS": 84.487,
+      "endS": 88.62,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Top-right sits Export.",
+      "startS": 89.364,
+      "endS": 90.886,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "Find it, and leave it.",
+      "startS": 91.444,
+      "endS": 92.509,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "In training we locate the data-out buttons; we don't fire them.",
+      "startS": 93.451,
+      "endS": 97.14,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p31",
+      "text": "Now the columns.",
+      "startS": 97.6,
+      "endS": 98.659,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p32",
+      "text": "Seven of them, each a way to read or sort the list:",
+      "startS": 99.243,
+      "endS": 100.065,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "where it rang up, its number, when, how much,",
+      "startS": 100.416,
+      "endS": 102.583,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "its status, how it was paid, and who it belongs to.",
+      "startS": 103.252,
+      "endS": 104.152,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "Every header sorts, and every row has a checkbox.",
+      "startS": 104.522,
+      "endS": 115.811,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p36",
+      "text": "Take one row.",
+      "startS": 116.361,
+      "endS": 117.447,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "The ticket number is a link.",
+      "startS": 117.951,
+      "endS": 119.372,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "Click it and you'd open that single ticket, which is the next lesson, so leave it alone here.",
+      "startS": 119.768,
+      "endS": 124.643,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "And where Customer shows a dash, no customer was tied to that sale.",
+      "startS": 124.898,
+      "endS": 129.094,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "Glance at the pager.",
+      "startS": 129.597,
+      "endS": 131.066,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Twenty-five to a page, and the last page number sits just past five million.",
+      "startS": 131.945,
+      "endS": 137.104,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "That's the same mountain of tickets said a different way.",
+      "startS": 137.656,
+      "endS": 140.661,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "It's exactly why you filter before you page.",
+      "startS": 141.239,
+      "endS": 144.197,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p44",
+      "text": "Last, the sidebar.",
+      "startS": 144.64,
+      "endS": 146.013,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Nine pages live under Sales, and Tickets is only the first.",
+      "startS": 146.465,
+      "endS": 150.286,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "The rest get their own lessons, Refund Approvals among them.",
+      "startS": 150.728,
+      "endS": 153.994,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "And if you trained on the old system, notice what moved:",
+      "startS": 154.428,
+      "endS": 157.195,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "Adjustments went to Inventory, and refund permissions still run through security levels.",
+      "startS": 157.527,
+      "endS": 162.21,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p49",
+      "text": "That's the Tickets page.",
+      "startS": 162.64,
+      "endS": 164.513,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "Read health from the band and the three cards, filter before you browse,",
+      "startS": 164.513,
+      "endS": 168.905,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "and know the list and where Export sits.",
+      "startS": 168.905,
+      "endS": 171.608,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "Master this one page, and every transaction question you get starts right here.",
+      "startS": 171.608,
+      "endS": 176,
+      "timing": "proportional"
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "lesson": "WC-PB-10",
+  "audioMaster": "training/playbooks/WC-PB-10-full-narration-v1.0.mp3",
+  "audioDurationS": 214.518,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Start in Settings, under Customer Portal.",
+      "startS": 0,
+      "endS": 2.394,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "The hub names the portal and, right beside it, one chip does the heavy lifting: Live.",
+      "startS": 3.031,
+      "endS": 7.507,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "If that chip isn't showing, nobody signs in and the ticket is portal-wide.",
+      "startS": 7.891,
+      "endS": 8.405,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "It is, so keep going.",
+      "startS": 8.991,
+      "endS": 13.58,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p05",
+      "text": "And leave Publish Changes alone.",
+      "startS": 14.145,
+      "endS": 17.68,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "Now the five tiles across the top.",
+      "startS": 18.08,
+      "endS": 20.076,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "Eighteen hundred forty registered members.",
+      "startS": 20.648,
+      "endS": 22.965,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "Two hundred forty-seven logins today.",
+      "startS": 23.316,
+      "endS": 25.46,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p09",
+      "text": "That second number is your triage: members are getting in right now,",
+      "startS": 26.193,
+      "endS": 28.14,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p10",
+      "text": "so this ticket is probably one account.",
+      "startS": 28.384,
+      "endS": 32.426,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p11",
+      "text": "Zero logins on a live portal means the opposite.",
+      "startS": 32.951,
+      "endS": 35.842,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Next, the address.",
+      "startS": 36.32,
+      "endS": 37.701,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Click Copy and compare it to the link the member is using.",
+      "startS": 38.082,
+      "endS": 40.98,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "A stale URL is the most common can't-log-in there is.",
+      "startS": 41.35,
+      "endS": 45.152,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "Then open Preview Portal and try to reproduce what they see.",
+      "startS": 45.527,
+      "endS": 48.773,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p16",
+      "text": "Portal Health backs you up: API connected, certificate valid.",
+      "startS": 49.159,
+      "endS": 50.463,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p17",
+      "text": "The backend is fine.",
+      "startS": 50.877,
+      "endS": 54.605,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Back on the hub, two cards settle most of these tickets.",
+      "startS": 55.093,
+      "endS": 58.004,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Access and Security holds the login rules: phone and email, OTP on, thirty-minute sessions.",
+      "startS": 58.322,
+      "endS": 60.693,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p20",
+      "text": "Features and Modules reads seven of nine enabled.",
+      "startS": 60.982,
+      "endS": 64.135,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p21",
+      "text": "For a missing feature, that line is usually the whole answer.",
+      "startS": 64.472,
+      "endS": 67.134,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p22",
+      "text": "Two modules are just off.",
+      "startS": 67.512,
+      "endS": 72.42,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "Open Access and Security and read the login methods.",
+      "startS": 73.04,
+      "endS": 74.783,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p24",
+      "text": "Phone, yes. Email, yes. Membership number, no. Guest access, no.",
+      "startS": 75.183,
+      "endS": 76.709,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p25",
+      "text": "So the member typing their membership number at sign-in isn't broken,",
+      "startS": 77.563,
+      "endS": 78.745,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p26",
+      "text": "and neither is the portal.",
+      "startS": 79.381,
+      "endS": 80.665,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p27",
+      "text": "That method is switched off.",
+      "startS": 81.173,
+      "endS": 82.129,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p28",
+      "text": "Match how they log in against what's actually enabled.",
+      "startS": 82.421,
+      "endS": 96.034,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p29",
+      "text": "Stay on this tab for the quiet culprit: OTP.",
+      "startS": 96.544,
+      "endS": 98.681,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p30",
+      "text": "A one-time code is required on every login, delivered by SMS, and it dies after ten minutes.",
+      "startS": 99.051,
+      "endS": 99.839,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p31",
+      "text": "A wrong or dead mobile number means the code never lands.",
+      "startS": 100.579,
+      "endS": 106.491,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p32",
+      "text": "The password rules sit just below: eight characters minimum, nothing fancier required.",
+      "startS": 107.125,
+      "endS": 117.28,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p33",
+      "text": "Back on the hub, read Recent Portal Activity.",
+      "startS": 117.68,
+      "endS": 120.638,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p34",
+      "text": "One line is worth the whole feed:",
+      "startS": 121.206,
+      "endS": 123.161,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p35",
+      "text": "three failed login attempts on one account, this morning, from mobile.",
+      "startS": 123.682,
+      "endS": 127.42,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p36",
+      "text": "That names the member, counts the tries, stamps the time, and tells you which channel to test.",
+      "startS": 127.783,
+      "endS": 133.573,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p37",
+      "text": "They're reaching the login and getting rejected.",
+      "startS": 133.923,
+      "endS": 136.228,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p38",
+      "text": "For a mobile-app complaint, switch to Digital and open Mobile App Users.",
+      "startS": 136.761,
+      "endS": 140.994,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p39",
+      "text": "Forty-eight hundred twenty users, more than half on iOS.",
+      "startS": 142.001,
+      "endS": 145.256,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p40",
+      "text": "The list below carries the three columns that explain most app tickets:",
+      "startS": 145.524,
+      "endS": 149.31,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p41",
+      "text": "app version, notifications, and status.",
+      "startS": 149.534,
+      "endS": 152.08,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p42",
+      "text": "Find the member's row.",
+      "startS": 152.48,
+      "endS": 153.786,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p43",
+      "text": "Tom Brown is running four point oh five on Android while others are on four point two one.",
+      "startS": 155.002,
+      "endS": 160.097,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p44",
+      "text": "An out-of-date build explains a login that fails or a feature that never appears.",
+      "startS": 160.698,
+      "endS": 165.345,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p45",
+      "text": "Notifications off explains I never get alerts.",
+      "startS": 166.061,
+      "endS": 169.147,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p46",
+      "text": "And status confirms the account itself is active.",
+      "startS": 169.517,
+      "endS": 172.103,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p47",
+      "text": "Now write it up.",
+      "startS": 172.56,
+      "endS": 173.342,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p48",
+      "text": "Portal live, on the right address.",
+      "startS": 174.098,
+      "endS": 175.904,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p49",
+      "text": "Which login method they used against what's enabled.",
+      "startS": 176.672,
+      "endS": 179.26,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p50",
+      "text": "OTP required, delivered by SMS.",
+      "startS": 179.615,
+      "endS": 182.297,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p51",
+      "text": "The failed-login line with its account, count, time, and channel.",
+      "startS": 182.751,
+      "endS": 186.6,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p52",
+      "text": "For mobile, the app version, notifications, and status.",
+      "startS": 187.078,
+      "endS": 190.462,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p53",
+      "text": "Flipping any of those switches happens in production, never here.",
+      "startS": 190.797,
+      "endS": 194.274,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p54",
+      "text": "That's the flow.",
+      "startS": 194.72,
+      "endS": 195.681,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p55",
+      "text": "Read the Live chip and the logins before you blame one account.",
+      "startS": 196.269,
+      "endS": 199.798,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p56",
+      "text": "Check the login methods and OTP when sign-in fails.",
+      "startS": 200.854,
+      "endS": 204.168,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p57",
+      "text": "Read the activity feed for proof.",
+      "startS": 205.159,
+      "endS": 206.79,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p58",
+      "text": "Check the member's app row when it's mobile.",
+      "startS": 207.913,
+      "endS": 209.927,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p59",
+      "text": "Then route it, with nothing published and nothing saved.",
+      "startS": 210.485,
+      "endS": 214.08,
+      "timing": "silence"
+    }
+  ]
+}

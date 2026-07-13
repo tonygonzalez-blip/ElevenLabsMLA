@@ -1,0 +1,226 @@
+WEBVTT
+
+p01
+00:00:00.000 --> 00:00:03.505
+Open Agent Console from the Service Desk group in the sidebar.
+
+p02
+00:00:04.071 --> 00:00:05.749
+One screen, three panes.
+
+p03
+00:00:06.301 --> 00:00:07.328
+The queue on the left,
+
+p04
+00:00:07.625 --> 00:00:09.206
+the live conversation in the middle,
+
+p05
+00:00:09.522 --> 00:00:11.146
+the customer's details on the right.
+
+p06
+00:00:11.660 --> 00:00:13.840
+No tab-hopping while someone waits on you.
+
+p07
+00:00:14.307 --> 00:00:16.237
+Up in the header, your presence.
+
+p08
+00:00:16.599 --> 00:00:18.571
+It reads Offline right now, and it can be Available, Away, Busy, or Offline.
+
+p09
+00:00:18.834 --> 00:00:20.361
+This is how the desk knows whether you're ready for a contact.
+
+p10
+00:00:20.625 --> 00:00:29.120
+Leave it where your shift set it; we don't touch it here.
+
+p11
+00:00:29.520 --> 00:00:31.025
+Look at the top of the queue.
+
+p12
+00:00:31.518 --> 00:00:33.748
+Three numbers give you the load at a glance:
+
+p13
+00:00:34.016 --> 00:00:38.318
+how many are waiting, the average wait, and how many are flagged high priority.
+
+p14
+00:00:38.599 --> 00:00:39.539
+All zero now.
+
+p15
+00:00:39.780 --> 00:00:40.719
+A calm board.
+
+p16
+00:00:41.205 --> 00:00:42.916
+There's a search box over the queue.
+
+p17
+00:00:43.402 --> 00:00:48.822
+Type a name, a phone number, a plan, or the reason for the handoff, and the list narrows to it.
+
+p18
+00:00:49.719 --> 00:00:53.266
+On a busy shift, that's how you pull one contact out of a crowd.
+
+p19
+00:00:53.788 --> 00:00:55.588
+Three buttons scope the queue.
+
+p20
+00:00:56.043 --> 00:00:57.301
+Mine is yours.
+
+p21
+00:00:57.675 --> 00:00:59.383
+Unassigned is up for grabs.
+
+p22
+00:01:00.235 --> 00:01:02.104
+Team is the whole group's board.
+
+p23
+00:01:02.344 --> 00:01:06.397
+Right now it's set to Team, so you're seeing everything, not only your own.
+
+p24
+00:01:06.889 --> 00:01:08.325
+Below that, the channels.
+
+p25
+00:01:09.109 --> 00:01:09.526
+All,
+
+p26
+00:01:10.014 --> 00:01:10.853
+then Voice,
+
+p27
+00:01:11.305 --> 00:01:12.906
+S-M-S, and Web.
+
+p28
+00:01:13.837 --> 00:01:18.278
+Those last three are the ways a customer reaches you, and All shows them together.
+
+p29
+00:01:18.988 --> 00:01:19.841
+Remember the three:
+
+p30
+00:01:20.260 --> 00:01:20.784
+voice, text,
+
+p31
+00:01:21.105 --> 00:01:22.480
+and web chat.
+
+p32
+00:01:23.000 --> 00:01:24.240
+Open the sort control.
+
+p33
+00:01:24.737 --> 00:01:29.686
+You can work the queue longest wait first, priority first, or most recent first.
+
+p34
+00:01:30.258 --> 00:01:32.504
+Longest wait first is the fair choice;
+
+p35
+00:01:32.903 --> 00:01:35.154
+it clears whoever has been holding the longest.
+
+p36
+00:01:35.561 --> 00:01:37.200
+Close it without changing anything.
+
+p37
+00:01:37.691 --> 00:01:39.702
+Under the filters, the queue itself.
+
+p38
+00:01:40.456 --> 00:01:43.707
+It says no matching handoffs, because nothing is waiting.
+
+p39
+00:01:44.346 --> 00:01:48.339
+When a contact comes in, its row shows up right here for you to pick up.
+
+p40
+00:01:48.800 --> 00:01:50.107
+The middle is empty too.
+
+p41
+00:01:51.360 --> 00:01:54.978
+Select a handoff from the queue, it says, to open its console.
+
+p42
+00:01:55.666 --> 00:01:56.462
+That's the cue.
+
+p43
+00:01:57.256 --> 00:02:00.960
+You click a waiting row, and the conversation loads into this space.
+
+p44
+00:02:01.462 --> 00:02:03.365
+And on the right, the Customer panel.
+
+p45
+00:02:03.805 --> 00:02:05.692
+No conversation selected, for now.
+
+p46
+00:02:06.280 --> 00:02:11.715
+Once you open one, this is where the customer's context sits, so you're never guessing who you're helping.
+
+p47
+00:02:12.160 --> 00:02:13.574
+So why is it all empty?
+
+p48
+00:02:14.433 --> 00:02:18.283
+The queue fills when the AI Agent hands a conversation to a person.
+
+p49
+00:02:18.868 --> 00:02:22.268
+Those escalations land right here, in the Handoff Queue.
+
+p50
+00:02:22.943 --> 00:02:28.878
+The agent side of that is a later lesson; for now, know this is where a handed-off customer waits for you.
+
+p51
+00:02:29.280 --> 00:02:31.081
+One screen, three panes.
+
+p52
+00:02:31.444 --> 00:02:34.432
+The queue you scope by who owns it and by channel,
+
+p53
+00:02:34.812 --> 00:02:37.080
+the console that opens the conversation,
+
+p54
+00:02:37.418 --> 00:02:39.530
+and the customer's context beside it.
+
+p55
+00:02:40.194 --> 00:02:44.456
+Your presence lives in the header, and you leave it alone unless your shift changes.
+
+p56
+00:02:44.984 --> 00:02:46.696
+That's the Agent Console.
+

@@ -1,0 +1,504 @@
+{
+  "lesson": "WC-13-01",
+  "audioMaster": "training/module13-reports-audit/WC-13-01-full-narration-v1.0.mp3",
+  "audioDurationS": 210.207,
+  "method": "silencedetect -32dB/0.28s within known block windows; proportional fallback",
+  "phrases": [
+    {
+      "block": "s01",
+      "id": "p01",
+      "text": "Open the Reports module.",
+      "startS": 0,
+      "endS": 1.495,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p02",
+      "text": "Every figure a client asks you for starts here.",
+      "startS": 2.001,
+      "endS": 4.672,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p03",
+      "text": "A hundred and seventy-three reports, already sorted so you're not digging through a folder.",
+      "startS": 5.277,
+      "endS": 9.902,
+      "timing": "silence"
+    },
+    {
+      "block": "s01",
+      "id": "p04",
+      "text": "The left sidebar is your way in.",
+      "startS": 10.501,
+      "endS": 12.4,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p05",
+      "text": "Start at the top of the sidebar.",
+      "startS": 12.8,
+      "endS": 14.397,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p06",
+      "text": "These five shortcuts are pre-built slices of the same list.",
+      "startS": 14.986,
+      "endS": 18.405,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p07",
+      "text": "The ones you starred, the ones running on a timer, the analytics set.",
+      "startS": 18.715,
+      "endS": 22.573,
+      "timing": "silence"
+    },
+    {
+      "block": "s02",
+      "id": "p08",
+      "text": "When a client wants what they always want, you skip the search and click the view.",
+      "startS": 23.282,
+      "endS": 27.263,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p09",
+      "text": "Below that, nineteen categories.",
+      "startS": 27.68,
+      "endS": 29.843,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p10",
+      "text": "Financial, transactions, employee labor, inventory, and the rest,",
+      "startS": 30.232,
+      "endS": 30.917,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p11",
+      "text": "each with a live count beside it.",
+      "startS": 31.218,
+      "endS": 33.32,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p12",
+      "text": "Some are broad, like transactions with twenty-one reports.",
+      "startS": 33.643,
+      "endS": 35.234,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p13",
+      "text": "Some hold just one, like weather.",
+      "startS": 35.73,
+      "endS": 37.384,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p14",
+      "text": "This is how you turn a wall of reports into the two or three",
+      "startS": 37.894,
+      "endS": 41.38,
+      "timing": "silence"
+    },
+    {
+      "block": "s03",
+      "id": "p15",
+      "text": "that actually answer the question in front of you.",
+      "startS": 41.865,
+      "endS": 50,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p16",
+      "text": "On the right, the list itself.",
+      "startS": 50.465,
+      "endS": 52.365,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p17",
+      "text": "A search box sits above it.",
+      "startS": 53.177,
+      "endS": 54.709,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p18",
+      "text": "Type a few letters of a report's name and the list shrinks to match.",
+      "startS": 55.253,
+      "endS": 59.19,
+      "timing": "silence"
+    },
+    {
+      "block": "s04",
+      "id": "p19",
+      "text": "Faster than paging through four screens when you already know what you're after.",
+      "startS": 59.51,
+      "endS": 63.44,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p20",
+      "text": "Top right, one button: Schedule Report.",
+      "startS": 63.84,
+      "endS": 66.241,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p21",
+      "text": "That's how a report gets put on a timer and mailed out on its own.",
+      "startS": 66.761,
+      "endS": 70.279,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p22",
+      "text": "We're only pointing at it today.",
+      "startS": 70.647,
+      "endS": 72.081,
+      "timing": "silence"
+    },
+    {
+      "block": "s05",
+      "id": "p23",
+      "text": "It sends, so we leave it alone.",
+      "startS": 72.373,
+      "endS": 74.281,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p24",
+      "text": "Now the columns.",
+      "startS": 74.77,
+      "endS": 75.874,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p25",
+      "text": "A star for favorites, the report's name, its category, its type, and when it last ran.",
+      "startS": 76.344,
+      "endS": 77.766,
+      "timing": "silence"
+    },
+    {
+      "block": "s06",
+      "id": "p26",
+      "text": "Five columns tell you what a report is and whether anyone has touched it lately.",
+      "startS": 78.223,
+      "endS": 88.24,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p27",
+      "text": "Look at the Type column.",
+      "startS": 88.64,
+      "endS": 90.026,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p28",
+      "text": "Standard, Scheduled, or Analytics.",
+      "startS": 90.472,
+      "endS": 93.004,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p29",
+      "text": "A dash under Last Run means nobody has run it yet.",
+      "startS": 93.771,
+      "endS": 95.655,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p30",
+      "text": "A date and time means someone did.",
+      "startS": 95.962,
+      "endS": 97.472,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p31",
+      "text": "The daily financial, for instance, has a scheduled twin that last ran in late March.",
+      "startS": 98.041,
+      "endS": 100.061,
+      "timing": "silence"
+    },
+    {
+      "block": "s07",
+      "id": "p32",
+      "text": "And the starred rows are your favorites, one click away in that view up top.",
+      "startS": 100.736,
+      "endS": 109.946,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p33",
+      "text": "Click a report to open it.",
+      "startS": 110.458,
+      "endS": 111.861,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p34",
+      "text": "Take the daily financial.",
+      "startS": 112.312,
+      "endS": 113.577,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p35",
+      "text": "The list steps aside and the report viewer takes over.",
+      "startS": 114.769,
+      "endS": 117.986,
+      "timing": "silence"
+    },
+    {
+      "block": "s08",
+      "id": "p36",
+      "text": "Same idea as opening a file: you picked it, now you're inside it.",
+      "startS": 118.752,
+      "endS": 122.488,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p37",
+      "text": "Across the top, the filters.",
+      "startS": 122.96,
+      "endS": 124.872,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p38",
+      "text": "A location selector, a date range with a from and a to, and a More Filters button for the rest.",
+      "startS": 125.357,
+      "endS": 126.586,
+      "timing": "silence"
+    },
+    {
+      "block": "s09",
+      "id": "p39",
+      "text": "This is where you tell the report which sites and which days before you run it.",
+      "startS": 126.95,
+      "endS": 136.16,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p40",
+      "text": "Two buttons frame it.",
+      "startS": 136.619,
+      "endS": 137.75,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p41",
+      "text": "Run Report renders it.",
+      "startS": 138.391,
+      "endS": 139.784,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p42",
+      "text": "Close Report backs you out.",
+      "startS": 140.42,
+      "endS": 141.94,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p43",
+      "text": "Notice Schedule Report isn't here.",
+      "startS": 142.667,
+      "endS": 144.577,
+      "timing": "silence"
+    },
+    {
+      "block": "s10",
+      "id": "p44",
+      "text": "Scheduling stays on the hub; in here you only run and read.",
+      "startS": 144.974,
+      "endS": 148.866,
+      "timing": "silence"
+    },
+    {
+      "block": "s11",
+      "id": "p45",
+      "text": "Click Run Report.",
+      "startS": 149.28,
+      "endS": 150.217,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p46",
+      "text": "Summary tiles and a table build from the filters you set.",
+      "startS": 150.217,
+      "endS": 154.612,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p47",
+      "text": "Running it only reads the numbers, so nothing is sent and nothing is saved.",
+      "startS": 154.612,
+      "endS": 159.609,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p48",
+      "text": "In the drill, you'll hunt down the per-location and per-shift rows,",
+      "startS": 159.609,
+      "endS": 163.043,
+      "timing": "proportional"
+    },
+    {
+      "block": "s11",
+      "id": "p49",
+      "text": "and the refund column, before you close it.",
+      "startS": 163.043,
+      "endS": 165.541,
+      "timing": "proportional"
+    },
+    {
+      "block": "s12",
+      "id": "p50",
+      "text": "Check the stamp on the result.",
+      "startS": 166,
+      "endS": 167.633,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p51",
+      "text": "It carries the date the report was generated,",
+      "startS": 168.202,
+      "endS": 170.549,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p52",
+      "text": "and in this demo it flags the figures as sample data.",
+      "startS": 170.757,
+      "endS": 173.984,
+      "timing": "silence"
+    },
+    {
+      "block": "s12",
+      "id": "p53",
+      "text": "On a real client tenant that same line reads their live numbers instead.",
+      "startS": 174.977,
+      "endS": 179.135,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p54",
+      "text": "Done reading? Close Report.",
+      "startS": 179.76,
+      "endS": 181.55,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p55",
+      "text": "The viewer folds away and the full list is back, exactly as you left it.",
+      "startS": 182.367,
+      "endS": 186.424,
+      "timing": "silence"
+    },
+    {
+      "block": "s13",
+      "id": "p56",
+      "text": "You ran a report and touched nothing.",
+      "startS": 186.832,
+      "endS": 188.793,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p57",
+      "text": "That's the whole loop.",
+      "startS": 189.2,
+      "endS": 190.382,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p58",
+      "text": "Find a report by view or category, open it,",
+      "startS": 191.049,
+      "endS": 193.139,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p59",
+      "text": "set the location and the dates, run it, read it, close it.",
+      "startS": 193.536,
+      "endS": 194.068,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p60",
+      "text": "When a client swears a report looks wrong, this is the screen you'll share with them.",
+      "startS": 194.416,
+      "endS": 196.027,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p61",
+      "text": "Now you know every control on it,",
+      "startS": 196.328,
+      "endS": 196.749,
+      "timing": "silence"
+    },
+    {
+      "block": "s14",
+      "id": "p62",
+      "text": "and the next lesson takes you into the audit trail behind those numbers.",
+      "startS": 197.082,
+      "endS": 209.76,
+      "timing": "silence"
+    }
+  ]
+}
