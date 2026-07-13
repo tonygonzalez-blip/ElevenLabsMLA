@@ -1315,7 +1315,7 @@
         "anchor": "tokenExpiryRect2",
         "place": "right",
         "from": 150.3,
-        "to": 166.3
+        "to": 165.6
       }
     ],
     "highlights": [
@@ -1475,7 +1475,7 @@
       {
         "anchor": "btns.testBtn",
         "from": 163.98,
-        "to": 166.5,
+        "to": 165.6,
         "color": "#dc2626",
         "note": "step 10 (p54) do-not-click: you never click Test Connection to know where you stand"
       }
