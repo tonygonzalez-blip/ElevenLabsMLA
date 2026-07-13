@@ -16,8 +16,27 @@ ensure() {
   if curl -s --max-time 3 "http://127.0.0.1:$port/json/version" >/dev/null 2>&1; then
     local running_proxy
     running_proxy=$(ps -eo args | grep "remote-debugging-port=$port" | grep -v grep | grep -oE 'proxy-server=[^ ]+' | head -1 | cut -d= -f2-)
-    if [ "$running_proxy" = "$HTTPS_PROXY" ]; then return 0; fi
-    echo "[stages] $port up but on stale proxy '$running_proxy' (current '$HTTPS_PROXY'); relaunching"
+    if [ "$running_proxy" = "$HTTPS_PROXY" ]; then
+      # Up + correct proxy, but the SHARED demo profile can still be signed OUT: a session timeout,
+      # an idle "Still there?" lapse, or a stray login-tab navigation de-auths it, and the app then
+      # bounces every page to login.html — the lesson records/rehearses a login screen or dies
+      # UNSTYLED. Verify the session is live (command-center stays put, does not bounce to login) and
+      # re-sign IN PLACE if it dropped, without relaunching Chrome (localStorage survives the re-auth).
+      if CDP_HTTP="http://127.0.0.1:$port" node -e '
+        import("'"$PWD"'/tools/cdp-lib.mjs").then(async ({CDP,sleep})=>{
+          const c=await CDP.connect("new",process.env.CDP_HTTP);
+          await c.navigate("https://demo.washcentral.com/command-center.html",1200); await sleep(800);
+          const p=await c.eval("location.pathname"); await c.close();
+          process.exit(/command-center/.test(p)?0:1);
+        }).catch(()=>process.exit(1));' >/dev/null 2>&1; then
+        return 0
+      fi
+      echo "[stages] $port up but signed OUT; re-signing in place"
+      for a in 1 2 3; do CDP_HTTP="http://127.0.0.1:$port" node "$SCRATCH/signin-token.mjs" >/dev/null 2>&1 && { echo "[stages] $port re-signed"; return 0; }; sleep $((a*2)); done
+      echo "[stages] $port re-sign FAILED; relaunching"
+    else
+      echo "[stages] $port up but on stale proxy '$running_proxy' (current '$HTTPS_PROXY'); relaunching"
+    fi
   fi
   echo "[stages] $port down; relaunching on display $disp (proxy $HTTPS_PROXY)"
   pgrep -f "remote-debugging-port=$port" >/dev/null && pkill -f "remote-debugging-port=$port" && sleep 1
