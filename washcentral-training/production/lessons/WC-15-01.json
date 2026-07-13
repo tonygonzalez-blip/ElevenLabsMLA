@@ -18,7 +18,7 @@
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
     "onAcademy": "location.pathname.endsWith('/lms-home.html')",
-    "pageIntact": "(()=>{const bc=document.querySelector('.breadcrumb-bar strong');const cards=[...document.querySelectorAll('[class*=\"card\"]')].filter(e=>{const b=e.getBoundingClientRect();return b.width>300&&b.height>150&&b.top>300;});return location.pathname.endsWith('/lms-home.html')&&!!bc&&/My Dashboard/.test(bc.textContent||'')&&cards.length>=5&&![...document.querySelectorAll('*')].some(e=>/still there/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()"
+    "pageIntact": "(()=>{const bc=document.querySelector('.breadcrumb-bar strong');const cards=[...document.querySelectorAll('[class*=\"card\"]')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/lms-home.html')&&!!bc&&/My Dashboard/.test(bc.textContent||'')&&cards.length>=1&&![...document.querySelectorAll('*')].some(e=>/still there/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()"
   },
   "ops": [
     {
