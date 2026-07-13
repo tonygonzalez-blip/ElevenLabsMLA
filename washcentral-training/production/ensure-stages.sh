@@ -7,7 +7,18 @@ SCRATCH=/tmp/claude-0/-home-user-ElevenLabsMLA/c863f169-463c-5c4e-816e-9ce248227
 CHROME=/opt/pw-browsers/chromium-1194/chrome-linux/chrome
 ensure() {
   local disp=$1 port=$2 prof=$3
-  curl -s --max-time 3 "http://127.0.0.1:$port/json/version" >/dev/null 2>&1 && return 0
+  # A stage whose debug port answers can still be DEAD for egress: a container restart rotates the
+  # egress proxy port, but the already-running Chrome keeps its launch-time --proxy-server=<oldport>.
+  # Its /json endpoint (local, no egress) still answers, so a naive up-check skips it — then every
+  # site fetch fails and EVERY lesson dies UNSTYLED (styles.css never loads). So the up-check must
+  # also confirm the running Chrome's proxy matches the CURRENT $HTTPS_PROXY; a stale-proxy stage is
+  # treated as down and relaunched fresh below (which also rewrites --proxy-server to the live port).
+  if curl -s --max-time 3 "http://127.0.0.1:$port/json/version" >/dev/null 2>&1; then
+    local running_proxy
+    running_proxy=$(ps -eo args | grep "remote-debugging-port=$port" | grep -v grep | grep -oE 'proxy-server=[^ ]+' | head -1 | cut -d= -f2-)
+    if [ "$running_proxy" = "$HTTPS_PROXY" ]; then return 0; fi
+    echo "[stages] $port up but on stale proxy '$running_proxy' (current '$HTTPS_PROXY'); relaunching"
+  fi
   echo "[stages] $port down; relaunching on display $disp (proxy $HTTPS_PROXY)"
   pgrep -f "remote-debugging-port=$port" >/dev/null && pkill -f "remote-debugging-port=$port" && sleep 1
   # A container restart / egress-proxy rotation can leave an opaque (cross-origin-tagged) styles.css
