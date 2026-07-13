@@ -1095,11 +1095,11 @@
       "to": {
         "target": "rowTunnel",
         "offset": [
-          1350,
+          674,
           0
         ]
       },
-      "note": "step 8 (p42): 'conveyor belt tension past its threshold, still active' — across to the Active status"
+      "note": "step 8 (p42): 'conveyor belt tension past its threshold, still active' — across to the Active status (Status column cx 1791; row cx 1117 + 674, on-screen)"
     },
     {
       "op": "move",
@@ -1119,11 +1119,11 @@
       "to": {
         "target": "rowPOS",
         "offset": [
-          850,
+          340,
           0
         ]
       },
-      "note": "step 8 (p44): receipt paper running low on a P-O-S at S-S-N-B"
+      "note": "step 8 (p44): receipt paper running low on a P-O-S at S-S-N-B (Message column cx 1456; row cx 1117 + 340, on-screen)"
     },
     {
       "op": "move",
@@ -1131,11 +1131,11 @@
       "to": {
         "target": "rowChemical",
         "offset": [
-          850,
+          340,
           0
         ]
       },
-      "note": "step 8 (p45): a chemical tank under twenty percent at Piscataway"
+      "note": "step 8 (p45): a chemical tank under twenty percent at Piscataway (Message column cx 1456; row cx 1117 + 340, on-screen)"
     },
     {
       "op": "move",
@@ -1155,11 +1155,11 @@
       "to": {
         "target": "rowTunnel",
         "offset": [
-          1350,
+          674,
           0
         ]
       },
-      "note": "step 8 (p47): 'Three rows still active' — sweep the three Active statuses"
+      "note": "step 8 (p47): 'Three rows still active' — sweep the three Active statuses (Status column cx 1791; row cx 1117 + 674, on-screen)"
     },
     {
       "op": "move",
@@ -1167,11 +1167,11 @@
       "to": {
         "target": "rowChemical",
         "offset": [
-          1350,
+          674,
           0
         ]
       },
-      "note": "step 8 (p47): down the Active column"
+      "note": "step 8 (p47): down the Active column (Status column cx 1791; row cx 1117 + 674, on-screen)"
     },
     {
       "op": "move",
