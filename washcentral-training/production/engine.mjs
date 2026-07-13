@@ -194,7 +194,12 @@ class Engine {
     try {
       if (op.op === 'assert') {
         await this.waitUntil(Math.max(0, op.at ?? 0));
-        entry.verifiedT = await this.waitPredicate(op.predicate, 2500, op.predicate);
+        // Default 5000ms (was a hardcoded 2500): the site's data endpoints load slower after the
+        // redesign, so page-load asserts (homeLoaded, pageIntact, list-loaded, etc.) need more
+        // headroom. Passing lessons meet their predicate in well under 2.5s, so a higher ceiling
+        // never changes their behavior; it only rescues genuinely-slow data loads and lets a
+        // per-op timeoutMs override where a page is exceptionally slow.
+        entry.verifiedT = await this.waitPredicate(op.predicate, op.timeoutMs ?? 5000, op.predicate);
       } else if (op.op === 'pointer-enter') {
         await this.waitUntil(op.at);
         this.pointer = op.from;
