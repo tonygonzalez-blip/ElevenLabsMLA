@@ -214,7 +214,12 @@ add(26, 'no unexplained cursor reversal', true, 'pointer path is a single eased 
 // crm-customers, maint-issues, etc. — so this checks "not a login screen", not "is command-center".)
 add(27, 'no login screen', events.ops.every(o => o.error == null || !/login/i.test(o.error)) && !/login/i.test(L.startUrl), 'flow never touches a sign-in screen (start page is a signed-in app page, not login.html)');
 add(28, 'no credential on screen', true, 'signed in off-camera via token flow; no credential UI in capture region');
-add(29, 'no session-expiration dialog', menuWatch ? menuWatch.samples.every(s => s.ok) : true, 'idle dialog not encountered; menu watch clean');
+// A session-expiration ("Still there?") dialog would obscure the sidebar/menu for many consecutive
+// samples, so it shows up as the first mustHold watch failing to hold. Use the watch's tolerance-
+// aware `held` verdict (same as check 16) rather than a raw every-sample scan: an isolated post-
+// navigation transient (1 sample, within holdTolerance) is not a session dialog, but a real dialog
+// fails a long run of consecutive samples and still trips `held=false`.
+add(29, 'no session-expiration dialog', menuWatch ? menuWatch.held : true, menuWatch && !menuWatch.held ? `first hold-watch '${menuWatch.key}' did not hold (possible idle dialog)` : 'idle dialog not encountered; menu watch held');
 const forbidden = (L.neverClick || ['logout']).concat(['logout']);
 // neverClick entries are a mix of intentional regexes (e.g. "\\bnew\\b", "log ?out") and literal
 // control labels (e.g. "+ add customer") where a leading + is an invalid quantifier. Compile as a
