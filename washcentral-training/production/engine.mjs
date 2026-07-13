@@ -199,8 +199,15 @@ class Engine {
         await this.waitUntil(op.at);
         this.pointer = op.from;
         await this.dispatchMove(op.from[0], op.from[1]);
-        const tgt = await this.resolve(op.to.target);
-        const to = [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];
+        // enter to a fixed point or to a resolved target (same `to` shape as the move op)
+        let to;
+        if (op.to.point) to = op.to.point;
+        else {
+          const tgt = await this.resolve(op.to.target, { allowDisabled: true, stable: false });
+          to = op.to.outside
+            ? [tgt.rect.x + (op.to.offset?.[0] || 0), tgt.rect.y + (op.to.offset?.[1] || 0)]
+            : [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];
+        }
         entry.from = op.from; entry.to = to;
         await this.glideTo(to);
       } else if (op.op === 'move') {
