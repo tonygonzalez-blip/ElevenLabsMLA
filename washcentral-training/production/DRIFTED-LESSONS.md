@@ -72,3 +72,25 @@ live UI. These CANNOT be produced without re-recording narration (user sign-off)
 - WC-00-02 — sign-in lesson; login.html de-auths the shared profile (needs sequencing).
 - WC-09-02 — mobile pages (mobile-users / settings-mobile-branding) don't render their app shell in
   headless Chrome; likely needs a mobile viewport/UA or is a demo-site limitation.
+
+## Config-drift batch findings (agent, 2026-07-13)
+- **Stage-visibility artifact (not lesson drift):** a rehearse tab that is backgrounded
+  (`document.hidden`, e.g. when stage 9224 accumulates many tabs) does NOT build CRM/LMS app-page
+  sidebars or dashboards (`initAppBar` is visibility-gated). Settings/audit/reports pages build fine
+  hidden. The daemon's isolated single-foreground-tab stages (9222/9223) are unaffected — so a
+  lesson that only fails a rehearse on a polluted 9224 is not necessarily drifted.
+- **WC-13-02** — FIXED (no change; transient). **WC-02-03** — settle/retry gate added
+  (`detailSidebarReady`), verify on daemon stage. **WC-14-01** — NOT drifted (visibility artifact +
+  shared-pref race); the `#wc-rail-panel-toggle` expand mechanism is current.
+- **WC-PB-01/02/03/08/09/10 — BLOCKED: need re-authoring for the sw-app Settings redesign.**
+  `settings.html` home is now the `app sw-app` launcher (16 `.sw-cat` categories + `.sw-body` links);
+  the classic `aside.sidebar` is `display:none` there and **`.sh-card` is GONE (0 present)** — so
+  `usersCard`/`hwCard`/`autoAccordion`/`setAutomationHdr`/`submenuOverview`/`usersHeader` all target
+  removed/hidden elements. The classic 17-group sidebar (`button.menu-header`+`.submenu a`, close via
+  `a.menu-header.settings-close-btn` "Exit settings") works only on `settings-*.html` SUB-pages.
+  Customer-portal hub uses `a.a-chart-card` (Branding, Features, Access & Security, Content). WC-PB-01
+  also references undefined targets/predicates (usersHeader/usersSubmenuClosed/usersSubmenuOpen/
+  linkSystemUsers). Narration names destination pages, so faithful fixes exist but require reworking
+  the click choreography (launcher rail→body, or relocate group-expand onto a sub-page) + targets +
+  predicates — a re-authoring, not a selector swap. Risk of narration/timing/callout desync; do NOT
+  blind-rewrite.
