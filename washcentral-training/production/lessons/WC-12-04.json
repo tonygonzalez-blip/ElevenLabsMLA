@@ -4,14 +4,14 @@
   "audioMaster": "training/module12-settings/WC-12-04-full-narration-v1.0.mp3",
   "audioDurationS": 197.486,
   "tailS": 0.4,
-  "startUrl": "https://demo.washcentral.com/settings.html",
+  "startUrl": "https://demo.washcentral.com/settings-account-info.html",
   "viewport": [
     1920,
     1080
   ],
   "targets": {
     "railToggle": {
-      "selector": ".wc-rail-panel-toggle"
+      "selector": "#wc-rail-panel-toggle"
     },
     "pfHeader": {
       "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/payments\\s*&\\s*finance/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
@@ -131,7 +131,7 @@
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onSettingsStart": "location.pathname.endsWith('/settings-account-info.html')",
     "onPaymentTypes": "location.pathname.endsWith('/settings-payment-types.html')",
     "onDiscounts": "location.pathname.endsWith('/settings-discounts.html')",
     "onDiscountTypes": "location.pathname.endsWith('/settings-discount-types.html')",
@@ -141,9 +141,9 @@
     "onTaxRates": "location.pathname.endsWith('/settings-tax-rates.html')",
     "onGLCodes": "location.pathname.endsWith('/settings-gl-codes.html')",
     "onGLAccountCodes": "location.pathname.endsWith('/settings-gl-account-codes.html')",
-    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
-    "pfSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Payment Types|Discounts|Discount Types|Surcharges|Surcharge Types|Payout Percentage|Tax Rates|General Ledger Codes|GL Account Codes)$/.test((e.textContent||'').trim())).length>=9",
-    "pfSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Payment Types|Discounts|Discount Types|Surcharges|Surcharge Types|Payout Percentage|Tax Rates|General Ledger Codes|GL Account Codes)$/.test((e.textContent||'').trim())).length===0",
+    "sidebarExpanded": "[...document.querySelectorAll('button.menu-header')].some(e=>e.getBoundingClientRect().width>120)",
+    "pfSubmenuOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/payments\\s*&\\s*finance/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
+    "pfSubmenuClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/payments\\s*&\\s*finance/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
     "paymentTypesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-payment-types.html')&&rows.length>=9&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
     "discountsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-discounts.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
     "discountTypesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-discount-types.html')&&rows.length>=1&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')})()",
@@ -158,8 +158,8 @@
     {
       "op": "assert",
       "at": -1.5,
-      "predicate": "onSettingsHome",
-      "note": "start page staged before capture"
+      "predicate": "onSettingsStart",
+      "note": "start page staged before capture: a neutral Settings sub-page (settings-account-info.html) whose redesigned rail nav is live; the settings.html home no longer renders a usable settings sidebar"
     },
     {
       "op": "assert",
@@ -2173,14 +2173,6 @@
   ],
   "preflight": [
     {
-      "op": "wait-stable",
-      "key": "presettle",
-      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
-      "settleMs": 2000,
-      "timeoutMs": 8000,
-      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
-    },
-    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -2188,7 +2180,7 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: stage the shared persisted sidebar preference expanded before the take"
+      "note": "off-camera: genuine press on #wc-rail-panel-toggle removes .app.sidebar-collapsed so the settings menu panel is expanded before the take; skipped when the shared persisted state already loads expanded"
     },
     {
       "op": "click",

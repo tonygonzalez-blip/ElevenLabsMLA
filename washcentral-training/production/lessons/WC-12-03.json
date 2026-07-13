@@ -4,17 +4,17 @@
   "audioMaster": "training/module12-settings/WC-12-03-full-narration-v1.0.mp3",
   "audioDurationS": 291.318,
   "tailS": 0.4,
-  "startUrl": "https://demo.washcentral.com/settings.html",
+  "startUrl": "https://demo.washcentral.com/settings-service-types.html",
   "viewport": [
     1920,
     1080
   ],
   "targets": {
     "railToggle": {
-      "selector": ".wc-rail-expand-toggle"
+      "selector": "#wc-rail-panel-toggle"
     },
     "svcGroupHeader": {
-      "js": "[...document.querySelectorAll('button.menu-header')].find(b=>/^\\s*Services\\s*[▾▸]?\\s*$/i.test((b.textContent||'').trim())&&b.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('button.menu-header')].find(b=>/^\\s*Services/i.test((b.textContent||'').trim())&&b.getBoundingClientRect().width>0)"
     },
     "linkServices": {
       "js": "[...document.querySelectorAll('.submenu a')].find(a=>/^Services$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)"
@@ -134,11 +134,11 @@
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
+    "onSettingsStart": "location.pathname.endsWith('/settings-service-types.html')",
     "onServices": "location.pathname.endsWith('/settings-services.html')",
     "onServiceDetail": "location.pathname.endsWith('/settings-service-detail.html')",
-    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar,.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
-    "servicesGroupOpen": "[...document.querySelectorAll('.submenu a')].some(a=>/^Services$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)",
+    "sidebarExpanded": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*Services/i.test((e.textContent||'').trim()));return !!h&&h.getBoundingClientRect().width>120})()",
+    "servicesGroupOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/^\\s*Services/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
     "servicesLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=[...document.querySelectorAll('*')].some(e=>e.children.length===0&&/–\\s*\\d+\\s*of\\s*[\\d,]+/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0);const err=[...document.querySelectorAll('td')].some(e=>/Couldn.t load services|Failed to fetch/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-services.html')&&rows.length>=10&&pi&&!err})()",
     "detailLoaded": "(()=>{const tabs=[...document.querySelectorAll('button.a-tab-btn')].filter(b=>b.getBoundingClientRect().width>0).map(b=>(b.textContent||'').trim());const grp=[...document.querySelectorAll('*')].some(e=>e.children.length===0&&/^Basic Information$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-service-detail.html')&&tabs.includes('Service Main')&&tabs.includes('Active Locations')&&grp})()",
     "alTabActive": "[...document.querySelectorAll('button.a-tab-btn')].some(b=>/Active Locations/.test(b.textContent||'')&&b.classList.contains('active'))",
@@ -150,8 +150,8 @@
     {
       "op": "assert",
       "at": -1.6,
-      "predicate": "onSettingsHome",
-      "note": "start page staged: settings home before capture"
+      "predicate": "onSettingsStart",
+      "note": "start page staged before capture: a Settings sub-page in the Services group (settings-service-types.html) whose redesigned rail nav is live; the settings.html home no longer renders a usable settings sidebar"
     },
     {
       "op": "assert",
@@ -1705,14 +1705,6 @@
   ],
   "preflight": [
     {
-      "op": "wait-stable",
-      "key": "presettle",
-      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
-      "settleMs": 2000,
-      "timeoutMs": 8000,
-      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
-    },
-    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -1720,7 +1712,7 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: ensure the settings sidebar is expanded before the take (persisted washcentral-sidebar-collapsed-v5); skipped when already expanded"
+      "note": "off-camera: genuine press on #wc-rail-panel-toggle removes .app.sidebar-collapsed so the settings menu panel is expanded before the take; skipped when the shared persisted state already loads expanded"
     },
     {
       "op": "click",
@@ -1730,7 +1722,7 @@
       "unless": "servicesGroupOpen",
       "postcondition": "servicesGroupOpen",
       "timeoutMs": 4000,
-      "note": "off-camera: expand the Services group on settings home so step 1's 'open Services' is a single genuine click on the Services link"
+      "note": "off-camera: genuine toggle click expands the Services group so its six links are on screen and step 1's 'open Services' is a single genuine click on the Services link; skipped when the group already persists open"
     }
   ]
 }
