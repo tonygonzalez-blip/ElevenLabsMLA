@@ -320,6 +320,10 @@ class Engine {
         const stableT = +this.now().toFixed(3);
         this.log.stability[op.key] = { navPressT: nav?.pressT ?? null, readyT: tReady, stableT };
         entry.stableT = stableT;
+      } else if (op.op === 'log') {
+        // documentation-only annotation (e.g. a builder's note in preflight explaining why no
+        // staging is needed); carries no action. Record the note for the event log and do nothing.
+        entry.note = op.note;
       } else throw new Error(`unknown op ${op.op}`);
       entry.ok = true;
     } catch (e) {
