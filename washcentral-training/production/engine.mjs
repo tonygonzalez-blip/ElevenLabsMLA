@@ -101,7 +101,7 @@ class Engine {
   constructor(cdp, log) { this.cdp = cdp; this.log = log; this.pointer = [960, 1079]; this.watchers = []; }
   now() { return (Date.now() - this.t0) / 1000; }
   async evalRO(expr) { return this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${expr}); })()`); }
-  async resolve(name, { requireStableMs = 160, allowDisabled = false } = {}) {
+  async resolve(name, { requireStableMs = 160, allowDisabled = false, stable = true } = {}) {
     const t = L.targets[name];
     if (!t) throw new Error(`unknown target ${name}`);
     const one = async () => this.cdp.eval(`(() => { ${PROBE_PRELUDE} return (${resolveJS(t)}); })()`);
@@ -110,7 +110,11 @@ class Engine {
     await sleep(Math.max(60, requireStableMs / 2));
     const b = await one();
     if (!b) throw new Error(`target vanished during stability check: ${name}`);
-    if (Math.abs(a.rect.x - b.rect.x) > 2 || Math.abs(a.rect.y - b.rect.y) > 2) throw new Error(`target rect unstable: ${name}`);
+    // stable=false: tolerate a wobbling rect (used by hover `move` ops, which only position the
+    // cursor and never press — a metric tile or button that reflows a few px while its data loads
+    // must not abort the lesson). Presses (click via resolveRetry) keep stable=true so a real
+    // press only ever lands on a settled target.
+    if (stable && (Math.abs(a.rect.x - b.rect.x) > 2 || Math.abs(a.rect.y - b.rect.y) > 2)) throw new Error(`target rect unstable: ${name}`);
     if (!b.visible) throw new Error(`target not visible: ${name}`);
     if (b.disabled && !allowDisabled) throw new Error(`target disabled: ${name}`);
     return b;
@@ -204,8 +208,9 @@ class Engine {
         let to;
         if (op.to.point) to = op.to.point;
         else {
-          // moves point at things; a natively-disabled control (pager on page 1) is fine to point at
-          const tgt = await this.resolve(op.to.target, { allowDisabled: true });
+          // moves point at things; a natively-disabled control (pager on page 1) is fine to point at,
+          // and a reflowing target is fine to hover near (stable=false — a hover never presses)
+          const tgt = await this.resolve(op.to.target, { allowDisabled: true, stable: false });
           to = op.to.outside
             ? [tgt.rect.x + (op.to.offset?.[0] || 0), tgt.rect.y + (op.to.offset?.[1] || 0)]
             : [tgt.cx + (op.to.offset?.[0] || 0), tgt.cy + (op.to.offset?.[1] || 0)];
