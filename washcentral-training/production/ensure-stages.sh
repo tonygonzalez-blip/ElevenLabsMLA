@@ -22,9 +22,13 @@ ensure() {
       # bounces every page to login.html — the lesson records/rehearses a login screen or dies
       # UNSTYLED. Verify the session is live (command-center stays put, does not bounce to login) and
       # re-sign IN PLACE if it dropped, without relaunching Chrome (localStorage survives the re-auth).
+      # Reuse the EXISTING tab (connect 'first'), never 'new': cdp-lib.close() only closes the
+      # WebSocket, not the browser tab, so a per-produce connect('new') leaks a tab every run —
+      # dozens accumulate, the daemon's connect('first') rehearse/record tab gets backgrounded, and
+      # visibility-gated app pages (CRM sidebar, LMS dashboard) never build → mass rehearse failures.
       if CDP_HTTP="http://127.0.0.1:$port" node -e '
         import("'"$PWD"'/tools/cdp-lib.mjs").then(async ({CDP,sleep})=>{
-          const c=await CDP.connect("new",process.env.CDP_HTTP);
+          const c=await CDP.connect("first",process.env.CDP_HTTP);
           await c.navigate("https://demo.washcentral.com/command-center.html",1200); await sleep(800);
           const p=await c.eval("location.pathname"); await c.close();
           process.exit(/command-center/.test(p)?0:1);
