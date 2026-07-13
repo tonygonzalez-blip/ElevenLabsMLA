@@ -94,3 +94,17 @@ live UI. These CANNOT be produced without re-recording narration (user sign-off)
   the click choreography (launcher rail→body, or relocate group-expand onto a sub-page) + targets +
   predicates — a re-authoring, not a selector swap. Risk of narration/timing/callout desync; do NOT
   blind-rewrite.
+
+## LMS / Academy lessons — lms-home idle-modal blocker (2026-07-13)
+WC-14-01, WC-14-02, WC-15-01 start on / touch `lms-home.html`. In this headless environment the
+LMS page surfaces a full-screen "Still there?" session-idle modal (fixed overlay, visible) that
+CANNOT be dismissed: synthetic click, real CDP click on "Stay Logged In"/"Stay Active", re-sign via
+signin-token, localStorage clear + fresh login, and a fresh Chrome relaunch all leave it up on
+lms-home (command-center is clean after fresh login — the modal is lms-home-specific). The token
+sign-in authenticates the main app but the LMS/Academy page still shows the modal, blocking the
+pre-roll pageIntact/dashLoaded asserts. No module-14 lesson has ever produced. Additional per-lesson
+drift also present: WC-14-01 dashLoaded expected 4 .lms-stat (still 4) + .lms-hero (GONE) + 6
+.lms-course-card (GONE, now ~2 generic cards); WC-14-02 sideAdminDash link covered by a bare full-
+page DIV; WC-15-01 pageIntact card-count relaxed (committed) but still blocked by the modal.
+Classify as an environment/demo-site limitation (same class as WC-09-02 mobile pages) pending a way
+to keep the LMS session alive or dismiss the modal.
