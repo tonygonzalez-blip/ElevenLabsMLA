@@ -21,11 +21,26 @@ real total pages now 95), right pane `.sw-body`.
   `.sh-grid`, `.sh-card`, `settingsHomeReady`) that the redesign DELETED. Real total is 95 and there
   is no aggregate counter. Cannot be produced faithfully without RE-RECORDING narration = user
   sign-off required (same class as WC-01-03). Do NOT fake the number.
-- **WC-12-02..08** — start on settings.html and operate the sidebar there; re-author to relocate the
-  group-expand onto the relevant sub-page using the mechanism above. Narration does NOT reference the
-  deleted home elements (checked), so they are re-authorable without re-narration.
-- **WC-12-09** — starts on a sub-page (settings-integrations-zoho.html); fails a later `groupsCollapsed`
-  assert — re-author with the sub-page group mechanism.
+- **WC-12-02 — BLOCKED (needs user decision). Detail-page tab redesign.** The nav relocation works,
+  but the location record (settings-account-info-detail) was rebuilt from **5 tabs to 10** with new
+  labels ("Company Details", "Address & Contact", "Time & Scheduling", "Operations & Features",
+  "Payments & Refunds", "Portal & Online", "Messages & Notifications", "VIP & Memberships",
+  "Employee & Security", "House Accounts & Misc"). The LOCKED narration explicitly says "One location,
+  **five tabs**. Profile, Operations, Payments and Credentials, Messaging, and Users" and "one
+  **five-tab** record" and walks each by name (s04–s09). You cannot re-point a selector when the
+  narration names AND counts the tabs — producing it shows 10 renamed tabs under "five tabs: Profile,
+  Operations…". Re-record required = user sign-off. Do NOT fake.
+- **WC-12-03..08** — relocate the group-expand onto the relevant sub-page (mechanism above). CAUTION:
+  a lesson that opens a RECORD and narrates its tabs by name/count is a re-narration blocker if that
+  detail page was tab-redesigned — verify the live tabs match the narration before producing (a
+  selector re-point that clicks a renamed tab ships an UNFAITHFUL video; rehearse won't catch it).
+  List-only tours (12-05 hardware, 12-06 users, 12-07 operations — no tab-naming) are safely fixable.
+  12-03 (service detail: narration "two tabs, Service Main and Active Locations"), 12-04 (payment
+  detail: "an Active Locations tab"), 12-08 (portal/AI: "Three tabs… Authentication… five tabs") are
+  HELD pending live-tab verification.
+- **WC-12-09** — starts on settings-integrations-zoho.html; live tabs are **"Settings" + "Instructions"**,
+  which MATCH the narration ("two tabs… Settings tab") — NOT a tab blocker. The `groupsCollapsed`
+  assert failure is a sub-page group-predicate issue; re-author the predicate and it is producible.
 
 ## Other drifted lessons
 - **WC-09-02** (Digital: Mobile App Pages) — mobile-users.html / settings-mobile-branding.html do not
