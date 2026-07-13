@@ -204,7 +204,7 @@
     },
     {
       "op": "assert",
-      "at": -1.0,
+      "at": -1,
       "predicate": "pageReady",
       "note": "command-center settled, no skeletons"
     },
@@ -226,7 +226,7 @@
     },
     {
       "op": "log-rect",
-      "at": 1.0,
+      "at": 1,
       "key": "railRect",
       "target": "railAcademy",
       "requireStableMs": 150
@@ -327,7 +327,8 @@
       "to": 228,
       "predicate": "sidebarExpanded",
       "everyMs": 2000,
-      "mustHold": true
+      "mustHold": true,
+      "holdTolerance": 1
     },
     {
       "op": "watch",
@@ -374,7 +375,7 @@
     },
     {
       "op": "move",
-      "at": 9.0,
+      "at": 9,
       "to": {
         "target": "toolAsk",
         "offset": [
@@ -433,7 +434,7 @@
     },
     {
       "op": "move",
-      "at": 16.0,
+      "at": 16,
       "to": {
         "target": "sideMyDash",
         "offset": [
@@ -446,7 +447,7 @@
     },
     {
       "op": "move",
-      "at": 19.0,
+      "at": 19,
       "to": {
         "target": "sideCatalog",
         "offset": [
@@ -459,7 +460,7 @@
     },
     {
       "op": "move",
-      "at": 24.0,
+      "at": 24,
       "to": {
         "target": "sideMyLearning",
         "offset": [
@@ -485,7 +486,7 @@
     },
     {
       "op": "move",
-      "at": 30.0,
+      "at": 30,
       "to": {
         "target": "sideAdminDash",
         "offset": [
@@ -516,7 +517,7 @@
     },
     {
       "op": "move",
-      "at": 35.0,
+      "at": 35,
       "to": {
         "target": "tileEnrolled",
         "offset": [
@@ -528,7 +529,7 @@
     },
     {
       "op": "move",
-      "at": 37.0,
+      "at": 37,
       "to": {
         "target": "tileEnrolled",
         "offset": [
@@ -552,7 +553,7 @@
     },
     {
       "op": "move",
-      "at": 38.0,
+      "at": 38,
       "to": {
         "target": "tileHours",
         "offset": [
@@ -924,7 +925,7 @@
     },
     {
       "op": "log-rect",
-      "at": 127.0,
+      "at": 127,
       "key": "myAchHdrRect",
       "target": "myAchHdr",
       "requireStableMs": 150
@@ -1065,7 +1066,7 @@
     },
     {
       "op": "log-rect",
-      "at": 158.0,
+      "at": 158,
       "key": "quickPanelRect",
       "target": "quickPanel",
       "requireStableMs": 150
@@ -1226,7 +1227,7 @@
     },
     {
       "op": "move",
-      "at": 195.0,
+      "at": 195,
       "to": {
         "point": [
           960,
@@ -1346,21 +1347,21 @@
         "n": 1,
         "anchor": "crumbBarRect",
         "place": "below-left",
-        "from": 7.0,
+        "from": 7,
         "to": 15.4
       },
       {
         "n": 2,
         "anchor": "acadLblRect",
         "place": "right",
-        "from": 16.0,
+        "from": 16,
         "to": 34.5
       },
       {
         "n": 3,
         "anchor": "statBarRect",
         "place": "below-left",
-        "from": 35.0,
+        "from": 35,
         "to": 53.7
       },
       {
@@ -1374,7 +1375,7 @@
         "n": 5,
         "anchor": "heroRect",
         "place": "below-left",
-        "from": 71.0,
+        "from": 71,
         "to": 89.2
       },
       {
@@ -1388,7 +1389,7 @@
         "n": 7,
         "anchor": "courseGridRect",
         "place": "below-left",
-        "from": 113.0,
+        "from": 113,
         "to": 126.8
       },
       {
@@ -1423,7 +1424,7 @@
         "n": 12,
         "anchor": "startCourseRect2",
         "place": "left",
-        "from": 195.0,
+        "from": 195,
         "to": 211.5
       },
       {
@@ -1444,24 +1445,24 @@
       {
         "anchor": "crumbStrongRect",
         "from": 6.9,
-        "to": 12.0,
+        "to": 12,
         "note": "step 1 (p03): the My Dashboard breadcrumb title"
       },
       {
         "anchor": "toolsRow.toolSearch",
-        "from": 9.0,
+        "from": 9,
         "to": 10.8,
         "note": "step 1 (p04): Search ⌘K carries over"
       },
       {
         "anchor": "toolsRow.toolAsk",
-        "from": 9.0,
+        "from": 9,
         "to": 10.8,
         "note": "Ask Shyne carries over"
       },
       {
         "anchor": "toolsRow.avatar",
-        "from": 9.0,
+        "from": 9,
         "to": 10.8,
         "note": "the MG account avatar carries over"
       },
@@ -1474,18 +1475,18 @@
       {
         "anchor": "sideAcademy.sideCatalog",
         "from": 23.8,
-        "to": 25.0,
+        "to": 25,
         "note": "the catalog"
       },
       {
         "anchor": "sideAcademy.sidePaths",
-        "from": 25.0,
-        "to": 26.0,
+        "from": 25,
+        "to": 26,
         "note": "learning paths"
       },
       {
         "anchor": "sideAcademy.sideMyLearning",
-        "from": 26.0,
+        "from": 26,
         "to": 27.5,
         "note": "your own course list"
       },
@@ -1497,19 +1498,19 @@
       },
       {
         "anchor": "tiles.tileEnrolled",
-        "from": 37.0,
+        "from": 37,
         "to": 37.6,
         "note": "step 3 (p12): tiles named in spoken order — Enrolled"
       },
       {
         "anchor": "tiles.tileCompleted",
         "from": 37.6,
-        "to": 38.0,
+        "to": 38,
         "note": "completed"
       },
       {
         "anchor": "tiles.tileHours",
-        "from": 38.0,
+        "from": 38,
         "to": 38.4,
         "note": "hours"
       },
@@ -1527,13 +1528,13 @@
       },
       {
         "anchor": "heroChips.heroChipCat",
-        "from": 71.0,
+        "from": 71,
         "to": 74.9,
         "note": "step 5 (p24): the PLATFORM chip"
       },
       {
         "anchor": "heroChips.heroChipLevel",
-        "from": 71.0,
+        "from": 71,
         "to": 74.9,
         "note": "the BEGINNER chip"
       },
@@ -1596,7 +1597,7 @@
       {
         "anchor": "badgeLockedRect",
         "from": 131.8,
-        "to": 137.0,
+        "to": 137,
         "note": "step 8 (p42): a locked badge, dimmed — First Certificate"
       },
       {
@@ -1657,7 +1658,7 @@
         "cy": 540
       },
       {
-        "t": 2.0,
+        "t": 2,
         "z": 1,
         "cx": 960,
         "cy": 540
@@ -1691,7 +1692,7 @@
         "cy": 300
       },
       {
-        "t": 9.0,
+        "t": 9,
         "z": 1.34,
         "cx": 1180,
         "cy": 120,
@@ -1719,7 +1720,7 @@
         "cy": 540
       },
       {
-        "t": 16.0,
+        "t": 16,
         "z": 1.3,
         "cx": 740,
         "cy": 440,
@@ -1733,7 +1734,7 @@
         "cy": 440
       },
       {
-        "t": 35.0,
+        "t": 35,
         "z": 1.12,
         "cx": 960,
         "cy": 470,
@@ -1859,7 +1860,7 @@
         "cy": 430
       },
       {
-        "t": 195.0,
+        "t": 195,
         "z": 1.08,
         "cx": 960,
         "cy": 500,

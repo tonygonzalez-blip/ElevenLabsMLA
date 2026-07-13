@@ -201,7 +201,8 @@
       "to": 237,
       "predicate": "sidebarPanelExpanded",
       "everyMs": 2000,
-      "mustHold": true
+      "mustHold": true,
+      "holdTolerance": 1
     },
     {
       "op": "watch",

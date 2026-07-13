@@ -249,7 +249,8 @@
       "predicate": "sidebarExpanded",
       "everyMs": 2500,
       "mustHold": true,
-      "note": "the rail stays expanded across the row-click navigation and back (detail shell also carries the sidebar)"
+      "note": "the rail stays expanded across the row-click navigation and back (detail shell also carries the sidebar)",
+      "holdTolerance": 1
     },
     {
       "op": "pointer-enter",

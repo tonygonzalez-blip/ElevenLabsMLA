@@ -205,7 +205,8 @@
       "to": 17.8,
       "predicate": "sidebarExpanded",
       "everyMs": 2000,
-      "mustHold": true
+      "mustHold": true,
+      "holdTolerance": 1
     },
     {
       "op": "watch",
@@ -341,7 +342,7 @@
     },
     {
       "op": "move",
-      "at": 18.0,
+      "at": 18,
       "to": {
         "target": "sideSystemAlerts",
         "offset": [
@@ -1054,7 +1055,7 @@
     },
     {
       "op": "move",
-      "at": 134.0,
+      "at": 134,
       "to": {
         "target": "typeTunnel",
         "offset": [
@@ -1261,7 +1262,7 @@
     },
     {
       "op": "move",
-      "at": 165.0,
+      "at": 165,
       "to": {
         "target": "cardHealth",
         "offset": [
@@ -1324,7 +1325,7 @@
     },
     {
       "op": "assert",
-      "at": 181.0,
+      "at": 181,
       "predicate": "listIntact",
       "note": "end state: list intact — 4 rows, '1-4 of 4'; nothing was created, acknowledged, resolved, muted, exported, or deleted"
     }
@@ -1350,7 +1351,7 @@
         "anchor": "kpiBandRect",
         "place": "below-left",
         "from": 37.9,
-        "to": 56.0
+        "to": 56
       },
       {
         "n": 4,
@@ -1417,7 +1418,7 @@
       {
         "anchor": "kpiTiles.kpiCritical",
         "from": 44.4,
-        "to": 52.0,
+        "to": 52,
         "note": "step 3 (p15-p16): 1 Critical — the number that decides the day"
       },
       {
@@ -1429,7 +1430,7 @@
       {
         "anchor": "cardVolumeRect",
         "from": 62.67,
-        "to": 69.0,
+        "to": 69,
         "note": "step 4 (p20): Alert Volume — 148 total and the down-eight-percent trend"
       },
       {
@@ -1485,13 +1486,13 @@
       {
         "anchor": "pgInfoRect",
         "from": 115.69,
-        "to": 125.0,
+        "to": 125,
         "note": "step 7 (p39): the pager reads 1-4 of 4 (the true row count)"
       },
       {
         "anchor": "tunnelCells.sevTunnel",
-        "from": 134.0,
-        "to": 141.0,
+        "from": 134,
+        "to": 141,
         "note": "step 8 (p41-p42): the Critical Tunnel row at MLAS, still Active"
       },
       {
@@ -1555,7 +1556,7 @@
         "note": "ease back as the System Alerts link is pressed"
       },
       {
-        "t": 20.0,
+        "t": 20,
         "z": 1,
         "cx": 960,
         "cy": 540,
@@ -1577,7 +1578,7 @@
         "note": "step 3: close read of the KPI band"
       },
       {
-        "t": 56.0,
+        "t": 56,
         "z": 1.35,
         "cx": 1123,
         "cy": 150
@@ -1647,7 +1648,7 @@
         "note": "step 8: the four alert rows and their STATUS chips"
       },
       {
-        "t": 134.0,
+        "t": 134,
         "z": 1.45,
         "cx": 900,
         "cy": 552,
@@ -1655,7 +1656,7 @@
         "note": "step 8: punch in on Tunnel / Critical / MLAS"
       },
       {
-        "t": 141.0,
+        "t": 141,
         "z": 1.25,
         "cx": 1123,
         "cy": 600,
@@ -1663,7 +1664,7 @@
         "note": "step 8: back to the full row set"
       },
       {
-        "t": 155.0,
+        "t": 155,
         "z": 1.25,
         "cx": 1123,
         "cy": 460,

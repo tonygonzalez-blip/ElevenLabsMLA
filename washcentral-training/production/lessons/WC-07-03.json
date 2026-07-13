@@ -163,7 +163,8 @@
       "to": 235.5,
       "predicate": "sidebarExpanded",
       "everyMs": 2500,
-      "mustHold": true
+      "mustHold": true,
+      "holdTolerance": 1
     },
     {
       "op": "pointer-enter",

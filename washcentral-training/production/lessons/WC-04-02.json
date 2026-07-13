@@ -5,61 +5,171 @@
   "audioDurationS": 170.841,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/inv-batches.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "targets": {
-    "railToggle": { "selector": ".wc-rail-panel-toggle" },
-    "breadcrumb": { "selector": ".breadcrumb-bar" },
-    "crumbStrong": { "js": "document.querySelector('.breadcrumb-bar strong')", "textRect": true },
-    "sideItems": { "selector": "aside.sidebar a[href=\"inv-items.html\"]" },
-    "sideBatches": { "selector": "aside.sidebar a[href=\"inv-batches.html\"]" },
-    "sideAdjustments": { "selector": "aside.sidebar a[href=\"inv-adjustments.html\"]" },
-    "sideVendors": { "selector": "aside.sidebar a[href=\"inv-vendors.html\"]" },
-    "sideChemicals": { "selector": "aside.sidebar a[href=\"inv-chemicals.html\"]" },
-    "sidePOs": { "selector": "aside.sidebar a[href=\"inv-purchase-orders.html\"]" },
-    "kpiStrip": { "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()" },
-    "kpiTile1": { "js": "document.querySelectorAll('.a-metric')[0]" },
-    "kpiTile2": { "js": "document.querySelectorAll('.a-metric')[1]" },
-    "kpiTile3": { "js": "document.querySelectorAll('.a-metric')[2]" },
-    "kpiTile4": { "js": "document.querySelectorAll('.a-metric')[3]" },
-    "kpiOpenPOs": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Open POs/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "cardsRow": { "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()" },
-    "cardFirst": { "js": "document.querySelectorAll('.a-chart-card')[0]" },
-    "cardLast": { "js": "document.querySelectorAll('.a-chart-card')[2]" },
-    "theadRow": { "selector": "table thead tr" },
-    "rowFirst": { "js": "document.querySelector('table tbody tr')" },
-    "exportBtn": { "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)" },
-    "newRecordBtn": { "js": "[...document.querySelectorAll('button,a.a-btn')].find(e=>/\\+\\s*New Record/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "filtersBtn": { "js": "[...document.querySelectorAll('button')].find(e=>/^Filters/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "searchBox": { "js": "[...document.querySelectorAll('input[placeholder]')].find(i=>i.id!=='wc-cmd-inp'&&i.getBoundingClientRect().width>0)" },
-    "thReference": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Reference'&&e.getBoundingClientRect().width>0)" },
-    "refCellFirst": { "js": "document.querySelector('table tbody tr')?.cells[3]" },
-    "thLocation": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Location'&&e.getBoundingClientRect().width>0)" },
-    "thTicket": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Ticket'&&e.getBoundingClientRect().width>0)" },
-    "thTotal": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Total'&&e.getBoundingClientRect().width>0)" },
-    "thShift": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Shift #'&&e.getBoundingClientRect().width>0)" },
-    "thCashier": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Cashier'&&e.getBoundingClientRect().width>0)" },
-    "negRow": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/-\\$24\\.99/.test(tr.textContent||''))" },
-    "negTotalCell": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/-\\$24\\.99/.test(tr.textContent||''))?.cells[4]" },
-    "thAccountNo": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Account No.'&&e.getBoundingClientRect().width>0)" },
-    "thCompany": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Company'&&e.getBoundingClientRect().width>0)" },
-    "thContact": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Contact'&&e.getBoundingClientRect().width>0)" },
-    "thAddress": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Address'&&e.getBoundingClientRect().width>0)" },
-    "thPhone": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Phone'&&e.getBoundingClientRect().width>0)" },
-    "rowVND001": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/VND-001/.test(tr.textContent||''))" },
-    "thStockLevel": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Stock Level'&&e.getBoundingClientRect().width>0)" },
-    "thParUnit": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Par / Unit'&&e.getBoundingClientRect().width>0)" },
-    "thSupplier": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Supplier'&&e.getBoundingClientRect().width>0)" },
-    "thStatus": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Status'&&e.getBoundingClientRect().width>0)" },
-    "preSoakRow": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))" },
-    "preSoakStock": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[3]" },
-    "preSoakPar": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[4]" },
-    "preSoakSupplier": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[5]" },
-    "preSoakStatus": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[7]" },
-    "thPOnum": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='PO #'&&e.getBoundingClientRect().width>0)" },
-    "thCreated": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Created'&&e.getBoundingClientRect().width>0)" },
-    "thExpected": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Expected'&&e.getBoundingClientRect().width>0)" },
-    "thDetails": { "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Details'&&e.getBoundingClientRect().width>0)" },
-    "viewBtnFirst": { "js": "document.querySelector('button[data-po-view]')" }
+    "railToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "breadcrumb": {
+      "selector": ".breadcrumb-bar"
+    },
+    "crumbStrong": {
+      "js": "document.querySelector('.breadcrumb-bar strong')",
+      "textRect": true
+    },
+    "sideItems": {
+      "selector": "aside.sidebar a[href=\"inv-items.html\"]"
+    },
+    "sideBatches": {
+      "selector": "aside.sidebar a[href=\"inv-batches.html\"]"
+    },
+    "sideAdjustments": {
+      "selector": "aside.sidebar a[href=\"inv-adjustments.html\"]"
+    },
+    "sideVendors": {
+      "selector": "aside.sidebar a[href=\"inv-vendors.html\"]"
+    },
+    "sideChemicals": {
+      "selector": "aside.sidebar a[href=\"inv-chemicals.html\"]"
+    },
+    "sidePOs": {
+      "selector": "aside.sidebar a[href=\"inv-purchase-orders.html\"]"
+    },
+    "kpiStrip": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "kpiTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "kpiTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "kpiTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "kpiOpenPOs": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Open POs/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "cardsRow": {
+      "js": "(()=>{const c=document.querySelector('.a-chart-card');return c?c.parentElement:null})()"
+    },
+    "cardFirst": {
+      "js": "document.querySelectorAll('.a-chart-card')[0]"
+    },
+    "cardLast": {
+      "js": "document.querySelectorAll('.a-chart-card')[2]"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "rowFirst": {
+      "js": "document.querySelector('table tbody tr')"
+    },
+    "exportBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecordBtn": {
+      "js": "[...document.querySelectorAll('button,a.a-btn')].find(e=>/\\+\\s*New Record/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "filtersBtn": {
+      "js": "[...document.querySelectorAll('button')].find(e=>/^Filters/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "searchBox": {
+      "js": "[...document.querySelectorAll('input[placeholder]')].find(i=>i.id!=='wc-cmd-inp'&&i.getBoundingClientRect().width>0)"
+    },
+    "thReference": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Reference'&&e.getBoundingClientRect().width>0)"
+    },
+    "refCellFirst": {
+      "js": "document.querySelector('table tbody tr')?.cells[3]"
+    },
+    "thLocation": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Location'&&e.getBoundingClientRect().width>0)"
+    },
+    "thTicket": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Ticket'&&e.getBoundingClientRect().width>0)"
+    },
+    "thTotal": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Total'&&e.getBoundingClientRect().width>0)"
+    },
+    "thShift": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Shift #'&&e.getBoundingClientRect().width>0)"
+    },
+    "thCashier": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Cashier'&&e.getBoundingClientRect().width>0)"
+    },
+    "negRow": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/-\\$24\\.99/.test(tr.textContent||''))"
+    },
+    "negTotalCell": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/-\\$24\\.99/.test(tr.textContent||''))?.cells[4]"
+    },
+    "thAccountNo": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Account No.'&&e.getBoundingClientRect().width>0)"
+    },
+    "thCompany": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Company'&&e.getBoundingClientRect().width>0)"
+    },
+    "thContact": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Contact'&&e.getBoundingClientRect().width>0)"
+    },
+    "thAddress": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Address'&&e.getBoundingClientRect().width>0)"
+    },
+    "thPhone": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Phone'&&e.getBoundingClientRect().width>0)"
+    },
+    "rowVND001": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/VND-001/.test(tr.textContent||''))"
+    },
+    "thStockLevel": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Stock Level'&&e.getBoundingClientRect().width>0)"
+    },
+    "thParUnit": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Par / Unit'&&e.getBoundingClientRect().width>0)"
+    },
+    "thSupplier": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Supplier'&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Status'&&e.getBoundingClientRect().width>0)"
+    },
+    "preSoakRow": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))"
+    },
+    "preSoakStock": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[3]"
+    },
+    "preSoakPar": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[4]"
+    },
+    "preSoakSupplier": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[5]"
+    },
+    "preSoakStatus": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>/SKU-0012/.test(tr.textContent||''))?.cells[7]"
+    },
+    "thPOnum": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='PO #'&&e.getBoundingClientRect().width>0)"
+    },
+    "thCreated": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Created'&&e.getBoundingClientRect().width>0)"
+    },
+    "thExpected": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Expected'&&e.getBoundingClientRect().width>0)"
+    },
+    "thDetails": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>(e.textContent||'').trim()==='Details'&&e.getBoundingClientRect().width>0)"
+    },
+    "viewBtnFirst": {
+      "js": "document.querySelector('button[data-po-view]')"
+    }
   },
   "predicates": {
     "onBatches": "location.pathname.endsWith('/inv-batches.html')",
@@ -98,263 +208,2058 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.5, "predicate": "onBatches", "note": "start page identity before capture (step 1 opens on Inventory Batches per shot list startUrl)" },
-    { "op": "assert", "at": -0.9, "predicate": "startReady", "note": "loaded, sidebar expanded with all six Inventory pages, 4 KPI tiles, list rendered, scrolled to top, no skeletons" },
-    { "op": "watch", "key": "sidebarHeld", "from": 1.0, "to": 169.0, "predicate": "sidebarExpanded", "everyMs": 2000, "mustHold": true },
-
-    { "op": "pointer-enter", "at": 0.35, "from": [160, 1079], "to": { "target": "sideItems", "offset": [230, 0], "outside": true }, "note": "enter from the bottom edge and settle beside the Inventory sidebar as p01 says 'Open the Inventory menu'" },
-    { "op": "log-rects", "at": 0.9, "key": "sideNav", "targets": ["sideItems", "sideBatches", "sideAdjustments", "sideVendors", "sideChemicals", "sidePOs"] },
-    { "op": "log-rect", "at": 1.2, "key": "bcBatch", "target": "breadcrumb", "requireStableMs": 240 },
-    { "op": "log-rect", "at": 1.5, "key": "kpiStripBatch", "target": "kpiStrip" },
-    { "op": "log-rect", "at": 1.75, "key": "cardsRowBatch", "target": "cardsRow" },
-    { "op": "log-rect", "at": 2.0, "key": "theadBatch", "target": "theadRow", "requireStableMs": 220 },
-    { "op": "log-rect", "at": 2.2, "key": "searchBatch", "target": "searchBox" },
-
-    { "op": "move", "at": 2.3, "to": { "target": "sideItems", "offset": [215, 8], "outside": true }, "note": "step 1 (p02): slow top-to-bottom sweep down the six Inventory entries; never on them (nav links)" },
-    { "op": "move", "at": 3.2, "to": { "target": "sideBatches", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 3.9, "to": { "target": "sideAdjustments", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 4.6, "to": { "target": "sideVendors", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 5.3, "to": { "target": "sideChemicals", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 5.9, "to": { "target": "sidePOs", "offset": [215, 10], "outside": true } },
-    { "op": "move", "at": 6.6, "to": { "target": "kpiTile1", "offset": [0, 16] }, "note": "step 1 (p03): 'A row of headline numbers up top' — the KPI band" },
-    { "op": "move", "at": 8.7, "to": { "target": "cardFirst", "offset": [0, 26] }, "note": "step 1 (p04): 'Three cards under it' — sweep the three insight cards" },
-    { "op": "move", "at": 9.2, "to": { "target": "cardLast", "offset": [0, 26] } },
-    { "op": "move", "at": 9.9, "to": { "target": "searchBox", "offset": [0, -26], "outside": true }, "note": "step 1 (p05): 'Then a searchable list' — above the search box, then the list" },
-    { "op": "move", "at": 10.6, "to": { "target": "theadRow", "offset": [-680, 30], "outside": true } },
-    { "op": "move", "at": 12.2, "to": { "target": "sideItems", "offset": [215, 8], "outside": true }, "note": "step 1 (p06): 'Item detail is its own lesson' — point beside Inventory Items, the WC-04-01 page, never clicked" },
-    { "op": "move", "at": 14.5, "to": { "target": "sideBatches", "offset": [215, 8], "outside": true }, "note": "step 1 (p07): 'Today we walk the other five' — sweep the last five, Batches down to Purchase Orders" },
-    { "op": "move", "at": 15.0, "to": { "target": "sideAdjustments", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 15.4, "to": { "target": "sideVendors", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 15.7, "to": { "target": "sideChemicals", "offset": [215, 8], "outside": true } },
-    { "op": "move", "at": 16.0, "to": { "target": "sidePOs", "offset": [215, 10], "outside": true } },
-
-    { "op": "move", "at": 16.7, "to": { "target": "sideBatches", "offset": [215, 8], "outside": true }, "note": "step 2 (p08): 'Start with Inventory Batches' — the active entry; page already loaded" },
-    { "op": "log-rect", "at": 18.9, "key": "thRefBatch", "target": "thReference" },
-    { "op": "log-rect", "at": 19.1, "key": "refCellBatch", "target": "refCellFirst" },
-    { "op": "log-rect", "at": 19.3, "key": "exportBatch", "target": "exportBtn" },
-    { "op": "log-rect", "at": 19.5, "key": "newRecBatch", "target": "newRecordBtn" },
-    { "op": "move", "at": 20.7, "to": { "target": "kpiTile1", "offset": [0, 16] }, "note": "step 2 (p10): 'The tiles up top count how many batches arrived, how many are still open, and what they cost' — sweep the KPI band" },
-    { "op": "move", "at": 21.5, "to": { "target": "kpiTile2", "offset": [0, 16] } },
-    { "op": "move", "at": 22.3, "to": { "target": "kpiTile4", "offset": [0, 16] } },
-    { "op": "move", "at": 23.5, "to": { "target": "thReference", "offset": [0, 0] }, "note": "step 2 (p11): 'the column that earns its keep is Reference' — the Reference header, camera punches to 150%" },
-    { "op": "move", "at": 26.2, "to": { "target": "refCellFirst", "offset": [0, 0] }, "note": "step 2 (p12): 'It carries the purchase order each batch filled' — BATCH-0084's PO-2025-084" },
-    { "op": "move", "at": 28.9, "to": { "target": "refCellFirst", "offset": [30, 0] }, "note": "step 2 (p13): hold on the Reference cell tying receipt to order" },
-    { "op": "move", "at": 35.1, "to": { "target": "exportBtn", "offset": [-58, 46], "outside": true }, "note": "step 2 (p14) guardrail: rest BESIDE Export/+ New Record while the red do-not-click ring brackets them (read-only lesson); never on them" },
-
-    { "op": "move", "at": 38.3, "to": { "target": "sideAdjustments", "offset": [0, 0] }, "note": "step 3 approach starts at the p15 cue 'Now Adjustments'" },
-    { "op": "click", "target": "sideAdjustments", "pressAt": 40.45, "hoverMs": 380, "postcondition": "onAdjustments", "timeoutMs": 8000, "nav": true, "note": "step 3: 'Now Adjustments' (p15, cue ends 40.25) — genuine sidebar navigation; press inside the 0.67s gap before p16 (read-only: opens the list, creates nothing)" },
-    { "op": "wait-stable", "afterNav": true, "key": "adjStable", "predicate": "adjustmentsReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "log-rect", "at": 41.2, "key": "kpiStripAdj", "target": "kpiStrip" },
-    { "op": "log-rect", "at": 41.4, "key": "theadAdj", "target": "theadRow" },
-    { "op": "log-rects", "at": 41.6, "key": "thsAdj", "targets": ["thLocation", "thTicket", "thShift", "thCashier"] },
-    { "op": "log-rect", "at": 41.9, "key": "negRowAdj", "target": "negRow" },
-    { "op": "log-rect", "at": 42.1, "key": "negTotalAdj", "target": "negTotalCell" },
-    { "op": "move", "at": 42.4, "to": { "target": "kpiTile1", "offset": [0, 16] }, "note": "step 3 (p16): 'split into positives and negatives' — the 142 Positive / 170 Negative tiles" },
-    { "op": "move", "at": 43.3, "to": { "target": "kpiTile3", "offset": [0, 16] } },
-    { "op": "move", "at": 44.2, "to": { "target": "kpiTile4", "offset": [0, 16] } },
-    { "op": "move", "at": 47.0, "to": { "target": "theadRow", "offset": [-680, 0] }, "note": "step 3 (p17): 'a correction is never anonymous' — sweep the column row" },
-    { "op": "move", "at": 48.4, "to": { "target": "theadRow", "offset": [680, 0] } },
-    { "op": "move", "at": 51.7, "to": { "target": "thLocation", "offset": [0, 0] }, "note": "step 3 (p18): 'the location, the ticket, the shift, and the cashier' in spoken order" },
-    { "op": "move", "at": 52.8, "to": { "target": "thTicket", "offset": [0, 0] } },
-    { "op": "move", "at": 54.1, "to": { "target": "thShift", "offset": [0, 0] } },
-    { "op": "move", "at": 55.2, "to": { "target": "thCashier", "offset": [0, 0] } },
-    { "op": "move", "at": 56.7, "to": { "target": "negTotalCell", "offset": [0, 0] }, "note": "step 3 (p19): 'a write-off isn't just a dollar figure' — the -$24.99 Total, camera punches to 150%" },
-    { "op": "move", "at": 59.7, "to": { "target": "negRow", "offset": [560, 0] }, "note": "step 3 (p20): 'a person and a moment' — SHIFT-440 / L. Nguyen on the same row" },
-
-    { "op": "move", "at": 61.4, "to": { "target": "sideVendors", "offset": [0, 0] }, "note": "step 4 approach begins as p20 winds down; the page has not changed yet" },
-    { "op": "click", "target": "sideVendors", "pressAt": 62.4, "hoverMs": 340, "postcondition": "onVendors", "timeoutMs": 8000, "nav": true, "note": "step 4: press inside the 0.46s gap (p20 ends 62.18, p21 starts 62.64) so Vendors is up as 'Vendors is the supplier directory' is heard" },
-    { "op": "wait-stable", "afterNav": true, "key": "venStable", "predicate": "vendorsReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "log-rect", "at": 63.2, "key": "kpiStripVen", "target": "kpiStrip" },
-    { "op": "log-rect", "at": 63.3, "key": "openPOsVen", "target": "kpiOpenPOs" },
-    { "op": "log-rect", "at": 63.4, "key": "theadVen", "target": "theadRow" },
-    { "op": "log-rects", "at": 63.5, "key": "thsVen", "targets": ["thAccountNo", "thCompany", "thContact", "thAddress", "thPhone"] },
-    { "op": "log-rect", "at": 63.6, "key": "rowVenRect", "target": "rowVND001" },
-    { "op": "move", "at": 63.7, "to": { "target": "sideVendors", "offset": [215, 8], "outside": true }, "note": "step 4 (p21): 'Vendors is the supplier directory' — beside the active entry" },
-    { "op": "move", "at": 65.6, "to": { "target": "thAccountNo", "offset": [0, 0] }, "note": "step 4 (p22): 'Account number, company, contact, address, phone' in spoken order" },
-    { "op": "move", "at": 66.5, "to": { "target": "thCompany", "offset": [0, 0] } },
-    { "op": "move", "at": 67.2, "to": { "target": "thContact", "offset": [0, 0] } },
-    { "op": "move", "at": 68.0, "to": { "target": "thAddress", "offset": [0, 0] } },
-    { "op": "move", "at": 68.8, "to": { "target": "thPhone", "offset": [0, 0] } },
-    { "op": "move", "at": 69.9, "to": { "target": "rowVND001", "offset": [560, 0] }, "note": "step 4 (p23-p24): 'the name and number to call' — the VND-001 ChemCo Inc row" },
-    { "op": "move", "at": 76.1, "to": { "target": "kpiOpenPOs", "offset": [0, 16] }, "note": "step 4 (p25): 'the tile up top counts three open P-Os' — the 3 Open POs KPI" },
-    { "op": "move", "at": 79.1, "to": { "target": "sidePOs", "offset": [215, 10], "outside": true }, "note": "step 4 (p26): 'one page over, on Purchase Orders' — point beside the POs entry, no click yet" },
-
-    { "op": "move", "at": 81.9, "to": { "target": "sideChemicals", "offset": [0, 0] }, "note": "step 5 approach as p26 finishes" },
-    { "op": "click", "target": "sideChemicals", "pressAt": 82.95, "hoverMs": 340, "postcondition": "onChemicals", "timeoutMs": 8000, "nav": true, "note": "step 5: press inside the 0.42s gap (p26 ends 82.70, p27 starts 83.19) so Chemicals & Supplies is up as its name is heard" },
-    { "op": "wait-stable", "afterNav": true, "key": "chemStable", "predicate": "chemicalsReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "log-rect", "at": 83.7, "key": "kpiStripChem", "target": "kpiStrip" },
-    { "op": "log-rect", "at": 83.75, "key": "thStockChem", "target": "thStockLevel" },
-    { "op": "log-rect", "at": 83.8, "key": "thParChem", "target": "thParUnit" },
-    { "op": "log-rect", "at": 83.85, "key": "thStatusChem", "target": "thStatus" },
-    { "op": "log-rect", "at": 83.9, "key": "thSupplierChem", "target": "thSupplier" },
-    { "op": "log-rect", "at": 83.95, "key": "preSoakStockChem", "target": "preSoakStock" },
-    { "op": "log-rect", "at": 84.0, "key": "preSoakParChem", "target": "preSoakPar" },
-    { "op": "log-rect", "at": 84.05, "key": "preSoakStatusChem", "target": "preSoakStatus" },
-    { "op": "log-rect", "at": 84.1, "key": "preSoakSupplierChem", "target": "preSoakSupplier" },
-    { "op": "log-rect", "at": 84.15, "key": "exportChem", "target": "exportBtn" },
-    { "op": "move", "at": 84.2, "to": { "target": "sideChemicals", "offset": [215, 8], "outside": true }, "note": "step 5 (p27): 'Chemicals and Supplies' — the active entry" },
-    { "op": "move", "at": 85.4, "to": { "target": "kpiTile2", "offset": [0, 16] }, "note": "step 5 (p28): 'the page that answers the call' — the 12 Low Stock tile" },
-    { "op": "move", "at": 89.2, "to": { "target": "thStockLevel", "offset": [0, 0] }, "note": "step 5 (p29): 'Read Stock Level against Par' in spoken order" },
-    { "op": "move", "at": 90.6, "to": { "target": "thParUnit", "offset": [0, 0] } },
-    { "op": "move", "at": 92.4, "to": { "target": "preSoakStock", "offset": [0, 0] }, "note": "step 5 (p30): 'how deep the hole is' — Pre-Soak Detergent 2 gal vs 30 gal par, camera punches to 150%" },
-    { "op": "move", "at": 93.5, "to": { "target": "preSoakPar", "offset": [0, 0] } },
-    { "op": "move", "at": 95.3, "to": { "target": "thStatus", "offset": [0, 0] }, "note": "step 5 (p31): 'The Status chip says the same thing in one word' — the Status header" },
-    { "op": "move", "at": 98.6, "to": { "target": "preSoakStatus", "offset": [0, 0] }, "note": "step 5 (p32-p33): 'In Stock, Low Stock, Critical, or Out of Stock' — Pre-Soak reads Critical" },
-    { "op": "move", "at": 102.6, "to": { "target": "preSoakSupplier", "offset": [0, 0] }, "note": "step 5 (p34): 'grab the supplier from the same row' — ChemMax Pro" },
-    { "op": "move", "at": 104.5, "to": { "target": "exportBtn", "offset": [-58, 46], "outside": true }, "note": "step 5 guardrail: rest beside Export while the red do-not-click ring marks it; never clicked" },
-
-    { "op": "move", "at": 108.1, "to": { "target": "sidePOs", "offset": [0, 0] }, "note": "step 6 approach as p34 tail finishes" },
-    { "op": "click", "target": "sidePOs", "pressAt": 109.2, "hoverMs": 340, "postcondition": "onPOs", "timeoutMs": 8000, "nav": true, "note": "step 6: press inside the 0.42s gap (p34 ends 109.02, p35 starts 109.44) so Purchase Orders is up as 'Last page: Purchase Orders' is heard" },
-    { "op": "wait-stable", "afterNav": true, "key": "poStable", "predicate": "posReady", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "log-rect", "at": 109.95, "key": "kpiStripPO", "target": "kpiStrip" },
-    { "op": "log-rect", "at": 110.0, "key": "theadPO", "target": "theadRow" },
-    { "op": "log-rects", "at": 110.05, "key": "thsPO", "targets": ["thSupplier", "thLocation", "thTotal", "thCreated", "thExpected", "thStatus"] },
-    { "op": "log-rect", "at": 110.1, "key": "viewBtnPO", "target": "viewBtnFirst" },
-    { "op": "log-rect", "at": 110.15, "key": "detailsPO", "target": "thDetails" },
-    { "op": "move", "at": 110.2, "to": { "target": "sidePOs", "offset": [215, 10], "outside": true }, "note": "step 6 (p35): 'Last page: Purchase Orders' — the active entry" },
-    { "op": "move", "at": 110.8, "to": { "target": "kpiTile1", "offset": [0, 16] }, "note": "step 6 (p36-p37): 'split it by stage: open, pending approval, in transit' — the KPI band" },
-    { "op": "move", "at": 112.5, "to": { "target": "kpiTile2", "offset": [0, 16] } },
-    { "op": "move", "at": 113.4, "to": { "target": "kpiTile3", "offset": [0, 16] } },
-    { "op": "move", "at": 115.0, "to": { "target": "thSupplier", "offset": [0, 0] }, "note": "step 6 (p38): 'the supplier, the site, the money' in spoken order" },
-    { "op": "move", "at": 116.2, "to": { "target": "thLocation", "offset": [0, 0] } },
-    { "op": "move", "at": 117.4, "to": { "target": "thTotal", "offset": [0, 0] } },
-    { "op": "move", "at": 120.3, "to": { "target": "thCreated", "offset": [0, 0] }, "note": "step 6 (p39): 'when it was created and when it's expected'" },
-    { "op": "move", "at": 122.2, "to": { "target": "thExpected", "offset": [0, 0] } },
-    { "op": "move", "at": 125.6, "to": { "target": "thStatus", "offset": [0, 0] }, "note": "step 6 (p40): 'The Status chip tells you...' — the Status column" },
-    { "op": "move", "at": 128.5, "to": { "target": "rowFirst", "offset": [1234, 0] }, "note": "step 6 (p40): sweep the status chips down the rows (Pending Approval / In Transit / Fulfilled)" },
-    { "op": "move", "at": 132.2, "to": { "target": "thDetails", "offset": [0, 40], "outside": true }, "note": "step 6 (p40 tail): set up the View button in the Details column for step 7" },
-
-    { "op": "watch", "key": "poHold", "from": 134.0, "to": 149.6, "predicate": "onPOs", "everyMs": 500, "mustHold": true, "note": "step 7 guardrail window: the page never changes — the View quick-look is broken live (RESIDUAL R1) and is never clicked" },
-    { "op": "move", "at": 134.1, "to": { "target": "viewBtnFirst", "offset": [-46, 0], "outside": true }, "note": "step 7 (p41): 'Every order row has a View button' — point BESIDE the View button; it is inert live and never pressed (RESIDUAL R1)" },
-    { "op": "assert", "at": 134.2, "predicate": "poPanelClosed", "note": "RESIDUAL R1 evidence: #po-panel stays off-screen at right:-440px; the demo's inline panel script throws SyntaxError at line 186 so View is inert. We point at the affordance, never click it." },
-    { "op": "move", "at": 136.5, "to": { "target": "viewBtnFirst", "offset": [-40, 0], "outside": true }, "note": "step 7 (p42): 'Click it and a quick-look slides in' — narration is locked, but the panel never renders live; we hold beside the button (RESIDUAL R1)" },
-    { "op": "move", "at": 139.7, "to": { "target": "thDetails", "offset": [0, 40], "outside": true }, "note": "step 7 (p43): 'In the demo it opens on a sample record, so we won't read fields off it' — narration itself hedges; hold on the Details column" },
-    { "op": "move", "at": 144.3, "to": { "target": "viewBtnFirst", "offset": [-46, 0], "outside": true }, "note": "step 7 (p44-p45): 'Open Full Detail is the door... Close the peek, and nothing moves' — nothing was opened; the list is unchanged" },
-
-    { "op": "log-rects", "at": 149.9, "key": "sideNav2", "targets": ["sideItems", "sideBatches", "sideAdjustments", "sideVendors", "sideChemicals", "sidePOs"], "note": "re-log the sidebar on the final page for the recap graphics" },
-    { "op": "move", "at": 150.2, "to": { "target": "sideBatches", "offset": [215, 8], "outside": true }, "note": "step 8 (p46): 'Five pages, one sidebar' — top of the recap sweep" },
-    { "op": "move", "at": 152.6, "to": { "target": "sideBatches", "offset": [215, 8], "outside": true }, "note": "step 8 (p47): 'Batches for what came in and which P-O it filled' — recap in spoken order" },
-    { "op": "move", "at": 156.2, "to": { "target": "sideAdjustments", "offset": [215, 8], "outside": true }, "note": "step 8 (p48): 'Adjustments for who changed a count and why'" },
-    { "op": "move", "at": 159.2, "to": { "target": "sideVendors", "offset": [215, 8], "outside": true }, "note": "step 8 (p49): 'Vendors for who to call'" },
-    { "op": "move", "at": 161.2, "to": { "target": "sideChemicals", "offset": [215, 8], "outside": true }, "note": "step 8 (p50): 'Chemicals and Supplies for what's running low'" },
-    { "op": "move", "at": 164.0, "to": { "target": "sidePOs", "offset": [215, 10], "outside": true }, "note": "step 8 (p51): 'Purchase Orders for what's on the way'" },
-    { "op": "move", "at": 166.3, "to": { "target": "sideItems", "offset": [215, 8], "outside": true }, "note": "step 8 (p52): 'once you can read one, you can read all six' — gesture to the full list incl. Inventory Items" },
-    { "op": "move", "at": 168.4, "to": { "point": [1560, 930] }, "note": "final park, clear of content and captions, while the close lands" },
-    { "op": "assert", "at": 169.6, "predicate": "onPOs" },
-    { "op": "assert", "at": 169.9, "predicate": "sidebarExpanded" }
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onBatches",
+      "note": "start page identity before capture (step 1 opens on Inventory Batches per shot list startUrl)"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "startReady",
+      "note": "loaded, sidebar expanded with all six Inventory pages, 4 KPI tiles, list rendered, scrolled to top, no skeletons"
+    },
+    {
+      "op": "watch",
+      "key": "sidebarHeld",
+      "from": 1,
+      "to": 169,
+      "predicate": "sidebarExpanded",
+      "everyMs": 2000,
+      "mustHold": true,
+      "holdTolerance": 1
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.35,
+      "from": [
+        160,
+        1079
+      ],
+      "to": {
+        "target": "sideItems",
+        "offset": [
+          230,
+          0
+        ],
+        "outside": true
+      },
+      "note": "enter from the bottom edge and settle beside the Inventory sidebar as p01 says 'Open the Inventory menu'"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.9,
+      "key": "sideNav",
+      "targets": [
+        "sideItems",
+        "sideBatches",
+        "sideAdjustments",
+        "sideVendors",
+        "sideChemicals",
+        "sidePOs"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 1.2,
+      "key": "bcBatch",
+      "target": "breadcrumb",
+      "requireStableMs": 240
+    },
+    {
+      "op": "log-rect",
+      "at": 1.5,
+      "key": "kpiStripBatch",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 1.75,
+      "key": "cardsRowBatch",
+      "target": "cardsRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 2,
+      "key": "theadBatch",
+      "target": "theadRow",
+      "requireStableMs": 220
+    },
+    {
+      "op": "log-rect",
+      "at": 2.2,
+      "key": "searchBatch",
+      "target": "searchBox"
+    },
+    {
+      "op": "move",
+      "at": 2.3,
+      "to": {
+        "target": "sideItems",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p02): slow top-to-bottom sweep down the six Inventory entries; never on them (nav links)"
+    },
+    {
+      "op": "move",
+      "at": 3.2,
+      "to": {
+        "target": "sideBatches",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 3.9,
+      "to": {
+        "target": "sideAdjustments",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 4.6,
+      "to": {
+        "target": "sideVendors",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 5.3,
+      "to": {
+        "target": "sideChemicals",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 5.9,
+      "to": {
+        "target": "sidePOs",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 6.6,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 1 (p03): 'A row of headline numbers up top' — the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 8.7,
+      "to": {
+        "target": "cardFirst",
+        "offset": [
+          0,
+          26
+        ]
+      },
+      "note": "step 1 (p04): 'Three cards under it' — sweep the three insight cards"
+    },
+    {
+      "op": "move",
+      "at": 9.2,
+      "to": {
+        "target": "cardLast",
+        "offset": [
+          0,
+          26
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 9.9,
+      "to": {
+        "target": "searchBox",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p05): 'Then a searchable list' — above the search box, then the list"
+    },
+    {
+      "op": "move",
+      "at": 10.6,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -680,
+          30
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 12.2,
+      "to": {
+        "target": "sideItems",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p06): 'Item detail is its own lesson' — point beside Inventory Items, the WC-04-01 page, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 14.5,
+      "to": {
+        "target": "sideBatches",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p07): 'Today we walk the other five' — sweep the last five, Batches down to Purchase Orders"
+    },
+    {
+      "op": "move",
+      "at": 15,
+      "to": {
+        "target": "sideAdjustments",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 15.4,
+      "to": {
+        "target": "sideVendors",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 15.7,
+      "to": {
+        "target": "sideChemicals",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 16,
+      "to": {
+        "target": "sidePOs",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      }
+    },
+    {
+      "op": "move",
+      "at": 16.7,
+      "to": {
+        "target": "sideBatches",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p08): 'Start with Inventory Batches' — the active entry; page already loaded"
+    },
+    {
+      "op": "log-rect",
+      "at": 18.9,
+      "key": "thRefBatch",
+      "target": "thReference"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.1,
+      "key": "refCellBatch",
+      "target": "refCellFirst"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.3,
+      "key": "exportBatch",
+      "target": "exportBtn"
+    },
+    {
+      "op": "log-rect",
+      "at": 19.5,
+      "key": "newRecBatch",
+      "target": "newRecordBtn"
+    },
+    {
+      "op": "move",
+      "at": 20.7,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 2 (p10): 'The tiles up top count how many batches arrived, how many are still open, and what they cost' — sweep the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 21.5,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          16
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 22.3,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          16
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 23.5,
+      "to": {
+        "target": "thReference",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 (p11): 'the column that earns its keep is Reference' — the Reference header, camera punches to 150%"
+    },
+    {
+      "op": "move",
+      "at": 26.2,
+      "to": {
+        "target": "refCellFirst",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 2 (p12): 'It carries the purchase order each batch filled' — BATCH-0084's PO-2025-084"
+    },
+    {
+      "op": "move",
+      "at": 28.9,
+      "to": {
+        "target": "refCellFirst",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 2 (p13): hold on the Reference cell tying receipt to order"
+    },
+    {
+      "op": "move",
+      "at": 35.1,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -58,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p14) guardrail: rest BESIDE Export/+ New Record while the red do-not-click ring brackets them (read-only lesson); never on them"
+    },
+    {
+      "op": "move",
+      "at": 38.3,
+      "to": {
+        "target": "sideAdjustments",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 approach starts at the p15 cue 'Now Adjustments'"
+    },
+    {
+      "op": "click",
+      "target": "sideAdjustments",
+      "pressAt": 40.45,
+      "hoverMs": 380,
+      "postcondition": "onAdjustments",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 3: 'Now Adjustments' (p15, cue ends 40.25) — genuine sidebar navigation; press inside the 0.67s gap before p16 (read-only: opens the list, creates nothing)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "adjStable",
+      "predicate": "adjustmentsReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 41.2,
+      "key": "kpiStripAdj",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 41.4,
+      "key": "theadAdj",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 41.6,
+      "key": "thsAdj",
+      "targets": [
+        "thLocation",
+        "thTicket",
+        "thShift",
+        "thCashier"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 41.9,
+      "key": "negRowAdj",
+      "target": "negRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 42.1,
+      "key": "negTotalAdj",
+      "target": "negTotalCell"
+    },
+    {
+      "op": "move",
+      "at": 42.4,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 3 (p16): 'split into positives and negatives' — the 142 Positive / 170 Negative tiles"
+    },
+    {
+      "op": "move",
+      "at": 43.3,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          16
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 44.2,
+      "to": {
+        "target": "kpiTile4",
+        "offset": [
+          0,
+          16
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 47,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          -680,
+          0
+        ]
+      },
+      "note": "step 3 (p17): 'a correction is never anonymous' — sweep the column row"
+    },
+    {
+      "op": "move",
+      "at": 48.4,
+      "to": {
+        "target": "theadRow",
+        "offset": [
+          680,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 51.7,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p18): 'the location, the ticket, the shift, and the cashier' in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 52.8,
+      "to": {
+        "target": "thTicket",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 54.1,
+      "to": {
+        "target": "thShift",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 55.2,
+      "to": {
+        "target": "thCashier",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 56.7,
+      "to": {
+        "target": "negTotalCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p19): 'a write-off isn't just a dollar figure' — the -$24.99 Total, camera punches to 150%"
+    },
+    {
+      "op": "move",
+      "at": 59.7,
+      "to": {
+        "target": "negRow",
+        "offset": [
+          560,
+          0
+        ]
+      },
+      "note": "step 3 (p20): 'a person and a moment' — SHIFT-440 / L. Nguyen on the same row"
+    },
+    {
+      "op": "move",
+      "at": 61.4,
+      "to": {
+        "target": "sideVendors",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 approach begins as p20 winds down; the page has not changed yet"
+    },
+    {
+      "op": "click",
+      "target": "sideVendors",
+      "pressAt": 62.4,
+      "hoverMs": 340,
+      "postcondition": "onVendors",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 4: press inside the 0.46s gap (p20 ends 62.18, p21 starts 62.64) so Vendors is up as 'Vendors is the supplier directory' is heard"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "venStable",
+      "predicate": "vendorsReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 63.2,
+      "key": "kpiStripVen",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.3,
+      "key": "openPOsVen",
+      "target": "kpiOpenPOs"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.4,
+      "key": "theadVen",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 63.5,
+      "key": "thsVen",
+      "targets": [
+        "thAccountNo",
+        "thCompany",
+        "thContact",
+        "thAddress",
+        "thPhone"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 63.6,
+      "key": "rowVenRect",
+      "target": "rowVND001"
+    },
+    {
+      "op": "move",
+      "at": 63.7,
+      "to": {
+        "target": "sideVendors",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p21): 'Vendors is the supplier directory' — beside the active entry"
+    },
+    {
+      "op": "move",
+      "at": 65.6,
+      "to": {
+        "target": "thAccountNo",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p22): 'Account number, company, contact, address, phone' in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 66.5,
+      "to": {
+        "target": "thCompany",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 67.2,
+      "to": {
+        "target": "thContact",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 68,
+      "to": {
+        "target": "thAddress",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 68.8,
+      "to": {
+        "target": "thPhone",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 69.9,
+      "to": {
+        "target": "rowVND001",
+        "offset": [
+          560,
+          0
+        ]
+      },
+      "note": "step 4 (p23-p24): 'the name and number to call' — the VND-001 ChemCo Inc row"
+    },
+    {
+      "op": "move",
+      "at": 76.1,
+      "to": {
+        "target": "kpiOpenPOs",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 4 (p25): 'the tile up top counts three open P-Os' — the 3 Open POs KPI"
+    },
+    {
+      "op": "move",
+      "at": 79.1,
+      "to": {
+        "target": "sidePOs",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p26): 'one page over, on Purchase Orders' — point beside the POs entry, no click yet"
+    },
+    {
+      "op": "move",
+      "at": 81.9,
+      "to": {
+        "target": "sideChemicals",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 approach as p26 finishes"
+    },
+    {
+      "op": "click",
+      "target": "sideChemicals",
+      "pressAt": 82.95,
+      "hoverMs": 340,
+      "postcondition": "onChemicals",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5: press inside the 0.42s gap (p26 ends 82.70, p27 starts 83.19) so Chemicals & Supplies is up as its name is heard"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "chemStable",
+      "predicate": "chemicalsReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 83.7,
+      "key": "kpiStripChem",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.75,
+      "key": "thStockChem",
+      "target": "thStockLevel"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.8,
+      "key": "thParChem",
+      "target": "thParUnit"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.85,
+      "key": "thStatusChem",
+      "target": "thStatus"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.9,
+      "key": "thSupplierChem",
+      "target": "thSupplier"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.95,
+      "key": "preSoakStockChem",
+      "target": "preSoakStock"
+    },
+    {
+      "op": "log-rect",
+      "at": 84,
+      "key": "preSoakParChem",
+      "target": "preSoakPar"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.05,
+      "key": "preSoakStatusChem",
+      "target": "preSoakStatus"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.1,
+      "key": "preSoakSupplierChem",
+      "target": "preSoakSupplier"
+    },
+    {
+      "op": "log-rect",
+      "at": 84.15,
+      "key": "exportChem",
+      "target": "exportBtn"
+    },
+    {
+      "op": "move",
+      "at": 84.2,
+      "to": {
+        "target": "sideChemicals",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 5 (p27): 'Chemicals and Supplies' — the active entry"
+    },
+    {
+      "op": "move",
+      "at": 85.4,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 5 (p28): 'the page that answers the call' — the 12 Low Stock tile"
+    },
+    {
+      "op": "move",
+      "at": 89.2,
+      "to": {
+        "target": "thStockLevel",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p29): 'Read Stock Level against Par' in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 90.6,
+      "to": {
+        "target": "thParUnit",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 92.4,
+      "to": {
+        "target": "preSoakStock",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p30): 'how deep the hole is' — Pre-Soak Detergent 2 gal vs 30 gal par, camera punches to 150%"
+    },
+    {
+      "op": "move",
+      "at": 93.5,
+      "to": {
+        "target": "preSoakPar",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 95.3,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p31): 'The Status chip says the same thing in one word' — the Status header"
+    },
+    {
+      "op": "move",
+      "at": 98.6,
+      "to": {
+        "target": "preSoakStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p32-p33): 'In Stock, Low Stock, Critical, or Out of Stock' — Pre-Soak reads Critical"
+    },
+    {
+      "op": "move",
+      "at": 102.6,
+      "to": {
+        "target": "preSoakSupplier",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 (p34): 'grab the supplier from the same row' — ChemMax Pro"
+    },
+    {
+      "op": "move",
+      "at": 104.5,
+      "to": {
+        "target": "exportBtn",
+        "offset": [
+          -58,
+          46
+        ],
+        "outside": true
+      },
+      "note": "step 5 guardrail: rest beside Export while the red do-not-click ring marks it; never clicked"
+    },
+    {
+      "op": "move",
+      "at": 108.1,
+      "to": {
+        "target": "sidePOs",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 approach as p34 tail finishes"
+    },
+    {
+      "op": "click",
+      "target": "sidePOs",
+      "pressAt": 109.2,
+      "hoverMs": 340,
+      "postcondition": "onPOs",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6: press inside the 0.42s gap (p34 ends 109.02, p35 starts 109.44) so Purchase Orders is up as 'Last page: Purchase Orders' is heard"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "poStable",
+      "predicate": "posReady",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "log-rect",
+      "at": 109.95,
+      "key": "kpiStripPO",
+      "target": "kpiStrip"
+    },
+    {
+      "op": "log-rect",
+      "at": 110,
+      "key": "theadPO",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 110.05,
+      "key": "thsPO",
+      "targets": [
+        "thSupplier",
+        "thLocation",
+        "thTotal",
+        "thCreated",
+        "thExpected",
+        "thStatus"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 110.1,
+      "key": "viewBtnPO",
+      "target": "viewBtnFirst"
+    },
+    {
+      "op": "log-rect",
+      "at": 110.15,
+      "key": "detailsPO",
+      "target": "thDetails"
+    },
+    {
+      "op": "move",
+      "at": 110.2,
+      "to": {
+        "target": "sidePOs",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p35): 'Last page: Purchase Orders' — the active entry"
+    },
+    {
+      "op": "move",
+      "at": 110.8,
+      "to": {
+        "target": "kpiTile1",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "step 6 (p36-p37): 'split it by stage: open, pending approval, in transit' — the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 112.5,
+      "to": {
+        "target": "kpiTile2",
+        "offset": [
+          0,
+          16
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 113.4,
+      "to": {
+        "target": "kpiTile3",
+        "offset": [
+          0,
+          16
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 115,
+      "to": {
+        "target": "thSupplier",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p38): 'the supplier, the site, the money' in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 116.2,
+      "to": {
+        "target": "thLocation",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 117.4,
+      "to": {
+        "target": "thTotal",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 120.3,
+      "to": {
+        "target": "thCreated",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p39): 'when it was created and when it's expected'"
+    },
+    {
+      "op": "move",
+      "at": 122.2,
+      "to": {
+        "target": "thExpected",
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 125.6,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p40): 'The Status chip tells you...' — the Status column"
+    },
+    {
+      "op": "move",
+      "at": 128.5,
+      "to": {
+        "target": "rowFirst",
+        "offset": [
+          1234,
+          0
+        ]
+      },
+      "note": "step 6 (p40): sweep the status chips down the rows (Pending Approval / In Transit / Fulfilled)"
+    },
+    {
+      "op": "move",
+      "at": 132.2,
+      "to": {
+        "target": "thDetails",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p40 tail): set up the View button in the Details column for step 7"
+    },
+    {
+      "op": "watch",
+      "key": "poHold",
+      "from": 134,
+      "to": 149.6,
+      "predicate": "onPOs",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 7 guardrail window: the page never changes — the View quick-look is broken live (RESIDUAL R1) and is never clicked"
+    },
+    {
+      "op": "move",
+      "at": 134.1,
+      "to": {
+        "target": "viewBtnFirst",
+        "offset": [
+          -46,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p41): 'Every order row has a View button' — point BESIDE the View button; it is inert live and never pressed (RESIDUAL R1)"
+    },
+    {
+      "op": "assert",
+      "at": 134.2,
+      "predicate": "poPanelClosed",
+      "note": "RESIDUAL R1 evidence: #po-panel stays off-screen at right:-440px; the demo's inline panel script throws SyntaxError at line 186 so View is inert. We point at the affordance, never click it."
+    },
+    {
+      "op": "move",
+      "at": 136.5,
+      "to": {
+        "target": "viewBtnFirst",
+        "offset": [
+          -40,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p42): 'Click it and a quick-look slides in' — narration is locked, but the panel never renders live; we hold beside the button (RESIDUAL R1)"
+    },
+    {
+      "op": "move",
+      "at": 139.7,
+      "to": {
+        "target": "thDetails",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p43): 'In the demo it opens on a sample record, so we won't read fields off it' — narration itself hedges; hold on the Details column"
+    },
+    {
+      "op": "move",
+      "at": 144.3,
+      "to": {
+        "target": "viewBtnFirst",
+        "offset": [
+          -46,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p44-p45): 'Open Full Detail is the door... Close the peek, and nothing moves' — nothing was opened; the list is unchanged"
+    },
+    {
+      "op": "log-rects",
+      "at": 149.9,
+      "key": "sideNav2",
+      "targets": [
+        "sideItems",
+        "sideBatches",
+        "sideAdjustments",
+        "sideVendors",
+        "sideChemicals",
+        "sidePOs"
+      ],
+      "note": "re-log the sidebar on the final page for the recap graphics"
+    },
+    {
+      "op": "move",
+      "at": 150.2,
+      "to": {
+        "target": "sideBatches",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p46): 'Five pages, one sidebar' — top of the recap sweep"
+    },
+    {
+      "op": "move",
+      "at": 152.6,
+      "to": {
+        "target": "sideBatches",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p47): 'Batches for what came in and which P-O it filled' — recap in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 156.2,
+      "to": {
+        "target": "sideAdjustments",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p48): 'Adjustments for who changed a count and why'"
+    },
+    {
+      "op": "move",
+      "at": 159.2,
+      "to": {
+        "target": "sideVendors",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p49): 'Vendors for who to call'"
+    },
+    {
+      "op": "move",
+      "at": 161.2,
+      "to": {
+        "target": "sideChemicals",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p50): 'Chemicals and Supplies for what's running low'"
+    },
+    {
+      "op": "move",
+      "at": 164,
+      "to": {
+        "target": "sidePOs",
+        "offset": [
+          215,
+          10
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p51): 'Purchase Orders for what's on the way'"
+    },
+    {
+      "op": "move",
+      "at": 166.3,
+      "to": {
+        "target": "sideItems",
+        "offset": [
+          215,
+          8
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p52): 'once you can read one, you can read all six' — gesture to the full list incl. Inventory Items"
+    },
+    {
+      "op": "move",
+      "at": 168.4,
+      "to": {
+        "point": [
+          1560,
+          930
+        ]
+      },
+      "note": "final park, clear of content and captions, while the close lands"
+    },
+    {
+      "op": "assert",
+      "at": 169.6,
+      "predicate": "onPOs"
+    },
+    {
+      "op": "assert",
+      "at": 169.9,
+      "predicate": "sidebarExpanded"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "sideNav.sideAdjustments", "place": "right", "from": 2.3, "to": 15.9 },
-      { "n": 2, "anchor": "kpiStripBatch", "place": "below-left", "from": 20.5, "to": 25.6 },
-      { "n": 3, "anchor": "kpiStripAdj", "place": "below-left", "from": 41.2, "to": 46.2 },
-      { "n": 4, "anchor": "kpiStripVen", "place": "below-left", "from": 63.3, "to": 69.0 },
-      { "n": 5, "anchor": "thStatusChem", "place": "below-left", "from": 95.2, "to": 100.0 },
-      { "n": 6, "anchor": "kpiStripPO", "place": "below-left", "from": 110.6, "to": 114.6 },
-      { "n": 7, "anchor": "viewBtnPO", "place": "left", "from": 134.1, "to": 146.9 },
-      { "n": 8, "anchor": "sideNav2.sideAdjustments", "place": "right", "from": 152.3, "to": 167.8 }
+      {
+        "n": 1,
+        "anchor": "sideNav.sideAdjustments",
+        "place": "right",
+        "from": 2.3,
+        "to": 15.9
+      },
+      {
+        "n": 2,
+        "anchor": "kpiStripBatch",
+        "place": "below-left",
+        "from": 20.5,
+        "to": 25.6
+      },
+      {
+        "n": 3,
+        "anchor": "kpiStripAdj",
+        "place": "below-left",
+        "from": 41.2,
+        "to": 46.2
+      },
+      {
+        "n": 4,
+        "anchor": "kpiStripVen",
+        "place": "below-left",
+        "from": 63.3,
+        "to": 69
+      },
+      {
+        "n": 5,
+        "anchor": "thStatusChem",
+        "place": "below-left",
+        "from": 95.2,
+        "to": 100
+      },
+      {
+        "n": 6,
+        "anchor": "kpiStripPO",
+        "place": "below-left",
+        "from": 110.6,
+        "to": 114.6
+      },
+      {
+        "n": 7,
+        "anchor": "viewBtnPO",
+        "place": "left",
+        "from": 134.1,
+        "to": 146.9
+      },
+      {
+        "n": 8,
+        "anchor": "sideNav2.sideAdjustments",
+        "place": "right",
+        "from": 152.3,
+        "to": 167.8
+      }
     ],
     "highlights": [
-      { "anchor": "sideNav.sideItems", "from": 2.4, "to": 3.2, "note": "p02: sweep the six entries in order" },
-      { "anchor": "sideNav.sideBatches", "from": 3.2, "to": 3.9 },
-      { "anchor": "sideNav.sideAdjustments", "from": 3.9, "to": 4.6 },
-      { "anchor": "sideNav.sideVendors", "from": 4.6, "to": 5.3 },
-      { "anchor": "sideNav.sideChemicals", "from": 5.3, "to": 5.9 },
-      { "anchor": "sideNav.sidePOs", "from": 5.9, "to": 6.5 },
-      { "anchor": "sideNav.sideItems", "from": 12.2, "to": 14.1, "note": "p06: Inventory Items — its own lesson (WC-04-01), named not toured" },
-      { "anchor": "kpiStripBatch", "from": 20.6, "to": 23.2, "note": "p10: the tiles count arrived / open / cost" },
-      { "anchor": "thRefBatch", "from": 23.4, "to": 25.7, "note": "p11: Reference earns its keep" },
-      { "anchor": "refCellBatch", "from": 26.0, "to": 34.6, "note": "p12-p13: BATCH-0084 -> PO-2025-084 ties the receipt to the order" },
-      { "anchor": "exportBatch", "from": 34.9, "to": 38.5, "color": "#dc2626", "note": "step 2 guardrail: Export located, never clicked (read-only)" },
-      { "anchor": "newRecBatch", "from": 34.9, "to": 38.5, "color": "#dc2626", "note": "step 2 guardrail: + New Record located, never clicked" },
-      { "anchor": "kpiStripAdj", "from": 41.2, "to": 46.2, "note": "p16: 142 Positive / 170 Negative" },
-      { "anchor": "thsAdj.thLocation", "from": 51.7, "to": 52.8, "note": "p18: location," },
-      { "anchor": "thsAdj.thTicket", "from": 52.8, "to": 54.1, "note": "ticket," },
-      { "anchor": "thsAdj.thShift", "from": 54.1, "to": 55.2, "note": "shift," },
-      { "anchor": "thsAdj.thCashier", "from": 55.2, "to": 56.4, "note": "and cashier" },
-      { "anchor": "negTotalAdj", "from": 56.6, "to": 59.2, "note": "p19: -$24.99 is a real correction, not just a number" },
-      { "anchor": "negRowAdj", "from": 59.3, "to": 62.1, "note": "p20: SHIFT-440 / L. Nguyen — a person and a moment" },
-      { "anchor": "kpiStripVen", "from": 63.3, "to": 65.4, "note": "p21: the supplier directory" },
-      { "anchor": "thsVen.thAccountNo", "from": 65.6, "to": 66.5, "note": "p22: account number," },
-      { "anchor": "thsVen.thCompany", "from": 66.5, "to": 67.2, "note": "company," },
-      { "anchor": "thsVen.thContact", "from": 67.2, "to": 68.0, "note": "contact," },
-      { "anchor": "thsVen.thAddress", "from": 68.0, "to": 68.8, "note": "address," },
-      { "anchor": "thsVen.thPhone", "from": 68.8, "to": 69.6, "note": "phone" },
-      { "anchor": "rowVenRect", "from": 69.9, "to": 75.6, "note": "p23-p24: the name and number to call (VND-001 ChemCo Inc)" },
-      { "anchor": "openPOsVen", "from": 76.0, "to": 78.7, "note": "p25: 3 Open POs, the same figure as the Purchase Orders page" },
-      { "anchor": "sideNav.sidePOs", "from": 79.0, "to": 82.6, "note": "p26: one page over, on Purchase Orders" },
-      { "anchor": "thStockChem", "from": 89.1, "to": 90.6, "note": "p29: Stock Level" },
-      { "anchor": "thParChem", "from": 90.6, "to": 92.1, "note": "p29: against Par" },
-      { "anchor": "preSoakStockChem", "from": 92.3, "to": 93.5, "note": "p30: 2 gal" },
-      { "anchor": "preSoakParChem", "from": 93.5, "to": 94.6, "note": "p30: vs 30 gal par" },
-      { "anchor": "thStatusChem", "from": 95.2, "to": 98.1, "note": "p31: the Status chip in one word" },
-      { "anchor": "preSoakStatusChem", "from": 98.5, "to": 101.9, "note": "p32-p33: Pre-Soak reads Critical" },
-      { "anchor": "preSoakSupplierChem", "from": 102.5, "to": 104.2, "note": "p34: the supplier on the same row (ChemMax Pro)" },
-      { "anchor": "exportChem", "from": 104.5, "to": 108.8, "color": "#dc2626", "note": "step 5 guardrail: Export never clicked" },
-      { "anchor": "kpiStripPO", "from": 110.6, "to": 114.6, "note": "p36-p37: split by stage — open, pending approval, in transit" },
-      { "anchor": "thsPO.thSupplier", "from": 115.0, "to": 116.2, "note": "p38: supplier," },
-      { "anchor": "thsPO.thLocation", "from": 116.2, "to": 117.4, "note": "site," },
-      { "anchor": "thsPO.thTotal", "from": 117.4, "to": 119.3, "note": "money" },
-      { "anchor": "thsPO.thCreated", "from": 120.1, "to": 121.9, "note": "p39: created" },
-      { "anchor": "thsPO.thExpected", "from": 122.0, "to": 125.0, "note": "p39: expected" },
-      { "anchor": "thsPO.thStatus", "from": 125.5, "to": 133.4, "note": "p40: the Status chip — waiting, in transit, or done" },
-      { "anchor": "viewBtnPO", "from": 134.1, "to": 143.4, "note": "step 7 (p41-p43): the View affordance is pointed at, not clicked — the live quick-look is broken (RESIDUAL R1)" },
-      { "anchor": "sideNav2.sideBatches", "from": 152.4, "to": 155.4, "note": "p47: Batches" },
-      { "anchor": "sideNav2.sideAdjustments", "from": 156.0, "to": 158.4, "note": "p48: Adjustments" },
-      { "anchor": "sideNav2.sideVendors", "from": 159.1, "to": 160.5, "note": "p49: Vendors" },
-      { "anchor": "sideNav2.sideChemicals", "from": 161.1, "to": 163.4, "note": "p50: Chemicals & Supplies" },
-      { "anchor": "sideNav2.sidePOs", "from": 163.9, "to": 165.6, "note": "p51: Purchase Orders" }
+      {
+        "anchor": "sideNav.sideItems",
+        "from": 2.4,
+        "to": 3.2,
+        "note": "p02: sweep the six entries in order"
+      },
+      {
+        "anchor": "sideNav.sideBatches",
+        "from": 3.2,
+        "to": 3.9
+      },
+      {
+        "anchor": "sideNav.sideAdjustments",
+        "from": 3.9,
+        "to": 4.6
+      },
+      {
+        "anchor": "sideNav.sideVendors",
+        "from": 4.6,
+        "to": 5.3
+      },
+      {
+        "anchor": "sideNav.sideChemicals",
+        "from": 5.3,
+        "to": 5.9
+      },
+      {
+        "anchor": "sideNav.sidePOs",
+        "from": 5.9,
+        "to": 6.5
+      },
+      {
+        "anchor": "sideNav.sideItems",
+        "from": 12.2,
+        "to": 14.1,
+        "note": "p06: Inventory Items — its own lesson (WC-04-01), named not toured"
+      },
+      {
+        "anchor": "kpiStripBatch",
+        "from": 20.6,
+        "to": 23.2,
+        "note": "p10: the tiles count arrived / open / cost"
+      },
+      {
+        "anchor": "thRefBatch",
+        "from": 23.4,
+        "to": 25.7,
+        "note": "p11: Reference earns its keep"
+      },
+      {
+        "anchor": "refCellBatch",
+        "from": 26,
+        "to": 34.6,
+        "note": "p12-p13: BATCH-0084 -> PO-2025-084 ties the receipt to the order"
+      },
+      {
+        "anchor": "exportBatch",
+        "from": 34.9,
+        "to": 38.5,
+        "color": "#dc2626",
+        "note": "step 2 guardrail: Export located, never clicked (read-only)"
+      },
+      {
+        "anchor": "newRecBatch",
+        "from": 34.9,
+        "to": 38.5,
+        "color": "#dc2626",
+        "note": "step 2 guardrail: + New Record located, never clicked"
+      },
+      {
+        "anchor": "kpiStripAdj",
+        "from": 41.2,
+        "to": 46.2,
+        "note": "p16: 142 Positive / 170 Negative"
+      },
+      {
+        "anchor": "thsAdj.thLocation",
+        "from": 51.7,
+        "to": 52.8,
+        "note": "p18: location,"
+      },
+      {
+        "anchor": "thsAdj.thTicket",
+        "from": 52.8,
+        "to": 54.1,
+        "note": "ticket,"
+      },
+      {
+        "anchor": "thsAdj.thShift",
+        "from": 54.1,
+        "to": 55.2,
+        "note": "shift,"
+      },
+      {
+        "anchor": "thsAdj.thCashier",
+        "from": 55.2,
+        "to": 56.4,
+        "note": "and cashier"
+      },
+      {
+        "anchor": "negTotalAdj",
+        "from": 56.6,
+        "to": 59.2,
+        "note": "p19: -$24.99 is a real correction, not just a number"
+      },
+      {
+        "anchor": "negRowAdj",
+        "from": 59.3,
+        "to": 62.1,
+        "note": "p20: SHIFT-440 / L. Nguyen — a person and a moment"
+      },
+      {
+        "anchor": "kpiStripVen",
+        "from": 63.3,
+        "to": 65.4,
+        "note": "p21: the supplier directory"
+      },
+      {
+        "anchor": "thsVen.thAccountNo",
+        "from": 65.6,
+        "to": 66.5,
+        "note": "p22: account number,"
+      },
+      {
+        "anchor": "thsVen.thCompany",
+        "from": 66.5,
+        "to": 67.2,
+        "note": "company,"
+      },
+      {
+        "anchor": "thsVen.thContact",
+        "from": 67.2,
+        "to": 68,
+        "note": "contact,"
+      },
+      {
+        "anchor": "thsVen.thAddress",
+        "from": 68,
+        "to": 68.8,
+        "note": "address,"
+      },
+      {
+        "anchor": "thsVen.thPhone",
+        "from": 68.8,
+        "to": 69.6,
+        "note": "phone"
+      },
+      {
+        "anchor": "rowVenRect",
+        "from": 69.9,
+        "to": 75.6,
+        "note": "p23-p24: the name and number to call (VND-001 ChemCo Inc)"
+      },
+      {
+        "anchor": "openPOsVen",
+        "from": 76,
+        "to": 78.7,
+        "note": "p25: 3 Open POs, the same figure as the Purchase Orders page"
+      },
+      {
+        "anchor": "sideNav.sidePOs",
+        "from": 79,
+        "to": 82.6,
+        "note": "p26: one page over, on Purchase Orders"
+      },
+      {
+        "anchor": "thStockChem",
+        "from": 89.1,
+        "to": 90.6,
+        "note": "p29: Stock Level"
+      },
+      {
+        "anchor": "thParChem",
+        "from": 90.6,
+        "to": 92.1,
+        "note": "p29: against Par"
+      },
+      {
+        "anchor": "preSoakStockChem",
+        "from": 92.3,
+        "to": 93.5,
+        "note": "p30: 2 gal"
+      },
+      {
+        "anchor": "preSoakParChem",
+        "from": 93.5,
+        "to": 94.6,
+        "note": "p30: vs 30 gal par"
+      },
+      {
+        "anchor": "thStatusChem",
+        "from": 95.2,
+        "to": 98.1,
+        "note": "p31: the Status chip in one word"
+      },
+      {
+        "anchor": "preSoakStatusChem",
+        "from": 98.5,
+        "to": 101.9,
+        "note": "p32-p33: Pre-Soak reads Critical"
+      },
+      {
+        "anchor": "preSoakSupplierChem",
+        "from": 102.5,
+        "to": 104.2,
+        "note": "p34: the supplier on the same row (ChemMax Pro)"
+      },
+      {
+        "anchor": "exportChem",
+        "from": 104.5,
+        "to": 108.8,
+        "color": "#dc2626",
+        "note": "step 5 guardrail: Export never clicked"
+      },
+      {
+        "anchor": "kpiStripPO",
+        "from": 110.6,
+        "to": 114.6,
+        "note": "p36-p37: split by stage — open, pending approval, in transit"
+      },
+      {
+        "anchor": "thsPO.thSupplier",
+        "from": 115,
+        "to": 116.2,
+        "note": "p38: supplier,"
+      },
+      {
+        "anchor": "thsPO.thLocation",
+        "from": 116.2,
+        "to": 117.4,
+        "note": "site,"
+      },
+      {
+        "anchor": "thsPO.thTotal",
+        "from": 117.4,
+        "to": 119.3,
+        "note": "money"
+      },
+      {
+        "anchor": "thsPO.thCreated",
+        "from": 120.1,
+        "to": 121.9,
+        "note": "p39: created"
+      },
+      {
+        "anchor": "thsPO.thExpected",
+        "from": 122,
+        "to": 125,
+        "note": "p39: expected"
+      },
+      {
+        "anchor": "thsPO.thStatus",
+        "from": 125.5,
+        "to": 133.4,
+        "note": "p40: the Status chip — waiting, in transit, or done"
+      },
+      {
+        "anchor": "viewBtnPO",
+        "from": 134.1,
+        "to": 143.4,
+        "note": "step 7 (p41-p43): the View affordance is pointed at, not clicked — the live quick-look is broken (RESIDUAL R1)"
+      },
+      {
+        "anchor": "sideNav2.sideBatches",
+        "from": 152.4,
+        "to": 155.4,
+        "note": "p47: Batches"
+      },
+      {
+        "anchor": "sideNav2.sideAdjustments",
+        "from": 156,
+        "to": 158.4,
+        "note": "p48: Adjustments"
+      },
+      {
+        "anchor": "sideNav2.sideVendors",
+        "from": 159.1,
+        "to": 160.5,
+        "note": "p49: Vendors"
+      },
+      {
+        "anchor": "sideNav2.sideChemicals",
+        "from": 161.1,
+        "to": 163.4,
+        "note": "p50: Chemicals & Supplies"
+      },
+      {
+        "anchor": "sideNav2.sidePOs",
+        "from": 163.9,
+        "to": 165.6,
+        "note": "p51: Purchase Orders"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 16.2, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 20.4, "z": 1.2, "cx": 1030, "cy": 430, "ease": true, "note": "step 2: Inventory Batches — KPI band and list in one calm framing" },
-      { "t": 23.2, "z": 1.2, "cx": 1030, "cy": 430 },
-      { "t": 23.35, "z": 1.5, "cx": 1060, "cy": 530, "ease": true, "note": "step 2: 150% on the Reference column (shot list)" },
-      { "t": 28.5, "z": 1.5, "cx": 1060, "cy": 530 },
-      { "t": 28.9, "z": 1.2, "cx": 1120, "cy": 470, "ease": true, "note": "ease back over the list" },
-      { "t": 34.6, "z": 1.2, "cx": 1120, "cy": 470 },
-      { "t": 34.9, "z": 1.18, "cx": 1500, "cy": 430, "ease": true, "note": "Export / + New Record guardrail in frame" },
-      { "t": 38.3, "z": 1.18, "cx": 1500, "cy": 430 },
-      { "t": 38.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the page change (step 3 click)" },
-      { "t": 40.8, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 41.0, "z": 1.2, "cx": 1030, "cy": 430, "ease": true, "note": "step 3: Adjustments — KPIs and columns" },
-      { "t": 56.3, "z": 1.2, "cx": 1030, "cy": 430 },
-      { "t": 56.5, "z": 1.5, "cx": 1312, "cy": 600, "ease": true, "note": "step 3: 150% on the -$24.99 negative Total row (shot list)" },
-      { "t": 59.2, "z": 1.5, "cx": 1312, "cy": 600 },
-      { "t": 59.5, "z": 1.2, "cx": 1250, "cy": 560, "ease": true, "note": "ease to show the traceable shift/cashier" },
-      { "t": 62.0, "z": 1.2, "cx": 1250, "cy": 560 },
-      { "t": 62.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the page change (step 4 click)" },
-      { "t": 63.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 63.2, "z": 1.18, "cx": 1000, "cy": 430, "ease": true, "note": "step 4: Vendors — KPI band, directory columns, 3 Open POs tile" },
-      { "t": 78.6, "z": 1.18, "cx": 1000, "cy": 430 },
-      { "t": 79.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide: Purchase Orders pointer + page change (step 5)" },
-      { "t": 82.8, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 83.0, "z": 1.18, "cx": 1030, "cy": 430, "ease": true, "note": "step 5: Chemicals & Supplies — KPI band and list" },
-      { "t": 92.1, "z": 1.18, "cx": 1030, "cy": 430 },
-      { "t": 92.3, "z": 1.5, "cx": 1150, "cy": 610, "ease": true, "note": "step 5: 150% on Stock Level vs Par (Pre-Soak 2 vs 30 gal)" },
-      { "t": 94.5, "z": 1.5, "cx": 1150, "cy": 610 },
-      { "t": 94.9, "z": 1.3, "cx": 1480, "cy": 570, "ease": true, "note": "step 5: Status chips and Supplier column" },
-      { "t": 103.6, "z": 1.3, "cx": 1480, "cy": 570 },
-      { "t": 103.9, "z": 1.18, "cx": 1500, "cy": 430, "ease": true, "note": "Export guardrail in frame" },
-      { "t": 108.6, "z": 1.18, "cx": 1500, "cy": 430 },
-      { "t": 108.8, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the page change (step 6 click)" },
-      { "t": 110.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 110.2, "z": 1.18, "cx": 1000, "cy": 430, "ease": true, "note": "step 6: Purchase Orders — KPI band and the nine columns" },
-      { "t": 133.4, "z": 1.18, "cx": 1000, "cy": 430 },
-      { "t": 133.7, "z": 1.2, "cx": 1480, "cy": 540, "ease": true, "note": "step 7: Details column and the View affordance (pointed at, not clicked)" },
-      { "t": 149.4, "z": 1.2, "cx": 1480, "cy": 540 },
-      { "t": 149.7, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "settle wide before the recap" },
-      { "t": 150.3, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 150.6, "z": 1.3, "cx": 400, "cy": 235, "ease": true, "note": "step 8: sidebar recap — five pages, one sidebar" },
-      { "t": 168.0, "z": 1.3, "cx": 400, "cy": 235 },
-      { "t": 168.5, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close" },
-      { "t": 170.841, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 20.4,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 2: Inventory Batches — KPI band and list in one calm framing"
+      },
+      {
+        "t": 23.2,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 23.35,
+        "z": 1.5,
+        "cx": 1060,
+        "cy": 530,
+        "ease": true,
+        "note": "step 2: 150% on the Reference column (shot list)"
+      },
+      {
+        "t": 28.5,
+        "z": 1.5,
+        "cx": 1060,
+        "cy": 530
+      },
+      {
+        "t": 28.9,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 470,
+        "ease": true,
+        "note": "ease back over the list"
+      },
+      {
+        "t": 34.6,
+        "z": 1.2,
+        "cx": 1120,
+        "cy": 470
+      },
+      {
+        "t": 34.9,
+        "z": 1.18,
+        "cx": 1500,
+        "cy": 430,
+        "ease": true,
+        "note": "Export / + New Record guardrail in frame"
+      },
+      {
+        "t": 38.3,
+        "z": 1.18,
+        "cx": 1500,
+        "cy": 430
+      },
+      {
+        "t": 38.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the page change (step 3 click)"
+      },
+      {
+        "t": 40.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 41,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 3: Adjustments — KPIs and columns"
+      },
+      {
+        "t": 56.3,
+        "z": 1.2,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 56.5,
+        "z": 1.5,
+        "cx": 1312,
+        "cy": 600,
+        "ease": true,
+        "note": "step 3: 150% on the -$24.99 negative Total row (shot list)"
+      },
+      {
+        "t": 59.2,
+        "z": 1.5,
+        "cx": 1312,
+        "cy": 600
+      },
+      {
+        "t": 59.5,
+        "z": 1.2,
+        "cx": 1250,
+        "cy": 560,
+        "ease": true,
+        "note": "ease to show the traceable shift/cashier"
+      },
+      {
+        "t": 62,
+        "z": 1.2,
+        "cx": 1250,
+        "cy": 560
+      },
+      {
+        "t": 62.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the page change (step 4 click)"
+      },
+      {
+        "t": 63,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 63.2,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 430,
+        "ease": true,
+        "note": "step 4: Vendors — KPI band, directory columns, 3 Open POs tile"
+      },
+      {
+        "t": 78.6,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 430
+      },
+      {
+        "t": 79,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide: Purchase Orders pointer + page change (step 5)"
+      },
+      {
+        "t": 82.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 83,
+        "z": 1.18,
+        "cx": 1030,
+        "cy": 430,
+        "ease": true,
+        "note": "step 5: Chemicals & Supplies — KPI band and list"
+      },
+      {
+        "t": 92.1,
+        "z": 1.18,
+        "cx": 1030,
+        "cy": 430
+      },
+      {
+        "t": 92.3,
+        "z": 1.5,
+        "cx": 1150,
+        "cy": 610,
+        "ease": true,
+        "note": "step 5: 150% on Stock Level vs Par (Pre-Soak 2 vs 30 gal)"
+      },
+      {
+        "t": 94.5,
+        "z": 1.5,
+        "cx": 1150,
+        "cy": 610
+      },
+      {
+        "t": 94.9,
+        "z": 1.3,
+        "cx": 1480,
+        "cy": 570,
+        "ease": true,
+        "note": "step 5: Status chips and Supplier column"
+      },
+      {
+        "t": 103.6,
+        "z": 1.3,
+        "cx": 1480,
+        "cy": 570
+      },
+      {
+        "t": 103.9,
+        "z": 1.18,
+        "cx": 1500,
+        "cy": 430,
+        "ease": true,
+        "note": "Export guardrail in frame"
+      },
+      {
+        "t": 108.6,
+        "z": 1.18,
+        "cx": 1500,
+        "cy": 430
+      },
+      {
+        "t": 108.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the page change (step 6 click)"
+      },
+      {
+        "t": 110,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 110.2,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 430,
+        "ease": true,
+        "note": "step 6: Purchase Orders — KPI band and the nine columns"
+      },
+      {
+        "t": 133.4,
+        "z": 1.18,
+        "cx": 1000,
+        "cy": 430
+      },
+      {
+        "t": 133.7,
+        "z": 1.2,
+        "cx": 1480,
+        "cy": 540,
+        "ease": true,
+        "note": "step 7: Details column and the View affordance (pointed at, not clicked)"
+      },
+      {
+        "t": 149.4,
+        "z": 1.2,
+        "cx": 1480,
+        "cy": 540
+      },
+      {
+        "t": 149.7,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "settle wide before the recap"
+      },
+      {
+        "t": 150.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 150.6,
+        "z": 1.3,
+        "cx": 400,
+        "cy": 235,
+        "ease": true,
+        "note": "step 8: sidebar recap — five pages, one sidebar"
+      },
+      {
+        "t": 168,
+        "z": 1.3,
+        "cx": 400,
+        "cy": 235
+      },
+      {
+        "t": 168.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close"
+      },
+      {
+        "t": 170.841,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": true,
     "completion": {
       "text": "Inventory: Batches, Adjustments & Vendors — Complete",
-      "from": 169.0,
+      "from": 169,
       "fadeOutFrames": 10
     },
     "captionsBurnClearAt": 168.7

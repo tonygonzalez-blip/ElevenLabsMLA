@@ -178,7 +178,8 @@
       "to": 196,
       "predicate": "sidebarExpanded",
       "everyMs": 2500,
-      "mustHold": true
+      "mustHold": true,
+      "holdTolerance": 1
     },
     {
       "op": "watch",

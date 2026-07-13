@@ -167,7 +167,7 @@ class Engine {
     throw new Error(`postcondition failed within ${timeoutMs}ms: ${label || expr}`);
   }
   startWatch(w) {
-    const rec = { key: w.key, samples: [], mustHold: !!w.mustHold, predicate: w.predicate };
+    const rec = { key: w.key, samples: [], mustHold: !!w.mustHold, predicate: w.predicate, holdTolerance: w.holdTolerance || 0 };
     this.log.watches.push(rec);
     const iv = setInterval(async () => {
       const t = this.now();
@@ -456,9 +456,16 @@ async function main() {
     log.rawDurationS = +rawDur.toFixed(3);
   }
 
-  // watch verdicts
+  // watch verdicts. A watch holds when no RUN of consecutive failed samples exceeds its
+  // holdTolerance (default 0 = strict: any failed sample breaks it). Tolerance distinguishes an
+  // isolated post-navigation transient (the sidebar briefly renders collapsed for ~1 sample while
+  // the new page's JS re-applies the expanded preference) from a genuine sustained collapse (many
+  // consecutive failed samples). Safety guardrail watches (forbidden controls) set no tolerance and
+  // stay strict.
   for (const w of log.watches) {
-    w.held = w.samples.length > 0 && w.samples.every(s => s.ok);
+    let maxConsecFail = 0, consecFail = 0;
+    for (const s of w.samples) { if (s.ok) consecFail = 0; else { consecFail++; if (consecFail > maxConsecFail) maxConsecFail = consecFail; } }
+    w.held = w.samples.length > 0 && maxConsecFail <= (w.holdTolerance || 0);
     if (w.mustHold && !w.held && !failed) failed = new Error(`watch failed: ${w.key} did not hold`);
   }
 
