@@ -42,7 +42,15 @@ echo "=== [$L] composite (cpu lock) ==="
 flock "$CPU_LOCK" node production/compositor.mjs "$LJ" || exit 1
 
 echo "=== [$L] machine QA ==="
-node production/qa-verify.mjs "$LJ" || exit 1
+# On QA failure the composite already wrote the final training/<module>/<output>.mp4. That video is
+# unshippable (failed a real check) and would otherwise linger untracked until the lesson is fixed.
+# Remove it so the tree stays clean; it is regenerated when the lesson is re-authored + re-produced.
+if ! node production/qa-verify.mjs "$LJ"; then
+  OUT=$(node -e "console.log(require('./$LJ').output||'')" 2>/dev/null)
+  [ -n "$OUT" ] && rm -f training/*/"$OUT".mp4
+  echo "QA failed; removed unshippable composite ${OUT}.mp4"
+  exit 1
+fi
 
 echo "=== [$L] contact sheet ==="
 node production/contact-sheet.mjs "$LJ" || exit 1
