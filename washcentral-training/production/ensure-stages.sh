@@ -10,6 +10,14 @@ ensure() {
   curl -s --max-time 3 "http://127.0.0.1:$port/json/version" >/dev/null 2>&1 && return 0
   echo "[stages] $port down; relaunching on display $disp (proxy $HTTPS_PROXY)"
   pgrep -f "remote-debugging-port=$port" >/dev/null && pkill -f "remote-debugging-port=$port" && sleep 1
+  # A container restart / egress-proxy rotation can leave an opaque (cross-origin-tagged) styles.css
+  # in the profile HTTP cache: the stylesheet then loads but never applies (.app stays display:none)
+  # and EVERY lesson fails ensureStyled — a full-queue cascade. Wipe the profile HTTP caches on every
+  # relaunch so recovery is always clean. Sign-in state lives in Local Storage (not cleared here) and
+  # is re-established by signin-token.mjs below regardless.
+  local P="$SCRATCH/chrome-profiles/$prof"
+  rm -rf "$P/Default/Cache" "$P/Default/Code Cache" "$P/Default/GPUCache" "$P/GrCache" "$P/ShaderCache" 2>/dev/null
+  rm -f "$P/SingletonLock" "$P/SingletonCookie" "$P/SingletonSocket" 2>/dev/null
   if ! pgrep -f "Xvfb $disp " >/dev/null; then
     Xvfb "$disp" -screen 0 1920x1080x24 -nolisten tcp >/dev/null 2>&1 &
     sleep 2

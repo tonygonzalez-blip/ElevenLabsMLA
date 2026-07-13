@@ -370,27 +370,41 @@ async function normalizeStageWindow(cdp) {
 // page is a single/short screen well under 6000px). If any fails, hard-reload bypassing cache
 // until it holds, then abort so a take is never recorded against a broken/unbuilt page.
 async function ensureStyled(cdp, url, tries = 5) {
+  const probe = async () => cdp.eval(`(()=>{
+    const ext=[...document.styleSheets].find(x=>x.href&&x.href.includes('styles.css'));
+    let rules=0; try{ rules = ext ? ext.cssRules.length : 0 }catch(e){ rules=-1 }
+    const app=document.querySelector('.app');
+    const disp=app?getComputedStyle(app).display:'';
+    return { rules, disp, hasApp:!!app, ready:document.readyState, docH:document.documentElement.scrollHeight, ssLoaded:!!ext };
+  })()`);
+  // The styling signal is the APPLIED LAYOUT, not the readability of the rule list. `.app` computes
+  // to flex/grid only when styles.css actually applied; an empty/failed stylesheet leaves it
+  // block/none and is still caught. cssRules can throw a SecurityError (rules===-1) when the sheet
+  // is served opaque/cross-origin through the egress proxy even though the CSS is fully applied —
+  // the old `rules>0` gate wrongly failed those pages. We also poll patiently before hard-reloading:
+  // the 327KB stylesheet can take a few seconds over the proxy (worse right after a proxy rotation),
+  // and an ignoreCache reload re-fetches it every time, so checking too eagerly then thrashing never
+  // let it settle.
+  const isStyledBuilt = (s) => (s.disp === 'flex' || s.disp === 'grid') && s.ssLoaded
+    && s.ready === 'complete' && s.docH > 0 && s.docH < 6000;
   for (let i = 0; i < tries; i++) {
-    const s = await cdp.eval(`(()=>{
-      const ext=[...document.styleSheets].find(x=>x.href&&x.href.includes('styles.css'));
-      let rules=0; try{ rules = ext ? ext.cssRules.length : 0 }catch(e){ rules=-1 }
-      const app=document.querySelector('.app');
-      const disp=app?getComputedStyle(app).display:'';
-      return { rules, disp, hasApp:!!app, ready:document.readyState, docH:document.documentElement.scrollHeight };
-    })()`);
-    const styled = s.rules > 0 && (s.disp === 'flex' || s.disp === 'grid');
-    const built = s.ready === 'complete' && s.docH > 0 && s.docH < 6000;
-    if (styled && built) {
-      if (i > 0) console.log(`  page styled+built after ${i} reload(s) (styles.css ${s.rules} rules, .app ${s.disp}, docH ${s.docH})`);
-      return;
+    let s;
+    for (let w = 0; w < 10; w++) {           // ~7s patient poll per attempt
+      s = await probe();
+      if (isStyledBuilt(s)) {
+        if (i > 0 || w > 0) console.log(`  page styled+built (.app ${s.disp}, styles.css ${s.rules === -1 ? 'applied/opaque' : s.rules + ' rules'}, docH ${s.docH})`);
+        return;
+      }
+      await sleep(700);
     }
-    const why = !styled ? `UNSTYLED (styles.css rules=${s.rules}, .app display=${s.disp || 'none'})`
+    const styledNow = (s.disp === 'flex' || s.disp === 'grid') && s.ssLoaded;
+    const why = !styledNow ? `UNSTYLED (styles.css rules=${s.rules}, ssLoaded=${s.ssLoaded}, .app display=${s.disp || 'none'})`
       : `UNBUILT shell (readyState=${s.ready}, docH=${s.docH})`;
     console.log(`  page ${why}; hard-reloading (${i + 1}/${tries})`);
     const loaded = cdp.once('Page.loadEventFired').catch(() => null);
     await cdp.send('Page.reload', { ignoreCache: true });
     await loaded;
-    await sleep(1800);
+    await sleep(1500);
   }
   throw new Error(`page failed to render styled+built after ${tries} cache-bypassing reloads (stylesheet/bootstrap fetch keeps returning empty/error): ${url}`);
 }
