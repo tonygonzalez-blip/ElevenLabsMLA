@@ -98,8 +98,7 @@
       "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/phone & email/i.test((e.textContent||'').trim()))?.closest('.a-group')"
     },
     "sideCustomers": {
-      "text": "Customers",
-      "scope": "aside.sidebar a"
+      "selector": "a.menu-header[href=\"crm-customers.html\"]"
     },
     "kpiStrip": {
       "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
@@ -126,7 +125,7 @@
     "pageReady": "document.readyState==='complete' && ![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
     "editFormReady": "location.pathname.endsWith('/crm-customer-edit.html') && document.readyState==='complete' && !!document.querySelector('.a-panel.active') && /PERSONAL & BUSINESS/i.test(document.querySelector('.a-panel.active').innerText)",
     "sidebarExpandedNow": "!!document.querySelector('.app') && !document.querySelector('.app').classList.contains('sidebar-collapsed')",
-    "detailSidebarReady": "location.pathname.endsWith('/crm-customer-detail.html') && [...document.querySelectorAll('aside.sidebar a')].some(a=>(a.textContent||'').trim().replace(/\\s+/g,' ')==='Customers')"
+    "detailSidebarReady": "location.pathname.endsWith('/crm-customer-detail.html') && [...document.querySelectorAll('a.menu-header')].some(a=>a.getAttribute('href')==='crm-customers.html' && a.getBoundingClientRect().width>0)"
   },
   "preflight": [
     {

@@ -6,6 +6,49 @@ lesson and SKIPs these. Each needs per-lesson re-authoring against the CURRENT s
 timing unchanged, verify a clean rehearse). Never fake a selector or narrate a value the screen no
 longer shows.
 
+## CORRECTED ROOT-CAUSE DIAGNOSIS (2026-07-14) — supersedes the "session modal" conclusion
+Two prior conclusions were WRONG and must not drive future work:
+
+1. **There is NO undismissable "server-side session-idle modal" blocking production, and NO human
+   login is required to unblock.** Ground-truth screenshots (Page.captureScreenshot on stage 9223)
+   show `command-center.html` and the other content pages render **completely clean** — fully
+   styled, no dialog. The "still there / stay logged in" element DOES exist in the DOM on every
+   page, but it is **occluded and never painted** (elementFromPoint at its own rect returns the
+   page content behind it; there is no big visible overlay). The predicates that reported it as
+   present —
+   `[...document.querySelectorAll('*')].some(e=>/still there/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)`
+   — are **false positives**: HTML/BODY ancestors always have width>0 and their textContent
+   contains the hidden element's text, so the check trips on a modal that is not on camera. The
+   engine's preflight `dismissIdle` already handles the real thing off-camera ("dismissed idle
+   session dialog" appears in every clean rehearse). Do not gate any predicate on `/still there/`
+   whole-page text; if a visibility check is needed, hit-test the element itself
+   (`document.elementFromPoint(cx,cy)` returns the modal/button) — not ancestor textContent.
+
+2. **The real systemic blocker is a comprehensive app-wide UI redesign shipped AFTER narration was
+   locked.** Confirmed live (2026-07-14):
+   - **Left nav: `aside.sidebar` → `#wc-rail` rail (app-wide, not just Settings).** The classic
+     `aside.sidebar` still exists but now holds only the brand/context header (`.brand`,
+     `.wc-ctx-hdr`) with **zero nav links**. Nav moved to `#wc-rail` (`.wc-rail-item.has-sub`
+     buttons + `.wc-rail-label`); a section's links appear as `a.menu-header[href=...]` inside a
+     `.menu` panel that is auto-expanded for the current section (e.g. on crm-customer-detail the
+     CRM group is open and `a.menu-header[href="crm-customers.html"]` "Customers" is visible by
+     default). Any lesson whose targets/predicates use `aside.sidebar a` is DEAD and needs
+     re-pointing to `a.menu-header[href=...]`. WC-02-03's `sideCustomers`/`detailSidebarReady`
+     were fixed this way (2026-07-14).
+   - **LMS `lms-home.html` is gated by a mandatory "Who's learning?" persona-picker modal** (NOT a
+     session modal): "Pick the employee whose training you're viewing." with an employee search +
+     list, backdrop `.wc-cmd-overlay`. **Escape and backdrop-click do NOT dismiss it**; it requires
+     selecting an employee (a data-touch: "Progress is saved to their record"). So WC-14-01/02 and
+     WC-15-01 (which use lms-home as a backdrop) need either a different clean backdrop or a
+     persona selection — a re-author/product decision, not a predicate tweak. (The earlier
+     "lms-home session-idle modal" note below is superseded: the visible LMS modal is this
+     persona-picker.)
+   - **customer-detail tabs renamed/restructured** (see WC-02-03 below).
+
+   **Bottom line:** production is NOT waiting on an external human login. It is waiting on (a)
+   per-lesson re-authoring against the rail/launcher/persona redesign, and (b) genuine
+   locked-narration decisions where the redesign renamed/deleted UI the approved audio names.
+
 ## Module 12 — Settings was REDESIGNED (biggest impact)
 Root cause (probe-verified): settings.html home is now a new `sw-app` launcher — the classic
 `aside.sidebar > #sidebar-menu.settings-nav-v2` is `display:none` there, so the old
@@ -48,11 +91,31 @@ real total pages now 95), right pane `.sw-body`.
   raw HTML is 200/valid). Needs investigation (mobile viewport/UA?) or is a demo-site limitation.
 - **WC-10-03** (Zoho Help Desk) — `integCard` (`.sh-card-name` "Integrations") not found on the
   nav pages; the Integrations card moved/renamed. Re-probe the settings/help-desk flow.
+- **WC-PB-04** (Payment Declines) — RECLASSIFIED 2026-07-14: **locked-narration blocker.** Surface
+  fixes found + applied: (1) command-center body shortened, so the step-2 keyboard scroll (11
+  ArrowDowns → y=440) fell short of the `ccScrolledFeed` (>=550) gate; bumped to 16 ArrowDowns
+  (verified: `key`+feed log-rects now pass). (2) `setLocationsHeader`/`sideLocations` use the dead
+  `aside.sidebar` nav. BUT the s09/s10 narration (141–175s) is desynced: p43 "read its **Payments
+  and Credentials tab**" — no such tab (location detail rebuilt to 10 tabs: Company Details,
+  Address & Contact, Time & Scheduling, Operations & Features, Payments & Refunds, Portal & Online,
+  Messages & Notifications, VIP & Memberships, Employee & Security, House Accounts & Misc); p44 "the
+  processors sit in named blocks: **Open Edge, Smart Tech, Other, and Card Connect**" — none present
+  (verified false); p41/p47 "**Payment Credential Approval**" side-menu gate — not present. Cannot
+  be produced faithfully; needs a re-cut of s09/s10 = user sign-off. Scroll fix kept in config.
 - **WC-10-04** (System Alerts) — QA check 25 teleport: move offset `[1350,0]` pushes the cursor to
   x=2467 (off-screen, viewport 1920) then glides back 94px/step. Re-probe the "Active column" x and
   reduce the sweep offset so the cursor stays on-screen.
-- **WC-02-03** (Edit/New Customer) — `sideCustomers` intermittent: the customer-detail sidebar
-  sometimes doesn't rebuild after the cancelTop nav. Add a settle/retry so the sidebar link resolves.
+- **WC-02-03** (Edit/New Customer) — RECLASSIFIED 2026-07-14: **locked-narration blocker.** Two
+  separate drifts. (1) FIXED: `sideCustomers`/`detailSidebarReady` used the dead `aside.sidebar a`
+  nav; re-pointed to `a.menu-header[href="crm-customers.html"]` (the rail; present by default on
+  the CRM detail page). (2) BLOCKER: the customer-detail tabs were renamed/restructured — live tabs
+  are now **Overview, Operations, Payments, Activity, Messaging, Notes** (no "Communication",
+  "Contact", "Membership", "Vehicles", or "Comments" tab). Locked narration p13 says **"Messaging
+  turns into Communication, Notes into Comments"** and the tab-walk (s03, ~28–40s) targets
+  `tabContact/tabMembership/tabVehicles/tabCommunication/tabComments`. Producing it would point at a
+  tab labeled "Messaging" while the audio says it is now "Communication" — a direct visual/audio
+  contradiction. Cannot be produced faithfully; needs a re-cut of the s03 field-mapping block =
+  user sign-off. Do NOT re-point tab targets to the renamed tabs (ships an unfaithful video).
 - **WC-02-05** (House Accounts) — CONFIRMED LOCKED-NARRATION BLOCKER (agent-probed 4 accounts). Block
   s07 narrates "Three chips carry the terms: net thirty, a ten thousand dollar limit, fourteen
   vehicles" but house-account details NEVER render badge chips (`.a-badges` always empty) and have no
