@@ -582,10 +582,14 @@
       "timeoutMs": 8000
     },
     {
-      "op": "assert",
-      "at": 161.7,
-      "predicate": "usersSubmenuOpen",
-      "note": "fail fast: the Users & Security submenu must still be expanded (persisted washcentral-settings-menu-v1 users:true from the on-camera step 4 click); if this aborts, something reset the persisted menu state mid-take"
+      "op": "click",
+      "target": "usersHeader",
+      "pressAt": 161.7,
+      "hoverMs": 300,
+      "unless": "usersSubmenuOpen",
+      "postcondition": "usersSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "second visit: re-open the Users & Security launcher category so the System Users link is clickable (the sw-app launcher resets categories to closed on each load). unless-guarded; narration (s10, admin reset) names no click."
     },
     {
       "op": "click",
