@@ -5,67 +5,168 @@
   "audioDurationS": 228.598,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/mkt-campaigns.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "output": "WC-PB-08-campaign-stopped-v1.1",
   "targets": {
-    "railPanelToggle": { "selector": ".wc-rail-panel-toggle" },
-    "railMarketing": { "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Marketing$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "railSettings": { "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Settings$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "railBilling": { "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Billing$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-
-    "kpiBand": { "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()" },
-    "kpiActive": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Campaigns/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiSent": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sent This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiOpen": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Open Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiConv": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/(Conversions|Revenue Attributed)/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "listTitle": { "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Campaign List'&&e.getBoundingClientRect().width>0)" },
-    "recordsBadge": { "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^5 records$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "thStatus": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "thConversions": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^(Conversions|Revenue)$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "newRecord": { "js": "[...document.querySelectorAll('a,button')].find(e=>/^\\+?\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowDraft": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Monthly Newsletter/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowWinback": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Win-Back/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowHoliday": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "rowSummer": { "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''))" },
-    "chipHoliday": { "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()" },
-    "chipSummer": { "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()" },
-    "sideDeliverability": { "selector": "aside.sidebar a[href=\"mkt-deliverability.html\"]" },
-
-    "banner": { "js": "[...document.querySelectorAll('.dl-alert')].find(e=>/Spam complaint rate elevated/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "reviewLink": { "js": "[...document.querySelectorAll('a,button')].find(e=>/Review campaign/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "metricInbox": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Inbox Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "metricSpam": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Spam Complaint Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "suppSection": { "js": "(()=>{const h=[...document.querySelectorAll('.dl-section-title,.dl-section')].find(e=>/Engagement-Based Suppression/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);if(!h)return null;let c=h;for(let i=0;i<4&&c;i++){const r=c.getBoundingClientRect();if(r.width>800&&r.height>80)return c;c=c.parentElement;}return h;})()" },
-    "suppTitle": { "js": "[...document.querySelectorAll('.dl-section-title')].find(e=>/Engagement-Based Suppression/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "runAudit": { "js": "[...document.querySelectorAll('button,a')].find(e=>/Run Full Audit/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "dlTabList": { "js": "[...document.querySelectorAll('.dl-tab')].find(e=>/List Health/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-
-    "autoAccordion": { "js": "[...document.querySelectorAll('aside.sidebar button.menu-header')].find(e=>/^Automation/.test((e.textContent||'').trim().replace(/\\s+/g,' '))&&e.getBoundingClientRect().width>0)" },
-    "sideTaskScheduler": { "selector": "aside.sidebar a[href=\"settings-task-scheduler.html\"]" },
-    "sideMassSms": { "selector": "aside.sidebar a[href=\"settings-mass-sms-log.html\"]" },
-
-    "kpiTotal": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiTsActive": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/^\\s*16\\s*Active\\s*$/i.test((e.textContent||'').replace(/\\s+/g,' ').trim())&&e.getBoundingClientRect().width>0)" },
-    "kpiRunning": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Running Now/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "kpiFailed": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "listTitleTs": { "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Task Scheduler List$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rowSms": { "js": "[...document.querySelectorAll('table tbody tr')].find(t=>/SMS Campaigns/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)" },
-    "thLastRun": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/Last Run/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-
-    "theadRow": { "selector": "table thead tr" },
-    "thDate": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "kpiEntries": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Entries/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "searchSms": { "js": "document.querySelector('input[placeholder*=\"SMS log\"]')" },
-    "listTitleSms": { "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Mass SMS Log List$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-
-    "tabsBar": { "js": "(()=>{const t=[...document.querySelectorAll('button,a')].find(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0);return t?t.parentElement:null})()" },
-    "tabOverview": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "tabInvoices": { "js": "[...document.querySelectorAll('button,a')].find(e=>/Invoices/i.test(e.textContent||'')&&(e.textContent||'').trim().length<24&&e.getBoundingClientRect().width>0)" },
-    "tabSpendingAlerts": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Spending Alerts$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "exportCsv": { "js": "[...document.querySelectorAll('button,a')].find(e=>/Export CSV/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "periodLine": { "js": "[...document.querySelectorAll('*')].find(e=>e.getBoundingClientRect().width>0&&/Current Billing Period/i.test(e.textContent||'')&&(e.textContent||'').replace(/\\s+/g,' ').trim().length<50)" },
-    "usageBySource": { "js": "[...document.querySelectorAll('*')].find(e=>e.getBoundingClientRect().width>0&&/Usage by Source/i.test(e.textContent||'')&&(e.textContent||'').replace(/\\s+/g,' ').trim().length<40)" },
-    "usageThSource": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Source$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" }
+    "railPanelToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
+    "railMarketing": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Marketing$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railSettings": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Settings$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "railBilling": {
+      "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>/^Billing$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiBand": {
+      "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
+    },
+    "kpiActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active Campaigns/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiSent": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sent This Month/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiOpen": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Avg Open Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiConv": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/(Conversions|Revenue Attributed)/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "listTitle": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Campaign List'&&e.getBoundingClientRect().width>0)"
+    },
+    "recordsBadge": {
+      "js": "[...document.querySelectorAll('div,span')].find(e=>e.children.length===0&&/^5 records$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "thConversions": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^(Conversions|Revenue)$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "newRecord": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/^\\+?\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowDraft": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Monthly Newsletter/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowWinback": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Win-Back/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowHoliday": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "rowSummer": {
+      "js": "[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''))"
+    },
+    "chipHoliday": {
+      "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Holiday Referral/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()"
+    },
+    "chipSummer": {
+      "js": "(()=>{const r=[...document.querySelectorAll('tr.row-link')].find(t=>/Summer Unlimited/i.test(t.getAttribute('data-campaign-name')||''));return r?[...r.querySelectorAll('span')].find(s=>/Weather paused/i.test(s.textContent||'')&&s.getBoundingClientRect().width>0):null})()"
+    },
+    "sideDeliverability": {
+      "selector": "a.menu-header[href=\"mkt-deliverability.html\"]"
+    },
+    "banner": {
+      "js": "[...document.querySelectorAll('.dl-alert')].find(e=>/Spam complaint rate elevated/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "reviewLink": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/Review campaign/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "metricInbox": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Inbox Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "metricSpam": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Spam Complaint Rate/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "suppSection": {
+      "js": "(()=>{const h=[...document.querySelectorAll('.dl-section-title,.dl-section')].find(e=>/Engagement-Based Suppression/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);if(!h)return null;let c=h;for(let i=0;i<4&&c;i++){const r=c.getBoundingClientRect();if(r.width>800&&r.height>80)return c;c=c.parentElement;}return h;})()"
+    },
+    "suppTitle": {
+      "js": "[...document.querySelectorAll('.dl-section-title')].find(e=>/Engagement-Based Suppression/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "runAudit": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/Run Full Audit/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "dlTabList": {
+      "js": "[...document.querySelectorAll('.dl-tab')].find(e=>/List Health/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "autoAccordion": {
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/^Automation/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "sideTaskScheduler": {
+      "js": "[...document.querySelectorAll('a[href=\"settings-task-scheduler.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
+    },
+    "sideMassSms": {
+      "js": "[...document.querySelectorAll('a[href=\"settings-mass-sms-log.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
+    },
+    "kpiTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiTsActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/^\\s*16\\s*Active\\s*$/i.test((e.textContent||'').replace(/\\s+/g,' ').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiRunning": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Running Now/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiFailed": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "listTitleTs": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Task Scheduler List$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rowSms": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(t=>/SMS Campaigns/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)"
+    },
+    "thLastRun": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/Last Run/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "theadRow": {
+      "selector": "table thead tr"
+    },
+    "thDate": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "kpiEntries": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Entries/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "searchSms": {
+      "js": "document.querySelector('input[placeholder*=\"SMS log\"]')"
+    },
+    "listTitleSms": {
+      "js": "[...document.querySelectorAll('div,span,h2,h3')].find(e=>e.children.length===0&&/^Mass SMS Log List$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tabsBar": {
+      "js": "(()=>{const t=[...document.querySelectorAll('button,a')].find(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0);return t?t.parentElement:null})()"
+    },
+    "tabOverview": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "tabInvoices": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/Invoices/i.test(e.textContent||'')&&(e.textContent||'').trim().length<24&&e.getBoundingClientRect().width>0)"
+    },
+    "tabSpendingAlerts": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Spending Alerts$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "exportCsv": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/Export CSV/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "periodLine": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.getBoundingClientRect().width>0&&/Current Billing Period/i.test(e.textContent||'')&&(e.textContent||'').replace(/\\s+/g,' ').trim().length<50)"
+    },
+    "usageBySource": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.getBoundingClientRect().width>0&&/Usage by Source/i.test(e.textContent||'')&&(e.textContent||'').replace(/\\s+/g,' ').trim().length<40)"
+    },
+    "usageThSource": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Source$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
@@ -78,9 +179,9 @@
     "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
     "noError": "!/Couldn.t load|Failed to fetch|Something went wrong|Not Found|404 - File/i.test((document.title||'')+' '+(document.body.textContent||'').slice(0,240))",
     "campaignsLoaded": "(()=>{const rows=[...document.querySelectorAll('tr.row-link')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/mkt-campaigns.html')&&rows.length>=5&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!!pi&&/of\\s*5/i.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent||'')})()",
-    "sidebarCampaignsActive": "!!document.querySelector('aside.sidebar a[href=\"mkt-campaigns.html\"].active')",
+    "sidebarCampaignsActive": "location.pathname.endsWith('/mkt-campaigns.html')&&!!document.querySelector('a.menu-header[href=\"mkt-campaigns.html\"]')",
     "deliverabilityLoaded": "(()=>location.pathname.endsWith('/mkt-deliverability.html')&&[...document.querySelectorAll('.dl-tab')].filter(e=>e.getBoundingClientRect().width>0).length>=6&&[...document.querySelectorAll('.a-metric')].some(e=>e.getBoundingClientRect().width>0)&&!!document.querySelector('.dl-alert')&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent.slice(0,240)))()",
-    "taskSchedLinkVisible": "(()=>{const a=document.querySelector('aside.sidebar a[href=\"settings-task-scheduler.html\"]');return !!a&&a.getBoundingClientRect().width>0})()",
+    "taskSchedLinkVisible": "[...document.querySelectorAll('a[href=\"settings-task-scheduler.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "taskSchedulerLoaded": "(()=>location.pathname.endsWith('/settings-task-scheduler.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('table tbody tr')].some(t=>/SMS Campaigns/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent.slice(0,240)))()",
     "massSmsLoaded": "(()=>location.pathname.endsWith('/settings-mass-sms-log.html')&&[...document.querySelectorAll('table thead th')].some(e=>/^Date$/i.test((e.textContent||'').trim()))&&[...document.querySelectorAll('table thead th')].some(e=>/^Status$/i.test((e.textContent||'').trim()))&&!/404 - File/i.test(document.title||''))()",
     "billingLoaded": "(()=>location.pathname.endsWith('/billing-usage.html')&&[...document.querySelectorAll('button,a')].some(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('button,a')].some(e=>/Invoices/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('*')].some(e=>/Usage by Source/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent.slice(0,240)))()"
@@ -98,247 +199,1980 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.6, "predicate": "onCampaigns", "note": "pre-roll: start page staged on Marketing → Campaigns" },
-    { "op": "assert", "at": -1.2, "predicate": "sidebarExpanded", "note": "pre-roll: preflight left the sub-sidebar expanded" },
-    { "op": "assert", "at": -0.8, "predicate": "campaignsLoaded", "note": "pre-roll: 5 campaign rows + KPI band + 'of 5' counter, no agent-service error" },
-
-    { "op": "pointer-enter", "at": 0.3, "from": [960, 1079], "to": { "target": "kpiSent", "offset": [0, 0] }, "note": "enter from the bottom edge toward the KPI strip as p01 says 'Start in Marketing, on Campaigns'" },
-    { "op": "log-rect", "at": 0.55, "key": "kpiBandRect", "target": "kpiBand" },
-    { "op": "log-rects", "at": 0.65, "key": "kpiTiles", "targets": ["kpiActive", "kpiSent", "kpiOpen", "kpiConv"] },
-    { "op": "move", "at": 3.55, "to": { "target": "kpiActive", "offset": [0, 0] }, "note": "p02 'Four tiles across the top' — begin the left-to-right sweep" },
-    { "op": "move", "at": 4.4, "to": { "target": "kpiOpen", "offset": [0, 0] }, "note": "p02 sweep across the four tiles" },
-    { "op": "move", "at": 5.1, "to": { "target": "kpiSent", "offset": [0, 0] }, "note": "p02 land on the headline tile 'Sent This Month' (live reads 6,370 — see RESIDUAL R1; narration says zero)" },
-    { "op": "move", "at": 6.5, "to": { "target": "kpiSent", "offset": [0, 0] }, "note": "p03 'confirms it at the network level' — hold on the Sent This Month tile" },
-    { "op": "move", "at": 8.75, "to": { "point": [960, 300] }, "note": "p04-p05 ease below the band ('Sends have stalled' / 'bigger than one missed text')" },
-    { "op": "move", "at": 13.37, "to": { "point": [900, 320] } },
-
-    { "op": "log-rect", "at": 16.4, "key": "listTitleRect", "target": "listTitle" },
-    { "op": "log-rect", "at": 16.5, "key": "recordsRect", "target": "recordsBadge" },
-    { "op": "log-rect", "at": 16.6, "key": "thStatusRect", "target": "thStatus" },
-    { "op": "log-rect", "at": 16.7, "key": "thConvRect", "target": "thConversions" },
-    { "op": "move", "at": 17.74, "to": { "target": "listTitle", "offset": [40, 0] }, "note": "step 2 cue p06 'Drop to the campaign list. Read, don't click.'" },
-    { "op": "move", "at": 19.39, "to": { "target": "thStatus", "offset": [0, 0] }, "note": "p07 'The column that matters is status.'" },
-    { "op": "move", "at": 21.53, "to": { "target": "rowDraft", "offset": [-267, 0] }, "note": "p08 'A draft was never launched.' — the Monthly Newsletter status cell (Draft)" },
-    { "op": "move", "at": 23.69, "to": { "target": "rowWinback", "offset": [-267, 0] }, "note": "p09 'A completed campaign already finished its run.' — Win-Back October status cell (Completed)" },
-    { "op": "move", "at": 25.54, "to": { "point": [900, 540] }, "note": "p10 'Neither will send now.' — ease between the two ineligible rows" },
-    { "op": "move", "at": 29.77, "to": { "target": "rowHoliday", "offset": [-267, 0] }, "note": "p11 'Only scheduled and active campaigns are eligible' — Holiday Referral (Scheduled)" },
-    { "op": "move", "at": 31.9, "to": { "target": "rowSummer", "offset": [-267, 0] }, "note": "p11 — Summer Unlimited (Active)" },
-
-    { "op": "log-rects", "at": 34.55, "key": "chips", "targets": ["chipHoliday", "chipSummer"] },
-    { "op": "log-rect", "at": 34.66, "key": "rowHolidayRect", "target": "rowHoliday" },
-    { "op": "log-rect", "at": 34.72, "key": "rowSummerRect", "target": "rowSummer" },
-    { "op": "move", "at": 34.88, "to": { "target": "chipHoliday", "offset": [110, 0] }, "note": "step 3 cue p12 'Look closer at the eligible rows'" },
-    { "op": "move", "at": 37.42, "to": { "target": "chipSummer", "offset": [0, 0] }, "note": "p13 'Two carry a pill: weather paused, six locations' (camera punches in here)" },
-    { "op": "move", "at": 38.81, "to": { "target": "chipSummer", "offset": [12, 0] }, "note": "p14 'a built-in hold, not an error'" },
-    { "op": "move", "at": 41.52, "to": { "target": "chipHoliday", "offset": [0, 0] }, "note": "p15 'holding sends at those six sites on purpose'" },
-    { "op": "move", "at": 44.45, "to": { "point": [965, 548] }, "note": "p16 'Name the pill in the ticket, and route the config question' — RESIDUAL R2 (config surface not observable; PARKED #6)" },
-    { "op": "move", "at": 47.99, "to": { "point": [965, 560] }, "note": "p17 'Where it is set is not visible here'" },
-    { "op": "move", "at": 52.6, "to": { "point": [520, 700] }, "note": "step 4 stage: ease toward the Marketing sub-sidebar for the Deliverability nav" },
-
-    { "op": "move", "at": 53.76, "to": { "target": "sideDeliverability", "offset": [0, 0] }, "note": "step 4 cue p18 'Now Marketing, Deliverability' — approach the sidebar link" },
-    { "op": "click", "target": "sideDeliverability", "pressAt": 55.4, "hoverMs": 360, "postcondition": "onDeliverability", "timeoutMs": 8000, "nav": true, "note": "step 4: genuine Marketing sub-sidebar navigation to Deliverability (pure <a href>). Press inside the p18→p19 gap (55.81–57.03)" },
-    { "op": "wait-stable", "afterNav": true, "key": "dlStable", "predicate": "deliverabilityLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 57.1, "predicate": "deliverabilityLoaded", "note": "load check: six Deliverability tabs + metric band + the alert banner, no error" },
-    { "op": "log-rect", "at": 57.25, "key": "bannerRect", "target": "banner" },
-    { "op": "log-rect", "at": 57.35, "key": "reviewRect", "target": "reviewLink" },
-    { "op": "log-rect", "at": 57.45, "key": "metricSpamRect", "target": "metricSpam" },
-    { "op": "move", "at": 57.5, "to": { "target": "banner", "offset": [-560, 0] }, "note": "p19 'The banner is the second reason a campaign goes quiet' — start at the banner headline" },
-    { "op": "move", "at": 60.45, "to": { "target": "banner", "offset": [-120, 0] }, "note": "p20 'Spam complaints on Flash Sale Weekend hit point one eight percent' — sweep along the banner" },
-    { "op": "move", "at": 62.95, "to": { "target": "banner", "offset": [260, 0] }, "note": "p21 'against a point one zero threshold'" },
-    { "op": "move", "at": 67.03, "to": { "target": "reviewLink", "offset": [-42, 40], "outside": true }, "note": "p22 guardrail: rest BESIDE 'Review campaign →' (opens the campaign edit surface) — pointed at, never clicked" },
-    { "op": "watch", "key": "dlHold1", "from": 67.1, "to": 73.4, "predicate": "onDeliverability", "everyMs": 500, "mustHold": true, "note": "guardrail proof: the page never changes while Review campaign → is pointed out" },
-    { "op": "move", "at": 70.87, "to": { "point": [960, 300] }, "note": "p23 'A campaign can look active and still be held here' — ease off" },
-
-    { "op": "log-rect", "at": 73.7, "key": "metricSpamRect2", "target": "metricSpam" },
-    { "op": "log-rect", "at": 73.8, "key": "metricInboxRect", "target": "metricInbox" },
-    { "op": "log-rect", "at": 73.9, "key": "runAuditRect", "target": "runAudit" },
-    { "op": "move", "at": 74.0, "to": { "target": "metricInbox", "offset": [0, 0] }, "note": "step 5 cue p24 'Sweep the numbers underneath' — start of the metric row" },
-    { "op": "move", "at": 75.7, "to": { "target": "metricSpam", "offset": [0, 0] }, "note": "sweep to the Spam Complaint Rate tile" },
-    { "op": "move", "at": 77.18, "to": { "target": "metricSpam", "offset": [0, 0] }, "note": "p25 'spam complaint rate is flagged for action' — the tile reads 0.18% · action needed (camera punches in)" },
-    { "op": "move", "at": 81.3, "to": { "target": "metricSpam", "offset": [0, 0] }, "note": "p26 'That flag is what the banner reacts to'" },
-    { "op": "move", "at": 82.6, "to": { "target": "runAudit", "offset": [-70, 42], "outside": true }, "note": "step 5 guardrail: rest BESIDE 'Run Full Audit' — pointed at, never clicked" },
-    { "op": "watch", "key": "dlHold2", "from": 84.6, "to": 95.3, "predicate": "onDeliverability", "everyMs": 400, "mustHold": true, "note": "guardrail proof: no suppression toggle is flipped and Run Full Audit is never run — the page holds while they are pointed out (armed before the window it guards)" },
-    { "op": "log-rect", "at": 83.7, "key": "suppSectionRect", "target": "suppSection" },
-    { "op": "log-rect", "at": 83.8, "key": "suppTitleRect", "target": "suppTitle" },
-    { "op": "move", "at": 84.48, "to": { "target": "suppTitle", "offset": [110, 8], "outside": true }, "note": "p27 'Below it sit the engagement suppression toggles' — the Engagement-Based Suppression section" },
-    { "op": "move", "at": 88.21, "to": { "target": "suppSection", "offset": [40, 120], "outside": true }, "note": "p28 'live switches that decide who the platform stops emailing' — over the suppression toggles" },
-    { "op": "move", "at": 91.97, "to": { "target": "suppTitle", "offset": [-60, 40], "outside": true }, "note": "p29 'Note their state' — guardrail beside the suppression switches" },
-    { "op": "move", "at": 93.21, "to": { "target": "suppTitle", "offset": [-60, 40], "outside": true }, "note": "p30 'Never flip one while diagnosing' — hold the guardrail" },
-    { "op": "move", "at": 94.7, "to": { "point": [300, 900] }, "note": "step 6 stage: ease toward the bottom-left module rail for the Settings hop" },
-
-    { "op": "move", "at": 95.2, "to": { "target": "railSettings", "offset": [8, 0] }, "note": "step 6 cue p31 'Settings, Automation, Task Scheduler' — approach the Settings rail button" },
-    { "op": "click", "target": "railSettings", "pressAt": 95.85, "hoverMs": 260, "postcondition": "onSettings", "timeoutMs": 8000, "nav": true, "note": "step 6a: genuine module-rail navigation to the Settings landing (settings.html). Press on p31 'Settings'" },
-    { "op": "wait-stable", "afterNav": true, "key": "setStable", "predicate": "onSettings", "settleMs": 300, "timeoutMs": 8000 },
-    { "op": "move", "at": 96.75, "to": { "target": "autoAccordion", "offset": [0, 0] }, "note": "approach the Automation accordion header" },
-    { "op": "click", "target": "autoAccordion", "pressAt": 96.95, "hoverMs": 200, "postcondition": "taskSchedLinkVisible", "timeoutMs": 4000, "note": "step 6b: inert client-side accordion toggle (verified July 11) — expands the Automation group so Task Scheduler is reachable. Press on p31 'Automation'. No navigation, no mutation" },
-    { "op": "move", "at": 97.2, "to": { "target": "sideTaskScheduler", "offset": [0, 0] }, "note": "approach the Task Scheduler link" },
-    { "op": "click", "target": "sideTaskScheduler", "pressAt": 97.45, "hoverMs": 220, "postcondition": "onTaskScheduler", "timeoutMs": 8000, "nav": true, "note": "step 6c: genuine sidebar navigation to Task Scheduler (pure <a href>). Press on p31 'Task Scheduler'" },
-    { "op": "wait-stable", "afterNav": true, "key": "tsStable", "predicate": "taskSchedulerLoaded", "settleMs": 500, "timeoutMs": 8000 },
-    { "op": "assert", "at": 98.9, "predicate": "taskSchedulerLoaded", "note": "load check: KPI band (18 Total Tasks … 0 Failed) + the SMS Campaigns row. Reading phrase p32 leads the confirmed load by ~1.3s under real chained page loads (see RESIDUAL R6)" },
-    { "op": "log-rect", "at": 99.0, "key": "kpiBandTsRect", "target": "kpiBand" },
-    { "op": "log-rects", "at": 99.08, "key": "kpiTilesTs", "targets": ["kpiTotal", "kpiTsActive", "kpiRunning", "kpiFailed"] },
-    { "op": "log-rect", "at": 99.16, "key": "newRecordTsRect", "target": "newRecord" },
-    { "op": "move", "at": 99.32, "to": { "target": "kpiFailed", "offset": [0, 0] }, "note": "p33 'Read zero failed first' — the 0 Failed tile" },
-    { "op": "move", "at": 100.91, "to": { "target": "kpiFailed", "offset": [0, 0] }, "note": "p34 'The scheduling engine is healthy'" },
-    { "op": "move", "at": 106.71, "to": { "point": [960, 300] }, "note": "p35 'more likely a status or a guardrail than a broken job' — ease down" },
-    { "op": "move", "at": 113.34, "to": { "point": [960, 320] }, "note": "p36 'A positive number here would change that instantly'" },
-
-    { "op": "log-rect", "at": 116.0, "key": "rowSmsRect", "target": "rowSms" },
-    { "op": "log-rect", "at": 116.1, "key": "thLastRunRect", "target": "thLastRun" },
-    { "op": "log-rect", "at": 116.16, "key": "thStatusTsRect", "target": "thStatus" },
-    { "op": "move", "at": 116.24, "to": { "target": "rowSms", "offset": [-560, 0] }, "note": "step 7 cue p37 'Find the SMS Campaigns row' — the Task Name cell (camera punches in)" },
-    { "op": "move", "at": 118.72, "to": { "target": "rowSms", "offset": [0, 0] }, "note": "p38 'the heartbeat of outbound texting'" },
-    { "op": "move", "at": 121.48, "to": { "target": "rowSms", "offset": [-300, 0] }, "note": "p39 'runs hourly, it last ran an hour ago' — the Schedule / Last Run cells" },
-    { "op": "move", "at": 124.28, "to": { "target": "rowSms", "offset": [520, 0] }, "note": "p40 'due again in fifty-two minutes, and its status is active' — the Next Run / Status cells" },
-    { "op": "move", "at": 128.43, "to": { "target": "newRecord", "offset": [-72, 42], "outside": true }, "note": "step 7 guardrail p41: rest BESIDE '+ New Record' (create surface) — pointed at, never clicked" },
-    { "op": "watch", "key": "tsHold", "from": 128.5, "to": 135.8, "predicate": "onTaskScheduler", "everyMs": 400, "mustHold": true, "note": "guardrail proof: + New Record is never clicked — Task Scheduler holds while it is pointed out" },
-    { "op": "move", "at": 131.49, "to": { "point": [960, 640] }, "note": "p42 'That is your evidence' — ease off" },
-    { "op": "move", "at": 135.2, "to": { "point": [400, 720] }, "note": "step 8 stage: ease toward the Settings sub-sidebar (Automation group is still expanded)" },
-
-    { "op": "move", "at": 136.26, "to": { "target": "sideMassSms", "offset": [0, 0] }, "note": "step 8 cue p43 'Settings, Automation, Mass SMS Log' — approach the Mass SMS Log link (already in the expanded Automation group; one genuine click completes it)" },
-    { "op": "click", "target": "sideMassSms", "pressAt": 137.6, "hoverMs": 340, "postcondition": "onMassSmsLog", "timeoutMs": 8000, "nav": true, "note": "step 8: genuine sidebar navigation to Mass SMS Log (pure <a href>). Press inside the p43→p44 gap (137.85–138.43)" },
-    { "op": "wait-stable", "afterNav": true, "key": "smsStable", "predicate": "massSmsLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 138.5, "predicate": "massSmsLoaded", "note": "load check: the Date · Phone · Email · Barcode · Status columns render (live loads with 4 entries — see RESIDUAL R4; narration says fetch error / zero)" },
-    { "op": "log-rect", "at": 138.6, "key": "theadRowRect", "target": "theadRow" },
-    { "op": "log-rect", "at": 138.68, "key": "thDateRect", "target": "thDate" },
-    { "op": "log-rect", "at": 138.74, "key": "thStatusSmsRect", "target": "thStatus" },
-    { "op": "log-rect", "at": 138.8, "key": "kpiEntriesRect", "target": "kpiEntries" },
-    { "op": "log-rect", "at": 138.86, "key": "newRecordSmsRect", "target": "newRecord" },
-    { "op": "move", "at": 138.9, "to": { "target": "thDate", "offset": [0, -26], "outside": true }, "note": "p44 'One row per recipient, with a status on each' — sweep the column headers" },
-    { "op": "move", "at": 140.6, "to": { "target": "thStatus", "offset": [0, -26], "outside": true }, "note": "p44 sweep across to the Status column" },
-    { "op": "move", "at": 142.37, "to": { "target": "kpiEntries", "offset": [0, 0] }, "note": "p45 'a fetch error and zero entries' — the Total Entries counter (live reads 4, loaded — RESIDUAL R4)" },
-    { "op": "move", "at": 145.65, "to": { "target": "newRecord", "offset": [-72, 42], "outside": true }, "note": "step 8 guardrail p46: rest BESIDE '+ New Record' — pointed at, never clicked" },
-    { "op": "watch", "key": "smsHold", "from": 145.7, "to": 155.4, "predicate": "onMassSmsLog", "everyMs": 400, "mustHold": true, "note": "guardrail proof: + New Record is never clicked — the log page holds" },
-    { "op": "move", "at": 149.23, "to": { "point": [700, 260] }, "note": "p47 'Confirm the data loaded before you tell anyone the messages never went out' — toward the search / counter" },
-    { "op": "move", "at": 154.9, "to": { "point": [300, 600] }, "note": "step 9 stage: ease toward the module rail for the Billing hop" },
-
-    { "op": "move", "at": 155.73, "to": { "target": "railBilling", "offset": [8, 0] }, "note": "step 9 cue p48 'Open Billing, then Usage and Billing' — approach the Billing rail button" },
-    { "op": "click", "target": "railBilling", "pressAt": 157.0, "hoverMs": 340, "postcondition": "onBillingUsage", "timeoutMs": 8000, "nav": true, "note": "step 9: genuine module-rail navigation; Usage & Billing is the Billing default, so this lands on billing-usage.html. Press inside the p48→p49 gap (157.25–157.71)" },
-    { "op": "wait-stable", "afterNav": true, "key": "billStable", "predicate": "billingLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 158.1, "predicate": "billingLoaded", "note": "load check: Overview tab + Invoices tab + Usage by Source panel, no error" },
-    { "op": "log-rect", "at": 158.2, "key": "tabsBarRect", "target": "tabsBar" },
-    { "op": "log-rects", "at": 158.3, "key": "billTabs", "targets": ["tabOverview", "tabInvoices", "tabSpendingAlerts"] },
-    { "op": "log-rect", "at": 158.42, "key": "exportCsvRect", "target": "exportCsv" },
-    { "op": "log-rect", "at": 158.5, "key": "periodRect", "target": "periodLine" },
-    { "op": "move", "at": 158.6, "to": { "target": "tabOverview", "offset": [0, 0] }, "note": "p49 'Two tabs matter' — the tab bar (opens on Overview)" },
-    { "op": "watch", "key": "billHold1", "from": 160.75, "to": 174.9, "predicate": "onBillingUsage", "everyMs": 400, "mustHold": true, "note": "guardrail proof: Spending Alerts is never opened and Export CSV is never clicked — Billing holds on the Overview tab (armed before the window it guards)" },
-    { "op": "move", "at": 160.69, "to": { "target": "tabInvoices", "offset": [0, 0] }, "note": "p50 'Invoices shows one open, an unpaid bill' — the Invoices 1 open tab" },
-    { "op": "move", "at": 162.15, "to": { "target": "tabSpendingAlerts", "offset": [0, 34], "outside": true }, "note": "p51 'Spending Alerts is where a usage cap would live' — pointed at from BESIDE; the tab is NOT opened (contents TBD — parked, only Overview in corpus)" },
-    { "op": "move", "at": 165.36, "to": { "point": [960, 300] }, "note": "p52 'Both are places to check, not confirmed causes' — ease" },
-    { "op": "move", "at": 168.05, "to": { "target": "tabInvoices", "offset": [0, 0] }, "note": "p53 'Name the tab and the count' — the Invoices 1 open tab" },
-    { "op": "move", "at": 171.24, "to": { "target": "exportCsv", "offset": [-40, 42], "outside": true }, "note": "p54 'Do not assert the mechanism' — guardrail beside Export CSV, never clicked" },
-
-    { "op": "watch", "key": "billHold2", "from": 175.3, "to": 189.6, "predicate": "onBillingUsage", "everyMs": 500, "mustHold": true, "note": "guardrail proof: reading Usage by Source changes nothing — Billing holds (armed before the window it guards)" },
-    { "op": "log-rect", "at": 175.0, "key": "usageBySourceRect", "target": "usageBySource" },
-    { "op": "log-rect", "at": 175.08, "key": "usageThSourceRect", "target": "usageThSource" },
-    { "op": "move", "at": 175.2, "to": { "target": "usageBySource", "offset": [0, 0] }, "note": "step 10 cue p55 'Stay on Overview and read Usage by Source'" },
-    { "op": "move", "at": 177.62, "to": { "target": "usageThSource", "offset": [0, 24] }, "note": "p56 'a campaign, an automation, or a transactional send' — the Source / Type columns" },
-    { "op": "move", "at": 181.3, "to": { "target": "usageThSource", "offset": [320, 24] }, "note": "p57 'with volume and cost this period' — across to the Volume / Cost columns" },
-    { "op": "move", "at": 183.12, "to": { "target": "usageBySource", "offset": [0, 40], "outside": true }, "note": "p58 'this panel settles it'" },
-    { "op": "move", "at": 186.64, "to": { "target": "usageThSource", "offset": [160, 24] }, "note": "p59 'did it send anything this month, and how much'" },
-
-    { "op": "watch", "key": "billHold3", "from": 190.2, "to": 210.6, "predicate": "onBillingUsage", "everyMs": 500, "mustHold": true, "note": "guardrail proof: the escalation is packaged from what was read — nothing on Billing is touched (armed before the window it guards)" },
-    { "op": "move", "at": 190.13, "to": { "point": [960, 320] }, "note": "step 11 cue p60 'Now build the ticket' — packaging recap; no new surface, hold on Billing" },
-    { "op": "move", "at": 192.46, "to": { "point": [900, 280] }, "note": "p61 'campaign name, its type and status chip, the weather pause pill if present'" },
-    { "op": "move", "at": 195.84, "to": { "point": [1000, 340] }, "note": "p62 'The deliverability signal'" },
-    { "op": "move", "at": 198.24, "to": { "point": [900, 300] }, "note": "p63 'The scheduler timestamps, last run and next run'" },
-    { "op": "move", "at": 200.19, "to": { "point": [980, 360] }, "note": "p64 'State which gate you found'" },
-    { "op": "move", "at": 204.31, "to": { "point": [1040, 300] }, "note": "p65 'Resuming the campaign happens in production with the right role'" },
-    { "op": "move", "at": 206.32, "to": { "point": [1400, 840] }, "note": "p66 'Never here' — ease toward a rest point" },
-
-    { "op": "move", "at": 210.4, "to": { "point": [300, 300] }, "note": "step 12 stage: ease toward the top of the module rail for the Marketing return" },
-    { "op": "move", "at": 211.12, "to": { "target": "railMarketing", "offset": [8, 0] }, "note": "step 12 cue p67 'That's the narrowing flow' — approach the Marketing rail button" },
-    { "op": "click", "target": "railMarketing", "pressAt": 212.4, "hoverMs": 340, "postcondition": "onCampaigns", "timeoutMs": 8000, "nav": true, "note": "step 12: genuine module-rail return to Marketing → Campaigns. Press inside the p67→p68 gap (212.79–213.13)" },
-    { "op": "wait-stable", "afterNav": true, "key": "backStable", "predicate": "campaignsLoaded", "settleMs": 600, "timeoutMs": 8000 },
-    { "op": "assert", "at": 213.35, "predicate": "campaignsLoaded", "note": "back on the Campaign List, still 5 records — nothing was changed anywhere in the walk" },
-    { "op": "assert", "at": 213.45, "predicate": "sidebarCampaignsActive" },
-    { "op": "log-rect", "at": 213.55, "key": "thStatusRecapRect", "target": "thStatus" },
-    { "op": "log-rect", "at": 213.62, "key": "recordsRecapRect", "target": "recordsBadge" },
-    { "op": "move", "at": 213.7, "to": { "target": "thStatus", "offset": [0, 12] }, "note": "step 12 recap p68 'Status first, because draft and completed never send' — the Status column" },
-    { "op": "move", "at": 216.44, "to": { "point": [300, 620] }, "note": "p69 'Deliverability for a reputation hold' — gesture toward the Marketing sub-sidebar" },
-    { "op": "move", "at": 219.18, "to": { "target": "railSettings", "offset": [34, 0], "outside": true }, "note": "p70 'Task Scheduler for the heartbeat' — gesture toward the Settings rail" },
-    { "op": "move", "at": 220.94, "to": { "point": [360, 600] }, "note": "p71 'The log for the trail'" },
-    { "op": "move", "at": 222.56, "to": { "target": "railBilling", "offset": [34, 0], "outside": true }, "note": "p72 'Billing for a cap or an open invoice' — gesture toward the Billing rail" },
-    { "op": "move", "at": 225.2, "to": { "point": [1520, 900] }, "note": "p73 'You escalated with evidence and moved nothing' — final park, clear of content and burned captions" },
-    { "op": "assert", "at": 227.4, "predicate": "onCampaigns", "note": "read-only triage ends on the unchanged Campaign List" }
+    {
+      "op": "assert",
+      "at": -1.6,
+      "predicate": "onCampaigns",
+      "note": "pre-roll: start page staged on Marketing \u2192 Campaigns"
+    },
+    {
+      "op": "assert",
+      "at": -1.2,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: preflight left the sub-sidebar expanded"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "campaignsLoaded",
+      "note": "pre-roll: 5 campaign rows + KPI band + 'of 5' counter, no agent-service error"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.3,
+      "from": [
+        960,
+        1079
+      ],
+      "to": {
+        "target": "kpiSent",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "enter from the bottom edge toward the KPI strip as p01 says 'Start in Marketing, on Campaigns'"
+    },
+    {
+      "op": "log-rect",
+      "at": 0.55,
+      "key": "kpiBandRect",
+      "target": "kpiBand"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.65,
+      "key": "kpiTiles",
+      "targets": [
+        "kpiActive",
+        "kpiSent",
+        "kpiOpen",
+        "kpiConv"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 3.55,
+      "to": {
+        "target": "kpiActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p02 'Four tiles across the top' \u2014 begin the left-to-right sweep"
+    },
+    {
+      "op": "move",
+      "at": 4.4,
+      "to": {
+        "target": "kpiOpen",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p02 sweep across the four tiles"
+    },
+    {
+      "op": "move",
+      "at": 5.1,
+      "to": {
+        "target": "kpiSent",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p02 land on the headline tile 'Sent This Month' (live reads 6,370 \u2014 see RESIDUAL R1; narration says zero)"
+    },
+    {
+      "op": "move",
+      "at": 6.5,
+      "to": {
+        "target": "kpiSent",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p03 'confirms it at the network level' \u2014 hold on the Sent This Month tile"
+    },
+    {
+      "op": "move",
+      "at": 8.75,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "p04-p05 ease below the band ('Sends have stalled' / 'bigger than one missed text')"
+    },
+    {
+      "op": "move",
+      "at": 13.37,
+      "to": {
+        "point": [
+          900,
+          320
+        ]
+      }
+    },
+    {
+      "op": "log-rect",
+      "at": 16.4,
+      "key": "listTitleRect",
+      "target": "listTitle"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.5,
+      "key": "recordsRect",
+      "target": "recordsBadge"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.6,
+      "key": "thStatusRect",
+      "target": "thStatus"
+    },
+    {
+      "op": "log-rect",
+      "at": 16.7,
+      "key": "thConvRect",
+      "target": "thConversions"
+    },
+    {
+      "op": "move",
+      "at": 17.74,
+      "to": {
+        "target": "listTitle",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 2 cue p06 'Drop to the campaign list. Read, don't click.'"
+    },
+    {
+      "op": "move",
+      "at": 19.39,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p07 'The column that matters is status.'"
+    },
+    {
+      "op": "move",
+      "at": 21.53,
+      "to": {
+        "target": "rowDraft",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p08 'A draft was never launched.' \u2014 the Monthly Newsletter status cell (Draft)"
+    },
+    {
+      "op": "move",
+      "at": 23.69,
+      "to": {
+        "target": "rowWinback",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p09 'A completed campaign already finished its run.' \u2014 Win-Back October status cell (Completed)"
+    },
+    {
+      "op": "move",
+      "at": 25.54,
+      "to": {
+        "point": [
+          900,
+          540
+        ]
+      },
+      "note": "p10 'Neither will send now.' \u2014 ease between the two ineligible rows"
+    },
+    {
+      "op": "move",
+      "at": 29.77,
+      "to": {
+        "target": "rowHoliday",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p11 'Only scheduled and active campaigns are eligible' \u2014 Holiday Referral (Scheduled)"
+    },
+    {
+      "op": "move",
+      "at": 31.9,
+      "to": {
+        "target": "rowSummer",
+        "offset": [
+          -267,
+          0
+        ]
+      },
+      "note": "p11 \u2014 Summer Unlimited (Active)"
+    },
+    {
+      "op": "log-rects",
+      "at": 34.55,
+      "key": "chips",
+      "targets": [
+        "chipHoliday",
+        "chipSummer"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 34.66,
+      "key": "rowHolidayRect",
+      "target": "rowHoliday"
+    },
+    {
+      "op": "log-rect",
+      "at": 34.72,
+      "key": "rowSummerRect",
+      "target": "rowSummer"
+    },
+    {
+      "op": "move",
+      "at": 34.88,
+      "to": {
+        "target": "chipHoliday",
+        "offset": [
+          110,
+          0
+        ]
+      },
+      "note": "step 3 cue p12 'Look closer at the eligible rows'"
+    },
+    {
+      "op": "move",
+      "at": 37.42,
+      "to": {
+        "target": "chipSummer",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p13 'Two carry a pill: weather paused, six locations' (camera punches in here)"
+    },
+    {
+      "op": "move",
+      "at": 38.81,
+      "to": {
+        "target": "chipSummer",
+        "offset": [
+          12,
+          0
+        ]
+      },
+      "note": "p14 'a built-in hold, not an error'"
+    },
+    {
+      "op": "move",
+      "at": 41.52,
+      "to": {
+        "target": "chipHoliday",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p15 'holding sends at those six sites on purpose'"
+    },
+    {
+      "op": "move",
+      "at": 44.45,
+      "to": {
+        "point": [
+          965,
+          548
+        ]
+      },
+      "note": "p16 'Name the pill in the ticket, and route the config question' \u2014 RESIDUAL R2 (config surface not observable; PARKED #6)"
+    },
+    {
+      "op": "move",
+      "at": 47.99,
+      "to": {
+        "point": [
+          965,
+          560
+        ]
+      },
+      "note": "p17 'Where it is set is not visible here'"
+    },
+    {
+      "op": "move",
+      "at": 52.6,
+      "to": {
+        "point": [
+          520,
+          700
+        ]
+      },
+      "note": "step 4 stage: ease toward the Marketing sub-sidebar for the Deliverability nav"
+    },
+    {
+      "op": "move",
+      "at": 53.76,
+      "to": {
+        "target": "sideDeliverability",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 cue p18 'Now Marketing, Deliverability' \u2014 approach the sidebar link"
+    },
+    {
+      "op": "click",
+      "target": "sideDeliverability",
+      "pressAt": 55.4,
+      "hoverMs": 360,
+      "postcondition": "onDeliverability",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 4: genuine Marketing sub-sidebar navigation to Deliverability (pure <a href>). Press inside the p18\u2192p19 gap (55.81\u201357.03)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "dlStable",
+      "predicate": "deliverabilityLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 57.1,
+      "predicate": "deliverabilityLoaded",
+      "note": "load check: six Deliverability tabs + metric band + the alert banner, no error"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.25,
+      "key": "bannerRect",
+      "target": "banner"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.35,
+      "key": "reviewRect",
+      "target": "reviewLink"
+    },
+    {
+      "op": "log-rect",
+      "at": 57.45,
+      "key": "metricSpamRect",
+      "target": "metricSpam"
+    },
+    {
+      "op": "move",
+      "at": 57.5,
+      "to": {
+        "target": "banner",
+        "offset": [
+          -560,
+          0
+        ]
+      },
+      "note": "p19 'The banner is the second reason a campaign goes quiet' \u2014 start at the banner headline"
+    },
+    {
+      "op": "move",
+      "at": 60.45,
+      "to": {
+        "target": "banner",
+        "offset": [
+          -120,
+          0
+        ]
+      },
+      "note": "p20 'Spam complaints on Flash Sale Weekend hit point one eight percent' \u2014 sweep along the banner"
+    },
+    {
+      "op": "move",
+      "at": 62.95,
+      "to": {
+        "target": "banner",
+        "offset": [
+          260,
+          0
+        ]
+      },
+      "note": "p21 'against a point one zero threshold'"
+    },
+    {
+      "op": "move",
+      "at": 67.03,
+      "to": {
+        "target": "reviewLink",
+        "offset": [
+          -42,
+          40
+        ],
+        "outside": true
+      },
+      "note": "p22 guardrail: rest BESIDE 'Review campaign \u2192' (opens the campaign edit surface) \u2014 pointed at, never clicked"
+    },
+    {
+      "op": "watch",
+      "key": "dlHold1",
+      "from": 67.1,
+      "to": 73.4,
+      "predicate": "onDeliverability",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail proof: the page never changes while Review campaign \u2192 is pointed out"
+    },
+    {
+      "op": "move",
+      "at": 70.87,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "p23 'A campaign can look active and still be held here' \u2014 ease off"
+    },
+    {
+      "op": "log-rect",
+      "at": 73.7,
+      "key": "metricSpamRect2",
+      "target": "metricSpam"
+    },
+    {
+      "op": "log-rect",
+      "at": 73.8,
+      "key": "metricInboxRect",
+      "target": "metricInbox"
+    },
+    {
+      "op": "log-rect",
+      "at": 73.9,
+      "key": "runAuditRect",
+      "target": "runAudit"
+    },
+    {
+      "op": "move",
+      "at": 74.0,
+      "to": {
+        "target": "metricInbox",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 5 cue p24 'Sweep the numbers underneath' \u2014 start of the metric row"
+    },
+    {
+      "op": "move",
+      "at": 75.7,
+      "to": {
+        "target": "metricSpam",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "sweep to the Spam Complaint Rate tile"
+    },
+    {
+      "op": "move",
+      "at": 77.18,
+      "to": {
+        "target": "metricSpam",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p25 'spam complaint rate is flagged for action' \u2014 the tile reads 0.18% \u00b7 action needed (camera punches in)"
+    },
+    {
+      "op": "move",
+      "at": 81.3,
+      "to": {
+        "target": "metricSpam",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p26 'That flag is what the banner reacts to'"
+    },
+    {
+      "op": "move",
+      "at": 82.6,
+      "to": {
+        "target": "runAudit",
+        "offset": [
+          -70,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 5 guardrail: rest BESIDE 'Run Full Audit' \u2014 pointed at, never clicked"
+    },
+    {
+      "op": "watch",
+      "key": "dlHold2",
+      "from": 84.6,
+      "to": 95.3,
+      "predicate": "onDeliverability",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "guardrail proof: no suppression toggle is flipped and Run Full Audit is never run \u2014 the page holds while they are pointed out (armed before the window it guards)"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.7,
+      "key": "suppSectionRect",
+      "target": "suppSection"
+    },
+    {
+      "op": "log-rect",
+      "at": 83.8,
+      "key": "suppTitleRect",
+      "target": "suppTitle"
+    },
+    {
+      "op": "move",
+      "at": 84.48,
+      "to": {
+        "target": "suppTitle",
+        "offset": [
+          110,
+          8
+        ],
+        "outside": true
+      },
+      "note": "p27 'Below it sit the engagement suppression toggles' \u2014 the Engagement-Based Suppression section"
+    },
+    {
+      "op": "move",
+      "at": 88.21,
+      "to": {
+        "target": "suppSection",
+        "offset": [
+          40,
+          120
+        ],
+        "outside": true
+      },
+      "note": "p28 'live switches that decide who the platform stops emailing' \u2014 over the suppression toggles"
+    },
+    {
+      "op": "move",
+      "at": 91.97,
+      "to": {
+        "target": "suppTitle",
+        "offset": [
+          -60,
+          40
+        ],
+        "outside": true
+      },
+      "note": "p29 'Note their state' \u2014 guardrail beside the suppression switches"
+    },
+    {
+      "op": "move",
+      "at": 93.21,
+      "to": {
+        "target": "suppTitle",
+        "offset": [
+          -60,
+          40
+        ],
+        "outside": true
+      },
+      "note": "p30 'Never flip one while diagnosing' \u2014 hold the guardrail"
+    },
+    {
+      "op": "move",
+      "at": 94.7,
+      "to": {
+        "point": [
+          300,
+          900
+        ]
+      },
+      "note": "step 6 stage: ease toward the bottom-left module rail for the Settings hop"
+    },
+    {
+      "op": "move",
+      "at": 95.2,
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          8,
+          0
+        ]
+      },
+      "note": "step 6 cue p31 'Settings, Automation, Task Scheduler' \u2014 approach the Settings rail button"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 95.85,
+      "hoverMs": 260,
+      "postcondition": "onSettings",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6a: genuine module-rail navigation to the Settings landing (settings.html). Press on p31 'Settings'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "setStable",
+      "predicate": "onSettings",
+      "settleMs": 300,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "move",
+      "at": 96.75,
+      "to": {
+        "target": "autoAccordion",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach the Automation accordion header"
+    },
+    {
+      "op": "click",
+      "target": "autoAccordion",
+      "pressAt": 96.95,
+      "hoverMs": 200,
+      "postcondition": "taskSchedLinkVisible",
+      "timeoutMs": 4000,
+      "note": "step 6b: inert client-side accordion toggle (verified July 11) \u2014 expands the Automation group so Task Scheduler is reachable. Press on p31 'Automation'. No navigation, no mutation"
+    },
+    {
+      "op": "move",
+      "at": 97.2,
+      "to": {
+        "target": "sideTaskScheduler",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "approach the Task Scheduler link"
+    },
+    {
+      "op": "click",
+      "target": "sideTaskScheduler",
+      "pressAt": 97.45,
+      "hoverMs": 220,
+      "postcondition": "onTaskScheduler",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6c: genuine sidebar navigation to Task Scheduler (pure <a href>). Press on p31 'Task Scheduler'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "tsStable",
+      "predicate": "taskSchedulerLoaded",
+      "settleMs": 500,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 98.9,
+      "predicate": "taskSchedulerLoaded",
+      "note": "load check: KPI band (18 Total Tasks \u2026 0 Failed) + the SMS Campaigns row. Reading phrase p32 leads the confirmed load by ~1.3s under real chained page loads (see RESIDUAL R6)"
+    },
+    {
+      "op": "log-rect",
+      "at": 99.0,
+      "key": "kpiBandTsRect",
+      "target": "kpiBand"
+    },
+    {
+      "op": "log-rects",
+      "at": 99.08,
+      "key": "kpiTilesTs",
+      "targets": [
+        "kpiTotal",
+        "kpiTsActive",
+        "kpiRunning",
+        "kpiFailed"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 99.16,
+      "key": "newRecordTsRect",
+      "target": "newRecord"
+    },
+    {
+      "op": "move",
+      "at": 99.32,
+      "to": {
+        "target": "kpiFailed",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p33 'Read zero failed first' \u2014 the 0 Failed tile"
+    },
+    {
+      "op": "move",
+      "at": 100.91,
+      "to": {
+        "target": "kpiFailed",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p34 'The scheduling engine is healthy'"
+    },
+    {
+      "op": "move",
+      "at": 106.71,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "p35 'more likely a status or a guardrail than a broken job' \u2014 ease down"
+    },
+    {
+      "op": "move",
+      "at": 113.34,
+      "to": {
+        "point": [
+          960,
+          320
+        ]
+      },
+      "note": "p36 'A positive number here would change that instantly'"
+    },
+    {
+      "op": "log-rect",
+      "at": 116.0,
+      "key": "rowSmsRect",
+      "target": "rowSms"
+    },
+    {
+      "op": "log-rect",
+      "at": 116.1,
+      "key": "thLastRunRect",
+      "target": "thLastRun"
+    },
+    {
+      "op": "log-rect",
+      "at": 116.16,
+      "key": "thStatusTsRect",
+      "target": "thStatus"
+    },
+    {
+      "op": "move",
+      "at": 116.24,
+      "to": {
+        "target": "rowSms",
+        "offset": [
+          -560,
+          0
+        ]
+      },
+      "note": "step 7 cue p37 'Find the SMS Campaigns row' \u2014 the Task Name cell (camera punches in)"
+    },
+    {
+      "op": "move",
+      "at": 118.72,
+      "to": {
+        "target": "rowSms",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p38 'the heartbeat of outbound texting'"
+    },
+    {
+      "op": "move",
+      "at": 121.48,
+      "to": {
+        "target": "rowSms",
+        "offset": [
+          -300,
+          0
+        ]
+      },
+      "note": "p39 'runs hourly, it last ran an hour ago' \u2014 the Schedule / Last Run cells"
+    },
+    {
+      "op": "move",
+      "at": 124.28,
+      "to": {
+        "target": "rowSms",
+        "offset": [
+          520,
+          0
+        ]
+      },
+      "note": "p40 'due again in fifty-two minutes, and its status is active' \u2014 the Next Run / Status cells"
+    },
+    {
+      "op": "move",
+      "at": 128.43,
+      "to": {
+        "target": "newRecord",
+        "offset": [
+          -72,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 7 guardrail p41: rest BESIDE '+ New Record' (create surface) \u2014 pointed at, never clicked"
+    },
+    {
+      "op": "watch",
+      "key": "tsHold",
+      "from": 128.5,
+      "to": 135.8,
+      "predicate": "onTaskScheduler",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "guardrail proof: + New Record is never clicked \u2014 Task Scheduler holds while it is pointed out"
+    },
+    {
+      "op": "move",
+      "at": 131.49,
+      "to": {
+        "point": [
+          960,
+          640
+        ]
+      },
+      "note": "p42 'That is your evidence' \u2014 ease off"
+    },
+    {
+      "op": "move",
+      "at": 135.2,
+      "to": {
+        "point": [
+          400,
+          720
+        ]
+      },
+      "note": "step 8 stage: ease toward the Settings sub-sidebar (Automation group is still expanded)"
+    },
+    {
+      "op": "move",
+      "at": 136.26,
+      "to": {
+        "target": "sideMassSms",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8 cue p43 'Settings, Automation, Mass SMS Log' \u2014 approach the Mass SMS Log link (already in the expanded Automation group; one genuine click completes it)"
+    },
+    {
+      "op": "click",
+      "target": "sideMassSms",
+      "pressAt": 137.6,
+      "hoverMs": 340,
+      "postcondition": "onMassSmsLog",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8: genuine sidebar navigation to Mass SMS Log (pure <a href>). Press inside the p43\u2192p44 gap (137.85\u2013138.43)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "smsStable",
+      "predicate": "massSmsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 138.5,
+      "predicate": "massSmsLoaded",
+      "note": "load check: the Date \u00b7 Phone \u00b7 Email \u00b7 Barcode \u00b7 Status columns render (live loads with 4 entries \u2014 see RESIDUAL R4; narration says fetch error / zero)"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.6,
+      "key": "theadRowRect",
+      "target": "theadRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.68,
+      "key": "thDateRect",
+      "target": "thDate"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.74,
+      "key": "thStatusSmsRect",
+      "target": "thStatus"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.8,
+      "key": "kpiEntriesRect",
+      "target": "kpiEntries"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.86,
+      "key": "newRecordSmsRect",
+      "target": "newRecord"
+    },
+    {
+      "op": "move",
+      "at": 138.9,
+      "to": {
+        "target": "thDate",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "p44 'One row per recipient, with a status on each' \u2014 sweep the column headers"
+    },
+    {
+      "op": "move",
+      "at": 140.6,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          -26
+        ],
+        "outside": true
+      },
+      "note": "p44 sweep across to the Status column"
+    },
+    {
+      "op": "move",
+      "at": 142.37,
+      "to": {
+        "target": "kpiEntries",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p45 'a fetch error and zero entries' \u2014 the Total Entries counter (live reads 4, loaded \u2014 RESIDUAL R4)"
+    },
+    {
+      "op": "move",
+      "at": 145.65,
+      "to": {
+        "target": "newRecord",
+        "offset": [
+          -72,
+          42
+        ],
+        "outside": true
+      },
+      "note": "step 8 guardrail p46: rest BESIDE '+ New Record' \u2014 pointed at, never clicked"
+    },
+    {
+      "op": "watch",
+      "key": "smsHold",
+      "from": 145.7,
+      "to": 155.4,
+      "predicate": "onMassSmsLog",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "guardrail proof: + New Record is never clicked \u2014 the log page holds"
+    },
+    {
+      "op": "move",
+      "at": 149.23,
+      "to": {
+        "point": [
+          700,
+          260
+        ]
+      },
+      "note": "p47 'Confirm the data loaded before you tell anyone the messages never went out' \u2014 toward the search / counter"
+    },
+    {
+      "op": "move",
+      "at": 154.9,
+      "to": {
+        "point": [
+          300,
+          600
+        ]
+      },
+      "note": "step 9 stage: ease toward the module rail for the Billing hop"
+    },
+    {
+      "op": "move",
+      "at": 155.73,
+      "to": {
+        "target": "railBilling",
+        "offset": [
+          8,
+          0
+        ]
+      },
+      "note": "step 9 cue p48 'Open Billing, then Usage and Billing' \u2014 approach the Billing rail button"
+    },
+    {
+      "op": "click",
+      "target": "railBilling",
+      "pressAt": 157.0,
+      "hoverMs": 340,
+      "postcondition": "onBillingUsage",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9: genuine module-rail navigation; Usage & Billing is the Billing default, so this lands on billing-usage.html. Press inside the p48\u2192p49 gap (157.25\u2013157.71)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "billStable",
+      "predicate": "billingLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 158.1,
+      "predicate": "billingLoaded",
+      "note": "load check: Overview tab + Invoices tab + Usage by Source panel, no error"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.2,
+      "key": "tabsBarRect",
+      "target": "tabsBar"
+    },
+    {
+      "op": "log-rects",
+      "at": 158.3,
+      "key": "billTabs",
+      "targets": [
+        "tabOverview",
+        "tabInvoices",
+        "tabSpendingAlerts"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 158.42,
+      "key": "exportCsvRect",
+      "target": "exportCsv"
+    },
+    {
+      "op": "log-rect",
+      "at": 158.5,
+      "key": "periodRect",
+      "target": "periodLine"
+    },
+    {
+      "op": "move",
+      "at": 158.6,
+      "to": {
+        "target": "tabOverview",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p49 'Two tabs matter' \u2014 the tab bar (opens on Overview)"
+    },
+    {
+      "op": "watch",
+      "key": "billHold1",
+      "from": 160.75,
+      "to": 174.9,
+      "predicate": "onBillingUsage",
+      "everyMs": 400,
+      "mustHold": true,
+      "note": "guardrail proof: Spending Alerts is never opened and Export CSV is never clicked \u2014 Billing holds on the Overview tab (armed before the window it guards)"
+    },
+    {
+      "op": "move",
+      "at": 160.69,
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p50 'Invoices shows one open, an unpaid bill' \u2014 the Invoices 1 open tab"
+    },
+    {
+      "op": "move",
+      "at": 162.15,
+      "to": {
+        "target": "tabSpendingAlerts",
+        "offset": [
+          0,
+          34
+        ],
+        "outside": true
+      },
+      "note": "p51 'Spending Alerts is where a usage cap would live' \u2014 pointed at from BESIDE; the tab is NOT opened (contents TBD \u2014 parked, only Overview in corpus)"
+    },
+    {
+      "op": "move",
+      "at": 165.36,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "p52 'Both are places to check, not confirmed causes' \u2014 ease"
+    },
+    {
+      "op": "move",
+      "at": 168.05,
+      "to": {
+        "target": "tabInvoices",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "p53 'Name the tab and the count' \u2014 the Invoices 1 open tab"
+    },
+    {
+      "op": "move",
+      "at": 171.24,
+      "to": {
+        "target": "exportCsv",
+        "offset": [
+          -40,
+          42
+        ],
+        "outside": true
+      },
+      "note": "p54 'Do not assert the mechanism' \u2014 guardrail beside Export CSV, never clicked"
+    },
+    {
+      "op": "watch",
+      "key": "billHold2",
+      "from": 175.3,
+      "to": 189.6,
+      "predicate": "onBillingUsage",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail proof: reading Usage by Source changes nothing \u2014 Billing holds (armed before the window it guards)"
+    },
+    {
+      "op": "log-rect",
+      "at": 175.0,
+      "key": "usageBySourceRect",
+      "target": "usageBySource"
+    },
+    {
+      "op": "log-rect",
+      "at": 175.08,
+      "key": "usageThSourceRect",
+      "target": "usageThSource"
+    },
+    {
+      "op": "move",
+      "at": 175.2,
+      "to": {
+        "target": "usageBySource",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 10 cue p55 'Stay on Overview and read Usage by Source'"
+    },
+    {
+      "op": "move",
+      "at": 177.62,
+      "to": {
+        "target": "usageThSource",
+        "offset": [
+          0,
+          24
+        ]
+      },
+      "note": "p56 'a campaign, an automation, or a transactional send' \u2014 the Source / Type columns"
+    },
+    {
+      "op": "move",
+      "at": 181.3,
+      "to": {
+        "target": "usageThSource",
+        "offset": [
+          320,
+          24
+        ]
+      },
+      "note": "p57 'with volume and cost this period' \u2014 across to the Volume / Cost columns"
+    },
+    {
+      "op": "move",
+      "at": 183.12,
+      "to": {
+        "target": "usageBySource",
+        "offset": [
+          0,
+          40
+        ],
+        "outside": true
+      },
+      "note": "p58 'this panel settles it'"
+    },
+    {
+      "op": "move",
+      "at": 186.64,
+      "to": {
+        "target": "usageThSource",
+        "offset": [
+          160,
+          24
+        ]
+      },
+      "note": "p59 'did it send anything this month, and how much'"
+    },
+    {
+      "op": "watch",
+      "key": "billHold3",
+      "from": 190.2,
+      "to": 210.6,
+      "predicate": "onBillingUsage",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "guardrail proof: the escalation is packaged from what was read \u2014 nothing on Billing is touched (armed before the window it guards)"
+    },
+    {
+      "op": "move",
+      "at": 190.13,
+      "to": {
+        "point": [
+          960,
+          320
+        ]
+      },
+      "note": "step 11 cue p60 'Now build the ticket' \u2014 packaging recap; no new surface, hold on Billing"
+    },
+    {
+      "op": "move",
+      "at": 192.46,
+      "to": {
+        "point": [
+          900,
+          280
+        ]
+      },
+      "note": "p61 'campaign name, its type and status chip, the weather pause pill if present'"
+    },
+    {
+      "op": "move",
+      "at": 195.84,
+      "to": {
+        "point": [
+          1000,
+          340
+        ]
+      },
+      "note": "p62 'The deliverability signal'"
+    },
+    {
+      "op": "move",
+      "at": 198.24,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "p63 'The scheduler timestamps, last run and next run'"
+    },
+    {
+      "op": "move",
+      "at": 200.19,
+      "to": {
+        "point": [
+          980,
+          360
+        ]
+      },
+      "note": "p64 'State which gate you found'"
+    },
+    {
+      "op": "move",
+      "at": 204.31,
+      "to": {
+        "point": [
+          1040,
+          300
+        ]
+      },
+      "note": "p65 'Resuming the campaign happens in production with the right role'"
+    },
+    {
+      "op": "move",
+      "at": 206.32,
+      "to": {
+        "point": [
+          1400,
+          840
+        ]
+      },
+      "note": "p66 'Never here' \u2014 ease toward a rest point"
+    },
+    {
+      "op": "move",
+      "at": 210.4,
+      "to": {
+        "point": [
+          300,
+          300
+        ]
+      },
+      "note": "step 12 stage: ease toward the top of the module rail for the Marketing return"
+    },
+    {
+      "op": "move",
+      "at": 211.12,
+      "to": {
+        "target": "railMarketing",
+        "offset": [
+          8,
+          0
+        ]
+      },
+      "note": "step 12 cue p67 'That's the narrowing flow' \u2014 approach the Marketing rail button"
+    },
+    {
+      "op": "click",
+      "target": "railMarketing",
+      "pressAt": 212.4,
+      "hoverMs": 340,
+      "postcondition": "onCampaigns",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 12: genuine module-rail return to Marketing \u2192 Campaigns. Press inside the p67\u2192p68 gap (212.79\u2013213.13)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "backStable",
+      "predicate": "campaignsLoaded",
+      "settleMs": 600,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 213.35,
+      "predicate": "campaignsLoaded",
+      "note": "back on the Campaign List, still 5 records \u2014 nothing was changed anywhere in the walk"
+    },
+    {
+      "op": "assert",
+      "at": 213.45,
+      "predicate": "sidebarCampaignsActive"
+    },
+    {
+      "op": "log-rect",
+      "at": 213.55,
+      "key": "thStatusRecapRect",
+      "target": "thStatus"
+    },
+    {
+      "op": "log-rect",
+      "at": 213.62,
+      "key": "recordsRecapRect",
+      "target": "recordsBadge"
+    },
+    {
+      "op": "move",
+      "at": 213.7,
+      "to": {
+        "target": "thStatus",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 12 recap p68 'Status first, because draft and completed never send' \u2014 the Status column"
+    },
+    {
+      "op": "move",
+      "at": 216.44,
+      "to": {
+        "point": [
+          300,
+          620
+        ]
+      },
+      "note": "p69 'Deliverability for a reputation hold' \u2014 gesture toward the Marketing sub-sidebar"
+    },
+    {
+      "op": "move",
+      "at": 219.18,
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          34,
+          0
+        ],
+        "outside": true
+      },
+      "note": "p70 'Task Scheduler for the heartbeat' \u2014 gesture toward the Settings rail"
+    },
+    {
+      "op": "move",
+      "at": 220.94,
+      "to": {
+        "point": [
+          360,
+          600
+        ]
+      },
+      "note": "p71 'The log for the trail'"
+    },
+    {
+      "op": "move",
+      "at": 222.56,
+      "to": {
+        "target": "railBilling",
+        "offset": [
+          34,
+          0
+        ],
+        "outside": true
+      },
+      "note": "p72 'Billing for a cap or an open invoice' \u2014 gesture toward the Billing rail"
+    },
+    {
+      "op": "move",
+      "at": 225.2,
+      "to": {
+        "point": [
+          1520,
+          900
+        ]
+      },
+      "note": "p73 'You escalated with evidence and moved nothing' \u2014 final park, clear of content and burned captions"
+    },
+    {
+      "op": "assert",
+      "at": 227.4,
+      "predicate": "onCampaigns",
+      "note": "read-only triage ends on the unchanged Campaign List"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "kpiBandRect", "place": "below-left", "from": 3.55, "to": 16.0, "note": "step 1: the KPI strip — 'Sent This Month' is the headline read" },
-      { "n": 2, "anchor": "thStatusRect", "place": "below-left", "from": 19.39, "to": 34.4, "note": "step 2: the Status column — Draft & Completed never send; Scheduled & Active are eligible" },
-      { "n": 3, "anchor": "chips.chipSummer", "place": "left-top", "from": 37.42, "to": 52.6, "note": "step 3: the weather-paused pill (built-in hold, not an error)" },
-      { "n": 4, "anchor": "bannerRect", "place": "below-left", "from": 57.5, "to": 73.4, "note": "step 4: the deliverability alert banner — pausing additional sends recommended" },
-      { "n": 5, "anchor": "metricSpamRect2", "place": "below-left", "from": 77.18, "to": 94.4, "note": "step 5: Spam Complaint Rate flagged for action + the do-not-flip suppression toggles" },
-      { "n": 6, "anchor": "kpiBandTsRect", "place": "below-left", "from": 99.32, "to": 115.8, "note": "step 6: the Task Scheduler KPI band — read 0 Failed first (engine healthy)" },
-      { "n": 7, "anchor": "rowSmsRect", "place": "below-left", "from": 116.24, "to": 135.6, "note": "step 7: the SMS Campaigns scheduler row — the outbound-text heartbeat" },
-      { "n": 8, "anchor": "theadRowRect", "place": "below-left", "from": 138.9, "to": 155.2, "note": "step 8: the Mass SMS Log columns — the per-message send trail" },
-      { "n": 9, "anchor": "billTabs.tabInvoices", "place": "below-left", "from": 158.4, "to": 174.6, "note": "step 9: the Billing tabs — Invoices 1 open and Spending Alerts (plausible gates)" },
-      { "n": 10, "anchor": "usageBySourceRect", "place": "left", "from": 175.2, "to": 189.4, "note": "step 10: Usage by Source — did the named campaign send anything this period" },
-      { "n": 11, "anchor": "tabsBarRect", "place": "below-left", "from": 190.4, "to": 210.4, "note": "step 11: package the escalation (name · type + status chip · deliverability signal · scheduler timestamps)" },
-      { "n": 12, "anchor": "thStatusRecapRect", "place": "below-left", "from": 213.6, "to": 225.0, "note": "step 12: recap — Status → Deliverability → Task Scheduler → Log → Billing, all read-only" }
+      {
+        "n": 1,
+        "anchor": "kpiBandRect",
+        "place": "below-left",
+        "from": 3.55,
+        "to": 16.0,
+        "note": "step 1: the KPI strip \u2014 'Sent This Month' is the headline read"
+      },
+      {
+        "n": 2,
+        "anchor": "thStatusRect",
+        "place": "below-left",
+        "from": 19.39,
+        "to": 34.4,
+        "note": "step 2: the Status column \u2014 Draft & Completed never send; Scheduled & Active are eligible"
+      },
+      {
+        "n": 3,
+        "anchor": "chips.chipSummer",
+        "place": "left-top",
+        "from": 37.42,
+        "to": 52.6,
+        "note": "step 3: the weather-paused pill (built-in hold, not an error)"
+      },
+      {
+        "n": 4,
+        "anchor": "bannerRect",
+        "place": "below-left",
+        "from": 57.5,
+        "to": 73.4,
+        "note": "step 4: the deliverability alert banner \u2014 pausing additional sends recommended"
+      },
+      {
+        "n": 5,
+        "anchor": "metricSpamRect2",
+        "place": "below-left",
+        "from": 77.18,
+        "to": 94.4,
+        "note": "step 5: Spam Complaint Rate flagged for action + the do-not-flip suppression toggles"
+      },
+      {
+        "n": 6,
+        "anchor": "kpiBandTsRect",
+        "place": "below-left",
+        "from": 99.32,
+        "to": 115.8,
+        "note": "step 6: the Task Scheduler KPI band \u2014 read 0 Failed first (engine healthy)"
+      },
+      {
+        "n": 7,
+        "anchor": "rowSmsRect",
+        "place": "below-left",
+        "from": 116.24,
+        "to": 135.6,
+        "note": "step 7: the SMS Campaigns scheduler row \u2014 the outbound-text heartbeat"
+      },
+      {
+        "n": 8,
+        "anchor": "theadRowRect",
+        "place": "below-left",
+        "from": 138.9,
+        "to": 155.2,
+        "note": "step 8: the Mass SMS Log columns \u2014 the per-message send trail"
+      },
+      {
+        "n": 9,
+        "anchor": "billTabs.tabInvoices",
+        "place": "below-left",
+        "from": 158.4,
+        "to": 174.6,
+        "note": "step 9: the Billing tabs \u2014 Invoices 1 open and Spending Alerts (plausible gates)"
+      },
+      {
+        "n": 10,
+        "anchor": "usageBySourceRect",
+        "place": "left",
+        "from": 175.2,
+        "to": 189.4,
+        "note": "step 10: Usage by Source \u2014 did the named campaign send anything this period"
+      },
+      {
+        "n": 11,
+        "anchor": "tabsBarRect",
+        "place": "below-left",
+        "from": 190.4,
+        "to": 210.4,
+        "note": "step 11: package the escalation (name \u00b7 type + status chip \u00b7 deliverability signal \u00b7 scheduler timestamps)"
+      },
+      {
+        "n": 12,
+        "anchor": "thStatusRecapRect",
+        "place": "below-left",
+        "from": 213.6,
+        "to": 225.0,
+        "note": "step 12: recap \u2014 Status \u2192 Deliverability \u2192 Task Scheduler \u2192 Log \u2192 Billing, all read-only"
+      }
     ],
     "highlights": [
-      { "anchor": "kpiTiles.kpiSent", "from": 5.1, "to": 8.6, "note": "p02 the headline 'Sent This Month' tile (live 6,370 — RESIDUAL R1)" },
-      { "anchor": "chips.chipHoliday", "from": 37.42, "to": 44.3, "note": "p13-p15 the weather-paused pill on Holiday Referral (Scheduled)" },
-      { "anchor": "chips.chipSummer", "from": 37.42, "to": 44.3, "note": "p13-p15 the weather-paused pill on Summer Unlimited (Active)" },
-      { "anchor": "bannerRect", "from": 57.5, "to": 66.9, "note": "p19-p21 the elevated-spam-complaint banner" },
-      { "anchor": "reviewRect", "from": 67.03, "to": 73.4, "color": "#dc2626", "note": "step 4 STOP guardrail: Review campaign → (edit surface) — never clicked" },
-      { "anchor": "metricSpamRect2", "from": 77.18, "to": 82.5, "note": "p25 Spam Complaint Rate · action needed" },
-      { "anchor": "runAuditRect", "from": 82.6, "to": 84.4, "color": "#dc2626", "note": "step 5 STOP guardrail: Run Full Audit — never clicked" },
-      { "anchor": "suppSectionRect", "from": 84.48, "to": 95.2, "color": "#dc2626", "note": "step 5 STOP guardrail: Engagement-Based Suppression toggles — noted, never flipped" },
-      { "anchor": "kpiTilesTs.kpiFailed", "from": 99.32, "to": 106.5, "note": "p33 the 0 Failed tile" },
-      { "anchor": "newRecordTsRect", "from": 128.43, "to": 135.6, "color": "#dc2626", "note": "step 7 STOP guardrail: + New Record (create surface) — never clicked" },
-      { "anchor": "rowSmsRect", "from": 116.24, "to": 128.3, "note": "p37-p40 the SMS Campaigns row (Hourly · 1 hour ago · In 52 min · Active)" },
-      { "anchor": "theadRowRect", "from": 138.9, "to": 145.5, "note": "p44 the five Mass SMS Log columns" },
-      { "anchor": "newRecordSmsRect", "from": 145.65, "to": 155.2, "color": "#dc2626", "note": "step 8 STOP guardrail: + New Record — never clicked" },
-      { "anchor": "billTabs.tabInvoices", "from": 160.69, "to": 162.0, "note": "p50 Invoices 1 open" },
-      { "anchor": "billTabs.tabSpendingAlerts", "from": 162.15, "to": 170.9, "color": "#dc2626", "note": "step 9 STOP guardrail: Spending Alerts — pointed at, never opened (contents TBD — parked)" },
-      { "anchor": "exportCsvRect", "from": 171.24, "to": 174.8, "color": "#dc2626", "note": "step 9 STOP guardrail: Export CSV — never clicked" },
-      { "anchor": "usageBySourceRect", "from": 177.62, "to": 189.4, "note": "p56-p59 Usage by Source rows (Campaign / Automation / Transactional)" }
+      {
+        "anchor": "kpiTiles.kpiSent",
+        "from": 5.1,
+        "to": 8.6,
+        "note": "p02 the headline 'Sent This Month' tile (live 6,370 \u2014 RESIDUAL R1)"
+      },
+      {
+        "anchor": "chips.chipHoliday",
+        "from": 37.42,
+        "to": 44.3,
+        "note": "p13-p15 the weather-paused pill on Holiday Referral (Scheduled)"
+      },
+      {
+        "anchor": "chips.chipSummer",
+        "from": 37.42,
+        "to": 44.3,
+        "note": "p13-p15 the weather-paused pill on Summer Unlimited (Active)"
+      },
+      {
+        "anchor": "bannerRect",
+        "from": 57.5,
+        "to": 66.9,
+        "note": "p19-p21 the elevated-spam-complaint banner"
+      },
+      {
+        "anchor": "reviewRect",
+        "from": 67.03,
+        "to": 73.4,
+        "color": "#dc2626",
+        "note": "step 4 STOP guardrail: Review campaign \u2192 (edit surface) \u2014 never clicked"
+      },
+      {
+        "anchor": "metricSpamRect2",
+        "from": 77.18,
+        "to": 82.5,
+        "note": "p25 Spam Complaint Rate \u00b7 action needed"
+      },
+      {
+        "anchor": "runAuditRect",
+        "from": 82.6,
+        "to": 84.4,
+        "color": "#dc2626",
+        "note": "step 5 STOP guardrail: Run Full Audit \u2014 never clicked"
+      },
+      {
+        "anchor": "suppSectionRect",
+        "from": 84.48,
+        "to": 95.2,
+        "color": "#dc2626",
+        "note": "step 5 STOP guardrail: Engagement-Based Suppression toggles \u2014 noted, never flipped"
+      },
+      {
+        "anchor": "kpiTilesTs.kpiFailed",
+        "from": 99.32,
+        "to": 106.5,
+        "note": "p33 the 0 Failed tile"
+      },
+      {
+        "anchor": "newRecordTsRect",
+        "from": 128.43,
+        "to": 135.6,
+        "color": "#dc2626",
+        "note": "step 7 STOP guardrail: + New Record (create surface) \u2014 never clicked"
+      },
+      {
+        "anchor": "rowSmsRect",
+        "from": 116.24,
+        "to": 128.3,
+        "note": "p37-p40 the SMS Campaigns row (Hourly \u00b7 1 hour ago \u00b7 In 52 min \u00b7 Active)"
+      },
+      {
+        "anchor": "theadRowRect",
+        "from": 138.9,
+        "to": 145.5,
+        "note": "p44 the five Mass SMS Log columns"
+      },
+      {
+        "anchor": "newRecordSmsRect",
+        "from": 145.65,
+        "to": 155.2,
+        "color": "#dc2626",
+        "note": "step 8 STOP guardrail: + New Record \u2014 never clicked"
+      },
+      {
+        "anchor": "billTabs.tabInvoices",
+        "from": 160.69,
+        "to": 162.0,
+        "note": "p50 Invoices 1 open"
+      },
+      {
+        "anchor": "billTabs.tabSpendingAlerts",
+        "from": 162.15,
+        "to": 170.9,
+        "color": "#dc2626",
+        "note": "step 9 STOP guardrail: Spending Alerts \u2014 pointed at, never opened (contents TBD \u2014 parked)"
+      },
+      {
+        "anchor": "exportCsvRect",
+        "from": 171.24,
+        "to": 174.8,
+        "color": "#dc2626",
+        "note": "step 9 STOP guardrail: Export CSV \u2014 never clicked"
+      },
+      {
+        "anchor": "usageBySourceRect",
+        "from": 177.62,
+        "to": 189.4,
+        "note": "p56-p59 Usage by Source rows (Campaign / Automation / Transactional)"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 2.4, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 3.4, "z": 1.45, "cx": 960, "cy": 190, "ease": true, "note": "step 1 close read of the KPI strip (shot list: zoom-in 150%)" },
-      { "t": 15.4, "z": 1.45, "cx": 960, "cy": 190 },
-      { "t": 16.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Campaign List" },
-      { "t": 35.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 36.8, "z": 1.5, "cx": 965, "cy": 552, "ease": true, "note": "step 3 close-up on the weather-paused pill (shot list: zoom-in 150%)" },
-      { "t": 51.8, "z": 1.5, "cx": 965, "cy": 552 },
-      { "t": 52.8, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Deliverability page change" },
-      { "t": 57.2, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 58.0, "z": 1.35, "cx": 960, "cy": 210, "ease": true, "note": "step 4 frame the alert banner" },
-      { "t": 66.9, "z": 1.35, "cx": 960, "cy": 210 },
-      { "t": 68.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide to reveal the metric row and the suppression section" },
-      { "t": 76.8, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 77.6, "z": 1.4, "cx": 1117, "cy": 230, "ease": true, "note": "step 5 zoom on Spam Complaint Rate · action needed (shot list: zoom-in 150%)" },
-      { "t": 82.4, "z": 1.4, "cx": 1117, "cy": 230 },
-      { "t": 83.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the low Engagement-Based Suppression section" },
-      { "t": 95.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 99.0, "z": 1, "cx": 960, "cy": 540, "note": "hold wide through the three-hop Settings → Automation → Task Scheduler navigation" },
-      { "t": 99.6, "z": 1.4, "cx": 960, "cy": 200, "ease": true, "note": "step 6 close read of the Task Scheduler KPI band (0 Failed)" },
-      { "t": 106.4, "z": 1.4, "cx": 960, "cy": 200 },
-      { "t": 107.4, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 116.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 116.9, "z": 1.4, "cx": 960, "cy": 560, "ease": true, "note": "step 7 zoom on the SMS Campaigns row (shot list: zoom-in 150%)" },
-      { "t": 128.2, "z": 1.4, "cx": 960, "cy": 560 },
-      { "t": 129.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the guardrail and the Mass SMS Log page change" },
-      { "t": 138.5, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 139.3, "z": 1.3, "cx": 960, "cy": 330, "ease": true, "note": "step 8 frame the Mass SMS Log columns" },
-      { "t": 145.4, "z": 1.3, "cx": 960, "cy": 330 },
-      { "t": 146.4, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 158.1, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 159.0, "z": 1.3, "cx": 720, "cy": 250, "ease": true, "note": "step 9 frame the Billing tab bar (Invoices / Spending Alerts)" },
-      { "t": 170.8, "z": 1.3, "cx": 720, "cy": 250 },
-      { "t": 171.8, "z": 1, "cx": 960, "cy": 540, "ease": true },
-      { "t": 175.2, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 176.2, "z": 1.3, "cx": 1180, "cy": 430, "ease": true, "note": "step 10 frame the Usage by Source panel" },
-      { "t": 189.2, "z": 1.3, "cx": 1180, "cy": 430 },
-      { "t": 190.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the escalation recap and the return to Campaigns" },
-      { "t": 228.598, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 3.4,
+        "z": 1.45,
+        "cx": 960,
+        "cy": 190,
+        "ease": true,
+        "note": "step 1 close read of the KPI strip (shot list: zoom-in 150%)"
+      },
+      {
+        "t": 15.4,
+        "z": 1.45,
+        "cx": 960,
+        "cy": 190
+      },
+      {
+        "t": 16.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Campaign List"
+      },
+      {
+        "t": 35.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 36.8,
+        "z": 1.5,
+        "cx": 965,
+        "cy": 552,
+        "ease": true,
+        "note": "step 3 close-up on the weather-paused pill (shot list: zoom-in 150%)"
+      },
+      {
+        "t": 51.8,
+        "z": 1.5,
+        "cx": 965,
+        "cy": 552
+      },
+      {
+        "t": 52.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Deliverability page change"
+      },
+      {
+        "t": 57.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 58.0,
+        "z": 1.35,
+        "cx": 960,
+        "cy": 210,
+        "ease": true,
+        "note": "step 4 frame the alert banner"
+      },
+      {
+        "t": 66.9,
+        "z": 1.35,
+        "cx": 960,
+        "cy": 210
+      },
+      {
+        "t": 68.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide to reveal the metric row and the suppression section"
+      },
+      {
+        "t": 76.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 77.6,
+        "z": 1.4,
+        "cx": 1117,
+        "cy": 230,
+        "ease": true,
+        "note": "step 5 zoom on Spam Complaint Rate \u00b7 action needed (shot list: zoom-in 150%)"
+      },
+      {
+        "t": 82.4,
+        "z": 1.4,
+        "cx": 1117,
+        "cy": 230
+      },
+      {
+        "t": 83.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the low Engagement-Based Suppression section"
+      },
+      {
+        "t": 95.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 99.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "note": "hold wide through the three-hop Settings \u2192 Automation \u2192 Task Scheduler navigation"
+      },
+      {
+        "t": 99.6,
+        "z": 1.4,
+        "cx": 960,
+        "cy": 200,
+        "ease": true,
+        "note": "step 6 close read of the Task Scheduler KPI band (0 Failed)"
+      },
+      {
+        "t": 106.4,
+        "z": 1.4,
+        "cx": 960,
+        "cy": 200
+      },
+      {
+        "t": 107.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 116.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 116.9,
+        "z": 1.4,
+        "cx": 960,
+        "cy": 560,
+        "ease": true,
+        "note": "step 7 zoom on the SMS Campaigns row (shot list: zoom-in 150%)"
+      },
+      {
+        "t": 128.2,
+        "z": 1.4,
+        "cx": 960,
+        "cy": 560
+      },
+      {
+        "t": 129.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the guardrail and the Mass SMS Log page change"
+      },
+      {
+        "t": 138.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 139.3,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 330,
+        "ease": true,
+        "note": "step 8 frame the Mass SMS Log columns"
+      },
+      {
+        "t": 145.4,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 330
+      },
+      {
+        "t": 146.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 158.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 159.0,
+        "z": 1.3,
+        "cx": 720,
+        "cy": 250,
+        "ease": true,
+        "note": "step 9 frame the Billing tab bar (Invoices / Spending Alerts)"
+      },
+      {
+        "t": 170.8,
+        "z": 1.3,
+        "cx": 720,
+        "cy": 250
+      },
+      {
+        "t": 171.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true
+      },
+      {
+        "t": 175.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 176.2,
+        "z": 1.3,
+        "cx": 1180,
+        "cy": 430,
+        "ease": true,
+        "note": "step 10 frame the Usage by Source panel"
+      },
+      {
+        "t": 189.2,
+        "z": 1.3,
+        "cx": 1180,
+        "cy": 430
+      },
+      {
+        "t": 190.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the escalation recap and the return to Campaigns"
+      },
+      {
+        "t": 228.598,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "completion": {
-      "text": "Campaign Stopped — Complete",
+      "text": "Campaign Stopped \u2014 Complete",
       "from": 226.8,
       "fadeOutFrames": 10
     },
@@ -351,7 +2185,7 @@
     "export",
     "export csv",
     "review campaign",
-    "review campaign →",
+    "review campaign \u2192",
     "run full audit",
     "spending alerts",
     "send",
