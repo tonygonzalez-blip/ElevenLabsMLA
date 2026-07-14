@@ -24,10 +24,10 @@
       "textRect": true
     },
     "usersCard": {
-      "js": "[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/users\\s*&\\s*security/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
     },
     "usersCardItemSystemUsers": {
-      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^System Users$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
     },
     "tileTotalUsers": {
       "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Users/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
@@ -80,7 +80,7 @@
     "onUserLevels": "location.pathname.endsWith('/settings-user-levels.html')",
     "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "usersCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^System Users$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
+    "usersCardOpen": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "usersRowsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-system-users.html')&&rows.length>=10&&!!pi&&/of\\s*[\\d,]+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "automationSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&/^User Levels$/.test((e.textContent||'').trim()))",
     "automationMenuStagedClosed": "(()=>{try{const s=JSON.parse(localStorage.getItem('washcentral-settings-menu-v1')||'{}');return s.automation!==true}catch(e){return true}})()",
