@@ -101,12 +101,6 @@
       "note": "pre-roll: persisted sidebar preference (washcentral-sidebar-collapsed-v5) must be expanded; the preflight stages it"
     },
     {
-      "op": "assert",
-      "at": -0.6,
-      "predicate": "automationMenuStagedClosed",
-      "note": "pre-roll: persisted settings-menu state (washcentral-settings-menu-v1) must have automation closed so the step-5 header click genuinely EXPANDS; the preflight stages it"
-    },
-    {
       "op": "pointer-enter",
       "at": 0.35,
       "from": [
@@ -149,7 +143,7 @@
           660
         ]
       },
-      "note": "step 2, p10 'So does a nudge of the mouse' — a genuine small mouse nudge, the real keep-alive action (the 58-min idle warning itself cannot truthfully appear; see RESIDUALS)"
+      "note": "step 2, p10 'So does a nudge of the mouse' \u2014 a genuine small mouse nudge, the real keep-alive action (the 58-min idle warning itself cannot truthfully appear; see RESIDUALS)"
     },
     {
       "op": "move",
@@ -199,7 +193,7 @@
       "hoverMs": 350,
       "postcondition": "usersCardOpen",
       "timeoutMs": 4000,
-      "note": "step 3b: open the Users & Security group card (stateless accordion — closed on every fresh load of settings.html) as p14 says 'Open System Users'"
+      "note": "step 3b: open the Users & Security group card (stateless accordion \u2014 closed on every fresh load of settings.html) as p14 says 'Open System Users'"
     },
     {
       "op": "click",
@@ -223,7 +217,7 @@
       "op": "assert",
       "at": 41.9,
       "predicate": "usersRowsLoaded",
-      "note": "load check: real rows + counter, no 'Failed to fetch' (July 11: 8,022 users load; the July-9 banner state is gone — see RESIDUALS for step 4)"
+      "note": "load check: real rows + counter, no 'Failed to fetch' (July 11: 8,022 users load; the July-9 banner state is gone \u2014 see RESIDUALS for step 4)"
     },
     {
       "op": "log-rects",
@@ -316,7 +310,7 @@
         ],
         "outside": true
       },
-      "note": "under the Total Users tile — 8,022 present, the healthy contrast to the frozen branch (p21-p22)"
+      "note": "under the Total Users tile \u2014 8,022 present, the healthy contrast to the frozen branch (p21-p22)"
     },
     {
       "op": "move",
@@ -339,7 +333,7 @@
           0
         ]
       },
-      "note": "step 5 approach at the s05 cue ('Second check, second page.') — to the collapsed Automation group header"
+      "note": "step 5 approach at the s05 cue ('Second check, second page.') \u2014 to the collapsed Automation group header"
     },
     {
       "op": "click",
@@ -434,7 +428,7 @@
         ],
         "outside": true
       },
-      "note": "step 6: under the Longest Timeout (min) tile — 120, the top of the range p30 describes"
+      "note": "step 6: under the Longest Timeout (min) tile \u2014 120, the top of the range p30 describes"
     },
     {
       "op": "move",
@@ -536,7 +530,7 @@
         "place": "at",
         "from": 16.9,
         "to": 33,
-        "note": "step 2: where the centered Still there? dialog appears; the warning itself cannot truthfully be shown (58-min idle trigger) — RESIDUAL"
+        "note": "step 2: where the centered Still there? dialog appears; the warning itself cannot truthfully be shown (58-min idle trigger) \u2014 RESIDUAL"
       },
       {
         "n": 3,
@@ -552,7 +546,7 @@
         "place": "below-left",
         "from": 54.9,
         "to": 64.6,
-        "note": "step 4: load state — rows present at record time (July 11), the frozen-branch caution is narrated conditionally"
+        "note": "step 4: load state \u2014 rows present at record time (July 11), the frozen-branch caution is narrated conditionally"
       },
       {
         "n": 5,
@@ -611,7 +605,7 @@
         "anchor": "su.tileTotalUsers",
         "from": 58.8,
         "to": 61.7,
-        "note": "'the rows aren't missing' — Total Users 8,022 is live on screen (p21-p22)"
+        "note": "'the rows aren't missing' \u2014 Total Users 8,022 is live on screen (p21-p22)"
       },
       {
         "anchor": "ul.thTimeout",
@@ -623,7 +617,7 @@
         "anchor": "ul.tileLongestTimeout",
         "from": 88.9,
         "to": 91.8,
-        "note": "'up to a hundred and twenty' — the Longest Timeout (min) tile reads 120 (p30)"
+        "note": "'up to a hundred and twenty' \u2014 the Longest Timeout (min) tile reads 120 (p30)"
       },
       {
         "anchor": "ul.rowCashiers",
@@ -744,7 +738,7 @@
       }
     ],
     "completion": {
-      "text": "Surprise Logouts — Complete",
+      "text": "Surprise Logouts \u2014 Complete",
       "from": 156.0,
       "fadeOutFrames": 10
     },
@@ -781,39 +775,7 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: stage the shared persisted sidebar preference (washcentral-sidebar-collapsed-v5) expanded before the take"
-    },
-    {
-      "op": "click",
-      "target": "railSettings",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "automationMenuStagedClosed",
-      "postcondition": "onSettingsHome",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "off-camera: only if the persisted settings menu has automation:true, hop to settings.html where the group header exists"
-    },
-    {
-      "op": "click",
-      "target": "sidebarAutomationHeader",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "automationMenuStagedClosed",
-      "postcondition": "automationMenuStagedClosed",
-      "timeoutMs": 4000,
-      "note": "off-camera: genuine header click collapses the persisted-open Automation group so the on-camera step-5 click expands it"
-    },
-    {
-      "op": "click",
-      "target": "railCommandCenter",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "onCommandCenter",
-      "postcondition": "onCommandCenter",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "off-camera: return to the documented start page"
+      "note": "off-camera: expand the rail panel (persisted sidebar preference) before the take"
     }
   ]
 }
