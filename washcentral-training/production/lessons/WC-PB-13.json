@@ -654,7 +654,7 @@
       "key": "supportStable",
       "predicate": "supportReady",
       "settleMs": 500,
-      "timeoutMs": 9000
+      "timeoutMs": 15000
     },
     {
       "op": "click",
