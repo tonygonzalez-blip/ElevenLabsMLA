@@ -56,7 +56,7 @@
       "textRect": true
     },
     "sidebarIntegrations": {
-      "js": "[...document.querySelectorAll('a[href=\"settings-integrations.html\"]')].find(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.top>=0&&r.bottom<=1080})"
+      "js": "[...document.querySelectorAll('a[href=\"settings-integrations.html\"]')].find(e=>{const r=e.getBoundingClientRect();const cy=r.top+r.height/2;return r.width>0&&cy>=0&&cy<=1080})"
     },
     "zStatusChip": {
       "selector": ".int-badge"
