@@ -342,7 +342,8 @@
       "hoverMs": 380,
       "postcondition": "automationSubmenuOpen",
       "timeoutMs": 4000,
-      "note": "step 5a: genuinely EXPAND Automation (preflight staged it closed; a persisted-open state would make this click collapse instead)"
+      "note": "step 5a: genuinely EXPAND Automation to reveal User Levels. unless-guarded (automationSubmenuOpen): the shared stage's persisted settings-menu state may already render Automation open, in which case the toggle is skipped and User Levels is already visible under Automation (still faithful to p26 'User Levels lives under Automation'); if closed, the click expands it.",
+      "unless": "automationSubmenuOpen"
     },
     {
       "op": "log-rect",
