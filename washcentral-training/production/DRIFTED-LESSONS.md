@@ -234,3 +234,22 @@ ENV-LIMITATION = blocked by environment/demo behavior no config edit can faithfu
 **Net producible without user sign-off:** WC-15-01 (done), WC-PB-01/02/03/08/09/13 (re-point), and
 possibly WC-PB-10/14 pending live checks — up to ~9 lessons. **Needs user sign-off (re-record):** 10
 narration blockers. **Env-limited:** 4.
+
+## PRODUCTION UPDATE (2026-07-14, this session) — 55/70 produced
+Corrected the diagnosis and produced 6 previously-blocked lessons through the re-point patterns:
+- **DONE (QA 33/33, committed):** WC-15-01 (backdrop→reports.html), WC-PB-02, WC-PB-03, WC-PB-08,
+  WC-PB-09, WC-PB-01 — all via the sw-app-launcher / #wc-rail re-point patterns.
+- **WC-PB-13 — CONFIG-COMPLETE, infra-blocked.** All nav re-points done + verified (rehearse passes;
+  record reached the end). Two fixes added: supportReady wait 9s→15s (IT&Support menu builds slower
+  under record load), sidebarIntegrations viewport constraint relaxed to click-point-on-screen. The
+  ONLY remaining blocker is INTERMITTENT: settings-integrations.html (its startUrl) periodically
+  fails to fetch styles.css/bootstrap through the egress proxy (UNSTYLED after 5 reloads; a live
+  probe confirmed the page hangs during the flake). It will produce on a retry when that page loads
+  cleanly — the daemon just needs its SKIP cleared during a good window (watchdog does this).
+- **Still autonomously-uncertain:** WC-PB-10 (mobile-users headless render + many live data values),
+  WC-PB-14 (all three of its live demo states drifted: support-alerts + terminals now LOAD, negating
+  the "Failed to fetch" narration — likely a narration blocker, verify live).
+- **Unchanged — need USER SIGN-OFF (locked-narration re-record):** WC-02-03, WC-02-05, WC-12-01,
+  WC-12-02, WC-12-08, WC-PB-04, WC-PB-06, WC-PB-07, WC-PB-12, WC-01-03.
+- **Unchanged — environment-gated:** WC-09-02 (mobile shell headless), WC-14-01/02 (lms-home persona
+  gate), WC-00-02 (login.html de-auth).
