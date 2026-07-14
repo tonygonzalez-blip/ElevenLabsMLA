@@ -989,43 +989,13 @@
   "preflight": [
     {
       "op": "click",
-      "target": "railSettings",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "postcondition": "onSettingsHome",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "off-camera: hop to Settings to stage the persisted settings menu (washcentral-settings-menu-v1)"
-    },
-    {
-      "op": "click",
-      "target": "usersHeader",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "usersSubmenuClosed",
-      "postcondition": "usersSubmenuClosed",
-      "timeoutMs": 4000,
-      "note": "off-camera: collapse the Users & Security group if a prior session left it open, so the on-camera step-4 expand is genuine (skipped when already closed)"
-    },
-    {
-      "op": "click",
-      "target": "railCommandCenter",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "postcondition": "onCommandCenter",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "off-camera: return to the start page before capture"
-    },
-    {
-      "op": "click",
       "target": "expandToggle",
       "pressAt": 0,
       "hoverMs": 200,
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera, MUST BE LAST: arriving at command-center force-writes washcentral-sidebar-collapsed-v5=true, and a collapsed pref makes the step-4 settings sidebar render collapsed (observed live July 11: Users & Security shrinks to a 16px glyph and the submenu is unreachable) \u2014 expand it here so the persisted pref reads false when capture starts"
+      "note": "off-camera: expand the rail panel before the take (launcher categories default to closed; no submenu staging needed)"
     }
   ]
 }

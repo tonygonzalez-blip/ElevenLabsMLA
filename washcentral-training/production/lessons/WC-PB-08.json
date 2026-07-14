@@ -184,7 +184,8 @@
     "taskSchedLinkVisible": "[...document.querySelectorAll('a[href=\"settings-task-scheduler.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "taskSchedulerLoaded": "(()=>location.pathname.endsWith('/settings-task-scheduler.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('table tbody tr')].some(t=>/SMS Campaigns/i.test(t.textContent||'')&&t.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent.slice(0,240)))()",
     "massSmsLoaded": "(()=>location.pathname.endsWith('/settings-mass-sms-log.html')&&[...document.querySelectorAll('table thead th')].some(e=>/^Date$/i.test((e.textContent||'').trim()))&&[...document.querySelectorAll('table thead th')].some(e=>/^Status$/i.test((e.textContent||'').trim()))&&!/404 - File/i.test(document.title||''))()",
-    "billingLoaded": "(()=>location.pathname.endsWith('/billing-usage.html')&&[...document.querySelectorAll('button,a')].some(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('button,a')].some(e=>/Invoices/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('*')].some(e=>/Usage by Source/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent.slice(0,240)))()"
+    "billingLoaded": "(()=>location.pathname.endsWith('/billing-usage.html')&&[...document.querySelectorAll('button,a')].some(e=>/^Overview$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('button,a')].some(e=>/Invoices/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('*')].some(e=>/Usage by Source/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch|Not Found/i.test(document.body.textContent.slice(0,240)))()",
+    "launcherReady": "location.pathname.endsWith('/settings.html')&&document.querySelectorAll('.sw-cat').length>5"
   },
   "preflight": [
     {
@@ -842,7 +843,7 @@
       "op": "wait-stable",
       "afterNav": true,
       "key": "setStable",
-      "predicate": "onSettings",
+      "predicate": "launcherReady",
       "settleMs": 300,
       "timeoutMs": 8000
     },
