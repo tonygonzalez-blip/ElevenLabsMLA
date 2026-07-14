@@ -171,3 +171,66 @@ drift also present: WC-14-01 dashLoaded expected 4 .lms-stat (still 4) + .lms-he
 page DIV; WC-15-01 pageIntact card-count relaxed (committed) but still blocked by the modal.
 Classify as an environment/demo-site limitation (same class as WC-09-02 mobile pages) pending a way
 to keep the LMS session alive or dismiss the modal.
+
+## CONSOLIDATED TRIAGE LEDGER — all remaining blocked lessons (2026-07-14, 3-agent + live-probe)
+Full classification of the 21 SKIP'd lessons after the corrected diagnosis. Categories:
+PRODUCIBLE-REPOINT = config-only fix, narration stays faithful (I produce these).
+NARRATION-BLOCKER = locked audio names/counts UI the redesign renamed/deleted/re-counted; cannot be
+produced faithfully → needs a re-recorded narration block + USER SIGN-OFF (never fake).
+ENV-LIMITATION = blocked by environment/demo behavior no config edit can faithfully work around.
+
+### PRODUCIBLE-REPOINT (config-only; being produced)
+- **WC-15-01** — DONE 2026-07-14 (backdrop lms-home→reports.html; doc-over, names no backdrop UI).
+- **WC-PB-02** — settings launcher re-point (.sw-cat→System Users) + preflight fix. In production.
+- **WC-PB-01** (Login Failures) — narration generic ("under Settings", "Audit → User Activity").
+  Re-point `.sh-card` usCard + `aside.sidebar a.menu-header` audit links to the sw-app launcher +
+  `a.menu-header[href=audit-users.html]`; AUTHOR the undefined targets usersHeader/linkSystemUsers/
+  usersSubmenuOpen/usersSubmenuClosed. Live-verified: System Users table has exactly 8 columns
+  (matches p19 "Eight columns": User Name, User Code, User Level, Email, Phone, Active, SSO, Last Login).
+- **WC-PB-03** (POS Down) — re-point `aside.sidebar a[href]` NOC/Alerts → `a.menu-header[href=...]`,
+  `.sh-card` Hardware → launcher; Hardware/Terminals is a list-only tour (no tab-naming). Pre-existing
+  data residuals (p71 ticket columns, p52 Terminals column) are separate, not redesign.
+- **WC-PB-08** (Campaign Stopped) — re-point `aside.sidebar` Deliverability/Task-Scheduler/Mass-SMS +
+  relocate Automation group-expand onto a settings sub-page. Data residuals p02/p45 pre-existing.
+- **WC-PB-09** (Reports Wrong) — re-point `aside.sidebar` Settings→Automation→Task-Scheduler; rail +
+  reports panel already current. Data residual p03 ("three on a schedule") pre-existing.
+- **WC-PB-13** (Integration Down) — only the settings-landing hop drifted (Users & Security accordion
+  now launcher); re-point via launcher `.sw-cat`→sub-page. Zoho tabs + SSO/Last-Login columns persist.
+
+### NEEDS-LIVE-CHECK (may be producible; verify the drifted demo states first)
+- **WC-PB-10** (Portal/Mobile Login) — selectors already current, but depends on mobile-users.html
+  rendering (see WC-09-02) + many named live values (p07/p08/p20/p39/p43) to re-confirm.
+- **WC-PB-14** (Broken Page/404) — `.sh-card` LogicPOS gone + `aside.sidebar` dead AND all three demo
+  states drifted: support-alerts.html now LOADS (was the 404 example, p14-15) and Terminals now loads
+  its rows (contradicts p29-30 "Failed to fetch"). The lesson's live demonstrations no longer exist.
+
+### NARRATION-BLOCKER — needs re-recorded narration + USER SIGN-OFF (cannot produce faithfully)
+- **WC-02-03** — p13 "Messaging turns into Communication, Notes into Comments"; live tabs are the
+  opposite (Messaging/Notes). (sidebar re-point applied; lesson held.)
+- **WC-02-05** — s07 "Three chips: net thirty / $10,000 limit / 14 vehicles"; `.a-badges` renders
+  empty on house accounts; only "14 vehicles" has a referent.
+- **WC-12-01** — p06-10 "Sixteen categories, ninety two pages" + 16-card grid/counter deleted (real 95).
+- **WC-12-02** — "One location, five tabs… Profile, Operations, Payments and Credentials, Messaging,
+  Users"; location detail rebuilt to 10 differently-named tabs.
+- **WC-12-08** — p55 "Seventy eight percent" containment over a live "—" dash; p79 named test-send
+  controls absent; p68 "five tabs" unverified. (Selectors already current.)
+- **WC-PB-04** — s09/s10 "Payments and Credentials tab" + processors "Open Edge/Smart Tech/Other/Card
+  Connect" + "Payment Credential Approval" all removed. (scroll fix applied; lesson held.)
+- **WC-PB-06** — p07 "the Membership tab" + p17 "the Vehicles tab" — both deleted from customer-detail.
+- **WC-PB-07** — p02 "nine tabs" (now 6) + p07/p70 "the Membership tab" (deleted).
+- **WC-PB-12** — p46 uptime/latency tiles + p48 test controls absent; p17 "seven open" over an empty
+  escalations queue.
+- **WC-01-03** — narration speaks stale state (pre-existing deferred).
+
+### ENV-LIMITATION (no faithful config workaround)
+- **WC-09-02** — mobile-users/settings-mobile-branding app shell stays display:none in headless
+  Chrome; pre-roll can't pass. One unproven lever: a mobile viewport/UA in capture (live test).
+- **WC-14-01** — enters lms-home (persona-picker gate); narration requires "My Dashboard" tour; also
+  p34 "Six courses"/hero may conflict if the grid was redesigned (verify past the gate).
+- **WC-14-02** — opening p02-p11 locked to the learner dashboard behind the same persona gate; dead
+  aside.sidebar selectors too.
+- **WC-00-02** — sign-in lesson; login.html de-auths the shared profile (needs special sequencing).
+
+**Net producible without user sign-off:** WC-15-01 (done), WC-PB-01/02/03/08/09/13 (re-point), and
+possibly WC-PB-10/14 pending live checks — up to ~9 lessons. **Needs user sign-off (re-record):** 10
+narration blockers. **Env-limited:** 4.
