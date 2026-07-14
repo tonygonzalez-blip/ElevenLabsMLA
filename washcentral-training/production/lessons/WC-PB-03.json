@@ -5,7 +5,10 @@
   "audioDurationS": 246.282,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/command-center.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "output": "WC-PB-03-pos-down-v1.1",
   "orderedMentions": [
     "Command Center",
@@ -37,7 +40,7 @@
   "neverClick": [
     "logout",
     "log out now",
-    "open →",
+    "open \u2192",
     "new record",
     "+ new record",
     "export",
@@ -52,7 +55,9 @@
     "save changes"
   ],
   "targets": {
-    "expandToggle": { "selector": ".wc-rail-panel-toggle" },
+    "expandToggle": {
+      "selector": ".wc-rail-panel-toggle"
+    },
     "railITS": {
       "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>(e.getAttribute('title')||'').trim()==='IT & Support'&&e.getBoundingClientRect().width>0)"
     },
@@ -62,8 +67,12 @@
     "railSales": {
       "js": "[...document.querySelectorAll('.wc-rail-item')].find(e=>(e.getAttribute('title')||'').trim()==='Sales'&&e.getBoundingClientRect().width>0)"
     },
-    "piHdr": { "selector": ".cc-feed-hdr" },
-    "piCount": { "selector": ".cc-feed-count" },
+    "piHdr": {
+      "selector": ".cc-feed-hdr"
+    },
+    "piCount": {
+      "selector": ".cc-feed-count"
+    },
     "piGroupHdr": {
       "js": "[...document.querySelectorAll('.cc-group-hdr')].find(e=>/^Critical/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
     },
@@ -82,18 +91,30 @@
     "openLink": {
       "js": "(()=>{const r=[...document.querySelectorAll('a.cc-row')].find(e=>/Henrico W Broad/.test(e.textContent||''));return r?r.querySelector('.cc-action-link'):null})()"
     },
-    "ownTitle": { "selector": ".cc-own-title" },
+    "ownTitle": {
+      "selector": ".cc-own-title"
+    },
     "ownRole": {
       "js": "[...document.querySelectorAll('.cc-av-role')].find(e=>/Regional Ops/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
     "ownDue": {
       "js": "[...document.querySelectorAll('.cc-av-when')].find(e=>/Due: next 30 min/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
-    "ownUrgent": { "selector": ".cc-av-badge" },
-    "sideNOC": { "selector": "aside.sidebar a[href=\"ml-command-center.html\"]" },
-    "sideAlerts": { "selector": "aside.sidebar a[href=\"support-alerts.html\"]" },
-    "nocBrand": { "selector": ".noc-brand-name" },
-    "nocBadge": { "selector": ".noc-status-badge" },
+    "ownUrgent": {
+      "selector": ".cc-av-badge"
+    },
+    "sideNOC": {
+      "selector": "a.menu-header[href=\"ml-command-center.html\"]"
+    },
+    "sideAlerts": {
+      "selector": "a.menu-header[href=\"support-alerts.html\"]"
+    },
+    "nocBrand": {
+      "selector": ".noc-brand-name"
+    },
+    "nocBadge": {
+      "selector": ".noc-status-badge"
+    },
     "tabIncidents": {
       "js": "[...document.querySelectorAll('button.noc-right-tab')].find(e=>/Incidents/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
@@ -137,10 +158,18 @@
       "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
       "textRect": true
     },
-    "alTile1": { "js": "document.querySelectorAll('.a-metric')[0]" },
-    "alTile2": { "js": "document.querySelectorAll('.a-metric')[1]" },
-    "alTile3": { "js": "document.querySelectorAll('.a-metric')[2]" },
-    "alTile4": { "js": "document.querySelectorAll('.a-metric')[3]" },
+    "alTile1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "alTile2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "alTile3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "alTile4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
     "alThType": {
       "js": "[...document.querySelectorAll('th')].find(e=>/^Type$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
     },
@@ -153,15 +182,17 @@
     "alExport": {
       "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
     },
-    "alFilters": { "selector": ".adv-toggle-btn" },
+    "alFilters": {
+      "selector": ".adv-toggle-btn"
+    },
     "alSearch": {
       "js": "[...document.querySelectorAll('input')].find(e=>/^Search system alerts/i.test(e.placeholder||'')&&e.getBoundingClientRect().width>0)"
     },
     "hwCard": {
-      "js": "[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Hardware$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/^Hardware/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
     },
     "hwItemTerminals": {
-      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^Hardware \\/ Terminals$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('a[href=\"settings-hardware-terminals.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
     },
     "tBc": {
       "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
@@ -173,16 +204,36 @@
     "tNewRec": {
       "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
-    "tThTerminal": { "text": "Terminal", "scope": "th" },
-    "tThLocation": { "text": "Location", "scope": "th" },
-    "tThIP": { "text": "IP", "scope": "th" },
-    "tThSoftware": { "text": "Software Version", "scope": "th" },
-    "tThOS": { "text": "OS", "scope": "th" },
-    "tThLastSeen": { "text": "Last Seen", "scope": "th" },
+    "tThTerminal": {
+      "text": "Terminal",
+      "scope": "th"
+    },
+    "tThLocation": {
+      "text": "Location",
+      "scope": "th"
+    },
+    "tThIP": {
+      "text": "IP",
+      "scope": "th"
+    },
+    "tThSoftware": {
+      "text": "Software Version",
+      "scope": "th"
+    },
+    "tThOS": {
+      "text": "OS",
+      "scope": "th"
+    },
+    "tThLastSeen": {
+      "text": "Last Seen",
+      "scope": "th"
+    },
     "tFirstRow": {
       "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0)"
     },
-    "tSearch": { "selector": "#bespoke-search" },
+    "tSearch": {
+      "selector": "#bespoke-search"
+    },
     "sBc": {
       "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
       "textRect": true
@@ -190,15 +241,40 @@
     "sKpi": {
       "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Tickets/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
-    "sThLocation": { "text": "Location", "scope": "table thead th" },
-    "sThTicket": { "text": "Ticket #", "scope": "table thead th" },
-    "sThDate": { "text": "Date/Time", "scope": "table thead th" },
-    "sThTotal": { "text": "Total", "scope": "table thead th" },
-    "sThStatus": { "text": "Status", "scope": "table thead th" },
-    "sThTender": { "text": "Tender Type", "scope": "table thead th" },
-    "sThCustomer": { "text": "Customer", "scope": "table thead th" },
-    "sFilters": { "selector": ".adv-toggle-btn" },
-    "sSearch": { "selector": "#tickets-search" },
+    "sThLocation": {
+      "text": "Location",
+      "scope": "table thead th"
+    },
+    "sThTicket": {
+      "text": "Ticket #",
+      "scope": "table thead th"
+    },
+    "sThDate": {
+      "text": "Date/Time",
+      "scope": "table thead th"
+    },
+    "sThTotal": {
+      "text": "Total",
+      "scope": "table thead th"
+    },
+    "sThStatus": {
+      "text": "Status",
+      "scope": "table thead th"
+    },
+    "sThTender": {
+      "text": "Tender Type",
+      "scope": "table thead th"
+    },
+    "sThCustomer": {
+      "text": "Customer",
+      "scope": "table thead th"
+    },
+    "sFilters": {
+      "selector": ".adv-toggle-btn"
+    },
+    "sSearch": {
+      "selector": "#tickets-search"
+    },
     "sExport": {
       "js": "[...document.querySelectorAll('button')].find(e=>(e.textContent||'').trim()==='Export'&&e.getBoundingClientRect().width>0)"
     },
@@ -209,11 +285,21 @@
       "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
       "textRect": true
     },
-    "stKpi1": { "js": "document.querySelectorAll('.a-metric')[0]" },
-    "stKpi2": { "js": "document.querySelectorAll('.a-metric')[1]" },
-    "stKpi3": { "js": "document.querySelectorAll('.a-metric')[2]" },
-    "stKpi4": { "js": "document.querySelectorAll('.a-metric')[3]" },
-    "stTheadRow": { "selector": "table thead tr" },
+    "stKpi1": {
+      "js": "document.querySelectorAll('.a-metric')[0]"
+    },
+    "stKpi2": {
+      "js": "document.querySelectorAll('.a-metric')[1]"
+    },
+    "stKpi3": {
+      "js": "document.querySelectorAll('.a-metric')[2]"
+    },
+    "stKpi4": {
+      "js": "document.querySelectorAll('.a-metric')[3]"
+    },
+    "stTheadRow": {
+      "selector": "table thead tr"
+    },
     "stNewRec": {
       "js": "[...document.querySelectorAll('a.a-btn')].find(e=>/new record/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
@@ -234,7 +320,7 @@
     "onAlerts": "location.pathname.endsWith('/support-alerts.html')",
     "alertsLoaded": "location.pathname.endsWith('/support-alerts.html')&&document.readyState==='complete'&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('tbody tr')].some(e=>/Low receipt paper/.test(e.textContent||''))&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
     "onSettingsHome": "location.pathname.endsWith('/settings.html')",
-    "hwCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Hardware$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^Hardware \\/ Terminals$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
+    "hwCardOpen": "[...document.querySelectorAll('a[href=\"settings-hardware-terminals.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "onTerminals": "location.pathname.endsWith('/settings-hardware-terminals.html')",
     "termLoaded": "location.pathname.endsWith('/settings-hardware-terminals.html')&&document.readyState==='complete'&&[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0).length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Terminals/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')",
     "onTickets": "location.pathname.endsWith('/sales-transactions.html')",
@@ -251,260 +337,2077 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: stage the persisted sidebar preference expanded (washcentral-sidebar-collapsed-v5; observed collapsed on July 11) — the IT & Support sidebar links (ML Command Center, System Alerts) must be on screen for steps 5 and 8; skipped when already expanded"
+      "note": "off-camera: stage the persisted sidebar preference expanded (washcentral-sidebar-collapsed-v5; observed collapsed on July 11) \u2014 the IT & Support sidebar links (ML Command Center, System Alerts) must be on screen for steps 5 and 8; skipped when already expanded"
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.5, "predicate": "onCommandCenter", "note": "start page staged before capture" },
-    { "op": "assert", "at": -1.1, "predicate": "sidebarExpanded", "note": "pre-roll: persisted sidebar pref expanded (preflight staged it); abort the take if collapsed" },
-    { "op": "assert", "at": -0.8, "predicate": "ccReady", "note": "Priority Intelligence + Action Ownership rendered, Henrico row present, no failed-fetch state" },
-    { "op": "assert", "at": -0.5, "predicate": "atTop", "note": "start scrolled to the top: KPI band + map first, the panel is revealed by the step-1 scroll" },
-    { "op": "pointer-enter", "at": 0.5, "from": [960, 1079], "to": { "target": "piHdr", "offset": [0, -260] }, "note": "enter from the bottom edge and settle over the map while p01-p03 set the scene" },
-    { "op": "key", "pressAt": 9.35, "keys": ["End"], "gapMs": 200, "keyLabel": "End — down to Priority Intelligence", "postcondition": "atBottom", "timeoutMs": 3000, "note": "step 1: genuine keyboard scroll on 'lower down, under the map' (p04); the panel is fully on screen for step 2" },
-    { "op": "log-rect", "at": 10.0, "key": "piHdrRect", "target": "piHdr" },
-    { "op": "log-rect", "at": 10.25, "key": "piCountRect", "target": "piCount" },
-    { "op": "log-rect", "at": 10.5, "key": "piGroupHdrRect", "target": "piGroupHdr" },
-    { "op": "log-rects", "at": 10.8, "key": "henGroup", "targets": ["henRow", "henTitle", "henDesc", "critChip", "openLink"] },
-    { "op": "log-rects", "at": 11.15, "key": "ownGroup", "targets": ["ownTitle", "ownRole", "ownDue", "ownUrgent"] },
-    { "op": "move", "at": 11.95, "to": { "target": "piHdr", "offset": [-480, 0] }, "note": "step 2: point at the Priority Intelligence title as p05 names it" },
-    { "op": "move", "at": 17.3, "to": { "target": "piCount", "offset": [0, 28] }, "note": "under '11 items · 4 urgent' for p07" },
-    { "op": "move", "at": 20.1, "to": { "target": "piGroupHdr", "offset": [-500, 0] }, "note": "to the Critical group header for p08" },
-    { "op": "move", "at": 23.25, "to": { "target": "henRow", "offset": [-350, 0] }, "note": "step 3: genuine hover on the Henrico W Broad POS-offline row ('There it is.')" },
-    { "op": "move", "at": 29.7, "to": { "target": "henDesc", "offset": [-320, 4] }, "note": "drift to the symptom line while p11 reads it" },
-    { "op": "move", "at": 34.1, "to": { "target": "henRow", "offset": [330, -16] }, "note": "ease toward the row's right end during p12" },
-    { "op": "move", "at": 37.15, "to": { "target": "openLink", "offset": [0, -22] }, "note": "step 4: 'Now look right' — settle just above the Open → action" },
-    { "op": "move", "at": 39.5, "to": { "target": "openLink", "offset": [0, 0] }, "note": "hover the Open → deep link as p15 names it; NEVER pressed (href goes to payments-reconciliation.html, destination stays parked)" },
-    { "op": "move", "at": 42.2, "to": { "target": "openLink", "offset": [34, 26] }, "note": "ease off the link while the red do-not-follow bracket holds (p16)" },
-    { "op": "move", "at": 46.9, "to": { "target": "ownTitle", "offset": [0, 32] }, "note": "to Action Ownership as p17 names it" },
-    { "op": "move", "at": 50.2, "to": { "target": "ownRole", "offset": [0, 16] }, "note": "Regional Ops (p18)" },
-    { "op": "move", "at": 52.0, "to": { "target": "ownDue", "offset": [0, 14] }, "note": "'due inside thirty minutes'" },
-    { "op": "move", "at": 54.4, "to": { "target": "ownDue", "offset": [40, 60], "outside": true }, "note": "park below the ownership panel for p19" },
-    { "op": "move", "at": 56.55, "to": { "point": [900, 580] }, "note": "step 5 approach begins at the cue start, mid-screen waypoint toward the rail" },
-    { "op": "click", "target": "railITS", "pressAt": 58.4, "hoverMs": 400, "postcondition": "onSupportTickets", "timeoutMs": 8000, "nav": true, "note": "step 5a: 'Head to I-T and Support' — the rail lands on the module home (support-tickets.html)" },
-    { "op": "wait-stable", "afterNav": true, "key": "stStable", "predicate": "pageReady", "settleMs": 400, "timeoutMs": 8000 },
-    { "op": "click", "target": "sideNOC", "pressAt": 60.4, "hoverMs": 320, "postcondition": "onNOC", "timeoutMs": 8000, "nav": true, "note": "step 5b: 'open M-L Command Center' via the genuine sidebar link (direct URL 404s — sidebar route only)" },
-    { "op": "wait-stable", "afterNav": true, "key": "nocStable", "predicate": "nocReady", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "assert", "at": 61.9, "predicate": "nocReady", "note": "NOC identity + 2 CRITICAL + Incidents tab active with the POS-offline incident in the feed" },
-    { "op": "watch", "key": "nocFeedHeld", "from": 62.2, "to": 106.8, "predicate": "incidentsTabActive", "everyMs": 600, "mustHold": true },
-    { "op": "log-rect", "at": 62.05, "key": "nocBrandRect", "target": "nocBrand" },
-    { "op": "log-rect", "at": 62.25, "key": "nocBadgeRect", "target": "nocBadge" },
-    { "op": "log-rects", "at": 62.45, "key": "nocTabs", "targets": ["tabIncidents", "tabLocations", "tabCustomers"] },
-    { "op": "log-rects", "at": 62.7, "key": "incGroup", "targets": ["incRow", "incTitle", "incTime", "incCustomer"] },
-    { "op": "move", "at": 62.95, "to": { "target": "nocBrand", "offset": [60, 44], "outside": true }, "note": "beside the Micrologic NOC title while p21 explains the room" },
-    { "op": "move", "at": 66.2, "to": { "target": "nocBadge", "offset": [0, 36] }, "note": "'Two criticals live right now' (p22)" },
-    { "op": "move", "at": 67.95, "to": { "target": "tabIncidents", "offset": [0, 30] }, "note": "'the incidents tab is where they land' — pointed at, not clicked (already active)" },
-    { "op": "move", "at": 70.45, "to": { "target": "incTitle", "offset": [0, 0] }, "note": "step 6: to the top incident as p23 cues 'Read the top incident'" },
-    { "op": "move", "at": 77.6, "to": { "target": "incRow", "offset": [24, 62], "outside": true }, "note": "rest on the card's lower half during 'That zero is the tell'" },
-    { "op": "move", "at": 83.45, "to": { "target": "incTime", "offset": [0, 18] }, "note": "'stopped almost an hour ago' — the 47m ago stamp" },
-    { "op": "log-rects", "at": 86.3, "key": "tagRects", "targets": ["tagTunnel", "tagHardware", "tagPayments", "tagEquipment"] },
-    { "op": "log-rects", "at": 86.6, "key": "assignRects", "targets": ["assignTyler", "assignUnassigned"] },
-    { "op": "move", "at": 88.7, "to": { "target": "tagTunnel", "offset": [0, 18] }, "note": "step 7: the tag chip as p29-p30 explain 'what broke'" },
-    { "op": "move", "at": 92.75, "to": { "target": "tagHardware", "offset": [0, 16] }, "note": "'others say Hardware,'" },
-    { "op": "move", "at": 93.7, "to": { "target": "tagPayments", "offset": [0, 16] }, "note": "'Payments,'" },
-    { "op": "move", "at": 94.6, "to": { "target": "tagEquipment", "offset": [0, 16] }, "note": "'Equipment.'" },
-    { "op": "move", "at": 96.5, "to": { "target": "assignTyler", "offset": [0, 16] }, "note": "the assignee (p32)" },
-    { "op": "move", "at": 98.85, "to": { "target": "assignUnassigned", "offset": [0, 16] }, "note": "'or that it is unassigned' — the Unassigned chip on the next card" },
-    { "op": "move", "at": 102.3, "to": { "target": "incRow", "offset": [420, 66], "outside": true }, "note": "p34 names Create Ticket / View Full Profile: on the live feed those actions live in the customer-profile drawer, not on the card — cursor rests on the card, nothing is faked (see RESIDUALS)" },
-    { "op": "move", "at": 108.15, "to": { "point": [700, 600] }, "note": "step 8 approach begins at the cue start" },
-    { "op": "click", "target": "railITS", "pressAt": 111.5, "hoverMs": 380, "postcondition": "onSupportTickets", "timeoutMs": 8000, "nav": true, "note": "step 8a: back through the rail ('under I-T and Support') — press inside the pause after p35" },
-    { "op": "wait-stable", "afterNav": true, "key": "stStable2", "predicate": "pageReady", "settleMs": 350, "timeoutMs": 8000 },
-    { "op": "click", "target": "sideAlerts", "pressAt": 113.5, "hoverMs": 340, "postcondition": "onAlerts", "timeoutMs": 8000, "nav": true, "note": "step 8b: 'Open it from the sidebar link' (p36) — the click IS the narrated action; direct URL 404'd July 9, sidebar route only" },
-    { "op": "wait-stable", "afterNav": true, "key": "alertsStable", "predicate": "alertsLoaded", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "assert", "at": 114.85, "predicate": "alertsLoaded", "note": "'the live feed loads' — 4 KPI tiles + 4 rows incl. the POS receipt-paper row, no failed-fetch" },
-    { "op": "log-rect", "at": 115.0, "key": "alBcRect", "target": "alBc" },
-    { "op": "log-rects", "at": 115.25, "key": "alTiles", "targets": ["alTile1", "alTile2", "alTile3", "alTile4"] },
-    { "op": "log-rect", "at": 115.5, "key": "alThTypeRect", "target": "alThType" },
-    { "op": "log-rect", "at": 115.7, "key": "alPosRowRect", "target": "alPosRow" },
-    { "op": "log-rects", "at": 115.95, "key": "alCtrls", "targets": ["alNewRec", "alExport", "alFilters", "alSearch"] },
-    { "op": "move", "at": 116.25, "to": { "target": "alTile1", "offset": [0, 46] }, "note": "'three active alerts, one critical' — under the KPI tiles" },
-    { "op": "move", "at": 117.8, "to": { "target": "alThType", "offset": [0, 0] }, "note": "'Every row names its type' — the TYPE column (p37)" },
-    { "op": "move", "at": 122.5, "to": { "target": "alPosRow", "offset": [-350, 0] }, "note": "genuine hover on the POS Warning row while p38-p39 read it" },
-    { "op": "move", "at": 128.75, "to": { "target": "alSearch", "offset": [-400, 0] }, "note": "'Filter to the site' — the scoped search box (pointed at, never typed into)" },
-    { "op": "move", "at": 131.9, "to": { "point": [700, 640] }, "note": "step 9 approach begins at the cue start" },
-    { "op": "click", "target": "railSettings", "pressAt": 132.8, "hoverMs": 340, "postcondition": "onSettingsHome", "timeoutMs": 8000, "nav": true, "note": "step 9a: 'Into Settings,'" },
-    { "op": "wait-stable", "afterNav": true, "key": "setStable", "predicate": "pageReady", "settleMs": 250, "timeoutMs": 8000 },
-    { "op": "click", "target": "hwCard", "pressAt": 134.35, "hoverMs": 300, "postcondition": "hwCardOpen", "timeoutMs": 4000, "note": "step 9b: 'Hardware,' — open the group card (stateless accordion, closed on every fresh load)" },
-    { "op": "click", "target": "hwItemTerminals", "pressAt": 135.2, "hoverMs": 300, "postcondition": "onTerminals", "timeoutMs": 8000, "nav": true, "note": "step 9c: 'Terminals.' — land as the explanation phrase starts" },
-    { "op": "wait-stable", "afterNav": true, "key": "termStable", "predicate": "pageReady", "settleMs": 400, "timeoutMs": 8000 },
-    { "op": "assert", "at": 136.15, "predicate": "termLoaded", "note": "live rows (Total Terminals 1,067) — the July 9 'Failed to fetch' state cleared July 11; abort if it returns" },
-    { "op": "watch", "key": "termRowsHeld", "from": 136.5, "to": 169.3, "predicate": "termLoaded", "everyMs": 700, "mustHold": true },
-    { "op": "move", "at": 136.35, "to": { "target": "tBc", "offset": [40, 30], "outside": true }, "note": "under the Settings›Terminals breadcrumb while p42 explains the page" },
-    { "op": "log-rect", "at": 137.2, "key": "tBcRect", "target": "tBc" },
-    { "op": "log-rect", "at": 137.4, "key": "tKpiRect", "target": "tKpi" },
-    { "op": "log-rect", "at": 137.6, "key": "tNewRecRect", "target": "tNewRec" },
-    { "op": "log-rects", "at": 137.85, "key": "tThs", "targets": ["tThTerminal", "tThLocation", "tThIP", "tThSoftware", "tThOS", "tThLastSeen"] },
-    { "op": "log-rect", "at": 138.1, "key": "tFirstRowRect", "target": "tFirstRow" },
-    { "op": "log-rect", "at": 138.3, "key": "tSearchRect", "target": "tSearch" },
-    { "op": "move", "at": 138.6, "to": { "target": "tNewRec", "offset": [-90, 44], "outside": true }, "note": "beside + New Record while p43 says 'leave it alone' — never clicked" },
-    { "op": "move", "at": 141.45, "to": { "target": "tFirstRow", "offset": [400, 60], "outside": true }, "note": "over the list for 'We are here to read'" },
-    { "op": "move", "at": 145.7, "to": { "target": "tThTerminal", "offset": [0, -26] }, "note": "step 10: settle above the headers on the cue" },
-    { "op": "move", "at": 147.8, "to": { "target": "tThTerminal", "offset": [0, 0] }, "note": "'Terminal,'" },
-    { "op": "move", "at": 148.6, "to": { "target": "tThLocation", "offset": [0, 0] }, "note": "'location,'" },
-    { "op": "move", "at": 149.7, "to": { "target": "tThIP", "offset": [0, 0] }, "note": "'I-P,'" },
-    { "op": "move", "at": 150.65, "to": { "target": "tThSoftware", "offset": [0, 0] }, "note": "'software version,'" },
-    { "op": "move", "at": 151.9, "to": { "target": "tThOS", "offset": [0, 0] }, "note": "'O-S,'" },
-    { "op": "move", "at": 152.9, "to": { "target": "tThLastSeen", "offset": [0, 0] }, "note": "'and Last Seen.'" },
-    { "op": "move", "at": 154.55, "to": { "target": "tKpi", "offset": [-600, 22] }, "note": "'Over a thousand terminals load here' — the 1,067 KPI" },
-    { "op": "move", "at": 160.7, "to": { "target": "tThLastSeen", "offset": [0, 22] }, "note": "'So Last Seen is your answer' (p54)" },
-    { "op": "move", "at": 165.45, "to": { "target": "tSearch", "offset": [-330, 0] }, "note": "'Search the site' — pointed at, never typed into" },
-    { "op": "move", "at": 169.75, "to": { "point": [500, 700] }, "note": "step 11 approach begins at the cue start" },
-    { "op": "click", "target": "railSales", "pressAt": 171.95, "hoverMs": 380, "postcondition": "onTickets", "timeoutMs": 8000, "nav": true, "note": "step 11: 'Sales, then Tickets' — the Sales rail lands directly on the Tickets list (sales-transactions.html)" },
-    { "op": "wait-stable", "afterNav": true, "key": "tickStable", "predicate": "pageReady", "settleMs": 450, "timeoutMs": 8000 },
-    { "op": "assert", "at": 173.25, "predicate": "ticketsLoaded" },
-    { "op": "move", "at": 173.4, "to": { "target": "sBc", "offset": [40, 30], "outside": true }, "note": "under the Transactions›Tickets breadcrumb during 'the live pulse of the lane'" },
-    { "op": "log-rect", "at": 174.5, "key": "sBcRect", "target": "sBc" },
-    { "op": "log-rect", "at": 174.65, "key": "sKpiRect", "target": "sKpi" },
-    { "op": "log-rects", "at": 174.85, "key": "sThs", "targets": ["sThLocation", "sThTicket", "sThDate", "sThTotal", "sThStatus", "sThTender", "sThCustomer"] },
-    { "op": "log-rects", "at": 175.05, "key": "sCtrls", "targets": ["sFilters", "sSearch", "sExport"] },
-    { "op": "log-rect", "at": 175.2, "key": "sDateCellRect", "target": "sFirstDateCell" },
-    { "op": "move", "at": 175.45, "to": { "target": "sThLocation", "offset": [0, -24] }, "note": "'Location,' — column sweep in spoken order" },
-    { "op": "move", "at": 176.05, "to": { "target": "sThTicket", "offset": [0, -24] }, "note": "'Ticket number,'" },
-    { "op": "move", "at": 177.1, "to": { "target": "sThDate", "offset": [0, -24] }, "note": "'Date and Time,'" },
-    { "op": "move", "at": 177.95, "to": { "target": "sThTotal", "offset": [0, -24] }, "note": "'Total,'" },
-    { "op": "move", "at": 179.2, "to": { "target": "sThStatus", "offset": [0, -24] }, "note": "'Status,'" },
-    { "op": "move", "at": 180.1, "to": { "target": "sThTender", "offset": [0, -24] }, "note": "'Tender Type,'" },
-    { "op": "move", "at": 181.05, "to": { "target": "sThCustomer", "offset": [0, -24] }, "note": "'and Customer,'" },
-    { "op": "move", "at": 182.05, "to": { "target": "sKpi", "offset": [0, 42] }, "note": "'with a running total up top' — the Total Tickets tile" },
-    { "op": "move", "at": 184.5, "to": { "target": "sFilters", "offset": [0, 0] }, "note": "step 12: Filters as p61 cues 'Filter to the site' — pointed at, not clicked" },
-    { "op": "move", "at": 186.1, "to": { "target": "sSearch", "offset": [-400, 0] }, "note": "the search box" },
-    { "op": "move", "at": 187.95, "to": { "target": "sFirstDateCell", "offset": [0, 0] }, "note": "'read the newest time stamp' — genuine hover on the top row's Date/Time" },
-    { "op": "move", "at": 194.3, "to": { "target": "sFirstDateCell", "offset": [0, 42] }, "note": "rest under the timestamp through the hard-outage explanation" },
-    { "op": "move", "at": 197.6, "to": { "target": "sExport", "offset": [-100, 40], "outside": true }, "note": "settle beside Export ahead of 'Skip Export.' — never clicked" },
-    { "op": "move", "at": 203.95, "to": { "point": [700, 650] }, "note": "step 13 approach begins as p68 cues 'Open Support Tickets'" },
-    { "op": "click", "target": "railITS", "pressAt": 206.9, "hoverMs": 380, "postcondition": "onSupportTickets", "timeoutMs": 8000, "nav": true, "note": "step 13: the IT & Support rail lands directly on Support Tickets — press inside the pause after the cue" },
-    { "op": "wait-stable", "afterNav": true, "key": "stStable3", "predicate": "stLoaded", "settleMs": 450, "timeoutMs": 9000 },
-    { "op": "assert", "at": 208.25, "predicate": "stLoaded" },
-    { "op": "log-rect", "at": 208.45, "key": "stBcRect", "target": "stBc" },
-    { "op": "log-rects", "at": 208.7, "key": "stKpis", "targets": ["stKpi1", "stKpi2", "stKpi3", "stKpi4"] },
-    { "op": "log-rect", "at": 208.95, "key": "stTheadRect", "target": "stTheadRow" },
-    { "op": "log-rect", "at": 209.15, "key": "stNewRecRect", "target": "stNewRec" },
-    { "op": "log-rect", "at": 209.35, "key": "stFirstRowRect", "target": "stFirstRow" },
-    { "op": "move", "at": 209.55, "to": { "target": "stNewRec", "offset": [-95, 44], "outside": true }, "note": "beside + New Record (the live queue's raise-a-ticket control) while p69-p70 list the four facts; red guardrail, never clicked" },
-    { "op": "move", "at": 213.4, "to": { "target": "stTheadRow", "offset": [-500, -26] }, "note": "sweep the real queue header while p71 plays (live columns differ from the narrated set — see RESIDUALS)" },
-    { "op": "move", "at": 215.6, "to": { "target": "stTheadRow", "offset": [283, -26] }, "note": "sweep right across the header" },
-    { "op": "move", "at": 219.1, "to": { "target": "stFirstRow", "offset": [-350, 32] }, "note": "drift over the queue during the Jira exception (p72-p73)" },
-    { "op": "move", "at": 223.4, "to": { "target": "stKpi1", "offset": [0, 42] }, "note": "step 14 recap sweep: start under the KPI band" },
-    { "op": "move", "at": 228.0, "to": { "target": "stKpi3", "offset": [0, 42] } },
-    { "op": "move", "at": 233.0, "to": { "target": "stTheadRow", "offset": [0, -32] } },
-    { "op": "move", "at": 238.6, "to": { "target": "stFirstRow", "offset": [0, 34] } },
-    { "op": "move", "at": 242.5, "to": { "point": [1650, 950] }, "note": "final park, clear of rows and captions" },
-    { "op": "assert", "at": 244.6, "predicate": "onSupportTickets" }
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page staged before capture"
+    },
+    {
+      "op": "assert",
+      "at": -1.1,
+      "predicate": "sidebarExpanded",
+      "note": "pre-roll: persisted sidebar pref expanded (preflight staged it); abort the take if collapsed"
+    },
+    {
+      "op": "assert",
+      "at": -0.8,
+      "predicate": "ccReady",
+      "note": "Priority Intelligence + Action Ownership rendered, Henrico row present, no failed-fetch state"
+    },
+    {
+      "op": "assert",
+      "at": -0.5,
+      "predicate": "atTop",
+      "note": "start scrolled to the top: KPI band + map first, the panel is revealed by the step-1 scroll"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.5,
+      "from": [
+        960,
+        1079
+      ],
+      "to": {
+        "target": "piHdr",
+        "offset": [
+          0,
+          -260
+        ]
+      },
+      "note": "enter from the bottom edge and settle over the map while p01-p03 set the scene"
+    },
+    {
+      "op": "key",
+      "pressAt": 9.35,
+      "keys": [
+        "End"
+      ],
+      "gapMs": 200,
+      "keyLabel": "End \u2014 down to Priority Intelligence",
+      "postcondition": "atBottom",
+      "timeoutMs": 3000,
+      "note": "step 1: genuine keyboard scroll on 'lower down, under the map' (p04); the panel is fully on screen for step 2"
+    },
+    {
+      "op": "log-rect",
+      "at": 10.0,
+      "key": "piHdrRect",
+      "target": "piHdr"
+    },
+    {
+      "op": "log-rect",
+      "at": 10.25,
+      "key": "piCountRect",
+      "target": "piCount"
+    },
+    {
+      "op": "log-rect",
+      "at": 10.5,
+      "key": "piGroupHdrRect",
+      "target": "piGroupHdr"
+    },
+    {
+      "op": "log-rects",
+      "at": 10.8,
+      "key": "henGroup",
+      "targets": [
+        "henRow",
+        "henTitle",
+        "henDesc",
+        "critChip",
+        "openLink"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 11.15,
+      "key": "ownGroup",
+      "targets": [
+        "ownTitle",
+        "ownRole",
+        "ownDue",
+        "ownUrgent"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 11.95,
+      "to": {
+        "target": "piHdr",
+        "offset": [
+          -480,
+          0
+        ]
+      },
+      "note": "step 2: point at the Priority Intelligence title as p05 names it"
+    },
+    {
+      "op": "move",
+      "at": 17.3,
+      "to": {
+        "target": "piCount",
+        "offset": [
+          0,
+          28
+        ]
+      },
+      "note": "under '11 items \u00b7 4 urgent' for p07"
+    },
+    {
+      "op": "move",
+      "at": 20.1,
+      "to": {
+        "target": "piGroupHdr",
+        "offset": [
+          -500,
+          0
+        ]
+      },
+      "note": "to the Critical group header for p08"
+    },
+    {
+      "op": "move",
+      "at": 23.25,
+      "to": {
+        "target": "henRow",
+        "offset": [
+          -350,
+          0
+        ]
+      },
+      "note": "step 3: genuine hover on the Henrico W Broad POS-offline row ('There it is.')"
+    },
+    {
+      "op": "move",
+      "at": 29.7,
+      "to": {
+        "target": "henDesc",
+        "offset": [
+          -320,
+          4
+        ]
+      },
+      "note": "drift to the symptom line while p11 reads it"
+    },
+    {
+      "op": "move",
+      "at": 34.1,
+      "to": {
+        "target": "henRow",
+        "offset": [
+          330,
+          -16
+        ]
+      },
+      "note": "ease toward the row's right end during p12"
+    },
+    {
+      "op": "move",
+      "at": 37.15,
+      "to": {
+        "target": "openLink",
+        "offset": [
+          0,
+          -22
+        ]
+      },
+      "note": "step 4: 'Now look right' \u2014 settle just above the Open \u2192 action"
+    },
+    {
+      "op": "move",
+      "at": 39.5,
+      "to": {
+        "target": "openLink",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "hover the Open \u2192 deep link as p15 names it; NEVER pressed (href goes to payments-reconciliation.html, destination stays parked)"
+    },
+    {
+      "op": "move",
+      "at": 42.2,
+      "to": {
+        "target": "openLink",
+        "offset": [
+          34,
+          26
+        ]
+      },
+      "note": "ease off the link while the red do-not-follow bracket holds (p16)"
+    },
+    {
+      "op": "move",
+      "at": 46.9,
+      "to": {
+        "target": "ownTitle",
+        "offset": [
+          0,
+          32
+        ]
+      },
+      "note": "to Action Ownership as p17 names it"
+    },
+    {
+      "op": "move",
+      "at": 50.2,
+      "to": {
+        "target": "ownRole",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "Regional Ops (p18)"
+    },
+    {
+      "op": "move",
+      "at": 52.0,
+      "to": {
+        "target": "ownDue",
+        "offset": [
+          0,
+          14
+        ]
+      },
+      "note": "'due inside thirty minutes'"
+    },
+    {
+      "op": "move",
+      "at": 54.4,
+      "to": {
+        "target": "ownDue",
+        "offset": [
+          40,
+          60
+        ],
+        "outside": true
+      },
+      "note": "park below the ownership panel for p19"
+    },
+    {
+      "op": "move",
+      "at": 56.55,
+      "to": {
+        "point": [
+          900,
+          580
+        ]
+      },
+      "note": "step 5 approach begins at the cue start, mid-screen waypoint toward the rail"
+    },
+    {
+      "op": "click",
+      "target": "railITS",
+      "pressAt": 58.4,
+      "hoverMs": 400,
+      "postcondition": "onSupportTickets",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5a: 'Head to I-T and Support' \u2014 the rail lands on the module home (support-tickets.html)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "stStable",
+      "predicate": "pageReady",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "sideNOC",
+      "pressAt": 60.4,
+      "hoverMs": 320,
+      "postcondition": "onNOC",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 5b: 'open M-L Command Center' via the genuine sidebar link (direct URL 404s \u2014 sidebar route only)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "nocStable",
+      "predicate": "nocReady",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 61.9,
+      "predicate": "nocReady",
+      "note": "NOC identity + 2 CRITICAL + Incidents tab active with the POS-offline incident in the feed"
+    },
+    {
+      "op": "watch",
+      "key": "nocFeedHeld",
+      "from": 62.2,
+      "to": 106.8,
+      "predicate": "incidentsTabActive",
+      "everyMs": 600,
+      "mustHold": true
+    },
+    {
+      "op": "log-rect",
+      "at": 62.05,
+      "key": "nocBrandRect",
+      "target": "nocBrand"
+    },
+    {
+      "op": "log-rect",
+      "at": 62.25,
+      "key": "nocBadgeRect",
+      "target": "nocBadge"
+    },
+    {
+      "op": "log-rects",
+      "at": 62.45,
+      "key": "nocTabs",
+      "targets": [
+        "tabIncidents",
+        "tabLocations",
+        "tabCustomers"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 62.7,
+      "key": "incGroup",
+      "targets": [
+        "incRow",
+        "incTitle",
+        "incTime",
+        "incCustomer"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 62.95,
+      "to": {
+        "target": "nocBrand",
+        "offset": [
+          60,
+          44
+        ],
+        "outside": true
+      },
+      "note": "beside the Micrologic NOC title while p21 explains the room"
+    },
+    {
+      "op": "move",
+      "at": 66.2,
+      "to": {
+        "target": "nocBadge",
+        "offset": [
+          0,
+          36
+        ]
+      },
+      "note": "'Two criticals live right now' (p22)"
+    },
+    {
+      "op": "move",
+      "at": 67.95,
+      "to": {
+        "target": "tabIncidents",
+        "offset": [
+          0,
+          30
+        ]
+      },
+      "note": "'the incidents tab is where they land' \u2014 pointed at, not clicked (already active)"
+    },
+    {
+      "op": "move",
+      "at": 70.45,
+      "to": {
+        "target": "incTitle",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6: to the top incident as p23 cues 'Read the top incident'"
+    },
+    {
+      "op": "move",
+      "at": 77.6,
+      "to": {
+        "target": "incRow",
+        "offset": [
+          24,
+          62
+        ],
+        "outside": true
+      },
+      "note": "rest on the card's lower half during 'That zero is the tell'"
+    },
+    {
+      "op": "move",
+      "at": 83.45,
+      "to": {
+        "target": "incTime",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "'stopped almost an hour ago' \u2014 the 47m ago stamp"
+    },
+    {
+      "op": "log-rects",
+      "at": 86.3,
+      "key": "tagRects",
+      "targets": [
+        "tagTunnel",
+        "tagHardware",
+        "tagPayments",
+        "tagEquipment"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 86.6,
+      "key": "assignRects",
+      "targets": [
+        "assignTyler",
+        "assignUnassigned"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 88.7,
+      "to": {
+        "target": "tagTunnel",
+        "offset": [
+          0,
+          18
+        ]
+      },
+      "note": "step 7: the tag chip as p29-p30 explain 'what broke'"
+    },
+    {
+      "op": "move",
+      "at": 92.75,
+      "to": {
+        "target": "tagHardware",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "'others say Hardware,'"
+    },
+    {
+      "op": "move",
+      "at": 93.7,
+      "to": {
+        "target": "tagPayments",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "'Payments,'"
+    },
+    {
+      "op": "move",
+      "at": 94.6,
+      "to": {
+        "target": "tagEquipment",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "'Equipment.'"
+    },
+    {
+      "op": "move",
+      "at": 96.5,
+      "to": {
+        "target": "assignTyler",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "the assignee (p32)"
+    },
+    {
+      "op": "move",
+      "at": 98.85,
+      "to": {
+        "target": "assignUnassigned",
+        "offset": [
+          0,
+          16
+        ]
+      },
+      "note": "'or that it is unassigned' \u2014 the Unassigned chip on the next card"
+    },
+    {
+      "op": "move",
+      "at": 102.3,
+      "to": {
+        "target": "incRow",
+        "offset": [
+          420,
+          66
+        ],
+        "outside": true
+      },
+      "note": "p34 names Create Ticket / View Full Profile: on the live feed those actions live in the customer-profile drawer, not on the card \u2014 cursor rests on the card, nothing is faked (see RESIDUALS)"
+    },
+    {
+      "op": "move",
+      "at": 108.15,
+      "to": {
+        "point": [
+          700,
+          600
+        ]
+      },
+      "note": "step 8 approach begins at the cue start"
+    },
+    {
+      "op": "click",
+      "target": "railITS",
+      "pressAt": 111.5,
+      "hoverMs": 380,
+      "postcondition": "onSupportTickets",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8a: back through the rail ('under I-T and Support') \u2014 press inside the pause after p35"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "stStable2",
+      "predicate": "pageReady",
+      "settleMs": 350,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "sideAlerts",
+      "pressAt": 113.5,
+      "hoverMs": 340,
+      "postcondition": "onAlerts",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 8b: 'Open it from the sidebar link' (p36) \u2014 the click IS the narrated action; direct URL 404'd July 9, sidebar route only"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "alertsStable",
+      "predicate": "alertsLoaded",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 114.85,
+      "predicate": "alertsLoaded",
+      "note": "'the live feed loads' \u2014 4 KPI tiles + 4 rows incl. the POS receipt-paper row, no failed-fetch"
+    },
+    {
+      "op": "log-rect",
+      "at": 115.0,
+      "key": "alBcRect",
+      "target": "alBc"
+    },
+    {
+      "op": "log-rects",
+      "at": 115.25,
+      "key": "alTiles",
+      "targets": [
+        "alTile1",
+        "alTile2",
+        "alTile3",
+        "alTile4"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 115.5,
+      "key": "alThTypeRect",
+      "target": "alThType"
+    },
+    {
+      "op": "log-rect",
+      "at": 115.7,
+      "key": "alPosRowRect",
+      "target": "alPosRow"
+    },
+    {
+      "op": "log-rects",
+      "at": 115.95,
+      "key": "alCtrls",
+      "targets": [
+        "alNewRec",
+        "alExport",
+        "alFilters",
+        "alSearch"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 116.25,
+      "to": {
+        "target": "alTile1",
+        "offset": [
+          0,
+          46
+        ]
+      },
+      "note": "'three active alerts, one critical' \u2014 under the KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 117.8,
+      "to": {
+        "target": "alThType",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'Every row names its type' \u2014 the TYPE column (p37)"
+    },
+    {
+      "op": "move",
+      "at": 122.5,
+      "to": {
+        "target": "alPosRow",
+        "offset": [
+          -350,
+          0
+        ]
+      },
+      "note": "genuine hover on the POS Warning row while p38-p39 read it"
+    },
+    {
+      "op": "move",
+      "at": 128.75,
+      "to": {
+        "target": "alSearch",
+        "offset": [
+          -400,
+          0
+        ]
+      },
+      "note": "'Filter to the site' \u2014 the scoped search box (pointed at, never typed into)"
+    },
+    {
+      "op": "move",
+      "at": 131.9,
+      "to": {
+        "point": [
+          700,
+          640
+        ]
+      },
+      "note": "step 9 approach begins at the cue start"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 132.8,
+      "hoverMs": 340,
+      "postcondition": "onSettingsHome",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9a: 'Into Settings,'"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "setStable",
+      "predicate": "pageReady",
+      "settleMs": 250,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "click",
+      "target": "hwCard",
+      "pressAt": 134.35,
+      "hoverMs": 300,
+      "postcondition": "hwCardOpen",
+      "timeoutMs": 4000,
+      "note": "step 9b: 'Hardware,' \u2014 open the group card (stateless accordion, closed on every fresh load)"
+    },
+    {
+      "op": "click",
+      "target": "hwItemTerminals",
+      "pressAt": 135.2,
+      "hoverMs": 300,
+      "postcondition": "onTerminals",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 9c: 'Terminals.' \u2014 land as the explanation phrase starts"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "termStable",
+      "predicate": "pageReady",
+      "settleMs": 400,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 136.15,
+      "predicate": "termLoaded",
+      "note": "live rows (Total Terminals 1,067) \u2014 the July 9 'Failed to fetch' state cleared July 11; abort if it returns"
+    },
+    {
+      "op": "watch",
+      "key": "termRowsHeld",
+      "from": 136.5,
+      "to": 169.3,
+      "predicate": "termLoaded",
+      "everyMs": 700,
+      "mustHold": true
+    },
+    {
+      "op": "move",
+      "at": 136.35,
+      "to": {
+        "target": "tBc",
+        "offset": [
+          40,
+          30
+        ],
+        "outside": true
+      },
+      "note": "under the Settings\u203aTerminals breadcrumb while p42 explains the page"
+    },
+    {
+      "op": "log-rect",
+      "at": 137.2,
+      "key": "tBcRect",
+      "target": "tBc"
+    },
+    {
+      "op": "log-rect",
+      "at": 137.4,
+      "key": "tKpiRect",
+      "target": "tKpi"
+    },
+    {
+      "op": "log-rect",
+      "at": 137.6,
+      "key": "tNewRecRect",
+      "target": "tNewRec"
+    },
+    {
+      "op": "log-rects",
+      "at": 137.85,
+      "key": "tThs",
+      "targets": [
+        "tThTerminal",
+        "tThLocation",
+        "tThIP",
+        "tThSoftware",
+        "tThOS",
+        "tThLastSeen"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 138.1,
+      "key": "tFirstRowRect",
+      "target": "tFirstRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 138.3,
+      "key": "tSearchRect",
+      "target": "tSearch"
+    },
+    {
+      "op": "move",
+      "at": 138.6,
+      "to": {
+        "target": "tNewRec",
+        "offset": [
+          -90,
+          44
+        ],
+        "outside": true
+      },
+      "note": "beside + New Record while p43 says 'leave it alone' \u2014 never clicked"
+    },
+    {
+      "op": "move",
+      "at": 141.45,
+      "to": {
+        "target": "tFirstRow",
+        "offset": [
+          400,
+          60
+        ],
+        "outside": true
+      },
+      "note": "over the list for 'We are here to read'"
+    },
+    {
+      "op": "move",
+      "at": 145.7,
+      "to": {
+        "target": "tThTerminal",
+        "offset": [
+          0,
+          -26
+        ]
+      },
+      "note": "step 10: settle above the headers on the cue"
+    },
+    {
+      "op": "move",
+      "at": 147.8,
+      "to": {
+        "target": "tThTerminal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'Terminal,'"
+    },
+    {
+      "op": "move",
+      "at": 148.6,
+      "to": {
+        "target": "tThLocation",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'location,'"
+    },
+    {
+      "op": "move",
+      "at": 149.7,
+      "to": {
+        "target": "tThIP",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'I-P,'"
+    },
+    {
+      "op": "move",
+      "at": 150.65,
+      "to": {
+        "target": "tThSoftware",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'software version,'"
+    },
+    {
+      "op": "move",
+      "at": 151.9,
+      "to": {
+        "target": "tThOS",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'O-S,'"
+    },
+    {
+      "op": "move",
+      "at": 152.9,
+      "to": {
+        "target": "tThLastSeen",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'and Last Seen.'"
+    },
+    {
+      "op": "move",
+      "at": 154.55,
+      "to": {
+        "target": "tKpi",
+        "offset": [
+          -600,
+          22
+        ]
+      },
+      "note": "'Over a thousand terminals load here' \u2014 the 1,067 KPI"
+    },
+    {
+      "op": "move",
+      "at": 160.7,
+      "to": {
+        "target": "tThLastSeen",
+        "offset": [
+          0,
+          22
+        ]
+      },
+      "note": "'So Last Seen is your answer' (p54)"
+    },
+    {
+      "op": "move",
+      "at": 165.45,
+      "to": {
+        "target": "tSearch",
+        "offset": [
+          -330,
+          0
+        ]
+      },
+      "note": "'Search the site' \u2014 pointed at, never typed into"
+    },
+    {
+      "op": "move",
+      "at": 169.75,
+      "to": {
+        "point": [
+          500,
+          700
+        ]
+      },
+      "note": "step 11 approach begins at the cue start"
+    },
+    {
+      "op": "click",
+      "target": "railSales",
+      "pressAt": 171.95,
+      "hoverMs": 380,
+      "postcondition": "onTickets",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 11: 'Sales, then Tickets' \u2014 the Sales rail lands directly on the Tickets list (sales-transactions.html)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "tickStable",
+      "predicate": "pageReady",
+      "settleMs": 450,
+      "timeoutMs": 8000
+    },
+    {
+      "op": "assert",
+      "at": 173.25,
+      "predicate": "ticketsLoaded"
+    },
+    {
+      "op": "move",
+      "at": 173.4,
+      "to": {
+        "target": "sBc",
+        "offset": [
+          40,
+          30
+        ],
+        "outside": true
+      },
+      "note": "under the Transactions\u203aTickets breadcrumb during 'the live pulse of the lane'"
+    },
+    {
+      "op": "log-rect",
+      "at": 174.5,
+      "key": "sBcRect",
+      "target": "sBc"
+    },
+    {
+      "op": "log-rect",
+      "at": 174.65,
+      "key": "sKpiRect",
+      "target": "sKpi"
+    },
+    {
+      "op": "log-rects",
+      "at": 174.85,
+      "key": "sThs",
+      "targets": [
+        "sThLocation",
+        "sThTicket",
+        "sThDate",
+        "sThTotal",
+        "sThStatus",
+        "sThTender",
+        "sThCustomer"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 175.05,
+      "key": "sCtrls",
+      "targets": [
+        "sFilters",
+        "sSearch",
+        "sExport"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 175.2,
+      "key": "sDateCellRect",
+      "target": "sFirstDateCell"
+    },
+    {
+      "op": "move",
+      "at": 175.45,
+      "to": {
+        "target": "sThLocation",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'Location,' \u2014 column sweep in spoken order"
+    },
+    {
+      "op": "move",
+      "at": 176.05,
+      "to": {
+        "target": "sThTicket",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'Ticket number,'"
+    },
+    {
+      "op": "move",
+      "at": 177.1,
+      "to": {
+        "target": "sThDate",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'Date and Time,'"
+    },
+    {
+      "op": "move",
+      "at": 177.95,
+      "to": {
+        "target": "sThTotal",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'Total,'"
+    },
+    {
+      "op": "move",
+      "at": 179.2,
+      "to": {
+        "target": "sThStatus",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'Status,'"
+    },
+    {
+      "op": "move",
+      "at": 180.1,
+      "to": {
+        "target": "sThTender",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'Tender Type,'"
+    },
+    {
+      "op": "move",
+      "at": 181.05,
+      "to": {
+        "target": "sThCustomer",
+        "offset": [
+          0,
+          -24
+        ]
+      },
+      "note": "'and Customer,'"
+    },
+    {
+      "op": "move",
+      "at": 182.05,
+      "to": {
+        "target": "sKpi",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "'with a running total up top' \u2014 the Total Tickets tile"
+    },
+    {
+      "op": "move",
+      "at": 184.5,
+      "to": {
+        "target": "sFilters",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12: Filters as p61 cues 'Filter to the site' \u2014 pointed at, not clicked"
+    },
+    {
+      "op": "move",
+      "at": 186.1,
+      "to": {
+        "target": "sSearch",
+        "offset": [
+          -400,
+          0
+        ]
+      },
+      "note": "the search box"
+    },
+    {
+      "op": "move",
+      "at": 187.95,
+      "to": {
+        "target": "sFirstDateCell",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "'read the newest time stamp' \u2014 genuine hover on the top row's Date/Time"
+    },
+    {
+      "op": "move",
+      "at": 194.3,
+      "to": {
+        "target": "sFirstDateCell",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "rest under the timestamp through the hard-outage explanation"
+    },
+    {
+      "op": "move",
+      "at": 197.6,
+      "to": {
+        "target": "sExport",
+        "offset": [
+          -100,
+          40
+        ],
+        "outside": true
+      },
+      "note": "settle beside Export ahead of 'Skip Export.' \u2014 never clicked"
+    },
+    {
+      "op": "move",
+      "at": 203.95,
+      "to": {
+        "point": [
+          700,
+          650
+        ]
+      },
+      "note": "step 13 approach begins as p68 cues 'Open Support Tickets'"
+    },
+    {
+      "op": "click",
+      "target": "railITS",
+      "pressAt": 206.9,
+      "hoverMs": 380,
+      "postcondition": "onSupportTickets",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 13: the IT & Support rail lands directly on Support Tickets \u2014 press inside the pause after the cue"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "stStable3",
+      "predicate": "stLoaded",
+      "settleMs": 450,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "assert",
+      "at": 208.25,
+      "predicate": "stLoaded"
+    },
+    {
+      "op": "log-rect",
+      "at": 208.45,
+      "key": "stBcRect",
+      "target": "stBc"
+    },
+    {
+      "op": "log-rects",
+      "at": 208.7,
+      "key": "stKpis",
+      "targets": [
+        "stKpi1",
+        "stKpi2",
+        "stKpi3",
+        "stKpi4"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 208.95,
+      "key": "stTheadRect",
+      "target": "stTheadRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 209.15,
+      "key": "stNewRecRect",
+      "target": "stNewRec"
+    },
+    {
+      "op": "log-rect",
+      "at": 209.35,
+      "key": "stFirstRowRect",
+      "target": "stFirstRow"
+    },
+    {
+      "op": "move",
+      "at": 209.55,
+      "to": {
+        "target": "stNewRec",
+        "offset": [
+          -95,
+          44
+        ],
+        "outside": true
+      },
+      "note": "beside + New Record (the live queue's raise-a-ticket control) while p69-p70 list the four facts; red guardrail, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 213.4,
+      "to": {
+        "target": "stTheadRow",
+        "offset": [
+          -500,
+          -26
+        ]
+      },
+      "note": "sweep the real queue header while p71 plays (live columns differ from the narrated set \u2014 see RESIDUALS)"
+    },
+    {
+      "op": "move",
+      "at": 215.6,
+      "to": {
+        "target": "stTheadRow",
+        "offset": [
+          283,
+          -26
+        ]
+      },
+      "note": "sweep right across the header"
+    },
+    {
+      "op": "move",
+      "at": 219.1,
+      "to": {
+        "target": "stFirstRow",
+        "offset": [
+          -350,
+          32
+        ]
+      },
+      "note": "drift over the queue during the Jira exception (p72-p73)"
+    },
+    {
+      "op": "move",
+      "at": 223.4,
+      "to": {
+        "target": "stKpi1",
+        "offset": [
+          0,
+          42
+        ]
+      },
+      "note": "step 14 recap sweep: start under the KPI band"
+    },
+    {
+      "op": "move",
+      "at": 228.0,
+      "to": {
+        "target": "stKpi3",
+        "offset": [
+          0,
+          42
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 233.0,
+      "to": {
+        "target": "stTheadRow",
+        "offset": [
+          0,
+          -32
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 238.6,
+      "to": {
+        "target": "stFirstRow",
+        "offset": [
+          0,
+          34
+        ]
+      }
+    },
+    {
+      "op": "move",
+      "at": 242.5,
+      "to": {
+        "point": [
+          1650,
+          950
+        ]
+      },
+      "note": "final park, clear of rows and captions"
+    },
+    {
+      "op": "assert",
+      "at": 244.6,
+      "predicate": "onSupportTickets"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "piHdrRect", "place": "below-left", "from": 10.5, "to": 16.7 },
-      { "n": 2, "anchor": "piCountRect", "place": "below-left", "from": 17.5, "to": 22.5 },
-      { "n": 3, "anchor": "henGroup.henRow", "place": "below-left", "from": 24.4, "to": 33.5 },
-      { "n": 4, "anchor": "ownGroup.ownTitle", "place": "below-left", "from": 47.0, "to": 55.6 },
-      { "n": 5, "anchor": "nocBrandRect", "place": "below-left", "from": 62.5, "to": 69.3 },
-      { "n": 6, "anchor": "incGroup.incTitle", "place": "left", "from": 72.5, "to": 79.0 },
-      { "n": 7, "anchor": "incGroup.incRow", "place": "left", "from": 96.6, "to": 106.8 },
-      { "n": 8, "anchor": "alThTypeRect", "place": "left", "from": 117.9, "to": 124.3 },
-      { "n": 9, "anchor": "tBcRect", "place": "below-left", "from": 136.7, "to": 140.8 },
-      { "n": 10, "anchor": "tThs.tThLastSeen", "place": "left", "from": 154.1, "to": 164.5 },
-      { "n": 11, "anchor": "sThs.sThLocation", "place": "left-top", "from": 175.4, "to": 181.8 },
-      { "n": 12, "anchor": "sDateCellRect", "place": "left", "from": 188.0, "to": 196.2 },
-      { "n": 13, "anchor": "stTheadRect", "place": "left-top", "from": 213.5, "to": 222.4 },
-      { "n": 14, "anchor": "stBcRect", "place": "below-left", "from": 224.2, "to": 241.5 }
+      {
+        "n": 1,
+        "anchor": "piHdrRect",
+        "place": "below-left",
+        "from": 10.5,
+        "to": 16.7
+      },
+      {
+        "n": 2,
+        "anchor": "piCountRect",
+        "place": "below-left",
+        "from": 17.5,
+        "to": 22.5
+      },
+      {
+        "n": 3,
+        "anchor": "henGroup.henRow",
+        "place": "below-left",
+        "from": 24.4,
+        "to": 33.5
+      },
+      {
+        "n": 4,
+        "anchor": "ownGroup.ownTitle",
+        "place": "below-left",
+        "from": 47.0,
+        "to": 55.6
+      },
+      {
+        "n": 5,
+        "anchor": "nocBrandRect",
+        "place": "below-left",
+        "from": 62.5,
+        "to": 69.3
+      },
+      {
+        "n": 6,
+        "anchor": "incGroup.incTitle",
+        "place": "left",
+        "from": 72.5,
+        "to": 79.0
+      },
+      {
+        "n": 7,
+        "anchor": "incGroup.incRow",
+        "place": "left",
+        "from": 96.6,
+        "to": 106.8
+      },
+      {
+        "n": 8,
+        "anchor": "alThTypeRect",
+        "place": "left",
+        "from": 117.9,
+        "to": 124.3
+      },
+      {
+        "n": 9,
+        "anchor": "tBcRect",
+        "place": "below-left",
+        "from": 136.7,
+        "to": 140.8
+      },
+      {
+        "n": 10,
+        "anchor": "tThs.tThLastSeen",
+        "place": "left",
+        "from": 154.1,
+        "to": 164.5
+      },
+      {
+        "n": 11,
+        "anchor": "sThs.sThLocation",
+        "place": "left-top",
+        "from": 175.4,
+        "to": 181.8
+      },
+      {
+        "n": 12,
+        "anchor": "sDateCellRect",
+        "place": "left",
+        "from": 188.0,
+        "to": 196.2
+      },
+      {
+        "n": 13,
+        "anchor": "stTheadRect",
+        "place": "left-top",
+        "from": 213.5,
+        "to": 222.4
+      },
+      {
+        "n": 14,
+        "anchor": "stBcRect",
+        "place": "below-left",
+        "from": 224.2,
+        "to": 241.5
+      }
     ],
     "highlights": [
-      { "anchor": "piCountRect", "from": 17.3, "to": 19.7, "note": "'Eleven items today, four of them urgent,' (p07)" },
-      { "anchor": "piGroupHdrRect", "from": 20.0, "to": 22.6, "note": "'the Critical group is already sitting at the top' (p08)" },
-      { "anchor": "henGroup.henTitle", "from": 24.3, "to": 27.4, "note": "'Henrico West Broad, POS system offline' (p10)" },
-      { "anchor": "henGroup.critChip", "from": 27.5, "to": 29.0, "note": "the Critical chip closing p10" },
-      { "anchor": "henGroup.henDesc", "from": 29.7, "to": 33.6, "note": "'names the site, the symptom... tech is already en route' (p11)" },
-      { "anchor": "henGroup.openLink", "from": 39.45, "to": 41.65, "note": "'The row has an Open arrow into the item.' (p15)" },
-      { "anchor": "henGroup.openLink", "from": 41.95, "to": 46.05, "color": "#dc2626", "note": "do-not-follow guardrail while p16 says 'We leave it alone on the shared demo' — never clicked" },
-      { "anchor": "ownGroup.ownRole", "from": 50.1, "to": 51.9, "note": "'Regional Ops already holds this one,' (p18)" },
-      { "anchor": "ownGroup.ownDue", "from": 51.95, "to": 53.8, "note": "'due inside thirty minutes'" },
-      { "anchor": "nocBadgeRect", "from": 66.2, "to": 67.85, "note": "'Two criticals live right now' (p22)" },
-      { "anchor": "nocTabs.tabIncidents", "from": 67.95, "to": 69.6, "note": "'the incidents tab is where they land'" },
-      { "anchor": "incGroup.incTitle", "from": 72.4, "to": 76.9, "note": "'POS system offline, zero transactions for forty-seven minutes' (p24)" },
-      { "anchor": "incGroup.incTime", "from": 83.4, "to": 85.5, "note": "'stopped almost an hour ago' (p27)" },
-      { "anchor": "tagRects.tagTunnel", "from": 90.7, "to": 92.2, "note": "'this one reads Tunnel Down,' (p30)" },
-      { "anchor": "tagRects.tagHardware", "from": 92.75, "to": 93.6, "note": "'others say Hardware,' (p31)" },
-      { "anchor": "tagRects.tagPayments", "from": 93.65, "to": 94.5, "note": "'Payments,'" },
-      { "anchor": "tagRects.tagEquipment", "from": 94.55, "to": 95.4, "note": "'Equipment.'" },
-      { "anchor": "assignRects.assignTyler", "from": 96.5, "to": 98.2, "note": "'The assignee tells you who has it,' (p32)" },
-      { "anchor": "assignRects.assignUnassigned", "from": 98.8, "to": 101.2, "note": "'or that it is unassigned and yours to claim' (p33)" },
-      { "anchor": "alTiles.alTile1", "from": 115.5, "to": 116.4, "note": "'three active alerts' (p36)" },
-      { "anchor": "alTiles.alTile3", "from": 116.45, "to": 117.25, "note": "'one critical'" },
-      { "anchor": "alThTypeRect", "from": 117.85, "to": 122.1, "note": "'Every row names its type' (p37)" },
-      { "anchor": "alPosRowRect", "from": 122.45, "to": 127.9, "note": "the POS Warning receipt-paper row (p38-p39)" },
-      { "anchor": "alCtrls.alFilters", "from": 128.7, "to": 129.6, "note": "'Filter to the site' (p40)" },
-      { "anchor": "alCtrls.alSearch", "from": 129.65, "to": 131.0, "note": "the scoped search box" },
-      { "anchor": "alCtrls.alNewRec", "from": 129.9, "to": 131.25, "color": "#dc2626", "note": "read-only guardrail: + New Record never clicked (shot-list STOP ring)" },
-      { "anchor": "alCtrls.alExport", "from": 129.9, "to": 131.25, "color": "#dc2626", "note": "Export never clicked (shot-list STOP ring)" },
-      { "anchor": "tNewRecRect", "from": 139.0, "to": 140.9, "color": "#dc2626", "note": "'There is a plus New Record button up top; leave it alone.' (p43)" },
-      { "anchor": "tThs.tThTerminal", "from": 147.75, "to": 148.3, "note": "'Terminal,' (p46)" },
-      { "anchor": "tThs.tThLocation", "from": 148.55, "to": 149.3, "note": "'location,'" },
-      { "anchor": "tThs.tThIP", "from": 149.65, "to": 150.35, "note": "'I-P,'" },
-      { "anchor": "tThs.tThSoftware", "from": 150.6, "to": 151.65, "note": "'software version,'" },
-      { "anchor": "tThs.tThOS", "from": 151.9, "to": 152.55, "note": "'O-S,'" },
-      { "anchor": "tThs.tThLastSeen", "from": 152.8, "to": 153.8, "note": "'and Last Seen.'" },
-      { "anchor": "tKpiRect", "from": 154.45, "to": 156.6, "note": "'Over a thousand terminals load here' — Total Terminals 1,067 (p52)" },
-      { "anchor": "tThs.tThLastSeen", "from": 160.55, "to": 163.0, "note": "'So Last Seen is your answer' (p54)" },
-      { "anchor": "tFirstRowRect", "from": 163.05, "to": 164.9, "note": "'the moment each register last checked in' — the top row's real Last Seen" },
-      { "anchor": "tSearchRect", "from": 165.35, "to": 168.9, "note": "'Search the site, find the terminal' (p55)" },
-      { "anchor": "sThs.sThLocation", "from": 175.35, "to": 175.95, "note": "'Location,' (p58)" },
-      { "anchor": "sThs.sThTicket", "from": 175.95, "to": 176.7, "note": "'Ticket number,'" },
-      { "anchor": "sThs.sThDate", "from": 177.05, "to": 177.9, "note": "'Date and Time,' (p59)" },
-      { "anchor": "sThs.sThTotal", "from": 177.9, "to": 178.85, "note": "'Total,'" },
-      { "anchor": "sThs.sThStatus", "from": 179.15, "to": 180.05, "note": "'Status,' (p60)" },
-      { "anchor": "sThs.sThTender", "from": 180.05, "to": 181.0, "note": "'Tender Type,'" },
-      { "anchor": "sThs.sThCustomer", "from": 181.0, "to": 181.9, "note": "'and Customer,'" },
-      { "anchor": "sKpiRect", "from": 181.95, "to": 183.8, "note": "'with a running total up top' — Total Tickets" },
-      { "anchor": "sCtrls.sFilters", "from": 184.45, "to": 185.5, "note": "'Filter to the site,' (p61)" },
-      { "anchor": "sCtrls.sSearch", "from": 185.55, "to": 187.25, "note": "the search box" },
-      { "anchor": "sDateCellRect", "from": 187.95, "to": 196.4, "note": "'read the newest time stamp' — the top row's Date/Time (p62-p63)" },
-      { "anchor": "sCtrls.sExport", "from": 199.5, "to": 200.6, "color": "#dc2626", "note": "'Skip Export.' (p65) — never clicked" },
-      { "anchor": "stNewRecRect", "from": 209.9, "to": 212.4, "color": "#dc2626", "note": "the live queue's raise-a-ticket control (+ New Record) bracketed do-not-submit while p69-p70 list the four facts — never clicked" },
-      { "anchor": "stTheadRect", "from": 213.3, "to": 218.25, "note": "'The queue sorts by...' (p71) — the real header row (live columns; see RESIDUALS)" }
+      {
+        "anchor": "piCountRect",
+        "from": 17.3,
+        "to": 19.7,
+        "note": "'Eleven items today, four of them urgent,' (p07)"
+      },
+      {
+        "anchor": "piGroupHdrRect",
+        "from": 20.0,
+        "to": 22.6,
+        "note": "'the Critical group is already sitting at the top' (p08)"
+      },
+      {
+        "anchor": "henGroup.henTitle",
+        "from": 24.3,
+        "to": 27.4,
+        "note": "'Henrico West Broad, POS system offline' (p10)"
+      },
+      {
+        "anchor": "henGroup.critChip",
+        "from": 27.5,
+        "to": 29.0,
+        "note": "the Critical chip closing p10"
+      },
+      {
+        "anchor": "henGroup.henDesc",
+        "from": 29.7,
+        "to": 33.6,
+        "note": "'names the site, the symptom... tech is already en route' (p11)"
+      },
+      {
+        "anchor": "henGroup.openLink",
+        "from": 39.45,
+        "to": 41.65,
+        "note": "'The row has an Open arrow into the item.' (p15)"
+      },
+      {
+        "anchor": "henGroup.openLink",
+        "from": 41.95,
+        "to": 46.05,
+        "color": "#dc2626",
+        "note": "do-not-follow guardrail while p16 says 'We leave it alone on the shared demo' \u2014 never clicked"
+      },
+      {
+        "anchor": "ownGroup.ownRole",
+        "from": 50.1,
+        "to": 51.9,
+        "note": "'Regional Ops already holds this one,' (p18)"
+      },
+      {
+        "anchor": "ownGroup.ownDue",
+        "from": 51.95,
+        "to": 53.8,
+        "note": "'due inside thirty minutes'"
+      },
+      {
+        "anchor": "nocBadgeRect",
+        "from": 66.2,
+        "to": 67.85,
+        "note": "'Two criticals live right now' (p22)"
+      },
+      {
+        "anchor": "nocTabs.tabIncidents",
+        "from": 67.95,
+        "to": 69.6,
+        "note": "'the incidents tab is where they land'"
+      },
+      {
+        "anchor": "incGroup.incTitle",
+        "from": 72.4,
+        "to": 76.9,
+        "note": "'POS system offline, zero transactions for forty-seven minutes' (p24)"
+      },
+      {
+        "anchor": "incGroup.incTime",
+        "from": 83.4,
+        "to": 85.5,
+        "note": "'stopped almost an hour ago' (p27)"
+      },
+      {
+        "anchor": "tagRects.tagTunnel",
+        "from": 90.7,
+        "to": 92.2,
+        "note": "'this one reads Tunnel Down,' (p30)"
+      },
+      {
+        "anchor": "tagRects.tagHardware",
+        "from": 92.75,
+        "to": 93.6,
+        "note": "'others say Hardware,' (p31)"
+      },
+      {
+        "anchor": "tagRects.tagPayments",
+        "from": 93.65,
+        "to": 94.5,
+        "note": "'Payments,'"
+      },
+      {
+        "anchor": "tagRects.tagEquipment",
+        "from": 94.55,
+        "to": 95.4,
+        "note": "'Equipment.'"
+      },
+      {
+        "anchor": "assignRects.assignTyler",
+        "from": 96.5,
+        "to": 98.2,
+        "note": "'The assignee tells you who has it,' (p32)"
+      },
+      {
+        "anchor": "assignRects.assignUnassigned",
+        "from": 98.8,
+        "to": 101.2,
+        "note": "'or that it is unassigned and yours to claim' (p33)"
+      },
+      {
+        "anchor": "alTiles.alTile1",
+        "from": 115.5,
+        "to": 116.4,
+        "note": "'three active alerts' (p36)"
+      },
+      {
+        "anchor": "alTiles.alTile3",
+        "from": 116.45,
+        "to": 117.25,
+        "note": "'one critical'"
+      },
+      {
+        "anchor": "alThTypeRect",
+        "from": 117.85,
+        "to": 122.1,
+        "note": "'Every row names its type' (p37)"
+      },
+      {
+        "anchor": "alPosRowRect",
+        "from": 122.45,
+        "to": 127.9,
+        "note": "the POS Warning receipt-paper row (p38-p39)"
+      },
+      {
+        "anchor": "alCtrls.alFilters",
+        "from": 128.7,
+        "to": 129.6,
+        "note": "'Filter to the site' (p40)"
+      },
+      {
+        "anchor": "alCtrls.alSearch",
+        "from": 129.65,
+        "to": 131.0,
+        "note": "the scoped search box"
+      },
+      {
+        "anchor": "alCtrls.alNewRec",
+        "from": 129.9,
+        "to": 131.25,
+        "color": "#dc2626",
+        "note": "read-only guardrail: + New Record never clicked (shot-list STOP ring)"
+      },
+      {
+        "anchor": "alCtrls.alExport",
+        "from": 129.9,
+        "to": 131.25,
+        "color": "#dc2626",
+        "note": "Export never clicked (shot-list STOP ring)"
+      },
+      {
+        "anchor": "tNewRecRect",
+        "from": 139.0,
+        "to": 140.9,
+        "color": "#dc2626",
+        "note": "'There is a plus New Record button up top; leave it alone.' (p43)"
+      },
+      {
+        "anchor": "tThs.tThTerminal",
+        "from": 147.75,
+        "to": 148.3,
+        "note": "'Terminal,' (p46)"
+      },
+      {
+        "anchor": "tThs.tThLocation",
+        "from": 148.55,
+        "to": 149.3,
+        "note": "'location,'"
+      },
+      {
+        "anchor": "tThs.tThIP",
+        "from": 149.65,
+        "to": 150.35,
+        "note": "'I-P,'"
+      },
+      {
+        "anchor": "tThs.tThSoftware",
+        "from": 150.6,
+        "to": 151.65,
+        "note": "'software version,'"
+      },
+      {
+        "anchor": "tThs.tThOS",
+        "from": 151.9,
+        "to": 152.55,
+        "note": "'O-S,'"
+      },
+      {
+        "anchor": "tThs.tThLastSeen",
+        "from": 152.8,
+        "to": 153.8,
+        "note": "'and Last Seen.'"
+      },
+      {
+        "anchor": "tKpiRect",
+        "from": 154.45,
+        "to": 156.6,
+        "note": "'Over a thousand terminals load here' \u2014 Total Terminals 1,067 (p52)"
+      },
+      {
+        "anchor": "tThs.tThLastSeen",
+        "from": 160.55,
+        "to": 163.0,
+        "note": "'So Last Seen is your answer' (p54)"
+      },
+      {
+        "anchor": "tFirstRowRect",
+        "from": 163.05,
+        "to": 164.9,
+        "note": "'the moment each register last checked in' \u2014 the top row's real Last Seen"
+      },
+      {
+        "anchor": "tSearchRect",
+        "from": 165.35,
+        "to": 168.9,
+        "note": "'Search the site, find the terminal' (p55)"
+      },
+      {
+        "anchor": "sThs.sThLocation",
+        "from": 175.35,
+        "to": 175.95,
+        "note": "'Location,' (p58)"
+      },
+      {
+        "anchor": "sThs.sThTicket",
+        "from": 175.95,
+        "to": 176.7,
+        "note": "'Ticket number,'"
+      },
+      {
+        "anchor": "sThs.sThDate",
+        "from": 177.05,
+        "to": 177.9,
+        "note": "'Date and Time,' (p59)"
+      },
+      {
+        "anchor": "sThs.sThTotal",
+        "from": 177.9,
+        "to": 178.85,
+        "note": "'Total,'"
+      },
+      {
+        "anchor": "sThs.sThStatus",
+        "from": 179.15,
+        "to": 180.05,
+        "note": "'Status,' (p60)"
+      },
+      {
+        "anchor": "sThs.sThTender",
+        "from": 180.05,
+        "to": 181.0,
+        "note": "'Tender Type,'"
+      },
+      {
+        "anchor": "sThs.sThCustomer",
+        "from": 181.0,
+        "to": 181.9,
+        "note": "'and Customer,'"
+      },
+      {
+        "anchor": "sKpiRect",
+        "from": 181.95,
+        "to": 183.8,
+        "note": "'with a running total up top' \u2014 Total Tickets"
+      },
+      {
+        "anchor": "sCtrls.sFilters",
+        "from": 184.45,
+        "to": 185.5,
+        "note": "'Filter to the site,' (p61)"
+      },
+      {
+        "anchor": "sCtrls.sSearch",
+        "from": 185.55,
+        "to": 187.25,
+        "note": "the search box"
+      },
+      {
+        "anchor": "sDateCellRect",
+        "from": 187.95,
+        "to": 196.4,
+        "note": "'read the newest time stamp' \u2014 the top row's Date/Time (p62-p63)"
+      },
+      {
+        "anchor": "sCtrls.sExport",
+        "from": 199.5,
+        "to": 200.6,
+        "color": "#dc2626",
+        "note": "'Skip Export.' (p65) \u2014 never clicked"
+      },
+      {
+        "anchor": "stNewRecRect",
+        "from": 209.9,
+        "to": 212.4,
+        "color": "#dc2626",
+        "note": "the live queue's raise-a-ticket control (+ New Record) bracketed do-not-submit while p69-p70 list the four facts \u2014 never clicked"
+      },
+      {
+        "anchor": "stTheadRect",
+        "from": 213.3,
+        "to": 218.25,
+        "note": "'The queue sorts by...' (p71) \u2014 the real header row (live columns; see RESIDUALS)"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 16.9, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 17.9, "z": 1.5, "cx": 1280, "cy": 360, "ease": true, "note": "step 2 close framing: '11 items · 4 urgent' + Critical group at 150%" },
-      { "t": 21.7, "z": 1.5, "cx": 1280, "cy": 360 },
-      { "t": 24.3, "z": 1.3, "cx": 830, "cy": 664, "ease": true, "note": "step 3: the whole Henrico row in frame" },
-      { "t": 33.6, "z": 1.3, "cx": 830, "cy": 664 },
-      { "t": 34.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide through step 4 (Open → guardrail + Action Ownership) and the step 5 navigation" },
-      { "t": 66.7, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 67.9, "z": 1.45, "cx": 1258, "cy": 372, "ease": true, "note": "steps 5-6: tab row + top incident card close framing" },
-      { "t": 77.6, "z": 1.45, "cx": 1258, "cy": 372 },
-      { "t": 78.8, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the slow-lane/stopped-lane explanation" },
-      { "t": 88.5, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 89.7, "z": 1.4, "cx": 1234, "cy": 400, "ease": true, "note": "step 7: tag chips + assignees down the feed" },
-      { "t": 101.3, "z": 1.4, "cx": 1234, "cy": 400 },
-      { "t": 102.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for p34 and the step 8 navigation" },
-      { "t": 117.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 118.7, "z": 1.35, "cx": 800, "cy": 560, "ease": true, "note": "step 8: TYPE column + alert rows incl. the POS row (~135%)" },
-      { "t": 125.7, "z": 1.35, "cx": 800, "cy": 560 },
-      { "t": 126.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide so STATUS 'Active' is on screen for 'still active' and the guardrail rings" },
-      { "t": 136.4, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 136.9, "z": 1.45, "cx": 662, "cy": 372, "ease": true, "note": "step 9: Settings›Terminals breadcrumb + KPI close-up" },
-      { "t": 138.1, "z": 1.45, "cx": 662, "cy": 372 },
-      { "t": 138.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the + New Record guardrail" },
-      { "t": 147.2, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 148.2, "z": 1.3, "cx": 791, "cy": 480, "ease": true, "note": "step 10: header sweep, left half" },
-      { "t": 150.4, "z": 1.3, "cx": 791, "cy": 480 },
-      { "t": 151.1, "z": 1.3, "cx": 1181, "cy": 480, "ease": true, "note": "pan right to O-S and Last Seen as they are named" },
-      { "t": 153.9, "z": 1.3, "cx": 1181, "cy": 480 },
-      { "t": 154.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the KPI + Last Seen answer + search" },
-      { "t": 175.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 176.0, "z": 1.3, "cx": 791, "cy": 560, "ease": true, "note": "step 11: Tickets column sweep, left half" },
-      { "t": 178.6, "z": 1.3, "cx": 791, "cy": 560 },
-      { "t": 179.3, "z": 1.3, "cx": 1181, "cy": 560, "ease": true, "note": "pan right for Status / Tender Type / Customer" },
-      { "t": 181.4, "z": 1.3, "cx": 1181, "cy": 560 },
-      { "t": 182.3, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide: KPI + filters + list in one view" },
-      { "t": 188.3, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 189.3, "z": 1.35, "cx": 950, "cy": 590, "ease": true, "note": "step 12: the newest Date/Time close framing" },
-      { "t": 195.6, "z": 1.35, "cx": 950, "cy": 590 },
-      { "t": 196.6, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Export guardrail, the escalation queue, and the recap" },
-      { "t": 246.282, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 16.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 17.9,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360,
+        "ease": true,
+        "note": "step 2 close framing: '11 items \u00b7 4 urgent' + Critical group at 150%"
+      },
+      {
+        "t": 21.7,
+        "z": 1.5,
+        "cx": 1280,
+        "cy": 360
+      },
+      {
+        "t": 24.3,
+        "z": 1.3,
+        "cx": 830,
+        "cy": 664,
+        "ease": true,
+        "note": "step 3: the whole Henrico row in frame"
+      },
+      {
+        "t": 33.6,
+        "z": 1.3,
+        "cx": 830,
+        "cy": 664
+      },
+      {
+        "t": 34.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide through step 4 (Open \u2192 guardrail + Action Ownership) and the step 5 navigation"
+      },
+      {
+        "t": 66.7,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 67.9,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 372,
+        "ease": true,
+        "note": "steps 5-6: tab row + top incident card close framing"
+      },
+      {
+        "t": 77.6,
+        "z": 1.45,
+        "cx": 1258,
+        "cy": 372
+      },
+      {
+        "t": 78.8,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the slow-lane/stopped-lane explanation"
+      },
+      {
+        "t": 88.5,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 89.7,
+        "z": 1.4,
+        "cx": 1234,
+        "cy": 400,
+        "ease": true,
+        "note": "step 7: tag chips + assignees down the feed"
+      },
+      {
+        "t": 101.3,
+        "z": 1.4,
+        "cx": 1234,
+        "cy": 400
+      },
+      {
+        "t": 102.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for p34 and the step 8 navigation"
+      },
+      {
+        "t": 117.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 118.7,
+        "z": 1.35,
+        "cx": 800,
+        "cy": 560,
+        "ease": true,
+        "note": "step 8: TYPE column + alert rows incl. the POS row (~135%)"
+      },
+      {
+        "t": 125.7,
+        "z": 1.35,
+        "cx": 800,
+        "cy": 560
+      },
+      {
+        "t": 126.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide so STATUS 'Active' is on screen for 'still active' and the guardrail rings"
+      },
+      {
+        "t": 136.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 136.9,
+        "z": 1.45,
+        "cx": 662,
+        "cy": 372,
+        "ease": true,
+        "note": "step 9: Settings\u203aTerminals breadcrumb + KPI close-up"
+      },
+      {
+        "t": 138.1,
+        "z": 1.45,
+        "cx": 662,
+        "cy": 372
+      },
+      {
+        "t": 138.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the + New Record guardrail"
+      },
+      {
+        "t": 147.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 148.2,
+        "z": 1.3,
+        "cx": 791,
+        "cy": 480,
+        "ease": true,
+        "note": "step 10: header sweep, left half"
+      },
+      {
+        "t": 150.4,
+        "z": 1.3,
+        "cx": 791,
+        "cy": 480
+      },
+      {
+        "t": 151.1,
+        "z": 1.3,
+        "cx": 1181,
+        "cy": 480,
+        "ease": true,
+        "note": "pan right to O-S and Last Seen as they are named"
+      },
+      {
+        "t": 153.9,
+        "z": 1.3,
+        "cx": 1181,
+        "cy": 480
+      },
+      {
+        "t": 154.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the KPI + Last Seen answer + search"
+      },
+      {
+        "t": 175.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 176.0,
+        "z": 1.3,
+        "cx": 791,
+        "cy": 560,
+        "ease": true,
+        "note": "step 11: Tickets column sweep, left half"
+      },
+      {
+        "t": 178.6,
+        "z": 1.3,
+        "cx": 791,
+        "cy": 560
+      },
+      {
+        "t": 179.3,
+        "z": 1.3,
+        "cx": 1181,
+        "cy": 560,
+        "ease": true,
+        "note": "pan right for Status / Tender Type / Customer"
+      },
+      {
+        "t": 181.4,
+        "z": 1.3,
+        "cx": 1181,
+        "cy": 560
+      },
+      {
+        "t": 182.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide: KPI + filters + list in one view"
+      },
+      {
+        "t": 188.3,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 189.3,
+        "z": 1.35,
+        "cx": 950,
+        "cy": 590,
+        "ease": true,
+        "note": "step 12: the newest Date/Time close framing"
+      },
+      {
+        "t": 195.6,
+        "z": 1.35,
+        "cx": 950,
+        "cy": 590
+      },
+      {
+        "t": 196.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Export guardrail, the escalation queue, and the recap"
+      },
+      {
+        "t": 246.282,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "completion": {
-      "text": "POS Down — Complete",
+      "text": "POS Down \u2014 Complete",
       "from": 244.48,
       "fadeOutFrames": 10
     },
