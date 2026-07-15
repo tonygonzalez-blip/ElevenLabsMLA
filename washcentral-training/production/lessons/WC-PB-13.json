@@ -5,7 +5,10 @@
   "audioDurationS": 236.356,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/settings-integrations.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "output": "WC-PB-13-integration-down-v1.1",
   "neverClick": [
     "logout",
@@ -28,44 +31,110 @@
     "ask shyne"
   ],
   "targets": {
-    "railITSupport": { "js": "[...document.querySelectorAll('button,a')].find(e=>(e.getAttribute('title')==='IT & Support'||(e.textContent||'').trim()==='IT & Support')&&e.getBoundingClientRect().left<80&&e.getBoundingClientRect().width>0)" },
-    "railSettings": { "js": "[...document.querySelectorAll('button,a')].find(e=>(e.getAttribute('title')==='Settings'||(e.textContent||'').trim()==='Settings')&&e.getBoundingClientRect().left<80&&e.getBoundingClientRect().width>0)" },
-
-    "intgZohoCard": { "selector": "a[href=\"settings-integrations-zoho.html\"]" },
-    "intgQbCard": { "selector": "a[href=\"settings-integrations-quickbooks.html\"]" },
-    "intgAuthGroup": { "js": "[...document.querySelectorAll('.section-lbl')].find(e=>/Authentication & SSO/i.test((e.textContent||'').trim()))", "textRect": true },
-    "intgAcctGroup": { "js": "[...document.querySelectorAll('.section-lbl')].find(e=>/Accounting & Finance/i.test((e.textContent||'').trim()))", "textRect": true },
-    "intgHelpGroup": { "js": "[...document.querySelectorAll('.section-lbl')].find(e=>/Help Desk & Support/i.test((e.textContent||'').trim()))", "textRect": true },
-    "sidebarIntegrations": { "js": "[...document.querySelectorAll('a[href=\"settings-integrations.html\"]')].find(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.top>=0&&r.bottom<=1080})" },
-
-    "zStatusChip": { "selector": ".int-badge" },
-    "zPlanBadge": { "selector": ".a-plan-badge" },
-    "zTileConnection": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Connection/.test((e.textContent||'').trim()))" },
-    "zTileDataCenter": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Data Center/.test((e.textContent||'').trim()))" },
-    "zTileOrgId": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Org ID/.test((e.textContent||'').trim()))" },
-    "zTileSync": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sync Direction/.test((e.textContent||'').trim()))" },
-    "zTestConn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Test Connection$/.test((e.textContent||'').trim()))" },
-    "zEditConfig": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Edit Configuration$/.test((e.textContent||'').trim()))" },
-    "zAccessToken": { "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Access Token/i.test((e.textContent||'').trim()))" },
-    "zTokenExpiry": { "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Token Expiry/i.test((e.textContent||'').trim()))" },
-    "zEnabled": { "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Enabled/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>300)" },
-    "zSyncDir": { "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Sync direction/i.test((e.textContent||'').trim()))" },
-    "zInstrTab": { "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>/^Instructions$/.test((e.textContent||'').trim()))" },
-
-    "hdHelpDeskLink": { "js": "[...document.querySelectorAll('a[href=\"zoho-tickets.html\"]')].find(e=>e.getBoundingClientRect().width>0)" },
-    "hdCountsShowing": { "js": "(()=>{const el=[...document.querySelectorAll('*')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Showing'&&e.getBoundingClientRect().width>0);return el?el.parentElement:null})()" },
-    "hdGoToSettings": { "js": "[...document.querySelectorAll('a,button')].find(e=>/Go to Zoho Desk Settings/.test((e.textContent||'').trim()))" },
-
-    "suListHeader": { "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^System Users List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)", "textRect": true },
-    "suSSOTh": { "js": "[...document.querySelectorAll('th')].find(e=>/^SSO$/.test((e.textContent||'').trim()))" },
-    "suLastLoginTh": { "js": "[...document.querySelectorAll('th')].find(e=>/^Last Login$/i.test((e.textContent||'').trim()))" },
-    "suNewRecord": { "js": "[...document.querySelectorAll('a,button')].find(e=>/New Record/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "suSysUsersLink": { "js": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].find(e=>e.getBoundingClientRect().width>0)" },
-    "suUAndSHeader": { "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/Users & Security/.test(e.textContent||''))" },
-
-    "qbStatusChip": { "selector": ".int-badge" },
-    "qbTestConn": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^Test Connection$/.test((e.textContent||'').trim()))" },
-    "qbCredHdr": { "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Credentials$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>300)", "textRect": true }
+    "railITSupport": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>(e.getAttribute('title')==='IT & Support'||(e.textContent||'').trim()==='IT & Support')&&e.getBoundingClientRect().left<80&&e.getBoundingClientRect().width>0)"
+    },
+    "railSettings": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>(e.getAttribute('title')==='Settings'||(e.textContent||'').trim()==='Settings')&&e.getBoundingClientRect().left<80&&e.getBoundingClientRect().width>0)"
+    },
+    "intgZohoCard": {
+      "selector": "a[href=\"settings-integrations-zoho.html\"]"
+    },
+    "intgQbCard": {
+      "selector": "a[href=\"settings-integrations-quickbooks.html\"]"
+    },
+    "intgAuthGroup": {
+      "js": "[...document.querySelectorAll('.section-lbl')].find(e=>/Authentication & SSO/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "intgAcctGroup": {
+      "js": "[...document.querySelectorAll('.section-lbl')].find(e=>/Accounting & Finance/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "intgHelpGroup": {
+      "js": "[...document.querySelectorAll('.section-lbl')].find(e=>/Help Desk & Support/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "sidebarIntegrations": {
+      "js": "[...document.querySelectorAll('a[href=\"settings-integrations.html\"]')].find(a=>{const r=a.getBoundingClientRect();return r.width>0&&r.height>0})"
+    },
+    "zStatusChip": {
+      "selector": ".int-badge"
+    },
+    "zPlanBadge": {
+      "selector": ".a-plan-badge"
+    },
+    "zTileConnection": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Connection/.test((e.textContent||'').trim()))"
+    },
+    "zTileDataCenter": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Data Center/.test((e.textContent||'').trim()))"
+    },
+    "zTileOrgId": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Org ID/.test((e.textContent||'').trim()))"
+    },
+    "zTileSync": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Sync Direction/.test((e.textContent||'').trim()))"
+    },
+    "zTestConn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Test Connection$/.test((e.textContent||'').trim()))"
+    },
+    "zEditConfig": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Edit Configuration$/.test((e.textContent||'').trim()))"
+    },
+    "zAccessToken": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Access Token/i.test((e.textContent||'').trim()))"
+    },
+    "zTokenExpiry": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Token Expiry/i.test((e.textContent||'').trim()))"
+    },
+    "zEnabled": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Enabled/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>300)"
+    },
+    "zSyncDir": {
+      "js": "[...document.querySelectorAll('.a-fi')].find(e=>/^Sync direction/i.test((e.textContent||'').trim()))"
+    },
+    "zInstrTab": {
+      "js": "[...document.querySelectorAll('.a-tab-btn')].find(e=>/^Instructions$/.test((e.textContent||'').trim()))"
+    },
+    "hdHelpDeskLink": {
+      "js": "[...document.querySelectorAll('a[href=\"zoho-tickets.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "hdCountsShowing": {
+      "js": "(()=>{const el=[...document.querySelectorAll('*')].find(e=>e.children.length===0&&(e.textContent||'').trim()==='Showing'&&e.getBoundingClientRect().width>0);return el?el.parentElement:null})()"
+    },
+    "hdGoToSettings": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/Go to Zoho Desk Settings/.test((e.textContent||'').trim()))"
+    },
+    "suListHeader": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^System Users List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
+      "textRect": true
+    },
+    "suSSOTh": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^SSO$/.test((e.textContent||'').trim()))"
+    },
+    "suLastLoginTh": {
+      "js": "[...document.querySelectorAll('th')].find(e=>/^Last Login$/i.test((e.textContent||'').trim()))"
+    },
+    "suNewRecord": {
+      "js": "[...document.querySelectorAll('a,button')].find(e=>/New Record/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "suSysUsersLink": {
+      "js": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "suUAndSHeader": {
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/users\\s*&\\s*security/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "qbStatusChip": {
+      "selector": ".int-badge"
+    },
+    "qbTestConn": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^Test Connection$/.test((e.textContent||'').trim()))"
+    },
+    "qbCredHdr": {
+      "js": "[...document.querySelectorAll('.a-group-hdr')].find(e=>/^Credentials$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>300)",
+      "textRect": true
+    }
   },
   "predicates": {
     "onIntegrations": "location.pathname.endsWith('/settings-integrations.html')",
@@ -77,8 +146,8 @@
     "onZohoTickets": "location.pathname.endsWith('/zoho-tickets.html')",
     "zohoTicketsReady": "location.pathname.endsWith('/zoho-tickets.html')&&[...document.querySelectorAll('a,button')].some(e=>/Go to Zoho Desk Settings/.test(e.textContent||''))&&/Not connected/i.test(document.body.innerText||'')",
     "onSettings": "location.pathname.endsWith('/settings.html')",
-    "settingsReady": "location.pathname.endsWith('/settings.html')&&document.querySelectorAll('button.menu-header').length>5",
-    "uAndSExpanded": "(()=>{const b=[...document.querySelectorAll('button.menu-header')].find(b=>/Users & Security/.test(b.textContent||''));return !!b&&!!b.nextElementSibling&&b.nextElementSibling.getBoundingClientRect().height>0})()",
+    "settingsReady": "location.pathname.endsWith('/settings.html')&&document.querySelectorAll('.sw-cat').length>5",
+    "uAndSExpanded": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "onSystemUsers": "location.pathname.endsWith('/settings-system-users.html')",
     "systemUsersReady": "location.pathname.endsWith('/settings-system-users.html')&&document.querySelectorAll('table thead th').length>=8&&[...document.querySelectorAll('th')].some(e=>/^SSO$/.test((e.textContent||'').trim()))",
     "onQuickBooks": "location.pathname.endsWith('/settings-integrations-quickbooks.html')",
@@ -90,210 +159,1595 @@
   "preflight": [
     {
       "op": "log",
-      "note": "Start page is the Integrations hub (settings-integrations.html), which renders with its own minimal Settings sidebar (Close Settings / All Settings / Integrations / Diagnostics) and every connector card in main content — the three-way branch of step 1 (Help Desk & Support / Authentication & SSO / Accounting & Finance) is read from those live groups; no persisted-preference staging is required to show it. Navigation to System Users (step 8) uses the full Settings accordion reached via the Settings rail -> settings.html: the Users & Security group is expanded with an `unless: uAndSExpanded` guard so the op only ever OPENS it (never toggles it shut), then the in-view System Users link is clicked. The standalone Integrations link is pinned at the BOTTOM of that accordion; it stays in the 1080px viewport (y651 all-collapsed, y731 with only Users & Security open) and is used for the step-9 and step-12 returns. Probe-verified July 11 from CDP 9225: the accordion's default profile state is all-collapsed (Integrations at y651, Users & Security header at y413, both in view); the accordion state is shared/persisted across the profile, so during probing it was restored to all-collapsed. RESIDUAL: if a prior session leaves many groups above Users & Security expanded at record time, the Users & Security header or the Integrations link could be pushed below the fold and the corresponding click would abort the take (fail-safe, never faked) rather than mis-fire — re-collapse the settings accordion before recording if that occurs."
+      "note": "Start page is the Integrations hub (settings-integrations.html), which renders with its own minimal Settings sidebar (Close Settings / All Settings / Integrations / Diagnostics) and every connector card in main content \u2014 the three-way branch of step 1 (Help Desk & Support / Authentication & SSO / Accounting & Finance) is read from those live groups; no persisted-preference staging is required to show it. Navigation to System Users (step 8) uses the full Settings accordion reached via the Settings rail -> settings.html: the Users & Security group is expanded with an `unless: uAndSExpanded` guard so the op only ever OPENS it (never toggles it shut), then the in-view System Users link is clicked. The standalone Integrations link is pinned at the BOTTOM of that accordion; it stays in the 1080px viewport (y651 all-collapsed, y731 with only Users & Security open) and is used for the step-9 and step-12 returns. Probe-verified July 11 from CDP 9225: the accordion's default profile state is all-collapsed (Integrations at y651, Users & Security header at y413, both in view); the accordion state is shared/persisted across the profile, so during probing it was restored to all-collapsed. RESIDUAL: if a prior session leaves many groups above Users & Security expanded at record time, the Users & Security header or the Integrations link could be pushed below the fold and the corresponding click would abort the take (fail-safe, never faked) rather than mis-fire \u2014 re-collapse the settings accordion before recording if that occurs."
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.5, "predicate": "onIntegrations", "note": "start page identity before capture (step 1 opens on the Integrations hub)" },
-    { "op": "assert", "at": -0.9, "predicate": "integrationsReady", "note": "loaded: Zoho + QuickBooks connector cards present" },
-
-    { "op": "pointer-enter", "at": 0.4, "from": [1900, 300], "to": { "target": "intgZohoCard", "offset": [200, -40] }, "note": "step 1: enter from the right toward the connector cards (p01 'Three complaints, one shape')" },
-    { "op": "log-rects", "at": 0.9, "key": "intgBranch", "targets": ["intgZohoCard", "intgAuthGroup", "intgAcctGroup", "intgHelpGroup"] },
-    { "op": "move", "at": 1.7, "to": { "target": "intgZohoCard", "offset": [0, 0] }, "note": "step 1: onto the Zoho Desk card (p02 'Tickets stopped reaching Zoho')" },
-    { "op": "move", "at": 3.7, "to": { "target": "intgAuthGroup", "offset": [150, 0] }, "note": "step 1: to the Authentication & SSO group (p03 'Single sign-on users locked out')" },
-    { "op": "move", "at": 5.9, "to": { "target": "intgAcctGroup", "offset": [150, 0] }, "note": "step 1: to the Accounting & Finance group (p04 'An accounting export full of holes')" },
-    { "op": "move", "at": 8.4, "to": { "point": [960, 430] }, "note": "step 1: inert gesture (p05 'Each one is a connector that quit authenticating, and each gets the same read')" },
-    { "op": "move", "at": 14.0, "to": { "point": [700, 720] }, "note": "step 1: drift toward the Zoho card (p06 'open the connector, check its status, check its token') — stages the step-2 approach at the cue" },
-    { "op": "move", "at": 17.6, "to": { "point": [640, 700] }, "note": "step 1: small settle near the Zoho card (p07 'then look at the surface the user actually feels')" },
-
-    { "op": "click", "target": "intgZohoCard", "pressAt": 22.0, "hoverMs": 500, "postcondition": "onZoho", "timeoutMs": 9000, "nav": true, "note": "step 2: 'Open the connector. Settings, Integrations, Zoho Desk' (p08, cue ends 21.90) — genuine connector-card click; press lands in the trailing break" },
-    { "op": "wait-stable", "afterNav": true, "key": "zohoStable", "predicate": "zohoReady", "settleMs": 700, "timeoutMs": 10000 },
-    { "op": "log-rects", "at": 24.0, "key": "zHeader", "targets": ["zPlanBadge", "zStatusChip"] },
-    { "op": "move", "at": 24.6, "to": { "target": "zStatusChip", "offset": [70, 0] }, "note": "step 2: beside the Not Configured chip (p09 'One chip is the headline: Not Configured, with a warning triangle')" },
-    { "op": "move", "at": 30.7, "to": { "target": "zStatusChip", "offset": [92, 6] }, "note": "step 2: linger beside the chip (p10-p11 'that reading is honest... your first and fastest read')" },
-    { "op": "move", "at": 37.0, "to": { "point": [980, 300] }, "note": "step 2: park before the tiles sweep" },
-
-    { "op": "log-rects", "at": 42.0, "key": "zTilesG", "targets": ["zTileConnection", "zTileDataCenter", "zTileOrgId", "zTileSync"] },
-    { "op": "move", "at": 42.6, "to": { "target": "zTileConnection", "offset": [0, 0] }, "note": "step 3: onto the Connection tile (p12 'Four tiles sit across the top of the card')" },
-    { "op": "move", "at": 44.8, "to": { "target": "zTileConnection", "offset": [0, 0] }, "note": "step 3: settle on Connection (p13 'Connection reads Not set, which matches the banner')" },
-    { "op": "move", "at": 48.3, "to": { "target": "zTileDataCenter", "offset": [0, 0] }, "note": "step 3: Data Center (p14 'Data center, US')" },
-    { "op": "move", "at": 49.5, "to": { "target": "zTileSync", "offset": [0, 0] }, "note": "step 3: Sync Direction (p14 'Sync direction, both')" },
-    { "op": "move", "at": 50.4, "to": { "point": [980, 300] }, "note": "step 3: park (p15-p16 'when a working connection drops... before you go digging through credentials')" },
-
-    { "op": "log-rects", "at": 58.0, "key": "zBtns", "targets": ["zTestConn", "zEditConfig"] },
-    { "op": "watch", "key": "wPageZoho4", "from": 58.2, "to": 74.6, "predicate": "pageStillZoho", "everyMs": 500, "mustHold": true, "note": "step 4 guardrail proof: page stays on the Zoho connector, chip still reads Not Configured — nothing was clicked or mutated during the Test/Edit hover" },
-    { "op": "move", "at": 58.5, "to": { "target": "zTestConn", "offset": [40, -40], "outside": true }, "note": "step 4: point ABOVE the button pair (p17 'Top right, two buttons')" },
-    { "op": "move", "at": 60.2, "to": { "target": "zTestConn", "offset": [30, -40], "outside": true }, "note": "step 4 guardrail: hover NEAR Test Connection, never on it (p18 'Test Connection fires a live probe against the real integration')" },
-    { "op": "move", "at": 64.0, "to": { "target": "zEditConfig", "offset": [30, -40], "outside": true }, "note": "step 4 guardrail: hover NEAR Edit Configuration, never on it (p19 'Edit Configuration opens the credential form')" },
-    { "op": "move", "at": 66.8, "to": { "point": [1480, 60] }, "note": "step 4: park clear above (p20-p22 'Both are admin actions... you never click either one from the demo tenant')" },
-
-    { "op": "log-rects", "at": 75.4, "key": "zCredG", "targets": ["zAccessToken", "zTokenExpiry"] },
-    { "op": "move", "at": 76.0, "to": { "target": "zAccessToken", "offset": [-260, 0] }, "note": "step 5: the credentials block (p23-p24 'Now the Settings tab, and the credentials block. Client ID, secret, tokens: all blank or not set here')" },
-    { "op": "move", "at": 78.6, "to": { "target": "zAccessToken", "offset": [-260, 0] }, "note": "step 5: Access Token — Not set (p25 lead-in)" },
-    { "op": "move", "at": 80.4, "to": { "target": "zTokenExpiry", "offset": [-260, 0] }, "note": "step 5: TOKEN EXPIRY — the field that matters (p25 'The field that matters most is token expiry'; p27 'Expiry in the past, access token gone')" },
-    { "op": "move", "at": 83.2, "to": { "target": "zTokenExpiry", "offset": [-230, 4] }, "note": "step 5: linger beside TOKEN EXPIRY (p28 'The re-auth is an admin job, and none of these values ever goes into your ticket'). Values are empty (—/Not set); field names only, never a credential value." },
-    { "op": "move", "at": 90.5, "to": { "point": [1480, 400] }, "note": "step 5: park while p28 finishes" },
-
-    { "op": "log-rects", "at": 98.6, "key": "zGenSync", "targets": ["zEnabled", "zSyncDir"] },
-    { "op": "log-rect", "at": 98.9, "key": "zInstrRect", "target": "zInstrTab" },
-    { "op": "move", "at": 99.4, "to": { "point": [640, 600] }, "note": "step 6: drift toward the General block (p29 'Two more reads before you leave')" },
-    { "op": "move", "at": 100.6, "to": { "target": "zEnabled", "offset": [-260, 0] }, "note": "step 6: ENABLED — Yes (p30 'Under General, Enabled says yes')" },
-    { "op": "move", "at": 101.9, "to": { "target": "zSyncDir", "offset": [-260, 0] }, "note": "step 6: SYNC DIRECTION — both (p30 'Under Sync, the direction is both')" },
-    { "op": "move", "at": 103.6, "to": { "target": "zSyncDir", "offset": [-230, 4] }, "note": "step 6: settle (p31 'So nobody switched it off. The failure is authentication')" },
-    { "op": "move", "at": 106.1, "to": { "target": "zInstrTab", "offset": [0, -6] }, "note": "step 6: point at the Instructions tab, do NOT open it (p32 'the Instructions tab next door holds the reconnect procedure'). Body not in corpus — TBD parked." },
-    { "op": "move", "at": 110.2, "to": { "target": "zInstrTab", "offset": [70, -6], "outside": true }, "note": "step 6: linger beside the Instructions tab (still not opened)" },
-    { "op": "move", "at": 112.6, "to": { "point": [900, 300] }, "note": "step 6: park before the Help Desk navigation" },
-
-    { "op": "click", "target": "railITSupport", "pressAt": 117.4, "hoverMs": 420, "postcondition": "onSupportTickets", "timeoutMs": 9000, "nav": true, "note": "step 7a: 'Open I-T and Support' (p34, cue starts 116.66) — genuine rail click to the IT & Support area" },
-    { "op": "wait-stable", "afterNav": true, "key": "supportStable", "predicate": "supportReady", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "click", "target": "hdHelpDeskLink", "pressAt": 119.4, "hoverMs": 400, "postcondition": "onZohoTickets", "timeoutMs": 9000, "nav": true, "note": "step 7b: 'then Help Desk Zoho' (p34) — genuine sidebar link (never the direct URL, which 404'd July 9); opens the not-connected view" },
-    { "op": "wait-stable", "afterNav": true, "key": "zohoTicketsStable", "predicate": "zohoTicketsReady", "settleMs": 600, "timeoutMs": 10000 },
-    { "op": "log-rect", "at": 121.6, "key": "hdCountsG", "target": "hdCountsShowing" },
-    { "op": "log-rects", "at": 121.75, "key": "hdCounts", "targets": ["hdCountsShowing"] },
-    { "op": "log-rect", "at": 121.9, "key": "hdGoRect", "target": "hdGoToSettings" },
-    { "op": "move", "at": 122.5, "to": { "target": "hdCountsShowing", "offset": [0, 12] }, "note": "step 7: the dash count placeholders (p36 'Every ticket count reads as a dash, and the card in the middle says Zoho Desk not connected')" },
-    { "op": "move", "at": 125.2, "to": { "point": [960, 320] }, "note": "step 7: toward the not-connected card (p36 continues)" },
-    { "op": "move", "at": 128.6, "to": { "target": "hdGoToSettings", "offset": [-50, 40], "outside": true }, "note": "step 7: point NEAR the Go to Zoho Desk Settings button, do NOT click (p37 'with a button routing back to Settings')" },
-    { "op": "move", "at": 131.4, "to": { "point": [960, 330] }, "note": "step 7: park (p38 'Dashes in a healthy frame point at the connector, not the page')" },
-    { "op": "move", "at": 135.2, "to": { "point": [960, 300] }, "note": "step 7: settle (p39 'That is your ticket surface evidence')" },
-
-    { "op": "click", "target": "railSettings", "pressAt": 138.9, "hoverMs": 420, "postcondition": "onSettings", "timeoutMs": 9000, "nav": true, "note": "step 8a: 'Open System Users, under Users and Security' (p41, cue starts 138.59) — genuine Settings rail click to the All Settings accordion" },
-    { "op": "wait-stable", "afterNav": true, "key": "settingsStable", "predicate": "settingsReady", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "click", "target": "suUAndSHeader", "pressAt": 140.3, "hoverMs": 320, "unless": "uAndSExpanded", "postcondition": "uAndSExpanded", "timeoutMs": 5000, "note": "step 8b: expand the Users & Security accordion group (no navigation). unless-guarded so it only ever OPENS — a shared-profile prior-open state skips the click rather than toggling it shut." },
-    { "op": "click", "target": "suSysUsersLink", "pressAt": 141.4, "hoverMs": 360, "postcondition": "onSystemUsers", "timeoutMs": 9000, "nav": true, "note": "step 8c: genuine System Users link click" },
-    { "op": "wait-stable", "afterNav": true, "key": "sysUsersStable", "predicate": "systemUsersReady", "settleMs": 600, "timeoutMs": 10000 },
-    { "op": "watch", "key": "wPageSU8", "from": 143.2, "to": 159.4, "predicate": "pageStillSystemUsers", "everyMs": 500, "mustHold": true, "note": "step 8 guardrail proof: page stays on System Users (8+ column table) — + New Record never opened, no row created" },
-    { "op": "log-rects", "at": 143.3, "key": "suHeaders", "targets": ["suSSOTh", "suLastLoginTh"] },
-    { "op": "log-rect", "at": 143.5, "key": "suNewRecordRect", "target": "suNewRecord" },
-    { "op": "move", "at": 144.6, "to": { "target": "suSSOTh", "offset": [0, 0] }, "note": "step 8: the SSO column header (p43 'S-S-O flags who signs in through the provider, plain yes or no chips')" },
-    { "op": "move", "at": 148.9, "to": { "target": "suLastLoginTh", "offset": [0, 0] }, "note": "step 8: the LAST LOGIN column header (p44 'Last login shows when each of them last got in')" },
-    { "op": "move", "at": 153.0, "to": { "target": "suNewRecord", "offset": [-46, 44], "outside": true }, "note": "step 8 guardrail: point NEAR + New Record, never on it. RESIDUAL: live list shows a real top row (MLADev, a system/dev account with a phone value); the cursor targets column headers only, never a data cell, and the right-column framing keeps the phone column off the tight frame. Demo data is approved unblurred (CLAUDE.md)." },
-    { "op": "move", "at": 156.7, "to": { "point": [1650, 300] }, "note": "step 8: settle on the SSO/Last Login area (p45 'When the provider drops, the yes rows are your outage list')" },
-
-    { "op": "move", "at": 160.6, "to": { "point": [140, 731] }, "note": "step 9: stage toward the Integrations sidebar link (p46 'Symptom three, the accounting export')" },
-    { "op": "click", "target": "sidebarIntegrations", "pressAt": 163.6, "hoverMs": 400, "postcondition": "onIntegrations", "timeoutMs": 9000, "nav": true, "note": "step 9a: 'Back in Integrations' (p47, cue starts 163.39) — genuine settings-sidebar Integrations link (in view at y731)" },
-    { "op": "wait-stable", "afterNav": true, "key": "intgStable", "predicate": "integrationsReady", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "click", "target": "intgQbCard", "pressAt": 165.8, "hoverMs": 400, "postcondition": "onQuickBooks", "timeoutMs": 9000, "nav": true, "note": "step 9b: open the accounting connector — QuickBooks Online (per the plan's PB-13 note). RESIDUAL: guide/shotlist held the accounting connector as TBD-parked; live probe (July 11) shows it renders exactly like Zoho (status chip ⚠ Not Configured, Test Connection, Credentials + Token Expiry block), so it is shown live rather than as a parked card. No specific field VALUE is narrated." },
-    { "op": "wait-stable", "afterNav": true, "key": "qbStable", "predicate": "quickbooksReady", "settleMs": 600, "timeoutMs": 10000 },
-    { "op": "watch", "key": "wPageQB9", "from": 168.0, "to": 180.8, "predicate": "pageStillQuickbooks", "everyMs": 500, "mustHold": true, "note": "step 9 guardrail proof: page stays on the QuickBooks connector — its Test Connection is never clicked" },
-    { "op": "log-rect", "at": 167.6, "key": "qbChipRect", "target": "qbStatusChip", "requireStableMs": 200 },
-    { "op": "log-rects", "at": 167.8, "key": "qbBtns", "targets": ["qbTestConn"] },
-    { "op": "log-rect", "at": 168.0, "key": "qbCredRect", "target": "qbCredHdr" },
-    { "op": "move", "at": 168.4, "to": { "target": "qbStatusChip", "offset": [70, 0] }, "note": "step 9: its status chip (p48 'status chip...')" },
-    { "op": "move", "at": 169.7, "to": { "target": "qbTestConn", "offset": [30, -40], "outside": true }, "note": "step 9 guardrail: point NEAR the accounting connector's Test Connection, never on it (p48 'test button')" },
-    { "op": "move", "at": 171.4, "to": { "target": "qbCredHdr", "offset": [90, 0] }, "note": "step 9: its token block (p48 'token block'; p49 'Same read, same rules, same hands off')" },
-    { "op": "move", "at": 174.6, "to": { "target": "qbCredHdr", "offset": [110, 4] }, "note": "step 9: hold (p50 'if the connection is fine but entries land under the wrong codes, that's GL Code mapping')" },
-    { "op": "move", "at": 178.4, "to": { "point": [900, 300] }, "note": "step 9: park (p51 'Different lesson')" },
-
-    { "op": "move", "at": 181.6, "to": { "point": [900, 420] }, "note": "step 10: hold on the connector (p52-p53 'One trap before you write anything up. Pages have bad minutes')" },
-    { "op": "move", "at": 186.2, "to": { "point": [720, 300] }, "note": "step 10: inert gesture (p54-p55 'A list that will not load, or a stray fetch error... neither one proves an integration is down')" },
-    { "op": "move", "at": 195.0, "to": { "target": "qbStatusChip", "offset": [70, 0] }, "note": "step 10: back to the status chip (p56 'Reload first. Then let the connector's status chip make the call')" },
-
-    { "op": "move", "at": 198.2, "to": { "point": [900, 300] }, "note": "step 11: hold (p57 'Now the escalation')" },
-    { "op": "move", "at": 199.9, "to": { "target": "qbStatusChip", "offset": [70, 0] }, "note": "step 11: the status banner (p58 'Name the integration. Quote the status banner word for word')" },
-    { "op": "move", "at": 201.6, "to": { "target": "qbTestConn", "offset": [30, -40], "outside": true }, "note": "step 11 guardrail: point NEAR Test Connection again (p59 'Say whether an admin ran Test Connection and what it returned') — an admin runs it, never this demo" },
-    { "op": "move", "at": 204.2, "to": { "point": [900, 420] }, "note": "step 11: (p60 'Give the failure window with timestamps')" },
-    { "op": "move", "at": 208.2, "to": { "target": "qbCredHdr", "offset": [90, 0] }, "note": "step 11 guardrail: beside the token/credentials block (p61 'keep every token, secret, and masked value out of it') — never read or copied" },
-    { "op": "move", "at": 212.2, "to": { "point": [900, 300] }, "note": "step 11: park before the recap navigation" },
-
-    { "op": "move", "at": 216.2, "to": { "point": [140, 731] }, "note": "step 12: stage toward the Integrations link (p62 'That's the whole playbook')" },
-    { "op": "click", "target": "sidebarIntegrations", "pressAt": 217.4, "hoverMs": 400, "postcondition": "onIntegrations", "timeoutMs": 9000, "nav": true, "note": "step 12a: back to the Integrations hub for the recap" },
-    { "op": "wait-stable", "afterNav": true, "key": "intgStable2", "predicate": "integrationsReady", "settleMs": 500, "timeoutMs": 9000 },
-    { "op": "click", "target": "intgZohoCard", "pressAt": 219.4, "hoverMs": 400, "postcondition": "onZoho", "timeoutMs": 9000, "nav": true, "note": "step 12b: reopen the Zoho Desk connector (p63 'Scope to one connector. Read the chip, then the token expiry')" },
-    { "op": "wait-stable", "afterNav": true, "key": "zohoStable2", "predicate": "zohoReady", "settleMs": 700, "timeoutMs": 10000 },
-    { "op": "log-rect", "at": 221.2, "key": "zChipRect2", "target": "zStatusChip", "requireStableMs": 200 },
-    { "op": "log-rect", "at": 221.45, "key": "zTokenExpiry2", "target": "zTokenExpiry" },
-    { "op": "move", "at": 221.9, "to": { "target": "zStatusChip", "offset": [70, 0] }, "note": "step 12: recap sweep begins at the chip (p63 'Read the chip')" },
-    { "op": "move", "at": 224.2, "to": { "target": "zTileConnection", "offset": [0, 0] }, "note": "step 12: down through the tiles (p64 'Locate Test Connection and leave it alone')" },
-    { "op": "move", "at": 226.7, "to": { "target": "zTokenExpiry", "offset": [-230, 0] }, "note": "step 12: to TOKEN EXPIRY (p63 'then the token expiry'; p65 'Confirm the surface the user feels, rule out a transient fetch error')" },
-    { "op": "move", "at": 230.2, "to": { "target": "zTokenExpiry", "offset": [-210, 4] }, "note": "step 12: linger (p66 'and route a ticket an admin can act on')" },
-    { "op": "move", "at": 233.2, "to": { "point": [1500, 300] }, "note": "step 12: park clear for the completion card (p67 'Every screen stayed read-only, start to finish')" },
-    { "op": "assert", "at": 234.2, "predicate": "onZoho", "note": "recap page identity held" },
-    { "op": "assert", "at": 234.8, "predicate": "zohoReady" }
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onIntegrations",
+      "note": "start page identity before capture (step 1 opens on the Integrations hub)"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "integrationsReady",
+      "note": "loaded: Zoho + QuickBooks connector cards present"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.4,
+      "from": [
+        1900,
+        300
+      ],
+      "to": {
+        "target": "intgZohoCard",
+        "offset": [
+          200,
+          -40
+        ]
+      },
+      "note": "step 1: enter from the right toward the connector cards (p01 'Three complaints, one shape')"
+    },
+    {
+      "op": "log-rects",
+      "at": 0.9,
+      "key": "intgBranch",
+      "targets": [
+        "intgZohoCard",
+        "intgAuthGroup",
+        "intgAcctGroup",
+        "intgHelpGroup"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 1.7,
+      "to": {
+        "target": "intgZohoCard",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 1: onto the Zoho Desk card (p02 'Tickets stopped reaching Zoho')"
+    },
+    {
+      "op": "move",
+      "at": 3.7,
+      "to": {
+        "target": "intgAuthGroup",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 1: to the Authentication & SSO group (p03 'Single sign-on users locked out')"
+    },
+    {
+      "op": "move",
+      "at": 5.9,
+      "to": {
+        "target": "intgAcctGroup",
+        "offset": [
+          150,
+          0
+        ]
+      },
+      "note": "step 1: to the Accounting & Finance group (p04 'An accounting export full of holes')"
+    },
+    {
+      "op": "move",
+      "at": 8.4,
+      "to": {
+        "point": [
+          960,
+          430
+        ]
+      },
+      "note": "step 1: inert gesture (p05 'Each one is a connector that quit authenticating, and each gets the same read')"
+    },
+    {
+      "op": "move",
+      "at": 14.0,
+      "to": {
+        "point": [
+          700,
+          720
+        ]
+      },
+      "note": "step 1: drift toward the Zoho card (p06 'open the connector, check its status, check its token') \u2014 stages the step-2 approach at the cue"
+    },
+    {
+      "op": "move",
+      "at": 17.6,
+      "to": {
+        "point": [
+          640,
+          700
+        ]
+      },
+      "note": "step 1: small settle near the Zoho card (p07 'then look at the surface the user actually feels')"
+    },
+    {
+      "op": "click",
+      "target": "intgZohoCard",
+      "pressAt": 22.0,
+      "hoverMs": 500,
+      "postcondition": "onZoho",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 2: 'Open the connector. Settings, Integrations, Zoho Desk' (p08, cue ends 21.90) \u2014 genuine connector-card click; press lands in the trailing break"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "zohoStable",
+      "predicate": "zohoReady",
+      "settleMs": 700,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rects",
+      "at": 24.0,
+      "key": "zHeader",
+      "targets": [
+        "zPlanBadge",
+        "zStatusChip"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 24.6,
+      "to": {
+        "target": "zStatusChip",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "step 2: beside the Not Configured chip (p09 'One chip is the headline: Not Configured, with a warning triangle')"
+    },
+    {
+      "op": "move",
+      "at": 30.7,
+      "to": {
+        "target": "zStatusChip",
+        "offset": [
+          92,
+          6
+        ]
+      },
+      "note": "step 2: linger beside the chip (p10-p11 'that reading is honest... your first and fastest read')"
+    },
+    {
+      "op": "move",
+      "at": 37.0,
+      "to": {
+        "point": [
+          980,
+          300
+        ]
+      },
+      "note": "step 2: park before the tiles sweep"
+    },
+    {
+      "op": "log-rects",
+      "at": 42.0,
+      "key": "zTilesG",
+      "targets": [
+        "zTileConnection",
+        "zTileDataCenter",
+        "zTileOrgId",
+        "zTileSync"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 42.6,
+      "to": {
+        "target": "zTileConnection",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3: onto the Connection tile (p12 'Four tiles sit across the top of the card')"
+    },
+    {
+      "op": "move",
+      "at": 44.8,
+      "to": {
+        "target": "zTileConnection",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3: settle on Connection (p13 'Connection reads Not set, which matches the banner')"
+    },
+    {
+      "op": "move",
+      "at": 48.3,
+      "to": {
+        "target": "zTileDataCenter",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3: Data Center (p14 'Data center, US')"
+    },
+    {
+      "op": "move",
+      "at": 49.5,
+      "to": {
+        "target": "zTileSync",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3: Sync Direction (p14 'Sync direction, both')"
+    },
+    {
+      "op": "move",
+      "at": 50.4,
+      "to": {
+        "point": [
+          980,
+          300
+        ]
+      },
+      "note": "step 3: park (p15-p16 'when a working connection drops... before you go digging through credentials')"
+    },
+    {
+      "op": "log-rects",
+      "at": 58.0,
+      "key": "zBtns",
+      "targets": [
+        "zTestConn",
+        "zEditConfig"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "wPageZoho4",
+      "from": 58.2,
+      "to": 74.6,
+      "predicate": "pageStillZoho",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 4 guardrail proof: page stays on the Zoho connector, chip still reads Not Configured \u2014 nothing was clicked or mutated during the Test/Edit hover"
+    },
+    {
+      "op": "move",
+      "at": 58.5,
+      "to": {
+        "target": "zTestConn",
+        "offset": [
+          40,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "step 4: point ABOVE the button pair (p17 'Top right, two buttons')"
+    },
+    {
+      "op": "move",
+      "at": 60.2,
+      "to": {
+        "target": "zTestConn",
+        "offset": [
+          30,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "step 4 guardrail: hover NEAR Test Connection, never on it (p18 'Test Connection fires a live probe against the real integration')"
+    },
+    {
+      "op": "move",
+      "at": 64.0,
+      "to": {
+        "target": "zEditConfig",
+        "offset": [
+          30,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "step 4 guardrail: hover NEAR Edit Configuration, never on it (p19 'Edit Configuration opens the credential form')"
+    },
+    {
+      "op": "move",
+      "at": 66.8,
+      "to": {
+        "point": [
+          1480,
+          60
+        ]
+      },
+      "note": "step 4: park clear above (p20-p22 'Both are admin actions... you never click either one from the demo tenant')"
+    },
+    {
+      "op": "log-rects",
+      "at": 75.4,
+      "key": "zCredG",
+      "targets": [
+        "zAccessToken",
+        "zTokenExpiry"
+      ]
+    },
+    {
+      "op": "move",
+      "at": 76.0,
+      "to": {
+        "target": "zAccessToken",
+        "offset": [
+          -260,
+          0
+        ]
+      },
+      "note": "step 5: the credentials block (p23-p24 'Now the Settings tab, and the credentials block. Client ID, secret, tokens: all blank or not set here')"
+    },
+    {
+      "op": "move",
+      "at": 78.6,
+      "to": {
+        "target": "zAccessToken",
+        "offset": [
+          -260,
+          0
+        ]
+      },
+      "note": "step 5: Access Token \u2014 Not set (p25 lead-in)"
+    },
+    {
+      "op": "move",
+      "at": 80.4,
+      "to": {
+        "target": "zTokenExpiry",
+        "offset": [
+          -260,
+          0
+        ]
+      },
+      "note": "step 5: TOKEN EXPIRY \u2014 the field that matters (p25 'The field that matters most is token expiry'; p27 'Expiry in the past, access token gone')"
+    },
+    {
+      "op": "move",
+      "at": 83.2,
+      "to": {
+        "target": "zTokenExpiry",
+        "offset": [
+          -230,
+          4
+        ]
+      },
+      "note": "step 5: linger beside TOKEN EXPIRY (p28 'The re-auth is an admin job, and none of these values ever goes into your ticket'). Values are empty (\u2014/Not set); field names only, never a credential value."
+    },
+    {
+      "op": "move",
+      "at": 90.5,
+      "to": {
+        "point": [
+          1480,
+          400
+        ]
+      },
+      "note": "step 5: park while p28 finishes"
+    },
+    {
+      "op": "log-rects",
+      "at": 98.6,
+      "key": "zGenSync",
+      "targets": [
+        "zEnabled",
+        "zSyncDir"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 98.9,
+      "key": "zInstrRect",
+      "target": "zInstrTab"
+    },
+    {
+      "op": "move",
+      "at": 99.4,
+      "to": {
+        "point": [
+          640,
+          600
+        ]
+      },
+      "note": "step 6: drift toward the General block (p29 'Two more reads before you leave')"
+    },
+    {
+      "op": "move",
+      "at": 100.6,
+      "to": {
+        "target": "zEnabled",
+        "offset": [
+          -260,
+          0
+        ]
+      },
+      "note": "step 6: ENABLED \u2014 Yes (p30 'Under General, Enabled says yes')"
+    },
+    {
+      "op": "move",
+      "at": 101.9,
+      "to": {
+        "target": "zSyncDir",
+        "offset": [
+          -260,
+          0
+        ]
+      },
+      "note": "step 6: SYNC DIRECTION \u2014 both (p30 'Under Sync, the direction is both')"
+    },
+    {
+      "op": "move",
+      "at": 103.6,
+      "to": {
+        "target": "zSyncDir",
+        "offset": [
+          -230,
+          4
+        ]
+      },
+      "note": "step 6: settle (p31 'So nobody switched it off. The failure is authentication')"
+    },
+    {
+      "op": "move",
+      "at": 106.1,
+      "to": {
+        "target": "zInstrTab",
+        "offset": [
+          0,
+          -6
+        ]
+      },
+      "note": "step 6: point at the Instructions tab, do NOT open it (p32 'the Instructions tab next door holds the reconnect procedure'). Body not in corpus \u2014 TBD parked."
+    },
+    {
+      "op": "move",
+      "at": 110.2,
+      "to": {
+        "target": "zInstrTab",
+        "offset": [
+          70,
+          -6
+        ],
+        "outside": true
+      },
+      "note": "step 6: linger beside the Instructions tab (still not opened)"
+    },
+    {
+      "op": "move",
+      "at": 112.6,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "step 6: park before the Help Desk navigation"
+    },
+    {
+      "op": "click",
+      "target": "railITSupport",
+      "pressAt": 117.4,
+      "hoverMs": 420,
+      "postcondition": "onSupportTickets",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 7a: 'Open I-T and Support' (p34, cue starts 116.66) \u2014 genuine rail click to the IT & Support area"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "supportStable",
+      "predicate": "supportReady",
+      "settleMs": 500,
+      "timeoutMs": 15000
+    },
+    {
+      "op": "click",
+      "target": "hdHelpDeskLink",
+      "pressAt": 119.4,
+      "hoverMs": 400,
+      "postcondition": "onZohoTickets",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 7b: 'then Help Desk Zoho' (p34) \u2014 genuine sidebar link (never the direct URL, which 404'd July 9); opens the not-connected view"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "zohoTicketsStable",
+      "predicate": "zohoTicketsReady",
+      "settleMs": 600,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rect",
+      "at": 121.6,
+      "key": "hdCountsG",
+      "target": "hdCountsShowing"
+    },
+    {
+      "op": "log-rects",
+      "at": 121.75,
+      "key": "hdCounts",
+      "targets": [
+        "hdCountsShowing"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 121.9,
+      "key": "hdGoRect",
+      "target": "hdGoToSettings"
+    },
+    {
+      "op": "move",
+      "at": 122.5,
+      "to": {
+        "target": "hdCountsShowing",
+        "offset": [
+          0,
+          12
+        ]
+      },
+      "note": "step 7: the dash count placeholders (p36 'Every ticket count reads as a dash, and the card in the middle says Zoho Desk not connected')"
+    },
+    {
+      "op": "move",
+      "at": 125.2,
+      "to": {
+        "point": [
+          960,
+          320
+        ]
+      },
+      "note": "step 7: toward the not-connected card (p36 continues)"
+    },
+    {
+      "op": "move",
+      "at": 128.6,
+      "to": {
+        "target": "hdGoToSettings",
+        "offset": [
+          -50,
+          40
+        ],
+        "outside": true
+      },
+      "note": "step 7: point NEAR the Go to Zoho Desk Settings button, do NOT click (p37 'with a button routing back to Settings')"
+    },
+    {
+      "op": "move",
+      "at": 131.4,
+      "to": {
+        "point": [
+          960,
+          330
+        ]
+      },
+      "note": "step 7: park (p38 'Dashes in a healthy frame point at the connector, not the page')"
+    },
+    {
+      "op": "move",
+      "at": 135.2,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "step 7: settle (p39 'That is your ticket surface evidence')"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 138.9,
+      "hoverMs": 420,
+      "postcondition": "onSettings",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 8a: 'Open System Users, under Users and Security' (p41, cue starts 138.59) \u2014 genuine Settings rail click to the All Settings accordion"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable",
+      "predicate": "settingsReady",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "click",
+      "target": "suUAndSHeader",
+      "pressAt": 140.3,
+      "hoverMs": 320,
+      "unless": "uAndSExpanded",
+      "postcondition": "uAndSExpanded",
+      "timeoutMs": 5000,
+      "note": "step 8b: expand the Users & Security accordion group (no navigation). unless-guarded so it only ever OPENS \u2014 a shared-profile prior-open state skips the click rather than toggling it shut."
+    },
+    {
+      "op": "click",
+      "target": "suSysUsersLink",
+      "pressAt": 141.4,
+      "hoverMs": 360,
+      "postcondition": "onSystemUsers",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 8c: genuine System Users link click"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "sysUsersStable",
+      "predicate": "systemUsersReady",
+      "settleMs": 600,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "watch",
+      "key": "wPageSU8",
+      "from": 143.2,
+      "to": 159.4,
+      "predicate": "pageStillSystemUsers",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 8 guardrail proof: page stays on System Users (8+ column table) \u2014 + New Record never opened, no row created"
+    },
+    {
+      "op": "log-rects",
+      "at": 143.3,
+      "key": "suHeaders",
+      "targets": [
+        "suSSOTh",
+        "suLastLoginTh"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 143.5,
+      "key": "suNewRecordRect",
+      "target": "suNewRecord"
+    },
+    {
+      "op": "move",
+      "at": 144.6,
+      "to": {
+        "target": "suSSOTh",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: the SSO column header (p43 'S-S-O flags who signs in through the provider, plain yes or no chips')"
+    },
+    {
+      "op": "move",
+      "at": 148.9,
+      "to": {
+        "target": "suLastLoginTh",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 8: the LAST LOGIN column header (p44 'Last login shows when each of them last got in')"
+    },
+    {
+      "op": "move",
+      "at": 153.0,
+      "to": {
+        "target": "suNewRecord",
+        "offset": [
+          -46,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 8 guardrail: point NEAR + New Record, never on it. RESIDUAL: live list shows a real top row (MLADev, a system/dev account with a phone value); the cursor targets column headers only, never a data cell, and the right-column framing keeps the phone column off the tight frame. Demo data is approved unblurred (CLAUDE.md)."
+    },
+    {
+      "op": "move",
+      "at": 156.7,
+      "to": {
+        "point": [
+          1650,
+          300
+        ]
+      },
+      "note": "step 8: settle on the SSO/Last Login area (p45 'When the provider drops, the yes rows are your outage list')"
+    },
+    {
+      "op": "move",
+      "at": 160.6,
+      "to": {
+        "point": [
+          140,
+          731
+        ]
+      },
+      "note": "step 9: stage toward the Integrations sidebar link (p46 'Symptom three, the accounting export')"
+    },
+    {
+      "op": "click",
+      "target": "sidebarIntegrations",
+      "pressAt": 163.6,
+      "hoverMs": 120,
+      "postcondition": "onIntegrations",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 9a: 'Back in Integrations' (p47, cue starts 163.39) \u2014 genuine settings-sidebar Integrations link (in view at y731)"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "intgStable",
+      "predicate": "integrationsReady",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "click",
+      "target": "intgQbCard",
+      "pressAt": 165.8,
+      "hoverMs": 400,
+      "postcondition": "onQuickBooks",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 9b: open the accounting connector \u2014 QuickBooks Online (per the plan's PB-13 note). RESIDUAL: guide/shotlist held the accounting connector as TBD-parked; live probe (July 11) shows it renders exactly like Zoho (status chip \u26a0 Not Configured, Test Connection, Credentials + Token Expiry block), so it is shown live rather than as a parked card. No specific field VALUE is narrated."
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "qbStable",
+      "predicate": "quickbooksReady",
+      "settleMs": 600,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "watch",
+      "key": "wPageQB9",
+      "from": 168.0,
+      "to": 180.8,
+      "predicate": "pageStillQuickbooks",
+      "everyMs": 500,
+      "mustHold": true,
+      "note": "step 9 guardrail proof: page stays on the QuickBooks connector \u2014 its Test Connection is never clicked"
+    },
+    {
+      "op": "log-rect",
+      "at": 167.6,
+      "key": "qbChipRect",
+      "target": "qbStatusChip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rects",
+      "at": 167.8,
+      "key": "qbBtns",
+      "targets": [
+        "qbTestConn"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 168.0,
+      "key": "qbCredRect",
+      "target": "qbCredHdr"
+    },
+    {
+      "op": "move",
+      "at": 168.4,
+      "to": {
+        "target": "qbStatusChip",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "step 9: its status chip (p48 'status chip...')"
+    },
+    {
+      "op": "move",
+      "at": 169.7,
+      "to": {
+        "target": "qbTestConn",
+        "offset": [
+          30,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "step 9 guardrail: point NEAR the accounting connector's Test Connection, never on it (p48 'test button')"
+    },
+    {
+      "op": "move",
+      "at": 171.4,
+      "to": {
+        "target": "qbCredHdr",
+        "offset": [
+          90,
+          0
+        ]
+      },
+      "note": "step 9: its token block (p48 'token block'; p49 'Same read, same rules, same hands off')"
+    },
+    {
+      "op": "move",
+      "at": 174.6,
+      "to": {
+        "target": "qbCredHdr",
+        "offset": [
+          110,
+          4
+        ]
+      },
+      "note": "step 9: hold (p50 'if the connection is fine but entries land under the wrong codes, that's GL Code mapping')"
+    },
+    {
+      "op": "move",
+      "at": 178.4,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "step 9: park (p51 'Different lesson')"
+    },
+    {
+      "op": "move",
+      "at": 181.6,
+      "to": {
+        "point": [
+          900,
+          420
+        ]
+      },
+      "note": "step 10: hold on the connector (p52-p53 'One trap before you write anything up. Pages have bad minutes')"
+    },
+    {
+      "op": "move",
+      "at": 186.2,
+      "to": {
+        "point": [
+          720,
+          300
+        ]
+      },
+      "note": "step 10: inert gesture (p54-p55 'A list that will not load, or a stray fetch error... neither one proves an integration is down')"
+    },
+    {
+      "op": "move",
+      "at": 195.0,
+      "to": {
+        "target": "qbStatusChip",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "step 10: back to the status chip (p56 'Reload first. Then let the connector's status chip make the call')"
+    },
+    {
+      "op": "move",
+      "at": 198.2,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "step 11: hold (p57 'Now the escalation')"
+    },
+    {
+      "op": "move",
+      "at": 199.9,
+      "to": {
+        "target": "qbStatusChip",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "step 11: the status banner (p58 'Name the integration. Quote the status banner word for word')"
+    },
+    {
+      "op": "move",
+      "at": 201.6,
+      "to": {
+        "target": "qbTestConn",
+        "offset": [
+          30,
+          -40
+        ],
+        "outside": true
+      },
+      "note": "step 11 guardrail: point NEAR Test Connection again (p59 'Say whether an admin ran Test Connection and what it returned') \u2014 an admin runs it, never this demo"
+    },
+    {
+      "op": "move",
+      "at": 204.2,
+      "to": {
+        "point": [
+          900,
+          420
+        ]
+      },
+      "note": "step 11: (p60 'Give the failure window with timestamps')"
+    },
+    {
+      "op": "move",
+      "at": 208.2,
+      "to": {
+        "target": "qbCredHdr",
+        "offset": [
+          90,
+          0
+        ]
+      },
+      "note": "step 11 guardrail: beside the token/credentials block (p61 'keep every token, secret, and masked value out of it') \u2014 never read or copied"
+    },
+    {
+      "op": "move",
+      "at": 212.2,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "step 11: park before the recap navigation"
+    },
+    {
+      "op": "move",
+      "at": 216.2,
+      "to": {
+        "point": [
+          140,
+          731
+        ]
+      },
+      "note": "step 12: stage toward the Integrations link (p62 'That's the whole playbook')"
+    },
+    {
+      "op": "click",
+      "target": "sidebarIntegrations",
+      "pressAt": 217.4,
+      "hoverMs": 120,
+      "postcondition": "onIntegrations",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 12a: back to the Integrations hub for the recap"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "intgStable2",
+      "predicate": "integrationsReady",
+      "settleMs": 500,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "click",
+      "target": "intgZohoCard",
+      "pressAt": 219.4,
+      "hoverMs": 400,
+      "postcondition": "onZoho",
+      "timeoutMs": 9000,
+      "nav": true,
+      "note": "step 12b: reopen the Zoho Desk connector (p63 'Scope to one connector. Read the chip, then the token expiry')"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "zohoStable2",
+      "predicate": "zohoReady",
+      "settleMs": 700,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rect",
+      "at": 221.2,
+      "key": "zChipRect2",
+      "target": "zStatusChip",
+      "requireStableMs": 200
+    },
+    {
+      "op": "log-rect",
+      "at": 221.45,
+      "key": "zTokenExpiry2",
+      "target": "zTokenExpiry"
+    },
+    {
+      "op": "move",
+      "at": 221.9,
+      "to": {
+        "target": "zStatusChip",
+        "offset": [
+          70,
+          0
+        ]
+      },
+      "note": "step 12: recap sweep begins at the chip (p63 'Read the chip')"
+    },
+    {
+      "op": "move",
+      "at": 224.2,
+      "to": {
+        "target": "zTileConnection",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 12: down through the tiles (p64 'Locate Test Connection and leave it alone')"
+    },
+    {
+      "op": "move",
+      "at": 226.7,
+      "to": {
+        "target": "zTokenExpiry",
+        "offset": [
+          -230,
+          0
+        ]
+      },
+      "note": "step 12: to TOKEN EXPIRY (p63 'then the token expiry'; p65 'Confirm the surface the user feels, rule out a transient fetch error')"
+    },
+    {
+      "op": "move",
+      "at": 230.2,
+      "to": {
+        "target": "zTokenExpiry",
+        "offset": [
+          -210,
+          4
+        ]
+      },
+      "note": "step 12: linger (p66 'and route a ticket an admin can act on')"
+    },
+    {
+      "op": "move",
+      "at": 233.2,
+      "to": {
+        "point": [
+          1500,
+          300
+        ]
+      },
+      "note": "step 12: park clear for the completion card (p67 'Every screen stayed read-only, start to finish')"
+    },
+    {
+      "op": "assert",
+      "at": 234.2,
+      "predicate": "onZoho",
+      "note": "recap page identity held"
+    },
+    {
+      "op": "assert",
+      "at": 234.8,
+      "predicate": "zohoReady"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "intgBranch.intgZohoCard", "place": "right", "from": 1.7, "to": 19.6 },
-      { "n": 2, "anchor": "zHeader.zStatusChip", "place": "right", "from": 24.6, "to": 40.8 },
-      { "n": 3, "anchor": "zTilesG.zTileConnection", "place": "below-left", "from": 44.8, "to": 57.2 },
-      { "n": 4, "anchor": "zBtns.zTestConn", "place": "below-left", "from": 58.5, "to": 74.4 },
-      { "n": 5, "anchor": "zCredG.zTokenExpiry", "place": "right", "from": 80.4, "to": 97.4 },
-      { "n": 6, "anchor": "zGenSync.zEnabled", "place": "right", "from": 100.6, "to": 114.0 },
-      { "n": 7, "anchor": "hdCounts.hdCountsShowing", "place": "below-left", "from": 122.5, "to": 136.4 },
-      { "n": 8, "anchor": "suHeaders.suSSOTh", "place": "below-left", "from": 144.6, "to": 159.2 },
-      { "n": 9, "anchor": "qbChipRect", "place": "right", "from": 168.4, "to": 180.4 },
-      { "n": 10, "anchor": "qbCredRect", "place": "right", "from": 181.6, "to": 197.4 },
-      { "n": 11, "anchor": "qbChipRect", "place": "right", "from": 199.9, "to": 215.4 },
-      { "n": 12, "anchor": "zChipRect2", "place": "right", "from": 221.9, "to": 232.6 }
+      {
+        "n": 1,
+        "anchor": "intgBranch.intgZohoCard",
+        "place": "right",
+        "from": 1.7,
+        "to": 19.6
+      },
+      {
+        "n": 2,
+        "anchor": "zHeader.zStatusChip",
+        "place": "right",
+        "from": 24.6,
+        "to": 40.8
+      },
+      {
+        "n": 3,
+        "anchor": "zTilesG.zTileConnection",
+        "place": "below-left",
+        "from": 44.8,
+        "to": 57.2
+      },
+      {
+        "n": 4,
+        "anchor": "zBtns.zTestConn",
+        "place": "below-left",
+        "from": 58.5,
+        "to": 74.4
+      },
+      {
+        "n": 5,
+        "anchor": "zCredG.zTokenExpiry",
+        "place": "right",
+        "from": 80.4,
+        "to": 97.4
+      },
+      {
+        "n": 6,
+        "anchor": "zGenSync.zEnabled",
+        "place": "right",
+        "from": 100.6,
+        "to": 114.0
+      },
+      {
+        "n": 7,
+        "anchor": "hdCounts.hdCountsShowing",
+        "place": "below-left",
+        "from": 122.5,
+        "to": 136.4
+      },
+      {
+        "n": 8,
+        "anchor": "suHeaders.suSSOTh",
+        "place": "below-left",
+        "from": 144.6,
+        "to": 159.2
+      },
+      {
+        "n": 9,
+        "anchor": "qbChipRect",
+        "place": "right",
+        "from": 168.4,
+        "to": 180.4
+      },
+      {
+        "n": 10,
+        "anchor": "qbCredRect",
+        "place": "right",
+        "from": 181.6,
+        "to": 197.4
+      },
+      {
+        "n": 11,
+        "anchor": "qbChipRect",
+        "place": "right",
+        "from": 199.9,
+        "to": 215.4
+      },
+      {
+        "n": 12,
+        "anchor": "zChipRect2",
+        "place": "right",
+        "from": 221.9,
+        "to": 232.6
+      }
     ],
     "highlights": [
-      { "anchor": "intgBranch.intgZohoCard", "from": 1.7, "to": 3.5, "note": "p02: Zoho Desk branch (help desk tickets)" },
-      { "anchor": "intgBranch.intgAuthGroup", "from": 3.7, "to": 5.7, "note": "p03: Authentication & SSO branch (single sign-on lockouts)" },
-      { "anchor": "intgBranch.intgAcctGroup", "from": 5.9, "to": 8.2, "note": "p04: Accounting & Finance branch (export gaps)" },
-      { "anchor": "zHeader.zStatusChip", "from": 24.6, "to": 40.8, "note": "p09-p11: the ⚠ Not Configured status chip — the headline read" },
-      { "anchor": "zTilesG.zTileConnection", "from": 44.8, "to": 49.2, "note": "p13: Connection = Not set, matches the banner" },
-      { "anchor": "zBtns.zTestConn", "from": 58.5, "to": 74.4, "color": "#dc2626", "note": "step 4 guardrail: Test Connection is a live probe — located, never clicked" },
-      { "anchor": "zBtns.zEditConfig", "from": 64.0, "to": 74.4, "color": "#dc2626", "note": "step 4 guardrail: Edit Configuration opens the credential form — admin only, never clicked" },
-      { "anchor": "zCredG.zAccessToken", "from": 78.6, "to": 82.4, "note": "p25-p27: Access Token — Not set" },
-      { "anchor": "zCredG.zTokenExpiry", "from": 80.4, "to": 90.4, "note": "p25-p28: TOKEN EXPIRY — the lapsed-token tell" },
-      { "anchor": "zGenSync.zEnabled", "from": 100.6, "to": 103.4, "note": "p30-p31: ENABLED = Yes — nobody switched it off" },
-      { "anchor": "zGenSync.zSyncDir", "from": 101.9, "to": 105.2, "note": "p30: SYNC DIRECTION = both" },
-      { "anchor": "zInstrRect", "from": 106.1, "to": 114.0, "note": "p32: the Instructions tab — pointed at, never opened (body TBD parked)" },
-      { "anchor": "hdCounts.hdCountsShowing", "from": 122.5, "to": 130.0, "note": "p36: the dash count placeholders — ticket-surface evidence" },
-      { "anchor": "hdGoRect", "from": 128.6, "to": 134.0, "note": "p37: the Go to Zoho Desk Settings button — pointed at, never clicked" },
-      { "anchor": "suHeaders.suSSOTh", "from": 144.6, "to": 148.8, "note": "p43: the SSO column" },
-      { "anchor": "suHeaders.suLastLoginTh", "from": 148.9, "to": 156.0, "note": "p44: the LAST LOGIN column" },
-      { "anchor": "suNewRecordRect", "from": 153.0, "to": 159.2, "color": "#dc2626", "note": "step 8 guardrail: + New Record never clicked" },
-      { "anchor": "qbChipRect", "from": 168.4, "to": 171.2, "note": "p48: the accounting connector's status chip" },
-      { "anchor": "qbBtns.qbTestConn", "from": 169.7, "to": 178.0, "color": "#dc2626", "note": "step 9 guardrail: the accounting connector's Test Connection — never clicked" },
-      { "anchor": "qbCredRect", "from": 171.4, "to": 178.0, "note": "p48-p49: its token/credentials block" },
-      { "anchor": "qbBtns.qbTestConn", "from": 201.6, "to": 204.2, "color": "#dc2626", "note": "p59 guardrail: Test Connection is an admin action, quoted not run" },
-      { "anchor": "qbCredRect", "from": 208.2, "to": 214.0, "color": "#dc2626", "note": "p61 guardrail: no token, secret, or masked value into the ticket" },
-      { "anchor": "zChipRect2", "from": 221.9, "to": 224.2, "note": "p63 recap: read the chip" },
-      { "anchor": "zTokenExpiry2", "from": 226.7, "to": 232.2, "note": "p63/p65 recap: then the token expiry" }
+      {
+        "anchor": "intgBranch.intgZohoCard",
+        "from": 1.7,
+        "to": 3.5,
+        "note": "p02: Zoho Desk branch (help desk tickets)"
+      },
+      {
+        "anchor": "intgBranch.intgAuthGroup",
+        "from": 3.7,
+        "to": 5.7,
+        "note": "p03: Authentication & SSO branch (single sign-on lockouts)"
+      },
+      {
+        "anchor": "intgBranch.intgAcctGroup",
+        "from": 5.9,
+        "to": 8.2,
+        "note": "p04: Accounting & Finance branch (export gaps)"
+      },
+      {
+        "anchor": "zHeader.zStatusChip",
+        "from": 24.6,
+        "to": 40.8,
+        "note": "p09-p11: the \u26a0 Not Configured status chip \u2014 the headline read"
+      },
+      {
+        "anchor": "zTilesG.zTileConnection",
+        "from": 44.8,
+        "to": 49.2,
+        "note": "p13: Connection = Not set, matches the banner"
+      },
+      {
+        "anchor": "zBtns.zTestConn",
+        "from": 58.5,
+        "to": 74.4,
+        "color": "#dc2626",
+        "note": "step 4 guardrail: Test Connection is a live probe \u2014 located, never clicked"
+      },
+      {
+        "anchor": "zBtns.zEditConfig",
+        "from": 64.0,
+        "to": 74.4,
+        "color": "#dc2626",
+        "note": "step 4 guardrail: Edit Configuration opens the credential form \u2014 admin only, never clicked"
+      },
+      {
+        "anchor": "zCredG.zAccessToken",
+        "from": 78.6,
+        "to": 82.4,
+        "note": "p25-p27: Access Token \u2014 Not set"
+      },
+      {
+        "anchor": "zCredG.zTokenExpiry",
+        "from": 80.4,
+        "to": 90.4,
+        "note": "p25-p28: TOKEN EXPIRY \u2014 the lapsed-token tell"
+      },
+      {
+        "anchor": "zGenSync.zEnabled",
+        "from": 100.6,
+        "to": 103.4,
+        "note": "p30-p31: ENABLED = Yes \u2014 nobody switched it off"
+      },
+      {
+        "anchor": "zGenSync.zSyncDir",
+        "from": 101.9,
+        "to": 105.2,
+        "note": "p30: SYNC DIRECTION = both"
+      },
+      {
+        "anchor": "zInstrRect",
+        "from": 106.1,
+        "to": 114.0,
+        "note": "p32: the Instructions tab \u2014 pointed at, never opened (body TBD parked)"
+      },
+      {
+        "anchor": "hdCounts.hdCountsShowing",
+        "from": 122.5,
+        "to": 130.0,
+        "note": "p36: the dash count placeholders \u2014 ticket-surface evidence"
+      },
+      {
+        "anchor": "hdGoRect",
+        "from": 128.6,
+        "to": 134.0,
+        "note": "p37: the Go to Zoho Desk Settings button \u2014 pointed at, never clicked"
+      },
+      {
+        "anchor": "suHeaders.suSSOTh",
+        "from": 144.6,
+        "to": 148.8,
+        "note": "p43: the SSO column"
+      },
+      {
+        "anchor": "suHeaders.suLastLoginTh",
+        "from": 148.9,
+        "to": 156.0,
+        "note": "p44: the LAST LOGIN column"
+      },
+      {
+        "anchor": "suNewRecordRect",
+        "from": 153.0,
+        "to": 159.2,
+        "color": "#dc2626",
+        "note": "step 8 guardrail: + New Record never clicked"
+      },
+      {
+        "anchor": "qbChipRect",
+        "from": 168.4,
+        "to": 171.2,
+        "note": "p48: the accounting connector's status chip"
+      },
+      {
+        "anchor": "qbBtns.qbTestConn",
+        "from": 169.7,
+        "to": 178.0,
+        "color": "#dc2626",
+        "note": "step 9 guardrail: the accounting connector's Test Connection \u2014 never clicked"
+      },
+      {
+        "anchor": "qbCredRect",
+        "from": 171.4,
+        "to": 178.0,
+        "note": "p48-p49: its token/credentials block"
+      },
+      {
+        "anchor": "qbBtns.qbTestConn",
+        "from": 201.6,
+        "to": 204.2,
+        "color": "#dc2626",
+        "note": "p59 guardrail: Test Connection is an admin action, quoted not run"
+      },
+      {
+        "anchor": "qbCredRect",
+        "from": 208.2,
+        "to": 214.0,
+        "color": "#dc2626",
+        "note": "p61 guardrail: no token, secret, or masked value into the ticket"
+      },
+      {
+        "anchor": "zChipRect2",
+        "from": 221.9,
+        "to": 224.2,
+        "note": "p63 recap: read the chip"
+      },
+      {
+        "anchor": "zTokenExpiry2",
+        "from": 226.7,
+        "to": 232.2,
+        "note": "p63/p65 recap: then the token expiry"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 1.2, "z": 1.06, "cx": 660, "cy": 470, "ease": true, "note": "step 1: the three connector groups (three-way branch)" },
-      { "t": 20.2, "z": 1.06, "cx": 660, "cy": 470 },
-      { "t": 20.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change into the Zoho connector" },
-      { "t": 23.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 24.2, "z": 1.5, "cx": 700, "cy": 130, "ease": true, "note": "step 2: 150% close-up on the ⚠ Not Configured chip (shot list ② intent)" },
-      { "t": 40.8, "z": 1.5, "cx": 700, "cy": 130 },
-      { "t": 41.6, "z": 1.3, "cx": 960, "cy": 214, "ease": true, "note": "step 3: the four summary tiles" },
-      { "t": 57.2, "z": 1.3, "cx": 960, "cy": 214 },
-      { "t": 58.0, "z": 1.35, "cx": 1640, "cy": 150, "ease": true, "note": "step 4: the top-right Test Connection / Edit Configuration pair" },
-      { "t": 74.6, "z": 1.35, "cx": 1640, "cy": 150 },
-      { "t": 75.3, "z": 1.45, "cx": 700, "cy": 500, "ease": true, "note": "step 5: 145% close-up on the CREDENTIALS block and TOKEN EXPIRY" },
-      { "t": 97.6, "z": 1.45, "cx": 700, "cy": 500 },
-      { "t": 98.4, "z": 1.05, "cx": 700, "cy": 560, "ease": true, "note": "step 6: General / Sync fields and the Instructions tab (wide enough to hold the tab and the fields)" },
-      { "t": 114.2, "z": 1.05, "cx": 700, "cy": 560 },
-      { "t": 114.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Help Desk (Zoho) page change" },
-      { "t": 121.4, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 122.0, "z": 1.2, "cx": 960, "cy": 370, "ease": true, "note": "step 7: the dash counts and the not-connected card" },
-      { "t": 136.4, "z": 1.2, "cx": 960, "cy": 370 },
-      { "t": 137.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the System Users page change" },
-      { "t": 143.2, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 143.8, "z": 1.3, "cx": 1660, "cy": 300, "ease": true, "note": "step 8: the SSO and LAST LOGIN columns (right side; keeps the phone column off the tight frame)" },
-      { "t": 159.2, "z": 1.3, "cx": 1660, "cy": 300 },
-      { "t": 160.0, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the accounting-connector page change" },
-      { "t": 167.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 168.2, "z": 1.2, "cx": 800, "cy": 240, "ease": true, "note": "step 9: the QuickBooks connector header, Test Connection, and token block" },
-      { "t": 180.4, "z": 1.2, "cx": 800, "cy": 240 },
-      { "t": 181.2, "z": 1.1, "cx": 820, "cy": 300, "ease": true, "note": "step 10: hold on the connector while transient-error rule is framed" },
-      { "t": 197.4, "z": 1.1, "cx": 820, "cy": 300 },
-      { "t": 198.0, "z": 1.12, "cx": 800, "cy": 250, "ease": true, "note": "step 11: hold on the connector for the escalation checklist" },
-      { "t": 215.4, "z": 1.12, "cx": 800, "cy": 250 },
-      { "t": 216.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the recap page change back to the Zoho connector" },
-      { "t": 221.2, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 221.9, "z": 1.22, "cx": 620, "cy": 200, "ease": true, "note": "step 12: recap — start at the chip" },
-      { "t": 229.6, "z": 1.22, "cx": 620, "cy": 420, "ease": true, "note": "step 12: recap — sweep down to the credentials / token expiry" },
-      { "t": 233.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the completion card" },
-      { "t": 236.356, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.2,
+        "z": 1.06,
+        "cx": 660,
+        "cy": 470,
+        "ease": true,
+        "note": "step 1: the three connector groups (three-way branch)"
+      },
+      {
+        "t": 20.2,
+        "z": 1.06,
+        "cx": 660,
+        "cy": 470
+      },
+      {
+        "t": 20.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change into the Zoho connector"
+      },
+      {
+        "t": 23.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 24.2,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 130,
+        "ease": true,
+        "note": "step 2: 150% close-up on the \u26a0 Not Configured chip (shot list \u2461 intent)"
+      },
+      {
+        "t": 40.8,
+        "z": 1.5,
+        "cx": 700,
+        "cy": 130
+      },
+      {
+        "t": 41.6,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 214,
+        "ease": true,
+        "note": "step 3: the four summary tiles"
+      },
+      {
+        "t": 57.2,
+        "z": 1.3,
+        "cx": 960,
+        "cy": 214
+      },
+      {
+        "t": 58.0,
+        "z": 1.35,
+        "cx": 1640,
+        "cy": 150,
+        "ease": true,
+        "note": "step 4: the top-right Test Connection / Edit Configuration pair"
+      },
+      {
+        "t": 74.6,
+        "z": 1.35,
+        "cx": 1640,
+        "cy": 150
+      },
+      {
+        "t": 75.3,
+        "z": 1.45,
+        "cx": 700,
+        "cy": 500,
+        "ease": true,
+        "note": "step 5: 145% close-up on the CREDENTIALS block and TOKEN EXPIRY"
+      },
+      {
+        "t": 97.6,
+        "z": 1.45,
+        "cx": 700,
+        "cy": 500
+      },
+      {
+        "t": 98.4,
+        "z": 1.05,
+        "cx": 700,
+        "cy": 560,
+        "ease": true,
+        "note": "step 6: General / Sync fields and the Instructions tab (wide enough to hold the tab and the fields)"
+      },
+      {
+        "t": 114.2,
+        "z": 1.05,
+        "cx": 700,
+        "cy": 560
+      },
+      {
+        "t": 114.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Help Desk (Zoho) page change"
+      },
+      {
+        "t": 121.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 122.0,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 370,
+        "ease": true,
+        "note": "step 7: the dash counts and the not-connected card"
+      },
+      {
+        "t": 136.4,
+        "z": 1.2,
+        "cx": 960,
+        "cy": 370
+      },
+      {
+        "t": 137.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the System Users page change"
+      },
+      {
+        "t": 143.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 143.8,
+        "z": 1.3,
+        "cx": 1660,
+        "cy": 300,
+        "ease": true,
+        "note": "step 8: the SSO and LAST LOGIN columns (right side; keeps the phone column off the tight frame)"
+      },
+      {
+        "t": 159.2,
+        "z": 1.3,
+        "cx": 1660,
+        "cy": 300
+      },
+      {
+        "t": 160.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the accounting-connector page change"
+      },
+      {
+        "t": 167.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 168.2,
+        "z": 1.2,
+        "cx": 800,
+        "cy": 240,
+        "ease": true,
+        "note": "step 9: the QuickBooks connector header, Test Connection, and token block"
+      },
+      {
+        "t": 180.4,
+        "z": 1.2,
+        "cx": 800,
+        "cy": 240
+      },
+      {
+        "t": 181.2,
+        "z": 1.1,
+        "cx": 820,
+        "cy": 300,
+        "ease": true,
+        "note": "step 10: hold on the connector while transient-error rule is framed"
+      },
+      {
+        "t": 197.4,
+        "z": 1.1,
+        "cx": 820,
+        "cy": 300
+      },
+      {
+        "t": 198.0,
+        "z": 1.12,
+        "cx": 800,
+        "cy": 250,
+        "ease": true,
+        "note": "step 11: hold on the connector for the escalation checklist"
+      },
+      {
+        "t": 215.4,
+        "z": 1.12,
+        "cx": 800,
+        "cy": 250
+      },
+      {
+        "t": 216.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the recap page change back to the Zoho connector"
+      },
+      {
+        "t": 221.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 221.9,
+        "z": 1.22,
+        "cx": 620,
+        "cy": 200,
+        "ease": true,
+        "note": "step 12: recap \u2014 start at the chip"
+      },
+      {
+        "t": 229.6,
+        "z": 1.22,
+        "cx": 620,
+        "cy": 420,
+        "ease": true,
+        "note": "step 12: recap \u2014 sweep down to the credentials / token expiry"
+      },
+      {
+        "t": 233.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the completion card"
+      },
+      {
+        "t": 236.356,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": true,
     "completion": {
-      "text": "Integration Down — Complete",
+      "text": "Integration Down \u2014 Complete",
       "stamp": "Verified against demo.washcentral.com",
       "from": 234.6,
       "fadeOutFrames": 10

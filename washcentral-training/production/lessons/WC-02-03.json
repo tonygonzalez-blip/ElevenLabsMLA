@@ -98,8 +98,7 @@
       "js": "[...document.querySelectorAll('.a-panel.active .a-group-hdr')].find(e=>/phone & email/i.test((e.textContent||'').trim()))?.closest('.a-group')"
     },
     "sideCustomers": {
-      "text": "Customers",
-      "scope": "aside.sidebar a"
+      "selector": "a.menu-header[href=\"crm-customers.html\"]"
     },
     "kpiStrip": {
       "js": "(()=>{const m=document.querySelector('.a-metric');return m?m.parentElement:null})()"
@@ -125,7 +124,8 @@
     "onList": "location.pathname.endsWith('/crm-customers.html')",
     "pageReady": "document.readyState==='complete' && ![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
     "editFormReady": "location.pathname.endsWith('/crm-customer-edit.html') && document.readyState==='complete' && !!document.querySelector('.a-panel.active') && /PERSONAL & BUSINESS/i.test(document.querySelector('.a-panel.active').innerText)",
-    "sidebarExpandedNow": "!!document.querySelector('.app') && !document.querySelector('.app').classList.contains('sidebar-collapsed')"
+    "sidebarExpandedNow": "!!document.querySelector('.app') && !document.querySelector('.app').classList.contains('sidebar-collapsed')",
+    "detailSidebarReady": "location.pathname.endsWith('/crm-customer-detail.html') && [...document.querySelectorAll('a.menu-header')].some(a=>a.getAttribute('href')==='crm-customers.html' && a.getBoundingClientRect().width>0)"
   },
   "preflight": [
     {
@@ -195,6 +195,7 @@
     { "op": "watch", "key": "profileHold", "from": 89.0, "to": 100.5, "predicate": "onDetail", "everyMs": 600, "mustHold": true },
     { "op": "log-rect", "at": 89.2, "key": "bcDetailRect", "target": "breadcrumb", "requireStableMs": 260 },
     { "op": "move", "at": 89.6, "to": { "point": [1730, 320] }, "note": "park while p27-p29 explain Cancel vs Save; the form is genuinely closed, nothing saved" },
+    { "op": "wait-stable", "key": "detailSidebarReady", "predicate": "detailSidebarReady", "settleMs": 150, "timeoutMs": 9000, "note": "drift-fix: the customer-detail #sidebar-menu rebuilds asynchronously after the cancelTop nav and can lag under shared-proxy load; gate the step-8 sidebar Customers move on the link's presence so it resolves reliably (was intermittent [move] target not found: sideCustomers). Runs ~89.9s; the 9s window bridges to the 99.4 move without shifting any scheduled op." },
     { "op": "move", "at": 99.4, "to": { "target": "sideCustomers", "offset": [0, 0] }, "note": "step 8: to the CRM sidebar Customers link (cue p30)" },
     { "op": "click", "target": "sideCustomers", "pressAt": 100.95, "hoverMs": 380, "postcondition": "onList", "timeoutMs": 8000, "nav": true, "note": "step 8: genuine sidebar navigation back to the Customer List; press inside the rendered break (silencedetect 100.823-101.140)" },
     { "op": "wait-stable", "afterNav": true, "key": "listStable", "predicate": "pageReady", "settleMs": 600, "timeoutMs": 8000 },

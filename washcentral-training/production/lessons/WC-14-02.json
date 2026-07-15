@@ -74,7 +74,7 @@
   "predicates": {
     "notLoggedOut": "/\\/lms-(home|admin)/.test(location.pathname)&&!/login\\.html$/.test(location.pathname)",
     "onHome": "location.pathname.endsWith('/lms-home.html')&&document.querySelectorAll('.menu-group-lbl').length>=2&&document.querySelectorAll('aside.sidebar a.menu-header').length>=8",
-    "homeLoaded": "location.pathname.endsWith('/lms-home.html')&&document.querySelectorAll('aside.sidebar a.menu-header').length>=8&&/WASHCENTRAL Academy/i.test(document.body.textContent||'')&&document.readyState==='complete'",
+    "homeLoaded": "location.pathname.endsWith('/lms-home.html')&&document.querySelectorAll('aside.sidebar a.menu-header').length>=8&&/Academy/i.test(document.body.textContent||'')&&document.readyState==='complete'",
     "onAdminDash": "location.pathname.endsWith('/lms-admin.html')&&!!document.querySelector('.adm-kpi-bar')",
     "dashLoaded": "location.pathname.endsWith('/lms-admin.html')&&document.querySelectorAll('.adm-kpi').length>=5&&/Total Enrollments/i.test(document.body.textContent||'')&&/across 25 users/i.test(document.body.textContent||'')&&document.readyState==='complete'",
     "dashIntact": "location.pathname.endsWith('/lms-admin.html')&&/All 19 courses across 25 users/i.test(document.body.textContent||'')&&/186/.test(document.body.textContent||'')&&/Getting Started with WashCentral/.test(document.body.textContent||'')",

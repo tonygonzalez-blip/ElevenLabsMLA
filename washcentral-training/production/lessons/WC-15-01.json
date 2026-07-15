@@ -1,11 +1,11 @@
 {
   "lesson": "WC-15-01",
-  "title": "Migration: Switching (WashAssist → WashCentral)",
-  "note": "DOC-SOURCED (title-card / document-over-narration) lesson. Every fact is from the Migration FAQ, carried verbatim by the captions; NONE of it is observable in the demo tenant. Live probing (CDP 9224, own tab, 2026-07-11) confirmed there is NO migration/switch UI to walk: migration.html and admin-portal.html 404; settings-integrations.html and settings-portals.html render but contain zero migration/WashAssist/Admin-Portal content and zero switch/migrate/activate/cutover/confirm buttons. Because the production engine requires a real styled+built app page as the capture backdrop, this lesson runs over a neutral, honest backdrop — the WashCentral Academy dashboard (lms-home.html), which is literally the training surface and shows no client/financial/credential data — while the locked narration plays as captions and numbered step callouts index the 9 FAQ steps. It is a pure browse-only piece: NOTHING is ever clicked (there is no Switch/Migrate/Activate/Confirm control on screen to click or even guardrail), the cursor only rests in the neutral right-margin gutter, and two mustHold watches prove the page never navigates or mutates for the whole take. See RESIDUALS in the build report.",
+  "title": "Migration: Switching (WashAssist \u2192 WashCentral)",
+  "note": "DOC-SOURCED (title-card / document-over-narration) lesson. Every fact is from the Migration FAQ, carried verbatim by the captions; NONE of it is observable in the demo tenant. Live probing (CDP 9224, own tab, 2026-07-11) confirmed there is NO migration/switch UI to walk: migration.html and admin-portal.html 404; settings-integrations.html and settings-portals.html render but contain zero migration/WashAssist/Admin-Portal content and zero switch/migrate/activate/cutover/confirm buttons. Because the production engine requires a real styled+built app page as the capture backdrop, this lesson runs over a neutral, honest backdrop \u2014 the Reports catalog (reports.html), which lists report names only and shows NO client/financial/credential data (probe-verified 2026-07-14: no dollar figures render) \u2014 while the locked narration plays as captions and numbered step callouts index the 9 FAQ steps. (Backdrop changed 2026-07-14 from lms-home.html: the redesign now gates the entire Academy/LMS surface \u2014 lms-home and every lms-* sub-page \u2014 behind a mandatory 'Who's learning?' persona-picker modal that cannot be dismissed off-camera; reports.html is the equivalent neutral training-adjacent surface with no persona gate. The narration names ZERO backdrop element, so the swap keeps every spoken word faithful.) It is a pure browse-only piece: NOTHING is ever clicked (there is no Switch/Migrate/Activate/Confirm control on screen to click or even guardrail), the cursor only rests in the neutral right-margin gutter, and two mustHold watches prove the page never navigates or mutates for the whole take. See RESIDUALS in the build report.",
   "audioMaster": "training/module15-migration/WC-15-01-full-narration-v1.0.mp3",
   "audioDurationS": 132.911,
   "tailS": 0.4,
-  "startUrl": "https://demo.washcentral.com/lms-home.html",
+  "startUrl": "https://demo.washcentral.com/reports.html",
   "viewport": [
     1920,
     1080
@@ -17,15 +17,15 @@
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "onAcademy": "location.pathname.endsWith('/lms-home.html')",
-    "pageIntact": "(()=>{const bc=document.querySelector('.breadcrumb-bar strong');const cards=[...document.querySelectorAll('[class*=\"card\"]')].filter(e=>{const b=e.getBoundingClientRect();return b.width>300&&b.height>150&&b.top>300;});return location.pathname.endsWith('/lms-home.html')&&!!bc&&/My Dashboard/.test(bc.textContent||'')&&cards.length>=5&&![...document.querySelectorAll('*')].some(e=>/still there/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)})()"
+    "onAcademy": "location.pathname.endsWith('/reports.html')",
+    "pageIntact": "(()=>{const bc=document.querySelector('.breadcrumb-bar');const cards=[...document.querySelectorAll('[class*=\"card\"]')].filter(e=>e.getBoundingClientRect().width>0);const personaModal=[...document.querySelectorAll('*')].some(e=>/who.?s learning/i.test([...e.childNodes].filter(n=>n.nodeType===3).map(n=>n.textContent).join(''))&&e.getBoundingClientRect().width>0);return location.pathname.endsWith('/reports.html')&&!!bc&&/Reports/.test(bc.textContent||'')&&cards.length>=1&&!personaModal})()"
   },
   "ops": [
     {
       "op": "assert",
       "at": -1.5,
       "predicate": "onAcademy",
-      "note": "start page identity before capture: the Academy dashboard (lms-home.html) is the neutral document-over backdrop; there is no migration UI in the tenant, so nothing here is a migration screen"
+      "note": "start page identity before capture: the Reports catalog (reports.html) is the neutral document-over backdrop; there is no migration UI in the tenant, so nothing here is a migration screen"
     },
     {
       "op": "assert",
@@ -37,7 +37,7 @@
       "op": "assert",
       "at": -0.6,
       "predicate": "pageIntact",
-      "note": "backdrop intact: on lms-home, 'My Dashboard' breadcrumb, >=5 course cards, no idle dialog"
+      "note": "backdrop intact: on reports.html, 'Reports' breadcrumb, >=1 visible card, no persona-picker modal"
     },
     {
       "op": "watch",
@@ -47,7 +47,7 @@
       "predicate": "onAcademy",
       "everyMs": 1000,
       "mustHold": true,
-      "note": "read-only proof: nothing is ever clicked across all 9 steps — the backdrop never navigates. There is no Switch/Migrate/Activate/Confirm/Cutover control anywhere on screen (verified live: no migration UI exists in the tenant), so none is pointed at or guardrailed; the captions carry the FAQ facts."
+      "note": "read-only proof: nothing is ever clicked across all 9 steps \u2014 the backdrop never navigates. There is no Switch/Migrate/Activate/Confirm/Cutover control anywhere on screen (verified live: no migration UI exists in the tenant), so none is pointed at or guardrailed; the captions carry the FAQ facts."
     },
     {
       "op": "watch",
@@ -57,12 +57,17 @@
       "predicate": "pageIntact",
       "everyMs": 3000,
       "mustHold": true,
-      "note": "mutation guardrail: lms-home holds its 'My Dashboard' identity and course-card set the whole lesson — proves nothing was created, switched, redirected, or changed on the tenant"
+      "note": "mutation guardrail: reports.html holds its 'Reports' identity and card set the whole lesson \u2014 proves nothing was created, switched, redirected, or changed on the tenant"
     },
     {
       "op": "move",
       "at": 0.3,
-      "to": { "point": [ 1890, 540 ] },
+      "to": {
+        "point": [
+          1890,
+          540
+        ]
+      },
       "note": "settle in the neutral right-margin gutter (1890,540; probe-verified cp-shell background, non-interactive, right of the leaderboard column at x>1869), clear of the step badge (top-left) and the caption card (bottom-center). An ABSOLUTE point is used deliberately: the breadcrumb x-origin shifts with sidebar state (probed center 840-950), so an element-relative landing is not reliably neutral, whereas this fixed gutter point always is. The engine's default pointer origin (960,1079, bottom-center) keeps the first logged sample well off screen-center. The cursor never gestures at content."
     },
     {
@@ -71,98 +76,207 @@
       "key": "crumbBarRect",
       "target": "crumbBar",
       "requireStableMs": 200,
-      "note": "neutral page-identity chrome ('Academy › My Dashboard'); the 9 step callouts anchor here as a step index, not as a claim about the element"
+      "note": "neutral page-identity chrome ('Reports'); the 9 step callouts anchor here as a step index, not as a claim about the element"
     },
     {
       "op": "move",
       "at": 12,
-      "to": { "point": [ 1888, 600 ] },
+      "to": {
+        "point": [
+          1888,
+          600
+        ]
+      },
       "note": "keep-alive drift in the neutral right gutter (session-active + non-dead cursor); step 1 caption running"
     },
     {
       "op": "move",
       "at": 26,
-      "to": { "point": [ 1892, 500 ] },
+      "to": {
+        "point": [
+          1892,
+          500
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 2 caption"
     },
     {
       "op": "move",
       "at": 40,
-      "to": { "point": [ 1889, 680 ] },
+      "to": {
+        "point": [
+          1889,
+          680
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 3 caption"
     },
     {
       "op": "move",
       "at": 54,
-      "to": { "point": [ 1890, 540 ] },
+      "to": {
+        "point": [
+          1890,
+          540
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 4/5 caption"
     },
     {
       "op": "move",
       "at": 68,
-      "to": { "point": [ 1888, 640 ] },
+      "to": {
+        "point": [
+          1888,
+          640
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 5 caption"
     },
     {
       "op": "move",
       "at": 82,
-      "to": { "point": [ 1891, 500 ] },
+      "to": {
+        "point": [
+          1891,
+          500
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 7 caption"
     },
     {
       "op": "move",
       "at": 96,
-      "to": { "point": [ 1889, 700 ] },
+      "to": {
+        "point": [
+          1889,
+          700
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 8 caption"
     },
     {
       "op": "move",
       "at": 110,
-      "to": { "point": [ 1890, 560 ] },
+      "to": {
+        "point": [
+          1890,
+          560
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 8 caption"
     },
     {
       "op": "move",
       "at": 124,
-      "to": { "point": [ 1888, 620 ] },
+      "to": {
+        "point": [
+          1888,
+          620
+        ]
+      },
       "note": "keep-alive drift (right gutter); step 9 recap caption"
     },
     {
       "op": "assert",
       "at": 132.5,
       "predicate": "onAcademy",
-      "note": "end state: still on the Academy backdrop, never navigated"
+      "note": "end state: still on the Reports backdrop, never navigated"
     },
     {
       "op": "assert",
       "at": 132.7,
       "predicate": "pageIntact",
-      "note": "end state: backdrop intact — nothing on the tenant was created, switched, or changed"
+      "note": "end state: backdrop intact \u2014 nothing on the tenant was created, switched, or changed"
     }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "crumbBarRect", "place": "below-left", "from": 0.6, "to": 14.6 },
-      { "n": 2, "anchor": "crumbBarRect", "place": "below-left", "from": 14.9, "to": 27.2 },
-      { "n": 3, "anchor": "crumbBarRect", "place": "below-left", "from": 27.6, "to": 44.2 },
-      { "n": 4, "anchor": "crumbBarRect", "place": "below-left", "from": 44.6, "to": 54.6 },
-      { "n": 5, "anchor": "crumbBarRect", "place": "below-left", "from": 54.9, "to": 71.3 },
-      { "n": 6, "anchor": "crumbBarRect", "place": "below-left", "from": 71.7, "to": 81.1 },
-      { "n": 7, "anchor": "crumbBarRect", "place": "below-left", "from": 81.5, "to": 96.7 },
-      { "n": 8, "anchor": "crumbBarRect", "place": "below-left", "from": 97.1, "to": 112.9 },
-      { "n": 9, "anchor": "crumbBarRect", "place": "below-left", "from": 113.3, "to": 130.6 }
+      {
+        "n": 1,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 0.6,
+        "to": 14.6
+      },
+      {
+        "n": 2,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 14.9,
+        "to": 27.2
+      },
+      {
+        "n": 3,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 27.6,
+        "to": 44.2
+      },
+      {
+        "n": 4,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 44.6,
+        "to": 54.6
+      },
+      {
+        "n": 5,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 54.9,
+        "to": 71.3
+      },
+      {
+        "n": 6,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 71.7,
+        "to": 81.1
+      },
+      {
+        "n": 7,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 81.5,
+        "to": 96.7
+      },
+      {
+        "n": 8,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 97.1,
+        "to": 112.9
+      },
+      {
+        "n": 9,
+        "anchor": "crumbBarRect",
+        "place": "below-left",
+        "from": 113.3,
+        "to": 130.6
+      }
     ],
     "highlights": [],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 2.2, "z": 1, "cx": 960, "cy": 540 },
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
       {
         "t": 118,
         "z": 1.07,
         "cx": 948,
         "cy": 512,
         "ease": true,
-        "note": "a single, barely-perceptible slow push over the body of the lesson — document-over feel, never a tour; no close-up because the backdrop carries no migration detail to zoom into"
+        "note": "a single, barely-perceptible slow push over the body of the lesson \u2014 document-over feel, never a tour; no close-up because the backdrop carries no migration detail to zoom into"
       },
       {
         "t": 130.6,
@@ -172,12 +286,17 @@
         "ease": true,
         "note": "settle wide for the completion card"
       },
-      { "t": 132.911, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 132.911,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": false,
     "completion": {
-      "text": "Migration: Switching — Complete",
-      "stamp": "Source: Migration FAQ · Verified against demo.washcentral.com",
+      "text": "Migration: Switching \u2014 Complete",
+      "stamp": "Source: Migration FAQ \u00b7 Verified against demo.washcentral.com",
       "from": 131.1,
       "fadeOutFrames": 10
     },

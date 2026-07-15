@@ -4,14 +4,14 @@
   "audioMaster": "training/module12-settings/WC-12-05-full-narration-v1.0.mp3",
   "audioDurationS": 288.131,
   "tailS": 0.4,
-  "startUrl": "https://demo.washcentral.com/settings.html",
+  "startUrl": "https://demo.washcentral.com/settings-account-info.html",
   "viewport": [
     1920,
     1080
   ],
   "targets": {
     "railToggle": {
-      "selector": ".wc-rail-panel-toggle"
+      "selector": "#wc-rail-panel-toggle"
     },
     "hwHeader": {
       "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/hardware/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
@@ -169,11 +169,13 @@
     },
     "rowExpressTunnel": {
       "js": "[...document.querySelectorAll('tbody tr')].find(tr=>tr.getBoundingClientRect().width>0&&((tr.querySelector('td')||{}).textContent||'').trim()==='Express Tunnel')"
+    },
+    "firstOpenGroup": {
+      "js": "[...document.querySelectorAll('.menu-group.open')].map(g=>g.querySelector('button.menu-header')).find(h=>h&&h.getBoundingClientRect().width>0)"
     }
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
     "onTerminals": "location.pathname.endsWith('/settings-hardware-terminals.html')",
     "onScreenLayout": "location.pathname.endsWith('/settings-screen-layout.html')",
     "onSystemTypes": "location.pathname.endsWith('/settings-system-types.html')",
@@ -184,11 +186,11 @@
     "onGreeterButtons": "location.pathname.endsWith('/settings-greeter-buttons.html')",
     "onMacros": "location.pathname.endsWith('/settings-macros.html')",
     "onKioskFlows": "location.pathname.endsWith('/settings-kiosk-flows.html')",
-    "sidebarExpanded": "(()=>{const s=document.querySelector('aside.sidebar');return !!s&&s.getBoundingClientRect().width>120})()",
-    "hwSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Hardware \\/ Terminals|Screen Layout|System Types|Lube Buttons|Lube Checklists)$/.test((e.textContent||'').trim())).length>=5",
-    "hwSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Hardware \\/ Terminals|Screen Layout|System Types|Lube Buttons|Lube Checklists)$/.test((e.textContent||'').trim())).length===0",
-    "uiSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Button Groups|Cashier Buttons|Greeter Buttons|Macros|Kiosk Screen Flows)$/.test((e.textContent||'').trim())).length>=5",
-    "uiSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Button Groups|Cashier Buttons|Greeter Buttons|Macros|Kiosk Screen Flows)$/.test((e.textContent||'').trim())).length===0",
+    "sidebarExpanded": "[...document.querySelectorAll('button.menu-header')].some(e=>e.getBoundingClientRect().width>120)",
+    "hwSubmenuOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/hardware/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
+    "hwSubmenuClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/hardware/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
+    "uiSubmenuOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/ui\\s*&\\s*display/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
+    "uiSubmenuClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/ui\\s*&\\s*display/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
     "hasCard": "[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/(List|Screen Flows)$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
     "notLoginPage": "!location.pathname.endsWith('/login.html')",
     "terminalsReady": "location.pathname.endsWith('/settings-hardware-terminals.html')&&[...document.querySelectorAll('th')].some(e=>/^terminal$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^last seen$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Terminals List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
@@ -200,13 +202,15 @@
     "cashierButtonsReady": "location.pathname.endsWith('/settings-cashier-buttons.html')&&[...document.querySelectorAll('th')].some(e=>/^button #$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^button$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Cashier Buttons List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
     "greeterButtonsReady": "location.pathname.endsWith('/settings-greeter-buttons.html')&&[...document.querySelectorAll('th')].some(e=>/^button #$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^button$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Greeter Buttons List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
     "macrosReady": "location.pathname.endsWith('/settings-macros.html')&&[...document.querySelectorAll('th')].some(e=>/^barcode$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^show on handheld$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('div')].some(e=>e.children.length===0&&/^Macros List$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)",
-    "kioskFlowsReady": "location.pathname.endsWith('/settings-kiosk-flows.html')&&[...document.querySelectorAll('th')].some(e=>/^flow name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Flows/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')"
+    "kioskFlowsReady": "location.pathname.endsWith('/settings-kiosk-flows.html')&&[...document.querySelectorAll('th')].some(e=>/^flow name$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Flows/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.innerText||'')",
+    "onSettingsStart": "location.pathname.endsWith('/settings-account-info.html')",
+    "allGroupsClosed": "[...document.querySelectorAll('.menu-group.open')].length===0"
   },
   "ops": [
     {
       "op": "assert",
       "at": -1.8,
-      "predicate": "onSettingsHome",
+      "predicate": "onSettingsStart",
       "note": "start page staged before capture"
     },
     {
@@ -2614,14 +2618,6 @@
   ],
   "preflight": [
     {
-      "op": "wait-stable",
-      "key": "presettle",
-      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
-      "settleMs": 2000,
-      "timeoutMs": 8000,
-      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
-    },
-    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -2629,27 +2625,147 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: stage the shared persisted sidebar preference expanded before the take"
+      "note": "off-camera: genuine press on #wc-rail-panel-toggle removes .app.sidebar-collapsed so the settings menu panel is expanded; skipped when already expanded"
     },
     {
       "op": "click",
-      "target": "hwHeader",
+      "target": "firstOpenGroup",
       "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "hwSubmenuClosed",
-      "postcondition": "hwSubmenuClosed",
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: genuine toggle closes the persisted Hardware group (washcentral-settings-menu-v1) so step 1 expands it on camera"
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
     },
     {
       "op": "click",
-      "target": "uiHeader",
+      "target": "firstOpenGroup",
       "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "uiSubmenuClosed",
-      "postcondition": "uiSubmenuClosed",
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: genuine toggle closes the persisted UI & Display group so the step-7 reveal is genuine"
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "allGroupsClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
     }
   ]
 }

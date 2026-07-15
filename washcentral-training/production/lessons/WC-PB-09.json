@@ -5,14 +5,17 @@
   "audioDurationS": 167.158,
   "tailS": 0.4,
   "startUrl": "https://demo.washcentral.com/command-center.html",
-  "viewport": [1920, 1080],
+  "viewport": [
+    1920,
+    1080
+  ],
   "output": "WC-PB-09-reports-wrong-v1.1",
   "neverClick": [
     "logout",
     "log out now",
     "log ?out",
     "run report",
-    "▶ run report",
+    "\u25b6 run report",
     "schedule report",
     "scheduled reports",
     "\\brun\\b",
@@ -37,55 +40,145 @@
     "ask shyne"
   ],
   "targets": {
-    "railReports": { "js": "[...document.querySelectorAll('button.wc-rail-item')].find(e=>e.getAttribute('title')==='Reports'&&e.getBoundingClientRect().width>0)" },
-    "railSettings": { "js": "[...document.querySelectorAll('button.wc-rail-item')].find(e=>e.getAttribute('title')==='Settings'&&e.getBoundingClientRect().width>0)" },
-
-    "viewsLabel": { "js": "[...document.querySelectorAll('.rsb-section-label')].find(e=>/^Views$/i.test((e.textContent||'').trim()))", "textRect": true },
-    "catLabel": { "js": "[...document.querySelectorAll('.rsb-section-label')].find(e=>/^Categories$/i.test((e.textContent||'').trim()))", "textRect": true },
-    "viewAll": { "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^All Reports/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)" },
-    "viewFav": { "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Favorites/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)" },
-    "viewSched": { "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Scheduled Reports/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)" },
-    "viewAnalytics": { "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Advanced Analytics/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)" },
-    "viewBuilder": { "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Report Builder/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)" },
-
-    "thName": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Report Name$/i.test((e.textContent||'').trim()))" },
-    "thCategory": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Category$/i.test((e.textContent||'').trim()))" },
-    "thType": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Type$/i.test((e.textContent||'').trim()))" },
-    "thLastRun": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Last Run$/i.test((e.textContent||'').trim()))" },
-    "hubSubtitle": { "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Browse and run all standard and custom reports$/.test((e.textContent||'').trim()))", "textRect": true },
-    "firstReportLink": { "js": "document.querySelector('.rpt-name-link')" },
-    "schedRow": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[1]&&/Daily, Period, and Shift Financial 2\\.0/.test(c[1].textContent||'')})" },
-    "schedChip": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&/Daily, Period, and Shift Financial 2\\.0/.test(c[1].textContent||'')});return tr?[...tr.querySelectorAll('td')].find(td=>/^Scheduled$/.test((td.textContent||'').trim())):null})()" },
-    "schedLastRun": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&/Daily, Period, and Shift Financial 2\\.0/.test(c[1].textContent||'')});return tr?[...tr.querySelectorAll('td')].find(td=>/03-25-2026/.test((td.textContent||'').trim())):null})()" },
-    "hubSchedBtn": { "js": "[...document.querySelectorAll('button.a-btn-secondary')].find(e=>/^Scheduled Reports$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>1000)" },
-    "rowSchedule": { "js": "document.querySelector('.rb-btn-sched')" },
-
-    "rvFilterHdr": { "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Report Filters$/i.test((e.textContent||'').trim()))", "textRect": true },
-    "rvMoreFilters": { "js": "document.querySelector('.rpt-more-filters-btn')", "textRect": true },
-    "rvAllLoc": { "js": "document.querySelector('.rpt-loc-btn')", "textRect": true },
-    "rvDateFrom": { "js": "[...document.querySelectorAll('.dp-wrap')].find(e=>/From/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)" },
-    "rvDateTo": { "js": "[...document.querySelectorAll('.rpt-hdr-date-field')].find(e=>/^To$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" },
-    "rvClose": { "js": "document.querySelector('.f-close-btn')" },
-    "rvRun": { "js": "document.querySelector('.f-run-btn')" },
-    "rvKpi": { "js": "document.querySelector('.rpt-kpi-card')" },
-    "rvTable": { "js": "[...document.querySelectorAll('table')].find(e=>e.getBoundingClientRect().y>380&&e.getBoundingClientRect().width>0)" },
-
-    "setAutomationHdr": { "js": "[...document.querySelectorAll('aside.sidebar .menu-header')].find(e=>/^Automation/i.test((e.textContent||'').trim()))" },
-    "setTaskLink": { "selector": "aside.sidebar a[href=\"settings-task-scheduler.html\"]" },
-
-    "tsMetricTotal": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Tasks/i.test(e.textContent||''))" },
-    "tsMetricActive": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active$/i.test((e.textContent||'').trim()))" },
-    "tsMetricRunning": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Running Now/i.test(e.textContent||''))" },
-    "tsMetricFailed": { "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed/i.test(e.textContent||''))" },
-    "tsListHdr": { "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Task Scheduler List$/i.test((e.textContent||'').trim()))", "textRect": true },
-    "tsThName": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Task Name$/i.test((e.textContent||'').trim()))" },
-    "tsThSchedule": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Schedule$/i.test((e.textContent||'').trim()))" },
-    "tsThLastRun": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Last Run$/i.test((e.textContent||'').trim()))" },
-    "tsThNextRun": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Next Run$/i.test((e.textContent||'').trim()))" },
-    "tsThStatus": { "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim()))" },
-    "tsDailyRow": { "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[0]&&/^Daily Report Email$/.test((c[0].textContent||'').trim())})" },
-    "tsDailyStatus": { "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[0]&&/^Daily Report Email$/.test((c[0].textContent||'').trim())});return tr?[...tr.querySelectorAll('td')].pop():null})()" },
-    "tsNewRecord": { "js": "[...document.querySelectorAll('button,a')].find(e=>/^\\+\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)" }
+    "railReports": {
+      "js": "[...document.querySelectorAll('button.wc-rail-item')].find(e=>e.getAttribute('title')==='Reports'&&e.getBoundingClientRect().width>0)"
+    },
+    "railSettings": {
+      "js": "[...document.querySelectorAll('button.wc-rail-item')].find(e=>e.getAttribute('title')==='Settings'&&e.getBoundingClientRect().width>0)"
+    },
+    "viewsLabel": {
+      "js": "[...document.querySelectorAll('.rsb-section-label')].find(e=>/^Views$/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "catLabel": {
+      "js": "[...document.querySelectorAll('.rsb-section-label')].find(e=>/^Categories$/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "viewAll": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^All Reports/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)"
+    },
+    "viewFav": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Favorites/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)"
+    },
+    "viewSched": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Scheduled Reports/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)"
+    },
+    "viewAnalytics": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Advanced Analytics/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)"
+    },
+    "viewBuilder": {
+      "js": "[...document.querySelectorAll('.rsb-item')].find(e=>/^Report Builder/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x<310)"
+    },
+    "thName": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Report Name$/i.test((e.textContent||'').trim()))"
+    },
+    "thCategory": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Category$/i.test((e.textContent||'').trim()))"
+    },
+    "thType": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Type$/i.test((e.textContent||'').trim()))"
+    },
+    "thLastRun": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Last Run$/i.test((e.textContent||'').trim()))"
+    },
+    "hubSubtitle": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Browse and run all standard and custom reports$/.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "firstReportLink": {
+      "js": "document.querySelector('.rpt-name-link')"
+    },
+    "schedRow": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[1]&&/Daily, Period, and Shift Financial 2\\.0/.test(c[1].textContent||'')})"
+    },
+    "schedChip": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&/Daily, Period, and Shift Financial 2\\.0/.test(c[1].textContent||'')});return tr?[...tr.querySelectorAll('td')].find(td=>/^Scheduled$/.test((td.textContent||'').trim())):null})()"
+    },
+    "schedLastRun": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[1]&&/Daily, Period, and Shift Financial 2\\.0/.test(c[1].textContent||'')});return tr?[...tr.querySelectorAll('td')].find(td=>/03-25-2026/.test((td.textContent||'').trim())):null})()"
+    },
+    "hubSchedBtn": {
+      "js": "[...document.querySelectorAll('button.a-btn-secondary')].find(e=>/^Scheduled Reports$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().x>1000)"
+    },
+    "rowSchedule": {
+      "js": "document.querySelector('.rb-btn-sched')"
+    },
+    "rvFilterHdr": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Report Filters$/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "rvMoreFilters": {
+      "js": "document.querySelector('.rpt-more-filters-btn')",
+      "textRect": true
+    },
+    "rvAllLoc": {
+      "js": "document.querySelector('.rpt-loc-btn')",
+      "textRect": true
+    },
+    "rvDateFrom": {
+      "js": "[...document.querySelectorAll('.dp-wrap')].find(e=>/From/.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
+    },
+    "rvDateTo": {
+      "js": "[...document.querySelectorAll('.rpt-hdr-date-field')].find(e=>/^To$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "rvClose": {
+      "js": "document.querySelector('.f-close-btn')"
+    },
+    "rvRun": {
+      "js": "document.querySelector('.f-run-btn')"
+    },
+    "rvKpi": {
+      "js": "document.querySelector('.rpt-kpi-card')"
+    },
+    "rvTable": {
+      "js": "[...document.querySelectorAll('table')].find(e=>e.getBoundingClientRect().y>380&&e.getBoundingClientRect().width>0)"
+    },
+    "setAutomationHdr": {
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/^Automation/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "setTaskLink": {
+      "js": "[...document.querySelectorAll('a[href=\"settings-task-scheduler.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
+    },
+    "tsMetricTotal": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Total Tasks/i.test(e.textContent||''))"
+    },
+    "tsMetricActive": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Active$/i.test((e.textContent||'').trim()))"
+    },
+    "tsMetricRunning": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Running Now/i.test(e.textContent||''))"
+    },
+    "tsMetricFailed": {
+      "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed/i.test(e.textContent||''))"
+    },
+    "tsListHdr": {
+      "js": "[...document.querySelectorAll('*')].find(e=>e.children.length===0&&/^Task Scheduler List$/i.test((e.textContent||'').trim()))",
+      "textRect": true
+    },
+    "tsThName": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Task Name$/i.test((e.textContent||'').trim()))"
+    },
+    "tsThSchedule": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Schedule$/i.test((e.textContent||'').trim()))"
+    },
+    "tsThLastRun": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Last Run$/i.test((e.textContent||'').trim()))"
+    },
+    "tsThNextRun": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Next Run$/i.test((e.textContent||'').trim()))"
+    },
+    "tsThStatus": {
+      "js": "[...document.querySelectorAll('table thead th')].find(e=>/^Status$/i.test((e.textContent||'').trim()))"
+    },
+    "tsDailyRow": {
+      "js": "[...document.querySelectorAll('table tbody tr')].find(tr=>{const c=tr.querySelectorAll('td');return c[0]&&/^Daily Report Email$/.test((c[0].textContent||'').trim())})"
+    },
+    "tsDailyStatus": {
+      "js": "(()=>{const tr=[...document.querySelectorAll('table tbody tr')].find(t=>{const c=t.querySelectorAll('td');return c[0]&&/^Daily Report Email$/.test((c[0].textContent||'').trim())});return tr?[...tr.querySelectorAll('td')].pop():null})()"
+    },
+    "tsNewRecord": {
+      "js": "[...document.querySelectorAll('button,a')].find(e=>/^\\+\\s*New Record$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    }
   },
   "predicates": {
     "onCommandCenter": "location.pathname.endsWith('/command-center.html')",
@@ -97,8 +190,8 @@
     "viewerReady": "location.pathname.endsWith('/report-view.html')&&!!document.querySelector('.f-run-btn')&&!!document.querySelector('.rpt-loc-btn')&&!/couldn.t load|failed to fetch|not found/i.test(document.body.innerText.slice(0,300))",
     "viewerStable": "location.pathname.endsWith('/report-view.html')&&!!document.querySelector('.f-run-btn')&&!!document.querySelector('.rpt-loc-btn')",
     "onSettings": "location.pathname.endsWith('/settings.html')",
-    "settingsReady": "location.pathname.endsWith('/settings.html')&&document.querySelectorAll('aside.sidebar .menu-header').length>=5",
-    "automationOpen": "(()=>{const h=[...document.querySelectorAll('aside.sidebar .menu-header')].find(e=>/^Automation/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')&&!!document.querySelector('aside.sidebar a[href=\"settings-task-scheduler.html\"]')&&document.querySelector('aside.sidebar a[href=\"settings-task-scheduler.html\"]').getBoundingClientRect().width>0})()",
+    "settingsReady": "location.pathname.endsWith('/settings.html')&&document.querySelectorAll('.sw-cat').length>5",
+    "automationOpen": "[...document.querySelectorAll('a[href=\"settings-task-scheduler.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "onTaskScheduler": "location.pathname.endsWith('/settings-task-scheduler.html')",
     "taskSchedulerReady": "location.pathname.endsWith('/settings-task-scheduler.html')&&document.querySelectorAll('.a-metric').length>=4&&[...document.querySelectorAll('table tbody tr')].some(tr=>/Daily Report Email/.test(tr.textContent||''))&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
     "taskListStable": "location.pathname.endsWith('/settings-task-scheduler.html')&&document.querySelectorAll('table tbody tr').length===3&&[...document.querySelectorAll('table tbody tr')].some(tr=>/Daily Report Email/.test(tr.textContent||''))"
@@ -110,185 +203,1498 @@
     }
   ],
   "ops": [
-    { "op": "assert", "at": -1.5, "predicate": "onCommandCenter", "note": "start page identity before capture (startUrl command-center.html; step 1 opens Reports from the rail)" },
-    { "op": "assert", "at": -0.9, "predicate": "ccReady", "note": "loaded: Command Center complete, Reports rail item present" },
-
-    { "op": "pointer-enter", "at": 0.2, "from": [700, 1010], "to": { "target": "railReports", "offset": [120, 6], "outside": true }, "note": "step 1 (p01 'Open Reports from the left rail', 0.0-1.96): approach the Reports rail item from lower-right" },
-    { "op": "click", "target": "railReports", "pressAt": 1.35, "hoverMs": 400, "postcondition": "onReports", "timeoutMs": 8000, "nav": true, "note": "step 1: genuine rail Reports click into the reports hub; press lands inside p01" },
-    { "op": "wait-stable", "afterNav": true, "key": "reportsStable", "predicate": "reportsReady", "settleMs": 600, "timeoutMs": 10000 },
-    { "op": "log-rect", "at": 2.75, "key": "viewsLabelRect", "target": "viewsLabel" },
-    { "op": "log-rects", "at": 2.85, "key": "views", "targets": ["viewAll", "viewFav", "viewSched", "viewAnalytics", "viewBuilder"] },
-    { "op": "log-rects", "at": 2.95, "key": "repThs", "targets": ["thName", "thCategory", "thType", "thLastRun"] },
-    { "op": "log-rect", "at": 2.97, "key": "hubSubtitleRect", "target": "hubSubtitle" },
-    { "op": "log-rects", "at": 2.99, "key": "schedBits", "targets": ["schedChip", "schedLastRun"] },
-    { "op": "watch", "key": "reportsHeld1", "from": 3.4, "to": 30.4, "predicate": "reportsListStable", "everyMs": 2500, "mustHold": true, "note": "read-only proof for steps 1-2: still on the reports hub with its list present; nothing is run, scheduled, exported, or opened while the hub is framed" },
-    { "op": "move", "at": 3.05, "to": { "target": "viewsLabel", "offset": [30, 8] }, "note": "step 1 (p02 'lives in this one hub', 3.02): settle on the VIEWS panel" },
-    { "op": "move", "at": 7.95, "to": { "target": "viewAll", "offset": [40, 0] }, "note": "step 1 (p03 'A hundred seventy-three in all', 7.95): All Reports (173)" },
-    { "op": "move", "at": 8.7, "to": { "target": "viewFav", "offset": [40, 0] }, "note": "step 1 (p03 'five favorites'): Favorites (5)" },
-    { "op": "move", "at": 9.4, "to": { "target": "viewSched", "offset": [40, 0] }, "note": "step 1 (p03 'three on a schedule'): Scheduled Reports view. RESIDUAL R1: the live VIEWS item shows no numeric (3) badge and the count is not rendered; the '3' is grounded in the All Reports Type=Scheduled rows, not a view badge" },
-    { "op": "move", "at": 10.79, "to": { "target": "thType", "offset": [0, -22], "outside": true }, "note": "step 1 (p04 'Each row carries a type tag', 10.79): the Type column header" },
-    { "op": "move", "at": 12.3, "to": { "target": "thLastRun", "offset": [0, -22], "outside": true }, "note": "step 1 (p04 'and the last time it ran'): the Last Run column header" },
-    { "op": "move", "at": 13.4, "to": { "target": "thType", "offset": [0, 40] }, "note": "step 1 tail: rest over the Type/Scheduled chips (RESIDUAL R6: live Report List carries a 6th Actions column with per-row Schedule/Customize links not named in the guide's five-column list; those action links are never clicked, listed in neverClick)" },
-
-    { "op": "move", "at": 14.6, "to": { "point": [820, 430] }, "note": "step 2 (p05 'Name the symptom before you touch a filter', 14.08-16.67): settle center on the hub, no navigation" },
-    { "op": "move", "at": 17.5, "to": { "target": "firstReportLink", "offset": [-20, 0], "outside": true }, "note": "step 2 (p06 'Wrong numbers or an empty report is a filter question', 17.50): gesture toward the report list — the wrong/empty trail opens a report" },
-    { "op": "move", "at": 21.4, "to": { "target": "viewSched", "offset": [42, 0] }, "note": "step 2 (p07 'a scheduled report that never landed is a scheduler question', 21.40): gesture toward the Scheduled Reports view — the never-arrived trail" },
-    { "op": "move", "at": 25.68, "to": { "point": [560, 340] }, "note": "step 2 (p08 'Decide which ticket you have', 25.68): small inert gesture between the two trails" },
-    { "op": "move", "at": 28.6, "to": { "point": [820, 470] }, "note": "step 2 tail: settle before opening the first trail" },
-
-    { "op": "move", "at": 30.88, "to": { "target": "firstReportLink", "offset": [-16, -22], "outside": true }, "note": "step 3 (p09 'Take the wrong-or-empty trail first. Open the report from the list', 30.88-33.06): approach the first report name link" },
-    { "op": "click", "target": "firstReportLink", "pressAt": 32.55, "hoverMs": 420, "postcondition": "onViewer", "timeoutMs": 8000, "nav": true, "note": "step 3: genuine report-name click opens the Report Viewer (report-view.html?name=...). RESIDUAL R2: the guide/shotlist flagged the Report Viewer as TBD-parked (not in the July 9 corpus); it renders fully live from the report-name link's own href parameter, so it is shown live and truthfully rather than as a parked card" },
-    { "op": "wait-stable", "afterNav": true, "key": "viewerStableWait", "predicate": "viewerReady", "settleMs": 700, "timeoutMs": 10000 },
-    { "op": "log-rect", "at": 33.85, "key": "rvFilterHdrRect", "target": "rvFilterHdr" },
-    { "op": "log-rects", "at": 33.95, "key": "filterCtrls", "targets": ["rvMoreFilters", "rvAllLoc", "rvDateFrom", "rvDateTo"] },
-    { "op": "log-rect", "at": 34.05, "key": "rvRunRect", "target": "rvRun" },
-    { "op": "watch", "key": "viewerHeld", "from": 34.5, "to": 78.0, "predicate": "viewerStable", "everyMs": 2500, "mustHold": true, "note": "read-only proof for steps 3-5: still on the Report Viewer, Run Report never fired a navigation/reload; the report is read, never re-run or exported" },
-    { "op": "move", "at": 34.1, "to": { "target": "rvFilterHdr", "offset": [30, 0] }, "note": "step 3 (p10 'It loads in the Report Viewer, and the filter bar across the top is the whole story', 34.10): the REPORT FILTERS bar" },
-    { "op": "move", "at": 36.01, "to": { "target": "rvMoreFilters", "offset": [0, 0] }, "note": "step 3 (p11 'More filters', 36.01): the More Filters control" },
-    { "op": "move", "at": 38.5, "to": { "target": "rvAllLoc", "offset": [0, 0] }, "note": "step 3 (p11 'a location selector'): the All Locations selector" },
-    { "op": "move", "at": 41.0, "to": { "target": "rvDateFrom", "offset": [0, 0] }, "note": "step 3 (p11 'a date range'): the Date Range From/To" },
-    { "op": "move", "at": 43.3, "to": { "target": "rvRun", "offset": [-58, 44], "outside": true }, "note": "step 3 (p11 'and the run control'): hover NEAR the Run Report control, never on it (red STOP ring)" },
-
-    { "op": "move", "at": 46.13, "to": { "target": "rvAllLoc", "offset": [0, 28], "outside": true }, "note": "step 4 (p12 'Now read the scope', 46.13): settle below the scope controls" },
-    { "op": "move", "at": 47.83, "to": { "target": "rvFilterHdr", "offset": [30, 0] }, "note": "step 4 (p13 'Most wrong-numbers tickets die here', 47.83)" },
-    { "op": "move", "at": 50.63, "to": { "target": "rvAllLoc", "offset": [0, 0] }, "note": "step 4 (p14 'The selector sat on one site when the manager meant the network', 50.63): All Locations" },
-    { "op": "move", "at": 54.2, "to": { "target": "rvDateFrom", "offset": [0, 0] }, "note": "step 4 (p15 'or the dates missed the week in question', 54.20): Date Range From" },
-    { "op": "move", "at": 55.1, "to": { "target": "rvDateTo", "offset": [0, 0] }, "note": "step 4 (p15): Date Range To" },
-    { "op": "move", "at": 56.57, "to": { "target": "rvRun", "offset": [-58, 44], "outside": true }, "note": "step 4 (p16 'Fix both, run it again, compare', 56.57): GUARDRAIL / RESIDUAL R3 — the locked narration says 'run it again', but Run Report re-executes a report query on the shared live tenant, which is not pure navigation. Safety is browse-and-point only, so Run Report is NOT clicked; the cursor holds beside it under the red STOP ring" },
-    { "op": "move", "at": 59.46, "to": { "point": [900, 300] }, "note": "step 4 (p17 'A report is only wrong once its filters are right', 59.46): settle clear" },
-
-    { "op": "move", "at": 62.56, "to": { "point": [960, 300] }, "note": "step 5 (p18 'One caution before you file anything', 62.56)" },
-    { "op": "log-rect", "at": 63.0, "key": "rvKpiRect", "target": "rvKpi" },
-    { "op": "log-rect", "at": 63.1, "key": "rvTableRect", "target": "rvTable" },
-    { "op": "move", "at": 65.11, "to": { "target": "rvKpi", "offset": [40, 0] }, "note": "step 5 (p19 'a KPI tile and the table beneath it often disagree', 65.11): the KPI tile row (concept only, no specific mismatched figure is read)" },
-    { "op": "move", "at": 68.2, "to": { "target": "rvTable", "offset": [300, 24] }, "note": "step 5 (p19 tail): the table beneath the KPI tiles" },
-    { "op": "move", "at": 71.71, "to": { "point": [960, 420] }, "note": "step 5 (p20 'That's a known demo artifact, not a platform bug', 71.71)" },
-    { "op": "move", "at": 74.77, "to": { "point": [960, 300] }, "note": "step 5 (p21 'Reproduce the numbers in production before you open a ticket', 74.77)" },
-
-    { "op": "move", "at": 78.14, "to": { "target": "rvClose", "offset": [-30, 0], "outside": true }, "note": "step 6 (p22 'Now the report that never arrived. Open the Scheduled Reports view', 78.14-80.26): approach the Close Report control" },
-    { "op": "click", "target": "rvClose", "pressAt": 79.0, "hoverMs": 400, "postcondition": "onReports", "timeoutMs": 8000, "nav": true, "note": "step 6: Close Report is a genuine navigation back to the reports hub (verified href reports.html); returns to the hub for the scheduled-reports check" },
-    { "op": "wait-stable", "afterNav": true, "key": "reportsBackStable", "predicate": "reportsReady", "settleMs": 600, "timeoutMs": 10000 },
-    { "op": "log-rects", "at": 80.4, "key": "schedRefs", "targets": ["viewSched", "schedChip", "schedLastRun"] },
-    { "op": "watch", "key": "reportsHeld2", "from": 80.8, "to": 92.9, "predicate": "reportsListStable", "everyMs": 2500, "mustHold": true, "note": "read-only proof for step 6: still on the reports hub, list intact; the Scheduled Reports view is pointed at, never clicked" },
-    { "op": "move", "at": 81.18, "to": { "target": "viewSched", "offset": [42, 0] }, "note": "step 6 (p23 'Three reports run on a schedule here', 81.18): point at the Scheduled Reports VIEWS item. RESIDUAL R4: clicking this view live yields an empty 'No scheduled reports yet' state (0 rows), contradicting the narrated three; per the shotlist's authorized fallback the step is shown on the All Reports list via the real Type=Scheduled rows, and the view item is pointed at, not clicked" },
-    { "op": "move", "at": 83.64, "to": { "target": "schedChip", "offset": [0, 0] }, "note": "step 6 (p24 'Confirm the missing one is actually among them', 83.64): the Type=Scheduled chip on the Daily, Period, and Shift Financial 2.0 row" },
-    { "op": "move", "at": 84.9, "to": { "target": "schedLastRun", "offset": [0, 0] }, "note": "step 6 (p24 'and read its last run'): the real Last Run 03-25-2026 9:14 AM on that scheduled row" },
-    { "op": "move", "at": 85.87, "to": { "point": [860, 520] }, "note": "step 6 (p25 'Not scheduled at all? There's your answer', 85.87): settle" },
-
-    { "op": "move", "at": 93.2, "to": { "target": "railSettings", "offset": [110, 0], "outside": true }, "note": "step 7 (p26 'Cross-check the job that sends it. Settings, then Automation, then Task Scheduler', 93.20-94.89): approach the Settings rail item" },
-    { "op": "click", "target": "railSettings", "pressAt": 93.75, "hoverMs": 300, "postcondition": "onSettings", "timeoutMs": 8000, "nav": true, "note": "step 7a: genuine rail Settings click" },
-    { "op": "wait-stable", "afterNav": true, "key": "settingsStable", "predicate": "settingsReady", "settleMs": 350, "timeoutMs": 9000 },
-    { "op": "click", "target": "setAutomationHdr", "pressAt": 94.65, "hoverMs": 240, "unless": "automationOpen", "postcondition": "automationOpen", "timeoutMs": 5000, "note": "step 7b: genuine expand of the Automation settings group (reveals Task Scheduler); no navigation. unless-guarded so it only ever OPENS — the group loads collapsed (verified), but a shared-profile prior state could leave it open, in which case the click is skipped rather than toggling it closed" },
-    { "op": "click", "target": "setTaskLink", "pressAt": 95.35, "hoverMs": 280, "postcondition": "onTaskScheduler", "timeoutMs": 8000, "nav": true, "note": "step 7c: genuine click of the Task Scheduler link into settings-task-scheduler.html; lands as p27 begins" },
-    { "op": "wait-stable", "afterNav": true, "key": "tsStable", "predicate": "taskSchedulerReady", "settleMs": 500, "timeoutMs": 10000 },
-    { "op": "log-rects", "at": 96.15, "key": "tsMetrics", "targets": ["tsMetricTotal", "tsMetricActive", "tsMetricRunning", "tsMetricFailed"] },
-    { "op": "watch", "key": "tsHeld", "from": 96.5, "to": 148.9, "predicate": "taskListStable", "everyMs": 2500, "mustHold": true, "note": "read-only proof for steps 7-9: the Task Scheduler list stays exactly three rows with the Daily Report Email job present; no task is created (+ New Record never clicked) or edited, and the page never navigates away" },
-    { "op": "move", "at": 96.3, "to": { "target": "tsMetricTotal", "offset": [0, 0] }, "note": "step 7 (p27 'Eighteen tasks', 95.94-99.64): 18 Total Tasks" },
-    { "op": "move", "at": 97.4, "to": { "target": "tsMetricActive", "offset": [0, 0] }, "note": "step 7 (p27 'sixteen active'): 16 Active" },
-    { "op": "move", "at": 98.4, "to": { "target": "tsMetricRunning", "offset": [0, 0] }, "note": "step 7 (p27 'two running now'): 2 Running Now" },
-    { "op": "move", "at": 100.52, "to": { "target": "tsMetricFailed", "offset": [0, 0] }, "note": "step 7 (p28 'And the tile that matters reads failed, zero', 100.52): 0 Failed (camera 150%)" },
-    { "op": "move", "at": 104.95, "to": { "target": "tsMetricFailed", "offset": [0, 30], "outside": true }, "note": "step 7 (p29 'Nothing errored overnight', 104.95): hold below the Failed tile" },
-    { "op": "move", "at": 108.38, "to": { "target": "tsMetricFailed", "offset": [34, 0] }, "note": "step 7 (p30 'When that count isn't zero, you have your lead', 108.38)" },
-    { "op": "move", "at": 111.6, "to": { "point": [820, 320] }, "note": "step 7 tail: ease down toward the task list" },
-
-    { "op": "log-rects", "at": 113.5, "key": "tsThs", "targets": ["tsThName", "tsThSchedule", "tsThLastRun", "tsThNextRun", "tsThStatus"] },
-    { "op": "log-rect", "at": 113.55, "key": "tsDailyRowRect", "target": "tsDailyRow" },
-    { "op": "log-rect", "at": 113.6, "key": "tsNewRecordRect", "target": "tsNewRecord" },
-    { "op": "move", "at": 113.68, "to": { "target": "tsDailyRow", "offset": [40, 0] }, "note": "step 8 (p31 'Find the Daily Report Email row', 113.68): the Task Name cell" },
-    { "op": "move", "at": 116.15, "to": { "target": "tsDailyRow", "offset": [360, 0] }, "note": "step 8 (p32 'Read across it', 116.15): begin the row sweep at the Schedule cell" },
-    { "op": "move", "at": 121.11, "to": { "target": "tsDailyRow", "offset": [360, 0] }, "note": "step 8 (p33 'Scheduled daily at six', 121.11): Schedule = Daily 6:00 AM" },
-    { "op": "move", "at": 122.1, "to": { "target": "tsDailyRow", "offset": [655, 0] }, "note": "step 8 (p33 'Last ran today at six'): Last Run = Today 6:00 AM" },
-    { "op": "move", "at": 123.16, "to": { "target": "tsDailyRow", "offset": [960, 0] }, "note": "step 8 (p34 'Next run, tomorrow at six', 123.16): Next Run = Tomorrow 6:00 AM" },
-    { "op": "move", "at": 124.1, "to": { "target": "tsDailyRow", "offset": [1320, 0] }, "note": "step 8 (p34 'Status, active'): Status = Active" },
-    { "op": "move", "at": 124.87, "to": { "target": "tsDailyRow", "offset": [655, 0] }, "note": "step 8 (p35 'A missing report usually shows here as a stale last run', 124.87): Last Run" },
-    { "op": "move", "at": 127.6, "to": { "target": "tsDailyRow", "offset": [1320, 0] }, "note": "step 8 (p35 'or a status that isn't active'): Status" },
-    { "op": "move", "at": 131.07, "to": { "target": "tsNewRecord", "offset": [-58, 44], "outside": true }, "note": "step 8 (p36 'Read it, never edit it', 131.07): GUARDRAIL — hover beside + New Record, never on it (red STOP ring); no task is created" },
-
-    { "op": "move", "at": 133.36, "to": { "point": [860, 660] }, "note": "step 9 (p37 'Now build the ticket', 133.36): settle on Task Scheduler" },
-    { "op": "move", "at": 135.09, "to": { "target": "tsDailyRow", "offset": [40, 0] }, "note": "step 9 (p38 'Name the report, the location scope, and the date range you ran it with', 135.09): the report job name" },
-    { "op": "move", "at": 140.05, "to": { "target": "tsThLastRun", "offset": [0, 0] }, "note": "step 9 (p39 'add the job's last run', 140.05): Last Run column" },
-    { "op": "move", "at": 141.6, "to": { "target": "tsThNextRun", "offset": [0, 0] }, "note": "step 9 (p39 'next run'): Next Run column" },
-    { "op": "move", "at": 143.0, "to": { "target": "tsThStatus", "offset": [0, 0] }, "note": "step 9 (p39 'and status'): Status column" },
-    { "op": "move", "at": 144.99, "to": { "point": [860, 660] }, "note": "step 9 (p40 'Attach a screenshot. Leave the demo-tenant number quirks out of it', 144.99): settle" },
-
-    { "op": "move", "at": 149.44, "to": { "target": "railReports", "offset": [110, 0], "outside": true }, "note": "step 10 (p41 'That's the playbook', 149.44-150.78): approach the Reports rail for the recap" },
-    { "op": "click", "target": "railReports", "pressAt": 150.1, "hoverMs": 300, "postcondition": "onReports", "timeoutMs": 8000, "nav": true, "note": "step 10: genuine rail Reports click back to the hub for the recap" },
-    { "op": "wait-stable", "afterNav": true, "key": "reportsRecapStable", "predicate": "reportsReady", "settleMs": 500, "timeoutMs": 10000 },
-    { "op": "log-rects", "at": 151.0, "key": "recapViews", "targets": ["viewAll", "viewSched"] },
-    { "op": "log-rect", "at": 151.05, "key": "recapViewsLabelRect", "target": "viewsLabel" },
-    { "op": "watch", "key": "reportsHeld3", "from": 151.4, "to": 163.6, "predicate": "reportsListStable", "everyMs": 2500, "mustHold": true, "note": "read-only proof for the recap: still on the reports hub, nothing run or changed to the very end" },
-    { "op": "move", "at": 151.12, "to": { "target": "viewsLabel", "offset": [30, 8] }, "note": "step 10 (p42 'Name the symptom', 151.12): the VIEWS panel" },
-    { "op": "move", "at": 152.87, "to": { "target": "viewAll", "offset": [42, 0] }, "note": "step 10 (p43 'Wrong or empty means the filter bar', 152.87): the report list, where you open a report into the filter bar" },
-    { "op": "move", "at": 155.85, "to": { "target": "viewSched", "offset": [42, 0] }, "note": "step 10 (p44 'Never arrived means Scheduled Reports and the Task Scheduler', 155.85): the Scheduled Reports view" },
-    { "op": "move", "at": 160.23, "to": { "point": [860, 430] }, "note": "step 10 (p45 'Rule out the demo artifact, escalate with the filters and the run times', 160.23)" },
-    { "op": "move", "at": 162.41, "to": { "point": [1500, 950] }, "note": "step 10 (p46 'and change nothing along the way', 162.41): final park clear of content and captions" },
-    { "op": "assert", "at": 164.2, "predicate": "onReports", "note": "end state: still on the reports hub, unchanged" },
-    { "op": "assert", "at": 164.8, "predicate": "reportsReady", "note": "hub intact: VIEWS and list present — nothing run, scheduled, exported, edited, or created across the whole lesson" }
+    {
+      "op": "assert",
+      "at": -1.5,
+      "predicate": "onCommandCenter",
+      "note": "start page identity before capture (startUrl command-center.html; step 1 opens Reports from the rail)"
+    },
+    {
+      "op": "assert",
+      "at": -0.9,
+      "predicate": "ccReady",
+      "note": "loaded: Command Center complete, Reports rail item present"
+    },
+    {
+      "op": "pointer-enter",
+      "at": 0.2,
+      "from": [
+        700,
+        1010
+      ],
+      "to": {
+        "target": "railReports",
+        "offset": [
+          120,
+          6
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p01 'Open Reports from the left rail', 0.0-1.96): approach the Reports rail item from lower-right"
+    },
+    {
+      "op": "click",
+      "target": "railReports",
+      "pressAt": 1.35,
+      "hoverMs": 400,
+      "postcondition": "onReports",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 1: genuine rail Reports click into the reports hub; press lands inside p01"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "reportsStable",
+      "predicate": "reportsReady",
+      "settleMs": 600,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rect",
+      "at": 2.75,
+      "key": "viewsLabelRect",
+      "target": "viewsLabel"
+    },
+    {
+      "op": "log-rects",
+      "at": 2.85,
+      "key": "views",
+      "targets": [
+        "viewAll",
+        "viewFav",
+        "viewSched",
+        "viewAnalytics",
+        "viewBuilder"
+      ]
+    },
+    {
+      "op": "log-rects",
+      "at": 2.95,
+      "key": "repThs",
+      "targets": [
+        "thName",
+        "thCategory",
+        "thType",
+        "thLastRun"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 2.97,
+      "key": "hubSubtitleRect",
+      "target": "hubSubtitle"
+    },
+    {
+      "op": "log-rects",
+      "at": 2.99,
+      "key": "schedBits",
+      "targets": [
+        "schedChip",
+        "schedLastRun"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "reportsHeld1",
+      "from": 3.4,
+      "to": 30.4,
+      "predicate": "reportsListStable",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "read-only proof for steps 1-2: still on the reports hub with its list present; nothing is run, scheduled, exported, or opened while the hub is framed"
+    },
+    {
+      "op": "move",
+      "at": 3.05,
+      "to": {
+        "target": "viewsLabel",
+        "offset": [
+          30,
+          8
+        ]
+      },
+      "note": "step 1 (p02 'lives in this one hub', 3.02): settle on the VIEWS panel"
+    },
+    {
+      "op": "move",
+      "at": 7.95,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 1 (p03 'A hundred seventy-three in all', 7.95): All Reports (173)"
+    },
+    {
+      "op": "move",
+      "at": 8.7,
+      "to": {
+        "target": "viewFav",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 1 (p03 'five favorites'): Favorites (5)"
+    },
+    {
+      "op": "move",
+      "at": 9.4,
+      "to": {
+        "target": "viewSched",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 1 (p03 'three on a schedule'): Scheduled Reports view. RESIDUAL R1: the live VIEWS item shows no numeric (3) badge and the count is not rendered; the '3' is grounded in the All Reports Type=Scheduled rows, not a view badge"
+    },
+    {
+      "op": "move",
+      "at": 10.79,
+      "to": {
+        "target": "thType",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04 'Each row carries a type tag', 10.79): the Type column header"
+    },
+    {
+      "op": "move",
+      "at": 12.3,
+      "to": {
+        "target": "thLastRun",
+        "offset": [
+          0,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 1 (p04 'and the last time it ran'): the Last Run column header"
+    },
+    {
+      "op": "move",
+      "at": 13.4,
+      "to": {
+        "target": "thType",
+        "offset": [
+          0,
+          40
+        ]
+      },
+      "note": "step 1 tail: rest over the Type/Scheduled chips (RESIDUAL R6: live Report List carries a 6th Actions column with per-row Schedule/Customize links not named in the guide's five-column list; those action links are never clicked, listed in neverClick)"
+    },
+    {
+      "op": "move",
+      "at": 14.6,
+      "to": {
+        "point": [
+          820,
+          430
+        ]
+      },
+      "note": "step 2 (p05 'Name the symptom before you touch a filter', 14.08-16.67): settle center on the hub, no navigation"
+    },
+    {
+      "op": "move",
+      "at": 17.5,
+      "to": {
+        "target": "firstReportLink",
+        "offset": [
+          -20,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 2 (p06 'Wrong numbers or an empty report is a filter question', 17.50): gesture toward the report list \u2014 the wrong/empty trail opens a report"
+    },
+    {
+      "op": "move",
+      "at": 21.4,
+      "to": {
+        "target": "viewSched",
+        "offset": [
+          42,
+          0
+        ]
+      },
+      "note": "step 2 (p07 'a scheduled report that never landed is a scheduler question', 21.40): gesture toward the Scheduled Reports view \u2014 the never-arrived trail"
+    },
+    {
+      "op": "move",
+      "at": 25.68,
+      "to": {
+        "point": [
+          560,
+          340
+        ]
+      },
+      "note": "step 2 (p08 'Decide which ticket you have', 25.68): small inert gesture between the two trails"
+    },
+    {
+      "op": "move",
+      "at": 28.6,
+      "to": {
+        "point": [
+          820,
+          470
+        ]
+      },
+      "note": "step 2 tail: settle before opening the first trail"
+    },
+    {
+      "op": "move",
+      "at": 30.88,
+      "to": {
+        "target": "firstReportLink",
+        "offset": [
+          -16,
+          -22
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p09 'Take the wrong-or-empty trail first. Open the report from the list', 30.88-33.06): approach the first report name link"
+    },
+    {
+      "op": "click",
+      "target": "firstReportLink",
+      "pressAt": 32.55,
+      "hoverMs": 420,
+      "postcondition": "onViewer",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 3: genuine report-name click opens the Report Viewer (report-view.html?name=...). RESIDUAL R2: the guide/shotlist flagged the Report Viewer as TBD-parked (not in the July 9 corpus); it renders fully live from the report-name link's own href parameter, so it is shown live and truthfully rather than as a parked card"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "viewerStableWait",
+      "predicate": "viewerReady",
+      "settleMs": 700,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rect",
+      "at": 33.85,
+      "key": "rvFilterHdrRect",
+      "target": "rvFilterHdr"
+    },
+    {
+      "op": "log-rects",
+      "at": 33.95,
+      "key": "filterCtrls",
+      "targets": [
+        "rvMoreFilters",
+        "rvAllLoc",
+        "rvDateFrom",
+        "rvDateTo"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 34.05,
+      "key": "rvRunRect",
+      "target": "rvRun"
+    },
+    {
+      "op": "watch",
+      "key": "viewerHeld",
+      "from": 34.5,
+      "to": 78.0,
+      "predicate": "viewerStable",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "read-only proof for steps 3-5: still on the Report Viewer, Run Report never fired a navigation/reload; the report is read, never re-run or exported"
+    },
+    {
+      "op": "move",
+      "at": 34.1,
+      "to": {
+        "target": "rvFilterHdr",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 3 (p10 'It loads in the Report Viewer, and the filter bar across the top is the whole story', 34.10): the REPORT FILTERS bar"
+    },
+    {
+      "op": "move",
+      "at": 36.01,
+      "to": {
+        "target": "rvMoreFilters",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p11 'More filters', 36.01): the More Filters control"
+    },
+    {
+      "op": "move",
+      "at": 38.5,
+      "to": {
+        "target": "rvAllLoc",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p11 'a location selector'): the All Locations selector"
+    },
+    {
+      "op": "move",
+      "at": 41.0,
+      "to": {
+        "target": "rvDateFrom",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 3 (p11 'a date range'): the Date Range From/To"
+    },
+    {
+      "op": "move",
+      "at": 43.3,
+      "to": {
+        "target": "rvRun",
+        "offset": [
+          -58,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 3 (p11 'and the run control'): hover NEAR the Run Report control, never on it (red STOP ring)"
+    },
+    {
+      "op": "move",
+      "at": 46.13,
+      "to": {
+        "target": "rvAllLoc",
+        "offset": [
+          0,
+          28
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p12 'Now read the scope', 46.13): settle below the scope controls"
+    },
+    {
+      "op": "move",
+      "at": 47.83,
+      "to": {
+        "target": "rvFilterHdr",
+        "offset": [
+          30,
+          0
+        ]
+      },
+      "note": "step 4 (p13 'Most wrong-numbers tickets die here', 47.83)"
+    },
+    {
+      "op": "move",
+      "at": 50.63,
+      "to": {
+        "target": "rvAllLoc",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p14 'The selector sat on one site when the manager meant the network', 50.63): All Locations"
+    },
+    {
+      "op": "move",
+      "at": 54.2,
+      "to": {
+        "target": "rvDateFrom",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p15 'or the dates missed the week in question', 54.20): Date Range From"
+    },
+    {
+      "op": "move",
+      "at": 55.1,
+      "to": {
+        "target": "rvDateTo",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 4 (p15): Date Range To"
+    },
+    {
+      "op": "move",
+      "at": 56.57,
+      "to": {
+        "target": "rvRun",
+        "offset": [
+          -58,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 4 (p16 'Fix both, run it again, compare', 56.57): GUARDRAIL / RESIDUAL R3 \u2014 the locked narration says 'run it again', but Run Report re-executes a report query on the shared live tenant, which is not pure navigation. Safety is browse-and-point only, so Run Report is NOT clicked; the cursor holds beside it under the red STOP ring"
+    },
+    {
+      "op": "move",
+      "at": 59.46,
+      "to": {
+        "point": [
+          900,
+          300
+        ]
+      },
+      "note": "step 4 (p17 'A report is only wrong once its filters are right', 59.46): settle clear"
+    },
+    {
+      "op": "move",
+      "at": 62.56,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "step 5 (p18 'One caution before you file anything', 62.56)"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.0,
+      "key": "rvKpiRect",
+      "target": "rvKpi"
+    },
+    {
+      "op": "log-rect",
+      "at": 63.1,
+      "key": "rvTableRect",
+      "target": "rvTable"
+    },
+    {
+      "op": "move",
+      "at": 65.11,
+      "to": {
+        "target": "rvKpi",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 5 (p19 'a KPI tile and the table beneath it often disagree', 65.11): the KPI tile row (concept only, no specific mismatched figure is read)"
+    },
+    {
+      "op": "move",
+      "at": 68.2,
+      "to": {
+        "target": "rvTable",
+        "offset": [
+          300,
+          24
+        ]
+      },
+      "note": "step 5 (p19 tail): the table beneath the KPI tiles"
+    },
+    {
+      "op": "move",
+      "at": 71.71,
+      "to": {
+        "point": [
+          960,
+          420
+        ]
+      },
+      "note": "step 5 (p20 'That's a known demo artifact, not a platform bug', 71.71)"
+    },
+    {
+      "op": "move",
+      "at": 74.77,
+      "to": {
+        "point": [
+          960,
+          300
+        ]
+      },
+      "note": "step 5 (p21 'Reproduce the numbers in production before you open a ticket', 74.77)"
+    },
+    {
+      "op": "move",
+      "at": 78.14,
+      "to": {
+        "target": "rvClose",
+        "offset": [
+          -30,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 6 (p22 'Now the report that never arrived. Open the Scheduled Reports view', 78.14-80.26): approach the Close Report control"
+    },
+    {
+      "op": "click",
+      "target": "rvClose",
+      "pressAt": 79.0,
+      "hoverMs": 400,
+      "postcondition": "onReports",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 6: Close Report is a genuine navigation back to the reports hub (verified href reports.html); returns to the hub for the scheduled-reports check"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "reportsBackStable",
+      "predicate": "reportsReady",
+      "settleMs": 600,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rects",
+      "at": 80.4,
+      "key": "schedRefs",
+      "targets": [
+        "viewSched",
+        "schedChip",
+        "schedLastRun"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "reportsHeld2",
+      "from": 80.8,
+      "to": 92.9,
+      "predicate": "reportsListStable",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "read-only proof for step 6: still on the reports hub, list intact; the Scheduled Reports view is pointed at, never clicked"
+    },
+    {
+      "op": "move",
+      "at": 81.18,
+      "to": {
+        "target": "viewSched",
+        "offset": [
+          42,
+          0
+        ]
+      },
+      "note": "step 6 (p23 'Three reports run on a schedule here', 81.18): point at the Scheduled Reports VIEWS item. RESIDUAL R4: clicking this view live yields an empty 'No scheduled reports yet' state (0 rows), contradicting the narrated three; per the shotlist's authorized fallback the step is shown on the All Reports list via the real Type=Scheduled rows, and the view item is pointed at, not clicked"
+    },
+    {
+      "op": "move",
+      "at": 83.64,
+      "to": {
+        "target": "schedChip",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p24 'Confirm the missing one is actually among them', 83.64): the Type=Scheduled chip on the Daily, Period, and Shift Financial 2.0 row"
+    },
+    {
+      "op": "move",
+      "at": 84.9,
+      "to": {
+        "target": "schedLastRun",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 6 (p24 'and read its last run'): the real Last Run 03-25-2026 9:14 AM on that scheduled row"
+    },
+    {
+      "op": "move",
+      "at": 85.87,
+      "to": {
+        "point": [
+          860,
+          520
+        ]
+      },
+      "note": "step 6 (p25 'Not scheduled at all? There's your answer', 85.87): settle"
+    },
+    {
+      "op": "move",
+      "at": 93.2,
+      "to": {
+        "target": "railSettings",
+        "offset": [
+          110,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p26 'Cross-check the job that sends it. Settings, then Automation, then Task Scheduler', 93.20-94.89): approach the Settings rail item"
+    },
+    {
+      "op": "click",
+      "target": "railSettings",
+      "pressAt": 93.75,
+      "hoverMs": 300,
+      "postcondition": "onSettings",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7a: genuine rail Settings click"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "settingsStable",
+      "predicate": "settingsReady",
+      "settleMs": 350,
+      "timeoutMs": 9000
+    },
+    {
+      "op": "click",
+      "target": "setAutomationHdr",
+      "pressAt": 94.65,
+      "hoverMs": 240,
+      "unless": "automationOpen",
+      "postcondition": "automationOpen",
+      "timeoutMs": 5000,
+      "note": "step 7b: genuine expand of the Automation settings group (reveals Task Scheduler); no navigation. unless-guarded so it only ever OPENS \u2014 the group loads collapsed (verified), but a shared-profile prior state could leave it open, in which case the click is skipped rather than toggling it closed"
+    },
+    {
+      "op": "click",
+      "target": "setTaskLink",
+      "pressAt": 95.35,
+      "hoverMs": 280,
+      "postcondition": "onTaskScheduler",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 7c: genuine click of the Task Scheduler link into settings-task-scheduler.html; lands as p27 begins"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "tsStable",
+      "predicate": "taskSchedulerReady",
+      "settleMs": 500,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rects",
+      "at": 96.15,
+      "key": "tsMetrics",
+      "targets": [
+        "tsMetricTotal",
+        "tsMetricActive",
+        "tsMetricRunning",
+        "tsMetricFailed"
+      ]
+    },
+    {
+      "op": "watch",
+      "key": "tsHeld",
+      "from": 96.5,
+      "to": 148.9,
+      "predicate": "taskListStable",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "read-only proof for steps 7-9: the Task Scheduler list stays exactly three rows with the Daily Report Email job present; no task is created (+ New Record never clicked) or edited, and the page never navigates away"
+    },
+    {
+      "op": "move",
+      "at": 96.3,
+      "to": {
+        "target": "tsMetricTotal",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p27 'Eighteen tasks', 95.94-99.64): 18 Total Tasks"
+    },
+    {
+      "op": "move",
+      "at": 97.4,
+      "to": {
+        "target": "tsMetricActive",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p27 'sixteen active'): 16 Active"
+    },
+    {
+      "op": "move",
+      "at": 98.4,
+      "to": {
+        "target": "tsMetricRunning",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p27 'two running now'): 2 Running Now"
+    },
+    {
+      "op": "move",
+      "at": 100.52,
+      "to": {
+        "target": "tsMetricFailed",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 7 (p28 'And the tile that matters reads failed, zero', 100.52): 0 Failed (camera 150%)"
+    },
+    {
+      "op": "move",
+      "at": 104.95,
+      "to": {
+        "target": "tsMetricFailed",
+        "offset": [
+          0,
+          30
+        ],
+        "outside": true
+      },
+      "note": "step 7 (p29 'Nothing errored overnight', 104.95): hold below the Failed tile"
+    },
+    {
+      "op": "move",
+      "at": 108.38,
+      "to": {
+        "target": "tsMetricFailed",
+        "offset": [
+          34,
+          0
+        ]
+      },
+      "note": "step 7 (p30 'When that count isn't zero, you have your lead', 108.38)"
+    },
+    {
+      "op": "move",
+      "at": 111.6,
+      "to": {
+        "point": [
+          820,
+          320
+        ]
+      },
+      "note": "step 7 tail: ease down toward the task list"
+    },
+    {
+      "op": "log-rects",
+      "at": 113.5,
+      "key": "tsThs",
+      "targets": [
+        "tsThName",
+        "tsThSchedule",
+        "tsThLastRun",
+        "tsThNextRun",
+        "tsThStatus"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 113.55,
+      "key": "tsDailyRowRect",
+      "target": "tsDailyRow"
+    },
+    {
+      "op": "log-rect",
+      "at": 113.6,
+      "key": "tsNewRecordRect",
+      "target": "tsNewRecord"
+    },
+    {
+      "op": "move",
+      "at": 113.68,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 8 (p31 'Find the Daily Report Email row', 113.68): the Task Name cell"
+    },
+    {
+      "op": "move",
+      "at": 116.15,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          360,
+          0
+        ]
+      },
+      "note": "step 8 (p32 'Read across it', 116.15): begin the row sweep at the Schedule cell"
+    },
+    {
+      "op": "move",
+      "at": 121.11,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          360,
+          0
+        ]
+      },
+      "note": "step 8 (p33 'Scheduled daily at six', 121.11): Schedule = Daily 6:00 AM"
+    },
+    {
+      "op": "move",
+      "at": 122.1,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          655,
+          0
+        ]
+      },
+      "note": "step 8 (p33 'Last ran today at six'): Last Run = Today 6:00 AM"
+    },
+    {
+      "op": "move",
+      "at": 123.16,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          960,
+          0
+        ]
+      },
+      "note": "step 8 (p34 'Next run, tomorrow at six', 123.16): Next Run = Tomorrow 6:00 AM"
+    },
+    {
+      "op": "move",
+      "at": 124.1,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          1320,
+          0
+        ]
+      },
+      "note": "step 8 (p34 'Status, active'): Status = Active"
+    },
+    {
+      "op": "move",
+      "at": 124.87,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          655,
+          0
+        ]
+      },
+      "note": "step 8 (p35 'A missing report usually shows here as a stale last run', 124.87): Last Run"
+    },
+    {
+      "op": "move",
+      "at": 127.6,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          1320,
+          0
+        ]
+      },
+      "note": "step 8 (p35 'or a status that isn't active'): Status"
+    },
+    {
+      "op": "move",
+      "at": 131.07,
+      "to": {
+        "target": "tsNewRecord",
+        "offset": [
+          -58,
+          44
+        ],
+        "outside": true
+      },
+      "note": "step 8 (p36 'Read it, never edit it', 131.07): GUARDRAIL \u2014 hover beside + New Record, never on it (red STOP ring); no task is created"
+    },
+    {
+      "op": "move",
+      "at": 133.36,
+      "to": {
+        "point": [
+          860,
+          660
+        ]
+      },
+      "note": "step 9 (p37 'Now build the ticket', 133.36): settle on Task Scheduler"
+    },
+    {
+      "op": "move",
+      "at": 135.09,
+      "to": {
+        "target": "tsDailyRow",
+        "offset": [
+          40,
+          0
+        ]
+      },
+      "note": "step 9 (p38 'Name the report, the location scope, and the date range you ran it with', 135.09): the report job name"
+    },
+    {
+      "op": "move",
+      "at": 140.05,
+      "to": {
+        "target": "tsThLastRun",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p39 'add the job's last run', 140.05): Last Run column"
+    },
+    {
+      "op": "move",
+      "at": 141.6,
+      "to": {
+        "target": "tsThNextRun",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p39 'next run'): Next Run column"
+    },
+    {
+      "op": "move",
+      "at": 143.0,
+      "to": {
+        "target": "tsThStatus",
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "note": "step 9 (p39 'and status'): Status column"
+    },
+    {
+      "op": "move",
+      "at": 144.99,
+      "to": {
+        "point": [
+          860,
+          660
+        ]
+      },
+      "note": "step 9 (p40 'Attach a screenshot. Leave the demo-tenant number quirks out of it', 144.99): settle"
+    },
+    {
+      "op": "move",
+      "at": 149.44,
+      "to": {
+        "target": "railReports",
+        "offset": [
+          110,
+          0
+        ],
+        "outside": true
+      },
+      "note": "step 10 (p41 'That's the playbook', 149.44-150.78): approach the Reports rail for the recap"
+    },
+    {
+      "op": "click",
+      "target": "railReports",
+      "pressAt": 150.1,
+      "hoverMs": 300,
+      "postcondition": "onReports",
+      "timeoutMs": 8000,
+      "nav": true,
+      "note": "step 10: genuine rail Reports click back to the hub for the recap"
+    },
+    {
+      "op": "wait-stable",
+      "afterNav": true,
+      "key": "reportsRecapStable",
+      "predicate": "reportsReady",
+      "settleMs": 500,
+      "timeoutMs": 10000
+    },
+    {
+      "op": "log-rects",
+      "at": 151.0,
+      "key": "recapViews",
+      "targets": [
+        "viewAll",
+        "viewSched"
+      ]
+    },
+    {
+      "op": "log-rect",
+      "at": 151.05,
+      "key": "recapViewsLabelRect",
+      "target": "viewsLabel"
+    },
+    {
+      "op": "watch",
+      "key": "reportsHeld3",
+      "from": 151.4,
+      "to": 163.6,
+      "predicate": "reportsListStable",
+      "everyMs": 2500,
+      "mustHold": true,
+      "note": "read-only proof for the recap: still on the reports hub, nothing run or changed to the very end"
+    },
+    {
+      "op": "move",
+      "at": 151.12,
+      "to": {
+        "target": "viewsLabel",
+        "offset": [
+          30,
+          8
+        ]
+      },
+      "note": "step 10 (p42 'Name the symptom', 151.12): the VIEWS panel"
+    },
+    {
+      "op": "move",
+      "at": 152.87,
+      "to": {
+        "target": "viewAll",
+        "offset": [
+          42,
+          0
+        ]
+      },
+      "note": "step 10 (p43 'Wrong or empty means the filter bar', 152.87): the report list, where you open a report into the filter bar"
+    },
+    {
+      "op": "move",
+      "at": 155.85,
+      "to": {
+        "target": "viewSched",
+        "offset": [
+          42,
+          0
+        ]
+      },
+      "note": "step 10 (p44 'Never arrived means Scheduled Reports and the Task Scheduler', 155.85): the Scheduled Reports view"
+    },
+    {
+      "op": "move",
+      "at": 160.23,
+      "to": {
+        "point": [
+          860,
+          430
+        ]
+      },
+      "note": "step 10 (p45 'Rule out the demo artifact, escalate with the filters and the run times', 160.23)"
+    },
+    {
+      "op": "move",
+      "at": 162.41,
+      "to": {
+        "point": [
+          1500,
+          950
+        ]
+      },
+      "note": "step 10 (p46 'and change nothing along the way', 162.41): final park clear of content and captions"
+    },
+    {
+      "op": "assert",
+      "at": 164.2,
+      "predicate": "onReports",
+      "note": "end state: still on the reports hub, unchanged"
+    },
+    {
+      "op": "assert",
+      "at": 164.8,
+      "predicate": "reportsReady",
+      "note": "hub intact: VIEWS and list present \u2014 nothing run, scheduled, exported, edited, or created across the whole lesson"
+    }
   ],
   "compositor": {
     "callouts": [
-      { "n": 1, "anchor": "views.viewSched", "place": "right", "from": 3.1, "to": 13.6 },
-      { "n": 2, "anchor": "repThs.thType", "place": "below-left", "from": 14.6, "to": 30.3 },
-      { "n": 3, "anchor": "rvFilterHdrRect", "place": "below-left", "from": 34.1, "to": 45.9 },
-      { "n": 4, "anchor": "filterCtrls.rvAllLoc", "place": "below-left", "from": 46.2, "to": 62.3 },
-      { "n": 5, "anchor": "rvTableRect", "place": "left-top", "from": 63.2, "to": 77.9 },
-      { "n": 6, "anchor": "schedRefs.schedChip", "place": "below-left", "from": 81.2, "to": 92.8 },
-      { "n": 7, "anchor": "tsMetrics.tsMetricFailed", "place": "below-left", "from": 96.3, "to": 113.2 },
-      { "n": 8, "anchor": "tsDailyRowRect", "place": "left-top", "from": 113.7, "to": 132.9 },
-      { "n": 9, "anchor": "tsThs.tsThStatus", "place": "below-left", "from": 133.4, "to": 149.0 },
-      { "n": 10, "anchor": "recapViews.viewSched", "place": "right", "from": 151.1, "to": 163.4 }
+      {
+        "n": 1,
+        "anchor": "views.viewSched",
+        "place": "right",
+        "from": 3.1,
+        "to": 13.6
+      },
+      {
+        "n": 2,
+        "anchor": "repThs.thType",
+        "place": "below-left",
+        "from": 14.6,
+        "to": 30.3
+      },
+      {
+        "n": 3,
+        "anchor": "rvFilterHdrRect",
+        "place": "below-left",
+        "from": 34.1,
+        "to": 45.9
+      },
+      {
+        "n": 4,
+        "anchor": "filterCtrls.rvAllLoc",
+        "place": "below-left",
+        "from": 46.2,
+        "to": 62.3
+      },
+      {
+        "n": 5,
+        "anchor": "rvTableRect",
+        "place": "left-top",
+        "from": 63.2,
+        "to": 77.9
+      },
+      {
+        "n": 6,
+        "anchor": "schedRefs.schedChip",
+        "place": "below-left",
+        "from": 81.2,
+        "to": 92.8
+      },
+      {
+        "n": 7,
+        "anchor": "tsMetrics.tsMetricFailed",
+        "place": "below-left",
+        "from": 96.3,
+        "to": 113.2
+      },
+      {
+        "n": 8,
+        "anchor": "tsDailyRowRect",
+        "place": "left-top",
+        "from": 113.7,
+        "to": 132.9
+      },
+      {
+        "n": 9,
+        "anchor": "tsThs.tsThStatus",
+        "place": "below-left",
+        "from": 133.4,
+        "to": 149.0
+      },
+      {
+        "n": 10,
+        "anchor": "recapViews.viewSched",
+        "place": "right",
+        "from": 151.1,
+        "to": 163.4
+      }
     ],
     "highlights": [
-      { "anchor": "views.viewSched", "from": 9.4, "to": 10.6, "note": "step 1 (p03): the three-on-a-schedule view" },
-      { "anchor": "rvRunRect", "from": 43.3, "to": 62.3, "color": "#dc2626", "note": "steps 3-4 guardrail: Run Report re-executes a report query — read, never launched (R3)" },
-      { "anchor": "filterCtrls.rvAllLoc", "from": 50.63, "to": 54.1, "note": "step 4 (p14): the All Locations scope selector" },
-      { "anchor": "filterCtrls.rvDateFrom", "from": 54.2, "to": 56.4, "note": "step 4 (p15): the Date Range From/To" },
-      { "anchor": "rvKpiRect", "from": 65.11, "to": 71.5, "note": "step 5 (p19): a KPI tile" },
-      { "anchor": "rvTableRect", "from": 68.2, "to": 71.5, "note": "step 5 (p19): the table beneath it — the known demo KPI-vs-table mismatch (R5)" },
-      { "anchor": "schedRefs.schedChip", "from": 83.64, "to": 85.8, "note": "step 6 (p24): the Type=Scheduled chip" },
-      { "anchor": "schedRefs.schedLastRun", "from": 84.9, "to": 87.5, "note": "step 6 (p24): the real Last Run 03-25-2026 9:14 AM" },
-      { "anchor": "tsMetrics.tsMetricFailed", "from": 100.52, "to": 113.0, "note": "step 7 (p28-p30): 0 Failed — no scheduled job errored overnight" },
-      { "anchor": "tsDailyRowRect", "from": 116.15, "to": 130.9, "note": "step 8 (p32-p35): the Daily Report Email row read across" },
-      { "anchor": "tsNewRecordRect", "from": 131.07, "to": 132.9, "color": "#dc2626", "note": "step 8 guardrail: + New Record never clicked — no task created" },
-      { "anchor": "recapViews.viewSched", "from": 155.85, "to": 159.8, "note": "step 10 (p44): the never-arrived trail — Scheduled Reports" }
+      {
+        "anchor": "views.viewSched",
+        "from": 9.4,
+        "to": 10.6,
+        "note": "step 1 (p03): the three-on-a-schedule view"
+      },
+      {
+        "anchor": "rvRunRect",
+        "from": 43.3,
+        "to": 62.3,
+        "color": "#dc2626",
+        "note": "steps 3-4 guardrail: Run Report re-executes a report query \u2014 read, never launched (R3)"
+      },
+      {
+        "anchor": "filterCtrls.rvAllLoc",
+        "from": 50.63,
+        "to": 54.1,
+        "note": "step 4 (p14): the All Locations scope selector"
+      },
+      {
+        "anchor": "filterCtrls.rvDateFrom",
+        "from": 54.2,
+        "to": 56.4,
+        "note": "step 4 (p15): the Date Range From/To"
+      },
+      {
+        "anchor": "rvKpiRect",
+        "from": 65.11,
+        "to": 71.5,
+        "note": "step 5 (p19): a KPI tile"
+      },
+      {
+        "anchor": "rvTableRect",
+        "from": 68.2,
+        "to": 71.5,
+        "note": "step 5 (p19): the table beneath it \u2014 the known demo KPI-vs-table mismatch (R5)"
+      },
+      {
+        "anchor": "schedRefs.schedChip",
+        "from": 83.64,
+        "to": 85.8,
+        "note": "step 6 (p24): the Type=Scheduled chip"
+      },
+      {
+        "anchor": "schedRefs.schedLastRun",
+        "from": 84.9,
+        "to": 87.5,
+        "note": "step 6 (p24): the real Last Run 03-25-2026 9:14 AM"
+      },
+      {
+        "anchor": "tsMetrics.tsMetricFailed",
+        "from": 100.52,
+        "to": 113.0,
+        "note": "step 7 (p28-p30): 0 Failed \u2014 no scheduled job errored overnight"
+      },
+      {
+        "anchor": "tsDailyRowRect",
+        "from": 116.15,
+        "to": 130.9,
+        "note": "step 8 (p32-p35): the Daily Report Email row read across"
+      },
+      {
+        "anchor": "tsNewRecordRect",
+        "from": 131.07,
+        "to": 132.9,
+        "color": "#dc2626",
+        "note": "step 8 guardrail: + New Record never clicked \u2014 no task created"
+      },
+      {
+        "anchor": "recapViews.viewSched",
+        "from": 155.85,
+        "to": 159.8,
+        "note": "step 10 (p44): the never-arrived trail \u2014 Scheduled Reports"
+      }
     ],
     "camera": [
-      { "t": 0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 1.1, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 2.9, "z": 1.12, "cx": 720, "cy": 300, "ease": true, "note": "step 1: the VIEWS panel and the Report List headers" },
-      { "t": 13.6, "z": 1.12, "cx": 720, "cy": 300 },
-      { "t": 14.4, "z": 1.06, "cx": 820, "cy": 400, "ease": true, "note": "step 2: hold on the hub for the two-way branch" },
-      { "t": 30.3, "z": 1.06, "cx": 820, "cy": 400 },
-      { "t": 31.4, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the page change into the Report Viewer (step 3)" },
-      { "t": 33.9, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 34.1, "z": 1.12, "cx": 1000, "cy": 260, "ease": true, "note": "step 3-4: the filter bar across the top (More Filters, All Locations, Date Range, Run Report)" },
-      { "t": 62.3, "z": 1.12, "cx": 1000, "cy": 260 },
-      { "t": 63.2, "z": 1.08, "cx": 960, "cy": 470, "ease": true, "note": "step 5: the KPI tiles above the report table (the demo mismatch caveat)" },
-      { "t": 77.9, "z": 1.08, "cx": 960, "cy": 470 },
-      { "t": 78.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Close Report page change back to the hub (step 6)" },
-      { "t": 80.6, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 81.2, "z": 1.2, "cx": 720, "cy": 320, "ease": true, "note": "step 6: the Scheduled Reports view and the Type=Scheduled row with its Last Run" },
-      { "t": 92.8, "z": 1.2, "cx": 720, "cy": 320 },
-      { "t": 93.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for Settings -> Automation -> Task Scheduler (step 7)" },
-      { "t": 96.1, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 96.3, "z": 1.16, "cx": 960, "cy": 150, "ease": true, "note": "step 7: the four KPI tiles across the top of Task Scheduler" },
-      { "t": 100.3, "z": 1.16, "cx": 960, "cy": 150 },
-      { "t": 100.6, "z": 1.5, "cx": 1719, "cy": 106, "ease": true, "note": "step 7: 150% on the 0 Failed tile (shot list)" },
-      { "t": 113.2, "z": 1.5, "cx": 1719, "cy": 106 },
-      { "t": 113.6, "z": 1.2, "cx": 1000, "cy": 520, "ease": true, "note": "step 8: the Daily Report Email row across the five columns, + New Record guardrail in frame" },
-      { "t": 132.9, "z": 1.2, "cx": 1000, "cy": 520 },
-      { "t": 133.4, "z": 1.1, "cx": 1000, "cy": 500, "ease": true, "note": "step 9: hold on Task Scheduler for the escalation checklist" },
-      { "t": 149.0, "z": 1.1, "cx": 1000, "cy": 500 },
-      { "t": 149.9, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "wide for the Command-hub recap page change (step 10)" },
-      { "t": 151.0, "z": 1, "cx": 960, "cy": 540 },
-      { "t": 151.2, "z": 1.12, "cx": 700, "cy": 290, "ease": true, "note": "step 10: recap sweep across the VIEWS panel" },
-      { "t": 160.0, "z": 1.12, "cx": 700, "cy": 290 },
-      { "t": 161.2, "z": 1, "cx": 960, "cy": 540, "ease": true, "note": "pull wide for the close and completion card" },
-      { "t": 167.158, "z": 1, "cx": 960, "cy": 540 }
+      {
+        "t": 0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 1.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 2.9,
+        "z": 1.12,
+        "cx": 720,
+        "cy": 300,
+        "ease": true,
+        "note": "step 1: the VIEWS panel and the Report List headers"
+      },
+      {
+        "t": 13.6,
+        "z": 1.12,
+        "cx": 720,
+        "cy": 300
+      },
+      {
+        "t": 14.4,
+        "z": 1.06,
+        "cx": 820,
+        "cy": 400,
+        "ease": true,
+        "note": "step 2: hold on the hub for the two-way branch"
+      },
+      {
+        "t": 30.3,
+        "z": 1.06,
+        "cx": 820,
+        "cy": 400
+      },
+      {
+        "t": 31.4,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the page change into the Report Viewer (step 3)"
+      },
+      {
+        "t": 33.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 34.1,
+        "z": 1.12,
+        "cx": 1000,
+        "cy": 260,
+        "ease": true,
+        "note": "step 3-4: the filter bar across the top (More Filters, All Locations, Date Range, Run Report)"
+      },
+      {
+        "t": 62.3,
+        "z": 1.12,
+        "cx": 1000,
+        "cy": 260
+      },
+      {
+        "t": 63.2,
+        "z": 1.08,
+        "cx": 960,
+        "cy": 470,
+        "ease": true,
+        "note": "step 5: the KPI tiles above the report table (the demo mismatch caveat)"
+      },
+      {
+        "t": 77.9,
+        "z": 1.08,
+        "cx": 960,
+        "cy": 470
+      },
+      {
+        "t": 78.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Close Report page change back to the hub (step 6)"
+      },
+      {
+        "t": 80.6,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 81.2,
+        "z": 1.2,
+        "cx": 720,
+        "cy": 320,
+        "ease": true,
+        "note": "step 6: the Scheduled Reports view and the Type=Scheduled row with its Last Run"
+      },
+      {
+        "t": 92.8,
+        "z": 1.2,
+        "cx": 720,
+        "cy": 320
+      },
+      {
+        "t": 93.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for Settings -> Automation -> Task Scheduler (step 7)"
+      },
+      {
+        "t": 96.1,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 96.3,
+        "z": 1.16,
+        "cx": 960,
+        "cy": 150,
+        "ease": true,
+        "note": "step 7: the four KPI tiles across the top of Task Scheduler"
+      },
+      {
+        "t": 100.3,
+        "z": 1.16,
+        "cx": 960,
+        "cy": 150
+      },
+      {
+        "t": 100.6,
+        "z": 1.5,
+        "cx": 1719,
+        "cy": 106,
+        "ease": true,
+        "note": "step 7: 150% on the 0 Failed tile (shot list)"
+      },
+      {
+        "t": 113.2,
+        "z": 1.5,
+        "cx": 1719,
+        "cy": 106
+      },
+      {
+        "t": 113.6,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 520,
+        "ease": true,
+        "note": "step 8: the Daily Report Email row across the five columns, + New Record guardrail in frame"
+      },
+      {
+        "t": 132.9,
+        "z": 1.2,
+        "cx": 1000,
+        "cy": 520
+      },
+      {
+        "t": 133.4,
+        "z": 1.1,
+        "cx": 1000,
+        "cy": 500,
+        "ease": true,
+        "note": "step 9: hold on Task Scheduler for the escalation checklist"
+      },
+      {
+        "t": 149.0,
+        "z": 1.1,
+        "cx": 1000,
+        "cy": 500
+      },
+      {
+        "t": 149.9,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "wide for the Command-hub recap page change (step 10)"
+      },
+      {
+        "t": 151.0,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      },
+      {
+        "t": 151.2,
+        "z": 1.12,
+        "cx": 700,
+        "cy": 290,
+        "ease": true,
+        "note": "step 10: recap sweep across the VIEWS panel"
+      },
+      {
+        "t": 160.0,
+        "z": 1.12,
+        "cx": 700,
+        "cy": 290
+      },
+      {
+        "t": 161.2,
+        "z": 1,
+        "cx": 960,
+        "cy": 540,
+        "ease": true,
+        "note": "pull wide for the close and completion card"
+      },
+      {
+        "t": 167.158,
+        "z": 1,
+        "cx": 960,
+        "cy": 540
+      }
     ],
     "requiresCloseFraming": true,
     "completion": {
-      "text": "Reports Wrong or Missing — Complete",
+      "text": "Reports Wrong or Missing \u2014 Complete",
       "stamp": "Verified against demo.washcentral.com",
       "from": 165.36,
       "fadeOutFrames": 10

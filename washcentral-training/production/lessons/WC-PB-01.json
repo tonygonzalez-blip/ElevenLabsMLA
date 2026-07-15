@@ -26,10 +26,10 @@
       "js": "[...document.querySelectorAll('button.wc-cmd-trigger-btn')].find(e=>e.getBoundingClientRect().width>0)"
     },
     "usCard": {
-      "js": "[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())&&e.getBoundingClientRect().width>0})"
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/users\\s*&\\s*security/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
     },
     "usCardItemSystemUsers": {
-      "js": "[...document.querySelectorAll('a.sh-card-item')].find(e=>/^System Users$/.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
     },
     "bcStrong": {
       "js": "[...document.querySelectorAll('.breadcrumbs strong')].find(e=>e.getBoundingClientRect().width>0)",
@@ -63,16 +63,22 @@
       "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=6&&!/loading/i.test(e.textContent||''))"
     },
     "uaLink": {
-      "js": "[...document.querySelectorAll('aside.sidebar a.menu-header')].find(e=>(e.textContent||'').trim()==='User Activity'&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('a.menu-header')].find(e=>(e.textContent||'').trim()==='User Activity'&&e.getBoundingClientRect().width>0)"
     },
     "auditLogLink": {
-      "js": "[...document.querySelectorAll('aside.sidebar a.menu-header')].find(e=>(e.textContent||'').trim()==='Audit Log'&&e.getBoundingClientRect().width>0)"
+      "js": "[...document.querySelectorAll('a.menu-header')].find(e=>(e.textContent||'').trim()==='Audit Log'&&e.getBoundingClientRect().width>0)"
     },
     "failedTile": {
       "js": "[...document.querySelectorAll('.a-metric')].find(e=>/Failed Logins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
     },
     "uaFirstRow": {
       "js": "[...document.querySelectorAll('tbody tr')].find(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=5&&!/loading/i.test(e.textContent||''))"
+    },
+    "usersHeader": {
+      "js": "[...document.querySelectorAll('.sw-cat')].find(e=>/users\\s*&\\s*security/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "linkSystemUsers": {
+      "js": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].find(a=>a.getBoundingClientRect().width>0)"
     }
   },
   "predicates": {
@@ -83,10 +89,12 @@
     "onSupportTickets": "location.pathname.endsWith('/support-tickets.html')",
     "onUserActivity": "location.pathname.endsWith('/audit-users.html')",
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "usCardOpen": "(()=>{const c=[...document.querySelectorAll('.sh-card')].find(e=>{const n=e.querySelector('.sh-card-name');return n&&/^Users & Security$/.test((n.textContent||'').trim())});return !!c&&c.classList.contains('open')&&[...c.querySelectorAll('a.sh-card-item')].some(a=>/^System Users$/.test((a.textContent||'').trim())&&a.getBoundingClientRect().width>0)})()",
+    "usCardOpen": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
     "searchFocused": "!!document.activeElement&&/^Search by name, code, or email/i.test(document.activeElement.placeholder||'')",
     "rowsLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=6);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/settings-system-users.html')&&rows.length>=10&&!!pi&&/of\\s*[\\d,]+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
-    "uaLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=5&&!/loading/i.test(e.textContent||''));const tile=[...document.querySelectorAll('.a-metric')].some(e=>/Failed Logins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/audit-users.html')&&tile&&rows.length>=3&&!!pi&&/of\\s*\\d+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()"
+    "uaLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0&&e.querySelectorAll('td').length>=5&&!/loading/i.test(e.textContent||''));const tile=[...document.querySelectorAll('.a-metric')].some(e=>/Failed Logins/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0);const pi=document.querySelector('.pg-info');return location.pathname.endsWith('/audit-users.html')&&tile&&rows.length>=3&&!!pi&&/of\\s*\\d+/.test(pi.textContent||'')&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
+    "usersSubmenuOpen": "[...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].some(a=>a.getBoundingClientRect().width>0)",
+    "usersSubmenuClosed": "!([...document.querySelectorAll('a[href=\"settings-system-users.html\"]')].some(a=>a.getBoundingClientRect().width>0))"
   },
   "ops": [
     {
@@ -104,7 +112,7 @@
       "op": "assert",
       "at": -0.8,
       "predicate": "sidebarExpanded",
-      "note": "pre-roll: the persisted sidebar pref (washcentral-sidebar-collapsed-v5) must read expanded, or the step-4 settings sidebar renders collapsed and the Users & Security route dies; the preflight toggle stages this — abort the take if it did not hold"
+      "note": "pre-roll: the persisted sidebar pref (washcentral-sidebar-collapsed-v5) must read expanded, or the step-4 settings sidebar renders collapsed and the Users & Security route dies; the preflight toggle stages this \u2014 abort the take if it did not hold"
     },
     {
       "op": "pointer-enter",
@@ -120,7 +128,7 @@
           150
         ]
       },
-      "note": "enter from bottom edge and settle below the header cluster the shot list names (Search ⌘K / Ask Shyne / avatar)"
+      "note": "enter from bottom edge and settle below the header cluster the shot list names (Search \u2318K / Ask Shyne / avatar)"
     },
     {
       "op": "log-rect",
@@ -175,7 +183,7 @@
       "hoverMs": 320,
       "postcondition": "usCardOpen",
       "timeoutMs": 4000,
-      "note": "step 4b: expand the Users & Security group card on the All Settings hub — stateless accordion, closed on every fresh load (the sidebar menu route is avoided: its persisted per-group state, washcentral-settings-menu-v1, is shared and hydrates asynchronously, shifting header positions — observed mis-hit July 11)"
+      "note": "step 4b: expand the Users & Security group card on the All Settings hub \u2014 stateless accordion, closed on every fresh load (the sidebar menu route is avoided: its persisted per-group state, washcentral-settings-menu-v1, is shared and hydrates asynchronously, shifting header positions \u2014 observed mis-hit July 11)"
     },
     {
       "op": "click",
@@ -291,7 +299,7 @@
         ],
         "outside": true
       },
-      "note": "settle beside + New Record while p20 says 'you leave alone' — never on it, never clicked"
+      "note": "settle beside + New Record while p20 says 'you leave alone' \u2014 never on it, never clicked"
     },
     {
       "op": "watch",
@@ -334,7 +342,7 @@
       "hoverMs": 380,
       "postcondition": "searchFocused",
       "timeoutMs": 4000,
-      "note": "step 5: focus the search box only — nothing is typed, no caller value ever appears on screen"
+      "note": "step 5: focus the search box only \u2014 nothing is typed, no caller value ever appears on screen"
     },
     {
       "op": "move",
@@ -419,7 +427,7 @@
           640
         ]
       },
-      "note": "step 9 cue starts (p41 'Open the Audit menu, then User Activity.'); approach the IT & Support rail — live, the AUDIT sidebar group is inside the IT & Support section"
+      "note": "step 9 cue starts (p41 'Open the Audit menu, then User Activity.'); approach the IT & Support rail \u2014 live, the AUDIT sidebar group is inside the IT & Support section"
     },
     {
       "op": "click",
@@ -429,7 +437,7 @@
       "postcondition": "onSupportTickets",
       "timeoutMs": 8000,
       "nav": true,
-      "note": "step 9a: the IT & Support rail lands on Support Tickets; its sidebar carries the AUDIT group (audit-users.html 404s on direct URL — sidebar is the only truthful route)"
+      "note": "step 9a: the IT & Support rail lands on Support Tickets; its sidebar carries the AUDIT group (audit-users.html 404s on direct URL \u2014 sidebar is the only truthful route)"
     },
     {
       "op": "wait-stable",
@@ -480,7 +488,7 @@
         ],
         "outside": true
       },
-      "note": "settle under the Failed Logins tile as p42 reads it — a page-level count, no per-user failure column"
+      "note": "settle under the Failed Logins tile as p42 reads it \u2014 a page-level count, no per-user failure column"
     },
     {
       "op": "assert",
@@ -513,7 +521,7 @@
           0
         ]
       },
-      "note": "genuine hover on a user row for p43-p44 'read the caller's own row: status, last login, logins this month' — rows are read, never clicked"
+      "note": "genuine hover on a user row for p43-p44 'read the caller's own row: status, last login, logins this month' \u2014 rows are read, never clicked"
     },
     {
       "op": "move",
@@ -542,7 +550,7 @@
           0
         ]
       },
-      "note": "p46 'lives next door in the Audit Log' — point at the sidebar link only; it is not clicked"
+      "note": "p46 'lives next door in the Audit Log' \u2014 point at the sidebar link only; it is not clicked"
     },
     {
       "op": "move",
@@ -574,10 +582,14 @@
       "timeoutMs": 8000
     },
     {
-      "op": "assert",
-      "at": 161.7,
-      "predicate": "usersSubmenuOpen",
-      "note": "fail fast: the Users & Security submenu must still be expanded (persisted washcentral-settings-menu-v1 users:true from the on-camera step 4 click); if this aborts, something reset the persisted menu state mid-take"
+      "op": "click",
+      "target": "usersHeader",
+      "pressAt": 161.7,
+      "hoverMs": 300,
+      "unless": "usersSubmenuOpen",
+      "postcondition": "usersSubmenuOpen",
+      "timeoutMs": 4000,
+      "note": "second visit: re-open the Users & Security launcher category so the System Users link is clickable (the sw-app launcher resets categories to closed on each load). unless-guarded; narration (s10, admin reset) names no click."
     },
     {
       "op": "click",
@@ -653,7 +665,7 @@
         ],
         "outside": true
       },
-      "note": "p51 'an admin resets it from that user's own record' — indicate the row from beside the table; the record is never opened"
+      "note": "p51 'an admin resets it from that user's own record' \u2014 indicate the row from beside the table; the record is never opened"
     },
     {
       "op": "move",
@@ -720,7 +732,7 @@
         "place": "below-left",
         "from": 1.2,
         "to": 12.6,
-        "note": "Symptom: 'I can't log in' — run the checks in order (shot list ①; header cluster the shot list names)"
+        "note": "Symptom: 'I can't log in' \u2014 run the checks in order (shot list \u2460; header cluster the shot list names)"
       },
       {
         "n": 2,
@@ -728,7 +740,7 @@
         "place": "at",
         "from": 14.2,
         "to": 27.6,
-        "note": "Check 1: three fields — wrong Tenant / Customer Code is the classic miss (concept beat, no login still used)"
+        "note": "Check 1: three fields \u2014 wrong Tenant / Customer Code is the classic miss (concept beat, no login still used)"
       },
       {
         "n": 3,
@@ -736,7 +748,7 @@
         "place": "at",
         "from": 33.2,
         "to": 44.7,
-        "note": "Check 2: migrated? Credentials carry over — Migration FAQ (concept beat)"
+        "note": "Check 2: migrated? Credentials carry over \u2014 Migration FAQ (concept beat)"
       },
       {
         "n": 4,
@@ -768,7 +780,7 @@
         "place": "left",
         "from": 101.4,
         "to": 107.5,
-        "note": "Check 3c: SSO = Yes → reset lives at the identity provider (WC-12-09)"
+        "note": "Check 3c: SSO = Yes \u2192 reset lives at the identity provider (WC-12-09)"
       },
       {
         "n": 8,
@@ -776,7 +788,7 @@
         "place": "left",
         "from": 117.6,
         "to": 123,
-        "note": "Check 3d: LAST LOGIN — used to work vs never worked"
+        "note": "Check 3d: LAST LOGIN \u2014 used to work vs never worked"
       },
       {
         "n": 9,
@@ -784,7 +796,7 @@
         "place": "below-left",
         "from": 139.9,
         "to": 150.5,
-        "note": "Check 4: the sign-in picture — page-level Failed Logins tile, no per-user failure column"
+        "note": "Check 4: the sign-in picture \u2014 page-level Failed Logins tile, no per-user failure column"
       },
       {
         "n": 10,
@@ -792,7 +804,7 @@
         "place": "below-left",
         "from": 163.9,
         "to": 176.3,
-        "note": "Where a reset happens — never in demo; no edit form is opened"
+        "note": "Where a reset happens \u2014 never in demo; no edit form is opened"
       },
       {
         "n": 11,
@@ -800,7 +812,7 @@
         "place": "at",
         "from": 179.9,
         "to": 192.6,
-        "note": "Escalate: username, tenant, timestamps, masked screenshots — never the password"
+        "note": "Escalate: username, tenant, timestamps, masked screenshots \u2014 never the password"
       },
       {
         "n": 12,
@@ -823,7 +835,7 @@
         "from": 62.6,
         "to": 65.4,
         "color": "#dc2626",
-        "note": "do-not-click guardrail on + New Record — 'you leave alone' (p20, shot list ④ STOP)"
+        "note": "do-not-click guardrail on + New Record \u2014 'you leave alone' (p20, shot list \u2463 STOP)"
       },
       {
         "anchor": "searchRect",
@@ -865,14 +877,14 @@
         "anchor": "auditLogRect",
         "from": 155.6,
         "to": 158.9,
-        "note": "'the event by event trail lives next door in the Audit Log' (p46) — pointed at, never clicked"
+        "note": "'the event by event trail lives next door in the Audit Log' (p46) \u2014 pointed at, never clicked"
       },
       {
         "anchor": "sysRow2Rect",
         "from": 170.5,
         "to": 173.3,
         "color": "#dc2626",
-        "note": "STOP: the user record a production admin would open for a reset — never opened here (p51, shot list ⑩)"
+        "note": "STOP: the user record a production admin would open for a reset \u2014 never opened here (p51, shot list \u2469)"
       }
     ],
     "camera": [
@@ -909,7 +921,7 @@
         "cx": 960,
         "cy": 540,
         "ease": true,
-        "note": "pull wide before the audit navigation — page identity change shown full-frame"
+        "note": "pull wide before the audit navigation \u2014 page identity change shown full-frame"
       },
       {
         "t": 139.5,
@@ -923,7 +935,7 @@
         "cx": 1182,
         "cy": 420,
         "ease": true,
-        "note": "step 9 close framing at 130% on the Failed Logins tile (shot list ⑨)"
+        "note": "step 9 close framing at 130% on the Failed Logins tile (shot list \u2468)"
       },
       {
         "t": 143.6,
@@ -947,7 +959,7 @@
       }
     ],
     "completion": {
-      "text": "Login Failures — Complete",
+      "text": "Login Failures \u2014 Complete",
       "from": 214.31,
       "fadeOutFrames": 10
     },
@@ -981,43 +993,13 @@
   "preflight": [
     {
       "op": "click",
-      "target": "railSettings",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "postcondition": "onSettingsHome",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "off-camera: hop to Settings to stage the persisted settings menu (washcentral-settings-menu-v1)"
-    },
-    {
-      "op": "click",
-      "target": "usersHeader",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "usersSubmenuClosed",
-      "postcondition": "usersSubmenuClosed",
-      "timeoutMs": 4000,
-      "note": "off-camera: collapse the Users & Security group if a prior session left it open, so the on-camera step-4 expand is genuine (skipped when already closed)"
-    },
-    {
-      "op": "click",
-      "target": "railCommandCenter",
-      "pressAt": 0,
-      "hoverMs": 200,
-      "postcondition": "onCommandCenter",
-      "timeoutMs": 8000,
-      "nav": true,
-      "note": "off-camera: return to the start page before capture"
-    },
-    {
-      "op": "click",
       "target": "expandToggle",
       "pressAt": 0,
       "hoverMs": 200,
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera, MUST BE LAST: arriving at command-center force-writes washcentral-sidebar-collapsed-v5=true, and a collapsed pref makes the step-4 settings sidebar render collapsed (observed live July 11: Users & Security shrinks to a 16px glyph and the submenu is unreachable) — expand it here so the persisted pref reads false when capture starts"
+      "note": "off-camera: expand the rail panel before the take (launcher categories default to closed; no submenu staging needed)"
     }
   ]
 }

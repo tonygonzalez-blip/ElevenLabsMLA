@@ -11,7 +11,7 @@
   ],
   "targets": {
     "railToggle": {
-      "selector": ".wc-rail-panel-toggle"
+      "selector": "#wc-rail-panel-toggle"
     },
     "integRail": {
       "js": "[...document.querySelectorAll('a.menu-header')].find(e=>/^integrations$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
@@ -121,6 +121,9 @@
     },
     "cardQuickbooks": {
       "js": "[...document.querySelectorAll('a[href$=\"integrations-quickbooks.html\"]')].find(e=>e.getBoundingClientRect().width>0)"
+    },
+    "firstOpenGroup": {
+      "js": "[...document.querySelectorAll('.menu-group.open')].map(g=>g.querySelector('button.menu-header')).find(h=>h&&h.getBoundingClientRect().width>0)"
     }
   },
   "predicates": {
@@ -131,7 +134,7 @@
     "onSage": "location.pathname.endsWith('/settings-integrations-sage.html')",
     "onQuickbooks": "location.pathname.endsWith('/settings-integrations-quickbooks.html')",
     "onHub": "location.pathname.endsWith('/settings-integrations.html')",
-    "sidebarExpanded": "(()=>{const a=document.querySelector('aside.sidebar');return !!a&&a.getBoundingClientRect().width>120})()",
+    "sidebarExpanded": "[...document.querySelectorAll('button.menu-header')].some(e=>e.getBoundingClientRect().width>120)",
     "integrationsRailInFrame": "(()=>{const e=[...document.querySelectorAll('a.menu-header')].find(x=>/^integrations$/i.test((x.textContent||'').trim()));if(!e)return false;const r=e.getBoundingClientRect();return r.width>0&&r.top>=0&&r.bottom<=1060})()",
     "groupsCollapsed": "[...document.querySelectorAll('aside .submenu')].every(s=>getComputedStyle(s).display==='none')",
     "integrationLoaded": "(()=>{const badge=[...document.querySelectorAll('.a-plan-badge')].some(e=>e.getBoundingClientRect().width>0);const tiles=[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length;return badge&&tiles>=4&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
@@ -140,7 +143,8 @@
     "scimLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-scim.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-group-hdr')].some(e=>/Sync Log/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "sageLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-sage.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "qbLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations-quickbooks.html')&&[...document.querySelectorAll('.a-metric')].filter(e=>e.getBoundingClientRect().width>0).length>=4&&[...document.querySelectorAll('.a-chip')].filter(e=>e.getBoundingClientRect().width>0).length>=3&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
-    "hubLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations.html')&&['entra','google','okta','scim','sage','quickbooks','zoho'].filter(w=>[...document.querySelectorAll('a[href$=\"integrations-'+w+'.html\"]')].some(a=>a.getBoundingClientRect().width>0)).length>=6})()"
+    "hubLoaded": "(()=>{return location.pathname.endsWith('/settings-integrations.html')&&['entra','google','okta','scim','sage','quickbooks','zoho'].filter(w=>[...document.querySelectorAll('a[href$=\"integrations-'+w+'.html\"]')].some(a=>a.getBoundingClientRect().width>0)).length>=6})()",
+    "allGroupsClosed": "[...document.querySelectorAll('.menu-group.open')].length===0"
   },
   "ops": [
     {
@@ -657,7 +661,7 @@
       "op": "move",
       "at": 108.6,
       "to": {
-        "target": "grpCredRect",
+        "target": "grpCredentials",
         "offset": [
           260,
           8
@@ -1925,14 +1929,6 @@
   ],
   "preflight": [
     {
-      "op": "wait-stable",
-      "key": "presettle",
-      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
-      "settleMs": 2000,
-      "timeoutMs": 8000,
-      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
-    },
-    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -1940,7 +1936,147 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: stage the shared persisted settings-submenu preference expanded (washcentral-sidebar-collapsed-v5=false) so step 1's Integrations rail entry is a labelled entry, and every hub navigation click has the rail link on screen"
+      "note": "off-camera: genuine press on #wc-rail-panel-toggle removes .app.sidebar-collapsed so the settings menu panel is expanded; skipped when already expanded"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "allGroupsClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so every settings submenu is closed and the Integrations rail entry sits on screen; skipped once all groups are collapsed"
     }
   ]
 }

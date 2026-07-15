@@ -4,14 +4,14 @@
   "audioMaster": "training/module12-settings/WC-12-07-full-narration-v1.0.mp3",
   "audioDurationS": 235.154,
   "tailS": 0.4,
-  "startUrl": "https://demo.washcentral.com/settings.html",
+  "startUrl": "https://demo.washcentral.com/settings-account-info.html",
   "viewport": [
     1920,
     1080
   ],
   "targets": {
     "railToggle": {
-      "selector": ".wc-rail-panel-toggle"
+      "selector": "#wc-rail-panel-toggle"
     },
     "opsHeader": {
       "js": "[...document.querySelectorAll('button.menu-header')].find(e=>/operations/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)"
@@ -172,11 +172,13 @@
     },
     "thSmsDate": {
       "js": "[...document.querySelectorAll('th')].find(e=>/^date$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)"
+    },
+    "firstOpenGroup": {
+      "js": "[...document.querySelectorAll('.menu-group.open')].map(g=>g.querySelector('button.menu-header')).find(h=>h&&h.getBoundingClientRect().width>0)"
     }
   },
   "predicates": {
     "pageReady": "document.readyState==='complete'&&![...document.querySelectorAll('[class*=\"skeleton\"],[class*=\"spinner\"],[class*=\"loading\"]')].some(e=>e.getBoundingClientRect().width>0)",
-    "onSettingsHome": "location.pathname.endsWith('/settings.html')",
     "onCancellation": "location.pathname.endsWith('/settings-cancellation-reasons.html')",
     "onRefund": "location.pathname.endsWith('/settings-refund-reasons.html')",
     "onRewash": "location.pathname.endsWith('/settings-rewash-reasons.html')",
@@ -187,10 +189,10 @@
     "onTaskParameters": "location.pathname.endsWith('/settings-task-parameters.html')",
     "onMassSms": "location.pathname.endsWith('/settings-mass-sms-log.html')",
     "sidebarExpanded": "[...document.querySelectorAll('button.menu-header')].some(e=>e.getBoundingClientRect().width>120)",
-    "opsSubmenuOpen": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Cancellation Reasons|Refund Reasons|Rewash Reasons)$/.test((e.textContent||'').trim())).length>=3",
-    "opsSubmenuClosed": "[...document.querySelectorAll('.submenu a')].filter(e=>e.getBoundingClientRect().width>0&&/^(Cancellation Reasons|Refund Reasons|Rewash Reasons)$/.test((e.textContent||'').trim())).length===0",
-    "autoSubmenuOpen": "[...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Task Scheduler')",
-    "autoSubmenuClosed": "![...document.querySelectorAll('.submenu a')].some(e=>e.getBoundingClientRect().width>0&&(e.textContent||'').trim()==='Task Scheduler')",
+    "opsSubmenuOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/operations/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
+    "opsSubmenuClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/operations/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
+    "autoSubmenuOpen": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/automation/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&g.classList.contains('open')})()",
+    "autoSubmenuClosed": "(()=>{const h=[...document.querySelectorAll('button.menu-header')].find(e=>/automation/i.test((e.textContent||'').trim()));const g=h&&h.closest('.menu-group');return !!g&&!g.classList.contains('open')})()",
     "crLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-cancellation-reasons.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "refundLoaded": "(()=>{return location.pathname.endsWith('/settings-refund-reasons.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('td')].some(e=>/No refund reasons found/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "rewashLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-rewash-reasons.html')&&rows.length>=10&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Reasons/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
@@ -200,13 +202,15 @@
     "schedLoaded": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-task-scheduler.html')&&rows.length>=3&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Tasks/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "paramsLoaded": "(()=>{return location.pathname.endsWith('/settings-task-parameters.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Parameters/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^updated by$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
     "smsLoaded": "(()=>{return location.pathname.endsWith('/settings-mass-sms-log.html')&&[...document.querySelectorAll('.a-metric')].some(e=>/Total Entries/i.test(e.textContent||'')&&e.getBoundingClientRect().width>0)&&[...document.querySelectorAll('th')].some(e=>/^status$/i.test((e.textContent||'').trim())&&e.getBoundingClientRect().width>0)&&!/Couldn.t load|Failed to fetch/i.test(document.body.textContent||'')})()",
-    "taskSchedulerReadOnly": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const modal=[...document.querySelectorAll('[class*=\"modal\"],[role=\"dialog\"]')].some(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-task-scheduler.html')&&rows.length===3&&!modal})()"
+    "taskSchedulerReadOnly": "(()=>{const rows=[...document.querySelectorAll('tbody tr')].filter(e=>e.getBoundingClientRect().width>0);const modal=[...document.querySelectorAll('[class*=\"modal\"],[role=\"dialog\"]')].some(e=>e.getBoundingClientRect().width>0);return location.pathname.endsWith('/settings-task-scheduler.html')&&rows.length===3&&!modal})()",
+    "onSettingsStart": "location.pathname.endsWith('/settings-account-info.html')",
+    "allGroupsClosed": "[...document.querySelectorAll('.menu-group.open')].length===0"
   },
   "ops": [
     {
       "op": "assert",
       "at": -1.8,
-      "predicate": "onSettingsHome",
+      "predicate": "onSettingsStart",
       "note": "start page staged before capture"
     },
     {
@@ -2437,14 +2441,6 @@
   ],
   "preflight": [
     {
-      "op": "wait-stable",
-      "key": "presettle",
-      "predicate": "!!document.querySelector('.wc-rail-panel-toggle')",
-      "settleMs": 2000,
-      "timeoutMs": 8000,
-      "note": "off-camera: the page loads sidebar-collapsed then JS applies the profile persisted preference (~1-2s later). Settle before the railToggle normalization so the unless-check + press act on the settled state (a blind early click can over-toggle an already-expanded sidebar and fail its sidebarExpanded postcondition)."
-    },
-    {
       "op": "click",
       "target": "railToggle",
       "pressAt": 0,
@@ -2452,27 +2448,147 @@
       "unless": "sidebarExpanded",
       "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: stage the shared persisted sidebar preference expanded (washcentral-sidebar-collapsed-v5) before the take"
+      "note": "off-camera: genuine press on #wc-rail-panel-toggle removes .app.sidebar-collapsed so the settings menu panel is expanded; skipped when already expanded"
     },
     {
       "op": "click",
-      "target": "opsHeader",
+      "target": "firstOpenGroup",
       "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "opsSubmenuClosed",
-      "postcondition": "opsSubmenuClosed",
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: genuine toggle closes the persisted Operations group (washcentral-settings-menu-v1) so step 1 expands it on camera"
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
     },
     {
       "op": "click",
-      "target": "autoHeader",
+      "target": "firstOpenGroup",
       "pressAt": 0,
-      "hoverMs": 200,
-      "unless": "autoSubmenuClosed",
-      "postcondition": "autoSubmenuClosed",
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
       "timeoutMs": 4000,
-      "note": "off-camera: genuine toggle closes the persisted Automation group so the step-8 reveal is genuine"
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "sidebarExpanded",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
+    },
+    {
+      "op": "click",
+      "target": "firstOpenGroup",
+      "pressAt": 0,
+      "hoverMs": 150,
+      "unless": "allGroupsClosed",
+      "postcondition": "allGroupsClosed",
+      "timeoutMs": 4000,
+      "note": "off-camera: collapse every open rail group (genuine header toggles) so the target group sits high enough that its links stay on-screen when it is expanded on camera; skipped once all groups are collapsed"
     }
   ]
 }
