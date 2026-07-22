@@ -5,6 +5,12 @@
 set -u
 SCRATCH=/tmp/claude-0/-home-user-ElevenLabsMLA/c863f169-463c-5c4e-816e-9ce248227ccb/scratchpad
 CHROME=/opt/pw-browsers/chromium-1194/chrome-linux/chrome
+# The scratchpad is ephemeral — a container restart wipes it, so the sign-in helper must NOT live
+# there. SIGNIN points at the git-tracked copy (production/signin-token.mjs), whose relative import
+# '../tools/cdp-lib.mjs' resolves correctly from this directory. HERE resolves regardless of PWD.
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SIGNIN="$HERE/signin-token.mjs"
+mkdir -p "$SCRATCH"
 ensure() {
   local disp=$1 port=$2 prof=$3
   # A stage whose debug port answers can still be DEAD for egress: a container restart rotates the
@@ -36,7 +42,7 @@ ensure() {
         return 0
       fi
       echo "[stages] $port up but signed OUT; re-signing in place"
-      for a in 1 2 3; do CDP_HTTP="http://127.0.0.1:$port" node "$SCRATCH/signin-token.mjs" >/dev/null 2>&1 && { echo "[stages] $port re-signed"; return 0; }; sleep $((a*2)); done
+      for a in 1 2 3; do CDP_HTTP="http://127.0.0.1:$port" node "$SIGNIN" >/dev/null 2>&1 && { echo "[stages] $port re-signed"; return 0; }; sleep $((a*2)); done
       echo "[stages] $port re-sign FAILED; relaunching"
     else
       echo "[stages] $port up but on stale proxy '$running_proxy' (current '$HTTPS_PROXY'); relaunching"
@@ -71,7 +77,7 @@ ensure() {
   # whole lesson.
   local ok=0
   for attempt in 1 2 3 4; do
-    if CDP_HTTP="http://127.0.0.1:$port" node "$SCRATCH/signin-token.mjs" >/dev/null 2>&1; then ok=1; break; fi
+    if CDP_HTTP="http://127.0.0.1:$port" node "$SIGNIN" >/dev/null 2>&1; then ok=1; break; fi
     echo "[stages] sign-in attempt $attempt failed on $port; retrying"
     sleep $((attempt * 3))
   done
